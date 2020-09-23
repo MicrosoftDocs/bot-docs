@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -38,6 +40,8 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="client" Type="Microsoft.Bot.Connector.OAuthClient" />
@@ -66,6 +70,8 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.OAuthClient</ReturnType>
@@ -82,7 +88,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;string&gt;&gt; GetSignInUrlWithHttpMessagesAsync (string state, string codeChallenge = default, string emulatorUrl = default, string finalRedirect = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;string&gt;&gt; GetSignInUrlWithHttpMessagesAsync(string state, string codeChallenge, string emulatorUrl, string finalRedirect, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.BotSignIn.GetSignInUrlWithHttpMessagesAsync(System.String,System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetSignInUrlWithHttpMessagesAsync (state As String, Optional codeChallenge As String = null, Optional emulatorUrl As String = null, Optional finalRedirect As String = null, Optional customHeaders As Dictionary(Of String, List(Of String)) = null, Optional cancellationToken As CancellationToken = null) As Task(Of HttpOperationResponse(Of String))" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSignInUrlWithHttpMessagesAsync (state As String, Optional codeChallenge As String = Nothing, Optional emulatorUrl As String = Nothing, Optional finalRedirect As String = Nothing, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of String))" />
       <MemberSignature Language="F#" Value="abstract member GetSignInUrlWithHttpMessagesAsync : string * string * string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;string&gt;&gt;&#xA;override this.GetSignInUrlWithHttpMessagesAsync : string * string * string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;string&gt;&gt;" Usage="botSignIn.GetSignInUrlWithHttpMessagesAsync (state, codeChallenge, emulatorUrl, finalRedirect, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -92,6 +98,8 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.String&gt;&gt;</ReturnType>

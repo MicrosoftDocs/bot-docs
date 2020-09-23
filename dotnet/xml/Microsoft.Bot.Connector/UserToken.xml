@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -38,6 +40,8 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="client" Type="Microsoft.Bot.Connector.OAuthClient" />
@@ -66,6 +70,8 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.OAuthClient</ReturnType>
@@ -82,7 +88,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IDictionary&lt;string,Microsoft.Bot.Schema.TokenResponse&gt;&gt;&gt; GetAadTokensWithHttpMessagesAsync (string userId, string connectionName, Microsoft.Bot.Schema.AadResourceUrls aadResourceUrls, string channelId = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.Bot.Schema.TokenResponse&gt;&gt;&gt; GetAadTokensWithHttpMessagesAsync(string userId, string connectionName, class Microsoft.Bot.Schema.AadResourceUrls aadResourceUrls, string channelId, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.UserToken.GetAadTokensWithHttpMessagesAsync(System.String,System.String,Microsoft.Bot.Schema.AadResourceUrls,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetAadTokensWithHttpMessagesAsync (userId As String, connectionName As String, aadResourceUrls As AadResourceUrls, Optional channelId As String = null, Optional customHeaders As Dictionary(Of String, List(Of String)) = null, Optional cancellationToken As CancellationToken = null) As Task(Of HttpOperationResponse(Of IDictionary(Of String, TokenResponse)))" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAadTokensWithHttpMessagesAsync (userId As String, connectionName As String, aadResourceUrls As AadResourceUrls, Optional channelId As String = Nothing, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of IDictionary(Of String, TokenResponse)))" />
       <MemberSignature Language="F#" Value="abstract member GetAadTokensWithHttpMessagesAsync : string * string * Microsoft.Bot.Schema.AadResourceUrls * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IDictionary&lt;string, Microsoft.Bot.Schema.TokenResponse&gt;&gt;&gt;&#xA;override this.GetAadTokensWithHttpMessagesAsync : string * string * Microsoft.Bot.Schema.AadResourceUrls * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IDictionary&lt;string, Microsoft.Bot.Schema.TokenResponse&gt;&gt;&gt;" Usage="userToken.GetAadTokensWithHttpMessagesAsync (userId, connectionName, aadResourceUrls, channelId, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -92,6 +98,8 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IDictionary&lt;System.String,Microsoft.Bot.Schema.TokenResponse&gt;&gt;&gt;</ReturnType>
@@ -139,7 +147,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.TokenStatus&gt;&gt;&gt; GetTokenStatusWithHttpMessagesAsync (string userId, string channelId = default, string include = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.TokenStatus&gt;&gt;&gt; GetTokenStatusWithHttpMessagesAsync(string userId, string channelId, string include, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.UserToken.GetTokenStatusWithHttpMessagesAsync(System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetTokenStatusWithHttpMessagesAsync (userId As String, Optional channelId As String = null, Optional include As String = null, Optional customHeaders As Dictionary(Of String, List(Of String)) = null, Optional cancellationToken As CancellationToken = null) As Task(Of HttpOperationResponse(Of IList(Of TokenStatus)))" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTokenStatusWithHttpMessagesAsync (userId As String, Optional channelId As String = Nothing, Optional include As String = Nothing, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of IList(Of TokenStatus)))" />
       <MemberSignature Language="F#" Value="abstract member GetTokenStatusWithHttpMessagesAsync : string * string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.TokenStatus&gt;&gt;&gt;&#xA;override this.GetTokenStatusWithHttpMessagesAsync : string * string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.TokenStatus&gt;&gt;&gt;" Usage="userToken.GetTokenStatusWithHttpMessagesAsync (userId, channelId, include, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -149,6 +157,8 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.TokenStatus&gt;&gt;&gt;</ReturnType>
@@ -194,7 +204,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.TokenResponse&gt;&gt; GetTokenWithHttpMessagesAsync (string userId, string connectionName, string channelId = default, string code = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Bot.Schema.TokenResponse&gt;&gt; GetTokenWithHttpMessagesAsync(string userId, string connectionName, string channelId, string code, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.UserToken.GetTokenWithHttpMessagesAsync(System.String,System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetTokenWithHttpMessagesAsync (userId As String, connectionName As String, Optional channelId As String = null, Optional code As String = null, Optional customHeaders As Dictionary(Of String, List(Of String)) = null, Optional cancellationToken As CancellationToken = null) As Task(Of HttpOperationResponse(Of TokenResponse))" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTokenWithHttpMessagesAsync (userId As String, connectionName As String, Optional channelId As String = Nothing, Optional code As String = Nothing, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of TokenResponse))" />
       <MemberSignature Language="F#" Value="abstract member GetTokenWithHttpMessagesAsync : string * string * string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.TokenResponse&gt;&gt;&#xA;override this.GetTokenWithHttpMessagesAsync : string * string * string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.TokenResponse&gt;&gt;" Usage="userToken.GetTokenWithHttpMessagesAsync (userId, connectionName, channelId, code, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -204,6 +214,8 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Bot.Schema.TokenResponse&gt;&gt;</ReturnType>
@@ -251,7 +263,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;object&gt;&gt; SignOutWithHttpMessagesAsync (string userId, string connectionName = default, string channelId = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;object&gt;&gt; SignOutWithHttpMessagesAsync(string userId, string connectionName, string channelId, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.UserToken.SignOutWithHttpMessagesAsync(System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function SignOutWithHttpMessagesAsync (userId As String, Optional connectionName As String = null, Optional channelId As String = null, Optional customHeaders As Dictionary(Of String, List(Of String)) = null, Optional cancellationToken As CancellationToken = null) As Task(Of HttpOperationResponse(Of Object))" />
+      <MemberSignature Language="VB.NET" Value="Public Function SignOutWithHttpMessagesAsync (userId As String, Optional connectionName As String = Nothing, Optional channelId As String = Nothing, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of Object))" />
       <MemberSignature Language="F#" Value="abstract member SignOutWithHttpMessagesAsync : string * string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;obj&gt;&gt;&#xA;override this.SignOutWithHttpMessagesAsync : string * string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;obj&gt;&gt;" Usage="userToken.SignOutWithHttpMessagesAsync (userId, connectionName, channelId, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -261,6 +273,8 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Object&gt;&gt;</ReturnType>

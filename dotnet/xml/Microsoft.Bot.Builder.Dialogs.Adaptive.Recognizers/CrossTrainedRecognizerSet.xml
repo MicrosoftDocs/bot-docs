@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Recognizer</BaseTypeName>
@@ -42,24 +44,29 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonConstructor</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonConstructor]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConstructor&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
         <Parameter Name="callerPath" Type="System.String">
           <Attributes>
             <Attribute>
-              <AttributeName>System.Runtime.CompilerServices.CallerFilePath</AttributeName>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerFilePath]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerFilePath&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
         <Parameter Name="callerLine" Type="System.Int32">
           <Attributes>
             <Attribute>
-              <AttributeName>System.Runtime.CompilerServices.CallerLineNumber</AttributeName>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerLineNumber]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerLineNumber&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -68,28 +75,6 @@
         <param name="callerPath">To be added.</param>
         <param name="callerLine">To be added.</param>
         <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ChooseIntent">
-      <MemberSignature Language="C#" Value="public const string ChooseIntent;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal string ChooseIntent" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.CrossTrainedRecognizerSet.ChooseIntent" />
-      <MemberSignature Language="VB.NET" Value="Public Const ChooseIntent As String " />
-      <MemberSignature Language="F#" Value="val mutable ChooseIntent : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.CrossTrainedRecognizerSet.ChooseIntent" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-        <AssemblyVersion>4.9.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Intent name that will be produced by this recognizer if the child recognizers do not have consensus for intents.
-            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,6 +89,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -126,10 +113,13 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("$kind")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("$kind")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("$kind")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -140,41 +130,19 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="NoneIntent">
-      <MemberSignature Language="C#" Value="public const string NoneIntent;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal string NoneIntent" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.CrossTrainedRecognizerSet.NoneIntent" />
-      <MemberSignature Language="VB.NET" Value="Public Const NoneIntent As String " />
-      <MemberSignature Language="F#" Value="val mutable NoneIntent : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.CrossTrainedRecognizerSet.NoneIntent" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-        <AssemblyVersion>4.9.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Standard none intent that means none of the recognizers recognize the intent.
-            </summary>
-        <remarks>
-            If each recognizer returns no intents or None intents, then this recognizer will return None intent.
-            </remarks>
-      </Docs>
-    </Member>
     <Member MemberName="RecognizeAsync">
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt; RecognizeAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken = default, System.Collections.Generic.Dictionary&lt;string,string&gt; telemetryProperties = default, System.Collections.Generic.Dictionary&lt;string,double&gt; telemetryMetrics = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.RecognizerResult&gt; RecognizeAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; telemetryProperties, class System.Collections.Generic.Dictionary`2&lt;string, float64&gt; telemetryMetrics) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.CrossTrainedRecognizerSet.RecognizeAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Double})" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function RecognizeAsync (dialogContext As DialogContext, activity As Activity, Optional cancellationToken As CancellationToken = null, Optional telemetryProperties As Dictionary(Of String, String) = null, Optional telemetryMetrics As Dictionary(Of String, Double) = null) As Task(Of RecognizerResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function RecognizeAsync (dialogContext As DialogContext, activity As Activity, Optional cancellationToken As CancellationToken = Nothing, Optional telemetryProperties As Dictionary(Of String, String) = Nothing, Optional telemetryMetrics As Dictionary(Of String, Double) = Nothing) As Task(Of RecognizerResult)" />
       <MemberSignature Language="F#" Value="override this.RecognizeAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken * System.Collections.Generic.Dictionary&lt;string, string&gt; * System.Collections.Generic.Dictionary&lt;string, double&gt; -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;" Usage="crossTrainedRecognizerSet.RecognizeAsync (dialogContext, activity, cancellationToken, telemetryProperties, telemetryMetrics)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;</ReturnType>
@@ -208,10 +176,13 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("recognizers")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("recognizers")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("recognizers")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

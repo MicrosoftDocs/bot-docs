@@ -1,0 +1,310 @@
+<Type Name="OrchestratorRecognizer" FullName="Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer">
+  <TypeSignature Language="C#" Value="public class OrchestratorRecognizer : Microsoft.Bot.Builder.IRecognizer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OrchestratorRecognizer extends System.Object implements class Microsoft.Bot.Builder.IRecognizer" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer" />
+  <TypeSignature Language="VB.NET" Value="Public Class OrchestratorRecognizer&#xA;Implements IRecognizer" />
+  <TypeSignature Language="F#" Value="type OrchestratorRecognizer = class&#xA;    interface IRecognizer" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.AI.Orchestrator</AssemblyName>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.IRecognizer</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Class that represents an adaptive Orchestrator recognizer.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OrchestratorRecognizer ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Orchestrator</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonConstructor]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConstructor&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DetectAmbiguousIntents">
+      <MemberSignature Language="C#" Value="public bool DetectAmbiguousIntents { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DetectAmbiguousIntents" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer.DetectAmbiguousIntents" />
+      <MemberSignature Language="VB.NET" Value="Public Property DetectAmbiguousIntents As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DetectAmbiguousIntents : bool with get, set" Usage="Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer.DetectAmbiguousIntents" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Orchestrator</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("detectAmbiguousIntents")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("detectAmbiguousIntents")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether detect ambiguous intents.
+            </summary>
+        <value>
+            When true, recognizer will look for ambiguous intents (intents with close recognition scores from top scoring intent).
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisambiguationScoreThreshold">
+      <MemberSignature Language="C#" Value="public float DisambiguationScoreThreshold { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 DisambiguationScoreThreshold" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer.DisambiguationScoreThreshold" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisambiguationScoreThreshold As Single" />
+      <MemberSignature Language="F#" Value="member this.DisambiguationScoreThreshold : single with get, set" Usage="Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer.DisambiguationScoreThreshold" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Orchestrator</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("disambiguationScoreThreshold")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("disambiguationScoreThreshold")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the disambiguation score threshold.
+            </summary>
+        <value>
+            Recognizer returns ChooseIntent (disambiguation) if other intents are classified within this score of the top scoring intent.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityRecognizers">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizer&gt; EntityRecognizers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizer&gt; EntityRecognizers" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer.EntityRecognizers" />
+      <MemberSignature Language="VB.NET" Value="Public Property EntityRecognizers As List(Of EntityRecognizer)" />
+      <MemberSignature Language="F#" Value="member this.EntityRecognizers : System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizer&gt; with get, set" Usage="Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer.EntityRecognizers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Orchestrator</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("entityRecognizers")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("entityRecognizers")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizer&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the entity recognizers.
+            </summary>
+        <value>
+            The entity recognizers.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Orchestrator</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("id")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("id")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the id for the recognizer.
+            </summary>
+        <value>
+            The id for the recognizer.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModelPath">
+      <MemberSignature Language="C#" Value="public string ModelPath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ModelPath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer.ModelPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property ModelPath As String" />
+      <MemberSignature Language="F#" Value="member this.ModelPath : string with get, set" Usage="Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer.ModelPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Orchestrator</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("modelPath")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("modelPath")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the full path to the NLR model to use.
+            </summary>
+        <value>
+            Model path.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizeAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt; RecognizeAsync (Microsoft.Bot.Builder.ITurnContext turnContext, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.RecognizerResult&gt; RecognizeAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer.RecognizeAsync(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RecognizeAsync (turnContext As ITurnContext, cancellationToken As CancellationToken) As Task(Of RecognizerResult)" />
+      <MemberSignature Language="F#" Value="abstract member RecognizeAsync : Microsoft.Bot.Builder.ITurnContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;&#xA;override this.RecognizeAsync : Microsoft.Bot.Builder.ITurnContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;" Usage="orchestratorRecognizer.RecognizeAsync (turnContext, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.IRecognizer.RecognizeAsync(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Orchestrator</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="turnContext">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizeAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;T&gt; RecognizeAsync&lt;T&gt; (Microsoft.Bot.Builder.ITurnContext turnContext, System.Threading.CancellationToken cancellationToken) where T : Microsoft.Bot.Builder.IRecognizerConvertnew();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;!!T&gt; RecognizeAsync&lt;.ctor (class Microsoft.Bot.Builder.IRecognizerConvert) T&gt;(class Microsoft.Bot.Builder.ITurnContext turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer.RecognizeAsync``1(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RecognizeAsync(Of T As {IRecognizerConvertNew}) (turnContext As ITurnContext, cancellationToken As CancellationToken) As Task(Of T)" />
+      <MemberSignature Language="F#" Value="abstract member RecognizeAsync : Microsoft.Bot.Builder.ITurnContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T (requires 'T :&gt; Microsoft.Bot.Builder.IRecognizerConvert and 'T : (new : unit -&gt; 'T))&gt; (requires 'T :&gt; Microsoft.Bot.Builder.IRecognizerConvert and 'T : (new : unit -&gt; 'T))&#xA;override this.RecognizeAsync : Microsoft.Bot.Builder.ITurnContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T (requires 'T :&gt; Microsoft.Bot.Builder.IRecognizerConvert and 'T : (new : unit -&gt; 'T))&gt; (requires 'T :&gt; Microsoft.Bot.Builder.IRecognizerConvert and 'T : (new : unit -&gt; 'T))" Usage="orchestratorRecognizer.RecognizeAsync (turnContext, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.IRecognizer.RecognizeAsync``1(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Orchestrator</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <InterfaceName>Microsoft.Bot.Builder.IRecognizerConvert</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="turnContext">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="SnapshotPath">
+      <MemberSignature Language="C#" Value="public string SnapshotPath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SnapshotPath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer.SnapshotPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property SnapshotPath As String" />
+      <MemberSignature Language="F#" Value="member this.SnapshotPath : string with get, set" Usage="Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer.SnapshotPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Orchestrator</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("snapshotPath")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("snapshotPath")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the full path to the snapshot to use.
+            </summary>
+        <value>
+            Snapshot path.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

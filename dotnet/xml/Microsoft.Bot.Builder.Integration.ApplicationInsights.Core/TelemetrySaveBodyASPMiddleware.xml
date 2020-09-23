@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Builder.Integration.ApplicationInsights.Core</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -15,11 +17,16 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Obsolete("This class is deprecated. Please add TelemetryInitializerMiddleware to your adapter's middleware pipeline instead.")</AttributeName>
+      <AttributeName Language="C#">[System.Obsolete("This class is deprecated. Please add TelemetryInitializerMiddleware to your adapter's middleware pipeline instead.")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("This class is deprecated. Please add TelemetryInitializerMiddleware to your adapter's middleware pipeline instead.")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Middleware to store the incoming activity request body into the HttpContext items collection.
+            This class has been deprecated in favor of using TelemetryInitializerMiddleware in
+            Microsoft.Bot.Integration.ApplicationInsights.Core and Microsoft.Bot.Integration.ApplicationInsights.WebApi.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,13 +41,17 @@
         <AssemblyName>Microsoft.Bot.Builder.Integration.ApplicationInsights.Core</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="next" Type="Microsoft.AspNetCore.Http.RequestDelegate" />
       </Parameters>
       <Docs>
-        <param name="next">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="next">The delegate to the next piece of middleware in the pipeline.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Integration.ApplicationInsights.Core.TelemetrySaveBodyASPMiddleware" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,6 +66,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Integration.ApplicationInsights.Core</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -63,9 +76,11 @@
         <Parameter Name="httpContext" Type="Microsoft.AspNetCore.Http.HttpContext" />
       </Parameters>
       <Docs>
-        <param name="httpContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="httpContext">The HttpContext.</param>
+        <summary>
+            Invokes the TelemetrySaveBodyASPMiddleware middleware.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

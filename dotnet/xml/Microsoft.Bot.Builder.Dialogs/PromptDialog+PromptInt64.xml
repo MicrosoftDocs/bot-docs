@@ -21,7 +21,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -33,7 +34,7 @@
       <MemberSignature Language="C#" Value="public PromptInt64 (Microsoft.Bot.Builder.Dialogs.PromptOptions&lt;long&gt; promptOptions, long? min = default, long? max = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.PromptOptions`1&lt;int64&gt; promptOptions, valuetype System.Nullable`1&lt;int64&gt; min, valuetype System.Nullable`1&lt;int64&gt; max) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.#ctor(Microsoft.Bot.Builder.Dialogs.PromptOptions{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (promptOptions As PromptOptions(Of Long), Optional min As Nullable(Of Long) = null, Optional max As Nullable(Of Long) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (promptOptions As PromptOptions(Of Long), Optional min As Nullable(Of Long) = Nothing, Optional max As Nullable(Of Long) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64 : Microsoft.Bot.Builder.Dialogs.PromptOptions&lt;int64&gt; * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; -&gt; Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64" Usage="new Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64 (promptOptions, min, max)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -60,7 +61,7 @@
       <MemberSignature Language="C#" Value="public PromptInt64 (string prompt, string retry, int attempts, string speak = default, long? min = default, long? max = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string prompt, string retry, int32 attempts, string speak, valuetype System.Nullable`1&lt;int64&gt; min, valuetype System.Nullable`1&lt;int64&gt; max) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64.#ctor(System.String,System.String,System.Int32,System.String,System.Nullable{System.Int64},System.Nullable{System.Int64})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (prompt As String, retry As String, attempts As Integer, Optional speak As String = null, Optional min As Nullable(Of Long) = null, Optional max As Nullable(Of Long) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (prompt As String, retry As String, attempts As Integer, Optional speak As String = Nothing, Optional min As Nullable(Of Long) = Nothing, Optional max As Nullable(Of Long) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64 : string * string * int * string * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; -&gt; Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64" Usage="new Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptInt64 (prompt, retry, attempts, speak, min, max)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>

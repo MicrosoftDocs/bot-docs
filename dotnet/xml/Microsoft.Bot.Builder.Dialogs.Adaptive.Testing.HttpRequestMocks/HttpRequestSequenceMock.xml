@@ -1,0 +1,220 @@
+<Type Name="HttpRequestSequenceMock" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestSequenceMock">
+  <TypeSignature Language="C#" Value="public class HttpRequestSequenceMock : Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestMock" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HttpRequestSequenceMock extends Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestMock" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestSequenceMock" />
+  <TypeSignature Language="VB.NET" Value="Public Class HttpRequestSequenceMock&#xA;Inherits HttpRequestMock" />
+  <TypeSignature Language="F#" Value="type HttpRequestSequenceMock = class&#xA;    inherit HttpRequestMock" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestMock</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Mock http request in sequence order. The last response will be repeated.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HttpRequestSequenceMock (string path = &quot;&quot;, int line = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, int32 line) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestSequenceMock.#ctor(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional path As String = &quot;&quot;, Optional line As Integer = 0)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestSequenceMock : string * int -&gt; Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestSequenceMock" Usage="new Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestSequenceMock (path, line)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonConstructor]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConstructor&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="path" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerFilePath]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerFilePath&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="line" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerLineNumber]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerLineNumber&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="path">optional path.</param>
+        <param name="line">optional line.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestSequenceMock" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Kind">
+      <MemberSignature Language="C#" Value="public const string Kind;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Kind" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestSequenceMock.Kind" />
+      <MemberSignature Language="VB.NET" Value="Public Const Kind As String " />
+      <MemberSignature Language="F#" Value="val mutable Kind : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestSequenceMock.Kind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("$kind")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("$kind")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The type of request.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Method">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.HttpRequest.HttpMethod? Method { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.HttpRequest/HttpMethod&gt; Method" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestSequenceMock.Method" />
+      <MemberSignature Language="VB.NET" Value="Public Property Method As Nullable(Of HttpRequest.HttpMethod)" />
+      <MemberSignature Language="F#" Value="member this.Method : Nullable&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.HttpRequest.HttpMethod&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestSequenceMock.Method" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("method")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("method")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.HttpRequest+HttpMethod&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the HttpMethod to match. If null, match to any method.
+            </summary>
+        <value>
+            One of GET, POST, PATCH, PUT, DELETE, null.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Responses">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMock&gt; Responses { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMock&gt; Responses" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestSequenceMock.Responses" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Responses As List(Of HttpResponseMock)" />
+      <MemberSignature Language="F#" Value="member this.Responses : System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMock&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestSequenceMock.Responses" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("responses")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("responses")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMock&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the sequence of responses to reply. The last one will be repeated.
+            </summary>
+        <value>
+            The sequence of responses to reply.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Setup">
+      <MemberSignature Language="C#" Value="public override void Setup (RichardSzalay.MockHttp.MockHttpMessageHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Setup(class RichardSzalay.MockHttp.MockHttpMessageHandler handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestSequenceMock.Setup(RichardSzalay.MockHttp.MockHttpMessageHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Setup (handler As MockHttpMessageHandler)" />
+      <MemberSignature Language="F#" Value="override this.Setup : RichardSzalay.MockHttp.MockHttpMessageHandler -&gt; unit" Usage="httpRequestSequenceMock.Setup handler" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="RichardSzalay.MockHttp.MockHttpMessageHandler" />
+      </Parameters>
+      <Docs>
+        <param name="handler">The HttpMessageHandler.</param>
+        <summary>
+            Configures the initial conditions.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Url">
+      <MemberSignature Language="C#" Value="public string Url { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Url" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestSequenceMock.Url" />
+      <MemberSignature Language="VB.NET" Value="Public Property Url As String" />
+      <MemberSignature Language="F#" Value="member this.Url : string with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestSequenceMock.Url" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("url")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("url")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the Url to match. Absolute or relative, may contain * wildcards.
+            </summary>
+        <value>
+            Url.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

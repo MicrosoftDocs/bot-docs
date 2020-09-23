@@ -12,13 +12,19 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.BotState</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            A state management object that automates the reading and writing of the associated 
+            state properties to a storage layer. Used by Inspection middleware that enables
+            debugging bot state.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,13 +43,18 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="storage" Type="Microsoft.Bot.Builder.IStorage" />
       </Parameters>
       <Docs>
-        <param name="storage">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="storage">The storage layer this state management object will use to store
+            and retrieve state.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.InspectionState" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,6 +73,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -70,9 +83,11 @@
         <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
       </Parameters>
       <Docs>
-        <param name="turnContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="turnContext">The context object for this turn.</param>
+        <summary>
+            Gets the key to use when reading and writing state to and from storage.
+            </summary>
+        <returns>The storage key.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

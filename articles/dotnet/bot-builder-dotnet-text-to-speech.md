@@ -1,6 +1,6 @@
 ---
 title: Add speech to messages (v3 C#) - Bot Service
-description: Learn how to add speech to messages using the Bot Framework SDK for .NET.
+description: Learn how to add speech to bot messages. See how to use version 3 of the Bot Framework SDK to specify the text that bots use on speech-enabled channels.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
@@ -10,7 +10,7 @@ ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0'
 ---
 
-# Add speech to messages
+# Add speech to messages in the v3 C\# SDK
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
 

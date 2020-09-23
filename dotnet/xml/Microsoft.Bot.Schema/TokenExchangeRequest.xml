@@ -8,13 +8,19 @@
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Request payload to be sent to the Bot Framework Token Service for Single Sign On.
+            If the URI is set to a custom scope, then Token Service will exchange the token in its cache for a token targeting the custom scope and return it in the response.
+            If a Token is sent in the payload, then Token Service will exchange the token for a token targetting the scopes specified in the corresponding OAauth connection.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,11 +34,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>
-            Initializes a new instance of the TokenExchangeRequest class.
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Schema.TokenExchangeRequest" /> class.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -41,13 +49,15 @@
       <MemberSignature Language="C#" Value="public TokenExchangeRequest (string uri = default, string token = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string uri, string token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.TokenExchangeRequest.#ctor(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional uri As String = null, Optional token As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional uri As String = Nothing, Optional token As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.TokenExchangeRequest : string * string -&gt; Microsoft.Bot.Schema.TokenExchangeRequest" Usage="new Microsoft.Bot.Schema.TokenExchangeRequest (uri, token)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="uri" Type="System.String" />
@@ -73,17 +83,22 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="token")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="token")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="token")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary />
+        <summary>
+            Gets or sets a token string.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -99,17 +114,22 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="uri")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="uri")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="uri")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary />
+        <summary>
+            Gets or sets a URI string.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

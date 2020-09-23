@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 07/15/2020
+ms.date: 09/01/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -19,7 +19,7 @@ You can use skills to extend another bot.
 A _skill_ is a bot that can perform a set of tasks for another bot and uses a manifest to describe its interface.
 A _root bot_ is a user-facing bot that can invoke one or more skills. A root bot is a type of _skill consumer_.
 
-- A skill consumer can use claims validation to manage which skills or users can access it.
+- A skill consumer must use claims validation to manage which skills can access it.
 - A skill consumer can use multiple skills.
 - Developers who don't have access to the skill's source code can use the information in the skill's manifest to design their skill consumer.
 
@@ -48,15 +48,15 @@ This article focuses on the root bot, which includes support logic in its bot an
 
 ### [C#](#tab/cs)
 
-![Skill consumer class diagram](./media/skills-simple-root-cs.png)
+![Skill consumer class csharp diagram](./media/skills-simple-root-cs.png)
 
 ### [JavaScript](#tab/js)
 
-![Skill consumer class diagram](./media/skills-simple-root-js.png)
+![Skill consumer class js diagram](./media/skills-simple-root-js.png)
 
 ### [Python](#tab/python)
 
-![Skill consumer class diagram](./media/skills-simple-root-python-2.png)
+![Skill consumer class python diagram](./media/skills-simple-root-python-2.png)
 
 ---
 
@@ -179,9 +179,9 @@ The handler uses the conversation ID factory, the authentication configuration, 
 
 **simple-root-bot/index.js**
 
-[!code-javascript[skill client](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=120-121)]
+[!code-javascript[skill client](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=113,119,122)]
 
-[!code-javascript[skill handler](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=147)]
+[!code-javascript[skill handler](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=147-148)]
 
 ### [Python](#tab/python)
 
@@ -280,13 +280,13 @@ It is a good practice to send an _end of conversation_ activity to any active sk
 
 In this sample the turn error logic is split up among a few helper methods.
 
-[!code-csharp[On turn error](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/AdapterWithErrorHandler.cs?range=40-117)]
+[!code-csharp[On turn error](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/AdapterWithErrorHandler.cs?range=40-120)]
 
 ### [JavaScript](#tab/js)
 
 **simple-root-bot/index.js**
 
-[!code-javascript[On turn error](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=34-100)]
+[!code-javascript[On turn error](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=34-101)]
 
 ### [Python](#tab/python)
 
@@ -310,7 +310,7 @@ The bot defines an endpoint that forwards incoming skill activities to the root 
 
 **simple-root-bot/index.js**
 
-[!code-javascript[skill endpoint](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=145-149)]
+[!code-javascript[skill endpoint](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=149-150)]
 
 ### [Python](#tab/python)
 
@@ -323,6 +323,7 @@ The bot defines an endpoint that forwards incoming skill activities to the root 
 ## Service registration
 
 Include an authentication configuration object with any claims validation, plus all the additional objects.
+This sample uses the same authentication configuration logic for validating activities from both users and skills.
 
 ### [C#](#tab/cs)
 
@@ -336,7 +337,7 @@ Include an authentication configuration object with any claims validation, plus 
 
 [!code-javascript[services](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=27-31)]
 
-[!code-javascript[services](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=108-143)]
+[!code-javascript[services](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=109-144)]
 
 ### [Python](#tab/python)
 

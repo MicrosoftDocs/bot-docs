@@ -15,6 +15,8 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -38,8 +40,8 @@
             
              You can define additional scopes for your bot.
              </remarks>
-    <altmember cref="T:Microsoft.Bot.Builder.IStorage" />
     <altmember cref="T:Microsoft.Bot.Builder.IStatePropertyAccessor`1" />
+    <altmember cref="T:Microsoft.Bot.Builder.IStorage" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -60,6 +62,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="storage" Type="Microsoft.Bot.Builder.IStorage" />
@@ -76,17 +80,17 @@
             The object uses <paramref name="storage" /> to persist state property values.
             The object uses the <paramref name="contextServiceKey" /> to cache state within the context for each turn.
             </remarks>
-        <altmember cref="T:Microsoft.Bot.Builder.ITurnContext" />
         <exception cref="T:System.ArgumentNullException">
           <paramref name="storage" /> or <paramref name="contextServiceKey" />
             is <c>null</c>.</exception>
+        <altmember cref="T:Microsoft.Bot.Builder.ITurnContext" />
       </Docs>
     </Member>
     <Member MemberName="ClearStateAsync">
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task ClearStateAsync (Microsoft.Bot.Builder.ITurnContext turnContext, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task ClearStateAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotState.ClearStateAsync(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function ClearStateAsync (turnContext As ITurnContext, Optional cancellationToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ClearStateAsync (turnContext As ITurnContext, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="abstract member ClearStateAsync : Microsoft.Bot.Builder.ITurnContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.ClearStateAsync : Microsoft.Bot.Builder.ITurnContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="botState.ClearStateAsync (turnContext, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -100,6 +104,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -145,6 +151,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.IStatePropertyAccessor&lt;T&gt;</ReturnType>
@@ -172,7 +180,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task DeleteAsync (Microsoft.Bot.Builder.ITurnContext turnContext, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotState.DeleteAsync(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (turnContext As ITurnContext, Optional cancellationToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (turnContext As ITurnContext, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="abstract member DeleteAsync : Microsoft.Bot.Builder.ITurnContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteAsync : Microsoft.Bot.Builder.ITurnContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="botState.DeleteAsync (turnContext, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -184,6 +192,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -209,7 +219,7 @@
       <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task DeletePropertyValueAsync (Microsoft.Bot.Builder.ITurnContext turnContext, string propertyName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task DeletePropertyValueAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, string propertyName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotState.DeletePropertyValueAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Protected Function DeletePropertyValueAsync (turnContext As ITurnContext, propertyName As String, Optional cancellationToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Protected Function DeletePropertyValueAsync (turnContext As ITurnContext, propertyName As String, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="member this.DeletePropertyValueAsync : Microsoft.Bot.Builder.ITurnContext * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="botState.DeletePropertyValueAsync (turnContext, propertyName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -223,6 +233,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -261,6 +273,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Newtonsoft.Json.Linq.JToken</ReturnType>
@@ -290,6 +304,8 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.BotState+CachedBotState</ReturnType>
@@ -313,7 +329,7 @@
       <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;T&gt; GetPropertyValueAsync&lt;T&gt; (Microsoft.Bot.Builder.ITurnContext turnContext, string propertyName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;!!T&gt; GetPropertyValueAsync&lt;T&gt;(class Microsoft.Bot.Builder.ITurnContext turnContext, string propertyName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotState.GetPropertyValueAsync``1(Microsoft.Bot.Builder.ITurnContext,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Protected Function GetPropertyValueAsync(Of T) (turnContext As ITurnContext, propertyName As String, Optional cancellationToken As CancellationToken = null) As Task(Of T)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetPropertyValueAsync(Of T) (turnContext As ITurnContext, propertyName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of T)" />
       <MemberSignature Language="F#" Value="member this.GetPropertyValueAsync : Microsoft.Bot.Builder.ITurnContext * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="botState.GetPropertyValueAsync (turnContext, propertyName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -327,6 +343,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
@@ -373,6 +391,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -393,7 +413,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task LoadAsync (Microsoft.Bot.Builder.ITurnContext turnContext, bool force = false, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task LoadAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, bool force, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotState.LoadAsync(Microsoft.Bot.Builder.ITurnContext,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function LoadAsync (turnContext As ITurnContext, Optional force As Boolean = false, Optional cancellationToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function LoadAsync (turnContext As ITurnContext, Optional force As Boolean = false, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="abstract member LoadAsync : Microsoft.Bot.Builder.ITurnContext * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.LoadAsync : Microsoft.Bot.Builder.ITurnContext * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="botState.LoadAsync (turnContext, force, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -407,6 +427,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -435,7 +457,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task SaveChangesAsync (Microsoft.Bot.Builder.ITurnContext turnContext, bool force = false, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task SaveChangesAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, bool force, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotState.SaveChangesAsync(Microsoft.Bot.Builder.ITurnContext,System.Boolean,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function SaveChangesAsync (turnContext As ITurnContext, Optional force As Boolean = false, Optional cancellationToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SaveChangesAsync (turnContext As ITurnContext, Optional force As Boolean = false, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="abstract member SaveChangesAsync : Microsoft.Bot.Builder.ITurnContext * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.SaveChangesAsync : Microsoft.Bot.Builder.ITurnContext * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="botState.SaveChangesAsync (turnContext, force, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -449,6 +471,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -477,7 +501,7 @@
       <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task SetPropertyValueAsync (Microsoft.Bot.Builder.ITurnContext turnContext, string propertyName, object value, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task SetPropertyValueAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, string propertyName, object value, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.BotState.SetPropertyValueAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.Object,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Protected Function SetPropertyValueAsync (turnContext As ITurnContext, propertyName As String, value As Object, Optional cancellationToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SetPropertyValueAsync (turnContext As ITurnContext, propertyName As String, value As Object, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="member this.SetPropertyValueAsync : Microsoft.Bot.Builder.ITurnContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="botState.SetPropertyValueAsync (turnContext, propertyName, value, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -491,6 +515,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>

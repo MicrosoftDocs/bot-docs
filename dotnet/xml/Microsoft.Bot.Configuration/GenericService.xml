@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Configuration.ConnectedService</BaseTypeName>
@@ -15,11 +17,14 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Obsolete("This class is deprecated.  See https://aka.ms/bot-file-basics for more information.", false)</AttributeName>
+      <AttributeName Language="C#">[System.Obsolete("This class is deprecated.  See https://aka.ms/bot-file-basics for more information.", false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("This class is deprecated.  See https://aka.ms/bot-file-basics for more information.", false)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            An Generic service containing configuration properties for the service.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,10 +38,14 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Configuration.GenericService" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,10 +60,13 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("configuration")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("configuration")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("configuration")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -79,6 +91,8 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -104,6 +118,8 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -129,10 +145,13 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("url")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("url")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("url")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

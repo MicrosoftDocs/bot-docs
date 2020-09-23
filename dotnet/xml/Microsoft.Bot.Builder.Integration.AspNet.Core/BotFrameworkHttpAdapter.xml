@@ -13,6 +13,8 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase</BaseTypeName>
@@ -33,7 +35,7 @@
       <MemberSignature Language="C#" Value="protected BotFrameworkHttpAdapter (Microsoft.Extensions.Configuration.IConfiguration configuration, Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpAdapter&gt; logger = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class Microsoft.Extensions.Configuration.IConfiguration configuration, class Microsoft.Extensions.Logging.ILogger`1&lt;class Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpAdapter&gt; logger) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpAdapter.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger{Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpAdapter})" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub New (configuration As IConfiguration, Optional logger As ILogger(Of BotFrameworkHttpAdapter) = null)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (configuration As IConfiguration, Optional logger As ILogger(Of BotFrameworkHttpAdapter) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpAdapter : Microsoft.Extensions.Configuration.IConfiguration * Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpAdapter&gt; -&gt; Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpAdapter" Usage="new Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpAdapter (configuration, logger)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -43,15 +45,19 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="configuration" Type="Microsoft.Extensions.Configuration.IConfiguration" />
         <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpAdapter&gt;" />
       </Parameters>
       <Docs>
-        <param name="configuration">To be added.</param>
-        <param name="logger">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="configuration">An <see cref="T:Microsoft.Extensions.Configuration.IConfiguration" /> instance.</param>
+        <param name="logger">The ILogger implementation this adapter should use.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpAdapter" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,7 +65,7 @@
       <MemberSignature Language="C#" Value="public BotFrameworkHttpAdapter (Microsoft.Bot.Connector.Authentication.ICredentialProvider credentialProvider = default, Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider = default, Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpAdapter&gt; logger = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Connector.Authentication.ICredentialProvider credentialProvider, class Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider, class Microsoft.Extensions.Logging.ILogger`1&lt;class Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpAdapter&gt; logger) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpAdapter.#ctor(Microsoft.Bot.Connector.Authentication.ICredentialProvider,Microsoft.Bot.Connector.Authentication.IChannelProvider,Microsoft.Extensions.Logging.ILogger{Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpAdapter})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional credentialProvider As ICredentialProvider = null, Optional channelProvider As IChannelProvider = null, Optional logger As ILogger(Of BotFrameworkHttpAdapter) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional credentialProvider As ICredentialProvider = Nothing, Optional channelProvider As IChannelProvider = Nothing, Optional logger As ILogger(Of BotFrameworkHttpAdapter) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpAdapter : Microsoft.Bot.Connector.Authentication.ICredentialProvider * Microsoft.Bot.Connector.Authentication.IChannelProvider * Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpAdapter&gt; -&gt; Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpAdapter" Usage="new Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpAdapter (credentialProvider, channelProvider, logger)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -71,6 +77,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="credentialProvider" Type="Microsoft.Bot.Connector.Authentication.ICredentialProvider" />
@@ -78,10 +86,13 @@
         <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpAdapter&gt;" />
       </Parameters>
       <Docs>
-        <param name="credentialProvider">To be added.</param>
-        <param name="channelProvider">To be added.</param>
-        <param name="logger">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="credentialProvider">The credential provider.</param>
+        <param name="channelProvider">The channel provider.</param>
+        <param name="logger">The ILogger implementation this adapter should use.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpAdapter" /> class,
+            using a credential provider.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,6 +111,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="credentialProvider" Type="Microsoft.Bot.Connector.Authentication.ICredentialProvider" />
@@ -108,11 +121,14 @@
         <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpAdapter&gt;" />
       </Parameters>
       <Docs>
-        <param name="credentialProvider">To be added.</param>
-        <param name="channelProvider">To be added.</param>
-        <param name="httpClient">To be added.</param>
-        <param name="logger">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="credentialProvider">The credential provider.</param>
+        <param name="channelProvider">The channel provider.</param>
+        <param name="httpClient">The <see cref="T:System.Net.Http.HttpClient" /> used.</param>
+        <param name="logger">The ILogger implementation this adapter should use.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpAdapter" /> class,
+            using a credential provider.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,7 +136,7 @@
       <MemberSignature Language="C#" Value="public BotFrameworkHttpAdapter (Microsoft.Bot.Connector.Authentication.ICredentialProvider credentialProvider, Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration authConfig, Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider = default, Microsoft.Rest.TransientFaultHandling.RetryPolicy connectorClientRetryPolicy = default, System.Net.Http.HttpClient customHttpClient = default, Microsoft.Bot.Builder.IMiddleware middleware = default, Microsoft.Extensions.Logging.ILogger logger = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Connector.Authentication.ICredentialProvider credentialProvider, class Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration authConfig, class Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider, class Microsoft.Rest.TransientFaultHandling.RetryPolicy connectorClientRetryPolicy, class System.Net.Http.HttpClient customHttpClient, class Microsoft.Bot.Builder.IMiddleware middleware, class Microsoft.Extensions.Logging.ILogger logger) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpAdapter.#ctor(Microsoft.Bot.Connector.Authentication.ICredentialProvider,Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration,Microsoft.Bot.Connector.Authentication.IChannelProvider,Microsoft.Rest.TransientFaultHandling.RetryPolicy,System.Net.Http.HttpClient,Microsoft.Bot.Builder.IMiddleware,Microsoft.Extensions.Logging.ILogger)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (credentialProvider As ICredentialProvider, authConfig As AuthenticationConfiguration, Optional channelProvider As IChannelProvider = null, Optional connectorClientRetryPolicy As RetryPolicy = null, Optional customHttpClient As HttpClient = null, Optional middleware As IMiddleware = null, Optional logger As ILogger = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (credentialProvider As ICredentialProvider, authConfig As AuthenticationConfiguration, Optional channelProvider As IChannelProvider = Nothing, Optional connectorClientRetryPolicy As RetryPolicy = Nothing, Optional customHttpClient As HttpClient = Nothing, Optional middleware As IMiddleware = Nothing, Optional logger As ILogger = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpAdapter : Microsoft.Bot.Connector.Authentication.ICredentialProvider * Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration * Microsoft.Bot.Connector.Authentication.IChannelProvider * Microsoft.Rest.TransientFaultHandling.RetryPolicy * System.Net.Http.HttpClient * Microsoft.Bot.Builder.IMiddleware * Microsoft.Extensions.Logging.ILogger -&gt; Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpAdapter" Usage="new Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpAdapter (credentialProvider, authConfig, channelProvider, connectorClientRetryPolicy, customHttpClient, middleware, logger)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -129,6 +145,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="credentialProvider" Type="Microsoft.Bot.Connector.Authentication.ICredentialProvider" />
@@ -163,7 +181,7 @@
       <MemberSignature Language="C#" Value="protected BotFrameworkHttpAdapter (Microsoft.Extensions.Configuration.IConfiguration configuration, Microsoft.Bot.Connector.Authentication.ICredentialProvider credentialProvider, Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration authConfig = default, Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider = default, Microsoft.Rest.TransientFaultHandling.RetryPolicy connectorClientRetryPolicy = default, System.Net.Http.HttpClient customHttpClient = default, Microsoft.Bot.Builder.IMiddleware middleware = default, Microsoft.Extensions.Logging.ILogger logger = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class Microsoft.Extensions.Configuration.IConfiguration configuration, class Microsoft.Bot.Connector.Authentication.ICredentialProvider credentialProvider, class Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration authConfig, class Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider, class Microsoft.Rest.TransientFaultHandling.RetryPolicy connectorClientRetryPolicy, class System.Net.Http.HttpClient customHttpClient, class Microsoft.Bot.Builder.IMiddleware middleware, class Microsoft.Extensions.Logging.ILogger logger) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpAdapter.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Bot.Connector.Authentication.ICredentialProvider,Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration,Microsoft.Bot.Connector.Authentication.IChannelProvider,Microsoft.Rest.TransientFaultHandling.RetryPolicy,System.Net.Http.HttpClient,Microsoft.Bot.Builder.IMiddleware,Microsoft.Extensions.Logging.ILogger)" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub New (configuration As IConfiguration, credentialProvider As ICredentialProvider, Optional authConfig As AuthenticationConfiguration = null, Optional channelProvider As IChannelProvider = null, Optional connectorClientRetryPolicy As RetryPolicy = null, Optional customHttpClient As HttpClient = null, Optional middleware As IMiddleware = null, Optional logger As ILogger = null)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (configuration As IConfiguration, credentialProvider As ICredentialProvider, Optional authConfig As AuthenticationConfiguration = Nothing, Optional channelProvider As IChannelProvider = Nothing, Optional connectorClientRetryPolicy As RetryPolicy = Nothing, Optional customHttpClient As HttpClient = Nothing, Optional middleware As IMiddleware = Nothing, Optional logger As ILogger = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpAdapter : Microsoft.Extensions.Configuration.IConfiguration * Microsoft.Bot.Connector.Authentication.ICredentialProvider * Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration * Microsoft.Bot.Connector.Authentication.IChannelProvider * Microsoft.Rest.TransientFaultHandling.RetryPolicy * System.Net.Http.HttpClient * Microsoft.Bot.Builder.IMiddleware * Microsoft.Extensions.Logging.ILogger -&gt; Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpAdapter" Usage="new Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpAdapter (configuration, credentialProvider, authConfig, channelProvider, connectorClientRetryPolicy, customHttpClient, middleware, logger)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -172,6 +190,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="configuration" Type="Microsoft.Extensions.Configuration.IConfiguration" />
@@ -184,15 +204,17 @@
         <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger" />
       </Parameters>
       <Docs>
-        <param name="configuration">To be added.</param>
-        <param name="credentialProvider">To be added.</param>
-        <param name="authConfig">To be added.</param>
-        <param name="channelProvider">To be added.</param>
-        <param name="connectorClientRetryPolicy">To be added.</param>
-        <param name="customHttpClient">To be added.</param>
-        <param name="middleware">To be added.</param>
-        <param name="logger">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="configuration">An <see cref="T:Microsoft.Extensions.Configuration.IConfiguration" /> instance.</param>
+        <param name="credentialProvider">The credential provider.</param>
+        <param name="authConfig">The authentication configuration.</param>
+        <param name="channelProvider">The channel provider.</param>
+        <param name="connectorClientRetryPolicy">Retry policy for retrying HTTP operations.</param>
+        <param name="customHttpClient">The HTTP client.</param>
+        <param name="middleware">The middleware to initially add to the adapter.</param>
+        <param name="logger">The ILogger implementation this adapter should use.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpAdapter" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,7 +222,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ProcessAsync (Microsoft.AspNetCore.Http.HttpRequest httpRequest, Microsoft.AspNetCore.Http.HttpResponse httpResponse, Microsoft.Bot.Builder.IBot bot, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task ProcessAsync(class Microsoft.AspNetCore.Http.HttpRequest httpRequest, class Microsoft.AspNetCore.Http.HttpResponse httpResponse, class Microsoft.Bot.Builder.IBot bot, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpAdapter.ProcessAsync(Microsoft.AspNetCore.Http.HttpRequest,Microsoft.AspNetCore.Http.HttpResponse,Microsoft.Bot.Builder.IBot,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function ProcessAsync (httpRequest As HttpRequest, httpResponse As HttpResponse, bot As IBot, Optional cancellationToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Function ProcessAsync (httpRequest As HttpRequest, httpResponse As HttpResponse, bot As IBot, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="abstract member ProcessAsync : Microsoft.AspNetCore.Http.HttpRequest * Microsoft.AspNetCore.Http.HttpResponse * Microsoft.Bot.Builder.IBot * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.ProcessAsync : Microsoft.AspNetCore.Http.HttpRequest * Microsoft.AspNetCore.Http.HttpResponse * Microsoft.Bot.Builder.IBot * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="botFrameworkHttpAdapter.ProcessAsync (httpRequest, httpResponse, bot, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -215,6 +237,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -226,12 +250,15 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="httpRequest">To be added.</param>
-        <param name="httpResponse">To be added.</param>
-        <param name="bot">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="httpRequest">The HTTP request object, typically in a POST handler by a Controller.</param>
+        <param name="httpResponse">The HTTP response object.</param>
+        <param name="bot">The bot implementation.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            This method can be called from inside a POST method on any Controller implementation.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

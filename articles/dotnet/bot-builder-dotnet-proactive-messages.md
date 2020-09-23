@@ -1,6 +1,6 @@
 ---
 title: Send proactive messages (v3 C#) - Bot Service
-description: Learn how to send proactive messages using the Bot Framework SDK for .NET.
+description: Learn how to use bots to send proactive messages. See code samples that use version 3 of the Bot Framework SDK for ad hoc and dialog-based proactive messaging.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
@@ -10,7 +10,7 @@ ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0'
 ---
 
-# Send proactive messages
+# Send proactive messages in the v3 C\# SDK
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
 

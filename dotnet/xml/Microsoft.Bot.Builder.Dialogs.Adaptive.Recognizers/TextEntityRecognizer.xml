@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizer</BaseTypeName>
@@ -30,6 +32,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,6 +52,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;Microsoft.Recognizers.Text.ModelResult&gt;</ReturnType>
@@ -68,13 +74,15 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Entity&gt;&gt; RecognizeEntitiesAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, string text, string locale, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Entity&gt; entities, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Schema.Entity&gt;&gt; RecognizeEntitiesAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, string text, string locale, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Schema.Entity&gt; entities, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.TextEntityRecognizer.RecognizeEntitiesAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.String,System.String,System.Collections.Generic.IEnumerable{Microsoft.Bot.Schema.Entity},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function RecognizeEntitiesAsync (dialogContext As DialogContext, text As String, locale As String, entities As IEnumerable(Of Entity), Optional cancellationToken As CancellationToken = null) As Task(Of IEnumerable(Of Entity))" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function RecognizeEntitiesAsync (dialogContext As DialogContext, text As String, locale As String, entities As IEnumerable(Of Entity), Optional cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of Entity))" />
       <MemberSignature Language="F#" Value="override this.RecognizeEntitiesAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * string * string * seq&lt;Microsoft.Bot.Schema.Entity&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.Bot.Schema.Entity&gt;&gt;" Usage="textEntityRecognizer.RecognizeEntitiesAsync (dialogContext, text, locale, entities, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Entity&gt;&gt;</ReturnType>

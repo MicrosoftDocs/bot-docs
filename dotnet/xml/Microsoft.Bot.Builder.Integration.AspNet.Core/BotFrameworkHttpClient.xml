@@ -10,21 +10,30 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Skills.BotFrameworkClient</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+            Class for posting activities securely to a bot using BotFramework HTTP protocol.
+            </summary>
+    <remarks>
+            This class can be used to securely post activities to a bot using the Bot Framework HTTP protocol. There are 2 usage patterns:
+            * Forwarding activity to a Skill (Bot =&gt; Bot as a Skill) which is done via PostActivityAsync(fromBotId, toBotId, endpoint, serviceUrl, activity);
+            * Posting an activity to yourself (External service =&gt; Bot) which is done via PostActivityAsync(botId, endpoint, activity)
+            The latter is used by external services such as webjobs that need to post activities to the bot using the bots own credentials.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public BotFrameworkHttpClient (System.Net.Http.HttpClient httpClient, Microsoft.Bot.Connector.Authentication.ICredentialProvider credentialProvider, Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider = default, Microsoft.Extensions.Logging.ILogger logger = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Net.Http.HttpClient httpClient, class Microsoft.Bot.Connector.Authentication.ICredentialProvider credentialProvider, class Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider, class Microsoft.Extensions.Logging.ILogger logger) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpClient.#ctor(System.Net.Http.HttpClient,Microsoft.Bot.Connector.Authentication.ICredentialProvider,Microsoft.Bot.Connector.Authentication.IChannelProvider,Microsoft.Extensions.Logging.ILogger)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (httpClient As HttpClient, credentialProvider As ICredentialProvider, Optional channelProvider As IChannelProvider = null, Optional logger As ILogger = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (httpClient As HttpClient, credentialProvider As ICredentialProvider, Optional channelProvider As IChannelProvider = Nothing, Optional logger As ILogger = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpClient : System.Net.Http.HttpClient * Microsoft.Bot.Connector.Authentication.ICredentialProvider * Microsoft.Bot.Connector.Authentication.IChannelProvider * Microsoft.Extensions.Logging.ILogger -&gt; Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpClient" Usage="new Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpClient (httpClient, credentialProvider, channelProvider, logger)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -33,6 +42,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" />
@@ -41,11 +52,13 @@
         <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger" />
       </Parameters>
       <Docs>
-        <param name="httpClient">To be added.</param>
-        <param name="credentialProvider">To be added.</param>
-        <param name="channelProvider">To be added.</param>
-        <param name="logger">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="httpClient">A <see cref="P:Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpClient.HttpClient" />.</param>
+        <param name="credentialProvider">An instance of <see cref="T:Microsoft.Bot.Connector.Authentication.ICredentialProvider" />.</param>
+        <param name="channelProvider">An instance of <see cref="T:Microsoft.Bot.Connector.Authentication.IChannelProvider" />.</param>
+        <param name="logger">An instance of <see cref="T:Microsoft.Extensions.Logging.ILogger" />.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpClient" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,13 +75,18 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Concurrent.ConcurrentDictionary&lt;System.String,Microsoft.Bot.Connector.Authentication.AppCredentials&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the Cache for appCredentials to speed up token acquisition (a token is not requested unless is expired).
+            AppCredentials are cached using appId + scope (this last parameter is only used if the app credentials are used to call a skill).
+            </summary>
+        <value>ConcurrentDictionary of <see cref="T:Microsoft.Bot.Connector.Authentication.AppCredentials" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,7 +94,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.Authentication.AppCredentials&gt; BuildCredentialsAsync (string appId, string oAuthScope = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.Authentication.AppCredentials&gt; BuildCredentialsAsync(string appId, string oAuthScope) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpClient.BuildCredentialsAsync(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overridable Function BuildCredentialsAsync (appId As String, Optional oAuthScope As String = null) As Task(Of AppCredentials)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function BuildCredentialsAsync (appId As String, Optional oAuthScope As String = Nothing) As Task(Of AppCredentials)" />
       <MemberSignature Language="F#" Value="abstract member BuildCredentialsAsync : string * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.Authentication.AppCredentials&gt;&#xA;override this.BuildCredentialsAsync : string * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.Authentication.AppCredentials&gt;" Usage="botFrameworkHttpClient.BuildCredentialsAsync (appId, oAuthScope)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -85,6 +103,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.Authentication.AppCredentials&gt;</ReturnType>
@@ -117,13 +137,19 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.Authentication.IChannelProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the channel provider for this adapter.
+            </summary>
+        <value>
+            The channel provider for this adapter.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,13 +166,19 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.Authentication.ICredentialProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the credential provider for this adapter.
+            </summary>
+        <value>
+            The credential provider for this adapter.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,13 +195,19 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Http.HttpClient</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the HttpClient for this adapter.
+            </summary>
+        <value>
+            The HttpClient for this adapter.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,13 +224,52 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Extensions.Logging.ILogger</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the logger for this adapter.
+            </summary>
+        <value>
+            The logger for this adapter.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostActivityAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt; PostActivityAsync (string botId, Uri botEndpoint, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.InvokeResponse&gt; PostActivityAsync(string botId, class System.Uri botEndpoint, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpClient.PostActivityAsync(System.String,System.Uri,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PostActivityAsync (botId As String, botEndpoint As Uri, activity As Activity, Optional cancellationToken As CancellationToken = Nothing) As Task(Of InvokeResponse)" />
+      <MemberSignature Language="F#" Value="override this.PostActivityAsync : string * Uri * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt;" Usage="botFrameworkHttpClient.PostActivityAsync (botId, botEndpoint, activity, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="botId" Type="System.String" />
+        <Parameter Name="botEndpoint" Type="System.Uri" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="botId">The MicrosoftAppId of the bot.</param>
+        <param name="botEndpoint">The URL of the bot.</param>
+        <param name="activity">activity to post.</param>
+        <param name="cancellationToken">Cancellation token.</param>
+        <summary>
+            Post Activity to the bot using the bot's credentials.
+            </summary>
+        <returns>InvokeResponse.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,7 +277,7 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt; PostActivityAsync (string fromBotId, string toBotId, Uri toUrl, Uri serviceUrl, string conversationId, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.InvokeResponse&gt; PostActivityAsync(string fromBotId, string toBotId, class System.Uri toUrl, class System.Uri serviceUrl, string conversationId, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpClient.PostActivityAsync(System.String,System.String,System.Uri,System.Uri,System.String,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function PostActivityAsync (fromBotId As String, toBotId As String, toUrl As Uri, serviceUrl As Uri, conversationId As String, activity As Activity, Optional cancellationToken As CancellationToken = null) As Task(Of InvokeResponse)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function PostActivityAsync (fromBotId As String, toBotId As String, toUrl As Uri, serviceUrl As Uri, conversationId As String, activity As Activity, Optional cancellationToken As CancellationToken = Nothing) As Task(Of InvokeResponse)" />
       <MemberSignature Language="F#" Value="override this.PostActivityAsync : string * string * Uri * Uri * string * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt;" Usage="botFrameworkHttpClient.PostActivityAsync (fromBotId, toBotId, toUrl, serviceUrl, conversationId, activity, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -209,6 +286,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt;</ReturnType>
@@ -238,10 +317,47 @@
       </Docs>
     </Member>
     <Member MemberName="PostActivityAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&lt;T&gt;&gt; PostActivityAsync&lt;T&gt; (string botId, Uri botEndpoint, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.InvokeResponse`1&lt;!!T&gt;&gt; PostActivityAsync&lt;T&gt;(string botId, class System.Uri botEndpoint, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpClient.PostActivityAsync``1(System.String,System.Uri,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PostActivityAsync(Of T) (botId As String, botEndpoint As Uri, activity As Activity, Optional cancellationToken As CancellationToken = Nothing) As Task(Of InvokeResponse(Of T))" />
+      <MemberSignature Language="F#" Value="override this.PostActivityAsync : string * Uri * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&lt;'T&gt;&gt;" Usage="botFrameworkHttpClient.PostActivityAsync (botId, botEndpoint, activity, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Integration.AspNet.Core</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&lt;T&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="botId" Type="System.String" />
+        <Parameter Name="botEndpoint" Type="System.Uri" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">type of invokeResponse body.</typeparam>
+        <param name="botId">The MicrosoftAppId of the bot.</param>
+        <param name="botEndpoint">The URL of the bot.</param>
+        <param name="activity">activity to post.</param>
+        <param name="cancellationToken">Cancellation token.</param>
+        <summary>
+            Post Activity to the bot using the bot's credentials.
+            </summary>
+        <returns>InvokeResponse<typeparamref name="T" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostActivityAsync&lt;T&gt;">
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&lt;T&gt;&gt; PostActivityAsync&lt;T&gt; (string fromBotId, string toBotId, Uri toUrl, Uri serviceUrl, string conversationId, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.InvokeResponse`1&lt;!!T&gt;&gt; PostActivityAsync&lt;T&gt;(string fromBotId, string toBotId, class System.Uri toUrl, class System.Uri serviceUrl, string conversationId, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.BotFrameworkHttpClient.PostActivityAsync``1(System.String,System.String,System.Uri,System.Uri,System.String,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function PostActivityAsync(Of T) (fromBotId As String, toBotId As String, toUrl As Uri, serviceUrl As Uri, conversationId As String, activity As Activity, Optional cancellationToken As CancellationToken = null) As Task(Of InvokeResponse(Of T))" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function PostActivityAsync(Of T) (fromBotId As String, toBotId As String, toUrl As Uri, serviceUrl As Uri, conversationId As String, activity As Activity, Optional cancellationToken As CancellationToken = Nothing) As Task(Of InvokeResponse(Of T))" />
       <MemberSignature Language="F#" Value="override this.PostActivityAsync : string * string * Uri * Uri * string * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&lt;'T&gt;&gt;" Usage="botFrameworkHttpClient.PostActivityAsync (fromBotId, toBotId, toUrl, serviceUrl, conversationId, activity, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -249,6 +365,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&lt;T&gt;&gt;</ReturnType>
@@ -277,7 +395,7 @@
         <summary>
             Forwards an activity to a skill (bot).
             </summary>
-        <returns>Async task with optional invokeResponse.</returns>
+        <returns>Async task with optional invokeResponse<typeparamref name="T" />.</returns>
         <remarks>NOTE: Forwarding an activity to a skill will flush UserState and ConversationState changes so that skill has accurate state.</remarks>
       </Docs>
     </Member>

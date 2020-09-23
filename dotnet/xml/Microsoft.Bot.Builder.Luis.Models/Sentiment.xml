@@ -44,7 +44,7 @@
       <MemberSignature Language="C#" Value="public Sentiment (string label = default, double? score = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string label, valuetype System.Nullable`1&lt;float64&gt; score) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Luis.Models.Sentiment.#ctor(System.String,System.Nullable{System.Double})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional label As String = null, Optional score As Nullable(Of Double) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional label As String = Nothing, Optional score As Nullable(Of Double) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Luis.Models.Sentiment : string * Nullable&lt;double&gt; -&gt; Microsoft.Bot.Builder.Luis.Models.Sentiment" Usage="new Microsoft.Bot.Builder.Luis.Models.Sentiment (label, score)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -79,7 +79,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="label")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="label")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="label")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -107,7 +108,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="score")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="score")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="score")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

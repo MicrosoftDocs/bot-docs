@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -15,7 +17,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerDisplay("{ChangeType}:{Desire}")</AttributeName>
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerDisplay("{ChangeType}:{Desire}")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerDisplay("{ChangeType}:{Desire}")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -33,6 +36,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -51,10 +56,13 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="actions")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="actions")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="actions")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -77,10 +85,13 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="changeType")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="changeType")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="changeType")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -103,10 +114,13 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="tags")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="tags")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="tags")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -129,10 +143,13 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="turn")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="turn")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="turn")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

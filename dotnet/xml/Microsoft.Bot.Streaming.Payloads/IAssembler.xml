@@ -8,10 +8,14 @@
     <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            An assembler used to pull raw, disjointed, bytes from the incoming stream and assemble them into their original form.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,13 +30,17 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Closes the assembler.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,14 +55,18 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Creates a new stream populated with the bytes of the assembler's payload.
+            </summary>
+        <returns>The new stream ready for consumption.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,13 +81,19 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets a value indicating whether true if the current segment is the final segment of the stream.
+            </summary>
+        <value>
+            True or False.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,14 +108,18 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Returns the assembler's payload as a stream.
+            </summary>
+        <returns>A stream conversion of the assembler's payload.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,13 +134,19 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the ID of this assembler.
+            </summary>
+        <value>
+            A GUID.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,6 +161,8 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -143,10 +173,12 @@
         <Parameter Name="contentLength" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="header">To be added.</param>
-        <param name="stream">To be added.</param>
-        <param name="contentLength">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="header">The stream's <see cref="T:Microsoft.Bot.Streaming.Payloads.Header" />.</param>
+        <param name="stream">The incoming stream being assembled.</param>
+        <param name="contentLength">The length of the stream, if finite.</param>
+        <summary>
+            The action the assembler executes when new bytes are received on the incoming stream.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

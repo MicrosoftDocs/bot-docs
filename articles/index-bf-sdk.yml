@@ -64,6 +64,8 @@ landingContent:
         links:
           - text: .NET
             url: https://docs.microsoft.com/dotnet/api/?view=botbuilder-dotnet-stable
+          - text: Java (preview)
+            url: https://docs.microsoft.com/java/api/?view=botbuilder-java-preview
           - text: JavaScript
             url: https://docs.microsoft.com/javascript/api/botbuilder
           - text: Python

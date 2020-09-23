@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -31,6 +33,8 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Attachment</ReturnType>
@@ -58,6 +62,8 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Attachment</ReturnType>
@@ -85,6 +91,8 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Attachment</ReturnType>
@@ -102,6 +110,33 @@
       </Docs>
     </Member>
     <Member MemberName="ToAttachment">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.Attachment ToAttachment (this Microsoft.Bot.Schema.OAuthCard card);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.Attachment ToAttachment(class Microsoft.Bot.Schema.OAuthCard card) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Extensions.ToAttachment(Microsoft.Bot.Schema.OAuthCard)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToAttachment (card As OAuthCard) As Attachment" />
+      <MemberSignature Language="F#" Value="static member ToAttachment : Microsoft.Bot.Schema.OAuthCard -&gt; Microsoft.Bot.Schema.Attachment" Usage="Microsoft.Bot.Schema.Extensions.ToAttachment card" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Attachment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="card" Type="Microsoft.Bot.Schema.OAuthCard" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="card"> The instance of <see cref="T:Microsoft.Bot.Schema.OAuthCard" />.</param>
+        <summary>
+            Creates a new attachment from <see cref="T:Microsoft.Bot.Schema.OAuthCard" />.
+            </summary>
+        <returns> The generated attachment.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToAttachment">
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.Attachment ToAttachment (this Microsoft.Bot.Schema.ReceiptCard card);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.Attachment ToAttachment(class Microsoft.Bot.Schema.ReceiptCard card) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Extensions.ToAttachment(Microsoft.Bot.Schema.ReceiptCard)" />
@@ -112,6 +147,8 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Attachment</ReturnType>
@@ -139,6 +176,8 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Attachment</ReturnType>
@@ -166,6 +205,8 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Attachment</ReturnType>
@@ -193,6 +234,8 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Attachment</ReturnType>

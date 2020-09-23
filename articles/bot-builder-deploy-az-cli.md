@@ -1,6 +1,6 @@
 ---
 title: Deploy your bot - Bot Service
-description: Deploy your bot to the Azure cloud
+description: Learn how to deploy bots to the Azure cloud. See how to prepare bots for deployment, deploy the code to the Azure Web App, and test bots in Web Chat.
 keywords: deploy bot, azure deploy bot, publish bot
 author: ivorb
 ms.author: kamrani
@@ -63,7 +63,7 @@ When creating the bot application service, you can deploy your bot in a new or i
 
 ### 5. Prepare your code for deployment
 
-#### 5.1 Retrieve or create necessary IIS/Kudu files
+#### 5.1 Retrieve or create necessary files
 
 [!INCLUDE [retrieve or create IIS/Kudu files](~/includes/deploy/snippet-IIS-Kudu-files.md)]
 

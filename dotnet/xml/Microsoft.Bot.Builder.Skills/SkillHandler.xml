@@ -10,6 +10,8 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.ChannelServiceHandler</BaseTypeName>
@@ -26,7 +28,7 @@
       <MemberSignature Language="C#" Value="public SkillHandler (Microsoft.Bot.Builder.BotAdapter adapter, Microsoft.Bot.Builder.IBot bot, Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryBase conversationIdFactory, Microsoft.Bot.Connector.Authentication.ICredentialProvider credentialProvider, Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration authConfig, Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider = default, Microsoft.Extensions.Logging.ILogger logger = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.BotAdapter adapter, class Microsoft.Bot.Builder.IBot bot, class Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryBase conversationIdFactory, class Microsoft.Bot.Connector.Authentication.ICredentialProvider credentialProvider, class Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration authConfig, class Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider, class Microsoft.Extensions.Logging.ILogger logger) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Skills.SkillHandler.#ctor(Microsoft.Bot.Builder.BotAdapter,Microsoft.Bot.Builder.IBot,Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryBase,Microsoft.Bot.Connector.Authentication.ICredentialProvider,Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration,Microsoft.Bot.Connector.Authentication.IChannelProvider,Microsoft.Extensions.Logging.ILogger)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (adapter As BotAdapter, bot As IBot, conversationIdFactory As SkillConversationIdFactoryBase, credentialProvider As ICredentialProvider, authConfig As AuthenticationConfiguration, Optional channelProvider As IChannelProvider = null, Optional logger As ILogger = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (adapter As BotAdapter, bot As IBot, conversationIdFactory As SkillConversationIdFactoryBase, credentialProvider As ICredentialProvider, authConfig As AuthenticationConfiguration, Optional channelProvider As IChannelProvider = Nothing, Optional logger As ILogger = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Skills.SkillHandler : Microsoft.Bot.Builder.BotAdapter * Microsoft.Bot.Builder.IBot * Microsoft.Bot.Builder.Skills.SkillConversationIdFactoryBase * Microsoft.Bot.Connector.Authentication.ICredentialProvider * Microsoft.Bot.Connector.Authentication.AuthenticationConfiguration * Microsoft.Bot.Connector.Authentication.IChannelProvider * Microsoft.Extensions.Logging.ILogger -&gt; Microsoft.Bot.Builder.Skills.SkillHandler" Usage="new Microsoft.Bot.Builder.Skills.SkillHandler (adapter, bot, conversationIdFactory, credentialProvider, authConfig, channelProvider, logger)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -35,6 +37,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="adapter" Type="Microsoft.Bot.Builder.BotAdapter" />
@@ -68,7 +72,7 @@
       <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; OnReplyToActivityAsync (System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, string activityId, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; OnReplyToActivityAsync(class System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, string activityId, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Skills.SkillHandler.OnReplyToActivityAsync(System.Security.Claims.ClaimsIdentity,System.String,System.String,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnReplyToActivityAsync (claimsIdentity As ClaimsIdentity, conversationId As String, activityId As String, activity As Activity, Optional cancellationToken As CancellationToken = null) As Task(Of ResourceResponse)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnReplyToActivityAsync (claimsIdentity As ClaimsIdentity, conversationId As String, activityId As String, activity As Activity, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ResourceResponse)" />
       <MemberSignature Language="F#" Value="override this.OnReplyToActivityAsync : System.Security.Claims.ClaimsIdentity * string * string * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="skillHandler.OnReplyToActivityAsync (claimsIdentity, conversationId, activityId, activity, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -77,6 +81,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -119,7 +125,7 @@
       <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; OnSendToConversationAsync (System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; OnSendToConversationAsync(class System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Skills.SkillHandler.OnSendToConversationAsync(System.Security.Claims.ClaimsIdentity,System.String,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnSendToConversationAsync (claimsIdentity As ClaimsIdentity, conversationId As String, activity As Activity, Optional cancellationToken As CancellationToken = null) As Task(Of ResourceResponse)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnSendToConversationAsync (claimsIdentity As ClaimsIdentity, conversationId As String, activity As Activity, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ResourceResponse)" />
       <MemberSignature Language="F#" Value="override this.OnSendToConversationAsync : System.Security.Claims.ClaimsIdentity * string * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="skillHandler.OnSendToConversationAsync (claimsIdentity, conversationId, activity, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -128,6 +134,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -177,12 +185,16 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The skill conversation reference.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

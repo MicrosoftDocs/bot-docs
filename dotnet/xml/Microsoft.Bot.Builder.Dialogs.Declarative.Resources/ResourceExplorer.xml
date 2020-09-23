@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -34,6 +36,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -54,13 +58,17 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="providers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceProvider&gt;" />
       </Parameters>
       <Docs>
-        <param name="providers">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="providers">The list of resource providers to initialize the current instance.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,6 +83,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer</ReturnType>
@@ -102,6 +112,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -128,6 +140,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -167,6 +181,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource&gt;&gt;</ReturnType>
@@ -192,6 +208,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -202,6 +220,35 @@
             Dispose of internal resources.
             </summary>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="resourceExplorer.Dispose disposing" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">A Boolean that indicates whether the method call comes from a Dispose method (its value is true) or from a finalizer (its value is false).</param>
+        <summary>
+            Disposes objected used by the class.
+            </summary>
+        <remarks>
+            The disposing parameter should be false when called from a finalizer, and true when called from the IDisposable.Dispose method.
+            In other words, it is true when deterministically called and false when non-deterministically called.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetKindsForType">
@@ -215,6 +262,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
@@ -242,6 +291,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
@@ -270,6 +321,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource</ReturnType>
@@ -297,10 +350,13 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer/&lt;GetResources&gt;d__25))</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer/&lt;GetResources&gt;d__26))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer/&lt;GetResources&gt;d__26))&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -329,6 +385,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
@@ -356,6 +414,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -383,6 +443,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -414,6 +476,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -438,13 +502,15 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;T&gt; LoadTypeAsync&lt;T&gt; (Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource resource, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!!T&gt; LoadTypeAsync&lt;T&gt;(class Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource resource, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer.LoadTypeAsync``1(Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function LoadTypeAsync(Of T) (resource As Resource, Optional cancellationToken As CancellationToken = null) As Task(Of T)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LoadTypeAsync(Of T) (resource As Resource, Optional cancellationToken As CancellationToken = Nothing) As Task(Of T)" />
       <MemberSignature Language="F#" Value="member this.LoadTypeAsync : Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="resourceExplorer.LoadTypeAsync (resource, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
@@ -478,6 +544,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -486,8 +554,10 @@
         <Parameter Name="resources" Type="Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource[]" />
       </Parameters>
       <Docs>
-        <param name="resources">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="resources">A collection of resources to pass to the event handler.</param>
+        <summary>
+            Handler for on changed events.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -502,6 +572,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -518,13 +590,15 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer RegisterType (string kind, Type type, Microsoft.Bot.Builder.Dialogs.Declarative.Loaders.ICustomDeserializer loader = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer RegisterType(string kind, class System.Type type, class Microsoft.Bot.Builder.Dialogs.Declarative.Loaders.ICustomDeserializer loader) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer.RegisterType(System.String,System.Type,Microsoft.Bot.Builder.Dialogs.Declarative.Loaders.ICustomDeserializer)" />
-      <MemberSignature Language="VB.NET" Value="Public Function RegisterType (kind As String, type As Type, Optional loader As ICustomDeserializer = null) As ResourceExplorer" />
+      <MemberSignature Language="VB.NET" Value="Public Function RegisterType (kind As String, type As Type, Optional loader As ICustomDeserializer = Nothing) As ResourceExplorer" />
       <MemberSignature Language="F#" Value="member this.RegisterType : string * Type * Microsoft.Bot.Builder.Dialogs.Declarative.Loaders.ICustomDeserializer -&gt; Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" Usage="resourceExplorer.RegisterType (kind, type, loader)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer</ReturnType>
@@ -549,13 +623,15 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer RegisterType&lt;T&gt; (string kind, Microsoft.Bot.Builder.Dialogs.Declarative.Loaders.ICustomDeserializer loader = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer RegisterType&lt;T&gt;(string kind, class Microsoft.Bot.Builder.Dialogs.Declarative.Loaders.ICustomDeserializer loader) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer.RegisterType``1(System.String,Microsoft.Bot.Builder.Dialogs.Declarative.Loaders.ICustomDeserializer)" />
-      <MemberSignature Language="VB.NET" Value="Public Function RegisterType(Of T) (kind As String, Optional loader As ICustomDeserializer = null) As ResourceExplorer" />
+      <MemberSignature Language="VB.NET" Value="Public Function RegisterType(Of T) (kind As String, Optional loader As ICustomDeserializer = Nothing) As ResourceExplorer" />
       <MemberSignature Language="F#" Value="member this.RegisterType : string * Microsoft.Bot.Builder.Dialogs.Declarative.Loaders.ICustomDeserializer -&gt; Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" Usage="resourceExplorer.RegisterType (kind, loader)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer</ReturnType>
@@ -582,13 +658,15 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Newtonsoft.Json.Linq.JToken&gt; ResolveRefAsync (Newtonsoft.Json.Linq.JToken refToken, Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext sourceContext, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Newtonsoft.Json.Linq.JToken&gt; ResolveRefAsync(class Newtonsoft.Json.Linq.JToken refToken, class Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext sourceContext, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer.ResolveRefAsync(Newtonsoft.Json.Linq.JToken,Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function ResolveRefAsync (refToken As JToken, sourceContext As SourceContext, Optional cancellationToken As CancellationToken = null) As Task(Of JToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ResolveRefAsync (refToken As JToken, sourceContext As SourceContext, Optional cancellationToken As CancellationToken = Nothing) As Task(Of JToken)" />
       <MemberSignature Language="F#" Value="member this.ResolveRefAsync : Newtonsoft.Json.Linq.JToken * Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Newtonsoft.Json.Linq.JToken&gt;" Usage="resourceExplorer.ResolveRefAsync (refToken, sourceContext, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Newtonsoft.Json.Linq.JToken&gt;</ReturnType>
@@ -620,6 +698,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceProvider&gt;</ReturnType>
@@ -645,6 +725,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.HashSet&lt;System.String&gt;</ReturnType>
@@ -670,6 +752,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

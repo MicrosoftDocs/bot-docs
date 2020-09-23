@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -18,7 +20,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            StreamManagers are used to provide access to the objects involved in processing incoming <see cref="T:Microsoft.Bot.Streaming.Payloads.PayloadStream" />s.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,20 +30,24 @@
       <MemberSignature Language="C#" Value="public StreamManager (Action&lt;Microsoft.Bot.Streaming.Payloads.PayloadStreamAssembler&gt; onCancelStream = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Action`1&lt;class Microsoft.Bot.Streaming.Payloads.PayloadStreamAssembler&gt; onCancelStream) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.Payloads.StreamManager.#ctor(System.Action{Microsoft.Bot.Streaming.Payloads.PayloadStreamAssembler})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional onCancelStream As Action(Of PayloadStreamAssembler) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional onCancelStream As Action(Of PayloadStreamAssembler) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Streaming.Payloads.StreamManager : Action&lt;Microsoft.Bot.Streaming.Payloads.PayloadStreamAssembler&gt; -&gt; Microsoft.Bot.Streaming.Payloads.StreamManager" Usage="new Microsoft.Bot.Streaming.Payloads.StreamManager onCancelStream" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="onCancelStream" Type="System.Action&lt;Microsoft.Bot.Streaming.Payloads.PayloadStreamAssembler&gt;" />
       </Parameters>
       <Docs>
-        <param name="onCancelStream">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="onCancelStream">Optional action to trigger if the managed stream is cancelled.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Streaming.Payloads.StreamManager" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,6 +65,8 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -68,6 +78,7 @@
         <param name="id">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="GetPayloadAssembler">
@@ -84,6 +95,8 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Streaming.Payloads.PayloadStreamAssembler</ReturnType>
@@ -96,6 +109,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="GetPayloadStream">
@@ -112,6 +126,8 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
@@ -124,6 +140,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="OnReceive">
@@ -140,6 +157,8 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -155,6 +174,7 @@
         <param name="contentLength">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
   </Members>

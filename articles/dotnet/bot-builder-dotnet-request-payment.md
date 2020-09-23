@@ -1,6 +1,6 @@
 ---
 title: Request payment (v3 C#) - Bot Service
-description: Learn how to send a payment request using the Bot Framework SDK for .NET.
+description: Learn how to use bots to send payment requests. See code samples that use the Bot Framework SDK to add rich cards to messages and process payments.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
@@ -10,7 +10,7 @@ ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0'
 ---
 
-# Request payment
+# Request payment in the v3 C\# SDK
 
 > [!NOTE]
 > The Payment service referred to in this article will be deprecated on December 1, 2019.

@@ -13,6 +13,8 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase</BaseTypeName>
@@ -33,7 +35,7 @@
       <MemberSignature Language="C#" Value="public BotFrameworkHttpAdapter (Microsoft.Bot.Connector.Authentication.ICredentialProvider credentialProvider = default, Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider = default, Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkHttpAdapter&gt; logger = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Connector.Authentication.ICredentialProvider credentialProvider, class Microsoft.Bot.Connector.Authentication.IChannelProvider channelProvider, class Microsoft.Extensions.Logging.ILogger`1&lt;class Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkHttpAdapter&gt; logger) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkHttpAdapter.#ctor(Microsoft.Bot.Connector.Authentication.ICredentialProvider,Microsoft.Bot.Connector.Authentication.IChannelProvider,Microsoft.Extensions.Logging.ILogger{Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkHttpAdapter})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional credentialProvider As ICredentialProvider = null, Optional channelProvider As IChannelProvider = null, Optional logger As ILogger(Of BotFrameworkHttpAdapter) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional credentialProvider As ICredentialProvider = Nothing, Optional channelProvider As IChannelProvider = Nothing, Optional logger As ILogger(Of BotFrameworkHttpAdapter) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkHttpAdapter : Microsoft.Bot.Connector.Authentication.ICredentialProvider * Microsoft.Bot.Connector.Authentication.IChannelProvider * Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkHttpAdapter&gt; -&gt; Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkHttpAdapter" Usage="new Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkHttpAdapter (credentialProvider, channelProvider, logger)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -45,6 +47,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="credentialProvider" Type="Microsoft.Bot.Connector.Authentication.ICredentialProvider" />
@@ -52,10 +56,12 @@
         <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkHttpAdapter&gt;" />
       </Parameters>
       <Docs>
-        <param name="credentialProvider">To be added.</param>
-        <param name="channelProvider">To be added.</param>
-        <param name="logger">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="credentialProvider">The credential provider.</param>
+        <param name="channelProvider">The channel provider.</param>
+        <param name="logger">The ILogger implementation this adapter should use.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkHttpAdapter" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,6 +80,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="credentialProvider" Type="Microsoft.Bot.Connector.Authentication.ICredentialProvider" />
@@ -82,11 +90,13 @@
         <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkHttpAdapter&gt;" />
       </Parameters>
       <Docs>
-        <param name="credentialProvider">To be added.</param>
-        <param name="channelProvider">To be added.</param>
-        <param name="httpClient">To be added.</param>
-        <param name="logger">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="credentialProvider">The credential provider.</param>
+        <param name="channelProvider">The channel provider.</param>
+        <param name="httpClient">The <see cref="T:System.Net.Http.HttpClient" /> used.</param>
+        <param name="logger">The ILogger implementation this adapter should use.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkHttpAdapter" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,7 +104,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ProcessAsync (System.Net.Http.HttpRequestMessage httpRequest, System.Net.Http.HttpResponseMessage httpResponse, Microsoft.Bot.Builder.IBot bot, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task ProcessAsync(class System.Net.Http.HttpRequestMessage httpRequest, class System.Net.Http.HttpResponseMessage httpResponse, class Microsoft.Bot.Builder.IBot bot, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.WebApi.BotFrameworkHttpAdapter.ProcessAsync(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpResponseMessage,Microsoft.Bot.Builder.IBot,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function ProcessAsync (httpRequest As HttpRequestMessage, httpResponse As HttpResponseMessage, bot As IBot, Optional cancellationToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Function ProcessAsync (httpRequest As HttpRequestMessage, httpResponse As HttpResponseMessage, bot As IBot, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="abstract member ProcessAsync : System.Net.Http.HttpRequestMessage * System.Net.Http.HttpResponseMessage * Microsoft.Bot.Builder.IBot * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.ProcessAsync : System.Net.Http.HttpRequestMessage * System.Net.Http.HttpResponseMessage * Microsoft.Bot.Builder.IBot * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="botFrameworkHttpAdapter.ProcessAsync (httpRequest, httpResponse, bot, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -109,6 +119,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -120,12 +132,15 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="httpRequest">To be added.</param>
-        <param name="httpResponse">To be added.</param>
-        <param name="bot">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="httpRequest">The HTTP request object, typically in a POST handler by a Controller.</param>
+        <param name="httpResponse">The HTTP response object.</param>
+        <param name="bot">The bot implementation.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            This method can be called from inside a POST method on any Controller implementation.
+            </summary>
+        <returns>A task that represents the work queued to execute.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

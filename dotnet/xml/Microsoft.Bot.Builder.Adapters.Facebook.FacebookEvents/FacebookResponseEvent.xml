@@ -7,13 +7,16 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents the incoming object received from Facebook and processed by the adapter.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,6 +47,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry&gt;</ReturnType>
@@ -65,10 +70,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="object")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="object")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="object")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -92,14 +99,17 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Gets the flag to determine if the Entry property should be serialized.
+            </summary>
+        <returns>True if Entry count is greater than zero.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

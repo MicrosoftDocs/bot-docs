@@ -7,13 +7,16 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents the payload received when a Webex Message is sent to the bot.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -46,10 +50,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="attachments")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="attachments")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="attachments")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -75,10 +81,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="files")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="files")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="files")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -104,10 +112,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="markdown")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="markdown")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="markdown")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -133,10 +143,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="roomId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="roomId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="roomId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -162,6 +174,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -185,10 +198,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="text")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="text")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="text")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -214,10 +229,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="toPersonEmail")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="toPersonEmail")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="toPersonEmail")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -243,10 +260,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Webex</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="toPersonId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="toPersonId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="toPersonId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

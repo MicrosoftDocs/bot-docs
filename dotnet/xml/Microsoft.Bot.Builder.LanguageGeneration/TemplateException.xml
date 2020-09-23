@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Exception</BaseTypeName>
@@ -19,7 +21,8 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -40,15 +43,19 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
         <Parameter Name="diagnostics" Type="System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.LanguageGeneration.Diagnostic&gt;" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="diagnostics">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">Error message.</param>
+        <param name="diagnostics">List of diagnostics to throw.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.LanguageGeneration.TemplateException" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,6 +70,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.LanguageGeneration.Diagnostic&gt;</ReturnType>

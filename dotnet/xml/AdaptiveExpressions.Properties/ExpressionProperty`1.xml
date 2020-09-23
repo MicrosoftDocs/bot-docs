@@ -7,6 +7,8 @@
   <AssemblyInfo>
     <AssemblyName>AdaptiveExpressions</AssemblyName>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -36,10 +38,14 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:AdaptiveExpressions.Properties.ExpressionProperty`1" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,13 +59,17 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">An object containing the value to be set.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:AdaptiveExpressions.Properties.ExpressionProperty`1" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,6 +83,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -101,6 +113,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -128,6 +142,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -154,6 +170,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -166,7 +184,7 @@
         <summary>
             Get the value.
             </summary>
-        <returns>value or default(T) if not found.</returns>
+        <returns>Value or default(T) if not found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,6 +198,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.Properties.ExpressionProperty&lt;T&gt;</ReturnType>
@@ -204,6 +224,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.Properties.ExpressionProperty&lt;T&gt;</ReturnType>
@@ -228,6 +250,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.Properties.ExpressionProperty&lt;T&gt;</ReturnType>
@@ -255,6 +279,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -280,6 +306,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -288,9 +316,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">value to set.</param>
+        <param name="value">Value to set.</param>
         <summary>
-            Set the value.
+            Sets the value.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -305,6 +333,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.Expression</ReturnType>
@@ -328,14 +358,18 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Returns a string that represents the current object.
+            </summary>
+        <returns>A string value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -352,12 +386,15 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ValueTuple&lt;System.Object,System.String&gt;</ReturnType>
         <Attributes>
           <Attribute>
-            <AttributeName>System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "Value", "Error" })</AttributeName>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "Value", "Error" })]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "Value", "Error" })&gt;]</AttributeName>
           </Attribute>
         </Attributes>
       </ReturnValue>
@@ -383,12 +420,15 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ValueTuple&lt;T,System.String&gt;</ReturnType>
         <Attributes>
           <Attribute>
-            <AttributeName>System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "Value", "Error" })</AttributeName>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "Value", "Error" })]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "Value", "Error" })&gt;]</AttributeName>
           </Attribute>
         </Attributes>
       </ReturnValue>
@@ -398,7 +438,7 @@
       <Docs>
         <param name="data">data to use for expression binding.</param>
         <summary>
-            try to Get the value.
+            Try to Get the value.
             </summary>
         <returns>value.</returns>
         <remarks>To be added.</remarks>
@@ -414,6 +454,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -423,7 +465,7 @@
             Gets or sets the raw value of the expression property.
             </summary>
         <value>
-            the value to return when someone calls GetValue().
+            The value to return when someone calls GetValue().
             </value>
         <remarks>To be added.</remarks>
       </Docs>

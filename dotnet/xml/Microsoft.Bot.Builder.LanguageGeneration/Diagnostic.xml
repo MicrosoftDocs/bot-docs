@@ -6,8 +6,8 @@
   <TypeSignature Language="F#" Value="type Diagnostic = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
-    <AssemblyVersion>4.9.2.0</AssemblyVersion>
-    <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -20,35 +20,6 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Diagnostic (Microsoft.Bot.Builder.LanguageGeneration.Range range, string message, Microsoft.Bot.Builder.LanguageGeneration.DiagnosticSeverity severity = Microsoft.Bot.Builder.LanguageGeneration.DiagnosticSeverity.Error, string source = default, string code = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.LanguageGeneration.Range range, string message, valuetype Microsoft.Bot.Builder.LanguageGeneration.DiagnosticSeverity severity, string source, string code) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Diagnostic.#ctor(Microsoft.Bot.Builder.LanguageGeneration.Range,System.String,Microsoft.Bot.Builder.LanguageGeneration.DiagnosticSeverity,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (range As Range, message As String, Optional severity As DiagnosticSeverity = Microsoft.Bot.Builder.LanguageGeneration.DiagnosticSeverity.Error, Optional source As String = null, Optional code As String = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.LanguageGeneration.Diagnostic : Microsoft.Bot.Builder.LanguageGeneration.Range * string * Microsoft.Bot.Builder.LanguageGeneration.DiagnosticSeverity * string * string -&gt; Microsoft.Bot.Builder.LanguageGeneration.Diagnostic" Usage="new Microsoft.Bot.Builder.LanguageGeneration.Diagnostic (range, message, severity, source, code)" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-        <AssemblyVersion>4.9.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="range" Type="Microsoft.Bot.Builder.LanguageGeneration.Range" />
-        <Parameter Name="message" Type="System.String" />
-        <Parameter Name="severity" Type="Microsoft.Bot.Builder.LanguageGeneration.DiagnosticSeverity" />
-        <Parameter Name="source" Type="System.String" />
-        <Parameter Name="code" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="range">To be added.</param>
-        <param name="message">To be added.</param>
-        <param name="severity">To be added.</param>
-        <param name="source">To be added.</param>
-        <param name="code">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Code">
       <MemberSignature Language="C#" Value="public string Code { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Code" />
@@ -58,8 +29,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -83,8 +54,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -108,8 +79,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.Range</ReturnType>
@@ -133,8 +104,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.DiagnosticSeverity</ReturnType>
@@ -158,8 +129,8 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -183,8 +154,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -194,6 +165,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
   </Members>

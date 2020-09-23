@@ -10,13 +10,17 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Helper class with methods to help with reading and responding to http requests.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,12 +37,16 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Newtonsoft.Json.JsonSerializer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            An instance of <see cref="T:Newtonsoft.Json.JsonSerializer" /> created using <see cref="F:Microsoft.Bot.Builder.Integration.AspNet.Core.HttpHelper.BotMessageSerializerSettings" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,12 +63,16 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Newtonsoft.Json.JsonSerializerSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            An instance of <see cref="T:Newtonsoft.Json.JsonSerializerSettings" /> used by the <see cref="T:Microsoft.Bot.Builder.Integration.AspNet.Core.ChannelServiceController" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,6 +89,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
@@ -88,10 +102,12 @@
         <Parameter Name="request" Type="Microsoft.AspNetCore.Http.HttpRequest" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="request">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type to deserialize the request into.</typeparam>
+        <param name="request">The HttpRequest.</param>
+        <summary>
+            Accepts an incoming HttpRequest and deserializes it using the <see cref="F:Microsoft.Bot.Builder.Integration.AspNet.Core.HttpHelper.BotMessageSerializer" />.
+            </summary>
+        <returns>The deserialized request.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,6 +124,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -117,10 +135,14 @@
         <Parameter Name="invokeResponse" Type="Microsoft.Bot.Builder.InvokeResponse" />
       </Parameters>
       <Docs>
-        <param name="response">To be added.</param>
-        <param name="invokeResponse">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="response">A HttpResponse.</param>
+        <param name="invokeResponse">An instance of <see cref="T:Microsoft.Bot.Builder.InvokeResponse" />.</param>
+        <summary>
+            If an <see cref="T:Microsoft.Bot.Builder.InvokeResponse" /> is provided the status and body of the <see cref="T:Microsoft.Bot.Builder.InvokeResponse" />
+            are used to set the status and body of the <see cref="T:Microsoft.AspNetCore.Http.HttpResponse" />. If no <see cref="T:Microsoft.Bot.Builder.InvokeResponse" />
+            is provided then the status of the <see cref="T:Microsoft.AspNetCore.Http.HttpResponse" /> is set to 200.
+            </summary>
+        <returns>A Task representing the work to be executed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

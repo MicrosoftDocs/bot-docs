@@ -1,6 +1,6 @@
 ---
 title: Start a conversation - Bot Service
-description: Learn how to start a conversation using Direct Line API v3.0. 
+description: Learn how to use version 3.0 of the Direct Line API to start conversations with bots. Find out how the Start Conversation and Generate Token operations differ.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
@@ -9,7 +9,7 @@ ms.service: bot-service
 ms.date: 12/13/2017
 ---
 
-# Start a conversation
+# Start a conversation in Direct Line API 3.0
 
 Direct Line conversations are explicitly opened by clients and may run as long as the bot and client participate and have valid credentials. While the conversation is open, both the bot and client may send messages. More than one client may connect to a given conversation and each client may participate on behalf of multiple users.
 

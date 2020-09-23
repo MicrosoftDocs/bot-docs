@@ -8,13 +8,17 @@
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Wrapper class that defines a retrying behavior.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,10 +32,14 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Connector.Authentication.RetryParams" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,15 +54,19 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="retryAfter" Type="System.TimeSpan" />
         <Parameter Name="shouldRetry" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="retryAfter">To be added.</param>
-        <param name="shouldRetry">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="retryAfter">Timespan to wait between retries.</param>
+        <param name="shouldRetry">Bool that indicates if a retry is required. The default is true.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Connector.Authentication.RetryParams" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,6 +81,8 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.Authentication.RetryParams</ReturnType>
@@ -77,9 +91,12 @@
         <Parameter Name="retryCount" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="retryCount">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="retryCount">The number of times to perform a retry.</param>
+        <summary>
+            Evaluates if the current retry count is less than the maximum number of retries allowed, and returns a new
+            <see cref="T:Microsoft.Bot.Connector.Authentication.RetryParams" /> object if true, or sets the <see cref="P:Microsoft.Bot.Connector.Authentication.RetryParams.StopRetrying" /> property to false if false.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Bot.Connector.Authentication.RetryParams" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,13 +111,19 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets a value indicating the time interval to wait between retry attempts.
+            </summary>
+        <value>
+            A value indicating the time interval to wait between retry attempts.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,13 +138,19 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets a value indicating whether the retry action should be performed.
+            </summary>
+        <value>
+            A value indicating whether the retry action should be performed.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,13 +165,19 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Connector.Authentication.RetryParams</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the property that stops retrying.
+            </summary>
+        <value>
+            The property that stops retrying.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

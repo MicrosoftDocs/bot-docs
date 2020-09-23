@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,6 +32,8 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,13 +47,15 @@
       <MemberSignature Language="C#" Value="public BasicCard (string title = default, string subtitle = default, string text = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.CardImage&gt; images = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.CardAction&gt; buttons = default, Microsoft.Bot.Schema.CardAction tap = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title, string subtitle, string text, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.CardImage&gt; images, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.CardAction&gt; buttons, class Microsoft.Bot.Schema.CardAction tap) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.BasicCard.#ctor(System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Schema.CardImage},System.Collections.Generic.IList{Microsoft.Bot.Schema.CardAction},Microsoft.Bot.Schema.CardAction)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional title As String = null, Optional subtitle As String = null, Optional text As String = null, Optional images As IList(Of CardImage) = null, Optional buttons As IList(Of CardAction) = null, Optional tap As CardAction = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional title As String = Nothing, Optional subtitle As String = Nothing, Optional text As String = Nothing, Optional images As IList(Of CardImage) = Nothing, Optional buttons As IList(Of CardAction) = Nothing, Optional tap As CardAction = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.BasicCard : string * string * string * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.CardImage&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.CardAction&gt; * Microsoft.Bot.Schema.CardAction -&gt; Microsoft.Bot.Schema.BasicCard" Usage="new Microsoft.Bot.Schema.BasicCard (title, subtitle, text, images, buttons, tap)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="title" Type="System.String" />
@@ -85,10 +91,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="buttons")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="buttons")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="buttons")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -113,10 +122,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="images")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="images")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="images")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -141,10 +153,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="subtitle")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="subtitle")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="subtitle")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -169,10 +184,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="tap")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="tap")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="tap")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -198,10 +216,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="text")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="text")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="text")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -226,10 +247,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="title")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="title")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="title")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

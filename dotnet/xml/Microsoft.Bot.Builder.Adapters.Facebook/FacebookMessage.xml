@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -24,12 +25,13 @@
       <MemberSignature Language="C#" Value="public FacebookMessage (string recipientId, Microsoft.Bot.Builder.Adapters.Facebook.Message message, string messagingType, string tag = default, string notificationType = default, string personaId = default, string senderAction = default, string senderId = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string recipientId, class Microsoft.Bot.Builder.Adapters.Facebook.Message message, string messagingType, string tag, string notificationType, string personaId, string senderAction, string senderId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.#ctor(System.String,Microsoft.Bot.Builder.Adapters.Facebook.Message,System.String,System.String,System.String,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (recipientId As String, message As Message, messagingType As String, Optional tag As String = null, Optional notificationType As String = null, Optional personaId As String = null, Optional senderAction As String = null, Optional senderId As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (recipientId As String, message As Message, messagingType As String, Optional tag As String = Nothing, Optional notificationType As String = Nothing, Optional personaId As String = Nothing, Optional senderAction As String = Nothing, Optional senderId As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage : string * Microsoft.Bot.Builder.Adapters.Facebook.Message * string * string * string * string * string * string -&gt; Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage" Usage="new Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage (recipientId, message, messagingType, tag, notificationType, personaId, senderAction, senderId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="recipientId" Type="System.String" />
@@ -67,10 +69,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonIgnore</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonIgnore]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonIgnore&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -94,10 +98,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="message")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="message")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="message")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -121,10 +127,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="messaging_type")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="messaging_type")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="messaging_type")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -148,10 +156,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="notification_type")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="notification_type")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="notification_type")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -175,10 +185,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="optin")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="optin")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="optin")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -202,10 +214,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="pass_thread_control")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="pass_thread_control")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="pass_thread_control")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -229,10 +243,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="persona_id")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="persona_id")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="persona_id")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -256,10 +272,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="postback")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="postback")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="postback")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -273,6 +291,35 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Reads">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookRead Reads { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookRead Reads" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.Reads" />
+      <MemberSignature Language="VB.NET" Value="Public Property Reads As FacebookRead" />
+      <MemberSignature Language="F#" Value="member this.Reads : Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookRead with get, set" Usage="Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.Reads" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="read")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="read")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookRead</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Gets or sets the contents of the message_reads property.
+            </summary>
+        <value>A <see cref="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookRead" /> holding the contents of the message_reads property.
+            See https://developers.facebook.com/docs/messenger-platform/reference/webhook-events/message-reads. </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Recipient">
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookBotUser Recipient { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookBotUser Recipient" />
@@ -283,10 +330,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="recipient")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="recipient")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="recipient")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -310,10 +359,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="request_thread_control")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="request_thread_control")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="request_thread_control")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -337,10 +388,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="sender")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="sender")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="sender")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -364,10 +417,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="sender_action")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="sender_action")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="sender_action")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -391,10 +446,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="tag")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="tag")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="tag")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -418,10 +475,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="take_thread_control")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="take_thread_control")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="take_thread_control")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -445,10 +504,12 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="timestamp")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="timestamp")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="timestamp")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

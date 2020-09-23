@@ -1,6 +1,6 @@
 ---
 title: Conduct audio calls - Bot Service
-description: Learn how to conduct audio calls with Skype in a bot using Node.js
+description: Learn how users can place Skype audio calls to bots. See how to use the Calling SDK of the Bot Builder for Node.js SDK to add calling features to chat bots.
 author: v-ducvo
 ms.author: kamrani
 manager: kamrani
@@ -10,7 +10,7 @@ ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0'
 ---
 
-# Support audio calls with Skype
+# Support audio calls with Skype in the v3 JavaScript SDK
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
 

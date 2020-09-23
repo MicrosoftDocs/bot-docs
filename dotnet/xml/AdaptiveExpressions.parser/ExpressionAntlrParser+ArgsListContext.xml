@@ -7,6 +7,8 @@
   <AssemblyInfo>
     <AssemblyName>AdaptiveExpressions</AssemblyName>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Antlr4.Runtime.ParserRuleContext</BaseTypeName>
@@ -27,6 +29,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="parent" Type="Antlr4.Runtime.ParserRuleContext" />
@@ -49,6 +53,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TResult</ReturnType>
@@ -77,6 +83,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Antlr4.Runtime.Tree.ITerminalNode[]</ReturnType>
@@ -98,6 +106,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
@@ -122,6 +132,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -145,6 +157,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -168,6 +182,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.parser.ExpressionAntlrParser+ExpressionContext[]</ReturnType>
@@ -189,9 +205,58 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.parser.ExpressionAntlrParser+ExpressionContext</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="lambda">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.parser.ExpressionAntlrParser.LambdaContext[] lambda ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class AdaptiveExpressions.parser.ExpressionAntlrParser/LambdaContext[] lambda() cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.parser.ExpressionAntlrParser.ArgsListContext.lambda" />
+      <MemberSignature Language="VB.NET" Value="Public Function lambda () As ExpressionAntlrParser.LambdaContext()" />
+      <MemberSignature Language="F#" Value="member this.lambda : unit -&gt; AdaptiveExpressions.parser.ExpressionAntlrParser.LambdaContext[]" Usage="argsListContext.lambda " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.parser.ExpressionAntlrParser+LambdaContext[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="lambda">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.parser.ExpressionAntlrParser.LambdaContext lambda (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class AdaptiveExpressions.parser.ExpressionAntlrParser/LambdaContext lambda(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.parser.ExpressionAntlrParser.ArgsListContext.lambda(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function lambda (i As Integer) As ExpressionAntlrParser.LambdaContext" />
+      <MemberSignature Language="F#" Value="member this.lambda : int -&gt; AdaptiveExpressions.parser.ExpressionAntlrParser.LambdaContext" Usage="argsListContext.lambda i" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.parser.ExpressionAntlrParser+LambdaContext</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="i" Type="System.Int32" />
@@ -213,6 +278,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

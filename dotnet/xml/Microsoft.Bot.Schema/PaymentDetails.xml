@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -15,7 +17,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Obsolete("Bot Framework no longer supports payments.")</AttributeName>
+      <AttributeName Language="C#">[System.Obsolete("Bot Framework no longer supports payments.")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("Bot Framework no longer supports payments.")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -35,6 +38,8 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,13 +53,15 @@
       <MemberSignature Language="C#" Value="public PaymentDetails (Microsoft.Bot.Schema.PaymentItem total = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.PaymentItem&gt; displayItems = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.PaymentShippingOption&gt; shippingOptions = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.PaymentDetailsModifier&gt; modifiers = default, string error = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Schema.PaymentItem total, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.PaymentItem&gt; displayItems, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.PaymentShippingOption&gt; shippingOptions, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.PaymentDetailsModifier&gt; modifiers, string error) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.PaymentDetails.#ctor(Microsoft.Bot.Schema.PaymentItem,System.Collections.Generic.IList{Microsoft.Bot.Schema.PaymentItem},System.Collections.Generic.IList{Microsoft.Bot.Schema.PaymentShippingOption},System.Collections.Generic.IList{Microsoft.Bot.Schema.PaymentDetailsModifier},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional total As PaymentItem = null, Optional displayItems As IList(Of PaymentItem) = null, Optional shippingOptions As IList(Of PaymentShippingOption) = null, Optional modifiers As IList(Of PaymentDetailsModifier) = null, Optional error As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional total As PaymentItem = Nothing, Optional displayItems As IList(Of PaymentItem) = Nothing, Optional shippingOptions As IList(Of PaymentShippingOption) = Nothing, Optional modifiers As IList(Of PaymentDetailsModifier) = Nothing, Optional error As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.PaymentDetails : Microsoft.Bot.Schema.PaymentItem * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.PaymentItem&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.PaymentShippingOption&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.PaymentDetailsModifier&gt; * string -&gt; Microsoft.Bot.Schema.PaymentDetails" Usage="new Microsoft.Bot.Schema.PaymentDetails (total, displayItems, shippingOptions, modifiers, error)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="total" Type="Microsoft.Bot.Schema.PaymentItem" />
@@ -90,10 +97,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="displayItems")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="displayItems")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="displayItems")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -119,10 +129,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="error")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="error")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="error")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -147,10 +160,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="modifiers")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="modifiers")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="modifiers")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -176,10 +192,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="shippingOptions")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="shippingOptions")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="shippingOptions")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -205,10 +224,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="total")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="total")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="total")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

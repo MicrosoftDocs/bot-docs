@@ -1,6 +1,6 @@
 ---
 title: Send and receive messages - Bot Service
-description: Learn how to send and receive messages using the Bot Connector service. 
+description: Learn how to use bots to exchange messages with users. See how to use the Bot Connector service to send messages and replies and to start conversations. 
 author: RobStand
 ms.author: kamrani
 manager: kamrani
@@ -9,7 +9,7 @@ ms.service: bot-service
 ms.date: 12/13/2017
 ---
 
-# Send and receive messages
+# Send and receive messages with the Bot Connector API
 
 The Bot Connector service enables a bot to communicate across multiple channels such as Email, Slack, and more. It facilitates communication between bot and user, by relaying [activities](https://aka.ms/botSpecs-activitySchema) from bot to channel and from channel to bot. Every activity contains information used for routing the message to the appropriate destination along with information about who created the message, the context of the message, and the recipient of the message. This article describes how to use the Bot Connector service to exchange **message** activities between bot and user on a channel. 
 

@@ -339,7 +339,7 @@ This section contains all [actions](bot-builder-concept-adaptive-dialog-actions.
 |`Microsoft.DeleteActivity` | [DeleteActivity][delete-activity]| Enables you to delete an activity that was sent.                                                                        |
 |`Microsoft.GetActivityMembers` | [GetActivityMembers][get-activity-members]| Enables you to get a list of activity members and save it to a property in [memory][memory-states].        |
 |`Microsoft.GetConversationMembers`| [GetConversationMembers][get-conversation-members] | Enables you to get a list of the conversation members and save it to a property in [memory][memory-states].|
-|`Microsoft.EditActions`  | [EditActions][editactions] | Enables you to edit the current action sequence on the fly based on user input. Especially useful when handling interruptions. <!--TODO P1: [interruptions][6]--> |
+|`Microsoft.EditActions`  | [EditActions][editactions] | Enables you to edit the current action sequence on the fly based on user input. Especially useful when handling [interruptions][interruptions]. |
 
 #### Manage properties
 
@@ -540,6 +540,7 @@ npm i -g @microsoft/botframework-cli
 [get-conversation-members]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#get-conversation-members
 [editactions]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#editactions
 [memory-states]:bot-builder-concept-adaptive-dialog-memory-states.md
+[interruptions]: bot-builder-concept-adaptive-dialog-interruptions.md
 
 <!--  (Actions) Manage properties -->
 [editarray]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#editarray

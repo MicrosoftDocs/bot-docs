@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -19,7 +21,8 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerDisplay("{Template}")</AttributeName>
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerDisplay("{Template}")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerDisplay("{Template}")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -41,6 +44,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="template" Type="System.String" />
@@ -55,7 +60,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;string&gt; BindAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, object data = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;string&gt; BindAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, object data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Templates.TextTemplate.BindAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Object,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function BindAsync (dialogContext As DialogContext, Optional data As Object = null, Optional cancellationToken As CancellationToken = null) As Task(Of String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BindAsync (dialogContext As DialogContext, Optional data As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of String)" />
       <MemberSignature Language="F#" Value="abstract member BindAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;&#xA;override this.BindAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="textTemplate.BindAsync (dialogContext, data, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -65,6 +70,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -94,10 +101,13 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("$kind")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("$kind")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("$kind")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -119,10 +129,13 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("template")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("template")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("template")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -149,6 +162,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

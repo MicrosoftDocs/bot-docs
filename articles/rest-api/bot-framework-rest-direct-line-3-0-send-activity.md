@@ -1,6 +1,6 @@
 ---
 title: Send an activity the bot - Bot Service
-description: Learn how to send an activity to the bot using Direct Line API v3.0. 
+description: Learn how to send activity information to bots. See how to use version 3.0 of the Direct Line API to send Activity objects with optional attachments.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
@@ -9,7 +9,7 @@ ms.service: bot-service
 ms.date: 12/13/2017
 ---
 
-# Send an activity to the bot
+# Send an activity to the bot in Direct Line API 3.0
 
 Using the Direct Line 3.0 protocol, clients and bots may exchange several different types of [activities](https://aka.ms/botSpecs-activitySchema), including **message** activities, **typing** activities, and custom activities that the bot supports. A client may send a single activity per request. 
 

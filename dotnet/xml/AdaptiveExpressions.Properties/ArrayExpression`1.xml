@@ -7,6 +7,8 @@
   <AssemblyInfo>
     <AssemblyName>AdaptiveExpressions</AssemblyName>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -35,6 +37,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -54,6 +58,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="expression" Type="AdaptiveExpressions.Expression" />
@@ -76,6 +82,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="expressionOrValue" Type="Newtonsoft.Json.Linq.JToken" />
@@ -98,6 +106,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
@@ -120,6 +130,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="lambda" Type="System.Func&lt;System.Object,System.Object&gt;" />
@@ -142,6 +154,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="expression" Type="System.String" />
@@ -164,6 +178,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.Properties.ArrayExpression&lt;T&gt;</ReturnType>
@@ -188,6 +204,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.Properties.ArrayExpression&lt;T&gt;</ReturnType>
@@ -212,6 +230,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.Properties.ArrayExpression&lt;T&gt;</ReturnType>
@@ -236,6 +256,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.Properties.ArrayExpression&lt;T&gt;</ReturnType>
@@ -260,6 +282,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.Properties.ArrayExpression&lt;T&gt;</ReturnType>

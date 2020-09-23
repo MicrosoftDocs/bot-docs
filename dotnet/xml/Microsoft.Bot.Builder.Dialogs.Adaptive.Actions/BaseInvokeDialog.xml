@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Dialog</BaseTypeName>
@@ -28,13 +30,15 @@
       <MemberSignature Language="C#" Value="public BaseInvokeDialog (string dialogIdToCall = default, object bindingOptions = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string dialogIdToCall, object bindingOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.BaseInvokeDialog.#ctor(System.String,System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional dialogIdToCall As String = null, Optional bindingOptions As Object = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional dialogIdToCall As String = Nothing, Optional bindingOptions As Object = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.BaseInvokeDialog : string * obj -&gt; Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.BaseInvokeDialog" Usage="new Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.BaseInvokeDialog (dialogIdToCall, bindingOptions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dialogIdToCall" Type="System.String" />
@@ -58,13 +62,17 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("activityProcessed")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("activityProcessed")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("activityProcessed")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -89,6 +97,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -118,10 +128,13 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("dialog")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("dialog")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("dialog")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -151,10 +164,13 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.BaseInvokeDialog/&lt;GetDependencies&gt;d__13))</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.BaseInvokeDialog/&lt;GetDependencies&gt;d__13))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.BaseInvokeDialog/&lt;GetDependencies&gt;d__13))&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -178,6 +194,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -200,10 +218,13 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("options")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("options")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("options")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -230,6 +251,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Dialog</ReturnType>

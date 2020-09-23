@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,6 +32,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -41,13 +45,15 @@
       <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;object&gt; GenerateAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, string template, object data, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;object&gt; GenerateAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, string template, object data, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGenerator.GenerateAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.String,System.Object,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GenerateAsync (dialogContext As DialogContext, template As String, data As Object, Optional cancellationToken As CancellationToken = null) As Task(Of Object)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GenerateAsync (dialogContext As DialogContext, template As String, data As Object, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Object)" />
       <MemberSignature Language="F#" Value="abstract member GenerateAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;obj&gt;" Usage="languageGenerator.GenerateAsync (dialogContext, template, data, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Object&gt;</ReturnType>

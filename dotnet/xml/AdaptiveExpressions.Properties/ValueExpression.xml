@@ -7,6 +7,8 @@
   <AssemblyInfo>
     <AssemblyName>AdaptiveExpressions</AssemblyName>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>AdaptiveExpressions.Properties.ExpressionProperty&lt;System.Object&gt;</BaseTypeName>
@@ -17,7 +19,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonConverter(typeof(AdaptiveExpressions.Converters.ValueExpressionConverter))</AttributeName>
+      <AttributeName Language="C#">[Newtonsoft.Json.JsonConverter(typeof(AdaptiveExpressions.Converters.ValueExpressionConverter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConverter(typeof(AdaptiveExpressions.Converters.ValueExpressionConverter))&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -48,6 +51,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -67,6 +72,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="lambda" Type="System.Func&lt;System.Object,System.Object&gt;" />
@@ -89,6 +96,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.Object" />
@@ -111,6 +120,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.Properties.ValueExpression</ReturnType>
@@ -119,8 +130,10 @@
         <Parameter Name="expression" Type="AdaptiveExpressions.Expression" />
       </Parameters>
       <Docs>
-        <param name="expression">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="expression">The Expression instance to convert.</param>
+        <summary>
+            Converts an Expression instance to a ValueExpression instance.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -135,6 +148,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.Properties.ValueExpression</ReturnType>
@@ -143,8 +158,172 @@
         <Parameter Name="valueOrExpression" Type="Newtonsoft.Json.Linq.JToken" />
       </Parameters>
       <Docs>
-        <param name="valueOrExpression">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="valueOrExpression">The JSON Token to convert.</param>
+        <summary>
+            Converts a JSON Token to a ValueExpression instance.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator AdaptiveExpressions.Properties.ValueExpression (bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class AdaptiveExpressions.Properties.ValueExpression op_Implicit(bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.Properties.ValueExpression.op_Implicit(System.Boolean)~AdaptiveExpressions.Properties.ValueExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Boolean) As ValueExpression" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : bool -&gt; AdaptiveExpressions.Properties.ValueExpression" Usage="AdaptiveExpressions.Properties.ValueExpression.op_Implicit value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.ValueExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="value">The boolean value to convert.</param>
+        <summary>
+            Converts a boolean value to a ValueExpression instance.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator AdaptiveExpressions.Properties.ValueExpression (DateTime value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class AdaptiveExpressions.Properties.ValueExpression op_Implicit(valuetype System.DateTime value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.Properties.ValueExpression.op_Implicit(System.DateTime)~AdaptiveExpressions.Properties.ValueExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As DateTime) As ValueExpression" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : DateTime -&gt; AdaptiveExpressions.Properties.ValueExpression" Usage="AdaptiveExpressions.Properties.ValueExpression.op_Implicit value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.ValueExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="value">The DateTime value to convert.</param>
+        <summary>
+            Converts a DateTime value to a ValueExpression instance.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator AdaptiveExpressions.Properties.ValueExpression (double value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class AdaptiveExpressions.Properties.ValueExpression op_Implicit(float64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.Properties.ValueExpression.op_Implicit(System.Double)~AdaptiveExpressions.Properties.ValueExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Double) As ValueExpression" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : double -&gt; AdaptiveExpressions.Properties.ValueExpression" Usage="AdaptiveExpressions.Properties.ValueExpression.op_Implicit value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.ValueExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="value">The double precision floating number value to convert.</param>
+        <summary>
+            Converts a double precision floating number value to a ValueExpression instance.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator AdaptiveExpressions.Properties.ValueExpression (int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class AdaptiveExpressions.Properties.ValueExpression op_Implicit(int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.Properties.ValueExpression.op_Implicit(System.Int32)~AdaptiveExpressions.Properties.ValueExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Integer) As ValueExpression" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : int -&gt; AdaptiveExpressions.Properties.ValueExpression" Usage="AdaptiveExpressions.Properties.ValueExpression.op_Implicit value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.ValueExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="value">The integer value to convert.</param>
+        <summary>
+            Converts an integer value to a ValueExpression instance.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator AdaptiveExpressions.Properties.ValueExpression (long value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class AdaptiveExpressions.Properties.ValueExpression op_Implicit(int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.Properties.ValueExpression.op_Implicit(System.Int64)~AdaptiveExpressions.Properties.ValueExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Long) As ValueExpression" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : int64 -&gt; AdaptiveExpressions.Properties.ValueExpression" Usage="AdaptiveExpressions.Properties.ValueExpression.op_Implicit value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.ValueExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="value">The long integer value to convert.</param>
+        <summary>
+            Converts a long integer value to a ValueExpression instance.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator AdaptiveExpressions.Properties.ValueExpression (float value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class AdaptiveExpressions.Properties.ValueExpression op_Implicit(float32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.Properties.ValueExpression.op_Implicit(System.Single)~AdaptiveExpressions.Properties.ValueExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Single) As ValueExpression" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : single -&gt; AdaptiveExpressions.Properties.ValueExpression" Usage="AdaptiveExpressions.Properties.ValueExpression.op_Implicit value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.ValueExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="value">The floating ponit number value to convert.</param>
+        <summary>
+            Converts a floating point number value to a ValueExpression instance.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -159,6 +338,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.Properties.ValueExpression</ReturnType>
@@ -167,8 +348,10 @@
         <Parameter Name="valueOrExpression" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="valueOrExpression">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="valueOrExpression">A string value to convert.</param>
+        <summary>
+            Converts a string value to a ValueExpression instance.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -183,6 +366,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -191,8 +376,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">Value to set.</param>
+        <summary>
+            Sets the value.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

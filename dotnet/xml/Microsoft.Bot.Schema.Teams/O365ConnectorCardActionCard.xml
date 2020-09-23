@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Schema.Teams.O365ConnectorCardActionBase</BaseTypeName>
@@ -30,6 +32,8 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -44,13 +48,15 @@
       <MemberSignature Language="C#" Value="public O365ConnectorCardActionCard (string type = default, string name = default, string id = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.O365ConnectorCardInputBase&gt; inputs = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.O365ConnectorCardActionBase&gt; actions = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, string name, string id, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Teams.O365ConnectorCardInputBase&gt; inputs, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Teams.O365ConnectorCardActionBase&gt; actions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.O365ConnectorCardActionCard.#ctor(System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Schema.Teams.O365ConnectorCardInputBase},System.Collections.Generic.IList{Microsoft.Bot.Schema.Teams.O365ConnectorCardActionBase})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional type As String = null, Optional name As String = null, Optional id As String = null, Optional inputs As IList(Of O365ConnectorCardInputBase) = null, Optional actions As IList(Of O365ConnectorCardActionBase) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional type As String = Nothing, Optional name As String = Nothing, Optional id As String = Nothing, Optional inputs As IList(Of O365ConnectorCardInputBase) = Nothing, Optional actions As IList(Of O365ConnectorCardActionBase) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.O365ConnectorCardActionCard : string * string * string * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.O365ConnectorCardInputBase&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.O365ConnectorCardActionBase&gt; -&gt; Microsoft.Bot.Schema.Teams.O365ConnectorCardActionCard" Usage="new Microsoft.Bot.Schema.Teams.O365ConnectorCardActionCard (type, name, id, inputs, actions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="type" Type="System.String" />
@@ -90,10 +96,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="actions")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="actions")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="actions")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -120,10 +129,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="inputs")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="inputs")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="inputs")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -149,6 +161,8 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

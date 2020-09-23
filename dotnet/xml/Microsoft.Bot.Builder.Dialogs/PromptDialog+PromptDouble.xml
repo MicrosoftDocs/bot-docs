@@ -21,7 +21,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -33,7 +34,7 @@
       <MemberSignature Language="C#" Value="public PromptDouble (Microsoft.Bot.Builder.Dialogs.PromptOptions&lt;double&gt; promptOptions, double? min = default, double? max = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.PromptOptions`1&lt;float64&gt; promptOptions, valuetype System.Nullable`1&lt;float64&gt; min, valuetype System.Nullable`1&lt;float64&gt; max) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble.#ctor(Microsoft.Bot.Builder.Dialogs.PromptOptions{System.Double},System.Nullable{System.Double},System.Nullable{System.Double})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (promptOptions As PromptOptions(Of Double), Optional min As Nullable(Of Double) = null, Optional max As Nullable(Of Double) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (promptOptions As PromptOptions(Of Double), Optional min As Nullable(Of Double) = Nothing, Optional max As Nullable(Of Double) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble : Microsoft.Bot.Builder.Dialogs.PromptOptions&lt;double&gt; * Nullable&lt;double&gt; * Nullable&lt;double&gt; -&gt; Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble" Usage="new Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble (promptOptions, min, max)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -60,7 +61,7 @@
       <MemberSignature Language="C#" Value="public PromptDouble (string prompt, string retry, int attempts, string speak = default, double? min = default, double? max = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string prompt, string retry, int32 attempts, string speak, valuetype System.Nullable`1&lt;float64&gt; min, valuetype System.Nullable`1&lt;float64&gt; max) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble.#ctor(System.String,System.String,System.Int32,System.String,System.Nullable{System.Double},System.Nullable{System.Double})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (prompt As String, retry As String, attempts As Integer, Optional speak As String = null, Optional min As Nullable(Of Double) = null, Optional max As Nullable(Of Double) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (prompt As String, retry As String, attempts As Integer, Optional speak As String = Nothing, Optional min As Nullable(Of Double) = Nothing, Optional max As Nullable(Of Double) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble : string * string * int * string * Nullable&lt;double&gt; * Nullable&lt;double&gt; -&gt; Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble" Usage="new Microsoft.Bot.Builder.Dialogs.PromptDialog.PromptDouble (prompt, retry, attempts, speak, min, max)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>

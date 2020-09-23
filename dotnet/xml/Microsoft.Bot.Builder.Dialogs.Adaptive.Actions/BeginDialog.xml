@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.BaseInvokeDialog</BaseTypeName>
@@ -24,17 +26,20 @@
       <MemberSignature Language="C#" Value="public BeginDialog (string dialogIdToCall = default, object options = default, string callerPath = &quot;&quot;, int callerLine = 0);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string dialogIdToCall, object options, string callerPath, int32 callerLine) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.BeginDialog.#ctor(System.String,System.Object,System.String,System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional dialogIdToCall As String = null, Optional options As Object = null, Optional callerPath As String = &quot;&quot;, Optional callerLine As Integer = 0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional dialogIdToCall As String = Nothing, Optional options As Object = Nothing, Optional callerPath As String = &quot;&quot;, Optional callerLine As Integer = 0)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.BeginDialog : string * obj * string * int -&gt; Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.BeginDialog" Usage="new Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.BeginDialog (dialogIdToCall, options, callerPath, callerLine)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonConstructor</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonConstructor]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConstructor&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -43,14 +48,16 @@
         <Parameter Name="callerPath" Type="System.String">
           <Attributes>
             <Attribute>
-              <AttributeName>System.Runtime.CompilerServices.CallerFilePath</AttributeName>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerFilePath]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerFilePath&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
         <Parameter Name="callerLine" Type="System.Int32">
           <Attributes>
             <Attribute>
-              <AttributeName>System.Runtime.CompilerServices.CallerLineNumber</AttributeName>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerLineNumber]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerLineNumber&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -68,13 +75,15 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; BeginDialogAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dc, object options = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; BeginDialogAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, object options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.BeginDialog.BeginDialogAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Object,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginDialogAsync (dc As DialogContext, Optional options As Object = null, Optional cancellationToken As CancellationToken = null) As Task(Of DialogTurnResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginDialogAsync (dc As DialogContext, Optional options As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of DialogTurnResult)" />
       <MemberSignature Language="F#" Value="override this.BeginDialogAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;" Usage="beginDialog.BeginDialogAsync (dc, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -104,10 +113,13 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("disabled")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("disabled")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("disabled")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -137,10 +149,13 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("$kind")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("$kind")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("$kind")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -162,10 +177,13 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("resultProperty")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("resultProperty")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("resultProperty")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -185,13 +203,15 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; ResumeDialogAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dc, Microsoft.Bot.Builder.Dialogs.DialogReason reason, object result = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; ResumeDialogAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, valuetype Microsoft.Bot.Builder.Dialogs.DialogReason reason, object result, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.BeginDialog.ResumeDialogAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Builder.Dialogs.DialogReason,System.Object,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function ResumeDialogAsync (dc As DialogContext, reason As DialogReason, Optional result As Object = null, Optional cancellationToken As CancellationToken = null) As Task(Of DialogTurnResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ResumeDialogAsync (dc As DialogContext, reason As DialogReason, Optional result As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of DialogTurnResult)" />
       <MemberSignature Language="F#" Value="override this.ResumeDialogAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Builder.Dialogs.DialogReason * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;" Usage="beginDialog.ResumeDialogAsync (dc, reason, result, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>

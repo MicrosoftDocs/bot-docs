@@ -1,15 +1,17 @@
 <Type Name="CosmosDbPartitionedStorage" FullName="Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorage">
-  <TypeSignature Language="C#" Value="public class CosmosDbPartitionedStorage : Microsoft.Bot.Builder.IStorage" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CosmosDbPartitionedStorage extends System.Object implements class Microsoft.Bot.Builder.IStorage" />
+  <TypeSignature Language="C#" Value="public class CosmosDbPartitionedStorage : IDisposable, Microsoft.Bot.Builder.IStorage" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CosmosDbPartitionedStorage extends System.Object implements class Microsoft.Bot.Builder.IStorage, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorage" />
-  <TypeSignature Language="VB.NET" Value="Public Class CosmosDbPartitionedStorage&#xA;Implements IStorage" />
-  <TypeSignature Language="F#" Value="type CosmosDbPartitionedStorage = class&#xA;    interface IStorage" />
+  <TypeSignature Language="VB.NET" Value="Public Class CosmosDbPartitionedStorage&#xA;Implements IDisposable, IStorage" />
+  <TypeSignature Language="F#" Value="type CosmosDbPartitionedStorage = class&#xA;    interface IStorage&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
     <AssemblyVersion>4.7.0.0</AssemblyVersion>
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,6 +19,9 @@
   <Interfaces>
     <Interface>
       <InterfaceName>Microsoft.Bot.Builder.IStorage</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>
@@ -39,6 +44,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="cosmosDbStorageOptions" Type="Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions" />
@@ -65,6 +72,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="cosmosDbStorageOptions" Type="Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions" />
@@ -85,7 +94,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteAsync (string[] keys, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteAsync(string[] keys, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorage.DeleteAsync(System.String[],System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function DeleteAsync (keys As String(), Optional cancellationToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeleteAsync (keys As String(), Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="abstract member DeleteAsync : string[] * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteAsync : string[] * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="cosmosDbPartitionedStorage.DeleteAsync (keys, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -97,6 +106,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -106,18 +117,76 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="keys">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="keys">An array of Ids for the items to be deleted.</param>
+        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" />.</param>
+        <summary>
+            Deletes one or more items from the Cosmos DB container.
+            </summary>
+        <returns>A Task representing the work to be executed.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown if the array of Ids to be deleted is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorage.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="cosmosDbPartitionedStorage.Dispose " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Disposes the object instance and releases any related objects owned by the class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorage.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="cosmosDbPartitionedStorage.Dispose disposing" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">A Boolean that indicates whether the method call comes from a Dispose method (its value is true) or from a finalizer (its value is false).</param>
+        <summary>
+            Disposes objects used by the class.
+            </summary>
+        <remarks>
+            The disposing parameter should be false when called from a finalizer, and true when called from the IDisposable.Dispose method.
+            In other words, it is true when deterministically called and false when non-deterministically called.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;string,object&gt;&gt; ReadAsync (string[] keys, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IDictionary`2&lt;string, object&gt;&gt; ReadAsync(string[] keys, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorage.ReadAsync(System.String[],System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function ReadAsync (keys As String(), Optional cancellationToken As CancellationToken = null) As Task(Of IDictionary(Of String, Object))" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReadAsync (keys As String(), Optional cancellationToken As CancellationToken = Nothing) As Task(Of IDictionary(Of String, Object))" />
       <MemberSignature Language="F#" Value="abstract member ReadAsync : string[] * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;string, obj&gt;&gt;&#xA;override this.ReadAsync : string[] * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;string, obj&gt;&gt;" Usage="cosmosDbPartitionedStorage.ReadAsync (keys, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -129,6 +198,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;&gt;</ReturnType>
@@ -138,18 +209,21 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="keys">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="keys">A collection of Ids for each item to be retrieved.</param>
+        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" />.</param>
+        <summary>
+            Reads one or more items with matching keys from the Cosmos DB container.
+            </summary>
+        <returns>A dictionary containing the retrieved items.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Exception thrown if the array of keys (Ids for the items to be retrieved) is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task WriteAsync (System.Collections.Generic.IDictionary&lt;string,object&gt; changes, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteAsync(class System.Collections.Generic.IDictionary`2&lt;string, object&gt; changes, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorage.WriteAsync(System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function WriteAsync (changes As IDictionary(Of String, Object), Optional cancellationToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Function WriteAsync (changes As IDictionary(Of String, Object), Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="abstract member WriteAsync : System.Collections.Generic.IDictionary&lt;string, obj&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.WriteAsync : System.Collections.Generic.IDictionary&lt;string, obj&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="cosmosDbPartitionedStorage.WriteAsync (changes, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -161,6 +235,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -170,11 +246,16 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="changes">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="changes">A dictionary of items to be inserted or updated. The dictionary item key
+            is used as the ID for the inserted / updated item.</param>
+        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" />.</param>
+        <summary>
+            Inserts or updates one or more items into the Cosmos DB container. 
+            </summary>
+        <returns>A Task representing the work to be executed.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Exception thrown if the changes dictionary is null.</exception>
+        <exception cref="T:System.Exception">Exception thrown is the etag is empty on any of the items within the changes dictionary.</exception>
       </Docs>
     </Member>
   </Members>

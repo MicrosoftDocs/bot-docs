@@ -1,6 +1,6 @@
 ---
 title: Create a bot with the Bot Connector service - Bot Service
-description: Create a bot with the Bot Connector service. 
+description: Learn how to create a bot. See how to obtain an access token from the Bot Framework and use the Bot Connector service to exchange messages with users. 
 author: RobStand
 ms.author: kamrani
 manager: kamrani
@@ -9,7 +9,8 @@ ms.service: bot-service
 ms.date: 12/13/2017
 ---
 
-# Create a bot with the Bot Connector service
+# Create a bot with the Bot Connector service with the Bot Connector API
+
 > [!div class="op_single_selector"]
 > - [.NET](../dotnet/bot-builder-dotnet-quickstart.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-quickstart.md)

@@ -15,6 +15,8 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.BotAdapter</BaseTypeName>
@@ -39,7 +41,7 @@
       <MemberSignature Language="C#" Value="public TestAdapter (Microsoft.Bot.Schema.ConversationReference conversation = default, bool sendTraceActivity = false);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Schema.ConversationReference conversation, bool sendTraceActivity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.TestAdapter.#ctor(Microsoft.Bot.Schema.ConversationReference,System.Boolean)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional conversation As ConversationReference = null, Optional sendTraceActivity As Boolean = false)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional conversation As ConversationReference = Nothing, Optional sendTraceActivity As Boolean = false)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Adapters.TestAdapter : Microsoft.Bot.Schema.ConversationReference * bool -&gt; Microsoft.Bot.Builder.Adapters.TestAdapter" Usage="new Microsoft.Bot.Builder.Adapters.TestAdapter (conversation, sendTraceActivity)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -53,6 +55,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="conversation" Type="Microsoft.Bot.Schema.ConversationReference" />
@@ -82,6 +86,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="channelId" Type="System.String" />
@@ -115,6 +121,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.Queue&lt;Microsoft.Bot.Schema.Activity&gt;</ReturnType>
@@ -139,6 +147,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -152,12 +162,12 @@
       </Parameters>
       <Docs>
         <param name="connectionName">The connection name.</param>
-        <param name="channelId">The channel id.</param>
-        <param name="userId">The user id.</param>
-        <param name="exchangableItem">The exchangable token or resource uri.</param>
+        <param name="channelId">The channel ID.</param>
+        <param name="userId">The user ID.</param>
+        <param name="exchangableItem">The exchangeable token or resource URI.</param>
         <param name="token">The token to store.</param>
         <summary>
-            Adds a fake exchangable token so it can later be exchanged later.
+            Adds a fake exchangeable token so it can be exchanged later.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -166,7 +176,7 @@
       <MemberSignature Language="C#" Value="public void AddUserToken (string connectionName, string channelId, string userId, string token, string magicCode = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddUserToken(string connectionName, string channelId, string userId, string token, string magicCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.TestAdapter.AddUserToken(System.String,System.String,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub AddUserToken (connectionName As String, channelId As String, userId As String, token As String, Optional magicCode As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddUserToken (connectionName As String, channelId As String, userId As String, token As String, Optional magicCode As String = Nothing)" />
       <MemberSignature Language="F#" Value="member this.AddUserToken : string * string * string * string * string -&gt; unit" Usage="testAdapter.AddUserToken (connectionName, channelId, userId, token, magicCode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -178,6 +188,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -191,8 +203,8 @@
       </Parameters>
       <Docs>
         <param name="connectionName">The connection name.</param>
-        <param name="channelId">The channel id.</param>
-        <param name="userId">The user id.</param>
+        <param name="channelId">The channel ID.</param>
+        <param name="userId">The user ID.</param>
         <param name="token">The token to store.</param>
         <param name="magicCode">The optional magic code to associate with this token.</param>
         <summary>
@@ -219,6 +231,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ConversationReference</ReturnType>
@@ -244,6 +258,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.ConversationReference</ReturnType>
@@ -254,9 +270,9 @@
         <Parameter Name="bot" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">name of the conversation (also id).</param>
-        <param name="user">name of the user (also id) default:User1.</param>
-        <param name="bot">name of the bot (also id) default:Bot.</param>
+        <param name="name">name of the conversation (also ID).</param>
+        <param name="user">name of the user (also ID) default:User1.</param>
+        <param name="bot">name of the bot (also ID) default:Bot.</param>
         <summary>
             Create a ConversationReference. 
             </summary>
@@ -282,6 +298,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -321,6 +339,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -357,6 +377,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -375,7 +397,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenResponse&gt; ExchangeTokenAsync (Microsoft.Bot.Builder.ITurnContext turnContext, string connectionName, string userId, Microsoft.Bot.Schema.TokenExchangeRequest exchangeRequest, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.TokenResponse&gt; ExchangeTokenAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, string connectionName, string userId, class Microsoft.Bot.Schema.TokenExchangeRequest exchangeRequest, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.TestAdapter.ExchangeTokenAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.String,Microsoft.Bot.Schema.TokenExchangeRequest,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function ExchangeTokenAsync (turnContext As ITurnContext, connectionName As String, userId As String, exchangeRequest As TokenExchangeRequest, Optional cancellationToken As CancellationToken = null) As Task(Of TokenResponse)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExchangeTokenAsync (turnContext As ITurnContext, connectionName As String, userId As String, exchangeRequest As TokenExchangeRequest, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TokenResponse)" />
       <MemberSignature Language="F#" Value="abstract member ExchangeTokenAsync : Microsoft.Bot.Builder.ITurnContext * string * string * Microsoft.Bot.Schema.TokenExchangeRequest * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenResponse&gt;&#xA;override this.ExchangeTokenAsync : Microsoft.Bot.Builder.ITurnContext * string * string * Microsoft.Bot.Schema.TokenExchangeRequest * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenResponse&gt;" Usage="testAdapter.ExchangeTokenAsync (turnContext, connectionName, userId, exchangeRequest, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -386,6 +408,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenResponse&gt;</ReturnType>
@@ -398,13 +422,16 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="turnContext">To be added.</param>
-        <param name="connectionName">To be added.</param>
-        <param name="userId">To be added.</param>
-        <param name="exchangeRequest">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="turnContext">Context for the current turn of conversation with the user.</param>
+        <param name="connectionName">Name of the auth connection to use.</param>
+        <param name="userId">The user id associated with the token..</param>
+        <param name="exchangeRequest">The exchange request details, either a token to exchange or a uri to exchange.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Performs a token exchange operation such as for single sign-on.
+            </summary>
+        <returns>If the task completes, the exchanged token is returned.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -412,7 +439,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenResponse&gt; ExchangeTokenAsync (Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Connector.Authentication.AppCredentials oAuthAppCredentials, string connectionName, string userId, Microsoft.Bot.Schema.TokenExchangeRequest exchangeRequest, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.TokenResponse&gt; ExchangeTokenAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class Microsoft.Bot.Connector.Authentication.AppCredentials oAuthAppCredentials, string connectionName, string userId, class Microsoft.Bot.Schema.TokenExchangeRequest exchangeRequest, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.TestAdapter.ExchangeTokenAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Connector.Authentication.AppCredentials,System.String,System.String,Microsoft.Bot.Schema.TokenExchangeRequest,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function ExchangeTokenAsync (turnContext As ITurnContext, oAuthAppCredentials As AppCredentials, connectionName As String, userId As String, exchangeRequest As TokenExchangeRequest, Optional cancellationToken As CancellationToken = null) As Task(Of TokenResponse)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExchangeTokenAsync (turnContext As ITurnContext, oAuthAppCredentials As AppCredentials, connectionName As String, userId As String, exchangeRequest As TokenExchangeRequest, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TokenResponse)" />
       <MemberSignature Language="F#" Value="abstract member ExchangeTokenAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Connector.Authentication.AppCredentials * string * string * Microsoft.Bot.Schema.TokenExchangeRequest * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenResponse&gt;&#xA;override this.ExchangeTokenAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Connector.Authentication.AppCredentials * string * string * Microsoft.Bot.Schema.TokenExchangeRequest * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenResponse&gt;" Usage="testAdapter.ExchangeTokenAsync (turnContext, oAuthAppCredentials, connectionName, userId, exchangeRequest, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -423,6 +450,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenResponse&gt;</ReturnType>
@@ -436,14 +465,17 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="turnContext">To be added.</param>
-        <param name="oAuthAppCredentials">To be added.</param>
-        <param name="connectionName">To be added.</param>
-        <param name="userId">To be added.</param>
-        <param name="exchangeRequest">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="turnContext">Context for the current turn of conversation with the user.</param>
+        <param name="oAuthAppCredentials">AppCredentials for OAuth.</param>
+        <param name="connectionName">Name of the auth connection to use.</param>
+        <param name="userId">The user id associated with the token..</param>
+        <param name="exchangeRequest">The exchange request details, either a token to exchange or a uri to exchange.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Performs a token exchange operation such as for single sign-on.
+            </summary>
+        <returns>If the task completes, the exchanged token is returned.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -451,7 +483,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string,Microsoft.Bot.Schema.TokenResponse&gt;&gt; GetAadTokensAsync (Microsoft.Bot.Builder.ITurnContext context, string connectionName, string[] resourceUrls, string userId = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.Dictionary`2&lt;string, class Microsoft.Bot.Schema.TokenResponse&gt;&gt; GetAadTokensAsync(class Microsoft.Bot.Builder.ITurnContext context, string connectionName, string[] resourceUrls, string userId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.TestAdapter.GetAadTokensAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.String[],System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAadTokensAsync (context As ITurnContext, connectionName As String, resourceUrls As String(), Optional userId As String = null, Optional cancellationToken As CancellationToken = null) As Task(Of Dictionary(Of String, TokenResponse))" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAadTokensAsync (context As ITurnContext, connectionName As String, resourceUrls As String(), Optional userId As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Dictionary(Of String, TokenResponse))" />
       <MemberSignature Language="F#" Value="abstract member GetAadTokensAsync : Microsoft.Bot.Builder.ITurnContext * string * string[] * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string, Microsoft.Bot.Schema.TokenResponse&gt;&gt;&#xA;override this.GetAadTokensAsync : Microsoft.Bot.Builder.ITurnContext * string * string[] * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string, Microsoft.Bot.Schema.TokenResponse&gt;&gt;" Usage="testAdapter.GetAadTokensAsync (context, connectionName, resourceUrls, userId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -466,6 +498,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;System.String,Microsoft.Bot.Schema.TokenResponse&gt;&gt;</ReturnType>
@@ -494,7 +528,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string,Microsoft.Bot.Schema.TokenResponse&gt;&gt; GetAadTokensAsync (Microsoft.Bot.Builder.ITurnContext context, Microsoft.Bot.Connector.Authentication.AppCredentials oAuthAppCredentials, string connectionName, string[] resourceUrls, string userId = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.Dictionary`2&lt;string, class Microsoft.Bot.Schema.TokenResponse&gt;&gt; GetAadTokensAsync(class Microsoft.Bot.Builder.ITurnContext context, class Microsoft.Bot.Connector.Authentication.AppCredentials oAuthAppCredentials, string connectionName, string[] resourceUrls, string userId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.TestAdapter.GetAadTokensAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Connector.Authentication.AppCredentials,System.String,System.String[],System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAadTokensAsync (context As ITurnContext, oAuthAppCredentials As AppCredentials, connectionName As String, resourceUrls As String(), Optional userId As String = null, Optional cancellationToken As CancellationToken = null) As Task(Of Dictionary(Of String, TokenResponse))" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAadTokensAsync (context As ITurnContext, oAuthAppCredentials As AppCredentials, connectionName As String, resourceUrls As String(), Optional userId As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Dictionary(Of String, TokenResponse))" />
       <MemberSignature Language="F#" Value="abstract member GetAadTokensAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Connector.Authentication.AppCredentials * string * string[] * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string, Microsoft.Bot.Schema.TokenResponse&gt;&gt;&#xA;override this.GetAadTokensAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Connector.Authentication.AppCredentials * string * string[] * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string, Microsoft.Bot.Schema.TokenResponse&gt;&gt;" Usage="testAdapter.GetAadTokensAsync (context, oAuthAppCredentials, connectionName, resourceUrls, userId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -505,6 +539,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;System.String,Microsoft.Bot.Schema.TokenResponse&gt;&gt;</ReturnType>
@@ -549,6 +585,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IActivity</ReturnType>
@@ -566,7 +604,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.IActivity&gt; GetNextReplyAsync (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.IActivity&gt; GetNextReplyAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.TestAdapter.GetNextReplyAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetNextReplyAsync (Optional cancellationToken As CancellationToken = null) As Task(Of IActivity)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNextReplyAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of IActivity)" />
       <MemberSignature Language="F#" Value="member this.GetNextReplyAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.IActivity&gt;" Usage="testAdapter.GetNextReplyAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -574,6 +612,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.IActivity&gt;</ReturnType>
@@ -609,6 +649,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -625,7 +667,7 @@
         <summary>
             Returns a fake link for a sign-in, using the bot's AppCredentials.
             </summary>
-        <returns>The signin link.</returns>
+        <returns>The sign-in link.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -644,6 +686,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -662,7 +706,7 @@
         <summary>
             Returns a fake link for a sign-in, using customized AppCredentials.
             </summary>
-        <returns>The signin link.</returns>
+        <returns>The sign-in link.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -670,7 +714,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;string&gt; GetOauthSignInLinkAsync (Microsoft.Bot.Builder.ITurnContext turnContext, string connectionName, string userId, string finalRedirect = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;string&gt; GetOauthSignInLinkAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, string connectionName, string userId, string finalRedirect, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.TestAdapter.GetOauthSignInLinkAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetOauthSignInLinkAsync (turnContext As ITurnContext, connectionName As String, userId As String, Optional finalRedirect As String = null, Optional cancellationToken As CancellationToken = null) As Task(Of String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetOauthSignInLinkAsync (turnContext As ITurnContext, connectionName As String, userId As String, Optional finalRedirect As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of String)" />
       <MemberSignature Language="F#" Value="abstract member GetOauthSignInLinkAsync : Microsoft.Bot.Builder.ITurnContext * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;&#xA;override this.GetOauthSignInLinkAsync : Microsoft.Bot.Builder.ITurnContext * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="testAdapter.GetOauthSignInLinkAsync (turnContext, connectionName, userId, finalRedirect, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -685,6 +729,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -705,7 +751,7 @@
         <summary>
             Returns a fake link for a sign-in, using the bot's AppCredentials.
             </summary>
-        <returns>The signin link.</returns>
+        <returns>The sign-in link.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -713,7 +759,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;string&gt; GetOauthSignInLinkAsync (Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Connector.Authentication.AppCredentials oAuthAppCredentials, string connectionName, string userId, string finalRedirect = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;string&gt; GetOauthSignInLinkAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class Microsoft.Bot.Connector.Authentication.AppCredentials oAuthAppCredentials, string connectionName, string userId, string finalRedirect, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.TestAdapter.GetOauthSignInLinkAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Connector.Authentication.AppCredentials,System.String,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetOauthSignInLinkAsync (turnContext As ITurnContext, oAuthAppCredentials As AppCredentials, connectionName As String, userId As String, Optional finalRedirect As String = null, Optional cancellationToken As CancellationToken = null) As Task(Of String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetOauthSignInLinkAsync (turnContext As ITurnContext, oAuthAppCredentials As AppCredentials, connectionName As String, userId As String, Optional finalRedirect As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of String)" />
       <MemberSignature Language="F#" Value="abstract member GetOauthSignInLinkAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Connector.Authentication.AppCredentials * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;&#xA;override this.GetOauthSignInLinkAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Connector.Authentication.AppCredentials * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="testAdapter.GetOauthSignInLinkAsync (turnContext, oAuthAppCredentials, connectionName, userId, finalRedirect, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -724,6 +770,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -740,13 +788,13 @@
         <param name="turnContext">The turn context (must have a valid Activity).</param>
         <param name="oAuthAppCredentials">AppCredentials for OAuth.</param>
         <param name="connectionName">The connectionName.</param>
-        <param name="userId">The user id.</param>
+        <param name="userId">The user ID.</param>
         <param name="finalRedirect">The final redirect value, which is ignored here.</param>
         <param name="cancellationToken">A Task cancellationToken.</param>
         <summary>
             Returns a fake link for a sign-in, using customized AppCredentials.
             </summary>
-        <returns>The signin link.</returns>
+        <returns>The sign-in link.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -754,7 +802,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.SignInResource&gt; GetSignInResourceAsync (Microsoft.Bot.Builder.ITurnContext turnContext, string connectionName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.SignInResource&gt; GetSignInResourceAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, string connectionName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.TestAdapter.GetSignInResourceAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetSignInResourceAsync (turnContext As ITurnContext, connectionName As String, Optional cancellationToken As CancellationToken = null) As Task(Of SignInResource)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSignInResourceAsync (turnContext As ITurnContext, connectionName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of SignInResource)" />
       <MemberSignature Language="F#" Value="abstract member GetSignInResourceAsync : Microsoft.Bot.Builder.ITurnContext * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.SignInResource&gt;&#xA;override this.GetSignInResourceAsync : Microsoft.Bot.Builder.ITurnContext * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.SignInResource&gt;" Usage="testAdapter.GetSignInResourceAsync (turnContext, connectionName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -765,6 +813,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.SignInResource&gt;</ReturnType>
@@ -779,7 +829,7 @@
         <param name="connectionName">The connectionName.</param>
         <param name="cancellationToken">The cancellationToken.</param>
         <summary>
-            Gets a sign in resource.
+            Gets a sign-in resource.
             </summary>
         <returns>A SignInResource with the link and token exchange info.</returns>
         <remarks>To be added.</remarks>
@@ -789,7 +839,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.SignInResource&gt; GetSignInResourceAsync (Microsoft.Bot.Builder.ITurnContext turnContext, string connectionName, string userId, string finalRedirect = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.SignInResource&gt; GetSignInResourceAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, string connectionName, string userId, string finalRedirect, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.TestAdapter.GetSignInResourceAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetSignInResourceAsync (turnContext As ITurnContext, connectionName As String, userId As String, Optional finalRedirect As String = null, Optional cancellationToken As CancellationToken = null) As Task(Of SignInResource)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSignInResourceAsync (turnContext As ITurnContext, connectionName As String, userId As String, Optional finalRedirect As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of SignInResource)" />
       <MemberSignature Language="F#" Value="abstract member GetSignInResourceAsync : Microsoft.Bot.Builder.ITurnContext * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.SignInResource&gt;&#xA;override this.GetSignInResourceAsync : Microsoft.Bot.Builder.ITurnContext * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.SignInResource&gt;" Usage="testAdapter.GetSignInResourceAsync (turnContext, connectionName, userId, finalRedirect, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -800,6 +850,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.SignInResource&gt;</ReturnType>
@@ -814,11 +866,11 @@
       <Docs>
         <param name="turnContext">The TurnContext.</param>
         <param name="connectionName">The connectionName.</param>
-        <param name="userId">The user id.</param>
+        <param name="userId">The user ID.</param>
         <param name="finalRedirect">A final redirect URL.</param>
         <param name="cancellationToken">The cancellationToken.</param>
         <summary>
-            Gets a sign in resource.
+            Gets a sign-in resource.
             </summary>
         <returns>A SignInResource with the link and token exchange info.</returns>
         <remarks>To be added.</remarks>
@@ -828,7 +880,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.SignInResource&gt; GetSignInResourceAsync (Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Connector.Authentication.AppCredentials oAuthAppCredentials, string connectionName, string userId, string finalRedirect = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.SignInResource&gt; GetSignInResourceAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class Microsoft.Bot.Connector.Authentication.AppCredentials oAuthAppCredentials, string connectionName, string userId, string finalRedirect, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.TestAdapter.GetSignInResourceAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Connector.Authentication.AppCredentials,System.String,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetSignInResourceAsync (turnContext As ITurnContext, oAuthAppCredentials As AppCredentials, connectionName As String, userId As String, Optional finalRedirect As String = null, Optional cancellationToken As CancellationToken = null) As Task(Of SignInResource)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSignInResourceAsync (turnContext As ITurnContext, oAuthAppCredentials As AppCredentials, connectionName As String, userId As String, Optional finalRedirect As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of SignInResource)" />
       <MemberSignature Language="F#" Value="abstract member GetSignInResourceAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Connector.Authentication.AppCredentials * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.SignInResource&gt;&#xA;override this.GetSignInResourceAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Connector.Authentication.AppCredentials * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.SignInResource&gt;" Usage="testAdapter.GetSignInResourceAsync (turnContext, oAuthAppCredentials, connectionName, userId, finalRedirect, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -839,6 +891,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.SignInResource&gt;</ReturnType>
@@ -855,11 +909,11 @@
         <param name="turnContext">The TurnContext.</param>
         <param name="oAuthAppCredentials">AppCredentials for OAuth.</param>
         <param name="connectionName">The connectionName.</param>
-        <param name="userId">The user id.</param>
+        <param name="userId">The user ID.</param>
         <param name="finalRedirect">A final redirect URL.</param>
         <param name="cancellationToken">The cancellationToken.</param>
         <summary>
-            Gets a sign in resource.
+            Gets a sign-in resource.
             </summary>
         <returns>A SignInResource with the link and token exchange info.</returns>
         <remarks>To be added.</remarks>
@@ -869,7 +923,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenStatus[]&gt; GetTokenStatusAsync (Microsoft.Bot.Builder.ITurnContext context, string userId, string includeFilter = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.TokenStatus[]&gt; GetTokenStatusAsync(class Microsoft.Bot.Builder.ITurnContext context, string userId, string includeFilter, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.TestAdapter.GetTokenStatusAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTokenStatusAsync (context As ITurnContext, userId As String, Optional includeFilter As String = null, Optional cancellationToken As CancellationToken = null) As Task(Of TokenStatus())" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTokenStatusAsync (context As ITurnContext, userId As String, Optional includeFilter As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TokenStatus())" />
       <MemberSignature Language="F#" Value="abstract member GetTokenStatusAsync : Microsoft.Bot.Builder.ITurnContext * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenStatus[]&gt;&#xA;override this.GetTokenStatusAsync : Microsoft.Bot.Builder.ITurnContext * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenStatus[]&gt;" Usage="testAdapter.GetTokenStatusAsync (context, userId, includeFilter, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -884,6 +938,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenStatus[]&gt;</ReturnType>
@@ -896,11 +952,12 @@
       </Parameters>
       <Docs>
         <param name="context">The turnContext (with a valid Activity).</param>
-        <param name="userId">The user id.</param>
-        <param name="includeFilter">Optional comma separated list of connection's to include. Blank will return token status for all configured connections.</param>
+        <param name="userId">The user ID.</param>
+        <param name="includeFilter">Optional comma separated list of the connections to include,
+            or `null` to return the token status for each configured connection.</param>
         <param name="cancellationToken">The cancellation token.</param>
         <summary>
-            Gets the token statuses, using the bot's AppCredentials.
+            Gets the token statuses, using the bot's app credentials.
             </summary>
         <returns>Array of TokenStatus.</returns>
         <remarks>To be added.</remarks>
@@ -910,7 +967,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenStatus[]&gt; GetTokenStatusAsync (Microsoft.Bot.Builder.ITurnContext context, Microsoft.Bot.Connector.Authentication.AppCredentials oAuthAppCredentials, string userId, string includeFilter = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.TokenStatus[]&gt; GetTokenStatusAsync(class Microsoft.Bot.Builder.ITurnContext context, class Microsoft.Bot.Connector.Authentication.AppCredentials oAuthAppCredentials, string userId, string includeFilter, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.TestAdapter.GetTokenStatusAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Connector.Authentication.AppCredentials,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTokenStatusAsync (context As ITurnContext, oAuthAppCredentials As AppCredentials, userId As String, Optional includeFilter As String = null, Optional cancellationToken As CancellationToken = null) As Task(Of TokenStatus())" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTokenStatusAsync (context As ITurnContext, oAuthAppCredentials As AppCredentials, userId As String, Optional includeFilter As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of TokenStatus())" />
       <MemberSignature Language="F#" Value="abstract member GetTokenStatusAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Connector.Authentication.AppCredentials * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenStatus[]&gt;&#xA;override this.GetTokenStatusAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Connector.Authentication.AppCredentials * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenStatus[]&gt;" Usage="testAdapter.GetTokenStatusAsync (context, oAuthAppCredentials, userId, includeFilter, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -921,6 +978,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenStatus[]&gt;</ReturnType>
@@ -934,9 +993,10 @@
       </Parameters>
       <Docs>
         <param name="context">The turnContext (with a valid Activity).</param>
-        <param name="oAuthAppCredentials">AppCredentials for OAuth.</param>
-        <param name="userId">The user id.</param>
-        <param name="includeFilter">Optional comma separated list of connection's to include. Blank will return token status for all configured connections.</param>
+        <param name="oAuthAppCredentials">The app credentials for OAuth.</param>
+        <param name="userId">The user ID.</param>
+        <param name="includeFilter">Optional comma separated list of the connections to include,
+            or `null` to return the token status for each configured connection.</param>
         <param name="cancellationToken">The cancellation token.</param>
         <summary>
             Gets the token statuses, using customized AppCredentials.
@@ -964,6 +1024,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenResponse&gt;</ReturnType>
@@ -977,7 +1039,7 @@
       <Docs>
         <param name="turnContext">Context for the current turn of conversation with the user.</param>
         <param name="connectionName">Name of the auth connection to use.</param>
-        <param name="magicCode">(Optional) Optional user entered code to validate.</param>
+        <param name="magicCode">(Optional) user entered code to validate.</param>
         <param name="cancellationToken">Cancellation token.</param>
         <summary>Attempts to retrieve the token for a user that's in a login flow, using the bot's AppCredentials.
             </summary>
@@ -1000,6 +1062,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenResponse&gt;</ReturnType>
@@ -1036,6 +1100,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1054,7 +1120,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Schema.Activity MakeActivity (string text = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Schema.Activity MakeActivity(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.TestAdapter.MakeActivity(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Function MakeActivity (Optional text As String = null) As Activity" />
+      <MemberSignature Language="VB.NET" Value="Public Function MakeActivity (Optional text As String = Nothing) As Activity" />
       <MemberSignature Language="F#" Value="member this.MakeActivity : string -&gt; Microsoft.Bot.Schema.Activity" Usage="testAdapter.MakeActivity text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1068,6 +1134,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
@@ -1089,7 +1157,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ProcessActivityAsync (Microsoft.Bot.Schema.Activity activity, Microsoft.Bot.Builder.BotCallbackHandler callback, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ProcessActivityAsync(class Microsoft.Bot.Schema.Activity activity, class Microsoft.Bot.Builder.BotCallbackHandler callback, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.TestAdapter.ProcessActivityAsync(Microsoft.Bot.Schema.Activity,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function ProcessActivityAsync (activity As Activity, callback As BotCallbackHandler, Optional cancellationToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Function ProcessActivityAsync (activity As Activity, callback As BotCallbackHandler, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="override this.ProcessActivityAsync : Microsoft.Bot.Schema.Activity * Microsoft.Bot.Builder.BotCallbackHandler * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="testAdapter.ProcessActivityAsync (activity, callback, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1103,6 +1171,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1137,6 +1207,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt;</ReturnType>
@@ -1178,6 +1250,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse[]&gt;</ReturnType>
@@ -1220,6 +1294,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1245,7 +1321,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task SignOutUserAsync (Microsoft.Bot.Builder.ITurnContext turnContext, string connectionName = default, string userId = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task SignOutUserAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, string connectionName, string userId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.TestAdapter.SignOutUserAsync(Microsoft.Bot.Builder.ITurnContext,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function SignOutUserAsync (turnContext As ITurnContext, Optional connectionName As String = null, Optional userId As String = null, Optional cancellationToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SignOutUserAsync (turnContext As ITurnContext, Optional connectionName As String = Nothing, Optional userId As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="abstract member SignOutUserAsync : Microsoft.Bot.Builder.ITurnContext * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.SignOutUserAsync : Microsoft.Bot.Builder.ITurnContext * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="testAdapter.SignOutUserAsync (turnContext, connectionName, userId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1260,6 +1336,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1271,12 +1349,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="turnContext">The turnContext (with a valid Activity).</param>
-        <param name="connectionName">The conectionName.</param>
-        <param name="userId">The userId.</param>
+        <param name="turnContext">The turnContext (with a valid activity).</param>
+        <param name="connectionName">The connection name.</param>
+        <param name="userId">The user ID.</param>
         <param name="cancellationToken">The Task cancellation token.</param>
         <summary>
-            Signs a user out by remove the user's token(s) from mock storage, using the bot's AppCredentials.
+            Signs a user out by removing the user's token(s) from mock storage, using the bot's app credentials.
             </summary>
         <returns>None.</returns>
         <remarks>To be added.</remarks>
@@ -1286,7 +1364,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task SignOutUserAsync (Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Connector.Authentication.AppCredentials oAuthAppCredentials, string connectionName = default, string userId = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task SignOutUserAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class Microsoft.Bot.Connector.Authentication.AppCredentials oAuthAppCredentials, string connectionName, string userId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.TestAdapter.SignOutUserAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Connector.Authentication.AppCredentials,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function SignOutUserAsync (turnContext As ITurnContext, oAuthAppCredentials As AppCredentials, Optional connectionName As String = null, Optional userId As String = null, Optional cancellationToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SignOutUserAsync (turnContext As ITurnContext, oAuthAppCredentials As AppCredentials, Optional connectionName As String = Nothing, Optional userId As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="abstract member SignOutUserAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Connector.Authentication.AppCredentials * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.SignOutUserAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Connector.Authentication.AppCredentials * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="testAdapter.SignOutUserAsync (turnContext, oAuthAppCredentials, connectionName, userId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1297,6 +1375,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1310,9 +1390,9 @@
       </Parameters>
       <Docs>
         <param name="turnContext">The turnContext (with a valid Activity).</param>
-        <param name="oAuthAppCredentials">AppCredentials for OAuth.</param>
-        <param name="connectionName">The conectionName.</param>
-        <param name="userId">The userId.</param>
+        <param name="oAuthAppCredentials">The app credentials for OAuth.</param>
+        <param name="connectionName">The connection name.</param>
+        <param name="userId">The user ID.</param>
         <param name="cancellationToken">The Task cancellation token.</param>
         <summary>
             Signs a user out by remove the user's token(s) from mock storage, using customized AppCredentials.
@@ -1332,6 +1412,8 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1344,9 +1426,9 @@
       </Parameters>
       <Docs>
         <param name="connectionName">The connection name.</param>
-        <param name="channelId">The channel id.</param>
-        <param name="userId">The user id.</param>
-        <param name="exchangableItem">The exchangable token or resource uri.</param>
+        <param name="channelId">The channel ID.</param>
+        <param name="userId">The user ID.</param>
+        <param name="exchangableItem">The exchangeable token or resource URI.</param>
         <summary> Adds an instruction to throw an exception during exchange requests.
             </summary>
         <remarks>To be added.</remarks>
@@ -1370,6 +1452,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -1414,6 +1498,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Adapters.TestAdapter</ReturnType>

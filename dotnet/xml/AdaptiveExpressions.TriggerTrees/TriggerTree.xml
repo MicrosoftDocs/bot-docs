@@ -7,6 +7,8 @@
   <AssemblyInfo>
     <AssemblyName>AdaptiveExpressions</AssemblyName>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -14,10 +16,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerDisplay("{ToString()}")</AttributeName>
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerDisplay("{ToString()}")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerDisplay("{ToString()}")&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(AdaptiveExpressions.TriggerTrees.TriggerTree/Debugger))</AttributeName>
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerTypeProxy(typeof(AdaptiveExpressions.TriggerTrees.TriggerTree/Debugger))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerTypeProxy(typeof(AdaptiveExpressions.TriggerTrees.TriggerTree/Debugger))&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -45,6 +49,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -64,6 +70,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.TriggerTrees.Trigger</ReturnType>
@@ -74,7 +82,8 @@
         <Parameter Name="quantifiers" Type="AdaptiveExpressions.TriggerTrees.Quantifier[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -100,6 +109,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.TriggerTrees.Trigger</ReturnType>
@@ -110,7 +121,8 @@
         <Parameter Name="quantifiers" Type="AdaptiveExpressions.TriggerTrees.Quantifier[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -136,13 +148,17 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,AdaptiveExpressions.TriggerTrees.IPredicateComparer&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets a value of a dictionary, which has IPredicateComparer values, with string keys.
+            </summary>
+        <value>A dictionary of IPredicateComparer values, with string keys.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,6 +172,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -164,8 +182,10 @@
         <Parameter Name="outPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="outPath">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="outPath">The path to save the graph.</param>
+        <summary>
+            Generates a graph to given path.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,6 +199,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;AdaptiveExpressions.TriggerTrees.Trigger&gt;</ReturnType>
@@ -205,13 +227,17 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;AdaptiveExpressions.TriggerTrees.IOptimizer&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets a list of Optimizers for optimizing clauses.
+            </summary>
+        <value>A value of list of Optimizers.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,6 +251,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -251,13 +279,17 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.TriggerTrees.Node</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets a value of the root node.
+            </summary>
+        <value>A Node instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -271,14 +303,18 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Returns a string that represents the current object.
+            </summary>
+        <returns>A string value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -292,13 +328,17 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the total number of triggers.
+            </summary>
+        <value>An integet number.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -312,6 +352,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -338,6 +380,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.TriggerTrees.Node</ReturnType>

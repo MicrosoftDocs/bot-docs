@@ -14,7 +14,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonObject(MemberSerialization=Newtonsoft.Json.MemberSerialization.OptOut)</AttributeName>
+      <AttributeName Language="C#">[Newtonsoft.Json.JsonObject(MemberSerialization=Newtonsoft.Json.MemberSerialization.OptOut)]</AttributeName>
+      <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonObject(MemberSerialization=Newtonsoft.Json.MemberSerialization.OptOut)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -65,7 +66,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(Order=-700, PropertyName="from", Required=Newtonsoft.Json.Required.Always)</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(Order=-700, PropertyName="from", Required=Newtonsoft.Json.Required.Always)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(Order=-700, PropertyName="from", Required=Newtonsoft.Json.Required.Always)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -152,7 +154,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(Order=-900, PropertyName="type", Required=Newtonsoft.Json.Required.Always)</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(Order=-900, PropertyName="type", Required=Newtonsoft.Json.Required.Always)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(Order=-900, PropertyName="type", Required=Newtonsoft.Json.Required.Always)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -196,7 +199,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(Order=-800, PropertyName="to", Required=Newtonsoft.Json.Required.Always)</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(Order=-800, PropertyName="to", Required=Newtonsoft.Json.Required.Always)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(Order=-800, PropertyName="to", Required=Newtonsoft.Json.Required.Always)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

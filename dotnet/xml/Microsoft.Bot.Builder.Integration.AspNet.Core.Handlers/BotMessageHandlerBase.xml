@@ -15,13 +15,17 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Abstract base class for a bot message handler.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,10 +46,14 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Integration.AspNet.Core.Handlers.BotMessageHandlerBase" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,12 +75,16 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Newtonsoft.Json.JsonSerializer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            A <see cref="T:Newtonsoft.Json.JsonSerializer" /> for use when serializing bot messages.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,6 +106,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -102,9 +116,12 @@
         <Parameter Name="httpContext" Type="Microsoft.AspNetCore.Http.HttpContext" />
       </Parameters>
       <Docs>
-        <param name="httpContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="httpContext">The <see cref="T:Microsoft.AspNetCore.Http.HttpContext" />.</param>
+        <summary>
+            Handles common behavior for handling requests, including checking valid request method and content type.
+            Processes the request using the registered adapter and bot and writes the result to the response on the <see cref="T:Microsoft.AspNetCore.Http.HttpContext" />.
+            </summary>
+        <returns>A Task that represents the work to be executed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,6 +142,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt;</ReturnType>
@@ -136,12 +155,15 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="adapter">To be added.</param>
-        <param name="botCallbackHandler">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">A <see cref="T:Microsoft.AspNetCore.Http.HttpRequest" />.</param>
+        <param name="adapter">An instance of <see cref="T:Microsoft.Bot.Builder.Integration.IAdapterIntegration" />.</param>
+        <param name="botCallbackHandler">An instance of <see cref="T:Microsoft.Bot.Builder.BotCallbackHandler" />.</param>
+        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" />.</param>
+        <summary>
+            Abstract method to process the incoming request using the registered adapter and bot and
+            to return an <see cref="T:Microsoft.Bot.Builder.InvokeResponse" />.
+            </summary>
+        <returns>An <see cref="T:Microsoft.Bot.Builder.InvokeResponse" /> returned from the adapter.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

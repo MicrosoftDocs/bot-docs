@@ -26,7 +26,7 @@
       <MemberSignature Language="C#" Value="public FacebookMessage (string text, System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply&gt; quickReplies = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply&gt; quickReplies) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.ConnectorEx.FacebookMessage.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, Optional quickReplies As IList(Of FacebookQuickReply) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, Optional quickReplies As IList(Of FacebookQuickReply) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.ConnectorEx.FacebookMessage : string * System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.ConnectorEx.FacebookQuickReply&gt; -&gt; Microsoft.Bot.Builder.ConnectorEx.FacebookMessage" Usage="new Microsoft.Bot.Builder.ConnectorEx.FacebookMessage (text, quickReplies)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -63,7 +63,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="quick_replies")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="quick_replies")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="quick_replies")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -91,7 +92,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="text")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="text")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="text")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

@@ -8,13 +8,17 @@
     <AssemblyName>Microsoft.Bot.Builder.Integration.ApplicationInsights.Core</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            ApplicationBuilder extension methods for use when registering Application Insights services at startup.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,12 +33,16 @@
         <AssemblyName>Microsoft.Bot.Builder.Integration.ApplicationInsights.Core</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Constant key used for Application Insights Instrumentation Key.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,10 +57,13 @@
         <AssemblyName>Microsoft.Bot.Builder.Integration.ApplicationInsights.Core</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("This class is deprecated. Please add TelemetryInitializerMiddleware to your adapter's middleware pipeline instead.")</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("This class is deprecated. Please add TelemetryInitializerMiddleware to your adapter's middleware pipeline instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This class is deprecated. Please add TelemetryInitializerMiddleware to your adapter's middleware pipeline instead.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

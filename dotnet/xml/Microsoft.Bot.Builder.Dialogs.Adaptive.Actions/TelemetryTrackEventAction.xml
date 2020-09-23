@@ -1,0 +1,242 @@
+<Type Name="TelemetryTrackEventAction" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.TelemetryTrackEventAction">
+  <TypeSignature Language="C#" Value="public class TelemetryTrackEventAction : Microsoft.Bot.Builder.Dialogs.Dialog" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TelemetryTrackEventAction extends Microsoft.Bot.Builder.Dialogs.Dialog" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.TelemetryTrackEventAction" />
+  <TypeSignature Language="VB.NET" Value="Public Class TelemetryTrackEventAction&#xA;Inherits Dialog" />
+  <TypeSignature Language="F#" Value="type TelemetryTrackEventAction = class&#xA;    inherit Dialog" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Dialog</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Track a custom event using IBotTelemetryClient.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TelemetryTrackEventAction (string eventName, System.Collections.Generic.Dictionary&lt;string,AdaptiveExpressions.Properties.StringExpression&gt; properties = default, string callerPath = &quot;&quot;, int callerLine = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string eventName, class System.Collections.Generic.Dictionary`2&lt;string, class AdaptiveExpressions.Properties.StringExpression&gt; properties, string callerPath, int32 callerLine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.TelemetryTrackEventAction.#ctor(System.String,System.Collections.Generic.Dictionary{System.String,AdaptiveExpressions.Properties.StringExpression},System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (eventName As String, Optional properties As Dictionary(Of String, StringExpression) = Nothing, Optional callerPath As String = &quot;&quot;, Optional callerLine As Integer = 0)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.TelemetryTrackEventAction : string * System.Collections.Generic.Dictionary&lt;string, AdaptiveExpressions.Properties.StringExpression&gt; * string * int -&gt; Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.TelemetryTrackEventAction" Usage="new Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.TelemetryTrackEventAction (eventName, properties, callerPath, callerLine)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonConstructor]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConstructor&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="eventName" Type="System.String" />
+        <Parameter Name="properties" Type="System.Collections.Generic.Dictionary&lt;System.String,AdaptiveExpressions.Properties.StringExpression&gt;" />
+        <Parameter Name="callerPath" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerFilePath]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerFilePath&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="callerLine" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerLineNumber]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerLineNumber&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="eventName">To be added.</param>
+        <param name="properties">To be added.</param>
+        <param name="callerPath">To be added.</param>
+        <param name="callerLine">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginDialogAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; BeginDialogAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dc, object options = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; BeginDialogAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, object options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.TelemetryTrackEventAction.BeginDialogAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginDialogAsync (dc As DialogContext, Optional options As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of DialogTurnResult)" />
+      <MemberSignature Language="F#" Value="override this.BeginDialogAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;" Usage="telemetryTrackEventAction.BeginDialogAsync (dc, options, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="options" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dc">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Disabled">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.BoolExpression Disabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.BoolExpression Disabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.TelemetryTrackEventAction.Disabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Disabled As BoolExpression" />
+      <MemberSignature Language="F#" Value="member this.Disabled : AdaptiveExpressions.Properties.BoolExpression with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.TelemetryTrackEventAction.Disabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("disabled")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("disabled")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.BoolExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets an optional expression which if is true will disable this action.
+            </summary>
+        <value>
+            A boolean expression. 
+            </value>
+        <remarks>To be added.</remarks>
+        <example>
+            "user.age &gt; 18".
+            </example>
+      </Docs>
+    </Member>
+    <Member MemberName="EventName">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.StringExpression EventName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.StringExpression EventName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.TelemetryTrackEventAction.EventName" />
+      <MemberSignature Language="VB.NET" Value="Public Property EventName As StringExpression" />
+      <MemberSignature Language="F#" Value="member this.EventName : AdaptiveExpressions.Properties.StringExpression with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.TelemetryTrackEventAction.EventName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.StringExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a name to use for the event.
+            </summary>
+        <value>The event name to use.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Kind">
+      <MemberSignature Language="C#" Value="public const string Kind;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Kind" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.TelemetryTrackEventAction.Kind" />
+      <MemberSignature Language="VB.NET" Value="Public Const Kind As String " />
+      <MemberSignature Language="F#" Value="val mutable Kind : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.TelemetryTrackEventAction.Kind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("$kind")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("$kind")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnComputeId">
+      <MemberSignature Language="C#" Value="protected override string OnComputeId ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string OnComputeId() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.TelemetryTrackEventAction.OnComputeId" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnComputeId () As String" />
+      <MemberSignature Language="F#" Value="override this.OnComputeId : unit -&gt; string" Usage="telemetryTrackEventAction.OnComputeId " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;string,AdaptiveExpressions.Properties.StringExpression&gt; Properties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;string, class AdaptiveExpressions.Properties.StringExpression&gt; Properties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.TelemetryTrackEventAction.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public Property Properties As Dictionary(Of String, StringExpression)" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Collections.Generic.Dictionary&lt;string, AdaptiveExpressions.Properties.StringExpression&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.TelemetryTrackEventAction.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,AdaptiveExpressions.Properties.StringExpression&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the properties to attach to the tracked event.
+            </summary>
+        <value>
+            A collection of properties to attach to the tracked event.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

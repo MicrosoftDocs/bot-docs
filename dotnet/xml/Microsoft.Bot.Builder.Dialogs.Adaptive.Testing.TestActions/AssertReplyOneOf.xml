@@ -7,6 +7,8 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestActions.AssertReplyActivity</BaseTypeName>
@@ -14,11 +16,14 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerDisplay("AssertReplyOneOf:{GetConditionDescription()}")</AttributeName>
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerDisplay("AssertReplyOneOf:{GetConditionDescription()}")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerDisplay("AssertReplyOneOf:{GetConditionDescription()}")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Assertion that reply from the bot matches one of options.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,32 +37,39 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonConstructor</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonConstructor]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConstructor&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
         <Parameter Name="path" Type="System.String">
           <Attributes>
             <Attribute>
-              <AttributeName>System.Runtime.CompilerServices.CallerFilePath</AttributeName>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerFilePath]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerFilePath&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
         <Parameter Name="line" Type="System.Int32">
           <Attributes>
             <Attribute>
-              <AttributeName>System.Runtime.CompilerServices.CallerLineNumber</AttributeName>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerLineNumber]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerLineNumber&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <param name="line">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="path">path to source.</param>
+        <param name="line">line number in source.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestActions.AssertReplyOneOf" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,13 +83,17 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("exact")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("exact")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("exact")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -103,6 +119,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -112,6 +130,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Kind">
@@ -124,34 +143,42 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("$kind")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("$kind")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("$kind")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            kind for serialization.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;string&gt; Text { get; set; }" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;string&gt; Text { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;string&gt; Text" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestActions.AssertReplyOneOf.Text" />
-      <MemberSignature Language="VB.NET" Value="Public Property Text As List(Of String)" />
-      <MemberSignature Language="F#" Value="member this.Text : System.Collections.Generic.List&lt;string&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestActions.AssertReplyOneOf.Text" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Text As List(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Text : System.Collections.Generic.List&lt;string&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestActions.AssertReplyOneOf.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("text")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("text")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("text")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -159,7 +186,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the text variations.
+            Gets the text variations.
             </summary>
         <value>
             The text variations.
@@ -177,6 +204,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -188,6 +217,7 @@
         <param name="activity">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
   </Members>

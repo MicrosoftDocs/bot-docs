@@ -15,6 +15,8 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -44,10 +46,14 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.AI.QnA.QnAMakerOptions" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,10 +70,13 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("context")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("context")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("context")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -96,10 +105,13 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("isTest")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("isTest")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("isTest")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -133,21 +145,29 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonIgnore</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonIgnore]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonIgnore&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Obsolete("This property is no longer used and will be ignored")</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("This property is no longer used and will be ignored")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This property is no longer used and will be ignored")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.AI.QnA.Metadata[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the <see cref="T:Microsoft.Bot.Builder.AI.QnA.Metadata" /> collection to be sent when calling QnA Maker to boost results.
+            </summary>
+        <value>
+            An array of <see cref="T:Microsoft.Bot.Builder.AI.QnA.Metadata" />.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -164,10 +184,13 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("qnAId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("qnAId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("qnAId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -175,7 +198,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets QnA Id of the current question asked (if avaliable).
+            Gets or sets QnA Id of the current question asked (if availble).
             </summary>
         <value>
             Id of the current question asked.
@@ -196,10 +219,13 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("rankerType")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("rankerType")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("rankerType")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -234,10 +260,13 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("scoreThreshold")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("scoreThreshold")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("scoreThreshold")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -272,18 +301,25 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("strictFilters")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("strictFilters")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("strictFilters")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.AI.QnA.Metadata[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the <see cref="T:Microsoft.Bot.Builder.AI.QnA.Metadata" /> collection to be sent when calling QnA Maker to filter results.
+            </summary>
+        <value>
+            An array of <see cref="T:Microsoft.Bot.Builder.AI.QnA.Metadata" />.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -302,10 +338,13 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("timeout")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("timeout")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("timeout")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -342,10 +381,13 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("top")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("top")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("top")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

@@ -1,0 +1,69 @@
+<Type Name="PropertyMock" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.PropertyMocks.PropertyMock">
+  <TypeSignature Language="C#" Value="public abstract class PropertyMock" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PropertyMock extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.PropertyMocks.PropertyMock" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class PropertyMock" />
+  <TypeSignature Language="F#" Value="type PropertyMock = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Base class for all property mocks.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected PropertyMock ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.PropertyMocks.PropertyMock.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterSourcePath">
+      <MemberSignature Language="C#" Value="protected void RegisterSourcePath (string path, int line);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RegisterSourcePath(string path, int32 line) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.PropertyMocks.PropertyMock.RegisterSourcePath(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RegisterSourcePath (path As String, line As Integer)" />
+      <MemberSignature Language="F#" Value="member this.RegisterSourcePath : string * int -&gt; unit" Usage="propertyMock.RegisterSourcePath (path, line)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="line" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="path">optional path.</param>
+        <param name="line">optional line.</param>
+        <summary>
+            Method to register mock with debugger.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

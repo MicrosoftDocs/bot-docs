@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Adapters.Twilio</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -14,128 +15,48 @@
   <Interfaces />
   <Docs>
     <summary>
-            Defines values that a <see cref="T:Microsoft.Bot.Builder.Adapters.Twilio.TwilioClientWrapper" /> can use to connect to Twilio's SMS service.
+            Options for the <see cref="T:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapter" />.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public TwilioAdapterOptions (string twilioNumber, string twilioAccountSid, string twilioAuthToken, Uri twilioValidationUrl = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string twilioNumber, string twilioAccountSid, string twilioAuthToken, class System.Uri twilioValidationUrl) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions.#ctor(System.String,System.String,System.String,System.Uri)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (twilioNumber As String, twilioAccountSid As String, twilioAuthToken As String, Optional twilioValidationUrl As Uri = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions : string * string * string * Uri -&gt; Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions" Usage="new Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions (twilioNumber, twilioAccountSid, twilioAuthToken, twilioValidationUrl)" />
+      <MemberSignature Language="C#" Value="public TwilioAdapterOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Twilio</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="twilioNumber" Type="System.String" />
-        <Parameter Name="twilioAccountSid" Type="System.String" />
-        <Parameter Name="twilioAuthToken" Type="System.String" />
-        <Parameter Name="twilioValidationUrl" Type="System.Uri" />
-      </Parameters>
+      <Parameters />
       <Docs>
-        <param name="twilioNumber">The twilio phone number.</param>
-        <param name="twilioAccountSid">The account id.</param>
-        <param name="twilioAuthToken">The authentication token.</param>
-        <param name="twilioValidationUrl">The validation URL for incoming requests.</param>
-        <summary>
-            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions" /> class.
-            </summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="TwilioAccountSid">
-      <MemberSignature Language="C#" Value="public string TwilioAccountSid { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string TwilioAccountSid" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions.TwilioAccountSid" />
-      <MemberSignature Language="VB.NET" Value="Public Property TwilioAccountSid As String" />
-      <MemberSignature Language="F#" Value="member this.TwilioAccountSid : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions.TwilioAccountSid" />
+    <Member MemberName="ValidateIncomingRequests">
+      <MemberSignature Language="C#" Value="public bool ValidateIncomingRequests { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ValidateIncomingRequests" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions.ValidateIncomingRequests" />
+      <MemberSignature Language="VB.NET" Value="Public Property ValidateIncomingRequests As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ValidateIncomingRequests : bool with get, set" Usage="Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions.ValidateIncomingRequests" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Twilio</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the account SID from the Twilio account.
-            </summary>
-        <value>The account SID.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="TwilioAuthToken">
-      <MemberSignature Language="C#" Value="public string TwilioAuthToken { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string TwilioAuthToken" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions.TwilioAuthToken" />
-      <MemberSignature Language="VB.NET" Value="Public Property TwilioAuthToken As String" />
-      <MemberSignature Language="F#" Value="member this.TwilioAuthToken : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions.TwilioAuthToken" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Adapters.Twilio</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Gets or sets the API auth token associated with the Twilio account.
-            </summary>
-        <value>The authentication token.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="TwilioNumber">
-      <MemberSignature Language="C#" Value="public string TwilioNumber { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string TwilioNumber" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions.TwilioNumber" />
-      <MemberSignature Language="VB.NET" Value="Public Property TwilioNumber As String" />
-      <MemberSignature Language="F#" Value="member this.TwilioNumber : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions.TwilioNumber" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Adapters.Twilio</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Gets or sets the phone number associated with this Twilio app.
+            Gets or sets a value indicating whether incoming requests should be validated as coming from Twilio.
             </summary>
         <value>
-            The phone number, in the format 1XXXYYYZZZZ.
+            A value indicating whether incoming requests should be validated as coming from Twilio.
             </value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="TwilioValidationUrl">
-      <MemberSignature Language="C#" Value="public Uri TwilioValidationUrl { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri TwilioValidationUrl" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions.TwilioValidationUrl" />
-      <MemberSignature Language="VB.NET" Value="Public Property TwilioValidationUrl As Uri" />
-      <MemberSignature Language="F#" Value="member this.TwilioValidationUrl : Uri with get, set" Usage="Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions.TwilioValidationUrl" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Adapters.Twilio</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Uri</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Gets or sets an optional validation URL.
-            </summary>
-        <value>Optional validation URL to override the automatically generated URL signature used
-            to validate incoming requests. See the Twilio security documentation on
-            [validating requests](https://www.twilio.com/docs/usage/security#validating-requests).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

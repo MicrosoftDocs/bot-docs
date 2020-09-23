@@ -1,0 +1,105 @@
+<Type Name="DialogContextPath" FullName="Microsoft.Bot.Builder.Dialogs.DialogContextPath">
+  <TypeSignature Language="C#" Value="public class DialogContextPath" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DialogContextPath extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.DialogContextPath" />
+  <TypeSignature Language="VB.NET" Value="Public Class DialogContextPath" />
+  <TypeSignature Language="F#" Value="type DialogContextPath = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DialogContextPath ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogContextPath.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActiveDialog">
+      <MemberSignature Language="C#" Value="public const string ActiveDialog;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ActiveDialog" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.DialogContextPath.ActiveDialog" />
+      <MemberSignature Language="VB.NET" Value="Public Const ActiveDialog As String " />
+      <MemberSignature Language="F#" Value="val mutable ActiveDialog : string" Usage="Microsoft.Bot.Builder.Dialogs.DialogContextPath.ActiveDialog" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Memory Path to dialogContext's active dialog.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public const string Parent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Parent" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.DialogContextPath.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public Const Parent As String " />
+      <MemberSignature Language="F#" Value="val mutable Parent : string" Usage="Microsoft.Bot.Builder.Dialogs.DialogContextPath.Parent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Memory Path to dialogContext's parent dialog.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stack">
+      <MemberSignature Language="C#" Value="public const string Stack;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Stack" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.DialogContextPath.Stack" />
+      <MemberSignature Language="VB.NET" Value="Public Const Stack As String " />
+      <MemberSignature Language="F#" Value="val mutable Stack : string" Usage="Microsoft.Bot.Builder.Dialogs.DialogContextPath.Stack" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Memory Path to dialogContext's stack.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

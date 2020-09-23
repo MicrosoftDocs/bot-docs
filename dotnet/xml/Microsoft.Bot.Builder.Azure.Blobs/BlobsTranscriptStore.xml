@@ -1,0 +1,192 @@
+<Type Name="BlobsTranscriptStore" FullName="Microsoft.Bot.Builder.Azure.Blobs.BlobsTranscriptStore">
+  <TypeSignature Language="C#" Value="public class BlobsTranscriptStore : Microsoft.Bot.Builder.ITranscriptStore" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BlobsTranscriptStore extends System.Object implements class Microsoft.Bot.Builder.ITranscriptLogger, class Microsoft.Bot.Builder.ITranscriptStore" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Azure.Blobs.BlobsTranscriptStore" />
+  <TypeSignature Language="VB.NET" Value="Public Class BlobsTranscriptStore&#xA;Implements ITranscriptStore" />
+  <TypeSignature Language="F#" Value="type BlobsTranscriptStore = class&#xA;    interface ITranscriptStore&#xA;    interface ITranscriptLogger" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Azure.Blobs</AssemblyName>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.ITranscriptLogger</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Bot.Builder.ITranscriptStore</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            The blobs transcript store stores transcripts in an Azure Blob container.
+            </summary>
+    <remarks>
+            Each activity is stored as json blob in structure of
+            container/{channelId]/{conversationId}/{Timestamp.ticks}-{activity.id}.json.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BlobsTranscriptStore (string dataConnectionString, string containerName, Newtonsoft.Json.JsonSerializer jsonSerializer = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string dataConnectionString, string containerName, class Newtonsoft.Json.JsonSerializer jsonSerializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.Blobs.BlobsTranscriptStore.#ctor(System.String,System.String,Newtonsoft.Json.JsonSerializer)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dataConnectionString As String, containerName As String, Optional jsonSerializer As JsonSerializer = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Azure.Blobs.BlobsTranscriptStore : string * string * Newtonsoft.Json.JsonSerializer -&gt; Microsoft.Bot.Builder.Azure.Blobs.BlobsTranscriptStore" Usage="new Microsoft.Bot.Builder.Azure.Blobs.BlobsTranscriptStore (dataConnectionString, containerName, jsonSerializer)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure.Blobs</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dataConnectionString" Type="System.String" />
+        <Parameter Name="containerName" Type="System.String" />
+        <Parameter Name="jsonSerializer" Type="Newtonsoft.Json.JsonSerializer" />
+      </Parameters>
+      <Docs>
+        <param name="dataConnectionString">Azure Storage connection string.</param>
+        <param name="containerName">Name of the Blob container where entities will be stored.</param>
+        <param name="jsonSerializer">If passing in a custom JsonSerializer, we recommend the following settings:
+            <para>jsonSerializer.TypeNameHandling = TypeNameHandling.None.</para><para>jsonSerializer.NullValueHandling = NullValueHandling.Include.</para><para>jsonSerializer.ContractResolver = new DefaultContractResolver().</para></param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Azure.Blobs.BlobsTranscriptStore" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteTranscriptAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteTranscriptAsync (string channelId, string conversationId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteTranscriptAsync(string channelId, string conversationId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.Blobs.BlobsTranscriptStore.DeleteTranscriptAsync(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeleteTranscriptAsync (channelId As String, conversationId As String) As Task" />
+      <MemberSignature Language="F#" Value="abstract member DeleteTranscriptAsync : string * string -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteTranscriptAsync : string * string -&gt; System.Threading.Tasks.Task" Usage="blobsTranscriptStore.DeleteTranscriptAsync (channelId, conversationId)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.ITranscriptStore.DeleteTranscriptAsync(System.String,System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure.Blobs</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="conversationId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">Channel Id where conversation took place.</param>
+        <param name="conversationId">Id of the conversation to delete.</param>
+        <summary>
+            Delete a specific conversation and all of it's activities.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" />A task that represents the work queued to execute.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTranscriptActivitiesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.PagedResult&lt;Microsoft.Bot.Schema.IActivity&gt;&gt; GetTranscriptActivitiesAsync (string channelId, string conversationId, string continuationToken = default, DateTimeOffset startDate = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.PagedResult`1&lt;class Microsoft.Bot.Schema.IActivity&gt;&gt; GetTranscriptActivitiesAsync(string channelId, string conversationId, string continuationToken, valuetype System.DateTimeOffset startDate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.Blobs.BlobsTranscriptStore.GetTranscriptActivitiesAsync(System.String,System.String,System.String,System.DateTimeOffset)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTranscriptActivitiesAsync (channelId As String, conversationId As String, Optional continuationToken As String = Nothing, Optional startDate As DateTimeOffset = Nothing) As Task(Of PagedResult(Of IActivity))" />
+      <MemberSignature Language="F#" Value="abstract member GetTranscriptActivitiesAsync : string * string * string * DateTimeOffset -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.PagedResult&lt;Microsoft.Bot.Schema.IActivity&gt;&gt;&#xA;override this.GetTranscriptActivitiesAsync : string * string * string * DateTimeOffset -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.PagedResult&lt;Microsoft.Bot.Schema.IActivity&gt;&gt;" Usage="blobsTranscriptStore.GetTranscriptActivitiesAsync (channelId, conversationId, continuationToken, startDate)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.ITranscriptStore.GetTranscriptActivitiesAsync(System.String,System.String,System.String,System.DateTimeOffset)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure.Blobs</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.PagedResult&lt;Microsoft.Bot.Schema.IActivity&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="continuationToken" Type="System.String" />
+        <Parameter Name="startDate" Type="System.DateTimeOffset" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">Channel Id.</param>
+        <param name="conversationId">Conversation Id.</param>
+        <param name="continuationToken">Continuation token to page through results.</param>
+        <param name="startDate">Earliest time to include.</param>
+        <summary>
+            Get activities for a conversation (Aka the transcript).
+            </summary>
+        <returns>PagedResult of activities.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListTranscriptsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.PagedResult&lt;Microsoft.Bot.Builder.TranscriptInfo&gt;&gt; ListTranscriptsAsync (string channelId, string continuationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.PagedResult`1&lt;class Microsoft.Bot.Builder.TranscriptInfo&gt;&gt; ListTranscriptsAsync(string channelId, string continuationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.Blobs.BlobsTranscriptStore.ListTranscriptsAsync(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ListTranscriptsAsync (channelId As String, Optional continuationToken As String = Nothing) As Task(Of PagedResult(Of TranscriptInfo))" />
+      <MemberSignature Language="F#" Value="abstract member ListTranscriptsAsync : string * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.PagedResult&lt;Microsoft.Bot.Builder.TranscriptInfo&gt;&gt;&#xA;override this.ListTranscriptsAsync : string * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.PagedResult&lt;Microsoft.Bot.Builder.TranscriptInfo&gt;&gt;" Usage="blobsTranscriptStore.ListTranscriptsAsync (channelId, continuationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.ITranscriptStore.ListTranscriptsAsync(System.String,System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure.Blobs</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.PagedResult&lt;Microsoft.Bot.Builder.TranscriptInfo&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelId" Type="System.String" />
+        <Parameter Name="continuationToken" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="channelId">Channel Id.</param>
+        <param name="continuationToken">Continuatuation token to page through results.</param>
+        <summary>
+            List conversations in the channelId.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> A task that represents the work queued to execute.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogActivityAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task LogActivityAsync (Microsoft.Bot.Schema.IActivity activity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task LogActivityAsync(class Microsoft.Bot.Schema.IActivity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.Blobs.BlobsTranscriptStore.LogActivityAsync(Microsoft.Bot.Schema.IActivity)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LogActivityAsync (activity As IActivity) As Task" />
+      <MemberSignature Language="F#" Value="abstract member LogActivityAsync : Microsoft.Bot.Schema.IActivity -&gt; System.Threading.Tasks.Task&#xA;override this.LogActivityAsync : Microsoft.Bot.Schema.IActivity -&gt; System.Threading.Tasks.Task" Usage="blobsTranscriptStore.LogActivityAsync activity" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Bot.Builder.ITranscriptLogger.LogActivityAsync(Microsoft.Bot.Schema.IActivity)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure.Blobs</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.IActivity" />
+      </Parameters>
+      <Docs>
+        <param name="activity">Activity being logged.</param>
+        <summary>
+            Log an activity to the transcript.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" />A task that represents the work queued to execute.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

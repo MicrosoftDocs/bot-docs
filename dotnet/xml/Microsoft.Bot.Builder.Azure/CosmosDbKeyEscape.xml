@@ -14,13 +14,17 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Helper methods for escaping keys used for Cosmos DB.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,6 +45,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -72,6 +78,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -82,14 +90,12 @@
         <Parameter Name="compatibilityMode" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="compatibilityMode">To be added.</param>
         <param name="key">The key to escape.</param>
         <param name="suffix">The string to add at the end of all row keys.</param>
-        <param name="compatibilityMode ">True if running in compatability mode and keys should
+        <param name="compatibilityMode">True if running in compatability mode and keys should
             be truncated in order to support previous CosmosDb max key length of 255. 
             This behavior can be overridden by setting
-            <see cref="P:Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions.CompatibilityMode" /> to false.
-            </param>
+            <see cref="P:Microsoft.Bot.Builder.Azure.CosmosDbPartitionedStorageOptions.CompatibilityMode" /> to false.</param>
         <summary>
             Converts the key into a DocumentID that can be used safely with Cosmos DB.
             The following characters are restricted and cannot be used in the Id property: '/', '\', '?', and '#'.
@@ -115,13 +121,20 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <MemberValue>255</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Older libraries had a max key length of 255.
+            The limit is now 1023. In this library, 255 remains the default for backwards compat.
+            To override this behavior, and use the longer limit, set CosmosDbPartitionedStorageOptions.CompatibilityMode to false.
+            https://docs.microsoft.com/en-us/azure/cosmos-db/concepts-limits#per-item-limits.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

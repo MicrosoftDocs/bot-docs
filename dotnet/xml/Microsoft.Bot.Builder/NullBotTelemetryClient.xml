@@ -13,6 +13,8 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,7 +28,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            A null bot telemtry client that implements <see cref="T:Microsoft.Bot.Builder.IBotTelemetryClient" />.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,6 +49,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -71,13 +77,17 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Flushes the in-memory buffer and any metrics being pre-aggregated.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,13 +107,19 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.IBotTelemetryClient</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets a new instance of NullBotTelemetryClient.
+            </summary>
+        <value>
+            A new instance of NullBotTelemetryClient.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,7 +127,7 @@
       <MemberSignature Language="C#" Value="public void TrackAvailability (string name, DateTimeOffset timeStamp, TimeSpan duration, string runLocation, bool success, string message = default, System.Collections.Generic.IDictionary&lt;string,string&gt; properties = default, System.Collections.Generic.IDictionary&lt;string,double&gt; metrics = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void TrackAvailability(string name, valuetype System.DateTimeOffset timeStamp, valuetype System.TimeSpan duration, string runLocation, bool success, string message, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; properties, class System.Collections.Generic.IDictionary`2&lt;string, float64&gt; metrics) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.NullBotTelemetryClient.TrackAvailability(System.String,System.DateTimeOffset,System.TimeSpan,System.String,System.Boolean,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub TrackAvailability (name As String, timeStamp As DateTimeOffset, duration As TimeSpan, runLocation As String, success As Boolean, Optional message As String = null, Optional properties As IDictionary(Of String, String) = null, Optional metrics As IDictionary(Of String, Double) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TrackAvailability (name As String, timeStamp As DateTimeOffset, duration As TimeSpan, runLocation As String, success As Boolean, Optional message As String = Nothing, Optional properties As IDictionary(Of String, String) = Nothing, Optional metrics As IDictionary(Of String, Double) = Nothing)" />
       <MemberSignature Language="F#" Value="abstract member TrackAvailability : string * DateTimeOffset * TimeSpan * string * bool * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Collections.Generic.IDictionary&lt;string, double&gt; -&gt; unit&#xA;override this.TrackAvailability : string * DateTimeOffset * TimeSpan * string * bool * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Collections.Generic.IDictionary&lt;string, double&gt; -&gt; unit" Usage="nullBotTelemetryClient.TrackAvailability (name, timeStamp, duration, runLocation, success, message, properties, metrics)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -126,6 +142,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -141,15 +159,17 @@
         <Parameter Name="metrics" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="timeStamp">To be added.</param>
-        <param name="duration">To be added.</param>
-        <param name="runLocation">To be added.</param>
-        <param name="success">To be added.</param>
-        <param name="message">To be added.</param>
-        <param name="properties">To be added.</param>
-        <param name="metrics">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">Availability test name.</param>
+        <param name="timeStamp">The time when the availability was captured.</param>
+        <param name="duration">The time taken for the availability test to run.</param>
+        <param name="runLocation">Name of the location the availability test was run from.</param>
+        <param name="success">True if the availability test ran successfully.</param>
+        <param name="message">Error message on availability test run failure.</param>
+        <param name="properties">Named string values you can use to classify and search for this availability telemetry.</param>
+        <param name="metrics">Additional values associated with this availability telemetry.</param>
+        <summary>
+            Send information about availability of an application.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -172,6 +192,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -187,15 +209,20 @@
         <Parameter Name="success" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="dependencyTypeName">To be added.</param>
-        <param name="target">To be added.</param>
-        <param name="dependencyName">To be added.</param>
-        <param name="data">To be added.</param>
-        <param name="startTime">To be added.</param>
-        <param name="duration">To be added.</param>
-        <param name="resultCode">To be added.</param>
-        <param name="success">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dependencyTypeName">Name of the command initiated with this dependency call. Low cardinality value.
+            Examples are SQL, Azure table, and HTTP.</param>
+        <param name="target">External dependency target.</param>
+        <param name="dependencyName">Name of the command initiated with this dependency call. Low cardinality value.
+            Examples are stored procedure name and URL path template.</param>
+        <param name="data">Command initiated by this dependency call. Examples are SQL statement and HTTP
+            URL's with all query parameters.</param>
+        <param name="startTime">The time when the dependency was called.</param>
+        <param name="duration">The time taken by the external dependency to handle the call.</param>
+        <param name="resultCode">Result code of dependency call execution.</param>
+        <param name="success">True if the dependency call was handled successfully.</param>
+        <summary>
+            Send information about an external dependency (outgoing call) in the application.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,7 +230,7 @@
       <MemberSignature Language="C#" Value="public void TrackEvent (string eventName, System.Collections.Generic.IDictionary&lt;string,string&gt; properties = default, System.Collections.Generic.IDictionary&lt;string,double&gt; metrics = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void TrackEvent(string eventName, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; properties, class System.Collections.Generic.IDictionary`2&lt;string, float64&gt; metrics) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.NullBotTelemetryClient.TrackEvent(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub TrackEvent (eventName As String, Optional properties As IDictionary(Of String, String) = null, Optional metrics As IDictionary(Of String, Double) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TrackEvent (eventName As String, Optional properties As IDictionary(Of String, String) = Nothing, Optional metrics As IDictionary(Of String, Double) = Nothing)" />
       <MemberSignature Language="F#" Value="abstract member TrackEvent : string * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Collections.Generic.IDictionary&lt;string, double&gt; -&gt; unit&#xA;override this.TrackEvent : string * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Collections.Generic.IDictionary&lt;string, double&gt; -&gt; unit" Usage="nullBotTelemetryClient.TrackEvent (eventName, properties, metrics)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -218,6 +245,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -228,10 +257,12 @@
         <Parameter Name="metrics" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="eventName">To be added.</param>
-        <param name="properties">To be added.</param>
-        <param name="metrics">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="eventName">A name for the event.</param>
+        <param name="properties">Named string values you can use to search and classify events.</param>
+        <param name="metrics">Measurements associated with this event.</param>
+        <summary>
+            Logs custom events with extensible named fields.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,7 +270,7 @@
       <MemberSignature Language="C#" Value="public void TrackException (Exception exception, System.Collections.Generic.IDictionary&lt;string,string&gt; properties = default, System.Collections.Generic.IDictionary&lt;string,double&gt; metrics = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void TrackException(class System.Exception exception, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; properties, class System.Collections.Generic.IDictionary`2&lt;string, float64&gt; metrics) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.NullBotTelemetryClient.TrackException(System.Exception,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub TrackException (exception As Exception, Optional properties As IDictionary(Of String, String) = null, Optional metrics As IDictionary(Of String, Double) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TrackException (exception As Exception, Optional properties As IDictionary(Of String, String) = Nothing, Optional metrics As IDictionary(Of String, Double) = Nothing)" />
       <MemberSignature Language="F#" Value="abstract member TrackException : Exception * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Collections.Generic.IDictionary&lt;string, double&gt; -&gt; unit&#xA;override this.TrackException : Exception * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Collections.Generic.IDictionary&lt;string, double&gt; -&gt; unit" Usage="nullBotTelemetryClient.TrackException (exception, properties, metrics)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -254,6 +285,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -264,10 +297,12 @@
         <Parameter Name="metrics" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="exception">To be added.</param>
-        <param name="properties">To be added.</param>
-        <param name="metrics">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="exception">The exception to log.</param>
+        <param name="properties">Named string values you can use to classify and search for this exception.</param>
+        <param name="metrics">Additional values associated with this exception.</param>
+        <summary>
+            Logs a system exception.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -275,7 +310,7 @@
       <MemberSignature Language="C#" Value="public void TrackPageView (string dialogName, System.Collections.Generic.IDictionary&lt;string,string&gt; properties = default, System.Collections.Generic.IDictionary&lt;string,double&gt; metrics = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void TrackPageView(string dialogName, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; properties, class System.Collections.Generic.IDictionary`2&lt;string, float64&gt; metrics) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.NullBotTelemetryClient.TrackPageView(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Double})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub TrackPageView (dialogName As String, Optional properties As IDictionary(Of String, String) = null, Optional metrics As IDictionary(Of String, Double) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TrackPageView (dialogName As String, Optional properties As IDictionary(Of String, String) = Nothing, Optional metrics As IDictionary(Of String, Double) = Nothing)" />
       <MemberSignature Language="F#" Value="abstract member TrackPageView : string * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Collections.Generic.IDictionary&lt;string, double&gt; -&gt; unit&#xA;override this.TrackPageView : string * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Collections.Generic.IDictionary&lt;string, double&gt; -&gt; unit" Usage="nullBotTelemetryClient.TrackPageView (dialogName, properties, metrics)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -286,6 +321,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -296,10 +333,12 @@
         <Parameter Name="metrics" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="dialogName">To be added.</param>
-        <param name="properties">To be added.</param>
-        <param name="metrics">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dialogName">The name of the dialog to log the entry / start for.</param>
+        <param name="properties">Named string values you can use to search and classify events.</param>
+        <param name="metrics">Measurements associated with this event.</param>
+        <summary>
+            Logs an Application Insights page view.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -322,6 +361,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -332,10 +373,12 @@
         <Parameter Name="properties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="severityLevel">To be added.</param>
-        <param name="properties">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">Message to display.</param>
+        <param name="severityLevel">Trace severity level <see cref="T:Microsoft.Bot.Builder.Severity" />.</param>
+        <param name="properties">Named string values you can use to search and classify events.</param>
+        <summary>
+            Send a trace message.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

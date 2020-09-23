@@ -12,6 +12,8 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -43,6 +45,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="telemetryClient" Type="Microsoft.Bot.Builder.IBotTelemetryClient" />
@@ -61,7 +65,7 @@
       <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string,string&gt;&gt; FillDeleteEventPropertiesAsync (Microsoft.Bot.Schema.IMessageDeleteActivity activity, System.Collections.Generic.Dictionary&lt;string,string&gt; additionalProperties = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.Dictionary`2&lt;string, string&gt;&gt; FillDeleteEventPropertiesAsync(class Microsoft.Bot.Schema.IMessageDeleteActivity activity, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; additionalProperties) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TelemetryLoggerMiddleware.FillDeleteEventPropertiesAsync(Microsoft.Bot.Schema.IMessageDeleteActivity,System.Collections.Generic.Dictionary{System.String,System.String})" />
-      <MemberSignature Language="VB.NET" Value="Protected Function FillDeleteEventPropertiesAsync (activity As IMessageDeleteActivity, Optional additionalProperties As Dictionary(Of String, String) = null) As Task(Of Dictionary(Of String, String))" />
+      <MemberSignature Language="VB.NET" Value="Protected Function FillDeleteEventPropertiesAsync (activity As IMessageDeleteActivity, Optional additionalProperties As Dictionary(Of String, String) = Nothing) As Task(Of Dictionary(Of String, String))" />
       <MemberSignature Language="F#" Value="member this.FillDeleteEventPropertiesAsync : Microsoft.Bot.Schema.IMessageDeleteActivity * System.Collections.Generic.Dictionary&lt;string, string&gt; -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string, string&gt;&gt;" Usage="telemetryLoggerMiddleware.FillDeleteEventPropertiesAsync (activity, additionalProperties)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -72,6 +76,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;&gt;</ReturnType>
@@ -94,7 +100,7 @@
       <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string,string&gt;&gt; FillReceiveEventPropertiesAsync (Microsoft.Bot.Schema.Activity activity, System.Collections.Generic.Dictionary&lt;string,string&gt; additionalProperties = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.Dictionary`2&lt;string, string&gt;&gt; FillReceiveEventPropertiesAsync(class Microsoft.Bot.Schema.Activity activity, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; additionalProperties) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TelemetryLoggerMiddleware.FillReceiveEventPropertiesAsync(Microsoft.Bot.Schema.Activity,System.Collections.Generic.Dictionary{System.String,System.String})" />
-      <MemberSignature Language="VB.NET" Value="Protected Function FillReceiveEventPropertiesAsync (activity As Activity, Optional additionalProperties As Dictionary(Of String, String) = null) As Task(Of Dictionary(Of String, String))" />
+      <MemberSignature Language="VB.NET" Value="Protected Function FillReceiveEventPropertiesAsync (activity As Activity, Optional additionalProperties As Dictionary(Of String, String) = Nothing) As Task(Of Dictionary(Of String, String))" />
       <MemberSignature Language="F#" Value="member this.FillReceiveEventPropertiesAsync : Microsoft.Bot.Schema.Activity * System.Collections.Generic.Dictionary&lt;string, string&gt; -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string, string&gt;&gt;" Usage="telemetryLoggerMiddleware.FillReceiveEventPropertiesAsync (activity, additionalProperties)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -105,6 +111,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;&gt;</ReturnType>
@@ -129,7 +137,7 @@
       <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string,string&gt;&gt; FillSendEventPropertiesAsync (Microsoft.Bot.Schema.Activity activity, System.Collections.Generic.Dictionary&lt;string,string&gt; additionalProperties = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.Dictionary`2&lt;string, string&gt;&gt; FillSendEventPropertiesAsync(class Microsoft.Bot.Schema.Activity activity, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; additionalProperties) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TelemetryLoggerMiddleware.FillSendEventPropertiesAsync(Microsoft.Bot.Schema.Activity,System.Collections.Generic.Dictionary{System.String,System.String})" />
-      <MemberSignature Language="VB.NET" Value="Protected Function FillSendEventPropertiesAsync (activity As Activity, Optional additionalProperties As Dictionary(Of String, String) = null) As Task(Of Dictionary(Of String, String))" />
+      <MemberSignature Language="VB.NET" Value="Protected Function FillSendEventPropertiesAsync (activity As Activity, Optional additionalProperties As Dictionary(Of String, String) = Nothing) As Task(Of Dictionary(Of String, String))" />
       <MemberSignature Language="F#" Value="member this.FillSendEventPropertiesAsync : Microsoft.Bot.Schema.Activity * System.Collections.Generic.Dictionary&lt;string, string&gt; -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string, string&gt;&gt;" Usage="telemetryLoggerMiddleware.FillSendEventPropertiesAsync (activity, additionalProperties)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -140,6 +148,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;&gt;</ReturnType>
@@ -164,7 +174,7 @@
       <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string,string&gt;&gt; FillUpdateEventPropertiesAsync (Microsoft.Bot.Schema.Activity activity, System.Collections.Generic.Dictionary&lt;string,string&gt; additionalProperties = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.Dictionary`2&lt;string, string&gt;&gt; FillUpdateEventPropertiesAsync(class Microsoft.Bot.Schema.Activity activity, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; additionalProperties) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TelemetryLoggerMiddleware.FillUpdateEventPropertiesAsync(Microsoft.Bot.Schema.Activity,System.Collections.Generic.Dictionary{System.String,System.String})" />
-      <MemberSignature Language="VB.NET" Value="Protected Function FillUpdateEventPropertiesAsync (activity As Activity, Optional additionalProperties As Dictionary(Of String, String) = null) As Task(Of Dictionary(Of String, String))" />
+      <MemberSignature Language="VB.NET" Value="Protected Function FillUpdateEventPropertiesAsync (activity As Activity, Optional additionalProperties As Dictionary(Of String, String) = Nothing) As Task(Of Dictionary(Of String, String))" />
       <MemberSignature Language="F#" Value="member this.FillUpdateEventPropertiesAsync : Microsoft.Bot.Schema.Activity * System.Collections.Generic.Dictionary&lt;string, string&gt; -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;string, string&gt;&gt;" Usage="telemetryLoggerMiddleware.FillUpdateEventPropertiesAsync (activity, additionalProperties)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -175,6 +185,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;&gt;</ReturnType>
@@ -209,6 +221,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -240,6 +254,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -277,6 +293,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -314,6 +332,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -354,6 +374,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -392,6 +414,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -429,10 +453,13 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonIgnore</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonIgnore]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonIgnore&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

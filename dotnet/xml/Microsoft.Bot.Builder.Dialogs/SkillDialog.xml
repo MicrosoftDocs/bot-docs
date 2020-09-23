@@ -9,6 +9,8 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Dialog</BaseTypeName>
@@ -28,7 +30,7 @@
       <MemberSignature Language="C#" Value="public SkillDialog (Microsoft.Bot.Builder.Dialogs.SkillDialogOptions dialogOptions, string dialogId = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.SkillDialogOptions dialogOptions, string dialogId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.SkillDialog.#ctor(Microsoft.Bot.Builder.Dialogs.SkillDialogOptions,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (dialogOptions As SkillDialogOptions, Optional dialogId As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dialogOptions As SkillDialogOptions, Optional dialogId As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.SkillDialog : Microsoft.Bot.Builder.Dialogs.SkillDialogOptions * string -&gt; Microsoft.Bot.Builder.Dialogs.SkillDialog" Usage="new Microsoft.Bot.Builder.Dialogs.SkillDialog (dialogOptions, dialogId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -36,6 +38,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dialogOptions" Type="Microsoft.Bot.Builder.Dialogs.SkillDialogOptions" />
@@ -52,7 +56,7 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; BeginDialogAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dc, object options = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; BeginDialogAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, object options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.SkillDialog.BeginDialogAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Object,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginDialogAsync (dc As DialogContext, Optional options As Object = null, Optional cancellationToken As CancellationToken = null) As Task(Of DialogTurnResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginDialogAsync (dc As DialogContext, Optional options As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of DialogTurnResult)" />
       <MemberSignature Language="F#" Value="override this.BeginDialogAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;" Usage="skillDialog.BeginDialogAsync (dc, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -60,6 +64,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -82,7 +88,7 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; ContinueDialogAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dc, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; ContinueDialogAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.SkillDialog.ContinueDialogAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function ContinueDialogAsync (dc As DialogContext, Optional cancellationToken As CancellationToken = null) As Task(Of DialogTurnResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ContinueDialogAsync (dc As DialogContext, Optional cancellationToken As CancellationToken = Nothing) As Task(Of DialogTurnResult)" />
       <MemberSignature Language="F#" Value="override this.ContinueDialogAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;" Usage="skillDialog.ContinueDialogAsync (dc, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -90,6 +96,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -118,6 +126,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.SkillDialogOptions</ReturnType>
@@ -132,7 +142,7 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task EndDialogAsync (Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Builder.Dialogs.DialogInstance instance, Microsoft.Bot.Builder.Dialogs.DialogReason reason, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task EndDialogAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class Microsoft.Bot.Builder.Dialogs.DialogInstance instance, valuetype Microsoft.Bot.Builder.Dialogs.DialogReason reason, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.SkillDialog.EndDialogAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.Dialogs.DialogInstance,Microsoft.Bot.Builder.Dialogs.DialogReason,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function EndDialogAsync (turnContext As ITurnContext, instance As DialogInstance, reason As DialogReason, Optional cancellationToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function EndDialogAsync (turnContext As ITurnContext, instance As DialogInstance, reason As DialogReason, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="override this.EndDialogAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.Dialogs.DialogInstance * Microsoft.Bot.Builder.Dialogs.DialogReason * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="skillDialog.EndDialogAsync (turnContext, instance, reason, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -140,6 +150,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -171,6 +183,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -195,7 +209,7 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task RepromptDialogAsync (Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Builder.Dialogs.DialogInstance instance, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task RepromptDialogAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class Microsoft.Bot.Builder.Dialogs.DialogInstance instance, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.SkillDialog.RepromptDialogAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.Dialogs.DialogInstance,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function RepromptDialogAsync (turnContext As ITurnContext, instance As DialogInstance, Optional cancellationToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function RepromptDialogAsync (turnContext As ITurnContext, instance As DialogInstance, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="override this.RepromptDialogAsync : Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Builder.Dialogs.DialogInstance * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="skillDialog.RepromptDialogAsync (turnContext, instance, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -203,6 +217,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -225,7 +241,7 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; ResumeDialogAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dc, Microsoft.Bot.Builder.Dialogs.DialogReason reason, object result = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt; ResumeDialogAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dc, valuetype Microsoft.Bot.Builder.Dialogs.DialogReason reason, object result, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.SkillDialog.ResumeDialogAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Builder.Dialogs.DialogReason,System.Object,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function ResumeDialogAsync (dc As DialogContext, reason As DialogReason, Optional result As Object = null, Optional cancellationToken As CancellationToken = null) As Task(Of DialogTurnResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ResumeDialogAsync (dc As DialogContext, reason As DialogReason, Optional result As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of DialogTurnResult)" />
       <MemberSignature Language="F#" Value="override this.ResumeDialogAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Builder.Dialogs.DialogReason * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;" Usage="skillDialog.ResumeDialogAsync (dc, reason, result, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -233,6 +249,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>

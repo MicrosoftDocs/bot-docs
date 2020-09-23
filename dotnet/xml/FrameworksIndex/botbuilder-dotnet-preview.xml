@@ -1,531 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Framework Name="botbuilder-dotnet-preview">
   <Assemblies>
-    <Assembly Name="Microsoft.Bot.Builder.Adapters.Facebook" Version="4.9.2.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Adapters.Slack" Version="4.9.2.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Adapters.Twilio" Version="4.9.2.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Adapters.Webex" Version="4.9.2.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing" Version="4.9.2.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Dialogs.Debugging" Version="4.9.2.0" />
+    <Assembly Name="Microsoft.Bot.Builder.AI.Orchestrator" Version="4.10.3.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Azure.Queues" Version="4.10.3.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing" Version="4.10.3.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Dialogs.Debugging" Version="4.10.3.0" />
   </Assemblies>
-  <Namespace Name="Microsoft.Bot.Builder.Adapters.Facebook">
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapter" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapter">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapter.#ctor(Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper,Microsoft.Extensions.Logging.ILogger)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapter.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapter.ContinueConversationAsync(Microsoft.Bot.Schema.ConversationReference,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapter.ContinueConversationAsync(System.Security.Claims.ClaimsIdentity,Microsoft.Bot.Schema.ConversationReference,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapter.DeleteActivityAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.ConversationReference,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapter.ProcessAsync(Microsoft.AspNetCore.Http.HttpRequest,Microsoft.AspNetCore.Http.HttpResponse,Microsoft.Bot.Builder.IBot,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapter.SendActivitiesAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.Activity[],System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapter.UpdateActivityAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions.#ctor(System.String,System.String,System.String,System.String,System.String)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions.GetAccessTokenForPageAsync(System.String)" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions.FacebookAccessToken" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions.FacebookApiHost" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions.FacebookApiVersion" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions.FacebookAppSecret" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions.FacebookVerifyToken" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.#ctor(Microsoft.Bot.Builder.Adapters.Facebook.FacebookAdapterOptions)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.GetAppSecretProof" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.PassThreadControlAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.PostToFacebookApiAsync(System.String,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.RequestThreadControlAsync(System.String,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.SendMessageAsync(System.String,Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage,System.Net.Http.HttpMethod,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.TakeThreadControlAsync(System.String,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.VerifySignature(Microsoft.AspNetCore.Http.HttpRequest,System.String)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookClientWrapper.VerifyWebhookAsync(Microsoft.AspNetCore.Http.HttpRequest,Microsoft.AspNetCore.Http.HttpResponse,System.Threading.CancellationToken)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookHelper" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookHelper">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookHelper.ActivityToFacebook(Microsoft.Bot.Schema.Activity)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookHelper.GenerateTypingActivity(System.String)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookHelper.HandleMessageAttachments(Microsoft.Bot.Builder.Adapters.Facebook.Message)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookHelper.ProcessSingleMessage(Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookHelper.WriteAsync(Microsoft.AspNetCore.Http.HttpResponse,System.Net.HttpStatusCode,System.String,System.Text.Encoding,System.Threading.CancellationToken)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.#ctor(System.String,Microsoft.Bot.Builder.Adapters.Facebook.Message,System.String,System.String,System.String,System.String,System.String,System.String)" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.IsStandby" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.Message" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.MessagingType" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.NotificationType" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.OptIn" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.PassThreadControl" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.PersonaId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.PostBack" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.Recipient" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.RequestThreadControl" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.Sender" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.SenderAction" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.Tag" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.TakeThreadControl" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookMessage.TimeStamp" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.Message" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.Message">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.Message.#ctor" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.Message.ShouldSerializeAttachments" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.Message.ShouldSerializeIsEcho" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.Message.ShouldSerializeQuickReplies" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.Message.Attachment" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.Message.Attachments" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.Message.IsEcho" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.Message.Metadata" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.Message.Mid" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.Message.QuickReplies" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.Message.StickerId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.Message.Text" />
-    </Type>
-  </Namespace>
-  <Namespace Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents">
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.AttachmentPayload" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.AttachmentPayload">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.AttachmentPayload.#ctor" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.AttachmentPayload.ShouldSerializeButtons" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.AttachmentPayload.ShouldSerializeElements" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.AttachmentPayload.ShouldSerializeIsReusable" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.AttachmentPayload.AttachmentId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.AttachmentPayload.Buttons" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.AttachmentPayload.Elements" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.AttachmentPayload.IsReusable" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.AttachmentPayload.TemplateType" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.AttachmentPayload.Text" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.AttachmentPayload.Url" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookAttachment" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookAttachment">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookAttachment.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookAttachment.Payload" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookAttachment.Type" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookBotUser" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookBotUser">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookBotUser.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookBotUser.Id" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry.#ctor" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry.ShouldSerializeChanges" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry.ShouldSerializeMessaging" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry.ShouldSerializeStandby" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry.Changes" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry.Id" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry.Messaging" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry.Standby" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookEntry.Time" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookPostBack" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookPostBack">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookPostBack.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookPostBack.Payload" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookPostBack.Referral" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookPostBack.Title" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookQuickReply" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookQuickReply">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookQuickReply.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookQuickReply.ContentType" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookQuickReply.ImageUrl" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookQuickReply.Payload" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookQuickReply.Title" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookRecipient" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookRecipient">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookRecipient.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookRecipient.CommentId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookRecipient.Id" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookRecipient.PostId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookRecipient.UserRef" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookResponseEvent" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookResponseEvent">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookResponseEvent.#ctor" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookResponseEvent.ShouldSerializeEntry" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookResponseEvent.Entry" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookResponseEvent.ResponseObject" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookResponseOk" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookResponseOk">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookResponseOk.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookResponseOk.MessageId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.FacebookResponseOk.RecipientId" />
-    </Type>
-  </Namespace>
-  <Namespace Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover">
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookPassThreadControl" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookPassThreadControl">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookPassThreadControl.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookPassThreadControl.NewOwnerAppId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookPassThreadControl.PreviousOwnerAppId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookPassThreadControl.RequestedOwnerAppId" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookRequestThreadControl" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookRequestThreadControl">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookRequestThreadControl.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookRequestThreadControl.RequestedOwnerAppId" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookTakeThreadControl" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookTakeThreadControl">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookTakeThreadControl.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookTakeThreadControl.PreviousOwnerAppId" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookThreadControl" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookThreadControl">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookThreadControl.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.FacebookThreadControl.Metadata" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants">
-      <Member Id="F:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants.MetadataPassThreadControl" />
-      <Member Id="F:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants.MetadataRequestThreadControl" />
-      <Member Id="F:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants.MetadataTakeThreadControl" />
-      <Member Id="F:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants.PageInboxId" />
-      <Member Id="F:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants.PassThreadControl" />
-      <Member Id="F:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants.RequestThreadControl" />
-      <Member Id="F:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Handover.HandoverConstants.TakeThreadControl" />
-    </Type>
-  </Namespace>
-  <Namespace Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates">
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Button" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Button">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Button.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Button.Payload" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Button.Title" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Button.Type" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Button.Url" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.DefaultAction" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.DefaultAction">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.DefaultAction.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.DefaultAction.ActionType" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.DefaultAction.ActionUrl" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.DefaultAction.MessengerExtensions" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.DefaultAction.WebviewHeightRatio" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element" Id="T:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.#ctor" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.ShouldSerializeButtons" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.Buttons" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.DefaultAction" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.ImageUrl" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.MediaType" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.Subtitle" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.Title" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Facebook.FacebookEvents.Templates.Element.Url" />
-    </Type>
-  </Namespace>
-  <Namespace Name="Microsoft.Bot.Builder.Adapters.Slack">
-    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.ActivityResourceResponse" Id="T:Microsoft.Bot.Builder.Adapters.Slack.ActivityResourceResponse">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.ActivityResourceResponse.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.ActivityResourceResponse.ActivityId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.ActivityResourceResponse.Conversation" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage" Id="T:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage.AsUser" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage.Attachments" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage.Blocks" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage.BotId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage.Channel" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage.Ephemeral" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage.IconEmoji" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage.Icons" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage.IconUrl" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage.Team" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage.Text" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage.ThreadTs" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage.Ts" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage.User" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage.Username" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.SlackAction" Id="T:Microsoft.Bot.Builder.Adapters.Slack.SlackAction">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAction.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAction.ActionId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAction.ActionTs" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAction.BlockId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAction.Text" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAction.Type" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAction.Value" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter" Id="T:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter.#ctor(Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper,Microsoft.Extensions.Logging.ILogger)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter.ContinueConversationAsync(Microsoft.Bot.Schema.ConversationReference,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter.ContinueConversationAsync(System.Security.Claims.ClaimsIdentity,Microsoft.Bot.Schema.ConversationReference,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter.DeleteActivityAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.ConversationReference,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter.ProcessAsync(Microsoft.AspNetCore.Http.HttpRequest,Microsoft.AspNetCore.Http.HttpResponse,Microsoft.Bot.Builder.IBot,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter.SendActivitiesAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.Activity[],System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter.UpdateActivityAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter.SlackClientWrapper" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions" Id="T:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.#ctor(System.String,System.String,System.String)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.GetBotUserByTeamAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.GetTokenForTeamAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.SlackBotToken" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.SlackClientId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.SlackClientSecret" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.SlackClientSigningSecret" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.SlackRedirectUri" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.SlackScopes" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions.SlackVerificationToken" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper" Id="T:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.#ctor(Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.AddReactionAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.ApiRequestWithTokenAsync``1(System.Threading.CancellationToken,System.Tuple{System.String,System.String}[])" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.ChannelsCreateAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.ChannelSetTopicAsync(System.String,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.ChannelsInviteAsync(System.String,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.ConnectAsync(System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.DeleteMessageAsync(System.String,System.DateTime,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.DialogOpenAsync(System.String,SlackAPI.Dialog,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.EmitLoginAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.EmitPresence(SlackAPI.Presence,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetBotUserByTeamAsync(Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetChannelHistoryAsync(SlackAPI.Channel,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetChannelListAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetCountsAsync(System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetDirectMessageHistoryAsync(SlackAPI.DirectMessageConversation,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetDirectMessageListAsync(System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetFileInfoAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetFilesAsync(System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Int32},System.Nullable{System.Int32},SlackAPI.FileTypes,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetGroupHistoryAsync(SlackAPI.Channel,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetGroupsListAsync(System.Boolean,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetPreferencesAsync(System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetStarsAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GetUserListAsync(System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsArchiveAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsCloseAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsCreateAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsCreateChildAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsInviteAsync(System.String,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsKickAsync(System.String,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsLeaveAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsMarkAsync(System.String,System.DateTime,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsOpenAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsRenameAsync(System.String,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsSetPurposeAsync(System.String,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsSetTopicAsync(System.String,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.GroupsUnarchiveAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.JoinDirectMessageChannelAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.LoginWithSlackAsync(System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.MarkChannelAsync(System.String,System.DateTime,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.PostEphemeralMessageAsync(System.String,System.String,System.String,System.String,System.Boolean,SlackAPI.Attachment[],System.Boolean,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.PostMessageAsync(Microsoft.Bot.Builder.Adapters.Slack.NewSlackMessage,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.PostMessageAsync(System.String,System.String,System.String,System.String,System.Boolean,SlackAPI.IBlock[],SlackAPI.Attachment[],System.Boolean,System.Uri,System.String,System.Boolean,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.SearchAllAsync(System.String,System.String,System.Nullable{SlackAPI.SearchSortDirection},System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.SearchFilesAsync(System.String,System.String,System.Nullable{SlackAPI.SearchSortDirection},System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.SearchMessagesAsync(System.String,System.String,System.Nullable{SlackAPI.SearchSortDirection},System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.TestAuthAsync(System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.UpdateAsync(System.String,System.String,System.String,System.String,System.String,System.Boolean,SlackAPI.Attachment[],System.Boolean,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.UploadFileAsync(System.Byte[],System.String,System.String[],System.String,System.String,System.Boolean,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.VerifySignature(Microsoft.AspNetCore.Http.HttpRequest,System.String)" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.Identity" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper.Options" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.SlackEvent" Id="T:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.Actions" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.BotId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.Channel" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.ChannelId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.ChannelType" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.ClientMsgId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.EventTs" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.Files" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.Item" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.ItemChannel" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.Message" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.SubType" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.Team" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.Text" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.ThreadTs" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.TimeStamp" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.Type" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.User" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackEvent.UserId" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.SlackMessage" Id="T:Microsoft.Bot.Builder.Adapters.Slack.SlackMessage">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackMessage.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackMessage.BotId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackMessage.Subtype" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackMessage.Text" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackMessage.ThreadTS" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackMessage.Ts" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackMessage.Type" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackMessage.Username" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.SlackPayload" Id="T:Microsoft.Bot.Builder.Adapters.Slack.SlackPayload">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackPayload.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackPayload.Actions" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackPayload.ActionTs" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackPayload.CallbackId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackPayload.Channel" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackPayload.Message" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackPayload.ResponseUrl" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackPayload.State" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackPayload.Submission" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackPayload.Team" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackPayload.ThreadTs" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackPayload.Token" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackPayload.TriggerId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackPayload.Type" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackPayload.User" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody" Id="T:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody.ApiAppId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody.AuthedUsers" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody.Challenge" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody.ChannelId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody.Command" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody.Event" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody.EventId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody.EventTime" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody.Payload" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody.TeamId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody.Text" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody.Token" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody.TriggerId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody.Type" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackRequestBody.UserId" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Slack.SlackResponse" Id="T:Microsoft.Bot.Builder.Adapters.Slack.SlackResponse">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Slack.SlackResponse.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackResponse.Channel" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackResponse.Message" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackResponse.Ok" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Slack.SlackResponse.Ts" />
-    </Type>
-  </Namespace>
-  <Namespace Name="Microsoft.Bot.Builder.Adapters.Twilio">
-    <Type Name="Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapter" Id="T:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapter">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapter.#ctor(Microsoft.Bot.Builder.Adapters.Twilio.TwilioClientWrapper,Microsoft.Extensions.Logging.ILogger)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapter.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapter.ContinueConversationAsync(Microsoft.Bot.Schema.ConversationReference,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapter.ContinueConversationAsync(System.Security.Claims.ClaimsIdentity,Microsoft.Bot.Schema.ConversationReference,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapter.DeleteActivityAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.ConversationReference,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapter.ProcessAsync(Microsoft.AspNetCore.Http.HttpRequest,Microsoft.AspNetCore.Http.HttpResponse,Microsoft.Bot.Builder.IBot,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapter.SendActivitiesAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.Activity[],System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapter.UpdateActivityAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions" Id="T:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions.#ctor(System.String,System.String,System.String,System.Uri)" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions.TwilioAccountSid" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions.TwilioAuthToken" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions.TwilioNumber" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions.TwilioValidationUrl" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Twilio.TwilioClientWrapper" Id="T:Microsoft.Bot.Builder.Adapters.Twilio.TwilioClientWrapper">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioClientWrapper.#ctor(Microsoft.Bot.Builder.Adapters.Twilio.TwilioAdapterOptions)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioClientWrapper.SendMessage(Twilio.Rest.Api.V2010.Account.CreateMessageOptions,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioClientWrapper.ValidateSignature(Microsoft.AspNetCore.Http.HttpRequest,System.Collections.Generic.Dictionary{System.String,System.String})" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioClientWrapper.Options" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessage" Id="T:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessage">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessage.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessage.AccountSid" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessage.ApiVersion" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessage.Author" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessage.Body" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessage.EventType" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessage.From" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessage.FromCity" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessage.FromCountry" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessage.FromState" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessage.FromZip" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessage.MediaContentTypes" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessage.MediaUrls" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessage.MessageSid" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessage.NumMedia" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessage.NumSegments" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessage.SmsMessageSid" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessage.SmsSid" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessage.SmsStatus" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessage.To" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessage.ToCity" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessage.ToCountry" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessage.ToState" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Twilio.TwilioMessage.ToZip" />
-    </Type>
-  </Namespace>
-  <Namespace Name="Microsoft.Bot.Builder.Adapters.Webex">
-    <Type Name="Microsoft.Bot.Builder.Adapters.Webex.AttachmentActionData" Id="T:Microsoft.Bot.Builder.Adapters.Webex.AttachmentActionData">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.AttachmentActionData.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Webex.AttachmentActionData.Created" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Webex.AttachmentActionData.Id" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Webex.AttachmentActionData.Inputs" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Webex.AttachmentActionData.MessageId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Webex.AttachmentActionData.PersonId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Webex.AttachmentActionData.Type" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter" Id="T:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter.#ctor(Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper,Microsoft.Extensions.Logging.ILogger)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter.ContinueConversationAsync(Microsoft.Bot.Schema.ConversationReference,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter.ContinueConversationAsync(System.Security.Claims.ClaimsIdentity,Microsoft.Bot.Schema.ConversationReference,Microsoft.Bot.Builder.BotCallbackHandler,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter.DeleteActivityAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.ConversationReference,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter.ProcessAsync(Microsoft.AspNetCore.Http.HttpRequest,Microsoft.AspNetCore.Http.HttpResponse,Microsoft.Bot.Builder.IBot,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter.SendActivitiesAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.Activity[],System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapter.UpdateActivityAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions" Id="T:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions.#ctor(System.String,System.Uri,System.String,System.String)" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions.WebexAccessToken" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions.WebexPublicAddress" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions.WebexSecret" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions.WebexWebhookName" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper" Id="T:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.#ctor(Microsoft.Bot.Builder.Adapters.Webex.WebexAdapterOptions)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.ActivateWebhookAsync(Thrzn41.WebexTeams.Version1.Webhook,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.CreateAdaptiveCardsWebhookAsync(System.String,System.Uri,Thrzn41.WebexTeams.Version1.EventType,System.String,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.CreateDirectMessageAsync(System.String,System.String,System.Collections.Generic.IList{System.Uri},System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.CreateMessageAsync(System.String,System.String,System.Collections.Generic.IList{System.Uri},Thrzn41.WebexTeams.Version1.MessageTextType,Thrzn41.WebexTeams.Version1.MessageTarget,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.CreateMessageWithAttachmentsAsync(System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Schema.Attachment},Thrzn41.WebexTeams.Version1.MessageTextType,Thrzn41.WebexTeams.Version1.MessageTarget,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.CreateSpaceAsync(System.String,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.CreateSpaceMembershipAsync(System.String,System.String,System.Nullable{System.Boolean},Thrzn41.WebexTeams.Version1.PersonIdType,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.CreateTeamAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.CreateTeamMembershipAsync(System.String,System.String,System.Nullable{System.Boolean},Thrzn41.WebexTeams.Version1.PersonIdType,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.CreateWebhookAsync(System.String,System.Uri,Thrzn41.WebexTeams.Version1.EventResource,Thrzn41.WebexTeams.Version1.EventType,System.Collections.Generic.IEnumerable{Thrzn41.WebexTeams.Version1.EventFilter},System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.DeleteMessageAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.DeleteSpaceAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.DeleteSpaceMembershipAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.DeleteTeamAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.DeleteTeamMembershipAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.DeleteWebhookAsync(Thrzn41.WebexTeams.Version1.Webhook,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.GetAttachmentActionAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.GetFileDataAsync(System.Uri,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.GetFileInfoAsync(System.Uri,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.GetMeAsync(System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.GetMeFromCacheAsync(System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.GetMessageAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.GetSpaceAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.GetSpaceMembershipAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.GetTeamAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.GetTeamMembershipAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.GetWebhookAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.ListMessagesAsync(System.String,System.String,System.Nullable{System.DateTime},System.String,System.Nullable{System.Int32},System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.ListPeopleAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Int32},System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.ListSpaceMembershipsAsync(System.String,System.String,System.Nullable{System.Int32},Thrzn41.WebexTeams.Version1.PersonIdType,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.ListSpacesAsync(System.String,Thrzn41.WebexTeams.Version1.SpaceType,Thrzn41.WebexTeams.Version1.SpaceSortBy,System.Nullable{System.Int32},System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.ListTeamMembershipsAsync(System.String,System.Nullable{System.Int32},System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.ListTeamsAsync(System.Nullable{System.Int32},System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.ListWebhooksAsync(System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.ListWebhookSubscriptionsAsync(System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.RegisterAdaptiveCardsWebhookSubscriptionAsync(System.String,System.String,System.Uri,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.RegisterWebhookSubscriptionAsync(System.String,System.String,System.Uri,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.RegisterWebhookSubscriptionsAsync(System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.ResetWebhookSubscriptionsAsync(System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.UpdateAdaptiveCardsWebhookAsync(System.String,System.String,System.Uri,System.String,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.UpdateSpaceAsync(System.String,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.UpdateSpaceMembershipAsync(System.String,System.Boolean,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.UpdateTeamAsync(System.String,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.UpdateTeamMembershipAsync(System.String,System.Boolean,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.UpdateWebhookAsync(System.String,System.String,System.Uri,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.ValidateSignature(Microsoft.AspNetCore.Http.HttpRequest,System.String)" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Webex.WebexClientWrapper.Options" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Adapters.Webex.WebexMessageRequest" Id="T:Microsoft.Bot.Builder.Adapters.Webex.WebexMessageRequest">
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexMessageRequest.#ctor" />
-      <Member Id="M:Microsoft.Bot.Builder.Adapters.Webex.WebexMessageRequest.ShouldSerializeFiles" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Webex.WebexMessageRequest.Attachments" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Webex.WebexMessageRequest.Files" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Webex.WebexMessageRequest.Markdown" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Webex.WebexMessageRequest.RoomId" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Webex.WebexMessageRequest.Text" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Webex.WebexMessageRequest.ToPersonEmail" />
-      <Member Id="P:Microsoft.Bot.Builder.Adapters.Webex.WebexMessageRequest.ToPersonId" />
-    </Type>
-  </Namespace>
   <Namespace Name="Microsoft.Bot.Builder.AI.Luis.Testing">
     <Type Name="Microsoft.Bot.Builder.AI.Luis.Testing.MockedHttpClientHandler" Id="T:Microsoft.Bot.Builder.AI.Luis.Testing.MockedHttpClientHandler">
       <Member Id="M:Microsoft.Bot.Builder.AI.Luis.Testing.MockedHttpClientHandler.#ctor(System.Net.Http.HttpClient)" />
@@ -542,6 +22,53 @@
     <Type Name="Microsoft.Bot.Builder.AI.Luis.Testing.MockLuisRecognizer" Id="T:Microsoft.Bot.Builder.AI.Luis.Testing.MockLuisRecognizer">
       <Member Id="M:Microsoft.Bot.Builder.AI.Luis.Testing.MockLuisRecognizer.#ctor(Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer,System.String,System.String)" />
       <Member Id="M:Microsoft.Bot.Builder.AI.Luis.Testing.MockLuisRecognizer.RecognizeAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Double})" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Bot.Builder.AI.Orchestrator">
+    <Type Name="Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorAdaptiveRecognizer" Id="T:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorAdaptiveRecognizer">
+      <Member Id="F:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorAdaptiveRecognizer.Kind" />
+      <Member Id="F:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorAdaptiveRecognizer.ResultProperty" />
+      <Member Id="M:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorAdaptiveRecognizer.#ctor(System.String,System.Int32)" />
+      <Member Id="M:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorAdaptiveRecognizer.#ctor(System.String,System.String,Microsoft.BotFramework.Orchestrator.ILabelResolver)" />
+      <Member Id="M:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorAdaptiveRecognizer.RecognizeAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Double})" />
+      <Member Id="P:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorAdaptiveRecognizer.DetectAmbiguousIntents" />
+      <Member Id="P:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorAdaptiveRecognizer.DisambiguationScoreThreshold" />
+      <Member Id="P:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorAdaptiveRecognizer.EntityRecognizers" />
+      <Member Id="P:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorAdaptiveRecognizer.ModelPath" />
+      <Member Id="P:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorAdaptiveRecognizer.SnapshotPath" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorComponentRegistration" Id="T:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorComponentRegistration">
+      <Member Id="M:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorComponentRegistration.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorComponentRegistration.GetConverters(Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer,Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext)" />
+      <Member Id="M:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorComponentRegistration.GetDeclarativeTypes(Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer" Id="T:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer">
+      <Member Id="M:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer.RecognizeAsync(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer.RecognizeAsync``1(Microsoft.Bot.Builder.ITurnContext,System.Threading.CancellationToken)" />
+      <Member Id="P:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer.DetectAmbiguousIntents" />
+      <Member Id="P:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer.DisambiguationScoreThreshold" />
+      <Member Id="P:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer.EntityRecognizers" />
+      <Member Id="P:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer.Id" />
+      <Member Id="P:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer.ModelPath" />
+      <Member Id="P:Microsoft.Bot.Builder.AI.Orchestrator.OrchestratorRecognizer.SnapshotPath" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Bot.Builder.Azure.Queues">
+    <Type Name="Microsoft.Bot.Builder.Azure.Queues.ContinueConversationLater" Id="T:Microsoft.Bot.Builder.Azure.Queues.ContinueConversationLater">
+      <Member Id="F:Microsoft.Bot.Builder.Azure.Queues.ContinueConversationLater.Kind" />
+      <Member Id="M:Microsoft.Bot.Builder.Azure.Queues.ContinueConversationLater.#ctor(System.String,System.Int32)" />
+      <Member Id="M:Microsoft.Bot.Builder.Azure.Queues.ContinueConversationLater.BeginDialogAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Bot.Builder.Azure.Queues.ContinueConversationLater.OnComputeId" />
+      <Member Id="P:Microsoft.Bot.Builder.Azure.Queues.ContinueConversationLater.ConnectionString" />
+      <Member Id="P:Microsoft.Bot.Builder.Azure.Queues.ContinueConversationLater.Date" />
+      <Member Id="P:Microsoft.Bot.Builder.Azure.Queues.ContinueConversationLater.Disabled" />
+      <Member Id="P:Microsoft.Bot.Builder.Azure.Queues.ContinueConversationLater.QueueName" />
+      <Member Id="P:Microsoft.Bot.Builder.Azure.Queues.ContinueConversationLater.Value" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Azure.Queues.QueuesStorage" Id="T:Microsoft.Bot.Builder.Azure.Queues.QueuesStorage">
+      <Member Id="M:Microsoft.Bot.Builder.Azure.Queues.QueuesStorage.#ctor(System.String,System.String,Newtonsoft.Json.JsonSerializerSettings)" />
+      <Member Id="M:Microsoft.Bot.Builder.Azure.Queues.QueuesStorage.QueueActivityAsync(Microsoft.Bot.Schema.Activity,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Threading.CancellationToken)" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.Actions">
@@ -583,8 +110,70 @@
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestScript.Description" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestScript.Dialog" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestScript.EnableTrace" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestScript.HttpRequestMocks" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestScript.Locale" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestScript.PropertyMocks" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestScript.Script" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestScript.UserTokenMocks" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks">
+    <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestMock" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestMock">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestMock.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestMock.RegisterSourcePath(System.String,System.Int32)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestMock.Setup(RichardSzalay.MockHttp.MockHttpMessageHandler)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestSequenceMock" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestSequenceMock">
+      <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestSequenceMock.Kind" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestSequenceMock.#ctor(System.String,System.Int32)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestSequenceMock.Setup(RichardSzalay.MockHttp.MockHttpMessageHandler)" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestSequenceMock.Method" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestSequenceMock.Responses" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestSequenceMock.Url" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMock" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMock">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMock.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMock.Content" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMock.ContentType" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMock/ResponseContentType" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMock.ResponseContentType">
+      <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMock.ResponseContentType.ByteArray" />
+      <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMock.ResponseContentType.String" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMockContent" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMockContent">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMockContent.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMockContent.#ctor(Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMock)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMockContent.GetHttpContent" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.SequenceResponseManager" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.SequenceResponseManager">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.SequenceResponseManager.#ctor(System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMock})" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.SequenceResponseManager.GetContent" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.Mocks">
+    <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.Mocks.MockHttpRequestMiddleware" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.Mocks.MockHttpRequestMiddleware">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.Mocks.MockHttpRequestMiddleware.#ctor(System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestMock})" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.Mocks.MockHttpRequestMiddleware.OnTurnAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.NextDelegate,System.Threading.CancellationToken)" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.PropertyMocks">
+    <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.PropertyMocks.MockSettingsMiddleware" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.PropertyMocks.MockSettingsMiddleware">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.PropertyMocks.MockSettingsMiddleware.#ctor(System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.PropertyMocks.PropertyMock})" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.PropertyMocks.MockSettingsMiddleware.OnTurnAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.NextDelegate,System.Threading.CancellationToken)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.PropertyMocks.PropertiesMock" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.PropertyMocks.PropertiesMock">
+      <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.PropertyMocks.PropertiesMock.Kind" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.PropertyMocks.PropertiesMock.#ctor(System.String,System.Int32)" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.PropertyMocks.PropertiesMock.Assignments" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.PropertyMocks.PropertyAssignment" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.PropertyMocks.PropertyAssignment">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.PropertyMocks.PropertyAssignment.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.PropertyMocks.PropertyAssignment.Property" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.PropertyMocks.PropertyAssignment.Value" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.PropertyMocks.PropertyMock" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.PropertyMocks.PropertyMock">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.PropertyMocks.PropertyMock.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.PropertyMocks.PropertyMock.RegisterSourcePath(System.String,System.Int32)" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestActions">
@@ -648,465 +237,26 @@
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestActions.UserTyping.User" />
     </Type>
   </Namespace>
+  <Namespace Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.UserTokenMocks">
+    <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.UserTokenMocks.UserTokenBasicMock" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.UserTokenMocks.UserTokenBasicMock">
+      <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.UserTokenMocks.UserTokenBasicMock.Kind" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.UserTokenMocks.UserTokenBasicMock.#ctor(System.String,System.Int32)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.UserTokenMocks.UserTokenBasicMock.Setup(Microsoft.Bot.Builder.Adapters.TestAdapter)" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.UserTokenMocks.UserTokenBasicMock.ChannelId" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.UserTokenMocks.UserTokenBasicMock.ConnectionName" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.UserTokenMocks.UserTokenBasicMock.MagicCode" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.UserTokenMocks.UserTokenBasicMock.Token" />
+      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.UserTokenMocks.UserTokenBasicMock.UserId" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.UserTokenMocks.UserTokenMock" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.UserTokenMocks.UserTokenMock">
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.UserTokenMocks.UserTokenMock.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.UserTokenMocks.UserTokenMock.RegisterSourcePath(System.String,System.Int32)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.UserTokenMocks.UserTokenMock.Setup(Microsoft.Bot.Builder.Adapters.TestAdapter)" />
+    </Type>
+  </Namespace>
   <Namespace Name="Microsoft.Bot.Builder.Dialogs.Debugging">
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.CodeModel" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.CodeModel">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.CodeModel.#ctor" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.CodeModel.Microsoft#Bot#Builder#Dialogs#Debugging#ICodeModel#NameFor(System.Object)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.CodeModel.Microsoft#Bot#Builder#Dialogs#Debugging#ICodeModel#PointsFor(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Object,System.String)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.CodePoint" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.CodePoint">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.CodePoint.#ctor(Microsoft.Bot.Builder.Dialogs.Debugging.ICodeModel,Microsoft.Bot.Builder.Dialogs.DialogContext,System.Object,System.String)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.CodePoint.Microsoft#Bot#Builder#Dialogs#Debugging#ICodePoint#Evaluate(System.String)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.CodePoint.ToString" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.CodePoint.Data" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.CodePoint.Item" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.CodePoint.More" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.CodePoint.Name" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Coercion" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Coercion">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Coercion.#ctor" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Coercion.Microsoft#Bot#Builder#Dialogs#Debugging#ICoercion#Coerce(System.Object,System.Type)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.DataModel" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.DataModel">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DataModel.#ctor(Microsoft.Bot.Builder.Dialogs.Debugging.ICoercion)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DataModel.Microsoft#Bot#Builder#Dialogs#Debugging#IDataModel#IsScalar(System.Object)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DataModel.Microsoft#Bot#Builder#Dialogs#Debugging#IDataModel#Names(System.Object)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DataModel.Microsoft#Bot#Builder#Dialogs#Debugging#IDataModel#ToString(System.Object)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.DataModel.Microsoft#Bot#Builder#Dialogs#Debugging#IDataModel#Item(System.Object,System.Object)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.DataModel.Microsoft#Bot#Builder#Dialogs#Debugging#IDataModel#Rank" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.DataModelBase`3" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.DataModelBase`3">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DataModelBase`3.#ctor(Microsoft.Bot.Builder.Dialogs.Debugging.ICoercion)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DataModelBase`3.Coerce``1(System.Object)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DataModelBase`3.IsScalar(`0)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DataModelBase`3.Microsoft#Bot#Builder#Dialogs#Debugging#IDataModel#IsScalar(System.Object)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DataModelBase`3.Microsoft#Bot#Builder#Dialogs#Debugging#IDataModel#Names(System.Object)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DataModelBase`3.Microsoft#Bot#Builder#Dialogs#Debugging#IDataModel#ToString(System.Object)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DataModelBase`3.Names(`0)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DataModelBase`3.ToString(`0)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.DataModelBase`3.Item(`0,`1)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.DataModelBase`3.Microsoft#Bot#Builder#Dialogs#Debugging#IDataModel#Item(System.Object,System.Object)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.DataModelBase`3.Rank" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.DebuggerSourceMap" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.DebuggerSourceMap">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebuggerSourceMap.#ctor(Microsoft.Bot.Builder.Dialogs.Debugging.ICodeModel)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebuggerSourceMap.Assign(Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Range,Microsoft.Bot.Builder.Dialogs.Debugging.SourceRange)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebuggerSourceMap.Assign(Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Range,System.String,System.String)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebuggerSourceMap.Equals(Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Range,Microsoft.Bot.Builder.Dialogs.Debugging.SourceRange)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebuggerSourceMap.Microsoft#Bot#Builder#Dialogs#Debugging#IBreakpoints#ApplyUpdates" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebuggerSourceMap.Microsoft#Bot#Builder#Dialogs#Debugging#IBreakpoints#Clear" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebuggerSourceMap.Microsoft#Bot#Builder#Dialogs#Debugging#IBreakpoints#IsBreakPoint(System.Object)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebuggerSourceMap.Microsoft#Bot#Builder#Dialogs#Debugging#IBreakpoints#ItemFor(Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Breakpoint)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebuggerSourceMap.Microsoft#Bot#Builder#Dialogs#Debugging#IBreakpoints#SetBreakpoints(Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Source,System.Collections.Generic.IReadOnlyList{Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.SourceBreakpoint})" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebuggerSourceMap.Microsoft#Bot#Builder#Dialogs#Debugging#IBreakpoints#SetBreakpoints(System.Collections.Generic.IReadOnlyList{Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.FunctionBreakpoint})" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebuggerSourceMap.Microsoft#Bot#Builder#Dialogs#Debugging#ISourceMap#Add(System.Object,Microsoft.Bot.Builder.Dialogs.Debugging.SourceRange)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebuggerSourceMap.Microsoft#Bot#Builder#Dialogs#Debugging#ISourceMap#TryGetValue(System.Object,Microsoft.Bot.Builder.Dialogs.Debugging.SourceRange@)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.DebuggerSourceMap/Row" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.DebuggerSourceMap.Row">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebuggerSourceMap.Row.#ctor(Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.FunctionBreakpoint)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebuggerSourceMap.Row.#ctor(Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Source,Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.SourceBreakpoint)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.DebuggerSourceMap.Row.Breakpoint" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.DebuggerSourceMap.Row.FunctionBreakpoint" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.DebuggerSourceMap.Row.Item" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.DebuggerSourceMap.Row.Source" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.DebuggerSourceMap.Row.SourceBreakpoint" />
-    </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.DebuggingBotAdapterExtensions" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.DebuggingBotAdapterExtensions">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebuggingBotAdapterExtensions.UseDebugger(Microsoft.Bot.Builder.BotAdapter,System.Int32,Microsoft.Bot.Builder.Dialogs.Debugging.ISourceMap,Microsoft.Bot.Builder.Dialogs.Debugging.IBreakpoints,System.Action,Microsoft.Bot.Builder.Dialogs.Debugging.IEvents,Microsoft.Bot.Builder.Dialogs.Debugging.ICodeModel,Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel,Microsoft.Extensions.Logging.ILogger,Microsoft.Bot.Builder.Dialogs.Debugging.ICoercion)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.DebugTransport" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.DebugTransport">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebugTransport.#ctor(Microsoft.Extensions.Logging.ILogger)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebugTransport.AcceptAsync(System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebugTransport.ListenAsync(System.Net.IPEndPoint,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebugTransport.ReadAsync(System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebugTransport.SendAsync(Newtonsoft.Json.Linq.JToken,System.Threading.CancellationToken)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.DebugTransport.Logger" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.#ctor(System.Int32,Microsoft.Bot.Builder.Dialogs.Debugging.ISourceMap,Microsoft.Bot.Builder.Dialogs.Debugging.IBreakpoints,System.Action,Microsoft.Bot.Builder.Dialogs.Debugging.IEvents,Microsoft.Bot.Builder.Dialogs.Debugging.ICodeModel,Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel,Microsoft.Extensions.Logging.ILogger,Microsoft.Bot.Builder.Dialogs.Debugging.ICoercion)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.AcceptAsync(System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.DisposeAsync" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.Microsoft#Bot#Builder#Dialogs#Debugging#IDialogDebugger#StepAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Object,System.String,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.Microsoft#Bot#Builder#IMiddleware#OnTurnAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.NextDelegate,System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.OutputAsync(System.String,System.Object,System.Object,System.Threading.CancellationToken)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter/Phase" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.Phase">
-      <Member Id="F:Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.Phase.Breakpoint" />
-      <Member Id="F:Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.Phase.Continue" />
-      <Member Id="F:Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.Phase.Exited" />
-      <Member Id="F:Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.Phase.Next" />
-      <Member Id="F:Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.Phase.Pause" />
-      <Member Id="F:Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.Phase.Started" />
-      <Member Id="F:Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.Phase.Step" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter/RunModel" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.RunModel">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.RunModel.#ctor" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.RunModel.Post(Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.Phase)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.RunModel.Gate" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.RunModel.Phase" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.DialogDebugAdapter.RunModel.PhaseSent" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.DictionaryDataModel`2" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.DictionaryDataModel`2">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DictionaryDataModel`2.#ctor(Microsoft.Bot.Builder.Dialogs.Debugging.ICoercion)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DictionaryDataModel`2.Names(System.Collections.Generic.IDictionary{`0,`1})" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.DictionaryDataModel`2.Item(System.Collections.Generic.IDictionary{`0,`1},`0)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.DictionaryDataModel`2.Rank" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.EnumerableDataModel`1" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.EnumerableDataModel`1">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.EnumerableDataModel`1.#ctor(Microsoft.Bot.Builder.Dialogs.Debugging.ICoercion)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.EnumerableDataModel`1.Names(System.Collections.Generic.IEnumerable{`0})" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.EnumerableDataModel`1.Item(System.Collections.Generic.IEnumerable{`0},System.Int32)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.EnumerableDataModel`1.Rank" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Events`1" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Events`1">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Events`1.#ctor(System.Collections.Generic.IEnumerable{System.String})" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Events`1.Microsoft#Bot#Builder#Dialogs#Debugging#IEvents#Reset(System.Collections.Generic.IEnumerable{System.String})" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Events`1.Microsoft#Bot#Builder#Dialogs#Debugging#IEvents#Filters" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Events`1.Microsoft#Bot#Builder#Dialogs#Debugging#IEvents#Item(System.String)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Extensions" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Extensions">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Extensions.WithWaitAsync(System.Threading.SemaphoreSlim,System.Threading.CancellationToken)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Extensions/Releaser" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Extensions.Releaser">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Extensions.Releaser.#ctor(System.Threading.SemaphoreSlim)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Extensions.Releaser.Dispose" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Extensions.Releaser.Semaphore" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.IBreakpoints" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.IBreakpoints">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.IBreakpoints.ApplyUpdates" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.IBreakpoints.Clear" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.IBreakpoints.IsBreakPoint(System.Object)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.IBreakpoints.ItemFor(Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Breakpoint)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.IBreakpoints.SetBreakpoints(Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Source,System.Collections.Generic.IReadOnlyList{Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.SourceBreakpoint})" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.IBreakpoints.SetBreakpoints(System.Collections.Generic.IReadOnlyList{Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.FunctionBreakpoint})" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.ICodeModel" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.ICodeModel">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.ICodeModel.NameFor(System.Object)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.ICodeModel.PointsFor(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Object,System.String)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.ICodePoint" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.ICodePoint">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.ICodePoint.Evaluate(System.String)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.ICodePoint.Data" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.ICodePoint.Item" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.ICodePoint.More" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.ICodePoint.Name" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.ICoercion" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.ICoercion">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.ICoercion.Coerce(System.Object,System.Type)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel.IsScalar(System.Object)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel.Names(System.Object)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel.ToString(System.Object)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel.Item(System.Object,System.Object)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.IDataModel.Rank" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Identifier" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Identifier">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Identifier.Decode(System.UInt64,System.UInt64@,System.UInt64@)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Identifier.Encode(System.UInt64,System.UInt64)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Identifier`1" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Identifier`1">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Identifier`1.#ctor" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Identifier`1.Microsoft#Bot#Builder#Dialogs#Debugging#IIdentifier&lt;T&gt;#Add(`0)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Identifier`1.Microsoft#Bot#Builder#Dialogs#Debugging#IIdentifier&lt;T&gt;#Clear" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Identifier`1.Microsoft#Bot#Builder#Dialogs#Debugging#IIdentifier&lt;T&gt;#Remove(`0)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Identifier`1.Microsoft#Bot#Builder#Dialogs#Debugging#IIdentifier&lt;T&gt;#TryGetValue(`0,System.UInt64@)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Identifier`1.Microsoft#Bot#Builder#Dialogs#Debugging#IIdentifier&lt;T&gt;#TryGetValue(System.UInt64,`0@)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Identifier`1.System#Collections#Generic#IEnumerable&lt;System#Collections#Generic#KeyValuePair&lt;System#UInt64,T&gt;&gt;#GetEnumerator" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Identifier`1.System#Collections#IEnumerable#GetEnumerator" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Identifier`1.Microsoft#Bot#Builder#Dialogs#Debugging#IIdentifier&lt;T&gt;#Item(`0)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Identifier`1.Microsoft#Bot#Builder#Dialogs#Debugging#IIdentifier&lt;T&gt;#Item(System.UInt64)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Identifier`1.Microsoft#Bot#Builder#Dialogs#Debugging#IIdentifier&lt;T&gt;#Items" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierCache`1" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierCache`1">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierCache`1.#ctor(Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier{`0},System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierCache`1.Microsoft#Bot#Builder#Dialogs#Debugging#IIdentifier&lt;T&gt;#Add(`0)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierCache`1.Microsoft#Bot#Builder#Dialogs#Debugging#IIdentifier&lt;T&gt;#Clear" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierCache`1.Microsoft#Bot#Builder#Dialogs#Debugging#IIdentifier&lt;T&gt;#Remove(`0)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierCache`1.Microsoft#Bot#Builder#Dialogs#Debugging#IIdentifier&lt;T&gt;#TryGetValue(`0,System.UInt64@)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierCache`1.Microsoft#Bot#Builder#Dialogs#Debugging#IIdentifier&lt;T&gt;#TryGetValue(System.UInt64,`0@)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierCache`1.System#Collections#Generic#IEnumerable&lt;System#Collections#Generic#KeyValuePair&lt;System#UInt64,T&gt;&gt;#GetEnumerator" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierCache`1.System#Collections#IEnumerable#GetEnumerator" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierCache`1.Microsoft#Bot#Builder#Dialogs#Debugging#IIdentifier&lt;T&gt;#Item(`0)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierCache`1.Microsoft#Bot#Builder#Dialogs#Debugging#IIdentifier&lt;T&gt;#Item(System.UInt64)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierCache`1.Microsoft#Bot#Builder#Dialogs#Debugging#IIdentifier&lt;T&gt;#Items" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierFactory" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierFactory">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierFactory.WithCache``1(Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier{``0},System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierFactory.WithMutex``1(Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier{``0})" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierMutex`1" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierMutex`1">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierMutex`1.#ctor(Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier{`0})" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierMutex`1.Microsoft#Bot#Builder#Dialogs#Debugging#IIdentifier&lt;T&gt;#Add(`0)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierMutex`1.Microsoft#Bot#Builder#Dialogs#Debugging#IIdentifier&lt;T&gt;#Clear" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierMutex`1.Microsoft#Bot#Builder#Dialogs#Debugging#IIdentifier&lt;T&gt;#Remove(`0)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierMutex`1.Microsoft#Bot#Builder#Dialogs#Debugging#IIdentifier&lt;T&gt;#TryGetValue(`0,System.UInt64@)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierMutex`1.Microsoft#Bot#Builder#Dialogs#Debugging#IIdentifier&lt;T&gt;#TryGetValue(System.UInt64,`0@)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierMutex`1.System#Collections#Generic#IEnumerable&lt;System#Collections#Generic#KeyValuePair&lt;System#UInt64,T&gt;&gt;#GetEnumerator" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierMutex`1.System#Collections#IEnumerable#GetEnumerator" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierMutex`1.Microsoft#Bot#Builder#Dialogs#Debugging#IIdentifier&lt;T&gt;#Item(`0)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierMutex`1.Microsoft#Bot#Builder#Dialogs#Debugging#IIdentifier&lt;T&gt;#Item(System.UInt64)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.IdentifierMutex`1.Microsoft#Bot#Builder#Dialogs#Debugging#IIdentifier&lt;T&gt;#Items" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.IEvents" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.IEvents">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.IEvents.Reset(System.Collections.Generic.IEnumerable{System.String})" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.IEvents.Filters" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.IEvents.Item(System.String)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier`1" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier`1">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier`1.Add(`0)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier`1.Clear" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier`1.Remove(`0)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier`1.TryGetValue(`0,System.UInt64@)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier`1.TryGetValue(System.UInt64,`0@)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier`1.Item(`0)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier`1.Item(System.UInt64)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.IIdentifier`1.Items" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.JValueDataModel" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.JValueDataModel">
-      <Member Id="F:Microsoft.Bot.Builder.Dialogs.Debugging.JValueDataModel.Instance" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.JValueDataModel.Microsoft#Bot#Builder#Dialogs#Debugging#IDataModel#IsScalar(System.Object)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.JValueDataModel.Microsoft#Bot#Builder#Dialogs#Debugging#IDataModel#Names(System.Object)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.JValueDataModel.Microsoft#Bot#Builder#Dialogs#Debugging#IDataModel#ToString(System.Object)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.JValueDataModel.Microsoft#Bot#Builder#Dialogs#Debugging#IDataModel#Item(System.Object,System.Object)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.JValueDataModel.Microsoft#Bot#Builder#Dialogs#Debugging#IDataModel#Rank" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.ListDataModel`1" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.ListDataModel`1">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.ListDataModel`1.#ctor(Microsoft.Bot.Builder.Dialogs.Debugging.ICoercion)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.ListDataModel`1.Names(System.Collections.Generic.IList{`0})" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.ListDataModel`1.Item(System.Collections.Generic.IList{`0},System.Int32)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.ListDataModel`1.Rank" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.NullDataModel" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.NullDataModel">
-      <Member Id="F:Microsoft.Bot.Builder.Dialogs.Debugging.NullDataModel.Instance" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.NullDataModel.Microsoft#Bot#Builder#Dialogs#Debugging#IDataModel#IsScalar(System.Object)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.NullDataModel.Microsoft#Bot#Builder#Dialogs#Debugging#IDataModel#Names(System.Object)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.NullDataModel.Microsoft#Bot#Builder#Dialogs#Debugging#IDataModel#ToString(System.Object)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.NullDataModel.Microsoft#Bot#Builder#Dialogs#Debugging#IDataModel#Item(System.Object,System.Object)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.NullDataModel.Microsoft#Bot#Builder#Dialogs#Debugging#IDataModel#Rank" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Parse(Newtonsoft.Json.Linq.JToken)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Attach" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Attach">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Attach.#ctor" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Breakpoint" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Breakpoint">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Breakpoint.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Breakpoint.Message" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Breakpoint.Verified" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Capabilities" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Capabilities">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Capabilities.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Capabilities.ExceptionBreakpointFilters" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Capabilities.SupportsConfigurationDoneRequest" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Capabilities.SupportsEvaluateForHovers" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Capabilities.SupportsFunctionBreakpoints" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Capabilities.SupportsSetVariable" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Capabilities.SupportsTerminateRequest" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Capabilities.SupportTerminateDebuggee" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/ConfigurationDone" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.ConfigurationDone">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.ConfigurationDone.#ctor" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Continue" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Continue">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Continue.#ctor" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Disconnect" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Disconnect">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Disconnect.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Disconnect.Restart" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Disconnect.TerminateDebuggee" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Evaluate" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Evaluate">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Evaluate.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Evaluate.Expression" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Evaluate.FrameId" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Event" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Event">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Event.#ctor(System.Int32,System.String)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Event.From``1(System.Int32,System.String,``0)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Event.event" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Event`1" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Event`1">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Event`1.#ctor(System.Int32,System.String)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Event`1.Body" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/ExceptionBreakpointFilter" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.ExceptionBreakpointFilter">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.ExceptionBreakpointFilter.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.ExceptionBreakpointFilter.Default" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.ExceptionBreakpointFilter.Filter" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.ExceptionBreakpointFilter.Label" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/FunctionBreakpoint" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.FunctionBreakpoint">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.FunctionBreakpoint.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.FunctionBreakpoint.Name" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Initialize" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize.AdapterID" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize.ClientID" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize.ClientName" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize.ColumnsStartAt1" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize.LinesStartAt1" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize.Locale" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize.PathFormat" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize.SupportsRunInTerminalRequest" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize.SupportsVariablePaging" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Initialize.SupportsVariableType" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Launch" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Launch">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Launch.#ctor" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/LaunchAttach" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.LaunchAttach">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.LaunchAttach.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.LaunchAttach.BreakOnStart" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Message" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Message">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Message.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Message.Rest" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Message.Seq" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Message.Type" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Next" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Next">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Next.#ctor" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Pause" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Pause">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Pause.#ctor" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/PerThread" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.PerThread">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.PerThread.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.PerThread.ThreadId" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Range" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Range">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Range.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Range.Column" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Range.Designer" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Range.EndColumn" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Range.EndLine" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Range.Item" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Range.Line" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Range.More" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Range.Source" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Reference" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Reference">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Reference.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Reference.Id" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Request" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Request">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Request.#ctor" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Request.ToString" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Request.Command" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Request`1" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Request`1">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Request`1.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Request`1.Arguments" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Response" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Response">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Response.#ctor(System.Int32,Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Request)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Response.Fail(System.Int32,Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Request,System.String)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Response.From``1(System.Int32,Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Request,``0)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Response.Command" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Response.Message" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Response.Request_seq" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Response.Success" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Response`1" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Response`1">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Response`1.#ctor(System.Int32,Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Request)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Response`1.Body" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Scopes" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Scopes">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Scopes.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Scopes.FrameId" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/SetBreakpoints" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.SetBreakpoints">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.SetBreakpoints.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.SetBreakpoints.Breakpoints" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.SetBreakpoints.Source" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.SetBreakpoints.SourceModified" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/SetExceptionBreakpoints" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.SetExceptionBreakpoints">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.SetExceptionBreakpoints.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.SetExceptionBreakpoints.Filters" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/SetFunctionBreakpoints" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.SetFunctionBreakpoints">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.SetFunctionBreakpoints.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.SetFunctionBreakpoints.Breakpoints" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/SetVariable" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.SetVariable">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.SetVariable.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.SetVariable.Name" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.SetVariable.Value" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.SetVariable.VariablesReference" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Source" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Source">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Source.#ctor(System.String)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Source.Name" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Source.Path" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/SourceBreakpoint" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.SourceBreakpoint">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.SourceBreakpoint.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.SourceBreakpoint.Line" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/StackFrame" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.StackFrame">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.StackFrame.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.StackFrame.Name" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/StackTrace" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.StackTrace">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.StackTrace.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.StackTrace.Levels" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.StackTrace.StartFrame" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Terminate" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Terminate">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Terminate.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Terminate.Restart" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Thread" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Thread">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Thread.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Thread.Name" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Threads" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Threads">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Threads.#ctor" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.Protocol/Variables" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Variables">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Variables.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.Protocol.Variables.VariablesReference" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.ReaderWriterLock" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.ReaderWriterLock">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.ReaderWriterLock.#ctor(System.Boolean)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.ReaderWriterLock.Dispose" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.ReaderWriterLock.EnterWriteAsync(System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.ReaderWriterLock.ExitReadAsync(System.Threading.CancellationToken)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.ReaderWriterLock.ExitWrite" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.ReaderWriterLock.TryEnterReadAsync(System.Threading.CancellationToken)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.ReadOnlyDictionaryDataModel`2" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.ReadOnlyDictionaryDataModel`2">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.ReadOnlyDictionaryDataModel`2.#ctor(Microsoft.Bot.Builder.Dialogs.Debugging.ICoercion)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.ReadOnlyDictionaryDataModel`2.Names(System.Collections.Generic.IReadOnlyDictionary{`0,`1})" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.ReadOnlyDictionaryDataModel`2.Item(System.Collections.Generic.IReadOnlyDictionary{`0,`1},`0)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.ReadOnlyDictionaryDataModel`2.Rank" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.ReferenceEquality`1" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.ReferenceEquality`1">
-      <Member Id="F:Microsoft.Bot.Builder.Dialogs.Debugging.ReferenceEquality`1.Instance" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.ReferenceEquality`1.System#Collections#Generic#IEqualityComparer&lt;T&gt;#Equals(`0,`0)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.ReferenceEquality`1.System#Collections#Generic#IEqualityComparer&lt;T&gt;#GetHashCode(`0)" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.ReflectionDataModel`1" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.ReflectionDataModel`1">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.ReflectionDataModel`1.#ctor(Microsoft.Bot.Builder.Dialogs.Debugging.ICoercion)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.ReflectionDataModel`1.Names(System.Object)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.ReflectionDataModel`1.Item(System.Object,System.String)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.ReflectionDataModel`1.Rank" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.ScalarDataModel" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.ScalarDataModel">
-      <Member Id="F:Microsoft.Bot.Builder.Dialogs.Debugging.ScalarDataModel.Instance" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.ScalarDataModel.Microsoft#Bot#Builder#Dialogs#Debugging#IDataModel#IsScalar(System.Object)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.ScalarDataModel.Microsoft#Bot#Builder#Dialogs#Debugging#IDataModel#Names(System.Object)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.ScalarDataModel.Microsoft#Bot#Builder#Dialogs#Debugging#IDataModel#ToString(System.Object)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.ScalarDataModel.Microsoft#Bot#Builder#Dialogs#Debugging#IDataModel#Item(System.Object,System.Object)" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.ScalarDataModel.Microsoft#Bot#Builder#Dialogs#Debugging#IDataModel#Rank" />
-    </Type>
-    <Type Name="Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext" Id="T:Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext">
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext.#ctor" />
-      <Member Id="P:Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext.CallStack" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Debugging.DebuggingBotAdapterExtensions.UseDebugger(Microsoft.Bot.Builder.BotAdapter,System.Int32,Microsoft.Bot.Builder.Dialogs.Debugging.ISourceMap,System.Action,Microsoft.Extensions.Logging.ILogger)" />
     </Type>
   </Namespace>
 </Framework>

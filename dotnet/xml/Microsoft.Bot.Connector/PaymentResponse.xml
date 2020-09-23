@@ -43,7 +43,7 @@
       <MemberSignature Language="C#" Value="public PaymentResponse (string methodName = default, object details = default, Microsoft.Bot.Connector.PaymentAddress shippingAddress = default, string shippingOption = default, string payerEmail = default, string payerPhone = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string methodName, object details, class Microsoft.Bot.Connector.PaymentAddress shippingAddress, string shippingOption, string payerEmail, string payerPhone) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.PaymentResponse.#ctor(System.String,System.Object,Microsoft.Bot.Connector.PaymentAddress,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional methodName As String = null, Optional details As Object = null, Optional shippingAddress As PaymentAddress = null, Optional shippingOption As String = null, Optional payerEmail As String = null, Optional payerPhone As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional methodName As String = Nothing, Optional details As Object = Nothing, Optional shippingAddress As PaymentAddress = Nothing, Optional shippingOption As String = Nothing, Optional payerEmail As String = Nothing, Optional payerPhone As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.PaymentResponse : string * obj * Microsoft.Bot.Connector.PaymentAddress * string * string * string -&gt; Microsoft.Bot.Connector.PaymentResponse" Usage="new Microsoft.Bot.Connector.PaymentResponse (methodName, details, shippingAddress, shippingOption, payerEmail, payerPhone)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -88,7 +88,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="details")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="details")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="details")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -116,7 +117,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="methodName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="methodName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="methodName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -144,7 +146,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="payerEmail")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="payerEmail")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="payerEmail")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -172,7 +175,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="payerPhone")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="payerPhone")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="payerPhone")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -200,7 +204,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="shippingAddress")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="shippingAddress")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="shippingAddress")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -228,7 +233,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="shippingOption")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="shippingOption")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="shippingOption")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

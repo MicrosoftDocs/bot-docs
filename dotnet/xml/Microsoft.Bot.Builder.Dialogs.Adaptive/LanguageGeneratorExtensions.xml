@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -29,6 +31,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogManager</ReturnType>
@@ -51,13 +55,15 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Dialogs.DialogManager UseLanguageGeneration (this Microsoft.Bot.Builder.Dialogs.DialogManager dialogManager, string defaultLg = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Dialogs.DialogManager UseLanguageGeneration(class Microsoft.Bot.Builder.Dialogs.DialogManager dialogManager, string defaultLg) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGeneratorExtensions.UseLanguageGeneration(Microsoft.Bot.Builder.Dialogs.DialogManager,System.String)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function UseLanguageGeneration (dialogManager As DialogManager, Optional defaultLg As String = null) As DialogManager" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function UseLanguageGeneration (dialogManager As DialogManager, Optional defaultLg As String = Nothing) As DialogManager" />
       <MemberSignature Language="F#" Value="static member UseLanguageGeneration : Microsoft.Bot.Builder.Dialogs.DialogManager * string -&gt; Microsoft.Bot.Builder.Dialogs.DialogManager" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGeneratorExtensions.UseLanguageGeneration (dialogManager, defaultLg)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogManager</ReturnType>
@@ -87,6 +93,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogManager</ReturnType>

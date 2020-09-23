@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -15,7 +17,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Obsolete("Bot Framework no longer supports payments.")</AttributeName>
+      <AttributeName Language="C#">[System.Obsolete("Bot Framework no longer supports payments.")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("Bot Framework no longer supports payments.")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -35,6 +38,8 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,13 +53,15 @@
       <MemberSignature Language="C#" Value="public PaymentRequestUpdateResult (Microsoft.Bot.Schema.PaymentDetails details = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Schema.PaymentDetails details) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.PaymentRequestUpdateResult.#ctor(Microsoft.Bot.Schema.PaymentDetails)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional details As PaymentDetails = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional details As PaymentDetails = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.PaymentRequestUpdateResult : Microsoft.Bot.Schema.PaymentDetails -&gt; Microsoft.Bot.Schema.PaymentRequestUpdateResult" Usage="new Microsoft.Bot.Schema.PaymentRequestUpdateResult details" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="details" Type="Microsoft.Bot.Schema.PaymentDetails" />
@@ -78,10 +85,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="details")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="details")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="details")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

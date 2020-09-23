@@ -10,13 +10,18 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Streaming.RequestHandler</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            A request handler that processes incoming requests sent over an IStreamingTransport 
+            and adheres to the Bot Framework Protocol v3 with Streaming Extensions.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -24,7 +29,7 @@
       <MemberSignature Language="C#" Value="public StreamingRequestHandler (Microsoft.Bot.Builder.IBot bot, Microsoft.Bot.Builder.Streaming.IStreamingActivityProcessor activityProcessor, System.Net.WebSockets.WebSocket socket, Microsoft.Extensions.Logging.ILogger logger = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.IBot bot, class Microsoft.Bot.Builder.Streaming.IStreamingActivityProcessor activityProcessor, class System.Net.WebSockets.WebSocket socket, class Microsoft.Extensions.Logging.ILogger logger) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Streaming.StreamingRequestHandler.#ctor(Microsoft.Bot.Builder.IBot,Microsoft.Bot.Builder.Streaming.IStreamingActivityProcessor,System.Net.WebSockets.WebSocket,Microsoft.Extensions.Logging.ILogger)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (bot As IBot, activityProcessor As IStreamingActivityProcessor, socket As WebSocket, Optional logger As ILogger = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bot As IBot, activityProcessor As IStreamingActivityProcessor, socket As WebSocket, Optional logger As ILogger = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Streaming.StreamingRequestHandler : Microsoft.Bot.Builder.IBot * Microsoft.Bot.Builder.Streaming.IStreamingActivityProcessor * System.Net.WebSockets.WebSocket * Microsoft.Extensions.Logging.ILogger -&gt; Microsoft.Bot.Builder.Streaming.StreamingRequestHandler" Usage="new Microsoft.Bot.Builder.Streaming.StreamingRequestHandler (bot, activityProcessor, socket, logger)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -33,6 +38,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="bot" Type="Microsoft.Bot.Builder.IBot" />
@@ -56,7 +63,7 @@
       <MemberSignature Language="C#" Value="public StreamingRequestHandler (Microsoft.Bot.Builder.IBot bot, Microsoft.Bot.Builder.Streaming.IStreamingActivityProcessor activityProcessor, string pipeName, Microsoft.Extensions.Logging.ILogger logger = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.IBot bot, class Microsoft.Bot.Builder.Streaming.IStreamingActivityProcessor activityProcessor, string pipeName, class Microsoft.Extensions.Logging.ILogger logger) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Streaming.StreamingRequestHandler.#ctor(Microsoft.Bot.Builder.IBot,Microsoft.Bot.Builder.Streaming.IStreamingActivityProcessor,System.String,Microsoft.Extensions.Logging.ILogger)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (bot As IBot, activityProcessor As IStreamingActivityProcessor, pipeName As String, Optional logger As ILogger = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bot As IBot, activityProcessor As IStreamingActivityProcessor, pipeName As String, Optional logger As ILogger = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Streaming.StreamingRequestHandler : Microsoft.Bot.Builder.IBot * Microsoft.Bot.Builder.Streaming.IStreamingActivityProcessor * string * Microsoft.Extensions.Logging.ILogger -&gt; Microsoft.Bot.Builder.Streaming.StreamingRequestHandler" Usage="new Microsoft.Bot.Builder.Streaming.StreamingRequestHandler (bot, activityProcessor, pipeName, logger)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -65,6 +72,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="bot" Type="Microsoft.Bot.Builder.IBot" />
@@ -97,6 +106,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -128,6 +139,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -157,6 +170,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -187,6 +202,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -204,7 +221,7 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.StreamingResponse&gt; ProcessRequestAsync (Microsoft.Bot.Streaming.ReceiveRequest request, Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Streaming.RequestHandler&gt; logger = default, object context = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Streaming.StreamingResponse&gt; ProcessRequestAsync(class Microsoft.Bot.Streaming.ReceiveRequest request, class Microsoft.Extensions.Logging.ILogger`1&lt;class Microsoft.Bot.Streaming.RequestHandler&gt; logger, object context, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Streaming.StreamingRequestHandler.ProcessRequestAsync(Microsoft.Bot.Streaming.ReceiveRequest,Microsoft.Extensions.Logging.ILogger{Microsoft.Bot.Streaming.RequestHandler},System.Object,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function ProcessRequestAsync (request As ReceiveRequest, Optional logger As ILogger(Of RequestHandler) = null, Optional context As Object = null, Optional cancellationToken As CancellationToken = null) As Task(Of StreamingResponse)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ProcessRequestAsync (request As ReceiveRequest, Optional logger As ILogger(Of RequestHandler) = Nothing, Optional context As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of StreamingResponse)" />
       <MemberSignature Language="F#" Value="override this.ProcessRequestAsync : Microsoft.Bot.Streaming.ReceiveRequest * Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Streaming.RequestHandler&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.StreamingResponse&gt;" Usage="streamingRequestHandler.ProcessRequestAsync (request, logger, context, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -213,6 +230,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.StreamingResponse&gt;</ReturnType>
@@ -224,12 +243,14 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="logger">To be added.</param>
-        <param name="context">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">A <see cref="T:Microsoft.Bot.Streaming.ReceiveRequest" /> for this handler to process.</param>
+        <param name="logger">Logger.</param>
+        <param name="context">Optional context to process the request within.</param>
+        <param name="cancellationToken">Cancellation token.</param>
+        <summary>
+            Handles incoming requests.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> that will produce a <see cref="T:Microsoft.Bot.Streaming.StreamingResponse" /> on successful completion.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,7 +258,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; SendActivityAsync (Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; SendActivityAsync(class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Streaming.StreamingRequestHandler.SendActivityAsync(Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function SendActivityAsync (activity As Activity, Optional cancellationToken As CancellationToken = null) As Task(Of ResourceResponse)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendActivityAsync (activity As Activity, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ResourceResponse)" />
       <MemberSignature Language="F#" Value="member this.SendActivityAsync : Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="streamingRequestHandler.SendActivityAsync (activity, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -246,6 +267,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -269,7 +292,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.ReceiveResponse&gt; SendStreamingRequestAsync (Microsoft.Bot.Streaming.StreamingRequest request, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Streaming.ReceiveResponse&gt; SendStreamingRequestAsync(class Microsoft.Bot.Streaming.StreamingRequest request, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Streaming.StreamingRequestHandler.SendStreamingRequestAsync(Microsoft.Bot.Streaming.StreamingRequest,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function SendStreamingRequestAsync (request As StreamingRequest, Optional cancellationToken As CancellationToken = null) As Task(Of ReceiveResponse)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendStreamingRequestAsync (request As StreamingRequest, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ReceiveResponse)" />
       <MemberSignature Language="F#" Value="member this.SendStreamingRequestAsync : Microsoft.Bot.Streaming.StreamingRequest * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.ReceiveResponse&gt;" Usage="streamingRequestHandler.SendStreamingRequestAsync (request, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -278,6 +301,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.ReceiveResponse&gt;</ReturnType>
@@ -309,6 +334,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

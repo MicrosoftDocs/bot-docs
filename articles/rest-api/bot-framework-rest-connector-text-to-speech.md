@@ -1,6 +1,6 @@
 ---
 title: Add speech to messages - Bot Service
-description: Learn how to add speech to messages using the Bot Connector service.
+description: Learn how to add speech to bot messages. See how to specify and format the text that bots use on speech-enabled channels and how to include input hints.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
@@ -9,15 +9,16 @@ ms.service: bot-service
 ms.date: 02/20/2020
 ---
 
-# Add speech to messages
+# Add speech to messages with the Bot Connector API
+
 > [!div class="op_single_selector"]
 > - [.NET](../dotnet/bot-builder-dotnet-text-to-speech.md)
 > - [Node.js](../nodejs/bot-builder-nodejs-text-to-speech.md)
 > - [REST](../rest-api/bot-framework-rest-connector-text-to-speech.md)
 
-If you are building a bot for a speech-enabled channel such as Cortana, you can construct messages that specify the text to be spoken by your bot. You can also attempt to influence the state of the client's microphone by specifying an [input hint](bot-framework-rest-connector-add-input-hints.md) to indicate whether your bot is accepting, expecting, or ignoring user input. 
+If you are building a bot for a speech-enabled channel such as Cortana, you can construct messages that specify the text to be spoken by your bot. You can also attempt to influence the state of the client's microphone by specifying an [input hint](bot-framework-rest-connector-add-input-hints.md) to indicate whether your bot is accepting, expecting, or ignoring user input.
 
-You can configure your bot to allow client applications to communicate with it through [Direct Line Speech channel](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-directlinespeech?view=azure-bot-service-4.0).
+You can configure your bot to allow client applications to communicate with it through [Direct Line Speech channel](../bot-service-channel-connect-directlinespeech.md).
 
 ## Specify text to be spoken by your bot
 
@@ -56,13 +57,13 @@ Content-Type: application/json
 
 ## Input hints
 
-When you send a message on a speech-enabled channel, you can aexpress the intended state of the client's microphone by also including an input hint to indicate whether your bot is accepting, expecting, or ignoring user input. For more information, see [Add input hints to messages](bot-framework-rest-connector-add-input-hints.md).
+When you send a message on a speech-enabled channel, you can express the intended state of the client's microphone by also including an input hint to indicate whether your bot is accepting, expecting, or ignoring user input. For more information, see [Add input hints to messages](bot-framework-rest-connector-add-input-hints.md).
 
 ## Additional resources
 
 - [Create messages](bot-framework-rest-connector-create-messages.md)
 - [Send and receive messages](bot-framework-rest-connector-send-and-receive-messages.md)
 - [Add input hints to messages](bot-framework-rest-connector-add-input-hints.md)
-- <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/speech-synthesis-markup" target="_blank">Speech Synthesis Markup Language (SSML)</a>
+- [Speech Synthesis Markup Language (SSML)](/azure/cognitive-services/speech-service/speech-synthesis-markup)
 
 [Activity]: bot-framework-rest-connector-api-reference.md#activity-object

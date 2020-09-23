@@ -1,0 +1,116 @@
+<Type Name="TransportDisconnectedException" FullName="Microsoft.Bot.Streaming.PayloadTransport.TransportDisconnectedException">
+  <TypeSignature Language="C#" Value="public class TransportDisconnectedException : Exception" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TransportDisconnectedException extends System.Exception" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Streaming.PayloadTransport.TransportDisconnectedException" />
+  <TypeSignature Language="VB.NET" Value="Public Class TransportDisconnectedException&#xA;Inherits Exception" />
+  <TypeSignature Language="F#" Value="type TransportDisconnectedException = class&#xA;    inherit Exception" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Exception</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Exception throw when the transport is disconnected.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TransportDisconnectedException ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.PayloadTransport.TransportDisconnectedException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Streaming.PayloadTransport.TransportDisconnectedException" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TransportDisconnectedException (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.PayloadTransport.TransportDisconnectedException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Streaming.PayloadTransport.TransportDisconnectedException : string -&gt; Microsoft.Bot.Streaming.PayloadTransport.TransportDisconnectedException" Usage="new Microsoft.Bot.Streaming.PayloadTransport.TransportDisconnectedException message" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">A message describing the reason for the exception.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Streaming.PayloadTransport.TransportDisconnectedException" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TransportDisconnectedException (string message, Exception innerException);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.PayloadTransport.TransportDisconnectedException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Streaming.PayloadTransport.TransportDisconnectedException : string * Exception -&gt; Microsoft.Bot.Streaming.PayloadTransport.TransportDisconnectedException" Usage="new Microsoft.Bot.Streaming.PayloadTransport.TransportDisconnectedException (message, innerException)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="innerException" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="message">A message describing the reason for the exception.</param>
+        <param name="innerException">A reference to an inner exception that caused this exception exception.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Streaming.PayloadTransport.TransportDisconnectedException" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reason">
+      <MemberSignature Language="C#" Value="public string Reason { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Reason" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Streaming.PayloadTransport.TransportDisconnectedException.Reason" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Reason As String" />
+      <MemberSignature Language="F#" Value="member this.Reason : string" Usage="Microsoft.Bot.Streaming.PayloadTransport.TransportDisconnectedException.Reason" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the reason for the exception.
+            </summary>
+        <value>
+            The reason for the exception.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

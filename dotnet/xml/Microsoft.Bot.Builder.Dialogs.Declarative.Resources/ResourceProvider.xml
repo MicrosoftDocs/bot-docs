@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -31,13 +33,17 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="resourceExplorer" Type="Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" />
       </Parameters>
       <Docs>
-        <param name="resourceExplorer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="resourceExplorer">The ResourceExplorer object to initialize the current object.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceProvider" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,6 +58,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource&gt;&gt;</ReturnType>
@@ -74,6 +82,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource&gt;</ReturnType>
@@ -101,6 +111,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -126,6 +138,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -134,8 +148,10 @@
         <Parameter Name="resources" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource&gt;" />
       </Parameters>
       <Docs>
-        <param name="resources">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="resources">A collection of changed resources.</param>
+        <summary>
+            Actions to perform when the current object is changed.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,6 +166,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -173,6 +191,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer</ReturnType>
@@ -198,6 +218,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

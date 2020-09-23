@@ -15,6 +15,8 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -34,8 +36,8 @@
     <remarks>Context provides information needed to process an incoming activity.
             The context object is created by a <see cref="T:Microsoft.Bot.Builder.BotAdapter" /> and persists for the
             length of the turn.</remarks>
-    <altmember cref="T:Microsoft.Bot.Builder.IBot" />
     <altmember cref="T:Microsoft.Bot.Builder.IMiddleware" />
+    <altmember cref="T:Microsoft.Bot.Builder.IBot" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,6 +58,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="adapter" Type="Microsoft.Bot.Builder.BotAdapter" />
@@ -95,6 +99,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
@@ -129,6 +135,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.BotAdapter</ReturnType>
@@ -153,6 +161,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Schema.Activity&gt;</ReturnType>
@@ -169,7 +179,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteActivityAsync (Microsoft.Bot.Schema.ConversationReference conversationReference, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteActivityAsync(class Microsoft.Bot.Schema.ConversationReference conversationReference, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TurnContext.DeleteActivityAsync(Microsoft.Bot.Schema.ConversationReference,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function DeleteActivityAsync (conversationReference As ConversationReference, Optional cancellationToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeleteActivityAsync (conversationReference As ConversationReference, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="abstract member DeleteActivityAsync : Microsoft.Bot.Schema.ConversationReference * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteActivityAsync : Microsoft.Bot.Schema.ConversationReference * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="turnContext.DeleteActivityAsync (conversationReference, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -186,6 +196,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -211,7 +223,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeleteActivityAsync (string activityId, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task DeleteActivityAsync(string activityId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TurnContext.DeleteActivityAsync(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function DeleteActivityAsync (activityId As String, Optional cancellationToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeleteActivityAsync (activityId As String, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="abstract member DeleteActivityAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.DeleteActivityAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="turnContext.DeleteActivityAsync (activityId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -228,6 +240,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -269,6 +283,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -278,6 +294,55 @@
         <summary>
             Frees resources.
             </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TurnContext.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="turnContext.Dispose disposing" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">Boolean value that determines whether to free resources or not.</param>
+        <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Locale">
+      <MemberSignature Language="C#" Value="public string Locale { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Locale" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.TurnContext.Locale" />
+      <MemberSignature Language="VB.NET" Value="Public Property Locale As String" />
+      <MemberSignature Language="F#" Value="member this.Locale : string with get, set" Usage="Microsoft.Bot.Builder.TurnContext.Locale" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the locale on this context object.
+            </summary>
+        <value>The string of locale on this context object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -302,6 +367,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.ITurnContext</ReturnType>
@@ -345,6 +412,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.ITurnContext</ReturnType>
@@ -388,6 +457,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.ITurnContext</ReturnType>
@@ -427,6 +498,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -445,7 +518,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse[]&gt; SendActivitiesAsync (Microsoft.Bot.Schema.IActivity[] activities, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse[]&gt; SendActivitiesAsync(class Microsoft.Bot.Schema.IActivity[] activities, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TurnContext.SendActivitiesAsync(Microsoft.Bot.Schema.IActivity[],System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function SendActivitiesAsync (activities As IActivity(), Optional cancellationToken As CancellationToken = null) As Task(Of ResourceResponse())" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendActivitiesAsync (activities As IActivity(), Optional cancellationToken As CancellationToken = Nothing) As Task(Of ResourceResponse())" />
       <MemberSignature Language="F#" Value="abstract member SendActivitiesAsync : Microsoft.Bot.Schema.IActivity[] * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse[]&gt;&#xA;override this.SendActivitiesAsync : Microsoft.Bot.Schema.IActivity[] * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse[]&gt;" Usage="turnContext.SendActivitiesAsync (activities, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -462,6 +535,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse[]&gt;</ReturnType>
@@ -486,7 +561,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; SendActivityAsync (Microsoft.Bot.Schema.IActivity activity, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; SendActivityAsync(class Microsoft.Bot.Schema.IActivity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TurnContext.SendActivityAsync(Microsoft.Bot.Schema.IActivity,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function SendActivityAsync (activity As IActivity, Optional cancellationToken As CancellationToken = null) As Task(Of ResourceResponse)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendActivityAsync (activity As IActivity, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ResourceResponse)" />
       <MemberSignature Language="F#" Value="abstract member SendActivityAsync : Microsoft.Bot.Schema.IActivity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&#xA;override this.SendActivityAsync : Microsoft.Bot.Schema.IActivity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="turnContext.SendActivityAsync (activity, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -503,6 +578,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -529,7 +606,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; SendActivityAsync (string textReplyToSend, string speak = default, string inputHint = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; SendActivityAsync(string textReplyToSend, string speak, string inputHint, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TurnContext.SendActivityAsync(System.String,System.String,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function SendActivityAsync (textReplyToSend As String, Optional speak As String = null, Optional inputHint As String = null, Optional cancellationToken As CancellationToken = null) As Task(Of ResourceResponse)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendActivityAsync (textReplyToSend As String, Optional speak As String = Nothing, Optional inputHint As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ResourceResponse)" />
       <MemberSignature Language="F#" Value="abstract member SendActivityAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&#xA;override this.SendActivityAsync : string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="turnContext.SendActivityAsync (textReplyToSend, speak, inputHint, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -546,6 +623,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -601,6 +680,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.TurnContextStateCollection</ReturnType>
@@ -617,7 +698,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; UpdateActivityAsync (Microsoft.Bot.Schema.IActivity activity, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; UpdateActivityAsync(class Microsoft.Bot.Schema.IActivity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.TurnContext.UpdateActivityAsync(Microsoft.Bot.Schema.IActivity,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function UpdateActivityAsync (activity As IActivity, Optional cancellationToken As CancellationToken = null) As Task(Of ResourceResponse)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UpdateActivityAsync (activity As IActivity, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ResourceResponse)" />
       <MemberSignature Language="F#" Value="abstract member UpdateActivityAsync : Microsoft.Bot.Schema.IActivity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;&#xA;override this.UpdateActivityAsync : Microsoft.Bot.Schema.IActivity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="turnContext.UpdateActivityAsync (activity, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -634,6 +715,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>

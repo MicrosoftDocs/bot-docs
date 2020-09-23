@@ -1,0 +1,46 @@
+<Type Name="SpeechConstants" FullName="Microsoft.Bot.Schema.SpeechConstants">
+  <TypeSignature Language="C#" Value="public static class SpeechConstants" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SpeechConstants extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.SpeechConstants" />
+  <TypeSignature Language="VB.NET" Value="Public Class SpeechConstants" />
+  <TypeSignature Language="F#" Value="type SpeechConstants = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Defines constants that can be used in the processing of speech interactions.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EmptySpeakTag">
+      <MemberSignature Language="C#" Value="public static readonly string EmptySpeakTag;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string EmptySpeakTag" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Schema.SpeechConstants.EmptySpeakTag" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EmptySpeakTag As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable EmptySpeakTag : string" Usage="Microsoft.Bot.Schema.SpeechConstants.EmptySpeakTag" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The xml tag structure to indicate an empty speak tag, to be used in the 'speak' property of an Activity. When set this indicates to the channel that speech should not be generated.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,9 +1,9 @@
 <Type Name="CosmosDbStorage" FullName="Microsoft.Bot.Builder.Azure.CosmosDbStorage">
-  <TypeSignature Language="C#" Value="public class CosmosDbStorage : Microsoft.Bot.Builder.IStorage" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CosmosDbStorage extends System.Object implements class Microsoft.Bot.Builder.IStorage" />
+  <TypeSignature Language="C#" Value="public class CosmosDbStorage : IDisposable, Microsoft.Bot.Builder.IStorage" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CosmosDbStorage extends System.Object implements class Microsoft.Bot.Builder.IStorage, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Azure.CosmosDbStorage" />
-  <TypeSignature Language="VB.NET" Value="Public Class CosmosDbStorage&#xA;Implements IStorage" />
-  <TypeSignature Language="F#" Value="type CosmosDbStorage = class&#xA;    interface IStorage" />
+  <TypeSignature Language="VB.NET" Value="Public Class CosmosDbStorage&#xA;Implements IDisposable, IStorage" />
+  <TypeSignature Language="F#" Value="type CosmosDbStorage = class&#xA;    interface IStorage&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
     <AssemblyVersion>4.0.7.0</AssemblyVersion>
@@ -15,6 +15,8 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -23,10 +25,14 @@
     <Interface>
       <InterfaceName>Microsoft.Bot.Builder.IStorage</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Obsolete("This class is deprecated. Please use CosmosDbPartitionedStorage instead.", false)</AttributeName>
+      <AttributeName Language="C#">[System.Obsolete("This class is deprecated. Please use CosmosDbPartitionedStorage instead.", false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("This class is deprecated. Please use CosmosDbPartitionedStorage instead.", false)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -54,6 +60,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="cosmosDbStorageOptions" Type="Microsoft.Bot.Builder.Azure.CosmosDbStorageOptions" />
@@ -84,6 +92,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="documentClient" Type="Microsoft.Azure.Documents.IDocumentClient" />
@@ -115,6 +125,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="cosmosDbStorageOptions" Type="Microsoft.Bot.Builder.Azure.CosmosDbStorageOptions" />
@@ -152,6 +164,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -171,6 +185,61 @@
         <remarks>To be added.</remarks>
         <altmember cref="M:Microsoft.Bot.Builder.Azure.CosmosDbStorage.ReadAsync(System.String[],System.Threading.CancellationToken)" />
         <altmember cref="M:Microsoft.Bot.Builder.Azure.CosmosDbStorage.WriteAsync(System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.CancellationToken)" />
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.CosmosDbStorage.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="cosmosDbStorage.Dispose " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Disposes the object instance and releases any related objects owned by the class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Azure.CosmosDbStorage.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="cosmosDbStorage.Dispose disposing" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Azure</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">A Boolean that indicates whether the method call comes from a Dispose method (its value is true) or from a finalizer (its value is false).</param>
+        <summary>
+            Disposes objects used by the class.
+            </summary>
+        <remarks>
+            The disposing parameter should be false when called from a finalizer, and true when called from the IDisposable.Dispose method.
+            In other words, it is true when deterministically called and false when non-deterministically called.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadAsync">
@@ -194,6 +263,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;&gt;</ReturnType>
@@ -234,10 +305,13 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Replaced by CosmosDBKeyEscape.EscapeKey.")</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("Replaced by CosmosDBKeyEscape.EscapeKey.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Replaced by CosmosDBKeyEscape.EscapeKey.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -247,13 +321,11 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">The key to sanitize.</param>
+        <param name="key">The key to be sanitized (escaped).</param>
         <summary>
-            Converts the key into a DocumentID that can be used safely with CosmosDB.
-            The following characters are restricted and cannot be used in the Id property: '/', '\', '?', '#'
-            More information at https://docs.microsoft.com/en-us/dotnet/api/microsoft.azure.documents.resource.id?view=azure-dotnet#remarks.
+            Escapes a given key to be compatible for use with Cosmos DB. 
             </summary>
-        <returns>A sanitized key that can be used safely with CosmosDB.</returns>
+        <returns>An appropriately escaped version of the key.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -278,6 +350,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>

@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,6 +32,8 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -41,13 +45,15 @@
       <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.StreamingResponse&gt; ProcessRequestAsync (Microsoft.Bot.Streaming.ReceiveRequest request, Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Streaming.RequestHandler&gt; logger, object context = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Streaming.StreamingResponse&gt; ProcessRequestAsync(class Microsoft.Bot.Streaming.ReceiveRequest request, class Microsoft.Extensions.Logging.ILogger`1&lt;class Microsoft.Bot.Streaming.RequestHandler&gt; logger, object context, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.RequestHandler.ProcessRequestAsync(Microsoft.Bot.Streaming.ReceiveRequest,Microsoft.Extensions.Logging.ILogger{Microsoft.Bot.Streaming.RequestHandler},System.Object,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public MustOverride Function ProcessRequestAsync (request As ReceiveRequest, logger As ILogger(Of RequestHandler), Optional context As Object = null, Optional cancellationToken As CancellationToken = null) As Task(Of StreamingResponse)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function ProcessRequestAsync (request As ReceiveRequest, logger As ILogger(Of RequestHandler), Optional context As Object = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of StreamingResponse)" />
       <MemberSignature Language="F#" Value="abstract member ProcessRequestAsync : Microsoft.Bot.Streaming.ReceiveRequest * Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Bot.Streaming.RequestHandler&gt; * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.StreamingResponse&gt;" Usage="requestHandler.ProcessRequestAsync (request, logger, context, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Streaming.StreamingResponse&gt;</ReturnType>

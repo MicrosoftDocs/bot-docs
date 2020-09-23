@@ -1,6 +1,6 @@
 ---
 title: Manage state data - Bot Service
-description: Learn how to store and retrieve state data using the Bot State service. 
+description: Learn about alternatives to the deprecated Bot State service. See how to keep track of information about users and conversations without using this service.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
@@ -9,7 +9,7 @@ ms.service: bot-service
 ms.date: 02/20/2020
 ---
 
-# Manage state data
+# Manage state data with the REST API
 
 Bots typically use storage to keep track of a user's place in the conversation or details relevant to their relationship with the bot. The Bot Framework SDK manages user and conversation state automatically for bot developers. 
 

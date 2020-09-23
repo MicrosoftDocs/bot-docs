@@ -11,6 +11,8 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -37,6 +39,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.AI.QnA.QueryResult&gt;</ReturnType>
@@ -50,6 +54,56 @@
             Returns list of qnaSearch results which have low score variation.
             </summary>
         <returns>List of filtered qnaSearch results.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumScoreForLowScoreVariation">
+      <MemberSignature Language="C#" Value="public static double MaximumScoreForLowScoreVariation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property float64 MaximumScoreForLowScoreVariation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.ActiveLearningUtils.MaximumScoreForLowScoreVariation" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property MaximumScoreForLowScoreVariation As Double" />
+      <MemberSignature Language="F#" Value="member this.MaximumScoreForLowScoreVariation : double with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.ActiveLearningUtils.MaximumScoreForLowScoreVariation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets maximum Score For Low Score Variation.
+            </summary>
+        <value>
+            Maximum Score For Low Score Variation.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinimumScoreForLowScoreVariation">
+      <MemberSignature Language="C#" Value="public static double MinimumScoreForLowScoreVariation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property float64 MinimumScoreForLowScoreVariation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.QnA.ActiveLearningUtils.MinimumScoreForLowScoreVariation" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property MinimumScoreForLowScoreVariation As Double" />
+      <MemberSignature Language="F#" Value="member this.MinimumScoreForLowScoreVariation : double with get, set" Usage="Microsoft.Bot.Builder.AI.QnA.ActiveLearningUtils.MinimumScoreForLowScoreVariation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets minimum Score For Low Score Variation.
+            </summary>
+        <value>
+            Minimum Score For Low Score Variation.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -15,11 +17,14 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Obsolete("This class is deprecated.  See https://aka.ms/bot-file-basics for more information.", false)</AttributeName>
+      <AttributeName Language="C#">[System.Obsolete("This class is deprecated.  See https://aka.ms/bot-file-basics for more information.", false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("This class is deprecated.  See https://aka.ms/bot-file-basics for more information.", false)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Constants for Azure service types.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,6 +38,8 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -51,12 +58,16 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Application Insights.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,12 +82,16 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Blob Storage.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,12 +106,16 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Azure Bot Service.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,12 +130,16 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Cosmos DB.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,12 +154,16 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Dispatch.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,12 +178,16 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Bot Endpoint. 
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,12 +202,16 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            File service.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,12 +226,16 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Generic service.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,12 +250,16 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            LUIS Cognitive Service.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -231,12 +274,16 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            QnA Maker Cognitive Service.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

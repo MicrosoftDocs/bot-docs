@@ -1,6 +1,6 @@
 ---
 title: Differences between the v3 and v4 SDK - Bot Service
-description: Describes the differences between the v3 and v4 SDK.
+description: Find out how versions 3 and 4 of the Bot Framework SDK differ. Learn about changes in activity processing, state management, dialogs, and ASP.NET Core support.
 keywords: bot migration, formflow, dialogs, state
 author: JonathanFingold
 ms.author: kamrani
@@ -43,7 +43,7 @@ The turn handler can receive many types of activities. In general, you will want
 
 When handling a message, use the turn context to get information about the incoming activity and to send activities to the user:
 
-| | |
+| Task | Process |
 |-|-|
 | To get the incoming activity | Get the turn context's `Activity` property. |
 | To create and send an activity to the user | Call the turn context's `SendActivityAsync` method.<br/>For more information, see [send and receive a text message][send-messages] and [add media to messages][send-media]. |
@@ -83,7 +83,7 @@ You can use dependency injection to access these whenever your bot is created.
 (In ASP.NET, a new instance of your bot or message controller is created for every turn.)
 Use the state property accessors to get and update your properties, and use the state management objects to write any changes to storage. With the understanding that you should take concurrency issues into account, here is how to accomplish some common tasks.
 
-| | |
+| Task | Process |
 |-|-|
 | To create a state property accessor | Call `BotState.CreateProperty<T>`.<br/>`BotState` is the abstract base class for conversation, private conversation, and user state. |
 | To get the current value of a property | Call `IStatePropertyAccessor<T>.GetAsync`.<br/>If no value has been previously set, then it will use the default factory parameter to generate a value. |
@@ -111,7 +111,7 @@ While v3 provided a flexible way to implement dialogs using the `IDialog` interf
 
 You have a few options for how to define dialogs now:
 
-| | |
+| Dialog type | Description |
 |:--|:--|
 | A component dialog, derived from the `ComponentDialog` class | Allows you to encapsulate dialog code without naming conflicts with the outer contexts. See [reuse dialogs][reuse-dialogs]. |
 | A waterfall dialog, an instance of the `WaterfallDialog` class | Designed to work well with prompt dialogs, which prompt for and validate various types of user input. A waterfall automates most of the process for you, but imposes a certain form to your dialog code; see [sequential conversation flow][sequential-flow]. |

@@ -1,13 +1,15 @@
 <Type Name="PayloadReceiver" FullName="Microsoft.Bot.Streaming.PayloadTransport.PayloadReceiver">
-  <TypeSignature Language="C#" Value="public class PayloadReceiver : Microsoft.Bot.Streaming.PayloadTransport.IPayloadReceiver" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PayloadReceiver extends System.Object implements class Microsoft.Bot.Streaming.PayloadTransport.IPayloadReceiver" />
+  <TypeSignature Language="C#" Value="public class PayloadReceiver : IDisposable, Microsoft.Bot.Streaming.PayloadTransport.IPayloadReceiver" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PayloadReceiver extends System.Object implements class Microsoft.Bot.Streaming.PayloadTransport.IPayloadReceiver, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Streaming.PayloadTransport.PayloadReceiver" />
-  <TypeSignature Language="VB.NET" Value="Public Class PayloadReceiver&#xA;Implements IPayloadReceiver" />
-  <TypeSignature Language="F#" Value="type PayloadReceiver = class&#xA;    interface IPayloadReceiver" />
+  <TypeSignature Language="VB.NET" Value="Public Class PayloadReceiver&#xA;Implements IDisposable, IPayloadReceiver" />
+  <TypeSignature Language="F#" Value="type PayloadReceiver = class&#xA;    interface IPayloadReceiver&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -16,9 +18,14 @@
     <Interface>
       <InterfaceName>Microsoft.Bot.Streaming.PayloadTransport.IPayloadReceiver</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            PayloadReceivers subscribe to incoming streams and manage the consumption of raw data as it comes in.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,10 +39,14 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Streaming.PayloadTransport.PayloadReceiver" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,6 +64,8 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -64,13 +77,14 @@
         <param name="receiver">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Disconnect">
       <MemberSignature Language="C#" Value="public void Disconnect (Microsoft.Bot.Streaming.Transport.DisconnectedEventArgs e = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Disconnect(class Microsoft.Bot.Streaming.Transport.DisconnectedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.PayloadTransport.PayloadReceiver.Disconnect(Microsoft.Bot.Streaming.Transport.DisconnectedEventArgs)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub Disconnect (Optional e As DisconnectedEventArgs = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Disconnect (Optional e As DisconnectedEventArgs = Nothing)" />
       <MemberSignature Language="F#" Value="abstract member Disconnect : Microsoft.Bot.Streaming.Transport.DisconnectedEventArgs -&gt; unit&#xA;override this.Disconnect : Microsoft.Bot.Streaming.Transport.DisconnectedEventArgs -&gt; unit" Usage="payloadReceiver.Disconnect e" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -80,6 +94,8 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -91,6 +107,7 @@
         <param name="e">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Disconnected">
@@ -107,6 +124,8 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Streaming.Transport.DisconnectedEventHandler</ReturnType>
@@ -114,6 +133,62 @@
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.PayloadTransport.PayloadReceiver.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="payloadReceiver.Dispose " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Disposes the object and releases any related objects owned by the class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.PayloadTransport.PayloadReceiver.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="payloadReceiver.Dispose disposing" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">A Boolean that indicates whether the method call comes from a Dispose method (its value is true) or from a finalizer (its value is false).</param>
+        <summary>
+            Disposes objected used by the class.
+            </summary>
+        <remarks>
+            The disposing parameter should be false when called from a finalizer, and true when called from the IDisposable.Dispose method.
+            In other words, it is true when deterministically called and false when non-deterministically called.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsConnected">
@@ -130,6 +205,8 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -138,6 +215,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Subscribe">
@@ -154,6 +232,8 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -167,6 +247,7 @@
         <param name="receiveAction">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
   </Members>

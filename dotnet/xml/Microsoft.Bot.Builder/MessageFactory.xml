@@ -15,6 +15,8 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -49,7 +51,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.IMessageActivity Attachment (Microsoft.Bot.Schema.Attachment attachment, string text = default, string ssml = default, string inputHint = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.IMessageActivity Attachment(class Microsoft.Bot.Schema.Attachment attachment, string text, string ssml, string inputHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.MessageFactory.Attachment(Microsoft.Bot.Schema.Attachment,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function Attachment (attachment As Attachment, Optional text As String = null, Optional ssml As String = null, Optional inputHint As String = null) As IMessageActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Attachment (attachment As Attachment, Optional text As String = Nothing, Optional ssml As String = Nothing, Optional inputHint As String = Nothing) As IMessageActivity" />
       <MemberSignature Language="F#" Value="static member Attachment : Microsoft.Bot.Schema.Attachment * string * string * string -&gt; Microsoft.Bot.Schema.IMessageActivity" Usage="Microsoft.Bot.Builder.MessageFactory.Attachment (attachment, text, ssml, inputHint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -63,6 +65,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -97,7 +101,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.IMessageActivity Attachment (System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Attachment&gt; attachments, string text = default, string ssml = default, string inputHint = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.IMessageActivity Attachment(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Schema.Attachment&gt; attachments, string text, string ssml, string inputHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.MessageFactory.Attachment(System.Collections.Generic.IEnumerable{Microsoft.Bot.Schema.Attachment},System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function Attachment (attachments As IEnumerable(Of Attachment), Optional text As String = null, Optional ssml As String = null, Optional inputHint As String = null) As IMessageActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Attachment (attachments As IEnumerable(Of Attachment), Optional text As String = Nothing, Optional ssml As String = Nothing, Optional inputHint As String = Nothing) As IMessageActivity" />
       <MemberSignature Language="F#" Value="static member Attachment : seq&lt;Microsoft.Bot.Schema.Attachment&gt; * string * string * string -&gt; Microsoft.Bot.Schema.IMessageActivity" Usage="Microsoft.Bot.Builder.MessageFactory.Attachment (attachments, text, ssml, inputHint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -111,6 +115,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -145,7 +151,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.IMessageActivity Carousel (System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Attachment&gt; attachments, string text = default, string ssml = default, string inputHint = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.IMessageActivity Carousel(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Schema.Attachment&gt; attachments, string text, string ssml, string inputHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.MessageFactory.Carousel(System.Collections.Generic.IEnumerable{Microsoft.Bot.Schema.Attachment},System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function Carousel (attachments As IEnumerable(Of Attachment), Optional text As String = null, Optional ssml As String = null, Optional inputHint As String = null) As IMessageActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Carousel (attachments As IEnumerable(Of Attachment), Optional text As String = Nothing, Optional ssml As String = Nothing, Optional inputHint As String = Nothing) As IMessageActivity" />
       <MemberSignature Language="F#" Value="static member Carousel : seq&lt;Microsoft.Bot.Schema.Attachment&gt; * string * string * string -&gt; Microsoft.Bot.Schema.IMessageActivity" Usage="Microsoft.Bot.Builder.MessageFactory.Carousel (attachments, text, ssml, inputHint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -159,6 +165,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -227,7 +235,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.IMessageActivity ContentUrl (string url, string contentType, string name = default, string text = default, string ssml = default, string inputHint = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.IMessageActivity ContentUrl(string url, string contentType, string name, string text, string ssml, string inputHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.MessageFactory.ContentUrl(System.String,System.String,System.String,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ContentUrl (url As String, contentType As String, Optional name As String = null, Optional text As String = null, Optional ssml As String = null, Optional inputHint As String = null) As IMessageActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContentUrl (url As String, contentType As String, Optional name As String = Nothing, Optional text As String = Nothing, Optional ssml As String = Nothing, Optional inputHint As String = Nothing) As IMessageActivity" />
       <MemberSignature Language="F#" Value="static member ContentUrl : string * string * string * string * string * string -&gt; Microsoft.Bot.Schema.IMessageActivity" Usage="Microsoft.Bot.Builder.MessageFactory.ContentUrl (url, contentType, name, text, ssml, inputHint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -241,6 +249,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -283,7 +293,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.IMessageActivity SuggestedActions (System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.CardAction&gt; cardActions, string text = default, string ssml = default, string inputHint = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.IMessageActivity SuggestedActions(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Schema.CardAction&gt; cardActions, string text, string ssml, string inputHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.MessageFactory.SuggestedActions(System.Collections.Generic.IEnumerable{Microsoft.Bot.Schema.CardAction},System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function SuggestedActions (cardActions As IEnumerable(Of CardAction), Optional text As String = null, Optional ssml As String = null, Optional inputHint As String = null) As IMessageActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SuggestedActions (cardActions As IEnumerable(Of CardAction), Optional text As String = Nothing, Optional ssml As String = Nothing, Optional inputHint As String = Nothing) As IMessageActivity" />
       <MemberSignature Language="F#" Value="static member SuggestedActions : seq&lt;Microsoft.Bot.Schema.CardAction&gt; * string * string * string -&gt; Microsoft.Bot.Schema.IMessageActivity" Usage="Microsoft.Bot.Builder.MessageFactory.SuggestedActions (cardActions, text, ssml, inputHint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -297,6 +307,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -347,7 +359,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.IMessageActivity SuggestedActions (System.Collections.Generic.IEnumerable&lt;string&gt; actions, string text = default, string ssml = default, string inputHint = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.IMessageActivity SuggestedActions(class System.Collections.Generic.IEnumerable`1&lt;string&gt; actions, string text, string ssml, string inputHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.MessageFactory.SuggestedActions(System.Collections.Generic.IEnumerable{System.String},System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function SuggestedActions (actions As IEnumerable(Of String), Optional text As String = null, Optional ssml As String = null, Optional inputHint As String = null) As IMessageActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SuggestedActions (actions As IEnumerable(Of String), Optional text As String = Nothing, Optional ssml As String = Nothing, Optional inputHint As String = Nothing) As IMessageActivity" />
       <MemberSignature Language="F#" Value="static member SuggestedActions : seq&lt;string&gt; * string * string * string -&gt; Microsoft.Bot.Schema.IMessageActivity" Usage="Microsoft.Bot.Builder.MessageFactory.SuggestedActions (actions, text, ssml, inputHint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -361,6 +373,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -411,7 +425,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.Activity Text (string text, string ssml = default, string inputHint = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.Activity Text(string text, string ssml, string inputHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.MessageFactory.Text(System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function Text (text As String, Optional ssml As String = null, Optional inputHint As String = null) As Activity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Text (text As String, Optional ssml As String = Nothing, Optional inputHint As String = Nothing) As Activity" />
       <MemberSignature Language="F#" Value="static member Text : string * string * string -&gt; Microsoft.Bot.Schema.Activity" Usage="Microsoft.Bot.Builder.MessageFactory.Text (text, ssml, inputHint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -425,6 +439,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>

@@ -8,13 +8,17 @@
     <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            A set of well known definitions of <see cref="T:Microsoft.Bot.Streaming.Payloads.PayloadStream" /> types used by <see cref="T:Microsoft.Bot.Streaming.Payloads.Header" />s.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,12 +33,16 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            'X' to cancel all in progress communication.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,12 +57,16 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            'C' to cancel a specific <see cref="T:Microsoft.Bot.Streaming.Payloads.PayloadStream" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,6 +81,8 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -77,9 +91,11 @@
         <Parameter Name="header" Type="Microsoft.Bot.Streaming.Payloads.Header" />
       </Parameters>
       <Docs>
-        <param name="header">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="header">The header to type check.</param>
+        <summary>
+            A helper method for checking if a <see cref="T:Microsoft.Bot.Streaming.Payloads.Header" /> represents a <see cref="T:Microsoft.Bot.Streaming.Payloads.PayloadStream" />.
+            </summary>
+        <returns>True if the header represents a <see cref="T:Microsoft.Bot.Streaming.Payloads.PayloadStream" />, otherwise false.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,12 +110,16 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            'A' to mark a <see cref="T:Microsoft.Bot.Streaming.StreamingRequest" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,12 +134,16 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            'B' to mark a <see cref="T:Microsoft.Bot.Streaming.StreamingResponse" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,12 +158,16 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            'S' to mark a <see cref="T:Microsoft.Bot.Streaming.Payloads.PayloadStream" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

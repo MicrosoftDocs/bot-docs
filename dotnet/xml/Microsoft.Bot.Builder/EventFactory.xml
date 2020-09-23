@@ -9,6 +9,8 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -25,7 +27,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.IEventActivity CreateHandoffInitiation (Microsoft.Bot.Builder.ITurnContext turnContext, object handoffContext, Microsoft.Bot.Schema.Transcript transcript = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.IEventActivity CreateHandoffInitiation(class Microsoft.Bot.Builder.ITurnContext turnContext, object handoffContext, class Microsoft.Bot.Schema.Transcript transcript) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.EventFactory.CreateHandoffInitiation(Microsoft.Bot.Builder.ITurnContext,System.Object,Microsoft.Bot.Schema.Transcript)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateHandoffInitiation (turnContext As ITurnContext, handoffContext As Object, Optional transcript As Transcript = null) As IEventActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateHandoffInitiation (turnContext As ITurnContext, handoffContext As Object, Optional transcript As Transcript = Nothing) As IEventActivity" />
       <MemberSignature Language="F#" Value="static member CreateHandoffInitiation : Microsoft.Bot.Builder.ITurnContext * obj * Microsoft.Bot.Schema.Transcript -&gt; Microsoft.Bot.Schema.IEventActivity" Usage="Microsoft.Bot.Builder.EventFactory.CreateHandoffInitiation (turnContext, handoffContext, transcript)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -33,6 +35,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IEventActivity</ReturnType>
@@ -57,7 +61,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.IEventActivity CreateHandoffStatus (Microsoft.Bot.Schema.ConversationAccount conversation, string state, string message = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.IEventActivity CreateHandoffStatus(class Microsoft.Bot.Schema.ConversationAccount conversation, string state, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.EventFactory.CreateHandoffStatus(Microsoft.Bot.Schema.ConversationAccount,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateHandoffStatus (conversation As ConversationAccount, state As String, Optional message As String = null) As IEventActivity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateHandoffStatus (conversation As ConversationAccount, state As String, Optional message As String = Nothing) As IEventActivity" />
       <MemberSignature Language="F#" Value="static member CreateHandoffStatus : Microsoft.Bot.Schema.ConversationAccount * string * string -&gt; Microsoft.Bot.Schema.IEventActivity" Usage="Microsoft.Bot.Builder.EventFactory.CreateHandoffStatus (conversation, state, message)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -65,6 +69,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IEventActivity</ReturnType>

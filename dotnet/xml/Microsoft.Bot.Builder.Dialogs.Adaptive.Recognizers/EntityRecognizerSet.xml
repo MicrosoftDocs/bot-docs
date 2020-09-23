@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizer&gt;</BaseTypeName>
@@ -33,6 +35,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -51,6 +55,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="recognizers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizer&gt;" />
@@ -72,10 +78,13 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("$kind")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("$kind")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("$kind")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -90,13 +99,15 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt;&gt; RecognizeEntitiesAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Entity&gt; entities = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Entity&gt;&gt; RecognizeEntitiesAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Schema.Entity&gt; entities) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizerSet.RecognizeEntitiesAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.Collections.Generic.IEnumerable{Microsoft.Bot.Schema.Entity})" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function RecognizeEntitiesAsync (dialogContext As DialogContext, Optional entities As IEnumerable(Of Entity) = null) As Task(Of IList(Of Entity))" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RecognizeEntitiesAsync (dialogContext As DialogContext, Optional entities As IEnumerable(Of Entity) = Nothing) As Task(Of IList(Of Entity))" />
       <MemberSignature Language="F#" Value="abstract member RecognizeEntitiesAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * seq&lt;Microsoft.Bot.Schema.Entity&gt; -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt;&gt;&#xA;override this.RecognizeEntitiesAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * seq&lt;Microsoft.Bot.Schema.Entity&gt; -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt;&gt;" Usage="entityRecognizerSet.RecognizeEntitiesAsync (dialogContext, entities)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt;&gt;</ReturnType>
@@ -120,13 +131,15 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt;&gt; RecognizeEntitiesAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, Microsoft.Bot.Schema.Activity activity, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Entity&gt; entities = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Entity&gt;&gt; RecognizeEntitiesAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, class Microsoft.Bot.Schema.Activity activity, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Schema.Entity&gt; entities) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizerSet.RecognizeEntitiesAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Schema.Activity,System.Collections.Generic.IEnumerable{Microsoft.Bot.Schema.Entity})" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function RecognizeEntitiesAsync (dialogContext As DialogContext, activity As Activity, Optional entities As IEnumerable(Of Entity) = null) As Task(Of IList(Of Entity))" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RecognizeEntitiesAsync (dialogContext As DialogContext, activity As Activity, Optional entities As IEnumerable(Of Entity) = Nothing) As Task(Of IList(Of Entity))" />
       <MemberSignature Language="F#" Value="abstract member RecognizeEntitiesAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Schema.Activity * seq&lt;Microsoft.Bot.Schema.Entity&gt; -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt;&gt;&#xA;override this.RecognizeEntitiesAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Schema.Activity * seq&lt;Microsoft.Bot.Schema.Entity&gt; -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt;&gt;" Usage="entityRecognizerSet.RecognizeEntitiesAsync (dialogContext, activity, entities)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt;&gt;</ReturnType>
@@ -152,13 +165,15 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt;&gt; RecognizeEntitiesAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, string text, string locale, System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Entity&gt; entities = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Entity&gt;&gt; RecognizeEntitiesAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, string text, string locale, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Schema.Entity&gt; entities) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizerSet.RecognizeEntitiesAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,System.String,System.String,System.Collections.Generic.IEnumerable{Microsoft.Bot.Schema.Entity})" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function RecognizeEntitiesAsync (dialogContext As DialogContext, text As String, locale As String, Optional entities As IEnumerable(Of Entity) = null) As Task(Of IList(Of Entity))" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RecognizeEntitiesAsync (dialogContext As DialogContext, text As String, locale As String, Optional entities As IEnumerable(Of Entity) = Nothing) As Task(Of IList(Of Entity))" />
       <MemberSignature Language="F#" Value="abstract member RecognizeEntitiesAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * string * string * seq&lt;Microsoft.Bot.Schema.Entity&gt; -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt;&gt;&#xA;override this.RecognizeEntitiesAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * string * string * seq&lt;Microsoft.Bot.Schema.Entity&gt; -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt;&gt;" Usage="entityRecognizerSet.RecognizeEntitiesAsync (dialogContext, text, locale, entities)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Entity&gt;&gt;</ReturnType>

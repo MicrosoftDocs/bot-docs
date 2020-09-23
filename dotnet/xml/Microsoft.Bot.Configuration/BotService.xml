@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Configuration.AzureService</BaseTypeName>
@@ -15,11 +17,14 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Obsolete("This class is deprecated.  See https://aka.ms/bot-file-basics for more information.", false)</AttributeName>
+      <AttributeName Language="C#">[System.Obsolete("This class is deprecated.  See https://aka.ms/bot-file-basics for more information.", false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("This class is deprecated.  See https://aka.ms/bot-file-basics for more information.", false)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Configuration properties for a connected Azure Bot Service bot registration.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,6 +38,8 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -53,10 +60,13 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("appId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("appId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("appId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

@@ -1,0 +1,49 @@
+<Type Name="NumberTransformEvaluator" FullName="AdaptiveExpressions.BuiltinFunctions.NumberTransformEvaluator">
+  <TypeSignature Language="C#" Value="public class NumberTransformEvaluator : AdaptiveExpressions.ExpressionEvaluator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NumberTransformEvaluator extends AdaptiveExpressions.ExpressionEvaluator" />
+  <TypeSignature Language="DocId" Value="T:AdaptiveExpressions.BuiltinFunctions.NumberTransformEvaluator" />
+  <TypeSignature Language="VB.NET" Value="Public Class NumberTransformEvaluator&#xA;Inherits ExpressionEvaluator" />
+  <TypeSignature Language="F#" Value="type NumberTransformEvaluator = class&#xA;    inherit ExpressionEvaluator" />
+  <AssemblyInfo>
+    <AssemblyName>AdaptiveExpressions</AssemblyName>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>AdaptiveExpressions.ExpressionEvaluator</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Evaluator that transforms a number to another number.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NumberTransformEvaluator (string type, Func&lt;System.Collections.Generic.IReadOnlyList&lt;object&gt;,object&gt; function);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, class System.Func`2&lt;class System.Collections.Generic.IReadOnlyList`1&lt;object&gt;, object&gt; function) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.BuiltinFunctions.NumberTransformEvaluator.#ctor(System.String,System.Func{System.Collections.Generic.IReadOnlyList{System.Object},System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (type As String, function As Func(Of IReadOnlyList(Of Object), Object))" />
+      <MemberSignature Language="F#" Value="new AdaptiveExpressions.BuiltinFunctions.NumberTransformEvaluator : string * Func&lt;System.Collections.Generic.IReadOnlyList&lt;obj&gt;, obj&gt; -&gt; AdaptiveExpressions.BuiltinFunctions.NumberTransformEvaluator" Usage="new AdaptiveExpressions.BuiltinFunctions.NumberTransformEvaluator (type, function)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="function" Type="System.Func&lt;System.Collections.Generic.IReadOnlyList&lt;System.Object&gt;,System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="type">Name of the function.</param>
+        <param name="function"> The number tranform function, it takes a list of objects as input and returns an object.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:AdaptiveExpressions.BuiltinFunctions.NumberTransformEvaluator" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

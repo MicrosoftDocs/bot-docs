@@ -7,6 +7,8 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.ComponentRegistration</BaseTypeName>
@@ -17,7 +19,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Component registration for AdaptiveTesting resources.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,6 +34,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -50,10 +56,13 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.AdaptiveTestingComponentRegistration/&lt;GetConverters&gt;d__1))</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.AdaptiveTestingComponentRegistration/&lt;GetConverters&gt;d__1))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.AdaptiveTestingComponentRegistration/&lt;GetConverters&gt;d__1))&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -69,6 +78,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="GetDeclarativeTypes">
@@ -84,10 +94,13 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.AdaptiveTestingComponentRegistration/&lt;GetDeclarativeTypes&gt;d__0))</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.AdaptiveTestingComponentRegistration/&lt;GetDeclarativeTypes&gt;d__0))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.AdaptiveTestingComponentRegistration/&lt;GetDeclarativeTypes&gt;d__0))&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -101,6 +114,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
   </Members>

@@ -1,0 +1,95 @@
+<Type Name="UserTokenMock" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.UserTokenMocks.UserTokenMock">
+  <TypeSignature Language="C#" Value="public abstract class UserTokenMock" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit UserTokenMock extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.UserTokenMocks.UserTokenMock" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class UserTokenMock" />
+  <TypeSignature Language="F#" Value="type UserTokenMock = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Abstract class for mocking user token flows.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected UserTokenMock ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.UserTokenMocks.UserTokenMock.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterSourcePath">
+      <MemberSignature Language="C#" Value="protected void RegisterSourcePath (string path, int line);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RegisterSourcePath(string path, int32 line) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.UserTokenMocks.UserTokenMock.RegisterSourcePath(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RegisterSourcePath (path As String, line As Integer)" />
+      <MemberSignature Language="F#" Value="member this.RegisterSourcePath : string * int -&gt; unit" Usage="userTokenMock.RegisterSourcePath (path, line)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="line" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="path">The path to the file.</param>
+        <param name="line">The caller's line.</param>
+        <summary>
+            Registers the source path.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Setup">
+      <MemberSignature Language="C#" Value="public abstract void Setup (Microsoft.Bot.Builder.Adapters.TestAdapter adapter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Setup(class Microsoft.Bot.Builder.Adapters.TestAdapter adapter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.UserTokenMocks.UserTokenMock.Setup(Microsoft.Bot.Builder.Adapters.TestAdapter)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Setup (adapter As TestAdapter)" />
+      <MemberSignature Language="F#" Value="abstract member Setup : Microsoft.Bot.Builder.Adapters.TestAdapter -&gt; unit" Usage="userTokenMock.Setup adapter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="adapter" Type="Microsoft.Bot.Builder.Adapters.TestAdapter" />
+      </Parameters>
+      <Docs>
+        <param name="adapter">adapter to register the mock with.</param>
+        <summary>
+            Method to setup this mock for an adapter.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

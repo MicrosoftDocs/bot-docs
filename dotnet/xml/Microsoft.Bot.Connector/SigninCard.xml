@@ -43,7 +43,7 @@
       <MemberSignature Language="C#" Value="public SigninCard (string text = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardAction&gt; buttons = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Connector.CardAction&gt; buttons) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.SigninCard.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Connector.CardAction})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional text As String = null, Optional buttons As IList(Of CardAction) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional text As String = Nothing, Optional buttons As IList(Of CardAction) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Connector.SigninCard : string * System.Collections.Generic.IList&lt;Microsoft.Bot.Connector.CardAction&gt; -&gt; Microsoft.Bot.Connector.SigninCard" Usage="new Microsoft.Bot.Connector.SigninCard (text, buttons)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -80,7 +80,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="buttons")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="buttons")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="buttons")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -161,7 +162,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="text")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="text")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="text")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

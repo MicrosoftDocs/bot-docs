@@ -8,13 +8,17 @@
     <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            The <see cref="T:Microsoft.Bot.Streaming.Payloads.PayloadDisassembler" /> used used by Cancel requests. 
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,6 +33,8 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="sender" Type="Microsoft.Bot.Streaming.PayloadTransport.IPayloadSender" />
@@ -36,10 +42,12 @@
         <Parameter Name="type" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="sender">To be added.</param>
-        <param name="id">To be added.</param>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sender">The <see cref="T:Microsoft.Bot.Streaming.PayloadTransport.PayloadSender" /> this Cancel request will be sent by.</param>
+        <param name="id">The ID of the <see cref="T:Microsoft.Bot.Streaming.Payloads.PayloadStream" /> to cancel.</param>
+        <param name="type">The type of the <see cref="T:Microsoft.Bot.Streaming.Payloads.PayloadStream" /> that is being cancelled.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Streaming.Payloads.CancelDisassembler" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,14 +62,18 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            A task that initiates the process of disassembling the request and signals the <see cref="T:Microsoft.Bot.Streaming.PayloadTransport.PayloadSender" /> to begin sending.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the result of the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

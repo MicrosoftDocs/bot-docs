@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,6 +32,8 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,13 +47,15 @@
       <MemberSignature Language="C#" Value="public TeamsChannelData (Microsoft.Bot.Schema.Teams.ChannelInfo channel = default, string eventType = default, Microsoft.Bot.Schema.Teams.TeamInfo team = default, Microsoft.Bot.Schema.Teams.NotificationInfo notification = default, Microsoft.Bot.Schema.Teams.TenantInfo tenant = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Schema.Teams.ChannelInfo channel, string eventType, class Microsoft.Bot.Schema.Teams.TeamInfo team, class Microsoft.Bot.Schema.Teams.NotificationInfo notification, class Microsoft.Bot.Schema.Teams.TenantInfo tenant) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.TeamsChannelData.#ctor(Microsoft.Bot.Schema.Teams.ChannelInfo,System.String,Microsoft.Bot.Schema.Teams.TeamInfo,Microsoft.Bot.Schema.Teams.NotificationInfo,Microsoft.Bot.Schema.Teams.TenantInfo)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional channel As ChannelInfo = null, Optional eventType As String = null, Optional team As TeamInfo = null, Optional notification As NotificationInfo = null, Optional tenant As TenantInfo = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional channel As ChannelInfo = Nothing, Optional eventType As String = Nothing, Optional team As TeamInfo = Nothing, Optional notification As NotificationInfo = Nothing, Optional tenant As TenantInfo = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.TeamsChannelData : Microsoft.Bot.Schema.Teams.ChannelInfo * string * Microsoft.Bot.Schema.Teams.TeamInfo * Microsoft.Bot.Schema.Teams.NotificationInfo * Microsoft.Bot.Schema.Teams.TenantInfo -&gt; Microsoft.Bot.Schema.Teams.TeamsChannelData" Usage="new Microsoft.Bot.Schema.Teams.TeamsChannelData (channel, eventType, team, notification, tenant)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="channel" Type="Microsoft.Bot.Schema.Teams.ChannelInfo" />
@@ -85,10 +91,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="channel")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="channel")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="channel")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -114,10 +123,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="eventType")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="eventType")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="eventType")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -142,10 +154,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="notification")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="notification")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="notification")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -170,10 +185,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="team")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="team")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="team")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -199,10 +217,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="tenant")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="tenant")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="tenant")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

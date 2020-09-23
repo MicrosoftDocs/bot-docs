@@ -8,13 +8,17 @@
     <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            A collection of constants useful when working with <see cref="T:Microsoft.Bot.Streaming.Payloads.Header" />s.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,6 +32,8 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -46,13 +52,17 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <MemberValue>48</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The maximum length of a <see cref="T:Microsoft.Bot.Streaming.Payloads.Header" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,13 +77,17 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <MemberValue>999999</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The maximum possible length of a data buffer containing a <see cref="T:Microsoft.Bot.Streaming.Payloads.PayloadStream" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,13 +102,17 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <MemberValue>4096</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The maximum length of a single payload segment.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,13 +127,17 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The minimum possible length of a data buffer containing a <see cref="T:Microsoft.Bot.Streaming.Payloads.PayloadStream" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

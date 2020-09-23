@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -15,7 +17,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            Options for evaluation of LG template <see cref="T:Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions" /> class.
+            Options for evaluating LG templates.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -30,10 +32,14 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,13 +54,17 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="opt" Type="Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions" />
       </Parameters>
       <Docs>
-        <param name="opt">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="opt">Instance to copy initial settings from.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,13 +79,17 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="optionsList" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="optionsList">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="optionsList">List of strings containing the options from a LG file.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,6 +104,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Microsoft.Bot.Builder.LanguageGeneration.LGLineBreakStyle&gt;</ReturnType>
@@ -100,6 +116,31 @@
             </summary>
         <value>
             A string value represents the line break style in LG.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Locale">
+      <MemberSignature Language="C#" Value="public string Locale { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Locale" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions.Locale" />
+      <MemberSignature Language="VB.NET" Value="Public Property Locale As String" />
+      <MemberSignature Language="F#" Value="member this.Locale : string with get, set" Usage="Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions.Locale" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the locale for evaluating LG.
+            </summary>
+        <value>
+            A CultureInfo or null object.
             </value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -115,6 +156,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions</ReturnType>
@@ -123,12 +166,12 @@
         <Parameter Name="opt" Type="Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions" />
       </Parameters>
       <Docs>
-        <param name="opt">The incoming option for merging.</param>
+        <param name="opt">Incoming option for merging.</param>
         <summary>
             Merge a incoming option to current option. If a property in incoming option is not null while it is null in current
             option, then the value of this property will be overwritten.
             </summary>
-        <returns>The result after merging.</returns>
+        <returns>Result after merging.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,6 +186,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Func&lt;System.String,System.Object&gt;</ReturnType>
@@ -169,6 +214,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>

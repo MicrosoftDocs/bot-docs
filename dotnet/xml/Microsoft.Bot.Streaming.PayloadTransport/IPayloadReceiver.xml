@@ -8,10 +8,14 @@
     <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            PayloadReceivers subscribe to incoming streams and manage the consumption of raw data as it comes in.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,6 +30,8 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -34,8 +40,10 @@
         <Parameter Name="receiver" Type="Microsoft.Bot.Streaming.Transport.ITransportReceiver" />
       </Parameters>
       <Docs>
-        <param name="receiver">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="receiver">The <see cref="T:Microsoft.Bot.Streaming.Transport.ITransportReceiver" /> to connect this PayloadReceiver to.</param>
+        <summary>
+            Connects the PayloadReceiver to the passed in <see cref="T:Microsoft.Bot.Streaming.Transport.ITransportReceiver" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,13 +51,15 @@
       <MemberSignature Language="C#" Value="public void Disconnect (Microsoft.Bot.Streaming.Transport.DisconnectedEventArgs e = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Disconnect(class Microsoft.Bot.Streaming.Transport.DisconnectedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Streaming.PayloadTransport.IPayloadReceiver.Disconnect(Microsoft.Bot.Streaming.Transport.DisconnectedEventArgs)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub Disconnect (Optional e As DisconnectedEventArgs = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Disconnect (Optional e As DisconnectedEventArgs = Nothing)" />
       <MemberSignature Language="F#" Value="abstract member Disconnect : Microsoft.Bot.Streaming.Transport.DisconnectedEventArgs -&gt; unit" Usage="iPayloadReceiver.Disconnect e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -58,8 +68,10 @@
         <Parameter Name="e" Type="Microsoft.Bot.Streaming.Transport.DisconnectedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">Optional arguments to proprogate during disconnection.</param>
+        <summary>
+            Disconnects the PayloadReceiver from its <see cref="T:Microsoft.Bot.Streaming.Transport.ITransportReceiver" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,12 +86,16 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Streaming.Transport.DisconnectedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Emitted when the PayloadReceiver becomes disconneced from the <see cref="T:Microsoft.Bot.Streaming.Transport.ITransportReceiver" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,13 +110,19 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets a value indicating whether the PayloadReceiver is currently connected to an <see cref="T:Microsoft.Bot.Streaming.Transport.ITransportReceiver" />.
+            </summary>
+        <value>
+            The value indicating if the PayloadReceiver is currently connected to an <see cref="T:Microsoft.Bot.Streaming.Transport.ITransportReceiver" />.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,6 +137,8 @@
         <AssemblyName>Microsoft.Bot.Streaming</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -124,9 +148,11 @@
         <Parameter Name="receiveAction" Type="System.Action&lt;Microsoft.Bot.Streaming.Payloads.Header,System.IO.Stream,System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <param name="getStream">To be added.</param>
-        <param name="receiveAction">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="getStream">The function executed to attach to the specified <see cref="T:System.IO.Stream" />.</param>
+        <param name="receiveAction">The function to execute when new data is received from the attached <see cref="T:System.IO.Stream" />.</param>
+        <summary>
+            Sets the behaviors used to attach to a specified <see cref="T:System.IO.Stream" /> and on receiving data on said Stream.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

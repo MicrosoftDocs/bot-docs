@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -22,10 +24,12 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.CLSCompliant(false)</AttributeName>
+      <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.6.6")</AttributeName>
+      <AttributeName Language="C#">[System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.6.6")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.6.6")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -47,6 +51,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -68,6 +74,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -76,7 +84,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+CommentDefinitionContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -103,6 +112,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -111,7 +122,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+ErrorDefinitionContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -138,6 +150,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -146,7 +160,8 @@
         <Parameter Name="context" Type="Antlr4.Runtime.ParserRuleContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -172,6 +187,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -180,7 +197,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+FileContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -207,6 +225,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -215,7 +235,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+ImportDefinitionContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -242,6 +263,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -250,7 +273,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+OptionDefinitionContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -277,6 +301,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -285,7 +311,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+ParagraphContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -312,6 +339,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -320,7 +349,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+TemplateBodyContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -347,6 +377,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -355,7 +387,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+TemplateBodyLineContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -382,6 +415,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -390,7 +425,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+TemplateDefinitionContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -417,6 +453,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -425,7 +463,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+TemplateNameLineContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -452,6 +491,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -460,7 +501,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+CommentDefinitionContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -487,6 +529,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -495,7 +539,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+ErrorDefinitionContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -522,6 +567,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -530,7 +577,8 @@
         <Parameter Name="context" Type="Antlr4.Runtime.ParserRuleContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -556,6 +604,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -564,7 +614,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+FileContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -591,6 +642,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -599,7 +652,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+ImportDefinitionContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -626,6 +680,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -634,7 +690,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+OptionDefinitionContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -661,6 +718,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -669,7 +728,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+ParagraphContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -696,6 +756,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -704,7 +766,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+TemplateBodyContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -731,6 +794,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -739,7 +804,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+TemplateBodyLineContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -766,6 +832,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -774,7 +842,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+TemplateDefinitionContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -801,6 +870,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -809,7 +880,8 @@
         <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGFileParser+TemplateNameLineContext">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -836,6 +908,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -844,7 +918,8 @@
         <Parameter Name="node" Type="Antlr4.Runtime.Tree.IErrorNode">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -870,6 +945,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -878,7 +955,8 @@
         <Parameter Name="node" Type="Antlr4.Runtime.Tree.ITerminalNode">
           <Attributes>
             <Attribute>
-              <AttributeName>Antlr4.Runtime.Misc.NotNull</AttributeName>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>

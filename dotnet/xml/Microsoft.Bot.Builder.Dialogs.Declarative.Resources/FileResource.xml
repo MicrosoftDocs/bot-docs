@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource</BaseTypeName>
@@ -31,6 +33,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="path" Type="System.String" />
@@ -40,31 +44,6 @@
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.FileResource" /> class.
             </summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="FullName">
-      <MemberSignature Language="C#" Value="public string FullName { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string FullName" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.FileResource.FullName" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FullName As String" />
-      <MemberSignature Language="F#" Value="member this.FullName : string" Usage="Microsoft.Bot.Builder.Dialogs.Declarative.Resources.FileResource.FullName" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-        <AssemblyVersion>4.9.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Gets the resource path.
-            </summary>
-        <value>
-            The full path to the resource on disk.
-            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,6 +58,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.IO.Stream&gt;</ReturnType>
@@ -103,14 +84,18 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Returns a string that represents the current object.
+            </summary>
+        <returns>A string that represents the current object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

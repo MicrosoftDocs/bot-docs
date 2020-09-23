@@ -7,6 +7,8 @@
   <AssemblyInfo>
     <AssemblyName>AdaptiveExpressions</AssemblyName>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -50,6 +52,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -70,6 +74,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -78,8 +84,10 @@
         <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,AdaptiveExpressions.ExpressionEvaluator&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="item">A key value pair of string to ExpressionEvaluator.</param>
+        <summary>
+            Inserts a mapping of a string key to ExpressionEvaluator into FunctionTable from a key value pair.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,6 +104,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -105,9 +115,11 @@
         <Parameter Name="value" Type="AdaptiveExpressions.ExpressionEvaluator" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The function name to be added.</param>
+        <param name="value">The value of the ExpressionEvaluator to be added.</param>
+        <summary>
+            Inserts a mapping of a string key to ExpressionEvaluator into FunctionTable.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,6 +133,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -130,9 +144,11 @@
         <Parameter Name="func" Type="System.Func&lt;System.Collections.Generic.IReadOnlyList&lt;System.Object&gt;,System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="func">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The key of function name to be added.</param>
+        <param name="func">The value of the user customized function to be added.</param>
+        <summary>
+            Inserts a mapping of a string key to user customized function into FunctionTable.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,13 +165,17 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Clears the user customized functions.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -172,6 +192,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -180,9 +202,14 @@
         <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,AdaptiveExpressions.ExpressionEvaluator&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">A key value pair of string to ExpressionEvaluator.</param>
+        <summary>
+            Determines whether FunctionTable contains a given key value pair of string to ExpressionEvaluator.
+            </summary>
+        <returns>
+            A boolean value indicating  whether the key-value pair is in the FunctionTable.
+            Retuens True if the key-value pair is contained, otherwise returns False.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -199,6 +226,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -207,9 +236,14 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">A string key.</param>
+        <summary>
+            Determines if the FunctionTable contains a given string key.
+            </summary>
+        <returns>
+            A boolean value indicating  whether the key is in the FunctionTable.
+            Retuens True if the key is contained, otherwise returns False.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,6 +260,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -235,9 +271,11 @@
         <Parameter Name="arrayIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="arrayIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">An array of string values.</param>
+        <param name="arrayIndex">An integer of index.</param>
+        <summary>
+            Not implemented.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -254,13 +292,17 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets a value of the total number of StandardFunctions and user custom functions.
+            </summary>
+        <value>An integer value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -277,14 +319,18 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;System.String,AdaptiveExpressions.ExpressionEvaluator&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Generates an enumerator through all standard functions.
+            </summary>
+        <returns>An enumerator of standard functions.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -301,13 +347,17 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets a value indicating whether the FunctionTable is readonly.
+            </summary>
+        <value>A boolean value indicating whether the FunctionTable is readonly.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -324,6 +374,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.ExpressionEvaluator</ReturnType>
@@ -332,9 +384,11 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="key">A string value of function name.</param>
+        <summary>
+            Gets a value of ExpressionEvaluator corresponding to the given key.
+            </summary>
+        <value>An ExpressionEvaluator.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -351,13 +405,17 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.ICollection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets a collection of string values that represent the keys of the StandardFunctions. 
+            </summary>
+        <value> A list of string values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -374,6 +432,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -382,9 +442,11 @@
         <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,AdaptiveExpressions.ExpressionEvaluator&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">A key value pair of string to ExpressionEvaluator.</param>
+        <summary>
+            Removes a specified key value pair from user customized functions.
+            </summary>
+        <returns>A boolean value indicating  whether the key is successfully removed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -401,6 +463,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -409,9 +473,11 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">A string key of function name.</param>
+        <summary>
+            Removes a specified key from user customized functions.
+            </summary>
+        <returns>A boolean value indicating  whether the key is successfully removed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -428,6 +494,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
@@ -449,6 +517,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -458,10 +528,13 @@
         <Parameter Name="value" Type="AdaptiveExpressions.ExpressionEvaluator" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key of the value to get.</param>
+        <param name="value">When this method returns, contains the object from the FunctionTable
+            that has the specified key, or the default value of the type if the operation failed.</param>
+        <summary>
+            Attempts to get the value associated with the specified key from the FunctionTable.
+            </summary>
+        <returns>A boolean value indicating  whether the value is successfully obtained.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -478,13 +551,17 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.ICollection&lt;AdaptiveExpressions.ExpressionEvaluator&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets a collection of ExpressionEvaluator which is the value of the StandardFunctions.
+            </summary>
+        <value>A list of ExpressionEvaluator.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

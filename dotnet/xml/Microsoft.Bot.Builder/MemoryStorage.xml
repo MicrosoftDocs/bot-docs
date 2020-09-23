@@ -15,6 +15,8 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -35,7 +37,7 @@
       <MemberSignature Language="C#" Value="public MemoryStorage (System.Collections.Generic.Dictionary&lt;string,Newtonsoft.Json.Linq.JObject&gt; dictionary = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.Dictionary`2&lt;string, class Newtonsoft.Json.Linq.JObject&gt; dictionary) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.MemoryStorage.#ctor(System.Collections.Generic.Dictionary{System.String,Newtonsoft.Json.Linq.JObject})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional dictionary As Dictionary(Of String, JObject) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional dictionary As Dictionary(Of String, JObject) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.MemoryStorage : System.Collections.Generic.Dictionary&lt;string, Newtonsoft.Json.Linq.JObject&gt; -&gt; Microsoft.Bot.Builder.MemoryStorage" Usage="new Microsoft.Bot.Builder.MemoryStorage dictionary" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -49,6 +51,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dictionary" Type="System.Collections.Generic.Dictionary&lt;System.String,Newtonsoft.Json.Linq.JObject&gt;" />
@@ -65,7 +69,7 @@
       <MemberSignature Language="C#" Value="public MemoryStorage (Newtonsoft.Json.JsonSerializer jsonSerializer, System.Collections.Generic.Dictionary&lt;string,Newtonsoft.Json.Linq.JObject&gt; dictionary = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Newtonsoft.Json.JsonSerializer jsonSerializer, class System.Collections.Generic.Dictionary`2&lt;string, class Newtonsoft.Json.Linq.JObject&gt; dictionary) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.MemoryStorage.#ctor(Newtonsoft.Json.JsonSerializer,System.Collections.Generic.Dictionary{System.String,Newtonsoft.Json.Linq.JObject})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (jsonSerializer As JsonSerializer, Optional dictionary As Dictionary(Of String, JObject) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (jsonSerializer As JsonSerializer, Optional dictionary As Dictionary(Of String, JObject) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.MemoryStorage : Newtonsoft.Json.JsonSerializer * System.Collections.Generic.Dictionary&lt;string, Newtonsoft.Json.Linq.JObject&gt; -&gt; Microsoft.Bot.Builder.MemoryStorage" Usage="new Microsoft.Bot.Builder.MemoryStorage (jsonSerializer, dictionary)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -74,6 +78,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="jsonSerializer" Type="Newtonsoft.Json.JsonSerializer" />
@@ -110,6 +116,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -152,6 +160,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;&gt;</ReturnType>
@@ -195,6 +205,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>

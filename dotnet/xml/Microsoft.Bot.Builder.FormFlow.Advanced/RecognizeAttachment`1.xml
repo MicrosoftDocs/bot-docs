@@ -91,7 +91,7 @@
       <MemberSignature Language="C#" Value="public override System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch&gt; Matches (Microsoft.Bot.Connector.IMessageActivity input, object defaultValue = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch&gt; Matches(class Microsoft.Bot.Connector.IMessageActivity input, object defaultValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.FormFlow.Advanced.RecognizeAttachment`1.Matches(Microsoft.Bot.Connector.IMessageActivity,System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function Matches (input As IMessageActivity, Optional defaultValue As Object = null) As IEnumerable(Of TermMatch)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Matches (input As IMessageActivity, Optional defaultValue As Object = Nothing) As IEnumerable(Of TermMatch)" />
       <MemberSignature Language="F#" Value="override this.Matches : Microsoft.Bot.Connector.IMessageActivity * obj -&gt; seq&lt;Microsoft.Bot.Builder.FormFlow.Advanced.TermMatch&gt;" Usage="recognizeAttachment.Matches (input, defaultValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

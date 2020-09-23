@@ -10,6 +10,8 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.AspNetCore.Mvc.ControllerBase</BaseTypeName>
@@ -35,6 +37,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="handler" Type="Microsoft.Bot.Builder.ChannelServiceHandler" />
@@ -60,10 +64,13 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Microsoft.AspNetCore.Mvc.HttpPost("v3/conversations")</AttributeName>
+          <AttributeName Language="C#">[Microsoft.AspNetCore.Mvc.HttpPost("v3/conversations")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Microsoft.AspNetCore.Mvc.HttpPost("v3/conversations")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -73,7 +80,8 @@
         <Parameter Name="parameters" Type="Microsoft.Bot.Schema.ConversationParameters">
           <Attributes>
             <Attribute>
-              <AttributeName>Microsoft.AspNetCore.Mvc.FromBody</AttributeName>
+              <AttributeName Language="C#">[Microsoft.AspNetCore.Mvc.FromBody]</AttributeName>
+              <AttributeName Language="F#">[&lt;Microsoft.AspNetCore.Mvc.FromBody&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -100,10 +108,13 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Microsoft.AspNetCore.Mvc.HttpDelete("v3/conversations/{conversationId}/activities/{activityId}")</AttributeName>
+          <AttributeName Language="C#">[Microsoft.AspNetCore.Mvc.HttpDelete("v3/conversations/{conversationId}/activities/{activityId}")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Microsoft.AspNetCore.Mvc.HttpDelete("v3/conversations/{conversationId}/activities/{activityId}")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -136,10 +147,13 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Microsoft.AspNetCore.Mvc.HttpDelete("v3/conversations/{conversationId}/members/{memberId}")</AttributeName>
+          <AttributeName Language="C#">[Microsoft.AspNetCore.Mvc.HttpDelete("v3/conversations/{conversationId}/members/{memberId}")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Microsoft.AspNetCore.Mvc.HttpDelete("v3/conversations/{conversationId}/members/{memberId}")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -172,10 +186,13 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Microsoft.AspNetCore.Mvc.HttpGet("v3/conversations/{conversationId}/activities/{activityId}/members")</AttributeName>
+          <AttributeName Language="C#">[Microsoft.AspNetCore.Mvc.HttpGet("v3/conversations/{conversationId}/activities/{activityId}/members")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Microsoft.AspNetCore.Mvc.HttpGet("v3/conversations/{conversationId}/activities/{activityId}/members")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -210,10 +227,13 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Microsoft.AspNetCore.Mvc.HttpGet("v3/conversations/{conversationId}/members")</AttributeName>
+          <AttributeName Language="C#">[Microsoft.AspNetCore.Mvc.HttpGet("v3/conversations/{conversationId}/members")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Microsoft.AspNetCore.Mvc.HttpGet("v3/conversations/{conversationId}/members")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -235,7 +255,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt; GetConversationPagedMembersAsync (string conversationId, int pageSize = -1, string continuationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.AspNetCore.Mvc.IActionResult&gt; GetConversationPagedMembersAsync(string conversationId, int32 pageSize, string continuationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.ChannelServiceController.GetConversationPagedMembersAsync(System.String,System.Int32,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetConversationPagedMembersAsync (conversationId As String, Optional pageSize As Integer = -1, Optional continuationToken As String = null) As Task(Of IActionResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetConversationPagedMembersAsync (conversationId As String, Optional pageSize As Integer = -1, Optional continuationToken As String = Nothing) As Task(Of IActionResult)" />
       <MemberSignature Language="F#" Value="abstract member GetConversationPagedMembersAsync : string * int * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;&#xA;override this.GetConversationPagedMembersAsync : string * int * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;" Usage="channelServiceController.GetConversationPagedMembersAsync (conversationId, pageSize, continuationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -244,10 +264,13 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Microsoft.AspNetCore.Mvc.HttpGet("v3/conversations/{conversationId}/pagedmembers")</AttributeName>
+          <AttributeName Language="C#">[Microsoft.AspNetCore.Mvc.HttpGet("v3/conversations/{conversationId}/pagedmembers")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Microsoft.AspNetCore.Mvc.HttpGet("v3/conversations/{conversationId}/pagedmembers")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -273,7 +296,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt; GetConversationsAsync (string continuationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.AspNetCore.Mvc.IActionResult&gt; GetConversationsAsync(string continuationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Integration.AspNet.Core.ChannelServiceController.GetConversationsAsync(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetConversationsAsync (Optional continuationToken As String = null) As Task(Of IActionResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetConversationsAsync (Optional continuationToken As String = Nothing) As Task(Of IActionResult)" />
       <MemberSignature Language="F#" Value="abstract member GetConversationsAsync : string -&gt; System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;&#xA;override this.GetConversationsAsync : string -&gt; System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Mvc.IActionResult&gt;" Usage="channelServiceController.GetConversationsAsync continuationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -282,10 +305,13 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Microsoft.AspNetCore.Mvc.HttpGet("v3/conversations")</AttributeName>
+          <AttributeName Language="C#">[Microsoft.AspNetCore.Mvc.HttpGet("v3/conversations")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Microsoft.AspNetCore.Mvc.HttpGet("v3/conversations")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -316,10 +342,13 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Microsoft.AspNetCore.Mvc.HttpPost("v3/conversations/{conversationId}/activities/{activityId}")</AttributeName>
+          <AttributeName Language="C#">[Microsoft.AspNetCore.Mvc.HttpPost("v3/conversations/{conversationId}/activities/{activityId}")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Microsoft.AspNetCore.Mvc.HttpPost("v3/conversations/{conversationId}/activities/{activityId}")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -331,7 +360,8 @@
         <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity">
           <Attributes>
             <Attribute>
-              <AttributeName>Microsoft.AspNetCore.Mvc.FromBody</AttributeName>
+              <AttributeName Language="C#">[Microsoft.AspNetCore.Mvc.FromBody]</AttributeName>
+              <AttributeName Language="F#">[&lt;Microsoft.AspNetCore.Mvc.FromBody&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -360,10 +390,13 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Microsoft.AspNetCore.Mvc.HttpPost("v3/conversations/{conversationId}/activities/history")</AttributeName>
+          <AttributeName Language="C#">[Microsoft.AspNetCore.Mvc.HttpPost("v3/conversations/{conversationId}/activities/history")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Microsoft.AspNetCore.Mvc.HttpPost("v3/conversations/{conversationId}/activities/history")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -374,7 +407,8 @@
         <Parameter Name="history" Type="Microsoft.Bot.Schema.Transcript">
           <Attributes>
             <Attribute>
-              <AttributeName>Microsoft.AspNetCore.Mvc.FromBody</AttributeName>
+              <AttributeName Language="C#">[Microsoft.AspNetCore.Mvc.FromBody]</AttributeName>
+              <AttributeName Language="F#">[&lt;Microsoft.AspNetCore.Mvc.FromBody&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -402,10 +436,13 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Microsoft.AspNetCore.Mvc.HttpPost("v3/conversations/{conversationId}/activities")</AttributeName>
+          <AttributeName Language="C#">[Microsoft.AspNetCore.Mvc.HttpPost("v3/conversations/{conversationId}/activities")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Microsoft.AspNetCore.Mvc.HttpPost("v3/conversations/{conversationId}/activities")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -416,7 +453,8 @@
         <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity">
           <Attributes>
             <Attribute>
-              <AttributeName>Microsoft.AspNetCore.Mvc.FromBody</AttributeName>
+              <AttributeName Language="C#">[Microsoft.AspNetCore.Mvc.FromBody]</AttributeName>
+              <AttributeName Language="F#">[&lt;Microsoft.AspNetCore.Mvc.FromBody&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -444,10 +482,13 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Microsoft.AspNetCore.Mvc.HttpPut("v3/conversations/{conversationId}/activities/{activityId}")</AttributeName>
+          <AttributeName Language="C#">[Microsoft.AspNetCore.Mvc.HttpPut("v3/conversations/{conversationId}/activities/{activityId}")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Microsoft.AspNetCore.Mvc.HttpPut("v3/conversations/{conversationId}/activities/{activityId}")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -459,7 +500,8 @@
         <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity">
           <Attributes>
             <Attribute>
-              <AttributeName>Microsoft.AspNetCore.Mvc.FromBody</AttributeName>
+              <AttributeName Language="C#">[Microsoft.AspNetCore.Mvc.FromBody]</AttributeName>
+              <AttributeName Language="F#">[&lt;Microsoft.AspNetCore.Mvc.FromBody&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -488,10 +530,13 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Microsoft.AspNetCore.Mvc.HttpPost("v3/conversations/{conversationId}/attachments")</AttributeName>
+          <AttributeName Language="C#">[Microsoft.AspNetCore.Mvc.HttpPost("v3/conversations/{conversationId}/attachments")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Microsoft.AspNetCore.Mvc.HttpPost("v3/conversations/{conversationId}/attachments")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -502,7 +547,8 @@
         <Parameter Name="attachmentUpload" Type="Microsoft.Bot.Schema.AttachmentData">
           <Attributes>
             <Attribute>
-              <AttributeName>Microsoft.AspNetCore.Mvc.FromBody</AttributeName>
+              <AttributeName Language="C#">[Microsoft.AspNetCore.Mvc.FromBody]</AttributeName>
+              <AttributeName Language="F#">[&lt;Microsoft.AspNetCore.Mvc.FromBody&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>

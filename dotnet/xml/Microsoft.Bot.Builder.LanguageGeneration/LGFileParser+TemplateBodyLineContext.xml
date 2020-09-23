@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Antlr4.Runtime.ParserRuleContext</BaseTypeName>
@@ -29,6 +31,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="parent" Type="Antlr4.Runtime.ParserRuleContext" />
@@ -52,6 +56,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TResult</ReturnType>
@@ -81,6 +87,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -91,6 +99,53 @@
       <Docs>
         <param name="listener">To be added.</param>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ESCAPE_CHARACTER">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode[] ESCAPE_CHARACTER ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode[] ESCAPE_CHARACTER() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyLineContext.ESCAPE_CHARACTER" />
+      <MemberSignature Language="VB.NET" Value="Public Function ESCAPE_CHARACTER () As ITerminalNode()" />
+      <MemberSignature Language="F#" Value="member this.ESCAPE_CHARACTER : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode[]" Usage="templateBodyLineContext.ESCAPE_CHARACTER " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ESCAPE_CHARACTER">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode ESCAPE_CHARACTER (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode ESCAPE_CHARACTER(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyLineContext.ESCAPE_CHARACTER(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ESCAPE_CHARACTER (i As Integer) As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.ESCAPE_CHARACTER : int -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="templateBodyLineContext.ESCAPE_CHARACTER i" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,6 +160,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -115,6 +172,118 @@
       <Docs>
         <param name="listener">To be added.</param>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="INLINE_MULTILINE">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode INLINE_MULTILINE ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode INLINE_MULTILINE() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyLineContext.INLINE_MULTILINE" />
+      <MemberSignature Language="VB.NET" Value="Public Function INLINE_MULTILINE () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.INLINE_MULTILINE : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="templateBodyLineContext.INLINE_MULTILINE " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MULTILINE_PREFIX">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode MULTILINE_PREFIX ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode MULTILINE_PREFIX() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyLineContext.MULTILINE_PREFIX" />
+      <MemberSignature Language="VB.NET" Value="Public Function MULTILINE_PREFIX () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.MULTILINE_PREFIX : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="templateBodyLineContext.MULTILINE_PREFIX " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MULTILINE_SUFFIX">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode MULTILINE_SUFFIX ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode MULTILINE_SUFFIX() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyLineContext.MULTILINE_SUFFIX" />
+      <MemberSignature Language="VB.NET" Value="Public Function MULTILINE_SUFFIX () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.MULTILINE_SUFFIX : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="templateBodyLineContext.MULTILINE_SUFFIX " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MULTILINE_TEXT">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode[] MULTILINE_TEXT ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode[] MULTILINE_TEXT() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyLineContext.MULTILINE_TEXT" />
+      <MemberSignature Language="VB.NET" Value="Public Function MULTILINE_TEXT () As ITerminalNode()" />
+      <MemberSignature Language="F#" Value="member this.MULTILINE_TEXT : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode[]" Usage="templateBodyLineContext.MULTILINE_TEXT " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MULTILINE_TEXT">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode MULTILINE_TEXT (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode MULTILINE_TEXT(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyLineContext.MULTILINE_TEXT(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function MULTILINE_TEXT (i As Integer) As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.MULTILINE_TEXT : int -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="templateBodyLineContext.MULTILINE_TEXT i" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,6 +298,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
@@ -151,6 +322,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -161,17 +334,17 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="TEMPLATE_BODY_LINE">
-      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode TEMPLATE_BODY_LINE ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode TEMPLATE_BODY_LINE() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyLineContext.TEMPLATE_BODY_LINE" />
-      <MemberSignature Language="VB.NET" Value="Public Function TEMPLATE_BODY_LINE () As ITerminalNode" />
-      <MemberSignature Language="F#" Value="member this.TEMPLATE_BODY_LINE : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="templateBodyLineContext.TEMPLATE_BODY_LINE " />
+    <Member MemberName="TEMPLATE_BODY">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode TEMPLATE_BODY ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode TEMPLATE_BODY() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGFileParser.TemplateBodyLineContext.TEMPLATE_BODY" />
+      <MemberSignature Language="VB.NET" Value="Public Function TEMPLATE_BODY () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.TEMPLATE_BODY : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="templateBodyLineContext.TEMPLATE_BODY " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-        <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>

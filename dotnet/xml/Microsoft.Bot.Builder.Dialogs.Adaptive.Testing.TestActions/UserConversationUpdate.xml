@@ -7,6 +7,8 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestAction</BaseTypeName>
@@ -14,11 +16,14 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerDisplay("UserConversationUpdate")</AttributeName>
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerDisplay("UserConversationUpdate")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerDisplay("UserConversationUpdate")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Action to script sending a conversationUpdate activity to the bot.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,32 +37,39 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonConstructor</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonConstructor]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConstructor&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
         <Parameter Name="path" Type="System.String">
           <Attributes>
             <Attribute>
-              <AttributeName>System.Runtime.CompilerServices.CallerFilePath</AttributeName>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerFilePath]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerFilePath&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
         <Parameter Name="line" Type="System.Int32">
           <Attributes>
             <Attribute>
-              <AttributeName>System.Runtime.CompilerServices.CallerLineNumber</AttributeName>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerLineNumber]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerLineNumber&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <param name="line">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="path">path for source.</param>
+        <param name="line">line number in source.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestActions.UserConversationUpdate" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,6 +83,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -85,6 +99,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Kind">
@@ -97,34 +112,42 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("$kind")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("$kind")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("$kind")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Kind for serialization.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MembersAdded">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;string&gt; MembersAdded { get; set; }" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;string&gt; MembersAdded { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;string&gt; MembersAdded" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestActions.UserConversationUpdate.MembersAdded" />
-      <MemberSignature Language="VB.NET" Value="Public Property MembersAdded As List(Of String)" />
-      <MemberSignature Language="F#" Value="member this.MembersAdded : System.Collections.Generic.List&lt;string&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestActions.UserConversationUpdate.MembersAdded" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MembersAdded As List(Of String)" />
+      <MemberSignature Language="F#" Value="member this.MembersAdded : System.Collections.Generic.List&lt;string&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestActions.UserConversationUpdate.MembersAdded" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("membersAdded")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("membersAdded")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("membersAdded")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -132,26 +155,29 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the members added names.
+            Gets the members added names.
             </summary>
         <value>The members names.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MembersRemoved">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;string&gt; MembersRemoved { get; set; }" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;string&gt; MembersRemoved { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;string&gt; MembersRemoved" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestActions.UserConversationUpdate.MembersRemoved" />
-      <MemberSignature Language="VB.NET" Value="Public Property MembersRemoved As List(Of String)" />
-      <MemberSignature Language="F#" Value="member this.MembersRemoved : System.Collections.Generic.List&lt;string&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestActions.UserConversationUpdate.MembersRemoved" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MembersRemoved As List(Of String)" />
+      <MemberSignature Language="F#" Value="member this.MembersRemoved : System.Collections.Generic.List&lt;string&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestActions.UserConversationUpdate.MembersRemoved" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("membersRemoved")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("membersRemoved")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("membersRemoved")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -159,7 +185,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the members removed names.
+            Gets the members removed names.
             </summary>
         <value>The members names.</value>
         <remarks>To be added.</remarks>

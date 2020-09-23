@@ -7,6 +7,8 @@
   <AssemblyInfo>
     <AssemblyName>AdaptiveExpressions</AssemblyName>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -29,6 +31,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.TriggerTrees.RelationshipType</ReturnType>
@@ -37,9 +41,14 @@
         <Parameter Name="original" Type="AdaptiveExpressions.TriggerTrees.RelationshipType" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="original">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="original">The original RelationType.</param>
+        <summary>
+            Swap operation between RelationshipType.Generalizes and RelationshipType.Specializes.
+            If the original is RelationshipType.Specializes, the swap operation returns RelationshipType.Generalizes.
+            If the original is RelationshipType.Generalizes, the swap operation returns RelationshipType.Specializes.
+            Otherwise, the swap operation returns the original RelationType.
+            </summary>
+        <returns>The RelationshipType after the swap.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

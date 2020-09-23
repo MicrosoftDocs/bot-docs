@@ -15,6 +15,8 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -22,7 +24,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerDisplay("[DialogTurnStatus.{Status}]{Result ?? string.Empty}")</AttributeName>
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerDisplay("[DialogTurnStatus.{Status}]{Result ?? string.Empty}")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerDisplay("[DialogTurnStatus.{Status}]{Result ?? string.Empty}")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -39,7 +42,7 @@
       <MemberSignature Language="C#" Value="public DialogTurnResult (Microsoft.Bot.Builder.Dialogs.DialogTurnStatus status, object result = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Bot.Builder.Dialogs.DialogTurnStatus status, object result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.DialogTurnResult.#ctor(Microsoft.Bot.Builder.Dialogs.DialogTurnStatus,System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (status As DialogTurnStatus, Optional result As Object = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (status As DialogTurnStatus, Optional result As Object = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.DialogTurnResult : Microsoft.Bot.Builder.Dialogs.DialogTurnStatus * obj -&gt; Microsoft.Bot.Builder.Dialogs.DialogTurnResult" Usage="new Microsoft.Bot.Builder.Dialogs.DialogTurnResult (status, result)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -53,6 +56,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="status" Type="Microsoft.Bot.Builder.Dialogs.DialogTurnStatus" />
@@ -78,6 +83,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -110,6 +117,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -148,6 +157,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogTurnStatus</ReturnType>

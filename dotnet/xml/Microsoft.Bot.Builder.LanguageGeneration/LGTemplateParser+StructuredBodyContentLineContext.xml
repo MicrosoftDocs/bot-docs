@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Antlr4.Runtime.ParserRuleContext</BaseTypeName>
@@ -29,6 +31,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="parent" Type="Antlr4.Runtime.ParserRuleContext" />
@@ -52,6 +56,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TResult</ReturnType>
@@ -81,6 +87,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -105,6 +113,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -115,6 +125,28 @@
       <Docs>
         <param name="listener">To be added.</param>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="expressionInStructure">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ExpressionInStructureContext expressionInStructure ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/ExpressionInStructureContext expressionInStructure() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredBodyContentLineContext.expressionInStructure" />
+      <MemberSignature Language="VB.NET" Value="Public Function expressionInStructure () As LGTemplateParser.ExpressionInStructureContext" />
+      <MemberSignature Language="F#" Value="member this.expressionInStructure : unit -&gt; Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ExpressionInStructureContext" Usage="structuredBodyContentLineContext.expressionInStructure " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+ExpressionInStructureContext</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,31 +161,11 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+KeyValueStructureLineContext</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="objectStructureLine">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ObjectStructureLineContext objectStructureLine ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/ObjectStructureLineContext objectStructureLine() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.StructuredBodyContentLineContext.objectStructureLine" />
-      <MemberSignature Language="VB.NET" Value="Public Function objectStructureLine () As LGTemplateParser.ObjectStructureLineContext" />
-      <MemberSignature Language="F#" Value="member this.objectStructureLine : unit -&gt; Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.ObjectStructureLineContext" Usage="structuredBodyContentLineContext.objectStructureLine " />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-        <AssemblyVersion>4.9.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+ObjectStructureLineContext</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
@@ -173,6 +185,8 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

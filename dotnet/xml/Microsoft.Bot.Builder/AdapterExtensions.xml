@@ -10,13 +10,17 @@
     <AssemblyVersion>4.8.0.0</AssemblyVersion>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Defines extension methods for the <see cref="T:Microsoft.Bot.Builder.BotAdapter" /> class.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,6 +35,8 @@
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.BotAdapter</ReturnType>
@@ -40,21 +46,24 @@
         <Parameter Name="botStates" Type="Microsoft.Bot.Builder.BotState[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="botAdapter">The <see cref="T:Microsoft.Bot.Builder.BotAdapter" /> on which to register the storage object.</param>
-        <param name="botStates">One or <see cref="T:Microsoft.Bot.Builder.BotState" /> object to register.</param>
+        <param name="botAdapter">The adapter on which to register the state objects.</param>
+        <param name="botStates">The state objects to register.</param>
         <summary>
-            Registers bot state object into the TurnContext. The botstate will be available via the turn context's
-            <see cref="P:Microsoft.Bot.Builder.TurnContext.TurnState" />.<see cref="!:TurnContextStateCollection.Get&lt;typeof(instance)&gt;()" /> method.
+            Adds middleware to the adapter to register one or more <see cref="T:Microsoft.Bot.Builder.BotState" /> objects on the turn context.
+            The middleware registers the state objects on the turn context at the start of each turn.
             </summary>
         <returns>The updated adapter.</returns>
         <remarks>
-            This adds <see cref="T:Microsoft.Bot.Builder.IMiddleware" /> to register the a BotState object into turnstate.
+            To get the state objects, use the turn context's <see cref="P:Microsoft.Bot.Builder.ITurnContext.TurnState" />
+            property's <see cref="M:Microsoft.Bot.Builder.TurnContextStateCollection.Get``1(System.String)" /> method, where the `key`
+            parameter is the fully qualified name of the type of bot state to get.
             </remarks>
       </Docs>
     </Member>
@@ -71,10 +80,13 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("This method is deprecated in 4.9.  You should use the method .UseBotState() instead.")</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("This method is deprecated in 4.9.  You should use the method .UseBotState() instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method is deprecated in 4.9.  You should use the method .UseBotState() instead.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -87,7 +99,7 @@
         <Parameter Name="auto" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="botAdapter">The <see cref="T:Microsoft.Bot.Builder.BotAdapter" /> on which to register the storage object.</param>
+        <param name="botAdapter">The <see cref="T:Microsoft.Bot.Builder.BotAdapter" /> on which to register the objects.</param>
         <param name="userState">The <see cref="T:Microsoft.Bot.Builder.UserState" /> object to register.</param>
         <param name="conversationState">The <see cref="T:Microsoft.Bot.Builder.ConversationState" /> object to register.</param>
         <param name="auto">`true` to automatically persist state each turn; otherwise, `false`.
@@ -116,6 +128,8 @@
         <AssemblyVersion>4.8.0.0</AssemblyVersion>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.BotAdapter</ReturnType>
@@ -125,15 +139,16 @@
         <Parameter Name="storage" Type="Microsoft.Bot.Builder.IStorage" />
       </Parameters>
       <Docs>
-        <param name="botAdapter">The <see cref="T:Microsoft.Bot.Builder.BotAdapter" /> on which to register the storage object.</param>
-        <param name="storage">The <see cref="T:Microsoft.Bot.Builder.IStorage" /> object to register.</param>
+        <param name="botAdapter">The adapter on which to register the storage object.</param>
+        <param name="storage">The storage object to register.</param>
         <summary>
-            Registers a storage layer with the adapter. The storage object will be available via the turn context's
-            <see cref="P:Microsoft.Bot.Builder.TurnContext.TurnState" />.<see cref="M:Microsoft.Bot.Builder.TurnContextStateCollection.Get``1" /> method.
+            Adds middleware to the adapter to register an <see cref="T:Microsoft.Bot.Builder.IStorage" /> object on the turn context.
+            The middleware registers the state objects on the turn context at the start of each turn.
             </summary>
         <returns>The updated adapter.</returns>
         <remarks>
-            This adds <see cref="T:Microsoft.Bot.Builder.IMiddleware" /> to the adapter to register the storage layer.
+            To get the storage object, use the turn context's <see cref="P:Microsoft.Bot.Builder.ITurnContext.TurnState" />
+            property's <see cref="M:Microsoft.Bot.Builder.TurnContextStateCollection.Get``1" /> method.
             </remarks>
       </Docs>
     </Member>

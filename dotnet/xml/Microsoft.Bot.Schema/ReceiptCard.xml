@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,6 +32,8 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,13 +47,15 @@
       <MemberSignature Language="C#" Value="public ReceiptCard (string title = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Fact&gt; facts = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ReceiptItem&gt; items = default, Microsoft.Bot.Schema.CardAction tap = default, string total = default, string tax = default, string vat = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.CardAction&gt; buttons = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Fact&gt; facts, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.ReceiptItem&gt; items, class Microsoft.Bot.Schema.CardAction tap, string total, string tax, string vat, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.CardAction&gt; buttons) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.ReceiptCard.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Bot.Schema.Fact},System.Collections.Generic.IList{Microsoft.Bot.Schema.ReceiptItem},Microsoft.Bot.Schema.CardAction,System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Schema.CardAction})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional title As String = null, Optional facts As IList(Of Fact) = null, Optional items As IList(Of ReceiptItem) = null, Optional tap As CardAction = null, Optional total As String = null, Optional tax As String = null, Optional vat As String = null, Optional buttons As IList(Of CardAction) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional title As String = Nothing, Optional facts As IList(Of Fact) = Nothing, Optional items As IList(Of ReceiptItem) = Nothing, Optional tap As CardAction = Nothing, Optional total As String = Nothing, Optional tax As String = Nothing, Optional vat As String = Nothing, Optional buttons As IList(Of CardAction) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.ReceiptCard : string * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Fact&gt; * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.ReceiptItem&gt; * Microsoft.Bot.Schema.CardAction * string * string * string * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.CardAction&gt; -&gt; Microsoft.Bot.Schema.ReceiptCard" Usage="new Microsoft.Bot.Schema.ReceiptCard (title, facts, items, tap, total, tax, vat, buttons)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="title" Type="System.String" />
@@ -90,10 +96,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="buttons")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="buttons")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="buttons")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -118,12 +127,16 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The content type value of a <see cref="T:Microsoft.Bot.Schema.ReceiptCard" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,10 +151,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="facts")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="facts")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="facts")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -166,10 +182,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="items")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="items")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="items")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -194,10 +213,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="tap")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="tap")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="tap")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -223,10 +245,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="tax")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="tax")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="tax")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -251,10 +276,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="title")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="title")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="title")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -279,10 +307,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="total")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="total")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="total")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -307,10 +338,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="vat")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="vat")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="vat")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

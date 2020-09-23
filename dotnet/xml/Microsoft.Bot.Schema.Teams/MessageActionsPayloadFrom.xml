@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -31,6 +33,8 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -44,13 +48,15 @@
       <MemberSignature Language="C#" Value="public MessageActionsPayloadFrom (Microsoft.Bot.Schema.Teams.MessageActionsPayloadUser user = default, Microsoft.Bot.Schema.Teams.MessageActionsPayloadApp application = default, Microsoft.Bot.Schema.Teams.MessageActionsPayloadConversation conversation = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Schema.Teams.MessageActionsPayloadUser user, class Microsoft.Bot.Schema.Teams.MessageActionsPayloadApp application, class Microsoft.Bot.Schema.Teams.MessageActionsPayloadConversation conversation) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.MessageActionsPayloadFrom.#ctor(Microsoft.Bot.Schema.Teams.MessageActionsPayloadUser,Microsoft.Bot.Schema.Teams.MessageActionsPayloadApp,Microsoft.Bot.Schema.Teams.MessageActionsPayloadConversation)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional user As MessageActionsPayloadUser = null, Optional application As MessageActionsPayloadApp = null, Optional conversation As MessageActionsPayloadConversation = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional user As MessageActionsPayloadUser = Nothing, Optional application As MessageActionsPayloadApp = Nothing, Optional conversation As MessageActionsPayloadConversation = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.MessageActionsPayloadFrom : Microsoft.Bot.Schema.Teams.MessageActionsPayloadUser * Microsoft.Bot.Schema.Teams.MessageActionsPayloadApp * Microsoft.Bot.Schema.Teams.MessageActionsPayloadConversation -&gt; Microsoft.Bot.Schema.Teams.MessageActionsPayloadFrom" Usage="new Microsoft.Bot.Schema.Teams.MessageActionsPayloadFrom (user, application, conversation)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="user" Type="Microsoft.Bot.Schema.Teams.MessageActionsPayloadUser" />
@@ -79,10 +85,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="application")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="application")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="application")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -107,10 +116,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="conversation")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="conversation")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="conversation")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -135,10 +147,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="user")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="user")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="user")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

@@ -8,8 +8,16 @@
     <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Obsolete("Deprecated in favor of IObservableJsonConverter")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("Deprecated in favor of IObservableJsonConverter")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
             Marks a <see cref="T:Newtonsoft.Json.JsonConverter" /> that allows registrations of <see cref="T:Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IConverterObserver" />.
@@ -28,6 +36,8 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

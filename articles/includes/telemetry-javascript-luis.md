@@ -16,7 +16,7 @@ To enable the telemetry client in your LUIS recognizer:
 
 3. Set the `telemetryClient` field of the `recognizerOptions` object to the `telemetryClient` property that is passed into the `FlightBookingRecognizer` constructor, once done your constructor will appear as follows:
 
-    [!code-javascript[FlightBookingRecognizer](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/dialogs/flightBookingRecognizer.js?range=9-15&highlight=14)]
+    [!code-javascript[FlightBookingRecognizer](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/dialogs/flightBookingRecognizer.js?range=9-18&highlight=6)]
 
     <!-- This is the code block that the code snippet link should point to:
     ```javascript
@@ -32,7 +32,7 @@ To enable the telemetry client in your LUIS recognizer:
 
 4. And finally you need to include the `telemetryClient` when creating an instance of the `FlightBookingRecognizer` in `index.js`:
 
-    [!code-javascript[FlightBookingRecognizer](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=84)]
+    [!code-javascript[FlightBookingRecognizer](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=86)]
 
     <!-- This is the code block that the code snippet link should point to:
     ```javascript

@@ -1,6 +1,6 @@
 ---
 title: Direct Line API 1.1 Authentication - Bot Service
-description: Learn how to authenticate API requests in Direct Line API v1.1. 
+description: Learn about authentication in version 1.1 of the Direct Line API. See how to use secrets and tokens to access conversations. Find out how to refresh tokens.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
@@ -9,7 +9,7 @@ ms.service: bot-service
 ms.date: 12/13/2017
 ---
 
-# Authentication
+# Authentication in Direct Line API 1.1
 
 > [!IMPORTANT]
 > This article describes authentication in Direct Line API 1.1. If you are creating a new connection between your client application and bot, use [Direct Line API 3.0](bot-framework-rest-direct-line-3-0-authentication.md) instead.

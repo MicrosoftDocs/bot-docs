@@ -1,0 +1,67 @@
+<Type Name="HttpResponseMock+ResponseContentType" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMock+ResponseContentType">
+  <TypeSignature Language="C#" Value="public enum HttpResponseMock.ResponseContentType" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed HttpResponseMock/ResponseContentType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMock.ResponseContentType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum HttpResponseMock.ResponseContentType" />
+  <TypeSignature Language="F#" Value="type HttpResponseMock.ResponseContentType = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Types of response content.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ByteArray">
+      <MemberSignature Language="C#" Value="ByteArray" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMock/ResponseContentType ByteArray = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMock.ResponseContentType.ByteArray" />
+      <MemberSignature Language="VB.NET" Value="ByteArray" />
+      <MemberSignature Language="F#" Value="ByteArray = 1" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMock.ResponseContentType.ByteArray" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMock+ResponseContentType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            Byte array response. The content should be the base64 string of the byte array.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="String">
+      <MemberSignature Language="C#" Value="String" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMock/ResponseContentType String = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMock.ResponseContentType.String" />
+      <MemberSignature Language="VB.NET" Value="String" />
+      <MemberSignature Language="F#" Value="String = 0" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMock.ResponseContentType.String" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMock+ResponseContentType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            String response.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

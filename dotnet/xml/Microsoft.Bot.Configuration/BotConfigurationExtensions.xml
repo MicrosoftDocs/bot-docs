@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -15,11 +17,14 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Obsolete("This class is deprecated.  See https://aka.ms/bot-file-basics for more information.", false)</AttributeName>
+      <AttributeName Language="C#">[System.Obsolete("This class is deprecated.  See https://aka.ms/bot-file-basics for more information.", false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("This class is deprecated.  See https://aka.ms/bot-file-basics for more information.", false)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Extension methods for <see cref="T:Microsoft.Bot.Configuration.BotConfiguration" />.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,6 +39,8 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -65,12 +72,15 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ValueTuple&lt;System.Boolean,System.String&gt;</ReturnType>
         <Attributes>
           <Attribute>
-            <AttributeName>System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "IsValid", "ErrMsg" })</AttributeName>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "IsValid", "ErrMsg" })]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "IsValid", "ErrMsg" })&gt;]</AttributeName>
           </Attribute>
         </Attributes>
       </ReturnValue>
@@ -97,12 +107,15 @@
         <AssemblyName>Microsoft.Bot.Configuration</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ValueTuple&lt;System.Boolean,System.String&gt;</ReturnType>
         <Attributes>
           <Attribute>
-            <AttributeName>System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "IsValid", "ErrMsg" })</AttributeName>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "IsValid", "ErrMsg" })]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "IsValid", "ErrMsg" })&gt;]</AttributeName>
           </Attribute>
         </Attributes>
       </ReturnValue>

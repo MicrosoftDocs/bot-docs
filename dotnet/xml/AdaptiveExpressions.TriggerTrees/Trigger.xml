@@ -7,6 +7,8 @@
   <AssemblyInfo>
     <AssemblyName>AdaptiveExpressions</AssemblyName>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -29,6 +31,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -53,6 +57,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;AdaptiveExpressions.TriggerTrees.Clause&gt;</ReturnType>
@@ -79,6 +85,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -88,10 +96,15 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="nodeClause">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="nodeClause">The other Clause instance to match.</param>
+        <param name="state">The scope for looking up variables.</param>
+        <summary>
+            Determines whether there is a member in the current Clause that matches the nodeClause parameter.
+            </summary>
+        <returns>
+            A boolean value indicating  whether there is a member matches.
+            Returns True if such member exists, otherwise returns False.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,6 +118,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.Expression</ReturnType>
@@ -129,6 +144,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.TriggerTrees.RelationshipType</ReturnType>
@@ -138,10 +155,12 @@
         <Parameter Name="comparers" Type="System.Collections.Generic.Dictionary&lt;System.String,AdaptiveExpressions.TriggerTrees.IPredicateComparer&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <param name="comparers">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The other Trigger instance.</param>
+        <param name="comparers">The comparer dictionary.</param>
+        <summary>
+            Determines the relationship between current instance and another Trigger instance.
+            </summary>
+        <returns>A RelationshipType value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,14 +174,18 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Returns a string that represents the current object.
+            </summary>
+        <returns>A string value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,6 +199,8 @@
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -185,9 +210,13 @@
         <Parameter Name="indent" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="builder">To be added.</param>
-        <param name="indent">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="builder">A StringBuilder object.</param>
+        <param name="indent">
+            An integer represents the number of spaces at the start of a line. 
+            </param>
+        <summary>
+            Returns a string that represents the current object.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

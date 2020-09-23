@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,6 +32,8 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,13 +47,15 @@
       <MemberSignature Language="C#" Value="public MessagingExtensionResult (string attachmentLayout = default, string type = default, System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionAttachment&gt; attachments = default, Microsoft.Bot.Schema.Teams.MessagingExtensionSuggestedAction suggestedActions = default, string text = default, Microsoft.Bot.Schema.Activity activityPreview = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string attachmentLayout, string type, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Schema.Teams.MessagingExtensionAttachment&gt; attachments, class Microsoft.Bot.Schema.Teams.MessagingExtensionSuggestedAction suggestedActions, string text, class Microsoft.Bot.Schema.Activity activityPreview) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.MessagingExtensionResult.#ctor(System.String,System.String,System.Collections.Generic.IList{Microsoft.Bot.Schema.Teams.MessagingExtensionAttachment},Microsoft.Bot.Schema.Teams.MessagingExtensionSuggestedAction,System.String,Microsoft.Bot.Schema.Activity)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional attachmentLayout As String = null, Optional type As String = null, Optional attachments As IList(Of MessagingExtensionAttachment) = null, Optional suggestedActions As MessagingExtensionSuggestedAction = null, Optional text As String = null, Optional activityPreview As Activity = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional attachmentLayout As String = Nothing, Optional type As String = Nothing, Optional attachments As IList(Of MessagingExtensionAttachment) = Nothing, Optional suggestedActions As MessagingExtensionSuggestedAction = Nothing, Optional text As String = Nothing, Optional activityPreview As Activity = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.MessagingExtensionResult : string * string * System.Collections.Generic.IList&lt;Microsoft.Bot.Schema.Teams.MessagingExtensionAttachment&gt; * Microsoft.Bot.Schema.Teams.MessagingExtensionSuggestedAction * string * Microsoft.Bot.Schema.Activity -&gt; Microsoft.Bot.Schema.Teams.MessagingExtensionResult" Usage="new Microsoft.Bot.Schema.Teams.MessagingExtensionResult (attachmentLayout, type, attachments, suggestedActions, text, activityPreview)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="attachmentLayout" Type="System.String" />
@@ -60,16 +66,15 @@
         <Parameter Name="activityPreview" Type="Microsoft.Bot.Schema.Activity" />
       </Parameters>
       <Docs>
-        <param name="suggestedActions">To be added.</param>
         <param name="attachmentLayout">Hint for how to deal with multiple
             attachments. Possible values include: 'list', 'grid'</param>
         <param name="type">The type of the result. Possible values include:
             'result', 'auth', 'config', 'message', 'botMessagePreview'</param>
         <param name="attachments">(Only when type is result)
             Attachments</param>
+        <param name="suggestedActions">The message extension suggested actions.</param>
         <param name="text">(Only when type is message) Text</param>
-        <param name="activityPreview">(Only when type is botMessagePreview)
-            Message activity to preview</param>
+        <param name="activityPreview">(Only when type is botMessagePreview) Message activity to preview</param>
         <summary>
             Initializes a new instance of the MessagingExtensionResult class.
             </summary>
@@ -87,10 +92,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="activityPreview")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="activityPreview")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="activityPreview")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -116,10 +124,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="attachmentLayout")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="attachmentLayout")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="attachmentLayout")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -145,10 +156,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="attachments")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="attachments")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="attachments")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -173,10 +187,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="suggestedActions")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="suggestedActions")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="suggestedActions")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -199,10 +216,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="text")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="text")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="text")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -227,10 +247,13 @@
         <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="type")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="type")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="type")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

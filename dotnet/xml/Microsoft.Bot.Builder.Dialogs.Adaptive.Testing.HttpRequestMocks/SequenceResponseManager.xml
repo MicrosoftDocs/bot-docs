@@ -1,0 +1,74 @@
+<Type Name="SequenceResponseManager" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.SequenceResponseManager">
+  <TypeSignature Language="C#" Value="public class SequenceResponseManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SequenceResponseManager extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.SequenceResponseManager" />
+  <TypeSignature Language="VB.NET" Value="Public Class SequenceResponseManager" />
+  <TypeSignature Language="F#" Value="type SequenceResponseManager = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Manage Sequence Response for HttpRequestSequenceMock.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SequenceResponseManager (System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMock&gt; responses);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMock&gt; responses) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.SequenceResponseManager.#ctor(System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMock})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (responses As List(Of HttpResponseMock))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.SequenceResponseManager : System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMock&gt; -&gt; Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.SequenceResponseManager" Usage="new Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.SequenceResponseManager responses" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="responses" Type="System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMock&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="responses">The list of HttpResponseMock.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.SequenceResponseManager" /> class.
+            Return the list of mocks in sequence order. The last one will be repeated.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetContent">
+      <MemberSignature Language="C#" Value="public System.Net.Http.HttpContent GetContent ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.Http.HttpContent GetContent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.SequenceResponseManager.GetContent" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetContent () As HttpContent" />
+      <MemberSignature Language="F#" Value="member this.GetContent : unit -&gt; System.Net.Http.HttpContent" Usage="sequenceResponseManager.GetContent " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.HttpContent</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Return the content in sequence order. The last one will be repeated.
+            </summary>
+        <returns>
+            The HttpContent.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

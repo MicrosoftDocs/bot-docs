@@ -1,6 +1,6 @@
 ---
 title: Authentication - Bot Service
-description: Learn how to authenticate API requests in Direct Line API v3.0.
+description: Become familiar with authentication in version 3.0 of the Direct Line API. See how to use secrets and tokens. Learn about Azure Bot Service authentication.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
@@ -9,7 +9,7 @@ ms.service: bot-service
 ms.date: 08/22/2019
 ---
 
-# Authentication
+# Authentication in Direct Line API 3.0
 
 A client can authenticate requests to Direct Line API 3.0 either by using a **secret** that you [obtain from the Direct Line channel configuration page](../bot-service-channel-connect-directline.md) in the Bot Framework Portal or by using a **token** that you obtain at runtime. The secret or token should be specified in the `Authorization` header of each request, using this format:
 

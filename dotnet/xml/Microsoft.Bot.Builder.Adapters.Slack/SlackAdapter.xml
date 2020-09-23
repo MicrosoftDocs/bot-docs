@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.BotAdapter</BaseTypeName>
@@ -22,23 +23,25 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SlackAdapter (Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper slackClient, Microsoft.Extensions.Logging.ILogger logger = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper slackClient, class Microsoft.Extensions.Logging.ILogger logger) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter.#ctor(Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper,Microsoft.Extensions.Logging.ILogger)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (slackClient As SlackClientWrapper, Optional logger As ILogger = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter : Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper * Microsoft.Extensions.Logging.ILogger -&gt; Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter" Usage="new Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter (slackClient, logger)" />
+      <MemberSignature Language="C#" Value="public SlackAdapter (Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper slackClient, Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions adapterOptions, Microsoft.Extensions.Logging.ILogger logger = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper slackClient, class Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions adapterOptions, class Microsoft.Extensions.Logging.ILogger logger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter.#ctor(Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper,Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions,Microsoft.Extensions.Logging.ILogger)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (slackClient As SlackClientWrapper, adapterOptions As SlackAdapterOptions, Optional logger As ILogger = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter : Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper * Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions * Microsoft.Extensions.Logging.ILogger -&gt; Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter" Usage="new Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter (slackClient, adapterOptions, logger)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="slackClient" Type="Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper" />
+        <Parameter Name="adapterOptions" Type="Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions" />
         <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger" />
       </Parameters>
       <Docs>
-        <param name="slackClient">An initialized instance of the SlackClientWrapper class to connect to.</param>
+        <param name="adapterOptions">The adapter options to be used when connecting to the Slack API.</param>
         <param name="logger">The ILogger implementation this adapter should use.</param>
+        <param name="slackClient">The SlackClientWrapper used to connect to the Slack API.</param>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter" /> class.
             Creates a Slack adapter.
@@ -47,22 +50,24 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SlackAdapter (Microsoft.Extensions.Configuration.IConfiguration configuration, Microsoft.Extensions.Logging.ILogger logger = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Extensions.Configuration.IConfiguration configuration, class Microsoft.Extensions.Logging.ILogger logger) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (configuration As IConfiguration, Optional logger As ILogger = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter : Microsoft.Extensions.Configuration.IConfiguration * Microsoft.Extensions.Logging.ILogger -&gt; Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter" Usage="new Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter (configuration, logger)" />
+      <MemberSignature Language="C#" Value="public SlackAdapter (Microsoft.Extensions.Configuration.IConfiguration configuration, Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions options = default, Microsoft.Extensions.Logging.ILogger logger = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Extensions.Configuration.IConfiguration configuration, class Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions options, class Microsoft.Extensions.Logging.ILogger logger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions,Microsoft.Extensions.Logging.ILogger)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (configuration As IConfiguration, Optional options As SlackAdapterOptions = Nothing, Optional logger As ILogger = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter : Microsoft.Extensions.Configuration.IConfiguration * Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions * Microsoft.Extensions.Logging.ILogger -&gt; Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter" Usage="new Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter (configuration, options, logger)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="configuration" Type="Microsoft.Extensions.Configuration.IConfiguration" />
+        <Parameter Name="options" Type="Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions" />
         <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger" />
       </Parameters>
       <Docs>
         <param name="configuration">An <see cref="T:Microsoft.Extensions.Configuration.IConfiguration" /> instance.</param>
+        <param name="options">An instance of <see cref="T:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapterOptions" />.</param>
         <param name="logger">The ILogger implementation this adapter should use.</param>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter" /> class using configuration settings.
@@ -85,6 +90,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -115,6 +121,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -152,6 +159,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -185,6 +193,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -217,6 +226,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse[]&gt;</ReturnType>
@@ -237,28 +247,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SlackClientWrapper">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper SlackClientWrapper { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper SlackClientWrapper" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter.SlackClientWrapper" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SlackClientWrapper As SlackClientWrapper" />
-      <MemberSignature Language="F#" Value="member this.SlackClientWrapper : Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper" Usage="Microsoft.Bot.Builder.Adapters.Slack.SlackAdapter.SlackClientWrapper" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.Bot.Builder.Adapters.Slack.SlackClientWrapper</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Gets the wrapper for the underlying Slack client used by the adapter.
-            </summary>
-        <value>The wrapper for the underlying Slack client used by the adapter.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="UpdateActivityAsync">
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; UpdateActivityAsync (Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; UpdateActivityAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -269,6 +257,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>

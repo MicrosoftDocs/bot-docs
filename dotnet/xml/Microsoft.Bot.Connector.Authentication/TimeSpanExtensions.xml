@@ -8,13 +8,17 @@
     <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Extention methods for the <see cref="T:System.TimeSpan" /> class.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,6 +33,8 @@
         <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
@@ -38,10 +44,13 @@
         <Parameter Name="multiplier" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="delay">To be added.</param>
-        <param name="multiplier">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="delay">The requested delay.</param>
+        <param name="multiplier">A multiplier.</param>
+        <summary>
+            Generates a uniform distribution between zero and ten percent of the proposed delay and adds it
+            to the delay as random noise to distribute requests across time.
+            </summary>
+        <returns>A uniformly distributed time span.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

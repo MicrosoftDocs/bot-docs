@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Recognizer</BaseTypeName>
@@ -30,10 +32,14 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.AI.QnA.Recognizers.QnAMakerRecognizer" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,10 +54,13 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("context")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("context")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("context")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -76,10 +85,13 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("endpointKey")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("endpointKey")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("endpointKey")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -106,6 +118,8 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.AI.QnA.IQnAMakerClient&gt;</ReturnType>
@@ -114,9 +128,11 @@
         <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dc">The <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogContext" /> used to access state.</param>
+        <summary>
+            Gets an instance of <see cref="T:Microsoft.Bot.Builder.AI.QnA.IQnAMakerClient" />.
+            </summary>
+        <returns>An instance of <see cref="T:Microsoft.Bot.Builder.AI.QnA.IQnAMakerClient" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,10 +147,13 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("hostname")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("hostname")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("hostname")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -161,18 +180,25 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonIgnore</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonIgnore]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonIgnore&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Http.HttpClient</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the <see cref="P:Microsoft.Bot.Builder.AI.QnA.Recognizers.QnAMakerRecognizer.HttpClient" /> to be used when calling the QnA Maker API.
+            </summary>
+        <value>
+            A instance of <see cref="P:Microsoft.Bot.Builder.AI.QnA.Recognizers.QnAMakerRecognizer.HttpClient" />.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -187,13 +213,17 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("includeDialogNameInMetadata")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("includeDialogNameInMetadata")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("includeDialogNameInMetadata")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -220,10 +250,13 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("isTest")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("isTest")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("isTest")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -250,17 +283,22 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("$kind")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("$kind")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("$kind")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The declarative type for this recognizer.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -275,10 +313,13 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("knowledgeBaseId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("knowledgeBaseId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("knowledgeBaseId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -305,10 +346,13 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("logPersonalInformation")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("logPersonalInformation")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("logPersonalInformation")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -335,10 +379,13 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("metadata")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("metadata")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("metadata")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -363,10 +410,13 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("qnaId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("qnaId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("qnaId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -391,12 +441,16 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Key used when adding the intent to the <see cref="T:Microsoft.Bot.Builder.RecognizerResult" /> intents collection.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -411,10 +465,13 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("rankerType")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("rankerType")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("rankerType")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -434,13 +491,15 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt; RecognizeAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken, System.Collections.Generic.Dictionary&lt;string,string&gt; telemetryProperties = default, System.Collections.Generic.Dictionary&lt;string,double&gt; telemetryMetrics = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.RecognizerResult&gt; RecognizeAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; telemetryProperties, class System.Collections.Generic.Dictionary`2&lt;string, float64&gt; telemetryMetrics) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.QnA.Recognizers.QnAMakerRecognizer.RecognizeAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Double})" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function RecognizeAsync (dialogContext As DialogContext, activity As Activity, cancellationToken As CancellationToken, Optional telemetryProperties As Dictionary(Of String, String) = null, Optional telemetryMetrics As Dictionary(Of String, Double) = null) As Task(Of RecognizerResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function RecognizeAsync (dialogContext As DialogContext, activity As Activity, cancellationToken As CancellationToken, Optional telemetryProperties As Dictionary(Of String, String) = Nothing, Optional telemetryMetrics As Dictionary(Of String, Double) = Nothing) As Task(Of RecognizerResult)" />
       <MemberSignature Language="F#" Value="override this.RecognizeAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken * System.Collections.Generic.Dictionary&lt;string, string&gt; * System.Collections.Generic.Dictionary&lt;string, double&gt; -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;" Usage="qnAMakerRecognizer.RecognizeAsync (dialogContext, activity, cancellationToken, telemetryProperties, telemetryMetrics)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;</ReturnType>
@@ -453,13 +512,15 @@
         <Parameter Name="telemetryMetrics" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="dialogContext">To be added.</param>
-        <param name="activity">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <param name="telemetryProperties">To be added.</param>
-        <param name="telemetryMetrics">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dialogContext">Context object containing information for a single turn of conversation with a user.</param>
+        <param name="activity">The incoming activity received from the user. The Text property value is used as the query text for QnA Maker.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        <param name="telemetryProperties">Additional properties to be logged to telemetry with the LuisResult event.</param>
+        <param name="telemetryMetrics">Additional metrics to be logged to telemetry with the LuisResult event.</param>
+        <summary>
+            Return results of the call to QnA Maker.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Bot.Builder.RecognizerResult" /> containing the QnA Maker result.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -474,13 +535,17 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("threshold")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("threshold")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("threshold")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(0.3)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(0.3)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(0.3)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -507,13 +572,17 @@
         <AssemblyName>Microsoft.Bot.Builder.AI.QnA</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty("top")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("top")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("top")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(3)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(3)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(3)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
