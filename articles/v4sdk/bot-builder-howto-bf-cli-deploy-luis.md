@@ -226,7 +226,7 @@ Once this configuration file is created, all you need to do is reference it in y
 bf luis:build --luConfig luconfig.json
 ```
 
-## LU and language variations files
+## LU and multiple language variations
 
 Every [.lu file][lu-templates] can have multiple language variations and the `luis:build` command will build a LUIS application for each language supported.
 
