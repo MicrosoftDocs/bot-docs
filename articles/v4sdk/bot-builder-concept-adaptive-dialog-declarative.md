@@ -447,6 +447,8 @@ To use the merge command, enter the following at the command prompt, while in th
 bf dialog:merge <filename.csproj>
 ```
 
+For additional information on using this command, see [bf dialog:merge][bf-dialogmerge-patterns] in the BF CLI LUIS readme.
+
 > [!TIP]
 >
 > For users of C#: NuGet does not deal well with content files, so all declarative `.dialog`, `.lu`, `.lg`, and `.qna` files will be copied into `generated/<package>` so you can easily include them in your project output.
@@ -461,22 +463,19 @@ To use the `verify` command, enter the following at the command prompt, while in
 bf dialog:verify <filename.csproj>
 ```
 
+For additional information on using this command, see [bf dialog:verify][bf-dialogverify-patterns] in the BF CLI LUIS readme.
+
 > [!NOTE]
 >
 > If you are creating the `.dialog` files using [Composer][composer], which is driven by the merged `.schema` and `.uischema` files, you do not need this command but if you are creating them by hand it is very useful.
 
-### Download the BF CLI
+### Install the Bot Framework CLI
 
-To use these commands you need the [BF CLI][bf-cli] . If you do not already have this installed, you can install the BF CLI from the command line:
-
-```cmd
-npm i -g @microsoft/botframework-cli
-```
+[!INCLUDE [applies-to-v4](../includes/install-bf-cli.md)]
 
 ### Relevant information
 
-- [BF CLI dialog readme][dialog-readme]
-- [Dialog Commands readme][dialog-commands]
+- [Dialog Commands][dialog-commands]
 
 ## Additional information
 
@@ -563,5 +562,7 @@ npm i -g @microsoft/botframework-cli
 
 [intelliSense]: https://aka.ms/intellisense-in-visual-studio
 [composer]: https://docs.microsoft.com/composer
-[dialog-readme]: https://github.com/microsoft/botframework-cli/blob/master/packages/dialog/README.md
-[dialog-commands]: https://github.com/microsoft/botframework-cli/tree/master/packages/dialog/docs/readme.md
+
+[dialog-commands]: https://aka.ms/botframework-cli#bf-dialog
+[bf-dialogverify-patterns]: https://aka.ms/botframework-cli#bf-dialogverify-patterns
+[bf-dialogmerge-patterns]: https://aka.ms/botframework-cli#bf-dialogmerge-patterns
