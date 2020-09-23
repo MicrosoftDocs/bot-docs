@@ -469,7 +469,8 @@ For additional information on using this command, see [bf dialog:verify][bf-dial
 
 > [!NOTE]
 >
-> If you are creating the `.dialog` files using [Composer][composer], which is driven by the merged `.schema` and `.uischema` files, you do not need this command but if you are creating them by hand it is very useful.
+> [Composer][composer] creates a merged `.schema` file and valid `.dialog` files; however,
+> the verify command can be very useful if you are creating these files by hand.
 
 ### Install the Bot Framework CLI
 
