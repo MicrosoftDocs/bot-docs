@@ -271,7 +271,7 @@ In the above example, each one of the `.lu` files will have its own unique langu
 
 Each LUIS application created on your behalf will be named using a combination of the `botName` value that you supply when running the `luis:build` command, the username of the person logged in, and the name of the `.lu` file including the locale.
 
-LUIS application names will use this format:  `{botName}-{suffix}-{file-name}-{locale}.lu`
+LUIS application names will use this format:  `{botName}-({suffix})-{file-name}-{locale}.lu`
 
 For example, if your botName is _MyProject_ and your username is _YuuriTanaka_, and the filename is _GetAddresss_ the names of your LUIS applications would be as follows:
 
