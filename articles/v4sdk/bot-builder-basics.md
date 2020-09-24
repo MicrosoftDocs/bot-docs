@@ -1,13 +1,12 @@
 ---
 title: How bots work - Bot Service
 description: Become familiar with the Bot Framework SDK. Understand how bots communicate with users. Learn about activities, channels, HTTP POST requests, and other topics.
-keywords: conversation flow, turn, bot conversation, dialogs, prompts, waterfalls, dialog set
 author: johnataylor
 ms.author: johtaylo
 manager: kamrani
-ms.topic: article
+ms.topic: conceptual
 ms.service: bot-service
-ms.date: 01/31/2020
+ms.date: 09/24/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -32,8 +31,6 @@ In this example, the bot created and sent a message activity in response to the 
 ## The Bot Framework SDK
 
 The Bot Framework SDK allows you to build bots that can be hosted on the Azure Bot Service. The service defines a REST API and an activity protocol for how your bot and channels or users can interact. The SDK builds upon this REST API and provides an abstraction of the service so that you can focus on the conversational logic. While you don't need to understand the REST service to use the SDK, understanding some of its features can be helpful.
-
-## What a bot is
 
 A bot is an app that has a conversational interface. They can be used to shift simple, repetitive tasks, such as taking a dinner reservation or gathering profile information, on to automated systems that may no longer require direct human intervention. Users converse with a bot using text, interactive cards, and speech. A bot interaction can be a quick question and answer, or it can be a sophisticated conversation that intelligently provides access to services.
 
@@ -65,11 +62,11 @@ The protocol doesn't specify the order in which these POST requests and their ac
 
 The conversational reasoning for the bot, the bot-specific reasoning, is handled by a _bot_ class that implements a turn handler.
 
-The SDK defines an _adapter_ class that handles connectivity with the channels. The adapter:
+The SDK defines an _adapter_ class that handles connectivity with the channels. The adapter automates
 
 - Receives and validates traffic from a channel.
 - Creates a context object for the turn.
-- Calls the bot's turn handler.
+- Calls the bot's turn handler and catches errors not otherwise handled in the turn handler.
 - Manages the actual sending of bot replies to the channel.
 - Includes a middleware pipeline, which includes turn processing outside of your bot's turn handler.
 
@@ -80,23 +77,36 @@ Bots often need to retrieve and store state each turn. This is handled through a
 
 When you create a bot using the SDK, you provide the code to receive the HTTP traffic and forward it to the adapter. The Bot Framework provides a few templates and samples that you can use to develop your own bots.
 
-(The SDK also lets you use custom channel adapters, in which the adapter itself performs the tasks that the Bot Connector Service and the default Bot Adapter do.)
+(The SDK also lets you use channel adapters, in which the adapter itself additionally performs the tasks that the Bot Connector Service would do for that channel.)
 
 ### Messaging endpoint and provisioning
 
+The SDK does not provide a web application implementation, but the Bot Framework does provide templates and samples that include the web application.
+
+| SDK language | Web application framework
+| :-- | :--
+| C# | ASP.NET
+| JavaScript | Restify
+| Python | aiohttp
+
 ### Bot state and storage
+
+As with other web apps, a bot is inherently stateless.
+State within a bot follows the same paradigms as modern web applications, and the Bot Framework SDK provides storage layer and state management abstractions to make state management easier.
+
+The [managing state](bot-builder-concept-state.md) topic describes these state and storage features.
 
 ### The bot adapter
 
 The adapter has a _process activity_ method for starting a turn.
 
-- It takes the request body (the request payload, translated to an activity) and the request header.
+- It takes the request body (the request payload, translated to an activity) and the request header as arguments.
 - It checks whether the authentication header is valid.
 - It creates a context object for the turn.
-- It run this through its middleware pipeline.
-- It sends the activity to the bot's [bot object's] on turn handler.
+- It runs this through its middleware pipeline.
+- It sends the activity to the bot object's turn handler.
 
-The adapter also formats and sends response activities to the user/channel.
+The adapter also formats and sends response activities. These responses are typically messages for the user, but can also include information to be consumed by the user's channel directly.
 
 #### The turn context
 
@@ -108,16 +118,20 @@ The turn context is one of the most important abstractions in the SDK. Not only 
 
 Middleware is much like any other messaging middleware, comprising a linear set of components that are each executed in order, giving each a chance to operate on the activity. The final stage of the middleware pipeline is a callback to the turn handler on the bot class the application has registered with the adapter's *process activity* method. The turn handler is generally `OnTurnAsync` in C# and `onTurn` in JavaScript.
 
-The turn handler takes a turn context as its argument, typically the application logic running inside the turn handler function will process the inbound activity's content and generate one or more activities in response, sending these out using the *send activity* function on the turn context. Calling *send activity* on the turn context will cause the middleware components to be invoked on the outbound activities. Middleware components execute before and after the bot's turn handler function. The execution is inherently nested and, as such, sometimes referred to being like a Russian Doll. For more in depth information about middleware, see the [middleware topic](~/v4sdk/bot-builder-concept-middleware.md).
+The turn handler takes a turn context as its argument, typically the application logic running inside the turn handler function will process the inbound activity's content and generate one or more activities in response, sending these out using the *send activity* function on the turn context. Calling *send activity* on the turn context will cause the middleware components to be invoked on the outbound activities. Middleware components execute before and after the bot's turn handler function. The execution is inherently nested and, as such, sometimes referred to being like a Russian Doll.
+
+The [middleware](~/v4sdk/bot-builder-concept-middleware.md) topic describes middleware in greater depth.
 
 ### The bot logic
 
-The bot contains the conversational reasoning or logic for a turn. The SDK provides a couple ways to organize the bot logic.
+The bot contains the conversational reasoning or logic for a turn. The SDK provides a few ways to organize the bot logic.
 
 - Use an _activity handler_ and implement handlers for each activity type or sub-type your bot will recognize and react to.
-- Use an activity handler and a _component dialog_.
-- Use a _dialog manager_ and an _adaptive dialog_.
-- Implement your own bot class and provide your own structure.
+  - Use the _Teams activity handler_ to create bots that can connect to the Teams channel. (The Teams channel requires the bot to handle some channel-specific behavior.)
+- Use dialogs to manage a long-running conversation with the user.
+  - Use an activity handler and a _component dialog_. Component dialogs use a sequence model for conversations.
+  - Use a _dialog manager_ and an _adaptive dialog_. Adaptive dialogs use a flexible model for conversations to handle a wider range of user interaction. Your bot class can forward activities to the dialog manager directly or pass them through an activity handler first.
+- Implement your own bot class and provide your own logic for handling each turn.
 
 ## The activity processing stack
 

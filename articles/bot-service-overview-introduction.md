@@ -5,7 +5,7 @@ keywords: overview, introduction, SDK, outline
 author: Kaiqb
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: overview
 ms.service: bot-service
 ms.date: 11/15/2019
 ---
