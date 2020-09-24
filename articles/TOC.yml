@@ -30,8 +30,8 @@
     href: https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md
 - name: Security
   items:
-  - name: Bot Framework security basics
-    href: v4sdk/bot-builder-security-basics.md
+  - name: Authentication basics
+    href: v4sdk/bot-builder-authentication-basics.md
   - name: Security guidelines
     href: v4sdk/bot-builder-security-guidelines.md
   - name: Authentication types
