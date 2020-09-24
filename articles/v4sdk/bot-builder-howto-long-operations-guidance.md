@@ -3,7 +3,7 @@ title: Manage a long-running operation - Bot Service
 description: Learn how to handle long operations within a bot.
 keywords: long operations, timeout, 15 seconds
 author: ericdahlvang
-ms.author: ericdahlvang
+ms.author: erdahlva
 manager: kamrani
 ms.topic: article
 ms.service: bot-service

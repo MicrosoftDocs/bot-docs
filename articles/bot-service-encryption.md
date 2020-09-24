@@ -1,5 +1,5 @@
 ---
-title: Azure Bot Service encryption for data at rest | Microsoft Docs
+title: Azure Bot Service encryption for data at rest - Bot Service
 description: Azure Bot Service protects your data by automatically encrypting it before persisting it to the cloud with Microsoft provided encryption keys.
 ms.service: bot-service
 ms.date: 07/21/2020
@@ -21,12 +21,14 @@ Azure Bot Service encrypts your data in the bot service. Examples include, but a
 
 ## About encryption key management
 
-Azure Bot Service encrypts data with Microsoft provided keys which are rotated on a pre-defined basis.  
+Azure Bot Service encrypts data with Microsoft provided keys which are rotated on a pre-defined basis.
+There are two types of keys: Microsoft-managed and customer-managed.
+This table describes which entity performs each operation for Microsoft-managed keys.
 
-|                                        |    Microsoft-managed keys                             | 
+|    Operation                           |    Microsoft-managed keys                             |
 |----------------------------------------|-------------------------------------------------------|
 |    Encryption/decryption operations    |    Azure                                              |
-|    Key storage                         |    Azure Key Vault                              |
+|    Key storage                         |    Azure Key Vault                                    |
 |    Key rotation responsibility         |    Microsoft                                          |
 |    Key usage                           |    Microsoft                                          |
 |    Key access                          |    Microsoft only                                     |

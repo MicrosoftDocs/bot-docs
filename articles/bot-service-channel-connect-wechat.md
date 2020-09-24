@@ -45,7 +45,7 @@ The Bot Project is a regular Bot Framework SDK V4 project. Before you can launch
 
 ### Prerequisites
 
-    .NET Core SDK (version 2.2.x)
+- .NET Core SDK (version 2.2.x)
 
 ### Add Reference To WeChat Adapter Source
 

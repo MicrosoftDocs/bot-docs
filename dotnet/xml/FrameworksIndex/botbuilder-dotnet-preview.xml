@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Framework Name="botbuilder-dotnet-preview">
   <Assemblies>
-    <Assembly Name="Microsoft.Bot.Builder.AI.Orchestrator" Version="4.10.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Azure.Queues" Version="4.10.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing" Version="4.10.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Dialogs.Debugging" Version="4.10.0.0" />
+    <Assembly Name="Microsoft.Bot.Builder.AI.Orchestrator" Version="4.10.3.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Azure.Queues" Version="4.10.3.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing" Version="4.10.3.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Dialogs.Debugging" Version="4.10.3.0" />
   </Assemblies>
   <Namespace Name="Microsoft.Bot.Builder.AI.Luis.Testing">
     <Type Name="Microsoft.Bot.Builder.AI.Luis.Testing.MockedHttpClientHandler" Id="T:Microsoft.Bot.Builder.AI.Luis.Testing.MockedHttpClientHandler">

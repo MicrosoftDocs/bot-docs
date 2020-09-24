@@ -7,13 +7,16 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Constants used as part of the Facebook handover protocol.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,6 +30,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -48,6 +52,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -69,6 +74,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -90,6 +96,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -111,6 +118,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -132,6 +140,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -153,6 +162,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Facebook</AssemblyName>
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

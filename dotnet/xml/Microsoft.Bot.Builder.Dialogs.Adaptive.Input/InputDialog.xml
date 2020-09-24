@@ -9,6 +9,7 @@
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Dialog</BaseTypeName>
@@ -30,6 +31,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -49,6 +51,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -81,6 +84,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -113,6 +117,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -151,6 +156,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -181,6 +187,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -209,6 +216,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -241,6 +249,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -273,6 +282,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -305,6 +315,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -337,6 +348,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -369,6 +381,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -399,6 +412,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -429,6 +443,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Input.InputState&gt;</ReturnType>
@@ -459,6 +474,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.IActivity&gt;</ReturnType>
@@ -491,6 +507,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -523,6 +540,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -558,6 +576,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -590,6 +609,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -611,6 +631,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -643,6 +664,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -675,6 +697,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -718,6 +741,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

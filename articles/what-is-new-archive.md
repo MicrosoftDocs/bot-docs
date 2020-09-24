@@ -20,8 +20,8 @@ using their favorite programming language.
 
 This article summarizes key new features and improvements in Bot Framework and Azure Bot Service.
 
-|   | C#  | JS  | Python |  Java | 
-|---|:---:|:---:|:------:|:-----:|
+|Item | C#  | JS  | Python | Java
+|:----|:---:|:---:|:------:|:-----:
 |Release |[4.9.1 (GA)][1] | [4.9.0 (GA)][2] | [4.9.0 (GA)][3] | [4.6 Preview][3a]|
 |Samples |[.NET Core][6], [WebAPI][10] |[Node.js][7], [TypeScript][8], [es6][9]  | [Python][11a] | | 
 
@@ -166,14 +166,14 @@ using their favorite programming language.
 
 This article summarizes key new features and improvements in Bot Framework and Azure Bot Service.
 
-
-|   | C#  | JS  | Python |  Java | 
-|---|:---:|:---:|:------:|:-----:|
+|Item | C#  | JS  | Python | Java  |
+|:----|:---:|:---:|:------:|:-----:|
 |Release |[4.6 GA][1] | [4.6 GA][2] | [Beta 4][3] | [Preview 3][3a]|
 |Docs | [docs][5] |[docs][5] |  | |
-|Samples |[.NET Core][6], [WebAPI][10] |[Node.js][7], [TypeScript][8], [es6][9]  | | | 
+|Samples |[.NET Core][6], [WebAPI][10] |[Node.js][7], [TypeScript][8], [es6][9]  | | |
 
 #### Bot Framework SDK for Microsoft Teams (GA)
+
 The Bot Framework SDK v4.6 release fully integrates support for building Teams bots allowing users to use them in channel or group chat conversations. By adding a bot to a team or chat, all users of the conversation can take advantage of the bot functionality right in the conversation.  [[Docs](https://docs.microsoft.com/azure/bot-service/bot-builder-basics-teams)]
 
 #### Bot Framework for Power Virtual Agent (Preview)
@@ -207,15 +207,15 @@ using their favorite programming language.
 
 This article summarizes key new features and improvements in Bot Framework and Azure Bot Service.
 
-|   | C#  | JS  | Python |   
-|---|:---:|:---:|:------:|
-|SDK |[4.5][1] | [4.5][2] | [4.4.0b2 (preview)][3] | 
+|Item | C#  | JS  | Python |
+|:----|:---:|:---:|:------:|
+|SDK |[4.5][1] | [4.5][2] | [4.4.0b2 (preview)][3] |
 |Docs | [docs][5] |[docs][5] |  | |
 |Samples |[.NET Core][6], [WebAPI][10] |[Node.js][7] , [TypeScript][8], [es6][9]  | [Python][11] | | 
 
-
 ### Bot Framework Channels
-- [Direct Line Speech (public preview)](https://aka.ms/streaming-extensions) | [docs](https://docs.microsoft.com/azure/bot-service/directline-speech-bot?view=azure-bot-service-4.0): Bot Framework and Microsoft's Speech Services provide a channel that enables streamed speech and text bi-directionally from the client to the bot application using WebSockets.  
+
+- [Direct Line Speech (public preview)](https://aka.ms/streaming-extensions) | [docs](directline-speech-bot.md): Bot Framework and Microsoft's Speech Services provide a channel that enables streamed speech and text bi-directionally from the client to the bot application using WebSockets.  
 
 - [Direct Line App Service Extension (public preview)](https://portal.azure.com) | [docs](https://aka.ms/directline-ase): A version of Direct Line 
 that allows clients to connect directly to bots using the Direct Line API. This offers many benefits, including increased performance and more isolation. Direct Line App Service Extension is available on all Azure App Services, including those hosted within an Azure App Service Environment. An Azure App Service Environment provides isolation and is ideal for working within a VNet. A VNet lets you create your own private space in Azure and is crucial to your cloud network as it offers isolation, segmentation, and other key benefits. 
@@ -245,11 +245,11 @@ Introduced at Microsoft Build 2019, the Bot Inspector is a new feature in the Bo
 
 ## What's new (May 2019)
 
-|   | C#  | JS  | Python |  Java | 
-|---|:---:|:---:|:------:|:-----:|
+|Item | C#  | JS  | Python | Java  |
+|:----|:---:|:---:|:------:|:-----:|
 |SDK |[4.4.3][1] | [4.4.0][2] | [4.4.0b1 (preview)][3] | [4.0.0a6 (preview)][3a]|
 |Docs | [docs][5] |[docs][5] |  | |
-|Samples |[.NET Core][6], [WebAPI][10] |[Node.js][7] , [TypeScript][8], [es6][9]  | [Python][11] | | 
+|Samples |[.NET Core][6], [WebAPI][10] |[Node.js][7] , [TypeScript][8], [es6][9]  | [Python][11] | |
 
 <a name="V4-whats-new"></a>
 ## Bot Framework SDK (New! In preview)
@@ -287,7 +287,7 @@ the Direct Line JS client can be used in your custom application. Go to [Github]
 
 <a name="ABS-whats-new"></a>
 
-* **New! Direct Line Speech Channel**: We are bringing together the Bot Framework and Microsoft's Speech Services to provide a channel that enables streamed speech and text bi-directionally from the client to the bot application.  For more information, see how to add [speech channel to your bot](https://docs.microsoft.com/azure/bot-service/directline-speech-bot?view=azure-bot-service-4.0).
+* **New! Direct Line Speech Channel**: We are bringing together the Bot Framework and Microsoft's Speech Services to provide a channel that enables streamed speech and text bi-directionally from the client to the bot application.  For more information, see how to add [speech channel to your bot](directline-speech-bot.md).
 
 
 ## Bot Framework Emulator
@@ -344,7 +344,7 @@ A machine learning-based service to build natural language experiences. Quickly 
 [2]:https://github.com/Microsoft/botbuilder-js#packages
 [3]:https://github.com/Microsoft/botbuilder-python#packages
 [3a]:https://github.com/Microsoft/botbuilder-java#packages
-[5]:https://docs.microsoft.com/azure/bot-service/?view=azure-bot-service-4.0
+[5]:index.yml
 [6]:https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore
 [7]:https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs
 [8]:https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/typescript_nodejs
@@ -357,15 +357,15 @@ A machine learning-based service to build natural language experiences. Quickly 
 [19]:https://github.com/Microsoft/botbuilder-tools/tree/master/packages/QnAMaker#readme
 
 [27]:https://azure.microsoft.com/services/bot-service/
-[28]:https://docs.microsoft.com/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0
-[29]:https://docs.microsoft.com/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0
+[28]:bot-service-overview-introduction.md
+[29]:bot-service-manage-channels.md
 
 [30]:https://www.luis.ai
 [31]:https://docs.microsoft.com/azure/cognitive-services/LUIS/Home
-[32]:https://docs.microsoft.com/azure/bot-service/bot-builder-howto-v4-luis?view=azure-bot-service-4.0&branch=pr-en-us-1325&tabs=csharp
+[32]:v4sdk/bot-builder-howto-v4-luis.md
 [33]:https://www.qnamaker.ai/
 [34]:https://aka.ms/what-is-qnamaker
-[35]:https://docs.microsoft.com/azure/bot-service/bot-builder-howto-qna?view=azure-bot-service-4.0&branch=pr-en-us-1325&tabs=cs
+[35]:v4sdk/bot-builder-howto-qna.md
 
 [40]:https://github.com/Microsoft/BotBuilder-Samples/tree/master/experimental/common-expression-language#readme
 [41]:https://github.com/Microsoft/BotBuilder-Samples/blob/master/experimental/common-expression-language/api-reference.md
@@ -380,7 +380,7 @@ A machine learning-based service to build natural language experiences. Quickly 
 
 [60]:https://github.com/Microsoft/BotFramework-Emulator#readme
 [61]:https://github.com/Microsoft/BotFramework-Emulator/releases/latest
-[62]:https://docs.microsoft.com/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-4.0
+[62]:bot-service-debug-emulator.md
 
 [100]:https://github.com/howdyai/botkit#readme
 [101]:https://github.com/howdyai/botkit/blob/master/LICENSE.md
