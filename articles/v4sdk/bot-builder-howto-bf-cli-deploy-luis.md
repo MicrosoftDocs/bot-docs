@@ -166,7 +166,9 @@ For information about publishing a LUIS application, see [Publish your active, t
 
 It is helpful to understand how the process of deploying a LUIS app works, and after completing this article up to this point, you should have a better understanding of the processes involved in creating the LUIS model, using that model to create a LUIS app in an Azure Cognitive Services resource, then train and publish it using the Bot Framework CLI commands.
 
-Using these commands gives you flexibility when tailoring scripts to your specific needs. If this flexibility is not needed there is another BF CLI command that combines the commands needed to create or update, then train and publish a LUIS app, and that is the `luis:build` command.
+These commands give you a lot of flexibility when tailoring scripts to your specific needs.
+You can use the `luis:build` command to create or update, then train and publish a LUIS app.
+However, using the `luis:build` command provides you with fewer options for controlling the process.
 
 For each `.lu` file, including `.lu` files for each locale, the build command combines all the following actions into a single command:
 
