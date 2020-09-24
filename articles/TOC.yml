@@ -31,6 +31,8 @@
 - name: Security
   items:
   - name: Security guidelines
+    href: v4sdk/bot-builder-security-basics.md
+  - name: Bot Framework security basics
     href: v4sdk/bot-builder-security-guidelines.md
   - name: Authentication types
     href: v4sdk/bot-builder-concept-authentication-types.md

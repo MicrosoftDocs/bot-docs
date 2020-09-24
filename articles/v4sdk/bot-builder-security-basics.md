@@ -35,7 +35,7 @@ To summarize, to authenticate a bot and authorize it to access user's protected 
 
 ## Related topics
 
-The following articles provide in depth information and examples of the security in the Bot Framework.
+The following articles provide in depth information and examples of the Bot Framework security.
 
 > [!div class="mx-tdBreakAll"]
 > |Article|Description|
