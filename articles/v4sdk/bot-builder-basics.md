@@ -38,7 +38,7 @@ A bot is an app that has a conversational interface. They can be used to shift s
 > Support for features provided by the SDK and REST API varies by channel.
 > You can test your bot using the Bot Framework Emulator, but you should also test all features of your bot on each channel in which you intend to make your bot available.
 
-Interactions involve the exchange of activities and they are happen in turns.
+Interactions involve the exchange of activities and they are handled in turns.
 
 ### Activities
 
@@ -176,6 +176,7 @@ A bot is a web application, and templates are provided for each language version
 
 ### General structure
 
+All templates provide a default endpoint implementation and adapter.
 Each template includes:
 
 - Resource provisioning
@@ -183,25 +184,27 @@ Each template includes:
 - An adapter object
 - A bot object
 
-### The templates
-
-All templates provide a default endpoint implementation and adapter.
 The main difference between the different template types is in the bot object.
+The templates are:
 
-- Empty bot, which includes an activity handler that welcomes a user to the conversation by sending a "hello world" message on the first turn of the conversation.
-- Echo bot, which includes an activity handler that welcomes a user or echoes back user input.
-  - See [new] how-to create a basic bot project.
-- Core bot
-  - Bot as activity handler that welcomes a user uses a component dialog to manage the conversation.
-  - The included dialogs use Language Understanding (LUIS) and QnA Maker features.
-  - See the how-to handle user interrupt or use LUIS for more info.
+- **Empty bot**
+  - Includes an activity handler that welcomes a user to the conversation by sending a "hello world" message on the first turn of the conversation.
+- **Echo bot**
+  - Uses an activity handler to welcome users and echo back user input.
+- **Core bot**
+  - Brings together many features of the SDK and demonstrates best practices for a bot.
+  - Uses an activity handler to welcome users.
+  - Uses a component dialog and child dialogs to manage the conversation.
+  - The dialogs use Language Understanding (LUIS) and QnA Maker features.
 
 <!-- Link to:
 Quickstarts
 How to create a basic bot project
 -->
 
-## Manage bot resources
+## Additional information
+
+### Managing bot resources
 
 <!-- JF-TODO:
     This and the linked doc need review and updating.
@@ -209,7 +212,7 @@ How to create a basic bot project
 
 The bot resources, such as app ID, passwords, keys or secrets for connected services, will need to be managed appropriately. For more on how to do so, see [Manage bot resources](bot-file-basics.md).
 
-## Additional information
+### The Bot Connector REST API
 
 The Bot Framework SDK wraps and builds upon the Bot Connector REST API. If you want to understand the underlying HTTP requests that support the SDK, see the Connector [authentication](../rest-api/bot-framework-rest-connector-authentication.md) and associated articles.
 The activities a bot sends and receives conform to the [Bot Framework Activity schema](https://aka.ms/botSpecs-activitySchema).
