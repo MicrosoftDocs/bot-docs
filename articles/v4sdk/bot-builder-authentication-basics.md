@@ -27,7 +27,7 @@ The bot uses the **token** based on the app id and password to access system's p
 
 ## Bot authentication and authorization
 
-To summarize, to authenticate a bot and authorize it to access user's protected resources, you perform the following steps:
+To authenticate a bot and authorize it to access user's protected resources, you perform the following steps:
 
 1. Create a bot channel registration application.
 1. Add the registration app id and password to the bot configuration file. This allows the bot to be authenticated to access system's protected resources.
@@ -37,13 +37,13 @@ To summarize, to authenticate a bot and authorize it to access user's protected 
 
 ### Best practices
 
-- Keep the AAD app registration restricted to its original purpose of being service to service application.
+- Keep the AAD app registration restricted to its original purpose of service to service application.
 - Create an additional AAD app for any user to service authentication, for more finite control over disabling authentication connections, rolling secrets, or reusing the AAD app with other applications.
 
-Some of the problems that you can encounter if you use the AAD registration app for authentication are:
+Some of the problems that you encounter if you use the AAD registration app for authentication are:
 
-- If the certificate attached to the AAD app (registration) needs to be renewed it would impact users that have authenticated to other AAD services using it.
-- In general, it creates a single point of failure and control for all things authentication related to the bot.
+- If the certificate attached to the AAD app registration needs to be renewed it would impact users that have authenticated with other AAD services using the certificate.
+- In general, it creates a single point of failure and control for all authentication related activities with the bot.
 
 ## Code highlights
 
