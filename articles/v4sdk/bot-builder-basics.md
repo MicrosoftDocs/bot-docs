@@ -176,9 +176,12 @@ A bot is a web application, and templates are provided for each language version
 
 ### General structure
 
-- Language-specific HTTP endpoint implementation and resource provisioning
-- Adapter instance
-- Bot instance
+Each template includes:
+
+- Resource provisioning
+- A language-specific HTTP endpoint implementation that routes incoming activities to an adapter.
+- An adapter object
+- A bot object
 
 ### The templates
 
