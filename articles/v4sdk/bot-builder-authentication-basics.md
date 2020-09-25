@@ -45,7 +45,7 @@ Some of the problems that you encounter if you use the AAD registration app for 
 - If the certificate attached to the AAD app registration needs to be renewed it would impact users that have authenticated with other AAD services using the certificate.
 - In general, it creates a single point of failure and control for all authentication related activities with the bot.
 
-## Code highlights
+## Code highlight
 
 If you want to add authentication to your bot, you start by calling the `OAuthPrompt`, depending on when you want to authenticate the user.
 See the steps described in [Use an OAuth prompt to sign the user in and get a token](bot-builder-authentication.md#use-an-oauth-prompt-to-sign-the-user-in-and-get-a-token).
@@ -64,6 +64,6 @@ The following articles provide in depth information and examples about the Bot F
 > |[User authentication](bot-builder-concept-authentication.md)| Describes user's authentication and the related token to authorize a bot to perform tasks on the user's behalf.|
 > |[Single sign on](bot-builder-concept-sso.md)| Describes single user authentication for multiple protected resources access.|
 > |[Bot channels registration](../bot-service-quickstart-registration.md)|Shows how to register a bot with the Azure Bot Service.|
-> |[Bot Framework security guidelines>](bot-builder-security-guidelines.md)| Describes security in general and as it applies to the Bot Framework.|
+> |[Bot Framework security guidelines](bot-builder-security-guidelines.md)| Describes security in general and as it applies to the Bot Framework.|
 > |[Add authentication to a bot](bot-builder-authentication.md)| Shows how to create bot channel registration, authentication connection and preparing the code.|
 > |[Add single sign on to a bot](bot-builder-authentication-sso.md)| Shows how to add single sign on authentication to a bot.|
