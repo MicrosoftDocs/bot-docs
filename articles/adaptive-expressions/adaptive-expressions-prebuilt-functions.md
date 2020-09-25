@@ -1806,7 +1806,7 @@ And returns the result **[1, 2, [3, 4], [5, 6]]**.
 
 ### float
 
-Convert the string version of a floating-point number to a floating-point number. You can use this function only when passing custom parameters to an app, such as a logic app. An exception will be thrown if the string cannot be evaluated to a float.
+Convert the string version of a floating-point number to a floating-point number. You can use this function only when passing custom parameters to an app, such as a logic app. An exception will be thrown if the string cannot be converted to a float.
 
 ```
 float('<value>')
@@ -2713,7 +2713,7 @@ And returns a new object:
 
 ### int
 
-Return the integer version of a string. An exception will be thrown if the string cannot be evaluated to an integer.
+Return the integer version of a string. An exception will be thrown if the string cannot be converted to an integer.
 
 ```
 int('<value>')
