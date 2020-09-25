@@ -25,15 +25,25 @@ Let's see if we can untangle this bundle by starting with a bird's eye view of t
 - **Bot**. A bot is identified by its channels registration **MicrosoftAppID** and **MicrosoftAppPassword**. You add the related values in the bot's configuration files (`appsettings.json` (.NET), `.env` (JavaScript), `config.py` (Python)) or in **Azure Key Vault**. You also add the connection name to the files.
 The bot uses the **token** based on the app id and password to access system's protected resources. Also, the bot uses the **token** based on the authentication connection to access user's protected resources.
 
-## Bot authentication and authorization in a nutshell
+## Bot authentication and authorization
 
-To summarize, to authenticate a bot and authorize it to access user's protected resources, you perform these steps:
+To summarize, to authenticate a bot and authorize it to access user's protected resources, you perform the following steps:
 
 1. Create a bot channel registration application.
 1. Add the registration app id and password to the bot configuration file. This allows the bot to be authenticated to access system's protected resources.
 1. Create an Azure AD application to select an identity provider to authenticate the user.
 1. Create an authentication connection and add it to the channel registration settings.
 1. Add the connection name to the bot's configuration files. This allows the bot to be authorized to access user's protected resources.
+
+### Best practices
+
+- Keep the AAD app registration restricted to its original purpose of being service to service application.
+- Create an additional AAD app for any user to service authentication, for more finite control over disabling authentication connections, rolling secrets, or reusing the AAD app with other applications.
+
+Some of the problems that you can encounter if you use the AAD registration app for authentication are:
+
+- If the certificate attached to the AAD app (registration) needs to be renewed it would impact users that have authenticated to other AAD services using it.
+- In general, it creates a single point of failure and control for all things authentication related to the bot.
 
 ## Code highlights
 
