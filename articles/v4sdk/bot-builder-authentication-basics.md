@@ -39,19 +39,19 @@ For a complete example, see [Add authentication to a bot](bot-builder-authentica
 
 ## Code highlights
 
-Let's say you have implemented your bot and want to add authentication to it. You start by calling the `OAuthPrompt`. When to call the `OAuthPrompt` depends on when you want to authenticate the user.
+Let's say you want to add authentication to your bot. You start by calling the `OAuthPrompt`. When to call the `OAuthPrompt` depends on when you want to authenticate the user.
 
 See the steps described in [Use an OAuth prompt to sign the user in and get a token](bot-builder-authentication.md#use-an-oauth-prompt-to-sign-the-user-in-and-get-a-token).
 
 
 ## Related topics
 
-The following articles provide in depth information and examples of the Bot Framework authentication.
+The following articles provide in depth information and examples of the Bot Framework authentication. Start by looking at the [Authentication types](bot-builder-concept-authentication-types.md).
 
 > [!div class="mx-tdBreakAll"]
 > |Article|Description|
 > |-------------|----------|
-> |[Bot Framework security guidelines](bot-builder-security-guidelines.md)| Describes security in general and as it applies to the Bot Framework.|
+> |[Bot Framework security guidelines <img width=300px/>](bot-builder-security-guidelines.md)| Describes security in general and as it applies to the Bot Framework.|
 > |[Authentication types](bot-builder-concept-authentication-types.md)| Describes the two Bot Framework authentication types and the tokens they use.|
 > |[User authentication](bot-builder-concept-authentication.md)| Describes user's authentication and the related token to authorize a bot to perform tasks on the user's behalf.|
 > |[Identity providers](bot-builder-concept-identity-providers.md)| Describes the use of identity providers. They allow you to build applications that securely sign in users using industry standard protocols like OAuth2.0.|
