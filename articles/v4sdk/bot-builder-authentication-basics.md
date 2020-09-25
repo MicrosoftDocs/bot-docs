@@ -35,16 +35,16 @@ To summarize, to authenticate a bot and authorize it to access user's protected 
 1. Create an authentication connection and add it to the channel registration settings.
 1. Add the connection name to the bot's configuration files. This allows the bot to be authorized to access user's protected resources.
 
-For a complete example, see [Add authentication to a bot](bot-builder-authentication.md).
-
 ## Code highlights
 
 If you want to add authentication to your bot, you start by calling the `OAuthPrompt`, depending on when you want to authenticate the user.
 See the steps described in [Use an OAuth prompt to sign the user in and get a token](bot-builder-authentication.md#use-an-oauth-prompt-to-sign-the-user-in-and-get-a-token).
 
+For the complete example, see [Add authentication to a bot](bot-builder-authentication.md).
+
 ## Related topics
 
-The following articles provide in depth information and examples of the Bot Framework authentication. Start by looking at the [Authentication types](bot-builder-concept-authentication-types.md).
+The following articles provide in depth information and examples about the Bot Framework authentication. Start by looking at the [Authentication types](bot-builder-concept-authentication-types.md) and then [Identity providers](bot-builder-concept-identity-providers.md).
 
 > [!div class="mx-tdBreakAll"]
 > |Article|Description|
@@ -54,5 +54,5 @@ The following articles provide in depth information and examples of the Bot Fram
 > |[User authentication](bot-builder-concept-authentication.md)| Describes user's authentication and the related token to authorize a bot to perform tasks on the user's behalf.|
 > |[Identity providers](bot-builder-concept-identity-providers.md)| Describes the use of identity providers. They allow you to build applications that securely sign in users using industry standard protocols like OAuth2.0.|
 > |[Single sign on](bot-builder-concept-sso.md)| Describes single user authentication for multiple protected resources access.|
-> |[Add authentication to a bot](bot-builder-authentication.md)| Shows how to create bot channel registration, authentication connection and preparing the sample code.|
+> |[Add authentication to a bot](bot-builder-authentication.md)| Shows how to create bot channel registration, authentication connection and preparing the code.|
 > |[Add single sign on to a bot](bot-builder-authentication-sso.md)| Shows how to add single sign on authentication to a bot.|
