@@ -32,8 +32,6 @@
   items:
   - name: Authentication basics
     href: v4sdk/bot-builder-authentication-basics.md
-  - name: Security guidelines
-    href: v4sdk/bot-builder-security-guidelines.md
   - name: Authentication types
     href: v4sdk/bot-builder-concept-authentication-types.md
   - name: User authentication
@@ -42,6 +40,8 @@
     href: v4sdk/bot-builder-concept-identity-providers.md
   - name: Single sign on
     href: v4sdk/bot-builder-concept-sso.md
+  - name: Security guidelines
+    href: v4sdk/bot-builder-security-guidelines.md
   - name: Bot Authentication
     items:
     - name: Add authentication to a bot
