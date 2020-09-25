@@ -313,7 +313,7 @@ Example settings file:
 
 When you include the `--dialog` option, a `.dialog` file will be generated for each of your `.lu` files, one for each locale. These files will be written to the directory specified in the `--out` option. For example:
 
-```json
+```
 RootDialog.en-us.lu.dialog <-- LuisRecognizer for en-us locale
 RootDialog.fr-fr.lu.dialog <-- LuisRecognizer for fr-fr locale
 RootDialog.lu.dialog       <-- MultiLanguageRecognizer configured to use all locales
