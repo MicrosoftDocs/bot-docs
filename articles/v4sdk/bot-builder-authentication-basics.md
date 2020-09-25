@@ -59,10 +59,11 @@ The following articles provide in depth information and examples about the Bot F
 > [!div class="mx-tdBreakAll"]
 > |Article|Description|
 > |-------------|----------|
-> |[Bot Framework security guidelines <img width=105px/>](bot-builder-security-guidelines.md)| Describes security in general and as it applies to the Bot Framework.|
-> |[Authentication types](bot-builder-concept-authentication-types.md)| Describes the two Bot Framework authentication types and the tokens they use.|
-> |[User authentication](bot-builder-concept-authentication.md)| Describes user's authentication and the related token to authorize a bot to perform tasks on the user's behalf.|
+> |[Authentication types <img width=105px/>](bot-builder-concept-authentication-types.md)| Describes the two Bot Framework authentication types and the tokens they use.|
 > |[Identity providers](bot-builder-concept-identity-providers.md)| Describes the use of identity providers. They allow you to build applications that securely sign in users using industry standard protocols like OAuth2.0.|
+> |[User authentication](bot-builder-concept-authentication.md)| Describes user's authentication and the related token to authorize a bot to perform tasks on the user's behalf.|
 > |[Single sign on](bot-builder-concept-sso.md)| Describes single user authentication for multiple protected resources access.|
+> |[Bot channels registration](../bot-service-quickstart-registration.md)|Shows how to register a bot with the Azure Bot Service.|
+> |[Bot Framework security guidelines>](bot-builder-security-guidelines.md)| Describes security in general and as it applies to the Bot Framework.|
 > |[Add authentication to a bot](bot-builder-authentication.md)| Shows how to create bot channel registration, authentication connection and preparing the code.|
 > |[Add single sign on to a bot](bot-builder-authentication-sso.md)| Shows how to add single sign on authentication to a bot.|
