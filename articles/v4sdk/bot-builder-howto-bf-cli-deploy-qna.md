@@ -311,7 +311,7 @@ Example settings file:
 
 When you use the optional `--dialog` option, a dialog file will be generated for all language variations of each of your `.qna` files. These files will be written to the directory specified in the `out` option. For example:
 
-```json
+```
  ./rootDialog/RootDialog.qna.dialog <-- MultiLanguageRecognizer configured to use all of the languages
  ./rootDialog/RootDialog.en-us.qna.dialog <-- QnARecognizer for en-us locale
  ./rootDialog/RootDialog.fr-fr.qna.dialog <-- QnARecognizer for fr-fr locale
