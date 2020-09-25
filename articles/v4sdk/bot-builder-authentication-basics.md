@@ -39,7 +39,7 @@ For a complete example, see [Add authentication to a bot](bot-builder-authentica
 
 ## Code highlights
 
-Let's say you want to add authentication to your bot. You start by calling the `OAuthPrompt`. When to call the `OAuthPrompt` depends on when you want to authenticate the user.
+If you want to add authentication to your bot, you start by calling the `OAuthPrompt`, depending on when you want to authenticate the user.
 
 See the steps described in [Use an OAuth prompt to sign the user in and get a token](bot-builder-authentication.md#use-an-oauth-prompt-to-sign-the-user-in-and-get-a-token).
 
