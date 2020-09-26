@@ -33,7 +33,7 @@ This article explains how to deploy a LUIS resource. For information on how to u
 This article describes how to perform some common tasks using the Bot Framework CLI.
 
 1. [Create your LUIS authoring resource in Azure](#create-your-luis-authoring-resource-in-azure)
-1. [Install the Bot Framework SDK CLI](#install-the-bot-framework-cli)
+1. [Install the Bot Framework CLI](#install-the-bot-framework-cli)
 1. [Create your LUIS model](#create-your-luis-model)
 1. [Create your LUIS application](#create-your-luis-application)
 1. [Get the appId from your LUIS app](#get-the-appid-from-your-luis-app)
@@ -313,7 +313,7 @@ Example settings file:
 
 When you include the `--dialog` option, a `.dialog` file will be generated for each of your `.lu` files, one for each locale. These files will be written to the directory specified in the `--out` option. For example:
 
-```json
+```
 RootDialog.en-us.lu.dialog <-- LuisRecognizer for en-us locale
 RootDialog.fr-fr.lu.dialog <-- LuisRecognizer for fr-fr locale
 RootDialog.lu.dialog       <-- MultiLanguageRecognizer configured to use all locales

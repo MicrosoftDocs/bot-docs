@@ -31,7 +31,7 @@ The Bot Framework Command Line Interface (CLI) lets you automate the management 
 This article describes how to perform some common tasks used to deploy a QnA Maker KB using the Bot Framework CLI.
 
 1. [Create your QnA Maker resource in Azure Cognitive Services](#create-your-qna-maker-resource-in-azure-cognitive-services)
-1. [Install the Bot Framework SDK CLI](#install-the-bot-framework-cli)
+1. [Install the Bot Framework CLI](#install-the-bot-framework-cli)
 1. [Create your QnA Maker initialization file](#create-your-qna-maker-initialization-file)
 1. [Create your QnA Maker model](#create-your-qna-maker-model)
 1. [Create your QnA Maker knowledge base](#create-your-qna-maker-knowledge-base)
@@ -311,7 +311,7 @@ Example settings file:
 
 When you use the optional `--dialog` option, a dialog file will be generated for all language variations of each of your `.qna` files. These files will be written to the directory specified in the `out` option. For example:
 
-```json
+```
  ./rootDialog/RootDialog.qna.dialog <-- MultiLanguageRecognizer configured to use all of the languages
  ./rootDialog/RootDialog.en-us.qna.dialog <-- QnARecognizer for en-us locale
  ./rootDialog/RootDialog.fr-fr.qna.dialog <-- QnARecognizer for fr-fr locale
