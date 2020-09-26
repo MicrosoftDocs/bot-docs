@@ -309,7 +309,18 @@ Example settings file:
 
 ### The dialog file
 
-When you use the optional `--dialog` option, a dialog file will be generated for all language variations of each of your `.qna` files. These files will be written to the directory specified in the `out` option. For example:
+When you use the optional `--dialog` option, a dialog file will be generated for all language variations of each of your `.qna` files.
+
+> [!IMPORTANT]
+>
+> The `--schema` option is used in conjunction with the `--dialog` option. Including the `--schema` option will ensure that every dialog file created will have a reference to the projects root schema file. This schema file contains the schemas of all the components that are consumed by your bot. Every consumer of declarative files, including [Composer][composer], needs a schema file. If your project does not have a schema file you can generate one using the `dialog:merge` command. You will need to run this command before running the `luis:build` command. For additional information refer to the article on [Using declarative assets in adaptive dialogs][dialog-merge-command].
+
+The qnamaker:build dialog and schema parameters:
+
+- **dialog**. There are two valid values for the dialog option, multiLanguage and crosstrained.
+- **schema**. This take a relative path and filename pointing to the bots schema file.
+
+ These files will be written to the directory specified in the `out` option. For example:
 
 ```
  ./rootDialog/RootDialog.qna.dialog <-- MultiLanguageRecognizer configured to use all of the languages
@@ -317,9 +328,6 @@ When you use the optional `--dialog` option, a dialog file will be generated for
  ./rootDialog/RootDialog.fr-fr.qna.dialog <-- QnARecognizer for fr-fr locale
 ```
 
-> [!IMPORTANT]
->
-> The `--schema` option is used in conjunction with the `--dialog` option. Including the `--schema` option will ensure that every dialog file created will have a reference to the projects root schema file. This schema file contains the schemas of all the components that are consumed by your bot. Every consumer of declarative files, including [Composer][composer], needs a schema file. If your project does not have a schema file you can generate one using the `dialog:merge` command. You will need to run this command before running the `luis:build` command. For additional information refer to the article on [Using declarative assets in adaptive dialogs][dialog-merge-command].
 
 Here is an example of the _MultiLanguageRecognizer_ file:
 
@@ -339,8 +347,6 @@ Here is an example of the _MultiLanguageRecognizer_ file:
 You will use these files if you are using the declarative approach to developing your bot, and you will need to add a reference to this recognizer in your adaptive dialogs `.dialog` file. In the following example the `"recognizer": "RootDialog.qna"` is looking for the recognizer that is defined in the file **RootDialog.qna.dialog**:
 
  ![How to reference a recognizer in a .dialog file](./media/adaptive-dialogs/how-to-reference-the-qna-recognizer-in-dialog-file.png)
-
-This will configure your recognizer to a QnAMakerRecognizer("RootDialog.en-us.qna") which internally will use your memory settings.qna.xxx to bind to the correct `.dialog` file for your model and runtime environment.
 
 See [Using declarative assets in adaptive dialogs][declarative] for more information.
 

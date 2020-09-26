@@ -311,17 +311,24 @@ Example settings file:
 
 ## The dialog file
 
-When you include the `--dialog` option, a `.dialog` file will be generated for each of your `.lu` files, one for each locale. These files will be written to the directory specified in the `--out` option. For example:
+When you include the `--dialog` option, a `.dialog` file will be generated for each of your `.lu` files, one for each locale. 
+
+> [!IMPORTANT]
+>
+> The `--schema` option is used in conjunction with the `--dialog` option. Including the `--schema` option will ensure that every dialog file created will have a reference to the projects root schema file. This schema file contains the schemas of all the components that are consumed by your bot. Every consumer of declarative files, including [Composer][composer], needs a schema file. If your project does not have a schema file you can generate one using the `dialog:merge` command. You will need to run this command before running the `luis:build` command. For additional information refer to the article on [Using declarative assets in adaptive dialogs][dialog-merge-command].
+
+The luis:build dialog and schema parameters:
+
+- **dialog**. There are two valid values for the dialog option, multiLanguage and crosstrained.
+- **schema**. This take a relative path and filename pointing to the bots schema file.
+
+ These files will be written to the directory specified in the `out` option. For example:
 
 ```
 RootDialog.en-us.lu.dialog <-- LuisRecognizer for en-us locale
 RootDialog.fr-fr.lu.dialog <-- LuisRecognizer for fr-fr locale
 RootDialog.lu.dialog       <-- MultiLanguageRecognizer configured to use all locales
 ```
-
-> [!IMPORTANT]
->
-> The `--schema` option is used in conjunction with the `--dialog` option. Including the `--schema` option will ensure that every dialog file created will have a reference to the projects root schema file. This schema file contains the schemas of all the components that are consumed by your bot. Every consumer of declarative files, including [Composer][composer], needs a schema file. If your project does not have a schema file you can generate one using the `dialog:merge` command. You will need to run this command before running the `luis:build` command. For additional information refer to the article on [Using declarative assets in adaptive dialogs][dialog-merge-command].
 
 Here is an example of the _MultiLanguageRecognizer_ file:
 
