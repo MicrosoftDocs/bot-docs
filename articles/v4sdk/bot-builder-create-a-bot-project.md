@@ -27,6 +27,8 @@ However, the Bot Framework templates and samples are written for ASP.NET (C#), R
 
 You can crate an echo bot from the templates, as described in the quickstarts ([**C#**](../dotnet/bot-builder-dotnet-sdk-quickstart.md), [**JavaScript**](../javascript/bot-builder-javascript-quickstart.md), or [**Python**](../python/bot-builder-python-quickstart.md)), or you can copy an echo bot from the [Microsoft/BotBuilder-Samples](https://github.com/Microsoft/BotBuilder-Samples) repository.
 
+The C# and JavaScript templates have built-in support for streaming connections. This article does cover streaming features. For information about streaming connections, see how to [connect a bot to Direct Line Speech](../bot-service-channel-connect-directlinespeech.md).
+
 ## Prerequisites
 
 - Knowledge of [bot basics](bot-builder-basics.md).
@@ -64,8 +66,6 @@ The Python Cookiecutter templates create an [aiohttp](https://docs.aiohttp.org/)
 
 The **requirements.txt** file specifies dependencies and their associated versions for your bot.  This is all setup by the template and your system. Additional dependencies can be installed using `pip install -r requirements.txt`
 
-### config.py
-
 The **config.py** file specifies the configuration information for your bot, such as the port number, app ID, and password among other things. If using certain technologies or using this bot in production, you will need to add your specific keys or URL to this configuration. For this Echo bot, however, you don't need to do anything here right now; the app ID and password may be left undefined at this time.
 
 ---
@@ -80,13 +80,9 @@ It would also create the storage layer and memory management objects for the bot
 
 **Startup.cs**
 
+In ASP.NET, you register objects and object creation methods in the **Startup.cs** file.
 The `ConfigureServices` method loads the connected services, as well as their keys from **appsettings.json** or Azure Key Vault (if there are any), connects state, and so on. Here, the adapter and bot are defined to be available through dependency injection.
-
-[!code-csharp[ConfigureServices](~/../botbuilder-samples/samples/csharp_dotnetcore/02.echo-bot/Startup.cs?range=25-35)]
-
-The `Configure` method finishes the configuration of your app.
-
-[!code-csharp[Configure](~/../botbuilder-samples/samples/csharp_dotnetcore/02.echo-bot/Startup.cs?range=37-56)]
+Then, the `Configure` method finishes the configuration of your app.
 
 `ConfigureServices` and `Configure` are called by the runtime when the app starts.
 
@@ -108,6 +104,10 @@ Each incoming request represents the start of a new turn.
 
 ### [C#](#tab/csharp)
 
+**Controllers\\BotController.cs**
+
+[!code-csharp[BotController](~/../botbuilder-samples/samples/csharp_dotnetcore/02.echo-bot/Controllers/BotController.cs?range=11-34&highlight=22)]
+
 ### [JavaScript](#tab/javascript)
 
 **index.js**
@@ -120,7 +120,7 @@ server.upgrade...
 
 ### [Python](#tab/python)
 
-<!-- Q: Why do the C# and JS echo bots support streaming, but the Python one doesn't? -->
+<!-- Q: re echo bot: Why does JS support streaming, but not Python, and why does C# fall in between? -->
 
 **app.py**
 
@@ -135,6 +135,10 @@ messages and APP.router...
 The adapter receives activities from the messaging endpoint, forwards them to the bot's turn handler, and catches any errors or exceptions the bot's logic doesn't catch.
 
 ### [C#](#tab/csharp)
+
+**AdapterWithErrorHandler.cs**
+
+[!code-csharp[adapter](~/../botbuilder-samples/samples/csharp_dotnetcore/02.echo-bot/AdapterWithErrorHandler.cs?range=11-32)]
 
 ### [JavaScript](#tab/javascript)
 
@@ -160,6 +164,14 @@ The echo bot uses an _activity handler_ and implements handlers for the activity
 
 ### [C#](#tab/csharp)
 
+**Bots\\EchoBot.cs**
+
+[!code-csharp[adapter](~/../botbuilder-samples/samples/csharp_dotnetcore/02.echo-bot/Bots/EchoBot.cs?range=12-31)]
+
+The `OnMembersAddedAsync` handler...
+
+The `OnMessageActivityAsync` handler...
+
 ### [JavaScript](#tab/javascript)
 
 **index.js**
@@ -180,7 +192,7 @@ The `onMessage` handler...
 
 [!code-python[create bot](~/../botbuilder-samples/samples/python/02.echo-bot/app.py?range=11-15,60-61)]
 
-**app.py**
+**bots/bot.py**
 
 [!code-python[create bot](~/../botbuilder-samples/samples/python/02.echo-bot/bots/echo_bot.py?range=4-19)]
 
@@ -192,5 +204,5 @@ The `on_message_activity` handler...
 
 ## Next steps
 
-- send messages
-- welcome users
+- Learn how to [send and receive text messages](bot-builder-howto-send-messages.md)
+- Learn how to [send welcome messages to users](bot-builder-send-welcome-message.md)
