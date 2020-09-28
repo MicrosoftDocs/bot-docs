@@ -1,7 +1,7 @@
 ---
 title: Bot Framework authentication basics - Bot Service
 description: Learn about the authentication basics in the Bot Framework.
-author: kamrani
+author: v-mimiel
 ms.author: v-mimiel
 manager: kamrani
 ms.topic: article
@@ -11,8 +11,8 @@ ms.date: 07/07/2020
 
 # Bot Framework authentication basics
 
-Often a bot must access protected resources, for example a bank account, on behalf of the user. In order to do that the bot must be **authorized** based on the user's credentials. Before that, the user must be **authenticated** first.
-Moreover, the bot itself must be a known entity, that is it must be authenticated in the Azure Bot Service context. This happens prior the bot is authorized to operate on behalf of the user.
+Often a bot must access protected resources, for example email account, on behalf of the user. In order to do that the bot must be **authorized** based on the user's credentials. Before that, the user must be **authenticated** first.
+Moreover, the bot itself must be a known entity, that is it must be authenticated in the Azure Bot Service context. This happens prior to the bot being authorized to operate on behalf of the user.
 
 Let's see if we can untangle this bundle by starting with a bird's eye view of the Bot Framework authentication context.
 
@@ -23,14 +23,14 @@ Let's see if we can untangle this bundle by starting with a bird's eye view of t
 - **Azure AD Identity**. The Azure Active Directory (Azure AD) is a cloud identity service that allows you to build applications that securely sign in users using industry standard protocols like OAuth2.0. You create an AD application and use its **app id** and **password** to select an **identity provider** and generate an **authentication** connection. You add this connection to the bot channel registration settings. You also add the connection name in the bot configuration files as described below.
 
 - **Bot**. A bot is identified by its channels registration **MicrosoftAppID** and **MicrosoftAppPassword**. You add the related values in the bot's configuration files (`appsettings.json` (.NET), `.env` (JavaScript), `config.py` (Python)) or in **Azure Key Vault**. You also add the connection name to the files.
-The bot uses the **token** based on the app id and password to access system's protected resources. Also, the bot uses the **token** based on the authentication connection to access user's protected resources.
+The bot uses the **token** based on the app id and password to access protected resources. Also, the bot uses the **token** based on the authentication connection to access user's protected resources.
 
 ## Bot authentication and authorization
 
-To authenticate a bot and authorize it to access user's protected resources, you perform the following steps:
+The following are the main steps to authenticate a bot and authorize it to access user's protected resources:
 
 1. Create a bot channel registration application.
-1. Add the registration app id and password to the bot configuration file. This allows the bot to be authenticated to access system's protected resources.
+1. Add the registration app id and password to the bot configuration file. This allows the bot to be authenticated to access protected resources.
 1. Create an Azure AD application to select an identity provider to authenticate the user.
 1. Create an authentication connection and add it to the channel registration settings.
 1. Add the connection name to the bot's configuration files. This allows the bot to be authorized to access user's protected resources.
@@ -40,7 +40,7 @@ To authenticate a bot and authorize it to access user's protected resources, you
 - Keep the AAD app registration restricted to its original purpose of service to service application.
 - Create an additional AAD app for any user to service authentication, for more finite control over disabling authentication connections, rolling secrets, or reusing the AAD app with other applications.
 
-Some of the problems that you encounter if you use the AAD registration app for authentication are:
+Some of the problems you encounter if you also use the AAD registration app for authentication are:
 
 - If the certificate attached to the AAD app registration needs to be renewed it would impact users that have authenticated with other AAD services using the certificate.
 - In general, it creates a single point of failure and control for all authentication related activities with the bot.
