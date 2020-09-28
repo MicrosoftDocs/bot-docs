@@ -697,7 +697,7 @@ The screen shot shown below verifies that you can interrupt the conversational f
 [CognitiveServicesLUISAllInOne]: https://portal.azure.com/#create/Microsoft.CognitiveServicesLUISAllInOne
 
 <!-- Sample links ----->
-[cs-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/adaptive-dialog/05.interruptions-bot
+[cs-sample]: https://aka.ms/cs-adaptive-interruptions-sample
 [js-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/adaptive-dialog/javascript_nodejs/05.interruptions-bot
 [python-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/adaptive-dialog/python/05.interruptions-bot
 [rootdialog.lu]: https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/csharp_dotnetcore/adaptive-dialog/05.interruptions-bot/Dialogs/RootDialog/RootDialog.lu
