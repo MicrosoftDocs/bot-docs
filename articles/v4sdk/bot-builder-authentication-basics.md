@@ -1,7 +1,7 @@
 ---
 title: Bot Framework authentication basics - Bot Service
 description: Learn about the authentication basics in the Bot Framework.
-author: v-mimiel
+author: mmiele
 ms.author: v-mimiel
 manager: kamrani
 ms.topic: article
