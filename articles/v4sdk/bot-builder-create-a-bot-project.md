@@ -82,11 +82,11 @@ It would also create the storage layer and memory management objects for the bot
 
 The `ConfigureServices` method loads the connected services, as well as their keys from **appsettings.json** or Azure Key Vault (if there are any), connects state, and so on. Here, the adapter and bot are defined to be available through dependency injection.
 
-[!code-csharp[ConfigureServices](~/../botbuilder-samples/csharp_dotnetcore/02.echo-bot/Startup.cs?range=25-35)]
+[!code-csharp[ConfigureServices](~/../botbuilder-samples/samples/csharp_dotnetcore/02.echo-bot/Startup.cs?range=25-35)]
 
 The `Configure` method finishes the configuration of your app.
 
-[!code-csharp[Configure](~/../botbuilder-samples/csharp_dotnetcore/02.echo-bot/Startup.cs?range=37-56)]
+[!code-csharp[Configure](~/../botbuilder-samples/samples/csharp_dotnetcore/02.echo-bot/Startup.cs?range=37-56)]
 
 `ConfigureServices` and `Configure` are called by the runtime when the app starts.
 
@@ -112,7 +112,7 @@ Each incoming request represents the start of a new turn.
 
 **index.js**
 
-[!code-javascript[create server](~/../botbuilder-samples/javascript_nodejs/02.echo-bot/index.js?range=11-12,20-27,62-85)]
+[!code-javascript[create server](~/../botbuilder-samples/samples/javascript_nodejs/02.echo-bot/index.js?range=11-12,20-27,62-85)]
 
 server.post...
 
@@ -124,7 +124,7 @@ server.upgrade...
 
 **app.py**
 
-[!code-python[create server](~/../botbuilder-samples/python/02.echo-bot/app.py?range=4-10,16-18,20-23,64-88)]
+[!code-python[create server](~/../botbuilder-samples/samples/python/02.echo-bot/app.py?range=4-10,16-18,20-23,64-88)]
 
 messages and APP.router...
 
@@ -140,7 +140,7 @@ The adapter receives activities from the messaging endpoint, forwards them to th
 
 **index.js**
 
-[!code-javascript[create adapter](~/../botbuilder-samples/javascript_nodejs/02.echo-bot/index.js?range=15-16,30-57)]
+[!code-javascript[create adapter](~/../botbuilder-samples/samples/javascript_nodejs/02.echo-bot/index.js?range=15-16,30-57)]
 
 The `onTurnErrorHandler` function...
 
@@ -148,7 +148,7 @@ The `onTurnErrorHandler` function...
 
 **app.py**
 
-[!code-python[create adapter](~/../botbuilder-samples/python/02.echo-bot/app.py?range=11-15,22-28,30-56,58-59)]
+[!code-python[create adapter](~/../botbuilder-samples/samples/python/02.echo-bot/app.py?range=11-15,22-28,30-56,58-59)]
 
 The `on_error` function...
 
@@ -164,11 +164,11 @@ The echo bot uses an _activity handler_ and implements handlers for the activity
 
 **index.js**
 
-[!code-javascript[create bot](~/../botbuilder-samples/javascript_nodejs/02.echo-bot/index.js?range=18-19,60)]
+[!code-javascript[create bot](~/../botbuilder-samples/samples/javascript_nodejs/02.echo-bot/index.js?range=18-19,60)]
 
 **bot.js**
 
-[!code-javascript[bot logic](~/../botbuilder-samples/javascript_nodejs/02.echo-bot/bot.js?range=4-29)]
+[!code-javascript[bot logic](~/../botbuilder-samples/samples/javascript_nodejs/02.echo-bot/bot.js?range=4-29)]
 
 The `onMembersAdded` handler...
 
@@ -178,11 +178,11 @@ The `onMessage` handler...
 
 **app.py**
 
-[!code-python[create bot](~/../botbuilder-samples/python/02.echo-bot/app.py?range=11-15,60-61)]
+[!code-python[create bot](~/../botbuilder-samples/samples/python/02.echo-bot/app.py?range=11-15,60-61)]
 
 **app.py**
 
-[!code-python[create bot](~/../botbuilder-samples/python/02.echo-bot/bots/echo_bot.py?range=4-19)]
+[!code-python[create bot](~/../botbuilder-samples/samples/python/02.echo-bot/bots/echo_bot.py?range=4-19)]
 
 The `on_members_added_activity` handler...
 
