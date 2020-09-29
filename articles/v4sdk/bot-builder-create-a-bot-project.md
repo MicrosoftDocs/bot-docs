@@ -133,6 +133,12 @@ The adapter allows you to add your own _on turn error_ handler.
 
 ### [C#](#tab/csharp)
 
+**Startup.cs**
+
+The adapter to use is defined in the `ConfigureServices` method.
+
+[!code-csharp[adapter](~/../botbuilder-samples/samples/csharp_dotnetcore/02.echo-bot/Startup.cs?range=30-31)]
+
 **AdapterWithErrorHandler.cs**
 
 [!code-csharp[adapter](~/../botbuilder-samples/samples/csharp_dotnetcore/02.echo-bot/AdapterWithErrorHandler.cs?range=11-32)]
@@ -161,6 +167,12 @@ The echo bot uses an _activity handler_ and implements handlers for the activity
 The echo bot welcomes a user when they join the conversation and echoes back any messages they send to the bot.
 
 ### [C#](#tab/csharp)
+
+**Startup.cs**
+
+The bot to use is defined in the `ConfigureServices` method.
+
+[!code-csharp[adapter](~/../botbuilder-samples/samples/csharp_dotnetcore/02.echo-bot/Startup.cs?range=33-34)]
 
 **Bots\\EchoBot.cs**
 

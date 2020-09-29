@@ -4,7 +4,7 @@ description: Become familiar with the bot activity handler. Learn about managing
 author: JonathanFingold
 ms.author: v-jofin
 manager: kamrani
-ms.topic: article
+ms.topic: conceptual
 ms.service: bot-service
 ms.date: 09/15/2020
 monikerRange: 'azure-bot-service-4.0'
@@ -41,9 +41,9 @@ There is a special handler called `onDialog`. The `onDialog` handler runs at the
 
 # [Python](#tab/python)
 
-For example, if the bot receives a message activity, the turn handler would see that incoming activity and send it to the `on_message_activity` activity handler.
-
 When building your bot, your bot logic for handling and responding to messages will go in this `on_message_activity` handler. Likewise, your logic for handling members being added to the conversation will go in your `on_members_added` handler, which is called whenever a member is added to the conversation.
+
+For example, if the bot receives a message activity, the turn handler would see that incoming activity and send it to the `on_message_activity` activity handler.
 
 To implement your logic for these handlers, you will override these methods in your bot as seen in the [Bot logic](#bot-logic) section below. For each of these handlers, there is no base implementation, so just add the logic that you want in your override.
 
