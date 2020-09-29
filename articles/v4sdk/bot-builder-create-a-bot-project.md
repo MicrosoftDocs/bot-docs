@@ -17,10 +17,12 @@ monikerRange: 'azure-bot-service-4.0'
 All bot applications share some common features.
 This article describes these features:
 
-- Resource provisioning
-- A language-specific HTTP endpoint implementation that routes incoming activities to an adapter.
-- An adapter object
-- A bot object
+| Feature | Description |
+|:-|:-|
+| Resource provisioning | The bot as a web app needs to create a web service, bot adapter, and bot object. |
+| Messaging endpoint | The web app needs to implement a messaging endpoint on which to receive activities. |
+| Bot adapter | The adapter receives activities from the messaging endpoint, forwards them to the bot's turn handler, and catches any errors or exceptions the bot's logic doesn't catch. |
+| Bot object | The bot object handles the bot's reasoning or logic for the turn. |
 
 The first two features are part of the web framework you choose to use and not part of the Bot Framework SDK.
 However, the Bot Framework templates and samples are written for ASP.NET (C#), Restify (JavaScript), and aiohttp (Python).
@@ -119,8 +121,6 @@ server.post...
 server.upgrade...
 
 ### [Python](#tab/python)
-
-<!-- Q: re echo bot: Why does JS support streaming, but not Python, and why does C# fall in between? -->
 
 **app.py**
 
