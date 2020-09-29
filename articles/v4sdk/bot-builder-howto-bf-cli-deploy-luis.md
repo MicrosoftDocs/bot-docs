@@ -245,7 +245,7 @@ Once this configuration file is created, all you need to do is reference it in y
 bf luis:build --luConfig luconfig.json
 ```
 
-## LU and multiple language variations
+### LU and multiple language variations
 
 Every [.lu file][lu-templates] can have multiple language variations and the `luis:build` command will build a LUIS application for each language supported.
 
@@ -270,7 +270,7 @@ In the above example, each one of the `.lu` files will have its own unique langu
 >
 > - If no locale can be determined from the file name and it is not included in the `.lu` files configuration information, the value specified in the build commands `--defaultCulture` option will be used. If the `--defaultCulture` option is omitted, the locale will be set to `en-us`.
 
-## LUIS Applications created
+### LUIS Applications created
 
 Each LUIS application created on your behalf will be named using a combination of the `botName` value that you supply when running the `luis:build` command, the username of the person logged in, and the name of the `.lu` file including the locale.
 
@@ -290,7 +290,7 @@ The same LUIS application name will be used in each Azure region, with endpoints
 >
 > Including the username as part of the LUIS application name enables multiple developers to work independently. This value is generated automatically, using the username of the person logged in, however you can override this using the `--suffix` option.
 
-## The settings file generated using the build command
+### The settings file generated using the build command
 
 All of the `.lu` files for each locale will result in one LUIS application and the output of the `luis:build` command will include one settings file that contains a list of every LUIS application ID that was created for each locale.
 
@@ -309,7 +309,7 @@ Example settings file:
 }
 ```
 
-## The dialog file
+### The dialog file
 
 When you include the `--dialog` option, a `.dialog` file will be generated for each of your `.lu` files, one for each locale. 
 
