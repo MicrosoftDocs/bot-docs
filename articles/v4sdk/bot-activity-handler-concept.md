@@ -51,11 +51,11 @@ There are certain situations where you will want to override the base turn handl
 
 ---
 
-## Bot logic
+## Activity handling
 
 The bot logic processes incoming activities from one or more channels and generates outgoing activities in response.
 
-# [C#](#tab/csharp)
+### [C#](#tab/csharp)
 
 The main bot logic is defined in the bot code, here called `Bots/EchoBot.cs`. `EchoBot` derives from `ActivityHandler`, which in turn derives from the `IBot` interface. `ActivityHandler` defines various handlers for different types of activities, such as the two defined here: `OnMessageActivityAsync`, and `OnMembersAddedAsync`. These methods are protected, but can be overwritten since we're deriving from `ActivityHandler`.
 
@@ -83,27 +83,7 @@ As in previous 4.x versions of this framework, there is also the option to imple
 > [!IMPORTANT]
 > If you do override the `OnTurnAsync` method, you'll need to call `base.OnTurnAsync` to get the base implementation to call all the other `On<activity>Async` handlers or call those handlers yourself. Otherwise, those handlers won't be called and that code won't be run.
 
-In this sample, we welcome a new user or echo back the message the user sent using the `SendActivityAsync` call. The outbound activity corresponds to the outbound HTTP POST request.
-
-```cs
-public class MyBot : ActivityHandler
-{
-    protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
-    {
-        await turnContext.SendActivityAsync(MessageFactory.Text($"Echo: {turnContext.Activity.Text}"), cancellationToken);
-    }
-
-    protected override async Task OnMembersAddedAsync(IList<ChannelAccount> membersAdded, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
-    {
-        foreach (var member in membersAdded)
-        {
-            await turnContext.SendActivityAsync(MessageFactory.Text($"welcome {member.Name}"), cancellationToken);
-        }
-    }
-}
-```
-
-# [JavaScript](#tab/javascript)
+### [JavaScript](#tab/javascript)
 
 The main bot logic is defined in the bot code, here called `bots\echoBot.js`. `EchoBot` derives from `ActivityHandler`. `ActivityHandler` defines various events for different types of activities, and you can modify your bot's behavior by registering event listeners, such as with `onMessage` and `onConversationUpdate` here.
 
@@ -126,32 +106,7 @@ Use these methods to register listeners for each type of event:
 
 Call the `next` continuation function from each handler to allow processing to continue. If `next` is not called, processing of the activity ends.
 
-For example, this bot registers listeners for messages and conversation updates. When it receives a message from the user, it echoes back the message they sent.
-
-```javascript
-const { ActivityHandler } = require('botbuilder');
-
-class MyBot extends ActivityHandler {
-    constructor() {
-        super();
-        // See https://aka.ms/about-bot-activity-message to learn more about the message and other activity types.
-        this.onMessage(async (context, next) => {
-            await context.sendActivity(`You said '${ context.activity.text }'`);
-            // By calling next() you ensure that the next BotHandler is run.
-            await next();
-        });
-        this.onConversationUpdate(async (context, next) => {
-            await context.sendActivity('[conversationUpdate event detected]');
-            // By calling next() you ensure that the next BotHandler is run.
-            await next();
-        });
-    }
-}
-
-module.exports.MyBot = MyBot;
-```
-
-# [Python](#tab/python)
+### [Python](#tab/python)
 
 The main bot logic is defined in the bot code, here called `bots/echo_bot.py`. `EchoBot` derives from `ActivityHandler`, which in turn derives from the `Bot` interface. `ActivityHandler` defines various handlers for different types of activities, such as the two defined here: `on_message_activity`, and `on_members_added`. These methods are protected, but can be overwritten since we're deriving from `ActivityHandler`.
 
@@ -179,6 +134,61 @@ As in previous 4.x versions of this framework, there is also the option to imple
 > [!IMPORTANT]
 > If you do override the `on_turn` method, you'll need to call `super().on_turn` to get the base implementation to call all the other `on_<activity>` handlers or call those handlers yourself. Otherwise, those handlers won't be called and that code won't be run.
 
+---
+
+## Sample activity handler
+
+### [C#](#tab/csharp)
+
+In this sample, we welcome a new user or echo back the message the user sent using the `SendActivityAsync` call. The outbound activity corresponds to the outbound HTTP POST request.
+
+```cs
+public class MyBot : ActivityHandler
+{
+    protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
+    {
+        await turnContext.SendActivityAsync(MessageFactory.Text($"Echo: {turnContext.Activity.Text}"), cancellationToken);
+    }
+
+    protected override async Task OnMembersAddedAsync(IList<ChannelAccount> membersAdded, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
+    {
+        foreach (var member in membersAdded)
+        {
+            await turnContext.SendActivityAsync(MessageFactory.Text($"welcome {member.Name}"), cancellationToken);
+        }
+    }
+}
+```
+
+### [JavaScript](#tab/javascript)
+
+For example, this bot registers listeners for messages and conversation updates. When it receives a message from the user, it echoes back the message they sent.
+
+```javascript
+const { ActivityHandler } = require('botbuilder');
+
+class MyBot extends ActivityHandler {
+    constructor() {
+        super();
+        // See https://aka.ms/about-bot-activity-message to learn more about the message and other activity types.
+        this.onMessage(async (context, next) => {
+            await context.sendActivity(`You said '${ context.activity.text }'`);
+            // By calling next() you ensure that the next BotHandler is run.
+            await next();
+        });
+        this.onConversationUpdate(async (context, next) => {
+            await context.sendActivity('[conversationUpdate event detected]');
+            // By calling next() you ensure that the next BotHandler is run.
+            await next();
+        });
+    }
+}
+
+module.exports.MyBot = MyBot;
+```
+
+### [Python](#tab/python)
+
 In this sample, we welcome a new user or echo back the message the user sent using the `send_activity` call. The outbound activity corresponds to the outbound HTTP POST request.
 
 ```py
@@ -197,3 +207,5 @@ class MyBot(ActivityHandler):
 ```
 
 ---
+
+## Next steps

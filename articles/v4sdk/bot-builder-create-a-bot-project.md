@@ -20,7 +20,7 @@ This article describes these features:
 | Feature | Description |
 |:-|:-|
 | Resource provisioning | The bot as a web app needs to create a web service, bot adapter, and bot object. |
-| Messaging endpoint | The web app needs to implement a messaging endpoint on which to receive activities. |
+| Messaging endpoint | The web app needs to implement a messaging endpoint on which to receive activities and forward activities to the bot adapter. |
 | Bot adapter | The adapter receives activities from the messaging endpoint, forwards them to the bot's turn handler, and catches any errors or exceptions the bot's logic doesn't catch. |
 | Bot object | The bot object handles the bot's reasoning or logic for the turn. |
 
@@ -125,7 +125,7 @@ Each incoming request represents the start of a new turn.
 
 ---
 
-## The adapter
+## The bot adapter
 
 The adapter receives activities from the messaging endpoint, forwards them to the bot's turn handler, and catches any errors or exceptions the bot's logic doesn't catch.
 
