@@ -173,9 +173,6 @@ As mentioned above, the turn context provides the mechanism for the bot to send 
 ## Bot templates
 
 A bot is a web application, and templates are provided for each language version of the SDK.
-
-### General structure
-
 All templates provide a default endpoint implementation and adapter.
 Each template includes:
 
