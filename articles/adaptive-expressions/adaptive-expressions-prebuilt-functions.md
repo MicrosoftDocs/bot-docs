@@ -41,9 +41,9 @@ You can also view the list in [alphabetical order](#add).
 |[replace](#replace)|Replace a substring with the specified string and return the updated string. This function is case-sensitive.|
 |[replaceIgnoreCase](#replaceIgnoreCase)|	Replace a substring with the specified string, and return the updated string. This function is case-insensitive.|
 |[split](#split)	|Return an array that contains substrings based on the delimiter specified.|
-|[substring](#substring)|Return characters from a string. substring(sourceString, startPos, endPos). startPos cannot be less than 0. endPos greater than the length of the source string will be taken as the max length of the string.|
-|[toLower](#toLower)|Convert a string to all lowercase characters.|
-|[toUpper](#toUpper)|Convert a string to all uppercase characters.|
+|[substring](#substring)|Return characters from a string.|
+|[toLower](#toLower)|Return a string in lowercase in an optional locale format.|
+|[toUpper](#toUpper)|Return a string in uppercase in an optional locale format.|
 |[trim](#trim)|Remove leading and trailing white spaces from a string.|
 |[addOrdinal](#addOrdinal)|Return the ordinal number of the input number.|
 |[endsWith](#endsWith)|Check whether a string ends with a specific substring. Return `true` if the substring is found, or return `false` if not found. This function is case-insensitive.|
@@ -53,8 +53,8 @@ You can also view the list in [alphabetical order](#add).
 |[newGuid](#newGuid)|Return a new Guid string.|
 |[indexOf](#indexOf)|Return the starting position or index value of a substring **or** searches for the specified object and return the zero-based index of the first occurrence within the entire list. This function is case-insensitive, and indexes start with the number 0.|
 |[lastIndexOf](#lastIndexOf)|Return the starting position or index value of the last occurrence of a substring **or** search for the specified object and return the zero-based index of the last occurrence within the range of elements in the list.This function is case-insensitive, and indexes start with the number 0.|
-|[sentenceCase](#sentenceCase)|Capitalize the first letter of the first word in a string.|
-|[titleCase](#titleCase)|Capitalize the first letter of each word in a string.|
+|[sentenceCase](#sentenceCase)|Capitalize the first letter of the first word in a string in an optional local format.|
+|[titleCase](#titleCase)|Capitalize the first letter of each word in a string in an optional locale format.|
 
 ### Collection functions
 
@@ -101,7 +101,7 @@ You can also view the list in [alphabetical order](#add).
 |-----------|-----------|
 |[float](#float)|Return the floating point representation of the specified string or the string itself if conversion isn't possible.|
 |[int](#int)|Return the integer representation of the specified string or the string itself if conversion isn't possible.|
-|[string](#string)|Return the string version of the specified value.|
+|[string](#string)|Return the string version of the specified value in an optional locale format.|
 |[bool](#bool)|Return the Boolean representation of the specified string.|
 |[createArray](#createArray)|Create an array from multiple inputs.|
 |[json](#json) |Return the JavaScript Object Notation (JSON) type value or object of a string or XML.|
@@ -141,36 +141,40 @@ You can also view the list in [alphabetical order](#add).
 
 |Function|Explanation|
 |-----------|-----------|
-|[addDays](#addDays)|Add a number of specified days to a given timestamp.|
-|[addHours](#addHours)|Add a specified number of hours to a given timestamp.|
-|[addMinutes](#addMinutes)|Add a specified number of minutes to a given timestamp.|
+|[addDays](#addDays)|Add a number of specified days to a given timestamp in an optional locale format.|
+|[addHours](#addHours)|Add a specified number of hours to a given timestamp in an optional locale format.|
+|[addMinutes](#addMinutes)|Add a specified number of minutes to a given timestamp in an optional locale format.|
 |[addSeconds](#addSeconds)|Add a specified number of seconds to a given timestamp.|
 |[dayOfMonth](#dayOfMonth)|Return the day of a month for a given timestamp or Timex expression.|
 |[dayOfWeek](#dayOfWeek)|Return the day of the week for a given timestamp.|
 |[dayOfYear](#dayOfYear)|Return the day of the year for a given timestamp.|
-|[formatDateTime](#formatDateTime)|Return a timestamp in the specified format.|
-|[formatEpoch](#formatEpoch)|Return a timestamp from UNIX Epoch time (Unix time, POSIX time).|
-|[formatTicks](#formatTicks)|Return a timestamp from ticks.|
-|[subtractFromTime](#subtractFromTime)|Subtract a number of time units from a timestamp.|
-|[utcNow](#utcNow)|Return the current timestamp as string.|
+|[formatDateTime](#formatDateTime)|Return a timestamp in an optional locale format.|
+|[formatEpoch](#formatEpoch)|Return a timestamp in an optional locale format from UNIX Epoch time (Unix time, POSIX time).|
+|[formatTicks](#formatTicks)|Return a timestamp in an optional locale format from ticks.|
+|[subtractFromTime](#subtractFromTime)|Subtract a number of time units from a timestamp in an optional locale format.|
+|[utcNow](#utcNow)|Return the current timestamp in an optional locale format as a string.|
 |[dateReadBack](#dateReadBack)|Use the date-time library to provide a date readback.|
 |[month](#month)|Return the month of given timestamp.|
 |[date](#date)|Return the date for a given timestamp.|
 |[year](#year)|Return the year for the given timestamp.|
 |[getTimeOfDay](#getTimeOfDay)|Return the time of day for a given timestamp. |
-|[getFutureTime](#getFutureTime)|Return the current timestamp plus the specified time units.   |
-|[getPastTime](#getPastTime)|Return the current timestamp minus the specified time units.  |
-|[addToTime](#addToTime)   |Add a number of time units to a timestamp.   |
-|[convertFromUTC](#convertFromUTC) |Convert a timestamp from Universal Time Coordinated(UTC). |
-|[convertToUTC](#convertToUTC) |Convert a timestamp to Universal Time Coordinated (UTC).  |
-|[startOfDay](#startOfDay) |Return the start of the day for a timestamp.|
-|[startOfHour](#startOfHour)   |Return the start of the hour for a timestamp. |
-|[startOfMonth](#startOfMonth) |Return the start of the month for a timestamp.|
+|[getFutureTime](#getFutureTime)|Return the current timestamp in an optional locale format plus the specified time units.   |
+|[getPastTime](#getPastTime)|Return the current timestamp in an optional locale format minus the specified time units.  |
+|[addToTime](#addToTime)   |Add a number of time units to a timestamp in an optional locale format.   |
+|[convertFromUTC](#convertFromUTC) |Convert a timestamp in an optional locale format from Universal Time Coordinated(UTC). |
+|[convertToUTC](#convertToUTC) |Convert a timestamp  in an optional locale format to Universal Time Coordinated (UTC).  |
+|[startOfDay](#startOfDay) |Return the start of the day for a timestamp in an optional locale format.|
+|[startOfHour](#startOfHour)   |Return the start of the hour for a timestamp in an optional locale format. |
+|[startOfMonth](#startOfMonth) |Return the start of the month for a timestamp in an optional locale format.|
 |[ticks](#ticks)   |Return the ticks property value of a specified timestamp.|
 |[ticksToDays](#ticksToDays)| Convert a ticks property value to the number of days. |
 |[ticksToHours](#ticksToHours)| Convert a ticks property value to the number of hours. |
 |[ticksToMinutes](#ticksToMinutes)| Convert a ticks property value to the number of minutes. |
 |[dateTimeDiff](#dateTimeDiff)| Return the difference in ticks between two timestamps. |
+|[getPreviousViableDate](#getPreviousViableDate) | Return the previous viable date of a timex expression based on the current date and an optionally specified timezone. |
+|[getNextViableDate](#getNextViableDate) | Return the next viable date of a timex expression based on the current date and an optionally specified timezone. |
+|[getPreviousViableTime](#getPreviousViableTime) | Return the previous viable time of a timex expression based on the current time and an optionally specified timezone. |
+|[getNextViableTime](#getNextViableTime) | Return the next viable time of a timex expression based on the current time and an optionally specified timezone. |
 
 ### Timex functions
 
@@ -272,10 +276,10 @@ And returns the results
 
 ### addDays
 
-Add a number of days to a timestamp.
+Add a number of days to a timestamp in an optional locale format.
 
 ```
-addDays('<timestamp>', <days>, '<format>'?)
+addDays('<timestamp>', <days>, '<format>'?, '<locale>'?)
 ```
 
 | Parameter | Required | Type | Description |
@@ -283,6 +287,7 @@ addDays('<timestamp>', <days>, '<format>'?)
 | <*timestamp*> | Yes | string | The string that contains the timestamp which must be standard UTC ISO format<br>YYYY-MM-DDTHH:mm:ss.fffZ |
 | <*days*> | Yes | integer | The positive or negative number of days to add |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |
@@ -292,7 +297,7 @@ addDays('<timestamp>', <days>, '<format>'?)
 
 *Example 1*
 
-This example adds 10 days to the specified timestamp:
+This example adds **10** days to the specified timestamp:
 
 ```
 addDays('2018-03-15T13:00:00.000Z', 10)
@@ -310,14 +315,24 @@ addDays('2018-03-15T00:00:00.000Z', -5)
 
 And returns the result **2018-03-10T00:00:00.000Z**.
 
+*Example 3*
+
+This examples adds **1** day to the specified timestamp in the **de-DE** locale:
+
+```
+addDays('2018-03-15T13:00:00.000Z', 1, '', 'de-dE')
+```
+
+And returns the result **16.03.18 13:00:00**.
+
 <a name="addHours"></a>
 
 ### addHours
 
-Add a number of hours to a timestamp.
+Add a number of hours to a timestamp in an optional locale format.
 
 ```
-addHours('<timestamp>', <hours>, '<format>'?)
+addHours('<timestamp>', <hours>, '<format>'?, '<locale>'?)
 ```
 
 | Parameter | Required | Type | Description |
@@ -325,6 +340,7 @@ addHours('<timestamp>', <hours>, '<format>'?)
 | <*timestamp*> | Yes | string | The string that contains the timestamp |
 | <*hours*> | Yes | integer | The positive or negative number of hours to add |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |
@@ -334,7 +350,7 @@ addHours('<timestamp>', <hours>, '<format>'?)
 
 *Example 1*
 
-This example adds 10 hours to the specified timestamp:
+This example adds **10** hours to the specified timestamp:
 
 ```
 addHours('2018-03-15T00:00:00.000Z', 10)
@@ -352,14 +368,24 @@ addHours('2018-03-15T15:00:00.000Z', -5)
 
 And returns the result **2018-03-15T10:00:00.000Z**.
 
+*Example 3*
+
+This examples adds **2** hours to the specified timestamp in the **de-DE** locale:
+
+```
+addHours('2018-03-15T13:00:00.000Z', 2, '', 'de-DE')
+```
+
+And returns the result **15.03.18 15:00:00**.
+
 <a name="addMinutes"></a>
 
 ### addMinutes
 
-Add a number of minutes to a timestamp.
+Add a number of minutes to a timestamp in an optional locale format.
 
 ```
-addMinutes('<timestamp>', <minutes>, '<format>'?)
+addMinutes('<timestamp>', <minutes>, '<format>'?, '<locale>'?)
 ```
 
 | Parameter | Required | Type | Description |
@@ -367,6 +393,7 @@ addMinutes('<timestamp>', <minutes>, '<format>'?)
 | <*timestamp*> | Yes | string | The string that contains the timestamp |
 | <*minutes*> | Yes | integer | The positive or negative number of minutes to add |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |
@@ -376,7 +403,7 @@ addMinutes('<timestamp>', <minutes>, '<format>'?)
 
 *Example 1*
 
-This example adds 10 minutes to the specified timestamp:
+This example adds **10** minutes to the specified timestamp:
 
 ```
 addMinutes('2018-03-15T00:10:00.000Z', 10)
@@ -393,6 +420,16 @@ addMinutes('2018-03-15T00:20:00.000Z', -5)
 ```
 
 And returns the result **2018-03-15T00:15:00.000Z**.
+
+*Example 3*
+
+This examples adds **30** minutes to the specified timestamp in the **de-DE** locale:
+
+```
+addMinutes('2018-03-15T00:00:00.000Z', 30, '', 'de-DE')
+```
+
+And returns the result **15.03.18 13:30:00**.
 
 <a name="addOrdinal"></a>
 
@@ -507,10 +544,10 @@ And returns the result **2018-03-15T00:00:25.000Z**.
 
 ### addToTime
 
-Add a number of time units to a timestamp. See also [getFutureTime()](#getFutureTime).
+Add a number of time units to a timestamp in an optional locale format. See also [getFutureTime()](#getFutureTime).
 
 ```
-addToTime('<timestamp>', '<interval>', <timeUnit>, '<format>'?)
+addToTime('<timestamp>', '<interval>', <timeUnit>, '<format>'?, '<locale>'?)
 ```
 
 | Parameter | Required | Type | Description |
@@ -519,13 +556,16 @@ addToTime('<timestamp>', '<interval>', <timeUnit>, '<format>'?)
 | <*interval*> | Yes | integer | The number of specified time units to add |
 | <*timeUnit*> | Yes | string | The unit of time to use with *interval*. Possible units are "Second", "Minute", "Hour", "Day", "Week", "Month", and "Year". |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*locale*> | No | string | An optional locale of culture infomation |
+|||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
 | <*updated-timestamp*> | string | The timestamp plus the number of specified time units with given format. |
 ||||
 
-*Example 1*<br>
+*Example 1*
+
 This example adds one day to specified timestamp.
 
 ```
@@ -534,7 +574,8 @@ addToTime('2018-01-01T00:00:00.000Z', 1, 'Day')
 
 And returns the result **2018-01-02T00:00:00.000Z**.
 
-*Example 2*<br>
+*Example 2*
+
 This example adds two weeks to the specified timestamp.
 
 ```
@@ -542,7 +583,6 @@ addToTime('2018-01-01T00:00:00.000Z', 2, 'Week', 'MM-DD-YY')
 ```
 
 And returns the result in the 'MM-DD-YY' format as **01-15-18**.
-
 
 <a name="and"></a>
 
@@ -576,9 +616,9 @@ and(false, false)
 
 And respectively returns these results:
 
-* Both expressions are true, so the functions returns `true`.
-* One expression is false, so the functions returns `false`.
-* Both expressions are false, so the function returns `false`.
+- Both expressions are true, so the functions returns `true`.
+- One expression is false, so the functions returns `false`.
+- Both expressions are false, so the function returns `false`.
 
 *Example 2*
 
@@ -1044,10 +1084,10 @@ And it returns the result **2**.
 
 ### convertFromUTC
 
-Convert a timestamp from Universal Time Coordinated (UTC) to a target time zone.
+Convert a timestamp in an optional locale format from Universal Time Coordinated (UTC) to a target time zone.
 
 ```
-convertFromUTC('<timestamp>', '<destinationTimeZone>', '<format>'?)
+convertFromUTC('<timestamp>', '<destinationTimeZone>', '<format>'?, '<locale>'?)
 ```
 
 | Parameter | Required | Type | Description |
@@ -1055,6 +1095,8 @@ convertFromUTC('<timestamp>', '<destinationTimeZone>', '<format>'?)
 | <*timestamp*> | Yes | string | The string that contains the timestamp |
 | <*destinationTimeZone*> | Yes | string | The name of the target time zone. Supports Windows and Iana time zones. |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*locale*> | No | string | An optional locale of culture infomation |
+|||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
@@ -1066,7 +1108,7 @@ convertFromUTC('<timestamp>', '<destinationTimeZone>', '<format>'?)
 These examples convert from UTC to Pacific Standard Time:
 
 ```
-convertFromUTC("convertFromUTC('2018-02-02T02:00:00.000Z', 'Pacific Standard Time', 'MM-DD-YY')"
+convertFromUTC('2018-02-02T02:00:00.000Z', 'Pacific Standard Time', 'MM-DD-YY')
 convertFromUTC('2018-02-02T02:00:00.000Z', 'Pacific Standard Time')
 ```
 
@@ -1075,14 +1117,24 @@ And respectively return these results:
 * **02-01-18**
 * **2018-02-01T18:00:00.000-08:00**
 
+*Example 2*
+
+This example converts a timestamp in the **de-DE** locale from UTC to Pacific Standard Time:
+
+```
+convertFromUTC('2018-01-02T02:00:00.000Z', 'Pacific Standard Time', '', 'de-DE')
+```
+
+And returns the result **01.01.18 18:00:00**.
+
 <a name="convertToUTC"></a>
 
 ### convertToUTC
 
-Convert a timestamp to Universal Time Coordinated (UTC) from the source time zone.
+Convert a timestamp in an optional locale format to Universal Time Coordinated (UTC) from the source time zone.
 
 ```
-convertToUTC('<timestamp>', '<sourceTimeZone>', '<format>'?)
+convertToUTC('<timestamp>', '<sourceTimeZone>', '<format>'?, '<locale>'?)
 ```
 
 | Parameter | Required | Type | Description |
@@ -1090,6 +1142,8 @@ convertToUTC('<timestamp>', '<sourceTimeZone>', '<format>'?)
 | <*timestamp*> | Yes | string | The string that contains the timestamp |
 | <*sourceTimeZone*> | Yes | string | The name of the target time zone. Supports Windows and Iana time zones. |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*locale*> | No | string | An optional locale of culture infomation |
+|||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
@@ -1098,11 +1152,23 @@ convertToUTC('<timestamp>', '<sourceTimeZone>', '<format>'?)
 
 *Example*
 
+This example converts a timestamp to UTC from Pacific Standard Time
+
 ```
-convertToUTC('01/01/2018 00:00:00',', 'Pacific Standard Time')
+convertToUTC('01/01/2018 00:00:00', 'Pacific Standard Time')
 ```
 
-Returns the result **2018-01-01T08:00:00.000Z**.
+And returns the result **2018-01-01T08:00:00.000Z**.
+
+*Example 2*
+
+This example converts a timestamp in the **de-DE** locale to UTC from Pacific Standard Time:
+
+```
+convertToUTC('01/01/2018 00:00:00', 'Pacific Standard Time', '', 'de-DE')
+```
+
+And returns the result **01.01.18 08:00:00**.
 
 <a name="createArray"></a>
 
@@ -1843,49 +1909,60 @@ And return the result **['name:jack', 'age:15']**. Note that the second expressi
 
 ### formatDateTime
 
-Return a timestamp in the specified format.
+Return a timestamp in an optional locale format.
 
 ```
-formatDateTime('<timestamp>', '<format>'?)
+formatDateTime('<timestamp>', '<format>'?, '<locale>'?)
 ```
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*timestamp*> | Yes | string | The string that contains the timestamp |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
+
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
 | <*reformatted-timestamp*> | string | The updated timestamp in the specified format |
 ||||
 
-*Examples*
+*Example 1*
 
-These examples convert a timestamp or a Unix timestamp to the specified format:
+This example converts a timestamp to the specified format:
 
 ```
 formatDateTime('03/15/2018 12:00:00', 'yyyy-MM-ddTHH:mm:ss')
 ```
 
-And returns the following results:
+And returns the result **2018-03-15T12:00:00**.
 
-- **2018-03-15T12:00:00**
+*Example 2*
+
+This example converts a timestamp in the **de-DE** locale:
+
+```
+formatDateTime('2018-03-15', '', 'de-DE')
+```
+
+And returns the result **15.03.18 00:00:00**.
 
 <a name="formatEpoch"></a>
 
 ### formatEpoch
 
-Return a timestamp in the specified format from UNIX time (also know as Epoch time, POSIX time, UNIX Epoch time).
+Return a timestamp in an optional locale format  in the specified format from UNIX time (also know as Epoch time, POSIX time, UNIX Epoch time).
 
 ```
-formatEpoch('<epoch>', '<format>'?)
+formatEpoch('<epoch>', '<format>'?, '<locale>'?)
 ```
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*epoch*> | Yes | number | The epoch number |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |
@@ -1893,15 +1970,25 @@ formatEpoch('<epoch>', '<format>'?)
 | <*reformatted-timestamp*> | string | The updated timestamp in the specified format |
 ||||
 
-*Examples*
+*Example*
 
-This example convert a Unix timestamp to the specified format:
+This example converts a Unix timestamp to the specified format:
 
 ```
 formatEpoch(1521118800, 'yyyy-MM-ddTHH:mm:ss.fffZ)'
 ```
 
 And returns the result **2018-03-15T12:00:00.000Z**.
+
+*Example*
+
+This example converts a Unix timestamp in the **de-DE** locale:
+
+```
+formatEpoch(1521118800, '', 'de-DE')
+```
+
+And returns the result **15.03.18 13:00:00**.
 
 <a name="formatNumber"></a>
 
@@ -1910,7 +1997,7 @@ And returns the result **2018-03-15T12:00:00.000Z**.
 Format a value to the specified number of fractional digits and an optional specified locale.
 
 ```
-formatNumber('<number>', '<precision-digits>', '<locale>')
+formatNumber('<number>', '<precision-digits>', '<locale>'?)
 ```
 
 | Parameter | Required | Type | Description |
@@ -1937,28 +2024,36 @@ And returns the string **10.33**.
 
 *Example 2*
 
-This example formats ther number **10.333** to **4** fractional digits using the **fr-fr** formatting:
+These examples format numbers to a specified number of digits in the **en-US** locale:
 
 ```
-formatNumber(12000.3, 4, 'fr-fr')
+formatNumber(12.123, 4, 'en-US')
+formatNumber(1.551, 2, 'en-US')
+formatNumber(12.123, 4, 'en-US')
 ```
 
-And returns the string **"12 000,3000"**.
+And return the following results respectively:
+
+- **12.12**
+- **1.55**
+- **12.1230**
+
 
 <a name="formatTicks"></a>
 
 ### formatTicks
 
-Return a timestamp in the specified format from ticks.
+Return a timestamp in an optional locale format in the specified format from ticks.
 
 ```
-formatTicks('<ticks>', '<format>'?)
+formatTicks('<ticks>', '<format>'?, '<locale>'?)
 ```
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*epoch*> | Yes | number (or bigint in Javascript)| The ticks number |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |
@@ -1966,24 +2061,34 @@ formatTicks('<ticks>', '<format>'?)
 | <*reformatted-timestamp*> | string | The updated timestamp in the specified format |
 ||||
 
-*Examples*
+*Example 1*
 
 This example converts ticks to the specified format:
 
 ```
-formatTicks(637243624200000000, 'yyyy-MM-ddTHH:mm:ss.fffZ)'
+formatTicks(637243624200000000, 'yyyy-MM-ddTHH:mm:ss.fffZ')
 ```
 
 And returns the result **2020-05-06T11:47:00.000Z**.
+
+*Example 2*
+
+This example converts ticks to the specified format in the **de-DE** locale:
+
+```
+formatTicks(637243624200000000, '', 'de-DE')
+```
+
+And returns the result **06.05.20 11:47:00**.
 
 <a name="getFutureTime"></a>
 
 ### getFutureTime
 
-Return the current timestamp plus the specified time units.
+Return the current timestamp in an optional locale format plus the specified time units.
 
 ```
-getFutureTime(<interval>, <timeUnit>, '<format>'?)
+getFutureTime(<interval>, <timeUnit>, '<format>'?, '<locale>'?)
 ```
 
 | Parameter | Required | Type | Description |
@@ -1991,6 +2096,7 @@ getFutureTime(<interval>, <timeUnit>, '<format>'?)
 | <*interval*> | Yes | integer | The number of specific time units to add |
 | <*timeUnit*> | Yes | string | The unit of time to use with *interval*. Possible units are "Second", "Minute", "Hour", "Day", "Week", "Month", and "Year".|
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |
@@ -2016,7 +2122,91 @@ Suppose the current timestamp is **2018-03-01T00:00:00.000Z**. The example below
 getFutureTime(5, 'Day', 'MM-DD-YY')
 ```
 
-It returns the result **03-06-18**.
+And returns the result **03-06-18**.
+
+*Example 3*
+
+Suppose the current timestamp is **2020-05-01T00:00:00.000Z** and the locale is **de-DE**. The example below adds **1** day to the timestamp:
+
+```
+getFutureTime(1,'Day', '', 'de-DE')
+```
+
+And returns the result **02.05.20 00:00:00**.
+
+<a name="getNextViableDate"></a>
+
+### getNextViableDate
+
+Return the next viable date of a timex expression based on the current date and an optionally specified timezone.
+
+```
+getNextViableDate(<timexString>, <timezone>?)
+```
+
+| Parameter | Required | Type | Description |
+| --------- | -------- | ---- | ----------- |
+| <*timexString*> | Yes | string | The timex string of the date to evaluate. |
+| <*timezone*> | No | string | The optional timezone. |
+|||||
+
+| Return value | Type | Description |
+| ------------ | ---- | ----------- |
+| <*nextViableTime*> | string | The next viable date. |
+||||
+
+*Examples*
+
+Say the date is **2020-06-12** and current time is **15:42:21**.
+
+These examples evaluate the timex string for the next viable date based on the above date and time:
+
+```
+getPreviousViableDate("XXXX-12-20", "America/Los_Angeles")
+getPreviousViableDate("XXXX-02-29")
+```
+
+And return the following strings respectively:
+
+- **2020-12-20**
+- **2024-02-29**
+
+<a name="getNextViableTime"></a>
+
+### getNextViableTime
+
+Return the next viable time of a timex expression based on the current time and an optionally specified timezone.
+
+```
+getNextViableTime(<timexString>, <timezone>?)
+```
+
+| Parameter | Required | Type | Description |
+| --------- | -------- | ---- | ----------- |
+| <*timexString*> | Yes | string | The timex string of the time to evaluate. |
+| <*timezone*> | No | string | The optional timezone. |
+|||||
+
+| Return value | Type | Description |
+| ------------ | ---- | ----------- |
+| <*nextViableTime*> | string | The next viable time. |
+||||
+
+*Examples*
+
+Say the date is **2020-06-12** and current time is **15:42:21**.
+
+These examples evaluate a timex string for the next viable time based on the above date and time:
+
+```
+getNextViableTime("TXX:12:14", "Asia/Tokyo")
+getNextViableTime("TXX:52:14")
+```
+
+And return the following strings repsectively:
+
+- **T16:12:14**
+- **T15:52:14**
 
 <a name="getPastTime"></a>
 
@@ -2042,7 +2232,7 @@ getPastTime(<interval>, <timeUnit>, '<format>'?)
 
 *Example 1*
 
-Suppose the current timestamp is **2018-02-01T00:00:00.000Z**. This example adds five days to that timestamp:
+Suppose the current timestamp is **2018-02-01T00:00:00.000Z**. This example subtracts five days from that timestamp:
 
 ```
 getPastTime(5, 'Day')
@@ -2052,13 +2242,97 @@ And returns the result **2019-01-27T00:00:00.000Z**.
 
 *Example 2*
 
-Suppose the current timestamp is **2018-03-01T00:00:00.000Z**. This example adds five days to the timestamp, converts the result to **MM-DD-YY** format:
+Suppose the current timestamp is **2018-03-01T00:00:00.000Z**. This example subtracts five days to the timestamp in the **MM-DD-YY** format:
 
 ```
 getPastTime(5, 'Day', 'MM-DD-YY')
 ```
 
-It returns the result **02-26-18**.
+And returns the result **02-26-18**.
+
+*Example 3*
+
+Suppose the current timestamp is **2020-05-01T00:00:00.000Z** and the locale is **de-DE**. The example below subtracts **1** day from the timestamp:
+
+```
+getPastTime(1,'Day', '', 'de-DE')
+```
+
+And returns the result **31.04.20 00:00:00**.
+
+<a name="getPreviousViableDate"></a>
+
+### getPreviousViableDate
+
+Return the previous viable date of a timex expression based on the current date and an optionally specified timezone.
+
+```
+getPreviousViableDate(<timexString>, <timezone>?)
+```
+
+| Parameter | Required | Type | Description |
+| --------- | -------- | ---- | ----------- |
+| <*timexString*> | Yes | string | The timex string of the date to evaluate. |
+| <*timezone*> | No | string | The optional timezone. |
+|||||
+
+| Return value | Type | Description |
+| ------------ | ---- | ----------- |
+| <*previousViableDate*> | string | The previous viable date. |
+||||
+
+*Examples*
+
+Say the date is **2020-06-12** and current time is **15:42:21**.
+
+These examples evaluate a timex string for the previous viable date based on the above date and time:
+
+```
+getPreviousViableDate("XXXX-12-20", "Eastern Standard Time")
+getPreviousViableDate("XXXX-02-29")
+```
+
+And return the following strings repsectively:
+
+- **2019-12-20**
+- **2020-02-29**
+
+<a name="getPreviousViableTime"></a>
+
+### getPreviousViableTime
+
+Return the previous viable time of a timex expression based on the current date and an optionally specified timezone.
+
+```
+getPreviousViableTime(<timexString>, <timezone>?)
+```
+
+| Parameter | Required | Type | Description |
+| --------- | -------- | ---- | ----------- |
+| <*timexString*> | Yes | string | The timex string of the time to evaluate. |
+| <*timezone*> | No | string | The optional timezone. |
+|||||
+
+| Return value | Type | Description |
+| ------------ | ---- | ----------- |
+| <*previousViableTime*> | string | The previous viable time. |
+||||
+
+*Examples*
+
+Say the date is **2020-06-12** and current time is **15:42:21**.
+
+These examples evaluate a timex string for the previous viable time based on the above date and time:
+
+```
+getPreviousViableTime("TXX:52:14")
+getPreviousViableTime("TXX:12:14", 'Europe/London')
+```
+
+And return the following strings repsectively:
+
+- **T14:52:14**
+- **T15:12:14**
 
 <a name="getProperty"></a>
 
@@ -3173,7 +3447,7 @@ json('<value>')
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*JSON-result*> | string | The resulting string created from all the items in the specified array |
+| <*JSON-result*> | string | The resulting JSON object created from the specified string or XML. |
 ||||
 
 *Example 1*
@@ -3935,6 +4209,59 @@ select(json("{'name': 'jack', 'age': '15'}"), x=> concat(x.key, ':', x.value))
 
 And return the result **['name:jack', 'age:15']**. Note that the second expression is a *lambda expression*, which some find more readable.
 
+<a name="sentenceCase"></a>
+
+### sentenceCase
+
+Capitalize the first letter of the first word in a string in an optional locale format.
+
+```
+sentenceCase('<text>', '<locale>'?)
+```
+
+| Parameter | Required | Type | Description |
+| --------- | -------- | ---- | ----------- |
+| <*text*> | Yes | string | The original string |
+| <*locale*> | No | string | An optional locale of culture infomation |
+|||||
+
+| Return value | Type | Description |
+| ------------ | ---- | ----------- |
+| result string | string | Returns the sentence case result |
+||||
+
+*Example 1*
+
+These examples capitalize the first letter in a string:
+
+```
+sentenceCase('a')
+sentenceCase('abc def')
+sentenceCase('aBC dEF')
+```
+
+And return the following results respectively:
+
+- **A**
+- **Abc def**
+- **Abc def**
+
+*Example 2*
+
+These examples capitalizes the first letter in a string in the specified locale format:
+
+```
+sentenceCase('a', 'fr-FR')
+sentenceCase('abc', 'en-US')
+sentenceCase('aBC', 'fr-FR')
+```
+
+And return the following results respectively:
+
+- **A**
+- **Abc**
+- **Abc**
+
 <a name="setPathToValue"></a>
 
 ### setPathToValue
@@ -4205,16 +4532,17 @@ And returns the following arrays as the result repsectively:
 
 ### startOfDay
 
-Return the start of the day for a timestamp.
+Return the start of the day for a timestamp in an optional locale format.
 
 ```
-startOfDay('<timestamp>', '<format>'?)
+startOfDay('<timestamp>', '<format>'?, '<locale>'?)
 ```
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*timestamp*> | Yes | string | The string that contains the timestamp |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |
@@ -4222,7 +4550,7 @@ startOfDay('<timestamp>', '<format>'?)
 | '<*updated-timestamp*>'| string | The specified timestamp starting at the zero-hour mark for the day |
 ||||
 
-*Example*
+*Example 1*
 
 This example finds the start of the day:
 
@@ -4232,20 +4560,31 @@ startOfDay('2018-03-15T13:30:30.000Z')
 
 And returns the result **2018-03-15T00:00:00.000Z**.
 
+*Example 2*
+
+This example finds the start of the day with the locale **fr-FR**:
+
+```
+startOfDay('2018-03-15T13:30:30.000Z', '', 'fr-FR')
+```
+
+And returns the result **15/03/2018 00:00:00**.
+
 <a name="startOfHour"></a>
 
 ### startOfHour
 
-Return the start of the hour for a timestamp.
+Return the start of the hour for a timestamp in an optional locale format.
 
 ```
-startOfHour('<timestamp>', '<format>'?)
+startOfHour('<timestamp>', '<format>'?, '<locale>'?)
 ```
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*timestamp*> | Yes | string | The string that contains the timestamp |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |
@@ -4253,7 +4592,7 @@ startOfHour('<timestamp>', '<format>'?)
 | '<*updated-timestamp*>'| string | The specified timestamp starting at the zero-minute mark for the day |
 ||||
 
-*Example*
+*Example 1*
 
 This example finds the start of the hour:
 
@@ -4263,20 +4602,31 @@ startOfHour('2018-03-15T13:30:30.000Z')
 
 And returns the result **2018-03-15T13:00:00.000Z**.
 
+*Example 2*
+
+This example finds the start of the hour with the locale **fr-FR**:
+
+```
+startOfHour('2018-03-15T13:30:30.000Z', '', 'fr-FR')
+```
+
+And returns the result **15/03/2018 13:00:00**.
+
 <a name="startOfMonth"></a>
 
 ### startOfMonth
 
-Return the start of the month for a timestamp.
+Return the start of the month for a timestamp in an optional locale format.
 
 ```
-startOfDay('<timestamp>', '<format>'?)
+startOfMonth('<timestamp>', '<format>'?, '<locale>'?)
 ```
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*timestamp*> | Yes | string | The string that contains the timestamp |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |
@@ -4284,15 +4634,25 @@ startOfDay('<timestamp>', '<format>'?)
 | '<*updated-timestamp*>'| string | The specified timestamp starting on the first day of the month at the zero-hour mark |
 ||||
 
-*Example*
+*Example 1*
 
 This example finds the start of the month:
 
 ```
-startOfDay('2018-03-15T13:30:30.000Z')
+startOfMonth('2018-03-15T13:30:30.000Z')
 ```
 
 And returns the result **2018-03-01T00:00:00.000Z**.
+
+*Example 2*
+
+This example finds the start of the month with the locale **fr-FR**:
+
+```
+startOfMonth('2018-03-15T13:30:30.000Z', '', 'fr-FR')
+```
+
+And returns the result **01/03/2018 00:00:00**.
 
 <a name="startsWith"></a>
 
@@ -4335,55 +4695,20 @@ startsWith('hello world', 'greeting')
 
 And returns the result `false`.
 
-<a name="sentenceCase"></a>
-
-### sentenceCase
-
-Capitalize the first letter of the first word in a string.
-
-```
-sentenceCase('<text>')
-```
-
-| Parameter | Required | Type | Description |
-| --------- | -------- | ---- | ----------- |
-| <*text*> | Yes | string | The original string |
-|||||
-
-| Return value | Type | Description |
-| ------------ | ---- | ----------- |
-| result string | string | Returns the sentence case result |
-||||
-
-*Example*
-
-These examples capitalize the first letter in a string:
-
-```
-sentenceCase('a')
-sentenceCase('abc def')
-sentenceCase('aBC dEF')
-```
-
-And return the following results respectively:
-
-- **A**
-- **Abc def**
-- **Abc def**
-
 <a name="string"></a>
 
 ### string
 
-Return the string version of a value.
+Return the string version of a value in an optional locale format.
 
 ```
-string(<value>)
+string(<value>, '<locale>'?)
 ```
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*value*> | Yes | any | The value to convert |
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |
@@ -4409,7 +4734,21 @@ This example creates a string for the specified JSON object and uses the backsla
 string( { "name": "Sophie Owen" } )
 ```
 
-And returns the result **{ \\"name\\": \\"Sophie Owen\\" }**
+And returns the result **{ "name": "Sophie Owen" }**
+
+*Example 3*
+
+These example creates a string version of the number **10** in a specific locale:
+
+```
+string(100.1, 'fr-FR')
+string(100.1, 'en-US')
+```
+
+And returns the following strings respectively:
+
+- **100,1**
+- **100.1*
 
 <a name="sub"></a>
 
@@ -4510,10 +4849,10 @@ And returns the result **world**.
 
 ### subtractFromTime
 
-Subtract a number of time units from a timestamp. See also [getPastTime()](#getPastTime).
+Subtract a number of time units from a timestamp in an optional locale format . See also [getPastTime()](#getPastTime).
 
 ```
-subtractFromTime('<timestamp>', <interval>, '<timeUnit>', '<format>'?)
+subtractFromTime('<timestamp>', <interval>, '<timeUnit>', '<format>'?, '<locale>'?)
 ```
 
 | Parameter | Required | Type | Description |
@@ -4522,6 +4861,7 @@ subtractFromTime('<timestamp>', <interval>, '<timeUnit>', '<format>'?)
 | <*interval*> | Yes | integer | The number of specified time units to subtract |
 | <*timeUnit*> | Yes | string | The unit of time to use with *interval*. Possible units are "Second", "Minute", "Hour", "Day", "Week", "Month", and "Year". |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |
@@ -4531,7 +4871,7 @@ subtractFromTime('<timestamp>', <interval>, '<timeUnit>', '<format>'?)
 
 *Example 1*
 
-This example subtracts one day from the following timestamp:
+This example subtracts one day from a following timestamp:
 
 ```
 subtractFromTime('2018-01-02T00:00.000Z', 1, 'Day')
@@ -4541,13 +4881,23 @@ And returns the result **2018-01-01T00:00:00.000Z**.
 
 *Example 2*
 
-This example subtracts one day from the following timestamp:
+This example subtracts one day from a timestamp using the **D** format:
 
 ```
 subtractFromTime('2018-01-02T00:00.000Z', 1, 'Day', 'D')
 ```
 
-And returns the result using the optional *D* format: **Monday, January, 1, 2018**.
+And returns the result **Monday, January, 1, 2018**.
+
+*Example 3*
+
+This example subtracts **1** hour from a timestamp in the **de-DE** locale:
+
+```
+subtractFromTime('2018-03-15T13:00:00.000Z', 1, 'Hour', '', 'de-DE')
+```
+
+And returns the result **15.03.18 12:00:00**.
 
 <a name="sum"></a>
 
@@ -4739,15 +5089,16 @@ And returns the number **3655643.0185**.
 
 ### titleCase
 
-Capitalize the first letter of each word in a string.
+Capitalize the first letter of each word in a string in an optional local format.
 
 ```
-titleCase('<text>')
+titleCase('<text>', '<locale>'?)
 ```
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*text*> | Yes | string | The original string |
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |
@@ -4755,14 +5106,14 @@ titleCase('<text>')
 | result string | string | The title case result |
 ||||
 
-*Example*
+*Example 1*
 
 These examples capitalize the first letter of each word in a string:
 
 ```
 titleCase('a')
 titleCase('abc def')
-sentenceCase('aBC dEF')
+titleCase('aBC dEF')
 ```
 
 And return the following results respectively:
@@ -4771,19 +5122,34 @@ And return the following results respectively:
 - **Abc Def**
 - **Abc Def**
 
+*Example 2*
+
+These examples capitalize the first letter in a string in the **en-US** format:
+
+```
+titleCase('a', 'en-US')
+titleCase('aBC dEF', 'en-US')
+```
+
+And return the following results respectively:
+
+- **A**
+- **Abc Def**
+
 <a name="toLower"></a>
 
 ### toLower
 
-Return a string in lowercase format. If a character in the string doesn't have a lowercase version, that character stays unchanged in the returned string.
+Return a string in lowercase in an optional locale format. If a character in the string doesn't have a lowercase version, that character stays unchanged in the returned string.
 
 ```
-toLower('<text>')
+toLower('<text>', '<locale>'?)
 ```
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*text*> | Yes | string | The string to return in lowercase format |
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |
@@ -4791,7 +5157,7 @@ toLower('<text>')
 | <*lowercase-text*> | string | The original string in lowercase format |
 ||||
 
-*Example*
+*Example 1*
 
 This example converts a string to lowercase:
 
@@ -4801,19 +5167,30 @@ toLower('Hello World')
 
 And returns the result **hello world**.
 
+*Example 2*
+
+This example converts a string to lowercase in the **fr-FR** format:
+
+```
+toUpper('Hello World', 'fr-FR')
+```
+
+And returns the result **hello world**.
+
 <a name="toUpper"></a>
 
 ### toUpper
 
-Return a string in uppercase format. If a character in the string doesn't have an uppercase version, that character stays unchanged in the returned string.
+Return a string in uppercase in an optional locale format.. If a character in the string doesn't have an uppercase version, that character stays unchanged in the returned string.
 
 ```
-toUpper('<text>')
+toUpper('<text>', '<locale>'?)
 ```
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*text*> | Yes | string | The string to return in uppercase format |
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |
@@ -4821,12 +5198,22 @@ toUpper('<text>')
 | <*uppercase-text*> | string | The original string in uppercase format |
 ||||
 
-*Example*
+*Example 1*
 
 This example converts a string to uppercase:
 
 ```
 toUpper('Hello World')
+```
+
+And returns the result **HELLO WORLD**.
+
+*Example 2*
+
+This example converts a string to uppercase in the **fr-FR** format:
+
+```
+toUpper('Hello World', 'fr-FR')
 ```
 
 And returns the result **HELLO WORLD**.
@@ -5166,10 +5553,10 @@ And returns the result **http**.
 
 ### utcNow
 
-Return the current timestamp.
+Return the current timestamp in an optional locale format as a string.
 
 ```
-utcNow('<format>')
+utcNow('<format>', '<locale>'?)
 ```
 
 Optionally, you can specify a different format with the <*format*> parameter.
@@ -5178,6 +5565,7 @@ Optionally, you can specify a different format with the <*format*> parameter.
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |
@@ -5197,13 +5585,23 @@ And returns the result **2018-04-15T13:00:00.000Z**.
 
 *Example 2*
 
-Suppose the date is **April 15, 2018** at **1:00:00 PM**. This example gets the current timestamp using the optional *D* format:
+Suppose the date is **April 15, 2018** at **1:00:00 PM**. This example gets the current timestamp using the optional **D** format:
 
 ```
 utcNow('D')
 ```
 
 And returns the result **Sunday, April 15, 2018**.
+
+*Example 3*
+
+Suppose the date is **April 15, 2018** at **1:00:00 PM**. This example gets the current timestamp using the **de-DE** locale:
+
+```
+utcNow('', 'de-DE')
+```
+
+And returns the result **15.04.18 13:00:00**.
 
 <a name="where"></a>
 

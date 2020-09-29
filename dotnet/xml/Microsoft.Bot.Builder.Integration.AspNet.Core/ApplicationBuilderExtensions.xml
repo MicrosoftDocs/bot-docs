@@ -16,6 +16,7 @@
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,9 +27,9 @@
             Extension methods for <see cref="T:Microsoft.AspNetCore.Builder.IApplicationBuilder" /> to add a Bot to the ASP.NET Core request execution pipeline.
             </summary>
     <remarks>To be added.</remarks>
-    <altmember cref="T:Microsoft.Bot.Builder.Integration.BotFrameworkPaths" />
     <altmember cref="T:Microsoft.Bot.Builder.BotFrameworkAdapter" />
     <altmember cref="T:Microsoft.Bot.Builder.Integration.AspNet.Core.ServiceCollectionExtensions" />
+    <altmember cref="T:Microsoft.Bot.Builder.Integration.BotFrameworkPaths" />
   </Docs>
   <Members>
     <Member MemberName="UseBotFramework">
@@ -50,6 +51,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.AspNetCore.Builder.IApplicationBuilder</ReturnType>
@@ -80,6 +82,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.AspNetCore.Builder.IApplicationBuilder</ReturnType>

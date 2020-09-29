@@ -9,7 +9,8 @@ ms.service: bot-service
 ms.date: 12/13/2017
 monikerRange: 'azure-bot-service-3.0'
 ---
-# Send proactive messages
+# Send proactive messages in the v3 JavaScript SDK
+
 [!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
 
 > [!div class="op_single_selector"]

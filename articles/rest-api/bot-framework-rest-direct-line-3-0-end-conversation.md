@@ -9,7 +9,7 @@ ms.service: bot-service
 ms.date: 12/13/2017
 ---
 
-# End a conversation
+# End a conversation in Direct Line API 3.0
 
 The **endOfConversation** [activity](https://aka.ms/botSpecs-activitySchema) means the channel or bot has ended the conversation. 
 

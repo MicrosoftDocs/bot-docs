@@ -10,7 +10,7 @@ ms.date:  02/19/2019
 monikerRange: 'azure-bot-service-3.0'
 ---
 
-# Add suggested actions to messages
+# Add suggested actions to messages in the v3 JavaScript SDK
 
 [!INCLUDE [pre-release-label](../includes/pre-release-label-v3.md)]
 

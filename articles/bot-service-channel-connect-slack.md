@@ -12,11 +12,13 @@ ms.date: 07/09/2020
 
 # Connect a bot to Slack
 
-There are two ways in which you can confgure Slack messaging app:
+There are two ways in which you can configure Slack messaging app:
+
 - Use Azure Bot Service portal to connect your bot
 - Use the Slack adapter
 
 ## [Azure Bot Service Portal](#tab/abs)
+
 ## Create a Slack application for your bot
 
 Log into [Slack](https://slack.com/signin) and then go to [create a Slack application](https://api.slack.com/apps) channel.
@@ -50,11 +52,11 @@ Adding a Bot User allows you to assign a username for your bot and choose whethe
 1. Select the **Bot Users** tab.
 2. Click **Add a Bot User**.
 
-![Create bot](~/media/channels/slack-CreateBot.png)
+![Slack create bot image](~/media/channels/slack-CreateBot.png)
 
 Click **Add Bot User** to validate your settings, click **Always Show My Bot as Online** to **On**, and then click **Save Changes**.
 
-![Create bot](~/media/channels/slack-CreateApp-AddBotUser.png)
+![Slack CreateApp AddBotUser image](~/media/channels/slack-CreateApp-AddBotUser.png)
 
 ## Subscribe to Bot Events
 
@@ -139,6 +141,7 @@ Authorized users can click the **Add to Slack** button provided by this modified
 > As of June 2020 Slack channel supports Slack V2 permission scopes which allow the bot to specify its capabilities and permissions in a more granular way. All newly configured Slack channels will use the V2 scopes. To switch your bot to the V2 scopes, delete and recreate the Slack channel configuration in the Channels blade. The link you pasted into the href value of the HTML contains scopes that can be refined as needed. Consult [https://api.slack.com/scopes](https://api.slack.com/scopes) for the full list of available scopes.
 
 ## [Slack adapter](#tab/adapter)
+
 ## Connect a bot to Slack using the Slack adapter
 
 As well as the channel available in the Azure Bot Service to connect your bot with Slack, you can also use the Slack adapter. In this article you will learn how to connect a bot to Slack using the adapter.  This article will walk you through modifying the EchoBot sample to connect it to a Slack app.
@@ -152,7 +155,7 @@ As well as the channel available in the Azure Bot Service to connect your bot wi
 
 * Access to a Slack workspace with sufficient permissions to create and manage applications at  [https://api.slack.com/apps](https://api.slack.com/apps). If you do not have access to a Slack environment you can create a workspace for [free](https://www.slack.com).
 
-## Create a Slack application for your bot
+## Create a Slack application and configure it for your bot
 
 Log into [Slack](https://slack.com/signin) and then go to [create a Slack application](https://api.slack.com/apps) channel.
 
@@ -294,7 +297,7 @@ To complete this step, [deploy your bot to Azure](https://aka.ms/bot-builder-dep
 
 ### Update your Slack app
 
-Navigate back to the [Slack API dashboard]([https://api.slack.com/apps]) and select your app.  You now need to configure 2 URLs for your app and subscribe to the appropriate events.
+Navigate back to the [Slack API dashboard](https://api.slack.com/apps) and select your app.  You now need to configure 2 URLs for your app and subscribe to the appropriate events.
 
 1. In the **OAuth & Permissions** tab, the **Redirect URL** should be your bot's URL, plus the `api/slack` endpoint you specified in your newly created controller. For example, `https://yourboturl.com/api/slack`.
 

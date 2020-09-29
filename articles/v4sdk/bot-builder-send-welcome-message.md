@@ -32,7 +32,7 @@ The two main events encountered by the bot are:
 - `OnMembersAddedAsync` which is called whenever a new user is connected to your bot
 - `OnMessageActivityAsync` which is called whenever a new user input is received.
 
-![welcome user logic flow](media/welcome-user-flow.png)
+![welcome user logic flow csharp diagram](media/welcome-user-flow.png)
 
 Whenever a new user is connected, they are provided with a `WelcomeMessage`, `InfoMessage`, and `PatternMessage` by the bot.
 When a new user input is received, WelcomeUserState is checked to see if `DidBotWelcomeUser` is set to _true_. If not, an initial welcome user message is returned to the user.
@@ -44,7 +44,7 @@ The two main events encountered by the bot are:
 - `onMembersAdded` which is called whenever a new user is connected to your bot
 - `onMessage` which is called whenever a new user input is received.
 
-![welcome user logic flow](media/welcome-user-flow-js.png)
+![welcome user logic flow js diagram](media/welcome-user-flow-js.png)
 
 Whenever a new user is connected, they are provided with a `welcomeMessage`, `infoMessage`, and `patternMessage` by the bot.
 When a new user input is received, `welcomedUserProperty` is checked to see if `didBotWelcomeUser` is set to _true_. If not, an initial welcome user message is returned to the user.
@@ -61,7 +61,7 @@ The two main events encountered by the bot are:
 - `on_members_added_activity` which is called whenever a new user is connected to your bot
 - `on_message_activity` which is called whenever a new user input is received.
 
-![welcome user logic flow](media/welcome-user-flow-python.png)
+![welcome user logic flow python diagram](media/welcome-user-flow-python.png)
 
 Whenever a new user is connected, they are provided with a *welcome message*, *information message*, and a *pattern message* by the bot.
 When a new user input is received, the `welcome_user_state.did_welcome_user` property is checked to see if it is set to *true*. If it is not set to *true*, an initial welcome user message is returned to the user. If it is set to *true*, based on the content of the user's input this bot will do one of the following:

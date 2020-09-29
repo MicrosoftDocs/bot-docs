@@ -1,12 +1,12 @@
-<Type Name="SlackAction" FullName="Microsoft.Bot.Builder.Adapters.Slack.SlackAction">
+<Type Name="SlackAction" FullName="Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAction">
   <TypeSignature Language="C#" Value="public class SlackAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SlackAction extends System.Object" />
-  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Adapters.Slack.SlackAction" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAction" />
   <TypeSignature Language="VB.NET" Value="Public Class SlackAction" />
   <TypeSignature Language="F#" Value="type SlackAction = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
-    <AssemblyVersion>4.9.2.0</AssemblyVersion>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -20,12 +20,12 @@
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SlackAction ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.SlackAction.#ctor" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAction.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -36,13 +36,13 @@
     <Member MemberName="ActionId">
       <MemberSignature Language="C#" Value="public string ActionId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ActionId" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAction.ActionId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAction.ActionId" />
       <MemberSignature Language="VB.NET" Value="Public Property ActionId As String" />
-      <MemberSignature Language="F#" Value="member this.ActionId : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Slack.SlackAction.ActionId" />
+      <MemberSignature Language="F#" Value="member this.ActionId : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAction.ActionId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -62,13 +62,13 @@
     <Member MemberName="ActionTs">
       <MemberSignature Language="C#" Value="public string ActionTs { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ActionTs" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAction.ActionTs" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAction.ActionTs" />
       <MemberSignature Language="VB.NET" Value="Public Property ActionTs As String" />
-      <MemberSignature Language="F#" Value="member this.ActionTs : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Slack.SlackAction.ActionTs" />
+      <MemberSignature Language="F#" Value="member this.ActionTs : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAction.ActionTs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -88,13 +88,13 @@
     <Member MemberName="BlockId">
       <MemberSignature Language="C#" Value="public string BlockId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BlockId" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAction.BlockId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAction.BlockId" />
       <MemberSignature Language="VB.NET" Value="Public Property BlockId As String" />
-      <MemberSignature Language="F#" Value="member this.BlockId : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Slack.SlackAction.BlockId" />
+      <MemberSignature Language="F#" Value="member this.BlockId : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAction.BlockId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -111,16 +111,94 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Text">
-      <MemberSignature Language="C#" Value="public object Text { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance object Text" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAction.Text" />
-      <MemberSignature Language="VB.NET" Value="Public Property Text As Object" />
-      <MemberSignature Language="F#" Value="member this.Text : obj with get, set" Usage="Microsoft.Bot.Builder.Adapters.Slack.SlackAction.Text" />
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAction.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAction.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="name")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="name")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedOption">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Adapters.Slack.Model.SelectOption SelectedOption { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.Adapters.Slack.Model.SelectOption SelectedOption" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAction.SelectedOption" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectedOption As SelectOption" />
+      <MemberSignature Language="F#" Value="member this.SelectedOption : Microsoft.Bot.Builder.Adapters.Slack.Model.SelectOption with get, set" Usage="Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAction.SelectedOption" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="selected_option")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="selected_option")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Adapters.Slack.Model.SelectOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedOptions">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Adapters.Slack.Model.SelectOption&gt; SelectedOptions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.Adapters.Slack.Model.SelectOption&gt; SelectedOptions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAction.SelectedOptions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedOptions As List(Of SelectOption)" />
+      <MemberSignature Language="F#" Value="member this.SelectedOptions : System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Adapters.Slack.Model.SelectOption&gt;" Usage="Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAction.SelectedOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="selected_options")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="selected_options")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Adapters.Slack.Model.SelectOption&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public object Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Text" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAction.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As Object" />
+      <MemberSignature Language="F#" Value="member this.Text : obj with get, set" Usage="Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAction.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -140,13 +218,13 @@
     <Member MemberName="Type">
       <MemberSignature Language="C#" Value="public string Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Type" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAction.Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAction.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
-      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Slack.SlackAction.Type" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAction.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -166,13 +244,13 @@
     <Member MemberName="Value">
       <MemberSignature Language="C#" Value="public string Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Slack.SlackAction.Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAction.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
-      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Slack.SlackAction.Value" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="Microsoft.Bot.Builder.Adapters.Slack.Model.SlackAction.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Adapters.Slack</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

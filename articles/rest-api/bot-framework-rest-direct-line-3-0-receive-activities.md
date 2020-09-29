@@ -9,7 +9,7 @@ ms.service: bot-service
 ms.date: 06/13/2019
 ---
 
-# Receive activities from the bot
+# Receive activities from the bot in Direct Line API 3.0
 
 Using the Direct Line 3.0 protocol, clients can receive activities via `WebSocket` stream or retrieve activities by issuing `HTTP GET` requests.
 

@@ -9,7 +9,7 @@ ms.service: bot-service
 ms.date: 12/13/2017
 ---
 
-# Send a message to the bot
+# Send a message to the bot in Direct Line API 1.1
 
 > [!IMPORTANT]
 > This article describes how to send a message to the bot using Direct Line API 1.1. If you are creating a new connection between your client application and bot, use [Direct Line API 3.0](bot-framework-rest-direct-line-3-0-send-activity.md) instead.
