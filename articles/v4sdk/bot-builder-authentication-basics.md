@@ -19,10 +19,11 @@ Let's see if we can untangle this bundle by starting with a bird's eye view of t
 ![bot authentication context.](./media/concept-bot-authentication\bot-auth-context.PNG)
 
 - **Bot Channel Registration**. When you register a bot in Azure, for example via the **Bot Channels Registration**, Azure creates an Active Directory (AD) registration application. This application has an app id (`MicrosoftAppID`) and a client secret (`MicrosoftAppPassword`). You use these values in the bot configuration files as described below.
+Notice that you can achieve similar results by creating a **Web App Bot**.
 
-- **Azure AD Identity**. The Azure Active Directory (Azure AD) is a cloud identity service that allows you to build applications that securely sign in users using industry standard protocols like OAuth2.0. You create an AD application and use its **app id** and **password** to select an **identity provider** and generate an **authentication** connection. You add this connection to the bot channel registration settings. You also add the connection name in the bot configuration files as described below.
+- **Azure AD Identity**. The Azure Active Directory (Azure AD) is a cloud identity service that allows you to build applications that securely sign in users using industry standard protocols like OAuth2.0. You create an AD application and use its **app Id** and **password** to select an **identity provider** and generate an **authentication** connection. You add this connection to the bot channel registration settings. You also add the connection name in the bot configuration files as described below.
 
-- **Bot**. A bot is identified by its channels registration **MicrosoftAppID** and **MicrosoftAppPassword**. You add the related values in the bot's configuration files (`appsettings.json` (.NET), `.env` (JavaScript), `config.py` (Python)) or in **Azure Key Vault**. You also add the connection name to the files.
+- **Bot**. A bot is identified by its channels registration (or web app) **app Id** and **password**. You add the related values in the bot's configuration files (`appsettings.json` (.NET), `.env` (JavaScript), `config.py` (Python)) or in **Azure Key Vault**. You also add the connection name to the files.
 The bot uses the **token** based on the app id and password to access protected resources. Also, the bot uses the **token** based on the authentication connection to access user's protected resources.
 
 ## Bot authentication and authorization
@@ -35,6 +36,8 @@ The following are the main steps to authenticate a bot and authorize it to acces
 1. Create an authentication connection and add it to the channel registration settings.
 1. Add the connection name to the bot's configuration files. This allows the bot to be authorized to access user's protected resources.
 
+For a complete example, see [Add authentication to a bot](bot-builder-authentication.md).
+
 ### Best practices
 
 - Keep the AAD app registration restricted to its original purpose of service to service application.
@@ -44,13 +47,6 @@ Some of the problems you encounter if you also use the AAD registration app for 
 
 - If the certificate attached to the AAD app registration needs to be renewed it would impact users that have authenticated with other AAD services using the certificate.
 - In general, it creates a single point of failure and control for all authentication related activities with the bot.
-
-## Code highlight
-
-If you want to add authentication to your bot, you start by calling the `OAuthPrompt`, depending on when you want to authenticate the user.
-See the steps described in [Use an OAuth prompt to sign the user in and get a token](bot-builder-authentication.md#use-an-oauth-prompt-to-sign-the-user-in-and-get-a-token).
-
-For the complete example, see [Add authentication to a bot](bot-builder-authentication.md).
 
 ## Related topics
 
