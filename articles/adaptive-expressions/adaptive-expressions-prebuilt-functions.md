@@ -31,7 +31,7 @@ Prebuilt expressions are divided into the following function types:
 - [Regular expression](#regular-expression-functions)
 - [Type checking](#type-checking-functions)
 
-You can also view the list in [alphabetical order](#add).
+You can also view the list in [alphabetical order](#prebuilt-functions-sorted-alphabetically).
 
 ## String functions
 
@@ -230,6 +230,9 @@ You can also view the list in [alphabetical order](#add).
 |[isObject](#isObject)|Return true if the given input is an object.|
 |[isDateTime](#isDateTime)|Return true if the given input is a UTC ISO format	timestamp.|
 |[isString](#isString)|Return true if the given input is a string.|
+
+
+## Prebuilt functions sorted alphabetically
 
 <a name="add"></a>
 
