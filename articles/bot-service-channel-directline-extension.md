@@ -14,7 +14,7 @@ ms.date: 05/19/2020
 
 [!INCLUDE[applies-to-v4](includes/applies-to.md)]
 
-The direct line app service extension allows clients to connect directly with the host, where the bot is located. This provides workload isolation and, in some cases, improved performance. The following picture shows the overall architecture:
+The Direct Line App Service Extension allows clients to connect directly with the host, where the bot is located. This provides workload isolation and, in some cases, improved performance. The following picture shows the overall architecture:
 
 ![Direct line extension architecture](./media/channels/direct-line-extension-architecture.png)
 
@@ -32,9 +32,9 @@ The direct line app service extension is pre-installed on all instances of Azure
 |---|---|
 |[Configure .NET bot for extension](bot-service-channel-directline-extension-net-bot.md)|Update a .NET bot to work with **named pipes**, and enable the Direct Line App Service Extension in the **Azure App Service** resource where the bot is hosted.  |
 |[Configure Node.js bot for extension](bot-service-channel-directline-extension-node-bot.md)|Update a Node.js bot to work with **named pipes** and enable the Direct Line App Service Extension in the **Azure App Service** resource where the bot is hosted.  |
-|[Create .NET client with Extension](bot-service-channel-directline-extension-net-client.md)|Create a .NET client in C# which connects to the direct line app service extension|
-|[Use extension with WebChat](bot-service-channel-directline-extension-webchat-client.md)|Use WebChat with the direct line app service extension|
-|[Use extension within VNET](bot-service-channel-directline-extension-vnet.md)|Use the direct line app service extension with an Azure Virtual Network (VNET)|
+|[Create .NET client with Extension](bot-service-channel-directline-extension-net-client.md)|Create a .NET client in C# which connects to the direct line app service extension.|
+|[Use extension with WebChat](bot-service-channel-directline-extension-webchat-client.md)|Use WebChat with the direct line app service extension.|
+|[Use extension within VNET](bot-service-channel-directline-extension-vnet.md)|Use the direct line app service extension with an Azure Virtual Network (VNET).|
 
 ## Additional resources
 
