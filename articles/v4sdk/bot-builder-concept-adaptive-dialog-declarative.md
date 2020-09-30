@@ -439,7 +439,7 @@ The new CLI `dialog` group has the following two commands: `dialog:merge` and `d
 
 The root schema file contains the schemas of all the components that are consumed by your bot. Every consumer of declarative files, including [Composer][composer], needs a schema file.
 
-The `dialog:merge` command is used to generate your projects schema file. You will need to run this command anytime you add a new package or create or modify your own components.
+The `dialog:merge` command is used to generate your project's schema file. You will need to run this command anytime you add a new package or create or modify your own components.
 
 This creates a file named **app.schema** in the current directory, unless specified otherwise using the `-o` option. This file is referenced by the `"$schema` keyword in each of the `.dialog` files in your project.
 
