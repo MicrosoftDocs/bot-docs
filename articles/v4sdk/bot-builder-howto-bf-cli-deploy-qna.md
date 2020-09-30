@@ -317,8 +317,8 @@ When you use the optional `--dialog` option, a dialog file will be generated for
 
 The qnamaker:build dialog and schema parameters:
 
-- **dialog**. There are two valid values for the dialog option, multiLanguage and crosstrained.
-- **schema**. This take a relative path and filename pointing to the bots schema file.
+- **dialog**. There are two valid values for the dialog option, `multiLanguage` and `crosstrained`.
+- **schema**. This takes a relative path and filename pointing to the bot's schema file.
 
  These files will be written to the directory specified in the `out` option. For example:
 
