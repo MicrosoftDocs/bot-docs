@@ -2,11 +2,12 @@
 title: Create a bot with Azure Bot Service - Bot Service
 description: Learn how to create a bot with Bot Service, an integrated, dedicated bot development environment.
 keywords: Quickstart, create bot, bot service, web app bot
-ms.author: kamrani
+author: mmiele
+ms.author: v-mimiel
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 01/09/2020
+ms.date: 09/30/2020
 ---
 
 # Create a bot with Azure Bot Service
