@@ -31,9 +31,9 @@ Prebuilt expressions are divided into the following function types:
 - [Regular expression](#regular-expression-functions)
 - [Type checking](#type-checking-functions)
 
-You can also view the list in [alphabetical order](#add).
+You can also view the list in [alphabetical order](#prebuilt-functions-sorted-alphabetically).
 
-### String functions
+## String functions
 
 |Function	|Explanation|
 |-----------|-----------|
@@ -56,7 +56,7 @@ You can also view the list in [alphabetical order](#add).
 |[sentenceCase](#sentenceCase)|Capitalize the first letter of the first word in a string in an optional local format.|
 |[titleCase](#titleCase)|Capitalize the first letter of each word in a string in an optional locale format.|
 
-### Collection functions
+## Collection functions
 
 |Function	|Explanation|
 |-----------|-----------|
@@ -79,7 +79,7 @@ You can also view the list in [alphabetical order](#add).
 |[flatten](#flatten)|Flatten arrays into an array with non-array values.|
 |[unique](#unique)|Remove all duplicates from an array.|
 
-### Logical comparison functions
+## Logical comparison functions
 
 |Function|Explanation|
 |-----------|-----------|
@@ -95,12 +95,12 @@ You can also view the list in [alphabetical order](#add).
 |[or](#or)|Logical or opearation. Return `true` if at least one expression is true, or return `false` if all are false.|
 |[exists](#exists)|Evaluate an expression for truthiness.|
 
-### Conversion functions
+## Conversion functions
 
 |Function|Explanation|
 |-----------|-----------|
-|[float](#float)|Return the floating point representation of the specified string or the string itself if conversion isn't possible.|
-|[int](#int)|Return the integer representation of the specified string or the string itself if conversion isn't possible.|
+|[float](#float)|Return the floating point representation of the specified string. | 
+|[int](#int)|Return the integer representation of the specified string. |
 |[string](#string)|Return the string version of the specified value in an optional locale format.|
 |[bool](#bool)|Return the Boolean representation of the specified string.|
 |[createArray](#createArray)|Create an array from multiple inputs.|
@@ -117,7 +117,7 @@ You can also view the list in [alphabetical order](#add).
 |[xml](#xml)|C# only. Return the XML version of a string.|
 |[formatNumber](#formatNumber)|Format a value to the nearest number to the specified number of fractional digits and an optional specified locale.|
 
-### Math functions
+## Math functions
 
 |Function|Explanation|
 |-----------|-----------|
@@ -137,7 +137,7 @@ You can also view the list in [alphabetical order](#add).
 |[ceiling](#ceiling)|Return the smallest integral value greater than or equal to the specified number.|
 |[round](#round)|Round a value to the nearest integer or to the specified number of fractional digits.|
 
-### Date and time functions
+## Date and time functions
 
 |Function|Explanation|
 |-----------|-----------|
@@ -176,7 +176,7 @@ You can also view the list in [alphabetical order](#add).
 |[getPreviousViableTime](#getPreviousViableTime) | Return the previous viable time of a timex expression based on the current time and an optionally specified timezone. |
 |[getNextViableTime](#getNextViableTime) | Return the next viable time of a timex expression based on the current time and an optionally specified timezone. |
 
-### Timex functions
+## Timex functions
 
 |Function	|Explanation|
 |-----------|-----------|
@@ -188,7 +188,7 @@ You can also view the list in [alphabetical order](#add).
 |[isDateRange](#isDateRange)    | Return true if the TimexProperty or Timex expression refers to a date range. |
 |[isDefinite](#isDefinite)    | Return true if the TimexProperty or Timex expression refers to a definite day. |
 
-### URI parsing functions
+## URI parsing functions
 
 |Function|Explanation|
 |-----------|-----------|
@@ -199,7 +199,7 @@ You can also view the list in [alphabetical order](#add).
 |[uriQuery](#uriQuery) |Retur0sn the query value of a uniform resouce identifier (URI).|
 |[uriScheme](#uriScheme)|Return the scheme value of a uniform resource identifier (URI).  |
 
-### Object manipulation and construction functions
+## Object manipulation and construction functions
 
 |Function|Explanation|
 |-----------|-----------|
@@ -212,13 +212,13 @@ You can also view the list in [alphabetical order](#add).
 |[jPath](#jPath)   |Check JSON or a JSON string for nodes or value that match a path expression, and return the matching nodes.|
 |[setPathToValue](#setPathToValue)   |Set the value of a specific path and return the value.|
 
-### Regular expression functions
+## Regular expression functions
 
 |Function|Explanation|
 |-----------|-----------|
 |[isMatch](#isMatch)|Return true if a string matches a common regex pattern.|
 
-### Type checking functions
+## Type checking functions
 
 |Function|Explanation|
 |-----------|-----------|
@@ -230,6 +230,9 @@ You can also view the list in [alphabetical order](#add).
 |[isObject](#isObject)|Return true if the given input is an object.|
 |[isDateTime](#isDateTime)|Return true if the given input is a UTC ISO format	timestamp.|
 |[isString](#isString)|Return true if the given input is a string.|
+
+
+## Prebuilt functions sorted alphabetically
 
 <a name="add"></a>
 
@@ -1806,7 +1809,7 @@ And returns the result **[1, 2, [3, 4], [5, 6]]**.
 
 ### float
 
-Convert the string version of a floating-point number to a floating-point number. You can use this function only when passing custom parameters to an app, such as a logic app.
+Convert the string version of a floating-point number to a floating-point number. You can use this function only when passing custom parameters to an app, such as a logic app. An exception will be thrown if the string cannot be converted to a float.
 
 ```
 float('<value>')
@@ -2713,7 +2716,7 @@ And returns a new object:
 
 ### int
 
-Return the integer version of a string.
+Return the integer version of a string. An exception will be thrown if the string cannot be converted to an integer.
 
 ```
 int('<value>')
