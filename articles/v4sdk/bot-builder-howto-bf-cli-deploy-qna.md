@@ -31,7 +31,7 @@ The Bot Framework Command Line Interface (CLI) lets you automate the management 
 This article describes how to perform some common tasks used to deploy a QnA Maker KB using the Bot Framework CLI.
 
 1. [Create your QnA Maker resource in Azure Cognitive Services](#create-your-qna-maker-resource-in-azure-cognitive-services)
-1. [Install the Bot Framework SDK CLI](#install-the-bot-framework-sdk-cli)
+1. [Install the Bot Framework CLI](#install-the-bot-framework-cli)
 1. [Create your QnA Maker initialization file](#create-your-qna-maker-initialization-file)
 1. [Create your QnA Maker model](#create-your-qna-maker-model)
 1. [Create your QnA Maker knowledge base](#create-your-qna-maker-knowledge-base)
@@ -68,7 +68,7 @@ The QnA Maker resource includes information your bot will use to access your QnA
 
    ![The Keys and endpoint blade in Azure](./media/adaptive-dialogs/qna-maker-keys-and-endpoint.png)
 
-## Install the Bot Framework SDK CLI
+## Install the Bot Framework CLI
 
 If you have already installed the Bot Framework CLI you can skip ahead to [Create your QnA Maker model](#create-your-qna-maker-model).
 
@@ -206,12 +206,12 @@ bf qnamaker:build --in <input-file-or-folder> --subscriptionKey <Subscription-Ke
 #### The qnamaker:build parameters
 
 - `in`: The directory, including sub-directories, that will be searched for .qna files.
-- `out`: The directory to save output files to.
+- `out`: The directory to save output files to. This includes all the recognizer files as well as the settings file, and optionally the dialog files. If you omit the `out` option, no files will be saved to disk and only the authoring keys and endpoint will be written to the console.
 - `log`: A Boolean value that determines if a log is created during this process.
 - `botName`: The name of your bot. This will be used to generate the name of the QnA Maker KB, this is explained in more detail in the [QnA Maker Knowledge Bases created](#qna-maker-knowledge-bases-created) section below.
 - `subscriptionKey`: The same subscription key that is in your [initialization file](#create-your-qna-maker-initialization-file).
 
-For information on additional parameters, see [bf qnamaker:build][bf-qnamakerbuild] in the BF CLI qnamaker readme.
+For information on additional parameters, see [bf qnamaker:build][bf-qnamakerbuild] in the BF CLI readme.
 
 Alternatively, you can include these required parameters in a configuration file and provide them via the `qnaConfig` parameter.
 
@@ -234,7 +234,7 @@ Once created all you need to do is reference it in your `qnamaker:build` command
 bf qnamaker:build --qnaConfig qnaConfig.json
 ```
 
-#### QnA and multiple language variations
+### QnA and multiple language variations
 
 Each [.qna file][qna-file-format] can have multiple language variations, one for each language supported.
 
@@ -275,11 +275,11 @@ MyProject(YuuriTanaka).de-de.qna
 
 > [!TIP]
 >
-> Including the username as part of the KB name enables multiple people to work independently. This value is generated automatically, using the username of the person logged in, however you can override this using the `--suffix` option.
+> Including the username as part of the KB name enables multiple developers to work independently. This value is generated automatically, using the username of the person logged in, however you can override this using the `--suffix` option.
 
-### File generated using the build command
+### The settings file generated using the build command
 
-The output of `qnamaker:build` includes one settings file per locale. Each settings file contains the mapping to the QnA Maker knowledge bases, including the KB ID and hostname for each.
+The output of `qnamaker:build` includes one settings file that contains the mapping to all of the QnA Maker knowledge bases, including the KB ID and hostname for each.
 
 The QnA Maker KB settings file:
 
@@ -307,18 +307,33 @@ Example settings file:
 >
 > ![App name](./media/adaptive-dialogs/qna-app-name.png)
 
-#### The dialog file
+### The dialog file
 
-When you use the optional `--dialog` option, a dialog file will be generated for all language variations of each of your `.qna` files. These files will be written to the directory specified in the `out` option. For example:
+When you use the optional `--dialog` option, a dialog file will be generated for all language variations of each of your `.qna` files.
 
-- ./rootDialog/RootDialog.qna.dialog <-- MultiLanguageRecognizer configured to use all of the languages
-- ./rootDialog/RootDialog.en-us.qna.dialog <-- QnARecognizer for en-us locale
-- ./rootDialog/RootDialog.fr-fr.qna.dialog <-- QnARecognizer for fr-fr locale
+> [!IMPORTANT]
+>
+> The `--schema` option is used in conjunction with the `--dialog` option. Including the `--schema` option will ensure that every dialog file created will have a reference to the projects root schema file. This schema file contains the schemas of all the components that are consumed by your bot. Every consumer of declarative files, including [Composer][composer], needs a schema file. If your project does not have a schema file you can generate one using the `dialog:merge` command. You will need to run this command before running the `luis:build` command. For additional information refer to the article on [Using declarative assets in adaptive dialogs][dialog-merge-command].
 
-Here is an example of the MultiLanguageRecognizer file:
+The qnamaker:build dialog and schema parameters:
+
+- **dialog**. There are two valid values for the dialog option, `multiLanguage` and `crosstrained`.
+- **schema**. This takes a relative path and filename pointing to the bot's schema file.
+
+ These files will be written to the directory specified in the `out` option. For example:
+
+```
+ ./rootDialog/RootDialog.qna.dialog <-- MultiLanguageRecognizer configured to use all of the languages
+ ./rootDialog/RootDialog.en-us.qna.dialog <-- QnARecognizer for en-us locale
+ ./rootDialog/RootDialog.fr-fr.qna.dialog <-- QnARecognizer for fr-fr locale
+```
+
+
+Here is an example of the _MultiLanguageRecognizer_ file:
 
 ```json
 {
+    "$schema": "app.schema",
     "$kind": "Microsoft.MultiLanguageRecognizer",
     "id": "QnA_RootDialog",
     "recognizers": {
@@ -329,16 +344,9 @@ Here is an example of the MultiLanguageRecognizer file:
 }
 ```
 
-You will use these files if you are using the declarative approach to developing your bot, and you will need to add a reference to this recognizer in your adaptive dialogs `.dialog` file, for example:
+You will use these files if you are using the declarative approach to developing your bot, and you will need to add a reference to this recognizer in your adaptive dialogs `.dialog` file. In the following example the `"recognizer": "RootDialog.qna"` is looking for the recognizer that is defined in the file **RootDialog.qna.dialog**:
 
-```json
-{
-    "$kind":"Microsoft.AdaptiveDialog",
-    "recognizer": "RootDialog.qna.dialog"
-}
-```
-
-This will configure your recognizer to a QnAMakerRecognizer("RootDialog.en-us.qna") which internally will use your memory settings.qna.xxx to bind to the correct `.dialog` file for your model and runtime environment.
+ ![How to reference a recognizer in a .dialog file](./media/adaptive-dialogs/how-to-reference-the-qna-recognizer-in-dialog-file.png)
 
 See [Using declarative assets in adaptive dialogs][declarative] for more information.
 
@@ -362,6 +370,7 @@ See [Using declarative assets in adaptive dialogs][declarative] for more informa
 [bf-qnamakerkbpublish]: https://aka.ms/botframework-cli#bf-qnamakerkbpublish
 [bf-qnamakerinit]: https://aka.ms/botframework-cli#bf-qnamakerinit
 [bf-qnamakerbuild]: https://aka.ms/botframework-cli#bf-qnamakerbuild
+[dialog-merge-command]: bot-builder-concept-adaptive-dialog-declarative.md#the-merge-command
 
 [test-knowledge-base]: /azure/cognitive-services/QnAMaker/how-to/test-knowledge-base
 [batch-testing]: /azure/cognitive-services/QnAMaker/quickstarts/batch-testing
