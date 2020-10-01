@@ -294,7 +294,7 @@ The same LUIS application name will be used in each Azure region, with endpoints
 
 All of the `.lu` files for each locale will result in one LUIS application and the output of the `luis:build` command will include one settings file that contains a list of every LUIS application ID that was created for each locale.
 
-Example if your logged in username is _YuuriTanaka_ and you are targeting authoring region **westus**, your filename would be:
+For example, if your logged in username is _YuuriTanaka_ and you are targeting authoring region **westus**, your filename would be:
 
 **luis.settings.YuuriTanaka.westus.json**
 
