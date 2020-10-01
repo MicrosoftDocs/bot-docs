@@ -171,6 +171,8 @@
         href: v4sdk/bot-builder-howto-handle-user-interrupts-adaptive.md
       - name: Create a bot using declarative adaptive dialogs
         href: v4sdk/bot-builder-dialogs-declarative.md
+      - name: Create a bot cross trained to use both LUIS and QnA Maker recognizers
+        href: v4sdk/bot-builder-howto-cross-train.md
     - name: Write directly to storage
       href: v4sdk/bot-builder-howto-v4-storage.md
     - name: Authentication
