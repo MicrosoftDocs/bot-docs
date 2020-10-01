@@ -21,7 +21,7 @@ az group deployment create --resource-group "<name-of-resource-group>" --templat
 In this case, we are creating App Service Plan, Web App, and Bot Channels Registration.
 
 ```cmd
-az group deployment create --resource-group "<name-of-resource-group>" --template-file "<path-to-template-with-preexisting-rg.json>" --parameters appId="<app-id-from-previous-step>" appSecret="<password-from-previous-step>" botId="<id or bot-app-service-name>" newWebAppName="<bot-app-service-name>" newAppServicePlanName="<name-of-app-service-plan>" appServicePlanLocation="<region-location-name>" --name "<bot-app-service-name>"
+az group deployment create --resource-group "<name-of-resource-group>" --template-file "<path-to-template-with-preexisting-rg.json>" --parameters appId="<app-id-from-previous-step>" appSecret="<password-from-previous-step>" botId="<id or bot-app-service-name>" newWebAppName="<bot-app-service-name>" newAppServicePlanName="<name-of-app-service-plan>" newAppServicePlanLocation="<region-location-name>" --name "<bot-app-service-name>"
 ```
 
 | Option   | Description |
