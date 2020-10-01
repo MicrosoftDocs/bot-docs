@@ -19,17 +19,10 @@ This how to article will walk you through the steps required to create a bot tha
 
 Integrating the capabilities of both [LUIS][luis] and [QnA Maker][qnamaker] together requires the use of the [CreateCrossTrainedRecognizer][createcrosstrainedrecognizer].
 
-incorporates 
-
-The Bot Framework Command Line Interface (CLI) lets you automate the management of LUIS applications (LUIS apps). From a command line or a script, you can create, update, and delete LUIS properties.
-
-This article explains how to deploy a LUIS resource. For information on how to update an existing LUIS resource using BF CLI, see how to [update LUIS resources using the Bot Framework LUIS CLI commands][how-to-update-using-luis-cli].
-
 ## Prerequisites
 
-This article will walk you through the steps required to create a fully functional bot using adaptive dialogs. In order to accomplish this, you will need to understand the concepts involved. Before you begin, you should have a solid basic understanding of the following concepts:
+This article will walk you through the steps required to create a fully functional bot using adaptive dialogs. In order to accomplish this, you will need to understand the various concepts involved. Before you begin, you should have a solid basic understanding of the following concepts:
 
-- If you don't have an Azure subscription, create a [free account][create-azure-account] before you begin.
 - [Introduction to adaptive dialogs](bot-builder-adaptive-dialog-introduction.md)
 - [Events and triggers in adaptive dialogs](bot-builder-concept-adaptive-dialog-triggers.md)
 - [Actions in adaptive dialogs](bot-builder-concept-adaptive-dialog-actions.md)
@@ -40,6 +33,10 @@ This article will walk you through the steps required to create a fully function
 - [Handling interruptions in adaptive dialogs](bot-builder-concept-adaptive-dialog-interruptions)
 - [.lu file format][lu-templates]
 - [.qna file format][qna-file-format]
+
+You will also need an Azure account and the sample code:
+
+- If you don't have an Azure subscription, create a [free account][create-azure-account] before you begin.
 - For sample code, this article references the adaptive **Todo bot with LUIS and QnA Maker** sample in [**C#**](https://aka.ms/cs-adaptive-multi-turn-sample).
 
 ## What is covered
@@ -51,10 +48,9 @@ This article describes how to create a bot that is cross trained to use both LUI
 1. [Create your QnA Maker resource in Azure Cognitive Services](#create-your-qna-maker-resource-in-azure-cognitive-services)
 1. [Install the Bot Framework SDK CLI](#install-the-bot-framework-sdk-cli)
 1. [Generate LU models that are cross-trained](#generate-lu-models-that-are-cross-trained)
-1. [The LUIS and QnA Maker configuration files](#the-luis-and-qna-maker-configuration-files)
 1. [Create a LUIS application and publish it to production using the build command](#create-a-luis-application-and-publish-it-to-production-using-the-build-command)
 1. [Create a QnA Maker knowledge base and publish it to production using the build command](#create-a-qna-maker-knowledge-base-and-publish-it-to-production-using-the-build-command)
-1. [Update your project configuration file to include connection information for LUIS and QnA Maker](#update-your-project-configuration-file-to-include-connection-information-for-luis-and-qna-maker)
+1. [Update your project's configuration file to include connection information for LUIS and QnA Maker](#update-your-project's-configuration-file-to-include-connection-information-for-luis-and-qna-maker)
 1. [Testing the bot using Bot Framework Emulator](#testing-the-bot-using-bot-framework-emulator)
 
 ## The Todo bot with LUIS and QnA Maker sample
@@ -318,18 +314,18 @@ The configuration file **appsettings.json** explained:
 
 ![The appsettings.json file](./media/appsettings.json.png)
 
-1. For instructions on how to get the _MicrosoftAppId_ and _MicrosoftAppPassword_ see the [Bot channels registration][bot-channels-registration] article.
-2. The ***LuisAPIKey*** is the _subscriptionKey_, and the ***LuisAPIHostName*** is the _ENDPOINT_ value. Both values are found in _Keys and Endpoint_ blade in the Azure cognitive services LUIS authoring resource page as shown in the screen shot below:
+1. For instructions on how to get the `MicrosoftAppId` and `MicrosoftAppPassword` see the [Bot channels registration][bot-channels-registration] article.
+2. The ***LuisAPIKey*** is the `subscriptionKey`, and the ***LuisAPIHostName*** is the `ENDPOINT` value. Both values are found in _Keys and Endpoint_ blade in the Azure cognitive services LUIS authoring resource page as shown in the screen shot below:
 
    ![The Keys and endpoint blade in Azure](./media/adaptive-dialogs/keys-and-endpoint-cross-train.png)
 
 3. This is a list of LUIS application IDs. These values can be found in the _Application Settings_ page for a LUIS application in [www.luis.ai](https://www.luis.ai/), however they are also listed in the settings file created by the `luis:build` command, saved to the location provided as the `--out` option. This settings file contains a list of every LUIS application ID that was created for each locale. The full name of this JSON file is `luis.settings.<username>.<authoring-region>.json`. For example, if your logged in username is _YuuriTanaka_ and you are targeting authoring region **westus**, your filename would be **luis.settings.YuuriTanaka.westus.json**. This is where you will find all the values for the _luis_ section of your **appsettings.json** file.
 
-4. _QnAHostName_ is the _Host_ value and _QnAEndpointKey_ is the _EndpointKey_ value, both found in QnA Maker, accessed by selecting the _view code_ button when in the _My knowledge bases_ page as shown in the screen shot below:
+4. `QnAHostName` is the _Host_ value and `QnAEndpointKey` is the _EndpointKey_ value, both found in QnA Maker, accessed by selecting the **view code** button when in the _My knowledge bases_ page as shown in the screen shot below:
 
     ![QnA Maker View Code](./media/qna-maker-view-code.png)
- 
-5. The `qnamaker:build` command will include one settings file, saved to the location provided as the `--out` option, that contains a list of every QnA Maker knowledge base ID that was created for each locale. The full name of this JSON file is `qnamaker.settings.<username>.<authoring-region>.json`. For example, if your logged in username is _YuuriTanaka_ and you are targeting authoring region **westus**, your filename would be **qnamaker.settings.YuuriTanaka.westus.json**. This is where you will find all the values for the _qna_ section of your **appsettings.json** file.
+
+5. The `qnamaker:build` command will include one settings file, saved to the location provided as the `--out` option, that contains a list of every QnA Maker knowledge base ID that was created for each locale. The full name of this JSON file is `qnamaker.settings.<username>.<authoring-region>.json`. For example, if your logged in username is _YuuriTanaka_ and you are targeting authoring region **westus**, your filename would be **qnamaker.settings.YuuriTanaka.westus.json**. This is where you will find all the values for the `qna` section of your **appsettings.json** file.
 
 # [JavaScript](#tab/javascript)
 
@@ -356,17 +352,17 @@ The configuration file **.env** explained:
 
 ![The .env file](./media/adaptive-dialogs/env.png)
 
-1. For instructions on how to get the _MicrosoftAppId_ and _MicrosoftAppPassword_ see the [Bot channels registration][bot-channels-registration] article.
-2. The ***LuisAPIKey*** is the _subscriptionKey_, and the ***LuisAPIHostName*** is the _ENDPOINT_ value. Both values are found in _Keys and Endpoint_ blade in the Azure cognitive services LUIS authoring resource page as shown in the screen shot below:
+1. For instructions on how to get the `MicrosoftAppId` and `MicrosoftAppPassword` see the [Bot channels registration][bot-channels-registration] article.
+2. The ***LuisAPIKey*** is the `subscriptionKey`, and the ***LuisAPIHostName*** is the `ENDPOINT` value. Both values are found in _Keys and Endpoint_ blade in the Azure cognitive services LUIS authoring resource page as shown in the screen shot below:
 
    ![The Keys and endpoint blade in Azure](./media/adaptive-dialogs/keys-and-endpoint-cross-train.png)
 
-3. This is a list of LUIS application IDs. These values can be found in the _Application Settings_ page for a LUIS application in [www.luis.ai](https://www.luis.ai/), however they are also listed in the settings file created by the `luis:build` command, saved to the location provided as the `--out` option. This settings file contains a list of every LUIS application ID that was created for each locale. The full name of this JSON file is `luis.settings.<username>.<authoring-region>.json`. For example, if your logged in username is _YuuriTanaka_ and you are targeting authoring region **westus**, your filename would be **luis.settings.YuuriTanaka.westus.json**. This is where you will find all the values for the _luis_ section of your **appsettings.json** file.
+3. This is a list of LUIS application IDs. These values can be found in the _Application Settings_ page for a LUIS application in [www.luis.ai](https://www.luis.ai/), however they are also listed in the settings file created by the `luis:build` command, saved to the location provided as the `--out` option. This settings file contains a list of every LUIS application ID that was created for each locale. The full name of this JSON file is `luis.settings.<username>.<authoring-region>.json`. For example, if your logged in username is _YuuriTanaka_ and you are targeting authoring region **westus**, your filename would be **luis.settings.YuuriTanaka.westus.json**. This is where you will find all the values for the `luis` section of your **appsettings.json** file.
 
-4. _QnAHostName_ is the _Host_ value and _QnAEndpointKey_ is the _EndpointKey_ value, both found in QnA Maker, accessed by selecting the _view code_ button when in the _My knowledge bases_ page as shown in the screen shot below:
+4. `QnAHostName` is the _Host_ value and `QnAEndpointKey` is the _EndpointKey_ value, both found in QnA Maker, accessed by selecting the **view code** button when in the _My knowledge bases_ page as shown in the screen shot below:
 
     ![QnA Maker View Code](./media/qna-maker-view-code.png)
- 
+
 5. The `qnamaker:build` command will include one settings file, saved to the location provided as the `--out` option, that contains a list of every QnA Maker knowledge base ID that was created for each locale. The full name of this JSON file is `qnamaker.settings.<username>.<authoring-region>.json`. For example, if your logged in username is _YuuriTanaka_ and you are targeting authoring region **westus**, your filename would be **qnamaker.settings.YuuriTanaka.westus.json**. This is where you will find all the values for the _qna_ section of your **appsettings.json** file.
 
 ---
