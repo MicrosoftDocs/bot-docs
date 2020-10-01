@@ -89,7 +89,7 @@ This section describes how to enable the Direct Line app service extension using
     |---|---|
     |DirectLineExtensionABSEndpoint|<URL_of_Direct_Line_App_Gateway>|
 
-    Where *URL_of_Direct_Line_App_Gateway* is specific to the Azure cloud your bot is hosted in.
+    Where *URL_of_Direct_Line_App_Gateway* is specific to the Azure cloud your bot is hosted in. For USGov this value is https://directline.botframework.azure.us/v3/extension
 
 1. Still within the *Configuration* section, click on the **General** settings section and turn on **Web sockets**
 1. Click on **Save** to save the settings. This restarts the Azure App Service.
