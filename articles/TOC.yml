@@ -28,6 +28,26 @@
   items:
   - name: Bot Framework samples repo on GitHub
     href: https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md
+- name: Security
+  items:
+  - name: Authentication basics
+    href: v4sdk/bot-builder-authentication-basics.md
+  - name: Authentication types
+    href: v4sdk/bot-builder-concept-authentication-types.md
+  - name: User authentication
+    href: v4sdk/bot-builder-concept-authentication.md
+  - name: Identity providers
+    href: v4sdk/bot-builder-concept-identity-providers.md
+  - name: Single sign on
+    href: v4sdk/bot-builder-concept-sso.md
+  - name: Security guidelines
+    href: v4sdk/bot-builder-security-guidelines.md
+  - name: Bot Authentication
+    items:
+    - name: Add authentication to a bot
+      href: v4sdk/bot-builder-authentication.md
+    - name: Add single sign on to a bot
+      href: v4sdk/bot-builder-authentication-sso.md
 - name: Concepts
   items:
   - name: Bot
@@ -62,18 +82,6 @@
       href: v4sdk/bot-builder-concept-adaptive-dialog-interruptions.md
     - name: Using declarative assets in adaptive dialogs
       href: v4sdk/bot-builder-concept-adaptive-dialog-declarative.md
-  - name: Security
-    items:
-    - name: Security guidelines
-      href: v4sdk/bot-builder-security-guidelines.md
-    - name: Authentication types
-      href: v4sdk/bot-builder-concept-authentication-types.md
-    - name: User authentication
-      href: v4sdk/bot-builder-concept-authentication.md
-    - name: Identity providers
-      href: v4sdk/bot-builder-concept-identity-providers.md
-    - name: Single sign on
-      href: v4sdk/bot-builder-concept-sso.md
   - name: Manage bot resources
     href: v4sdk/bot-file-basics.md
   - name: How bots for Microsoft Teams work
@@ -173,12 +181,6 @@
         href: v4sdk/bot-builder-dialogs-declarative.md
     - name: Write directly to storage
       href: v4sdk/bot-builder-howto-v4-storage.md
-    - name: Authentication
-      items:
-      - name: Add authentication to a bot
-        href: v4sdk/bot-builder-authentication.md
-      - name: Add single sign on to a bot
-        href: v4sdk/bot-builder-authentication-sso.md
     - name: Implement custom storage for your bot
       href: v4sdk/bot-builder-custom-storage.md
     - name: Language Generation
