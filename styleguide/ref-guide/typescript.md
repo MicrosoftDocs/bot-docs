@@ -141,8 +141,8 @@ Every public element should have a description, including protected members of p
 | Constructor         | Start with "Creates an new instance of the \[\<_class-name_>](xref:\<_class-uid_>) class." If there are multiple constructors, indicate in the description what makes each overload relevant.
 | Constructor in abstract class | Start with "Called from constructors in derived classes to initialize the \[\<_class-name_>](xref:\<_class-uid_>) class."
 | Property            | Depending on which accessors are defined, use a verb phrase that starts with "Gets", "Sets", or "Gets or sets".
-| Function property, method, or function | Use a verb phrase that describes the behavior. | **TurnContext.getMentions**<br/>```Gets all at-mention entities included in an activity.```
-| `async` method | Use a verb phrase that starts with "Asynchronously". | **BotFrameworkAdapter.continueConversation**<br/>```Asynchronously resumes a conversation with a user, possibly after some time has gone by.```
+| Function property, method, or function | Use a verb phrase that describes the behavior. | **TurnContext.getMentions()**<br/>```Gets all at-mention entities included in an activity.```
+| `async` method | Use a verb phrase that starts with "Asynchronously". | **BotFrameworkAdapter.continueConversation()**<br/>```Asynchronously resumes a conversation with a user, possibly after some time has gone by.```
 | Generator function  | TBD
 | Overloaded method   | Include in the summary what makes each overload relevant. | 
 | Abstract or interface method | Start with "When implemented in a derived class," and complete with a verb phrase.
@@ -184,8 +184,6 @@ back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
 
 ### Modifiers
 
-TBD
-
 <!--
 | Modifier | Notes |
 | :--- | :--- |
@@ -208,15 +206,9 @@ back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
 
 ### @typeparam \<param-name>
 
-| Element | Wording |
-| :--- | :--- |
-|  |  |
-
 back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
 
 ### @param \<param-name>
-
-TBD
 
 <!--
 | Element | Wording |
@@ -249,10 +241,12 @@ Currently, the doc build does not include a description along with the return va
 
 However, if a value is returned, make sure to describe it in the `@remarks` section.
 
-| Element | Wording |
-| :--- | :--- |
-| void, null, undefined, or never or a Promise for any of these |  |
-| this | For _cascading/fluent_ semantics, use:<br/>A reference to the \<_whatever_> object. |
+| Return value | Guidance | Markdown example
+| :--- | :--- |:-
+| **void**, **null**, **undefined**, or **never**, or a **Promise** for any of these | There's no need to mention the return value.
+| **this** | For _cascading/fluent_ semantics, use "A reference to the \<_object-name_> object." | **ActivityHandler.onEvent()**<br/>```Returns a reference to the [ActivityHandler](xref:botbuilder-core.ActivityHandler) object.```
+| other type | In the remarks, describe what the return value represents and what to do with it.
+| **Promise\<_T_>** | Start with something like "If the operation is successful," and complete with a description of the return value. | **TurnContext.sendActivity()**<br/>```If the activity is successfully sent, results in a [ResourceResponse](xref:botframework-schema.ResourceResponse) object containing the ID that the receiving channel assigned to the activity.```
 
 back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
 
