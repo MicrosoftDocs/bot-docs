@@ -260,6 +260,29 @@ back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
 | in general |  |
 -->
 
+Include more information as necessary about the item in the remarks section. You can include short code samples, discussion of a method's return value, discussion of interactions with other classes or methods, and so on.
+
+Sample code sample:
+
+~~~typeDoc
+  * For example:
+  * ```JavaScript
+  * const result = await dc.beginDialog('greeting', { name: user.name });
+  * ```
+~~~
+
+Optionally, include a _see also_ section. When linking to members of a different class, qualify the link text with the object name.
+
+Sample see also section:
+
+~~~typeDoc
+  * **See also**
+  * - [endDialog](xref:botbuilder-dialogs.DialogContext.endDialog)
+  * - [prompt](xref:botbuilder-dialogs.DialogContext.prompt)
+  * - [replaceDialog](xref:botbuilder-dialogs.DialogContext.replaceDialog)
+  * - [Dialog.beginDialog](xref:botbuilder-dialogs.Dialog.beginDialog)
+~~~
+
 back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
 
 ### Code blocks
