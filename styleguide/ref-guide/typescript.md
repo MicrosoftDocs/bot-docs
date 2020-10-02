@@ -90,13 +90,14 @@ The rest of these sections cover style and wording guidance. It is intended to s
 
 ### Text formatting
 
-| Item | Guidance | Example
+| Item | Guidance | Markdown example
 |:-|:-|:-
 | language keyword | **bold**
 | literal or short, in-line code snippet | `code` | ```Calling `await next();` will cause execution to...```
 | string value | "value"
 | emphasis | _italic_
 | new term | _italic_
+| placeholder text | _italic_. Depending on context, optionally put the placeholder text inside angle brackets (\<>) or braces ({}).
 | class or member | A symbol reference on first use, and **bold** on subsequent uses. | ```To add middleware to a [BotAdapter](xref:botbuilder-core.BotAdapter) object, call the adapter's [use](xref:botbuilder-core.BotAdapter.use) method. The **use** method...```
 
 ### Symbol references
@@ -129,22 +130,22 @@ Every public element should have a description, including protected members of p
   This <element-type> supports the framework and is not intended to be called directly from your code.
   ```
 
-| Element | Guidance | Example
+| Element | Guidance | Markdown example
 | :--- | :--- | :---
 | File                | TBD
-| Concrete class      | Use a noun or verb phrase. | Provides context for a turn of a bot.<br/><br/>A storage layer that uses an in-memory dictionary.
-| Interface           | Use a verb phrase. | Contains settings used to configure a \[\<_class-name_>](xref:\<_class-uid_>) instance.
-| Abstract base class | Start with "Defines the core behavior of" | Defines the core behavior of \<_class name or feature_> and provides a base for \<_derived classes or derivations_>.
-| Derived class or interface (extends or implements) | (There's a bug in the build system. The unlinked base class is included, but the interfaces are not.) Mention all base classes and interfaces. Also, try to describe the class or interface in terms similar to how the base class or interface is described. | A \[\<_class-name_>](xref:\<_class-uid_>) that can connect a bot to a service endpoint. Implements \[\<interface-name_>](xref:\<interface-uid_>). |
+| Concrete class      | Use a noun or verb phrase. | **TurnContext**<br/>```Provides context for a turn of a bot.```<br/>**Messagefactory**<br/>```A set of utility functions to assist with the formatting of the various message types a bot can return.```
+| Interface           | Use a verb phrase. | **DialogState**<br/>```Contains dialog state, information about the state of the dialog stack, for a specific [DialogSet](xref:botbuilder-dialogs.DialogSet).```
+| Abstract base class | Start with "Defines the core behavior of/for" | **Dialog**<br/>```Defines the core behavior for all dialogs.```
+| Derived class or interface (extends or implements) | (There's a bug in the build system. The unlinked base class is included, but the interfaces are not.) Mention all base classes and interfaces. Also, try to describe the class or interface in terms similar to how the base class or interface is described. | **ActivityHandler**<br/>```Event-emitting activity handler for bots. Extends [ActivityHandlerBase](xref:botbuilder-core.ActivityHandlerBase).``` |
 | Generic class or interface | If relevant, mention the generic type parameter as part of the overall summary. |
 | Constructor         | Start with "Creates an new instance of the \[\<_class-name_>](xref:\<_class-uid_>) class." If there are multiple constructors, indicate in the description what makes each overload relevant.
 | Constructor in abstract class | Start with "Called from constructors in derived classes to initialize the \[\<_class-name_>](xref:\<_class-uid_>) class."
-| Property            | Use a noun or verb phrase. | The tenant to acquire the bot-to-channel token from.<br/><br/>The ID assigned to your bot. |
-| Function property, method, or function | Use a verb phrase that describes the behavior.
-| `async` method | Start with "An asynchronous method that", and complete with a verb phrase that describes the method or function behavior.
+| Property            | Depending on which accessors are defined, use a verb phrase that starts with "Gets", "Sets", or "Gets or sets".
+| Function property, method, or function | Use a verb phrase that describes the behavior. | **TurnContext.getMentions**<br/>```Gets all at-mention entities included in an activity.```
+| `async` method | Use a verb phrase that starts with "Asynchronously". | **BotFrameworkAdapter.continueConversation**<br/>```Asynchronously resumes a conversation with a user, possibly after some time has gone by.```
 | Generator function  | TBD
-| Overloaded method   | Include in the summary what makes each overload relevant.
-| Abstract or interface method | Start with "When implemented in a derived class" and complete with a verb phrase.
+| Overloaded method   | Include in the summary what makes each overload relevant. | 
+| Abstract or interface method | Start with "When implemented in a derived class," and complete with a verb phrase.
 
 back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
 
