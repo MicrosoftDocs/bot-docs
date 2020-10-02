@@ -73,8 +73,9 @@ See these resources for TypeScript and JavaScript:
 - [MDN JavaScript docs][]&mdash;Mozilla developer network resources for JavaScript.
 - [Node.js docs][]&mdash;Node.js documentation.
 
-The rest of this sections covers style and wording guidance:
+The rest of these sections cover style and wording guidance. It is intended to supplement OPS guidance in the [Docs contributor guide][] and the [Onboarding guide][].
 
+- [Text formatting](#text-formatting)
 - [Symbol references](#symbol-references)
 - [@module](#module)
 - [Summary](#summary)
@@ -87,12 +88,23 @@ The rest of this sections covers style and wording guidance:
 - [Code blocks](#code-blocks)
 - [General guidance](#general-guidance)
 
+### Text formatting
+
+| Item | Guidance | Example
+|:-|:-|:-
+| language keyword | **bold** | x
+| literal or short, in-line code snippet | `code` | Calling `await next();` will cause execution to...
+| string value | "value" | x
+| emphasis | _italic_ | x
+| new term | _italic_ | x
+| class or member | A symbol reference on first use, and **bold** on subsequent uses. | To add middleware to a [BotAdapter](xref:botbuilder-core.BotAdapter) object, call the adapter's [use](xref:botbuilder-core.BotAdapter.use) method. The **use** method...
+
 ### Symbol references
 
 Use `[link-text](xref:uid)` style links to link to other Bot Framework and Microsoft TypeScript ref docs.
 
-To find the xref for JavaScript, go to https://docs.microsoft.com/en-us/javascript/api/ and search for the member you want to link to. The xref will be the link text, as opposed to the link target.
-For example, the xref for the BotAdapter.use method is __botbuilder-core.BotAdapter.use__.
+To find the uid for JavaScript, go to https://docs.microsoft.com/en-us/javascript/api/ and search for the member you want to link to. The uid will be the link text, as opposed to the link target.
+For example, the xref uid for the BotAdapter.use method is __botbuilder-core.BotAdapter.use__.
 
 For links into our docs, link "directly" to the article, such as https://docs.microsoft.com/azure/bot-service/bot-builder-howto-send-messages for the **Send and receive text messages** how to.
 
@@ -108,32 +120,31 @@ back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
 
 ### Summary
 
-Every public element should have a description, including protected members of public classes or interfaces.
+Every public element should have a description, including protected members of public classes or interfaces:
 
-> [jf] When in doubt, open with a verb phrase. Include one or two more short sentences as necessary, but leave most of the explanation for the remarks section. The following are suggestions and based off of updates as I make them.
+- When in doubt, open with a verb phrase. Include one or two more short sentences as necessary, but leave most of the explanation for the remarks section. The table contains suggestions, based off of updates as I make them.
+- If a public element is _internal_, include the following note as part of the summary:
 
-> [!NOTE] If a public element is _internal_, include the following note as part of the summary:
->
-> ```text
-> This <_element-type_> supports the framework and is not intended to be called directly for your code.
-> ```
+  ```text
+  This <element-type> supports the framework and is not intended to be called directly from your code.
+  ```
 
-| Element | Wording |
-| :--- | :--- |
-| File                | TBD |
-| Concrete class      | \<_Noun or verb phrase_>. _Such as,_ Provides context for a turn of a bot. _or_ A storage layer that uses an in-memory dictionary. |
-| Interface           | \<_Verb phrase_>. _Such as,_ Contains settings used to configure a \[\<_class-name_>](xref:\<_class-uid_>) instance. |
-| Abstract base class | Defines the core behavior of \<_class name or feature_> and provides a base for \<_derived classes or derivations_>. |
-| Derived class or interface (extends or implements) | _The unlinked [bug] base class is included, but the interfaces are not in the build. **Do mention** all base classes and interfaces. Also, try to describe the class or interface in terms similar to how the base class or interface is described._<br/>_Such as,_ A \[\<_class-name_>](xref:\<_class-uid_>) that can connect a bot to a service endpoint. Implements \[\<interface-name_>](xref:\<interface-uid_>). |
-| Generic class or interface | _If relevant, mention the generic type parameter as part of the overall summary._ |
-| Constructor         | Creates an new instance of the \[\<_class-name_>](xref:\<_class-uid_>) class. |
-| Constructor in abstract class | Called from constructors in derived classes to initialize the \[\<_class-name_>](xref:\<_class-uid_>) class. |
-| Property            | \<_Noun or verb phrase_>. _Such as,_ The tenant to acquire the bot-to-channel token from. _or_ The ID assigned to you bot. |
-| Function property, method, or function | \<_A verb phrase that describes the behavior_>. |
-| `async` method/function | An asynchronous method/function that \<_verb phrase that describes the method behavior_>. |
-| Generator function  | TBD: _haven't seen one in the framework...yet._ |
-| Overloaded method   | _Include in the summary what makes this overload distinct from the others_. |
-| Abstract or interface method | When implemented in a derived class, \<_verb phrase_>. |
+| Element | Guidance | Example
+| :--- | :--- | :---
+| File                | TBD
+| Concrete class      | Use a noun or verb phrase. | Provides context for a turn of a bot.<br/><br/>A storage layer that uses an in-memory dictionary.
+| Interface           | Use a verb phrase. | Contains settings used to configure a \[\<_class-name_>](xref:\<_class-uid_>) instance.
+| Abstract base class | Start with "Defines the core behavior of" | Defines the core behavior of \<_class name or feature_> and provides a base for \<_derived classes or derivations_>.
+| Derived class or interface (extends or implements) | (There's a bug in the build system. The unlinked base class is included, but the interfaces are not.) Mention all base classes and interfaces. Also, try to describe the class or interface in terms similar to how the base class or interface is described. | A \[\<_class-name_>](xref:\<_class-uid_>) that can connect a bot to a service endpoint. Implements \[\<interface-name_>](xref:\<interface-uid_>). |
+| Generic class or interface | If relevant, mention the generic type parameter as part of the overall summary. |
+| Constructor         | Start with "Creates an new instance of the \[\<_class-name_>](xref:\<_class-uid_>) class." If there are multiple constructors, indicate in the description what makes each overload relevant.
+| Constructor in abstract class | Start with "Called from constructors in derived classes to initialize the \[\<_class-name_>](xref:\<_class-uid_>) class."
+| Property            | Use a noun or verb phrase. | The tenant to acquire the bot-to-channel token from.<br/><br/>The ID assigned to your bot. |
+| Function property, method, or function | Use a verb phrase that describes the behavior.
+| `async` method | Start with "An asynchronous method that", and complete with a verb phrase that describes the method or function behavior.
+| Generator function  | TBD
+| Overloaded method   | Include in the summary what makes each overload relevant.
+| Abstract or interface method | Start with "When implemented in a derived class" and complete with a verb phrase.
 
 back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
 
@@ -225,7 +236,7 @@ back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
 
 Currently, the doc build does not include a description along with the return value.
 
-However, if a value is returned, make sure to describe it in the @remarks section.
+However, if a value is returned, make sure to describe it in the `@remarks` section.
 
 | Element | Wording |
 | :--- | :--- |
@@ -258,6 +269,23 @@ back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
 
 ### General guidance
 
+Useful articles in the OPS (publishing) guides:
+
+| Topic or section | Description
+|:-|:-
+| [Azure reference writing style](https://review.docs.microsoft.com/en-us/help/contribute-ref/contribute-ref-resource-ref-writing-style?branch=master) | Overall guidance on writing ref docs.
+| [API reference](https://review.docs.microsoft.com/en-us/help/contribute-ref/contribute-ref-how-to-document-sdk?branch=master#api-reference) | A section outlining the basic quality bar for reference docs.
+| [Documenting JavaScript APIs](https://review.docs.microsoft.com/en-us/help/onboard/admin/reference/js-ts/documenting-api?branch=master) | jsDoc- and typeDoc-specific information.
+
+Useful MS style guide links:
+
+- [Developer content](https://docs.microsoft.com/en-us/style-guide/developer-content/)
+- [Capitalization](https://docs.microsoft.com/en-us/style-guide/capitalization)
+- [Punctuation](https://docs.microsoft.com/en-us/style-guide/punctuation/)
+- [Grammar and parts of speech](https://docs.microsoft.com/en-us/style-guide/grammar/grammar-and-parts-of-speech)
+- [Acronyms](https://docs.microsoft.com/en-us/style-guide/acronyms)
+- [Word choice](https://docs.microsoft.com/en-us/style-guide/word-choice/)
+
 #### Event emitters and events
 
 #### Continuation functions
@@ -268,6 +296,7 @@ back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
 
 <!-- Footnote links: Onboarding & ref doc refresh ----- -->
 
+[Docs contributor guide]: https://review.docs.microsoft.com/en-us/help/contribute/?branch=master
 [Onboarding guide]: https://review.docs.microsoft.com/help/onboard/admin/reference?branch=master
 
 <!-- Footnote links: local build tools ----- -->
