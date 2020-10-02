@@ -92,11 +92,11 @@ The rest of these sections cover style and wording guidance. It is intended to s
 
 | Item | Guidance | Example
 |:-|:-|:-
-| language keyword | **bold** | x
+| language keyword | **bold**
 | literal or short, in-line code snippet | `code` | Calling `await next();` will cause execution to...
-| string value | "value" | x
-| emphasis | _italic_ | x
-| new term | _italic_ | x
+| string value | "value"
+| emphasis | _italic_
+| new term | _italic_
 | class or member | A symbol reference on first use, and **bold** on subsequent uses. | To add middleware to a [BotAdapter](xref:botbuilder-core.BotAdapter) object, call the adapter's [use](xref:botbuilder-core.BotAdapter.use) method. The **use** method...
 
 ### Symbol references
@@ -122,7 +122,7 @@ back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
 
 Every public element should have a description, including protected members of public classes or interfaces:
 
-- When in doubt, open with a verb phrase. Include one or two more short sentences as necessary, but leave most of the explanation for the remarks section. The table contains suggestions, based off of updates as I make them.
+- When in doubt, open with a verb phrase. Include one or two more short sentences as necessary, but leave most of the explanation for the remarks section.
 - If a public element is _internal_, include the following note as part of the summary:
 
   ```text
