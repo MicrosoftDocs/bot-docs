@@ -151,9 +151,10 @@ back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
 
 ### Object types
 
-| Type | Notes |
-| :--- | :--- |
-| boolean        | _Summary like:_ Indicates whether \<_to do a thing_ or _a condition holds_>.<br/>_Remarks like:_ `true` \<_to do x_ or _when y_>; otherwise, `false`.<br/>_If the false condition requires more explanation, can say,_ ...; or `false` \<_if/when/to z_>. |
+| Type | Guidance | Markdown example
+| :--- | :--- |:---
+| **boolean**        | For the summary, start with "Indicates whether" and describe the thing to do or the condition that holds if the value is true.<br/><br/>For the remarks, "**true** \<_to do x_ or _when y_>; otherwise, **false**." If the false condition requires more explanation, can complete the sentence with "; or false \<_to do p_ or _when q_>."
+<!--
 | number         |  |
 | string         |  |
 | array          |  |
@@ -177,11 +178,15 @@ back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
 | Partial\<T>    | _All members of T are optional members of Partial\<T>. Call out any members that need to be present._ |
 | Readonly\<T>   | _All members of T are readonly members of Readonly\<T>._ |
 | Symbol         |  |
+-->
 
 back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
 
 ### Modifiers
 
+TBD
+
+<!--
 | Modifier | Notes |
 | :--- | :--- |
 | public     |  |
@@ -197,6 +202,7 @@ back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
 | accessors  |  |
 | constant (enum) |  |
 | ambient (enum)  |  |
+-->
 
 back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
 
@@ -210,6 +216,9 @@ back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
 
 ### @param \<param-name>
 
+TBD
+
+<!--
 | Element | Wording |
 | :--- | :--- |
 | [a mutated copy of another object] |  |
@@ -230,6 +239,7 @@ back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
 | [**rest**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters) |  |
 | this |  |
 | parameter property |  |
+-->
 
 back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
 
@@ -248,11 +258,13 @@ back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
 
 ### @remarks
 
+<!--
 | Element | Wording |
 | :--- | :--- |
 | in general |  |
 | Method that can throw an exception |  |
 | in general |  |
+-->
 
 back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
 
