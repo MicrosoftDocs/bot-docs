@@ -93,11 +93,11 @@ The rest of these sections cover style and wording guidance. It is intended to s
 | Item | Guidance | Example
 |:-|:-|:-
 | language keyword | **bold**
-| literal or short, in-line code snippet | `code` | Calling `await next();` will cause execution to...
+| literal or short, in-line code snippet | `code` | ```Calling `await next();` will cause execution to...```
 | string value | "value"
 | emphasis | _italic_
 | new term | _italic_
-| class or member | A symbol reference on first use, and **bold** on subsequent uses. | To add middleware to a [BotAdapter](xref:botbuilder-core.BotAdapter) object, call the adapter's [use](xref:botbuilder-core.BotAdapter.use) method. The **use** method...
+| class or member | A symbol reference on first use, and **bold** on subsequent uses. | ```To add middleware to a [BotAdapter](xref:botbuilder-core.BotAdapter) object, call the adapter's [use](xref:botbuilder-core.BotAdapter.use) method. The **use** method...```
 
 ### Symbol references
 
