@@ -192,7 +192,7 @@ Please refer to the **Connect a bot to Facebook Messenger** section for details.
 
 ### Setting the API version
 
-If you receive a notification from Facebook about deprecation of a certain version of the Graph API, go to [Facebook developers page](https://developers.facebook.com). Navigate to your bot’s **App Settings** and go to **Settings > Advanced > Upgrade API version**, then switch **Upgrade All Calls** to 3.0.
+If you receive a notification from Facebook about deprecation of a certain version of the Graph API, go to [Facebook developers page](https://developers.facebook.com). Navigate to your bot’s **App Settings** and go to **Settings > Advanced > Upgrade API version**, then switch **Upgrade All Calls** to a more recent version.
 
 ![API version upgrade](media/channels/fb-version-upgrade.png)
 
