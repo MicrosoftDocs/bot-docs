@@ -19,11 +19,11 @@ When the bot receives an activity, it has an *activity handler* that can handle 
 
 For example, if the bot receives a message activity, the turn handler would see that incoming activity and send it to the _on message activity_ activity handler. When building your bot, your bot logic for handling and responding to messages will go in this _on message activity_ handler. Likewise, your logic for handling members being added to the conversation will go in your _on members added_ handler, which is called whenever a member is added to the conversation.
 
-For other ways to organize your bot logic, see the [bot logic](bot-builder-basics.md#the-bot-logic) section in **how bots work**.
+For other ways to organize your bot logic, see the [bot logic](bot-builder-basics.md#bot-logic) section in **how bots work**.
 
 # [C#](#tab/csharp)
 
-To implement your logic for these handlers, you will override these methods in your bot as seen in the [Bot logic](#bot-logic) section below. For each of these handlers, there is no base implementation, so just add the logic that you want in your override.
+To implement your logic for these handlers, you will override these methods in your bot as seen in the [Bot logic](bot-builder-basics.md#bot-logic) section below. For each of these handlers, there is no base implementation, so just add the logic that you want in your override.
 
 There are certain situations where you will want to override the base turn handler, such as [saving state](bot-builder-concept-state.md) at the end of a turn. When doing so, be sure to first call `await base.OnTurnAsync(turnContext, cancellationToken);` to make sure the base implementation of `OnTurnAsync` is run before your additional code. That base implementation is, among other things, responsible for calling the rest of the activity handlers such as `OnMessageActivityAsync`.
 
@@ -33,7 +33,7 @@ The JavaScript `ActivityHandler` uses an event emitter and listener pattern.
 For example, use the `onMessage` method to register an event listener for message activities. You can register more than one listener. When the bot receives a message activity, the activity handler would see that incoming activity and send it each of the `onMessage` activity listeners, in the order in which they were registered.
 
 When building your bot, your bot logic for handling and responding to messages will go in the `onMessage` listeners. Likewise, your logic for handling members being added to the conversation will go in your `onMembersAdded` listeners, which are called whenever a member is added to the conversation.
-To add these listeners, you will register them in your bot as seen in the [Bot logic](#bot-logic) section below. For each listener, include your bot logic, then **be sure to call `next()` at the end**. By calling `next()` you ensure that the next listener is run.
+To add these listeners, you will register them in your bot as seen in the [Bot logic](bot-builder-basics.md#bot-logic) section below. For each listener, include your bot logic, then **be sure to call `next()` at the end**. By calling `next()` you ensure that the next listener is run.
 
 Make sure to [save state](bot-builder-concept-state.md) before the turn ends. You can do so by overriding the activity handler `run` method and saving state after the parent's `run` method completes.
 
@@ -46,7 +46,7 @@ When building your bot, your bot logic for handling and responding to messages w
 
 For example, if the bot receives a message activity, the turn handler would see that incoming activity and send it to the `on_message_activity` activity handler.
 
-To implement your logic for these handlers, you will override these methods in your bot as seen in the [Bot logic](#bot-logic) section below. For each of these handlers, there is no base implementation, so just add the logic that you want in your override.
+To implement your logic for these handlers, you will override these methods in your bot as seen in the [Bot logic](bot-builder-basics.md#bot-logic) section below. For each of these handlers, there is no base implementation, so just add the logic that you want in your override.
 
 There are certain situations where you will want to override the base turn handler, such as [saving state](bot-builder-concept-state.md) at the end of a turn. When doing so, be sure to first call `await super().on_turn(turnContext);` to make sure the base implementation of `on_turn` is run before your additional code. That base implementation is, among other things, responsible for calling the rest of the activity handlers such as `on_message_activity`.
 
