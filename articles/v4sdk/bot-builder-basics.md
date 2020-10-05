@@ -140,7 +140,7 @@ The SDK provides a few channel adapters in some languages.
 More channel adapters are available through the Botkit and Community repositories.
 For more details, see the Bot Framework SDK repository's table of [channels and adapters](https://aka.ms/v4-botbuilder-repo#channels-and-adapters).
 
-### The bot logic
+### Bot logic
 
 The bot contains the conversational reasoning or logic for a turn. The SDK provides a few ways to organize the bot logic.
 
