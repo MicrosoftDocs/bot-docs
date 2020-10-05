@@ -24,10 +24,10 @@ This article describes these features:
 | Bot adapter | The adapter receives activities from the messaging endpoint, forwards them to the bot's turn handler, and catches any errors or exceptions the bot's logic doesn't catch. |
 | Bot object | The bot object handles the bot's reasoning or logic for the turn. |
 
-The web service features are part of the web framework you choose to use and not part of the Bot Framework SDK.
-However, the Bot Framework templates and samples are written for ASP.NET (C#), Restify (JavaScript), and aiohttp (Python).
+The Bot Framework templates and samples are written for ASP.NET (C#), Restify (JavaScript), and aiohttp (Python).
+However, the web service features are part of the web framework you choose to use and not part of the Bot Framework SDK.
 
-You can crate an echo bot from the templates, as described in the quickstarts (for [**C#**](../dotnet/bot-builder-dotnet-sdk-quickstart.md), [**JavaScript**](../javascript/bot-builder-javascript-quickstart.md), or [**Python**](../python/bot-builder-python-quickstart.md)), or you can copy an echo bot project from the [Microsoft/BotBuilder-Samples](https://github.com/Microsoft/BotBuilder-Samples) repository.
+You can create an echo bot from the templates, as described in the quickstarts (for [**C#**](../dotnet/bot-builder-dotnet-sdk-quickstart.md), [**JavaScript**](../javascript/bot-builder-javascript-quickstart.md), or [**Python**](../python/bot-builder-python-quickstart.md)), or you can copy an echo bot project from the [Microsoft/BotBuilder-Samples](https://github.com/Microsoft/BotBuilder-Samples) repository.
 
 The C# and JavaScript templates have built-in support for streaming connections. This article does cover streaming features. For information about streaming connections, see how to [connect a bot to Direct Line Speech](../bot-service-channel-connect-directlinespeech.md).
 
