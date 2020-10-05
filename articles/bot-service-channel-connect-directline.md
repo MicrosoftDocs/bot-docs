@@ -24,11 +24,7 @@ The first thing you must do is to add the Direct Line channel to the bot.
 
     ![Add Direct Line channel](media/bot-service-channel-connect-directline/add-directline-channel.png)
 
-1. The **Configure Direct Line** page is displayed. Click the **Done** button at the bottom of the page.
-
-     ![Configure Direct Line channel](media/bot-service-channel-connect-directline/configure-directline-channel.png)
-
-    This adds the Direct Line channel to the bot, as shown in the picture below.
+1. The **Configure Direct Line** page is displayed. Click the **Done** button at the bottom of the page. This adds the Direct Line channel to the bot, as shown in the picture below.
 
     ![Added Direct Line channel](media/bot-service-channel-connect-directline/added-directline-channel.png)
 
@@ -36,13 +32,15 @@ The first thing you must do is to add the Direct Line channel to the bot.
 
 1. In the *Connect to channels*, click the **Edit** link by the Direct Line.
 1. In the *Configure Direct Line*, click **Add new site** and enter a name for your site. This represents the client application that you want to connect to the bot.
+
+    ![Add Direct Line site](media/bot-service-channel-connect-directline/directline-addsite.png)
+
 1. Click **Done**.
 
-![Add Direct Line site](media/bot-service-channel-connect-directline/directline-addsite.png)
 
 ## Manage secret keys
 
-When your site is created, the Bot Framework generates secret keys that your client application can use to [authenticate](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md) the Direct Line API requests that it issues to communicate with your bot.
+When your site is created, the Bot Framework generates secret keys that your client application can use to authenticate the Direct Line API requests that it issues to communicate with your bot. For more information, see [Authentication](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md).
 
 1. To view a key in plain text, click **Show** for the corresponding key.
 
