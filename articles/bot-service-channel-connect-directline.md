@@ -30,8 +30,8 @@ The first thing you must do is to add the Direct Line channel to the bot.
 
 ## Add new site
 
-1. In the *Connect to channels*, click the **Edit** link by the Direct Line.
-1. In the *Configure Direct Line*, click **Add new site** and enter a name for your site. This represents the client application that you want to connect to the bot.
+1. In *Connect to channels*, click the **Edit** link by the Direct Line.
+1. In *Configure Direct Line*, click **Add new site** and enter a name for your site. This represents the client application that you want to connect to the bot.
 
     ![Add Direct Line site](media/bot-service-channel-connect-directline/directline-addsite.png)
 
