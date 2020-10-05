@@ -26,8 +26,8 @@ Declarative files currently consist of _.dialog_ files that describe all of the 
 
 Adaptive dialog declarative files that have the .dialog extension contain the following elements:
 
-- The `$schema` value contains a URI pointing to the Schema that describes the format of this declarative file. That schema is a Bot Framework component schema, which adheres to [draft 7](http://json-schema.org/specification-links.html#draft-7) of the JSON schema vocabulary. This schema file enables [IntelliSense][intellisense] to work for your declarative elements. For information on how to create this file, see [Creating the schema file][creating-the-schema-file] in the _Create a bot using declarative adaptive dialogs_ article. The name of the schema file can be any valid filename, but is typically named **app.schema**.
-- The `$kind` field identifies the type of component described in this file. For an adaptive dialog, `$kind` must be `Microsoft.AdaptiveDialog`. In subobjects, `$kind` identifies a trigger or action that is part of the dialog. This field correlates with the `[JsonProperty("$kind")]` class attribute that is associated with every class in the Bot Framework SDK that is designed to work using the declarative approach.
+- The `$schema` value contains a URI pointing to the Schema that describes the format of this declarative file. That schema is a Bot Framework component schema, which adheres to [draft 7](http://json-schema.org/specification-links.html#draft-7) of the JSON schema vocabulary. This schema file enables [IntelliSense][intellisense] to work for your declarative elements. For information on how to create this file, see the section on [The merge command](#the-merge-command) below. The name of the schema file can be any valid filename, but is typically named **app.schema**.
+- The `$kind` field identifies the type of component described in this file. For an adaptive dialog, `$kind` must be `Microsoft.AdaptiveDialog`. In sub-objects, `$kind` identifies a trigger or action that is part of the dialog. This field correlates with the `[JsonProperty("$kind")]` class attribute that is associated with every class in the Bot Framework SDK that is designed to work using the declarative approach.
 - The `recognizer` value contains a [recognizer type][recognizer-types] and an array of one or more [intents][intents] and optionally an array of one or more [entities][entity].
 - The `generator` value contains a link to the .lg file associated with the adaptive dialog that this .dialog file defines.
 - The `triggers` value contains an array of one or more [triggers](bot-builder-concept-adaptive-dialog-triggers.md). The type of trigger is declared using the `$kind` keyword. Each trigger contains an array of one or more actions.
@@ -70,6 +70,10 @@ The elements of the .dialog file defined:
 
 > [!div class="mx-imgBorder"]
 > ![Create Get Weather Dialog](./media/adaptive-dialogs/dotdialogfile.png)
+
+For information on how `.dialog` files can be generated automatically using the CLI `luis:build` command when creating a LUIS application see [The dialog file][the-dialog-file-luis] section of the **Deploy LUIS resources using the Bot Framework LUIS CLI commands** article.
+
+For information on how `.dialog` files can be generated automatically using the CLI `qnamaker:build` command when creating a QnA Maker knowledge base see [The dialog file][the-dialog-file-qnamaker] section of the **Deploy QnA Maker knowledge base using the Bot Framework qnamaker CLI commands** article.
 
 ### .lg files
 
@@ -425,6 +429,65 @@ The [generator][generator] value contains a link to the .lg file associated with
 }
 ```
 
+## The Bot Framework Command-Line Interface
+
+Several new [Bot Framework Command-Line Interface (BF CLI)][bf-cli] commands were added with the release of adaptive dialogs in the Bot Framework SDK. This includes two dialog related commands for working with `.dialog` and `.schema` files that are very useful when using the declarative approach to adaptive dialog development.
+
+The new CLI `dialog` group has the following two commands: `dialog:merge` and `dialog:verify`.
+
+### The merge command
+
+The root schema file contains the schemas of all the components that are consumed by your bot. Every consumer of declarative files, including [Composer][composer], needs a schema file.
+
+The `dialog:merge` command is used to generate your project's schema file. You will need to run this command anytime you add a new package or create or modify your own components.
+
+This creates a file named **app.schema** in the current directory, unless specified otherwise using the `-o` option. This file is referenced by the `"$schema` keyword in each of the `.dialog` files in your project.
+
+> [!NOTE]
+>
+> A valid app.schema file is required for _Intelligent code completion_ tools such as [IntelliSense][intelliSense] to work with any of the declarative assets.
+
+To use the merge command, enter the following at the command prompt, while in the root directory of your project:
+
+```cli
+bf dialog:merge <filename.csproj>
+```
+
+For additional information on using this command, see [bf dialog:merge][bf-dialogmerge-patterns] in the BF CLI LUIS readme.
+
+For an example see [Creating the schema file][creating-the-schema-file] in the _Create a bot using declarative adaptive dialogs_ article.
+
+<!--
+> [!TIP]
+>
+> For users of C#: NuGet does not deal well with content files, so all declarative `.dialog`, `.lu`, `.lg`, and `.qna` files will be copied into `generated/<package>` so you can easily include them in your project output.
+-->
+
+### The verify command
+
+The `dialog:verify` command will check `.dialog` files to verify that they are compatible with the schema.
+
+To use the `verify` command, enter the following at the command prompt, while in the root directory of your project:
+
+```cli
+bf dialog:verify <filename.csproj>
+```
+
+For additional information on using this command, see [bf dialog:verify][bf-dialogverify-patterns] in the BF CLI LUIS readme.
+
+> [!NOTE]
+>
+> [Composer][composer] creates a merged `.schema` file and valid `.dialog` files; however,
+> the verify command can be very useful if you are creating these files by hand.
+
+### Install the Bot Framework CLI
+
+[!INCLUDE [Install the Bot Framework CLI](../includes/install-bf-cli.md)]
+
+### Relevant information
+
+- [Dialog Commands][dialog-commands]
+
 ## Additional information
 
 - How to [Create a bot using declarative adaptive dialogs](bot-builder-dialogs-declarative.md)
@@ -507,3 +570,13 @@ The [generator][generator] value contains a link to the .lg file associated with
 <!--  (Actions) Debugging options -->
 [log-action]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#log-action
 [traceactivity]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#traceactivity
+
+[intelliSense]: https://aka.ms/intellisense-in-visual-studio
+[composer]: https://docs.microsoft.com/composer
+
+[dialog-commands]: https://aka.ms/botframework-cli#bf-dialog
+[bf-dialogverify-patterns]: https://aka.ms/botframework-cli#bf-dialogverify-patterns
+[bf-dialogmerge-patterns]: https://aka.ms/botframework-cli#bf-dialogmerge-patterns
+
+[the-dialog-file-luis]: bot-builder-howto-bf-cli-deploy-luis.md#the-dialog-file
+[the-dialog-file-qnamaker]: bot-builder-howto-bf-cli-deploy-qna.md#the-dialog-file
