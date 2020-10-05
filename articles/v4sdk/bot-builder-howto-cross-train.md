@@ -36,7 +36,7 @@ This article will walk you through the steps required to create a fully function
 
 You will also need an Azure account and the sample code:
 
-- If you don't have an Azure subscription, create a [free account][create-azure-account] before you begin.
+- If you don't have an Azure subscription, you can [Create your Azure free account]][create-azure-account] before you begin.
 - For sample code, this article references the adaptive **Todo bot with LUIS and QnA Maker** sample in [**C#**](https://aka.ms/cs-adaptive-multi-turn-sample).
 
 ## What is covered
@@ -47,15 +47,15 @@ This article describes how to create a bot that is cross trained to use both LUI
 1. [Create your LUIS authoring resource in Azure Cognitive Services](#create-your-luis-authoring-resource-in-azure)
 1. [Create your QnA Maker resource in Azure Cognitive Services](#create-your-qna-maker-resource-in-azure-cognitive-services)
 1. [Install the Bot Framework SDK CLI](#install-the-bot-framework-sdk-cli)
-1. [Generate LU models that are cross-trained](#generate-lu-models-that-are-cross-trained)
-1. [Create a LUIS application and publish it to production using the build command](#create-a-luis-application-and-publish-it-to-production-using-the-build-command)
-1. [Create a QnA Maker knowledge base and publish it to production using the build command](#create-a-qna-maker-knowledge-base-and-publish-it-to-production-using-the-build-command)
+1. [Generate cross-trained LU models](#generate-cross-trained-lu-models)
+1. [Create and publish LUIS applications using the build command](#create-and-publish-luis-applications-using-the-build-command)
+1. [Create and publish QnA Maker knowledge bases using the build command](#create-and-publish-qna-maker-knowledge-bases-using-the-build-command)
 1. [Update your project's configuration file to include connection information for LUIS and QnA Maker](#update-your-project's-configuration-file-to-include-connection-information-for-luis-and-qna-maker)
 1. [Testing the bot using Bot Framework Emulator](#testing-the-bot-using-bot-framework-emulator)
 
 ## The Todo bot with LUIS and QnA Maker sample
 
-The adaptive **Todo bot with LUIS and QnA Maker** ([**C#**](https://aka.ms/cs-adaptive-multi-turn-sample)) sample has five `.lu` files, five `.qna` files and six `.lg` files. When creating the cross-trained language understanding models you will combine the `.lu` and `.qna` files in a way that will enable you to utilize the capabilities of both LUIS and QnA Maker together in the same recognizer, enabling you to train the recognizer how best to interpret and respond to a users request. After running the cross-train command you will have the same number of each file, but they will be updated so that the `.lu` file contains the required `.qna` information and the `.qna` files contained the required `.lu` information to enable the [Cross-trained recognizer set][crosstrainedrecognizerset] to work.
+The adaptive **Todo bot with LUIS and QnA Maker** ([**C#**](https://aka.ms/cs-adaptive-multi-turn-sample)) sample has five `.lu` files, five `.qna` files and six `.lg` files. When creating the cross-trained language understanding models you will combine the `.lu` and `.qna` files in a way that will enable you to utilize the capabilities of both LUIS and QnA Maker together in the same recognizer, enabling you to train the recognizer how best to interpret and respond to a users request. After running the cross-train command you will have the same number of each file, but they will be updated so that the `.lu` file contains the required `.qna` information and the `.qna` files contains the required `.lu` information to enable the [Cross-trained recognizer set][crosstrainedrecognizerset] to work.
 
 To clone the samples repository, enter the following git command from a console window: `git clone https://github.com/Microsoft/botbuilder-samples.git`
 
@@ -70,7 +70,7 @@ The LUIS authoring resource is an [Azure Cognitive Services][cognitive-services-
 
 3. Enter values for each of the fields, then select the **Review + create** button.
 
-   ![Set Create cognitive services image](./media/adaptive-dialogs/create-cognitive-services.png)
+   ![Set Create cognitive services image](./media/adaptive-dialogs/create-cognitive-services-cross-trainsample.png)
 
     > [!NOTE]
     > When entering the **Resource Group** and **Name**, keep in mind that you cannot change these values later. Also note that the value you give for **Name** is not only the name of your LUIS service, it is also the custom domain name in your endpoint and will be part of your **Endpoint URL**.
@@ -96,7 +96,7 @@ Like the LUIS resource, the QnA Maker resource is also an [Azure Cognitive Servi
 1. Go to the Azure [Create Qna Maker Cognitive Services][create-cognitive-services-qnamaker] page.
 2. Enter values for each of the fields, then select the **Review + create** button.
 
-   ![Create your QnA Maker knowledge base in Azure](./media/adaptive-dialogs/create-qna-maker.png)
+   ![Create your QnA Maker knowledge base in Azure](./media/adaptive-dialogs/create-qna-maker-cross-trainsample.png)
 
     > [!NOTE]
     > When entering the **Resource Group** and **Name**, keep in mind that you cannot change these values later. Also note that the value you give for **Name** is not only the name of your QnA Maker service, it is also the custom domain name in your endpoint and will be part of your **Endpoint URL**.
@@ -114,7 +114,7 @@ The QnA Maker resource includes information your bot will use to access your QnA
 
 - **Location**. This is the Azure region that contains your QnA Maker Knowledge Base. You select this when creating the QnA Maker resource.
 
-   ![The Keys and endpoint blade in Azure](./media/adaptive-dialogs/qna-maker-keys-and-endpoint.png)
+   ![The Keys and endpoint blade in Azure](./media/adaptive-dialogs/qna-maker-keys-and-endpoint-cross-trainsample.png)
 
 ## Install the Bot Framework CLI
 
@@ -124,20 +124,19 @@ The QnA Maker resource includes information your bot will use to access your QnA
 
 <!-- ### Create your cross-trained LUIS models -->
 
-Before running the build command to create your LUIS application in Azure cognitive services, you need to modify your `.lu` files to include the information required to enable it to defer user input to QnA Maker which it does be creating a new `DeferToRecognizer` intent which is created using the following format: `DeferToRecognizer_<recognizer-type>_<dialog-name>`. For example, in **RootDialog.lu** the new intent would be `DeferToRecognizer_QnA_RootDialog`, and it will contain the questions from **RootDialog.qna** as well as  **ChitChat.qna**, the file it references, as its user utterances. When a user asks any of these questions the bot will direct it to the [QnA Maker Recognizer][qna-maker-recognizer] for processing
+Before running the build command to create your LUIS application in Azure cognitive services, you need to modify your `.lu` files to include the information required to enable it to defer user input to QnA Maker which it does by creating a new `DeferToRecognizer` intent which is created using the following format: `DeferToRecognizer_<recognizer-type>_<dialog-name>`. For example, in **RootDialog.lu** the new intent would be `DeferToRecognizer_QnA_RootDialog`, and it will contain the questions from **RootDialog.qna** as its user utterances. When a user asks any of these questions the bot will direct it to the [QnA Maker Recognizer][qna-maker-recognizer] for processing. Note also that **RootDialog.qna** references **ChitChat.qna**, and the contents of that referenced file will also be included in the new cross-trained **RootDialog.lu** file.
 
 To create the cross-trained `.lu` files, you use the BF CLI `luis:cross-train` command:
 
 ``` cli
 bf luis:cross-train -i <input-folder-name> -o <output-file-name> --config <cross-train-configuration-file>
 ```
-<!-- "--intentName <intent-Name>" (What is this used for?)  -->
 
 #### The luis:cross-train parameters
 
 - `in`: The directory, including sub-directories, that will be searched for both `.lu` and `.qna` files.
 - `out`: The directory to save the new cross-trained `.lu` output files to. This is where the luis:build option will point to in its `--in` option.
-- `config`: A cross-train configuration file is a JSON file that is necessary for the command to work. Here is an example cross-train configuration:
+- `config`: A cross-train configuration file is a JSON file that is necessary for the command to work. Here is an example cross-train configuration file for the **Todo bot with LUIS and QnA Maker** sample:
 
     ```json
     {
@@ -160,13 +159,11 @@ bf luis:cross-train -i <input-folder-name> -o <output-file-name> --config <cross
     }
     ```
 
-<!--
-## Create your cross-trained QnA Maker models
+> [!IMPORTANT]
+>
+> You need to run either the `luis:cross-train` command or the `qnamaker:cross-train` command, not both. by running `luis:cross-train`, all of the required cross-train information will be included in the resulting `.lu` files. Running both will work, but is unnecessary.
 
-TBD
--->
-
-## Create a LUIS application and publish it to production using the build command
+## Create and publish LUIS applications using the build command
 
 For each `.lu` file, including `.lu` files for each locale, the build command combines all the following actions into a single command:
 
@@ -228,7 +225,7 @@ bf luis:build --luConfig luconfig.json
 
 For a detailed explanation on how to use the `luis:build` command, see [Deploy LUIS applications using the Bot Framework luis CLI commands][luis-build].
 
-## Create a QnA Maker knowledge base and publish it to production using the build command
+## Create and publish QnA Maker knowledge bases using the build command
 
 The QnAMaker build command combines all the following actions into a single command:
 
@@ -314,7 +311,7 @@ The configuration file **appsettings.json** explained:
 
 ![The appsettings.json file](./media/appsettings.json.png)
 
-1. For instructions on how to get the `MicrosoftAppId` and `MicrosoftAppPassword` see the [Bot channels registration][bot-channels-registration] article.
+1. The [Bot channels registration][bot-channels-registration] article details how to get the `MicrosoftAppId` and `MicrosoftAppPassword` values.
 2. The ***LuisAPIKey*** is the `subscriptionKey`, and the ***LuisAPIHostName*** is the `ENDPOINT` value. Both values are found in _Keys and Endpoint_ blade in the Azure cognitive services LUIS authoring resource page as shown in the screen shot below:
 
    ![The Keys and endpoint blade in Azure](./media/adaptive-dialogs/keys-and-endpoint-cross-train.png)
@@ -352,7 +349,7 @@ The configuration file **.env** explained:
 
 ![The .env file](./media/adaptive-dialogs/env.png)
 
-1. For instructions on how to get the `MicrosoftAppId` and `MicrosoftAppPassword` see the [Bot channels registration][bot-channels-registration] article.
+1. The [Bot channels registration][bot-channels-registration] article details how to get the `MicrosoftAppId` and `MicrosoftAppPassword` values.
 2. The ***LuisAPIKey*** is the `subscriptionKey`, and the ***LuisAPIHostName*** is the `ENDPOINT` value. Both values are found in _Keys and Endpoint_ blade in the Azure cognitive services LUIS authoring resource page as shown in the screen shot below:
 
    ![The Keys and endpoint blade in Azure](./media/adaptive-dialogs/keys-and-endpoint-cross-train.png)
@@ -368,6 +365,93 @@ The configuration file **.env** explained:
 ---
 
 ## Testing the bot using Bot Framework Emulator
+
+# [C#](#tab/csharp)
+
+## Prerequisites
+
+- [Visual Studio 2019 or later](https://www.visualstudio.com/downloads) or [Visual Studio Code](https://code.visualstudio.com/Download)
+- [.NET Core 3.1](https://dotnet.microsoft.com/download)
+- The [Todo bot with LUIS and QnA Maker](https://aka.ms/cs-adaptive-multi-turn-sample) sample.
+- [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
+
+## Build and run the bot locally
+
+To run your bot locally, execute the commands shown below.
+
+1. From a terminal, navigate to `samples\csharp_dotnetcore\adaptive-dialog\08.todo-bot-luis-qnamaker`
+
+1. Run the bot.
+
+   ```cmd
+      dotnet run
+   ```
+
+This will build the application, deploy it to localhost, and launch the web browser to display the application's `default.htm` page. At this point, your bot should be running locally on port 3978, unless the `applicationUrl` setting in **launchSettings.json** was modified.
+
+## Start the Emulator and connect to your bot
+
+1. Start the Bot Framework Emulator.
+
+1. Click **Open Bot** on the Emulator's **Welcome** tab.
+
+1. Enter your bot's URL, which is the URL of the local port, with /api/messages added to the path, typically `http://localhost:3978/api/messages`.
+
+   <!--This is the same process in the Emulator for all three languages.-->
+   ![open a bot screen](../media/python/quickstart/open-bot.png)
+
+1. Then click **Connect**.
+
+You can now interact with your bot.
+
+# [JavaScript](#tab/javascript)
+
+- [Node.js](https://nodejs.org/)
+- [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
+- Knowledge of [restify](http://restify.com/) and asynchronous programming in JavaScript
+- [Visual Studio Code](https://www.visualstudio.com/downloads) or your favorite IDE, if you want to edit the bot code.
+
+> [!NOTE]
+> The install of Windows build tools listed below is only required if you use Windows as your development operating system.
+> For some installations the install step for restify is giving an error related to node-gyp.
+> If this is the case you can try running this command with elevated permissions.
+> This call may also hang without exiting if python is already installed on your system:
+
+> ```bash
+> # only run this command if you are on Windows. Read the above note.
+> npm install -g windows-build-tools
+> ```
+
+## Start your bot
+
+To run your bot locally, execute the commands shown below.
+
+1. From a terminal, navigate to `samples\csharp_dotnetcore\adaptive-dialog\08.todo-bot-luis-qnamaker`
+
+1. Run the bot.
+
+   ```bash
+      npm start
+   ```
+
+At this point, your bot is running locally on port 3978.
+
+## Start the Emulator and connect your bot
+
+1. Start the Bot Framework Emulator.
+
+2. Click **Open Bot** on the Emulator's **Welcome** tab.
+
+3. Enter your bot's URL, which is the URL of the local port, with /api/messages added to the path, typically `http://localhost:3978/api/messages`.
+
+   <!--This is the same process in the Emulator for all three languages.-->
+   ![open a bot screen](../media/python/quickstart/open-bot.png)
+
+4. Then click **Connect**.
+
+You can now interact with your bot.
+
+---
 
 <!------------------------------------------------------------------------------------------------------------------>
 <!------------------------------------------------------------------------------------------------------------------>
@@ -393,10 +477,12 @@ The configuration file **.env** explained:
 [create-cognitive-services-luis]: https://portal.azure.com/#create/Microsoft.CognitiveServicesLUISAllInOne
 [create-cognitive-services-qnamaker]: https://portal.azure.com/#create/Microsoft.CognitiveServicesQnAMaker
 
+[bf-qnamakerbuild]: https://aka.ms/botframework-cli#bf-qnamakerbuild
 [qna-build]: bot-builder-howto-bf-cli-deploy-qna.md#create-a-qna-maker-knowledge-base-and-publish-it-to-production-using-the-build-command
 [qna-maker-knowledge-bases-created]: bot-builder-howto-bf-cli-deploy-qna.md#qna-maker-knowledge-bases-created
 [create-your-qna-maker-initialization-file]: bot-builder-howto-bf-cli-deploy-qna.md#create-your-qna-maker-initialization-file
 
+[bf-luisbuild]: https://aka.ms/botframework-cli#bf-luisbuild
 [luis-build]: bot-builder-howto-bf-cli-deploy-luis.md#create-and-train-a-luis-app-then-publish-it-using-the-build-command
 
 [how-to-update-using-luis-cli]: bot-builder-howto-bf-cli-update-luis.md
