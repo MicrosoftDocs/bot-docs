@@ -15,10 +15,11 @@ monikerRange: 'azure-bot-service-4.0'
 [!INCLUDE[applies-to](../includes/applies-to.md)]
 
 An activity handler is one way to organize the conversational logic for your bot.
+When the bot receives an activity, it has an *activity handler* that can handle that specific activity type. Under the covers, there is one base handler called the *turn handler*. All activities get routed through there. That turn handler then calls the individual activity handler for whatever type of activity it received.
 
-When the bot receives an activity, it passes it on to its *activity handlers*. Under the covers, there is one base handler called the *turn handler*. All activities get routed through there. That turn handler then calls the individual activity handler for whatever type of activity it received.
+For example, if the bot receives a message activity, the turn handler would see that incoming activity and send it to the _on message activity_ activity handler. When building your bot, your bot logic for handling and responding to messages will go in this _on message activity_ handler. Likewise, your logic for handling members being added to the conversation will go in your _on members added_ handler, which is called whenever a member is added to the conversation.
 
-For example, if the bot receives a message activity, the turn handler would see that incoming activity and send it to the _on message activity_ activity handler.When building your bot, your bot logic for handling and responding to messages will go in this _on message activity_ handler. Likewise, your logic for handling members being added to the conversation will go in your _on members added_ handler, which is called whenever a member is added to the conversation.
+For other ways to organize your bot logic, see the [bot logic](bot-builder-basics.md#the-bot-logic) section in **how bots work**.
 
 # [C#](#tab/csharp)
 

@@ -145,10 +145,14 @@ For more details, see the Bot Framework SDK repository's table of [channels and 
 The bot contains the conversational reasoning or logic for a turn. The SDK provides a few ways to organize the bot logic.
 
 - Use an _activity handler_ and implement handlers for each activity type or sub-type your bot will recognize and react to.
+  See [about activity handlers](bot-activity-handler-concept.md) for more information.
   - Use the _Teams activity handler_ to create bots that can connect to the Teams channel. (The Teams channel requires the bot to handle some channel-specific behavior.)
+    See [how bots for Microsoft Teams work](bot-builder-basics-teams.md) for more information.
 - Use dialogs to manage a long-running conversation with the user.
   - Use an activity handler and a _component dialog_. Component dialogs use a sequence model for conversations.
+    See [about component and waterfall dialogs](bot-builder-concept-waterfall-dialogs.md) for more information.
   - Use a _dialog manager_ and an _adaptive dialog_. Adaptive dialogs use a flexible model for conversations to handle a wider range of user interaction. Your bot class can forward activities to the dialog manager directly or pass them through an activity handler first.
+    See the [introduction to adaptive dialogs](bot-builder-adaptive-dialog-introduction.md) for more information.
 - Implement your own bot class and provide your own logic for handling each turn.
 
 ## The activity processing stack
