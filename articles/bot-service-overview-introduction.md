@@ -20,9 +20,11 @@ ms.date: 11/15/2019
 
 The Bot Framework, along with the Azure Bot Service, provides tools to build, test, deploy, and manage intelligent bots, all in one place. The Bot Framework includes a modular and extensible SDK for building bots, as well as tools, templates, and related AI services. With this framework, developers can create bots that use speech, understand natural language, handle questions and answers, and more.
 
-<!-- [Azure] Bot Service - The service that accelerates the process of developing a bot. It provisions a web host with one of five bot templates that can be modified in an integrated environment. -->
-<!-- bot service - An instance created by the user using Azure Bot Service. -->
-<!-- [Microsoft] Bot Framework - The comprehensive offering to build and deploy high quality bots for users to enjoy wherever they are talking. Users can start conversations with your bot from any channel that you’ve configured your bot to work on, such as SMS, Skype, Slack, Facebook, and other popular services. -->
+<!--
+    - [Azure] Bot Service - The service that accelerates the process of developing a bot. It provisions a web host with one of five bot templates that can be modified in an integrated environment.
+    - bot service - An instance created by the user using Azure Bot Service.
+    - [Microsoft] Bot Framework - The comprehensive offering to build and deploy high quality bots for users to enjoy wherever they are talking. Users can start conversations with your bot from any channel that you’ve configured your bot to work on, such as SMS, Skype, Slack, Facebook, and other popular services.
+-->
 
 ## What is a bot?
 
@@ -30,6 +32,8 @@ Bots provide an experience that feels less like using a computer and more like d
 
 > [!div class="mx-imgBorder"]
 > ![A remote bot interacts with a user on a device via text, speech, images, or video](./media/architecture/what-is-a-bot.png)
+
+<!-- Tie the wording of the boxes to the content of this article. -->
 
 Bots are a lot like modern web applications, living on the internet and use APIs to send and receive messages. What's in a bot varies widely depending on what kind of bot it is. Modern bot software relies on a stack of technology and tools to deliver increasingly complex experiences on a wide variety of platforms. However, a simple bot could just receive a message and echo it back to the user with very little code involved.
 

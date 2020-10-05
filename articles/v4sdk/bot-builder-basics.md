@@ -20,6 +20,8 @@ The Bot Framework Service, which is a component of the Azure Bot Service, sends 
 
 ![activity diagram](./media/bot-builder-activity.png)
 
+<!-- Tie the wording of the boxes to the content of this article. -->
+
 Two activity types illustrated here are: *conversation update* and *message*.
 
 The Bot Framework Service may send a conversation update when a party joins the conversation. For example, on starting a conversation with the Bot Framework Emulator, you will see two conversation update activities (one for the user joining the conversation and one for the bot joining). To distinguish these conversation update activities, check who is included in the *members added* property of the activity.

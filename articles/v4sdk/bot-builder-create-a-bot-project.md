@@ -1,6 +1,6 @@
 ---
-title: How to create a basic bot project - Bot Service
-description: Learn how to create an echo bot project in the Bot Framework SDK. Learn about common aspects of bot code.
+title: How bot projects are structured - Bot Service
+description: Learn about how bot projects are structured in the Bot Framework SDK. Learn about common aspects of bot code.
 author: JonathanFingold
 ms.author: v-jofin
 manager: kamrani
@@ -10,9 +10,12 @@ ms.date: 09/24/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# How to create a basic bot project
+# About the structure of a bot project
 
 [!INCLUDE[applies-to](../includes/applies-to.md)]
+
+The Bot Framework templates and samples are written for ASP.NET (C#), Restify (JavaScript), and aiohttp (Python).
+However, the web service features are not part of the Bot Framework SDK, but part of the web framework you choose to use.
 
 All bot applications share some common features.
 This article describes these features:
@@ -23,9 +26,6 @@ This article describes these features:
 | Messaging endpoint | The web app needs to implement a messaging endpoint on which to receive activities and forward activities to the bot adapter. |
 | Bot adapter | The adapter receives activities from the messaging endpoint, forwards them to the bot's turn handler, and catches any errors or exceptions the bot's logic doesn't catch. |
 | Bot object | The bot object handles the bot's reasoning or logic for the turn. |
-
-The Bot Framework templates and samples are written for ASP.NET (C#), Restify (JavaScript), and aiohttp (Python).
-However, the web service features are part of the web framework you choose to use and not part of the Bot Framework SDK.
 
 You can create an echo bot from the templates, as described in the quickstarts (for [**C#**](../dotnet/bot-builder-dotnet-sdk-quickstart.md), [**JavaScript**](../javascript/bot-builder-javascript-quickstart.md), or [**Python**](../python/bot-builder-python-quickstart.md)), or you can copy an echo bot project from the [Microsoft/BotBuilder-Samples](https://github.com/Microsoft/BotBuilder-Samples) repository.
 
