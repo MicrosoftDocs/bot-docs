@@ -12,7 +12,7 @@ ms.date: 08/7/2019
 
 # Connect a bot to Direct Line
 
-This article describes the **Direct Line channel**. You use it to allow your own client application to communicate with a bot.
+This article describes the **Direct Line channel**. You use this channel to allow your own client application to communicate with a bot.
 
 ## Add the Direct Line channel
 
@@ -37,16 +37,15 @@ The first thing you must do is to add the Direct Line channel to the bot.
 
 1. Click **Done**.
 
-
 ## Manage secret keys
 
-When your site is created, the Bot Framework generates secret keys that your client application can use to authenticate the Direct Line API requests that it issues to communicate with your bot. For more information, see [Authentication](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md).
+When you add the Direct Channel, the Bot Framework generates secret keys. Your client application uses these keys to authenticate the Direct Line API requests that it issues to communicate with a bot. For more information, see [Authentication](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md).
 
-1. To view a key in plain text, click **Show** for the corresponding key.
+1. In *Configure Direct Line*, to view a key in plain text, click **Show** for the corresponding key.
 
     ![Show Direct Line key](media/bot-service-channel-connect-directline/directline-showkey.png)
 
-1. Copy and securely store the key that is shown. Then use the key to [authenticate](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md) the Direct Line API requests that your client issues to communicate with your bot.
+1. Copy and securely store the key. Use the key to [authenticate](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md) the Direct Line API requests that your client application issues to communicate with a bot.
 
     ![Copy Direct Line key](media/bot-service-channel-connect-directline/directline-copykey.png)
 
@@ -54,9 +53,7 @@ When your site is created, the Bot Framework generates secret keys that your cli
 
 ## Configure settings
 
-Finally, configure settings for the site.
-
-1. Select the Direct Line protocol version that your client application will use to communicate with your bot.
+1. Select the Direct Line protocol version that your client application will use to communicate with a bot.
 
     > [!TIP]
     > If you are creating a new connection between your client application and bot, use Direct Line API 3.0.
