@@ -3,11 +3,11 @@ title: Connect a bot to Direct Line - Bot Service
 description: Learn how to configure bots to communicate with client applications. See how to use the Direct Line channel for this purpose.
 keywords: direct line, bot channels, custom client, connect to channels, configure
 author: RobStand
-ms.author: kamrani
+ms.author: v-mimiel
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 08/7/2019
+ms.date: 10/06/2020
 ---
 
 # Connect a bot to Direct Line
