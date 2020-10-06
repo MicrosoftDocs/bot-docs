@@ -11,6 +11,11 @@ ms.date: 11/22/2019
 ---
 # Connect a bot to Cortana
 
+> [!IMPORTANT]
+> **The Cortana channel has been retired for third-party developers on September 7, 2020.**
+>
+> The Cortana skills kit for Consumer has been retired and it stopped accepting new bots on September 7, 2020. The Cortana skills kit for Enterprise is currently still available for TAP customers only.  [Learn more](https://docs.microsoft.com/en-us/cortana/skills/third-party-deprecation).
+
 Cortana is a speech-enabled channel that can send and receive voice messages in addition to textual conversation. A bot intended to connect to Cortana should be designed for speech as well as text. A Cortana *skill* is a bot that can be invoked using a Cortana client. Publishing a bot adds the bot to the list of available skills.
 
 To add the Cortana channel, open the bot in the [Azure Portal](https://portal.azure.com/), click the **Channels** blade, and then click **Cortana**.
