@@ -67,7 +67,7 @@ When you have the **enhanced authentication enabled**, you will see the followin
 
 ## Example
 
-You can download .NET example from this location: [Direct Line Bot Sample](https://github.com/microsoft/BotFramework-DirectLine-DotNet/tree/master/samples/core-DirectLine).
+You can download a .NET example from this location: [Direct Line Bot Sample](https://github.com/microsoft/BotFramework-DirectLine-DotNet/tree/master/samples/core-DirectLine).
 
 The example contains two projects:
 
@@ -85,7 +85,7 @@ The example contains two projects:
     }
     ```
 
-- In the Azure portal, enable Direct Line in the channels list and then, configure the Direct Line secret. Make sure that the checkbox for version 3.0 is checked. in the console client project update `App.config` file with the Direct Line secret ket and the bot handle (Bot Id).
+- In the Azure portal, enable Direct Line in the channels list and then, configure the Direct Line secret. Make sure that the checkbox for version 3.0 is checked. In the console client project update the `App.config` file with the Direct Line secret ket and the bot handle (Bot Id).
 
     ```json
     {
