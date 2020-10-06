@@ -64,3 +64,63 @@ When you have the **enhanced authentication enabled**, you will see the followin
 
 - If you configure trusted origins as part of the configuration UI page, then these will **always** be used as the only set. Sending no or additional trusted origins when generating a token or starting a conversation will be ignored (i.e. they are **not appended** to the list or cross validated).
 - If you have not configured trusted origins as part of the configuration UI, then any value you send as part of the API calls will be used.
+
+## Example
+
+You can download .NET example from this location: [Direct Line Bot Sample](https://github.com/microsoft/BotFramework-DirectLine-DotNet/tree/master/samples/core-DirectLine).
+
+The example contains two projects:
+
+- [DirectLineBot](https://github.com/microsoft/BotFramework-DirectLine-DotNet/tree/master/samples/core-DirectLine/DirectLineBot). It creates a bot to connect via a Direct Line channel.
+- [DirectLineClient](https://github.com/microsoft/BotFramework-DirectLine-DotNet/tree/master/samples/core-DirectLine/DirectLineClient). This is a console application that talks to the previous bot via Direct Line channel.
+
+### Direct Line API
+
+- Credentials for the Direct Line API must be obtained from the Bot Channels Registration in the Azure portal, and will only allow the caller to connect to the bot for which they were generated. In the bot project, update the `appsettings.json` file with these values.
+
+    ```csharp
+    {
+    "MicrosoftAppId": "",
+    "MicrosoftAppPassword": ""
+    }
+    ```
+
+- In the Azure portal, enable Direct Line in the channels list and then, configure the Direct Line secret. Make sure that the checkbox for version 3.0 is checked. in the console client project update `App.config` file with the Direct Line secret ket and the bot handle (Bot Id).
+
+    ```json
+    {
+    <configuration>
+        <appSettings>
+        <add key="DirectLineSecret" value="YourBotDirectLineSecret" />
+        <add key="BotId" value="YourBotHandle" />
+    </appSettings>
+    }
+    ```
+
+User messages are sent to the Bot using the Direct Line Client `Conversations.PostActivityAsync` method using the `ConversationId` generated previously.
+
+```csharp
+while (true)
+{
+    string input = Console.ReadLine().Trim();
+
+    if (input.ToLower() == "exit")
+    {
+        break;
+    }
+    else
+    {
+        if (input.Length > 0)
+        {
+            Activity userMessage = new Activity
+            {
+                From = new ChannelAccount(fromUser),
+                Text = input,
+                Type = ActivityTypes.Message
+            };
+
+            await client.Conversations.PostActivityAsync(conversation.ConversationId, userMessage);
+        }
+    }
+}
+```
