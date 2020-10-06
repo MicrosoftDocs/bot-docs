@@ -2,23 +2,25 @@
 title: Create a bot with Azure Bot Service - Bot Service
 description: Learn how to create a bot with Bot Service, an integrated, dedicated bot development environment.
 keywords: Quickstart, create bot, bot service, web app bot
-ms.author: kamrani
+author: mmiele
+ms.author: v-mimiel
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 01/09/2020
+ms.date: 09/30/2020
 ---
 
 # Create a bot with Azure Bot Service
 
 [!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
-Azure Bot Service provides the core components for creating bots, including the Bot Framework SDK for developing bots and the bot service for connecting bots to channels. In the topic, you'll be able to choose either .NET or Node.js template to create a bot using the Bot Framework SDK v4.
+Azure Bot Service provides the core components for creating bots, including the Bot Framework SDK for developing bots and the bot service for connecting bots to channels.
+This article shows how to create a bot using the Bot Framework SDK v4 and choosing either .NET or Node.js template.
 
-There are 2 ways to register a bot with Azure:
+You have two approaches to create a bot with Azure:
 
-1. Following the steps in this article, the bot is created on and registered with Azure and a Web application is created to host the bot. You use this approach if you develop and host a bot in Azure.
-1. To create and develop your bot locally, follow the steps in the [Register a bot with Azure Bot Service](~/bot-service-quickstart-registration.md) article. When you register your bot, you supply the web address where your bot is hosted. You can still host it in Azure.
+1. **Web App**. Create a bot and register it with Azure using a Web application as shown in this article. You use this approach if you develop and host a bot in Azure.
+1. **Bot channels registration**. Create and develop your bot locally and host it on a platform different from Azure. When you register your bot, you provide the web address where your bot is hosted. You can still host it in Azure. Follow the steps described in the [Bot channels registration](~/bot-service-quickstart-registration.md) article.
 
 [!INCLUDE [Azure vs local development](~/includes/snippet-quickstart-paths.md)]
 
@@ -29,14 +31,18 @@ There are 2 ways to register a bot with Azure:
 ### Create a new bot service
 
 1. Log in to the [Azure portal](https://portal.azure.com/).
-1. Click **Create new resource** link found on the upper left-hand corner of the Azure portal, then select **AI + Machine Learning** > **Web App bot**.
+1. Click **Create a resource** link found in the upper left-hand corner of the Azure portal.
+1. In the search box enter *bot* and in the drop-down list select **Web App Bot**.
 
-![create bot](../media/azure-bot-quickstarts/abs-create-blade.png)
+    ![web app bot](../media/azure-bot-quickstarts/web-app-bot.png)
 
-2. A *new blade* will open with information about the **Web App Bot**.
+1. In the **Web App Bot** page, click the **Create** button.
 
-3. In the **Bot Service** blade, provide the requested information about your bot as specified in the table below the image.  <br/>
- ![Create Web App Bot blade](../media/azure-bot-quickstarts/sdk-create-bot-service-blade.png)
+    ![web app bot create](../media/azure-bot-quickstarts/web-app-bot-create.png)
+
+1. In the **Web App Bot** form, provide the requested information about your bot as specified in the table below the image.
+
+    ![Create Web App Bot blade](../media/azure-bot-quickstarts/sdk-create-bot-service-blade.png)
 
  | Setting | Suggested value | Description |
  | ---- | ---- | ---- |
@@ -54,14 +60,14 @@ There are 2 ways to register a bot with Azure:
 
 4. Click **Create** to create the service and deploy the bot to the cloud. This process may take several minutes.
 
-Confirm that the bot has been deployed by checking the **Notifications**. The notifications will change from **Deployment in progress...** to **Deployment succeeded**. Click **Go to resource** button to open the bot's resources blade.
+Confirm that the bot has been deployed by checking the **Notifications**. The notifications will change from **Deployment in progress...** to **Deployment succeeded**. Click **Go to resource** link to open the bot's resources page.
 
 Now that your bot is created, test it in Web Chat.
 
 ## Test the bot
 In the **Bot Management** section, click **Test in Web Chat**. Azure Bot Service will load the Web Chat control and connect to your bot.
 
-![Azure Webchat test](../media/azure-bot-quickstarts/azure-webchat-test.png)
+![web app bot test](../media/azure-bot-quickstarts/web-app-bot-test.png)
 
 Enter a message and your bot should respond.
 
