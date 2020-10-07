@@ -47,6 +47,7 @@ This article describes how to create a bot that is cross trained to use both LUI
 1. [Create your LUIS authoring resource in Azure Cognitive Services](#create-your-luis-authoring-resource-in-azure)
 1. [Create your QnA Maker resource in Azure Cognitive Services](#create-your-qna-maker-resource-in-azure-cognitive-services)
 1. [Install the Bot Framework SDK CLI](#install-the-bot-framework-sdk-cli)
+<!--1. [Create the schema file](#create-the-schema-file)-->
 1. [Generate cross-trained LU models](#generate-cross-trained-lu-models)
 1. [Create and publish LUIS applications using the build command](#create-and-publish-luis-applications-using-the-build-command)
 1. [Create and publish QnA Maker knowledge bases using the build command](#create-and-publish-qna-maker-knowledge-bases-using-the-build-command)
@@ -55,7 +56,7 @@ This article describes how to create a bot that is cross trained to use both LUI
 
 ## The Todo bot with LUIS and QnA Maker sample
 
-The adaptive **Todo bot with LUIS and QnA Maker** ([**C#**](https://aka.ms/cs-adaptive-multi-turn-sample)) sample has five `.lu` files, five `.qna` files and six `.lg` files. When creating the cross-trained language understanding models you will combine the `.lu` and `.qna` files in a way that will enable you to utilize the capabilities of both LUIS and QnA Maker together in the same recognizer, enabling you to train the recognizer how best to interpret and respond to a users request. After running the cross-train command you will have the same number of each file, but they will be updated so that the `.lu` file contains the required `.qna` information and the `.qna` files contains the required `.lu` information to enable the [Cross-trained recognizer set][crosstrainedrecognizerset] to work.
+The adaptive **Todo bot with LUIS and QnA Maker** ([**C#**](https://aka.ms/cs-adaptive-multi-turn-sample)) sample has five `.lu` files, six `.qna` files and six `.lg` files. When creating the cross-trained language understanding models you will combine the `.lu` and `.qna` files in a way that will enable you to utilize the capabilities of both LUIS and QnA Maker together in the same recognizer, enabling you to train the recognizer how best to interpret and respond to a users request. After running the cross-train command you will have the same number of each file, but they will be updated so that the `.lu` file contains the required `.qna` information and the `.qna` files contains the required `.lu` information to enable the [Cross-trained recognizer set][crosstrainedrecognizerset] to work.
 
 To clone the samples repository, enter the following git command from a console window: `git clone https://github.com/Microsoft/botbuilder-samples.git`
 
@@ -126,7 +127,7 @@ The QnA Maker resource includes information your bot will use to access your QnA
 
 Before running the build command to create your LUIS application in Azure cognitive services, you need to modify your `.lu` files to include the information required to enable it to defer user input to QnA Maker which it does by creating a new `DeferToRecognizer` intent which is created using the following format: `DeferToRecognizer_<recognizer-type>_<dialog-name>`. For example, in **RootDialog.lu** the new intent would be `DeferToRecognizer_QnA_RootDialog`, and it will contain the questions from **RootDialog.qna** as its user utterances. When a user asks any of these questions the bot will direct it to the [QnA Maker Recognizer][qna-maker-recognizer] for processing. Note also that **RootDialog.qna** references **ChitChat.qna**, and the contents of that referenced file will also be included in the new cross-trained **RootDialog.lu** file.
 
-To create the cross-trained `.lu` files, you use the BF CLI `luis:cross-train` command:
+To create the cross-trained files, both `.lu`  and `.qna`, you can use either the BF CLI `luis:cross-train` or `qnamaker:cross-train` commands. The following demonstrates using the `luis:cross-train` command:
 
 ``` cli
 bf luis:cross-train -i <input-folder-name> -o <output-file-name> --config <cross-train-configuration-file>
@@ -135,7 +136,7 @@ bf luis:cross-train -i <input-folder-name> -o <output-file-name> --config <cross
 #### The luis:cross-train parameters
 
 - `in`: The directory, including sub-directories, that will be searched for both `.lu` and `.qna` files.
-- `out`: The directory to save the new cross-trained `.lu` output files to. This is where the luis:build option will point to in its `--in` option.
+- `out`: The directory to save the new cross-trained `.lu` output files to. This is where the `luis:build` option will point to in its `--in` option.
 - `config`: A cross-train configuration file is a JSON file that is necessary for the command to work. Here is an example cross-train configuration file for the **Todo bot with LUIS and QnA Maker** sample:
 
     ```json
@@ -159,9 +160,29 @@ bf luis:cross-train -i <input-folder-name> -o <output-file-name> --config <cross
     }
     ```
 
+#### Cross-train the _Todo bot with LUIS and QnA Maker_ sample
+
+To cross-train the **Todo bot with LUIS and QnA Maker** sample:
+
+1. From a terminal, navigate to `samples\csharp_dotnetcore\adaptive-dialog\08.todo-bot-luis-qnamaker`
+
+1. Create a new directory named _generated_
+
+   ```cmd
+      md generated
+   ```
+
+1. Run the `luis:cross-train` command.
+
+   ```cmd
+      bf luis:cross-train -i dialogs -o generated --config dialogs\DialogLuHierarchy.config.json
+   ```
+
+Once finished you will have cross-trained versions of the five `.lu` files and six `.qna` files. When running the build commands in the following sections, point to the generated directory for the input files.
+
 > [!IMPORTANT]
 >
-> You need to run either the `luis:cross-train` command or the `qnamaker:cross-train` command, not both. by running `luis:cross-train`, all of the required cross-train information will be included in the resulting `.lu` files. Running both will work, but is unnecessary.
+> You need to run either the `luis:cross-train` command or the `qnamaker:cross-train` command, you do not need to run both. by running `luis:cross-train`, all of the required cross-train information will be included in the resulting `.lu` files. Running both will work, but is unnecessary.
 
 ## Create and publish LUIS applications using the build command
 
@@ -202,18 +223,12 @@ The following is a sample of the **luconfig.json** file that you can reference u
 
 ```json
 {
-    "in": "dialogs",
-    "out": "generated",
-    "botName":"MyProject",
-    "AuthoringKey":"<your-32-digit-subscription-key>",
-    "region": "westus",
-    "schema": "app.schema",
-    "defaultCulture":"en-us",
-    "deleteOldVersion": true,
-    "dialog": "multiLanguage",
-    "fallbackLocale": "en-us",
-    "force": true,  
-    "suffix": "<value-to-replace-username>"
+    "in": "generated",
+    "out": "output",
+    "botName":"<your-bot-name>",
+    "authoringKey":"<your-32-digit-subscription-key>",
+	 "endpoint":"<your-endpoint>",
+    "region": "<your-region-default-is-westus>"
 }
 ```
 
@@ -225,9 +240,48 @@ bf luis:build --luConfig luconfig.json
 
 For a detailed explanation on how to use the `luis:build` command, see [Deploy LUIS applications using the Bot Framework luis CLI commands][luis-build].
 
+#### Create the LUIS applications for the _Todo bot with LUIS and QnA Maker_ sample
+
+To create the LUIS applications for the **Todo bot with LUIS and QnA Maker** sample:
+
+1. From a terminal, navigate to `samples\csharp_dotnetcore\adaptive-dialog\08.todo-bot-luis-qnamaker`
+
+1. Create a new directory named _output_
+
+   ```cmd
+      md output
+   ```
+
+1. Create your **luconfig.json** file, as shown in the previous section and save it to the root directory of the sample: `samples\csharp_dotnetcore\adaptive-dialog\08.todo-bot-luis-qnamaker`. Make sure and update the entries for the "botName", "authoringKey" and "region" options:
+
+    ```json
+    {
+        "in": "generated",
+        "out": "output",
+        "botName":"Todo bot with LUIS and QnA Maker",
+        "authoringKey":"<your-32-digit-subscription-key>",
+    	  "endpoint":"<your-endpoint>",
+        "region": "<your-region-default-is-westus>"
+    }
+    ```
+
+1. Run the `luis:build` command, using the luConfig file.
+
+   ```cmd
+      bf luis:build --luConfig luconfig.json
+   ```
+
+Once finished you will have a LUIS application for each of the five `.lu` files in [LUIS](https://www.luis.ai/applications):
+
+![LUIS My apps list](./media/adaptive-dialogs/luis-apps-list.png)
+
+> [!TIP]
+>
+> The `luis:build` command will save a file named **luis.settings.YourUserName.westus.json** to the output directory. This file contains the LUIS application IDs that you will need to add to your configuration file, described in a [later section](#update-your-project's-configuration-file-to-include-connection-information-for-luis-and-qna-maker).
+
 ## Create and publish QnA Maker knowledge bases using the build command
 
-The QnAMaker build command combines all the following actions into a single command:
+The qnamaker build command combines all the following actions into a single command:
 
 1. Creates one QnA Maker model for every locale found using your existing `.qna` files.
 1. Creates a new QnA Maker KB if none exists, otherwise it will overwrite the existing KB.
@@ -280,6 +334,45 @@ bf qnamaker:build --qnaConfig qnaConfig.json
 
 For a detailed explanation on how to use the `qnamaker:build` command, see [Deploy QnA Maker knowledge base using the Bot Framework qnamaker CLI commands][qna-build].
 
+#### Create the QnA Maker knowledge base for the _Todo bot with LUIS and QnA Maker_ sample
+
+To create the QnA Maker knowledge base for the **Todo bot with LUIS and QnA Maker** sample:
+
+1. From a terminal, navigate to `samples\csharp_dotnetcore\adaptive-dialog\08.todo-bot-luis-qnamaker`
+
+1. If it does not already exist, create a new directory named _output_
+
+   ```cmd
+      md output
+   ```
+
+1. Create your **qnaConfig.json** file, as shown in the previous section and save it to the root directory of the sample: `samples\csharp_dotnetcore\adaptive-dialog\08.todo-bot-luis-qnamaker`. Make sure and update the entries for the "botName", "subscriptionKey" and "region" options:
+
+    ```json
+    {
+        "in": "generated",
+        "out": "output",
+        "botName":"<Todo-bot-with-LUIS-and-QnA-Maker>",
+        "subscriptionKey":"<your-32-digit-subscription-key>",
+        "region": "<your-region-default-is-westus>"
+    }
+    ```
+
+
+1. Run the `qnamaker:build` command, using the qnaConfig file.
+
+   ```cmd
+      bf qnamaker:build --qnaConfig qnaConfig.json
+   ```
+
+Once finished you will have a QnA Maker knowledge base with all of the questions and answers from the five `.qna` files in [QnA Maker](https://www.qnamaker.ai/Home/MyServices):
+
+![QnA Maker KB list](./media/adaptive-dialogs/qna-maker-kb-list.png)
+
+> [!TIP]
+>
+> The `qnamaker:build` command will save a file named **qnamaker.settings.YourUserName.westus.json** to the output directory. This file contains the knowledge base ID that you will need to add to your configuration file, described in the next section.
+
 ## Update your project's configuration file to include connection information for LUIS and QnA Maker
 
 # [C#](#tab/csharp)
@@ -311,7 +404,7 @@ The configuration file **appsettings.json** explained:
 
 ![The appsettings.json file](./media/appsettings.json.png)
 
-1. The [Bot channels registration][bot-channels-registration] article details how to get the `MicrosoftAppId` and `MicrosoftAppPassword` values.
+1. The [Bot channels registration][bot-channels-registration] article details how to get the `MicrosoftAppId` and `MicrosoftAppPassword` values. These values are not required to complete this article.
 2. The ***LuisAPIKey*** is the `subscriptionKey`, and the ***LuisAPIHostName*** is the `ENDPOINT` value. Both values are found in _Keys and Endpoint_ blade in the Azure cognitive services LUIS authoring resource page as shown in the screen shot below:
 
    ![The Keys and endpoint blade in Azure](./media/adaptive-dialogs/keys-and-endpoint-cross-train.png)
@@ -349,7 +442,7 @@ The configuration file **.env** explained:
 
 ![The .env file](./media/adaptive-dialogs/env.png)
 
-1. The [Bot channels registration][bot-channels-registration] article details how to get the `MicrosoftAppId` and `MicrosoftAppPassword` values.
+1. The [Bot channels registration][bot-channels-registration] article details how to get the `MicrosoftAppId` and `MicrosoftAppPassword` values. These values are not required to complete this article.
 2. The ***LuisAPIKey*** is the `subscriptionKey`, and the ***LuisAPIHostName*** is the `ENDPOINT` value. Both values are found in _Keys and Endpoint_ blade in the Azure cognitive services LUIS authoring resource page as shown in the screen shot below:
 
    ![The Keys and endpoint blade in Azure](./media/adaptive-dialogs/keys-and-endpoint-cross-train.png)
