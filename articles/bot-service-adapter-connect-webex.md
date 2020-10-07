@@ -31,7 +31,7 @@ In this article you will learn how to connect a bot to Webex using the adapter a
 
 3. On the next screen, enter an appropriate name, username and description for your bot, as well as choosing an icon or uploading an image of your own.
 
-    ![Set up bot](~/media/bot-service-adapter-connect-webex/create-bot.png)
+    ![set up bot](~/media/bot-service-adapter-connect-webex/create-bot.png)
 
     Click the 'Add bot' button.
 
