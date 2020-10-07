@@ -12,7 +12,10 @@ ms.date: 10/06/2020
 
 # Connect a bot to Direct Line
 
-This article describes the **Direct Line channel**. You use this channel to allow your own client application to communicate with a bot.
+This article describes how to connect a bot to the **Direct Line channel**. Use this channel to allow your client application to communicate with a bot.
+
+> NOTE
+> If you want to use the Direct Line Application Service Extension with your bot, refer to [Direct Line App Service Extension](bot-service-channel-directline-extension.md).
 
 ## Add the Direct Line channel
 
