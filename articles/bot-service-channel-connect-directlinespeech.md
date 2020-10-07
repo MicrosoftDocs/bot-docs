@@ -3,8 +3,8 @@ title: Connect a bot to Direct Line Speech
 titleSuffix: Bot Service
 description: Learn how to connect a bot to the Direct Line Speech channel for user's voice interaction with high reliability and low latency.
 services: bot-service
-author: trrwilson
-manager: nitinme
+author: mmiele
+manager: kamrani
 ms.service: bot-service
 ms.topic: conceptual
 ms.date: 10/07/2020
@@ -15,7 +15,7 @@ ms.author: v-mimiel
 
 [!INCLUDE[applies-to-v4](includes/applies-to.md)]
 
-This article describes how to connect a bot to the **Direct Line Speech channel**. Use this channel to allow client applications to interact with a bot via voice.
+This article describes how to connect a bot to the **Direct Line Speech channel**. Use this channel to allow users to interact with a bot via voice.
 
 Once you have built your bot, onboarding it with Direct Line Speech will enable low latency, high reliability connection with client applications using the [Speech SDK](https://aka.ms/speech-service-docs). These connections are optimized for voice in, voice out conversational experiences. For more information on Direct Line Speech and how to build client applications, visit the [custom voice-first virtual assistant](https://aka.ms/cognitive-services-voice-assistants) page.
 
@@ -33,6 +33,8 @@ Once you have built your bot, onboarding it with Direct Line Speech will enable 
 1. Click **Create** and follow the wizard steps.
 
     For additional information, see [Create a Cognitive Services resource](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-apis-create-account).
+
+You also need a bot deployed in Azure,
 
 ## Add the Direct Line Speech channel
 
@@ -77,8 +79,17 @@ With the Direct Line Speech channel connected to your bot, you now need to enabl
 
 1. The Bot Framework Protocol Streaming Extensions are now enabled for your bot. You are now ready to update your bot code and [integrate Streaming Extensions support](https://aka.ms/botframework/addstreamingprotocolsupport) to an existing bot project.
 
+## Example
+
+If you have followed all the steps described, you can talk to the bot using the client application downloadable at this location: [Windows Voice Assistant Client](https://github.com/Azure-Samples/Cognitive-Services-Voice-Assistant/blob/master/clients/csharp-wpf/README.md#windows-voice-assistant-client).
+
+The following picture shows the client application interface when communicating with a simple echo bot.
+
+![voice assistant client](media/voice-first-virtual-assistants/voice-assistant-client.png "voice assistant client")
+
+
+See also [Tutorial: Voice-enable your bot using the Speech SDK](https://docs.microsoft.com/azure/cognitive-services/speech-service/tutorial-voice-enable-your-bot-speech-sdk).
+
 ## Adding protocol support to your bot
 
 With the Direct Line Speech channel connected and support for the Bot Framework Protocol Streaming Extensions enabled, all that's left is to add code to your bot to support the optimized communication. Follow the instructions on [adding Streaming Extensions support to your bot](https://aka.ms/botframework/addstreamingprotocolsupport) to ensure full compatibility with Direct Line Speech.
-
-
