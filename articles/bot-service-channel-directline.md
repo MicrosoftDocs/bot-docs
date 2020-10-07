@@ -5,11 +5,11 @@ description: Learn about three channels of the Bot Framework Direct Line.
 See which one to use to integrate bots into mobile apps, webpages, and other applications.
 services: bot-service
 author: mmiele
+ms.author: v-mimiel
 manager: kamrani
 ms.service: bot-service
 ms.topic: conceptual
 ms.date: 10/05/2020
-ms.author: v-mimiel
 ---
 
 # About Direct Line
