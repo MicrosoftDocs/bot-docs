@@ -30,7 +30,7 @@ This article will walk you through the steps required to create a fully function
 - [Recognizers in adaptive dialogs](bot-builder-concept-adaptive-dialog-recognizers.md)
 - [Language Generation in adaptive dialogs](bot-builder-concept-adaptive-dialog-generators.md)
 - [Memory scopes and Managing state in adaptive dialogs](bot-builder-concept-adaptive-dialog-memory-states.md)
-- [Handling interruptions in adaptive dialogs](bot-builder-concept-adaptive-dialog-interruptions)
+- [Handling interruptions in adaptive dialogs](bot-builder-concept-adaptive-dialog-interruptions.md)
 - [.lu file format][lu-templates]
 - [.qna file format][qna-file-format]
 
@@ -46,12 +46,12 @@ This article describes how to create a bot that is cross trained to use both LUI
 1. Introduction to [The Todo bot with LUIS and QnA Maker sample](#the-todo-bot-with-luis-and-qna-maker-sample)
 1. [Create your LUIS authoring resource in Azure Cognitive Services](#create-your-luis-authoring-resource-in-azure)
 1. [Create your QnA Maker resource in Azure Cognitive Services](#create-your-qna-maker-resource-in-azure-cognitive-services)
-1. [Install the Bot Framework SDK CLI](#install-the-bot-framework-sdk-cli)
+1. [Install the Bot Framework SDK CLI](#install-the-bot-framework-cli)
 <!--1. [Create the schema file](#create-the-schema-file)-->
 1. [Generate cross-trained LU models](#generate-cross-trained-lu-models)
 1. [Create and publish LUIS applications using the build command](#create-and-publish-luis-applications-using-the-build-command)
 1. [Create and publish QnA Maker knowledge bases using the build command](#create-and-publish-qna-maker-knowledge-bases-using-the-build-command)
-1. [Update your project's configuration file to include connection information for LUIS and QnA Maker](#update-your-project's-configuration-file-to-include-connection-information-for-luis-and-qna-maker)
+1. [Update your project's configuration file to include connection information for LUIS and QnA Maker](#update-your-projects-configuration-file-to-include-connection-information-for-luis-and-qna-maker)
 1. [Testing the bot using Bot Framework Emulator](#testing-the-bot-using-bot-framework-emulator)
 
 ## The Todo bot with LUIS and QnA Maker sample
@@ -84,7 +84,7 @@ The LUIS authoring resource includes information needed to create or access your
 - **Endpoint**. This is auto-generated using the LUIS authoring resource name that you provide when creating it. It has the following format: `https://<luis-resource-name>.cognitiveservices.azure.com/`. When referencing your LUIS authoring resource for any action, such as when creating your LUIS App and Models which will be detailed in this article. You can find the key in the **Keys and Endpoint** blade in your LUIS authoring resource.
 - **Location**.   This is the Azure region that contains your LUIS authoring resource. You select this when creating the LUIS authoring resource.
 
-   ![The Keys and endpoint blade in Azure](./media/adaptive-dialogs/keys-and-endpoint-cross-train.png)
+   ![Keys and endpoint for LUIS resource in Azure](./media/adaptive-dialogs/keys-and-endpoint-cross-train.png)
 
 > [!TIP]
 >
@@ -115,7 +115,7 @@ The QnA Maker resource includes information your bot will use to access your QnA
 
 - **Location**. This is the Azure region that contains your QnA Maker Knowledge Base. You select this when creating the QnA Maker resource.
 
-   ![The Keys and endpoint blade in Azure](./media/adaptive-dialogs/qna-maker-keys-and-endpoint-cross-trainsample.png)
+   ![Keys and endpoint for QnA Maker resource in Azure](./media/adaptive-dialogs/qna-maker-keys-and-endpoint-cross-trainsample.png)
 
 ## Install the Bot Framework CLI
 
@@ -277,7 +277,7 @@ Once finished you will have a LUIS application for each of the five `.lu` files 
 
 > [!TIP]
 >
-> The `luis:build` command will save a file named **luis.settings.YourUserName.westus.json** to the output directory. This file contains the LUIS application IDs that you will need to add to your configuration file, described in a [later section](#update-your-project's-configuration-file-to-include-connection-information-for-luis-and-qna-maker).
+> The `luis:build` command will save a file named **luis.settings.YourUserName.westus.json** to the output directory. This file contains the LUIS application IDs that you will need to add to your configuration file, described in a [later section](#update-your-projects-configuration-file-to-include-connection-information-for-luis-and-qna-maker).
 
 ## Create and publish QnA Maker knowledge bases using the build command
 
@@ -306,7 +306,7 @@ bf qnamaker:build --in <input-file-or-folder> --out <folder-to-save-files-to> --
 - `in`: The directory, including sub-directories, that will be searched for .qna files.
 - `out`: The directory to save output files to.
 - `log`: A Boolean value that determines if a log is created during this process.
-- `botName`: The name of your bot. This will be used to generate the name of the QnA Maker KB, this is explained in more detail in the [Deploy QnA Maker knowledge base using the Bot Framework qnamaker CLI commands](#qna-maker-knowledge-bases-created) article.
+- `botName`: The name of your bot. This will be used to generate the name of the QnA Maker KB, this is explained in more detail in the [Deploy QnA Maker knowledge base using the Bot Framework qnamaker CLI commands][#qna-maker-knowledge-bases-created] article.
 - `subscriptionKey`: The same subscription key that is in your [initialization file][create-your-qna-maker-initialization-file].
 
 For information on additional parameters, see [bf qnamaker:build][bf-qnamakerbuild] in the BF CLI qnamaker readme.
@@ -407,7 +407,7 @@ The configuration file **appsettings.json** explained:
 1. The [Bot channels registration][bot-channels-registration] article details how to get the `MicrosoftAppId` and `MicrosoftAppPassword` values. These values are not required to complete this article.
 2. The ***LuisAPIKey*** is the `subscriptionKey`, and the ***LuisAPIHostName*** is the `ENDPOINT` value. Both values are found in _Keys and Endpoint_ blade in the Azure cognitive services LUIS authoring resource page as shown in the screen shot below:
 
-   ![The Keys and endpoint blade in Azure](./media/adaptive-dialogs/keys-and-endpoint-cross-train.png)
+   ![Keys and endpoint for LUIS resource in Azure. Values for LuisAPIKey and LuisAPIHostName.](./media/adaptive-dialogs/keys-and-endpoint-cross-train.png)
 
 3. This is a list of LUIS application IDs. These values can be found in the _Application Settings_ page for a LUIS application in [www.luis.ai](https://www.luis.ai/), however they are also listed in the settings file created by the `luis:build` command, saved to the location provided as the `--out` option. This settings file contains a list of every LUIS application ID that was created for each locale. The full name of this JSON file is `luis.settings.<username>.<authoring-region>.json`. For example, if your logged in username is _YuuriTanaka_ and you are targeting authoring region **westus**, your filename would be **luis.settings.YuuriTanaka.westus.json**. This is where you will find all the values for the _luis_ section of your **appsettings.json** file.
 
@@ -445,7 +445,7 @@ The configuration file **.env** explained:
 1. The [Bot channels registration][bot-channels-registration] article details how to get the `MicrosoftAppId` and `MicrosoftAppPassword` values. These values are not required to complete this article.
 2. The ***LuisAPIKey*** is the `subscriptionKey`, and the ***LuisAPIHostName*** is the `ENDPOINT` value. Both values are found in _Keys and Endpoint_ blade in the Azure cognitive services LUIS authoring resource page as shown in the screen shot below:
 
-   ![The Keys and endpoint blade in Azure](./media/adaptive-dialogs/keys-and-endpoint-cross-train.png)
+   ![The Keys and endpoint page in Azure. Values for LuisAPIKey and LuisAPIHostName.](./media/adaptive-dialogs/keys-and-endpoint-cross-train.png)
 
 3. This is a list of LUIS application IDs. These values can be found in the _Application Settings_ page for a LUIS application in [www.luis.ai](https://www.luis.ai/), however they are also listed in the settings file created by the `luis:build` command, saved to the location provided as the `--out` option. This settings file contains a list of every LUIS application ID that was created for each locale. The full name of this JSON file is `luis.settings.<username>.<authoring-region>.json`. For example, if your logged in username is _YuuriTanaka_ and you are targeting authoring region **westus**, your filename would be **luis.settings.YuuriTanaka.westus.json**. This is where you will find all the values for the `luis` section of your **appsettings.json** file.
 
@@ -461,7 +461,7 @@ The configuration file **.env** explained:
 
 # [C#](#tab/csharp)
 
-## Prerequisites
+## Prerequisites for testing the bot using Bot Framework Emulator
 
 - [Visual Studio 2019 or later](https://www.visualstudio.com/downloads) or [Visual Studio Code](https://code.visualstudio.com/Download)
 - [.NET Core 3.1](https://dotnet.microsoft.com/download)
@@ -556,13 +556,12 @@ You can now interact with your bot.
 [lu-templates]: ../file-format/bot-builder-lu-file-format.md
 [qna-file-format]: ../file-format/bot-builder-qna-file-format.md
 
-[bot-channels-registration]: bot-service-quickstart-registration.md
+[bot-channels-registration]: ../bot-service-quickstart-registration.md
 
 [createcrosstrainedrecognizer]: bot-builder-concept-adaptive-dialog-recognizers.md#cross-trained-recognizer-set
 [qna-maker-recognizer]: bot-builder-concept-adaptive-dialog-recognizers.md#qna-maker-recognizer
 
-
-[crosstrainedrecognizerset]: adaptive-dialog-prebuilt-recognizers.md#cross-trained-recognizer-set
+[crosstrainedrecognizerset]: ../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md#cross-trained-recognizer-set
 [luis-prediction-resource]: azure/cognitive-services/luis/luis-how-to-azure-subscription#luis-resources
 [deploy-luis-using-bf-cli-commands]: bot-builder-howto-bf-cli-deploy-luis.md
 
