@@ -37,7 +37,7 @@ In this article you will learn how to connect a bot to Webex using the adapter a
 
 4. On the next page you will be provided with an access token for your new Webex app, please make a note of this token as you will require it when configuring your bot.
 
-    ![Set up bot](~/media/bot-service-adapter-connect-webex/create-bot-settings.png)
+    ![access token](~/media/bot-service-adapter-connect-webex/create-bot-settings.png)
 
 ## Wiring up the Webex adapter in your bot
 
@@ -190,4 +190,4 @@ Complete the remaining 3 settings in your bot's appsettings.json file (you alrea
 Now that you have completed the configuration of your bot's settings in appsettings.json, you should re-deploy your bot (or restart your bot if you are tunnelling to a local endpoint using ngrok).  Configuration of you Webex app and bot are now complete.
 You can now login to your Webex team at [https://www.webex.com](https://www.webex.com) and chat with your bot by sending it a message, in the same way you would contact another person.
 
-![Set up bot](~/media/bot-service-adapter-connect-webex/webex-contact-person.png)
+![contact person](~/media/bot-service-adapter-connect-webex/webex-contact-person.png)
