@@ -46,11 +46,11 @@ Once you have built your bot, onboarding it with Direct Line Speech will enable 
 
 1. Configure the Direct Line Speech as shown in the picture below.
 
-    ![selecting direct line speech channel](media/voice-first-virtual-assistants/bot-service-channel-directlinespeech-cognitivesericesaccount-selection.png "selecting Cognitive Services resource")
+    ![configure direct line speech channel](media/voice-first-virtual-assistants/bot-service-channel-directlinespeech-cognitivesericesaccount-selection.png "selecting Cognitive Services resource")
 
 1. Once you've reviewed the terms of use, click `Save` to confirm your channel selection. This will add the channel to the bot.
 
-    ![saving the enablement of Direct Line Speech channel](media/voice-first-virtual-assistants/bot-service-channel-directlinespeech-added.png "direct line speech channel added")
+    ![saving the enabled of Direct Line Speech channel](media/voice-first-virtual-assistants/bot-service-channel-directlinespeech-added.png "direct line speech channel added")
 
 ## Enable the Bot Framework Protocol Streaming Extensions
 
