@@ -51,13 +51,13 @@ Add  the [Microsoft.Bot.Builder.Adapters.Webex](https://www.nuget.org/packages/M
 
 Create a new class that inherits from the ***WebexAdapter*** class. This class will act as our adapter for the Webex channel. It includes error handling capabilities (much like the ***BotFrameworkAdapterWithErrorHandler*** class already in the sample, used for handling requests from Azure Bot Service).
 
-[!code-csharp[Webex Adapter With Error Handler](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/62.webex-adapter/Adapters/WebexAdapterWithErrorHandler.cs?range=11-29)]
+[!code-csharp[Webex Adapter With Error Handler](~/../botbuilder-samples/samples/csharp_dotnetcore/62.webex-adapter/Adapters/WebexAdapterWithErrorHandler.cs?range=11-29)]
 
 ### Create a new controller for handling Webex requests
 
 We create a new controller which will handle requests from your Webex app, on a new endpoint 'api/webex' instead of the default 'api/messages' used for requests from Azure Bot Service Channels.  By adding an additional endpoint to your bot, you can accept requests from Bot Service channels (or additional adapters), as well as from Webex, using the same bot.
 
-[!code-csharp[Webex Controller](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/62.webex-adapter/Controllers/WebexController.cs?range=12-32)]
+[!code-csharp[Webex Controller](~/../botbuilder-samples/samples/csharp_dotnetcore/62.webex-adapter/Controllers/WebexController.cs?range=12-32)]
 
 
 ### Inject Webex Adapter In Your Bot Startup.cs
@@ -70,14 +70,14 @@ services.AddSingleton<WebexAdapter, WebexAdapterWithErrorHandler>();
 
 Once added, your ***ConfigureServices*** method should look like this.
 
-[!code-csharp[Webex Controller](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/62.webex-adapter/Startup.cs?range=18-31)]
+[!code-csharp[Webex Controller](~/../botbuilder-samples/samples/csharp_dotnetcore/62.webex-adapter/Startup.cs?range=18-31)]
 
 
 ### Add Webex adapter settings to your bot's configuration file
 
 1. Add the 4 settings shown below to your appSettings.json file in your bot project.
 
-[!code-csharp[Webex Controller](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/62.webex-adapter/appsettings.json?range=1-6)]
+[!code-csharp[Webex Controller](~/../botbuilder-samples/samples/csharp_dotnetcore/62.webex-adapter/appsettings.json?range=1-6)]
 
 2. Populate the **WebexAccessToken** setting within the Webex Bot Access Token, that was generated when creating your Webex bot app in the earlier steps. Leave the other 3 settings empty  at this time, until we gather the information needed for them in later steps.
 
