@@ -55,7 +55,7 @@ Create a new class that inherits from the ***WebexAdapter*** class. This class w
 public class WebexAdapterWithErrorHandler : WebexAdapter
 {
     public WebexAdapterWithErrorHandler(IConfiguration configuration, ILogger<BotFrameworkHttpAdapter> logger)
-    : base(configuration, logger)
+    : base(configuration, null, logger)
     {
         OnTurnError = async (turnContext, exception) =>
         {
