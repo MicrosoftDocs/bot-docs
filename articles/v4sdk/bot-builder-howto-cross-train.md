@@ -102,9 +102,14 @@ The QnA Maker resource will contain the value needed for the _subscriptionKey_ o
 
 <!-- ### Create your cross-trained LUIS models -->
 
-Before running the build command to create your LUIS application in Azure cognitive services, you need to modify your `.lu` files to include the information required to enable it to defer user input to QnA Maker which it does by creating a new `DeferToRecognizer` intent which is created using the following format: `DeferToRecognizer_<recognizer-type>_<dialog-name>`. For example, in **RootDialog.lu** the new intent would be `DeferToRecognizer_QnA_RootDialog`, and it will contain the questions from **RootDialog.qna** as its user utterances. When a user asks any of these questions the bot will direct it to the [QnA Maker Recognizer][qna-maker-recognizer] for processing. Note also that **RootDialog.qna** references **ChitChat.qna**, and the contents of that referenced file will also be included in the new cross-trained **RootDialog.lu** file.
+Before running the build command to create your LUIS applications and QnA Maker knowledge base in Azure cognitive services, you need to _cross-train_ your `.lu` and `.qna` files to include the information required to enable your bots recognizer to defer user input to either LUIS or QnA Maker for processing.
 
-To create the cross-trained files, both `.lu`  and `.qna`, you can use either the BF CLI `luis:cross-train` or `qnamaker:cross-train` command. The following demonstrates using the `luis:cross-train` command:
+This is enabled, using the cross-train command, in your `.lu` files by creating a new `DeferToRecognizer` intent which is created using the following format: `DeferToRecognizer_<recognizer-type>_<dialog-name>`. For example, in **RootDialog.lu** the new intent would be `DeferToRecognizer_QnA_RootDialog`, and it will contain a list of questions from **RootDialog.qna** as its user utterances. When a user enters any of these questions the bot will direct it to the [QnA Maker Recognizer][qna-maker-recognizer] for processing. Note also that **RootDialog.qna** references **ChitChat.qna**, and the contents of that referenced file will also be included in the new cross-trained **RootDialog.lu** file.
+
+In `.qna` files, this is enabled by creating a new `DeferToRecognizer` intent created using the following format: `intent=DeferToRecognizer_<recognizer-type>_<dialog-name>`. For example, in **RootDialog.qna** the new intent would be `intent=DeferToRecognizer_LUIS_RootDialog`, and it will contain the utterances from **RootDialog.lu** as its user utterances. When a user enters any of these user utterances the bot will direct it to the [LUIS Recognizer][luis-recognizer] for processing.
+Running the cross-train command will update all `.lu` and `.qna` files in the directory and sub-directories specified.
+
+To create the cross-trained files, both `.lu`  and `.qna`, you can use _either_ the BF CLI `luis:cross-train` or `qnamaker:cross-train` command. You do not need to run both commands since they both do the same thing. The following demonstrates using the `luis:cross-train` command:
 
 ``` cli
 bf luis:cross-train -i <input-folder-name> -o <output-file-name> --config <cross-train-configuration-file>
@@ -542,6 +547,7 @@ You can now interact with your bot.
 [bot-channels-registration]: ../bot-service-quickstart-registration.md
 
 [createcrosstrainedrecognizer]: bot-builder-concept-adaptive-dialog-recognizers.md#cross-trained-recognizer-set
+[luis-recognizer]: bot-builder-concept-adaptive-dialog-recognizers.md#luis-recognizer
 [qna-maker-recognizer]: bot-builder-concept-adaptive-dialog-recognizers.md#qna-maker-recognizer
 
 [crosstrainedrecognizerset]: ../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md#cross-trained-recognizer-set
