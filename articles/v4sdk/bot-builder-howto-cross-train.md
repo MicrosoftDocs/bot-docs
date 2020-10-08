@@ -357,7 +357,7 @@ Once finished you will have a QnA Maker knowledge base with all of the questions
 
 > [!TIP]
 >
-> The `qnamaker:build` command will save a file named **qnamaker.settings.YourUserName.westus.json** to the output directory. This file contains the knowledge base ID that you will need to add to your configuration file, described in the next section.
+> The `qnamaker:build` command will save a file named **qnamaker.settings.\<your-user-name>.westus.json** to the output directory. This file contains the knowledge base ID that you will need to add to your configuration file, described in the next section.
 
 ## Update your project's configuration file to include connection information for LUIS and QnA Maker
 
