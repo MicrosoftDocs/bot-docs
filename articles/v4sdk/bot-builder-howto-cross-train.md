@@ -148,7 +148,7 @@ To cross-train the **todo bot with LUIS and QnA Maker** sample:
 
 1. From a terminal, navigate to `samples\csharp_dotnetcore\adaptive-dialog\08.todo-bot-luis-qnamaker`
 
-1. Create a new directory named _generated_
+1. Create a directory in which to store the output of the command. This article uses _generated_ as the name for this directory.
 
    ```cmd
       md generated
