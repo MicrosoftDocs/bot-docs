@@ -48,7 +48,7 @@ You also need a bot deployed in Azure,
 
     ![selecting direct line speech channel](media/voice-first-virtual-assistants/bot-service-channel-directlinespeech-connectspeechchannel.png "connecting Direct Line Speech")
 
-1. Configure the Direct Line Speech as shown in the picture below. Specifically, add the Cognitive service account (**speech service**) mentioned in the [Prerequisites](#Prerequisites) section.
+1. Configure the Direct Line Speech as shown in the picture below. Specifically, add the Cognitive service account (**speech service**) mentioned in the [Prerequisites](#prerequisites) section.
 
     ![configure direct line speech channel](media/voice-first-virtual-assistants/bot-service-channel-directlinespeech-cognitivesericesaccount-selection.png "selecting Cognitive Services resource")
 
@@ -85,12 +85,10 @@ With the Direct Line Speech channel connected to your bot, you now need to enabl
 
 If you have followed all the steps described, you can talk to the bot using the client application downloadable at this location: [Windows Voice Assistant Client](https://github.com/Azure-Samples/Cognitive-Services-Voice-Assistant/blob/master/clients/csharp-wpf/README.md#windows-voice-assistant-client).
 
-The following picture shows the client application interface when communicating with a simple echo bot.
+The following picture shows the client application interface when communicating with a simple echo bot. See also [Voice-enable your bot using the Speech SDK](https://docs.microsoft.com/azure/cognitive-services/speech-service/tutorial-voice-enable-your-bot-speech-sdk).
+
 
 ![voice assistant client](media/voice-first-virtual-assistants/voice-assistant-client.png "voice assistant client")
-
-
-See also [Tutorial: Voice-enable your bot using the Speech SDK](https://docs.microsoft.com/azure/cognitive-services/speech-service/tutorial-voice-enable-your-bot-speech-sdk).
 
 ## Adding protocol support to your bot
 
