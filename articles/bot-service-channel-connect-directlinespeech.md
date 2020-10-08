@@ -54,7 +54,7 @@ You also need a bot deployed in Azure,
 
 1. Once you've reviewed the terms of use, click `Save` to confirm your channel selection. This will add the channel to the bot.
 
-    ![saving the enabled of Direct Line Speech channel](media/voice-first-virtual-assistants/bot-service-channel-directlinespeech-added.png "direct line speech channel added")
+    ![saving the enabled of Direct Line Speech channel](media/voice-first-virtual-assistants/bot-service-channel-directlinespeech-added.png "added direct line speech channel")
 
 ## Enable the Bot Framework Protocol Streaming Extensions
 
