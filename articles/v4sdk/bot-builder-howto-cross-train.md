@@ -181,7 +181,7 @@ For a detailed explanation on how to use the `luis:build` command, see [Deploy L
 >
 > This command will overwrite your previous LUIS model as well any content you might have in your [LUIS applications][https://www.luis.ai/applications].
 
-## How to use the luis:build command
+### How to use the luis:build command
 
 The LUIS build command with its required parameters:
 
