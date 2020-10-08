@@ -277,7 +277,7 @@ For a detailed explanation on how to use the `qnamaker:build` command, see [Depl
 
 ### How to use the qnamaker:build command
 
-The QnAMaker build command with its required parameters:
+The `qnamaker:build` command with its required parameters:
 
 ``` cli
 bf qnamaker:build --in <input-file-or-folder> --out <folder-to-save-files-to> --subscriptionKey <Subscription-Key> --botName <bot-name> --log
