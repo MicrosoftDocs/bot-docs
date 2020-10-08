@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
-This how to article will walk you through the steps required to create a bot that integrates the capabilities of both [LUIS][luis] and [QnA Maker][qnamaker] together in order to determine the best possible response to the user, using [language generation][language-generation], and tying all these features together into a ToDo bot.
+This how to article will walk you through the steps required to create a bot that integrates the capabilities of both [LUIS][luis] and [QnA Maker][qnamaker] together in order to determine the best possible response to the user, using [language generation][language-generation], and tying all these features together into a todo bot.
 
 Integrating the capabilities of both LUIS and QnA Maker together requires the use of the [CreateCrossTrainedRecognizer][createcrosstrainedrecognizer] command.
 
