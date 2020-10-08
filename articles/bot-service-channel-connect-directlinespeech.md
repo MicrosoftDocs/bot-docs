@@ -28,7 +28,7 @@ Once you have built your bot, onboarding it with Direct Line Speech will enable 
 1. In the right panel, in the search box, enter **speech**.
 1. In the the drop-down list select **Speech**. The following is displayed:
 
-    ![create speech cognitive resource](media/voice-first-virtual-assistants/create-speech-cognitive-resource.PNG "Create speech cognitive resource")
+    ![create speech cognitive resource](media/voice-first-virtual-assistants/create-speech-cognitive-resource.PNG "create speech cognitive service")
 
 1. Click **Create** and follow the wizard steps.
 
@@ -86,7 +86,6 @@ With the Direct Line Speech channel connected to your bot, you now need to enabl
 If you have followed all the steps described, you can talk to the bot using the client application downloadable at this location: [Windows Voice Assistant Client](https://github.com/Azure-Samples/Cognitive-Services-Voice-Assistant/blob/master/clients/csharp-wpf/README.md#windows-voice-assistant-client).
 
 The following picture shows the client application interface when communicating with a simple echo bot. See also [Voice-enable your bot using the Speech SDK](https://docs.microsoft.com/azure/cognitive-services/speech-service/tutorial-voice-enable-your-bot-speech-sdk).
-
 
 ![voice assistant client](media/voice-first-virtual-assistants/voice-assistant-client.png "voice assistant client")
 
