@@ -267,7 +267,7 @@ Once finished you will have a LUIS application for each of the five `.lu` files 
 
 ## Create and publish QnA Maker knowledge bases using the build command
 
-The qnamaker build command combines all the following actions into a single command:
+The `qnamaker:build` command combines all the following actions into a single command:
 
 1. Creates one QnA Maker model for every locale found using your existing `.qna` files.
 1. Creates a new QnA Maker KB if none exists, otherwise it will overwrite the existing KB.
