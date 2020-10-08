@@ -113,7 +113,7 @@ bf luis:cross-train -i <input-folder-name> -o <output-file-name> --config <cross
 #### The luis:cross-train parameters
 
 - `in`: The directory, including sub-directories, that will be searched for both `.lu` and `.qna` files.
-- `out`: The directory to save the new cross-trained `.lu` output files to. This is where the `luis:build` option will point to in its `--in` option.
+- `out`: The directory to save the new cross-trained `.lu` and `.qna` output files to. This is the directory to which you will point the `luis:build` command's `--in` option.
 - `config`: A cross-train configuration file is a JSON file that is necessary for the command to work. Here is an example cross-train configuration file for the **Todo bot with LUIS and QnA Maker** sample:
 
     ```json
@@ -172,6 +172,10 @@ For each `.lu` file, including `.lu` files for each locale, the build command co
 
 For a detailed explanation on how to use the `luis:build` command, see [Deploy LUIS applications using the Bot Framework luis CLI commands][luis-build].
 
+> [!IMPORTANT]
+>
+> This command will overwrite your previous LUIS model as well any content you might have in your [LUIS applications][https://www.luis.ai/applications].
+
 ## How to use the luis:build command
 
 The LUIS build command with its required parameters:
@@ -223,7 +227,7 @@ To create the LUIS applications for the **Todo bot with LUIS and QnA Maker** sam
 
 1. From a terminal, navigate to `samples\csharp_dotnetcore\adaptive-dialog\08.todo-bot-luis-qnamaker`
 
-1. Create a new directory named _output_
+1. Create a directory in which to store the output of the command. This article uses _output_ as the name for this directory.
 
    ```cmd
       md output
@@ -283,7 +287,7 @@ bf qnamaker:build --in <input-file-or-folder> --out <folder-to-save-files-to> --
 - `in`: The directory, including sub-directories, that will be searched for .qna files.
 - `out`: The directory to save output files to.
 - `log`: A Boolean value that determines if a log is created during this process.
-- `botName`: The name of your bot. This will be used to generate the name of the QnA Maker KB, this is explained in more detail in the [Deploy QnA Maker knowledge base using the Bot Framework qnamaker CLI commands][#qna-maker-knowledge-bases-created] article.
+- `botName`: The name of your bot. This will be used to generate the name of the QnA Maker KB, this is explained in more detail in the [Deploy QnA Maker knowledge base using the Bot Framework qnamaker CLI commands][qna-maker-knowledge-bases-created] article.
 - `subscriptionKey`: The same subscription key that is in your [initialization file][create-your-qna-maker-initialization-file].
 
 For information on additional parameters, see [bf qnamaker:build][bf-qnamakerbuild] in the BF CLI qnamaker readme.
