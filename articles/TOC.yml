@@ -22,8 +22,6 @@
     href: v4sdk/bot-builder-tutorial-basic-deploy.md
   - name: 2. Add QnA Maker and redeploy a bot
     href: v4sdk/bot-builder-tutorial-add-qna.md
-  - name: Add authentication to your bot
-    href: bot-builder-tutorial-authentication.md
 - name: Samples
   items:
   - name: Bot Framework samples repo on GitHub
@@ -98,23 +96,7 @@
     href: v4sdk/bot-builder-concept-adaptive-expressions.md
   - name: Language Generation
     href: v4sdk/bot-builder-concept-language-generation.md
-  - name: Bot Service templates
-    href: bot-service-concept-templates.md
-  - name: Cognitive Services
-    href: bot-service-concept-intelligence.md
   - name: Key scenarios for bots
-    href: bot-service-scenario-overview.md
-    items:
-    - name: Commerce bot
-      href: bot-service-scenario-commerce.md
-    - name: Cortana Skill bot
-      href: bot-service-scenario-cortana-skill.md
-    - name: Enterprise Productivity bot
-      href: bot-service-scenario-enterprise-productivity.md
-    - name: Information bot
-      href: bot-service-scenario-informational.md
-    - name: Internet of Things bot
-      href: bot-service-scenario-internet-things.md
 - name: How-To
   items:
   - name: Design
@@ -133,8 +115,6 @@
         href: bot-service-design-user-experience.md
     - name: Patterns
       items:
-      - name: Task automation
-        href: bot-service-design-pattern-task-automation.md
       - name: Knowledge base
         href: bot-service-design-pattern-knowledge-base.md
       - name: Handoff to human
@@ -237,148 +217,17 @@
       href: directline-speech-bot.md
     - name: .NET
       items:
-      - name: Bot Framework SDK for .NET
-        href: dotnet/bot-builder-dotnet-overview.md
-      - name: Key concepts
-        href: dotnet/bot-builder-dotnet-concepts.md
       - name: Messages and activities
-        items:
-        - name: Activities overview
-          href: dotnet/bot-builder-dotnet-activities.md
-        - name: Create messages
-          href: dotnet/bot-builder-dotnet-create-messages.md
-        - name: Add media attachments to messages
-          href: dotnet/bot-builder-dotnet-add-media-attachments.md
-        - name: Add rich cards to messages
-          href: dotnet/bot-builder-dotnet-add-rich-card-attachments.md
-        - name: Add speech to messages
-          href: dotnet/bot-builder-dotnet-text-to-speech.md
-        - name: Add input hints to messages
-          href: dotnet/bot-builder-dotnet-add-input-hints.md
-        - name: Add suggested actions to messages
-          href: dotnet/bot-builder-dotnet-add-suggested-actions.md
-        - name: Send and receive activities
-          href: dotnet/bot-builder-dotnet-connector.md
-        - name: Implement global message handlers
-          href: dotnet/bot-builder-dotnet-global-handlers.md
-        - name: Intercept messages
-          href: dotnet/bot-builder-dotnet-middleware.md
-        - name: Send proactive messages
-          href: dotnet/bot-builder-dotnet-proactive-messages.md
       - name: Dialogs
-        items:
-        - name: Dialogs overview
-          href: dotnet/bot-builder-dotnet-dialogs.md
-        - name: Manage conversation flow
-          href: dotnet/bot-builder-dotnet-manage-conversation-flow.md
-        - name: Scorable dialogs
-          href: dotnet/bot-builder-dotnet-scorable-dialogs.md
       - name: FormFlow
-        items:
-        - name: Basic features of FormFlow
-          href: dotnet/bot-builder-dotnet-formflow.md
-        - name: Advanced features of FormFlow
-          href: dotnet/bot-builder-dotnet-formflow-advanced.md
-        - name: FormBuilder
-          href: dotnet/bot-builder-dotnet-formflow-formbuilder.md
-        - name: Pattern language
-          href: dotnet/bot-builder-dotnet-formflow-pattern-language.md
-        - name: Localization
-          href: dotnet/bot-builder-dotnet-formflow-localize.md
-        - name: JSON schema
-          href: dotnet/bot-builder-dotnet-formflow-json-schema.md
       - name: Channels
-        items:
-        - name: Implement channel-specific functionality
-          href: dotnet/bot-builder-dotnet-channeldata.md
-        - name: Build a Cortana skill
-          href: dotnet/bot-builder-dotnet-cortana-skill.md
-        - name: Conduct audio calls with Skype
-          href: dotnet/bot-builder-dotnet-audio-calls.md
       - name: State data
-        items:
-        - name: Manage state data
-          href: dotnet/bot-builder-dotnet-state.md
-        - name: Manage state data using Cosmos DB
-          href: dotnet/bot-builder-dotnet-state-azure-cosmosdb.md
-        - name: Manage state data using Table storage
-          href: dotnet/bot-builder-dotnet-state-azure-table-storage.md
-      - name: Recognize intent with LUIS
-        href: dotnet/bot-builder-dotnet-luis-dialogs.md
-      - name: Request payment
-        href: dotnet/bot-builder-dotnet-request-payment.md
-      - name: Add Azure Search
-        href: dotnet/bot-builder-dotnet-search-azure.md
-      - name: Secure your bot
-        href: dotnet/bot-builder-dotnet-security.md
     - name: Node.js
       items:
-      - name: Bot Framework SDK for Node.js
-        href: nodejs/bot-builder-nodejs-overview.md
-      - name: Key concepts
-        href: nodejs/bot-builder-nodejs-concepts.md
       - name: Dialogs
-        items:
-        - name: Dialogs overview
-          href: nodejs/bot-builder-nodejs-dialog-overview.md
-        - name: Define conversation steps
-          href: nodejs/bot-builder-nodejs-dialog-waterfall.md
-        - name: Prompt for user input
-          href: nodejs/bot-builder-nodejs-dialog-prompt.md
-        - name: Manage conversation flow
-          href: nodejs/bot-builder-nodejs-dialog-manage-conversation-flow.md
-        - name: Replace dialogs
-          href: nodejs/bot-builder-nodejs-dialog-replace.md
-        - name: Handle user actions
-          href: nodejs/bot-builder-nodejs-dialog-actions.md
       - name: Messages
-        items:
-        - name: Create messages
-          href: nodejs/bot-builder-nodejs-message-create.md
-        - name: Send and receive attachments
-          href: nodejs/bot-builder-nodejs-send-receive-attachments.md
-        - name: Send proactive messages
-          href: nodejs/bot-builder-nodejs-proactive-messages.md
-        - name: Add rich cards to messages
-          href: nodejs/bot-builder-nodejs-send-rich-cards.md
-        - name: Add speech to messages
-          href: nodejs/bot-builder-nodejs-text-to-speech.md
-        - name: Add input hints to messages
-          href: nodejs/bot-builder-nodejs-send-input-hints.md
-        - name: Add suggested actions to messages
-          href: nodejs/bot-builder-nodejs-send-suggested-actions.md
-        - name: Send a typing indicator
-          href: nodejs/bot-builder-nodejs-send-typing-indicator.md
-        - name: Intercept messages
-          href: nodejs/bot-builder-nodejs-intercept-messages.md
       - name: Channels
-        items:
-        - name: Build a Cortana skill
-          href: nodejs/bot-builder-nodejs-cortana-skill.md
-        - name: Conduct Skype calls
-          href: nodejs/bot-builder-nodejs-conduct-audio-calls.md
       - name: State Data
-        items:
-        - name: Manage state data
-          href: nodejs/bot-builder-nodejs-state.md
-        - name: Manage state data with Cosmos DB
-          href: nodejs/bot-builder-nodejs-state-azure-cosmosdb.md
-        - name: Manage state data with Table storage
-          href: nodejs/bot-builder-nodejs-state-azure-table-storage.md
-      - name: Recognize intent from message content
-        href: nodejs/bot-builder-nodejs-recognize-intent-messages.md
-      - name: Recognize intent with LUIS
-        href: nodejs/bot-builder-nodejs-recognize-intent-luis.md
-      - name: Handle user and conversation events
-        href: nodejs/bot-builder-nodejs-handle-conversation-events.md
-      - name: Support localization
-        href: nodejs/bot-builder-nodejs-localization.md
-      - name: Use backchannel mechanism
-        href: nodejs/bot-builder-nodejs-backchannel.md
-      - name: Request payment
-        href: nodejs/bot-builder-nodejs-request-payment.md
-      - name: Add Azure Search
-        href: nodejs/bot-builder-nodejs-search-azure.md
   - name: Test
     items:
     - name: Unit testing bots
@@ -389,8 +238,6 @@
     items:
     - name: Debug a bot using IDE
       href: bot-service-debug-bot.md
-    - name: Debug a bot using IDE
-      href: bot-service-debug-bot-v3.md
     - name: Debug with the Bot Framework Emulator
       href: bot-service-debug-emulator.md
     - name: Debug a bot from any channel using ngrok
@@ -401,8 +248,6 @@
       href: bot-service-debug-inspection-middleware.md
     - name: Debug your bot using transcript files
       href: v4sdk/bot-builder-debug-transcript.md
-    - name: Test a Cortana skill
-      href: bot-service-debug-cortana-skill.md
   - name: Deploy
     items:
     - name: Deploy your bot to Azure
@@ -454,8 +299,6 @@
         href: bot-service-channel-connect-alexa.md
       - name: Email
         href: bot-service-channel-connect-email.md
-      - name: Enable speech in Web Chat
-        href: bot-service-channel-connect-webchat-speech.md
       - name: Facebook
         href: bot-service-channel-connect-facebook.md
       - name: GroupMe
@@ -718,4 +561,3 @@
       href: v4sdk/bot-builder-webchat-customization.md
     - name: Add single sign on to Web Chat
       href: v4sdk/bot-builder-webchat-sso.md
-
