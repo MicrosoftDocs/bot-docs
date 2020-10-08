@@ -38,15 +38,17 @@ You also need a bot deployed in Azure,
 
 ## Add the Direct Line Speech channel
 
-1. To add the Direct Line Speech Channel, first open the bot in the [Azure Portal](https://portal.azure.com), From your resources, select your **Bot Channel Registration** resource. Click on **Channels** in the configuration blade.
+1. In your browser, navigate to the [Azure Portal](https://portal.azure.com).
+1. From your resources, select the **Bot Channel Registration** or **Web App Bot** resource, depending on how you deployed the bot.
+1. In the left panel, select  **Channels**.
 
-    ![highlight of the location for selecting channels to connect to](media/voice-first-virtual-assistants/bot-service-channel-directlinespeech-selectchannel.png "selecting channels")
+    ![selecting channels](media/voice-first-virtual-assistants/bot-service-channel-directlinespeech-selectchannel.png "selecting channels")
 
-1. In the channel selection page, find and click `Direct Line Speech` to choose the channel.
+1. In right panel, click the `Direct Line Speech` icon.
 
     ![selecting direct line speech channel](media/voice-first-virtual-assistants/bot-service-channel-directlinespeech-connectspeechchannel.png "connecting Direct Line Speech")
 
-1. Configure the Direct Line Speech as shown in the picture below.
+1. Configure the Direct Line Speech as shown in the picture below. Specifically, add the Cognitive service account (**speech service**) mentioned in the [Prerequisites](#Prerequisites) section.
 
     ![configure direct line speech channel](media/voice-first-virtual-assistants/bot-service-channel-directlinespeech-cognitivesericesaccount-selection.png "selecting Cognitive Services resource")
 
@@ -92,4 +94,8 @@ See also [Tutorial: Voice-enable your bot using the Speech SDK](https://docs.mic
 
 ## Adding protocol support to your bot
 
-With the Direct Line Speech channel connected and support for the Bot Framework Protocol Streaming Extensions enabled, all that's left is to add code to your bot to support the optimized communication. Follow the instructions on [adding Streaming Extensions support to your bot](https://aka.ms/botframework/addstreamingprotocolsupport) to ensure full compatibility with Direct Line Speech.
+> [!NOTE]
+> The following step is only needed for bots built before the release of the 4.8 SDKs.
+
+With the Direct Line Spe
+ech channel connected and support for the Bot Framework Protocol Streaming Extensions enabled, all that's left is to add code to your bot to support the optimized communication. Follow the instructions on [adding Streaming Extensions support to your bot](https://aka.ms/botframework/addstreamingprotocolsupport) to ensure full compatibility with Direct Line Speech.

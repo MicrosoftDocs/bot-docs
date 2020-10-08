@@ -25,11 +25,11 @@ The first thing you must do is to add the Direct Line channel to the bot.
 1. In the left panel, click the **Channels** item.
 1. In the right panel, under *Add a featured channel*, click the **Direct Line** icon (marked in red in the picture below).
 
-    ![Add Direct Line channel](media/bot-service-channel-connect-directline/add-directline-channel.png)
+    ![Add Direct Line channel](media/bot-service-channel-connect-directline/add-directline-channel.png "Add Direct Line channel")
 
 1. The **Configure Direct Line** page is displayed. Click the **Done** button at the bottom of the page. This adds the Direct Line channel to the bot, as shown in the picture below.
 
-    ![Added Direct Line channel](media/bot-service-channel-connect-directline/added-directline-channel.png)
+    ![Added Direct Line channel](media/bot-service-channel-connect-directline/added-directline-channel.png "Added Direct Line channel")
 
 ## Add new site
 
@@ -46,11 +46,11 @@ When you add the Direct Channel, the Bot Framework generates secret keys. Your c
 
 1. In *Configure Direct Line*, to view a key in plain text, click **Show** for the corresponding key.
 
-    ![Show Direct Line key](media/bot-service-channel-connect-directline/directline-showkey.png)
+    ![Show Direct Line key](media/bot-service-channel-connect-directline/directline-showkey.png "Show Direct Line key")
 
 1. Copy and securely store the key. Use the key to [authenticate](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md) the Direct Line API requests that your client application issues to communicate with a bot.
 
-    ![Copy Direct Line key](media/bot-service-channel-connect-directline/directline-copykey.png)
+    ![Copy Direct Line key](media/bot-service-channel-connect-directline/directline-copykey.png "Copy Direct Line key")
 
 1. Alternatively, use the Direct Line API to [exchange the key for a token](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md#generate-token) that your client can use to authenticate its subsequent requests within the scope of a single conversation.
 
@@ -79,7 +79,7 @@ The example contains two projects:
 
 ### Direct Line API
 
-- Credentials for the Direct Line API must be obtained from the Bot Channels Registration in the Azure portal, and will only allow the caller to connect to the bot for which they were generated. In the bot project, update the `appsettings.json` file with these values.
+- Credentials for the Direct Line API must be obtained from the Bot Channels Registration or the Web App Bot in the Azure portal, and will only allow the caller to connect to the bot for which they were generated. In the bot project, update the `appsettings.json` file with these values.
 
     ```csharp
     {
@@ -90,13 +90,11 @@ The example contains two projects:
 
 - In the Azure portal, enable Direct Line in the channels list and then, configure the Direct Line secret. Make sure that the checkbox for version 3.0 is checked. In the console client project update the `App.config` file with the Direct Line secret key and the bot handle (Bot Id).
 
-    ```json
-    {
+    ```xml
     <appSettings>
         <add key="DirectLineSecret" value="YourBotDirectLineSecret" />
         <add key="BotId" value="YourBotHandle" />
     </appSettings>
-    }
     ```
 
 User messages are sent to the Bot using the Direct Line Client `Conversations.PostActivityAsync` method using the `ConversationId` generated previously.
