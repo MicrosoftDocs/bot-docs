@@ -70,7 +70,7 @@ The protocol doesn't specify the order in which these POST requests and their ac
     Should it be moved into a separate article?
 -->
 
-The SDK defines a _bot_ class that handles the conversational reasoning for the bot app. The bot class has a turn handler and:
+The SDK defines a _bot_ class that handles the conversational reasoning for the bot app. The bot class:
 
 - Recognizes and interprets the user's input.
 - Reasons about the input and performs relevant tasks.
