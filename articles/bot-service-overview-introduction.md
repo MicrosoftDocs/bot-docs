@@ -30,10 +30,16 @@ The Bot Framework, along with the Azure Bot Service, provides tools to build, te
 
 Bots provide an experience that feels less like using a computer and more like dealing with a person - or at least an intelligent robot. They can be used to shift simple, repetitive tasks, such as taking a dinner reservation or gathering profile information, on to automated systems that may no longer require direct human intervention. Users converse with a bot using text, interactive cards, and speech. A bot interaction can be a quick question and answer, or it can be a sophisticated conversation that intelligently provides access to services.
 
+A bot can be thought of as a web application that has a conversational interface.
+A user connects to a bot though a channel such as Facebook, Slack, or Microsoft Teams.
+
+- Depending on how the bot is configured and how it is registered with the channel, users can interact with the bot through text or speech, and the conversation might include images and video.
+- The bot performs recognition on the user's input to interpret what the user is asking for or saying.
+- The bot _reasons_ about input and performs relevant tasks. This can include asking the user for additional information or accessing services on behalf of the user.
+- The bot generates responses to send to the user to communicate what the bot is doing or has done.
+
 > [!div class="mx-imgBorder"]
 > ![A remote bot interacts with a user on a device via text, speech, images, or video](./media/architecture/what-is-a-bot.png)
-
-<!-- Tie the wording of the boxes to the content of this article. -->
 
 Bots are a lot like modern web applications, living on the internet and use APIs to send and receive messages. What's in a bot varies widely depending on what kind of bot it is. Modern bot software relies on a stack of technology and tools to deliver increasingly complex experiences on a wide variety of platforms. However, a simple bot could just receive a message and echo it back to the user with very little code involved.
 

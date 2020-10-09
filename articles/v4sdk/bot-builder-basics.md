@@ -18,9 +18,8 @@ A bot is an app that users interact with in a conversational way, using text, gr
 
 The Bot Framework Service, which is a component of the Azure Bot Service, sends information between the user's bot-connected app (such as Facebook or Slack and so on, which we call the *channel*) and the bot. Each channel may include additional information in the activities they send. Before creating bots, it is important to understand how a bot uses activity objects to communicate with its users. Let's first take a look at activities that are exchanged when we run a simple echo bot.
 
-![activity diagram](./media/bot-builder-activity.png)
-
-<!-- Tie the wording of the boxes to the content of this article. -->
+> [!div class="mx-imgBorder"]
+> ![activity diagram](./media/bot-builder-activity.png)
 
 Two activity types illustrated here are: *conversation update* and *message*.
 
@@ -71,20 +70,23 @@ The protocol doesn't specify the order in which these POST requests and their ac
     Should it be moved into a separate article?
 -->
 
-The conversational reasoning for the bot, the bot-specific reasoning, is handled by a _bot_ class that implements a turn handler.
+The SDK defines a _bot_ class that handles the conversational reasoning for the bot app. The bot class has a turn handler and:
+
+- Recognizes and interprets the user's input.
+- Reasons about the input and performs relevant tasks.
+- Generates responses about what the bot is doing or has done.
 
 The SDK defines an _adapter_ class that handles connectivity with the channels. The adapter:
 
-- Receives and validates traffic from a channel.
-- Creates a context object for the turn.
-- Calls the bot's turn handler and catches errors not otherwise handled in the turn handler.
-- Manages the actual sending of bot replies to the channel.
+- Provides a method for handling incoming requests from and methods for generating outbound requests to the user's channel.
 - Includes a middleware pipeline, which includes turn processing outside of your bot's turn handler.
+- Calls the bot's turn handler and catches errors not otherwise handled in the turn handler.
 
 Bots often need to retrieve and store state each turn. This is handled through _storage_, _bot state_, and _property accessor_ classes.
 The [managing state](bot-builder-concept-state.md) topic describes these state and storage features.
 
-You need to choose the application layer use for your app; however, the Bot Framework has templates and samples for ASP.NET (C#), Restify (JavaScript), and aiohttp (Python).
+The Bot Framework has templates and samples for ASP.NET (C#), Restify (JavaScript), and aiohttp (Python).
+However, you can choose to use a differ application layer your app.
 
 > [!div class="mx-imgBorder"]
 > ![A bot has connectivity and reasoning elements, and an abstraction for state](../media/architecture/how-bots-work.png)
@@ -107,6 +109,14 @@ The [managing state](bot-builder-concept-state.md) topic describes these state a
 ### The bot adapter
 
 The adapter has a _process activity_ method for starting a turn.
+
+<!--
+- Receives and validates traffic from a channel.
+- Creates a context object for the turn.
+- Calls the bot's turn handler and catches errors not otherwise handled in the turn handler.
+- Manages the actual sending of bot replies to the channel.
+- Includes a middleware pipeline, which includes turn processing outside of your bot's turn handler.
+-->
 
 - It takes the request body (the request payload, translated to an activity) and the request header as arguments.
 - It checks whether the authentication header is valid.
