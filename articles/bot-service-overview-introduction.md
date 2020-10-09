@@ -33,10 +33,10 @@ Bots provide an experience that feels less like using a computer and more like d
 A bot can be thought of as a web application that has a conversational interface.
 A user connects to a bot though a channel such as Facebook, Slack, or Microsoft Teams.
 
-- Depending on how the bot is configured and how it is registered with the channel, users can interact with the bot through text or speech, and the conversation might include images and video.
-- The bot performs recognition on the user's input to interpret what the user is asking for or saying.
 - The bot _reasons_ about input and performs relevant tasks. This can include asking the user for additional information or accessing services on behalf of the user.
+- The bot performs recognition on the user's input to interpret what the user is asking for or saying.
 - The bot generates responses to send to the user to communicate what the bot is doing or has done.
+- Depending on how the bot is configured and how it is registered with the channel, users can interact with the bot through text or speech, and the conversation might include images and video.
 
 > [!div class="mx-imgBorder"]
 > ![A remote bot interacts with a user on a device via text, speech, images, or video](./media/architecture/what-is-a-bot.png)

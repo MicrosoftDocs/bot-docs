@@ -76,7 +76,7 @@ The SDK defines a _bot_ class that handles the conversational reasoning for the 
 - Reasons about the input and performs relevant tasks.
 - Generates responses about what the bot is doing or has done.
 
-The SDK defines an _adapter_ class that handles connectivity with the channels. The adapter:
+The SDK also defines an _adapter_ class that handles connectivity with the channels. The adapter:
 
 - Provides a method for handling incoming requests from and methods for generating outbound requests to the user's channel.
 - Includes a middleware pipeline, which includes turn processing outside of your bot's turn handler.
