@@ -90,7 +90,8 @@ If you don't already have a QnA Maker resource, you can follow the steps below t
 
 3. Review the values to ensure they are correct, then select the **Create** button.
 
-The QnA Maker resource will contain the value needed for the _subscriptionKey_ option used when running the [build command](#create-and-publish-qna-maker-knowledge-bases-using-the-build-command):
+The QnA Maker resource will contain the value needed for the _subscriptionKey_ option used when running the [build command](#create-and-publish-qna-maker-knowledge-bases-using-the-build-command). Copy and save the value for later use. 
+``
 
    ![Keys and endpoint for QnA Maker resource in Azure](./media/adaptive-dialogs/qna-maker-keys-and-endpoint-cross-trainsample.png)
 
