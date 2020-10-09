@@ -78,15 +78,18 @@ The SDK defines a _bot_ class that handles the conversational reasoning for the 
 
 The SDK also defines an _adapter_ class that handles connectivity with the channels. The adapter:
 
-- Provides a method for handling incoming requests from and methods for generating outbound requests to the user's channel.
+- Provides a method for handling requests from and methods for generating requests to the user's channel.
 - Includes a middleware pipeline, which includes turn processing outside of your bot's turn handler.
 - Calls the bot's turn handler and catches errors not otherwise handled in the turn handler.
 
-Bots often need to retrieve and store state each turn. This is handled through _storage_, _bot state_, and _property accessor_ classes.
+Bots often need to retrieve and store state each turn.
+This is handled through _storage_, _bot state_, and _property accessor_ classes.
+The SDK does not provide built-in storage, but does provide abstractions for storage and a few implementations of a storage layer.
 The [managing state](bot-builder-concept-state.md) topic describes these state and storage features.
 
+The SDK does not require you use a specific application layer to send and receive web requests.
 The Bot Framework has templates and samples for ASP.NET (C#), Restify (JavaScript), and aiohttp (Python).
-However, you can choose to use a differ application layer your app.
+However, you can choose to use a differ application layer for your app.
 
 > [!div class="mx-imgBorder"]
 > ![A bot has connectivity and reasoning elements, and an abstraction for state](../media/architecture/how-bots-work.png)
