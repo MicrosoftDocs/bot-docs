@@ -82,7 +82,8 @@ If you configure your own domain name, or your bot is hosted in a sovereign Azur
 </html>
 ```
 
-> [!TIP] In the `JavaScript` bot implementation, make sure that `websockets` are enabled in the `web.config` file as shown below.
+> [!TIP]
+> In the `JavaScript` bot implementation, make sure that `websockets` are enabled in the `web.config` file, as shown below.
 
 ```xml
 <configuration>
