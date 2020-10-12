@@ -15,7 +15,7 @@ ms.date: 10/06/2020
 This article describes how to connect a bot to the **Direct Line channel**. Use this channel to allow your client application to communicate with a bot.
 
 > NOTE
-> The Direct Line is a standard channel over HTTP protocol to allow communication between a client application and a bot. If you require network isolation instead, use the [Direct Line App Service Extension](bot-service-channel-directline-extension.md) over [WebSocket protocol](https://tools.ietf.org/html/rfc6455).
+> The Direct Line is a standard channel over HTTPS protocol to allow communication between a client application and a bot. If you require network isolation instead, use the [Direct Line App Service Extension](bot-service-channel-directline-extension.md) over [WebSocket protocol](https://tools.ietf.org/html/rfc6455).
 
 ## Add the Direct Line channel
 
@@ -52,7 +52,10 @@ When you add the Direct Channel, the Bot Framework generates secret keys. Your c
 
     ![Copy Direct Line key](media/bot-service-channel-connect-directline/directline-copykey.png "Copy Direct Line key")
 
-1. Alternatively, use the Direct Line API to [exchange the key for a token](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md#generate-token) that your client can use to authenticate its subsequent requests within the scope of a single conversation.
+    > [!NOTE]
+    > Secrets should not be exposed or embedded in client applications. See next step.
+
+1. The best practice is to use the Direct Line API to [exchange the key for a token](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md#generate-token). The client application then will use the token to authenticate its requests within the scope of a single conversation.
 
 ## Configure settings
 

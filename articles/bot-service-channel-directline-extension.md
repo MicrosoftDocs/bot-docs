@@ -20,7 +20,7 @@ The Direct Line App Service Extension allows clients to connect directly with th
 ![Direct line app service extension architecture](./media/channels/direct-line-extension-architecture.png "direct line app service extension")
 
 > NOTE
-> If you do not require network isolation and want to use the standard channel over the HTTP protocol, refer to [Connect a bot to Direct Line](bot-service-channel-connect-directline.md).
+> If you do not require network isolation and want to use the standard channel over the HTTPS protocol, refer to [Connect a bot to Direct Line](bot-service-channel-connect-directline.md).
 
 The direct line app service extension adds a new set of streaming extensions to the Bot Framework protocol, which replace HTTP for exchanging messages with a transport that allows bidirectional requests to be sent over a **persistent WebSocket**.
 
