@@ -62,7 +62,7 @@ If you configure your own domain name, or your bot is hosted in a sovereign Azur
     <script>
       (async function() {
         <!-- NOTE: It is highly recommended to replace the below fetch with a call to your own token service as described in step 2 above, and to avoid exposing your channel secret in client side code. -->
-        const res = await fetch('https://<your_app_service>.azurewebsites.net/.bot/v3/directline/tokens/generate', { method: 'POST', Headers:{'Authorization':'Bearer ' + '<Your Bot's Direct Line channel secret>'}});
+        const res = await fetch('https://<your_app_service>.azurewebsites.net/.bot/v3/directline/tokens/generate', { method: 'POST', headers:{'Authorization':'Bearer ' + '<Your Bot's Direct Line channel secret>'}});
         const { token } = await res.json();
 
         window.WebChat.renderWebChat(
