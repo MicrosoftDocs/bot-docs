@@ -20,7 +20,7 @@ This article shows how to use **Adaptive dialog** and **Language Generation** fe
 ## Prerequisites
 
 - Knowledge of [bot basics][concept-basics], [managing state][concept-state], and the [dialogs library][concept-dialogs].
-- A copy of the **multi turn prompt** sample in either [**C#**][cs-sample] or [**JavaScript** preview][js-sample].
+- A copy of the **multi turn prompt** sample in [**C#**][cs-sample].
 
 ### Preliminary steps to add an adaptive dialog to a bot
 
@@ -36,7 +36,6 @@ You must follow the steps described below to add an adaptive dialog to a bot.
 This sample uses an adaptive dialog, a few prompts, and a component dialog to create a simple interaction that asks the user a series of questions. The questions are created using LG templates:
 
 - For C#, defined in [RootDialog.lg](https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Dialogs/RootDialog.lg)
-- For JavaScript, defined in [userProfileDialog.lg](https://github.com/microsoft/BotBuilder-Samples/blob/master/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/dialogs/userProfileDialog.lg) (JavaScript).
 
 The code uses a dialog to cycle through these steps:
 
@@ -52,8 +51,6 @@ The code uses a dialog to cycle through these steps:
 Finally, if they answered yes, display the collected information; otherwise, tell the user that their information will not be kept.
 
 ## Create the main dialog
-
-# [C#](#tab/csharp)
 
 To use dialogs, install the **Microsoft.Bot.Builder.Dialogs.Adaptive** NuGet package.
 
@@ -89,65 +86,13 @@ The `IfCondition` action uses an adaptive expression to either ask the user for 
 
 [!code-csharp[if condition](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=91-119)]
 
-# [JavaScript](#tab/javascript)
-
-To use dialogs, your project needs to install the **botbuilder-dialogs-adaptive** npm package.
-The sample demonstrates how to use **Adaptive dialog** and **Language Generation** features to achieve the same waterfall model functionality.
-
-At start up, the main dialog `UserProfileDialog` is initialized. The bot uses it to interact with the user.
-
-**dialogs/userProfileDialog.js**
-
-The code begins by instantiating the `UserProfileDialog ` class which in turns
-creates an instance of the `AdaptiveDialog` root dialog. At this time, the dialog steps are created using the **Language Generation** templates.
-
-The `OnBeginDialog` implements the **steps** that the dialog uses. It defines the prompts using the LG templates from the `userProfileDialog.lg` file.
-
-[!code-javascript[userProfileDialog constructor](~/../botbuilder-samples/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/dialogs/userProfileDialog.js?range=30-31)]
-
-[!code-javascript[userProfileDialog constructor](~/../botbuilder-samples/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/dialogs/userProfileDialog.js?range=89-90)]
-
----
-
 ## Register the adaptive dialog
 
 To allow the use of the adaptive dialog, the start up code must register the dialog as shown in the lines highlighted below, along with the other services.
 
-# [C#](#tab/csharp)
-
 The root adaptive dialog is created when the bot is created.
 
-# [JavaScript](#tab/javascript)
-
-**index.js**
-
-The code creates the component dialog and services in `index.js`. In particular:
-
-- The root component dialog.
-- Basic services for a bot: a credential provider, an adapter, and the bot implementation.
-- Services for managing state: storage, user state, and conversation state.
-
-Import the required bot services and the component dialog class `userProfileDialog`.
-
-[!code-javascript[index-import](~/../botbuilder-samples/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/index.js?range=7-13)]
-
-Create conversation state with in-memory storage provider.
-
-[!code-javascript[index-storage](~/../botbuilder-samples/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/index.js?range=49-54)]
-
-Create the main dialog and the bot.
-
-[!code-javascript[index-main-dialog](~/../botbuilder-samples/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/index.js?range=56-58)]
-
-Listen for incoming requests and route the message to the bot's main handler.
-
-[!code-javascript[index-run](~/../botbuilder-samples/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/index.js?range=68-74)]
-
----
-
 ## Run the dialog
-
-# [C#](#tab/csharp)
 
 **Bots/Dialogs.cs**
 
@@ -155,17 +100,6 @@ The `DialogManager.OnTurnAsync` runs the adaptive dialog with activities.
 The implementation shown can run any type of `Dialog`. The `ConversationState` is used by the Dialog system. The `UserState` isn't, however, it might have been used in a dialog implementation. The `DialogManager.OnTurnAsync` method takes care of saving the state.
 
 [!code-csharp[Dialogs](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Bots/DialogBot.cs?range=30-34&highlight=4)]
-
-# [JavaScript](#tab/javascript)
-
-**bots/dialogBot.js**
-
-The `DialogBot` extends the `ActivityHandler` and runs the adaptive dialog with activities.
-The state information contained by the`conversationState` and the `userState` are stored for the `dialogManager` to use.
-
-[!code-javascript[index-run](~/../botbuilder-samples/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt/bots/dialogBot.js?range=7-30&highlight=13-14,19-2)]
-
----
 
 > [!NOTE]
 > Memory storage is used for testing purposes only and is not intended for production use.
@@ -194,4 +128,3 @@ The state information contained by the`conversationState` and the `userState` ar
 [component-dialogs]: bot-builder-compositcontrol.md
 
 [cs-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt
-[js-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/adaptive-dialog/javascript_nodejs/01.multi-turn-prompt

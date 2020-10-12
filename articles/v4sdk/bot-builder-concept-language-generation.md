@@ -42,59 +42,27 @@ The following is a simple greeting LG template. Notice that all of the greetings
 
 You can use LG in a variety of ways when developing bots. To start, create one or more [.lg file(s)][3] to cover all possible scenarios where you would use the language generation sub-system with your bot's replies to a user.
 
-# [C#](#tab/csharp)
-
 Make sure you include the language Generation library [`Microsoft.Bot.Builder.LanguageGeneration`](https://www.nuget.org/packages/Microsoft.Bot.Builder.LanguageGeneration/). Then parse and load templates in your .lg file by adding the following:
 
 ```c#
     Templates lgTemplates = Templates.ParseFile(filePath, importResolver?);
 ```
 
-# [JavaScript](#tab/javascript)
-
-Make sure you include the language Generation library [`botbuilder-lg`][15]. Then parse and load templates in your .lg file by adding the following:
-
-```typescript
-     let lgTemplates = Templates.parseFile(filePath, importResolver?);
-```
-
----
-
 When you need template expansion, use `Evaluate` and pass in the relevant template name.
-
-# [C#](#tab/csharp)
 
 ```c#
     var lgOutput = lgTemplates.Evaluate("<TemplateName>", evalData);
 ```
 
-# [JavaScript](#tab/javascript)
-
-```typescript
-    let lgOutput = lgTemplates.evaluate("<TemplateName>", evalData)
-```
-
----
-
 If your template needs specific properties to be passed for resolution/expansion, you can pass them when calling  `Evaluate`.
-
-# [C#](#tab/csharp)
 
 ```c#
     var lgOutput = lgTemplates.Evaluate("WordGameReply", new { GameName = "MarcoPolo" } );
 ```
 
-# [JavaScript](#tab/javascript)
-
-```typescript
-    let lgOutput = lgTemplates.evaluate("WordGameReply", { GameName = "MarcoPolo" } )
-```
-
----
-
 ## Multi-lingual generation and language fallback policy
 
-Your bot might target more than one spoken or display language. You can manage separate instances of the *TemplateEngine*, one per target language. For an example of how to add multiple languages, also known as language fallback, to your bot, see the multi-turn prompt with language fallback sample in [C#](https://aka.ms/csharp-lg-multi-turn-prompt-language-fallback-sample) or [JavaScript](https://aka.ms/js-lg-multi-turn-prompt-language-fallback-sample).
+Your bot might target more than one spoken or display language. You can manage separate instances of the *TemplateEngine*, one per target language. For an example of how to add multiple languages, also known as language fallback, to your bot, see the multi-turn prompt with language fallback sample in [C#](https://aka.ms/csharp-lg-multi-turn-prompt-language-fallback-sample).
 
 <!--
 ## Grammar check and correction
@@ -104,19 +72,9 @@ The current library does not include any capabilities for grammar check or corre
 
 To get all possible expansions of a template, you can use `ExpandTemplate`.
 
-# [C#](#tab/csharp)
-
 ```c#
     var results = lgTemplates.ExpandTemplate("WordGameReply", { GameName = "MarcoPolo" } )
 ```
-
-# [JavaScript](#tab/javascript)
-
-```typescript
-    const results = lgTemplates.expandTemplate("WordGameReply", { GameName = "MarcoPolo" } )
-```
-
----
 
 For example, given this LG content:
 
@@ -158,7 +116,6 @@ The call `ExpandTemplate("TimeOfDayWithCondition", new { time = "evening" })` wi
 - See [.lg file format][3] for more information about .lg files.
 - Read [structured response templates](../language-generation/language-generation-structured-response-template.md) to learn more about complex templates.
 - [C# API Reference](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.languagegeneration)
-- [JavaScript API reference](https://docs.microsoft.com/javascript/api/botbuilder-lg)
 
 <!---
 ## Change Log

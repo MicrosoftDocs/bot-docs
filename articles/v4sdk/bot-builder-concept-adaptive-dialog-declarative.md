@@ -89,43 +89,21 @@ With the resource explorer, you can create resource objects that contain all of 
 
 The resource explorer's _get resource_ method reads the declarative file into a resource object.  The resource object contains the information about the declarative file and can be used by any process that needs to reference it, such as the type loader.
 
-# [C#](#tab/csharp)
-
 ```csharp
 var resource = this.resourceExplorer.GetResource("main.dialog");
 ```
-
-# [JavaScript](#tab/javascript)
-
-```javascript
-let rootDialogResource = resourceExplorer.getResource('echo.dialog');
-```
-
----
 
 ### The type loader
 
 Once the resource explorer's `_get resource_` method reads the declarative file into a resource object, the `_load type_method` casts the resource to an `AdaptiveDialog` object. The `AdaptiveDialog` object can be used the same as any other non-declarative adaptive dialog is used when creating a dialog manager.
 
-# [C#](#tab/csharp)
-
 ```csharp
 dialogManager = new DialogManager(resourceExplorer.LoadType<AdaptiveDialog>(resource));
 ```
 
-# [JavaScript](#tab/javascript)
-
-```javascript
-let dialogManager = new DialogManager(resourceExplorer.loadType(rootDialogResource));
-```
-
----
-
 ### Auto reload dialogs when file changes
 
 Any time a declarative file changes when your bot is running, a _changed_ event fires. You can capture that event and reload your declarative files, that way when any adaptive dialog needs updated you do not need to update your code and recompile your source code or restart your bot. This can be especially useful in a production environment.
-
-# [C#](#tab/csharp)
 
 <!--This example could be improved-->
 ```csharp
@@ -145,31 +123,11 @@ private void LoadRootDialogAsync()
 }
 ```
 
-# [JavaScript](#tab/javascript)
-
-```javascript
-const handleResourceChange = (resources) => {
-    if (Array.isArray(resources)) {
-        if((resources || []).find(r => r.resourceId.endsWith('.dialog')) !== undefined) loadRootDialog();
-    } else {
-        if (resources.resourceId && resources.resourceId.endsWith('.dialog')) loadRootDialog()
-    }
-};
-
-// Add a resource change handler to resource explorer.
-resourceExplorer.emitter.on('changed', handleResourceChange);
-```
-
----
-
 ### The `VersionChanged` event
 
 When your declarative assets have been reloaded to accommodate the changes made to a `.dialog` file, you may need to reevaluate the state of any current conversations to account of any changes to the logic of your dialog. The changes to your logic may be as simple as to clear your conversation stack and restart. More sophisticated logic would enable you to do things like restart a dialog keeping the data you have, allowing you to pick up new properties and or paths that didn't exist before.
 
 The `DialogEvents.VersionChanged` event is captured using the `OnDialogEvent` trigger.
-
-
-# [C#](#tab/csharp)
 
 <!--This example could be improved-->
 ```csharp
@@ -184,18 +142,6 @@ Triggers = new List<OnCondition>()
     }
 }
 ```
-
-# [JavaScript](#tab/javascript)
-
-```javascript
-triggers: [
-    new OnDialogEvent(DialogEvents.VersionChanged)[
-        new SendActivity("The VersionChanged event fired.")
-    ]
-]
-```
-
----
 
 ## Declarative assets
 
