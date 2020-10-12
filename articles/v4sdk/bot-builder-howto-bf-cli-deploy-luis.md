@@ -209,7 +209,7 @@ The following is a sample of the **luconfig.json** file that you can reference u
     "in": "dialogs",
     "out": "generated",
     "botName":"MyProject",
-    "AuthoringKey":"<your-32-digit-subscription-key>",
+    "authoringKey":"<your-32-digit-subscription-key>",
     "region": "westus",
     "schema": "app.schema",
     "defaultCulture":"en-us",
