@@ -71,7 +71,7 @@ If you don't already have a LUIS authoring resource you want to use for this, yo
 
 4. Review the values to ensure they are correct, then select the **Create** button.
 
-The LUIS authoring resource will contain the information needed when running the [build command](#create-and-publish-luis-applications-using-the-build-command) or updating your bots [configuration file](#update-your-projects-configuration-file-to-include-connection-information-for-luis-and-qna-maker). Once the resource is created, you can find the information shown below  in the **Keys and Endpoint** blade in your LUIS authoring resource. Copy and save the values for later use. 
+The LUIS authoring resource will contain the information needed when running the [build command](#create-and-publish-luis-applications-using-the-build-command) or updating your bots [configuration file](#update-your-projects-configuration-file-to-include-connection-information-for-luis-and-qna-maker). Once the resource is created, you can find the information shown below  in the **Keys and Endpoint** blade in your LUIS authoring resource. Copy and save the values for later use.
 
 - **Keys**. Either of the two key values are used as the _subscriptionKey_ option in the [build command](#create-and-publish-luis-applications-using-the-build-command), as well as the _LuisAPIKey_ in your [configuration file](#update-your-projects-configuration-file-to-include-connection-information-for-luis-and-qna-maker).
 - **Endpoint**. This is the value that is used as the _endpoint_ option in the [build command](#create-and-publish-luis-applications-using-the-build-command), as well as the _LuisAPIHostName_ in your [configuration file](#update-your-projects-configuration-file-to-include-connection-information-for-luis-and-qna-maker).
@@ -90,7 +90,7 @@ If you don't already have a QnA Maker resource, you can follow the steps below t
 
 3. Review the values to ensure they are correct, then select the **Create** button.
 
-The QnA Maker resource will contain the value needed for the _subscriptionKey_ option used when running the [build command](#create-and-publish-qna-maker-knowledge-bases-using-the-build-command). Copy and save the value for later use. 
+The QnA Maker resource will contain the value needed for the _subscriptionKey_ option used when running the [build command](#create-and-publish-qna-maker-knowledge-bases-using-the-build-command). Copy and save the value for later use.
 ``
 
    ![Keys and endpoint for QnA Maker resource in Azure](./media/adaptive-dialogs/qna-maker-keys-and-endpoint-cross-trainsample.png)
@@ -101,13 +101,14 @@ The QnA Maker resource will contain the value needed for the _subscriptionKey_ o
 
 ## Generate cross-trained LU models
 
-<!-- ### Create your cross-trained LUIS models -->
+Before running the build command to create your LUIS applications and QnA Maker knowledge base in Azure cognitive services, you need to _cross-train_ your `.lu` and `.qna` files to include the information required by your bot's recognizer to defer user input to either LUIS or QnA Maker for processing.
 
-Before running the build command to create your LUIS applications and QnA Maker knowledge base in Azure cognitive services, you need to _cross-train_ your `.lu` and `.qna` files to include the information required to enable your bots recognizer to defer user input to either LUIS or QnA Maker for processing.
+For each adaptive dialog that has an associated `.lu` and `.qna` file, the `cross-train` command does the following:
 
-This is enabled, using the cross-train command, in your `.lu` files by creating a new `DeferToRecognizer` intent which is created using the following format: `DeferToRecognizer_<recognizer-type>_<dialog-name>`. For example, in **RootDialog.lu** the new intent would be `DeferToRecognizer_QnA_RootDialog`, and it will contain a list of questions from **RootDialog.qna** as its user utterances. When a user enters any of these questions the bot will direct it to the [QnA Maker Recognizer][qna-maker-recognizer] for processing. Note also that **RootDialog.qna** references **ChitChat.qna**, and the contents of that referenced file will also be included in the new cross-trained **RootDialog.lu** file.
+1. For each `.lu` file, the `cross-train` command creates a new intent named: `DeferToRecognizer_<recognizer-type>_<dialog-file-name>` (DeferToRecognizer). Each question from the corresponding `.qna` file becomes an utterance associated with the new intent. Answers are not copied to the `.lu` file from the `.qna` file. When the DeferToRecognizer intent is triggered, the `CreateCrossTrainedRecognizer` recognizer sends the question to the QnA Maker knowledge base to be processed. Anytime a `.qna` file references additional `.qna` files, any questions from those referenced `.qna` files also become utterances associated with the DeferToRecognizer intent.
 
-In `.qna` files, this is enabled by creating a new `DeferToRecognizer` intent created using the following format: `intent=DeferToRecognizer_<recognizer-type>_<dialog-name>`. For example, in **RootDialog.qna** the new intent would be `intent=DeferToRecognizer_LUIS_RootDialog`, and it will contain the utterances from **RootDialog.lu** as its user utterances. When a user enters any of these user utterances the bot will direct it to the [LUIS Recognizer][luis-recognizer] for processing.
+1. For each `.qna` file, the `cross-train` command creates a new answer named: `intent=DeferToRecognizer_<recognizer-type>_<dialog-file-name>` (DeferToRecognizer), and each utterance from all intents in the `.lu` file become questions associated with that answer. When the DeferToRecognizer answer is triggered, the `CreateCrossTrainedRecognizer` recognizer sends the utterance to the LUIS application to be processed. Anytime a `.lu` file references additional `.lu` files, any utterances from those referenced `.lu` files also become questions associated with the DeferToRecognizer answer.
+
 Running the cross-train command will update all `.lu` and `.qna` files in the directory and sub-directories specified.
 
 To create the cross-trained files, both `.lu`  and `.qna`, you can use _either_ the BF CLI `luis:cross-train` or `qnamaker:cross-train` command. You do not need to run both commands since they both do the same thing. The following demonstrates using the `luis:cross-train` command:
@@ -116,7 +117,7 @@ To create the cross-trained files, both `.lu`  and `.qna`, you can use _either_ 
 bf luis:cross-train -i <input-folder-name> -o <output-file-name> --config <cross-train-configuration-file>
 ```
 
-#### The luis:cross-train parameters
+### The luis:cross-train parameters
 
 - `in`: The directory, including sub-directories, that will be searched for both `.lu` and `.qna` files.
 - `out`: The directory to save the new cross-trained `.lu` and `.qna` output files to. This is the directory to which you will point the `luis:build` command's `--in` option.
@@ -362,7 +363,7 @@ Once finished you will have a QnA Maker knowledge base with all of the questions
 
 ## Update your project's configuration file to include connection information for LUIS and QnA Maker
 
-# [C#](#tab/csharp)
+<!--<!--# [C#](#tab/csharp)  -->-->
 
 The configuration file is named **appsettings.json**. The following shows the configuration file for **Todo bot with LUIS and QnA Maker** sample:
 
@@ -404,7 +405,7 @@ The configuration file **appsettings.json** explained:
 
 5. The `qnamaker:build` command will include one settings file, saved to the location provided as the `--out` option, that contains a list of every QnA Maker knowledge base ID that was created for each locale. The full name of this JSON file is `qnamaker.settings.<username>.<authoring-region>.json`. For example, if your logged in username is _YuuriTanaka_ and you are targeting authoring region **westus**, your filename would be **qnamaker.settings.YuuriTanaka.westus.json**. This is where you will find all the values for the `qna` section of your **appsettings.json** file.
 
-# [JavaScript](#tab/javascript)
+<!--# [JavaScript](#tab/javascript)
 
 The configuration file is named **.env**. The following shows the configuration file for **Todo bot with LUIS and QnA Maker** sample:
 
@@ -442,11 +443,11 @@ The configuration file **.env** explained:
 
 5. The `qnamaker:build` command will include one settings file, saved to the location provided as the `--out` option, that contains a list of every QnA Maker knowledge base ID that was created for each locale. The full name of this JSON file is `qnamaker.settings.<username>.<authoring-region>.json`. For example, if your logged in username is _YuuriTanaka_ and you are targeting authoring region **westus**, your filename would be **qnamaker.settings.YuuriTanaka.westus.json**. This is where you will find all the values for the _qna_ section of your **appsettings.json** file.
 
----
+---    -->
 
 ## Testing the bot using Bot Framework Emulator
 
-# [C#](#tab/csharp)
+<!--# [C#](#tab/csharp)  -->
 
 ## Prerequisites for testing the bot using Bot Framework Emulator
 
@@ -484,7 +485,7 @@ This will build the application, deploy it to localhost, and launch the web brow
 
 You can now interact with your bot.
 
-# [JavaScript](#tab/javascript)
+<!--# [JavaScript](#tab/javascript)
 
 - [Node.js](https://nodejs.org/)
 - [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
@@ -524,14 +525,13 @@ At this point, your bot is running locally on port 3978.
 
 3. Enter your bot's URL, which is the URL of the local port, with /api/messages added to the path, typically `http://localhost:3978/api/messages`.
 
-   <!--This is the same process in the Emulator for all three languages.-->
    ![open a bot screen](../media/python/quickstart/open-bot.png)
 
 4. Then click **Connect**.
 
 You can now interact with your bot.
 
----
+---    -->
 
 <!------------------------------------------------------------------------------------------------------------------>
 <!------------------------------------------------------------------------------------------------------------------>
