@@ -118,7 +118,31 @@
 - name: How-To
   items:
   - name: Design
-    href: design/TOC.yml
+    items:
+    - name: Principles of bot design
+      href: bot-service-design-principles.md
+    - name: First interaction
+      href: bot-service-design-first-interaction.md
+    - name: Design bot elements
+      items:
+      - name: Design and control conversation flow
+        href: bot-service-design-conversation-flow.md
+      - name: Design bot navigation
+        href: bot-service-design-navigation.md
+      - name: Design the user experience
+        href: bot-service-design-user-experience.md
+    - name: Patterns
+      items:
+      - name: Task automation
+        href: bot-service-design-pattern-task-automation.md
+      - name: Knowledge base
+        href: bot-service-design-pattern-knowledge-base.md
+      - name: Handoff to human
+        href: bot-service-design-pattern-handoff-human.md
+      - name: Bots in apps
+        href: bot-service-design-pattern-embed-app.md
+      - name: Bots in websites
+        href: bot-service-design-pattern-embed-web-site.md
   - name: Develop
     items:
     - name: Send and receive text message
@@ -214,9 +238,149 @@
     - name: Use Direct Line Speech in your bot
       href: directline-speech-bot.md
     - name: .NET
-      href: dotnet/TOC.yml
+      items:
+      - name: Bot Framework SDK for .NET
+        href: dotnet/bot-builder-dotnet-overview.md
+      - name: Key concepts
+        href: dotnet/bot-builder-dotnet-concepts.md
+      - name: Messages and activities
+        items:
+        - name: Activities overview
+          href: dotnet/bot-builder-dotnet-activities.md
+        - name: Create messages
+          href: dotnet/bot-builder-dotnet-create-messages.md
+        - name: Add media attachments to messages
+          href: dotnet/bot-builder-dotnet-add-media-attachments.md
+        - name: Add rich cards to messages
+          href: dotnet/bot-builder-dotnet-add-rich-card-attachments.md
+        - name: Add speech to messages
+          href: dotnet/bot-builder-dotnet-text-to-speech.md
+        - name: Add input hints to messages
+          href: dotnet/bot-builder-dotnet-add-input-hints.md
+        - name: Add suggested actions to messages
+          href: dotnet/bot-builder-dotnet-add-suggested-actions.md
+        - name: Send and receive activities
+          href: dotnet/bot-builder-dotnet-connector.md
+        - name: Implement global message handlers
+          href: dotnet/bot-builder-dotnet-global-handlers.md
+        - name: Intercept messages
+          href: dotnet/bot-builder-dotnet-middleware.md
+        - name: Send proactive messages
+          href: dotnet/bot-builder-dotnet-proactive-messages.md
+      - name: Dialogs
+        items:
+        - name: Dialogs overview
+          href: dotnet/bot-builder-dotnet-dialogs.md
+        - name: Manage conversation flow
+          href: dotnet/bot-builder-dotnet-manage-conversation-flow.md
+        - name: Scorable dialogs
+          href: dotnet/bot-builder-dotnet-scorable-dialogs.md
+      - name: FormFlow
+        items:
+        - name: Basic features of FormFlow
+          href: dotnet/bot-builder-dotnet-formflow.md
+        - name: Advanced features of FormFlow
+          href: dotnet/bot-builder-dotnet-formflow-advanced.md
+        - name: FormBuilder
+          href: dotnet/bot-builder-dotnet-formflow-formbuilder.md
+        - name: Pattern language
+          href: dotnet/bot-builder-dotnet-formflow-pattern-language.md
+        - name: Localization
+          href: dotnet/bot-builder-dotnet-formflow-localize.md
+        - name: JSON schema
+          href: dotnet/bot-builder-dotnet-formflow-json-schema.md
+      - name: Channels
+        items:
+        - name: Implement channel-specific functionality
+          href: dotnet/bot-builder-dotnet-channeldata.md
+        - name: Build a Cortana skill
+          href: dotnet/bot-builder-dotnet-cortana-skill.md
+        - name: Conduct audio calls with Skype
+          href: dotnet/bot-builder-dotnet-audio-calls.md
+      - name: State data
+        items:
+        - name: Manage state data
+          href: dotnet/bot-builder-dotnet-state.md
+        - name: Manage state data using Cosmos DB
+          href: dotnet/bot-builder-dotnet-state-azure-cosmosdb.md
+        - name: Manage state data using Table storage
+          href: dotnet/bot-builder-dotnet-state-azure-table-storage.md
+      - name: Recognize intent with LUIS
+        href: dotnet/bot-builder-dotnet-luis-dialogs.md
+      - name: Request payment
+        href: dotnet/bot-builder-dotnet-request-payment.md
+      - name: Add Azure Search
+        href: dotnet/bot-builder-dotnet-search-azure.md
+      - name: Secure your bot
+        href: dotnet/bot-builder-dotnet-security.md
     - name: Node.js
-      href: nodejs/TOC.yml
+      items:
+      - name: Bot Framework SDK for Node.js
+        href: nodejs/bot-builder-nodejs-overview.md
+      - name: Key concepts
+        href: nodejs/bot-builder-nodejs-concepts.md
+      - name: Dialogs
+        items:
+        - name: Dialogs overview
+          href: nodejs/bot-builder-nodejs-dialog-overview.md
+        - name: Define conversation steps
+          href: nodejs/bot-builder-nodejs-dialog-waterfall.md
+        - name: Prompt for user input
+          href: nodejs/bot-builder-nodejs-dialog-prompt.md
+        - name: Manage conversation flow
+          href: nodejs/bot-builder-nodejs-dialog-manage-conversation-flow.md
+        - name: Replace dialogs
+          href: nodejs/bot-builder-nodejs-dialog-replace.md
+        - name: Handle user actions
+          href: nodejs/bot-builder-nodejs-dialog-actions.md
+      - name: Messages
+        items:
+        - name: Create messages
+          href: nodejs/bot-builder-nodejs-message-create.md
+        - name: Send and receive attachments
+          href: nodejs/bot-builder-nodejs-send-receive-attachments.md
+        - name: Send proactive messages
+          href: nodejs/bot-builder-nodejs-proactive-messages.md
+        - name: Add rich cards to messages
+          href: nodejs/bot-builder-nodejs-send-rich-cards.md
+        - name: Add speech to messages
+          href: nodejs/bot-builder-nodejs-text-to-speech.md
+        - name: Add input hints to messages
+          href: nodejs/bot-builder-nodejs-send-input-hints.md
+        - name: Add suggested actions to messages
+          href: nodejs/bot-builder-nodejs-send-suggested-actions.md
+        - name: Send a typing indicator
+          href: nodejs/bot-builder-nodejs-send-typing-indicator.md
+        - name: Intercept messages
+          href: nodejs/bot-builder-nodejs-intercept-messages.md
+      - name: Channels
+        items:
+        - name: Build a Cortana skill
+          href: nodejs/bot-builder-nodejs-cortana-skill.md
+        - name: Conduct Skype calls
+          href: nodejs/bot-builder-nodejs-conduct-audio-calls.md
+      - name: State Data
+        items:
+        - name: Manage state data
+          href: nodejs/bot-builder-nodejs-state.md
+        - name: Manage state data with Cosmos DB
+          href: nodejs/bot-builder-nodejs-state-azure-cosmosdb.md
+        - name: Manage state data with Table storage
+          href: nodejs/bot-builder-nodejs-state-azure-table-storage.md
+      - name: Recognize intent from message content
+        href: nodejs/bot-builder-nodejs-recognize-intent-messages.md
+      - name: Recognize intent with LUIS
+        href: nodejs/bot-builder-nodejs-recognize-intent-luis.md
+      - name: Handle user and conversation events
+        href: nodejs/bot-builder-nodejs-handle-conversation-events.md
+      - name: Support localization
+        href: nodejs/bot-builder-nodejs-localization.md
+      - name: Use backchannel mechanism
+        href: nodejs/bot-builder-nodejs-backchannel.md
+      - name: Request payment
+        href: nodejs/bot-builder-nodejs-request-payment.md
+      - name: Add Azure Search
+        href: nodejs/bot-builder-nodejs-search-azure.md
   - name: Test
     items:
     - name: Unit testing bots
@@ -224,7 +388,23 @@
     - name: Add trace activities to your bot
       href: v4sdk/using-trace-activities.md
   - name: Debug
-    href: debug/TOC.yml
+    items:
+    - name: Debug a bot using IDE
+      href: bot-service-debug-bot.md
+    - name: Debug a bot using IDE
+      href: bot-service-debug-bot-v3.md
+    - name: Debug with the Bot Framework Emulator
+      href: bot-service-debug-emulator.md
+    - name: Debug a bot from any channel using ngrok
+      href: bot-service-debug-channel-ngrok.md
+    - name: Debug a skill or skill consumer
+      href: v4sdk/skills-debug-skill-or-consumer.md
+    - name: Debug a bot with inspection middleware
+      href: bot-service-debug-inspection-middleware.md
+    - name: Debug your bot using transcript files
+      href: v4sdk/bot-builder-debug-transcript.md
+    - name: Test a Cortana skill
+      href: bot-service-debug-cortana-skill.md
   - name: Deploy
     items:
     - name: Deploy your bot to Azure
@@ -232,9 +412,114 @@
     - name: Set up continuous deployment
       href: bot-service-build-continuous-deployment.md
   - name: Manage
-    href: manage/TOC.yml
+    items:
+    - name: Manage a bot
+      href: bot-service-manage-overview.md
+    - name: Bot channels registration
+      href: bot-service-quickstart-registration.md
+    - name: Bot analytics
+      href: bot-service-manage-analytics.md
+    - name: Configure bot settings
+      href: bot-service-manage-settings.md
+    - name: Configure speech priming
+      href: bot-service-manage-speech-priming.md
+    - name: Channels
+      items:
+      - name: Connect a bot to channels
+        href: bot-service-manage-channels.md
+      - name: Implement channel-specific functionality
+        href: v4sdk/bot-builder-channeldata.md
+      - name: Cortana
+        href: bot-service-channel-connect-cortana.md
+      - name: Direct Line
+        items:
+        - name: About Direct Line
+          href: bot-service-channel-directline.md
+        - name: Connect to Direct Line
+          href: bot-service-channel-connect-directline.md
+        - name: Connect to Direct Line Speech
+          href: bot-service-channel-connect-directlinespeech.md
+        - name: Direct Line App Service Extension
+          href: bot-service-channel-directline-extension.md
+          items:
+          - name: Configure .NET bot for extension
+            href: bot-service-channel-directline-extension-net-bot.md
+          - name: Configure Node.js bot for extension
+            href: bot-service-channel-directline-extension-node-bot.md
+          - name: Create .NET Client with extension
+            href: bot-service-channel-directline-extension-net-client.md
+          - name: Use extension with WebChat
+            href: bot-service-channel-directline-extension-webchat-client.md
+          - name: Use extenson within VNET
+            href: bot-service-channel-directline-extension-vnet.md
+      - name: Alexa
+        href: bot-service-channel-connect-alexa.md
+      - name: Email
+        href: bot-service-channel-connect-email.md
+      - name: Enable speech in Web Chat
+        href: bot-service-channel-connect-webchat-speech.md
+      - name: Facebook
+        href: bot-service-channel-connect-facebook.md
+      - name: GroupMe
+        href: bot-service-channel-connect-groupme.md
+      - name: Kik
+        href: bot-service-channel-connect-kik.md
+      - name: LINE
+        href: bot-service-channel-connect-line.md
+      - name: Microsoft Teams
+        href: channel-connect-teams.md
+      - name: Skype
+        href: bot-service-channel-connect-skype.md
+      - name: Skype for Business
+        href: bot-service-channel-connect-skypeforbusiness.md
+      - name: Slack
+        href: bot-service-channel-connect-slack.md
+      - name: Telegram
+        href: bot-service-channel-connect-telegram.md
+      - name: Twilio
+        href: bot-service-channel-connect-twilio.md
+      - name: WeChat
+        href: bot-service-channel-connect-wechat.md
+      - name: Web Chat
+        href: bot-service-channel-connect-webchat.md
+      - name: Webex
+        href: bot-service-adapter-connect-webex.md
+      - name: Additional channels
+        href: bot-service-channel-additional-channels.md
   - name: Migrate
-    href: v4sdk/migration/TOC.yml
+    items:
+    - name: Migration overview
+      href: v4sdk/migration/migration-overview.md
+    - name: Migrating .NET bots
+      items:
+      - name: Differences between the v3 and v4 .NET SDK
+        href: v4sdk/migration/migration-about.md
+      - name: .NET migration quick reference
+        href: v4sdk/migration/net-migration-quickreference.md
+      - name: Migrate a .NET v3 bot to a .NET Framework v4 bot
+        href: v4sdk/migration/conversion-framework.md
+      - name: Migrate a .NET v3 bot to a .NET Core v4 bot
+        href: v4sdk/migration/conversion-core.md
+      - name: Using .NET v3 user state in a v4 bot
+        href: v4sdk/migration/csharp-user-state-using.md
+    - name: Migrating JavaScript bots
+      items:
+      - name: Differences between the v3 and v4 JavaScript SDK
+        href: v4sdk/migration/migration-about-javascript.md
+      - name: JavaScript migration quick reference
+        href: v4sdk/migration/javascript-migration-quickreference.md
+      - name: Migrate a JavaScript v3 bot to a v4 bot
+        href: v4sdk/migration/conversion-javascript.md
+      - name: Using JavaScript v3 user state in a v4 bot
+        href: v4sdk/migration/javascript-user-state-using.md
+    - name: Convert a v3 bot to a skill
+      items:
+      - name: Converting to a skill overview
+        href: v4sdk/migration/convert-to-skill-overview.md
+      - name: Convert a .NET v3 bot to a skill
+        href: v4sdk/migration/net-v3-as-skill.md
+      - name: Convert a JavaScript v3 bot to a skill
+        href: v4sdk/migration/javascript-v3-as-skill.md
 - name: Reference
   items:
   - name: API SDK reference
@@ -256,7 +541,77 @@
       - name: Node.js SDK v3
         href: https://aka.ms/bot-jssdk-v3
   - name: REST
-    href: rest-api/TOC.yml
+    items:
+    - name: Bot Framework REST API
+      items:
+      - name: Overview
+        href: rest-api/bot-framework-rest-overview.md
+      - name: Key concepts
+        href: rest-api/bot-framework-rest-connector-concepts.md
+      - name: Create a bot with REST
+        href: rest-api/bot-framework-rest-connector-quickstart.md
+      - name: API reference
+        href: rest-api/bot-framework-rest-connector-api-reference.md
+    - name: Connector
+      items:
+      - name: Authentication
+        href: rest-api/bot-framework-rest-connector-authentication.md
+      - name: Activities overview
+        href: https://aka.ms/botSpecs-activitySchema
+      - name: Create messages
+        href: rest-api/bot-framework-rest-connector-create-messages.md
+      - name: Send and receive messages
+        href: rest-api/bot-framework-rest-connector-send-and-receive-messages.md
+      - name: Add media attachments to messages
+        href: rest-api/bot-framework-rest-connector-add-media-attachments.md
+      - name: Add rich cards to messages
+        href: rest-api/bot-framework-rest-connector-add-rich-cards.md
+      - name: Add speech to messages
+        href: rest-api/bot-framework-rest-connector-text-to-speech.md
+      - name: Add input hints to messages
+        href: rest-api/bot-framework-rest-connector-add-input-hints.md
+      - name: Add suggested actions to messages
+        href: rest-api/bot-framework-rest-connector-add-suggested-actions.md
+      - name: Implement channel-specific functionality
+        href: rest-api/bot-framework-rest-connector-channeldata.md
+      - name: Manage state data
+        href: rest-api/bot-framework-rest-state.md
+    - name: Direct Line API 3.0
+      items:
+      - name: Key concepts
+        href: rest-api/bot-framework-rest-direct-line-3-0-concepts.md
+      - name: Authentication
+        href: rest-api/bot-framework-rest-direct-line-3-0-authentication.md
+      - name: Start a conversation
+        href: rest-api/bot-framework-rest-direct-line-3-0-start-conversation.md
+      - name: Reconnect to a conversation
+        href: rest-api/bot-framework-rest-direct-line-3-0-reconnect-to-conversation.md
+      - name: Send an activity to the bot
+        href: rest-api/bot-framework-rest-direct-line-3-0-send-activity.md
+      - name: Receive activities from the bot
+        href: rest-api/bot-framework-rest-direct-line-3-0-receive-activities.md
+      - name: End a conversation
+        href: rest-api/bot-framework-rest-direct-line-3-0-end-conversation.md
+      - name: API reference
+        href: rest-api/bot-framework-rest-direct-line-3-0-api-reference.md
+      - name: Swagger file
+        href: https://github.com/microsoft/botframework-sdk/blob/main/specs/botframework-protocol/directline-3.0.json
+    - name: Direct Line API 1.1
+      items:
+      - name: Key concepts
+        href: rest-api/bot-framework-rest-direct-line-1-1-concepts.md
+      - name: Authentication
+        href: rest-api/bot-framework-rest-direct-line-1-1-authentication.md
+      - name: Start a conversation
+        href: rest-api/bot-framework-rest-direct-line-1-1-start-conversation.md
+      - name: Send a message to the bot
+        href: rest-api/bot-framework-rest-direct-line-1-1-send-message.md
+      - name: Receive messages from the bot
+        href: rest-api/bot-framework-rest-direct-line-1-1-receive-messages.md
+      - name: API reference
+        href: rest-api/bot-framework-rest-direct-line-1-1-api-reference.md
+      - name: Swagger file
+        href: https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-protocol/directline-1.1.json
   - name: Bot Framework CLI tool
     href: v4sdk/bf-cli-overview.md
   - name: Adaptive dialogs
@@ -296,4 +651,73 @@
   - name: Entities and activity types
     href: bot-service-activities-entities.md
 - name: Resources
-  href: resources/TOC.yml
+  items:
+  - name: Get support
+    href: bot-service-resources-links-help.md
+  - name: App Insights keys
+    href: bot-service-resources-app-insights-keys.md
+  - name: Bot Service Compliance
+    href: bot-service-compliance.md
+  - name: Bot Service Encryption
+    href: bot-service-encryption.md
+  - name: Bot review guidelines
+    href: bot-service-review-guidelines.md
+  - name: Channel reference
+    href: bot-service-channels-reference.md
+  - name: Guide to identifiers
+    href: bot-service-resources-identifiers-guide.md
+  - name: Implement a skill for Power Virtual Agents
+    href: v4sdk/skill-pva.md
+  - name: User-agent requests
+    href: bot-service-resources-user-agent.md
+  - name: FAQ
+    items:
+    - name: Index
+      href: bot-service-resources-bot-framework-faq.md
+    - name: Availability
+      href: bot-service-resources-faq-availability.md
+    - name: General
+      href: bot-service-resources-faq-general.md
+    - name: Ecosystem
+      href: bot-service-resources-faq-ecosystem.md
+    - name: Security
+      href: bot-service-resources-faq-security.md
+    - name: Azure
+      href: bot-service-resources-faq-azure.md
+  - name: Troubleshoot
+    items:
+    - name: Index
+      href: bot-service-troubleshoot-index.md
+    - name: General
+      href: bot-service-troubleshoot-general-problems.md
+    - name: Configuration
+      href: bot-service-troubleshoot-bot-configuration.md
+    - name: HTTP 500 errors
+      href: bot-service-troubleshoot-500-errors.md
+    - name: Authentication
+      href: bot-service-troubleshoot-authentication-problems.md
+  - name: Bot Framework schemas
+    items:
+    - name: Activity schema
+      href: https://aka.ms/botSpecs-activitySchema
+    - name: Card schema
+      href: https://aka.ms/botSpecs-cardSchema
+    - name: Transcript schema
+      href: https://aka.ms/botSpecs-transcripts
+  - name: Virtual Assistant
+    items:
+    - name: Overview
+      href: v4sdk/bot-builder-virtual-assistant-introduction.md
+    - name: Template Introduction
+      href: v4sdk/bot-builder-virtual-assistant-template.md
+    - name: Virtual Assistant Skills
+      href: v4sdk/bot-builder-skills-overview.md
+  - name: WebChat
+    items:
+    - name: Overview
+      href: v4sdk/bot-builder-webchat-overview.md
+    - name: Customization
+      href: v4sdk/bot-builder-webchat-customization.md
+    - name: Add single sign on to Web Chat
+      href: v4sdk/bot-builder-webchat-sso.md
+
