@@ -40,7 +40,7 @@ This article describes how to perform some common tasks using the Bot Framework 
 1. [Train your LUIS application](#train-your-luis-application)
 1. [Publish your LUIS application](#publish-your-luis-application)
 1. [Generate source code](#generate-source-code)
-1. [Create and train a LUIS app then publish it using the build command][create-and-train-a-luis-app-then-publish-it-using-the-build-command]
+1. [Create and train a LUIS app then publish it using the build command](#create-and-train-a-luis-app-then-publish-it-using-the-build-command)
 
 Once your bot project's language understanding resources have been created, you are ready to follow the steps outlined in this article to get LUIS working.
 
