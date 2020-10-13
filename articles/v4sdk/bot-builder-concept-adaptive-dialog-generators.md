@@ -124,7 +124,7 @@ Read [structured response template](../language-generation/language-generation-s
 
 After creating templates for your bot you can add them to your adaptive dialog. You can set the generator to an _.lg_ file or set the generator to a `TemplateEngineLanguageGenerator` instance where you explicitly manage the one or more _.lg_ files. The example below shows the latter approach.
 
-### [C#](#tab/csharp)
+<!--### [C#](#tab/csharp)-->
 
 Say you want to add templates from **RootDialog.lg** to an adaptive dialog. Add the following packages to your code:
 
@@ -163,7 +163,7 @@ new SendActivity("${FinalUserProfileReadOut()}")
 
 In the example above, the bot calls the `FinalUserProfileReadOut` template and responds with the contents of the template.
 
-### [Javascript](#tab/javascript)
+<!--### [Javascript](#tab/javascript)
 
 Say you want to add templates from **RootDialog.lg** to an adaptive dialog. Add the following lines to your code to require the necessary packages:
 
@@ -198,7 +198,7 @@ new SendActivity('${FinalUserProfileReadOut()}')
 
 In the example above, the bot calls the `FinalUserProfileReadOut` template and responds with the contents of the template.
 
----
+---    -->
 
 ## Additional Information
 
