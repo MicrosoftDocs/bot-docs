@@ -47,7 +47,7 @@ You can use LG in a variety of ways when developing bots. To start, create one o
 Make sure you include the language Generation library [`Microsoft.Bot.Builder.LanguageGeneration`](https://www.nuget.org/packages/Microsoft.Bot.Builder.LanguageGeneration/). Then parse and load templates in your .lg file by adding the following:
 
 ```c#
-    _templates = Templates.ParseFile(fullPath)
+    _templates = Templates.ParseFile(fullPath);
 ```
 
 # [JavaScript](#tab/javascript)
@@ -87,7 +87,7 @@ If your template needs specific properties to be passed for resolution/expansion
 # [JavaScript](#tab/javascript)
 
 ```typescript
-    let lgOutput = lgTemplates.evaluate("WordGameReply", { GameName = "MarcoPolo" } )
+    let lgOutput = lgTemplates.evaluate("WordGameReply", { GameName = "MarcoPolo" } );
 ```
 
 ---
