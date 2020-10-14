@@ -166,7 +166,7 @@ As well as the channel available in the Azure Bot Service to connect your bot wi
 
 Log into [Slack](https://slack.com/signin) and then go to [create a Slack application](https://api.slack.com/apps) channel.
 
-![Set up bot](~/media/channels/slack-NewApp.png)
+![Set up bot adapter](~/media/channels/slack-NewApp.png)
 
 Click the 'Create new app' button.
 
