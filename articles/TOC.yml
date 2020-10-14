@@ -96,7 +96,6 @@
     href: v4sdk/bot-builder-concept-adaptive-expressions.md
   - name: Language Generation
     href: v4sdk/bot-builder-concept-language-generation.md
-  - name: Key scenarios for bots
 - name: How-To
   items:
   - name: Design
@@ -215,19 +214,6 @@
       href: v4sdk/bot-builder-telemetry-analytics-queries.md
     - name: Use Direct Line Speech in your bot
       href: directline-speech-bot.md
-    - name: .NET
-      items:
-      - name: Messages and activities
-      - name: Dialogs
-      - name: FormFlow
-      - name: Channels
-      - name: State data
-    - name: Node.js
-      items:
-      - name: Dialogs
-      - name: Messages
-      - name: Channels
-      - name: State Data
   - name: Test
     items:
     - name: Unit testing bots
@@ -363,25 +349,17 @@
         href: v4sdk/migration/javascript-v3-as-skill.md
 - name: Reference
   items:
-  - name: API SDK reference
+  - name: v4 SDK reference
     items:
-    - name: v4
-      items:
-      - name: .NET SDK v4
-        href: https://aka.ms/botframework-v4-cs-sdk
-      - name: JavaScript SDK v4
-        href: https://aka.ms/bot-jssdk-v4
-      - name: Java SDK v4 (preview)
-        href: https://aka.ms/botframework-v4-java-sdk
-      - name: Python SDK v4
-        href: https://aka.ms/botframework-v4-python-sdk
-    - name: v3
-      items:
-      - name: .NET SDK v3
-        href: https://aka.ms/botframework-v3-cs-sdk
-      - name: Node.js SDK v3
-        href: https://aka.ms/bot-jssdk-v3
-  - name: REST
+    - name: .NET SDK v4
+      href: https://aka.ms/botframework-v4-cs-sdk
+    - name: JavaScript SDK v4
+      href: https://aka.ms/bot-jssdk-v4
+    - name: Java SDK v4 (preview)
+      href: https://aka.ms/botframework-v4-java-sdk
+    - name: Python SDK v4
+      href: https://aka.ms/botframework-v4-python-sdk
+  - name: REST API reference
     items:
     - name: Bot Framework REST API
       items:
@@ -393,7 +371,7 @@
         href: rest-api/bot-framework-rest-connector-quickstart.md
       - name: API reference
         href: rest-api/bot-framework-rest-connector-api-reference.md
-    - name: Connector
+    - name: Connector API
       items:
       - name: Authentication
         href: rest-api/bot-framework-rest-connector-authentication.md

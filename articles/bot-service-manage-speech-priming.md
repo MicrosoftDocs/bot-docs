@@ -14,7 +14,7 @@ ms.date: 12/13/2017
 
 Speech priming improves the recognition of spoken words and phrases that are commonly used in a bot.
 
-For speech-enabled bots that use the [Web Chat](bot-service-channel-connect-wechat.md) and [Cortana](~/bot-service-channel-connect-cortana.md) channels, speech priming uses examples specified in Language Understanding ([LUIS](https://www.luis.ai/)) apps to improve speech recognition accuracy for important words.
+For speech-enabled bots that use the [Web Chat](bot-service-channel-connect-webchat.md) and [Cortana](~/bot-service-channel-connect-cortana.md) channels, speech priming uses examples specified in Language Understanding ([LUIS](https://www.luis.ai/)) apps to improve speech recognition accuracy for important words.
 
 Your bot may already be integrated with a LUIS app, or you can choose to create a LUIS app to associate with your bot for speech priming. The LUIS app contains examples of what you expect users to say to your bot. Important words that you want the bot to recognize should be labeled as entities. For example, in a chess bot you want to make sure that when the user says "Move knight", it isn’t interpreted as "Move night". The LUIS app should include examples in which "knight" is labeled as an entity.
 

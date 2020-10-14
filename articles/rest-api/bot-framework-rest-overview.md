@@ -11,11 +11,6 @@ ms.date: 02/20/2020
 
 # Bot Framework REST APIs
 
-> [!div class="op_single_selector"]
-> - [.NET](../dotnet/bot-builder-dotnet-overview.md)
-> - [Node.js](../nodejs/bot-builder-nodejs-overview.md)
-> - [REST](../rest-api/bot-framework-rest-overview.md)
-
 Most Bot Framework bots are built using the Bot Framework SDK, which organizes your bot and handles all conversations for you. An alternative to using the SDK is to send messages directly to the bot using a REST API.
 
 ## Build a bot
