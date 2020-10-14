@@ -59,14 +59,8 @@ The following example message shows a JSON file that includes these `channelData
 }
 ```
 
-::: moniker range="azure-bot-service-3.0"
-For more information about using `channelData`, see the [Node.js](https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/core-ChannelData) sample or [.NET](~/dotnet/bot-builder-dotnet-channeldata.md) documentation.
-::: moniker-end
-
-::: moniker range="azure-bot-service-4.0"
 For more information about using `channelData`,
 see [how to implement channel-specific functionality](~/v4sdk/bot-builder-channeldata.md).
-::: moniker-end
 
 ## Other considerations
 
@@ -77,15 +71,6 @@ If your bot does not return a 200 OK HTTP status code within 15 seconds in respo
 
 ## Additional resources
 
-<!-- Put whole list in monikers, even though it's just the second item that needs to be different. -->
-::: moniker range="azure-bot-service-3.0"
-* Connect a bot to [channels](~/bot-service-manage-channels.md)
-* [Implement channel-specific functionality](dotnet/bot-builder-dotnet-channeldata.md) with the Bot Framework SDK for .NET
-* Read the [channels reference](bot-service-channels-reference.md) article for more information about which features are supported on each channel
-::: moniker-end
-::: moniker range="azure-bot-service-4.0"
 * Connect a bot to [channels](~/bot-service-manage-channels.md)
 * [Implement channel-specific functionality](~/v4sdk/bot-builder-channeldata.md) with the Bot Framework SDK for .NET
 * Read the [channels reference](bot-service-channels-reference.md) article for more information about which features are supported on each channel
-::: moniker-end
-
