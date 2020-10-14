@@ -30,7 +30,7 @@ In a procedural conversation flow, you define the order of the questions and the
 
 You can structure these modules to flow in any way you like, ranging from free form to sequential. The Bot Framework SDK provides several libraries that allows you to construct any conversational flow your bot needs. For example, the `prompts` library allows you to ask users for input, the `waterfall` library allows you to define a sequence of question/answer pair, the `dialog control` library allows you to modularized your conversational flow logic, etc. All of these libraries are tied together through a `dialogs` object. Let's take a closer look at how modules are implemented as `dialogs` to design and manage conversation flows and see how that flow is similar to the traditional application flow.
 
-![bot](./media/designing-bots/core/dialogs-screens.png)
+![Application GUI flow compared to bot conversation flow](./media/designing-bots/core/dialogs-screens.png)
 
 In a traditional application, everything begins with the **main screen**.
 The **main screen** invokes the **new order screen**.
@@ -53,7 +53,7 @@ Although it would be great if users always traveled such a linear, logical path,
 Humans do not communicate in sequential `dialogs`. They tend to frequently change their minds.
 Consider the following example:
 
-![bot](./media/bot-service-design-conversation-flow/stack-issue.png)
+![User asks a question in response to a question from the bot](./media/bot-service-design-conversation-flow/stack-issue.png)
 
 While your bot may be procedural centric, the user may decide to do something entirely different or ask a question that may be unrelated to the current topic.
 In the example above, the user asks a question rather than providing the yes/no response that the bot expects.

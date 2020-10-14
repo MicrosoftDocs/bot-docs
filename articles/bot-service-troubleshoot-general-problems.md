@@ -14,7 +14,7 @@ These frequently asked questions can help you to troubleshoot common bot develop
 
 ## How can I troubleshoot issues with my bot?
 
-1. Debug your bot's source code with [Visual Studio Code](debug-bots-locally-vscode.md) or [Visual Studio](https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger?view=vs-2017).
+1. Debug your bot's source code with [Visual Studio Code](debug-bots-locally-vscode.md) or [Visual Studio](https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger).
 1. Test your bot using the [emulator](bot-service-debug-emulator.md) before you deploy it to the cloud.
 1. Deploy your bot to a cloud hosting platform such as Azure and then test connectivity to your bot by using the built-in web chat control on your bot's dashboard in the <a href="https://portal.azure.com" target="_blank">Azure Portal</a>. If you encounter issues with your bot after you deploy it to Azure, you might consider using this blog article: [Understanding Azure troubleshooting and support](https://azure.microsoft.com/blog/understanding-azure-troubleshooting-and-support/).
 1. Rule out [authentication][TroubleshootingAuth] as a possible issue.
@@ -93,7 +93,7 @@ Bots in development on Kik are allowed 50 subscribers. After 50 unique users hav
 
 ## How can I use authenticated services from my bot?
 
-For Azure Active Directory authentication, see the adding authentication [V3](https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-authentication?view=azure-bot-service-3.0&tabs=csharp) | [V4](https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-authentication?view=azure-bot-service-4.0&tabs=csharp).
+For Azure Active Directory authentication, see the [Add authentication to your bot](v4sdk/bot-builder-authentication.md) tutorial.
 
 > [!NOTE]
 > If you add authentication and security functionality to your bot, you should ensure that the patterns you implement in your code comply with the security standards that are appropriate for your application.
