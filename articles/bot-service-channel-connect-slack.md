@@ -26,9 +26,7 @@ You can select one of the following choices to configure a **Slack app**:
 
     ![Set up bot](./media/channels/slack-NewApp.png)
 
-### Create a Slack app and assign a Development Slack team
-
-1. Click the **Create New App** button.
+1. Click **Create New App**.
 1. In the **App Name** box, enter the name of your Slack application
 1. In the **Development Slack Team** box, enter the name of your development team. If you are not already a member of a Development Slack Team, [create or join one](https://slack.com/).
 
@@ -39,19 +37,19 @@ You can select one of the following choices to configure a **Slack app**:
 ### Add a new redirect URL and scopes
 
 1. In the left panel, select the **OAuth & Permissions** menu item.
-1. In the right panel, click the **Add a new Redirect URL**.
+1. In the right panel, click **Add a new Redirect URL**.
 1. In the box, enter [https://slack.botframework.com](https://slack.botframework.com).
 1. Click **Add**.
 1. Click **Save URLs**.
 
     ![Add Redirect URL](~/media/channels/slack-RedirectURL.png)
 
-1. In the **Scopes** section, in the **Bot Token Scopes** section , click the **Add an OAuth Scope**.
+1. In the **Scopes** section, in the **Bot Token Scopes** sub-section , click the **Add an OAuth Scope**.
 1. Make sure that the following values are selected.
 
     ![app scopes](~/media/channels/slack-app-scopes.png)
 
-    Do not be confused about the difference between adding a **Bot Token Scope** or a **User Token Scope**. For more information, see Slack documentation [Requesting scopes](https://api.slack.com/authentication/basics#scopes).
+Do not be confused about the difference between adding a **Bot Token Scope** or a **User Token Scope**. For more information, see Slack documentation [Requesting scopes](https://api.slack.com/authentication/basics#scopes).
 <!--
 ## Create a Slack Bot User
 
@@ -76,9 +74,9 @@ Follow these steps to subscribe to six particular bot events. By subscribing to 
 > visit [https://dev.botframework.com/bots](https://dev.botframework.com/bots),
 > choose a bot, and record the name of the bot.
 
-1. Select the **Event Subscriptions** item.
-1. Set **Enable Events** to **On**.
-1. In **Request URL**, enter `https://slack.botframework.com/api/Events/{YourBotHandle}`, where `{YourBotHandle}` is your bot handle, without the braces. The bot handle used in this example is **ContosoBot**.
+1. In the left panel, select the **Event Subscriptions** item.
+1. In the right panel, set **Enable Events** to **On**.
+1. In **Request URL**, enter `https://slack.botframework.com/api/Events/{YourBotHandle}`, where `{YourBotHandle}` is your bot handle, without the braces.
 
    ![subscribe events](~/media/channels/slack-subscribe-events.png)
 
@@ -105,33 +103,31 @@ If your bot will use Slack-specific functionality such as buttons, follow these 
 
     ![Enable messages](~/media/channels/slack-MessageURL.png)
 
-### Gather credentials
+### Gather app credentials
 
-Select the **Basic Information** tab and scroll to the **App Credentials** section.
-The **Client ID**, **Client Secret**, and **Verification Token** required for configuration of your Slack bot are displayed.
+1. In the left panel, select the **Basic Information** item.
+1. In the right panel, scroll to the **App Credentials** section.
+The **Client ID**, **Client Secret**, and **Signing Secrte** required for configuring your Slack bot channel are displayed.
 
 ![Gather credentials](~/media/channels/slack-AppCredentials.png)
 
-## Submit credentials
+#### Configure the Slack bot channel
 
 1. In a separate browser window, navigate to the [Microsoft Bot Framework](https://dev.botframework.com/).
 
 1. Select **My bots** and choose the Bot that you want to connect to Slack.
-2. In the **Channels** section, click the Slack icon.
-3. In the **Enter your Slack credentials** section, paste the Slack app credentials into the appropriate fields.
-4. The **Landing Page URL** is optional. You may omit or change it.
-5. Click **Save**.
+1. In the **Channels** section, click the Slack icon.
+1. In the **Enter your Slack credentials** section, paste the Slack app credentials into the appropriate fields.
+1. The **Landing Page URL** is optional. You may omit or change it.
 
     ![Submit credentials](~/media/channels/slack-SubmitCredentials.png)
+1. Click **Save**.
+    Follow the instructions to authorize your Slack app's access to your Development Slack Team.
 
-Follow the instructions to authorize your Slack app's access to your Development Slack Team.
+1. On the Configure Slack page, confirm that the slider by the Save button is set to **Enabled**.
+Your bot is now configured to communicate with users in Slack.
 
-## Enable the bot
-
-On the Configure Slack page, confirm that the slider by the Save button is set to **Enabled**.
-Your bot is configured to communicate with users in Slack.
-
-## Create an Add to Slack button
+### Create an Add to Slack button
 
 Slack provides HTML you can use to help Slack users find your bot in the
 *Add the Slack button* section of [this page](https://api.slack.com/docs/slack-button).
