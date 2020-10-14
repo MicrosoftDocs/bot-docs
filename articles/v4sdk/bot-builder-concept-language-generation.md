@@ -47,7 +47,7 @@ You can use LG in a variety of ways when developing bots. To start, create one o
 Make sure you include the language Generation library [`Microsoft.Bot.Builder.LanguageGeneration`](https://www.nuget.org/packages/Microsoft.Bot.Builder.LanguageGeneration/). Then parse and load templates in your .lg file by adding the following:
 
 ```c#
-    Templates lgTemplates = Templates.ParseFile(filePath, importResolver?);
+    _templates = Templates.ParseFile(fullPath)
 ```
 
 # [JavaScript](#tab/javascript)
@@ -55,7 +55,7 @@ Make sure you include the language Generation library [`Microsoft.Bot.Builder.La
 Make sure you include the language Generation library [`botbuilder-lg`][15]. Then parse and load templates in your .lg file by adding the following:
 
 ```typescript
-     let lgTemplates = Templates.parseFile(filePath, importResolver?);
+     let lgTemplates = Templates.parseFile(fullPath);
 ```
 
 ---
@@ -65,13 +65,13 @@ When you need template expansion, use `Evaluate` and pass in the relevant templa
 # [C#](#tab/csharp)
 
 ```c#
-    var lgOutput = lgTemplates.Evaluate("<TemplateName>", evalData);
+    var lgOutput = _templates.Evaluate(<TemplateName>);
 ```
 
 # [JavaScript](#tab/javascript)
 
 ```typescript
-    let lgOutput = lgTemplates.evaluate("<TemplateName>", evalData)
+    let lgOutput = lgTemplates.evaluate(<TemplateName>);
 ```
 
 ---
@@ -92,7 +92,7 @@ If your template needs specific properties to be passed for resolution/expansion
 
 ---
 
-## Multi-lingual generation and language fallback policy
+## Multilingual generation and language fallback policy
 
 Your bot might target more than one spoken or display language. You can manage separate instances of the *TemplateEngine*, one per target language. For an example of how to add multiple languages, also known as language fallback, to your bot, see the multi-turn prompt with language fallback sample in [C#](https://aka.ms/csharp-lg-multi-turn-prompt-language-fallback-sample) or [JavaScript](https://aka.ms/js-lg-multi-turn-prompt-language-fallback-sample).
 
