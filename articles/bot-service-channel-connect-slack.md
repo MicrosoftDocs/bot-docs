@@ -12,7 +12,7 @@ ms.date: 07/09/2020
 
 # Connect a bot to Slack
 
-There are two ways in which you can configure Slack messaging app:
+You can select one of the following choices to configure a **Slack app**:
 
 - Use Azure Bot Service portal to connect your bot
 - Use the Slack adapter
@@ -21,30 +21,31 @@ There are two ways in which you can configure Slack messaging app:
 
 ## Create a Slack application for your bot
 
-Log into [Slack](https://slack.com/signin) and then go to [create a Slack application](https://api.slack.com/apps) channel.
+1. In your browser, sign in [Slack](https://slack.com/signin).
+1. Navigate to [Your Apps](https://api.slack.com/apps) panel.
 
 ![Set up bot](~/media/channels/slack-NewApp.png)
 
-## Create an app and assign a Development Slack team
+### Create a Slack app and assign a Development Slack team
 
-Enter an App Name and select a Development Slack Team. If you are not already a member of a Development Slack Team, [create or join one](https://slack.com/).
+1. Click the **Create New App** button.
+1. In the **App Name** box, enter the name of your Slack application. 1. In the **Development Slack Team** box, enter the name of your development team. If you are not already a member of a Development Slack Team, [create or join one](https://slack.com/).
 
 ![Create app](~/media/channels/slack-CreateApp.png)
 
 Click **Create App**. Slack will create your app and generate a Client ID and Client Secret.
 
-## Add a new Redirect URL
+### Add a new Redirect URL
 
-Next you will add a new Redirect URL.
+1. In the left panel, select the **OAuth & Permissions** menu item.
+1. In the right panel, click the **Add a new Redirect URL**.
+1. In the box, enter [https://slack.botframework.com](https://slack.botframework.com).
+1. Click **Add**.
+1. Click **Save URLs**.
 
-1. Select the **OAuth & Permissions** tab.
-2. Click **Add a new Redirect URL**.
-3. Enter [https://slack.botframework.com](https://slack.botframework.com).
-4. Click **Add**.
-5. Click **Save URLs**.
+    ![Add Redirect URL](~/media/channels/slack-RedirectURL.png)
 
-![Add Redirect URL](~/media/channels/slack-RedirectURL.png)
-
+<!--
 ## Create a Slack Bot User
 
 Adding a Bot User allows you to assign a username for your bot and choose whether it is always shown as online.
@@ -57,8 +58,9 @@ Adding a Bot User allows you to assign a username for your bot and choose whethe
 Click **Add Bot User** to validate your settings, click **Always Show My Bot as Online** to **On**, and then click **Save Changes**.
 
 ![Slack CreateApp AddBotUser image](~/media/channels/slack-CreateApp-AddBotUser.png)
+-->
 
-## Subscribe to Bot Events
+### Subscribe to Bot Events
 
 Follow these steps to subscribe to six particular bot events. By subscribing to bot events, your app will be notified of user activities at the URL you specify.
 
@@ -67,20 +69,20 @@ Follow these steps to subscribe to six particular bot events. By subscribing to 
 > visit [https://dev.botframework.com/bots](https://dev.botframework.com/bots),
 > choose a bot, and record the name of the bot.
 
-1. Select the **Event Subscriptions** tab.
-2. Click **Enable Events** to **On**.
-3. In **Request URL**, enter `https://slack.botframework.com/api/Events/{YourBotHandle}`, where `{YourBotHandle}` is your bot handle, without the braces. The bot handle used in this example is **ContosoBot**.
+1. Select the **Event Subscriptions** item.
+1. Set **Enable Events** to **On**.
+1. In **Request URL**, enter `https://slack.botframework.com/api/Events/{YourBotHandle}`, where `{YourBotHandle}` is your bot handle, without the braces. The bot handle used in this example is **ContosoBot**.
 
    ![Subscribe Events: top](~/media/channels/slack-SubscribeEvents-a.png)
 
-4. In **Subscribe to Bot Events**, click **Add Bot User Event**.
-5. In the list of events, select these six event types:
-    * `member_joined_channel`
-    * `member_left_channel`
-    * `message.channels`
-    * `message.groups`
-    * `message.im`
-    * `message.mpim`
+1. In **Subscribe to Bot Events**, click **Add Bot User Event**.
+1. In the list of events, select these six event types:
+    - `member_joined_channel`
+    - `member_left_channel`
+    - `message.channels`
+    - `message.groups`
+    - `message.im`
+    - `message.mpim`
 
    ![Subscribe Events: middle](~/media/channels/slack-SubscribeEvents-b.png)
 
@@ -287,10 +289,10 @@ Now that you have created a Slack app and wired up the adapter in your bot proje
 To complete this step, [deploy your bot to Azure](https://aka.ms/bot-builder-deploy-az-cli) and make a note of the URL to your deployed bot.
 
 > [!NOTE]
-> If you are not ready to deploy your bot to Azure, or wish to debug your bot when using the Slack adapter, you can use a tool such as [ngrok](https://www.ngrok.com) (which you will likely already have installed if you have used the Bot Framework emulator previously) to tunnel through to your bot running locally and provide you with a publicly accessible URL for this. 
-> 
+> If you are not ready to deploy your bot to Azure, or wish to debug your bot when using the Slack adapter, you can use a tool such as [ngrok](https://www.ngrok.com) (which you will likely already have installed if you have used the Bot Framework emulator previously) to tunnel through to your bot running locally and provide you with a publicly accessible URL for this.
+>
 > If you wish create an ngrok tunnel and obtain a URL to your bot, use the following command in a terminal window (this assumes your local bot is running on port 3978, alter the port numbers in the command if your bot is not).
-> 
+>
 > ```
 > ngrok.exe http 3978 -host-header="localhost:3978"
 > ```
