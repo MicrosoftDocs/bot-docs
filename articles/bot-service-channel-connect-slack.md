@@ -24,7 +24,7 @@ This article shows how to ad a Slack channel to a bot and use it as bot user in 
 1. In your browser, sign in [Slack](https://slack.com/signin).
 1. Navigate to [Your Apps](https://api.slack.com/apps) panel.
 
-    ![Set up bot](./media/channels/slack-NewApp.png)
+    ![Set up bot](~/media/channels/slack-NewApp.png)
 
 1. Click **Create New App**.
 1. In the **App Name** box, enter the name of your Slack application
@@ -131,7 +131,7 @@ Your bot is now configured to communicate with the users in Slack.
 1. In the left panel, select your app.
 1. In the right panel, wite e message and send it to the application. If you used an echo bot, the application echoes back the message as shown in the figure below.
 
-    ![Submit credentials](./media/channels/slack-echobotapp-test.png)
+    ![Submit credentials](~/media/channels/slack-echobotapp-test.png)
 
 ### Create an Add to Slack button
 
