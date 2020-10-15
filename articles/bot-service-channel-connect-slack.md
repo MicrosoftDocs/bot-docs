@@ -107,14 +107,14 @@ If your bot will use Slack-specific functionality such as buttons, follow these 
 ### Add the Slack channel to the bot
 
 1. In the left panel, select the **Basic Information** item.
-1. In the right panel, scroll to the **App Credentials** section. The **Client ID**, **Client Secret**, and **Signing Secrte** required for configuring your Slack bot channel are displayed.
+1. In the right panel, scroll to the **App Credentials** section. The **Client ID**, **Client Secret**, and **Signing Secrte** required for configuring your Slack bot channel are displayed. Copy and store these credentials in safe place.
 
     ![Gather credentials](~/media/channels/slack-AppCredentials.png)
 
 1. Open your bot in the [Azure portal](https://portal.azure.com/).
 1. In the left panel, select **Channels**,
 1. In the right panel, select the **Slack** icon.
-1. Paste the Slack app credentials into the appropriate fields.
+1. Paste the Slack app credentials you saved in the previous steps into the appropriate fields.
 1. The **Landing Page URL** is optional. You may omit or change it.
 
     ![Submit credentials](~/media/channels/slack-SubmitCredentials.png)
