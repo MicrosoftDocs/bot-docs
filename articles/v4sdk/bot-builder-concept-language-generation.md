@@ -81,7 +81,7 @@ If your template needs specific properties to be passed for resolution/expansion
 # [C#](#tab/csharp)
 
 ```c#
-    var lgOutput = lgTemplates.Evaluate("WordGameReply", new { GameName = "MarcoPolo" } );
+    var lgOutput = _templates.Evaluate("WordGameReply", new { GameName = "MarcoPolo" } );
 ```
 
 # [JavaScript](#tab/javascript)
