@@ -12,7 +12,7 @@ ms.date: 07/09/2020
 
 # Connect a bot to Slack
 
-You can select one of the following choices to configure a **Slack app**:
+This article shows how to ad a Slack channel to a bot and use it as bot user in Slack. You can select one of the following choices to configure a **Slack app**:
 
 - Use Azure Bot Service portal to connect your bot
 - Use the Slack adapter
@@ -112,28 +112,24 @@ The **Client ID**, **Client Secret**, and **Signing Secrte** required for config
 
 ![Gather credentials](~/media/channels/slack-AppCredentials.png)
 
-#### Configure the Slack bot channel
+#### Add and configure the Slack channel
 
-1. In a separate browser window, navigate to the [Microsoft Bot Framework](https://dev.botframework.com/).
-
-1. Select **My bots** and choose the Bot that you want to connect to Slack.
-1. In the **Channels** section, click the Slack icon.
-1. In the **Enter your Slack credentials** section, paste the Slack app credentials into the appropriate fields.
+1. Open your bot in the [Azure portal](https://portal.azure.com/).
+1. In the left panel, select **Channels**,
+1. In the right panel, select the **Slack** icon.
+1. Paste the Slack app credentials into the appropriate fields.
 1. The **Landing Page URL** is optional. You may omit or change it.
-
     ![Submit credentials](~/media/channels/slack-SubmitCredentials.png)
 1. Click **Save**.
     Follow the instructions to authorize your Slack app's access to your Development Slack Team.
-
 1. On the Configure Slack page, confirm that the slider by the Save button is set to **Enabled**.
-Your bot is now configured to communicate with users in Slack.
+Your bot is now configured to communicate with the users in Slack.
 
-### Test your bot with adapter in Slack
+### Test your application in Slack
 
-Your Slack app is now configured and you can test it.
-
-1. Log in to the Slack work space where you installed your app (`http://<your work space>`-group.slack.com/). You will see it listed under the **Apps** section in the left menu.
-1. Select your app and send a message. If you use an echo bot, the application echoes back the message as shown in the figure below.
+1. Log in the Slack work space where you installed your app (`http://<your work space>-group.slack.com/`). You will see it listed under the **Apps** section in the left panel.
+1. In the left panel, select your app.
+1. In the right panel, wite e message and send it to the application. If you used an echo bot, the application echoes back the message as shown in the figure below.
 
     ![Submit credentials](./media/channels/slack-echobotapp-test.png)
 
