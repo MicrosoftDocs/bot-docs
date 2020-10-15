@@ -34,23 +34,24 @@ You can select one of the following choices to configure a **Slack app**:
 
 1. Click **Create App**.
 
-### Add a new redirect URL and scopes
+### Add a new redirect URL
 
 1. In the left panel, select the **OAuth & Permissions** menu item.
 1. In the right panel, click **Add a new Redirect URL**.
-1. In the box, enter [https://slack.botframework.com](https://slack.botframework.com).
+1. In the box, enter `https://slack.botframework.com/`.
 1. Click **Add**.
 1. Click **Save URLs**.
 
     ![Add Redirect URL](~/media/channels/slack-RedirectURL.png)
 
+<!--
 1. In the **Scopes** section, in the **Bot Token Scopes** sub-section , click the **Add an OAuth Scope**.
 1. Make sure that the following values are selected.
 
     ![app scopes](~/media/channels/slack-app-scopes.png)
 
 Do not be confused about the difference between adding a **Bot Token Scope** or a **User Token Scope**. For more information, see Slack documentation [Requesting scopes](https://api.slack.com/authentication/basics#scopes).
-<!--
+
 ## Create a Slack Bot User
 
 Adding a Bot User allows you to assign a username for your bot and choose whether it is always shown as online.
@@ -126,6 +127,15 @@ The **Client ID**, **Client Secret**, and **Signing Secrte** required for config
 
 1. On the Configure Slack page, confirm that the slider by the Save button is set to **Enabled**.
 Your bot is now configured to communicate with users in Slack.
+
+### Test your bot with adapter in Slack
+
+Your Slack app is now configured and you can test it.
+
+1. Log in to the Slack work space where you installed your app (`http://<your work space>`-group.slack.com/). You will see it listed under the **Apps** section in the left menu.
+1. Select your app and send a message. If you use an echo bot, the application echoes back the message as shown in the figure below.
+
+    ![Submit credentials](./media/channels/slack-echobotapp-test.png)
 
 ### Create an Add to Slack button
 
@@ -314,7 +324,7 @@ Navigate back to the [Slack API dashboard](https://api.slack.com/apps) and selec
 
 ![Slack event subscriptions](~/media/bot-service-adapter-connect-slack/event-subscriptions.png)
 
-## Test your bot with adapter in Slack
+### Test your bot with adapter in Slack
 
 Your Slack app is now configured and you can now login to the Slack workspace you installed your app into. (You will see it listed under the 'Apps' section of the left hand menu.) Select your app and try sending a message. You should see it echoed back to you in the IM window.
 
