@@ -130,7 +130,7 @@ Your bot is now configured to communicate with the users in Slack.
 1. In the left panel, select your app.
 1. In the right panel, wite e message and send it to the application. If you used an echo bot, the application echoes back the message as shown in the figure below.
 
-    ![test app in Slack](~/media/channels/slack-echobotapp-test.png)
+    ![app testing](~/media/channels/slack-echobotapp-test.png)
 
 ### Create an Add to Slack button
 
