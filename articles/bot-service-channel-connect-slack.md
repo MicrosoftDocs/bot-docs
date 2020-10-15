@@ -104,22 +104,21 @@ If your bot will use Slack-specific functionality such as buttons, follow these 
 
     ![Enable messages](~/media/channels/slack-MessageURL.png)
 
-### Gather app credentials
+### Add the Slack channel to the bot
 
 1. In the left panel, select the **Basic Information** item.
-1. In the right panel, scroll to the **App Credentials** section.
-The **Client ID**, **Client Secret**, and **Signing Secrte** required for configuring your Slack bot channel are displayed.
+1. In the right panel, scroll to the **App Credentials** section. The **Client ID**, **Client Secret**, and **Signing Secrte** required for configuring your Slack bot channel are displayed.
 
-![Gather credentials](~/media/channels/slack-AppCredentials.png)
-
-#### Add and configure the Slack channel
+    ![Gather credentials](~/media/channels/slack-AppCredentials.png)
 
 1. Open your bot in the [Azure portal](https://portal.azure.com/).
 1. In the left panel, select **Channels**,
 1. In the right panel, select the **Slack** icon.
 1. Paste the Slack app credentials into the appropriate fields.
 1. The **Landing Page URL** is optional. You may omit or change it.
+
     ![Submit credentials](~/media/channels/slack-SubmitCredentials.png)
+
 1. Click **Save**.
     Follow the instructions to authorize your Slack app's access to your Development Slack Team.
 1. On the Configure Slack page, confirm that the slider by the Save button is set to **Enabled**.
@@ -131,7 +130,7 @@ Your bot is now configured to communicate with the users in Slack.
 1. In the left panel, select your app.
 1. In the right panel, wite e message and send it to the application. If you used an echo bot, the application echoes back the message as shown in the figure below.
 
-    ![Submit credentials](~/media/channels/slack-echobotapp-test.png)
+    ![test app in Slack](~/media/channels/slack-echobotapp-test.png)
 
 ### Create an Add to Slack button
 
