@@ -6,7 +6,7 @@ manager: kamrani
 ms.topic: article
 ms.author: kamrani
 ms.service: bot-service
-ms.date: 01/16/2020
+ms.date: 10/19/2020
 ---
 
 # Connect a bot to Facebook
