@@ -133,7 +133,7 @@ Below is a list of all of the Teams activity handlers called from the `dispatchC
 | MembersRemoved | `OnTeamsMembersRemovedEvent` | Calls the `OnMembersRemovedEvent` method in `ActivityHandler`. Override this to handle members leaving a team. |
 -->
 
-**Override Method**
+**Methods to override in a derived class**
 
 Below is a list of all of the Teams activity handlers that can be overridden to handle Teams Conversation Update activities.
 
