@@ -62,7 +62,7 @@ The bot is accessed through a Facebook Page.
 ### Enable messenger
 
 1. In the left pane, click **Dashboard**.
-1. In the right pane, scroll down and in the **Messenger** box, click the **Set Up** button. The Messenger entry is displayed under the *PRODUCTS* section in the left pane.  
+1. In the right pane, scroll down and in the **Messenger** box, click the **Set Up** button. The Messenger entry is displayed under the *PRODUCTS* section in the left pane.
 
     ![Enable messenger](media/channels/fb-messenger-bot-enable-messenger.png)
 
@@ -90,7 +90,7 @@ In order to send messages and other events from your bot to Facebook Messenger, 
 
 1. In the right pane, click the **Facebook** icon.
 
-1. In the wizard enter the Facebook information stored in the previous steps. If the information is correct, at the bottom of the wizard, you should see the **callback URL** and the **verify token**. Copy and store them.  
+1. In the wizard enter the Facebook information stored in the previous steps. If the information is correct, at the bottom of the wizard, you should see the **callback URL** and the **verify token**. Copy and store them.
 
     ![fb messenger channel config](media/channels/fb-messenger-bot-config-channel.PNG)
 
@@ -192,7 +192,7 @@ Please refer to the **Connect a bot to Facebook Messenger** section for details.
 
 ### Setting the API version
 
-If you receive a notification from Facebook about deprecation of a certain version of the Graph API, go to [Facebook developers page](https://developers.facebook.com). Navigate to your bot’s **App Settings** and go to **Settings > Advanced > Upgrade API version**, then switch **Upgrade All Calls** to 3.0.
+If you receive a notification from Facebook about deprecation of a certain version of the Graph API, go to [Facebook developers page](https://developers.facebook.com). Navigate to your bot’s **App Settings** and go to **Settings > Advanced > Upgrade API version**, then switch **Upgrade All Calls** to a more recent version.
 
 ![API version upgrade](media/channels/fb-version-upgrade.png)
 
@@ -377,7 +377,7 @@ The final step is to configure your new Facebook app's Messenger endpoint, to en
 
 ### Test your bot with adapter in Facebook
 
-You can now test whether your bot is connected to Facebook correctly by sending a message via the Facebook Page you associated with your new Facebook app.  
+You can now test whether your bot is connected to Facebook correctly by sending a message via the Facebook Page you associated with your new Facebook app.
 
 1. Navigate to your Facebook Page.
 
