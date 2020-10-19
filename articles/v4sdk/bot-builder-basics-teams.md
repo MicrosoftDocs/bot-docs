@@ -105,7 +105,7 @@ The invoke activities listed above are for conversational bots in Teams. The Bot
 Developers may handle Conversation Update activities sent from Microsoft Teams via two methods:
 
     1. Passing callbacks to methods starting with `on..` *and* ending in `...Event()` (e.g. `onTeamsMembersAddedEvent()`), or instead
-    2. Overriding methods starting with `on..` and *not* ending in `..Event()` (e.g. `onTeamsMembersAdded()`).
+    1. When creating a derived class, override methods that begin with `on` and _don't_ end with `Event` (for example, the `onTeamsMembersAdded` method).
 
 Developers should use either #1 or #2, above for all conversation update activities and not *both* #2 and #3 for the same activity. Meaning, developers should pass a callback to `onTeamsMembersAddedEvent()` *or* override `onTeamsMembersAdded()` and not use both `onTeamsMembersAddedEvent()` *and* `onTeamsMembersAdded()`.
 
