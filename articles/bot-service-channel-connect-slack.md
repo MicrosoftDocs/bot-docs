@@ -44,28 +44,6 @@ This article shows how to ad a Slack channel to a bot and use it as bot user in 
 
     ![Add Redirect URL](~/media/channels/slack-RedirectURL.png)
 
-<!--
-1. In the **Scopes** section, in the **Bot Token Scopes** sub-section , click the **Add an OAuth Scope**.
-1. Make sure that the following values are selected.
-
-    ![app scopes](~/media/channels/slack-app-scopes.png)
-
-Do not be confused about the difference between adding a **Bot Token Scope** or a **User Token Scope**. For more information, see Slack documentation [Requesting scopes](https://api.slack.com/authentication/basics#scopes).
-
-## Create a Slack Bot User
-
-Adding a Bot User allows you to assign a username for your bot and choose whether it is always shown as online.
-
-1. Select the **Bot Users** tab.
-2. Click **Add a Bot User**.
-
-![Slack create bot image](~/media/channels/slack-CreateBot.png)
-
-Click **Add Bot User** to validate your settings, click **Always Show My Bot as Online** to **On**, and then click **Save Changes**.
-
-![Slack CreateApp AddBotUser image](~/media/channels/slack-CreateApp-AddBotUser.png)
--->
-
 ### Subscribe to Bot Events
 
 Follow these steps to subscribe to six particular bot events. By subscribing to bot events, your app will be notified of user activities at the URL you specify.
@@ -93,6 +71,12 @@ Follow these steps to subscribe to six particular bot events. By subscribing to 
    ![subscribed events list](~/media/channels/slack-subscribed-events.png)
 
 1. At the bottom of the screen, click **Save Changes**.
+
+As you add events in Slack, it lists the scopes you need to request. The scopes you need will depend on the events you subscribe to and how you intend to respond to them.
+For Slack supported scopes, refer to [Scopes and permissions](https://api.slack.com/scopes). See also [Understanding OAuth scopes for Bots](https://api.slack.com/tutorials/understanding-oauth-scopes-bot).
+
+> [!NOTE]
+> As of June 2020 Slack channel supports Slack V2 permission scopes which allow the bot to specify its capabilities and permissions in a more granular way. All newly configured Slack channels will use the V2 scopes. To switch your bot to the V2 scopes, delete and recreate the Slack channel configuration in the Azure portal Channels blade.
 
 ### Add and Configure Interactive Messages (optional)
 
@@ -124,14 +108,6 @@ If your bot will use Slack-specific functionality such as buttons, follow these 
 1. On the Configure Slack page, confirm that the slider by the Save button is set to **Enabled**.
 Your bot is now configured to communicate with the users in Slack.
 
-### Test your application in Slack
-
-1. Log in the Slack work space where you installed your app (`http://<your work space>-group.slack.com/`). You will see it listed under the **Apps** section in the left panel.
-1. In the left panel, select your app.
-1. In the right panel, wite e message and send it to the application. If you used an echo bot, the application echoes back the message as shown in the figure below.
-
-    ![app testing](~/media/channels/slack-echobotapp-test.png)
-
 ### Create an Add to Slack button
 
 Slack provides HTML you can use to help Slack users find your bot in the
@@ -146,7 +122,7 @@ Follow these steps to get the replacement URL.
 Authorized users can click the **Add to Slack** button provided by this modified HTML to reach your bot on Slack.
 
 > [!NOTE]
-> As of June 2020 Slack channel supports Slack V2 permission scopes which allow the bot to specify its capabilities and permissions in a more granular way. All newly configured Slack channels will use the V2 scopes. To switch your bot to the V2 scopes, delete and recreate the Slack channel configuration in the Channels blade. The link you pasted into the href value of the HTML contains scopes that can be refined as needed. Consult [https://api.slack.com/scopes](https://api.slack.com/scopes) for the full list of available scopes.
+> The link you pasted into the href value of the HTML contains scopes that can be refined as needed. See [Scopes and permissions](https://api.slack.com/scopes) for the full list of available scopes.
 
 ## [Slack adapter](#tab/adapter)
 
@@ -319,10 +295,14 @@ Navigate back to the [Slack API dashboard](https://api.slack.com/apps) and selec
 
 ![Slack event subscriptions](~/media/bot-service-adapter-connect-slack/event-subscriptions.png)
 
-### Test your bot with adapter in Slack
+---
 
-Your Slack app is now configured and you can now login to the Slack workspace you installed your app into. (You will see it listed under the 'Apps' section of the left hand menu.) Select your app and try sending a message. You should see it echoed back to you in the IM window.
+## Test your application in Slack
+
+1. Log in the Slack work space where you installed your app (`http://<your work space>-group.slack.com/`). You will see it listed under the **Apps** section in the left panel.
+1. In the left panel, select your app.
+1. In the right panel, wite e message and send it to the application. If you used an echo bot, the application echoes back the message as shown in the figure below.
+
+    ![app testing](~/media/channels/slack-echobotapp-test.png)
 
 You can also test this feature using the [sample bot for the Slack adapter](https://aka.ms/csharp-60-slack-adapter-sample) by populating the appSettings.json file with the same values described in the steps above. This sample has additional steps described in the README file to show examples of link sharing, receiving attachments, and sending interactive messages.
-
----
