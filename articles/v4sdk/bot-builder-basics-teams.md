@@ -109,7 +109,7 @@ Developers may handle Conversation Update activities sent from Microsoft Teams v
 
 Developers should use only one of these options: either 1 or 2, and not _both_ for the same activity. Meaning, developers should either pass a callback to the `onTeamsMembersAddedEvent` method *or* override the `onTeamsMembersAdded` method in a derived class, and not do both.
 
-**Callback Method**
+**Methods for passing in a callback**
 
 Below is a list of all of the Teams activity handlers called from the `dispatchConversationUpdateActivity` _Teams_ activity handler. The [Conversation update events](https://aka.ms/azure-bot-subscribe-to-conversation-events) article describes how to use each of these events in a bot.
 
