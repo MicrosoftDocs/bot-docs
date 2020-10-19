@@ -107,7 +107,7 @@ Developers may handle Conversation Update activities sent from Microsoft Teams v
     1. Passing callbacks to methods starting with `on..` *and* ending in `...Event()` (e.g. `onTeamsMembersAddedEvent()`), or instead
     1. When creating a derived class, override methods that begin with `on` and _don't_ end with `Event` (for example, the `onTeamsMembersAdded` method).
 
-Developers should use either #1 or #2, above for all conversation update activities and not *both* #2 and #3 for the same activity. Meaning, developers should pass a callback to `onTeamsMembersAddedEvent()` *or* override `onTeamsMembersAdded()` and not use both `onTeamsMembersAddedEvent()` *and* `onTeamsMembersAdded()`.
+Developers should use only one of these options: either 1 or 2, and not _both_ for the same activity. Meaning, developers should either pass a callback to the `onTeamsMembersAddedEvent` method *or* override the `onTeamsMembersAdded` method in a derived class, and not do both.
 
 **Callback Method**
 
