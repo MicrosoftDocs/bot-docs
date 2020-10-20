@@ -82,6 +82,8 @@
       href: v4sdk/bot-builder-concept-adaptive-dialog-interruptions.md
     - name: Using declarative assets in adaptive dialogs
       href: v4sdk/bot-builder-concept-adaptive-dialog-declarative.md
+    - name: Cross training your LUIS and QnA Maker models
+      href: v4sdk/bot-builder-concept-cross-train.md
   - name: Manage bot resources
     href: v4sdk/bot-file-basics.md
   - name: How bots for Microsoft Teams work

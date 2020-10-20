@@ -282,6 +282,59 @@ var adaptiveDialog = new AdaptiveDialog()
 };
 ```
 
+### Cross training your LUIS and QnA models
+
+To gain the full benefits of the cross-trained recognizer set you will need to [cross train][cross-train-concepts] your `.lu` and `.qna` files. The Bot Framework Command Line Interface (BF CLI) tool provides a command to automate this process, the [luis:cross-train][luis-cross-train] and [qnamaker:cross-train][qnamaker-cross-train] commands. Running the cross-train command will update all `.lu` and `.qna` files in the directory and sub-directories specified.
+
+> [!TIP]
+>
+> To create the cross-trained files, both `.lu`  and `.qna`, you can use _either_ the BF CLI `luis:cross-train` or `qnamaker:cross-train` command. You do not need to run both commands since they both do the same thing. The following demonstrates using the `luis:cross-train` command:
+
+``` cli
+bf luis:cross-train -i <input-folder-name> -o <output-file-name> --config <cross-train-configuration-file>
+```
+
+For an end to end example of cross training your bot, see the how to article [Create a bot cross trained to use both LUIS and QnA Maker recognizers][howto-cross-train].
+
+### luis:cross-train required parameters
+
+- `--in`: The directory, including sub-directories, that will be searched for both `.lu` and `.qna` files.
+- `--out`: The directory to save the new cross-trained `.lu` and `.qna` output files. This is the directory to which you will point the `luis:build` command's `--in` option.
+- `--config`: This points to the cross-train configuration file, a JSON file that is necessary for the command to work. 
+
+#### The cross-train configuration file
+
+The cross-train configuration file
+
+Here is an example cross-train configuration file for the [todo bot with LUIS and QnA Maker][todo-bot-sample] sample:
+
+```json
+{
+    // list each .lu file including variations per lang x locale.
+    // Lang x locale is denoted using 4 letter code. e.g. it-it, fr-fr
+    // Paths can either be absolute (full) paths or paths relative to this config file.
+    "./RootDialog/RootDialog.lu": {
+        // indicate if this is an .lu file for a root dialog.
+        "rootDialog": true,
+        // list of triggers within that dialog
+        "triggers": {
+            // Key is name of intent within the .lu file (in this case RootDialog.lu)
+            // Value is the path to the child dialog's .lu file.
+            "AddItem": "./AddToDoDialog/AddToDoDialog.lu",
+            "DeleteItem": "./DeleteToDoDialog/DeleteToDoDialog.lu",
+            "ViewItem": "./ViewToDoDialog/ViewToDoDialog.lu",
+            "GetUserProfile": "./GetUserProfileDialog/GetUserProfileDialog.lu"
+        }
+    }
+}
+```
+
+In the triggers section of the cross-train configuration file, list out each intent in the root dialog along with the `.lu` file it points to. You only need to list the `.lu` files and it will discover the `.qna` files as long as they are in the same directory and have the same filename, except with the qna file extension, for example _AddToDoDialog.qna_.
+
+> [!TIP]
+>
+> If your bot only contains LUIS models, and no QnA Maker models, you can cross train just your LUIS models. For more information on cross training your LUIS models see [LUIS to LUIS Cross training][luis-to-luis-cross-training]
+
 ## Additional Information
 
 * [What is LUIS][5]
@@ -306,3 +359,9 @@ var adaptiveDialog = new AdaptiveDialog()
 [11]:https://aka.ms/luis-create-new-app-in-luis-portal
 [12]:https://qnamaker.ai
 [13]:https://azure.microsoft.com/services/cognitive-services/
+[cross-train-concepts]: ../v4sdk/bot-builder-concept-cross-train.md
+[luis-to-luis-cross-training]: ../v4sdk/bot-builder-concept-cross-train.md#luis-to-luis-cross-training
+[qnamaker-cross-train]: https://aka.ms/botframework-cli#bf-qnamakercross-train
+[luis-cross-train]: https://aka.ms/botframework-cli#bf-luiscross-train
+[todo-bot-sample]: https://aka.ms/csharp-adaptive-dialog-08-todo-bot-luis-qnamaker-sample
+[howto-cross-train]: bot-builder-howto-cross-train.md
