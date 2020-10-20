@@ -4,6 +4,7 @@ description: Learn how to connect a bot to Facebook Messenger and Facebook Workp
 keywords: Facebook Messenger, bot channel, Facebook App, App ID, App Secret, Facebook bot, credentials
 manager: kamrani
 ms.topic: article
+author: kamrani
 ms.author: kamrani
 ms.service: bot-service
 ms.date: 10/19/2020
