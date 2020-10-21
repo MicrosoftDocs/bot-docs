@@ -108,7 +108,7 @@ Before creating your LUIS applications and QnA Maker knowledge base, you need to
 
 For each adaptive dialog that has an associated `.lu` and `.qna` file, the following updates are made with cross training these files:
 
-1. In lu files a new intent named: `DeferToRecognizer_qna_<dialog-file-name>` is required. Each question and question variation from the corresponding `.qna` file becomes an utterance associated with that new intent.<!--> Answers are not copied to the `.lu` file from the `.qna` file.-->
+1. In lu files a new intent named: `DeferToRecognizer_qna_<dialog-file-name>` is required. Each question and question variation from the corresponding `.qna` file becomes an utterance associated with that new intent.<!-- Answers are not copied to the `.lu` file from the `.qna` file.-->
 
 1. In qna files a new answer named: `intent=DeferToRecognizer_luis_<dialog-file-name>` is required, along with each utterance from every intent in the corresponding `.lu` file. These utterances become questions associated with that answer. Additionally, all utterances from any referenced `.lu` files also become questions associated with that answer.
 
