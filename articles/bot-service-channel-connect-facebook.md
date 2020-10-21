@@ -7,7 +7,7 @@ ms.topic: article
 author: kamrani
 ms.author: kamrani
 ms.service: bot-service
-ms.date: 10/19/2020
+ms.date: 10/21/2020
 ---
 
 # Connect a bot to Facebook
