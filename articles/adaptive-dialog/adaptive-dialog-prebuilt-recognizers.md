@@ -284,7 +284,7 @@ var adaptiveDialog = new AdaptiveDialog()
 
 ### Cross training your LUIS and QnA models
 
-To gain the full benefits of the cross-trained recognizer set you will need to [cross train][cross-train-concepts] your `.lu` and `.qna` files. The Bot Framework Command Line Interface (BF CLI) tool provides a command to automate this process, the [luis:cross-train][luis-cross-train] and [qnamaker:cross-train][qnamaker-cross-train] commands. Running the cross-train command will update all `.lu` and `.qna` files in the directory and sub-directories specified.
+To gain the full benefits of the cross-trained recognizer set you will need to [cross train][cross-train-concepts] your `.lu` and `.qna` files. The Bot Framework Command Line Interface (BF CLI) tool provides a command to automate this process, the [luis:cross-train][bf-luiscross-train] and [qnamaker:cross-train][qnamaker-cross-train] commands. Running the cross-train command will update all `.lu` and `.qna` files in the directory and sub-directories specified.
 
 > [!TIP]
 >
@@ -306,7 +306,7 @@ For an end to end example of cross training your bot, see the how to article [Cr
 
 The cross-train configuration file
 
-Here is an example cross-train configuration file for the [todo bot with LUIS and QnA Maker][todo-bot-sample] sample:
+Here is an example cross-train configuration file for the [todo bot with LUIS and QnA Maker][cs-sample-todo-bot] sample:
 
 ```json
 {
@@ -362,6 +362,6 @@ In the triggers section of the cross-train configuration file, list out each int
 [cross-train-concepts]: ../v4sdk/bot-builder-concept-cross-train.md
 [luis-to-luis-cross-training]: ../v4sdk/bot-builder-concept-cross-train.md#luis-to-luis-cross-training
 [qnamaker-cross-train]: https://aka.ms/botframework-cli#bf-qnamakercross-train
-[luis-cross-train]: https://aka.ms/botframework-cli#bf-luiscross-train
-[todo-bot-sample]: https://aka.ms/csharp-adaptive-dialog-08-todo-bot-luis-qnamaker-sample
+[bf-luiscross-train]: https://aka.ms/botframework-cli#bf-luiscross-train
+[cs-sample-todo-bot]: https://aka.ms/csharp-adaptive-dialog-08-todo-bot-luis-qnamaker-sample
 [howto-cross-train]: bot-builder-howto-cross-train.md

@@ -188,7 +188,6 @@ The cross-trained recognizer set compares recognition results from multiple reco
 * For more detailed information on recognizers in adaptive dialogs, including examples, see the [recognizers in adaptive dialogs - reference guide][recognizers-ref].
 
 <!-- Footnote-style links -->
-[recognizers-ref]: ../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md
 [1]:bot-builder-basics.md
 [2]:bot-builder-adaptive-dialog-introduction.md
 [3]:bot-builder-concept-dialog.md
@@ -204,5 +203,6 @@ The cross-trained recognizer set compares recognition results from multiple reco
 [13]:https://qnamaker.ai
 [14]:https://azure.microsoft.com/services/cognitive-services/
 [15]:https://aka.ms/adaptive-cards-overview
+[recognizers-ref]: ../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md
 [how-to-deploy-using-luis-cli]: ../v4sdk/bot-builder-howto-bf-cli-deploy-luis.md
 [interruptions]: bot-builder-concept-adaptive-dialog-interruptions.md
