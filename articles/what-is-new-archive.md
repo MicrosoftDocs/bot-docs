@@ -159,8 +159,6 @@ Bot Framework Composer is a visual authoring canvas for developers and multi-dis
 
 ## What's new November 2019
 
-[!INCLUDE[applies-to](includes/applies-to.md)]
-
 The Bot Framework SDK v4 is an [Open Source SDK](https://github.com/microsoft/botframework-sdk/#readme) that enable developers to model and build sophisticated conversation 
 using their favorite programming language.
 
@@ -199,8 +197,6 @@ Language Generation enables developers to separate logic used to generate bot's 
 Common Expression Language allows you to evaluate the outcome of a condition-based logic at runtime. Common language can be used across the Bot Framework SDK and conversational AI components, such as Adaptive Dialogs and Language Generation. [[Docs][40] | [API][41]]
 
 ## What's new (July 2019)
-
-[!INCLUDE[applies-to](includes/applies-to.md)]
 
 The Bot Framework SDK v4 is an [Open Source SDK][1a] that enable developers to model and build sophisticated conversation 
 using their favorite programming language.
