@@ -11,6 +11,8 @@ ms.date: 01/16/2020
 
 # Connect a bot to Facebook
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 Your bot can be connected to both Facebook Messenger and Facebook Workplace, so that it can communicate with users on both platforms. The following tutorial shows how to connect a bot to these two channels.
 
 > [!NOTE]

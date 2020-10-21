@@ -10,6 +10,9 @@ ms.date: 02/20/2020
 ---
 
 # Troubleshoot general
+
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 These frequently asked questions can help you to troubleshoot common bot development or operational issues.
 
 ## How can I troubleshoot issues with my bot?

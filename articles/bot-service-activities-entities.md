@@ -9,7 +9,10 @@ ms.topic: article
 ms.service: bot-service
 ms.date: 03/01/2018
 ---
+
 # Entities and activity types
+
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
 Entities are a part of an activity, and provide additional information about the activity or conversation.
 

@@ -13,7 +13,7 @@ ms.author: travisw
 
 # Connect a bot to Direct Line Speech
 
-[!INCLUDE[applies-to-v4](includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
 You can configure your bot to allow client applications to communicate with it through the Direct Line Speech channel.
 

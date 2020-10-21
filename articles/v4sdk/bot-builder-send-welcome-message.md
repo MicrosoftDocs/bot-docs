@@ -10,9 +10,10 @@ ms.service: bot-service
 ms.date: 2/7/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
+
 # Send welcome message to users
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 The primary goal when creating any bot is to engage your user in a meaningful conversation. One of the best ways to achieve this goal is to ensure that from the moment a user first connects, they understand your bot's main purpose and capabilities, the reason your bot was created. This article provides code examples to help you welcome users to your bot.
 

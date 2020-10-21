@@ -11,7 +11,8 @@ monikerRange: 'azure-bot-service-4.0'
 ---
 
 # Bot Framework SDK v4 Java samples
-[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 You can use the samples to help you build bots using Java SDK v4, which is currently in preview.
 

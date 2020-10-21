@@ -12,10 +12,11 @@ ms.date: 05/17/2020
 
 # Connect a bot to Alexa
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 You can configure your bot to communicate with people using Alexa devices that support Custom Skills.
 
 **Important**: Your bot must use the [Bot Framework Sdk](https://github.com/microsoft/botframework-sdk) version 4.8 or later. If you create a new bot via the Azure Portal it will have 4.8 or later. If you have an existing bot you may need to update your Sdk version.
-
 
 ## Create an Alexa skill
 

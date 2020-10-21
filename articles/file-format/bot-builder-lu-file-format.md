@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # .lu file format
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 An .lu file contains Markdown-like, simple text based definitions for [LUIS][1] concepts. This article covers the various concepts expressed via the .lu file format.
 

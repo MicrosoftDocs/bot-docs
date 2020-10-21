@@ -12,6 +12,8 @@ ms.date: 12/13/2017
 
 # Configure speech priming
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 Speech priming improves the recognition of spoken words and phrases that are commonly used in a bot.
 
 For speech-enabled bots that use the [Web Chat](bot-service-channel-connect-webchat.md) and [Cortana](~/bot-service-channel-connect-cortana.md) channels, speech priming uses examples specified in Language Understanding ([LUIS](https://www.luis.ai/)) apps to improve speech recognition accuracy for important words.

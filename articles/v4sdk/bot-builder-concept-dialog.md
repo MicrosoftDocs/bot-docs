@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Dialogs library
 
-[!INCLUDE [applies-to-v4](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 *Dialogs* are a central concept in the SDK, providing ways to manage a long-running conversation with the user.
 A dialog performs a task that can represent part of or a complete conversational thread.

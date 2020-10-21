@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Adaptive expressions prebuilt functions
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 This article lists the available prebuilt functions ordered by their general purpose. For information about operators used in prebuilt functions and expression syntax, see [Operators](../v4sdk/bot-builder-concept-adaptive-expressions.md#operators).
 

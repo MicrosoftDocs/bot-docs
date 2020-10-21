@@ -11,6 +11,8 @@ ms.date: 06/09/2020
 
 # Security and Privacy
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 <!-- Attention writers!!
      1 - This article contains FAQs regarding Bot Framework security and privacy.
      1 - When you create a new FAQ, please add the related link to the proper section in bot-service-resources-bot-framework-faq.md.-->

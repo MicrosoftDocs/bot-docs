@@ -10,8 +10,9 @@ ms.service: bot-service
 ms.date: 11/19/2019
 ---
 
-
 # Design and control conversation flow
+
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
 In a traditional application, the user interface (UI) consists of a series of screens, and a single app or website can use one or more screens as needed to exchange information with the user.
 Most applications start with a main screen where users initially land, and that screen provides navigation that leads to other screens for various functions like starting a new order, browsing products, or looking for help.

@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Manage a long-running operation
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 Proper handling of long-running operations is an important aspect of a robust bot. When the Azure Bot Service sends an activity to your bot from a channel, the bot is expected to process the activity quickly. If the bot does not complete the operation within 10 to 15 seconds, depending on the channel, the Azure Bot Service will timeout and report back to the client a `504:GatewayTimeout`, as described in [How bots work][concept-basics].
 
