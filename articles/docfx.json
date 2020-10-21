@@ -87,7 +87,8 @@
     "externalReference": [],
     "globalMetadata": {
       "uhfHeaderId": "azure",
-      "breadcrumb_path": "/bot-framework/breadcrumb/TOC.json",
+      "breadcrumb_path": "/azure/bot-service/breadcrumb/TOC.json",
+      "extendBreadcrumb": true,
       "author": "kaiqb",
       "brand": "azure",
       "searchScope": [
