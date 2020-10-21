@@ -36,17 +36,11 @@ This bot consists of three adaptive dialogs, each with their own LUIS model:
 ![Travel bot diagram](./media/adaptive-dialogs/travel-bot.png)
 
 1. RootDialog
-    - Intents
-        1. \# BookFlight
-        1. \# BookHotel
+    - Intents: `BookFlight`, `BookHotel`.
 1. flightDialog
-    - Intents
-        1. \# flightDestination
-        1. \# departureTime
+    - Intents: `flightDestination`, `departureTime`.
 1. hotelDialog
-    - Intents
-        1. \# hotelLocation
-        1. \# hotelRating
+    - Intents: `hotelLocation`, `hotelRating`.
 
 #### Travel bot customer scenario
 
