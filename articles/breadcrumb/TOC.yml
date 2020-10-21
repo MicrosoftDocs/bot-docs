@@ -3,11 +3,11 @@
   topicHref: /
   items:
   - name: Azure
-    tocHref: /previous-versions/azure/
-    topicHref: /previous-versions/azure/index
+    tocHref: /azure/
+    topicHref: /azure/index
     items:
     - name: Azure Bot Service
       items:
       - name: Bot Framework SDK
-        tocHref: /previous-versions/azure/bot-service/
-        topicHref: /previous-versions/azure/bot-service/index-bf-sdk
+        tocHref: /azure/bot-service/
+        topicHref: /azure/bot-service/index-bf-sdk
