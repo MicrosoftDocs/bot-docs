@@ -9,7 +9,10 @@ ms.topic: article
 ms.service: bot-service
 ms.date: 03/01/2018
 ---
+
 # Entities and activity types
+
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
 Entities are a part of an activity, and provide additional information about the activity or conversation.
 
@@ -158,10 +161,3 @@ if(context.activity.type === 'message'){
 --- -->
 
 Activities can be of several different types past the most common **message**. Explanations and further details on different activity types can be found in the [Bot Framework Activity schema](https://aka.ms/botSpecs-activitySchema).
-
-::: moniker range="azure-bot-service-3.0"
-
-## Additional resources
-
-- <a href="https://docs.botframework.com/csharp/builder/sdkreference/dc/d2f/class_microsoft_1_1_bot_1_1_connector_1_1_activity.html" target="_blank">Activity class</a>
-::: moniker-end

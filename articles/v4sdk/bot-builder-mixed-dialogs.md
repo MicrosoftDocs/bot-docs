@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Create a bot using adaptive, component, waterfall, and custom dialogs
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 All dialogs derive from a base _dialog_ class.
 If you use the _dialog manager_ to run your root dialog, all of the dialog classes can work together.

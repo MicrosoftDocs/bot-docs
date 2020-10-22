@@ -13,7 +13,7 @@ ms.author: travisw
 
 # Connect a bot to Direct Line Speech
 
-[!INCLUDE[applies-to-v4](includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
 You can configure your bot to allow client applications to communicate with it through the Direct Line Speech channel.
 
@@ -31,7 +31,7 @@ Once you have built your bot, onboarding it with Direct Line Speech will enable 
 
 1. Configure the Direct Line Speech as shown in the picture below.
 
-    ![selecting direct line speech channel](media/voice-first-virtual-assistants/bot-service-channel-directlinespeech-cognitivesericesaccount-selection.png "selecting Cognitive Services resource")
+    ![configuring direct line speech channel](media/voice-first-virtual-assistants/bot-service-channel-directlinespeech-cognitivesericesaccount-selection.png "selecting Cognitive Services resource")
 
     The Direct Line Speech Channel requires a Cognitive Services resource, specifically a **speech** cognitive service resource. You can either use an existing resource or create a new one. To create a new speech resource follow these steps:
 

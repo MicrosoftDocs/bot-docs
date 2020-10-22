@@ -12,6 +12,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Migrate a Javascript v3 bot to a v4 bot
 
+[!INCLUDE [applies-to-v4](../../includes/applies-to-v4-current.md)]
+
 In this article we'll port the v3 SDK JavaScript [core-MultiDialogs-v3](https://aka.ms/v3-js-core-multidialog-migration-sample) bot to a new v4 JavaScript bot.
 This conversion is broken down into these stages:
 

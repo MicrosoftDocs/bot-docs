@@ -12,6 +12,8 @@ ms.date: 5/17/2020
 
 # Troubleshoot bot configuration issues
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 <!-- Attention writers!!
      When you create a new FAQ, please add the related link to the proper section in the bot-service-troubleshoot-index.md. -->
 

@@ -9,7 +9,10 @@ ms.topic: article
 ms.service: bot-service
 ms.date: 12/13/2017
 ---
+
 # Configure bot registration settings
+
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
 The bot registration settings, such as display name, icon, and application insights, can be viewed and modified in the **Settings** panel.
 
