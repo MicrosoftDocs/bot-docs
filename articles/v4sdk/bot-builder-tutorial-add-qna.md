@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Tutorial: Use QnA Maker in your bot to answer questions
 
-[!INCLUDE [applies-to-v4](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 You can use the QnA Maker service and a knowledge base to add question-and-answer support to your bot. When you create your knowledge base, you seed it with questions and answers.
 

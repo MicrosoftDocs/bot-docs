@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 <!--P2: Once the samples are done, link to them in each section on the individual actions to point to them as examples of how they are used-->
 # Actions in adaptive dialogs
 
-[!INCLUDE [applies-to-v4](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 Actions help to create and maintain the bots conversation flow once an event is captured by a [trigger][triggers]. In a similar way that adaptive dialogs contain a list of triggers, triggers contain a list of actions that once the trigger fires, will execute to accomplish any set of actions needed, such as satisfying a user's request. In addition to creating and maintaining the bot's conversational flow, you can use actions to send messages, respond to user questions using a [knowledge base][www.qnamaker.ai], make calculations, and perform any number of computational tasks for the user. With adaptive dialogs, the path the bot flows through in a dialog can branch and loop. The bot can ask and answer questions, validate the users input, manipulate and store values in [memory][memory-states], and make decisions based on user input.
 

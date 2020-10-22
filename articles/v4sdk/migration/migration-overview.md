@@ -13,6 +13,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Migration overview
 
+[!INCLUDE [applies-to-v4](../../includes/applies-to-v4-current.md)]
+
 The Bot Framework SDK v4 builds on the customers' feedback and learning experience from previous SDKs. The new version introduces the right levels of abstraction while enabling a flexible  architecture of the bot components. This, for example, allows you to create a simple bot and then expand it in sophistication using the modularity and extensibility of the Bot Framework SDK v4.
 
 > [!NOTE]

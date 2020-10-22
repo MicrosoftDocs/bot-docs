@@ -11,6 +11,8 @@ ms.date: 06/08/2020
 
 # Azure
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 ## How do I create my own App Registration?
 
 Creating your own App Registration will be necessary for situations like the following:

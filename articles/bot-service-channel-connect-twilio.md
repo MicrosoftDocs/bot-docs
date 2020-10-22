@@ -12,6 +12,8 @@ ms.date: 10/9/2018
 
 # Connect a bot to Twilio
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 You can configure your bot to communicate with people using the Twilio cloud communication platform.
 
 ## Log in to or create a Twilio account for sending and receiving SMS messages

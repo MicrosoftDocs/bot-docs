@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Create customized lists of synonyms for your QnA Maker knowledge base
 
-[!INCLUDE [applies-to-v4](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 The Bot Framework CLI lets you automate the management of QnA Maker knowledge bases. It lets you create, update, and delete a QnA Maker knowledge base (KB) from the command line or a script. It also enables you to create a list of synonyms that applies to your KB. This article explains how to create synonyms for your QnA Maker KB using the CLI _alterations_ command.
 

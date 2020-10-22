@@ -12,6 +12,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # How Microsoft Teams bots work
 
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
+
 This is an introduction that builds on what you learned in the article [How bots work](https://docs.microsoft.com/azure/bot-service/bot-builder-basics), you should be familiar with that article before reading this.
 
 The primary differences in bots developed for Microsoft Teams is in how activities are handled. The Microsoft Teams activity handler derives from the Bot Framework's activity handler to route all teams activities before allowing any non-Teams-specific activities to be handled.

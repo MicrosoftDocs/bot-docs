@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Managing state in adaptive dialogs - reference guide
 
-[!INCLUDE [applies-to-v4](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 This article provides technical details that will help you work with memory scopes in adaptive dialogs. For an introduction to memory scopes and managing state in adaptive dialogs, see the [Managing state in adaptive dialogs][managing-state] concept article.
 

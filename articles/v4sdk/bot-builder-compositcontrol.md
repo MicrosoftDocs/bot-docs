@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Manage dialog complexity
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 <!--TODO This sample doesn't really need a separate LG tab. We need to decide whether we'll use the LG updated sample or the old sample.-->
 

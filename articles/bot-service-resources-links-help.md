@@ -11,6 +11,8 @@ ms.date: 12/13/2017
 
 # Bot Framework additional resources
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 These resources provide additional information and support for developing bots with the Bot Framework.
 
 > [!IMPORTANT]

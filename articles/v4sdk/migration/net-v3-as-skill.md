@@ -13,6 +13,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Convert a .NET v3 bot to a skill
 
+[!INCLUDE [applies-to-v4](../../includes/applies-to-v4-current.md)]
+
 This article describes how to convert 3 sample .NET v3 bots to skills and to create a v4 skill consumer that can access these skills.
 To convert a JavaScript v3 bot to a skill, see how to [Convert a JavaScript v3 bot to a skill](javascript-v3-as-skill.md).
 To migrate a .NET bot from v3 to v4, see how to [Migrate a .NET v3 bot to a .NET Framework v4 bot](conversion-framework.md).
