@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Implement sequential conversation flow
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 Gathering information by posing questions is one of the main ways a bot interacts with users. The dialogs library provides useful built-in features such as *prompt* classes that make it easy to ask questions and validate the response to make sure it matches a specific data type or meets custom validation rules.
 

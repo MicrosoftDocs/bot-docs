@@ -11,6 +11,8 @@ ms.date: 06/08/2020
 
 # Background and availability
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 <!-- Attention writers!!
      1 - This article contains FAQs regarding Bot Framework background and availability.
      1 - When you create a new FAQ, please add the related link to the proper section in bot-service-resources-bot-framework-faq.md.-->

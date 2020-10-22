@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Structured response template
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 Structured response templates let developers define a complex structure that supports the extensive functionality of [Language generation (LG)](../v4sdk/bot-builder-concept-language-generation.md), like templating, composition, while leaving the interpretation of the structured response up to the caller of the LG library.
 

@@ -11,6 +11,8 @@ ms.date: 07/07/2020
 
 # Bot Framework authentication basics
 
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
+
 Often a bot must access protected resources, for example email account, on behalf of the user. In order to do that the bot must be **authorized** based on the user's credentials. Before that, the user must be **authenticated** first.
 Moreover, the bot itself must be a known entity, that is it must be authenticated in the Azure Bot Service context. This happens prior to the bot being authorized to operate on behalf of the user.
 

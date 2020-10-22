@@ -12,6 +12,8 @@ ms.date: 06/07/2019
 
 # Web Chat overview
 
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
+
 This article contains details of the [Bot Framework Web Chat](https://github.com/microsoft/BotFramework-WebChat) component. The Bot Framework Web Chat component is a highly customizable web-based client for the Bot Framework V4 SDK. The Bot Framework SDK v4 enables developers to model conversation and build sophisticated bot applications.
 
 If you're looking to migrate from Web Chat v3 to v4, jump ahead to [the migration section](#migrating-from-web-chat-v3-to-v4).

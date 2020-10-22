@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Write directly to storage
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 You can read and write directly to your storage object without using middleware or context object. This can be appropriate for data your bot uses to preserve a conversation, or data that comes from a source outside your bot's conversation flow. In this data storage model, data is read in directly from storage instead of using a state manager. The code examples in this article show you how to read and write data to storage using **memory**, **Cosmos DB**, **Azure Blob**, and **Azure Blob transcript** storage.
 

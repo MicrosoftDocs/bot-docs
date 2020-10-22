@@ -12,7 +12,7 @@ ms.date: 01/16/2020
 
 # Configure .NET bot for extension
 
-[!INCLUDE[applies-to-v4](includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
 This article describes how to update a bot to work with **named pipes**, and how to enable the Direct Line app service extension in the **Azure App Service** resource where the bot is hosted.
 

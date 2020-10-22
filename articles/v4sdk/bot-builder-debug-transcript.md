@@ -14,7 +14,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Debug your bot using transcript files
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 One of the keys to successful testing and debugging a bot is your ability to record and examine the set of conditions that occur when running your bot. This article discusses the creation and use of a bot transcript file to provide a detailed set of user interactions and bot responses for testing and debugging.
 
