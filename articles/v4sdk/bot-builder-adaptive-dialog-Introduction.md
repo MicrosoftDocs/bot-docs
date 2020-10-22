@@ -12,6 +12,8 @@ ms.date: 06/24/2020
 
 # Introduction to adaptive dialogs
 
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
+
 Adaptive dialogs offer a new event-based addition to the [Dialogs library][1] that enables you to easily layer in sophisticated conversation management techniques like handling [interruptions][interruptions], dispatching, and more.
 
 > [!IMPORTANT]

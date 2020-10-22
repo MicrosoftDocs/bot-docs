@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Deploy LUIS resources using the Bot Framework LUIS CLI commands
 
-[!INCLUDE [applies-to-v4](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 The Bot Framework Command Line Interface (CLI) lets you automate the management of LUIS applications (LUIS apps). From a command line or a script, you can create, update, and delete LUIS properties.
 
@@ -24,9 +24,9 @@ This article explains how to deploy a LUIS resource. For information on how to u
 - Knowledge of [LU templates][lu-templates].
 - Have a bot project with `.lu` files.
 - If working with adaptive dialogs, you should have an understanding of:
-    - [Natural language processing in adaptive dialogs][natural-language-processing-in-adaptive-dialogs].
-    - [Language understanding in adaptive dialogs][language-understanding].
-    - how the [LUIS recognizer][luis-recognizer] is used.
+  - [Natural language processing in adaptive dialogs][natural-language-processing-in-adaptive-dialogs].
+  - [Language understanding in adaptive dialogs][language-understanding].
+  - how the [LUIS recognizer][luis-recognizer] is used.
 
 ## Using the LUIS CLI commands to enable LUIS in your bot
 
@@ -40,6 +40,7 @@ This article describes how to perform some common tasks using the Bot Framework 
 1. [Train your LUIS application](#train-your-luis-application)
 1. [Publish your LUIS application](#publish-your-luis-application)
 1. [Generate source code](#generate-source-code)
+1. [Create and train a LUIS app then publish it using the build command](#create-and-train-a-luis-app-then-publish-it-using-the-build-command)
 
 Once your bot project's language understanding resources have been created, you are ready to follow the steps outlined in this article to get LUIS working.
 
@@ -209,7 +210,7 @@ The following is a sample of the **luconfig.json** file that you can reference u
     "in": "dialogs",
     "out": "generated",
     "botName":"MyProject",
-    "AuthoringKey":"<your-32-digit-subscription-key>",
+    "authoringKey":"<your-32-digit-subscription-key>",
     "region": "westus",
     "schema": "app.schema",
     "defaultCulture":"en-us",

@@ -13,6 +13,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Differences between the v3 and v4 .NET SDK
 
+[!INCLUDE [applies-to-v4](../../includes/applies-to-v4-current.md)]
+
 Version 4 of the Bot Framework SDK supports the same underlying Bot Framework Service as version 3. However, v4 is a refactoring of the previous version of the SDK to allow developers more flexibility and control over their bots. Major changes in the SDK include:
 
 - Introduction of a bot adapter. The adapter is part of the activity processing stack.

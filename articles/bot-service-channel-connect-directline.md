@@ -12,6 +12,8 @@ ms.date: 08/7/2019
 
 # Connect a bot to Direct Line
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 You can enable your own client application to communicate with your bot by using the Direct Line channel.
 
 ## Add the Direct Line channel

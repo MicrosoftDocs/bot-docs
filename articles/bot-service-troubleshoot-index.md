@@ -11,6 +11,8 @@ ms.date: 06/15/2020
 
 # Troubleshoot index
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 <!-- Attention writers!! When you create a new FAQ, please add the related link to the proper section below. -->
 
 The following are some common questions that address problems you might face.

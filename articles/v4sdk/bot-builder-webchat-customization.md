@@ -12,6 +12,8 @@ ms.date: 06/07/2019
 
 # Web Chat customization
 
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
+
 This article details how to customize the Web Chat samples to fit your bot.
 
 ## Integrate Web Chat into your website

@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Create a bot with the Bot Framework SDK for Python
 
-[!INCLUDE [applies-to-v4](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 This quickstart walks you through building a bot using the Python Echo Bot template, and then testing it with the Bot Framework Emulator.
 

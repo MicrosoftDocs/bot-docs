@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Implement a skill consumer
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 You can use skills to extend another bot.
 A _skill_ is a bot that can perform a set of tasks for another bot and uses a manifest to describe its interface.

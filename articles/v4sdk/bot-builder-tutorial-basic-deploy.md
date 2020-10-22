@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Tutorial: Create and deploy a basic bot
 
-[!INCLUDE [applies-to-v4](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 This tutorial walks you through creating a basic bot with the Bot Framework SDK and deploying it to Azure. If you've already created a basic bot and have it running locally, skip ahead to the [Deploy your bot](#deploy-your-bot) section.
 

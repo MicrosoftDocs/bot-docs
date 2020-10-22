@@ -13,6 +13,8 @@ ms.date: 12/13/2017
 
 # Principles of bot design
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 The Bot Framework enables developers to create compelling bot experiences that solve a variety of business problems. By learning the concepts described in this section, you'll become equipped to design a bot that aligns with best practices and capitalizes on lessons learned thus far in this relatively new arena. 
 
 ## Designing a bot

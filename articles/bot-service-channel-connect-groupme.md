@@ -12,6 +12,8 @@ ms.date: 12/13/2017
 
 # Connect a bot to GroupMe
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 You can configure a bot to communicate with people using the GroupMe group messaging app.
 
 [!INCLUDE [Channel Inspector intro](~/includes/snippet-channel-inspector.md)]
