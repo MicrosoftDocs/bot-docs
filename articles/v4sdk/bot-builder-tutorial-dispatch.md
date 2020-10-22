@@ -435,7 +435,7 @@ If method `q_sample-qna` is invoked, it uses the user input contained within the
 ## Test your bot
 
 1. Using your development environment, start the sample code. Note the _localhost_ address shown in the address bar of the browser window opened by your App: "https://localhost:<Port_Number>".
-1. Open your Bot Framework Emulator, then select `Create a new bot configuration`. A `.bot` file enables you to use the _Inspector_ in the Bot Framework Emulator to see the JSON returned from LUIS and QnA Maker.
+1. Open Bot Framework Emulator, then select `Create a new bot configuration`. A `.bot` file enables you to use the _Inspector_ in the Emulator to see the JSON returned from LUIS and QnA Maker.
 1. In the **New bot configuration** dialog box, enter your bot name, and your endpoint URL, such as `http://localhost:3978/api/messages`. Save the file at the root of your bot sample code project.
 1. Open the bot file and add sections for your LUIS and QnA Maker apps. Use [this example file](https://github.com/microsoft/botbuilder-tools/blob/master/packages/MSBot/docs/sample-bot-file.json) as a template for settings. Save the changes.
 1. Select the bot name in the **My Bots** list to access your running bot. For your reference, here are some of the questions and commands that are covered by the services built for your bot:
