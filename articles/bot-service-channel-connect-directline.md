@@ -7,7 +7,7 @@ ms.author: v-mimiel
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 10/06/2020
+ms.date: 10/20/2020
 ---
 
 # Connect a bot to Direct Line
