@@ -126,7 +126,7 @@
     "groups": {
       "bot-service": {
         "dest": "bot-service",
-        "moniker_range": ">= azure-bot-service-3.0"
+        "moniker_range": "= azure-bot-service-4.0"
       }
     }
   }
