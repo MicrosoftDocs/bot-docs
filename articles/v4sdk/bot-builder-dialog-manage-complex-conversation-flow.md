@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Create advanced conversation flow using branches and loops
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 You can create complex conversation flows using the dialogs library.
 This article covers how to manage complex conversations that branch and loop and how to pass arguments between different parts of the dialog.

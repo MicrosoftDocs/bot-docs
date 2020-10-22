@@ -12,6 +12,8 @@ ms.date: 02/08/2019
 
 # Additional channels
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 Besides the channels listed in within these docs, there are a few additional channels available as an adapter, both through our [provided platforms](https://botkit.ai/docs/v4/platforms/) via Botkit, or accessible through the [community repositories](https://github.com/BotBuilderCommunity/). Below are the additional channels provided:
 
 - [Webex Teams](https://botkit.ai/docs/v4/platforms/webex.html)

@@ -8,7 +8,10 @@ ms.topic: article
 ms.service: bot-service
 ms.date: 12/13/2017
 ---
+
 # Bot Framework User-Agent requests
+
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
 If you’re reading this message, you may have received a request from a Microsoft Bot Framework service. This guide will help you understand the nature of these requests and provide steps to stop them, if so desired.
 

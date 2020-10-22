@@ -11,6 +11,9 @@ ROBOTS: NoIndex, NoFollow
 ---
 
 # Configure adaptive cards
+
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
+
 > [!IMPORTANT]
 > Conversation Designer is not available to all customers yet. More details on
 > availability of Conversation Designer will come later this year.

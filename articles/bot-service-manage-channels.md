@@ -12,6 +12,8 @@ ms.date: 07/31/2019
 
 # Connect a bot to channels
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 A channel is a connection between communication applications and a bot. A bot, registered with Azure, uses channels to facilitate the communication with users.
 
 You can configure a bot to connect to any of the standard channels such as Alexa, Cortana, Facebook Messenger, and Slack. For more information, see [Bot channels registration](bot-service-quickstart-registration.md).

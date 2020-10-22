@@ -13,6 +13,8 @@ ms.date: 04/30/2019
 
 # ID fields in the Bot Framework
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 This guide describes the characteristics of ID fields in the Bot Framework.
 
 ## Channel ID

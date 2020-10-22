@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Actions in adaptive dialogs - reference guide
 
-[!INCLUDE [applies-to-v4](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 This article lists the actions defined in the Bot Framework SDK, grouped by their general purpose.
 

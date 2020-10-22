@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Activity processing
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 The bot and user interact and exchange information via activities. Each activity received by your bot application is passed to a bot adapter, which passes activity information to your bot logic and ultimately sends any responses to the user. Receiving an activity, and subsequently processing it through your bot, is called a turn; this represents one complete cycle of your bot. A turn ends when all execution is done, the activity is fully processed and all the layers of the bot have completed.
 

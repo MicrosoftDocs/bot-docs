@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Use a dialog to consume a skill
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 This article demonstrates how to use a _skill dialog_ within a skill consumer.
 The skill dialog posts activities from the parent bot to the skill bot and returns the skill responses to the user.

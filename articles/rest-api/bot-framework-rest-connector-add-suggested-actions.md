@@ -11,11 +11,6 @@ ms.date: 12/13/2017
 
 # Add suggested actions to messages with the Bot Connector API
 
-> [!div class="op_single_selector"]
-> - [.NET](../dotnet/bot-builder-dotnet-add-suggested-actions.md)
-> - [Node.js](../nodejs/bot-builder-nodejs-send-suggested-actions.md)
-> - [REST](../rest-api/bot-framework-rest-connector-add-suggested-actions.md)
-
 [!INCLUDE [Introduction to suggested actions](../includes/snippet-suggested-actions-intro.md)]
 
 ## Send suggested actions

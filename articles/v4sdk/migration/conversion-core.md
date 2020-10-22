@@ -13,6 +13,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Migrate a .NET v3 bot to a .NET Core v4 bot
 
+[!INCLUDE [applies-to-v4](../../includes/applies-to-v4-current.md)]
+
 In this article we'll convert the [v3 ContosoHelpdeskChatBot](https://github.com/microsoft/BotBuilder-Samples/tree/master/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V3) into a v4 bot _in a new .NET Core project_.
 This conversion is broken down into these steps:
 
