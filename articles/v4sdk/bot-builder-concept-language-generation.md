@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Language Generation
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 <!-- See [here](#Change-Log) for what's new in **4.8.0 RC1** release.-->
 

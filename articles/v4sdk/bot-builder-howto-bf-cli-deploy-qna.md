@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Deploy QnA Maker knowledge base using the Bot Framework qnamaker CLI commands
 
-[!INCLUDE [applies-to-v4](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 The Bot Framework Command Line Interface (CLI) lets you automate the management of QnA Maker knowledge base (KB). It lets you create, update, and delete QnA Maker KB from the command line or a script. This article explains how to deploy QnA Maker KB to a QnA Maker KB in Azure.
 
@@ -23,8 +23,8 @@ The Bot Framework Command Line Interface (CLI) lets you automate the management 
 - Knowledge of the [.qna file format][qna-file-format].
 - Have a bot project with `.qna` files.
 - If working with adaptive dialogs, you should have an understanding of:
-    - [Natural Language Processing in adaptive dialogs][natural-language-processing-in-adaptive-dialogs].
-    - how the [QnA Maker recognizer][qna-maker-recognizer] is used.
+  - [Natural Language Processing in adaptive dialogs][natural-language-processing-in-adaptive-dialogs].
+  - how the [QnA Maker recognizer][qna-maker-recognizer] is used.
 
 ## Using the qnamaker CLI commands to enable QnA Maker in your bot
 

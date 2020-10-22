@@ -12,6 +12,8 @@ ms.date: 11/19/2019
 
 # Troubleshoot HTTP 500 errors
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 <!-- Attention writers!!
      1 - When you create a new FAQ, please add the related link to the proper section in bot-service-troubleshoot-index.md.-->
 

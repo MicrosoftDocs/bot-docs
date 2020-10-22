@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Recognizers in adaptive dialogs - reference guide
 
-[!INCLUDE [applies-to-v4](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 Recognizers enable your bot to understand user input and an adaptive dialog can have one or more recognizers configured. For additional information on recognizers see the [Recognizers in adaptive dialogs](../v4sdk/bot-builder-concept-adaptive-dialog-recognizers.md) article.
 

@@ -12,6 +12,8 @@ ms.date: 01/21/2020
 
 # Connect a bot to Webex Teams using the Webex adapter
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 In this article you will learn how to connect a bot to Webex using the adapter available in the SDK.  This article will walk you through modifying the EchoBot sample to connect it to a Webex app.
 
 > [!NOTE]

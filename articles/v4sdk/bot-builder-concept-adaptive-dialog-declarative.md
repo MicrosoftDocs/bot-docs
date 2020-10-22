@@ -12,6 +12,8 @@ ms.date: 05/31/2020
 
 # Using declarative assets in adaptive dialogs
 
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
+
 This article explains the concepts behind declarative assets and bots that incorporate adaptive dialogs using the declarative approach.  Declarative adaptive dialogs consist of JSON-based files that describe all of the attributes of adaptive dialogs, including their [triggers][triggers] and [actions][actions]. These declarative files are loaded at run time using the resource manager to create the adaptive dialogs.
 
 ## Prerequisites

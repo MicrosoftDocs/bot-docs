@@ -11,6 +11,8 @@ ms.date: 02/25/2020
 
 # Troubleshooting Bot Framework authentication
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 <!-- Attention writers!!
      1 - When you create a new FAQ, please add the related link to the proper section in bot-service-troubleshoot-index.md.-->
 
@@ -39,30 +41,6 @@ In this step, you will verify that your bot is accessible and functional on loca
 
 To disable security for your bot, edit its configuration settings to remove the values for app ID and password.
 
-::: moniker range="azure-bot-service-3.0"
-
-If you're using the Bot Framework SDK for .NET, edit these settings in your Web.config file:
-
-```xml
-<appSettings>
-  <add key="MicrosoftAppId" value="" />
-  <add key="MicrosoftAppPassword" value="" />
-</appSettings>
-```
-
-If you're using the Bot Framework SDK for Node.js, edit these values (or update the corresponding environment variables):
-
-```javascript
-var connector = new builder.ChatConnector({
-  appId: null,
-  appPassword: null
-});
-```
-
-::: moniker-end
-
-::: moniker range="azure-bot-service-4.0"
-
 If you're using the Bot Framework SDK for .NET, edit the settings in your `appsettings.json` file:
 
 ```json
@@ -78,8 +56,6 @@ const adapter = new BotFrameworkAdapter({
     appPassword: null
 });
 ```
-
-::: moniker-end
 
 ### Test your bot on localhost
 

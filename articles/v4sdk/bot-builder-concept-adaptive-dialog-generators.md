@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Generators in adaptive dialogs
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 Generators tie a specific [language generation (LG)](bot-builder-concept-language-generation.md) system to an adaptive dialog.
 

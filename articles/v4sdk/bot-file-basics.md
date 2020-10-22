@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Manage bot resources
 
-[!INCLUDE [applies-to-v4](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 Bots usually consume different services, such as [LUIS.ai](https://luis.ai) or [QnaMaker.ai](https://qnamaker.ai). When you are developing a bot, you need to be able to keep track of them all. You can use various methods such as appsettings.json, web.config, or .env. 
 
