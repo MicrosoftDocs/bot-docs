@@ -7,8 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 10/21/2020
-
+ms.date: 08/21/2020
 ---
 
 # What's new August 2020
