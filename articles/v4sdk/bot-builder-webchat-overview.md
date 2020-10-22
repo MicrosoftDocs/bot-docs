@@ -40,9 +40,7 @@ Here is how how you can add a Web Chat control to your website:
                }),
                userID: 'YOUR_USER_ID',
                username: 'Web Chat User',
-               locale: 'en-US',
-               botAvatarInitials: 'WC',
-               userAvatarInitials: 'WW'
+               locale: 'en-US'
             },
             document.getElementById('webchat')
          );
