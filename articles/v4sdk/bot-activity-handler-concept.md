@@ -12,7 +12,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # About activity handlers
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 An activity handler is one way to organize the conversational logic for your bot.
 When the bot receives an activity, it has an *activity handler* that can handle that specific activity type. Under the covers, there is one base handler called the *turn handler*. All activities get routed through there. That turn handler then calls the individual activity handler for whatever type of activity it received.

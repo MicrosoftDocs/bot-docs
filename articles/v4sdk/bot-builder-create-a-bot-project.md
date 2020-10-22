@@ -12,7 +12,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # About the structure of a bot project
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 The Bot Framework templates and samples are written for ASP.NET (C#), Restify (JavaScript), and aiohttp (Python).
 However, the web service features are not part of the Bot Framework SDK, but part of the web framework you choose to use.
