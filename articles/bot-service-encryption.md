@@ -9,6 +9,8 @@ ms.author: jameslew
 
 # Azure Bot Service encryption for data at rest
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 Azure Bot Service automatically encrypts your data when persisting it to the cloud. Encryption protects your data and to help you to meet your organizational security and compliance commitments. Data in Azure Bot Service is encrypted and decrypted transparently using 256-bit [AES encryption](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard), one of the strongest block ciphers available, and is FIPS 140-2 compliant. A checksum technique is also used to detect tampering of data that is not encrypted, such as GUIDs.
 
 ## Types of data encrypted in the Azure Bot Service

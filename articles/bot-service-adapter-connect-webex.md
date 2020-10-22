@@ -12,6 +12,8 @@ ms.date: 01/21/2020
 
 # Connect a bot to Webex Teams using the Webex adapter
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 In this article you will learn how to connect a bot to Webex using the adapter available in the SDK.  This article will walk you through modifying the EchoBot sample to connect it to a Webex app.
 
 > [!NOTE]
@@ -109,8 +111,8 @@ Now that you have created a Webex app and wired up the adapter in your bot proje
 
     1. **Name** - The name for your webhook, for example *Messages Webhook*.
     1. **TargetUrl** - The full URL to your bot's Webex endpoint, such as `https://yourbotapp.azurewebsites.net/api/webex`).
-    1. **Resource** - Messages.
-    1. **Event** - Created.
+    1. **resource** - Messages.
+    1. **event** - Created.
     1. **filter** - Leave it blank.
     1. **secret** - A secret of your choice to secure your webhook. Later you will add it to your bot's `appsettings.json`.
 

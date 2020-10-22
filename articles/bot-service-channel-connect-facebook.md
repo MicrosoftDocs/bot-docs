@@ -12,6 +12,8 @@ ms.date: 10/22/2020
 
 # Connect a bot to Facebook
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 Your bot can be connected to both Facebook Messenger and Facebook Workplace, so that it can communicate with users on both platforms. The following tutorial shows how to connect a bot to these two channels.
 
 > [!NOTE]
@@ -56,7 +58,7 @@ The bot is accessed through a Facebook Page.
 
 1. In the right pane, set **Allow API Access to App Settings** slider to **Yes**.
 
-    ![Copy App ID and App Secret](media/channels/fb-messenger-bot-api-settings.png)
+    ![Allow API access to App Settings](media/channels/fb-messenger-bot-api-settings.png)
 
 1. In the page bottom right, click the **Save Changes** button.
 
@@ -72,12 +74,12 @@ The bot is accessed through a Facebook Page.
 1. In the left pane, under the Messenger entry, click **Settings**.
 1. In the right pane, scroll down and in the **Token Generation** section, select the target page.
 
-    ![Enable messenger](media/channels/fb-messenger-bot-select-messenger-page.png)
+    ![Generate a page access token](media/channels/fb-messenger-bot-select-messenger-page.png)
 
 1. Click the **Edit Permissions** button to grant the app pages_messaging in order to generate an access token.
 1. Follow the wizard steps. In the last step accept the default settings and click the **Done** button. At the end a **page access token** is generated.
 
-    ![Messenger permissions](media/channels/fb-messenger-bot-permissions.png)
+    ![Accept the settings](media/channels/fb-messenger-bot-permissions.png)
 
 1. Copy and save the **Page Access Token**.
 
@@ -382,17 +384,17 @@ You can now test whether your bot is connected to Facebook correctly by sending 
 
 1. Navigate to your Facebook Page.
 
-1. Click **Add a Button** button.
+1. Click **Add a Button**.
 
-    ![Add a button](media/bot-service-channel-connect-facebook/add-button.png)
+    ![The "Add a button" button](media/bot-service-channel-connect-facebook/add-button.png)
 
 1. Select **Contact You** and **Send Message** and click **Next**.
 
-    ![Add a button](media/bot-service-channel-connect-facebook/button-settings.png)
+    ![Choose the buttons to show](media/bot-service-channel-connect-facebook/button-settings.png)
 
 1. When asked **Where would you like this button to send people to?** select **Messenger** and click **Finish**.
 
-    ![Add a button](media/bot-service-channel-connect-facebook/button-settings-2.png)
+    ![Choose where the buttons send people to](media/bot-service-channel-connect-facebook/button-settings-2.png)
 
 1. Hover over the new **Send Message** button that is now shown on your Facebook Page and click **Test Button** from the pop-up menu.  This will start a new conversation with your app via Facebook Messenger, which you can use to test messaging your bot. Once the message is received by your bot, it will send a message back to you, echoing the text from your message.
 

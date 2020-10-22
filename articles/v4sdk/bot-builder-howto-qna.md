@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Use QnA Maker to answer questions
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 QnA Maker provides a conversational question and answer layer over your data. This allows your bot to send a question to the QnA Maker and receive an answer without needing to parse and interpret the question intent.
 

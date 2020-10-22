@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Handling interruptions in adaptive dialogs
 
-[!INCLUDE [applies-to-v4](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 When you build a conversation flow that prompts for user input, you need to decide what should happen when a user responds in a way that takes the conversation in a different direction. It is natural in human conversations to temporarily discuss a different topic before returning to the original subject, and being able to seamlessly handle scenarios where the user interrupts your conversation flow is an important aspect of a robust bot.
 

@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # About skill bots
 
-[!INCLUDE [applies-to-v4](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 A _skill_ is a bot that can perform a set of tasks for another bot.
 A skill can be consumed by another bot, facilitating reuse.

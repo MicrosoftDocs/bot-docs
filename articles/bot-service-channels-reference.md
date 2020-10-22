@@ -12,6 +12,8 @@ ms.date: 05/19/2020
 
 # Categorized activities by channel
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 The following tables show what events (Activities on the wire) can come from which channels.
 
 This is the key for the tables:
