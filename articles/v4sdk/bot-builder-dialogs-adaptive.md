@@ -74,7 +74,7 @@ The `WelcomeUserSteps` method provides the actions to perform when the trigger f
 > [!NOTE]
 > Within the context of adaptive dialogs and triggers, all dialogs are valid actions, and the action types (`Foreach`, `IfCondition`, `SendActivity`) are all dialogs.\
 > Some channels send two conversation update events: one for the bot added to the conversation and another for the user.
-> The code filters cases where the bot itself is the recipient of the message. For more information, see [Categorized activities by channel](../bot-service-channels-reference#welcome).
+> The code filters cases where the bot itself is the recipient of the message. For more information, see [Categorized activities by channel](../bot-service-channels-reference.md#welcome).
 
 [!code-csharp[Welcome user](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/01.multi-turn-prompt/Dialogs/RootDialog.cs?range=40-64)]
 
