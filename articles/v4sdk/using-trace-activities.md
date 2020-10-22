@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Add trace activities to your bot
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 <!-- What is it and why use it -->
 

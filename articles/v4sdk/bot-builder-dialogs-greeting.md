@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Implement a greeting dialog
 
-[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 You can use a dialog to welcome a user to a conversation.
 

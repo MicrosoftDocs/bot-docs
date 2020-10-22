@@ -11,11 +11,6 @@ ms.date: 10/25/2018
 
 # Add media attachments to messages with the Bot Connector API
 
-> [!div class="op_single_selector"]
-> - [.NET](../dotnet/bot-builder-dotnet-add-media-attachments.md)
-> - [Node.js](../nodejs/bot-builder-nodejs-send-receive-attachments.md)
-> - [REST](../rest-api/bot-framework-rest-connector-add-media-attachments.md)
-
 Bots and channels typically exchange text strings but some channels also support exchanging attachments, which lets your bot send richer messages to users. For example, your bot can send media attachments (e.g., images, videos, audio, files) and [rich cards](bot-framework-rest-connector-add-rich-cards.md). This article describes how to add media attachments to messages using the Bot Connector service.
 
 [!INCLUDE [Channel Inspector intro](~/includes/snippet-channel-inspector.md)]
