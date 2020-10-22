@@ -31,7 +31,7 @@ This sample is based on a predefined set of LUIS and QnA Maker apps.
 
 ## [C#](#tab/cs)
 
-![Code sample logic flow](./media/tutorial-dispatch/dispatch-logic-flow.png)
+![Code sample logic flow cs](./media/tutorial-dispatch/dispatch-logic-flow.png)
 
 `OnMessageActivityAsync` is called for each user input received. This module finds the top scoring user intent and passes that result on to `DispatchToTopIntentAsync`. DispatchToTopIntentAsync, in turn, calls the appropriate app handler
 
@@ -41,7 +41,7 @@ This sample is based on a predefined set of LUIS and QnA Maker apps.
 
 ## [JavaScript](#tab/js)
 
-![Code sample logic flow](./media/tutorial-dispatch/dispatch-logic-flow-js.png)
+![Code sample logic flow js](./media/tutorial-dispatch/dispatch-logic-flow-js.png)
 
 `onMessage` is called for each user input received. This module finds the top scoring user intent and passes that result on to `dispatchToTopIntentAsync`. dispatchToTopIntentAsync, in turn, calls the appropriate app handler
 
@@ -51,7 +51,7 @@ This sample is based on a predefined set of LUIS and QnA Maker apps.
 
 ## [Python](#tab/python)
 
-![Code sample logic flow](./media/tutorial-dispatch/dispatch-logic-flow-python.png)
+![Code sample logic flow python](./media/tutorial-dispatch/dispatch-logic-flow-python.png)
 
 `on_message_activity` is called for each user input received. This module finds the top scoring user intent and passes that result on to `_dispatch_to_top_intent`. _dispatch_to_top_intent, in turn, calls the appropriate app handler
 
