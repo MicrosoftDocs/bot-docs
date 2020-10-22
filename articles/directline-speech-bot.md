@@ -122,11 +122,10 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 }
 
 ```
+
 The remainder of your bot code stays the same!
 
-
-
-Step 4: Optionally set the Speak field on Activities to customize what is spoken to the user
+## Step 4: Optionally set the Speak field on Activities to customize what is spoken to the user
 
 By default, all messages sent through Direct Line Speech to the user will be spoken.
 
