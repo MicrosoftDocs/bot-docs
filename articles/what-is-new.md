@@ -8,7 +8,7 @@ manager: kamrani
 ms.topic: conceptual
 ms.service: bot-service
 ms.date: 08/21/2020
-monikerRange: 'azure-bot-service-4.0'
+
 ---
 
 # What's new August 2020
