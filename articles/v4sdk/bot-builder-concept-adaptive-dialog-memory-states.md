@@ -14,6 +14,8 @@ I'd keep prerequisites, managing state, and memory short-hand notation sections 
 -->
 # Managing state in adaptive dialogs
 
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
+
 The terms _Stateful_ and _stateless_ are adjectives that describe whether an application is designed to remember one or more preceding events in a given sequence of interactions with a user (or any other activity). Stateful means the application _does_ keep track of the state of its interactions, usually by saving values in memory in the form a property. Stateless means the application does _not_ keep track of the state of its interactions, which means that there is no memory of any previous interactions and all incoming request must contain all relevant information that is required to perform the requested action. You can think of _state_ as the bot's current set of values or contents, such as the conversation ID or the active user's name.
 
 The Bot Framework SDK follows the same paradigms as modern web applications and does not actively manage state, however the Bot Framework SDK does provide some abstractions that make state management much easier to incorporate into your bot. This topic is covered in detail in the Bot Framework SDK [Managing state][managing-state] article, it is recommended that you read and understand the information covered in that article before reading this article.

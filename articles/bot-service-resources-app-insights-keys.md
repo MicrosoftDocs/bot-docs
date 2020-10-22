@@ -12,6 +12,8 @@ ms.date: 11/19/2019
 
 # Application Insights keys
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 Azure **Application Insights** displays data about your application in a Microsoft Azure resource. To add telemetry to your bot you need an Azure subscription and an Application Insights resource created for your bot. From this resource, you can obtain the three keys to configure your bot:
 
 1. Instrumentation key

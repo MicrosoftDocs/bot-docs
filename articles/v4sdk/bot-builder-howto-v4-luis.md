@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Add natural language understanding to your bot
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 The ability to understand what your user means conversationally and contextually can be a difficult task, but can provide your bot a more natural conversation feel. _Language Understanding (LUIS)_ is a cloud-based API service that enables you to do just that so that your bot can recognize the intent of user messages, allow for more natural language from your user, and better direct the conversation flow.
 

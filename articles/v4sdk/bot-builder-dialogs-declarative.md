@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Create a bot using declarative adaptive dialogs  
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 This article shows how to create a bot that incorporates an **Adaptive dialog** using the declarative approach.
 

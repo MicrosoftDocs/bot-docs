@@ -12,7 +12,7 @@ ms.date: 08/22/2019
 
 # Connect a bot to Web Chat
 
-[!INCLUDE [pre-release-label](./includes/pre-release-label.md)]
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
 When you [create a bot](bot-service-quickstart.md) with the Framework Bot Service, the Web Chat channel is automatically configured for you. The Web Chat channel includes the [Web Chat control](https://github.com/microsoft/BotFramework-WebChat), which provides the ability for users to interact with the bot directly in a web page.
 

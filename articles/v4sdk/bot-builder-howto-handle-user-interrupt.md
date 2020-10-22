@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Handle user interruptions
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 Handling interruptions is an important aspect of a robust bot. Users will not always follow your defined conversation flow, step by step. They may try to ask a question in the middle of the process, or simply want to cancel it instead of completing it. In this topic, this topic describes some common ways to handle user interruptions in your bot.
 

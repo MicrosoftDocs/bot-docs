@@ -11,10 +11,9 @@ ms.date: 05/16/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-
 # .qna file format
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 .qna files contain Markdown-like text based definitions for [QnAmaker.ai](http://qnamaker.ai) concepts. This article covers the various concepts expressed via the .qna file format.
 

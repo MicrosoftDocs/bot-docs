@@ -12,6 +12,8 @@ ms.date: 12/13/2017
 
 # Embed a bot in a website
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 Although bots commonly exist outside of websites, they can also be embedded within a website. 
 For example, you may embed a [knowledge bot](~/bot-service-design-pattern-knowledge-base.md) within a website 
 to enable users to quickly find information that might otherwise be challenging to locate within complex website structures. 

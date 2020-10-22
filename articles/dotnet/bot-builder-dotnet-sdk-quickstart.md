@@ -14,7 +14,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Create a bot with the Bot Framework SDK for .NET
 
-[!INCLUDE [applies-to-v4](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 This quickstart walks you through building a bot by using the C# template, and then testing it with the Bot Framework Emulator.
 
