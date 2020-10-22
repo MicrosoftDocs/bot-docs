@@ -12,7 +12,7 @@ ms.date: 09/30/2020
 
 # Create a bot with Azure Bot Service
 
-[!INCLUDE [applies-to-v4](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 Azure Bot Service provides the core components for creating bots, including the Bot Framework SDK for developing bots and the bot service for connecting bots to channels.
 This article shows how to create a bot using the Bot Framework SDK v4 and choosing either .NET or Node.js template.

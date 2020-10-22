@@ -12,6 +12,8 @@ ms.date: 12/13/2017
 
 # Design knowledge bots
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 A knowledge bot can be designed to provide information about virtually any topic. 
 For example, one knowledge bot might answer questions about events such as, "What bot events are there at this conference?", "When is the next Reggae show?", or "Who is Tame Impala?" 
 Another might answer IT-related questions such as "How do I update my operating system?" or "Where do I go to reset my password?" 

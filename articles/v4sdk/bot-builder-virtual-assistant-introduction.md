@@ -12,6 +12,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Virtual Assistant Overview
 
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
+
 ## Overview
 
 Customers and partners have a significant need to deliver a conversational assistant tailored to their brand, personalized to their users, and made available across a broad range of canvases and devices.

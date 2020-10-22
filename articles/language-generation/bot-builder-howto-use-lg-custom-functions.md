@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Use custom functions in language generation
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 Developers can use both [prebuilt functions](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md) supported by adaptive expressions and custom functions in [language generation (LG) templates](../file-format/bot-builder-lg-file-format.md). This article shows you how to add a custom function in your bot to adaptive expressions and use the function in an LG template.
 

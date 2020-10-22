@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Debug a skill or skill consumer
 
-[!INCLUDE [applies-to-v4](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 You may need to debug a skill or skill consumer bot, where the one you want to debug is running locally and the other is running in the cloud. In this situation, you can use the ngrok tool to expose the local bot endpoint as a public URL.
 

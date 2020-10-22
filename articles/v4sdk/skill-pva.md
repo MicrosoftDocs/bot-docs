@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Implement a skill for use in Power Virtual Agents
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 A skill is a bot that can be used by another bot. In this way you can create a single user-facing bot and extend it with one or more skills. You can learn more about skills in general in [Skills Overview](skills-conceptual.md), and how to build them in [Implement a skill](skill-implement-skill.md). Alternatively, the Virtual Assistant templates contain a set of [pre-built skills](bot-builder-skills-overview.md) you can customize and deploy instead of building one from scratch.
 

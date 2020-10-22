@@ -48,6 +48,8 @@
     "globalMetadata": {
       "apiPlatform": "dotnet",
       "author": "dotnet-bot",
+      "ms.author": "kamrani",
+      "ms.service": "bot-service",
       "uhfHeaderId": "azure"
     },
     "fileMetadata": {},

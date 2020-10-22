@@ -13,6 +13,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # JavaScript migration quick reference
 
+[!INCLUDE [applies-to-v4](../../includes/applies-to-v4-current.md)]
+
 The BotBuilder Javascript SDK v4 introduces several fundamental changes that affect how bots are authored. The purpose of this guide is to provide a quick reference for common differences between accomplishing a task in the v3 and v4 SDKs.
 
 - How information passes between a bot and channels has changed.

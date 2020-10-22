@@ -12,8 +12,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Virtual Assistant - Template Outline
 
-> [!NOTE]
-> This topic applies to v4 version of the SDK. 
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 The Virtual Assistant Template brings together a number of best practices we've identified through the building of conversational experiences and automates integration of components that we've found to be highly beneficial to Bot Framework developers. This section covers some background to key decisions to help explain why the template works the way it does.
 

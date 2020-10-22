@@ -12,6 +12,8 @@ ms.date: 10/11/2018
 
 # Connect a bot to Skype
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 Skype keeps you connected with users through instant messaging, phone, and video calls. Extend this functionality by building bots that users can discover and interact with through the Skype interface.
 
 >[!NOTE]

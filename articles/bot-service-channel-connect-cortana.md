@@ -9,7 +9,10 @@ ms.topic: article
 ms.service: bot-service
 ms.date: 10/06/2020
 ---
+
 # Connect a bot to Cortana
+
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
 > [!IMPORTANT]
 > **The Cortana channel has been retired for third-party developers on September 7, 2020.**
