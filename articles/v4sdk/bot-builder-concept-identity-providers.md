@@ -13,6 +13,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Identity providers
 
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
+
 An identity provider authenticates user or client identities and issues consumable security tokens. It provides user authentication as a service.
 
 Client applications, such as web applications, delegate authentication to a trusted identity provider. Such client applications are said to be federated, that is, they use federated identity.

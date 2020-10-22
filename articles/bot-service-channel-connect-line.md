@@ -12,6 +12,8 @@ ms.date: 1/7/2019
 
 # Connect a bot to LINE
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 You can configure your bot to communicate with people through the LINE app.
 
 ## Log into the LINE console

@@ -13,6 +13,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # .NET migration quick reference
 
+[!INCLUDE [applies-to-v4](../../includes/applies-to-v4-current.md)]
+
 The BotBuilder .NET SDK v4 introduces several fundamental changes that affect how bots are authored. The purpose of this guide is to provide a quick reference to highlight common differences between accomplishing tasks in the v3 and v4 SDKs.
 
 - How information passes between a bot and channels has changed. In v3, you used the _Conversation_ object and _SendAsync_ method to process a message, and Autofac was used extensively for loading various dependencies. In v4, you use the _Adapter_ and _TurnContext_ objects to process a message, and you can use the dependency injection library of your choice.

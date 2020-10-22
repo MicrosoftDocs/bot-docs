@@ -12,6 +12,8 @@ ms.date: 12/04/2018
 
 # Bot analytics
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 Analytics is an extension of [Application Insights](/azure/application-insights/app-insights-analytics). Application Insights provides **service-level** and instrumentation data like traffic, latency, and integrations. Analytics provides **conversation-level** reporting on user, message, and channel data.
 
 ## View analytics for a bot

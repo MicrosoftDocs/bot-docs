@@ -13,7 +13,7 @@ ms.date: 05/19/2020
 
 # Direct Line App Service Extension
 
-[!INCLUDE[applies-to-v4](includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
 The Direct Line App Service Extension allows clients to connect directly with the host, where the bot is located. It runs inside the same subscription, App Service, and Azure network as your bot and provides network isolation and, in some cases, improved performance. The client application uses [WebSocket protocol](https://tools.ietf.org/html/rfc6455) to communicate with the bot. The following picture shows the overall architecture:
 

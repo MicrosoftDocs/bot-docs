@@ -13,6 +13,6 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Implement channel-specific functionality
 
-[!INCLUDE [pre-release-label](../includes/pre-release-label.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 [!INCLUDE [Channel Data Content](../includes/snippet-channeldata.md)]

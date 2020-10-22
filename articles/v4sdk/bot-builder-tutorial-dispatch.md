@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Use multiple LUIS and QnA models
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 If a bot uses multiple LUIS models and QnA Maker knowledge bases (knowledge bases), you can use Dispatch tool to determine which LUIS model or QnA Maker knowledge base best matches the user input. The dispatch tool does this by creating a single LUIS app to route user input to the correct model. For more information about the Dispatch, including the CLI commands, refer to the [README][dispatch-readme].
 

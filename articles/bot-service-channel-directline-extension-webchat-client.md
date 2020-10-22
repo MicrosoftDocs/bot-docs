@@ -12,6 +12,8 @@ ms.date: 07/25/2019
 
 # Use Web Chat with the direct line app service extension
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 This article describes how to use Web Chat with the Direct Line app service extension. Web Chat version 4.9.1 or higher is required for native Direct Line app service extension support.
 
 ## Integrate Web Chat client

@@ -12,6 +12,8 @@ ms.date: 07/10/2020
 
 # Bot Framework FAQ index
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 <!-- Attention writers!! When you create a new FAQ, please add the related link in the proper section below. -->
 
 The following are some common questions that address problems you might face.

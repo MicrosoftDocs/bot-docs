@@ -13,7 +13,7 @@ ms.author: v-mimiel
 
 # Connect a bot to Direct Line Speech
 
-[!INCLUDE[applies-to-v4](includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
 This article describes how to connect a bot to the **Direct Line Speech channel**. Use this channel to allow users to interact with a bot via voice.
 
@@ -33,8 +33,6 @@ Once you have built your bot, onboarding it with Direct Line Speech will enable 
 1. Click **Create** and follow the wizard steps.
 
     For additional information, see [Create a Cognitive Services resource](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-apis-create-account).
-
-You also need a bot deployed in Azure,
 
 ## Add the Direct Line Speech channel
 
