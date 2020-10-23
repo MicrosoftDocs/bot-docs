@@ -27,24 +27,24 @@ The Bot Framework Service may send a conversation update when a party joins the 
 
 The message activity carries conversation information between the parties. In an echo bot example, the message activities are carrying simple text and the channel will render this text. Alternatively, the message activity might carry text to be spoken, suggested actions or cards to be displayed.
 
-In this example, the bot created and sent a message activity in response to the inbound message activity it had received. However, a bot can respond in other ways to a received message activity; it's not uncommon for a bot to respond to a conversation update activity by sending some welcome text in a message activity. More information can be found in [welcoming the user](bot-builder-welcome-user.md).
+In this example, the bot created and sent a message activity in response to the inbound message activity it had received. However, a bot can respond in other ways to a received message activity; it's not uncommon for a bot to respond to a conversation update activity by sending some welcome text in a message activity. More information can be found in how to [welcome a user](bot-builder-welcome-user.md).
 
 ## The Bot Framework SDK
 
 The Bot Framework SDK allows you to build bots that can be hosted on the Azure Bot Service. The service defines a REST API and an activity protocol for how your bot and channels or users can interact. The SDK builds upon this REST API and provides an abstraction of the service so that you can focus on the conversational logic. While you don't need to understand the REST service to use the SDK, understanding some of its features can be helpful.
 
-A bot is an app that has a conversational interface. They can be used to shift simple, repetitive tasks, such as taking a dinner reservation or gathering profile information, on to automated systems that may no longer require direct human intervention. Users converse with a bot using text, interactive cards, and speech. A bot interaction can be a quick question and answer, or it can be a sophisticated conversation that intelligently provides access to services.
+Bots are apps that have a conversational interface. They can be used to shift simple, repetitive tasks, such as taking a dinner reservation or gathering profile information, on to automated systems that may no longer require direct human intervention. Users converse with a bot using text, interactive cards, and speech. A bot interaction can be a quick question and answer, or it can be a sophisticated conversation that intelligently provides access to services.
 
 > [!NOTE]
 > Support for features provided by the SDK and REST API varies by channel.
 > You can test your bot using the Bot Framework Emulator, but you should also test all features of your bot on each channel in which you intend to make your bot available.
 
-Interactions involve the exchange of activities and they are handled in turns.
+Interactions involve the exchange of _activities_, which are handled in _turns_.
 
 ### Activities
 
 Every interaction between the user (or a channel) and the bot is represented as an *activity*.
-The Bot Framework [Activity schema](https://aka.ms/botSpecs-activitySchema) defines the activities that can be exchanged between a user or channel and a bot. An activity can represent human text or speech, app-to-app notifications, reactions to other messages, and so on.
+The Bot Framework [Activity schema](https://aka.ms/botSpecs-activitySchema) defines the activities that can be exchanged between a user or channel and a bot. Activities can represent human text or speech, app-to-app notifications, reactions to other messages, and so on.
 
 <a id="defining-a-turn"></a>
 
@@ -52,16 +52,7 @@ The Bot Framework [Activity schema](https://aka.ms/botSpecs-activitySchema) defi
 
 In a conversation, people often speak one-at-a-time, taking turns speaking. With a bot, it generally reacts to user input. Within the Bot Framework SDK, a _turn_ consists of the user's incoming activity to the bot and any activity the bot sends back to the user as an immediate response. You can think of a turn as the processing associated with the bot receiving a given activity.
 
-On one turn for example, a user might ask a bot to perform a certain task. The bot might respond with a question to get more information about the task, at which point this turn ends. On the next turn, the bot receives a new message from the user that might contain the answer to the bot's question, or it might represent a change of subject or a request to ignore the initial request to perform the task.
-
-### HTTP Details
-
-Activities arrive at the bot from the Bot Framework Service via an HTTP POST request. The bot responds to the inbound POST request with a 200 HTTP status code. Activities sent from the bot to the channel are sent on a separate HTTP POST to the Bot Framework Service. This, in turn, is acknowledged with a 200 HTTP status code.
-
-The protocol doesn't specify the order in which these POST requests and their acknowledgments are made. However, to fit with common HTTP service frameworks, typically these requests are nested, meaning that the outbound HTTP request is made from the bot within the scope of the inbound HTTP request. This pattern is illustrated in the earlier diagram. Since there are two distinct HTTP connections back to back, the security model must provide for both.
-
-> [!NOTE]
-> The bot has 15 seconds to acknowledge the call with a status 200 on most channels. If the bot does not respond within 15 seconds, an HTTP GatewayTimeout error (504) occurs.
+For example, a user might ask a bot to perform a certain task. The bot might respond with a question to get more information about the task, at which point this turn ends. On the next turn, the bot receives a new message from the user that might contain the answer to the bot's question, or it might represent a change of subject or a request to ignore the initial request to perform the task.
 
 ## Bot application structure
 
@@ -82,49 +73,42 @@ The SDK also defines an _adapter_ class that handles connectivity with the chann
 - Includes a middleware pipeline, which includes turn processing outside of your bot's turn handler.
 - Calls the bot's turn handler and catches errors not otherwise handled in the turn handler.
 
-Bots often need to retrieve and store state each turn.
+In addition, bots often need to retrieve and store state each turn.
 This is handled through _storage_, _bot state_, and _property accessor_ classes.
 The SDK does not provide built-in storage, but does provide abstractions for storage and a few implementations of a storage layer.
 The [managing state](bot-builder-concept-state.md) topic describes these state and storage features.
+
+> [!div class="mx-imgBorder"]
+> ![A bot has connectivity and reasoning elements, and an abstraction for state](../media/architecture/how-bots-work.png)
 
 The SDK does not require you use a specific application layer to send and receive web requests.
 The Bot Framework has templates and samples for ASP.NET (C#), Restify (JavaScript), and aiohttp (Python).
 However, you can choose to use a differ application layer for your app.
 
-> [!div class="mx-imgBorder"]
-> ![A bot has connectivity and reasoning elements, and an abstraction for state](../media/architecture/how-bots-work.png)
-
 When you create a bot using the SDK, you provide the code to receive the HTTP traffic and forward it to the adapter. The Bot Framework provides a few templates and samples that you can use to develop your own bots.
 
-### Messaging endpoint and provisioning
+### Bot logic
 
-You need to choose the application layer use for your app; however, the Bot Framework has templates and samples for ASP.NET (C#), Restify (JavaScript), and aiohttp (Python). The documentation is written assuming you use one of these platforms, but the SDK does not require it of you.
+The bot object contains the conversational reasoning or logic for a turn and exposes a turn handler. The SDK provides a few ways to organize the bot logic.
 
-Typically, your application will need a REST endpoint at which to receive messages. It will also need to provision resources for your bot in accordance with the platform you decide to use.
-
-### Bot state and storage
-
-As with other web apps, a bot is inherently stateless.
-State within a bot follows the same paradigms as modern web applications, and the Bot Framework SDK provides storage layer and state management abstractions to make state management easier.
-
-The [managing state](bot-builder-concept-state.md) topic describes these state and storage features.
+- Use an _activity handler_ and implement handlers for each activity type or sub-type your bot will recognize and react to. See [about activity handlers](bot-activity-handler-concept.md) for more information.
+- Use the _Teams activity handler_ to create bots that can connect to the Teams channel. (The Teams channel requires the bot to handle some channel-specific behavior.) See [how bots for Microsoft Teams work](bot-builder-basics-teams.md) for more information.
+- Use dialogs to manage a long-running conversation with the user.
+  - Use an activity handler and a _component dialog_ for a sequential conversational model.
+    See [about component and waterfall dialogs](bot-builder-concept-waterfall-dialogs.md) for more information.
+  - Use a _dialog manager_ and an _adaptive dialog_ for a flexible conversational model that can handle a wider range of user interaction.
+    Your bot class can forward activities to the dialog manager directly or pass them through an activity handler first.
+    See the [introduction to adaptive dialogs](bot-builder-adaptive-dialog-introduction.md) for more information.
+- Implement your own bot class and provide your own logic for handling each turn.
 
 ### The bot adapter
 
 The adapter has a _process activity_ method for starting a turn.
 
-<!--
-- Receives and validates traffic from a channel.
-- Creates a context object for the turn.
-- Calls the bot's turn handler and catches errors not otherwise handled in the turn handler.
-- Manages the actual sending of bot replies to the channel.
-- Includes a middleware pipeline, which includes turn processing outside of your bot's turn handler.
--->
-
 - It takes the request body (the request payload, translated to an activity) and the request header as arguments.
 - It checks whether the authentication header is valid.
 - It creates a context object for the turn.
-- It runs this through its middleware pipeline.
+- It runs this through its _middleware_ pipeline.
 - It sends the activity to the bot object's turn handler.
 
 The adapter also:
@@ -147,28 +131,27 @@ The turn handler takes a turn context as its argument, typically the application
 
 The [middleware](~/v4sdk/bot-builder-concept-middleware.md) topic describes middleware in greater depth.
 
-#### Channel adapters
+### Bot state and storage
 
-The SDK also lets you use channel adapters, in which the adapter itself additionally performs the tasks that the Bot Connector Service would do for that channel.
+As with other web apps, a bot is inherently stateless.
+State within a bot follows the same paradigms as modern web applications, and the Bot Framework SDK provides storage layer and state management abstractions to make state management easier.
 
-The SDK provides a few channel adapters in some languages.
-More channel adapters are available through the Botkit and Community repositories.
-For more details, see the Bot Framework SDK repository's table of [channels and adapters](https://aka.ms/v4-botbuilder-repo#channels-and-adapters).
+The [managing state](bot-builder-concept-state.md) topic describes these state and storage features.
 
-### Bot logic
+### Messaging endpoint and provisioning
 
-The bot contains the conversational reasoning or logic for a turn. The SDK provides a few ways to organize the bot logic.
+You need to choose the application layer use for your app; however, the Bot Framework has templates and samples for ASP.NET (C#), Restify (JavaScript), and aiohttp (Python). The documentation is written assuming you use one of these platforms, but the SDK does not require it of you.
 
-- Use an _activity handler_ and implement handlers for each activity type or sub-type your bot will recognize and react to.
-  See [about activity handlers](bot-activity-handler-concept.md) for more information.
-  - Use the _Teams activity handler_ to create bots that can connect to the Teams channel. (The Teams channel requires the bot to handle some channel-specific behavior.)
-    See [how bots for Microsoft Teams work](bot-builder-basics-teams.md) for more information.
-- Use dialogs to manage a long-running conversation with the user.
-  - Use an activity handler and a _component dialog_. Component dialogs use a sequence model for conversations.
-    See [about component and waterfall dialogs](bot-builder-concept-waterfall-dialogs.md) for more information.
-  - Use a _dialog manager_ and an _adaptive dialog_. Adaptive dialogs use a flexible model for conversations to handle a wider range of user interaction. Your bot class can forward activities to the dialog manager directly or pass them through an activity handler first.
-    See the [introduction to adaptive dialogs](bot-builder-adaptive-dialog-introduction.md) for more information.
-- Implement your own bot class and provide your own logic for handling each turn.
+Typically, your application will need a REST endpoint at which to receive messages. It will also need to provision resources for your bot in accordance with the platform you decide to use.
+
+## HTTP Details
+
+Activities arrive at the bot from the Bot Framework Service via an HTTP POST request. The bot responds to the inbound POST request with a 200 HTTP status code. Activities sent from the bot to the channel are sent on a separate HTTP POST to the Bot Framework Service. This, in turn, is acknowledged with a 200 HTTP status code.
+
+The protocol doesn't specify the order in which these POST requests and their acknowledgments are made. However, to fit with common HTTP service frameworks, typically these requests are nested, meaning that the outbound HTTP request is made from the bot within the scope of the inbound HTTP request. This pattern is illustrated in the earlier diagram. Since there are two distinct HTTP connections back to back, the security model must provide for both.
+
+> [!NOTE]
+> The bot has 15 seconds to acknowledge the call with a status 200 on most channels. If the bot does not respond within 15 seconds, an HTTP GatewayTimeout error (504) occurs.
 
 ## The activity processing stack
 
@@ -222,11 +205,17 @@ How to create a basic bot project
 
 ### Managing bot resources
 
-<!-- JF-TODO:
-    This and the linked doc need review and updating.
--->
+<!-- JF-TODO: This and the linked doc need review and updating. -->
 
 The bot resources, such as app ID, passwords, keys or secrets for connected services, will need to be managed appropriately. For more on how to do so, see [Manage bot resources](bot-file-basics.md).
+
+### Channel adapters
+
+The SDK also lets you use channel adapters, in which the adapter itself additionally performs the tasks that the Bot Connector Service would do for that channel.
+
+The SDK provides a few channel adapters in some languages.
+More channel adapters are available through the Botkit and Community repositories.
+For more details, see the Bot Framework SDK repository's table of [channels and adapters](https://aka.ms/v4-botbuilder-repo#channels-and-adapters).
 
 ### The Bot Connector REST API
 
