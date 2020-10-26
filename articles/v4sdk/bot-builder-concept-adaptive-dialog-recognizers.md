@@ -12,6 +12,8 @@ ms.date: 05/06/2020
 
 # Recognizers in adaptive dialogs
 
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
+
 _Recognizers_ provide language understanding (LU) to your adaptive dialogs.
 
 Recognizers provide the ability to understand user input. Your adaptive dialog can have one or more recognizers configured to transform user input into constructs your bot can process. For example [language understanding](#luis-recognizer) and [question and answering](#qna-maker-recognizer).

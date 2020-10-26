@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Deploy LUIS resources using the Bot Framework LUIS CLI commands
 
-[!INCLUDE [applies-to-v4](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 The Bot Framework Command Line Interface (CLI) lets you automate the management of LUIS applications (LUIS apps). From a command line or a script, you can create, update, and delete LUIS properties.
 
@@ -24,9 +24,9 @@ This article explains how to deploy a LUIS resource. For information on how to u
 - Knowledge of [LU templates][lu-templates].
 - Have a bot project with `.lu` files.
 - If working with adaptive dialogs, you should have an understanding of:
-    - [Natural language processing in adaptive dialogs][natural-language-processing-in-adaptive-dialogs].
-    - [Language understanding in adaptive dialogs][language-understanding].
-    - how the [LUIS recognizer][luis-recognizer] is used.
+  - [Natural language processing in adaptive dialogs][natural-language-processing-in-adaptive-dialogs].
+  - [Language understanding in adaptive dialogs][language-understanding].
+  - how the [LUIS recognizer][luis-recognizer] is used.
 
 ## Using the LUIS CLI commands to enable LUIS in your bot
 

@@ -12,6 +12,8 @@ ms.date: 11/01/2019
 
 # Connect a bot to WeChat
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 You can configure your bot to communicate with people using the WeChat Official Accounts Platform.
 
 ## Download WeChat Adapter for Bot Framework

@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Adaptive expressions
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 Bots use adaptive expressions to evaluate the outcome of a condition based on runtime information available in memory to the dialog or the [Language Generation](bot-builder-concept-language-generation.md) system. These evaluations determine how your bot reacts to user input and other factors that impact bot functionality.
 

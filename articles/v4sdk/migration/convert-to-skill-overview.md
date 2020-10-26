@@ -13,6 +13,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Convert a v3 bot to a skill
 
+[!INCLUDE [applies-to-v4](../../includes/applies-to-v4-current.md)]
+
 In some scenarios it may not make sense to migrate from a v3 bot to a v4 bot immediately, but you may still want to take advantage of the additional functionality available in the v4 SDK. In these cases it may make sense to convert your v3 bot to a skill, and create a skill consumer bot based on the v4 SDK to pass messages to your v3 bot. See [the skills overview article](../skills-conceptual.md) for additional information on skills and skill consumers.
 
 For more complex bots, this approach can also allow for a gradual migration. You'll be able to control which messages are handled in your skill consumer bot, and which are passed on to your skill. This let's you migrate functionality to the new bot in stages, and you can eventually retire the skill once all the functionality has moved.

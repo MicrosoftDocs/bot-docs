@@ -1,6 +1,1358 @@
 {
   "redirections": [
     {
+      "source_path": "articles/bot-builder-tutorial-authentication.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-builder-tutorial-authentication",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-activities-entities.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-activities-entities",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-adapter-connect-webex.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-adapter-connect-webex",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-channel-additional-channels.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-channel-additional-channels",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-channel-connect-alexa.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-channel-connect-alexa",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-channel-connect-cortana.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-channel-connect-cortana",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-channel-connect-directline.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-channel-connect-directline",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-channel-connect-directlinespeech.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-channel-connect-directlinespeech",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-channel-connect-email.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-channel-connect-email",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-channel-connect-facebook.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-channel-connect-facebook",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-channel-connect-groupme.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-channel-connect-groupme",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-channel-connect-kik.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-channel-connect-kik",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-channel-connect-line.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-channel-connect-line",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-channel-connect-skype.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-channel-connect-skype",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-channel-connect-skypeforbusiness.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-channel-connect-skypeforbusiness",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-channel-connect-slack.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-channel-connect-slack",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-channel-connect-telegram.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-channel-connect-telegram",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-channel-connect-twilio.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-channel-connect-twilio",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-channel-connect-webchat-speech.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-channel-connect-webchat-speech",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-channel-connect-webchat.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-channel-connect-webchat",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-channel-connect-wechat.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-channel-connect-wechat",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-channel-directline-extension-net-bot.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-channel-directline-extension-net-bot",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-channel-directline-extension-net-client.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-channel-directline-extension-net-client",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-channel-directline-extension-node-bot.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-channel-directline-extension-node-bot",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-channel-directline-extension-vnet.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-channel-directline-extension-vnet",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-channel-directline-extension-webchat-client.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-channel-directline-extension-webchat-client",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-channel-directline-extension.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-channel-directline-extension",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-channel-directline.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-channel-directline",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-channels-reference.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-channels-reference",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-compliance.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-compliance",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-concept-intelligence.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-concept-intelligence",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-concept-templates.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-concept-templates",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-debug-bot-v3.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-debug-bot-v3",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-debug-cortana-skill.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-debug-cortana-skill",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-debug-emulator.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-debug-emulator",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-debug-inspection-middleware.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-debug-inspection-middleware",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-design-conversation-flow.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-design-conversation-flow",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-design-first-interaction.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-design-first-interaction",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-design-navigation.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-design-navigation",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-design-pattern-embed-app.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-design-pattern-embed-app",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-design-pattern-embed-web-site.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-design-pattern-embed-web-site",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-design-pattern-integrate-browser.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-design-pattern-integrate-browser",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-design-pattern-knowledge-base.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-design-pattern-knowledge-base",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-design-pattern-task-automation.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-design-pattern-task-automation",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-design-principles.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-design-principles",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-design-user-experience.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-design-user-experience",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-encryption.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-encryption",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-manage-analytics.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-manage-analytics",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-manage-channels.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-manage-channels",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-manage-overview.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-manage-overview",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-manage-settings.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-manage-settings",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-manage-speech-priming.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-manage-speech-priming",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-migrate-bot.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-migrate-bot",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-overview-introduction.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-overview-introduction",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-overview-readme.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-overview-readme",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-resources-app-insights-keys.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-resources-app-insights-keys",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-resources-bot-framework-faq.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-resources-bot-framework-faq",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-resources-faq-availability.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-resources-faq-availability",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-resources-faq-azure.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-resources-faq-azure",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-resources-faq-ecosystem.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-resources-faq-ecosystem",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-resources-faq-general.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-resources-faq-general",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-resources-faq-security.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-resources-faq-security",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-resources-identifiers-guide.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-resources-identifiers-guide",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-resources-links-help.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-resources-links-help",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-resources-user-agent.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-resources-user-agent",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-review-guidelines.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-review-guidelines",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-scenario-commerce.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-scenario-commerce",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-scenario-cortana-skill.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-scenario-cortana-skill",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-scenario-enterprise-productivity.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-scenario-enterprise-productivity",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-scenario-informational.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-scenario-informational",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-scenario-internet-things.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-scenario-internet-things",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-scenario-overview.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-scenario-overview",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-troubleshoot-500-errors.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-troubleshoot-500-errors",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-troubleshoot-authentication-problems.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-troubleshoot-authentication-problems",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-troubleshoot-bot-configuration.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-troubleshoot-bot-configuration",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-troubleshoot-general-problems.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-troubleshoot-general-problems",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/bot-service-troubleshoot-index.md",
+      "redirect_url": "/previous-versions/azure/bot-service/bot-service-troubleshoot-index",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/channel-connect-teams.md",
+      "redirect_url": "/previous-versions/azure/bot-service/channel-connect-teams",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/conversation-designer/conversation-designer-adaptive-cards.md",
+      "redirect_url": "/previous-versions/azure/bot-service/conversation-designer/conversation-designer-adaptive-cards",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-activities.md",
+      "redirect_url": "/previous-versions/azure/bot-service/dotnet/bot-builder-dotnet-activities",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-add-input-hints.md",
+      "redirect_url": "/previous-versions/azure/bot-service/dotnet/bot-builder-dotnet-add-input-hints",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-add-media-attachments.md",
+      "redirect_url": "/previous-versions/azure/bot-service/dotnet/bot-builder-dotnet-add-media-attachments",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-add-rich-card-attachments.md",
+      "redirect_url": "/previous-versions/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-add-suggested-actions.md",
+      "redirect_url": "/previous-versions/azure/bot-service/dotnet/bot-builder-dotnet-add-suggested-actions",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-audio-calls.md",
+      "redirect_url": "/previous-versions/azure/bot-service/dotnet/bot-builder-dotnet-audio-calls",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-channeldata.md",
+      "redirect_url": "/previous-versions/azure/bot-service/dotnet/bot-builder-dotnet-channeldata",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-concepts.md",
+      "redirect_url": "/previous-versions/azure/bot-service/dotnet/bot-builder-dotnet-concepts",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-connector.md",
+      "redirect_url": "/previous-versions/azure/bot-service/dotnet/bot-builder-dotnet-connector",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-cortana-skill.md",
+      "redirect_url": "/previous-versions/azure/bot-service/dotnet/bot-builder-dotnet-cortana-skill",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-create-messages.md",
+      "redirect_url": "/previous-versions/azure/bot-service/dotnet/bot-builder-dotnet-create-messages",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-dialogs.md",
+      "redirect_url": "/previous-versions/azure/bot-service/dotnet/bot-builder-dotnet-dialogs",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-formflow-advanced.md",
+      "redirect_url": "/previous-versions/azure/bot-service/dotnet/bot-builder-dotnet-formflow-advanced",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-formflow-formbuilder.md",
+      "redirect_url": "/previous-versions/azure/bot-service/dotnet/bot-builder-dotnet-formflow-formbuilder",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-formflow-json-schema.md",
+      "redirect_url": "/previous-versions/azure/bot-service/dotnet/bot-builder-dotnet-formflow-json-schema",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-formflow-localize.md",
+      "redirect_url": "/previous-versions/azure/bot-service/dotnet/bot-builder-dotnet-formflow-localize",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-formflow-pattern-language.md",
+      "redirect_url": "/previous-versions/azure/bot-service/dotnet/bot-builder-dotnet-formflow-pattern-language",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-formflow.md",
+      "redirect_url": "/previous-versions/azure/bot-service/dotnet/bot-builder-dotnet-formflow",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-global-handlers.md",
+      "redirect_url": "/previous-versions/azure/bot-service/dotnet/bot-builder-dotnet-global-handlers",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-luis-dialogs.md",
+      "redirect_url": "/previous-versions/azure/bot-service/dotnet/bot-builder-dotnet-luis-dialogs",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-manage-conversation-flow.md",
+      "redirect_url": "/previous-versions/azure/bot-service/dotnet/bot-builder-dotnet-manage-conversation-flow",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-middleware.md",
+      "redirect_url": "/previous-versions/azure/bot-service/dotnet/bot-builder-dotnet-middleware",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-overview.md",
+      "redirect_url": "/previous-versions/azure/bot-service/dotnet/bot-builder-dotnet-overview",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-proactive-messages.md",
+      "redirect_url": "/previous-versions/azure/bot-service/dotnet/bot-builder-dotnet-proactive-messages",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-request-payment.md",
+      "redirect_url": "/previous-versions/azure/bot-service/dotnet/bot-builder-dotnet-request-payment",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-scorable-dialogs.md",
+      "redirect_url": "/previous-versions/azure/bot-service/dotnet/bot-builder-dotnet-scorable-dialogs",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-search-azure.md",
+      "redirect_url": "/previous-versions/azure/bot-service/dotnet/bot-builder-dotnet-search-azure",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-security.md",
+      "redirect_url": "/previous-versions/azure/bot-service/dotnet/bot-builder-dotnet-security",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-state-azure-cosmosdb.md",
+      "redirect_url": "/previous-versions/azure/bot-service/dotnet/bot-builder-dotnet-state-azure-cosmosdb",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-state-azure-table-storage.md",
+      "redirect_url": "/previous-versions/azure/bot-service/dotnet/bot-builder-dotnet-state-azure-table-storage",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-state.md",
+      "redirect_url": "/previous-versions/azure/bot-service/dotnet/bot-builder-dotnet-state",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/dotnet/bot-builder-dotnet-text-to-speech.md",
+      "redirect_url": "/previous-versions/azure/bot-service/dotnet/bot-builder-dotnet-text-to-speech",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-backchannel.md",
+      "redirect_url": "/previous-versions/azure/bot-service/nodejs/bot-builder-nodejs-backchannel",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-concepts.md",
+      "redirect_url": "/previous-versions/azure/bot-service/nodejs/bot-builder-nodejs-concepts",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-conduct-audio-calls.md",
+      "redirect_url": "/previous-versions/azure/bot-service/nodejs/bot-builder-nodejs-conduct-audio-calls",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-cortana-skill.md",
+      "redirect_url": "/previous-versions/azure/bot-service/nodejs/bot-builder-nodejs-cortana-skill",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-dialog-actions.md",
+      "redirect_url": "/previous-versions/azure/bot-service/nodejs/bot-builder-nodejs-dialog-actions",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-dialog-manage-conversation-flow.md",
+      "redirect_url": "/previous-versions/azure/bot-service/nodejs/bot-builder-nodejs-dialog-manage-conversation-flow",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-dialog-overview.md",
+      "redirect_url": "/previous-versions/azure/bot-service/nodejs/bot-builder-nodejs-dialog-overview",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-dialog-prompt.md",
+      "redirect_url": "/previous-versions/azure/bot-service/nodejs/bot-builder-nodejs-dialog-prompt",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-dialog-replace.md",
+      "redirect_url": "/previous-versions/azure/bot-service/nodejs/bot-builder-nodejs-dialog-replace",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-dialog-waterfall.md",
+      "redirect_url": "/previous-versions/azure/bot-service/nodejs/bot-builder-nodejs-dialog-waterfall",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-handle-conversation-events.md",
+      "redirect_url": "/previous-versions/azure/bot-service/nodejs/bot-builder-nodejs-handle-conversation-events",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-intercept-messages.md",
+      "redirect_url": "/previous-versions/azure/bot-service/nodejs/bot-builder-nodejs-intercept-messages",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-localization.md",
+      "redirect_url": "/previous-versions/azure/bot-service/nodejs/bot-builder-nodejs-localization",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-message-create.md",
+      "redirect_url": "/previous-versions/azure/bot-service/nodejs/bot-builder-nodejs-message-create",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-overview.md",
+      "redirect_url": "/previous-versions/azure/bot-service/nodejs/bot-builder-nodejs-overview",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-proactive-messages.md",
+      "redirect_url": "/previous-versions/azure/bot-service/nodejs/bot-builder-nodejs-proactive-messages",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-recognize-intent-luis.md",
+      "redirect_url": "/previous-versions/azure/bot-service/nodejs/bot-builder-nodejs-recognize-intent-luis",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-recognize-intent-messages.md",
+      "redirect_url": "/previous-versions/azure/bot-service/nodejs/bot-builder-nodejs-recognize-intent-messages",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-request-payment.md",
+      "redirect_url": "/previous-versions/azure/bot-service/nodejs/bot-builder-nodejs-request-payment",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-search-azure.md",
+      "redirect_url": "/previous-versions/azure/bot-service/nodejs/bot-builder-nodejs-search-azure",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-send-input-hints.md",
+      "redirect_url": "/previous-versions/azure/bot-service/nodejs/bot-builder-nodejs-send-input-hints",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-send-receive-attachments.md",
+      "redirect_url": "/previous-versions/azure/bot-service/nodejs/bot-builder-nodejs-send-receive-attachments",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-send-rich-cards.md",
+      "redirect_url": "/previous-versions/azure/bot-service/nodejs/bot-builder-nodejs-send-rich-cards",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-send-suggested-actions.md",
+      "redirect_url": "/previous-versions/azure/bot-service/nodejs/bot-builder-nodejs-send-suggested-actions",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-send-typing-indicator.md",
+      "redirect_url": "/previous-versions/azure/bot-service/nodejs/bot-builder-nodejs-send-typing-indicator",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-state-azure-cosmosdb.md",
+      "redirect_url": "/previous-versions/azure/bot-service/nodejs/bot-builder-nodejs-state-azure-cosmosdb",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-state-azure-table-storage.md",
+      "redirect_url": "/previous-versions/azure/bot-service/nodejs/bot-builder-nodejs-state-azure-table-storage",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-state.md",
+      "redirect_url": "/previous-versions/azure/bot-service/nodejs/bot-builder-nodejs-state",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/nodejs/bot-builder-nodejs-text-to-speech.md",
+      "redirect_url": "/previous-versions/azure/bot-service/nodejs/bot-builder-nodejs-text-to-speech",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/nodejs/cortana-skill-concepts.md",
+      "redirect_url": "/previous-versions/azure/bot-service/nodejs/cortana-skill-concepts",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/rest-api/bot-framework-rest-connector-add-input-hints.md",
+      "redirect_url": "/previous-versions/azure/bot-service/rest-api/bot-framework-rest-connector-add-input-hints",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/rest-api/bot-framework-rest-connector-add-media-attachments.md",
+      "redirect_url": "/previous-versions/azure/bot-service/rest-api/bot-framework-rest-connector-add-media-attachments",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/rest-api/bot-framework-rest-connector-add-rich-cards.md",
+      "redirect_url": "/previous-versions/azure/bot-service/rest-api/bot-framework-rest-connector-add-rich-cards",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/rest-api/bot-framework-rest-connector-add-suggested-actions.md",
+      "redirect_url": "/previous-versions/azure/bot-service/rest-api/bot-framework-rest-connector-add-suggested-actions",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/rest-api/bot-framework-rest-connector-api-reference.md",
+      "redirect_url": "/previous-versions/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/rest-api/bot-framework-rest-connector-authentication.md",
+      "redirect_url": "/previous-versions/azure/bot-service/rest-api/bot-framework-rest-connector-authentication",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/rest-api/bot-framework-rest-connector-channeldata.md",
+      "redirect_url": "/previous-versions/azure/bot-service/rest-api/bot-framework-rest-connector-channeldata",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/rest-api/bot-framework-rest-connector-concepts.md",
+      "redirect_url": "/previous-versions/azure/bot-service/rest-api/bot-framework-rest-connector-concepts",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/rest-api/bot-framework-rest-connector-create-messages.md",
+      "redirect_url": "/previous-versions/azure/bot-service/rest-api/bot-framework-rest-connector-create-messages",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/rest-api/bot-framework-rest-connector-quickstart.md",
+      "redirect_url": "/previous-versions/azure/bot-service/rest-api/bot-framework-rest-connector-quickstart",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/rest-api/bot-framework-rest-connector-send-and-receive-messages.md",
+      "redirect_url": "/previous-versions/azure/bot-service/rest-api/bot-framework-rest-connector-send-and-receive-messages",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/rest-api/bot-framework-rest-connector-text-to-speech.md",
+      "redirect_url": "/previous-versions/azure/bot-service/rest-api/bot-framework-rest-connector-text-to-speech",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/rest-api/bot-framework-rest-direct-line-1-1-api-reference.md",
+      "redirect_url": "/previous-versions/azure/bot-service/rest-api/bot-framework-rest-direct-line-1-1-api-reference",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/rest-api/bot-framework-rest-direct-line-1-1-authentication.md",
+      "redirect_url": "/previous-versions/azure/bot-service/rest-api/bot-framework-rest-direct-line-1-1-authentication",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/rest-api/bot-framework-rest-direct-line-1-1-concepts.md",
+      "redirect_url": "/previous-versions/azure/bot-service/rest-api/bot-framework-rest-direct-line-1-1-concepts",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/rest-api/bot-framework-rest-direct-line-1-1-receive-messages.md",
+      "redirect_url": "/previous-versions/azure/bot-service/rest-api/bot-framework-rest-direct-line-1-1-receive-messages",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/rest-api/bot-framework-rest-direct-line-1-1-send-message.md",
+      "redirect_url": "/previous-versions/azure/bot-service/rest-api/bot-framework-rest-direct-line-1-1-send-message",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/rest-api/bot-framework-rest-direct-line-1-1-start-conversation.md",
+      "redirect_url": "/previous-versions/azure/bot-service/rest-api/bot-framework-rest-direct-line-1-1-start-conversation",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/rest-api/bot-framework-rest-direct-line-3-0-api-reference.md",
+      "redirect_url": "/previous-versions/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-api-reference",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/rest-api/bot-framework-rest-direct-line-3-0-authentication.md",
+      "redirect_url": "/previous-versions/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/rest-api/bot-framework-rest-direct-line-3-0-concepts.md",
+      "redirect_url": "/previous-versions/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/rest-api/bot-framework-rest-direct-line-3-0-end-conversation.md",
+      "redirect_url": "/previous-versions/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-end-conversation",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/rest-api/bot-framework-rest-direct-line-3-0-receive-activities.md",
+      "redirect_url": "/previous-versions/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-receive-activities",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/rest-api/bot-framework-rest-direct-line-3-0-reconnect-to-conversation.md",
+      "redirect_url": "/previous-versions/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-reconnect-to-conversation",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/rest-api/bot-framework-rest-direct-line-3-0-send-activity.md",
+      "redirect_url": "/previous-versions/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-send-activity",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/rest-api/bot-framework-rest-direct-line-3-0-start-conversation.md",
+      "redirect_url": "/previous-versions/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-start-conversation",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/rest-api/bot-framework-rest-overview.md",
+      "redirect_url": "/previous-versions/azure/bot-service/rest-api/bot-framework-rest-overview",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
+      "source_path": "articles/rest-api/bot-framework-rest-state.md",
+      "redirect_url": "/previous-versions/azure/bot-service/rest-api/bot-framework-rest-state",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-bot-service-3.0"
+      ]
+    },
+    {
       "source_path": "articles/v4sdk/bf-cli-reference.md",
       "redirect_url": "https://github.com/microsoft/botframework-cli/tree/master/packages/cli#readme",
       "redirect_document_id": false

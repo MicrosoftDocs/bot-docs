@@ -14,7 +14,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Functions injected from the language generation library
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 The following article details how to inject functions from the [Language generation (LG)](../v4sdk/bot-builder-concept-language-generation.md) library.
 

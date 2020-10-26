@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Events and triggers in adaptive dialogs - reference guide
 
-[!INCLUDE [applies-to-v4](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 For an introduction to this topic, see the [Events and triggers in adaptive dialogs](../v4sdk/bot-builder-concept-adaptive-dialog-triggers.md) concept article.
 

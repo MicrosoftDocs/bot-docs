@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # API reference for Adaptive expressions
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 ## API reference links
 

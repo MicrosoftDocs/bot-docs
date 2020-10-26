@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Managing state in adaptive dialogs - reference guide
 
-[!INCLUDE [applies-to-v4](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 This article provides technical details that will help you work with memory scopes in adaptive dialogs. For an introduction to memory scopes and managing state in adaptive dialogs, see the [Managing state in adaptive dialogs][managing-state] concept article.
 
@@ -160,7 +160,7 @@ Value = "=@fromCity.location"
 
 ## Settings scope
 
-This represents any settings that are made available to the bot via the platform specific settings configuration system, for example if you are developing your bot using C#, these settings will appear in the appsettings.json file, if you are developing your bot using JavaScript, these settings will appear in the .env file or the config.py file when developing with Python. Additionally, some settings are contained in the dynamic environment settings in Azure, all are available in the settings scope..
+This represents any settings that are made available to the bot via the platform specific settings configuration system, for example if you are developing your bot using C#, these settings will appear in the appsettings.json file<!--, if you are developing your bot using JavaScript, these settings will appear in the .env file or the config.py file when developing with Python. Additionally, some settings are contained in the dynamic environment settings in Azure, all are available in the settings scope-->.
 
 ### Settings scope example
 <!--TODO P2: rewrite this with language tabs for C#/JS. -->

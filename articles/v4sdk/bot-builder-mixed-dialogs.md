@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Create a bot using adaptive, component, waterfall, and custom dialogs
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 All dialogs derive from a base _dialog_ class.
 If you use the _dialog manager_ to run your root dialog, all of the dialog classes can work together.
@@ -24,30 +24,17 @@ This article focuses on the code that allows these dialogs to work together. See
 ## Prerequisites
 
 - Knowledge of [bot basics][bot-basics], [managing state][concept-state], the [dialogs library][about-dialogs], and [adaptive dialogs][about-adaptive-dialogs].
-- A copy of the **waterfall or custom dialog with adaptive** sample in either [**C#**][cs-sample], [**JavaScript** (preview)][js-sample]
+- A copy of the **waterfall or custom dialog with adaptive** sample in [**C#**][cs-sample]
 
 ### Preliminary steps to add an adaptive dialog to a bot
 
 You must follow the steps described below to add an adaptive dialog to a bot.
 These steps are covered in more detail in how to [create a bot using adaptive dialogs][basic-adaptive-how-to].
 
-#### [C#](#tab/csharp)
-
 1. Update all Bot Builder NuGet packages to version 4.9.x.
 1. Add the `Microsoft.Bot.Builder.Dialogs.Adaptive` package to your bot project.
 1. Update the the bot adapter to add storage and the user and conversation state objects to every turn context.
 1. Use a dialog manager in the bot code to start or continue the root dialog each turn.
-
-#### [JavaScript](#tab/javascript)
-
-1. Update all Bot Builder npm packages to version 4.9.x.
-1. Add the `botbuilder-dialogs-adaptive` package to your bot project.
-1. In the bot's on-turn handler:
-   1. Create a dialog manager.
-   1. Set the dialog manager's storage and user and conversation state properties.
-   1. Use the dialog manager to start or continue the root dialog.
-
----
 
 ## About the sample
 
@@ -82,8 +69,6 @@ Each slot definition includes the name of the dialog prompt with which to collec
 
 The root dialog creates 2 slot-filling dialogs, one to collect the user's full name, and one to collect their address. It also creates the _text prompt_ that these two dialogs use to fill their slots.
 
-### [C#](#tab/csharp)
-
 **Dialogs\SlotDetails.cs**
 
 The `SlotDetails` class describes the information to collect and the prompt with which to collect it.
@@ -102,30 +87,6 @@ The core logic for collecting missing information is in the `RunPromptAsync` hel
 
 [!code-csharp[slot-filling RunPromptAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/04.waterfall-or-custom-dialog-with-adaptive/Dialogs/SlotFillingDialog.cs?range=121-151&highlight=23-24,28-29)]
 
-### [JavaScript](#tab/javascript)
-
-**dialogs/slotDetails.js**
-
-The `SlotDetails` class describes the information to collect and the prompt with which to collect it.
-
-[!code-javascript[slot details](~/../botbuilder-samples/experimental/adaptive-dialog/javascript_nodejs/04.waterfall-or-custom-dialog-with-adaptive/dialogs/slotDetails.js?range=4-26)]
-
-**dialogs/slotFillingDialog.js**
-
-The `SlotFillingDialog` class extends the base `Dialog` class.
-
-[!code-javascript[slot-filling constants](~/../botbuilder-samples/experimental/adaptive-dialog/javascript_nodejs/04.waterfall-or-custom-dialog-with-adaptive/dialogs/slotFillingDialog.js?range=7-12)]
-
-[!code-javascript[slot-filling constructor](~/../botbuilder-samples/experimental/adaptive-dialog/javascript_nodejs/04.waterfall-or-custom-dialog-with-adaptive/dialogs/slotFillingDialog.js?range=15-30)]
-
-The core logic for collecting missing information is in the `RunPromptAsync` helper method.
-It tracks the values it has collected, which slot it prompted for last, and details for the slots to fill.
-When all the information has been collected, it ends the dialog and returns the information.
-
-[!code-javascript[slot-filling runPrompt](~/../botbuilder-samples/experimental/adaptive-dialog/javascript_nodejs/04.waterfall-or-custom-dialog-with-adaptive/dialogs/slotFillingDialog.js?range=84-109&hihglight=19-20,22-23)]
-
----
-
 For a more about implementing custom dialogs, see the discussion of the _cancel and help_ dialog in how to [handle user interruptions][interruptions-how-to].
 
 ## The root component dialog
@@ -141,8 +102,6 @@ The waterfall will aggregate all the collected information and save it user stat
 
 The waterfall and adaptive dialog are described in the following sections.
 
-### [C#](#tab/csharp)
-
 **Dialogs\RootDialog.cs**
 
 The `RootDialog` class is a `ComponentDialog`. It defines the user state property in which to save the collected information.
@@ -155,22 +114,6 @@ It then adds all these dialogs to its dialog set.
 
 [!code-csharp[add dialogs plus closing](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/04.waterfall-or-custom-dialog-with-adaptive/Dialogs/RootDialog.cs?range=124-142)]
 
-### [JavaScript](#tab/javascript)
-
-**dialogs/rootDialog.js**
-
-The `RootDialog` class extends `ComponentDialog`. It defines the user state property in which to save the collected information.
-
-[!code-javascript[class and constructor opening](~/../botbuilder-samples/experimental/adaptive-dialog/javascript_nodejs/04.waterfall-or-custom-dialog-with-adaptive/dialogs/rootDialog.js?range=16-23)]
-
-Its constructor creates all the dialogs it needs, including an adaptive dialog `adaptiveSlotFillingDialog`.
-
-It then adds all these dialogs to its dialog set.
-
-[!code-javascript[add dialogs plus closing](~/../botbuilder-samples/experimental/adaptive-dialog/javascript_nodejs/04.waterfall-or-custom-dialog-with-adaptive/dialogs/rootDialog.js?range=89-111)]
-
----
-
 ## The waterfall dialog
 
 The waterfall dialog contains 3 steps:
@@ -179,19 +122,9 @@ The waterfall dialog contains 3 steps:
 1. Record the user's name and start the adaptive dialog, which will gather the rest of the user's information.
 1. Write the user's information to the user state property accessor and summarize to the user the collected information.
 
-### [C#](#tab/csharp)
-
 **Dialogs\RootDialog.cs**
 
 [!code-csharp[Waterfall steps](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/04.waterfall-or-custom-dialog-with-adaptive/Dialogs/RootDialog.cs?range=162-202)]
-
-### [JavaScript](#tab/javascript)
-
-**dialogs/rootDialog.js**
-
-[!code-javascript[Waterfall steps](~/../botbuilder-samples/experimental/adaptive-dialog/javascript_nodejs/04.waterfall-or-custom-dialog-with-adaptive/dialogs/rootDialog.js?range=113-145)]
-
----
 
 ## The adaptive dialog
 
@@ -206,19 +139,9 @@ Since no other actions will be queued, the adaptive dialog will also end and ret
 
 The adaptive dialog uses a language generator to format text and include values from bot and dialog state. (See about using [generators in adaptive dialogs][lg-in-adaptive] For more information.)
 
-### [C#](#tab/csharp)
-
 **Dialogs\RootDialog.cs**
 
 [!code-csharp[adaptive dialog and triggers](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/04.waterfall-or-custom-dialog-with-adaptive/Dialogs/RootDialog.cs?range=60-122&highlight=1-10)]
-
-### [JavaScript](#tab/javascript)
-
-**dialogs/rootDialog.js**
-
-[!code-javascript[adaptive dialog and triggers](~/../botbuilder-samples/experimental/adaptive-dialog/javascript_nodejs/04.waterfall-or-custom-dialog-with-adaptive/dialogs/rootDialog.js?range=39-87&highlight=1-10)]
-
----
 
 ## To test the bot
 
@@ -261,4 +184,3 @@ For more information on how to use each dialog type, see:
 [interruptions-how-to]: bot-builder-howto-handle-user-interrupt.md
 
 [cs-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/adaptive-dialog/04.waterfall-or-custom-dialog-with-adaptive
-[js-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/adaptive-dialog/javascript_nodejs/04.waterfall-or-custom-dialog-with-adaptive

@@ -12,6 +12,8 @@ ms.date: 01/10/2020
 
 # Analyze your bot's telemetry data
 
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
+
 ## Analyzing Bot behavior
 
 The following collection of queries can be used to analyze bot behavior. You can use the collection to author custom queries in [Azure Monitor Log Analytics](https://aka.ms/log-analytics-azure-monitor) and to create monitoring and [PowerBI](https://aka.ms/power-bi-overview) visualization dashboards.

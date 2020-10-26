@@ -9,7 +9,10 @@ ms.topic: article
 ms.service: bot-service
 ms.date: 11/15/2019
 ---
+
 # Connect a bot to Office 365 email
+
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
 Bots can communicate with users via Office 365 email in addition to other [channels](~/bot-service-manage-channels.md). When a bot is configured to access an email account, it receives a message when a new email arrives. The bot can then respond as indicated by its business logic. For example, the bot could send an email reply acknowledging an email was received with the message, "Hi! Thanks for your order! We will begin processing it immediately."
 
@@ -59,14 +62,8 @@ The following example message shows a JSON file that includes these `channelData
 }
 ```
 
-::: moniker range="azure-bot-service-3.0"
-For more information about using `channelData`, see the [Node.js](https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/core-ChannelData) sample or [.NET](~/dotnet/bot-builder-dotnet-channeldata.md) documentation.
-::: moniker-end
-
-::: moniker range="azure-bot-service-4.0"
 For more information about using `channelData`,
 see [how to implement channel-specific functionality](~/v4sdk/bot-builder-channeldata.md).
-::: moniker-end
 
 ## Other considerations
 
@@ -77,15 +74,6 @@ If your bot does not return a 200 OK HTTP status code within 15 seconds in respo
 
 ## Additional resources
 
-<!-- Put whole list in monikers, even though it's just the second item that needs to be different. -->
-::: moniker range="azure-bot-service-3.0"
-* Connect a bot to [channels](~/bot-service-manage-channels.md)
-* [Implement channel-specific functionality](dotnet/bot-builder-dotnet-channeldata.md) with the Bot Framework SDK for .NET
-* Read the [channels reference](bot-service-channels-reference.md) article for more information about which features are supported on each channel
-::: moniker-end
-::: moniker range="azure-bot-service-4.0"
 * Connect a bot to [channels](~/bot-service-manage-channels.md)
 * [Implement channel-specific functionality](~/v4sdk/bot-builder-channeldata.md) with the Bot Framework SDK for .NET
 * Read the [channels reference](bot-service-channels-reference.md) article for more information about which features are supported on each channel
-::: moniker-end
-

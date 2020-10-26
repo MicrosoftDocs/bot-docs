@@ -7,13 +7,13 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 06/29/2020
+ms.date: 10/19/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
 # Use multiple LUIS and QnA models
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 If a bot uses multiple LUIS models and QnA Maker knowledge bases (knowledge bases), you can use Dispatch tool to determine which LUIS model or QnA Maker knowledge base best matches the user input. The dispatch tool does this by creating a single LUIS app to route user input to the correct model. For more information about the Dispatch, including the CLI commands, refer to the [README][dispatch-readme].
 
@@ -31,7 +31,7 @@ This sample is based on a predefined set of LUIS and QnA Maker apps.
 
 ## [C#](#tab/cs)
 
-![Code sample logic flow](./media/tutorial-dispatch/dispatch-logic-flow.png)
+![Code sample logic flow cs](./media/tutorial-dispatch/dispatch-logic-flow.png)
 
 `OnMessageActivityAsync` is called for each user input received. This module finds the top scoring user intent and passes that result on to `DispatchToTopIntentAsync`. DispatchToTopIntentAsync, in turn, calls the appropriate app handler
 
@@ -41,7 +41,7 @@ This sample is based on a predefined set of LUIS and QnA Maker apps.
 
 ## [JavaScript](#tab/js)
 
-![Code sample logic flow](./media/tutorial-dispatch/dispatch-logic-flow-js.png)
+![Code sample logic flow js](./media/tutorial-dispatch/dispatch-logic-flow-js.png)
 
 `onMessage` is called for each user input received. This module finds the top scoring user intent and passes that result on to `dispatchToTopIntentAsync`. dispatchToTopIntentAsync, in turn, calls the appropriate app handler
 
@@ -51,7 +51,7 @@ This sample is based on a predefined set of LUIS and QnA Maker apps.
 
 ## [Python](#tab/python)
 
-![Code sample logic flow](./media/tutorial-dispatch/dispatch-logic-flow-python.png)
+![Code sample logic flow python](./media/tutorial-dispatch/dispatch-logic-flow-python.png)
 
 `on_message_activity` is called for each user input received. This module finds the top scoring user intent and passes that result on to `_dispatch_to_top_intent`. _dispatch_to_top_intent, in turn, calls the appropriate app handler
 
@@ -435,7 +435,7 @@ If method `q_sample-qna` is invoked, it uses the user input contained within the
 ## Test your bot
 
 1. Using your development environment, start the sample code. Note the _localhost_ address shown in the address bar of the browser window opened by your App: "https://localhost:<Port_Number>".
-1. Open your Bot Framework Emulator, then select `Create a new bot configuration`. A `.bot` file enables you to use the _Inspector_ in the bot emulator to see the JSON returned from LUIS and QnA Maker.
+1. Open Bot Framework Emulator, then select `Create a new bot configuration`. A `.bot` file enables you to use the _Inspector_ in the Emulator to see the JSON returned from LUIS and QnA Maker.
 1. In the **New bot configuration** dialog box, enter your bot name, and your endpoint URL, such as `http://localhost:3978/api/messages`. Save the file at the root of your bot sample code project.
 1. Open the bot file and add sections for your LUIS and QnA Maker apps. Use [this example file](https://github.com/microsoft/botbuilder-tools/blob/master/packages/MSBot/docs/sample-bot-file.json) as a template for settings. Save the changes.
 1. Select the bot name in the **My Bots** list to access your running bot. For your reference, here are some of the questions and commands that are covered by the services built for your bot:
