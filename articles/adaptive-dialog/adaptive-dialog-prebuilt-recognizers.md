@@ -364,4 +364,4 @@ In the triggers section of the cross-train configuration file, list out each int
 [qnamaker-cross-train]: https://aka.ms/botframework-cli#bf-qnamakercross-train
 [bf-luiscross-train]: https://aka.ms/botframework-cli#bf-luiscross-train
 [cs-sample-todo-bot]: https://aka.ms/csharp-adaptive-dialog-08-todo-bot-luis-qnamaker-sample
-[howto-cross-train]: bot-builder-howto-cross-train.md
+[howto-cross-train]: ../v4sdk/bot-builder-howto-cross-train.md

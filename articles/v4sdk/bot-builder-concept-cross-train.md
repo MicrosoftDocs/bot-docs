@@ -15,11 +15,32 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
+Adaptive dialogs offer a dialog centric way to model conversations, with each container adaptive dialog having its own language understanding (LU) model. while this gives bot developers tremendous flexibility, it can also present some challenges. For example, to give users the ability to cancel the current conversational flow would require that a cancel intent is duplicated in every adaptive dialogs LU model. To provide users with help would require duplicating the help topics in every adaptive dialogs LU model. In addition to those examples consider that a key attribute of conversations is that they are rarely linear. This is because people often think of something that they had previously forgotten or they simply change their minds mid way through a thought. Additionally, it is not uncommon for a user to want to correct information previously provided or even begin talking about something completely different from the current topic, often a topic handled by a different adaptive dialog but unknown by the current dialog. In these scenarios, the LUIS application tied to an adaptive dialog cannot know when the user expresses something that could be handled by another dialog within the bot.
+
+In the article [Handling interruptions in adaptive dialogs][interruptions], the concept of interruptions in adaptive dialogs is introduced. It explains how a parent adaptive dialog can be consulted when the active adaptive dialogs recognizer does not find a suitable match by setting the Allow interruptions property of the input dialog class to true. In this case the active dialog does not know if a parent or sibling dialog can respond, but utterances or question are sent to the parent to find out using the Bot Framework's _consultation mechanism_.
+
+Cross-train can build on and improve on the capabilities provided by interruptions.
+
+<!--
+The Bot Framework SDK provides two primary ways to handle these types of situations. The first is a dialog centric approach that enables [interruptions][interruptions] at run time, first giving the active dialog a chance to process the user input, then bubbling up to the parent dialog when it cannot. Using this approach does not require any modifications to any dialogs LU models, so the active adaptive dialog does not know the capabilities of any other dialog in your bot.
+
+The second approach is an LU model centric approach that is accomplished by cross training all the LU models in your bot at design time. This gives every dialog some insights into the capabilities of other dialogs and the active dialog does not need to send the users input to its parent dialog in order to determine if it or a sibling dialog is able to handle the request. Using This approach also enables an adaptive dialog to use multiple LU technologies and select the results that will best address the users request, for example you can cross train a LUIS model with a QnA Maker model, then depending on the user request either LUIS or QnA Maker can provide the response. The cross training approach is covered in detail in this article.
+
+
 With the Bot Frameworks adaptive dialogs, each dialog has its own language understanding (LU) model. This gives you tremendous flexibility. There may be situations however, where you will duplicate language understanding capabilities across multiple dialogs. For example, you may want to enable your users to request help, or cancel the current process regardless of what dialog is currently active. This requires the [intents][intents] and [utterances][utterances] of each to exist in every dialogs LU model, as well as underlying code to handle the related triggers. To minimize the need for this duplicate code, the Bot Framework's _consultation mechanism_ provides the capability to cross-train the LU models in your bot that are compatible with the [LUIS][luis-recognizer] or [QnA Maker][qnamaker-recognizer] recognizers. This in effect allows you to share a dialogs functionality with other dialogs in the bot.
 
 You can cross train LUIS to LUIS, LUIS to QnA Maker, which includes both LUIS to LUIS and LUIS to QnA Maker. Once cross trained, use the [Cross-trained recognizer set][cross-trained-recognizer-set-concept], that enables each adaptive dialog to determine the best possible response to the user input, using [language generation][language-generation], regardless of which dialog is active.
 
 This article introduces the concepts required to create a bot that integrates the capabilities of both [LUIS][luis] and [QnA Maker][qnamaker] together in every adaptive dialogs in your bot.
+-->
+
+## Introduction to cross training
+
+Cross training builds on and improves interruptions in a few ways:
+
+1. Cross dialog training. By cross training the LU models of all the adaptive dialogs in your bot, you give every dialog the ability to know if other dialogs are capable of responding to a user request. In this way the bot does not need to consult all the way up the dialog stack in order to find out if another dialog can best process a given user input. This is described in more detail in [LUIS to LUIS Cross training](#luis-to-luis-cross-training). You can think of this as intra-dialog training.
+
+1. Cross training different language understanding engines within the same dialog. LUIS and QnA Maker are different language understanding engines, once the models for each are cross trained, the recognizer for both can be consulted to determine which is best suited to respond to a user request. This is described in more detail in [LUIS to QnA Maker cross training](#luis-to-qna-maker-cross-training). You can think of this as extra-dialog training.
 
 ## LUIS to LUIS Cross training
 
@@ -88,9 +109,11 @@ After cross training with the hotel booking `.lu` file, it would look like this:
 
 The utterance _reserve a hotel room_ is associated with the `_interruption` intent When the `_interruption` intent is detected, it bubbles up any utterance associated with it to its parent dialog, whose recognizer returns the `BookHotel` intent. When cross training LUIS to LUIS, you need to include all user utterances from all intents from the dialog you are cross training with.
 
+![Travel bot diagram after cross training](./media/adaptive-dialogs/after-cross-train.png)
+
 > [!IMPORTANT]
 >
-> Cross training all the LUIS models in a typical bot can be a very involved and tedious process. There is a command included with the Bot Framework command line interface (BF CLI) that automates this work for you. This is discussed in detail in the [Cross-trained recognizer set][crosstrainedrecognizerset-ref-guide] section of the Recognizers reference guide.
+> Cross training all the LUIS models in a typical bot can be a very involved and tedious process. There is a command included with the Bot Framework command line interface (BF CLI) that automates this work for you. This is discussed in detail in the [The Bot Framework CLI cross-train command][the-bot-framework-cli-cross-train-command] section below.
 
 ## LUIS to QnA Maker cross training
 
@@ -113,19 +136,25 @@ When a user converses with the bot, the `CreateCrossTrainedRecognizer` recognize
 | LUIS recognizer returns | QnA Maker recognizer returns | Final results                     |
 | ----------------------- | ---------------------------- | --------------------------------- |
 | Valid LUIS intent       |  Defer To **LUIS** intent    |  Select response from **LUIS** recognizer. Handle using the `OnIntent` trigger.|
-| Defer To **QnA Maker** intent | Valid QnA Maker intent |  Select response from **QnA Maker** recognizer. Handle using the `OnQnAMatch` trigger.|
-| Defer To **QnA Maker** intent | Defer To **LUIS** intent | The `UnknownIntent` event is emitted by the recognizer. Handle using the `OnUnknownIntent` trigger.|
+| Defer to **QnA Maker** intent | Valid QnA Maker intent |  Select response from **QnA Maker** recognizer. Handle using the `OnQnAMatch` trigger.|
+| Defer to **QnA Maker** intent | Defer To **LUIS** intent | The `UnknownIntent` event is emitted by the recognizer. Handle using the `OnUnknownIntent` trigger.|
 | Valid LUIS intent | Valid QnA Maker intent | The `ChooseIntent` event is emitted by the recognizer. Handle using the `OnChooseIntent` trigger.|
+
+> [!IMPORTANT]
+>
+> Cross training all the LUIS and QnA Maker models in a typical bot can be a very involved and tedious process. There is a command included with the Bot Framework command line interface (BF CLI) that automates this work for you. This is discussed in detail in the [The Bot Framework CLI cross-train command][the-bot-framework-cli-cross-train-command] section below.
+>
+> Running this command on a bot project that has both LUIS and QnA Maker models will automatically cross-train both LUIS to LUIS and QnA Maker to QnA Maker across all adaptive dialogs across the entire project as well as LUIS to QnA Maker cross training within each adaptive dialogs that have both models, meaning both an `.lu` and `.qna` file.
 
 ### LUIS to LUIS and QnA Maker to QnA Maker cross training
 
-Using the [cross-train][bf-luiscross-train] command on a bot with both LUIS and QnA Maker models enables global interruptions as described previously in [LUIS to LUIS cross training](#luis-to-luis-cross-training). This also applies to QnA Maker. For example, when the root dialog's LUIS model is cross trained with the root dialogs QnA Maker model, it creates the `DeferToRecognizer_qna` intent in RootDialog.lu, with all questions listed as utterances. Next, when the root dialogs child is cross trained it picks up those intents, and in turn passes them to its child dialog and this continues until there are no more child dialogs. When a user asks any question associated with  RootDialog.qna when the active dialog is a child or grandchild, the active dialog will not be able to respond and will then bubble it up to its parent, and in turn it is bubbled up to each parent all the way to the root dialog which answers the question before returning control back to the previous conversational flow. This results in multiple transactions to both the LUIS and QnA Maker services. The deeper the dialog hierarchy, the more transactions will potentially occur for a given user request. This increase in transactions may be something to consider when designing your bot.
+Cross training a bot with both LUIS and QnA Maker models enables global interruptions as described previously in [LUIS to LUIS cross training](#luis-to-luis-cross-training). This also applies to QnA Maker. For example, when the root dialog's LUIS model is cross trained with the root dialogs QnA Maker model, it creates the `DeferToRecognizer_qna` intent in RootDialog.lu, with all questions listed as utterances. Next, when the root dialogs child is cross trained, it picks up those intents and in turn passes them to its child dialog and this continues until there are no more child dialogs. When a user asks any question associated with RootDialog.qna when the active dialog is a child or grandchild, the active dialog will not be able to respond, but because it has been cross-trained it will be aware that another dialog is able to respond and will then bubble it up to its parent, and in turn it is bubbled up to each parent all the way to the root dialog which answers the question before returning control back to the previous conversational flow. This results in multiple transactions to both the LUIS and QnA Maker services. The deeper the dialog hierarchy, the more transactions will potentially occur for a given user request. This increase in transactions may be something to consider when designing your bot.
 
 The advantage of global interruptions in this scenario is the ability it provides to use a QnA Maker knowledge base associated with the root dialog to handle all questions the user may have regardless of where they are in their conversation with the bot.
 
 ## The Bot Framework CLI cross-train command
 
-Cross training your bot can quickly become a challenging and error prone task in even a minimally complex bot, especially when you are still making frequent updates to the LUIS or QnA Maker models. The Bot Framework provides a tool to automate this process. For information on the Bot Framework CLI cross-train command, refer to the _Cross-trained recognizer set_ section of the [Recognizers in adaptive dialogs - reference guide](../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md#cross-trained-recognizer-set).
+Cross training your bot can quickly become a challenging and error prone task in even a minimally complex bot, especially when you are still making frequent updates to the LUIS or QnA Maker models. The Bot Framework SDK provides a tool to automate this process. For information on the Bot Framework CLI cross-train command, refer to the _Cross-trained recognizer set_ section of the [Recognizers in adaptive dialogs - reference guide](../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md#cross-trained-recognizer-set).
 
 ## Source code updates
 
