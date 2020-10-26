@@ -13,11 +13,11 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Cross train your bot to use both LUIS and QnA Maker recognizers
 
-[!INCLUDE [applies-to-v4](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 Adaptive dialogs offer a dialog centric way to model conversations, with each container adaptive dialog having its own language understanding (LU) model. while this gives bot developers tremendous flexibility, it can also present some challenges. For example, to give users the ability to cancel the current conversational flow would require that a cancel intent is duplicated in every adaptive dialogs LU model. To provide users with help would require duplicating the help topics in every adaptive dialogs LU model. In addition to those examples consider that a key attribute of conversations is that they are rarely linear. This is because people often think of something that they had previously forgotten or they simply change their minds mid way through a thought. Additionally, it is not uncommon for a user to want to correct information previously provided or even begin talking about something completely different from the current topic, often a topic handled by a different adaptive dialog but unknown by the current dialog. In these scenarios, the LUIS application tied to an adaptive dialog cannot know when the user expresses something that could be handled by another dialog within the bot.
 
-In the article [Handling interruptions in adaptive dialogs][interruptions], the concept of interruptions in adaptive dialogs is introduced. It explains how a parent adaptive dialog can be consulted when the active adaptive dialogs recognizer does not find a suitable match by setting the Allow interruptions property of the input dialog class to true. In this case the active dialog does not know if a parent or sibling dialog can respond, but utterances or question are sent to the parent to find out using the Bot Framework's _consultation mechanism_.
+In the article [Handling interruptions in adaptive dialogs][interruptions], the concept of interruptions in adaptive dialogs is introduced. It explains how a parent adaptive dialog can be consulted when the active adaptive dialogs recognizer does not find a suitable match by setting the Allow interruptions property of the input dialog class to true. In this case the active dialog does not know if a parent or sibling dialog can respond, so utterances or question have to be sent to the parent to find out using the Bot Framework's _consultation mechanism_.
 
 Cross-train can build on and improve on the capabilities provided by interruptions.
 
@@ -41,6 +41,10 @@ Cross training builds on and improves interruptions in a few ways:
 1. Cross dialog training. By cross training the LU models of all the adaptive dialogs in your bot, you give every dialog the ability to know if other dialogs are capable of responding to a user request. In this way the bot does not need to consult all the way up the dialog stack in order to find out if another dialog can best process a given user input. This is described in more detail in [LUIS to LUIS Cross training](#luis-to-luis-cross-training). You can think of this as intra-dialog training.
 
 1. Cross training different language understanding engines within the same dialog. LUIS and QnA Maker are different language understanding engines, once the models for each are cross trained, the recognizer for both can be consulted to determine which is best suited to respond to a user request. This is described in more detail in [LUIS to QnA Maker cross training](#luis-to-qna-maker-cross-training). You can think of this as extra-dialog training.
+
+> [!TIP]
+>
+> If your language understanding models are not cross trained and the _allow interruptions_ property evaluates to true, no utterances or questions from other dialogs will be considered unless there are no matches in the active adaptive dialog. Once you cross-train your language understanding models, utterances and questions from parent and sibling dialogs will always be considered. This can result in different responses from the bot to the customer.
 
 ## LUIS to LUIS Cross training
 
