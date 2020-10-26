@@ -75,7 +75,7 @@ The following are the handoff initiation event fields:
         new Attachment {
             Content = transcript,
             ContentType = "application/json",
-            Name = "Trasnscript",
+            Name = "Transcript",
         }};
     ```
 
