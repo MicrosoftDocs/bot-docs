@@ -42,7 +42,7 @@ This command creates an Echo Bot based on the Python [echo template](https://git
 
 ![bot running locally](../media/python/quickstart/bot-running-locally.png)
 
-Copy the last for digits in the address on the last line (usually _3978_) since you will be using them in the next step. You are now ready to start your bot.
+Copy the last four digits in the address on the last line (usually _3978_) since you will be using them in the next step. You are now ready to start your bot.
 
 ## Start the Emulator and connect your bot
 
