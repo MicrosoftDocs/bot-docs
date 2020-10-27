@@ -1,5 +1,5 @@
 
-<!-- Include under ## Start you bot H2 header -->
+<!-- Include under ## Start your bot H2 header -->
 
 # [Visual Studio](#tab/vs)
 

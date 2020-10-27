@@ -1,4 +1,4 @@
-<!-- Include under ## Start you bot H2 header -->
+<!-- Include under ## Start your bot H2 header -->
 
 In a terminal or command prompt change directories to the one created for your bot, and start it with `npm start`.
 

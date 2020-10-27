@@ -1,4 +1,4 @@
-<!-- Include under ## Start you bot H2 header -->
+<!-- Include under ## Start your bot H2 header -->
 
 1. From a terminal navigate to the `echo-bot` folder where you saved your bot. Run `pip install -r requirements.txt` to install any required packages to run your bot.
 

@@ -3,7 +3,7 @@
 
 # [Visual Studio](#tab/vs)
 
-## Build in Visual Studio
+### Build in Visual Studio
 
 In Visual Studio, create a new bot project using the **Echo Bot (Bot Framework v4 - .NET Core 3.1)** template. Choose **AI Bots** from the project types to show only bot templates.
 
@@ -22,11 +22,9 @@ Thanks to the template, your project contains all the code that's necessary to c
 
 # [Visual Studio Code](#tab/vc)
 
-## Build in Visual Studio Code
+### Create a new project
 
 Make sure that [.NET Core 3.1](https://dotnet.microsoft.com/download) is installed.
-
-### Create a new project
 
 1. In Visual Studio Code, open a new terminal windows.
 1. Create a new bot project using one of the commands shown below.
@@ -56,8 +54,6 @@ Make sure that [.NET Core 3.1](https://dotnet.microsoft.com/download) is install
       ```
 
 # [Command Line](#tab/cl)
-
-## Build with command line
 
 ### Create a new project
 
