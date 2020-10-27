@@ -91,15 +91,14 @@ When you create a bot using the SDK, you provide the code to receive the HTTP tr
 
 The bot object contains the conversational reasoning or logic for a turn and exposes a turn handler. The SDK provides a few ways to organize the bot logic.
 
-- Use an _activity handler_ and implement handlers for each activity type or sub-type your bot will recognize and react to. See [about activity handlers](bot-activity-handler-concept.md) for more information.
-- Use the _Teams activity handler_ to create bots that can connect to the Teams channel. (The Teams channel requires the bot to handle some channel-specific behavior.) See [how bots for Microsoft Teams work](bot-builder-basics-teams.md) for more information.
-- Use dialogs to manage a long-running conversation with the user.
+- Use an [activity handler](bot-activity-handler-concept.md) and implement handlers for each activity type or sub-type your bot will recognize and react to.
+- Use a [Teams activity handler](bot-builder-basics-teams.md) to create bots that can connect to the Teams channel. (The Teams channel requires the bot to handle some channel-specific behavior.)
+- Use the [dialogs library](bot-builder-concept-dialog.md) to manage a long-running conversation with the user:
   - Use an activity handler and a _component dialog_ for a sequential conversational model.
     See [about component and waterfall dialogs](bot-builder-concept-waterfall-dialogs.md) for more information.
-  - Use a _dialog manager_ and an _adaptive dialog_ for a flexible conversational model that can handle a wider range of user interaction.
-    Your bot class can forward activities to the dialog manager directly or pass them through an activity handler first.
+  - Use a _dialog manager_ and an _adaptive dialog_ for a flexible conversational model that can handle a wider range of user interaction. <!-- Your bot class can forward activities to the dialog manager directly or pass them through an activity handler first. -->
     See the [introduction to adaptive dialogs](bot-builder-adaptive-dialog-introduction.md) for more information.
-- Implement your own bot class and provide your own logic for handling each turn.
+- Implement your own bot class and provide your own logic for handling each turn. See how to [create your own prompts to gather user input](bot-builder-primitive-prompts.md) for an example of what this might look like.
 
 ### The bot adapter
 
@@ -107,7 +106,7 @@ The adapter has a _process activity_ method for starting a turn.
 
 - It takes the request body (the request payload, translated to an activity) and the request header as arguments.
 - It checks whether the authentication header is valid.
-- It creates a context object for the turn.
+- It creates a _context_ object for the turn.
 - It runs this through its _middleware_ pipeline.
 - It sends the activity to the bot object's turn handler.
 

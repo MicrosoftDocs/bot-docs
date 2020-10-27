@@ -41,7 +41,7 @@ A user connects to a bot though a channel such as Facebook, Slack, or Microsoft 
 > [!div class="mx-imgBorder"]
 > ![A remote bot interacts with a user on a device via text, speech, images, or video](./media/architecture/what-is-a-bot.png)
 
-Bots are a lot like modern web applications, living on the internet and use APIs to send and receive messages. What's in a bot varies widely depending on what kind of bot it is. Modern bot software relies on a stack of technology and tools to deliver increasingly complex experiences on a wide variety of platforms. However, a simple bot could just receive a message and echo it back to the user with very little code involved.
+Bots are a lot like modern web applications, living on the internet and using APIs to send and receive messages. What's in a bot varies widely depending on what kind of bot it is. Modern bot software relies on a stack of technology and tools to deliver increasingly complex experiences on a wide variety of platforms. However, a simple bot could just receive a message and echo it back to the user with very little code involved.
 
 Bots can do the same things other types of software can do - read and write files, use databases and APIs, and do the regular computational tasks. What makes bots unique is their use of mechanisms generally reserved for human-to-human communication.
 
