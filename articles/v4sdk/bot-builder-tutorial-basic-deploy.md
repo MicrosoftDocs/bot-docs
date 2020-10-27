@@ -46,15 +46,15 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 # [C#](#tab/csharp)
 
-[!INCLUDE [dotnet quickstart prerequisites](../includes/quickstart/dotnet/quickstart-dotnet-create-bot.md)]
+[!INCLUDE [dotnet quickstart create bot](../includes/quickstart/dotnet/quickstart-dotnet-create-bot.md)]
 
 # [JavaScript](#tab/javascript)
 
-[!INCLUDE [javascript quickstart prerequisites](../includes/quickstart/javascript/quickstart-javascript-create-bot.md)]
+[!INCLUDE [javascript quickstart create bot](../includes/quickstart/javascript/quickstart-javascript-create-bot.md)]
 
 # [Python](#tab/python)
 
-[!INCLUDE [python quickstart prerequisites](../includes/quickstart/python/quickstart-python-create-bot.md)
+[!INCLUDE [python quickstart create bot](../includes/quickstart/python/quickstart-python-create-bot.md)
 
 ---
 
@@ -62,15 +62,15 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 # [C#](#tab/csharp)
 
-[!INCLUDE [dotnet quickstart prerequisites](../includes/quickstart/dotnet/quickstart-dotnet-start-bot.md)]
+[!INCLUDE [dotnet quickstart start bot](../includes/quickstart/dotnet/quickstart-dotnet-start-bot.md)]
 
 # [JavaScript](#tab/javascript)
 
-[!INCLUDE [javascript quickstart prerequisites](../includes/quickstart/javascript/quickstart-javascript-start-bot.md)]
+[!INCLUDE [javascript quickstart start bot](../includes/quickstart/javascript/quickstart-javascript-start-bot.md)]
 
 # [Python](#tab/python)
 
-[!INCLUDE [python quickstart prerequisites](../includes/quickstart/python/quickstart-python-start-bot.md)
+[!INCLUDE [python quickstart start bot](../includes/quickstart/python/quickstart-python-start-bot.md)
 
 ---
 
@@ -78,19 +78,17 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 # [C#](#tab/csharp)
 
-[!INCLUDE [dotnet quickstart prerequisites](../includes/quickstart/dotnet/quickstart-dotnet-start-emulator.md)]
+[!INCLUDE [dotnet quickstart start emulator](../includes/quickstart/dotnet/quickstart-dotnet-start-emulator.md)]
 
 # [JavaScript](#tab/javascript)
 
-[!INCLUDE [javascript quickstart prerequisites](../includes/quickstart/javascript/quickstart-javascript-start-emulator.md)]
+[!INCLUDE [javascript quickstart emulator](../includes/quickstart/javascript/quickstart-javascript-start-emulator.md)]
 
 # [Python](#tab/python)
 
-[!INCLUDE [python quickstart prerequisites](../includes/quickstart/python/quickstart-python-start-emulator.md)
+[!INCLUDE [python quickstart emulator](../includes/quickstart/python/quickstart-python-start-emulator.md)
 
 ---
-
-
 
 ## Deploy your bot
 
