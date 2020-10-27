@@ -4,7 +4,7 @@
 
 2. Once the packages are installed run `python app.py` to start your bot. You will know your bot is ready to test when you see the last line shown in the screenshot below:
 
-![bot running locally](../media/python/quickstart/bot-running-locally.png)
+![bot running locally](../../../media/python/quickstart/bot-running-locally.png)
 
 Copy the last for digits in the address on the last line (usually _3978_) since you will be using them in the next step. You are now ready to start the emulator.
 
