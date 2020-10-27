@@ -25,13 +25,13 @@ Over time these offerings will be simplified.
 
 | Feature                    | Direct Line | Direct Line App Service Extension | Direct Line Speech |
 |----------------------------|-------------|-----------------------------------|--------------------|
-| Availability and Licensing    | GA | Public preview, no SLA  | GA |
+| Availability and Licensing    | GA | GA  | GA |
 | Speech recognition and text-to-speech performance | Standard | Standard | High performance |
-| Supports legacy web browsers | Yes | At GA | Yes |
+| Supports legacy web browsers | Yes | Yes | Yes |
 | Bot Framework SDK support | All v3, v4 | v4.63+ required | v4.63+ required |
 | Client SDK support    | JS, C# | JS, C# | C++, C#, Unity, JS|
 | Works with Web Chat  | Yes | Yes | No|
-| VNET | No | Preview | No |
+| VNET | No | Yes | No |
 
 ## Additional resources
 
