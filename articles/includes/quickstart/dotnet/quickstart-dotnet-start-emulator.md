@@ -14,4 +14,4 @@
    Send a message to your bot, and the bot will respond back.
 
    > [!div class="mx-imgBorder"]
-   > ![Emulator running](../../../media/emulator-v4/cs-quickstart.png)
+   > ![emulator running cs](../../../media/emulator-v4/cs-quickstart.png)
