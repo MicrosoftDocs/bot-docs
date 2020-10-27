@@ -17,7 +17,7 @@
     pip install botbuilder-core
     pip install asyncio
     pip install aiohttp
-    pip install cookiecutter==1.7.0`
+    pip install cookiecutter==1.7.0
 ```
 
 The last package, cookiecutter, will be used to generate your bot. Verify that cookiecutter was installed correctly by running `cookiecutter --help`.
