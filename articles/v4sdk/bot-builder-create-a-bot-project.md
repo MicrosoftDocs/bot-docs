@@ -10,15 +10,14 @@ ms.date: 09/24/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# About the structure of a bot project
+# Understand the structure of an echo bot
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-The Bot Framework templates and samples are written for ASP.NET (C#), Restify (JavaScript), and aiohttp (Python).
+The Bot Framework templates and samples are written for ASP.NET (C#), restify (JavaScript), and aiohttp (Python).
 However, the web service features are not part of the Bot Framework SDK, but part of the web framework you choose to use.
 
 All bot applications share some common features.
-This article describes these features:
 
 | Feature | Description |
 |:-|:-|
@@ -46,7 +45,7 @@ The Bot Framework includes both VSIX and dotnet templates.
 
 The templates generate an [ASP.NET MVC Core](https://dotnet.microsoft.com/apps/aspnet/mvc) web app. If you look at the [ASP.NET](/aspnet/core/fundamentals/index?view=aspnetcore-3.1&preserve-view=true) fundamentals, you'll see similar code in files such as **Program.cs** and **Startup.cs**. These files are required for all web apps and are not bot specific.
 
-[!INCLUDE [VSIX templates](~/includes/vsix-templates-versions.md)]
+[!INCLUDE [VSIX templates](../includes/vsix-templates-versions.md)]
 
 The **appsettings.json** file specifies the configuration information for your bot, such as its app ID, and password among other things. If using certain technologies or using this bot in production, you will need to add your specific keys or URL to this configuration. For this echo bot, however, you don't need to do anything here right now; the app ID and password may be left undefined at this time.
 
@@ -76,8 +75,8 @@ The **config.py** file specifies the configuration information for your bot, suc
 
 The bot as a web app needs to create a web service, bot adapter, and bot object.
 
-It would also create the storage layer and memory management objects for the bot, but the echo bot does not require state.
-It would also create any other objects external to the bot or adapter that either need to consume.
+Many bots would also create the storage layer and memory management objects for the bot, but the echo bot does not require state.
+Other bots would also create any objects external to the bot object or adapter that either need to consume.
 
 ### [C#](#tab/csharp)
 
@@ -115,13 +114,13 @@ Each incoming request represents the start of a new turn.
 
 **index.js**
 
-[!code-javascript[create server](~/../botbuilder-samples/samples/javascript_nodejs/02.echo-bot/index.js?range=11-12,20-27&highlight=13-16)]
+[!code-javascript[create server](~/../botbuilder-samples/samples/javascript_nodejs/02.echo-bot/index.js?range=20-26,62-68&highlight=10-13)]
 
 ### [Python](#tab/python)
 
 **app.py**
 
-[!code-python[create server](~/../botbuilder-samples/samples/python/02.echo-bot/app.py?range=4-10,16-18,20-23,64-88&highlight=23-26)]
+[!code-python[create server](~/../botbuilder-samples/samples/python/02.echo-bot/app.py?range=64-88&highlight=10)]
 
 ---
 

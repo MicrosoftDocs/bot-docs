@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 An activity handler is one way to organize the conversational logic for your bot.
-When the bot receives an activity, it has an *activity handler* that can handle that specific activity type. Under the covers, there is one base handler called the *turn handler*. All activities get routed through there. That turn handler then calls the individual activity handler for whatever type of activity it received.
+When the bot receives an activity, it has an *activity handler* that can handle that specific activity type. Under the covers, there is one base *turn handler*. All activities get routed through there. That turn handler then calls the individual activity handler for whatever type of activity it received.
 
 For example, if the bot receives a message activity, the turn handler would see that incoming activity and send it to the _on message activity_ activity handler. When building your bot, your bot logic for handling and responding to messages will go in this _on message activity_ handler. Likewise, your logic for handling members being added to the conversation will go in your _on members added_ handler, which is called whenever a member is added to the conversation.
 
@@ -139,74 +139,23 @@ As in previous 4.x versions of this framework, there is also the option to imple
 
 ## Sample activity handler
 
+For example, you can handle _on members added_ to welcome users to a conversation, and handle _on message_ to echo back messages they send to the bot.
+
 ### [C#](#tab/csharp)
 
-In this sample, we welcome a new user or echo back the message the user sent using the `SendActivityAsync` call. The outbound activity corresponds to the outbound HTTP POST request.
-
-```cs
-public class MyBot : ActivityHandler
-{
-    protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
-    {
-        await turnContext.SendActivityAsync(MessageFactory.Text($"Echo: {turnContext.Activity.Text}"), cancellationToken);
-    }
-
-    protected override async Task OnMembersAddedAsync(IList<ChannelAccount> membersAdded, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
-    {
-        foreach (var member in membersAdded)
-        {
-            await turnContext.SendActivityAsync(MessageFactory.Text($"welcome {member.Name}"), cancellationToken);
-        }
-    }
-}
-```
+[!code-csharp[C# activity handler](~/../botbuilder-samples/samples/csharp_dotnetcore/02.echo-bot/Bots/EchoBot.cs?range=12-31)]
 
 ### [JavaScript](#tab/javascript)
 
-For example, this bot registers listeners for messages and conversation updates. When it receives a message from the user, it echoes back the message they sent.
-
-```javascript
-const { ActivityHandler } = require('botbuilder');
-
-class MyBot extends ActivityHandler {
-    constructor() {
-        super();
-        // See https://aka.ms/about-bot-activity-message to learn more about the message and other activity types.
-        this.onMessage(async (context, next) => {
-            await context.sendActivity(`You said '${ context.activity.text }'`);
-            // By calling next() you ensure that the next BotHandler is run.
-            await next();
-        });
-        this.onConversationUpdate(async (context, next) => {
-            await context.sendActivity('[conversationUpdate event detected]');
-            // By calling next() you ensure that the next BotHandler is run.
-            await next();
-        });
-    }
-}
-
-module.exports.MyBot = MyBot;
-```
+[!code-javascript[JavaScript activity handler](~/../botbuilder-samples/samples/javascript_nodejs/02.echo-bot/bot.js?range=6-29)]
 
 ### [Python](#tab/python)
 
-In this sample, we welcome a new user or echo back the message the user sent using the `send_activity` call. The outbound activity corresponds to the outbound HTTP POST request.
-
-```py
-class MyBot(ActivityHandler):
-    async def on_members_added_activity(
-        self, members_added: [ChannelAccount], turn_context: TurnContext
-    ):
-        for member in members_added:
-            if member.id != turn_context.activity.recipient.id:
-                await turn_context.send_activity("Hello and welcome!")
-
-    async def on_message_activity(self, turn_context: TurnContext):
-        return await turn_context.send_activity(
-            f"Echo: {turn_context.activity.text}"
-        )
-```
+[!code-python[Python activity handler](~/../botbuilder-samples/samples/python/02.echo-bot/bots/echo_bot.py?range=8-19)]
 
 ---
 
 ## Next steps
+
+- The Microsoft Teams channel introduces some Teams-specific activities that your bot will need to support to work properly with Teams. To understand key concepts of developing bots for Microsoft Teams, see [How Microsoft Teams bots work](bot-builder-basics-teams.md)
+- An activity handler is a good way to design a bot that does not need to track conversational state between turns. The [dialogs library](bot-builder-concept-dialog.md) provides ways to manage a long-running conversation with the user.

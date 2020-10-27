@@ -82,7 +82,7 @@ The [managing state](bot-builder-concept-state.md) topic describes these state a
 > ![A bot has connectivity and reasoning elements, and an abstraction for state](../media/architecture/how-bots-work.png)
 
 The SDK does not require you use a specific application layer to send and receive web requests.
-The Bot Framework has templates and samples for ASP.NET (C#), Restify (JavaScript), and aiohttp (Python).
+The Bot Framework has templates and samples for ASP.NET (C#), restify (JavaScript), and aiohttp (Python).
 However, you can choose to use a differ application layer for your app.
 
 When you create a bot using the SDK, you provide the code to receive the HTTP traffic and forward it to the adapter. The Bot Framework provides a few templates and samples that you can use to develop your own bots.
@@ -124,11 +124,11 @@ The turn context is one of the most important abstractions in the SDK. Not only 
 
 #### Middleware
 
-Middleware is much like any other messaging middleware, comprising a linear set of components that are each executed in order, giving each a chance to operate on the activity. The final stage of the middleware pipeline is a callback to the turn handler on the bot class the application has registered with the adapter's *process activity* method. The turn handler is generally `OnTurnAsync` in C# and `onTurn` in JavaScript.
+Middleware is much like any other messaging middleware, comprising a linear set of components that are each executed in order, giving each a chance to operate on the activity. The final stage of the middleware pipeline is a callback to the turn handler on the bot class the application has registered with the adapter's *process activity* method. Middleware implements an _on turn_ method which the adapter calls.
 
-The turn handler takes a turn context as its argument, typically the application logic running inside the turn handler function will process the inbound activity's content and generate one or more activities in response, sending these out using the *send activity* function on the turn context. Calling *send activity* on the turn context will cause the middleware components to be invoked on the outbound activities. Middleware components execute before and after the bot's turn handler function. The execution is inherently nested and, as such, sometimes referred to being like a Russian Doll.
+The turn handler takes a turn context as its argument, typically the application logic running inside the turn handler function will process the inbound activity's content and generate one or more activities in response, sending these out using the *send activity* function on the turn context. Calling *send activity* on the turn context will cause the middleware components to be invoked on the outbound activities. Middleware components execute before and after the bot's turn handler function. The execution is inherently nested and, as such, sometimes referred to being like an onion.
 
-The [middleware](~/v4sdk/bot-builder-concept-middleware.md) topic describes middleware in greater depth.
+The [middleware](bot-builder-concept-middleware.md) topic describes middleware in greater depth.
 
 ### Bot state and storage
 
@@ -139,9 +139,11 @@ The [managing state](bot-builder-concept-state.md) topic describes these state a
 
 ### Messaging endpoint and provisioning
 
-You need to choose the application layer use for your app; however, the Bot Framework has templates and samples for ASP.NET (C#), Restify (JavaScript), and aiohttp (Python). The documentation is written assuming you use one of these platforms, but the SDK does not require it of you.
+You need to choose the application layer use for your app; however, the Bot Framework has templates and samples for ASP.NET (C#), restify (JavaScript), and aiohttp (Python). The documentation is written assuming you use one of these platforms, but the SDK does not require it of you.
 
 Typically, your application will need a REST endpoint at which to receive messages. It will also need to provision resources for your bot in accordance with the platform you decide to use.
+
+Follow one of the quickstarts ([C#](../dotnet/bot-builder-dotnet-sdk-quickstart.md), [JavaScript](../javascript/bot-builder-javascript-quickstart.md), [Python](../python/bot-builder-python-quickstart.md)) to create and test a simple echo bot.
 
 ## HTTP Details
 
@@ -158,7 +160,7 @@ Let's drill into the previous sequence diagram with a focus on the arrival of a 
 
 ![activity processing stack](media/bot-builder-activity-processing-stack.png)
 
-In the example above, the bot replied to the message activity with another message activity containing the same text message. Processing starts with the HTTP POST request, with the activity information carried as a JSON payload, arriving at the web server. In C# this will typically be an ASP.NET project, in a JavaScript Node.js project this is likely to be one of the popular frameworks such as Express or Restify.
+In the example above, the bot replied to the message activity with another message activity containing the same text message. Processing starts with the HTTP POST request, with the activity information carried as a JSON payload, arriving at the web server. In C# this will typically be an ASP.NET project, in a JavaScript Node.js project this is likely to be one of the popular frameworks such as Express or restify.
 
 The _adapter_, an integrated component of the SDK, is the core of the SDK runtime. The activity is carried as JSON in the HTTP POST body. This JSON is deserialized to create the _activity_ object that is then handed to the adapter through its _process activity_ method. On receiving the activity, the adapter creates a _turn context_ and calls the middleware.
 
@@ -195,22 +197,15 @@ The templates are:
   - Uses a component dialog and child dialogs to manage the conversation.
   - The dialogs use Language Understanding (LUIS) and QnA Maker features.
 
-<!-- Link to:
-Quickstarts
-How to create a basic bot project
--->
-
 ## Additional information
 
 ### Managing bot resources
 
-<!-- JF-TODO: This and the linked doc need review and updating. -->
-
-The bot resources, such as app ID, passwords, keys or secrets for connected services, will need to be managed appropriately. For more on how to do so, see [Manage bot resources](bot-file-basics.md).
+The bot resources, such as app ID, passwords, keys or secrets for connected services, will need to be managed appropriately. For more on how to do so, see the [Bot Framework security guidelines](bot-builder-security-guidelines.md) and about [managing bot resources](bot-file-basics.md).
 
 ### Channel adapters
 
-The SDK also lets you use channel adapters, in which the adapter itself additionally performs the tasks that the Bot Connector Service would do for that channel.
+The SDK also lets you use channel adapters, in which the adapter itself additionally performs the tasks that the Bot Connector Service would normal do for a channel.
 
 The SDK provides a few channel adapters in some languages.
 More channel adapters are available through the Botkit and Community repositories.
