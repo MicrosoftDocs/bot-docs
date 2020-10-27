@@ -26,19 +26,71 @@ In this tutorial, you learn how to:
 
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
+## Prerequisites
+
 # [C#](#tab/csharp)
 
-[!INCLUDE [dotnet quickstart](~/includes/quickstart-dotnet.md)]
+[!INCLUDE [dotnet quickstart prerequisites](../includes/quickstart/dotnet/quickstart-dotnet-prerequisites.md)]
 
 # [JavaScript](#tab/javascript)
 
-[!INCLUDE [javascript quickstart](~/includes/quickstart-javascript.md)]
+[!INCLUDE [javascript quickstart prerequisites](../includes/quickstart/javascript/quickstart-javascript-prerequisites.md)]
 
 # [Python](#tab/python)
 
-[!INCLUDE [python quickstart](~/includes/quickstart-python.md)]
+[!INCLUDE [python quickstart prerequisites](../includes/quickstart/python/quickstart-python-prerequisites.md)
 
 ---
+
+## Create a bot
+
+# [C#](#tab/csharp)
+
+[!INCLUDE [dotnet quickstart prerequisites](../includes/quickstart/dotnet/quickstart-dotnet-create-bot.md)]
+
+# [JavaScript](#tab/javascript)
+
+[!INCLUDE [javascript quickstart prerequisites](../includes/quickstart/javascript/quickstart-javascript-create-bot.md)]
+
+# [Python](#tab/python)
+
+[!INCLUDE [python quickstart prerequisites](../includes/quickstart/python/quickstart-python-create-bot.md)
+
+---
+
+## Start your bot
+
+# [C#](#tab/csharp)
+
+[!INCLUDE [dotnet quickstart prerequisites](../includes/quickstart/dotnet/quickstart-dotnet-start-bot.md)]
+
+# [JavaScript](#tab/javascript)
+
+[!INCLUDE [javascript quickstart prerequisites](../includes/quickstart/javascript/quickstart-javascript-start-bot.md)]
+
+# [Python](#tab/python)
+
+[!INCLUDE [python quickstart prerequisites](../includes/quickstart/python/quickstart-python-start-bot.md)
+
+---
+
+## Start the Emulator and connect your bot
+
+# [C#](#tab/csharp)
+
+[!INCLUDE [dotnet quickstart prerequisites](../includes/quickstart/dotnet/quickstart-dotnet-start-emulator.md)]
+
+# [JavaScript](#tab/javascript)
+
+[!INCLUDE [javascript quickstart prerequisites](../includes/quickstart/javascript/quickstart-javascript-start-emulator.md)]
+
+# [Python](#tab/python)
+
+[!INCLUDE [python quickstart prerequisites](../includes/quickstart/python/quickstart-python-start-emulator.md)
+
+---
+
+
 
 ## Deploy your bot
 
