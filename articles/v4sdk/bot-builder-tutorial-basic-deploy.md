@@ -38,7 +38,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 # [Python](#tab/python)
 
-[!INCLUDE [python quickstart prerequisites](../includes/quickstart/python/quickstart-python-prerequisites.md)
+[!INCLUDE [python quickstart prerequisites](../includes/quickstart/python/quickstart-python-prerequisites.md)]
 
 ---
 
@@ -54,7 +54,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 # [Python](#tab/python)
 
-[!INCLUDE [python quickstart create bot](../includes/quickstart/python/quickstart-python-create-bot.md)
+[!INCLUDE [python quickstart create bot](../includes/quickstart/python/quickstart-python-create-bot.md)]
 
 ---
 
@@ -70,7 +70,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 # [Python](#tab/python)
 
-[!INCLUDE [python quickstart start bot](../includes/quickstart/python/quickstart-python-start-bot.md)
+[!INCLUDE [python quickstart start bot](../includes/quickstart/python/quickstart-python-start-bot.md)]
 
 ---
 
@@ -86,7 +86,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 # [Python](#tab/python)
 
-[!INCLUDE [python quickstart emulator](../includes/quickstart/python/quickstart-python-start-emulator.md)
+[!INCLUDE [python quickstart emulator](../includes/quickstart/python/quickstart-python-start-emulator.md)]
 
 ---
 
