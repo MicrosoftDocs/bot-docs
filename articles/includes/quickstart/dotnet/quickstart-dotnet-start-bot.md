@@ -15,11 +15,11 @@ In Visual Studio, start the project. This will build the application, deploy it 
 1. On the menu bar, click **Run**.
 1. In the drop-down menu, select **Run Without Debugging**.
 
-   ![vsc run](../media/azure-bot-quickstarts/bot-builder-dotnet-vsc-run.png)
+   ![vsc run](../../../media/azure-bot-quickstarts/bot-builder-dotnet-vsc-run.png)
 
 1. Select the **.Net Core** environment.
 
-   ![vsc run](../media/azure-bot-quickstarts/bot-builder-dotnet-vsc-environment.png)
+   ![vsc env](../../../media/azure-bot-quickstarts/bot-builder-dotnet-vsc-environment.png)
 
 This will build the application, deploy it to localhost, and launch the web browser to display the application's `default.htm` page. At this point, your bot is running locally on port 3978.
 
