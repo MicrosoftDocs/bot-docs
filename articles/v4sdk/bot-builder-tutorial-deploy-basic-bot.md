@@ -14,12 +14,14 @@ ms.date: 10/28/2020
 
 This tutorial describes how to deploy a basic bot to Azure. It explains how to prepare your bot for deployment, deploy your bot to Azure, and test your bot using Web Chat. It would be useful if you read this article before following the steps, so that you fully understand what is involved in deploying a bot.
 
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+
 > [!IMPORTANT]
 > Make sure you are using the latest version of the [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest&preserve-view=true). If you are using an Azure CLI version older than [2.2.0](https://github.com/MicrosoftDocs/azure-docs-cli/blob/master/docs-ref-conceptual/release-notes-azure-cli.md#march-10-2020), you will encounter errors of CLI commands deprecation. Also, do not mix Azure CLI deployment shown in this article with Azure portal deployment.
 
 ## Prerequisites
 
-[!INCLUDE [deploy prerequisite](../includes/deploy/snippet-prerequisite.md)]
+[!INCLUDE [deploy prerequisite](~/includes/deploy/snippet-prerequisite.md)]
 
 ## Prepare for deployment
 
@@ -31,7 +33,7 @@ This tutorial describes how to deploy a basic bot to Azure. It explains how to p
 
 ### 1. Login to Azure
 
-[!INCLUDE [deploy az login](../includes/deploy/snippet-az-login.md)]
+[!INCLUDE [deploy az login](~/includes/deploy/snippet-az-login.md)]
 
 ### 2. Set the subscription
 
@@ -80,7 +82,7 @@ When creating the bot application service, you can deploy your bot in a new or i
 
 ## Additional resources
 
-[!INCLUDE [additional resources snippet](../includes/deploy/snippet-additional-resources.md)]
+[!INCLUDE [additional resources snippet](~/includes/deploy/snippet-additional-resources.md)]
 
 ## Next steps
 

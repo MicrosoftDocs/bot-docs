@@ -12,7 +12,7 @@ ms.date: 10/28/2020
 
 # Tutorial: Create a basic bot
 
-[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
+[!INCLUDE [applies-to-v4](~/includes/applies-to-v4-current.md)]
 
 This tutorial describes how to create a basic bot with the Bot Framework SDK. If you've already created a basic bot and have it running locally, go to the [Tutorial: Deploy a basic bot](bot-builder-tutorial-deploy-basic-bot.md) article.
 
@@ -20,24 +20,22 @@ In this tutorial, you learn how to:
 
 > [!div class="checklist"]
 > - Create a basic Echo bot
-> - Run and interact with it locally
-> - Publish your bot
-
-If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+> - Run it locally
+> - Interact with it via the emulator
 
 ## Prerequisites
 
 # [C#](#tab/csharp)
 
-[!INCLUDE [dotnet prerequisites](../includes/quickstart/dotnet/quickstart-dotnet-prerequisites.md)]
+[!INCLUDE [dotnet prerequisites](~/includes/quickstart/dotnet/quickstart-dotnet-prerequisites.md)]
 
 # [JavaScript](#tab/javascript)
 
-[!INCLUDE [javascript prerequisites](../includes/quickstart/javascript/quickstart-javascript-prerequisites.md)]
+[!INCLUDE [javascript prerequisites](~/includes/quickstart/javascript/quickstart-javascript-prerequisites.md)]
 
 # [Python](#tab/python)
 
-[!INCLUDE [python prerequisites](../includes/quickstart/python/quickstart-python-prerequisites.md)]
+[!INCLUDE [python prerequisites](~/includes/quickstart/python/quickstart-python-prerequisites.md)]
 
 ---
 
@@ -45,15 +43,15 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 # [C#](#tab/csharp)
 
-[!INCLUDE [dotnet quickstart create bot](../includes/quickstart/dotnet/quickstart-dotnet-create-bot.md)]
+[!INCLUDE [dotnet quickstart create bot](~/includes/quickstart/dotnet/quickstart-dotnet-create-bot.md)]
 
 # [JavaScript](#tab/javascript)
 
-[!INCLUDE [javascript quickstart create bot](../includes/quickstart/javascript/quickstart-javascript-create-bot.md)]
+[!INCLUDE [javascript quickstart create bot](~/includes/quickstart/javascript/quickstart-javascript-create-bot.md)]
 
 # [Python](#tab/python)
 
-[!INCLUDE [python quickstart create bot](../includes/quickstart/python/quickstart-python-create-bot.md)]
+[!INCLUDE [python quickstart create bot](~/includes/quickstart/python/quickstart-python-create-bot.md)]
 
 ---
 
@@ -61,15 +59,15 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 # [C#](#tab/csharp)
 
-[!INCLUDE [dotnet quickstart start bot](../includes/quickstart/dotnet/quickstart-dotnet-start-bot.md)]
+[!INCLUDE [dotnet quickstart start bot](~/includes/quickstart/dotnet/quickstart-dotnet-start-bot.md)]
 
 # [JavaScript](#tab/javascript)
 
-[!INCLUDE [javascript quickstart start bot](../includes/quickstart/javascript/quickstart-javascript-start-bot.md)]
+[!INCLUDE [javascript quickstart start bot](~/includes/quickstart/javascript/quickstart-javascript-start-bot.md)]
 
 # [Python](#tab/python)
 
-[!INCLUDE [python quickstart start bot](../includes/quickstart/python/quickstart-python-start-bot.md)]
+[!INCLUDE [python quickstart start bot](~/includes/quickstart/python/quickstart-python-start-bot.md)]
 
 ---
 
@@ -77,15 +75,15 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 # [C#](#tab/csharp)
 
-[!INCLUDE [dotnet quickstart start emulator](../includes/quickstart/dotnet/quickstart-dotnet-start-emulator.md)]
+[!INCLUDE [dotnet quickstart start emulator](~/includes/quickstart/dotnet/quickstart-dotnet-start-emulator.md)]
 
 # [JavaScript](#tab/javascript)
 
-[!INCLUDE [javascript quickstart emulator](../includes/quickstart/javascript/quickstart-javascript-start-emulator.md)]
+[!INCLUDE [javascript quickstart emulator](~/includes/quickstart/javascript/quickstart-javascript-start-emulator.md)]
 
 # [Python](#tab/python)
 
-[!INCLUDE [python quickstart emulator](../includes/quickstart/python/quickstart-python-start-emulator.md)]
+[!INCLUDE [python quickstart emulator](~/includes/quickstart/python/quickstart-python-start-emulator.md)]
 
 ---
 
