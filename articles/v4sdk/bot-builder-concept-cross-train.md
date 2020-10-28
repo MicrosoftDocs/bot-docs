@@ -38,7 +38,7 @@ Adaptive dialogs offer a dialog-centric way to model conversations, with each ad
 - A bot that supports non-linear conversations, in which a user may think of something they had previously forgotten or simply change their mind mid-way through a task.
 - A bot that allows a user to correct information they previously provided. 
 
-In the article [Handling interruptions in adaptive dialogs][interruptions], the concept of interruptions in adaptive dialogs is introduced. It explains how a parent adaptive dialog can be consulted when the active adaptive dialogs recognizer does not find a suitable match by setting the Allow interruptions property of the input dialog class to true. In this case the active dialog does not know if a parent or sibling dialog can respond, so utterances or question must be sent to the parent to find out using the Bot Framework's _consultation mechanism_.
+In the article [Handling interruptions in adaptive dialogs][interruptions], the concept of interruptions in adaptive dialogs is introduced. It explains how a parent adaptive dialog can be consulted when the active adaptive dialog's recognizer does not find a suitable match. In this case the active dialog does not know if a parent or sibling dialog can respond, so to find out, it must send utterances or question to its parent using the Bot Framework's _consultation_ mechanism.
 
 Cross-train can build on and improve on the capabilities provided by interruptions.
 
