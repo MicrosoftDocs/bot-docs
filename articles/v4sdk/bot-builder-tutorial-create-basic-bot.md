@@ -14,14 +14,7 @@ ms.date: 10/28/2020
 
 [!INCLUDE [applies-to-v4](~/includes/applies-to-v4-current.md)]
 
-This tutorial describes how to create a basic bot with the Bot Framework SDK. If you've already created a basic bot and have it running locally, go to the [Tutorial: Deploy a basic bot](bot-builder-tutorial-deploy-basic-bot.md) article.
-
-In this tutorial, you learn how to:
-
-> [!div class="checklist"]
-> - Create a basic Echo bot
-> - Run it locally
-> - Interact with it via the emulator
+This tutorial describes how to create a basic bot with the Bot Framework SDK. If you've already created a basic bot and have it running locally, read the [Tutorial: Deploy a basic bot](bot-builder-tutorial-deploy-basic-bot.md) article.
 
 ## Prerequisites
 

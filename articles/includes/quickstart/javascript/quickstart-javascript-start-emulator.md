@@ -7,10 +7,10 @@
 1. Enter your bot's URL, which is the URL of the local port, with /api/messages added to the path, typically `http://localhost:3978/api/messages`.
 
    <!--This is the same process in the Emulator for all three languages.-->
-   ![open a bot](../../../media/python/quickstart/open-bot.png)
+   ![open a bot](~/media/python/quickstart/open-bot.png)
 
 1. Then click **Connect**.
 
    Send a message to your bot, and the bot will respond back with a message.
 
-   ![Emulator running](../../../media/emulator-v4/js-quickstart.png)
+   ![Emulator running](~/media/emulator-v4/js-quickstart.png)
