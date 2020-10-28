@@ -90,6 +90,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 ---
 
+<!--
 ## Deploy your bot
 
 In this article we will show you how to deploy a basic bot to Azure. We will explain how to prepare your bot for deployment, deploy your bot to Azure, and test your bot in Web Chat. It would be useful to read this article before following the steps, so that you fully understand what is involved in deploying a bot.
@@ -165,3 +166,4 @@ When creating the bot application service, you can deploy your bot in a new or i
 
 > [!div class="nextstepaction"]
 > [Use QnA Maker in your bot to answer questions](bot-builder-tutorial-add-qna.md)
+-->
