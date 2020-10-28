@@ -73,11 +73,11 @@ When creating the bot application service, you can deploy your bot in a new or i
 
 [!INCLUDE [zip up code](~/includes/deploy/snippet-zip-code.md)]
 
-### Deploy code to Azure
+## Deploy code to Azure
 
 [!INCLUDE [deploy code to Azure](~/includes/deploy/snippet-deploy-code-to-az.md)]
 
-### Test in Web Chat
+## Test in Web Chat
 
 [!INCLUDE [test in web chat](~/includes/deploy/snippet-test-in-web-chat.md)]
 
