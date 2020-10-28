@@ -277,7 +277,7 @@ Notice that in the`RootBot` project `appsettings.json` file you have the followi
 
 ### Test using Web Chat
 
-1. Deploy the root bot and the skill bot to Azure. For information about deployment, see [Tutorial: Create and deploy a basic bot](bot-builder-tutorial-basic-deploy.md).
+1. Deploy the root bot and the skill bot to Azure. For information about deployment, see [Tutorial: Deploy a basic bot](bot-builder-tutorial-deploy-basic-bot.md).
 1. In your code editor, for example Visual Studio, replace the localhost addresses in the `RootBot` project `appsetting.js` file with the actual Azure addresses as shown below.
 
     ```json
