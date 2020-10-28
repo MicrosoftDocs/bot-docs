@@ -8,7 +8,7 @@
 
 ### Templates
 
-<!-- # [Visual Studio](#tab/vs) -->
+# [Visual Studio](#tab/vs)
 
 ### Visual Studio templates
 
@@ -16,7 +16,7 @@ Install [BotBuilderVSIX.vsix template](https://aka.ms/bot-vsix) that you downloa
 
 [!INCLUDE [dotnet vsix templates info](~/includes/vsix-templates-versions.md)]
 
-<!-- # [Visual Studio Code / Command Line](#tab/vc+cl) -->
+# [Visual Studio Code / Command Line](#tab/vc+cl)
 
 ### Visual Studio Code and Command Line templates
 
@@ -48,3 +48,4 @@ In a console window, perform the steps shown below.
 > [!NOTE]
 > The above installation steps will install all 3 Bot Framework templates. You do not need to install all 3 templates and can install just the ones you will use. This article makes use of the echo bot template.
 
+---
