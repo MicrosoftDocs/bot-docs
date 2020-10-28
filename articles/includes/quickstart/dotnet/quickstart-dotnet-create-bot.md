@@ -1,7 +1,7 @@
 
 <!-- Include under ## Create a bot H2 header -->
 
-# [Visual Studio](#tab/vs)
+<!-- # [Visual Studio](#tab/vs) -->
 
 ### Build in Visual Studio
 
@@ -20,7 +20,7 @@ Thanks to the template, your project contains all the code that's necessary to c
 > If you see that the message cannot be sent, you might need to restart your machine as ngrok didn't get the needed privileges on your system yet (only needs to be done one time).
 -->
 
-# [Visual Studio Code](#tab/vc)
+<!-- # [Visual Studio Code](#tab/vc) -->
 
 ### Create a new project
 
@@ -53,7 +53,7 @@ Make sure that [.NET Core 3.1](https://dotnet.microsoft.com/download) is install
          dotnet new emptybot -n MyEmptyBot
       ```
 
-# [Command Line](#tab/cl)
+<!-- # [Command Line](#tab/cl) -->
 
 ### Create a new project
 
@@ -84,5 +84,4 @@ Make sure that [.NET Core 3.1](https://dotnet.microsoft.com/download) is install
          dotnet new emptybot -n MyEmptyBot
       ```
 
----
 
