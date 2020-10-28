@@ -14,7 +14,7 @@ ms.date: 10/28/2020
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-This tutorial walks you through creating a basic bot with the Bot Framework SDK and deploying it to Azure. If you've already created a basic bot and have it running locally, skip ahead to the [Deploy your bot](#deploy-your-bot) section.
+This tutorial describes how to create a basic bot with the Bot Framework SDK. If you've already created a basic bot and have it running locally, go to the [Tutorial: Deploy a basic bot](bot-builder-tutorial-deploy-basic-bot.md) article.
 
 In this tutorial, you learn how to:
 
@@ -89,11 +89,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 ---
 
-## Additional resources
-
-[!INCLUDE [additional resources snippet](../includes/deploy/snippet-additional-resources.md)]
-
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Use QnA Maker in your bot to answer questions](bot-builder-tutorial-add-qna.md)
+> [Tutorial: Deploy a basic bot](bot-builder-tutorial-deploy-basic-bot.md)
