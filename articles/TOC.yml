@@ -18,9 +18,11 @@
     href: v4sdk/abs-quickstart.md
 - name: Tutorials
   items:
-  - name: 1. Create and deploy a basic bot
-    href: v4sdk/bot-builder-tutorial-basic-deploy.md
-  - name: 2. Add QnA Maker and redeploy a bot
+  - name: 1. Create a basic bot
+    href: v4sdk/bot-builder-tutorial-create-basic-bot.md
+  - name: 2. Deploy a basic bot
+    href: v4sdk/bot-builder-tutorial-deploy-basic-bot.md
+  - name: 3. Add QnA Maker and redeploy a bot
     href: v4sdk/bot-builder-tutorial-add-qna.md
 - name: Samples
   items:
