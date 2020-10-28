@@ -40,9 +40,7 @@ Adaptive dialogs offer a dialog-centric way to model conversations, with each ad
 
 In the article [Handling interruptions in adaptive dialogs][interruptions], the concept of interruptions in adaptive dialogs is introduced. It explains how a parent adaptive dialog can be consulted when the active adaptive dialog's recognizer does not find a suitable match. In this case the active dialog does not know if a parent or sibling dialog can respond, so to find out, it must send utterances or question to its parent using the Bot Framework's _consultation_ mechanism.
 
-Cross-train can build on and improve on the capabilities provided by interruptions.
-
-Cross training builds on and improves interruptions in a few ways:
+Cross training can build on and improve on the capabilities provided by interruptions in a few ways:
 
 1. Cross-dialog training: by cross training the LU models of all the adaptive dialogs in your bot, you give every dialog the ability to know if other dialogs are capable of responding to a user request. In this way the bot does not need to consult all the way up the dialog stack to find out if another dialog can best process a given user input. This is described in more detail in the [LUIS to LUIS Cross training](#luis-to-luis-cross-training) section.
 
