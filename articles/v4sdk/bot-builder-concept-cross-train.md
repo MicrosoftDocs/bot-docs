@@ -48,10 +48,9 @@ Cross training builds on and improves interruptions in a few ways:
 
 1. Cross training different language understanding engines within the same dialog. LUIS and QnA Maker are different language understanding engines, once the models for each are cross trained, the recognizer for both can be consulted to determine which is best suited to respond to a user request. This is described in more detail in [LUIS to QnA Maker cross training](#luis-to-qna-maker-cross-training). You can think of this as extra-dialog training.
 
-
 > [!TIP]
 >
-> If your language understanding models are not cross trained and the _allow interruptions_ property evaluates to true, no utterances or questions from other dialogs will be considered unless there are no matches in the active adaptive dialog. Once you cross-train your language understanding models, utterances and questions from parent and sibling dialogs will always be considered. This can result in different responses from the bot to the customer.
+> If the language understanding models associated with the various adaptive dialogs in a bot are not cross trained, no utterances or questions from other dialogs will be considered unless the recognizer of the active dialog returns an unknown intent. When the models have been cross trained, utterances and questions from parent and sibling dialogs will always be considered because they are associated with a new intent created in the active dialogs language understanding model. A parent no longer must be consulted to find out if it can respond to the users input. When this new intent is returned, the Bot Framework knows to consult the parent or sibling to handle it.
 
 ## LUIS-to-LUIS cross training
 
@@ -95,6 +94,9 @@ In this example, When the user requested to to book a flight, the root dialog's 
 
 To enable this fictional travel bot to handle the interruption in the previous example, you need to update the the flight dialog's LUIS model, contained in the **flightDialog.lu** file, to include a new intent named `_interruption`, then add the utterances for the `BookHotel` intent. The **flightDialog.lu** file is used to create your LUIS application associated with the flight dialog.
 
+> [!TIP]
+>
+> Cross training all the LUIS models in a typical bot can be a very involved and tedious process. There is a command included with the Bot Framework command line interface (BF CLI) that automates this work for you. This is discussed in detail in the [The Bot Framework CLI cross-train command][the-bot-framework-cli-cross-train-command] section below.
 before this update, the example flight booking `.lu` file looks like this:
 
 ```.lu
@@ -124,7 +126,7 @@ The utterance _reserve a hotel room_ is associated with the `_interruption` inte
 
 > [!IMPORTANT]
 >
-> Cross training all the LUIS models in a typical bot can be a very involved and tedious process. There is a command included with the Bot Framework command line interface (BF CLI) that automates this work for you. This is discussed in detail in the [The Bot Framework CLI cross-train command][the-bot-framework-cli-cross-train-command] section below.
+> LUIS predictions are influenced by the number of utterances in each intent. If you have an intent with 100 example utterances and an intent with 20 example utterances, the 100-utterance intent will have a higher rate of prediction and will more likely be selected. This can impact cross trained models because all utterances from the models of all parent and sibling dialogs become utterances of the new `_Interruption` intent. In some cases, this can result in a parent or sibling dialog responding to the user when acceptable matches would have been returned by the current dialogs recognizer prior to cross training. Minimize the effects of this by limiting the number of example utterances in the new `_Interruption` intent.
 
 ## Cross train LUIS and QnA Maker models
 
