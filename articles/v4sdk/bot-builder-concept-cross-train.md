@@ -91,7 +91,7 @@ The bot will be expecting an answer to the question _What is your departure date
 
 In this example, When the user requested to to book a flight, the root dialog's recognizer returned the `BookFlight` intent, resulting in the flight dialog, which processes a users request to book flights. When in the flight dialog the user requested to reserve a hotel room, unfortunately the flight dialog does not understand what the user is requesting since the utterance "I need to reserve a room first" does not match any intents in the flight dialogs LUIS model. After you cross train the `.lu` files, your bot will now be able to detect that the user is requesting something that another dialog understands, so it bubbles the request up to the root dialog which detects the `BookHotel` intent and calls the hotel dialog to process the hotel reservation request. Once the hotel dialog completes the hotel reservation request, control is passed back to the flight dialog to complete the flight booking.
 
-#### Cross-train the LUIS models of the travel bot
+#### Cross train the LUIS models of the travel bot
 
 To enable this fictional travel bot to handle the interruption in the previous example, you need to update the the flight dialog's LUIS model, contained in the **flightDialog.lu** file, to include a new intent named `_interruption`, then add the utterances for the `BookHotel` intent. The **flightDialog.lu** file is used to create your LUIS application associated with the flight dialog.
 
