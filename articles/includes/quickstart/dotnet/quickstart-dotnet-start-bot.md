@@ -1,13 +1,13 @@
 
 <!-- Include under ## Start your bot H2 header -->
 
-# [Visual Studio](#tab/vs)
+<!-- # [Visual Studio](#tab/vs) -->
 
 ### Run in Visual Studio
 
 In Visual Studio, start the project. This will build the application, deploy it to localhost, and launch the web browser to display the application's `default.htm` page. At this point, your bot is running locally on port 3978.
 
-# [Visual Studio Code](#tab/vc)
+<!-- # [Visual Studio Code](#tab/vc) -->
 
 ### Run in Visual Studio Code
 
@@ -23,7 +23,7 @@ In Visual Studio, start the project. This will build the application, deploy it 
 
 This will build the application, deploy it to localhost, and launch the web browser to display the application's `default.htm` page. At this point, your bot is running locally on port 3978.
 
-# [Command Line](#tab/cl)
+<!-- # [Command Line](#tab/cl) -->
 
 ### Run the Bot locally
 
@@ -43,4 +43,3 @@ To run your bot locally, execute the commands shown below.
 
 This will build the application, deploy it to localhost, and launch the web browser to display the application's `default.htm` page. At this point, your bot is running locally on port 3978.
 
----
