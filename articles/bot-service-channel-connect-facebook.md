@@ -82,7 +82,7 @@ The bot is accessed through a Facebook Page.
 
 ### Enable webhooks
 
-In order to send messages and other events from your bot to Facebook Messenger, you must enable webhooks integration. At this point, let's leave the Facebook setting steps pending; will come back to them.
+In order to send messages and other events from your bot to Facebook Messenger, you must enable webhooks integration. At this point, let's leave the Facebook setting steps pending; we will come back to them.
 
 1. In your browser open a new window and navigate to the [Azure portal](https://portal.azure.com/).
 
@@ -272,7 +272,7 @@ public class FacebookAdapterWithErrorHandler : FacebookAdapter
 
 #### Create a new controller for handling Facebook requests
 
-Create a new controller which will handle requests from Facebook, on a new endpoing 'api/facebook' instead of the default 'api/messages' used for requests from Azure Bot Service Channels.  By adding an additional endpoint to your bot, you can accept requests from Bot Service channels, as well as from Facebook, using the same bot.
+Create a new controller which will handle requests from Facebook, on a new endpoint 'api/facebook' instead of the default 'api/messages' used for requests from Azure Bot Service Channels.  By adding an additional endpoint to your bot, you can accept requests from Bot Service channels, as well as from Facebook, using the same bot.
 
 ```csharp
 [Route("api/facebook")]
