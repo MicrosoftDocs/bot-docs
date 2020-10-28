@@ -20,39 +20,39 @@ This tutorial walks you through creating a basic bot with the Bot Framework SDK 
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
-> * Create a basic Echo bot
-> * Run and interact with it locally
-> * Publish your bot
+> - Create a basic Echo bot
+> - Run and interact with it locally
+> - Publish your bot
 
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
 ## Prerequisites
 
-# [C#](#tab/csharp1)
+# [C#](#tab/csharp)
 
-[!INCLUDE [dotnet quickstart prerequisites](../includes/quickstart/dotnet/quickstart-dotnet-prerequisites.md)]
+[!INCLUDE [dotnet prerequisites](../includes/quickstart/dotnet/quickstart-dotnet-prerequisites.md)]
 
-# [JavaScript](#tab/javascript1)
+# [JavaScript](#tab/javascript)
 
-[!INCLUDE [javascript quickstart prerequisites](../includes/quickstart/javascript/quickstart-javascript-prerequisites.md)]
+[!INCLUDE [javascript prerequisites](../includes/quickstart/javascript/quickstart-javascript-prerequisites.md)]
 
-# [Python](#tab/python1)
+# [Python](#tab/python)
 
-[!INCLUDE [python quickstart prerequisites](../includes/quickstart/python/quickstart-python-prerequisites.md)]
+[!INCLUDE [python prerequisites](../includes/quickstart/python/quickstart-python-prerequisites.md)]
 
 ---
 
 ## Create a bot
 
-# [C#](#tab/csharp2)
+# [C#](#tab/csharp)
 
 [!INCLUDE [dotnet quickstart create bot](../includes/quickstart/dotnet/quickstart-dotnet-create-bot.md)]
 
-# [JavaScript](#tab/javascript2)
+# [JavaScript](#tab/javascript)
 
 [!INCLUDE [javascript quickstart create bot](../includes/quickstart/javascript/quickstart-javascript-create-bot.md)]
 
-# [Python](#tab/python2)
+# [Python](#tab/python)
 
 [!INCLUDE [python quickstart create bot](../includes/quickstart/python/quickstart-python-create-bot.md)]
 
@@ -60,15 +60,15 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 ## Start your bot
 
-# [C#](#tab/csharp3)
+# [C#](#tab/csharp)
 
 [!INCLUDE [dotnet quickstart start bot](../includes/quickstart/dotnet/quickstart-dotnet-start-bot.md)]
 
-# [JavaScript](#tab/javascript3)
+# [JavaScript](#tab/javascript)
 
 [!INCLUDE [javascript quickstart start bot](../includes/quickstart/javascript/quickstart-javascript-start-bot.md)]
 
-# [Python](#tab/python3)
+# [Python](#tab/python)
 
 [!INCLUDE [python quickstart start bot](../includes/quickstart/python/quickstart-python-start-bot.md)]
 
@@ -76,15 +76,15 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 ## Start the Emulator and connect your bot
 
-# [C#](#tab/csharp4)
+# [C#](#tab/csharp)
 
 [!INCLUDE [dotnet quickstart start emulator](../includes/quickstart/dotnet/quickstart-dotnet-start-emulator.md)]
 
-# [JavaScript](#tab/javascript4)
+# [JavaScript](#tab/javascript)
 
 [!INCLUDE [javascript quickstart emulator](../includes/quickstart/javascript/quickstart-javascript-start-emulator.md)]
 
-# [Python](#tab/python4)
+# [Python](#tab/python)
 
 [!INCLUDE [python quickstart emulator](../includes/quickstart/python/quickstart-python-start-emulator.md)]
 
