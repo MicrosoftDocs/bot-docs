@@ -53,7 +53,7 @@ Cross training builds on and improves interruptions in a few ways:
 >
 > If your language understanding models are not cross trained and the _allow interruptions_ property evaluates to true, no utterances or questions from other dialogs will be considered unless there are no matches in the active adaptive dialog. Once you cross-train your language understanding models, utterances and questions from parent and sibling dialogs will always be considered. This can result in different responses from the bot to the customer.
 
-## LUIS to LUIS Cross training
+## LUIS-to-LUIS cross training
 
 By cross training the LUIS models in your bot, you enable a process called _Global interrupts_. This means that if there are no triggers in the active adaptive dialog that can handle the intent returned by the recognizer, the bot will bubble it up to the dialog's parent dialog, using adaptive dialogs _consultation mechanism_.  If the parent dialog does not have a trigger to handle the intent, it continues to bubble up until it reaches the root dialog. Once the intent is handled, the conversation flow continues where it left off. For a more detailed discussion on Global interrupts see [Handling interruptions globally][Global-interrupts] in the _handling interruptions in adaptive dialogs_ concepts article.
 
