@@ -28,15 +28,15 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 ## Prerequisites
 
-# [C#](#tab/csharp)
+# [C#](#tab/csharp1)
 
 [!INCLUDE [dotnet quickstart prerequisites](../includes/quickstart/dotnet/quickstart-dotnet-prerequisites.md)]
 
-# [JavaScript](#tab/javascript)
+# [JavaScript](#tab/javascript1)
 
 [!INCLUDE [javascript quickstart prerequisites](../includes/quickstart/javascript/quickstart-javascript-prerequisites.md)]
 
-# [Python](#tab/python)
+# [Python](#tab/python1)
 
 [!INCLUDE [python quickstart prerequisites](../includes/quickstart/python/quickstart-python-prerequisites.md)]
 
@@ -44,15 +44,15 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 ## Create a bot
 
-# [C#](#tab/csharp1)
+# [C#](#tab/csharp2)
 
 [!INCLUDE [dotnet quickstart create bot](../includes/quickstart/dotnet/quickstart-dotnet-create-bot.md)]
 
-# [JavaScript](#tab/javascript1)
+# [JavaScript](#tab/javascript2)
 
 [!INCLUDE [javascript quickstart create bot](../includes/quickstart/javascript/quickstart-javascript-create-bot.md)]
 
-# [Python](#tab/python1)
+# [Python](#tab/python2)
 
 [!INCLUDE [python quickstart create bot](../includes/quickstart/python/quickstart-python-create-bot.md)]
 
@@ -60,15 +60,15 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 ## Start your bot
 
-# [C#](#tab/csharp2)
+# [C#](#tab/csharp3)
 
 [!INCLUDE [dotnet quickstart start bot](../includes/quickstart/dotnet/quickstart-dotnet-start-bot.md)]
 
-# [JavaScript](#tab/javascript2)
+# [JavaScript](#tab/javascript3)
 
 [!INCLUDE [javascript quickstart start bot](../includes/quickstart/javascript/quickstart-javascript-start-bot.md)]
 
-# [Python](#tab/python2)
+# [Python](#tab/python3)
 
 [!INCLUDE [python quickstart start bot](../includes/quickstart/python/quickstart-python-start-bot.md)]
 
@@ -76,15 +76,15 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 ## Start the Emulator and connect your bot
 
-# [C#](#tab/csharp3)
+# [C#](#tab/csharp4)
 
 [!INCLUDE [dotnet quickstart start emulator](../includes/quickstart/dotnet/quickstart-dotnet-start-emulator.md)]
 
-# [JavaScript](#tab/javascript3)
+# [JavaScript](#tab/javascript4)
 
 [!INCLUDE [javascript quickstart emulator](../includes/quickstart/javascript/quickstart-javascript-start-emulator.md)]
 
-# [Python](#tab/python3)
+# [Python](#tab/python4)
 
 [!INCLUDE [python quickstart emulator](../includes/quickstart/python/quickstart-python-start-emulator.md)]
 
