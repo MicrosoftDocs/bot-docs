@@ -218,7 +218,7 @@ To create the LUIS applications for the **todo bot with LUIS and QnA Maker** sam
       bf luis:build --luConfig luconfig.json
    ```
 
-Once finished you will have a LUIS application for each of the five `.lu` files in [LUIS](https://www.luis.ai/applications):
+Once finished you will have a LUIS application for each of the five `.lu` files in [LUIS](https://www.luis.ai/conversations/applications):
 
 ![LUIS My apps list](./media/adaptive-dialogs/luis-apps-list.png)
 

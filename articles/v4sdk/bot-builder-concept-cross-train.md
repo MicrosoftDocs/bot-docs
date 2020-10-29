@@ -52,7 +52,7 @@ Cross training can build on and improve on the capabilities provided by interrup
 
 ## LUIS-to-LUIS cross training
 
-By cross training the LUIS models in your bot, you enable a process called _Global interrupts_. This means that if there are no triggers in the active adaptive dialog that can handle the intent returned by the recognizer, the bot will bubble it up to the dialog's parent dialog, using adaptive dialogs _consultation mechanism_.  If the parent dialog does not have a trigger to handle the intent, it continues to bubble up until it reaches the root dialog. Once the intent is handled, the conversation flow continues where it left off. For a more detailed discussion on Global interrupts see [Handling interruptions globally][Global-interrupts] in the _handling interruptions in adaptive dialogs_ concepts article.
+By cross training the LUIS models in your bot, you enable a process called _Global interrupts_. This means that if there are no triggers in the active adaptive dialog that can handle the intent returned by the recognizer, the bot will bubble it up to the dialog's parent dialog, using adaptive dialogs _consultation mechanism_.  If the parent dialog does not have a trigger to handle the intent, it continues to bubble up until it reaches the root dialog. Once the intent is handled, the conversation flow continues where it left off. For a more detailed discussion on Global interrupts see [Handling interruptions globally][Global-interrupts] in the _handling interruptions in adaptive dialogs_ concepts article. For LUIS models cross trained with other LUIS models, you will use the [LUIS recognizer][luis-recognizer].
 
 Common uses for global interrupts include creating basic dialog management features such as help or cancel in the root dialog that are then available to any of its child dialogs, as mentioned in the introduction. global interrupts also enables users to seamlessly change the direction of the conversational flow. Consider the following example in this fictional travel bot.
 
@@ -124,13 +124,13 @@ The utterance _reserve a hotel room_ is associated with the `_interruption` inte
 
 > [!IMPORTANT]
 >
-> LUIS predictions are influenced by the number of utterances in each intent. If you have an intent with 100 example utterances and an intent with 20 example utterances, the 100-utterance intent will have a higher rate of prediction and will more likely be selected. This can impact cross trained models because all utterances from the models of all parent and sibling dialogs become utterances of the new `_Interruption` intent. In some cases, this can result in a parent or sibling dialog responding to the user when acceptable matches would have been returned by the current dialogs recognizer prior to cross training. Minimize the effects of this by limiting the number of example utterances in the new `_Interruption` intent.
+> LUIS predictions are influenced by the number of utterances in each intent. If you have an intent with 100 example utterances and an intent with 20 example utterances, the 100-utterance intent will have a higher rate of prediction and will more likely be selected. This can impact cross trained models because all utterances from the models of all parent and sibling dialogs become utterances of the new `_Interruption` intent. In some cases, this can result in a parent or sibling dialog responding to the user when acceptable matches would have been returned by the current dialogs recognizer prior to cross training. Minimize the effects of this, if needed, by limiting the number of example utterances in the new `_Interruption` intent.
 
 ## Cross train LUIS and QnA Maker models
 
 A well designed bot can answer relevant product or service questions asked by a user, regardless what dialog is currently active. LUIS is ideal for handling conversational flows while QnA Maker is ideal for handling users questions and FAQs. Having access to both in your adaptive dialogs can improve the bots ability to meet user needs.
 
-To enable this capability you need to _cross-train_ your `.lu` and `.qna` files to include the information required by your bot's recognizer to determine if the LUIS or QnA Maker response is best suited for the user.
+To enable this capability you need to _cross-train_ your `.lu` and `.qna` files to include the information required by your bot's recognizer to determine if the LUIS or QnA Maker response is best suited for the user. For a LUIS model cross trained with a QnA Maker model, you will use the [Cross-trained recognizer set][cross-trained-recognizer-set-concept].
 
 Before creating your LUIS applications and QnA Maker knowledge base, you need to _cross-train_ your `.lu` and `.qna` files to include the information required by your bot's recognizer to determine if the LUIS or QnA Maker response is best suited for the user.
 
@@ -183,6 +183,8 @@ After cross training your LUIS and QnA Maker models, you need to be sure and use
 [Global-interrupts]: bot-builder-concept-adaptive-dialog-interruptions.md#handling-interruptions-globally
 [luis]: /azure/cognitive-services/luis/what-is-luis
 [luis-recognizer]: bot-builder-concept-adaptive-dialog-recognizers.md#luis-recognizer
+[cross-trained-recognizer-set-concept]: /azure/cognitive-services/luis/what-is-luis
+[luis-recognizer]: bot-builder-concept-adaptive-dialog-recognizers.md#cross-trained-recognizer-set
 [luis-build]: bot-builder-howto-bf-cli-deploy-luis.md#create-and-train-a-luis-app-then-publish-it-using-the-build-command
 [bf-luiscross-train]: https://aka.ms/botframework-cli#bf-luiscross-train
 [lu-templates]: ../file-format/bot-builder-lu-file-format.md
