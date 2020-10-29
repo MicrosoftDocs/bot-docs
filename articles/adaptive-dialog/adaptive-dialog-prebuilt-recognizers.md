@@ -329,7 +329,7 @@ Here is an example cross-train configuration file for the [todo bot with LUIS an
 }
 ```
 
-In the triggers section of the cross-train configuration file, list out each intent in the root dialog along with the `.lu` file it points to. You only need to list the `.lu` files and it will discover the `.qna` files as long as they are in the same directory and have the same filename, except with the qna file extension, for example _AddToDoDialog.qna_.
+In the triggers section of the cross-train configuration file, list each intent in the root dialog along with the `.lu` file it points to. You only need to list the `.lu` files, `.qna` files will be cross trained as long as they are in the same directory with the same filename, for example _AddToDoDialog.qna_.
 
 > [!TIP]
 >
