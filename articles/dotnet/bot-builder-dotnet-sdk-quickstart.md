@@ -16,11 +16,11 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-This quickstart walks you through building a bot by using the C# template, and then testing it with the Bot Framework Emulator.
+This article shows you how to build a bot by using the C# template, and then how to test it with the Bot Framework Emulator.
 
 [!INCLUDE [Azure vs local development](../includes/snippet-quickstart-paths.md)]
 
-<!-- Remove this include file [!INCLUDE [dotnet quickstart](../includes/quickstart-dotnet.md)] -->
+<!-- Delete this include file [!INCLUDE [dotnet quickstart](../includes/quickstart-dotnet.md)] -->
 
 ## Prerequisites
 

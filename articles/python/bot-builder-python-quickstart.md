@@ -15,9 +15,25 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-This quickstart walks you through building a bot using the Python Echo Bot template, and then testing it with the Bot Framework Emulator.
+This article shows you how to build a bot by using the Python Echo Bot template, and then how to test it with the Bot Framework Emulator.
 
-[!INCLUDE [python quickstart](../includes/quickstart-python.md)]
+<!-- Delete this include file [!INCLUDE [python quickstart](../includes/quickstart-python.md)] -->
+
+## Prerequisites
+
+[!INCLUDE [dotnet prerequisites](~/includes/quickstart/python/quickstart-javascript-prerequisites.md)]
+
+## Create a bot
+
+[!INCLUDE [dotnet quickstart create bot](~/includes/quickstart/python/quickstart-dotnet-create-bot.md)]
+
+## Start your bot
+
+[!INCLUDE [dotnet quickstart start bot](~/includes/quickstart/python/quickstart-dotnet-start-bot.md)]
+
+## Start the Emulator and connect your bot
+
+[!INCLUDE [dotnet quickstart start emulator](~/includes/quickstart/common/quickstart-start-emulator.md)]
 
 ## Additional resources
 
