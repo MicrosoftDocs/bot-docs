@@ -306,7 +306,7 @@ For an end to end example of cross training your bot, see the how to article [Cr
 
 The cross-train configuration file
 
-Here is an example cross-train configuration file for the [todo bot with LUIS and QnA Maker][cs-sample-todo-bot] sample:
+The following is the cross-train configuration file for the [todo bot with LUIS and QnA Maker][cs-sample-todo-bot] sample:
 
 ```json
 {
