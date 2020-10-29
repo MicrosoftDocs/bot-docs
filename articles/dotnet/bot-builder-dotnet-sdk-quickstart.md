@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 05/23/2019
+ms.date: 10/29/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -20,7 +20,23 @@ This quickstart walks you through building a bot by using the C# template, and t
 
 [!INCLUDE [Azure vs local development](../includes/snippet-quickstart-paths.md)]
 
-[!INCLUDE [dotnet quickstart](../includes/quickstart-dotnet.md)]
+<!-- Remove this include file [!INCLUDE [dotnet quickstart](../includes/quickstart-dotnet.md)] -->
+
+## Prerequisites
+
+[!INCLUDE [dotnet prerequisites](~/includes/quickstart/dotnet/quickstart-dotnet-prerequisites.md)]
+
+## Create a bot
+
+[!INCLUDE [dotnet quickstart create bot](~/includes/quickstart/dotnet/quickstart-dotnet-create-bot.md)]
+
+## Start your bot
+
+[!INCLUDE [dotnet quickstart start bot](~/includes/quickstart/dotnet/quickstart-dotnet-start-bot.md)]
+
+## Start the Emulator and connect your bot
+
+[!INCLUDE [dotnet quickstart start emulator](~/includes/quickstart/dotnet/quickstart-dotnet-start-emulator.md)]
 
 ## Additional resources
 
