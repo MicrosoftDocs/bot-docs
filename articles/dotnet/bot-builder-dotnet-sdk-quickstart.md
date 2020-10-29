@@ -36,7 +36,7 @@ This quickstart walks you through building a bot by using the C# template, and t
 
 ## Start the Emulator and connect your bot
 
-[!INCLUDE [dotnet quickstart start emulator](~/includes/quickstart/dotnet/quickstart-dotnet-start-emulator.md)]
+[!INCLUDE [dotnet quickstart start emulator](~/includes/quickstart/common/quickstart-start-emulator.md)]
 
 ## Additional resources
 

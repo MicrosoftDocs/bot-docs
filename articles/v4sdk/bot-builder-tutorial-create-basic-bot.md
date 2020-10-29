@@ -68,15 +68,15 @@ This tutorial describes how to create a basic bot with the Bot Framework SDK. If
 
 # [C#](#tab/csharp)
 
-[!INCLUDE [dotnet quickstart start emulator](~/includes/quickstart/dotnet/quickstart-dotnet-start-emulator.md)]
+[!INCLUDE [dotnet quickstart start emulator](~/includes/quickstart/common/quickstart-start-emulator.md)]
 
 # [JavaScript](#tab/javascript)
 
-[!INCLUDE [javascript quickstart emulator](~/includes/quickstart/javascript/quickstart-javascript-start-emulator.md)]
+[!INCLUDE [javascript quickstart emulator](~/includes/quickstart/common/quickstart-start-emulator.md)]
 
 # [Python](#tab/python)
 
-[!INCLUDE [python quickstart emulator](~/includes/quickstart/python/quickstart-python-start-emulator.md)]
+[!INCLUDE [python quickstart emulator](~/includes/quickstart/common/quickstart-start-emulator.md)]
 
 ---
 
