@@ -58,7 +58,7 @@ Common uses for global interrupts include creating basic dialog management featu
 
 ### Travel bot
 
-The following example travel bot will help explain how to cross train a bot with multiple adaptive dialogs, each with its own LUIS model.
+The following example travel bot demonstrates cross training a bot with multiple adaptive dialogs, each with its own LUIS model.
 
 This bot consists of three adaptive dialogs, each with their own LUIS model:
 
@@ -73,7 +73,7 @@ This bot consists of three adaptive dialogs, each with their own LUIS model:
 
 #### Travel bot customer scenario
 
-The following exchange demonstrates a potential customer ussage scenario that cannot be handled by the bot, but could be after cross training the bot's LUIS models.
+The following exchange demonstrates a potential customer usage scenario that cannot be handled by the bot, but could be after cross training the bot's LUIS models.
 
 > **Bot**: Hello, how can I help you today?
 >
