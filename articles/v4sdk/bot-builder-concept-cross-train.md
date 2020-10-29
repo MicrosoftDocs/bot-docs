@@ -86,7 +86,9 @@ The bot will be expecting an answer to the question _What is your departure date
 >
 > **User**: I need to reserve a room first
 
-In this example, When the user requested to to book a flight, the root dialog's recognizer returned the `BookFlight` intent, resulting in the flight dialog, which processes a users request to book flights. When in the flight dialog the user requested to reserve a hotel room, unfortunately the flight dialog does not understand what the user is requesting since the utterance "I need to reserve a room first" does not match any intents in the flight dialogs LUIS model. After you cross train the `.lu` files, your bot will now be able to detect that the user is requesting something that another dialog understands, so it bubbles the request up to the root dialog which detects the `BookHotel` intent and calls the hotel dialog to process the hotel reservation request. Once the hotel dialog completes the hotel reservation request, control is passed back to the flight dialog to complete the flight booking.
+In the above example, when the user requested to to book a flight, the root dialog's recognizer returned the `BookFlight` intent. This runs `flightDialog`, an adaptive dialog that processes booking flights, but knows nothing about hotels. When the user then requests a hotel reservation, the flight dialog cannot understand since the utterance "I need to reserve a room first" does not match any intents in the flight dialogs LUIS model.
+
+After cross training the `.lu` files, your bot will now be able to detect that the user is requesting something that another dialog can respond to, so it bubbles the request up to its parent, in this case the root dialog, which detects the `BookHotel` intent. This runs `hotelDialog`, an adaptive dialog that processes hotel reservations. Once the hotel dialog completes the hotel reservation request, control is passed back to the flight dialog to complete the flight booking.
 
 #### Cross train the LUIS models of the travel bot
 
@@ -118,7 +120,7 @@ After cross training with the hotel booking `.lu` file, it would look like this:
 - reserve a hotel room
 ```
 
-The utterance _reserve a hotel room_ is associated with the `_interruption` intent When the `_interruption` intent is detected, it bubbles up any utterance associated with it to its parent dialog, whose recognizer returns the `BookHotel` intent. When cross training LUIS to LUIS, you need to include all user utterances from all intents from the dialog you are cross training with.
+The utterance _reserve a hotel room_ is associated with the `_interruption` intent. When the `_interruption` intent is detected, it bubbles up any utterance associated with it to its parent dialog, whose recognizer returns the `BookHotel` intent. When cross training LUIS to LUIS, you need to include all user utterances from all intents from the dialog you are cross training with.
 
 ![Travel bot diagram after cross training](./media/adaptive-dialogs/after-cross-train.png)
 
@@ -153,13 +155,18 @@ When a user converses with the bot, the `CreateCrossTrainedRecognizer` recognize
 
 > [!IMPORTANT]
 >
-> Cross training all the LUIS and QnA Maker models in a typical bot can be a very involved and tedious process. There is a command included with the Bot Framework command line interface (BF CLI) that automates this work for you. This is discussed in detail in the [The Bot Framework CLI cross-train command][the-bot-framework-cli-cross-train-command] section below.
+> Cross training all the LUIS and QnA Maker models in a typical bot can be a very involved and tedious process. There is a command included with the Bot Framework command line interface (BF CLI) that automates this work for you. This is discussed in detail in the [The Bot Framework CLI cross-train command](#the-bot-framework-cli-cross-train-command) section below.
 >
 > Running this command on a bot project that has both LUIS and QnA Maker models will automatically cross-train both LUIS to LUIS and QnA Maker to QnA Maker across all adaptive dialogs across the entire project as well as LUIS to QnA Maker cross training within each adaptive dialogs that have both models, meaning both an `.lu` and `.qna` file.
 
 ### Cross train multiple LUIS and QnA Maker models
 
-Cross training a bot with both LUIS and QnA Maker models enables global interruptions as described previously in [LUIS to LUIS cross training](#luis-to-luis-cross-training). This also applies to QnA Maker. For example, when the root dialog's LUIS model is cross trained with the root dialogs QnA Maker model, it creates the `DeferToRecognizer_qna` intent in RootDialog.lu, with all questions listed as utterances. Next, when the root dialogs child is cross trained, it picks up those intents and in turn passes them to its child dialog and this continues until there are no more child dialogs. When a user asks any question associated with RootDialog.qna when the active dialog is a child or grandchild, the active dialog will not be able to respond, but because it has been cross-trained it will be aware that another dialog is able to respond and will then bubble it up to its parent, and in turn it is bubbled up to each parent all the way to the root dialog which answers the question before returning control back to the previous conversational flow. This results in multiple transactions to both the LUIS and QnA Maker services. The deeper the dialog hierarchy, the more transactions will potentially occur for a given user request. This increase in transactions may be something to consider when designing your bot.
+Cross training a bot with both LUIS and QnA Maker models enables global interruptions as described previously in [LUIS to LUIS cross training](#luis-to-luis-cross-training). This also applies to QnA Maker. For example:
+
+- when the root dialog's LUIS model is cross trained with the root dialogs QnA Maker model, it creates the `DeferToRecognizer_qna` intent in RootDialog.lu, with all questions listed as utterances.
+- Next, when the root dialogs child is cross trained, it picks up those intents and in turn passes them to its child dialog and this continues until there are no more child dialogs.
+- When a user asks any question associated with RootDialog.qna when the active dialog is a child or grandchild, the active dialog will not be able to respond, but because it has been cross-trained it will be aware that another dialog is able to respond and will then bubble it up to its parent, and in turn it is bubbled up to each parent all the way to the root dialog which answers the question before returning control back to the previous conversational flow.
+- This results in multiple transactions to both the LUIS and QnA Maker services. The deeper the dialog hierarchy, the more transactions will potentially occur for a given user request. This increase in transactions may be something to consider when designing your bot.
 
 The advantage of global interruptions in this scenario is the ability it provides to use a QnA Maker knowledge base associated with the root dialog to handle all questions the user may have regardless of where they are in their conversation with the bot.
 
