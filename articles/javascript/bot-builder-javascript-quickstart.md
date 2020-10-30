@@ -27,11 +27,11 @@ This article shows you how to build a bot by using the Yeoman Bot Builder genera
 
 ## Create a bot
 
-[!INCLUDE [dotnet quickstart create bot](~/includes/quickstart/javascript/quickstart-dotnet-create-bot.md)]
+[!INCLUDE [dotnet quickstart create bot](~/includes/quickstart/javascript/quickstart-javascript-create-bot.md)]
 
 ## Start your bot
 
-[!INCLUDE [dotnet quickstart start bot](~/includes/quickstart/javascript/quickstart-dotnet-start-bot.md)]
+[!INCLUDE [dotnet quickstart start bot](~/includes/quickstart/javascript/quickstart-javascript-start-bot.md)]
 
 ## Start the Emulator and connect your bot
 

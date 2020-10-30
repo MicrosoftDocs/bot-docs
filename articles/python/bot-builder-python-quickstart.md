@@ -21,15 +21,15 @@ This article shows you how to build a bot by using the Python Echo Bot template,
 
 ## Prerequisites
 
-[!INCLUDE [dotnet prerequisites](~/includes/quickstart/python/quickstart-javascript-prerequisites.md)]
+[!INCLUDE [dotnet prerequisites](~/includes/quickstart/python/quickstart-python-prerequisites.md)]
 
 ## Create a bot
 
-[!INCLUDE [dotnet quickstart create bot](~/includes/quickstart/python/quickstart-dotnet-create-bot.md)]
+[!INCLUDE [dotnet quickstart create bot](~/includes/quickstart/python/quickstart-python-create-bot.md)]
 
 ## Start your bot
 
-[!INCLUDE [dotnet quickstart start bot](~/includes/quickstart/python/quickstart-dotnet-start-bot.md)]
+[!INCLUDE [dotnet quickstart start bot](~/includes/quickstart/python/quickstart-python-start-bot.md)]
 
 ## Start the Emulator and connect your bot
 
