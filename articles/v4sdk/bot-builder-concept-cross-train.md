@@ -42,7 +42,7 @@ In the article [Handling interruptions in adaptive dialogs][interruptions], the 
 
 Cross training can build on and improve on the capabilities provided by interruptions in a few ways:
 
-1. **Cross-dialog training**. By cross training the LU models of all the adaptive dialogs in your bot, you give every dialog the ability to know if other dialogs are capable of responding to a user request. In this way the bot does not need to consult all the way up the dialog stack to find out if another dialog can best process a given user input. This is described in more detail in the [LUIS to LUIS Cross training](#luis-to-luis-cross-training) section.
+1. **Cross-dialog training**. By cross training the LU models of all the adaptive dialogs in your bot, you give every dialog the ability to know if other dialogs are capable of responding to a user request. In this way the bot does not need to consult all the way up the dialog stack to find out if another dialog can best process a given user input. This is described in more detail in the [LUIS-to-LUIS Cross training](#luis-to-luis-cross-training) section.
 
 1. **In-dialog training**. This is cross training different language understanding engines within the same dialog. LUIS and QnA Maker are different language understanding engines, once the models for each are cross trained, the recognizer for both can be consulted to determine which is best suited to respond to a user request. This is described in more detail in the [Cross train LUIS and QnA Maker models](#luis-to-qna-maker-cross-training) section.
 
