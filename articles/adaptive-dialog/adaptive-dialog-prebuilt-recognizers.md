@@ -299,7 +299,7 @@ For an end to end example of cross training your bot, see how to [Create a bot c
 ### luis:cross-train required parameters
 
 - `--in`: The directory, including sub-directories, that will be searched for both `.lu` and `.qna` files.
-- `--out`: The directory to save the new cross-trained `.lu` and `.qna` output files. This is the directory to which you will point the `luis:build` command's `--in` option.
+- `--out`: The directory that the new cross-trained `.lu` and `.qna` output files will be saved to. This is the directory to which you will point the `luis:build` command's `--in` option.
 - `--config`: This points to the cross-train configuration file, a JSON file that is necessary for the command to work. 
 
 #### The cross-train configuration file
