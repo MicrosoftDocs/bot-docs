@@ -294,7 +294,7 @@ To gain the full benefits of the cross-trained recognizer set, [cross train][cro
 bf luis:cross-train -i <input-folder-name> -o <output-file-name> --config <cross-train-configuration-file>
 ```
 
-For an end to end example of cross training your bot, see the how to article [Create a bot cross trained to use both LUIS and QnA Maker recognizers][howto-cross-train].
+For an end to end example of cross training your bot, see how to [Create a bot cross trained to use both LUIS and QnA Maker recognizers][howto-cross-train].
 
 ### luis:cross-train required parameters
 
