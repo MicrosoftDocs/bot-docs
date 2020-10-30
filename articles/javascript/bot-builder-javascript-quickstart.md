@@ -12,6 +12,7 @@ ms.date: 10/29/2020
 
 # Create a bot with the Bot Framework SDK for JavaScript
 
+<!-- rebuild -->
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 This article shows you how to build a bot by using the Yeoman Bot Builder generator and the Bot Framework SDK for JavaScript, and then how to test it with the Bot Framework Emulator.
