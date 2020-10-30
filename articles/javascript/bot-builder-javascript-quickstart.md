@@ -12,7 +12,6 @@ ms.date: 10/29/2020
 
 # Create a bot with the Bot Framework SDK for JavaScript
 
-<!-- rebuild  again -->
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
