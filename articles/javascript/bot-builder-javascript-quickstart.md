@@ -7,8 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 05/23/2019
-monikerRange: 'azure-bot-service-4.0'
+ms.date: 10/29/2020
 ---
 
 # Create a bot with the Bot Framework SDK for JavaScript
