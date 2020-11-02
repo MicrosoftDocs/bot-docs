@@ -1,7 +1,5 @@
 <!-- Include under ## Prerequisites H2 header -->
 
-- [Visual Studio 2019 or later](https://www.visualstudio.com/downloads)
-- [Bot Framework SDK v4 template for C#](https://aka.ms/bot-vsix)
 - [.NET Core 3.1](https://dotnet.microsoft.com/download)
 - [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
 - Knowledge of [ASP.Net Core](https://docs.microsoft.com/aspnet/core/) and [asynchronous programming in C#](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/async/index)
@@ -10,9 +8,12 @@
 
 # [Visual Studio](#tab/vs)
 
-### Visual Studio templates
+- [Visual Studio 2019 or later](https://www.visualstudio.com/downloads)
+- [Bot Framework SDK v4 template for C#](https://aka.ms/bot-vsix)
 
-Install [BotBuilderVSIX.vsix template](https://aka.ms/bot-vsix) that you downloaded in the prerequisites section.
+### Templates
+
+To add the bot templates to Visual Studio, download and install the [Bot Framework v4 SDK Templates for Visual Studio](https://aka.ms/bot-vsix) VSIX file.
 
 [!INCLUDE [dotnet vsix templates info](~/includes/vsix-templates-versions.md)]
 

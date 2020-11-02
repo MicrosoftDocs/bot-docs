@@ -4,3 +4,27 @@
 - [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
 - Knowledge of asynchronous programming in Python
 
+### Templates
+
+1. Install the necessary packages by running the following commands:
+
+    ```cmd
+    pip install botbuilder-core`
+    pip install asyncio`
+    pip install aiohttp`
+    pip install cookiecutter==1.7.0`
+    ```
+
+    The last package, cookiecutter, will be used to generate your bot. Verify that cookiecutter was installed correctly by running `cookiecutter --help`.
+
+1. To create your bot run:
+
+    ```cmd
+    cookiecutter https://github.com/microsoft/botbuilder-python/releases/download/Templates/echo.zip
+    ```
+
+    This command creates an Echo Bot based on the Python [echo template](https://github.com/microsoft/BotBuilder-Samples/tree/master/generators/python/app/templates/echo).
+
+>[!NOTE]
+>
+> Some developers may find it useful to create Python bots in a [virtual envrionment](https://docs.python.org/3/library/venv.html). The steps below will work regardless if you're developing in a virtual environment or on your local machine.
