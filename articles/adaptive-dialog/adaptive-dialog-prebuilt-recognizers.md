@@ -304,25 +304,31 @@ For an end to end example of cross training your bot, see how to [Create a bot c
 
 #### The cross-train configuration file
 
-The following is the cross-train configuration file for the [todo bot with LUIS and QnA Maker][cs-sample-todo-bot] sample:
+The following is the general structure of a cross-train configuration file.
 
 ```json
 {
     // list each .lu file including variations per lang x locale.
     // Lang x locale is denoted using 4 letter code. e.g. it-it, fr-fr
     // Paths can either be absolute (full) paths or paths relative to this config file.
-    "./RootDialog/RootDialog.lu": {
-        // indicate if this is an .lu file for a root dialog.
-        "rootDialog": true,
+    "<path-of-language-file-to-train>": {
+        "rootDialog": <whether-this-is-an-.lu-file-for-a-root-dialog>,
         // list of triggers within that dialog
         "triggers": {
             // Key is name of intent within the .lu file (in this case RootDialog.lu)
             // Value is the path to the child dialog's .lu file.
-            "AddItem": "./AddToDoDialog/AddToDoDialog.lu",
-            "DeleteItem": "./DeleteToDoDialog/DeleteToDoDialog.lu",
-            "ViewItem": "./ViewToDoDialog/ViewToDoDialog.lu",
-            "GetUserProfile": "./GetUserProfileDialog/GetUserProfileDialog.lu"
+            "<intent-name-1>": "<path-of-associated-child-dialog's-language-file>",
+            "<intent-name-2>": "<path-of-associated-child-dialog's-language-file>"
+            // And so on.
+        },
+    "<path-of-additional-language-file-to-train>": {
+        "rootDialog": <whether-this-is-an-.lu-file-for-a-root-dialog>,
+        // list of triggers within that dialog
+        "triggers": {
+            "<intent-name-1>": "<path-of-associated-child-dialog's-language-file>",
+            "<intent-name-2>": "<path-of-associated-child-dialog's-language-file>"
         }
+        // And so on.
     }
 }
 ```
