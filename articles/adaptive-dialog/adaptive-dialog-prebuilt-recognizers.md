@@ -284,7 +284,7 @@ var adaptiveDialog = new AdaptiveDialog()
 
 ### Cross training your LUIS and QnA models
 
-To gain the full benefits of the cross-trained recognizer set, [cross train][cross-train-concepts] your `.lu` and `.qna` files. The Bot Framework Command Line Interface (BF CLI) tool provides a command to automate this process, the [luis:cross-train][bf-luiscross-train] and [qnamaker:cross-train][qnamaker-cross-train] commands. Running the cross-train command will update all `.lu` and `.qna` files in the directory and sub-directories specified.
+To gain the full benefits of the cross-trained recognizer set, [cross train][cross-train-concepts] your `.lu` and `.qna` files. The Bot Framework Command Line Interface (BF CLI) tool provides a command to automate this process, the [luis:cross-train][bf-luiscross-train] and [qnamaker:cross-train][qnamaker-cross-train] commands. Running the cross-train command will create copies of the `.lu` and `.qna` files, make the required updates, then save to the specified directory.
 
 > [!TIP]
 >
