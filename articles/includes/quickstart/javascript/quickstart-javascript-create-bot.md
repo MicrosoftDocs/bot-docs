@@ -1,6 +1,6 @@
 <!-- Include under ## Create a bot H2 header -->
 
-1. Then, use the generator to create an echo bot.
+1. Use the generator to create an echo bot.
 
    ```bash
    yo botbuilder
