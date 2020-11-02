@@ -72,19 +72,8 @@ You will learn how to:
 
 ## Start the Emulator and connect your bot
 
-# [C#](#tab/csharp)
+[!INCLUDE [dotnet quickstart start emulator](~/includes/quickstart/common/quickstart-start-emulator.md)]
 
-[!INCLUDE [dotnet quickstart start emulator](~/includes/quickstart/dotnet/quickstart-dotnet-start-emulator.md)]
-
-# [JavaScript](#tab/javascript)
-
-[!INCLUDE [javascript quickstart emulator](~/includes/quickstart/javascript/quickstart-javascript-start-emulator.md)]
-
-# [Python](#tab/python)
-
-[!INCLUDE [python quickstart emulator](~/includes/quickstart/python/quickstart-python-start-emulator.md)]
-
----
 
 ## Next steps
 
