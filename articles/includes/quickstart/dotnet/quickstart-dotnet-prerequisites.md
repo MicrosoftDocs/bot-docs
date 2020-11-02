@@ -19,11 +19,11 @@ To add the bot templates to Visual Studio, download and install the [Bot Framewo
 
 # [Visual Studio Code / Command Line](#tab/vc+cl)
 
-### Visual Studio Code and Command Line templates
-
 .NET Core Templates will help you to quickly build new conversational AI bots using Bot Framework v4. As of May 2020, these templates and the code they generate require .NET Core 3.1.
 
-In a console window, perform the steps shown below.
+To install the Bot Framework templates:
+
+1. Open a console window.
 
 1. Install [.NET Core SDK](https://dotnet.microsoft.com/download) version 3.1 or higher.
 1. You can use this command to determine which version of the .NET Core command-line interface you have installed.
