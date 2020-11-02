@@ -163,7 +163,7 @@ When a user converses with the bot, the `CreateCrossTrainedRecognizer` recognize
 
 Cross training a bot with both LUIS and QnA Maker models enables global interruptions as described previously in [LUIS to LUIS cross training](#luis-to-luis-cross-training). This also applies to QnA Maker. For example:
 
-- when the root dialog's LUIS model is cross trained with the root dialogs QnA Maker model, it creates the `DeferToRecognizer_qna` intent in RootDialog.lu, with all questions listed as utterances.
+- When the root dialog's LUIS model is cross trained with the root dialog's QnA Maker model, the command creates the `DeferToRecognizer_qna` intent in RootDialog.lu, with all questions listed as utterances.
 - Next, when the root dialog's child is cross trained, it picks up those intents and in turn passes them to its child dialog and this continues until there are no more child dialogs.
 - When a user asks any question associated with RootDialog.qna when the active dialog is a child or descendant, the active dialog will not be able to respond, but because it has been cross-trained it will be aware that another dialog is able to respond and will then bubble the question up to its parent. The question in turn bubbles all the way up to the root dialog, which answers the question before returning control back to the previous conversational flow.
 
