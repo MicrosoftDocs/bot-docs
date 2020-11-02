@@ -16,6 +16,12 @@ ms.date: 10/28/2020
 
 This tutorial describes how to create a basic bot with the Bot Framework SDK. If you've already created a basic bot and have it running locally, read the [Tutorial: Deploy a basic bot](bot-builder-tutorial-deploy-basic-bot.md) article.
 
+You will learn how to:
+> [!div class="checklist"]
+> * Create a basic bot
+> * Run the bot on your local machine
+> * Test it using the Bot Framework Emulator
+
 ## Prerequisites
 
 # [C#](#tab/csharp)
