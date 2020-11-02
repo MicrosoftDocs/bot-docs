@@ -48,7 +48,7 @@ Cross training can build on and improve on the capabilities provided by interrup
 
 > [!TIP]
 >
-> If the language understanding models associated with the various adaptive dialogs in a bot are not cross trained, no utterances or questions from other dialogs will be considered unless the recognizer of the active dialog returns an unknown intent. When the models have been cross trained, utterances and questions from parent and sibling dialogs will always be considered because they are associated with a new intent created in the active dialogs language understanding model. A parent no longer must be consulted to find out if it can respond to the users input. When this new intent is returned, the Bot Framework knows to consult the parent or sibling to handle it.
+> If the language understanding models associated with the various adaptive dialogs in a bot are not cross trained, no utterances or questions from other dialogs will be considered unless the recognizer of the active dialog returns an unknown intent. When the models have been cross trained, utterances and questions from parent and sibling dialogs will always be considered because they are associated with a new intent created in the active dialog's language understanding model. A parent no longer must be consulted to find out if it can respond to the users input. When this new intent is returned, the Bot Framework knows to consult the parent or sibling to handle it.
 
 ## LUIS-to-LUIS cross training
 
