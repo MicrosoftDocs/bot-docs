@@ -5,7 +5,7 @@ keywords: overview, introduction, SDK, outline
 author: Kaiqb
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: overview
 ms.service: bot-service
 ms.date: 11/15/2019
 ---
@@ -20,15 +20,28 @@ ms.date: 11/15/2019
 
 The Bot Framework, along with the Azure Bot Service, provides tools to build, test, deploy, and manage intelligent bots, all in one place. The Bot Framework includes a modular and extensible SDK for building bots, as well as tools, templates, and related AI services. With this framework, developers can create bots that use speech, understand natural language, handle questions and answers, and more.
 
-<!-- [Azure] Bot Service - The service that accelerates the process of developing a bot. It provisions a web host with one of five bot templates that can be modified in an integrated environment. -->
-<!-- bot service - An instance created by the user using Azure Bot Service. -->
-<!-- [Microsoft] Bot Framework - The comprehensive offering to build and deploy high quality bots for users to enjoy wherever they are talking. Users can start conversations with your bot from any channel that you’ve configured your bot to work on, such as SMS, Skype, Slack, Facebook, and other popular services. -->
+<!--
+    - [Azure] Bot Service - The service that accelerates the process of developing a bot. It provisions a web host with one of five bot templates that can be modified in an integrated environment.
+    - bot service - An instance created by the user using Azure Bot Service.
+    - [Microsoft] Bot Framework - The comprehensive offering to build and deploy high quality bots for users to enjoy wherever they are talking. Users can start conversations with your bot from any channel that you’ve configured your bot to work on, such as SMS, Skype, Slack, Facebook, and other popular services.
+-->
 
 ## What is a bot?
 
 Bots provide an experience that feels less like using a computer and more like dealing with a person - or at least an intelligent robot. They can be used to shift simple, repetitive tasks, such as taking a dinner reservation or gathering profile information, on to automated systems that may no longer require direct human intervention. Users converse with a bot using text, interactive cards, and speech. A bot interaction can be a quick question and answer, or it can be a sophisticated conversation that intelligently provides access to services.
 
-Bots are a lot like modern web applications, living on the internet and use APIs to send and receive messages. What's in a bot varies widely depending on what kind of bot it is. Modern bot software relies on a stack of technology and tools to deliver increasingly complex experiences on a wide variety of platforms. However, a simple bot could just receive a message and echo it back to the user with very little code involved.
+A bot can be thought of as a web application that has a conversational interface.
+A user connects to a bot though a channel such as Facebook, Slack, or Microsoft Teams.
+
+- The bot _reasons_ about input and performs relevant tasks. This can include asking the user for additional information or accessing services on behalf of the user.
+- The bot performs recognition on the user's input to interpret what the user is asking for or saying.
+- The bot generates responses to send to the user to communicate what the bot is doing or has done.
+- Depending on how the bot is configured and how it is registered with the channel, users can interact with the bot through text or speech, and the conversation might include images and video.
+
+> [!div class="mx-imgBorder"]
+> ![A remote bot interacts with a user on a device via text, speech, images, or video](./media/architecture/what-is-a-bot.png)
+
+Bots are a lot like modern web applications, living on the internet and using APIs to send and receive messages. What's in a bot varies widely depending on what kind of bot it is. Modern bot software relies on a stack of technology and tools to deliver increasingly complex experiences on a wide variety of platforms. However, a simple bot could just receive a message and echo it back to the user with very little code involved.
 
 Bots can do the same things other types of software can do - read and write files, use databases and APIs, and do the regular computational tasks. What makes bots unique is their use of mechanisms generally reserved for human-to-human communication.
 
