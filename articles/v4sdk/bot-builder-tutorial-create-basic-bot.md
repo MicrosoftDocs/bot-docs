@@ -24,6 +24,9 @@ You will learn how to:
 
 ## Prerequisites
 
+!INCLUDE [prerequisites](~/includes/quickstart/quickstart-prerequisites.md)]
+
+<!--
 # [C#](#tab/csharp)
 
 [!INCLUDE [dotnet prerequisites](~/includes/quickstart/dotnet/quickstart-dotnet-prerequisites.md)]
@@ -37,6 +40,7 @@ You will learn how to:
 [!INCLUDE [python prerequisites](~/includes/quickstart/python/quickstart-python-prerequisites.md)]
 
 ---
+-->
 
 ## Create a bot
 
