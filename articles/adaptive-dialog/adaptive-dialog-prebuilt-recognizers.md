@@ -312,7 +312,8 @@ The following is the general structure of a cross-train configuration file.
     // Lang x locale is denoted using 4 letter code. e.g. it-it, fr-fr
     // Paths can either be absolute (full) paths or paths relative to this config file.
     "<path-of-language-file-to-train>": {
-        "rootDialog": <whether-this-is-an-.lu-file-for-a-root-dialog>,
+        // indicate if this is an .lu file for the root dialog.
+        "rootDialog": <true-or-false>,
         // list of triggers within that dialog
         "triggers": {
             // Key is name of intent within the .lu file (in this case RootDialog.lu)
@@ -322,7 +323,8 @@ The following is the general structure of a cross-train configuration file.
             // And so on.
         },
     "<path-of-additional-language-file-to-train>": {
-        "rootDialog": <whether-this-is-an-.lu-file-for-a-root-dialog>,
+        // indicate if this is an .lu file for the root dialog.
+        "rootDialog": <true-or-false>,
         // list of triggers within that dialog
         "triggers": {
             "<intent-name-1>": "<path-of-associated-child-dialog's-language-file>",
@@ -334,6 +336,50 @@ The following is the general structure of a cross-train configuration file.
 ```
 
 In the triggers section of the cross-train configuration file, list each intent in the root dialog along with the `.lu` file it points to. You only need to list the `.lu` files, `.qna` files will be cross trained as long as they are in the same directory with the same filename, for example _AddToDoDialog.qna_.
+
+For example, a bot with the following dialog structure:
+
+![dialog structure diagram](./media/dialog-structure.png)
+
+With the following directory structure:
+
+![directory structure diagram](./media/folder-structure.png)
+
+Would have a config file in the **Dialogs** directory that might look similar to this:
+
+```json
+{
+    "./rootDialog/rootDialog.lu": {
+        "rootDialog": true,
+        "triggers": {
+            "DialogA_intent": "./DialogA/DialogA.lu",
+            "DialogB_intent": "./DialogB/DialogB.lu"
+        }
+    },
+    "./DialogA/DialogA.lu": {
+        "triggers": {
+            "DialogA1_intent": "./DialogA/DialogA1/DialogA1.lu",
+            "DialogA2_intent": "./DialogA/DialogA2/DialogA2.lu",
+			"Intent-A-1": "",
+			"Intent-A-2": ""
+        }
+    },
+    "./DialogA/DialogA1/DialogA1.lu": {
+        "triggers": {
+            "DialogA1.1_intent": "./DialogA/DialogA1/DialogA1.1.lu",
+            "DialogA1.2_intent": "./DialogA/DialogA1/DialogA1.2.lu",
+        }
+    },
+    "./DialogB/DialogB.lu": {
+        "triggers": {
+            "DialogB1_intent": "./DialogB/DialogB1/DialogB1.lu",
+        }
+    }
+}
+
+```
+
+In the above JSON file, when the value portion of the key / value pair is blank, it refers to an intent that does not result in a new container adaptive dialog, but instead triggers an action associated with the specified `OnIntent` trigger.
 
 > [!TIP]
 >

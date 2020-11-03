@@ -124,11 +124,11 @@ To enable this capability, _cross train_ your `.lu` and `.qna` files to include 
 
 Before creating your LUIS applications and QnA Maker knowledge base, you need to _cross train_ your `.lu` and `.qna` files to include the information required by your bot's recognizer to determine whether the LUIS or the QnA Maker response is best suited for the user.
 
-For each adaptive dialog that has an associated `.lu` and `.qna` file, the following updates are made with cross training these files:
+For each adaptive dialog that has an associated `.lu` and `.qna` file, the following updates are made when cross training these files:
 
-1. In lu files a new intent named: `DeferToRecognizer_qna_<dialog-file-name>` is required. Each question and question variation from the corresponding `.qna` file becomes an utterance associated with that new intent.<!-- Answers are not copied to the `.lu` file from the `.qna` file.-->
+1. In `.lu` files, a new intent named `DeferToRecognizer_qna_<dialog-file-name>` is added. Each question and question variation from the corresponding `.qna` file becomes an utterance associated with that new intent.<!-- Answers are not copied to the `.lu` file from the `.qna` file.-->
 
-1. In qna files a new answer named: `intent=DeferToRecognizer_luis_<dialog-file-name>` is required, along with each utterance from every intent in the corresponding `.lu` file. These utterances become questions associated with that answer. Additionally, all utterances from any referenced `.lu` files also become questions associated with that answer.
+1. In `.qna` files, a new answer named `intent=DeferToRecognizer_luis_<dialog-file-name>` is added, along with each utterance from every intent in the corresponding `.lu` file. These utterances become questions associated with that answer. Additionally, all utterances from referenced `.lu` files also become questions associated with that answer.
 
 When a user converses with the bot, the `CreateCrossTrainedRecognizer` recognizer sends that user input to both LUIS and the QnA Maker knowledge base to be processed. The following table shows the matrix of possible responses and the resulting action taken by the bot.
 
@@ -149,7 +149,7 @@ When a user converses with the bot, the `CreateCrossTrainedRecognizer` recognize
 
 ### Cross train multiple LUIS and QnA Maker models
 
-Cross training a bot with both LUIS and QnA Maker models enables global interruptions as described previously in [LUIS to LUIS cross training](#luis-to-luis-cross-training). This also applies to QnA Maker. For example:
+Cross training a bot with both LUIS and QnA Maker models improves on global interruptions as described previously in [LUIS to LUIS cross training](#luis-to-luis-cross-training). This also applies to QnA Maker. For example:
 
 - When the root dialog's LUIS model is cross trained with the root dialog's QnA Maker model, the command creates the `DeferToRecognizer_qna` intent in RootDialog.lu, with all questions listed as utterances.
 - Next, when the root dialog's child is cross trained, it picks up those intents and in turn passes them to its child dialog and this continues until there are no more child dialogs.

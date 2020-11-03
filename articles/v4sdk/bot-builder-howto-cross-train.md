@@ -15,9 +15,9 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-This how to article will walk you through the steps required to create a bot that integrates the capabilities of both [LUIS][luis] and [QnA Maker][qnamaker] together in each of your adaptive dialogs enabling each to determine the best possible response to the user, using [language generation][language-generation], regardless of which dialog is active.
+This how to article describes the steps required to create a bot that integrates the capabilities of both [LUIS][luis] and [QnA Maker][qnamaker] together in each of your adaptive dialogs enabling each to determine the best possible response to the user, using [language generation][language-generation], regardless of which dialog is active.
 
-Integrating the capabilities of both LUIS and QnA Maker requires the use of either the `luis:cross-train` or `qnamaker:cross-train` CLI command to _cross-train_ your `.lu` and `.qna` files, as well as using [cross-trained-recognizer-set-concept][cross-trained-recognizer-set-concept] as the adaptive dialogs recognizer.
+Integrating the capabilities of both LUIS and QnA Maker requires the use of either the `luis:cross-train` or `qnamaker:cross-train` CLI command to _cross-train_ your `.lu` and `.qna` files, as well as using the [cross-trained recognizer set][cross-trained-recognizer-set-concept] as the adaptive dialogs recognizer.
 
 ## Prerequisites
 
