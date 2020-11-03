@@ -11,6 +11,8 @@ ms.date: 12/13/2017
 
 # Integrate your bot with a web browser
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 Some scenarios require more than just a bot to fulfill a requirement. 
 A bot may need to send the user to a web browser to complete a task and then resume the conversation with the user after the task has been completed. 
 

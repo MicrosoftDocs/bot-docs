@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Skills overview
 
-[!INCLUDE [applies-to-v4](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 <!-- Value prop: why skills -->
 Starting with version 4.7 of the Bot Framework SDK, you can extend a bot using another bot (a skill).

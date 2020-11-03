@@ -12,6 +12,8 @@ ms.date: 12/13/2017
 
 # Design a bot's first user interaction
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 ## First impressions matter
 
 The very first interaction between the user and bot is critical to the user experience. When designing your bot, keep in mind that there is more to that first message than just saying "hi." When you build an app, you design the first screen to provide important [navigation](bot-service-design-navigation.md) cues. Users should intuitively understand things such as where the menu is located and how it works, where to go for help, what the privacy policy is, and so on. When you design a bot, the user's first interaction with the bot should provide that same type of information. 

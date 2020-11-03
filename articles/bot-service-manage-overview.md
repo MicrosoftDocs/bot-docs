@@ -12,7 +12,7 @@ ms.date: 08/2/2020
 
 # Manage a bot
 
-[!INCLUDE [applies-to-both](includes/applies-to-both.md)]
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
 In your browser, navigate to the [Azure portal](https://ms.portal.azure.com/). Select your resource application, such as a **Bot Channels Registration**. On the left panel you'll see the sections described below.
 

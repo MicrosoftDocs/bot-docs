@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Use Direct Line Speech in your bot
 
-[!INCLUDE [applies-to-v4](includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
 Direct Line Speech uses a new WebSocket based streaming capability of Bot Framework to exchange messages between the Direct Line Speech channel and your bot. After enabling the Direct Line Speech channel in the Azure Portal, you will need to update your bot to listen for and accept these WebSocket connections. These instructions explain how to do this.
 
@@ -122,11 +122,10 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 }
 
 ```
+
 The remainder of your bot code stays the same!
 
-
-
-Step 4: Optionally set the Speak field on Activities to customize what is spoken to the user
+## Step 4: Optionally set the Speak field on Activities to customize what is spoken to the user
 
 By default, all messages sent through Direct Line Speech to the user will be spoken.
 

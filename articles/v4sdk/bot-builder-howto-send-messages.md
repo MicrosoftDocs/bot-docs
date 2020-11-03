@@ -13,13 +13,13 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Send and receive text message
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 The primary way your bot will communicate with users, and likewise receive communication, is through **message** activities. Some messages may simply consist of plain text, while others may contain richer content such as cards or attachments. Your bot's turn handler receives messages from the user, and you can send responses to the user from there. The turn context object provides methods for sending messages back to the user. This article describes how to send simple text messages.
 
 Markdown is supported for most text fields, but support may vary by channel.
 
-For a running bot sending and receiving messages, follow the quickstarts at the top of the table of contents or check out the [article on how bots work](bot-builder-basics.md#bot-structure), which also links to simple samples available for you to run yourself.
+For a running bot sending and receiving messages, follow the quickstarts at the top of the table of contents or check out the [article on how bots work](bot-builder-basics.md#bot-application-structure), which also links to simple samples available for you to run yourself.
 
 ## Send a text message
 

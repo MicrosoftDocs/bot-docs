@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Implement custom storage for your bot
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 A bot's interactions fall into three areas: firstly, the exchange of Activities with the Azure Bot Service, secondly,
 the loading and saving of dialog state with a Store, and finally any other back-end services the bot needs to work with

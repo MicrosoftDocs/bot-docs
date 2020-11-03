@@ -6,11 +6,13 @@ ms.author: arturl
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 07/20/2020
+ms.date: 10/21/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
 # Transition conversations from bot to human
+
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
 Regardless of how much artificial intelligence a bot possesses, there may still be times when it needs to hand off the conversation to a human being. This can be necessary either because the bot does not understand the user (because of an AI limitation), or if the request cannot be automated and requires a human action. In such cases the bot should recognize when it needs to hand off and provide the user with a smooth transition.
 
@@ -73,7 +75,7 @@ The following are the handoff initiation event fields:
         new Attachment {
             Content = transcript,
             ContentType = "application/json",
-            Name = "Trasnscript",
+            Name = "Transcript",
         }};
     ```
 

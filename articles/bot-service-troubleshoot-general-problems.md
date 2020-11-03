@@ -10,11 +10,14 @@ ms.date: 02/20/2020
 ---
 
 # Troubleshoot general
+
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 These frequently asked questions can help you to troubleshoot common bot development or operational issues.
 
 ## How can I troubleshoot issues with my bot?
 
-1. Debug your bot's source code with [Visual Studio Code](debug-bots-locally-vscode.md) or [Visual Studio](https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger?view=vs-2017).
+1. Debug your bot's source code with [Visual Studio Code](debug-bots-locally-vscode.md) or [Visual Studio](https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger).
 1. Test your bot using the [emulator](bot-service-debug-emulator.md) before you deploy it to the cloud.
 1. Deploy your bot to a cloud hosting platform such as Azure and then test connectivity to your bot by using the built-in web chat control on your bot's dashboard in the <a href="https://portal.azure.com" target="_blank">Azure Portal</a>. If you encounter issues with your bot after you deploy it to Azure, you might consider using this blog article: [Understanding Azure troubleshooting and support](https://azure.microsoft.com/blog/understanding-azure-troubleshooting-and-support/).
 1. Rule out [authentication][TroubleshootingAuth] as a possible issue.
@@ -93,7 +96,7 @@ Bots in development on Kik are allowed 50 subscribers. After 50 unique users hav
 
 ## How can I use authenticated services from my bot?
 
-For Azure Active Directory authentication, see the adding authentication [V3](https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-authentication?view=azure-bot-service-3.0&tabs=csharp) | [V4](https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-authentication?view=azure-bot-service-4.0&tabs=csharp).
+For Azure Active Directory authentication, see the [Add authentication to your bot](v4sdk/bot-builder-authentication.md) tutorial.
 
 > [!NOTE]
 > If you add authentication and security functionality to your bot, you should ensure that the patterns you implement in your code comply with the security standards that are appropriate for your application.
@@ -116,62 +119,6 @@ To fix this, set the `from` property in each message that the Direct Line client
 
 ## What causes the Direct Line 3.0 service to respond with HTTP status code 502 "Bad Gateway"?
 Direct Line 3.0 returns HTTP status code 502 when it tries to contact your bot but the request does not complete successfully. This error indicates that either the bot returned an error or the request timed out. For more information about errors that your bot generates, go to the bot's dashboard within the <a href="https://portal.azure.com" target="_blank">Azure Portal</a> and click the "Issues" link for the affected channel. If you have Application Insights configured for your bot, you can also find detailed error information there.
-
-::: moniker range="azure-bot-service-3.0"
-
-## Where is conversation state stored?
-
-Data in the user, conversation, and private conversation property bags is stored using the Connector's `IBotState` interface. Each property bag is scoped by the bot's ID. The user property bag is keyed by user ID, the conversation property bag is keyed by conversation ID, and the private conversation property bag is keyed by both user ID and conversation ID.
-
-If you use the Bot Framework SDK for .NET or the Bot Framework SDK for Node.js to build your bot, the dialog stack and dialog data will both automatically be stored as entries in the private conversation property bag. The C# implementation uses binary serialization, and the Node.js implementation uses JSON serialization.
-
-If you want to store this data within your data centers, you can provide a custom implementation of the state service. This can be done at least two ways:
-
-* Use botbuilder-azure packages.
-* Use the REST layer to provide a custom `IBotState` service.
-* Use the Builder interfaces in the language (C#, JavaScript, or Python) layer.
-
-## What causes an error with HTTP status code 412 "Precondition Failed" or HTTP status code 409 "Conflict"?
-
-The Connector's `IBotState` service is used to store the bot data bags (i.e., the user, conversation, and private bot data bags, where the private bot data bag includes the dialog stack "control flow" state). Concurrency control in the `IBotState` service is managed by optimistic concurrency via ETags. If there is an update conflict (due to a concurrent update to a single bot data bag) during a "read-modify-write" sequence, then:
-
-* If ETags are preserved, an error with HTTP status code 412 "Precondition Failed" is thrown from the `IBotState` service. This is the default behavior in the Bot Framework SDK for .NET.
-* If ETags are not preserved (i.e., ETag is set to `\*`), then the "last write wins" policy will be in effect, which prevents the "Precondition Failed" error but risks data loss. This is the default behavior in the Bot Framework SDK for Node.js.
-
-## How can I fix "Precondition Failed" (412) or "Conflict" (409) errors?
-
-These errors indicate that your bot processed multiple messages for the same conversation at once. If your bot is connected to services that require precisely ordered messages,
-you should consider locking the conversation state to make sure messages are not processed in parallel.
-
-The Bot Framework SDK for .NET provides a mechanism (class `LocalMutualExclusion` which implements `IScope`) to
-pessimistically serialize the handling of a single conversations with an in-memory semaphore. You could extend this implementation to use a Redis lease, scoped by the conversation address.
-
-If your bot is not connected to external services or if processing messages in parallel from the same conversation is acceptable, you can add this code to ignore any collisions that occur in the Bot State API. This will allow the last reply to set the conversation state.
-
-```cs
-var builder = new ContainerBuilder();
-builder
-    .Register(c => new CachingBotDataStore(c.Resolve<ConnectorStore>(), CachingBotDataStoreConsistencyPolicy.LastWriteWins))
-    .As<IBotDataStore<BotData>>()
-    .AsSelf()
-    .InstancePerLifetimeScope();
-builder.Update(Conversation.Container);
-```
-
-## How do I version the bot data stored through the State API?
-
-> [!IMPORTANT]
-> The Bot Framework State Service API is not recommended for production environments or v4 bots, and may be fully deprecated in a future release. It is recommended that you update your bot code to use the in-memory storage for testing purposes or use one of the **Azure Extensions** for production bots. For more information, see the [Manage state data](v4sdk/bot-builder-howto-v4-state.md) topic.
-
-The State service enables you to persist progress through the dialogs in a conversation so that a user can return to a conversation with a bot later without losing their position. To preserve this, the bot data property bags that are stored via the State API are not automatically cleared when you modify the bot's code. You should decide whether or not the bot data should be cleared, based upon whether your modified code is compatible with older versions of your data.
-
-* If you want to manually reset the conversation's dialog stack and state during development of your bot, you can use the `/deleteprofile` command to delete state data. Make sure to include the leading space in this command, to prevent the channel from interpreting it.
-* After your bot has been deployed to production, you can version your bot data so that if you bump the version, the associated state data is cleared. With the Bot Framework SDK for Node.js, this can be accomplished using middleware and with the Bot Framework SDK for .NET, this can be accomplished using an `IPostToBot` implementation.
-
-> [!NOTE]
-> If the dialog stack cannot be deserialized correctly, due to serialization format changes or because the code has changed too much, the conversation state will be reset.
-
-::: moniker-end
 
 ## Why do I get an Authorization_RequestDenied exception when creating a bot?
 

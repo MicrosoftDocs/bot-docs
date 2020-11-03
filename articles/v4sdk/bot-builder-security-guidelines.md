@@ -11,6 +11,8 @@ ms.date: 07/07/2020
 
 # Bot Framework security guidelines
 
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
+
 Bots are more and more prevalent in key business areas like financial services, retail, travel, and so on. A bot might collect very sensitive data such as credit cards, SSN, bank accounts, and other personal information. So, it is important that bots are secure and protect against common threats and vulnerabilities.
 
 You can take some standard preventative measures to improve your bot's security. Some security measures are similar to ones used in other software systems, while some are specific to the Bot Framework.

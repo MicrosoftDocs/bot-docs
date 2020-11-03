@@ -14,7 +14,7 @@ ms.date: 10/30/2020
 
 [!INCLUDE [applies-to-v4](~/includes/applies-to-v4-current.md)]
 
-This article shows how to ad a Slack channel to a bot and use it as bot user in Slack. You can select one of the following choices to configure a **Slack app**:
+This article shows how to add a Slack channel to a bot. Select one of the following ways to configure the **Slack app**:
 
 - Use Azure Bot Service portal to connect your bot
 - Use the Slack adapter

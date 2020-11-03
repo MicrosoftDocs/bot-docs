@@ -2,9 +2,6 @@
   "build": {
     "content": [
       {
-        "group": "bot-service",
-        "src": ".",
-        "dest": ".",
         "files": [
           "**/*.md",
           "**/*.yml"
@@ -20,15 +17,16 @@
           "LICENSE-CODE",
           "ThirdPartyNotices",
           "v4sdk/**"
-        ]
+        ],
+        "src": ".",
+        "dest": ".",
+        "group": "bot-service"
       },
       {
-        "group": "bot-service",
         "files": [
           "**/*.md",
           "**/*.yml"
         ],
-        "src": "v4sdk",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -36,10 +34,10 @@
           "LICENSE",
           "LICENSE-CODE",
           "ThirdPartyNotices"
-        ]
+        ],
+        "src": "v4sdk",
+        "group": "bot-service"
       }
-
-
     ],
     "resource": [
       {
@@ -55,9 +53,6 @@
         ]
       },
       {
-        "group": "bot-service",
-        "src": ".",
-        "dest": ".",
         "files": [
           "**/*.png",
           "**/*.jpg",
@@ -68,11 +63,12 @@
           "**/obj/**",
           "**/includes/**",
           "v4sdk"
-        ]
+        ],
+        "src": ".",
+        "dest": ".",
+        "group": "bot-service"
       },
       {
-        "group": "bot-service",
-        "src": "v4sdk",
         "files": [
           "**/*.png",
           "**/*.jpg",
@@ -82,15 +78,18 @@
         "exclude": [
           "**/obj/**",
           "**/includes/**"
-        ]
+        ],
+        "src": "v4sdk",
+        "group": "bot-service"
       }
-
     ],
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
       "uhfHeaderId": "azure",
-      "breadcrumb_path": "/bot-framework/breadcrumb/TOC.json",
+      "archive_url": "https://docs.microsoft.com/previous-versions/azure/bot-service/index-bf-sdk",
+      "breadcrumb_path": "/azure/bot-service/breadcrumb/TOC.json",
+      "extendBreadcrumb": true,
       "author": "kaiqb",
       "brand": "azure",
       "searchScope": [
@@ -114,6 +113,11 @@
       },
       "monikerRange": {
         "v4sdk/**.md": "azure-bot-service-4.0"
+      },
+      "exclude_monikers": {
+        "**/*.md": [
+          "azure-bot-service-3.0"
+        ]
       }
     },
     "template": [],
@@ -122,9 +126,8 @@
     "groups": {
       "bot-service": {
         "dest": "bot-service",
-        "moniker_range": ">= azure-bot-service-3.0"
+        "moniker_range": ">= azure-bot-service-4.0"
       }
     }
-
   }
 }

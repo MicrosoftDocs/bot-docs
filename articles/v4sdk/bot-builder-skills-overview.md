@@ -12,8 +12,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Virtual Assistant - Skills Overview
 
-> [!NOTE]
-> This topic applies to v4 version of the SDK. 
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 ## Overview
 

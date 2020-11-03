@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Inputs in adaptive dialogs - reference guide
 
-[!INCLUDE [applies-to-v4](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 The Bot Framework SDK defines a variety of input dialogs for collecting and validating user input.
 

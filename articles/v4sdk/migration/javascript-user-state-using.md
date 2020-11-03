@@ -14,6 +14,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Using JavaScript v3 user state in a v4 bot
 
+[!INCLUDE [applies-to-v4](../../includes/applies-to-v4-current.md)]
+
 This article shows an example of how a v4 bot can perform read, write, and delete operations on v3 user state information.
 
 The code sample can be found [here](https://github.com/microsoft/BotBuilder-Samples/tree/master/MigrationV3V4/Node/V4V3-user-state-adapter-sample-bot).

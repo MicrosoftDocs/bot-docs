@@ -13,6 +13,8 @@ ms.date: 12/13/2017
 
 # Design bot navigation
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 Users can navigate websites using breadcrumbs, apps using menus, and web browsers using buttons like **forward** and **back**. However, none of these well-established navigation techniques entirely address navigation requirements within a bot. As discussed [previously](~/bot-service-design-conversation-flow.md#handle-interruptions), users often interact with bots in a non-linear fashion, making it challenging to design bot navigation that consistently delivers a great user experience. 
 
 Consider the following dilemmas:
