@@ -176,7 +176,7 @@ As mentioned above, the turn context provides the mechanism for the bot to send 
 
 ## Bot templates
 
-You need to choose the application layer use for your app; however, the Bot Framework has templates and samples for ASP.NET (C#), restify (JavaScript), and aiohttp (Python). The documentation is written assuming you use one of these platforms, but the SDK does not require it of you.
+You need to choose the application layer use for your app; however, the Bot Framework has templates and samples for ASP.NET (C#), restify (JavaScript), and aiohttp (Python). The documentation is written assuming you use one of these platforms, but the SDK does not require it of you. See the quickstarts ([C#](../dotnet/bot-builder-dotnet-sdk-quickstart.md), [JavaScript](../javascript/bot-builder-javascript-quickstart.md), [Python](../python/bot-builder-python-quickstart.md)) for instructions on how to access and install the templates.
 
 A bot is a web application, and templates are provided for each language version of the SDK.
 All templates provide a default endpoint implementation and adapter.
