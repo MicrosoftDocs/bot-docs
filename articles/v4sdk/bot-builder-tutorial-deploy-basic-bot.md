@@ -31,13 +31,11 @@ You will learn how to:
 
 ## Prerequisites
 
-[!INCLUDE [deploy prerequisite](~/includes/deploy/snippet-prerequisite.md)]
+[!INCLUDE [deploy prerequisites](~/includes/deploy/snippet-prerequisite.md)]
 
 ## Prepare for deployment
 
-> [!TIP]
-> This procedure uses a ZIP file to deploy your bot. In C#, this may fail if the solution configuration at build is set to **Debug**.
-> In Visual Studio, make sure that the solution configuration is set to **Release** and perform a clean rebuild of the solution before continuing.
+This article assumes that you have a bot ready to be deployed. For information on how to create a simple echo bot, see the quick start [C# sample](~/dotnet/bot-builder-dotnet-sdk-quickstart.md), [JavaScript sample](~/javascript/bot-builder-javascript-quickstart.md) or [Python sample](~/python/bot-builder-python-quickstart.md). You can also use one of the samples provided in the [Bot Framework Samples](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md) repository.
 
 [!INCLUDE [deploy prepare intro](~/includes/deploy/snippet-prepare-deploy-intro.md)]
 
