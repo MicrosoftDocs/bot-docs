@@ -12,6 +12,8 @@ ms.date: 10/30/2020
 
 # Tutorial: Deploy a basic bot
 
+[!INCLUDE [applies-to-v4](~/includes/applies-to-v4-current.md)]
+
 This tutorial describes how to deploy a basic bot to Azure. It explains how to prepare your bot for deployment, deploy your bot to Azure, and test your bot using Web Chat.
 It would be useful if you read this article before following the steps, so that you fully understand what is involved in deploying a bot.
 
