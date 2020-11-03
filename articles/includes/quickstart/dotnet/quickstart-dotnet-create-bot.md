@@ -13,7 +13,7 @@ In Visual Studio, create a new bot project using the **Echo Bot (Bot Framework v
 Thanks to the template, your project contains all the code that's necessary to create the bot in this quickstart. You don't need any additional code to test your bot.
 
 > [!NOTE]
-> If you create a `Core` bot, you'll need a LUIS language model. (You can create a language model at [luis.ai](https://www.luis.ai)). After creating the model, update the configuration file.
+> If you create a `Core` bot, you'll need a LUIS language model. You can create a language model at [luis.ai](https://www.luis.ai). After creating the model, update the configuration file.
 
 <!--
 > [!NOTE]
