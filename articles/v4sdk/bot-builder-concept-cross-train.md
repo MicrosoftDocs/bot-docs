@@ -35,7 +35,7 @@ Cross training can build on and improve on the capabilities provided by interrup
 
 > [!TIP]
 >
-> If the language understanding models associated with the various adaptive dialogs in a bot are not cross trained, no utterances or questions from other dialogs will be considered unless the recognizer of the active dialog returns an unknown intent. When the models have been cross trained, utterances and questions from parent and sibling dialogs will always be considered because they are associated with a new intent created in the active dialogs language understanding model. A parent no longer must be consulted to find out if it can respond to the users input. When this new intent is returned, the Bot Framework knows to consult the parent or sibling to handle it.
+> If the language understanding models associated with the various adaptive dialogs in a bot are not cross trained, no utterances or questions from other dialogs will be considered unless the recognizer of the active dialog returns an unknown intent. When the models have been cross trained, utterances and questions from parent and sibling dialogs will always be considered because they are associated with a new intent created in the active dialog's language understanding model. A parent no longer must be consulted to find out if it can respond to the users input. When this new intent is returned, the Bot Framework knows to consult the parent or sibling to handle it.
 
 ## LUIS-to-LUIS cross training
 
@@ -151,9 +151,9 @@ When a user converses with the bot, the `CreateCrossTrainedRecognizer` recognize
 
 Cross training a bot with both LUIS and QnA Maker models enables global interruptions as described previously in [LUIS to LUIS cross training](#luis-to-luis-cross-training). This also applies to QnA Maker. For example:
 
-- when the root dialog's LUIS model is cross trained with the root dialogs QnA Maker model, it creates the `DeferToRecognizer_qna` intent in RootDialog.lu, with all questions listed as utterances.
-- Next, when the root dialogs child is cross trained, it picks up those intents and in turn passes them to its child dialog and this continues until there are no more child dialogs.
-- When a user asks any question associated with RootDialog.qna when the active dialog is a child or grandchild, the active dialog will not be able to respond, but because it has been cross-trained it will be aware that another dialog is able to respond and will then bubble it up to its parent, and in turn it is bubbled up to each parent all the way to the root dialog which answers the question before returning control back to the previous conversational flow.
+- When the root dialog's LUIS model is cross trained with the root dialog's QnA Maker model, the command creates the `DeferToRecognizer_qna` intent in RootDialog.lu, with all questions listed as utterances.
+- Next, when the root dialog's child is cross trained, it picks up those intents and in turn passes them to its child dialog and this continues until there are no more child dialogs.
+- When a user asks any question associated with RootDialog.qna when the active dialog is a child or descendant, the active dialog will not be able to respond, but because it has been cross-trained it will be aware that another dialog is able to respond and will then bubble the question up to its parent. The question in turn bubbles all the way up to the root dialog, which answers the question before returning control back to the previous conversational flow.
 
 The advantage of global interruptions in this scenario is the ability it provides to use a QnA Maker knowledge base associated with the root dialog to handle all questions the user may have, regardless of where they are in their conversation with the bot.
 
