@@ -1,4 +1,4 @@
-<!-- Include under ## Prerequisites H2 header -->
+<!-- Include this content under ## Prerequisites H2 header -->
 
 # [C#](#tab/csharp)
 
