@@ -1,5 +1,5 @@
 ---
-title: About bot activity handlers - Bot Service
+title: Event-driven conversations and activity handlers - Bot Service
 description: Become familiar with the bot activity handler. Learn about managing bot reasoning based on the type of activity received from a user.
 author: JonathanFingold
 ms.author: v-jofin
@@ -10,12 +10,13 @@ ms.date: 09/15/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# About activity handlers
+# Event-driven conversations using an activity handle
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-An activity handler is one way to organize the conversational logic for your bot.
-When the bot receives an activity, it has an *activity handler* that can handle that specific activity type. Under the covers, there is one base *turn handler*. All activities get routed through there. That turn handler then calls the individual activity handler for whatever type of activity it received.
+An _activity handler_ is an event-driven way to organize the conversational logic for your bot.
+Each different type or sub-type of activity represents a different type of conversational event.
+Under the covers, the bot's *turn handler* calls the individual activity handler for whatever type of activity it received.
 
 For example, if the bot receives a message activity, the turn handler would see that incoming activity and send it to the _on message activity_ activity handler. When building your bot, your bot logic for handling and responding to messages will go in this _on message activity_ handler. Likewise, your logic for handling members being added to the conversation will go in your _on members added_ handler, which is called whenever a member is added to the conversation.
 

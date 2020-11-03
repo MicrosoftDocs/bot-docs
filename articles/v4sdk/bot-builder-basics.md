@@ -89,14 +89,17 @@ When you create a bot using the SDK, you provide the code to receive the HTTP tr
 
 ### Bot logic
 
-The bot object contains the conversational reasoning or logic for a turn and exposes a turn handler. The SDK provides a few ways to organize the bot logic.
+The bot object contains the conversational reasoning or logic for a turn and exposes a _turn handler_, which is the method that can accept incoming activities from the bot adapter.
 
-- Use an [activity handler](bot-activity-handler-concept.md) and implement handlers for each activity type or sub-type your bot will recognize and react to.
-- Use a [Teams activity handler](bot-builder-basics-teams.md) to create bots that can connect to the Teams channel. (The Teams channel requires the bot to handle some channel-specific behavior.)
-- Use the [dialogs library](bot-builder-concept-dialog.md) to manage a long-running conversation with the user:
-  - Use an activity handler and a _component dialog_ for a sequential conversational model.
+The SDK provides a couple different paradigms for managing your bot logic.
+
+- _Activity handlers_ provide an event-driven model in which the incoming activity types and sub-types are the events. This can be good for bots that have limited, short interactions with the user.
+  - Use an [activity handler](bot-activity-handler-concept.md) and implement handlers for each activity type or sub-type your bot will recognize and react to.
+  - Use a [Teams activity handler](bot-builder-basics-teams.md) to create bots that can connect to the Teams channel. (The Teams channel requires the bot to handle some channel-specific behavior.)
+- The [dialogs library](bot-builder-concept-dialog.md) provides a state-based model to manage a long-running conversation with the user.
+  - Use an activity handler and a _component dialog_ for largely sequential conversations.
     See [about component and waterfall dialogs](bot-builder-concept-waterfall-dialogs.md) for more information.
-  - Use a _dialog manager_ and an _adaptive dialog_ for a flexible conversational model that can handle a wider range of user interaction. <!-- Your bot class can forward activities to the dialog manager directly or pass them through an activity handler first. -->
+  - Use a _dialog manager_ and an _adaptive dialog_ for flexible conversation flow that can handle a wider range of user interaction. <!-- Your bot class can forward activities to the dialog manager directly or pass them through an activity handler first. -->
     See the [introduction to adaptive dialogs](bot-builder-adaptive-dialog-introduction.md) for more information.
 - Implement your own bot class and provide your own logic for handling each turn. See how to [create your own prompts to gather user input](bot-builder-primitive-prompts.md) for an example of what this might look like.
 
@@ -139,8 +142,6 @@ The [managing state](bot-builder-concept-state.md) topic describes these state a
 
 ### Messaging endpoint and provisioning
 
-You need to choose the application layer use for your app; however, the Bot Framework has templates and samples for ASP.NET (C#), restify (JavaScript), and aiohttp (Python). The documentation is written assuming you use one of these platforms, but the SDK does not require it of you.
-
 Typically, your application will need a REST endpoint at which to receive messages. It will also need to provision resources for your bot in accordance with the platform you decide to use.
 
 Follow one of the quickstarts ([C#](../dotnet/bot-builder-dotnet-sdk-quickstart.md), [JavaScript](../javascript/bot-builder-javascript-quickstart.md), [Python](../python/bot-builder-python-quickstart.md)) to create and test a simple echo bot.
@@ -174,6 +175,8 @@ As mentioned above, the turn context provides the mechanism for the bot to send 
 -->
 
 ## Bot templates
+
+You need to choose the application layer use for your app; however, the Bot Framework has templates and samples for ASP.NET (C#), restify (JavaScript), and aiohttp (Python). The documentation is written assuming you use one of these platforms, but the SDK does not require it of you.
 
 A bot is a web application, and templates are provided for each language version of the SDK.
 All templates provide a default endpoint implementation and adapter.
