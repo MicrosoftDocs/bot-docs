@@ -1,13 +1,13 @@
 ---
 title: Tutorial to deploy a basic bot - Bot Service
-description: Learn how to deploy bots to Azure.
+description: Learn how to deploy bots to Azure. See the steps that are needed to prepare for deployment, deploy, and test bots.
 keywords: echo bot, deploy, azure, tutorial
 author: mmiele
 ms.author: v-mimiel
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 10/28/2020
+ms.date: 10/30/2020
 ---
 
 # Tutorial: Deploy a basic bot
@@ -17,6 +17,12 @@ It would be useful if you read this article before following the steps, so that 
 
 - If you've not created a basic bot yet, read the [Tutorial: Create  a basic bot](bot-builder-tutorial-create-basic-bot.md) article.
 - If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+
+You will learn how to:
+> [!div class="checklist"]
+> * Prepare a basic bot for deployment
+> * Deploy the bot to Azure
+> * Test it using Web Chat
 
 > [!IMPORTANT]
 > Make sure you are using the latest version of the [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest&preserve-view=true). If you are using an Azure CLI version older than [2.2.0](https://github.com/MicrosoftDocs/azure-docs-cli/blob/master/docs-ref-conceptual/release-notes-azure-cli.md#march-10-2020), you will encounter errors of CLI commands deprecation. Also, do not mix Azure CLI deployment shown in this article with Azure portal deployment.
@@ -73,7 +79,7 @@ When creating the bot application service, you can deploy your bot in a new or i
 
 [!INCLUDE [zip up code](~/includes/deploy/snippet-zip-code.md)]
 
-## Deploy code to Azure
+## Deploy bot to Azure
 
 [!INCLUDE [deploy code to Azure](~/includes/deploy/snippet-deploy-code-to-az.md)]
 

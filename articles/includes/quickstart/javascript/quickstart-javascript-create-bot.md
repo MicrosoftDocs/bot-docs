@@ -1,27 +1,6 @@
 <!-- Include under ## Create a bot H2 header -->
 
-1. Open a terminal or elevated command prompt.
-
-1. Switch to the directory for your JavaScript bots. Create it first if you don't already have one.
-
-   ```bash
-   mkdir myJsBots
-   cd myJsBots
-   ```
-
-1. Ensure your version of npm is up to date.
-
-   ```bash
-   npm install -g npm
-   ```
-
-1. Next, install or update Yeoman and the generator for JavaScript. (Yeoman is a tool for creating applications. For more information, see [yeoman.io](https://yeoman.io).)
-
-   ```bash
-   npm install -g yo generator-botbuilder
-   ```
-
-1. Then, use the generator to create an echo bot.
+1. Use the generator to create an echo bot.
 
    ```bash
    yo botbuilder
