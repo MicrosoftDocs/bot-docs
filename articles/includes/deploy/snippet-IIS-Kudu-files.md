@@ -1,5 +1,5 @@
 
-You need to prepare your project files before you can deploy your C#, Javascript, or Typescript bot. See the Python information if you need to prepare the project files before deploying your Python bot.  
+You need to prepare your project files before you can deploy your C#, Javascript, or Typescript bot. See the Python information if you need to prepare the project files before deploying your Python bot.
 
 <!-- **C# bots** -->
 ##### [C#](#tab/csharp)
@@ -30,12 +30,12 @@ az bot prepare-deploy --code-dir "." --lang Typescript
 
 This command generates a `web.config` file in your project folder.
 
-<!-- **TPython bots** -->
-##### [Python](#tab/Python)
+<!-- **Python bots** -->
+##### [Python](#tab/python)
 
 If you don't have any additional dependencies you can skip this and continue to step 5.2.
 
-If you're using a dependency and package manager you need to convert your dependencies list to a `requirements.txt` file and add it to the folder that contains `app.py`. This is necessary because dependency installation happens on the server side for Python bots, not locally like it does for bots in other languages. The files in `deploymentTemplates` look for `requirements.txt`, and without the file your dependencies won't be installed. 
+If you're using a dependency and package manager you need to convert your dependencies list to a `requirements.txt` file and add it to the folder that contains `app.py`. This is necessary because dependency installation happens on the server side for Python bots, not locally like it does for bots in other languages. The files in `deploymentTemplates` look for `requirements.txt`, and without the file your dependencies won't be installed.
 
 
 ---
