@@ -7,7 +7,7 @@ ms.author: arturl
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 10/19/2020
+ms.date: 10/29/2020
 ---
 
 # Connect a bot to Slack
