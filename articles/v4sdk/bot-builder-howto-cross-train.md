@@ -277,7 +277,7 @@ The qnamaker configuration file is a JSON file that can contain any valid `qnama
 }
 ```
 
-Once created all you need to do is reference it in your `qnamaker:build` command, for example:
+Once created, all you need to do is reference it in your `qnamaker:build` command, for example:
 
 ``` cli
 bf qnamaker:build --qnaConfig qnaConfig.json
