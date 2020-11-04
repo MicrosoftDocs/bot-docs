@@ -35,11 +35,7 @@ You will learn how to:
 
 ## Prepare for deployment
 
-This article assumes that you have a bot ready to be deployed. For information on how to create a simple echo bot, see one of the following quick start articles applicable to your case:
-
-- [Create a bot with the Bot Framework SDK for .NET](~/dotnet/bot-builder-dotnet-sdk-quickstart.md)
-- [Create a bot with the Bot Framework SDK for JavaScript](~/javascript/bot-builder-javascript-quickstart.md)
-- [Create a bot with the Bot Framework SDK for Python](~/python/bot-builder-python-quickstart.md)
+This article assumes that you have a bot ready to be deployed. For information on how to create a simple echo bot, [Tutorial: Create a basic bot](bot-builder-tutorial-create-basic-bot.md)
 
 You can also use one of the samples provided in the [Bot Framework Samples](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md) repository.
 
