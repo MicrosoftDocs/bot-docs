@@ -1,8 +1,7 @@
-
-<!-- Include under ## Create a bot H2 header -->
+<!-- Include under "Create a bot" header in the files:
+bot-builder-tutorial-create-basic-bot.md and bot-builder-dotnet-sdk-quickstart.md -->
 
 # [Visual Studio](#tab/vs)
-
 ### Build with Visual Studio
 
 In Visual Studio, create a new bot project using the **Echo Bot (Bot Framework v4 - .NET Core 3.1)** template. Choose **AI Bots** from the project types to show only bot templates.
