@@ -27,61 +27,21 @@ Thanks to the template, your project contains all the code that's necessary to c
 Make sure that [.NET Core 3.1](https://dotnet.microsoft.com/download) is installed.
 
 1. In Visual Studio Code, open a new terminal windows.
-1. Create a new bot project using one of the commands shown below.
+1. Create a new bot project using the following command:
 
-   1. Echo Bot
-
-      ```cmd
-         dotnet new echobot -n MyEchoBot
-      ```
-
-   1. Core Bot
-
-      ```cmd
-         dotnet new corebot -n MyCoreBot
-      ```
-
-   1. CoreBot with CoreBot.Test project
-
-      ```cmd
-         dotnet new corebot -n MyCoreBotWithTests --include-tests
-      ```
-
-   1. Empty Bot
-
-      ```cmd
-         dotnet new emptybot -n MyEmptyBot
-      ```
+   ```cmd
+      dotnet new echobot -n MyEchoBot
+   ```
 
 # [Command Line](#tab/cl)
 
 ### Build with Command Line
 
 1. Open a new terminal windows.
-1. Create a new bot project using one of the commands shown below.
+1. Create a new bot project using the following command:
 
-   1. Echo Bot
-
-      ```cmd
-         dotnet new echobot -n MyEchoBot
-      ```
-
-   1. Core Bot
-
-      ```cmd
-         dotnet new corebot -n MyCoreBot
-      ```
-
-   1. CoreBot with CoreBot.Test project
-
-      ```cmd
-         dotnet new corebot -n MyCoreBotWithTests --include-tests
-      ```
-
-   1. Empty Bot
-
-      ```cmd
-         dotnet new emptybot -n MyEmptyBot
-      ```
+   ```cmd
+      dotnet new echobot -n MyEchoBot
+   ```
 
 ---

@@ -1,6 +1,6 @@
 ---
 title: Tutorial to deploy a basic bot - Bot Service
-description: Learn how to deploy bots to Azure. See the steps that are needed to prepare for deployment, deploy, and test bots.
+description: Learn how to deploy bots to Azure. See the steps to prepare for deployment, deploy, and test bots.
 keywords: echo bot, deploy, azure, tutorial
 author: mmiele
 ms.author: v-mimiel
@@ -31,13 +31,17 @@ You will learn how to:
 
 ## Prerequisites
 
-[!INCLUDE [deploy prerequisite](~/includes/deploy/snippet-prerequisite.md)]
+[!INCLUDE [deploy prerequisites](~/includes/deploy/snippet-prerequisite.md)]
 
 ## Prepare for deployment
 
-> [!TIP]
-> This procedure uses a ZIP file to deploy your bot. In C#, this may fail if the solution configuration at build is set to **Debug**.
-> In Visual Studio, make sure that the solution configuration is set to **Release** and perform a clean rebuild of the solution before continuing.
+This article assumes that you have a bot ready to be deployed. For information on how to create a simple echo bot, see one of the following quick start articles applicable to your case:
+
+- [Create a bot with the Bot Framework SDK for .NET](~/dotnet/bot-builder-dotnet-sdk-quickstart.md)
+- [Create a bot with the Bot Framework SDK for JavaScript](~/javascript/bot-builder-javascript-quickstart.md)
+- [Create a bot with the Bot Framework SDK for Python](~/python/bot-builder-python-quickstart.md)
+
+You can also use one of the samples provided in the [Bot Framework Samples](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md) repository.
 
 [!INCLUDE [deploy prepare intro](~/includes/deploy/snippet-prepare-deploy-intro.md)]
 
