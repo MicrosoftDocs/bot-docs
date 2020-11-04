@@ -35,7 +35,7 @@ You will learn how to:
 
 ## Prepare for deployment
 
-This article assumes that you have a bot ready to be deployed. For information on how to create a simple echo bot, [Tutorial: Create a basic bot](bot-builder-tutorial-create-basic-bot.md). You can also use one of the samples provided in the [Bot Framework Samples](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md) repository.
+This article assumes that you have a bot ready to be deployed. For information on how to create a simple echo bot, see the [Tutorial: Create a basic bot](bot-builder-tutorial-create-basic-bot.md) article. You can also use one of the samples provided in the [Bot Framework Samples](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md) repository.
 
 [!INCLUDE [deploy prepare intro](~/includes/deploy/snippet-prepare-deploy-intro.md)]
 
