@@ -11,8 +11,6 @@
 - [Visual Studio 2019 or later](https://www.visualstudio.com/downloads)
 - [Bot Framework SDK v4 template for C#](https://aka.ms/bot-vsix)
 
-### Templates
-
 To add the bot templates to Visual Studio, download and install the [Bot Framework v4 SDK Templates for Visual Studio](https://aka.ms/bot-vsix) VSIX file.
 
 [!INCLUDE [dotnet vsix templates info](~/includes/vsix-templates-versions.md)]
