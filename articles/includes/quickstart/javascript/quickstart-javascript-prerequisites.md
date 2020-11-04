@@ -27,8 +27,10 @@ To install Yeoman and the Yeoman generator for Bot Framework v4:
 
 1. Install the Yeoman generator.
 Yeoman is a tool for creating applications. For more information, see [yeoman.io](https://yeoman.io).
-   ```cmd
-   npm install -g generator-botbuilder
+
+    ```cmd
+        npm install -g generator-botbuilder
+    ```
 
 > [!NOTE]
 > The install of Windows build tools listed below is only required if you use Windows as your development operating system.
