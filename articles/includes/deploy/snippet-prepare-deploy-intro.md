@@ -1,3 +1,7 @@
+---
+ Add this include file under the Prepare for deployment header
+ in the file bot-builder-tutorial-deploy-basic-bot.md
+---
 
 # [C#](#tab/csharp)
 
