@@ -26,10 +26,8 @@ This article walks you through the steps required to create a fully functional b
 - [Introduction to adaptive dialogs](bot-builder-adaptive-dialog-introduction.md)
 - [Events and triggers in adaptive dialogs](bot-builder-concept-adaptive-dialog-triggers.md)
 - [Actions in adaptive dialogs](bot-builder-concept-adaptive-dialog-actions.md)
-- [Asking for user input in adaptive dialogs](bot-builder-concept-adaptive-dialog-inputs.md)
 - [Recognizers in adaptive dialogs](bot-builder-concept-adaptive-dialog-recognizers.md)
-- [Language Generation in adaptive dialogs](bot-builder-concept-adaptive-dialog-generators.md)
-- [Memory scopes and Managing state in adaptive dialogs](bot-builder-concept-adaptive-dialog-memory-states.md)
+- [Cross training your LUIS and QnA Maker models](bot-builder-concept-cross-train.md)
 - [Handling interruptions in adaptive dialogs](bot-builder-concept-adaptive-dialog-interruptions.md)
 - [.lu file format][lu-templates]
 - [.qna file format][qna-file-format]
