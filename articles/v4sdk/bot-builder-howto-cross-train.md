@@ -163,7 +163,7 @@ The `luis:build` command will create all assets you need from your local `.lu` f
 
 For information on the additional options, see [bf luis:build][bf-luisbuild] in the BF CLI readme.
 
-Alternatively, you can include these required, as well as any of the other parameters in a configuration file and refer to them using the `--luConfig` option.
+Alternatively, you can include these required, as well as any of the other parameters, in a configuration file and refer to them using the `--luConfig` option.
 
 ### LUIS build configuration file
 
