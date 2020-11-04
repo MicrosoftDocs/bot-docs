@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 04/03/2020
+ms.date: 11/04/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -99,6 +99,8 @@ For details on using these predefined buckets, see the [state how-to article](bo
 ### Connecting to multiple databases
 
 If your bot needs to connect to multiple databases, create a storage layer for each database.
+You might choose to use multiple databases if your bot collects information that has different security, concurrency, or data location needs.
+
 For each storage layer, create the state management objects you need to support your state properties.
 
 ## State property accessors
@@ -128,6 +130,16 @@ The accessor methods are the primary way for your bot to interact with state. Ho
   - Check the changes to the property in the state cache.
   - Write that property to storage.
 
+## State in dialogs
+
+The dialogs library uses a dialog state property accessor, defined on the bot's conversation state, to retain a dialog's place in the conversation. The dialog state property also allows each dialog to store transient information in between turns.
+
+Adaptive dialogs have a more elaborate memory scope structure, which makes it easier to access configuration and recognition results, among other things. The _dialog manager_ uses the user and conversation state management objects to provide these memory scopes.
+
+For information about the dialogs library, see the [dialogs library](bot-builder-concept-dialog.md) article.
+See [about component and waterfall dialogs](bot-builder-concept-waterfall-dialogs.md) for information specific to those types of dialogs.
+See the [introduction to adaptive dialogs](bot-builder-adaptive-dialog-introduction.md) and [managing state in adaptive dialogs](bot-builder-concept-adaptive-dialog-memory-states.md) articles for information specific to adaptive dialogs.
+
 ## Saving state
 
 When you call the accessor's set method to record the updated state, that state property has not yet been saved to your persisted storage, and instead is only saved to your bot's state cache. To save any changes in the state cache to your persisted state, you must call the state management object's *save changes* method, which is available on the implementation of the bot state class mentioned above (such as user state or conversation state).
@@ -144,4 +156,3 @@ If you have some custom middleware that might update state after your turn handl
 - [Dialog state](bot-builder-concept-dialog.md#dialog-state)
 - [Write directly to storage](bot-builder-howto-v4-storage.md)
 - [Save conversation and user data](bot-builder-howto-v4-state.md)
-
