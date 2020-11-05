@@ -132,8 +132,8 @@ Once finished you will have cross-trained versions of the five `.lu` files and s
 For each `.lu` file, including `.lu` files for each locale, the build command combines all the following actions into a single command:
 
 1. Creates one LUIS model for every locale found using your existing `.lu` files.
-1. Using that model, it creates a new LUIS app in the specified Azure Cognitive Services resource if none exists, otherwise it will update the existing LUIS app.
-1. When updating an existing LUIS app, it will automatically increment the versionId and optionally delete the old version.
+1. Using that model, it creates a new (or updates an existing) LUIS app in the specified Azure Cognitive Services resource.
+   - When updating an existing LUIS app, it will automatically increment the versionId and optionally delete the old version.
 1. Trains the new or updated LUIS app, then publishes it.
 
 For a detailed explanation on how to use the `luis:build` command, see [Deploy LUIS applications using the Bot Framework luis CLI commands][luis-build].
