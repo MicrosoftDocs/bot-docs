@@ -394,7 +394,11 @@ The luis section contains all luis application IDs used by your bot. These value
 
 #### QnA Maker knowledge base IDs
 
-The `qnamaker:build` command will include one settings file, saved to the location provided as the `--out` option, that contains a list of every QnA Maker knowledge base ID that was created for each locale. The full name of this JSON file is `qnamaker.settings.<username>.<authoring-region>.json`. For example, if your logged in username is _YuuriTanaka_ and you are targeting authoring region **westus**, your filename would be **qnamaker.settings.YuuriTanaka.westus.json**. This is where you will find all the values for the `qna` section of your **appsettings.json** file.
+The `qnamaker:build` command will save a settings file to the location provided as the `--out` option. This file contains a list of every QnA Maker knowledge base ID created for each locale. The full name of this JSON file is `qnamaker.settings.<username>.<authoring-region>.json`. For example, if your logged in username is _YuuriTanaka_ and you are targeting authoring region **westus**, your filename would be **qnamaker.settings.YuuriTanaka.westus.json**. This is where you will find all the values for the `qna` section of your **appsettings.json** file.
+
+> [!IMPORTANT]
+>
+> The settings file created by the `qnamaker:build` command will contain an entry for each of the five QnA Maker models, the value for each will be the ID for the one QnA Maker KB created by the build command. Since each contain the same ID value, use any of them for the value for the  "TodoBotWithLuisAndQnA_en_us_qna" key. If you replace this single value with all five values from the qnamaker.settings file, you will get an error: "System.Exception: NOTE: QnA Maker is not configured for RootDialog."
 
 ## Testing the bot using Bot Framework Emulator
 
