@@ -43,31 +43,31 @@ The .qna file and parser support question and answer definitions.
 
 Here's the syntax of a basic question and answer definition:
 
-```qna
-	# ? Question
-	[list of question variations]
-	```
-	Answer
-	```
+~~~qna
+# ? Question
+[list of question variations]
 ```
+Answer
+```
+~~~
 
 Here's are examples of question and answer definitions:
 
-```qna
+~~~qna
 > # QnA Definitions
 ### ? who is the ceo?
-	```
-	You can change the default message if you use the QnAMakerDialog.
-	See [this link](https://docs.botframework.com/en-us/azure-bot-service/templates/qnamaker/#navtitle) for details.
-	```
+```
+You can change the default message if you use the QnAMakerDialog.
+See [this link](https://docs.botframework.com/en-us/azure-bot-service/templates/qnamaker/#navtitle) for details.
+```
 
 
 ### ? How do I programmatically update my KB?
-	```
-	You can use our REST apis to manage your KB.
-	\#1. See here for details: https://westus.dev.cognitive.microsoft.com/docs/services/58994a073d9e04097c7ba6fe/operations/58994a073d9e041ad42d9baa
-	```
 ```
+You can use our REST apis to manage your KB.
+\#1. See here for details: https://westus.dev.cognitive.microsoft.com/docs/services/58994a073d9e04097c7ba6fe/operations/58994a073d9e041ad42d9baa
+```
+~~~
 
 Note that the `markdown` type identifier for an `answer` is optional.
 
@@ -75,13 +75,13 @@ Note that the `markdown` type identifier for an `answer` is optional.
 
 You can add multiple questions to the same answer by simply adding variations to questions.
 
-```qna
+~~~qna
 ### ? Aren't you feeling happy today?
 - Feeling cheerful?
-	```markdown
-		I'm quite happy, thank you.
-	```
+```markdown
+I'm quite happy, thank you.
 ```
+~~~
 
 ## QnAMaker Filters
 
@@ -97,16 +97,16 @@ Use the following syntax to add filters:
 
 Here's an example of how a filter could be used:
 
-```qna
+~~~qna
 ### ? Where can I get coffee?
 - I need coffee
 
 **Filters:**
 - location = seattle
 
-    ```.markdown
-    You can get coffee in our Seattle store at 1 pike place, Seattle, WA
-    ```
+```.markdown
+You can get coffee in our Seattle store at 1 pike place, Seattle, WA
+```
 
 ### ? Where can I get coffee?
 - I need coffee
@@ -114,10 +114,10 @@ Here's an example of how a filter could be used:
 **Filters:**
 - location = portland
 
-    ```.markdown
-    You can get coffee in our Portland store at 52 marine drive, Portland, OR
-    ```
+```.markdown
+You can get coffee in our Portland store at 52 marine drive, Portland, OR
 ```
+~~~
 
 <!---
 ## QnA Maker alterations
@@ -136,7 +136,7 @@ $botframework : qna-alterations=
 - bot framework
 - Microsoft bot framework
 ```
---> 
+-->
 
 ## QnA Maker PDF file ingestion
 
@@ -219,7 +219,7 @@ Note that any information explicitly passed in via CLI arguments will override i
 
 Multiturn content is represented in .qna format using Markdown link notation. Links are specified using the following way:
 
-```
+```qna
 - [display text](#<ID or question>)
 ```
 
@@ -239,26 +239,26 @@ The first QnA pair that has the link text as a `question` will be added as the p
 
 When you're directly using a question, use Markdown convention and replace spaces with hyphens (for example, use `#?when-is-the-portland-store-open` instead of `#?when is the portland store open`). The parser will do its best to find the link.
 
-```qna
+~~~qna
 # ?store hours
-	```
-		Most our stores are open M-F 9AM-10PM.
-	```
+```
+Most our stores are open M-F 9AM-10PM.
+```
 **Prompts:**
 - [Seattle store](#?seattle)
 - [Portland store](#?when-is-the-portland-store-open)
 
 # ?seattle
-	```
-		The Seattle store is open M-F 9AM-10PM.
-	```
+```
+The Seattle store is open M-F 9AM-10PM.
+```
 
 # ?when is the portland store open
 - portland store hours
-	```
-		The Portland store is open 24/7.
-	```
 ```
+The Portland store is open 24/7.
+```
+~~~
 
 Note that the link will not actually render as a clickable link in most Markdown renderers.
 
@@ -266,11 +266,11 @@ Note that the link will not actually render as a clickable link in most Markdown
 
 Assign IDs for each prompt with a number. You can see in the example below the prompt for each store has been assigned a different numeric value.
 
-```qna
+~~~qna
 # ?store hours
-	```
-		Most our stores are open M-F 9AM-10PM.
-	```
+```
+Most our stores are open M-F 9AM-10PM.
+```
 **Prompts:**
 - [Seattle store](#1)
 - [Portland store](#2)
@@ -278,18 +278,18 @@ Assign IDs for each prompt with a number. You can see in the example below the p
 <a id = "1"></a>
 
 # ?seattle
-	```
-		The Seattle store is open M-F 9AM-10PM.
-	```
+```
+The Seattle store is open M-F 9AM-10PM.
+```
 
 <a id = "2"></a>
 
 # ?when is the portland store open
 - portland store hours
-	```
-		The Portland store is open 24/7.
-	```
 ```
+The Portland store is open 24/7.
+```
+~~~
 
 ## Additional Resources
 - See [.lu file format](bot-builder-lu-file-format.md) for information about the .lu file format.
