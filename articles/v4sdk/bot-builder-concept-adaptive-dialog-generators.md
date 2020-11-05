@@ -53,7 +53,7 @@ A simple response template includes one or more variations of text that are used
 
 Here's an example of a simple response template with two variations:
 
-```.lg
+```lg
 > Greeting template with 2 variations.
 # GreetingPrefix
 - Hi
@@ -72,7 +72,7 @@ The if-else template lets you build a template that picks a collection based on 
 
 Here's an example of an if-else conditional response template:
 
-```.lg
+```lg
 > time of day greeting reply template with conditions.
 # timeOfDayGreeting
 - IF: ${timeOfDay == 'morning'}
@@ -90,7 +90,7 @@ The switch template lets you design a template that matches an expression's valu
 
 Here's an example of a switch conditional response template:
 
-```.lg
+```lg
 # TestTemplate
 - SWITCH: ${condition}
 - CASE: ${case-expression-1}
@@ -107,7 +107,7 @@ Structured response templates let you define a complex structure that supports m
 
 Here's the definition of a structured response template:
 
-```.lg
+```lg
 # TemplateName
 > this is a comment
 [Structure-name

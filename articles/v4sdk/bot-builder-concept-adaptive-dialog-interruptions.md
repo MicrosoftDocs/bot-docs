@@ -190,7 +190,7 @@ Or a travel bot asking for the users departure airport and the user responds wit
 
 Flexible entity extraction enables you to handle these situations gracefully. To do this you will need to define intents with specific utterances in your `.lu` files that you would expect a user to enter, for the first example above, the following template defines the `getUserProfile` intent with a list of possible utterances that assign the user entered values into the `@firstName` and `@userAge` variables:
 
-```.lu
+```lu
 # getUserProfile
     - {userName=vishwac}, {userAge=36}
     - I'm {userName=vishwac} and I'm {userAge=36} years old

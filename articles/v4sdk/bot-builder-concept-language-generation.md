@@ -31,7 +31,7 @@ At the core of LG lies template expansion and entity substitution. You can provi
 
 The following is a simple greeting LG template. Notice that all of the greetings reference the user's name in memory with the variable `${user.name}`.
 
-```.lg
+```lg
 # greetingTemplate
 - Hello ${user.name}, how are you?
 - Good morning ${user.name}.It's nice to see you again.
@@ -120,7 +120,7 @@ To get all possible expansions of a template, you can use `ExpandTemplate`.
 
 For example, given this LG content:
 
-```.lg
+```lg
 # Greeting
 - Hi
 - Hello

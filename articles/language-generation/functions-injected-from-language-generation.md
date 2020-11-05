@@ -22,7 +22,7 @@ The following article details how to inject functions from the [Language generat
 
 Return an `activityAttachment` constructed from an object and a type.
 
-```.lg
+```lg
 ActivityAttachment(<collection-of-objects>)
 ```
 
@@ -45,7 +45,7 @@ Using the `ActivityAttachment()` function in the template body, type, title, val
 
 Suppose you have the following template:
 
-```.lg
+```lg
 # externalHeroCardActivity(type, title, value)
 [Activity
     attachments = ${ActivityAttachment(json(fromFile('.\\herocard.json')), 'herocard')}
@@ -54,7 +54,7 @@ Suppose you have the following template:
 
 and the following `herocard.json`:
 
-```.lg
+```lg
 {
   "title": "titleContent",
   "text": "textContent",
@@ -77,13 +77,13 @@ and the following `herocard.json`:
 
 By calling `externalHeroCardActivity()` as a function:
 
-```.lg
+```lg
 externalHeroCardActivity('signin', 'Signin Button', 'http://login.microsoft.com')
 ```
 
 It returns a `herocard`:
 
-```.lg
+```lg
 {
     "lgType" = "attachment",
     "contenttype" = "herocard",
@@ -112,7 +112,7 @@ It returns a `herocard`:
 
 Evaluate the plain text in an object and return the expanded text data.
 
-```.lg
+```lg
 expandText(<object>)
 ```
 
@@ -147,7 +147,7 @@ Calling `expandText(@answer)` will result in the object **hello vivian**.
 
 Return the evaluated result of given template name and scope.
 
-```.lg
+```lg
 template(<templateName>, '<param1>', '<param2>', ...)
 ```
 
@@ -168,7 +168,7 @@ This example evaluates the result of calling the template as a function.
 
 Suppose you have the following template:
 
-```.lg
+```lg
     # welcome(userName)
 
     - Hi ${userName}
@@ -188,7 +188,7 @@ Calling `template("welcome", "DL")` will result in one of the following:
 
 Return the evaluated result of the expression in the given file.
 
-```.lg
+```lg
 fromFile(<filePath>)
 ```
 
@@ -207,7 +207,7 @@ fromFile(<filePath>)
 This example evaluates the result from the given file.
 
 Suppose you have a file called  `/home/user/test.txt`. Inside the file there is the following:
-```.lg
+```lg
    `you have ${add(1,2)} alarms`
 
     fromFile('/home/user/test.txt')
@@ -221,7 +221,7 @@ Calling `fromFile('/home/user/test.txt')` results in the string _you have 3 alar
 
 Return whether a given template name is included in the evaluator.
 
-```.lg
+```lg
 isTemplate(<templateName>)
 ```
 
@@ -239,7 +239,7 @@ isTemplate(<templateName>)
 
 This example uses the `isTemplate()` function to check whether a given template name is in the evaluator. For example, here are three templates:
 
-```.lg
+```lg
 # welcome
 - hi
 

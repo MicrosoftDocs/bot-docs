@@ -110,7 +110,7 @@ Each incoming [activity][botframework-activity] to the bot is available via `tur
 
 For example, you might have something like this defined in our .lg file to respond to a user that entered an invalid value when prompted for their age:
 
-```.lg
+```lg
 Sorry, I do not understand '${turn.activity.text}'. ${GetAge()}
 ```
 

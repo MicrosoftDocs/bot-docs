@@ -21,7 +21,7 @@ An .lu file contains Markdown-like, simple text based definitions for [LUIS][1] 
 
 Use **>** to create a comment. Here's an example:
 
-```.lu
+```lu
 > This is a comment and will be ignored.
 
 # Greeting
@@ -35,7 +35,7 @@ An [intent][2] represents an action the user wants to perform. The intent is a p
 
 Here's an .lu file that captures a simple `Greeting` intent with a list of example utterances that capture ways users can express this intent. Use the **-**, **+**, or **\*** character to denote lists. Numbered lists are not supported.
 
-```.lu
+```lu
 # Greeting
 - Hi
 - Hello
@@ -45,7 +45,7 @@ Here's an .lu file that captures a simple `Greeting` intent with a list of examp
 
 `#<intent-name>` describes a new intent definition section. Each line after the intent definition are example utterances that describe that intent. You can add together multiple intent definitions in a single file like in the example below:
 
-```.lu
+```lu
 # Greeting
 - Hi
 - Hello
@@ -74,19 +74,19 @@ An [entity][3] represents detailed information that is relevant in an utterance.
 
 Entities are declared in the following way:
 
-```.lu
+```lu
 @ <entity-type> <entity-name> [[hasRole[s]] <comma-separated-list-of-roles>] [hasFeature[s] <comma-separated-list-of-features>]
 ```
 
 Entities that require a definition, likes list and regular expressions entities, are represented using the following notation:
 
-```.lu
+```lu
 @ <entity-name> = <definition>
 ```
 
 Declaration and definition can also be combined into a single line:
 
-```.lu
+```lu
 @ <entity-type> <entity-name> [[hasRoles] <comma-separated-list-of-roles>] = <definition>
 ```
 
@@ -96,7 +96,7 @@ Entity names with a space in them can be wrapped in quotes. Note that prebuilt e
 
 Here's an example:
 
-```.lu
+```lu
 @ ml "this is a simple entity" role1, role2
 @ ml 'this is a simple entity' hasRoles role1, role2
 ```
@@ -107,13 +107,13 @@ Here's an example:
 
 In the example below, the ml entity `name` is defined as `firstName` and `lastName`.
 
-```.lu
+```lu
 @ ml name firstName, lastName
 ```
 
 For any labeled entity that is not explicitly assigned a type, the parser defaults to an ml entity type for that entity.
 
-```.lu
+```lu
 # getUserName
 - my name is {username=vishwac}
 
@@ -141,7 +141,7 @@ The following LUIS [prebuilt entity][5] types are supported:
 
 Here are examples of prebuilt entities:
 
-```.lu
+```lu
 @ prebuilt number numOfGuests, age
 @ prebuilt datetimeV2 fromDate, toDate
 @ prebuilt age userAge
@@ -155,7 +155,7 @@ Not all prebuilt entity types are available across all locales. See [entities pe
 
 In the example below, a list entity is defined that includes synonyms for colors:
 
-```.lu
+```lu
 @ list color favColor, screenColor
 @ color =
     - <normalized-value> :
@@ -180,7 +180,7 @@ A [composite entity][7] is made up of other entities, such as prebuilt, simple, 
 
 Here's an example of a simple composite entity:
 
-```.lu
+```lu
 @ composite deviceTemperature from, to
 @ deviceTemperature =
     - child1, child2
@@ -192,7 +192,7 @@ Here's an example of a simple composite entity:
 
 Here's a more complex example definition:
 
-```.lu
+```lu
 # setThermostat
 > This utterance labels ‘thermostat to 72’ as composite entity deviceTemperature
     - Please set {deviceTemperature = thermostat to 72}
@@ -224,7 +224,7 @@ A [regular expression entity][8] extracts an entity based on a regular expressio
 
 Here's an example of a simple regular expression entity definition.
 
-```.lu
+```lu
 > from, to are roles to hrf-number.
 @ regex hrf-number from, to
 @ hrf-number = /hrf-[0-9]{6}/
@@ -248,13 +248,13 @@ In the example below the **Location** entity has two roles, `origin` and `destin
 
 Roles in .lu file format can be explicitly or implicitly defined. Explicit role definition follows the notation:
 
-```.lu
+```lu
 @ <entityType> <entityName> [hasRole[s]] role1, role2, ...
 ```
 
 Shown below are the variety of ways you can explicitly define entities and their roles:
 
-```.lu
+```lu
 > # ml entity definition with roles
 > the following are synonmous:
 
@@ -272,13 +272,13 @@ Shown below are the variety of ways you can explicitly define entities and their
 
 You can refer to implicitly defined roles directly in patterns and labeled utterances using the following format:
 
-```.lu
+```lu
 {@<entityName>:<roleName>}
 ```
 
 You can see in the example below how the roles `userName:firstName` and `userName:lastName` are implicitly defined:
 
-```.lu
+```lu
 # AskForUserName
 - {userName:firstName=vishwac} {userName:lastName=kannan}
 - I'm {userName:firstName=vishwac}
@@ -292,7 +292,7 @@ You can see in the example below how the roles `userName:firstName` and `userNam
 
 In [patterns](#patterns), you can use roles using the `{<entityName>:<roleName>}` notation. Here's an example:
 
-```.lu
+```lu
 # getUserName
 - call me {name:userName}
 - I'm {name:userName}
@@ -301,7 +301,7 @@ In [patterns](#patterns), you can use roles using the `{<entityName>:<roleName>}
 
 You can also define multiple roles for an entity in patterns, seen below:
 
-```.lu
+```lu
 > Roles can be specified for list entity types as well - in this case fromCity and toCity are added as roles to the 'city' list entity defined further below
 
 # BookFlight
@@ -327,12 +327,14 @@ $city:Portland=
 
 For example, the following definition would be treated as a pattern with `alarmTime` set as a pattern:
 
-```.lu
+```lu
 # DeleteAlarm
 - delete the {alarmTime} alarm
 ```
+
 This example would be treated as an utterance since it has a labeled value _7AM_:
-```.lu
+
+```lu
 # DeleteAlarm
 - delete the {alarmTime=7AM} alarm
 ```
@@ -346,7 +348,7 @@ A [phrase list][11] is a list of words, phrases, numbers or other characters tha
 
 You can describe phrase list entities using the following notation:
 
-```.lu
+```lu
 @ phraselist <Name>
     - <synonym1>  
     - <synonym2>
@@ -354,7 +356,7 @@ You can describe phrase list entities using the following notation:
 
 Here's an example of a phrase list definition:
 
-```.lu
+```lu
 @ phraseList Want
 @ phraseList Want =
     - require, need, desire, know
@@ -370,7 +372,7 @@ Here's an example of a phrase list definition:
 
 By default synonyms are set to be not interchangeable. You can optionally set the synonyms to be interchangeable as part of the definition. Here's an example:
 
-```.lu
+```lu
 @ phraselist question(interchangeable) =
     - are you
     - you are
@@ -378,7 +380,7 @@ By default synonyms are set to be not interchangeable. You can optionally set th
 
 Phrase lists can be marked as `disabled` using the following notation:
 
-```.lu
+```lu
 @ phraselist abc disabled
 
 > also same as this
@@ -391,7 +393,7 @@ Phrase lists can be marked as `disabled` using the following notation:
 
 By default phrase lists are enabled for all models. However when you explicitly start assigning phrase lists as a feature (descriptor) to other models, the specific phrase lists is not enabled for all models. To explicitly make a phrase list always available to all models use the following:
 
-```.lu
+```lu
 @ phraselist abc enabledForAllModels
 ```
 
@@ -405,7 +407,7 @@ Phrase lists can be added as a feature to:
 
 Here's an example of how to define a phrase list as a feature to another model:
 
-```.lu
+```lu
 > phrase list definition
 
 @ phraseList PLCity(interchangeable) =
@@ -440,7 +442,7 @@ Here's an example of how to define a phrase list as a feature to another model:
 
 Below are examples of how to add intents and entities as a feature with `usesFeature`:
 
-```.lu
+```lu
 > entity definition - @ <entityType> <entityName> [<roles>]
 
 @ prebuilt personName
@@ -479,7 +481,7 @@ Below are examples of how to add intents and entities as a feature with `usesFea
 
 Here's a definition of an `address` ml entity with `fromAddress` and `toAddress` as two roles as well as children.
 
-```.lu
+```lu
 @ list listCity
 @ prebuilt number
 @ prebuilt geographyV2
@@ -510,7 +512,7 @@ Collect utterances that you think users will enter. Include utterances with the 
 
 You can label entities in utterances using the following notation:
 
-```.lu
+```lu
 # getUserProfile
 - my name is {@userName = vishwac}
 
@@ -519,7 +521,7 @@ You can label entities in utterances using the following notation:
 
 You can label roles in utterances directly as well:
 
-```.lu
+```lu
 # getUserProfile
 - my name is {@firstName = vishwac}
 
@@ -528,7 +530,7 @@ You can label roles in utterances directly as well:
 
 Machine-learned entities with children can also be labeled:
 
-```.lu
+```lu
 # getUserProfile
 - my name is {@userProfile = {@firstName = vishwac}}
 
@@ -541,7 +543,7 @@ Machine-learned entities with children can also be labeled:
 
 To help easily label child entities for both machine-learned and composite entity types, you can break up your labels:
 
-```.lu
+```lu
 # getUserProfile
 - my name is vishwac and I'm 36 years old
     - my name is {@userProfile = vishwac and I'm 36 years old}
@@ -562,7 +564,7 @@ You can include configuration information for your LUIS application or QnA Maker
 
 Here's how to define configuration information using **> !#**:
 
-```.lu
+```lu
 > !# @<property> = <value>
 > !# @<scope>-<property> = <value>
 > !# @<scope>-<property> = <semicolon-delimited-key-value-pairs>
@@ -570,7 +572,7 @@ Here's how to define configuration information using **> !#**:
 
 Note that any information explicitly passed in via CLI arguments will override information in the .lu file.
 
-```.lu
+```lu
 > Parser instruction - this is optional; unless specified, parser will default to the latest version.
 > !# @version = 1.0
 
@@ -608,7 +610,7 @@ References the .lu file. follow Markdown link syntax. Supported references inclu
 
 Here's an example of the aforementioned references:
 
-```.lu
+```lu
 > You can include references to other .lu files
 
 [All LU files](./all.lu)
@@ -658,7 +660,7 @@ Here's an example of the aforementioned references:
 
 Below are examples of how to make URI references:
 
-```.lu
+```lu
 > URI to LU resource
 [import](http://.../foo.lu)
 

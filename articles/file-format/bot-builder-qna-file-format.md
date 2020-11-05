@@ -33,7 +33,7 @@ Supported concepts:
 
 Use **>** to create a comment. Here's an example:
 
-```.qna
+```qna
 > This is a comment and will be ignored
 ```
 
@@ -43,7 +43,7 @@ The .qna file and parser support question and answer definitions.
 
 Here's the syntax of a basic question and answer definition:
 
-```.qna
+```qna
 	# ? Question
 	[list of question variations]
 	```
@@ -53,8 +53,7 @@ Here's the syntax of a basic question and answer definition:
 
 Here's are examples of question and answer definitions:
 
-
-```.qna
+```qna
 > # QnA Definitions
 ### ? who is the ceo?
 	```
@@ -76,7 +75,7 @@ Note that the `markdown` type identifier for an `answer` is optional.
 
 You can add multiple questions to the same answer by simply adding variations to questions.
 
-```.qna
+```qna
 ### ? Aren't you feeling happy today?
 - Feeling cheerful?
 	```markdown
@@ -90,7 +89,7 @@ Filters in QnA Maker are simple key-value pairs that can be used to narrow searc
 
 Use the following syntax to add filters:
 
-```.qna
+```qna
 ***Filters:***
 - name = value
 - name = value
@@ -98,7 +97,7 @@ Use the following syntax to add filters:
 
 Here's an example of how a filter could be used:
 
-```.qna
+```qna
 ### ? Where can I get coffee?
 - I need coffee
 
@@ -126,13 +125,13 @@ Here's an example of how a filter could be used:
 QnA Maker supports [word alterations](https://docs.microsoft.com/azure/cognitive-services/qnamaker/concepts/best-practices#use-synonyms) as a way to improve the likelihood that a given user query is answered with an appropriate response. You can use this feature to add synonyms to keywords that take different form.
 
 You can describe word alterations/synonyms lists in .qna files using the following notation.
-```.qna
+```qna
 $<synonym word>:qna-alteration=
 - <list of synonyms>
 ```
 
 Here's an example:
-```.qna
+```qna
 $botframework : qna-alterations=
 - bot framework
 - Microsoft bot framework
@@ -143,7 +142,7 @@ $botframework : qna-alterations=
 
 QnA Maker also supports ingesting PDF files during KB creation. You can add files for QnA Maker to ingest using the URL reference scheme. If the URI's content type is not text or HTML, then the parser will add it to files collection for QnA Maker to ingest.
 
-```.qna
+```qna
 [SurfaceManual.pdf](https://download.microsoft.com/download/2/9/B/29B20383-302C-4517-A006-B0186F04BE28/surface-pro-4-user-guide-EN.pdf)
 ```
 
@@ -177,7 +176,7 @@ You can also add references to utterances defined in a specific file under an in
 
 Here's an example of the above references:
 
-```.qna
+```qna
 > QnA URL reference
 [QnaURL](https://docs.microsoft.com/en-in/azure/cognitive-services/qnamaker/faqs)
 
@@ -197,7 +196,7 @@ You can include configuration information for your LUIS application or QnA Maker
 
 Here's how to add configuration information sing **> !#**:
 
-```.qna
+```qna
 > !# @<property> = <value>
 > !# @<scope>-<property> = <value>
 > !# @<scope>-<property> = <semicolon-delimited-key-value-pairs>
@@ -205,7 +204,7 @@ Here's how to add configuration information sing **> !#**:
 
 Note that any information explicitly passed in via CLI arguments will override information in the .qna file.
 
-```.qna
+```qna
 > Parser instruction - this is optional; unless specified, the parser will default to the latest version.
 > !# @version = 1.0
 
@@ -226,7 +225,7 @@ Multiturn content is represented in .qna format using Markdown link notation. Li
 
 You can optionally include `context-only` for any prompts that are only contextually available for a question. Read  the section about [adding an existing question-and-answer pair as a follow-up prompt][1] to learn more about use of `context`.
 
-```.qna
+```qna
 - [tell me a joke](#?joke) `context-only`
 ```
 
@@ -240,7 +239,7 @@ The first QnA pair that has the link text as a `question` will be added as the p
 
 When you're directly using a question, use Markdown convention and replace spaces with hyphens (for example, use `#?when-is-the-portland-store-open` instead of `#?when is the portland store open`). The parser will do its best to find the link.
 
-```.qna
+```qna
 # ?store hours
 	```
 		Most our stores are open M-F 9AM-10PM.
@@ -267,7 +266,7 @@ Note that the link will not actually render as a clickable link in most Markdown
 
 Assign IDs for each prompt with a number. You can see in the example below the prompt for each store has been assigned a different numeric value.
 
-```.qna
+```qna
 # ?store hours
 	```
 		Most our stores are open M-F 9AM-10PM.

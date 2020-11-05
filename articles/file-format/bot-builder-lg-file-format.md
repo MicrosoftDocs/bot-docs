@@ -23,7 +23,7 @@ The `.lg` file describes language generation templates with entity references an
 
 Use **>** to create a comment. All lines that have this prefix will be skipped by the parser.
 
-```.lg
+```lg
 > This is a comment.
 ```
 
@@ -31,7 +31,7 @@ Use **>** to create a comment. All lines that have this prefix will be skipped b
 
 Use **\\** as an escape character.
 
-```.lg
+```lg
 # TemplateName
 - You can say cheese and tomato \[toppings are optional\]
 ```
@@ -42,7 +42,7 @@ Use **\\** as an escape character.
 
 To create an array, use the **${[object1, object2, ...]}** syntax. For example, this  expression:
 
-```.lg
+```lg
 ${['a', 'b', 'c']}
 ```
 
@@ -52,7 +52,7 @@ Returns the array `['a', 'b', 'c']`.
 
 To create an object, use the **${{key1:value1, key2:value2, ...}}** syntax. For example, this expression:
 
-```.lg
+```lg
 ${{user: {name: "Wilson", age: 27}}}
 ```
 
@@ -81,7 +81,7 @@ Returns the following JSON object:
 
 Template names are case-sensitive and can only contain letters, underscores, numbers. The following is an example of a template named `TemplateName`. 
 
-```.lg
+```lg
 # TemplateName
 ```
 
@@ -91,7 +91,7 @@ Templates cannot start with a number, and any part of a template name split by *
 
 Variations are expressed as a Markdown list. You can prefix each variation using the **-**, **'**, or **+** character.
 
-```.lg
+```lg
 # Template1
 - text variation 1
 - text variation 2
@@ -113,7 +113,7 @@ A simple response template includes one or more variations of text that are used
 
 Here is an example of a simple template that includes two variations.
 
-```.lg
+```lg
 > Greeting template with two variations.
 # GreetingPrefix
 - Hi
@@ -133,7 +133,7 @@ The if-else template lets you build a template that picks a collection based on 
 
 Conditional expressions are enclosed in braces **${}**. Here's an example that shows a simple IF ELSE conditional response template definition.
 
-```.lg
+```lg
 > time of day greeting reply template with conditions.
 # timeOfDayGreeting
 - IF: ${timeOfDay == 'morning'}
@@ -144,7 +144,7 @@ Conditional expressions are enclosed in braces **${}**. Here's an example that s
 
 Here's another example that shows an if-else conditional response template definition. Note that you can include references to other simple or conditional response templates in the variation for any of the conditions.
 
-```.lg
+```lg
 # timeOfDayGreeting
 - IF: ${timeOfDay == 'morning'}
     - ${morningTemplate()}
@@ -160,7 +160,7 @@ The switch template lets you design a template that matches an expression's valu
 
 Here's how you can specify a SWITCH CASE DEFAULT block in LG.
 
-```.lg
+```lg
 # TestTemplate
 - SWITCH: ${condition}
 - CASE: ${case-expression-1}
@@ -173,7 +173,7 @@ Here's how you can specify a SWITCH CASE DEFAULT block in LG.
 
 Here's a more complicated SWITCH CASE DEFAULT example:
 
-```.lg
+```lg
 > Note: Any of the cases can include reference to one or more templates.
 # greetInAWeek
 - SWITCH: ${dayOfWeek(utcNow())}
@@ -205,7 +205,7 @@ Read about [structure response templates](../language-generation/language-genera
 
 Variation text can include references to another named template to aid with composition and resolution of sophisticated responses. References to other named templates are denoted using braces, such as **${\<TemplateName>()}**.
 
-```.lg
+```lg
 > Example of a template that includes composition reference to another template.
 # GreetingReply
 - ${GreetingPrefix()}, ${timeOfDayGreeting()}
@@ -225,7 +225,7 @@ Variation text can include references to another named template to aid with comp
 
 Calling the `GreetingReply` template can result in one of the following expansion resolutions:
 
-```.lg
+```lg
 Hi, good morning
 Hi, good afternoon
 Hi, good evening
@@ -248,7 +248,7 @@ Entities can be used as a parameter:
 
 [Prebuilt functions][4] supported by [adaptive expressions][3] can also be used inline in a one-of variation text to achieve even more powerful text composition. To use an expression inline, simply wrap it in braces.
 
-```.lg
+```lg
 # RecentTasks
 - IF: ${count(recentTasks) == 1}
     - Your most recent task is ${recentTasks[0]}. You can let me know if you want to add or complete a task.
@@ -266,7 +266,7 @@ Given templates and prebuilt functions share the same invocation signature, a te
 
  A template name should not match a prebuilt function name. The prebuilt function takes precedence. To avoid such conflicts, you can prepend `lg.` when referencing your template name. For example:
 
-```.lg
+```lg
 > Custom length function with one parameter.
 # length(a)
 - This is use's customized length function
@@ -284,7 +284,7 @@ Given templates and prebuilt functions share the same invocation signature, a te
 
 Each one-of variation can include multiline text enclosed in triple quotes.
 
-```.lg
+```lg
 # MultiLineExample
     - ```This is a multiline list
         - one
@@ -298,7 +298,7 @@ Each one-of variation can include multiline text enclosed in triple quotes.
 
 Multiline variation can request template expansion and entity substitution by enclosing the requested operation in braces, ${}.
 
-```.lg
+```lg
 # MultiLineExample
     - ```
         Here is what I have for the order
@@ -314,7 +314,7 @@ With multiline support, you can have the Language Generation sub-system fully re
 
 To aid with contextual reusability, templates can be parametrized. Different callers to the template can pass in different values for use in expansion resolution.
 
-```.lg
+```lg
 # timeOfDayGreetingTemplate (param1)
 - IF: ${param1 == 'morning'}
     - good morning
@@ -334,13 +334,13 @@ To aid with contextual reusability, templates can be parametrized. Different cal
 
 You can split your language generation templates into separate files and reference a template from one file in another. You can use Markdown-style links to import templates defined in another file.
 
-```.lg
+```lg
 [Link description](filePathOrUri)
 ```
 
 All templates defined in the target file will be pulled in. Ensure that your template names are unique (or namespaced with `# \<namespace>.\<templatename>`) across files being pulled in.
 
-```.lg
+```lg
 [Shared](../shared/common.lg)
 ```
 
@@ -360,7 +360,7 @@ Developers can set parser options to further customize how input is evaluated. U
 
 Developers who do not want to allow a null result for a null evaluated result can implement the **strict** option. Below is an example of a simple strict option:
 
-```.lg
+```lg
 > !# @strict = true
 # template
 - hi
@@ -368,7 +368,7 @@ Developers who do not want to allow a null result for a null evaluated result ca
 
 If the strict option is on, null errors will throw a friendly message.
 
-```.lg
+```lg
 # welcome
 - hi ${name}
 ```
@@ -379,14 +379,14 @@ If name is null, the diagnostic would be **'name' evaluated to null. [welcome] E
 
 Developers can create delegates to replace null values in evaluated expressions by using the **replaceNull** option:
 
-```.lg
+```lg
 > !# @replaceNull = ${path} is undefined
 ```
 
 In the above example, the null input in the `path` variable would be replaced with **${path} is undefined**. The following input, where `user.name` is null:
 :
 
-```.lg
+```lg
 hi ${user.name}
 ```
 
@@ -401,7 +401,7 @@ Developers can set options for how the LG system renders line breaks using the *
 
 The example below shows how to set the lineBreakStyle option to `markdown`:
 
-```.lg
+```lg
 > !# @lineBreakStyle = markdown
 ```
 
@@ -411,7 +411,7 @@ You can register a namespace for the LG templates you want to export. If there i
 
 The example below shows how to set the namespace option to `foo`:
 
-```.lg
+```lg
 > !# @Namespace = foo
 ```
 
@@ -421,7 +421,7 @@ You can specify a list of LG templates to export. The exported templates can be 
 
 The example below shows how to set the exports option to `template1, template2`:
 
-```.lg
+```lg
 > !# @Namespace = foo
 > !# @Exports = template1, template2
 
