@@ -58,9 +58,12 @@ conceptualContent:
         - url: dotnet/bot-builder-dotnet-sdk-quickstart.md
           itemType: quickstart
           text: Quickstart
-        - url: v4sdk/bot-builder-tutorial-basic-deploy.md
+        - url: v4sdk/bot-builder-tutorial-create-basic-bot.md
           itemType: tutorial
-          text: Create and deploy a bot
+          text: Create a bot
+        - url: v4sdk/bot-builder-tutorial-deploy-basic-bot.md
+          itemType: tutorial
+          text: Deploy a bot
         - url: bot-service-manage-channels.md
           itemType: how-to-guide
           text: Connect a bot to channels
