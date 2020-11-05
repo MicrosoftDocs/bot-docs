@@ -140,14 +140,14 @@ For a detailed explanation on how to use the `luis:build` command, see [Deploy L
 
 > [!IMPORTANT]
 >
-> This command will overwrite your previous LUIS model as well any content you might have in your [LUIS applications](https://www.luis.ai/applications).
+> This command will overwrite your previous LUIS model as well any content you might have in your [LUIS applications][https://www.luis.ai/applications].
 
 ### How to use the luis:build command
 
-The LUIS build command showing its required parameters when entered in the command line:
+Here is the LUIS build command with required parameters:
 
 ``` cli
-bf luis:build --in <input-file-or-folder> --out <output-file-or-folder> --authoringKey <subscription-key> --region <authoring-region>
+bf luis:build --in <input-file-or-folder> --out <output-file-or-folder> --botName <bot-name> --authoringKey <subscription-key> --region <authoring-region>
 ```
 
 The `luis:build` command will create all assets you need from your local `.lu` files.
@@ -329,41 +329,72 @@ The configuration file is named **appsettings.json**. The following shows the co
 
 ```json
 {
-  "MicrosoftAppId": "",
-  "MicrosoftAppPassword": "",
-  "LuisAPIKey": "",
-  "LuisAPIHostName": "",
-  "luis": {
-    "GetUserProfileDialog_en_us_lu": "",
-    "ViewToDoDialog_en_us_lu": "",
-    "DeleteToDoDialog_en_us_lu": "",
-    "RootDialog_en_us_lu": "",
-    "AddToDoDialog_en_us_lu": ""
-  },
-  "QnAHostName": "",
-  "QnAEndpointKey": "",
-  "qna": {
-    "TodoBotWithLuisAnDQnA_en_us_qna": ""
-  }
+    // The first two values are used to connect to your bot channel in Azure.
+    // See the "Bot channels registration" section below for more information.
+    "MicrosoftAppId": "",
+    "MicrosoftAppPassword": "",
+    // The next two values are used to connect to your Azure cognitive services LUIS
+    // authoring resource. See the "LUIS key and hostname" section below for more information.
+    "LuisAPIKey": "",
+    "LuisAPIHostName": "",
+    // The luis section contains all luis application IDs, created by the luis build
+    // command and saved to the specified output directory in the file named:
+    //  "luis.settings.<username>.<authoring-region>.json"
+    // See "LUIS application IDs" section below for more details.
+    "luis": {
+        "GetUserProfileDialog_en_us_lu": "",
+        "ViewToDoDialog_en_us_lu": "",
+        "DeleteToDoDialog_en_us_lu": "",
+        "RootDialog_en_us_lu": "",
+        "AddToDoDialog_en_us_lu": ""
+    },
+    // The next two values are used to connect to your Azure cognitive services QnA Maker
+    // resource. See "QnA Maker hostname and endpoint key" section below for more details.
+    "QnAHostName": "",
+    "QnAEndpointKey": "",
+    // The qna section contains all QnA Maker knowledge base IDs, created from the .qna files by
+    // the qnamaker build command and saved to the specified output directory in the file named:
+    //  "qnamaker.settings.<username>.<authoring-region>.json"
+    // See "QnA Maker knowledge base IDs" section below for more details.
+    "qna": {
+        "TodoBotWithLuisAnDQnA_en_us_qna": ""
+    }
 }
 ```
 
-The configuration file **appsettings.json** explained:
+### The configuration file details
 
-![The appsettings.json file](./media/appsettings.json.png)
+This section explains the **appsettings.json** file for the to do bot sample in detail.
 
-1. The [Bot channels registration][bot-channels-registration] article details how to get the `MicrosoftAppId` and `MicrosoftAppPassword` values. These values are not required to complete this article.
-2. The ***LuisAPIKey*** is the `subscriptionKey`, and the ***LuisAPIHostName*** is the `ENDPOINT` value. Both values are found in the _Keys and Endpoint_ blade in the Azure cognitive services LUIS authoring resource page as shown in the screen shot below:
+<!--![The appsettings.json file](./media/appsettings.json.png)-->
 
-   ![Keys and endpoint for LUIS resource in Azure. Values for LuisAPIKey and LuisAPIHostName.](./media/adaptive-dialogs/keys-and-endpoint-cross-train.png)
+#### Bot channels registration
 
-3. This is a list of LUIS application IDs. These values can be found in the _Application Settings_ page for a LUIS application in [www.luis.ai](https://www.luis.ai/), however they are also listed in the settings file created by the `luis:build` command, saved to the location provided as the `--out` option. This settings file contains a list of every LUIS application ID that was created for each locale. The full name of this JSON file is `luis.settings.<username>.<authoring-region>.json`. For example, if your logged in username is _YuuriTanaka_ and you are targeting authoring region **westus**, your filename would be **luis.settings.YuuriTanaka.westus.json**. This is where you will find all the values for the _luis_ section of your **appsettings.json** file.
+See the [Bot channels registration][bot-channels-registration] article for details how to get the `MicrosoftAppId` and `MicrosoftAppPassword` values.
 
-4. `QnAHostName` is the _Host_ value and `QnAEndpointKey` is the _EndpointKey_ value, both found in QnA Maker, accessed by selecting the **view code** button when in the _My knowledge bases_ page as shown in the screen shot below:
+> [!NOTE]
+>
+> These values are not required to complete this article.
 
-    ![QnA Maker View Code](./media/qna-maker-view-code.png)
+#### LUIS key and hostname
 
-5. The `qnamaker:build` command will include one settings file, saved to the location provided as the `--out` option, that contains a list of every QnA Maker knowledge base ID that was created for each locale. The full name of this JSON file is `qnamaker.settings.<username>.<authoring-region>.json`. For example, if your logged in username is _YuuriTanaka_ and you are targeting authoring region **westus**, your filename would be **qnamaker.settings.YuuriTanaka.westus.json**. This is where you will find all the values for the `qna` section of your **appsettings.json** file.
+The ***LuisAPIKey*** is the `subscriptionKey`, and the ***LuisAPIHostName*** is the `ENDPOINT` value. Both values are found in the _Keys and Endpoint_ blade in the Azure cognitive services LUIS authoring resource page as shown in the screen shot below:
+
+![Keys and endpoint for LUIS resource in Azure. Values for LuisAPIKey and LuisAPIHostName.](./media/adaptive-dialogs/keys-and-endpoint-cross-train.png)
+
+#### LUIS application IDs
+
+The luis section contains all luis application IDs used by your bot. These values can be found in the _Application Settings_ page for a LUIS application in [www.luis.ai](https://www.luis.ai/), however they are also listed in the settings file created by the `luis:build` command, saved to the location provided as the `--out` option. This settings file contains a list of every LUIS application ID that was created for each locale. The full name of this JSON file is `luis.settings.<username>.<authoring-region>.json`. For example, if your logged in username is _YuuriTanaka_ and you are targeting authoring region **westus**, your filename would be **luis.settings.YuuriTanaka.westus.json**. This is where you will find all the values for the _luis_ section of your **appsettings.json** file.
+
+#### QnA Maker hostname and endpoint key
+
+`QnAHostName` is the _Host_ value and `QnAEndpointKey` is the _EndpointKey_ value, both found in QnA Maker, accessed by selecting the **view code** button when in the _My knowledge bases_ page as shown in the screen shot below:
+
+![QnA Maker View Code](./media/qna-maker-view-code.png)
+
+#### QnA Maker knowledge base IDs
+
+The `qnamaker:build` command will include one settings file, saved to the location provided as the `--out` option, that contains a list of every QnA Maker knowledge base ID that was created for each locale. The full name of this JSON file is `qnamaker.settings.<username>.<authoring-region>.json`. For example, if your logged in username is _YuuriTanaka_ and you are targeting authoring region **westus**, your filename would be **qnamaker.settings.YuuriTanaka.westus.json**. This is where you will find all the values for the `qna` section of your **appsettings.json** file.
 
 ## Testing the bot using Bot Framework Emulator
 
