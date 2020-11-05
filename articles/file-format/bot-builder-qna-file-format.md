@@ -104,7 +104,7 @@ Here's an example of how a filter could be used:
 **Filters:**
 - location = seattle
 
-```.markdown
+```markdown
 You can get coffee in our Seattle store at 1 pike place, Seattle, WA
 ```
 
@@ -114,7 +114,7 @@ You can get coffee in our Seattle store at 1 pike place, Seattle, WA
 **Filters:**
 - location = portland
 
-```.markdown
+```markdown
 You can get coffee in our Portland store at 52 marine drive, Portland, OR
 ```
 ~~~
