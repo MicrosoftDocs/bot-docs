@@ -137,8 +137,9 @@ The dialogs library uses a dialog state property accessor, defined on the bot's 
 Adaptive dialogs have a more elaborate memory scope structure, which makes it easier to access configuration and recognition results, among other things. The _dialog manager_ uses the user and conversation state management objects to provide these memory scopes.
 
 For information about the dialogs library, see the [dialogs library](bot-builder-concept-dialog.md) article.
-See [about component and waterfall dialogs](bot-builder-concept-waterfall-dialogs.md) for information specific to those types of dialogs.
-See the [introduction to adaptive dialogs](bot-builder-adaptive-dialog-introduction.md) and [managing state in adaptive dialogs](bot-builder-concept-adaptive-dialog-memory-states.md) articles for information specific to adaptive dialogs.
+
+- See [about component and waterfall dialogs](bot-builder-concept-waterfall-dialogs.md) for information specific to those types of dialogs.
+- See the [introduction to adaptive dialogs](bot-builder-adaptive-dialog-introduction.md) and [managing state in adaptive dialogs](bot-builder-concept-adaptive-dialog-memory-states.md) articles for information specific to adaptive dialogs.
 
 ## Saving state
 
