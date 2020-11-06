@@ -130,7 +130,11 @@ For each adaptive dialog that has an associated `.lu` and `.qna` file, the follo
 
 1. In `.qna` files, a new answer named `intent=DeferToRecognizer_luis_<dialog-file-name>` is added, along with each utterance from every intent in the corresponding `.lu` file. These utterances become questions associated with that answer. Additionally, all utterances from referenced `.lu` files also become questions associated with that answer.
 
-When a user converses with the bot, the `CreateCrossTrainedRecognizer` recognizer sends that user input to both LUIS and the QnA Maker knowledge base to be processed. The following table shows the matrix of possible responses and the resulting action taken by the bot.
+When a user converses with the bot, the `CreateCrossTrainedRecognizer` recognizer sends that user input to both LUIS and the QnA Maker knowledge base to be processed. 
+
+### Recognizer responses
+
+The following table shows the matrix of possible responses and the resulting action taken by the bot.
 
 <!--![Response table](./media/adaptive-dialogs/luis-qna-maker-runtime-cross-train-results-matrix.png)-->
 

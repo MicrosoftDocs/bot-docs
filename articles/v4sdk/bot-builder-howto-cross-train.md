@@ -503,7 +503,7 @@ private static Recognizer CreateQnAMakerRecognizer(IConfiguration configuration)
 If a user input does not result in a match from the recognizer, prior to cross training your LUIS and QnA Maker models, the bot will automatically send it to the active dialogs parent, as long as the `AllowInterruptions` property evaluates to _true_. When you cross train your models, the active dialog becomes aware of other dialogs intent handling capabilities, so if no match is returned, there is no need to consult the parent dialog. In this case, how do you determine if the active dialog should handle the users response or bubble it up to the parent? Consider this scenario using the  **todo bot with LUIS and QnA Maker** sample:
 
 > [!NOTE]
-> You can follow along by running the bot using the emulator, instructions for doing this are given in the next section [Testing the bot using Bot Framework Emulator](testing-the-bot-using-bot-framework-emulator).
+> You can follow along by running the bot using the emulator, instructions for doing this are given in the next section [Testing the bot using Bot Framework Emulator](#testing-the-bot-using-bot-framework-emulator).
 
 - When starting the bot the user is greeted with _Hi, nice to meet you! I'm a sample bot. Here are some things I can help with_, then prompted with SuggestedActions = **Add item | View lists | Remove item | Profile | Cancel | Help**
 - The user selects _View lists_
