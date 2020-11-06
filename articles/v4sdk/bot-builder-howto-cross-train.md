@@ -174,7 +174,7 @@ The following is a sample of the **luconfig.json** file that you can reference u
     "out": "output",
     "botName":"<your-bot-name>",
     "authoringKey":"<your-32-digit-subscription-key>",
-	 "endpoint":"<your-endpoint>",
+    "endpoint":"<your-endpoint>",
     "region": "<your-region-default-is-westus>"
 }
 ```
@@ -207,7 +207,7 @@ To create the LUIS applications for the **todo bot with LUIS and QnA Maker** sam
         "out": "output",
         "botName":"todo bot with LUIS and QnA Maker",
         "authoringKey":"<your-32-digit-subscription-key>",
-    	  "endpoint":"<your-endpoint>",
+         "endpoint":"<your-endpoint>",
         "region": "<your-region-default-is-westus>"
     }
     ```
@@ -399,6 +399,156 @@ The `qnamaker:build` command will save a settings file to the location provided 
 > [!IMPORTANT]
 >
 > The settings file created by the `qnamaker:build` command will contain an entry for each of the five QnA Maker models, the value for each will be the ID for the one QnA Maker KB created by the build command. Since each contain the same ID value, use any of them for the value for the  "TodoBotWithLuisAndQnA_en_us_qna" key. If you replace this single value with all five values from the qnamaker.settings file, you will get an error: "System.Exception: NOTE: QnA Maker is not configured for RootDialog."
+
+## Source code updates for cross trained models
+
+There are no source code updates needed in the adaptive **todo bot with LUIS and QnA Maker** ([**C#**][cs-sample-todo-bot]) sample to take advantage of cross trained models, it was created with cross training in mind. This section will explain the code in this sample that relates to bots utilizing cross trained models, using **AddToDoDialog.cs** as an example, the same concepts apply to the other adaptive dialogs in this bot.
+
+### Define the recognizer
+
+The recognizer needed to work with models that have been cross trained is the [CrossTrainedRecognizerSet][crosstrainedrecognizerset-ref-guide].
+
+In this sample bot, the recognizer is set by calling a method, passing the `configuration` property as its one parameter:
+
+<!-- Line 44 -->
+
+```csharp
+Recognizer = CreateCrossTrainedRecognizer(configuration)
+```
+
+The method `CreateCrossTrainedRecognizer` creates a `CrossTrainedRecognizerSet` recognizer that consists of a `Recognizers` list containing both a Luis and QnA Maker recognizer. Each recognizer is created by calling a method for each:
+
+<!-- Line 318-328 -->
+
+```csharp
+private static Recognizer CreateCrossTrainedRecognizer(IConfiguration configuration)
+{
+   return new CrossTrainedRecognizerSet()
+   {
+      Recognizers = new List<Recognizer>()
+      {
+         CreateLuisRecognizer(configuration),
+         CreateQnAMakerRecognizer(configuration)
+      }
+   };
+}
+
+```
+
+The `CreateLuisRecognizer` method creates the LUIS recognizer. See comments in the code snippet below for code explanations:
+<!-- Line 360-375 -->
+
+```csharp
+public static Recognizer CreateLuisRecognizer(IConfiguration Configuration)
+{
+   // Verify that all required values exist in the configuration file appsettings.json and throw an error
+   if (string.IsNullOrEmpty(Configuration["luis:RootDialog_en_us_lu"]) || string.IsNullOrEmpty(Configuration["LuisAPIKey"]) || string.IsNullOrEmpty(Configuration["LuisAPIHostName"]))
+   {
+      throw new Exception("Your RootDialog LUIS application is not configured. Please see README.MD to set up a LUIS application.");
+   }
+   return new LuisAdaptiveRecognizer()
+   {
+      // Get settings from the configuration file appsettings.json
+      Endpoint = Configuration["LuisAPIHostName"],
+      EndpointKey = Configuration["LuisAPIKey"],
+      ApplicationId = Configuration["luis:RootDialog_en_us_lu"],
+
+      // Id needs to be LUIS_<dialogName> for cross-trained recognizer to work.
+      Id = $"LUIS_{nameof(RootDialog)}"
+   };
+}
+```
+
+The method `CreateQnAMakerRecognizer` creates a QnA Maker recognizer. See comments in the code snippet below for code explanations:
+
+<!-- Line 330-358 -->
+
+```csharp
+private static Recognizer CreateQnAMakerRecognizer(IConfiguration configuration)
+{
+   // Verify that all required values exist in the configuration file appsettings.json
+   if (string.IsNullOrEmpty(configuration["qna:TodoBotWithLuisAndQnA_en_us_qna"]) || string.IsNullOrEmpty(configuration["QnAHostName"]) || string.IsNullOrEmpty(configuration["QnAEndpointKey"]))
+   {
+      throw new Exception("NOTE: QnA Maker is not configured for RootDialog. Please follow instructions in README.md. To enable all capabilities, add 'qnamaker:qnamakerSampleBot_en_us_qna', 'qnamaker:LuisAPIKey' and 'qnamaker:endpointKey' to the appsettings.json file.");
+   }
+
+   return new QnAMakerRecognizer()
+   {
+      // Get settings from the configuration file appsettings.json
+      HostName = configuration["QnAHostName"],
+      EndpointKey = configuration["QnAEndpointKey"],
+      KnowledgeBaseId = configuration["qna:TodoBotWithLuisAndQnA_en_us_qna"],
+
+      // property path that holds qna context
+      Context = "dialog.qnaContext",
+
+      // Property path where previous qna id is set. This is required to have multi-turn QnA working.
+      QnAId = "turn.qnaIdFromPrompt",
+
+      // Disable Personal Information telemetry logging
+      LogPersonalInformation = false,
+
+      // Enable to automatically including dialog name as meta data filter on calls to QnA Maker.
+      IncludeDialogNameInMetadata = true,
+
+      // Id needs to be QnA_<dialogName> for cross-trained recognizer to work.
+      Id = $"QnA_{nameof(RootDialog)}"
+   };
+}
+
+```
+
+### Allowing interruptions
+<!--When your models are not cross trained, and a user utterance-->
+Prior to cross training your LUIS and QnA Maker models, if a user input does not result in a match from the recognizer, the bot will automatically send it to the active dialogs parent, as long as the `AllowInterruptions` property evaluates to _true_. When you cross train your models, the active dialog becomes aware of other dialogs intent handling capabilities, so if no match is returned, there is no need to consult the parent dialog. In this case, how do you determine if the active dialog should handle the users response or bubble it up to the parent? Consider this scenario using the  **todo bot with LUIS and QnA Maker** sample:
+
+> [!NOTE]
+> You can follow along by running the bot using the emulator, instructions for doing this are given in the next section [Testing the bot using Bot Framework Emulator](testing-the-bot-using-bot-framework-emulator).
+
+- When starting the bot the user is greeted with _Hi, nice to meet you! I'm a sample bot. Here are some things I can help with_, then prompted with SuggestedActions = **Add item | View lists | Remove item | Profile | Cancel | Help**
+- The user selects _View lists_
+
+> at this point the **ViewToDoDialog** becomes the active adaptive dialog
+
+- The user is prompted with _Which list would you like to see?_ and given these three options: **Todo | Grocery | Shopping | All**
+- Instead of selecting any of the options presented, the user enters _Remove todo_
+
+The utterance _Remove todo_ does not belong to any intents in the **ViewToDoDialog**, but since the models have been cross trained, LUIS returns a match. The bot just needs to know to use the consultation mechanism to bubble up the request to **RootDialog** where this utterance is associated with the intent that results in the **DeleteToDoDialog** being called.
+
+The code behind the list the user is prompted with in the **ViewToDoDialog**:
+
+[!code-csharp[AllowInterruptions](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/08.todo-bot-luis-qnamaker\Dialogs\ViewToDoDialog\ViewToDoDialog.cs?range=55-71&highlight=3-4,6)]
+
+**The following code snippet is for comparison with the code link above. Remove before merging with main**
+
+```csharp
+new TextInput()
+{
+   Property = "dialog.listType",                       //highlight
+   Prompt = new ActivityTemplate("${GetListType()}"),  //highlight
+   Value = "=@listType",
+   AllowInterruptions = "!@listType && turn.recognized.score >= 0.7",   //highlight
+   Validations = new List<BoolExpression>()
+   {
+      // Verify using expressions that the value is one of todo or shopping or grocery
+      "contains(createArray('todo', 'shopping', 'grocery', 'all'), toLower(this.value))",
+   },
+   OutputFormat = "=toLower(this.value)",
+   InvalidPrompt = new ActivityTemplate("${GetListType.Invalid()}"),
+   MaxTurnCount = 2,
+   DefaultValue = "todo",
+   DefaultValueResponse = new ActivityTemplate("${GetListType.DefaultValueResponse()}")
+},
+```
+
+- The `Prompt` for this `TextInput` calls the `GetListType()` template in **ViewToDoDialog.lg**.
+- The value returned from the user input is saved into `dialog.listType`. Shorthand for `dialog.listType` is `@listType`
+- The expression for AllowInterruptions checks `@listType`, which will exist if the user selected or entered a valid list type. if it does not exist it checks to see is teh match returned by LUIS has a 70% or higher prediction score `turn.recognized.score >= 0.7`. If it does, that means that a parent or sibling dialog has an intent with a high prediction score. This results in `AllowInterruptions` evaluating to true and the users utterance is then passed up to the parent dialog to be handled. When the parent dialog handles this utterance it finds a match in the `DeleteItem` intent which results in the **DeleteToDoDialog**.
+
+> [!NOTE]
+>
+>The concept article [Cross training your LUIS and QnA Maker models](bot-builder-concept-cross-train.md) describes the changes made to your `.lu` and `.qna` files when they are cross trained, and the [recognizer responses table](bot-builder-concept-cross-train.md#recognizer-responses) in that article shows all possible recognizer responses and the resulting action taken by the bot.
+
 
 ## Testing the bot using Bot Framework Emulator
 
