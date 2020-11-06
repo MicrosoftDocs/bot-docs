@@ -184,18 +184,18 @@ For each `.lu` file, including `.lu` files for each locale, the build command co
 The LUIS build command with its required parameters:
 
 ``` cli
-bf luis:build --in <input-file-or-folder> --out <output-file-or-folder> --authoringKey <subscription-key> --region <authoring-region>
+bf luis:build --in <input-file-or-folder> --out <output-file-or-folder> --botName <bot-name> --authoringKey <subscription-key> --region <authoring-region>
 ```
 
 The `luis:build` command will create all assets you need from your local `.lu` files. When using the `--in` option, `luis:build` will create one LUIS application for every `.lu` file found for each locale.
 
 ### Required luis:build parameters
 
-- `in`: The directory, including sub-directories, that will be searched for .lu files.
-- `out`: The directory to save output files to. This includes all the recognizer files as well as the settings file. If you omit the `--out` option, no files will be saved to disk and only the authoring keys and endpoint from the settings file will be written to the console.
-- `botName`: The name of your bot. This will be used as the prefix for the name of the LUIS applications generated.
-- `authoringKey`: The same value as the subscriptionKey used in all previous commands discussed in this article.
-- `region`: This defines the region to publish your LUIS applications.
+- `--in`: The directory, including sub-directories, that will be searched for .lu files.
+- `--out`: The directory to save output files to. This includes all the recognizer files as well as the settings file. If you omit the `--out` option, no files will be saved to disk and only the authoring keys and endpoint from the settings file will be written to the console.
+- `--botName`: The name of your bot. This will be used as the prefix for the name of the LUIS applications generated.
+- `--authoringKey`: The same value as the subscriptionKey used in all previous commands discussed in this article.
+- `--region`: This defines the region to publish your LUIS applications. defaults to _westus_ if omitted.
 
 For information on the additional options, see [bf luis:build][bf-luisbuild] in the BF CLI readme.
 
