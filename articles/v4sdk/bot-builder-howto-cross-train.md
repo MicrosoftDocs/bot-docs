@@ -518,7 +518,7 @@ The utterance _Remove todo_ does not belong to any intents in the **ViewToDoDial
 The code behind the list the user is prompted with in the **ViewToDoDialog**:
 
 [!code-csharp[AllowInterruptions](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/08.todo-bot-luis-qnamaker/Dialogs/ViewToDoDialog/ViewToDoDialog.cs?range=55-71&highlight=3-4,6)]
-
+<!--
 **The following code snippet is for comparison with the code link above. Remove before merging with main**
 
 ```csharp
@@ -540,9 +540,9 @@ new TextInput()
    DefaultValueResponse = new ActivityTemplate("${GetListType.DefaultValueResponse()}")
 },
 ```
-
+ -->
 - The `Prompt` for this `TextInput` calls the `GetListType()` template in **ViewToDoDialog.lg**.
-- The value returned from the user input is saved into `dialog.listType`. Shorthand for `dialog.listType` is `@listType`
+- The value returned from the user input is saved into `turn.recognized.entities.listType`. Shorthand for `turn.recognized.entities.listType` is `@listType`
 - The expression for AllowInterruptions checks `@listType`, which will exist if the user selected or entered a valid list type. if it does not exist it checks to see is teh match returned by LUIS has a 70% or higher prediction score `turn.recognized.score >= 0.7`. If it does, that means that a parent or sibling dialog has an intent with a high prediction score. This results in `AllowInterruptions` evaluating to true and the users utterance is then passed up to the parent dialog to be handled. When the parent dialog handles this utterance it finds a match in the `DeleteItem` intent which results in the **DeleteToDoDialog**.
 
 > [!NOTE]
