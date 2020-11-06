@@ -16,6 +16,8 @@ ms.date: 10/29/2020
 
 This article shows you how to build a bot by using the Python Echo Bot template, and then how to test it with the Bot Framework Emulator.
 
+Creating a bot with Azure Bot Service and creating a bot locally are independent, parallel ways to create a bot.
+
 <!-- Delete this include file [!INCLUDE [python quickstart](../includes/quickstart-python.md)] -->
 
 ## Prerequisites
