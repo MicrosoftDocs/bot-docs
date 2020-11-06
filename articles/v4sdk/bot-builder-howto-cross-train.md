@@ -416,7 +416,7 @@ In this sample bot, the recognizer is set by calling a method, passing the `conf
 Recognizer = CreateCrossTrainedRecognizer(configuration)
 ```
 
-The method `CreateCrossTrainedRecognizer` creates a `CrossTrainedRecognizerSet` recognizer that consists of a `Recognizers` list containing both a Luis and QnA Maker recognizer. Each recognizer is created by calling a method for each:
+The method `CreateCrossTrainedRecognizer` creates a `CrossTrainedRecognizerSet` recognizer that consists of a `Recognizers` list containing both a LUIS and QnA Maker recognizer. Each recognizer is created by calling a method for each:
 
 <!-- Line 318-328 -->
 
@@ -500,7 +500,7 @@ private static Recognizer CreateQnAMakerRecognizer(IConfiguration configuration)
 
 ### Allowing interruptions
 <!--When your models are not cross trained, and a user utterance-->
-Prior to cross training your LUIS and QnA Maker models, if a user input does not result in a match from the recognizer, the bot will automatically send it to the active dialogs parent, as long as the `AllowInterruptions` property evaluates to _true_. When you cross train your models, the active dialog becomes aware of other dialogs intent handling capabilities, so if no match is returned, there is no need to consult the parent dialog. In this case, how do you determine if the active dialog should handle the users response or bubble it up to the parent? Consider this scenario using the  **todo bot with LUIS and QnA Maker** sample:
+If a user input does not result in a match from the recognizer, prior to cross training your LUIS and QnA Maker models, the bot will automatically send it to the active dialogs parent, as long as the `AllowInterruptions` property evaluates to _true_. When you cross train your models, the active dialog becomes aware of other dialogs intent handling capabilities, so if no match is returned, there is no need to consult the parent dialog. In this case, how do you determine if the active dialog should handle the users response or bubble it up to the parent? Consider this scenario using the  **todo bot with LUIS and QnA Maker** sample:
 
 > [!NOTE]
 > You can follow along by running the bot using the emulator, instructions for doing this are given in the next section [Testing the bot using Bot Framework Emulator](testing-the-bot-using-bot-framework-emulator).
@@ -517,7 +517,7 @@ The utterance _Remove todo_ does not belong to any intents in the **ViewToDoDial
 
 The code behind the list the user is prompted with in the **ViewToDoDialog**:
 
-[!code-csharp[AllowInterruptions](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/08.todo-bot-luis-qnamaker\Dialogs\ViewToDoDialog\ViewToDoDialog.cs?range=55-71&highlight=3-4,6)]
+[!code-csharp[AllowInterruptions](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/08.todo-bot-luis-qnamaker/Dialogs/ViewToDoDialog/ViewToDoDialog.cs?range=55-71&highlight=3-4,6)]
 
 **The following code snippet is for comparison with the code link above. Remove before merging with main**
 
