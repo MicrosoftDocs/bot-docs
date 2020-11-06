@@ -50,7 +50,7 @@ Intents are how you categorize expected user intentions as expressed in their me
 
 Here is an example of a simple .lu file that captures a simple **Greeting** intent with a list of example utterances that capture different ways a user might express this intent. You can use a `-`, `+`, or `*` character to denote lists. Numbered lists are not supported.  
 
-```dos
+```lu
 # Greeting
 - Hi
 - Hello
@@ -72,7 +72,7 @@ Entities are a collection of objects, each consisting of data extracted from an 
 
 Entities in the [.lu file format][8] are defined in this format: `{<entityName>=<labelled value>}`, such as `{toCity=seattle}` (EntityName is _toCity_ and labelled value is _seattle_).  For example:
 
-```dos
+```lu
 # BookFlight
 - book a flight to {toCity=seattle}
 - book a flight from {fromCity=new york} to {toCity=seattle}

@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 05/17/2020
+ms.date: 10/26/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
