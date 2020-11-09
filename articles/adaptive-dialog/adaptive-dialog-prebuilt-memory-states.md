@@ -40,10 +40,8 @@ User scope is persistent data scoped to the ID of the user you are conversing wi
 
 Examples:
 
-```
-user.name
-user.address.city
-```
+- `user.name`
+- `user.address.city`
 
 ## Conversation scope
 
@@ -51,13 +49,11 @@ Conversation scope is persistent data scoped to the ID of the conversation you a
 
 Examples:
 
-```
-conversation.hasAccepted
-conversation.dateStarted
-conversation.lastMaleReference
-conversation.lastFemaleReference
-conversation.lastLocationReference
-```
+- `conversation.hasAccepted`
+- `conversation.dateStarted`
+- `conversation.lastMaleReference`
+- `conversation.lastFemaleReference`
+- `conversation.lastLocationReference`
 
 In the following example demonstrates how you might use the conversation scope to gather input from the user, creating a new `PropertyAssignment` object for use in the `SetProperties` [action][setproperties-action], getting the value from the conversation scope.
 
@@ -75,15 +71,8 @@ Dialog scope persists data for the life of the associated dialog, providing memo
 
 Dialog scope shorthand examples:
 
-```markdown
-The shorthand for `dialog.orderStarted`:
-
-    $orderStarted
-
-The shorthand for `dialog.shoppingCart`:
-
-    $shoppingCart
-```
+- The shorthand for `dialog.orderStarted` is `$orderStarted`.
+- The shorthand for `dialog.shoppingCart` is `$shoppingCart`.
 
 All options passed into `BeginDialog` when creating a new adaptive dialog become properties of that dialog and can be accessed as long as it is in scope. You access these properties by name: dialog.\<propertyName>. For example, if the caller passed {a : '1', b: '2'} then they will be set as dialog.a and dialog.b.
 
@@ -95,12 +84,10 @@ All trigger actions in an adaptive dialog have their own sub-scopes and are acce
 
 The turn scope contains _non-persistent_ data that is only scoped for the current turn. The turn scope provides a place to share data for the lifetime of the current turn.  
 
-### This scope example
+Examples:
 
-```
-turn.bookingConfirmation
-turn.activityProcessed
-```
+- `turn.bookingConfirmation`
+- `turn.activityProcessed`
 
 ### Turn sub-scopes
 
@@ -116,7 +103,7 @@ Sorry, I do not understand '${turn.activity.text}'. ${GetAge()}
 
 Or setting property values in your dialogs source code:
 
-```c#
+```csharp
 ItemsProperty = "turn.activity.membersAdded"
 ```
 
@@ -124,19 +111,19 @@ ItemsProperty = "turn.activity.membersAdded"
 
 All intents and entities returned from a [recognizer][recognizers] on any given turn, are automatically set in the `turn.recognized` scope and remain available until the next turn occurs. the `turn.recognized` scope has three properties:
 
-* `turn.recognized.intents.xxx`: A list of the top intents classified by the recognizer for that turn.
-* `turn.recognized.entities.xxx`: A list of entities recognized that turn.
-* `turn.recognized.score`: The _confidence score_ of the top scoring intent for that turn.
+- `turn.recognized.intents.xxx`: A list of the top intents classified by the recognizer for that turn.
+- `turn.recognized.entities.xxx`: A list of entities recognized that turn.
+- `turn.recognized.score`: The _confidence score_ of the top scoring intent for that turn.
 
 For example, a flight booking application might have a book flight intent with an entity for departure destinations and another entity for arrival destinations, the example below demonstrates how to capture the departure destination value before the turn ends.
 
-```c#
+```csharp
 Value = "=turn.recognized.entities.fromCity.location"
 ```
 
 There is another way to accomplish this using [memory short-hand notation](../v4sdk/bot-builder-concept-adaptive-dialog-memory-states.md#memory-short-hand-notations).
 
-```c#
+```csharp
 // Value is a property containing an expression. @entityName is shorthand to refer to the value of
 // the entity recognized. @fromCity.location is same as turn.recognized.entities.fromCity.location
 Value = "=@fromCity.location"
@@ -193,8 +180,8 @@ var recognizer = new QnAMakerRecognizer()
 
 The `this` scope pertains the active action's property bag. This is helpful for input actions since their life type typically lasts beyond a single turn of the conversation.
 
-* `this.value` holds the current recognized value for the input.
-* `this.turnCount` holds the number of times the missing information has been prompted for this input.
+- `this.value` holds the current recognized value for the input.
+- `this.turnCount` holds the number of times the missing information has been prompted for this input.
 
 This example shows a common usage in a bots startup class:
 
@@ -228,8 +215,8 @@ new TextInput()
 
 ## Additional information
 
-* For an introduction to managing state in adaptive dialogs, see the [Managing state in adaptive dialogs][managing-state] concept article.
-* [Memory short-hand notation](../v4sdk/bot-builder-concept-adaptive-dialog-memory-states.md#memory-short-hand-notations).
+- For an introduction to managing state in adaptive dialogs, see the [Managing state in adaptive dialogs][managing-state] concept article.
+- [Memory short-hand notation](../v4sdk/bot-builder-concept-adaptive-dialog-memory-states.md#memory-short-hand-notations).
 
 [managing-state]: ../v4sdk/bot-builder-concept-adaptive-dialog-memory-states.md
 [foreach-action]: ./adaptive-dialog-prebuilt-actions.md#foreach

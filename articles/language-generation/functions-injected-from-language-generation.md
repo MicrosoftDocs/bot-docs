@@ -54,7 +54,7 @@ Suppose you have the following template:
 
 and the following `herocard.json`:
 
-```lg
+```json
 {
   "title": "titleContent",
   "text": "textContent",
@@ -134,12 +134,12 @@ Say you have the following object:
 
 ```json
 {
-	"@answer": "hello ${user.name}",
-	"user": {
-		"name": "vivian"
-	}
+  "@answer": "hello ${user.name}",
+  "user": {
+    "name": "vivian"
+  }
 }
-``` 
+```
 
 Calling `expandText(@answer)` will result in the object **hello vivian**.
 
@@ -169,13 +169,13 @@ This example evaluates the result of calling the template as a function.
 Suppose you have the following template:
 
 ```lg
-    # welcome(userName)
+# welcome(userName)
 
-    - Hi ${userName}
+- Hi ${userName}
 
-    - Hello ${userName}
+- Hello ${userName}
 
-    - Hey ${userName}
+- Hey ${userName}
 ```
 
 Calling `template("welcome", "DL")` will result in one of the following:
@@ -207,10 +207,11 @@ fromFile(<filePath>)
 This example evaluates the result from the given file.
 
 Suppose you have a file called  `/home/user/test.txt`. Inside the file there is the following:
-```lg
-   `you have ${add(1,2)} alarms`
 
-    fromFile('/home/user/test.txt')
+```lg
+`you have ${add(1,2)} alarms`
+
+fromFile('/home/user/test.txt')
 ```
 
 The `fromFile()` function will evaluate the expression and the result will replace the original expression.

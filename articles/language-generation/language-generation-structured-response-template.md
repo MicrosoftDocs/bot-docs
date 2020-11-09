@@ -286,7 +286,7 @@ There are two prebuilt functions used to externally reference files
 
 With these two prebuilt functions, you can pull in any externally defined content, including all card types. Use the following structured LG to compose an activity:
 
-```
+```lg
 # AdaptiveCard
 [Activity
                 Attachments = ${ActivityAttachment(json(fromFile('../../card.json')), 'adaptiveCard')}
@@ -300,7 +300,7 @@ With these two prebuilt functions, you can pull in any externally defined conten
 
 You can also use attachments, seen below:
 
-```
+```lg
 # AdaptiveCard
 [Attachment
     contenttype = adaptivecard
