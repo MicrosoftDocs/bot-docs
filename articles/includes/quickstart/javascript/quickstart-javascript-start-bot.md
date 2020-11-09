@@ -1,4 +1,5 @@
-<!-- Include under ## Start your bot H2 header -->
+<!-- Include under "Start your bot" header in the files:
+bot-builder-tutorial-create-basic-bot.md and bot-builder-javascript-quickstart.md -->
 
 In a terminal or command prompt change directories to the one created for your bot, and start it with `npm start`.
 
