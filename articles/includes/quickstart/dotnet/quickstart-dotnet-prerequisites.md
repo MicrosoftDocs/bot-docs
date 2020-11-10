@@ -1,4 +1,5 @@
-<!-- Include under ## Prerequisites H2 header -->
+<!-- Include under "Prerequisites" header in the files:
+bot-builder-tutorial-create-basic-bot.md and bot-builder-dotnet-sdk-quickstart.md -->
 
 - [.NET Core 3.1](https://dotnet.microsoft.com/download)
 - [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)

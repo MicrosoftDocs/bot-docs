@@ -7,7 +7,7 @@ ms.author: v-mimiel
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 10/28/2020
+ms.date: 10/30/2020
 ---
 
 # Tutorial: Create a basic bot

@@ -1,5 +1,6 @@
 
-<!-- Include under ## Start your bot H2 header -->
+<!-- Include under "Start your bot" header in the files:
+bot-builder-tutorial-create-basic-bot.md and bot-builder-dotnet-sdk-quickstart.md -->
 
 # [Visual Studio](#tab/vs)
 

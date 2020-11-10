@@ -1,4 +1,5 @@
-<!-- Include under ## Prerequisites H2 header -->
+<!-- Include under "Prerequisites" header in the files:
+bot-builder-tutorial-create-basic-bot.md and bot-builder-javascript-quickstart.md -->
 
 - [Node.js](https://nodejs.org/)
 - [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
