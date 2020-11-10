@@ -172,7 +172,6 @@ Suppose you have the following template:
 # welcome(userName)
 - Hi ${userName}
 - Hello ${userName}
-
 - Hey ${userName}
 ```
 
