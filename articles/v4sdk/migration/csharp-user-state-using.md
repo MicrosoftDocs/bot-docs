@@ -12,6 +12,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Using .NET v3 user state in a v4 bot
 
+[!INCLUDE [applies-to-v4](../../includes/applies-to-v4-current.md)]
+
 This article shows an example of how a v4 bot can perform read, write, and delete operations on v3 user state information.
 The bot maintains conversation state using `MemoryStorage` to track and direct the conversation while asking the user questions.  It maintains the **user state** in the v3 format to track the user's answers by utilizing a custom `IStorage` class called `V3V4Storage`.  One of the arguments to this class is an `IBotDataStore`. The v3 SDK code base was copied into `Bot.Builder.Azure.V3V4` and contains all three v3 SDK storage providers (Azure Sql, Azure Table, and Cosmos Db).  The intent is to allow the existing v3 **user state** to be brought into a migrated v4 bot.
 

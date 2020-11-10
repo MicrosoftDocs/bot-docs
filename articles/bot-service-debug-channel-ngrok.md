@@ -14,6 +14,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Debug a bot from any channel using ngrok
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 When your bot is in development, you can [debug your bot locally using an IDE](https://docs.microsoft.com/azure/bot-service/bot-service-debug-bot?view=azure-bot-service-4.0) such as Visual Studio or Visual Studio Code. You can also [debug a bot using the Bot Framework Emulator](https://docs.microsoft.com/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-4.0) by chatting with your bot locally and inspect the messages your bot sends and receives. You can even make slight updates of your bot's code and enable the feature to [debug a bot with inspection middleware](https://docs.microsoft.com/azure/bot-service/bot-service-debug-inspection-middleware?view=azure-bot-service-4.0).
 
 When your bot is already in production, you can debug your bot from any [channel](https://docs.microsoft.com/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0) using **ngrok**. The seamless connection of your bot to multiple channels is a key feature available in Bot Framework. In this article, we will show you how to locally debug your bot from any channel your production bot is configured for, using **ngrok**. We used an [EchoBot](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/02.echo-bot) sample connected to [Microsoft Teams Channel](https://docs.microsoft.com/azure/bot-service/channel-connect-teams?view=azure-bot-service-4.0) throughout the article for instruction.

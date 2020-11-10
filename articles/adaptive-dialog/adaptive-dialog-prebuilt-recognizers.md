@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Recognizers in adaptive dialogs - reference guide
 
-[!INCLUDE [applies-to-v4](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 Recognizers enable your bot to understand user input and an adaptive dialog can have one or more recognizers configured. For additional information on recognizers see the [Recognizers in adaptive dialogs](../v4sdk/bot-builder-concept-adaptive-dialog-recognizers.md) article.
 
@@ -282,6 +282,109 @@ var adaptiveDialog = new AdaptiveDialog()
 };
 ```
 
+### Cross training your LUIS and QnA models
+
+To gain the full benefits of the cross-trained recognizer set, [cross train][cross-train-concepts] your `.lu` and `.qna` files. The Bot Framework Command Line Interface (BF CLI) tool provides a command to automate this process, the [luis:cross-train][bf-luiscross-train] and [qnamaker:cross-train][qnamaker-cross-train] commands. Running the cross-train command will create copies of the `.lu` and `.qna` files, make the required updates, then save to the specified directory.
+
+> [!TIP]
+>
+> To create the cross-trained files, both `.lu`  and `.qna`, you can use _either_ the BF CLI `luis:cross-train` or `qnamaker:cross-train` command. You do not need to run both commands since they both do the same thing. The following demonstrates using the `luis:cross-train` command:
+
+``` cli
+bf luis:cross-train -i <input-folder-name> -o <output-file-name> --config <cross-train-configuration-file>
+```
+
+For an end to end example of cross training your bot, see how to [Create a bot cross trained to use both LUIS and QnA Maker recognizers][howto-cross-train].
+
+### luis:cross-train required parameters
+
+- `--in`: The directory, including sub-directories, that will be searched for both `.lu` and `.qna` files.
+- `--out`: The directory that the new cross-trained `.lu` and `.qna` output files will be saved to. This is the directory to which you will point the `luis:build` command's `--in` option.
+- `--config`: This points to the cross-train configuration file, a JSON file that is necessary for the command to work. 
+
+#### The cross-train configuration file
+
+The following is the general structure of a cross-train configuration file.
+
+```json
+{
+    // list each .lu file including variations per lang x locale.
+    // Lang x locale is denoted using 4 letter code. e.g. it-it, fr-fr
+    // Paths can either be absolute (full) paths or paths relative to this config file.
+    "<path-of-language-file-to-train>": {
+        // indicate if this is an .lu file for the root dialog.
+        "rootDialog": <true-or-false>,
+        // list of triggers within that dialog
+        "triggers": {
+            // Key is name of intent within the .lu file (in this case RootDialog.lu)
+            // Value is the path to the child dialog's .lu file.
+            "<intent-name-1>": "<path-of-associated-child-dialog's-language-file>",
+            "<intent-name-2>": "<path-of-associated-child-dialog's-language-file>"
+            // And so on.
+        },
+    "<path-of-additional-language-file-to-train>": {
+        // indicate if this is an .lu file for the root dialog.
+        "rootDialog": <true-or-false>,
+        // list of triggers within that dialog
+        "triggers": {
+            "<intent-name-1>": "<path-of-associated-child-dialog's-language-file>",
+            "<intent-name-2>": "<path-of-associated-child-dialog's-language-file>"
+        }
+        // And so on.
+    }
+}
+```
+
+In the triggers section of the cross-train configuration file, list each intent in the root dialog along with the `.lu` file it points to. You only need to list the `.lu` files, `.qna` files will be cross trained as long as they are in the same directory with the same filename, for example _AddToDoDialog.qna_.
+
+For example, a bot with the following dialog structure:
+
+![dialog structure diagram](./media/dialog-structure.png)
+
+With the following directory structure:
+
+![directory structure diagram](./media/folder-structure.png)
+
+Would have a config file in the **Dialogs** directory that might look similar to this:
+
+```json
+{
+    "./rootDialog/rootDialog.lu": {
+        "rootDialog": true,
+        "triggers": {
+            "DialogA_intent": "./DialogA/DialogA.lu",
+            "DialogB_intent": "./DialogB/DialogB.lu"
+        }
+    },
+    "./DialogA/DialogA.lu": {
+        "triggers": {
+            "DialogA1_intent": "./DialogA/DialogA1/DialogA1.lu",
+            "DialogA2_intent": "./DialogA/DialogA2/DialogA2.lu",
+			"Intent-A-1": "",
+			"Intent-A-2": ""
+        }
+    },
+    "./DialogA/DialogA1/DialogA1.lu": {
+        "triggers": {
+            "DialogA1.1_intent": "./DialogA/DialogA1/DialogA1.1.lu",
+            "DialogA1.2_intent": "./DialogA/DialogA1/DialogA1.2.lu",
+        }
+    },
+    "./DialogB/DialogB.lu": {
+        "triggers": {
+            "DialogB1_intent": "./DialogB/DialogB1/DialogB1.lu",
+        }
+    }
+}
+
+```
+
+In the above JSON file, when the value portion of the key / value pair is blank, it refers to an intent that does not result in a new container adaptive dialog, but instead triggers an action associated with the specified `OnIntent` trigger.
+
+> [!TIP]
+>
+> If your bot only contains LUIS models, and no QnA Maker models, you can cross train just your LUIS models. For more information on cross training your LUIS models see [LUIS to LUIS Cross training][luis-to-luis-cross-training]
+
 ## Additional Information
 
 * [What is LUIS][5]
@@ -306,3 +409,9 @@ var adaptiveDialog = new AdaptiveDialog()
 [11]:https://aka.ms/luis-create-new-app-in-luis-portal
 [12]:https://qnamaker.ai
 [13]:https://azure.microsoft.com/services/cognitive-services/
+[cross-train-concepts]: ../v4sdk/bot-builder-concept-cross-train.md
+[luis-to-luis-cross-training]: ../v4sdk/bot-builder-concept-cross-train.md#luis-to-luis-cross-training
+[qnamaker-cross-train]: https://aka.ms/botframework-cli#bf-qnamakercross-train
+[bf-luiscross-train]: https://aka.ms/botframework-cli#bf-luiscross-train
+[cs-sample-todo-bot]: https://aka.ms/csharp-adaptive-dialog-08-todo-bot-luis-qnamaker-sample
+[howto-cross-train]: ../v4sdk/bot-builder-howto-cross-train.md

@@ -9,7 +9,10 @@ ms.topic: article
 ms.service: bot-service
 ms.date: 08/26/2019
 ---
+
 # Connect a bot to Microsoft Teams
+
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
 Bots in production should be added to Microsoft Teams as part of an app. Read [Create a bot](https://docs.microsoft.com/microsoftteams/platform/concepts/bots/bots-create) and [Test and debug your Microsoft Teams bot](https://docs.microsoft.com/microsoftteams/platform/concepts/bots/bots-test) in the Microsoft Teams documents for more information.
 

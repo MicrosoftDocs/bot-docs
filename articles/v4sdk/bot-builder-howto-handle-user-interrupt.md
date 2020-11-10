@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Handle user interruptions
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 Handling interruptions is an important aspect of a robust bot. Users will not always follow your defined conversation flow, step by step. They may try to ask a question in the middle of the process, or simply want to cancel it instead of completing it. In this topic, this topic describes some common ways to handle user interruptions in your bot.
 
@@ -43,11 +43,11 @@ Implement the `CancelAndHelpDialog` class to handle user interruptions. The canc
 
 [!code-csharp[Class signature](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/Dialogs/CancelAndHelpDialog.cs?range=12)]
 
-In the `CancelAndHelpDialog` class the `OnContinueDialogAsync` method calls the `InerruptAsync` method to check if the user has interrupted the normal flow. If the flow is interrupted, base class methods are called; otherwise, the return value from the `InterruptAsync` is returned.
+In the `CancelAndHelpDialog` class the `OnContinueDialogAsync` method calls the `InterruptAsync` method to check if the user has interrupted the normal flow. If the flow is interrupted, base class methods are called; otherwise, the return value from the `InterruptAsync` is returned.
 
 [!code-csharp[Overrides](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/Dialogs/CancelAndHelpDialog.cs?range=22-31)]
 
-If the user types "help", the `InterrupAsync` method sends a message and then calls `DialogTurnResult (DialogTurnStatus.Waiting)` to indicate that the dialog on top is waiting for a response from the user. In this way, the conversation flow is interrupted for a turn only, and the next turn continues from where the conversation left off.
+If the user types "help", the `InterruptAsync` method sends a message and then calls `DialogTurnResult (DialogTurnStatus.Waiting)` to indicate that the dialog on top is waiting for a response from the user. In this way, the conversation flow is interrupted for a turn only, and the next turn continues from where the conversation left off.
 
 If the user types "cancel", it calls `CancelAllDialogsAsync` on its inner dialog context, which clears its dialog stack and causes it to exit with a cancelled status and no result value. To the `MainDialog` (shown later on), it will appear that the booking dialog ended and returned null, similar to when the user chooses not to confirm their booking.
 
@@ -78,7 +78,7 @@ If the user types "cancel", it calls `cancelAllDialogs` on its inner dialog cont
 To use dialogs, install the `botbuilder-dialogs` package and make sure that the sample `requirements.txt` file contains the proper reference such as `botbuilder-dialogs>=4.5.0`.
 For more information, about installing the packages, see the samples repository [README](https://github.com/microsoft/botbuilder-python) file.
 > [!NOTE]
-> Doing `pip install botbuilder-dialogs` will also install `botbuilder-core`, `botbulder-connector`, and `botbuilder-schema`.
+> Running `pip install botbuilder-dialogs` will also install `botbuilder-core`, `botbuilder-connector`, and `botbuilder-schema`.
 
 **dialogs/cancel-and-help-dialog.py**
 
@@ -86,7 +86,7 @@ Implement the `CancelAndHelpDialog` class to handle user interruptions. The canc
 
 [!code-python[class signature](~/../botbuilder-samples/samples/python/13.core-bot/dialogs/cancel_and_help_dialog.py?range=14)]
 
-In the `CancelAndHelpDialog` class the `on_continue_dialog` method calls the `interrupt` method to check if the user has interrupted the normal flow. If the flow is interrupted, base class methods are called; otherwise, the return value from the `InterruptAsync` is returned.
+In the `CancelAndHelpDialog` class the `on_continue_dialog` method calls the `interrupt` method to check if the user has interrupted the normal flow. If the flow is interrupted, base class methods are called; otherwise, the return value from the `interrupt` is returned.
 
 [!code-python[dialog](~/../botbuilder-samples/samples/python/13.core-bot/dialogs/cancel_and_help_dialog.py?range=18-23)]
 
@@ -134,7 +134,7 @@ The code in `BookingDialog` is not shown here as it is not directly related to i
 
 **dialogs/main_dialog.py**
 
-As the new message activity arrives, the bot runs the `MainDialog`. The `MainDialog` prompts the user for what it can help with. And then it starts the `bookingDialog` in the `MainDialog.act_step` method, with a call to `begin_dialog` as shown below.
+As the new message activity arrives, the bot runs the `MainDialog`. The `MainDialog` prompts the user for what it can help with. And then it starts the `bookingDialog` in the `act_step` method, with a call to `begin_dialog` as shown below.
 
 [!code-python[act step](~/../botbuilder-samples/samples/python/13.core-bot/dialogs/main_dialog.py?range=63-100&highlight=4-6,20)]
 

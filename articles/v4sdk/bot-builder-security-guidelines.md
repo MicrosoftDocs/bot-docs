@@ -2,7 +2,7 @@
 title: Bot Framework security guidelines - Bot Service
 description: Learn about the security guidelines in the Bot Framework.
 author: kamrani
-ms.author: kamrani
+ms.author: v-mimiel
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
@@ -10,6 +10,8 @@ ms.date: 07/07/2020
 ---
 
 # Bot Framework security guidelines
+
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 Bots are more and more prevalent in key business areas like financial services, retail, travel, and so on. A bot might collect very sensitive data such as credit cards, SSN, bank accounts, and other personal information. So, it is important that bots are secure and protect against common threats and vulnerabilities.
 
@@ -93,7 +95,7 @@ The Bot Connector service natively uses HTTPS to exchange messages between a bot
 1. Use an `OAuthCard`, backed by the application information you supplied in the previous step, to sign-in a user.
 1. Retrieve access tokens through **Azure Bot Service API**. A good practice is to place a time limit on how long an authenticated user can stay *logged in*.
 
-For more information, see the [Bot authentication](~/v4sdk/bot-builder-concept-authentication.md) article.
+For more information, see the [User authentication](~/v4sdk/bot-builder-concept-authentication.md) article.
 
 ### Web Chat
 
@@ -122,7 +124,7 @@ When you use *Azure Bot Service authentication* with [Web Chat](~/bot-service-ch
 
 ## Additional information
 
-- [Bot authentication](~/v4sdk/bot-builder-concept-authentication.md)
+- [User authentication](~/v4sdk/bot-builder-concept-authentication.md)
 - [Add authentication to your bot via Azure Bot Service](~/v4sdk/bot-builder-authentication.md)
 - [Enable security and test on localhost](~/bot-service-troubleshoot-authentication-problems.md#step-3-enable-security-and-test-on-localhost-)
 - [Secrets and tokens](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md#secrets-and-tokens)

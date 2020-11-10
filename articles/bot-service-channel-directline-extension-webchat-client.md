@@ -12,6 +12,8 @@ ms.date: 07/25/2019
 
 # Use Web Chat with the direct line app service extension
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 This article describes how to use Web Chat with the Direct Line app service extension. Web Chat version 4.9.1 or higher is required for native Direct Line app service extension support.
 
 ## Integrate Web Chat client
@@ -23,7 +25,7 @@ Generally speaking, the approach is the same as before. With the exception that 
 The Direct Line URL for your bot will be `https://<your_app_service>.azurewebsites.net/.bot/`, the Direct Line **endpoint** on your app service extension.
 If you configure your own domain name, or your bot is hosted in a sovereign Azure cloud, substitute in the appropriate URL and append the `/.bot/` path to access the Direct Line app service extension's REST APIs.
 
-1. Exchange the secret for a token by following the instructions in the [Authentication](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0) article. Instead of obtaining a token at `https://directline.botframework.com/v3/directline/tokens/generate`, you will generate the token directly from your Direct Line App Service Extension at  `https://<your_app_service>.azurewebsites.net/.bot/v3/directline/tokens/generate`.
+1. Exchange the secret for a token by following the instructions in the [Authentication](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0&preserve-view=true) article. Instead of obtaining a token at `https://directline.botframework.com/v3/directline/tokens/generate`, you will generate the token directly from your Direct Line App Service Extension at  `https://<your_app_service>.azurewebsites.net/.bot/v3/directline/tokens/generate`.
 
 1. For an example that shows how to fetch a token see [Web Chat Samples](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/01.getting-started/i.protocol-direct-line-app-service-extension).
 
@@ -62,7 +64,7 @@ If you configure your own domain name, or your bot is hosted in a sovereign Azur
     <script>
       (async function() {
         <!-- NOTE: It is highly recommended to replace the below fetch with a call to your own token service as described in step 2 above, and to avoid exposing your channel secret in client side code. -->
-        const res = await fetch('https://<your_app_service>.azurewebsites.net/.bot/v3/directline/tokens/generate', { method: 'POST', Headers:{'Authorization':'Bearer ' + '<Your Bot's Direct Line channel secret>'}});
+        const res = await fetch('https://<your_app_service>.azurewebsites.net/.bot/v3/directline/tokens/generate', { method: 'POST', headers:{'Authorization':'Bearer ' + '<Your Bot's Direct Line channel secret>'}});
         const { token } = await res.json();
 
         window.WebChat.renderWebChat(
@@ -80,5 +82,16 @@ If you configure your own domain name, or your bot is hosted in a sovereign Azur
     </script>
   </body>
 </html>
+```
 
+> [!TIP]
+> In the `JavaScript` bot implementation, make sure that `websockets` are enabled in the `web.config` file, as shown below.
+
+```xml
+<configuration>
+    <system.webServer>
+        <webSocket enabled="true"/>
+        ...
+    </system.webServer>
+</configuration>
 ```

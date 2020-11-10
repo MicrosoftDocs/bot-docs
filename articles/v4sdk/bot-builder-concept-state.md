@@ -7,23 +7,23 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 04/03/2020
+ms.date: 11/04/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
 # Managing state
 
-[!INCLUDE [applies-to-v4](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 State within a bot follows the same paradigms as modern web applications, and the Bot Framework SDK provides some abstractions to make state management easier.
 
-As with web apps, a bot is inherently stateless; a different instance of your bot may handle any given turn of the conversation. For some bots, this simplicity is preferred - the bot can either operate without additional information, or the information required is guaranteed to be within the incoming message. For others, state (such as where in the conversation we are or previously received data about the user) is necessary for the bot to have a useful conversation.
+As with web apps, a bot is inherently stateless; a different instance of your bot may handle any given turn of the conversation. For some bots, this simplicity is preferred&mdash;the bot can either operate without additional information, or the information required is guaranteed to be within the incoming message. For others, state (such as where the conversation left off or data previously received about the user) is necessary for the bot to have a useful conversation.
 
 **Why do I need state?**
 
 Maintaining state allows your bot to have more meaningful conversations by remembering certain things about a user or conversation. For example, if you've talked to a user previously, you can save previous information about them, so that you don't have to ask for it again. State also keeps data for longer than the current turn, so that your bot keeps information over the course of a multi-turn conversation.
 
-As it pertains to bots, there are a few layers to using state which we'll cover here: the storage layer, state management (contained in the bot state in the diagram below), and state property accessors. This diagram illustrates parts of the interaction sequence between these layers, with the solid arrows representing a method call, and the dashed arrows representing the response (with or without a return value).
+As it pertains to bots, there are a few layers to using state: the storage layer, state management (contained in the bot state in the diagram below), and state property accessors. This diagram illustrates parts of the interaction sequence between these layers, with the solid arrows representing a method call, and the dashed arrows representing the response (with or without a return value).
 
 ![bot state](media/bot-builder-state.png)
 
@@ -31,7 +31,7 @@ The flow of this diagram is explained in following sections with details each of
 
 ## Storage layer
 
-Starting at the backend, where the state information is actually stored, is our *storage layer*. This can be thought of as our physical storage, such as in-memory, Azure, or a third party server.
+Starting at the backend, where the state information is actually stored, is the *storage layer*. This can be thought of as your physical storage, such as in-memory, Azure, or a third party server.
 
 The Bot Framework SDK includes some implementations for the storage layer:
 
@@ -40,7 +40,7 @@ The Bot Framework SDK includes some implementations for the storage layer:
 - **Azure Cosmos DB partitioned storage** connects to a partitioned Cosmos DB NoSQL database.
 
 >[!IMPORTANT]
-> The _Cosmos DB storage_ class has been deprecated. Containers originally created with CosmosDbStorage had no partition key set, and were given the default partition key of _\/_partitionKey_.
+> The _Cosmos DB storage_ class has been deprecated. Containers originally created with CosmosDbStorage had no partition key set, and were given the default partition key of "\/_partitionKey".
 >
 > Containers created with _Cosmos DB storage_ can be used with _Cosmos DB partitioned storage_. Read [Partitioning in Azure Cosmos DB](https://aka.ms/azure-cosmosdb-partitioning-overview) for more information.
 >
@@ -99,6 +99,8 @@ For details on using these predefined buckets, see the [state how-to article](bo
 ### Connecting to multiple databases
 
 If your bot needs to connect to multiple databases, create a storage layer for each database.
+You might choose to use multiple databases if your bot collects information that has different security, concurrency, or data location needs.
+
 For each storage layer, create the state management objects you need to support your state properties.
 
 ## State property accessors
@@ -128,6 +130,17 @@ The accessor methods are the primary way for your bot to interact with state. Ho
   - Check the changes to the property in the state cache.
   - Write that property to storage.
 
+## State in dialogs
+
+The dialogs library uses a dialog state property accessor, defined on the bot's conversation state, to retain a dialog's place in the conversation. The dialog state property also allows each dialog to store transient information in between turns.
+
+Adaptive dialogs have a more elaborate memory scope structure, which makes it easier to access configuration and recognition results, among other things. The _dialog manager_ uses the user and conversation state management objects to provide these memory scopes.
+
+For information about the dialogs library, see the [dialogs library](bot-builder-concept-dialog.md) article.
+
+- See [about component and waterfall dialogs](bot-builder-concept-waterfall-dialogs.md) for information specific to those types of dialogs.
+- See the [introduction to adaptive dialogs](bot-builder-adaptive-dialog-introduction.md) and [managing state in adaptive dialogs](bot-builder-concept-adaptive-dialog-memory-states.md) articles for information specific to adaptive dialogs.
+
 ## Saving state
 
 When you call the accessor's set method to record the updated state, that state property has not yet been saved to your persisted storage, and instead is only saved to your bot's state cache. To save any changes in the state cache to your persisted state, you must call the state management object's *save changes* method, which is available on the implementation of the bot state class mentioned above (such as user state or conversation state).
@@ -141,7 +154,5 @@ If you have some custom middleware that might update state after your turn handl
 
 ## Additional resources
 
-- [Dialog state](bot-builder-concept-dialog.md#dialog-state)
 - [Write directly to storage](bot-builder-howto-v4-storage.md)
 - [Save conversation and user data](bot-builder-howto-v4-state.md)
-

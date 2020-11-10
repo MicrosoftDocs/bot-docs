@@ -7,19 +7,35 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 05/23/2019
-monikerRange: 'azure-bot-service-4.0'
+ms.date: 10/29/2020
 ---
 
 # Create a bot with the Bot Framework SDK for JavaScript
 
-[!INCLUDE [applies-to-v4](../includes/applies-to.md)]
 
-This quickstart walks you through building a single bot by using the Yeoman Bot Builder generator and the Bot Framework SDK for JavaScript, and then testing it with the Bot Framework Emulator.
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
+
+This article shows you how to build a bot by using the Yeoman Bot Builder generator and the Bot Framework SDK for JavaScript, and then how to test it with the Bot Framework Emulator.
 
 [!INCLUDE [Azure vs local development](../includes/snippet-quickstart-paths.md)]
 
-[!INCLUDE [javascript quickstart](../includes/quickstart-javascript.md)]
+<!-- Delete this include file [!INCLUDE [javascript quickstart](../includes/quickstart-javascript.md)] -->
+
+## Prerequisites
+
+[!INCLUDE [dotnet prerequisites](~/includes/quickstart/javascript/quickstart-javascript-prerequisites.md)]
+
+## Create a bot
+
+[!INCLUDE [dotnet quickstart create bot](~/includes/quickstart/javascript/quickstart-javascript-create-bot.md)]
+
+## Start your bot
+
+[!INCLUDE [dotnet quickstart start bot](~/includes/quickstart/javascript/quickstart-javascript-start-bot.md)]
+
+## Start the Emulator and connect your bot
+
+[!INCLUDE [dotnet quickstart start emulator](~/includes/quickstart/common/quickstart-start-emulator.md)]
 
 ## Additional resources
 

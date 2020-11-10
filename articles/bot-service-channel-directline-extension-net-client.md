@@ -12,6 +12,8 @@ ms.date: 07/25/2019
 
 # Create .NET Client to Connect to Direct Line App Service Extension
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 This article describes how to create a .NET client in C# which connects to the direct line app service extension.
 Please, also read this companion article [Configure .NET bot for extension](bot-service-channel-directline-extension-net-bot.md).
 
@@ -53,7 +55,7 @@ Interactions with the direct line app service extension happen differently than 
     - Click on Dependencies in the Solution tree
     - Select **Manage Nuget Packages...**
     - Change the Package source to `DL ASE Preview` (see the section [Add the preview Nuget package source](#add-the-preview-nuget-package-source))
-    - Find the package [Microsoft.Bot.Connector.Directline](https://www.nuget.org/packages/Microsoft.Bot.Connector.DirectLine/3.0.3-Preview1) version v3.0.3-Preview1 or later.
+    - Find the package [Microsoft.Bot.Connector.Directline](https://botbuilder.myget.org/feed/experimental/package/nuget/Microsoft.Bot.Connector.DirectLine) version v3.0.3-Preview1 or later.
     - Click on **Install Package**.
 1. Create a client and generate a token using a secret. This step is the same as building any other C# Direct Line client except the endpoint you need use in your bot,appended with the **.bot/** path as shown next. Do not forget the ending **/**.
 

@@ -12,10 +12,9 @@ ms.date: 01/16/2020
 
 # Configure .NET bot for extension
 
-[!INCLUDE[applies-to-v4](includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
 This article describes how to update a bot to work with **named pipes**, and how to enable the Direct Line app service extension in the **Azure App Service** resource where the bot is hosted.
-
 
 ## Prerequisites
 
@@ -90,14 +89,14 @@ This section describes how to enable the Direct Line app service extension using
     |---|---|
     |DirectLineExtensionABSEndpoint|<URL_of_Direct_Line_App_Gateway>|
 
-    Where *URL_of_Direct_Line_App_Gateway* is specific to the Azure cloud your bot is hosted in.
+    Where *URL_of_Direct_Line_App_Gateway* is specific to the Azure cloud your bot is hosted in. For USGov this value is `https://directline.botframework.azure.us/v3/extension`.
 
 1. Still within the *Configuration* section, click on the **General** settings section and turn on **Web sockets**
 1. Click on **Save** to save the settings. This restarts the Azure App Service.
 
 ## Confirm Direct Line app extension and the bot are configured
 
-In your browser, navigate to https://<your_app_service>.azurewebsites.net/.bot.
+In your browser, navigate to `https://<your_app_service>.azurewebsites.net/.bot`.
 If everything is correct, the page will return this JSON content: `{"v":"123","k":true,"ib":true,"ob":true,"initialized":true}`. This is the information you obtain when **everything works correctly**, where
 
 - **v** displays the build version of the Direct Line App Service Extension (ASE).
@@ -108,14 +107,14 @@ If everything is correct, the page will return this JSON content: `{"v":"123","k
 
 ## Troubleshooting
 
-- If the *ib* and *ob* values displayed by the **.bot endpoint* are false this means the bot and the Direct Line app service extension are unable to connect to each other. 
+- If the *ib* and *ob* values displayed by the **.bot endpoint* are false this means the bot and the Direct Line app service extension are unable to connect to each other.
     1. Double check the code for using named pipes has been added to the bot.
     1. Confirm the bot is able to start up and run at all. Useful tools are **Test in WebChat**, connecting an additional channel, remote debugging, or logging.
     1. Restart the entire **Azure App Service** the bot is hosted within, to ensure a clean start up of all processes.
 
-- If you are receiving "HTTP Error 500.34 - ANCM Mixed Hosting" it is due to your bot attempting to use the *InProcess* Hosting Model. This is remedied by explicitly setting the bot to run *OutOfProcess* instead. See [Out of Process Hosting Model.](https://docs.microsoft.com/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#out-of-process-hosting-model)
+- If you are receiving "HTTP Error 500.34 - ANCM Mixed Hosting" it is due to your bot attempting to use the *InProcess* Hosting Model. This is remedied by explicitly setting the bot to run *OutOfProcess* instead. See [Out of Process Hosting Model.](https://docs.microsoft.com/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#out-of-process-hosting-model)
 
-- If the *initialized* value of the **.bot endpoint** is false it means the Direct Line app service extension is unable to validate the **App Service Extension Key** added to the bot's *Application Settings* above. 
+- If the *initialized* value of the **.bot endpoint** is false it means the Direct Line app service extension is unable to validate the **App Service Extension Key** added to the bot's *Application Settings* above.
     1. Confirm the value was correctly entered.
     1. Switch to the alternative **App Service Extension Key** shown on your bot's **Direct Line channel configuration page**.
 

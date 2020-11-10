@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # .lg file format
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 The `.lg` file describes language generation templates with entity references and their composition. This article covers the various concepts expressed with the `.lg` file format.
 
@@ -77,11 +77,17 @@ Returns the following JSON object:
   - an [adaptive expression][3]
   - a list of one-of variation text values per condition
 
-Template names follow the Markdown header definition.
+### Template names
+
+Template names are case-sensitive and can only contain letters, underscores, numbers. The following is an example of a template named `TemplateName`. 
 
 ```.lg
 # TemplateName
 ```
+
+Templates cannot start with a number, and any part of a template name split by **.** cannot start with a number.
+
+### Template response variations
 
 Variations are expressed as a Markdown list. You can prefix each variation using the **-**, **'**, or **+** character.
 
@@ -108,7 +114,7 @@ A simple response template includes one or more variations of text that are used
 Here is an example of a simple template that includes two variations.
 
 ```.lg
-> Greeting template with 2 variations.
+> Greeting template with two variations.
 # GreetingPrefix
 - Hi
 - Hello

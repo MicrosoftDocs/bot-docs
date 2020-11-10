@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Tutorial: Use QnA Maker in your bot to answer questions
 
-[!INCLUDE [applies-to-v4](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 You can use the QnA Maker service and a knowledge base to add question-and-answer support to your bot. When you create your knowledge base, you seed it with questions and answers.
 
@@ -29,7 +29,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 ## Prerequisites
 
-* The bot created in the [previous tutorial](bot-builder-tutorial-basic-deploy.md). We will add a question-and-answer feature to the bot.
+* The bot created in the [previous tutorial](bot-builder-tutorial-create-basic-bot.md). We will add a question-and-answer feature to the bot.
 * Some familiarity with [QnA Maker](https://qnamaker.ai/) is helpful. We will use the QnA Maker portal to create, train, and publish the knowledge base to use with the bot.
 * Familiarity with [QnA bot creation](https://aka.ms/azure-create-qna) using Azure Bot Service.
 
@@ -343,9 +343,9 @@ Update your initialization code to load the service information for your knowled
    def __init__(self, config: Config):
       self.qna_maker = QnAMaker(
          QnAMakerEndpoint(
-            knowledge_base_id=config["QNA_KNOWLEDGEBASE_ID"],
-            endpoint_key=config["QNA_ENDPOINT_KEY"],
-            host=config["QNA_ENDPOINT_HOST"],
+            knowledge_base_id=config.QNA_KNOWLEDGEBASE_ID,
+            endpoint_key=config.QNA_ENDPOINT_KEY,
+            host=config.QNA_ENDPOINT_HOST,
       )
    )
 
@@ -384,7 +384,7 @@ At this point your bot should be able to answer some questions. Run the bot loca
 
 ## Republish your bot
 
-You can now republish your bot back to Azure. You need to zip your project folder and then run the command to deploy your bot to Azure. For details please read the [deploy a bot](https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0&tabs=csharp) article.
+You can now republish your bot back to Azure. You need to zip your project folder and then run the command to deploy your bot to Azure. For details please read the [deploy a bot](../bot-builder-deploy-az-cli.md) article.
 
 ### Zip your project folder
 

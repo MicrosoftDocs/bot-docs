@@ -9,12 +9,7 @@ ms.service: bot-service
 ms.date: 12/13/2017
 ---
 
-# Add rich card attachments to messages
-
-> [!div class="op_single_selector"]
-> - [.NET](../dotnet/bot-builder-dotnet-add-rich-card-attachments.md)
-> - [Node.js](../nodejs/bot-builder-nodejs-send-rich-cards.md)
-> - [REST](../rest-api/bot-framework-rest-connector-add-rich-cards.md)
+# Adding rich card attachments to messages with the Bot Connector API
 
 Some channels allow your bot to send _rich cards_ to users. A rich card is an attachment that contains interactive elements, such as buttons, text, images, audio, video, and so on.
 

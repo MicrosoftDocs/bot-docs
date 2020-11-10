@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Add natural language understanding to your bot
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 The ability to understand what your user means conversationally and contextually can be a difficult task, but can provide your bot a more natural conversation feel. _Language Understanding (LUIS)_ is a cloud-based API service that enables you to do just that so that your bot can recognize the intent of user messages, allow for more natural language from your user, and better direct the conversation flow.
 
@@ -92,6 +92,10 @@ This article covers how to add LUIS to a bot. For information about using dialog
 1. In the **Import new app** dialog:
     1. Choose the **FlightBooking.json** file in the **CognitiveModels** folder of the sample.
     1. Enter `FlightBooking` as the optional name of the app, and click **Done**.
+1. You may be prompted to upgrade your composite entities. You can ignore this and click **Remind me later**:
+
+    ![ignore-composite-entities](./media/how-to-luis/luis-upgrade-composite-entities.png)
+
 1. Train and publish your app.
     For more information, see the LUIS documentation on how to [train](/azure/cognitive-services/LUIS/luis-how-to-train) and [publish](/azure/cognitive-services/LUIS/publishapp) an app to the production environment.
 
@@ -115,7 +119,7 @@ The settings file (`appsettings.json`, `.env` or `config.py`) acts as the place 
 1. Select the **Azure Resources** tab on the left side and select the **Authoring Resource** group.
     Record the value shown for _Location_ as \<YOUR_REGION> and _Primary Key_ as \<YOUR_AUTHORING_KEY>.
     > [!div class="mx-imgBorder"]
-    > ![Manage LUIS app - Application Information](./media/how-to-luis/manage-luis-app-azure-resources.png)
+    > ![Manage LUIS app - Authoring Information](./media/how-to-luis/manage-luis-app-azure-resources.png)
 
 ### Update the settings file
 

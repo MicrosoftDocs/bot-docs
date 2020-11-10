@@ -13,15 +13,9 @@ monikerRange: 'azure-bot-service-4.0'
 
 # User authentication
 
-At times a bot must access secured online resources on behalf of the user. To do that the bot must be authorized. The authorization takes the form of a bearer token. This is accomplished using OAuth and by a set of components that are part of the **Azure Bot Service** architecture as described below.
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-1. **Bot Channels Registration application**. This is the mechanism to *integrate* a bot within the Azure infrastructure, which allows the user to communicate via channels with the bot.
-1. **Bot**. The bot can be hosted anywhere, including Azure.
-1. **Identity provider application**. This application is needed for each secured resource the bot must access on behalf of the user. It is the **identity provider** which allows the bot to *access an external secured resource*, such as Office 365 MSGraph. The Azure Active Directory is the identity provider to access Microsoft secured resources. Many other identity providers exist, for example GitHub, to access their secured resources.
-
-The following picture shows the architecture of the Azure Bot Service which uses the Azure AD as the identity provider for authentication.
-
-![Azure Bot Service architecture](media/concept-bot-authentication/azure-bot-service-architecture.png)
+At times a bot must access secured online resources on behalf of the user, such as checking email, checking on flight status, or placing an order. The user must authorize the bot to do so on their behalf, and in order to authorize the bot, the user must authenticate their identity. **OAuth** is used to authenticate the user and authorize the bot. See also [Authentication types](bot-builder-concept-authentication-types.md).
 
 If you want to refresh your OAuth knowledge, see the following:
 
@@ -108,5 +102,5 @@ Now that you know about user authentication, let's take a look at how to apply t
 ## See also
 
 - [Identity providers](bot-builder-concept-identity-providers.md)
-- [REST Connector authentication](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-connector-authentication?view=azure-bot-service-4.0)
-- [REST Directline authentication](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0)
+- [REST Connector authentication](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-connector-authentication?view=azure-bot-service-4.0&preserve-view=true)
+- [REST Directline authentication](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0&preserve-view=true)

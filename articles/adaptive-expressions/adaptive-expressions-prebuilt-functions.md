@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Adaptive expressions prebuilt functions
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 This article lists the available prebuilt functions ordered by their general purpose. For information about operators used in prebuilt functions and expression syntax, see [Operators](../v4sdk/bot-builder-concept-adaptive-expressions.md#operators).
 
@@ -31,9 +31,9 @@ Prebuilt expressions are divided into the following function types:
 - [Regular expression](#regular-expression-functions)
 - [Type checking](#type-checking-functions)
 
-You can also view the list in [alphabetical order](#add).
+You can also view the list in [alphabetical order](#prebuilt-functions-sorted-alphabetically).
 
-### String functions
+## String functions
 
 |Function	|Explanation|
 |-----------|-----------|
@@ -56,7 +56,7 @@ You can also view the list in [alphabetical order](#add).
 |[sentenceCase](#sentenceCase)|Capitalize the first letter of the first word in a string in an optional local format.|
 |[titleCase](#titleCase)|Capitalize the first letter of each word in a string in an optional locale format.|
 
-### Collection functions
+## Collection functions
 
 |Function	|Explanation|
 |-----------|-----------|
@@ -79,7 +79,7 @@ You can also view the list in [alphabetical order](#add).
 |[flatten](#flatten)|Flatten arrays into an array with non-array values.|
 |[unique](#unique)|Remove all duplicates from an array.|
 
-### Logical comparison functions
+## Logical comparison functions
 
 |Function|Explanation|
 |-----------|-----------|
@@ -95,12 +95,12 @@ You can also view the list in [alphabetical order](#add).
 |[or](#or)|Logical or opearation. Return `true` if at least one expression is true, or return `false` if all are false.|
 |[exists](#exists)|Evaluate an expression for truthiness.|
 
-### Conversion functions
+## Conversion functions
 
 |Function|Explanation|
 |-----------|-----------|
-|[float](#float)|Return the floating point representation of the specified string or the string itself if conversion isn't possible.|
-|[int](#int)|Return the integer representation of the specified string or the string itself if conversion isn't possible.|
+|[float](#float)|Return the floating point representation of the specified string. | 
+|[int](#int)|Return the integer representation of the specified string. |
 |[string](#string)|Return the string version of the specified value in an optional locale format.|
 |[bool](#bool)|Return the Boolean representation of the specified string.|
 |[createArray](#createArray)|Create an array from multiple inputs.|
@@ -117,7 +117,7 @@ You can also view the list in [alphabetical order](#add).
 |[xml](#xml)|C# only. Return the XML version of a string.|
 |[formatNumber](#formatNumber)|Format a value to the nearest number to the specified number of fractional digits and an optional specified locale.|
 
-### Math functions
+## Math functions
 
 |Function|Explanation|
 |-----------|-----------|
@@ -137,7 +137,7 @@ You can also view the list in [alphabetical order](#add).
 |[ceiling](#ceiling)|Return the smallest integral value greater than or equal to the specified number.|
 |[round](#round)|Round a value to the nearest integer or to the specified number of fractional digits.|
 
-### Date and time functions
+## Date and time functions
 
 |Function|Explanation|
 |-----------|-----------|
@@ -176,7 +176,7 @@ You can also view the list in [alphabetical order](#add).
 |[getPreviousViableTime](#getPreviousViableTime) | Return the previous viable time of a timex expression based on the current time and an optionally specified timezone. |
 |[getNextViableTime](#getNextViableTime) | Return the next viable time of a timex expression based on the current time and an optionally specified timezone. |
 
-### Timex functions
+## Timex functions
 
 |Function	|Explanation|
 |-----------|-----------|
@@ -188,7 +188,7 @@ You can also view the list in [alphabetical order](#add).
 |[isDateRange](#isDateRange)    | Return true if the TimexProperty or Timex expression refers to a date range. |
 |[isDefinite](#isDefinite)    | Return true if the TimexProperty or Timex expression refers to a definite day. |
 
-### URI parsing functions
+## URI parsing functions
 
 |Function|Explanation|
 |-----------|-----------|
@@ -199,7 +199,7 @@ You can also view the list in [alphabetical order](#add).
 |[uriQuery](#uriQuery) |Retur0sn the query value of a uniform resouce identifier (URI).|
 |[uriScheme](#uriScheme)|Return the scheme value of a uniform resource identifier (URI).  |
 
-### Object manipulation and construction functions
+## Object manipulation and construction functions
 
 |Function|Explanation|
 |-----------|-----------|
@@ -212,13 +212,13 @@ You can also view the list in [alphabetical order](#add).
 |[jPath](#jPath)   |Check JSON or a JSON string for nodes or value that match a path expression, and return the matching nodes.|
 |[setPathToValue](#setPathToValue)   |Set the value of a specific path and return the value.|
 
-### Regular expression functions
+## Regular expression functions
 
 |Function|Explanation|
 |-----------|-----------|
 |[isMatch](#isMatch)|Return true if a string matches a common regex pattern.|
 
-### Type checking functions
+## Type checking functions
 
 |Function|Explanation|
 |-----------|-----------|
@@ -230,6 +230,9 @@ You can also view the list in [alphabetical order](#add).
 |[isObject](#isObject)|Return true if the given input is an object.|
 |[isDateTime](#isDateTime)|Return true if the given input is a UTC ISO format	timestamp.|
 |[isString](#isString)|Return true if the given input is a string.|
+
+
+## Prebuilt functions sorted alphabetically
 
 <a name="add"></a>
 
@@ -287,7 +290,7 @@ addDays('<timestamp>', <days>, '<format>'?, '<locale>'?)
 | <*timestamp*> | Yes | string | The string that contains the timestamp which must be standard UTC ISO format<br>YYYY-MM-DDTHH:mm:ss.fffZ |
 | <*days*> | Yes | integer | The positive or negative number of days to add |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
-| <*locale*> | No | string | An optional locale of culture infomation | 
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |
@@ -340,7 +343,7 @@ addHours('<timestamp>', <hours>, '<format>'?, '<locale>'?)
 | <*timestamp*> | Yes | string | The string that contains the timestamp |
 | <*hours*> | Yes | integer | The positive or negative number of hours to add |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
-| <*locale*> | No | string | An optional locale of culture infomation | 
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |
@@ -393,7 +396,7 @@ addMinutes('<timestamp>', <minutes>, '<format>'?, '<locale>'?)
 | <*timestamp*> | Yes | string | The string that contains the timestamp |
 | <*minutes*> | Yes | integer | The positive or negative number of minutes to add |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
-| <*locale*> | No | string | An optional locale of culture infomation | 
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |
@@ -556,7 +559,7 @@ addToTime('<timestamp>', '<interval>', <timeUnit>, '<format>'?, '<locale>'?)
 | <*interval*> | Yes | integer | The number of specified time units to add |
 | <*timeUnit*> | Yes | string | The unit of time to use with *interval*. Possible units are "Second", "Minute", "Hour", "Day", "Week", "Month", and "Year". |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
-| <*locale*> | No | string | An optional locale of culture infomation | 
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |
@@ -1095,7 +1098,7 @@ convertFromUTC('<timestamp>', '<destinationTimeZone>', '<format>'?, '<locale>'?)
 | <*timestamp*> | Yes | string | The string that contains the timestamp |
 | <*destinationTimeZone*> | Yes | string | The name of the target time zone. Supports Windows and Iana time zones. |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
-| <*locale*> | No | string | An optional locale of culture infomation | 
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |
@@ -1142,7 +1145,7 @@ convertToUTC('<timestamp>', '<sourceTimeZone>', '<format>'?, '<locale>'?)
 | <*timestamp*> | Yes | string | The string that contains the timestamp |
 | <*sourceTimeZone*> | Yes | string | The name of the target time zone. Supports Windows and Iana time zones. |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
-| <*locale*> | No | string | An optional locale of culture infomation | 
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |
@@ -1806,7 +1809,7 @@ And returns the result **[1, 2, [3, 4], [5, 6]]**.
 
 ### float
 
-Convert the string version of a floating-point number to a floating-point number. You can use this function only when passing custom parameters to an app, such as a logic app.
+Convert the string version of a floating-point number to a floating-point number. You can use this function only when passing custom parameters to an app, such as a logic app. An exception will be thrown if the string cannot be converted to a float.
 
 ```
 float('<value>')
@@ -1919,7 +1922,7 @@ formatDateTime('<timestamp>', '<format>'?, '<locale>'?)
 | --------- | -------- | ---- | ----------- |
 | <*timestamp*> | Yes | string | The string that contains the timestamp |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
-| <*locale*> | No | string | An optional locale of culture infomation | 
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 
@@ -1962,7 +1965,7 @@ formatEpoch('<epoch>', '<format>'?, '<locale>'?)
 | --------- | -------- | ---- | ----------- |
 | <*epoch*> | Yes | number | The epoch number |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
-| <*locale*> | No | string | An optional locale of culture infomation | 
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |
@@ -2036,7 +2039,7 @@ And return the following results respectively:
 
 - **12.12**
 - **1.55**
--**12.1230**
+- **12.1230**
 
 
 <a name="formatTicks"></a>
@@ -2053,7 +2056,7 @@ formatTicks('<ticks>', '<format>'?, '<locale>'?)
 | --------- | -------- | ---- | ----------- |
 | <*epoch*> | Yes | number (or bigint in Javascript)| The ticks number |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
-| <*locale*> | No | string | An optional locale of culture infomation | 
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |
@@ -2096,7 +2099,7 @@ getFutureTime(<interval>, <timeUnit>, '<format>'?, '<locale>'?)
 | <*interval*> | Yes | integer | The number of specific time units to add |
 | <*timeUnit*> | Yes | string | The unit of time to use with *interval*. Possible units are "Second", "Minute", "Hour", "Day", "Week", "Month", and "Year".|
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
-| <*locale*> | No | string | An optional locale of culture infomation | 
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |
@@ -2149,7 +2152,7 @@ getNextViableDate(<timexString>, <timezone>?)
 | <*timexString*> | Yes | string | The timex string of the date to evaluate. |
 | <*timezone*> | No | string | The optional timezone. |
 |||||
-	
+
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
 | <*nextViableTime*> | string | The next viable date. |
@@ -2186,7 +2189,7 @@ getNextViableTime(<timexString>, <timezone>?)
 | <*timexString*> | Yes | string | The timex string of the time to evaluate. |
 | <*timezone*> | No | string | The optional timezone. |
 |||||
-	
+
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
 | <*nextViableTime*> | string | The next viable time. |
@@ -2200,7 +2203,7 @@ These examples evaluate a timex string for the next viable time based on the abo
 
 ```
 getNextViableTime("TXX:12:14", "Asia/Tokyo")
-getNextViableTime("TXX:52:14") 
+getNextViableTime("TXX:52:14")
 ```
 
 And return the following strings repsectively:
@@ -2275,7 +2278,7 @@ getPreviousViableDate(<timexString>, <timezone>?)
 | <*timexString*> | Yes | string | The timex string of the date to evaluate. |
 | <*timezone*> | No | string | The optional timezone. |
 |||||
-	
+
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
 | <*previousViableDate*> | string | The previous viable date. |
@@ -2289,7 +2292,7 @@ These examples evaluate a timex string for the previous viable date based on the
 
 ```
 getPreviousViableDate("XXXX-12-20", "Eastern Standard Time")
-getPreviousViableDate("XXXX-02-29") 
+getPreviousViableDate("XXXX-02-29")
 ```
 
 And return the following strings repsectively:
@@ -2312,7 +2315,7 @@ getPreviousViableTime(<timexString>, <timezone>?)
 | <*timexString*> | Yes | string | The timex string of the time to evaluate. |
 | <*timezone*> | No | string | The optional timezone. |
 |||||
-	
+
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
 | <*previousViableTime*> | string | The previous viable time. |
@@ -2326,7 +2329,7 @@ These examples evaluate a timex string for the previous viable time based on the
 
 ```
 getPreviousViableTime("TXX:52:14")
-getPreviousViableTime("TXX:12:14", 'Europe/London') 
+getPreviousViableTime("TXX:12:14", 'Europe/London')
 ```
 
 And return the following strings repsectively:
@@ -2713,7 +2716,7 @@ And returns a new object:
 
 ### int
 
-Return the integer version of a string.
+Return the integer version of a string. An exception will be thrown if the string cannot be converted to an integer.
 
 ```
 int('<value>')
@@ -3447,7 +3450,7 @@ json('<value>')
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*JSON-result*> | string | The resulting string created from all the items in the specified array |
+| <*JSON-result*> | string | The resulting JSON object created from the specified string or XML. |
 ||||
 
 *Example 1*
@@ -4222,7 +4225,7 @@ sentenceCase('<text>', '<locale>'?)
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*text*> | Yes | string | The original string |
-| <*locale*> | No | string | An optional locale of culture infomation | 
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |
@@ -4542,7 +4545,7 @@ startOfDay('<timestamp>', '<format>'?, '<locale>'?)
 | --------- | -------- | ---- | ----------- |
 | <*timestamp*> | Yes | string | The string that contains the timestamp |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
-| <*locale*> | No | string | An optional locale of culture infomation | 
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |
@@ -4584,7 +4587,7 @@ startOfHour('<timestamp>', '<format>'?, '<locale>'?)
 | --------- | -------- | ---- | ----------- |
 | <*timestamp*> | Yes | string | The string that contains the timestamp |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
-| <*locale*> | No | string | An optional locale of culture infomation | 
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |
@@ -4626,7 +4629,7 @@ startOfMonth('<timestamp>', '<format>'?, '<locale>'?)
 | --------- | -------- | ---- | ----------- |
 | <*timestamp*> | Yes | string | The string that contains the timestamp |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
-| <*locale*> | No | string | An optional locale of culture infomation | 
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |
@@ -4708,7 +4711,7 @@ string(<value>, '<locale>'?)
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*value*> | Yes | any | The value to convert |
-| <*locale*> | No | string | An optional locale of culture infomation | 
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |
@@ -4734,7 +4737,7 @@ This example creates a string for the specified JSON object and uses the backsla
 string( { "name": "Sophie Owen" } )
 ```
 
-And returns the result **{ \\"name\\": \\"Sophie Owen\\" }**
+And returns the result **{ "name": "Sophie Owen" }**
 
 *Example 3*
 
@@ -4861,7 +4864,7 @@ subtractFromTime('<timestamp>', <interval>, '<timeUnit>', '<format>'?, '<locale>
 | <*interval*> | Yes | integer | The number of specified time units to subtract |
 | <*timeUnit*> | Yes | string | The unit of time to use with *interval*. Possible units are "Second", "Minute", "Hour", "Day", "Week", "Month", and "Year". |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
-| <*locale*> | No | string | An optional locale of culture infomation | 
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |
@@ -5098,7 +5101,7 @@ titleCase('<text>', '<locale>'?)
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*text*> | Yes | string | The original string |
-| <*locale*> | No | string | An optional locale of culture infomation | 
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |
@@ -5149,7 +5152,7 @@ toLower('<text>', '<locale>'?)
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*text*> | Yes | string | The string to return in lowercase format |
-| <*locale*> | No | string | An optional locale of culture infomation | 
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |
@@ -5190,7 +5193,7 @@ toUpper('<text>', '<locale>'?)
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*text*> | Yes | string | The string to return in uppercase format |
-| <*locale*> | No | string | An optional locale of culture infomation | 
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |
@@ -5565,7 +5568,7 @@ Optionally, you can specify a different format with the <*format*> parameter.
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
-| <*locale*> | No | string | An optional locale of culture infomation | 
+| <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
 | Return value | Type | Description |

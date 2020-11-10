@@ -39,21 +39,6 @@ The Bot Framework provides client libraries that facilitate access to Direct Lin
 
 - To use the Node.js client library, install the `botframework-directlinejs` library using <a href="https://www.npmjs.com/package/botframework-directlinejs" target="_blank">NPM</a> (or <a href="https://github.com/Microsoft/BotFramework-DirectLineJS" target="_blank">download</a> the source).
 
-::: moniker range="azure-bot-service-3.0"
-
-### Sample code
-
-The <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/v3-sdk-samples" target="_blank">BotBuilder-Samples</a> GitHub repo contains multiple samples that show how to use Direct Line API 3.0 with C# and Node.js.
-
-| Sample | Language | Description |
-|----|----|----|
-| <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/v3-sdk-samples/CSharp/core-DirectLine" target="_blank">Direct Line Bot Sample</a> | C# | A sample bot and a custom client communicating to each other using the Direct Line API. |
-| <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/v3-sdk-samples/CSharp/core-DirectLineWebSockets" target="_blank">Direct Line Bot Sample (using client WebSockets)</a> | C# | A sample bot and a custom client communicating to each other using the Direct Line API and WebSockets. |
-| <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/v3-sdk-samples/Node/core-DirectLine" target="_blank">Direct Line Bot Sample</a> | JavaScript | A sample bot and a custom client communicating to each other using the Direct Line API. |
-| <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/v3-sdk-samples/Node/core-DirectLineWebSockets" target="_blank">Direct Line Bot Sample (using client WebSockets)</a> | JavaScript | A sample bot and a custom client communicating to each other using the Direct Line API and WebSockets. |
-
-::: moniker-end
-
 ### Web chat control 
 
 The Bot Framework provides a control that enables you to embed a Direct-Line-powered bot into your client application. For more information, see the <a href="https://github.com/Microsoft/BotFramework-WebChat" target="_blank">Microsoft Bot Framework WebChat control</a>.

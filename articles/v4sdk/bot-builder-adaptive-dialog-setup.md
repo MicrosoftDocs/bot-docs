@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Create a bot project for adaptive dialogs  
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 If you want to write an adaptive dialog from scratch or consume a dialog that was authored in the Bot Framework Composer, you will need certain scaffolding in place that is not required for other types of bot projects.
 

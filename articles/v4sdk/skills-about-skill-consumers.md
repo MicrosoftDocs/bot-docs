@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # About skill consumers
 
-[!INCLUDE [applies-to-v4](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 A _skill consumer_ is a bot that can call one or more skills.
 With respect to skills, a _root bot_ is a user-facing bot that is also a skill consumer.

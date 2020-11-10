@@ -13,13 +13,13 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Implement custom storage for your bot
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 A bot's interactions fall into three areas: firstly, the exchange of Activities with the Azure Bot Service, secondly,
 the loading and saving of dialog state with a Store, and finally any other back-end services the bot needs to work with
 to get its job done.
 
-![scaleout diagram](../media/scale-out/scale-out-interaction.png)
+![scaleout interaction diagram](../media/scale-out/scale-out-interaction.png)
 
 ## Prerequisites
 
@@ -46,7 +46,7 @@ equally well in the framework and may even be more appropriate for the applicati
 Firstly, let's review the default implementation that ships as part of the framework packages as shown by the following
 sequence diagram:
 
-![scaleout diagram](../media/scale-out/scale-out-default.png)
+![scaleout default diagram](../media/scale-out/scale-out-default.png)
 
 On receiving an Activity, the bot loads the state corresponding to this conversation. It then runs the dialog logic
 with this state and the Activity that has just arrived. In the process of executing the dialog, one or more outbound
@@ -80,7 +80,7 @@ storage technologies and the right extension points in the bot framework.
 We will use a standard HTTP mechanism based on the entity tag header, (ETag). Understanding this mechanism is crucial to
 understanding the code that follows. The following diagram illustrates the sequence.
 
-![scaleout diagram](../media/scale-out/scale-out-precondition-failed.png)
+![scaleout precondition failed diagram](../media/scale-out/scale-out-precondition-failed.png)
 
 The diagram illustrates the case of two clients that are performing an update to some resource. When a client issues a
 GET request and a resource is returned from the server, it is accompanied by an ETag header. The ETag header is an opaque
@@ -116,12 +116,12 @@ The key thing we want to avoid with sending the activities is sending them multi
 buffer the outbound activities from the dialog until we are sure we are not going to rerun the logic. That is until after we
 have a successful Save operation. We are looking for a flow that looks something like the following:
 
-![scaleout diagram](../media/scale-out/scale-out-buffer.png)
+![scaleout buffer diagram](../media/scale-out/scale-out-buffer.png)
 
 Assuming we can build a retry loop around the dialog execution we get the following behavior when there is a
 precondition failure on the Save operation:
 
-![scaleout diagram](../media/scale-out/scale-out-save.png)
+![scaleout save diagram](../media/scale-out/scale-out-save.png)
 
 Applying this mechanism and revisiting our example from earlier we should never see an erroneous positive acknowledgment of a pizza topping being added to an order. In fact, although we might have scaled out our deployment across multiple machines, we have effectively serialized our state updates with the optimistic locking scheme. In our pizza ordering but the acknowledgement from adding an item can now even be written to reflect the full state accurately. For example, if the user immediately types "cheese" and then before the bot has had a chance to reply "mushroom" the two replies can now be "pizza with cheese" and then "pizza with cheese and mushroom."
 

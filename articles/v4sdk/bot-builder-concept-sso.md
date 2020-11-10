@@ -1,6 +1,6 @@
 ---
-title: Single sign on Azure Bot Service - Bot Service
-description: Learn about single sign on in the Azure Bot Service.
+title: Single sign on - Bot Service
+description: Learn about single sign on (SSO) to allow a client to communicate with a bot or skill in the Azure Bot Service.
 keywords: azure bot service, authentication, bot framework token service
 author: kamrani
 ms.author: kamrani
@@ -12,6 +12,8 @@ monikerRange: 'azure-bot-service-4.0'
 ---
 
 # Single sign on
+
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 Single Sign on (SSO) allows a client, such as virtual assistant, WebChat and so on, to communicate with a bot or skill on behalf of the user.
 Currently, only the [Azure AD v2](./bot-builder-concept-identity-providers.md#azure-active-directory-identity-provider) identity provider is supported.

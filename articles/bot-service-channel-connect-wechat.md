@@ -12,6 +12,8 @@ ms.date: 11/01/2019
 
 # Connect a bot to WeChat
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 You can configure your bot to communicate with people using the WeChat Official Accounts Platform.
 
 ## Download WeChat Adapter for Bot Framework
@@ -45,7 +47,7 @@ The Bot Project is a regular Bot Framework SDK V4 project. Before you can launch
 
 ### Prerequisites
 
-    .NET Core SDK (version 2.2.x)
+- .NET Core SDK (version 2.2.x)
 
 ### Add Reference To WeChat Adapter Source
 

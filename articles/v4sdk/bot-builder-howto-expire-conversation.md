@@ -3,7 +3,7 @@ title: Expire a conversation - Bot Service
 description: Learn how to expire a user's conversation with a bot.
 keywords: expire, timeout
 author: ericdahlvang
-ms.author: ericdahlvang
+ms.author: erdahlva
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Expire a conversation
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 A bot sometimes needs to restart a conversation from the beginning.  For instance, if a user does not respond after a certain period of time.  This article describes two methods for expiring a conversation:
 

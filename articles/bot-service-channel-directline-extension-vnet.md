@@ -12,6 +12,8 @@ ms.date: 07/25/2019
 
 # Use direct line app service extension within a VNET
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 This article describes how to use the Direct Line App Service Extension with an Azure Virtual Network (VNET).
 
 ## Create an App Service Environment and other Azure resources

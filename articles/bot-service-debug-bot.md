@@ -1,5 +1,5 @@
 ---
-title: Debug a bot - Bot Service
+title: How to debug a bot - Bot Service
 description: Learn how to use the Bot Framework Emulator to debug bots. See how to set breakpoints in IDEs and how to exchange messages with bots during debugging.
 author: v-ducvo
 ms.author: kamrani
@@ -11,9 +11,9 @@ ms.date: 06/04/2020
 monikerRange: "azure-bot-service-4.0"
 ---
 
-# Debug a bot
+# Debugging a bot
 
-[!INCLUDE [applies-to](./includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
 This article describes how to debug your bot using an integrated development environment (IDE) such as Visual Studio or Visual Studio Code and the Bot Framework Emulator. While you can use these methods to debug any bot locally, this article uses a [C#](~/dotnet/bot-builder-dotnet-sdk-quickstart.md), [Javascript](~/javascript/bot-builder-javascript-quickstart.md), or [Python](~/python/bot-builder-python-quickstart.md) bot created in the quickstart.
 

@@ -11,10 +11,9 @@ ms.date: 05/16/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-
 # .qna file format
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 .qna files contain Markdown-like text based definitions for [QnAmaker.ai](http://qnamaker.ai) concepts. This article covers the various concepts expressed via the .qna file format.
 
@@ -32,7 +31,7 @@ Supported concepts:
 
 ## Adding comments
 
-You can add comments to your .qna document by prefixing the comment with **>**.
+Use **>** to create a comment. Here's an example:
 
 ```.qna
 > This is a comment and will be ignored
@@ -40,19 +39,19 @@ You can add comments to your .qna document by prefixing the comment with **>**.
 
 ## Question and Answer pairs
 
-The .qna file (and parser) supports question and answer definitions.
+The .qna file and parser support question and answer definitions.
 
-Here's an example of basic question and answer definition.
+Here's the syntax of a basic question and answer definition:
 
 ```.qna
 	# ? Question
 	[list of question variations]
-	```.qna
+	```
 	Answer
 	```
 ```
 
-Here's an example of question and answer definitions.
+Here's are examples of question and answer definitions:
 
 
 ```.qna
@@ -78,10 +77,10 @@ Note that the `markdown` type identifier for an `answer` is optional.
 You can add multiple questions to the same answer by simply adding variations to questions.
 
 ```.qna
-### ? Who is your ceo?
-- get me your ceo info
-	```.qna
-		Vishwac
+### ? Aren't you feeling happy today?
+- Feeling cheerful?
+	```markdown
+		I'm quite happy, thank you.
 	```
 ```
 
@@ -89,7 +88,7 @@ You can add multiple questions to the same answer by simply adding variations to
 
 Filters in QnA Maker are simple key-value pairs that can be used to narrow search results, boost answers and store context.
 
-Use the following notation to add filters.
+Use the following syntax to add filters:
 
 ```.qna
 ***Filters:***
@@ -97,7 +96,7 @@ Use the following notation to add filters.
 - name = value
 ```
 
-Here's an example of how a filter could be used.
+Here's an example of how a filter could be used:
 
 ```.qna
 ### ? Where can I get coffee?
@@ -106,7 +105,7 @@ Here's an example of how a filter could be used.
 **Filters:**
 - location = seattle
 
-    ```.qna
+    ```.markdown
     You can get coffee in our Seattle store at 1 pike place, Seattle, WA
     ```
 
@@ -116,11 +115,12 @@ Here's an example of how a filter could be used.
 **Filters:**
 - location = portland
 
-    ```.qna
+    ```.markdown
     You can get coffee in our Portland store at 52 marine drive, Portland, OR
     ```
 ```
 
+<!---
 ## QnA Maker alterations
 
 QnA Maker supports [word alterations](https://docs.microsoft.com/azure/cognitive-services/qnamaker/concepts/best-practices#use-synonyms) as a way to improve the likelihood that a given user query is answered with an appropriate response. You can use this feature to add synonyms to keywords that take different form.
@@ -137,6 +137,7 @@ $botframework : qna-alterations=
 - bot framework
 - Microsoft bot framework
 ```
+--> 
 
 ## QnA Maker PDF file ingestion
 
@@ -152,29 +153,29 @@ External references are supported in the .qna file and use Markdown link syntax.
 
 ### Reference another .qna file
 
-Reference to another .qna file using `\[link name](\<.qna file name\>)`. References can be an absolute path or a relative path from the containing .qna file.
+Reference to another .qna file using `[link name](<.qna file name>)`. References can be an absolute path or a relative path from the containing .qna file.
 
 ### Reference to a folder containing .qna files
 
 Reference to a folder with other .qna files is supported through:
 
-- `\[link name](\<.qna file path\>/*)` will look for .qna files under the specified absolute or relative path.
-- `\[link name](\<.qna file path\>/**)` will recursively look for .qna files under the specified absolute or relative path including sub-folders.
+- `[link name](<.qna file path>/*)`: looks for .qna files under the specified absolute or relative path.
+- `[link name](<.qna file path>/**)`: recursively looks for .qna files under the specified absolute or relative path including subfolders.
 
 ### Reference a URL
 
-Reference a URL for QnAMaker to ingest during KB creation via `\[link name](\<URL\>)`.
+Reference a URL for QnAMaker to ingest during KB creation via `[link name](<URL>)`.
 
 ### Reference from a specific file
 
-You can also add references to utterances defined in a specific file under an Intent section or as QnA pairs.
+You can also add references to utterances defined in a specific file under an intent section or as QnA pairs.
 
-- `[link name](<.lu file path>#<INTENT-NAME>)` finds all utterances found under <INTENT-NAME> in the .lu file and adds them to the list of questions where the reference is specified.
-- `[link name](\<.lu file path>#*utterances*)` finds all utterances in the .lu file and adds them to the list of questions where the reference is specified.
-- `\[link name](\<.qna file path\>#?)` finds questions from all QnA pairs defined in the .qna file and adds them to the list of utterances where this reference is specified.
-- `\[link name](\<.qna folder\>/*#?)` finds all questions from all .qna files in the specified folder and adds them to the list of utterances where this reference is specified.
+- `[link name](<.lu file path>#<INTENT-NAME>)`: finds all utterances found under <INTENT-NAME> in the .lu file and adds them to the list of questions where the reference is specified.
+- `[link name](<.lu file path>#*utterances*)`: finds all utterances in the .lu file and adds them to the list of questions where the reference is specified.
+- `[link name](<.qna file path>#?)`: finds questions from all QnA pairs defined in the .qna file and adds them to the list of utterances where this reference is specified.
+- `[link name](<.qna folder>/*#?)`: finds all questions from all .qna files in the specified folder and adds them to the list of utterances where this reference is specified.
 
-Here's an example of those references.
+Here's an example of the above references:
 
 ```.qna
 > QnA URL reference
@@ -186,26 +187,26 @@ Here's an example of those references.
 > Look for all .qna files under a path
 [ChitChat](./chitchat/*)
 
-> Recursively look for .qna files under a path including sub-folders.
-[Chit chat](../chitchat/resources/**)
+> Recursively look for .qna files under a path including subfolders.
+[ChitChat](../chitchat/resources/**)
 ```
 
 ## Model description
 
 You can include configuration information for your LUIS application or QnA Maker KB in the .qna file to help direct the parser to handle the LU content correctly.
 
-Here's how to add configuration information.
+Here's how to add configuration information sing **> !#**:
 
 ```.qna
-> !# @\<property> = \<value>
-> !# @\<scope>-\<property> = \<value>
-> !# @\<scope>-\<property> = \<semicolon-delimited-key-value-pairs>
+> !# @<property> = <value>
+> !# @<scope>-<property> = <value>
+> !# @<scope>-<property> = <semicolon-delimited-key-value-pairs>
 ```
 
 Note that any information explicitly passed in via CLI arguments will override information in the .qna file.
 
 ```.qna
-> Parser instruction - this is optional; unless specified, parser will default to the latest version.
+> Parser instruction - this is optional; unless specified, the parser will default to the latest version.
 > !# @version = 1.0
 
 > QnA Maker KB description
@@ -217,13 +218,13 @@ Note that any information explicitly passed in via CLI arguments will override i
 
 ## Multiturn content
 
-Multiturn content is represented in .qna format using Markdown link notation. Links are specified using the following notation.
+Multiturn content is represented in .qna format using Markdown link notation. Links are specified using the following way:
 
 ```
 - [display text](#<ID or question>)
 ```
 
-You can optionally include `context-only` for any prompts that are only contextually available for this question. Read  the section about [adding an existing question-and-answer pair as a follow-up prompt][1] to learn more about use of `context`.
+You can optionally include `context-only` for any prompts that are only contextually available for a question. Read  the section about [adding an existing question-and-answer pair as a follow-up prompt][1] to learn more about use of `context`.
 
 ```.qna
 - [tell me a joke](#?joke) `context-only`
@@ -235,13 +236,14 @@ Developers have two options for creating follow-up prompts: using a question as 
 
 ### Use a question directly
 
-1. The first QnA pair that has the link text as a `question` will be added as the prompt. If you need more explicit control, use [IDs](#question-and-answer-pairs) instead.
-2. When you are directly using a question, use Markdown convention and replace spaces with hyphens (for example, use `#?when-is-the-portland-store-open` instead of `#?when is the portland store open`). The parser will do its best to find the link.
+The first QnA pair that has the link text as a `question` will be added as the prompt. If you need more explicit control, use [IDs](#question-and-answer-pairs) instead.
+
+When you're directly using a question, use Markdown convention and replace spaces with hyphens (for example, use `#?when-is-the-portland-store-open` instead of `#?when is the portland store open`). The parser will do its best to find the link.
 
 ```.qna
 # ?store hours
 	```
-		Most our stores are open M-F 9AM-10PM
+		Most our stores are open M-F 9AM-10PM.
 	```
 **Prompts:**
 - [Seattle store](#?seattle)
@@ -249,13 +251,13 @@ Developers have two options for creating follow-up prompts: using a question as 
 
 # ?seattle
 	```
-		Seattle store is open M-F 9AM-10PM
+		The Seattle store is open M-F 9AM-10PM.
 	```
 
 # ?when is the portland store open
 - portland store hours
 	```
-		Portland store is open 24x7.
+		The Portland store is open 24/7.
 	```
 ```
 
@@ -268,7 +270,7 @@ Assign IDs for each prompt with a number. You can see in the example below the p
 ```.qna
 # ?store hours
 	```
-		Most our stores are open M-F 9AM-10PM
+		Most our stores are open M-F 9AM-10PM.
 	```
 **Prompts:**
 - [Seattle store](#1)
@@ -278,7 +280,7 @@ Assign IDs for each prompt with a number. You can see in the example below the p
 
 # ?seattle
 	```
-		Seattle store is open M-F 9AM-10PM
+		The Seattle store is open M-F 9AM-10PM.
 	```
 
 <a id = "2"></a>
@@ -286,7 +288,7 @@ Assign IDs for each prompt with a number. You can see in the example below the p
 # ?when is the portland store open
 - portland store hours
 	```
-		Portland store is open 24x7.
+		The Portland store is open 24/7.
 	```
 ```
 

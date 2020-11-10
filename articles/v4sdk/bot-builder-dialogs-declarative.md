@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Create a bot using declarative adaptive dialogs  
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 This article shows how to create a bot that incorporates an **Adaptive dialog** using the declarative approach.
 
@@ -22,7 +22,7 @@ This article shows how to create a bot that incorporates an **Adaptive dialog** 
 - Knowledge of [bot basics][concept-basics], [managing state][concept-state], and the [dialogs library][concept-dialogs].
 - Knowledge of [adaptive dialogs][concept-adaptive] and [declarative dialogs][concept-declarative].
 - Knowledge of the basic concepts of how to [Create a bot using adaptive dialogs][how-to-adaptive], this article builds on that knowledge.
-- A copy of the declarative **EchoBot** sample in either [**C#**][cs-sample] or [**JavaScript** preview][js-sample].
+- A copy of the declarative **EchoBot** [C# sample][cs-sample].
 
 ### Preliminary steps to add a declarative adaptive dialog to a bot
 
@@ -57,7 +57,7 @@ Declarative dialog files are language-agnostic JSON files that declare the eleme
 > [!TIP]
 > [Bot Framework Composer](https://aka.ms/composer) is an integrated development tool that developers and multi-disciplinary teams can use to build bots. The bots created by Bot Framework Composer are built using the declarative approach.
 
-The declarative file ([C#][main.dialog] | [JavaScript][echo.dialog]) for the **EchoBot** sample:
+The [declarative file][main.dialog] for the **EchoBot** sample:
 
 ```json
 {
@@ -90,8 +90,6 @@ To create the schema file referenced in the `.dialog` file you need the [Bot Fra
 npm i -g @microsoft/botframework-cli
 ```
 
-# [C#](#tab/csharp)
-
 Using the Bot Framework Command-Line Interface (BF CLI) in the command line, from the root directory of your project run `bf dialog:merge <filename.csproj>`:
 
 ```cmd
@@ -105,24 +103,10 @@ This creates a file named App.Schema in the same directory that the command was 
 '$ bf dialog:merge libraries/*.schema -o app.schema'
 -->
 
-# [JavaScript](#tab/javascript)
-
-Using the Bot Framework Command-Line Interface (BF CLI) in the command line, from the root directory of your project run `bf dialog:merge <projectFilename>`:
-
-```cmd
-bf dialog:merge package.json
-```
-
-This creates a file named App.Schema in the same directory that the command was executed in.
-
----
-
 > [!TIP]
 > If the `"$schema` keyword is missing, or points to an invalid or non-existent file you will not get any warnings or errors and it will not impact the functionality of your bot when running, however a valid App.Schema file is required for _Intelligent code completion_ tools such as [IntelliSense][intelliSense] to work with any of the declarative assets.
 
 ## Add references to declarative components
-
-# [C#](#tab/csharp)
 
 Declarative only works with adaptive dialogs. To enable adaptive in your bot install the **Microsoft.Bot.Builder.Dialogs.Adaptive** NuGet package, then create the following references in your code in **Startup.cs**:
 
@@ -139,26 +123,7 @@ using Microsoft.Bot.Builder.Dialogs.Declarative.Resources;
 ```
 -->
 
-# [JavaScript](#tab/javascript)
-
-Declarative only works with adaptive dialogs. To use adaptive dialogs, your project needs to install the **botbuilder-dialogs-adaptive** npm package. Once installed you can enable declarative by creating the following references in your code in **index.js**:
-
-<!--[!code-JavaScript[AdaptiveDialogComponentRegistration](~/../botbuilder-samples/blob/master/experimental/adaptive-dialog/javascript_nodejs/20.echo-bot-declarative/index.js?range=4-10&highlight=4-5)]-->
-
-```JavaScript
-const { ResourceExplorer } = require('botbuilder-dialogs-declarative');
-const { AdaptiveDialogComponentRegistration, LanguageGeneratorMiddleWare } = require('botbuilder-dialogs-adaptive');
-const { DialogManager } = require('botbuilder-dialogs');
-```
-
-> [!TIP]
-> `require()` is not part of the standard JavaScript API. But in `Node.js`, it's a built-in function used to load modules. You can find more information in the [Modules][nodejs-modules] section of the Node.js docs.
-
----
-
 ## Register declarative components for adaptive dialogs
-
-# [C#](#tab/csharp)
 
 [!code-CSharp[ConfigureServices](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/20.EchoBot-declarative/Startup.cs?range=30-67&highlight=6-16,33-34)]
 
@@ -171,22 +136,9 @@ services.AddSingleton(resourceExplorer);
 ```
 -->
 
-# [JavaScript](#tab/javascript)
-
-<!--[!code-JavaScript[AdaptiveDialogComponentRegistration](~/../botbuilder-samples/blob/master/experimental/adaptive-dialog/javascript_nodejs/20.echo-bot-declarative/index.js?range=20-22)]-->
-
-```JavaScript
-const resourceExplorer = new ResourceExplorer().addFolder(__dirname, true, true);
-resourceExplorer.addComponent(new AdaptiveDialogComponentRegistration(resourceExplorer));
-```
-
----
-
 ## Create the dialog declaratively
 
 Declarative dialogs are not typical code files. The resource explorer can interpret the resource and generate an instance of the described dialog. Use a resource explorer to load them at run time.
-
-# [C#](#tab/csharp)
 
 Create properties for the `ResourceExplorer` and `DialogManager` your bot will use. Use dependency injection to set the resource explorer in the `EchoBot` constructor.
 
@@ -247,50 +199,6 @@ In this case, since no language generation (LG) template file is provided, and t
 
 [!code-json[main.dialog](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/20.EchoBot-declarative/Dialogs/main.dialog?range=1-15&highlight=10)]
 
-# [JavaScript](#tab/javascript)
-
-<!--[!code-JavaScript[AdaptiveDialogComponentRegistration](~/../botbuilder-samples/blob/master/experimental/adaptive-dialog/javascript_nodejs/20.echo-bot-declarative/index.js?range=72-82)]-->
-
-```javascript
-let myBot;
-
-const loadRootDialog = () => {
-    console.log('(Re)Loading dialogs...');
-    // Load root dialog
-    let rootDialogResource = resourceExplorer.getResource('echo.dialog');
-    myBot = new DialogManager();
-    myBot.userState = userState;
-    myBot.conversationState = conversationState;
-    myBot.rootDialog = resourceExplorer.loadType(rootDialogResource);
-}
-
-loadRootDialog();
-```
-
-The resource explorer's `GetResource` method reads the declarative file into a resource object, and its `LoadType` method casts the resource to an `AdaptiveDialog` object. Here, this is the **echo.dialog** file.
-You can then create a dialog manager as you would for any other adaptive dialog. the dialog is being read in and created from the declarative file instead of defined in code.
-<!--
-The dialog manager's `UseResourceExplorer` method registers the resource explorer so that the dialog manager can make use of it later, as necessary. The `UseLanguageGeneration` method tells the dialog manager which language generator to use.
-
-In this case, since no language generation (LG) template file is provided, and this project does not include a **main.lg** default LG file, the dialog manager will use the default language generator, without any predefined templates. However, the echo bot includes an in-line LG template used in the dialog. It is defined in **main.dialog**.
--->
-
-You can optionally set the dialog to update with new settings anytime the underlying `.dialog` file changes using the `resourceExplorer.Changed` method:
-
-<!--[!code-JavaScript[AdaptiveDialogComponentRegistration](~/../botbuilder-samples/blob/master/experimental/adaptive-dialog/javascript_nodejs/20.echo-bot-declarative/index.js?range=111-117)]-->
-
-```javascript
-const handleResourceChange = (resources) => {
-    if (Array.isArray(resources)) {
-        if((resources || []).find(r => r.resourceId.endsWith('.dialog')) !== undefined) loadRootDialog();
-    } else {
-        if (resources.resourceId && resources.resourceId.endsWith('.dialog')) loadRootDialog()
-    }
-};
-```
-
----
-
 ## Test the bot
 
 1. If you have not done so already, install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
@@ -315,12 +223,6 @@ const handleResourceChange = (resources) => {
 
 [cs-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/adaptive-dialog/20.EchoBot-declarative
 
-[js-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/adaptive-dialog/javascript_nodejs/20.echo-bot-declarative
-
 [main.dialog]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/adaptive-dialog/20.EchoBot-declarative/Dialogs/main.dialog
-
-[echo.dialog]: https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/adaptive-dialog/javascript_nodejs/20.echo-bot-declarative/dialogs/echo.dialog
-
-[nodejs-modules]: https://nodejs.org/api/modules.html#modules_modules
 
 [intelliSense]: https://aka.ms/intellisense-in-visual-studio

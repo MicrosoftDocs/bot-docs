@@ -13,6 +13,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Migrate a .NET v3 bot to a .NET Framework v4 bot
 
+[!INCLUDE [applies-to-v4](../../includes/applies-to-v4-current.md)]
+
 In this article we'll convert the [v3 ContosoHelpdeskChatBot](https://github.com/microsoft/BotBuilder-Samples/tree/master/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V3) into a v4 bot _without converting the project type_. It will remain a .NET Framework project.
 This conversion is broken down into these steps:
 
@@ -132,7 +134,7 @@ All of our dialogs will derive from `ComponentDialog`, instead of implementing t
 
 This bot has four dialogs that we need to convert:
 
-| | |
+| Dialog | Description |
 |---|---|
 | [RootDialog](#update-the-root-dialog) | Presents options and starts the other dialogs. |
 | [InstallAppDialog](#update-the-install-app-dialog) | Handles requests to install an app on a machine. |

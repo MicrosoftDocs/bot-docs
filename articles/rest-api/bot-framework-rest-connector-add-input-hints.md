@@ -9,11 +9,7 @@ ms.service: bot-service
 ms.date: 12/13/2017
 ---
 
-# Add input hints to messages
-> [!div class="op_single_selector"]
-> - [.NET](../dotnet/bot-builder-dotnet-add-input-hints.md)
-> - [Node.js](../nodejs/bot-builder-nodejs-send-input-hints.md)
-> - [REST](../rest-api/bot-framework-rest-connector-add-input-hints.md)
+# Add input hints to messages with the Bot Connector API
 
 By specifying an input hint for a message, you can indicate whether your bot is accepting, expecting, or ignoring user input after the message is delivered to the client. For channels that support this field, this enables clients to set the state of user input controls accordingly. For example, if a message's input hint indicates that the bot is ignoring user input, the client may close the microphone and disable the input box to prevent the user from providing input.
 

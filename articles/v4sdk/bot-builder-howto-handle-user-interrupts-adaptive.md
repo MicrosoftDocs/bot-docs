@@ -13,7 +13,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Handle user interruptions in adaptive dialogs
 
-[!INCLUDE[applies-to](../includes/applies-to.md)]
+[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 Handling interruptions is an important aspect of a robust bot. Users will not always follow your defined conversation flow. Often, they will need to ask a question in the middle of or cancel the process. This article describes some common ways to handle user interruptions in your bot.
 
@@ -47,11 +47,11 @@ What is covered in this section:
 1. Go to the Azure [Create Cognitive Services][CognitiveServicesLUISAllInOne] page.  
 2. In the **Create options** section, select **Authoring**.
 
-   ![Set Create options to Authoring](./media/adaptive-dialogs/create-options-authoring.png)
+   ![Create options to authoring image](./media/adaptive-dialogs/create-options-authoring.png)
 
 3. Enter values for each of the fields, then select the **Review + create** button.
 
-   ![Set Create options to Authoring](./media/adaptive-dialogs/create-cognitive-services.png)
+   ![Create cognitive services image](./media/adaptive-dialogs/create-cognitive-services.png)
 
     > [!NOTE]
     > When entering the **Resource Group** and **Name**, keep in mind that you cannot change these values later. Also note that the value you give for **Name** will be part of your **Endpoint URL**.
@@ -64,14 +64,14 @@ Now that you have created your LUIS resource in the Azure portal, you can get yo
 
 1. Once Azure is done creating your LUIS resources in the Azure portal, you will see a **Your deployment is complete** notification, click **Go to resource**.
 
-   ![select the Go to resource button](./media/adaptive-dialogs/your-deployment-is-complete.png)
+   ![deployment is complete image](./media/adaptive-dialogs/your-deployment-is-complete.png)
 
 2. In the left panel, select **Keys and Endpoint**.
 3. Copy the **KEY 1** value, this is your *Authoring Key*. You need to enter this as the value for:
     -  `LuisAPIKey`: A setting in your configuration file.
     - `--authoringKey`: A property of the `bf luis:build` CLI command that is discussed in the following section.
 
-   ![select the Go to resource button](./media/adaptive-dialogs/keys-and-endpoint.png)
+   ![keys and endpoint image](./media/adaptive-dialogs/keys-and-endpoint.png)
 
 4. Copy and save the **ENDPOINT**. You will assign this value to `LuisAPIHostName` in your configuration file.
 
@@ -680,7 +680,7 @@ The screen shot shown below verifies that you can interrupt the conversational f
 [recognizer-types]: bot-builder-concept-adaptive-dialog-recognizers.md#recognizer-types
 
 [OnConversationUpdateActivity]: ../adaptive-dialog/adaptive-dialog-prebuilt-triggers.md#onconversationupdateactivity
-[confirm-input]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md##confirminput
+[confirm-input]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#confirminput
 [cancel-all-dialogs]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#cancelalldialogs
 
 [lu]: ../file-format/bot-builder-lu-file-format.md
@@ -697,7 +697,7 @@ The screen shot shown below verifies that you can interrupt the conversational f
 [CognitiveServicesLUISAllInOne]: https://portal.azure.com/#create/Microsoft.CognitiveServicesLUISAllInOne
 
 <!-- Sample links ----->
-[cs-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/adaptive-dialog/05.interruptions-bot
+[cs-sample]: https://aka.ms/cs-adaptive-interruptions-sample
 [js-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/adaptive-dialog/javascript_nodejs/05.interruptions-bot
 [python-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/adaptive-dialog/python/05.interruptions-bot
 [rootdialog.lu]: https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/csharp_dotnetcore/adaptive-dialog/05.interruptions-bot/Dialogs/RootDialog/RootDialog.lu

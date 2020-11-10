@@ -12,6 +12,8 @@ ms.date: 12/13/2017
 
 # Connect a bot to Kik
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
 You can configure your bot to communicate with people using the Kik messaging app.
 
 ## Install Kik on your phone
