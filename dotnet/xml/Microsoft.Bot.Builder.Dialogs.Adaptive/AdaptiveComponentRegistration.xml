@@ -10,6 +10,7 @@
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
     <AssemblyVersion>4.10.3.0</AssemblyVersion>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.ComponentRegistration</BaseTypeName>
@@ -20,7 +21,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+      <see cref="T:Microsoft.Bot.Builder.ComponentRegistration" /> implementation for adaptive components.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,10 +39,13 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.AdaptiveComponentRegistration" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,6 +65,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -74,10 +81,12 @@
         <Parameter Name="sourceContext" Type="Microsoft.Bot.Builder.Dialogs.Debugging.SourceContext" />
       </Parameters>
       <Docs>
-        <param name="resourceExplorer">To be added.</param>
-        <param name="sourceContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="resourceExplorer">ResourceExplorer to use to resolve references.</param>
+        <param name="sourceContext">SourceContext to build debugger source map.</param>
+        <summary>
+            Gets adaptive <see cref="T:Newtonsoft.Json.JsonConverter" /> resources.
+            </summary>
+        <returns>Adaptive <see cref="T:Newtonsoft.Json.JsonConverter" /> resources.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,6 +106,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -111,9 +121,12 @@
         <Parameter Name="resourceExplorer" Type="Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" />
       </Parameters>
       <Docs>
-        <param name="resourceExplorer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="resourceExplorer">
+          <see cref="T:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" /> with expected path to get all schema resources.</param>
+        <summary>
+            Gets adaptive <see cref="T:Microsoft.Bot.Builder.Dialogs.Declarative.DeclarativeType" /> resources.
+            </summary>
+        <returns>Adaptive <see cref="T:Microsoft.Bot.Builder.Dialogs.Declarative.DeclarativeType" /> resources.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

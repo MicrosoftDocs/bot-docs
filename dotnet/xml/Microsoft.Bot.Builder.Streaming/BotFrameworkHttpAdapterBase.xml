@@ -12,6 +12,7 @@
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
     <AssemblyVersion>4.10.3.0</AssemblyVersion>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.BotFrameworkAdapter</BaseTypeName>
@@ -43,6 +44,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="credentialProvider" Type="Microsoft.Bot.Connector.Authentication.ICredentialProvider" />
@@ -74,6 +76,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="credentialProvider" Type="Microsoft.Bot.Connector.Authentication.ICredentialProvider" />
@@ -107,6 +110,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="credentialProvider" Type="Microsoft.Bot.Connector.Authentication.ICredentialProvider" />
@@ -146,6 +150,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -178,6 +183,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Claims.ClaimsIdentity</ReturnType>
@@ -207,6 +213,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.IBot</ReturnType>
@@ -222,20 +229,15 @@
       </Docs>
     </Member>
     <Member MemberName="ConnectNamedPipeAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ConnectNamedPipeAsync (string pipeName, Microsoft.Bot.Builder.IBot bot);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ConnectNamedPipeAsync(string pipeName, class Microsoft.Bot.Builder.IBot bot) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase.ConnectNamedPipeAsync(System.String,Microsoft.Bot.Builder.IBot)" />
-      <MemberSignature Language="VB.NET" Value="Public Function ConnectNamedPipeAsync (pipeName As String, bot As IBot) As Task" />
-      <MemberSignature Language="F#" Value="member this.ConnectNamedPipeAsync : string * Microsoft.Bot.Builder.IBot -&gt; System.Threading.Tasks.Task" Usage="botFrameworkHttpAdapterBase.ConnectNamedPipeAsync (pipeName, bot)" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ConnectNamedPipeAsync (string pipeName, Microsoft.Bot.Builder.IBot bot, string audience = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ConnectNamedPipeAsync(string pipeName, class Microsoft.Bot.Builder.IBot bot, string audience) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Streaming.BotFrameworkHttpAdapterBase.ConnectNamedPipeAsync(System.String,Microsoft.Bot.Builder.IBot,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ConnectNamedPipeAsync (pipeName As String, bot As IBot, Optional audience As String = Nothing) As Task" />
+      <MemberSignature Language="F#" Value="member this.ConnectNamedPipeAsync : string * Microsoft.Bot.Builder.IBot * string -&gt; System.Threading.Tasks.Task" Usage="botFrameworkHttpAdapterBase.ConnectNamedPipeAsync (pipeName, bot, audience)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
-        <AssemblyVersion>4.7.0.0</AssemblyVersion>
-        <AssemblyVersion>4.8.0.0</AssemblyVersion>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-        <AssemblyVersion>4.9.3.0</AssemblyVersion>
-        <AssemblyVersion>4.10.0.0</AssemblyVersion>
-        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -243,10 +245,12 @@
       <Parameters>
         <Parameter Name="pipeName" Type="System.String" />
         <Parameter Name="bot" Type="Microsoft.Bot.Builder.IBot" />
+        <Parameter Name="audience" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="pipeName">The name of the Named Pipe to connect to.</param>
         <param name="bot">The bot to use when processing activities received over the Named Pipe.</param>
+        <param name="audience">The specified recipient of all outgoing activities.</param>
         <summary>
             Creates a new StreamingRequestHandler to listen to the specified Named Pipe
             and pass requests to this adapter.
@@ -271,6 +275,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -309,6 +314,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.InvokeResponse&gt;</ReturnType>
@@ -354,6 +360,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Streaming.StreamingRequestHandler&gt;</ReturnType>
@@ -383,6 +390,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>

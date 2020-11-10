@@ -10,13 +10,16 @@
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
     <AssemblyVersion>4.10.3.0</AssemblyVersion>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Defines adaptive dialog <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.ActionState" /> list.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,10 +35,13 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.AdaptiveDialogState" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,6 +58,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -63,8 +70,12 @@
         <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.ActionState&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.ActionState" /> list.
+            </summary>
+        <value>
+          <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.ActionState" /> list.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

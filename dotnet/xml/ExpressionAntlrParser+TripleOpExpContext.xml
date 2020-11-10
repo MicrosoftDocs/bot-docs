@@ -1,0 +1,202 @@
+<Type Name="ExpressionAntlrParser+TripleOpExpContext" FullName="ExpressionAntlrParser+TripleOpExpContext">
+  <TypeSignature Language="C#" Value="public class ExpressionAntlrParser.TripleOpExpContext : ExpressionAntlrParser.ExpressionContext" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit ExpressionAntlrParser/TripleOpExpContext extends sionAntlrParser/ExpressionContext" />
+  <TypeSignature Language="DocId" Value="T:ExpressionAntlrParser.TripleOpExpContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class ExpressionAntlrParser.TripleOpExpContext&#xA;Inherits ExpressionAntlrParser.ExpressionContext" />
+  <TypeSignature Language="F#" Value="type ExpressionAntlrParser.TripleOpExpContext = class&#xA;    inherit ExpressionAntlrParser.ExpressionContext" />
+  <AssemblyInfo>
+    <AssemblyName>AdaptiveExpressions</AssemblyName>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExpressionAntlrParser+ExpressionContext</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TripleOpExpContext (ExpressionAntlrParser.ExpressionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(ExpressionAntlrParser/ExpressionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExpressionAntlrParser.TripleOpExpContext.#ctor(ExpressionAntlrParser.ExpressionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (context As ExpressionAntlrParser.ExpressionContext)" />
+      <MemberSignature Language="F#" Value="new ExpressionAntlrParser.TripleOpExpContext : ExpressionAntlrParser.ExpressionContext -&gt; ExpressionAntlrParser.TripleOpExpContext" Usage="new ExpressionAntlrParser.TripleOpExpContext context" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+ExpressionContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Accept&lt;TResult&gt;">
+      <MemberSignature Language="C#" Value="public override TResult Accept&lt;TResult&gt; (Antlr4.Runtime.Tree.IParseTreeVisitor&lt;TResult&gt; visitor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance !!TResult Accept&lt;TResult&gt;(class Antlr4.Runtime.Tree.IParseTreeVisitor`1&lt;!!TResult&gt; visitor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExpressionAntlrParser.TripleOpExpContext.Accept``1(Antlr4.Runtime.Tree.IParseTreeVisitor{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Accept(Of TResult) (visitor As IParseTreeVisitor(Of TResult)) As TResult" />
+      <MemberSignature Language="F#" Value="override this.Accept : Antlr4.Runtime.Tree.IParseTreeVisitor&lt;'Result&gt; -&gt; 'Result" Usage="tripleOpExpContext.Accept visitor" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TResult</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="visitor" Type="Antlr4.Runtime.Tree.IParseTreeVisitor&lt;TResult&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="visitor">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="COLON">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode COLON ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode COLON() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExpressionAntlrParser.TripleOpExpContext.COLON" />
+      <MemberSignature Language="VB.NET" Value="Public Function COLON () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.COLON : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="tripleOpExpContext.COLON " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterRule">
+      <MemberSignature Language="C#" Value="public override void EnterRule (Antlr4.Runtime.Tree.IParseTreeListener listener);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EnterRule(class Antlr4.Runtime.Tree.IParseTreeListener listener) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExpressionAntlrParser.TripleOpExpContext.EnterRule(Antlr4.Runtime.Tree.IParseTreeListener)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub EnterRule (listener As IParseTreeListener)" />
+      <MemberSignature Language="F#" Value="override this.EnterRule : Antlr4.Runtime.Tree.IParseTreeListener -&gt; unit" Usage="tripleOpExpContext.EnterRule listener" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="listener" Type="Antlr4.Runtime.Tree.IParseTreeListener" />
+      </Parameters>
+      <Docs>
+        <param name="listener">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitRule">
+      <MemberSignature Language="C#" Value="public override void ExitRule (Antlr4.Runtime.Tree.IParseTreeListener listener);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ExitRule(class Antlr4.Runtime.Tree.IParseTreeListener listener) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExpressionAntlrParser.TripleOpExpContext.ExitRule(Antlr4.Runtime.Tree.IParseTreeListener)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ExitRule (listener As IParseTreeListener)" />
+      <MemberSignature Language="F#" Value="override this.ExitRule : Antlr4.Runtime.Tree.IParseTreeListener -&gt; unit" Usage="tripleOpExpContext.ExitRule listener" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="listener" Type="Antlr4.Runtime.Tree.IParseTreeListener" />
+      </Parameters>
+      <Docs>
+        <param name="listener">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="expression">
+      <MemberSignature Language="C#" Value="public ExpressionAntlrParser.ExpressionContext[] expression ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance ExpressionAntlrParser/ExpressionContext[] expression() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExpressionAntlrParser.TripleOpExpContext.expression" />
+      <MemberSignature Language="VB.NET" Value="Public Function expression () As ExpressionAntlrParser.ExpressionContext()" />
+      <MemberSignature Language="F#" Value="member this.expression : unit -&gt; ExpressionAntlrParser.ExpressionContext[]" Usage="tripleOpExpContext.expression " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExpressionAntlrParser+ExpressionContext[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="expression">
+      <MemberSignature Language="C#" Value="public ExpressionAntlrParser.ExpressionContext expression (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance ExpressionAntlrParser/ExpressionContext expression(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExpressionAntlrParser.TripleOpExpContext.expression(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function expression (i As Integer) As ExpressionAntlrParser.ExpressionContext" />
+      <MemberSignature Language="F#" Value="member this.expression : int -&gt; ExpressionAntlrParser.ExpressionContext" Usage="tripleOpExpContext.expression i" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExpressionAntlrParser+ExpressionContext</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QUESTION_MARK">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode QUESTION_MARK ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode QUESTION_MARK() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExpressionAntlrParser.TripleOpExpContext.QUESTION_MARK" />
+      <MemberSignature Language="VB.NET" Value="Public Function QUESTION_MARK () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.QUESTION_MARK : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="tripleOpExpContext.QUESTION_MARK " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

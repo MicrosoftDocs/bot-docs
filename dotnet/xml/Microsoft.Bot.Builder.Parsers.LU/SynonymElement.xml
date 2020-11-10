@@ -1,0 +1,89 @@
+<Type Name="SynonymElement" FullName="Microsoft.Bot.Builder.Parsers.LU.SynonymElement">
+  <TypeSignature Language="C#" Value="public class SynonymElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SynonymElement extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Parsers.LU.SynonymElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class SynonymElement" />
+  <TypeSignature Language="F#" Value="type SynonymElement = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SynonymElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Parsers.LU.SynonymElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NormalizedValue">
+      <MemberSignature Language="C#" Value="public string NormalizedValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NormalizedValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Parsers.LU.SynonymElement.NormalizedValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property NormalizedValue As String" />
+      <MemberSignature Language="F#" Value="member this.NormalizedValue : string with get, set" Usage="Microsoft.Bot.Builder.Parsers.LU.SynonymElement.NormalizedValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("NormalizedValue", NullValueHandling=Newtonsoft.Json.NullValueHandling.Ignore)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("NormalizedValue", NullValueHandling=Newtonsoft.Json.NullValueHandling.Ignore)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Synonyms">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;string&gt; Synonyms { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;string&gt; Synonyms" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Parsers.LU.SynonymElement.Synonyms" />
+      <MemberSignature Language="VB.NET" Value="Public Property Synonyms As List(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Synonyms : System.Collections.Generic.List&lt;string&gt; with get, set" Usage="Microsoft.Bot.Builder.Parsers.LU.SynonymElement.Synonyms" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("Synonyms", NullValueHandling=Newtonsoft.Json.NullValueHandling.Ignore)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("Synonyms", NullValueHandling=Newtonsoft.Json.NullValueHandling.Ignore)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

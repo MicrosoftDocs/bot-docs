@@ -1,0 +1,1763 @@
+<Type Name="ICommonRegexListener" FullName="ICommonRegexListener">
+  <TypeSignature Language="C#" Value="public interface ICommonRegexListener : Antlr4.Runtime.Tree.IParseTreeListener" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICommonRegexListener implements class Antlr4.Runtime.Tree.IParseTreeListener" />
+  <TypeSignature Language="DocId" Value="T:ICommonRegexListener" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ICommonRegexListener&#xA;Implements IParseTreeListener" />
+  <TypeSignature Language="F#" Value="type ICommonRegexListener = interface&#xA;    interface IParseTreeListener" />
+  <AssemblyInfo>
+    <AssemblyName>AdaptiveExpressions</AssemblyName>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Antlr4.Runtime.Tree.IParseTreeListener</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.8")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.8")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            This interface defines a complete listener for a parse tree produced by
+            <see cref="T:CommonRegexParser" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EnterAlpha_nums">
+      <MemberSignature Language="C#" Value="public void EnterAlpha_nums (CommonRegexParser.Alpha_numsContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterAlpha_nums(CommonRegexParser/Alpha_numsContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.EnterAlpha_nums(CommonRegexParser.Alpha_numsContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterAlpha_nums (context As CommonRegexParser.Alpha_numsContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterAlpha_nums : CommonRegexParser.Alpha_numsContext -&gt; unit" Usage="iCommonRegexListener.EnterAlpha_nums context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+Alpha_numsContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:CommonRegexParser.alpha_nums" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterAlternation">
+      <MemberSignature Language="C#" Value="public void EnterAlternation (CommonRegexParser.AlternationContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterAlternation(CommonRegexParser/AlternationContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.EnterAlternation(CommonRegexParser.AlternationContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterAlternation (context As CommonRegexParser.AlternationContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterAlternation : CommonRegexParser.AlternationContext -&gt; unit" Usage="iCommonRegexListener.EnterAlternation context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+AlternationContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:CommonRegexParser.alternation" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterAtom">
+      <MemberSignature Language="C#" Value="public void EnterAtom (CommonRegexParser.AtomContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterAtom(CommonRegexParser/AtomContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.EnterAtom(CommonRegexParser.AtomContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterAtom (context As CommonRegexParser.AtomContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterAtom : CommonRegexParser.AtomContext -&gt; unit" Usage="iCommonRegexListener.EnterAtom context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+AtomContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:CommonRegexParser.atom" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterCapture">
+      <MemberSignature Language="C#" Value="public void EnterCapture (CommonRegexParser.CaptureContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterCapture(CommonRegexParser/CaptureContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.EnterCapture(CommonRegexParser.CaptureContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterCapture (context As CommonRegexParser.CaptureContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterCapture : CommonRegexParser.CaptureContext -&gt; unit" Usage="iCommonRegexListener.EnterCapture context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+CaptureContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:CommonRegexParser.capture" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterCc_atom">
+      <MemberSignature Language="C#" Value="public void EnterCc_atom (CommonRegexParser.Cc_atomContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterCc_atom(CommonRegexParser/Cc_atomContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.EnterCc_atom(CommonRegexParser.Cc_atomContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterCc_atom (context As CommonRegexParser.Cc_atomContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterCc_atom : CommonRegexParser.Cc_atomContext -&gt; unit" Usage="iCommonRegexListener.EnterCc_atom context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+Cc_atomContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:CommonRegexParser.cc_atom" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterCc_literal">
+      <MemberSignature Language="C#" Value="public void EnterCc_literal (CommonRegexParser.Cc_literalContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterCc_literal(CommonRegexParser/Cc_literalContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.EnterCc_literal(CommonRegexParser.Cc_literalContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterCc_literal (context As CommonRegexParser.Cc_literalContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterCc_literal : CommonRegexParser.Cc_literalContext -&gt; unit" Usage="iCommonRegexListener.EnterCc_literal context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+Cc_literalContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:CommonRegexParser.cc_literal" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterCharacter_class">
+      <MemberSignature Language="C#" Value="public void EnterCharacter_class (CommonRegexParser.Character_classContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterCharacter_class(CommonRegexParser/Character_classContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.EnterCharacter_class(CommonRegexParser.Character_classContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterCharacter_class (context As CommonRegexParser.Character_classContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterCharacter_class : CommonRegexParser.Character_classContext -&gt; unit" Usage="iCommonRegexListener.EnterCharacter_class context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+Character_classContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:CommonRegexParser.character_class" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterDigit">
+      <MemberSignature Language="C#" Value="public void EnterDigit (CommonRegexParser.DigitContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterDigit(CommonRegexParser/DigitContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.EnterDigit(CommonRegexParser.DigitContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterDigit (context As CommonRegexParser.DigitContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterDigit : CommonRegexParser.DigitContext -&gt; unit" Usage="iCommonRegexListener.EnterDigit context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+DigitContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:CommonRegexParser.digit" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterDigits">
+      <MemberSignature Language="C#" Value="public void EnterDigits (CommonRegexParser.DigitsContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterDigits(CommonRegexParser/DigitsContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.EnterDigits(CommonRegexParser.DigitsContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterDigits (context As CommonRegexParser.DigitsContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterDigits : CommonRegexParser.DigitsContext -&gt; unit" Usage="iCommonRegexListener.EnterDigits context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+DigitsContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:CommonRegexParser.digits" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterElement">
+      <MemberSignature Language="C#" Value="public void EnterElement (CommonRegexParser.ElementContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterElement(CommonRegexParser/ElementContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.EnterElement(CommonRegexParser.ElementContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterElement (context As CommonRegexParser.ElementContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterElement : CommonRegexParser.ElementContext -&gt; unit" Usage="iCommonRegexListener.EnterElement context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+ElementContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:CommonRegexParser.element" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterExpr">
+      <MemberSignature Language="C#" Value="public void EnterExpr (CommonRegexParser.ExprContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterExpr(CommonRegexParser/ExprContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.EnterExpr(CommonRegexParser.ExprContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterExpr (context As CommonRegexParser.ExprContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterExpr : CommonRegexParser.ExprContext -&gt; unit" Usage="iCommonRegexListener.EnterExpr context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+ExprContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:CommonRegexParser.expr" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterLetter">
+      <MemberSignature Language="C#" Value="public void EnterLetter (CommonRegexParser.LetterContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterLetter(CommonRegexParser/LetterContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.EnterLetter(CommonRegexParser.LetterContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterLetter (context As CommonRegexParser.LetterContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterLetter : CommonRegexParser.LetterContext -&gt; unit" Usage="iCommonRegexListener.EnterLetter context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+LetterContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:CommonRegexParser.letter" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterLiteral">
+      <MemberSignature Language="C#" Value="public void EnterLiteral (CommonRegexParser.LiteralContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterLiteral(CommonRegexParser/LiteralContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.EnterLiteral(CommonRegexParser.LiteralContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterLiteral (context As CommonRegexParser.LiteralContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterLiteral : CommonRegexParser.LiteralContext -&gt; unit" Usage="iCommonRegexListener.EnterLiteral context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+LiteralContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:CommonRegexParser.literal" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterName">
+      <MemberSignature Language="C#" Value="public void EnterName (CommonRegexParser.NameContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterName(CommonRegexParser/NameContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.EnterName(CommonRegexParser.NameContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterName (context As CommonRegexParser.NameContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterName : CommonRegexParser.NameContext -&gt; unit" Usage="iCommonRegexListener.EnterName context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+NameContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:CommonRegexParser.name" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterNon_capture">
+      <MemberSignature Language="C#" Value="public void EnterNon_capture (CommonRegexParser.Non_captureContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterNon_capture(CommonRegexParser/Non_captureContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.EnterNon_capture(CommonRegexParser.Non_captureContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterNon_capture (context As CommonRegexParser.Non_captureContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterNon_capture : CommonRegexParser.Non_captureContext -&gt; unit" Usage="iCommonRegexListener.EnterNon_capture context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+Non_captureContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:CommonRegexParser.non_capture" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterNon_close_paren">
+      <MemberSignature Language="C#" Value="public void EnterNon_close_paren (CommonRegexParser.Non_close_parenContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterNon_close_paren(CommonRegexParser/Non_close_parenContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.EnterNon_close_paren(CommonRegexParser.Non_close_parenContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterNon_close_paren (context As CommonRegexParser.Non_close_parenContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterNon_close_paren : CommonRegexParser.Non_close_parenContext -&gt; unit" Usage="iCommonRegexListener.EnterNon_close_paren context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+Non_close_parenContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:CommonRegexParser.non_close_paren" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterNon_close_parens">
+      <MemberSignature Language="C#" Value="public void EnterNon_close_parens (CommonRegexParser.Non_close_parensContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterNon_close_parens(CommonRegexParser/Non_close_parensContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.EnterNon_close_parens(CommonRegexParser.Non_close_parensContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterNon_close_parens (context As CommonRegexParser.Non_close_parensContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterNon_close_parens : CommonRegexParser.Non_close_parensContext -&gt; unit" Usage="iCommonRegexListener.EnterNon_close_parens context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+Non_close_parensContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:CommonRegexParser.non_close_parens" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterNumber">
+      <MemberSignature Language="C#" Value="public void EnterNumber (CommonRegexParser.NumberContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterNumber(CommonRegexParser/NumberContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.EnterNumber(CommonRegexParser.NumberContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterNumber (context As CommonRegexParser.NumberContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterNumber : CommonRegexParser.NumberContext -&gt; unit" Usage="iCommonRegexListener.EnterNumber context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+NumberContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:CommonRegexParser.number" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterOctal_char">
+      <MemberSignature Language="C#" Value="public void EnterOctal_char (CommonRegexParser.Octal_charContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterOctal_char(CommonRegexParser/Octal_charContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.EnterOctal_char(CommonRegexParser.Octal_charContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterOctal_char (context As CommonRegexParser.Octal_charContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterOctal_char : CommonRegexParser.Octal_charContext -&gt; unit" Usage="iCommonRegexListener.EnterOctal_char context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+Octal_charContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:CommonRegexParser.octal_char" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterOctal_digit">
+      <MemberSignature Language="C#" Value="public void EnterOctal_digit (CommonRegexParser.Octal_digitContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterOctal_digit(CommonRegexParser/Octal_digitContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.EnterOctal_digit(CommonRegexParser.Octal_digitContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterOctal_digit (context As CommonRegexParser.Octal_digitContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterOctal_digit : CommonRegexParser.Octal_digitContext -&gt; unit" Usage="iCommonRegexListener.EnterOctal_digit context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+Octal_digitContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:CommonRegexParser.octal_digit" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterOption">
+      <MemberSignature Language="C#" Value="public void EnterOption (CommonRegexParser.OptionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterOption(CommonRegexParser/OptionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.EnterOption(CommonRegexParser.OptionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterOption (context As CommonRegexParser.OptionContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterOption : CommonRegexParser.OptionContext -&gt; unit" Usage="iCommonRegexListener.EnterOption context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+OptionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:CommonRegexParser.option" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterOption_flag">
+      <MemberSignature Language="C#" Value="public void EnterOption_flag (CommonRegexParser.Option_flagContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterOption_flag(CommonRegexParser/Option_flagContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.EnterOption_flag(CommonRegexParser.Option_flagContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterOption_flag (context As CommonRegexParser.Option_flagContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterOption_flag : CommonRegexParser.Option_flagContext -&gt; unit" Usage="iCommonRegexListener.EnterOption_flag context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+Option_flagContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:CommonRegexParser.option_flag" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterParse">
+      <MemberSignature Language="C#" Value="public void EnterParse (CommonRegexParser.ParseContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterParse(CommonRegexParser/ParseContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.EnterParse(CommonRegexParser.ParseContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterParse (context As CommonRegexParser.ParseContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterParse : CommonRegexParser.ParseContext -&gt; unit" Usage="iCommonRegexListener.EnterParse context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+ParseContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:CommonRegexParser.parse" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterQuantifier">
+      <MemberSignature Language="C#" Value="public void EnterQuantifier (CommonRegexParser.QuantifierContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterQuantifier(CommonRegexParser/QuantifierContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.EnterQuantifier(CommonRegexParser.QuantifierContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterQuantifier (context As CommonRegexParser.QuantifierContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterQuantifier : CommonRegexParser.QuantifierContext -&gt; unit" Usage="iCommonRegexListener.EnterQuantifier context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+QuantifierContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:CommonRegexParser.quantifier" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterQuantifier_type">
+      <MemberSignature Language="C#" Value="public void EnterQuantifier_type (CommonRegexParser.Quantifier_typeContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterQuantifier_type(CommonRegexParser/Quantifier_typeContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.EnterQuantifier_type(CommonRegexParser.Quantifier_typeContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterQuantifier_type (context As CommonRegexParser.Quantifier_typeContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterQuantifier_type : CommonRegexParser.Quantifier_typeContext -&gt; unit" Usage="iCommonRegexListener.EnterQuantifier_type context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+Quantifier_typeContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:CommonRegexParser.quantifier_type" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterShared_atom">
+      <MemberSignature Language="C#" Value="public void EnterShared_atom (CommonRegexParser.Shared_atomContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterShared_atom(CommonRegexParser/Shared_atomContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.EnterShared_atom(CommonRegexParser.Shared_atomContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterShared_atom (context As CommonRegexParser.Shared_atomContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterShared_atom : CommonRegexParser.Shared_atomContext -&gt; unit" Usage="iCommonRegexListener.EnterShared_atom context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+Shared_atomContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:CommonRegexParser.shared_atom" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterShared_literal">
+      <MemberSignature Language="C#" Value="public void EnterShared_literal (CommonRegexParser.Shared_literalContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterShared_literal(CommonRegexParser/Shared_literalContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.EnterShared_literal(CommonRegexParser.Shared_literalContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterShared_literal (context As CommonRegexParser.Shared_literalContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterShared_literal : CommonRegexParser.Shared_literalContext -&gt; unit" Usage="iCommonRegexListener.EnterShared_literal context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+Shared_literalContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:CommonRegexParser.shared_literal" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitAlpha_nums">
+      <MemberSignature Language="C#" Value="public void ExitAlpha_nums (CommonRegexParser.Alpha_numsContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitAlpha_nums(CommonRegexParser/Alpha_numsContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.ExitAlpha_nums(CommonRegexParser.Alpha_numsContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitAlpha_nums (context As CommonRegexParser.Alpha_numsContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitAlpha_nums : CommonRegexParser.Alpha_numsContext -&gt; unit" Usage="iCommonRegexListener.ExitAlpha_nums context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+Alpha_numsContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:CommonRegexParser.alpha_nums" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitAlternation">
+      <MemberSignature Language="C#" Value="public void ExitAlternation (CommonRegexParser.AlternationContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitAlternation(CommonRegexParser/AlternationContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.ExitAlternation(CommonRegexParser.AlternationContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitAlternation (context As CommonRegexParser.AlternationContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitAlternation : CommonRegexParser.AlternationContext -&gt; unit" Usage="iCommonRegexListener.ExitAlternation context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+AlternationContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:CommonRegexParser.alternation" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitAtom">
+      <MemberSignature Language="C#" Value="public void ExitAtom (CommonRegexParser.AtomContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitAtom(CommonRegexParser/AtomContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.ExitAtom(CommonRegexParser.AtomContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitAtom (context As CommonRegexParser.AtomContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitAtom : CommonRegexParser.AtomContext -&gt; unit" Usage="iCommonRegexListener.ExitAtom context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+AtomContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:CommonRegexParser.atom" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitCapture">
+      <MemberSignature Language="C#" Value="public void ExitCapture (CommonRegexParser.CaptureContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitCapture(CommonRegexParser/CaptureContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.ExitCapture(CommonRegexParser.CaptureContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitCapture (context As CommonRegexParser.CaptureContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitCapture : CommonRegexParser.CaptureContext -&gt; unit" Usage="iCommonRegexListener.ExitCapture context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+CaptureContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:CommonRegexParser.capture" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitCc_atom">
+      <MemberSignature Language="C#" Value="public void ExitCc_atom (CommonRegexParser.Cc_atomContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitCc_atom(CommonRegexParser/Cc_atomContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.ExitCc_atom(CommonRegexParser.Cc_atomContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitCc_atom (context As CommonRegexParser.Cc_atomContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitCc_atom : CommonRegexParser.Cc_atomContext -&gt; unit" Usage="iCommonRegexListener.ExitCc_atom context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+Cc_atomContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:CommonRegexParser.cc_atom" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitCc_literal">
+      <MemberSignature Language="C#" Value="public void ExitCc_literal (CommonRegexParser.Cc_literalContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitCc_literal(CommonRegexParser/Cc_literalContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.ExitCc_literal(CommonRegexParser.Cc_literalContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitCc_literal (context As CommonRegexParser.Cc_literalContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitCc_literal : CommonRegexParser.Cc_literalContext -&gt; unit" Usage="iCommonRegexListener.ExitCc_literal context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+Cc_literalContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:CommonRegexParser.cc_literal" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitCharacter_class">
+      <MemberSignature Language="C#" Value="public void ExitCharacter_class (CommonRegexParser.Character_classContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitCharacter_class(CommonRegexParser/Character_classContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.ExitCharacter_class(CommonRegexParser.Character_classContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitCharacter_class (context As CommonRegexParser.Character_classContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitCharacter_class : CommonRegexParser.Character_classContext -&gt; unit" Usage="iCommonRegexListener.ExitCharacter_class context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+Character_classContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:CommonRegexParser.character_class" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitDigit">
+      <MemberSignature Language="C#" Value="public void ExitDigit (CommonRegexParser.DigitContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitDigit(CommonRegexParser/DigitContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.ExitDigit(CommonRegexParser.DigitContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitDigit (context As CommonRegexParser.DigitContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitDigit : CommonRegexParser.DigitContext -&gt; unit" Usage="iCommonRegexListener.ExitDigit context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+DigitContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:CommonRegexParser.digit" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitDigits">
+      <MemberSignature Language="C#" Value="public void ExitDigits (CommonRegexParser.DigitsContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitDigits(CommonRegexParser/DigitsContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.ExitDigits(CommonRegexParser.DigitsContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitDigits (context As CommonRegexParser.DigitsContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitDigits : CommonRegexParser.DigitsContext -&gt; unit" Usage="iCommonRegexListener.ExitDigits context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+DigitsContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:CommonRegexParser.digits" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitElement">
+      <MemberSignature Language="C#" Value="public void ExitElement (CommonRegexParser.ElementContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitElement(CommonRegexParser/ElementContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.ExitElement(CommonRegexParser.ElementContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitElement (context As CommonRegexParser.ElementContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitElement : CommonRegexParser.ElementContext -&gt; unit" Usage="iCommonRegexListener.ExitElement context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+ElementContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:CommonRegexParser.element" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitExpr">
+      <MemberSignature Language="C#" Value="public void ExitExpr (CommonRegexParser.ExprContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitExpr(CommonRegexParser/ExprContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.ExitExpr(CommonRegexParser.ExprContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitExpr (context As CommonRegexParser.ExprContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitExpr : CommonRegexParser.ExprContext -&gt; unit" Usage="iCommonRegexListener.ExitExpr context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+ExprContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:CommonRegexParser.expr" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitLetter">
+      <MemberSignature Language="C#" Value="public void ExitLetter (CommonRegexParser.LetterContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitLetter(CommonRegexParser/LetterContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.ExitLetter(CommonRegexParser.LetterContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitLetter (context As CommonRegexParser.LetterContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitLetter : CommonRegexParser.LetterContext -&gt; unit" Usage="iCommonRegexListener.ExitLetter context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+LetterContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:CommonRegexParser.letter" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitLiteral">
+      <MemberSignature Language="C#" Value="public void ExitLiteral (CommonRegexParser.LiteralContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitLiteral(CommonRegexParser/LiteralContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.ExitLiteral(CommonRegexParser.LiteralContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitLiteral (context As CommonRegexParser.LiteralContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitLiteral : CommonRegexParser.LiteralContext -&gt; unit" Usage="iCommonRegexListener.ExitLiteral context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+LiteralContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:CommonRegexParser.literal" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitName">
+      <MemberSignature Language="C#" Value="public void ExitName (CommonRegexParser.NameContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitName(CommonRegexParser/NameContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.ExitName(CommonRegexParser.NameContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitName (context As CommonRegexParser.NameContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitName : CommonRegexParser.NameContext -&gt; unit" Usage="iCommonRegexListener.ExitName context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+NameContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:CommonRegexParser.name" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitNon_capture">
+      <MemberSignature Language="C#" Value="public void ExitNon_capture (CommonRegexParser.Non_captureContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitNon_capture(CommonRegexParser/Non_captureContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.ExitNon_capture(CommonRegexParser.Non_captureContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitNon_capture (context As CommonRegexParser.Non_captureContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitNon_capture : CommonRegexParser.Non_captureContext -&gt; unit" Usage="iCommonRegexListener.ExitNon_capture context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+Non_captureContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:CommonRegexParser.non_capture" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitNon_close_paren">
+      <MemberSignature Language="C#" Value="public void ExitNon_close_paren (CommonRegexParser.Non_close_parenContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitNon_close_paren(CommonRegexParser/Non_close_parenContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.ExitNon_close_paren(CommonRegexParser.Non_close_parenContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitNon_close_paren (context As CommonRegexParser.Non_close_parenContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitNon_close_paren : CommonRegexParser.Non_close_parenContext -&gt; unit" Usage="iCommonRegexListener.ExitNon_close_paren context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+Non_close_parenContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:CommonRegexParser.non_close_paren" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitNon_close_parens">
+      <MemberSignature Language="C#" Value="public void ExitNon_close_parens (CommonRegexParser.Non_close_parensContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitNon_close_parens(CommonRegexParser/Non_close_parensContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.ExitNon_close_parens(CommonRegexParser.Non_close_parensContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitNon_close_parens (context As CommonRegexParser.Non_close_parensContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitNon_close_parens : CommonRegexParser.Non_close_parensContext -&gt; unit" Usage="iCommonRegexListener.ExitNon_close_parens context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+Non_close_parensContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:CommonRegexParser.non_close_parens" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitNumber">
+      <MemberSignature Language="C#" Value="public void ExitNumber (CommonRegexParser.NumberContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitNumber(CommonRegexParser/NumberContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.ExitNumber(CommonRegexParser.NumberContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitNumber (context As CommonRegexParser.NumberContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitNumber : CommonRegexParser.NumberContext -&gt; unit" Usage="iCommonRegexListener.ExitNumber context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+NumberContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:CommonRegexParser.number" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitOctal_char">
+      <MemberSignature Language="C#" Value="public void ExitOctal_char (CommonRegexParser.Octal_charContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitOctal_char(CommonRegexParser/Octal_charContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.ExitOctal_char(CommonRegexParser.Octal_charContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitOctal_char (context As CommonRegexParser.Octal_charContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitOctal_char : CommonRegexParser.Octal_charContext -&gt; unit" Usage="iCommonRegexListener.ExitOctal_char context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+Octal_charContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:CommonRegexParser.octal_char" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitOctal_digit">
+      <MemberSignature Language="C#" Value="public void ExitOctal_digit (CommonRegexParser.Octal_digitContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitOctal_digit(CommonRegexParser/Octal_digitContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.ExitOctal_digit(CommonRegexParser.Octal_digitContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitOctal_digit (context As CommonRegexParser.Octal_digitContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitOctal_digit : CommonRegexParser.Octal_digitContext -&gt; unit" Usage="iCommonRegexListener.ExitOctal_digit context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+Octal_digitContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:CommonRegexParser.octal_digit" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitOption">
+      <MemberSignature Language="C#" Value="public void ExitOption (CommonRegexParser.OptionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitOption(CommonRegexParser/OptionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.ExitOption(CommonRegexParser.OptionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitOption (context As CommonRegexParser.OptionContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitOption : CommonRegexParser.OptionContext -&gt; unit" Usage="iCommonRegexListener.ExitOption context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+OptionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:CommonRegexParser.option" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitOption_flag">
+      <MemberSignature Language="C#" Value="public void ExitOption_flag (CommonRegexParser.Option_flagContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitOption_flag(CommonRegexParser/Option_flagContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.ExitOption_flag(CommonRegexParser.Option_flagContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitOption_flag (context As CommonRegexParser.Option_flagContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitOption_flag : CommonRegexParser.Option_flagContext -&gt; unit" Usage="iCommonRegexListener.ExitOption_flag context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+Option_flagContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:CommonRegexParser.option_flag" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitParse">
+      <MemberSignature Language="C#" Value="public void ExitParse (CommonRegexParser.ParseContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitParse(CommonRegexParser/ParseContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.ExitParse(CommonRegexParser.ParseContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitParse (context As CommonRegexParser.ParseContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitParse : CommonRegexParser.ParseContext -&gt; unit" Usage="iCommonRegexListener.ExitParse context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+ParseContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:CommonRegexParser.parse" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitQuantifier">
+      <MemberSignature Language="C#" Value="public void ExitQuantifier (CommonRegexParser.QuantifierContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitQuantifier(CommonRegexParser/QuantifierContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.ExitQuantifier(CommonRegexParser.QuantifierContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitQuantifier (context As CommonRegexParser.QuantifierContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitQuantifier : CommonRegexParser.QuantifierContext -&gt; unit" Usage="iCommonRegexListener.ExitQuantifier context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+QuantifierContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:CommonRegexParser.quantifier" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitQuantifier_type">
+      <MemberSignature Language="C#" Value="public void ExitQuantifier_type (CommonRegexParser.Quantifier_typeContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitQuantifier_type(CommonRegexParser/Quantifier_typeContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.ExitQuantifier_type(CommonRegexParser.Quantifier_typeContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitQuantifier_type (context As CommonRegexParser.Quantifier_typeContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitQuantifier_type : CommonRegexParser.Quantifier_typeContext -&gt; unit" Usage="iCommonRegexListener.ExitQuantifier_type context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+Quantifier_typeContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:CommonRegexParser.quantifier_type" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitShared_atom">
+      <MemberSignature Language="C#" Value="public void ExitShared_atom (CommonRegexParser.Shared_atomContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitShared_atom(CommonRegexParser/Shared_atomContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.ExitShared_atom(CommonRegexParser.Shared_atomContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitShared_atom (context As CommonRegexParser.Shared_atomContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitShared_atom : CommonRegexParser.Shared_atomContext -&gt; unit" Usage="iCommonRegexListener.ExitShared_atom context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+Shared_atomContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:CommonRegexParser.shared_atom" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitShared_literal">
+      <MemberSignature Language="C#" Value="public void ExitShared_literal (CommonRegexParser.Shared_literalContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitShared_literal(CommonRegexParser/Shared_literalContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ICommonRegexListener.ExitShared_literal(CommonRegexParser.Shared_literalContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitShared_literal (context As CommonRegexParser.Shared_literalContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitShared_literal : CommonRegexParser.Shared_literalContext -&gt; unit" Usage="iCommonRegexListener.ExitShared_literal context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommonRegexParser+Shared_literalContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:CommonRegexParser.shared_literal" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

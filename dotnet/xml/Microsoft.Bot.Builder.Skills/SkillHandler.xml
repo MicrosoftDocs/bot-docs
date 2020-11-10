@@ -12,6 +12,7 @@
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
     <AssemblyVersion>4.10.3.0</AssemblyVersion>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.ChannelServiceHandler</BaseTypeName>
@@ -39,6 +40,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="adapter" Type="Microsoft.Bot.Builder.BotAdapter" />
@@ -68,6 +70,37 @@
         <exception cref="T:System.ArgumentNullException">throw ArgumentNullException.</exception>
       </Docs>
     </Member>
+    <Member MemberName="OnDeleteActivityAsync">
+      <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task OnDeleteActivityAsync (System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, string activityId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task OnDeleteActivityAsync(class System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, string activityId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Skills.SkillHandler.OnDeleteActivityAsync(System.Security.Claims.ClaimsIdentity,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnDeleteActivityAsync (claimsIdentity As ClaimsIdentity, conversationId As String, activityId As String, Optional cancellationToken As CancellationToken = Nothing) As Task" />
+      <MemberSignature Language="F#" Value="override this.OnDeleteActivityAsync : System.Security.Claims.ClaimsIdentity * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="skillHandler.OnDeleteActivityAsync (claimsIdentity, conversationId, activityId, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="claimsIdentity" Type="System.Security.Claims.ClaimsIdentity" />
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="activityId" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="claimsIdentity">To be added.</param>
+        <param name="conversationId">To be added.</param>
+        <param name="activityId">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
     <Member MemberName="OnReplyToActivityAsync">
       <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; OnReplyToActivityAsync (System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, string activityId, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; OnReplyToActivityAsync(class System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, string activityId, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -83,6 +116,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -136,6 +170,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
@@ -172,6 +207,39 @@
              </remarks>
       </Docs>
     </Member>
+    <Member MemberName="OnUpdateActivityAsync">
+      <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt; OnUpdateActivityAsync (System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, string activityId, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Schema.ResourceResponse&gt; OnUpdateActivityAsync(class System.Security.Claims.ClaimsIdentity claimsIdentity, string conversationId, string activityId, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Skills.SkillHandler.OnUpdateActivityAsync(System.Security.Claims.ClaimsIdentity,System.String,System.String,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnUpdateActivityAsync (claimsIdentity As ClaimsIdentity, conversationId As String, activityId As String, activity As Activity, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ResourceResponse)" />
+      <MemberSignature Language="F#" Value="override this.OnUpdateActivityAsync : System.Security.Claims.ClaimsIdentity * string * string * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;" Usage="skillHandler.OnUpdateActivityAsync (claimsIdentity, conversationId, activityId, activity, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.ResourceResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="claimsIdentity" Type="System.Security.Claims.ClaimsIdentity" />
+        <Parameter Name="conversationId" Type="System.String" />
+        <Parameter Name="activityId" Type="System.String" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="claimsIdentity">To be added.</param>
+        <param name="conversationId">To be added.</param>
+        <param name="activityId">To be added.</param>
+        <param name="activity">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
     <Member MemberName="SkillConversationReferenceKey">
       <MemberSignature Language="C#" Value="public static readonly string SkillConversationReferenceKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string SkillConversationReferenceKey" />
@@ -187,6 +255,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

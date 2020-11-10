@@ -17,6 +17,7 @@
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
     <AssemblyVersion>4.10.3.0</AssemblyVersion>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Dialog</BaseTypeName>
@@ -83,6 +84,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dialogId" Type="System.String" />
@@ -121,6 +123,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -163,6 +166,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -205,6 +209,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Schema.TokenResponse&gt;</ReturnType>
@@ -223,6 +228,101 @@
         <returns>A task that represents the work queued to execute.</returns>
         <remarks>If the task is successful and user already has a token or the user successfully signs in,
             the result contains the user's token.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizeTokenAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult&lt;Microsoft.Bot.Schema.TokenResponse&gt;&gt; RecognizeTokenAsync (Microsoft.Bot.Builder.Dialogs.OAuthPromptSettings settings, Microsoft.Bot.Builder.Dialogs.DialogContext dc, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult`1&lt;class Microsoft.Bot.Schema.TokenResponse&gt;&gt; RecognizeTokenAsync(class Microsoft.Bot.Builder.Dialogs.OAuthPromptSettings settings, class Microsoft.Bot.Builder.Dialogs.DialogContext dc, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.OAuthPrompt.RecognizeTokenAsync(Microsoft.Bot.Builder.Dialogs.OAuthPromptSettings,Microsoft.Bot.Builder.Dialogs.DialogContext,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RecognizeTokenAsync (settings As OAuthPromptSettings, dc As DialogContext, cancellationToken As CancellationToken) As Task(Of PromptRecognizerResult(Of TokenResponse))" />
+      <MemberSignature Language="F#" Value="static member RecognizeTokenAsync : Microsoft.Bot.Builder.Dialogs.OAuthPromptSettings * Microsoft.Bot.Builder.Dialogs.DialogContext * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult&lt;Microsoft.Bot.Schema.TokenResponse&gt;&gt;" Usage="Microsoft.Bot.Builder.Dialogs.OAuthPrompt.RecognizeTokenAsync (settings, dc, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.PromptRecognizerResult&lt;Microsoft.Bot.Schema.TokenResponse&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="settings" Type="Microsoft.Bot.Builder.Dialogs.OAuthPromptSettings" />
+        <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="settings">OAuthPromptSettings.</param>
+        <param name="dc">DialogContext.</param>
+        <param name="cancellationToken">CancellationToken.</param>
+        <summary>
+            Shared implementation of the RecognizeTokenAsync function. This is intended for internal use, to
+            consolidate the implementation of the OAuthPrompt and OAuthInput. Application logic should use
+            those dialog classes.
+            </summary>
+        <returns>PromptRecognizerResult.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendOAuthCardAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task SendOAuthCardAsync (Microsoft.Bot.Builder.Dialogs.OAuthPromptSettings settings, Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Schema.IMessageActivity prompt, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task SendOAuthCardAsync(class Microsoft.Bot.Builder.Dialogs.OAuthPromptSettings settings, class Microsoft.Bot.Builder.ITurnContext turnContext, class Microsoft.Bot.Schema.IMessageActivity prompt, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.OAuthPrompt.SendOAuthCardAsync(Microsoft.Bot.Builder.Dialogs.OAuthPromptSettings,Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.IMessageActivity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SendOAuthCardAsync (settings As OAuthPromptSettings, turnContext As ITurnContext, prompt As IMessageActivity, cancellationToken As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="static member SendOAuthCardAsync : Microsoft.Bot.Builder.Dialogs.OAuthPromptSettings * Microsoft.Bot.Builder.ITurnContext * Microsoft.Bot.Schema.IMessageActivity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Bot.Builder.Dialogs.OAuthPrompt.SendOAuthCardAsync (settings, turnContext, prompt, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="settings" Type="Microsoft.Bot.Builder.Dialogs.OAuthPromptSettings" />
+        <Parameter Name="turnContext" Type="Microsoft.Bot.Builder.ITurnContext" />
+        <Parameter Name="prompt" Type="Microsoft.Bot.Schema.IMessageActivity" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="settings">OAuthSettings.</param>
+        <param name="turnContext">ITurnContext.</param>
+        <param name="prompt">IMessageActivity.</param>
+        <param name="cancellationToken">CancellationToken.</param>
+        <summary>
+            Shared implementation of the SendOAuthCardAsync function. This is intended for internal use, to
+            consolidate the implementation of the OAuthPrompt and OAuthInput. Application logic should use
+            those dialog classes.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the result of the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCallerInfoInDialogState">
+      <MemberSignature Language="C#" Value="public static void SetCallerInfoInDialogState (System.Collections.Generic.IDictionary&lt;string,object&gt; state, Microsoft.Bot.Builder.ITurnContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetCallerInfoInDialogState(class System.Collections.Generic.IDictionary`2&lt;string, object&gt; state, class Microsoft.Bot.Builder.ITurnContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.OAuthPrompt.SetCallerInfoInDialogState(System.Collections.Generic.IDictionary{System.String,System.Object},Microsoft.Bot.Builder.ITurnContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetCallerInfoInDialogState (state As IDictionary(Of String, Object), context As ITurnContext)" />
+      <MemberSignature Language="F#" Value="static member SetCallerInfoInDialogState : System.Collections.Generic.IDictionary&lt;string, obj&gt; * Microsoft.Bot.Builder.ITurnContext -&gt; unit" Usage="Microsoft.Bot.Builder.Dialogs.OAuthPrompt.SetCallerInfoInDialogState (state, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
+        <Parameter Name="context" Type="Microsoft.Bot.Builder.ITurnContext" />
+      </Parameters>
+      <Docs>
+        <param name="state">The dialog state.</param>
+        <param name="context">ITurnContext.</param>
+        <summary>
+            Shared implementation of the SetCallerInfoInDialogState function. This is intended for internal use, to
+            consolidate the implementation of the OAuthPrompt and OAuthInput. Application logic should use
+            those dialog classes.
+            </summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SignOutUserAsync">
@@ -245,6 +345,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>

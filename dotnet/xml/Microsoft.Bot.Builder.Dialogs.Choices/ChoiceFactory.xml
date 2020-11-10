@@ -17,6 +17,7 @@
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
     <AssemblyVersion>4.10.3.0</AssemblyVersion>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -48,6 +49,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -75,6 +77,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -121,6 +124,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -131,11 +135,13 @@
         <Parameter Name="speak" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="choices">To be added.</param>
-        <param name="text">To be added.</param>
-        <param name="speak">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="choices">The list of choices to add.</param>
+        <param name="text">Optional, text of the message.</param>
+        <param name="speak">Optional, SSML text to be spoken by the bot on a speech-enabled channel.</param>
+        <summary>
+            Creates a message activity that includes a list of choices that have been added as `HeroCard`'s.
+            </summary>
+        <returns>An activity with choices as HeroCard with buttons.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,6 +165,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
@@ -201,6 +208,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
@@ -212,12 +220,14 @@
         <Parameter Name="options" Type="Microsoft.Bot.Builder.Dialogs.Choices.ChoiceFactoryOptions" />
       </Parameters>
       <Docs>
-        <param name="choices">To be added.</param>
-        <param name="text">To be added.</param>
-        <param name="speak">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="choices">The list of choices to render.</param>
+        <param name="text">Optional, text of the message.</param>
+        <param name="speak">Optional, SSML text to be spoken by the bot on a speech-enabled channel.</param>
+        <param name="options">Optional, formatting options to tweak the rendering of the list.</param>
+        <summary>
+            Creates a message activity containing a list of choices that has been formatted as a numbered or bulleted list.
+            </summary>
+        <returns>An activity with choices as a numbered or bulleted list.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,6 +251,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Activity</ReturnType>
@@ -283,6 +294,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -293,11 +305,13 @@
         <Parameter Name="speak" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="choices">To be added.</param>
-        <param name="text">To be added.</param>
-        <param name="speak">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="choices">The list of choices to add.</param>
+        <param name="text">Optional, text of the message.</param>
+        <param name="speak">Optional, SSML text to be spoken by the bot on a speech-enabled channel.</param>
+        <summary>
+            Creates a message activity containing a list of choices that have been added as suggested actions.
+            </summary>
+        <returns>An activity with choices as suggested actions.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -321,6 +335,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.IMessageActivity</ReturnType>
@@ -331,11 +346,13 @@
         <Parameter Name="speak" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="choices">To be added.</param>
-        <param name="text">To be added.</param>
-        <param name="speak">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="choices">List of strings representing the choices to add.</param>
+        <param name="text">Optional, text of the message.</param>
+        <param name="speak">Optional, SSML text to be spoken by the bot on a speech-enabled channel.</param>
+        <summary>
+            Creates a message activity containing a list of choices that have been added as suggested actions.
+            </summary>
+        <returns>An activity with choices as suggested actions.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -359,6 +376,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Dialogs.Choices.Choice&gt;</ReturnType>
@@ -367,9 +385,11 @@
         <Parameter Name="choices" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="choices">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="choices">The list of choices to add.</param>
+        <summary>
+            Takes a list of strings and returns them as <see cref="T:Microsoft.Bot.Builder.Dialogs.Choices.Choice" />.
+            </summary>
+        <returns>A list of choices.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,0 +1,159 @@
+<Type Name="SetProperties" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.SetProperties">
+  <TypeSignature Language="C#" Value="public class SetProperties : Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SetProperties extends Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestAction" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.SetProperties" />
+  <TypeSignature Language="VB.NET" Value="Public Class SetProperties&#xA;Inherits TestAction" />
+  <TypeSignature Language="F#" Value="type SetProperties = class&#xA;    inherit TestAction" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestAction</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerDisplay("SetProperties")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerDisplay("SetProperties")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Mock one or more property values.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SetProperties (string path = &quot;&quot;, int line = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, int32 line) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.SetProperties.#ctor(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional path As String = &quot;&quot;, Optional line As Integer = 0)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.SetProperties : string * int -&gt; Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.SetProperties" Usage="new Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.SetProperties (path, line)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonConstructor]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConstructor&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="path" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerFilePath]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerFilePath&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="line" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerLineNumber]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerLineNumber&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="path">optional path.</param>
+        <param name="line">optional line.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.SetProperties" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Assignments">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.PropertyAssignment&gt; Assignments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.PropertyAssignment&gt; Assignments" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.SetProperties.Assignments" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Assignments As List(Of PropertyAssignment)" />
+      <MemberSignature Language="F#" Value="member this.Assignments : System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.PropertyAssignment&gt;" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.SetProperties.Assignments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("assignments")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("assignments")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.PropertyAssignment&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the property assignments.
+            </summary>
+        <value>
+            Property assignments as property=value pairs. In first match first use order.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task ExecuteAsync (Microsoft.Bot.Builder.Adapters.TestAdapter adapter, Microsoft.Bot.Builder.BotCallbackHandler callback, Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.Inspector inspector = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task ExecuteAsync(class Microsoft.Bot.Builder.Adapters.TestAdapter adapter, class Microsoft.Bot.Builder.BotCallbackHandler callback, class Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.Inspector inspector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.SetProperties.ExecuteAsync(Microsoft.Bot.Builder.Adapters.TestAdapter,Microsoft.Bot.Builder.BotCallbackHandler,Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.Inspector)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ExecuteAsync (adapter As TestAdapter, callback As BotCallbackHandler, Optional inspector As Inspector = Nothing) As Task" />
+      <MemberSignature Language="F#" Value="override this.ExecuteAsync : Microsoft.Bot.Builder.Adapters.TestAdapter * Microsoft.Bot.Builder.BotCallbackHandler * Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.Inspector -&gt; System.Threading.Tasks.Task" Usage="setProperties.ExecuteAsync (adapter, callback, inspector)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="adapter" Type="Microsoft.Bot.Builder.Adapters.TestAdapter" />
+        <Parameter Name="callback" Type="Microsoft.Bot.Builder.BotCallbackHandler" />
+        <Parameter Name="inspector" Type="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.Inspector" />
+      </Parameters>
+      <Docs>
+        <param name="adapter">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="inspector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="Kind">
+      <MemberSignature Language="C#" Value="public const string Kind;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Kind" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.SetProperties.Kind" />
+      <MemberSignature Language="VB.NET" Value="Public Const Kind As String " />
+      <MemberSignature Language="F#" Value="val mutable Kind : string" Usage="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.SetProperties.Kind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("$kind")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("$kind")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Kind to serialize.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,335 @@
+<Type Name="LGTemplateParser+NormalTemplateStringContext" FullName="LGTemplateParser+NormalTemplateStringContext">
+  <TypeSignature Language="C#" Value="public class LGTemplateParser.NormalTemplateStringContext : Antlr4.Runtime.ParserRuleContext" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit LGTemplateParser/NormalTemplateStringContext extends Antlr4.Runtime.ParserRuleContext" />
+  <TypeSignature Language="DocId" Value="T:LGTemplateParser.NormalTemplateStringContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class LGTemplateParser.NormalTemplateStringContext&#xA;Inherits ParserRuleContext" />
+  <TypeSignature Language="F#" Value="type LGTemplateParser.NormalTemplateStringContext = class&#xA;    inherit ParserRuleContext" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Antlr4.Runtime.ParserRuleContext</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NormalTemplateStringContext (Antlr4.Runtime.ParserRuleContext parent, int invokingState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Antlr4.Runtime.ParserRuleContext parent, int32 invokingState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:LGTemplateParser.NormalTemplateStringContext.#ctor(Antlr4.Runtime.ParserRuleContext,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (parent As ParserRuleContext, invokingState As Integer)" />
+      <MemberSignature Language="F#" Value="new LGTemplateParser.NormalTemplateStringContext : Antlr4.Runtime.ParserRuleContext * int -&gt; LGTemplateParser.NormalTemplateStringContext" Usage="new LGTemplateParser.NormalTemplateStringContext (parent, invokingState)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parent" Type="Antlr4.Runtime.ParserRuleContext" />
+        <Parameter Name="invokingState" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="parent">To be added.</param>
+        <param name="invokingState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Accept&lt;TResult&gt;">
+      <MemberSignature Language="C#" Value="public override TResult Accept&lt;TResult&gt; (Antlr4.Runtime.Tree.IParseTreeVisitor&lt;TResult&gt; visitor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance !!TResult Accept&lt;TResult&gt;(class Antlr4.Runtime.Tree.IParseTreeVisitor`1&lt;!!TResult&gt; visitor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:LGTemplateParser.NormalTemplateStringContext.Accept``1(Antlr4.Runtime.Tree.IParseTreeVisitor{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Accept(Of TResult) (visitor As IParseTreeVisitor(Of TResult)) As TResult" />
+      <MemberSignature Language="F#" Value="override this.Accept : Antlr4.Runtime.Tree.IParseTreeVisitor&lt;'Result&gt; -&gt; 'Result" Usage="normalTemplateStringContext.Accept visitor" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TResult</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="visitor" Type="Antlr4.Runtime.Tree.IParseTreeVisitor&lt;TResult&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="visitor">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DASH">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode DASH ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode DASH() cil managed" />
+      <MemberSignature Language="DocId" Value="M:LGTemplateParser.NormalTemplateStringContext.DASH" />
+      <MemberSignature Language="VB.NET" Value="Public Function DASH () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.DASH : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="normalTemplateStringContext.DASH " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterRule">
+      <MemberSignature Language="C#" Value="public override void EnterRule (Antlr4.Runtime.Tree.IParseTreeListener listener);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EnterRule(class Antlr4.Runtime.Tree.IParseTreeListener listener) cil managed" />
+      <MemberSignature Language="DocId" Value="M:LGTemplateParser.NormalTemplateStringContext.EnterRule(Antlr4.Runtime.Tree.IParseTreeListener)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub EnterRule (listener As IParseTreeListener)" />
+      <MemberSignature Language="F#" Value="override this.EnterRule : Antlr4.Runtime.Tree.IParseTreeListener -&gt; unit" Usage="normalTemplateStringContext.EnterRule listener" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="listener" Type="Antlr4.Runtime.Tree.IParseTreeListener" />
+      </Parameters>
+      <Docs>
+        <param name="listener">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ESCAPE_CHARACTER">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode[] ESCAPE_CHARACTER ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode[] ESCAPE_CHARACTER() cil managed" />
+      <MemberSignature Language="DocId" Value="M:LGTemplateParser.NormalTemplateStringContext.ESCAPE_CHARACTER" />
+      <MemberSignature Language="VB.NET" Value="Public Function ESCAPE_CHARACTER () As ITerminalNode()" />
+      <MemberSignature Language="F#" Value="member this.ESCAPE_CHARACTER : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode[]" Usage="normalTemplateStringContext.ESCAPE_CHARACTER " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ESCAPE_CHARACTER">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode ESCAPE_CHARACTER (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode ESCAPE_CHARACTER(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:LGTemplateParser.NormalTemplateStringContext.ESCAPE_CHARACTER(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ESCAPE_CHARACTER (i As Integer) As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.ESCAPE_CHARACTER : int -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="normalTemplateStringContext.ESCAPE_CHARACTER i" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitRule">
+      <MemberSignature Language="C#" Value="public override void ExitRule (Antlr4.Runtime.Tree.IParseTreeListener listener);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ExitRule(class Antlr4.Runtime.Tree.IParseTreeListener listener) cil managed" />
+      <MemberSignature Language="DocId" Value="M:LGTemplateParser.NormalTemplateStringContext.ExitRule(Antlr4.Runtime.Tree.IParseTreeListener)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ExitRule (listener As IParseTreeListener)" />
+      <MemberSignature Language="F#" Value="override this.ExitRule : Antlr4.Runtime.Tree.IParseTreeListener -&gt; unit" Usage="normalTemplateStringContext.ExitRule listener" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="listener" Type="Antlr4.Runtime.Tree.IParseTreeListener" />
+      </Parameters>
+      <Docs>
+        <param name="listener">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="expression">
+      <MemberSignature Language="C#" Value="public LGTemplateParser.ExpressionContext[] expression ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance LGTemplateParser/ExpressionContext[] expression() cil managed" />
+      <MemberSignature Language="DocId" Value="M:LGTemplateParser.NormalTemplateStringContext.expression" />
+      <MemberSignature Language="VB.NET" Value="Public Function expression () As LGTemplateParser.ExpressionContext()" />
+      <MemberSignature Language="F#" Value="member this.expression : unit -&gt; LGTemplateParser.ExpressionContext[]" Usage="normalTemplateStringContext.expression " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>LGTemplateParser+ExpressionContext[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="expression">
+      <MemberSignature Language="C#" Value="public LGTemplateParser.ExpressionContext expression (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance LGTemplateParser/ExpressionContext expression(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:LGTemplateParser.NormalTemplateStringContext.expression(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function expression (i As Integer) As LGTemplateParser.ExpressionContext" />
+      <MemberSignature Language="F#" Value="member this.expression : int -&gt; LGTemplateParser.ExpressionContext" Usage="normalTemplateStringContext.expression i" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>LGTemplateParser+ExpressionContext</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MULTILINE_PREFIX">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode MULTILINE_PREFIX ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode MULTILINE_PREFIX() cil managed" />
+      <MemberSignature Language="DocId" Value="M:LGTemplateParser.NormalTemplateStringContext.MULTILINE_PREFIX" />
+      <MemberSignature Language="VB.NET" Value="Public Function MULTILINE_PREFIX () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.MULTILINE_PREFIX : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="normalTemplateStringContext.MULTILINE_PREFIX " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MULTILINE_SUFFIX">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode MULTILINE_SUFFIX ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode MULTILINE_SUFFIX() cil managed" />
+      <MemberSignature Language="DocId" Value="M:LGTemplateParser.NormalTemplateStringContext.MULTILINE_SUFFIX" />
+      <MemberSignature Language="VB.NET" Value="Public Function MULTILINE_SUFFIX () As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.MULTILINE_SUFFIX : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="normalTemplateStringContext.MULTILINE_SUFFIX " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RuleIndex">
+      <MemberSignature Language="C#" Value="public override int RuleIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RuleIndex" />
+      <MemberSignature Language="DocId" Value="P:LGTemplateParser.NormalTemplateStringContext.RuleIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RuleIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.RuleIndex : int" Usage="LGTemplateParser.NormalTemplateStringContext.RuleIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TEXT">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode[] TEXT ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode[] TEXT() cil managed" />
+      <MemberSignature Language="DocId" Value="M:LGTemplateParser.NormalTemplateStringContext.TEXT" />
+      <MemberSignature Language="VB.NET" Value="Public Function TEXT () As ITerminalNode()" />
+      <MemberSignature Language="F#" Value="member this.TEXT : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode[]" Usage="normalTemplateStringContext.TEXT " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TEXT">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode TEXT (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode TEXT(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:LGTemplateParser.NormalTemplateStringContext.TEXT(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TEXT (i As Integer) As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.TEXT : int -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="normalTemplateStringContext.TEXT i" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

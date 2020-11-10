@@ -12,6 +12,7 @@
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
     <AssemblyVersion>4.10.3.0</AssemblyVersion>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -40,6 +41,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -53,6 +55,32 @@
             Gets the Team's channel id from the current activity.
             </summary>
         <returns>The current activity's team's channel, or empty string.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TeamsGetMeetingInfo">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Schema.Teams.TeamsMeetingInfo TeamsGetMeetingInfo (this Microsoft.Bot.Schema.IActivity activity);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Schema.Teams.TeamsMeetingInfo TeamsGetMeetingInfo(class Microsoft.Bot.Schema.IActivity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsActivityExtensions.TeamsGetMeetingInfo(Microsoft.Bot.Schema.IActivity)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TeamsGetMeetingInfo (activity As IActivity) As TeamsMeetingInfo" />
+      <MemberSignature Language="F#" Value="static member TeamsGetMeetingInfo : Microsoft.Bot.Schema.IActivity -&gt; Microsoft.Bot.Schema.Teams.TeamsMeetingInfo" Usage="Microsoft.Bot.Builder.Teams.TeamsActivityExtensions.TeamsGetMeetingInfo activity" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Schema.Teams.TeamsMeetingInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.IActivity" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="activity">This activity.</param>
+        <summary>
+            Gets the TeamsMeetingInfo object from the current activity.
+            </summary>
+        <returns>The current activity's team's meeting, or null.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,6 +99,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Schema.Teams.TeamInfo</ReturnType>
@@ -102,6 +131,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -110,7 +140,37 @@
         <Parameter Name="activity" Type="Microsoft.Bot.Schema.IActivity" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="activity"> The current activity. </param>
+        <param name="activity">The current activity.</param>
+        <summary>
+            Configures the current activity to generate a notification within Teams.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TeamsNotifyUser">
+      <MemberSignature Language="C#" Value="public static void TeamsNotifyUser (this Microsoft.Bot.Schema.IActivity activity, bool alertInMeeting, string externalResourceUrl = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void TeamsNotifyUser(class Microsoft.Bot.Schema.IActivity activity, bool alertInMeeting, string externalResourceUrl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Teams.TeamsActivityExtensions.TeamsNotifyUser(Microsoft.Bot.Schema.IActivity,System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub TeamsNotifyUser (activity As IActivity, alertInMeeting As Boolean, Optional externalResourceUrl As String = Nothing)" />
+      <MemberSignature Language="F#" Value="static member TeamsNotifyUser : Microsoft.Bot.Schema.IActivity * bool * string -&gt; unit" Usage="Microsoft.Bot.Builder.Teams.TeamsActivityExtensions.TeamsNotifyUser (activity, alertInMeeting, externalResourceUrl)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.IActivity" RefType="this" />
+        <Parameter Name="alertInMeeting" Type="System.Boolean" />
+        <Parameter Name="externalResourceUrl" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="activity">The current activity. </param>
+        <param name="alertInMeeting">Sent to a meeting chat, this will cause the Teams client to 
+            render it in a notification popup as well as in the chat thread.</param>
+        <param name="externalResourceUrl">Url to external resource. Must be included in manifest's valid domains.</param>
         <summary>
             Configures the current activity to generate a notification within Teams.
             </summary>

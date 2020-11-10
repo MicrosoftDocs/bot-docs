@@ -1,0 +1,27 @@
+<Type Name="DialogContextInspector" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.DialogContextInspector">
+  <TypeSignature Language="C#" Value="public delegate void DialogContextInspector(DialogContext dc);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DialogContextInspector extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.DialogContextInspector" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DialogContextInspector(dc As DialogContext)" />
+  <TypeSignature Language="F#" Value="type DialogContextInspector = delegate of DialogContext -&gt; unit" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="dc">Dialog context.</param>
+    <summary>
+            Delegate for inspecting or modifying dialog state.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

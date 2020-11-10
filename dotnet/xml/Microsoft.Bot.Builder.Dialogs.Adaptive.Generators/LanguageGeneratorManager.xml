@@ -10,6 +10,7 @@
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
     <AssemblyVersion>4.10.3.0</AssemblyVersion>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -36,6 +37,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="resourceExplorer" Type="Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" />
@@ -61,6 +63,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Concurrent.ConcurrentDictionary&lt;System.String,Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGenerator&gt;</ReturnType>
@@ -88,6 +91,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.ImportResolverDelegate</ReturnType>
@@ -97,10 +101,12 @@
         <Parameter Name="resourceMapping" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="locale">To be added.</param>
-        <param name="resourceMapping">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="locale">Locale to identify language.</param>
+        <param name="resourceMapping">Template resource loader delegate.</param>
+        <summary>
+            Returns the resolver to resolve LG import id to template text based on language and a template resource loader delegate.
+            </summary>
+        <returns>The delegate to resolve the resource.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

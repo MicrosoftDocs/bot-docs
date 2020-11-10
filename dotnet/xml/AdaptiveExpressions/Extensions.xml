@@ -9,6 +9,7 @@
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
     <AssemblyVersion>4.10.3.0</AssemblyVersion>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -33,6 +34,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.Expression</ReturnType>
@@ -64,6 +66,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -92,6 +95,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -120,6 +124,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.Expression</ReturnType>
@@ -137,6 +142,40 @@
             Push down not to the leaves if possible.  For and/or/not this uses DeMorgan's law and rewrites comparisons.
             You can define your own behavior by setting <see cref="P:AdaptiveExpressions.ExpressionEvaluator.Negation" /> to the negated evaluator.
             </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RandomNext">
+      <MemberSignature Language="C#" Value="public static int RandomNext (this AdaptiveExpressions.Memory.IMemory memory, int min, int max, int? seed = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 RandomNext(class AdaptiveExpressions.Memory.IMemory memory, int32 min, int32 max, valuetype System.Nullable`1&lt;int32&gt; seed) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.Extensions.RandomNext(AdaptiveExpressions.Memory.IMemory,System.Int32,System.Int32,System.Nullable{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function RandomNext (memory As IMemory, min As Integer, max As Integer, Optional seed As Nullable(Of Integer) = Nothing) As Integer" />
+      <MemberSignature Language="F#" Value="static member RandomNext : AdaptiveExpressions.Memory.IMemory * int * int * Nullable&lt;int&gt; -&gt; int" Usage="AdaptiveExpressions.Extensions.RandomNext (memory, min, max, seed)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="memory" Type="AdaptiveExpressions.Memory.IMemory" RefType="this" />
+        <Parameter Name="min" Type="System.Int32" />
+        <Parameter Name="max" Type="System.Int32" />
+        <Parameter Name="seed" Type="System.Nullable&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="memory">memory state.</param>
+        <param name="min">The inclusive lower bound of the random number returned.</param>
+        <param name="max">The exclusive upper bound of the random number returned. max must be greater than or equal to min.</param>
+        <param name="seed">user seed.</param>
+        <summary>
+            Generator random seed and value from properties.
+            If value is not null, the mock random value result would be: min + (value % (max - min)).
+            Else if seed is not null, the seed of the random would be fixed.
+            </summary>
+        <returns>Random seed and value.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>
