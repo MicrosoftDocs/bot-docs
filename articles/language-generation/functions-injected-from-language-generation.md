@@ -170,7 +170,6 @@ Suppose you have the following template:
 
 ```lg
 # welcome(userName)
-
 - Hi ${userName}
 
 - Hello ${userName}
