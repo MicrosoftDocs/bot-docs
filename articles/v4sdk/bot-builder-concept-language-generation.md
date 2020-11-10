@@ -31,7 +31,7 @@ At the core of LG lies template expansion and entity substitution. You can provi
 
 The following is a simple greeting LG template. Notice that all of the greetings reference the user's name in memory with the variable `${user.name}`.
 
-```.lg
+```lg
 # greetingTemplate
 - Hello ${user.name}, how are you?
 - Good morning ${user.name}.It's nice to see you again.
@@ -46,7 +46,7 @@ You can use LG in a variety of ways when developing bots. To start, create one o
 
 Make sure you include the language Generation library [`Microsoft.Bot.Builder.LanguageGeneration`](https://www.nuget.org/packages/Microsoft.Bot.Builder.LanguageGeneration/). Then parse and load templates in your .lg file by adding the following:
 
-```c#
+```csharp
     _templates = Templates.ParseFile(fullPath);
 ```
 
@@ -54,7 +54,7 @@ Make sure you include the language Generation library [`Microsoft.Bot.Builder.La
 
 Make sure you include the language Generation library [`botbuilder-lg`][15]. Then parse and load templates in your .lg file by adding the following:
 
-```typescript
+```javascript
      let lgTemplates = Templates.parseFile(fullPath);
 ```
 
@@ -64,13 +64,13 @@ When you need template expansion, use `Evaluate` and pass in the relevant templa
 
 # [C#](#tab/csharp)
 
-```c#
+```csharp
     var lgOutput = _templates.Evaluate(<TemplateName>);
 ```
 
 # [JavaScript](#tab/javascript)
 
-```typescript
+```javascript
     let lgOutput = lgTemplates.evaluate(<TemplateName>);
 ```
 
@@ -80,13 +80,13 @@ If your template needs specific properties to be passed for resolution/expansion
 
 # [C#](#tab/csharp)
 
-```c#
+```csharp
     var lgOutput = _templates.Evaluate("WordGameReply", new { GameName = "MarcoPolo" } );
 ```
 
 # [JavaScript](#tab/javascript)
 
-```typescript
+```javascript
     let lgOutput = lgTemplates.evaluate("WordGameReply", { GameName = "MarcoPolo" } );
 ```
 
@@ -106,13 +106,13 @@ To get all possible expansions of a template, you can use `ExpandTemplate`.
 
 # [C#](#tab/csharp)
 
-```c#
+```csharp
     var results = lgTemplates.ExpandTemplate("WordGameReply", { GameName = "MarcoPolo" } )
 ```
 
 # [JavaScript](#tab/javascript)
 
-```typescript
+```javascript
     const results = lgTemplates.expandTemplate("WordGameReply", { GameName = "MarcoPolo" } )
 ```
 
@@ -120,7 +120,7 @@ To get all possible expansions of a template, you can use `ExpandTemplate`.
 
 For example, given this LG content:
 
-```.lg
+```lg
 # Greeting
 - Hi
 - Hello

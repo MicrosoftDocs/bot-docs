@@ -1,0 +1,111 @@
+<Type Name="ResourceExplorerOptions" FullName="Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorerOptions">
+  <TypeSignature Language="C#" Value="public class ResourceExplorerOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResourceExplorerOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorerOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class ResourceExplorerOptions" />
+  <TypeSignature Language="F#" Value="type ResourceExplorerOptions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Configuration options for <see cref="T:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ResourceExplorerOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorerOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowCycles">
+      <MemberSignature Language="C#" Value="public bool AllowCycles { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowCycles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorerOptions.AllowCycles" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowCycles As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowCycles : bool with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorerOptions.AllowCycles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether whether cycles are allowed in resources managed by the <see cref="T:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" />.
+            </summary>
+        <value>
+            Whether cycles are allowed in resources managed by the <see cref="T:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" />.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeclarativeTypes">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Declarative.IComponentDeclarativeTypes&gt; DeclarativeTypes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.Declarative.IComponentDeclarativeTypes&gt; DeclarativeTypes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorerOptions.DeclarativeTypes" />
+      <MemberSignature Language="VB.NET" Value="Public Property DeclarativeTypes As IEnumerable(Of IComponentDeclarativeTypes)" />
+      <MemberSignature Language="F#" Value="member this.DeclarativeTypes : seq&lt;Microsoft.Bot.Builder.Dialogs.Declarative.IComponentDeclarativeTypes&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorerOptions.DeclarativeTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Declarative.IComponentDeclarativeTypes&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the list of declarative types to use. Falls back to <see cref="P:Microsoft.Bot.Builder.ComponentRegistration.Components" /> if set to null.
+            </summary>
+        <value>
+            The list of declarative types to use. Falls back to <see cref="P:Microsoft.Bot.Builder.ComponentRegistration.Components" /> if set to null.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Providers">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceProvider&gt; Providers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceProvider&gt; Providers" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorerOptions.Providers" />
+      <MemberSignature Language="VB.NET" Value="Public Property Providers As IEnumerable(Of ResourceProvider)" />
+      <MemberSignature Language="F#" Value="member this.Providers : seq&lt;Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceProvider&gt; with get, set" Usage="Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorerOptions.Providers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Declarative</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceProvider&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the list of resource providers to initialize the current the <see cref="T:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" />.
+            </summary>
+        <value>
+            The list of resource providers to initialize the current the <see cref="T:Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" />.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
     <AssemblyVersion>4.10.3.0</AssemblyVersion>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -35,6 +36,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="httpRequestMocks" Type="System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpRequestMock&gt;" />
@@ -61,6 +63,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -78,6 +81,31 @@
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="SetFallback">
+      <MemberSignature Language="C#" Value="public void SetFallback (Func&lt;System.Net.Http.HttpRequestMessage,System.Net.Http.HttpResponseMessage&gt; fallback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetFallback(class System.Func`2&lt;class System.Net.Http.HttpRequestMessage, class System.Net.Http.HttpResponseMessage&gt; fallback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.Mocks.MockHttpRequestMiddleware.SetFallback(System.Func{System.Net.Http.HttpRequestMessage,System.Net.Http.HttpResponseMessage})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetFallback (fallback As Func(Of HttpRequestMessage, HttpResponseMessage))" />
+      <MemberSignature Language="F#" Value="member this.SetFallback : Func&lt;System.Net.Http.HttpRequestMessage, System.Net.Http.HttpResponseMessage&gt; -&gt; unit" Usage="mockHttpRequestMiddleware.SetFallback fallback" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fallback" Type="System.Func&lt;System.Net.Http.HttpRequestMessage,System.Net.Http.HttpResponseMessage&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="fallback">New fallback or null.</param>
+        <summary>
+            Set fallback.
+            </summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

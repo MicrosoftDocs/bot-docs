@@ -1,0 +1,1471 @@
+<Type Name="IExpressionAntlrParserListener" FullName="IExpressionAntlrParserListener">
+  <TypeSignature Language="C#" Value="public interface IExpressionAntlrParserListener : Antlr4.Runtime.Tree.IParseTreeListener" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExpressionAntlrParserListener implements class Antlr4.Runtime.Tree.IParseTreeListener" />
+  <TypeSignature Language="DocId" Value="T:IExpressionAntlrParserListener" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IExpressionAntlrParserListener&#xA;Implements IParseTreeListener" />
+  <TypeSignature Language="F#" Value="type IExpressionAntlrParserListener = interface&#xA;    interface IParseTreeListener" />
+  <AssemblyInfo>
+    <AssemblyName>AdaptiveExpressions</AssemblyName>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Antlr4.Runtime.Tree.IParseTreeListener</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.8")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.8")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            This interface defines a complete listener for a parse tree produced by
+            <see cref="T:ExpressionAntlrParser" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EnterArgsList">
+      <MemberSignature Language="C#" Value="public void EnterArgsList (ExpressionAntlrParser.ArgsListContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterArgsList(ExpressionAntlrParser/ArgsListContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.EnterArgsList(ExpressionAntlrParser.ArgsListContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterArgsList (context As ExpressionAntlrParser.ArgsListContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterArgsList : ExpressionAntlrParser.ArgsListContext -&gt; unit" Usage="iExpressionAntlrParserListener.EnterArgsList context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+ArgsListContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:ExpressionAntlrParser.argsList" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterArrayCreationExp">
+      <MemberSignature Language="C#" Value="public void EnterArrayCreationExp (ExpressionAntlrParser.ArrayCreationExpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterArrayCreationExp(ExpressionAntlrParser/ArrayCreationExpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.EnterArrayCreationExp(ExpressionAntlrParser.ArrayCreationExpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterArrayCreationExp (context As ExpressionAntlrParser.ArrayCreationExpContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterArrayCreationExp : ExpressionAntlrParser.ArrayCreationExpContext -&gt; unit" Usage="iExpressionAntlrParserListener.EnterArrayCreationExp context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+ArrayCreationExpContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by the <c>arrayCreationExp</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.primaryExpression" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterBinaryOpExp">
+      <MemberSignature Language="C#" Value="public void EnterBinaryOpExp (ExpressionAntlrParser.BinaryOpExpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterBinaryOpExp(ExpressionAntlrParser/BinaryOpExpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.EnterBinaryOpExp(ExpressionAntlrParser.BinaryOpExpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterBinaryOpExp (context As ExpressionAntlrParser.BinaryOpExpContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterBinaryOpExp : ExpressionAntlrParser.BinaryOpExpContext -&gt; unit" Usage="iExpressionAntlrParserListener.EnterBinaryOpExp context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+BinaryOpExpContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by the <c>binaryOpExp</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.expression" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterFile">
+      <MemberSignature Language="C#" Value="public void EnterFile (ExpressionAntlrParser.FileContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterFile(ExpressionAntlrParser/FileContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.EnterFile(ExpressionAntlrParser.FileContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterFile (context As ExpressionAntlrParser.FileContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterFile : ExpressionAntlrParser.FileContext -&gt; unit" Usage="iExpressionAntlrParserListener.EnterFile context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+FileContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:ExpressionAntlrParser.file" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterFuncInvokeExp">
+      <MemberSignature Language="C#" Value="public void EnterFuncInvokeExp (ExpressionAntlrParser.FuncInvokeExpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterFuncInvokeExp(ExpressionAntlrParser/FuncInvokeExpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.EnterFuncInvokeExp(ExpressionAntlrParser.FuncInvokeExpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterFuncInvokeExp (context As ExpressionAntlrParser.FuncInvokeExpContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterFuncInvokeExp : ExpressionAntlrParser.FuncInvokeExpContext -&gt; unit" Usage="iExpressionAntlrParserListener.EnterFuncInvokeExp context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+FuncInvokeExpContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by the <c>funcInvokeExp</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.primaryExpression" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterIdAtom">
+      <MemberSignature Language="C#" Value="public void EnterIdAtom (ExpressionAntlrParser.IdAtomContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterIdAtom(ExpressionAntlrParser/IdAtomContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.EnterIdAtom(ExpressionAntlrParser.IdAtomContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterIdAtom (context As ExpressionAntlrParser.IdAtomContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterIdAtom : ExpressionAntlrParser.IdAtomContext -&gt; unit" Usage="iExpressionAntlrParserListener.EnterIdAtom context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+IdAtomContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by the <c>idAtom</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.primaryExpression" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterIndexAccessExp">
+      <MemberSignature Language="C#" Value="public void EnterIndexAccessExp (ExpressionAntlrParser.IndexAccessExpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterIndexAccessExp(ExpressionAntlrParser/IndexAccessExpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.EnterIndexAccessExp(ExpressionAntlrParser.IndexAccessExpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterIndexAccessExp (context As ExpressionAntlrParser.IndexAccessExpContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterIndexAccessExp : ExpressionAntlrParser.IndexAccessExpContext -&gt; unit" Usage="iExpressionAntlrParserListener.EnterIndexAccessExp context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+IndexAccessExpContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by the <c>indexAccessExp</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.primaryExpression" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterJsonCreationExp">
+      <MemberSignature Language="C#" Value="public void EnterJsonCreationExp (ExpressionAntlrParser.JsonCreationExpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterJsonCreationExp(ExpressionAntlrParser/JsonCreationExpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.EnterJsonCreationExp(ExpressionAntlrParser.JsonCreationExpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterJsonCreationExp (context As ExpressionAntlrParser.JsonCreationExpContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterJsonCreationExp : ExpressionAntlrParser.JsonCreationExpContext -&gt; unit" Usage="iExpressionAntlrParserListener.EnterJsonCreationExp context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+JsonCreationExpContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by the <c>jsonCreationExp</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.primaryExpression" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterKey">
+      <MemberSignature Language="C#" Value="public void EnterKey (ExpressionAntlrParser.KeyContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterKey(ExpressionAntlrParser/KeyContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.EnterKey(ExpressionAntlrParser.KeyContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterKey (context As ExpressionAntlrParser.KeyContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterKey : ExpressionAntlrParser.KeyContext -&gt; unit" Usage="iExpressionAntlrParserListener.EnterKey context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+KeyContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:ExpressionAntlrParser.key" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterKeyValuePair">
+      <MemberSignature Language="C#" Value="public void EnterKeyValuePair (ExpressionAntlrParser.KeyValuePairContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterKeyValuePair(ExpressionAntlrParser/KeyValuePairContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.EnterKeyValuePair(ExpressionAntlrParser.KeyValuePairContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterKeyValuePair (context As ExpressionAntlrParser.KeyValuePairContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterKeyValuePair : ExpressionAntlrParser.KeyValuePairContext -&gt; unit" Usage="iExpressionAntlrParserListener.EnterKeyValuePair context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+KeyValuePairContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:ExpressionAntlrParser.keyValuePair" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterKeyValuePairList">
+      <MemberSignature Language="C#" Value="public void EnterKeyValuePairList (ExpressionAntlrParser.KeyValuePairListContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterKeyValuePairList(ExpressionAntlrParser/KeyValuePairListContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.EnterKeyValuePairList(ExpressionAntlrParser.KeyValuePairListContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterKeyValuePairList (context As ExpressionAntlrParser.KeyValuePairListContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterKeyValuePairList : ExpressionAntlrParser.KeyValuePairListContext -&gt; unit" Usage="iExpressionAntlrParserListener.EnterKeyValuePairList context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+KeyValuePairListContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:ExpressionAntlrParser.keyValuePairList" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterLambda">
+      <MemberSignature Language="C#" Value="public void EnterLambda (ExpressionAntlrParser.LambdaContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterLambda(ExpressionAntlrParser/LambdaContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.EnterLambda(ExpressionAntlrParser.LambdaContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterLambda (context As ExpressionAntlrParser.LambdaContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterLambda : ExpressionAntlrParser.LambdaContext -&gt; unit" Usage="iExpressionAntlrParserListener.EnterLambda context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+LambdaContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:ExpressionAntlrParser.lambda" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterMemberAccessExp">
+      <MemberSignature Language="C#" Value="public void EnterMemberAccessExp (ExpressionAntlrParser.MemberAccessExpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterMemberAccessExp(ExpressionAntlrParser/MemberAccessExpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.EnterMemberAccessExp(ExpressionAntlrParser.MemberAccessExpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterMemberAccessExp (context As ExpressionAntlrParser.MemberAccessExpContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterMemberAccessExp : ExpressionAntlrParser.MemberAccessExpContext -&gt; unit" Usage="iExpressionAntlrParserListener.EnterMemberAccessExp context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+MemberAccessExpContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by the <c>memberAccessExp</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.primaryExpression" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterNumericAtom">
+      <MemberSignature Language="C#" Value="public void EnterNumericAtom (ExpressionAntlrParser.NumericAtomContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterNumericAtom(ExpressionAntlrParser/NumericAtomContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.EnterNumericAtom(ExpressionAntlrParser.NumericAtomContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterNumericAtom (context As ExpressionAntlrParser.NumericAtomContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterNumericAtom : ExpressionAntlrParser.NumericAtomContext -&gt; unit" Usage="iExpressionAntlrParserListener.EnterNumericAtom context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+NumericAtomContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by the <c>numericAtom</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.primaryExpression" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterParenthesisExp">
+      <MemberSignature Language="C#" Value="public void EnterParenthesisExp (ExpressionAntlrParser.ParenthesisExpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterParenthesisExp(ExpressionAntlrParser/ParenthesisExpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.EnterParenthesisExp(ExpressionAntlrParser.ParenthesisExpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterParenthesisExp (context As ExpressionAntlrParser.ParenthesisExpContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterParenthesisExp : ExpressionAntlrParser.ParenthesisExpContext -&gt; unit" Usage="iExpressionAntlrParserListener.EnterParenthesisExp context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+ParenthesisExpContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by the <c>parenthesisExp</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.primaryExpression" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterPrimaryExp">
+      <MemberSignature Language="C#" Value="public void EnterPrimaryExp (ExpressionAntlrParser.PrimaryExpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterPrimaryExp(ExpressionAntlrParser/PrimaryExpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.EnterPrimaryExp(ExpressionAntlrParser.PrimaryExpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterPrimaryExp (context As ExpressionAntlrParser.PrimaryExpContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterPrimaryExp : ExpressionAntlrParser.PrimaryExpContext -&gt; unit" Usage="iExpressionAntlrParserListener.EnterPrimaryExp context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+PrimaryExpContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by the <c>primaryExp</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.expression" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterStringAtom">
+      <MemberSignature Language="C#" Value="public void EnterStringAtom (ExpressionAntlrParser.StringAtomContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterStringAtom(ExpressionAntlrParser/StringAtomContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.EnterStringAtom(ExpressionAntlrParser.StringAtomContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterStringAtom (context As ExpressionAntlrParser.StringAtomContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterStringAtom : ExpressionAntlrParser.StringAtomContext -&gt; unit" Usage="iExpressionAntlrParserListener.EnterStringAtom context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+StringAtomContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by the <c>stringAtom</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.primaryExpression" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterStringInterpolation">
+      <MemberSignature Language="C#" Value="public void EnterStringInterpolation (ExpressionAntlrParser.StringInterpolationContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterStringInterpolation(ExpressionAntlrParser/StringInterpolationContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.EnterStringInterpolation(ExpressionAntlrParser.StringInterpolationContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterStringInterpolation (context As ExpressionAntlrParser.StringInterpolationContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterStringInterpolation : ExpressionAntlrParser.StringInterpolationContext -&gt; unit" Usage="iExpressionAntlrParserListener.EnterStringInterpolation context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+StringInterpolationContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:ExpressionAntlrParser.stringInterpolation" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterStringInterpolationAtom">
+      <MemberSignature Language="C#" Value="public void EnterStringInterpolationAtom (ExpressionAntlrParser.StringInterpolationAtomContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterStringInterpolationAtom(ExpressionAntlrParser/StringInterpolationAtomContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.EnterStringInterpolationAtom(ExpressionAntlrParser.StringInterpolationAtomContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterStringInterpolationAtom (context As ExpressionAntlrParser.StringInterpolationAtomContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterStringInterpolationAtom : ExpressionAntlrParser.StringInterpolationAtomContext -&gt; unit" Usage="iExpressionAntlrParserListener.EnterStringInterpolationAtom context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+StringInterpolationAtomContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by the <c>stringInterpolationAtom</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.primaryExpression" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterTextContent">
+      <MemberSignature Language="C#" Value="public void EnterTextContent (ExpressionAntlrParser.TextContentContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterTextContent(ExpressionAntlrParser/TextContentContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.EnterTextContent(ExpressionAntlrParser.TextContentContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterTextContent (context As ExpressionAntlrParser.TextContentContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterTextContent : ExpressionAntlrParser.TextContentContext -&gt; unit" Usage="iExpressionAntlrParserListener.EnterTextContent context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+TextContentContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by <see cref="M:ExpressionAntlrParser.textContent" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterTripleOpExp">
+      <MemberSignature Language="C#" Value="public void EnterTripleOpExp (ExpressionAntlrParser.TripleOpExpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterTripleOpExp(ExpressionAntlrParser/TripleOpExpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.EnterTripleOpExp(ExpressionAntlrParser.TripleOpExpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterTripleOpExp (context As ExpressionAntlrParser.TripleOpExpContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterTripleOpExp : ExpressionAntlrParser.TripleOpExpContext -&gt; unit" Usage="iExpressionAntlrParserListener.EnterTripleOpExp context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+TripleOpExpContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by the <c>tripleOpExp</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.expression" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterUnaryOpExp">
+      <MemberSignature Language="C#" Value="public void EnterUnaryOpExp (ExpressionAntlrParser.UnaryOpExpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterUnaryOpExp(ExpressionAntlrParser/UnaryOpExpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.EnterUnaryOpExp(ExpressionAntlrParser.UnaryOpExpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnterUnaryOpExp (context As ExpressionAntlrParser.UnaryOpExpContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnterUnaryOpExp : ExpressionAntlrParser.UnaryOpExpContext -&gt; unit" Usage="iExpressionAntlrParserListener.EnterUnaryOpExp context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+UnaryOpExpContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Enter a parse tree produced by the <c>unaryOpExp</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.expression" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitArgsList">
+      <MemberSignature Language="C#" Value="public void ExitArgsList (ExpressionAntlrParser.ArgsListContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitArgsList(ExpressionAntlrParser/ArgsListContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.ExitArgsList(ExpressionAntlrParser.ArgsListContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitArgsList (context As ExpressionAntlrParser.ArgsListContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitArgsList : ExpressionAntlrParser.ArgsListContext -&gt; unit" Usage="iExpressionAntlrParserListener.ExitArgsList context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+ArgsListContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:ExpressionAntlrParser.argsList" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitArrayCreationExp">
+      <MemberSignature Language="C#" Value="public void ExitArrayCreationExp (ExpressionAntlrParser.ArrayCreationExpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitArrayCreationExp(ExpressionAntlrParser/ArrayCreationExpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.ExitArrayCreationExp(ExpressionAntlrParser.ArrayCreationExpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitArrayCreationExp (context As ExpressionAntlrParser.ArrayCreationExpContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitArrayCreationExp : ExpressionAntlrParser.ArrayCreationExpContext -&gt; unit" Usage="iExpressionAntlrParserListener.ExitArrayCreationExp context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+ArrayCreationExpContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by the <c>arrayCreationExp</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.primaryExpression" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitBinaryOpExp">
+      <MemberSignature Language="C#" Value="public void ExitBinaryOpExp (ExpressionAntlrParser.BinaryOpExpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitBinaryOpExp(ExpressionAntlrParser/BinaryOpExpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.ExitBinaryOpExp(ExpressionAntlrParser.BinaryOpExpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitBinaryOpExp (context As ExpressionAntlrParser.BinaryOpExpContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitBinaryOpExp : ExpressionAntlrParser.BinaryOpExpContext -&gt; unit" Usage="iExpressionAntlrParserListener.ExitBinaryOpExp context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+BinaryOpExpContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by the <c>binaryOpExp</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.expression" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitFile">
+      <MemberSignature Language="C#" Value="public void ExitFile (ExpressionAntlrParser.FileContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitFile(ExpressionAntlrParser/FileContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.ExitFile(ExpressionAntlrParser.FileContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitFile (context As ExpressionAntlrParser.FileContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitFile : ExpressionAntlrParser.FileContext -&gt; unit" Usage="iExpressionAntlrParserListener.ExitFile context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+FileContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:ExpressionAntlrParser.file" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitFuncInvokeExp">
+      <MemberSignature Language="C#" Value="public void ExitFuncInvokeExp (ExpressionAntlrParser.FuncInvokeExpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitFuncInvokeExp(ExpressionAntlrParser/FuncInvokeExpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.ExitFuncInvokeExp(ExpressionAntlrParser.FuncInvokeExpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitFuncInvokeExp (context As ExpressionAntlrParser.FuncInvokeExpContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitFuncInvokeExp : ExpressionAntlrParser.FuncInvokeExpContext -&gt; unit" Usage="iExpressionAntlrParserListener.ExitFuncInvokeExp context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+FuncInvokeExpContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by the <c>funcInvokeExp</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.primaryExpression" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitIdAtom">
+      <MemberSignature Language="C#" Value="public void ExitIdAtom (ExpressionAntlrParser.IdAtomContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitIdAtom(ExpressionAntlrParser/IdAtomContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.ExitIdAtom(ExpressionAntlrParser.IdAtomContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitIdAtom (context As ExpressionAntlrParser.IdAtomContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitIdAtom : ExpressionAntlrParser.IdAtomContext -&gt; unit" Usage="iExpressionAntlrParserListener.ExitIdAtom context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+IdAtomContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by the <c>idAtom</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.primaryExpression" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitIndexAccessExp">
+      <MemberSignature Language="C#" Value="public void ExitIndexAccessExp (ExpressionAntlrParser.IndexAccessExpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitIndexAccessExp(ExpressionAntlrParser/IndexAccessExpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.ExitIndexAccessExp(ExpressionAntlrParser.IndexAccessExpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitIndexAccessExp (context As ExpressionAntlrParser.IndexAccessExpContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitIndexAccessExp : ExpressionAntlrParser.IndexAccessExpContext -&gt; unit" Usage="iExpressionAntlrParserListener.ExitIndexAccessExp context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+IndexAccessExpContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by the <c>indexAccessExp</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.primaryExpression" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitJsonCreationExp">
+      <MemberSignature Language="C#" Value="public void ExitJsonCreationExp (ExpressionAntlrParser.JsonCreationExpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitJsonCreationExp(ExpressionAntlrParser/JsonCreationExpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.ExitJsonCreationExp(ExpressionAntlrParser.JsonCreationExpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitJsonCreationExp (context As ExpressionAntlrParser.JsonCreationExpContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitJsonCreationExp : ExpressionAntlrParser.JsonCreationExpContext -&gt; unit" Usage="iExpressionAntlrParserListener.ExitJsonCreationExp context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+JsonCreationExpContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by the <c>jsonCreationExp</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.primaryExpression" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitKey">
+      <MemberSignature Language="C#" Value="public void ExitKey (ExpressionAntlrParser.KeyContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitKey(ExpressionAntlrParser/KeyContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.ExitKey(ExpressionAntlrParser.KeyContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitKey (context As ExpressionAntlrParser.KeyContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitKey : ExpressionAntlrParser.KeyContext -&gt; unit" Usage="iExpressionAntlrParserListener.ExitKey context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+KeyContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:ExpressionAntlrParser.key" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitKeyValuePair">
+      <MemberSignature Language="C#" Value="public void ExitKeyValuePair (ExpressionAntlrParser.KeyValuePairContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitKeyValuePair(ExpressionAntlrParser/KeyValuePairContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.ExitKeyValuePair(ExpressionAntlrParser.KeyValuePairContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitKeyValuePair (context As ExpressionAntlrParser.KeyValuePairContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitKeyValuePair : ExpressionAntlrParser.KeyValuePairContext -&gt; unit" Usage="iExpressionAntlrParserListener.ExitKeyValuePair context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+KeyValuePairContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:ExpressionAntlrParser.keyValuePair" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitKeyValuePairList">
+      <MemberSignature Language="C#" Value="public void ExitKeyValuePairList (ExpressionAntlrParser.KeyValuePairListContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitKeyValuePairList(ExpressionAntlrParser/KeyValuePairListContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.ExitKeyValuePairList(ExpressionAntlrParser.KeyValuePairListContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitKeyValuePairList (context As ExpressionAntlrParser.KeyValuePairListContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitKeyValuePairList : ExpressionAntlrParser.KeyValuePairListContext -&gt; unit" Usage="iExpressionAntlrParserListener.ExitKeyValuePairList context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+KeyValuePairListContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:ExpressionAntlrParser.keyValuePairList" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitLambda">
+      <MemberSignature Language="C#" Value="public void ExitLambda (ExpressionAntlrParser.LambdaContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitLambda(ExpressionAntlrParser/LambdaContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.ExitLambda(ExpressionAntlrParser.LambdaContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitLambda (context As ExpressionAntlrParser.LambdaContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitLambda : ExpressionAntlrParser.LambdaContext -&gt; unit" Usage="iExpressionAntlrParserListener.ExitLambda context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+LambdaContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:ExpressionAntlrParser.lambda" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitMemberAccessExp">
+      <MemberSignature Language="C#" Value="public void ExitMemberAccessExp (ExpressionAntlrParser.MemberAccessExpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitMemberAccessExp(ExpressionAntlrParser/MemberAccessExpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.ExitMemberAccessExp(ExpressionAntlrParser.MemberAccessExpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitMemberAccessExp (context As ExpressionAntlrParser.MemberAccessExpContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitMemberAccessExp : ExpressionAntlrParser.MemberAccessExpContext -&gt; unit" Usage="iExpressionAntlrParserListener.ExitMemberAccessExp context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+MemberAccessExpContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by the <c>memberAccessExp</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.primaryExpression" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitNumericAtom">
+      <MemberSignature Language="C#" Value="public void ExitNumericAtom (ExpressionAntlrParser.NumericAtomContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitNumericAtom(ExpressionAntlrParser/NumericAtomContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.ExitNumericAtom(ExpressionAntlrParser.NumericAtomContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitNumericAtom (context As ExpressionAntlrParser.NumericAtomContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitNumericAtom : ExpressionAntlrParser.NumericAtomContext -&gt; unit" Usage="iExpressionAntlrParserListener.ExitNumericAtom context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+NumericAtomContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by the <c>numericAtom</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.primaryExpression" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitParenthesisExp">
+      <MemberSignature Language="C#" Value="public void ExitParenthesisExp (ExpressionAntlrParser.ParenthesisExpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitParenthesisExp(ExpressionAntlrParser/ParenthesisExpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.ExitParenthesisExp(ExpressionAntlrParser.ParenthesisExpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitParenthesisExp (context As ExpressionAntlrParser.ParenthesisExpContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitParenthesisExp : ExpressionAntlrParser.ParenthesisExpContext -&gt; unit" Usage="iExpressionAntlrParserListener.ExitParenthesisExp context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+ParenthesisExpContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by the <c>parenthesisExp</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.primaryExpression" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitPrimaryExp">
+      <MemberSignature Language="C#" Value="public void ExitPrimaryExp (ExpressionAntlrParser.PrimaryExpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitPrimaryExp(ExpressionAntlrParser/PrimaryExpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.ExitPrimaryExp(ExpressionAntlrParser.PrimaryExpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitPrimaryExp (context As ExpressionAntlrParser.PrimaryExpContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitPrimaryExp : ExpressionAntlrParser.PrimaryExpContext -&gt; unit" Usage="iExpressionAntlrParserListener.ExitPrimaryExp context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+PrimaryExpContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by the <c>primaryExp</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.expression" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitStringAtom">
+      <MemberSignature Language="C#" Value="public void ExitStringAtom (ExpressionAntlrParser.StringAtomContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitStringAtom(ExpressionAntlrParser/StringAtomContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.ExitStringAtom(ExpressionAntlrParser.StringAtomContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitStringAtom (context As ExpressionAntlrParser.StringAtomContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitStringAtom : ExpressionAntlrParser.StringAtomContext -&gt; unit" Usage="iExpressionAntlrParserListener.ExitStringAtom context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+StringAtomContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by the <c>stringAtom</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.primaryExpression" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitStringInterpolation">
+      <MemberSignature Language="C#" Value="public void ExitStringInterpolation (ExpressionAntlrParser.StringInterpolationContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitStringInterpolation(ExpressionAntlrParser/StringInterpolationContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.ExitStringInterpolation(ExpressionAntlrParser.StringInterpolationContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitStringInterpolation (context As ExpressionAntlrParser.StringInterpolationContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitStringInterpolation : ExpressionAntlrParser.StringInterpolationContext -&gt; unit" Usage="iExpressionAntlrParserListener.ExitStringInterpolation context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+StringInterpolationContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:ExpressionAntlrParser.stringInterpolation" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitStringInterpolationAtom">
+      <MemberSignature Language="C#" Value="public void ExitStringInterpolationAtom (ExpressionAntlrParser.StringInterpolationAtomContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitStringInterpolationAtom(ExpressionAntlrParser/StringInterpolationAtomContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.ExitStringInterpolationAtom(ExpressionAntlrParser.StringInterpolationAtomContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitStringInterpolationAtom (context As ExpressionAntlrParser.StringInterpolationAtomContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitStringInterpolationAtom : ExpressionAntlrParser.StringInterpolationAtomContext -&gt; unit" Usage="iExpressionAntlrParserListener.ExitStringInterpolationAtom context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+StringInterpolationAtomContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by the <c>stringInterpolationAtom</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.primaryExpression" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitTextContent">
+      <MemberSignature Language="C#" Value="public void ExitTextContent (ExpressionAntlrParser.TextContentContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitTextContent(ExpressionAntlrParser/TextContentContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.ExitTextContent(ExpressionAntlrParser.TextContentContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitTextContent (context As ExpressionAntlrParser.TextContentContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitTextContent : ExpressionAntlrParser.TextContentContext -&gt; unit" Usage="iExpressionAntlrParserListener.ExitTextContent context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+TextContentContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by <see cref="M:ExpressionAntlrParser.textContent" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitTripleOpExp">
+      <MemberSignature Language="C#" Value="public void ExitTripleOpExp (ExpressionAntlrParser.TripleOpExpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitTripleOpExp(ExpressionAntlrParser/TripleOpExpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.ExitTripleOpExp(ExpressionAntlrParser.TripleOpExpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitTripleOpExp (context As ExpressionAntlrParser.TripleOpExpContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitTripleOpExp : ExpressionAntlrParser.TripleOpExpContext -&gt; unit" Usage="iExpressionAntlrParserListener.ExitTripleOpExp context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+TripleOpExpContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by the <c>tripleOpExp</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.expression" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitUnaryOpExp">
+      <MemberSignature Language="C#" Value="public void ExitUnaryOpExp (ExpressionAntlrParser.UnaryOpExpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExitUnaryOpExp(ExpressionAntlrParser/UnaryOpExpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:IExpressionAntlrParserListener.ExitUnaryOpExp(ExpressionAntlrParser.UnaryOpExpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExitUnaryOpExp (context As ExpressionAntlrParser.UnaryOpExpContext)" />
+      <MemberSignature Language="F#" Value="abstract member ExitUnaryOpExp : ExpressionAntlrParser.UnaryOpExpContext -&gt; unit" Usage="iExpressionAntlrParserListener.ExitUnaryOpExp context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+UnaryOpExpContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Exit a parse tree produced by the <c>unaryOpExp</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.expression" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

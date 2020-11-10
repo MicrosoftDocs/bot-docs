@@ -10,6 +10,7 @@
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
     <AssemblyVersion>4.10.3.0</AssemblyVersion>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>AdaptiveExpressions.Properties.ObjectExpression&lt;Microsoft.Bot.Builder.Dialogs.Dialog&gt;</BaseTypeName>
@@ -37,6 +38,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -59,6 +61,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="Microsoft.Bot.Builder.Dialogs.Dialog" />
@@ -84,6 +87,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="Newtonsoft.Json.Linq.JToken" />
@@ -109,6 +113,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dialogIdOrExpression" Type="System.String" />
@@ -134,6 +139,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression</ReturnType>
@@ -142,8 +148,11 @@
         <Parameter Name="value" Type="Microsoft.Bot.Builder.Dialogs.Dialog" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">
+          <see cref="T:Microsoft.Bot.Builder.Dialogs.Dialog" /> to convert to a <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression" />.</param>
+        <summary>
+            Converts a <see cref="T:Microsoft.Bot.Builder.Dialogs.Dialog" /> into a <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression" />.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -161,6 +170,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression</ReturnType>
@@ -169,8 +179,11 @@
         <Parameter Name="value" Type="Newtonsoft.Json.Linq.JToken" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">
+          <see cref="T:Newtonsoft.Json.Linq.JToken" /> to convert to a <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression" />.</param>
+        <summary>
+            Converts a <see cref="T:Newtonsoft.Json.Linq.JToken" /> into a <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression" />.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -188,6 +201,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression</ReturnType>
@@ -196,8 +210,10 @@
         <Parameter Name="dialogIdOrExpression" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="dialogIdOrExpression">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dialogIdOrExpression">String to convert to a <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression" />.</param>
+        <summary>
+            Converts a string into a <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression" />.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -215,6 +231,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -223,8 +240,10 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">Value to set.</param>
+        <summary>
+            Sets the raw value of the expression property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,14 +260,17 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Returns a string that represents the current object.
+            </summary>
+        <returns>A string value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

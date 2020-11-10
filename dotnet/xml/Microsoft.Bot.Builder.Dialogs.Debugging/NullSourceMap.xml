@@ -12,6 +12,7 @@
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
     <AssemblyVersion>4.10.3.0</AssemblyVersion>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -42,6 +43,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -67,6 +69,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -76,10 +79,13 @@
         <Parameter Name="range" Type="Microsoft.Bot.Builder.Dialogs.Debugging.SourceRange" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <param name="range">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="item">Object item to record.</param>
+        <param name="range">
+          <see cref="T:Microsoft.Bot.Builder.Dialogs.Debugging.SourceRange" /> for the object.</param>
+        <summary>
+            Add an object and SourceRange information describing where the object was defined.
+            </summary>
+        <remarks>For a <see cref="T:Microsoft.Bot.Builder.Dialogs.Debugging.NullSourceMap" /> it does nothing.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Instance">
@@ -97,12 +103,15 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Debugging.NullSourceMap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a read-only new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Debugging.NullSourceMap" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,6 +133,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -133,11 +143,14 @@
         <Parameter Name="range" Type="Microsoft.Bot.Builder.Dialogs.Debugging.SourceRange" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <param name="range">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="item">Object to look up.</param>
+        <param name="range">Place to return the <see cref="T:Microsoft.Bot.Builder.Dialogs.Debugging.SourceRange" /> for the object.</param>
+        <summary>
+            Look up the <see cref="T:Microsoft.Bot.Builder.Dialogs.Debugging.SourceRange" /> information for an object.
+            </summary>
+        <returns>
+          <c>true</c> if found.</returns>
+        <remarks>For a <see cref="T:Microsoft.Bot.Builder.Dialogs.Debugging.NullSourceMap" /> always returns <c>false</c>.</remarks>
       </Docs>
     </Member>
   </Members>

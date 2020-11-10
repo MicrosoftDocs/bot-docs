@@ -9,6 +9,7 @@
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
     <AssemblyVersion>4.10.3.0</AssemblyVersion>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestAction</BaseTypeName>
@@ -39,6 +40,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -74,17 +76,15 @@
       </Docs>
     </Member>
     <Member MemberName="ExecuteAsync">
-      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task ExecuteAsync (Microsoft.Bot.Builder.Adapters.TestAdapter adapter, Microsoft.Bot.Builder.BotCallbackHandler callback);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task ExecuteAsync(class Microsoft.Bot.Builder.Adapters.TestAdapter adapter, class Microsoft.Bot.Builder.BotCallbackHandler callback) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestActions.UserSays.ExecuteAsync(Microsoft.Bot.Builder.Adapters.TestAdapter,Microsoft.Bot.Builder.BotCallbackHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function ExecuteAsync (adapter As TestAdapter, callback As BotCallbackHandler) As Task" />
-      <MemberSignature Language="F#" Value="override this.ExecuteAsync : Microsoft.Bot.Builder.Adapters.TestAdapter * Microsoft.Bot.Builder.BotCallbackHandler -&gt; System.Threading.Tasks.Task" Usage="userSays.ExecuteAsync (adapter, callback)" />
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task ExecuteAsync (Microsoft.Bot.Builder.Adapters.TestAdapter adapter, Microsoft.Bot.Builder.BotCallbackHandler callback, Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.Inspector inspector = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task ExecuteAsync(class Microsoft.Bot.Builder.Adapters.TestAdapter adapter, class Microsoft.Bot.Builder.BotCallbackHandler callback, class Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.Inspector inspector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.TestActions.UserSays.ExecuteAsync(Microsoft.Bot.Builder.Adapters.TestAdapter,Microsoft.Bot.Builder.BotCallbackHandler,Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.Inspector)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ExecuteAsync (adapter As TestAdapter, callback As BotCallbackHandler, Optional inspector As Inspector = Nothing) As Task" />
+      <MemberSignature Language="F#" Value="override this.ExecuteAsync : Microsoft.Bot.Builder.Adapters.TestAdapter * Microsoft.Bot.Builder.BotCallbackHandler * Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.Inspector -&gt; System.Threading.Tasks.Task" Usage="userSays.ExecuteAsync (adapter, callback, inspector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-        <AssemblyVersion>4.10.0.0</AssemblyVersion>
-        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -92,10 +92,12 @@
       <Parameters>
         <Parameter Name="adapter" Type="Microsoft.Bot.Builder.Adapters.TestAdapter" />
         <Parameter Name="callback" Type="Microsoft.Bot.Builder.BotCallbackHandler" />
+        <Parameter Name="inspector" Type="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.Inspector" />
       </Parameters>
       <Docs>
         <param name="adapter">To be added.</param>
         <param name="callback">To be added.</param>
+        <param name="inspector">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -114,6 +116,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -143,6 +146,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -175,6 +179,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

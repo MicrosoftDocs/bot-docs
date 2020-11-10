@@ -10,6 +10,7 @@
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
     <AssemblyVersion>4.10.3.0</AssemblyVersion>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -34,6 +35,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -56,6 +58,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="opt" Type="Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions" />
@@ -81,6 +84,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="optionsList" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
@@ -90,6 +94,30 @@
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions" /> class.
             </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheScope">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.LanguageGeneration.LGCacheScope? CacheScope { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Bot.Builder.LanguageGeneration.LGCacheScope&gt; CacheScope" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions.CacheScope" />
+      <MemberSignature Language="VB.NET" Value="Public Property CacheScope As Nullable(Of LGCacheScope)" />
+      <MemberSignature Language="F#" Value="member this.CacheScope : Nullable&lt;Microsoft.Bot.Builder.LanguageGeneration.LGCacheScope&gt; with get, set" Usage="Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions.CacheScope" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Microsoft.Bot.Builder.LanguageGeneration.LGCacheScope&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets cache scope of the evaluation result.
+            </summary>
+        <value>
+            Cache scope of the evaluation result.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,6 +134,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Microsoft.Bot.Builder.LanguageGeneration.LGLineBreakStyle&gt;</ReturnType>
@@ -131,6 +160,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -158,6 +188,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions</ReturnType>
@@ -188,6 +219,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Func&lt;System.String,System.Object&gt;</ReturnType>
@@ -199,6 +231,30 @@
             </summary>
         <value>
             A function.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnEvent">
+      <MemberSignature Language="C#" Value="public EventHandler OnEvent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.EventHandler OnEvent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions.OnEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Property OnEvent As EventHandler" />
+      <MemberSignature Language="F#" Value="member this.OnEvent : EventHandler with get, set" Usage="Microsoft.Bot.Builder.LanguageGeneration.EvaluationOptions.OnEvent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets an event handler that handles the emitted events in the evaluation process.
+            </summary>
+        <value>
+            An event handler that handles the emitted events in the evaluation process.
             </value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -216,6 +272,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>

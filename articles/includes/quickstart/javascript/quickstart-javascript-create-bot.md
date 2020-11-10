@@ -1,4 +1,5 @@
-<!-- Include under ## Create a bot H2 header -->
+<!-- Include under "Create a bot" header in the files:
+bot-builder-tutorial-create-basic-bot.md and bot-builder-javascript-quickstart.md -->
 
 1. Use the generator to create an echo bot.
 

@@ -10,6 +10,7 @@
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
     <AssemblyVersion>4.10.3.0</AssemblyVersion>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Adaptive.LanguageGenerator</BaseTypeName>
@@ -34,6 +35,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -56,12 +58,37 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="engine" Type="Microsoft.Bot.Builder.LanguageGeneration.Templates" />
       </Parameters>
       <Docs>
         <param name="engine">template engine.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.TemplateEngineLanguageGenerator" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TemplateEngineLanguageGenerator (Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource resource, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource&gt;&gt; resourceMapping);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource resource, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource&gt;&gt; resourceMapping) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.TemplateEngineLanguageGenerator.#ctor(Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.IList{Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource}})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (resource As Resource, resourceMapping As Dictionary(Of String, IList(Of Resource)))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.TemplateEngineLanguageGenerator : Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource&gt;&gt; -&gt; Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.TemplateEngineLanguageGenerator" Usage="new Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.TemplateEngineLanguageGenerator (resource, resourceMapping)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="resource" Type="Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource" />
+        <Parameter Name="resourceMapping" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="resource">Resource.</param>
+        <param name="resourceMapping">template resource loader delegate (locale) -&gt; <see cref="T:Microsoft.Bot.Builder.LanguageGeneration.ImportResolverDelegate" />.</param>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Generators.TemplateEngineLanguageGenerator" /> class.
             </summary>
@@ -81,7 +108,14 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("This method will soon be deprecated. Use LGResource as the first parameter instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method will soon be deprecated. Use LGResource as the first parameter instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="filePath" Type="System.String" />
         <Parameter Name="resourceMapping" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.Dialogs.Declarative.Resources.Resource&gt;&gt;" />
@@ -108,7 +142,14 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("This method will soon be deprecated. Use LGResource as the first parameter instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method will soon be deprecated. Use LGResource as the first parameter instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="lgText" Type="System.String" />
         <Parameter Name="id" Type="System.String" />
@@ -137,6 +178,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Object&gt;</ReturnType>
@@ -172,6 +214,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -205,6 +248,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -216,7 +260,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Class identifier.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

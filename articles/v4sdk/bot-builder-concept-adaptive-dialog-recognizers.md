@@ -50,7 +50,7 @@ Intents are how you categorize expected user intentions as expressed in their me
 
 Here is an example of a simple .lu file that captures a simple **Greeting** intent with a list of example utterances that capture different ways a user might express this intent. You can use a `-`, `+`, or `*` character to denote lists. Numbered lists are not supported.  
 
-```dos
+```lu
 # Greeting
 - Hi
 - Hello
@@ -72,7 +72,7 @@ Entities are a collection of objects, each consisting of data extracted from an 
 
 Entities in the [.lu file format][8] are defined in this format: `{<entityName>=<labelled value>}`, such as `{toCity=seattle}` (EntityName is _toCity_ and labelled value is _seattle_).  For example:
 
-```dos
+```lu
 # BookFlight
 - book a flight to {toCity=seattle}
 - book a flight from {fromCity=new york} to {toCity=seattle}
@@ -145,7 +145,6 @@ For detailed information and an example how to create a LUIS recognizer, see the
 
 For detailed steps on how to create your LUIS application and deploy your LUIS models using the Bot Framework CLI, see [How to deploy LUIS resources using the Bot Framework SDK LUIS CLI commands][how-to-deploy-using-luis-cli].
 
-
 ### QnA Maker Recognizer
 
 [QnAMaker.ai][13] is one of the [Microsoft Cognitive Services][14] that enables you to create rich question-answer pairs from existing content - documents, URLs, PDFs, and so on. You can use the QnA Maker recognizer to integrate with the service.
@@ -166,12 +165,18 @@ For detailed information and an example how to create a Recognizer set, see the 
 
 ### Cross-trained recognizer set
 
-The cross-trained recognizer set compares recognition results from more than one recognizer to decide a winner. Given a collection of recognizers, the cross-trained recognizer will:
+The cross-trained recognizer set compares recognition results from multiple recognizers to decide a winner. Given a collection of recognizers, the cross-trained recognizer will:
 
 * Promote the recognition result of one of the recognizer if all other recognizers defer recognition to a single recognizer. To defer recognition, a recognizer can return the `None` intent or an explicit `DeferToRecognizer_recognizerId` as intent.
 * Raises an `OnChooseIntent` event to allow your code to choose which recognition result to use. Each recognizer's results are returned via the `turn.recognized.candidates` property. This enables you to choose the most appropriate result.
 
-For detailed information and an example how to create a Cross-trained recognizer set, see the [Cross-trained recognizer set](../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md#cross-trained-recognizer-set) section in the Recognizers in adaptive dialogs - reference guide.
+#### More on cross training
+
+* For a comprehensive conceptual explanation of cross training your bot, refer to the [Cross train your bot to use both LUIS and QnA Maker recognizers](bot-builder-concept-cross-train.md) article.
+
+* For technical details on cross training a bot, see the _Cross-trained recognizer set_ section of the [Recognizers in adaptive dialogs - reference guide](../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md#cross-trained-recognizer-set).
+
+* For detailed information on how to cross train a bot using an existing bot as an example, see [Create a bot cross trained to use both LUIS and QnA Maker recognizers](bot-builder-howto-cross-train.md).
 
 ## Additional Information
 
@@ -185,7 +190,6 @@ For detailed information and an example how to create a Cross-trained recognizer
 * For more detailed information on recognizers in adaptive dialogs, including examples, see the [recognizers in adaptive dialogs - reference guide][recognizers-ref].
 
 <!-- Footnote-style links -->
-[recognizers-ref]: ../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md
 [1]:bot-builder-basics.md
 [2]:bot-builder-adaptive-dialog-introduction.md
 [3]:bot-builder-concept-dialog.md
@@ -201,4 +205,6 @@ For detailed information and an example how to create a Cross-trained recognizer
 [13]:https://qnamaker.ai
 [14]:https://azure.microsoft.com/services/cognitive-services/
 [15]:https://aka.ms/adaptive-cards-overview
+[recognizers-ref]: ../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md
 [how-to-deploy-using-luis-cli]: ../v4sdk/bot-builder-howto-bf-cli-deploy-luis.md
+[interruptions]: bot-builder-concept-adaptive-dialog-interruptions.md

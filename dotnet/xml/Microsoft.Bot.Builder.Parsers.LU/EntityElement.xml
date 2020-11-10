@@ -1,0 +1,171 @@
+<Type Name="EntityElement" FullName="Microsoft.Bot.Builder.Parsers.LU.EntityElement">
+  <TypeSignature Language="C#" Value="public class EntityElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EntityElement extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Parsers.LU.EntityElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class EntityElement" />
+  <TypeSignature Language="F#" Value="type EntityElement = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EntityElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Parsers.LU.EntityElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndPos">
+      <MemberSignature Language="C#" Value="public int? EndPos { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; EndPos" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Parsers.LU.EntityElement.EndPos" />
+      <MemberSignature Language="VB.NET" Value="Public Property EndPos As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.EndPos : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Bot.Builder.Parsers.LU.EntityElement.EndPos" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("endPos", NullValueHandling=Newtonsoft.Json.NullValueHandling.Ignore)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("endPos", NullValueHandling=Newtonsoft.Json.NullValueHandling.Ignore)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Entity">
+      <MemberSignature Language="C#" Value="public string Entity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Entity" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Parsers.LU.EntityElement.Entity" />
+      <MemberSignature Language="VB.NET" Value="Public Property Entity As String" />
+      <MemberSignature Language="F#" Value="member this.Entity : string with get, set" Usage="Microsoft.Bot.Builder.Parsers.LU.EntityElement.Entity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("entity")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("entity")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Role">
+      <MemberSignature Language="C#" Value="public string Role { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Role" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Parsers.LU.EntityElement.Role" />
+      <MemberSignature Language="VB.NET" Value="Public Property Role As String" />
+      <MemberSignature Language="F#" Value="member this.Role : string with get, set" Usage="Microsoft.Bot.Builder.Parsers.LU.EntityElement.Role" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("role")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("role")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartPos">
+      <MemberSignature Language="C#" Value="public int? StartPos { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; StartPos" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Parsers.LU.EntityElement.StartPos" />
+      <MemberSignature Language="VB.NET" Value="Public Property StartPos As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.StartPos : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Bot.Builder.Parsers.LU.EntityElement.StartPos" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("startPos", NullValueHandling=Newtonsoft.Json.NullValueHandling.Ignore)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("startPos", NullValueHandling=Newtonsoft.Json.NullValueHandling.Ignore)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.Parsers.LU.TypeEnum Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Bot.Builder.Parsers.LU.TypeEnum Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.Parsers.LU.EntityElement.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As TypeEnum" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Bot.Builder.Parsers.LU.TypeEnum with get, set" Usage="Microsoft.Bot.Builder.Parsers.LU.EntityElement.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("type")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("type")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Parsers.LU.TypeEnum</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

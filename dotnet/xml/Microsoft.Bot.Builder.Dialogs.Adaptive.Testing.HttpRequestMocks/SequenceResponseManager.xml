@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
     <AssemblyVersion>4.10.3.0</AssemblyVersion>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -31,6 +32,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="responses" Type="System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.HttpResponseMock&gt;" />
@@ -44,28 +46,27 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetContent">
-      <MemberSignature Language="C#" Value="public System.Net.Http.HttpContent GetContent ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.Http.HttpContent GetContent() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.SequenceResponseManager.GetContent" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetContent () As HttpContent" />
-      <MemberSignature Language="F#" Value="member this.GetContent : unit -&gt; System.Net.Http.HttpContent" Usage="sequenceResponseManager.GetContent " />
+    <Member MemberName="GetMessage">
+      <MemberSignature Language="C#" Value="public System.Net.Http.HttpResponseMessage GetMessage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.Http.HttpResponseMessage GetMessage() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Testing.HttpRequestMocks.SequenceResponseManager.GetMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMessage () As HttpResponseMessage" />
+      <MemberSignature Language="F#" Value="member this.GetMessage : unit -&gt; System.Net.Http.HttpResponseMessage" Usage="sequenceResponseManager.GetMessage " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
-        <AssemblyVersion>4.10.0.0</AssemblyVersion>
-        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Net.Http.HttpContent</ReturnType>
+        <ReturnType>System.Net.Http.HttpResponseMessage</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
         <summary>
-            Return the content in sequence order. The last one will be repeated.
+            Return the message in sequence order. The last one will be repeated.
             </summary>
         <returns>
-            The HttpContent.
+            The HttpResponseMessage.
             </returns>
         <remarks>To be added.</remarks>
       </Docs>
