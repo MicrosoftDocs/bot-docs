@@ -10,6 +10,7 @@
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
     <AssemblyVersion>4.10.3.0</AssemblyVersion>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -34,6 +35,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -54,6 +56,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Security.Claims.ClaimsIdentity&gt;</ReturnType>
@@ -84,6 +87,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CreateAnonymousSkillClaim">
+      <MemberSignature Language="C#" Value="public static System.Security.Claims.ClaimsIdentity CreateAnonymousSkillClaim ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Claims.ClaimsIdentity CreateAnonymousSkillClaim() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.SkillValidation.CreateAnonymousSkillClaim" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateAnonymousSkillClaim () As ClaimsIdentity" />
+      <MemberSignature Language="F#" Value="static member CreateAnonymousSkillClaim : unit -&gt; System.Security.Claims.ClaimsIdentity" Usage="Microsoft.Bot.Connector.Authentication.SkillValidation.CreateAnonymousSkillClaim " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Claims.ClaimsIdentity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates a <see cref="T:System.Security.Claims.ClaimsIdentity" /> for an anonymous (unauthenticated) skill. 
+            </summary>
+        <returns>A <see cref="T:System.Security.Claims.ClaimsIdentity" /> instance with authentication type set to <see cref="F:Microsoft.Bot.Connector.Authentication.AuthenticationConstants.AnonymousAuthType" /> and a reserved <see cref="F:Microsoft.Bot.Connector.Authentication.AuthenticationConstants.AnonymousSkillAppId" /> claim.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IsSkillClaim">
       <MemberSignature Language="C#" Value="public static bool IsSkillClaim (System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt; claims);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsSkillClaim(class System.Collections.Generic.IEnumerable`1&lt;class System.Security.Claims.Claim&gt; claims) cil managed" />
@@ -97,6 +123,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -138,6 +165,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

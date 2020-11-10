@@ -1,0 +1,125 @@
+<Type Name="MeetingParticipantInfo" FullName="Microsoft.Bot.Schema.Teams.MeetingParticipantInfo">
+  <TypeSignature Language="C#" Value="public class MeetingParticipantInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MeetingParticipantInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Schema.Teams.MeetingParticipantInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Class MeetingParticipantInfo" />
+  <TypeSignature Language="F#" Value="type MeetingParticipantInfo = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Teams meeting participant details.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MeetingParticipantInfo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.MeetingParticipantInfo.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Schema.Teams.MeetingParticipantInfo" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MeetingParticipantInfo (string role = default, bool? inMeeting = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string role, valuetype System.Nullable`1&lt;bool&gt; inMeeting) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Schema.Teams.MeetingParticipantInfo.#ctor(System.String,System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional role As String = Nothing, Optional inMeeting As Nullable(Of Boolean) = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Schema.Teams.MeetingParticipantInfo : string * Nullable&lt;bool&gt; -&gt; Microsoft.Bot.Schema.Teams.MeetingParticipantInfo" Usage="new Microsoft.Bot.Schema.Teams.MeetingParticipantInfo (role, inMeeting)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="role" Type="System.String" />
+        <Parameter Name="inMeeting" Type="System.Nullable&lt;System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="role">Role of the participant in the current meeting.</param>
+        <param name="inMeeting">True, if the participant is in the meeting.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Schema.Teams.MeetingParticipantInfo" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InMeeting">
+      <MemberSignature Language="C#" Value="public bool? InMeeting { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; InMeeting" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MeetingParticipantInfo.InMeeting" />
+      <MemberSignature Language="VB.NET" Value="Public Property InMeeting As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.InMeeting : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Bot.Schema.Teams.MeetingParticipantInfo.InMeeting" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="inMeeting")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="inMeeting")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether the participant is in the meeting or not.
+            </summary>
+        <value>
+            The value indicating if the participant is in the meeting.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Role">
+      <MemberSignature Language="C#" Value="public string Role { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Role" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Schema.Teams.MeetingParticipantInfo.Role" />
+      <MemberSignature Language="VB.NET" Value="Public Property Role As String" />
+      <MemberSignature Language="F#" Value="member this.Role : string with get, set" Usage="Microsoft.Bot.Schema.Teams.MeetingParticipantInfo.Role" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Schema</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="role")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="role")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the participant's role in the meeting.
+            </summary>
+        <value>
+            The participant's role in the meeting.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

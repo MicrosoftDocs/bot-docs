@@ -9,6 +9,7 @@
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
     <AssemblyVersion>4.10.3.0</AssemblyVersion>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,10 +27,10 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MockLuisLoader (Microsoft.Extensions.Configuration.IConfiguration configuration);" />
+      <MemberSignature Language="C#" Value="public MockLuisLoader (Microsoft.Extensions.Configuration.IConfiguration configuration = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Extensions.Configuration.IConfiguration configuration) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.Testing.MockLuisLoader.#ctor(Microsoft.Extensions.Configuration.IConfiguration)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (configuration As IConfiguration)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional configuration As IConfiguration = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.AI.Luis.Testing.MockLuisLoader : Microsoft.Extensions.Configuration.IConfiguration -&gt; Microsoft.Bot.Builder.AI.Luis.Testing.MockLuisLoader" Usage="new Microsoft.Bot.Builder.AI.Luis.Testing.MockLuisLoader configuration" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -37,12 +38,13 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="configuration" Type="Microsoft.Extensions.Configuration.IConfiguration" />
       </Parameters>
       <Docs>
-        <param name="configuration">configuration to use.</param>
+        <param name="configuration">Configuration to use or null for no settings and caching.</param>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.AI.Luis.Testing.MockLuisLoader" /> class.
             </summary>
@@ -64,6 +66,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>

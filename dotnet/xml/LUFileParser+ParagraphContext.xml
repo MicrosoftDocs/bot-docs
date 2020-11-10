@@ -1,0 +1,326 @@
+<Type Name="LUFileParser+ParagraphContext" FullName="LUFileParser+ParagraphContext">
+  <TypeSignature Language="C#" Value="public class LUFileParser.ParagraphContext : Antlr4.Runtime.ParserRuleContext" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit LUFileParser/ParagraphContext extends Antlr4.Runtime.ParserRuleContext" />
+  <TypeSignature Language="DocId" Value="T:LUFileParser.ParagraphContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class LUFileParser.ParagraphContext&#xA;Inherits ParserRuleContext" />
+  <TypeSignature Language="F#" Value="type LUFileParser.ParagraphContext = class&#xA;    inherit ParserRuleContext" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Antlr4.Runtime.ParserRuleContext</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ParagraphContext (Antlr4.Runtime.ParserRuleContext parent, int invokingState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Antlr4.Runtime.ParserRuleContext parent, int32 invokingState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:LUFileParser.ParagraphContext.#ctor(Antlr4.Runtime.ParserRuleContext,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (parent As ParserRuleContext, invokingState As Integer)" />
+      <MemberSignature Language="F#" Value="new LUFileParser.ParagraphContext : Antlr4.Runtime.ParserRuleContext * int -&gt; LUFileParser.ParagraphContext" Usage="new LUFileParser.ParagraphContext (parent, invokingState)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parent" Type="Antlr4.Runtime.ParserRuleContext" />
+        <Parameter Name="invokingState" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="parent">To be added.</param>
+        <param name="invokingState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Accept&lt;TResult&gt;">
+      <MemberSignature Language="C#" Value="public override TResult Accept&lt;TResult&gt; (Antlr4.Runtime.Tree.IParseTreeVisitor&lt;TResult&gt; visitor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance !!TResult Accept&lt;TResult&gt;(class Antlr4.Runtime.Tree.IParseTreeVisitor`1&lt;!!TResult&gt; visitor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:LUFileParser.ParagraphContext.Accept``1(Antlr4.Runtime.Tree.IParseTreeVisitor{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Accept(Of TResult) (visitor As IParseTreeVisitor(Of TResult)) As TResult" />
+      <MemberSignature Language="F#" Value="override this.Accept : Antlr4.Runtime.Tree.IParseTreeVisitor&lt;'Result&gt; -&gt; 'Result" Usage="paragraphContext.Accept visitor" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TResult</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="visitor" Type="Antlr4.Runtime.Tree.IParseTreeVisitor&lt;TResult&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="visitor">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterRule">
+      <MemberSignature Language="C#" Value="public override void EnterRule (Antlr4.Runtime.Tree.IParseTreeListener listener);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EnterRule(class Antlr4.Runtime.Tree.IParseTreeListener listener) cil managed" />
+      <MemberSignature Language="DocId" Value="M:LUFileParser.ParagraphContext.EnterRule(Antlr4.Runtime.Tree.IParseTreeListener)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub EnterRule (listener As IParseTreeListener)" />
+      <MemberSignature Language="F#" Value="override this.EnterRule : Antlr4.Runtime.Tree.IParseTreeListener -&gt; unit" Usage="paragraphContext.EnterRule listener" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="listener" Type="Antlr4.Runtime.Tree.IParseTreeListener" />
+      </Parameters>
+      <Docs>
+        <param name="listener">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="entitySection">
+      <MemberSignature Language="C#" Value="public LUFileParser.EntitySectionContext entitySection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance LUFileParser/EntitySectionContext entitySection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:LUFileParser.ParagraphContext.entitySection" />
+      <MemberSignature Language="VB.NET" Value="Public Function entitySection () As LUFileParser.EntitySectionContext" />
+      <MemberSignature Language="F#" Value="member this.entitySection : unit -&gt; LUFileParser.EntitySectionContext" Usage="paragraphContext.entitySection " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>LUFileParser+EntitySectionContext</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitRule">
+      <MemberSignature Language="C#" Value="public override void ExitRule (Antlr4.Runtime.Tree.IParseTreeListener listener);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ExitRule(class Antlr4.Runtime.Tree.IParseTreeListener listener) cil managed" />
+      <MemberSignature Language="DocId" Value="M:LUFileParser.ParagraphContext.ExitRule(Antlr4.Runtime.Tree.IParseTreeListener)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ExitRule (listener As IParseTreeListener)" />
+      <MemberSignature Language="F#" Value="override this.ExitRule : Antlr4.Runtime.Tree.IParseTreeListener -&gt; unit" Usage="paragraphContext.ExitRule listener" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="listener" Type="Antlr4.Runtime.Tree.IParseTreeListener" />
+      </Parameters>
+      <Docs>
+        <param name="listener">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="importSection">
+      <MemberSignature Language="C#" Value="public LUFileParser.ImportSectionContext importSection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance LUFileParser/ImportSectionContext importSection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:LUFileParser.ParagraphContext.importSection" />
+      <MemberSignature Language="VB.NET" Value="Public Function importSection () As LUFileParser.ImportSectionContext" />
+      <MemberSignature Language="F#" Value="member this.importSection : unit -&gt; LUFileParser.ImportSectionContext" Usage="paragraphContext.importSection " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>LUFileParser+ImportSectionContext</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="modelInfoSection">
+      <MemberSignature Language="C#" Value="public LUFileParser.ModelInfoSectionContext modelInfoSection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance LUFileParser/ModelInfoSectionContext modelInfoSection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:LUFileParser.ParagraphContext.modelInfoSection" />
+      <MemberSignature Language="VB.NET" Value="Public Function modelInfoSection () As LUFileParser.ModelInfoSectionContext" />
+      <MemberSignature Language="F#" Value="member this.modelInfoSection : unit -&gt; LUFileParser.ModelInfoSectionContext" Usage="paragraphContext.modelInfoSection " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>LUFileParser+ModelInfoSectionContext</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="nestedIntentSection">
+      <MemberSignature Language="C#" Value="public LUFileParser.NestedIntentSectionContext nestedIntentSection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance LUFileParser/NestedIntentSectionContext nestedIntentSection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:LUFileParser.ParagraphContext.nestedIntentSection" />
+      <MemberSignature Language="VB.NET" Value="Public Function nestedIntentSection () As LUFileParser.NestedIntentSectionContext" />
+      <MemberSignature Language="F#" Value="member this.nestedIntentSection : unit -&gt; LUFileParser.NestedIntentSectionContext" Usage="paragraphContext.nestedIntentSection " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>LUFileParser+NestedIntentSectionContext</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="newEntitySection">
+      <MemberSignature Language="C#" Value="public LUFileParser.NewEntitySectionContext newEntitySection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance LUFileParser/NewEntitySectionContext newEntitySection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:LUFileParser.ParagraphContext.newEntitySection" />
+      <MemberSignature Language="VB.NET" Value="Public Function newEntitySection () As LUFileParser.NewEntitySectionContext" />
+      <MemberSignature Language="F#" Value="member this.newEntitySection : unit -&gt; LUFileParser.NewEntitySectionContext" Usage="paragraphContext.newEntitySection " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>LUFileParser+NewEntitySectionContext</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="newline">
+      <MemberSignature Language="C#" Value="public LUFileParser.NewlineContext newline ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance LUFileParser/NewlineContext newline() cil managed" />
+      <MemberSignature Language="DocId" Value="M:LUFileParser.ParagraphContext.newline" />
+      <MemberSignature Language="VB.NET" Value="Public Function newline () As LUFileParser.NewlineContext" />
+      <MemberSignature Language="F#" Value="member this.newline : unit -&gt; LUFileParser.NewlineContext" Usage="paragraphContext.newline " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>LUFileParser+NewlineContext</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="qnaSection">
+      <MemberSignature Language="C#" Value="public LUFileParser.QnaSectionContext qnaSection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance LUFileParser/QnaSectionContext qnaSection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:LUFileParser.ParagraphContext.qnaSection" />
+      <MemberSignature Language="VB.NET" Value="Public Function qnaSection () As LUFileParser.QnaSectionContext" />
+      <MemberSignature Language="F#" Value="member this.qnaSection : unit -&gt; LUFileParser.QnaSectionContext" Usage="paragraphContext.qnaSection " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>LUFileParser+QnaSectionContext</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="referenceSection">
+      <MemberSignature Language="C#" Value="public LUFileParser.ReferenceSectionContext referenceSection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance LUFileParser/ReferenceSectionContext referenceSection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:LUFileParser.ParagraphContext.referenceSection" />
+      <MemberSignature Language="VB.NET" Value="Public Function referenceSection () As LUFileParser.ReferenceSectionContext" />
+      <MemberSignature Language="F#" Value="member this.referenceSection : unit -&gt; LUFileParser.ReferenceSectionContext" Usage="paragraphContext.referenceSection " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>LUFileParser+ReferenceSectionContext</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RuleIndex">
+      <MemberSignature Language="C#" Value="public override int RuleIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RuleIndex" />
+      <MemberSignature Language="DocId" Value="P:LUFileParser.ParagraphContext.RuleIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RuleIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.RuleIndex : int" Usage="LUFileParser.ParagraphContext.RuleIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="simpleIntentSection">
+      <MemberSignature Language="C#" Value="public LUFileParser.SimpleIntentSectionContext simpleIntentSection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance LUFileParser/SimpleIntentSectionContext simpleIntentSection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:LUFileParser.ParagraphContext.simpleIntentSection" />
+      <MemberSignature Language="VB.NET" Value="Public Function simpleIntentSection () As LUFileParser.SimpleIntentSectionContext" />
+      <MemberSignature Language="F#" Value="member this.simpleIntentSection : unit -&gt; LUFileParser.SimpleIntentSectionContext" Usage="paragraphContext.simpleIntentSection " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>LUFileParser+SimpleIntentSectionContext</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

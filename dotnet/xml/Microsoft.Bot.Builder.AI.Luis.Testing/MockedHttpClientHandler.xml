@@ -9,6 +9,7 @@
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
     <AssemblyVersion>4.10.3.0</AssemblyVersion>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Net.Http.HttpClientHandler</BaseTypeName>
@@ -33,6 +34,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="client" Type="System.Net.Http.HttpClient" />
@@ -42,6 +44,54 @@
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.AI.Luis.Testing.MockedHttpClientHandler" /> class.
             </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MockedHttpClientHandler (System.Net.Http.HttpMessageHandler httpMessageHandler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Net.Http.HttpMessageHandler httpMessageHandler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.Testing.MockedHttpClientHandler.#ctor(System.Net.Http.HttpMessageHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (httpMessageHandler As HttpMessageHandler)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.AI.Luis.Testing.MockedHttpClientHandler : System.Net.Http.HttpMessageHandler -&gt; Microsoft.Bot.Builder.AI.Luis.Testing.MockedHttpClientHandler" Usage="new Microsoft.Bot.Builder.AI.Luis.Testing.MockedHttpClientHandler httpMessageHandler" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="httpMessageHandler" Type="System.Net.Http.HttpMessageHandler" />
+      </Parameters>
+      <Docs>
+        <param name="httpMessageHandler">Handler to use.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.AI.Luis.Testing.MockedHttpClientHandler" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneHttpRequestMessageAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Net.Http.HttpRequestMessage&gt; CloneHttpRequestMessageAsync (System.Net.Http.HttpRequestMessage request);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Net.Http.HttpRequestMessage&gt; CloneHttpRequestMessageAsync(class System.Net.Http.HttpRequestMessage request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.Testing.MockedHttpClientHandler.CloneHttpRequestMessageAsync(System.Net.Http.HttpRequestMessage)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CloneHttpRequestMessageAsync (request As HttpRequestMessage) As Task(Of HttpRequestMessage)" />
+      <MemberSignature Language="F#" Value="static member CloneHttpRequestMessageAsync : System.Net.Http.HttpRequestMessage -&gt; System.Threading.Tasks.Task&lt;System.Net.Http.HttpRequestMessage&gt;" Usage="Microsoft.Bot.Builder.AI.Luis.Testing.MockedHttpClientHandler.CloneHttpRequestMessageAsync request" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive.Testing</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Net.Http.HttpRequestMessage&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.Net.Http.HttpRequestMessage" />
+      </Parameters>
+      <Docs>
+        <param name="request">The HttpRequestMessage to clone.</param>
+        <summary>
+            Clone everything of a HttpRequestMessage.
+            </summary>
+        <returns>The cloned HttpRequestMessage.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,6 +107,7 @@
         <AssemblyVersion>4.9.2.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Net.Http.HttpResponseMessage&gt;</ReturnType>

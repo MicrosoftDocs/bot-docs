@@ -9,6 +9,7 @@
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
     <AssemblyVersion>4.10.3.0</AssemblyVersion>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Antlr4.Runtime.BaseErrorListener</BaseTypeName>
@@ -32,6 +33,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -51,6 +53,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.ParserErrorListener</ReturnType>
@@ -63,58 +66,30 @@
       </Docs>
     </Member>
     <Member MemberName="SyntaxError">
-      <MemberSignature Language="C#" Value="public override void SyntaxError (Antlr4.Runtime.IRecognizer recognizer, Antlr4.Runtime.IToken offendingSymbol, int line, int charPositionInLine, string msg, Antlr4.Runtime.RecognitionException e);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SyntaxError(class Antlr4.Runtime.IRecognizer recognizer, class Antlr4.Runtime.IToken offendingSymbol, int32 line, int32 charPositionInLine, string msg, class Antlr4.Runtime.RecognitionException e) cil managed" />
-      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ParserErrorListener.SyntaxError(Antlr4.Runtime.IRecognizer,Antlr4.Runtime.IToken,System.Int32,System.Int32,System.String,Antlr4.Runtime.RecognitionException)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SyntaxError (recognizer As IRecognizer, offendingSymbol As IToken, line As Integer, charPositionInLine As Integer, msg As String, e As RecognitionException)" />
-      <MemberSignature Language="F#" Value="override this.SyntaxError : Antlr4.Runtime.IRecognizer * Antlr4.Runtime.IToken * int * int * string * Antlr4.Runtime.RecognitionException -&gt; unit" Usage="parserErrorListener.SyntaxError (recognizer, offendingSymbol, line, charPositionInLine, msg, e)" />
+      <MemberSignature Language="C#" Value="public override void SyntaxError (System.IO.TextWriter output, Antlr4.Runtime.IRecognizer recognizer, Antlr4.Runtime.IToken offendingSymbol, int line, int charPositionInLine, string msg, Antlr4.Runtime.RecognitionException e);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SyntaxError(class System.IO.TextWriter output, class Antlr4.Runtime.IRecognizer recognizer, class Antlr4.Runtime.IToken offendingSymbol, int32 line, int32 charPositionInLine, string msg, class Antlr4.Runtime.RecognitionException e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:AdaptiveExpressions.ParserErrorListener.SyntaxError(System.IO.TextWriter,Antlr4.Runtime.IRecognizer,Antlr4.Runtime.IToken,System.Int32,System.Int32,System.String,Antlr4.Runtime.RecognitionException)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SyntaxError (output As TextWriter, recognizer As IRecognizer, offendingSymbol As IToken, line As Integer, charPositionInLine As Integer, msg As String, e As RecognitionException)" />
+      <MemberSignature Language="F#" Value="override this.SyntaxError : System.IO.TextWriter * Antlr4.Runtime.IRecognizer * Antlr4.Runtime.IToken * int * int * string * Antlr4.Runtime.RecognitionException -&gt; unit" Usage="parserErrorListener.SyntaxError (output, recognizer, offendingSymbol, line, charPositionInLine, msg, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>AdaptiveExpressions</AssemblyName>
-        <AssemblyVersion>4.9.3.0</AssemblyVersion>
-        <AssemblyVersion>4.10.0.0</AssemblyVersion>
-        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="recognizer" Type="Antlr4.Runtime.IRecognizer">
-          <Attributes>
-            <Attribute>
-              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
-              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
-            </Attribute>
-          </Attributes>
-        </Parameter>
-        <Parameter Name="offendingSymbol" Type="Antlr4.Runtime.IToken">
-          <Attributes>
-            <Attribute>
-              <AttributeName Language="C#">[Antlr4.Runtime.Misc.Nullable]</AttributeName>
-              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.Nullable&gt;]</AttributeName>
-            </Attribute>
-          </Attributes>
-        </Parameter>
+        <Parameter Name="output" Type="System.IO.TextWriter" />
+        <Parameter Name="recognizer" Type="Antlr4.Runtime.IRecognizer" />
+        <Parameter Name="offendingSymbol" Type="Antlr4.Runtime.IToken" />
         <Parameter Name="line" Type="System.Int32" />
         <Parameter Name="charPositionInLine" Type="System.Int32" />
-        <Parameter Name="msg" Type="System.String">
-          <Attributes>
-            <Attribute>
-              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
-              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
-            </Attribute>
-          </Attributes>
-        </Parameter>
-        <Parameter Name="e" Type="Antlr4.Runtime.RecognitionException">
-          <Attributes>
-            <Attribute>
-              <AttributeName Language="C#">[Antlr4.Runtime.Misc.Nullable]</AttributeName>
-              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.Nullable&gt;]</AttributeName>
-            </Attribute>
-          </Attributes>
-        </Parameter>
+        <Parameter Name="msg" Type="System.String" />
+        <Parameter Name="e" Type="Antlr4.Runtime.RecognitionException" />
       </Parameters>
       <Docs>
+        <param name="output">Text writer.</param>
         <param name="recognizer">An Antlr4 runtime recognizer.</param>
         <param name="offendingSymbol">The token violate the lexer rules.</param>
         <param name="line">The line number where the error occurred.</param>

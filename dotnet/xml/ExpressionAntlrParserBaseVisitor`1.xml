@@ -1,0 +1,959 @@
+<Type Name="ExpressionAntlrParserBaseVisitor&lt;Result&gt;" FullName="ExpressionAntlrParserBaseVisitor&lt;Result&gt;">
+  <TypeSignature Language="C#" Value="public class ExpressionAntlrParserBaseVisitor&lt;Result&gt; : Antlr4.Runtime.Tree.AbstractParseTreeVisitor&lt;Result&gt;, Antlr4.Runtime.Tree.IParseTreeVisitor&lt;Result&gt;, IExpressionAntlrParserVisitor&lt;Result&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExpressionAntlrParserBaseVisitor`1&lt;Result&gt; extends Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1&lt;!Result&gt; implements class Antlr4.Runtime.Tree.IParseTreeVisitor`1&lt;!Result&gt;, IExpressionAntlrParserVisitor`1&lt;!Result&gt;" />
+  <TypeSignature Language="DocId" Value="T:ExpressionAntlrParserBaseVisitor`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class ExpressionAntlrParserBaseVisitor(Of Result)&#xA;Inherits AbstractParseTreeVisitor(Of Result)&#xA;Implements IExpressionAntlrParserVisitor(Of Result), IParseTreeVisitor(Of Result)" />
+  <TypeSignature Language="F#" Value="type ExpressionAntlrParserBaseVisitor&lt;'Result&gt; = class&#xA;    inherit AbstractParseTreeVisitor&lt;'Result&gt;&#xA;    interface IExpressionAntlrParserVisitor&lt;'Result&gt;&#xA;    interface IParseTreeVisitor&lt;'Result&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>AdaptiveExpressions</AssemblyName>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="Result" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Antlr4.Runtime.Tree.AbstractParseTreeVisitor&lt;Result&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">Result</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Antlr4.Runtime.Tree.IParseTreeVisitor&lt;Result&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>IExpressionAntlrParserVisitor&lt;Result&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.8")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.8")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="Result">The return type of the visit operation.</typeparam>
+    <summary>
+            This class provides an empty implementation of <see cref="T:IExpressionAntlrParserVisitor`1" />,
+            which can be extended to create a visitor which only needs to handle a subset
+            of the available methods.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExpressionAntlrParserBaseVisitor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExpressionAntlrParserBaseVisitor`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitArgsList">
+      <MemberSignature Language="C#" Value="public virtual Result VisitArgsList (ExpressionAntlrParser.ArgsListContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitArgsList(ExpressionAntlrParser/ArgsListContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExpressionAntlrParserBaseVisitor`1.VisitArgsList(ExpressionAntlrParser.ArgsListContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VisitArgsList (context As ExpressionAntlrParser.ArgsListContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitArgsList : ExpressionAntlrParser.ArgsListContext -&gt; 'Result&#xA;override this.VisitArgsList : ExpressionAntlrParser.ArgsListContext -&gt; 'Result" Usage="expressionAntlrParserBaseVisitor.VisitArgsList context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:IExpressionAntlrParserVisitor`1.VisitArgsList(ExpressionAntlrParser.ArgsListContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+ArgsListContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:ExpressionAntlrParser.argsList" />.
+            <para>
+            The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)" />
+            on <paramref name="context" />.
+            </para></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitArrayCreationExp">
+      <MemberSignature Language="C#" Value="public virtual Result VisitArrayCreationExp (ExpressionAntlrParser.ArrayCreationExpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitArrayCreationExp(ExpressionAntlrParser/ArrayCreationExpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExpressionAntlrParserBaseVisitor`1.VisitArrayCreationExp(ExpressionAntlrParser.ArrayCreationExpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VisitArrayCreationExp (context As ExpressionAntlrParser.ArrayCreationExpContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitArrayCreationExp : ExpressionAntlrParser.ArrayCreationExpContext -&gt; 'Result&#xA;override this.VisitArrayCreationExp : ExpressionAntlrParser.ArrayCreationExpContext -&gt; 'Result" Usage="expressionAntlrParserBaseVisitor.VisitArrayCreationExp context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:IExpressionAntlrParserVisitor`1.VisitArrayCreationExp(ExpressionAntlrParser.ArrayCreationExpContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+ArrayCreationExpContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by the <c>arrayCreationExp</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.primaryExpression" />.
+            <para>
+            The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)" />
+            on <paramref name="context" />.
+            </para></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitBinaryOpExp">
+      <MemberSignature Language="C#" Value="public virtual Result VisitBinaryOpExp (ExpressionAntlrParser.BinaryOpExpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitBinaryOpExp(ExpressionAntlrParser/BinaryOpExpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExpressionAntlrParserBaseVisitor`1.VisitBinaryOpExp(ExpressionAntlrParser.BinaryOpExpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VisitBinaryOpExp (context As ExpressionAntlrParser.BinaryOpExpContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitBinaryOpExp : ExpressionAntlrParser.BinaryOpExpContext -&gt; 'Result&#xA;override this.VisitBinaryOpExp : ExpressionAntlrParser.BinaryOpExpContext -&gt; 'Result" Usage="expressionAntlrParserBaseVisitor.VisitBinaryOpExp context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:IExpressionAntlrParserVisitor`1.VisitBinaryOpExp(ExpressionAntlrParser.BinaryOpExpContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+BinaryOpExpContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by the <c>binaryOpExp</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.expression" />.
+            <para>
+            The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)" />
+            on <paramref name="context" />.
+            </para></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitFile">
+      <MemberSignature Language="C#" Value="public virtual Result VisitFile (ExpressionAntlrParser.FileContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitFile(ExpressionAntlrParser/FileContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExpressionAntlrParserBaseVisitor`1.VisitFile(ExpressionAntlrParser.FileContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VisitFile (context As ExpressionAntlrParser.FileContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitFile : ExpressionAntlrParser.FileContext -&gt; 'Result&#xA;override this.VisitFile : ExpressionAntlrParser.FileContext -&gt; 'Result" Usage="expressionAntlrParserBaseVisitor.VisitFile context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:IExpressionAntlrParserVisitor`1.VisitFile(ExpressionAntlrParser.FileContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+FileContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:ExpressionAntlrParser.file" />.
+            <para>
+            The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)" />
+            on <paramref name="context" />.
+            </para></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitFuncInvokeExp">
+      <MemberSignature Language="C#" Value="public virtual Result VisitFuncInvokeExp (ExpressionAntlrParser.FuncInvokeExpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitFuncInvokeExp(ExpressionAntlrParser/FuncInvokeExpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExpressionAntlrParserBaseVisitor`1.VisitFuncInvokeExp(ExpressionAntlrParser.FuncInvokeExpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VisitFuncInvokeExp (context As ExpressionAntlrParser.FuncInvokeExpContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitFuncInvokeExp : ExpressionAntlrParser.FuncInvokeExpContext -&gt; 'Result&#xA;override this.VisitFuncInvokeExp : ExpressionAntlrParser.FuncInvokeExpContext -&gt; 'Result" Usage="expressionAntlrParserBaseVisitor.VisitFuncInvokeExp context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:IExpressionAntlrParserVisitor`1.VisitFuncInvokeExp(ExpressionAntlrParser.FuncInvokeExpContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+FuncInvokeExpContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by the <c>funcInvokeExp</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.primaryExpression" />.
+            <para>
+            The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)" />
+            on <paramref name="context" />.
+            </para></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitIdAtom">
+      <MemberSignature Language="C#" Value="public virtual Result VisitIdAtom (ExpressionAntlrParser.IdAtomContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitIdAtom(ExpressionAntlrParser/IdAtomContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExpressionAntlrParserBaseVisitor`1.VisitIdAtom(ExpressionAntlrParser.IdAtomContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VisitIdAtom (context As ExpressionAntlrParser.IdAtomContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitIdAtom : ExpressionAntlrParser.IdAtomContext -&gt; 'Result&#xA;override this.VisitIdAtom : ExpressionAntlrParser.IdAtomContext -&gt; 'Result" Usage="expressionAntlrParserBaseVisitor.VisitIdAtom context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:IExpressionAntlrParserVisitor`1.VisitIdAtom(ExpressionAntlrParser.IdAtomContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+IdAtomContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by the <c>idAtom</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.primaryExpression" />.
+            <para>
+            The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)" />
+            on <paramref name="context" />.
+            </para></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitIndexAccessExp">
+      <MemberSignature Language="C#" Value="public virtual Result VisitIndexAccessExp (ExpressionAntlrParser.IndexAccessExpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitIndexAccessExp(ExpressionAntlrParser/IndexAccessExpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExpressionAntlrParserBaseVisitor`1.VisitIndexAccessExp(ExpressionAntlrParser.IndexAccessExpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VisitIndexAccessExp (context As ExpressionAntlrParser.IndexAccessExpContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitIndexAccessExp : ExpressionAntlrParser.IndexAccessExpContext -&gt; 'Result&#xA;override this.VisitIndexAccessExp : ExpressionAntlrParser.IndexAccessExpContext -&gt; 'Result" Usage="expressionAntlrParserBaseVisitor.VisitIndexAccessExp context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:IExpressionAntlrParserVisitor`1.VisitIndexAccessExp(ExpressionAntlrParser.IndexAccessExpContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+IndexAccessExpContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by the <c>indexAccessExp</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.primaryExpression" />.
+            <para>
+            The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)" />
+            on <paramref name="context" />.
+            </para></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitJsonCreationExp">
+      <MemberSignature Language="C#" Value="public virtual Result VisitJsonCreationExp (ExpressionAntlrParser.JsonCreationExpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitJsonCreationExp(ExpressionAntlrParser/JsonCreationExpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExpressionAntlrParserBaseVisitor`1.VisitJsonCreationExp(ExpressionAntlrParser.JsonCreationExpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VisitJsonCreationExp (context As ExpressionAntlrParser.JsonCreationExpContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitJsonCreationExp : ExpressionAntlrParser.JsonCreationExpContext -&gt; 'Result&#xA;override this.VisitJsonCreationExp : ExpressionAntlrParser.JsonCreationExpContext -&gt; 'Result" Usage="expressionAntlrParserBaseVisitor.VisitJsonCreationExp context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:IExpressionAntlrParserVisitor`1.VisitJsonCreationExp(ExpressionAntlrParser.JsonCreationExpContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+JsonCreationExpContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by the <c>jsonCreationExp</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.primaryExpression" />.
+            <para>
+            The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)" />
+            on <paramref name="context" />.
+            </para></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitKey">
+      <MemberSignature Language="C#" Value="public virtual Result VisitKey (ExpressionAntlrParser.KeyContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitKey(ExpressionAntlrParser/KeyContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExpressionAntlrParserBaseVisitor`1.VisitKey(ExpressionAntlrParser.KeyContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VisitKey (context As ExpressionAntlrParser.KeyContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitKey : ExpressionAntlrParser.KeyContext -&gt; 'Result&#xA;override this.VisitKey : ExpressionAntlrParser.KeyContext -&gt; 'Result" Usage="expressionAntlrParserBaseVisitor.VisitKey context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:IExpressionAntlrParserVisitor`1.VisitKey(ExpressionAntlrParser.KeyContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+KeyContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:ExpressionAntlrParser.key" />.
+            <para>
+            The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)" />
+            on <paramref name="context" />.
+            </para></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitKeyValuePair">
+      <MemberSignature Language="C#" Value="public virtual Result VisitKeyValuePair (ExpressionAntlrParser.KeyValuePairContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitKeyValuePair(ExpressionAntlrParser/KeyValuePairContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExpressionAntlrParserBaseVisitor`1.VisitKeyValuePair(ExpressionAntlrParser.KeyValuePairContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VisitKeyValuePair (context As ExpressionAntlrParser.KeyValuePairContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitKeyValuePair : ExpressionAntlrParser.KeyValuePairContext -&gt; 'Result&#xA;override this.VisitKeyValuePair : ExpressionAntlrParser.KeyValuePairContext -&gt; 'Result" Usage="expressionAntlrParserBaseVisitor.VisitKeyValuePair context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:IExpressionAntlrParserVisitor`1.VisitKeyValuePair(ExpressionAntlrParser.KeyValuePairContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+KeyValuePairContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:ExpressionAntlrParser.keyValuePair" />.
+            <para>
+            The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)" />
+            on <paramref name="context" />.
+            </para></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitKeyValuePairList">
+      <MemberSignature Language="C#" Value="public virtual Result VisitKeyValuePairList (ExpressionAntlrParser.KeyValuePairListContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitKeyValuePairList(ExpressionAntlrParser/KeyValuePairListContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExpressionAntlrParserBaseVisitor`1.VisitKeyValuePairList(ExpressionAntlrParser.KeyValuePairListContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VisitKeyValuePairList (context As ExpressionAntlrParser.KeyValuePairListContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitKeyValuePairList : ExpressionAntlrParser.KeyValuePairListContext -&gt; 'Result&#xA;override this.VisitKeyValuePairList : ExpressionAntlrParser.KeyValuePairListContext -&gt; 'Result" Usage="expressionAntlrParserBaseVisitor.VisitKeyValuePairList context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:IExpressionAntlrParserVisitor`1.VisitKeyValuePairList(ExpressionAntlrParser.KeyValuePairListContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+KeyValuePairListContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:ExpressionAntlrParser.keyValuePairList" />.
+            <para>
+            The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)" />
+            on <paramref name="context" />.
+            </para></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitLambda">
+      <MemberSignature Language="C#" Value="public virtual Result VisitLambda (ExpressionAntlrParser.LambdaContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitLambda(ExpressionAntlrParser/LambdaContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExpressionAntlrParserBaseVisitor`1.VisitLambda(ExpressionAntlrParser.LambdaContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VisitLambda (context As ExpressionAntlrParser.LambdaContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitLambda : ExpressionAntlrParser.LambdaContext -&gt; 'Result&#xA;override this.VisitLambda : ExpressionAntlrParser.LambdaContext -&gt; 'Result" Usage="expressionAntlrParserBaseVisitor.VisitLambda context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:IExpressionAntlrParserVisitor`1.VisitLambda(ExpressionAntlrParser.LambdaContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+LambdaContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:ExpressionAntlrParser.lambda" />.
+            <para>
+            The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)" />
+            on <paramref name="context" />.
+            </para></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitMemberAccessExp">
+      <MemberSignature Language="C#" Value="public virtual Result VisitMemberAccessExp (ExpressionAntlrParser.MemberAccessExpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitMemberAccessExp(ExpressionAntlrParser/MemberAccessExpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExpressionAntlrParserBaseVisitor`1.VisitMemberAccessExp(ExpressionAntlrParser.MemberAccessExpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VisitMemberAccessExp (context As ExpressionAntlrParser.MemberAccessExpContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitMemberAccessExp : ExpressionAntlrParser.MemberAccessExpContext -&gt; 'Result&#xA;override this.VisitMemberAccessExp : ExpressionAntlrParser.MemberAccessExpContext -&gt; 'Result" Usage="expressionAntlrParserBaseVisitor.VisitMemberAccessExp context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:IExpressionAntlrParserVisitor`1.VisitMemberAccessExp(ExpressionAntlrParser.MemberAccessExpContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+MemberAccessExpContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by the <c>memberAccessExp</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.primaryExpression" />.
+            <para>
+            The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)" />
+            on <paramref name="context" />.
+            </para></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNumericAtom">
+      <MemberSignature Language="C#" Value="public virtual Result VisitNumericAtom (ExpressionAntlrParser.NumericAtomContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitNumericAtom(ExpressionAntlrParser/NumericAtomContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExpressionAntlrParserBaseVisitor`1.VisitNumericAtom(ExpressionAntlrParser.NumericAtomContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VisitNumericAtom (context As ExpressionAntlrParser.NumericAtomContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitNumericAtom : ExpressionAntlrParser.NumericAtomContext -&gt; 'Result&#xA;override this.VisitNumericAtom : ExpressionAntlrParser.NumericAtomContext -&gt; 'Result" Usage="expressionAntlrParserBaseVisitor.VisitNumericAtom context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:IExpressionAntlrParserVisitor`1.VisitNumericAtom(ExpressionAntlrParser.NumericAtomContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+NumericAtomContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by the <c>numericAtom</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.primaryExpression" />.
+            <para>
+            The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)" />
+            on <paramref name="context" />.
+            </para></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitParenthesisExp">
+      <MemberSignature Language="C#" Value="public virtual Result VisitParenthesisExp (ExpressionAntlrParser.ParenthesisExpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitParenthesisExp(ExpressionAntlrParser/ParenthesisExpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExpressionAntlrParserBaseVisitor`1.VisitParenthesisExp(ExpressionAntlrParser.ParenthesisExpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VisitParenthesisExp (context As ExpressionAntlrParser.ParenthesisExpContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitParenthesisExp : ExpressionAntlrParser.ParenthesisExpContext -&gt; 'Result&#xA;override this.VisitParenthesisExp : ExpressionAntlrParser.ParenthesisExpContext -&gt; 'Result" Usage="expressionAntlrParserBaseVisitor.VisitParenthesisExp context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:IExpressionAntlrParserVisitor`1.VisitParenthesisExp(ExpressionAntlrParser.ParenthesisExpContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+ParenthesisExpContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by the <c>parenthesisExp</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.primaryExpression" />.
+            <para>
+            The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)" />
+            on <paramref name="context" />.
+            </para></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitPrimaryExp">
+      <MemberSignature Language="C#" Value="public virtual Result VisitPrimaryExp (ExpressionAntlrParser.PrimaryExpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitPrimaryExp(ExpressionAntlrParser/PrimaryExpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExpressionAntlrParserBaseVisitor`1.VisitPrimaryExp(ExpressionAntlrParser.PrimaryExpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VisitPrimaryExp (context As ExpressionAntlrParser.PrimaryExpContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitPrimaryExp : ExpressionAntlrParser.PrimaryExpContext -&gt; 'Result&#xA;override this.VisitPrimaryExp : ExpressionAntlrParser.PrimaryExpContext -&gt; 'Result" Usage="expressionAntlrParserBaseVisitor.VisitPrimaryExp context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:IExpressionAntlrParserVisitor`1.VisitPrimaryExp(ExpressionAntlrParser.PrimaryExpContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+PrimaryExpContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by the <c>primaryExp</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.expression" />.
+            <para>
+            The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)" />
+            on <paramref name="context" />.
+            </para></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitStringAtom">
+      <MemberSignature Language="C#" Value="public virtual Result VisitStringAtom (ExpressionAntlrParser.StringAtomContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitStringAtom(ExpressionAntlrParser/StringAtomContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExpressionAntlrParserBaseVisitor`1.VisitStringAtom(ExpressionAntlrParser.StringAtomContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VisitStringAtom (context As ExpressionAntlrParser.StringAtomContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitStringAtom : ExpressionAntlrParser.StringAtomContext -&gt; 'Result&#xA;override this.VisitStringAtom : ExpressionAntlrParser.StringAtomContext -&gt; 'Result" Usage="expressionAntlrParserBaseVisitor.VisitStringAtom context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:IExpressionAntlrParserVisitor`1.VisitStringAtom(ExpressionAntlrParser.StringAtomContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+StringAtomContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by the <c>stringAtom</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.primaryExpression" />.
+            <para>
+            The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)" />
+            on <paramref name="context" />.
+            </para></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitStringInterpolation">
+      <MemberSignature Language="C#" Value="public virtual Result VisitStringInterpolation (ExpressionAntlrParser.StringInterpolationContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitStringInterpolation(ExpressionAntlrParser/StringInterpolationContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExpressionAntlrParserBaseVisitor`1.VisitStringInterpolation(ExpressionAntlrParser.StringInterpolationContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VisitStringInterpolation (context As ExpressionAntlrParser.StringInterpolationContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitStringInterpolation : ExpressionAntlrParser.StringInterpolationContext -&gt; 'Result&#xA;override this.VisitStringInterpolation : ExpressionAntlrParser.StringInterpolationContext -&gt; 'Result" Usage="expressionAntlrParserBaseVisitor.VisitStringInterpolation context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:IExpressionAntlrParserVisitor`1.VisitStringInterpolation(ExpressionAntlrParser.StringInterpolationContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+StringInterpolationContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:ExpressionAntlrParser.stringInterpolation" />.
+            <para>
+            The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)" />
+            on <paramref name="context" />.
+            </para></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitStringInterpolationAtom">
+      <MemberSignature Language="C#" Value="public virtual Result VisitStringInterpolationAtom (ExpressionAntlrParser.StringInterpolationAtomContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitStringInterpolationAtom(ExpressionAntlrParser/StringInterpolationAtomContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExpressionAntlrParserBaseVisitor`1.VisitStringInterpolationAtom(ExpressionAntlrParser.StringInterpolationAtomContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VisitStringInterpolationAtom (context As ExpressionAntlrParser.StringInterpolationAtomContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitStringInterpolationAtom : ExpressionAntlrParser.StringInterpolationAtomContext -&gt; 'Result&#xA;override this.VisitStringInterpolationAtom : ExpressionAntlrParser.StringInterpolationAtomContext -&gt; 'Result" Usage="expressionAntlrParserBaseVisitor.VisitStringInterpolationAtom context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:IExpressionAntlrParserVisitor`1.VisitStringInterpolationAtom(ExpressionAntlrParser.StringInterpolationAtomContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+StringInterpolationAtomContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by the <c>stringInterpolationAtom</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.primaryExpression" />.
+            <para>
+            The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)" />
+            on <paramref name="context" />.
+            </para></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitTextContent">
+      <MemberSignature Language="C#" Value="public virtual Result VisitTextContent (ExpressionAntlrParser.TextContentContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitTextContent(ExpressionAntlrParser/TextContentContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExpressionAntlrParserBaseVisitor`1.VisitTextContent(ExpressionAntlrParser.TextContentContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VisitTextContent (context As ExpressionAntlrParser.TextContentContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitTextContent : ExpressionAntlrParser.TextContentContext -&gt; 'Result&#xA;override this.VisitTextContent : ExpressionAntlrParser.TextContentContext -&gt; 'Result" Usage="expressionAntlrParserBaseVisitor.VisitTextContent context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:IExpressionAntlrParserVisitor`1.VisitTextContent(ExpressionAntlrParser.TextContentContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+TextContentContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:ExpressionAntlrParser.textContent" />.
+            <para>
+            The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)" />
+            on <paramref name="context" />.
+            </para></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitTripleOpExp">
+      <MemberSignature Language="C#" Value="public virtual Result VisitTripleOpExp (ExpressionAntlrParser.TripleOpExpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitTripleOpExp(ExpressionAntlrParser/TripleOpExpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExpressionAntlrParserBaseVisitor`1.VisitTripleOpExp(ExpressionAntlrParser.TripleOpExpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VisitTripleOpExp (context As ExpressionAntlrParser.TripleOpExpContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitTripleOpExp : ExpressionAntlrParser.TripleOpExpContext -&gt; 'Result&#xA;override this.VisitTripleOpExp : ExpressionAntlrParser.TripleOpExpContext -&gt; 'Result" Usage="expressionAntlrParserBaseVisitor.VisitTripleOpExp context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:IExpressionAntlrParserVisitor`1.VisitTripleOpExp(ExpressionAntlrParser.TripleOpExpContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+TripleOpExpContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by the <c>tripleOpExp</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.expression" />.
+            <para>
+            The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)" />
+            on <paramref name="context" />.
+            </para></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitUnaryOpExp">
+      <MemberSignature Language="C#" Value="public virtual Result VisitUnaryOpExp (ExpressionAntlrParser.UnaryOpExpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitUnaryOpExp(ExpressionAntlrParser/UnaryOpExpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExpressionAntlrParserBaseVisitor`1.VisitUnaryOpExp(ExpressionAntlrParser.UnaryOpExpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VisitUnaryOpExp (context As ExpressionAntlrParser.UnaryOpExpContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitUnaryOpExp : ExpressionAntlrParser.UnaryOpExpContext -&gt; 'Result&#xA;override this.VisitUnaryOpExp : ExpressionAntlrParser.UnaryOpExpContext -&gt; 'Result" Usage="expressionAntlrParserBaseVisitor.VisitUnaryOpExp context" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:IExpressionAntlrParserVisitor`1.VisitUnaryOpExp(ExpressionAntlrParser.UnaryOpExpContext)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>AdaptiveExpressions</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="ExpressionAntlrParser+UnaryOpExpContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by the <c>unaryOpExp</c>
+            labeled alternative in <see cref="M:ExpressionAntlrParser.expression" />.
+            <para>
+            The default implementation returns the result of calling <see cref="M:Antlr4.Runtime.Tree.AbstractParseTreeVisitor`1.VisitChildren(Antlr4.Runtime.Tree.IRuleNode)" />
+            on <paramref name="context" />.
+            </para></summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

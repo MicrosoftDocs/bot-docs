@@ -10,6 +10,7 @@
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
     <AssemblyVersion>4.10.3.0</AssemblyVersion>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Newtonsoft.Json.JsonConverter&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression&gt;</BaseTypeName>
@@ -45,6 +46,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="resourceExplorer" Type="Microsoft.Bot.Builder.Dialogs.Declarative.Resources.ResourceExplorer" />
@@ -72,13 +74,18 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets a value indicating whether this <see cref="T:Newtonsoft.Json.JsonConverter" /> can read JSON.
+            </summary>
+        <value>
+          <c>true</c>.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,6 +102,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression</ReturnType>
@@ -107,13 +115,15 @@
         <Parameter Name="serializer" Type="Newtonsoft.Json.JsonSerializer" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="objectType">To be added.</param>
-        <param name="existingValue">To be added.</param>
-        <param name="hasExistingValue">To be added.</param>
-        <param name="serializer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="reader">The <see cref="T:Newtonsoft.Json.JsonReader" /> to read from.</param>
+        <param name="objectType">Type of the object.</param>
+        <param name="existingValue">The existing value of <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression" /> being read. If there is no existing value then null will be used.</param>
+        <param name="hasExistingValue">Indicates if existingValue has a value.</param>
+        <param name="serializer">The calling serializer.</param>
+        <summary>
+            Reads the JSON representation of a <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression" /> object.
+            </summary>
+        <returns>The interpreted <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,6 +143,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -167,6 +178,7 @@
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -175,8 +187,10 @@
         <Parameter Name="observer" Type="Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IJsonLoadObserver" />
       </Parameters>
       <Docs>
-        <param name="observer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="observer">The <see cref="T:Microsoft.Bot.Builder.Dialogs.Declarative.Observers.IJsonLoadObserver" /> to be registered.</param>
+        <summary>
+            Registers an observer to receive notifications on converter events.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,6 +207,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -203,10 +218,12 @@
         <Parameter Name="serializer" Type="Newtonsoft.Json.JsonSerializer" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="serializer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The <see cref="T:Newtonsoft.Json.JsonWriter" /> to write to.</param>
+        <param name="value">The value <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression" />.</param>
+        <param name="serializer">The calling serializer.</param>
+        <summary>
+            Writes the JSON representation of a <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.DialogExpression" /> object.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

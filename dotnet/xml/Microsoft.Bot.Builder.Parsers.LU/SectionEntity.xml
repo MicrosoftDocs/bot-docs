@@ -1,0 +1,57 @@
+<Type Name="SectionEntity" FullName="Microsoft.Bot.Builder.Parsers.LU.SectionEntity">
+  <TypeSignature Language="C#" Value="public class SectionEntity : Microsoft.Bot.Builder.Parsers.LU.Section" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SectionEntity extends Microsoft.Bot.Builder.Parsers.LU.Section" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Parsers.LU.SectionEntity" />
+  <TypeSignature Language="VB.NET" Value="Public Class SectionEntity&#xA;Inherits Section" />
+  <TypeSignature Language="F#" Value="type SectionEntity = class&#xA;    inherit Section" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Parsers.LU.Section</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SectionEntity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Parsers.LU.SectionEntity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SectionEntity (LUFileParser.EntitySectionContext parseTree);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(LUFileParser/EntitySectionContext parseTree) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Parsers.LU.SectionEntity.#ctor(LUFileParser.EntitySectionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (parseTree As LUFileParser.EntitySectionContext)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Parsers.LU.SectionEntity : LUFileParser.EntitySectionContext -&gt; Microsoft.Bot.Builder.Parsers.LU.SectionEntity" Usage="new Microsoft.Bot.Builder.Parsers.LU.SectionEntity parseTree" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parseTree" Type="LUFileParser+EntitySectionContext" />
+      </Parameters>
+      <Docs>
+        <param name="parseTree">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
