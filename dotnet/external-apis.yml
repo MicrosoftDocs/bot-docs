@@ -2,6 +2,7 @@
 hrefUpdated: true
 references:
 
+- uid: Microsoft.Recognizers.Text.Culture
 - uid: Microsoft.Recognizers.Text.ModelResult
 
 - uid: Microsoft.Rest.HttpOperationException
@@ -24,8 +25,13 @@ references:
 
 - uid: System.Web.Http.HttpConfiguration
 
+- uid: Microsoft.WindowsAzure.Storage.AccessCondition
+- uid: Microsoft.WindowsAzure.Storage.CloudStorageAccount
+
 - uid: Antlr4.Runtime.Atn.ATN
+- uid: Antlr4.Runtime.Atn.PredictionContextCache
 - uid: Antlr4.Runtime.BaseErrorListener
+- uid: Antlr4.Runtime.Dfa.DFA
 - uid: Antlr4.Runtime.ICharStream
 - uid: Antlr4.Runtime.IRecognizer
 - uid: Antlr4.Runtime.IToken
@@ -51,7 +57,6 @@ references:
 - uid: Antlr4.Runtime.Tree.ITerminalNode
 
 - uid: Autofac.Builder.ConcreteReflectionActivatorData
-  #  href: /azure/bot-service/external-packages-nuget
 - uid: Autofac.Builder.IRegistrationBuilder`3
 - uid: Autofac.Builder.SimpleActivatorData
 - uid: Autofac.Builder.SingleRegistrationStyle

@@ -104,7 +104,7 @@ Read [Conversation flow and memory](https://docs.microsoft.com/composer/concept-
 
 Adaptive expressions are used by language generation (LG) systems to evaluate conditions described in LG templates. In the example below, the [join](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#join) prebuilt function is used to list all values in the `recentTasks` collection.
 
-```.lg
+```lg
 # RecentTasks
 - IF: ${count(recentTasks) == 1}
     - Your most recent task is ${recentTasks[0]}. You can let me know if you want to add or complete a task.
