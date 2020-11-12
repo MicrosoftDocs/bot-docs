@@ -86,7 +86,7 @@ However, you can test skills and skill consumers locally without an app ID and p
 
 **SimpleRootBot\appsettings.json**
 
-Optionally, add the root bot's app ID and password to the appsettings.json file. Also, add the app ID for the echo skill bot to the `BotFrameworkSkills` array.
+Optionally, add the root bot's app ID and password and add the app ID for the echo skill bot to the `BotFrameworkSkills` array.
 
 [!code-csharp[configuration file](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/appsettings.json)]
 
@@ -94,7 +94,7 @@ Optionally, add the root bot's app ID and password to the appsettings.json file.
 
 **echo-skill-bot/.env**
 
-Optionally, add the root bot's app ID and password to the .env file. Also, add the app ID for the echo skill bot.
+Optionally, add the root bot's app ID and password and add the app ID for the echo skill bot.
 
 [!code-javascript[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/.env)]
 
@@ -102,7 +102,7 @@ Optionally, add the root bot's app ID and password to the .env file. Also, add t
 
 **simple_root_bot/config.py**
 
-Optionally, add the root bot's app ID and password to the .env file. Also, add the app ID for the echo skill bot.
+Optionall, add the root bot's app ID and password and add the app ID for the echo skill bot.
 
 [!code-python[configuration file](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/config.py?range=14-27)]
 

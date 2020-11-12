@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 07/15/2020
+ms.date: 11/12/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -25,8 +25,11 @@ For information about using a skill bot outside of dialogs, see how to [implemen
 ## Prerequisites
 
 - Knowledge of [bot basics](bot-builder-basics.md), [how skills bots work](skills-conceptual.md), and how to [implement a skill consumer](skill-implement-consumer.md).
-- An Azure subscription. If you don't have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+- Optionally, an Azure subscription. If you don't have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 - A copy of the **skills skillDialog** sample in [**C#**](https://aka.ms/skills-using-dialogs-cs), [**JavaScript**](https://aka.ms/skills-using-dialogs-js) or [**Python**](https://aka.ms/skills-using-dialogs-py).
+
+> [!NOTE]
+> Starting with version 4.11, you do not need an app ID and password to test a skill consumer locally in the Emulator. An Azure subscription is still required to deploy your consumer to Azure or to consume a deployed skill.
 
 ## About this sample
 
@@ -60,25 +63,26 @@ For information about the dialog skill bot, see how to [use dialogs within a ski
 
 ## Resources
 
-Bot-to-bot authentication requires that each participating bot has a valid appID and password.
-
-Register both the skill and the skill consumer with Azure. You can use a Bot Channels Registration. For more information, see how to [register a bot with Azure Bot Service](../bot-service-quickstart-registration.md).
+For deployed bots, bot-to-bot authentication requires that each participating bot has a valid app ID and password.
+However, you can test skills and skill consumers locally without an app ID and password.
 
 ## Application configuration
 
-1. Add the root bot's app ID and password.
+1. Optionally, add the root bot's app ID and password to the config file.
 1. Add the skill host endpoint (the service or callback URL) to which the skills should reply to the skill consumer.
 1. Add an entry for each skill the skill consumer will use. Each entry includes:
    - An ID the skill consumer will use to identify each skill.
-   - The skill's app ID.
+   - Optionally, the skill's app ID.
    - The skill's messaging endpoint.
+
+> [!NOTE]
+> If either the skill or skill consumer uses an app ID and password, both must.
 
 ### [C#](#tab/cs)
 
 **DialogRootBot\appsettings.json**
 
-- Add the root bot's app ID and password.
-- Add the app ID for the echo skill bot to the `BotFrameworkSkills` array.
+Optionally, add the root bot's app ID and password and add the app ID for the echo skill bot to the `BotFrameworkSkills` array.
 
 [!code-json[configuration file](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/appsettings.json?highlight=2-3,9)]
 
@@ -86,8 +90,7 @@ Register both the skill and the skill consumer with Azure. You can use a Bot Cha
 
 **dialogRootBot/.env**
 
-- Add the root bot's app ID and password.
-- Add the app ID for the echo skill bot.
+Optionally, add the root bot's app ID and password and add the app ID for the echo skill bot.
 
 [!code-javascript[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/.env?highlight=1-2,6)]
 
@@ -95,8 +98,7 @@ Register both the skill and the skill consumer with Azure. You can use a Bot Cha
 
 **dialog-root-bot/config.py**
 
-- Add the root bot's app ID and password.
-- Add the app ID for the echo skill bot.
+Optionall, add the root bot's app ID and password and add the app ID for the echo skill bot.
 
 [!code-python[configuration file](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-root-bot/config.py?range=14-25&highlight=1,3,9)]
 
