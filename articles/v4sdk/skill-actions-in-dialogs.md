@@ -41,15 +41,15 @@ This article focuses on how to use a dialogs within a skill bot to manage multip
 
 ### [C#](#tab/cs)
 
-![Skill class diagram](./media/skill-dialog/dialog-skill-bot-cs.png)
+![C# skill class diagram](./media/skill-dialog/dialog-skill-bot-cs.png)
 
 ### [JavaScript](#tab/js)
 
-![Skill class diagram](./media/skill-dialog/dialog-skill-bot-js.png)
+![JavaScript skill class diagram](./media/skill-dialog/dialog-skill-bot-js.png)
 
 ### [Python](#tab/python)
 
-![Skill class diagram](./media/skill-dialog/dialog-skill-bot-py.png)
+![Python skill class diagram](./media/skill-dialog/dialog-skill-bot-py.png)
 
 ---
 

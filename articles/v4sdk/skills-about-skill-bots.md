@@ -1,6 +1,6 @@
 ---
 title: About skill bots | Microsoft Docs
-description: Describes how conversational logic in one bot can be used by another bot using the Bot Framework SDK.
+description: Describes how conversational logic in a skill bot can be made available to other bots using the Bot Framework SDK.
 keywords: bot skill, skill bot.
 author: JonathanFingold
 ms.author: kamrani

@@ -47,15 +47,15 @@ For information about other aspects of creating a skill consumer, see how to [im
 
 ### [C#](#tab/cs)
 
-![Skill consumer class diagram](./media/skill-dialog/dialog-root-bot-cs.png)
+![C# skill consumer class diagram](./media/skill-dialog/dialog-root-bot-cs.png)
 
 ### [JavaScript](#tab/js)
 
-![Skill consumer class diagram](./media/skill-dialog/dialog-root-bot-js.png)
+![JavaScript skill consumer class diagram](./media/skill-dialog/dialog-root-bot-js.png)
 
 ### [Python](#tab/python)
 
-![Skill consumer class diagram](./media/skill-dialog/dialog-root-bot-py.png)
+![Python skill consumer class diagram](./media/skill-dialog/dialog-root-bot-py.png)
 
 ---
 
