@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 09/01/2020
+ms.date: 11/11/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -30,8 +30,11 @@ For information about using a skill dialog to consume a skill, see how to [use a
 ## Prerequisites
 
 - Knowledge of [bot basics](bot-builder-basics.md), [how skills bots work](skills-conceptual.md), and how to [implement a skill](skill-implement-skill.md).
-- An Azure subscription. If you don't have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+- Optionally, an Azure subscription. If you don't have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 - A copy of the **skills simple bot-to-bot** sample in [**C#**](https://aka.ms/skills-simple-bot-to-bot-csharp), [**JavaScript**](https://aka.ms/skills-simple-bot-to-bot-js) or [**Python**](https://aka.ms/skills-simple-bot-to-bot-python).
+
+> [!NOTE]
+> Starting with version 4.11, you do not need an app ID and password to test a skill consumer locally in the Emulator. An Azure subscription is still required to deploy your consumer to Azure or to consume a deployed skill.
 
 ## About this sample
 
@@ -64,24 +67,26 @@ For information about the echo skill bot, see how to [Implement a skill](skill-i
 
 ## Resources
 
-Bot-to-bot authentication requires that each participating bot has a valid appID and password.
-
-Register both the skill and the skill consumer with Azure. You can use a Bot Channels Registration. For more information, see how to [register a bot with Azure Bot Service](../bot-service-quickstart-registration.md).
+For deployed bots, bot-to-bot authentication requires that each participating bot has a valid app ID and password.
+However, you can test skills and skill consumers locally without an app ID and password.
 
 ## Application configuration
 
-1. Add the root bot's app ID and password.
+1. Optionally, add the root bot's app ID and password to the config file.
 1. Add the skill host endpoint (the service or callback URL) to which the skills should reply to the skill consumer.
 1. Add an entry for each skill the skill consumer will use. Each entry includes:
    - An ID the skill consumer will use to identify each skill.
-   - The skill's app ID.
+   - Optionally, the skill's app ID.
    - The skill's messaging endpoint.
+
+> [!NOTE]
+> If either the skill or skill consumer uses an app ID and password, both must.
 
 ### [C#](#tab/cs)
 
 **SimpleRootBot\appsettings.json**
 
-Add the root bot's app ID and password to the appsettings.json file. Also, add the app ID for the echo skill bot to the `BotFrameworkSkills` array.
+Optionally, add the root bot's app ID and password to the appsettings.json file. Also, add the app ID for the echo skill bot to the `BotFrameworkSkills` array.
 
 [!code-csharp[configuration file](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/appsettings.json)]
 
@@ -89,7 +94,7 @@ Add the root bot's app ID and password to the appsettings.json file. Also, add t
 
 **echo-skill-bot/.env**
 
-Add the root bot's app ID and password to the .env file. Also, add the app ID for the echo skill bot.
+Optionally, add the root bot's app ID and password to the .env file. Also, add the app ID for the echo skill bot.
 
 [!code-javascript[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/.env)]
 
@@ -97,7 +102,7 @@ Add the root bot's app ID and password to the .env file. Also, add the app ID fo
 
 **simple_root_bot/config.py**
 
-Add the root bot's app ID and password to the .env file. Also, add the app ID for the echo skill bot.
+Optionally, add the root bot's app ID and password to the .env file. Also, add the app ID for the echo skill bot.
 
 [!code-python[configuration file](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/config.py?range=14-27)]
 
@@ -197,7 +202,7 @@ HTTP traffic from the skill will come into the service URL endpoint that the ski
 
 The default skill handler:
 
-- Uses an authentication configuration object to perform both bot-to-bot authentication and claims validation.
+- If an app ID and password are present, uses an authentication configuration object to perform both bot-to-bot authentication and claims validation.
 - Uses the conversation ID factory to translate from the consumer-skill conversation back to the root-user conversation.
 - Generates a proactive message so that the skill consumer can reestablish a root-user turn context and forward activities to the user.
 
@@ -377,11 +382,16 @@ To send parameters to the skill, the skill consumer can set the _value_ property
 - If no skill is active, the root bot needs to determine which skill to start, if any, based on bot state and the user's input.
 - If you want to allow the user to switch between multiple concurrent skills, the root bot needs to determine which of the active skills the user is intending to interact with before forwarding the user's message.
 
-### To use DeliveryMode ExpectReplies
+### To use a delivery mode of expect replies
 
-- Change DeliveryMode to ExpectReplies before sending the activity from root bot to skill.
-- Read ExpectedReplies from the InvokeResponse body returned from the request response. (SkillDialog performs this step automatically.)
-- Process each activity, either within the root bot or by sending it on to the channel which initiated the original request. (SkillDialog performs this step automatically.)
+The _skill dialog_ automates this process for you, but you can also use the _expect replies_ delivery mode without using the skill dialog. To do so:
+
+- Clone the activity from the turn context.
+- Set the _delivery mode_ property of the new activity to "ExpectReplies" before sending the activity from root bot to skill.
+- Read _expected replies_ from the _invoke response_ body returned from the request response.
+- Process each activity, either within the root bot or by sending it on to the channel which initiated the original request.
+
+Expect replies can be useful in situations in which the bot that replies to an activity needs to be the same instance of the bot that received the activity.
 
 <!--
 ## Next steps

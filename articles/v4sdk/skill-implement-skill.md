@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 07/08/2020
+ms.date: 11/11/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -68,7 +68,8 @@ To make the skill available to user-facing bots, register the skill with Azure. 
 
 ## Application configuration
 
-Add the skill's app ID and password to the skill's configuration file.
+Optionally, add the skill's app ID and password to the skill's configuration file.
+(If either the skill or skill consumer uses an app ID and password, both must.)
 
 The _allowed callers_ array can restrict which skill consumers can access the skill.
 Add an "*" element, to accept calls from any skill consumer.
@@ -260,6 +261,7 @@ This sample adds claims validation to the authentication configuration and uses 
 
 A _skill manifest_ is a JSON file that describes the activities the skill can perform, its input and output parameters, and the skill's endpoints.
 The manifest contains the information you need to access the skill from another bot.
+The latest schema version is [v2.1](https://schemas.botframework.com/schemas/skills/v2.1/skill-manifest.json).
 
 ### [C#](#tab/cs)
 
