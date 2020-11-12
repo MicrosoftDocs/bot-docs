@@ -37,7 +37,7 @@ Bots created using the Azure portal or the Command Line Interface (CLI) are alre
     > [!div class="mx-tdBreakAll"]
     >   |Setting |Suggested value|Description|
     >   |---|---|--|
-    >   |**Bot name** <img width="200px"/>|\<Your bot's unique identifier><img width="200px"/>|The *bot handle* is a unique identifier for your bot. You can choose a different display name for your bot in the *Settings* blade after the bot has been created.|
+    >   |**Bot name** <img width="200px"/>|\<Your bot's handle><img width="200px"/>|The *bot handle* is a unique identifier for your bot. You can choose a different display name for your bot in the *Settings* blade after the bot has been created.|
     >   |**Subscription**|\<Your subscription>|Select the Azure subscription you want to use.|
     >   |**Resource Group**|\<Your resource group name>|Create a new [resource group](/azure/azure-resource-manager/resource-group-overview#resource-groups) or select an existing one.|
     >   |**Location**|West US|Choose the geographic location for your resource group. It's usually best to choose a location close to you. The location cannot be changed once the resource group is created.|
