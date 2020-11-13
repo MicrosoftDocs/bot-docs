@@ -62,7 +62,7 @@ For information about the simple root bot, see how to [Implement a skill consume
 ## Resources
 
 For deployed bots, bot-to-bot authentication requires that each participating bot has a valid app ID and password.
-However, you can test skills and skill consumers locally without an app ID and password.
+However, you can test skills and skill consumers locally with the Emulator without an app ID and password.
 
 To make the skill available to user-facing bots, register the skill with Azure. You can use a Bot Channels Registration. For more information, see how to [register a bot with Azure Bot Service](../bot-service-quickstart-registration.md).
 

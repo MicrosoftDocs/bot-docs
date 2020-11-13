@@ -68,7 +68,7 @@ For information about the echo skill bot, see how to [Implement a skill](skill-i
 ## Resources
 
 For deployed bots, bot-to-bot authentication requires that each participating bot has a valid app ID and password.
-However, you can test skills and skill consumers locally without an app ID and password.
+However, you can test skills and skill consumers locally with the Emulator without an app ID and password.
 
 ## Application configuration
 
@@ -384,7 +384,7 @@ To send parameters to the skill, the skill consumer can set the _value_ property
 
 ### To use a delivery mode of expect replies
 
-The _skill dialog_ automates this process for you, but you can also use the _expect replies_ delivery mode without using the skill dialog. To do so:
+To use the _expect replies_ delivery mode:
 
 - Clone the activity from the turn context.
 - Set the _delivery mode_ property of the new activity to "ExpectReplies" before sending the activity from root bot to skill.

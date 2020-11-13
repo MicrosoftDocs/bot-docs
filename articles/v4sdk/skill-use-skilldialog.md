@@ -64,7 +64,7 @@ For information about the dialog skill bot, see how to [use dialogs within a ski
 ## Resources
 
 For deployed bots, bot-to-bot authentication requires that each participating bot has a valid app ID and password.
-However, you can test skills and skill consumers locally without an app ID and password.
+However, you can test skills and skill consumers locally with the Emulator without an app ID and password.
 
 ## Application configuration
 
