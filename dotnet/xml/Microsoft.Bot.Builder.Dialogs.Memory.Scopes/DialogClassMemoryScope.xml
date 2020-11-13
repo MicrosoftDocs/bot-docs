@@ -10,6 +10,7 @@
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
     <AssemblyVersion>4.10.3.0</AssemblyVersion>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Memory.Scopes.MemoryScope</BaseTypeName>
@@ -34,10 +35,13 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Memory.Scopes.DialogClassMemoryScope" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,6 +58,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -62,9 +67,11 @@
         <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dc">The <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogContext" /> object for this turn.</param>
+        <summary>
+            Gets the backing memory for this scope.
+            </summary>
+        <returns>Memory for the scope.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,6 +88,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -90,10 +98,12 @@
         <Parameter Name="memory" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <param name="memory">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="dc">The <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogContext" /> object for this turn.</param>
+        <param name="memory">Memory object to set for the scope.</param>
+        <summary>
+            Changes the backing object for the memory scope.
+            </summary>
+        <remarks>Method not supported. You can't modify the dialogclass scope.</remarks>
       </Docs>
     </Member>
   </Members>

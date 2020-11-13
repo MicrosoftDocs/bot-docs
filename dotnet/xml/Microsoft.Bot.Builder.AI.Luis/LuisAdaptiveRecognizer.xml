@@ -10,6 +10,7 @@
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
     <AssemblyVersion>4.10.3.0</AssemblyVersion>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Recognizer</BaseTypeName>
@@ -34,6 +35,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -56,6 +58,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -87,6 +90,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -118,6 +122,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -149,6 +154,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -180,6 +186,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -211,6 +218,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;</ReturnType>
@@ -245,6 +253,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -276,6 +285,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -288,7 +298,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            The Kind name for this recognizer.
+            The Kind value for this recognizer.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -306,6 +316,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -326,6 +337,34 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Options">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.AI.Luis.LuisAdaptivePredictionOptions Options { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.AI.Luis.LuisAdaptivePredictionOptions Options" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer.Options" />
+      <MemberSignature Language="VB.NET" Value="Public Property Options As LuisAdaptivePredictionOptions" />
+      <MemberSignature Language="F#" Value="member this.Options : Microsoft.Bot.Builder.AI.Luis.LuisAdaptivePredictionOptions with get, set" Usage="Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer.Options" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("predictionOptions")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("predictionOptions")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.AI.Luis.LuisAdaptivePredictionOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets LUIS Prediction options (with expressions).
+            </summary>
+        <value>Predictions options (Declarative with expression support).</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="PredictionOptions">
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions PredictionOptions { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.AI.LuisV3.LuisPredictionOptions PredictionOptions" />
@@ -339,11 +378,16 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("predictionOptions")]</AttributeName>
-          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("predictionOptions")&gt;]</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonIgnore]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonIgnore&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("You should use Options instead as it supports expression properties.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("You should use Options instead as it supports expression properties.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -353,7 +397,7 @@
         <summary>
             Gets or sets LUIS prediction options.
             </summary>
-        <value>Prediction options.</value>
+        <value>Prediction options for backward compat code.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -370,6 +414,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;</ReturnType>
@@ -406,6 +451,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptionsV3</ReturnType>
@@ -419,6 +465,34 @@
             Construct V3 recognizer options from the current dialog context.
             </summary>
         <returns>LUIS Recognizer options.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version">
+      <MemberSignature Language="C#" Value="public AdaptiveExpressions.Properties.StringExpression Version { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class AdaptiveExpressions.Properties.StringExpression Version" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer.Version" />
+      <MemberSignature Language="VB.NET" Value="Public Property Version As StringExpression" />
+      <MemberSignature Language="F#" Value="member this.Version : AdaptiveExpressions.Properties.StringExpression with get, set" Usage="Microsoft.Bot.Builder.AI.Luis.LuisAdaptiveRecognizer.Version" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("version")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("version")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Properties.StringExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets LUIS version.
+            </summary>
+        <value>application version.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

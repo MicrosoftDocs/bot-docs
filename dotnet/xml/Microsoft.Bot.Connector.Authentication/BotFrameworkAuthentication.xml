@@ -1,0 +1,100 @@
+<Type Name="BotFrameworkAuthentication" FullName="Microsoft.Bot.Connector.Authentication.BotFrameworkAuthentication">
+  <TypeSignature Language="C#" Value="public abstract class BotFrameworkAuthentication" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BotFrameworkAuthentication extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Connector.Authentication.BotFrameworkAuthentication" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class BotFrameworkAuthentication" />
+  <TypeSignature Language="F#" Value="type BotFrameworkAuthentication = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Represents a Cloud Environment used to authenticate Bot Framework Protocol network calls within this environment.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected BotFrameworkAuthentication ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.BotFrameworkAuthentication.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthenticateRequestAsync">
+      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.Authentication.AuthenticateRequestResult&gt; AuthenticateRequestAsync (Microsoft.Bot.Schema.Activity activity, string authHeader, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.Authentication.AuthenticateRequestResult&gt; AuthenticateRequestAsync(class Microsoft.Bot.Schema.Activity activity, string authHeader, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.BotFrameworkAuthentication.AuthenticateRequestAsync(Microsoft.Bot.Schema.Activity,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function AuthenticateRequestAsync (activity As Activity, authHeader As String, cancellationToken As CancellationToken) As Task(Of AuthenticateRequestResult)" />
+      <MemberSignature Language="F#" Value="abstract member AuthenticateRequestAsync : Microsoft.Bot.Schema.Activity * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.Authentication.AuthenticateRequestResult&gt;" Usage="botFrameworkAuthentication.AuthenticateRequestAsync (activity, authHeader, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.Authentication.AuthenticateRequestResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="authHeader" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="activity">The inbound Activity.</param>
+        <param name="authHeader">The http auth header.</param>
+        <param name="cancellationToken">A cancellation token.</param>
+        <summary>
+            Validate Bot Framework Protocol requests.
+            </summary>
+        <returns>Asynchronous Task with <see cref="T:Microsoft.Bot.Connector.Authentication.AuthenticateRequestResult" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.UnauthorizedAccessException">If the validation returns false.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProactiveCredentialsAsync">
+      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.Authentication.ProactiveCredentialsResult&gt; GetProactiveCredentialsAsync (System.Security.Claims.ClaimsIdentity claimsIdentity, string audience, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Connector.Authentication.ProactiveCredentialsResult&gt; GetProactiveCredentialsAsync(class System.Security.Claims.ClaimsIdentity claimsIdentity, string audience, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Connector.Authentication.BotFrameworkAuthentication.GetProactiveCredentialsAsync(System.Security.Claims.ClaimsIdentity,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetProactiveCredentialsAsync (claimsIdentity As ClaimsIdentity, audience As String, cancellationToken As CancellationToken) As Task(Of ProactiveCredentialsResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetProactiveCredentialsAsync : System.Security.Claims.ClaimsIdentity * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.Authentication.ProactiveCredentialsResult&gt;" Usage="botFrameworkAuthentication.GetProactiveCredentialsAsync (claimsIdentity, audience, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Connector</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Connector.Authentication.ProactiveCredentialsResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="claimsIdentity" Type="System.Security.Claims.ClaimsIdentity" />
+        <Parameter Name="audience" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="claimsIdentity">The inbound Activity.</param>
+        <param name="audience">The http auth header.</param>
+        <param name="cancellationToken">A cancellation token.</param>
+        <summary>
+            Get the credentials object needed to make a proactive call.
+            </summary>
+        <returns>Asynchronous Task with <see cref="T:Microsoft.Bot.Connector.Authentication.ProactiveCredentialsResult" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
     <AssemblyVersion>4.10.3.0</AssemblyVersion>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -31,6 +32,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -58,6 +60,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.RegularExpressions.Regex</ReturnType>
@@ -70,22 +73,21 @@
       </Docs>
     </Member>
     <Member MemberName="GetPrefixErrorMessage">
-      <MemberSignature Language="C#" Value="public static string GetPrefixErrorMessage (this Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.NormalTemplateStringContext context);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPrefixErrorMessage(class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/NormalTemplateStringContext context) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Extensions.GetPrefixErrorMessage(Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.NormalTemplateStringContext)" />
+      <MemberSignature Language="C#" Value="public static string GetPrefixErrorMessage (this LGTemplateParser.NormalTemplateStringContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPrefixErrorMessage(LGTemplateParser/NormalTemplateStringContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Extensions.GetPrefixErrorMessage(LGTemplateParser.NormalTemplateStringContext)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetPrefixErrorMessage (context As LGTemplateParser.NormalTemplateStringContext) As String" />
-      <MemberSignature Language="F#" Value="static member GetPrefixErrorMessage : Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.NormalTemplateStringContext -&gt; string" Usage="Microsoft.Bot.Builder.LanguageGeneration.Extensions.GetPrefixErrorMessage context" />
+      <MemberSignature Language="F#" Value="static member GetPrefixErrorMessage : LGTemplateParser.NormalTemplateStringContext -&gt; string" Usage="Microsoft.Bot.Builder.LanguageGeneration.Extensions.GetPrefixErrorMessage context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
-        <AssemblyVersion>4.10.0.0</AssemblyVersion>
-        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+NormalTemplateStringContext" RefType="this" />
+        <Parameter Name="context" Type="LGTemplateParser+NormalTemplateStringContext" RefType="this" />
       </Parameters>
       <Docs>
         <param name="context">Normal template sting context.</param>
@@ -97,22 +99,21 @@
       </Docs>
     </Member>
     <Member MemberName="IsPureExpression">
-      <MemberSignature Language="C#" Value="public static bool IsPureExpression (this Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.KeyValueStructureValueContext context);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsPureExpression(class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/KeyValueStructureValueContext context) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Extensions.IsPureExpression(Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.KeyValueStructureValueContext)" />
+      <MemberSignature Language="C#" Value="public static bool IsPureExpression (this LGTemplateParser.KeyValueStructureValueContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsPureExpression(LGTemplateParser/KeyValueStructureValueContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.Extensions.IsPureExpression(LGTemplateParser.KeyValueStructureValueContext)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsPureExpression (context As LGTemplateParser.KeyValueStructureValueContext) As Boolean" />
-      <MemberSignature Language="F#" Value="static member IsPureExpression : Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.KeyValueStructureValueContext -&gt; bool" Usage="Microsoft.Bot.Builder.LanguageGeneration.Extensions.IsPureExpression context" />
+      <MemberSignature Language="F#" Value="static member IsPureExpression : LGTemplateParser.KeyValueStructureValueContext -&gt; bool" Usage="Microsoft.Bot.Builder.LanguageGeneration.Extensions.IsPureExpression context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
-        <AssemblyVersion>4.10.0.0</AssemblyVersion>
-        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="context" Type="Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+KeyValueStructureValueContext" RefType="this" />
+        <Parameter Name="context" Type="LGTemplateParser+KeyValueStructureValueContext" RefType="this" />
       </Parameters>
       <Docs>
         <param name="context">Key value structure value context.</param>
@@ -134,6 +135,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -165,6 +167,7 @@
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

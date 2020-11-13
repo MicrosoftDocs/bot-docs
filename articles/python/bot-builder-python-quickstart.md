@@ -7,17 +7,34 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 05/17/2020
-monikerRange: 'azure-bot-service-4.0'
+ms.date: 10/29/2020
 ---
 
 # Create a bot with the Bot Framework SDK for Python
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-This quickstart walks you through building a bot using the Python Echo Bot template, and then testing it with the Bot Framework Emulator.
+This article shows you how to build a bot by using the Python Echo Bot template, and then how to test it with the Bot Framework Emulator.
 
-[!INCLUDE [python quickstart](../includes/quickstart-python.md)]
+Creating a bot with Azure Bot Service and creating a bot locally are independent, parallel ways to create a bot.
+
+<!-- Delete this include file [!INCLUDE [python quickstart](../includes/quickstart-python.md)] -->
+
+## Prerequisites
+
+[!INCLUDE [dotnet prerequisites](~/includes/quickstart/python/quickstart-python-prerequisites.md)]
+
+## Create a bot
+
+[!INCLUDE [dotnet quickstart create bot](~/includes/quickstart/python/quickstart-python-create-bot.md)]
+
+## Start your bot
+
+[!INCLUDE [dotnet quickstart start bot](~/includes/quickstart/python/quickstart-python-start-bot.md)]
+
+## Start the Emulator and connect your bot
+
+[!INCLUDE [dotnet quickstart start emulator](~/includes/quickstart/common/quickstart-start-emulator.md)]
 
 ## Additional resources
 

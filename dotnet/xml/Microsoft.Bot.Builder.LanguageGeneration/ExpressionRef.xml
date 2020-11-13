@@ -1,0 +1,141 @@
+<Type Name="ExpressionRef" FullName="Microsoft.Bot.Builder.LanguageGeneration.ExpressionRef">
+  <TypeSignature Language="C#" Value="public class ExpressionRef" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExpressionRef extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.LanguageGeneration.ExpressionRef" />
+  <TypeSignature Language="VB.NET" Value="Public Class ExpressionRef" />
+  <TypeSignature Language="F#" Value="type ExpressionRef = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Expression container with source range.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExpressionRef (string expression, Microsoft.Bot.Builder.LanguageGeneration.SourceRange sourceRange);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string expression, class Microsoft.Bot.Builder.LanguageGeneration.SourceRange sourceRange) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.ExpressionRef.#ctor(System.String,Microsoft.Bot.Builder.LanguageGeneration.SourceRange)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (expression As String, sourceRange As SourceRange)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.LanguageGeneration.ExpressionRef : string * Microsoft.Bot.Builder.LanguageGeneration.SourceRange -&gt; Microsoft.Bot.Builder.LanguageGeneration.ExpressionRef" Usage="new Microsoft.Bot.Builder.LanguageGeneration.ExpressionRef (expression, sourceRange)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="expression" Type="System.String" />
+        <Parameter Name="sourceRange" Type="Microsoft.Bot.Builder.LanguageGeneration.SourceRange" />
+      </Parameters>
+      <Docs>
+        <param name="expression">Expression string.</param>
+        <param name="sourceRange">Expression source range.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.LanguageGeneration.ExpressionRef" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Expression">
+      <MemberSignature Language="C#" Value="public string Expression { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Expression" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.LanguageGeneration.ExpressionRef.Expression" />
+      <MemberSignature Language="VB.NET" Value="Public Property Expression As String" />
+      <MemberSignature Language="F#" Value="member this.Expression : string with get, set" Usage="Microsoft.Bot.Builder.LanguageGeneration.ExpressionRef.Expression" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets expression string.
+            </summary>
+        <value>
+            Expression string.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetId">
+      <MemberSignature Language="C#" Value="public string GetId ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetId() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.ExpressionRef.GetId" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetId () As String" />
+      <MemberSignature Language="F#" Value="member this.GetId : unit -&gt; string" Usage="expressionRef.GetId " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Get the unique id of expression context.
+            </summary>
+        <returns>id string.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceRange">
+      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.LanguageGeneration.SourceRange SourceRange { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.LanguageGeneration.SourceRange SourceRange" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.LanguageGeneration.ExpressionRef.SourceRange" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceRange As SourceRange" />
+      <MemberSignature Language="F#" Value="member this.SourceRange : Microsoft.Bot.Builder.LanguageGeneration.SourceRange with get, set" Usage="Microsoft.Bot.Builder.LanguageGeneration.ExpressionRef.SourceRange" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.SourceRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets expression source range.
+            </summary>
+        <value>
+            Expression source range.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.LanguageGeneration.ExpressionRef.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="expressionRef.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Return the Expression string.
+            </summary>
+        <returns>To string method.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

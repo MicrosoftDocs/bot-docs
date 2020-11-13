@@ -1,0 +1,1865 @@
+<Type Name="ILUFileParserVisitor&lt;Result&gt;" FullName="ILUFileParserVisitor&lt;Result&gt;">
+  <TypeSignature Language="C#" Value="public interface ILUFileParserVisitor&lt;Result&gt; : Antlr4.Runtime.Tree.IParseTreeVisitor&lt;Result&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ILUFileParserVisitor`1&lt;Result&gt; implements class Antlr4.Runtime.Tree.IParseTreeVisitor`1&lt;!Result&gt;" />
+  <TypeSignature Language="DocId" Value="T:ILUFileParserVisitor`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ILUFileParserVisitor(Of Result)&#xA;Implements IParseTreeVisitor(Of Result)" />
+  <TypeSignature Language="F#" Value="type ILUFileParserVisitor&lt;'Result&gt; = interface&#xA;    interface IParseTreeVisitor&lt;'Result&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="Result" />
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Antlr4.Runtime.Tree.IParseTreeVisitor&lt;Result&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.8")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.8")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="Result">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="VisitCompositeEntityIdentifier">
+      <MemberSignature Language="C#" Value="public Result VisitCompositeEntityIdentifier (LUFileParser.CompositeEntityIdentifierContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitCompositeEntityIdentifier(LUFileParser/CompositeEntityIdentifierContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitCompositeEntityIdentifier(LUFileParser.CompositeEntityIdentifierContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitCompositeEntityIdentifier (context As LUFileParser.CompositeEntityIdentifierContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitCompositeEntityIdentifier : LUFileParser.CompositeEntityIdentifierContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitCompositeEntityIdentifier context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+CompositeEntityIdentifierContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitEntityDefinition">
+      <MemberSignature Language="C#" Value="public Result VisitEntityDefinition (LUFileParser.EntityDefinitionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitEntityDefinition(LUFileParser/EntityDefinitionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitEntityDefinition(LUFileParser.EntityDefinitionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitEntityDefinition (context As LUFileParser.EntityDefinitionContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitEntityDefinition : LUFileParser.EntityDefinitionContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitEntityDefinition context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+EntityDefinitionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitEntityLine">
+      <MemberSignature Language="C#" Value="public Result VisitEntityLine (LUFileParser.EntityLineContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitEntityLine(LUFileParser/EntityLineContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitEntityLine(LUFileParser.EntityLineContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitEntityLine (context As LUFileParser.EntityLineContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitEntityLine : LUFileParser.EntityLineContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitEntityLine context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+EntityLineContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitEntityListBody">
+      <MemberSignature Language="C#" Value="public Result VisitEntityListBody (LUFileParser.EntityListBodyContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitEntityListBody(LUFileParser/EntityListBodyContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitEntityListBody(LUFileParser.EntityListBodyContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitEntityListBody (context As LUFileParser.EntityListBodyContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitEntityListBody : LUFileParser.EntityListBodyContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitEntityListBody context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+EntityListBodyContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitEntityName">
+      <MemberSignature Language="C#" Value="public Result VisitEntityName (LUFileParser.EntityNameContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitEntityName(LUFileParser/EntityNameContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitEntityName(LUFileParser.EntityNameContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitEntityName (context As LUFileParser.EntityNameContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitEntityName : LUFileParser.EntityNameContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitEntityName context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+EntityNameContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitEntitySection">
+      <MemberSignature Language="C#" Value="public Result VisitEntitySection (LUFileParser.EntitySectionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitEntitySection(LUFileParser/EntitySectionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitEntitySection(LUFileParser.EntitySectionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitEntitySection (context As LUFileParser.EntitySectionContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitEntitySection : LUFileParser.EntitySectionContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitEntitySection context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+EntitySectionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitEntityType">
+      <MemberSignature Language="C#" Value="public Result VisitEntityType (LUFileParser.EntityTypeContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitEntityType(LUFileParser/EntityTypeContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitEntityType(LUFileParser.EntityTypeContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitEntityType (context As LUFileParser.EntityTypeContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitEntityType : LUFileParser.EntityTypeContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitEntityType context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+EntityTypeContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitErrorFilterLine">
+      <MemberSignature Language="C#" Value="public Result VisitErrorFilterLine (LUFileParser.ErrorFilterLineContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitErrorFilterLine(LUFileParser/ErrorFilterLineContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitErrorFilterLine(LUFileParser.ErrorFilterLineContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitErrorFilterLine (context As LUFileParser.ErrorFilterLineContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitErrorFilterLine : LUFileParser.ErrorFilterLineContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitErrorFilterLine context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+ErrorFilterLineContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitErrorQuestionString">
+      <MemberSignature Language="C#" Value="public Result VisitErrorQuestionString (LUFileParser.ErrorQuestionStringContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitErrorQuestionString(LUFileParser/ErrorQuestionStringContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitErrorQuestionString(LUFileParser.ErrorQuestionStringContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitErrorQuestionString (context As LUFileParser.ErrorQuestionStringContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitErrorQuestionString : LUFileParser.ErrorQuestionStringContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitErrorQuestionString context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+ErrorQuestionStringContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitErrorString">
+      <MemberSignature Language="C#" Value="public Result VisitErrorString (LUFileParser.ErrorStringContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitErrorString(LUFileParser/ErrorStringContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitErrorString(LUFileParser.ErrorStringContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitErrorString (context As LUFileParser.ErrorStringContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitErrorString : LUFileParser.ErrorStringContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitErrorString context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+ErrorStringContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitFile">
+      <MemberSignature Language="C#" Value="public Result VisitFile (LUFileParser.FileContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitFile(LUFileParser/FileContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitFile(LUFileParser.FileContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitFile (context As LUFileParser.FileContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitFile : LUFileParser.FileContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitFile context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+FileContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitFilterLine">
+      <MemberSignature Language="C#" Value="public Result VisitFilterLine (LUFileParser.FilterLineContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitFilterLine(LUFileParser/FilterLineContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitFilterLine(LUFileParser.FilterLineContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitFilterLine (context As LUFileParser.FilterLineContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitFilterLine : LUFileParser.FilterLineContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitFilterLine context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+FilterLineContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitFilterSection">
+      <MemberSignature Language="C#" Value="public Result VisitFilterSection (LUFileParser.FilterSectionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitFilterSection(LUFileParser/FilterSectionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitFilterSection(LUFileParser.FilterSectionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitFilterSection (context As LUFileParser.FilterSectionContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitFilterSection : LUFileParser.FilterSectionContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitFilterSection context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+FilterSectionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitImportDefinition">
+      <MemberSignature Language="C#" Value="public Result VisitImportDefinition (LUFileParser.ImportDefinitionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitImportDefinition(LUFileParser/ImportDefinitionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitImportDefinition(LUFileParser.ImportDefinitionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitImportDefinition (context As LUFileParser.ImportDefinitionContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitImportDefinition : LUFileParser.ImportDefinitionContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitImportDefinition context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+ImportDefinitionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitImportSection">
+      <MemberSignature Language="C#" Value="public Result VisitImportSection (LUFileParser.ImportSectionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitImportSection(LUFileParser/ImportSectionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitImportSection(LUFileParser.ImportSectionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitImportSection (context As LUFileParser.ImportSectionContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitImportSection : LUFileParser.ImportSectionContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitImportSection context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+ImportSectionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitIntentBody">
+      <MemberSignature Language="C#" Value="public Result VisitIntentBody (LUFileParser.IntentBodyContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitIntentBody(LUFileParser/IntentBodyContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitIntentBody(LUFileParser.IntentBodyContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitIntentBody (context As LUFileParser.IntentBodyContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitIntentBody : LUFileParser.IntentBodyContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitIntentBody context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+IntentBodyContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitIntentDefinition">
+      <MemberSignature Language="C#" Value="public Result VisitIntentDefinition (LUFileParser.IntentDefinitionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitIntentDefinition(LUFileParser/IntentDefinitionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitIntentDefinition(LUFileParser.IntentDefinitionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitIntentDefinition (context As LUFileParser.IntentDefinitionContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitIntentDefinition : LUFileParser.IntentDefinitionContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitIntentDefinition context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+IntentDefinitionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitIntentName">
+      <MemberSignature Language="C#" Value="public Result VisitIntentName (LUFileParser.IntentNameContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitIntentName(LUFileParser/IntentNameContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitIntentName(LUFileParser.IntentNameContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitIntentName (context As LUFileParser.IntentNameContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitIntentName : LUFileParser.IntentNameContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitIntentName context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+IntentNameContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitIntentNameLine">
+      <MemberSignature Language="C#" Value="public Result VisitIntentNameLine (LUFileParser.IntentNameLineContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitIntentNameLine(LUFileParser/IntentNameLineContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitIntentNameLine(LUFileParser.IntentNameLineContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitIntentNameLine (context As LUFileParser.IntentNameLineContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitIntentNameLine : LUFileParser.IntentNameLineContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitIntentNameLine context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+IntentNameLineContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitModelInfoDefinition">
+      <MemberSignature Language="C#" Value="public Result VisitModelInfoDefinition (LUFileParser.ModelInfoDefinitionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitModelInfoDefinition(LUFileParser/ModelInfoDefinitionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitModelInfoDefinition(LUFileParser.ModelInfoDefinitionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitModelInfoDefinition (context As LUFileParser.ModelInfoDefinitionContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitModelInfoDefinition : LUFileParser.ModelInfoDefinitionContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitModelInfoDefinition context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+ModelInfoDefinitionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitModelInfoSection">
+      <MemberSignature Language="C#" Value="public Result VisitModelInfoSection (LUFileParser.ModelInfoSectionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitModelInfoSection(LUFileParser/ModelInfoSectionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitModelInfoSection(LUFileParser.ModelInfoSectionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitModelInfoSection (context As LUFileParser.ModelInfoSectionContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitModelInfoSection : LUFileParser.ModelInfoSectionContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitModelInfoSection context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+ModelInfoSectionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitMoreQuestion">
+      <MemberSignature Language="C#" Value="public Result VisitMoreQuestion (LUFileParser.MoreQuestionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitMoreQuestion(LUFileParser/MoreQuestionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitMoreQuestion(LUFileParser.MoreQuestionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitMoreQuestion (context As LUFileParser.MoreQuestionContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitMoreQuestion : LUFileParser.MoreQuestionContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitMoreQuestion context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+MoreQuestionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitMoreQuestionsBody">
+      <MemberSignature Language="C#" Value="public Result VisitMoreQuestionsBody (LUFileParser.MoreQuestionsBodyContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitMoreQuestionsBody(LUFileParser/MoreQuestionsBodyContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitMoreQuestionsBody(LUFileParser.MoreQuestionsBodyContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitMoreQuestionsBody (context As LUFileParser.MoreQuestionsBodyContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitMoreQuestionsBody : LUFileParser.MoreQuestionsBodyContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitMoreQuestionsBody context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+MoreQuestionsBodyContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitMultiLineAnswer">
+      <MemberSignature Language="C#" Value="public Result VisitMultiLineAnswer (LUFileParser.MultiLineAnswerContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitMultiLineAnswer(LUFileParser/MultiLineAnswerContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitMultiLineAnswer(LUFileParser.MultiLineAnswerContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitMultiLineAnswer (context As LUFileParser.MultiLineAnswerContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitMultiLineAnswer : LUFileParser.MultiLineAnswerContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitMultiLineAnswer context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+MultiLineAnswerContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNameIdentifier">
+      <MemberSignature Language="C#" Value="public Result VisitNameIdentifier (LUFileParser.NameIdentifierContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitNameIdentifier(LUFileParser/NameIdentifierContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitNameIdentifier(LUFileParser.NameIdentifierContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitNameIdentifier (context As LUFileParser.NameIdentifierContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitNameIdentifier : LUFileParser.NameIdentifierContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitNameIdentifier context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+NameIdentifierContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNestedIntentBodyDefinition">
+      <MemberSignature Language="C#" Value="public Result VisitNestedIntentBodyDefinition (LUFileParser.NestedIntentBodyDefinitionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitNestedIntentBodyDefinition(LUFileParser/NestedIntentBodyDefinitionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitNestedIntentBodyDefinition(LUFileParser.NestedIntentBodyDefinitionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitNestedIntentBodyDefinition (context As LUFileParser.NestedIntentBodyDefinitionContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitNestedIntentBodyDefinition : LUFileParser.NestedIntentBodyDefinitionContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitNestedIntentBodyDefinition context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+NestedIntentBodyDefinitionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNestedIntentName">
+      <MemberSignature Language="C#" Value="public Result VisitNestedIntentName (LUFileParser.NestedIntentNameContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitNestedIntentName(LUFileParser/NestedIntentNameContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitNestedIntentName(LUFileParser.NestedIntentNameContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitNestedIntentName (context As LUFileParser.NestedIntentNameContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitNestedIntentName : LUFileParser.NestedIntentNameContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitNestedIntentName context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+NestedIntentNameContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNestedIntentNameLine">
+      <MemberSignature Language="C#" Value="public Result VisitNestedIntentNameLine (LUFileParser.NestedIntentNameLineContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitNestedIntentNameLine(LUFileParser/NestedIntentNameLineContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitNestedIntentNameLine(LUFileParser.NestedIntentNameLineContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitNestedIntentNameLine (context As LUFileParser.NestedIntentNameLineContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitNestedIntentNameLine : LUFileParser.NestedIntentNameLineContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitNestedIntentNameLine context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+NestedIntentNameLineContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNestedIntentSection">
+      <MemberSignature Language="C#" Value="public Result VisitNestedIntentSection (LUFileParser.NestedIntentSectionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitNestedIntentSection(LUFileParser/NestedIntentSectionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitNestedIntentSection(LUFileParser.NestedIntentSectionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitNestedIntentSection (context As LUFileParser.NestedIntentSectionContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitNestedIntentSection : LUFileParser.NestedIntentSectionContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitNestedIntentSection context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+NestedIntentSectionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNewCompositeDefinition">
+      <MemberSignature Language="C#" Value="public Result VisitNewCompositeDefinition (LUFileParser.NewCompositeDefinitionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitNewCompositeDefinition(LUFileParser/NewCompositeDefinitionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitNewCompositeDefinition(LUFileParser.NewCompositeDefinitionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitNewCompositeDefinition (context As LUFileParser.NewCompositeDefinitionContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitNewCompositeDefinition : LUFileParser.NewCompositeDefinitionContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitNewCompositeDefinition context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+NewCompositeDefinitionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNewEntityDefinition">
+      <MemberSignature Language="C#" Value="public Result VisitNewEntityDefinition (LUFileParser.NewEntityDefinitionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitNewEntityDefinition(LUFileParser/NewEntityDefinitionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitNewEntityDefinition(LUFileParser.NewEntityDefinitionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitNewEntityDefinition (context As LUFileParser.NewEntityDefinitionContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitNewEntityDefinition : LUFileParser.NewEntityDefinitionContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitNewEntityDefinition context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+NewEntityDefinitionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNewEntityLine">
+      <MemberSignature Language="C#" Value="public Result VisitNewEntityLine (LUFileParser.NewEntityLineContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitNewEntityLine(LUFileParser/NewEntityLineContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitNewEntityLine(LUFileParser.NewEntityLineContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitNewEntityLine (context As LUFileParser.NewEntityLineContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitNewEntityLine : LUFileParser.NewEntityLineContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitNewEntityLine context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+NewEntityLineContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNewEntityListbody">
+      <MemberSignature Language="C#" Value="public Result VisitNewEntityListbody (LUFileParser.NewEntityListbodyContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitNewEntityListbody(LUFileParser/NewEntityListbodyContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitNewEntityListbody(LUFileParser.NewEntityListbodyContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitNewEntityListbody (context As LUFileParser.NewEntityListbodyContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitNewEntityListbody : LUFileParser.NewEntityListbodyContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitNewEntityListbody context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+NewEntityListbodyContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNewEntityName">
+      <MemberSignature Language="C#" Value="public Result VisitNewEntityName (LUFileParser.NewEntityNameContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitNewEntityName(LUFileParser/NewEntityNameContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitNewEntityName(LUFileParser.NewEntityNameContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitNewEntityName (context As LUFileParser.NewEntityNameContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitNewEntityName : LUFileParser.NewEntityNameContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitNewEntityName context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+NewEntityNameContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNewEntityNameWithWS">
+      <MemberSignature Language="C#" Value="public Result VisitNewEntityNameWithWS (LUFileParser.NewEntityNameWithWSContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitNewEntityNameWithWS(LUFileParser/NewEntityNameWithWSContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitNewEntityNameWithWS(LUFileParser.NewEntityNameWithWSContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitNewEntityNameWithWS (context As LUFileParser.NewEntityNameWithWSContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitNewEntityNameWithWS : LUFileParser.NewEntityNameWithWSContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitNewEntityNameWithWS context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+NewEntityNameWithWSContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNewEntityRoleOrFeatures">
+      <MemberSignature Language="C#" Value="public Result VisitNewEntityRoleOrFeatures (LUFileParser.NewEntityRoleOrFeaturesContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitNewEntityRoleOrFeatures(LUFileParser/NewEntityRoleOrFeaturesContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitNewEntityRoleOrFeatures(LUFileParser.NewEntityRoleOrFeaturesContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitNewEntityRoleOrFeatures (context As LUFileParser.NewEntityRoleOrFeaturesContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitNewEntityRoleOrFeatures : LUFileParser.NewEntityRoleOrFeaturesContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitNewEntityRoleOrFeatures context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+NewEntityRoleOrFeaturesContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNewEntityRoles">
+      <MemberSignature Language="C#" Value="public Result VisitNewEntityRoles (LUFileParser.NewEntityRolesContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitNewEntityRoles(LUFileParser/NewEntityRolesContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitNewEntityRoles(LUFileParser.NewEntityRolesContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitNewEntityRoles (context As LUFileParser.NewEntityRolesContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitNewEntityRoles : LUFileParser.NewEntityRolesContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitNewEntityRoles context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+NewEntityRolesContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNewEntitySection">
+      <MemberSignature Language="C#" Value="public Result VisitNewEntitySection (LUFileParser.NewEntitySectionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitNewEntitySection(LUFileParser/NewEntitySectionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitNewEntitySection(LUFileParser.NewEntitySectionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitNewEntitySection (context As LUFileParser.NewEntitySectionContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitNewEntitySection : LUFileParser.NewEntitySectionContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitNewEntitySection context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+NewEntitySectionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNewEntityType">
+      <MemberSignature Language="C#" Value="public Result VisitNewEntityType (LUFileParser.NewEntityTypeContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitNewEntityType(LUFileParser/NewEntityTypeContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitNewEntityType(LUFileParser.NewEntityTypeContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitNewEntityType (context As LUFileParser.NewEntityTypeContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitNewEntityType : LUFileParser.NewEntityTypeContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitNewEntityType context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+NewEntityTypeContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNewEntityUsesFeatures">
+      <MemberSignature Language="C#" Value="public Result VisitNewEntityUsesFeatures (LUFileParser.NewEntityUsesFeaturesContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitNewEntityUsesFeatures(LUFileParser/NewEntityUsesFeaturesContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitNewEntityUsesFeatures(LUFileParser.NewEntityUsesFeaturesContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitNewEntityUsesFeatures (context As LUFileParser.NewEntityUsesFeaturesContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitNewEntityUsesFeatures : LUFileParser.NewEntityUsesFeaturesContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitNewEntityUsesFeatures context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+NewEntityUsesFeaturesContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNewline">
+      <MemberSignature Language="C#" Value="public Result VisitNewline (LUFileParser.NewlineContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitNewline(LUFileParser/NewlineContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitNewline(LUFileParser.NewlineContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitNewline (context As LUFileParser.NewlineContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitNewline : LUFileParser.NewlineContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitNewline context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+NewlineContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNewRegexDefinition">
+      <MemberSignature Language="C#" Value="public Result VisitNewRegexDefinition (LUFileParser.NewRegexDefinitionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitNewRegexDefinition(LUFileParser/NewRegexDefinitionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitNewRegexDefinition(LUFileParser.NewRegexDefinitionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitNewRegexDefinition (context As LUFileParser.NewRegexDefinitionContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitNewRegexDefinition : LUFileParser.NewRegexDefinitionContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitNewRegexDefinition context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+NewRegexDefinitionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNormalIntentBody">
+      <MemberSignature Language="C#" Value="public Result VisitNormalIntentBody (LUFileParser.NormalIntentBodyContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitNormalIntentBody(LUFileParser/NormalIntentBodyContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitNormalIntentBody(LUFileParser.NormalIntentBodyContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitNormalIntentBody (context As LUFileParser.NormalIntentBodyContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitNormalIntentBody : LUFileParser.NormalIntentBodyContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitNormalIntentBody context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+NormalIntentBodyContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNormalIntentString">
+      <MemberSignature Language="C#" Value="public Result VisitNormalIntentString (LUFileParser.NormalIntentStringContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitNormalIntentString(LUFileParser/NormalIntentStringContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitNormalIntentString(LUFileParser.NormalIntentStringContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitNormalIntentString (context As LUFileParser.NormalIntentStringContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitNormalIntentString : LUFileParser.NormalIntentStringContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitNormalIntentString context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+NormalIntentStringContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNormalItemString">
+      <MemberSignature Language="C#" Value="public Result VisitNormalItemString (LUFileParser.NormalItemStringContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitNormalItemString(LUFileParser/NormalItemStringContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitNormalItemString(LUFileParser.NormalItemStringContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitNormalItemString (context As LUFileParser.NormalItemStringContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitNormalItemString : LUFileParser.NormalItemStringContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitNormalItemString context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+NormalItemStringContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitParagraph">
+      <MemberSignature Language="C#" Value="public Result VisitParagraph (LUFileParser.ParagraphContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitParagraph(LUFileParser/ParagraphContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitParagraph(LUFileParser.ParagraphContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitParagraph (context As LUFileParser.ParagraphContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitParagraph : LUFileParser.ParagraphContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitParagraph context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+ParagraphContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitPromptSection">
+      <MemberSignature Language="C#" Value="public Result VisitPromptSection (LUFileParser.PromptSectionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitPromptSection(LUFileParser/PromptSectionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitPromptSection(LUFileParser.PromptSectionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitPromptSection (context As LUFileParser.PromptSectionContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitPromptSection : LUFileParser.PromptSectionContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitPromptSection context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+PromptSectionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitQnaAnswerBody">
+      <MemberSignature Language="C#" Value="public Result VisitQnaAnswerBody (LUFileParser.QnaAnswerBodyContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitQnaAnswerBody(LUFileParser/QnaAnswerBodyContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitQnaAnswerBody(LUFileParser.QnaAnswerBodyContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitQnaAnswerBody (context As LUFileParser.QnaAnswerBodyContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitQnaAnswerBody : LUFileParser.QnaAnswerBodyContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitQnaAnswerBody context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+QnaAnswerBodyContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitQnaDefinition">
+      <MemberSignature Language="C#" Value="public Result VisitQnaDefinition (LUFileParser.QnaDefinitionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitQnaDefinition(LUFileParser/QnaDefinitionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitQnaDefinition(LUFileParser.QnaDefinitionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitQnaDefinition (context As LUFileParser.QnaDefinitionContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitQnaDefinition : LUFileParser.QnaDefinitionContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitQnaDefinition context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+QnaDefinitionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitQnaIdMark">
+      <MemberSignature Language="C#" Value="public Result VisitQnaIdMark (LUFileParser.QnaIdMarkContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitQnaIdMark(LUFileParser/QnaIdMarkContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitQnaIdMark(LUFileParser.QnaIdMarkContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitQnaIdMark (context As LUFileParser.QnaIdMarkContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitQnaIdMark : LUFileParser.QnaIdMarkContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitQnaIdMark context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+QnaIdMarkContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitQnaQuestion">
+      <MemberSignature Language="C#" Value="public Result VisitQnaQuestion (LUFileParser.QnaQuestionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitQnaQuestion(LUFileParser/QnaQuestionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitQnaQuestion(LUFileParser.QnaQuestionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitQnaQuestion (context As LUFileParser.QnaQuestionContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitQnaQuestion : LUFileParser.QnaQuestionContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitQnaQuestion context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+QnaQuestionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitQnaSection">
+      <MemberSignature Language="C#" Value="public Result VisitQnaSection (LUFileParser.QnaSectionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitQnaSection(LUFileParser/QnaSectionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitQnaSection(LUFileParser.QnaSectionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitQnaSection (context As LUFileParser.QnaSectionContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitQnaSection : LUFileParser.QnaSectionContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitQnaSection context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+QnaSectionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitQnaSourceInfo">
+      <MemberSignature Language="C#" Value="public Result VisitQnaSourceInfo (LUFileParser.QnaSourceInfoContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitQnaSourceInfo(LUFileParser/QnaSourceInfoContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitQnaSourceInfo(LUFileParser.QnaSourceInfoContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitQnaSourceInfo (context As LUFileParser.QnaSourceInfoContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitQnaSourceInfo : LUFileParser.QnaSourceInfoContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitQnaSourceInfo context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+QnaSourceInfoContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitQuestionText">
+      <MemberSignature Language="C#" Value="public Result VisitQuestionText (LUFileParser.QuestionTextContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitQuestionText(LUFileParser/QuestionTextContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitQuestionText(LUFileParser.QuestionTextContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitQuestionText (context As LUFileParser.QuestionTextContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitQuestionText : LUFileParser.QuestionTextContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitQuestionText context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+QuestionTextContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitReferenceDefinition">
+      <MemberSignature Language="C#" Value="public Result VisitReferenceDefinition (LUFileParser.ReferenceDefinitionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitReferenceDefinition(LUFileParser/ReferenceDefinitionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitReferenceDefinition(LUFileParser.ReferenceDefinitionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitReferenceDefinition (context As LUFileParser.ReferenceDefinitionContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitReferenceDefinition : LUFileParser.ReferenceDefinitionContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitReferenceDefinition context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+ReferenceDefinitionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitReferenceSection">
+      <MemberSignature Language="C#" Value="public Result VisitReferenceSection (LUFileParser.ReferenceSectionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitReferenceSection(LUFileParser/ReferenceSectionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitReferenceSection(LUFileParser.ReferenceSectionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitReferenceSection (context As LUFileParser.ReferenceSectionContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitReferenceSection : LUFileParser.ReferenceSectionContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitReferenceSection context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+ReferenceSectionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitRegexEntityIdentifier">
+      <MemberSignature Language="C#" Value="public Result VisitRegexEntityIdentifier (LUFileParser.RegexEntityIdentifierContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitRegexEntityIdentifier(LUFileParser/RegexEntityIdentifierContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitRegexEntityIdentifier(LUFileParser.RegexEntityIdentifierContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitRegexEntityIdentifier (context As LUFileParser.RegexEntityIdentifierContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitRegexEntityIdentifier : LUFileParser.RegexEntityIdentifierContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitRegexEntityIdentifier context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+RegexEntityIdentifierContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitSimpleIntentSection">
+      <MemberSignature Language="C#" Value="public Result VisitSimpleIntentSection (LUFileParser.SimpleIntentSectionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitSimpleIntentSection(LUFileParser/SimpleIntentSectionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitSimpleIntentSection(LUFileParser.SimpleIntentSectionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitSimpleIntentSection (context As LUFileParser.SimpleIntentSectionContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitSimpleIntentSection : LUFileParser.SimpleIntentSectionContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitSimpleIntentSection context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+SimpleIntentSectionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitSubIntentDefinition">
+      <MemberSignature Language="C#" Value="public Result VisitSubIntentDefinition (LUFileParser.SubIntentDefinitionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitSubIntentDefinition(LUFileParser/SubIntentDefinitionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILUFileParserVisitor`1.VisitSubIntentDefinition(LUFileParser.SubIntentDefinitionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitSubIntentDefinition (context As LUFileParser.SubIntentDefinitionContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitSubIntentDefinition : LUFileParser.SubIntentDefinitionContext -&gt; 'Result" Usage="iLUFileParserVisitor.VisitSubIntentDefinition context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+SubIntentDefinitionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

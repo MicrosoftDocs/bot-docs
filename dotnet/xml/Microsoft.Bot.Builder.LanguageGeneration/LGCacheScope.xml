@@ -1,0 +1,85 @@
+<Type Name="LGCacheScope" FullName="Microsoft.Bot.Builder.LanguageGeneration.LGCacheScope">
+  <TypeSignature Language="C#" Value="public enum LGCacheScope" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LGCacheScope extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.LanguageGeneration.LGCacheScope" />
+  <TypeSignature Language="VB.NET" Value="Public Enum LGCacheScope" />
+  <TypeSignature Language="F#" Value="type LGCacheScope = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            LG cache scope options.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Global">
+      <MemberSignature Language="C#" Value="Global" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.LanguageGeneration.LGCacheScope Global = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGCacheScope.Global" />
+      <MemberSignature Language="VB.NET" Value="Global" />
+      <MemberSignature Language="F#" Value="Global = 0" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGCacheScope.Global" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.LGCacheScope</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            Global template cache scope.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Local">
+      <MemberSignature Language="C#" Value="Local" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.LanguageGeneration.LGCacheScope Local = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGCacheScope.Local" />
+      <MemberSignature Language="VB.NET" Value="Local" />
+      <MemberSignature Language="F#" Value="Local = 1" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGCacheScope.Local" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.LGCacheScope</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            Only cache result in the same layer of children in template.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Bot.Builder.LanguageGeneration.LGCacheScope None = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Bot.Builder.LanguageGeneration.LGCacheScope.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 2" Usage="Microsoft.Bot.Builder.LanguageGeneration.LGCacheScope.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.LGCacheScope</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            Without cache.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

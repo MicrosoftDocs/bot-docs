@@ -10,6 +10,7 @@
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
     <AssemblyVersion>4.10.3.0</AssemblyVersion>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Bot.Builder.Dialogs.DialogContainer</BaseTypeName>
@@ -39,6 +40,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dialogId" Type="System.String" />
@@ -60,10 +62,12 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="dialogId">To be added.</param>
-        <param name="callerPath">To be added.</param>
-        <param name="callerLine">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dialogId">Optional, dialog identifier.</param>
+        <param name="callerPath">Optional, source file full path.</param>
+        <param name="callerLine">Optional, line number in source file.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.AdaptiveDialog" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,6 +84,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -120,6 +125,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -130,11 +136,14 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dc">The <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogContext" /> for the current turn of conversation.</param>
+        <param name="options">Optional, initial information to pass to the dialog.</param>
+        <param name="cancellationToken">Optional, a <see cref="T:System.Threading.CancellationToken" /> that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Called when the dialog is started and pushed onto the dialog stack.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,6 +160,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -161,11 +171,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dc">The <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogContext" /> for the current turn of conversation.</param>
+        <param name="options">Options used in evaluation. </param>
+        <param name="cancellationToken">Optional, the <see cref="T:System.Threading.CancellationToken" /> that can be used by other objects or threads to receive notice of cancellation.</param>
+        <summary>
+            Waits for pending actions to complete and moves on to <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnEndOfActions" />.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representation of <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogTurnResult" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,6 +194,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -191,10 +204,14 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dc">The <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogContext" /> for the current turn of conversation.</param>
+        <param name="cancellationToken">Optional, a <see cref="T:System.Threading.CancellationToken" /> that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Called when the dialog is _continued_, where it is the active dialog and the
+            user replies with a new activity.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,6 +228,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.DialogContext</ReturnType>
@@ -219,9 +237,11 @@
         <Parameter Name="dc" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dc">The <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogContext" /> for the current turn of conversation.</param>
+        <summary>
+            Creates a child <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogContext" /> for the given context.
+            </summary>
+        <returns>The child <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogContext" /> or null if no <see cref="P:Microsoft.Bot.Builder.Dialogs.Adaptive.AdaptiveDialogState.Actions" /> are found for the given context.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -238,6 +258,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -271,6 +292,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -280,10 +302,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="actionContext">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="actionContext">The <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.ActionContext" /> for the current turn of conversation.</param>
+        <param name="cancellationToken">Optional, a <see cref="T:System.Threading.CancellationToken" /> that can be used by other objects.</param>
+        <summary>
+            Removes the current most action from the given <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.ActionContext" /> if there are any.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing a boolean indicator for the result.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -300,6 +324,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -311,12 +336,15 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="turnContext">To be added.</param>
-        <param name="instance">To be added.</param>
-        <param name="reason">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="turnContext">The context object for this turn.</param>
+        <param name="instance">State information associated with the instance of this dialog on the dialog stack.</param>
+        <param name="reason">Reason why the dialog ended.</param>
+        <param name="cancellationToken">Optional, a <see cref="T:System.Threading.CancellationToken" /> that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Called when the dialog is ending.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -333,13 +361,16 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Ensures all dependencies for the class are installed.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -356,6 +387,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -392,6 +424,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -404,8 +437,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Gets <see cref="T:Microsoft.Bot.Builder.Dialogs.Dialog" /> enumerated dependencies.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.Bot.Builder.Dialogs.Dialog" /> enumerated dependencies.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -422,14 +458,17 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Gets the internal version string.
+            </summary>
+        <returns>Internal version string.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -446,6 +485,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -457,7 +497,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Class identifier.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -474,6 +516,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -483,10 +526,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="actionContext">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="actionContext">The <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.ActionContext" /> for the current turn of conversation.</param>
+        <param name="cancellationToken">Optional, a <see cref="T:System.Threading.CancellationToken" /> that can be used by other objects.</param>
+        <summary>
+            Awaits for completed actions to finish processing entity assignments and finishes turn.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representation of <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogTurnResult" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -503,6 +548,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -513,11 +559,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <param name="dialogEvent">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dc">The <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogContext" /> for the current turn of conversation.</param>
+        <param name="dialogEvent">The <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogEvent" /> being raised.</param>
+        <param name="cancellationToken">Optional, the <see cref="T:System.Threading.CancellationToken" /> that can be used by other objects or threads to receive notice of cancellation.</param>
+        <summary>
+            Called after an event was bubbled to all parents and wasn't handled.
+            </summary>
+        <returns> Whether the event is handled by the current dialog and further processing should stop.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -534,6 +582,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -544,11 +593,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <param name="dialogEvent">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dc">The <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogContext" /> for the current turn of conversation.</param>
+        <param name="dialogEvent">The <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogEvent" /> being raised.</param>
+        <param name="cancellationToken">Optional, the <see cref="T:System.Threading.CancellationToken" /> that can be used by other objects or threads to receive notice of cancellation.</param>
+        <summary>
+            Called before an event is bubbled to its parent.
+            </summary>
+        <returns> Whether the event is handled by the current dialog and further processing should stop.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -565,6 +616,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;</ReturnType>
@@ -575,11 +627,14 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="actionContext">To be added.</param>
-        <param name="activity">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="actionContext">The <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.ActionContext" /> for the current turn of conversation.</param>
+        <param name="activity">
+          <see cref="T:Microsoft.Bot.Schema.Activity" /> to recognize.</param>
+        <param name="cancellationToken">Optional, a <see cref="T:System.Threading.CancellationToken" /> that can be used by other objects or threads to receive notice of cancellation.</param>
+        <summary>
+            Recognizes intent for current activity given the class recognizer set, if set is null no intent will be recognized.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing a <see cref="T:Microsoft.Bot.Builder.RecognizerResult" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -596,6 +651,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -626,6 +682,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -637,12 +694,14 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="actionContext">To be added.</param>
-        <param name="dialogEvent">To be added.</param>
-        <param name="preBubble">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="actionContext">The <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.ActionContext" /> for the current turn of conversation.</param>
+        <param name="dialogEvent">The <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogEvent" /> being raised.</param>
+        <param name="preBubble">A flag indicator for preBubble processing.</param>
+        <param name="cancellationToken">Optional, a <see cref="T:System.Threading.CancellationToken" /> used to signal this operation should be cancelled.</param>
+        <summary>
+            Event processing implementation.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representation of a boolean indicator or the result.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -659,6 +718,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -692,6 +752,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -725,6 +786,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.Dialogs.DialogTurnResult&gt;</ReturnType>
@@ -736,12 +798,16 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="dc">To be added.</param>
-        <param name="reason">To be added.</param>
-        <param name="result">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dc">The dialog context for the current turn of the conversation.</param>
+        <param name="reason">Reason why the dialog resumed.</param>
+        <param name="result">Optional, value returned from the dialog that was called. The type
+            of the value returned is dependent on the child dialog.</param>
+        <param name="cancellationToken">Optional, A <see cref="T:System.Threading.CancellationToken" /> that can be used by other objects
+            or threads to receive notice of cancellation.</param>
+        <summary>
+            Called when a child dialog completed its turn, returning control to this dialog.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -758,6 +824,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -789,6 +856,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -822,6 +890,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

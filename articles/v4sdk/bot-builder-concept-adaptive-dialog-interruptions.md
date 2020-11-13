@@ -190,7 +190,7 @@ Or a travel bot asking for the users departure airport and the user responds wit
 
 Flexible entity extraction enables you to handle these situations gracefully. To do this you will need to define intents with specific utterances in your `.lu` files that you would expect a user to enter, for the first example above, the following template defines the `getUserProfile` intent with a list of possible utterances that assign the user entered values into the `@firstName` and `@userAge` variables:
 
-```.lu
+```lu
 # getUserProfile
     - {userName=vishwac}, {userAge=36}
     - I'm {userName=vishwac} and I'm {userAge=36} years old
@@ -200,6 +200,10 @@ Flexible entity extraction enables you to handle these situations gracefully. To
     - you can call me {userName=vishwac}, I'm {userAge=36}
 ```
 
+## Cross train your language understanding models to handle interruptions
+
+Cross training your language understanding models is an approach to handling interruptions seamlessly. By cross training the LUIS models in your bot, each adaptive dialog can be aware of the capabilities of other dialogs and transfer the conversational flow to the dialog designed to handle any given user request. Cross training can also facilitate the use of multiple recognizers within an adaptive dialog as well as across multiple dialogs that utilize different technologies such as LUIS and QnA Maker to enable your bot to determine the best technology to use to respond to a user. For more information, see [Cross train your bot to use both LUIS and QnA Maker recognizers][cross-train-concepts].
+
 ## Confirmation and correction
 
 _Confirmation and correction_ enables the scenario where you ask the user for confirmation, and they not only provide a confirmation, but they also include input that includes additional user intents in their confirmation response.
@@ -207,6 +211,7 @@ _Confirmation and correction_ enables the scenario where you ask the user for co
 ## Additional information
 
 - How to [Handle user interruptions in adaptive dialogs](bot-builder-howto-handle-user-interrupts-adaptive.md).
+- [Cross train your bot to use both LUIS and QnA Maker recognizers][cross-train-concepts].
 - [Adaptive expressions][adaptive-expressions].
 - [.lu file format](/file-format/bot-builder-lu-file-format.md)
 - [Intents in your LUIS app](https://docs.microsoft.com/azure/cognitive-services/LUIS/luis-concept-intent)
@@ -224,3 +229,4 @@ _Confirmation and correction_ enables the scenario where you ask the user for co
 [turn-scope]: ../adaptive-dialog/adaptive-dialog-prebuilt-memory-states.md#turn-scope
 [cancelalldialogs]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#cancelalldialogs
 [editactions]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#editactions
+[cross-train-concepts]: bot-builder-concept-cross-train.md

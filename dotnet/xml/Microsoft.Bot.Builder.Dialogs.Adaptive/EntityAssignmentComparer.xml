@@ -10,6 +10,7 @@
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
     <AssemblyVersion>4.10.3.0</AssemblyVersion>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Collections.Generic.Comparer&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment&gt;</BaseTypeName>
@@ -24,9 +25,10 @@
             </summary>
     <remarks>
             Compare by event: AssignEntity, ChooseProperty, ChooseEntity
-            Then unexpected before expected
-            Then by oldest first
-            Then by order of operations passed in.
+            Then by operations in order from schema (usually within AssignEntity).
+            Then by unexpected before expected.
+            Then by oldest turn first.
+            Then by minimum position in utterance.
             </remarks>
   </Docs>
   <Members>
@@ -43,6 +45,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="operations" Type="System.String[]" />
@@ -68,6 +71,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -77,10 +81,12 @@
         <Parameter Name="y" Type="Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">Reference Entity.</param>
+        <param name="y">Comparisson Entity.</param>
+        <summary>
+            Compares <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.EntityAssignment" /> x against y to determine its relative priority.
+            </summary>
+        <returns>Numerical value representing x's relative priority.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

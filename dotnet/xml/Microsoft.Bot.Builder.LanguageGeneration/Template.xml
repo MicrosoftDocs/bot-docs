@@ -10,6 +10,7 @@
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
     <AssemblyVersion>4.10.3.0</AssemblyVersion>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -38,6 +39,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -48,6 +50,30 @@
             </summary>
         <value>
             Text format of Body of this template. All content except Name and Parameters.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Expressions">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.LanguageGeneration.ExpressionRef&gt; Expressions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Bot.Builder.LanguageGeneration.ExpressionRef&gt; Expressions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.LanguageGeneration.Template.Expressions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Expressions As IList(Of ExpressionRef)" />
+      <MemberSignature Language="F#" Value="member this.Expressions : System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.LanguageGeneration.ExpressionRef&gt;" Usage="Microsoft.Bot.Builder.LanguageGeneration.Template.Expressions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Bot.Builder.LanguageGeneration.ExpressionRef&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets expression reference list.
+            </summary>
+        <value>
+            Expression reference list.
             </value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -65,6 +91,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -92,6 +119,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
@@ -119,6 +147,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.SourceRange</ReturnType>
@@ -134,11 +163,11 @@
       </Docs>
     </Member>
     <Member MemberName="TemplateBodyParseTree">
-      <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.BodyContext TemplateBodyParseTree { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser/BodyContext TemplateBodyParseTree" />
+      <MemberSignature Language="C#" Value="public LGTemplateParser.BodyContext TemplateBodyParseTree { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance LGTemplateParser/BodyContext TemplateBodyParseTree" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Bot.Builder.LanguageGeneration.Template.TemplateBodyParseTree" />
       <MemberSignature Language="VB.NET" Value="Public Property TemplateBodyParseTree As LGTemplateParser.BodyContext" />
-      <MemberSignature Language="F#" Value="member this.TemplateBodyParseTree : Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser.BodyContext with get, set" Usage="Microsoft.Bot.Builder.LanguageGeneration.Template.TemplateBodyParseTree" />
+      <MemberSignature Language="F#" Value="member this.TemplateBodyParseTree : LGTemplateParser.BodyContext with get, set" Usage="Microsoft.Bot.Builder.LanguageGeneration.Template.TemplateBodyParseTree" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
@@ -146,9 +175,10 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Microsoft.Bot.Builder.LanguageGeneration.LGTemplateParser+BodyContext</ReturnType>
+        <ReturnType>LGTemplateParser+BodyContext</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -173,6 +203,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

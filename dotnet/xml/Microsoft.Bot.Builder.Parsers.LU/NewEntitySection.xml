@@ -1,0 +1,233 @@
+<Type Name="NewEntitySection" FullName="Microsoft.Bot.Builder.Parsers.LU.NewEntitySection">
+  <TypeSignature Language="C#" Value="public class NewEntitySection : Microsoft.Bot.Builder.Parsers.LU.SectionEntity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NewEntitySection extends Microsoft.Bot.Builder.Parsers.LU.SectionEntity" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Parsers.LU.NewEntitySection" />
+  <TypeSignature Language="VB.NET" Value="Public Class NewEntitySection&#xA;Inherits SectionEntity" />
+  <TypeSignature Language="F#" Value="type NewEntitySection = class&#xA;    inherit SectionEntity" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Bot.Builder.Parsers.LU.SectionEntity</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NewEntitySection (LUFileParser.NewEntitySectionContext parseTree);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(LUFileParser/NewEntitySectionContext parseTree) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Parsers.LU.NewEntitySection.#ctor(LUFileParser.NewEntitySectionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (parseTree As LUFileParser.NewEntitySectionContext)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Parsers.LU.NewEntitySection : LUFileParser.NewEntitySectionContext -&gt; Microsoft.Bot.Builder.Parsers.LU.NewEntitySection" Usage="new Microsoft.Bot.Builder.Parsers.LU.NewEntitySection parseTree" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parseTree" Type="LUFileParser+NewEntitySectionContext" />
+      </Parameters>
+      <Docs>
+        <param name="parseTree">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtractCompositeDefinition">
+      <MemberSignature Language="C#" Value="public string ExtractCompositeDefinition (LUFileParser.NewEntitySectionContext parseTree);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ExtractCompositeDefinition(LUFileParser/NewEntitySectionContext parseTree) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Parsers.LU.NewEntitySection.ExtractCompositeDefinition(LUFileParser.NewEntitySectionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExtractCompositeDefinition (parseTree As LUFileParser.NewEntitySectionContext) As String" />
+      <MemberSignature Language="F#" Value="member this.ExtractCompositeDefinition : LUFileParser.NewEntitySectionContext -&gt; string" Usage="newEntitySection.ExtractCompositeDefinition parseTree" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parseTree" Type="LUFileParser+NewEntitySectionContext" />
+      </Parameters>
+      <Docs>
+        <param name="parseTree">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtractFeatures">
+      <MemberSignature Language="C#" Value="public string ExtractFeatures (LUFileParser.NewEntitySectionContext parseTree);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ExtractFeatures(LUFileParser/NewEntitySectionContext parseTree) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Parsers.LU.NewEntitySection.ExtractFeatures(LUFileParser.NewEntitySectionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExtractFeatures (parseTree As LUFileParser.NewEntitySectionContext) As String" />
+      <MemberSignature Language="F#" Value="member this.ExtractFeatures : LUFileParser.NewEntitySectionContext -&gt; string" Usage="newEntitySection.ExtractFeatures parseTree" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parseTree" Type="LUFileParser+NewEntitySectionContext" />
+      </Parameters>
+      <Docs>
+        <param name="parseTree">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtractName">
+      <MemberSignature Language="C#" Value="public string ExtractName (LUFileParser.NewEntitySectionContext parseTree);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ExtractName(LUFileParser/NewEntitySectionContext parseTree) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Parsers.LU.NewEntitySection.ExtractName(LUFileParser.NewEntitySectionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExtractName (parseTree As LUFileParser.NewEntitySectionContext) As String" />
+      <MemberSignature Language="F#" Value="override this.ExtractName : LUFileParser.NewEntitySectionContext -&gt; string" Usage="newEntitySection.ExtractName parseTree" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parseTree" Type="LUFileParser+NewEntitySectionContext" />
+      </Parameters>
+      <Docs>
+        <param name="parseTree">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtractPhraseList">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;string&gt; ExtractPhraseList (LUFileParser.NewEntitySectionContext parseTree);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.List`1&lt;string&gt; ExtractPhraseList(LUFileParser/NewEntitySectionContext parseTree) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Parsers.LU.NewEntitySection.ExtractPhraseList(LUFileParser.NewEntitySectionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExtractPhraseList (parseTree As LUFileParser.NewEntitySectionContext) As List(Of String)" />
+      <MemberSignature Language="F#" Value="member this.ExtractPhraseList : LUFileParser.NewEntitySectionContext -&gt; System.Collections.Generic.List&lt;string&gt;" Usage="newEntitySection.ExtractPhraseList parseTree" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parseTree" Type="LUFileParser+NewEntitySectionContext" />
+      </Parameters>
+      <Docs>
+        <param name="parseTree">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtractRegexDefinition">
+      <MemberSignature Language="C#" Value="public string ExtractRegexDefinition (LUFileParser.NewEntitySectionContext parseTree);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ExtractRegexDefinition(LUFileParser/NewEntitySectionContext parseTree) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Parsers.LU.NewEntitySection.ExtractRegexDefinition(LUFileParser.NewEntitySectionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExtractRegexDefinition (parseTree As LUFileParser.NewEntitySectionContext) As String" />
+      <MemberSignature Language="F#" Value="member this.ExtractRegexDefinition : LUFileParser.NewEntitySectionContext -&gt; string" Usage="newEntitySection.ExtractRegexDefinition parseTree" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parseTree" Type="LUFileParser+NewEntitySectionContext" />
+      </Parameters>
+      <Docs>
+        <param name="parseTree">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtractRoles">
+      <MemberSignature Language="C#" Value="public string ExtractRoles (LUFileParser.NewEntitySectionContext parseTree);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ExtractRoles(LUFileParser/NewEntitySectionContext parseTree) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Parsers.LU.NewEntitySection.ExtractRoles(LUFileParser.NewEntitySectionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExtractRoles (parseTree As LUFileParser.NewEntitySectionContext) As String" />
+      <MemberSignature Language="F#" Value="member this.ExtractRoles : LUFileParser.NewEntitySectionContext -&gt; string" Usage="newEntitySection.ExtractRoles parseTree" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parseTree" Type="LUFileParser+NewEntitySectionContext" />
+      </Parameters>
+      <Docs>
+        <param name="parseTree">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtractSynonyms">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Parsers.LU.SynonymElement&gt; ExtractSynonyms (LUFileParser.NewEntitySectionContext parseTree);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.List`1&lt;class Microsoft.Bot.Builder.Parsers.LU.SynonymElement&gt; ExtractSynonyms(LUFileParser/NewEntitySectionContext parseTree) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Parsers.LU.NewEntitySection.ExtractSynonyms(LUFileParser.NewEntitySectionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExtractSynonyms (parseTree As LUFileParser.NewEntitySectionContext) As List(Of SynonymElement)" />
+      <MemberSignature Language="F#" Value="member this.ExtractSynonyms : LUFileParser.NewEntitySectionContext -&gt; System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Parsers.LU.SynonymElement&gt;" Usage="newEntitySection.ExtractSynonyms parseTree" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Parsers.LU.SynonymElement&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parseTree" Type="LUFileParser+NewEntitySectionContext" />
+      </Parameters>
+      <Docs>
+        <param name="parseTree">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtractType">
+      <MemberSignature Language="C#" Value="public string ExtractType (LUFileParser.NewEntitySectionContext parseTree);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ExtractType(LUFileParser/NewEntitySectionContext parseTree) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Parsers.LU.NewEntitySection.ExtractType(LUFileParser.NewEntitySectionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExtractType (parseTree As LUFileParser.NewEntitySectionContext) As String" />
+      <MemberSignature Language="F#" Value="override this.ExtractType : LUFileParser.NewEntitySectionContext -&gt; string" Usage="newEntitySection.ExtractType parseTree" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parseTree" Type="LUFileParser+NewEntitySectionContext" />
+      </Parameters>
+      <Docs>
+        <param name="parseTree">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

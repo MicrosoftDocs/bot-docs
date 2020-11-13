@@ -1,0 +1,893 @@
+<Type Name="ILGTemplateParserVisitor&lt;Result&gt;" FullName="ILGTemplateParserVisitor&lt;Result&gt;">
+  <TypeSignature Language="C#" Value="public interface ILGTemplateParserVisitor&lt;Result&gt; : Antlr4.Runtime.Tree.IParseTreeVisitor&lt;Result&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ILGTemplateParserVisitor`1&lt;Result&gt; implements class Antlr4.Runtime.Tree.IParseTreeVisitor`1&lt;!Result&gt;" />
+  <TypeSignature Language="DocId" Value="T:ILGTemplateParserVisitor`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ILGTemplateParserVisitor(Of Result)&#xA;Implements IParseTreeVisitor(Of Result)" />
+  <TypeSignature Language="F#" Value="type ILGTemplateParserVisitor&lt;'Result&gt; = interface&#xA;    interface IParseTreeVisitor&lt;'Result&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="Result" />
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Antlr4.Runtime.Tree.IParseTreeVisitor&lt;Result&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.8")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.8")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="Result">The return type of the visit operation.</typeparam>
+    <summary>
+            This interface defines a complete generic visitor for a parse tree produced
+            by <see cref="T:LGTemplateParser" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="VisitContext">
+      <MemberSignature Language="C#" Value="public Result VisitContext (LGTemplateParser.ContextContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitContext(LGTemplateParser/ContextContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILGTemplateParserVisitor`1.VisitContext(LGTemplateParser.ContextContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitContext (context As LGTemplateParser.ContextContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitContext : LGTemplateParser.ContextContext -&gt; 'Result" Usage="iLGTemplateParserVisitor.VisitContext context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LGTemplateParser+ContextContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:LGTemplateParser.context" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitErrorStructuredName">
+      <MemberSignature Language="C#" Value="public Result VisitErrorStructuredName (LGTemplateParser.ErrorStructuredNameContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitErrorStructuredName(LGTemplateParser/ErrorStructuredNameContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILGTemplateParserVisitor`1.VisitErrorStructuredName(LGTemplateParser.ErrorStructuredNameContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitErrorStructuredName (context As LGTemplateParser.ErrorStructuredNameContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitErrorStructuredName : LGTemplateParser.ErrorStructuredNameContext -&gt; 'Result" Usage="iLGTemplateParserVisitor.VisitErrorStructuredName context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LGTemplateParser+ErrorStructuredNameContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:LGTemplateParser.errorStructuredName" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitErrorStructureLine">
+      <MemberSignature Language="C#" Value="public Result VisitErrorStructureLine (LGTemplateParser.ErrorStructureLineContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitErrorStructureLine(LGTemplateParser/ErrorStructureLineContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILGTemplateParserVisitor`1.VisitErrorStructureLine(LGTemplateParser.ErrorStructureLineContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitErrorStructureLine (context As LGTemplateParser.ErrorStructureLineContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitErrorStructureLine : LGTemplateParser.ErrorStructureLineContext -&gt; 'Result" Usage="iLGTemplateParserVisitor.VisitErrorStructureLine context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LGTemplateParser+ErrorStructureLineContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:LGTemplateParser.errorStructureLine" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitErrorTemplateString">
+      <MemberSignature Language="C#" Value="public Result VisitErrorTemplateString (LGTemplateParser.ErrorTemplateStringContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitErrorTemplateString(LGTemplateParser/ErrorTemplateStringContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILGTemplateParserVisitor`1.VisitErrorTemplateString(LGTemplateParser.ErrorTemplateStringContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitErrorTemplateString (context As LGTemplateParser.ErrorTemplateStringContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitErrorTemplateString : LGTemplateParser.ErrorTemplateStringContext -&gt; 'Result" Usage="iLGTemplateParserVisitor.VisitErrorTemplateString context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LGTemplateParser+ErrorTemplateStringContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:LGTemplateParser.errorTemplateString" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitExpression">
+      <MemberSignature Language="C#" Value="public Result VisitExpression (LGTemplateParser.ExpressionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitExpression(LGTemplateParser/ExpressionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILGTemplateParserVisitor`1.VisitExpression(LGTemplateParser.ExpressionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitExpression (context As LGTemplateParser.ExpressionContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitExpression : LGTemplateParser.ExpressionContext -&gt; 'Result" Usage="iLGTemplateParserVisitor.VisitExpression context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LGTemplateParser+ExpressionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:LGTemplateParser.expression" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitExpressionInStructure">
+      <MemberSignature Language="C#" Value="public Result VisitExpressionInStructure (LGTemplateParser.ExpressionInStructureContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitExpressionInStructure(LGTemplateParser/ExpressionInStructureContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILGTemplateParserVisitor`1.VisitExpressionInStructure(LGTemplateParser.ExpressionInStructureContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitExpressionInStructure (context As LGTemplateParser.ExpressionInStructureContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitExpressionInStructure : LGTemplateParser.ExpressionInStructureContext -&gt; 'Result" Usage="iLGTemplateParserVisitor.VisitExpressionInStructure context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LGTemplateParser+ExpressionInStructureContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:LGTemplateParser.expressionInStructure" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitIfCondition">
+      <MemberSignature Language="C#" Value="public Result VisitIfCondition (LGTemplateParser.IfConditionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitIfCondition(LGTemplateParser/IfConditionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILGTemplateParserVisitor`1.VisitIfCondition(LGTemplateParser.IfConditionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitIfCondition (context As LGTemplateParser.IfConditionContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitIfCondition : LGTemplateParser.IfConditionContext -&gt; 'Result" Usage="iLGTemplateParserVisitor.VisitIfCondition context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LGTemplateParser+IfConditionContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:LGTemplateParser.ifCondition" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitIfConditionRule">
+      <MemberSignature Language="C#" Value="public Result VisitIfConditionRule (LGTemplateParser.IfConditionRuleContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitIfConditionRule(LGTemplateParser/IfConditionRuleContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILGTemplateParserVisitor`1.VisitIfConditionRule(LGTemplateParser.IfConditionRuleContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitIfConditionRule (context As LGTemplateParser.IfConditionRuleContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitIfConditionRule : LGTemplateParser.IfConditionRuleContext -&gt; 'Result" Usage="iLGTemplateParserVisitor.VisitIfConditionRule context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LGTemplateParser+IfConditionRuleContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:LGTemplateParser.ifConditionRule" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitIfElseBody">
+      <MemberSignature Language="C#" Value="public Result VisitIfElseBody (LGTemplateParser.IfElseBodyContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitIfElseBody(LGTemplateParser/IfElseBodyContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILGTemplateParserVisitor`1.VisitIfElseBody(LGTemplateParser.IfElseBodyContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitIfElseBody (context As LGTemplateParser.IfElseBodyContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitIfElseBody : LGTemplateParser.IfElseBodyContext -&gt; 'Result" Usage="iLGTemplateParserVisitor.VisitIfElseBody context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LGTemplateParser+IfElseBodyContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by the <c>ifElseBody</c>
+            labeled alternative in <see cref="M:LGTemplateParser.body" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitIfElseTemplateBody">
+      <MemberSignature Language="C#" Value="public Result VisitIfElseTemplateBody (LGTemplateParser.IfElseTemplateBodyContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitIfElseTemplateBody(LGTemplateParser/IfElseTemplateBodyContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILGTemplateParserVisitor`1.VisitIfElseTemplateBody(LGTemplateParser.IfElseTemplateBodyContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitIfElseTemplateBody (context As LGTemplateParser.IfElseTemplateBodyContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitIfElseTemplateBody : LGTemplateParser.IfElseTemplateBodyContext -&gt; 'Result" Usage="iLGTemplateParserVisitor.VisitIfElseTemplateBody context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LGTemplateParser+IfElseTemplateBodyContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:LGTemplateParser.ifElseTemplateBody" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitKeyValueStructureLine">
+      <MemberSignature Language="C#" Value="public Result VisitKeyValueStructureLine (LGTemplateParser.KeyValueStructureLineContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitKeyValueStructureLine(LGTemplateParser/KeyValueStructureLineContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILGTemplateParserVisitor`1.VisitKeyValueStructureLine(LGTemplateParser.KeyValueStructureLineContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitKeyValueStructureLine (context As LGTemplateParser.KeyValueStructureLineContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitKeyValueStructureLine : LGTemplateParser.KeyValueStructureLineContext -&gt; 'Result" Usage="iLGTemplateParserVisitor.VisitKeyValueStructureLine context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LGTemplateParser+KeyValueStructureLineContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:LGTemplateParser.keyValueStructureLine" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitKeyValueStructureValue">
+      <MemberSignature Language="C#" Value="public Result VisitKeyValueStructureValue (LGTemplateParser.KeyValueStructureValueContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitKeyValueStructureValue(LGTemplateParser/KeyValueStructureValueContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILGTemplateParserVisitor`1.VisitKeyValueStructureValue(LGTemplateParser.KeyValueStructureValueContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitKeyValueStructureValue (context As LGTemplateParser.KeyValueStructureValueContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitKeyValueStructureValue : LGTemplateParser.KeyValueStructureValueContext -&gt; 'Result" Usage="iLGTemplateParserVisitor.VisitKeyValueStructureValue context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LGTemplateParser+KeyValueStructureValueContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:LGTemplateParser.keyValueStructureValue" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNormalBody">
+      <MemberSignature Language="C#" Value="public Result VisitNormalBody (LGTemplateParser.NormalBodyContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitNormalBody(LGTemplateParser/NormalBodyContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILGTemplateParserVisitor`1.VisitNormalBody(LGTemplateParser.NormalBodyContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitNormalBody (context As LGTemplateParser.NormalBodyContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitNormalBody : LGTemplateParser.NormalBodyContext -&gt; 'Result" Usage="iLGTemplateParserVisitor.VisitNormalBody context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LGTemplateParser+NormalBodyContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by the <c>normalBody</c>
+            labeled alternative in <see cref="M:LGTemplateParser.body" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNormalTemplateBody">
+      <MemberSignature Language="C#" Value="public Result VisitNormalTemplateBody (LGTemplateParser.NormalTemplateBodyContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitNormalTemplateBody(LGTemplateParser/NormalTemplateBodyContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILGTemplateParserVisitor`1.VisitNormalTemplateBody(LGTemplateParser.NormalTemplateBodyContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitNormalTemplateBody (context As LGTemplateParser.NormalTemplateBodyContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitNormalTemplateBody : LGTemplateParser.NormalTemplateBodyContext -&gt; 'Result" Usage="iLGTemplateParserVisitor.VisitNormalTemplateBody context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LGTemplateParser+NormalTemplateBodyContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:LGTemplateParser.normalTemplateBody" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitNormalTemplateString">
+      <MemberSignature Language="C#" Value="public Result VisitNormalTemplateString (LGTemplateParser.NormalTemplateStringContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitNormalTemplateString(LGTemplateParser/NormalTemplateStringContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILGTemplateParserVisitor`1.VisitNormalTemplateString(LGTemplateParser.NormalTemplateStringContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitNormalTemplateString (context As LGTemplateParser.NormalTemplateStringContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitNormalTemplateString : LGTemplateParser.NormalTemplateStringContext -&gt; 'Result" Usage="iLGTemplateParserVisitor.VisitNormalTemplateString context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LGTemplateParser+NormalTemplateStringContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:LGTemplateParser.normalTemplateString" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitStructuredBody">
+      <MemberSignature Language="C#" Value="public Result VisitStructuredBody (LGTemplateParser.StructuredBodyContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitStructuredBody(LGTemplateParser/StructuredBodyContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILGTemplateParserVisitor`1.VisitStructuredBody(LGTemplateParser.StructuredBodyContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitStructuredBody (context As LGTemplateParser.StructuredBodyContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitStructuredBody : LGTemplateParser.StructuredBodyContext -&gt; 'Result" Usage="iLGTemplateParserVisitor.VisitStructuredBody context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LGTemplateParser+StructuredBodyContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by the <c>structuredBody</c>
+            labeled alternative in <see cref="M:LGTemplateParser.body" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitStructuredBodyContentLine">
+      <MemberSignature Language="C#" Value="public Result VisitStructuredBodyContentLine (LGTemplateParser.StructuredBodyContentLineContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitStructuredBodyContentLine(LGTemplateParser/StructuredBodyContentLineContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILGTemplateParserVisitor`1.VisitStructuredBodyContentLine(LGTemplateParser.StructuredBodyContentLineContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitStructuredBodyContentLine (context As LGTemplateParser.StructuredBodyContentLineContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitStructuredBodyContentLine : LGTemplateParser.StructuredBodyContentLineContext -&gt; 'Result" Usage="iLGTemplateParserVisitor.VisitStructuredBodyContentLine context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LGTemplateParser+StructuredBodyContentLineContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:LGTemplateParser.structuredBodyContentLine" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitStructuredBodyEndLine">
+      <MemberSignature Language="C#" Value="public Result VisitStructuredBodyEndLine (LGTemplateParser.StructuredBodyEndLineContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitStructuredBodyEndLine(LGTemplateParser/StructuredBodyEndLineContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILGTemplateParserVisitor`1.VisitStructuredBodyEndLine(LGTemplateParser.StructuredBodyEndLineContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitStructuredBodyEndLine (context As LGTemplateParser.StructuredBodyEndLineContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitStructuredBodyEndLine : LGTemplateParser.StructuredBodyEndLineContext -&gt; 'Result" Usage="iLGTemplateParserVisitor.VisitStructuredBodyEndLine context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LGTemplateParser+StructuredBodyEndLineContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:LGTemplateParser.structuredBodyEndLine" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitStructuredBodyNameLine">
+      <MemberSignature Language="C#" Value="public Result VisitStructuredBodyNameLine (LGTemplateParser.StructuredBodyNameLineContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitStructuredBodyNameLine(LGTemplateParser/StructuredBodyNameLineContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILGTemplateParserVisitor`1.VisitStructuredBodyNameLine(LGTemplateParser.StructuredBodyNameLineContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitStructuredBodyNameLine (context As LGTemplateParser.StructuredBodyNameLineContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitStructuredBodyNameLine : LGTemplateParser.StructuredBodyNameLineContext -&gt; 'Result" Usage="iLGTemplateParserVisitor.VisitStructuredBodyNameLine context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LGTemplateParser+StructuredBodyNameLineContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:LGTemplateParser.structuredBodyNameLine" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitStructuredTemplateBody">
+      <MemberSignature Language="C#" Value="public Result VisitStructuredTemplateBody (LGTemplateParser.StructuredTemplateBodyContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitStructuredTemplateBody(LGTemplateParser/StructuredTemplateBodyContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILGTemplateParserVisitor`1.VisitStructuredTemplateBody(LGTemplateParser.StructuredTemplateBodyContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitStructuredTemplateBody (context As LGTemplateParser.StructuredTemplateBodyContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitStructuredTemplateBody : LGTemplateParser.StructuredTemplateBodyContext -&gt; 'Result" Usage="iLGTemplateParserVisitor.VisitStructuredTemplateBody context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LGTemplateParser+StructuredTemplateBodyContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:LGTemplateParser.structuredTemplateBody" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitSwitchCaseBody">
+      <MemberSignature Language="C#" Value="public Result VisitSwitchCaseBody (LGTemplateParser.SwitchCaseBodyContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitSwitchCaseBody(LGTemplateParser/SwitchCaseBodyContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILGTemplateParserVisitor`1.VisitSwitchCaseBody(LGTemplateParser.SwitchCaseBodyContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitSwitchCaseBody (context As LGTemplateParser.SwitchCaseBodyContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitSwitchCaseBody : LGTemplateParser.SwitchCaseBodyContext -&gt; 'Result" Usage="iLGTemplateParserVisitor.VisitSwitchCaseBody context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LGTemplateParser+SwitchCaseBodyContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by the <c>switchCaseBody</c>
+            labeled alternative in <see cref="M:LGTemplateParser.body" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitSwitchCaseRule">
+      <MemberSignature Language="C#" Value="public Result VisitSwitchCaseRule (LGTemplateParser.SwitchCaseRuleContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitSwitchCaseRule(LGTemplateParser/SwitchCaseRuleContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILGTemplateParserVisitor`1.VisitSwitchCaseRule(LGTemplateParser.SwitchCaseRuleContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitSwitchCaseRule (context As LGTemplateParser.SwitchCaseRuleContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitSwitchCaseRule : LGTemplateParser.SwitchCaseRuleContext -&gt; 'Result" Usage="iLGTemplateParserVisitor.VisitSwitchCaseRule context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LGTemplateParser+SwitchCaseRuleContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:LGTemplateParser.switchCaseRule" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitSwitchCaseStat">
+      <MemberSignature Language="C#" Value="public Result VisitSwitchCaseStat (LGTemplateParser.SwitchCaseStatContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitSwitchCaseStat(LGTemplateParser/SwitchCaseStatContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILGTemplateParserVisitor`1.VisitSwitchCaseStat(LGTemplateParser.SwitchCaseStatContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitSwitchCaseStat (context As LGTemplateParser.SwitchCaseStatContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitSwitchCaseStat : LGTemplateParser.SwitchCaseStatContext -&gt; 'Result" Usage="iLGTemplateParserVisitor.VisitSwitchCaseStat context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LGTemplateParser+SwitchCaseStatContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:LGTemplateParser.switchCaseStat" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitSwitchCaseTemplateBody">
+      <MemberSignature Language="C#" Value="public Result VisitSwitchCaseTemplateBody (LGTemplateParser.SwitchCaseTemplateBodyContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitSwitchCaseTemplateBody(LGTemplateParser/SwitchCaseTemplateBodyContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILGTemplateParserVisitor`1.VisitSwitchCaseTemplateBody(LGTemplateParser.SwitchCaseTemplateBodyContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitSwitchCaseTemplateBody (context As LGTemplateParser.SwitchCaseTemplateBodyContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitSwitchCaseTemplateBody : LGTemplateParser.SwitchCaseTemplateBodyContext -&gt; 'Result" Usage="iLGTemplateParserVisitor.VisitSwitchCaseTemplateBody context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LGTemplateParser+SwitchCaseTemplateBodyContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:LGTemplateParser.switchCaseTemplateBody" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="VisitTemplateString">
+      <MemberSignature Language="C#" Value="public Result VisitTemplateString (LGTemplateParser.TemplateStringContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !Result VisitTemplateString(LGTemplateParser/TemplateStringContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:ILGTemplateParserVisitor`1.VisitTemplateString(LGTemplateParser.TemplateStringContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitTemplateString (context As LGTemplateParser.TemplateStringContext) As Result" />
+      <MemberSignature Language="F#" Value="abstract member VisitTemplateString : LGTemplateParser.TemplateStringContext -&gt; 'Result" Usage="iLGTemplateParserVisitor.VisitTemplateString context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.LanguageGeneration</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Result</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LGTemplateParser+TemplateStringContext">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Antlr4.Runtime.Misc.NotNull]</AttributeName>
+              <AttributeName Language="F#">[&lt;Antlr4.Runtime.Misc.NotNull&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The parse tree.</param>
+        <summary>
+            Visit a parse tree produced by <see cref="M:LGTemplateParser.templateString" />.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The visitor result.</return>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

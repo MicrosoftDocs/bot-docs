@@ -17,6 +17,7 @@
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
     <AssemblyVersion>4.10.3.0</AssemblyVersion>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -52,6 +53,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="recognizerOptions" Type="Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions" />
@@ -86,6 +88,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -129,6 +132,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -171,6 +175,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -210,6 +215,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -253,6 +259,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -287,6 +294,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -299,10 +307,10 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets the default HttpClient to be used when calling the LUIS API.
+            Gets the default <see cref="T:System.Net.Http.HttpClient" /> to use when calling the LUIS API.
             </summary>
         <value>
-            A <see cref="P:Microsoft.Bot.Builder.AI.Luis.LuisRecognizer.HttpClient" />.
+            The default HTTP client to use.
             </value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -324,6 +332,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;&gt;</ReturnType>
@@ -364,6 +373,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -396,6 +406,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -427,6 +438,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -455,6 +467,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -503,6 +516,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;</ReturnType>
@@ -521,6 +535,36 @@
       </Docs>
     </Member>
     <Member MemberName="RecognizeAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt; RecognizeAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.RecognizerResult&gt; RecognizeAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.LuisRecognizer.RecognizeAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RecognizeAsync (dialogContext As DialogContext, activity As Activity, cancellationToken As CancellationToken) As Task(Of RecognizerResult)" />
+      <MemberSignature Language="F#" Value="abstract member RecognizeAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;&#xA;override this.RecognizeAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;" Usage="luisRecognizer.RecognizeAsync (dialogContext, activity, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dialogContext">dialogcontext.</param>
+        <param name="activity">activity.</param>
+        <param name="cancellationToken">cancellationtoken.</param>
+        <summary>
+            Runs an utterance through a recognizer and returns a generic recognizer result.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> representing the result of the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizeAsync">
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt; RecognizeAsync (Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Builder.AI.Luis.LuisPredictionOptions predictionOptions, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.RecognizerResult&gt; RecognizeAsync(class Microsoft.Bot.Builder.ITurnContext turnContext, class Microsoft.Bot.Builder.AI.Luis.LuisPredictionOptions predictionOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.LuisRecognizer.RecognizeAsync(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.AI.Luis.LuisPredictionOptions,System.Threading.CancellationToken)" />
@@ -536,6 +580,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -578,6 +623,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;</ReturnType>
@@ -589,6 +635,39 @@
       </Parameters>
       <Docs>
         <param name="turnContext">Turn context.</param>
+        <param name="recognizerOptions">A <see cref="T:Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions" /> instance to be used by the call.
+            This parameter overrides the default <see cref="T:Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions" /> passed in the constructor.</param>
+        <param name="cancellationToken">Cancellation token.</param>
+        <summary>
+            Runs an utterance through a recognizer and returns a generic recognizer result.
+            </summary>
+        <returns>Analysis of utterance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizeAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt; RecognizeAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, Microsoft.Bot.Schema.Activity activity, Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions recognizerOptions, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.RecognizerResult&gt; RecognizeAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, class Microsoft.Bot.Schema.Activity activity, class Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions recognizerOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.LuisRecognizer.RecognizeAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Schema.Activity,Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RecognizeAsync (dialogContext As DialogContext, activity As Activity, recognizerOptions As LuisRecognizerOptions, cancellationToken As CancellationToken) As Task(Of RecognizerResult)" />
+      <MemberSignature Language="F#" Value="abstract member RecognizeAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Schema.Activity * Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;&#xA;override this.RecognizeAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Schema.Activity * Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;" Usage="luisRecognizer.RecognizeAsync (dialogContext, activity, recognizerOptions, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="recognizerOptions" Type="Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dialogContext">dialog context.</param>
+        <param name="activity">activity to recognize.</param>
         <param name="recognizerOptions">A <see cref="T:Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions" /> instance to be used by the call.
             This parameter overrides the default <see cref="T:Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions" /> passed in the constructor.</param>
         <param name="cancellationToken">Cancellation token.</param>
@@ -619,6 +698,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;</ReturnType>
@@ -631,6 +711,40 @@
       </Parameters>
       <Docs>
         <param name="turnContext">Context object containing information for a single turn of conversation with a user.</param>
+        <param name="telemetryProperties">Additional properties to be logged to telemetry with the LuisResult event.</param>
+        <param name="telemetryMetrics">Additional metrics to be logged to telemetry with the LuisResult event.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        <summary>
+            Return results of the analysis (Suggested actions and intents).
+            </summary>
+        <returns>The LUIS results of the analysis of the current message text in the current turn's context activity.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizeAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt; RecognizeAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, Microsoft.Bot.Schema.Activity activity, System.Collections.Generic.Dictionary&lt;string,string&gt; telemetryProperties, System.Collections.Generic.Dictionary&lt;string,double&gt; telemetryMetrics = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.RecognizerResult&gt; RecognizeAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, class Microsoft.Bot.Schema.Activity activity, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; telemetryProperties, class System.Collections.Generic.Dictionary`2&lt;string, float64&gt; telemetryMetrics, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.LuisRecognizer.RecognizeAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Schema.Activity,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Double},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RecognizeAsync (dialogContext As DialogContext, activity As Activity, telemetryProperties As Dictionary(Of String, String), Optional telemetryMetrics As Dictionary(Of String, Double) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of RecognizerResult)" />
+      <MemberSignature Language="F#" Value="abstract member RecognizeAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Schema.Activity * System.Collections.Generic.Dictionary&lt;string, string&gt; * System.Collections.Generic.Dictionary&lt;string, double&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;&#xA;override this.RecognizeAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Schema.Activity * System.Collections.Generic.Dictionary&lt;string, string&gt; * System.Collections.Generic.Dictionary&lt;string, double&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;" Usage="luisRecognizer.RecognizeAsync (dialogContext, activity, telemetryProperties, telemetryMetrics, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="telemetryProperties" Type="System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="telemetryMetrics" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Double&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dialogContext">Context object containing information for a single turn of conversation with a user.</param>
+        <param name="activity">activity to recognize.</param>
         <param name="telemetryProperties">Additional properties to be logged to telemetry with the LuisResult event.</param>
         <param name="telemetryMetrics">Additional metrics to be logged to telemetry with the LuisResult event.</param>
         <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
@@ -657,6 +771,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -703,6 +818,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;</ReturnType>
@@ -716,6 +832,43 @@
       </Parameters>
       <Docs>
         <param name="turnContext">Context object containing information for a single turn of conversation with a user.</param>
+        <param name="recognizerOptions">A <see cref="T:Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions" /> instance to be used by the call.
+            This parameter overrides the default <see cref="T:Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions" /> passed in the constructor.</param>
+        <param name="telemetryProperties">Additional properties to be logged to telemetry with the LuisResult event.</param>
+        <param name="telemetryMetrics">Additional metrics to be logged to telemetry with the LuisResult event.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        <summary>
+            Return results of the analysis (Suggested actions and intents).
+            </summary>
+        <returns>The LUIS results of the analysis of the current message text in the current turn's context activity.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizeAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt; RecognizeAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, Microsoft.Bot.Schema.Activity activity, Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions recognizerOptions, System.Collections.Generic.Dictionary&lt;string,string&gt; telemetryProperties, System.Collections.Generic.Dictionary&lt;string,double&gt; telemetryMetrics = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.RecognizerResult&gt; RecognizeAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, class Microsoft.Bot.Schema.Activity activity, class Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions recognizerOptions, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; telemetryProperties, class System.Collections.Generic.Dictionary`2&lt;string, float64&gt; telemetryMetrics, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.LuisRecognizer.RecognizeAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Schema.Activity,Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Double},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RecognizeAsync (dialogContext As DialogContext, activity As Activity, recognizerOptions As LuisRecognizerOptions, telemetryProperties As Dictionary(Of String, String), Optional telemetryMetrics As Dictionary(Of String, Double) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of RecognizerResult)" />
+      <MemberSignature Language="F#" Value="abstract member RecognizeAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Schema.Activity * Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions * System.Collections.Generic.Dictionary&lt;string, string&gt; * System.Collections.Generic.Dictionary&lt;string, double&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;&#xA;override this.RecognizeAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Schema.Activity * Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions * System.Collections.Generic.Dictionary&lt;string, string&gt; * System.Collections.Generic.Dictionary&lt;string, double&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;" Usage="luisRecognizer.RecognizeAsync (dialogContext, activity, recognizerOptions, telemetryProperties, telemetryMetrics, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="recognizerOptions" Type="Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions" />
+        <Parameter Name="telemetryProperties" Type="System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="telemetryMetrics" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Double&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dialogContext">Context object containing information for a single turn of conversation with a user.</param>
+        <param name="activity">activity to recognize.</param>
         <param name="recognizerOptions">A <see cref="T:Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions" /> instance to be used by the call.
             This parameter overrides the default <see cref="T:Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions" /> passed in the constructor.</param>
         <param name="telemetryProperties">Additional properties to be logged to telemetry with the LuisResult event.</param>
@@ -751,6 +904,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
@@ -778,6 +932,45 @@
       </Docs>
     </Member>
     <Member MemberName="RecognizeAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;T&gt; RecognizeAsync&lt;T&gt; (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken) where T : Microsoft.Bot.Builder.IRecognizerConvertnew();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;!!T&gt; RecognizeAsync&lt;.ctor (class Microsoft.Bot.Builder.IRecognizerConvert) T&gt;(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.LuisRecognizer.RecognizeAsync``1(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RecognizeAsync(Of T As {IRecognizerConvertNew}) (dialogContext As DialogContext, activity As Activity, cancellationToken As CancellationToken) As Task(Of T)" />
+      <MemberSignature Language="F#" Value="abstract member RecognizeAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T (requires 'T :&gt; Microsoft.Bot.Builder.IRecognizerConvert and 'T : (new : unit -&gt; 'T))&gt; (requires 'T :&gt; Microsoft.Bot.Builder.IRecognizerConvert and 'T : (new : unit -&gt; 'T))&#xA;override this.RecognizeAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T (requires 'T :&gt; Microsoft.Bot.Builder.IRecognizerConvert and 'T : (new : unit -&gt; 'T))&gt; (requires 'T :&gt; Microsoft.Bot.Builder.IRecognizerConvert and 'T : (new : unit -&gt; 'T))" Usage="luisRecognizer.RecognizeAsync (dialogContext, activity, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <InterfaceName>Microsoft.Bot.Builder.IRecognizerConvert</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">type of result.</typeparam>
+        <param name="dialogContext">dialogContext.</param>
+        <param name="activity">activity.</param>
+        <param name="cancellationToken">cancellationToken.</param>
+        <summary>
+            Runs an utterance through a recognizer and returns a strongly-typed recognizer result.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> representing the result of the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizeAsync&lt;T&gt;">
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;T&gt; RecognizeAsync&lt;T&gt; (Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Builder.AI.Luis.LuisPredictionOptions predictionOptions, System.Threading.CancellationToken cancellationToken) where T : Microsoft.Bot.Builder.IRecognizerConvertnew();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;!!T&gt; RecognizeAsync&lt;.ctor (class Microsoft.Bot.Builder.IRecognizerConvert) T&gt;(class Microsoft.Bot.Builder.ITurnContext turnContext, class Microsoft.Bot.Builder.AI.Luis.LuisPredictionOptions predictionOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.LuisRecognizer.RecognizeAsync``1(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.AI.Luis.LuisPredictionOptions,System.Threading.CancellationToken)" />
@@ -793,6 +986,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -844,6 +1038,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
@@ -875,6 +1070,48 @@
       </Docs>
     </Member>
     <Member MemberName="RecognizeAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;T&gt; RecognizeAsync&lt;T&gt; (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, Microsoft.Bot.Schema.Activity activity, Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions recognizerOptions, System.Threading.CancellationToken cancellationToken) where T : Microsoft.Bot.Builder.IRecognizerConvertnew();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;!!T&gt; RecognizeAsync&lt;.ctor (class Microsoft.Bot.Builder.IRecognizerConvert) T&gt;(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, class Microsoft.Bot.Schema.Activity activity, class Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions recognizerOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.LuisRecognizer.RecognizeAsync``1(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Schema.Activity,Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RecognizeAsync(Of T As {IRecognizerConvertNew}) (dialogContext As DialogContext, activity As Activity, recognizerOptions As LuisRecognizerOptions, cancellationToken As CancellationToken) As Task(Of T)" />
+      <MemberSignature Language="F#" Value="abstract member RecognizeAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Schema.Activity * Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T (requires 'T :&gt; Microsoft.Bot.Builder.IRecognizerConvert and 'T : (new : unit -&gt; 'T))&gt; (requires 'T :&gt; Microsoft.Bot.Builder.IRecognizerConvert and 'T : (new : unit -&gt; 'T))&#xA;override this.RecognizeAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Schema.Activity * Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T (requires 'T :&gt; Microsoft.Bot.Builder.IRecognizerConvert and 'T : (new : unit -&gt; 'T))&gt; (requires 'T :&gt; Microsoft.Bot.Builder.IRecognizerConvert and 'T : (new : unit -&gt; 'T))" Usage="luisRecognizer.RecognizeAsync (dialogContext, activity, recognizerOptions, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <InterfaceName>Microsoft.Bot.Builder.IRecognizerConvert</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="recognizerOptions" Type="Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The recognition result type.</typeparam>
+        <param name="dialogContext">dialog context.</param>
+        <param name="activity">activity to recognize.</param>
+        <param name="recognizerOptions">A <see cref="T:Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions" /> instance to be used by the call.
+            This parameter overrides the default <see cref="T:Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions" /> passed in the constructor.</param>
+        <param name="cancellationToken">Cancellation token.</param>
+        <summary>
+            Runs an utterance through a recognizer and returns a strongly-typed recognizer result.
+            </summary>
+        <returns>Analysis of utterance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizeAsync&lt;T&gt;">
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;T&gt; RecognizeAsync&lt;T&gt; (Microsoft.Bot.Builder.ITurnContext turnContext, System.Collections.Generic.Dictionary&lt;string,string&gt; telemetryProperties, System.Collections.Generic.Dictionary&lt;string,double&gt; telemetryMetrics = default, System.Threading.CancellationToken cancellationToken = default) where T : Microsoft.Bot.Builder.IRecognizerConvertnew();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;!!T&gt; RecognizeAsync&lt;.ctor (class Microsoft.Bot.Builder.IRecognizerConvert) T&gt;(class Microsoft.Bot.Builder.ITurnContext turnContext, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; telemetryProperties, class System.Collections.Generic.Dictionary`2&lt;string, float64&gt; telemetryMetrics, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.LuisRecognizer.RecognizeAsync``1(Microsoft.Bot.Builder.ITurnContext,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Double},System.Threading.CancellationToken)" />
@@ -894,6 +1131,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
@@ -926,6 +1164,49 @@
       </Docs>
     </Member>
     <Member MemberName="RecognizeAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;T&gt; RecognizeAsync&lt;T&gt; (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, Microsoft.Bot.Schema.Activity activity, System.Collections.Generic.Dictionary&lt;string,string&gt; telemetryProperties, System.Collections.Generic.Dictionary&lt;string,double&gt; telemetryMetrics = default, System.Threading.CancellationToken cancellationToken = default) where T : Microsoft.Bot.Builder.IRecognizerConvertnew();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;!!T&gt; RecognizeAsync&lt;.ctor (class Microsoft.Bot.Builder.IRecognizerConvert) T&gt;(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, class Microsoft.Bot.Schema.Activity activity, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; telemetryProperties, class System.Collections.Generic.Dictionary`2&lt;string, float64&gt; telemetryMetrics, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.LuisRecognizer.RecognizeAsync``1(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Schema.Activity,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Double},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RecognizeAsync(Of T As {IRecognizerConvertNew}) (dialogContext As DialogContext, activity As Activity, telemetryProperties As Dictionary(Of String, String), Optional telemetryMetrics As Dictionary(Of String, Double) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of T)" />
+      <MemberSignature Language="F#" Value="abstract member RecognizeAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Schema.Activity * System.Collections.Generic.Dictionary&lt;string, string&gt; * System.Collections.Generic.Dictionary&lt;string, double&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T (requires 'T :&gt; Microsoft.Bot.Builder.IRecognizerConvert and 'T : (new : unit -&gt; 'T))&gt; (requires 'T :&gt; Microsoft.Bot.Builder.IRecognizerConvert and 'T : (new : unit -&gt; 'T))&#xA;override this.RecognizeAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Schema.Activity * System.Collections.Generic.Dictionary&lt;string, string&gt; * System.Collections.Generic.Dictionary&lt;string, double&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T (requires 'T :&gt; Microsoft.Bot.Builder.IRecognizerConvert and 'T : (new : unit -&gt; 'T))&gt; (requires 'T :&gt; Microsoft.Bot.Builder.IRecognizerConvert and 'T : (new : unit -&gt; 'T))" Usage="luisRecognizer.RecognizeAsync (dialogContext, activity, telemetryProperties, telemetryMetrics, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <InterfaceName>Microsoft.Bot.Builder.IRecognizerConvert</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="telemetryProperties" Type="System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="telemetryMetrics" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Double&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The recognition result type.</typeparam>
+        <param name="dialogContext">Context object containing information for a single turn of conversation with a user.</param>
+        <param name="activity">activity to recognize.</param>
+        <param name="telemetryProperties">Additional properties to be logged to telemetry with the LuisResult event.</param>
+        <param name="telemetryMetrics">Additional metrics to be logged to telemetry with the LuisResult event.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        <summary>
+            Return results of the analysis (Suggested actions and intents).
+            </summary>
+        <returns>The LUIS results of the analysis of the current message text in the current turn's context activity.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizeAsync&lt;T&gt;">
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;T&gt; RecognizeAsync&lt;T&gt; (Microsoft.Bot.Builder.ITurnContext turnContext, Microsoft.Bot.Builder.AI.Luis.LuisPredictionOptions predictionOptions, System.Collections.Generic.Dictionary&lt;string,string&gt; telemetryProperties, System.Collections.Generic.Dictionary&lt;string,double&gt; telemetryMetrics = default, System.Threading.CancellationToken cancellationToken = default) where T : Microsoft.Bot.Builder.IRecognizerConvertnew();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;!!T&gt; RecognizeAsync&lt;.ctor (class Microsoft.Bot.Builder.IRecognizerConvert) T&gt;(class Microsoft.Bot.Builder.ITurnContext turnContext, class Microsoft.Bot.Builder.AI.Luis.LuisPredictionOptions predictionOptions, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; telemetryProperties, class System.Collections.Generic.Dictionary`2&lt;string, float64&gt; telemetryMetrics, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.LuisRecognizer.RecognizeAsync``1(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Builder.AI.Luis.LuisPredictionOptions,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Double},System.Threading.CancellationToken)" />
@@ -941,6 +1222,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -996,6 +1278,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
@@ -1030,6 +1313,52 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="RecognizeAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;T&gt; RecognizeAsync&lt;T&gt; (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, Microsoft.Bot.Schema.Activity activity, Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions recognizerOptions, System.Collections.Generic.Dictionary&lt;string,string&gt; telemetryProperties, System.Collections.Generic.Dictionary&lt;string,double&gt; telemetryMetrics = default, System.Threading.CancellationToken cancellationToken = default) where T : Microsoft.Bot.Builder.IRecognizerConvertnew();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;!!T&gt; RecognizeAsync&lt;.ctor (class Microsoft.Bot.Builder.IRecognizerConvert) T&gt;(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, class Microsoft.Bot.Schema.Activity activity, class Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions recognizerOptions, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; telemetryProperties, class System.Collections.Generic.Dictionary`2&lt;string, float64&gt; telemetryMetrics, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.AI.Luis.LuisRecognizer.RecognizeAsync``1(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Schema.Activity,Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Double},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RecognizeAsync(Of T As {IRecognizerConvertNew}) (dialogContext As DialogContext, activity As Activity, recognizerOptions As LuisRecognizerOptions, telemetryProperties As Dictionary(Of String, String), Optional telemetryMetrics As Dictionary(Of String, Double) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of T)" />
+      <MemberSignature Language="F#" Value="abstract member RecognizeAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Schema.Activity * Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions * System.Collections.Generic.Dictionary&lt;string, string&gt; * System.Collections.Generic.Dictionary&lt;string, double&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T (requires 'T :&gt; Microsoft.Bot.Builder.IRecognizerConvert and 'T : (new : unit -&gt; 'T))&gt; (requires 'T :&gt; Microsoft.Bot.Builder.IRecognizerConvert and 'T : (new : unit -&gt; 'T))&#xA;override this.RecognizeAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Schema.Activity * Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions * System.Collections.Generic.Dictionary&lt;string, string&gt; * System.Collections.Generic.Dictionary&lt;string, double&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T (requires 'T :&gt; Microsoft.Bot.Builder.IRecognizerConvert and 'T : (new : unit -&gt; 'T))&gt; (requires 'T :&gt; Microsoft.Bot.Builder.IRecognizerConvert and 'T : (new : unit -&gt; 'T))" Usage="luisRecognizer.RecognizeAsync (dialogContext, activity, recognizerOptions, telemetryProperties, telemetryMetrics, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.AI.Luis</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <InterfaceName>Microsoft.Bot.Builder.IRecognizerConvert</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="recognizerOptions" Type="Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions" />
+        <Parameter Name="telemetryProperties" Type="System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="telemetryMetrics" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Double&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The recognition result type.</typeparam>
+        <param name="dialogContext">Context object containing information for a single turn of conversation with a user.</param>
+        <param name="activity">activity to recognize.</param>
+        <param name="recognizerOptions">A <see cref="T:Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions" /> instance to be used by the call.
+            This parameter overrides the default <see cref="T:Microsoft.Bot.Builder.AI.Luis.LuisRecognizerOptions" /> passed in the constructor.</param>
+        <param name="telemetryProperties">Additional properties to be logged to telemetry with the LuisResult event.</param>
+        <param name="telemetryMetrics">Additional metrics to be logged to telemetry with the LuisResult event.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        <summary>
+            Return results of the analysis (Suggested actions and intents).
+            </summary>
+        <returns>The LUIS results of the analysis of the current message text in the current turn's context activity.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="TelemetryClient">
       <MemberSignature Language="C#" Value="public Microsoft.Bot.Builder.IBotTelemetryClient TelemetryClient { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Bot.Builder.IBotTelemetryClient TelemetryClient" />
@@ -1050,6 +1379,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1087,6 +1417,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

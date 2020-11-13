@@ -8,7 +8,6 @@ manager: kamrani
 ms.topic: conceptual
 ms.service: bot-service
 ms.date: 08/21/2020
-monikerRange: 'azure-bot-service-4.0'
 ---
 
 # What's new August 2020
@@ -81,13 +80,13 @@ Developers using the Microsoft Bot Framework have many [resources](bot-service-r
 
 - [Orchestrator (preview)](https://github.com/microsoft/BotBuilder-Samples/blob/main/experimental/orchestrator/README.md): a transformer-based solution that runs locally with your bot to dispatch across one or more Bot Builder skills, LUIS applications, or QnA Maker knowledge bases.
 - [Bot Builder Azure Queues (C# preview)](https://www.nuget.org/packages/Microsoft.Bot.Builder.Azure.Queues): better integration with Azure Queues and the _continue conversation later_ dialog.
-- [Bot Builder Azure Blobs (C# preview)](https://www.nuget.org/packages/Microsoft.Bot.Builder.Azure.Blobs): new implementations of Azure Blob storage. This library is a replacement for the older Azure Blog storage implementation.
+- [Bot Builder Azure Blobs (C# preview)](https://www.nuget.org/packages/Microsoft.Bot.Builder.Azure.Blobs): new implementations of Azure Blob storage. This library is a replacement for the older Azure Blob storage implementation.
 
 ## Other improvements
 
 - Continued improvements to Microsoft Teams API support.
 - Bot Framework CLI tools added `lg` as a core plugin and included other overall tool improvements.
-- Updated the READMEs in the samples and added new Teams Typescript samples.
+- Updated the README files in the samples and added new Teams Typescript samples.
 - Composer improved support for skills and improved integration for Cognitive Services.
 - Web Chat added many accessibility improvements.
 - Emulator added bug fixes and updates.

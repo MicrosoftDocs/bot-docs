@@ -1,42 +1,103 @@
 <Type Name="EntityRecognizer" FullName="Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizer">
-  <TypeSignature Language="C#" Value="public class EntityRecognizer" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EntityRecognizer extends System.Object" />
+  <TypeSignature Language="C#" Value="public class EntityRecognizer : Microsoft.Bot.Builder.Dialogs.Recognizer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EntityRecognizer extends Microsoft.Bot.Builder.Dialogs.Recognizer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizer" />
-  <TypeSignature Language="VB.NET" Value="Public Class EntityRecognizer" />
-  <TypeSignature Language="F#" Value="type EntityRecognizer = class" />
+  <TypeSignature Language="VB.NET" Value="Public Class EntityRecognizer&#xA;Inherits Recognizer" />
+  <TypeSignature Language="F#" Value="type EntityRecognizer = class&#xA;    inherit Recognizer" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
     <AssemblyVersion>4.9.2.0</AssemblyVersion>
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
     <AssemblyVersion>4.10.3.0</AssemblyVersion>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>System.Object</BaseTypeName>
+    <BaseTypeName>Microsoft.Bot.Builder.Dialogs.Recognizer</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Entity recognizers base class.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public EntityRecognizer ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizer.#ctor" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C#" Value="public EntityRecognizer (string callerPath = &quot;&quot;, int callerLine = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string callerPath, int32 callerLine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizer.#ctor(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional callerPath As String = &quot;&quot;, Optional callerLine As Integer = 0)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizer : string * int -&gt; Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizer" Usage="new Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizer (callerPath, callerLine)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
-        <AssemblyVersion>4.9.2.0</AssemblyVersion>
-        <AssemblyVersion>4.9.3.0</AssemblyVersion>
-        <AssemblyVersion>4.10.0.0</AssemblyVersion>
-        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Parameters />
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonConstructor]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConstructor&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="callerPath" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerFilePath]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerFilePath&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="callerLine" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerLineNumber]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerLineNumber&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
       <Docs>
-        <summary>To be added.</summary>
+        <param name="callerPath">Optional, source file full path.</param>
+        <param name="callerLine">Optional, line number in source file.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizer" /> class.
+            </summary>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognizeAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt; RecognizeAsync (Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, Microsoft.Bot.Schema.Activity activity, System.Threading.CancellationToken cancellationToken = default, System.Collections.Generic.Dictionary&lt;string,string&gt; telemetryProperties = default, System.Collections.Generic.Dictionary&lt;string,double&gt; telemetryMetrics = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Bot.Builder.RecognizerResult&gt; RecognizeAsync(class Microsoft.Bot.Builder.Dialogs.DialogContext dialogContext, class Microsoft.Bot.Schema.Activity activity, valuetype System.Threading.CancellationToken cancellationToken, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; telemetryProperties, class System.Collections.Generic.Dictionary`2&lt;string, float64&gt; telemetryMetrics) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Recognizers.EntityRecognizer.RecognizeAsync(Microsoft.Bot.Builder.Dialogs.DialogContext,Microsoft.Bot.Schema.Activity,System.Threading.CancellationToken,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function RecognizeAsync (dialogContext As DialogContext, activity As Activity, Optional cancellationToken As CancellationToken = Nothing, Optional telemetryProperties As Dictionary(Of String, String) = Nothing, Optional telemetryMetrics As Dictionary(Of String, Double) = Nothing) As Task(Of RecognizerResult)" />
+      <MemberSignature Language="F#" Value="override this.RecognizeAsync : Microsoft.Bot.Builder.Dialogs.DialogContext * Microsoft.Bot.Schema.Activity * System.Threading.CancellationToken * System.Collections.Generic.Dictionary&lt;string, string&gt; * System.Collections.Generic.Dictionary&lt;string, double&gt; -&gt; System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;" Usage="entityRecognizer.RecognizeAsync (dialogContext, activity, cancellationToken, telemetryProperties, telemetryMetrics)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogContext" Type="Microsoft.Bot.Builder.Dialogs.DialogContext" />
+        <Parameter Name="activity" Type="Microsoft.Bot.Schema.Activity" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="telemetryProperties" Type="System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="telemetryMetrics" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Double&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="dialogContext">To be added.</param>
+        <param name="activity">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <param name="telemetryProperties">To be added.</param>
+        <param name="telemetryMetrics">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="RecognizeEntitiesAsync">
@@ -52,6 +113,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Entity&gt;&gt;</ReturnType>
@@ -62,11 +124,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="dialogContext">To be added.</param>
-        <param name="entities">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dialogContext">The <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogContext" /> for the current turn of conversation.</param>
+        <param name="entities">The enumerated <see cref="T:Microsoft.Bot.Schema.Entity" /> to be recognized.</param>
+        <param name="cancellationToken">Optional, the <see cref="T:System.Threading.CancellationToken" /> from the task.</param>
+        <summary>
+            Recognizes entities from an <see cref="T:Microsoft.Bot.Schema.Entity" /> list.
+            </summary>
+        <returns>Recognized <see cref="T:Microsoft.Bot.Schema.Entity" /> list.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,6 +147,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Entity&gt;&gt;</ReturnType>
@@ -94,12 +159,14 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="dialogContext">To be added.</param>
-        <param name="activity">To be added.</param>
-        <param name="entities">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dialogContext">The <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogContext" /> for the current turn of conversation.</param>
+        <param name="activity">The dialog's <see cref="T:Microsoft.Bot.Schema.Activity" />.</param>
+        <param name="entities">The enumerated <see cref="T:Microsoft.Bot.Schema.Entity" /> to be recognized.</param>
+        <param name="cancellationToken">Optional, the <see cref="T:System.Threading.CancellationToken" /> from the task.</param>
+        <summary>
+            Recognizes entities from an <see cref="T:Microsoft.Bot.Schema.Entity" /> list.
+            </summary>
+        <returns>Recognized <see cref="T:Microsoft.Bot.Schema.Entity" /> list.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,6 +183,7 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Schema.Entity&gt;&gt;</ReturnType>
@@ -128,13 +196,15 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="dialogContext">To be added.</param>
-        <param name="text">To be added.</param>
-        <param name="locale">To be added.</param>
-        <param name="entities">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dialogContext">The <see cref="T:Microsoft.Bot.Builder.Dialogs.DialogContext" /> for the current turn of conversation.</param>
+        <param name="text">Text to recognize.</param>
+        <param name="locale">Locale to use.</param>
+        <param name="entities">The enumerated <see cref="T:Microsoft.Bot.Schema.Entity" /> to be recognized.</param>
+        <param name="cancellationToken">Optional, the <see cref="T:System.Threading.CancellationToken" /> from the task.</param>
+        <summary>
+            Recognizes entities from an <see cref="T:Microsoft.Bot.Schema.Entity" /> list.
+            </summary>
+        <returns>Recognized <see cref="T:Microsoft.Bot.Schema.Entity" /> list.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

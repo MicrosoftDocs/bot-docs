@@ -10,10 +10,13 @@
     <AssemblyVersion>4.9.3.0</AssemblyVersion>
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
     <AssemblyVersion>4.10.3.0</AssemblyVersion>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Defines Component Memory Scopes interface for enumerating memory scopes.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,14 +33,17 @@
         <AssemblyVersion>4.9.3.0</AssemblyVersion>
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Bot.Builder.Dialogs.Memory.Scopes.MemoryScope&gt;</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Gets the memory scopes.
+            </summary>
+        <returns>A <see cref="T:System.Collections.Generic.IEnumerable`1" /> with the memory scopes.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

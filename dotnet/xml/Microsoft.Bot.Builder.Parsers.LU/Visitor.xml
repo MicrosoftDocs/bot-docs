@@ -1,0 +1,45 @@
+<Type Name="Visitor" FullName="Microsoft.Bot.Builder.Parsers.LU.Visitor">
+  <TypeSignature Language="C#" Value="public static class Visitor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Visitor extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Bot.Builder.Parsers.LU.Visitor" />
+  <TypeSignature Language="VB.NET" Value="Public Class Visitor" />
+  <TypeSignature Language="F#" Value="type Visitor = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="VisitNormalIntentStringContext">
+      <MemberSignature Language="C#" Value="public static Microsoft.Bot.Builder.Parsers.LU.UtteranceAndEntitiesMap VisitNormalIntentStringContext (LUFileParser.NormalIntentStringContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Bot.Builder.Parsers.LU.UtteranceAndEntitiesMap VisitNormalIntentStringContext(LUFileParser/NormalIntentStringContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Parsers.LU.Visitor.VisitNormalIntentStringContext(LUFileParser.NormalIntentStringContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function VisitNormalIntentStringContext (context As LUFileParser.NormalIntentStringContext) As UtteranceAndEntitiesMap" />
+      <MemberSignature Language="F#" Value="static member VisitNormalIntentStringContext : LUFileParser.NormalIntentStringContext -&gt; Microsoft.Bot.Builder.Parsers.LU.UtteranceAndEntitiesMap" Usage="Microsoft.Bot.Builder.Parsers.LU.Visitor.VisitNormalIntentStringContext context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Bot.Builder.Parsers.LU.UtteranceAndEntitiesMap</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="LUFileParser+NormalIntentStringContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

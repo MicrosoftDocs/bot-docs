@@ -1,0 +1,317 @@
+<Type Name="LUFileParser+NormalIntentBodyContext" FullName="LUFileParser+NormalIntentBodyContext">
+  <TypeSignature Language="C#" Value="public class LUFileParser.NormalIntentBodyContext : Antlr4.Runtime.ParserRuleContext" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit LUFileParser/NormalIntentBodyContext extends Antlr4.Runtime.ParserRuleContext" />
+  <TypeSignature Language="DocId" Value="T:LUFileParser.NormalIntentBodyContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class LUFileParser.NormalIntentBodyContext&#xA;Inherits ParserRuleContext" />
+  <TypeSignature Language="F#" Value="type LUFileParser.NormalIntentBodyContext = class&#xA;    inherit ParserRuleContext" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Antlr4.Runtime.ParserRuleContext</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NormalIntentBodyContext (Antlr4.Runtime.ParserRuleContext parent, int invokingState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Antlr4.Runtime.ParserRuleContext parent, int32 invokingState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:LUFileParser.NormalIntentBodyContext.#ctor(Antlr4.Runtime.ParserRuleContext,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (parent As ParserRuleContext, invokingState As Integer)" />
+      <MemberSignature Language="F#" Value="new LUFileParser.NormalIntentBodyContext : Antlr4.Runtime.ParserRuleContext * int -&gt; LUFileParser.NormalIntentBodyContext" Usage="new LUFileParser.NormalIntentBodyContext (parent, invokingState)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parent" Type="Antlr4.Runtime.ParserRuleContext" />
+        <Parameter Name="invokingState" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="parent">To be added.</param>
+        <param name="invokingState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Accept&lt;TResult&gt;">
+      <MemberSignature Language="C#" Value="public override TResult Accept&lt;TResult&gt; (Antlr4.Runtime.Tree.IParseTreeVisitor&lt;TResult&gt; visitor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance !!TResult Accept&lt;TResult&gt;(class Antlr4.Runtime.Tree.IParseTreeVisitor`1&lt;!!TResult&gt; visitor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:LUFileParser.NormalIntentBodyContext.Accept``1(Antlr4.Runtime.Tree.IParseTreeVisitor{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Accept(Of TResult) (visitor As IParseTreeVisitor(Of TResult)) As TResult" />
+      <MemberSignature Language="F#" Value="override this.Accept : Antlr4.Runtime.Tree.IParseTreeVisitor&lt;'Result&gt; -&gt; 'Result" Usage="normalIntentBodyContext.Accept visitor" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TResult</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="visitor" Type="Antlr4.Runtime.Tree.IParseTreeVisitor&lt;TResult&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="visitor">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterRule">
+      <MemberSignature Language="C#" Value="public override void EnterRule (Antlr4.Runtime.Tree.IParseTreeListener listener);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EnterRule(class Antlr4.Runtime.Tree.IParseTreeListener listener) cil managed" />
+      <MemberSignature Language="DocId" Value="M:LUFileParser.NormalIntentBodyContext.EnterRule(Antlr4.Runtime.Tree.IParseTreeListener)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub EnterRule (listener As IParseTreeListener)" />
+      <MemberSignature Language="F#" Value="override this.EnterRule : Antlr4.Runtime.Tree.IParseTreeListener -&gt; unit" Usage="normalIntentBodyContext.EnterRule listener" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="listener" Type="Antlr4.Runtime.Tree.IParseTreeListener" />
+      </Parameters>
+      <Docs>
+        <param name="listener">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="errorString">
+      <MemberSignature Language="C#" Value="public LUFileParser.ErrorStringContext[] errorString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance LUFileParser/ErrorStringContext[] errorString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:LUFileParser.NormalIntentBodyContext.errorString" />
+      <MemberSignature Language="VB.NET" Value="Public Function errorString () As LUFileParser.ErrorStringContext()" />
+      <MemberSignature Language="F#" Value="member this.errorString : unit -&gt; LUFileParser.ErrorStringContext[]" Usage="normalIntentBodyContext.errorString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>LUFileParser+ErrorStringContext[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="errorString">
+      <MemberSignature Language="C#" Value="public LUFileParser.ErrorStringContext errorString (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance LUFileParser/ErrorStringContext errorString(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:LUFileParser.NormalIntentBodyContext.errorString(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function errorString (i As Integer) As LUFileParser.ErrorStringContext" />
+      <MemberSignature Language="F#" Value="member this.errorString : int -&gt; LUFileParser.ErrorStringContext" Usage="normalIntentBodyContext.errorString i" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>LUFileParser+ErrorStringContext</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitRule">
+      <MemberSignature Language="C#" Value="public override void ExitRule (Antlr4.Runtime.Tree.IParseTreeListener listener);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ExitRule(class Antlr4.Runtime.Tree.IParseTreeListener listener) cil managed" />
+      <MemberSignature Language="DocId" Value="M:LUFileParser.NormalIntentBodyContext.ExitRule(Antlr4.Runtime.Tree.IParseTreeListener)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ExitRule (listener As IParseTreeListener)" />
+      <MemberSignature Language="F#" Value="override this.ExitRule : Antlr4.Runtime.Tree.IParseTreeListener -&gt; unit" Usage="normalIntentBodyContext.ExitRule listener" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="listener" Type="Antlr4.Runtime.Tree.IParseTreeListener" />
+      </Parameters>
+      <Docs>
+        <param name="listener">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="newline">
+      <MemberSignature Language="C#" Value="public LUFileParser.NewlineContext[] newline ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance LUFileParser/NewlineContext[] newline() cil managed" />
+      <MemberSignature Language="DocId" Value="M:LUFileParser.NormalIntentBodyContext.newline" />
+      <MemberSignature Language="VB.NET" Value="Public Function newline () As LUFileParser.NewlineContext()" />
+      <MemberSignature Language="F#" Value="member this.newline : unit -&gt; LUFileParser.NewlineContext[]" Usage="normalIntentBodyContext.newline " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>LUFileParser+NewlineContext[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="newline">
+      <MemberSignature Language="C#" Value="public LUFileParser.NewlineContext newline (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance LUFileParser/NewlineContext newline(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:LUFileParser.NormalIntentBodyContext.newline(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function newline (i As Integer) As LUFileParser.NewlineContext" />
+      <MemberSignature Language="F#" Value="member this.newline : int -&gt; LUFileParser.NewlineContext" Usage="normalIntentBodyContext.newline i" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>LUFileParser+NewlineContext</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="normalIntentString">
+      <MemberSignature Language="C#" Value="public LUFileParser.NormalIntentStringContext[] normalIntentString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance LUFileParser/NormalIntentStringContext[] normalIntentString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:LUFileParser.NormalIntentBodyContext.normalIntentString" />
+      <MemberSignature Language="VB.NET" Value="Public Function normalIntentString () As LUFileParser.NormalIntentStringContext()" />
+      <MemberSignature Language="F#" Value="member this.normalIntentString : unit -&gt; LUFileParser.NormalIntentStringContext[]" Usage="normalIntentBodyContext.normalIntentString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>LUFileParser+NormalIntentStringContext[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="normalIntentString">
+      <MemberSignature Language="C#" Value="public LUFileParser.NormalIntentStringContext normalIntentString (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance LUFileParser/NormalIntentStringContext normalIntentString(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:LUFileParser.NormalIntentBodyContext.normalIntentString(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function normalIntentString (i As Integer) As LUFileParser.NormalIntentStringContext" />
+      <MemberSignature Language="F#" Value="member this.normalIntentString : int -&gt; LUFileParser.NormalIntentStringContext" Usage="normalIntentBodyContext.normalIntentString i" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>LUFileParser+NormalIntentStringContext</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RuleIndex">
+      <MemberSignature Language="C#" Value="public override int RuleIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RuleIndex" />
+      <MemberSignature Language="DocId" Value="P:LUFileParser.NormalIntentBodyContext.RuleIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RuleIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.RuleIndex : int" Usage="LUFileParser.NormalIntentBodyContext.RuleIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WS">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode[] WS ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode[] WS() cil managed" />
+      <MemberSignature Language="DocId" Value="M:LUFileParser.NormalIntentBodyContext.WS" />
+      <MemberSignature Language="VB.NET" Value="Public Function WS () As ITerminalNode()" />
+      <MemberSignature Language="F#" Value="member this.WS : unit -&gt; Antlr4.Runtime.Tree.ITerminalNode[]" Usage="normalIntentBodyContext.WS " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WS">
+      <MemberSignature Language="C#" Value="public Antlr4.Runtime.Tree.ITerminalNode WS (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Antlr4.Runtime.Tree.ITerminalNode WS(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:LUFileParser.NormalIntentBodyContext.WS(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function WS (i As Integer) As ITerminalNode" />
+      <MemberSignature Language="F#" Value="member this.WS : int -&gt; Antlr4.Runtime.Tree.ITerminalNode" Usage="normalIntentBodyContext.WS i" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
