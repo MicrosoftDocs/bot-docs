@@ -10,7 +10,7 @@ ms.date: 09/15/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Event-driven conversations using an activity handle
+# Event-driven conversations using an activity handler
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
