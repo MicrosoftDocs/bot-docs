@@ -318,8 +318,8 @@ The following is the general structure of a cross-train configuration file.
         "triggers": {
             // Key is name of intent within the .lu file (in this case RootDialog.lu)
             // Value is the path to the child dialog's .lu file.
-            "<intent-name-1>": "<path-of-associated-child-dialog's-language-file>",
-            "<intent-name-2>": "<path-of-associated-child-dialog's-language-file>"
+            "<intent-name-1>": "<file-name-with-language-of-associated-child-dialog>",
+            "<intent-name-2>": "<file-name-with-language-of-associated-child-dialog>"
             // And so on.
         },
     "<path-of-additional-language-file-to-train>": {
@@ -327,8 +327,8 @@ The following is the general structure of a cross-train configuration file.
         "rootDialog": <true-or-false>,
         // list of triggers within that dialog
         "triggers": {
-            "<intent-name-1>": "<path-of-associated-child-dialog's-language-file>",
-            "<intent-name-2>": "<path-of-associated-child-dialog's-language-file>"
+            "<intent-name-1>": "<file-name-with-language-of-associated-child-dialog>",
+            "<intent-name-2>": "<file-name-with-language-of-associated-child-dialog>"
         }
         // And so on.
     }
@@ -352,22 +352,22 @@ Would have a config file in the **Dialogs** directory that might look similar to
     "./rootDialog/rootDialog.lu": {
         "rootDialog": true,
         "triggers": {
-            "DialogA_intent": "./DialogA/DialogA.lu",
-            "DialogB_intent": "./DialogB/DialogB.lu"
+            "DialogA_intent": ".DialogA.lu",
+            "DialogB_intent": "DialogB.lu"
         }
     },
     "./DialogA/DialogA.lu": {
         "triggers": {
-            "DialogA1_intent": "./DialogA/DialogA1/DialogA1.lu",
-            "DialogA2_intent": "./DialogA/DialogA2/DialogA2.lu",
+            "DialogA1_intent": "DialogA1.lu",
+            "DialogA2_intent": "DialogA2.lu",
 			"Intent-A-1": "",
 			"Intent-A-2": ""
         }
     },
     "./DialogA/DialogA1/DialogA1.lu": {
         "triggers": {
-            "DialogA1.1_intent": "./DialogA/DialogA1/DialogA1.1.lu",
-            "DialogA1.2_intent": "./DialogA/DialogA1/DialogA1.2.lu",
+            "DialogA1.1_intent": "DialogA1.1.lu",
+            "DialogA1.2_intent": "DialogA1.2.lu",
         }
     },
     "./DialogB/DialogB.lu": {
@@ -380,6 +380,38 @@ Would have a config file in the **Dialogs** directory that might look similar to
 ```
 
 In the above JSON file, when the value portion of the key / value pair is blank, it refers to an intent that does not result in a new container adaptive dialog, but instead triggers an action associated with the specified `OnIntent` trigger.
+
+If language is included, the example config should be like this:
+```json
+{
+    "rootDialog.en-us": {
+        "rootDialog": true,
+        "triggers": {
+            "DialogA_intent": "DialogA.en-us",
+            "DialogB_intent": "DialogB.en-us"
+        }
+    },
+    "DialogA.en-us": {
+        "triggers": {
+            "DialogA1_intent": "DialogA1.en-us",
+            "DialogA2_intent": "DialogA2.en-us",
+			"Intent-A-1": "",
+			"Intent-A-2": ""
+        }
+    },
+    "DialogA1.en-us": {
+        "triggers": {
+            "DialogA1.1_intent": "DialogA1.1.en-us",
+            "DialogA1.2_intent": "DialogA1.2.en-us",
+        }
+    },
+    "DialogB.en-us": {
+        "triggers": {
+            "DialogB1_intent": "DialogB1.en-us",
+        }
+    }
+}
+```
 
 > [!TIP]
 >

@@ -118,10 +118,10 @@ To cross-train the **todo bot with LUIS and QnA Maker** sample:
 1. Run the `luis:cross-train` command.
 
    ```cmd
-      bf luis:cross-train -i dialogs -o generated --config dialogs\DialogLuHierarchy.config.json
+      bf luis:cross-train -i dialogs -o generated --config dialogs\DialogLuHierarchy.config.json --force
    ```
 
-Once finished you will have cross-trained versions of the five `.lu` files and six `.qna` files. When running the build commands in the following sections, point to the generated directory for the input files.
+Once finished you will have cross-trained versions of the five `.lu` files and six `.qna` files. Here --force is used to force overwrite the existing `.lu` and `.qna` files if they already exist, otherwise for lu file like `AddToDoDialog.lu`, the cross-trained content will write to file with name `AddToDoDialog(1).lu`. When running the build commands in the following sections, point to the generated directory for the input files.
 
 > [!IMPORTANT]
 >
@@ -218,6 +218,10 @@ To create the LUIS applications for the **todo bot with LUIS and QnA Maker** sam
       bf luis:build --luConfig luconfig.json
    ```
 
+> [!TIP]
+>
+> If you haven't done so already, you will need to [Migrate to an Azure resource authoring key][luis-migration-authoring]. If you don't, will will not see the LUIS Applications in [LUIS][luis] created using the `luis:build` command.
+
 Once finished you will have a LUIS application for each of the five `.lu` files in [LUIS](https://www.luis.ai/conversations/applications):
 
 ![LUIS My apps list](./media/adaptive-dialogs/luis-apps-list.png)
@@ -235,10 +239,6 @@ The `qnamaker:build` command combines all the following actions into a single co
 1. It trains your QnA Maker KB then publishes it to the production endpoint.
 
 For a detailed explanation on how to use the `qnamaker:build` command, see [Deploy QnA Maker knowledge base using the Bot Framework qnamaker CLI commands][qnamaker-build].
-
-> [!TIP]
->
-> If you haven't done so already, you will need to [Migrate to an Azure resource authoring key][luis-migration-authoring]. If you don't, will will not see the LUIS Applications in [LUIS][luis] created using the `luis:build` command.
 
 ### How to use the qnamaker:build command
 
@@ -302,7 +302,7 @@ To create the QnA Maker knowledge base for the **todo bot with LUIS and QnA Make
     {
         "in": "generated",
         "out": "output",
-        "botName":"<todo-bot-with-LUIS-and-QnA-Maker>",
+        "botName":"<todo bot with LUIS and QnA Maker>",
         "subscriptionKey":"<your-32-digit-subscription-key>",
         "region": "<your-region-default-is-westus>"
     }
@@ -362,6 +362,21 @@ The configuration file is named **appsettings.json**. The following shows the co
 }
 ```
 
+<!--
+NOTE:
+
+There is a PR that will change this sample: https://github.com/microsoft/BotBuilder-Samples/pull/2899. After the change, QnA Maker will have the same structure as the luis does in appsettings.json, once completed, update this article by adding these additional QnA Maker recognizer items to align with the changes in this PR:
+
+        "AddToDoDialog_en_us_qna": "",
+        "ChitChat_en_us_qna": "",
+        "DeleteToDoDialog_en_us_qna": "",
+        "GetUserProfileDialog_en_us_qna": "",
+        "RootDialog_en_us_qna": "",
+        "ViewToDoDialog_en_us_qna": ""
+    }
+
+-->
+
 ### The configuration file details
 
 This section explains the **appsettings.json** file for the to do bot sample in detail.
@@ -399,6 +414,15 @@ The `qnamaker:build` command will save a settings file to the location provided 
 > [!IMPORTANT]
 >
 > The settings file created by the `qnamaker:build` command will contain an entry for each of the five QnA Maker models, the value for each will be the ID for the one QnA Maker KB created by the build command. Since each contain the same ID value, use any of them for the value for the  "TodoBotWithLuisAndQnA_en_us_qna" key. If you replace this single value with all five values from the qnamaker.settings file, you will get an error: "System.Exception: NOTE: QnA Maker is not configured for RootDialog."
+
+<!--
+NOTE:
+
+Once PR2899 (https://github.com/microsoft/BotBuilder-Samples/pull/2899) is done, change the important message above to this:
+
+The settings file created by the `qnamaker:build` command will contain an entry for each of the five QnA Maker models, the value for each will be the ID for the one QnA Maker KB created by the build command.
+
+-->
 
 ## Source code updates for cross trained models
 
@@ -461,7 +485,19 @@ public static Recognizer CreateLuisRecognizer(IConfiguration Configuration)
 
 The method `CreateQnAMakerRecognizer` creates a QnA Maker recognizer. See comments in the code snippet below for code explanations:
 
-<!-- Line 330-358 -->
+<!-- Line 330-358
+
+NOTE:
+
+Once PR2899 (https://github.com/microsoft/BotBuilder-Samples/pull/2899) is done, change the code below:
+
+if (string.IsNullOrEmpty(configuration["qna:RootDialog_en_us_qna"]) || string.IsNullOrEmpty(configuration["QnAHostName"]) || string.IsNullOrEmpty(configuration["QnAEndpointKey"]))
+
+throw new Exception("NOTE: QnA Maker is not configured for RootDialog. Please follow instructions in README.md to add 'qna:RootDialog_en_us_qna', 'QnAHostName' and 'QnAEndpointKey' to the appsettings.json file.");
+
+KnowledgeBaseId = configuration["qna:RootDialog_en_us_qna"],
+
+ -->
 
 ```csharp
 private static Recognizer CreateQnAMakerRecognizer(IConfiguration configuration)
@@ -543,7 +579,7 @@ new TextInput()
  -->
 - The `Prompt` for this `TextInput` calls the `GetListType()` template in **ViewToDoDialog.lg**.
 - The value returned from the user input is saved into `turn.recognized.entities.listType`. Shorthand for `turn.recognized.entities.listType` is `@listType`
-- The expression for AllowInterruptions checks `@listType`, which will exist if the user selected or entered a valid list type. if it does not exist it checks to see is teh match returned by LUIS has a 70% or higher prediction score `turn.recognized.score >= 0.7`. If it does, that means that a parent or sibling dialog has an intent with a high prediction score. This results in `AllowInterruptions` evaluating to true and the users utterance is then passed up to the parent dialog to be handled. When the parent dialog handles this utterance it finds a match in the `DeleteItem` intent which results in the **DeleteToDoDialog**.
+- The expression for AllowInterruptions checks `@listType`, which will exist if the user selected or entered a valid list type. if it does not exist it checks to see is the match returned by LUIS has a 70% or higher prediction score `turn.recognized.score >= 0.7`. If it does, that means that a parent or sibling dialog has an intent with a high prediction score. This results in `AllowInterruptions` evaluating to true and the users utterance is then passed up to the parent dialog to be handled. When the parent dialog handles this utterance it finds a match in the `DeleteItem` intent which results in the **DeleteToDoDialog**.
 
 > [!NOTE]
 >
