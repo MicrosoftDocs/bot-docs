@@ -121,7 +121,7 @@ To cross-train the **todo bot with LUIS and QnA Maker** sample:
       bf luis:cross-train -i dialogs -o generated --config dialogs\DialogLuHierarchy.config.json --force
    ```
 
-Once finished you will have cross-trained versions of the five `.lu` files and six `.qna` files. Here `--force` is used to force overwrite the existing `.lu` and `.qna` files if they already exist. Otherwise for lu file like `AddToDoDialog.lu`, the cross-trained content will write to file with name `AddToDoDialog(1).lu`. When running the build commands in the following sections, point to the generated directory for the input files.
+Once finished you will have cross-trained versions of the five `.lu` files and six `.qna` files. Here `--force` is used to force overwrite the existing `.lu` and `.qna` files if they already exist. Otherwise, for .lu files like `AddToDoDialog.lu`, the cross-trained content will write to file with name `AddToDoDialog(1).lu`. When running the build commands in the following sections, point to the generated directory for the input files.
 
 > [!IMPORTANT]
 >
