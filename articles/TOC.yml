@@ -30,6 +30,8 @@
     href: https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md
 - name: Security
   items:
+  - name: Security baseline
+    href: security-baseline.md.md
   - name: Authentication basics
     href: v4sdk/bot-builder-authentication-basics.md
   - name: Authentication types
