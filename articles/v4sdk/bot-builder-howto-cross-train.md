@@ -579,7 +579,7 @@ new TextInput()
  -->
 - The `Prompt` for this `TextInput` calls the `GetListType()` template in **ViewToDoDialog.lg**.
 - The value returned from the user input is saved into `turn.recognized.entities.listType`. Shorthand for `turn.recognized.entities.listType` is `@listType`
-- The expression for AllowInterruptions checks `@listType`, which will exist if the user selected or entered a valid list type. if it does not exist it checks to see is the match returned by LUIS has a 70% or higher prediction score `turn.recognized.score >= 0.7`. If it does, that means that a parent or sibling dialog has an intent with a high prediction score. This results in `AllowInterruptions` evaluating to true and the users utterance is then passed up to the parent dialog to be handled. When the parent dialog handles this utterance it finds a match in the `DeleteItem` intent which results in the **DeleteToDoDialog**.
+- The expression for `AllowInterruptions` checks `@listType`, which will exist if the user selected or entered a valid list type. if it does not exist it checks to see is the match returned by LUIS has a 70% or higher prediction score, `turn.recognized.score >= 0.7`. If it does, that means that a parent or sibling dialog has an intent with a high prediction score. This results in `AllowInterruptions` evaluating to true and the users utterance is then passed up to the parent dialog to be handled. When the parent dialog handles this utterance it finds a match in the `DeleteItem` intent which results in the **DeleteToDoDialog**.
 
 > [!NOTE]
 >
