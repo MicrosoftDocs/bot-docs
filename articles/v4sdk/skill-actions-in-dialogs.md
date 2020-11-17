@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 04/23/2020
+ms.date: 11/11/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -23,9 +23,12 @@ For how to create a skill bot in general, see how to [implement a skill](skill-i
 ## Prerequisites
 
 - Knowledge of [bot basics](bot-builder-basics.md), [how skills bots work](skills-conceptual.md), and how to [implement a skill](skill-implement-skill.md).
-- An Azure subscription. If you don't have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+- An Azure subscription (to deploy your skill). If you don't have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 - Optionally, a [LUIS](https://www.luis.ai/) account. (For more information, see how to [add natural language understanding to your bot](bot-builder-howto-v4-luis.md).)
 - A copy of the **skills skillDialog** sample in [**C#**](https://aka.ms/skills-using-dialogs-cs), [**JavaScript**](https://aka.ms/skills-using-dialogs-js) or [**Python**](https://aka.ms/skills-using-dialogs-py).
+
+> [!NOTE]
+> Starting with version 4.11, you do not need an app ID and password to test a skill locally in the Emulator. An Azure subscription is still required to deploy your skill to Azure.
 
 ## About this sample
 
@@ -38,15 +41,15 @@ This article focuses on how to use a dialogs within a skill bot to manage multip
 
 ### [C#](#tab/cs)
 
-![Skill class diagram](./media/skill-dialog/dialog-skill-bot-cs.png)
+![C# skill class diagram](./media/skill-dialog/dialog-skill-bot-cs.png)
 
 ### [JavaScript](#tab/js)
 
-![Skill class diagram](./media/skill-dialog/dialog-skill-bot-js.png)
+![JavaScript skill class diagram](./media/skill-dialog/dialog-skill-bot-js.png)
 
 ### [Python](#tab/python)
 
-![Skill class diagram](./media/skill-dialog/dialog-skill-bot-py.png)
+![Python skill class diagram](./media/skill-dialog/dialog-skill-bot-py.png)
 
 ---
 
@@ -54,15 +57,18 @@ For information about the skill consumer bot, see how to [consume a skill using 
 
 ## Resources
 
-Bot-to-bot authentication requires that each participating bot has a valid appID and password.
+For deployed bots, bot-to-bot authentication requires that each participating bot has a valid app ID and password.
+However, you can test skills and skill consumers locally with the Emulator without an app ID and password.
 
-Register both the skill and the skill consumer with Azure. You can use a Bot Channels Registration. For more information, see how to [register a bot with Azure Bot Service](../bot-service-quickstart-registration.md).
+To make the skill available to user-facing bots, register the skill with Azure. You can use a Bot Channels Registration. For more information, see how to [register a bot with Azure Bot Service](../bot-service-quickstart-registration.md).
 
 Optionally, the skill bot can use a flight-booking LUIS model. To use this model, use the CognitiveModels/FlightBooking.json file to create, train, and publish the LUIS model.
 
 ## Application configuration
 
-1. Add the skill bot's app ID and password.
+1. Optionally, add the skill's app ID and password to the skill's configuration file.
+   (If either the skill or skill consumer uses an app ID and password, both must.)
+
 1. If you are using the LUIS model, Add the LUIS app ID, API key, and API host name.
 
 ### [C#](#tab/cs)
@@ -269,7 +275,8 @@ The manifest contains the information you need to access the skill from another 
 
 ---
 
-The _skill manifest schema_ is a JSON file that describes the schema of the skill manifest. The current schema version is [skill-manifest-2.0.0.json](https://github.com/microsoft/botframework-sdk/blob/master/schemas/skills/skill-manifest-2.0.0.json).
+The _skill manifest schema_ is a JSON file that describes the schema of the skill manifest.
+The latest schema version is [v2.1](https://schemas.botframework.com/schemas/skills/v2.1/skill-manifest.json).
 
 ## Test the skill bot
 

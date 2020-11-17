@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 07/08/2020
+ms.date: 11/11/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -28,8 +28,11 @@ This article demonstrates how to implement a skill that echoes the user's input.
 ## Prerequisites
 
 - Knowledge of [bot basics](bot-builder-basics.md) and [skills](skills-conceptual.md).
-- An Azure subscription. If you don't have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+- An Azure subscription (to deploy your skill). If you don't have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 - A copy of the **skills simple bot-to-bot** sample in [**C#**](https://aka.ms/skills-simple-bot-to-bot-csharp), [**JavaScript**](https://aka.ms/skills-simple-bot-to-bot-js) or [**Python**](https://aka.ms/skills-simple-bot-to-bot-python).
+
+> [!NOTE]
+> Starting with version 4.11, you do not need an app ID and password to test a skill locally in the Emulator. An Azure subscription is still required to deploy your skill to Azure.
 
 ## About this sample
 
@@ -58,16 +61,21 @@ For information about the simple root bot, see how to [Implement a skill consume
 
 ## Resources
 
-Bot-to-bot authentication requires that each participating bot has a valid app ID and password.
+For deployed bots, bot-to-bot authentication requires that each participating bot has a valid app ID and password.
+However, you can test skills and skill consumers locally with the Emulator without an app ID and password.
 
-To be able to test the skill as a user-facing bot, register the skill with Azure. You can use a Bot Channels Registration. For more information, see how to [register a bot with Azure Bot Service](../bot-service-quickstart-registration.md).
+To make the skill available to user-facing bots, register the skill with Azure. You can use a Bot Channels Registration. For more information, see how to [register a bot with Azure Bot Service](../bot-service-quickstart-registration.md).
 
 ## Application configuration
 
-Add the skill's app ID and password to the skill's configuration file.
+Optionally, add the skill's app ID and password to the skill's configuration file.
+(If either the skill or skill consumer uses an app ID and password, both must.)
 
 The _allowed callers_ array can restrict which skill consumers can access the skill.
-Leave this array empty, to accept calls from any skill consumer.
+Add an "*" element, to accept calls from any skill consumer.
+
+> [!NOTE]
+> If you are testing your skill locally without an app ID and password, neither the skill nor the skill consumer run the code to perform claims validation.
 
 ### [C#](#tab/cs)
 
@@ -164,7 +172,7 @@ This sample uses an allowed callers list for claims validation. The list is defi
 
 You must add a _claims validator_ to the authentication configuration. The claims are evaluated after the authentication header. Your validation code should throw an error or exception to reject the request. There are many reasons you may want to reject an otherwise authenticated request. For example:
 
-- The skill is part of a paid-for service. User's not in the data base should not have access.
+- The skill is part of a paid-for service. User's not in the database should not have access.
 - The skill is proprietary. Only certain skill consumers can call the skill.
 
 > [!IMPORTANT]
@@ -253,6 +261,7 @@ This sample adds claims validation to the authentication configuration and uses 
 
 A _skill manifest_ is a JSON file that describes the activities the skill can perform, its input and output parameters, and the skill's endpoints.
 The manifest contains the information you need to access the skill from another bot.
+The latest schema version is [v2.1](https://schemas.botframework.com/schemas/skills/v2.1/skill-manifest.json).
 
 ### [C#](#tab/cs)
 
