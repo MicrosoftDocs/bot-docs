@@ -31,7 +31,7 @@
 - name: Security
   items:
   - name: Security baseline
-    href: security-baseline.md.md
+    href: security-baseline.md
   - name: Authentication basics
     href: v4sdk/bot-builder-authentication-basics.md
   - name: Authentication types
