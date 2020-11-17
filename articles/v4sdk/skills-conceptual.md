@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 07/15/2020
+ms.date: 11/12/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -129,14 +129,19 @@ The skill consumer and skill manage their own state separately. However, the con
 
 <!-- TODO Add appropriate info about this new(?) feature to the bot basics article. -->
 
+Starting with version 4.11, you do not need an app ID and password to test a skill and skill consumer locally in the Emulator. An Azure subscription is still required to deploy your skill to Azure.
+
 Service-level authentication is managed by the Bot Connector service. The framework uses bearer tokens and bot application IDs to verify the identity of each bot. (The Bot Framework uses an _authentication configuration_ object to validate the authentication header on incoming requests.)
 
 > [!IMPORTANT]
-> This requires all bots (the skill consumer and any skills it consumes) to have valid application credentials.
+> This requires all deployed bots (the skill consumer and any skills it consumes) to have valid application credentials.
 
 #### Claims validation
 
 You must add a _claims validator_ to the authentication configuration. The claims are evaluated after the authentication header. Throw an error or exception in your validation code to reject the request.
+
+> [!NOTE]
+> The bot performs claims validation if it has an app ID and password; otherwise, claims validation is not performed.
 
 There are various reasons you might reject an otherwise authenticated request:
 
