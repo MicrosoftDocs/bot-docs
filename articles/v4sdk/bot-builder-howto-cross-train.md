@@ -220,7 +220,7 @@ To create the LUIS applications for the **todo bot with LUIS and QnA Maker** sam
 
 > [!TIP]
 >
-> If you haven't done so already, you will need to [Migrate to an Azure resource authoring key][luis-migration-authoring]. If you don't, will will not see the LUIS Applications in [LUIS][luis] created using the `luis:build` command.
+> If you haven't done so already, you will need to [Migrate to an Azure resource authoring key][luis-migration-authoring]. If you don't, you will not see the LUIS Applications in [LUIS][luis] created using the `luis:build` command.
 
 Once finished you will have a LUIS application for each of the five `.lu` files in [LUIS](https://www.luis.ai/conversations/applications):
 
