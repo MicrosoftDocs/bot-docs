@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 2/26/2019
+ms.date: 11/17/2020
 ---
 
 # Debug with the Emulator
@@ -218,15 +218,15 @@ If you decide that you no longer want to allow the Emulator to collect usage dat
 
 1. Navigate to the Emulator's settings page by clicking on the Settings button (gear icon) in the nav bar on the left side.
 
-    ![disable data collection](media/emulator-v4/emulator-disable-data-1.png)
+    ![Emulator settings button](media/emulator-v4/emulator-disable-data-1.png)
 
 2. Uncheck the checkbox labeled *Help improve the Emulator by allowing us to collect usage data* under the **Data Collection** section.
 
-    ![disable data collection](media/emulator-v4/emulator-disable-data-2.png)
+    ![Emulator settings, data collection](media/emulator-v4/emulator-disable-data-2.png)
 
 3. Click the "Save" button.
 
-    ![disable data collection](media/emulator-v4/emulator-disable-data-3.png)
+    ![Emulator settings, save button](media/emulator-v4/emulator-disable-data-3.png)
 
 If you change your mind, you can always enable it by re-checking the checkbox.
 
