@@ -6,7 +6,7 @@ ms.author: v-mimiel
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 11/18/2020
+ms.date: 11/19/2020
 ---
 
 # Bot Framework channels security
