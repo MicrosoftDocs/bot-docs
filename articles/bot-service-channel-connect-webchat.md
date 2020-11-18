@@ -157,7 +157,7 @@ To embed your bot in a web page by specifying the secret within the `iframe` tag
 
   ![Web Chat client](~/media/bot-service-channel-webchat/webchat-client.png)
 
-### Production embedding  option
+### Production embedding option
 
 #### Keep your secret hidden, exchange your secret for a token, and generate the embed
 
