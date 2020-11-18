@@ -1,6 +1,6 @@
 ---
 title: Using .NET v3 user state in a v4 bot - Bot Service
-description: How to use v3 user state in a v4 bot example
+description: See an example of how to use C# v3 user state in a C# v4 bot.
 keywords: Csharp, bot migration, v3 bot
 ms.author: kamrani
 manager: kamrani
@@ -147,5 +147,5 @@ This class inherits from the v4 `BotState` class, and uses a v3-style key (`IAdd
 [7]: https://docs.microsoft.com/azure/bot-service/bot-builder-storage-concept
 [8]: https://docs.microsoft.com/azure/bot-service/bot-builder-howto-v4-storage?tabs=csharp
 [9]: https://docs.microsoft.com/azure/bot-service/bot-builder-howto-v4-state?tabs=csharp
-[21]: https://docs.microsoft.com/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0
+[21]: ../../bot-service-overview-introduction.md
 [40]: https://aka.ms/azuredeployment

@@ -9,11 +9,11 @@ In Visual Studio Code, you can set breakpoints and run the bot in debug mode to 
 1. From the menu bar, click **Debug** and click **Start Debugging**.
 1. Select **Python File** to debug the currently selected file.
 
-   ![Set breakpoints](~/media/bot-service-debug-bot/bot-debug-python-breakpoints.png)
+   ![Set Python breakpoints in VS Code](~/media/bot-service-debug-bot/bot-debug-python-breakpoints.png)
 
 1. Start the Bot Framework Emulator and connect to your bot as described in the [Debug with the Bot Framework Emulator](https://docs.microsoft.com/azure/bot-service/bot-service-debug-emulator) article.
 1. From the Emulator, send your bot a message (for example, send the message "Hi"). Execution will stop at the line where you place the breakpoint.
 
-   ![Debug in VS Code](~/media/bot-service-debug-bot/bot-debug-python-breakpoint-caught.png)
+   ![Debug Python in VS Code](~/media/bot-service-debug-bot/bot-debug-python-breakpoint-caught.png)
 
 For more information, see [Debug your Python code](https://aka.ms/bot-debug-python).

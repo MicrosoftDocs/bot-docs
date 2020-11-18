@@ -7,7 +7,7 @@ In Visual Studio (VS), you can set breakpoints and run the bot in debug mode to 
 1. In the **Solution Explorer**, click the **.cs** file and set breakpoints as necessary. This file defines your main bot logic. In VS, you can set breakpoints by hovering your mouse over the column to the left of the line numbers. A small red dot will appear. If you click on the dot the breakpoint is set. If you click the dot again the breakpoint is removed.
 1. From the menu, click **Debug** and click **Start Debugging**. At this point, the bot is running locally.
 
-   ![Set breakpoint in VS](~/media/bot-service-debug-bot/breakpoint-set-vs.png)
+   ![Set C# breakpoint in VS](~/media/bot-service-debug-bot/breakpoint-set-vs.png)
 
 <!--
    > [!NOTE]
@@ -18,4 +18,4 @@ In Visual Studio (VS), you can set breakpoints and run the bot in debug mode to 
 1. Start the Bot Framework Emulator and connect to your bot as described in the section above.
 1. From the Emulator, send your bot a message (e.g.: send the message "Hi"). Execution will stop at the line where you place the breakpoint.
 
-   ![Debug in VS](~/media/bot-service-debug-bot/breakpoint-caught-vs.png)
+   ![Debug C# in VS](~/media/bot-service-debug-bot/breakpoint-caught-vs.png)

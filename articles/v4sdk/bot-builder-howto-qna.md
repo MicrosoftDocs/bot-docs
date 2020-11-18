@@ -43,7 +43,7 @@ To use QnA Maker in your bot, you need to create a knowledge base in the [QnA Ma
 
 ## [Python](#tab/python)
 
-![QnABot JS logic flow](./media/qnabot-python-logic-flow.png)
+![QnABot Python logic flow](./media/qnabot-python-logic-flow.png)
 
 `on_message_activity` is called for each user input received. When called, it accesses your `qna_maker` connector that was pre-configured using values provided from your sample code's `config.py` file.  The method `qna_maker.getAnswers` connects your bot to your external QnA Maker knowledge base.
 

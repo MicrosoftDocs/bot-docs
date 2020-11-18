@@ -53,7 +53,7 @@ This article starts with the [CoreBot sample app](https://aka.ms/js-core-sample)
     ```
     -->
 
-5. Next, you need to add the _telemetry middleware_ to the [adapter middleware pipeline](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-middleware?view=azure-bot-service-4.0#the-bot-middleware-pipeline). To do this, add the following code, starting just after the error handling code:  
+5. Next, you need to add the _telemetry middleware_ to the [adapter middleware pipeline](../v4sdk/bot-builder-concept-middleware.md#the-bot-middleware-pipeline). To do this, add the following code, starting just after the error handling code:  
 
     <!-- This level of detail may be too much:
         - The first step is to create a new telemetry client, in this case you are using Application Insights as the telemetry client using the module `ApplicationInsightsTelemetryClient` referenced in the previous step. This line of code will call the function `getTelemetryClient` that you will soon create, passing in the Application Insights key and that function will return a new telemetry client: `var telemetryClient = getTelemetryClient(process.env.InstrumentationKey);`. 

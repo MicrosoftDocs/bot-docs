@@ -28,15 +28,15 @@ Upon receiving user input, this sample checks the stored conversation state to s
 
 ## [C#](#tab/csharp)
 
-![state bot sample](media/StateBotSample-Overview.png)
+![C# state bot sample](media/StateBotSample-Overview.png)
 
 ## [JavaScript](#tab/javascript)
 
-![state bot sample](media/StateBotSample-JS-Overview.png)
+![JavaScript state bot sample](media/StateBotSample-JS-Overview.png)
 
 ## [Python](#tab/python)
 
-![state bot sample](media/StateBotSample-Python-Overview.png)
+![Python state bot sample](media/StateBotSample-Python-Overview.png)
 
 ---
 

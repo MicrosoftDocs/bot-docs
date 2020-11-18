@@ -88,6 +88,6 @@ The _send activity_ method, and its handlers, pose a unique problem. Simply call
 
 * [Debugging in Visual Studio](https://docs.microsoft.com/visualstudio/debugger/index)
 * [Debugging, Tracing, and Profiling](https://docs.microsoft.com/dotnet/framework/debug-trace-profile/) for the bot framework
-* Use the [ConditionalAttribute](https://docs.microsoft.com/dotnet/api/system.diagnostics.conditionalattribute?view=netcore-2.0) for methods you don't want to include in production code
+* Use the [ConditionalAttribute](https://docs.microsoft.com/dotnet/api/system.diagnostics.conditionalattribute) for methods you don't want to include in production code
 * Use tools like [Fiddler](https://www.telerik.com/fiddler) to see network traffic
 * [Troubleshoot general problems](../bot-service-troubleshoot-bot-configuration.md) and the other troubleshooting articles in that section

@@ -37,19 +37,19 @@ The bot derives from the activity handler. Like many of the sample bots, it welc
 
 To use dialogs, install the **Microsoft.Bot.Builder.Dialogs** NuGet package.
 
-![Complex bot flow](./media/complex-conversation-flow.png)
+![C# complex bot flow diagram](./media/complex-conversation-flow.png)
 
 ### [JavaScript](#tab/javascript)
 
 To use dialogs, your project needs to install the **botbuilder-dialogs** npm package.
 
-![Complex bot flow](./media/complex-conversation-flow-js.png)
+![JavaScript complex bot flow diagram](./media/complex-conversation-flow-js.png)
 
 ### [Python](#tab/python)
 
 To use dialogs, your project needs to install the **botbuilder-dialogs** PyPI package by running `pip install botbuilder-dialogs`.
 
-![Complex bot flow](./media/complex-conversation-flow-python.png)
+![Python complex bot flow diagram](./media/complex-conversation-flow-python.png)
 
 ---
 

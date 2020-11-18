@@ -31,7 +31,7 @@ The sample bot asks the user a series of questions, validates some of their answ
 
 ## [C#](#tab/csharp)
 
-![custom-prompts](media/CustomPromptBotSample-Overview.png)
+![custom-prompts in C#](media/CustomPromptBotSample-Overview.png)
 
 - A `UserProfile` class for the user information that the bot will collect.
 - A `ConversationFlow` class to control our conversation state while gathering user information.
@@ -39,7 +39,7 @@ The sample bot asks the user a series of questions, validates some of their answ
 
 ## [JavaScript](#tab/javascript)
 
-![custom-prompts](media/CustomPromptBotSample-JS-Overview.png)
+![custom-prompts in JavaScript](media/CustomPromptBotSample-JS-Overview.png)
 
 - A `userProfile` class for the user information that the bot will collect.
 - A `conversationFlow` class to control our conversation state while gathering user information.
@@ -47,7 +47,7 @@ The sample bot asks the user a series of questions, validates some of their answ
 
 ## [Python](#tab/python)
 
-![custom-prompts](media/CustomPromptBotSample-Python-Overview.png)
+![custom-promptsin Python](media/CustomPromptBotSample-Python-Overview.png)
 
 - A `UserProfile` class for the user information that the bot will collect.
 - A `ConversationFlow` class to control our conversation state while gathering user information.
@@ -222,7 +222,7 @@ Download and install the [Bot Framework Emulator](https://aka.ms/bot-framework-e
 1. Run the sample locally on your machine. If you need instructions, refer to the README file for [C# sample](https://aka.ms/cs-primitive-prompt-sample), [JS sample](https://aka.ms/js-primitive-prompt-sample), or the [Python sample](https://aka.ms/python-primitive-prompt-sample).
 1. Test it using the Emulator as shown below.
 
-![primitive-prompts](media/primitive-prompts.png)
+![Sample interaction in the Emulator](media/primitive-prompts.png)
 
 ## Additional resources
 
