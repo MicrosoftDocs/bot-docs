@@ -313,7 +313,7 @@ public class BookingDialogTests
 
 Here is an example of what the `XUnitDialogTestLogger` logs to the output window when it is configured:
 
-![XUnitMiddlewareOutput](media/how-to-unit-test/cs/XUnitMiddlewareOutput.png)
+![Middleware output from XUnit](media/how-to-unit-test/cs/XUnitMiddlewareOutput.png)
 
 For additional information on sending test output to the console when using XUnit see [Capturing Output](https://xunit.net/docs/capturing-output.html) in the XUnit documentation.
 
@@ -329,7 +329,7 @@ const client = new DialogTestClient('msteams', sut, testData.initialData, [new D
 
 Here is an example of what the `DialogTestLogger` logs to the output window when it is configured:
 
-![DialogTestLoggerOutput](media/how-to-unit-test/js/DialogTestLoggerOutput.png)
+![Output from the dialog test logger](media/how-to-unit-test/js/DialogTestLoggerOutput.png)
 
 ---
 
@@ -391,7 +391,7 @@ public async Task ShouldBeAbleToCancel(string cancelUtterance)
 
 The new test will be executed 4 times with the different parameters and each case will show as a child item under the `ShouldBeAbleToCancel` test in Visual Studio Test Explorer. If any of them fail as shown below, you can right click and debug the scenario that failed rather than re-running the entire set of tests.
 
-![InlineDataTestResults](media/how-to-unit-test/cs/InlineDataTestResults.png)
+![Test results for in-line data](media/how-to-unit-test/cs/InlineDataTestResults.png)
 
 ### Theory tests using MemberData and complex types
 
@@ -536,7 +536,7 @@ public async Task DialogFlowUseCases(TestDataObject testData)
 
 Here is an example of the results for the `DialogFlowUseCases` tests in Visual Studio Test Explorer when the test is executed:
 
-![BookingDialogTests](media/how-to-unit-test/cs/BookingDialogTestsResults.png)
+![Example results for the booking dialog](media/how-to-unit-test/cs/BookingDialogTestsResults.png)
 
 ## [JavaScript](#tab/javascript)
 
@@ -586,7 +586,7 @@ describe('ShouldBeAbleToCancel', () => {
 
 The new test will be executed 4 times with the different parameters and each case will show as a child item under the `ShouldBeAbleToCancel` test suite in [Mocha Test Explorer](https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-mocha-test-adapter). If any of them fail like shown below, you can run and debug the scenario that failed rather than re-running the entire set of tests.
 
-![SimpleCancelTestResults](media/how-to-unit-test/js/SimpleCancelTestResults.png)
+![Example results for the cancel test](media/how-to-unit-test/js/SimpleCancelTestResults.png)
 
 ### Data driven tests with complex types
 
@@ -699,7 +699,7 @@ describe('DialogFlowUseCases', () => {
 
 Here is an example of the results for the `DialogFlowUseCases` test suite in Mocha Test Explorer when the test suite is executed:
 
-![BookingDialogTests](media/how-to-unit-test/js/BookingDialogTestsResults.png)
+![Updated example results for the booking dialog](media/how-to-unit-test/js/BookingDialogTestsResults.png)
 
 ---
 
@@ -707,9 +707,9 @@ Here is an example of the results for the `DialogFlowUseCases` test suite in Moc
 
 You can use mock elements for the things that are not currently tested. For reference, this level can generally be thought of as unit and integration testing.
 
-Mocking as many elements as you can allows for better isolation of the piece you’re testing. Candidates for mock elements include storage, the adapter, middleware, activity pipeline, channels, and anything else that is not directly part of your bot. This could also involve removing certain aspects temporarily, such as middleware not involved in the part of your bot that you are testing, to isolate each piece. However, if you are testing your middleware, you may want to mock your bot instead.
+Mocking as many elements as you can allows for better isolation of the piece you're testing. Candidates for mock elements include storage, the adapter, middleware, activity pipeline, channels, and anything else that is not directly part of your bot. This could also involve removing certain aspects temporarily, such as middleware not involved in the part of your bot that you are testing, to isolate each piece. However, if you are testing your middleware, you may want to mock your bot instead.
 
-Mocking elements can take a handful of forms, from replacing an element with a different known object to implementing a bare bones hello world functionality. This could also take the form of simply removing the element, if it’s not necessary, or simply force it to do nothing.
+Mocking elements can take a handful of forms, from replacing an element with a different known object to implementing a bare bones hello world functionality. This could also take the form of simply removing the element, if it's not necessary, or simply force it to do nothing.
 
 Mocks allow us to configure the dependencies of a dialog and ensure they are in a known state during the execution of the test without having to rely on external resources like databases, LUIS models or other objects.
 

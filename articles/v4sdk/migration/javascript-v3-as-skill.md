@@ -24,7 +24,7 @@ To migrate a JavaScript bot from v3 to v4, see how to [Migrate a Javascript v3 b
 - Visual Studio Code.
 - Node.js.
 - An Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
-- To test the skills, you will need the Bot Framework emulator and local copies of the bots:
+- To test the skills, you will need the Bot Framework Emulator and local copies of the bots:
   - The v3 JavaScript echo skill: [**Skills/v3-skill-bot**](https://aka.ms/v3-js-echo-skill).
   - The v3 JavaScript booking skill: [**Skills/v3-booking-bot-skill**](https://aka.ms/v3-js-booking-skill).
   - The v4 JavaScript sample skill consumer: [**Skills/v4-root-bot**](https://aka.ms/js-simple-root-bot).

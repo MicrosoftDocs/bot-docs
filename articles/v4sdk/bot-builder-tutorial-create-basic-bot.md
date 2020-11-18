@@ -72,8 +72,7 @@ You will learn how to:
 
 ## Start the Emulator and connect your bot
 
-[!INCLUDE [dotnet quickstart start emulator](~/includes/quickstart/common/quickstart-start-emulator.md)]
-
+[!INCLUDE [dotnet quickstart start Emulator](~/includes/quickstart/common/quickstart-start-emulator.md)]
 
 ## Next steps
 

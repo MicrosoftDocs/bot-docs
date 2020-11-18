@@ -34,7 +34,7 @@ Creating a bot with Azure Bot Service and creating a bot locally are independent
 
 ## Start the Emulator and connect your bot
 
-[!INCLUDE [dotnet quickstart start emulator](~/includes/quickstart/common/quickstart-start-emulator.md)]
+[!INCLUDE [dotnet quickstart start Emulator](~/includes/quickstart/common/quickstart-start-emulator.md)]
 
 ## Additional resources
 

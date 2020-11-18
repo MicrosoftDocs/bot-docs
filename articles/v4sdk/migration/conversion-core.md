@@ -390,7 +390,7 @@ In **ResetPassword.cs** change the return type of the `MobileNumber` as follows:
 ## Final porting steps
 To complete the porting process, perform these steps:
 
-1. Create an `AdapterWithErrorHandler` class to define an adapter which includes an error handler that can catch exceptions in the middleware or application. The adapter processes and directs incoming activities in through the bot middleware pipeline to your bot’s logic and then back out again. Use the following code to create the class:
+1. Create an `AdapterWithErrorHandler` class to define an adapter which includes an error handler that can catch exceptions in the middleware or application. The adapter processes and directs incoming activities in through the bot middleware pipeline to your bot's logic and then back out again. Use the following code to create the class:
 
  [!code-csharp[MobileNumber](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/AdapterWithErrorHandler.cs?range=4-46)]
 1. Modify the **wwwroot\default.htm** page as you see fit.
@@ -400,7 +400,7 @@ To complete the porting process, perform these steps:
 At this point, we should be able to run the bot locally in IIS and attach to it with the Emulator.
 
 1. Run the bot in IIS.
-1. Start the emulator and connect to the bot's endpoint (for example, **http://localhost:3978/api/messages**).
+1. Start the Emulator and connect to the bot's endpoint (for example, **http://localhost:3978/api/messages**).
     - If this is the first time you are running the bot then click **File > New Bot** and follow the instructions on screen. Otherwise, click **File > Open Bot** to open an existing bot.
     - Double check your port settings in the configuration. For example, if the bot opened in your browser to `http://localhost:3979/`, then in the Emulator, set the bot's endpoint to `http://localhost:3979/api/messages`.
 1. All four dialogs should work, and you can set breakpoints in the waterfall steps to check what the dialog context and dialog state is at these points.
