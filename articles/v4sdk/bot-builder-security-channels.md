@@ -15,6 +15,8 @@ ms.date: 11/18/2020
 
 This article describes potential security risks when the users connect to a bot using the allowed channels, in particular the [Web Chat](~/bot-service-channel-connect-webchat.md) channel. It also shows mitigating solutions using the [Direct Line](../bot-service-channel-directline.md) channel with **enhanced authentication** enabled and ....
 
+The code in this article is based on the sample: [MVC DirectLine token controller](~/../botbuilder-samples/experimental/DirectLineTokenSite).
+
 ## Security risks
 
 ### Impersonation
@@ -29,9 +31,13 @@ The attacker makes the bot thinks he is someone else. For example, in Web Chat, 
 
     This is because Direct Line creates a **token** based on the Direct Line secret and embeds the *User.Id* in the token. Direct Line makes sure the messages sent to the bot have that *User id* as the activity's *From.Id*. If a client sends a message to Direct Line having a different *From.Id*, it will be changed to the **Id embedded in the token** before forwarding the message to the bot. So you cannot use another user ID after a channel secret is initialized with a user ID.
 
-    This feature requires the user ID to start with `dl_`.
+    This feature requires the user ID to start with `dl_` as shown in this code sample:
 
-    See the following [code samples](../rest-api/bot-framework-rest-direct-line-3-0-authentication.md#code-examples).
+    [!code-csharp[specify user id](~/../botbuilder-samples/experimental/DirectLineTokenSite/Bot_Auth_DL_Secure_Site_MVC/Controllers/HomeController.cs?range=15-50&highlight=23)]
+
+    The generated token, based on the Direct Line secret, is then used in the Web Chat control as shown in this code sample:
+
+    [!code-csharp[specify token](~/../botbuilder-samples/experimental/DirectLineTokenSite/Bot_Auth_DL_Secure_Site_MVC/Views/Home/Index.cshtml?range=1-16&highlight=11-14)]
 
 ### User identity spoofing
 
@@ -44,7 +50,7 @@ You must be aware that there are two user identities:
 
 When a bot asks the channel user A to sign-in to an identity provider, the sign-in process must assure that user A is the only one that signs into the provider. If another user B is also allowed to sign-in the provider, he would have access to user A resources through the bot.
 
-#### User identity  mitigation
+#### User identity spoofing mitigation
 
 In the Web Chat channel, there are two mechanisms to assure that the proper user is signed in.
 
