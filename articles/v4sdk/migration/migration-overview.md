@@ -99,7 +99,7 @@ The following worksheets can guide you in estimating your migration workload. In
 | Step | V3 | V4 | Occurrences | Complexity | T Shirt |
 | -- | -- | -- | -- | -- | -- |
 To get the incoming activity | IDialogContext.Activity | ITurnContext.Activity | count | Small
-To create and send an activity to the user | activity.CreateReply(“text”) IDialogContext.PostAsync | MessageFactory.Text(“text”) ITurnContext.SendActivityAsync | count | Small |
+To create and send an activity to the user | activity.CreateReply("text") IDialogContext.PostAsync | MessageFactory.Text("text") ITurnContext.SendActivityAsync | count | Small |
 State management | UserData, ConversationData, and PrivateConversationData context.UserData.SetValue context.UserData.TryGetValue botDataStore.LoadAsyn | UserState, ConversationState, and PrivateConversationState  With property accessors | context.UserData.SetValue - count context.UserData.TryGetValue - count botDataStore.LoadAsyn - count | Medium to Large (See [user state management](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-state?view=azure-bot-service-4.0#state-management) available) |
 Handle the start of your dialog | Implement IDialog.StartAsync | Make this the first step of a waterfall dialog. | count | Small |
 Send an activity | IDialogContext.PostAsync. | Call ITurnContext.SendActivityAsync. | count | Small |

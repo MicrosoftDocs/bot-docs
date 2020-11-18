@@ -64,7 +64,7 @@ customEvents
 
 <!-- 
 
-OPEN ISSUE: Is it possible to define a more descriptive title in the legend when drawing the graph (vs. “Count”)?  Or overall title on top or underneath?  
+OPEN ISSUE: Is it possible to define a more descriptive title in the legend when drawing the graph (vs. "Count")?  Or overall title on top or underneath?  
 
 Use the render PropertyName parameter:  title, xtitle, ytitle,, legend
 
@@ -205,7 +205,7 @@ This example can be used to count the number of dialog flows that started but ne
 
 OPEN ISSUE:
 
-“If number of started dialogs is much greater than number of completed, users do not complete the dialog flow. Troubleshoot dialog logic.”
+"If number of started dialogs is much greater than number of completed, users do not complete the dialog flow. Troubleshoot dialog logic."
 
 you can use the funnel view to understand where step dropoff is.  If there is a doc describing how to do that in our docs, point to it... 
 
@@ -452,7 +452,7 @@ customEvents
 
 <!--  
 
-Open Issue: More interesting than the “certainty” score would be linking intent to dialog completion %. That infers “certainty” by user's actions. 
+Open Issue: More interesting than the "certainty" score would be linking intent to dialog completion %. That infers "certainty" by user's actions. 
 
 QUESTION: What changes are required?
 

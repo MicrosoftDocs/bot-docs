@@ -29,7 +29,7 @@ It's simply a matter of prioritizing the right factors when designing your bot.
 
 When designing your bot, be aware that none of the following factors necessarily guarantee a bot's success: 
 
-- **How “smart” the bot is**: 
+- **How _smart_ the bot is**: 
 In most cases, it is unlikely that making your bot smarter will guarantee happy users or adoption of your platform. In reality, many bots have little advanced machine learning or natural language capabilities. A bot may include those capabilities if they're necessary to solve the problems that it's designed to address, however you should not assume any correlation between a bot's intelligence and user adoption of the bot.
 
 - **How much natural language the bot supports**: 

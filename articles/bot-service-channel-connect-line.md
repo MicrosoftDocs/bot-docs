@@ -112,7 +112,7 @@ To avoid sending these messages, you need to switch off the Auto-response messag
 
 ![LINE screenshot auto response](./media/channels/LINE-screenshot-10.png)
 
-Alternatively, you can choose to keep these messages. In this case, it may be a good idea to click “Set message” and edit it.
+Alternatively, you can choose to keep these messages. In this case, it may be a good idea to click "Set message" and edit it.
 
 ![LINE screenshot set auto response](./media/channels/LINE-screenshot-11.png)
 

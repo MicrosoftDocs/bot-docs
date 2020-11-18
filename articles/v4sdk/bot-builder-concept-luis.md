@@ -34,7 +34,7 @@ For example, consider the many ways a user of a travel bot can ask to book a fli
 
 ![Various differently formed utterances for book a flight](media/cognitive-services-add-bot-language/cognitive-services-luis-utterances.png)
 
-These utterances can have different structures and contain various synonyms for “flight” that you haven't thought of. In your bot, it can be challenging to write the logic that matches all the utterances, and still distinguishes them from other intents that contain the same words. Additionally, your bot needs to extract *entities*, which are other important words like locations and times. LUIS makes this process easy by contextually identifying intents and entities for you.
+These utterances can have different structures and contain various synonyms for "flight" that you haven't thought of. In your bot, it can be challenging to write the logic that matches all the utterances, and still distinguishes them from other intents that contain the same words. Additionally, your bot needs to extract *entities*, which are other important words like locations and times. LUIS makes this process easy by contextually identifying intents and entities for you.
 
 When you design your bot for natural language input, you determine what intents and entities your bot needs to recognize, and think about how they'll connect to actions that your bot takes. In [luis.ai](https://www.luis.ai), you define custom intents and entities and you specify their behavior by providing examples for each intent and labeling the entities within them.
 
