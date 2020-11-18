@@ -119,7 +119,7 @@ This class extends the v4 `BotState` class (`botbuilder-core`) so that it uses a
 
 ### Testing steps
 
-1. Open bot in emulator and send a message. Provide your name when prompted.
+1. Open bot in Emulator and send a message. Provide your name when prompted.
 1. After the turn is over, send another message to the bot.
 1. Assure that you are not prompted again for your name. The bot should be reading it from the storage and recognize that it already prompted you.
 1. The bot should echo back your message.

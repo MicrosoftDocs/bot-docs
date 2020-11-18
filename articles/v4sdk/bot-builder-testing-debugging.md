@@ -1,6 +1,6 @@
 ---
 title: Debugging guidelines - Bot Service
-description: View bot debugging tips, such as using the emulator and transcripts to inspect behavior. Understand potential middleware, state, and activity handler errors.
+description: View bot debugging tips, such as using the Emulator and transcripts to inspect behavior. Understand potential middleware, state, and activity handler errors.
 keywords: debugging bots, botframework debugging
 author: ivorb
 ms.author: kamrani
@@ -30,9 +30,9 @@ Debugging your bot works similarly to other multi-threaded apps, with the abilit
 
 Bots follow an event driven programming paradigm, which can be hard to rationalize if you're not familiar with it. The idea of your bot being stateless, multi-threaded, and dealing with async/await calls can result in unexpected bugs. While debugging your bot works similarly to other multi-threaded apps, we'll cover some suggestions, tools, and resources to help.
 
-## Understanding bot activities with the emulator
+## Understanding bot activities with the Emulator
 
-Your bot deals with different types of [activities](bot-builder-basics.md#the-activity-processing-stack) besides the normal _message_ activity. Using the [emulator](../bot-service-debug-emulator.md) will show you what those activities are, when they happen, and what information they contain. Understanding those activities will help you code your bot efficiently and allows you to verify the activities your bot is sending and receiving are what you expect.
+Your bot deals with different types of [activities](bot-builder-basics.md#the-activity-processing-stack) besides the normal _message_ activity. Using the [Emulator](../bot-service-debug-emulator.md) will show you what those activities are, when they happen, and what information they contain. Understanding those activities will help you code your bot efficiently and allows you to verify the activities your bot is sending and receiving are what you expect.
 
 ## Saving and retrieving user interactions with transcripts
 

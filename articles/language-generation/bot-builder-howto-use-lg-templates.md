@@ -191,7 +191,7 @@ Download and install the latest [Bot Framework Emulator](https://aka.ms/bot-fram
 
 1. Run the sample locally on your machine. If you need instructions, refer to the readme file for the [C# Sample](https://aka.ms/cs-core-sample), [JS Sample](https://aka.ms/js-core-sample) or [Python Sample](https://aka.ms/python-core-sample).
 
-1. In the emulator, type a message such as "travel to Paris" or "going from Paris to Berlin". Use any utterance found in the file FlightBooking.json for training the intent "Book flight".
+1. In the Emulator, type a message such as "travel to Paris" or "going from Paris to Berlin". Use any utterance found in the file FlightBooking.json for training the intent "Book flight".
 
 ![LUIS booking input](../v4sdk/media/how-to-luis/luis-user-travel-input.png)
 

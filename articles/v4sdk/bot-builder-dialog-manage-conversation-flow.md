@@ -251,7 +251,7 @@ We register services for the bot in `app.py`.
 
 1. If you have not done so already, install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
 1. Run the sample locally on your machine.
-1. Start the emulator, connect to your bot, and send messages as shown below.
+1. Start the Emulator, connect to your bot, and send messages as shown below.
 
 ![Sample run of the multi-turn prompt dialog](../media/emulator-v4/multi-turn-prompt.png)
 

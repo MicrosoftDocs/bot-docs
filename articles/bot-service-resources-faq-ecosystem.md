@@ -17,7 +17,7 @@ ms.date: 06/08/2020
      1 - This article contains FAQs regarding Bot Framework ecosystem.
      1 - When you create a new FAQ, please add the related link to the proper section in bot-service-resources-bot-framework-faq.md.-->
 
-## How do I enable the emulator to connect to localhost while behind a corporate proxy?
+## How do I enable the Emulator to connect to localhost while behind a corporate proxy?
 
 When developing a bot in a corporate environment, typically, the proxy will block the connection unless you specify that it should be bypassed for `localhost`. To do that on your local machine you must define the following environment variable :
 

@@ -454,9 +454,9 @@ If method `q_sample-qna` is invoked, it uses the user input contained within the
 
 ## Dispatch for user utterance to QnA Maker
 
-1. In the bot emulator, enter the text `hi` and submit the utterance. The bot submits this query to the dispatch LUIS app and gets back a response indicating which child app should get this utterance for further processing.
+1. In the bot Emulator, enter the text `hi` and submit the utterance. The bot submits this query to the dispatch LUIS app and gets back a response indicating which child app should get this utterance for further processing.
 
-1. By selecting the `LUIS Trace` line in the log, you can see the LUIS response in the bot emulator . The LUIS result from the dispatch LUIS app displays in the Inspector.
+1. By selecting the `LUIS Trace` line in the log, you can see the LUIS response in the bot Emulator . The LUIS result from the dispatch LUIS app displays in the Inspector.
 
     ```json
     {
@@ -491,7 +491,7 @@ If method `q_sample-qna` is invoked, it uses the user input contained within the
 
     Because the utterance, `hi`, is part of the dispatch LUIS app's **q_sample-qna** intent, and is selected as the `topScoringIntent`, the bot will make a second request, this time to the QnA Maker app, with the same utterance.
 
-1. Select the `QnAMaker Trace` line in the bot emulator log. The QnA Maker result displays in the Inspector.
+1. Select the `QnAMaker Trace` line in the bot Emulator log. The QnA Maker result displays in the Inspector.
 
 ```json
 {

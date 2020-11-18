@@ -44,7 +44,7 @@ The sample has a bot and an additional controller that is used to send proactive
 
 ## Retrieve and store conversation reference
 
-When the emulator connects to the bot, the bot receives two conversation update activities. In the bot's conversation update activity handler, the conversation reference is retrieved and stored in a dictionary as shown below.
+When the Emulator connects to the bot, the bot receives two conversation update activities. In the bot's conversation update activity handler, the conversation reference is retrieved and stored in a dictionary as shown below.
 
 # [C#](#tab/csharp)
 
@@ -121,8 +121,8 @@ The server then uses the `_send_proactive_message` to send the proactive message
 
 1. If you have not done so already, install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
 1. Run the sample locally on your machine.
-1. Start the emulator and connect to your bot.
-1. Load to your bot's api/notify page. This will generate a proactive message in the emulator.
+1. Start the Emulator and connect to your bot.
+1. Load to your bot's api/notify page. This will generate a proactive message in the Emulator.
 
 ## Additional information
 

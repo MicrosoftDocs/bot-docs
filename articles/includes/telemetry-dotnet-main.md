@@ -74,16 +74,16 @@ This article starts from the [CoreBot sample app](https://aka.ms/cs-core-sample)
         }
     }
     ```
+
     Note: Details on getting the _Application Insights instrumentation key_ can be found in the article [Application Insights keys](../bot-service-resources-app-insights-keys.md).
 
-At this point the preliminary work to enable telemetry using Application Insights is done.  You can run your bot locally using the bot emulator and then go into Application Insights to see what is being logged, such as response time, overall app health, and general running information. 
-
+At this point the preliminary work to enable telemetry using Application Insights is done.  You can run your bot locally using the bot Emulator and then go into Application Insights to see what is being logged, such as response time, overall app health, and general running information.
 
 ### Enabling telemetry in your bots Dialogs
 
 When adding a new dialog to any ComponentDialog, it will inherit the Microsoft.Bot.Builder.IBotTelemetryClient of its parent dialog.  For example, In the CoreBot sample application all dialogs are added to the MainDialog which is a ComponentDialog.  Once you set the TelemetryClient property to the MainDialog all dialogs added to it will automatically inherit the telemetryClient from it, so it does not need to be explicitly set when adding dialogs.
- 
- Follow the steps below to update your CoreBot example:
+
+Follow the steps below to update your CoreBot example:
 
 1.  In `MainDialog.cs`, update the constructor's parameter list to include the `IBotTelemetryClient` parameter, then set the MainDialog's TelemetryClient property to that value as shown in the following code snippet:
 
@@ -97,7 +97,7 @@ When adding a new dialog to any ComponentDialog, it will inherit the Microsoft.B
     }
     ```
 
-> [!TIP] 
+> [!TIP]
 > If you are following along and updating the CoreBot sample code, you can refer to the [Application Insights sample code](https://aka.ms/csharp-corebot-app-insights-sample) if you run into any problems.
 
 That's all there is to adding telemetry to your bots dialogs, at this point if you ran your bot you should see things being logged in Application Insights, however if you have any integrated technology such as LUIS and QnA Maker you will need to add the `TelemetryClient` to that code as well.

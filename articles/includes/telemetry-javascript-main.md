@@ -1,4 +1,3 @@
-
 This article starts with the [CoreBot sample app](https://aka.ms/js-core-sample) and adds the code required to integrate telemetry into any bot. This will enable Application Insights to begin tracking requests.
 
 > [!IMPORTANT]
@@ -106,4 +105,4 @@ This article starts with the [CoreBot sample app](https://aka.ms/js-core-sample)
 
     Node.js which follows the CommonJS module system, and the built in `require` function to include modules that exist in separate files.
 
-At this point the preliminary work to enable telemetry using Application Insights is done.  You can run your bot locally using the bot emulator and then go into Application Insights to see what is being logged, such as response time, overall app health, and general running information.
+At this point the preliminary work to enable telemetry using Application Insights is done.  You can run your bot locally using the bot Emulator and then go into Application Insights to see what is being logged, such as response time, overall app health, and general running information.

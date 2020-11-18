@@ -227,7 +227,7 @@ For reference, here are the class definitions that are used in the call to creat
 
 1. If you have not done so already, install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
 1. Run the sample locally on your machine.
-1. Start the emulator, connect to your bot, and send messages as shown below.
+1. Start the Emulator, connect to your bot, and send messages as shown below.
 
 <!--![test dialog prompt sample](~/media/emulator-v4/test-dialog-prompt.png)-->
 

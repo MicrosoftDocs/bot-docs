@@ -314,13 +314,13 @@ To obtain the **Microsoft app ID** and **Microsoft app password** values, see [G
 > [!NOTE]
 > You could now publish this bot code to your Azure subscription (right-click on the project and choose **Publish**), but it is not necessary for this article. You would need to set up a publishing configuration that uses the application and hosting plan that you used when configuration the bot in the Azure portal.
 
-## Test the bot using the emulator
+## Test the bot using the Emulator
 
-If you have not done so already, install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme). See also [Debug with the emulator](../bot-service-debug-emulator.md).
+If you have not done so already, install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme). See also [Debug with the Emulator](../bot-service-debug-emulator.md).
 
 <!-- auth config steps -->
-In order for the bot sample login to work you must configure the emulator
-as shown in [Configure the emulator for authentication](../bot-service-debug-emulator.md#configure-the-emulator-for-authentication).
+In order for the bot sample login to work you must configure the Emulator
+as shown in [Configure the Emulator for authentication](../bot-service-debug-emulator.md#configure-the-emulator-for-authentication).
 
 ### Testing
 
@@ -331,11 +331,10 @@ After you have configured the authentication mechanism, you can perform the actu
 >
 > See [Connect a bot to Direct Line](~/bot-service-channel-connect-directline.md#configure-settings) and [Enhanced Direct Line Authentication Features](https://blog.botframework.com/2018/09/25/enhanced-direct-line-authentication-features/).
 
-
 1. Run the bot sample locally on your machine.
-1. Start the emulator.
+1. Start the Emulator.
 1. You will need to provide your bot's app ID and password when you connect to the bot.
-    - You get the app ID and the password from the Azure app registration. These are the same values you assigned to the bot app in the `appsettings.json` or `.env` file. In the emulator, you assign these values in the configuration file or the first time you connect to the bot.
+    - You get the app ID and the password from the Azure app registration. These are the same values you assigned to the bot app in the `appsettings.json` or `.env` file. In the Emulator, you assign these values in the configuration file or the first time you connect to the bot.
     - If you needed to XML-escape the password in your bot code, you also need to do so here.
 1. Type `help` to see a list of available commands for the bot, and test the authentication features.
 1. Once you've signed in, you don't need to provide your credentials again until you sign out.

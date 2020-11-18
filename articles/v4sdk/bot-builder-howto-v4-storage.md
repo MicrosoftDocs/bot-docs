@@ -301,12 +301,12 @@ class MyBot(ActivityHandler):
 
 Run your bot locally.
 
-### Start the emulator and connect your bot
+### Start the Emulator and connect your bot
 
 Install the Bot Framework [Emulator](https://aka.ms/bot-framework-emulator-readme)
-Next, start the emulator and then connect to your bot in the emulator:
+Next, start the Emulator and then connect to your bot in the Emulator:
 
-1. Click the **Create new bot configuration** link in the emulator "Welcome" tab.
+1. Click the **Create new bot configuration** link in the Emulator "Welcome" tab.
 2. Fill in fields to connect to your bot, given the information on the webpage displayed when you started your bot.
 
 ### Interact with your bot
@@ -551,11 +551,11 @@ def __init__(self):
 
 Run your bot locally.
 
-## Test your Cosmos DB bot with bot framework emulator
+## Test your Cosmos DB bot with bot framework Emulator
 
-Now start your bot framework emulator and connect to your bot:
+Now start your bot framework Emulator and connect to your bot:
 
-1. Click the **Create new bot configuration** link in the emulator "Welcome" tab.
+1. Click the **Create new bot configuration** link in the Emulator "Welcome" tab.
 2. Fill in fields to connect to your bot, given the information on the webpage displayed when you started your bot.
 
 ## Interact with your Cosmos DB bot
@@ -740,11 +740,11 @@ Once your storage is set to point to your Blob Storage account, your bot code wi
 
 Run your bot locally.
 
-## Start the emulator and connect your Blob storage bot
+## Start the Emulator and connect your Blob storage bot
 
-Next, start the emulator and then connect to your bot in the emulator:
+Next, start the Emulator and then connect to your bot in the Emulator:
 
-1. Click the **Create new bot configuration** link in the emulator "Welcome" tab.
+1. Click the **Create new bot configuration** link in the Emulator "Welcome" tab.
 2. Fill in fields to connect to your bot, given the information on the webpage displayed when you started your bot.
 
 ## Interact with your Blob storage bot
@@ -803,7 +803,7 @@ public class EchoBot : ActivityHandler
 
 ### Store user conversations in azure blob transcripts
 
-After a blob container is available to store transcripts you can begin to preserve your users' conversations with your bot. These conversations can later be used as a debugging tool to see how users interact with your bot. Each emulator _Restart conversation_ initiates the creation of a new transcript conversation list. The following code preserves user conversation inputs within a stored transcript file.
+After a blob container is available to store transcripts you can begin to preserve your users' conversations with your bot. These conversations can later be used as a debugging tool to see how users interact with your bot. Each Emulator _Restart conversation_ initiates the creation of a new transcript conversation list. The following code preserves user conversation inputs within a stored transcript file.
 
 - The current transcript is saved using `LogActivityAsync`.
 - Saved transcripts are retrieved using `ListTranscriptsAsync`.

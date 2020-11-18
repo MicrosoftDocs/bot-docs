@@ -240,7 +240,7 @@ As mentioned above, some user inputs generate a *Hero Card* in response to their
 Download and install the latest [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
 
 1. Run the sample locally on your machine. If you need instructions, refer to the README file for [C# Sample](https://aka.ms/welcome-user-mvc) or [JS Sample](https://aka.ms/bot-welcome-sample-js).
-1. Use the emulator to test the bot as shown below.
+1. Use the Emulator to test the bot as shown below.
 
 ![test welcome bot sample](media/welcome-user-emulator-1.png)
 
@@ -256,5 +256,3 @@ Learn more about various media responses in [Add media to messages](./bot-builde
 
 > [!div class="nextstepaction"]
 > [Gather user input](bot-builder-prompts.md)
-
-
