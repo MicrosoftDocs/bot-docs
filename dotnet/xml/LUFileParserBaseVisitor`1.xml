@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
     <AssemblyVersion>4.11.0.0</AssemblyVersion>
+    <AssemblyVersion>4.11.1.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="Result" />
@@ -50,6 +51,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -70,6 +72,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -104,6 +107,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -138,6 +142,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -172,6 +177,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -206,6 +212,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -240,6 +247,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -274,6 +282,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -308,6 +317,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -342,6 +352,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -376,6 +387,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -410,6 +422,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -444,6 +457,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -478,6 +492,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -512,6 +527,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -546,6 +562,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -580,6 +597,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -614,6 +632,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -648,6 +667,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -682,6 +702,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -716,6 +737,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -750,6 +772,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -784,6 +807,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -818,6 +842,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -852,6 +877,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -886,6 +912,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -920,6 +947,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -954,6 +982,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -988,6 +1017,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -1022,6 +1052,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -1056,6 +1087,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -1090,6 +1122,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -1124,6 +1157,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -1158,6 +1192,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -1192,6 +1227,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -1226,6 +1262,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -1260,6 +1297,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -1294,6 +1332,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -1328,6 +1367,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -1362,6 +1402,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -1396,6 +1437,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -1430,6 +1472,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -1464,6 +1507,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -1498,6 +1542,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -1532,6 +1577,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -1566,6 +1612,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -1600,6 +1647,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -1634,6 +1682,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -1668,6 +1717,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -1702,6 +1752,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -1736,6 +1787,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -1770,6 +1822,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -1804,6 +1857,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -1838,6 +1892,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -1872,6 +1927,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -1906,6 +1962,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -1940,6 +1997,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -1974,6 +2032,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -2008,6 +2067,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>
@@ -2042,6 +2102,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Result</ReturnType>

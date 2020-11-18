@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
     <AssemblyVersion>4.11.0.0</AssemblyVersion>
+    <AssemblyVersion>4.11.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Antlr4.Runtime.ParserRuleContext</BaseTypeName>
@@ -27,6 +28,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="parent" Type="Antlr4.Runtime.ParserRuleContext" />
@@ -49,6 +51,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TResult</ReturnType>
@@ -77,6 +80,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
@@ -98,6 +102,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -121,6 +126,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
@@ -142,6 +148,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -165,6 +172,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>LUFileParser+NewCompositeDefinitionContext</ReturnType>
@@ -186,6 +194,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>LUFileParser+NewEntityNameContext</ReturnType>
@@ -207,6 +216,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>LUFileParser+NewEntityNameWithWSContext</ReturnType>
@@ -228,6 +238,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>LUFileParser+NewEntityRolesContext</ReturnType>
@@ -249,6 +260,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>LUFileParser+NewEntityTypeContext</ReturnType>
@@ -270,6 +282,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>LUFileParser+NewEntityUsesFeaturesContext</ReturnType>
@@ -291,6 +304,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>LUFileParser+NewlineContext</ReturnType>
@@ -312,6 +326,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>LUFileParser+NewRegexDefinitionContext</ReturnType>
@@ -333,6 +348,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -353,6 +369,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Antlr4.Runtime.Tree.ITerminalNode[]</ReturnType>
@@ -374,6 +391,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bot.Builder.Parsers.LU</AssemblyName>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Antlr4.Runtime.Tree.ITerminalNode</ReturnType>
