@@ -250,7 +250,7 @@ The [Bot Framework Emulator](../bot-service-debug-emulator.md) is a desktop tool
 Instead, it uses the Microsoft App ID and Microsoft App Password that you specify when you connect the emulator to your bot to create tokens that are identical to those that the bot creates.
 When the emulator sends a request to your bot, it specifies the JWT token in the `Authorization` header of the request -- in essence, using the bot's own credentials to authenticate the request.
 
-If you are implementing an authentication library and want to accept requests from the Bot Framework Emulator, you must add this additional verification path. The path is structurally similar to the [Connector -> Bot](#connector-to-bot) verification path, but it uses MSA’s OpenID document instead of the Bot Connector’s OpenID document.
+If you are implementing an authentication library and want to accept requests from the Bot Framework Emulator, you must add this additional verification path. The path is structurally similar to the [Connector -> Bot](#connector-to-bot) verification path, but it uses MSA's OpenID document instead of the Bot Connector's OpenID document.
 
 This diagram shows the steps for emulator-to-bot authentication:
 
@@ -383,13 +383,13 @@ payload:
 
 | Protocol version | Valid value |
 |----|----|
-| v3.1 & v3.2 |  Your bot’s Microsoft App ID + `/.default` |
+| v3.1 & v3.2 |  Your bot's Microsoft App ID + `/.default` |
 
 #### JWT Audience
 
 | Protocol version | Valid value |
 |----|----|
-| v3.1 & v3.2 | Your bot’s Microsoft App ID |
+| v3.1 & v3.2 | Your bot's Microsoft App ID |
 
 #### JWT Issuer
 

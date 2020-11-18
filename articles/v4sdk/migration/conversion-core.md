@@ -390,7 +390,7 @@ In **ResetPassword.cs** change the return type of the `MobileNumber` as follows:
 ## Final porting steps
 To complete the porting process, perform these steps:
 
-1. Create an `AdapterWithErrorHandler` class to define an adapter which includes an error handler that can catch exceptions in the middleware or application. The adapter processes and directs incoming activities in through the bot middleware pipeline to your bot’s logic and then back out again. Use the following code to create the class:
+1. Create an `AdapterWithErrorHandler` class to define an adapter which includes an error handler that can catch exceptions in the middleware or application. The adapter processes and directs incoming activities in through the bot middleware pipeline to your bot's logic and then back out again. Use the following code to create the class:
 
  [!code-csharp[MobileNumber](~/../botbuilder-samples/MigrationV3V4/CSharp/ContosoHelpdeskChatBot-V4NetCore/ContosoHelpdeskChatBot/AdapterWithErrorHandler.cs?range=4-46)]
 1. Modify the **wwwroot\default.htm** page as you see fit.

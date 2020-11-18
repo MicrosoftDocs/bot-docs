@@ -28,7 +28,7 @@ The interaction between users and bots is often free-form, and bots need to unde
 
 ## Recognize intent
 
-[LUIS](https://docs.microsoft.com/azure/cognitive-services/luis/home) helps you by determining the user’s **intent**, which is what they want to do, from what they say, so your bot can respond appropriately. LUIS is especially helpful when what they say to your bot doesn’t follow a predictable structure or a specific pattern. If a bot has a conversational user interface, in which the user speaks or types a response, there can be endless variations on *utterances*, which are the spoken or textual input from the user.
+[LUIS](https://docs.microsoft.com/azure/cognitive-services/luis/home) helps you by determining the user's **intent**, which is what they want to do, from what they say, so your bot can respond appropriately. LUIS is especially helpful when what they say to your bot doesn't follow a predictable structure or a specific pattern. If a bot has a conversational user interface, in which the user speaks or types a response, there can be endless variations on *utterances*, which are the spoken or textual input from the user.
 
 For example, consider the many ways a user of a travel bot can ask to book a flight.
 

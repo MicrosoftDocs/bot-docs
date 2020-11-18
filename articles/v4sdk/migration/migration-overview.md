@@ -56,7 +56,7 @@ If you can not migrate from a v3 bot to a v4 bot immediately, you may still want
   - Comprehensive solution that simplifies the creation of bots with basic conversational intents, Dispatch integration, QnA Maker, Application Insights and an automated deployment.
   - Extensible Skills. Compose conversational experiences by stitching together re-usable conversational capabilities, known as Skills.
 - Testing Framework: Out of the box test capabilities with new transport independent adaptor architecture
-- Telemetry: Gain key insights into your bot’s health and behavior with the Conversational AI Analytics
+- Telemetry: Gain key insights into your bot's health and behavior with the Conversational AI Analytics
 - Coming (preview)
   - Adaptive Dialogs: Build conversations that can be dynamically changed as the conversation progresses
   - Language Generation: Define multiple variations on a phrase

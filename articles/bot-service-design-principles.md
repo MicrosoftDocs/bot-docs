@@ -39,7 +39,7 @@ But unless it addresses the problems that your users need to solve, these capabi
 In fact, some bots have no conversational capability at all. And in many cases, that's perfectly fine.
 
 - **Voice**: 
-It isn’t always the case that enabling bots for speech will lead to great user experiences. 
+It isn't always the case that enabling bots for speech will lead to great user experiences. 
 Often, forcing users to use voice can result in a frustrating user experience. 
 As you design your bot, always consider whether voice is the appropriate channel for the given problem. 
 Is there going to be a noisy environment? 
@@ -52,9 +52,9 @@ Bots are no different in that regard.
 Therefore, ensuring a great user experience should be your number one priority when designing a bot. 
 Some key considerations include:
 
-- Does the bot easily solve the user’s problem with the minimum number of steps?
+- Does the bot easily solve the user's problem with the minimum number of steps?
 
-- Does the bot solve the user’s problem better/easier/faster than any of the alternative experiences?
+- Does the bot solve the user's problem better/easier/faster than any of the alternative experiences?
 
 - Does the bot run on the devices and platforms the user cares about?
 

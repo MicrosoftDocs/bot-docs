@@ -47,7 +47,7 @@ An error response with HTTP status code 429 indicates that too many requests hav
 
 ## Why aren't my bot messages getting received by the user?
 
-The message activity generated in response must be correctly addressed, otherwise it won’t arrive at its intended destination. In the vast majority of cases you will not need to handle this explicitly; the SDK takes care of addressing the message activity for you.
+The message activity generated in response must be correctly addressed, otherwise it won't arrive at its intended destination. In the vast majority of cases you will not need to handle this explicitly; the SDK takes care of addressing the message activity for you.
 
 Correctly addressing an activity means including the appropriate *conversation IDs* details along with details about the sender. In most cases, the message activity is sent in response to one that had arrived. Therefore, the addressing details can be taken from the inbound activity.
 
@@ -105,7 +105,7 @@ For Azure Active Directory authentication, see the [Add authentication to your b
 
 Some channels, such as SMS and email, provide unscoped addresses. In these cases, messages from the user will contain the raw user ID in the `from.Id` property.
 
-Other channels, such as Facebook and Slack, provide either scoped or tenanted addresses in a way that prevents a bot from being able to predict a user’s ID ahead of time. In these cases, you will need to authenticate the user via a login link or shared secret in order to determine whether or not they are authorized to use the bot.
+Other channels, such as Facebook and Slack, provide either scoped or tenanted addresses in a way that prevents a bot from being able to predict a user's ID ahead of time. In these cases, you will need to authenticate the user via a login link or shared secret in order to determine whether or not they are authorized to use the bot.
 
 ## Why does my Direct Line 1.1 conversation start over after every message?
 
@@ -148,7 +148,7 @@ If your bot is registered in dev.botframework.com, and you want to migrate it to
 
 1. From the target directory, add a new user (via email address) that is not a member of the default directory, grant the user contributor role on the subscriptions that are the target of the migration.
 
-2. From [Dev Portal](https://dev.botframework.com), add the user’s email address as co-owners of the bot that should be migrated. Then sign out.
+2. From [Dev Portal](https://dev.botframework.com), add the user's email address as co-owners of the bot that should be migrated. Then sign out.
 
 3. Sign in to [Dev Portal](https://dev.botframework.com) as the new user and proceed to migrate the bot.
 

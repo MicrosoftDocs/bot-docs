@@ -29,7 +29,7 @@ This article describes how to use the Direct Line App Service Extension with an 
 
 ## Configure the VNET Network Security Groups (NSG)
 
-1. Direct Line App Service Extension requires an outbound connection so that it can issue HTTP requests. This can be configured as an outbound rule in your VNET NSG that is associated with the App Service Environment’s subnet. The rule that required is as follows:
+1. Direct Line App Service Extension requires an outbound connection so that it can issue HTTP requests. This can be configured as an outbound rule in your VNET NSG that is associated with the App Service Environment's subnet. The rule that required is as follows:
 
 |Field|Value|
 |---|---|

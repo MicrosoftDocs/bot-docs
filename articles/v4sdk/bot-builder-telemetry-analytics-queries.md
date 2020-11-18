@@ -78,13 +78,13 @@ OPEN ISSUE 1:
 
     "Days with little interaction may indicate service health issues"
 
-    This is an interesting statement – I’m not sure if there’s a way to overlay service health metrics over these metrics.  It should all be in App Insights.
+    This is an interesting statement – I'm not sure if there's a way to overlay service health metrics over these metrics.  It should all be in App Insights.
 
 OPEN ISSUE 2:
 
     Gary Pretty: Overlap for activity per period - Looks like we have a large overlap between ‘Activity per period’ and ‘Activity per user per period’ – given that activity per user is only really useful in some scenarios, such as authenticated, I think it might simplify things to update the ‘Activity per period’ query / instructions to include a note as to how to filter down per user?   Not sure about this one myself, but thought it was worth bringing up.
 
-    < I agree with you.  One approach might be to include both in the same section, with the ‘Activity per period’ as the primary with a note about what might be considered more of a ‘special case’ (I will need input on more details of where this is most applicable – as I’ve commented in a previous email). >
+    < I agree with you.  One approach might be to include both in the same section, with the ‘Activity per period’ as the primary with a note about what might be considered more of a ‘special case’ (I will need input on more details of where this is most applicable – as I've commented in a previous email). >
 
 
 QUESTION: What changes are required?
@@ -452,7 +452,7 @@ customEvents
 
 <!--  
 
-Open Issue: More interesting than the “certainty” score would be linking intent to dialog completion %. That infers “certainty” by user’s actions. 
+Open Issue: More interesting than the “certainty” score would be linking intent to dialog completion %. That infers “certainty” by user's actions. 
 
 QUESTION: What changes are required?
 

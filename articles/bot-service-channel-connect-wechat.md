@@ -32,7 +32,7 @@ You can change the display language you prefer before login.
 
 ### Register A Service Account
 
-A real service account must be verified by WeChat, you can’t enable webhook before account is verified. To create your own service account, please follow the instruction [Here](https://kf.qq.com/product/weixinmp.html#hid=87).
+A real service account must be verified by WeChat, you can't enable webhook before account is verified. To create your own service account, please follow the instruction [Here](https://kf.qq.com/product/weixinmp.html#hid=87).
 For short, just click the Register Now on the top, select the Service Account and follow the instruction.
 
  ![register_account](./media/channels/wechat-register-account.png)
