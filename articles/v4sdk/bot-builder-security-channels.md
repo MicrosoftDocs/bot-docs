@@ -1,7 +1,7 @@
 ---
 title: Bot Framework channels security - Bot Service
 description: Learn about potential security risks when users connect to a bot using the allowed channels
-author: v-mimiel
+author: mmiele
 ms.author: v-mimiel
 manager: kamrani
 ms.topic: article
@@ -24,7 +24,7 @@ The attacker makes the bot thinks they are someone else. For example, in Web Cha
 #### Impersonation mitigation
 
 - [Connect a bot to Direct Line](../bot-service-channel-connect-directline.md).
-- Enable the Direct Line channel's [enhanced authentication](../bot-service-channel-connect-directline.md#configure-settings) options to allow the Azure Bot Service to further detect and reject any user ID change. This means the user ID (`Activity.From.Id`) on messages from Direct Line to your bot will always be the same as the one you initialized the Web Chat control with. Note that this feature requires the user ID to start with `dl_`. See the following [code samples](../rest-api/bot-framework-rest-direct-line-3-0-authentication#code-examples).
+- Enable the Direct Line channel's [enhanced authentication](../bot-service-channel-connect-directline.md#configure-settings) options to allow the Azure Bot Service to further detect and reject any user ID change. This means the user ID (`Activity.From.Id`) on messages from Direct Line to your bot will always be the same as the one you initialized the Web Chat control with. Note that this feature requires the user ID to start with `dl_`. See the following [code samples](../rest-api/bot-framework-rest-direct-line-3-0-authentication.md#code-examples).
 
 > [!NOTE]
 > When a *User.Id* is provided while exchanging a secret for a token, that *User.Id* is embedded in the token. Direct Line makes sure the messages sent to the bot have that id as the activity's *From.Id*. If a client sends a message to Direct Line having a different *From.Id*, it will be changed to the **Id in the token** before forwarding the message to the bot. So you cannot use another user ID after a channel secret is initialized with a user ID.
