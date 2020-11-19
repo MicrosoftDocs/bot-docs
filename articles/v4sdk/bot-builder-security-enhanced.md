@@ -17,8 +17,8 @@ This article describes potential security risks when the users connect to a bot,
 
 You must be aware that there are two user identities:
 
-- The channel user’s identity. An attacker can use it for [Impersonation](#Impersonation).
-- The user’s identity from the identity provider that the bot uses to authenticated the user. An attacker can use it for [Identity spoofing](#Identity-spoofing).
+- The channel user’s identity. An attacker can use it for [Impersonation](#impersonation).
+- The user’s identity from the identity provider that the bot uses to authenticated the user. An attacker can use it for [Identity spoofing](#identity-spoofing).
 
 ## Impersonation
 
