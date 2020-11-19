@@ -227,12 +227,12 @@ Use the following for testing:
 
 # [Emulator](#tab/eml)
 
-### Test using the emulator
+### Test using the Emulator
 
-If you have not done so already, install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme). See also [Debug with the emulator](../bot-service-debug-emulator.md).
+If you have not done so already, install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme). See also [Debug with the Emulator](../bot-service-debug-emulator.md).
 
-In order for the bot sample login to work you must configure the emulator
-as shown in [Configure the emulator for authentication](../bot-service-debug-emulator.md#configure-the-emulator-for-authentication).
+In order for the bot sample login to work you must configure the Emulator
+as shown in [Configure the Emulator for authentication](../bot-service-debug-emulator.md#configure-the-emulator-for-authentication).
 
 After you have configured the authentication mechanism, you can perform the actual bot sample testing.
 
@@ -245,9 +245,9 @@ Notice that in the`RootBot` project `appsettings.json` file you have the followi
     "SkillEndpoint": "http://localhost:39783/api/messages"
 ```
 > [!NOTE]
-> These settings imply that, with both `RootBot` and `SkillBot` are running on the local machine. The emulator communicates with `RootBot` on port 3978 and `RootBot` communicates with `SkillBot` on port 39783. As soon as you start debugging, two default browser windows open. One on port 3978 and the other on port 39783.
+> These settings imply that, with both `RootBot` and `SkillBot` are running on the local machine. The Emulator communicates with `RootBot` on port 3978 and `RootBot` communicates with `SkillBot` on port 39783. As soon as you start debugging, two default browser windows open. One on port 3978 and the other on port 39783.
 
-1. Start the emulator.
+1. Start the Emulator.
 1. You need to provide your `RootBot` registration app ID and password when you connect to the bot.
 1. Type `hi` to start the conversation.
 1. Enter **login**.  The `RootBot` will display a *Sign In to AAD* authentication card.
@@ -265,7 +265,7 @@ Notice that in the`RootBot` project `appsettings.json` file you have the followi
 
     Now you are ready to communicate with the `SkillBot`. Once you've signed using the `RootBot`, you don't need to provide your credentials again until you sign out. This demonstrates that SSO is working.
 
-1. Enter **skill login** in the emulator box. You will not be asked to login again. Instead the SkillBot token is displayed.
+1. Enter **skill login** in the Emulator box. You will not be asked to login again. Instead the SkillBot token is displayed.
 
 1. Go ahead enter **skill token** to display the token again.
 

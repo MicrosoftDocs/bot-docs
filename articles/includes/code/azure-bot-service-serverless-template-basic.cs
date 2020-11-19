@@ -14,7 +14,7 @@ if (!await botAuthenticator.Value.TryAuthenticateAsync(req, new [] {activity}, C
 switch (activity.GetActivityType())
 {
     case ActivityTypes.Message:
-        // Processes the user’s message.
+        // Processes the user's message.
         break;
     case ActivityTypes.ConversationUpdate:
         // Welcomes the users to the conversation.

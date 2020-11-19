@@ -613,7 +613,7 @@ At this point, we should be able to run the bot locally and attach to it with th
 
 1. Run the sample locally on your machine.
     If you start a debugging session in Visual Studio Code, logging information is sent to the debug console as you test the bot.
-1. Start the emulator and connect to the bot.
+1. Start the Emulator and connect to the bot.
 1. Send messages to test the main, flight, and hotel dialogs.
 
 ## Additional resources
@@ -629,5 +629,5 @@ v4 how-to topics:
 - [Send and receive text messages](../bot-builder-howto-send-messages.md)
 - [Save user and conversation data](../bot-builder-howto-v4-state.md)
 - [Implement sequential conversation flow](../bot-builder-dialog-manage-conversation-flow.md)
-- [Debug with the emulator](../../bot-service-debug-emulator.md)
+- [Debug with the Emulator](../../bot-service-debug-emulator.md)
 - [Add telemetry to your bot](../bot-builder-telemetry.md)

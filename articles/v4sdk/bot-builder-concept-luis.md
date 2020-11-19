@@ -28,13 +28,13 @@ The interaction between users and bots is often free-form, and bots need to unde
 
 ## Recognize intent
 
-[LUIS](https://docs.microsoft.com/azure/cognitive-services/luis/home) helps you by determining the user’s **intent**, which is what they want to do, from what they say, so your bot can respond appropriately. LUIS is especially helpful when what they say to your bot doesn’t follow a predictable structure or a specific pattern. If a bot has a conversational user interface, in which the user speaks or types a response, there can be endless variations on *utterances*, which are the spoken or textual input from the user.
+[LUIS](https://docs.microsoft.com/azure/cognitive-services/luis/home) helps you by determining the user's **intent**, which is what they want to do, from what they say, so your bot can respond appropriately. LUIS is especially helpful when what they say to your bot doesn't follow a predictable structure or a specific pattern. If a bot has a conversational user interface, in which the user speaks or types a response, there can be endless variations on *utterances*, which are the spoken or textual input from the user.
 
 For example, consider the many ways a user of a travel bot can ask to book a flight.
 
 ![Various differently formed utterances for book a flight](media/cognitive-services-add-bot-language/cognitive-services-luis-utterances.png)
 
-These utterances can have different structures and contain various synonyms for “flight” that you haven't thought of. In your bot, it can be challenging to write the logic that matches all the utterances, and still distinguishes them from other intents that contain the same words. Additionally, your bot needs to extract *entities*, which are other important words like locations and times. LUIS makes this process easy by contextually identifying intents and entities for you.
+These utterances can have different structures and contain various synonyms for "flight" that you haven't thought of. In your bot, it can be challenging to write the logic that matches all the utterances, and still distinguishes them from other intents that contain the same words. Additionally, your bot needs to extract *entities*, which are other important words like locations and times. LUIS makes this process easy by contextually identifying intents and entities for you.
 
 When you design your bot for natural language input, you determine what intents and entities your bot needs to recognize, and think about how they'll connect to actions that your bot takes. In [luis.ai](https://www.luis.ai), you define custom intents and entities and you specify their behavior by providing examples for each intent and labeling the entities within them.
 
@@ -56,7 +56,7 @@ Once you have set up and connected LUIS, your bot can send the message to your L
 
 ![How intents and entities are passed to your bot](./media/cognitive-services-add-bot-language/cognitive-services-luis-message-flow-bot-code.png)
 
-To get started using a LUIS app with your bot, check out [using LUIS for language understanding](https://docs.microsoft.com/azure/bot-service/bot-builder-howto-v4-luis?view=azure-bot-service-4.0).
+To get started using a LUIS app with your bot, check out [using LUIS for language understanding](bot-builder-howto-v4-luis.md).
 
 ## Best practices for Language Understanding
 
@@ -95,7 +95,7 @@ The Dispatch tool helps you integrate multiple LUIS apps and QnA Maker services 
 
 ## Use LUIS to improve speech recognition
 
-For a bot that users will speak to, integrating it with LUIS can help your bot identify words that might be misunderstood when converting speech to text.  For example, in a chess scenario, a user might say: "Move knight to A 7". Without context for the user's intent, the utterance might be recognized as: "Move night 287". By creating entities that represent chess pieces and coordinates and labeling them in utterances, you provide context for speech recognition to identify them. You can [enable speech recognition priming](https://docs.microsoft.com/azure/bot-service/bot-service-manage-speech-priming?view=azure-bot-service-4.0) with Bot Framework channels that are integrated with Bing Speech, such as Web Chat, the Bot Framework Emulator and Cortana.  
+For a bot that users will speak to, integrating it with LUIS can help your bot identify words that might be misunderstood when converting speech to text.  For example, in a chess scenario, a user might say: "Move knight to A 7". Without context for the user's intent, the utterance might be recognized as: "Move night 287". By creating entities that represent chess pieces and coordinates and labeling them in utterances, you provide context for speech recognition to identify them. You can [enable speech recognition priming](../bot-service-manage-speech-priming.md) with Bot Framework channels that are integrated with Bing Speech, such as Web Chat, the Bot Framework Emulator and Cortana.  
 
 ## Additional resources
 Refer to [Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/) documentation for more information.

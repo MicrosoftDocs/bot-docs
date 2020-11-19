@@ -1,4 +1,3 @@
-
 This article starts with the [CoreBot sample app](https://aka.ms/js-core-sample) and adds the code required to integrate telemetry into any bot. This will enable Application Insights to begin tracking requests.
 
 > [!IMPORTANT]
@@ -54,7 +53,7 @@ This article starts with the [CoreBot sample app](https://aka.ms/js-core-sample)
     ```
     -->
 
-5. Next, you need to add the _telemetry middleware_ to the [adapter middleware pipeline](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-middleware?view=azure-bot-service-4.0#the-bot-middleware-pipeline). To do this, add the following code, starting just after the error handling code:  
+5. Next, you need to add the _telemetry middleware_ to the [adapter middleware pipeline](../v4sdk/bot-builder-concept-middleware.md#the-bot-middleware-pipeline). To do this, add the following code, starting just after the error handling code:  
 
     <!-- This level of detail may be too much:
         - The first step is to create a new telemetry client, in this case you are using Application Insights as the telemetry client using the module `ApplicationInsightsTelemetryClient` referenced in the previous step. This line of code will call the function `getTelemetryClient` that you will soon create, passing in the Application Insights key and that function will return a new telemetry client: `var telemetryClient = getTelemetryClient(process.env.InstrumentationKey);`. 
@@ -106,4 +105,4 @@ This article starts with the [CoreBot sample app](https://aka.ms/js-core-sample)
 
     Node.js which follows the CommonJS module system, and the built in `require` function to include modules that exist in separate files.
 
-At this point the preliminary work to enable telemetry using Application Insights is done.  You can run your bot locally using the bot emulator and then go into Application Insights to see what is being logged, such as response time, overall app health, and general running information.
+At this point the preliminary work to enable telemetry using Application Insights is done.  You can run your bot locally using the bot Emulator and then go into Application Insights to see what is being logged, such as response time, overall app health, and general running information.

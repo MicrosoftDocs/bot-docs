@@ -28,15 +28,15 @@ Upon receiving user input, this sample checks the stored conversation state to s
 
 ## [C#](#tab/csharp)
 
-![state bot sample](media/StateBotSample-Overview.png)
+![C# state bot sample](media/StateBotSample-Overview.png)
 
 ## [JavaScript](#tab/javascript)
 
-![state bot sample](media/StateBotSample-JS-Overview.png)
+![JavaScript state bot sample](media/StateBotSample-JS-Overview.png)
 
 ## [Python](#tab/python)
 
-![state bot sample](media/StateBotSample-Python-Overview.png)
+![Python state bot sample](media/StateBotSample-Python-Overview.png)
 
 ---
 
@@ -211,7 +211,7 @@ Before exiting each dialog turn, the bot uses the state management objects' `sav
 Download and install the latest [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
 
 1. Run the sample locally on your machine. If you need instructions, refer to the README file for [C# Sample](https://aka.ms/statebot-sample-cs) or [JS Sample](https://aka.ms/statebot-sample-js).
-1. Use the emulator to test the bot as shown below.
+1. Use the Emulator to test the bot as shown below.
 
 ![test state bot sample](media/state-bot-testing-emulator.png)
 

@@ -23,13 +23,13 @@ This article describes how to use the Direct Line App Service Extension with an 
     - Instructions for creating an internal App Service Environment can be found in [Create and use an Internal Load Balancer App Service Environment](https://docs.microsoft.com/azure/app-service/environment/create-ilb-ase) article.
 1. Once you have created your App Service Environment, you need to add an App Service Plan inside of it where you can deploy your bots (and thus run Direct Line App Service Extension). To do this:
     - Go to https://portal.azure.com/
-    - Create a new “App Service Plan” resource.
+    - Create a new "App Service Plan" resource.
     - Under Region, select your App Service Environment
     - Finish creating your App Service Plan
 
 ## Configure the VNET Network Security Groups (NSG)
 
-1. Direct Line App Service Extension requires an outbound connection so that it can issue HTTP requests. This can be configured as an outbound rule in your VNET NSG that is associated with the App Service Environment’s subnet. The rule that required is as follows:
+1. Direct Line App Service Extension requires an outbound connection so that it can issue HTTP requests. This can be configured as an outbound rule in your VNET NSG that is associated with the App Service Environment's subnet. The rule that required is as follows:
 
 |Field|Value|
 |---|---|

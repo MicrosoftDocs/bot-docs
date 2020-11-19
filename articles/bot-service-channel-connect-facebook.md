@@ -185,17 +185,17 @@ Your bot's source code needs to be updated to include an adapter to communicate 
 
 You will need to update appsettings.json of your bot with **Facebook App ID**, **Facebook App Secret** and **Page Access Token** values copied from the Facebook Workplace previously. Instead of a traditional pageID, use the numbers following the integrations name on its **About** page. Follow these instructions to update your bot source code in [JavaScript/Node.js](https://aka.ms/npm-botbuilder-adapter-facebook) or [C#/.NET](https://aka.ms/botbuilder-dotnet-facebook-adapter).
 
-### Submit for review
+### Submit Workplace app for review
 
 Please refer to the **Connect a bot to Facebook Messenger** section and [Workplace Developer Documentation](https://developers.facebook.com/docs/workplace) for details.
 
-### Make the App public and publish the Page
+### Make the Workplace app public and publish the Page
 
 Please refer to the **Connect a bot to Facebook Messenger** section for details.
 
 ### Setting the API version
 
-If you receive a notification from Facebook about deprecation of a certain version of the Graph API, go to [Facebook developers page](https://developers.facebook.com). Navigate to your bot’s **App Settings** and go to **Settings > Advanced > Upgrade API version**, then switch **Upgrade All Calls** to a more recent version.
+If you receive a notification from Facebook about deprecation of a certain version of the Graph API, go to [Facebook developers page](https://developers.facebook.com). Navigate to your bot's **App Settings** and go to **Settings > Advanced > Upgrade API version**, then switch **Upgrade All Calls** to a more recent version.
 
 ![API version upgrade](media/channels/fb-version-upgrade.png)
 
@@ -310,14 +310,14 @@ Add the following line to the ***ConfigureServices*** method within your startup
 services.AddSingleton<FacebookAdapter, FacebookAdapterWithErrorHandler>();
 ```
 
-Once added, your ***ConfigureServices*** method shold look like this.
+Once added, your ***ConfigureServices*** method should look like this.
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
 {
     services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-    // Create the default Bot Framework Adapter (used for Azure Bot Service channels and emulator).
+    // Create the default Bot Framework Adapter (used for Azure Bot Service channels and Emulator).
     services.AddSingleton<IBotFrameworkHttpAdapter, BotFrameworkAdapterWithErrorHandler>();
 
     // Create the Facebook Adapter
@@ -335,7 +335,7 @@ Now that you have wired up the adapter in your bot project, you need to provide 
 To complete this step, [deploy your bot to Azure](https://aka.ms/bot-builder-deploy-az-cli) and make a note of the URL of your deployed bot.
 
 > [!NOTE]
-> If you are not ready to deploy your bot to Azure, or wish to debug your bot when using the Facebook adapter, you can use a tool such as [ngrok](https://www.ngrok.com) (which you will likely already have installed if you have used the Bot Framework emulator previously) to tunnel through to your bot running locally and provide you with a publicly accessible URL for this.
+> If you are not ready to deploy your bot to Azure, or wish to debug your bot when using the Facebook adapter, you can use a tool such as [ngrok](https://www.ngrok.com) (which you will likely already have installed if you have used the Bot Framework Emulator previously) to tunnel through to your bot running locally and provide you with a publicly accessible URL for this.
 >
 > If you wish create an ngrok tunnel and obtain a URL to your bot, use the following command in a terminal window (this assumes your local bot is running on port 3978, alter the port numbers in the command if your bot is not).
 >

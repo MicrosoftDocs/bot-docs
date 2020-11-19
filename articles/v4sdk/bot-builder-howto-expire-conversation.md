@@ -556,7 +556,7 @@ For more information, see [Configure time to live in Azure Cosmos DB][cosmos-ttl
 
 1. If you have not done so already, install the [Bot Framework Emulator][emulator-readme].
 1. Run the sample locally on your machine.
-1. Start the emulator, connect to your bot, and send a message to it.
+1. Start the Emulator, connect to your bot, and send a message to it.
 1. After one of the prompts, wait 30 seconds before responding.
 
 <!-- Footnote-style links -->

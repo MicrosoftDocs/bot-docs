@@ -46,4 +46,4 @@ For information on testing and debugging your bot, you can refer to the followin
 
 * [Debug a bot](../bot-service-debug-bot.md)
 * [Testing and debugging guidelines](../v4sdk/bot-builder-testing-debugging.md)
-* [Debug with the emulator](../bot-service-debug-emulator.md)
+* [Debug with the Emulator](../bot-service-debug-emulator.md)
