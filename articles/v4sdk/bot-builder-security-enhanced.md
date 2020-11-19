@@ -13,7 +13,7 @@ ms.date: 11/19/2020
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-This article describes potential security risks when the users connect to a bot, for example using the [Web Chat](~/bot-service-channel-connect-webchat.md) control. It also shows mitigating solutions using the [Direct Line](../bot-service-channel-directline.md) channel with **enhanced authentication** enabled.
+This article describes potential security risks when the users connect to a bot, for example using the [Web Chat](~/bot-service-channel-connect-webchat.md#embed-the-web-chat-control-in-a-web-page) control. It also shows mitigating solutions using the [Direct Line](../bot-service-channel-directline.md) channel with **enhanced authentication** enabled.
 
 ## Security risks
 
