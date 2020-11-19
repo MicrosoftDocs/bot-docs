@@ -15,7 +15,7 @@ ms.date: 11/19/2020
 
 This article describes potential security risks when the users connect to a bot using the allowed channels, in particular the [Web Chat](~/bot-service-channel-connect-webchat.md) channel. It also shows mitigating solutions using the [Direct Line](../bot-service-channel-directline.md) channel with **enhanced authentication** enabled and ....
 
-The code in this article is based on the sample: [MVC DirectLine token controller](~/../botbuilder-samples/experimental/DirectLineTokenSite).
+The code in this article is based on the sample: [MVC DirectLine token controller](https://github.com/microsoft/BotBuilder-Samples/tree/main/experimental/DirectLineTokenSite).
 
 ## Security risks
 
@@ -33,7 +33,7 @@ The attacker makes the bot thinks he is someone else. For example, in Web Chat, 
 
     This feature requires the user ID to start with `dl_` as shown in this code sample:
 
-    [!code-csharp[specify user id](~/../botbuilder-samples/experimental/DirectLineTokenSite/Bot_Auth_DL_Secure_Site_MVC/Controllers/HomeController.cs?range=15-50&highlight=23)]
+    [!code-csharp[specify user id](~/../botbuilder-samples/experimental/DirectLineTokenSite/Bot_Auth_DL_Secure_Site_MVC/Controllers/HomeController.cs?range=15-50&highlight=9)]
 
     The generated token, based on the Direct Line secret, is then used in the Web Chat control as shown in this code sample:
 
