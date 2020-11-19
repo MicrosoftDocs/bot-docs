@@ -15,13 +15,11 @@ ms.date: 11/19/2020
 
 This article describes potential security risks when the users connect to a bot, for example using the [Web Chat](~/bot-service-channel-connect-webchat.md#embed-the-web-chat-control-in-a-web-page) control. It also shows mitigating solutions using the [Direct Line](../bot-service-channel-directline.md) channel with **enhanced authentication** enabled.
 
-## Security risks
-
-### Impersonation
+## Impersonation
 
 The attacker makes the bot thinks he is someone else. For example, in Web Chat, the attacker can impersonate someone else by **changing the user ID** of his Web Chat instance.
 
-#### Impersonation mitigation
+### Impersonation mitigation
 
 - Make the **user ID unguessable**.
 - [Connect a bot to Direct Line](../bot-service-channel-connect-directline.md).
@@ -37,7 +35,7 @@ The attacker makes the bot thinks he is someone else. For example, in Web Chat, 
 
     [!code-csharp[specify token](~/../botbuilder-samples/experimental/DirectLineTokenSite/Bot_Auth_DL_Secure_Site_MVC/Views/Home/Index.cshtml?range=1-16&highlight=11-14)]
 
-### User identity spoofing
+## User identity spoofing
 
 Identity spoofing refers to the action of an attacker that assumes the identity of a legitimate user and then uses that identity to accomplish a malicious goal.
 
@@ -48,7 +46,7 @@ You must be aware that there are two user identities:
 
 When a bot asks the channel user A to sign-in to an identity provider, the sign-in process must assure that user A is the only one that signs into the provider. If another user B is also allowed to sign-in the provider, he would have access to user A resources through the bot.
 
-#### User identity spoofing mitigation
+### User identity spoofing mitigation
 
 In the Web Chat channel, there are two mechanisms to assure that the proper user is signed in.
 
@@ -58,7 +56,7 @@ In the Web Chat channel, there are two mechanisms to assure that the proper user
 To enable this protection, you must start Web Chat with a **Direct Line token** that contains a **list of trusted domains that can host the bot’s Web Chat client**. With enhanced authentication options, you can statically specify the trusted domain (origin) list in the Direct Line configuration page. See [enhanced authentication settings](../bot-service-channel-connect-directline.md#configure-settings).
 
 
-## Example
+## Examples
 
 The code in this article is based on the sample: [MVC DirectLine token controller](https://github.com/microsoft/BotBuilder-Samples/tree/main/experimental/DirectLineTokenSite).
 
