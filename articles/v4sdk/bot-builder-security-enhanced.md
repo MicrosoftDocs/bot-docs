@@ -9,11 +9,11 @@ ms.service: bot-service
 ms.date: 11/19/2020
 ---
 
-# Bot Framework channels security
+# Bot Framework enhanced authentication
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-This article describes potential security risks when the users connect to a bot using the allowed channels, in particular the [Web Chat](~/bot-service-channel-connect-webchat.md) channel. It also shows mitigating solutions using the [Direct Line](../bot-service-channel-directline.md) channel with **enhanced authentication** enabled and ....
+This article describes potential security risks when the users connect to a bot, for example using the [Web Chat](~/bot-service-channel-connect-webchat.md) control. It also shows mitigating solutions using the [Direct Line](../bot-service-channel-directline.md) channel with **enhanced authentication** enabled.
 
 ## Security risks
 
@@ -25,7 +25,7 @@ The attacker makes the bot thinks he is someone else. For example, in Web Chat, 
 
 - Make the **user ID unguessable**.
 - [Connect a bot to Direct Line](../bot-service-channel-connect-directline.md).
-- Enable the Direct Line channel's [enhanced authentication](../bot-service-channel-connect-directline.md#configure-settings) option to allow the Azure Bot Service to further detect and reject any user ID change. This means the user ID (`Activity.From.Id`) on messages from Direct Line to the bot will always be the same as the one you used to initialize the Web Chat control.
+- Enable the Direct Line channel's [enhanced authentication](../bot-service-channel-connect-directline.md#configure-settings) option to allow the Azure Bot Service to further detect and reject any user ID change. This means the user ID (`Activity.From.Id`) on messages from Direct Line to the bot will always be the same as the one you used to initialize the Web Chat control, for example.
 
     This is because Direct Line creates a **token** based on the Direct Line secret and embeds the *User.Id* in the token. Direct Line makes sure the messages sent to the bot have that *User id* as the activity's *From.Id*. If a client sends a message to Direct Line having a different *From.Id*, it will be changed to the **Id embedded in the token** before forwarding the message to the bot. So you cannot use another user ID after a channel secret is initialized with a user ID.
 
