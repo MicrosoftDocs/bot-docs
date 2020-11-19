@@ -107,9 +107,9 @@ What happens when the user does something unexpected while in the middle of a co
 Consider this scenario:
 
 ```
-    User: I’d like to book a flight
+    User: I'd like to book a flight
     Bot:  Sure. What is your destination city?
-    User: How’s the weather in Seattle?
+    User: How's the weather in Seattle?
     Bot:  Its 72 and sunny in Seattle
     ...
 ```
@@ -132,7 +132,7 @@ Here's the flow when user says: _I'd like to book a flight_
     <img alt="Adaptive_dialog_conversation_flow_example" src="./media/adaptive-dialogs/adaptive-dialog-first-utterance.png" style="max-width:700px;" />
 </p>
 
-The active dialog (rootDialog) recognizer emits a `recognizedIntent` event that you can handle with an `OnIntent` trigger. In this case the user said _"I’d like to book a flight"_ which matches an intent defined in `rootDialog` and causes the `OnIntent` trigger contains a `BeginDialog` action to execute, which calls the dialog `bookFlightDialog`. The book a flight dialog executes its actions, one of them is asking for the city you want to fly to.
+The active dialog (rootDialog) recognizer emits a `recognizedIntent` event that you can handle with an `OnIntent` trigger. In this case the user said _"I'd like to book a flight"_ which matches an intent defined in `rootDialog` and causes the `OnIntent` trigger contains a `BeginDialog` action to execute, which calls the dialog `bookFlightDialog`. The book a flight dialog executes its actions, one of them is asking for the city you want to fly to.
 
 The user can provide anything in response, in some cases the response may have nothing to do with the question that was asked and in this case the user responded with _How's the weather in Seattle?_
 
@@ -179,5 +179,5 @@ Each dialog's _recognizer_ analyzes the user's input to determine the user inten
 [14]:https://aka.ms/bot-builder-concept-dialog#prompts
 [15]:https://github.com/microsoft/botbuilder-samples/tree/master/experimental/adaptive-dialog
 [16]:https://github.com/microsoft/botbuilder-samples/tree/master/samples/csharp_dotnetcore
-[17]: https://docs.microsoft.com/azure/bot-service/bot-builder-concept-dialog?view=azure-bot-service-4.0#waterfall-dialogs
+[17]: bot-builder-concept-dialog.md#component-dialogs
 [interruptions]: bot-builder-concept-adaptive-dialog-interruptions.md

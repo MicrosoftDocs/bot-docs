@@ -50,7 +50,7 @@ To use dialogs, install the **Microsoft.Bot.Builder.Dialogs** NuGet package.
 
 The bot interacts with the user via `UserProfileDialog`. When we create the bot's `DialogBot` class, we will set the `UserProfileDialog` as its main dialog. The bot then uses a `Run` helper method to access the dialog.
 
-![user profile dialog](media/user-profile-dialog.png)
+![C# user profile dialog](media/user-profile-dialog.png)
 
 **Dialogs\UserProfileDialog.cs**
 
@@ -88,7 +88,7 @@ To use dialogs, your project needs to install the **botbuilder-dialogs** npm pac
 
 The bot interacts with the user via a `UserProfileDialog`. When we create the bot's `DialogBot`, we will set the `UserProfileDialog` as its main dialog. The bot then uses a `run` helper method to access the dialog.
 
-![user profile dialog](media/user-profile-dialog-js.png)
+![JavaScript user profile dialog](media/user-profile-dialog-js.png)
 
 **dialogs/userProfileDialog.js**
 
@@ -136,7 +136,7 @@ To use dialogs, install the **botbuilder-dialogs** and **botbuilder-ai** PyPI pa
 
 The bot interacts with the user via `UserProfileDialog`. When we create the bot's `DialogBot` class, we will set the `UserProfileDialog` as its main dialog. The bot then uses a `run_dialog` helper method to access the dialog.
 
-![user profile dialog](media/user-profile-dialog-python.png)
+![Python user profile dialog](media/user-profile-dialog-python.png)
 
 **dialogs\user_profile_dialog.py**
 
@@ -251,7 +251,7 @@ We register services for the bot in `app.py`.
 
 1. If you have not done so already, install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
 1. Run the sample locally on your machine.
-1. Start the emulator, connect to your bot, and send messages as shown below.
+1. Start the Emulator, connect to your bot, and send messages as shown below.
 
 ![Sample run of the multi-turn prompt dialog](../media/emulator-v4/multi-turn-prompt.png)
 

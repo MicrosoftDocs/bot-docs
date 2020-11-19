@@ -26,7 +26,7 @@ In the context of a bot, dialogs are conversational abstractions that encapsulat
 Without confusing the issue, I found the following:
 
 - A dialog encapsulates application logic like a function in a program.
-- It allows you to perform a specific task, such as gathering the details of a user’s profile, and then possibly of reusing the code when needed.
+- It allows you to perform a specific task, such as gathering the details of a user's profile, and then possibly of reusing the code when needed.
 - Dialogs can also be chained together in **DialogSets**.
 - The **Microsoft Bot Builder SDK v4** includes two built-in features to help you manage conversations using dialogs:
   - DialogSets

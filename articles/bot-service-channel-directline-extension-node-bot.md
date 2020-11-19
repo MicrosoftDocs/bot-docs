@@ -22,7 +22,7 @@ To perform the steps described next, you need to have a **Web App Bot**(your bot
 
 ## Enable Direct Line app service extension
 
-This section describes how to enable the Direct Line app service extension using the app service extension key from your bot’s Direct Line channel configuration.
+This section describes how to enable the Direct Line app service extension using the app service extension key from your bot's Direct Line channel configuration.
 
 ## Update Node.js Bot to use Direct Line App Service Extension
 

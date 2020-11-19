@@ -1,6 +1,6 @@
 ---
 title: Using JavaScript v3 user state in a v4 bot - Bot Service
-description:  How to use v3 user state in a v4 bot example
+description: See an example of how to use JavaScript v3 user state in a JavaScript v4 bot.
 keywords: JavaScript, bot migration, v3 bot
 ms.author: kamrani
 manager: kamrani
@@ -119,7 +119,7 @@ This class extends the v4 `BotState` class (`botbuilder-core`) so that it uses a
 
 ### Testing steps
 
-1. Open bot in emulator and send a message. Provide your name when prompted.
+1. Open bot in Emulator and send a message. Provide your name when prompted.
 1. After the turn is over, send another message to the bot.
 1. Assure that you are not prompted again for your name. The bot should be reading it from the storage and recognize that it already prompted you.
 1. The bot should echo back your message.
@@ -144,7 +144,7 @@ To learn more about deploying a bot to Azure, see [Deploy your bot to Azure][40]
 [7]: https://docs.microsoft.com/azure/bot-service/bot-builder-storage-concept
 [8]: https://docs.microsoft.com/azure/bot-service/bot-builder-howto-v4-storage?tabs=javascript
 [9]: https://docs.microsoft.com/azure/bot-service/bot-builder-howto-v4-state?tabs=javascript
-[21]: https://docs.microsoft.com/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0
+[21]: ../../bot-service-overview-introduction.md
 [30]: https://www.npmjs.com/package/restify
 [31]: https://www.npmjs.com/package/dotenv
 [40]: https://aka.ms/azuredeployment

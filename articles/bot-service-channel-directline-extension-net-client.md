@@ -21,7 +21,7 @@ Please, also read this companion article [Configure .NET bot for extension](bot-
 
 1. In your browser, navigate to the [Azure portal](https://portal.azure.com/)
 1. In the Azure portal, locate your **Azure Bot Service** resource
-1. Click on **Channels** to configure the bot’s channels
+1. Click on **Channels** to configure the bot's channels
 1. If it is not already enabled, click on the **Direct Line** channel to enable it.
 1. If it is already enabled, in the Connect to channels table click on the **Edit** link on the Direct Line row.
 1. Scroll to the Sites section. There is typically a Default Site unless you have deleted or renamed it.
@@ -31,7 +31,7 @@ Please, also read this companion article [Configure .NET bot for extension](bot-
 
 > [!NOTE]
 > This value is your direct line client secret used to connect to direct
-line app service extension. You can create additional sites if you’d like and use
+line app service extension. You can create additional sites if you'd like and use
 those secret values as well.
 
 ## Add the preview NuGet package source
@@ -91,7 +91,7 @@ Interactions with the direct line app service extension happen differently than 
     }
     ```
 
-1. Now you are ready to open the WebSocket on the `StreamingConversations` property using the conversation’s token, `conversationId`, and your `ReceiveActivities` callback:
+1. Now you are ready to open the WebSocket on the `StreamingConversations` property using the conversation's token, `conversationId`, and your `ReceiveActivities` callback:
 
     ```csharp
     var client = new DirectLineClient(
