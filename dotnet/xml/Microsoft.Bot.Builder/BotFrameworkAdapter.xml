@@ -50,10 +50,10 @@
             and then back out again. As each activity flows in and out of the bot, each piece
             of middleware can inspect or act upon the activity, both before and after the bot
             logic runs.</para></remarks>
-    <altmember cref="T:Microsoft.Bot.Builder.IMiddleware" />
     <altmember cref="T:Microsoft.Bot.Builder.ITurnContext" />
     <altmember cref="T:Microsoft.Bot.Schema.IActivity" />
     <altmember cref="T:Microsoft.Bot.Builder.IBot" />
+    <altmember cref="T:Microsoft.Bot.Builder.IMiddleware" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

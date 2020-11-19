@@ -10,6 +10,7 @@
     <AssemblyVersion>4.10.3.0</AssemblyVersion>
     <AssemblyVersion>4.11.0.0</AssemblyVersion>
     <AssemblyVersion>4.11.1.0</AssemblyVersion>
+    <AssemblyVersion>4.12.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -38,6 +39,7 @@
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
         <AssemblyVersion>4.11.1.0</AssemblyVersion>
+        <AssemblyVersion>4.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -66,6 +68,7 @@
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
         <AssemblyVersion>4.11.1.0</AssemblyVersion>
+        <AssemblyVersion>4.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -81,7 +84,7 @@
             Gets or sets a value indicating whether detect ambiguous intents.
             </summary>
         <value>
-            When true, recognizer will look for ambiguous intents (intents with close recognition scores from top scoring intent).
+            When true, recognizer will look for ambiguous intents - those within specified threshold to top scoring intent.
             </value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -99,6 +102,7 @@
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
         <AssemblyVersion>4.11.1.0</AssemblyVersion>
+        <AssemblyVersion>4.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -114,7 +118,7 @@
             Gets or sets the disambiguation score threshold.
             </summary>
         <value>
-            Recognizer returns ChooseIntent (disambiguation) if other intents are classified within this score of the top scoring intent.
+            Recognizer returns ChooseIntent (disambiguation) if other intents are classified within this threshold of the top scoring intent.
             </value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -132,6 +136,7 @@
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
         <AssemblyVersion>4.11.1.0</AssemblyVersion>
+        <AssemblyVersion>4.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -165,6 +170,7 @@
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
         <AssemblyVersion>4.11.1.0</AssemblyVersion>
+        <AssemblyVersion>4.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -180,7 +186,7 @@
             Gets or sets the id for the recognizer.
             </summary>
         <value>
-            The id for the recognizer.
+            The id for the recognizer.  Useful for looking up specific recognizer in multiple recognizers scenario.
             </value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -198,6 +204,7 @@
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
         <AssemblyVersion>4.11.1.0</AssemblyVersion>
+        <AssemblyVersion>4.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -210,7 +217,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the full path to the NLR model to use.
+            Gets or sets the folder path to Orchestrator base model to use.
             </summary>
         <value>
             Model path.
@@ -234,6 +241,7 @@
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
         <AssemblyVersion>4.11.1.0</AssemblyVersion>
+        <AssemblyVersion>4.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Bot.Builder.RecognizerResult&gt;</ReturnType>
@@ -267,6 +275,7 @@
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
         <AssemblyVersion>4.11.1.0</AssemblyVersion>
+        <AssemblyVersion>4.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
@@ -306,6 +315,7 @@
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
         <AssemblyVersion>4.11.1.0</AssemblyVersion>
+        <AssemblyVersion>4.12.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -318,7 +328,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the full path to the snapshot to use.
+            Gets or sets the full path to Orchestrator snapshot file to use.
             </summary>
         <value>
             Snapshot path.

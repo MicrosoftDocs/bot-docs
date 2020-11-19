@@ -39,9 +39,9 @@
             The interfaces that derive from <see cref="T:Microsoft.Bot.Schema.IActivity" /> include properties specific to a specific
             type of activity. For example, <see cref="T:Microsoft.Bot.Schema.IMessageActivity" /> includes properties associated with
             message activities, and <see cref="T:Microsoft.Bot.Schema.IEventActivity" /> includes properties associated with event activities.</remarks>
-    <altmember cref="T:Microsoft.Bot.Schema.IActivity" />
     <altmember cref="T:Microsoft.Bot.Builder.ActivityHandler" />
     <altmember cref="T:Microsoft.Bot.Builder.ITurnContext" />
+    <altmember cref="T:Microsoft.Bot.Schema.IActivity" />
   </Docs>
   <Members>
     <Member MemberName="Activity">

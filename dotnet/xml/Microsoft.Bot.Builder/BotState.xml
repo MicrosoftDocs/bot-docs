@@ -42,8 +42,8 @@
             
              You can define additional scopes for your bot.
              </remarks>
-    <altmember cref="T:Microsoft.Bot.Builder.IStatePropertyAccessor`1" />
     <altmember cref="T:Microsoft.Bot.Builder.IStorage" />
+    <altmember cref="T:Microsoft.Bot.Builder.IStatePropertyAccessor`1" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">

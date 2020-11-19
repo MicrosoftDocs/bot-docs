@@ -61,8 +61,8 @@
         <summary>
             A dialog was started.
             </summary>
-        <altmember cref="M:Microsoft.Bot.Builder.Dialogs.DialogContext.PromptAsync(System.String,Microsoft.Bot.Builder.Dialogs.PromptOptions,System.Threading.CancellationToken)" />
         <altmember cref="M:Microsoft.Bot.Builder.Dialogs.DialogContext.BeginDialogAsync(System.String,System.Object,System.Threading.CancellationToken)" />
+        <altmember cref="M:Microsoft.Bot.Builder.Dialogs.DialogContext.PromptAsync(System.String,Microsoft.Bot.Builder.Dialogs.PromptOptions,System.Threading.CancellationToken)" />
       </Docs>
     </Member>
     <Member MemberName="CancelCalled">

@@ -29,9 +29,9 @@
             A set of extension methods for <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" /> which provide support for hosting bots with .NET Core.
             </summary>
     <remarks>To be added.</remarks>
-    <altmember cref="T:Microsoft.Bot.Builder.IBot" />
     <altmember cref="T:Microsoft.Bot.Builder.Integration.AspNet.Core.ApplicationBuilderExtensions" />
     <altmember cref="T:Microsoft.Bot.Builder.Integration.IAdapterIntegration" />
+    <altmember cref="T:Microsoft.Bot.Builder.IBot" />
   </Docs>
   <Members>
     <Member MemberName="AddBot&lt;TBot&gt;">
