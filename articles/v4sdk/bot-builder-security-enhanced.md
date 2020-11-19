@@ -30,7 +30,7 @@ Impersonation refers to the action of an attacker that makes the bot think he is
 - [Connect a bot to Direct Line](../bot-service-channel-connect-directline.md).
 - Enable the Direct Line channel's [enhanced authentication](../bot-service-channel-connect-directline.md#configure-settings) option to allow the Azure Bot Service to further detect and reject any user ID change. This means the user ID (`Activity.From.Id`) on messages from Direct Line to the bot will always be the same as the one you used to initialize the Web Chat control.
 
-    [!NOTE]
+    > [!NOTE]
     > Direct Line creates a **token** based on the Direct Line secret and embeds the *User.Id* in the token.
     > It assures that the messages sent to the bot have that *User.Id* as the activity's *From.Id*. If a client sends a message to Direct Line having a different *From.Id*, it will be changed to the **Id embedded in the token** before forwarding the message to the bot. So you cannot use another user ID after a channel secret is initialized with that ID.
 
