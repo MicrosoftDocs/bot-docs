@@ -70,4 +70,4 @@ To run the example, perform the following steps:
 
     [!code-csharp[specify user id](~/../botbuilder-samples/experimental/DirectLineTokenSite/Bot_Auth_DL_Secure_Site_MVC/Controllers/HomeController.cs?range=15-19&highlight=3-4)]
 
-    The example (client application) will use the secret key to ask Direct Line to issue a token. This token, along with the user ID, uniquely and securely identifies the user to allow the communication with the bot over a channel, such as Web Chat.
+    The example (client application) will use the secret key to ask Direct Line to issue a token. This token, along with the user ID, uniquely and securely identifies the user to allow the communication with the bot using the Web Chat control.
