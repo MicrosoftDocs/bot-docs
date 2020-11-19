@@ -55,8 +55,7 @@ In the Web Chat channel, there are two mechanisms to assure that the proper user
 1. **Direct Line enhanced authentication**. Because of the issues with the *magic code* approach, Azure Bot Service removed its need. Azure Bot Service guarantees that the sign-in process can only be completed in the **same browser session** as the Web Chat itself.
 To enable this protection, you must start Web Chat with a **Direct Line token** that contains a **list of trusted domains that can host the bot’s Web Chat client**. With enhanced authentication options, you can statically specify the trusted domain (origin) list in the Direct Line configuration page. See [enhanced authentication settings](../bot-service-channel-connect-directline.md#configure-settings).
 
-
-## Examples
+## Example
 
 The code in this article is based on the sample: [MVC DirectLine token controller](https://github.com/microsoft/BotBuilder-Samples/tree/main/experimental/DirectLineTokenSite).
 
