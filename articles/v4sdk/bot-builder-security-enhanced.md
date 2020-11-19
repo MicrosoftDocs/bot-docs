@@ -13,11 +13,11 @@ ms.date: 11/19/2020
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-This article describes potential security risks when the users connect to a bot, for example using the [Web Chat](~/bot-service-channel-connect-webchat.md#embed-the-web-chat-control-in-a-web-page) control. It also shows mitigating solutions using the [Direct Line](../bot-service-channel-directline.md) channel with **enhanced authentication** enabled.
+This article describes potential security risks when the users connect to a bot, for example using the [Web Chat](~/bot-service-channel-connect-webchat.md#embed-the-web-chat-control-in-a-web-page) control. It shows mitigating solutions using the [Direct Line](../bot-service-channel-directline.md) channel with **enhanced authentication** enabled and secure *user ID* handling.
 
 ## Impersonation
 
-The attacker makes the bot thinks he is someone else. For example, in Web Chat, the attacker can impersonate someone else by **changing the user ID** of his Web Chat instance.
+Impersonation refers to the action of an attacker that makes the bot think he is someone else. For example, in Web Chat, the attacker can impersonate someone else by **changing the user ID** of the Web Chat instance.
 
 ### Impersonation mitigation
 
@@ -29,7 +29,7 @@ The attacker makes the bot thinks he is someone else. For example, in Web Chat, 
 
     This feature requires the user ID to start with `dl_` as shown in this code sample:
 
-    [!code-csharp[specify user id](~/../botbuilder-samples/experimental/DirectLineTokenSite/Bot_Auth_DL_Secure_Site_MVC/Controllers/HomeController.cs?range=15-50&highlight=9)]
+    [!code-csharp[specify user ID](~/../botbuilder-samples/experimental/DirectLineTokenSite/Bot_Auth_DL_Secure_Site_MVC/Controllers/HomeController.cs?range=15-50&highlight=9)]
 
     The generated token, based on the Direct Line secret, is then used in the Web Chat control as shown in this code sample:
 
@@ -67,6 +67,6 @@ To run the example, perform the following steps:
 1. Copy and securely store the secret key.
 1. Finally, assign the secret key in the example `HomeController` class, as shown below.
 
-    [!code-csharp[specify user id](~/../botbuilder-samples/experimental/DirectLineTokenSite/Bot_Auth_DL_Secure_Site_MVC/Controllers/HomeController.cs?range=15-19&highlight=3-4)]
+    [!code-csharp[cs sample](~/../botbuilder-samples/experimental/DirectLineTokenSite/Bot_Auth_DL_Secure_Site_MVC/Controllers/HomeController.cs?range=15-19&highlight=3-4)]
 
     The example (client application) will use the secret key to ask Direct Line to issue a token. This token, along with the user ID, uniquely and securely identifies the user to allow the communication with the bot using the Web Chat control.
