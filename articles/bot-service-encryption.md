@@ -30,7 +30,16 @@ When using a customer-managed key, Azure Bot Service encrypts your data in our s
 > [!IMPORTANT]
 > The Azure Bot Service team cannot recover a customer-managed encryption key bot without access to the key.
 
-### Configure your Azure Key Vault instance
+## What data is encrypted?
+
+The Azure Bot Service stores customer data about the bot, the channels it uses, configuration settings the developer sets, and where necessary, a record of currently active conversations. It also transiently, for less than 24 hours, stores the messages sent over the Direct Line or Web Chat channels and any attachments uploaded.
+
+All customer data is encrypted with two layers of encryption in the Azure Bot Service; either with Microsoft-managed encryption keys, or Microsoft- and customer-managed encryption keys. The Bot Service encrypts transiently-stored data using the Microsoft-managed encryption keys, and encrypts longer-term data using either the Microsoft- or customer-managed encryption keys, depending on the configuration of the bot registration.
+
+> [!NOTE]
+> As the Azure Bot Service exists to provide customers the ability to deliver messages to and from users on other services outside the Azure Bot Service, our encryption does not extend to those services. Practically, this means that while under our control, data will be stored encrypted as per the guidance in this document; however, when leaving our service to deliver to another service, the data is decrypted and then sent using TLS 1.2 encryption to the target service.
+
+## How to configure your Azure Key Vault instance
 
 Using customer-managed keys with Azure Bot Service requires you to enable two properties on the Azure Key Vault instance that you plan to use to host your encryption keys: **Soft delete** and **Purge protection**. These features work in partnership to ensure that if for some reason your key is accidentally deleted, you can recover it. For more information about soft delete and purge protection, see the [Azure Key Vault soft-delete overview](/azure/key-vault/general/soft-delete-overview).
 
@@ -39,7 +48,7 @@ Using customer-managed keys with Azure Bot Service requires you to enable two pr
 
 If you are using an existing Azure Key Vault instance, you can verify that these properties are enabled by looking at the **Properties** section on the Azure portal. If any of these properties are not enabled, see the **Key Vault** section in [How to enable soft delete and purge protection](/azure/key-vault/general/key-vault-recovery).
 
-#### To grant the Bot Service access to a key vault
+### Grant the Bot Service access to a key vault
 
 For Azure Bot Service to have access to the key vault you created for this purpose, an access policy needs to be set which gives the Azure Bot Service's service principal the current set of permissions. For more information about Key Vault, including how to create a key vault, see [About Azure Key Vault](/azure/key-vault/general/overview).
 
@@ -51,10 +60,42 @@ For Azure Bot Service to have access to the key vault you created for this purpo
     > [!div class="mx-imgBorder"]
     > ![Microsoft.BotService registered as a resource provider](media/key-vault/register-resource-provider.png)
 
-1. Configure an access policy on your key vault, giving the **Bot Service CMEK Prod** service principal the **Get** from **Key Management Operations** and **Unwrap Key** and **Wrap Key** from **Cryptographic Operations** key permissions.
+1. Configure an access policy on your key vault, giving the **Bot Service CMEK Prod** service principal the **Get** (from the **Key Management Operations**) and **Unwrap Key** and **Wrap Key** (from the **Cryptographic Operations**) key permissions.
     1. Open the **Key vaults** blade and select your key vault.
     1. Make sure that the **Bot Service CMEK Prod** application is added as an access policy and has these 3 permissions. You may need to add the **Bot Service CMEK Prod** application as an access policy to your key vault.
     1. Click **Save** to save any changes you made.
 
     > [!div class="mx-imgBorder"]
     > ![Bot Service CMEK Prod added as an access policy](media/key-vault/access-policies.png)
+
+1. Allow Key Vault to bypass your firewall...
+
+### Enable customer-managed keys
+
+To encrypt your Bot Registration with a Customer Managed encryption key, follow these steps:
+
+1. Navigate to the **Encryption** blade of your bot in the Bot Management section of your Bot Registration in the Azure Portal.
+1. Select **Customer-Managed Keys** from the Encryption type radio button.
+1. Either input your key's complete URI, including version, or click **Select a key vault and a key** to find your key.
+1. Click **Save** at the top of the blade.
+
+...image...
+
+Once these steps are completed, the Bot Service will start the encryption process. This can take some time to complete (up to 24 hours). Your bot will be completely functional during this time period.
+
+### Rotate customer-managed keys
+
+To rotate a customer managed encryption key, you must update the Azure Bot Service resource to use the new URI for the new key (or new version of the existing key).
+
+Because re-encryption with the new key occurs asynchronously, ensure the old key remains available so that data can continue to be decrypted; otherwise, your bot could stop working. You should retain the old key for at least 1 week.
+
+### Revoke access to customer-managed keys
+
+To revoke access, remove the access policy for the **Bot Service CMEK Prod** service principal from your key vault.
+
+> [!NOTE]
+> Revoking access will break most of the functionality associated with your bot. To disable the customer-managed keys feature, turn off the feature before revoking access to ensure the bot can continue working.
+
+## Next steps
+
+Learn more [About Azure Key Vault](/azure/key-vault/key-vault-overview)
