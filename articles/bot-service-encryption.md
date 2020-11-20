@@ -4,6 +4,7 @@ description: Azure Bot Service protects your data by automatically encrypting it
 ms.service: bot-service
 ms.date: 11/19/2020
 ms.topic: conceptual
+author: JonathanFingold
 ms.author: jameslew
 ---
 
@@ -68,18 +69,26 @@ For Azure Bot Service to have access to the key vault you created for this purpo
     > [!div class="mx-imgBorder"]
     > ![Bot Service CMEK Prod added as an access policy](media/key-vault/access-policies.png)
 
-1. Allow Key Vault to bypass your firewall...
+1. Allow Key Vault to bypass your firewall.
+    1. Open the **Key vaults** blade and select your key vault.
+    1. Open the **Networking** blade and go to the **Firewalls and virtual networks** tab.
+    1. If **Allow access from** is set to **Private endpoint and selected networks**, set **Allow trusted Microsoft services to bypass this firewall** to **Yes**.
+    1. Click **Save** to save any changes you made.
+
+    > [!div class="mx-imgBorder"]
+    > ![Firewall exception added for Key Vault](media/key-vault/firewall-exception.png)
 
 ### Enable customer-managed keys
 
 To encrypt your Bot Registration with a Customer Managed encryption key, follow these steps:
 
-1. Navigate to the **Encryption** blade of your bot in the Bot Management section of your Bot Registration in the Azure Portal.
-1. Select **Customer-Managed Keys** from the Encryption type radio button.
+1. Open the resource blade for your bot.
+1. Open the **Encryption** blade of your bot and select **Customer-Managed Keys** for the **Encryption type**.
 1. Either input your key's complete URI, including version, or click **Select a key vault and a key** to find your key.
 1. Click **Save** at the top of the blade.
 
-...image...
+> [!div class="mx-imgBorder"]
+> ![Bot resource using customer-managed encryption](media/key-vault/customer-managed-encryption.png)
 
 Once these steps are completed, the Bot Service will start the encryption process. This can take some time to complete (up to 24 hours). Your bot will be completely functional during this time period.
 
