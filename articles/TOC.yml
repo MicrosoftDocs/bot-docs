@@ -32,7 +32,7 @@
   items:
   - name: Security baseline
     href: security-baseline.md
-  - name: Bot Service Encryption
+  - name: Bot Service encryption
     href: bot-service-encryption.md
   - name: Authentication basics
     href: v4sdk/bot-builder-authentication-basics.md

@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 09/01/2020
+ms.date: 11/23/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -94,9 +94,7 @@ The second controller, the _notify_ controller, is responsible for sending the p
 Each time the bot's notify page is requested, the notify controller retrieves the conversation references from the dictionary.
 The controller then uses the `ContinueConversationAsync` and `BotCallback` methods to send the proactive message.
 
-[!code-csharp[Notify logic](~/../botbuilder-samples/samples/csharp_dotnetcore/16.proactive-messages/Controllers/NotifyController.cs?range=17-62&highlight=28,40-45)]
-
-To send a proactive message, the adapter requires an app ID for the bot. In a production environment, you can use the bot's app ID. In a local test environment, you can use any GUID. If the bot is not currently assigned an app ID, the notify controller self-generates a placeholder ID to use for the call.
+[!code-csharp[Notify logic](~/../botbuilder-samples/samples/csharp_dotnetcore/16.proactive-messages/Controllers/NotifyController.cs?range=17-54&highlight=20,32-37)]
 
 # [JavaScript](#tab/javascript)
 
@@ -116,6 +114,8 @@ The server then uses the `_send_proactive_message` to send the proactive message
 [!code-python[Notify logic](~/../botbuilder-samples/samples/python/16.proactive-messages/app.py?range=98-106&highlight=5-9)]
 
 ---
+
+To send a proactive message, the adapter requires an app ID for the bot. In a production environment, you can use the bot's app ID. To test the bot locally with the Emulator, you can use the empty string ("").
 
 ## Test your bot
 
