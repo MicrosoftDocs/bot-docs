@@ -92,7 +92,7 @@ const adapter = new BotFrameworkAdapter({
 ```
 ---
 
-You’ll also need to remove the `botFilePath` and `botFileSecret` from the **Application Settings** section in the **Azure portal**.
+You'll also need to remove the `botFilePath` and `botFileSecret` from the **Application Settings** section in the **Azure portal**.
 
 *If needed*, provision resources and connect them to your bot using the appsettings.json or .env file.
 

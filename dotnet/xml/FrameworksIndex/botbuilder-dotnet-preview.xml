@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Framework Name="botbuilder-dotnet-preview">
   <Assemblies>
-    <Assembly Name="Microsoft.Bot.Builder.AI.Orchestrator" Version="4.11.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Azure.Queues" Version="4.11.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing" Version="4.11.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Dialogs.Debugging" Version="4.11.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Parsers.LU" Version="4.11.0.0" />
+    <Assembly Name="Microsoft.Bot.Builder.AI.Orchestrator" Version="4.11.1.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Azure.Queues" Version="4.11.1.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Testing" Version="4.11.1.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Dialogs.Debugging" Version="4.11.1.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Parsers.LU" Version="4.11.1.0" />
   </Assemblies>
   <Namespace Name="">
     <Type Name="ILUFileParserListener" Id="T:ILUFileParserListener">

@@ -17,7 +17,7 @@ ms.date: 06/08/2020
      1 - This article contains FAQs regarding Bot Framework ecosystem.
      1 - When you create a new FAQ, please add the related link to the proper section in bot-service-resources-bot-framework-faq.md.-->
 
-## How do I enable the emulator to connect to localhost while behind a corporate proxy?
+## How do I enable the Emulator to connect to localhost while behind a corporate proxy?
 
 When developing a bot in a corporate environment, typically, the proxy will block the connection unless you specify that it should be bypassed for `localhost`. To do that on your local machine you must define the following environment variable :
 
@@ -98,8 +98,8 @@ The following example shows how to set the domain to the Azure Government URL:
       window.WebChat.renderWebChat(
         {
           directLine: window.WebChat.createDirectLine({
-          token: 'YOUR_TOKEN_SECRET',
-		  domain: 'https://webchat.botframework.azure.us/v3/directline'
+            token: 'YOUR_TOKEN_SECRET',
+            domain: 'https://webchat.botframework.azure.us/v3/directline'
           }),
           userID: 'YOUR_USER_ID',
           username: 'Web Chat User',
@@ -113,11 +113,12 @@ The following example shows how to set the domain to the Azure Government URL:
   </body>
 
 ```
-Learn more from the following docs:
-* [Connect a bot to Web Chat](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-webchat?view=azure-bot-service-4.0)
-* [Connect a bot to Direct Line](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-directline?view=azure-bot-service-4.0)
-* For programmatic approach to exchange your secret for a token, use the code snippet provided [here](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-webchat?view=azure-bot-service-4.0#production-embedding--option) and adjust the URLs from public Azure to Azure Government.
 
+Learn more from the following docs:
+
+- [Connect a bot to Web Chat](bot-service-channel-connect-webchat.md)
+- [Connect a bot to Direct Line](bot-service-channel-connect-directline.md)
+- For programmatic approach to exchange your secret for a token, use the code snippet provided in the [production embedding option](bot-service-channel-connect-webchat.md#production-embedding-option) and adjust the URLs from public Azure to Azure Government.
 
 ## How does the Bot Framework relate to Cognitive Services?
 

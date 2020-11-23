@@ -148,7 +148,7 @@ back to [top](#top)
 // If you had A&B you can look at the triggers and return R2 instead of R3—that seems appropriate.
 // But, if you also had C&D at the same time you would still get R3 triggering because of C&D,  I think this is the right thing.
 // Even though R3 was filtered out of the A&B branch, it is still the most specific answer in the C&D branch.
-// If we remove R3 all together then we would end up returning R4 instead which doesn’t seem correct from the standpoint of
+// If we remove R3 all together then we would end up returning R4 instead which doesn't seem correct from the standpoint of
 // disjunctions being a shortcut for multiple rules.
 
 /// <summary>

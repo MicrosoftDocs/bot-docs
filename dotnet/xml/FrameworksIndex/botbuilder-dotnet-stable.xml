@@ -1,32 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Framework Name="botbuilder-dotnet-stable">
   <Assemblies>
-    <Assembly Name="AdaptiveExpressions" Version="4.11.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Adapters.Facebook" Version="4.11.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Adapters.Slack" Version="4.11.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Adapters.Twilio" Version="4.11.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Adapters.Webex" Version="4.11.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.AI.Luis" Version="4.11.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.AI.QnA" Version="4.11.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.ApplicationInsights" Version="4.11.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Azure.Blobs" Version="4.11.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Azure" Version="4.11.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Dialogs.Adaptive" Version="4.11.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Teams" Version="4.11.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Dialogs.Declarative" Version="4.11.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Dialogs" Version="4.11.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder" Version="4.11.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Integration.ApplicationInsights.Core" Version="4.11.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Integration.ApplicationInsights.WebApi" Version="4.11.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Integration.AspNet.Core" Version="4.11.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Integration.AspNet.WebApi" Version="4.11.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.LanguageGeneration" Version="4.11.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.TemplateManager" Version="4.11.0.0" />
-    <Assembly Name="Microsoft.Bot.Builder.Testing" Version="4.11.0.0" />
-    <Assembly Name="Microsoft.Bot.Configuration" Version="4.11.0.0" />
-    <Assembly Name="Microsoft.Bot.Connector" Version="4.11.0.0" />
-    <Assembly Name="Microsoft.Bot.Schema" Version="4.11.0.0" />
-    <Assembly Name="Microsoft.Bot.Streaming" Version="4.11.0.0" />
+    <Assembly Name="AdaptiveExpressions" Version="4.11.1.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Adapters.Facebook" Version="4.11.1.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Adapters.Slack" Version="4.11.1.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Adapters.Twilio" Version="4.11.1.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Adapters.Webex" Version="4.11.1.0" />
+    <Assembly Name="Microsoft.Bot.Builder.AI.Luis" Version="4.11.1.0" />
+    <Assembly Name="Microsoft.Bot.Builder.AI.QnA" Version="4.11.1.0" />
+    <Assembly Name="Microsoft.Bot.Builder.ApplicationInsights" Version="4.11.1.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Azure.Blobs" Version="4.11.1.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Azure" Version="4.11.1.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Dialogs.Adaptive" Version="4.11.1.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Teams" Version="4.11.1.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Dialogs.Declarative" Version="4.11.1.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Dialogs" Version="4.11.1.0" />
+    <Assembly Name="Microsoft.Bot.Builder" Version="4.11.1.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Integration.ApplicationInsights.Core" Version="4.11.1.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Integration.ApplicationInsights.WebApi" Version="4.11.1.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Integration.AspNet.Core" Version="4.11.1.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Integration.AspNet.WebApi" Version="4.11.1.0" />
+    <Assembly Name="Microsoft.Bot.Builder.LanguageGeneration" Version="4.11.1.0" />
+    <Assembly Name="Microsoft.Bot.Builder.TemplateManager" Version="4.11.1.0" />
+    <Assembly Name="Microsoft.Bot.Builder.Testing" Version="4.11.1.0" />
+    <Assembly Name="Microsoft.Bot.Configuration" Version="4.11.1.0" />
+    <Assembly Name="Microsoft.Bot.Connector" Version="4.11.1.0" />
+    <Assembly Name="Microsoft.Bot.Schema" Version="4.11.1.0" />
+    <Assembly Name="Microsoft.Bot.Streaming" Version="4.11.1.0" />
   </Assemblies>
   <Namespace Name="AdaptiveExpressions.BuiltinFunctions">
     <Type Name="AdaptiveExpressions.BuiltinFunctions.ComparisonEvaluator" Id="T:AdaptiveExpressions.BuiltinFunctions.ComparisonEvaluator">
@@ -5688,14 +5688,14 @@
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnActivity" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnActivity">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnActivity.Kind" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnActivity.#ctor(System.String,System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnActivity.GetExpression" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnActivity.CreateExpression" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnActivity.GetIdentity" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnActivity.Type" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnAssignEntity" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnAssignEntity">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnAssignEntity.Kind" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnAssignEntity.#ctor(System.String,System.String,System.String,System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnAssignEntity.GetExpression" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnAssignEntity.CreateExpression" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnAssignEntity.GetIdentity" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnAssignEntity.Entity" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnAssignEntity.Operation" />
@@ -5712,7 +5712,7 @@
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnChooseEntity" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnChooseEntity">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnChooseEntity.Kind" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnChooseEntity.#ctor(System.String,System.String,System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnChooseEntity.GetExpression" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnChooseEntity.CreateExpression" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnChooseEntity.GetIdentity" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnChooseEntity.Entity" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnChooseEntity.Property" />
@@ -5720,13 +5720,13 @@
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnChooseIntent" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnChooseIntent">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnChooseIntent.Kind" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnChooseIntent.#ctor(System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnChooseIntent.GetExpression" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnChooseIntent.CreateExpression" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnChooseIntent.Intents" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnChooseProperty" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnChooseProperty">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnChooseProperty.Kind" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnChooseProperty.#ctor(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String},System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnChooseProperty.GetExpression" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnChooseProperty.CreateExpression" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnChooseProperty.GetIdentity" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnChooseProperty.Entities" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnChooseProperty.Properties" />
@@ -5734,7 +5734,9 @@
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnCondition" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnCondition">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnCondition.Kind" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnCondition.#ctor(System.String,System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.Int32)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnCondition.AddExternalCondition(AdaptiveExpressions.Expression)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnCondition.AddExternalCondition(System.String)" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnCondition.CreateExpression" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnCondition.CurrentPriority(Microsoft.Bot.Builder.Dialogs.Adaptive.ActionContext)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnCondition.ExecuteAsync(Microsoft.Bot.Builder.Dialogs.Adaptive.ActionContext)" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnCondition.GetDependencies" />
@@ -5753,7 +5755,7 @@
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnContinueConversation" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnContinueConversation">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnContinueConversation.Kind" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnContinueConversation.#ctor(System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnContinueConversation.GetExpression" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnContinueConversation.CreateExpression" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnConversationUpdateActivity" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnConversationUpdateActivity">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnConversationUpdateActivity.Kind" />
@@ -5762,7 +5764,7 @@
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnDialogEvent" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnDialogEvent">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnDialogEvent.Kind" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnDialogEvent.#ctor(System.String,System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnDialogEvent.GetExpression" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnDialogEvent.CreateExpression" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnDialogEvent.GetIdentity" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnDialogEvent.Event" />
     </Type>
@@ -5794,7 +5796,7 @@
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnIntent" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnIntent">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnIntent.Kind" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnIntent.#ctor(System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnIntent.GetExpression" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnIntent.CreateExpression" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnIntent.GetIdentity" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnIntent.OnCreateChangeList(Microsoft.Bot.Builder.Dialogs.Adaptive.ActionContext,System.Object)" />
       <Member Id="P:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnIntent.Entities" />
@@ -6219,117 +6221,117 @@
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsAppBasedLinkQuery" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsAppBasedLinkQuery">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsAppBasedLinkQuery.Kind" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsAppBasedLinkQuery.#ctor(System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsAppBasedLinkQuery.GetExpression" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsAppBasedLinkQuery.CreateExpression" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsCardAction" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsCardAction">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsCardAction.Kind" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsCardAction.#ctor(System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsCardAction.GetExpression" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsCardAction.CreateExpression" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsChannelCreated" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsChannelCreated">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsChannelCreated.Kind" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsChannelCreated.#ctor(System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsChannelCreated.GetExpression" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsChannelCreated.CreateExpression" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsChannelDeleted" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsChannelDeleted">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsChannelDeleted.Kind" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsChannelDeleted.#ctor(System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsChannelDeleted.GetExpression" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsChannelDeleted.CreateExpression" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsChannelRenamed" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsChannelRenamed">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsChannelRenamed.Kind" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsChannelRenamed.#ctor(System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsChannelRenamed.GetExpression" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsChannelRenamed.CreateExpression" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsChannelRestored" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsChannelRestored">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsChannelRestored.Kind" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsChannelRestored.#ctor(System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsChannelRestored.GetExpression" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsChannelRestored.CreateExpression" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsFileConsent" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsFileConsent">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsFileConsent.Kind" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsFileConsent.#ctor(System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsFileConsent.GetExpression" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsFileConsent.CreateExpression" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionCardButtonClicked" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionCardButtonClicked">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionCardButtonClicked.Kind" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionCardButtonClicked.#ctor(System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionCardButtonClicked.GetExpression" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionCardButtonClicked.CreateExpression" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionConfigurationQuerySettingUrl" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionConfigurationQuerySettingUrl">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionConfigurationQuerySettingUrl.Kind" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionConfigurationQuerySettingUrl.#ctor(System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionConfigurationQuerySettingUrl.GetExpression" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionConfigurationQuerySettingUrl.CreateExpression" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionConfigurationSetting" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionConfigurationSetting">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionConfigurationSetting.Kind" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionConfigurationSetting.#ctor(System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionConfigurationSetting.GetExpression" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionConfigurationSetting.CreateExpression" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionFetchTask" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionFetchTask">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionFetchTask.Kind" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionFetchTask.#ctor(System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionFetchTask.GetExpression" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionFetchTask.CreateExpression" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionQuery" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionQuery">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionQuery.Kind" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionQuery.#ctor(System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionQuery.GetExpression" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionQuery.CreateExpression" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionSelectItem" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionSelectItem">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionSelectItem.Kind" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionSelectItem.#ctor(System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionSelectItem.GetExpression" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionSelectItem.CreateExpression" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionSubmitAction" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionSubmitAction">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionSubmitAction.Kind" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionSubmitAction.#ctor(System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionSubmitAction.GetExpression" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsMessagingExtensionSubmitAction.CreateExpression" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsO365ConnectorCardAction" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsO365ConnectorCardAction">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsO365ConnectorCardAction.Kind" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsO365ConnectorCardAction.#ctor(System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsO365ConnectorCardAction.GetExpression" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsO365ConnectorCardAction.CreateExpression" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTaskModuleFetch" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTaskModuleFetch">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTaskModuleFetch.Kind" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTaskModuleFetch.#ctor(System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTaskModuleFetch.GetExpression" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTaskModuleFetch.CreateExpression" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTaskModuleSubmit" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTaskModuleSubmit">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTaskModuleSubmit.Kind" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTaskModuleSubmit.#ctor(System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTaskModuleSubmit.GetExpression" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTaskModuleSubmit.CreateExpression" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamArchived" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamArchived">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamArchived.Kind" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamArchived.#ctor(System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamArchived.GetExpression" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamArchived.CreateExpression" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamDeleted" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamDeleted">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamDeleted.Kind" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamDeleted.#ctor(System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamDeleted.GetExpression" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamDeleted.CreateExpression" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamHardDeleted" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamHardDeleted">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamHardDeleted.Kind" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamHardDeleted.#ctor(System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamHardDeleted.GetExpression" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamHardDeleted.CreateExpression" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamRenamed" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamRenamed">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamRenamed.Kind" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamRenamed.#ctor(System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamRenamed.GetExpression" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamRenamed.CreateExpression" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamRestored" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamRestored">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamRestored.Kind" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamRestored.#ctor(System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamRestored.GetExpression" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamRestored.CreateExpression" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamUnarchived" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamUnarchived">
       <Member Id="F:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamUnarchived.Kind" />
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamUnarchived.#ctor(System.Collections.Generic.List{Microsoft.Bot.Builder.Dialogs.Dialog},System.String,System.String,System.Int32)" />
-      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamUnarchived.GetExpression" />
+      <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.OnTeamsTeamUnarchived.CreateExpression" />
     </Type>
     <Type Name="Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.TeamsComponentRegistration" Id="T:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.TeamsComponentRegistration">
       <Member Id="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Teams.TeamsComponentRegistration.#ctor" />

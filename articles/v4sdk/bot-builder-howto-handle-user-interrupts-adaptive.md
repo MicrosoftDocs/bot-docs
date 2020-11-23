@@ -655,7 +655,7 @@ new SetProperty().configure(
 
 1. If you have not done so already, install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
 1. Run the sample locally on your machine.
-1. Start the emulator, connect to your bot, and send messages as shown below.
+1. Start the Emulator, connect to your bot, and send messages as shown below.
 
 The screen shot shown below verifies that you can interrupt the conversational flow by requesting help even though the currently active adaptive dialog does not contain the corresponding trigger.
 

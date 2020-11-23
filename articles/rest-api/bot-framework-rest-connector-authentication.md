@@ -247,16 +247,17 @@ payload:
 > In late fall of 2017, v3.2 of the Bot Framework security protocol was introduced. This new version includes a new "issuer" value within tokens that are exchanged between the Bot Framework Eumaltor and your bot. To prepare for this change, the below steps outline how to check for both the v3.1 and v3.2 issuer values.
 
 The [Bot Framework Emulator](../bot-service-debug-emulator.md) is a desktop tool that you can use to test the functionality of your bot. Although the Bot Framework Emulator uses the same [authentication technologies](#authentication-technologies) as described above, it is unable to impersonate the real Bot Connector service.
-Instead, it uses the Microsoft App ID and Microsoft App Password that you specify when you connect the emulator to your bot to create tokens that are identical to those that the bot creates.
-When the emulator sends a request to your bot, it specifies the JWT token in the `Authorization` header of the request -- in essence, using the bot's own credentials to authenticate the request.
+Instead, it uses the Microsoft App ID and Microsoft App Password that you specify when you connect the Emulator to your bot to create tokens that are identical to those that the bot creates.
+When the Emulator sends a request to your bot, it specifies the JWT token in the `Authorization` header of the request -- in essence, using the bot's own credentials to authenticate the request.
 
-If you are implementing an authentication library and want to accept requests from the Bot Framework Emulator, you must add this additional verification path. The path is structurally similar to the [Connector -> Bot](#connector-to-bot) verification path, but it uses MSA’s OpenID document instead of the Bot Connector’s OpenID document.
+If you are implementing an authentication library and want to accept requests from the Bot Framework Emulator, you must add this additional verification path. The path is structurally similar to the [Connector -> Bot](#connector-to-bot) verification path, but it uses MSA's OpenID document instead of the Bot Connector's OpenID document.
 
-This diagram shows the steps for emulator-to-bot authentication:
+This diagram shows the steps for Emulator-to-bot authentication:
 
 ![Authenticate calls from the Bot Framework Emulator to your bot](../media/connector/auth_bot_framework_emulator_to_bot.png)
 
 ---
+
 ### Step 2: Get the MSA OpenID metadata document
 
 The OpenID metadata document specifies the location of a second document that lists the valid signing keys. To get the MSA OpenID metadata document, issue this request via HTTPS:
@@ -290,7 +291,7 @@ The response body specifies the document in the [JWK format](https://tools.ietf.
 
 ### Step 4: Verify the JWT token
 
-To verify the authenticity of the token that was sent by the emulator, you must extract the token from the `Authorization` header of the request, parse the token, verify its contents, and verify its signature.
+To verify the authenticity of the token that was sent by the Emulator, you must extract the token from the `Authorization` header of the request, parse the token, verify its contents, and verify its signature.
 
 JWT parsing libraries are available for many platforms and most implement secure and reliable parsing for JWT tokens, although you must typically configure these libraries to require that certain characteristics of the token (its issuer, audience, etc.) contain correct values.
 When parsing the token, you must configure the parsing library or write your own validation to ensure the token meets these requirements:
@@ -304,7 +305,7 @@ When parsing the token, you must configure the parsing library or write your own
 7. The token has a valid cryptographic signature with a key listed in the OpenID keys document that was retrieved in [Step 3](#emulator-to-bot-step-3).
 
 > [!NOTE]
-> Requirement 5 is a specific to the emulator verification path.
+> Requirement 5 is a specific to the Emulator verification path.
 
 If the token does not meet all of these requirements, your bot should terminate the request by returning an **HTTP 403 (Forbidden)** status code.
 
@@ -383,13 +384,13 @@ payload:
 
 | Protocol version | Valid value |
 |----|----|
-| v3.1 & v3.2 |  Your bot’s Microsoft App ID + `/.default` |
+| v3.1 & v3.2 |  Your bot's Microsoft App ID + `/.default` |
 
 #### JWT Audience
 
 | Protocol version | Valid value |
 |----|----|
-| v3.1 & v3.2 | Your bot’s Microsoft App ID |
+| v3.1 & v3.2 | Your bot's Microsoft App ID |
 
 #### JWT Issuer
 

@@ -99,7 +99,7 @@ For sample claims validation, see how to [implement a skill](skill-implement-ski
 
 ### Bot Framework Emulator
 
-The Bot Framework Emulator has its own authentication flow and its own tokens. The emulator has its own channel and a built-in server.
+The Bot Framework Emulator has its own authentication flow and its own tokens. The Emulator has its own channel and a built-in server.
 
 ## User authentication
 

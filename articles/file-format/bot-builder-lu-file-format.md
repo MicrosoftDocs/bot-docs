@@ -194,24 +194,24 @@ Here's a more complex example definition:
 
 ```lu
 # setThermostat
-> This utterance labels ‘thermostat to 72’ as composite entity deviceTemperature
+> This utterance labels "thermostat to 72" as a composite entity `deviceTemperature`.
     - Please set {deviceTemperature = thermostat to 72}
-> This is an example utterance that labels ‘owen’ as customDevice (ml entity) and wraps ‘owen to 72’ with the ‘deviceTemperature’ composite entity
+> This is an example utterance that labels "owen" as a customDevice (ml entity) and wraps "owen to 72" with the `deviceTemperature` composite entity.
     - Set {deviceTemperature = {customDevice = owen} to 72}
 
-> Define a composite entity ‘deviceTemperature’ that has device (list entity), customDevice (ml entity), temperature (prebuilt entity) as children
+> Defines a composite entity `deviceTemperature` that has device (list entity), customDevice (ml entity), and temperature (prebuilt entity) as children.
 
 @ composite deviceTemperature = [device, customDevice, temperature]
 
 @ list device =
-	- thermostat :
-		- Thermostat
-		- Heater
-		- AC
-		- Air conditioner
-	- refrigerator :
-		- Fridge
-    	- Cooler
+    - thermostat :
+        - Thermostat
+        - Heater
+        - AC
+        - Air conditioner
+    - refrigerator :
+        - Fridge
+        - Cooler
 
 @ ml customDevice
 

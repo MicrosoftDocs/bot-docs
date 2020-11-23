@@ -11,6 +11,7 @@
     <AssemblyVersion>4.10.0.0</AssemblyVersion>
     <AssemblyVersion>4.10.3.0</AssemblyVersion>
     <AssemblyVersion>4.11.0.0</AssemblyVersion>
+    <AssemblyVersion>4.11.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -50,6 +51,7 @@
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -102,6 +104,7 @@
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -136,6 +139,7 @@
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Adaptive.Actions.ActionScope</ReturnType>
@@ -146,6 +150,31 @@
             </summary>
         <value>The scope obtained from the action.</value>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddExternalCondition">
+      <MemberSignature Language="C#" Value="public void AddExternalCondition (AdaptiveExpressions.Expression condition);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddExternalCondition(class AdaptiveExpressions.Expression condition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnCondition.AddExternalCondition(AdaptiveExpressions.Expression)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddExternalCondition (condition As Expression)" />
+      <MemberSignature Language="F#" Value="member this.AddExternalCondition : AdaptiveExpressions.Expression -&gt; unit" Usage="onCondition.AddExternalCondition condition" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="condition" Type="AdaptiveExpressions.Expression" />
+      </Parameters>
+      <Docs>
+        <param name="condition">External constraint to add, it will be AND'ed to all other constraints.</param>
+        <summary>
+            Add external condition to the OnCondition.
+            </summary>
+        <remarks>Child classes should use this to add to the base class condition.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddExternalCondition">
@@ -162,6 +191,7 @@
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -172,7 +202,7 @@
       <Docs>
         <param name="condition">External constraint to add, it will be AND'ed to all other constraints.</param>
         <summary>
-            Add external condition to the OnCondition (mostly used by external OnConditionSet to apply external constraints to OnCondition).
+            Add external condition to the OnCondition.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -191,6 +221,7 @@
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -211,6 +242,31 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CreateExpression">
+      <MemberSignature Language="C#" Value="protected virtual AdaptiveExpressions.Expression CreateExpression ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class AdaptiveExpressions.Expression CreateExpression() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnCondition.CreateExpression" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateExpression () As Expression" />
+      <MemberSignature Language="F#" Value="abstract member CreateExpression : unit -&gt; AdaptiveExpressions.Expression&#xA;override this.CreateExpression : unit -&gt; AdaptiveExpressions.Expression" Usage="onCondition.CreateExpression " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bot.Builder.Dialogs.Adaptive</AssemblyName>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>AdaptiveExpressions.Expression</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Create the expression for this condition.
+            </summary>
+        <returns>Expression used to evaluate this rule. </returns>
+        <remarks>
+            Override this in base classes to create the expression for this trigger.
+            </remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CurrentPriority">
       <MemberSignature Language="C#" Value="public int CurrentPriority (Microsoft.Bot.Builder.Dialogs.Adaptive.ActionContext actionContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 CurrentPriority(class Microsoft.Bot.Builder.Dialogs.Adaptive.ActionContext actionContext) cil managed" />
@@ -225,6 +281,7 @@
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -255,6 +312,7 @@
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Bot.Builder.Dialogs.Adaptive.ActionChangeList&gt;&gt;</ReturnType>
@@ -288,11 +346,12 @@
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName Language="C#">[System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnCondition/&lt;GetDependencies&gt;d__34))]</AttributeName>
-          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnCondition/&lt;GetDependencies&gt;d__34))&gt;]</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnCondition/&lt;GetDependencies&gt;d__35))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnCondition/&lt;GetDependencies&gt;d__35))&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -321,6 +380,7 @@
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>AdaptiveExpressions.Expression</ReturnType>
@@ -328,10 +388,15 @@
       <Parameters />
       <Docs>
         <summary>
-            Get the expression for this rule by calling GatherConstraints().
+            Get the cached expression for this condition.
             </summary>
-        <returns>Expression which will be cached and used to evaluate this rule.</returns>
-        <remarks>To be added.</remarks>
+        <returns>Cached Expression used to evaluate this rule.</returns>
+        <remarks>
+            This method calls protected <seealso cref="M:Microsoft.Bot.Builder.Dialogs.Adaptive.Conditions.OnCondition.CreateExpression" /> method to create the expression which is cached.
+            Child classes should override CreateExpression to add constraints.
+            This method should not have been virtual but is left virtual to maintain backward compatibility. If
+            you override this method you should return a cached Expression because this method is called frequenetly.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetIdentity">
@@ -351,6 +416,7 @@
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -378,6 +444,7 @@
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -410,6 +477,7 @@
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -441,6 +509,7 @@
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Bot.Builder.Dialogs.Adaptive.ActionChangeList</ReturnType>
@@ -473,6 +542,7 @@
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -505,6 +575,7 @@
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -536,6 +607,7 @@
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -568,6 +640,7 @@
         <AssemblyVersion>4.10.0.0</AssemblyVersion>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
         <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

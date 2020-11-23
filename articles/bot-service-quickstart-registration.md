@@ -5,7 +5,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 07/30/2020
+ms.date: 11/12/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -27,14 +27,17 @@ Bots created using the Azure portal or the Command Line Interface (CLI) are alre
 1. In your browser, navigate to the [Azure portal](https://ms.portal.azure.com). If you do not have a subscription, you can register for a <a href="https://azure.microsoft.com/free/" target="_blank">free account</a>.
 
 1. In the left panel, click **Create a resource**.
-1. In the right panel selection box enter *bot*. From the drop-down list select **Bot Channels Registration**.
+1. In the top center search bar, enter *bot*. From the drop-down list select **Bot Channels Registration**.
+
+    ![create bot registration](media/azure-bot-quickstarts/bot-channels-registration-create.png)
+
 1. Click the **Create** button.
 1. In the **Bot Channels Registration** form, provide the requested information about your bot as specified in the table below.
 
     > [!div class="mx-tdBreakAll"]
     >   |Setting |Suggested value|Description|
     >   |---|---|--|
-    >   |**Bot name** <img width="200px"/>|\<Your bot display name><img width="200px"/>|Assign the display name for the bot that appears in channels and directories. You can change this name at anytime.|
+    >   |**Bot name** <img width="200px"/>|\<Your bot's handle><img width="200px"/>|The *bot handle* is a unique identifier for your bot. You can choose a different display name for your bot in the *Settings* blade after the bot has been created.|
     >   |**Subscription**|\<Your subscription>|Select the Azure subscription you want to use.|
     >   |**Resource Group**|\<Your resource group name>|Create a new [resource group](/azure/azure-resource-manager/resource-group-overview#resource-groups) or select an existing one.|
     >   |**Location**|West US|Choose the geographic location for your resource group. It's usually best to choose a location close to you. The location cannot be changed once the resource group is created.|

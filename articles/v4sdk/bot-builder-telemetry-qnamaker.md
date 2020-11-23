@@ -121,21 +121,18 @@ We will start with the [QnA Maker sample app](https://aka.ms/cs-qna) and add the
         }
     }
     ```
-   > [!Note] 
-   > 
-   > * Details on getting the _Application Insights instrumentation key_ can be found in the article [Application Insights keys](../bot-service-resources-app-insights-keys.md).
+
+    > [!Note]
     >
+    > * Details on getting the _Application Insights instrumentation key_ can be found in the article [Application Insights keys](../bot-service-resources-app-insights-keys.md).
     > * You should already have a [QnA maker account](https://aka.ms/create-qna-maker), if needed you can find information on getting the QnA Knowledgebase Id, Endpoint Key and HostName values [here](https://aka.ms/bot-framework-emulator-qna-keys).
-    > 
 
+At this point the preliminary work to enable telemetry using Application Insights is done.  You can run your bot locally using the bot Emulator and then go into Application Insights to see what is being logged such as response time, overall app health, and general running information.
 
-At this point the preliminary work to enable telemetry using Application Insights is done.  You can run your bot locally using the bot emulator and then go into Application Insights to see what is being logged such as response time, overall app health, and general running information. 
-
-> [!TIP] 
+> [!TIP]
 > For information on Enabling / disabling activity event and personal information logging see [Add telemetry to your bot](bot-builder-telemetry.md#enabling-or-disabling-activity-logging)
 
-Next we will see what needs to be included to add telemetry functionality to the QnA Maker service. 
-
+Next we will see what needs to be included to add telemetry functionality to the QnA Maker service.
 
 ## Enabling telemetry to capture usage data from the QnA Maker service
 
@@ -177,14 +174,14 @@ The QnA Maker service has built-in telemetry logging available so there is very 
                 _telemetryClient);
     ```
 
-    > [!TIP] 
-    > Make sure that the property names that you use in the `_configuration` entries match the property names you used in the AppSettings.json file and the values for those properties are obtained by selecting the _View Code_ button in https://www.qnamaker.ai/Home/MyServices:
+    > [!TIP]
+    > Make sure that the property names that you use in the `_configuration` entries match the property names you used in the AppSettings.json file and the values for those properties are obtained by selecting the _View Code_ button on the [My knowledge bases](https://www.qnamaker.ai/Home/MyServices) page in the QnA Maker portal:
 
-        
     ![AppSettings](media/AppSettings.json-QnAMaker.png)
 
 #### Viewing Telemetry data logged from the QnA Maker default entries
-You can view the results of your QnA Maker bot usage in Application Insights after running your bot in the bot emulator by taking the following steps :
+
+You can view the results of your QnA Maker bot usage in Application Insights after running your bot in the bot Emulator by taking the following steps :
 
 1. Go to the [Azure portal](https://portal.azure.com/)
 
@@ -321,7 +318,8 @@ After learning how to add custom properties we will learn how to create a new cu
     ```
 
 ##### Viewing telemetry data logged from the new property _MyImportantProperty_
-After running your bot in the emulator you can view the results in Application Insights by doing the following:
+
+After running your bot in the Emulator you can view the results in Application Insights by doing the following:
 
 1. Switch back to your browser that has the _Logs (Analytics)_ view active.
 
