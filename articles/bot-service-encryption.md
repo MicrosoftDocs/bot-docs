@@ -18,7 +18,7 @@ Encryption and decryption are transparent, meaning encryption and access are man
 
 ## About encryption key management
 
-By default, your subscription uses Microsoft-managed encryption keys. We provide the option as well for you to manage your bot resource with your own Keys called customer-managed keys (CMK). CMK offers greater flexibility to create, rotate, disable, and revoke access controls to the data Bot Service stores. You can also audit the encryption keys used to protect your data.
+By default, your subscription uses Microsoft-managed encryption keys. We provide the option as well for you to manage your bot resource with your own keys called customer-managed keys (CMK). CMK offers greater flexibility to create, rotate, disable, and revoke access controls to the data Bot Service stores. You can also audit the encryption keys used to protect your data.
 
 When encrypting data, Azure Bot Service encrypts with two levels of encryption. In the case where CMK is not enabled, both keys used are Microsoft-managed keys. When CMK is configured, the data is encrypted with both the CMK and a Microsoft-managed key.  
 
