@@ -15,7 +15,7 @@ ms.date: 11/23/2020
 
 Bots are more and more prevalent in key business areas like financial services, retail, travel, and so on. A bot might collect very sensitive data such as credit cards, SSN, bank accounts, and other personal information. So, it is important that bots are secure and protect against common threats and vulnerabilities.
 
-You can take some standard preventative measures to improve your bot's security. Some security measures are similar to the ones used in other software systems, while some are specific to the Bot Framework. For the latter, refer to the [Azure Security Benchmark](security-baseline.md). The benchmark provides recommendations on how you can secure your cloud solutions on Azure.
+You can take some standard preventative measures to improve your bot's security. Some security measures are similar to the ones used in other software systems, while some are specific to the Bot Framework. For the latter, refer to the [Azure Security Benchmark](../security-baseline.md). The benchmark provides recommendations on how you can secure your cloud solutions on Azure.
 
 ## Security issues in a nutshell
 
