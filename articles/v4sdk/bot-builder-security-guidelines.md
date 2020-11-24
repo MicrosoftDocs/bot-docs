@@ -1,12 +1,12 @@
 ---
 title: Bot Framework security guidelines - Bot Service
 description: Learn about the security guidelines in the Bot Framework.
-author: kamrani
+author: mmiele
 ms.author: v-mimiel
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 07/07/2020
+ms.date: 11/23/2020
 ---
 
 # Bot Framework security guidelines
