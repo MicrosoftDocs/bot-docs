@@ -117,6 +117,23 @@ If everything is correct, the page will return this JSON content: `{"v":"123","k
 - If the *initialized* value of the **.bot endpoint** is false it means the Direct Line app service extension is unable to validate the **App Service Extension Key** added to the bot's *Application Settings* above.
     1. Confirm the value was correctly entered.
     1. Switch to the alternative **App Service Extension Key** shown on your bot's **Direct Line channel configuration page**.
+    
+- If attempting to use OAuth with the Direct Line App Service Extension and encountering the error "Unable to get the bot AppId from the audience claim." a *ClaimsIdentity* with the *AudienceClaim* assigned needs to be set on the *BotFrameworkHttpAdapter*. In order to accomplish this a developer may subclass the adapter similar to the example below:
+
+```csharp
+public class AdapterWithStaticClaimsIdentity : BotFrameworkHttpAdapter
+{
+ public AdapterWithStaticClaimsIdentity(IConfiguration configuration, ILogger<BotFrameworkHttpAdapter> logger, ConversationState conversationState = null)
+            : base(configuration, logger)
+ {
+            // Manually create the ClaimsIdentity and create a Claim with a valid AudienceClaim and the AppID for a bot using the Direct Line App Service Extension.
+            var appId = configuration.GetSection(MicrosoftAppCredentials.MicrosoftAppIdKey)?.Value;
+            ClaimsIdentity = new ClaimsIdentity(new List<Claim>{
+                new Claim(AuthenticationConstants.AudienceClaim, appId)
+            });
+ }
+}
+```
 
 ## Next steps
 
