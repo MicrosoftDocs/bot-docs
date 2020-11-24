@@ -20,6 +20,8 @@ You must be aware that there are two user identities:
 - The channel user’s identity. An attacker can use it for [Impersonation](#impersonation).
 - The user’s identity from the identity provider that the bot uses to authenticated the user. An attacker can use it for [Identity spoofing](#identity-spoofing).
 
+The code in this article is based on the sample: [MVC DirectLine token controller](https://github.com/microsoft/BotBuilder-Samples/tree/main/experimental/DirectLineTokenSite). See the [Example](#example) section for more details.
+
 ## Impersonation
 
 Impersonation refers to the action of an attacker that makes the bot think he is someone else. For example, in Web Chat, the attacker can impersonate someone else by **changing the user ID** of the Web Chat instance.

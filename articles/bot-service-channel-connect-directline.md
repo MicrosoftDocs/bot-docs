@@ -67,10 +67,14 @@ When you add the Direct Channel, the Bot Framework generates secret keys. Your c
 
 1. When finished, click **Done** to save the site configuration. You can repeat this process, beginning with [Add new site](#add-new-site), for each client application that you want to connect to your bot.
 
-When you have the **enhanced authentication enabled**, you will see the following behavior for which trusted origins are used:
+### Enhanced authentication
+
+When you enable  **enhanced authentication**, you will see the following behavior for which trusted origins are used:
 
 - If you configure trusted origins as part of the configuration UI page, then these will **always** be used as the only set. Sending no or additional trusted origins when generating a token or starting a conversation will be ignored (i.e. they are **not appended** to the list or cross validated).
 - If you have not configured trusted origins as part of the configuration UI, then any value you send as part of the API calls will be used.
+
+Enhanced authentication allows you to mitigate security risks when connecting to a bot (using the Web Chat control, for example). For more information, see [Bot Framework enhanced authentication](v4sdk/bot-builder-security-enhanced.md).
 
 ## Example
 
