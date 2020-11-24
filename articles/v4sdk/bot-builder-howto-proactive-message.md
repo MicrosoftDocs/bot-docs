@@ -140,9 +140,9 @@ To handle notifications more smoothly, consider other ways to integrate the noti
 
 The _continue conversation_ method uses the conversation reference and a turn callback handler to:
 
-1. Creates a turn in which the bot application can send the proactive message. The adapter creates an `event` activity for this turn, with its name set to "ContinueConversation".
-1. Sends the turn through the adapter's middleware pipeline.
-1. Calls the turn callback handler to perform custom logic.
+1. Create a turn in which the bot application can send the proactive message. The adapter creates an `event` activity for this turn, with its name set to "ContinueConversation".
+1. Send the turn through the adapter's middleware pipeline.
+1. Call the turn callback handler to perform custom logic.
 
 In the **proactive messages** sample, the turn callback handler sends the message directly to the conversation, without sending the proactive activity through the bot's turn handler.
 
