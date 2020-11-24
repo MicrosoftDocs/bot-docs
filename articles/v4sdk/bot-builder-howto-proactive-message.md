@@ -38,7 +38,7 @@ More information about proactive messages in Teams can be found in these resourc
 
 ## About the proactive sample
 
-The sample has a bot and an additional controller that is used to send proactive messages to the bot, as shown in the following illustration.
+The sample has a bot and an additional controller that is used to send proactive messages to the user, as shown in the following illustration.
 
 ![proactive bot](media/proactive-sample-bot.png)
 
@@ -76,7 +76,7 @@ The conversation reference includes a _conversation_ property that describes the
 
 ## Send proactive message
 
-The second controller, the _notify_ controller, is responsible for sending the proactive message to the bot. It uses the following steps to generate a proactive message.
+The second controller, the _notify_ controller, is responsible for sending the proactive message to the user. It uses the following steps to generate a proactive message.
 
 1. Retrieves the reference for the conversation to which to send the proactive message.
 1. Calls the adapter's _continue conversation_ method, providing the conversation reference and the turn handler delegate to use. (The continue conversation method generates a turn context for the referenced conversation and then calls the specified turn handler delegate.)
@@ -135,6 +135,23 @@ When implementing proactive messages in your bot, don't send several proactive m
 An ad hoc proactive message is the simplest type of proactive message. The bot simply interjects the message into the conversation whenever it is triggered, without any regard for whether the user is currently engaged in a separate topic of conversation with the bot and will not attempt to change the conversation in any way.
 
 To handle notifications more smoothly, consider other ways to integrate the notification into the conversation flow, such as setting a flag in the conversation state or adding the notification to a queue.
+
+### About the proactive turn
+
+The _continue conversation_ method uses the conversation reference and a turn callback handler to:
+
+1. Creates a turn in which the bot application can send the proactive message. The adapter creates an `event` activity for this turn, with its name set to "ContinueConversation".
+1. Sends the turn through the adapter's middleware pipeline.
+1. Calls the turn callback handler to perform custom logic.
+
+In the **proactive messages** sample, the turn callback handler sends the message directly to the conversation, without sending the proactive activity through the bot's turn handler.
+
+You may need the bot logic to be aware of the proactive message, and you have a few options for doing so. You can:
+
+- Provide the bot's turn handler as the turn callback handler. The bot will then receive the "ContinueConversation" event activity.
+- Use the turn callback handler to add information to the turn context, and then cal the bot's turn handler.
+
+In both of these cases, you will need to design your bot logic to handle the proactive event.
 
 ### Avoiding 401 "Unauthorized" Errors
 
