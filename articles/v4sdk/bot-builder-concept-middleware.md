@@ -17,7 +17,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 Middleware is simply a class that sits between the adapter and your bot logic, added to your adapter's middleware collection during initialization. The SDK allows you to write your own middleware or add middleware created by others. Every activity coming into or out of your bot flows through your middleware.
 
-The adapter processes and directs incoming activities in through the bot middleware pipeline to your bot’s logic and then back out again. As each activity flows in and out of the bot, each piece of middleware can inspect or act upon the activity, both before and after the bot logic runs.
+The adapter processes and directs incoming activities in through the bot middleware pipeline to your bot's logic and then back out again. As each activity flows in and out of the bot, each piece of middleware can inspect or act upon the activity, both before and after the bot logic runs.
 
 Before jumping into middleware, it is important to understand [bots in general](~/v4sdk/bot-builder-basics.md) and [how they process activities](~/v4sdk/bot-builder-basics.md#the-activity-processing-stack).
 
@@ -37,13 +37,13 @@ For each activity, the adapter calls middleware in the order in which you added 
 
 For example:
 
-- 1st middleware object’s turn handler executes code before calling _next_.
-  - 2nd middleware object’s turn handler executes code before calling _next_.
-    - The bot’s turn handler executes and returns.
-  - 2nd middleware object’s turn handler executes any remaining code before returning.
-- 1st middleware object’s turn handler executes any remaining code before returning.
+- 1st middleware object's turn handler executes code before calling _next_.
+  - 2nd middleware object's turn handler executes code before calling _next_.
+    - The bot's turn handler executes and returns.
+  - 2nd middleware object's turn handler executes any remaining code before returning.
+- 1st middleware object's turn handler executes any remaining code before returning.
 
-If middleware doesn’t call the next delegate, the adapter does not call any of the subsequent middleware or bot turn handlers, and the pipeline short circuits.
+If middleware doesn't call the next delegate, the adapter does not call any of the subsequent middleware or bot turn handlers, and the pipeline short circuits.
 
 Once the bot middleware pipeline completes, the turn is over, and the turn context goes out of scope.
 
@@ -76,7 +76,7 @@ In addition to the application and middleware logic, response handlers (also som
 > Be careful to not call an activity response method from within its respective response event handler, for example, calling the send activity method from within an on send activity handler. Doing so can generate an infinite loop.
 
 Remember, each new activity gets a new thread to execute on. When the thread to process the activity is created, the list of handlers for that activity is copied to that new thread. No handlers added after that point will be executed for that specific activity event.
-The handlers registered on a context object are handled very similarly to how the adapter manages the middleware pipeline. Namely, handlers get called in the order they're added, and calling the next delegate passes control to the next registered event handler. If a handler doesn’t call the next delegate, none of the subsequent event handlers are called, the event short circuits, and the adapter does not send the response to the channel.
+The handlers registered on a context object are handled very similarly to how the adapter manages the middleware pipeline. Namely, handlers get called in the order they're added, and calling the next delegate passes control to the next registered event handler. If a handler doesn't call the next delegate, none of the subsequent event handlers are called, the event short circuits, and the adapter does not send the response to the channel.
 
 ## Handling state in middleware
 
@@ -84,7 +84,7 @@ A common method to save state is to call the save changes method at the end of t
 
 ![state middleware issues](media/bot-builder-dialog-state-problem.png)
 
-The problem with this approach is that any state updates made from some custom middleware that happens after the bot’s turn handler has returned will not be saved to durable storage. The solution is to move the call to the save changes method to after the custom middleware has completed by adding an instance of the _auto-save changes_ middleware to the beginning of the middleware stack, or at least before any of the middleware that might update state. The execution is shown below.
+The problem with this approach is that any state updates made from some custom middleware that happens after the bot's turn handler has returned will not be saved to durable storage. The solution is to move the call to the save changes method to after the custom middleware has completed by adding an instance of the _auto-save changes_ middleware to the beginning of the middleware stack, or at least before any of the middleware that might update state. The execution is shown below.
 
 ![state middleware solution](media/bot-builder-dialog-state-solution.png)
 

@@ -49,7 +49,7 @@ Use xref links, `[link text](xref:UID)`. Note that UIDs are case-sensitive.
 
 #### C\#
 
-To find the xref for C#, go to https://docs.microsoft.com/en-us/dotnet/api/ and search for the member you want to link to. The xref will be the page’s ms.assetID metadata value.
+To find the xref for C#, go to https://docs.microsoft.com/en-us/dotnet/api/ and search for the member you want to link to. The xref will be the page's ms.assetID metadata value.
 For example, the xref for the BotAdapter.Use method is __Microsoft.Bot.Builder.BotAdapter.Use*__.
 
 ```html

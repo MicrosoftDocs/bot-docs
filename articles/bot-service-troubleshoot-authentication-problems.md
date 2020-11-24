@@ -63,22 +63,24 @@ Next, test your bot on localhost by using the Bot Framework Emulator.
 
 1. Start your bot on localhost.
 2. Start the Bot Framework Emulator.
-3. Connect to your bot using the emulator.
-    - Type `http://localhost:port-number/api/messages` into the emulator's address bar, where **port-number** matches the port number shown in the browser where your application is running.
+3. Connect to your bot using the Emulator.
+    - Type `http://localhost:port-number/api/messages` into the Emulator's address bar, where **port-number** matches the port number shown in the browser where your application is running.
     - Ensure that the **Microsoft App ID** and **Microsoft App Password** fields are both empty.
     - Click **Connect**.
-4. To test connectivity to your bot, type some text into the emulator and press Enter.
+4. To test connectivity to your bot, type some text into the Emulator and press Enter.
 
 If the bot responds to the input and there are no errors in the chat window, you have verified that your bot is accessible and functional on localhost when security is disabled. Proceed to [Step 2](#step-2).
 
 If one or more error(s) are indicated in the chat window, click the error(s) for details. Common issues include:
 
-* The emulator settings specify an incorrect endpoint for the bot. Make sure you have included the proper port number in the URL and the proper path at the end of the URL (e.g., `/api/messages`).
-* The emulator settings specify a bot endpoint that begins with `https`. On localhost, the endpoint should begin with `http`.
-* The emulator settings specify a value for the **Microsoft App ID** field and/or the **Microsoft App Password** field. Both fields should be empty.
-* Security has not been disabled of for the bot. [Verify](#disable-security-localhost) that the bot does not specify a value for either app ID or password.
+- The Emulator settings specify an incorrect endpoint for the bot. Make sure you have included the proper port number in the URL and the proper path at the end of the URL (e.g., `/api/messages`).
+- The Emulator settings specify a bot endpoint that begins with `https`. On localhost, the endpoint should begin with `http`.
+- The Emulator settings specify a value for the **Microsoft App ID** field and/or the **Microsoft App Password** field. Both fields should be empty.
+- Security has not been disabled of for the bot. [Verify](#disable-security-localhost) that the bot does not specify a value for either app ID or password.
 
-## <a id="step-2"></a> Step 2: Verify your bot's app ID and password
+<a id="step-2"></a>
+
+## Step 2: Verify your bot's app ID and password
 
 In this step, you will verify that the app ID and password that your bot will use for authentication are valid. (If you do not know these values, [obtain them](#app-id-and-password) now.)
 
@@ -143,21 +145,21 @@ Next, test your bot on localhost by using the Bot Framework Emulator.
 
 1. Start your bot on localhost.
 2. Start the Bot Framework Emulator.
-3. Connect to your bot using the emulator.
-    - Type `http://localhost:port-number/api/messages` into the emulator's address bar, where **port-number** matches the port number shown in the browser where your application is running.
+3. Connect to your bot using the Emulator.
+    - Type `http://localhost:port-number/api/messages` into the Emulator's address bar, where **port-number** matches the port number shown in the browser where your application is running.
     - Enter your bot's app ID into the **Microsoft App ID** field.
     - Enter your bot's password into the **Microsoft App Password** field.
     - Click **Connect**.
-4. To test connectivity to your bot, type some text into the emulator and press Enter.
+4. To test connectivity to your bot, type some text into the Emulator and press Enter.
 
 If the bot responds to the input and there are no errors in the chat window, you have verified that your bot is accessible and functional on localhost when security is enabled.  Proceed to [Step 4](#step-4-test-your-bot-in-the-cloud).
 
 If one or more error(s) are indicated in the chat window, click the error(s) for details. Common issues include:
 
-* The emulator settings specify an incorrect endpoint for the bot. Make sure you have included the proper port number in the URL and the proper path at the end of the URL (e.g., `/api/messages`).
-* The emulator settings specify a bot endpoint that begins with `https`. On localhost, the endpoint should begin with `http`.
-* In the emulator settings, the **Microsoft App ID** field and/or the **Microsoft App Password** do not contain valid values. Both fields should be populated and each field should contain the corresponding value that you verified in [Step 2](#step-2).
-* Security has not been enabled for the bot. [Verify](#enable-security-localhost) that the bot configuration settings specify values for both app ID and password.
+- The Emulator settings specify an incorrect endpoint for the bot. Make sure you have included the proper port number in the URL and the proper path at the end of the URL (e.g., `/api/messages`).
+- The Emulator settings specify a bot endpoint that begins with `https`. On localhost, the endpoint should begin with `http`.
+- In the Emulator settings, the **Microsoft App ID** field and/or the **Microsoft App Password** do not contain valid values. Both fields should be populated and each field should contain the corresponding value that you verified in [Step 2](#step-2).
+- Security has not been enabled for the bot. [Verify](#enable-security-localhost) that the bot configuration settings specify values for both app ID and password.
 
 ## Step 4: Test your bot in the cloud
 
@@ -168,7 +170,7 @@ At this point, you have verified that your bot is accessible and functional on l
 The Bot Framework requires that bots be accessible from the internet, so you must deploy your bot to a cloud hosting platform such as Azure. Be sure to enable security for your bot prior to deployment, as described in [Step 3](#step-3).
 
 > [!NOTE]
-> If you do not already have a cloud hosting provider, you can register for a <a href="https://azure.microsoft.com/free/" target="_blank">free account</a>..
+> If you do not already have a cloud hosting provider, you can register for a <a href="https://azure.microsoft.com/free/" target="_blank">free account</a>.
 
 If you deploy your bot to Azure, SSL will automatically be configured for your application, thereby enabling the **HTTPS** endpoint that the Bot Framework requires. If you deploy to another cloud hosting provider, be sure to verify that your application is configured for SSL so that the bot will have an **HTTPS** endpoint.
 

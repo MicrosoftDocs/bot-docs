@@ -43,7 +43,7 @@ To use QnA Maker in your bot, you need to create a knowledge base in the [QnA Ma
 
 ## [Python](#tab/python)
 
-![QnABot JS logic flow](./media/qnabot-python-logic-flow.png)
+![QnABot Python logic flow](./media/qnabot-python-logic-flow.png)
 
 `on_message_activity` is called for each user input received. When called, it accesses your `qna_maker` connector that was pre-configured using values provided from your sample code's `config.py` file.  The method `qna_maker.getAnswers` connects your bot to your external QnA Maker knowledge base.
 
@@ -168,7 +168,7 @@ In the **qna_bot.py** file, we pass the user's input to the QnA Maker service's 
 Run the sample locally on your machine. If you have not done so already, install the [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md#download). For further instructions, refer to the readme file for [C#](https://aka.ms/cs-qna) or [Javascript](https://aka.ms/js-qna-sample).
 or [Python](https://aka.ms/bot-qna-python-sample-code) sample.
 
-Start the emulator, connect to your bot, and send a message as shown below.
+Start the Emulator, connect to your bot, and send a message as shown below.
 
 ![test qna sample](../media/emulator-v4/qna-test-bot.png)
 

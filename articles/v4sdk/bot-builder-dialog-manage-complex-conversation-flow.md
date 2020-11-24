@@ -37,19 +37,19 @@ The bot derives from the activity handler. Like many of the sample bots, it welc
 
 To use dialogs, install the **Microsoft.Bot.Builder.Dialogs** NuGet package.
 
-![Complex bot flow](./media/complex-conversation-flow.png)
+![C# complex bot flow diagram](./media/complex-conversation-flow.png)
 
 ### [JavaScript](#tab/javascript)
 
 To use dialogs, your project needs to install the **botbuilder-dialogs** npm package.
 
-![Complex bot flow](./media/complex-conversation-flow-js.png)
+![JavaScript complex bot flow diagram](./media/complex-conversation-flow-js.png)
 
 ### [Python](#tab/python)
 
 To use dialogs, your project needs to install the **botbuilder-dialogs** PyPI package by running `pip install botbuilder-dialogs`.
 
-![Complex bot flow](./media/complex-conversation-flow-python.png)
+![Python complex bot flow diagram](./media/complex-conversation-flow-python.png)
 
 ---
 
@@ -250,7 +250,7 @@ Create and register services as needed:
 
 1. If you have not done so already, install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
 1. Run the sample locally on your machine.
-1. Start the emulator, connect to your bot, and send messages as shown below.
+1. Start the Emulator, connect to your bot, and send messages as shown below.
 
 ![test complex dialog sample](~/media/emulator-v4/test-complex-dialog.png)
 

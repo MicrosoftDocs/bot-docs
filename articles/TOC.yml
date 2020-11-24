@@ -30,6 +30,10 @@
     href: https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md
 - name: Security
   items:
+  - name: Security baseline
+    href: security-baseline.md
+  - name: Bot Service encryption
+    href: bot-service-encryption.md
   - name: Authentication basics
     href: v4sdk/bot-builder-authentication-basics.md
   - name: Authentication types
@@ -489,8 +493,6 @@
     href: bot-service-resources-app-insights-keys.md
   - name: Bot Service Compliance
     href: bot-service-compliance.md
-  - name: Bot Service Encryption
-    href: bot-service-encryption.md
   - name: Bot review guidelines
     href: bot-service-review-guidelines.md
   - name: Channel reference

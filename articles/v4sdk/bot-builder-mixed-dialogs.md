@@ -147,7 +147,7 @@ The adaptive dialog uses a language generator to format text and include values 
 
 1. If you have not done so already, install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
 1. Run the sample locally on your machine.
-1. Start the emulator, connect to your bot, and respond to the prompts: first and last name, shoe size, street, city, and zip.
+1. Start the Emulator, connect to your bot, and respond to the prompts: first and last name, shoe size, street, city, and zip.
 1. The bot will display the information it collected.
 1. Send the bot any message to start the process over again.
 
