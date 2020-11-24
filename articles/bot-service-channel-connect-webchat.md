@@ -16,7 +16,7 @@ ms.date: 08/22/2019
 
 When you [create a bot](bot-service-quickstart.md) with the Framework Bot Service, the Web Chat channel is automatically configured for you. The Web Chat channel includes the [Web Chat control](https://github.com/microsoft/BotFramework-WebChat), which provides the ability for users to interact with the bot directly in a web page.
 
-![Web chat sample](~/media/bot-service-channel-webchat/create-a-bot.png)
+![Web chat sample](./media/bot-service-channel-webchat/create-a-bot.png)
 
 The Web Chat channel in the Bot Framework Portal contains everything you need to embed the Web Chat control in a web page. All you have to do to use the web chat control is get your bot's secret key and embed the control in a web page.
 
@@ -28,10 +28,12 @@ When you use Azure Bot Service authentication with Web Chat there are some impor
 
 The following picture shows the components involved when embedding the Web Chat control in a web page.
 
-  ![bot embed components](~/media/bot-service-channel-webchat/webchat-control.png)
+  ![bot embed components](./media/bot-service-channel-webchat/webchat-control.png)
 
 > [!NOTE]
 > This article assumes that you already have a bot deployed in Azure. For information about deployment, see [Deploy your bot](bot-builder-deploy-az-cli.md).
+
+As the previous picture implies, you need to use Direct Line (with enhanced authentication) to mitigate security risks when connecting to a bot using the Web Chat control. For more information, see [Bot Framework enhanced authentication](v4sdk\bot-builder-security-enhanced.md).
 
 ### Get your bot secret key
 
@@ -39,11 +41,11 @@ The following picture shows the components involved when embedding the Web Chat 
 
 2. Click **Edit** for the **Web Chat** channel.
 
-    ![Web chat channel](~/media/bot-service-channel-webchat/bot-service-channel-list.png)
+    ![Web chat channel](./media/bot-service-channel-webchat/bot-service-channel-list.png)
 
 3. Under **Secret keys**, click **Show** for the first key.
 
-    ![Secret key](~/media/bot-service-channel-webchat/secret-key.png)
+    ![Secret key](./media/bot-service-channel-webchat/secret-key.png)
 
 4. Copy the **Secret key** and the **Embed code**.
 
