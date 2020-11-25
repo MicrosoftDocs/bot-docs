@@ -10,7 +10,7 @@ ms.service: bot-service
 ms.date: 11/25/2020
 ---
 
-## Debug with Bot Framework Adaptive Tool
+# Debug with Bot Adaptive Tool
 
 [Bot Framework Adaptive Tool](https://aka.ms/adaptive-tool) is a VS Code extension that helps developers handle LG (.lg), LU (.lu), and dialog (.dialog) files efficiently.
 
@@ -23,8 +23,7 @@ Adaptive Tool has a variety tools and settings that make it easy to debug, analy
 - A bot with one or more of the following file types:
     - [Language generation (.lg)](file-format/bot-builder-lg-file-format.md)
     - [Language understanding (.lu)](file-format/bot-builder-lu-file-format.md)
-    - [QnA (.qna)](file-format-bot-builder-qna-file-format.md)
-    - Dialog (.dialog)<!--add link to .dialog reference->
+    - [Dialog (.dialog)]()<!--add link to .dialog reference->
 
 ## About Adaptive Tool
 
@@ -42,5 +41,4 @@ The README includes details about:
 
 - [.lg file format](file-format/bot-builder-lg-file-format.md)
 - [.lu file format](file-format/bot-builder-lu-file-format.md)
-- [.qna file format](file-format/bot-builder-qna-file-format.md)
 - See the [troubleshooting index](bot-service-troubleshoot-index.md) information about all troubleshooting topics.
