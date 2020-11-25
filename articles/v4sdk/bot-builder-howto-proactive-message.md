@@ -146,7 +146,7 @@ The _continue conversation_ method uses the conversation reference and a turn ca
 
 In the **proactive messages** sample, the turn callback handler sends the message directly to the conversation, without sending the proactive activity through the bot's turn handler.
 
-You may need the bot logic to be aware of the proactive message, and you have a few options for doing so. You can:
+If you need the bot logic to be aware of the proactive message, you have a few options for doing so. You can:
 
 - Provide the bot's turn handler as the turn callback handler. The bot will then receive the "ContinueConversation" event activity.
 - Use the turn callback handler to add information to the turn context, and then cal the bot's turn handler.
