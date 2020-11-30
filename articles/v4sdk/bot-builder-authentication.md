@@ -325,7 +325,7 @@ as shown in [Configure the Emulator for authentication](../bot-service-debug-emu
 After you have configured the authentication mechanism, you can perform the actual bot sample testing.
 
 > [!NOTE]
-> You may be asked to enter a *magic code*, because the way the bot sample is implemented. This magic code is part of the [RFC#7636](https://tools.ietf.org/html/rfc7636#page-5) and is there to add an extra security element. By removing the magic code, there is an increased security risk. This can be mitigated using the Direct Line with enhanced authentication enable. For more information, see [Bot Framework enhanced authentication](bot-builder-security-enhanced.md).
+> You may be asked to enter a *magic code*, because the way the bot sample is implemented. This magic code is part of the [RFC#7636](https://tools.ietf.org/html/rfc7636#page-5) and is there to add an extra security element. By removing the magic code, there is an increased security risk. This can be mitigated using the Direct Line with enhanced authentication enabled. For more information, see [Bot Framework enhanced authentication](bot-builder-security-enhanced.md).
 
 1. Run the bot sample locally on your machine.
 1. Start the Emulator.

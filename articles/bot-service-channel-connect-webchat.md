@@ -30,10 +30,8 @@ The following picture shows the components involved when embedding the Web Chat 
 
   ![bot embed components](./media/bot-service-channel-webchat/webchat-control.png)
 
-> [!NOTE]
-> This article assumes that you already have a bot deployed in Azure. For information about deployment, see [Deploy your bot](bot-builder-deploy-az-cli.md).
-
-As the previous picture implies, you need to use Direct Line (with enhanced authentication) to mitigate security risks when connecting to a bot using the Web Chat control. For more information, see [Bot Framework enhanced authentication](v4sdk\bot-builder-security-enhanced.md).
+> [!IMPORTANT]
+> As the previous picture implies, you need to use Direct Line (with enhanced authentication) to mitigate security risks when connecting to a bot using the Web Chat control. For more information, see [Bot Framework enhanced authentication](v4sdk\bot-builder-security-enhanced.md).
 
 ### Get your bot secret key
 
