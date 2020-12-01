@@ -99,7 +99,7 @@ You can also view the list in [alphabetical order](#prebuilt-functions-sorted-al
 
 |Function|Explanation|
 |-----------|-----------|
-|[float](#float)|Return the floating point representation of the specified string. | 
+|[float](#float)|Return the floating point representation of the specified string. |
 |[int](#int)|Return the integer representation of the specified string. |
 |[string](#string)|Return the string version of the specified value in an optional locale format.|
 |[bool](#bool)|Return the Boolean representation of the specified string.|
@@ -161,7 +161,7 @@ You can also view the list in [alphabetical order](#prebuilt-functions-sorted-al
 |[getFutureTime](#getFutureTime)|Return the current timestamp in an optional locale format plus the specified time units.   |
 |[getPastTime](#getPastTime)|Return the current timestamp in an optional locale format minus the specified time units.  |
 |[addToTime](#addToTime)   |Add a number of time units to a timestamp in an optional locale format.   |
-|[convertFromUTC](#convertFromUTC) |Convert a timestamp in an optional locale format from Universal Time Coordinated(UTC). |
+|[convertFromUTC](#convertFromUTC) |Convert a timestamp in an optional locale format from Universal Time Coordinated (UTC). |
 |[convertToUTC](#convertToUTC) |Convert a timestamp  in an optional locale format to Universal Time Coordinated (UTC).  |
 |[startOfDay](#startOfDay) |Return the start of the day for a timestamp in an optional locale format.|
 |[startOfHour](#startOfHour)   |Return the start of the hour for a timestamp in an optional locale format. |
@@ -1097,7 +1097,7 @@ convertFromUTC('<timestamp>', '<destinationTimeZone>', '<format>'?, '<locale>'?)
 | --------- | -------- | ---- | ----------- |
 | <*timestamp*> | Yes | string | The string that contains the timestamp |
 | <*destinationTimeZone*> | Yes | string | The name of the target time zone. Supports Windows and Iana time zones. |
-| <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is the ["o" format](/dotnet/standard/base-types/standard-date-and-time-format-strings#Roundtrip], yyyy-MM-ddTHH:mm:ss.fffffffK, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
 | <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
@@ -1118,17 +1118,17 @@ convertFromUTC('2018-02-02T02:00:00.000Z', 'Pacific Standard Time')
 And respectively return these results:
 
 * **02-01-18**
-* **2018-02-01T18:00:00.000-08:00**
+* **2018-01-01T18:00:00.0000000**
 
 *Example 2*
 
-This example converts a timestamp in the **de-DE** locale from UTC to Pacific Standard Time:
+This example converts a timestamp in the **en-US** locale from UTC to Pacific Standard Time:
 
 ```
-convertFromUTC('2018-01-02T02:00:00.000Z', 'Pacific Standard Time', '', 'de-DE')
+convertFromUTC('2018-01-02T02:00:00.000Z', 'Pacific Standard Time', 'D', 'en-US')
 ```
 
-And returns the result **01.01.18 18:00:00**.
+And returns the result **Monday, January 1, 2018**.
 
 <a name="convertToUTC"></a>
 
