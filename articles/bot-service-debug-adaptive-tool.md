@@ -10,7 +10,7 @@ ms.service: bot-service
 ms.date: 11/25/2020
 ---
 
-# Debug with Bot Adaptive Tool
+# Debug with Adaptive Tool
 
 [Bot Framework Adaptive Tool](https://aka.ms/adaptive-tool) is a VS Code extension that helps developers handle LG (.lg), LU (.lu), and dialog (.dialog) files efficiently.
 
