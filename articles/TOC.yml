@@ -248,7 +248,7 @@
       href: bot-service-debug-inspection-middleware.md
     - name: Debug your bot using transcript files
       href: v4sdk/bot-builder-debug-transcript.md
-    - name: Debug your bot with Adaptive tool
+    - name: Debug your bot with Adaptive Tool
       href: bot-service-debug-adaptive-tool.md
   - name: Deploy
     items:
