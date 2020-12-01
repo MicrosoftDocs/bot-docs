@@ -23,7 +23,7 @@ Adaptive Tool has a variety tools and settings that make it easy to debug, analy
 - A bot with one or more of the following file types:
     - [Language generation (.lg)](file-format/bot-builder-lg-file-format.md)
     - [Language understanding (.lu)](file-format/bot-builder-lu-file-format.md)
-    - Dialog (.dialog)]. You can find examples of .dialog files in the [21.AdaptiveBot-declarative](https://aka.ms/dotnet-21-adaptivebot-declarative-sample) sample.
+    - Dialog (.dialog). You can find examples of .dialog files in the [21.AdaptiveBot-declarative](https://aka.ms/dotnet-21-adaptivebot-declarative-sample) sample.
 
 ## About Adaptive Tool
 
