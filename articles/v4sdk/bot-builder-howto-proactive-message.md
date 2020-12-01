@@ -165,55 +165,16 @@ The _continue conversation_ method uses the conversation reference and a turn ca
 1. Call the turn callback handler to perform custom logic.
 
 In the **proactive messages** sample, the turn callback handler is defined in the notify controller and sends the message directly to the conversation, without sending the proactive activity through the bot's normal turn handler.
+The sample code also does not access or update the bot's state on the proactive turn.
 
+Many bots are stateful and use state to manage a conversation over multiple turns.
+When the continue conversation method creates a turn context, the turn will have the correct user and conversation state associated with it, and you can integrate proactive turns into your bot's logic.
 If you need the bot logic to be aware of the proactive message, you have a few options for doing so. You can:
 
 - Provide the bot's turn handler as the turn callback handler. The bot will then receive the "ContinueConversation" event activity.
 - Use the turn callback handler to add information to the turn context first, and then call the bot's turn handler.
 
 In both of these cases, you will need to design your bot logic to handle the proactive event.
-
-<!--This section is stale and no longer needed.
-
-### Avoiding 401 "Unauthorized" Errors
-
-By default, the Bot Builder SDK adds a `serviceUrl` to the list of trusted host names if the incoming request is authenticated by BotAuthentication. They are maintained in an in-memory cache. If your bot is restarted, a user awaiting a proactive message cannot receive it unless they have messaged the bot again after it restarted.
-
-To avoid this, you must manually add the `serviceUrl` to the list of trusted host names.
-
-# [C#](#tab/csharp)
-
-```csharp
-MicrosoftAppCredentials.TrustServiceUrl(serviceUrl);
-```
-
-For proactive messaging, `serviceUrl` is the URL of the channel that the recipient of the proactive message is using and can be found in `Activity.ServiceUrl`.
-
-You'll want to add the above code just prior to the the code that sends the proactive message. In the [Proactive Messages Sample](https://aka.ms/proactive-sample-cs), you would put it in `NotifyController.cs` just before `await turnContext.SendActivityAsync("proactive hello");`.
-
-# [JavaScript](#tab/javascript)
-
-```js
-MicrosoftAppCredentials.trustServiceUrl(serviceUrl);
-```
-
-For proactive messaging, `serviceUrl` is the URL of the channel that the recipient of the proactive message is using and can be found in `activity.serviceUrl`.
-
-You'll want to add the above code just prior to the the code that sends the proactive message. In the [Proactive Messages Sample](https://aka.ms/proactive-sample-js), you would put it in `index.js` just before `await turnContext.sendActivity('proactive hello');`.
-
-# [Python](#tab/python)
-
-```python
-MicrosoftAppCredentials.trustServiceUrl(serviceUrl)
-```
-
-For proactive messaging, `serviceUrl` is the URL of the channel that the recipient of the proactive message is using and can be found in `activity.serviceUrl`.
-
-You'll want to add the above code just prior to the the code that sends the proactive message. In the [Proactive Messages Sample](https://aka.ms/bot-proactive-python-sample-code), you add it in `app.py` prior sending the *proactive hello* message.
-
----
-
--->
 
 ## Next steps
 
