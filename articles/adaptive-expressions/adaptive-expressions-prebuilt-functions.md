@@ -1097,7 +1097,7 @@ convertFromUTC('<timestamp>', '<destinationTimeZone>', '<format>'?, '<locale>'?)
 | --------- | -------- | ---- | ----------- |
 | <*timestamp*> | Yes | string | The string that contains the timestamp |
 | <*destinationTimeZone*> | Yes | string | The name of the target time zone. Supports Windows and Iana time zones. |
-| <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is the ["o" format](/dotnet/standard/base-types/standard-date-and-time-format-strings#Roundtrip], yyyy-MM-ddTHH:mm:ss.fffffffK, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
+| <*format*> | No | string | A [custom format pattern](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is the ["o" format](/dotnet/standard/base-types/standard-date-and-time-format-strings#Roundtrip), yyyy-MM-ddTHH:mm:ss.fffffffK, which complies with [ISO 8601](https://en.wikipedia.org/wiki/ISO**8601). |
 | <*locale*> | No | string | An optional locale of culture infomation |
 |||||
 
