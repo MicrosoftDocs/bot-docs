@@ -27,11 +27,11 @@ You will learn how to:
 > * Test it using Web Chat
 
 > [!IMPORTANT]
-> Make sure you are using the latest version of the [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest&preserve-view=true). If you are using an Azure CLI version older than [2.2.0](https://github.com/MicrosoftDocs/azure-docs-cli/blob/master/docs-ref-conceptual/release-notes-azure-cli.md#march-10-2020), you will encounter errors of CLI commands deprecation. Also, do not mix Azure CLI deployment shown in this article with Azure portal deployment.
+> Make sure you are using the latest version of the [Azure CLI](/cli/azure/). If you are using an Azure CLI version older than [2.2.0](https://github.com/MicrosoftDocs/azure-docs-cli/blob/master/docs-ref-conceptual/release-notes-azure-cli.md#march-10-2020), you will encounter errors of CLI commands deprecation. Also, do not mix Azure CLI deployment shown in this article with Azure portal deployment.
 
 ## Prerequisites
 
-[!INCLUDE [deploy prerequisites](~/includes/deploy/snippet-prerequisite.md)]
+[!INCLUDE [deploy prerequisites](../includes/deploy/snippet-prerequisite.md)]
 
 ## Prepare for deployment
 
