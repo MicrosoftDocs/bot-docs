@@ -7,7 +7,7 @@ ms.author: v-mimiel
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 10/30/2020
+ms.date: 12/02/2020
 ---
 
 # Tutorial: Deploy a basic bot
@@ -37,23 +37,23 @@ You will learn how to:
 
 This article assumes that you have a bot ready to be deployed. For information on how to create a simple echo bot, see the [Tutorial: Create a basic bot](bot-builder-tutorial-create-basic-bot.md) article. You can also use one of the samples provided in the [Bot Framework Samples](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md) repository.
 
-[!INCLUDE [deploy prepare intro](~/includes/deploy/snippet-prepare-deploy-intro.md)]
+[!INCLUDE [deploy prepare intro](../includes/deploy/snippet-prepare-deploy-intro.md)]
 
 ### 1. Login to Azure
 
-[!INCLUDE [deploy az login](~/includes/deploy/snippet-az-login.md)]
+[!INCLUDE [deploy az login](../includes/deploy/snippet-az-login.md)]
 
 ### 2. Set the subscription
 
-[!INCLUDE [deploy az subscription](~/includes/deploy/snippet-az-set-subscription.md)]
+[!INCLUDE [deploy az subscription](../includes/deploy/snippet-az-set-subscription.md)]
 
 ### 3. Create an App registration
 
-[!INCLUDE [deploy create app registration](~/includes/deploy/snippet-create-app-registration.md)]
+[!INCLUDE [deploy create app registration](../includes/deploy/snippet-create-app-registration.md)]
 
 ### 4. Deploy via ARM template
 
-When creating the bot application service, you can deploy your bot in a new or in an existing resource group, both via the [Azure Resource Manager (ARM) template](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview). An ARM template is a JSON file that declaratively defines one or more Azure resources and that defines dependencies between the deployed resources. Make sure that you have the correct path to your bot project ARM deployment templates directory `DeploymentTemplates`, you need it to assign the value to the template file. Choose the option that works best for you:
+When creating the bot application service, you can deploy your bot in a new or in an existing resource group, both via the [Azure Resource Manager (ARM) template](/azure/azure-resource-manager/templates/overview). An ARM template is a JSON file that declaratively defines one or more Azure resources and that defines dependencies between the deployed resources. Make sure that you have the correct path to your bot project ARM deployment templates directory `DeploymentTemplates`, you need it to assign the value to the template file. Choose the option that works best for you:
 
 * [Deploy via ARM template with new resource group](#deploy-via-arm-template-with-new-resource-group)
 * [Deploy via ARM template with existing resource group](#deploy-via-arm-template-with-existing-resource-group)
@@ -63,34 +63,33 @@ When creating the bot application service, you can deploy your bot in a new or i
 
 ##### **Deploy via ARM template with new Resource Group**
 
-[!INCLUDE [ARM with new resource group](~/includes/deploy/snippet-ARM-new-resource-group.md)]
+[!INCLUDE [ARM with new resource group](../includes/deploy/snippet-ARM-new-resource-group.md)]
 
 ##### **Deploy via ARM template with existing Resource Group**
 
-[!INCLUDE [ARM with existing resource group](~/includes/deploy/snippet-ARM-existing-resource-group.md)]
+[!INCLUDE [ARM with existing resource group](../includes/deploy/snippet-ARM-existing-resource-group.md)]
 
 ### 5. Prepare your code for deployment
 
 #### **Retrieve or create necessary IIS/Kudu files**
 
-[!INCLUDE [retrieve or create IIS/Kudu files](~/includes/deploy/snippet-IIS-Kudu-files.md)]
+[!INCLUDE [retrieve or create IIS/Kudu files](../includes/deploy/snippet-IIS-Kudu-files.md)]
 
 #### **Zip up the code directory manually**
 
-[!INCLUDE [zip up code](~/includes/deploy/snippet-zip-code.md)]
+[!INCLUDE [zip up code](../includes/deploy/snippet-zip-code.md)]
 
 ## Deploy bot to Azure
 
-[!INCLUDE [deploy code to Azure](~/includes/deploy/snippet-deploy-code-to-az.md)]
+[!INCLUDE [deploy code to Azure](../includes/deploy/snippet-deploy-code-to-az.md)]
 
 ## Test in Web Chat
 
-[!INCLUDE [test in web chat](~/includes/deploy/snippet-test-in-web-chat.md)]
-
+[!INCLUDE [test in web chat](../includes/deploy/snippet-test-in-web-chat.md)]
 
 ## Additional resources
 
-[!INCLUDE [additional resources snippet](~/includes/deploy/snippet-additional-resources.md)]
+[!INCLUDE [additional resources snippet](../includes/deploy/snippet-additional-resources.md)]
 
 ## Next steps
 

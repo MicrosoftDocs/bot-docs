@@ -10,6 +10,8 @@ In Visual Studio, start the project. This will build the application, deploy it 
 
 ### Run with Visual Studio Code
 
+To run your bot from VS Code:
+
 1. Open your bot project folder.
 1. Go to **Run**, and then select **Run Without Debugging**.
 
@@ -27,7 +29,7 @@ This will build the application, deploy it to localhost, and launch the web brow
 
 # [Command Line](#tab/cl)
 
-To run your bot locally, open a command prompt or terminal and run these commands.
+To run your bot locally in a command prompt or terminal:
 
 1. Change directories to the project folder for your bot.
 1. Use `dotnet run` to start the bot.
