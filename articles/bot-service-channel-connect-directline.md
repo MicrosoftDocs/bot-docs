@@ -67,7 +67,7 @@ When you add the Direct Channel, the Bot Framework generates secret keys. Your c
 
 1. When finished, click **Done** to save the site configuration. You can repeat this process, beginning with [Add new site](#add-new-site), for each client application that you want to connect to your bot.
 
-### Enhanced authentication
+### Configure enhanced authentication
 
 When you enable **enhanced authentication**, you are asked to select a list of **trusted origin URLs**, also known as trusted origins or trusted domains, for the generation of the authentication token.
 
