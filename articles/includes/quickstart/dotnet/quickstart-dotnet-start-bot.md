@@ -11,33 +11,31 @@ In Visual Studio, start the project. This will build the application, deploy it 
 ### Run with Visual Studio Code
 
 1. Open your bot project folder.
-1. On the menu bar, click **Run**.
-1. In the drop-down menu, select **Run Without Debugging**.
+1. Go to **Run**, and then select **Run Without Debugging**.
 
-   ![vsc run](~/media/azure-bot-quickstarts/bot-builder-dotnet-vsc-run.png)
+   > [!div class="mx-imgBorder"]
+   > ![vsc run](../../../media/azure-bot-quickstarts/bot-builder-dotnet-vsc-run.png)
 
-1. Select the **.Net Core** environment.
+   - Select the **.Net Core** environment.
 
-   ![vsc env](~/media/azure-bot-quickstarts/bot-builder-dotnet-vsc-environment.png)
+   > [!div class="mx-imgBorder"]
+   > ![vsc env](../../../media/azure-bot-quickstarts/bot-builder-dotnet-vsc-environment.png)
+
+   - If this command updated your launch settings, save the changes and rerun the command.
 
 This will build the application, deploy it to localhost, and launch the web browser to display the application's `default.htm` page. At this point, your bot is running locally on port 3978.
 
 # [Command Line](#tab/cl)
 
-To run your bot locally, execute the commands shown below.
+To run your bot locally, open a command prompt or terminal and run these commands.
 
-1. Change into the project's folder (for example, EchoBot).
-
-   ```cmd
-      cd EchoBot
-   ```
-
-1. Run the bot.
+1. Change directories to the project folder for your bot.
+1. Use `dotnet run` to start the bot.
 
    ```cmd
-      dotnet run
+   dotnet run
    ```
 
-This will build the application, deploy it to localhost, and launch the web browser to display the application's `default.htm` page. At this point, your bot is running locally on port 3978.
+This will build the application and deploy it to localhost. The application's default web page will not display, but at this point, your bot is running locally on port 3978.
 
 ---
