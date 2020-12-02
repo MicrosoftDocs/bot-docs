@@ -31,7 +31,7 @@ The following picture shows the components involved when embedding the Web Chat 
   ![bot embed components](./media/bot-service-channel-webchat/webchat-control.png)
 
 > [!IMPORTANT]
-> As the previous picture implies, you need to use Direct Line (with enhanced authentication) to mitigate security risks when connecting to a bot using the Web Chat control. For more information, see [Bot Framework enhanced authentication](v4sdk\bot-builder-security-enhanced.md).
+> As the previous picture implies, you need to use Direct Line (with enhanced authentication) to mitigate security risks when connecting to a bot using the Web Chat control. For more information, see [Direct Line enhanced authentication](v4sdk\bot-builder-security-enhanced.md).
 
 ### Get your bot secret key
 

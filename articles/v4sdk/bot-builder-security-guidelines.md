@@ -99,7 +99,7 @@ For more information, see the [User authentication](~/v4sdk/bot-builder-concept-
 
 ### Web Chat
 
-When you use the [Web Chat](~/bot-service-channel-connect-webchat.md) control you must keep in mind some important security considerations about impersonation and identity spoofing. For more information, see [Bot Framework enhanced authentication](bot-builder-security-enhanced.md).
+When you use the [Web Chat](~/bot-service-channel-connect-webchat.md) control you must keep in mind some important security considerations about impersonation and identity spoofing. For more information, see [Direct Line enhanced authentication](bot-builder-security-enhanced.md).
 
 
 ## Additional information

@@ -79,7 +79,7 @@ A trusted domain is a domain that the system trusts to authenticate users. In ou
 
 - If you have not configured trusted origins as part of the configuration UI, then any value you send as part of the API calls will be used.
 
-Enhanced authentication allows you to mitigate security risks when connecting to a bot (using the Web Chat control, for example). For more information, see [Bot Framework enhanced authentication](v4sdk/bot-builder-security-enhanced.md).
+Enhanced authentication allows you to mitigate security risks when connecting to a bot (using the Web Chat control, for example). For more information, see [Direct Line enhanced authentication](v4sdk/bot-builder-security-enhanced.md).
 
 ## Example
 

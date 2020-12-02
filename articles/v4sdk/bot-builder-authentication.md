@@ -54,7 +54,7 @@ Once you finish this article, you will have a bot that can respond to a few simp
 ### Web Chat and Direct Line considerations
 
 > [!IMPORTANT]
-> You need to use Direct Line with enhanced authentication enabled to mitigate security risks when connecting to a bot using the Web Chat control. For more information, see [Bot Framework enhanced authentication](bot-builder-security-enhanced.md).
+> You need to use Direct Line with enhanced authentication enabled to mitigate security risks when connecting to a bot using the Web Chat control. For more information, see [Direct Line enhanced authentication](bot-builder-security-enhanced.md).
 
 ## Prerequisites
 
