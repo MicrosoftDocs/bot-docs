@@ -1,7 +1,7 @@
 - A subscription to [Microsoft Azure](https://azure.microsoft.com/free/).
 - A C#, JavaScript, TypeScript, or Python bot that you have developed on your local machine.
-- Latest version of the [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest).
-- Familiarity with [Azure CLI and ARM templates](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview).
+- Latest version of the [Azure CLI](/cli/azure/).
+- Familiarity with [Azure CLI and ARM templates](/azure/azure-resource-manager/resource-group-overview).
 
 <!-- - If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
 - Install the latest version of the [Azure cli tool](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest).
