@@ -13,7 +13,7 @@ ms.date: 11/19/2020
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-This article describes potential security risks when the users connect to a bot, for example using the [Web Chat](~/bot-service-channel-connect-webchat.md#embed-the-web-chat-control-in-a-web-page) control. Also, it shows mitigating solutions using the Direct Line [enhanced authentication settings](../bot-service-channel-connect-directline.md#configure-settings) and secure *user ID* handling.
+This article describes potential security risks when users connect to a bot, for example using the [Web Chat](~/bot-service-channel-connect-webchat.md#embed-the-web-chat-control-in-a-web-page) control. Also, it shows mitigating solutions using the Direct Line [enhanced authentication settings](../bot-service-channel-connect-directline.md#configure-settings) and secure *user ID* handling.
 
 You must be aware that there are two user identities:
 
