@@ -73,6 +73,7 @@ In case you don't find the answer you're looking for, you can post your question
 - [Can I block all traffic to my bot except traffic from the Bot Framework Service?](bot-service-resources-faq-security.md#can-i-block-all-traffic-to-my-bot-except-traffic-from-the-bot-framework-service)
 - [Which RBAC role is required to create and deploy a bot?](bot-service-resources-faq-security.md#which-rbac-role-is-required-to-create-and-deploy-a-bot)
 - [What keeps my bot secure from clients impersonating the Bot Framework Service?](bot-service-resources-faq-security.md#what-keeps-my-bot-secure-from-clients-impersonating-the-bot-framework-service)
+- [What is the purpose of the magic code during authentication?](bot-service-resources-faq-security.md#what-is-the-purpose-of-the-magic-code-during-authentication)
 
 ## Azure
 
