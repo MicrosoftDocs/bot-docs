@@ -1,12 +1,12 @@
 ---
 title: Bot Framework security guidelines - Bot Service
 description: Learn about the security guidelines in the Bot Framework.
-author: kamrani
+author: mmiele
 ms.author: v-mimiel
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 07/07/2020
+ms.date: 11/23/2020
 ---
 
 # Bot Framework security guidelines
@@ -15,7 +15,7 @@ ms.date: 07/07/2020
 
 Bots are more and more prevalent in key business areas like financial services, retail, travel, and so on. A bot might collect very sensitive data such as credit cards, SSN, bank accounts, and other personal information. So, it is important that bots are secure and protect against common threats and vulnerabilities.
 
-You can take some standard preventative measures to improve your bot's security. Some security measures are similar to ones used in other software systems, while some are specific to the Bot Framework.
+You can take some standard preventative measures to improve your bot's security. Some security measures are similar to the ones used in other software systems, while some are specific to the Bot Framework. For the latter, refer to the [Azure Security Benchmark](../security-baseline.md). The benchmark provides recommendations on how you can secure your cloud solutions on Azure.
 
 ## Security issues in a nutshell
 
@@ -99,27 +99,7 @@ For more information, see the [User authentication](~/v4sdk/bot-builder-concept-
 
 ### Web Chat
 
-When you use *Azure Bot Service authentication* with [Web Chat](~/bot-service-channel-connect-webchat.md) there are some important security considerations you must keep in mind.
-
-1. **Impersonation**. Impersonation here means an attacker makes the bot thinks he is someone else. In Web Chat, an attacker can impersonate someone else by **changing the user ID** of his Web Chat instance. To prevent this, it is recommend to bot developers to make the **user ID unguessable**.
-
-    Enable the Direct Line channel's **enhanced authentication** options to allow the Azure Bot Service to further detect and reject any user ID change. This means the user ID (`Activity.From.Id`) on messages from Direct Line to your bot will always be the same as the one you initialized the Web Chat control with. Note that this feature requires the user ID to start with `dl_`.
-
-    > [!NOTE]
-    > When a *User.Id* is provided while exchanging a secret for a token, that *User.Id* is embedded in the token. Direct Line makes sure the messages sent to the bot have that id as the activity's *From.Id*. If a client sends a message to Direct Line having a different *From.Id*, it will be changed to the **Id in the token** before forwarding the message to the bot. So you cannot use another user ID after a channel secret is initialized with a user ID.
-
-1. **User identities**. You must be aware that your are dealing with two user identities:
-
-    1. The user's identity in a channel.
-    1. The user's identity in an identity provider that the bot is interested in.
-
-    When a bot asks user A in a channel to sign in to an identity provider P, the sign-in process must assure that user A is the one that signs into P.
-    If another user B is allowed to sign-in, then user A would have access to user B's resource through the bot. In Web Chat we have 2 mechanisms for ensuring the right user signed in as described next.
-
-    1. At the end of sign-in, in the past, the user was presented with a randomly generated 6-digit code (aka magic code). The user must type this code in the conversation that initiated the sign-in to complete the sign-in process. This mechanism tends to result in a bad user experience. Additionally, it is still susceptible to phishing attacks. A malicious user can trick another user to sign-in and obtain the magic code through phishing.
-
-    2. Because of the issues with the previous approach, Azure Bot Service removed the need for the magic code. Azure Bot Service guarantees that the sign-in process can only be completed in the **same browser session** as the Web Chat itself.
-    To enable this protection, as a bot developer, you must start Web Chat with a **Direct Line token** that contains a **list of trusted domains that can host the bot's Web Chat client**. Before, you could only obtain this token by passing an undocumented optional parameter to the Direct Line token API. Now, with enhanced authentication options, you can statically specify the trusted domain (origin) list in the Direct Line configuration page.
+When you use the [Web Chat](~/bot-service-channel-connect-webchat.md) control you must keep in mind some important security considerations about impersonation and identity spoofing. For more information, see [Direct Line enhanced authentication](bot-builder-security-enhanced.md).
 
 
 ## Additional information
