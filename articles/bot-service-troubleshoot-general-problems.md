@@ -29,7 +29,7 @@ These frequently asked questions can help you to troubleshoot common bot develop
 
 For details about troubleshooting authentication issues with your bot, see [troubleshooting][TroubleshootingAuth] Bot Framework authentication.
 
-## How to test network connectivity between bots and a channel?
+## How do I test network connectivity between bots and a channel?
 
 ### Test connection from bot to channel
 
