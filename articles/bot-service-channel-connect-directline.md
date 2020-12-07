@@ -7,7 +7,7 @@ ms.author: v-mimiel
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 10/21/2020
+ms.date: 12/04/2020
 ---
 
 # Connect a bot to Direct Line
@@ -69,7 +69,7 @@ When you add the Direct Channel, the Bot Framework generates secret keys. Your c
 
 ### Configure enhanced authentication
 
-When you enable **enhanced authentication**, you are asked to select a list of **trusted origin URLs**, also known as trusted origins or trusted domains, for the generation of the authentication token.
+When you enable **enhanced authentication**, you are asked to select a list of **trusted origin URLs**, also known as trusted origins or trusted domains, for the generation of the authentication token. If you enable the enhanced authentication, you must specify at least one trusted origin.
 
 ![Add trusted origins](media/bot-service-channel-connect-directline/add-trusted-origin-urls.png "Copy Direct Line key")
 
@@ -77,7 +77,7 @@ A trusted domain is a domain that the system trusts to authenticate users. In ou
 
 - If you configure trusted origins as part of the configuration UI page, then these will **always** be used as the only set for the generation of a token. Sending none or additional trusted origins when generating a token or starting a conversation, they will be ignored (i.e. they are **not appended** to the list or cross validated).
 
-- If you have not configured trusted origins as part of the configuration UI, then any value you send as part of the API calls will be used.
+- If you did not enable enhanced authentication, any origin URL you send as part of the API calls will be used.
 
 Enhanced authentication allows you to mitigate security risks when connecting to a bot (using the Web Chat control, for example). For more information, see [Direct Line enhanced authentication](v4sdk/bot-builder-security-enhanced.md).
 
