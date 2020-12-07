@@ -23,6 +23,7 @@ In case you don't find the answer you're looking for, you can post your question
 - [How can I troubleshoot issues with my bot?](bot-service-troubleshoot-general-problems.md#how-can-i-troubleshoot-issues-with-my-bot)
 - [How can I troubleshoot authentication issues?](bot-service-troubleshoot-general-problems.md#how-can-i-troubleshoot-authentication-issues)
 - [I'm using the Bot Framework SDK for .NET. How can I troubleshoot issues with my bot?](bot-service-troubleshoot-general-problems.md#im-using-the-bot-framework-sdk-for-net-how-can-i-troubleshoot-issues-with-my-bot)
+- [How do I test network connectivity between bots and a channel?](bot-service-troubleshoot-general-problems.md#how-to-test-network-connectivity-between-bots-and-a-channel)
 - [What causes an error with HTTP status code 429 "Too Many Requests"?](bot-service-troubleshoot-general-problems.md#what-causes-an-error-with-http-status-code-429-too-many-requests)
 - [Why aren't my bot messages getting received by the user?](bot-service-troubleshoot-general-problems.md#why-arent-my-bot-messages-getting-received-by-the-user)
 - [How can I run background tasks in ASP.NET?](bot-service-troubleshoot-general-problems.md#how-can-i-run-background-tasks-in-aspnet)

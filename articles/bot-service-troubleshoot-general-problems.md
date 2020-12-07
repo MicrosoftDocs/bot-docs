@@ -29,6 +29,29 @@ These frequently asked questions can help you to troubleshoot common bot develop
 
 For details about troubleshooting authentication issues with your bot, see [troubleshooting][TroubleshootingAuth] Bot Framework authentication.
 
+## How to test network connectivity between bots and a channel?
+
+### Test connection from bot to channel
+
+1. In your browser, navigate to the [Azure portal](https://ms.portal.azure.com).
+1. Go to the Kudu console on the bot web app.
+1. Open the CMD Debug console
+1. Run `nslookup directline.botframework.com` and check if the DNS resolution is working.
+1. Run `curl -I directline.botframework.com` and check if the HTTP status 301 is returned
+
+### Test connection from channel to bot
+
+Since `directline.botframework.com` is on the public internet, and Cx doesn’t have access to the production site. Ask the Cx to simulate by performing the following steps outside their VNET (for example, using a cell phone *hotspot*):
+
+1. Run `nslookup ivr-sr-bot.botapps.amat.com` and check if the DNS resolution is working.
+1. Run `curl -I https://ivr-sr-bot.botapps.amat.com/api/messages` and check if a valid HTTP status code is returned (for example, 405 method not allowed)
+1. If you are not able to get response from the bot, write down the client’s IP address.
+
+### Check firewall traces on failed connections
+
+Use the IP addresses from `nslookup ivr-sr-bot.botapps.amat.com` and `nslookup directline.botframework.com` and check if there is a rule blocking connection between those addresses on either direction.
+
+
 ## I'm using the Bot Framework SDK for .NET. How can I troubleshoot issues with my bot?
 
 **Look for exceptions.**
