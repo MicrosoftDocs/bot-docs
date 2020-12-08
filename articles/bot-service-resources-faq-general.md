@@ -87,9 +87,9 @@ We're continuously tuning the rate limits to make them as lenient as possible wh
 
 ## What is the size limit of a file transferred using channels?
 
-A size limit of 262144 bytes exists when transferring a file, a PDF for example, using channels such as Direct Line and Facebook. The size cannot be increased. If the limit is exceeded the following error is issued: *The request content length exceeded limit of 262144 bytes*. The only alternative is to provide a secure URL (HTTPS) in the **ContentUrl** attribute and pointing to the file stored in a secure location.
+Some channels have limits on the size or type of files that can be sent. For example, both Direct Line and Facebook limit activity payloads to **262,144 bytes**, while the Emulator has no limit. Such limits are imposed by the channel. If you send a message that exceeds this limit, you may get an error, such as: *The request content length exceeded limit of 262144 bytes*.
 
-Notice that if you use the Bot Emulator to test your bot, you will not have the size limitation. If you use the Teams channel, the limitation appears to be greater than 262144 bytes. But the Teams channel can't handle PDF files but pictures with a format such as like PNG.
+You can, however, provide a link to the resource as an internet attachment. For more information on sending attachments, see [how to add media to messages](v4sdk/bot-builder-howto-add-media-attachments.md).
 
 ## How will I know if I'm impacted by rate limiting?
 
