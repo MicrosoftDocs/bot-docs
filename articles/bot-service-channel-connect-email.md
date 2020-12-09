@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 11/15/2019
+ms.date: 12/09/2019
 ---
 
 # Connect a bot to Office 365 email
@@ -20,7 +20,7 @@ Bots can communicate with users via Office 365 email in addition to other [chann
 > It is a violation of the Bot Framework [Code of Conduct](https://www.botframework.com/Content/Microsoft-Bot-Framework-Preview-Online-Services-Agreement.htm) to create "spambots", including bots that send unwanted or unsolicited bulk email.
 
 > [!NOTE]
-> If you are using Microsoft Exchange Server, make sure you have enabled [Autodiscover](https://docs.microsoft.com/exchange/client-developer/exchange-web-services/autodiscover-for-exchange) first before configuring email channel. 
+> If you are using Microsoft Exchange Server, make sure you have enabled [Autodiscover](https://docs.microsoft.com/exchange/client-developer/exchange-web-services/autodiscover-for-exchange) first before configuring email channel.
 
 ## Configure email credentials
 
@@ -70,7 +70,7 @@ see [how to implement channel-specific functionality](~/v4sdk/bot-builder-channe
 If your bot does not return a 200 OK HTTP status code within 15 seconds in response to an incoming email message, the email channel will try to resend the message, and your bot may receive the same email message activity a few times. For more information, see the [HTTP details](v4sdk/bot-builder-basics.md#http-details) section in **How bots work** and the how to [troubleshooting timeout errors](https://github.com/daveta/analytics/blob/master/troubleshooting_timeout.md) article.
 
 > [!NOTE]
-> If you are using an Office 365 account with MFA enabled on it, make sure you disable MFA for the specified account first, then you can configure the account for the email channel. Otherwise, the connection will fail. 
+> If you are using an Office 365 account with MFA enabled on it, make sure you disable MFA for the specified account first, then you can configure the account for the email channel. Otherwise, the connection will fail.
 
 ## Additional resources
 
