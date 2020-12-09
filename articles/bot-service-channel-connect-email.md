@@ -46,11 +46,11 @@ The following example message shows a JSON file that includes these `channelData
 
 ```json
 {
-    "type": "message",
+    "type": "ActivityTypes.Message",
     "locale": "en-Us",
     "channelID": "email",
-    "from": { "id": "mybot@mydomain.com", "name": "My bot"},
-    "recipient": { "id": "joe@otherdomain.com", "name": "Joe Doe"},
+    "fromName": { "id": "mybot@mydomain.com", "name": "My bot"},
+    "recipientName": { "id": "joe@otherdomain.com", "name": "Joe Doe"},
     "conversation": { "id": "123123123123", "topic": "awesome chat" },
     "channelData":
     {
@@ -58,6 +58,7 @@ The following example message shows a JSON file that includes these `channelData
         "subject": "Super awesome message subject",
         "importance": "high",
         "ccRecipients": "Yasemin@adatum.com;Temel@adventure-works.com"
+
     }
 }
 ```
