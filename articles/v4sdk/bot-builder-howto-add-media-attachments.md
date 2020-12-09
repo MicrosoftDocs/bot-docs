@@ -34,7 +34,7 @@ To send the user content like an image or a video, you can add an attachment or 
 
 See [design user experience](../bot-service-design-user-experience.md) for examples of available cards.
 
-See also, [What is the size limit of a file transferred using channels?](../bot-service-resources-faq-general.md)
+See also [What is the size limit of a file transferred using channels?](../bot-service-resources-faq-general.md#what-is-the-size-limit-of-a-file-transferred-using-channels)
 
 ### [C#](#tab/csharp)
 
