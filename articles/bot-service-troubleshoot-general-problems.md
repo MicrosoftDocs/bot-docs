@@ -41,7 +41,7 @@ For details about troubleshooting authentication issues with your bot, see [trou
 
 ### Test connection from channel to bot
 
-Because Cx doesn’t have access to the production site, and `directline.botframework.com` is on the public Internet, you must use Cx in simulation mode.
+Because Cx doesn’t have access to the production site, and `directline.botframework.com` is on the public internet, you must use Cx in simulation mode.
 Perform the following steps outside VNET (for example, using a cell phone *hotspot*):
 
 1. Run `nslookup ivr-sr-bot.botapps.amat.com` and check if the DNS resolution is working.
@@ -188,4 +188,3 @@ If your bot is registered in dev.botframework.com, and you want to migrate it to
 [BotFrameworkIDGuide]: bot-service-resources-identifiers-guide.md
 [StateAPI]: ~/rest-api/bot-framework-rest-state.md
 [TroubleshootingAuth]: bot-service-troubleshoot-authentication-problems.md
-
