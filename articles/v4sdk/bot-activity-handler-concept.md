@@ -6,7 +6,7 @@ ms.author: v-jofin
 manager: kamrani
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 09/15/2020
+ms.date: 12/09/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -24,7 +24,7 @@ For other ways to organize your bot logic, see the [bot logic](bot-builder-basic
 
 # [C#](#tab/csharp)
 
-To implement your logic for these handlers, you will override these methods in your bot as seen in the [Bot logic](bot-builder-basics.md#bot-logic) section below. For each of these handlers, there is no base implementation, so just add the logic that you want in your override.
+To implement your logic for these handlers, you will override these methods in your bot, such as in the [sample activity handler](#sample-activity-handler) section below. For each of these handlers, there is no base implementation, so just add the logic that you want in your override.
 
 There are certain situations where you will want to override the base turn handler, such as [saving state](bot-builder-concept-state.md) at the end of a turn. When doing so, be sure to first call `await base.OnTurnAsync(turnContext, cancellationToken);` to make sure the base implementation of `OnTurnAsync` is run before your additional code. That base implementation is, among other things, responsible for calling the rest of the activity handlers such as `OnMessageActivityAsync`.
 
@@ -47,7 +47,7 @@ When building your bot, your bot logic for handling and responding to messages w
 
 For example, if the bot receives a message activity, the turn handler would see that incoming activity and send it to the `on_message_activity` activity handler.
 
-To implement your logic for these handlers, you will override these methods in your bot as seen in the [Bot logic](bot-builder-basics.md#bot-logic) section below. For each of these handlers, there is no base implementation, so just add the logic that you want in your override.
+To implement your logic for these handlers, you will override these methods in your bot, such as in the [sample activity handler](#sample-activity-handler) section below. For each of these handlers, there is no base implementation, so just add the logic that you want in your override.
 
 There are certain situations where you will want to override the base turn handler, such as [saving state](bot-builder-concept-state.md) at the end of a turn. When doing so, be sure to first call `await super().on_turn(turnContext);` to make sure the base implementation of `on_turn` is run before your additional code. That base implementation is, among other things, responsible for calling the rest of the activity handlers such as `on_message_activity`.
 
@@ -59,7 +59,7 @@ The bot logic processes incoming activities from one or more channels and genera
 
 ### [C#](#tab/csharp)
 
-The main bot logic is defined in the bot code, here called `Bots/EchoBot.cs`. `EchoBot` derives from `ActivityHandler`, which in turn derives from the `IBot` interface. `ActivityHandler` defines various handlers for different types of activities, such as the two defined here: `OnMessageActivityAsync`, and `OnMembersAddedAsync`. These methods are protected, but can be overwritten since we're deriving from `ActivityHandler`.
+The main bot logic is defined in the bot code. To implement a bot as an activity handler, derive your bot class from `ActivityHandler`, which in implements the `IBot` interface. `ActivityHandler` defines various handlers for different types of activities, such as `OnMessageActivityAsync`, and `OnMembersAddedAsync`. These methods are protected, but can be overridden, since we're deriving from `ActivityHandler`.
 
 The handlers defined in `ActivityHandler` are:
 
@@ -76,6 +76,9 @@ The handlers defined in `ActivityHandler` are:
 | Message reaction activity received | `OnMessageReactionActivityAsync` | On a `messageReaction` activity, calls a handler if one or more reactions were added or removed from a message. |
 | Message reactions added to a message | `OnReactionsAddedAsync` | Override this to handle reactions added to a message. |
 | Message reactions removed from a message | `OnReactionsRemovedAsync` | Override this to handle reactions removed from a message. |
+| Installation update activity received | `OnInstallationUpdateActivityAsync` | On an `installationUpdate` activity, calls a handler based on whether the bot was installed or unistalled. |
+| Bot installed | `OnInstallationUpdateAddAsync` | Override this to add logic for when the bot is installed within an organizational unit. |
+| Bot uninstalled | `OnInstallationUpdateRemoveAsync` | Override this to add logic for when the bot is uninstalled within an organizational unit. |
 | Other activity type received | `OnUnrecognizedActivityTypeAsync` | Override this to handle any activity type otherwise unhandled. |
 
 These different handlers have a `turnContext` that provides information about the incoming activity, which corresponds to the inbound HTTP request. Activities can be of various types, so each handler provides a strongly-typed activity in its turn context parameter; in most cases, `OnMessageActivityAsync` will always be handled, and is generally the most common.
@@ -87,7 +90,7 @@ As in previous 4.x versions of this framework, there is also the option to imple
 
 ### [JavaScript](#tab/javascript)
 
-The main bot logic is defined in the bot code, here called `bots\echoBot.js`. `EchoBot` derives from `ActivityHandler`. `ActivityHandler` defines various events for different types of activities, and you can modify your bot's behavior by registering event listeners, such as with `onMessage` and `onConversationUpdate` here.
+The main bot logic is defined in the bot code. To implement a bot as an activity handler, extend `ActivityHandler`. `ActivityHandler` defines various events for different types of activities, and you can modify your bot's behavior by registering event listeners, such as with `onMessage` and `onConversationUpdate`.
 
 Use these methods to register listeners for each type of event:
 
@@ -103,6 +106,9 @@ Use these methods to register listeners for each type of event:
 | Message reactions removed from a message | `onReactionsRemoved` | Registers a listener for when reactions are removed from a message. |
 | Event activity received | `onEvent` | Registers a listener for when any `event` activity is received. |
 | Token-response event activity received | `onTokenResponseEvent` | Registers a listener for when a `tokens/response` event is received. |
+| Installation update activity received | `onInstallationUpdate` | Registers a listener for when any `installationUpdate` activity is received. |
+| Bot installed | `onInstallationUpdateAdd` | Registers a listener for when the bot is installed within an organizational unit. |
+| Bot uninstalled | `onInstallationUpdateRemove` | Registers a listener for when the bot is uninstalled within an organizational unit. |
 | Other activity type received | `onUnrecognizedActivityType` | Registers a listener for when a handler for the specific type of activity is not defined. |
 | Activity handlers have completed | `onDialog` | Called after any applicable handlers have completed. |
 
@@ -110,7 +116,7 @@ Call the `next` continuation function from each handler to allow processing to c
 
 ### [Python](#tab/python)
 
-The main bot logic is defined in the bot code, here called `bots/echo_bot.py`. `EchoBot` derives from `ActivityHandler`, which in turn derives from the `Bot` interface. `ActivityHandler` defines various handlers for different types of activities, such as the two defined here: `on_message_activity`, and `on_members_added`. These methods are protected, but can be overwritten since we're deriving from `ActivityHandler`.
+The main bot logic is defined in the bot code. To implement a bot as an activity handler, derive your bot class from `ActivityHandler`, which in turn derives from the abstract `Bot` class. `ActivityHandler` defines various handlers for different types of activities, such as `on_message_activity` and `on_members_added`. These methods are protected, but can be overridden, since we're deriving from `ActivityHandler`.
 
 The handlers defined in `ActivityHandler` are:
 
@@ -127,6 +133,9 @@ The handlers defined in `ActivityHandler` are:
 | Message reaction activity received | `on_message_reaction_activity` | On a `messageReaction` activity, calls a handler if one or more reactions were added or removed from a message. |
 | Message reactions added to a message | `on_reactions_added` | Override this to handle reactions added to a message. |
 | Message reactions removed from a message | `on_reactions_removed` | Override this to handle reactions removed from a message. |
+| Installation update activity received | `on_installation_update` | On an `installationUpdate` activity, calls a handler based on whether the bot was installed or unistalled. |
+| Bot installed | `on_installation_update_add` | Override this to add logic for when the bot is installed within an organizational unit. |
+| Bot uninstalled | `on_installation_update_remove` | Override this to add logic for when the bot is uninstalled within an organizational unit. |
 | Other activity type received | `on_unrecognized_activity_type` | Override this to handle any activity type otherwise unhandled. |
 
 These different handlers have a `turn_context` that provides information about the incoming activity, which corresponds to the inbound HTTP request. Activities can be of various types, so each handler provides a strongly-typed activity in its turn context parameter; in most cases, `on_message_activity` will always be handled, and is generally the most common.
