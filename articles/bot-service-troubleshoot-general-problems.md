@@ -41,7 +41,8 @@ For details about troubleshooting authentication issues with your bot, see [trou
 
 ### Test connection from channel to bot
 
-Since `directline.botframework.com` is on the public internet, and Cx doesn’t have access to the production site. Ask the Cx to simulate by performing the following steps outside their VNET (for example, using a cell phone *hotspot*):
+Because Cx doesn’t have access to the production site, and `directline.botframework.com` is on the public Internet, you must use Cx in simulation mode.
+Perform the following steps outside VNET (for example, using a cell phone *hotspot*):
 
 1. Run `nslookup ivr-sr-bot.botapps.amat.com` and check if the DNS resolution is working.
 1. Run `curl -I https://ivr-sr-bot.botapps.amat.com/api/messages` and check if a valid HTTP status code is returned (for example, 405 method not allowed)
