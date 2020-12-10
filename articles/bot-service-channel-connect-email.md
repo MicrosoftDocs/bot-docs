@@ -44,6 +44,9 @@ The Email channel supports sending custom properties to create more advanced, cu
 
 The following example message shows a JSON file that includes these `channelData` properties.
 
+> [!NOTE]
+> The sample does not show  `toRecipients` and `bccRecipients` which are optional and use the same format as `ccRecipients`.
+
 ```json
 {
     "type": "ActivityTypes.Message",
@@ -57,10 +60,10 @@ The following example message shows a JSON file that includes these `channelData
         "htmlBody": "<html><body style = /"font-family: Calibri; font-size: 11pt;/" >This is more than awesome.</body></html>",
         "subject": "Super awesome message subject",
         "importance": "high",
-        "ccRecipients": "Yasemin@adatum.com;Temel@adventure-works.com"
-
+        "ccRecipients": "Yasemin@adatum.com;Temel@adventure-works.com",
     }
 }
+
 ```
 
 For more information about using `channelData`,
