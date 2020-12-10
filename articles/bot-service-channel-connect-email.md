@@ -66,8 +66,7 @@ The following example message shows a JSON file that includes these `channelData
 
 ```
 
-For more information about using `channelData`,
-see [how to implement channel-specific functionality](~/v4sdk/bot-builder-channeldata.md).
+For more information about using the activity `channelData` property, see [Create a custom email message](v4sdk/bot-builder-channeldata.md#create-a-custom-email-message).
 
 ## Other considerations
 
