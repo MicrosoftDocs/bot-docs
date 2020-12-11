@@ -1,4 +1,3 @@
-
 ```json
 {
     "type": "ActivityTypes.Message",
@@ -15,5 +14,4 @@
         "ccRecipients": "Yasemin@adatum.com;Temel@adventure-works.com",
     }
 }
-
 ```
