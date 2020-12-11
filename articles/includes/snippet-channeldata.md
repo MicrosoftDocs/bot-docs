@@ -18,7 +18,7 @@ This article describes how to use a message activity's channel data property to 
 
 ## Create a custom Email message
 
-To create a custom email message, set the activity object's `channelData` property to a JSON object that contains the following properties:
+To create a custom email message, set the activity `channelData` property to a JSON object that contains the following properties:
 
 | Property | Description |
 | :--- | :--- |
@@ -29,15 +29,8 @@ To create a custom email message, set the activity object's `channelData` proper
 | subject       | The email's subject. See the channel's documentation for information about field requirements.|
 | toRecipients  | A semicolon (;) delimited string of email addresses to add to the message's To field.|
 
-There are two types of messages that the user and the bot exchange via the Email channel:
-
-1. The outgoing messages from the user to the bot.
-1. The incoming messages from the bot to the user.
-
-Both types of messages may contain a `channelData` activity property populated with a JSON object whose properties are specified in the previous table.
-Notice that some of these properties are optional.
-
-The snippet below shows an example, in JSON format, of the `channelData` property for an incoming custom email message.
+The outgoing and incoming messages between the user and the bot may have a `channelData` activity that contains a JSON object whose properties are specified in the previous table.
+The snippet below shows an example, in JSON format, of the `channelData` property for an incoming custom email message, from the bot to the user.
 
 [!INCLUDE [email channelData json](~/includes/snippet-channelData-email.md)]
 
