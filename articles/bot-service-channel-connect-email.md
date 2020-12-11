@@ -40,33 +40,11 @@ The Email channel currently works with Office 365 only. Other email services are
 
 The Email channel supports sending custom properties to create more advanced, customized emails using the `channelData` property.
 
-[!INCLUDE [Email channelData table](~/includes/snippet-channelData-email.md)]
+The snippet below shows an example, in JSON format, of the `channelData` property for an incoming custom email message.
 
-The following example message shows a JSON file that includes these `channelData` properties.
+[!INCLUDE [email channelData json](~/includes/snippet-channelData-email.md)]
 
-> [!NOTE]
-> The sample does not show  `toRecipients` and `bccRecipients` which are optional and use the same format as `ccRecipients`.
-
-```json
-{
-    "type": "ActivityTypes.Message",
-    "locale": "en-Us",
-    "channelID": "email",
-    "fromName": { "id": "mybot@mydomain.com", "name": "My bot"},
-    "recipientName": { "id": "joe@otherdomain.com", "name": "Joe Doe"},
-    "conversation": { "id": "123123123123", "topic": "awesome chat" },
-    "channelData":
-    {
-        "htmlBody": "<html><body style = /"font-family: Calibri; font-size: 11pt;/" >This is more than awesome.</body></html>",
-        "subject": "Super awesome message subject",
-        "importance": "high",
-        "ccRecipients": "Yasemin@adatum.com;Temel@adventure-works.com",
-    }
-}
-
-```
-
-For more information about using the activity `channelData` property, see [Create a custom email message](v4sdk/bot-builder-channeldata.md#create-a-custom-email-message).
+For more information about the activity `channelData` property, see [Create a custom Email message](v4sdk/bot-builder-channeldata.md#create-a-custom-email-message).
 
 ## Other considerations
 
@@ -77,6 +55,6 @@ If your bot does not return a 200 OK HTTP status code within 15 seconds in respo
 
 ## Additional resources
 
-* Connect a bot to [channels](~/bot-service-manage-channels.md)
-* [Implement channel-specific functionality](~/v4sdk/bot-builder-channeldata.md) with the Bot Framework SDK for .NET
-* Read the [channels reference](bot-service-channels-reference.md) article for more information about which features are supported on each channel
+- Connect a bot to [channels](~/bot-service-manage-channels.md)
+- [Implement channel-specific functionality](~/v4sdk/bot-builder-channeldata.md) with the Bot Framework SDK for .NET
+- Read the [channels reference](bot-service-channels-reference.md) article for more information about which features are supported on each channel

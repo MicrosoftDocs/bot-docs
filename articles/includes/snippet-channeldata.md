@@ -29,28 +29,17 @@ To create a custom email message, set the activity object's `channelData` proper
 | subject       | The email's subject. See the channel's documentation for information about field requirements.|
 | toRecipients  | A semicolon (;) delimited string of email addresses to add to the message's To field.|
 
-> [!NOTE]
-> Both the incoming messages, from the the bot to the channel, and the outgoing messages, from the channel to the bot, may contain a `channelData` element that is populated with a JSON object. Some of these properties are optional.
+There are two types of messages that the user and the bot exchange via the Email channel:
 
-The sample below shows an example of the `channelData` property for an incoming custom email message.
+1. The outgoing messages from the user to the bot.
+1. The incoming messages from the bot to the user.
 
-```json
-{
-    "type": "message",
-    "locale": "en-Us",
-    "channelID": "email",
-    "from": { "id": "mybot@mydomain.com", "name": "My bot"},
-    "recipient": { "id": "joe@otherdomain.com", "name": "Joe Doe"},
-    "conversation": { "id": "123123123123", "topic": "awesome chat" },
-    "channelData":
-    {
-        "htmlBody": "<html><body style = /"font-family: Calibri; font-size: 11pt;/" >This is more than awesome.</body></html>",
-        "subject": "Super awesome message subject",
-        "importance": "high",
-        "ccRecipients": "Yasemin@adatum.com;Temel@adventure-works.com"
-    }
-}
-```
+Both types of messages may contain a `channelData` activity property populated with a JSON object whose properties are specified in the previous table,
+Notice that some of these properties are optional.
+
+The snippet below shows an example, in JSON format, of the `channelData` property for an incoming custom email message.
+
+[!INCLUDE [email channelData json](~/includes/snippet-channelData-email.md)]
 
 ## Create a full-fidelity Slack message
 
