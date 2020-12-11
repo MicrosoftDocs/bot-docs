@@ -30,7 +30,7 @@ To create a custom email message, set the activity `channelData` property to a J
 | toRecipients  | A semicolon (;) delimited string of email addresses to add to the message's To field.|
 
 The outgoing and incoming messages between the user and the bot may have a `channelData` activity that contains a JSON object whose properties are specified in the previous table.
-The snippet below shows an example, in JSON format, of the `channelData` property for an incoming custom email message, from the bot to the user.
+The snippet below shows an example of the `channelData` property for an incoming custom email message, from the bot to the user.
 
 [!INCLUDE [email channelData json](~/includes/snippet-channelData-email.md)]
 

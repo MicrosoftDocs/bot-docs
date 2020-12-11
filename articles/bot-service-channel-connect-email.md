@@ -39,7 +39,7 @@ The Email channel currently works with Office 365 only. Other email services are
 ## Customize emails
 
 The Email channel supports sending custom values to create more advanced, customized emails by using the activity `channelData` property.
-The snippet below shows an example, in JSON format, of the `channelData` for an incoming custom email message from the bot to the user.
+The snippet below shows an example of the `channelData` for an incoming custom email message, from the bot to the user.
 
 [!INCLUDE [email channelData json](~/includes/snippet-channelData-email.md)]
 
