@@ -34,10 +34,17 @@ For details about troubleshooting authentication issues with your bot, see [trou
 ### Test connection from bot to channel
 
 1. In your browser, navigate to the [Azure portal](https://ms.portal.azure.com).
-1. Go to the Kudu console on the bot web app.
-1. Open the CMD Debug console
+1. Select your bot App Service whose connection you want to test.
+1. In the left pane, in the *Development Tools* section, select **Advanced Tools**.
+1. In the right pane, click **Go**. The [Kudu](https://github.com/projectkudu/kudu/wiki) information page is displayed.
+1. In the top menu bar, click **Debug console**. Then, in the drop down menu, click **CMD**. The Kudu bot web app console is opened.
+
+    ![kudu cmd console](media/bot-service-troubleshoot/kudu-cmd-console.png)
+
 1. Run `nslookup directline.botframework.com` and check if the DNS resolution is working.
-1. Run `curl -I directline.botframework.com` and check if the HTTP status 301 is returned
+1. Run `curl -I directline.botframework.com` and check if the HTTP status 301 is returned.
+
+    ![kudu cmd console http 301](media/bot-service-troubleshoot/kudu-cmd-console-http-301.png)
 
 ### Test connection from channel to bot
 
@@ -45,7 +52,10 @@ Because Cx doesn’t have access to the production site, and `directline.botfram
 Perform the following steps outside VNET (for example, using a cell phone *hotspot*):
 
 1. Run `nslookup ivr-sr-bot.botapps.amat.com` and check if the DNS resolution is working.
-1. Run `curl -I https://ivr-sr-bot.botapps.amat.com/api/messages` and check if a valid HTTP status code is returned (for example, 405 method not allowed)
+1. Run `curl -I https://ivr-sr-bot.botapps.amat.com/api/messages` and check if a valid HTTP status code is returned (for example, 405 method not allowed).
+
+    ![kudu cmd console http 405](media/bot-service-troubleshoot/kudu-cmd-console-http-405.png)
+
 1. If you are not able to get response from the bot, write down the client’s IP address.
 
 ### Check firewall traces on failed connections
