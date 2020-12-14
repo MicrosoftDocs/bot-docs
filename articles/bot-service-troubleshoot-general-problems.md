@@ -48,7 +48,7 @@ For details about troubleshooting authentication issues with your bot, see [trou
 
 ### Test connection from channel to bot
 
-Because curl doesn’t have access to the production site, and `directline.botframework.com` is on the public internet, you must use curl in simulation mode. Perform the following steps outside VNET (for example, using a cell phone *hotspot*):
+Because curl doesn’t have access to the production site, and `directline.botframework.com` is on the public internet, you must use curl in simulation mode. Perform the steps shown below outside a Virtual Private Network (VNET), for example, using a cell phone *hotspot*. See also [What is Azure Virtual Network?](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview#:~:text=Azure%20Virtual%20Network%20%28VNet%29%20is%20the%20fundamental%20building,with%20each%20other%2C%20the%20internet%2C%20and%20on-premises%20networks.).
 
 1. Run `nslookup ivr-sr-bot.botapps.amat.com` and check if the DNS resolution is working.
 1. Run `curl -I https://ivr-sr-bot.botapps.amat.com/api/messages` and check if a valid HTTP status code is returned (for example, 405 method not allowed).
