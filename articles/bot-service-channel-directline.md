@@ -30,7 +30,7 @@ Over time these offerings will be simplified.
 | Supports legacy web browsers | Yes | Yes | Yes |
 | Bot Framework SDK support | All v3, v4 | v4.63+ required | v4.63+ required |
 | Client SDK support    | JS, C# | JS, C# | C++, C#, Unity, JS|
-| Works with Web Chat  | Yes | Yes | No|
+| Works with Web Chat  | Yes | Yes | Yes |
 | VNET | No | Yes | No |
 
 ## Additional resources
