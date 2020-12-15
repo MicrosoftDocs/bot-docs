@@ -7,7 +7,7 @@ ms.topic: article
 author: kamrani
 ms.author: kamrani
 ms.service: bot-service
-ms.date: 10/22/2020
+ms.date: 12/14/2020
 ---
 
 # Connect a bot to Facebook
@@ -156,14 +156,20 @@ To use Facebook Workplace with your bot, you must create a Workplace account and
 1. Click **Preview Profile** and verify the information is correct.
 1. Access *Free Trial*.
 1. Create **password**.
-1. Click **Invite Coworkers** to invite employees to sign-in. The employees you invited will become members as soon as they sign. They will go through a similar sign-in process as described in these steps.
+1. Click **Invite Coworkers** to invite employees to sign-in. The employees you invited will become members as soon as they sign. They will go through a similar sign-in process as described in these steps. The following picture shows an example of the Workplace home page navigation panel:
+
+    ![Workplace home pane](media/channels/fb-workplace-home-pane.png)
 
 ### Create a custom integration
 
 Create a [custom integration](https://developers.facebook.com/docs/workplace/custom-integrations-new) for your Workplace following the steps described below. When you create a custom integration, an app with defined permissions and a page of type 'Bot' only visible within your Workplace community are created.
 
+1. In the home page navigation panel, click the tools icon. This will display the Admin navigation panel.
 1. In the **Admin Panel**, open the **Integrations** tab.
-1. Click on the **Create your own custom App** button.
+
+    ![Workplace integration pane](media/channels/fb-workplace-integration-pane.png)
+
+1. Click on the **Create your own custom App** link.
 
     ![Workplace Integration](media/channels/fb-integration.png)
 
