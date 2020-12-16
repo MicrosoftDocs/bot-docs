@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 11/15/2019
+ms.date: 12/09/2019
 ---
 
 # Connect a bot to Office 365 email
@@ -20,7 +20,7 @@ Bots can communicate with users via Office 365 email in addition to other [chann
 > It is a violation of the Bot Framework [Code of Conduct](https://www.botframework.com/Content/Microsoft-Bot-Framework-Preview-Online-Services-Agreement.htm) to create "spambots", including bots that send unwanted or unsolicited bulk email.
 
 > [!NOTE]
-> If you are using Microsoft Exchange Server, make sure you have enabled [Autodiscover](https://docs.microsoft.com/exchange/client-developer/exchange-web-services/autodiscover-for-exchange) first before configuring email channel. 
+> If you are using Microsoft Exchange Server, make sure you have enabled [Autodiscover](https://docs.microsoft.com/exchange/client-developer/exchange-web-services/autodiscover-for-exchange) first before configuring email channel.
 
 ## Configure email credentials
 
@@ -38,42 +38,22 @@ The Email channel currently works with Office 365 only. Other email services are
 
 ## Customize emails
 
-The Email channel supports sending custom properties to create more advanced, customized emails using the `channelData` property.
+The Email channel supports sending custom values to create more advanced, customized emails by using the activity `channelData` property.
+The snippet below shows an example of the `channelData` for an incoming custom email message, from the bot to the user.
 
-[!INCLUDE [Email channelData table](~/includes/snippet-channelData-email.md)]
+[!INCLUDE [email channelData json](~/includes/snippet-channelData-email.md)]
 
-The following example message shows a JSON file that includes these `channelData` properties.
-
-```json
-{
-    "type": "message",
-    "locale": "en-Us",
-    "channelID": "email",
-    "from": { "id": "mybot@mydomain.com", "name": "My bot"},
-    "recipient": { "id": "joe@otherdomain.com", "name": "Joe Doe"},
-    "conversation": { "id": "123123123123", "topic": "awesome chat" },
-    "channelData":
-    {
-        "htmlBody": "<html><body style = /"font-family: Calibri; font-size: 11pt;/" >This is more than awesome.</body></html>",
-        "subject": "Super awesome message subject",
-        "importance": "high",
-        "ccRecipients": "Yasemin@adatum.com;Temel@adventure-works.com"
-    }
-}
-```
-
-For more information about using `channelData`,
-see [how to implement channel-specific functionality](~/v4sdk/bot-builder-channeldata.md).
+For more information about the activity `channelData` property, see [Create a custom Email message](v4sdk/bot-builder-channeldata.md#create-a-custom-email-message).
 
 ## Other considerations
 
 If your bot does not return a 200 OK HTTP status code within 15 seconds in response to an incoming email message, the email channel will try to resend the message, and your bot may receive the same email message activity a few times. For more information, see the [HTTP details](v4sdk/bot-builder-basics.md#http-details) section in **How bots work** and the how to [troubleshooting timeout errors](https://github.com/daveta/analytics/blob/master/troubleshooting_timeout.md) article.
 
 > [!NOTE]
-> If you are using an Office 365 account with MFA enabled on it, make sure you disable MFA for the specified account first, then you can configure the account for the email channel. Otherwise, the connection will fail. 
+> If you are using an Office 365 account with MFA enabled on it, make sure you disable MFA for the specified account first, then you can configure the account for the email channel. Otherwise, the connection will fail.
 
 ## Additional resources
 
-* Connect a bot to [channels](~/bot-service-manage-channels.md)
-* [Implement channel-specific functionality](~/v4sdk/bot-builder-channeldata.md) with the Bot Framework SDK for .NET
-* Read the [channels reference](bot-service-channels-reference.md) article for more information about which features are supported on each channel
+- Connect a bot to [channels](~/bot-service-manage-channels.md)
+- [Implement channel-specific functionality](~/v4sdk/bot-builder-channeldata.md) with the Bot Framework SDK for .NET
+- Read the [channels reference](bot-service-channels-reference.md) article for more information about which features are supported on each channel

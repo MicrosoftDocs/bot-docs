@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 10/29/2020
+ms.date: 12/02/2020
 ---
 
 
@@ -23,24 +23,24 @@ This article shows you how to build a bot by using the C# template, and then how
 
 ## Prerequisites
 
-[!INCLUDE [dotnet prerequisites](~/includes/quickstart/dotnet/quickstart-dotnet-prerequisites.md)]
+[!INCLUDE [dotnet prerequisites](../includes/quickstart/dotnet/quickstart-dotnet-prerequisites.md)]
 
 ## Create a bot
 
-[!INCLUDE [dotnet quickstart create bot](~/includes/quickstart/dotnet/quickstart-dotnet-create-bot.md)]
+[!INCLUDE [dotnet quickstart create bot](../includes/quickstart/dotnet/quickstart-dotnet-create-bot.md)]
 
 ## Start your bot
 
-[!INCLUDE [dotnet quickstart start bot](~/includes/quickstart/dotnet/quickstart-dotnet-start-bot.md)]
+[!INCLUDE [dotnet quickstart start bot](../includes/quickstart/dotnet/quickstart-dotnet-start-bot.md)]
 
 ## Start the Emulator and connect your bot
 
-[!INCLUDE [dotnet quickstart start Emulator](~/includes/quickstart/common/quickstart-start-emulator.md)]
+[!INCLUDE [dotnet quickstart start Emulator](../includes/quickstart/common/quickstart-start-emulator.md)]
 
 ## Additional resources
 
-- See the [.NET Core SDK Templates](https://github.com/microsoft/BotBuilder-Samples/tree/master/generators/dotnet-templates#net-core-sdk-templates) README for moreinformation about the .NET Core templates.
-- See how to [debug a bot](~/bot-service-debug-channel-ngrok.md) for how to debug using Visual Studio or Visual Studio Code and the Bot Framework Emulator.
+- See the [.NET Core SDK Templates](https://github.com/microsoft/BotBuilder-Samples/tree/main/generators/dotnet-templates#readme) README for more information about the .NET Core templates.
+- See how to [debug a bot](../bot-service-debug-channel-ngrok.md) for how to debug using Visual Studio or Visual Studio Code and the Bot Framework Emulator.
 - See [Tunneling (ngrok)](https://github.com/Microsoft/BotFramework-Emulator/wiki/Tunneling-(ngrok)) for information on how to install ngrok.
 
 ## Next steps

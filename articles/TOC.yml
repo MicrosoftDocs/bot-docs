@@ -39,19 +39,21 @@
   - name: Authentication types
     href: v4sdk/bot-builder-concept-authentication-types.md
   - name: User authentication
-    href: v4sdk/bot-builder-concept-authentication.md
-  - name: Identity providers
-    href: v4sdk/bot-builder-concept-identity-providers.md
-  - name: Single sign on
-    href: v4sdk/bot-builder-concept-sso.md
-  - name: Security guidelines
-    href: v4sdk/bot-builder-security-guidelines.md
-  - name: Bot Authentication
     items:
+    - name: User authentication basics
+      href: v4sdk/bot-builder-concept-authentication.md
+    - name: Identity providers
+      href: v4sdk/bot-builder-concept-identity-providers.md
+    - name: Single sign on
+      href: v4sdk/bot-builder-concept-sso.md
     - name: Add authentication to a bot
       href: v4sdk/bot-builder-authentication.md
     - name: Add single sign on to a bot
       href: v4sdk/bot-builder-authentication-sso.md
+  - name: Enhanced authentication
+    href: v4sdk/bot-builder-security-enhanced.md
+  - name: Security guidelines
+    href: v4sdk/bot-builder-security-guidelines.md
 - name: Concepts
   items:
   - name: Bot

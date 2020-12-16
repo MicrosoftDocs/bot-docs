@@ -34,6 +34,8 @@ To send the user content like an image or a video, you can add an attachment or 
 
 See [design user experience](../bot-service-design-user-experience.md) for examples of available cards.
 
+See also [What is the size limit of a file transferred using channels?](../bot-service-resources-faq-general.md#what-is-the-size-limit-of-a-file-transferred-using-channels)
+
 ### [C#](#tab/csharp)
 
 The `Attachments` property of the `Activity` object contains an array of `Attachment` objects that represent the media attachments and rich cards attached to the message. To add a media attachment to a message, create an `Attachment` object for the `reply` activity (that was created off the activity with `CreateReply()`) and set the `ContentType`, `ContentUrl`, and `Name` properties.

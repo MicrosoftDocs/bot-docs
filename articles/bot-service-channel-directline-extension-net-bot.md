@@ -73,7 +73,11 @@ This section describes how to enable the Direct Line app service extension using
 
     ![App service extension keys](./media/channels/direct-line-extension-extension-keys.png)
 
-1. From the left panel menu under *Application settings* section, click the **Configuration** item.
+1. Navigate to the home page, click the **App Services** icon at the top of the page. You can also display the portal menu, and then click the **App Services** menu item, in the left panel. The  App Services page is displayed.
+1. In the search box enter your **Web App Bot** resource name. Your resource will be listed.
+Notice that if you mouseover the icon or the menu item, you get the list of the last resources you viewed. Chances are your **Web App Bot** resource will be listed.
+1. Click your resource link.
+1. In the **Settings** section, click the **Configuration** menu item.
 1. In the right panel, add the following new settings:
 
     |Name|Value|
@@ -117,7 +121,7 @@ If everything is correct, the page will return this JSON content: `{"v":"123","k
 - If the *initialized* value of the **.bot endpoint** is false it means the Direct Line app service extension is unable to validate the **App Service Extension Key** added to the bot's *Application Settings* above.
     1. Confirm the value was correctly entered.
     1. Switch to the alternative **App Service Extension Key** shown on your bot's **Direct Line channel configuration page**.
-    
+
 - If attempting to use OAuth with the Direct Line App Service Extension and encountering the error "Unable to get the bot AppId from the audience claim." a *ClaimsIdentity* with the *AudienceClaim* assigned needs to be set on the *BotFrameworkHttpAdapter*. In order to accomplish this a developer may subclass the adapter similar to the example below:
 
 ```csharp
