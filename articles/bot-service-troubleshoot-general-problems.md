@@ -41,8 +41,13 @@ For details about troubleshooting authentication issues with your bot, see [trou
 
     ![kudu cmd console](media/bot-service-troubleshoot/kudu-cmd-console.png)
 
-1. Run `nslookup directline.botframework.com` and check if the DNS resolution is working.
-1. Run `curl -I directline.botframework.com` and check if the HTTP status 301 is returned.
+1. Run `nslookup directline.botframework.com` and check if the DNS resolution is working. Notice that `nslookup` (name server lookup) is a network administration command-line tool for querying the Domain Name System (DNS) to obtain domain name or IP address mapping, or other DNS records.  The DNS resolution is working, if he response to this command contains the relevant information.
+
+    ![kudu cmd console bot channel dns](media/bot-service-troubleshoot/kudu-cmd-console-bot-channel-dns.png)
+
+    The [WHOIS IP Lookup Tool](https://www.ultratools.com/tools/ipWhoisLookupResult) is useful to get information about IP addresses.
+
+1. Run `curl -I directline.botframework.com` and check if the HTTP status 301 is returned. The option `-I` is used to obtain a response containing the header only. This is just a way to check that there is connectivity.
 
     ![kudu cmd console http 301](media/bot-service-troubleshoot/kudu-cmd-console-http-301.png)
 
@@ -50,12 +55,15 @@ For details about troubleshooting authentication issues with your bot, see [trou
 
 Because curl doesn’t have access to the production site, and `directline.botframework.com` is on the public internet, you must use curl in simulation mode. Perform the steps shown below outside a Virtual Private Network (VNET), for example, using a cell phone *hotspot*. See also [What is Azure Virtual Network?](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview#:~:text=Azure%20Virtual%20Network%20%28VNet%29%20is%20the%20fundamental%20building,with%20each%20other%2C%20the%20internet%2C%20and%20on-premises%20networks.).
 
-1. Run `nslookup ivr-sr-bot.botapps.amat.com` and check if the DNS resolution is working.
-1. Run `curl -I https://ivr-sr-bot.botapps.amat.com/api/messages` and check if a valid HTTP status code is returned (for example, 405 method not allowed).
+1. Run `nslookup ivr-sr-bot.botapps.amat.com` and check if the DNS resolution is working. The DNS resolution is working, if he response to this command contains the relevant information.
+
+    ![kudu cmd console channel bot dns](media/bot-service-troubleshoot/kudu-cmd-console-channel-bot-dns.png)
+
+1. Run `curl -I https://ivr-sr-bot.botapps.amat.com/api/messages` and check if a valid HTTP status code is returned (for example, 405 method not allowed). The method specified in the request is not allowed for the resource identified by the specified URI. This is just a way to check that there is connectivity.
 
     ![kudu cmd console http 405](media/bot-service-troubleshoot/kudu-cmd-console-http-405.png)
 
-1. If you are not able to get response from the bot, write down the client’s IP address.
+1. If you do not get the response from the bot, write down the client’s IP address.
 
 ### Check firewall traces on failed connections
 
