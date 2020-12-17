@@ -96,6 +96,10 @@ In addition to the standard HTTP response headers, every response will contain a
 
 The <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html" target="_blank">HTTP status code</a> that is returned with each response indicates the outcome of the corresponding request.
 
+> [!NOTE]
+> The following table describes the most common HTTP status codes.
+> For specific details, if related to a channel, please refer to the applicable documentation.
+
 | HTTP status code | Meaning |
 |----|----|
 | 200 | The request succeeded. |
