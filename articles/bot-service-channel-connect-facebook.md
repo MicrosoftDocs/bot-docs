@@ -156,7 +156,7 @@ To use Facebook Workplace with your bot, you must create a Workplace account and
 1. Click **Preview Profile** and verify the information is correct.
 1. Access *Free Trial*.
 1. Create **password**.
-1. Click **Invite Coworkers** to invite employees to sign-in. The employees you invited will become members as soon as they sign. They will go through a similar sign-in process as described in these steps. The following picture shows an example of the Workplace home page navigation panel:
+1. Click **Invite Coworkers** to invite employees to sign-in. The employees you invited will become members as soon as they sign in. They will go through a similar sign-in process as described in these steps. The following picture shows an example of the Workplace home page navigation panel:
 
     ![Workplace home pane](media/channels/fb-workplace-home-pane.png)
 
@@ -169,7 +169,7 @@ Create a [custom integration](https://developers.facebook.com/docs/workplace/cus
 
     ![Workplace integration pane](media/channels/fb-workplace-integration-pane.png)
 
-1. Click on the **Create your own custom App** link.
+1. Click on the **Integrations* link.
 
     ![Workplace Integration](media/channels/fb-integration.png)
 
