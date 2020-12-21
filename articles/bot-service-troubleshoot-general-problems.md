@@ -41,7 +41,7 @@ For details about troubleshooting authentication issues with your bot, see [trou
 
     ![kudu cmd console](media/bot-service-troubleshoot/kudu-cmd-console.png)
 
-1. Run `nslookup directline.botframework.com` and check if the DNS resolution is working. Notice that `nslookup` (name server lookup) is a network administration command-line tool for querying the Domain Name System (DNS) to obtain domain name or IP address mapping, or other DNS records.  The DNS resolution is working, if he response to this command contains the relevant information.
+1. Run `nslookup directline.botframework.com` and check if the DNS resolution is working. Notice that `nslookup` (name server lookup) is a network administration command-line tool for querying the Domain Name System (DNS) to obtain domain name or IP address mapping, or other DNS records.  If the DNS resolution is working, the response to this command will contain the relevant information.
 
     ![kudu cmd console bot channel dns](media/bot-service-troubleshoot/kudu-cmd-console-bot-channel-dns.png)
 
