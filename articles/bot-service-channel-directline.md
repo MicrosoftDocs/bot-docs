@@ -30,7 +30,7 @@ Over time these offerings will be simplified.
 | Supports legacy web browsers | Yes | Yes | Yes |
 | Bot Framework SDK support | All v3, v4 | v4.63+ required | v4.63+ required |
 | Client SDK support    | JS, C# | JS, C# | C++, C#, Unity, JS|
-| Works with Web Chat  | Yes | Yes | No|
+| Works with Web Chat  | Yes | Yes | Yes |
 | VNET | No | Yes | No |
 
 ## Additional resources
@@ -38,3 +38,4 @@ Over time these offerings will be simplified.
 - [Connect a bot to Direct Line](bot-service-channel-connect-directline.md)
 - [Connect a bot to Direct Line Speech](bot-service-channel-connect-directlinespeech.md)
 - [Direct Line App Service Extension](bot-service-channel-directline-extension.md)
+- [Use Web Chat with Direct Line Speech](https://github.com/microsoft/BotFramework-WebChat/blob/master/docs/DIRECT_LINE_SPEECH.md#using-direct-line-speech)

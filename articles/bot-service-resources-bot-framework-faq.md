@@ -43,6 +43,8 @@ In case you don't find the answer you're looking for, you can post your question
 - [What are the rate limits?](bot-service-resources-faq-general.md#what-are-the-rate-limits)
 - [How will I know if I'm impacted by rate limiting?](bot-service-resources-faq-general.md#how-will-i-know-if-im-impacted-by-rate-limiting)
 - [How to implement human handoff?](bot-service-resources-faq-general.md#how-to-implement-human-handoff)
+- [What is the size limit of a file transferred using a channel?](bot-service-resources-faq-general.md#what-is-the-size-limit-of-a-file-transferred-using-channels)
+
 
 <!-- Retired, re: https://github.com/MicrosoftDocs/bot-docs/issues/1698
 - [What are some community-authored dialogs?](bot-service-resources-faq-general.md#what-are-some-community-authored-dialogs)
