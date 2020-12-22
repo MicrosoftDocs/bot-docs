@@ -98,7 +98,7 @@ Bots are complex apps, with a lot of different parts working together. Like any 
 
 - Test your bot on the [web](bot-service-manage-test-webchat.md). Once configured through the Azure portal your bot can also be reached through a web chat interface. The web chat interface is a great way to grant access to your bot to testers and other people who do not have direct access to the bot's running code.
 
-- [Unit Test](https://docs.microsoft.com/azure/bot-service/unit-test-bots) your bot with the July update of Bot Framework SDK.
+- [Unit Test](https://docs.microsoft.com/azure/bot-service/unit-test-bots) your bot with the current Bot Framework SDK.
 
 ### Publish
 
