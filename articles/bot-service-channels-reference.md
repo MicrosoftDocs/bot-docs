@@ -260,9 +260,9 @@ The following table shows the maximum number of Suggested Actions and Card Actio
 
 For more information about the numbers shown in the above table, refer to channel support code listed [here](https://aka.ms/channelactions). 
 
-For more information on _Suggested Actions_, refer to the [Use button for input](https://aka.ms/howto-add-buttons) article.
+For more information on _Suggested Actions_, refer to the [Use button for input](./v4sdk/bot-builder-howto-add-suggested-actions.md) article.
 
-For more information on _Card Actions_, refer to the [Send a hero card](https://aka.ms/howto-add-media#send-a-hero-card) section of the _Add media to messages_ article.
+For more information on _Card Actions_, refer to the [Send a hero card](./v4sdk/bot-builder-howto-add-media-attachments.md?view=azure-bot-service-4.0#send-a-hero-card) section of the _Add media to messages_ article.
 
 ## Card Support by Channel
 

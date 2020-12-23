@@ -150,8 +150,8 @@ For detailed information and an example, see the [Custom event triggers][custom-
 [botframework-activity]:https://github.com/microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md
 [adaptive-expressions]:bot-builder-concept-adaptive-expressions.md
 [concept-dialog]:bot-builder-concept-dialog.md
-[how-bots-work]:https://aka.ms/how-bots-work
+[how-bots-work]:bot-builder-basics.md
 
 <!-- External links-->
 [luis]:https://www.luis.ai/home
-[luis-prediction-scores]:https://aka.ms/luis-prediction-scores
+[luis-prediction-scores]:/azure/cognitive-services/luis/luis-concept-prediction-scores

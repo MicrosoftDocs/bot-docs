@@ -59,7 +59,7 @@ We highly recommend that you start migrating your V3 bots to V4. In order to sup
 
 
 For more information please refer to the following references:
-* [Essential Migration Guidance](https://aka.ms/bf-migration-overview)
+* [Essential Migration Guidance](./v4sdk/migration/migration-overview.md)
 * Primary V4 Repositories to develop Bot Framework bots
   * [Botbuilder for dotnet](https://github.com/microsoft/botbuilder-dotnet)
   * [Botbuilder for JS](https://github.com/microsoft/botbuilder-js)

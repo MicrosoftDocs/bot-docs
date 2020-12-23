@@ -251,7 +251,7 @@ Now that you have your Facebook app, page and credentials, you need to configure
 
 #### Install the Facebook adapter NuGet package
 
-Add  the [Microsoft.Bot.Builder.Adapters.Facebook](https://www.nuget.org/packages/Microsoft.Bot.Builder.Adapters.Facebook/) NuGet package. For more information on using NuGet, see [Install and manage packages in Visual Studio](https://aka.ms/install-manage-packages-vs).
+Add  the [Microsoft.Bot.Builder.Adapters.Facebook](https://www.nuget.org/packages/Microsoft.Bot.Builder.Adapters.Facebook/) NuGet package. For more information on using NuGet, see [Install and manage packages in Visual Studio](/nuget/tools/package-manager-ui).
 
 #### Create a Facebook adapter class
 
@@ -338,7 +338,7 @@ public void ConfigureServices(IServiceCollection services)
 
 Now that you have wired up the adapter in your bot project, you need to provide to Facebook the correct endpoint for your application, so that your bot will receive messages. You also need this URL to complete configuration of your bot application.
 
-To complete this step, [deploy your bot to Azure](https://aka.ms/bot-builder-deploy-az-cli) and make a note of the URL of your deployed bot.
+To complete this step, [deploy your bot to Azure](bot-builder-deploy-az-cli.md) and make a note of the URL of your deployed bot.
 
 > [!NOTE]
 > If you are not ready to deploy your bot to Azure, or wish to debug your bot when using the Facebook adapter, you can use a tool such as [ngrok](https://www.ngrok.com) (which you will likely already have installed if you have used the Bot Framework Emulator previously) to tunnel through to your bot running locally and provide you with a publicly accessible URL for this.
