@@ -96,7 +96,7 @@ Developers using the Microsoft Bot Framework have many [resources](bot-service-r
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-The Bot Framework SDK v4 is an [Open Source SDK](https://github.com/microsoft/botframework-sdk/#readme) that enable developers to model and build sophisticated conversation 
+The Bot Framework SDK v4 is an [Open Source SDK](https://github.com/microsoft/botframework-sdk/#readme) that enable developers to model and build sophisticated conversation
 using their favorite programming language.
 
 This article summarizes key new features and improvements in Bot Framework and Azure Bot Service.
@@ -104,16 +104,16 @@ This article summarizes key new features and improvements in Bot Framework and A
 |Item | C#  | JS  | Python | Java
 |:----|:---:|:---:|:------:|:-----:
 |Release |[4.9.1 (GA)][1] | [4.9.0 (GA)][2] | [4.9.0 (GA)][3] | [4.6 Preview][3a]|
-|Samples |[.NET Core][6], [WebAPI][10] |[Node.js][7], [TypeScript][8], [es6][9]  | [Python][11a] | | 
+|Samples |[.NET Core][6], [WebAPI][10] |[Node.js][7], [TypeScript][8], [es6][9]  | [Python][11a] | |
 
 Welcome to the May 2020 release of the Bot Framework SDK. There are a number of updates in this version that we hope you will like; some of the key highlights include:
 
-* [Skills](#skills) - Skills now support adaptive dialogs and all activity types, and have improved support for SSO and OAuth. The v2.1 skill manifest is now GA.  We also added Bot Framework Composer support for building and consuming Skills.   
-* [Microsoft Teams](#microsoft-teams) - Improvements in Microsoft Teams API support, including support in Java! 
+* [Skills](#skills) - Skills now support adaptive dialogs and all activity types, and have improved support for SSO and OAuth. The v2.1 skill manifest is now GA.  We also added Bot Framework Composer support for building and consuming Skills.
+* [Microsoft Teams](#microsoft-teams) - Improvements in Microsoft Teams API support, including support in Java!
 * [Bot Telemetry](#bot-telemetry) - Mapping of Dialogs into Azure AppInsights Page View Events.
-* [Adaptive Dialogs](#adaptive-dialogs) - A more flexible, event driven dialog system for implementing multi-turn conversational patterns. 
+* [Adaptive Dialogs](#adaptive-dialogs) - A more flexible, event driven dialog system for implementing multi-turn conversational patterns.
 * [CLI tools for Adaptive Dialogs](#cli-tools-for-adaptive-dialogs) - new ability to merge and validate adaptive schema assets.
-* [Language Generation](#language-generation) - Add language and personality responses to your bot conversations. 
+* [Language Generation](#language-generation) - Add language and personality responses to your bot conversations.
 * [Adaptive Expressions](#adaptive-expressions) -  Use bot aware expressions to react to user input and drive bot functionality.
 * [Authentication Improvements](#authentication-improvements) - SSO between Bots and Skills and improvements to X.509 auth.
 * [Generated Dialogs](#generated-dialogs---early-preview) (Early Preview) - Automatically create robust Bot Framework Composer assets from JSON or JSON Schema that leverage Adaptive Dialogs.
@@ -122,27 +122,27 @@ Welcome to the May 2020 release of the Bot Framework SDK. There are a number of 
 
 **Insiders**: Want to try new features as soon as possible? You can download the nightly Insiders build [[C#](https://github.com/microsoft/botbuilder-dotnet/blob/master/UsingMyGet.md)] [[JS](https://github.com/microsoft/botbuilder-js/blob/master/UsingMyGet.md)] [[Python](https://github.com/microsoft/botbuilder-python/blob/master/UsingTestPyPI.md)] [[CLI](https://github.com/Microsoft/botframework-cli#nightly-builds)] and try the latest updates as soon as they are available. And for the latest Bot Framework news, updates, and content, follow us on Twitter @msbotframework!
 
-### Skills 
+### Skills
 [Skills](v4sdk/skills-conceptual.md) have been updated to work with adaptive dialogs, and both adaptive and traditional dialogs will now accept all types of activities.
- 
+
 The skill manifest schema has been updated to [version 2.1](https://github.com/microsoft/botframework-sdk/tree/master/schemas/skills). Improvements in this version include the ability to declare & share your language models, and define any type of activity that your skill can receive.
- 
+
 This release also includes authentication improvements with skills, including using SSO with dialogs, and OAuth without needing a magic code in WebChat and DirectLine.
 
 ### Microsoft Teams
 We continue to focus on making sure all the Teams-specific APIs are fully supported across our SDKs. This release brings full support for Microsoft Teams APIs in the preview [Java SDK](https://github.com/microsoft/botbuilder-java), including [samples](https://github.com/microsoft/botbuilder-java/tree/master/samples).
- 
+
 The `OnTeamsMemberAdded` event in the activity handler has been updated to use the get single member endpoint under the covers, which should significantly reduce latency and reliability of this event in large teams.
- 
+
 The `TeamsChannelAccount` object has been updated to include `userRole` (one of owner, member, or guest) and `tenantId` (for the user's tenantId).
 
-### Bot Telemetry 
+### Bot Telemetry
 Bots now capture Page View events, native to Application Insights, whenever a dialog is started. This allows you to use the User Flows dashboard in Application Insights to see how users move through your bot, between dialogs and where they drop out.
 
 ![Telemetry In AppInsights](https://raw.githubusercontent.com/microsoft/botframework-sdk/master/docs/media/UserFlowsAppInsights.jpg?raw=true)
 
-### Adaptive Dialogs 
-We're also excited to make [Adaptive Dialogs](v4sdk/bot-builder-adaptive-dialog-introduction.md) generally available in C# and as a preview release in JavaScript! 
+### Adaptive Dialogs
+We're also excited to make [Adaptive Dialogs](v4sdk/bot-builder-adaptive-dialog-introduction.md) generally available in C# and as a preview release in JavaScript!
 
 Adaptive Dialogs, which underpin the dialog design and management authoring features found in Bot Framework Composer, enable developers to dynamically update conversation flow based on context and events. This is especially useful when dealing with more sophisticated conversation requirements, such as context switches and interruptions.  Bot Framework Skills can now also leverage Adaptive Dialogs.
 
@@ -159,7 +159,7 @@ New CLI Tools were added for management of Adaptive Dialogs.
 
 ### Language Generation
 
-LG is Generally Available (GA) on both the C# and JS Platforms. 
+LG is Generally Available (GA) on both the C# and JS Platforms.
 
 [Language Generation (LG)](v4sdk/bot-builder-concept-language-generation.md) enables you to define multiple variations of a phrase, execute simple expressions based on context, and refer to conversational memory. At the core of language generation lies template expansion and entity substitution. You can provide one-of variation for expansion as well as conditionally expanding a template. The output from language generation can be a simple text string or multi-line response or a complex object payload that a layer above language generation will use to construct a complete activity. The Bot Framework Composer natively supports language generation to produce output activities using the LG templating system.
 
@@ -176,7 +176,7 @@ Full access to the current bot's memory so you can data bind language to the sta
 * Parser and runtime libraries that help achieve runtime resolution.
 
 ### Adaptive Expressions
-[Adaptive Expressions](v4sdk/bot-builder-concept-adaptive-expressions.md) are Generally Available (GA) on both the C# and JS Platforms. 
+[Adaptive Expressions](v4sdk/bot-builder-concept-adaptive-expressions.md) are Generally Available (GA) on both the C# and JS Platforms.
 
 Bots use expressions to evaluate the outcome of a condition based on runtime information available in memory to the dialog or the Language Generation system. These evaluations determine how your bot reacts to user input and other factors that impact bot functionality.
 
@@ -187,7 +187,7 @@ An adaptive expression can contain one or more explicit values, pre-built functi
 ### Authentication Improvements
 We added support for single sign-on while using Expect Replies. This applies to SSO performed between a pair of bots: host and a skill.
 
-For Bot Identification we've added the ability to specify `sendx5c` parameter for certificate authentication. This feature was requested by customers and allows for more flexibility when using cert auth. 
+For Bot Identification we've added the ability to specify `sendx5c` parameter for certificate authentication. This feature was requested by customers and allows for more flexibility when using cert auth.
 
 Additional Sovereign Clouds are supported.
 
@@ -212,7 +212,7 @@ evolving set of capabilities including:
 ### VS Code Debugger - Early Preview
 [Adaptive tools](https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/adaptive-tool) is a brand new Visual studio code extension you can use to create/ validate .lu and .lg documents as well as debug declaratively defined adaptive dialogs. This extension provides rich authoring & editing capabilities for .lu and .lg file formats including syntax highlighting, auto-suggest and auto-complete.
 
-We anticipate adding an early preview to the VS Marketplace shortly after this release. 
+We anticipate adding an early preview to the VS Marketplace shortly after this release.
 
 ### Bot Builder Community
 During this release, the Bot Builder Community has further raised the bar by adding more features, more adapters, and fixing more bugs.
@@ -240,7 +240,7 @@ Bot Framework Composer is a visual authoring canvas for developers and multi-dis
 
 ## What's new November 2019
 
-The Bot Framework SDK v4 is an [Open Source SDK](https://github.com/microsoft/botframework-sdk/#readme) that enable developers to model and build sophisticated conversation 
+The Bot Framework SDK v4 is an [Open Source SDK](https://github.com/microsoft/botframework-sdk/#readme) that enable developers to model and build sophisticated conversation
 using their favorite programming language.
 
 This article summarizes key new features and improvements in Bot Framework and Azure Bot Service.
@@ -257,8 +257,8 @@ The Bot Framework SDK v4.6 release fully integrates support for building Teams b
 
 #### Bot Framework for Power Virtual Agent (Preview)
 
-Power Virtual Agent is designed to enable business users to create bots within a UI-based bot building SaaS experience, without having to code or manage specific AI services. 
-Power Virtual Agents can be extended with the Microsoft Bot Framework, allowing developers and business users to collaborate in building bots for their 
+Power Virtual Agent is designed to enable business users to create bots within a UI-based bot building SaaS experience, without having to code or manage specific AI services.
+Power Virtual Agents can be extended with the Microsoft Bot Framework, allowing developers and business users to collaborate in building bots for their
 organizations. [[Docs](https://docs.microsoft.com/dynamics365/ai/customer-service-virtual-agent/overview)]
 
 
@@ -266,10 +266,10 @@ organizations. [[Docs](https://docs.microsoft.com/dynamics365/ai/customer-servic
 
 - **Skills for bots**: Create reusable conversational skills to add functionality to a bot. Leverage pre-built skills, such as Calendar, Email, Task, Point of Interest, Automotive, Weather and News skills. Skills include language models, dialogs, QnA, and integration code delivered to customize and extend as required. [[Docs](https://microsoft.github.io/botframework-solutions/overview/skills/)]
 
-- **Skills for Power Virtual Agent - Coming!**: For bots built with Power Virtual Agents, you can build new skills for these bots using Bot Framework and Azure Cognitive Services without needing to build a new bot from scratch. 
+- **Skills for Power Virtual Agent - Coming!**: For bots built with Power Virtual Agents, you can build new skills for these bots using Bot Framework and Azure Cognitive Services without needing to build a new bot from scratch.
 
 #### Adaptive Dialogs (Preview)
-Adaptive Dialogs enable developers to dynamically update conversation flow based on context and events. This is especially handy when dealing with conversation context switches and interruptions in the middle of a conversation. [[Docs][48] | [C# samples][49]] 
+Adaptive Dialogs enable developers to dynamically update conversation flow based on context and events. This is especially handy when dealing with conversation context switches and interruptions in the middle of a conversation. [[Docs][48] | [C# samples][49]]
 
 #### Language Generation (Preview)
 Language Generation enables developers to separate logic used to generate bot's respones including the ability to define multiple variations on a phrase, execute simple expressions based on context, refer to conversational memory. [[Docs][44] | [C# samples][45]]
@@ -279,7 +279,7 @@ Common Expression Language allows you to evaluate the outcome of a condition-bas
 
 ## What's new (July 2019)
 
-The Bot Framework SDK v4 is an [Open Source SDK][1a] that enable developers to model and build sophisticated conversation 
+The Bot Framework SDK v4 is an [Open Source SDK][1a] that enable developers to model and build sophisticated conversation
 using their favorite programming language.
 
 This article summarizes key new features and improvements in Bot Framework and Azure Bot Service.
@@ -288,14 +288,14 @@ This article summarizes key new features and improvements in Bot Framework and A
 |:----|:---:|:---:|:------:|
 |SDK |[4.5][1] | [4.5][2] | [4.4.0b2 (preview)][3] |
 |Docs | [docs][5] |[docs][5] |  | |
-|Samples |[.NET Core][6], [WebAPI][10] |[Node.js][7] , [TypeScript][8], [es6][9]  | [Python][11] | | 
+|Samples |[.NET Core][6], [WebAPI][10] |[Node.js][7] , [TypeScript][8], [es6][9]  | [Python][11] | |
 
 ### Bot Framework Channels
 
-- [Direct Line Speech (public preview)](https://aka.ms/streaming-extensions) | [docs](directline-speech-bot.md): Bot Framework and Microsoft's Speech Services provide a channel that enables streamed speech and text bi-directionally from the client to the bot application using WebSockets.  
+- [Direct Line Speech (public preview)](https://aka.ms/streaming-extensions) | [docs](directline-speech-bot.md): Bot Framework and Microsoft's Speech Services provide a channel that enables streamed speech and text bi-directionally from the client to the bot application using WebSockets.
 
-- [Direct Line App Service Extension (public preview)](https://portal.azure.com) | [docs](https://aka.ms/directline-ase): A version of Direct Line 
-that allows clients to connect directly to bots using the Direct Line API. This offers many benefits, including increased performance and more isolation. Direct Line App Service Extension is available on all Azure App Services, including those hosted within an Azure App Service Environment. An Azure App Service Environment provides isolation and is ideal for working within a VNet. A VNet lets you create your own private space in Azure and is crucial to your cloud network as it offers isolation, segmentation, and other key benefits. 
+- [Direct Line App Service Extension (public preview)](https://portal.azure.com) | [docs](https://aka.ms/directline-ase): A version of Direct Line
+that allows clients to connect directly to bots using the Direct Line API. This offers many benefits, including increased performance and more isolation. Direct Line App Service Extension is available on all Azure App Services, including those hosted within an Azure App Service Environment. An Azure App Service Environment provides isolation and is ideal for working within a VNet. A VNet lets you create your own private space in Azure and is crucial to your cloud network as it offers isolation, segmentation, and other key benefits.
 
 ### Bot Framework SDK
 - [Adaptive Dialog (SDK v4.6 preview)](https://github.com/Microsoft/BotBuilder-Samples/tree/master/experimental/adaptive-dialog#readme) | [docs](https://github.com/Microsoft/BotBuilder-Samples/tree/master/experimental/adaptive-dialog/docs) | [C# samples](https://github.com/Microsoft/BotBuilder-Samples/tree/master/experimental/adaptive-dialog/csharp_dotnetcore):
@@ -315,9 +315,9 @@ Introduced at Microsoft Build 2019, the Bot Inspector is a new feature in the Bo
 
 ### Solutions
 - [Virtual Assistant Solution Acclerator](https://github.com/Microsoft/botframework-solutions#readme) : Provides a set of templates, solution accelerators and skills to help build sophisticated conversational experiences. New Android app client for Virtual Assistant that integrates with Direct-Line Speech and Virtual Assistant demonstrating how a device client can interact with your Virtual Assistant and render Adaptive Cards. Updates also include support for Direct-Line Speech and Microsoft Teams.
-  
+
 - [Dynamics 365 Virtual Agent for Customer Service (public preview)](https://dynamics.microsoft.com/en-us/ai/virtual-agent-for-customer-service/): With the public preview, you can provide exceptional customer service with intelligent, adaptable virtual agents. Customer service experts can easily create and enhance bots with AI-driven insights.
-  
+
 - [Chat for Dynamics 365](https://www.powerobjects.com/powerpacks/powerchat/): Chat for Dynamics 365 offers several capabilities to ensure the support agents and end users can interact effectively and remain highly productive. Live chat and track conversations from visitors on your website within Microsoft Dynamics 365.
 
 ## What's new (May 2019)
@@ -331,14 +331,14 @@ Introduced at Microsoft Build 2019, the Bot Inspector is a new feature in the Bo
 <a name="V4-whats-new"></a>
 ## Bot Framework SDK (New! In preview)
 
-- [Adaptive Dialog][47] | [docs][48] | [C# samples][49]: Adaptive Dialogs enable developers to build conversations that can be dynamically changed as the conversation progresses.  Traditionally developers have mapped out the entire flow of a conversation up front, which limits the flexibility of the conversation.  Adaptive dialogs allow them to be more flexible, to respond to changes in context and insert new steps or entire sub-dialogs into the conversation as it progresses. 
+- [Adaptive Dialog][47] | [docs][48] | [C# samples][49]: Adaptive Dialogs enable developers to build conversations that can be dynamically changed as the conversation progresses.  Traditionally developers have mapped out the entire flow of a conversation up front, which limits the flexibility of the conversation.  Adaptive dialogs allow them to be more flexible, to respond to changes in context and insert new steps or entire sub-dialogs into the conversation as it progresses.
 
 - [Language Generation][43] | [docs][44] | [C# samples][45]: Language Generation; which allows the developer to extract the embedded strings from their code and resource files and manage them through a Language Generation runtime and file format.  Language Generation enable customers to define multiple variations on a phrase, execute simple expressions based on context, refer to conversational memory, and over time will enable us to bring additional capabilities all leading to a more natural conversational experience.
 
 - [Common Expression Language][40] | [api][41]: Both Adaptive dialogs and Language Generation rely on and use a common expression language to power bot conversations.
 
 ## Botkit
-[Botkit][100] is a developer tool and SDK for building chat bots, apps and custom integrations for major messaging platforms. Botkit bots `hear()` triggers, `ask()` questions and `say()` replies. Developers can use this syntax to build dialogs - now cross compatible with the latest version of Bot Framework SDK. 
+[Botkit][100] is a developer tool and SDK for building chat bots, apps and custom integrations for major messaging platforms. Botkit bots `hear()` triggers, `ask()` questions and `say()` replies. Developers can use this syntax to build dialogs - now cross compatible with the latest version of Bot Framework SDK.
 
 In addition, Botkit brings with it 6 platform adapters allowing Javascript bot applications to communicate directly with messaging platforms: [Slack][102], [Webex Teams][103], [Google Hangouts][104], [Facebook Messenger][105], [Twilio][106], and [Web chat][107].
 
@@ -348,18 +348,18 @@ Botkit is part of Microsoft Bot Framework and is released under the [MIT Open So
 
 The [Bot Framework Solutions repository](https://github.com/Microsoft/AI#readme) is the home for a set of templates, solution accelerators and skills to help build advanced, assistant-like conversational experiences.
 
-| Name | Description |  
-|:------------|:------------| 
+| Name | Description |
+|:------------|:------------|
 |[**Virtual Assistant**](https://github.com/Microsoft/AI/tree/master/docs#virtual-assistant) | Customers have a significant need to deliver a conversational assistant tailored to their brand, personalized to their users, and made available across a broad range of canvases and devices. <br/><br/> The Enterprise Template greatly simplifies the creation of a new bot project including: basic conversational intents, Dispatch integration, QnA Maker, Application Insights and an automated deployment.|
-|[**Skills**](https://github.com/Microsoft/AI/blob/master/docs/overview/skills.md)| Developers can compose conversational experiences by stitching together re-usable conversational capabilities, known as Skills. Skills are themselves Bots, invoked remotely and a Skill developer template (.NET, TS) is available to facilitate creation of new Skills. 
+|[**Skills**](https://github.com/Microsoft/AI/blob/master/docs/overview/skills.md)| Developers can compose conversational experiences by stitching together re-usable conversational capabilities, known as Skills. Skills are themselves Bots, invoked remotely and a Skill developer template (.NET, TS) is available to facilitate creation of new Skills.
 |[**Analytics**](https://github.com/Microsoft/AI/blob/master/docs/readme.md#analytics)| Gain key insights into your bot's health and behavior with the Conversational AI Analytics solutions. Review available telemetry, sample Application Insights queries, and Power BI dashboards to understand the full breadth of your bot's conversations with users. |
 
 ## Azure Bot Service
-Azure Bot Service enables you to host intelligent, enterprise-grade bots with complete ownership and control of your data. 
-Developers can register and connect their bots to users on Microsoft Teams, Cortana, Web Chat, 
-and more. [Azure][27]  |  [docs][28] | [connect to channels][29] 
+Azure Bot Service enables you to host intelligent, enterprise-grade bots with complete ownership and control of your data.
+Developers can register and connect their bots to users on Microsoft Teams, Cortana, Web Chat,
+and more. [Azure][27]  |  [docs][28] | [connect to channels][29]
 
-* **Direct Line JS Client**: If you want to use the Direct Line channel in Azure Bot Service and are not using the WebChat client, 
+* **Direct Line JS Client**: If you want to use the Direct Line channel in Azure Bot Service and are not using the WebChat client,
 the Direct Line JS client can be used in your custom application. Go to [Github][30] for more information.
 
 <a name="ABS-whats-new"></a>
@@ -370,22 +370,22 @@ the Direct Line JS client can be used in your custom application. Go to [Github]
 ## Bot Framework Emulator
 The [Bot Framework Emulator][60] is a  cross-platform desktop application that allows bot developers to test and debug bots built using the Bot Framework SDK. You can use the Bot Framework Emulator to test bots running locally on your machine or to connect to bots running remotely.
 
-- [Downlad latest][61] | [Docs][62]
+- [Download latest][61] | [Docs][62]
 
 <a name="Emulator-whats-new"></a>
 ### Bot Inspector (New! In preview)
 
-The Bot Framework Emulator has released a beta of the new Bot Inspector feature. It provides a way to debug and test your 
-Bot Framework SDK v4 bots on channels like Microsoft Teams, Slack, Cortana, Facebook Messenger,etc. 
-As you have the conversation, messages will be mirrored to the Bot Framework Emulator where you can inspect the 
-message data that the bot received. Additionally, a snapshot of the bot state for any given turn between the 
-channel and the bot is rendered as well. Read more about 
+The Bot Framework Emulator has released a beta of the new Bot Inspector feature. It provides a way to debug and test your
+Bot Framework SDK v4 bots on channels like Microsoft Teams, Slack, Cortana, Facebook Messenger,etc.
+As you have the conversation, messages will be mirrored to the Bot Framework Emulator where you can inspect the
+message data that the bot received. Additionally, a snapshot of the bot state for any given turn between the
+channel and the bot is rendered as well. Read more about
 [Bot Inspector](https://github.com/Microsoft/BotFramework-Emulator/blob/master/content/CHANNELS.md).
 
 
 ## Related Services
 
-### Language Understanding 
+### Language Understanding
 A machine learning-based service to build natural language experiences. Quickly create enterprise-ready, custom models that continuously improve. [Language Understanding Service(LUIS)][30] allows your application to understand what a person wants in their own words.
 
 <a name="LUIS-whats-new"></a>
@@ -394,7 +394,7 @@ A machine learning-based service to build natural language experiences. Quickly 
 
 - **New! Analytics dashboard**: LUIS is releasing a more detailed, visually-rich comprehensive analytics dashboard. Its user-friendly design highlights common issues most users face when designing applications, by providing simple explanations on how to resolve them to help users gain more insight into their models' quality, potential data problems, and guidance to adopt best practices.
 
-[Docs][31] | [Add language understanding to your bot][32] 
+[Docs][31] | [Add language understanding to your bot][32]
 
 ### QnA Maker
 [QnA Maker][33] is a cloud-based API service that creates a conversational, question-and-answer layer over your data. With QnA Maker, you can build, train and publish a simple question and answer bot based on FAQ URLs, structured documents, product manuals or editorial content in minutes.
@@ -405,7 +405,7 @@ A machine learning-based service to build natural language experiences. Quickly 
 - **New! Intelligence**: Contextual ranking models, active learning suggestions
 - **New! Conversation**: Multi-turn conversations in QnA Maker.
 
-[Docs][34]  | [add qnamaker to your bot][35] 
+[Docs][34]  | [add qnamaker to your bot][35]
 
 ### Speech Services
 [Speech Services](https://docs.microsoft.com/azure/cognitive-services/speech-service/) convert audio to text, perform speech translation and text-to-speech with the unified Speech services. With the speech services, you can integrate speech into your bot, create custom wake words, and author in multiple languages.
