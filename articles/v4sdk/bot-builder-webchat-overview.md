@@ -150,7 +150,7 @@ See more about [customizing Web Chat](https://github.com/Microsoft/BotFramework-
 
 There are three possible paths that migration might take when migrating from v3 to v4. First, please compare your beginning scenario with the one described below:
 
-[How can I upgrade my Web Chat that uses `<iframe>`, from v3 to V4?](../bot-service-resources-faq-availability.md#my-current-website-integrates-web-chat-using-an-iframe-element-obtained-from-azure-bot-services-i-want-to-upgrade-to-v4)
+- [How can I upgrade my Web Chat that uses `<iframe>`, from v3 to V4?](../bot-service-resources-faq-availability.md#my-current-website-integrates-web-chat-using-an-iframe-element-obtained-from-azure-bot-services-i-want-to-upgrade-to-v4)
 - [How can I upgrade my Web Chat that uses standard, my own, or no customization options, from v3 to V4?](../bot-service-resources-faq-availability.md#my-website-is-integrated-with-web-chat-v3-and-uses-customization-options-provided-by-web-chat-no-customization-at-all-or-very-little-of-my-own-customization-that-was-not-available-with-web-chat)
 - [How can I upgrade my forked Web Chat v3 with a lot oc customization, from v3 to v4?](../bot-service-resources-faq-availability.md#my-website-is-integrated-with-a-fork-of-web-chat-v3-i-have-implemented-a-lot-of-customization-in-my-version-of-web-chat-and-i-am-concerned-v4-is-not-compatible-with-my-needs)
 
