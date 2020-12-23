@@ -7,7 +7,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.date: 11/19/2019
- 
+
 ---
 
 # Application Insights keys
@@ -35,7 +35,7 @@ To get the Instrumentation key, do the following:
 
 3. Click **Overview**.
 
-4. Expand the **Essentials** block and find the **Instrumentation Key**. 
+4. Expand the **Essentials** block and find the **Instrumentation Key**.
 ![Portal screen capture of Overview](~/media/portal-app-insights-instrumentation-key-dropdown.png)
 ![Portal screen capture of the Instrumentation key](~/media/portal-app-insights-instrumentation-key.png)
 
@@ -46,7 +46,7 @@ To get the Instrumentation key, do the following:
 To get the Application ID, do the following:
 1. From your Application Insights resource, click **API Access**.
 
-2. Copy the **Application ID** and paste it to the **Application Insights Application ID** field of your bot's settings. 
+2. Copy the **Application ID** and paste it to the **Application Insights Application ID** field of your bot's settings.
 ![Portal screen capture of the Application ID](~/media/portal-app-insights-appid.png)
 
 ## API key
@@ -56,7 +56,7 @@ To get the API key, do the following:
 
 2. Click **Create API Key**.
 
-3. Enter a short description, check the **Read telementry** option, and click the **Generate key** button.
+3. Enter a short description, check the **Read telemetry** option, and click the **Generate key** button.
 ![Portal screen capture of the Application ID and API Key](~/media/portal-app-insights-appid-apikey.png)
 
    > [!WARNING]
