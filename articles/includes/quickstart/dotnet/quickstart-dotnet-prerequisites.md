@@ -3,7 +3,7 @@ bot-builder-tutorial-create-basic-bot.md and bot-builder-dotnet-sdk-quickstart.m
 
 - [ASP.NET Core Runtime 3.1](https://dotnet.microsoft.com/download)
 - [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
-- Knowledge of [ASP.Net Core](https://docs.microsoft.com/aspnet/core/) and [asynchronous programming in C#](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/async/index)
+- Knowledge of [ASP.NET Core](https://docs.microsoft.com/aspnet/core/) and [asynchronous programming in C#](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/async/index)
 
 ### Templates
 
