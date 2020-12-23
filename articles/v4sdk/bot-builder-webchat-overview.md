@@ -60,7 +60,7 @@ The following examples shows how to add a Web Chat control to a website.
 ```
 
 > `userID`, `username`, `locale`, `botAvatarInitials`, and `userAvatarInitials` are all optional parameters to pass into the `renderWebChat` method.  For more information about style, see [Why styleOptions?](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/02.branding-styling-and-customization/a.branding-web-chat#why-stylesetoptions). To learn more about Web Chat properties, look at the [Web Chat API Reference](#web-chat-api-reference) section.
-> ![Screenshot of Web Chat](https://raw.githubusercontent.com/Microsoft/BotFramework-WebChat/master/media/weatherquery.png.jpg)
+
 
 ### Integrate with JavaScript
 
@@ -174,7 +174,6 @@ One of our team's favorite things about v4 of Web Chat is the ability to add cus
 ## Web Chat API Reference
 
 There are several properties that you might pass into your Web Chat React Component (`<ReactWebChat>`) or the `renderWebChat()` method. For a short description of the available properties, see [Web Chat API Reference](https://github.com/microsoft/BotFramework-WebChat/blob/master/docs/API.md#web-chat-api-reference).
-
 Also, feel free to examine the source code starting with [`packages/component/src/Composer.js`](https://github.com/Microsoft/BotFramework-WebChat/blob/master/packages/component/src/Composer.js#L378).
 
 ## Browser compatibility
