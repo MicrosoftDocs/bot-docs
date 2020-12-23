@@ -22,10 +22,14 @@ In case you don't find the answer you're looking for, you can post your question
 ## Background and availability
 
 - [Why did Microsoft develop the Bot Framework?](bot-service-resources-faq-availability.md#why-did-microsoft-develop-the-bot-framework)
-- [What is the v4 SDK?](bot-service-resources-faq-availability.md#what-is-the-v4-sdk)
 - [How to run a bot offline?](bot-service-resources-faq-availability.md#how-to-run-a-bot-offline)
-- [Bot Framework SDK Version 3 Lifetime Support and Deprecation Notice](bot-service-resources-faq-availability.md#bot-framework-sdk-version-3-lifetime-support-and-deprecation-notice)
 - [How can I migrate Azure Bot Service from one region to another?](bot-service-resources-faq-availability.md#how-can-i-migrate-azure-bot-service-from-one-region-to-another)
+- [What is the v4 SDK?](bot-service-resources-faq-availability.md#what-is-the-v4-sdk)
+- [Bot Framework SDK Version 3 Lifetime Support and Deprecation Notice](bot-service-resources-faq-availability.md#bot-framework-sdk-version-3-lifetime-support-and-deprecation-notice)
+- [How can I upgrade my Web Chat that uses `<iframe>`, from v3 to V4?](bot-service-resources-faq-availability.md#my-current-website-integrates-web-chat-using-an-iframe-element-obtained-from-azure-bot-services-i-want-to-upgrade-to-v4)
+- [How can I upgrade my Web Chat that uses standard customization options, my own customization, or no customization, from v3 to V4?](bot-service-resources-faq-availability.md#my-website-is-integrated-with-web-chat-v3-and-uses-customization-options-provided-by-web-chat-no-customization-at-all-or-very-little-of-my-own-customization-that-was-not-available-with-web-chat)
+- [How can I upgrade my forked Web Chat v3 with a lot oc customization, from v3 to v4?](bot-service-resources-faq-availability.md#my-website-is-integrated-with-a-fork-of-web-chat-v3-i-have-implemented-a-lot-of-customization-in-my-version-of-web-chat-and-i-am-concerned-v4-is-not-compatible-with-my-needs)
+
 
 ## Bot Framework general
 
