@@ -18,15 +18,17 @@ ms.author: tysonn
 
 ## Authoring articles: tools, processes, guidance
 
-- [Tools and setup for authoring in GitHub](tools-and-setup.md)
-- [Git commands for creating a new article or updating an existing article](git-commands-for-master.md)
+- Git and Git-adjacent
+  - [Tools and setup for authoring in GitHub](tools-and-setup.md)
+  - [Git commands for creating a new article or updating an existing article](git-commands-for-master.md)
+  - [How to undo almost anything with Git (GitHub blog)](https://github.com/blog/2019-how-to-undo-almost-anything-with-git)
+  - [Pull request etiquette and best practices for Microsoft contributors](contributor-guide-pull-request-etiquette.md)
+  - [Quality criteria for pull request review](contributor-guide-pr-criteria.md)
+  - [Pull request comment automation](contributor-guide-pull-request-comments.md)
+  - [GitHub tips and tricks](github-tips-and-tricks.md)
 - [File names and locations for Bot Framework technical articles](file-names-and-locations.md)
 - [Linking guidelines](create-links-markdown.md)
 - [Retire or rename an article](retire-or-rename-an-article.md)
-- [How to undo almost anything with Git (GitHub blog)](https://github.com/blog/2019-how-to-undo-almost-anything-with-git)
-- [Pull request etiquette and best practices for Microsoft contributors](contributor-guide-pull-request-etiquette.md)
-- [Quality criteria for pull request review](contributor-guide-pr-criteria.md)
-- [Pull request comment automation](contributor-guide-pull-request-comments.md)
 
 <!-- [Git commands for staging an article on the internal preview site](./git-commands-for-sandbox.md)-->
 
