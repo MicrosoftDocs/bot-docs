@@ -298,13 +298,13 @@ This article summarizes key new features and improvements in Bot Framework and A
 that allows clients to connect directly to bots using the Direct Line API. This offers many benefits, including increased performance and more isolation. Direct Line App Service Extension is available on all Azure App Services, including those hosted within an Azure App Service Environment. An Azure App Service Environment provides isolation and is ideal for working within a VNet. A VNet lets you create your own private space in Azure and is crucial to your cloud network as it offers isolation, segmentation, and other key benefits. 
 
 ### Bot Framework SDK
-- [Adaptive Dialog (SDK v4.6 preview)](https://github.com/Microsoft/BotBuilder-Samples/tree/master/experimental/adaptive-dialog#readme) | [docs](https://github.com/Microsoft/BotBuilder-Samples/tree/master/experimental/adaptive-dialog/docs) | [C# samples](https://github.com/Microsoft/BotBuilder-Samples/tree/master/experimental/adaptive-dialog/csharp_dotnetcore): 
-Adaptive Dialog now allow developers to dynamically update conversation flow based on context and events. This is especially useful when dealing with conversation context switches and interruptions in the middle of a conversation. 
+- [Adaptive Dialog (SDK v4.6 preview)](https://github.com/Microsoft/BotBuilder-Samples/tree/master/experimental/adaptive-dialog#readme) | [docs](https://github.com/Microsoft/BotBuilder-Samples/tree/master/experimental/adaptive-dialog/docs) | [C# samples](https://github.com/Microsoft/BotBuilder-Samples/tree/master/experimental/adaptive-dialog/csharp_dotnetcore):
+Adaptive Dialog now allow developers to dynamically update conversation flow based on context and events. This is especially useful when dealing with conversation context switches and interruptions in the middle of a conversation.
   
 - [Bot Framework Python SDK (preview 2)](https://github.com/microsoft/botbuilder-python) | [samples](https://github.com/Microsoft/botbuilder-python/tree/master/samples): The Python SDK now supports OAuth, Prompts, CosmosDB, and includes all major functionality in SDK 4.5. Plus, samples to help you learn about the new features in the SDK.
 
 ### Bot Framework Testing
-- [Docs](./v4sdk/unit-test-bots.md) | Unit testing packages ([C#](https://aka.ms/nuget-botbuilder-testing)/ [JavaScript](https://aka.ms/npm-botbuilder-testing)) | [C# sample](https://aka.ms/cs-core-test-sample) | [JS sample](https://aka.ms/js-core-test-sample): Addressing customers' and developers' ask for better testing tools, the July version of the SDK introduces a new unit testing capability. The Microsoft.Bot.Builder.testing package simplifies the process of unit testing dialogs in your bot.  
+- [Docs](./v4sdk/unit-test-bots.md) | Unit testing packages ([C#](https://aka.ms/nuget-botbuilder-testing)/ [JavaScript](https://aka.ms/npm-botbuilder-testing)) | [C# sample](https://aka.ms/cs-core-test-sample) | [JS sample](https://aka.ms/js-core-test-sample): Addressing customers' and developers' ask for better testing tools, the July version of the SDK introduces a new unit testing capability. The Microsoft.Bot.Builder.testing package simplifies the process of unit testing dialogs in your bot.
 
 - [Channel Testing](https://github.com/Microsoft/BotFramework-Emulator/releases) | [docs](bot-service-debug-inspection-middleware.md):
 
