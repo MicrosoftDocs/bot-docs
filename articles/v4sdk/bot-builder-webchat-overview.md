@@ -148,10 +148,13 @@ See more about [customizing Web Chat](https://github.com/Microsoft/BotFramework-
 
 ## Migrating from Web Chat v3 to v4
 
-There are three possible paths that migration might take when migrating from v3 to v4. First, please compare your beginning scenario as described below.
+There are three possible paths that migration might take when migrating from v3 to v4. First, please compare your beginning scenario as described below:
+
+- TBD
+- TBD
+- TBD
 
 For a list of related samples, see [Web Chat hosted samples](https://aka.ms/botframework-webchat-samples).
-
 
 ## Web Chat API Reference
 
