@@ -154,8 +154,6 @@ There are three possible paths that migration might take when migrating from v3 
 - TBD
 - TBD
 
-For a list of related samples, see [Web Chat hosted samples](https://aka.ms/botframework-webchat-samples).
-
 ## Web Chat API Reference
 
 There are several properties that you might pass into your Web Chat React Component (`<ReactWebChat>`) or the `renderWebChat()` method. For a short description of the available properties, see [Web Chat API Reference](https://github.com/microsoft/BotFramework-WebChat/blob/master/docs/API.md#web-chat-api-reference).
