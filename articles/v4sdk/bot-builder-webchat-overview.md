@@ -154,8 +154,6 @@ There are three possible paths that migration might take when migrating from v3 
 - [How can I upgrade my Web Chat that uses standard, my own, or no customization options, from v3 to V4?](../bot-service-resources-faq-availability.md#my-website-is-integrated-with-web-chat-v3-and-uses-customization-options-provided-by-web-chat-no-customization-at-all-or-very-little-of-my-own-customization-that-was-not-available-with-web-chat)
 - [How can I upgrade my forked Web Chat v3 with a lot oc customization, from v3 to v4?](../bot-service-resources-faq-availability.md#my-website-is-integrated-with-a-fork-of-web-chat-v3-i-have-implemented-a-lot-of-customization-in-my-version-of-web-chat-and-i-am-concerned-v4-is-not-compatible-with-my-needs)
 
-For a list of related samples, see [Web Chat hosted samples](https://aka.ms/botframework-webchat-samples).
-
 ## Web Chat API Reference
 
 There are several properties that you might pass into your Web Chat React Component (`<ReactWebChat>`) or the `renderWebChat()` method. For a short description of the available properties, see [Web Chat API Reference](https://github.com/microsoft/BotFramework-WebChat/blob/master/docs/API.md#web-chat-api-reference).
