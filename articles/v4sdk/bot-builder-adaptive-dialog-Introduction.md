@@ -176,7 +176,7 @@ Each dialog's _recognizer_ analyzes the user's input to determine the user inten
 [11]:bot-builder-dialogs-declarative-adaptive.md
 [12]:bot-builder-mixed-dialogs.md
 [13]:bot-builder-concept-adaptive-dialog-inputs.md#interruptions
-[14]:bot-builder-concept-dialog.md#prompts
+[14]:bot-builder-concept-waterfall-dialogs.md#prompts
 [15]:https://github.com/microsoft/botbuilder-samples/tree/master/experimental/adaptive-dialog
 [16]:https://github.com/microsoft/botbuilder-samples/tree/master/samples/csharp_dotnetcore
 [17]: bot-builder-concept-dialog.md#component-dialogs

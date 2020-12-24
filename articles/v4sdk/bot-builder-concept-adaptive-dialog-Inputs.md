@@ -63,7 +63,7 @@ The adaptive dialogs library defines the following input types:
 [introduction]:bot-builder-adaptive-dialog-introduction.md
 [triggers]:bot-builder-concept-adaptive-dialog-triggers.md
 [actions]:bot-builder-concept-adaptive-dialog-actions.md
-[prompts]:bot-builder-concept-dialog.md#prompts
+[prompts]:bot-builder-concept-waterfall-dialogs.md#prompts
 [authentication]:bot-builder-concept-authentication.md
 [add-authentication]:bot-builder-authentication.md
 [managing-state]:bot-builder-concept-adaptive-dialog-memory-states.md
