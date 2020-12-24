@@ -160,7 +160,7 @@ To query your data
 
 5. This will return the percentage of waterfall dialogs that run to completion.
 
-    ![Logs (Analytics)](media/AppInsights-Query-PercentCompleteDialog.png)
+    ![App Insights Query Percent Complete](media/AppInsights-Query-PercentCompleteDialog.png)
 
 > [!TIP]
 > You can pin any query to your Application Insights dashboard   by selecting the button on the top right of the **Logs (Analytics)** blade. Just select the dashboard you want it pinned to, and it will be available next time you visit that dashboard.

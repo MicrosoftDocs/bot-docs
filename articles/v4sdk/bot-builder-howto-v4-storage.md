@@ -35,7 +35,7 @@ The Bot Framework SDK allows you to store user inputs using in-memory storage. M
 
 ## Build a basic bot
 
-The rest of this topic builds off of an Echo bot. The Echo bot sample code can be locally built by following the Quickstart instructions for building either a [C# EchoBot](../dotnet/bot-builder-dotnet-sdk-quickstart), [JS EchoBot](../javascript/bot-builder-javascript-quickstart) or [Python EchoBot](../python/bot-builder-python-quickstart).
+The rest of this topic builds off of an Echo bot. The Echo bot sample code can be locally built by following the Quickstart instructions for building either a [C# EchoBot](../dotnet/bot-builder-dotnet-sdk-quickstart.md), [JS EchoBot](../javascript/bot-builder-javascript-quickstart.md) or [Python EchoBot](../python/bot-builder-python-quickstart.md).
 
 ### [C#](#tab/csharp)
 
