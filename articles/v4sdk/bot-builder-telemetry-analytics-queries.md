@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 01/10/2020
+ms.date: 12/07/2020
 ---
 
 # Analyze your bot's telemetry data
@@ -16,19 +16,19 @@ ms.date: 01/10/2020
 
 ## Analyzing Bot behavior
 
-The following collection of queries can be used to analyze bot behavior. You can use the collection to author custom queries in [Azure Monitor Log Analytics](https://aka.ms/log-analytics-azure-monitor) and to create monitoring and [PowerBI](https://aka.ms/power-bi-overview) visualization dashboards.
+The following collection of queries can be used to analyze bot behavior. You can use the collection to author custom queries in [Azure Monitor Log Analytics](/azure/azure-monitor/log-query/log-analytics-tutorial) and to create monitoring and [PowerBI](/power-bi/fundamentals/power-bi-overview) visualization dashboards.
 
 ## Prerequisites
+
 It is helpful to have a basic understanding of the following concepts:
 
-* [Kusto queries](https://aka.ms/Kusto-query-overview)
-
-* How to use [Log Analytics](https://aka.ms/azure-monitor-log-queries-get-started) in the Azure portal to write Azure Monitor log queries
-
-* The basic concepts of [Log queries](https://aka.ms/azure-monitor-log-queries-get-started) in Azure Monitor
+* [Kusto queries](/azure/data-explorer/kusto/query/)
+* How to use [Log Analytics](/azure/azure-monitor/log-query/get-started-queries) in the Azure portal to write Azure Monitor log queries
+* The basic concepts of [Log queries](/azure/azure-monitor/log-query/get-started-queries) in Azure Monitor
 
 ## Dashboards
-Azure Dashboards offer a great way to view and share the information generated from your queries.  You can build custom dashboards to help monitor your bots activity by associating your queries with the tiles that you add to your dashboard. For more information on dashboards and how to associate your queries with them, see [Create and share dashboards of Log Analytics data](https://aka.ms/log-analytics-create-share-dashboards). The remainder of this article shows examples of some of the queries that you may find useful in monitoring your bots behavior.  
+
+Azure Dashboards offer a great way to view and share the information generated from your queries.  You can build custom dashboards to help monitor your bots activity by associating your queries with the tiles that you add to your dashboard. For more information on dashboards and how to associate your queries with them, see [Create and share dashboards of Log Analytics data](/azure/azure-monitor/learn/tutorial-logs-dashboards). The remainder of this article shows examples of some of the queries that you may find useful in monitoring your bots behavior.  
 
 ## Example Kusto queries
 
@@ -36,6 +36,7 @@ Azure Dashboards offer a great way to view and share the information generated f
 > It is recommended to pivot on different dimensions such as period, channel, and locale for all queries in this article.
 
 ### Number of users per period
+
 This example results in a line chart that shows how many distinct users communicated with your bot per day for the past 14 days.  The time period can be easily changed by assigning different values to the `queryStartDate`, `queryEndDate` and `interval` variables.
 
 > [!IMPORTANT]
@@ -46,7 +47,7 @@ This example results in a line chart that shows how many distinct users communic
 let queryStartDate = ago(14d);
 let queryEndDate = now();
 let groupByInterval = 1d;
-customEvents 
+customEvents
 | where timestamp > queryStartDate
 | where timestamp < queryEndDate
 | summarize uc=dcount(user_Id) by bin(timestamp, groupByInterval)
@@ -54,13 +55,13 @@ customEvents
 ```
 
 > [!TIP]
-> The Kusto [summarize operator](https://aka.ms/kusto-summarize-operator) is used to produce a table that aggregates the content of the input table.
+> The Kusto [summarize operator](/azure/data-explorer/kusto/query/summarizeoperator) is used to produce a table that aggregates the content of the input table.
 >
-> The [Bin](https://docs.microsoft.com/azure/kusto/query/binfunction) function is a Kusto scalar function that when used in conjunction with the `summarize operator` will group the query results into the specified value. In the above example, this is grouped by day, Kusto also will accept h=hours, m=minutes, s=seconds, ms=milliseconds, microsecond=microseconds.
+> The [Bin](/azure/kusto/query/binfunction) function is a Kusto scalar function that when used in conjunction with the `summarize operator` will group the query results into the specified value. In the above example, this is grouped by day, Kusto also will accept h=hours, m=minutes, s=seconds, ms=milliseconds, microsecond=microseconds.
 >
-> The [render operator](https://aka.ms/kusto-query-render-operator?pivots=Kusto) enables you to easily render charts, such as the _timechart_,  a line chart where the x-axis is a datetime and any other numeric column can be used for the y-axis. It automatically keeps the x-axis spaced nicely even if your data doesn't have every time specified.  If no render statement is used, it defaults to `table`.
+> The [render operator](/azure/data-explorer/kusto/query/renderoperator) enables you to easily render charts, such as the _timechart_,  a line chart where the x-axis is a datetime and any other numeric column can be used for the y-axis. It automatically keeps the x-axis spaced nicely even if your data doesn't have every time specified.  If no render statement is used, it defaults to `table`.
 
-#### Sample query results
+#### Sample number-of-users-per-period query results
 
 <!-- 
 
@@ -86,51 +87,51 @@ OPEN ISSUE 2:
 
     < I agree with you.  One approach might be to include both in the same section, with the ‘Activity per period’ as the primary with a note about what might be considered more of a 'special case’ (I will need input on more details of where this is most applicable – as I've commented in a previous email). >
 
-
 QUESTION: What changes are required?
 
 -->
 
 ### Activity per period
-This example illustrates how to measure the volume of activity per desired dimension, whether that be a count of the number of conversations, dialogs, or messages per day for the past 14 days. The time period can be easily changed by assigning different values to the `querystartdate`, `queryEndDate` and `interval` variables. The desired dimension is defined by the `extend` clause in the following example, `metric` can be set to either _InstanceId_, _DialogId_ or _ActivityId_.
+
+This example illustrates how to measure the volume of activity per desired dimension, whether that be a count of the number of conversations, dialogs, or messages per day for the past 14 days. The time period can be easily changed by assigning different values to the `querystartdate`, `queryEndDate` and `interval` variables. The desired dimension is defined by the `extend` clause in the following example, `metric` can be set to either _InstanceId_, _DialogId_ or _activityId_.
 
 Assign *metric* to the dimension that you want to display:
-  * *InstanceId* measures the number of [Conversations](https://aka.ms/bot-builder-conversations)
-  * *DialogId* measures the number of [Dialogs](https://aka.ms/bot-builder-concept-dialog)
-  * *ActivityId* measures the number of [Messages](https://aka.ms/bot-rest-create-messages)
+
+* *InstanceId* measures the number of [Conversations](../bot-service-design-conversation-flow.md)
+* *DialogId* measures the number of [Dialogs](bot-builder-concept-dialog.md)
+* *ActivityId* measures the number of [Messages](../rest-api/bot-framework-rest-connector-create-messages.md)
 
 ```Kusto
-// measures the number of activity's (conversations, dialogs, messages) per period 
+// Measures the number of activity's (conversations, dialogs, messages) per period.
 let queryStartDate = ago(14d);
 let queryEndDate = now();
 let groupByInterval = 1d;
-customEvents 
+customEvents
 | where timestamp > queryStartDate
 | where timestamp < queryEndDate
-| extend InstanceId = tostring(customDimensions['<InstanceId>'])
-| extend DialogId = tostring(customDimensions['<DialogId>'])
-| extend ActivityId = tostring(customDimensions['<activityId>'])
+| extend InstanceId = tostring(customDimensions['InstanceId'])
+| extend DialogId = tostring(customDimensions['DialogId'])
+| extend ActivityId = tostring(customDimensions['activityId'])
 | where DialogId != '' and  InstanceId != '' and user_Id != ''
 | extend metric = InstanceId // DialogId or ActivityId
 | summarize Count=dcount(metric) by  bin(timestamp, groupByInterval)
-| order by Count desc nulls last 
+| order by Count desc nulls last
 | render timechart
 ```
 
 > [!TIP]
-> The Kusto [extend operator](https://aka.ms/kusto-extend-operator) is used to create calculated columns and append them to the result set.
+> The Kusto [extend operator](/azure/data-explorer/kusto/query/extendoperator) is used to create calculated columns and append them to the result set.
 
-
-#### Sample query results
+#### Sample activity-per-period query results
 
 ![Activity per period](./media/convscount.PNG)
 
-
 ### Activity per user per period
-This example demonstrates how to count the number of activities per user per period. This demonstrates drilling down in the _activity per period_ query to focus on the activity per user per period. The activities include dialogs, conversations or messages.  This helps to measure user interaction with your bot and can help in determining potential problems, for example: 
 
-- Days with lots of activity by a single user may mean attack or test
-- Days with little interaction may indicate service health issues
+This example demonstrates how to count the number of activities per user per period. This demonstrates drilling down in the _activity per period_ query to focus on the activity per user per period. The activities include dialogs, conversations or messages.  This helps to measure user interaction with your bot and can help in determining potential problems, for example:
+
+* Days with lots of activity by a single user may mean attack or test
+* Days with little interaction may indicate service health issues
 
 > [!TIP]
 > You can remove _by user_Id_ to get the general bot activity volume which can be pivoted on time and dialogs, messages, or conversations.
@@ -140,7 +141,7 @@ This example demonstrates how to count the number of activities per user per per
 let queryStartDate = ago(14d);
 let queryEndDate = now();
 let interval = 6h;
-customEvents 
+customEvents
 | where timestamp > queryStartDate
 | where timestamp < queryEndDate
 | extend InstanceId = tostring(customDimensions['InstanceId'])
@@ -149,10 +150,10 @@ customEvents
 | where DialogId != '' and InstanceId != '' and user_Id != ''
 | extend metric = ActivityId // InstanceId // DialogId // or InstanceId for conversation count
 | summarize Count=dcount(metric) by user_Id, bin(timestamp, groupByInterval)
-| order by Count desc nulls last 
+| order by Count desc nulls last
 ```
 
-#### Sample query results 
+#### Sample activity-per-user-per-period query results
 
 | **user_Id**   | **timestamp**        | **Count** |
 | ------------- | -------------------- | :------:  |
@@ -161,12 +162,12 @@ customEvents
 | User-75f2cc8d | 2019-09-03T00:00:00Z |    13     |
 | User-3060aada | 2019-09-03T00:00:00Z |    10     |
 
-
 ### Dialog completion
+
 Once you set the telemetry client for a dialog, the dialog (and its children) will emit some default telemetry data, such as _started_ and _completed_. This example can be used to measure the *completed* dialogs relative to *started* dialogs.  If the number of dialogs started is greater than the number completed, some of your users are not completing the dialog flow. This can be used as a starting point in identifying and troubleshooting any potential dialog logic.  It can also be used to identify the more popular and less frequented dialogs.
 
 ```Kusto
-// % Completed Waterfall Dialog: shows completes relative to starts 
+// % Completed Waterfall Dialog: shows completes relative to starts
 let queryStartDate = ago(14d);
 let queryEndDate = now();
 customEvents
@@ -176,29 +177,29 @@ customEvents
 | extend DialogId = customDimensions['DialogId']
 | extend InstanceId = tostring(customDimensions['InstanceId'])
 | join kind=leftouter (
-    customEvents 
-    | where name=="WaterfallComplete" 
+    customEvents
+    | where name=="WaterfallComplete"
     | extend InstanceId = tostring(customDimensions['InstanceId'])
-  ) on InstanceId    
+  ) on InstanceId
 | summarize started=countif(name=='WaterfallStart'), completed=countif(name1=='WaterfallComplete') by tostring(DialogId)
 | where started > 100  // filter for sample
 // Show starts vs. completes
 | project tostring(DialogId), started, completed
-| order by started desc, completed asc  nulls last 
-| render barchart  with (kind=unstacked, xcolumn=DialogId, ycolumns=completed, started, ysplit=axes) 
+| order by started desc, completed asc  nulls last
+| render barchart  with (kind=unstacked, xcolumn=DialogId, ycolumns=completed, started, ysplit=axes)
 ```
 
 > [!TIP]
-> The Kusto [join operator](https://aka.ms/kusto-join-operator) is used to merge the rows of two tables to form a new table by matching values of the specified column(s) from each table.
+> The Kusto [join operator](/azure/data-explorer/kusto/query/joinoperator) is used to merge the rows of two tables to form a new table by matching values of the specified column(s) from each table.
 >
-> The [project operator](https://aka.ms/kusto-project-operator) is used to select the fields that you want to show up in your output. Similar to the `extend operator` that adds a new field, the `project operator` can either choose from the existing set of fields or add a new field.
+> The [project operator](/azure/data-explorer/kusto/query/projectoperator) is used to select the fields that you want to show up in your output. Similar to the `extend operator` that adds a new field, the `project operator` can either choose from the existing set of fields or add a new field.
 
-#### Sample query results
+#### Sample dialog-completion query results
 
 ![Dialog completion](./media/dialogwfratio.PNG)
 
-
 ### Dialog incompletion
+
 This example can be used to count the number of dialog flows that started but never completed due to cancellation or abandonment during the specified time period. You can use it to review incomplete dialogs and examine whether they were actively cancelled due to user confusion or simply abandoned due to user distraction or loss of interest.
 
 <!--  
@@ -219,15 +220,15 @@ ALSO: I removed what was line 6 in the example because it was a duplicate where 
 // show incomplete dialogs
 let queryStartDate = ago(14d);
 let queryEndDate = now();
-customEvents 
-| where timestamp > queryStartDate 
+customEvents
+| where timestamp > queryStartDate
 | where timestamp < queryEndDate
-| where name == "WaterfallStart" 
+| where name == "WaterfallStart"
 | extend DialogId = customDimensions['DialogId']
 | extend instanceId = tostring(customDimensions['InstanceId'])
 | join kind=leftanti (
   customEvents
-  | where name == "WaterfallComplete" 
+  | where name == "WaterfallComplete"
   | extend instanceId = tostring(customDimensions['InstanceId'])
   ) on instanceId
 | summarize cnt=count() by  tostring(DialogId)
@@ -236,18 +237,19 @@ customEvents
 ```
 
 > [!TIP]
-> The Kusto [order operator](https://aka.ms/kusto-query-order-operator) (Same as the `sort operator`) is used to sort the rows of the input table into order by one or more columns.  Note: If you want to exclude null values from the results of any query, you can filter them out in your where statement, for example you could add "and isnotnull(Timestamp)", or to return null values at the beginning or end, add the `nulls first` or `nulls first` to the end of the order statement.
+> The Kusto [order operator](/azure/data-explorer/kusto/query/orderoperator) (Same as the `sort operator`) is used to sort the rows of the input table into order by one or more columns.  Note: If you want to exclude null values from the results of any query, you can filter them out in your where statement, for example you could add "and isnotnull(Timestamp)", or to return null values at the beginning or end, add the `nulls first` or `nulls first` to the end of the order statement.
 
-#### Sample query results
+#### Sample dialog-incompletion query results
 
 ![Sample query results for the summarize operation](./media/cancelleddialogs.PNG)
 
 ### Dialog Sequence Drill Down
 
 #### Waterfall start/step/complete for dialog in conversation
-This example shows the sequence of dialog steps, grouped by conversation (instanceId). This can be useful in determining which steps lead to dialog interruption. 
 
-The run this query, enter the value of the desired `DialogId` in place of \<SampleDialogId> 
+This example shows the sequence of dialog steps, grouped by conversation (instanceId). This can be useful in determining which steps lead to dialog interruption.
+
+The run this query, enter the value of the desired `DialogId` in place of \<SampleDialogId>
 
 ```Kusto
 // Drill down: Show waterfall start/step/complete for specific dialog
@@ -261,7 +263,7 @@ customEvents
 | extend StepName = customDimensions['StepName']
 | extend InstanceId = customDimensions['InstanceId']
 | where DialogId == dlgid
-| project timestamp, name, StepName, InstanceId 
+| project timestamp, name, StepName, InstanceId
 | order by tostring(InstanceId), timestamp asc
 };
 // For example see SampleDialogId behavior
@@ -269,7 +271,7 @@ DialogActivity("<SampleDialogId>")
 ```
 
 > [!TIP]
-> This query was written using a [query-defined function](https://aka.ms/kusto-user-functions), which is a user-defined function that is defined and used within the scope of a single query, and is defined through a let statement. This query written without the use of the `query-defined function`:
+> This query was written using a [query-defined function](/azure/data-explorer/kusto/query/functions/user-defined-functions), which is a user-defined function that is defined and used within the scope of a single query, and is defined through a let statement. This query written without the use of the `query-defined function`:
 >
 > ```Kusto
 > let queryStartDate = ago(14d);
@@ -281,7 +283,7 @@ DialogActivity("<SampleDialogId>")
 > | extend StepName = customDimensions['StepName']
 > | extend InstanceId = customDimensions['InstanceId']
 > | where DialogId == "<SampleDialogId>"
-> | project timestamp, name, StepName, InstanceId 
+> | project timestamp, name, StepName, InstanceId
 > | order by tostring(InstanceId), timestamp asc
 > ```
 
@@ -294,23 +296,24 @@ DialogActivity("<SampleDialogId>")
 | 2019-08-23T20:04... | WaterfallStep              | ProcessPointOfInterestSelection | ...79c0f03d8701 |
 | 2019-08-23T20:04... | WaterfallStep              | GetRoutesToDestination          | ...79c0f03d8701 |
 | 2019-08-23T20:05... | WaterfallStep              | ResponseToStartRoutePrompt      | ...79c0f03d8701 |
-| 2019-08-23T20:05... | WaterfallComplete _<sup>1_ | null                            | ...79c0f03d8701 |
+| 2019-08-23T20:05... | WaterfallComplete _<sup>1</sup>_ | null                      | ...79c0f03d8701 |
 | 2019-08-28T23:35... | WaterfallStart             | null                            | ...6ac8b3211b99 |
-| 2019-08-28T23:35... | WaterfallStep _<sup>2_     | GetPointOfInterestLocations     | ...6ac8b3211b99 |
+| 2019-08-28T23:35... | WaterfallStep _<sup>2</sup>_ | GetPointOfInterestLocations   | ...6ac8b3211b99 |
 | 2019-08-28T19:41... | WaterfallStart             | null                            | ...8137d76a5cbb |
-| 2019-08-28T19:41... | WaterfallStep _<sup>2_     | GetPointOfInterestLocations     | ...8137d76a5cbb |
+| 2019-08-28T19:41... | WaterfallStep _<sup>2</sup>_ | GetPointOfInterestLocations   | ...8137d76a5cbb |
 | 2019-08-28T19:41... | WaterfallStart             | null                            | ...8137d76a5cbb |
 
-<sub>1</sup> _Completed_ 
+<sub>1 _Completed_</sub>
 
-<sub>2</sup> _Abandoned_
+<sub>2 _Abandoned_</sub>
 
-_Interpretation: Users seem to abandon the conversation at the GetPointOfInterestLocations step._ 
+_Interpretation: Users seem to abandon the conversation at the GetPointOfInterestLocations step._
 
-> [!NOTE] 
+> [!NOTE]
 > Waterfall dialogs execute a sequence (start, multiple steps, complete). If a sequence shows start with no complete, it means the dialog was interrupted either due to user abandoning or canceling the dialog. In this detailed analysis, one can see this behavior (see completed vs. abandoned steps).
 
 #### Waterfall start/step/complete/cancel steps aggregate totals
+
 This example shows the aggregate totals of the total number of times that a dialog sequence was started, the combined total number of waterfall steps, how many were successfully completed, how many were canceled and the difference between _WaterfallStart_ and the combined total of _WaterfallComplete_ plus _WaterfallCancel_ will give you the total number abandoned.
 
 ```Kusto
@@ -330,7 +333,7 @@ customEvents
 DialogSteps("<SampleDialogId>")
 ```
 
-##### Sample query results
+##### Sample waterfall-aggregate query results
 
 | **name**          | **count** |
 | ----------------- | --------: |
@@ -339,45 +342,44 @@ DialogSteps("<SampleDialogId>")
 | WaterfallComplete | 11        |
 | WaterfallCancel   | 1         |
 
-_Interpretation: Of 21 invocations of dialog sequence, only 11 has completed, 9 were abandoned, and one was cancelled by the user_
-
-
+_Interpretation: Of 21 invocations of dialog sequence, only 11 has completed, 9 were abandoned, and one was cancelled by the user._
 
 ### Average duration in dialog
+
 This example measures the average amount of time users spend in a given dialog. A long time spend in a dialog may suggest opportunities to simplify.
 
  ```Kusto
 // Average dialog duration
 let queryStartDate = ago(14d);
 let queryEndDate = now();
-customEvents 
+customEvents
 | where timestamp > queryStartDate
 | where timestamp < queryEndDate
 | where name=="WaterfallStart"
 | extend DialogId = customDimensions['DialogId']
 | extend instanceId = tostring(customDimensions['InstanceId'])
-| join kind=leftouter (customEvents | where name=="WaterfallCancel" | extend instanceId = tostring(customDimensions['InstanceId'])) on instanceId 
-| join kind=leftouter (customEvents | where name=="WaterfallComplete" | extend instanceId = tostring(customDimensions['InstanceId'])) on instanceId 
-| extend duration = case(not(isnull(timestamp1)), timestamp1 - timestamp, 
+| join kind=leftouter (customEvents | where name=="WaterfallCancel" | extend instanceId = tostring(customDimensions['InstanceId'])) on instanceId
+| join kind=leftouter (customEvents | where name=="WaterfallComplete" | extend instanceId = tostring(customDimensions['InstanceId'])) on instanceId
+| extend duration = case(not(isnull(timestamp1)), timestamp1 - timestamp,
 not(isnull(timestamp2)), timestamp2 - timestamp, 0s) // Abandoned are not counted. Alternate: now()-timestamp)
 | extend seconds = round(duration / 1s)
 | summarize AvgSeconds=avg(seconds) by tostring(DialogId)
-| order by AvgSeconds desc nulls last 
+| order by AvgSeconds desc nulls last
 | render barchart with (title="Duration in Dialog")
  ```
 
-#### Sample query results
+#### Sample average-duration query results
 
 ![Sample query results for dialog duration](./media/dialogduration.PNG)
 
-
 ### Average steps in dialog
+
 This example shows each executed dialogs "length" as calculated by average, min, max and standard deviation. This can help analyze dialog quality. For example:
 
-- Dialogs with a lot of steps should be evaluated for simplification opportunities
-- Dialogs with a wide gap between min/max/average could mean that users get stalled trying to complete the tasks. You may need to evaluate the possibility of there being shorter paths to complete the tasks, or ways to reduce the dialog complexity.
-- Dialogs with a large standard-deviation suggest complex paths or broken experience (abandon/cancel)
-- Dialogs with very few steps may be so because they were never completed. Analyzing the completion/abandonment rates may help to make that determination.  
+* Dialogs with a lot of steps should be evaluated for simplification opportunities
+* Dialogs with a wide gap between min/max/average could mean that users get stalled trying to complete the tasks. You may need to evaluate the possibility of there being shorter paths to complete the tasks, or ways to reduce the dialog complexity.
+* Dialogs with a large standard-deviation suggest complex paths or broken experience (abandon/cancel)
+* Dialogs with very few steps may be so because they were never completed. Analyzing the completion/abandonment rates may help to make that determination.  
 
 ```Kusto
 // min/max/std/avg steps per dialog
@@ -389,19 +391,19 @@ customEvents
 | extend DialogId = tostring(customDimensions['DialogId'])
 | extend StepName = tostring(customDimensions['StepName'])
 | extend InstanceId = tostring(customDimensions['InstanceId'])
-| where name == "WaterfallStart" or  name == "WaterfallStep" or  name == "WaterfallComplete" 
+| where name == "WaterfallStart" or  name == "WaterfallStep" or  name == "WaterfallComplete"
 | order by InstanceId, timestamp asc
-| project timestamp, DialogId, name, InstanceId, StepName 
+| project timestamp, DialogId, name, InstanceId, StepName
 | summarize cnt=count() by InstanceId, DialogId
 | summarize avg=avg(cnt), minsteps=min(cnt),maxsteps=max(cnt), std=stdev(cnt) by DialogId
 | extend avgsteps = round(avg, 1)
 | extend avgshortbysteps=maxsteps-avgsteps
 | extend avgshortbypercent=round((1.0 - avgsteps/maxsteps)*100.0, 1)
 | project DialogId, avgsteps, minsteps, maxsteps, std, avgshortbysteps, avgshortbypercent
-| order by std desc nulls last 
+| order by std desc nulls last
 ```
 
-#### Sample query results
+#### Sample average-steps query results
 
 | Dialog Id               | avg steps | min steps | max steps | std  | avg short by steps | avg short by percent |
 | ----------------------- | --------: | :-------: | :-------: | ---: | :----------------: | -------------------: |
@@ -413,18 +415,16 @@ customEvents
 
 __Interpretation: For example, FindArticlesDialog has a wide spread between min/max and should be investigated and possibly redesigned & optimized.
 
-
-
 ### Channel activity by activity metric
-This example measures the amount of activity your bot receives per channel in the given period. It does this by counting any one of the following metrics: incoming messages, users, conversations or dialogs. This can be useful for service health analysis or to measure a channels popularity.
 
+This example measures the amount of activity your bot receives per channel in the given period. It does this by counting any one of the following metrics: incoming messages, users, conversations or dialogs. This can be useful for service health analysis or to measure a channels popularity.
 
 ```Kusto
 // number of metric: messages, users, conversations, dialogs by channel
 let queryStartDate = ago(14d);
 let queryEndDate = now();
 let groupByInterval = 1d;
-customEvents 
+customEvents
 | where timestamp > queryStartDate
 | where timestamp < queryEndDate
 | extend InstanceId = tostring(customDimensions['InstanceId'])
@@ -434,17 +434,17 @@ customEvents
 | where DialogId != '' and  InstanceId != '' and user_Id != ''
 | extend metric = user_Id // InstanceId or ActivityId or user_Id
 | summarize Count=count(metric) by  ChannelId, bin(timestamp, groupByInterval)
-| order by Count desc nulls last 
+| order by Count desc nulls last
 | render barchart with (title="Users", kind=stacked) // or Incoming Messages or Conversations or Users
 ```
 
 > [!TIP]
 > You may want to consider trying these variations:
-> - Run the query without the timestamp bucketing: `bin(timestamp, groupByInterval)`
-> - You can also use `dcount` for distinct users vs `count` for all user event activities.  This also works for repeat users.
-> 
+>
+> * Run the query without the timestamp bucketing: `bin(timestamp, groupByInterval)`.
+> * You can also use `dcount` for distinct users vs `count` for all user event activities.  This also works for repeat users.
 
-#### Sample query results
+#### Sample channel-activity-by-activity query results
 
 ![Sample query results for channel usage](./media/ChannelsUsage.PNG)
 
@@ -457,8 +457,10 @@ Open Issue: More interesting than the "certainty" score would be linking intent 
 QUESTION: What changes are required?
 
 -->
-### Total Intents by Popularity
-This example applies to LUIS enabled bots. It shows a summary of all [intents](https://aka.ms/botbuilder-luis-concept#recognize-intent) by popularity, and corresponding intent detection certainty score.
+
+### Total Intents by popularity
+
+This example applies to LUIS enabled bots. It shows a summary of all [intents](bot-builder-concept-luis.md#recognize-intent) by popularity, and corresponding intent detection certainty score.
 
 * In practice, the view should separated for each metric.
 * Popular intent paths should be optimized for user experience.
@@ -471,27 +473,26 @@ let queryEndDate = now();
 customEvents
 | where timestamp > queryStartDate
 | where timestamp < queryEndDate
-| where name startswith "LuisResult" 
+| where name startswith "LuisResult"
 | extend intentName = tostring(customDimensions['intent'])
 | extend intentScore = todouble(customDimensions['intentScore'])
 | summarize ic=count(), ac=avg(intentScore)*100 by intentName
 | project intentName, ic, ac
-| order by ic desc nulls last 
+| order by ic desc nulls last
 | render barchart with (kind=unstacked, xcolumn=intentName, ycolumns=ic,ac, title="Intents Popularity")
 ```
 
-#### Sample query results
+#### Sample intents-by-popularity query results
 
 ![Sample query results for intent popularity](./media/Telemetry/IntentPopularity.PNG)
 
 _Interpretation: For example the most popular intent, confirm is detected only with 23% confidence on average._
 
-
 > [!TIP]
-> Barcharts are one of over a dozen options available with Kusto queries.  Some other options include: anomalychart, areachart, columnchart, linechart, scatterchart. for more details see the [render operator](https://aka.ms/kusto-query-render-operator?pivots=Kusto) topic.
-
+> Barcharts are one of over a dozen options available with Kusto queries.  Some other options include: anomalychart, areachart, columnchart, linechart, scatterchart. for more details see the [render operator](/azure/data-explorer/kusto/query/renderoperator) topic.
 
 ## Schema of Bot Analytics Instrumentation
+
 The following tables show the most common fields that your bot will log telemetry data into.
 
 ### General Envelope
@@ -550,12 +551,10 @@ QnAMaker instrumentation stores its data in the following Custom Dimensions fiel
 | knowledgeBaseId | QnA KB Id                  | 2a4936f3-b2c8-44ff-b21f-67bc413b9727                         |
 | matchedQuestion | Array of matched questions | ["Can you explain to me what your  role is?","Can  you tell me a bit about yourself?","Can  you tell me about you?","could  you help me","hmmm so  what can you do?","how  can you help me","How  can you help me?","How  can you help?","so  how can i  use you in my projects?","Talk to  me about your capability","What  are you capable of?",… |
 
- 
-
 ## See Also
 
-* For a tutorial on writing log queries, see [Get started with log queries in Azure Monitor](https://aka.ms/azure-monitor-log-queries-get-started)
-* [Visualizing data from Azure Monitor](https://aka.ms/azure-monitor-visualize-data)
-* Learn how to [Add telemetry to your bot](https://aka.ms/add-bot-telemetry)
-* Learn more about [Azure Monitor log queries](https://aka.ms/azure-monitor-log-queries)
-* [Create and share dashboards of Log Analytics data](https://aka.ms/log-analytics-create-share-dashboards)
+* For a tutorial on writing log queries, see [Get started with log queries in Azure Monitor](/azure/azure-monitor/log-query/get-started-queries)
+* [Visualizing data from Azure Monitor](/azure/azure-monitor/visualizations)
+* Learn how to [Add telemetry to your bot](bot-builder-telemetry.md)
+* Learn more about [Azure Monitor log queries](/azure/data-explorer/using-diagnostic-logs)
+* [Create and share dashboards of Log Analytics data](/azure/azure-monitor/learn/tutorial-logs-dashboards)

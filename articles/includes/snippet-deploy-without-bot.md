@@ -1,4 +1,4 @@
-Before beginning the deployment, make sure you have the latest version of [Azure cli](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) and [dotnet cli](https://dotnet.microsoft.com/download). If you don't have dotnet cli, install it using the .Net Core Runtime option from the link provided above. 
+Before beginning the deployment, make sure you have the latest version of [Azure cli](/cli/azure/install-azure-cli) and [dotnet cli](https://dotnet.microsoft.com/download). If you don't have dotnet cli, install it using the .Net Core Runtime option from the link provided above.
 
 ### Login to Azure CLI and set your subscription
 You've already created and tested a bot locally, and now you want to deploy it to Azure. Open a command prompt to log in to the Azure portal.
@@ -19,7 +19,7 @@ If you are not sure which subscription to use for deploying the bot, you can vie
 Navigate to the bot folder.
 `cd <local-bot-folder>`
 
-### Create a Web App Bot in Azure 
+### Create a Web App Bot in Azure
 
 If you don't already have a resource group to which to publish your local bot, create one:
 
@@ -32,7 +32,7 @@ az group create --name <resource-group-name> --location <geographic-location> --
 | name     | A unique name for the resource group. DO NOT include spaces or underscores in the name. |
 | location | Geographic location used to create the resource group. For example, `eastus`, `westus`, `westus2`, and so on. Use `az account list-locations` for a list of locations. |
 
-Then, create the bot resource into which you will publish your bot. This will provision the necessary resources in Azure and create a bot web app, which you will overwrite with your local bot. 
+Then, create the bot resource into which you will publish your bot. This will provision the necessary resources in Azure and create a bot web app, which you will overwrite with your local bot.
 
 Before proceeding, read the instructions that apply to you based on the type of email account you use to log in to Azure.
 
@@ -40,7 +40,7 @@ Before proceeding, read the instructions that apply to you based on the type of 
 If you are using an MSA email account, you will need to create the app ID and app password on the Application Registration Portal to use with `az bot create` command.
 1. Go to the [**Application Registration Portal**](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).
 1. Click on **Add an app** to register your application, create **Application Id**, and **Generate New Password**. If you already have an application and password but don't remember the password, you will have to generate a new password in the Application secrets section.
-1. Save both application ID and the new password you just generated, so you that can use them with the `az bot create` command.  
+1. Save both application ID and the new password you just generated, so you that can use them with the `az bot create` command.
 
 ```cmd
 az bot create --kind webapp --name <bot-name-in-azure> --location <geographic-location> --version v4 --lang <language> --verbose --resource-group <resource-group-name> --appid "<application-id>" --password "<application-password>" --verbose
@@ -67,7 +67,7 @@ az bot create --kind webapp --name <bot-name-in-azure> --location <geographic-lo
 | resource-group | Name of resource group in which to create the bot. You can configure the default group using `az configure --defaults group=<name>`. |
 
 #### Update appsettings.json or .env file
-After the bot is created, you should see the following information displayed in the console window: 
+After the bot is created, you should see the following information displayed in the console window:
 
 ```JSON
 {
@@ -92,13 +92,15 @@ You'll need to copy the `appId` and `appPassword` values and paste them into the
   MicrosoftAppPassword: "34$#w%^$%23@334343"
 }
 ```
-Note that if your appsettings.json or .env file has additional keys for other services you've provisioned for your bot, don't delete those entries.
+
+> [!NOTE]
+> If your `appsettings.json` or `.env` file has additional keys for other services you've provisioned for your bot, don't delete those entries.
 
 Save the file.
 
-Next, depending on the programming langauge (**C#** or **JS**) you used to create the bot, follow the steps that apply to you.
+Next, depending on the programming language (**C#** or **JS**) you used to create the bot, follow the steps that apply to you.
 
-**C# Bot:** 
+**C# Bot:**
 
 Open a command-prompt, and navigate to the project folder. Run the following commands from the command line.
 
@@ -111,8 +113,8 @@ Open a command-prompt, and navigate to the project folder. Run the following com
 | 5. Set the script generator args | `az webapp config appsettings set --resource-group <resource-group-name> --name <bot-name> --settings SCM_SCRIPT_GENERATOR_ARGS="--aspNetCore mybot.csproj"`|
 
 **JS Bot:**
-1. Download web.config from [here](https://github.com/projectkudu/kudu/wiki/Using-a-custom-web.config-for-Node-apps) and save it into your project folder. 
-1. Edit the file and replace all occurances of "server.js" with "index.js". 
+1. Download web.config from [here](https://github.com/projectkudu/kudu/wiki/Using-a-custom-web.config-for-Node-apps) and save it into your project folder.
+1. Edit the file and replace all occurances of "server.js" with "index.js".
 1. Save the file.
 
 Open a command-prompt, and navigate to the project folder. Run the following commands from the command line.
