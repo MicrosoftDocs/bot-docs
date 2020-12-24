@@ -174,19 +174,7 @@ The source code shown here is based on the [Handling Attachments](https://aka.ms
 
 To process events within rich cards, use _card action_ objects to specify what should happen when the user clicks a button or taps a section of the card. Each card action has a _type_ and _value_.
 
-To function correctly, assign an action type to each clickable item on the card. This table lists and describes the available action types and what should be in the associated value property.
-
-| Type | Description | Value |
-| :---- | :---- | :---- |
-| openUrl | Opens a URL in the built-in browser. | The URL to open. |
-| imBack | Sends a message to the bot, and posts a visible response in the chat. | Text of the message to send. |
-| postBack | Sends a message to the bot, and may not post a visible response in the chat. | Text of the message to send. |
-| call | Initiates a phone call. | Destination for the phone call in this format: `tel:123123123123`. |
-| playAudio | Plays audio. | The URL of the audio to play. |
-| playVideo | Plays a video. | The URL of video to play. |
-| showImage | Displays an image. | The URL of the image to display. |
-| downloadFile | Downloads a file. | The URL of the file to download. |
-| signin | Initiates an OAuth signin process. | The URL of the OAuth flow to initiate. |
+[!INCLUDE [Table of card action types](../includes/snippet-card-action-types.md)]
 
 ## Hero card using various event types
 
