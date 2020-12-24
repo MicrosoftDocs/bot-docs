@@ -12,4 +12,4 @@ The `messageBack` card action has a more generalized meaning than the other card
 | playVideo    | Plays a video.                                                               | The URL of video to play.                                          |
 | postBack     | Sends a message to the bot, and may not post a visible response in the chat. | Text of the message to send.                                       |
 | showImage    | Displays an image.                                                           | The URL of the image to display.                                   |
-| signin       | Initiates an OAuth signin process.                                           | The URL of the OAuth flow to initiate.                             |
+| signin       | Initiates an OAuth sign-in process.                                           | The URL of the OAuth flow to initiate.                             |
