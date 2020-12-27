@@ -684,7 +684,7 @@ Below are examples of how to make URI references:
 ## Additional Information:
 
 - Read [.qna file format](bot-builder-qna-file-format.md) for more information about .qna files.
-- Read [Debug with Adaptive Tool](../bot-service-debug-adaptive-tool.md) to learn how to analyze .lu files.
+- Read [Debug with Adaptive Tools](../bot-service-debug-adaptive-tools.md) to learn how to analyze .lu files.
 
 [1]:https://luis.ai
 [2]:https://docs.microsoft.com/azure/cognitive-services/luis/luis-concept-intent

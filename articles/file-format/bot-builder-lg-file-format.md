@@ -438,7 +438,7 @@ Use  `foo.template1(1,2), foo.template2(['a', 'b', 'c'], ',')` to call these exp
 
 - [C# API Reference](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.languagegeneration)
 - [JavaScript API reference](https://docs.microsoft.com/javascript/api/botbuilder-lg)
-- Read [Debug with Adaptive Tool](../bot-service-debug-adaptive-tool.md) to learn how to analyze and debug .lg files.
+- Read [Debug with Adaptive Tools](../bot-service-debug-adaptive-tools.md) to learn how to analyze and debug .lg files.
 
 [1]:https://github.com/Microsoft/botbuilder-tools/blob/master/packages/Ludown/docs/lu-file-format.md
 [3]:../v4sdk/bot-builder-concept-adaptive-expressions.md
