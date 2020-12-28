@@ -63,10 +63,10 @@ We highly recommend that you start migrating your V3 bots to V4. In order to sup
 
 ### V3 Status Summary
 
-#### ABS Service
-1. The ABS service side will continue to support running V3 bots with no planned end of life and any running bots will not be disrupted.
+#### Azure Bot Service
+1. The Azure Bot Service will continue to support the running of V3 bots with no planned end of life, and any running bots will not be disrupted.
 1. Channels will remain compatible with V3 with no disruption or end of life plan.
-1. Creation of new V3 bots is disabled on the portal; however, expert users who wish to deploy their V3 bots independently, not on ABS (e.g. as webapp service) can do so.
+1. Creation of new V3 bots is disabled on the portal; however, expert users who wish to deploy their V3 bots independently through other services (such as another web app service) can do so.
 
 #### SDK and Tools
 1.    We are not investing in V3 from SDK side, and will only apply critical security fixes to the SDK branches for the foreseeable future (Exception: We plan to add a Skills connector to allow V4 bots to call legacy V3 bots).
@@ -103,7 +103,6 @@ One of our team's favorite things about v4 of Web Chat is the ability to add cus
 -  If you did not find your feature in the list of open requests, please feel free to [file your own request](https://github.com/Microsoft/BotFramework-WebChat/issues/new). Just like the item above, other customers adding comments to your open issue will help us prioritize which features are most commonly needed across Web Chat users.
 -  Finally, if you need your feature as soon as possible, we welcome [pull requests](https://github.com/Microsoft/BotFramework-WebChat/compare) to Web Chat. If you have the coding experience to implement the feature yourself, we would very much appreciate the additional support! Creating the feature yourself will mean that it is available for your use on Web Chat more quickly, and that other customers looking for the same or similar feature may utilize your contribution.
 -  Make sure to check out the rest of this `README` to learn more about v4.
-
 
 
 

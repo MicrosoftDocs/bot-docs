@@ -150,9 +150,9 @@ See more about [customizing Web Chat](https://github.com/Microsoft/BotFramework-
 
 There are three possible paths that migration might take when migrating from v3 to v4. First, please compare your beginning scenario with the one listed below.
 
-- [Upgrade my Web Chat that uses `<iframe>`](../bot-service-resources-faq-availability.md#my-current-website-integrates-web-chat-using-an-iframe-element-obtained-from-azure-bot-services-i-want-to-upgrade-to-v4)
-- [Upgrade my Web Chat that uses standard, my own, or no customization options](../bot-service-resources-faq-availability.md#my-website-is-integrated-with-web-chat-v3-and-uses-customization-options-provided-by-web-chat-no-customization-at-all-or-very-little-of-my-own-customization-that-was-not-available-with-web-chat)
-- [Upgrade my forked Web Chat v3 with a lot of customization](../bot-service-resources-faq-availability.md#my-website-is-integrated-with-a-fork-of-web-chat-v3-i-have-implemented-a-lot-of-customization-in-my-version-of-web-chat-and-i-am-concerned-v4-is-not-compatible-with-my-needs)
+- To upgrade a Web Chat control embedded in an `<iframe>`, see the documentation in the Web Chat repo for the [embed package](https://github.com/microsoft/BotFramework-WebChat/tree/master/packages/embed#readme).
+- To upgrade a Web Chat control that uses little to no customization, review the Web Chat [00.migration/a.v3-to-v4](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/00.migration/a.v3-to-v4) sample, which describes the process.
+- To upgrade a forked version of Web Chat v3 with a lot of customization, see the Web Chat [migration guidance](https://github.com/microsoft/BotFramework-WebChat/blob/master/docs/MIGRATION.md#my-website-is-integrated-with-a-fork-of-web-chat-v3-i-have-implemented-a-lot-of-customization-in-my-version-of-web-chat-and-i-am-concerned-v4-is-not-compatible-with-my-needs).
 
 ## Web Chat API Reference
 
