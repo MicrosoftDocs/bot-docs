@@ -70,7 +70,7 @@ We highly recommend that you start migrating your V3 bots to V4. In order to sup
 1. Creation of new V3 bots is disabled on the portal; however, expert users who wish to deploy their V3 bots independently through other services (such as another web app service) can do so.
 
 #### SDK and Tools
-1.    We are not investing in V3 from SDK side, and will only apply critical security fixes to the SDK branches for the foreseeable future (Exception: We plan to add a Skills connector to allow V4 bots to call legacy V3 bots).
+1.    We will not be updating the V3 SDK for the foreseeable future, except to apply critical security fixes and to add a skills connector to allow V4 bots to call legacy V3 bots.
 2.    SDKs and tools development is exclusively on V4 with no V3 work done or planned (hence we're already "there").
 3.    We do not prevent anyone from running old tools to manage their V3 bots.
 
