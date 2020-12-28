@@ -736,7 +736,7 @@ Use role-based access control in Azure Backup, Azure Key Vault, or other resourc
 
 **Guidance**: Periodically ensure that you can restore backed-up customer-managed keys.
 
-- [How to restore Key Vault keys in Azure](https://docs.microsoft.com/powershell/module/azurerm.keyvault/restore-azurekeyvaultkey?view=azurermps-6.13.0)
+- [How to restore Key Vault keys in Azure](https://docs.microsoft.com/powershell/module/azurerm.keyvault/restore-azurekeyvaultkey?view=azurermps-6.13.0&preserve-view=true)
 
 **Azure Security Center monitoring**: Not applicable
 
