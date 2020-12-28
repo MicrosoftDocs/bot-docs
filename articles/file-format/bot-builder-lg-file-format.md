@@ -79,7 +79,7 @@ Returns the following JSON object:
 
 ### Template names
 
-Template names are case-sensitive and can only contain letters, underscores, numbers. The following is an example of a template named `TemplateName`.
+Template names are case-sensitive and can only contain letters, underscores, and numbers. The following is an example of a template named `TemplateName`.
 
 ```lg
 # TemplateName
