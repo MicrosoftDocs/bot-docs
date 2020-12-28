@@ -49,7 +49,8 @@ For more information, see:
 - [Container support in Azure Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-container-support)
 
 ## What is the v4 SDK?
-Bot Framework v4 SDK builds on the feedback and learnings from the prior Bot Framework SDKs. It introduces the right levels of abstraction while enabling rich componentization of the bot building blocks. You can start with a simple bot and grow your bot in sophistication using a modular and extensible framework. You can find [FAQ](https://github.com/Microsoft/botbuilder-dotnet/wiki/FAQ) for the SDK on GitHub.
+
+Bot Framework v4 SDK builds on the feedback and learnings from the prior Bot Framework SDK versions. It introduces the right levels of abstraction while enabling rich set of components as the bot building blocks. You can start with a simple bot and grow it in sophistication using a modular and extensible framework. See also [What's new with Bot Framework](https://github.com/Microsoft/botbuilder-dotnet/wiki/FAQ) on GitHub.
 
 ## Bot Framework SDK Version 3 Lifetime Support and Deprecation Notice
 
