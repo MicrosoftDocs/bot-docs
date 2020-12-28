@@ -48,13 +48,13 @@ For these items, pull request reviewers provide feedback and instructions for th
 
 | Category | Quality review item |
 | --- | --- |
-| Content |Articles should have a “Next steps” at the end with 1-3 relevant and compelling next steps. Brief text should be included that helps the customer understand why the next steps are relevant. (New articles only). Example: <https://docs.microsoft.com/documentation/articles/xplat-cli-install/><br>![](media/contributor-guide-pr-criteria/nextstepsexample.PNG) |
+| Content |Articles should have a "Next steps" at the end with 1-3 relevant and compelling next steps. Brief text should be included that helps the customer understand why the next steps are relevant. (New articles only). Example: <https://docs.microsoft.com/documentation/articles/xplat-cli-install/><br>![](media/contributor-guide-pr-criteria/nextstepsexample.PNG) |
 | Content |Spelling, grammar, and other writing issues - pull request reviewers may provide feedback on a few minor issues as non-blocking feedback. If there are more than a few editorial issues, reviewers log an edit request for the article for a post-publication edit. |
-| Images |Images use the correct callout style and color, and screenshots use the correct border and placeholder style. [See the image guidance](create-images-markdown.md). |
+| Images |Images use the correct call-out style and color, and screenshots use the correct border and placeholder style. [See the image guidance](create-images-markdown.md). |
 | Images |Images include alt text. [See the image guidance](create-images-markdown.md). |
 | Site/design functionality |The H2 headings, when rendered in the on-page TOC, should ideally wrap to no more than 2 lines. Longer headings make the article TOC harder to scan. |
 | Style conventions |All titles and headings are sentence case, per Bot Framework style. |
-| Process |If the pull request could have easily been reconfigured to benefit from PRmerger automation, pull request reviewers provide feedback to the author about how to use branches so the changes could be merged automatically. See [the PR etiquette article](contributor-guide-pull-request-etiquette.md). |
+| Process |If the pull request could have easily been reconfigured to benefit from PR merger automation, pull request reviewers provide feedback to the author about how to use branches so the changes could be merged automatically. See [the PR etiquette article](contributor-guide-pull-request-etiquette.md). |
 | Process |When you delete or rename an article, make sure you follow the process. Pull request reviewers should add the following comment and link in a comment:<br><br>*Please verify you followed the process in the contributors' guide for deleting articles: [https://github.com/Azure/bot-framework-docs-pr/blob/master/contributor-guide/retire-or-rename-an-article.md](retire-or-rename-an-article.md)*
 
 ## Related
