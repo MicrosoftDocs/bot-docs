@@ -6,7 +6,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 06/08/2020
+ms.date: 12/28/2020
 ---
 
 # Background and availability
