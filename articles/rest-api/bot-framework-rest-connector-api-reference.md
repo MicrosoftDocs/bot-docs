@@ -107,7 +107,7 @@ The <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html" target="_bl
 | 202              | The request was accepted for processing.                      |
 | 204              | The request succeeded but no content was returned.            |
 | 400              | The request was malformed or otherwise incorrect.             |
-| 401              | The bot has not yet authenticated itself.                     |
+| 401              | The bot is not yet authenticated.                     |
 | 403              | The bot is not authorized to perform the requested operation. |
 | 404              | The requested resource was not found.                         |
 | 405              | The channel does not support the requested operation.         |
