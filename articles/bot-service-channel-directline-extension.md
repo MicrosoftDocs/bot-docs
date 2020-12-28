@@ -1,7 +1,7 @@
 ---
 title: Direct Line App Service Extension
 titleSuffix: Bot Service
-description: Become familiar with Line App Service Extension. See how to use streaming extensions to connect directly to hosted bots. View additional resources.
+description: Become familiar with Direct Line App Service Extension. See how to use streaming extensions to connect directly to hosted bots. View additional resources.
 services: bot-service
 author: mmiele
 manager: kamrani

@@ -59,7 +59,7 @@ The bot logic processes incoming activities from one or more channels and genera
 
 ### [C#](#tab/csharp)
 
-The main bot logic is defined in the bot code. To implement a bot as an activity handler, derive your bot class from `ActivityHandler`, which in implements the `IBot` interface. `ActivityHandler` defines various handlers for different types of activities, such as `OnMessageActivityAsync`, and `OnMembersAddedAsync`. These methods are protected, but can be overridden, since we're deriving from `ActivityHandler`.
+The main bot logic is defined in the bot code. To implement a bot as an activity handler, derive your bot class from `ActivityHandler`, which implements the `IBot` interface. `ActivityHandler` defines various handlers for different types of activities, such as `OnMessageActivityAsync`, and `OnMembersAddedAsync`. These methods are protected, but can be overridden, since we're deriving from `ActivityHandler`.
 
 The handlers defined in `ActivityHandler` are:
 

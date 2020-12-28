@@ -48,7 +48,7 @@ There is no base implementation for most of these Teams-specific activity handle
 
 ---
 
-All of the activity handlers described in the [activity handling](bot-activity-handler-concept.md#activity-handling) section of the _Event-driven conversations using an activity handler_ article will continue to work as they do with a non-Teams bot, with the exception of handling the members added and removed activities, these will be different in the context of a team, where the new member is added to the team as opposed to a message thread.  See the _Teams conversation update activities_ table in the [Teams-bot logic](#teams-bot-logic) section for more details.
+All of the activity handlers described in the [activity handling](bot-activity-handler-concept.md#activity-handling) section of the _Event-driven conversations using an activity handler_ article will continue to work as they do with a non-Teams bot, with the exception of handling the members added and removed activities, these will be different in the context of a team, where the new member is added to the team as opposed to a message thread. See the _Teams conversation update activities_ table in the [Teams-bot logic](#teams-bot-logic) section for more details.
 
 To implement your logic for these Teams-specific activity handlers, you will override these methods in your bot as shown in the [Teams-bot logic](#teams-bot-logic) section below.
 
