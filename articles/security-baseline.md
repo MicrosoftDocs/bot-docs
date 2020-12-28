@@ -26,7 +26,7 @@ To see how Azure Bot Service completely maps to the Azure Security Benchmark, se
 
 **Guidance**: When you deploy Azure Bot Service resources, you must create or use an existing virtual network. Ensure that all Azure virtual networks follow an enterprise segmentation principle that aligns to the business risks. Any system that could incur higher risk for the organization should be isolated within its own virtual network and sufficiently secured with either a network security group (NSG) and/or Azure Firewall.
 
-- [Use direct line app service extension within a VNET](https://docs.microsoft.com/azure/bot-service/bot-service-channel-directline-extension-vnet?view=azure-bot-service-4.0)
+- [Use direct line app service extension within a VNET](https://docs.microsoft.com/azure/bot-service/bot-service-channel-directline-extension-vnet?view=azure-bot-service-4.0&preserve-view=true)
 
 - [How to create a network security group with security rules](https://docs.microsoft.com/azure/virtual-network/tutorial-filter-network-traffic)
 
@@ -724,9 +724,9 @@ Use role-based access control in Azure Backup, Azure Key Vault, or other resourc
 
 - [Encryption of backup data using customer-managed keys](https://docs.microsoft.com/azure/backup/encryption-at-rest-with-cmk)
 
-- [How to backup Key Vault keys in Azure](https://docs.microsoft.com/powershell/module/azurerm.keyvault/backup-azurekeyvaultkey?view=azurermps-6.13.0)
+- [How to backup Key Vault keys in Azure](https://docs.microsoft.com/powershell/module/azurerm.keyvault/backup-azurekeyvaultkey?view=azurermps-6.13.0&preserve-view=true)
 
-- [Security features to help protect hybrid backups from attacks](https://docs.microsoft.com/azure/backup/backup-azure-security-feature#prevent-attacks)
+- [Security features to help protect hybrid backups from attacks](https://docs.microsoft.com/azure/backup/backup-azure-security-feature#prevent-attacks&preserve-view=true)
 
 **Azure Security Center monitoring**: Not applicable
 
