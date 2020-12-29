@@ -529,7 +529,7 @@ You can use the [Dispatch][dispatch-readme] command-line tool to test and evalua
 
 ### To update or create a new LUIS model
 
-This sample is based on a preconfigured LUIS model. Additional information to help you update this model, or create a new LUIS model, can be found [here](bot-builder-virtual-assistant-template.md#updating-your-cognitive-models).
+This sample is based on a preconfigured LUIS model. Additional information to help you update this model, or create a new LUIS model, can be found in the article [Iterative app design for LUIS](/azure/cognitive-services/luis/luis-concept-app-iteration).
 
 After updating the underlying models (QnA or LUIS) run `dispatch refresh` to update your Dispatch LUIS app. `dispatch refresh` is basically the same command as `dispatch create` except no new LUIS app ID is created.
 
