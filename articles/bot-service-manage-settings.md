@@ -65,7 +65,7 @@ The Azure Bot Service assigns a unique application ID to the application. You ca
 
 ## Additional Information
 
-You can use [az bot update](https://docs.microsoft.com/cli/azure/bot?view=azure-cli-latest#az-bot-update) to update bot settings from the command line.
+You can use [az bot update](https://docs.microsoft.com/cli/azure/bot?view=azure-cli-latest#az-bot-update&preserve-view=true) to update bot settings from the command line.
 
 ## Next steps
 
