@@ -6,7 +6,7 @@ This article starts from the [CoreBot sample app](https://aka.ms/cs-core-sample)
 
 1. Open the [CoreBot sample app](https://aka.ms/cs-core-sample) in Visual Studio.
 
-2. Add  the `Microsoft.Bot.Builder.Integration.ApplicationInsights.Core ` NuGet package. For more information on using NuGet, see [Install and manage packages in Visual Studio](/nuget/tools/package-manager-ui):
+2. Add  the `Microsoft.Bot.Builder.Integration.ApplicationInsights.Core ` NuGet package. For more information on using NuGet, see [Install and manage packages in Visual Studio](/nuget/consume-packages/install-use-packages-visual-studio):
 
 
 3. Include the following statements in `Startup.cs`:
