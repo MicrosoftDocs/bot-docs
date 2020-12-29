@@ -39,7 +39,7 @@ After you have changed settings for your bot, click the **Save** button at the t
 The registration application ID and password are assigned to the bot's variables `MicrosoftAppID` and `MicrosoftAppPassword` in the files `appsettings.json` (.NET) and `.env` (Javascript).
 
 > [!NOTE]
-> The Bot Channels Registration has an application ID, but because there is no app service associated with it, there is no password. To generate the password follow the steps in the next section. 
+> The Bot Channels Registration has an application ID, but because there is no app service associated with it, there is no password. To generate the password follow the steps in the next section.
 
 ### Get registration password
 
@@ -55,11 +55,11 @@ The Azure Bot Service assigns a unique application ID to the application. You ca
 
 1. In the *Certificates & secrets* displayed page, click the **New client secret** button.
 
-    ![bot registration settings password](media/azure-bot-quickstarts/bot-channels-registration-app-secrets.png)
+    ![bot registration app secrets](media/azure-bot-quickstarts/bot-channels-registration-app-secrets.png)
 
 1. Add the description, select the expiration time, and click the **Add** button.
 
-    ![bot registration settings password](media/azure-bot-quickstarts/bot-channels-registration-app-secrets-create.png)
+    ![bot registration create password](media/azure-bot-quickstarts/bot-channels-registration-app-secrets-create.png)
 
     This will generate a new password for your bot. Copy this password and save it to a file. This is the only time you will see this password. If you do not have the full password saved, you will need to repeat the process to create a new password should you need it later.
 
