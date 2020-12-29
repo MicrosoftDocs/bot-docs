@@ -2,11 +2,11 @@
 This article starts from the [CoreBot sample app](https://aka.ms/cs-core-sample) and adds the code required to integrate telemetry into any bot. This will enable Application Insights to begin tracking requests.
 
 > [!IMPORTANT]
-> If you have not setup your [Application Insights](/azure/azure-monitor/app/app-insights-overview/) account and created your [Application Insights key](../bot-service-resources-app-insights-keys.md), do that before proceeding.
+> If you have not setup your [Application Insights](/azure/azure-monitor/app/app-insights-overview) account and created your [Application Insights key](../bot-service-resources-app-insights-keys.md), do that before proceeding.
 
 1. Open the [CoreBot sample app](https://aka.ms/cs-core-sample) in Visual Studio.
 
-2. Add  the `Microsoft.Bot.Builder.Integration.ApplicationInsights.Core ` NuGet package. For more information on using NuGet, see [Install and manage packages in Visual Studio](/nuget/tools/package-manager-ui):
+2. Add  the `Microsoft.Bot.Builder.Integration.ApplicationInsights.Core ` NuGet package. For more information on using NuGet, see [Install and manage packages in Visual Studio](/nuget/consume-packages/install-use-packages-visual-studio):
 
 
 3. Include the following statements in `Startup.cs`:

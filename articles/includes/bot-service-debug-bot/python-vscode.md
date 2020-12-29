@@ -16,4 +16,4 @@ In Visual Studio Code, you can set breakpoints and run the bot in debug mode to 
 
    ![Debug Python in VS Code](~/media/bot-service-debug-bot/bot-debug-python-breakpoint-caught.png)
 
-For more information, see [Debug your Python code](/visualstudio/python/debugging-python-in-visual-studio?view=vs-2019).
+For more information, see [Debug your Python code](/visualstudio/python/debugging-python-in-visual-studio).
