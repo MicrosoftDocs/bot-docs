@@ -26,11 +26,9 @@ To see how Azure Bot Service completely maps to the Azure Security Benchmark, se
 
 **Guidance**: When you deploy Azure Bot Service resources, you must create or use an existing virtual network. Ensure that all Azure virtual networks follow an enterprise segmentation principle that aligns to the business risks. Any system that could incur higher risk for the organization should be isolated within its own virtual network and sufficiently secured with either a network security group (NSG) and/or Azure Firewall.
 
-- [Use direct line app service extension within a VNET](https://docs.microsoft.com/azure/bot-service/bot-service-channel-directline-extension-vnet?view=azure-bot-service-4.0)
+- [Use direct line app service extension within a VNET](bot-service-channel-directline-extension-vnet.md)
 
 - [How to create a network security group with security rules](https://docs.microsoft.com/azure/virtual-network/tutorial-filter-network-traffic)
-
- 
 
 - [How to deploy and configure Azure Firewall](https://docs.microsoft.com/azure/firewall/tutorial-firewall-deploy-portal)
 
@@ -44,9 +42,9 @@ To see how Azure Bot Service completely maps to the Azure Security Benchmark, se
 
 To connect two or more virtual networks in Azure together, use virtual network peering. Network traffic between peered virtual networks is private and is kept on the Azure backbone network.
 
-- [What are the ExpressRoute connectivity models](https://docs.microsoft.com/azure/expressroute/expressroute-connectivity-models) 
+- [What are the ExpressRoute connectivity models](https://docs.microsoft.com/azure/expressroute/expressroute-connectivity-models)
 
-- [Azure VPN overview](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways) 
+- [Azure VPN overview](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways)
 
 - [Virtual network peering](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)
 
@@ -60,11 +58,11 @@ To connect two or more virtual networks in Azure together, use virtual network p
 
 Use Web Application Firewall (WAF) capabilities in Azure Application gateway, Azure Front Door, and Azure Content Delivery Network (CDN) to protect your applications running on Azure Bot Service against application layer attacks.
 
-- [Azure Firewall Documentation](https://docs.microsoft.com/azure/firewall/) 
+- [Azure Firewall Documentation](https://docs.microsoft.com/azure/firewall/)
 
-- [Manage Azure DDoS Protection Standard using the Azure portal](https://docs.microsoft.com/azure/virtual-network/manage-ddos-protection) 
+- [Manage Azure DDoS Protection Standard using the Azure portal](https://docs.microsoft.com/azure/virtual-network/manage-ddos-protection)
 
-- [Azure Security Center recommendations](https://docs.microsoft.com/azure/security-center/recommendations-reference#recs-network) 
+- [Azure Security Center recommendations](https://docs.microsoft.com/azure/security-center/recommendations-reference#recs-network)
 
 - [How to deploy Azure WAF](https://docs.microsoft.com/azure/web-application-firewall/overview)
 
@@ -78,9 +76,9 @@ Use Web Application Firewall (WAF) capabilities in Azure Application gateway, Az
 
 Note: If you have a regulatory or other requirement for IDS/IPS use, ensure that it is always tuned to provide high-quality alerts to your SIEM solution.
 
-- [How to deploy Azure Firewall](https://docs.microsoft.com/azure/firewall/tutorial-firewall-deploy-portal) 
+- [How to deploy Azure Firewall](https://docs.microsoft.com/azure/firewall/tutorial-firewall-deploy-portal)
 
-- [Azure Marketplace includes third party IDS capabilities](https://azuremarketplace.microsoft.com/marketplace?search=IDS) 
+- [Azure Marketplace includes third party IDS capabilities](https://azuremarketplace.microsoft.com/marketplace?search=IDS)
 
 - [Microsoft Defender ATP EDR capability](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overviewendpoint-detection-response)
 
@@ -117,7 +115,7 @@ Note: Azure AD supports external identity providers, which allow users without a
 
 - [How to create and configure an Azure AD instance](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-access-create-new-tenant)
 
-- [Define Azure AD tenants](https://azure.microsoft.com/resources/securing-azure-environments-with-azure-active-directory/)  
+- [Define Azure AD tenants](https://azure.microsoft.com/resources/securing-azure-environments-with-azure-active-directory/)
 
 - [Use external identity providers for an application](https://docs.microsoft.com/azure/active-directory/b2b/identity-providers)
 
@@ -131,7 +129,7 @@ Note: Azure AD supports external identity providers, which allow users without a
 
 **Guidance**: Azure AD provides identity and access management to Azure resources, cloud applications, and on-premises applications. Identity and access management applies to enterprise identities such as employees, as well as external identities such as partners, vendors, and suppliers.
 
-Use Azure AD single sign-on (SSO) to manage and secure access to your organization’s data and resources on-premises and in the cloud. Connect all your users, applications, and devices to Azure AD for seamless, secure access, and greater visibility and control. 
+Use Azure AD single sign-on (SSO) to manage and secure access to your organization’s data and resources on-premises and in the cloud. Connect all your users, applications, and devices to Azure AD for seamless, secure access, and greater visibility and control.
 
 - [Understand application SSO with Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on)
 
@@ -141,16 +139,16 @@ Use Azure AD single sign-on (SSO) to manage and secure access to your organizati
 
 ### IM-4: Use strong authentication controls for all Azure Active Directory based access
 
-**Guidance**: Azure Bot Service uses Azure Active Directory that supports strong authentication controls through multi-factor authentication (MFA) and strong passwordless methods. 
-- Multi-factor authentication: Enable Azure AD MFA, follow Azure Security Center identity, and access management recommendations for your MFA setup. MFA can be enforced on all users, select users, or at the per-user level based on sign-in conditions and risk factors. 
+**Guidance**: Azure Bot Service uses Azure Active Directory that supports strong authentication controls through multi-factor authentication (MFA) and strong passwordless methods.
+- Multi-factor authentication: Enable Azure AD MFA, follow Azure Security Center identity, and access management recommendations for your MFA setup. MFA can be enforced on all users, select users, or at the per-user level based on sign-in conditions and risk factors.
 
-- Passwordless authentication: Three passwordless authentication options are available: Windows Hello for Business, Microsoft Authenticator app, and on-premises authentication methods such as smart cards. 
+- Passwordless authentication: Three passwordless authentication options are available: Windows Hello for Business, Microsoft Authenticator app, and on-premises authentication methods such as smart cards.
 
 For administrator and privileged users, ensure the highest level of the strong authentication method is used, followed by rolling out the appropriate strong authentication policy to other users.
 
-If legacy password-based authentication is still used for Azure AD authentication, be aware that cloud-only accounts (user accounts created directly in Azure) have a default baseline password policy. And hybrid accounts (user accounts that come from on-premises Active Directory) follow the on-premises password policies. When using password-based authentication, Azure AD provides a password protection capability that prevents users from setting passwords that are easy to guess. Microsoft provides a global list of banned passwords that is updated based on telemetry, and customers can augment the list based on their needs (for example, branding, cultural references, etc.). This password protection can be used for cloud-only and hybrid accounts. 
+If legacy password-based authentication is still used for Azure AD authentication, be aware that cloud-only accounts (user accounts created directly in Azure) have a default baseline password policy. And hybrid accounts (user accounts that come from on-premises Active Directory) follow the on-premises password policies. When using password-based authentication, Azure AD provides a password protection capability that prevents users from setting passwords that are easy to guess. Microsoft provides a global list of banned passwords that is updated based on telemetry, and customers can augment the list based on their needs (for example, branding, cultural references, etc.). This password protection can be used for cloud-only and hybrid accounts.
 
-Note: Authentication based on password credentials alone is susceptible to popular attack methods. For higher security, use strong authentication such as MFA and a strong password policy. For third-party applications and marketplace services that may have default passwords, you should change them during initial service setup. 
+Note: Authentication based on password credentials alone is susceptible to popular attack methods. For higher security, use strong authentication such as MFA and a strong password policy. For third-party applications and marketplace services that may have default passwords, you should change them during initial service setup.
 
 - [How to enable MFA in Azure](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)
 
@@ -182,15 +180,15 @@ Azure Security Center can also alert on certain suspicious activities such as ex
 
 Azure Advanced Threat Protection (ATP) is a security solution that can use Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions.
 
-Audit activity reports in the Azure Active Directory https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-audit-logs 
+Audit activity reports in the Azure Active Directory https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-audit-logs
 
-- [How to view Azure AD risky sign-ins](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-risky-sign-ins) 
+- [How to view Azure AD risky sign-ins](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-risky-sign-ins)
 
-- [How to identify Azure AD users flagged for risky activity](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-user-at-risk) 
+- [How to identify Azure AD users flagged for risky activity](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-user-at-risk)
 
-- [How to monitor users' identity and access activity in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-identity-access) 
+- [How to monitor users' identity and access activity in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-identity-access)
 
-- [Alerts in Azure Security Center's threat intelligence protection module](https://docs.microsoft.com//azure/security-center/alerts-reference) 
+- [Alerts in Azure Security Center's threat intelligence protection module](https://docs.microsoft.com//azure/security-center/alerts-reference)
 
 - [How to integrate Azure Activity Logs into Azure Monitor](https://docs.microsoft.com/azure/active-directory/reports-)
 
@@ -204,7 +202,7 @@ Audit activity reports in the Azure Active Directory https://docs.microsoft.com/
 
 For GitHub, you can use native secret scanning feature to identify credentials or other form of secrets within the code.
 
-- [How to setup Credential Scanner](https://secdevtools.azurewebsites.net/helpcredscan.html) 
+- [How to setup Credential Scanner](https://secdevtools.azurewebsites.net/helpcredscan.html)
 
 - [GitHub secret scanning](https://docs.github.com/github/administering-a-repository/about-secret-scanning)
 
@@ -218,11 +216,11 @@ For GitHub, you can use native secret scanning feature to identify credentials o
 
 ### PA-2: Restrict administrative access to business-critical systems
 
-**Guidance**: Azure Bot Service uses Azure RBAC to isolate access to business-critical systems by restricting which accounts are granted privileged access to the subscriptions and management groups they are in. 
+**Guidance**: Azure Bot Service uses Azure RBAC to isolate access to business-critical systems by restricting which accounts are granted privileged access to the subscriptions and management groups they are in.
 
-Ensure that you also restrict access to the management, identity, and security systems that have administrative access to your business critical assets, such as Active Directory Domain Controllers (DCs), security tools, and system management tools with agents installed on business critical systems. Attackers who compromise these management and security systems can immediately weaponize them to compromise business critical assets. 
+Ensure that you also restrict access to the management, identity, and security systems that have administrative access to your business critical assets, such as Active Directory Domain Controllers (DCs), security tools, and system management tools with agents installed on business critical systems. Attackers who compromise these management and security systems can immediately weaponize them to compromise business critical assets.
 
-All types of access controls should be aligned to your enterprise segmentation strategy to ensure consistent access control. 
+All types of access controls should be aligned to your enterprise segmentation strategy to ensure consistent access control.
 
 Ensure to assign separate privileged accounts that are distinct from the standard user accounts used for email, browsing, and productivity tasks.
 
@@ -240,7 +238,7 @@ Ensure to assign separate privileged accounts that are distinct from the standar
 
 **Guidance**: Azure Bot Service uses Azure Active Directory (Azure AD) accounts to manage its resources, review user accounts and access assignment regularly to ensure the accounts and their level of access are valid. You can use Azure AD access reviews to review group memberships, access to enterprise applications, and role assignments. Azure AD reporting can provide logs to help discover stale accounts. You can also use Azure AD Privileged Identity Management to create an access review report workflow that facilitates the review process.
 
-In addition, Azure Privileged Identity Management can be configured to alert when an excessive number of administrator accounts are created, and to identify administrator accounts that are stale or improperly configured. 
+In addition, Azure Privileged Identity Management can be configured to alert when an excessive number of administrator accounts are created, and to identify administrator accounts that are stale or improperly configured.
 
 Note: Some Azure services support local users and roles that aren't managed through Azure AD. You must manage these users separately.
 
@@ -264,11 +262,11 @@ You should ensure that the credentials (such as password, certificate, or smart 
 
 **Responsibility**: Customer
 
-### PA-5: Automate entitlement management 
+### PA-5: Automate entitlement management
 
 **Guidance**: Azure Bot Service is integrated with Azure Active Directory to manage its resources. Use Azure AD entitlement management features to automate access request workflows, including access assignments, reviews, and expiration. Dual or multi-stage approval is also supported.
 
-- [What are Azure AD access reviews](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview) 
+- [What are Azure AD access reviews](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview)
 
 - [What is Azure AD entitlement management](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview)
 
@@ -280,7 +278,7 @@ You should ensure that the credentials (such as password, certificate, or smart 
 
 **Guidance**: Secured, isolated workstations are critically important for the security of sensitive roles like administrators, developers, and critical service operators. Use highly secured user workstations and/or Azure Bastion for administrative tasks. Use Azure Active Directory, Microsoft Defender Advanced Threat Protection (ATP), and/or Microsoft Intune to deploy a secure and managed user workstation for administrative tasks. The secured workstations can be centrally managed to enforce secured configuration including strong authentication, software and hardware baselines, restricted logical and network access.
 
-- [Understand privileged access workstations](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-managed-workstation) 
+- [Understand privileged access workstations](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-managed-workstation)
 
 - [Deploy a privileged access workstation](https://docs.microsoft.com/azure/active-directory/devices/howto-azure-managed-workstation)
 
@@ -288,15 +286,15 @@ You should ensure that the credentials (such as password, certificate, or smart 
 
 **Responsibility**: Customer
 
-### PA-7: Follow just enough administration (least privilege principle) 
+### PA-7: Follow just enough administration (least privilege principle)
 
 **Guidance**: Azure Bot Service is integrated with Azure role-based access control (RBAC) to manage its resources. Azure RBAC allows you to manage Azure resource access through role assignments. You can assign these roles to users, groups service principals and managed identities. There are pre-defined built-in roles for certain resources, and these roles can be inventoried or queried through tools such as Azure CLI, Azure PowerShell or the Azure portal. The privileges you assign to resources through the Azure RBAC should be always limited to what is required by the roles. This complements the just in time (JIT) approach of Azure AD Privileged Identity Management (PIM) and should be reviewed periodically.
 
 Use built-in roles to allocate permission and only create custom role when required.
 
-What is Azure role-based access control (Azure RBAC) https://docs.microsoft.com/azure/role-based-access-control/overview 
+What is Azure role-based access control (Azure RBAC) https://docs.microsoft.com/azure/role-based-access-control/overview
 
-- [How to configure RBAC in Azure](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal) 
+- [How to configure RBAC in Azure](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal)
 
 - [How to use Azure AD identity and access reviews](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview)
 
@@ -316,7 +314,7 @@ To ensure consistent access control, all types of access control should be align
 
 For the underlying platform, which is managed by Microsoft, Microsoft treats all customer content as sensitive and guards against customer data loss and exposure. To ensure customer data within Azure remains secure, Microsoft has implemented some default data protection controls and capabilities.
 
-- [Azure Role Based Access Control (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/overview) 
+- [Azure Role Based Access Control (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/overview)
 
 - [Understand customer data protection in Azure](https://docs.microsoft.com/azure/security/fundamentals/protection-customer-data)
 
@@ -334,7 +332,7 @@ Azure Information protection (AIP) provides monitoring capabilities for informat
 
 If required for compliance of data loss prevention (DLP), you can use a host-based DLP solution to enforce detective and/or preventative controls to prevent data exfiltration.
 
-- [Enable Azure SQL ATP](https://docs.microsoft.com/azure/azure-sql/database/threat-detection-overview) 
+- [Enable Azure SQL ATP](https://docs.microsoft.com/azure/azure-sql/database/threat-detection-overview)
 
 - [Enable Azure Storage ATP](https://docs.microsoft.com/azure/storage/common/storage-advanced-threat-protection?tabs=azure-security-center)
 
@@ -349,11 +347,11 @@ If required for compliance of data loss prevention (DLP), you can use a host-bas
 - The client Operating System (OS) needs to support TLS 1.2.
 - The language (and platform) used to make the HTTP call need to specify TLS 1.2 as part of the request. Depending on the language and platform, specifying TLS is done either implicitly or explicitly.
 
-To complement access controls, data in transit should be protected against ‘out of band’ attacks (e.g., traffic capture) using encryption to ensure that attackers cannot easily read or modify the data. 
+To complement access controls, data in transit should be protected against ‘out of band’ attacks (e.g., traffic capture) using encryption to ensure that attackers cannot easily read or modify the data.
 
-While this is optional for traffic on private networks, this is critical for traffic on external and public networks. For HTTP traffic, ensure that any clients connecting to your Azure resources can negotiate TLS v1.2 or greater. For remote management, use SSH (for Linux) or RDP/TLS (for Windows) instead of an unencrypted protocol. Obsoleted SSL, TLS, and SSH versions and protocols, and weak ciphers should be disabled.  
+While this is optional for traffic on private networks, this is critical for traffic on external and public networks. For HTTP traffic, ensure that any clients connecting to your Azure resources can negotiate TLS v1.2 or greater. For remote management, use SSH (for Linux) or RDP/TLS (for Windows) instead of an unencrypted protocol. Obsoleted SSL, TLS, and SSH versions and protocols, and weak ciphers should be disabled.
 
-By default, Azure provides encryption for data in transit between Azure data centers. 
+By default, Azure provides encryption for data in transit between Azure data centers.
 
 - [Azure Bot Service enforcing transport layer security (TLS) 1.2](https://azure.microsoft.com/updates/azure-bot-service-enforcing-transport-layer-security-tls-1-2/)
 
@@ -375,9 +373,9 @@ Azure provides data at rest encryption by default. For highly sensitive data, yo
 
 If required for compliance on compute resources, implement a third-party tool, such as an automated host-based Data Loss Prevention solution, to enforce access controls to data even when data is copied off a system.
 
-- [Understand encryption at rest in Azure](https://docs.microsoft.com/azure/security/fundamentals/encryption-atrest#encryption-at-rest-in-microsoft-cloud-services) 
+- [Understand encryption at rest in Azure](https://docs.microsoft.com/azure/security/fundamentals/encryption-atrest#encryption-at-rest-in-microsoft-cloud-services)
 
-- [How to configure customer managed encryption keys](https://docs.microsoft.com/azure/storage/common/storage-encryption-keys-portal) 
+- [How to configure customer managed encryption keys](https://docs.microsoft.com/azure/storage/common/storage-encryption-keys-portal)
 
 - [Encryption Model and key management table](https://docs.microsoft.com/azure/security/fundamentals/encryption-models)
 
@@ -393,13 +391,13 @@ If required for compliance on compute resources, implement a third-party tool, s
 
 ### AM-1: Ensure security team has visibility into risks for assets
 
-**Guidance**: Ensure security teams are granted Security Reader permissions in your Azure tenant and subscriptions so they can monitor for security risks using Azure Security Center. 
+**Guidance**: Ensure security teams are granted Security Reader permissions in your Azure tenant and subscriptions so they can monitor for security risks using Azure Security Center.
 
-Depending on how security team responsibilities are structured, monitoring for security risks could  be the responsibility of a central security team or a local team. That said, security insights and risks must always be aggregated centrally within an organization. 
+Depending on how security team responsibilities are structured, monitoring for security risks could  be the responsibility of a central security team or a local team. That said, security insights and risks must always be aggregated centrally within an organization.
 
-Security Reader permissions can be applied broadly to an entire tenant (Root Management Group) or scoped to management groups or specific subscriptions. 
+Security Reader permissions can be applied broadly to an entire tenant (Root Management Group) or scoped to management groups or specific subscriptions.
 
-Note: Additional permissions might be required to get visibility into workloads and services. 
+Note: Additional permissions might be required to get visibility into workloads and services.
 
 - [Overview of Security Reader Role](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#security-reader)
 
@@ -415,9 +413,9 @@ Note: Additional permissions might be required to get visibility into workloads 
 
 Azure Bot Service does not offer support for Azure Resource Manager-based resource deployments and discovery with Azure Resource Graph.
 
-- [How to create queries with Azure Resource Graph Explorer](https://docs.microsoft.com/azure/governance/resource-graph/first-query-portal) 
+- [How to create queries with Azure Resource Graph Explorer](https://docs.microsoft.com/azure/governance/resource-graph/first-query-portal)
 
-- [Azure Security Center asset inventory management](https://docs.microsoft.com/azure/security-center/asset-inventory) 
+- [Azure Security Center asset inventory management](https://docs.microsoft.com/azure/security-center/asset-inventory)
 
 - [For more information about tagging assets, see the resource naming and tagging decision guide](https://docs.microsoft.com/azure/cloud-adoption-framework/decision-guides/resource-tagging/?toc=/azure/azure-resource-manager/management/toc.json)
 
@@ -429,9 +427,9 @@ Azure Bot Service does not offer support for Azure Resource Manager-based resour
 
 **Guidance**: Use Azure Policy to audit and restrict which services users can provision in your environment. Use Azure Resource Graph to query for and discover resources within their subscriptions. You can also use Azure Monitor to create rules to trigger alerts when a non-approved service is detected.
 
-- [How to configure and manage Azure Policy](https://docs.microsoft.com/azure/governance/policy/tutorials/create-and-manage) 
+- [How to configure and manage Azure Policy](https://docs.microsoft.com/azure/governance/policy/tutorials/create-and-manage)
 
-- [How to deny a specific resource type with Azure Policy](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies#general) 
+- [How to deny a specific resource type with Azure Policy](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies#general)
 
 - [How to create queries with Azure Resource Graph Explorer](https://docs.microsoft.com/azure/governance/resource-graph/first-query-portal)
 
@@ -467,7 +465,7 @@ Azure Bot Service does not offer support for Azure Resource Manager-based resour
 
 Forward any logs from Azure Bot Service to your SIEM which can be used to set up custom threat detections. Ensure you are monitoring different types of Azure assets for potential threats and anomalies. Focus on getting high-quality alerts to reduce false positives for analysts to sort through. Alerts can be sourced from log data, agents, or other data.
 
-- [Create custom analytics rules to detect threats](https://docs.microsoft.com/azure/sentinel/tutorial-detect-threats-custom) 
+- [Create custom analytics rules to detect threats](https://docs.microsoft.com/azure/sentinel/tutorial-detect-threats-custom)
 
 - [Cyber threat intelligence with Azure Sentinel](https://docs.microsoft.com/azure/architecture/example-scenario/data/sentinel-threat-intelligence)
 
@@ -477,7 +475,7 @@ Forward any logs from Azure Bot Service to your SIEM which can be used to set up
 
 ### LT-2: Enable threat detection for Azure identity and access management
 
-**Guidance**: Azure AD provides the following user logs that can be viewed in Azure AD reporting or integrated with Azure Monitor, Azure Sentinel or other SIEM/monitoring tools for more sophisticated monitoring and analytics use cases: 
+**Guidance**: Azure AD provides the following user logs that can be viewed in Azure AD reporting or integrated with Azure Monitor, Azure Sentinel or other SIEM/monitoring tools for more sophisticated monitoring and analytics use cases:
 -	Sign-ins – The sign-ins report provides information about the usage of managed applications and user sign-in activities.
 
 -	Audit logs - Provides traceability through logs for all changes done by various features within Azure AD. Examples of audit logs include changes made to any resources within Azure AD like adding or removing users, apps, groups, roles and policies.
@@ -504,15 +502,15 @@ Azure Security Center can also alert on certain suspicious activities such as an
 
 Azure Bot Service does not produce or process DNS query logs which would need to be enabled.
 
-- [How to enable network security group flow logs](https://docs.microsoft.com/azure/network-watcher/network-watcher-nsg-flow-logging-portal) 
+- [How to enable network security group flow logs](https://docs.microsoft.com/azure/network-watcher/network-watcher-nsg-flow-logging-portal)
 
-- [How to enable network security group flow logs](https://docs.microsoft.com/azure/network-watcher/network-watcher-nsg-flow-logging-portal) 
+- [How to enable network security group flow logs](https://docs.microsoft.com/azure/network-watcher/network-watcher-nsg-flow-logging-portal)
 
-- [Azure Firewall logs and metrics](https://docs.microsoft.com/azure/firewall/logs-and-metrics) 
+- [Azure Firewall logs and metrics](https://docs.microsoft.com/azure/firewall/logs-and-metrics)
 
-- [How to enable and use Traffic Analytics](https://docs.microsoft.com/azure/network-watcher/traffic-analytics) 
+- [How to enable and use Traffic Analytics](https://docs.microsoft.com/azure/network-watcher/traffic-analytics)
 
-- [Monitoring with Network Watcher](https://docs.microsoft.com/azure/network-watcher/network-watcher-monitoring-overview) 
+- [Monitoring with Network Watcher](https://docs.microsoft.com/azure/network-watcher/network-watcher-monitoring-overview)
 
 - [Azure networking monitoring solutions in Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/insights/azure-networking-analytics)
 
@@ -526,7 +524,7 @@ Azure Bot Service does not produce or process DNS query logs which would need to
 
 Azure Bot Service currently does not produce Azure resource logs.
 
-- [How to collect platform logs and metrics with Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-settings) 
+- [How to collect platform logs and metrics with Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-settings)
 
 - [Understand logging and different log types in Azure](https://docs.microsoft.com/azure/azure-monitor/platform/platform-logs-overview)
 
@@ -542,7 +540,7 @@ Ensure you are integrating Azure activity logs into your central logging. Ingest
 
 In addition, enable and onboard data to Azure Sentinel or a third-party SIEM.
 
-Many organizations choose to use Azure Sentinel for “hot” data that is used frequently and Azure Storage for “cold” data that is used less frequently. 
+Many organizations choose to use Azure Sentinel for "hot" data that is used frequently and Azure Storage for "cold" data that is used less frequently.
 
 - [How to collect platform logs and metrics with Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-settings)
 
@@ -558,7 +556,7 @@ Many organizations choose to use Azure Sentinel for “hot” data that is used 
 
 In Azure Monitor, you can set your Log Analytics workspace retention period according to your organization's compliance regulations. Use Azure Storage, Data Lake or Log Analytics workspace accounts for long-term and archival storage.
 
-- [How to configure Log Analytics Workspace Retention Period](https://docs.microsoft.com/azure/azure-monitor/platform/manage-cost-storage) 
+- [How to configure Log Analytics Workspace Retention Period](https://docs.microsoft.com/azure/azure-monitor/platform/manage-cost-storage)
 
 - [Storing resource logs in an Azure Storage Account](https://docs.microsoft.com/azure/azure-monitor/platform/resource-logs-collect-storage)
 
@@ -584,7 +582,7 @@ In Azure Monitor, you can set your Log Analytics workspace retention period acco
 
 ### IR-2: Preparation – setup incident notification
 
-**Guidance**: Set up security incident contact information in Azure Security Center. This contact information is used by Microsoft to contact you if the Microsoft Security Response Center (MSRC) discovers that your data has been accessed by an unlawful or unauthorized party. You also have options to customize incident alert and notification in different Azure services based on your incident response needs. 
+**Guidance**: Set up security incident contact information in Azure Security Center. This contact information is used by Microsoft to contact you if the Microsoft Security Response Center (MSRC) discovers that your data has been accessed by an unlawful or unauthorized party. You also have options to customize incident alert and notification in different Azure services based on your incident response needs.
 
 - [How to set the Azure Security Center security contact](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details)
 
@@ -594,11 +592,11 @@ In Azure Monitor, you can set your Log Analytics workspace retention period acco
 
 ### IR-3: Detection and analysis – create incidents based on high quality alerts
 
-**Guidance**: Ensure you have a process to create high-quality alerts and measure the quality of alerts. This allows you to learn lessons from past incidents and prioritize alerts for analysts, so they don’t waste time on false positives. 
+**Guidance**: Ensure you have a process to create high-quality alerts and measure the quality of alerts. This allows you to learn lessons from past incidents and prioritize alerts for analysts, so they don’t waste time on false positives.
 
-High-quality alerts can be built based on experience from past incidents, validated community sources, and tools designed to generate and clean up alerts by fusing and correlating diverse signal sources. 
+High-quality alerts can be built based on experience from past incidents, validated community sources, and tools designed to generate and clean up alerts by fusing and correlating diverse signal sources.
 
-Azure Security Center provides high-quality alerts across many Azure assets. You can use the ASC data connector to stream the alerts to Azure Sentinel. Azure Sentinel lets you create advanced alert rules to generate incidents automatically for an investigation. 
+Azure Security Center provides high-quality alerts across many Azure assets. You can use the ASC data connector to stream the alerts to Azure Sentinel. Azure Sentinel lets you create advanced alert rules to generate incidents automatically for an investigation.
 
 Export your Azure Security Center alerts and recommendations using the export feature to help identify risks to Azure resources. Export alerts and recommendations either manually or in an ongoing, continuous fashion.
 
@@ -612,27 +610,27 @@ Export your Azure Security Center alerts and recommendations using the export fe
 
 ### IR-4: Detection and analysis – investigate an incident
 
-**Guidance**: Ensure analysts can query and use diverse data sources as they investigate potential incidents, to build a full view of what happened. Diverse logs should be collected to track the activities of a potential attacker across the kill chain to avoid blind spots.  You should also ensure insights and learnings are captured for other analysts and for future historical reference.  
+**Guidance**: Ensure analysts can query and use diverse data sources as they investigate potential incidents, to build a full view of what happened. Diverse logs should be collected to track the activities of a potential attacker across the kill chain to avoid blind spots.  You should also ensure insights and learnings are captured for other analysts and for future historical reference.
 
 The data sources for investigation include the centralized logging sources that are already being collected from the in-scope services and running systems, but can also include:
 
-- Network data – use network security groups' flow logs, Azure Network Watcher, and Azure Monitor to capture network flow logs and other analytics information. 
+- Network data – use network security groups' flow logs, Azure Network Watcher, and Azure Monitor to capture network flow logs and other analytics information.
 
-- Snapshots of running systems: 
+- Snapshots of running systems:
 
-    - Use Azure virtual machine's snapshot capability to create a snapshot of the running system's disk. 
+    - Use Azure virtual machine's snapshot capability to create a snapshot of the running system's disk.
 
     - Use the operating system's native memory dump capability to create a snapshot of the running system's memory.
 
     - Use the snapshot feature of the Azure services or your software's own capability to create snapshots of the running systems.
 
-Azure Sentinel provides extensive data analytics across virtually any log source and a case management portal to manage the full lifecycle of incidents. Intelligence information during an investigation can be associated with an incident for tracking and reporting purposes. 
+Azure Sentinel provides extensive data analytics across virtually any log source and a case management portal to manage the full lifecycle of incidents. Intelligence information during an investigation can be associated with an incident for tracking and reporting purposes.
 
 - [Snapshot a Windows machine's disk](https://docs.microsoft.com/azure/virtual-machines/windows/snapshot-copy-managed-disk)
 
 - [Snapshot a Linux machine's disk](https://docs.microsoft.com/azure/virtual-machines/linux/snapshot-copy-managed-disk)
 
-- [Microsoft Azure Support diagnostic information and memory dump collection](https://azure.microsoft.com/support/legal/support-diagnostic-information-collection/) 
+- [Microsoft Azure Support diagnostic information and memory dump collection](https://azure.microsoft.com/support/legal/support-diagnostic-information-collection/)
 
 - [Investigate incidents with Azure Sentinel](https://docs.microsoft.com/azure/sentinel/tutorial-investigate-cases)
 
@@ -642,7 +640,7 @@ Azure Sentinel provides extensive data analytics across virtually any log source
 
 ### IR-5: Detection and analysis – prioritize incidents
 
-**Guidance**: Provide context to analysts on which incidents to focus on first based on alert severity and asset sensitivity. 
+**Guidance**: Provide context to analysts on which incidents to focus on first based on alert severity and asset sensitivity.
 
 Azure Security Center assigns a severity to each alert to help you prioritize which alerts should be investigated first. The severity is based on how confident Security Center is in the finding or the analytically used to issue the alert, as well as the confidence level that there was malicious intent behind the activity that led to the alert.
 
@@ -658,8 +656,8 @@ Additionally, mark resources using tags and create a naming system to identify a
 
 ### IR-6: Containment, eradication and recovery – automate the incident handling
 
-**Guidance**: Automate manual repetitive tasks to speed up response time and reduce the burden on analysts. Manual tasks take longer to execute, slowing each incident and reducing how many incidents an analyst can handle. Manual tasks also increase analyst fatigue, which increases the risk of human error that causes delays, and degrades the ability of analysts to focus effectively on complex tasks. 
-Use workflow automation features in Azure Security Center and Azure Sentinel to automatically trigger actions or run a playbook to respond to incoming security alerts. The playbook takes actions, such as sending notifications, disabling accounts, and isolating problematic networks. 
+**Guidance**: Automate manual repetitive tasks to speed up response time and reduce the burden on analysts. Manual tasks take longer to execute, slowing each incident and reducing how many incidents an analyst can handle. Manual tasks also increase analyst fatigue, which increases the risk of human error that causes delays, and degrades the ability of analysts to focus effectively on complex tasks.
+Use workflow automation features in Azure Security Center and Azure Sentinel to automatically trigger actions or run a playbook to respond to incoming security alerts. The playbook takes actions, such as sending notifications, disabling accounts, and isolating problematic networks.
 
 - [Configure workflow automation in Security Center](https://docs.microsoft.com/azure/security-center/workflow-automation)
 
@@ -682,7 +680,7 @@ Follow the Microsoft Cloud Penetration Testing Rules of Engagement to ensure you
 
 - [Penetration testing in Azure](https://docs.microsoft.com/azure/security/fundamentals/pen-testing)
 
-- [Penetration Testing Rules of Engagement](https://www.microsoft.com/msrc/pentest-rules-of-engagement?rtc=1) 
+- [Penetration Testing Rules of Engagement](https://www.microsoft.com/msrc/pentest-rules-of-engagement?rtc=1)
 
 - [Microsoft Cloud Red Teaming](https://gallery.technet.microsoft.com/Cloud-Red-Teaming-b837392e)
 
@@ -698,7 +696,7 @@ Follow the Microsoft Cloud Penetration Testing Rules of Engagement to ensure you
 
 **Guidance**: Ensure you are backing up systems and data to maintain business continuity after an unexpected event. This should be defined by any objectives for Recovery Point Objective (RPO) and Recovery Time Objective (RTO).
 
-Enable Azure Backup and configure the backup source (e.g. Azure VMs, SQL Server, HANA databases, or File Shares), as well as the desired frequency and retention period.  
+Enable Azure Backup and configure the backup source (e.g. Azure VMs, SQL Server, HANA databases, or File Shares), as well as the desired frequency and retention period.
 
 For a higher level of protection, you can enable geo-redundant storage option to replicate backup data to a secondary region and recover using cross region restore.
 
@@ -714,19 +712,19 @@ For a higher level of protection, you can enable geo-redundant storage option to
 
 ### BR-2: Encrypt backup data
 
-**Guidance**: Ensure your backups are protected against attacks. This should include encryption of the backups to protect against loss of confidentiality.   
+**Guidance**: Ensure your backups are protected against attacks. This should include encryption of the backups to protect against loss of confidentiality.
 
-For on-premises backups using Azure Backup, encryption-at-rest is provided using the passphrase you provide. For regular Azure service backups, backup data is automatically encrypted using Azure platform-managed keys. You can choose to encrypt the backups using customer-managed key. In this case, ensure this customer-managed key in the key vault is also in the backup scope. 
+For on-premises backups using Azure Backup, encryption-at-rest is provided using the passphrase you provide. For regular Azure service backups, backup data is automatically encrypted using Azure platform-managed keys. You can choose to encrypt the backups using customer-managed key. In this case, ensure this customer-managed key in the key vault is also in the backup scope.
 
 Use role-based access control in Azure Backup, Azure Key Vault, or other resources to protect backups and customer-managed keys. Additionally, you can enable advanced security features to require MFA before backups can be altered or deleted.
 
 - [Overview of security features in Azure Backup](https://docs.microsoft.com/azure/backup/security-overview)
 
-- [Encryption of backup data using customer-managed keys](https://docs.microsoft.com/azure/backup/encryption-at-rest-with-cmk) 
+- [Encryption of backup data using customer-managed keys](https://docs.microsoft.com/azure/backup/encryption-at-rest-with-cmk)
 
-- [How to backup Key Vault keys in Azure](https://docs.microsoft.com/powershell/module/azurerm.keyvault/backup-azurekeyvaultkey?view=azurermps-6.13.0)
+- [How to backup Key Vault keys in Azure](/powershell/module/azurerm.keyvault/backup-azurekeyvaultkey)
 
-- [Security features to help protect hybrid backups from attacks](https://docs.microsoft.com/azure/backup/backup-azure-security-feature#prevent-attacks)
+- [Security features to help protect hybrid backups from attacks](/azure/backup/backup-azure-security-feature#prevent-attacks)
 
 **Azure Security Center monitoring**: Not applicable
 
@@ -736,7 +734,7 @@ Use role-based access control in Azure Backup, Azure Key Vault, or other resourc
 
 **Guidance**: Periodically ensure that you can restore backed-up customer-managed keys.
 
-- [How to restore Key Vault keys in Azure](https://docs.microsoft.com/powershell/module/azurerm.keyvault/restore-azurekeyvaultkey?view=azurermps-6.13.0)
+- [How to restore Key Vault keys in Azure](/powershell/module/azurerm.keyvault/restore-azurekeyvaultkey)
 
 **Azure Security Center monitoring**: Not applicable
 
@@ -744,7 +742,7 @@ Use role-based access control in Azure Backup, Azure Key Vault, or other resourc
 
 ### BR-4: Mitigate risk of lost keys
 
-**Guidance**: Ensure you have measures in place to prevent and recover from loss of keys. Enable soft delete and purge protection in Azure Key Vault to protect keys against accidental or malicious deletion.  
+**Guidance**: Ensure you have measures in place to prevent and recover from loss of keys. Enable soft delete and purge protection in Azure Key Vault to protect keys against accidental or malicious deletion.
 
 - [How to enable soft delete and purge protection in Key Vault](https://docs.microsoft.com/azure/storage/blobs/storage-blob-soft-delete?tabs=azure-portal)
 
@@ -756,17 +754,17 @@ Use role-based access control in Azure Backup, Azure Key Vault, or other resourc
 
 *For more information, see the [Azure Security Benchmark: Governance and Strategy](/azure/security/benchmarks/security-controls-v2-governance-strategy).*
 
-### GS-1: Define asset management and data protection strategy 
+### GS-1: Define asset management and data protection strategy
 
-**Guidance**: Ensure you document and communicate a clear strategy for continuous monitoring and protection of systems and data. Prioritize discovery, assessment, protection, and monitoring of business-critical data and systems. 
+**Guidance**: Ensure you document and communicate a clear strategy for continuous monitoring and protection of systems and data. Prioritize discovery, assessment, protection, and monitoring of business-critical data and systems.
 
-This strategy should include documented guidance, policy, and standards for the following elements: 
+This strategy should include documented guidance, policy, and standards for the following elements:
 
 -	Data classification standard in accordance with the business risks
 
--	Security organization visibility into risks and asset inventory 
+-	Security organization visibility into risks and asset inventory
 
--	Security organization approval of Azure services for use 
+-	Security organization approval of Azure services for use
 
 -	Security of assets through their lifecycle
 
@@ -793,7 +791,7 @@ For more information, see the following references:
 
 **Responsibility**: Customer
 
-### GS-2: Define enterprise segmentation strategy 
+### GS-2: Define enterprise segmentation strategy
 
 **Guidance**: Establish an enterprise-wide strategy to segmenting access to assets using a combination of identity, network, application, subscription, management group, and other controls.
 
@@ -837,9 +835,9 @@ Ensure that the segmentation strategy is implemented consistently across control
 
 ### GS-5: Define network security strategy
 
-**Guidance**: Establish an Azure network security approach as part of your organization’s overall security access control strategy.  
+**Guidance**: Establish an Azure network security approach as part of your organization’s overall security access control strategy.
 
-This strategy should include documented guidance, policy, and standards for the following elements: 
+This strategy should include documented guidance, policy, and standards for the following elements:
 
 -	Centralized network management and security responsibility
 
@@ -868,9 +866,9 @@ For more information, see the following references:
 
 ### GS-6: Define identity and privileged access strategy
 
-**Guidance**: Establish an Azure identity and privileged access approaches as part of your organization’s overall security access control strategy.  
+**Guidance**: Establish an Azure identity and privileged access approaches as part of your organization’s overall security access control strategy.
 
-This strategy should include documented guidance, policy, and standards for the following elements: 
+This strategy should include documented guidance, policy, and standards for the following elements:
 
 -	A centralized identity and authentication system and its interconnectivity with other internal and external identity systems
 
@@ -878,7 +876,7 @@ This strategy should include documented guidance, policy, and standards for the 
 
 -	Protection of highly privileged users
 
--	Anomaly user activities monitoring and handling  
+-	Anomaly user activities monitoring and handling
 
 -	User identity and access review and reconciliation process
 
@@ -898,17 +896,17 @@ For more information, see the following references:
 
 ### GS-7: Define logging and threat response strategy
 
-**Guidance**: Establish a logging and threat response strategy to rapidly detect and remediate threats while meeting compliance requirements. Prioritize providing analysts with high-quality alerts and seamless experiences so that they can focus on threats rather than integration and manual steps. 
+**Guidance**: Establish a logging and threat response strategy to rapidly detect and remediate threats while meeting compliance requirements. Prioritize providing analysts with high-quality alerts and seamless experiences so that they can focus on threats rather than integration and manual steps.
 
-This strategy should include documented guidance, policy, and standards for the following elements: 
+This strategy should include documented guidance, policy, and standards for the following elements:
 
--	The security operations (SecOps) organization’s role and responsibilities 
+-	The security operations (SecOps) organization’s role and responsibilities
 
--	A well-defined incident response process aligning with NIST or another industry framework 
+-	A well-defined incident response process aligning with NIST or another industry framework
 
 -	Log capture and retention to support threat detection, incident response, and compliance needs
 
--	Centralized visibility of and correlation information about threats, using SIEM, native Azure capabilities, and other sources 
+-	Centralized visibility of and correlation information about threats, using SIEM, native Azure capabilities, and other sources
 
 -	Communication and notification plan with your customers, suppliers, and public parties of interest
 
