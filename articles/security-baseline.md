@@ -722,9 +722,9 @@ Use role-based access control in Azure Backup, Azure Key Vault, or other resourc
 
 - [Encryption of backup data using customer-managed keys](https://docs.microsoft.com/azure/backup/encryption-at-rest-with-cmk)
 
-- [How to backup Key Vault keys in Azure](https://docs.microsoft.com/powershell/module/azurerm.keyvault/backup-azurekeyvaultkey?view=azurermps-6.13.0&preserve-view=true)
+- [How to backup Key Vault keys in Azure](/powershell/module/azurerm.keyvault/backup-azurekeyvaultkey)
 
-- [Security features to help protect hybrid backups from attacks](https://docs.microsoft.com/azure/backup/backup-azure-security-feature#prevent-attacks&preserve-view=true)
+- [Security features to help protect hybrid backups from attacks](/azure/backup/backup-azure-security-feature#prevent-attacks)
 
 **Azure Security Center monitoring**: Not applicable
 
@@ -734,7 +734,7 @@ Use role-based access control in Azure Backup, Azure Key Vault, or other resourc
 
 **Guidance**: Periodically ensure that you can restore backed-up customer-managed keys.
 
-- [How to restore Key Vault keys in Azure](https://docs.microsoft.com/powershell/module/azurerm.keyvault/restore-azurekeyvaultkey?view=azurermps-6.13.0&preserve-view=true)
+- [How to restore Key Vault keys in Azure](/powershell/module/azurerm.keyvault/restore-azurekeyvaultkey)
 
 **Azure Security Center monitoring**: Not applicable
 
