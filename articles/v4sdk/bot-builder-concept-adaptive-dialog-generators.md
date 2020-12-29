@@ -19,15 +19,15 @@ Generators tie a specific [language generation (LG)](bot-builder-concept-languag
 
 ## Prerequisites
 
-- Knowledge of [adaptive dialogs](https://aka.ms/adaptive-dialog-concept)
-- Knowledge of [recognizers](https://aka.ms/adaptive-dialog-concept-recognizers) in adaptive dialogs
+- Knowledge of [adaptive dialogs](bot-builder-adaptive-dialog-Introduction.md)
+- Knowledge of [recognizers](bot-builder-concept-adaptive-dialog-recognizers.md) in adaptive dialogs
 - Knowledge of [adaptive expressions](bot-builder-concept-adaptive-expressions.md)
 
 ## Language generation
 
 Language Generation (LG) allows developers to extract embedded strings from their code and resource files and manage them through a LG runtime and file format. With LG, developers can create a more natural conversation experience by defining multiple variations on a phrase, executing simple expressions based on context, and referring to conversational memory.
 
-LG, along with [recognizers](https://aka.ms/adaptive-dialog-concept-recognizers), enables clean separation and encapsulation of a dialog's Language Understanding and language generation assets. Recognizers give your bot the ability to understand input and LG lets your bot respond to that input in an intelligent way.
+LG, along with [recognizers](bot-builder-concept-adaptive-dialog-recognizers.md), enables clean separation and encapsulation of a dialog's Language Understanding and language generation assets. Recognizers give your bot the ability to understand input and LG lets your bot respond to that input in an intelligent way.
 
 In this article you will learn about the LG templates that add variety and personality to bot responses, and how to call those templates in your root dialog using the `TemplateEngineLanguageGenerator`.
 

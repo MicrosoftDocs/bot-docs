@@ -260,7 +260,7 @@ var ConfirmationDialog = new AdaptiveDialog("ConfirmationDialog") {
                     // text is read from a specific memory location. The caller of this dialog needs to
                     // set the prompt string to that location before calling the "ConfirmationDialog".
                     // All prompts support rich language generation based resolution for output generation.
-                    // See https://aka.ms/language-generation-file-format to learn more about the LG
+                    // See https://docs.microsoft.com/azure/bot-service/file-format/bot-builder-lg-file-format to learn more about the LG
                     // template format used in the ActivityTemplate object.
                     Prompt = new ActivityTemplate("${turn.contoso.travelBot.confirmPromptMessage}")
                 }
@@ -590,8 +590,8 @@ The following links provide generalized information on the topic of authenticati
 * [Add authentication to a bot][add-authentication]
 
 <!-- links -->
-[authentication]:https://aka.ms/azure-bot-authentication
-[add-authentication]:https://aka.ms/azure-bot-add-authentication
+[authentication]:../v4sdk/bot-builder-concept-authentication.md
+[add-authentication]:../v4sdk/bot-builder-authentication.md
 [recognizers]:../v4sdk/bot-builder-concept-adaptive-dialog-recognizers.md
 [adaptive-expressions]:../v4sdk/bot-builder-concept-adaptive-expressions.md
 [interruptions]: ../v4sdk/bot-builder-concept-adaptive-dialog-interruptions.md

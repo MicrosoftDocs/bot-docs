@@ -496,7 +496,7 @@ This snippet shows an example of a `channelData` property that specifies a chann
 ## Adding a bot to Teams
 
 Bots added to a team become another team member, who can be `@mentioned` as part of the conversation. In fact, bots only receive messages when they are `@mentioned`, so other conversations on the channel are not sent to the bot.
-For more information, see [Channel and Group chat conversations with a Microsoft Teams bot](https://aka.ms/bots-con-channel).
+For more information, see [Channel and Group chat conversations with a Microsoft Teams bot](/microsoftteams/platform/concepts/bots/bot-conversations/bots-conv-channel).
 
 Because bots in a group or channel respond only when they are mentioned (`@botname`) in a message, every message received by a bot in a group channel contains its own name, and you must ensure your message parsing handles that. In addition, bots can parse out other users mentioned and mention users as part of their messages.
 

@@ -63,9 +63,9 @@ The adaptive dialogs library defines the following input types:
 [introduction]:bot-builder-adaptive-dialog-introduction.md
 [triggers]:bot-builder-concept-adaptive-dialog-triggers.md
 [actions]:bot-builder-concept-adaptive-dialog-actions.md
-[prompts]:https://aka.ms/bot-builder-concept-dialog#prompts
-[authentication]:https://aka.ms/azure-bot-authentication
-[add-authentication]:https://aka.ms/azure-bot-add-authentication
+[prompts]:bot-builder-concept-waterfall-dialogs.md#prompts
+[authentication]:bot-builder-concept-authentication.md
+[add-authentication]:bot-builder-authentication.md
 [managing-state]:bot-builder-concept-adaptive-dialog-memory-states.md
 [recognizers]:bot-builder-concept-adaptive-dialog-recognizers.md
 [lg-templates]:bot-builder-concept-adaptive-dialog-generators.md
