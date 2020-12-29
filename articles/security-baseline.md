@@ -26,11 +26,9 @@ To see how Azure Bot Service completely maps to the Azure Security Benchmark, se
 
 **Guidance**: When you deploy Azure Bot Service resources, you must create or use an existing virtual network. Ensure that all Azure virtual networks follow an enterprise segmentation principle that aligns to the business risks. Any system that could incur higher risk for the organization should be isolated within its own virtual network and sufficiently secured with either a network security group (NSG) and/or Azure Firewall.
 
-- [Use direct line app service extension within a VNET](https://docs.microsoft.com/azure/bot-service/bot-service-channel-directline-extension-vnet?view=azure-bot-service-4.0&preserve-view=true)
+- [Use direct line app service extension within a VNET](bot-service-channel-directline-extension-vnet.md)
 
 - [How to create a network security group with security rules](https://docs.microsoft.com/azure/virtual-network/tutorial-filter-network-traffic)
-
-
 
 - [How to deploy and configure Azure Firewall](https://docs.microsoft.com/azure/firewall/tutorial-firewall-deploy-portal)
 
