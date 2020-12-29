@@ -92,4 +92,4 @@ The following picture shows the client application interface when communicating 
 > [!NOTE]
 > The following step is only needed for bots built before the release of the 4.8 SDKs.
 
-With the Direct Line Speech channel connected and support for the Bot Framework Protocol Streaming Extensions enabled, all that's left is to add code to your bot to support the optimized communication. Follow the instructions on [adding Streaming Extensions support to your bot](/azure/bot-service/directline-speech-bot.md) to ensure full compatibility with Direct Line Speech.
+With the Direct Line Speech channel connected and support for the Bot Framework Protocol Streaming Extensions enabled, all that's left is to add code to your bot to support the optimized communication. Follow the instructions on [adding Streaming Extensions support to your bot](directline-speech-bot.md) to ensure full compatibility with Direct Line Speech.
