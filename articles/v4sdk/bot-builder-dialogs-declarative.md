@@ -216,7 +216,7 @@ In this case, since no language generation (LG) template file is provided, and t
 [concept-declarative]: bot-builder-concept-adaptive-dialog-declarative.md
 [how-to-adaptive]: bot-builder-dialogs-adaptive.md
 
-[bf-cli]: https://aka.ms/bf-cli-overview
+[bf-cli]: bf-cli-overview.md
 
 [prompting]: bot-builder-prompts.md
 [component-dialogs]: bot-builder-compositcontrol.md
@@ -225,4 +225,4 @@ In this case, since no language generation (LG) template file is provided, and t
 
 [main.dialog]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/adaptive-dialog/20.EchoBot-declarative/Dialogs/main.dialog
 
-[intelliSense]: https://aka.ms/intellisense-in-visual-studio
+[intelliSense]: /visualstudio/ide/using-intellisense

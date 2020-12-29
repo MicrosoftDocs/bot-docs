@@ -87,6 +87,11 @@
       "branch_mapping": {}
     },
     {
+      "path_to_root": "_themes.pdf",
+      "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
+      "branch": "master"
+    },
+    {
       "path_to_root": "botbuilder-samples",
       "url": "https://github.com/Microsoft/BotBuilder-Samples",
       "branch": "main",

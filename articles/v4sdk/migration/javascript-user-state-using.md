@@ -147,4 +147,4 @@ To learn more about deploying a bot to Azure, see [Deploy your bot to Azure][40]
 [21]: ../../bot-service-overview-introduction.md
 [30]: https://www.npmjs.com/package/restify
 [31]: https://www.npmjs.com/package/dotenv
-[40]: https://aka.ms/azuredeployment
+[40]: ../../bot-builder-deploy-az-cli.md

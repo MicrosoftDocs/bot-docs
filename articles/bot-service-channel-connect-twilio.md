@@ -94,7 +94,7 @@ Now that you have your Twilio number and account credentials, you need to config
 
 #### Install the Twilio adapter NuGet package
 
-Add  the [Microsoft.Bot.Builder.Adapters.Twilio](https://www.nuget.org/packages/Microsoft.Bot.Builder.Adapters.Twilio/) NuGet package. For more information on using NuGet, see [Install and manage packages in Visual Studio](https://aka.ms/install-manage-packages-vs).
+Add  the [Microsoft.Bot.Builder.Adapters.Twilio](https://www.nuget.org/packages/Microsoft.Bot.Builder.Adapters.Twilio/) NuGet package. For more information on using NuGet, see [Install and manage packages in Visual Studio](/nuget/tools/package-manager-ui).
 
 #### Create a Twilio adapter class
 
@@ -181,7 +181,7 @@ public void ConfigureServices(IServiceCollection services)
 
 Now that you have wired up the adapter in your bot project, you need to identify the correct endpoint to provide to Twilio in order to ensure your bot receives messages. You also require this URL to complete configuration of your bot application.
 
-To complete this step, [deploy your bot to Azure](https://aka.ms/bot-builder-deploy-az-cli) and make a note of the URL of your deployed bot.
+To complete this step, [deploy your bot to Azure](bot-builder-deploy-az-cli.md) and make a note of the URL of your deployed bot.
 
 > [!NOTE]
 > If you are not ready to deploy your bot to Azure, or wish to debug your bot when using the Twilio adapter, you can use a tool such as [ngrok](https://www.ngrok.com) (which you will likely already have installed if you have used the Bot Framework Emulator previously) to tunnel through to your bot running locally and provide you with a publicly accessible URL for this. 

@@ -23,7 +23,7 @@ For AppInsights samples, see the luis-with-appinsights [C# sample](https://aka.m
 
  <!-- qna-with-appinsights ([C# sample](https://aka.ms/qna-with-appinsights) / [JS sample](https://aka.ms/js-qna-with-appinsights-sample)) samples demonstrate bots that support Azure Application Insights.-->
 
-See [conversation analytics telemetry](https://aka.ms/botframeworkanalytics) for information about how to add Application Insights to an existing bot.
+See [conversation analytics telemetry](./v4sdk/bot-builder-telemetry.md) for information about how to add Application Insights to an existing bot.
 
 ## Enable Application Insights on ASP.Net
 
