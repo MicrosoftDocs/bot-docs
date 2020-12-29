@@ -169,7 +169,7 @@ Create a [custom integration](https://developers.facebook.com/docs/workplace/cus
 
     ![Workplace integration pane](media/channels/fb-workplace-integration-pane.png)
 
-1. Click on the **Integrations* link.
+1. Click on the **Integrations** link.
 
     ![Workplace Integration](media/channels/fb-integration.png)
 

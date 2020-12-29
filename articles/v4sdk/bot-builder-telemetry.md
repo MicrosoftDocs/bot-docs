@@ -142,7 +142,7 @@ To query your data
 2. Navigate to your Application Insights. Easiest way to do so is click on **Monitor > Applications** and find it there.
 3. Once in your Application Insights, you can click on _Logs (Analytics)_ on the navigation bar.
 
-    ![Logs (Analytics)](media/AppInsights-LogView.png)
+    ![Logs (Analytics) LogView](media/AppInsights-LogView.png)
 
 4. This will bring up the Query window.  Enter the following query and select _Run_:
 
