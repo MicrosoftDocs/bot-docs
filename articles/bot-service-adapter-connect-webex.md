@@ -47,7 +47,7 @@ Before you can complete the configuration of our Webex app, you need to wire up 
 
 ### Install the Webex adapter NuGet package
 
-Add  the [Microsoft.Bot.Builder.Adapters.Webex](https://www.nuget.org/packages/Microsoft.Bot.Builder.Adapters.Webex/) NuGet package. For more information on using NuGet, see [Install and manage packages in Visual Studio](https://aka.ms/install-manage-packages-vs)
+Add  the [Microsoft.Bot.Builder.Adapters.Webex](https://www.nuget.org/packages/Microsoft.Bot.Builder.Adapters.Webex/) NuGet package. For more information on using NuGet, see [Install and manage packages in Visual Studio](/nuget/tools/package-manager-ui)
 
 ### Create a Webex adapter class
 
@@ -89,7 +89,7 @@ Once added, your ***ConfigureServices*** method should look like this.
 
 Now that you have created a Webex app and wired up the adapter in your bot project, the final steps are to configure a Webex webhook, point it to the correct endpoint on your bot, and subscribe your app to ensure your bot receives messages and attachments. To do this your bot must be running, so that Webex can verify the URL to the endpoint is valid.
 
-1. To complete this step, [deploy your bot to Azure](https://aka.ms/bot-builder-deploy-az-cli) and make a note of the URL to your deployed bot. Your Webex messaging endpoint is the URL for your bot, which will be the URL of your deployed application (or ngrok endpoint), plus '/api/webex' (for example, `https://yourbotapp.azurewebsites.net/api/webex`).
+1. To complete this step, [deploy your bot to Azure](./bot-builder-deploy-az-cli.md) and make a note of the URL to your deployed bot. Your Webex messaging endpoint is the URL for your bot, which will be the URL of your deployed application (or ngrok endpoint), plus '/api/webex' (for example, `https://yourbotapp.azurewebsites.net/api/webex`).
 
     > [!NOTE]
     > If you are not ready to deploy your bot to Azure, or wish to debug your bot when using the Webex adapter, you can use a tool such as [ngrok](https://www.ngrok.com) (which you will likely already have installed if you have used the Bot Framework Emulator previously) to tunnel through to your bot running locally and provide you with a publicly accessible URL for this.

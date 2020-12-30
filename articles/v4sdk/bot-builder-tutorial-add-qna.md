@@ -31,7 +31,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 * The bot created in the [previous tutorial](bot-builder-tutorial-create-basic-bot.md). We will add a question-and-answer feature to the bot.
 * Some familiarity with [QnA Maker](https://qnamaker.ai/) is helpful. We will use the QnA Maker portal to create, train, and publish the knowledge base to use with the bot.
-* Familiarity with [QnA bot creation](https://aka.ms/azure-create-qna) using Azure Bot Service.
+* Familiarity with [QnA bot creation](/azure/cognitive-services/qnamaker/tutorials/create-qna-bot) using Azure Bot Service.
 
 You should also already have the prerequisites for the previous tutorial.
 

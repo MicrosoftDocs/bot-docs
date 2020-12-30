@@ -58,7 +58,7 @@
             Verify that the specified endorsement exists on the JWT token. Call this method multiple times to validate multiple endorsements.
             For example, if an <see cref="T:Microsoft.Bot.Schema.Activity" /> comes from WebChat, that activity's
             <see cref="P:Microsoft.Bot.Schema.Activity.ChannelId" /> property is set to "webchat" and the signing party
-            of the JWT token must have a corresponding endorsement of “Webchat”.
+            of the JWT token must have a corresponding endorsement of "Webchat".
             </summary>
         <returns>True if the channel ID is found in the endorsements list; otherwise, false.</returns>
         <remarks>

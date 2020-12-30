@@ -626,7 +626,7 @@ You can now interact with your bot.
 
 <!------------------------------------------------------------------------------------------------------------------>
 [create-azure-account]: https://azure.microsoft.com/free/?WT.mc_id=A261C142F
-[luis]: https://aka.ms/luis-what-is-luis
+[luis]: /azure/cognitive-services/luis/what-is-luis
 [qnamaker]: /azure/cognitive-services/qnamaker/overview/overview
 [cs-sample-todo-bot]: https://aka.ms/csharp-adaptive-dialog-08-todo-bot-luis-qnamaker-sample
 [lu-templates]: ../file-format/bot-builder-lu-file-format.md

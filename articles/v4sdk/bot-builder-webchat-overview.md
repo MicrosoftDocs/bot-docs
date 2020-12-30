@@ -144,7 +144,7 @@ Web Chat is designed to be customizable without forking the source code. The tab
 See more about [customizing Web Chat](https://github.com/Microsoft/BotFramework-WebChat/blob/master/SAMPLES.md) to learn more on customization.
 
 > [!NOTE]
-> For information on Content Delivery Networks (CDNs) See [Content delivery networks (CDNs)](https://aka.ms/CDN-best-practices)
+> For information on Content Delivery Networks (CDNs) See [Content delivery networks (CDNs)](/azure/architecture/best-practices/cdn)
 
 ## Migrating from Web Chat v3 to v4
 

@@ -2,11 +2,11 @@
 This article starts from the [CoreBot sample app](https://aka.ms/cs-core-sample) and adds the code required to integrate telemetry into any bot. This will enable Application Insights to begin tracking requests.
 
 > [!IMPORTANT]
-> If you have not setup your [Application Insights](https://aka.ms/appinsights-overview) account and created your [Application Insights key](../bot-service-resources-app-insights-keys.md), do that before proceeding.
+> If you have not setup your [Application Insights](/azure/azure-monitor/app/app-insights-overview) account and created your [Application Insights key](../bot-service-resources-app-insights-keys.md), do that before proceeding.
 
 1. Open the [CoreBot sample app](https://aka.ms/cs-core-sample) in Visual Studio.
 
-2. Add  the `Microsoft.Bot.Builder.Integration.ApplicationInsights.Core ` NuGet package. For more information on using NuGet, see [Install and manage packages in Visual Studio](https://aka.ms/install-manage-packages-vs):
+2. Add  the `Microsoft.Bot.Builder.Integration.ApplicationInsights.Core ` NuGet package. For more information on using NuGet, see [Install and manage packages in Visual Studio](/nuget/consume-packages/install-use-packages-visual-studio):
 
 
 3. Include the following statements in `Startup.cs`:
@@ -19,7 +19,7 @@ This article starts from the [CoreBot sample app](https://aka.ms/cs-core-sample)
 
     Note: If you're following along by updating the CoreBot sample code you will notice that the using statement for `Microsoft.Bot.Builder.Integration.AspNet.Core` already exists in the CoreBot sample.
 
-4. Include the following code in the `ConfigureServices()` method in `Startup.cs`. This will make telemetry services available to your bot via [dependency injection (DI)](https://aka.ms/asp.net-core-dependency-interjection):
+4. Include the following code in the `ConfigureServices()` method in `Startup.cs`. This will make telemetry services available to your bot via [dependency injection (DI)](/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2):
     ```csharp
     // This method gets called by the runtime. Use this method to add services to the container.
     public void ConfigureServices(IServiceCollection services)
