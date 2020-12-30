@@ -110,10 +110,10 @@ Next, you need to enable and authorize the Bot skill to connect to your account.
 
 ## Next steps
 
-* [Cortana Skills Kit](https://aka.ms/CortanaSkillsKitOverview)
+* [Cortana Skills Kit](/cortana/skills/overview)
 * [Enable debugging](bot-service-debug-cortana-skill.md)
 * [Publish a Cortana skill][publish]
 
 [invocation]: https://docs.microsoft.com/cortana/skills/cortana-invocation-guidelines
 [publish]: https://docs.microsoft.com/cortana/skills/publish-skill
-[CortanaEntity]: https://aka.ms/cortana-channel-data
+[CortanaEntity]: /cortana/skills/cortana-channel-data

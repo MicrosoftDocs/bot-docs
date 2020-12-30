@@ -195,16 +195,16 @@ The cross-trained recognizer set compares recognition results from multiple reco
 [3]:bot-builder-concept-dialog.md
 [4]:bot-builder-concept-adaptive-dialog-generators.md
 [5]:https://github.com/microsoft/botbuilder/blob/master/specs/botframework-activity/botframework-activity.md#locale
-[6]:https://aka.ms/luis-what-is-luis
+[6]:/azure/cognitive-services/luis/what-is-luis
 [7]:https://aka.ms/botbuilder-luis-concept?view=azure-bot-service-4.0
 [8]:../file-format/bot-builder-lu-file-format.md
 [9]:bot-builder-concept-adaptive-expressions.md
 [10]:bot-builder-concept-adaptive-dialog-memory-states.md
 [11]:https://aka.ms/luis-concept-data-extraction?tabs=v2
-[12]:https://aka.ms/bot-service-add-luis-to-bot
+[12]:bot-builder-howto-v4-luis.md
 [13]:https://qnamaker.ai
 [14]:https://azure.microsoft.com/services/cognitive-services/
-[15]:https://aka.ms/adaptive-cards-overview
+[15]:/adaptive-cards
 [recognizers-ref]: ../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md
 [how-to-deploy-using-luis-cli]: ../v4sdk/bot-builder-howto-bf-cli-deploy-luis.md
 [interruptions]: bot-builder-concept-adaptive-dialog-interruptions.md
