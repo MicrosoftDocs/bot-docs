@@ -59,7 +59,7 @@ With the Direct Line Speech channel connected to your bot, you now need to enabl
 
 1. Click `Save` at the top of the configuration page.
 
-1. The Bot Framework Protocol Streaming Extensions are now enabled for your bot. You are now ready to update your bot code and [integrate Streaming Extensions support](https://aka.ms/botframework/addstreamingprotocolsupport) to an existing bot project.
+1. The Bot Framework Protocol Streaming Extensions are now enabled for your bot. You are now ready to update your bot code and [integrate Streaming Extensions support](https://aka.ms/botframework/addstreamingprotocolsupport) to an existing bot project. If you used the Bot Framework Composer, feel free to skip this step.
 
 ## Adding protocol support to your bot
 
