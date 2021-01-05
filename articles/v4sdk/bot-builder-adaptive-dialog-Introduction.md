@@ -38,7 +38,7 @@ Adaptive dialogs have many advantages to [WaterfallDialogs][17]. Primarily, they
 * Support extensibility points for recognition, event rules and machine learning.
 * Was designed to be declarative from the start. This enables tooling including products like [Bot Framework Composer](/composer/) that provides a visual canvas to model conversations.
 
-## Anatomy of an adaptive dialog  
+## Anatomy of an adaptive dialog
 
 <p align="center">
     <img alt="Adaptive_dialog_anatomy" src="./media/adaptive-dialogs/adaptive-dialog-anatomy.png" style="max-width:700px;" />
@@ -52,7 +52,7 @@ See the [_Events and triggers in adaptive dialogs_][3] article for more informat
 
 <!--- If an event is not handled in a child dialog, it gets passed up to its parent dialog to handle and this continues until it is either handled or reaches the bots main dialog. If no event handler is found, it will be ignored and no action will be taken.
 
-_Triggers_ enable you to catch and respond to events. The broadest trigger is the OnEvent trigger that allows you to catch and attach a set of steps to execute when a specific event is emitted by any sub-system. Adaptive dialogs supports a couple of other specialized triggers to wrap common events that your bot would handle. See [here][3] to learn more about supported triggers and their usage.-->
+_Triggers_ enable you to catch and respond to events. The broadest trigger is the OnEvent trigger that allows you to catch and attach a set of steps to execute when a specific event is emitted by any sub-system. Adaptive dialogs supports a couple of other specialized triggers to wrap common events that your bot would handle. See [learn more about triggers][3] to learn more about supported triggers and their usage.-->
 
 ### Actions
 

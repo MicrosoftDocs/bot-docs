@@ -88,7 +88,7 @@ In addition, you can embed experiences into desktop and mobile apps (like cars, 
 
 The Virtual Assistant solution is built on the Azure Bot Service, Language Understanding Cognitive Service, and Unified Speech along with a broad set of supporting Azure components. This means that you benefit from the [Azure global infrastructure](https://azure.microsoft.com/global-infrastructure/), including ISO 27018, HIPPA, PCI DSS, and SOC 1, 2, and 3 certification.
 
-In addition, Language Understanding support is provided by the LUIS Cognitive Service which supports a broad set of languages [listed here](https://docs.microsoft.com/azure/cognitive-services/luis/luis-supported-languages). The [Translator Cognitive Service](https://azure.microsoft.com/services/cognitive-services/translator-text-api/) provides additional machine translation capabilities to extend the reach of your Virtual Assistant even further.
+In addition, Language Understanding support is provided by the LUIS Cognitive Service which supports a broad set of languages, see [supported languages](https://docs.microsoft.com/azure/cognitive-services/luis/luis-supported-languages). The [Translator Cognitive Service](https://azure.microsoft.com/services/cognitive-services/translator-text-api/) provides additional machine translation capabilities to extend the reach of your Virtual Assistant even further.
 
 ### Integrated and Context Aware
 
@@ -104,7 +104,7 @@ Our Virtual Assistant architecture is flexible and can be integrated with existi
 
 ### Adaptive Cards
 
-[Adaptive Cards](https://adaptivecards.io/) provide the ability for your Virtual Assistant to return user experience (UX) elements (e.g. Cards, Images, Buttons) alongside text-based responses. If the device or conversation canvas has a screen these Adaptive Cards can be rendered across a broad range of devices and platforms, providing UX support where appropriate. Examples of Adaptive Cards can be found [here](https://adaptivecards.io/samples/) with information on rendering options in the documentation [here](https://docs.microsoft.com/adaptive-cards/rendering-cards/getting-started).
+[Adaptive Cards](https://adaptivecards.io/) provide the ability for your Virtual Assistant to return user experience (UX) elements (e.g. Cards, Images, Buttons) alongside text-based responses. If the device or conversation canvas has a screen these Adaptive Cards can be rendered across a broad range of devices and platforms, providing UX support where appropriate. Examples of Adaptive Cards can be found in these [samples](https://adaptivecards.io/samples/) with information on rendering options in the [getting started](https://docs.microsoft.com/adaptive-cards/rendering-cards/getting-started) documentation .
 
 ### Skills
 

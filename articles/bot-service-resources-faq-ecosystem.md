@@ -70,7 +70,7 @@ services.AddSingleton<IChannelProvider, ConfigurationChannelProvider>();
 options.ChannelProvider = new ConfigurationChannelProvider();
 ```
 
-You can find more information concerning Government Services [here](https://docs.microsoft.com/azure/azure-government/documentation-government-services-aiandcognitiveservices#azure-bot-service)
+The Azure Government documentation describes which [Azure Bot Service features are supported](https://docs.microsoft.com/azure/azure-government/documentation-government-services-aiandcognitiveservices#azure-bot-service).
 
 ## What is the Direct Line channel?
 

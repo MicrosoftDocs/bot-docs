@@ -43,7 +43,7 @@ In this article you will learn about:
 * A published QnA Maker knowledge base. If you do not have one, follow the steps in [Create and answer from KB](/azure/cognitive-services/qnamaker/tutorials/create-publish-query-in-portal/) tutorial to create a QnA Maker knowledge base with questions and answers.
 
 > [!NOTE]
-> This article will build on the [QnA Maker sample code](https://aka.ms/cs-qna) by stepping you through the steps required to incorporate telemetry. 
+> This article will build on the [QnA Maker sample code](https://aka.ms/cs-qna) by stepping you through the steps required to incorporate telemetry.
 
 ## Wiring up telemetry in your QnA Maker bot
 
@@ -128,7 +128,7 @@ We will start with the [QnA Maker sample app](https://aka.ms/cs-qna) and add the
     > [!Note]
     >
     > * Details on getting the _Application Insights instrumentation key_ can be found in the article [Application Insights keys](../bot-service-resources-app-insights-keys.md).
-    > * You should already have a [QnA maker account](/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure), if needed you can find information on getting the QnA Knowledgebase Id, Endpoint Key and HostName values [here](/azure/cognitive-services/qnamaker/how-to/key-management).
+    > * You should already have a [QnA maker account](/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure), if needed you can find information on getting the QnA Knowledgebase Id, Endpoint Key and HostName values in the [key management](/azure/cognitive-services/qnamaker/how-to/key-management) article.
 
 At this point the preliminary work to enable telemetry using Application Insights is done.  You can run your bot locally using the bot Emulator and then go into Application Insights to see what is being logged such as response time, overall app health, and general running information.
 
@@ -210,14 +210,14 @@ You can view the results of your QnA Maker bot usage in Application Insights aft
 
 ### Modifying or extending the default event properties
 
-If you need properties that are not defined in the `QnAMaker` class there are two ways of handling this, both require creating your own class derived from the `QnAMaker` class. The first is explained in the section below titled [Adding properties](#adding-properties) in which you add properties to the existing `QnAMessage` event. The second method allows you to create new events to which you can add properties as described in [Adding new events with custom properties](#adding-new-events-with-custom-properties).  
+If you need properties that are not defined in the `QnAMaker` class there are two ways of handling this, both require creating your own class derived from the `QnAMaker` class. The first is explained in the section below titled [Adding properties](#adding-properties) in which you add properties to the existing `QnAMessage` event. The second method allows you to create new events to which you can add properties as described in [Adding new events with custom properties](#adding-new-events-with-custom-properties).
 
 > [!Note]
 > The `QnAMessage` event is part of the Bot Framework SDK and provides all of the out-of-the-box event properties that are logged to Application Insights.
 
 #### Adding properties
 
-The following demonstrates how you can derive from the `QnAMaker` class.  The example shows adding the property "MyImportantProperty" to the `QnAMessage` event.  The `QnAMessage` event is logged every time a QnA [GetAnswers](/dotnet/api/microsoft.bot.builder.ai.qna.qnamaker.getanswersasync?view=botbuilder-dotnet-stable) call is performed.  
+The following demonstrates how you can derive from the `QnAMaker` class.  The example shows adding the property "MyImportantProperty" to the `QnAMessage` event.  The `QnAMessage` event is logged every time a QnA [GetAnswers](/dotnet/api/microsoft.bot.builder.ai.qna.qnamaker.getanswersasync?view=botbuilder-dotnet-stable&preserve-view=true) call is performed.
 
 After learning how to add custom properties we will learn how to create a new custom event and associate properties with it, then we will run the bot locally using the Bot Framework Emulator and see what is being logged in Application Insights using the Kusto query language.
 
@@ -257,8 +257,8 @@ After learning how to add custom properties we will learn how to create a new cu
             {
 
             }
-        } 
-    }  
+        }
+    }
     ```
 
 3. Add the new property to the QnAMessage event after the constructor and include the statements `System.Collections.Generic`, `System.Threading`, and `System.Threading.Tasks`:
@@ -270,7 +270,7 @@ After learning how to add custom properties we will learn how to create a new cu
     using System.Collections.Generic;
     using System.Threading;
     using System.Threading.Tasks;
- 
+
     namespace Microsoft.BotBuilderSamples
     {
             public class MyQnAMaker : QnAMaker
@@ -303,8 +303,8 @@ After learning how to add custom properties we will learn how to create a new cu
                                 );
             }
 
-        } 
-    }    
+        }
+    }
     ```
 
 4. Modify your bot to use the new class, instead of creating a `QnAMaker` object you will create a `MyQnAMaker` object in  `QnABot.cs`:
@@ -366,7 +366,7 @@ public class MyQnAMaker : QnAMaker
                     "MySecondEvent",
                     secondEventProperties);
 
-} 
+}
 ```
 
 ## The Application Insights dashboard

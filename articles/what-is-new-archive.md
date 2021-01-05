@@ -235,9 +235,6 @@ Bot Framework Composer is a visual authoring canvas for developers and multi-dis
 * Powerful language generation and templating systems.
 * A ready-to-use bot run-time executable.
 
-### Additional information
-- You can see previous announcements [here](what-is-new-archive.md).
-
 ## What's new November 2019
 
 The Bot Framework SDK v4 is an [Open Source SDK](https://github.com/microsoft/botframework-sdk/#readme) that enable developers to model and build sophisticated conversation
@@ -300,7 +297,7 @@ that allows clients to connect directly to bots using the Direct Line API. This 
 ### Bot Framework SDK
 - [Adaptive Dialog (SDK v4.6 preview)](https://github.com/Microsoft/BotBuilder-Samples/tree/master/experimental/adaptive-dialog#readme) | [docs](https://github.com/Microsoft/BotBuilder-Samples/tree/master/experimental/adaptive-dialog/docs) | [C# samples](https://github.com/Microsoft/BotBuilder-Samples/tree/master/experimental/adaptive-dialog/csharp_dotnetcore):
 Adaptive Dialog now allow developers to dynamically update conversation flow based on context and events. This is especially useful when dealing with conversation context switches and interruptions in the middle of a conversation.
-  
+
 - [Bot Framework Python SDK (preview 2)](https://github.com/microsoft/botbuilder-python) | [samples](https://github.com/Microsoft/botbuilder-python/tree/master/samples): The Python SDK now supports OAuth, Prompts, CosmosDB, and includes all major functionality in SDK 4.5. Plus, samples to help you learn about the new features in the SDK.
 
 ### Bot Framework Testing

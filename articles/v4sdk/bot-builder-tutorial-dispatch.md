@@ -84,7 +84,7 @@ For more information, see how to **Create a LUIS app in the LUIS portal** and **
 
 ### Create the QnA Maker knowledge base
 
-The first step to setting up a QnA Maker knowledge base is to set up a QnA Maker service in Azure. To do that, follow the step-by-step instructions found [here](/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure).
+The first step to setting up a QnA Maker knowledge base is to set up a QnA Maker service in Azure. To do that, follow the step-by-step instructions found the [set up qnamaker service](/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure) article.
 
 Once your QnA Maker Service has been created in Azure, you need to record the Cognitive Services _Key 1_ provided for your QnA Maker service. This will be used as \<azure-qna-service-key1> when adding the QnA Maker app to your dispatch application.
 
