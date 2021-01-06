@@ -300,7 +300,7 @@ For an end to end example of cross training your bot, see how to [Create a bot c
 
 - `--in`: The directory, including sub-directories, that will be searched for both `.lu` and `.qna` files.
 - `--out`: The directory that the new cross-trained `.lu` and `.qna` output files will be saved to. This is the directory to which you will point the `luis:build` command's `--in` option.
-- `--config`: This points to the cross-train configuration file, a JSON file that is necessary for the command to work. 
+- `--config`: This points to the cross-train configuration file, a JSON file that is necessary for the command to work.
 
 #### The cross-train configuration file
 
@@ -433,10 +433,10 @@ If language is included, the example config should be like this:
 [3]:https://github.com/microsoft/botbuilder/blob/master/specs/botframework-activity/botframework-activity.md#locale
 [4]:https://luis.ai
 [5]:/azure/cognitive-services/luis/what-is-luis
-[6]:https://aka.ms/botbuilder-luis-concept?view=azure-bot-service-4.0
+[6]:../v4sdk/bot-builder-concept-luis.md
 [7]:../file-format/bot-builder-lu-file-format.md
 [8]:../v4sdk/bot-builder-concept-adaptive-expressions.md
-[9]:https://aka.ms/luis-concept-data-extraction?tabs=v2
+[9]:/azure/cognitive-services/luis/luis-concept-data-extraction?tabs=V2
 [10]:../v4sdk/bot-builder-howto-v4-luis.md
 [11]:/azure/cognitive-services/luis/luis-how-to-start-new-app
 [12]:https://qnamaker.ai

@@ -225,7 +225,7 @@ During this release, the Bot Builder Community has further raised the bar by add
 
 ### Bot Framework Composer
 
-[Bot Framework Composer](https://docs.microsoft.com/composer/) is Generally Available (GA) on the [Windows](https://aka.ms/bf-composer-download-win) | [macOS](https://aka.ms/bf-composer-download-mac) | [Linux](https://aka.ms/bf-composer-download-linux) platforms.
+[Bot Framework Composer](https://docs.microsoft.com/composer/) is Generally Available (GA) on the [Windows](https://aka.ms/composer-windows-download) | [macOS](https://aka.ms/composer-mac-download) | [Linux](https://aka.ms/composer-linux-download) platforms.
 
 Bot Framework Composer is a visual authoring canvas for developers and multi-disciplinary teams to build bots. It is an open source conversational application based on the Microsoft Bot Framework SDK. Within Composer, you will find everything you need to build a sophisticated conversational experience:
 
