@@ -17,7 +17,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 This how to article describes the steps required to create a bot that integrates the capabilities of both [LUIS][luis] and [QnA Maker][qnamaker] together in each of your adaptive dialogs enabling each to determine the best possible response to the user, using [language generation][language-generation], regardless of which dialog is active.
 
-Integrating the capabilities of both LUIS and QnA Maker requires the use of either the `luis:cross-train` or `qnamaker:cross-train` CLI command to _cross-train_ your `.lu` and `.qna` files, as well as using the [cross-trained recognizer set][cross-trained-recognizer-set-concept] as the adaptive dialogs recognizer.
+Integrating the capabilities of both LUIS and QnA Maker requires the use of either the `luis:cross-train` or `qnamaker:cross-train` CLI command to _cross-train_ your .lu and .qna files, as well as using the [cross-trained recognizer set][cross-trained-recognizer-set-concept] as the adaptive dialogs recognizer.
 
 ## Prerequisites
 
@@ -50,7 +50,7 @@ This article describes how to create a bot that is cross trained to use both LUI
 
 ## The todo bot with LUIS and QnA Maker sample
 
-The adaptive **todo bot with LUIS and QnA Maker** ([**C#**][cs-sample-todo-bot]) sample has five `.lu` files and six `.qna` files for language understanding. When creating the cross-trained language understanding models you will combine the `.lu` and `.qna` files in a way that will enable you to utilize the capabilities of both LUIS and QnA Maker together in the same recognizer, enabling you to train the recognizer how best to interpret and respond to a user's request. After running the cross-train command you will have new copies of each file, but they will be updated so that the `.lu` files contain the required `.qna` information and the `.qna` files contain the required `.lu` information, enabling the [Cross-trained recognizer set][crosstrainedrecognizerset-ref-guide] to determine how to best handle a users request.
+The adaptive **todo bot with LUIS and QnA Maker** ([**C#**][cs-sample-todo-bot]) sample has five .lu files and six .qna files for language understanding. When creating the cross-trained language understanding models you will combine the .lu and .qna files in a way that will enable you to utilize the capabilities of both LUIS and QnA Maker together in the same recognizer, enabling you to train the recognizer how best to interpret and respond to a user's request. After running the cross-train command you will have new copies of each file, but they will be updated so that the .lu files contain the required .qna information and the .qna files contain the required .lu information, enabling the [Cross-trained recognizer set][crosstrainedrecognizerset-ref-guide] to determine how to best handle a users request.
 
 If you have not done it yet, clone the latest samples repository. You can use the following git command from a console window:
 ```cmd
@@ -101,7 +101,7 @@ The QnA Maker resource will contain the value needed for the _subscriptionKey_ o
 
 ## Generate cross-trained LU models
 
-Before running the build command to create your LUIS applications and QnA Maker knowledge base in Azure cognitive services, you need to _cross-train_ your `.lu` and `.qna` files to include the information required by your bot's recognizer to defer user input to either LUIS or QnA Maker for processing. To better understand the concept of cross training please refer to the [Cross train your bot to use both LUIS and QnA Maker recognizers](bot-builder-concept-cross-train.md) article. For details on the `cross-train` command, please refer to the _Cross-trained recognizer set_ section of the [Recognizers in adaptive dialogs - reference guide](../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md#cross-trained-recognizer-set).
+Before running the build command to create your LUIS applications and QnA Maker knowledge base in Azure cognitive services, you need to _cross-train_ your .lu and .qna files to include the information required by your bot's recognizer to defer user input to either LUIS or QnA Maker for processing. To better understand the concept of cross training please refer to the [Cross train your bot to use both LUIS and QnA Maker recognizers](bot-builder-concept-cross-train.md) article. For details on the `cross-train` command, please refer to the _Cross-trained recognizer set_ section of the [Recognizers in adaptive dialogs - reference guide](../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md#cross-trained-recognizer-set).
 
 #### Cross-train the _todo bot with LUIS and QnA Maker_ sample
 
@@ -121,17 +121,17 @@ To cross-train the **todo bot with LUIS and QnA Maker** sample:
       bf luis:cross-train -i dialogs -o generated --config dialogs\DialogLuHierarchy.config.json --force
    ```
 
-Once finished you will have cross-trained versions of the five `.lu` files and six `.qna` files. Here `--force` is used to force overwrite the existing `.lu` and `.qna` files if they already exist. Otherwise, for .lu files like `AddToDoDialog.lu`, the cross-trained content will write to file with name `AddToDoDialog(1).lu`. When running the build commands in the following sections, point to the generated directory for the input files.
+Once finished you will have cross-trained versions of the five .lu files and six .qna files. Here `--force` is used to force overwrite the existing .lu and .qna files if they already exist. Otherwise, for .lu files like `AddToDoDialog.lu`, the cross-trained content will write to file with name `AddToDoDialog(1).lu`. When running the build commands in the following sections, point to the generated directory for the input files.
 
 > [!IMPORTANT]
 >
-> You need to run either the `luis:cross-train` command or the `qnamaker:cross-train` command, you do not need to run both. by running `luis:cross-train`, all of the required cross-train information will be included in the resulting `.lu` and `.qna` files. Running both will work, but is unnecessary.
+> You need to run either the `luis:cross-train` command or the `qnamaker:cross-train` command, you do not need to run both. by running `luis:cross-train`, all of the required cross-train information will be included in the resulting .lu and .qna files. Running both will work, but is unnecessary.
 
 ## Create and publish LUIS applications using the build command
 
-For each `.lu` file, including `.lu` files for each locale, the build command combines all the following actions into a single command:
+For each .lu file, including .lu files for each locale, the build command combines all the following actions into a single command:
 
-1. Creates one LUIS model for every locale found using your existing `.lu` files.
+1. Creates one LUIS model for every locale found using your existing .lu files.
 1. Using that model, it creates a new (or updates an existing) LUIS app in the specified Azure Cognitive Services resource.
    - When updating an existing LUIS app, it will automatically increment the versionId and optionally delete the old version.
 1. Trains the new or updated LUIS app, then publishes it.
@@ -150,11 +150,11 @@ Here is the LUIS build command with required parameters:
 bf luis:build --in <input-file-or-folder> --out <output-file-or-folder> --botName <bot-name> --authoringKey <subscription-key> --region <authoring-region>
 ```
 
-The `luis:build` command will create all assets you need from your local `.lu` files.
+The `luis:build` command will create all assets you need from your local .lu files.
 
 ### Required luis:build parameters
 
-- `--in`: The directory that will be searched for `.lu` files.
+- `--in`: The directory that will be searched for .lu files.
 - `--out`: The directory to save output files to.
 - `--botName`: The name of your bot. This will be used as the prefix for the name of the LUIS applications generated.
 - `--authoringKey`: This is the subscriptionKey.
@@ -222,7 +222,7 @@ To create the LUIS applications for the **todo bot with LUIS and QnA Maker** sam
 >
 > If you haven't done so already, you will need to [Migrate to an Azure resource authoring key][luis-migration-authoring]. If you don't, you will not see the LUIS Applications in [LUIS][luis] created using the `luis:build` command.
 
-Once finished you will have a LUIS application for each of the five `.lu` files in [LUIS](https://www.luis.ai/conversations/applications):
+Once finished you will have a LUIS application for each of the five .lu files in [LUIS](https://www.luis.ai/conversations/applications):
 
 ![LUIS My apps list](./media/adaptive-dialogs/luis-apps-list.png)
 
@@ -234,7 +234,7 @@ Once finished you will have a LUIS application for each of the five `.lu` files 
 
 The `qnamaker:build` command combines all the following actions into a single command:
 
-1. Creates one QnA Maker model for every locale found using your existing `.qna` files.
+1. Creates one QnA Maker model for every locale found using your existing .qna files.
 1. Creates a new QnA Maker KB if none exists, otherwise it will overwrite the existing KB.
 1. It trains your QnA Maker KB then publishes it to the production endpoint.
 
@@ -315,7 +315,7 @@ To create the QnA Maker knowledge base for the **todo bot with LUIS and QnA Make
       bf qnamaker:build --qnaConfig qnaConfig.json
    ```
 
-Once finished you will have a QnA Maker knowledge base with all of the questions and answers from the five `.qna` files in [QnA Maker](https://www.qnamaker.ai/Home/MyServices):
+Once finished you will have a QnA Maker knowledge base with all of the questions and answers from the five .qna files in [QnA Maker](https://www.qnamaker.ai/Home/MyServices):
 
 ![QnA Maker KB list](./media/adaptive-dialogs/qna-maker-kb-list.png)
 
@@ -583,7 +583,7 @@ new TextInput()
 
 > [!NOTE]
 >
->The concept article [Cross training your LUIS and QnA Maker models](bot-builder-concept-cross-train.md) describes the changes made to your `.lu` and `.qna` files when they are cross trained, and the [recognizer responses table](bot-builder-concept-cross-train.md#recognizer-responses) in that article shows all possible recognizer responses and the resulting action taken by the bot.
+>The concept article [Cross training your LUIS and QnA Maker models](bot-builder-concept-cross-train.md) describes the changes made to your .lu and .qna files when they are cross trained, and the [recognizer responses table](bot-builder-concept-cross-train.md#recognizer-responses) in that article shows all possible recognizer responses and the resulting action taken by the bot.
 
 
 ## Testing the bot using Bot Framework Emulator
