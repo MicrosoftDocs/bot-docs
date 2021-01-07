@@ -188,7 +188,7 @@ Or a travel bot asking for the users departure airport and the user responds wit
 >
 > **User**: I need to fly from Detroit to Seattle
 
-Flexible entity extraction enables you to handle these situations gracefully. To do this you will need to define intents with specific utterances in your `.lu` files that you would expect a user to enter, for the first example above, the following template defines the `getUserProfile` intent with a list of possible utterances that assign the user entered values into the `@firstName` and `@userAge` variables:
+Flexible entity extraction enables you to handle these situations gracefully. To do this you will need to define intents with specific utterances in your .lu files that you would expect a user to enter, for the first example above, the following template defines the `getUserProfile` intent with a list of possible utterances that assign the user entered values into the `@firstName` and `@userAge` variables:
 
 ```lu
 # getUserProfile

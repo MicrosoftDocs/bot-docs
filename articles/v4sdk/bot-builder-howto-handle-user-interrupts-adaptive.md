@@ -183,9 +183,9 @@ The RootDialog is the root adaptive dialog of this bot. It is the parent of the 
 
 The first thing that happens when `rootDialog` is created is defining its recognizer. In this sample you will be using a LUIS adaptive recognizer. Instructions for getting your bot to work using the LUIS recognizer are detailed in the section [Setting up LUIS to work in your bot](#setting-up-luis-to-work-in-your-bot).
 
-Every adaptive dialog has its own recognizer, and all adaptive dialogs that use the LUIS recognizer can have one or more `.lu` files. This file is generally given the same name as the filename containing the dialog, with the `.lu` file extension, for example if the file hosting the dialog is named _RootDialog_, then the the .lu file will be _RootDialog.lu_. The .lu file is used exclusively by that dialog. For more information on `.lu` files, see the article [.lu file format][lu].
+Every adaptive dialog has its own recognizer, and all adaptive dialogs that use the LUIS recognizer can have one or more .lu files. This file is generally given the same name as the filename containing the dialog, with the .lu file extension, for example if the file hosting the dialog is named _RootDialog_, then the the .lu file will be _RootDialog.lu_. The .lu file is used exclusively by that dialog. For more information on .lu files, see the article [.lu file format][lu].
 
-In the `.lu` file you define the [intents][intents], [utterances][utterances] and [entities][entities] that are to be used in that dialog. If an adaptive dialog does not define a trigger to handle a particular intent, but one of its parent adaptive dialogs does, then the consultation mechanism lets the parent dialog handle the utterance. Once that process is complete, the user is returned back to where the conversation was before the interruption.
+In the .lu file you define the [intents][intents], [utterances][utterances] and [entities][entities] that are to be used in that dialog. If an adaptive dialog does not define a trigger to handle a particular intent, but one of its parent adaptive dialogs does, then the consultation mechanism lets the parent dialog handle the utterance. Once that process is complete, the user is returned back to where the conversation was before the interruption.
 
 <!--# [C#](#tab/csharp)-->
 
@@ -257,7 +257,7 @@ createLuisRecognizer() {
 
 #### RootDialog Generator
 
-The generator requires a valid [language generation][language-generation] (.lg) file that defines the language generation templates that will be used by that dialog. This file is given the same name as the filename containing the dialog, with the `.lg` file extension, for example if the file hosting the dialog is named _RootDialog_, then the the .lg file will be _RootDialog.lg_. The .lg file is used exclusively by that dialog.
+The generator requires a valid [language generation][language-generation] (.lg) file that defines the language generation templates that will be used by that dialog. This file is given the same name as the filename containing the dialog, with the .lg file extension, for example if the file hosting the dialog is named _RootDialog_, then the the .lg file will be _RootDialog.lg_. The .lg file is used exclusively by that dialog.
 
 <!--# [C#](#tab/csharp)-->
 
@@ -508,7 +508,7 @@ There are also two local interrupts defined. They are defined as `OnIntent` acti
 
 Configuring its recognizer is the first thing that happens when `userProfileDialog` is created. Every dialog configures its own recognizer independent of all other dialogs, and each dialog can use the same type of recognizer, or each can use a different type of recognizer. Each dialog in your bot can use any type of recognizer defined in the Bot Framework SDK, regardless of what any other dialog is using. To learn more about the different types available, see the [recognizer types][recognizer-types] section of the recognizers concept article. <!---  Add ", or a custom recognizer" once there is an article that discusses this.  -->
 
-As mentioned previously, every adaptive dialog has its own recognizer, and the `.lu` file associated with it is exclusively tied to that dialog. In the `.lu` file, you define the [intents][intents], [utterances][utterances] and [entities][entities] that are to be used in that dialog. If the user enters an intent that is not defined in that dialog's `.lu` file, the adaptive dialog consultation mechanism enables your bot to bubble up the user intent to the parent dialog to handle, if it can. In this case, the _Help_ and _Cancel_ intents are defined in the root dialog, but your bot can still handle those user intents even when `userProfileDialog` is the active dialog. This is explained in detail in a later section, titled [GetUserProfileDialog Triggers](#getuserprofiledialog-triggers).
+As mentioned previously, every adaptive dialog has its own recognizer, and the .lu file associated with it is exclusively tied to that dialog. In the .lu file, you define the [intents][intents], [utterances][utterances] and [entities][entities] that are to be used in that dialog. If the user enters an intent that is not defined in that dialog's .lu file, the adaptive dialog consultation mechanism enables your bot to bubble up the user intent to the parent dialog to handle, if it can. In this case, the _Help_ and _Cancel_ intents are defined in the root dialog, but your bot can still handle those user intents even when `userProfileDialog` is the active dialog. This is explained in detail in a later section, titled [GetUserProfileDialog Triggers](#getuserprofiledialog-triggers).
 
 For the most part, the code in GetUserProfileDialog used to define the recognizer is the same as the code used in the [root dialog](#rootdialog-recognizer), the only difference is that you need to reference GetUserProfileDialog_en_us_lu for the `ApplicationId ` value as opposed to RootDialog_en_us_lu, in the `CreateLuisRecognizer` method. See the section [Files generated](#files-generated) for more information about the file being referenced.
 
@@ -535,7 +535,7 @@ For the most part, the code in GetUserProfileDialog used to define the recognize
 
 #### GetUserProfileDialog Generator
 
-The generator consists of your LG template file that is in the same directory as the file containing the source code of your adaptive dialog, with the same filename and the `.lg` file extension such as **GetUserProfileDialog.lg**.<!-- if programming using C# or **getUserProfileDialog.lg** if using JavaScript.-->
+The generator consists of your LG template file that is in the same directory as the file containing the source code of your adaptive dialog, with the same filename and the .lg file extension such as **GetUserProfileDialog.lg**.<!-- if programming using C# or **getUserProfileDialog.lg** if using JavaScript.-->
 
 <!--# [C#](#tab/csharp)-->
 

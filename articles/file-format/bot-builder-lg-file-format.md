@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-The `.lg` file describes language generation templates with entity references and their composition. This article covers the various concepts expressed with the `.lg` file format.
+The .lg file describes language generation templates with entity references and their composition. This article covers the various concepts expressed with the .lg file format.
 
 ## Special Characters
 

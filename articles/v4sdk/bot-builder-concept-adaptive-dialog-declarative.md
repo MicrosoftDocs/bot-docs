@@ -408,7 +408,7 @@ For an example see [Creating the schema file][creating-the-schema-file] in the _
 <!--
 > [!TIP]
 >
-> For users of C#: NuGet does not deal well with content files, so all declarative `.dialog`, `.lu`, `.lg`, and `.qna` files will be copied into `generated/<package>` so you can easily include them in your project output.
+> For users of C#: NuGet does not deal well with content files, so all declarative `.dialog`, .lu, .lg, and .qna files will be copied into `generated/<package>` so you can easily include them in your project output.
 -->
 
 ### The verify command
