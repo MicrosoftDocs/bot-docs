@@ -15,6 +15,8 @@ ms.author: tysonn
 - [Contribute to Bot Framework documentation](../README.md)
 - [Content channel guidance](content-channel-guidance.md)
 - [Style and voice](style-and-voice.md)
+- [Formatting text](formatting-text.md)
+- [Bot Framework terms (glossary)](bot-framework-glossary.md)
 
 ## Authoring articles: tools, processes, guidance
 
