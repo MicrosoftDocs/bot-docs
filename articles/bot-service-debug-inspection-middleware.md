@@ -14,7 +14,7 @@ ms.date: 11/17/2020
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-This article describes how to debug your bot using inspection middleware. This feature allows the Bot Framework Emulator to debug traffic into and out of the bot in addition to looking at the current state of the bot. You can use a trace message to send data to the Emulator and then inspect the state of your bot in any given turn of the conversation.
+This article describes how to debug a bot using inspection middleware. This feature allows the Bot Framework Emulator to debug traffic into and out of the bot in addition to looking at the current state of the bot. You can use a trace message to send data to the Emulator and then inspect the state of your bot in any given turn of the conversation.
 
 We use an EchoBot built locally using the Bot Framework v4
 ([C#](dotnet/bot-builder-dotnet-sdk-quickstart.md) |
@@ -32,9 +32,9 @@ We use an EchoBot built locally using the Bot Framework v4
 
 Before using the bot inspection middleware to debug your bot, you need to update your Emulator to be version 4.5 or newer. Check the [latest version](https://github.com/Microsoft/BotFramework-Emulator/releases) for updates.
 
-To check the version of your Emulator, select **Help** -> **About** in the menu. You will see the current version of your Emulator.
+To check the version of your Emulator, select **Help** > **About** in the menu. You will see the current version of your Emulator.
 
-![current-version](./media/bot-debug-inspection-middleware/bot-debug-check-emulator-version.png)
+![current version](./media/bot-debug-inspection-middleware/bot-debug-check-emulator-version.png)
 
 ## Update your bot's code
 
@@ -92,7 +92,7 @@ Set up the inspection state in the **app.py** file by adding a middleware to the
 
 Update the bot class in the **echo_bot.py** file.
 
-**bots/echo_bot.py** 
+**bots/echo_bot.py**
 
 [!code-python [inspection bot sample](~/../botbuilder-samples/samples/python/47.inspection/bots/echo_bot.py?range=16-64)]
 
@@ -149,7 +149,7 @@ To run your bot locally do the following:
 
 1. Navigate to your bot's folder in a terminal and set your npm registration to use the [latest builds](https://botbuilder.myget.org/feed/botbuilder-v4-js-daily/package/npm/botbuilder-azure)
 
-1. Run your bot locally. You will see your bot expose a port number like 3978.
+1. Run your bot locally. You will see your bot expose a port number like `3978`.
 
 1. Open another command prompt and navigate to your bot's project folder. Run the following command:
 
@@ -182,7 +182,7 @@ Now that your local bot is connected to ngrok you can configure your local bot t
 
     ![test-web-chat](./media/bot-debug-inspection-middleware/bot-debug-test-webchat.png)
 
-1. Now let's enable the debugging mode in the Emulator. In your Emulator select **Debug** -> **Start Debugging**. Fill the ngrok IP address (don't forget to add **/api/messages**) in the **Bot URL** (for example, https://e58549b6.ngrok.io/api/messages). Fill **Microsoft App ID** with **appId** and **Microsoft App password** with **appSecret**. Make sure **Open in debug mode** is checked as well. Click **Connect**.
+1. Now let's enable the debugging mode in the Emulator. In your Emulator select **Debug** > **Start Debugging**. Enter the ngrok IP address (don't forget to add **/api/messages**) for the **Bot URL** (for example, `https://e58549b6.ngrok.io/api/messages`). For **Microsoft App ID**, enter your bot's app ID. For **Microsoft App password**, enter your bot's app secret. Make sure **Open in debug mode** is checked as well. Click **Connect**.
 
 1. When the debugging mode is enabled a UUID will be generated in your Emulator. A UUID is a unique ID generated every time you start the debugging mode in your Emulator. Copy and paste the UUID to the **Test in Web Chat** chat box or your channel's chat box. You will see the message "Attached to session, all traffic is being replicated for inspection" in the chat box.
 
@@ -192,6 +192,6 @@ You can start debugging your bot by sending messages in the configured channel's
 
 ## Additional resources
 
-- Try the new inspection bot samples here: [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/47.inspection) and [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/47.inspection).
+- Try the inspection middleware bot sample in [C#](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/47.inspection), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/47.inspection), or [Python](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/python/47.inspection) .
 - Read [troubleshoot general problems](bot-service-troubleshoot-bot-configuration.md) and the other troubleshooting articles in that section.
 - Read the how to [Debug with the Emulator](bot-service-debug-emulator.md) article.

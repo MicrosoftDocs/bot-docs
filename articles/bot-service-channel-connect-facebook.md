@@ -85,7 +85,7 @@ The bot is accessed through a Facebook Page.
 
 ### Enable webhooks
 
-In order to send messages and other events from your bot to Facebook Messenger, you must enable webhooks integration. At this point, let's leave the Facebook setting steps pending; we will come back to them.
+In order to send messages and other events from your bot to Facebook Messenger, you must enable webhooks integration. At this point, leave the Facebook setting steps pending and come back to them later.
 
 1. In your browser open a new window and navigate to the [Azure portal](https://portal.azure.com/).
 
@@ -351,7 +351,7 @@ To complete this step, [deploy your bot to Azure](bot-builder-deploy-az-cli.md) 
 
 #### Add Facebook app settings to your bot's configuration file
 
-Add the settings shown below to your appSettings.json file in your bot project. You populate **FacebookAppSecret** and **FacebookAccessToken** using the values you gathered when creating and configuring your Facebook App. **FacebookVerifyToken** should be a random string that you create and will be used to ensure your bot's endpoint is authenitic when called by Facebook.
+Add the settings shown below to your appSettings.json file in your bot project. You populate **FacebookAppSecret** and **FacebookAccessToken** using the values you gathered when creating and configuring your Facebook App. **FacebookVerifyToken** should be a random string that you create and will be used to ensure your bot's endpoint is authenticated when called by Facebook.
 
 ```json
   "FacebookVerifyToken": "",

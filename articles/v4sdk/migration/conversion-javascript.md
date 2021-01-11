@@ -10,25 +10,25 @@ ms.date: 05/23/2019
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Migrate a Javascript v3 bot to a v4 bot
+# Migrate a JavaScript v3 bot to a v4 bot
 
 [!INCLUDE [applies-to-v4](../../includes/applies-to-v4-current.md)]
 
-In this article we'll port the v3 SDK JavaScript [core-MultiDialogs-v3](https://aka.ms/v3-js-core-multidialog-migration-sample) bot to a new v4 JavaScript bot.
+In this article you will learn how to port the v3 SDK JavaScript [core-MultiDialogs-v3](https://aka.ms/v3-js-core-multidialog-migration-sample) bot to a new v4 JavaScript bot.
 This conversion is broken down into these stages:
 
 1. Create the new project and add dependencies.
 1. Update the entry point and define constants.
-1. Create the dialogs, reimplementing them using the SDK v4.
+1. Create the dialogs and re-implement them using the SDK v4.
 1. Update the bot code to run the dialogs.
 1. Port the **store.js** utility file.
 
-At the end of this process we will have a working v4 bot. A copy of the converted bot is also in the samples repo, [core-MultiDialogs-v4](https://aka.ms/v4-js-core-multidialog-migration-sample).
+At the end of this process you will have a working v4 bot. A copy of the converted bot is also in the samples repo, [core-MultiDialogs-v4](https://aka.ms/v4-js-core-multidialog-migration-sample).
 
 The Bot Framework SDK v4 is based on the same underlying REST API as SDK v3. However, SDK v4 is a refactoring of the previous version of the SDK to allow developers more flexibility and control over their bots. Major changes in the SDK include:
 
 - State is managed via state management objects and property accessors.
-- How we handle turns has changed, that is, how the bot receives and responds to an incoming activity from the user's channel.
+- How you handle turns has changed, that is, how the bot receives and responds to an incoming activity from the user's channel.
 - v4 does not use a `session` object, instead, it has a _turn context_ object that contains information about the incoming activity and can be used to send back a response activity.
 - A new dialogs library that is very different from the one in v3. You'll need to convert old dialogs to the new dialog system, using component and waterfall dialogs.
 
@@ -37,7 +37,7 @@ For more information about specific changes, see [differences between the v3 and
 -->
 
 > [!NOTE]
-> As part of the migration, we also cleaned up some of the code, but we'll just highlight the changes we made to the v3 logic as part of the migration process.
+> As part of the migration, you also need to clean up some of the code. This article highlights the changes to make to the v3 logic as part of the migration process.
 
 ## Prerequisites
 
@@ -47,7 +47,7 @@ For more information about specific changes, see [differences between the v3 and
 
 ## About this bot
 
-The bot we're migrating demonstrates the use of multiple dialogs to manage conversation flow. The bot can look up flight or hotel information.
+The bot you're migrating demonstrates the use of multiple dialogs to manage conversation flow. The bot can look up flight or hotel information.
 
 - The main dialog asks the user what type of information they're looking for.
 - The hotel dialog prompts the user for search parameters, and then performs a mock search.
@@ -71,11 +71,11 @@ The bot we're migrating demonstrates the use of multiple dialogs to manage conve
 
 ## Update the v4 app entry point
 
-The v4 template creates an **index.js** file for the app entry point and a **bot.js** file for the bot-specific logic. In later steps, we'll rename the **bot.js** file to **bots/reservationBot.js** and add a class for each dialog.
+The v4 template creates an **index.js** file for the app entry point and a **bot.js** file for the bot-specific logic. In later steps, you will rename the **bot.js** file to **bots/reservationBot.js** in a later step and add a class for each dialog.
 
 Edit **./index.js**, which is the entry point for our bot app. This will contain the portions of the v3 **app.js** file that set up the HTTP server.
 
-1. In addition to `BotFrameworkAdapter`, import `MemoryStorage` and `ConversationState` from the **botbuilder** package. Also import the bot and main dialog modules. (We'll create these soon, but we need to reference them here.)
+1. In addition to `BotFrameworkAdapter`, import `MemoryStorage` and `ConversationState` from the **botbuilder** package. Also import the bot and main dialog modules. (You'll create these soon, but you need to reference them here.)
 
     ```javascript
     // Import required bot services.
@@ -102,7 +102,7 @@ Edit **./index.js**, which is the entry point for our bot app. This will contain
     };
     ```
 
-    In v4, we use a _bot adapter_ to route incoming activities to the bot. The adapter allows us to catch and react to errors before a turn finishes. Here, we clear conversation state if an application error occurs, which will reset all dialogs and keep the bot from staying in a corrupted conversation state.
+    In v4, you use a _bot adapter_ to route incoming activities to the bot. The adapter allows us to catch and react to errors before a turn finishes. Here, you clear conversation state if an application error occurs, which will reset all dialogs and keep the bot from staying in a corrupted conversation state.
 
 1. Replace the template code for creating the bot with this.
 
@@ -118,11 +118,11 @@ Edit **./index.js**, which is the entry point for our bot app. This will contain
     const reservationBot = new ReservationBot(conversationState, dialog);
     ```
 
-    The in-memory storage layer is now provided by the `MemoryStorage` class, and we need to explicitly create a conversation state management object.
+    The in-memory storage layer is now provided by the `MemoryStorage` class, and you need to explicitly create a conversation state management object.
 
-    The dialog definition code has been moved to a `MainDialog` class that we'll define shortly. We'll also migrate the bot definition code into a `ReservationBot` class.
+    The dialog definition code has been moved to a `MainDialog` class that you'll define shortly. you'll also migrate the bot definition code into a `ReservationBot` class.
 
-1. Finally, we update the server's request handler to use the adapter to route activities to the bot.
+1. Finally, you update the server's request handler to use the adapter to route activities to the bot.
 
     ```javascript
     // Listen for incoming requests.
@@ -134,11 +134,11 @@ Edit **./index.js**, which is the entry point for our bot app. This will contain
     });
     ```
 
-    In v4, our bot derives from `ActivityHandler`, which defines the `run` method to receive an activity for a turn.
+    In v4, the bot derives from `ActivityHandler`, which defines the `run` method to receive an activity for a turn.
 
 ## Add a constants file
 
-Create a **./const.js** file to hold identifiers for our bot.
+Create a **./const.js** file to hold identifiers for your bot.
 
 ```javascript
 module.exports = {
@@ -168,11 +168,11 @@ We have not migrated the support dialog. For an example of how to implement a he
 
 ### Implement the main dialog
 
-Iv v3, all bots were built on top of a dialog system. In v4, bot logic and dialog logic is now separate. We've taken what was the _root dialog_ in the v3 bot and made a `MainDialog` class to take its place.
+In v3, all bots were built on top of a dialog system. In v4, bot logic and dialog logic is now separate. You've taken what was the _root dialog_ in the v3 bot and made a `MainDialog` class to take its place.
 
 Edit **./dialogs/main.js**.
 
-1. Import the classes and constants we need for the dialog.
+1. Import the classes and constants you need for the dialog.
 
     ```javascript
     const { DialogSet, DialogTurnStatus, ComponentDialog, WaterfallDialog,
@@ -219,7 +219,7 @@ Edit **./dialogs/main.js**.
     This declares the other dialogs and prompts that the main dialog references directly.
 
     - The main waterfall dialog that contains the steps for this dialog. When the component dialog starts, it starts its _initial dialog_.
-    - The choice prompt that we'll use to ask the user which task they'd like to perform. We've created the choice prompt with a validator.
+    - The choice prompt that you'll use to ask the user which task they'd like to perform. You've created the choice prompt with a validator.
     - The two child dialogs, flights and hotels.
 
 1. Add a `run` helper method to the class.
@@ -243,7 +243,7 @@ Edit **./dialogs/main.js**.
     }
     ```
 
-    In v4, a bot interacts with the dialog system by creating a dialog context first, and then calling `continueDialog`. If there is an active dialog, control is passed to it; otherwise, this call simply returns. A result of `empty` indicates that no dialog was active, and so here, we start the main dialog again.
+    In v4, a bot interacts with the dialog system by creating a dialog context first, and then calling `continueDialog`. If there is an active dialog, control is passed to it; otherwise, this call simply returns. A result of `empty` indicates that no dialog was active, and so here, you start the main dialog again.
 
     The `accessor` parameter passes in the accessor for the dialog state property. State for the _dialog stack_ is stored in this property. For more information about how state and dialogs work in v4, see [Managing state](../bot-builder-concept-state.md) and [Dialogs library](../bot-builder-concept-dialog.md), respectively.
 
@@ -300,7 +300,7 @@ Edit **./dialogs/main.js**.
 
 ### Implement the flights dialog
 
-In the v3 bot, the flights dialog was a stub that demonstrated how the bot handles a conversation error. Here, we do the same.
+In the v3 bot, the flights dialog was a stub that demonstrated how the bot handles a conversation error. Here, you do the same.
 
 Edit **./dialogs/flights.js**.
 
@@ -331,11 +331,11 @@ exports.FlightDialog = FlightDialog;
 
 ### Implement the hotels dialog
 
-We keep the same overall flow of the hotel dialog: ask for a destination, ask for a date, ask for the number of nights to stay, and then show the user a list of options that matched their search.
+You keep the same overall flow of the hotel dialog: ask for a destination, ask for a date, ask for the number of nights to stay, and then show the user a list of options that matched their search.
 
 Edit **./dialogs/hotels.js**.
 
-1. Import the classes and constants we'll need for the dialog.
+1. Import the classes and constants you'll need for the dialog.
 
     ```javascript
     const { ComponentDialog, WaterfallDialog, TextPrompt, DateTimePrompt } = require('botbuilder-dialogs');
@@ -381,7 +381,7 @@ Edit **./dialogs/hotels.js**.
     exports.HotelsDialog = HotelsDialog;
     ```
 
-1. To the class, add a couple of helper functions that we'll use in the dialog steps.
+1. To the class, add a couple of helper functions that you'll use in the dialog steps.
 
     ```javascript
     addDays(startDate, days) {
@@ -476,7 +476,7 @@ Edit **./dialogs/hotels.js**.
     }
     ```
 
-    We've migrated the steps from the v3 hotels dialog into the waterfall steps of our v4 hotels dialog.
+    You've migrated the steps from the v3 hotels dialog into the waterfall steps of the v4 hotels dialog.
 
 ## Update the bot
 
@@ -500,7 +500,7 @@ Rename **./bot.js** to **./bots/reservationBot.js**, and edit it.
     module.exports.ReservationBot = ReservationBot;
     ```
 
-1. Update the signature of the constructor, to accept the objects we're receiving.
+1. Update the signature of the constructor, to accept the objects you're receiving.
 
     ```javascript
     /**
@@ -531,7 +531,7 @@ Rename **./bot.js** to **./bots/reservationBot.js**, and edit it.
     this.dialogState = this.conversationState.createProperty('DialogState');
     ```
 
-    This is where we create the dialog state property accessor that will store state for the dialog stack.
+    This is where you create the dialog state property accessor that will store state for the dialog stack.
 
 1. In the constructor, update the `onMessage` handler and add an `onDialog` handler.
 
@@ -557,7 +557,7 @@ Rename **./bot.js** to **./bots/reservationBot.js**, and edit it.
 
     The `ActivityHandler` routes message activities to `onMessage`. This bot handles all user input via dialogs.
 
-    The `ActivityHandler` calls `onDialog` at the end of the turn, before returning control to the adapter. We need to explicitly save state before exiting the turn. Otherwise, the state changes will not get saved and the dialog will not run properly.
+    The `ActivityHandler` calls `onDialog` at the end of the turn, before returning control to the adapter. You need to explicitly save state before exiting the turn. Otherwise, the state changes will not get saved and the dialog will not run properly.
 
 1. Finally, update the `onMembersAdded` handler in the constructor.
 
@@ -574,7 +574,7 @@ Rename **./bot.js** to **./bots/reservationBot.js**, and edit it.
     });
     ```
 
-    The `ActivityHandler` calls `onMembersAdded` when it receives a conversation update activity that indicates participants other than the bot were added to the conversation. We update this method to send a greeting message when a user joins the conversation.
+    The `ActivityHandler` calls `onMembersAdded` when it receives a conversation update activity that indicates participants other than the bot were added to the conversation. You update this method to send a greeting message when a user joins the conversation.
 
 ## Create the store file
 
@@ -609,7 +609,7 @@ module.exports = {
 
 ## Test the bot in the Emulator
 
-At this point, we should be able to run the bot locally and attach to it with the Emulator.
+At this point, you should be able to run the bot locally and attach to it with the Emulator.
 
 1. Run the sample locally on your machine.
     If you start a debugging session in Visual Studio Code, logging information is sent to the debug console as you test the bot.

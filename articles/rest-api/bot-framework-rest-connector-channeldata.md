@@ -15,23 +15,23 @@ Some channels provide features that cannot be implemented by using only [message
 
 This article describes how to use a message activity's `channelData` property to implement this channel-specific functionality:
 
-| Channel | Functionality |
-|----|----|
-| Email | Send and receive an email that contains body, subject, and importance metadata |
-| Slack | Send full fidelity Slack messages |
-| Facebook | Send Facebook notifications natively |
-| Telegram | Perform Telegram-specific actions, such as sharing a voice memo or a sticker |
-| Kik | Send and receive native Kik messages | 
+| Channel  |                                 Functionality                                  |
+| -------- | ------------------------------------------------------------------------------ |
+| Email    | Send and receive an email that contains body, subject, and importance metadata |
+| Slack    | Send full fidelity Slack messages                                              |
+| Facebook | Send Facebook notifications natively                                           |
+| Telegram | Perform Telegram-specific actions, such as sharing a voice memo or a sticker   |
+| Kik      | Send and receive native Kik messages                                           |
 
 > [!NOTE]
-> The value of an `Activity` object's `channelData` property is a JSON object. 
-> The structure of the JSON object will vary according to the channel and the functionality being implemented, as described below. 
+> The value of an `Activity` object's `channelData` property is a JSON object.
+> The structure of the JSON object will vary according to the channel and the functionality being implemented, as described below.
 
-## Create a custom Email message
+## Create a custom email message
 
 To create an email message, set the `Activity` object's `channelData` property to a JSON object that contains these properties:
 
-[!INCLUDE [Email channelData table](~/includes/snippet-channelData-email.md)]
+[!INCLUDE [email channelData table](~/includes/snippet-channelData-email.md)]
 
 This snippet shows an example of the `channelData` property for a custom email message.
 
@@ -47,11 +47,11 @@ This snippet shows an example of the `channelData` property for a custom email m
 
 ## Create a full-fidelity Slack message
 
-To create a full-fidelity Slack message, set the `Activity` object's `channelData` property to a JSON object that specifies 
-<a href="https://api.slack.com/docs/messages" target="_blank">Slack messages</a>, <a href="https://api.slack.com/docs/message-attachments" target="_blank">Slack attachments</a>, and/or <a href="https://api.slack.com/docs/message-buttons" target="_blank">Slack buttons</a>. 
+To create a full-fidelity Slack message, set the `Activity` object's `channelData` property to a JSON object that specifies
+<a href="https://api.slack.com/docs/messages" target="_blank">Slack messages</a>, <a href="https://api.slack.com/docs/message-attachments" target="_blank">Slack attachments</a>, and/or <a href="https://api.slack.com/docs/message-buttons" target="_blank">Slack buttons</a>.
 
 > [!NOTE]
-> To support buttons in Slack messages, you must enable **Interactive Messages** when you 
+> To support buttons in Slack messages, you must enable **Interactive Messages** when you
 > [connect your bot](../bot-service-manage-channels.md) to the Slack channel.
 
 This snippet shows an example of the `channelData` property for a custom Slack message.
@@ -143,7 +143,7 @@ To create a Facebook notification, set the `Activity` object's `channelData` pro
 
 > [!NOTE]
 > For details about format and contents of the `notification_type` property and `attachment` property, see the 
-> <a href="https://developers.facebook.com/docs/messenger-platform/send-api-reference#guidelines" target="_blank">Facebook API documentation</a>. 
+> <a href="https://developers.facebook.com/docs/messenger-platform/send-api-reference#guidelines" target="_blank">Facebook API documentation</a>.
 
 This snippet shows an example of the `channelData` property for a Facebook receipt attachment.
 
