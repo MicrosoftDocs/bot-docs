@@ -37,35 +37,7 @@
       "build_entry_point": "docs",
       "template_folder": "_themes",
       "version": 0
-    },
-    {
-      "docset_name": "bot-framework-dotnet-api",
-      "build_source_folder": "dotnet",
-      "build_output_subfolder": "bot-framework-dotnet-api",
-      "locale": "en-us",
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content",
-        "NetEnum": "Content",
-        "NetDelegate": "Content",
-        "NetNamespace": "Content",
-        "NetMember": "Content",
-        "NetType": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "customized_tasks": {
-        "docset_postbuild": [
-          "_dependentPackages/ECMA2Yaml/tools/PostBuild.ps1"
-        ],
-        "docset_prebuild": [
-          "_dependentPackages/ECMA2Yaml/tools/Run.ps1",
-          "_dependentPackages/CommonPlugins/tools/SplitTOC.ps1",
-          "_dependentPackages/CommonPlugins/tools/DiffFolder.ps1"
-        ]
-      }
+    }
     }
   ],
   "notification_subscribers": [
