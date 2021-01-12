@@ -1,7 +1,7 @@
 ---
 title: Cross training your LUIS and QnA Maker models
 description: Describing the concepts behind a bot that is cross trained to use both LUIS to LUIS and LUIS to QnA Maker recognizers
-keywords: LUIS, QnA Maker, qna, bot, cross-train, cross train, adaptive dialogs, lu 
+keywords: LUIS, QnA Maker, qna, bot, cross-train, cross train, adaptive dialogs, lu
 author: WashingtonKayaker
 ms.author: kamrani
 manager: kamrani
@@ -79,7 +79,7 @@ After cross training the .lu files, your bot will now be able to detect that the
 
 #### Cross train the LUIS models of the travel bot
 
-To enable this fictional travel bot to handle the interruption in the previous example, you need to update the the flight dialog's LUIS model, contained in the **flightDialog.lu** file, to include a new intent named `_interruption`, then add the utterances for the `BookHotel` intent. The **flightDialog.lu** file is used to create your LUIS application associated with the flight dialog.
+To enable this fictional travel bot to handle the interruption in the previous example, you need to update the flight dialog's LUIS model, contained in the **flightDialog.lu** file, to include a new intent named `_interruption`, then add the utterances for the `BookHotel` intent. The **flightDialog.lu** file is used to create your LUIS application associated with the flight dialog.
 
 > [!TIP]
 >
@@ -130,7 +130,7 @@ For each adaptive dialog that has an associated .lu and .qna file, the following
 
 1. In .qna files, a new answer named `intent=DeferToRecognizer_luis_<dialog-file-name>` is added, along with each utterance from every intent in the corresponding .lu file. These utterances become questions associated with that answer. Additionally, all utterances from referenced .lu files also become questions associated with that answer.
 
-When a user converses with the bot, the `CreateCrossTrainedRecognizer` recognizer sends that user input to both LUIS and the QnA Maker knowledge base to be processed. 
+When a user converses with the bot, the `CreateCrossTrainedRecognizer` recognizer sends that user input to both LUIS and the QnA Maker knowledge base to be processed.
 
 ### Recognizer responses
 

@@ -10,14 +10,14 @@ ms.date: 12/23/2020
 ---
 
 
-# Bot Framework FAQ index
+# Bot Framework FAQ
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-<!-- Attention writers!! When you create a new FAQ, please add the related link in the proper section below. -->
+<!-- Attention writers!! When you create a new FAQ entry, please add the related link in the proper section below. -->
 
-The following are some common questions that address problems you might face.
-In case you don't find the answer you're looking for, you can post your questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/botframework) using the `botframework` tag. If you're a new user, visit the [Stack Overflow Help Center](https://stackoverflow.com/help/how-to-ask).
+The following are some common questions you might have.
+In case you don't find the answer you're looking for, you can post your questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/botframework) using the `botframework` tag. If you're a new user, visit the [Stack Overflow Help Center](https://stackoverflow.com/help/how-to-ask) first.
 
 ## Background and availability
 
@@ -45,11 +45,6 @@ In case you don't find the answer you're looking for, you can post your question
 - [How to implement human handoff?](bot-service-resources-faq-general.md#how-to-implement-human-handoff)
 - [What is the size limit of a file transferred using a channel?](bot-service-resources-faq-general.md#what-is-the-size-limit-of-a-file-transferred-using-channels)
 
-
-<!-- Retired, re: https://github.com/MicrosoftDocs/bot-docs/issues/1698
-- [What are some community-authored dialogs?](bot-service-resources-faq-general.md#what-are-some-community-authored-dialogs)
-- [What are some community-authored templates?](bot-service-resources-faq-general.md#what-are-some-community-authored-templates)
--->
 
 ## Ecosystem
 

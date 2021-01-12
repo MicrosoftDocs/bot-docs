@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../../includes/applies-to-v4-current.md)]
 
-The Bot Framework SDK v4 builds on the customers' feedback and learning experience from previous SDKs. The new version introduces the right levels of abstraction while enabling a flexible  architecture of the bot components. This, for example, allows you to create a simple bot and then expand it in sophistication using the modularity and extensibility of the Bot Framework SDK v4.
+The Bot Framework SDK v4 builds on customers' feedback and the learning experience from previous SDKs. It introduces the right levels of abstraction while enabling a flexible bot components architecture. Among other things, this allows you to create a simple bot and then expand its sophistication using the modularity and extensibility of the Bot Framework SDK v4.
 
 > [!NOTE]
 > The Bot Framework SDK v4 strives to keep simple things simple and makes complex things possible.
