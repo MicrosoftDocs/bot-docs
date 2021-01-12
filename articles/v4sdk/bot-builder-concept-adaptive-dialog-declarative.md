@@ -408,7 +408,7 @@ For an example see [Creating the schema file][creating-the-schema-file] in the _
 <!--
 > [!TIP]
 >
-> For users of C#: NuGet does not deal well with content files, so all declarative `.dialog`, `.lu`, `.lg`, and `.qna` files will be copied into `generated/<package>` so you can easily include them in your project output.
+> For users of C#: NuGet does not deal well with content files, so all declarative `.dialog`, .lu, .lg, and .qna files will be copied into `generated/<package>` so you can easily include them in your project output.
 -->
 
 ### The verify command
@@ -452,9 +452,9 @@ For additional information on using this command, see [bf dialog:verify][bf-dial
 [creating-the-schema-file]: bot-builder-dialogs-declarative.md#creating-the-schema-file
 
 <!-- Declarative files section  -->
-[bf-cli]: https://aka.ms/bf-cli-overview
-[bf-cli-install]: https://aka.ms/bf-cli-overview#installation
-[intellisense]: https://aka.ms/intellisense-in-visual-studio
+[bf-cli]: /azure/bot-service/bf-cli-overview
+[bf-cli-install]: /azure/bot-service/bf-cli-overview#installation
+[intellisense]: /visualstudio/ide/using-intellisense
 [recognizer-types]: bot-builder-concept-adaptive-dialog-recognizers.md#recognizer-types
 [intents]: bot-builder-concept-adaptive-dialog-recognizers.md#intents
 [entity]: bot-builder-concept-adaptive-dialog-recognizers.md#entities
@@ -519,7 +519,7 @@ For additional information on using this command, see [bf dialog:verify][bf-dial
 [log-action]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#log-action
 [traceactivity]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#traceactivity
 
-[intelliSense]: https://aka.ms/intellisense-in-visual-studio
+[intelliSense]: /visualstudio/ide/using-intellisense
 [composer]: https://docs.microsoft.com/composer
 
 [dialog-commands]: https://aka.ms/botframework-cli#bf-dialog

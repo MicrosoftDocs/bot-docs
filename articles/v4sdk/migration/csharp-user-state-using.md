@@ -17,7 +17,7 @@ monikerRange: 'azure-bot-service-4.0'
 This article shows an example of how a v4 bot can perform read, write, and delete operations on v3 user state information.
 The bot maintains conversation state using `MemoryStorage` to track and direct the conversation while asking the user questions.  It maintains the **user state** in the v3 format to track the user's answers by utilizing a custom `IStorage` class called `V3V4Storage`.  One of the arguments to this class is an `IBotDataStore`. The v3 SDK code base was copied into `Bot.Builder.Azure.V3V4` and contains all three v3 SDK storage providers (Azure Sql, Azure Table, and Cosmos Db).  The intent is to allow the existing v3 **user state** to be brought into a migrated v4 bot.
 
-The code sample can be found [here](https://github.com/microsoft/BotBuilder-Samples/tree/master/MigrationV3V4/CSharp/V4StateBotFromV3Providers).
+The code sample can be found in [v4 state bot from v3 providers](https://github.com/microsoft/BotBuilder-Samples/tree/master/MigrationV3V4/CSharp/V4StateBotFromV3Providers).
 
 ## Prerequisites
 
@@ -90,11 +90,11 @@ It is assumed that you have an existing v3 state store configured and in use. In
 
 - Set the bot's storage provider
 
-    Open the `Startup.cs` file in the `V4V3StateBot` project root. Towards the middle of the file (lines ~52-76) you will see configurations for each storage provider. They read in the config values from the web.config. 
+    Open the `Startup.cs` file in the `V4V3StateBot` project root. Towards the middle of the file (lines ~52-76) you will see configurations for each storage provider. They read in the config values from the web.config.
 
     [!code-csharp[Storage configuration](~/../botbuilder-samples/MigrationV3V4/CSharp/V4StateBotFromV3Providers/V4V3StateBot/Startup.cs?range=52-76)]
 
-    Specify which storage provider you want your bot to use by un-commenting the corresponding lines for the instance of your choice. Once the provider is properly configured, assure that the provider class is passed to `V3V4Storage` (lines ~72-75). 
+    Specify which storage provider you want your bot to use by un-commenting the corresponding lines for the instance of your choice. Once the provider is properly configured, assure that the provider class is passed to `V3V4Storage` (lines ~72-75).
 
     [!code-csharp[Storage provider](~/../botbuilder-samples/MigrationV3V4/CSharp/V4StateBotFromV3Providers/V4V3StateBot/Startup.cs?range=72-75)]
 
@@ -107,7 +107,7 @@ It is assumed that you have an existing v3 state store configured and in use. In
     sqlBotDataStore
     ```
 
-- Start the application. 
+- Start the application.
 
 ## V3V4 Storage and State Classes
 
@@ -124,7 +124,7 @@ This class inherits from the v4 `BotState` class, and uses a v3-style key (`IAdd
 
 [Bot Framework Emulator][5] is a desktop application that allows bot developers to test and debug their bots on localhost or running remotely through a tunnel.
 
-- Install the Bot Framework Emulator version 4.3.0 or greater from [here][6]
+- Install the Bot Framework Emulator, [version 4.3.0 or later][6].
 
 
 ### Connect to the bot using Bot Framework Emulator
@@ -148,4 +148,4 @@ This class inherits from the v4 `BotState` class, and uses a v3-style key (`IAdd
 [8]: https://docs.microsoft.com/azure/bot-service/bot-builder-howto-v4-storage?tabs=csharp
 [9]: https://docs.microsoft.com/azure/bot-service/bot-builder-howto-v4-state?tabs=csharp
 [21]: ../../bot-service-overview-introduction.md
-[40]: https://aka.ms/azuredeployment
+[40]: ../../bot-builder-deploy-az-cli.md

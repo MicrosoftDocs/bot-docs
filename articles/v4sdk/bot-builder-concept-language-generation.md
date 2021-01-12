@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-<!-- See [here](#Change-Log) for what's new in **4.8.0 RC1** release.-->
+<!-- See [what's new](#Change-Log) for what's new in **4.8.0 RC1** release.-->
 
 Language Generation (LG) allows developers to extract embedded strings from their code and resource files and manage them through a LG runtime and file format. With LG, developers can create a more natural conversation experience by defining multiple variations on a phrase, executing simple expressions based on context, and referring to conversational memory.
 
@@ -194,7 +194,7 @@ The call `ExpandTemplate("TimeOfDayWithCondition", new { time = "evening" })` wi
     | # myTemplate <br/> - [ackPhrase] <br/><br/> # ackPhrase <br/> - hi <br/>- hello | # myTemplate <br/> - @{ackPhrase()} <br/><br/> # ackPhrase <br/> - hi <br/>- hello |
 
 - \[**NEW**\]:
-    - Language generation preview is now available for JavaScript as well. Checkout packages [here][15]. Samples are [here][26]
+    - Language generation preview is now available for JavaScript as well. Checkout [packages][15]. See [samples][26]
     - New `ActivityFactory` class that helps transform structured response template output from LG into a Bot framework activity.
     - Bug fixes and stability improvements.
 
@@ -203,7 +203,7 @@ The call `ExpandTemplate("TimeOfDayWithCondition", new { time = "evening" })` wi
     - Old `display || speak` notation is deprecated in favor of structured template support. See below for more details on structured template.
     - Old `Chatdown` style cards are deprecated in favor of structured template support. See below for more details on structured template.
 - \[**NEW**\]:
-    - Structured Template support in .lg file format. See [here](../language-generation/language-generation-structured-response-template.md) to learn more about Structured Template definition.
+    - Structured Template support in .lg file format. See [response template](../language-generation/language-generation-structured-response-template.md) to learn more about Structured Template definition.
     - ActivityGenerator.GenerateFromLG static method to transform output from LG sub-system into a full blown [Bot Framework Activity][1]
 
 ### 4.6 PREVIEW

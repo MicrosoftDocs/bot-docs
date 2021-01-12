@@ -350,7 +350,7 @@ You can describe phrase list entities using the following notation:
 
 ```lu
 @ phraselist <Name>
-    - <synonym1>  
+    - <synonym1>
     - <synonym2>
 ```
 
@@ -508,7 +508,7 @@ Collect utterances that you think users will enter. Include utterances with the 
 - Pluralization
 - Stemming
 - Noun and verb choice
-- Punctuation 
+- Punctuation
 
 You can label entities in utterances using the following notation:
 
@@ -684,6 +684,7 @@ Below are examples of how to make URI references:
 ## Additional Information:
 
 - Read [.qna file format](bot-builder-qna-file-format.md) for more information about .qna files.
+- Read [Debug with Adaptive Tools](../bot-service-debug-adaptive-tools.md) to learn how to analyze .lu files.
 
 [1]:https://luis.ai
 [2]:https://docs.microsoft.com/azure/cognitive-services/luis/luis-concept-intent

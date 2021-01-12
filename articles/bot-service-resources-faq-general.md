@@ -85,6 +85,12 @@ The Bot Framework service must protect itself and its customers against abusive 
 
 We're continuously tuning the rate limits to make them as lenient as possible while at the same time protecting our service and our users. Because thresholds will occasionally change, we aren't publishing the numbers at this time.  Finally, if you are hosting your bot on an App Service, the bot is bound to the limitations of the App Service. For more information, see [SLA summary for Azure services](https://azure.microsoft.com/support/legal/sla/summary/) If you are impacted by rate limiting, feel free to reach out to us at [bf-reports@microsoft.com](mailto://bf-reports@microsoft.com).
 
+## What is the size limit of a file transferred using channels?
+
+Some channels have limits on the size or type of files that can be sent. For example, both Direct Line and Facebook limit activity payloads to **262,144 bytes**, while the Emulator has no limit. Such limits are imposed by the channel. If you send a message that exceeds this limit, you may get an error, such as: *The request content length exceeded limit of 262144 bytes*.
+
+You can, however, provide a link to the resource as an internet attachment. For more information on sending attachments, see [how to add media to messages](v4sdk/bot-builder-howto-add-media-attachments.md).
+
 ## How will I know if I'm impacted by rate limiting?
 
 It is unlikely you'll experience rate limiting, even at high volume. Most rate limiting would only occur due to bulk sending of activities (from a bot or from a client), extreme load testing, or a bug. When a request is throttled, an HTTP 429 (Too Many Requests) response is returned along with a Retry-After header indicating the amount of time (in seconds) to wait before retrying the request would succeed. You can collect this information by enabling analytics for your bot via Azure Application Insights. Or, you can add code in your bot to log messages.
@@ -96,7 +102,6 @@ Rate limiting is caused by any of the following conditions:
 * A bot sends messages too frequently
 * A client of a bot sends messages too frequently
 * Direct Line clients request a new Web Socket too frequently
-
 
 ## How to implement human handoff?
 
@@ -139,3 +144,4 @@ In the case of channels that do not handle the handoff, the middleware is used t
 
     **Q2: Do we need to refer to this?**: [HandoffMiddleware.cs](https://github.com/microsoft/BotBuilder-Samples/blob/master/experimental/handoff-library/csharp_dotnetcore/samples/LivePersonAgentBot/Middleware/HandoffMiddleware.cs).
 >
+

@@ -48,7 +48,7 @@ Following feedback from customers and the Bot Framework Support team, a number
 
 ## Additional information
 
-- You can see previous announcements [here](what-is-new-archive.md).
+- You can see previous announcements in the [archived information](what-is-new-archive.md).
 - See the Bot Framework SDK [release notes](https://github.com/microsoft/botframework-sdk/releases/) for more information about the changes made to the SDK in the 4.11 release.
 
 [1]:https://github.com/Microsoft/botbuilder-dotnet/#packages

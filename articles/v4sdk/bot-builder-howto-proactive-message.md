@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 09/01/2020
+ms.date: 11/23/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -15,8 +15,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-Typically, each message that a bot sends to the user directly relates to the user's prior input.
-In some cases, a bot may need to send the user a message that is not directly related to the current topic of conversation or to the last message the user sent. These types of messages are called _proactive messages_.
+Typically, a bot sends a message to a user directly in response to receiving a message from the user.
+Occasionally, a bot might need to send a _proactive message_, a message in response to stimulus not originating from the user.
 
 Proactive messages can be useful in a variety of scenarios. For example, if the user has previously asked the bot to monitor the price of a product, the bot can alert the user if the price of the product has dropped by 20%. Or, if a bot requires some time to compile a response to the user's question, it may inform the user of the delay and allow the conversation to continue in the meantime. When the bot finishes compiling the response to the question, it will share that information with the user.
 
@@ -38,7 +38,27 @@ More information about proactive messages in Teams can be found in these resourc
 
 ## About the proactive sample
 
-The sample has a bot and an additional controller that is used to send proactive messages to the bot, as shown in the following illustration.
+In general, a bot as an application has a few layers:
+
+- The web application that can accept HTTP requests and specifically supports a messaging endpoint.
+- An adapter that handles connectivity with the channels.
+- A handler for the turn, typically encapsulated in a _bot_ class that handles the conversational reasoning for the bot app.
+
+In response to an incoming message from the user, the app calls the adapter's _process activity_ method, which creates a turn and turn context, calls its middleware pipeline, and then calls the bot's turn handler.
+
+To initiate a proactive message, the bot application needs to be able to receive additional input.
+The application logic for initiating a proactive message is outside the scope of the SDK.
+For this sample, a _notify_ endpoint, in addition to a standard _messages_ endpoint, is used to trigger the proactive turn.
+
+In response to a GET request on this notify endpoint, the app calls the adapter's _continue conversation_ method, which behaves similarly to the the _process activity_ method. The _continue conversation_ method:
+
+- Takes an appropriate conversation reference for the user and the callback method to use for the proactive turn.
+- Creates an event activity and turn context for the proactive turn.
+- Calls the adapter's middleware pipeline.
+- Calls the provided callback method.
+- The turn context uses the conversation reference to send any messages to the user.
+
+The sample has a bot, a messages endpoint, and an additional notify endpoint that is used to send proactive messages to the user, as shown in the following illustration.
 
 ![proactive bot](media/proactive-sample-bot.png)
 
@@ -76,11 +96,11 @@ The conversation reference includes a _conversation_ property that describes the
 
 ## Send proactive message
 
-The second controller, the _notify_ controller, is responsible for sending the proactive message to the bot. It uses the following steps to generate a proactive message.
+The second controller, the _notify_ controller, is responsible for sending the proactive message to the user. It uses the following steps to generate a proactive message.
 
 1. Retrieves the reference for the conversation to which to send the proactive message.
 1. Calls the adapter's _continue conversation_ method, providing the conversation reference and the turn handler delegate to use. (The continue conversation method generates a turn context for the referenced conversation and then calls the specified turn handler delegate.)
-1. In the delegate, uses the turn context to send the proactive message.
+1. In the delegate, uses the turn context to send the proactive message. Here, the delegate is defined on the notify controller, and it sends the proactive message to the user.
 
 > [!NOTE]
 > While each channel should use a stable service URL, the URL can change over time. For more information about the service URL, see the [Basic activity structure](https://github.com/microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md#basic-activity-structure) and [Service URL](https://github.com/microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md#service-url) sections of the Bot Framework Activity Schema.
@@ -94,9 +114,7 @@ The second controller, the _notify_ controller, is responsible for sending the p
 Each time the bot's notify page is requested, the notify controller retrieves the conversation references from the dictionary.
 The controller then uses the `ContinueConversationAsync` and `BotCallback` methods to send the proactive message.
 
-[!code-csharp[Notify logic](~/../botbuilder-samples/samples/csharp_dotnetcore/16.proactive-messages/Controllers/NotifyController.cs?range=17-62&highlight=28,40-45)]
-
-To send a proactive message, the adapter requires an app ID for the bot. In a production environment, you can use the bot's app ID. In a local test environment, you can use any GUID. If the bot is not currently assigned an app ID, the notify controller self-generates a placeholder ID to use for the call.
+[!code-csharp[Notify logic](~/../botbuilder-samples/samples/csharp_dotnetcore/16.proactive-messages/Controllers/NotifyController.cs?range=17-54&highlight=20,32-37)]
 
 # [JavaScript](#tab/javascript)
 
@@ -117,6 +135,8 @@ The server then uses the `_send_proactive_message` to send the proactive message
 
 ---
 
+To send a proactive message, the adapter requires an app ID for the bot. In a production environment, you can use the bot's app ID. To test the bot locally with the Emulator, you can use the empty string ("").
+
 ## Test your bot
 
 1. If you have not done so already, install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
@@ -136,43 +156,25 @@ An ad hoc proactive message is the simplest type of proactive message. The bot s
 
 To handle notifications more smoothly, consider other ways to integrate the notification into the conversation flow, such as setting a flag in the conversation state or adding the notification to a queue.
 
-### Avoiding 401 "Unauthorized" Errors
+### About the proactive turn
 
-By default, the Bot Builder SDK adds a `serviceUrl` to the list of trusted host names if the incoming request is authenticated by BotAuthentication. They are maintained in an in-memory cache. If your bot is restarted, a user awaiting a proactive message cannot receive it unless they have messaged the bot again after it restarted.
+The _continue conversation_ method uses the conversation reference and a turn callback handler to:
 
-To avoid this, you must manually add the `serviceUrl` to the list of trusted host names.
+1. Create a turn in which the bot application can send the proactive message. The adapter creates an `event` activity for this turn, with its name set to "ContinueConversation".
+1. Send the turn through the adapter's middleware pipeline.
+1. Call the turn callback handler to perform custom logic.
 
-# [C#](#tab/csharp)
+In the **proactive messages** sample, the turn callback handler is defined in the notify controller and sends the message directly to the conversation, without sending the proactive activity through the bot's normal turn handler.
+The sample code also does not access or update the bot's state on the proactive turn.
 
-```csharp
-MicrosoftAppCredentials.TrustServiceUrl(serviceUrl);
-```
+Many bots are stateful and use state to manage a conversation over multiple turns.
+When the continue conversation method creates a turn context, the turn will have the correct user and conversation state associated with it, and you can integrate proactive turns into your bot's logic.
+If you need the bot logic to be aware of the proactive message, you have a few options for doing so. You can:
 
-For proactive messaging, `serviceUrl` is the URL of the channel that the recipient of the proactive message is using and can be found in `Activity.ServiceUrl`.
+- Provide the bot's turn handler as the turn callback handler. The bot will then receive the "ContinueConversation" event activity.
+- Use the turn callback handler to add information to the turn context first, and then call the bot's turn handler.
 
-You'll want to add the above code just prior to the the code that sends the proactive message. In the [Proactive Messages Sample](https://aka.ms/proactive-sample-cs), you would put it in `NotifyController.cs` just before `await turnContext.SendActivityAsync("proactive hello");`.
-
-# [JavaScript](#tab/javascript)
-
-```js
-MicrosoftAppCredentials.trustServiceUrl(serviceUrl);
-```
-
-For proactive messaging, `serviceUrl` is the URL of the channel that the recipient of the proactive message is using and can be found in `activity.serviceUrl`.
-
-You'll want to add the above code just prior to the the code that sends the proactive message. In the [Proactive Messages Sample](https://aka.ms/proactive-sample-js), you would put it in `index.js` just before `await turnContext.sendActivity('proactive hello');`.
-
-# [Python](#tab/python)
-
-```python
-MicrosoftAppCredentials.trustServiceUrl(serviceUrl)
-```
-
-For proactive messaging, `serviceUrl` is the URL of the channel that the recipient of the proactive message is using and can be found in `activity.serviceUrl`.
-
-You'll want to add the above code just prior to the the code that sends the proactive message. In the [Proactive Messages Sample](https://aka.ms/bot-proactive-python-sample-code), you add it in `app.py` prior sending the *proactive hello* message.
-
----
+In both of these cases, you will need to design your bot logic to handle the proactive event.
 
 ## Next steps
 

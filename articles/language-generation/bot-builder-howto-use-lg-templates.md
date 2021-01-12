@@ -181,9 +181,9 @@ For more information about the `ActivityAttachment()` function, read [inject fun
 
 After updating your bot logic and LG templates you are ready to add LUIS to your bot. Follow the steps in the sections below to add LUIS to your bot:
 
-- [Create a LUIS app in the LUIS portal](https://aka.ms/bot-service-add-luis-to-bot#create-a-luis-app-in-the-luis-portal).
-- [Retrieve application information in the LUIS portal](https://aka.ms/bot-service-add-luis-to-bot##retrieve-application-information-from-the-luisai-portal)
-- [Update your bot's settings file](https://aka.ms/bot-service-add-luis-to-bot#update-the-settings-file)
+- [Create a LUIS app in the LUIS portal](../v4sdk/bot-builder-howto-v4-luis.md#create-a-luis-app-in-the-luis-portal).
+- [Retrieve application information in the LUIS portal](../v4sdk/bot-builder-howto-v4-luis.md#retrieve-application-information-from-the-luisai-portal)
+- [Update your bot's settings file](../v4sdk/bot-builder-howto-v4-luis.md#update-the-settings-file)
 
 ## Test the bot
 

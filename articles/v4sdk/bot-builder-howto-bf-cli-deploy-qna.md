@@ -21,7 +21,7 @@ The Bot Framework Command Line Interface (CLI) lets you automate the management 
 
 - Basic understanding of [QnA Maker][qna-overview].
 - Knowledge of the [.qna file format][qna-file-format].
-- Have a bot project with `.qna` files.
+- Have a bot project with .qna files.
 - If working with adaptive dialogs, you should have an understanding of:
   - [Natural Language Processing in adaptive dialogs][natural-language-processing-in-adaptive-dialogs].
   - how the [QnA Maker recognizer][qna-maker-recognizer] is used.
@@ -39,7 +39,7 @@ This article describes how to perform some common tasks used to deploy a QnA Mak
 1. [Publish your QnA Maker knowledge base](#publish-your-qna-maker-knowledge-base)
 1. [Create a QnA Maker knowledge base and publish it to production using the build command](#create-a-qna-maker-knowledge-base-and-publish-it-to-production-using-the-build-command)
 
-Once your bot project's QnA Maker KB `.qna` files have been created, you are ready to follow the steps outlined in this article to create your QnA Maker KB. If you do not have a project with QnA Maker KB `.qna` files, you can use the [QnAMaker][qna-maker-sample]. See the sample repository's readme for information on [Getting the samples][getting-the-samples].
+Once your bot project's QnA Maker KB .qna files have been created, you are ready to follow the steps outlined in this article to create your QnA Maker KB. If you do not have a project with QnA Maker KB .qna files, you can use the [QnAMaker][qna-maker-sample]. See the sample repository's readme for information on [Getting the samples][getting-the-samples].
 
 ## Create your QnA Maker resource in Azure Cognitive Services
 
@@ -112,7 +112,7 @@ For additional information on using this command, see [`bf qnamaker:init`][bf-qn
 
 ## Create your QnA Maker model
 
-Once you have created the individual `.qna` files for your bot, you can convert them into a single _QnA Maker model_ using the `qnamaker:convert` command. The QnA Maker model is a JSON file used to create a QnA Maker KB.
+Once you have created the individual .qna files for your bot, you can convert them into a single _QnA Maker model_ using the `qnamaker:convert` command. The QnA Maker model is a JSON file used to create a QnA Maker KB.
 
 To create your QnA Maker model:
 
@@ -120,7 +120,7 @@ To create your QnA Maker model:
 bf qnamaker:convert -i <input-folder-name> -o <output-folder-name> --name <QnA-KB-Name> -r
 ```
 
-For example, the command `bf qnamaker:convert -i dialogs -o output --name MyQnAMakerBot -r` will recursively search for all `.qna` files in the _dialogs__ directory and any subdirectories and merge them into a single file named **converted.json** in the _output_ directory. This JSON file will contain all of the information needed to create a QnA Maker KB, including the name _MyQnAMakerBot_ which will be the name of the QnA Maker knowledge base that will exist in Azure.
+For example, the command `bf qnamaker:convert -i dialogs -o output --name MyQnAMakerBot -r` will recursively search for all .qna files in the _dialogs__ directory and any subdirectories and merge them into a single file named **converted.json** in the _output_ directory. This JSON file will contain all of the information needed to create a QnA Maker KB, including the name _MyQnAMakerBot_ which will be the name of the QnA Maker knowledge base that will exist in Azure.
 
 For additional information on using this command, see [`bf qnamaker:convert`][bf-qnamakerconvert] in the BF CLI QnA Maker readme.
 
@@ -186,7 +186,7 @@ The `build` command only publishes to the production endpoint. You can use it se
 
 The QnAMaker build command combines all the following actions into a single command:
 
-1. Creates one QnA Maker model for [every locale](#qna-and-multiple-language-variations) found using your existing `.qna` files.
+1. Creates one QnA Maker model for [every locale](#qna-and-multiple-language-variations) found using your existing .qna files.
 1. Creates a new QnA Maker KB if none exists, otherwise it will overwrite the existing KB.
 1. It trains your QnA Maker KB then publishes it to the production endpoint.
 1. If you include the optional `dialog` parameter, it will output the `.dialog` definition files that can be used by the [QnA Maker recognizer][qna-maker-recognizer] when developing using the [declarative approach][declarative]. This is explained in [The dialog file](#the-dialog-file) section.
@@ -238,7 +238,7 @@ bf qnamaker:build --qnaConfig qnaConfig.json
 
 Each [.qna file][qna-file-format] can have multiple language variations, one for each language supported.
 
-The pattern for the `.qna` file name when language variants are used is as follows:
+The pattern for the .qna file name when language variants are used is as follows:
 
 `<file-name>.<locale>.qna`
 
@@ -251,7 +251,7 @@ example.de-de.qna
 etc.
 ```
 
-In the above example, each one of the `.qna` files will result in one QnA Maker KB created for each of the languages.
+In the above example, each one of the .qna files will result in one QnA Maker KB created for each of the languages.
 
 > [!TIP]
 >
@@ -259,7 +259,7 @@ In the above example, each one of the `.qna` files will result in one QnA Maker 
 
 ### QnA Maker Knowledge Bases created
 
-To enable the scenario where multiple people are working with LUIS models and need to be able to work with them independently from each other while all being tied to the same source control, the `qnamaker:build` command creates the QnA Maker knowledge base using a combination of the value you proved as the `botName` parameter followed by the user name you are logged in as, then the locale followed by `.qna`.
+To enable the scenario where multiple people are working with LUIS models and need to be able to work with them independently from each other while all being tied to the same source control, the `qnamaker:build` command creates the QnA Maker knowledge base using a combination of the value you proved as the `botName` parameter followed by the user name you are logged in as, then the locale followed by .qna.
 
 The QnA Maker KB name:
 
@@ -309,7 +309,7 @@ Example settings file:
 
 ### The dialog file
 
-When you use the optional `--dialog` option, a dialog file will be generated for all language variations of each of your `.qna` files.
+When you use the optional `--dialog` option, a dialog file will be generated for all language variations of each of your .qna files.
 
 > [!IMPORTANT]
 >

@@ -92,7 +92,7 @@ For detailed information and examples, see the [Dialog management](../adaptive-d
 
 ### Manage properties
 
-The manage properties actions able you to create, update and delete a property.  For more information on properties, see the Bot Framework SDK [Managing state][bot-builder-concept-state.md] and the [Managing state in adaptive dialogs][memory-states] articles.
+The manage properties actions able you to create, update and delete a property.  For more information on properties, see the Bot Framework SDK [Managing state][Managing-state] and the [Managing state in adaptive dialogs][memory-states] articles.
 
 * **Edit an array**. This enables you to perform edit operations on an array.
 * **Delete a property**. This enables you to remove a property from [memory][memory-states].
@@ -139,3 +139,4 @@ For detailed information and examples, see the [Debugging options](../adaptive-d
 [adaptive-expressions]:bot-builder-concept-adaptive-expressions.md
 [memory-states]:bot-builder-concept-adaptive-dialog-memory-states.md
 [interruptions]: bot-builder-concept-adaptive-dialog-interruptions.md
+[Managing-state]: bot-builder-concept-state.md

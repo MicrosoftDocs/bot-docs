@@ -5,7 +5,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 2/7/2020
+ms.date: 11/24/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -53,10 +53,8 @@ Once you finish this article, you will have a bot that can respond to a few simp
 
 ### Web Chat and Direct Line considerations
 
-<!-- Summarized from: https://blog.botframework.com/2018/09/25/enhanced-direct-line-authentication-features/ -->
-
 > [!IMPORTANT]
-> When you use Azure Bot Service authentication with Web Chat there are some important security considerations you must keep in mind. For more information, see the [security considerations](../rest-api/bot-framework-rest-direct-line-3-0-authentication.md#security-considerations) section in the REST authentication article.
+> You need to use Direct Line with enhanced authentication enabled to mitigate security risks when connecting to a bot using the Web Chat control. For more information, see [Direct Line enhanced authentication](bot-builder-security-enhanced.md).
 
 ## Prerequisites
 
@@ -327,9 +325,7 @@ as shown in [Configure the Emulator for authentication](../bot-service-debug-emu
 After you have configured the authentication mechanism, you can perform the actual bot sample testing.
 
 > [!NOTE]
-> You may be asked to enter a *magic code*, because the way the bot sample is implemented. This magic code is part of the [RFC#7636](https://tools.ietf.org/html/rfc7636#page-5) and is there to add an extra security element. By removing the magic code, there is an increased security risk. This can be mitigated using the Direct Line enhanced security that allows the setting up of *valid* domains that are allowed to be authenticated.
->
-> See [Connect a bot to Direct Line](~/bot-service-channel-connect-directline.md#configure-settings) and [Enhanced Direct Line Authentication Features](https://blog.botframework.com/2018/09/25/enhanced-direct-line-authentication-features/).
+> You may be asked to enter a *magic code*, because the way the bot sample is implemented. This magic code is part of the [RFC#7636](https://tools.ietf.org/html/rfc7636#page-5) and is there to add an extra security element. By removing the magic code, there is an increased security risk. This can be mitigated using Direct Line with enhanced authentication enabled. For more information, see [Bot Framework enhanced authentication](bot-builder-security-enhanced.md).
 
 1. Run the bot sample locally on your machine.
 1. Start the Emulator.
@@ -512,7 +508,7 @@ One difference between other channels and Teams is that Teams sends an *invoke* 
 
 # [Python](#tab/python)
 
-Microsoft Teams currently differs slightly in the way auth is integrated with the bot. Please, refer to [Teams documentation](https://aka.ms/teams-docs) on authentication.
+Microsoft Teams currently differs slightly in the way auth is integrated with the bot. Please, refer to [Teams documentation](/microsoftteams/platform/bots/how-to/create-a-bot-for-teams) on authentication.
 
 ---
 
@@ -532,7 +528,7 @@ If you use an *OAuth prompt*, this invoke activity must be forwarded to the dial
 
 # [Python](#tab/python)
 
-Microsoft Teams currently differs slightly in the way auth is integrated with the bot. Please, refer to [Teams documentation](https://aka.ms/teams-docs) on authentication.
+Microsoft Teams currently differs slightly in the way auth is integrated with the bot. Please, refer to [Teams documentation](/microsoftteams/platform/bots/how-to/create-a-bot-for-teams) on authentication.
 
 ---
 
@@ -570,4 +566,4 @@ The `TeamsActivityHandler` also sends *message reaction* activities. A message r
 [js-msgraph-sample]: https://aka.ms/v4js-auth-msgraph-sample
 [cs-teams-auth-sample]:https://aka.ms/cs-teams-auth-sample
 [js-teams-auth-sample]:https://aka.ms/js-teams-auth-sample
-[teams-activity-feed]:https://aka.ms/teams-activity-feed
+[teams-activity-feed]:/microsoftteams/platform/concepts/activity-feed

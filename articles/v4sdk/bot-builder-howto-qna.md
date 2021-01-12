@@ -180,12 +180,12 @@ The **QnA Maker multi-turn** sample ([**C#**](https://aka.ms/cs-qna-multiturn), 
 If the QnA Maker knowledge base requires an additional response from the user, QnA Maker sends context information that you can use to prompt the user. This information is also used to make any follow-up calls to the QnA Maker service.
 In version 4.6, the Bot Framework SDK added support for this feature.
 
-  To construct such a knowledge base, see the QnA Maker documentation on how to [Use follow-up prompts to create multiple turns of a conversation](https://aka.ms/qnamaker-multiturn-conversation).
+  To construct such a knowledge base, see the QnA Maker documentation on how to [Use follow-up prompts to create multiple turns of a conversation](/azure/cognitive-services/qnamaker/how-to/multiturn-conversation).
 
 - QnA Maker also supports active learning suggestions, allowing the knowledge base to improve over time.
 The QnA Maker dialog supports explicit feedback for the active learning feature.
 
-  To enable this feature on a knowledge base, see the QnA Maker documentation on [Active learning suggestions](https://aka.ms/qnamaker-active-learning).
+  To enable this feature on a knowledge base, see the QnA Maker documentation on [Active learning suggestions](/azure/cognitive-services/qnamaker/concepts/active-learning-suggestions).
 
 <!--To learn how to incorporate multi-turn support in your bot, take a look at the QnA Maker Multi-turn [[**C#**](https://aka.ms/cs-qna-multiturn) | [**JS**](https://aka.ms/js-qna-multiturn)] sample.-->
 

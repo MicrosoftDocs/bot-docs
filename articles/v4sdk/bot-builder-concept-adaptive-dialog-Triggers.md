@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-Adaptive dialogs introduce a new event based approach to model conversations. Any sub-system in your bot can emit events and all adaptive dialogs contain one or more event handlers called _triggers_ that enable you to react to these events.  Any time an event fires, the active adaptive dialog's triggers are evaluated and if any trigger matches the current event, the [actions][actions] associated with that trigger execute. If an event is not handled in the active dialog, it will be passed up to its parent dialog to be evaluated. This process continues until it is either handled or reaches the bots root dialog. If no event handler (_trigger_) is found, the event will be ignored and no action will be taken.
+Adaptive dialogs introduce a new event based approach to model conversations. Any subsystem in your bot can emit events and all adaptive dialogs contain one or more event handlers called _triggers_ that enable you to react to these events. Any time an event fires, the active adaptive dialog's triggers are evaluated and if any trigger matches the current event, the [actions][actions] associated with that trigger execute. If an event is not handled in the active dialog, it will be passed up to its parent dialog to be evaluated. This process continues until it is either handled or reaches the bots root dialog. If no event handler (_trigger_) is found, the event will be ignored and no action will be taken.
 
 <!--TODO P3: preBubble/consultation/postBubble phases - Possibly document in an advanced section at some point.
 From: v-jofin: (https://github.com/MicrosoftDocs/bot-docs-pr/pull/2109#discussion_r418164608)
@@ -40,7 +40,7 @@ All triggers also contain a list of _Actions_. Actions represent what your bot d
 
 ## Trigger types
 
-_Triggers_ enable you to catch and respond to events. The broadest trigger from which all other triggers are derived is the `OnCondition` trigger that allows you to catch and attach a list of actions to execute when a specific event is emitted by any of the bots sub-systems.
+_Triggers_ enable you to catch and respond to events. The broadest trigger from which all other triggers are derived is the `OnCondition` trigger that allows you to catch and attach a list of actions to execute when a specific event is emitted by any of the bots subsystems.
 
 Triggers are listed in the following sections, categorized and grouped by trigger type.
 
@@ -150,8 +150,9 @@ For detailed information and an example, see the [Custom event triggers][custom-
 [botframework-activity]:https://github.com/microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md
 [adaptive-expressions]:bot-builder-concept-adaptive-expressions.md
 [concept-dialog]:bot-builder-concept-dialog.md
-[how-bots-work]:https://aka.ms/how-bots-work
+[how-bots-work]:bot-builder-basics.md
 
 <!-- External links-->
 [luis]:https://www.luis.ai/home
-[luis-prediction-scores]:https://aka.ms/luis-prediction-scores
+[luis-prediction-scores]:/azure/cognitive-services/luis/luis-concept-prediction-score
+

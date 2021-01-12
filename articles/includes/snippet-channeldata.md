@@ -18,41 +18,21 @@ This article describes how to use a message activity's channel data property to 
 
 ## Create a custom Email message
 
-To create an email message, set the activity object's channel data property
-to a JSON object that contains these properties:
+To create a custom email message, set the activity `channelData` property to a JSON object that contains the following properties:
 
-| Property      | Description                                                                                                                                                  |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| bccRecipients | A semicolon (;) delimited string of email addresses to add to the message's Bcc (blind carbon copy) field.                                                   |
-| ccRecipients  | A semicolon (;) delimited string of email addresses to add to the message's Cc (carbon copy) field.                                                          |
+| Property | Description |
+| :--- | :--- |
+| bccRecipients | A semicolon (;) delimited string of email addresses to add to the message's Bcc (blind carbon copy) field.|
+| ccRecipients  | A semicolon (;) delimited string of email addresses to add to the message's Cc (carbon copy) field. |
 | htmlBody      | An HTML document that specifies the body of the email message. See the channel's documentation for information about supported HTML elements and attributes. |
-| importance    | The email's importance level. Valid values are **high**, **normal**, and **low**. The default value is **normal**.                                           |
-| subject       | The email's subject. See the channel's documentation for information about field requirements.                                                               |
-| toRecipients  | A semicolon (;) delimited string of email addresses to add to the message's To field.                                                                        |
+| importance    | The email's importance level. Valid values are **high**, **normal**, and **low**. The default value is **normal**.|
+| subject       | The email's subject. See the channel's documentation for information about field requirements.|
+| toRecipients  | A semicolon (;) delimited string of email addresses to add to the message's To field.|
 
-> [!NOTE]
-> Messages that your bot receives from users via the Email channel may
-> contain a channel data property that is populated with a JSON object like the one described above.
+The outgoing and incoming messages between the user and the bot may have a `channelData` activity that contains a JSON object whose properties are specified in the previous table.
+The snippet below shows an example of the `channelData` property for an incoming custom email message, from the bot to the user.
 
-This snippet shows an example of the `channelData` property for a custom email message.
-
-```json
-"channelData": {
-    "type": "message",
-    "locale": "en-Us",
-    "channelID": "email",
-    "from": { "id": "mybot@mydomain.com", "name": "My bot"},
-    "recipient": { "id": "joe@otherdomain.com", "name": "Joe Doe"},
-    "conversation": { "id": "123123123123", "topic": "awesome chat" },
-    "channelData":
-    {
-        "htmlBody": "<html><body style = /"font-family: Calibri; font-size: 11pt;/" >This is more than awesome.</body></html>",
-        "subject": "Super awesome message subject",
-        "importance": "high",
-        "ccRecipients": "Yasemin@adatum.com;Temel@adventure-works.com"
-    }
-}
-```
+[!INCLUDE [email channelData json](~/includes/snippet-channelData-email.md)]
 
 ## Create a full-fidelity Slack message
 
@@ -252,7 +232,7 @@ To create interactive menus, use the following JSON:
 
 ## Create a Facebook notification
 
-To create a Facebook notification, 
+To create a Facebook notification,
 set the activity object's channel data property to a JSON object that specifies these properties:
 
 | Property          | Description                                                                                                          |
@@ -261,8 +241,8 @@ set the activity object's channel data property to a JSON object that specifies 
 | attachment        | An attachment that specifies an image, video, or other multimedia type, or a templated attachment such as a receipt. |
 
 > [!NOTE]
-> For details about format and contents of the `notification_type` property and `attachment` property, see the 
-> <a href="https://developers.facebook.com/docs/messenger-platform/send-api-reference#guidelines" target="_blank">Facebook API documentation</a>. 
+> For details about format and contents of the `notification_type` property and `attachment` property, see the
+> <a href="https://developers.facebook.com/docs/messenger-platform/send-api-reference#guidelines" target="_blank">Facebook API documentation</a>.
 
 This snippet shows an example of the `channelData` property for a Facebook receipt attachment.
 
@@ -281,16 +261,16 @@ This snippet shows an example of the `channelData` property for a Facebook recei
 
 ## Create a Telegram message
 
-To create a message that implements Telegram-specific actions, 
-such as sharing a voice memo or a sticker, 
-set the activity object's channel data property to a JSON object that specifies these properties: 
+To create a message that implements Telegram-specific actions,
+such as sharing a voice memo or a sticker,
+set the activity object's channel data property to a JSON object that specifies these properties:
 
 | Property   | Description                             |
 | ---------- | --------------------------------------- |
 | method     | The Telegram Bot API method to call.    |
 | parameters | The parameters of the specified method. |
 
-These Telegram methods are supported: 
+These Telegram methods are supported:
 
 - answerInlineQuery
 - editMessageCaption
@@ -311,7 +291,7 @@ These Telegram methods are supported:
 - sendVoice
 - unbanChateMember
 
-For details about these Telegram methods and their parameters, see the 
+For details about these Telegram methods and their parameters, see the
 <a href="https://core.telegram.org/bots/api#available-methods" target="_blank">Telegram Bot API documentation</a>.
 
 > [!NOTE]
@@ -449,7 +429,7 @@ This snippet shows an example of the `channelData` property for a native Kik mes
 
 ## Create a LINE message
 
-To create a message that implements LINE-specific message types (such as sticker, templates, or LINE specific action types like opening the phone camera), set the activity object's channel data property to a JSON object that specifies LINE message types and action types. 
+To create a message that implements LINE-specific message types (such as sticker, templates, or LINE specific action types like opening the phone camera), set the activity object's channel data property to a JSON object that specifies LINE message types and action types.
 
 | Property | Description                       |
 | -------- | --------------------------------- |
@@ -457,66 +437,66 @@ To create a message that implements LINE-specific message types (such as sticker
 
 These LINE message types are supported:
 * Sticker
-* Imagemap 
-* Template (Button, confirm, carousel) 
-* Flex 
+* Imagemap
+* Template (Button, confirm, carousel)
+* Flex
 
-These LINE actions can be specified in the action field of the message type JSON object: 
-* Postback 
-* Message 
-* URI 
-* Datetimerpicker 
-* Camera 
-* Camera roll 
-* Location 
+These LINE actions can be specified in the action field of the message type JSON object:
+* Postback
+* Message
+* URI
+* Datetimerpicker
+* Camera
+* Camera roll
+* Location
 
-For details about these LINE methods and their parameters, see the [LINE Bot API documentation](https://developers.line.biz/en/docs/messaging-api/). 
+For details about these LINE methods and their parameters, see the [LINE Bot API documentation](https://developers.line.biz/en/docs/messaging-api/).
 
-This snippet shows an example of a `channelData` property that specifies a channel message type `ButtonTemplate` and 3 action types: camera, cameraRoll, Datetimepicker. 
+This snippet shows an example of a `channelData` property that specifies a channel message type `ButtonTemplate` and 3 action types: camera, cameraRoll, Datetimepicker.
 
 ```json
-"channelData": { 
-    "type": "ButtonsTemplate", 
-    "altText": "This is a buttons template", 
-    "template": { 
-        "type": "buttons", 
-        "thumbnailImageUrl": "https://example.com/bot/images/image.jpg", 
-        "imageAspectRatio": "rectangle", 
-        "imageSize": "cover", 
-        "imageBackgroundColor": "#FFFFFF", 
-        "title": "Menu", 
-        "text": "Please select", 
-        "defaultAction": { 
-            "type": "uri", 
-            "label": "View detail", 
-            "uri": "http://example.com/page/123" 
-        }, 
-        "actions": [{ 
-                "type": "cameraRoll", 
-                "label": "Camera roll" 
-            }, 
-            { 
-                "type": "camera", 
-                "label": "Camera" 
-            }, 
-            { 
-                "type": "datetimepicker", 
-                "label": "Select date", 
-                "data": "storeId=12345", 
-                "mode": "datetime", 
-                "initial": "2017-12-25t00:00", 
-                "max": "2018-01-24t23:59", 
-                "min": "2017-12-25t00:00" 
-            } 
-        ] 
-    } 
+"channelData": {
+    "type": "ButtonsTemplate",
+    "altText": "This is a buttons template",
+    "template": {
+        "type": "buttons",
+        "thumbnailImageUrl": "https://example.com/bot/images/image.jpg",
+        "imageAspectRatio": "rectangle",
+        "imageSize": "cover",
+        "imageBackgroundColor": "#FFFFFF",
+        "title": "Menu",
+        "text": "Please select",
+        "defaultAction": {
+            "type": "uri",
+            "label": "View detail",
+            "uri": "http://example.com/page/123"
+        },
+        "actions": [{
+                "type": "cameraRoll",
+                "label": "Camera roll"
+            },
+            {
+                "type": "camera",
+                "label": "Camera"
+            },
+            {
+                "type": "datetimepicker",
+                "label": "Select date",
+                "data": "storeId=12345",
+                "mode": "datetime",
+                "initial": "2017-12-25t00:00",
+                "max": "2018-01-24t23:59",
+                "min": "2017-12-25t00:00"
+            }
+        ]
+    }
 }
 ```
 
 ## Adding a bot to Teams
 
 Bots added to a team become another team member, who can be `@mentioned` as part of the conversation. In fact, bots only receive messages when they are `@mentioned`, so other conversations on the channel are not sent to the bot.
-For more information, see [Channel and Group chat conversations with a Microsoft Teams bot](https://aka.ms/bots-con-channel).
+For more information, see [Channel and Group chat conversations with a Microsoft Teams bot](/microsoftteams/platform/concepts/bots/bot-conversations/bots-conv-channel).
 
 Because bots in a group or channel respond only when they are mentioned (`@botname`) in a message, every message received by a bot in a group channel contains its own name, and you must ensure your message parsing handles that. In addition, bots can parse out other users mentioned and mention users as part of their messages.
 
@@ -552,7 +532,7 @@ if (message.entities) {
 
 ```
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Adding a bot by GUID, for anything other than testing purposes, is not recommended. Doing so severely limits the functionality of a bot. Bots in production should be added to Teams as part of an app. See [Create a bot](https://docs.microsoft.com/microsoftteams/platform/concepts/bots/bots-create) and [Test and debug your Microsoft Teams bot](https://docs.microsoft.com/microsoftteams/platform/concepts/bots/bots-test).
 
 

@@ -6,26 +6,26 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 07/10/2020
+ms.date: 12/23/2020
 ---
 
 
-# Bot Framework FAQ index
+# Bot Framework FAQ
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-<!-- Attention writers!! When you create a new FAQ, please add the related link in the proper section below. -->
+<!-- Attention writers!! When you create a new FAQ entry, please add the related link in the proper section below. -->
 
-The following are some common questions that address problems you might face.
-In case you don't find the answer you're looking for, you can post your questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/botframework) using the `botframework` tag. If you're a new user, visit the [Stack Overflow Help Center](https://stackoverflow.com/help/how-to-ask).
+The following are some common questions you might have.
+In case you don't find the answer you're looking for, you can post your questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/botframework) using the `botframework` tag. If you're a new user, visit the [Stack Overflow Help Center](https://stackoverflow.com/help/how-to-ask) first.
 
 ## Background and availability
 
 - [Why did Microsoft develop the Bot Framework?](bot-service-resources-faq-availability.md#why-did-microsoft-develop-the-bot-framework)
-- [What is the v4 SDK?](bot-service-resources-faq-availability.md#what-is-the-v4-sdk)
 - [How to run a bot offline?](bot-service-resources-faq-availability.md#how-to-run-a-bot-offline)
-- [Bot Framework SDK Version 3 Lifetime Support and Deprecation Notice](bot-service-resources-faq-availability.md#bot-framework-sdk-version-3-lifetime-support-and-deprecation-notice)
 - [How can I migrate Azure Bot Service from one region to another?](bot-service-resources-faq-availability.md#how-can-i-migrate-azure-bot-service-from-one-region-to-another)
+- [What is the v4 SDK?](bot-service-resources-faq-availability.md#what-is-the-v4-sdk)
+- [Bot Framework SDK Version 3 Lifetime Support and Deprecation Notice](bot-service-resources-faq-availability.md#bot-framework-sdk-version-3-lifetime-support-and-deprecation-notice)
 
 ## Bot Framework general
 
@@ -43,11 +43,8 @@ In case you don't find the answer you're looking for, you can post your question
 - [What are the rate limits?](bot-service-resources-faq-general.md#what-are-the-rate-limits)
 - [How will I know if I'm impacted by rate limiting?](bot-service-resources-faq-general.md#how-will-i-know-if-im-impacted-by-rate-limiting)
 - [How to implement human handoff?](bot-service-resources-faq-general.md#how-to-implement-human-handoff)
+- [What is the size limit of a file transferred using a channel?](bot-service-resources-faq-general.md#what-is-the-size-limit-of-a-file-transferred-using-channels)
 
-<!-- Retired, re: https://github.com/MicrosoftDocs/bot-docs/issues/1698
-- [What are some community-authored dialogs?](bot-service-resources-faq-general.md#what-are-some-community-authored-dialogs)
-- [What are some community-authored templates?](bot-service-resources-faq-general.md#what-are-some-community-authored-templates)
--->
 
 ## Ecosystem
 
@@ -73,6 +70,7 @@ In case you don't find the answer you're looking for, you can post your question
 - [Can I block all traffic to my bot except traffic from the Bot Framework Service?](bot-service-resources-faq-security.md#can-i-block-all-traffic-to-my-bot-except-traffic-from-the-bot-framework-service)
 - [Which RBAC role is required to create and deploy a bot?](bot-service-resources-faq-security.md#which-rbac-role-is-required-to-create-and-deploy-a-bot)
 - [What keeps my bot secure from clients impersonating the Bot Framework Service?](bot-service-resources-faq-security.md#what-keeps-my-bot-secure-from-clients-impersonating-the-bot-framework-service)
+- [What is the purpose of the magic code during authentication?](bot-service-resources-faq-security.md#what-is-the-purpose-of-the-magic-code-during-authentication)
 
 ## Azure
 

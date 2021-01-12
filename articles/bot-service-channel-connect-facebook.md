@@ -7,7 +7,7 @@ ms.topic: article
 author: kamrani
 ms.author: kamrani
 ms.service: bot-service
-ms.date: 10/22/2020
+ms.date: 12/14/2020
 ---
 
 # Connect a bot to Facebook
@@ -85,7 +85,7 @@ The bot is accessed through a Facebook Page.
 
 ### Enable webhooks
 
-In order to send messages and other events from your bot to Facebook Messenger, you must enable webhooks integration. At this point, let's leave the Facebook setting steps pending; will come back to them.
+In order to send messages and other events from your bot to Facebook Messenger, you must enable webhooks integration. At this point, leave the Facebook setting steps pending and come back to them later.
 
 1. In your browser open a new window and navigate to the [Azure portal](https://portal.azure.com/).
 
@@ -156,14 +156,20 @@ To use Facebook Workplace with your bot, you must create a Workplace account and
 1. Click **Preview Profile** and verify the information is correct.
 1. Access *Free Trial*.
 1. Create **password**.
-1. Click **Invite Coworkers** to invite employees to sign-in. The employees you invited will become members as soon as they sign. They will go through a similar sign-in process as described in these steps.
+1. Click **Invite Coworkers** to invite employees to sign-in. The employees you invited will become members as soon as they sign in. They will go through a similar sign-in process as described in these steps. The following picture shows an example of the Workplace home page navigation panel:
+
+    ![Workplace home pane](media/channels/fb-workplace-home-pane.png)
 
 ### Create a custom integration
 
 Create a [custom integration](https://developers.facebook.com/docs/workplace/custom-integrations-new) for your Workplace following the steps described below. When you create a custom integration, an app with defined permissions and a page of type 'Bot' only visible within your Workplace community are created.
 
+1. In the home page navigation panel, click the tools icon. This will display the Admin navigation panel.
 1. In the **Admin Panel**, open the **Integrations** tab.
-1. Click on the **Create your own custom App** button.
+
+    ![Workplace integration pane](media/channels/fb-workplace-integration-pane.png)
+
+1. Click on the **Integrations** link.
 
     ![Workplace Integration](media/channels/fb-integration.png)
 
@@ -245,7 +251,7 @@ Now that you have your Facebook app, page and credentials, you need to configure
 
 #### Install the Facebook adapter NuGet package
 
-Add  the [Microsoft.Bot.Builder.Adapters.Facebook](https://www.nuget.org/packages/Microsoft.Bot.Builder.Adapters.Facebook/) NuGet package. For more information on using NuGet, see [Install and manage packages in Visual Studio](https://aka.ms/install-manage-packages-vs).
+Add  the [Microsoft.Bot.Builder.Adapters.Facebook](https://www.nuget.org/packages/Microsoft.Bot.Builder.Adapters.Facebook/) NuGet package. For more information on using NuGet, see [Install and manage packages in Visual Studio](/nuget/tools/package-manager-ui).
 
 #### Create a Facebook adapter class
 
@@ -275,7 +281,7 @@ public class FacebookAdapterWithErrorHandler : FacebookAdapter
 
 #### Create a new controller for handling Facebook requests
 
-Create a new controller which will handle requests from Facebook, on a new endpoing 'api/facebook' instead of the default 'api/messages' used for requests from Azure Bot Service Channels.  By adding an additional endpoint to your bot, you can accept requests from Bot Service channels, as well as from Facebook, using the same bot.
+Create a new controller which will handle requests from Facebook, on a new endpoint 'api/facebook' instead of the default 'api/messages' used for requests from Azure Bot Service Channels.  By adding an additional endpoint to your bot, you can accept requests from Bot Service channels, as well as from Facebook, using the same bot.
 
 ```csharp
 [Route("api/facebook")]
@@ -332,7 +338,7 @@ public void ConfigureServices(IServiceCollection services)
 
 Now that you have wired up the adapter in your bot project, you need to provide to Facebook the correct endpoint for your application, so that your bot will receive messages. You also need this URL to complete configuration of your bot application.
 
-To complete this step, [deploy your bot to Azure](https://aka.ms/bot-builder-deploy-az-cli) and make a note of the URL of your deployed bot.
+To complete this step, [deploy your bot to Azure](bot-builder-deploy-az-cli.md) and make a note of the URL of your deployed bot.
 
 > [!NOTE]
 > If you are not ready to deploy your bot to Azure, or wish to debug your bot when using the Facebook adapter, you can use a tool such as [ngrok](https://www.ngrok.com) (which you will likely already have installed if you have used the Bot Framework Emulator previously) to tunnel through to your bot running locally and provide you with a publicly accessible URL for this.
@@ -345,7 +351,7 @@ To complete this step, [deploy your bot to Azure](https://aka.ms/bot-builder-dep
 
 #### Add Facebook app settings to your bot's configuration file
 
-Add the settings shown below to your appSettings.json file in your bot project. You populate **FacebookAppSecret** and **FacebookAccessToken** using the values you gathered when creating and configuring your Facebook App. **FacebookVerifyToken** should be a random string that you create and will be used to ensure your bot's endpoint is authenitic when called by Facebook.
+Add the settings shown below to your appSettings.json file in your bot project. You populate **FacebookAppSecret** and **FacebookAccessToken** using the values you gathered when creating and configuring your Facebook App. **FacebookVerifyToken** should be a random string that you create and will be used to ensure your bot's endpoint is authenticated when called by Facebook.
 
 ```json
   "FacebookVerifyToken": "",

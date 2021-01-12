@@ -22,7 +22,7 @@ This article explains how to update an existing LUIS resource. For information o
 ## Prerequisites
 
 - Knowledge of [LU templates][lu-templates].
-- Have a bot project with `.lu` files.
+- Have a bot project with .lu files.
 - If working with adaptive dialogs, you should have an understanding of:
   - [Natural language processing in adaptive dialogs][natural-language-processing-in-adaptive-dialogs].
   - [Language understanding in adaptive dialogs][language-understanding].
@@ -70,7 +70,7 @@ For additional information on using this command, see [bf luis:application:list]
 
 ## Create your LUIS Model
 
-Anytime you make updates to any of the individual `.lu` files used in your project, you will need to create a new LUIS model using the `luis:convert` command. You will use this new model to update your LUIS application that is hosted in Azure. Doing so will enable these changes to take effect in your bot.
+Anytime you make updates to any of the individual .lu files used in your project, you will need to create a new LUIS model using the `luis:convert` command. You will use this new model to update your LUIS application that is hosted in Azure. Doing so will enable these changes to take effect in your bot.
 
 ``` cli
 bf luis:convert -i <input-folder-name> -o <output-file-name> -r --name <name>
@@ -79,7 +79,7 @@ bf luis:convert -i <input-folder-name> -o <output-file-name> -r --name <name>
 For additional information on using this command, see [bf luis:convert][bf-luisconvert] in the BF CLI LUIS readme.
 
 <!--
-In the example below, the command is run in a command line while in the root directory of your project. It will search for all `.lu` files in the _dialogs_ directory and because of the `-r` option, all of its sub-directories. It will save a file named LUISModel.json in the _output_ directory.
+In the example below, the command is run in a command line while in the root directory of your project. It will search for all .lu files in the _dialogs_ directory and because of the `-r` option, all of its sub-directories. It will save a file named LUISModel.json in the _output_ directory.
 
 ``` cli
 bf luis:convert -i dialogs -o .\output\LUISModel.json -r --name LUISModel.json

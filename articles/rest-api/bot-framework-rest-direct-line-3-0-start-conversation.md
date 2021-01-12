@@ -1,6 +1,6 @@
 ---
 title: Start a conversation - Bot Service
-description: Learn how to use version 3.0 of the Direct Line API to start conversations with bots. Find out how the Start Conversation and Generate Token operations differ.
+description: Learn how to use version 3.0 of the Direct Line API to start conversations with bots. Find out how the start conversation and generate token operations differ.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
@@ -22,7 +22,7 @@ POST https://directline.botframework.com/v3/directline/conversations
 Authorization: Bearer SECRET_OR_TOKEN
 ```
 
-The following snippets provide an example of the Start Conversation request and response.
+The following snippets provide an example of the start conversation request and response.
 
 ### Request
 
@@ -49,16 +49,16 @@ HTTP/1.1 201 Created
 }
 ```
 
-Typically, a Start Conversation request is used to open a new conversation and an **HTTP 201** status code is returned if the new conversation is successfully started. However, if a client submits a Start Conversation request with a Direct Line token in the `Authorization` header that has previously been used to start a conversation using the Start Conversation operation, an **HTTP 200** status code will be returned to indicate that the request was acceptable but no conversation was created (as it already existed).
+Typically, a start conversation request is used to open a new conversation and an **HTTP 201** status code is returned if the new conversation is successfully started. However, if a client submits a start conversation request with a Direct Line token in the `Authorization` header that has previously been used to start a conversation using the start conversation operation, an **HTTP 200** status code will be returned to indicate that the request was acceptable but no conversation was created (as it already existed).
 
 > [!TIP]
 > You have 60 seconds to connect to the WebSocket stream URL. If the connection cannot be established during this time, you can [reconnect to the conversation](bot-framework-rest-direct-line-3-0-reconnect-to-conversation.md) to generate a new stream URL.
 
-## Start Conversation versus Generate Token
+## Start conversation versus generate token
 
-The Start Conversation operation (`POST /v3/directline/conversations`) is similar to the [Generate Token](bot-framework-rest-direct-line-3-0-authentication.md#generate-token) operation (`POST /v3/directline/tokens/generate`) in that both operations return a `token` that can be used to access a single conversation. However, the Start Conversation operation also starts the conversation, contacts the bot, and creates a WebSocket stream URL, whereas the Generate Token operation does none of these things. 
+The start conversation operation (`POST /v3/directline/conversations`) is similar to the [generate token](bot-framework-rest-direct-line-3-0-authentication.md#generate-token) operation (`POST /v3/directline/tokens/generate`) in that both operations return a `token` that can be used to access a single conversation. However, the start conversation operation also starts the conversation, contacts the bot, and creates a WebSocket stream URL, whereas the generate token operation does none of these things.
 
-If you intend to start the conversation immediately with your client, use the Start Conversation operation. If you plan to distribute the token to clients and want them to initiate the conversation, use the [Generate Token](bot-framework-rest-direct-line-3-0-authentication.md#generate-token) operation instead. 
+If you intend to start the conversation immediately with your client, use the start conversation operation. If you plan to distribute the token to clients and want them to initiate the conversation, use the [generate token](bot-framework-rest-direct-line-3-0-authentication.md#generate-token) operation instead.
 
 ## Additional resources
 

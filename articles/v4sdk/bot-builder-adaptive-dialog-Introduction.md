@@ -36,9 +36,9 @@ Adaptive dialogs have many advantages to [WaterfallDialogs][17]. Primarily, they
 * Bring input recognition and rule-based event handling
 * Combine the conversation model (dialog) and output generation into one cohesive, self-contained unit.
 * Support extensibility points for recognition, event rules and machine learning.
-* Was designed to be declarative from the start. This enables tooling including products like [Bot Framework Composer](https://aka.ms/bf-composer-docs-welcome-page) that provides a visual canvas to model conversations.
+* Was designed to be declarative from the start. This enables tooling including products like [Bot Framework Composer](/composer/) that provides a visual canvas to model conversations.
 
-## Anatomy of an adaptive dialog  
+## Anatomy of an adaptive dialog
 
 <p align="center">
     <img alt="Adaptive_dialog_anatomy" src="./media/adaptive-dialogs/adaptive-dialog-anatomy.png" style="max-width:700px;" />
@@ -52,7 +52,7 @@ See the [_Events and triggers in adaptive dialogs_][3] article for more informat
 
 <!--- If an event is not handled in a child dialog, it gets passed up to its parent dialog to handle and this continues until it is either handled or reaches the bots main dialog. If no event handler is found, it will be ignored and no action will be taken.
 
-_Triggers_ enable you to catch and respond to events. The broadest trigger is the OnEvent trigger that allows you to catch and attach a set of steps to execute when a specific event is emitted by any sub-system. Adaptive dialogs supports a couple of other specialized triggers to wrap common events that your bot would handle. See [here][3] to learn more about supported triggers and their usage.-->
+_Triggers_ enable you to catch and respond to events. The broadest trigger is the OnEvent trigger that allows you to catch and attach a set of steps to execute when a specific event is emitted by any sub-system. Adaptive dialogs supports a couple of other specialized triggers to wrap common events that your bot would handle. See [learn more about triggers][3] to learn more about supported triggers and their usage.-->
 
 ### Actions
 
@@ -164,7 +164,7 @@ Each dialog's _recognizer_ analyzes the user's input to determine the user inten
 <!--* [Create a bot using Declarative adaptive dialogs][11]--->
 * [Create a bot combining adaptive, component, waterfall, and custom dialogs][12]
 
-[1]:https://aka.ms/bot-builder-concept-dialog
+[1]:bot-builder-concept-dialog.md
 [3]:bot-builder-concept-adaptive-dialog-triggers.md
 [4]:bot-builder-concept-adaptive-dialog-actions.md
 [5]:bot-builder-concept-adaptive-dialog-inputs.md
@@ -176,7 +176,7 @@ Each dialog's _recognizer_ analyzes the user's input to determine the user inten
 [11]:bot-builder-dialogs-declarative-adaptive.md
 [12]:bot-builder-mixed-dialogs.md
 [13]:bot-builder-concept-adaptive-dialog-inputs.md#interruptions
-[14]:https://aka.ms/bot-builder-concept-dialog#prompts
+[14]:bot-builder-concept-waterfall-dialogs.md#prompts
 [15]:https://github.com/microsoft/botbuilder-samples/tree/master/experimental/adaptive-dialog
 [16]:https://github.com/microsoft/botbuilder-samples/tree/master/samples/csharp_dotnetcore
 [17]: bot-builder-concept-dialog.md#component-dialogs
