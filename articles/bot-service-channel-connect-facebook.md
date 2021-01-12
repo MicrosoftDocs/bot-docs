@@ -66,19 +66,19 @@ The bot is accessed through a Facebook Page.
 
     ![Enable messenger](media/channels/fb-messenger-bot-enable-messenger.png)
 
-### Generate a Page Access Token
+### Add pages and generate tokens
 
 1. In the left pane, under the Messenger entry, click **Settings**.
-1. In the right pane, scroll down and in the **Token Generation** section, select the target page.
 
-    ![Enable messenger](media/channels/fb-messenger-bot-select-messenger-page.png)
+1. In the right pane, scroll down and in the Access Tokens section, click "Add or Remove Pages":
 
-1. Click the **Edit Permissions** button to grant the app pages_messaging in order to generate an access token.
-1. Follow the wizard steps. In the last step accept the default settings and click the **Done** button. At the end a **page access token** is generated.
+    ![App Page](media/channels/fb-messenger-bot-select-messenger-page.png)
 
-    ![Messenger permissions](media/channels/fb-messenger-bot-permissions.png)
+1. From the list that comes up in the next window, select the pages you want to use with the app.
 
-1. Copy and save the **Page Access Token**.
+1. Click Done.
+
+1. Now you can generate token for this page by clicking **Generate Token** button.
 
 ### Enable webhooks
 
@@ -96,19 +96,12 @@ In order to send messages and other events from your bot to Facebook Messenger, 
 
 1. Click the **Save** button.
 
-1. Let's go back to the Facebook settings. In the right pane, scroll down and in the **Webhooks** section, click the **Subscribe To Events** button. This is to forward messaging events from Facebook Messenger to the bot.
+1. Let's go back to the Facebook settings to finish up the configuration process.
 
-    ![Enable webhooks](media/channels/fb-messenger-bot-webhooks.PNG)
+1. Paste the **Callback URL** and **Verify Token** values that you collected in the Azure portal.
 
-1. In the displayed dialog, enter the **Callback URL** and **Verify Token** values stored previously. Under **Subscription Fields**, select *message\_deliveries*, *messages*, *messaging\_optins*, and *messaging\_postbacks*.
-
-    ![Config webhooks](media/channels/fb-messenger-bot-config-webhooks.png)
-
-1. Click the **Verify and Save** button.
-
-1. Select the Facebook page to subscribe the webhook. Click the **Subscribe** button.
-
-    ![Config webhooks page](media/channels/fb-messenger-bot-config-webhooks-page.PNG)
+1. In the Webhooks configuration, enable the following subscriptions: 
+  *message\_deliveries*, *messages*, *messaging\_optins*, and *messaging\_postbacks*.
 
 ### Submit for review
 
