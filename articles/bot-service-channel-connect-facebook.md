@@ -72,7 +72,7 @@ The bot is accessed through a Facebook Page.
 
 1. In the right pane, scroll down and in the Access Tokens section, click "Add or Remove Pages":
 
-    ![App Page](media/channels/fb-messenger-bot-select-messenger-page.png)
+    ![Add Page](media/channels/fb-messenger-bot-add-or-remove-pages.png)
 
 1. From the list that comes up in the next window, select the pages you want to use with the app.
 
