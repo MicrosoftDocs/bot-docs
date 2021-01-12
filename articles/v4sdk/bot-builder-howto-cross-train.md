@@ -357,16 +357,6 @@ The configuration file is named **appsettings.json**. The following shows the co
     //  "qnamaker.settings.<username>.<authoring-region>.json"
     // See "QnA Maker knowledge base IDs" section below for more details.
     "qna": {
-        "TodoBotWithLuisAnDQnA_en_us_qna": ""
-    }
-}
-```
-
-<!--
-NOTE:
-
-There is a PR that will change this sample: https://github.com/microsoft/BotBuilder-Samples/pull/2899. After the change, QnA Maker will have the same structure as the luis does in appsettings.json, once completed, update this article by adding these additional QnA Maker recognizer items to align with the changes in this PR:
-
         "AddToDoDialog_en_us_qna": "",
         "ChitChat_en_us_qna": "",
         "DeleteToDoDialog_en_us_qna": "",
@@ -374,14 +364,12 @@ There is a PR that will change this sample: https://github.com/microsoft/BotBuil
         "RootDialog_en_us_qna": "",
         "ViewToDoDialog_en_us_qna": ""
     }
-
--->
+}
+```
 
 ### The configuration file details
 
 This section explains the **appsettings.json** file for the to do bot sample in detail.
-
-<!--![The appsettings.json file](./media/appsettings.json.png)-->
 
 #### Bot channels registration
 
@@ -413,20 +401,11 @@ The `qnamaker:build` command will save a settings file to the location provided 
 
 > [!IMPORTANT]
 >
-> The settings file created by the `qnamaker:build` command will contain an entry for each of the five QnA Maker models, the value for each will be the ID for the one QnA Maker KB created by the build command. Since each contain the same ID value, use any of them for the value for the  "TodoBotWithLuisAndQnA_en_us_qna" key. If you replace this single value with all five values from the qnamaker.settings file, you will get an error: "System.Exception: NOTE: QnA Maker is not configured for RootDialog."
-
-<!--
-NOTE:
-
-Once PR2899 (https://github.com/microsoft/BotBuilder-Samples/pull/2899) is done, change the important message above to this:
-
-The settings file created by the `qnamaker:build` command will contain an entry for each of the five QnA Maker models, the value for each will be the ID for the one QnA Maker KB created by the build command.
-
--->
+> The settings file created by the `qnamaker:build` command will contain an entry for each of the five QnA Maker models, the value for each will be the ID for the one QnA Maker KB created by the build command.
 
 ## Source code updates for cross trained models
 
-There are no source code updates needed in the adaptive **todo bot with LUIS and QnA Maker** ([**C#**][cs-sample-todo-bot]) sample to take advantage of cross trained models, it was created with cross training in mind. This section will explain the code in this sample that relates to bots utilizing cross trained models, using **AddToDoDialog.cs** as an example, the same concepts apply to the other adaptive dialogs in this bot.
+There are no source code updates needed in the adaptive **todo bot with LUIS and QnA Maker** ([**C#**][cs-sample-todo-bot]) sample to take advantage of cross trained models, it was created with cross training in mind. This section will explain the code in this sample that relates to bots utilizing cross trained models, using **RootDialog.cs** as an example, the same concepts apply to the other adaptive dialogs in this bot.
 
 ### Define the recognizer
 
@@ -485,27 +464,15 @@ public static Recognizer CreateLuisRecognizer(IConfiguration Configuration)
 
 The method `CreateQnAMakerRecognizer` creates a QnA Maker recognizer. See comments in the code snippet below for code explanations:
 
-<!-- Line 330-358
-
-NOTE:
-
-Once PR2899 (https://github.com/microsoft/BotBuilder-Samples/pull/2899) is done, change the code below:
-
-if (string.IsNullOrEmpty(configuration["qna:RootDialog_en_us_qna"]) || string.IsNullOrEmpty(configuration["QnAHostName"]) || string.IsNullOrEmpty(configuration["QnAEndpointKey"]))
-
-throw new Exception("NOTE: QnA Maker is not configured for RootDialog. Please follow instructions in README.md to add 'qna:RootDialog_en_us_qna', 'QnAHostName' and 'QnAEndpointKey' to the appsettings.json file.");
-
-KnowledgeBaseId = configuration["qna:RootDialog_en_us_qna"],
-
- -->
+<!-- Line 330-358 -->
 
 ```csharp
 private static Recognizer CreateQnAMakerRecognizer(IConfiguration configuration)
 {
    // Verify that all required values exist in the configuration file appsettings.json
-   if (string.IsNullOrEmpty(configuration["qna:TodoBotWithLuisAndQnA_en_us_qna"]) || string.IsNullOrEmpty(configuration["QnAHostName"]) || string.IsNullOrEmpty(configuration["QnAEndpointKey"]))
+   if (string.IsNullOrEmpty(configuration["qna:RootDialog_en_us_qna"]) || string.IsNullOrEmpty(configuration["QnAHostName"]) || string.IsNullOrEmpty(configuration["QnAEndpointKey"]))
    {
-      throw new Exception("NOTE: QnA Maker is not configured for RootDialog. Please follow instructions in README.md. To enable all capabilities, add 'qnamaker:qnamakerSampleBot_en_us_qna', 'qnamaker:LuisAPIKey' and 'qnamaker:endpointKey' to the appsettings.json file.");
+      throw new Exception("NOTE: QnA Maker is not configured for RootDialog. Please follow instructions in README.md to add 'qna:RootDialog_en_us_qna', 'QnAHostName' and 'QnAEndpointKey' to the appsettings.json file.");
    }
 
    return new QnAMakerRecognizer()
@@ -513,7 +480,7 @@ private static Recognizer CreateQnAMakerRecognizer(IConfiguration configuration)
       // Get settings from the configuration file appsettings.json
       HostName = configuration["QnAHostName"],
       EndpointKey = configuration["QnAEndpointKey"],
-      KnowledgeBaseId = configuration["qna:TodoBotWithLuisAndQnA_en_us_qna"],
+      KnowledgeBaseId = configuration["qna:RootDialog_en_us_qna"],
 
       // property path that holds qna context
       Context = "dialog.qnaContext",
