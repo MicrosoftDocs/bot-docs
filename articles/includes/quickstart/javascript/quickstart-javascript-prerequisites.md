@@ -35,9 +35,9 @@ Yeoman is a tool for creating applications. For more information, see [yeoman.io
 
 > [!NOTE]
 > The install of Windows build tools listed below is only required if you use Windows as your development operating system.
-> For some installations the install step for restify is giving an error related to node-gyp.
+> For some installations, the install step for restify is giving an error related to node-gyp.
 > If this is the case you can try running this command with elevated permissions.
-> This call may also hang without exiting if python is already installed on your system:
+> This call may also hang without exiting if Python is already installed on your system:
 
 > ```bash
 > # only run this command if you are on Windows. Read the above note.

@@ -7,4 +7,5 @@ In a terminal or command prompt change directories to the one created for your b
 cd my-chat-bot
 npm start
 ```
+
 At this point, your bot is running locally on port 3978.
