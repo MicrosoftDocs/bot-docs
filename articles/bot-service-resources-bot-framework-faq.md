@@ -14,7 +14,12 @@ ms.date: 12/23/2020
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-<!-- Attention writers!! When you create a new FAQ entry, please add the related link in the proper section below. -->
+<!-- Attention writers!! When you create a new FAQ, please add the related link in the proper section below.
+Also, notice this topic is in markdown (.md) format because being an index it is simpler to maintain.
+The actual FAQs are contained in separate files that are in yaml (.yml) format. The reasons for the yaml format
+are explained in this article: Create FAQ content (https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-faq-guide?branch=master).
+-->
+
 
 The following are some common questions you might have.
 In case you don't find the answer you're looking for, you can post your questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/botframework) using the `botframework` tag. If you're a new user, visit the [Stack Overflow Help Center](https://stackoverflow.com/help/how-to-ask) first.

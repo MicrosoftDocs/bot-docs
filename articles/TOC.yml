@@ -297,7 +297,7 @@
             href: bot-service-channel-directline-extension-net-client.md
           - name: Use extension with WebChat
             href: bot-service-channel-directline-extension-webchat-client.md
-          - name: Use extenson within VNET
+          - name: Use extension within VNET
             href: bot-service-channel-directline-extension-vnet.md
       - name: Alexa
         href: bot-service-channel-connect-alexa.md

@@ -90,8 +90,8 @@ Next, we register `MemoryStorage` that is used to create `UserState` and `Conver
 
 **Startup.cs**
 
-[!code-csharp[ConfigureServices](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/Startup.cs?range=23-26)]
-[!code-csharp[ConfigureServices](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/Startup.cs?range=48-54)]
+[!code-csharp[ConfigureServices](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/Startup.cs?range=24-27)]
+[!code-csharp[ConfigureServices](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/Startup.cs?range=49-55)]
 
 **Bots/StateManagementBot.cs**
 
@@ -103,7 +103,7 @@ Next, we register `MemoryStorage` that is then used to create `UserState` and `C
 
 **index.js**
 
-[!code-javascript[index.js](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/index.js?range=33-39)]
+[!code-javascript[index.js](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/index.js?range=34-40)]
 
 **bots/stateManagementBot.js**
 
