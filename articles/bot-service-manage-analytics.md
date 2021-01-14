@@ -111,4 +111,5 @@ To find this value, open Application Insights and navigate to **Configure** > **
 For more information on how to locate these values, see [Application Insights keys](~/bot-service-resources-app-insights-keys.md).
 
 ## Additional resources
+
 * [Application Insights keys](~/bot-service-resources-app-insights-keys.md)
