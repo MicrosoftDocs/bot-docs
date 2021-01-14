@@ -37,6 +37,9 @@ Triggers = new List<OnCondition>()
 |QnAMatch intent|`OnQnAMatch`| `RecognizedIntent` |This trigger is run when the [QnAMakerRecognizer][qna-maker-recognizer] has returned a `QnAMatch` intent. The entity `@answer` will have the `QnAMaker` answer.|
 |Unknown intent recognized| `OnUnknownIntent` | `UnknownIntent` | Actions to perform when user input is unrecognized or no match is found in any of the `OnIntent` triggers. You can also use this as your first trigger in your root dialog in place of the `OnBeginDialog` to preform any needed tasks when the dialog first starts. |
 
+> [!TIP]
+> Use the `OnUnknownIntent` trigger to catch and respond when a "none" intent occurs. Using the `OnIntent` trigger to handle a "none" intent can produce unexpected results.
+
 ### Recognizer event example
 
 Examples of `OnIntent` and `OnUnknownIntent` triggers are given in the example below to demonstrate the use of the Recognizer triggers.
@@ -44,7 +47,7 @@ Examples of `OnIntent` and `OnUnknownIntent` triggers are given in the example b
 > [!NOTE]
 >
 > - The `OnIntent` trigger lets you handle the `recognizedIntent` event. The `recognizedIntent` event is raised by a [recognizer][recognizers]. With the exception of the [QnA Maker recognizer][qna-maker-recognizer], all of the Bot Framework SDK built-in recognizers emit this event when they successfully identify a user _input_ so that your bot can respond appropriately.
-> - Use the `OnUnknownIntent` trigger to catch and respond when a `recognizedIntent` event isn't caught and handled by any of the other triggers. This means that any unhandled intent (including "none") can cause it to trigger. But only if there aren't any currently executing actions for the dialog. <!--This is especially helpful to capture and handle cases where your dialog wishes to participate in consultation.-->
+> - Use the `OnUnknownIntent` trigger to catch and respond when a `recognizedIntent` event isn't caught and handled by any of the other triggers. This means that any unhandled intent (including "none") can cause it to trigger, but only if there aren't any currently executing actions for the dialog.<!--Use the `OnUnknownIntent` trigger to catch and respond when a "none" intent occurs. This is especially helpful to capture and handle cases where your dialog wishes to participate in consultation.-->
 
 ``` C#
 // Create the root dialog as an Adaptive dialog.
