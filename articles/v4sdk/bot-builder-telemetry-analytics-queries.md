@@ -542,6 +542,9 @@ LUIS instrumentation stores its data in the following Custom Dimensions fields.
 
 QnAMaker instrumentation stores its data in the following Custom Dimensions fields.
 
+> [!TIP]
+> To enable logging of personal information like questions and answers, the _log personal information_ parameter should be set to true in the constructor of the _QnA Maker_ class.
+
 | **Field**       | **Description**            | **Sample Values**                                            |
 | --------------- | -------------------------- | ------------------------------------------------------------ |
 | question        | QnA detected question      | what can you do?                                             |
@@ -557,4 +560,5 @@ QnAMaker instrumentation stores its data in the following Custom Dimensions fiel
 * [Visualizing data from Azure Monitor](/azure/azure-monitor/visualizations)
 * Learn how to [Add telemetry to your bot](bot-builder-telemetry.md)
 * Learn more about [Azure Monitor log queries](/azure/data-explorer/using-diagnostic-logs)
+* Complete listing of Bot Framework [Application Insights Events](/azure/bot-service/bot-builder-telemetry-reference)
 * [Create and share dashboards of Log Analytics data](/azure/azure-monitor/learn/tutorial-logs-dashboards)

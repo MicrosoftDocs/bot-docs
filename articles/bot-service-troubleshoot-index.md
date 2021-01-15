@@ -54,7 +54,7 @@ In case you don't find the answer you're looking for, you can post your question
 
 ## HTTP 500 Errors
 
-- [Enable Application Insights on ASP.Net](bot-service-troubleshoot-500-errors.md#enable-application-insights-on-aspnet)
+- [Enable Application Insights on ASP.NET](bot-service-troubleshoot-500-errors.md#enable-application-insights-on-aspnet)
 - [Enable Application Insights on Node.js](bot-service-troubleshoot-500-errors.md#enable-application-insights-on-nodejs)
 - [Query for exceptions](bot-service-troubleshoot-500-errors.md#query-for-exceptions)
 - [No Application Insights events](bot-service-troubleshoot-500-errors.md#no-application-insights-events)

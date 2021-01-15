@@ -205,7 +205,7 @@ The bot uses the following criteria to validate input.
 
 ## [JavaScript](#tab/javascript)
 
-**bots/customPromptBot.cs**
+**bots/customPromptBot.js**
 [!code-javascript[validation methods](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/bots/customPromptBot.js?range=120-191)]
 
 ## [Python](#tab/python)

@@ -2083,6 +2083,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "articles/v4sdk/bot-builder-dialogs-greeting.md",
+      "redirect_url": "/azure/bot-service/bot-builder-send-welcome-message",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "articles/v4sdk/bot-builder-tutorial-basic-deploy.md",
       "redirect_url": "/azure/bot-service/bot-builder-tutorial-create-basic-bot",
       "redirect_document_id": true
