@@ -9,35 +9,62 @@ date: 12/29/2020
 
 # Frequent asked questions
 
-<details>
-    <summary style="font-weight:bold; font-size:1.3em">Table of Content</summary>
-    <ul>
-        <li><a href="#github">GitHub</a></li>
-        <ul>
-            <li><a href="#how-to-fix-local-repository-out-of-sync">How to fix local repository out of sync?</a></li>
-        </ul>
-        <li><a href="#links">Links</a></li>
-        <ul>
-            <li><a href="#how-do-i-define-link-text">How do I define link text?</a></li>
-            <li><a href="#how-do-i-check-for-duplicate-alternate-text-descriptions">How do I check for duplicate alternate text descriptions?</a></li>
-        </ul>
-        <li><a href="#markdown">Markdown</a></li>
-        <ul>
-            <li><a href="#when-to-include-markdown-files">When to include markdown files?</a></li>
-            <li><a href="#how-to-remove-unused-include-files">How to remove unused include files?</a></li>
-            <li><a href="#how-to-create-faq-content">How to create FAQ content?</a></li>
-        </ul>
-    </ul>
-</details>
+Contains a list of frequent asked questions that writers might have when going about their daily tasks. It is meant to be a living document, as more questions and answers are created. A quick reference before redirecting the writers to more in depth answers.
 
+<hr/>
+
+[A](#a) &MediumSpace; [B](#b) &MediumSpace; [C](#c) &MediumSpace; [D](#d) &MediumSpace; [E](#e) &MediumSpace;
+[F](#f) &MediumSpace; [G](#g) &MediumSpace; [H](#h) &MediumSpace; [I](#i) &MediumSpace; [J](#j) &MediumSpace;
+[K](#k) &MediumSpace; [L](#l) &MediumSpace; [M](#m) &MediumSpace; [N](#n) &MediumSpace; [O](#o) &MediumSpace;
+[P](#p) &MediumSpace; [Q](#q) &MediumSpace; [R](#r) &MediumSpace; [S](#s) &MediumSpace; [T](#t) &MediumSpace;
+[U](#u) &MediumSpace; [V](#v) &MediumSpace; [W](#w) &MediumSpace; [X](#x) &MediumSpace; [Y](#y) &MediumSpace; [Z](#z)
+
+<hr/>
+
+<a id="a"></a>
+<a id="b"></a>
+<a id="c"></a>
+<a id="d"></a>
+<a id="e"></a>
+<a id="f"></a>
+
+<a id="g"></a>
 
 ## GitHub
 
 ### How to fix a local repository that's out of sync?
 
-If your copy of the GitHub repo is out of sync with the remote, follow the steps described in this article: [To make sure your local copy is completely in sync with the remote](github-tips-and-tricks.md#to-make-sure-your-local-copy-is-completely-in-sync-with-the-remote)
+If your copy of the GitHub repo is out of sync with the remote, follow the steps described in this article: [To make sure your local copy is completely in sync with the remote](github-tips-and-tricks.md#to-make-sure-your-local-copy-is-completely-in-sync-with-the-remote).
+
+### What can I do to show my PR isn't ready to be merged?
+
+- Make the PR a [draft pull request](https://github.blog/2019-02-14-introducing-draft-pull-requests/). Draft pull requests cannot be merged.
+- Use one of the following labels that indicate a PR isn't ready to be merged:
+    - **status: writing** (work in progress)
+    - **DO NOT MERGE**
+
+<a id="h"></a>
+<a id="i"></a>
+<a id="j"></a>
+<a id="k"></a>
+
+<a id="l"></a>
 
 ## Links
+
+### When do I create reference-style links?
+
+You can use **reference-style links** to make your source content easier to read. They are most useful when you repeatedly link to the same target. They are for convenience and readability (especially if the repeated target is long).
+
+If the link text and the link target ID are the same, you can shorten the Markdown even further:
+
+```markdown
+Blah blah [unique link text][] blah blah.
+```
+<!--Reference links in article-->
+[unique link text]: link-target
+
+For more information, see [Reference-style links](https://review.docs.microsoft.com/help/contribute/links-how-to?branch=master#reference-style-links).
 
 ### How do I define link text?
 
@@ -100,6 +127,8 @@ These kind of links, which are usually defined in the page footnote and are not 
 1. Click the **Raw** tab and search for the string that is in the square brackets. In the example it is `prompts`.
 1. Find the place where it is used.
 1. Go to the tab that contains the article find the place where the link is used and check if it works.
+
+<a id="m"></a>
 
 ## Markdown
 
@@ -233,6 +262,33 @@ In the case of single section the **name** of the section (*Ecosystem* in the ex
         - [Botbuilder for JS Azure](https://github.com/Microsoft/botbuilder-js/tree/master/libraries/botbuilder-azure)
         - [Botbuilder for dotnet Azure](https://github.com/Microsoft/botbuilder-dotnet/tree/master/libraries/Microsoft.Bot.Builder.Azure)
     ```
+
+<a id="n"></a>
+<a id="o"></a>
+<a id="p"></a>
+<a id="q"></a>
+<a id="r"></a>
+
+<a id="s"></a>
+
+## Sentences
+
+### How do I use the word "we"?
+
+The use of **we** is discouraged. Instead, focus on the customer, and avoid making Microsoft the subject.
+For more information, see [WE](https://docs.microsoft.com/en-us/style-guide/a-z-word-list-term-collections/w/we).
+
+### How do I use verbs?
+
+Using verbs correctly helps you write clear and simple sentences. The present tense is often easier to read and understand than the past or future tense. It’s the best choice for most content. For more information, see [Verbs](https://docs.microsoft.com/en-us/style-guide/grammar/verbs).
+
+<a id="t"></a>
+<a id="u"></a>
+<a id="v"></a>
+<a id="w"></a>
+<a id="x"></a>
+<a id="y"></a>
+<a id="z"></a>
 
 ## References
 
