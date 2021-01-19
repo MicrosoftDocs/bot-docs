@@ -1,7 +1,7 @@
 ---
 title: Cross training your LUIS and QnA Maker models
 description: Describing the concepts behind a bot that is cross trained to use both LUIS to LUIS and LUIS to QnA Maker recognizers
-keywords: LUIS, QnA Maker, qna, bot, cross-train, cross train, adaptive dialogs, lu 
+keywords: LUIS, QnA Maker, qna, bot, cross-train, cross train, adaptive dialogs, lu
 author: WashingtonKayaker
 ms.author: kamrani
 manager: kamrani
@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-You can cross train your `.lu` and `.qna` files so that each adaptive dialog knows about the capabilities of the other adaptive dialogs in your bot. This enables the active adaptive dialog to defer to another recognizer, either in the same dialog or another, when a user enters any request or input that it is unable to handle on its own.
+You can cross train your .lu and .qna files so that each adaptive dialog knows about the capabilities of the other adaptive dialogs in your bot. This enables the active adaptive dialog to defer to another recognizer, either in the same dialog or another, when a user enters any request or input that it is unable to handle on its own.
 
 ## Introduction to cross training
 
@@ -75,17 +75,17 @@ The bot will be expecting an answer to the question _What is your departure date
 
 In the above example, when the user requested to book a flight, the root dialog's recognizer returned the `BookFlight` intent. This runs `flightDialog`, an adaptive dialog that processes booking flights, but knows nothing about hotels. When the user then requests a hotel reservation, the flight dialog cannot understand since the utterance "I need to reserve a room first" does not match any intents in the flight dialogs LUIS model.
 
-After cross training the `.lu` files, your bot will now be able to detect that the user is requesting something that another dialog can respond to, so it bubbles the request up to its parent, in this case the root dialog, which detects the `BookHotel` intent. This runs `hotelDialog`, an adaptive dialog that processes hotel reservations. Once the hotel dialog completes the hotel reservation request, control is passed back to the flight dialog to complete the flight booking.
+After cross training the .lu files, your bot will now be able to detect that the user is requesting something that another dialog can respond to, so it bubbles the request up to its parent, in this case the root dialog, which detects the `BookHotel` intent. This runs `hotelDialog`, an adaptive dialog that processes hotel reservations. Once the hotel dialog completes the hotel reservation request, control is passed back to the flight dialog to complete the flight booking.
 
 #### Cross train the LUIS models of the travel bot
 
-To enable this fictional travel bot to handle the interruption in the previous example, you need to update the the flight dialog's LUIS model, contained in the **flightDialog.lu** file, to include a new intent named `_interruption`, then add the utterances for the `BookHotel` intent. The **flightDialog.lu** file is used to create your LUIS application associated with the flight dialog.
+To enable this fictional travel bot to handle the interruption in the previous example, you need to update the flight dialog's LUIS model, contained in the **flightDialog.lu** file, to include a new intent named `_interruption`, then add the utterances for the `BookHotel` intent. The **flightDialog.lu** file is used to create your LUIS application associated with the flight dialog.
 
 > [!TIP]
 >
 > Cross training all the LUIS models in a typical bot can be a very involved and tedious process. There is a command included with the Bot Framework command line interface (BF CLI) that automates this work for you. This is discussed in detail in the [The Bot Framework CLI cross-train command](#the-bot-framework-cli-cross-train-command) section below.
 
-Before this update, the example flight booking `.lu` file looks like this:
+Before this update, the example flight booking .lu file looks like this:
 
 ```lu
 # flightDestination
@@ -95,7 +95,7 @@ Before this update, the example flight booking `.lu` file looks like this:
 - I need to depart next thursday
 ```
 
-After cross training with the hotel booking `.lu` file, it would look like this:
+After cross training with the hotel booking .lu file, it would look like this:
 
 ```lu
 # flightDestination
@@ -120,17 +120,17 @@ The utterance _reserve a hotel room_ is associated with the `_interruption` inte
 
 A well designed bot can answer relevant product or service questions asked by a user, regardless what dialog is currently active. LUIS is ideal for handling conversational flows while QnA Maker is ideal for handling user and frequently asked questions. Having access to both in your adaptive dialogs can improve the bots ability to meet user needs.
 
-To enable this capability, _cross train_ your `.lu` and `.qna` files to include the information required by the recognizer to determine which response, LUIS or QnA Maker, is the best suited for the user. For a LUIS model cross trained with a QnA Maker model, you will use the [Cross-trained recognizer set][cross-trained-recognizer-set-concept].
+To enable this capability, _cross train_ your .lu and .qna files to include the information required by the recognizer to determine which response, LUIS or QnA Maker, is the best suited for the user. For a LUIS model cross trained with a QnA Maker model, you will use the [Cross-trained recognizer set][cross-trained-recognizer-set-concept].
 
-Before creating your LUIS applications and QnA Maker knowledge base, you need to _cross train_ your `.lu` and `.qna` files to include the information required by your bot's recognizer to determine whether the LUIS or the QnA Maker response is best suited for the user.
+Before creating your LUIS applications and QnA Maker knowledge base, you need to _cross train_ your .lu and .qna files to include the information required by your bot's recognizer to determine whether the LUIS or the QnA Maker response is best suited for the user.
 
-For each adaptive dialog that has an associated `.lu` and `.qna` file, the following updates are made when cross training these files:
+For each adaptive dialog that has an associated .lu and .qna file, the following updates are made when cross training these files:
 
-1. In `.lu` files, a new intent named `DeferToRecognizer_qna_<dialog-file-name>` is added. Each question and question variation from the corresponding `.qna` file becomes an utterance associated with that new intent.<!-- Answers are not copied to the `.lu` file from the `.qna` file.-->
+1. In .lu files, a new intent named `DeferToRecognizer_qna_<dialog-file-name>` is added. Each question and question variation from the corresponding .qna file becomes an utterance associated with that new intent.<!-- Answers are not copied to the .lu file from the .qna file.-->
 
-1. In `.qna` files, a new answer named `intent=DeferToRecognizer_luis_<dialog-file-name>` is added, along with each utterance from every intent in the corresponding `.lu` file. These utterances become questions associated with that answer. Additionally, all utterances from referenced `.lu` files also become questions associated with that answer.
+1. In .qna files, a new answer named `intent=DeferToRecognizer_luis_<dialog-file-name>` is added, along with each utterance from every intent in the corresponding .lu file. These utterances become questions associated with that answer. Additionally, all utterances from referenced .lu files also become questions associated with that answer.
 
-When a user converses with the bot, the `CreateCrossTrainedRecognizer` recognizer sends that user input to both LUIS and the QnA Maker knowledge base to be processed. 
+When a user converses with the bot, the `CreateCrossTrainedRecognizer` recognizer sends that user input to both LUIS and the QnA Maker knowledge base to be processed.
 
 ### Recognizer responses
 
@@ -149,7 +149,7 @@ The following table shows the matrix of possible responses and the resulting act
 >
 > Cross training all the LUIS and QnA Maker models in a typical bot can be a very involved and tedious process. There is a command included with the Bot Framework command line interface (BF CLI) that automates this work for you. This is discussed in detail in the [The Bot Framework CLI cross-train command](#the-bot-framework-cli-cross-train-command) section below.
 >
-> Running this command on a bot project that has both LUIS and QnA Maker models will automatically cross-train LUIS to LUIS across all adaptive dialogs across the entire project as well as LUIS to QnA Maker cross training within each adaptive dialogs that have both models, meaning both `.lu` and `.qna` files.
+> Running this command on a bot project that has both LUIS and QnA Maker models will automatically cross-train LUIS to LUIS across all adaptive dialogs across the entire project as well as LUIS to QnA Maker cross training within each adaptive dialogs that have both models, meaning both .lu and .qna files.
 
 ### Cross train multiple LUIS and QnA Maker models
 

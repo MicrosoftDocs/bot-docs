@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-Telemetry logging was added to version 4.2 of the Bot Framework SDK.  This enables bot applications to send event data to telemetry services such as [Application Insights](https://aka.ms/appinsights-overview). Telemetry offers insights into your bot by showing which features are used the most, detects unwanted behavior and offers visibility into availability, performance, and usage.
+Telemetry logging was added to version 4.2 of the Bot Framework SDK.  This enables bot applications to send event data to telemetry services such as [Application Insights](/azure/azure-monitor/app/app-insights-overview/). Telemetry offers insights into your bot by showing which features are used the most, detects unwanted behavior and offers visibility into availability, performance, and usage.
 
 ***Note: In version 4.6, the standard method for implementing telemetry into a bot has been updated in order to ensure telemetry is logged correctly when using a custom adapter. This article has been updated to show the updated method. The changes are backwards compatible and bots using the previous method will continue to log telemetry correctly.***
 
@@ -38,7 +38,7 @@ In this article you will learn how to implement telemetry into your bot using Ap
 * The [Application Insights sample code](https://aka.ms/csharp-corebot-app-insights-sample)
 * A subscription to [Microsoft Azure](https://portal.azure.com/)
 * An [Application Insights key](../bot-service-resources-app-insights-keys.md)
-* Familiarity with [Application Insights](https://aka.ms/appinsights-overview)
+* Familiarity with [Application Insights](/azure/azure-monitor/app/app-insights-overview/)
 * [git](https://git-scm.com/)
 
 > [!NOTE]
@@ -50,7 +50,7 @@ In this article you will learn how to implement telemetry into your bot using Ap
 * The [Application Insights sample code](https://aka.ms/js-corebot-app-insights-sample)
 * A subscription to [Microsoft Azure](https://portal.azure.com/)
 * An [Application Insights key](../bot-service-resources-app-insights-keys.md)
-* Familiarity with [Application Insights](https://aka.ms/appinsights-overview)
+* Familiarity with [Application Insights](/azure/azure-monitor/app/app-insights-overview/)
 * [Visual Studio Code](https://www.visualstudio.com/downloads)
 * [Node.js](https://nodejs.org/) version 10.14 or higher. Use command `node --version` to determine the version of node you have installed.
 * [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
@@ -66,7 +66,7 @@ In this article you will learn how to implement telemetry into your bot using Ap
     * The [Application Insights sample code](https://aka.ms/py-corebot-app-insights-sample)
     * A subscription to [Microsoft Azure](https://portal.azure.com/)
     * An [Application Insights key](../bot-service-resources-app-insights-keys.md)
-    * Familiarity with [Application Insights](https://aka.ms/appinsights-overview)
+    * Familiarity with [Application Insights](/azure/azure-monitor/app/app-insights-overview/)
 
     > [!NOTE]
     > The [Application Insights sample code](https://aka.ms/py-corebot-app-insights-sample) was built on top of the [CoreBot sample code](https://aka.ms/py-core-sample). This article will step you through modifying the CoreBot sample code to incorporate telemetry. If you are following along in Visual Studio you will have the Application Insights sample code by the time you are finished.
@@ -142,7 +142,7 @@ To query your data
 2. Navigate to your Application Insights. Easiest way to do so is click on **Monitor > Applications** and find it there.
 3. Once in your Application Insights, you can click on _Logs (Analytics)_ on the navigation bar.
 
-    ![Logs (Analytics)](media/AppInsights-LogView.png)
+    ![Logs (Analytics) LogView](media/AppInsights-LogView.png)
 
 4. This will bring up the Query window.  Enter the following query and select _Run_:
 
@@ -160,7 +160,7 @@ To query your data
 
 5. This will return the percentage of waterfall dialogs that run to completion.
 
-    ![Logs (Analytics)](media/AppInsights-Query-PercentCompleteDialog.png)
+    ![App Insights Query Percent Complete](media/AppInsights-Query-PercentCompleteDialog.png)
 
 > [!TIP]
 > You can pin any query to your Application Insights dashboard   by selecting the button on the top right of the **Logs (Analytics)** blade. Just select the dashboard you want it pinned to, and it will be available next time you visit that dashboard.
@@ -179,8 +179,8 @@ There, you'll see some default information about your bot performance and any ad
 
 * [Add telemetry to your QnAMaker bot](bot-builder-telemetry-qnamaker.md)
 
-* [What is Application Insights?](https://aka.ms/appinsights-overview)
+* [What is Application Insights?](/azure/azure-monitor/app/app-insights-overview/)
 
-* [Using Search in Application Insights](https://aka.ms/search-in-application-insights)
+* [Using Search in Application Insights](/azure/azure-monitor/app/diagnostic-search/)
 
-* [Create custom KPI dashboards using Azure Application Insights](https://aka.ms/custom-kpi-dashboards-application-insights)
+* [Create custom KPI dashboards using Azure Application Insights](/azure/azure-monitor/learn/tutorial-app-dashboards/)

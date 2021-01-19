@@ -20,7 +20,7 @@ bot-builder-tutorial-create-basic-bot.md and bot-builder-python-quickstart.md --
 1. To create your bot run:
 
     ```cmd
-    cookiecutter https://github.com/microsoft/botbuilder-python/releases/download/Templates/echo.zip
+    cookiecutter https://github.com/microsoft/BotBuilder-Samples/releases/download/Templates/echo.zip
     ```
 
     This command creates an Echo Bot based on the Python [echo template](https://github.com/microsoft/BotBuilder-Samples/tree/master/generators/python/app/templates/echo).

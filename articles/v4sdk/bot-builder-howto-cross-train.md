@@ -17,7 +17,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 This how to article describes the steps required to create a bot that integrates the capabilities of both [LUIS][luis] and [QnA Maker][qnamaker] together in each of your adaptive dialogs enabling each to determine the best possible response to the user, using [language generation][language-generation], regardless of which dialog is active.
 
-Integrating the capabilities of both LUIS and QnA Maker requires the use of either the `luis:cross-train` or `qnamaker:cross-train` CLI command to _cross-train_ your `.lu` and `.qna` files, as well as using the [cross-trained recognizer set][cross-trained-recognizer-set-concept] as the adaptive dialogs recognizer.
+Integrating the capabilities of both LUIS and QnA Maker requires the use of either the `luis:cross-train` or `qnamaker:cross-train` CLI command to _cross-train_ your .lu and .qna files, as well as using the [cross-trained recognizer set][cross-trained-recognizer-set-concept] as the adaptive dialogs recognizer.
 
 ## Prerequisites
 
@@ -50,7 +50,7 @@ This article describes how to create a bot that is cross trained to use both LUI
 
 ## The todo bot with LUIS and QnA Maker sample
 
-The adaptive **todo bot with LUIS and QnA Maker** ([**C#**][cs-sample-todo-bot]) sample has five `.lu` files and six `.qna` files for language understanding. When creating the cross-trained language understanding models you will combine the `.lu` and `.qna` files in a way that will enable you to utilize the capabilities of both LUIS and QnA Maker together in the same recognizer, enabling you to train the recognizer how best to interpret and respond to a user's request. After running the cross-train command you will have new copies of each file, but they will be updated so that the `.lu` files contain the required `.qna` information and the `.qna` files contain the required `.lu` information, enabling the [Cross-trained recognizer set][crosstrainedrecognizerset-ref-guide] to determine how to best handle a users request.
+The adaptive **todo bot with LUIS and QnA Maker** ([**C#**][cs-sample-todo-bot]) sample has five .lu files and six .qna files for language understanding. When creating the cross-trained language understanding models you will combine the .lu and .qna files in a way that will enable you to utilize the capabilities of both LUIS and QnA Maker together in the same recognizer, enabling you to train the recognizer how best to interpret and respond to a user's request. After running the cross-train command you will have new copies of each file, but they will be updated so that the .lu files contain the required .qna information and the .qna files contain the required .lu information, enabling the [Cross-trained recognizer set][crosstrainedrecognizerset-ref-guide] to determine how to best handle a users request.
 
 If you have not done it yet, clone the latest samples repository. You can use the following git command from a console window:
 ```cmd
@@ -101,7 +101,7 @@ The QnA Maker resource will contain the value needed for the _subscriptionKey_ o
 
 ## Generate cross-trained LU models
 
-Before running the build command to create your LUIS applications and QnA Maker knowledge base in Azure cognitive services, you need to _cross-train_ your `.lu` and `.qna` files to include the information required by your bot's recognizer to defer user input to either LUIS or QnA Maker for processing. To better understand the concept of cross training please refer to the [Cross train your bot to use both LUIS and QnA Maker recognizers](bot-builder-concept-cross-train.md) article. For details on the `cross-train` command, please refer to the _Cross-trained recognizer set_ section of the [Recognizers in adaptive dialogs - reference guide](../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md#cross-trained-recognizer-set).
+Before running the build command to create your LUIS applications and QnA Maker knowledge base in Azure cognitive services, you need to _cross-train_ your .lu and .qna files to include the information required by your bot's recognizer to defer user input to either LUIS or QnA Maker for processing. To better understand the concept of cross training please refer to the [Cross train your bot to use both LUIS and QnA Maker recognizers](bot-builder-concept-cross-train.md) article. For details on the `cross-train` command, please refer to the _Cross-trained recognizer set_ section of the [Recognizers in adaptive dialogs - reference guide](../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md#cross-trained-recognizer-set).
 
 #### Cross-train the _todo bot with LUIS and QnA Maker_ sample
 
@@ -121,17 +121,17 @@ To cross-train the **todo bot with LUIS and QnA Maker** sample:
       bf luis:cross-train -i dialogs -o generated --config dialogs\DialogLuHierarchy.config.json --force
    ```
 
-Once finished you will have cross-trained versions of the five `.lu` files and six `.qna` files. Here `--force` is used to force overwrite the existing `.lu` and `.qna` files if they already exist. Otherwise, for .lu files like `AddToDoDialog.lu`, the cross-trained content will write to file with name `AddToDoDialog(1).lu`. When running the build commands in the following sections, point to the generated directory for the input files.
+Once finished you will have cross-trained versions of the five .lu files and six .qna files. Here `--force` is used to force overwrite the existing .lu and .qna files if they already exist. Otherwise, for .lu files like `AddToDoDialog.lu`, the cross-trained content will write to file with name `AddToDoDialog(1).lu`. When running the build commands in the following sections, point to the generated directory for the input files.
 
 > [!IMPORTANT]
 >
-> You need to run either the `luis:cross-train` command or the `qnamaker:cross-train` command, you do not need to run both. by running `luis:cross-train`, all of the required cross-train information will be included in the resulting `.lu` and `.qna` files. Running both will work, but is unnecessary.
+> You need to run either the `luis:cross-train` command or the `qnamaker:cross-train` command, you do not need to run both. by running `luis:cross-train`, all of the required cross-train information will be included in the resulting .lu and .qna files. Running both will work, but is unnecessary.
 
 ## Create and publish LUIS applications using the build command
 
-For each `.lu` file, including `.lu` files for each locale, the build command combines all the following actions into a single command:
+For each .lu file, including .lu files for each locale, the build command combines all the following actions into a single command:
 
-1. Creates one LUIS model for every locale found using your existing `.lu` files.
+1. Creates one LUIS model for every locale found using your existing .lu files.
 1. Using that model, it creates a new (or updates an existing) LUIS app in the specified Azure Cognitive Services resource.
    - When updating an existing LUIS app, it will automatically increment the versionId and optionally delete the old version.
 1. Trains the new or updated LUIS app, then publishes it.
@@ -150,11 +150,11 @@ Here is the LUIS build command with required parameters:
 bf luis:build --in <input-file-or-folder> --out <output-file-or-folder> --botName <bot-name> --authoringKey <subscription-key> --region <authoring-region>
 ```
 
-The `luis:build` command will create all assets you need from your local `.lu` files.
+The `luis:build` command will create all assets you need from your local .lu files.
 
 ### Required luis:build parameters
 
-- `--in`: The directory that will be searched for `.lu` files.
+- `--in`: The directory that will be searched for .lu files.
 - `--out`: The directory to save output files to.
 - `--botName`: The name of your bot. This will be used as the prefix for the name of the LUIS applications generated.
 - `--authoringKey`: This is the subscriptionKey.
@@ -222,7 +222,7 @@ To create the LUIS applications for the **todo bot with LUIS and QnA Maker** sam
 >
 > If you haven't done so already, you will need to [Migrate to an Azure resource authoring key][luis-migration-authoring]. If you don't, you will not see the LUIS Applications in [LUIS][luis] created using the `luis:build` command.
 
-Once finished you will have a LUIS application for each of the five `.lu` files in [LUIS](https://www.luis.ai/conversations/applications):
+Once finished you will have a LUIS application for each of the five .lu files in [LUIS](https://www.luis.ai/conversations/applications):
 
 ![LUIS My apps list](./media/adaptive-dialogs/luis-apps-list.png)
 
@@ -234,7 +234,7 @@ Once finished you will have a LUIS application for each of the five `.lu` files 
 
 The `qnamaker:build` command combines all the following actions into a single command:
 
-1. Creates one QnA Maker model for every locale found using your existing `.qna` files.
+1. Creates one QnA Maker model for every locale found using your existing .qna files.
 1. Creates a new QnA Maker KB if none exists, otherwise it will overwrite the existing KB.
 1. It trains your QnA Maker KB then publishes it to the production endpoint.
 
@@ -315,7 +315,7 @@ To create the QnA Maker knowledge base for the **todo bot with LUIS and QnA Make
       bf qnamaker:build --qnaConfig qnaConfig.json
    ```
 
-Once finished you will have a QnA Maker knowledge base with all of the questions and answers from the five `.qna` files in [QnA Maker](https://www.qnamaker.ai/Home/MyServices):
+Once finished you will have a QnA Maker knowledge base with all of the questions and answers from the five .qna files in [QnA Maker](https://www.qnamaker.ai/Home/MyServices):
 
 ![QnA Maker KB list](./media/adaptive-dialogs/qna-maker-kb-list.png)
 
@@ -357,16 +357,6 @@ The configuration file is named **appsettings.json**. The following shows the co
     //  "qnamaker.settings.<username>.<authoring-region>.json"
     // See "QnA Maker knowledge base IDs" section below for more details.
     "qna": {
-        "TodoBotWithLuisAnDQnA_en_us_qna": ""
-    }
-}
-```
-
-<!--
-NOTE:
-
-There is a PR that will change this sample: https://github.com/microsoft/BotBuilder-Samples/pull/2899. After the change, QnA Maker will have the same structure as the luis does in appsettings.json, once completed, update this article by adding these additional QnA Maker recognizer items to align with the changes in this PR:
-
         "AddToDoDialog_en_us_qna": "",
         "ChitChat_en_us_qna": "",
         "DeleteToDoDialog_en_us_qna": "",
@@ -374,14 +364,12 @@ There is a PR that will change this sample: https://github.com/microsoft/BotBuil
         "RootDialog_en_us_qna": "",
         "ViewToDoDialog_en_us_qna": ""
     }
-
--->
+}
+```
 
 ### The configuration file details
 
 This section explains the **appsettings.json** file for the to do bot sample in detail.
-
-<!--![The appsettings.json file](./media/appsettings.json.png)-->
 
 #### Bot channels registration
 
@@ -413,20 +401,11 @@ The `qnamaker:build` command will save a settings file to the location provided 
 
 > [!IMPORTANT]
 >
-> The settings file created by the `qnamaker:build` command will contain an entry for each of the five QnA Maker models, the value for each will be the ID for the one QnA Maker KB created by the build command. Since each contain the same ID value, use any of them for the value for the  "TodoBotWithLuisAndQnA_en_us_qna" key. If you replace this single value with all five values from the qnamaker.settings file, you will get an error: "System.Exception: NOTE: QnA Maker is not configured for RootDialog."
-
-<!--
-NOTE:
-
-Once PR2899 (https://github.com/microsoft/BotBuilder-Samples/pull/2899) is done, change the important message above to this:
-
-The settings file created by the `qnamaker:build` command will contain an entry for each of the five QnA Maker models, the value for each will be the ID for the one QnA Maker KB created by the build command.
-
--->
+> The settings file created by the `qnamaker:build` command will contain an entry for each of the five QnA Maker models, the value for each will be the ID for the one QnA Maker KB created by the build command.
 
 ## Source code updates for cross trained models
 
-There are no source code updates needed in the adaptive **todo bot with LUIS and QnA Maker** ([**C#**][cs-sample-todo-bot]) sample to take advantage of cross trained models, it was created with cross training in mind. This section will explain the code in this sample that relates to bots utilizing cross trained models, using **AddToDoDialog.cs** as an example, the same concepts apply to the other adaptive dialogs in this bot.
+There are no source code updates needed in the adaptive **todo bot with LUIS and QnA Maker** ([**C#**][cs-sample-todo-bot]) sample to take advantage of cross trained models, it was created with cross training in mind. This section will explain the code in this sample that relates to bots utilizing cross trained models, using **RootDialog.cs** as an example, the same concepts apply to the other adaptive dialogs in this bot.
 
 ### Define the recognizer
 
@@ -485,27 +464,15 @@ public static Recognizer CreateLuisRecognizer(IConfiguration Configuration)
 
 The method `CreateQnAMakerRecognizer` creates a QnA Maker recognizer. See comments in the code snippet below for code explanations:
 
-<!-- Line 330-358
-
-NOTE:
-
-Once PR2899 (https://github.com/microsoft/BotBuilder-Samples/pull/2899) is done, change the code below:
-
-if (string.IsNullOrEmpty(configuration["qna:RootDialog_en_us_qna"]) || string.IsNullOrEmpty(configuration["QnAHostName"]) || string.IsNullOrEmpty(configuration["QnAEndpointKey"]))
-
-throw new Exception("NOTE: QnA Maker is not configured for RootDialog. Please follow instructions in README.md to add 'qna:RootDialog_en_us_qna', 'QnAHostName' and 'QnAEndpointKey' to the appsettings.json file.");
-
-KnowledgeBaseId = configuration["qna:RootDialog_en_us_qna"],
-
- -->
+<!-- Line 330-358 -->
 
 ```csharp
 private static Recognizer CreateQnAMakerRecognizer(IConfiguration configuration)
 {
    // Verify that all required values exist in the configuration file appsettings.json
-   if (string.IsNullOrEmpty(configuration["qna:TodoBotWithLuisAndQnA_en_us_qna"]) || string.IsNullOrEmpty(configuration["QnAHostName"]) || string.IsNullOrEmpty(configuration["QnAEndpointKey"]))
+   if (string.IsNullOrEmpty(configuration["qna:RootDialog_en_us_qna"]) || string.IsNullOrEmpty(configuration["QnAHostName"]) || string.IsNullOrEmpty(configuration["QnAEndpointKey"]))
    {
-      throw new Exception("NOTE: QnA Maker is not configured for RootDialog. Please follow instructions in README.md. To enable all capabilities, add 'qnamaker:qnamakerSampleBot_en_us_qna', 'qnamaker:LuisAPIKey' and 'qnamaker:endpointKey' to the appsettings.json file.");
+      throw new Exception("NOTE: QnA Maker is not configured for RootDialog. Please follow instructions in README.md to add 'qna:RootDialog_en_us_qna', 'QnAHostName' and 'QnAEndpointKey' to the appsettings.json file.");
    }
 
    return new QnAMakerRecognizer()
@@ -513,7 +480,7 @@ private static Recognizer CreateQnAMakerRecognizer(IConfiguration configuration)
       // Get settings from the configuration file appsettings.json
       HostName = configuration["QnAHostName"],
       EndpointKey = configuration["QnAEndpointKey"],
-      KnowledgeBaseId = configuration["qna:TodoBotWithLuisAndQnA_en_us_qna"],
+      KnowledgeBaseId = configuration["qna:RootDialog_en_us_qna"],
 
       // property path that holds qna context
       Context = "dialog.qnaContext",
@@ -583,7 +550,7 @@ new TextInput()
 
 > [!NOTE]
 >
->The concept article [Cross training your LUIS and QnA Maker models](bot-builder-concept-cross-train.md) describes the changes made to your `.lu` and `.qna` files when they are cross trained, and the [recognizer responses table](bot-builder-concept-cross-train.md#recognizer-responses) in that article shows all possible recognizer responses and the resulting action taken by the bot.
+>The concept article [Cross training your LUIS and QnA Maker models](bot-builder-concept-cross-train.md) describes the changes made to your .lu and .qna files when they are cross trained, and the [recognizer responses table](bot-builder-concept-cross-train.md#recognizer-responses) in that article shows all possible recognizer responses and the resulting action taken by the bot.
 
 
 ## Testing the bot using Bot Framework Emulator
@@ -626,7 +593,7 @@ You can now interact with your bot.
 
 <!------------------------------------------------------------------------------------------------------------------>
 [create-azure-account]: https://azure.microsoft.com/free/?WT.mc_id=A261C142F
-[luis]: https://aka.ms/luis-what-is-luis
+[luis]: /azure/cognitive-services/luis/what-is-luis
 [qnamaker]: /azure/cognitive-services/qnamaker/overview/overview
 [cs-sample-todo-bot]: https://aka.ms/csharp-adaptive-dialog-08-todo-bot-luis-qnamaker-sample
 [lu-templates]: ../file-format/bot-builder-lu-file-format.md

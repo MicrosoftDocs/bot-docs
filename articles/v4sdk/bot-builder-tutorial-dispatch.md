@@ -84,7 +84,7 @@ For more information, see how to **Create a LUIS app in the LUIS portal** and **
 
 ### Create the QnA Maker knowledge base
 
-The first step to setting up a QnA Maker knowledge base is to set up a QnA Maker service in Azure. To do that, follow the step-by-step instructions found [here](https://aka.ms/create-qna-maker).
+The first step to setting up a QnA Maker knowledge base is to set up a QnA Maker service in Azure. To do that, follow the step-by-step instructions found the [set up qnamaker service](/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure) article.
 
 Once your QnA Maker Service has been created in Azure, you need to record the Cognitive Services _Key 1_ provided for your QnA Maker service. This will be used as \<azure-qna-service-key1> when adding the QnA Maker app to your dispatch application.
 
@@ -529,7 +529,7 @@ You can use the [Dispatch][dispatch-readme] command-line tool to test and evalua
 
 ### To update or create a new LUIS model
 
-This sample is based on a preconfigured LUIS model. Additional information to help you update this model, or create a new LUIS model, can be found [here](https://aka.ms/create-luis-model#updating-your-cognitive-models).
+This sample is based on a preconfigured LUIS model. Additional information to help you update this model, or create a new LUIS model, can be found in the article [Iterative app design for LUIS](/azure/cognitive-services/luis/luis-concept-app-iteration).
 
 After updating the underlying models (QnA or LUIS) run `dispatch refresh` to update your Dispatch LUIS app. `dispatch refresh` is basically the same command as `dispatch create` except no new LUIS app ID is created.
 

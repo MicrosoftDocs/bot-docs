@@ -48,7 +48,7 @@ The two primary components of NLP in adaptive dialogs are **recognizers** (langu
 
 Intents are how you categorize expected user intentions as expressed in their messages to your bot. You can think of an intent as a representation of the action the user wants to accomplish, the purpose or goal expressed in their input. Such things as booking a flight, paying a bill, or finding a news article. You define and name intents that correspond to these actions. For example any bot might define an intent named _Greeting_, a travel app might create an intent named _BookFlight_. Intents are defined in a language understanding template file (.lu), these files are text files with a .lu extension and generally reside in the same directory, and have the same name as your dialog.  For example your root dialog would contain a language understanding template file named **RootDialog.lu**
 
-Here is an example of a simple .lu file that captures a simple **Greeting** intent with a list of example utterances that capture different ways a user might express this intent. You can use a `-`, `+`, or `*` character to denote lists. Numbered lists are not supported.  
+Here is an example of a simple .lu file that captures a simple **Greeting** intent with a list of example utterances that capture different ways a user might express this intent. You can use a `-`, `+`, or `*` character to denote lists. Numbered lists are not supported.
 
 ```lu
 # Greeting
@@ -57,7 +57,7 @@ Here is an example of a simple .lu file that captures a simple **Greeting** inte
 - How are you?
 ```
 
-`#<intent-name>` describes a new intent definition section in your lu template file. Each line after the intent definition are example utterances that describe that intent. You can create multiple intent definitions in your .lu file. Each section is identified by `#<intent-name>` notation. Blank lines are skipped when parsing the file.  
+`#<intent-name>` describes a new intent definition section in your lu template file. Each line after the intent definition are example utterances that describe that intent. You can create multiple intent definitions in your .lu file. Each section is identified by `#<intent-name>` notation. Blank lines are skipped when parsing the file.
 
 ### Utterances
 
@@ -80,7 +80,7 @@ Entities in the [.lu file format][8] are defined in this format: `{<entityName>=
 
 The example above shows the definition of a `BookFlight` intent with two example utterances and two entity definitions: `toCity` and `fromCity`. When triggered, if your chosen recognizer is able to identify a destination city, the city name will be made available as `@toCity` within the triggered actions or a departure city with `@fromCity` as available entity values. The entity values can be used directly in expressions and LG templates, or stored into a property in [memory][10] for later use.
 
-<!--TODO P1:  Need to discuss recognizers in the context of recognition results. There is intent recognizer, entity recognizer, there can be other types of recognizers as well but a recognizer gets 3 property bags to fill in - intents[], entities[], properties[]. 
+<!--TODO P1:  Need to discuss recognizers in the context of recognition results. There is intent recognizer, entity recognizer, there can be other types of recognizers as well but a recognizer gets 3 property bags to fill in - intents[], entities[], properties[].
 https://github.com/MicrosoftDocs/bot-docs-pr/pull/2123#discussion_r423237812
 -->
 
@@ -195,16 +195,16 @@ The cross-trained recognizer set compares recognition results from multiple reco
 [3]:bot-builder-concept-dialog.md
 [4]:bot-builder-concept-adaptive-dialog-generators.md
 [5]:https://github.com/microsoft/botbuilder/blob/master/specs/botframework-activity/botframework-activity.md#locale
-[6]:https://aka.ms/luis-what-is-luis
-[7]:https://aka.ms/botbuilder-luis-concept?view=azure-bot-service-4.0
+[6]:/azure/cognitive-services/luis/what-is-luis
+[7]:../v4sdk/bot-builder-concept-luis.md
 [8]:../file-format/bot-builder-lu-file-format.md
 [9]:bot-builder-concept-adaptive-expressions.md
 [10]:bot-builder-concept-adaptive-dialog-memory-states.md
-[11]:https://aka.ms/luis-concept-data-extraction?tabs=v2
-[12]:https://aka.ms/bot-service-add-luis-to-bot
+[11]:/azure/cognitive-services/luis/luis-concept-data-extraction?tabs=V2
+[12]:bot-builder-howto-v4-luis.md
 [13]:https://qnamaker.ai
 [14]:https://azure.microsoft.com/services/cognitive-services/
-[15]:https://aka.ms/adaptive-cards-overview
+[15]:/adaptive-cards
 [recognizers-ref]: ../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md
 [how-to-deploy-using-luis-cli]: ../v4sdk/bot-builder-howto-bf-cli-deploy-luis.md
 [interruptions]: bot-builder-concept-adaptive-dialog-interruptions.md

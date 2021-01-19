@@ -22,7 +22,7 @@ This article explains how to deploy a LUIS resource. For information on how to u
 ## Prerequisites
 
 - Knowledge of [LU templates][lu-templates].
-- Have a bot project with `.lu` files.
+- Have a bot project with .lu files.
 - If working with adaptive dialogs, you should have an understanding of:
   - [Natural language processing in adaptive dialogs][natural-language-processing-in-adaptive-dialogs].
   - [Language understanding in adaptive dialogs][language-understanding].
@@ -82,13 +82,13 @@ For more information on see [Create LUIS resources][luis-how-to-azure-subscripti
 
 ## Create your LUIS model
 
-Once you have created all the individual `.lu` files needed in your project, you can combine them to create your LUIS model using the `luis:convert` command. This results in a JSON file that you will reference when creating your LUIS application hosted in Azure Cognitive Services in the _LUIS authoring resource_ you created previously.
+Once you have created all the individual .lu files needed in your project, you can combine them to create your LUIS model using the `luis:convert` command. This results in a JSON file that you will reference when creating your LUIS application hosted in Azure Cognitive Services in the _LUIS authoring resource_ you created previously.
 
 ``` cli
 bf luis:convert -i <input-folder-name> -o <output-file-name> -r
 ```
 
-In the example below, the command is run in a command line while in the root directory of your project. It will search for all `.lu` files in the _dialogs_ directory and because of the `-r` option, all of its sub-directories. It will save a file named LUISModel.json in the _output_ directory.
+In the example below, the command is run in a command line while in the root directory of your project. It will search for all .lu files in the _dialogs_ directory and because of the `-r` option, all of its sub-directories. It will save a file named LUISModel.json in the _output_ directory.
 
 ``` cli
 bf luis:convert -i dialogs -o .\output\LUISModel.json -r
@@ -96,7 +96,7 @@ bf luis:convert -i dialogs -o .\output\LUISModel.json -r
 
 ## Create your LUIS application
 
-The _LUIS authoring resource_ you perviously created consists of your authoring keys and endpoint, values that you need when creating your LUIS application (LUIS app). You can have multiple LUIS apps associated with a single LUIS authoring resource, each LUIS app will have its own `appId` that will be provided to you as a part of the creation process. You will need that `appId` when referring to this LUIS app in the future. The LUIS app will provide your bot with all functionality provided by LUIS, combined with the app specific data you provide in your LUIS model that you previously created from your projects `.lu` files.
+The _LUIS authoring resource_ you perviously created consists of your authoring keys and endpoint, values that you need when creating your LUIS application (LUIS app). You can have multiple LUIS apps associated with a single LUIS authoring resource, each LUIS app will have its own `appId` that will be provided to you as a part of the creation process. You will need that `appId` when referring to this LUIS app in the future. The LUIS app will provide your bot with all functionality provided by LUIS, combined with the app specific data you provide in your LUIS model that you previously created from your projects .lu files.
 
 To create your LUIS app:
 
@@ -171,9 +171,9 @@ These commands give you a lot of flexibility when tailoring scripts to your spec
 You can use the `luis:build` command to create or update, then train and publish a LUIS app.
 However, using the `luis:build` command provides you with fewer options for controlling the process.
 
-For each `.lu` file, including `.lu` files for each locale, the build command combines all the following actions into a single command:
+For each .lu file, including .lu files for each locale, the build command combines all the following actions into a single command:
 
-1. Creates one LUIS model for [every locale](#lu-and-multiple-language-variations) found using your existing `.lu` files.
+1. Creates one LUIS model for [every locale](#lu-and-multiple-language-variations) found using your existing .lu files.
 1. Using that model, it creates a new LUIS app in the specified Azure Cognitive Services resource if none exists, otherwise it will update the existing LUIS app.
 1. When updating an existing LUIS app, it will automatically increment the versionId and optionally delete the old version.
 1. Trains the new or updated LUIS app, then publishes it.
@@ -187,7 +187,7 @@ The LUIS build command with its required parameters:
 bf luis:build --in <input-file-or-folder> --out <output-file-or-folder> --botName <bot-name> --authoringKey <subscription-key> --region <authoring-region>
 ```
 
-The `luis:build` command will create all assets you need from your local `.lu` files. When using the `--in` option, `luis:build` will create one LUIS application for every `.lu` file found for each locale.
+The `luis:build` command will create all assets you need from your local .lu files. When using the `--in` option, `luis:build` will create one LUIS application for every .lu file found for each locale.
 
 ### Required luis:build parameters
 
@@ -222,7 +222,7 @@ The following is a sample of the **luconfig.json** file that you can reference u
 }
 ```
 
-Additionally there is a `models` section in the the **luconfig.json** file that is helpful when you need to control which `.lu` files in your project correspond to a LUIS application. This is especially helpful if you are leveraging external references in your `.lu` files so not every single `.lu` file is treated as a LUIS application. Every file that you list in the `models` section will become a LUIS application, and any `.lu` files not listed will become part of the LUIS application that is created from any `.lu` file that references it. Files referenced in multiple `.lu` files will be duplicated in each LUIS application that references it. Any `.lu` file not explicitly listed in the models section of the **luconfig.json** file or referenced in one of the listed `.lu` files will be ignored.
+Additionally there is a `models` section in the the **luconfig.json** file that is helpful when you need to control which .lu files in your project correspond to a LUIS application. This is especially helpful if you are leveraging external references in your .lu files so not every single .lu file is treated as a LUIS application. Every file that you list in the `models` section will become a LUIS application, and any .lu files not listed will become part of the LUIS application that is created from any .lu file that references it. Files referenced in multiple .lu files will be duplicated in each LUIS application that references it. Any .lu file not explicitly listed in the models section of the **luconfig.json** file or referenced in one of the listed .lu files will be ignored.
 
 The example below shows an example _models_ section of the **luconfig.json** file:
 
@@ -250,7 +250,7 @@ bf luis:build --luConfig luconfig.json
 
 Every [.lu file][lu-templates] can have multiple language variations and the `luis:build` command will build a LUIS application for each language supported.
 
-The pattern for the `.lu` file name, when additional locales are used, is as follows:
+The pattern for the .lu file name, when additional locales are used, is as follows:
 
 `<file-name>.<locale>.lu`
 
@@ -263,17 +263,17 @@ RootDialog.de-de.lu
 etc.
 ```
 
-In the above example, each one of the `.lu` files will have its own unique language specific model created for it, resulting in one LUIS application for each of the three `.lu` files.
+In the above example, each one of the .lu files will have its own unique language specific model created for it, resulting in one LUIS application for each of the three .lu files.
 
 > [!TIP]
 >
-> - As an alternative to including the locale in the file name, you can include it in the `.lu` file itself as part of its configuration information. This is helpful when you need more flexibility with the file naming convention. For example, in the `.lu` file for the French language you would add: `> !# @app.culture = fr-fr`. See [Model description][model-description] in the [.lu file format][lu-templates] reference for more information.
+> - As an alternative to including the locale in the file name, you can include it in the .lu file itself as part of its configuration information. This is helpful when you need more flexibility with the file naming convention. For example, in the .lu file for the French language you would add: `> !# @app.culture = fr-fr`. See [Model description][model-description] in the [.lu file format][lu-templates] reference for more information.
 >
-> - If no locale can be determined from the file name and it is not included in the `.lu` files configuration information, the value specified in the build commands `--defaultCulture` option will be used. If the `--defaultCulture` option is omitted, the locale will be set to `en-us`.
+> - If no locale can be determined from the file name and it is not included in the .lu files configuration information, the value specified in the build commands `--defaultCulture` option will be used. If the `--defaultCulture` option is omitted, the locale will be set to `en-us`.
 
 ### LUIS Applications created
 
-Each LUIS application created on your behalf will be named using a combination of the `botName` value that you supply when running the `luis:build` command, the username of the person logged in, and the name of the `.lu` file including the locale.
+Each LUIS application created on your behalf will be named using a combination of the `botName` value that you supply when running the `luis:build` command, the username of the person logged in, and the name of the .lu file including the locale.
 
 LUIS application names will use this format:  `{botName}{(suffix)}-{file-name}-{locale}.lu`
 
@@ -293,7 +293,7 @@ The same LUIS application name will be used in each Azure region, with endpoints
 
 ### The settings file generated using the build command
 
-All of the `.lu` files for each locale will result in one LUIS application and the output of the `luis:build` command will include one settings file that contains a list of every LUIS application ID that was created for each locale.
+All of the .lu files for each locale will result in one LUIS application and the output of the `luis:build` command will include one settings file that contains a list of every LUIS application ID that was created for each locale.
 
 For example, if your logged in username is _YuuriTanaka_ and you are targeting authoring region **westus**, your filename would be:
 
@@ -312,7 +312,7 @@ Example settings file:
 
 ### The dialog file
 
-When you include the `--dialog` option, a `.dialog` file will be generated for each of your `.lu` files, one for each locale. 
+When you include the `--dialog` option, a `.dialog` file will be generated for each of your .lu files, one for each locale. 
 
 > [!IMPORTANT]
 >

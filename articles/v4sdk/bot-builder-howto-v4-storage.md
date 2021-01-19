@@ -20,7 +20,7 @@ You can read and write directly to your storage object without using middleware 
 ## Prerequisites
 
 - If you don't have an Azure subscription, create a [free](https://azure.microsoft.com/free/) account before you begin.
-- Familiarity with article: Create a bot locally for [.NET](https://aka.ms/bot-framework-www-c-sharp-quickstart), [JavaScript](https://aka.ms/bot-framework-www-node-js-quickstart), or [Python](https://aka.ms/bot-framework-www-node-python-quickstart).
+- Familiarity with article: Create a bot locally for [.NET](../dotnet/bot-builder-dotnet-sdk-quickstart.md), [JavaScript](../javascript/bot-builder-javascript-quickstart.md), or [Python](../python/bot-builder-python-quickstart.md).
 - Bot Framework SDK v4 templates for [Visual Studio (C#)](https://aka.ms/bot-vsix), [Node.js](https://nodejs.org), or [Yeoman](http://yeoman.io).
 
 [!INCLUDE [VSIX templates](~/includes/vsix-templates-versions.md)]
@@ -35,7 +35,7 @@ The Bot Framework SDK allows you to store user inputs using in-memory storage. M
 
 ## Build a basic bot
 
-The rest of this topic builds off of an Echo bot. The Echo bot sample code can be locally built by following the Quickstart instructions for building either a [C# EchoBot](https://aka.ms/bot-framework-www-c-sharp-quickstart), [JS EchoBot](https://aka.ms/bot-framework-www-node-js-quickstart) or [Python EchoBot](https://aka.ms/bot-framework-www-node-python-quickstart).
+The rest of this topic builds off of an Echo bot. The Echo bot sample code can be locally built by following the Quickstart instructions for building either a [C# EchoBot](../dotnet/bot-builder-dotnet-sdk-quickstart.md), [JS EchoBot](../javascript/bot-builder-javascript-quickstart.md) or [Python EchoBot](../python/bot-builder-python-quickstart.md).
 
 ### [C#](#tab/csharp)
 
@@ -320,7 +320,7 @@ Send a message to your bot. The bot will list the messages it has received.
 >[!IMPORTANT]
 > The _Cosmos DB storage_ class has been deprecated. Containers originally created with CosmosDbStorage had no partition key set, and were given the default partition key of _\/_partitionKey_.
 >
-> Containers created with _Cosmos DB storage_ can be used with _Cosmos DB partitioned storage_. Read [Partitioning in Azure Cosmos DB](https://aka.ms/azure-cosmosdb-partitioning-overview) for more information.
+> Containers created with _Cosmos DB storage_ can be used with _Cosmos DB partitioned storage_. Read [Partitioning in Azure Cosmos DB](/azure/cosmos-db/partitioning-overview) for more information.
 >
 > Also note that, unlike the legacy Cosmos DB storage, the Cosmos DB partitioned storage does not automatically create a database within your Cosmos DB account. You need to [create a new database manually](https://docs.microsoft.com/azure/cosmos-db/create-cosmosdb-resources-portal), but skip manually creating a container since _CosmosDbPartitionedStorage_ will create the container for you.
 
@@ -328,7 +328,7 @@ Now that you've used memory storage, we'll update the code to use Azure Cosmos D
 
 ### Set up a Cosmos DB resource
 
-To use Cosmos DB in your bot, you'll need to create a database resource before getting into the code. For an in-depth description of Cosmos DB database and app creation access the documentation here for [Cosmos DB dotnet](https://aka.ms/Bot-framework-create-dotnet-cosmosdb) or [Cosmos DB nodejs](https://aka.ms/Bot-framework-create-nodejs-cosmosdb).
+To use Cosmos DB in your bot, you'll need to create a database resource before getting into the code. For an in-depth description of Cosmos DB database and app creation access the documentation here for [Cosmos DB dotnet](/azure/cosmos-db/create-sql-api-dotnet-preview) or [Cosmos DB nodejs](/azure/cosmos-db/create-sql-api-nodejs).
 
 ### Create your database account
 
@@ -456,7 +456,7 @@ pip install botbuilder-azure
 ### Cosmos DB implementation
 
 > [!NOTE]
-> Version 4.6 introduced a new Cosmos DB storage provider, the _Cosmos DB partitioned storage_ class, and the original _Cosmos DB storage_ class is deprecated. Containers created with _Cosmos DB storage_ can be used with _Cosmos DB partitioned storage_. Read [Partitioning in Azure Cosmos DB](https://aka.ms/azure-cosmosdb-partitioning-overview) for more information.
+> Version 4.6 introduced a new Cosmos DB storage provider, the _Cosmos DB partitioned storage_ class, and the original _Cosmos DB storage_ class is deprecated. Containers created with _Cosmos DB storage_ can be used with _Cosmos DB partitioned storage_. Read [Partitioning in Azure Cosmos DB](/azure/cosmos-db/partitioning-overview) for more information.
 >
 > Also note that, unlike the legacy Cosmos DB storage, the Cosmos DB partitioned storage does not automatically create a database within your Cosmos DB account. You need to [create a new database manually](https://docs.microsoft.com/azure/cosmos-db/create-cosmosdb-resources-portal), but skip manually creating a container since _CosmosDbPartitionedStorage_ will create the container for you.
 

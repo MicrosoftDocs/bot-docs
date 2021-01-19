@@ -234,7 +234,7 @@ All dialogs, and their fields, were auto-serialized in V3.
 stepContext.values.destination = destination;
 ```
 
-## To write changes in state to the persistance layer
+## To write changes in state to the persistence layer
 
 ### v3
 
@@ -302,7 +302,7 @@ public class DialogBot : ActivityHandler
     {
         await base.OnTurnAsync(turnContext, cancellationToken);
 
-        // Save any state changes that might have ocurred during the turn.
+        // Save any state changes that might have occurred during the turn.
         await ConversationState.SaveChangesAsync(turnContext, false, cancellationToken);
         await UserState.SaveChangesAsync(turnContext, false, cancellationToken);
     }
@@ -494,7 +494,7 @@ The interface for storing _user data_, _conversation data_, and _private convers
 
 State was persisted using an `IBotDataStore` implementation, and injecting it into the dialog state system of the SDK using Autofac.  Microsoft provided `MemoryStorage`, `DocumentDbBotDataStore`, `TableBotDataStore`, and `SqlBotDataStore` classes in [Microsoft.Bot.Builder.Azure](https://github.com/Microsoft/BotBuilder-Azure/).
 
-[IBotDataStore<BotData>](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.dialogs.internals.ibotdatastore-1?view=botbuilder-dotnet-3.0) was used to persist data.
+[IBotDataStore<BotData>](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.dialogs.internals.ibotdatastore-1?view=botbuilder-dotnet-3.0&preserve-view=true) was used to persist data.
 
 ```csharp
 Task<bool> FlushAsync(IAddress key, CancellationToken cancellationToken);
@@ -517,7 +517,7 @@ builder.Register(c => storage)
 
 The storage layer uses the `IStorage` interface, specify the storage-layer object when creating each state-management object for your bot, such as `UserState`, `ConversationState`, or `PrivateConversationState`. The state-management object provides keys to the underlying storage layer and also acts as a property manager. For instance, use `IPropertyManager.CreateProperty<T>(string name)` to create a state property accessor.  These property accessors are used to retrieve and store values into and out of the bot's underlying storage.
 
-Use [IStorage](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.istorage?view=botbuilder-dotnet-stable) to persist data.
+Use [IStorage](/dotnet/api/microsoft.bot.builder.istorage) to persist data.
 
 ```csharp
 Task DeleteAsync(string[] keys, CancellationToken cancellationToken = default(CancellationToken));
@@ -547,21 +547,21 @@ services.AddSingleton(conversationState);
 
 ### v3
 
-[Microsoft.Bot.Builder.FormFlow](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.formflow?view=botbuilder-dotnet-3.0) was included within the core Bot Builder SDK.
+[Microsoft.Bot.Builder.FormFlow](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.formflow?view=botbuilder-dotnet-3.0&preserve-view=true) was included within the core Bot Builder SDK.
 
 ### v4
 
-[Bot.Builder.Community.Dialogs.FormFlow](https://www.nuget.org/packages/Bot.Builder.Community.Dialogs.FormFlow/) is now a Bot Builder Community library.  The source is available on the community [repository](https://github.com/BotBuilderCommunity/botbuilder-community-dotnet/tree/develop/libraries/Bot.Builder.Community.Dialogs.FormFlow).
+[Bot.Builder.Community.Dialogs.FormFlow](https://www.nuget.org/packages/Bot.Builder.Community.Dialogs.FormFlow/) is now a Bot Builder Community library. The source is available on the community [repository](https://github.com/BotBuilderCommunity/botbuilder-community-dotnet/tree/develop/libraries/Bot.Builder.Community.Dialogs.FormFlow).
 
 ## To use LuisDialog
 
 ### v3
 
-[Microsoft.Bot.Builder.Dialogs.LuisDialog](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.dialogs.luisdialog-1?view=botbuilder-dotnet-3.0) was included within the core Bot Builder SDK.
+[Microsoft.Bot.Builder.Dialogs.LuisDialog](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.dialogs.luisdialog-1?view=botbuilder-dotnet-3.0&preserve-view=true) was included within the core Bot Builder SDK.
 
 ### v4
 
-[Bot.Builder.Community.Dialogs.Luis](https://www.nuget.org/packages/Bot.Builder.Community.Dialogs.Luis/) is now a Bot Builder Community library.  The source is available on the community [repository](https://github.com/BotBuilderCommunity/botbuilder-community-dotnet/tree/develop/libraries/Bot.Builder.Community.Dialogs.Luis).
+[Bot.Builder.Community.Dialogs.Luis](https://www.nuget.org/packages/Bot.Builder.Community.Dialogs.Luis/) is now a Bot Builder Community library. The source is available on the community [repository](https://github.com/BotBuilderCommunity/botbuilder-community-dotnet/tree/develop/libraries/Bot.Builder.Community.Dialogs.Luis).
 
 ## To use QnA Maker
 

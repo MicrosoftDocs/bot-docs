@@ -81,13 +81,16 @@ A manual registration is necessary for situations like:
 
 See [FAQ - App Registration](~/bot-service-resources-faq-azure.md#how-do-i-create-my-own-app-registration).
 
-
 ## Download code
+
 You can download the code to work on it locally.
+
 1. In the **Bot Management** section, click **Build**.
 1. Click on **Download Bot source code** link in the right-pane.
 1. Follow the prompts to download the code, and then unzip the folder.
-    1. [!INCLUDE [download keys snippet](../includes/snippet-abs-key-download.md)]
+
+    [!INCLUDE [download keys snippet](../includes/snippet-abs-key-download.md)]
 
 ## Next steps
-After you download the code, you can continue to develop the bot locally on your machine. Once you test your bot and are ready to upload the bot code to the Azure portal, follow the instructions listed under [set up continous deployment](../bot-service-build-continuous-deployment.md) topic to automatically update code after you make changes.
+
+After you download the code, you can continue to develop the bot locally on your machine. Once you test your bot and are ready to upload the bot code to the Azure portal, follow the instructions listed under [set up continuos deployment](../bot-service-build-continuous-deployment.md) topic to automatically update code after you make changes.

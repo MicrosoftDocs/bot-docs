@@ -1,4 +1,5 @@
 {
+  "xref_query_tags": ["/dotnet", "/uwp/api"],
   "docsets_to_publish": [
     {
       "docset_name": "bot-framework",
@@ -37,35 +38,6 @@
       "build_entry_point": "docs",
       "template_folder": "_themes",
       "version": 0
-    },
-    {
-      "docset_name": "bot-framework-dotnet-api",
-      "build_source_folder": "dotnet",
-      "build_output_subfolder": "bot-framework-dotnet-api",
-      "locale": "en-us",
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content",
-        "NetEnum": "Content",
-        "NetDelegate": "Content",
-        "NetNamespace": "Content",
-        "NetMember": "Content",
-        "NetType": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "customized_tasks": {
-        "docset_postbuild": [
-          "_dependentPackages/ECMA2Yaml/tools/PostBuild.ps1"
-        ],
-        "docset_prebuild": [
-          "_dependentPackages/ECMA2Yaml/tools/Run.ps1",
-          "_dependentPackages/CommonPlugins/tools/SplitTOC.ps1",
-          "_dependentPackages/CommonPlugins/tools/DiffFolder.ps1"
-        ]
-      }
     }
   ],
   "notification_subscribers": [
@@ -85,6 +57,11 @@
       "url": "https://github.com/Microsoft/templates.docs.msft",
       "branch": "master",
       "branch_mapping": {}
+    },
+    {
+      "path_to_root": "_themes.pdf",
+      "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
+      "branch": "master"
     },
     {
       "path_to_root": "botbuilder-samples",
@@ -131,18 +108,6 @@
       "target_framework": "net45",
       "version": "latest"
     }
-  ],
-  "ECMA2Yaml": {
-    "SourceXmlFolder": "dotnet/xml",
-    "OutputYamlFolder": "dotnet/api",
-    "Flatten": true,
-    "SDPMode": true
-  },
-  "DiffFolder": [
-    "dotnet/api"
-  ],
-  "SplitTOC": [
-    "dotnet/api/toc.yml"
   ],
   "docs_build_engine": {
     "name": "docfx_v3"

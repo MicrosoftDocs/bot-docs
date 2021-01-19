@@ -52,10 +52,10 @@ This sample, the Bot Framework Adaptive Dialog declarative Echo bot, demonstrate
 
 ## Create the declarative files
 
-Declarative dialog files are language-agnostic JSON files that declare the elements of a dialog, meaning that they are the same regardless which language you use to create your bot. They typically have an extension of `.dialog`. The **EchoBot** sample only contains one adaptive dialog with a trigger to handle the `UnknownIntent` event, which when it fires it sends a message to the user that echos what they said: _"You said '${turn.activity.text}'"_.
+Declarative dialog files are language-agnostic JSON files that declare the elements of a dialog, meaning that they are the same regardless which language you use to create your bot. They typically have an extension of `.dialog`. The **EchoBot** sample only contains one adaptive dialog with a trigger to handle the `UnknownIntent` event, which when it fires it sends a message to the user that echoes what they said: _"You said '${turn.activity.text}'"_.
 
 > [!TIP]
-> [Bot Framework Composer](https://aka.ms/composer) is an integrated development tool that developers and multi-disciplinary teams can use to build bots. The bots created by Bot Framework Composer are built using the declarative approach.
+> [Bot Framework Composer](/composer/) is an integrated development tool that developers and multi-disciplinary teams can use to build bots. The bots created by Bot Framework Composer are built using the declarative approach.
 
 The [declarative file][main.dialog] for the **EchoBot** sample:
 
@@ -216,7 +216,7 @@ In this case, since no language generation (LG) template file is provided, and t
 [concept-declarative]: bot-builder-concept-adaptive-dialog-declarative.md
 [how-to-adaptive]: bot-builder-dialogs-adaptive.md
 
-[bf-cli]: https://aka.ms/bf-cli-overview
+[bf-cli]: bf-cli-overview.md
 
 [prompting]: bot-builder-prompts.md
 [component-dialogs]: bot-builder-compositcontrol.md
@@ -225,4 +225,4 @@ In this case, since no language generation (LG) template file is provided, and t
 
 [main.dialog]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/adaptive-dialog/20.EchoBot-declarative/Dialogs/main.dialog
 
-[intelliSense]: https://aka.ms/intellisense-in-visual-studio
+[intelliSense]: /visualstudio/ide/using-intellisense

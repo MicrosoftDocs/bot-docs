@@ -68,8 +68,8 @@ how to [implement sequential conversation flow][simple-dialog], and how to [reus
 
 | Sample | BotBuilder version | Demonstrates |
 |:---|:---:|:---|
-| **Authentication** in [**CSharp**][cs-auth-sample] or [**JavaScript**][js-auth-sample] or  [**Python**][python-auth-sample] | v4 | OAuthCard support |
-| **Authentication MSGraph** in [**CSharp**][cs-msgraph-sample] or [**JavaScript**][js-msgraph-sample] or [**Python**](https://aka.ms/bot-auth-msgraph-python-sample-code)| v4 |  Microsoft Graph API support with OAuth 2 |
+| **Authentication** in [**C#**][cs-auth-sample] or [**JavaScript**][js-auth-sample] or  [**Python**][python-auth-sample] | v4 | OAuthCard support |
+| **Authentication MSGraph** in [**C#**][cs-msgraph-sample] or [**JavaScript**][js-msgraph-sample] or [**Python**](https://aka.ms/bot-auth-msgraph-python-sample-code)| v4 |  Microsoft Graph API support with OAuth 2 |
 
 ### About the samples
 
@@ -508,7 +508,7 @@ One difference between other channels and Teams is that Teams sends an *invoke* 
 
 # [Python](#tab/python)
 
-Microsoft Teams currently differs slightly in the way auth is integrated with the bot. Please, refer to [Teams documentation](https://aka.ms/teams-docs) on authentication.
+Microsoft Teams currently differs slightly in the way auth is integrated with the bot. Please, refer to [Teams documentation](/microsoftteams/platform/bots/how-to/create-a-bot-for-teams) on authentication.
 
 ---
 
@@ -528,7 +528,7 @@ If you use an *OAuth prompt*, this invoke activity must be forwarded to the dial
 
 # [Python](#tab/python)
 
-Microsoft Teams currently differs slightly in the way auth is integrated with the bot. Please, refer to [Teams documentation](https://aka.ms/teams-docs) on authentication.
+Microsoft Teams currently differs slightly in the way auth is integrated with the bot. Please, refer to [Teams documentation](/microsoftteams/platform/bots/how-to/create-a-bot-for-teams) on authentication.
 
 ---
 
@@ -566,4 +566,4 @@ The `TeamsActivityHandler` also sends *message reaction* activities. A message r
 [js-msgraph-sample]: https://aka.ms/v4js-auth-msgraph-sample
 [cs-teams-auth-sample]:https://aka.ms/cs-teams-auth-sample
 [js-teams-auth-sample]:https://aka.ms/js-teams-auth-sample
-[teams-activity-feed]:https://aka.ms/teams-activity-feed
+[teams-activity-feed]:/microsoftteams/platform/concepts/activity-feed

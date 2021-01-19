@@ -47,7 +47,7 @@ Bot-to-bot authentication requires that each participating bot has a valid app I
 1. Create a Bot Channels Registration for the bots as needed.
 1. Record the app ID and password for each one.
 
-## Conversion process
+## To convert a v3 bot
 
 To convert an existing bot to a skill bot takes just a few steps, as outlined in the next couple sections. For more in-depth information, see [about skills](../skills-conceptual.md).
 
@@ -82,7 +82,7 @@ See [Skills/v3-skill-bot](https://aka.ms/v3-js-echo-skill) for an example of a v
 
    [!code[.env file](~/../botbuilder-samples/MigrationV3V4/Node/Skills/v3-skill-bot/.env)]
 
-1. Create the chat connector for the bot. This one uses the default authentication configuration. Set `enableSkills` to `true` to allow the bot to be used as a skill. `allowedCallers` is an array of the app IDs of the bots allowed to use this skill. If the first value of this array was '*', then any bot could use this skill.
+1. Create the chat connector for the bot. This one uses the default authentication configuration. Set `enableSkills` to `true` to allow the bot to be used as a skill. `allowedCallers` is an array of the app IDs of the bots allowed to use this skill. If the first value of this array is '*', then any bot can use this skill.
 
    **v3-skill-bot/app.js**
 
@@ -192,14 +192,16 @@ Download and install the latest [Bot Framework Emulator](https://aka.ms/bot-fram
 1. Use the Emulator to connect to the root bot.
 1. Test the skills and skill consumer.
 
+Starting with version 4.11, you don't need an app ID and password to test a skill and skill consumer locally in the Emulator. An Azure subscription is still required to deploy your skill to Azure.
+
 ## Additional information
 
 ### Bot-to-bot authentication
 
-The root and skill communicate over HTTP. The framework uses bearer tokens and bot application IDs to verify the identity of each bot. It uses an authentication configuration object to validate the authentication header on incoming requests. You can add a claims validator to the authentication configuration. The claims are evaluated after the authentication header. Your validation code should throw an error or exception to reject the request.
+The root and skill communicate over HTTP. The framework uses bearer tokens and bot application IDs to verify the identity of each bot. It uses an authentication configuration object to validate the authentication header on incoming requests. You must add a claims validator to the authentication configuration. The claims are evaluated after the authentication header. Your validation code should throw an error or exception to reject the request.
 
 When creating a chat connector, include either an `allowedCallers` or an `authConfiguration` property in the settings parameter to enable bot-to-bot authentication.
 
-The default claims validator for the chat connector uses the `allowedCallers` property. Its value should be an array of the application IDs of the bots that are allowed to call the skill. Set the first element to '*' to allow all bots to call the skill.
+The default claims validator for the chat connector uses the `allowedCallers` property. Its value should be an array of the application IDs of the bots that are allowed to call the skill. Set the first element to '*' to allow any bot to call the skill.
 
 To use a custom claims validation function, set the `authConfiguration` field to your validation function. This function should accept an array of claim objects and throw an error if validation fails. Step 4 of the [convert the booking bot](#convert-the-booking-bot) section has an example claims validator.

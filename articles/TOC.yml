@@ -250,6 +250,8 @@
       href: bot-service-debug-inspection-middleware.md
     - name: Debug your bot using transcript files
       href: v4sdk/bot-builder-debug-transcript.md
+    - name: Debug your bot with Adaptive Tools
+      href: bot-service-debug-adaptive-tools.md
   - name: Deploy
     items:
     - name: Deploy your bot to Azure
@@ -295,7 +297,7 @@
             href: bot-service-channel-directline-extension-net-client.md
           - name: Use extension with WebChat
             href: bot-service-channel-directline-extension-webchat-client.md
-          - name: Use extenson within VNET
+          - name: Use extension within VNET
             href: bot-service-channel-directline-extension-vnet.md
       - name: Alexa
         href: bot-service-channel-connect-alexa.md

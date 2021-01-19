@@ -12,9 +12,9 @@ ms.date: 10/05/2020
 ---
 
 # About Direct Line
-[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
-The Bot Framework offers multiple channels with the Direct Line branding. It is important that you select the version that best fits the conversational A.I. experience you are designing.
 
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+The Bot Framework offers multiple channels with the Direct Line branding. It is important that you select the version that best fits the conversational AI experience you are designing.
 
 - **Direct Line**. This is the standard channel offering of Direct Line. It works by default with bot templates via the [Azure portal](https://ms.portal.azure.com/), bots from the [Bot Builder Samples](https://github.com/Microsoft/BotBuilder-Samples/blob/main/README.md), and bots created with the [Azure CLI](https://docs.microsoft.com/cli/azure/what-is-azure-cli). This is the Direct Line best suited in the majority of the cases. See [Connect a bot to Direct Line](bot-service-channel-connect-directline.md).
 - **Direct Line Speech**. It provides text to speech and speech to text services within the channel. It allows a client to stream audio directly to the channel which will then be converted to text and sent to the bot. The Direct Line Speech is also able to convert text messages from the bot into audio messages as spoken by a variety of A.I. powered voices. Combined, this makes Direct Line Speech capable of having audio only conversations with clients. See [Connect a bot to Direct Line Speech](bot-service-channel-connect-directlinespeech.md).
@@ -23,13 +23,13 @@ The Bot Framework offers multiple channels with the Direct Line branding. It is 
 You can choose which offering of Direct Line is best for you by evaluating the features each offers and the needs of your solution.
 Over time these offerings will be simplified.
 
-| Feature                    | Direct Line | Direct Line App Service Extension | Direct Line Speech |
-|----------------------------|-------------|-----------------------------------|--------------------|
-| Availability and Licensing    | GA | GA  | GA |
+| Feature      | Direct Line | Direct Line App Service Extension | Direct Line Speech |
+|--------------|-------------|-----------------------------------|--------------------|
+| Availability and Licensing | GA | GA  | GA |
 | Speech recognition and text-to-speech performance | Standard | Standard | High performance |
 | Supports legacy web browsers | Yes | Yes | Yes |
 | Bot Framework SDK support | All v3, v4 | v4.63+ required | v4.63+ required |
-| Client SDK support    | JS, C# | JS, C# | C++, C#, Unity, JS|
+| Client SDK support | JS, C# | JS, C# | C++, C#, Unity, JS|
 | Works with Web Chat  | Yes | Yes | Yes |
 | VNET | No | Yes | No |
 

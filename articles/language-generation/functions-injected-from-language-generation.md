@@ -248,9 +248,9 @@ This example uses the `isTemplate()` function to check whether a given template 
 - you add a task at 7:pm
 ```
 
-Calling `isTemplate("welcome")` would evaluate to `true`. Calling `isTemplate("delete-to-do")` would evaluate to `false`.
+Calling `isTemplate("welcome")` will evaluate to `true`. Calling `isTemplate("delete-to-do")` will evaluate to `false`.
 
 ## Additional Information
 
-- [.lg file format](../file-format/bot-builder-lg-file-format.md) 
-- [Structured response template](language-generation-structured-response-template.md) 
+- [.lg file format](../file-format/bot-builder-lg-file-format.md)
+- [Structured response template](language-generation-structured-response-template.md)

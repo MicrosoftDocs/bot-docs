@@ -29,7 +29,7 @@ This article shows how to add a Slack channel to a bot. Select one of the follow
     ![Set up bot](~/media/channels/slack-NewApp.png)
 
 1. Click **Create New App**.
-1. In the **App Name** box, enter the name of your Slack application
+1. In the **App Name** box, enter the name of your Slack application.
 1. In the **Development Slack Team** box, enter the name of your development team. If you are not already a member of a Development Slack Team, [create or join one](https://slack.com/).
 
     ![Create app](~/media/channels/slack-CreateApp.png)
@@ -93,7 +93,7 @@ If your bot will use Slack-specific functionality such as buttons, follow these 
 ### Add the Slack channel to the bot
 
 1. In the left panel, select the **Basic Information** item.
-1. In the right panel, scroll to the **App Credentials** section. The **Client ID**, **Client Secret**, and **Signing Secrte** required for configuring your Slack bot channel are displayed. Copy and store these credentials in safe place.
+1. In the right panel, scroll to the **App Credentials** section. The **Client ID**, **Client Secret**, and **Signing Secret** required for configuring your Slack bot channel are displayed. Copy and store these credentials in safe place.
 
     ![Gather credentials](~/media/channels/slack-AppCredentials.png)
 
@@ -130,16 +130,16 @@ Authorized users can click the **Add to Slack** button provided by this modified
 
 ### Connect a bot to Slack using the Slack adapter
 
-As well as the channel available in the Azure Bot Service to connect your bot with Slack, you can also use the Slack adapter. In this article you will learn how to connect a bot to Slack using the adapter.  This article will walk you through modifying the EchoBot sample to connect it to a Slack app.
+As well as the channel available in the Azure Bot Service to connect your bot with Slack, you can also use the Slack adapter. In this article you will learn how to connect a bot to Slack using the adapter. This article will walk you through modifying the EchoBot sample to connect it to a Slack app.
 
 > [!NOTE]
 > The instructions below cover the C# implementation of the Slack adapter. For instructions on using the JS adapter, part of the BotKit libraries, [see the BotKit Slack documentation](https://botkit.ai/docs/v4/platforms/slack.html).
 
 ### Prerequisites
 
-* The [EchoBot sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/02.echo-bot)
+- The [EchoBot sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/02.echo-bot)
 
-* Access to a Slack workspace with sufficient permissions to create and manage applications at  [https://api.slack.com/apps](https://api.slack.com/apps). If you do not have access to a Slack environment you can create a workspace for [free](https://www.slack.com).
+- Access to a Slack workspace with sufficient permissions to create and manage applications at  [https://api.slack.com/apps](https://api.slack.com/apps). If you do not have access to a Slack environment you can create a workspace for [free](https://www.slack.com).
 
 ### Create a Slack application and configure it for your bot
 
@@ -171,7 +171,7 @@ Once your app is created, collect the following information. You will need this 
 
 #### Install the Slack adapter NuGet package
 
-Add  the [Microsoft.Bot.Builder.Adapters.Slack](https://www.nuget.org/packages/Microsoft.Bot.Builder.Adapters.Slack/) NuGet package. For more information on using NuGet, see [Install and manage packages in Visual Studio](https://aka.ms/install-manage-packages-vs)
+Add  the [Microsoft.Bot.Builder.Adapters.Slack](https://www.nuget.org/packages/Microsoft.Bot.Builder.Adapters.Slack/) NuGet package. For more information on using NuGet, see [Install and manage packages in Visual Studio](/nuget/tools/package-manager-ui)
 
 #### Create a Slack adapter class
 
@@ -201,7 +201,7 @@ public class SlackAdapterWithErrorHandler : SlackAdapter
 
 #### Create a new controller for handling Slack requests
 
-We create a new controller which will handle requests from your slack app, on a new endpoing 'api/slack' instead of the default 'api/messages' used for requests from Azure Bot Service Channels.  By adding an additional endpoint to your bot, you can accept requests from Bot Service channels, as well as from Slack, using the same bot.
+We create a new controller which will handle requests from your slack app, on a new endpoint `api/slack` instead of the default `api/messages` used for requests from Azure Bot Service Channels.  By adding an additional endpoint to your bot, you can accept requests from Bot Service channels, as well as from Slack, using the same bot.
 
 ```csharp
 [Route("api/slack")]
@@ -246,7 +246,7 @@ Add the following line to the ***ConfigureServices*** method within your startup
 services.AddSingleton<SlackAdapter, SlackAdapterWithErrorHandler>();
 ```
 
-Once added, your ***ConfigureServices*** method shold look like this.
+Once added, your ***ConfigureServices*** method should look like this.
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
@@ -270,7 +270,7 @@ public void ConfigureServices(IServiceCollection services)
 
 Now that you have created a Slack app and wired up the adapter in your bot project, the final step is to point the Slack app to the correct endpoint on your bot and subscribe your app to ensure your bot receives messages.  To do this your bot must be running, so that Slack can verify the URL to the endpoint is valid.
 
-To complete this step, [deploy your bot to Azure](https://aka.ms/bot-builder-deploy-az-cli) and make a note of the URL to your deployed bot.
+To complete this step, [deploy your bot to Azure](bot-builder-deploy-az-cli.md) and make a note of the URL to your deployed bot.
 
 > [!NOTE]
 > If you are not ready to deploy your bot to Azure, or wish to debug your bot when using the Slack adapter, you can use a tool such as [ngrok](https://www.ngrok.com) (which you will likely already have installed if you have used the Bot Framework Emulator previously) to tunnel through to your bot running locally and provide you with a publicly accessible URL for this.
@@ -303,7 +303,7 @@ Navigate back to the [Slack API dashboard](https://api.slack.com/apps) and selec
 
 1. Log in the Slack work space where you installed your app (`http://<your work space>-group.slack.com/`). You will see it listed under the **Apps** section in the left panel.
 1. In the left panel, select your app.
-1. In the right panel, wite e message and send it to the application. If you used an echo bot, the application echoes back the message as shown in the figure below.
+1. In the right panel, write e message and send it to the application. If you used an echo bot, the application echoes back the message as shown in the figure below.
 
     ![app testing](~/media/channels/slack-echobotapp-test.png)
 

@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-The `.lg` file describes language generation templates with entity references and their composition. This article covers the various concepts expressed with the `.lg` file format.
+The .lg file describes language generation templates with entity references and their composition. This article covers the various concepts expressed with the .lg file format.
 
 ## Special Characters
 
@@ -79,7 +79,7 @@ Returns the following JSON object:
 
 ### Template names
 
-Template names are case-sensitive and can only contain letters, underscores, numbers. The following is an example of a template named `TemplateName`. 
+Template names are case-sensitive and can only contain letters, underscores, and numbers. The following is an example of a template named `TemplateName`.
 
 ```lg
 # TemplateName
@@ -438,6 +438,7 @@ Use  `foo.template1(1,2), foo.template2(['a', 'b', 'c'], ',')` to call these exp
 
 - [C# API Reference](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.languagegeneration)
 - [JavaScript API reference](https://docs.microsoft.com/javascript/api/botbuilder-lg)
+- Read [Debug with Adaptive Tools](../bot-service-debug-adaptive-tools.md) to learn how to analyze and debug .lg files.
 
 [1]:https://github.com/Microsoft/botbuilder-tools/blob/master/packages/Ludown/docs/lu-file-format.md
 [3]:../v4sdk/bot-builder-concept-adaptive-expressions.md
