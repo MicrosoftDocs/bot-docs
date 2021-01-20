@@ -16,4 +16,4 @@
 |**Refresh URL Template** | | https://login.microsoftonline.com/common/oauth2/v2.0/token |
 |*Refresh URL Query String Template* |The query string to append to the refresh URL,templated with any wanted parameters: {ClientId} {ClientSecret} {RedirectUrl} {Scopes} {State} |*?* \<enter question mark\>|
 |*Refresh Body Template* | Body to send with the token refresh | *refresh_token={RefreshToken}&redirect_uri={RedirectUrl}&grant_type=refresh_token&client_id={ClientId}&client_secret={ClientSecret}* |
-|**Scopes** | Comma separated list of the API permissions you granted earlier to the Azure AD authentication app | Values such as `openid` `profile` `Mail.Read` `Mail.Send` `User.Read` `User.ReadBasic.All`|
+|**Scopes** | Comma separated list of the API permissions you granted earlier to the Azure AD authentication app | Values such as `openid`, `profile`, `Mail.Read`, `Mail.Send`, `User.Read`, `User.ReadBasic.All`|
