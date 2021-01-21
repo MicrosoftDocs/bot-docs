@@ -12,7 +12,7 @@ In this case, we are using an existing App Service Plan, but creating a new Web 
 
 This command below sets the bot's ID and display name. The `botId` parameter should be globally unique and is used as the immutable bot ID. The bot's display name is mutable.
 
-```cmd
+```azurecli
 az deployment group create --resource-group "<name-of-resource-group>" --template-file "<path-to-template-with-preexisting-rg.json>" --parameters appId="<app-id-from-previous-step>" appSecret="<password-from-previous-step>" botId="<id or bot-app-service-name>" newWebAppName="<bot-app-service-name>" existingAppServicePlan="<name-of-app-service-plan>" appServicePlanLocation="<region-location-name>" --name "<bot-app-service-name>"
 ```
 
@@ -20,7 +20,7 @@ az deployment group create --resource-group "<name-of-resource-group>" --templat
 
 In this case, we are creating App Service Plan, Web App, and Bot Channels Registration.
 
-```cmd
+```azurecli
 az deployment group create --resource-group "<name-of-resource-group>" --template-file "<path-to-template-with-preexisting-rg.json>" --parameters appId="<app-id-from-previous-step>" appSecret="<password-from-previous-step>" botId="<id or bot-app-service-name>" newWebAppName="<bot-app-service-name>" newAppServicePlanName="<name-of-app-service-plan>" appServicePlanLocation="<region-location-name>" --name "<bot-app-service-name>"
 ```
 
