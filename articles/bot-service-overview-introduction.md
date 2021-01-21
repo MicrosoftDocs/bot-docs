@@ -92,6 +92,7 @@ Additionally, we provide command line tools to help you to create, manage, and t
 You also have access to a variety of [samples](https://github.com/microsoft/botbuilder-samples) that showcase many of the capabilities available through the SDK. These are great for developers looking for a more feature rich starting point.
 
 ### Test
+
 Bots are complex apps, with a lot of different parts working together. Like any other complex app, this can lead to some interesting bugs or cause your bot to behave differently than expected. Before publishing, test your bot. We provide several ways to test bots before they are released for use:
 
 - Test your bot locally with the [emulator](bot-service-debug-emulator.md). The Bot Framework Emulator is a stand-alone app that not only provides a chat interface but also debugging and interrogation tools to help understand how and why your bot does what it does.  The Emulator can be run locally alongside your in-development bot application.
@@ -115,5 +116,6 @@ Use the data collected in Azure portal to identify opportunities to improve the 
 ## Next steps
 
 Check out these [case studies](https://azure.microsoft.com/services/bot-service/) of bots or click on the link below to create a bot.
+
 > [!div class="nextstepaction"]
 > [Create a bot](bot-service-quickstart.md)

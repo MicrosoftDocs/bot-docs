@@ -186,9 +186,9 @@ To test your bot in the cloud with security enabled, complete the following step
 
 If an error is indicated in the chat window, use the error message to determine the cause of the error. Common issues include:
 
-* The **Messaging endpoint** specified on the **Settings** page for your bot in the Bot Framework Portal is incorrect. Make sure you have included the proper path at the end of the URL (e.g., `/api/messages`).
-* The **Messaging endpoint** specified on the **Settings** page for your bot in the Bot Framework Portal does not begin with `https` or is not trusted by the Bot Framework. Your bot must have a valid, chain-trusted certificate.
-* The bot is configured with missing or incorrect values for app ID or password. [Verify](#enable-security-localhost) that the bot configuration settings specify valid values for app ID and password.
+- The **Messaging endpoint** specified on the **Settings** page for your bot in the Bot Framework Portal is incorrect. Make sure you have included the proper path at the end of the URL (e.g., `/api/messages`).
+- The **Messaging endpoint** specified on the **Settings** page for your bot in the Bot Framework Portal does not begin with `https` or is not trusted by the Bot Framework. Your bot must have a valid, chain-trusted certificate.
+- The bot is configured with missing or incorrect values for app ID or password. [Verify](#enable-security-localhost) that the bot configuration settings specify valid values for app ID and password.
 
 If the bot responds appropriately to the input, you have verified that your bot is accessible and functional in the cloud with security enabled. At this point, your bot is ready to securely [connect to a channel](~/bot-service-manage-channels.md) such as Facebook Messenger, Direct Line, and others.
 
@@ -196,11 +196,11 @@ If the bot responds appropriately to the input, you have verified that your bot 
 
 If you are still experiencing issues after completing the steps above, you can:
 
-* Review how-to [debug a bot](bot-service-debug-bot.md) and the other debugging articles in that section.
-* [Debug your bot in the cloud](~/bot-service-debug-emulator.md) using the Bot Framework Emulator and <a href="https://ngrok.com/" target="_blank">ngrok</a> tunnelling software. *ngrok is not a Microsoft product.*
-* Use a proxying tool like [Fiddler](https://www.telerik.com/fiddler) to inspect HTTPS traffic to and from your bot. *Fiddler is not a Microsoft product.*
-* Review the [Bot Connector authentication guide][BotConnectorAuthGuide] to learn about the authentication technologies that the Bot Framework uses.
-* Solicit help from others by using the Bot Framework [support][Support] resources.
+- Review how-to [debug a bot](bot-service-debug-bot.md) and the other debugging articles in that section.
+- [Debug your bot in the cloud](~/bot-service-debug-emulator.md) using the Bot Framework Emulator and <a href="https://ngrok.com/" target="_blank">ngrok</a> tunnelling software. *ngrok is not a Microsoft product.*
+- Use a proxying tool like [Fiddler](https://www.telerik.com/fiddler) to inspect HTTPS traffic to and from your bot. *Fiddler is not a Microsoft product.*
+- Review the [Bot Connector authentication guide][BotConnectorAuthGuide] to learn about the authentication technologies that the Bot Framework uses.
+- Solicit help from others by using the Bot Framework [support][Support] resources.
 
 [BotConnectorAuthGuide]: ~/rest-api/bot-framework-rest-connector-authentication.md
 [Support]: bot-service-resources-links-help.md

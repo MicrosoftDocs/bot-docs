@@ -18,7 +18,7 @@ monikerRange: 'azure-bot-service-4.0'
 A conversation between a bot and a user often involves asking (prompting) the user for information, parsing the user's response, and then acting on that information. Your bot should track the context of a conversation, so that it can manage its behavior and remember answers to previous questions. A bot's *state* is information it tracks to respond appropriately to incoming messages.
 
 > [!TIP]
-> The dialogs library provides built in prompts that provide more functionality that users can use. Examples of those prompts can be found in the [Implement sequential conversation flow](bot-builder-dialog-manage-conversation-flow.md) article.
+> The dialogs library provides built-in prompts that provide more functionality that users can use. Examples of those prompts can be found in the [Implement sequential conversation flow](bot-builder-dialog-manage-conversation-flow.md) article.
 
 ## Prerequisites
 
@@ -35,7 +35,7 @@ The sample bot asks the user a series of questions, validates some of their answ
 
 - A `UserProfile` class for the user information that the bot will collect.
 - A `ConversationFlow` class to control our conversation state while gathering user information.
-- An inner `ConversationFlow.Question` enumeration for tracking where we are in the conversation.
+- An inner `ConversationFlow.Question` enumeration for tracking where you are in the conversation.
 
 ## [JavaScript](#tab/javascript)
 
@@ -43,7 +43,7 @@ The sample bot asks the user a series of questions, validates some of their answ
 
 - A `userProfile` class for the user information that the bot will collect.
 - A `conversationFlow` class to control our conversation state while gathering user information.
-- An inner `conversationFlow.question` enumeration for tracking where we are in the conversation.
+- An inner `conversationFlow.question` enumeration for tracking where you are in the conversation.
 
 ## [Python](#tab/python)
 
@@ -51,14 +51,14 @@ The sample bot asks the user a series of questions, validates some of their answ
 
 - A `UserProfile` class for the user information that the bot will collect.
 - A `ConversationFlow` class to control our conversation state while gathering user information.
-- An inner `ConversationFlow.Question` enumeration for tracking where we are in the conversation.
+- An inner `ConversationFlow.Question` enumeration for tracking where you are in the conversation.
 
 ---
 
-The user state will track the user's name, age, and chosen date, and conversation state will track what we've just asked the user.
-Since we don't plan to deploy this bot, we'll configure both user and conversation state to use _memory storage_.
+The user state will track the user's name, age, and chosen date, and conversation state will track what you've just asked the user.
+Since you don't plan to deploy this bot, you'll configure both user and conversation state to use _memory storage_.
 
-We use the bot's message turn handler plus user and conversation state properties to manage the flow of the conversation and the collection of input. In our bot, we'll record the state property information received during each iteration of the message turn handler.
+You use the bot's message turn handler plus user and conversation state properties to manage the flow of the conversation and the collection of input. In your bot, you'll record the state property information received during each iteration of the message turn handler.
 
 ## Create conversation and user objects
 
@@ -87,11 +87,11 @@ Create the user and conversation state objects in **index.js** and consume them 
 
 Create the user and conversation state objects in **app.py** and consume them in the bot constructor.
 
-**app.py**  
+**app.py**
 
 [!code-python[app.py](~/../botbuilder-samples/samples/python/44.prompt-for-user-input/app.py?range=68-74)]
 
-**bots/custom_prompt_bot.py**  
+**bots/custom_prompt_bot.py**
 
 [!code-python[constructor](~/../botbuilder-samples/samples/python/44.prompt-for-user-input/bots/custom_prompt_bot.py?range=29-41)]
 
@@ -123,7 +123,7 @@ Before the turn ends, call `saveChanges` to write any state changes to storage.
 
 ## [Python](#tab/python)
 
-In the constructor, we create the state property accessors and set up the state management objects (created above) for our conversation.
+In the constructor, you create the state property accessors and set up the state management objects (created above) for our conversation.
 
 **bots/custom_prompt_bot.py**  
 [!code-python[on_message_activity](~/../botbuilder-samples/samples/python/44.prompt-for-user-input/bots/custom_prompt_bot.py?range=46-49)]
@@ -194,8 +194,8 @@ The bot uses the following criteria to validate input.
   It's normalized by returning just the date portion of the parsed input.
 
 > [!NOTE]
-> For the age and date input, we use the [Microsoft/Recognizers-Text](https://github.com/Microsoft/Recognizers-Text/) libraries to perform the initial parsing.
-> While we provide sample code, we do not explain how the text recognizers libraries work, and this is just one way to parse the input.
+> For the age and date input, you use the [Microsoft/Recognizers-Text](https://github.com/Microsoft/Recognizers-Text/) libraries to perform the initial parsing.
+> While you provide sample code, you do not explain how the text recognizers libraries work, and this is just one way to parse the input.
 > For more information about these libraries, see the repository's **README**.
 
 ## [C#](#tab/csharp)

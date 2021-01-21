@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-If a bot uses multiple LUIS models and QnA Maker knowledge bases (knowledge bases), you can use Dispatch tool to determine which LUIS model or QnA Maker knowledge base best matches the user input. The dispatch tool does this by creating a single LUIS app to route user input to the correct model. For more information about the Dispatch, including the CLI commands, refer to the [README][dispatch-readme].
+If a bot uses multiple LUIS models and QnA Maker knowledge bases (knowledge bases), you can use Dispatch tool to determine which LUIS model or QnA Maker knowledge base best matches the user input. The dispatch tool does this by creating a single LUIS app to route user input to the correct model. For more information about the Dispatch, including the CLI commands, refer to the [dispatch README][dispatch-readme].
 
 ## Prerequisites
 
@@ -33,7 +33,7 @@ This sample is based on a predefined set of LUIS and QnA Maker apps.
 
 ![Code sample logic flow cs](./media/tutorial-dispatch/dispatch-logic-flow.png)
 
-`OnMessageActivityAsync` is called for each user input received. This module finds the top scoring user intent and passes that result on to `DispatchToTopIntentAsync`. DispatchToTopIntentAsync, in turn, calls the appropriate app handler
+`OnMessageActivityAsync` is called for each user input received. This module finds the top scoring user intent and passes that result on to `DispatchToTopIntentAsync`. DispatchToTopIntentAsync, in turn, calls the appropriate app handler.
 
 - `ProcessSampleQnAAsync` - for bot faq questions.
 - `ProcessWeatherAsync` - for weather queries.
@@ -566,8 +566,6 @@ To delete QnA Maker resources:
 To improve services used in this sample, refer to best practice for [LUIS](https://docs.microsoft.com/azure/cognitive-services/luis/luis-concept-best-practices), and [QnA Maker](https://docs.microsoft.com/azure/cognitive-services/qnamaker/concepts/best-practices).
 
 <!-- Foot-note style links -->
-
-
 
 [howto-luis]: bot-builder-howto-v4-luis.md
 [howto-qna]: bot-builder-howto-qna.md

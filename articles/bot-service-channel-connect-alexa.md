@@ -16,7 +16,7 @@ ms.date: 05/17/2020
 
 You can configure your bot to communicate with people using Alexa devices that support Custom Skills.
 
-**Important**: Your bot must use the [Bot Framework Sdk](https://github.com/microsoft/botframework-sdk) version 4.8 or later. If you create a new bot via the Azure Portal it will have 4.8 or later. If you have an existing bot you may need to update your Sdk version.
+**Important**: Your bot must use the [Bot Framework SDK](https://github.com/microsoft/botframework-sdk) version 4.8 or later. If you create a new bot via the Azure Portal it will have 4.8 or later. If you have an existing bot you may need to update your SDK version.
 
 ## Create an Alexa skill
 
@@ -90,7 +90,7 @@ You can configure your bot to communicate with people using Alexa devices that s
 
 1. Click the **Save Model** button and then click **Build Model**, which will update the configuration for your skill.
 
-1. Get your **Alexa Skill Id** either from the Url in the Alexa Portal or by going to the [Alexa Developer Console](https://developer.amazon.com/alexa/console/ask) and clicking **View Skill ID**. Your Alexa Skill Id should be a value like 'amzn1.ask.skill.A GUID'.
+1. Get your **Alexa Skill Id** either from the URL in the Alexa Portal or by going to the [Alexa Developer Console](https://developer.amazon.com/alexa/console/ask) and clicking **View Skill ID**. Your Alexa Skill Id should be a value like 'amzn1.ask.skill.A GUID'.
 
 1. In the Bot Framework Portal navigate to the Alexa Channel Configuration page and paste your **Alexa Skill Id** into the **Enter skill Id** field.
 

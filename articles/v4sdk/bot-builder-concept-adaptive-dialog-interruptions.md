@@ -92,7 +92,7 @@ When an input action is active, adaptive dialogs do the following when receiving
 - Run the recognizer configured on the adaptive dialog that contains the input action.
 - Evaluate the value of the _allow interruptions_ property.
    - If **true**: Evaluate triggers on the adaptive dialog that contains the input action. If no triggers fire then the parent adaptive dialog is consulted and its recognizer executes, and then its triggers are evaluated. If no triggers fire then this process continues until the root adaptive dialog is reached.
-   - If **false**: Evaluate the _value_ property and assign its value to the property bound to the input. If _value_ evaluates to null run the internal entity recognizer for that input action to resolve a value for that input action. If the internal recognizer came back with no result, then issue a reprompt.
+   - If **false**: Evaluate the _value_ property and assign its value to the property bound to the input. If _value_ evaluates to null run the internal entity recognizer for that input action to resolve a value for that input action. If the internal recognizer came back with no result, then issue a re-prompt.
 
 ### The allow interruptions property
 
@@ -214,8 +214,8 @@ _Confirmation and correction_ enables the scenario where you ask the user for co
 - [Cross train your bot to use both LUIS and QnA Maker recognizers][cross-train-concepts].
 - [Adaptive expressions][adaptive-expressions].
 - [.lu file format](/file-format/bot-builder-lu-file-format.md)
-- [Intents in your LUIS app](https://docs.microsoft.com/azure/cognitive-services/LUIS/luis-concept-intent)
-- [Understand what good utterances are for your LUIS app](https://docs.microsoft.com/azure/cognitive-services/LUIS/luis-concept-utterance)
+- [Intents in your LUIS app](/azure/cognitive-services/LUIS/luis-concept-intent)
+- [Understand what good utterances are for your LUIS app](/azure/cognitive-services/LUIS/luis-concept-utterance)
 
 [introduction]:bot-builder-adaptive-dialog-introduction.md
 [inputs]: bot-builder-concept-adaptive-dialog-Inputs.md

@@ -38,7 +38,7 @@ Actions that are included with the Bot Framework SDK provide the ability to perf
 >[!TIP]
 > Unlike a waterfall dialog where each step is a function, each action in an adaptive dialog is a fully functional dialog with all of the power and flexibility that entails. This enables adaptive dialogs by design to:
 >
-> * Provide an easier way to handle [interruptions][interruptions]. 
+> * Provide an easier way to handle [interruptions][interruptions].
 > * Branch conditionally based on context or state.
 
 Adaptive dialogs support the following actions:

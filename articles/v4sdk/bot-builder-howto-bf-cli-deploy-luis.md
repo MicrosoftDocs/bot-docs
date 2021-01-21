@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-The Bot Framework Command Line Interface (CLI) lets you automate the management of LUIS applications (LUIS apps). From a command line or a script, you can create, update, and delete LUIS properties.
+The Bot Framework Command Line Interface (CLI) lets you automate the management of LUIS applications. From a command line or a script, you can create, update, and delete LUIS properties.
 
 This article explains how to deploy a LUIS resource. For information on how to update an existing LUIS resource using BF CLI, see how to [update LUIS resources using the Bot Framework LUIS CLI commands][how-to-update-using-luis-cli].
 
@@ -32,15 +32,26 @@ This article explains how to deploy a LUIS resource. For information on how to u
 
 This article describes how to perform some common tasks using the Bot Framework CLI.
 
-1. [Create your LUIS authoring resource in Azure](#create-your-luis-authoring-resource-in-azure)
-1. [Install the Bot Framework CLI](#install-the-bot-framework-cli)
-1. [Create your LUIS model](#create-your-luis-model)
-1. [Create your LUIS application](#create-your-luis-application)
-1. [Get the appId from your LUIS app](#get-the-appid-from-your-luis-app)
-1. [Train your LUIS application](#train-your-luis-application)
-1. [Publish your LUIS application](#publish-your-luis-application)
-1. [Generate source code](#generate-source-code)
-1. [Create and train a LUIS app then publish it using the build command](#create-and-train-a-luis-app-then-publish-it-using-the-build-command)
+- [Deploy LUIS resources using the Bot Framework LUIS CLI commands](#deploy-luis-resources-using-the-bot-framework-luis-cli-commands)
+  - [Prerequisites](#prerequisites)
+  - [Using the LUIS CLI commands to enable LUIS in your bot](#using-the-luis-cli-commands-to-enable-luis-in-your-bot)
+  - [Create your LUIS authoring resource in Azure](#create-your-luis-authoring-resource-in-azure)
+  - [Install the Bot Framework CLI](#install-the-bot-framework-cli)
+  - [Create your LUIS model](#create-your-luis-model)
+  - [Create your LUIS application](#create-your-luis-application)
+  - [Get the appId from your LUIS app](#get-the-appid-from-your-luis-app)
+  - [Train your LUIS application](#train-your-luis-application)
+  - [Publish your LUIS application](#publish-your-luis-application)
+  - [Generate source code](#generate-source-code)
+  - [Create and train a LUIS app then publish it using the build command](#create-and-train-a-luis-app-then-publish-it-using-the-build-command)
+  - [How to use the build command](#how-to-use-the-build-command)
+    - [Required luis:build parameters](#required-luisbuild-parameters)
+    - [LUIS build configuration file](#luis-build-configuration-file)
+    - [LU and multiple language variations](#lu-and-multiple-language-variations)
+    - [LUIS Applications created](#luis-applications-created)
+    - [The settings file generated using the build command](#the-settings-file-generated-using-the-build-command)
+    - [The dialog file](#the-dialog-file)
+  - [Additional information](#additional-information)
 
 Once your bot project's language understanding resources have been created, you are ready to follow the steps outlined in this article to get LUIS working.
 
@@ -96,7 +107,7 @@ bf luis:convert -i dialogs -o .\output\LUISModel.json -r
 
 ## Create your LUIS application
 
-The _LUIS authoring resource_ you perviously created consists of your authoring keys and endpoint, values that you need when creating your LUIS application (LUIS app). You can have multiple LUIS apps associated with a single LUIS authoring resource, each LUIS app will have its own `appId` that will be provided to you as a part of the creation process. You will need that `appId` when referring to this LUIS app in the future. The LUIS app will provide your bot with all functionality provided by LUIS, combined with the app specific data you provide in your LUIS model that you previously created from your projects .lu files.
+The _LUIS authoring resource_ you previously created consists of your authoring keys and endpoint, values that you need when creating your LUIS application (LUIS app). You can have multiple LUIS apps associated with a single LUIS authoring resource, each LUIS app will have its own `appId` that will be provided to you as a part of the creation process. You will need that `appId` when referring to this LUIS app in the future. The LUIS app will provide your bot with all functionality provided by LUIS, combined with the app specific data you provide in your LUIS model that you previously created from your projects .lu files.
 
 To create your LUIS app:
 
@@ -312,7 +323,7 @@ Example settings file:
 
 ### The dialog file
 
-When you include the `--dialog` option, a `.dialog` file will be generated for each of your .lu files, one for each locale. 
+When you include the `--dialog` option, a `.dialog` file will be generated for each of your .lu files, one for each locale.
 
 > [!IMPORTANT]
 >
@@ -356,7 +367,7 @@ See [Using declarative assets in adaptive dialogs][declarative] for more informa
 
 - [Updating your LUIS Models][how-to-update-using-luis-cli]
 
-<!----------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------->
 [cognitive-services-overview]: /azure/cognitive-services/Welcome
 [create-cognitive-services]: https://portal.azure.com/#create/Microsoft.CognitiveServicesLUISAllInOne
 [luis-recognizer]: bot-builder-concept-adaptive-dialog-recognizers.md#luis-recognizer
@@ -390,4 +401,4 @@ See [Using declarative assets in adaptive dialogs][declarative] for more informa
 
 [how-to-update-using-luis-cli]: bot-builder-howto-bf-cli-update-luis.md
 
-<!----------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------->

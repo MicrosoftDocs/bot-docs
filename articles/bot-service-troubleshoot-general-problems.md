@@ -17,7 +17,7 @@ These frequently asked questions can help you to troubleshoot common bot develop
 
 ## How can I troubleshoot issues with my bot?
 
-1. Debug your bot's source code with [Visual Studio Code](debug-bots-locally-vscode.md) or [Visual Studio](https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger).
+1. Debug your bot's source code with [Visual Studio Code](debug-bots-locally-vscode.md) or [Visual Studio](/visualstudio/debugger/navigating-through-code-with-the-debugger).
 1. Test your bot using the [Emulator](bot-service-debug-emulator.md) before you deploy it to the cloud.
 1. Deploy your bot to a cloud hosting platform such as Azure and then test connectivity to your bot by using the built-in web chat control on your bot's dashboard in the <a href="https://portal.azure.com" target="_blank">Azure Portal</a>. If you encounter issues with your bot after you deploy it to Azure, you might consider using this blog article: [Understanding Azure troubleshooting and support](https://azure.microsoft.com/blog/understanding-azure-troubleshooting-and-support/).
 1. Rule out [authentication][TroubleshootingAuth] as a possible issue.
@@ -198,8 +198,6 @@ If your bot is registered in dev.botframework.com, and you want to migrate it to
 * Leverage the information in previously answered questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/botframework), or post your own questions using the `botframework` tag. Please note that Stack Overflow has guidelines such as requiring a descriptive title, a complete and concise problem statement, and sufficient details to reproduce your issue. Feature requests or overly broad questions are off-topic; new users should visit the [Stack Overflow Help Center](https://stackoverflow.com/help/how-to-ask) for more details.
 * Consult [BotBuilder issues](https://github.com/Microsoft/BotBuilder/issues) in GitHub for information about known issues with the Bot Framework SDK, or to report a new issue.
 * Leverage the information in the BotBuilder community discussion on [Gitter](https://gitter.im/Microsoft/BotBuilder).
-
-
 
 [LUISPreBuiltEntities]: /azure/cognitive-services/luis/pre-builtentities
 [BotFrameworkIDGuide]: bot-service-resources-identifiers-guide.md
