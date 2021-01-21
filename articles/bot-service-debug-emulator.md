@@ -14,7 +14,7 @@ ms.date: 11/17/2020
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-The Bot Framework Emulator is a desktop application that allows bot developers to test and debug bots, either locally or remotely. Using the Emulator, you can chat with your bot and inspect the messages that your bot sends and receives. The Emulator displays messages as they would appear in a web chat UI and logs JSON requests and responses as you exchange messages with your bot. Before you deploy your bot to the cloud, run it locally and test it using the Emulator. You can test your bot using the Emulator even if you have not yet [created](./bot-service-quickstart.md) it with Azure Bot Service or configured it to run on any channels.
+Bot Framework Emulator is a desktop application that allows bot developers to test and debug bots, either locally or remotely. Using the Emulator, you can chat with your bot and inspect the messages that your bot sends and receives. The Emulator displays messages as they would appear in a web chat UI and logs JSON requests and responses as you exchange messages with your bot. Before you deploy your bot to the cloud, run it locally and test it using the Emulator. You can test your bot using the Emulator even if you haven't yet [created](./bot-service-quickstart.md) it with Azure Bot Service or configured it to run on any channels.
 
 ## Prerequisites
 
@@ -96,7 +96,7 @@ If a bot requires authentication, displaying a login dialog, you must configure 
 1. Click the  **Save** button.
 
 When you click the login button displayed by the bot, a validation code will be generated.
-You will enter the code in the bot input chat box for the authentication to take place.
+You'll enter the code in the bot input chat box for the authentication to take place.
 After that you can perform the allowed operations.
 
 Alternatively, you can perform the steps described below.
