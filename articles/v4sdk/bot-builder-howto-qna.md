@@ -54,7 +54,7 @@ The user's input is sent to your knowledge base and the best returned answer is 
 ## Create a QnA Maker service and publish a knowledge base
 
 1. Create a QnA Maker service.
-1. Create a knowledge base using the **smartLightFAQ.tsv** file located in the CognitiveModels folder of the sample project. Name your knowledge base **qna**,  and use the **smartLightFAQ.tsv** file to populate it.
+1. Create a knowledge base using the **smartLightFAQ.tsv** file located in the CognitiveModels folder of the sample project. Name your knowledge base **qna**, and use the **smartLightFAQ.tsv** file to populate it.
 
 You can also use these steps to access your own QnA Maker knowledge bases.
 
@@ -64,7 +64,7 @@ You can also use these steps to access your own QnA Maker knowledge bases.
 ## Obtain values to connect your bot to the knowledge base
 
 1. In the [QnA Maker](https://www.qnamaker.ai/) site, select your knowledge base.
-1. With your knowledge base open, select the **SETTINGS** tab. Record the value shown for _service name_. This value is useful for finding your knowledge base of interest when using the QnA Maker portal interface. It is not used to connect your bot app to this knowledge base.
+1. With your knowledge base open, select the **SETTINGS** tab. Record the value shown for _service name_. This value is useful for finding your knowledge base of interest when using the QnA Maker portal interface. It's not used to connect your bot app to this knowledge base.
 1. Scroll down to find **Deployment details** and record the following values from the Postman sample HTTP request:
    - POST /knowledgebases/\<knowledge-base-id>/generateAnswer
    - Host: \<your-host-url>
@@ -109,7 +109,7 @@ First, we create an object for accessing our QnA Maker knowledge base.
 
 Be sure that the **Microsoft.Bot.Builder.AI.QnA** NuGet package is installed for your project.
 
-In **QnABot.cs**, in the `OnMessageActivityAsync` method, we create a QnAMaker instance. The `QnABot` class is also where the names of the connection information, saved in **appsettings.json** above, are pulled in. If you have chosen different names for your knowledge base connection information in your settings file, be sure to update the names here to reflect your chosen name.
+In **QnABot.cs**, in the `OnMessageActivityAsync` method, create a QnAMaker instance. The `QnABot` class is also where the names of the connection information, saved in **appsettings.json** above, are pulled in. If you have chosen different names for your knowledge base connection information in your settings file, be sure to update the names here to reflect your chosen name.
 
 **Bots/QnABot.cs**
 
@@ -129,7 +129,7 @@ In the **QnABot.js** file, we use the connection information provided by your .e
 
 ## [Python](#tab/python)
 
-In the **qna_bot.py** file, we use the connection information provided by the **config.py** file to establish a connection to the QnA Maker service: `self.qna_maker`.
+In the **qna_bot.py** file, use the connection information provided by the **config.py** file to establish a connection to the QnA Maker service: `self.qna_maker`.
 
 **bots/qna_bot.py**
 [!code-python[QnAMaker](~/../botbuilder-samples/samples/python/11.qnamaker/bots/qna_bot.py?range=13-19)]
@@ -140,7 +140,7 @@ In the **qna_bot.py** file, we use the connection information provided by the **
 
 ## [C#](#tab/cs)
 
-When your bot needs an answer from QnAMaker, call the `GetAnswersAsync` method from your bot code to get the appropriate answer based on the current context. If you are accessing your own knowledge base, change the _no answers found_ message below to provide useful instructions for your users.
+When your bot needs an answer from QnAMaker, call the `GetAnswersAsync` method from your bot code to get the appropriate answer based on the current context. If you're accessing your own knowledge base, change the _no answers found_ message below to provide useful instructions for your users.
 
 **Bots/QnABot.cs**
 
@@ -165,7 +165,7 @@ In the **qna_bot.py** file, we pass the user's input to the QnA Maker service's 
 
 ## Test the bot
 
-Run the sample locally on your machine. If you have not done so already, install the [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md#download). For further instructions, refer to the sample's readme ([C#](https://aka.ms/cs-qna), [JavaScript](https://aka.ms/js-qna-sample), [Python](https://aka.ms/bot-qna-python-sample-code)).
+Run the sample locally on your machine. If you haven't done so already, install the [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md#download). For further instructions, refer to the sample's README ([C#](https://aka.ms/cs-qna), [JavaScript](https://aka.ms/js-qna-sample), [Python](https://aka.ms/bot-qna-python-sample-code)).
 
 Start the Emulator, connect to your bot, and send a message as shown below.
 

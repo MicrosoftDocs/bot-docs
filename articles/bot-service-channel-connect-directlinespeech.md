@@ -26,7 +26,7 @@ Once you've built your bot, onboarding it with Direct Line Speech will enable lo
 1. In your browser, navigate to the [Azure portal](https://ms.portal.azure.com/#create/hub) to create resources.
 1. In the left panel, click **Create a resource**.
 1. In the right panel, enter **speech** in the search box.
-1. In the the drop-down list select **Speech** as displayed in the following image:
+1. In the the drop-down list select **Speech**, which will open a page describing this resource type.
 
     ![create speech cognitive resource](media/voice-first-virtual-assistants/create-speech-cognitive-resource.PNG "create speech cognitive service")
 

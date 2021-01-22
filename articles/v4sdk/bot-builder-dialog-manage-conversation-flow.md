@@ -31,7 +31,7 @@ This article shows how to implement simple conversation flow by creating prompts
 
 ## About this sample
 
-The Multi turn prompts sample uses a waterfall dialog, a few prompts, and a component dialog to create a simple interaction that asks the user a series of questions. The code uses a dialog to cycle through these steps:
+The multi-turn prompts sample uses a waterfall dialog, a few prompts, and a component dialog to create a simple interaction that asks the user a series of questions. The code uses a dialog to cycle through these steps:
 
 | Steps        | Prompt type  |
 |:-------------|:-------------|
@@ -154,7 +154,7 @@ You should always return a non-null `DialogTurnResult` from a waterfall step. If
 
 [!code-python[name step](~/../botbuilder-samples/samples/python/05.multi-turn-prompt/dialogs/user_profile_dialog.py?range=73-79)]
 
-In `age_step`, specify a retry prompt for when the user's input fails to validate, either because it is in a format that the prompt can not parse, or the input fails a validation criteria, specified in the constructor above. In this case, if no retry prompt was provided, the prompt will use the initial prompt text to re-prompt the user for input
+In `age_step`, specify a retry prompt for when the user's input fails to validate, either because it's in a format that the prompt can not parse, or the input fails a validation criteria, specified in the constructor above. In this case, if no retry prompt was provided, the prompt will use the initial prompt text to re-prompt the user for input
 
 [!code-python[age step](~/../botbuilder-samples/samples/python/05.multi-turn-prompt/dialogs/user_profile_dialog.py?range=100-116)]
 
@@ -272,7 +272,7 @@ This sample updates the user profile state from within the dialog. This practice
 
 There are various options for keeping dialog steps and bot state separate. For example, once your dialog gathers complete information, you can:
 
-- Use the *end dialog* method to provide the collected data as return value back to the parent context. This can be the bot's turn handler or an earlier active dialog on the dialog stack and it is how the prompt classes are designed.
+- Use the *end dialog* method to provide the collected data as return value back to the parent context. This can be the bot's turn handler or an earlier active dialog on the dialog stack and it's how the prompt classes are designed.
 - Generate a request to an appropriate service. This might work well if your bot acts as a front end to a larger service.
 
 ### Definition of a prompt validator method

@@ -98,7 +98,8 @@ Once these steps are completed, Azure Bot Service will start the encryption proc
 
 To rotate a customer-managed encryption key, you must update the Azure Bot Service resource to use the new URI for the new key (or new version of the existing key).
 
-Because re-encryption with the new key occurs asynchronously, ensure the old key remains available so that data can continue to be decrypted; otherwise, your bot could stop working. You should retain the old key for at least 1 week.
+Because re-encryption with the new key occurs asynchronously, ensure the old key remains available so that data can continue to be decrypted; otherwise, your bot could stop working. You should retain the old key for at least one week.
+
 
 ### Revoke access to customer-managed keys
 

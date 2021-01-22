@@ -23,7 +23,7 @@ Besides the channels listed in within these docs, there are a few additional cha
 
 ## Currently available adapters
 
-A complete list of available adapters can be found [here](https://botkit.ai/docs/v4/platforms/). You'll notice some channels are available also as an adapter, and it's up to you when to use a channel versus an adapter.
+See [Platform Adapters](https://botkit.ai/docs/v4/platforms/) for complete list of available adapters. You'll notice some channels are available also as an adapter, and it's up to you when to use a channel versus an adapter.
 
 ### When to use an adapter
 

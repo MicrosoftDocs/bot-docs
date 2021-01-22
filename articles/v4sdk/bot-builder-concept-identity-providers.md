@@ -17,7 +17,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 An identity provider authenticates user or client identities and issues consumable security tokens. It provides user authentication as a service.
 
-Client applications, such as web applications, delegate authentication to a trusted identity provider. Such client applications are said to be federated, that is, they use federated identity. For more information, see [Federated Identity pattern](https://docs.microsoft.com/azure/architecture/patterns/federated-identity).
+Client applications, such as web applications, delegate authentication to a trusted identity provider. Such client applications are said to be federated, that is, they use federated identity. For more information, see [Federated Identity pattern](/azure/architecture/patterns/federated-identity).
 
 Using a trusted identity provider:
 
@@ -49,7 +49,7 @@ You can choose from two AD identity provider implementations which have differ
 
 ### Azure AD v1
 
-You use the settings shown to configure the Azure AD developer platform (v1.0), also known as **Azure AD v1** endpoint. This allows to build  apps that securely sign in users with a Microsoft work or school account.
+You use the settings shown to configure the Azure AD developer platform (v1.0), also known as **Azure AD v1** endpoint. This allows you to build  apps that securely sign in users with a Microsoft work or school account.
 For more information, see [Azure Active Directory for developers (v1.0) overview](https://docs.microsoft.com/azure/active-directory/azuread-dev/v1-overview).
 
 [!INCLUDE [azure-ad-v1-settings](~/includes/authentication/auth-aad-v1-settings.md)]

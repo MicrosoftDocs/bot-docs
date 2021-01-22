@@ -333,7 +333,7 @@ For detailed information on the schema, see the [Bot Framework card schema](http
 
 The following sample shows one way to use Adaptive Card inputs within a bot dialog class.
 It extends the hero cards sample by validating the input received in the text field from the responding client.
-You first need to add the text input and button functionality to the existing adaptive card by adding the following code just before the final bracket of _adaptiveCard.json_, located in the resources folder:
+You first need to add the text input and button functionality to the existing adaptive card by adding the following code just before the final bracket of **adaptiveCard.json**, located in the resources folder:
 
 ```json
 "actions": [
@@ -380,7 +380,7 @@ using Newtonsoft.Json.Linq;
 
 to **MainDialog.cs** and install the latest stable NuGet package of **Newtonsoft.Json**.
 In the validator code we added the logic flow into the code comments.
-This `ChoiceValidator` method is placed into the _Using cards_ sample just after the closed brace public for declaration of MainDialog:
+This `ChoiceValidator` method is placed into the **Using cards** sample just after the closed brace public for declaration of MainDialog:
 
 ```csharp
 private async Task ChoiceValidator(
@@ -457,7 +457,7 @@ If an Adaptive Card input exists at `_activity.value.text`, it copies this into 
 
 Create and send an activity with suggested actions to the user.
 
-This `choice_validator` method is placed into the _Using cards_ sample just after the closed brace public for declaration of `MainDialog`:
+This `choice_validator` method is placed into the **Using cards** sample just after the closed brace public for declaration of `MainDialog`:
 
 ```python
 @staticmethod
