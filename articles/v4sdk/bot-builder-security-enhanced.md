@@ -50,7 +50,7 @@ Impersonation refers to the action of an attacker that makes the bot think he is
 
 Identity spoofing refers to the action of an attacker that assumes the identity of a legitimate user and then uses that identity to accomplish a malicious goal.
 
-When a bot asks the channel user A to sign-in to an identity provider, the sign-in process must assure that user A is the only one that signs into the provider. If another user B is also allowed to sign-in the provider, he would have access to user A resources through the bot.
+When a bot asks the channel user A to sign-in to an identity provider, the sign-in process must assure that user A is the only one that signs into the provider. If another user is also allowed to sign-in the provider, they would have access to user A resources through the bot.
 
 ### User identity spoofing mitigation
 
@@ -59,7 +59,7 @@ In the Web Chat control, there are two mechanisms to assure that the proper user
 1. **Magic code**. At the end of the sign-in process, the user is presented with a randomly generated 6-digit code (*magic code*). The user must type this code in the conversation to complete the sign-in process. This tends to result in a bad user's experience. Additionally, it is still susceptible to phishing attacks. A malicious user can trick another user to sign-in and obtain the magic code through phishing.
 
     >[!WARNING]
-    > The use of the magic code is deprecated. Instead, it is recommended to use the **Direct Line enhanced authentication** approach, described below.
+    > The use of the magic code has been deprecated. Instead, it's recommended to use the **Direct Line enhanced authentication** approach, described below.
 
 1. **Direct Line enhanced authentication**. Because of the issues with the *magic code* approach, Azure Bot Service removed its need. Azure Bot Service guarantees that the sign-in process can only be completed in the **same browser session** as the Web Chat itself.
 To enable this protection, you must start Web Chat with a **Direct Line token** that contains a **list of trusted domains that can host the bot’s Web Chat client**. With enhanced authentication options, you can statically specify the trusted domains (trusted origins) list in the Direct Line configuration page. See [Configure enhanced authentication](../bot-service-channel-connect-directline.md#configure-enhanced-authentication) section.
@@ -70,11 +70,11 @@ The code in this article is based on the sample: [MVC DirectLine token controlle
 
 To run the example, perform the following steps:
 
-1. If you do not have a bot, create a basic one as shown in this article: [Tutorial: Create a basic bot](bot-builder-tutorial-create-basic-bot.md).
-1. Connect the Direct Line channel to the bot. Follow the steps described in this article: [Connect a bot to Direct Line](../bot-service-channel-connect-directline.md).
+1. If you do not have a bot, you can refer to the tutorial [Create a basic bot](bot-builder-tutorial-create-basic-bot.md) to create one.
+1. Connect the Direct Line channel to the bot. Follow the steps described in the article [Connect a bot to Direct Line](../bot-service-channel-connect-directline.md).
 1. When connecting the bot to the Direct Line, enable the [enhanced authentication](../bot-service-channel-connect-directline.md#configure-settings) option.
 1. Copy and securely store the secret key.
-1. Finally, assign the secret key in the example `HomeController` class, as shown below.
+1. Finally, assign the secret key in the `HomeController` class, as shown below.
 
     [!code-csharp[cs sample](~/../botbuilder-samples/experimental/DirectLineTokenSite/Bot_Auth_DL_Secure_Site_MVC/Controllers/HomeController.cs?range=15-19&highlight=3-4)]
 

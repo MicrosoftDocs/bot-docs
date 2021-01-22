@@ -81,7 +81,8 @@ When creating the bot application service, you can deploy your bot in a new or i
 
 ## Additional information
 
-Deploying your bot to Azure will involve paying for the services you use. The [billing and cost management](https://docs.microsoft.com/azure/billing/) article helps you understand Azure billing, monitor usage and costs, and manage your account and subscriptions.
+Deploying your bot to Azure will involve paying for the services you use. The [billing and cost management](/azure/billing/) article helps you understand Azure billing, monitor usage and costs, and manage your account and subscriptions.
+See also [Azure Command-Line Interface (CLI) documentation](/cli/azure/) and [Azure CLI release notes](/cli/azure/release-notes-azure-cli).
 
 ## Next steps
 

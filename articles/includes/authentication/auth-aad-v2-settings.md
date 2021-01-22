@@ -8,8 +8,8 @@
 |**Service Provider**| Azure AD Identity provider | `Azure Active Directory v2` |
 |**Client ID** | Azure AD identity provider app ID| \<AAD provider app ID\> |
 |**Client secret** | Azure AD identity provider app secret| \<AAD provider app secret\> |
-|**Tenant ID** | | \<directory (tenant) ID\> or `common`. See note |
-|**Scopes** |Space separated list of the API permissions you granted Azure AD identity provider app| Values such as `openid` `profile` `Mail.Read` `Mail.Send` `User.Read` `User.ReadBasic.All` |
+|**Tenant ID** | | \<directory (tenant) ID\> or `common`. See note. |
+|**Scopes** |Space separated list of the API permissions you granted Azure AD identity provider app| Values such as `openid`, `profile`, `Mail.Read`, `Mail.Send`, `User.Read`, and `User.ReadBasic.All` |
 |**Token Exchange URL** |Used for SSO in Azure AD v2| |
 | | |
 

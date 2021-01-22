@@ -16,6 +16,7 @@ monikerRange: 'azure-bot-service-4.0'
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 Generators tie a specific [language generation (LG)](bot-builder-concept-language-generation.md) system to an adaptive dialog.
+In this article you'll learn about the LG templates that add variety and personality to bot responses, and how to call those templates in your root dialog using the `TemplateEngineLanguageGenerator`.
 
 ## Prerequisites
 
@@ -25,11 +26,9 @@ Generators tie a specific [language generation (LG)](bot-builder-concept-languag
 
 ## Language generation
 
-Language Generation (LG) allows developers to extract embedded strings from their code and resource files and manage them through a LG runtime and file format. With LG, developers can create a more natural conversation experience by defining multiple variations on a phrase, executing simple expressions based on context, and referring to conversational memory.
+Language Generation (LG) allows developers to extract embedded strings from their code and resource files and manage them through an LG runtime and file format. With LG, developers can create a more natural conversational experience by defining multiple variations on a phrase, executing simple expressions based on context, and referring to conversational memory.
 
 LG, along with [recognizers](bot-builder-concept-adaptive-dialog-recognizers.md), enables clean separation and encapsulation of a dialog's Language Understanding and language generation assets. Recognizers give your bot the ability to understand input and LG lets your bot respond to that input in an intelligent way.
-
-In this article you will learn about the LG templates that add variety and personality to bot responses, and how to call those templates in your root dialog using the `TemplateEngineLanguageGenerator`.
 
 ## LG templates
 
@@ -62,7 +61,7 @@ Here's an example of a simple response template with two variations:
 
 ### Conditional response template
 
-Conditional response templates let you author content that's selected based on a condition. All conditions are expressed using [adaptive expressions](bot-builder-concept-adaptive-expressions.md), both [prebuilt](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md) and custom.
+Conditional response templates let you author content that's selected based on a condition. All conditions are expressed using [adaptive expressions](bot-builder-concept-adaptive-expressions.md), both [prebuilt](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md) and [custom](../language-generation/bot-builder-howto-use-lg-custom-functions.md).
 
 There are two types of conditional response templates: [if-else](../file-format/bot-builder-lg-file-format.md#if-else-template) and [switch](../file-format/bot-builder-lg-file-format.md#switch-template).
 
@@ -122,7 +121,7 @@ Read [structured response template](../language-generation/language-generation-s
 
 ## Call templates in your root dialog
 
-After creating templates for your bot you can add them to your adaptive dialog. You can set the generator to an _.lg_ file or set the generator to a `TemplateEngineLanguageGenerator` instance where you explicitly manage the one or more _.lg_ files. The example below shows the latter approach.
+After creating templates for your bot you can add them to your adaptive dialog. You can set the generator to an .lg file or set the generator to a `TemplateEngineLanguageGenerator` instance where you explicitly manage the one or more .lg files. The example below shows the latter approach.
 
 <!--### [C#](#tab/csharp)-->
 
@@ -142,7 +141,7 @@ string[] paths = { ".", "Dialogs", "RootDialog.lg" };
 string fullPath = Path.Combine(paths);
 ```
 
-This will ensure that your are calling the correct template files for you bot.
+This will ensure that you're calling the correct template files for you bot.
 
 Now you can create the `TemplateEngineLanguageGenerator` in your adaptive dialog that manages the templates in **RootDialog.lg**:
 

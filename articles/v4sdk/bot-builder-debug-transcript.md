@@ -46,7 +46,7 @@ All of the user interactions and bot responses that you entered to test your cod
 
 To retrieve a bot transcript file using the Bot Framework Emulator, select the _File_ then _Open Transcript..._ in the upper left corner of the Emulator, as shown below. Next, select the transcript file that you want to retrieve. (Transcripts may also be accessed from within the _TRANSCRIPTS_ list control in the _RESOURCES_ section of the Emulator)
 
-In this example we are retrieving the transcript file named "ursula_user.transcript". Selecting a transcript file will automatically load the entire preserved converation into a new Tab titled _Transcript_.
+In this example we are retrieving the transcript file named "ursula_user.transcript". Selecting a transcript file will automatically load the entire preserved conversation into a new Tab titled _Transcript_.
 
 ![retrieve saved transcript](./media/emulator_transcript_retrieve.png)
 

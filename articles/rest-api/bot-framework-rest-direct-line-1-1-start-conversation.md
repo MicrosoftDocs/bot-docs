@@ -53,9 +53,9 @@ HTTP/1.1 200 OK
 
 ## Start Conversation versus Generate Token
 
-The Start Conversation operation (`POST /api/conversations`) is similar to the [Generate Token](bot-framework-rest-direct-line-1-1-authentication.md#generate-token) operation (`POST /api/tokens/conversation`) in that both operations return a `token` that can be used to access a single conversation. However, the Start Conversation operation also starts the conversation and contacts the bot, whereas the Generate Token operation does neither of these things. 
+The Start Conversation operation (`POST /api/conversations`) is similar to the [Generate Token](bot-framework-rest-direct-line-1-1-authentication.md#generate-token) operation (`POST /api/tokens/conversation`) in that both operations return a `token` that can be used to access a single conversation. However, the Start Conversation operation also starts the conversation and contacts the bot, whereas the Generate Token operation does neither of these things.
 
-If you intend to start the conversation immediately, use the Start Conversation operation. If you plan to distribute the token to clients and want them to initiate the conversation, use the [Generate Token](bot-framework-rest-direct-line-1-1-authentication.md#generate-token) operation instead. 
+If you intend to start the conversation immediately, use the Start Conversation operation. If you plan to distribute the token to clients and want them to initiate the conversation, use the [Generate Token](bot-framework-rest-direct-line-1-1-authentication.md#generate-token) operation instead.
 
 ## Additional resources
 

@@ -487,6 +487,9 @@
       href: file-format/bot-builder-qna-file-format.md
   - name: Entities and activity types
     href: bot-service-activities-entities.md
+  - name: Azure Policy built-ins
+    displayName: samples, policies, definitions
+    href: ./policy-reference.md
 - name: Resources
   items:
   - name: Get support
