@@ -543,13 +543,7 @@
     - name: Transcript schema
       href: https://aka.ms/botSpecs-transcripts
   - name: Virtual Assistant
-    items:
-    - name: Overview
-      href: v4sdk/bot-builder-virtual-assistant-introduction.md
-    - name: Template Introduction
-      href: v4sdk/bot-builder-virtual-assistant-template.md
-    - name: Virtual Assistant Skills
-      href: v4sdk/bot-builder-skills-overview.md
+    href: v4sdk/bot-builder-virtual-assistant-introduction.md
   - name: WebChat
     items:
     - name: Overview

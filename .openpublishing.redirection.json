@@ -2091,6 +2091,16 @@
       "source_path": "articles/v4sdk/bot-builder-tutorial-basic-deploy.md",
       "redirect_url": "/azure/bot-service/bot-builder-tutorial-create-basic-bot",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-virtual-assistant-template.md",
+      "redirect_url": "/azure/bot-service/bot-builder-virtual-assistant-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-skills-overview.md",
+      "redirect_url": "/azure/bot-service/bot-builder-virtual-assistant-introduction",
+      "redirect_document_id": false
     }
   ]
 }
