@@ -315,7 +315,7 @@ TBD
   - Direct Line Speech is a collection of services and protocols for supporting speech-enabled bots.
 - **Notes**: Provides integration with the [Speech SDK](https://docs.microsoft.com/azure/cognitive-services/speech-service/speech-sdk).
 - **See**: [What is Direct Line Speech?](https://docs.microsoft.com/azure/cognitive-services/speech-service/direct-line-speech).
-- **See also**: [Direct Line](#direct-line).
+- **See also**: [Direct Line](#direct-line), [WebSockets](#websocket).
 
 <a id="e"></a>
 
@@ -644,6 +644,30 @@ In general, do not use this term. Instead, use [bot](#bot). See [AI and bot term
 - **Definition**: An embeddable web chat control for the Microsoft Bot Framework using the Direct Line API.
 - **Notes**: You may need to qualify this term, as there is a Web Chat control (to embed in a web page) and a Web Chat channel (in Azure).
 - **See also**: [Direct Line API](#direct-line-api), [Direct Line Speech](#direct-line-speech).
+
+<a id="websocket"></a>
+<a id="websockets"></a>
+
+## WebSocket(s)
+
+- **Status**: Not in the style guide, but an industry standard. The following is my best guess at the moment.
+- **Forms**:
+  - the WebSocket protocol &mdash; the protocol, as defined in an IEFT standard.
+  - the WebSocket API &mdash; a W3C "living standard" for the _WebSocket interface_.
+  - the WebSocket interface &mdash; use _the WebSocket API_, instead.
+  - a WebSocket connection &mdash; the negotiated connection between the client and host/server over which data is sent.
+  - a WebSocket client &mdash; a browser or web app that requests the connection from the server.
+  - a WebSocket server &mdash; a web service with an endpoint for WebSocket connections.
+  - a WebSocket endpoint &mdash; an endpoint for a web service for WebSocket connections.
+  - a WebSocket &mdash; Generally refers to a WebSocket connection or endpoint, depending on context; qualify as necessary.
+  - WebSockets &mdash; the supporting technology, protocol or API, and so on.
+- **Definition**:
+  - From the IEFT standard, "The WebSocket protocol enables two-way communication between a client running untrusted code in a controlled environment to a remote host that has opted-in to communications from that code."
+  - From MDN, "The WebSocket API is an advanced technology that makes it possible to open a two-way interactive communication session between the user's browser and a server."
+- **See**:
+  - IETF [RFC 6455: The WebSocket protocol](https://tools.ietf.org/html/rfc6455)
+  - MDN [The WebSocket API (WebSockets)](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
+- **See also**: [Direct Line Speech](#direct-line-speech).
 
 <a id="x"></a>
 <a id="y"></a>
