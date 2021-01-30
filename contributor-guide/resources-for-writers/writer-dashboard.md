@@ -7,7 +7,7 @@ See GitHub's [Searching issues and pull requests](https://docs.github.com/en/git
 
 ## SDK and Composer issues and PRs
 
-| **SDK doc set** |  |
+| SDK doc set |  |
 |:-|:-|
 | [All open **issues**](https://github.com/MicrosoftDocs/bot-docs/issues) | is:open is:issue |
 | &bullet; [Open **issues** with no label](https://github.com/MicrosoftDocs/bot-docs/issues?q=is%3Aopen+is%3Aissue+no%3Alabel) | is:open is:issue no:label |
@@ -36,6 +36,17 @@ For both doc and code repos:
 | [Your open, _non-draft_ **PR**s awaiting review](https://github.com/pulls?q=is%3Apr+is%3Aopen+draft%3Afalse+org%3AmicrosoftDocs+org%3Amicrosoft+author%3AYourGitHubAlias+review%3Anone) | is:pr is:open draft:false org:microsoftDocs org:microsoft<br/>author:YourGitHubAlias review:none |
 | [Open **issues** you authored](https://github.com/issues?q=is%3Aissue+is%3Aopen+org%3AmicrosoftDocs+org%3Amicrosoft+author%3AYourGitHubAlias+) | is:issue is:open org:microsoftDocs org:microsoft<br/>author:YourGitHubAlias |
 
+## Documentation quick links
+
+| Bot Framework documentation |  |
+|:-|:-|
+| [live](https://docs.microsoft.com/azure/bot-service/) | review site: [master](https://review.docs.microsoft.com/azure/bot-service/?branch=master) |
+| **Other Microsoft documentation** |  |
+| [Azure Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/) |
+| [Microsoft Power Virtual Agents](https://docs.microsoft.com/en-us/power-virtual-agents/) |
+| [Microsoft Teams](https://docs.microsoft.com/microsoftteams/platform/) |
+| [Speech service](https://docs.microsoft.com/azure/cognitive-services/speech-service/) |
+
 ## Additional repos
 
 | Bot Framework SDK v3 archive |  |
@@ -48,7 +59,7 @@ For both doc and code repos:
 | [microsoftDocs / botbuilder-docs-sdk-typescript](https://github.com/MicrosoftDocs/botbuilder-docs-sdk-typescript) | For Node.js/TypeScript/JavaScript |
 | **Other doc sets** |  |
 | [microsoftDocs / msteams-docs](https://github.com/MicrosoftDocs/msteams-docs) | Microsoft Teams |
-| ? | Power Virtual Agents |
+| [microsoftDocs / power-platform](https://github.com/MicrosoftDocs/power-platform) | Power Virtual Agents |
 | **Code repos** |  |
 | [microsoft / botframework-sdk](https://github.com/microsoft/botframework-sdk) | Central repo for the whole Bot Framework |
 | [microsoft / BotBuilder-dotnet](https://github.com/Microsoft/BotBuilder-dotnet) | Bot Framework SDK for .NET (v4) |
