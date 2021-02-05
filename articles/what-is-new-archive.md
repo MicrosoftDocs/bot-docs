@@ -305,7 +305,7 @@ Adaptive Dialog now allow developers to dynamically update conversation flow bas
 
 - [Channel Testing](https://github.com/Microsoft/BotFramework-Emulator/releases) | [docs](bot-service-debug-inspection-middleware.md):
 
-Introduced at Microsoft Build 2019, the Bot Inspector is a new feature in the Bot Framework Emulator which lets you debug and test bots on channels like Microsoft Teams, Slack, Cortana, and more. As you use the bot on specific channels, messages will be mirrored to the Bot Framework Emulator where you can inspect the message data that the bot received. Additionally, a snapshot of the bot memory state for any given turn between the channel and the bot is rendered as well.
+Introduced at Microsoft Build 2019, the Bot Inspector is a new feature in the Bot Framework Emulator which lets you debug and test bots on channels like Microsoft Teams, Slack, and more. As you use the bot on specific channels, messages will be mirrored to the Bot Framework Emulator where you can inspect the message data that the bot received. Additionally, a snapshot of the bot memory state for any given turn between the channel and the bot is rendered as well.
 
 ### Web Chat
 - Based on enterprise customers asks, we've added a [web chat sample](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/19.a.single-sign-on-for-enterprise-apps#single-sign-on-demo-for-enterprise-apps-using-oauth) that shows how to authorize a user to access resources on an enterprise app with a bot. Two types of resources are used to demonstrate the interoperability of OAuth with Microsoft Graph and GitHub API.
@@ -353,7 +353,7 @@ The [Bot Framework Solutions repository](https://github.com/Microsoft/AI#readme)
 
 ## Azure Bot Service
 Azure Bot Service enables you to host intelligent, enterprise-grade bots with complete ownership and control of your data.
-Developers can register and connect their bots to users on Microsoft Teams, Cortana, Web Chat,
+Developers can register and connect their bots to users on Microsoft Teams, Web Chat,
 and more. [Azure][27]  |  [docs][28] | [connect to channels][29]
 
 * **Direct Line JS Client**: If you want to use the Direct Line channel in Azure Bot Service and are not using the WebChat client,
@@ -373,7 +373,7 @@ The [Bot Framework Emulator][60] is a  cross-platform desktop application that a
 ### Bot Inspector (New! In preview)
 
 The Bot Framework Emulator has released a beta of the new Bot Inspector feature. It provides a way to debug and test your
-Bot Framework SDK v4 bots on channels like Microsoft Teams, Slack, Cortana, Facebook Messenger,etc.
+Bot Framework SDK v4 bots on channels like Microsoft Teams, Slack, Facebook Messenger,etc.
 As you have the conversation, messages will be mirrored to the Bot Framework Emulator where you can inspect the
 message data that the bot received. Additionally, a snapshot of the bot state for any given turn between the
 channel and the bot is rendered as well. Read more about

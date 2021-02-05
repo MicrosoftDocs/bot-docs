@@ -1,7 +1,7 @@
 ---
 title: Configure a bot to run on one or more channels - Bot Service
 description: Learn how to configure a bot to run on one or more channels using the Bot Framework Portal.
-keywords: bot channels, configure, cortana, facebook messenger, kik, slack, azure portal
+keywords: bot channels, configure, facebook messenger, kik, slack, azure portal
 author: ivorb
 ms.author: kamrani
 manager: kamrani
@@ -16,7 +16,7 @@ ms.date: 07/31/2019
 
 A channel is a connection between communication applications and a bot. A bot, registered with Azure, uses channels to facilitate the communication with users.
 
-You can configure a bot to connect to any of the standard channels such as Alexa, Cortana, Facebook Messenger, and Slack. For more information, see [Bot channels registration](bot-service-quickstart-registration.md).
+You can configure a bot to connect to any of the standard channels such as Alexa, Facebook Messenger, and Slack. For more information, see [Bot channels registration](bot-service-quickstart-registration.md).
 
 In addition to the provided channels, you can also connect a bot to your communication application using **Direct Line** as the channel.
 
@@ -45,7 +45,6 @@ The connection steps are different for each channel. See the related article in 
 > |Channel|Description|
 > |-------------|----------|
 > |[Alexa](bot-service-channel-connect-alexa.md) <img width="150px"/>|Communicate with users through Alexa devices that support Custom Skills.|
-> |[Cortana](bot-service-channel-connect-cortana.md)| Send and receive voice messages in addition to textual conversation.|
 > |[Direct Line](bot-service-channel-directline.md)| Integrate a bot into a mobile app, web page, or other applications.|
 > |[Office 365 email](bot-service-channel-connect-email.md)|Enable a bot to communicate with users via Office 365 email.|
 > |[Facebook](bot-service-channel-connect-facebook.md)|Connect a bot to both Facebook Messenger and Facebook Workplace, so that it can communicate with users on both platforms.|

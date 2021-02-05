@@ -11,7 +11,7 @@ ms.date: 02/20/2020
 
 # Key concepts - Bot Connector API
 
-Bot Framework and the Azure Bot service allow your bot to communicate with users on Teams, Cortana, Facebook, and more. Channels are available in two forms: as service included as part of Azure Bot Service and as adapter libraries for use with the Bot Framework SDK. This article focuses on the standardized channels included in the Azure Bot Service.
+Bot Framework and the Azure Bot service allow your bot to communicate with users on Teams, Facebook, and more. Channels are available in two forms: as service included as part of Azure Bot Service and as adapter libraries for use with the Bot Framework SDK. This article focuses on the standardized channels included in the Azure Bot Service.
 
 ## Bot Framework Channels
 

@@ -1,7 +1,3 @@
-### Cortana
-
-Bots are published to Cortana from the [dashboard](https://aka.ms/cortana-publish) and are used to power Cortana skills. Publishing a bot submits it for review. Cortana skills can be deployed for your own use, deployed to a small group, or published to the world.
-
 ### Skype
 
 >[!NOTE]
