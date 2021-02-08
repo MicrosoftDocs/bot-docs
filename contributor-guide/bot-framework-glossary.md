@@ -68,15 +68,19 @@ For many terms that start with the word Microsoft or Azure, like Microsoft Azure
 
 <a id="symbol"></a>
 
-## .dialog
+## .dialog file
 
-## .lg
+## .lg file
 
-## .lu
+## .lu file
 
-## .qna
+## .qna file
 
 <a id="a"></a>
+
+## ABS
+
+Don't use. See [Azure Bot Service](#azure-bot-service).
 
 ## action
 
@@ -115,10 +119,16 @@ For many terms that start with the word Microsoft or Azure, like Microsoft Azure
   - "An Adaptive Card is a JSON-serialized card object model."
 - **Notes**: _Adaptive Cards_ (plural) is the official name of the format. _Adative Card_ (singular) refers to a JSON object in that format or a rendering of such a card.
 - **See**: [Adaptive Cards](https://docs.microsoft.com/adaptive-cards) docs.
+- **See also**: [card](#card).
 
 ## adaptive dialog
 
-TBD
+- **Status**: Informal, part of the Bot Framework SDK.
+- **Definition**:
+  - "A type of container dialog that allows for flexible conversation flow. It includes built-in support for language recognition, language generation, and memory scoping features. To run an adaptive dialog (or another dialog that contains an adaptive dialog), you must start the dialog from a dialog manager."
+  - "Adaptive dialogs offer a new event-based addition to the dialogs library that enables you to easily layer in sophisticated conversation management techniques like handling interruptions, dispatching, and more."
+- **See**: List of [dialog types](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-dialog#dialog-types) in the SDK docs.
+- **See also**: [dialog](#dialog), [dialogs library](#dialogs-library).
 
 ## Adaptive Tools
 
@@ -238,7 +248,7 @@ See [Microsoft Bot Framework Connector](#microsoft-bot-framework-connector).
 - **Status**: Informal, part of the Bot Framework protocol and SDK.
 - **Definition**: An interactive card for use within chat and other applications.
 - **See**: The [Cards schema](https://github.com/microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-cards.md).
-- **See also**: [attachment](#attachment).
+- **See also**: [Adaptive Card](#adaptive-card), [attachment](#attachment).
 
 ## card action
 
@@ -262,6 +272,16 @@ See [Microsoft Bot Framework Connector](#microsoft-bot-framework-connector).
 
 See [bot](#bot).
 
+<a id="ci"></a>
+<a id="cd"></a>
+
+## CI/CD
+
+- **Status**: Approved. See [CI/CD](https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=47522) in the Cloud style guide.
+- **Definition**: Continuous integration and continuous delivery.
+- **Notes**: Spell out on first mention.
+- **Example**: From [Build a CI/CD pipeline for chatbots with ARM templates](https://docs.microsoft.com/azure/architecture/example-scenario/apps/devops-cicd-chatbot), "This article presents a DevOps approach to setting up a continuous integration and continuous deployment (CI/CD) pipeline that deploys a chatbot app and its infrastructure as code."
+
 ## CLI
 
 - **Status**: Approved.
@@ -274,11 +294,28 @@ See [bot](#bot).
 
 See [Microsoft Bot Framework](#microsoft-bot-framework).
 
+## continuous development
+
+## continuous integration
+
+See [CI/CD](#cicd).
+
 <a id="d"></a>
 
 ## dialog
 
-TBD
+- **Status**: Informal, part of the Bot Framework SDK.
+- **Definition**: "Dialogs are a central concept in the SDK, providing ways to manage a long-running conversation with the user. A dialog performs a task that can represent part of or a complete conversational thread. It can span just one turn or many, and can span a short or long period of time."
+- **Notes**: There are many types of dialogs. If you need to call out a specific type of dialog, use the same conventions as the **Dialogs library** article.
+- **See**: [Dialogs library](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-dialog) in the SDK docs.
+- **See also**: [dialogs library](#dialogs-library).
+
+## dialogs library
+
+- **Status**: Informal, part of the Bot Framework SDK.
+- **Definition**: The code libraries that support dialogs. For example, these NuGet packages for the Bot Framework SDK for .NET: `Microsoft.Bot.Builder.Dialogs`, `Microsoft.Bot.Builder.Dialogs.Declarative`, `Microsoft.Bot.Builder.Dialogs.Adaptive`, and `Microsoft.Bot.Builder.Dialogs.Adaptive.Teams`.
+- **See**: [Dialogs library](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-dialog) in the SDK docs.
+- **See also**: [adaptive dialog](#adaptive-dialog), [dialog](#dialog).
 
 <a id="direct-line"></a>
 
