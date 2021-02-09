@@ -276,7 +276,7 @@
         href: bot-service-manage-channels.md
       - name: Implement channel-specific functionality
         href: v4sdk/bot-builder-channeldata.md
-      - name: Cortana
+      - name: Cortana (retired)
         href: bot-service-channel-connect-cortana.md
       - name: Direct Line
         items:
@@ -321,6 +321,8 @@
         href: bot-service-channel-connect-slack.md
       - name: Telegram
         href: bot-service-channel-connect-telegram.md
+      - name: Telephony
+        href: bot-service-channel-connect-telephony.md
       - name: Twilio
         href: bot-service-channel-connect-twilio.md
       - name: WeChat

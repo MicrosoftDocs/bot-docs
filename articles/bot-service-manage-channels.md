@@ -39,11 +39,11 @@ After you've configured the channel, users on that channel can start using your 
 
 ## Connect a bot to a channel
 
-The connection steps are different for each channel. See the related article in the table below more information. 
+The connection steps are different for each channel. See the related article in the table below more information.
 
 > [!div class="mx-tdBreakAll"]
 > |Channel|Description|
-> |-------------|----------|
+> |:-|:-|
 > |[Alexa](bot-service-channel-connect-alexa.md) <img width="150px"/>|Communicate with users through Alexa devices that support Custom Skills.|
 > |[Direct Line](bot-service-channel-directline.md)| Integrate a bot into a mobile app, web page, or other applications.|
 > |[Office 365 email](bot-service-channel-connect-email.md)|Enable a bot to communicate with users via Office 365 email.|
@@ -55,14 +55,15 @@ The connection steps are different for each channel. See the related article in 
 > |[Skype for Business](bot-service-channel-connect-skypeforbusiness.md)|Configure a bot to communicate with users through Skype for Busines.|
 > |[Slack](bot-service-channel-connect-slack.md)|Configure a bot to communicate with users through Slack.|
 > |[Telegram](bot-service-channel-connect-telegram.md)|Configure a bot to communicate with users through Telegram.|
+> |[Telephony](bot-service-channel-connect-telephony.md)|Configure a bot to communicate with users through the Bot Framework Telephony channel.|
 > |[Twilio](bot-service-channel-connect-twilio.md)|Configure a bot to communicate with users through the Twilio cloud communication platform.|
 > |[WeChat](bot-service-channel-connect-wechat.md)|Configure a bot to communicate with users using the WeChat platform.|
 > |[Web Chat](bot-service-channel-connect-webchat.md)| Automatically configured for you when you create a bot with the Bot Framework Service.|
 > |[Webex](bot-service-adapter-connect-webex.md)|Configure a bot to communicate with users using the Webex.|
 > |[Additional channels](bot-service-channel-additional-channels.md)|Additional channels available as an adapter through [provided platforms](https://botkit.ai/docs/v4/platforms/) via Botkit and [community repositories](https://botkit.ai/docs/v4/platforms/).|
 
-
 ## Publish a bot
+
 The publishing process is different for each channel.
 
 [!INCLUDE [publishing](./includes/snippet-publish-to-channel.md)]
