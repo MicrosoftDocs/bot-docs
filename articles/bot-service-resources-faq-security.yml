@@ -46,8 +46,6 @@ sections:
           - `login.botframework.com` (Bot authentication)
           - `login.microsoftonline.com` (Bot authentication)
           - `westus.api.cognitive.microsoft.com` (for Luis.ai NLP integration)
-          - `cortanabfchanneleastus.azurewebsites.net` (Cortana channel)
-          - `cortanabfchannelwestus.azurewebsites.net` (Cortana Channel)
           - `*.botframework.com` (channels)
           - `state.botframework.com` (backward compatibility)
           - `login.windows.net` (Windows login)
