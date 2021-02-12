@@ -8,7 +8,7 @@ metadata:
   ms.topic: article # Required
   author: mmiele #Required; your GitHub user alias, with correct capitalization.
   ms.author: botcc #Required; microsoft alias of author; optional team alias.
-  ms.date: 01/07/2020 #Required; mm/dd/yyyy format.
+  ms.date: 01/25/2020 #Required; mm/dd/yyyy format.
 
 title: Bot Framework Security and Privacy Frequently Asked Questions # < 60 chars
 summary: |
@@ -46,8 +46,6 @@ sections:
           - `login.botframework.com` (Bot authentication)
           - `login.microsoftonline.com` (Bot authentication)
           - `westus.api.cognitive.microsoft.com` (for Luis.ai NLP integration)
-          - `cortanabfchanneleastus.azurewebsites.net` (Cortana channel)
-          - `cortanabfchannelwestus.azurewebsites.net` (Cortana Channel)
           - `*.botframework.com` (channels)
           - `state.botframework.com` (backward compatibility)
           - `login.windows.net` (Windows login)
@@ -120,3 +118,37 @@ sections:
           also know as trusted domains, that can host the bot's Web Chat client.
           With enhanced authentication options, you can statically specify the list of trusted origins in the Direct Line configuration page.
           For more information, see [Direct Line enhanced authentication](v4sdk/bot-builder-security-enhanced.md).
+
+      - question: How does the Bot Framework handle identity and access management?
+        answer: |
+          The identity and access management (IAM), is a framework (policies and technologies) to allow proper people to have
+          appropriate access to technology resources. For more information, see [Identity management](https://en.wikipedia.org/wiki/Identity_management).
+
+          The Bot Framework provides the following identification mechanisms:
+
+          - **Bot authentication**. Determines if a request came from a legitimate source.
+            It is controlled by the **bot connector service** and enables secure communication between a bot and a channel.
+            For more information, see [Bot authentication](v4sdk/bot-builder-concept-authentication-types.md#bot-authentication).
+
+          - **User authentication**. It enables the bot to access secured online resources on behalf of the user.
+            The industry standard OAuth is used to authenticate the user and authorize the bot to access the resources.
+            For more information, see [User authentication](v4sdk/bot-builder-concept-authentication-types.md#user-authentication).
+
+          In summary, the Bot Framework handles the service-to-service authentication (bot authentication), essentially validating that a request
+          did indeed come from a proper channel. The bot is responsible for handling lower levels of authentication.
+          You can apply a filter so your bot only accepts requests from a particular tenant ID, or you can require your users to authenticate
+          with some OAuth service (user authentication).
+
+      - question: How do I restrict the use of my bot to users belonging to my tenant only?
+        answer: |
+          You have two different options for restricting incoming messages that your bot processes.
+
+          - If you are dealing with secure data, it is definitely recommended to use OAuth to authenticate the users.
+          - Using middleware is another good option. For example, in the case of the **Teams channel**, add the `TeamsTenantFilteringMiddleware` class to your bot,
+            and wire it up in your startup method.
+            See these examples:  [C# version](https://github.com/microsoft/botbuilder-dotnet/tree/main/tests/Teams/Roster),
+            [JavaScript version](https://github.com/microsoft/botbuilder-js/tree/3481a14c39d49719be0b6917fdc85afb5381602e/libraries/teams-scenarios/integrationBot).
+
+            > [!WARNING]
+            > You cannot prevent Teams from sending you messages from various tenants, nor you can prevent someone from installing your bot if they have your app manifest.
+            > All you can do is to prevent your bot from processing the undesired messages.

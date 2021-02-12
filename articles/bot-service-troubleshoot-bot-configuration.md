@@ -66,7 +66,6 @@ It's possible that channel configuration parameters, such as the bot's username 
 
 The links below provide instructions for configuring channels supported by the Bot Framework:
 - [Alexa](bot-service-channel-connect-alexa.md)
-- [Cortana](bot-service-channel-connect-cortana.md)
 - [Direct Line](bot-service-channel-connect-directline.md)
 - [Email](bot-service-channel-connect-email.md)
 - [Facebook](bot-service-channel-connect-facebook.md)
@@ -87,7 +86,6 @@ Below are some additional links that can help with individual channels:
 
 - [Add bots to Microsoft Teams apps](https://docs.microsoft.com/microsoftteams/platform/concepts/bots/bots-overview)
 - [Facebook: Introduction to the Messenger Platform](https://developers.facebook.com/docs/messenger-platform/introduction)
-- [Principles of Cortana Skills design](https://docs.microsoft.com/cortana/skills/design-principles)
 - [Skype for Developers](https://dev.skype.com/bots)
 - [Slack: Enabling interactions with bots](https://api.slack.com/bot-users)
 

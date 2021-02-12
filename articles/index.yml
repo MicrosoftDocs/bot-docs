@@ -88,7 +88,7 @@ tools:
     # Card
     - title: Java (preview)
       imageSrc: ./media/logos/logo-java.svg
-      url: https://github.com/microsoft/botbuilder-java#readme
+      url: https://docs.microsoft.com/java/api/?view=botbuilder-java-preview
 
 additionalContent:
   # Supports up to 3 sections

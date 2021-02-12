@@ -126,6 +126,12 @@
       "branch_mapping": {}
     },
     {
+      "path_to_root": "botbuilder-java",
+      "url": "https://github.com/microsoft/botbuilder-java",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
       "path_to_root": "botframework-sdk",
       "url": "https://github.com/microsoft/botframework-sdk",
       "branch": "main",

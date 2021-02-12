@@ -59,12 +59,12 @@ The bot is accessed through a Facebook Page.
 
 1. In the page bottom right, select **Save Changes**.
 
-### Enable messenger
+### Enable Messenger
 
 1. In the left pane, select **Dashboard**.
 1. In the right pane, scroll down to the **Messenger** box and select **Set Up**. The Messenger entry is displayed under the **PRODUCTS** section in the left pane.
 
-    ![Enable messenger](media/channels/fb-messenger-bot-enable-messenger.png)
+    ![Enable Messenger](media/channels/fb-messenger-bot-enable-messenger.png)
 
 ### Add pages and generate tokens
 
@@ -188,13 +188,11 @@ Please refer to the **Connect a bot to Facebook Messenger** section for details.
 
 ### Setting the API version
 
-If you receive a notification from Facebook about deprecation of a certain version of the Graph API, go to [Facebook developers page](https://developers.facebook.com). Navigate to your bot's **App Settings** and go to **Settings** > **Advanced** > **Upgrade API version**, then switch **Upgrade All Calls** to 3.0.
-
-![API version upgrade](media/channels/fb-version-upgrade.png)
+If you receive a notification from Facebook about deprecation of a certain version of the Graph API, go to [Facebook developers page](https://developers.facebook.com). Navigate to your bot's **App Settings** and go to **Settings** > **Advanced** > **Upgrade API version**, then switch **Upgrade All Calls** to version 4.0.
 
 ## Connect a bot to Facebook using the Facebook adapter
 
-Use the Bot Framework Facebook adapter to connect your bot with Facebook Workplace. To connect to Facebook messenger, you can use the Facebook channel or the Facebook adapter.
+Use the Bot Framework Facebook adapter to connect your bot with Facebook Workplace. To connect to Facebook Messenger, you can use the Facebook channel or the Facebook adapter.
 Facebook adapters are available for [JavaScript/Node.js][JS Workplace Adapter] and [C#/.NET][CS Workplace Adapter] bots.
 
 In this article you will learn how to connect a bot to Facebook using the adapter.  This article will walk you through modifying the Echo bot sample to connect it to Facebook.
@@ -222,7 +220,7 @@ The instructions below cover the C# implementation of the Facebook adapter. For 
 
 1. You now need to associate your new app with a Facebook page&mdash;to create a page if you do not have an existing page you want to use, select **Create New Page** in the **Access Tokens** section. Select **Add or Remove Pages**, choose the page you want to associated with your app, and select **Next**. Leave the **Manage and access Page conversations on Messenger** setting enabled and select **Done**.
 
-![Set up messenger](media/bot-service-channel-connect-facebook/app-page-permissions.png)
+![Set up Messenger](media/bot-service-channel-connect-facebook/app-page-permissions.png)
 
 1. Once you have associated your page, select **Generate Token** to generate a page access token. Make a note of this token as you will need it in a later step when configuring your bot application.
 

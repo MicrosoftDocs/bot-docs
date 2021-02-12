@@ -1,13 +1,12 @@
 ---
 title: How bots for Microsoft Teams work
 description: A continuation of the article on How bots work specific to Microsoft Teams bots
-author: WashingtonKayaker
+author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
 ms.topic: overview
 ms.service: bot-service
-ms.date: 12/09/2020
-monikerRange: 'azure-bot-service-4.0'
+ms.date: 01/25/2021
 ---
 
 # How Microsoft Teams bots work
@@ -36,7 +35,7 @@ As with any bot created using the Microsoft Bot Framework, if the bot receives a
 
 In the Teams activity handler class there are two primary Teams activity handlers, `dispatchConversationUpdateActivity` that routes all conversation update Activities, and `onInvokeActivity` that routes all Teams invoke  activities.
 
-For each of these Teams-specific activity handlers, define your bot logic, then **be sure to call `next()` at the end**. By calling `next()` you ensure that the next handler is run.
+When overriding these Teams-specific activity handlers, define your bot logic, then **be sure to call `next()` at the end**. By calling `next()` you ensure that the next handler is run.
 
 ### [Python](#tab/python)
 
@@ -52,13 +51,13 @@ All of the activity handlers described in the [activity handling](bot-activity-h
 
 To implement your logic for these Teams-specific activity handlers, you will override these methods in your bot as shown in the [Teams-bot logic](#teams-bot-logic) section below.
 
-### Teams-bot logic
+## Teams-bot logic
 
 The bot logic processes incoming activities from one or more of your bots channels and generates outgoing activities in response.  This is still true of bot derived from the Teams activity handler class, which first checks for Teams activities, then passes all other activities to the Bot Framework's activity handler.
 
-#### [C#](#tab/csharp)
+### [C#](#tab/csharp)
 
-#### Teams conversation update activities
+### Teams conversation update activities
 
 Below is a list of all of the Teams activity handlers called from the `OnConversationUpdateActivityAsync` _Teams_ activity handler. The [Conversation update events](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events) article describes how to use each of these events in a bot.
 
@@ -71,19 +70,7 @@ Below is a list of all of the Teams activity handlers called from the `OnConvers
 | MembersAdded | `OnTeamsMembersAddedAsync` | Calls the `OnMembersAddedAsync` method in `ActivityHandler`. Override this to handle members joining a team. For more information see [Team member added](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-members-added).|
 | MembersRemoved | `OnTeamsMembersRemovedAsync` | Calls the `OnMembersRemovedAsync` method in `ActivityHandler`. Override this to handle members leaving a team. For more information see [Team member removed](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-member-removed).|
 
-
-<!--
-| Event | Handler | Description |
-| :-- | :-- | :-- |
-| channelCreated | `OnTeamsChannelCreatedAsync` | Override this to handle a Teams channel being created. |
-| channelDeleted | `OnTeamsChannelDeletedAsync` | Override this to handle a Teams channel being deleted. |
-| channelRenamed | `OnTeamsChannelRenamedAsync` | Override this to handle a Teams channel being renamed. |
-| teamRenamed | `OnTeamsTeamRenamedAsync` | `return Task.CompletedTask;` Override this to handle a Teams Team being Renamed. |
-| MembersAdded | `OnTeamsMembersAddedAsync` | Calls the `OnMembersAddedAsync` method in `ActivityHandler`. Override this to handle members joining a team. |
-| MembersRemoved | `OnTeamsMembersRemovedAsync` | Calls the `OnMembersRemovedAsync` method in `ActivityHandler`. Override this to handle members leaving a team. |
--->
-
-#### Teams invoke  activities
+### Teams invoke activities
 
 Here is a list of all of the Teams activity handlers called from the `OnInvokeActivityAsync` _Teams_ activity handler:
 
@@ -100,11 +87,11 @@ Here is a list of all of the Teams activity handlers called from the `OnInvokeAc
 
 The invoke activities listed above are for conversational bots in Teams. The Bot Framework SDK also supports invokes specific to messaging extensions. For more information see [What are messaging extensions](/microsoftteams/platform/messaging-extensions/what-are-messaging-extensions)
 
-#### [JavaScript](#tab/javascript)
+### [JavaScript](#tab/javascript)
 
-#### Teams conversation update activities
+### Teams conversation update activities
 
-Developers may handle Conversation Update activities sent from Microsoft Teams via two methods:
+Developers may handle conversation update activities sent from Microsoft Teams via two methods:
 
 1. To pass in a callback, use methods that begin with `on` _and_ end with `Event` (for example, the `onTeamsMembersAddedEvent` method).
 1. When creating a derived class, override methods that begin with `on` and _don't_ end with `Event` (for example, the `onTeamsMembersAdded` method).
@@ -124,17 +111,6 @@ Below is a list of all of the Teams activity handlers called from the `dispatchC
 | MembersAdded | `OnTeamsMembersAddedEvent` | Calls the `OnMembersAddedEvent` method in `ActivityHandler`. Pass in a callback to this method to handle members joining a team. For more information see [Team member added](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#Team-Member-Added). |
 | MembersRemoved | `OnTeamsMembersRemovedEvent` | Calls the `OnMembersRemovedEvent` method in `ActivityHandler`. Pass in a callback to this method to handle members leaving a team. For more information see [Team member removed](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#Team-Member-Removed). |
 
-<!--
-| Event | Handler | Description |
-| :-- | :-- | :-- |
-| channelCreated | `OnTeamsChannelCreatedEvent` | Override this to handle a Teams channel being created. |
-| channelDeleted | `OnTeamsChannelDeletedEvent` | Override this to handle a Teams channel being deleted. |
-| channelRenamed | `OnTeamsChannelRenamedEvent` | Override this to handle a Teams channel being renamed. |
-| teamRenamed | `OnTeamsTeamRenamedEvent` | `return Task.CompletedTask;` Override this to handle a Teams Team being Renamed. |
-| MembersAdded | `OnTeamsMembersAddedEvent` | Calls the `OnMembersAddedEvent` method in `ActivityHandler`. Override this to handle members joining a team. |
-| MembersRemoved | `OnTeamsMembersRemovedEvent` | Calls the `OnMembersRemovedEvent` method in `ActivityHandler`. Override this to handle members leaving a team. |
--->
-
 **Methods to override in a derived class**
 
 Below is a list of all of the Teams activity handlers that can be overridden to handle Teams Conversation Update activities.
@@ -142,13 +118,13 @@ Below is a list of all of the Teams activity handlers that can be overridden to 
 | Method | Handler | Description |
 | :-- | :-- | :-- |
 | channelCreated | `OnTeamsChannelCreated` | Override this to handle a Teams channel being created.|
-| channelDeleted | `OnTeamsChannelDeletedEvent` | Override this to handle a Teams channel being deleted.|
-| channelRenamed | `OnTeamsChannelRenamedEvent` | Override this to handle a Teams channel being renamed.|
-| teamRenamed | `OnTeamsTeamRenamedEvent` | `return Task.CompletedTask;` Override this to handle a Teams Team being Renamed.|
-| MembersAdded | `OnTeamsMembersAddedEvent` | Calls the `OnMembersAddedEvent` method in `ActivityHandler`. Override this to handle members joining a team.|
-| MembersRemoved | `OnTeamsMembersRemovedEvent` | Calls the `OnMembersRemovedEvent` method in `ActivityHandler`. Override this to handle members leaving a team.|
+| channelDeleted | `OnTeamsChannelDeleted` | Override this to handle a Teams channel being deleted.|
+| channelRenamed | `OnTeamsChannelRenamed` | Override this to handle a Teams channel being renamed.|
+| teamRenamed | `OnTeamsTeamRenamed` | `return Task.CompletedTask;` Override this to handle a Teams team being renamed.|
+| MembersAdded | `OnTeamsMembersAdded` | Calls the `OnMembersAddedEvent` method in `ActivityHandler`. Override this to handle members joining a team.|
+| MembersRemoved | `OnTeamsMembersRemoved` | Calls the `OnMembersRemovedEvent` method in `ActivityHandler`. Override this to handle members leaving a team.|
 
-#### Teams invoke  activities
+### Teams invoke  activities
 
 Here is a list of all of the Teams activity handlers called from the `onInvokeActivity` _Teams_ activity handler:
 
@@ -165,9 +141,9 @@ Here is a list of all of the Teams activity handlers called from the `onInvokeAc
 
 The invoke activities listed above are for conversational bots in Teams. The Bot Framework SDK also supports invokes specific to messaging extensions. For more information see [What are messaging extensions](/microsoftteams/platform/messaging-extensions/what-are-messaging-extensions)
 
-#### [Python](#tab/python)
+### [Python](#tab/python)
 
-#### Teams conversation update activities
+### Teams conversation update activities
 
 Below is a list of all of the Teams activity handlers called from the `on_conversation_update_activity` _Teams_ activity handler. The [Conversation update events](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events) article describes how to use each of these events in a bot.
 
@@ -180,7 +156,7 @@ Below is a list of all of the Teams activity handlers called from the `on_conver
 | MembersAdded | `on_teams_members_added` | Calls the `OnMembersAddedAsync` method in `ActivityHandler`. Override this to handle members joining a team. For more information see [Team member added](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#Team-Member-Added).|
 | MembersRemoved | `on_teams_members_removed` | Calls the `OnMembersRemovedAsync` method in `ActivityHandler`. Override this to handle members leaving a team. For more information see [Team member removed](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#Team-Member-Removed).|
 
-#### Teams invoke  activities
+### Teams invoke activities
 
 Here is a list of all of the Teams activity handlers called from the `on_invoke_activity` _Teams_ activity handler:
 

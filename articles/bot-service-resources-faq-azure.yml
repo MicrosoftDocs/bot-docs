@@ -41,7 +41,9 @@ sections:
           1. Enter a display name for the application registration in the *Name* field and select the supported account types. The name does not have to match the bot ID.
 
              > [!IMPORTANT]
-             > In the *Supported account types*, select the *Accounts in any organizational directory and personal Microsoft accounts (e.g. Xbox, Outlook.com)* radio button. If any of the other options are selected, **the bot will be unusable**.
+             > In the section **Supports account types**, choose the multi-tenant type **Accounts in any organizational directory (Any Azure AD - Multitenant)**, when creating the app.
+             > Failing to do so, will result in a non-functional bot.
+             > For more information, see [Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#register-a-new-application-using-the-azure-portal).
 
              ![registration details](media/app-registration/registration-details.png)
 
