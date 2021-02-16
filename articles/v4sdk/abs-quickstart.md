@@ -7,7 +7,7 @@ ms.author: v-mimiel
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 09/30/2020
+ms.date: 02/10/2021
 ---
 
 # Create a bot with Azure Bot Service
@@ -20,9 +20,9 @@ This article shows how to create a bot using the Bot Framework SDK v4 and choosi
 You have two approaches to create a bot with Azure:
 
 1. **Web App**. Create a bot and register it with Azure using a Web application as shown in this article. You use this approach if you develop and host a bot in Azure.
-1. **Bot channels registration**. Create and develop your bot locally and host it on a platform different from Azure. When you register your bot, you provide the web address where your bot is hosted. You can still host it in Azure. Follow the steps described in the [Bot channels registration](~/bot-service-quickstart-registration.md) article.
+1. **Bot channels registration**. Create and develop your bot locally and host it on a platform different from Azure. When you register your bot, you provide the web address where your bot is hosted. You can still host it in Azure. Follow the steps described in the [Bot channels registration](../bot-service-quickstart-registration.md) article.
 
-[!INCLUDE [Azure vs local development](~/includes/snippet-quickstart-paths.md)]
+[!INCLUDE [Azure vs local development](../includes/snippet-quickstart-paths.md)]
 
 ## Prerequisites
 
@@ -54,7 +54,7 @@ You have two approaches to create a bot with Azure:
     | **App name** | A unique name | The unique URL name of the bot. For example, if you name your bot *myawesomebot*, then your bot's URL will be `http://myawesomebot.azurewebsites.net`. The name must use alphanumeric and underscore characters only. There is a 35 character limit to this field. The App name cannot be changed once the bot is created. |
     | **Bot template** | Echo bot | Choose **SDK v4**. Select either C# or Node.js for this quickstart, then click **Select**.
     | **App service plan/Location** | Your app service plan  | Select an [app service plan](https://azure.microsoft.com/pricing/details/app-service/plans/) location. Your location choice can be any location listed, though it's often best to choose the same location as the bot service. |
-    | **LUIS Accounts** _Only available for Basic Bot template_ | LUIS Azure Resource Name | After [migrating LUIS Resources over to an Azure Resource](https://docs.microsoft.com/azure/cognitive-services/luis/luis-migration-authoring), input the Azure Resource name to associate this LUIS Application with that Azure Resource.
+    | **LUIS Accounts** _Only available for Basic Bot template_ | LUIS Azure Resource Name | After [migrating LUIS Resources over to an Azure Resource](/azure/cognitive-services/luis/luis-migration-authoring), input the Azure Resource name to associate this LUIS Application with that Azure Resource.
     | **Application Insights** | On | Decide if you want to turn [Application Insights](/bot-framework/bot-service-manage-analytics) **On** or **Off**. If you select **On**, you must also specify a regional location. Your location choice can be any location listed, though it's often best to choose the same location as the bot service. |
     | **Microsoft App ID and password** | Auto create App ID and password | Use this option if you need to manually enter a Microsoft App ID and password. Otherwise, a new Microsoft App ID and password will be created for you in the bot creation process. When creating an app registration manually for the Bot Service, please ensure that the supported account types is set to **Accounts in any organizational directory** or **Accounts in any organizational directory and personal Microsoft accounts (e.g. Outlook.com, Xbox, etc.)** |
 
@@ -79,17 +79,19 @@ A manual registration is necessary for situations like:
 - You are unable to make the registrations in your organization and need another party to create the App ID for the bot you're building.
 - You need to manually create your own app ID (and password).
 
-See [FAQ - App Registration](~/bot-service-resources-faq-azure.md#how-do-i-create-my-own-app-registration).
+See [FAQ - App Registration](../bot-service-resources-faq-azure.yml#how-do-i-create-my-own-app-registration).
 
 ## Download code
 
 You can download the code to work on it locally.
 
-1. In the **Bot Management** section, click **Build**.
-1. Click on **Download Bot source code** link in the right-pane.
+1. Go to the **Overview** blade.
+1. Select **Download bot source code** in the top toolbar or at the bottom of the pane.
 1. Follow the prompts to download the code, and then unzip the folder.
 
     [!INCLUDE [download keys snippet](../includes/snippet-abs-key-download.md)]
+
+:::image type="content" source="../media/azure-bot-quickstarts/web-app-bot-download.png" alt-text="Links on the Overview pane to download the bot source code.":::
 
 ## Next steps
 
