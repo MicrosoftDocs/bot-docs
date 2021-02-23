@@ -201,7 +201,7 @@ When parsing the token, you must configure the parsing library or write your own
 4. The token contains an "audience" claim with a value equal to the bot's Microsoft App ID.
 5. The token is within its validity period. Industry-standard clock-skew is 5 minutes.
 6. The token has a valid cryptographic signature, with a key listed in the OpenID keys document that was retrieved in [Step 3](#connector-to-bot-step-3), using the signing algorithm that is specified in the `id_token_signing_alg_values_supported` property of the Open ID Metadata document that was retrieved in [Step 2](#openid-metadata-document).
-7. The token contains a "serviceUrl" claim with value that matches the `servieUrl` property at the root of the [Activity][] object of the incoming request. 
+7. The token contains a "serviceUrl" claim with value that matches the `serviceUrl` property at the root of the [Activity][] object of the incoming request.
 
 If endorsement for a channel ID is required:
 
