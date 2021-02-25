@@ -16,6 +16,8 @@
     href: python/bot-builder-python-quickstart.md
   - name: Create a bot using Azure Bot Service
     href: v4sdk/abs-quickstart.md
+  - name: Create a bot using Azure PowerShell
+    href: powershell/bot-builder-powershell-quickstart.md
 - name: Tutorials
   items:
   - name: 1. Create a basic bot
