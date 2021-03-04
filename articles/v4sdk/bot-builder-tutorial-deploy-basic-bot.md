@@ -3,7 +3,7 @@ title: Tutorial to deploy a basic bot - Bot Service
 description: Learn how to deploy bots to Azure. See the steps to prepare for deployment, deploy, and test bots.
 keywords: echo bot, deploy, azure, tutorial
 author: mmiele
-ms.author: v-mimiel
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service

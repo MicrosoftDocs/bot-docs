@@ -2,7 +2,7 @@
 title: Bot Framework channels security - Bot Service
 description: Learn about potential security risks when users connect to a bot using the allowed channels
 author: mmiele
-ms.author: v-mimiel
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service

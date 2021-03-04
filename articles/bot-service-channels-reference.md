@@ -255,7 +255,7 @@ For more information about the numbers shown in the above table, refer to channe
 
 For more information on _Suggested Actions_, refer to the [Use button for input](./v4sdk/bot-builder-howto-add-suggested-actions.md) article.
 
-For more information on _Card Actions_, refer to the [Send a hero card](./v4sdk/bot-builder-howto-add-media-attachments.md?view=azure-bot-service-4.0#send-a-hero-card) section of the _Add media to messages_ article.
+For more information on _Card Actions_, refer to the [Send a hero card](./v4sdk/bot-builder-howto-add-media-attachments.md#send-a-hero-card) section of the _Add media to messages_ article.
 
 ## Card Support by Channel
 

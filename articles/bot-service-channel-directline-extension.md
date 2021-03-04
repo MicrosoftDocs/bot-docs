@@ -7,7 +7,7 @@ author: mmiele
 manager: kamrani
 ms.service: bot-service
 ms.topic: conceptual
-ms.author: v-mimiel
+ms.author: kamrani
 ms.date: 05/19/2020
 ---
 

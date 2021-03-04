@@ -4,7 +4,7 @@ titleSuffix: Bot Service
 description: Learn about the Bot Framework Direct Line three channels. Select the channel to use to integrate bots into mobile apps, webpages, and other applications.
 services: bot-service
 author: mmiele
-ms.author: v-mimiel
+ms.author: kamrani
 manager: kamrani
 ms.service: bot-service
 ms.topic: conceptual

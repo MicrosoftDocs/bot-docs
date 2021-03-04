@@ -3,7 +3,7 @@ title: Bot Framework SDK Migration overview - Bot Service
 description: See how to migrate bots from version 3 to 4 of the Bot Framework SDK. Learn about changes in version 4 in state management, dialogs, and other areas.
 keywords: bot migration
 author:  mmiele
-ms.author: v-mimiel
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
