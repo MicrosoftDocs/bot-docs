@@ -15,40 +15,35 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-You can enable your bot to present buttons that the user can tap to provide input. Buttons enhance user experience by enabling the user to answer a question or make a selection with a simple tap of a button, rather than having to type a response with a keyboard. Unlike buttons that appear within rich cards (which remain visible and accessible to the user even after being tapped), buttons that appear within the suggested actions pane will disappear after the user makes a selection. This prevents the user from tapping stale buttons within a conversation and simplifies bot development (since you will not need to account for that scenario).
+Buttons enhance the conversational experience by letting the user answer a question or select the desired button, rather than having to type a response with a keyboard. Unlike buttons that appear within rich cards (which remain visible and accessible to the user even after being selected), buttons that appear within the suggested actions pane will disappear after the user makes a selection. This prevents the user from selecting stale buttons within a conversation and simplifies bot development since you won't need to account for that scenario.
 
 ## Suggest action using button
 
-*Suggested actions* enable your bot to present buttons. You can create a list of suggested actions (also known as "quick replies") that will be shown to the user for a single turn of the conversation:
+*Suggested actions* enable your bot to present buttons. You can create a list of suggested actions (also known as _quick replies_) that will be shown to the user for a single turn of the conversation.
 
 # [C#](#tab/csharp)
 
-The source code shown here is based on the [suggested actions sample](https://aka.ms/SuggestedActionsCSharp).
+The source code shown here is based on the [Suggested actions](https://aka.ms/SuggestedActionsCSharp) sample.
 
 [!code-csharp[suggested actions](~/../botbuilder-samples/samples/csharp_dotnetcore/08.suggested-actions/Bots/SuggestedActionsBot.cs?range=80-98)]
 
 # [JavaScript](#tab/javascript)
 
-The source code shown here is based on the [suggested actions sample](https://aka.ms/SuggestActionsJS).
+The source code shown here is based on the [Suggested actions](https://aka.ms/SuggestActionsJS) sample.
 
 [!code-javascript[suggested actions](~/../botbuilder-samples/samples/javascript_nodejs/08.suggested-actions/bots/suggestedActionsBot.js?range=58-89)]
 
-
 # [Python](#tab/python)
 
-The source code shown here is based on the [suggested actions sample](https://aka.ms/SuggestActionsPython).
+The source code shown here is based on the [Suggested actions](https://aka.ms/SuggestActionsPython) sample.
 
 [!code-python[suggested actions](~/../botbuilder-samples/samples/python/08.suggested-actions/bots/suggested_actions_bot.py?range=63-81)]
-
 
 ---
 
 ## Additional resources
 
-You can access the complete source code shown here:
-- [C# sample](https://aka.ms/SuggestedActionsCSharp)
-- [JavaScript sample](https://aka.ms/SuggestActionsJS)
-- [Python sample](https://aka.ms/SuggestActionsPython)
+You can access the complete source code for the **Suggested actions** sample in [C#](https://aka.ms/SuggestedActionsCSharp), [JavaScript](https://aka.ms/SuggestActionsJS) and [Python](https://aka.ms/SuggestActionsPython).
 
 ## Next steps
 
