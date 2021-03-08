@@ -1,11 +1,12 @@
 ---
 title: Add authentication to a bot via Azure Bot Service
-description: Describes how to use the Azure Bot Service authentication features to add SSO to your bot.
+description: Describes how to use the Azure Bot Service authentication features in your bot.
+author: mmiele
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 11/24/2020
+ms.date: 02/11/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -280,6 +281,16 @@ You will need your bot's app ID and password to complete this process.
       Depending on the characters in your bot secret, you may need to XML escape the password. For example, any ampersands (&) will need to be encoded as `&amp;`.
 
     [!code-json[appsettings](~/../botbuilder-samples/samples/csharp_dotnetcore/18.bot-authentication/appsettings.json)]
+
+1. Update **startup.cs**:
+
+    To use OAuth in _non-public Azure clouds_, like government cloud, you must add the following code in the `startup.cs` file:
+
+    ```csharp
+    string uri = "https://api.botframework.azure.us";
+    MicrosoftAppCredentials.TrustServiceUrl(uri);
+    OAuthClientConfig.OAuthEndpoint = uri;
+    ```
 
 # [JavaScript](#tab/javascript)
 
