@@ -81,9 +81,3 @@ The Azure Bot Service assigns a unique application ID to the application. You ca
 ## Additional Information
 
 You can use [az bot update](/cli/azure/bot#az-bot-update) to update bot settings from the command line.
-
-## Next steps
-
-Now that you have learned how to configure settings for your bot service, learn about how to configure speech priming.
-> [!div class="nextstepaction"]
-> [Speech priming](bot-service-manage-speech-priming.md)

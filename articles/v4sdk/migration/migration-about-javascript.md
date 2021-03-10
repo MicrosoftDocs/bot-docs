@@ -172,7 +172,7 @@ Please, refer to the following resources for more details and background informa
 | [Managing state](../bot-builder-concept-state.md) | Abstractions to make state management easier |
 | [Dialogs library](../bot-builder-concept-dialog.md) | Central concepts to manage a conversation |
 | [Send and receive text messages](../bot-builder-howto-send-messages.md) | Primary way a bot communicate with users |
-| [Send Media](../bot-builder-howto-add-media-attachments.md) | Media attachments, such as images, video, audio, and files |  |
+| [Send Media](../bot-builder-howto-add-media-attachments.md) | Media attachments, such as images, video, audio, and files |
 | [Sequential conversation flow](../bot-builder-dialog-manage-conversation-flow.md) | Questioning as the main way a bot interacts with users |
 | [Save user and conversation data](../bot-builder-howto-v4-state.md) | Tracking a conversation while stateless |
 | [Complex Flow](../bot-builder-dialog-manage-complex-conversation-flow.md) | Manage complex conversation flows |

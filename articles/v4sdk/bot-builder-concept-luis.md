@@ -95,7 +95,7 @@ The Dispatch tool helps you integrate multiple LUIS apps and QnA Maker services 
 
 ## Use LUIS to improve speech recognition
 
-For a bot that users will speak to, integrating it with LUIS can help your bot identify words that might be misunderstood when converting speech to text.  For example, in a chess scenario, a user might say: "Move knight to A 7". Without context for the user's intent, the utterance might be recognized as: "Move night 287". By creating entities that represent chess pieces and coordinates and labeling them in utterances, you provide context for speech recognition to identify them. You can [enable speech recognition priming](../bot-service-manage-speech-priming.md) with Bot Framework channels that are integrated with Bing Speech, such as Web Chat, the Bot Framework Emulator and Cortana.  
+For a bot that users will speak to, integrating it with LUIS can help your bot identify words that might be misunderstood when converting speech to text.  For example, in a chess scenario, a user might say: "Move knight to A 7". Without context for the user's intent, the utterance might be recognized as: "Move night 287". By creating entities that represent chess pieces and coordinates and labeling them in utterances, you provide context for speech recognition to identify them.
 
 ## Additional resources
 Refer to [Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/) documentation for more information.

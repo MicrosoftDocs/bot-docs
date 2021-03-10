@@ -180,7 +180,7 @@ Full access to the current bot's memory so you can data bind language to the sta
 
 Bots use expressions to evaluate the outcome of a condition based on runtime information available in memory to the dialog or the Language Generation system. These evaluations determine how your bot reacts to user input and other factors that impact bot functionality.
 
-Adaptive expressions were created to address this core need as well as provide an adaptive expression language that can used with the Bot Framework SDK and other conversational AI components, like [Bot Framework Composer](https:/docs.microsoft.com/composer/), Language Generation, Adaptive dialogs, and [Adaptive Cards](https://docs.microsoft.com/adaptive-cards/).
+Adaptive expressions were created to address this core need as well as provide an adaptive expression language that can used with the Bot Framework SDK and other conversational AI components, like [Bot Framework Composer](/composer/), Language Generation, Adaptive dialogs, and [Adaptive Cards](/adaptive-cards/).
 
 An adaptive expression can contain one or more explicit values, pre-built functions or custom functions. Consumers of adaptive expressions also have the capability to inject additional supported functions. For example, all Language Generation templates are available as functions as well as additional functions that are only available within that component's use of adaptive expressions.
 
@@ -281,11 +281,11 @@ using their favorite programming language.
 
 This article summarizes key new features and improvements in Bot Framework and Azure Bot Service.
 
-|Item | C#  | JS  | Python |
-|:----|:---:|:---:|:------:|
-|SDK |[4.5][1] | [4.5][2] | [4.4.0b2 (preview)][3] |
-|Docs | [docs][5] |[docs][5] |  | |
-|Samples |[.NET Core][6], [WebAPI][10] |[Node.js][7] , [TypeScript][8], [es6][9]  | [Python][11] | |
+| Item    | C#                           | JS                                       | Python                 |
+|:--------|:----------------------------:|:----------------------------------------:|:----------------------:|
+| SDK     | [4.5][1]                     | [4.5][2]                                 | [4.4.0b2 (preview)][3] |
+| Docs    | [docs][5]                    | [docs][5]                                |                        |
+| Samples | [.NET Core][6], [WebAPI][10] | [Node.js][7] , [TypeScript][8], [es6][9] | [Python][11]           |
 
 ### Bot Framework Channels
 

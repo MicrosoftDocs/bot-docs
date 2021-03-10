@@ -49,7 +49,7 @@ Examples of `OnIntent` and `OnUnknownIntent` triggers are given in the example b
 > - The `OnIntent` trigger lets you handle the `recognizedIntent` event. The `recognizedIntent` event is raised by a [recognizer][recognizers]. With the exception of the [QnA Maker recognizer][qna-maker-recognizer], all of the Bot Framework SDK built-in recognizers emit this event when they successfully identify a user _input_ so that your bot can respond appropriately.
 > - Use the `OnUnknownIntent` trigger to catch and respond when a `recognizedIntent` event isn't caught and handled by any of the other triggers. This means that any unhandled intent (including "none") can cause it to trigger, but only if there aren't any currently executing actions for the dialog.<!--Use the `OnUnknownIntent` trigger to catch and respond when a "none" intent occurs. This is especially helpful to capture and handle cases where your dialog wishes to participate in consultation.-->
 
-``` C#
+```csharp
 // Create the root dialog as an Adaptive dialog.
 var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog));
 
@@ -161,7 +161,7 @@ The `OnConversationUpdateActivity` trigger lets you handle an _activity received
 
 The following code snippet demonstrates how you can create an `OnConversationUpdateActivity` trigger:
 
-```C#
+```csharp
 var myDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
 {
     Generator = new TemplateEngineLanguageGenerator(new TemplateEngine().AddFile(Path.Combine(".", "myDialog.lg"))),
@@ -183,12 +183,12 @@ Message event triggers allow you to react to any message event such as when a me
 
 Message events are a type of activity event and, as such, all message events have a base event of `ActivityReceived` and are further refined by _activity type_. The Base class that all message triggers derive from is `OnActivity`.
 
-| Event cause      | ActivityType      | Trigger name               | Description                                                               |
-| ---------------- | ----------------- | -------------------------- | ------------------------------------------------------------------------- |
-| Message received | `Message`         | `OnMessageActivity`        | Actions to perform on receipt of an activity with type `MessageReceived`. | <!--Overrides Intent trigger.-->
-| Message deleted  | `MessageDeletion` | `OnMessageDeleteActivity`  | Actions to perform on receipt of an activity with type `MessageDelete`.   |
-| Message reaction | `MessageReaction` | `OnMessageReactionActivity`| Actions to perform on receipt of an activity with type `MessageReaction`. |
-| Message updated  | `MessageUpdate`   | `OnMessageUpdateActivity`  | Actions to perform on receipt of an activity with type `MessageUpdate`.   |
+| Event cause | ActivityType | Trigger name | Description |
+|--|--|--|--|
+| Message received | `Message` | `OnMessageActivity` | Actions to perform on receipt of an activity with type `MessageReceived`. <!--Overrides Intent trigger.--> |
+| Message deleted | `MessageDeletion` | `OnMessageDeleteActivity` | Actions to perform on receipt of an activity with type `MessageDelete`. |
+| Message reaction | `MessageReaction` | `OnMessageReactionActivity` | Actions to perform on receipt of an activity with type `MessageReaction`. |
+| Message updated | `MessageUpdate` | `OnMessageUpdateActivity` | Actions to perform on receipt of an activity with type `MessageUpdate`. |
 
 <!--TODO P1: Need Message event examples
 ### Message event examples
