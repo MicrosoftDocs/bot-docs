@@ -6,7 +6,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 02/20/2020
+ms.date: 03/09/2021
 ---
 
 # Key concepts - Bot Connector API
@@ -19,7 +19,7 @@ Bot Framework channels enable your bot to exchange messages with channels config
 
 ### Activity
 
-The Connector service exchanges information between between bot and channel (user) by passing an [Activity][Activity] object. The most common type of activity is **message**, but there are other activity types that can be used to communicate various types of information to a bot or channel. For details about Activities in the Bot Connector service, see [Activities overview](https://aka.ms/botSpecs-activitySchema).
+The Connector service exchanges information between bot and channel (user) by passing an [Activity][Activity] object. The most common type of activity is **message**, but there are other activity types that can be used to communicate various types of information to a bot or channel. For details about Activities in the Bot Connector service, see [Activities overview](https://aka.ms/botSpecs-activitySchema).
 
 ## Authentication
 
