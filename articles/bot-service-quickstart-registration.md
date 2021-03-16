@@ -5,7 +5,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 11/12/2020
+ms.date: 03/15/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -78,8 +78,7 @@ A manual registration is necessary for situations like:
 - You are unable to make the registrations in your organization and need another party to create the App ID for the bot you're building.
 - You need to manually create your own app ID and password.
 
-> [!IMPORTANT]
-> In the section **Supports account types**, choose the multi-tenant type **Accounts in any organizational directory (Any Azure AD - Multitenant)**, when creating the app. Failing to do so, will result in a non-functional bot. For more information, see  [Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#register-a-new-application-using-the-azure-portal).
+[!INCLUDE [select account type](includes/authentication/auth-account-types.md)]
 
 ## Update the bot
 
