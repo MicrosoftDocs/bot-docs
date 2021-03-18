@@ -457,11 +457,16 @@ See [web](#web).
 
 ## Language Understanding (LUIS)
 
-- **Status**: Approved Microsoft product name, but without an official entry in a style guide.
+- **Status**: Approved. See [Language Understanding (LUIS)](https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=48260) in the Cloud style guide.
 - **Definition**:
   - LUIS portal: "An AI service that allows users to interact with your applications, bots, and IoT devices by using natural language."
   - Term Studio: "The Cognitive Services Language API service that applies custom machine-learning intelligence to a user's conversational, natural language text to predict overall meaning, and pull out relevant, detailed information."
-- **Notes**: The casing is different for the product versus the general concept.
+- **Forms**:
+  - Language Understanding (LUIS)&mdash;on fist use.
+  - LUIS&mdash;on subsequent mentions.
+- **Notes**:
+  - The casing is different for the product versus the general concept.
+  - "Don’t use Azure LUIS or Microsoft LUIS. LUIS is part of Azure Cognitive Services but it isn't Microsoft or Azure branded."
 - **See also**: [language understanding](#language-understanding).
 
 ## library
