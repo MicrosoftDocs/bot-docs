@@ -53,13 +53,13 @@ This article assumes that you have a bot ready to be deployed. For information o
 
 ### 4. Deploy via ARM template
 
-When creating the bot application service, you can deploy your bot in a new or in an existing resource group, both via the [Azure Resource Manager (ARM) template](/azure/azure-resource-manager/templates/overview). An ARM template is a JSON file that declaratively defines one or more Azure resources and that defines dependencies between the deployed resources. Make sure that you have the correct path to your bot project ARM deployment templates directory `DeploymentTemplates`, you need it to assign the value to the template file. Choose the option that works best for you:
+When creating the bot application service, you can deploy your bot in a new or in an existing resource group, both via the [Azure Resource Manager (ARM) template](/azure/azure-resource-manager/templates/overview). An ARM template is a JSON file that declaratively defines one or more Azure resources and that defines dependencies between the deployed resources. Make sure that you have the correct path to your bot project ARM deployment templates directory **DeploymentTemplates**. You need it to assign the value to the template file. Choose the option that works best for you:
 
-* [Deploy via ARM template with new resource group](#deploy-via-arm-template-with-new-resource-group)
-* [Deploy via ARM template with existing resource group](#deploy-via-arm-template-with-existing-resource-group)
+- [Deploy via ARM template with new resource group](#deploy-via-arm-template-with-new-resource-group)
+- [Deploy via ARM template with existing resource group](#deploy-via-arm-template-with-existing-resource-group)
 
 > [!IMPORTANT]
-> Python bots cannot be deployed to a resource group that contains Windows services/bots. Multiple Python bots can be deployed to the same resource group, but you need to create other services (LUIS, QnA, etc.) in another resource group.
+> Python bots can't be deployed to a resource group that contains Windows services/bots. Multiple Python bots can be deployed to the same resource group, but you need to create other services (LUIS, QnA, and so on) in another resource group.
 
 ##### **Deploy via ARM template with new Resource Group**
 

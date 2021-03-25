@@ -15,7 +15,7 @@ bot-builder-tutorial-create-basic-bot.md and bot-builder-python-quickstart.md --
     pip install cookiecutter==1.7.0
     ```
 
-    The last package, cookiecutter, will be used to generate your bot. Verify that cookiecutter was installed correctly by running `cookiecutter --help`.
+The last package, **cookiecutter**, will be used to generate your bot. Verify that it was installed correctly by running `cookiecutter --help`.
 
 1. To create your bot run:
 
@@ -27,4 +27,4 @@ bot-builder-tutorial-create-basic-bot.md and bot-builder-python-quickstart.md --
 
 >[!NOTE]
 >
-> Some developers may find it useful to create Python bots in a [virtual envrionment](https://docs.python.org/3/library/venv.html). The steps below will work regardless if you're developing in a virtual environment or on your local machine.
+> Some developers may find it useful to create Python bots in a [virtual environment](https://docs.python.org/3/library/venv.html). The steps below will work regardless if you're developing in a virtual environment or on your local machine.
