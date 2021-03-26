@@ -2101,6 +2101,11 @@
       "source_path": "articles/v4sdk/bot-builder-skills-overview.md",
       "redirect_url": "/azure/bot-service/bot-builder-virtual-assistant-introduction",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/bot-service-manage-speech-priming.md",
+      "redirect_url": "/azure/bot-service/",
+      "redirect_document_id": false
     }
   ]
 }

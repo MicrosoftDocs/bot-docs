@@ -16,8 +16,8 @@
     href: python/bot-builder-python-quickstart.md
   - name: Create a bot using Azure Bot Service
     href: v4sdk/abs-quickstart.md
-  - name: Create a bot using Azure PowerShell
-    href: powershell/bot-builder-powershell-quickstart.md
+  # - name: Create a bot using Azure PowerShell # Doesn't work, shouldn't have been added, will add back in when it works.
+  #   href: powershell/bot-builder-powershell-quickstart.md
 - name: Tutorials
   items:
   - name: 1. Create a basic bot
@@ -270,8 +270,6 @@
       href: bot-service-manage-analytics.md
     - name: Configure bot settings
       href: bot-service-manage-settings.md
-    - name: Configure speech priming
-      href: bot-service-manage-speech-priming.md
     - name: Channels
       items:
       - name: Connect a bot to channels

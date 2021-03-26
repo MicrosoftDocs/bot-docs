@@ -7,11 +7,51 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 11/13/2020
-monikerRange: 'azure-bot-service-4.0'
+ms.date: 03/22/2021
 ---
 
-# What's new August 2020
+# What's new November 2020
+
+[!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
+The Bot Framework SDK v4 is an [Open Source SDK](https://github.com/microsoft/botframework-sdk/#readme) that enable developers to model and build sophisticated conversations using their favorite programming language.
+
+This article summarizes key new features and improvements in Bot Framework and Azure Bot Service.
+
+|Item | C#  | JS  | Python | Java
+|:----|:---:|:---:|:------:|:-----:
+|Release |[4.11 (GA)][1] | [4.11 (GA)][2] | [4.11 (GA)][3] | [4.7 Preview][3a]
+|Samples |[.NET Core][6], [WebAPI][10] |[Node.js][7], [TypeScript][8], [es6][9]  | [Python][11a] |
+
+Welcome to the November 2020 release of the Bot Framework SDK. There are a number of updates in this version that we hope you will like; some of the key highlights include:
+
+- [Documentation](#documentation-updates): improvements to existing documentation, including READMEs for the code and samples repositories.
+- Teams: added support for the Participant Meeting API, and other general improvements.
+- Skills: can now be run and tested locally in the Emulator without an app ID and password, improved support for skills in adaptive dialogs.
+- Orchestrator (preview): a Language Understanding technology for routing incoming user utterances to an appropriate skill or to subsequent language processing service such as LUIS or QnA Maker.
+- Cloud adapter (preview, .NET only): a bot adapter that supports hosting a bot in any cloud environment.
+
+**Insiders**: Want to try new features as soon as possible? You can download the nightly Insiders build [[C#](https://github.com/microsoft/botbuilder-dotnet/blob/main/UsingMyGet.md)] [[JS](https://github.com/microsoft/botbuilder-js/blob/main/UsingMyGet.md)] [[Python](https://github.com/microsoft/botbuilder-python/blob/main/UsingTestPyPI.md)] [[CLI](https://github.com/Microsoft/botframework-cli#nightly-builds)] and try the latest updates as soon as they are available. And for the latest Bot Framework news, updates, and content, follow us on Twitter @msbotframework!
+
+## Documentation updates
+
+Following feedback from customers and the Bot Framework Support team, a number of documents were created or updated. These are helpful towards providing answers and information relating to recurring issues from bot developers.
+
+- Expanded code comment documentation in the SDK repositories.
+- Improved READMEs in the samples and SDK repositories.
+- New and updated documents addressing recurring bot developer issues:
+  - Updated and expanded the [conceptual](v4sdk/bot-builder-adaptive-dialog-Introduction.md) and [how-to](v4sdk/bot-builder-adaptive-dialog-setup.md) articles for adaptive dialogs.
+  - Updated and reorganized the [authentication and security](v4sdk/bot-builder-authentication-basics.md) articles.
+  - Updates to the [Bot Framework Composer](/composer/) documentation.
+  - Issue fixes and general documentation improvements to response generation, Cognitive Services, adaptive expressions, skills, channels, and other topics.
+  - The SDK v3 documentation has been removed from the main doc set and is available on the [previous versions](/previous-versions) site.
+
+### Additional information
+
+- You can see previous announcements in the [archived information](what-is-new-archive.md).
+- See the Bot Framework SDK [release notes](https://github.com/microsoft/botframework-sdk/releases/) for more information about the changes made to the SDK in the 4.11 release.
+
+## What's new August 2020
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
@@ -180,7 +220,7 @@ Full access to the current bot's memory so you can data bind language to the sta
 
 Bots use expressions to evaluate the outcome of a condition based on runtime information available in memory to the dialog or the Language Generation system. These evaluations determine how your bot reacts to user input and other factors that impact bot functionality.
 
-Adaptive expressions were created to address this core need as well as provide an adaptive expression language that can used with the Bot Framework SDK and other conversational AI components, like [Bot Framework Composer](https:/docs.microsoft.com/composer/), Language Generation, Adaptive dialogs, and [Adaptive Cards](https://docs.microsoft.com/adaptive-cards/).
+Adaptive expressions were created to address this core need as well as provide an adaptive expression language that can used with the Bot Framework SDK and other conversational AI components, like [Bot Framework Composer](/composer/), Language Generation, Adaptive dialogs, and [Adaptive Cards](/adaptive-cards/).
 
 An adaptive expression can contain one or more explicit values, pre-built functions or custom functions. Consumers of adaptive expressions also have the capability to inject additional supported functions. For example, all Language Generation templates are available as functions as well as additional functions that are only available within that component's use of adaptive expressions.
 
@@ -281,11 +321,11 @@ using their favorite programming language.
 
 This article summarizes key new features and improvements in Bot Framework and Azure Bot Service.
 
-|Item | C#  | JS  | Python |
-|:----|:---:|:---:|:------:|
-|SDK |[4.5][1] | [4.5][2] | [4.4.0b2 (preview)][3] |
-|Docs | [docs][5] |[docs][5] |  | |
-|Samples |[.NET Core][6], [WebAPI][10] |[Node.js][7] , [TypeScript][8], [es6][9]  | [Python][11] | |
+| Item    | C#                           | JS                                       | Python                 |
+|:--------|:----------------------------:|:----------------------------------------:|:----------------------:|
+| SDK     | [4.5][1]                     | [4.5][2]                                 | [4.4.0b2 (preview)][3] |
+| Docs    | [docs][5]                    | [docs][5]                                |                        |
+| Samples | [.NET Core][6], [WebAPI][10] | [Node.js][7] , [TypeScript][8], [es6][9] | [Python][11]           |
 
 ### Bot Framework Channels
 

@@ -3,7 +3,7 @@ title: Connect a bot to Direct Line - Bot Service
 description: Learn how to configure bots to communicate with client applications. See how to use the Direct Line channel for this purpose.
 keywords: direct line, bot channels, custom client, connect to channels, configure
 author: mmiele
-ms.author: v-mimiel
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
@@ -14,7 +14,7 @@ ms.date: 12/04/2020
 
 This article describes how to connect a bot to the **Direct Line channel**. Use this channel to allow your client application to communicate with a bot.
 
-> NOTE
+> [!NOTE]
 > The Direct Line is a standard channel over HTTPS protocol to allow communication between a client application and a bot. If you require network isolation instead, use the [Direct Line App Service Extension](bot-service-channel-directline-extension.md) over [WebSocket protocol](https://tools.ietf.org/html/rfc6455).
 
 ## Add the Direct Line channel

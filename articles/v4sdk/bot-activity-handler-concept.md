@@ -2,7 +2,7 @@
 title: Event-driven conversations and activity handlers - Bot Service
 description: Become familiar with the bot activity handler. Learn about managing bot reasoning based on the type of activity received from a user.
 author: JonathanFingold
-ms.author: v-jofin
+ms.author: kamrani
 manager: kamrani
 ms.topic: conceptual
 ms.service: bot-service

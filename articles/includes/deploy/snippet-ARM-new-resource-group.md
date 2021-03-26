@@ -1,5 +1,8 @@
 In this step, you create a bot application service which sets the deployment stage for the bot. You use an ARM template, a new service plan and a new resource group. Run the following Azure cli command to start a deployment at subscription scope from a local template file.
 
+> [!TIP]
+> Use the ARM template for a _new_ resource group, **template-with-new-rg.json**.
+
 ```azurecli
 az deployment sub create --template-file "<path-to-template-with-new-rg.json" --location <region-location-name> --parameters appId="<app-id-from-previous-step>" appSecret="<password-from-previous-step>" botId="<id or bot-app-service-name>" botSku=F0 newAppServicePlanName="<new-service-plan-name>" newWebAppName="<bot-app-service-name>" groupName="<new-group-name>" groupLocation="<region-location-name>" newAppServicePlanLocation="<region-location-name>" --name "<bot-app-service-name>"
 ```

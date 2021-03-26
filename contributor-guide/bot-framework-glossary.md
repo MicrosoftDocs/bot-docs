@@ -13,7 +13,7 @@ These should be considered the sources of truth, and you _should not_ "use Micro
 - [Microsoft Cloud Style Guide][] / **A–Z names + terms dictionary** &mdash; Cloud-specific style guide.
 - [Microsoft Writing Style Guide][] / **A–Z word list and term collections** &mdash; Microsoft-wide style guide.
 - [Microsoft 365 Style Guide][] / **A–Z word list** &mdash; for terms specific to Microsoft 365, in addition to Windows, Office 365, and Microsoft Teams.
-- Term Studio &mdash; This is used by localization and is not meant for our consumption.
+- [Term Studio](https://termstudio.azurewebsites.net/default.aspx) &mdash; This is used by localization and is not meant for our consumption. However, in the absence of other material, it is sometimes useful for identifying the correct version of a product name.
 
 > [!TIP]
 > Use [Search for a term](https://styleguides.azurewebsites.net/StyleGuide/Search) to search across all style guides.
@@ -70,11 +70,30 @@ For many terms that start with the word Microsoft or Azure, like Microsoft Azure
 
 ## .dialog file
 
+- **Status**: Informal, part of the Bot Framework, consumed by Composer, operated on by the CLI.
+- **Definition**: A file that contains declarative assets for adaptive dialogs (and uses the .dialog extension).
+- **See**: OBI's (Microsoft internal) [fileformat/dialog folder](https://github.com/microsoft/botframework-obi/tree/main/fileformats/dialog) for archeological information.
+- **See also**: [declarative dialog](#declarative-dialog).
+
 ## .lg file
+
+- **Status**: Informal, part of the Bot Framework, consumed by Composer, operated on by the CLI.
+- **Definition**: A file that describes response generation templates for adaptive dialogs (and uses the .lg extension).
+- **See**: OBI's (Microsoft internal) [fileformat/lg folder](https://github.com/microsoft/botframework-obi/tree/main/fileformats/lg) for archeological information.
+- **See also**: [response generation template](#response-generation-template).
 
 ## .lu file
 
+- **Status**: Informal, part of the Bot Framework, consumed by Composer, operated on by the CLI.
+- **Definition**: A file that contains language understanding assets (and uses the .lu extension).
+- **See**: OBI's (Microsoft internal) [fileformat/lu folder](https://github.com/microsoft/botframework-obi/tree/main/fileformats/lu) for archeological information.
+- **See also**: [language understanding](#language-understanding).
+
 ## .qna file
+
+- **Status**: Informal, part of the Bot Framework, consumed by Composer, operated on by the CLI.
+- **Definition**: A file that contains data for a QnA Maker knowledge base (and uses the .qna extension).
+- **See**: OBI's (Microsoft internal) [fileformat/qna folder](https://github.com/microsoft/botframework-obi/tree/main/fileformats/qna) for archeological information.
 
 <a id="a"></a>
 
@@ -225,7 +244,24 @@ See notes for [Azure Resource Manager](#azure-resource-manager).
 
 ## bot
 
+- **Status**: Informal.
+- **Definition**: "Bots provide an experience that feels less like using a computer and more like dealing with a person - or at least an intelligent robot."
+- **Notes**: As a generic term, a _bot_ could also refer to a bot developed for another platform using a differ framework. If needed, qualify when you are talking about a bot developed using the Bot Framework SDK (or Composer).
+- **See**: [What is a bot?](https://docs.microsoft.com/azure/bot-service/bot-service-overview-introduction#what-is-a-bot) in the SDK **What is the Bot Framework SDK?** article.
+- **See also**: [bot service](#bot-service), [Azure Bot Service](#azure-bot-service).
+
 ## bot adapter
+
+- **Status**: Informal, approved.
+- **Short form**: adapter
+- **Definition**: "Represents a bot adapter that can connect a bot to a service endpoint."
+- **Notes**:
+  - There are two categories of adapters, Azure Bot Service adapters and channel adapters. For Bot Service adapters, the Azure Bot Service handles translation between the channel's schema and the Bot Framework activity schema. Channel adapters bypass the Bot Service and have to do this translation themselves.
+  - A bot adapter is the generic term for any object that serves the purpose of an adapter for a bot.
+  - A specific bot's adapter is the particular adapter that bot uses.
+  - For a bot that uses a channel adapter, it could use multiple ones to support different channels.
+- **See**: [The bot adapter](https://docs.microsoft.com/azure/bot-service/bot-builder-basics#the-bot-adapter) in the SDK **How bots work** article.
+- **See also**: [channel](#channel), [channel adapter](#channel-adapter).
 
 ## Bot Framework
 
@@ -296,11 +332,20 @@ See [Microsoft Bot Framework](#microsoft-bot-framework).
 
 ## continuous development
 
+See [CI/CD](#cicd).
+
 ## continuous integration
 
 See [CI/CD](#cicd).
 
 <a id="d"></a>
+
+## declarative dialog
+
+- **Status**: Informal, part of the Bot Framework SDK and Composer, mostly under the covers for now. Try to avoid using this term.
+- **Definition**: A declarative dialog is part or all of an adaptive dialog, represented as _declarative assets_ in a file.
+- **Notes**: Composer primarily saves and loads bots using declarative assets, and uses a common bot, aka _the runtime_, aka _common core bot_, to consume and _run_ these assets. As such, they define the logic the bot will use and the common bot contains the code for stepping through that logic.
+- **See also**: [.dialog file](#dialog-file).
 
 ## dialog
 
@@ -400,6 +445,29 @@ See [web](#web).
 <a id="j"></a>
 <a id="k"></a>
 <a id="l"></a>
+
+## language understanding
+
+- **Status**: In general use.
+- **Definition**: An aspect of natural language processing (NLP).
+  - via Wikipedia,
+    > Converts chunks of text into more formal representations such as first-order logic structures that are easier for computer programs to manipulate. Natural language understanding involves the identification of the intended semantic from the multiple possible semantics which can be derived from a natural language expression which usually takes the form of organized notations of natural language concepts."
+- **Notes**: The casing is different for the product versus the general concept.
+- **See also**: [.lu file](#lu-file), [Language Understanding (LUIS)](#language-understanding-luis).
+
+## Language Understanding (LUIS)
+
+- **Status**: Approved. See [Language Understanding (LUIS)](https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=48260) in the Cloud style guide.
+- **Definition**:
+  - LUIS portal: "An AI service that allows users to interact with your applications, bots, and IoT devices by using natural language."
+  - Term Studio: "The Cognitive Services Language API service that applies custom machine-learning intelligence to a user's conversational, natural language text to predict overall meaning, and pull out relevant, detailed information."
+- **Forms**:
+  - Language Understanding (LUIS)&mdash;on fist use.
+  - LUIS&mdash;on subsequent mentions.
+- **Notes**:
+  - The casing is different for the product versus the general concept.
+  - "Don’t use Azure LUIS or Microsoft LUIS. LUIS is part of Azure Cognitive Services but it isn't Microsoft or Azure branded."
+- **See also**: [language understanding](#language-understanding).
 
 ## library
 
@@ -568,6 +636,11 @@ For individual flavors of the SDK, append _for \<environment>_, to match the [Az
 - **Definition**: A central location (to varying extents) that contains code or packages. This can be at anywhere from the project level or platform level.
 - **Notes**: Don't shorten to _repo_.
 - **See also**: [package](#package).
+
+## response generation template
+
+- **Status**: Informal, part of the Bot Framework SDK and Composer, mostly visible via the Composer UI.
+- **See also**: [.lg file](#lg-file).
 
 ## REST
 

@@ -49,9 +49,9 @@ Below is the list of the **Configuration** fields:
 
 To save your changes, select **Apply** at the bottom of the blade.
 
-## Application ID and Password
+## Application ID and password
 
-The registration application ID and password are assigned to the bot's variables `MicrosoftAppID` and `MicrosoftAppPassword` in the files `appsettings.json` (.NET) and `.env` (Javascript).
+The registration application ID and password are assigned to the bot's variables `MicrosoftAppID` and `MicrosoftAppPassword` in the files **appsettings.json** (.NET) and **.env** (Javascript).
 
 > [!NOTE]
 > The Bot Channels Registration has an application ID, but because there is no app service associated with it, there is no password. To generate the password follow the steps in the next section.
@@ -81,9 +81,3 @@ The Azure Bot Service assigns a unique application ID to the application. You ca
 ## Additional Information
 
 You can use [az bot update](/cli/azure/bot#az-bot-update) to update bot settings from the command line.
-
-## Next steps
-
-Now that you have learned how to configure settings for your bot service, learn about how to configure speech priming.
-> [!div class="nextstepaction"]
-> [Speech priming](bot-service-manage-speech-priming.md)

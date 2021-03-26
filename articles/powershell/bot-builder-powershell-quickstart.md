@@ -1,88 +1,101 @@
 ---
-title: Create a bot with Azure PowerShell - Bot Service
-description: Learn how to create a bot with Azure PowerShell.
-keywords: Quickstart, create bot, bot service, web app bot
-author: mmiele
-ms.author: v-mimiel
+title: Publish a bot with Azure PowerShell - Bot Service
+description: Learn how to publish a bot with Azure PowerShell.
+author: JonathanFingold
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 02/08/2021
+ms.date: 02/23/2021
 ms.custom: devx-track-azurepowershell
 ---
 
-# Create a bot with Azure PowerShell
+# Create and publish a bot with Azure PowerShell
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-This article shows you how to build a bot by using Azure PowerShell.
+This article shows you how to use Azure PowerShell to create a bot and register it with Azure using an existing Azure Active Directory (Azure AD) application registration.
 
-You have two approaches to create a bot with Azure PowerShell:
+You have two approaches to hosting your bot:
 
-1. **Web App**. Create a bot and register it with Azure using a Web application as shown in this article. You use this approach if you develop and host a bot in Azure.
-1. **Bot channels registration**. Create and develop your bot locally and host it on a platform different from Azure. When you register your bot, you provide the web address where your bot is hosted. You can still host it in Azure. Follow the steps described in the [Bot channels registration](~/bot-service-quickstart-registration.md) article.
+1. **Web App Bot**. Create a bot and register it with Azure using an existing application registration as shown in this article. Use this approach to develop and host a bot in Azure.
+1. **Bot Channels Registration**. Use this approach to create and develop your bot locally and host it on a platform different from Azure. To do so, follow the steps described in the [Bot channels registration](../bot-service-quickstart-registration.md) article. When you register your bot, you provide the web address where your bot is hosted. You can still host it in Azure.
+    <!--?Should the lead in be "...and host it on any platform?-->
 
-[!INCLUDE [Azure vs local development](~/includes/snippet-quickstart-paths.md)]
+You can run these commands locally, using Azure PowerShell, or remotely through the Azure portal, using Azure CloudShell. For more information about Azure CloudShell, see the [Overview of Azure Cloud Shell](/azure/cloud-shell/overview).
+
+> [!IMPORTANT]
+> While the **Az.BotService** PowerShell module is in preview, you must install it separately using the `Install-Module` cmdlet.
+
+[!INCLUDE [Azure vs local development](../includes/snippet-quickstart-paths.md)]
 
 ## Prerequisites
 
 - If you don't have an Azure subscription, create a [free](https://azure.microsoft.com/free/)
   account before you begin.
 
-- If you choose to use Azure PowerShell locally:
-  - [Install the Az PowerShell module](/powershell/azure/install-az-ps).
-  - Connect to your Azure account using the
-    [Connect-AzAccount](/powershell/module/az.accounts/connect-azaccount) cmdlet.
-- If you choose to use Azure Cloud Shell:
-  - See [Overview of Azure Cloud Shell](/azure/cloud-shell/overview) for
-    more information.
+- An existing Azure AD application registration that can be used from any Azure AD tenant.
+  - To complete this quickstart, you will need the app ID and secret for the application registration.
 
-> [!IMPORTANT]
-> While the **Az.BotService** PowerShell module is in preview, you must install it separately using
-> the `Install-Module` cmdlet.
-
-```azurepowershell-interactive
-Install-Module -Name Az.BotService -AllowClobber
-```
-
-- An Azure application registration.
-
-- If you have multiple Azure subscriptions, choose the appropriate subscription in which the
-  resources should be billed. Select a specific subscription using the
-  [Set-AzContext](/powershell/module/az.accounts/set-azcontext) cmdlet.
+- [Install the Az PowerShell module](/powershell/azure/install-az-ps). This is required because the Az.BotService module is in preview.
 
   ```azurepowershell-interactive
-  Set-AzContext -SubscriptionId 00000000-0000-0000-0000-000000000000
+  Install-Module -Name Az.BotService -AllowClobber
   ```
+
+- If you choose to use Azure PowerShell locally:
+  - Connect to your Azure account using the
+    [Connect-AzAccount](/powershell/module/az.accounts/connect-azaccount) cmdlet.
+
+## Choose your subscription
+
+If you have multiple Azure subscriptions, choose the appropriate subscription in which the resources should be billed.
+
+1. To list the subscriptions you can access, use the [Get-AzSubscription](/powershell/module/az.accounts/get-azsubscription) cmdlet.
+
+    ```azurepowershell-interactive
+    Get-AzSubscription
+    ```
+
+1. Set the specific subscription using the [Set-AzContext](/powershell/module/az.accounts/set-azcontext) cmdlet.
+
+    You should use the same subscription for your bot as for the application registration.
+
+    ```azurepowershell-interactive
+    Set-AzContext -SubscriptionId "<your-subscription-name-or-id>"
+    ```
 
 ## Create a resource group
 
-Create an [Azure resource group](/azure/azure-resource-manager/management/overview)
-using the [New-AzResourceGroup](/powershell/module/az.resources/new-azresourcegroup)
-cmdlet. A resource group is a logical container in which Azure resources are deployed and managed as
-a group.
+If you do not already have an [Azure resource group](/azure/azure-resource-manager/management/overview) you want to use for your bot, create a new one using the [New-AzResourceGroup](/powershell/module/az.resources/new-azresourcegroup) cmdlet.
+
+- A resource group is a logical container in which Azure resources are deployed and managed as a group.
 
 The following example creates a resource group with the specified name and in the specified location.
 
 ```azurepowershell-interactive
-New-AzResourceGroup -Name myResourceGroup -Location westus2
+New-AzResourceGroup -Name <your-resource-group-name> -Location <your-resource-group-location>
 ```
 
 ## Create a new bot service
 
-To create a new bot service, you use the [New-AzBotService](/powershell/module/az.botservice/new-azbotservice)
+To create a new bot service for your bot, you use the [New-AzBotService](/powershell/module/az.botservice/new-azbotservice)
 cmdlet. The following example creates a new bot service with the specified values.
 
 ```azurepowershell-interactive
-New-AzBotService -ResourceGroupName myResourceGroup -Name MyEchoBot -ApplicationId 00000000-0000-0000-0000-000000000000 -Location westus -Sku S1 -Description 'My Echo Bot' -Webapp
+New-AzBotService -ResourceGroupName <your-resource-group-name> -Name <your-bot-handle> -ApplicationId <your-app-registration-id> -Location <your-bot-service-location> -Sku S1 -Description "<your-bot-description>" -Webapp
 ```
+
+<!-- Will need to provide the secret when prompted for it. -->
+<!--Unable to complete this step.-->
 
 To retrieve the status of a bot service, you use the
 [Get-AzBotService](/powershell/module/az.botservice/get-azbotservice) cmdlet. The following example
-gets a list of all the bot services in the specified resource group and their statuses.
+gets a list of all the resources in the specified resource group.
+<!--?How do you get the status of each service/resource?-->
 
 ```azurepowershell-interactive
-Get-AzBotService -ResourceGroupName myResourceGroup
+Get-AzBotService -ResourceGroupName <your-resource-group-name>
 ```
 
 ## Initialize project folder
@@ -90,6 +103,7 @@ Get-AzBotService -ResourceGroupName myResourceGroup
 To initialize the project file folder, you use the
 [Initialize-AzBotServicePrepareDeploy](/powershell/module/az.botservice/initialize-azbotservicepreparedeploy)
 cmdlet. The following example initializes the specified file in the specified folder.
+<!--?What about the languages other than C#?-->
 
 ```azurepowershell-interactive
 Initialize-AzBotServicePrepareDeploy -CodeDir C:\tmp\MyEchoBot -ProjFileName MyEchoBot.csproj

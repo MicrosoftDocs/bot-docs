@@ -16,7 +16,7 @@ The standard Bot Framework metadata section looks like this:
   ms.devlang: <optional>
   ms.topic: article
   ms.date: mm/dd/yyyy
-  ms.author: <your microsoft alias, one value only, alias only>
+  ms.author: kamrani # the Writing team manager's alias.
 ---
   ```
 ## Usage

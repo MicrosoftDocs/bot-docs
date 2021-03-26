@@ -52,7 +52,7 @@ In this article you will learn how to implement telemetry into your bot using Ap
 * An [Application Insights key](../bot-service-resources-app-insights-keys.md)
 * Familiarity with [Application Insights](/azure/azure-monitor/app/app-insights-overview/)
 * [Visual Studio Code](https://www.visualstudio.com/downloads)
-* [Node.js](https://nodejs.org/) version 10.14 or higher. Use command `node --version` to determine the version of node you have installed.
+* [Node.js](https://nodejs.org/) version 10.14 or later. Use command `node --version` to determine the version of node you have installed.
 * [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
 
 > [!NOTE]

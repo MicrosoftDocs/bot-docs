@@ -22,19 +22,19 @@ Creating a bot with Azure Bot Service and creating a bot locally are independent
 
 ## Prerequisites
 
-[!INCLUDE [dotnet prerequisites](~/includes/quickstart/python/quickstart-python-prerequisites.md)]
+[!INCLUDE [python prerequisites](~/includes/quickstart/python/quickstart-python-prerequisites.md)]
 
 ## Create a bot
 
-[!INCLUDE [dotnet quickstart create bot](~/includes/quickstart/python/quickstart-python-create-bot.md)]
+[!INCLUDE [python quickstart create bot](~/includes/quickstart/python/quickstart-python-create-bot.md)]
 
 ## Start your bot
 
-[!INCLUDE [dotnet quickstart start bot](~/includes/quickstart/python/quickstart-python-start-bot.md)]
+[!INCLUDE [python quickstart start bot](~/includes/quickstart/python/quickstart-python-start-bot.md)]
 
 ## Start the Emulator and connect your bot
 
-[!INCLUDE [dotnet quickstart start Emulator](~/includes/quickstart/common/quickstart-start-emulator.md)]
+[!INCLUDE [common quickstart start Emulator](~/includes/quickstart/common/quickstart-start-emulator.md)]
 
 ## Additional resources
 

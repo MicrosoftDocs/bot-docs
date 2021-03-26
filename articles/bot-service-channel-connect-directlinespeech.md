@@ -8,7 +8,7 @@ manager: kamrani
 ms.service: bot-service
 ms.topic: conceptual
 ms.date: 10/07/2020
-ms.author: v-mimiel
+ms.author: kamrani
 ---
 
 # Connect a bot to Direct Line Speech

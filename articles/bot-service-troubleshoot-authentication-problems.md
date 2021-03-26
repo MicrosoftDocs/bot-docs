@@ -41,14 +41,18 @@ In this step, you will verify that your bot is accessible and functional on loca
 
 To disable security for your bot, edit its configuration settings to remove the values for app ID and password.
 
-If you're using the Bot Framework SDK for .NET, edit the settings in your `appsettings.json` file:
+# [C#](#tab/csharp)
+
+If you're using the Bot Framework SDK for .NET, add or edit the settings in your **appsettings.json** file:
 
 ```json
   "MicrosoftAppId": "",
   "MicrosoftAppPassword": ""
 ```
 
-If you're using the Bot Framework SDK for Node.js, edit these values (or update the corresponding environment variables):
+# [JavaScript](#tab/javascript)
+
+If you're using the Bot Framework SDK for Node.js, add or edit the following values in your **.env** file:
 
 ```javascript
 const adapter = new BotFrameworkAdapter({
@@ -56,6 +60,20 @@ const adapter = new BotFrameworkAdapter({
     appPassword: null
 });
 ```
+
+# [Python](#tab/python)
+
+If you're using the Bot Framework SDK for Python, add or edit the following values in your **config.py** file:
+
+```python
+class DefaultConfig:
+    """ Bot Configuration """
+    APP_ID = None
+    APP_PASSWORD = None
+
+```
+
+---
 
 ### Test your bot on localhost
 

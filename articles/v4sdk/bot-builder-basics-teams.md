@@ -6,90 +6,88 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: overview
 ms.service: bot-service
-ms.date: 01/25/2021
+ms.date: 03/04/2021
 ---
 
 # How Microsoft Teams bots work
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-This is an introduction that builds on what you learned in the article [How bots work](https://docs.microsoft.com/azure/bot-service/bot-builder-basics), you should be familiar with that article before reading this.
+This is an introduction that builds on what you learned in the article [How bots work](bot-builder-basics.md) and [Event-driven conversations](bot-activity-handler-concept.md); you should be familiar with these articles before reading this.
 
-The primary differences in bots developed for Microsoft Teams is in how activities are handled. The Microsoft Teams activity handler derives from the Bot Framework's activity handler to route all teams activities before allowing any non-Teams-specific activities to be handled.
+The primary differences in bots developed for Microsoft Teams is in how activities are handled. The _Teams activity handler_ derives from the _activity handler_ and processes Teams-specific activity types before processing more general activity types.
 
-## Teams Activity handlers
+## Teams activity handler
 
-Just like any other bot, when a bot is designed for Microsoft Teams receives an activity, it passes it on to its *activity handlers*. Under the covers, there is one base handler called the *turn handler*, that all activities are routed through. The *turn handler* calls the required activity handler to handle whatever type of activity was received. Where a bot designed for Microsoft Teams differs is that it is derived from a _Teams activity handler_ class that is derived from the Bot Framework's _activity handler_ class.  The Teams activity handler class includes various Microsoft Teams-specific activity handlers that will be discussed in this article.
+To create a bot for Teams, derive your bot from the _Teams activity handler_ class. When such a bot receives an activity, it routes the activity through various *activity handlers*. The initial, base handler is the *turn handler*, and it routes the activity to a handler based on the activity's type. The *turn handler* calls the handler that is designed to handle the specific type of activity that was received. The _Teams activity handler_ class is derived from the _activity handler_ class. In addition to the activity types that the _activity handler_ can process, the Teams activity handler class includes additional handlers for Teams-specific activities.
+
+A bot that derives from the Teams activity handler is similar to a bot that derives directly from the activity handler class.
+However, Teams includes additional information in `conversationUpdate` activities and sends Teams-specific `invoke` activities.
+
+<!-- The Teams activity handler is found at:
+- https://github.com/microsoft/botbuilder-dotnet/blob/main/libraries/Microsoft.Bot.Builder/Teams/TeamsActivityHandler.cs
+- https://github.com/microsoft/botbuilder-js/blob/main/libraries/botbuilder/src/teamsActivityHandler.ts
+- https://github.com/microsoft/botbuilder-python/blob/main/libraries/botbuilder-core/botbuilder/core/teams/teams_activity_handler.py
+- https://github.com/microsoft/botbuilder-java/blob/main/libraries/bot-builder/src/main/java/com/microsoft/bot/builder/teams/TeamsActivityHandler.java
+-->
 
 ### [C#](#tab/csharp)
 
-As with any bot created using the Microsoft Bot Framework, if the bot receives a message activity, the turn handler would see that incoming activity and send it to the `OnMessageActivityAsync` activity handler. This functionality remains the same, however if the bot receives a conversation update activity, the turn handler would see that incoming activity and send it to the `OnConversationUpdateActivityAsync` _Teams_ activity handler that will first check for any Teams-specific events and pass it along to the Bot Framework's activity handler if none are found.
+When your Teams activity handler&ndash;bot receives a message activity, its turn handler routes the incoming message activity to its `OnMessageActivityAsync` handler, similar to how an activity handler&ndash;based bot would. However, when your Teams bot receives a conversation update activity, the Teams version of the `OnConversationUpdateActivityAsync` handler processes the activity.
 
-In the Teams activity handler class there are two primary Teams activity handlers, `OnConversationUpdateActivityAsync` that routes all conversation update activities, and `OnInvokeActivityAsync` that routes all Teams invoke activities.
-
-There is no base implementation for most of these Teams-specific activity handlers. To implement your logic for these Teams-specific activity handlers add the logic that you want in your override.
+There is no base implementation for most of the Teams-specific activity handlers. You will need to override these handler and provide appropriate logic for your bot.
 
 ### [JavaScript](#tab/javascript)
 
-As with any bot created using the Microsoft Bot Framework, if the bot receives a message activity, the turn handler would see that incoming activity and send it to the `onMessage` activity handler. This functionality remains the same, however if the bot receives a conversation update activity, the turn handler would see that incoming activity and send it to the `dispatchConversationUpdateActivity` _Teams_ activity handler that will first check for any Teams-specific events and pass it along to the Bot Framework's activity handler if none are found.
+When your Teams activity handler&ndash;bot receives a message activity, its turn handler routes the incoming message activity to its `onMessage` handler, similar to how an activity handler&ndash;based bot would. However, when your Teams bot receives a conversation update activity, the Teams version of the `dispatchConversationUpdateActivity` handler processes the activity.
 
-In the Teams activity handler class there are two primary Teams activity handlers, `dispatchConversationUpdateActivity` that routes all conversation update Activities, and `onInvokeActivity` that routes all Teams invoke  activities.
+There is no base implementation for most of the Teams-specific activity handlers. You will need to override these handler and provide appropriate logic for your bot.
 
 When overriding these Teams-specific activity handlers, define your bot logic, then **be sure to call `next()` at the end**. By calling `next()` you ensure that the next handler is run.
 
 ### [Python](#tab/python)
 
-As with any bot created using the Microsoft Bot Framework, if the bot receives a message activity, the turn handler would see that incoming activity and send it to the `on_message_activity` activity handler. This functionality remains the same, however if the bot receives a conversation update activity, the turn handler would see that incoming activity and send it to the `on_conversation_update_activity` _Teams_ activity handler that will first check for any Teams-specific events and pass it along to the Bot Framework's activity handler if none are found.
+When your Teams activity handler&ndash;bot receives a message activity, its turn handler routes the incoming message activity to its `on_message_activity` handler, similar to how an activity handler&ndash;based bot would. However, when your Teams bot receives a conversation update activity, the Teams version of the `on_conversation_update_activity` handler processes the activity.
 
-In the Teams activity handler class there are two primary Teams activity handlers, `on_conversation_update_activity` that routes all conversation update Activities, and `on_invoke_activity` that routes all Teams invoke  activities.
-
-There is no base implementation for most of these Teams-specific activity handlers. To implement your logic for these Teams-specific activity handlers add the logic that you want in your override.
+There is no base implementation for most of the Teams-specific activity handlers. You will need to override these handler and provide appropriate logic for your bot.
 
 ---
 
-All of the activity handlers described in the [activity handling](bot-activity-handler-concept.md#activity-handling) section of the _Event-driven conversations using an activity handler_ article will continue to work as they do with a non-Teams bot, with the exception of handling the members added and removed activities, these will be different in the context of a team, where the new member is added to the team as opposed to a message thread. See the _Teams conversation update activities_ table in the [Teams-bot logic](#teams-bot-logic) section for more details.
+All of the activity handlers described in the [activity handling](bot-activity-handler-concept.md#activity-handling) section of the _Event-driven conversations using an activity handler_ article will continue to work as they do with a non-Teams bot, with the exception of handling the members added and removed activities, these will be different in the context of a team, where the new member is added to the team as opposed to a message thread. See [Teams conversation update activities](#teams-conversation-update-activities) for more details.
 
-To implement your logic for these Teams-specific activity handlers, you will override these methods in your bot as shown in the [Teams-bot logic](#teams-bot-logic) section below.
+To implement your logic for these Teams-specific activity handlers, you will override methods in your bot.
 
 ## Teams-bot logic
 
 The bot logic processes incoming activities from one or more of your bots channels and generates outgoing activities in response.  This is still true of bot derived from the Teams activity handler class, which first checks for Teams activities, then passes all other activities to the Bot Framework's activity handler.
 
+### Teams conversation update activities
+
+The following table lists the Teams events that generate a _conversation update_ activity in a bot.
+The Microsoft Teams [Conversation update events](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events) article describes how to use each of these events.
+
+<!-- Ignoring the teamHardDeleted event type for now, which is not currently documented in Teams. -->
+<!-- Teams docs have a questionable description of `teamRestored`. (https://github.com/MicrosoftDocs/msteams-docs/issues/2830) Using what I think makes sense for now. -->
+
 ### [C#](#tab/csharp)
 
-### Teams conversation update activities
+Below is a list of all of the Teams activity handlers called from the `OnConversationUpdateActivityAsync` method of the _Teams_ activity handler.
 
-Below is a list of all of the Teams activity handlers called from the `OnConversationUpdateActivityAsync` _Teams_ activity handler. The [Conversation update events](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events) article describes how to use each of these events in a bot.
-
-| Event | Handler | Description |
-| :-- | :-- | :-- |
-| channelCreated | `OnTeamsChannelCreatedAsync` | Override this to handle a Teams channel being created. For more information see [Channel created](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#channel-created). |
-| channelDeleted | `OnTeamsChannelDeletedAsync` | Override this to handle a Teams channel being deleted. For more information see [Channel deleted](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#channel-deleted). |
-| channelRenamed | `OnTeamsChannelRenamedAsync` | Override this to handle a Teams channel being renamed. For more information see [Channel renamed](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#channel-renamed). |
-| teamRenamed | `OnTeamsTeamRenamedAsync` | `return Task.CompletedTask;` Override this to handle a Teams Team being Renamed. For more information see [Team renamed](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-renamed). |
-| MembersAdded | `OnTeamsMembersAddedAsync` | Calls the `OnMembersAddedAsync` method in `ActivityHandler`. Override this to handle members joining a team. For more information see [Team member added](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-members-added).|
-| MembersRemoved | `OnTeamsMembersRemovedAsync` | Calls the `OnMembersRemovedAsync` method in `ActivityHandler`. Override this to handle members leaving a team. For more information see [Team member removed](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-member-removed).|
-
-### Teams invoke activities
-
-Here is a list of all of the Teams activity handlers called from the `OnInvokeActivityAsync` _Teams_ activity handler:
-
-| Invoke types                    | Handler                              | Description                                                  |
-| :-----------------------------  | :----------------------------------- | :----------------------------------------------------------- |
-| CardAction.Invoke               | `OnTeamsCardActionInvokeAsync`       | Teams Card Action Invoke. |
-| fileConsent/invoke              | `OnTeamsFileConsentAcceptAsync`      | Teams File Consent Accept. |
-| fileConsent/invoke              | `OnTeamsFileConsentAsync`            | Teams File Consent. |
-| fileConsent/invoke              | `OnTeamsFileConsentDeclineAsync`     | Teams File Consent. |
-| actionableMessage/executeAction | `OnTeamsO365ConnectorCardActionAsync` | Teams O365 Connector Card Action. |
-| signin/verifyState              | `OnTeamsSigninVerifyStateAsync`      | Teams Sign in Verify State. |
-| task/fetch                      | `OnTeamsTaskModuleFetchAsync`        | Teams Task Module Fetch. |
-| task/submit                     | `OnTeamsTaskModuleSubmitAsync`       | Teams Task Module Submit. |
-
-The invoke activities listed above are for conversational bots in Teams. The Bot Framework SDK also supports invokes specific to messaging extensions. For more information see [What are messaging extensions](/microsoftteams/platform/messaging-extensions/what-are-messaging-extensions)
+| EventType | Handler | Condition | Teams documentation |
+|:-|:-|:-|:-|
+| channelCreated | `OnTeamsChannelCreatedAsync` | Sent whenever a new channel is created in a team your bot is installed in. | [Channel created](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#channel-created). |
+| channelDeleted | `OnTeamsChannelDeletedAsync` | Sent whenever a channel is deleted in a team your bot is installed in. | [Channel deleted](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#channel-deleted). |
+| channelRenamed | `OnTeamsChannelRenamedAsync` | Sent whenever a channel is renamed in a team your bot is installed in. | [Channel renamed](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#channel-renamed). |
+| channelRestored | `OnTeamsChannelRestoredAsync` | Sent whenever a channel that was previously deleted is restored in a team that your bot is already installed in. | [Channel restored](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#channel-restored). |
+| membersAdded | `OnTeamsMembersAddedAsync` | By default, calls the `ActivityHandler.OnMembersAddedAsync` method. Sent the first time your bot is added to a conversation and every time a new user is added to a team or group chat that your bot is installed in. | [Team members added](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-members-added). |
+| membersRemoved | `OnTeamsMembersRemovedAsync` | By default, calls the `ActivityHandler.OnMembersRemovedAsync` method. Sent if your bot is removed from a team and every time any user is removed from a team that your bot is a member of. | [Team members removed](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-members-removed). |
+| teamArchived | `OnTeamsTeamArchivedAsync` | Sent when the team your bot is installed in is archived. | [Team archived](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-archived). |
+| teamDeleted | `OnTeamsTeamDeletedAsync` | Sent when the team your bot is in has been deleted. | [Team deleted](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-deleted). |
+| teamRenamed | `OnTeamsTeamRenamedAsync` | Sent when the team your bot is in has been renamed. | [Team renamed](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-renamed). |
+| teamRestored | `OnTeamsTeamRestoredAsync` | Sent when a previously deleted team your bot is in is restored. | [Team restored](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-restored). |
+| teamUnarchived | `OnTeamsTeamUnarchivedAsync` | Sent when the team your bot is installed in is unarchived.| [Team unarchived](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-unarchived). |
 
 ### [JavaScript](#tab/javascript)
-
-### Teams conversation update activities
 
 Developers may handle conversation update activities sent from Microsoft Teams via two methods:
 
@@ -98,80 +96,111 @@ Developers may handle conversation update activities sent from Microsoft Teams v
 
 Developers should use only one of these options: either 1 or 2, and not _both_ for the same activity. Meaning, developers should either pass a callback to the `onTeamsMembersAddedEvent` method *or* override the `onTeamsMembersAdded` method in a derived class, and not do both.
 
-**Methods for passing in a callback**
+#### Methods for registering a callback
 
-Below is a list of all of the Teams activity handlers called from the `dispatchConversationUpdateActivity` _Teams_ activity handler. The [Conversation update events](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events) article describes how to use each of these events in a bot.
+Below is a list of all of the Teams activity emitters called from the `dispatchConversationUpdateActivity` method of the _Teams_ activity handler.
 
-| Event | Handler | Description |
-| :-- | :-- | :-- |
-| channelCreated | `OnTeamsChannelCreatedEvent` | Pass in a callback to this method to handle a Teams channel being created. For more information see [Channel created](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#channel-created). |
-| channelDeleted | `OnTeamsChannelDeletedEvent` | Pass in a callback to this method to handle a Teams channel being deleted. For more information see [Channel deleted](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#channel-deleted).|
-| channelRenamed | `OnTeamsChannelRenamedEvent` | Pass in a callback to this method to handle a Teams channel being renamed. For more information see [Channel renamed](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#channel-renamed). |
-| teamRenamed | `OnTeamsTeamRenamedEvent` | `return Task.CompletedTask;` Pass in a callback to this method to handle a Teams Team being Renamed. For more information see [Team renamed](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-renamed). |
-| MembersAdded | `OnTeamsMembersAddedEvent` | Calls the `OnMembersAddedEvent` method in `ActivityHandler`. Pass in a callback to this method to handle members joining a team. For more information see [Team member added](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#Team-Member-Added). |
-| MembersRemoved | `OnTeamsMembersRemovedEvent` | Calls the `OnMembersRemovedEvent` method in `ActivityHandler`. Pass in a callback to this method to handle members leaving a team. For more information see [Team member removed](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#Team-Member-Removed). |
+| EventType | Registration method | Condition | Teams documentation |
+|:-|:-|:-|:-|
+| channelCreated | `onTeamsChannelCreatedEvent` | Sent whenever a new channel is created in a team your bot is installed in. | [Channel created](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#channel-created). |
+| channelDeleted | `onTeamsChannelDeletedEvent` | Sent whenever a channel is deleted in a team your bot is installed in. | [Channel deleted](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#channel-deleted). |
+| channelRenamed | `onTeamsChannelRenamedEvent` | Sent whenever a channel is renamed in a team your bot is installed in. | [Channel renamed](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#channel-renamed). |
+| channelRestored | `onTeamsChannelRestoredEvent` | Sent whenever a channel that was previously deleted is restored in a team that your bot is already installed in. | [Channel restored](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#channel-restored). |
+| membersAdded | `onTeamsMembersAddedEvent` | Sent the first time your bot is added to a conversation and every time a new user is added to a team or group chat that your bot is installed in. | [Team members added](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-members-added). |
+| membersRemoved | `onTeamsMembersRemovedEvent` | Sent if your bot is removed from a team and every time any user is removed from a team that your bot is a member of. | [Team members removed](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-members-removed). |
+| teamArchived | `onTeamsTeamArchivedEvent` | Sent when the team your bot is installed in is archived. | [Team archived](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-archived). |
+| teamDeleted | `onTeamsTeamDeletedEvent` | Sent when the team your bot is in has been deleted. | [Team deleted](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-deleted). |
+| teamRenamed | `onTeamsTeamRenamedEvent` | Sent when the team your bot is in has been renamed. | [Team renamed](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-renamed). |
+| teamRestored | `onTeamsTeamrestoredEvent` | Sent when a previously deleted team your bot is in is restored. | [Team restored](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-restored). |
+| teamUnarchived | `onTeamsTeamUnarchivedEvent` | Sent when the team your bot is installed in is unarchived.| [Team unarchived](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-unarchived). |
 
-**Methods to override in a derived class**
+#### Methods to override in a derived class
 
-Below is a list of all of the Teams activity handlers that can be overridden to handle Teams Conversation Update activities.
+Below is a list of all of the Teams activity handlers that can be overridden to handle Teams conversation update activities.
 
-| Method | Handler | Description |
-| :-- | :-- | :-- |
-| channelCreated | `OnTeamsChannelCreated` | Override this to handle a Teams channel being created.|
-| channelDeleted | `OnTeamsChannelDeleted` | Override this to handle a Teams channel being deleted.|
-| channelRenamed | `OnTeamsChannelRenamed` | Override this to handle a Teams channel being renamed.|
-| teamRenamed | `OnTeamsTeamRenamed` | `return Task.CompletedTask;` Override this to handle a Teams team being renamed.|
-| MembersAdded | `OnTeamsMembersAdded` | Calls the `OnMembersAddedEvent` method in `ActivityHandler`. Override this to handle members joining a team.|
-| MembersRemoved | `OnTeamsMembersRemoved` | Calls the `OnMembersRemovedEvent` method in `ActivityHandler`. Override this to handle members leaving a team.|
-
-### Teams invoke  activities
-
-Here is a list of all of the Teams activity handlers called from the `onInvokeActivity` _Teams_ activity handler:
-
-| Invoke types                    | Handler                              | Description                                                  |
-| :-----------------------------  | :----------------------------------- | :----------------------------------------------------------- |
-| CardAction.Invoke               | `handleTeamsCardActionInvoke`       | Teams Card Action Invoke. |
-| fileConsent/invoke              | `handleTeamsFileConsentAccept`      | Teams File Consent Accept. |
-| fileConsent/invoke              | `handleTeamsFileConsent`            | Teams File Consent. |
-| fileConsent/invoke              | `handleTeamsFileConsentDecline`     | Teams File Consent. |
-| actionableMessage/executeAction | `handleTeamsO365ConnectorCardAction` | Teams O365 Connector Card Action. |
-| signin/verifyState              | `handleTeamsSigninVerifyState`      | Teams Sign in Verify State. |
-| task/fetch                      | `handleTeamsTaskModuleFetch`        | Teams Task Module Fetch. |
-| task/submit                     | `handleTeamsTaskModuleSubmit`       | Teams Task Module Submit. |
-
-The invoke activities listed above are for conversational bots in Teams. The Bot Framework SDK also supports invokes specific to messaging extensions. For more information see [What are messaging extensions](/microsoftteams/platform/messaging-extensions/what-are-messaging-extensions)
+| EventType | Handler | Condition | Teams documentation |
+|:-|:-|:-|:-|
+| channelCreated | `onTeamsChannelCreated` | Sent whenever a new channel is created in a team your bot is installed in. | [Channel created](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#channel-created). |
+| channelDeleted | `onTeamsChannelDeleted` | Sent whenever a channel is deleted in a team your bot is installed in. | [Channel deleted](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#channel-deleted). |
+| channelRenamed | `onTeamsChannelRenamed` | Sent whenever a channel is renamed in a team your bot is installed in. | [Channel renamed](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#channel-renamed). |
+| channelRestored | `onTeamsChannelRestored` | Sent whenever a channel that was previously deleted is restored in a team that your bot is already installed in. | [Channel restored](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#channel-restored). |
+| membersAdded | `onTeamsMembersAdded` | By default, calls the `ActivityHandler.onMembersAdded` method. Sent the first time your bot is added to a conversation and every time a new user is added to a team or group chat that your bot is installed in. | [Team members added](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-members-added). |
+| membersRemoved | `onTeamsMembersRemoved` | By default, calls the `ActivityHandler.onMembersRemoved` method. Sent if your bot is removed from a team and every time any user is removed from a team that your bot is a member of. | [Team members removed](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-members-removed). |
+| teamArchived | `onTeamsTeamArchived` | Sent when the team your bot is installed in is archived. | [Team archived](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-archived). |
+| teamDeleted | `onTeamsTeamDeleted` | Sent when the team your bot is in has been deleted. | [Team deleted](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-deleted). |
+| teamRenamed | `onTeamsTeamRenamed` | Sent when the team your bot is in has been renamed. | [Team renamed](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-renamed). |
+| teamRestored | `onTeamsTeamRestored` | Sent when a previously deleted team your bot is in is restored. | [Team restored](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-restored). |
+| teamUnarchived | `onTeamsTeamUnarchived` | Sent when the team your bot is installed in is unarchived.| [Team unarchived](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-unarchived). |
 
 ### [Python](#tab/python)
 
-### Teams conversation update activities
+Below is a list of all of the Teams activity handlers called from the `on_conversation_update_activity` method of the _Teams_ activity handler.
 
-Below is a list of all of the Teams activity handlers called from the `on_conversation_update_activity` _Teams_ activity handler. The [Conversation update events](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events) article describes how to use each of these events in a bot.
+| EventType | Handler | Condition | Teams documentation |
+|:-|:-|:-|:-|
+| channelCreated | `on_teams_channel_created` | Sent whenever a new channel is created in a team your bot is installed in. | [Channel created](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#channel-created). |
+| channelDeleted | `on_teams_channel_deleted` | Sent whenever a channel is deleted in a team your bot is installed in. | [Channel deleted](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#channel-deleted). |
+| channelRenamed | `on_teams_channel_renamed` | Sent whenever a channel is renamed in a team your bot is installed in. | [Channel renamed](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#channel-renamed). |
+| channelRestored | `on_teams_channel_restored` | Sent whenever a channel that was previously deleted is restored in a team that your bot is already installed in. | [Channel restored](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#channel-restored). |
+| membersAdded | `on_teams_members_added` | By default, calls the base class `on_members_added_activity` method. Sent the first time your bot is added to a conversation and every time a new user is added to a team or group chat that your bot is installed in. | [Team members added](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-members-added). |
+| membersRemoved | `on_teams_members_removed` | By default, calls the base class `on_members_removed_activity` method. Sent if your bot is removed from a team and every time any user is removed from a team that your bot is a member of. | [Team members removed](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-members-removed). |
+| teamArchived | `on_teams_team_archived` | Sent when the team your bot is installed in is archived. | [Team archived](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-archived). |
+| teamDeleted | `on_teams_team_deleted` | Sent when the team your bot is in has been deleted. | [Team deleted](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-deleted). |
+| teamRenamed | `on_teams_team_renamed` | Sent when the team your bot is in has been renamed. | [Team renamed](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-renamed). |
+| teamRestored | `on_teams_team_restored` | Sent when a previously deleted team your bot is in is restored. | [Team restored](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-restored). |
+| teamUnarchived | `on_teams_team_unarchived` | Sent when the team your bot is installed in is unarchived.| [Team unarchived](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-unarchived). |
 
-| Event | Handler | Description |
-| :-- | :-- | :-- |
-| channelCreated | `on_teams_channel_created` | Override this to handle a Teams channel being created. For more information see [Channel created](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#channel-created). |
-| channelDeleted | `on_teams_channel_deleted` | Override this to handle a Teams channel being deleted. For more information see [Channel deleted](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#channel-deleted). |
-| channelRenamed | `on_teams_team_renamed_activity` | Override this to handle a Teams channel being renamed. For more information see [Channel renamed](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#channel-renamed). |
-| teamRenamed | `on_teams_channel_renamed` | `return Task.CompletedTask;` Override this to handle a Teams Team being Renamed. For more information see [Team renamed](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#team-renamed). |
-| MembersAdded | `on_teams_members_added` | Calls the `OnMembersAddedAsync` method in `ActivityHandler`. Override this to handle members joining a team. For more information see [Team member added](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#Team-Member-Added).|
-| MembersRemoved | `on_teams_members_removed` | Calls the `OnMembersRemovedAsync` method in `ActivityHandler`. Override this to handle members leaving a team. For more information see [Team member removed](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#Team-Member-Removed).|
+---
 
 ### Teams invoke activities
 
+The following table lists the Teams-specific invoke activities Teams sends to a bot.
+The invoke activities listed are for conversational bots in Teams. The Bot Framework SDK also supports invokes specific to messaging extensions. For more information, see the Teams [What are messaging extensions](/microsoftteams/platform/messaging-extensions/what-are-messaging-extensions) article.
+
+### [C#](#tab/csharp)
+
+Here is a list of all of the Teams activity handlers called from the `OnInvokeActivityAsync` _Teams_ activity handler:
+
+| Invoke types                    | Handler                               | Description                       |
+|:--------------------------------|:--------------------------------------|:----------------------------------|
+| actionableMessage/executeAction | `OnTeamsO365ConnectorCardActionAsync` | Teams O365 Connector Card Action. |
+| CardAction.Invoke               | `OnTeamsCardActionInvokeAsync`        | Teams Card Action Invoke.         |
+| fileConsent/invoke              | `OnTeamsFileConsentAcceptAsync`       | Teams File Consent Accept.        |
+| fileConsent/invoke              | `OnTeamsFileConsentAsync`             | Teams File Consent.               |
+| fileConsent/invoke              | `OnTeamsFileConsentDeclineAsync`      | Teams File Consent.               |
+| signin/verifyState              | `OnTeamsSigninVerifyStateAsync`       | Teams Sign in Verify State.       |
+| task/fetch                      | `OnTeamsTaskModuleFetchAsync`         | Teams Task Module Fetch.          |
+| task/submit                     | `OnTeamsTaskModuleSubmitAsync`        | Teams Task Module Submit.         |
+
+### [JavaScript](#tab/javascript)
+
+Here is a list of all of the Teams activity handlers called from the `onInvokeActivity` _Teams_ activity handler:
+
+| Invoke types                    | Handler                              | Description                       |
+|:--------------------------------|:-------------------------------------|:----------------------------------|
+| actionableMessage/executeAction | `handleTeamsO365ConnectorCardAction` | Teams O365 Connector Card Action. |
+| CardAction.Invoke               | `handleTeamsCardActionInvoke`        | Teams Card Action Invoke.         |
+| fileConsent/invoke              | `handleTeamsFileConsentAccept`       | Teams File Consent Accept.        |
+| fileConsent/invoke              | `handleTeamsFileConsent`             | Teams File Consent.               |
+| fileConsent/invoke              | `handleTeamsFileConsentDecline`      | Teams File Consent.               |
+| signin/verifyState              | `handleTeamsSigninVerifyState`       | Teams Sign in Verify State.       |
+| task/fetch                      | `handleTeamsTaskModuleFetch`         | Teams Task Module Fetch.          |
+| task/submit                     | `handleTeamsTaskModuleSubmit`        | Teams Task Module Submit.         |
+
+### [Python](#tab/python)
+
 Here is a list of all of the Teams activity handlers called from the `on_invoke_activity` _Teams_ activity handler:
 
-| Invoke types                    | Handler                              | Description
-| :-----------------------------  | :----------------------------------- | :-
-| CardAction.Invoke               | `on_teams_card_action_invoke`        | Teams Card Action Invoke.
-| fileConsent/invoke              | `on_teams_file_consent_accept`       | Teams File Consent Accept.
-| fileConsent/invoke              | `on_teams_file_consent`              | Teams File Consent.
-| fileConsent/invoke              | `on_teams_file_consent_decline`      | Teams File Consent Decline.
-| actionableMessage/executeAction | `on_teams_o365_connector_card_action`| Teams O365 Connector Card Action.
-| signin/verifyState              | `on_teams_signin_verify_state`       | Teams Sign in Verify State.
-| task/fetch                      | `on_teams_task_module_fetch`         | Teams Task Module Fetch.
-| task/submit                     | `on_teams_task_module_submit`        | Teams Task Module Submit.
-
-The invoke activities listed above are for conversational bots in Teams. The Bot Framework SDK also supports invokes specific to messaging extensions. For more information see [What are messaging extensions](/microsoftteams/platform/messaging-extensions/what-are-messaging-extensions)
+| Invoke types                    | Handler                               | Description                       |
+|:--------------------------------|:--------------------------------------|:----------------------------------|
+| actionableMessage/executeAction | `on_teams_o365_connector_card_action` | Teams O365 Connector Card Action. |
+| CardAction.Invoke               | `on_teams_card_action_invoke`         | Teams Card Action Invoke.         |
+| fileConsent/invoke              | `on_teams_file_consent_accept`        | Teams File Consent Accept.        |
+| fileConsent/invoke              | `on_teams_file_consent`               | Teams File Consent.               |
+| fileConsent/invoke              | `on_teams_file_consent_decline`       | Teams File Consent Decline.       |
+| signin/verifyState              | `on_teams_signin_verify_state`        | Teams Sign in Verify State.       |
+| task/fetch                      | `on_teams_task_module_fetch`          | Teams Task Module Fetch.          |
+| task/submit                     | `on_teams_task_module_submit`         | Teams Task Module Submit.         |
 
 ---
 

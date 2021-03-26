@@ -28,10 +28,10 @@ Make sure that [.NET Core 3.1](https://dotnet.microsoft.com/download) is install
 
 1. In Visual Studio Code, open a new terminal window.
 1. Navigate to the directory in which you want to create your bot project.
-1. Create a new bot project using the following command:
+1. Create a new echo bot project using the following command. Replace `<your-bot-name>` with the name to use for your bot project.
 
    ```cmd
-   dotnet new echobot -n MyEchoBot
+   dotnet new echobot -n <your-bot-name>
    ```
 
 # [Command Line](#tab/cl)
@@ -40,10 +40,10 @@ Make sure that [.NET Core 3.1](https://dotnet.microsoft.com/download) is install
 
 1. Open a new terminal window.
 1. Navigate to the directory in which you want to create your bot project.
-1. Create a new bot project using the following command:
+1. Create a new echo bot project using the following command. Replace `<your-bot-name>` with the name to use for your bot project.
 
    ```cmd
-   dotnet new echobot -n MyEchoBot
+   dotnet new echobot -n <your-bot-name>
    ```
 
 ---

@@ -146,7 +146,7 @@ Creates a new conversation.
 POST /v3/conversations
 ```
 
-| | |
+| Content | Description |
 |----|----|
 | **Request body** | A [ConversationParameters](#conversationparameters-object) object |
 | **Returns** | A [ConversationResourceResponse](#conversationresourceresponse-object) object |
@@ -159,7 +159,7 @@ Some channels allow you to delete an existing activity. If successful, this oper
 DELETE /v3/conversations/{conversationId}/activities/{activityId}
 ```
 
-| | |
+| Content | Description |
 |----|----|
 | **Request body** | n/a |
 | **Returns** | An HTTP Status code that indicates the outcome of the operation. Nothing is specified in the body of the response. |
@@ -172,7 +172,7 @@ Removes a member from a conversation. If that member was the last member of the 
 DELETE /v3/conversations/{conversationId}/members/{memberId}
 ```
 
-| | |
+| Content | Description |
 |----|----|
 | **Request body** | n/a |
 | **Returns** | An HTTP Status code that indicates the outcome of the operation. Nothing is specified in the body of the response. |
@@ -185,7 +185,7 @@ Gets the members of the specified activity within the specified conversation.
 GET /v3/conversations/{conversationId}/activities/{activityId}/members
 ```
 
-| | |
+| Content | Description |
 |----|----|
 | **Request body** | n/a |
 | **Returns** | An array of [ChannelAccount](#channelaccount-object) objects |
@@ -198,7 +198,7 @@ Gets a list of conversations the bot has participated in.
 GET /v3/conversations?continuationToken={continuationToken}
 ```
 
-| | |
+| Content | Description |
 |----|----|
 | **Request body** | n/a |
 | **Returns** | A [ConversationsResult](#conversationsresult-object) object |
@@ -211,7 +211,7 @@ Gets details about a specific member of a specific conversation.
 GET /v3/conversations/{conversationId}/members/{memberId}
 ```
 
-| | |
+| Content | Description |
 |----|----|
 | **Request body** | n/a |
 | **Returns** | A [ChannelAccount](#channelaccount-object) object for the member. |
@@ -224,7 +224,7 @@ Gets the members of the specified conversation.
 GET /v3/conversations/{conversationId}/members
 ```
 
-| | |
+| Content | Description |
 |----|----|
 | **Request body** | n/a |
 | **Returns** | An array of [ChannelAccount](#channelaccount-object) objects for the members of the conversation. |
@@ -237,7 +237,7 @@ Gets the members of the specified conversation one page at a time.
 GET /v3/conversations/{conversationId}/pagedmembers?pageSize={pageSize}&continuationToken={continuationToken}
 ```
 
-| | |
+| Content | Description |
 |----|----|
 | **Request body** | n/a |
 | **Returns** | A [PagedMembersResult](#pagedmembersresult-object) object |
@@ -250,7 +250,7 @@ Sends an activity (message) to the specified conversation, as a reply to the spe
 POST /v3/conversations/{conversationId}/activities/{activityId}
 ```
 
-| | |
+| Content | Description |
 |----|----|
 | **Request body** | An [Activity](#activity-object) object |
 | **Returns** | A [ResourceResponse](#resourceresponse-object) object |
@@ -263,7 +263,7 @@ Uploads a transcript of past activities to the conversation so that the client c
 POST /v3/conversations/{conversationId}/activities/history
 ```
 
-| | |
+| Content | Description |
 |----|----|
 | **Request body** | A [Transcript](#transcript-object) object. |
 | **Returns** | A [ResourceResponse](#resourceresponse-object) object. |
@@ -276,7 +276,7 @@ Sends an activity (message) to the specified conversation. The activity will be 
 POST /v3/conversations/{conversationId}/activities
 ```
 
-| | |
+| Content | Description |
 |----|----|
 | **Request body** | An [Activity](#activity-object) object |
 | **Returns** | A [ResourceResponse](#resourceresponse-object) object |
@@ -289,7 +289,7 @@ Some channels allow you to edit an existing activity to reflect the new state of
 PUT /v3/conversations/{conversationId}/activities/{activityId}
 ```
 
-| | |
+| Content | Description |
 |----|----|
 | **Request body** | An [Activity](#activity-object) object |
 | **Returns** | A [ResourceResponse](#resourceresponse-object) object |
@@ -302,7 +302,7 @@ Uploads an attachment for the specified conversation directly into a channel's b
 POST /v3/conversations/{conversationId}/attachments
 ```
 
-| | |
+| Content | Description |
 |----|----|
 | **Request body** | An [AttachmentData](#attachmentdata-object) object. |
 | **Returns** | A [ResourceResponse](#resourceresponse-object) object. The **id** property specifies the attachment ID that can be used with the [Get Attachment Info](#get-attachment-info) operation and the [Get Attachment](#get-attachment) operation. |
@@ -324,7 +324,7 @@ Gets information about the specified attachment, including file name, type, and 
 GET /v3/attachments/{attachmentId}
 ```
 
-| | |
+| Content | Description |
 |----|----|
 | **Request body** | n/a |
 | **Returns** | An [AttachmentInfo](#attachmentinfo-object) object |
@@ -337,7 +337,7 @@ Gets the specified view of the specified attachment as binary content.
 GET /v3/attachments/{attachmentId}/views/{viewId}
 ```
 
-| | |
+| Content | Description |
 |----|----|
 | **Request body** | n/a |
 | **Returns** | Binary content that represents the specified view of the specified attachment |

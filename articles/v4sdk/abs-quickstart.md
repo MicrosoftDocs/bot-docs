@@ -3,11 +3,11 @@ title: Create a bot with Azure Bot Service - Bot Service
 description: Learn how to create a bot with Bot Service, an integrated, dedicated bot development environment.
 keywords: Quickstart, create bot, bot service, web app bot
 author: mmiele
-ms.author: v-mimiel
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 02/10/2021
+ms.date: 03/24/2021
 ---
 
 # Create a bot with Azure Bot Service
@@ -66,20 +66,11 @@ Now that your bot is created, test it in Web Chat.
 
 ## Test the bot
 
-In the **Bot Management** section, click **Test in Web Chat**. Azure Bot Service will load the Web Chat control and connect to your bot.
+In the **Settings** section, click **Test in Web Chat**. Azure Bot Service will load the Web Chat control and connect to your bot.
 
-![web app bot test](../media/azure-bot-quickstarts/web-app-bot-test.png)
+:::image type="content" source="../media/azure-bot-quickstarts/web-app-bot-test.png" alt-text="The the bot on Azure in Web Chat.":::
 
 Enter a message and your bot should respond.
-
-## Manual app registration
-
-A manual registration is necessary for situations like:
-
-- You are unable to make the registrations in your organization and need another party to create the App ID for the bot you're building.
-- You need to manually create your own app ID (and password).
-
-See [FAQ - App Registration](../bot-service-resources-faq-azure.yml#how-do-i-create-my-own-app-registration).
 
 ## Download code
 
@@ -92,6 +83,17 @@ You can download the code to work on it locally.
     [!INCLUDE [download keys snippet](../includes/snippet-abs-key-download.md)]
 
 :::image type="content" source="../media/azure-bot-quickstarts/web-app-bot-download.png" alt-text="Links on the Overview pane to download the bot source code.":::
+
+## Additional information
+
+### Manual app registration
+
+You might need a manual registration when:
+
+- You are unable to make the registrations in your organization and need another party to create the App ID for the bot you're building.
+- You need to manually create your own app ID (and password).
+
+See [FAQ - App Registration](../bot-service-resources-faq-azure.yml#how-do-i-create-my-own-app-registration).
 
 ## Next steps
 

@@ -2,7 +2,7 @@
 title: Debug a bot with inspection middleware - Bot Service
 description: Learn how to use inspection middleware to debug bots. See how to use the Bot Framework Emulator to inspect state data and message traffic that involves bots.
 author: zxyanliu
-ms.author: v-liyan
+ms.author: kamrani
 keywords: Bot Framework SDK, debug bot, inspection middleware, bot emulator, Azure Bot Channels Registration
 manager: kamrani
 ms.topic: article

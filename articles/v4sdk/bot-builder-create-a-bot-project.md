@@ -2,7 +2,7 @@
 title: How bot projects are structured - Bot Service
 description: Learn about how bot projects are structured in the Bot Framework SDK. Learn about common aspects of bot code.
 author: JonathanFingold
-ms.author: v-jofin
+ms.author: kamrani
 manager: kamrani
 ms.topic: how-to
 ms.service: bot-service
