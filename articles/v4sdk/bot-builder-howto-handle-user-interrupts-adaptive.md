@@ -81,7 +81,7 @@ With this new LUIS resources in Azure portal, you are now ready to connect your 
 
 This section explains how to use the Bot Framework CLI to connect your bot to your LUIS resources in Azure. This automates the various tasks required to create, update, train and publish LUIS applications for each .lu file for the bot. In order to use this, you first need Node.js and the Bot Framework CLI.
 
-1. If you have **Node.js** installed, make sure you have version 10.14 or higher by running the following from a command prompt: `npm node.js –version`. You can get the latest version by running the following from a command prompt: `npm i -g npm`.
+1. If you have **Node.js** installed, make sure you have version 10.14 or later by running the following from a command prompt: `npm node.js –version`. You can get the latest version by running the following from a command prompt: `npm i -g npm`.
 
     If you do not have it installed, you can install it from the [Node.js download page](https://nodejs.org/download/).
 

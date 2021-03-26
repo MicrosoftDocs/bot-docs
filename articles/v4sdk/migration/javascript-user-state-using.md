@@ -25,9 +25,9 @@ The code sample can be found in [v4 v3 user state adapter sample](https://github
 
 ## Prerequisites
 
-- npm version 6.9.0 or higher (needed to support package aliasing).
+- npm version 6.9.0 or later (needed to support package aliasing).
 
-- Node.js version 10.14.1 or higher.
+- Node.js version 10.14.1 or later.
 
     To check the version installed on your computer, in a terminal, execute the following command:
 

@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: tutorial
 ms.service: bot-service
-ms.date: 03/23/2020
+ms.date: 03/25/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -41,13 +41,13 @@ You'll import an existing knowledge base definition from the QnA Maker sample in
 
 1. Clone or copy the samples repo to your computer.
 1. Sign into to the [QnA Maker portal](https://qnamaker.ai/) with your Azure credentials.
-1. Select **Create a knowledge base** in the QnA Maker portal. You'll see a form with the following:
-   1. If necessary, create a QnA service. (You can use an existing QnA Maker service or create a new one for this tutorial.) For more detailed QnA Maker instructions, see [Create a QnA Maker service](https://docs.microsoft.com/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure) and [Create, train, and publish your QnA Maker knowledge base](https://docs.microsoft.com/azure/cognitive-services/qnamaker/quickstarts/create-publish-knowledge-base).
-   1. Connect your QnA service to your knowledge base.
-   1. Name your knowledge base.
-   1. To populate your knowledge base, use the **smartLightFAQ.tsv** file from the samples repo. If you have downloaded the samples, upload the file **smartLightFAQ.tsv** from your computer.
-   1. Select **Create your kb** to create the knowledge base.
-1. Select the **Save and train** button.
+1. Select **Create a knowledge base** in the QnA Maker portal.
+    1. If necessary, create a QnA service. (You can use an existing QnA Maker service or create a new one for this tutorial.) For more detailed QnA Maker instructions, see [Create a QnA Maker service](https://docs.microsoft.com/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure) and [Create, train, and publish your QnA Maker knowledge base](https://docs.microsoft.com/azure/cognitive-services/qnamaker/quickstarts/create-publish-knowledge-base).
+    1. Connect your QnA Maker service to your knowledge base.
+    1. Name your knowledge base.
+    1. To populate your knowledge base, use the **smartLightFAQ.tsv** file from the samples repo. If you have downloaded the samples, upload the file **smartLightFAQ.tsv** from your computer.
+    1. Select **Create your kb** to create the knowledge base.
+1. Select **Save and train**.
 1. Select **PUBLISH** to publish your knowledge base.
 
 Once your QnA Maker app is published, select **SETTINGS**, and scroll down to *Deployment details*. Copy the following values from the *Postman* HTTP example request.
@@ -58,9 +58,9 @@ Host: <your-hostname>  // NOTE - this is a URL ending in /qnamaker.
 Authorization: EndpointKey <qna-maker-resource-key>
 ```
 
-The full URL string for your hostname will look like "https://<your-hostname>.azure.net/qnamaker".
+The full URL string for your hostname will look like "https://_\<knowledge-base-name>_.azure.net/qnamaker".
 
-These values will be used within your **appsettings.json** or **.env** file in the next step.
+These values will be used within your bot configuration file in the next step.
 
 The knowledge base is now ready for your bot to use.
 
@@ -112,7 +112,6 @@ class DefaultConfig:
     QNA_KNOWLEDGEBASE_ID = os.environ.get("QnAKnowledgebaseId", "")
     QNA_ENDPOINT_KEY = os.environ.get("QnAEndpointKey", "")
     QNA_ENDPOINT_HOST = os.environ.get("QnAEndpointHostName", "")
-
 ```
 
 ---
@@ -121,7 +120,7 @@ class DefaultConfig:
 |:----|:----|
 | QnAKnowledgebaseId | The knowledge base ID that the QnA Maker portal generated for you. |
 | QnAAuthKey (QnAEndpointKey in Python)  | The endpoint key that the QnA Maker portal generated for you. |
-| QnAEndpointHostName | The host URL that the QnA Maker portal generated. Use the complete URL, starting with `https://` and ending with `/qnamaker`. The full URL string will look like `https://< >.azure.net/qnamaker`. |
+| QnAEndpointHostName | The host URL that the QnA Maker portal generated. Use the complete URL, starting with `https://` and ending with `/qnamaker`. The full URL string will look like "https://_\<knowledge-base-name>_.azure.net/qnamaker". |
 
 Now save your edits.
 
@@ -133,134 +132,158 @@ Update your initialization code to load the service information for your knowled
 
 1. Add the **Microsoft.Bot.Builder.AI.QnA** NuGet package to your project.
 
-   You can do this via the NuGet package manager or the command line:
+    You can do this via the NuGet package manager or the command line:
 
-   ```cmd
-   dotnet add package Microsoft.Bot.Builder.AI.QnA
-   ```
+    ```cmd
+    dotnet add package Microsoft.Bot.Builder.AI.QnA
+    ```
 
-   For more information on NuGet, see the [NuGet documentation](https://docs.microsoft.com/nuget/#pivot=start&panel=start-all).
+    For more information on NuGet, see the [NuGet documentation](https://docs.microsoft.com/nuget/#pivot=start&panel=start-all).
 
 1. In your **Startup.cs** file, add the following namespace reference.
 
-   ```csharp
-   using Microsoft.Bot.Builder.AI.QnA;
-   ```
+    **Startup.cs**
+
+    ```csharp
+    using Microsoft.Bot.Builder.AI.QnA;
+    ```
 
 1. Modify the `ConfigureServices` method in **Startup.cs** to create a `QnAMakerEndpoint` object that connects to the knowledge base defined in the **appsettings.json** file.
 
-   ```csharp
-   // Create QnAMaker endpoint as a singleton
-   services.AddSingleton(new QnAMakerEndpoint
-   {
-      KnowledgeBaseId = Configuration.GetValue<string>($"QnAKnowledgebaseId"),
-      EndpointKey = Configuration.GetValue<string>($"QnAAuthKey"),
-      Host = Configuration.GetValue<string>($"QnAEndpointHostName")
-    });
+    **Startup.cs**
 
-   ```
+    ```csharp
+    // Create QnA Maker endpoint as a singleton
+    services.AddSingleton(new QnAMakerEndpoint
+    {
+        KnowledgeBaseId = Configuration.GetValue<string>("QnAKnowledgebaseId"),
+        EndpointKey = Configuration.GetValue<string>("QnAAuthKey"),
+        Host = Configuration.GetValue<string>("QnAEndpointHostName")
+    });
+    ```
 
 1. In your **EchoBot.cs** file, add the following namespace references.
 
-   ```csharp
-   using System.Linq;
-   using Microsoft.Bot.Builder.AI.QnA;
-   ```
+    **Bots\\EchoBot.cs**
 
-1. Add an `EchoBotQnA` connector and initialize it in the bot's constructor in **EchoBot.cs**.
+    ```csharp
+    using System.Linq;
+    using Microsoft.Bot.Builder.AI.QnA;
+    ```
 
-   ```csharp
-   public QnAMaker EchoBotQnA { get; private set; }
-   public EchoBot(QnAMakerEndpoint endpoint)
-   {
-      // connects to QnA Maker endpoint for each turn
-      EchoBotQnA = new QnAMaker(endpoint);
-   }
-   ```
+1. Add an `EchoBotQnA` property and add a constructor to initialize it.
 
-1. Next, create a new method named `AccessQnAMaker` after the `OnMembersAddedAsync` method, as follows:
+    **EchoBot.cs**
 
-   ```csharp
-   private async Task AccessQnAMaker(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
-   {
-      var results = await EchoBotQnA.GetAnswersAsync(turnContext);
-      if (results.Any())
-      {
-         await turnContext.SendActivityAsync(MessageFactory.Text("QnA Maker Returned: " + results.First().Answer), cancellationToken);
-      }
-      else
-      {
-         await turnContext.SendActivityAsync(MessageFactory.Text("Sorry, could not find an answer in the Q and A system."), cancellationToken);
-      }
-   }
-   ```
+    ```csharp
+    public QnAMaker EchoBotQnA { get; private set; }
 
-1. Call your new method `AccessQnAMaker` from `OnMessageActivityAsync` as follows:
+    public EchoBot(QnAMakerEndpoint endpoint)
+    {
+       // connects to QnA Maker endpoint for each turn
+       EchoBotQnA = new QnAMaker(endpoint);
+    }
+    ```
 
-   ```csharp
-   protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
-   {
-      await turnContext.SendActivityAsync(MessageFactory.Text($"Echo: {turnContext.Activity.Text}"), cancellationToken);
+1. Add an `AccessQnAMaker` method:
 
-      await AccessQnAMaker(turnContext, cancellationToken);
-   }
-   ```
+    **EchoBot.cs**
+
+    ```csharp
+    private async Task AccessQnAMaker(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
+    {
+       var results = await EchoBotQnA.GetAnswersAsync(turnContext);
+       if (results.Any())
+       {
+          await turnContext.SendActivityAsync(MessageFactory.Text("QnA Maker Returned: " + results.First().Answer), cancellationToken);
+       }
+       else
+       {
+          await turnContext.SendActivityAsync(MessageFactory.Text("Sorry, could not find an answer in the knowledge base."), cancellationToken);
+       }
+    }
+    ```
+
+1. Update the `OnMessageActivityAsync` method to call the new `AccessQnAMaker` method.
+
+    **EchoBot.cs**
+
+    ```csharp
+    protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
+    {
+        var replyText = $"Echo: {turnContext.Activity.Text}";
+        await turnContext.SendActivityAsync(MessageFactory.Text(replyText, replyText), cancellationToken);
+
+        await AccessQnAMaker(turnContext, cancellationToken);
+    }
+    ```
 
 # [JavaScript](#tab/javascript)
 
 1. Open a terminal or command prompt to the root directory for your project.
 1. Add the **botbuilder-ai** npm package to your project.
 
-   ```shell
-   npm i botbuilder-ai
-   ```
+    ```shell
+    npm i botbuilder-ai
+    ```
 
-1. In **index.js**, following the _// Create Adapter_ section, add the following code to read your **.env** file's configuration information. This is needed to generate the QnA Maker services.
+1. In **index.js**, following the call to create the `BotFrameworkAdapter`, add the following code to read your **.env** file configuration information needed to generate the QnA Maker services.
 
-   ```javascript
-   // Map knowledge base endpoint values from .env file into the required format for `QnAMaker`.
-   const configuration = {
-      knowledgeBaseId: process.env.QnAKnowledgebaseId,
-      endpointKey: process.env.QnAAuthKey,
-      host: process.env.QnAEndpointHostName
-   };
+    **index.js**
 
-   ```
+    ```javascript
+    // Map knowledge base endpoint values from .env file into the required format for `QnAMaker`.
+    const configuration = {
+       knowledgeBaseId: process.env.QnAKnowledgebaseId,
+       endpointKey: process.env.QnAAuthKey,
+       host: process.env.QnAEndpointHostName
+    };
+    ```
 
-1. Next in **index.js**, update the bot constructor to pass in the QnA services configuration information.
+1. Modify the call to create the bot to pass in the QnA services configuration information.
 
-   ```javascript
-   // Create the main dialog.
-   const myBot = new MyBot(configuration, {});
-   ```
+    **index.js**
 
-1. In your **bot.js** file, add this require for QnAMaker
+    ```javascript
+    // Create the main dialog.
+    const myBot = new EchoBot(configuration, {});
+    ```
 
-   ```javascript
-   const { QnAMaker } = require('botbuilder-ai');
-   ```
+1. In your **bot.js** file, import `QnAMaker from **botbuilder-ai**.
 
-1. Next in **bot.js**, modify the constructor to handle the configuration parameters required to create a QnAMaker connector, and throw an error if these parameters are not provided.
+    **bot.js**
 
-   ```javascript
-      class MyBot extends ActivityHandler {
-         constructor(configuration, qnaOptions) {
+    ```javascript
+    const { QnAMaker } = require('botbuilder-ai');
+    ```
+
+1. Modify the constructor to take the configuration parameters required to create a QnA Maker connector and throw an error if these parameters are not provided.
+
+    **bot.js**
+
+    ```javascript
+    class EchoBot extends ActivityHandler {
+        constructor(configuration, qnaOptions) {
             super();
             if (!configuration) throw new Error('[QnaMakerBot]: Missing parameter. configuration is required');
-            // now create a qnaMaker connector.
+
+            // now create a QnAMaker connector.
             this.qnaMaker = new QnAMaker(configuration, qnaOptions);
-   ```
+    ```
 
 1. Finally in **bot.js**,  update your `onMessage` function to query your knowledge bases for an answer. Pass each user input to your QnA Maker knowledge base, and return the first QnA Maker response back to the user.
 
     ```javascript
     this.onMessage(async (context, next) => {
+        const replyText = `Echo: ${ context.activity.text }`;
+        await context.sendActivity(MessageFactory.text(replyText, replyText));
+
         // send user input to QnA Maker.
         const qnaResults = await this.qnaMaker.getAnswers(context);
 
         // If an answer was received from QnA Maker, send the answer back to the user.
         if (qnaResults[0]) {
-            await context.sendActivity(`QnAMaker returned response: ' ${ qnaResults[0].answer}`);
+            await context.sendActivity(`QnA Maker Returned: ' ${ qnaResults[0].answer}`);
         }
         else {
             // If no answers were returned from QnA Maker, reply with help.
@@ -277,74 +300,79 @@ Update your initialization code to load the service information for your knowled
 1. Make sure you've installed the packages as described in the samples repository README file.
 1. Add the **botbuilder-ai** reference to the **requirements.txt** file, as shown below.
 
-   <!-- Removed version numbers -->
-   ```text
-      botbuilder-core
-      botbuilder-ai
-      flask
-   ```
+    **requirements.txt**
+    <!-- Removed version numbers -->
+    ```text
+    botbuilder-core
+    botbuilder-ai
+    flask
+    ```
 
-   Notice that the versions may vary.
+    Notice that the versions may vary.
 
 1. In the **app.py** file, modify the bot instance creation as shown below.
 
-   ```python
-   # Create the bot
-   BOT = EchoBot(CONFIG)
-   ```
+    ```python
+    # Create the bot
+    BOT = EchoBot(CONFIG)
+    ```
 
 1. In the **bot.py** file import `QnAMaker` and `QnAMakerEndpoint` from **botbuilder.ai.qna**, then `Config` from **flask**, as shown below.
 
-   ```python
-   from flask import Config
+    **bot.py**
 
-   from botbuilder.ai.qna import QnAMaker, QnAMakerEndpoint
-   from botbuilder.core import ActivityHandler, MessageFactory, TurnContext
-   from botbuilder.schema import ChannelAccount
-   ```
+    ```python
+    from flask import Config
+
+    from botbuilder.ai.qna import QnAMaker, QnAMakerEndpoint
+    from botbuilder.core import ActivityHandler, MessageFactory, TurnContext
+    from botbuilder.schema import ChannelAccount
+    ```
 
 1. Next, in **bot.py_** add an `__init__` function to instantiate a `qna-maker` object. Using the configuration parameters provided in the **_config.py_** file.
 
-   ```python
-   def __init__(self, config: Config):
-      self.qna_maker = QnAMaker(
-         QnAMakerEndpoint(
-            knowledge_base_id=config.QNA_KNOWLEDGEBASE_ID,
-            endpoint_key=config.QNA_ENDPOINT_KEY,
-            host=config.QNA_ENDPOINT_HOST,
-      )
-   )
+    **bot.py**
 
+    ```python
+    def __init__(self, config: Config):
+        self.qna_maker = QnAMaker(
+            QnAMakerEndpoint(
+                knowledge_base_id=config.QNA_KNOWLEDGEBASE_ID,
+                endpoint_key=config.QNA_ENDPOINT_KEY,
+                host=config.QNA_ENDPOINT_HOST,
+        )
+    )
    ```
 
 1. Next, in **bot.py**, update `on_message_activity` to query your knowledge base for an answer. Pass each user input to your QnA Maker knowledge base, and return the first QnA Maker response to the user.
 
-   **bot.py**
+    **bot.py**
 
-   ```python
-   async def on_message_activity(self, turn_context: TurnContext):
-      # The actual call to the QnA Maker service.
-      response = await self.qna_maker.get_answers(turn_context)
-      if response and len(response) > 0:
-         await turn_context.send_activity(MessageFactory.text(response[0].answer))
-      else:
-         await turn_context.send_activity("No QnA Maker answers were found.")
-
-   ```
+    ```python
+    async def on_message_activity(self, turn_context: TurnContext):
+        # The actual call to the QnA Maker service.
+        response = await self.qna_maker.get_answers(turn_context)
+        if response and len(response) > 0:
+            await turn_context.send_activity(MessageFactory.text(response[0].answer))
+        else:
+            await turn_context.send_activity("No QnA Maker answers were found.")
+    ```
 
 1. Optionally, update the welcome message in `on_members_added_activity` for example:
 
-   ```python
-   await turn_context.send_activity("Hello and welcome to QnA!")
-   ```
+    **bot.py**
+
+    ```python
+    await turn_context.send_activity("Hello and welcome to QnA!")
+    ```
 
 ---
 
-### Test the bot locally
+## Test the bot locally
 
 At this point your bot should be able to answer some questions. Run the bot locally and open it in the Emulator.
 
-![test qna sample](./media/qna-test-bot.png)
+:::image type="content" source="./media/qna-test-bot.png" alt-text="Sample interaction with the bot and QnA Maker.":::
 
 ## Republish your bot
 
@@ -365,6 +393,9 @@ You can now republish your bot back to Azure. You need to zip your project folde
 > If your root folder location is incorrect, the **bot will fail to run in the Azure portal**. -->
 
 ### Deploy your code to Azure
+
+> [!TIP]
+> If your session token expired, run `az login` again. If you are not using your default subscription, also reset your subscription.
 
 [!INCLUDE [deploy code to Azure](~/includes/deploy/snippet-deploy-code-to-az.md)]
 

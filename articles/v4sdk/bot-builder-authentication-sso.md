@@ -34,7 +34,7 @@ Once the users sign in the root bot, they are not required to sign into each ski
 
 - Knowledge of [bot basics][concept-basics], [managing state][concept-state], the [dialogs library][concept-dialogs], how to [implement sequential conversation flow][simple-dialog], and how to [reuse dialogs][component-dialogs].
 - Knowledge of Azure and OAuth 2.0 development.
-- Visual Studio 2017 or higher for .NET.
+- Visual Studio 2017 or later for .NET.
 - Node.js for Javascript.
 - Python 3.6 or 3.7 for Python.
 - The samples listed below.

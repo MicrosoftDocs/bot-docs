@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 12/02/2020
+ms.date: 03/24/2021
 ---
 
 # Tutorial: Deploy a basic bot
@@ -70,6 +70,14 @@ When creating the bot application service, you can deploy your bot in a new or i
 [!INCLUDE [ARM with existing resource group](../includes/deploy/snippet-ARM-existing-resource-group.md)]
 
 ### 5. Prepare your code for deployment
+
+The next few steps create a language-dependent deployment file, zip (compress) the project files, and upload them to Azure.
+For these steps, the bot's _project folder_ is the root folder for the bot.
+
+- For C# bots, it is the folder that has the .csproj file.
+- For JavaScript bots, it is the folder that has the app.js or index.js file.
+- For TypeScript bots, it is the folder that includes the _src_ folder (where the bot.ts and index.ts files are).
+- For Python bots, it is the folder that has the app.py file.
 
 #### **Retrieve or create necessary IIS/Kudu files**
 

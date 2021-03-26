@@ -135,7 +135,7 @@ Fail out of a dialog. | Session.pruneDialogStack | Throw an exception to be caug
 The Bot Framework SDK v4 is based on the same underlying REST API as v3. However, v4 is a refactoring of the previous version of the SDK to allow more flexibility and control over the bots.
 
 We recommend migrating to .NET Core, since the performance is very much improved.
-However, some existing V3 bots are using external libraries that do not have a .NET Core equivalent. In this case, the Bot Framework SDK v4 can be used with .NET Framework version 4.6.1 or higher. You can find an example at [corebot](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_webapi) location.
+However, some existing V3 bots are using external libraries that do not have a .NET Core equivalent. In this case, the Bot Framework SDK v4 can be used with .NET Framework version 4.6.1 or later. You can find an example at [corebot](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_webapi) location.
 
 When migrating a project from v3 to v4, you can choose one of these options: convert in place for **.NET Framework** or port to a new project for **.NET Core**.
 

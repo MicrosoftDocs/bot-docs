@@ -26,7 +26,7 @@ This section describes how to enable the Direct Line app service extension using
 
 ## Update Node.js Bot to use Direct Line App Service Extension
 
-1. BotBuilder v4.7.0 or higher is required to use a Node.js bot with Direct Line App Service Extension.
+1. BotBuilder v4.7.0 or later is required to use a Node.js bot with Direct Line App Service Extension.
 1. Allow your app to use the **Direct Line App Service Extension Named Pipe**:
     - Update the bot's index.js (below the assignment of the adapter and bot) to include the following code that pulls the App Service name from the environment and instructs the adapter to connect to the appropriate named pipe:
     

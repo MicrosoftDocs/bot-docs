@@ -14,14 +14,14 @@ ms.date: 07/25/2019
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-This article describes how to use Web Chat with the Direct Line app service extension. Web Chat version 4.9.1 or higher is required for native Direct Line app service extension support.
+This article describes how to use Web Chat with the Direct Line app service extension. Web Chat version 4.9.1 or later is required for native Direct Line app service extension support.
 
 ## Integrate Web Chat client
 
 > [!NOTE]
 > Adaptive Cards sent through the Direct Line App Service Extension do not undergo the same processing as those sent through other versions of the Direct Line channel. Due to this the JSON representation of the Adaptive Card sent to Web Chat from the Direct Line App Service Extension will not have default values added by the channel if the fields are omitted by the bot when the card is created.
 
-Generally speaking, the approach is the same as before. With the exception that in version 4.9.1 or higher of **Web Chat** there is built in support for establishing a two-way **WebSocket**, which instead of connecting to [https://directline.botframework.com/](https://directline.botframework.com/) connects directly to the Direct Line app service extension hosted with your bot.
+Generally speaking, the approach is the same as before. With the exception that in version 4.9.1 or later of **Web Chat** there is built in support for establishing a two-way **WebSocket**, which instead of connecting to [https://directline.botframework.com/](https://directline.botframework.com/) connects directly to the Direct Line app service extension hosted with your bot.
 The Direct Line URL for your bot will be `https://<your_app_service>.azurewebsites.net/.bot/`, the Direct Line **endpoint** on your app service extension.
 If you configure your own domain name, or your bot is hosted in a sovereign Azure cloud, substitute in the appropriate URL and append the `/.bot/` path to access the Direct Line app service extension's REST APIs.
 
