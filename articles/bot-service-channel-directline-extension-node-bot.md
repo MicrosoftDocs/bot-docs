@@ -18,7 +18,7 @@ This article describes how to update a bot to work with **named pipes**, and how
 
 ## Prerequisites
 
-To perform the steps described next, you need to have a **Web App Bot**(your bot) created in Azure.
+To perform the steps described next, you need to have a **Web App Bot** (your bot) created in Azure.
 
 ## Enable Direct Line app service extension
 
@@ -28,8 +28,9 @@ This section describes how to enable the Direct Line app service extension using
 
 1. BotBuilder v4.7.0 or later is required to use a Node.js bot with Direct Line App Service Extension.
 1. Allow your app to use the **Direct Line App Service Extension Named Pipe**:
-    - Update the bot's index.js (below the assignment of the adapter and bot) to include the following code that pulls the App Service name from the environment and instructs the adapter to connect to the appropriate named pipe:
-    
+
+    Update the bot's index.js (below the assignment of the adapter and bot) to include the following code that pulls the App Service name from the environment and instructs the adapter to connect to the appropriate named pipe:
+
     ```Node.js
     
     adapter.useNamedPipe(async (context) => {
@@ -37,12 +38,13 @@ This section describes how to enable the Direct Line app service extension using
         },
         process.env.APPSETTING_WEBSITE_SITE_NAME + '.directline'
     );
-    ```   
+    ```
 
 1. Save the `index.js` file.
 1. Update the `Web.Config` file to add the `AspNetCore` handler and rule needed by Direct Line App Service Extension to service requests:
-    - Locate the `Web.Config` file in the `wwwroot` directory of your bot and modify the contents to include the following entries to the `Handlers` and `Rules` sections:
-    
+
+    Locate the `Web.Config` file in the `wwwroot` directory of your bot and modify the contents to include the following entries to the `Handlers` and `Rules` sections:
+
     ```XML
     <handlers>      
           <add name="aspNetCore" path="*/.bot/*" verb="*" modules="AspNetCoreModule" resourceType="Unspecified" />
