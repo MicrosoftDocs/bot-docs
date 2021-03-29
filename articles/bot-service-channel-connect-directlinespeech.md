@@ -21,7 +21,7 @@ Once you have built your bot, onboarding it with Direct Line Speech will enable 
 
 ## Add the Direct Line Speech channel
 
-1. To add the Direct Line Speech Channel, first open the bot in the [Azure Portal](https://portal.azure.com), From your resources, select your **Bot Channel Registration** resource. Click on **Channels** in the configuration blade.
+1. To add the Direct Line Speech Channel, first open the bot in the [Azure Portal](https://portal.azure.com), From your resources, select your **Azure Bot** resource. Click on **Channels** in the configuration blade.
 
     ![highlight of the location for selecting channels to connect to](media/voice-first-virtual-assistants/bot-service-channel-directlinespeech-selectchannel.png "selecting channels")
 
@@ -43,13 +43,7 @@ With the Direct Line Speech channel connected to your bot, you now need to enabl
 
 1. If you haven't already, open the blade for your bot in the [Azure Portal](https://portal.azure.com). 
 
-1. Click on **Settings** under the **Bot Management** category (right below **Channels**). Click the checkbox for **Enable Streaming Endpoint**.
-
-    ![enable the streaming protocol](media/voice-first-virtual-assistants/bot-service-channel-directlinespeech-enablestreamingsupport.png "enable streaming extension support")
-
-1. At the top of the page, click **Save**.
-
-1. On the same blade, under the **App Service Settings** category, click **Configuration**.
+1. Under the **App Service Settings** category, click **Configuration**.
 
     ![navigate to app service settings](media/voice-first-virtual-assistants/bot-service-channel-directlinespeech-configureappservice.png "configure the app service")
 
