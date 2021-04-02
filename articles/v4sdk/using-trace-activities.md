@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 11/18/2019
+ms.date: 04/02/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -67,7 +67,7 @@ The adapter's **OnTurnError** handler creates the trace activity to include the 
 
 **AdapterWithErrorHandler.cs**
 
-[!code-csharp[OnTurnError](~/../BotBuilder-Samples/samples/csharp_dotnetcore/13.core-bot/AdapterWithErrorHandler.cs?range=16-54&highlight=36-37)]
+[!code-csharp[OnTurnError](~/../BotBuilder-Samples/samples/csharp_dotnetcore/13.core-bot/AdapterWithErrorHandler.cs?range=20-54&highlight=33-34)]
 
 # [JavaScript](#tab/javascript)
 
