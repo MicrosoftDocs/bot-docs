@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 09/01/2020
+ms.date: 04/02/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -152,15 +152,15 @@ The adapter's error handler handles any exceptions that were not caught in the b
 
 **AdapterWithErrorHandler.cs**
 
-In our sample, the adapter's `OnTurnError` handler receives any exceptions thrown by your bot's turn logic. If there is an exception thrown, the handler deletes the conversation state for the current conversation to prevent the bot from getting stuck in a error-loop caused by being in a bad state.
+In the sample, the adapter's `OnTurnError` handler receives any exceptions thrown by your bot's turn logic. If there is an exception thrown, the handler deletes the conversation state for the current conversation to prevent the bot from getting stuck in an error-loop caused by being in a bad state.
 
-[!code-csharp[AdapterWithErrorHandler](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/AdapterWithErrorHandler.cs?range=19-53)]
+[!code-csharp[AdapterWithErrorHandler](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/AdapterWithErrorHandler.cs?range=20-54)]
 
 # [JavaScript](#tab/javascript)
 
 **index.js**
 
-In our sample, the adapter's `onTurnError` handler receives any exceptions thrown by your bot's turn logic. If there is an exception thrown, the handler deletes the conversation state for the current conversation to prevent the bot from getting stuck in a error-loop caused by being in a bad state.
+In the sample, the adapter's `onTurnError` handler receives any exceptions thrown by your bot's turn logic. If there is an exception thrown, the handler deletes the conversation state for the current conversation to prevent the bot from getting stuck in a error-loop caused by being in a bad state.
 
 [!code-javascript[AdapterWithErrorHandler](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/index.js?range=31-35,37-62)]
 
@@ -168,7 +168,7 @@ In our sample, the adapter's `onTurnError` handler receives any exceptions throw
 
 **adapter_with_error_handler.py**
 
-In our sample, the adapter's `on_error` handler receives any exceptions thrown by your bot's turn logic. If there is an exception thrown, the handler deletes the conversation state for the current conversation to prevent the bot from getting stuck in a error-loop caused by being in a bad state.
+In the sample, the adapter's `on_error` handler receives any exceptions thrown by your bot's turn logic. If there is an exception thrown, the handler deletes the conversation state for the current conversation to prevent the bot from getting stuck in a error-loop caused by being in a bad state.
 
 [!code-python[adapter_with_error_handler](~/../botbuilder-samples/samples/python/13.core-bot/adapter_with_error_handler.py?range=16-56)]
 
@@ -186,9 +186,9 @@ Finally, in `Startup.cs`, the bot is created as a transient, and on every turn, 
 
 For reference, here are the class definitions that are used in the call to create the bot above.
 
-[!code-csharp[MainDialog signature](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/Dialogs/MainDialog.cs?range=17)]
 [!code-csharp[DialogAndWelcomeBot signature](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=16)]
 [!code-csharp[DialogBot signature](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/Bots/DialogBot.cs?range=18-19)]
+[!code-csharp[MainDialog signature](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/Dialogs/MainDialog.cs?range=17)]
 
 # [JavaScript](#tab/javascript)
 
