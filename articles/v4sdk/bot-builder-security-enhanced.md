@@ -13,12 +13,12 @@ ms.date: 03/25/2021
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-This article describes potential security risks when users connect to a bot, for example using the [Web Chat](~/bot-service-channel-connect-webchat.md#embed-the-web-chat-control-in-a-web-page) control. Also, it shows mitigating solutions using the Direct Line [enhanced authentication settings](../bot-service-channel-connect-directline.md#configure-settings) and secure *user ID* handling.
+This article describes potential security risks when users connect to a bot, for example using the [Web Chat](../bot-service-channel-connect-webchat.md#embed-the-web-chat-control-in-a-web-page) control. Also, it shows mitigating solutions using the Direct Line [enhanced authentication settings](../bot-service-channel-connect-directline.md#configure-settings) and secure *user ID* handling.
 
 You must be aware that there are two user identities:
 
-- The channel user’s identity. An attacker can use it for [Impersonation](#impersonation).
-- The user’s identity from the identity provider that the bot uses to authenticated the user. An attacker can use it for [Identity spoofing](#identity-spoofing).
+- The channel user's identity. An attacker can use it for [Impersonation](#impersonation).
+- The user's identity from the identity provider that the bot uses to authenticate the user. An attacker can use it for [Identity spoofing](#identity-spoofing).
 
 <!-- Broken link: sample deleted. While waiting for the sample to be available, this paragraph has been commented out.  
 The code in this article is based on the sample: [MVC DirectLine token controller](https://github.com/microsoft/BotBuilder-Samples/tree/main/experimental/DirectLineTokenSite). See the [Example](#example) section for more details.-->
@@ -125,7 +125,7 @@ In the Web Chat control, there are two mechanisms to assure that the proper user
     > The use of the magic code has been deprecated. Instead, it's recommended to use the **Direct Line enhanced authentication** approach, described below.
 
 1. **Direct Line enhanced authentication**. Because of the issues with the *magic code* approach, Azure Bot Service removed its need. Azure Bot Service guarantees that the sign-in process can only be completed in the **same browser session** as the Web Chat itself.
-To enable this protection, you must start Web Chat with a **Direct Line token** that contains a **list of trusted domains that can host the bot’s Web Chat client**. With enhanced authentication options, you can statically specify the trusted domains (trusted origins) list in the Direct Line configuration page. See [Configure enhanced authentication](../bot-service-channel-connect-directline.md#configure-enhanced-authentication) section.
+To enable this protection, you must start Web Chat with a **Direct Line token** that contains a **list of trusted domains that can host the bot's Web Chat client**. With enhanced authentication options, you can statically specify the trusted domains (trusted origins) list in the Direct Line configuration page. See [Configure enhanced authentication](../bot-service-channel-connect-directline.md#configure-enhanced-authentication) section.
 
   <!-- Broken link: sample deleted. While waiting for the sample to be available, this section has been commented out. 
 ## Example

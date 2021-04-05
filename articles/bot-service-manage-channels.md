@@ -62,6 +62,25 @@ The connection steps are different for each channel. See the related article in 
 > |[Webex](bot-service-adapter-connect-webex.md)|Configure a bot to communicate with users using the Webex.|
 > |[Additional channels](bot-service-channel-additional-channels.md)|Additional channels available as an adapter through [provided platforms](https://botkit.ai/docs/v4/platforms/) via Botkit and [community repositories](https://botkit.ai/docs/v4/platforms/).|
 
+## Bot schema transformation version
+
+As described above, a channel converts incoming messages from other services to the Bot Framework protocol schema. Likewise, messages sent by the bot to other services are transformed from the Bot Framework native schema to the format of these services. This process is called _schema transformation_. The Bot Framework Service maintains backward compatibility of the protocol in order to avoid changing behavior of the existing bots.
+
+Occasionally, a change in the schema transformation process needs to take place that can, potentially, change the behavior of the existing bots. An example of such a change could be any bug fix if a subset of the users have taken a dependency on the existing (however erroneous) behavior. Another example of such a change would be updates or improvements in other services that would benefit bots; however adopting these updates can, potentially, change the existing behavior.
+
+By controlling the _schema transformation version_ of their bots, bot developers can control when (if ever) to enable new behavior. By default, newly created bots get the most recent schema transformation version. Existing bots can be upgraded to the newest version when they are ready to take advantage of the improvements introduced in this version. Any bot can be upgraded or downgraded at any time.
+
+You can change your bot's schema transformation version in the **Configuration** pane:
+
+:::image type="content" source="./media/channels/schema-transform-version.png" alt-text="The Schema Transformation Version field in the Configuration pane":::
+
+### Supported schema transformation versions
+
+| Schema transformation version   | Date introduced | Description     |
+| --------------------------------| ----------- | --------------------------------------------------------------- |
+| 1.1                             | April 2021  | Change Telegram channel to use [MarkdownV2 syntax](https://core.telegram.org/bots/api#markdownv2-style). |
+| 1.0                             | --  | Initial version |
+
 ## Publish a bot
 
 The publishing process is different for each channel.
