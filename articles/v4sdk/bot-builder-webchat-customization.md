@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 06/07/2019
+ms.date: 04/06/2021
 ---
 
 # Web Chat customization
@@ -24,9 +24,9 @@ Follow the instructions on the [overview page](bot-builder-webchat-overview.md) 
 
 The latest version of Web Chat control provides rich customization options: you can change colors, sizes, placement of elements, add custom elements, and interact with the hosting webpage. Below are several examples of how to customize those elements of the Web Chat UI.
 
-You can find the full list of all settings that you can easily modify in Web Chat on the [`defaultStyleOptions.js` file](https://github.com/Microsoft/BotFramework-WebChat/blob/master/packages/component/src/Styles/defaultStyleOptions.js).
+You can find the full list of all the settings that you can modify in Web Chat in the [`StyleOptions.ts`]( https://github.com/microsoft/BotFramework-WebChat/blob/master/packages/api/src/StyleOptions.ts) file. The default values for Web Chat can be found in the [defaultStyleOptions.ts](https://github.com/microsoft/BotFramework-WebChat/blob/master/packages/api/src/defaultStyleOptions.ts) file
 
-These settings will generate a _style set_, which is a set of CSS rules enhanced with [glamor](https://github.com/threepointone/glamor). You can find the full list of CSS styles generated in the style set on the [`createStyleSet.js` file](https://github.com/Microsoft/BotFramework-WebChat/blob/master/packages/component/src/Styles/createStyleSet.js).
+These settings will generate a _style set_, which is a set of CSS rules enhanced with [glamor](https://github.com/threepointone/glamor). You can find the full list of CSS styles generated in the style set in the [`createStyleSet.ts`](https://github.com/Microsoft/BotFramework-WebChat/blob/master/packages/component/src/Styles/createStyleSet.ts) file.
 
 ## Set the size of the Web Chat container
 
@@ -66,7 +66,7 @@ It is now possible to adjust the size of the Web Chat container using `styleSetO
 
 Here is the result:
 
-<img alt="Web Chat with root height and root width set" src="https://raw.githubusercontent.com/Microsoft/BotFramework-WebChat/master/media/rootHeightWidth.png" width="600"/>
+<img alt="Web Chat with root height and root width set" src="https://raw.githubusercontent.com/Microsoft/BotFramework-WebChat/master/media/rootHeightWidth.png" width="350"/>
 
 ## Change font or color
 
