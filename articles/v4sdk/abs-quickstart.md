@@ -14,15 +14,20 @@ ms.date: 03/24/2021
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-Azure Bot Service provides the core components for creating bots, including the Bot Framework SDK for developing bots and the bot service for connecting bots to channels.
-This article shows how to create a bot using the Bot Framework SDK v4 and choosing either .NET or Node.js template.
+<!--TODO **Web App Bot** and **Bot Channels Registration** deprecation notice.-->
 
-You have two approaches to create a bot with Azure:
+<!--Q: What _is_ the relationship between the Azure Bot Service and the Bot Framework SDK? The Connector REST API?-->
 
-1. **Web App**. Create a bot and register it with Azure using a Web application as shown in this article. You use this approach if you develop and host a bot in Azure.
-1. **Bot channels registration**. Create and develop your bot locally and host it on a platform different from Azure. When you register your bot, you provide the web address where your bot is hosted. You can still host it in Azure. Follow the steps described in the [Bot channels registration](../bot-service-quickstart-registration.md) article.
+The Azure Bot Service provides the core components for hosting bots and connecting them to channels.
+The Bot Framework SDK allows you to develop bots in C#, JavaScript, Python, or Java.
 
-[!INCLUDE [Azure vs local development](../includes/snippet-quickstart-paths.md)]
+This article shows how to create a bot by using the Azure _Web App Bot_ resource type.
+
+> [!IMPORTANT]
+> As of 2021-05-??, the **Azure Bot** Azure resource type is available and the **Web App Bot** and **Bot Channels Registration** resource types are deprecated.
+>
+> - New developers are encouraged to use the Bot Framework Composer for new bot development. See the Composer [overview](/composer/introduction) and [quickstart](/composer/quickstart-create-bot) for more information.<!--Should this paragraph be a snippet?-->
+> - New deployments of Bot Framework SDK bots to Azure should use the **Azure Bot** resource type. See the [Deploy a basic bot](bot-builder-tutorial-deploy-basic-bot.md) tutorial for more information.
 
 ## Prerequisites
 
@@ -85,6 +90,15 @@ You can download the code to work on it locally.
 :::image type="content" source="../media/azure-bot-quickstarts/web-app-bot-download.png" alt-text="Links on the Overview pane to download the bot source code.":::
 
 ## Additional information
+
+When you create a Web App Bot resource, Azure also creates App Service and App Service plan resources.
+
+You have two approaches to create a bot with Azure:
+
+1. **Web App**. Create a bot and register it with Azure using a Web application as shown in this article. You use this approach if you develop and host a bot in Azure.
+1. **Bot channels registration**. Create and develop your bot locally and host it on a platform different from Azure. When you register your bot, you provide the web address where your bot is hosted. You can still host it in Azure. Follow the steps described in the [Bot channels registration](../bot-service-quickstart-registration.md) article.
+
+[!INCLUDE [Azure vs local development](../includes/snippet-quickstart-paths.md)]
 
 ### Manual app registration
 
