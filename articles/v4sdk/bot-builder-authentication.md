@@ -483,7 +483,7 @@ It is best practice to let users explicitly sign out or logout, instead of relyi
 
 **Dialogs\LogoutDialog.cs**
 
-[!code-csharp[Allow logout](~/../botbuilder-samples/samples/csharp_dotnetcore/18.bot-authentication/Dialogs/LogoutDialog.cs?range=44-61&highlight=11)]
+[!code-csharp[Allow logout](~/../botbuilder-samples/samples/csharp_dotnetcore/18.bot-authentication/Dialogs/LogoutDialog.cs?range=45-63&highlight=11)]
 
 # [JavaScript](#tab/javascript)
 
