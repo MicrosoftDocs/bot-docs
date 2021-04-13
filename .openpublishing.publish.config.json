@@ -127,8 +127,8 @@
     },
     {
       "path_to_root": "botbuilder-java",
-      "url": "https://github.com/microsoft/botbuilder-java",
-      "branch": "main",
+      "url": "https://github.com/Microsoft/BotBuilder-Samples",
+      "branch": "Java-R13",
       "branch_mapping": {}
     },
     {
