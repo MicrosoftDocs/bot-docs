@@ -6,7 +6,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 08/21/2019
+ms.date: 04/20/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -17,7 +17,7 @@ monikerRange: 'azure-bot-service-4.0'
 This article shows an example of how a v4 bot can perform read, write, and delete operations on v3 user state information.
 The bot maintains conversation state using `MemoryStorage` to track and direct the conversation while asking the user questions.  It maintains the **user state** in the v3 format to track the user's answers by utilizing a custom `IStorage` class called `V3V4Storage`.  One of the arguments to this class is an `IBotDataStore`. The v3 SDK code base was copied into `Bot.Builder.Azure.V3V4` and contains all three v3 SDK storage providers (Azure Sql, Azure Table, and Cosmos Db).  The intent is to allow the existing v3 **user state** to be brought into a migrated v4 bot.
 
-The code sample can be found in [v4 state bot from v3 providers](https://github.com/microsoft/BotBuilder-Samples/tree/master/MigrationV3V4/CSharp/V4StateBotFromV3Providers).
+The code sample can be found in [v4 state bot from v3 providers](https://github.com/microsoft/BotBuilder-Samples/tree/master/Migration/MigrationV3V4/CSharp/V4StateBotFromV3Providers).
 
 ## Prerequisites
 
@@ -36,10 +36,10 @@ The code sample can be found in [v4 state bot from v3 providers](https://github.
     git clone https://github.com/microsoft/botbuilder-samples.git
     ```
 
-1. In a terminal, navigate to `MigrationV3V4/CSharp/V4StateBotFromV3Providers`
+1. In a terminal, navigate to `Migration/MigrationV3V4/CSharp/V4StateBotFromV3Providers`
 
     ```bash
-    cd BotBuilder-Samples/MigrationV3V4/CSharp/V4StateBotFromV3Providers
+    cd BotBuilder-Samples/Migration/MigrationV3V4/CSharp/V4StateBotFromV3Providers
     ```
 
 1. Run the bot from a terminal or from Visual Studio, choose option A or B.
@@ -54,7 +54,7 @@ The code sample can be found in [v4 state bot from v3 providers](https://github.
     - Or from Visual Studio
 
         - Launch Visual Studio File -> Open -> Project/Solution
-        - Navigate to `BotBuilder-Samples/MigrationV3V4/CSharp/V4StateBotFromV3Providers` folder
+        - Navigate to `BotBuilder-Samples/Migration/MigrationV3V4/CSharp/V4StateBotFromV3Providers` folder
         - Select `V4StateBot.sln` file
         - Press F5 to run the project
 
@@ -92,11 +92,11 @@ It is assumed that you have an existing v3 state store configured and in use. In
 
     Open the `Startup.cs` file in the `V4V3StateBot` project root. Towards the middle of the file (lines ~52-76) you will see configurations for each storage provider. They read in the config values from the web.config.
 
-    [!code-csharp[Storage configuration](~/../botbuilder-samples/MigrationV3V4/CSharp/V4StateBotFromV3Providers/V4V3StateBot/Startup.cs?range=52-76)]
+    [!code-csharp[Storage configuration](~/../botbuilder-samples/Migration/MigrationV3V4/CSharp/V4StateBotFromV3Providers/V4V3StateBot/Startup.cs?range=52-76)]
 
     Specify which storage provider you want your bot to use by un-commenting the corresponding lines for the instance of your choice. Once the provider is properly configured, assure that the provider class is passed to `V3V4Storage` (lines ~72-75).
 
-    [!code-csharp[Storage provider](~/../botbuilder-samples/MigrationV3V4/CSharp/V4StateBotFromV3Providers/V4V3StateBot/Startup.cs?range=72-75)]
+    [!code-csharp[Storage provider](~/../botbuilder-samples/Migration/MigrationV3V4/CSharp/V4StateBotFromV3Providers/V4V3StateBot/Startup.cs?range=72-75)]
 
     Cosmos DB (formerly Document DB) is set by default. The possible values are:
 

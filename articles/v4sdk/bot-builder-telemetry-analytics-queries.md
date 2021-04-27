@@ -26,6 +26,8 @@ It is helpful to have a basic understanding of the following concepts:
 * How to use [Log Analytics](/azure/azure-monitor/log-query/get-started-queries) in the Azure portal to write Azure Monitor log queries
 * The basic concepts of [Log queries](/azure/azure-monitor/log-query/get-started-queries) in Azure Monitor
 
+> [!TIP]
+> If your create your bot using tools such as [Power Virtual Agents](/power-virtual-agents/fundamentals-what-is-power-virtual-agents) or [Composer](/composer), you will want to use the Adaptive Dialog version of each query when available.
 ## Dashboards
 
 Azure Dashboards offer a great way to view and share the information generated from your queries.  You can build custom dashboards to help monitor your bots activity by associating your queries with the tiles that you add to your dashboard. For more information on dashboards and how to associate your queries with them, see [Create and share dashboards of Log Analytics data](/azure/azure-monitor/learn/tutorial-logs-dashboards). The remainder of this article shows examples of some of the queries that you may find useful in monitoring your bots behavior.  
@@ -166,6 +168,10 @@ customEvents
 
 Once you set the telemetry client for a dialog, the dialog (and its children) will emit some default telemetry data, such as _started_ and _completed_. This example can be used to measure the *completed* dialogs relative to *started* dialogs.  If the number of dialogs started is greater than the number completed, some of your users are not completing the dialog flow. This can be used as a starting point in identifying and troubleshooting any potential dialog logic.  It can also be used to identify the more popular and less frequented dialogs.
 
+> [!TIP]
+> If your create your bot using tools such as [Power Virtual Agents](/power-virtual-agents/fundamentals-what-is-power-virtual-agents) or [Composer](/composer/), you will want to use the adaptive dialog version of each query.
+#### Waterfall dialog completion
+
 ```Kusto
 // % Completed Waterfall Dialog: shows completes relative to starts
 let queryStartDate = ago(14d);
@@ -193,7 +199,18 @@ customEvents
 > The Kusto [join operator](/azure/data-explorer/kusto/query/joinoperator) is used to merge the rows of two tables to form a new table by matching values of the specified column(s) from each table.
 >
 > The [project operator](/azure/data-explorer/kusto/query/projectoperator) is used to select the fields that you want to show up in your output. Similar to the `extend operator` that adds a new field, the `project operator` can either choose from the existing set of fields or add a new field.
-
+#### Adaptive dialogs started and completed
+ 
+```Kusto
+// % Completed adaptive dialog: shows completes relative to starts. This type is the default dialog type when using Power Virtual Agents or Composer. 
+customEvents
+| where name=="AdaptiveDialogStart" or name == "AdaptiveDialogComplete"
+| extend DialogId = tostring(customDimensions['DialogId'])
+| summarize started=countif(name=='AdaptiveDialogStart'), completed=countif(name=='AdaptiveDialogComplete') by DialogId
+| project DialogId, started, completed
+| order by started desc, completed asc nulls last
+| render barchart with (kind=unstacked, xcolumn=DialogId, ycolumns=completed, started, ysplit=axes)
+```
 #### Sample dialog-completion query results
 
 ![Dialog completion](./media/dialogwfratio.PNG)
@@ -216,22 +233,42 @@ ALSO: I removed what was line 6 in the example because it was a duplicate where 
 
 -->
 
+#### Waterfall dialogs not completed
+
 ```Kusto
-// show incomplete dialogs
+// Show incomplete dialogs when using waterfall dialogs.
 let queryStartDate = ago(14d);
 let queryEndDate = now();
-customEvents
-| where timestamp > queryStartDate
+customEvents 
+| where timestamp > queryStartDate 
 | where timestamp < queryEndDate
-| where name == "WaterfallStart"
+| where name == "WaterfallStart" 
 | extend DialogId = customDimensions['DialogId']
 | extend instanceId = tostring(customDimensions['InstanceId'])
 | join kind=leftanti (
   customEvents
-  | where name == "WaterfallComplete"
+  | where name == "WaterfallComplete" 
   | extend instanceId = tostring(customDimensions['InstanceId'])
   ) on instanceId
 | summarize cnt=count() by  tostring(DialogId)
+| order by cnt
+| render barchart
+```
+#### Adaptive dialogs not completed
+
+```Kusto
+// Show incomplete dialogs for adaptive dialogs; this type is the default dialog type when using Power Virtual Agents or Composer.
+let queryStartDate = ago(14d);
+let queryEndDate = now();
+customEvents
+| where name == "AdaptiveDialogStart"
+| extend DialogId = tostring(customDimensions['DialogId'])
+| join kind=rightanti (
+customEvents
+| where name == "AdaptiveDialogComplete"
+| extend DialogId = tostring(customDimensions['DialogId'])
+) on name, DialogId
+| summarize cnt=count() by DialogId
 | order by cnt
 | render barchart
 ```

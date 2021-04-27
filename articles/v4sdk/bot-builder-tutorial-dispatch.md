@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 10/19/2020
+ms.date: 04/20/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -226,7 +226,7 @@ Once all of your service apps are created, the information for each needs to be 
 
 **appsettings.json**
 
-[!code-json[AppSettings](~/../botbuilder-samples/samples/csharp_dotnetcore/14.nlp-with-dispatch/AppSettings.json?range=8-17)]
+[!code-json[AppSettings](~/../botbuilder-samples/samples/csharp_dotnetcore/14.nlp-with-orchestrator/AppSettings.json?range=8-17)]
 
 For each of the entities shown below, add the values you recorded earlier in these instructions:
 
@@ -269,7 +269,7 @@ npm install --save dotenv
 Once all of your service apps are created, the information for each needs to be added into your '.env' file. The initial [JavaScript Sample][js-sample] code contains an empty .env file.
 
 **.env**
-[!code-file[EmptyEnv](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-dispatch/.env?range=1-10)]
+[!code-file[EmptyEnv](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-orchestrator/.env?range=1-10)]
 
 Add your service connection values as shown below:
 
@@ -339,7 +339,7 @@ In **BotServices.cs**, the information contained within configuration file _apps
 
 **BotServices.cs**
 
-[!code-csharp[ReadConfigurationInfo](~/../botbuilder-samples/samples/csharp_dotnetcore/14.nlp-with-dispatch/BotServices.cs?range=10-47)]
+[!code-csharp[ReadConfigurationInfo](~/../botbuilder-samples/samples/csharp_dotnetcore/14.nlp-with-orchestrator/BotServices.cs?range=10-47)]
 
 ## [JavaScript](#tab/js)
 
@@ -347,7 +347,7 @@ In **dispatchBot.js** the information contained within configuration file _.env_
 
 **bots/dispatchBot.js**
 
-[!code-javascript[ReadConfigurationInfo](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-dispatch/bots/dispatchBot.js?range=11-26)]
+[!code-javascript[ReadConfigurationInfo](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-orchestrator/bots/dispatchBot.js?range=11-26)]
 
 ## [Python](#tab/python)
 
@@ -372,13 +372,13 @@ In the **DispatchBot.cs** file whenever the `OnMessageActivityAsync` method is c
 
 **bots\DispatchBot.cs**
 
-[!code-csharp[OnMessageActivity](~/../botbuilder-samples/samples/csharp_dotnetcore/14.nlp-with-dispatch/bots/DispatchBot.cs?range=26-36)]
+[!code-csharp[OnMessageActivity](~/../botbuilder-samples/samples/csharp_dotnetcore/14.nlp-with-orchestrator/bots/DispatchBot.cs?range=26-36)]
 
 ## [JavaScript](#tab/js)
 
 In the **dispatchBot.js** `onMessage` method, we check the user input message against the Dispatch model, find the _topIntent_, then pass this on by calling _dispatchToTopIntentAsync_.
 
-[!code-javascript[onMessage](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-dispatch/bots/dispatchBot.js?range=31-44)]
+[!code-javascript[onMessage](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-orchestrator/bots/dispatchBot.js?range=31-44)]
 
 ## [Python](#tab/python)
 
@@ -398,7 +398,7 @@ When the model produces a result, it indicates which service can most appropriat
 
 **bots\DispatchBot.cs**
 
-[!code-csharp[DispatchToTop](~/../botbuilder-samples/samples/csharp_dotnetcore/14.nlp-with-dispatch/bots/DispatchBot.cs?range=51-69)]
+[!code-csharp[DispatchToTop](~/../botbuilder-samples/samples/csharp_dotnetcore/14.nlp-with-orchestrator/bots/DispatchBot.cs?range=51-69)]
 
 If method `ProcessHomeAutomationAsync` or `ProcessWeatherAsync` are invoked, they are passed the results from the dispatch model within _luisResult.ConnectedServiceResult_. The specified method then provides user feedback showing the dispatch model top intent, plus a ranked listing of all intents and entities that were detected.
 
@@ -409,7 +409,7 @@ If method `q_sample-qna` is invoked, it uses the user input contained within the
 When the model produces a result, it indicates which service can most appropriately process the utterance. The code in this sample uses the recognized _topIntent_ to show how to route the request on to the corresponding service.
 
 **bots/dispatchBot.js**
-[!code-javascript[dispatchToTopIntentAsync](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-dispatch/bots/dispatchBot.js?range=61-77)]
+[!code-javascript[dispatchToTopIntentAsync](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-orchestrator/bots/dispatchBot.js?range=61-77)]
 
 If method `processHomeAutomation` or `processWeather` are invoked, they are passed the results from the dispatch model within _recognizerResult.luisResult_. The specified method then provides user feedback showing the dispatch model's top intent, plus a ranked listing of all intents and entities that were detected.
 
