@@ -30,6 +30,9 @@ Azure Dashboards offer a great way to view and share the information generated f
 
 ## Example Kusto queries
 
+> [!TIP] If your create your bot using tools such as [Power Virtual Agents](https://docs.microsoft.com/en-us/power-virtual-agents/fundamentals-what-is-power-virtual-agents) or [Composer](https://docs.microsoft.com/en-us/composer/), you will want to use the Adaptive Dialog version of each query when available.
+
+
 > [!NOTE]
 > It is recommended to pivot on different dimensions such as period, channel, and locale for all queries in this article.
 
@@ -161,7 +164,10 @@ customEvents
 
 
 ### Dialog completion
-Once you set the telemetry client for a dialog, the dialog (and its children) will emit some default telemetry data, such as _started_ and _completed_. This example can be used to measure the *completed* dialogs relative to *started* dialogs.  If the number of dialogs started is greater than the number completed, some of your users are not completing the dialog flow. This can be used as a starting point in identifying and troubleshooting any potential dialog logic.  It can also be used to identify the more popular and less frequented dialogs.
+Once you set the telemetry client for a dialog, the dialog (and its children) will emit some default telemetry data, such as _started_ and _completed_. This example can be used to measure the *completed* dialogs relative to *started* dialogs.  If the number of dialogs started is greater than the number completed, some of your users are not completing the dialog flow. This can be used as a starting point in identifying and troubleshooting any potential dialog logic.  It can also be used to identify the more popular and less frequented dialogs. 
+
+> [!TIP] If your create your bot using tools such as [Power Virtual Agents](https://docs.microsoft.com/en-us/power-virtual-agents/fundamentals-what-is-power-virtual-agents) or [Composer](https://docs.microsoft.com/en-us/composer/), you will want to use the Adaptive Dialog version of each query.
+#### Waterfall Dialog Completion
 
 ```Kusto
 // % Completed Waterfall Dialog: shows completes relative to starts 
@@ -191,6 +197,19 @@ customEvents
 >
 > The [project operator](https://aka.ms/kusto-project-operator) is used to select the fields that you want to show up in your output. Similar to the `extend operator` that adds a new field, the `project operator` can either choose from the existing set of fields or add a new field.
 
+#### Adaptive Dialogs Started and Completed
+ 
+```Kusto
+// % Completed Adapative Dialog: shows completes relative to starts. This type is the default dialog type when using PVA or Composer. 
+customEvents
+| where name=="AdaptiveDialogStart" or name == "AdaptiveDialogComplete"
+| extend DialogId = tostring(customDimensions['DialogId'])
+| summarize started=countif(name=='AdaptiveDialogStart'), completed=countif(name=='AdaptiveDialogComplete') by DialogId
+| project DialogId, started, completed
+| order by started desc, completed asc nulls last
+| render barchart with (kind=unstacked, xcolumn=DialogId, ycolumns=completed, started, ysplit=axes)
+```
+
 #### Sample query results
 
 ![Dialog completion](./media/dialogwfratio.PNG)
@@ -212,9 +231,10 @@ QUESTION: Who can I talk to about a a doc describing this?
 ALSO: I removed what was line 6 in the example because it was a duplicate where statement: | where timestamp > period    // change timespan accordingly
 
 -->
+#### Waterfall Dialogs Incompleted
 
 ```Kusto
-// show incomplete dialogs
+// show incomplete dialogs when using Waterfall dialogs.
 let queryStartDate = ago(14d);
 let queryEndDate = now();
 customEvents 
@@ -229,6 +249,24 @@ customEvents
   | extend instanceId = tostring(customDimensions['InstanceId'])
   ) on instanceId
 | summarize cnt=count() by  tostring(DialogId)
+| order by cnt
+| render barchart
+```
+#### Adaptive Dialogs Incompleted
+
+```Kusto
+// show incomplete dialogs for Adaptive dialogs, this type is the default dialog type when using PVA or Composer.
+let queryStartDate = ago(14d);
+let queryEndDate = now();
+customEvents
+| where name == "AdaptiveDialogStart"
+| extend DialogId = tostring(customDimensions['DialogId'])
+| join kind=rightanti (
+customEvents
+| where name == "AdaptiveDialogComplete"
+| extend DialogId = tostring(customDimensions['DialogId'])
+) on name, DialogId
+| summarize cnt=count() by DialogId
 | order by cnt
 | render barchart
 ```
