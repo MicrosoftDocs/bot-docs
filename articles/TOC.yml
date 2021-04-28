@@ -33,7 +33,7 @@
 - name: Security
   items:
   - name: Security baseline
-    href: security-baseline.md
+    href: /security/benchmark/azure/baselines/bot-service-security-baseline?toc=/azure/bot-service/toc.json
   - name: Bot Service encryption
     href: bot-service-encryption.md
   - name: Authentication basics

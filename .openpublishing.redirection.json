@@ -1,5 +1,10 @@
 {
   "redirections": [
+		{
+			"source_path": "articles/security-baseline.md",
+			"redirect_url": "/security/benchmark/azure/baselines/bot-service-security-baseline",
+			"redirect_document_id": false
+		},
     {
       "source_path": "articles/bot-builder-tutorial-authentication.md",
       "redirect_url": "/previous-versions/azure/bot-service/bot-builder-tutorial-authentication",
