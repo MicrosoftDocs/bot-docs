@@ -1,73 +1,81 @@
 ---
-title: Principles of bot design - Bot Service
-description: Learn what makes a good conversational bot and how to plan and design bots to fit your needs and delight your users.
-keywords: best practices, bot design 
-author: matvelloso
-ms.author: mateusv
+title: Conversational User Experience 
+description: Learn what makes a great conversational user experience and how to design bots that delight your users.
+keywords: conversational user experience, design guide, best practices, bot design 
+author: matvelloso 
+ms.author: mateusv, quirinevwm
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 12/13/2017
+ms.date: 04/30/2021
  
 ---
 
-# Principles of bot design
+# Conversational User Experience 
+ 
+We define **Conversational User Experience (CUX)** as a modality of interaction that’s based on natural language. 
+When interacting with each other, human beings use conversation to communicate ideas, concepts, data, and emotional information. 
+CUX allows us to interact with our devices, apps, and digital services the way we communicate with each other, using phrasing and syntax via voice and text or chat that come naturally. Other modalities can burden users with the task of learning interaction behaviors that are meaningful to the system: the syntax of a command line, the information architecture of a graphical user interface, or the touch affordances of a device. 
 
-The Bot Framework enables developers to create compelling bot experiences that solve a variety of business problems. By learning the concepts described in this section, you'll become equipped to design a bot that aligns with best practices and capitalizes on lessons learned thus far in this relatively new arena. 
+CUX turns the tables. 
+Instead of users having to learn the system, it’s the system that learns. 
+It learns what we teach it about human language – patterns of speech, colloquialisms, chit-chat, even abusive words – so that it can respond appropriately.
 
-## Designing a bot
+![Natural Conversation linked with Supportive System](https://user-images.githubusercontent.com/43533472/116698253-6f3ec180-a9c4-11eb-836c-17f912ea56ae.png)
 
-If you are building a bot, it's safe to assume that you are expecting users to use it. 
-It is also safe to assume that you are hoping that users will prefer the bot experience over alternative experiences like apps, websites, phone calls, and other means of addressing their particular needs. 
-In other words, your bot is competing for users' time against things like apps and websites. 
-So, how can you maximize the odds that your bot will achieve its ultimate goal of attracting and keeping users? 
-It's simply a matter of prioritizing the right factors when designing your bot.
+Conversational designs—bots, virtual agents, digital assistants, and all other dialog interfaces—offer flexible, accessible, and powerful ways to connect with customers, employees, and one another.
+Whether you’re a novice designer or a veteran developer, the concepts described in this section will offer insights to help you craft an effective, responsible, inclusive, and, we hope, delightful experience that tackle a variety of business scenarios. 
 
-## Factors that do not guarantee a bot's success
 
-When designing your bot, be aware that none of the following factors necessarily guarantee a bot's success: 
+## A great conversational bot
 
-- **How “smart” the bot is**: 
-In most cases, it is unlikely that making your bot smarter will guarantee happy users or adoption of your platform. In reality, many bots have little advanced machine learning or natural language capabilities. A bot may include those capabilities if they're necessary to solve the problems that it's designed to address, however you should not assume any correlation between a bot's intelligence and user adoption of the bot.
+Most successful bots have at least one thing in common: a great conversational user experience. 
+CUX can be multi-modal – employing text or voice, with or without visual, auditory, or touchenabled components. 
+But fundamentally, CUX is human language. 
+Already in 2016, Microsoft CEO Satya Nadella announced, “Human language is the new UI layer”.
+A great conversational bot harnesses the power of your words and supportive UI, to build trust and forge deep connections with your users.
 
-- **How much natural language the bot supports**: 
-Your bot can be great at conversations. 
-It can have a vast vocabulary and can even make great jokes. 
-But unless it addresses the problems that your users need to solve, these capabilities may contribute very little to making your bot successful. 
-In fact, some bots have no conversational capability at all. And in many cases, that's perfectly fine.
-
-- **Voice**: 
-It isn’t always the case that enabling bots for speech will lead to great user experiences. 
-Often, forcing users to use voice can result in a frustrating user experience. 
-As you design your bot, always consider whether voice is the appropriate channel for the given problem. 
-Is there going to be a noisy environment? 
-Will voice convey the information that needs to be shared with the user? 
-
-## Factors that do influence a bot's success
-
-Most successful apps or websites have at least one thing in common: a great user experience. 
-Bots are no different in that regard. 
+If you are designing a bot, it's safe to assume that you are expecting users to use it. 
+It is also safe to assume that you are hoping that users will prefer the bot experience over alternative experiences like apps, websites, phone calls with live agents, and other means of addressing their particular queries. 
 Therefore, ensuring a great user experience should be your number one priority when designing a bot. 
-Some key considerations include:
+Some key questions to consider:
 
-- Does the bot easily solve the user’s problem with the minimum number of steps?
+- Does the bot easily solve the user’s problem with minimal back and forth turns?
 
 - Does the bot solve the user’s problem better/easier/faster than any of the alternative experiences?
 
 - Does the bot run on the devices and platforms the user cares about?
 
-- Is the bot discoverable? Do the users naturally know what to do when using it?
+- Is the bot discoverable and easy to invoke? Do the users naturally know what to do when using it?
 
-None of these questions directly relates to factors such as how smart the bot is, how much natural language capability it has, whether it uses machine learning, or which programming language was used to create it. Users are unlikely to care about any of these things if the bot solves the problem that they need to address and delivers a great user experience. A great bot user experience does not require users to type too much, talk too much, repeat themselves several times, or explain things that the bot should automatically know.
+- Does the bot guide the user when they are stuck; either handover to a live agent or provide relevant help?
+
+Users care when the bot actually solves their query. A great conversational bot does not require users to type too much, talk too much, repeat themselves several times, or explain things that the bot should automatically know and remember.
 
 > [!TIP]
-> Regardless of the type of application you're creating (bot, website, or app), make user experience a top priority.
+> Regardless of the type of bot you're creating (chatbot, voice assistant, a hybrid combination), make CUX a top priority.
 
-The process of designing a bot is like the process of designing an app or website, so
-the lessons learned from decades of building UI and delivering UX for apps and websites still apply when it comes to designing bots. 
 
-Whenever you are unsure about the right design approach for your bot, step back and ask yourself the following question: how would you solve that problem in an app or a website? Chances are, the same answer can be applied to bot design. 
+## The CUX guide
+
+By learning the concepts described in the CUX Guide, you'll become equipped to design a bot that aligns with best practices and capitalizes on lessons learned. 
+The authors and designers of this guidance are drawing from combined decades of experience building and deploying conversational UI for a variety of bots, virtual agents, and other conversational experience projects including Cortana, Bot Framework Templates, Microsoft Virtual Assistant, Personality Chat, and others. 
+
+> [!TIP]
+> Download the [CUX Guide Microsoft.pdf](https://github.com/MicrosoftDocs/bot-docs/files/6405214/CUX.Guide.Microsoft.pdf)
+
+This CUX guide is divided loosely into a few different sections. 
+The first four topics introduce conversational design and explore ways to approach the process ethically and inclusively. 
+Topics 5-7, along with our brainstorming worksheet, help you design your ideal experience. 
+Finally, topics 8-11 offer practical development tips for building the experience you’ve designed. 
+You can jump around and choose only the topics that address your immediate need, or go top to bottom in order.
+
+> [!NOTE]
+> A note on terminology: topic four explores several different kinds of conversational experiences, including bots, virtual agents, and digital assistants. 
+Within the rest of the guide, we use those terms relatively interchangeably because the principles of development in this guidance apply interchangeably to all of those design types, but we recognize there are distinctions in the industry between those and other conversational designs, and that those terms are sometimes used differently in the industry. 
+> Our intention is to offer guidance that will help with most text-based conversational experiences, regardless of their intent.
+
 
 ## Next steps
 
-Now that you're familiar with some basic principles of bot design, learn more about the basic principles for [designing the first interaction](~/bot-service-design-first-interaction.md) between a user and bot.
+Now that you're familiar with the essence of conversational user experience, learn more about [designing the first interaction](~/bot-service-design-first-interaction.md).
