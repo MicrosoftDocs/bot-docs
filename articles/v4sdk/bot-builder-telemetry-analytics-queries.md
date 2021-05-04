@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 12/07/2020
+ms.date: 05/04/2020
 ---
 
 # Analyze your bot's telemetry data
