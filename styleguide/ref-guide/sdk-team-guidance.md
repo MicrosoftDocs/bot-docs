@@ -108,7 +108,7 @@ Communicates important information about a type or a method.
 
 ```javascript
 /**
- * Base class for the frameworks state persistance scopes.
+ * Base class for the frameworks state persistence scopes.
  *
  * @remarks
  * This class will read and write state, to a provided storage provider,

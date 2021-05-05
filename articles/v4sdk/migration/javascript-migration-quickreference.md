@@ -272,7 +272,7 @@ session.dialogData.destination = results.response;
 stepContext.values.destination = destination;
 ```
 
-## To write changes in state to the persistance layer
+## To write changes in state to the persistence layer
 
 ### v3
 

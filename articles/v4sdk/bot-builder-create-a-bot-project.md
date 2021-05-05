@@ -2,11 +2,11 @@
 title: How bot projects are structured - Bot Service
 description: Learn about how bot projects are structured in the Bot Framework SDK. Learn about common aspects of bot code.
 author: JonathanFingold
-ms.author: v-jofin
+ms.author: kamrani
 manager: kamrani
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 09/24/2020
+ms.date: 04/02/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -140,7 +140,7 @@ The adapter to use is defined in the `ConfigureServices` method.
 
 **AdapterWithErrorHandler.cs**
 
-[!code-csharp[adapter](~/../botbuilder-samples/samples/csharp_dotnetcore/02.echo-bot/AdapterWithErrorHandler.cs?range=11-32)]
+[!code-csharp[adapter](~/../botbuilder-samples/samples/csharp_dotnetcore/02.echo-bot/AdapterWithErrorHandler.cs?range=12-33)]
 
 ### [JavaScript](#tab/javascript)
 

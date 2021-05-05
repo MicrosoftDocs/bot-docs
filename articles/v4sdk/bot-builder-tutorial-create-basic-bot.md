@@ -3,7 +3,7 @@ title: Tutorial to create a basic bot - Bot Service
 description: Learn how to create bots with the Bot Framework SDK. See the steps that are needed to build, run, connect, and test bots.
 keywords: echo bot, tutorial
 author: mmiele
-ms.author: v-mimiel
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service

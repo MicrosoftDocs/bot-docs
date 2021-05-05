@@ -17,7 +17,7 @@ If you're reading this message, you may have received a request from a Microsoft
 
 If you received a request from our service, it likely had a User-Agent header formatted similar to the string below:
 
-```User-Agent: BF-DirectLine/3.0 (Microsoft-BotFramework/3.0 +https://botframework.com/ua)```
+`User-Agent: BF-DirectLine/3.0 (Microsoft-BotFramework/3.0 +https://botframework.com/ua)`
 
 The most important part of this string is the **Microsoft-BotFramework** identifier, which is used by the Microsoft Bot Framework, a collection of tools and services that allows independent software developers to create and operate their own bots.
 

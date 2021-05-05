@@ -203,7 +203,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
                     // You can refer to incoming user message via turn.activity.text
                     UnrecognizedPrompt = new ActivityTemplate("Sorry, '{turn.activity.text}' did not include a valid number"),
                     // You can provide a list of validation expressions. Use turn.value to refer to any value extracted by the recognizer.
-                    Validations = new List<String> () {
+                    Validations = new List<BoolExpression> () {
                         "int(this.value) >= 1",
                         "int(this.value) <= 10"
                     },
@@ -215,7 +215,7 @@ var rootDialog = new AdaptiveDialog(nameof(AdaptiveDialog))
                     AlwaysPrompt = true,
                     OutputFormat = "float(this.value)"
                 },
-                new SendActivity("Your favorite number is {user.favoriteNumber}")
+                new SendActivity("Your favorite number is ${user.favoriteNumber}")
             }
         }
     }

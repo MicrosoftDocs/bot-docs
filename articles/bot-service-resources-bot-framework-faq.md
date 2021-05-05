@@ -6,18 +6,23 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 12/23/2020
+ms.date: 01/25/2020
 ---
 
 
-# Bot Framework FAQ index
+# Bot Framework FAQ
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-<!-- Attention writers!! When you create a new FAQ, please add the related link in the proper section below. -->
+<!-- Attention writers!! When you create a new FAQ, please add the related link in the proper section below.
+Also, notice this topic is in markdown (.md) format because being an index it is simpler to maintain.
+The actual FAQs are contained in separate files that are in yaml (.yml) format. The reasons for the yaml format
+are explained in this article: Create FAQ content (https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-faq-guide?branch=master).
+-->
 
-The following are some common questions that address problems you might face.
-In case you don't find the answer you're looking for, you can post your questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/botframework) using the `botframework` tag. If you're a new user, visit the [Stack Overflow Help Center](https://stackoverflow.com/help/how-to-ask).
+
+The following are some common questions you might have.
+In case you don't find the answer you're looking for, you can post your questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/botframework) using the `botframework` tag. If you're a new user, visit the [Stack Overflow Help Center](https://stackoverflow.com/help/how-to-ask) first.
 
 ## Background and availability
 
@@ -46,11 +51,6 @@ In case you don't find the answer you're looking for, you can post your question
 - [What is the size limit of a file transferred using a channel?](bot-service-resources-faq-general.md#what-is-the-size-limit-of-a-file-transferred-using-channels)
 
 
-<!-- Retired, re: https://github.com/MicrosoftDocs/bot-docs/issues/1698
-- [What are some community-authored dialogs?](bot-service-resources-faq-general.md#what-are-some-community-authored-dialogs)
-- [What are some community-authored templates?](bot-service-resources-faq-general.md#what-are-some-community-authored-templates)
--->
-
 ## Ecosystem
 
 - [How do I enable the Emulator to connect to localhost while behind a corporate proxy?](bot-service-resources-faq-ecosystem.md#how-do-i-enable-the-emulator-to-connect-to-localhost-while-behind-a-corporate-proxy)
@@ -71,6 +71,8 @@ In case you don't find the answer you're looking for, you can post your question
 - [Do the bots registered with the Bot Framework collect personal information? If yes, how can I be sure the data is safe and secure? What about privacy?](bot-service-resources-faq-security.md#do-the-bots-registered-with-the-bot-framework-collect-personal-information-if-yes-how-can-i-be-sure-the-data-is-safe-and-secure-what-about-privacy)
 - [Can I host my bot on my own servers?](bot-service-resources-faq-security.md#can-i-host-my-bot-on-my-own-servers)
 - [How do you ban or remove bots from the service?](bot-service-resources-faq-security.md#how-do-you-ban-or-remove-bots-from-the-service)
+- [How does the Bot Framework handle identity and access management?](bot-service-resources-faq-security.md#how-does-the-bot-framework-handle-identity-and-access-management)
+- [How do I restrict the use of my bot to users belonging to my tenant only?](bot-service-resources-faq-security.md#how-do-i-restrict-the-use-of-my-bot-to-users-belonging-to-my-tenant-only?)
 - [Which specific URLs do I need to allow-list in my corporate firewall to access Bot Framework services?](bot-service-resources-faq-security.md#which-specific-urls-do-i-need-to-allow-list-in-my-corporate-firewall-to-access-bot-framework-services)
 - [Can I block all traffic to my bot except traffic from the Bot Framework Service?](bot-service-resources-faq-security.md#can-i-block-all-traffic-to-my-bot-except-traffic-from-the-bot-framework-service)
 - [Which RBAC role is required to create and deploy a bot?](bot-service-resources-faq-security.md#which-rbac-role-is-required-to-create-and-deploy-a-bot)

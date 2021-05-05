@@ -7,10 +7,10 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 11/13/2020
+ms.date: 03/22/2021
 ---
 
-# What's new November 2020
+# What's new March 2021
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
@@ -20,36 +20,26 @@ This article summarizes key new features and improvements in Bot Framework and A
 
 |Item | C#  | JS  | Python | Java
 |:----|:---:|:---:|:------:|:-----:
-|Release |[4.11 (GA)][1] | [4.11 (GA)][2] | [4.11 (GA)][3] | [4.7 Preview][3a]
+|Release |[4.12 (GA)][1] | [4.12 (GA)][2] | [4.12 (GA)][3] | [4.6 (Preview 8)][3a]
 |Samples |[.NET Core][6], [WebAPI][10] |[Node.js][7], [TypeScript][8], [es6][9]  | [Python][11a] |
 
-Welcome to the November 2020 release of the Bot Framework SDK. There are a number of updates in this version that we hope you will like; some of the key highlights include:
+Welcome to the March 2021 release of the Bot Framework SDK. Some of the key highlights include:
 
-- [Documentation](#documentation-updates): improvements to existing documentation, including READMEs for the code and samples repositories.
-- Teams: added support for the Participant Meeting API, and other general improvements.
-- Skills: can now be run and tested locally in the Emulator without an app ID and password, improved support for skills in adaptive dialogs.
-- Orchestrator (preview): a Language Understanding technology for routing incoming user utterances to an appropriate skill or to subsequent language processing service such as LUIS or QnA Maker.
-- Cloud adapter (preview, .NET only): a bot adapter that supports hosting a bot in any cloud environment.
+- The Telephony channel is now available with samples in early preview.
+- Microsoft Teams - new and improved samples, Adaptive Card tabs, Action.Execute (preview, C#) and Composer support (preview).
+- The cloud adapter (preview 2, C#) has improved platform support with increased functionality.
+- Orchestrator (preview 3) now supports more languages, and documentation has been improved.
+- Bot Framework CLI Tools - LUIS applications neural training technology support, and more!
+- Azure Health Bot - Microsoft Healthcare Bot service is moving to Azure, further empowering organizations to benefit from Azure's enhanced tooling, security, and compliance offerings.
+- Power Virtual Agents - Bot creation, editing and publishing made easy!
 
-**Insiders**: Want to try new features as soon as possible? You can download the nightly Insiders build [[C#](https://github.com/microsoft/botbuilder-dotnet/blob/main/UsingMyGet.md)] [[JS](https://github.com/microsoft/botbuilder-js/blob/main/UsingMyGet.md)] [[Python](https://github.com/microsoft/botbuilder-python/blob/main/UsingTestPyPI.md)] [[CLI](https://github.com/Microsoft/botframework-cli#nightly-builds)] and try the latest updates as soon as they are available. And for the latest Bot Framework news, updates, and content, follow us on Twitter @msbotframework!
+See the Bot Framework SDK [release notes](https://github.com/microsoft/botframework-sdk/releases/) for more information about the changes made to the SDK in the 4.12 release.
 
-## Documentation updates
-
-Following feedback from customers and the Bot Framework Support team, a number of documents were created or updated. These are helpful towards providing answers and information relating to recurring issues from bot developers.
-
-- Expanded code comment documentation in the SDK repositories.
-- Improved READMEs in the samples and SDK repositories.
-- New and updated documents addressing recurring bot developer issues:
-  - Updated and expanded the [conceptual](v4sdk/bot-builder-adaptive-dialog-Introduction.md) and [how-to](v4sdk/bot-builder-adaptive-dialog-setup.md) articles for adaptive dialogs.
-  - Updated and reorganized the [authentication and security](v4sdk/bot-builder-authentication-basics.md) articles.
-  - Updates to the [Bot Framework Composer](/composer/) documentation.
-  - Issue fixes and general documentation improvements to response generation, Cognitive Services, adaptive expressions, skills, channels, and other topics.
-  - The SDK v3 documentation has been removed from the main doc set and is available on the [previous versions](/previous-versions) site.
+**Insiders**: Want to try new features as soon as possible? You can download the nightly Insiders build [[C#](https://github.com/microsoft/botbuilder-dotnet/blob/main/dailyBuilds.md)] [[JS](https://github.com/microsoft/botbuilder-js/blob/main/dailyBuilds.md)] [[Python](https://github.com/microsoft/botbuilder-python/blob/master/UsingTestPyPI.md)] [[CLI](https://github.com/Microsoft/botframework-cli#nightly-builds)] and try the latest updates as soon as they are available. And for the latest Bot Framework news, updates, and content, follow us on Twitter @msbotframework!
 
 ## Additional information
 
-- You can see previous announcements in the [archived information](what-is-new-archive.md).
-- See the Bot Framework SDK [release notes](https://github.com/microsoft/botframework-sdk/releases/) for more information about the changes made to the SDK in the 4.11 release.
+You can see previous announcements in the [archived information](what-is-new-archive.md).
 
 [1]:https://github.com/Microsoft/botbuilder-dotnet/#packages
 [2]:https://github.com/Microsoft/botbuilder-js#packages

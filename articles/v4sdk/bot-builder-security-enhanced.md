@@ -2,25 +2,26 @@
 title: Bot Framework channels security - Bot Service
 description: Learn about potential security risks when users connect to a bot using the allowed channels
 author: mmiele
-ms.author: v-mimiel
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 11/19/2020
+ms.date: 03/25/2021
 ---
 
 # Direct Line enhanced authentication
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-This article describes potential security risks when users connect to a bot, for example using the [Web Chat](~/bot-service-channel-connect-webchat.md#embed-the-web-chat-control-in-a-web-page) control. Also, it shows mitigating solutions using the Direct Line [enhanced authentication settings](../bot-service-channel-connect-directline.md#configure-settings) and secure *user ID* handling.
+This article describes potential security risks when users connect to a bot, for example using the [Web Chat](../bot-service-channel-connect-webchat.md#embed-the-web-chat-control-in-a-web-page) control. Also, it shows mitigating solutions using the Direct Line [enhanced authentication settings](../bot-service-channel-connect-directline.md#configure-settings) and secure *user ID* handling.
 
 You must be aware that there are two user identities:
 
-- The channel user’s identity. An attacker can use it for [Impersonation](#impersonation).
-- The user’s identity from the identity provider that the bot uses to authenticated the user. An attacker can use it for [Identity spoofing](#identity-spoofing).
+- The channel user's identity. An attacker can use it for [Impersonation](#impersonation).
+- The user's identity from the identity provider that the bot uses to authenticate the user. An attacker can use it for [Identity spoofing](#identity-spoofing).
 
-The code in this article is based on the sample: [MVC DirectLine token controller](https://github.com/microsoft/BotBuilder-Samples/tree/main/experimental/DirectLineTokenSite). See the [Example](#example) section for more details.
+<!-- Broken link: sample deleted. While waiting for the sample to be available, this paragraph has been commented out.  
+The code in this article is based on the sample: [MVC DirectLine token controller](https://github.com/microsoft/BotBuilder-Samples/tree/main/experimental/DirectLineTokenSite). See the [Example](#example) section for more details.-->
 
 <!-- Summarized from: https://blog.botframework.com/2018/09/25/enhanced-direct-line-authentication-features/ -->
 
@@ -40,17 +41,79 @@ Impersonation refers to the action of an attacker that makes the bot think he is
 
     This feature requires the user ID to start with `dl_` as shown below:
 
-    [!code-csharp[specify user ID](~/../botbuilder-samples/experimental/DirectLineTokenSite/Bot_Auth_DL_Secure_Site_MVC/Controllers/HomeController.cs?range=15-50&highlight=9)]
+    <!-- Broken link: sample deleted. While waiting for the sample to be available, replaced by the online snippet below.  
+    [!code-csharp[specify user ID](~/../botbuilder-samples/experimental/DirectLineTokenSite/Bot_Auth_DL_Secure_Site_MVC/Controllers/HomeController.cs?range=15-50&highlight=9)] -->
+
+    ```csharp
+    public class HomeController : Controller
+    {
+        private const string secret = "<TODO: DirectLine secret>";
+        private const string dlUrl = "https://directline.botframework.com/v3/directline/tokens/generate";
+    
+        public async Task<ActionResult> Index()
+        {
+            HttpClient client = new HttpClient();
+            var userId = $"dl_{Guid.NewGuid()}";
+    
+            HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, dlUrl);
+            request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", secret);
+            request.Content = new StringContent(
+                JsonConvert.SerializeObject(
+                    new { User = new { Id = userId } }),
+                    Encoding.UTF8,
+                    "application/json");
+    
+            var response = await client.SendAsync(request);
+    
+            string token = String.Empty;
+            if (response.IsSuccessStatusCode)
+            {
+                var body = await response.Content.ReadAsStringAsync();
+                token = JsonConvert.DeserializeObject<DirectLineToken>(body).token;
+            }
+    
+            var config = new ChatConfig()
+            {
+                Token = token,
+                UserId = userId
+            };
+    
+            return View(config);
+        }
+    }    
+    
+    ```
 
     The generated token, based on the Direct Line secret, is then used in the Web Chat control as shown below:
 
-    [!code-csharp[specify token](~/../botbuilder-samples/experimental/DirectLineTokenSite/Bot_Auth_DL_Secure_Site_MVC/Views/Home/Index.cshtml?range=1-16&highlight=11-14)]
+    <!-- Broken link: sample deleted. While waiting for the sample to be available, replaced by the online snippet below.  
+    [!code-csharp[specify token](~/../botbuilder-samples/experimental/DirectLineTokenSite/Bot_Auth_DL_Secure_Site_MVC/Views/Home/Index.cshtml?range=1-16&highlight=11-14)] -->
+
+    ```csharp
+    @model Bot_Auth_DL_Secure_Site_MVC.Models.ChatConfig
+    @{
+        ViewData["Title"] = "Home Page";
+    }
+    <div id="webchat" role="main" />
+    <head>
+        <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+    </head>
+    <body>
+        <script>
+          window.WebChat.renderWebChat({
+              directLine: window.WebChat.createDirectLine({ token: '@Model.Token' }),
+                userID: '@Model.UserId'
+          }, document.getElementById('webchat'));
+        </script>
+    </body>
+
+    ```
 
 ## Identity spoofing
 
 Identity spoofing refers to the action of an attacker that assumes the identity of a legitimate user and then uses that identity to accomplish a malicious goal.
 
-When a bot asks the channel user A to sign-in to an identity provider, the sign-in process must assure that user A is the only one that signs into the provider. If another user B is also allowed to sign-in the provider, he would have access to user A resources through the bot.
+When a bot asks the channel user A to sign-in to an identity provider, the sign-in process must assure that user A is the only one that signs into the provider. If another user is also allowed to sign-in the provider, they would have access to user A resources through the bot.
 
 ### User identity spoofing mitigation
 
@@ -59,23 +122,25 @@ In the Web Chat control, there are two mechanisms to assure that the proper user
 1. **Magic code**. At the end of the sign-in process, the user is presented with a randomly generated 6-digit code (*magic code*). The user must type this code in the conversation to complete the sign-in process. This tends to result in a bad user's experience. Additionally, it is still susceptible to phishing attacks. A malicious user can trick another user to sign-in and obtain the magic code through phishing.
 
     >[!WARNING]
-    > The use of the magic code is deprecated. Instead, it is recommended to use the **Direct Line enhanced authentication** approach, described below.
+    > The use of the magic code has been deprecated. Instead, it's recommended to use the **Direct Line enhanced authentication** approach, described below.
 
 1. **Direct Line enhanced authentication**. Because of the issues with the *magic code* approach, Azure Bot Service removed its need. Azure Bot Service guarantees that the sign-in process can only be completed in the **same browser session** as the Web Chat itself.
-To enable this protection, you must start Web Chat with a **Direct Line token** that contains a **list of trusted domains that can host the bot’s Web Chat client**. With enhanced authentication options, you can statically specify the trusted domains (trusted origins) list in the Direct Line configuration page. See [Configure enhanced authentication](../bot-service-channel-connect-directline.md#configure-enhanced-authentication) section.
+To enable this protection, you must start Web Chat with a **Direct Line token** that contains a **list of trusted domains that can host the bot's Web Chat client**. With enhanced authentication options, you can statically specify the trusted domains (trusted origins) list in the Direct Line configuration page. See [Configure enhanced authentication](../bot-service-channel-connect-directline.md#configure-enhanced-authentication) section.
 
+  <!-- Broken link: sample deleted. While waiting for the sample to be available, this section has been commented out. 
 ## Example
 
 The code in this article is based on the sample: [MVC DirectLine token controller](https://github.com/microsoft/BotBuilder-Samples/tree/main/experimental/DirectLineTokenSite).
 
 To run the example, perform the following steps:
 
-1. If you do not have a bot, create a basic one as shown in this article: [Tutorial: Create a basic bot](bot-builder-tutorial-create-basic-bot.md).
-1. Connect the Direct Line channel to the bot. Follow the steps described in this article: [Connect a bot to Direct Line](../bot-service-channel-connect-directline.md).
+1. If you do not have a bot, you can refer to the tutorial [Create a basic bot](bot-builder-tutorial-create-basic-bot.md) to create one.
+1. Connect the Direct Line channel to the bot. Follow the steps described in the article [Connect a bot to Direct Line](../bot-service-channel-connect-directline.md).
 1. When connecting the bot to the Direct Line, enable the [enhanced authentication](../bot-service-channel-connect-directline.md#configure-settings) option.
 1. Copy and securely store the secret key.
-1. Finally, assign the secret key in the example `HomeController` class, as shown below.
+1. Finally, assign the secret key in the `HomeController` class, as shown below.
 
     [!code-csharp[cs sample](~/../botbuilder-samples/experimental/DirectLineTokenSite/Bot_Auth_DL_Secure_Site_MVC/Controllers/HomeController.cs?range=15-19&highlight=3-4)]
 
     The example (client application) will use the secret key to ask Direct Line to issue a token. This token, along with the user ID, uniquely and securely identifies the user to allow the communication with the bot using the Web Chat control.
+-->

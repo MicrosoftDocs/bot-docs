@@ -248,7 +248,7 @@ async def on_turn(self, turn_context: TurnContext):
     # Set LastAccessedTime to the current time.
     await self.last_accessed_time_property.set(turn_context, now_seconds)
 
-    # Save any state changes that might have ocurred during the turn.
+    # Save any state changes that might have occurred during the turn.
     await self.conversation_state.save_changes(turn_context)
     await self.user_state.save_changes(turn_context)
 ```

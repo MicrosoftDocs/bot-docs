@@ -3,7 +3,7 @@ title: Differences between the v3 and v4 NodeJS SDK - Bot Service
 description: Find out how versions 3 and 4 of the Bot Framework JavaScript SDK differ. Learn about changes in activity processing, state management, and dialogs.
 keywords: bot migration, dialogs, state
 author: mmiele
-ms.author: v-mimiel
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
@@ -64,7 +64,7 @@ v4 defines `UserState`, `ConversationState`, and `PrivateConversationState` clas
 
 ### Setting up state
 
-State should be configured in the application entry point file, commonly 'index.js' or 'app.js' in NodeJS applications. 
+State should be configured in the application entry point file, commonly 'index.js' or 'app.js' in NodeJS applications.
 
 1. Initialize one or more objects that implement the `Storage` interface provided by botbuilder-core. This represents the backing store for your bot's data.
     The v4 SDK provides a few [storage layers](../bot-builder-concept-state.md#storage-layer).
@@ -165,17 +165,17 @@ To prompt the user and receive the result of a prompt:
 Please, refer to the following resources for more details and background information.
 
 | Topic | Description |
-| :--- | :--- |
-|[Migrate a Javascript SDK v3 bot to v4](https://docs.microsoft.com/azure/bot-service/migration/conversion-javascript?view=azure-bot-service-4.0)| Porting v3 JavaScript bot to v4|
-| [What's new in Bot Framework](https://docs.microsoft.com/azure/bot-service/what-is-new?view=azure-bot-service-4.0) | Bot Framework and Azure Bot Service key features and improvements|
-|[How bots work](../bot-builder-basics.md)|The internal mechanism of a bot|
-|[Managing state](../bot-builder-concept-state.md)|Abstractions to make state management easier|
-|[Dialogs library](../bot-builder-concept-dialog.md)| Central concepts to manage a conversation|
-|[Send and receive text messages](../bot-builder-howto-send-messages.md)|Primary way a bot communicate with users|
-|[Send Media](../bot-builder-howto-add-media-attachments.md)|Media attachments, such as images, video, audio, and files| 
-|[Sequential conversation flow](../bot-builder-dialog-manage-conversation-flow.md)| Questioning as the main way a bot interacts with users|
-|[Save user and conversation data](../bot-builder-howto-v4-state.md)|Tracking a conversation while stateless|
-|[Complex Flow](../bot-builder-dialog-manage-complex-conversation-flow.md)|Manage complex conversation flows |
-|[Reuse Dialogs](../bot-builder-compositcontrol.md)|Create independent dialogs to handle specific scenarios|
-|[Interruptions](../bot-builder-howto-handle-user-interrupt.md)| Handling interruptions to create a robust bot|
-|[Activity Schema](https://aka.ms/botSpecs-activitySchema)|Schema for humans and automated software|
+|:-|:-|
+| [Migrate a Javascript SDK v3 bot to v4](https://docs.microsoft.com/azure/bot-service/migration/conversion-javascript) | Porting v3 JavaScript bot to v4 |
+| [What's new in Bot Framework](https://docs.microsoft.com/azure/bot-service/what-is-new) | Bot Framework and Azure Bot Service key features and improvements |
+| [How bots work](../bot-builder-basics.md) | The internal mechanism of a bot |
+| [Managing state](../bot-builder-concept-state.md) | Abstractions to make state management easier |
+| [Dialogs library](../bot-builder-concept-dialog.md) | Central concepts to manage a conversation |
+| [Send and receive text messages](../bot-builder-howto-send-messages.md) | Primary way a bot communicate with users |
+| [Send Media](../bot-builder-howto-add-media-attachments.md) | Media attachments, such as images, video, audio, and files |
+| [Sequential conversation flow](../bot-builder-dialog-manage-conversation-flow.md) | Questioning as the main way a bot interacts with users |
+| [Save user and conversation data](../bot-builder-howto-v4-state.md) | Tracking a conversation while stateless |
+| [Complex Flow](../bot-builder-dialog-manage-complex-conversation-flow.md) | Manage complex conversation flows |
+| [Reuse Dialogs](../bot-builder-compositcontrol.md) | Create independent dialogs to handle specific scenarios |
+| [Interruptions](../bot-builder-howto-handle-user-interrupt.md) | Handling interruptions to create a robust bot |
+| [Activity Schema](https://aka.ms/botSpecs-activitySchema) | Schema for humans and automated software |

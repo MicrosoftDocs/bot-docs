@@ -3,7 +3,7 @@ title: Bot Framework SDK Migration overview - Bot Service
 description: See how to migrate bots from version 3 to 4 of the Bot Framework SDK. Learn about changes in version 4 in state management, dialogs, and other areas.
 keywords: bot migration
 author:  mmiele
-ms.author: v-mimiel
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
@@ -15,7 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../../includes/applies-to-v4-current.md)]
 
-The Bot Framework SDK v4 builds on the customers' feedback and learning experience from previous SDKs. The new version introduces the right levels of abstraction while enabling a flexible  architecture of the bot components. This, for example, allows you to create a simple bot and then expand it in sophistication using the modularity and extensibility of the Bot Framework SDK v4.
+The Bot Framework SDK v4 builds on customers' feedback and the learning experience from previous SDKs. It introduces the right levels of abstraction while enabling a flexible bot components architecture. Among other things, this allows you to create a simple bot and then expand its sophistication using the modularity and extensibility of the Bot Framework SDK v4.
 
 > [!NOTE]
 > The Bot Framework SDK v4 strives to keep simple things simple and makes complex things possible.
@@ -135,7 +135,7 @@ Fail out of a dialog. | Session.pruneDialogStack | Throw an exception to be caug
 The Bot Framework SDK v4 is based on the same underlying REST API as v3. However, v4 is a refactoring of the previous version of the SDK to allow more flexibility and control over the bots.
 
 We recommend migrating to .NET Core, since the performance is very much improved.
-However, some existing V3 bots are using external libraries that do not have a .NET Core equivalent. In this case, the Bot Framework SDK v4 can be used with .NET Framework version 4.6.1 or higher. You can find an example at [corebot](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_webapi) location.
+However, some existing V3 bots are using external libraries that do not have a .NET Core equivalent. In this case, the Bot Framework SDK v4 can be used with .NET Framework version 4.6.1 or later. You can find an example at [corebot](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_webapi) location.
 
 When migrating a project from v3 to v4, you can choose one of these options: convert in place for **.NET Framework** or port to a new project for **.NET Core**.
 

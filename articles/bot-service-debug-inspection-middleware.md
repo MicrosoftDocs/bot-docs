@@ -2,12 +2,12 @@
 title: Debug a bot with inspection middleware - Bot Service
 description: Learn how to use inspection middleware to debug bots. See how to use the Bot Framework Emulator to inspect state data and message traffic that involves bots.
 author: zxyanliu
-ms.author: v-liyan
+ms.author: kamrani
 keywords: Bot Framework SDK, debug bot, inspection middleware, bot emulator, Azure Bot Channels Registration
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 11/17/2020
+ms.date: 04/02/2021
 ---
 
 # Debug a bot with inspection middleware
@@ -46,7 +46,7 @@ Set up the inspection state and add the inspection middleware to the adapter in 
 [!code-csharp [inspection bot sample](~/../botbuilder-samples/samples/csharp_dotnetcore/47.inspection/Startup.cs?range=17-37)]
 
 **AdapterWithInspection.cs**  
-[!code-csharp [inspection bot sample](~/../botbuilder-samples/samples/csharp_dotnetcore/47.inspection/AdapterwithInspection.cs?range=11-37)]
+[!code-csharp [inspection bot sample](~/../botbuilder-samples/samples/csharp_dotnetcore/47.inspection/AdapterwithInspection.cs?range=14-37)]
 
 Update the bot class in the **EchoBot.cs** file.
 

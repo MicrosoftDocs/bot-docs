@@ -6,10 +6,10 @@ This article starts from the [CoreBot sample app](https://aka.ms/cs-core-sample)
 
 1. Open the [CoreBot sample app](https://aka.ms/cs-core-sample) in Visual Studio.
 
-2. Add  the `Microsoft.Bot.Builder.Integration.ApplicationInsights.Core ` NuGet package. For more information on using NuGet, see [Install and manage packages in Visual Studio](/nuget/consume-packages/install-use-packages-visual-studio):
-
+2. Add  the `Microsoft.Bot.Builder.Integration.ApplicationInsights.Core` NuGet package. For more information on using NuGet, see [Install and manage packages in Visual Studio](/nuget/consume-packages/install-use-packages-visual-studio):
 
 3. Include the following statements in `Startup.cs`:
+
     ```csharp
     using Microsoft.ApplicationInsights.Extensibility;
     using Microsoft.Bot.Builder.ApplicationInsights;
@@ -19,7 +19,8 @@ This article starts from the [CoreBot sample app](https://aka.ms/cs-core-sample)
 
     Note: If you're following along by updating the CoreBot sample code you will notice that the using statement for `Microsoft.Bot.Builder.Integration.AspNet.Core` already exists in the CoreBot sample.
 
-4. Include the following code in the `ConfigureServices()` method in `Startup.cs`. This will make telemetry services available to your bot via [dependency injection (DI)](/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2):
+4. Include the following code in the `ConfigureServices()` method in `Startup.cs`. This will make telemetry services available to your bot via [dependency injection (DI)](/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2&preserve-view=true):
+
     ```csharp
     // This method gets called by the runtime. Use this method to add services to the container.
     public void ConfigureServices(IServiceCollection services)
@@ -49,9 +50,10 @@ This article starts from the [CoreBot sample app](https://aka.ms/cs-core-sample)
     }
     ```
 
-    Note: If you're following along by updating the CoreBot sample code you will notice that `services.AddSingleton<IBotFrameworkHttpAdapter, AdapterWithErrorHandler>();` already exists 
+    Note: If you're following along by updating the CoreBot sample code you will notice that `services.AddSingleton<IBotFrameworkHttpAdapter, AdapterWithErrorHandler>();` already exists.
 
-5. Instruct the adapter to use the middleware code that was added to the `ConfigureServices()` method. You do this in `AdapterWithErrorHandler.cs` with the parameter TelemetryInitializerMiddleware telemetryInitializerMiddleware in the constructor's parameter list, and the `Use(telemetryInitializerMiddleware);` statement in the contructor as shown here:
+5. Instruct the adapter to use the middleware code that was added to the `ConfigureServices()` method. You do this in `AdapterWithErrorHandler.cs` with the parameter TelemetryInitializerMiddleware telemetryInitializerMiddleware in the constructor's parameter list, and the `Use(telemetryInitializerMiddleware);` statement in the constructor as shown here:
+
     ```csharp
         public AdapterWithErrorHandler(IConfiguration configuration, ILogger<BotFrameworkHttpAdapter> logger, TelemetryInitializerMiddleware telemetryInitializerMiddleware, ConversationState conversationState = null)
             : base(configuration, logger)
@@ -85,7 +87,7 @@ When adding a new dialog to any ComponentDialog, it will inherit the Microsoft.B
 
 Follow the steps below to update your CoreBot example:
 
-1.  In `MainDialog.cs`, update the constructor's parameter list to include the `IBotTelemetryClient` parameter, then set the MainDialog's TelemetryClient property to that value as shown in the following code snippet:
+1. In `MainDialog.cs`, update the constructor's parameter list to include the `IBotTelemetryClient` parameter, then set the MainDialog's TelemetryClient property to that value as shown in the following code snippet:
 
     ```csharp
     public MainDialog(IConfiguration configuration, ILogger<MainDialog> logger, IBotTelemetryClient telemetryClient)

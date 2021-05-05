@@ -25,7 +25,7 @@ For AppInsights samples, see the luis-with-appinsights [C# sample](https://aka.m
 
 See [conversation analytics telemetry](./v4sdk/bot-builder-telemetry.md) for information about how to add Application Insights to an existing bot.
 
-## Enable Application Insights on ASP.Net
+## Enable Application Insights on ASP.NET
 
 For basic Application Insights support, see how to [set up Application Insights for your ASP.NET website](https://docs.microsoft.com/azure/application-insights/app-insights-asp-net). The Bot Framework (starting with v4.2) provides an additional level of Application Insights telemetry, but it is not required for diagnosing HTTP 500 errors.
 
@@ -148,7 +148,7 @@ Ensure there's an Application Insights key included in your config file.
 
 ### Check logs
 
-Bot ASP.Net and Node will emit logs at the server level that can be inspected.
+Bot ASP.NET and Node will emit logs at the server level that can be inspected.
 
 #### Set up a browser to watch your logs
 

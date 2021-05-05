@@ -48,7 +48,7 @@ When creating the bot application service, you can deploy your bot in a new or i
 * [Deploy via ARM template with existing resource group](#deploy-via-arm-template-with-existing-resource-group)
 
 > [!IMPORTANT]
-> Python bots cannot be deployed to a resource group that contains Windows services/bots.  Multiple Python bots can be deployed to the same resource group, but create other services (LUIS, QnA, etc.) in another resource group.
+> Python bots cannot be deployed to a resource group that contains Windows services/bots. Multiple Python bots can be deployed to the same resource group, but you need to create other services (LUIS, QnA, etc.) in another resource group.
 
 #### **Deploy via ARM template (with **new** Resource Group)**
 
@@ -81,7 +81,8 @@ When creating the bot application service, you can deploy your bot in a new or i
 
 ## Additional information
 
-Deploying your bot to Azure will involve paying for the services you use. The [billing and cost management](https://docs.microsoft.com/azure/billing/) article helps you understand Azure billing, monitor usage and costs, and manage your account and subscriptions.
+Deploying your bot to Azure will involve paying for the services you use. The [billing and cost management](/azure/billing/) article helps you understand Azure billing, monitor usage and costs, and manage your account and subscriptions.
+See also [Azure Command-Line Interface (CLI) documentation](/cli/azure/) and [Azure CLI release notes](/cli/azure/release-notes-azure-cli).
 
 ## Next steps
 

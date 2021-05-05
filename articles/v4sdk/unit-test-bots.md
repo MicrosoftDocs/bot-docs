@@ -101,7 +101,7 @@ The `DialogTestClient` class is included in the [botbuilder-testing]() npm packa
 
 ### DialogTestClient
 
-The first parameter of `DialogTestClient` is the target channel. This allows you to test different rendering logic based on the target channel for your bot (Teams, Slack, Cortana, etc.). If you are uncertain about your target channel, you can use the `Emulator` or `Test` channel ids but keep in mind that some components may behave differently depending on the current channel, for example, `ConfirmPrompt` renders the Yes/No options differently for the `Test` and `Emulator` channels. You can also use this parameter to test conditional rendering logic in your dialog based on the channel ID.
+The first parameter of `DialogTestClient` is the target channel. This allows you to test different rendering logic based on the target channel for your bot (Teams, Slack, etc.). If you are uncertain about your target channel, you can use the `Emulator` or `Test` channel ids but keep in mind that some components may behave differently depending on the current channel, for example, `ConfirmPrompt` renders the Yes/No options differently for the `Test` and `Emulator` channels. You can also use this parameter to test conditional rendering logic in your dialog based on the channel ID.
 
 The second parameter is an instance of the dialog being tested (Note: **"sut"** stands for "System Under Test", we use this acronym in the code snippets in this article).
 

@@ -16,6 +16,8 @@
     href: python/bot-builder-python-quickstart.md
   - name: Create a bot using Azure Bot Service
     href: v4sdk/abs-quickstart.md
+  # - name: Create a bot using Azure PowerShell # Doesn't work, shouldn't have been added, will add back in when it works.
+  #   href: powershell/bot-builder-powershell-quickstart.md
 - name: Tutorials
   items:
   - name: 1. Create a basic bot
@@ -31,7 +33,7 @@
 - name: Security
   items:
   - name: Security baseline
-    href: security-baseline.md
+    href: /security/benchmark/azure/baselines/bot-service-security-baseline?toc=/azure/bot-service/toc.json
   - name: Bot Service encryption
     href: bot-service-encryption.md
   - name: Authentication basics
@@ -268,15 +270,13 @@
       href: bot-service-manage-analytics.md
     - name: Configure bot settings
       href: bot-service-manage-settings.md
-    - name: Configure speech priming
-      href: bot-service-manage-speech-priming.md
     - name: Channels
       items:
       - name: Connect a bot to channels
         href: bot-service-manage-channels.md
       - name: Implement channel-specific functionality
         href: v4sdk/bot-builder-channeldata.md
-      - name: Cortana
+      - name: Cortana (retired)
         href: bot-service-channel-connect-cortana.md
       - name: Direct Line
         items:
@@ -297,7 +297,7 @@
             href: bot-service-channel-directline-extension-net-client.md
           - name: Use extension with WebChat
             href: bot-service-channel-directline-extension-webchat-client.md
-          - name: Use extenson within VNET
+          - name: Use extension within VNET
             href: bot-service-channel-directline-extension-vnet.md
       - name: Alexa
         href: bot-service-channel-connect-alexa.md
@@ -321,6 +321,8 @@
         href: bot-service-channel-connect-slack.md
       - name: Telegram
         href: bot-service-channel-connect-telegram.md
+      - name: Telephony
+        href: bot-service-channel-connect-telephony.md
       - name: Twilio
         href: bot-service-channel-connect-twilio.md
       - name: WeChat
@@ -487,6 +489,9 @@
       href: file-format/bot-builder-qna-file-format.md
   - name: Entities and activity types
     href: bot-service-activities-entities.md
+  - name: Azure Policy built-ins
+    displayName: samples, policies, definitions
+    href: ./policy-reference.md
 - name: Resources
   items:
   - name: Get support
@@ -540,13 +545,7 @@
     - name: Transcript schema
       href: https://aka.ms/botSpecs-transcripts
   - name: Virtual Assistant
-    items:
-    - name: Overview
-      href: v4sdk/bot-builder-virtual-assistant-introduction.md
-    - name: Template Introduction
-      href: v4sdk/bot-builder-virtual-assistant-template.md
-    - name: Virtual Assistant Skills
-      href: v4sdk/bot-builder-skills-overview.md
+    href: v4sdk/bot-builder-virtual-assistant-introduction.md
   - name: WebChat
     items:
     - name: Overview

@@ -13,7 +13,7 @@ It is a lightweight markup language designed to be both processable by documenta
 
 ## Prerequisites
 
-- Install [Python 3.6](https://www.python.org/downloads/) or higher.
+- Install [Python 3.6](https://www.python.org/downloads/) or later.
 - Install [Sphinx](http://www.sphinx-doc.org/en/master/). Refer to the steps described below. It creates Python documentation from `reStructuredText`, and has facilities for the documentation of software projects in a range of languages. Its output (YML files) feds into the DocFX tool.
 - Downloaded [DocFX](https://dotnet.github.io/docfx/). It generates static sites from markdown and code. Accepts as input the Sphinx output (YML files). It is recommended to extract it in C:\Program Files\docfx. If you create a PATH variable it is even better.
 

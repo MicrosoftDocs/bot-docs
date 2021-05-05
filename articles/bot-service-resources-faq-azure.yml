@@ -1,0 +1,148 @@
+### YamlMime:FAQ
+
+metadata:
+  title: Bot Framework Azure Frequently Asked Questions  # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: "Answers to common Azure frequent asked questions." # Required; article description that is displayed in search results. < 160 chars.
+  services: service
+  ms.service: bot-service #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: article # Required
+  author: mmiele #Required; your GitHub user alias, with correct capitalization.
+  ms.author: botcc #Required; microsoft alias of author; optional team alias.
+  ms.date: 03/04/2021 #Required; mm/dd/yyyy format.
+
+title: Bot Framework Azure Frequently Asked Questions # < 60 chars
+summary: |
+  This article answers commonly asked Azure questions.
+
+  <!-- Attention writers!!
+     1 - This article contains FAQs regarding Bot Framework Azure.
+     1 - When you create a new FAQ, please add the related link to the proper section in bot-service-resources-bot-framework-faq.md.-->
+
+  [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
+
+sections:
+  - name: Azure
+    questions:
+      - question: How do I create my own App Registration?
+        answer: |
+          You create your own **App Registration** in cases like these:
+
+          - You created your bot in the [Bot Framework portal](https://dev.botframework.com/bots/new).
+          - You are unable to create an app registration in your organization and need another party to create the App ID for the bot you're building.
+          - You need to manually create your own App ID (and password).
+
+          Follow the steps described below.
+
+          1. Sign into your [Azure account](https://portal.azure.com). If you don't have an Azure account, you can [sign up for a free account](https://azure.microsoft.com/free/).
+          1. Go to [the app registrations pane](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) and click **New registration** in the action bar at the top.
+
+              > [!div class="mx-imgBorder"]
+              > ![new registration](media/app-registration/new-registration.png)
+
+          1. Enter a display name for the application registration in the *Name* field and select the supported account types.
+
+              [!INCLUDE [select account type](includes/authentication/auth-account-types.md)]
+          
+              > [!div class="mx-imgBorder"]
+              > ![registration details](media/app-registration/registration-details.png)
+
+          1. Select **Register**
+
+             After a few moments, the newly created app registration should open a pane.
+             Copy the *Application (client) ID* in the Overview pane and save it.
+             You will need it to populate the related App ID field during the bot creation, as explained later in this article.
+
+              > [!div class="mx-imgBorder"]
+              > ![application id](media/app-registration/app-id.png)
+
+          ### Creating a bot using the Azure portal
+
+          If you're creating your bot in the [Azure portal](https://ms.portal.azure.com/#home) using the **Bot Channel Registration**,
+          you need to generate a secret key (client secret) for your app registration.
+
+          1. Select **Certificates & secrets** in the left navigation column of your app registration's pane.
+          1. In that pane, on the right, select the **New client secret** button.
+          In the pop up dialog, enter an optional description for the secret, select the expiration from the **Expires** radio button group.
+
+             > [!div class="mx-imgBorder"]
+             > ![new secret](media/app-registration/new-secret.png)
+
+          1. Select **Add**.
+          1. Copy the secret's value from the table under *Client secrets* and save it.
+
+              ![copy secret](media/app-registration/new-secret-copy.png)
+
+          1. During your bot registration, when creating the App ID and password, enter the App ID and the secret you saved in the
+          proper input boxes as shown in the figure below.
+
+             > [!NOTE]
+             > The secret will only be visible while on this blade, and you won't be able to retrieve it after you leave that page. Be sure to copy it somewhere safe.
+
+             > [!div class="mx-imgBorder"]
+             > ![new app id](media/app-registration/create-app-id.png)
+
+            An example of how to apply the above steps can be found in [Add authentication to a bot](v4sdk\bot-builder-authentication.md).
+
+      - question: What files do I need to zip up for deployment?
+        answer: |
+          You must manually create a zip archive with all the files in the project, as described in the step: [zip up the code directory manually step](https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0&tabs=csharp#52-zip-up-the-code-directory-manually).
+          Please, make sure that you select all the files and folders in your bot's project folder.
+          Then, while still in the project folder, zip up all the selected files and folders as shown in the picture below.
+
+          > [!div class="mx-imgBorder"]
+          > ![select all and zip](./media/deploy-bot-cli/select-all-zip.png)
+
+      - question: What version of Azure CLI should I use to deploy a bot?
+        answer: |
+          Use the latest version of the Azure Command-Line Interface (CLI) otherwise you will get deprecated commands errors.
+          See [Install the Azure CLI](/cli/azure/install-azure-cli).
+
+      - question: What should I do when getting Azure CLI deprecation errors?
+        answer: |
+          Upgrade to the latest version of the [Azure CLI](/cli/azure/install-azure-cli).
+          For Azure CLI version [2.2.0](https://github.com/MicrosoftDocs/azure-docs-cli/blob/master/docs-ref-conceptual/release-notes-azure-cli.md#march-10-2020) or later,
+          you must use `az deployment sub create` and `az deployment group create` instead of `az deployment create` and `az group deployment create` commands respectively.
+
+          ### Change log of the Azure CLI commands used to deploy a bot to Azure
+
+          |Azure ClI version | Command1 | Command 2|
+          |-------|-------|-------|
+          |Azure CLI 2.2.0 and later versions | `az deployment group create` | `az deployment sub create` |
+          |Azure CLI 2.1.0 and earlier versions | `az group deployment create` | `az deployment create` |
+
+          For more information, see [Azure CLI change log](https://github.com/MicrosoftDocs/azure-docs-cli/blob/master/docs-ref-conceptual/release-notes-azure-cli.md).
+
+      - question: What are the CLI deprecated commands related to `az deployment`?
+        answer: |
+          The following are the `az deployment` deprecated commands:
+
+          > [!div class="mx-tdBreakAll"]
+          > |Deprecated|Replaced By|
+          > |-------------|----------|
+          > |`az deployment <create/list show/delete/validate/export/cancel>`|`az deployment **sub** <create/list/show/delete/validate/export/cancel>`|
+          >| `az deployment operation <list/show>` |`az deployment operation **sub** <list/show>`|
+          >| `az group deployment <create/list/show/delete/validate/export/cancel>` | `az deployment **group** <create/list/show/delete/validate/export/cancel>` |
+          > |`az group deployment operation <list/show>` |`az deployment operation **group** < list/show>` |
+
+      - question: How do I know whether the Azure CLI commands are deprecated?
+        answer: |
+          To know if an Azure CLI command is deprecated, execute the the command with the `-h` (help) option as shown in the picture below.
+
+          ![cli help](./media/deploy-bot-cli/cli-help.png)
+
+          ### Azure CLI Change Log
+
+          Read more about [Azure CLI change log](https://github.com/MicrosoftDocs/azure-docs-cli/blob/master/docs-ref-conceptual/release-notes-azure-cli.md).
+
+          ### Azure Resource Management (ARM)
+
+          The following is a consolidated list of the commands that fit the current Azure CLI design: az {command group} {?sub-command-group} {operation} {parameters}.
+
+          - `az resource`: Improve the examples of the resource module
+          - `az policy assignment list`: Support listing policy assignments at Management Group scope
+          - Add `az deployment group` and `az deployment operation group` for template deployment at resource groups. This is a duplicate of `az group deployment` and `az group deployment operation`.
+          - Add `az deployment sub` and `az deployment operation sub` for template deployment at subscription scope. This is a duplicate of `az deployment` and `az deployment operation`.
+          - Add `az deployment mg` and `az deployment operation mg` for template deployment at management groups
+          - Add `ad deployment tenant` and `az deployment operation tenant` for template deployment at tenant scope
+          - az policy assignment create: Add a description to the `--location` parameter
+          - `az group deployment create`: Add parameter `--aux-tenants` to support cross tenants.

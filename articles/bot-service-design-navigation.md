@@ -80,7 +80,7 @@ However, it could just be that the bot is busy processing the user's input and h
 >
 > <b>Don't</b>: Design your bot to postpone acknowledgement of user input until the bot finishes compiling its response.
 
-By immediately acknowledging the user's input, you eliminate any potential for confusion as to the state of the bot. If your response takes a long time to compile, consider sending a "typing" message to indicate your bot is working, and then following up with a [proactive message](v4sdk/bot-builder-howto-proactive-message.md)
+By immediately acknowledging the user's input, you eliminate any potential for confusion as to the state of the bot. If your response takes a long time to compile, consider sending a "typing" message to indicate your bot is working, and then following up with a [proactive message](v4sdk/bot-builder-howto-proactive-message.md).
 
 ## The "captain obvious bot"
 

@@ -6,7 +6,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 08/14/2019
+ms.date: 04/19/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -18,16 +18,16 @@ monikerRange: 'azure-bot-service-4.0'
 
 This article shows an example of how a v4 bot can perform read, write, and delete operations on v3 user state information.
 
-The code sample can be found in [v4 v3 user state adapter sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/MigrationV3V4/Node/V4V3-user-state-adapter-sample-bot).
+The code sample can be found in [v4 v3 user state adapter sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/Migration/MigrationV3V4/Node/V4V3-user-state-adapter-sample-bot).
 
 > [!NOTE]
 > A bot maintains **conversation state** to track and direct the conversation and ask questions to the user. It maintains **user state** to track the user's answers.
 
 ## Prerequisites
 
-- npm version 6.9.0 or higher (needed to support package aliasing).
+- npm version 6.9.0 or later (needed to support package aliasing).
 
-- Node.js version 10.14.1 or higher.
+- Node.js version 10.14.1 or later.
 
     To check the version installed on your computer, in a terminal, execute the following command:
 
@@ -44,10 +44,10 @@ The code sample can be found in [v4 v3 user state adapter sample](https://github
     git clone https://github.com/microsoft/botbuilder-samples.git
     ```
 
-1. In a terminal, navigate to `BotBuilder-Samples/MigrationV3V4/Node/V4V3-user-state-adapter-sample-bot`
+1. In a terminal, navigate to `BotBuilder-Samples/Migration/MigrationV3V4/Node/V4V3-user-state-adapter-sample-bot`
 
     ```bash
-    cd BotBuilder-Samples/MigrationV3V4/Node/V4V3-user-state-adapter-sample-bot
+    cd BotBuilder-Samples/Migration/MigrationV3V4/Node/V4V3-user-state-adapter-sample-bot
     ```
 
 1. Run `npm install` in the following locations:
@@ -76,11 +76,11 @@ The code sample can be found in [v4 v3 user state adapter sample](https://github
 
     1. Open the `index.js` file in the project root. Towards the beginning of the file (lines ~38-98) you will see configurations for each storage provider, as noted in the comments. They read in the configuration values from the `.env` file via Node `process.env`. The following code snippet shows how to configure the SQL Database.
 
-        [!code-javascript[Storage configuration](~/../botbuilder-samples/MigrationV3V4/Node/V4V3-user-state-adapter-sample-bot/index.js?range=77-92)]
+        [!code-javascript[Storage configuration](~/../botbuilder-samples/Migration/MigrationV3V4/Node/V4V3-user-state-adapter-sample-bot/index.js?range=77-92)]
 
     1. Specify which storage provider you want your bot to use by passing the storage client instance of your choice to the `StorageMapper` adapter (~line 107).
 
-        [!code-javascript[StorageMapper](~/../botbuilder-samples/MigrationV3V4/Node/V4V3-user-state-adapter-sample-bot/index.js?range=105-107)]
+        [!code-javascript[StorageMapper](~/../botbuilder-samples/Migration/MigrationV3V4/Node/V4V3-user-state-adapter-sample-bot/index.js?range=105-107)]
 
         The default setting is *Cosmos DB*. The possible values are:
 

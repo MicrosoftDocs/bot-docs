@@ -3,7 +3,7 @@ bot-builder-tutorial-create-basic-bot.md and bot-builder-dotnet-sdk-quickstart.m
 
 - [ASP.NET Core Runtime 3.1](https://dotnet.microsoft.com/download)
 - [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
-- Knowledge of [ASP.NET Core](https://docs.microsoft.com/aspnet/core/) and [asynchronous programming in C#](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/async/index)
+- Knowledge of [ASP.NET Core](/aspnet/core/) and [asynchronous programming in C#](/dotnet/csharp/programming-guide/concepts/async/index)
 
 ### Templates
 
@@ -24,7 +24,7 @@ To install the Bot Framework templates:
 
 1. Open a console window.
 
-1. Download and install [.NET Core SDK download](https://dotnet.microsoft.com/download) version 3.1 or higher.
+1. Download and install [.NET Core SDK download](https://dotnet.microsoft.com/download) version 3.1 or later.
 1. You can use this command to determine which version of the .NET Core command-line interface you have installed.
 
    ```cmd

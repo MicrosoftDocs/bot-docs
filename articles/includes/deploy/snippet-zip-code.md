@@ -6,9 +6,10 @@ It is important to include your built code with all necessary dependencies in th
 
 > [!IMPORTANT]
 > Before zipping your project files, make sure that you are in the bot's project folder.
+>
 > - For C# bots, it is the folder that has the .csproj file.
 > - For JavaScript bots, it is the folder that has the app.js or index.js file.
 > - For TypeScript bots, it is the folder that includes the _src_ folder (where the bot.ts and index.ts files are).
 > - For Python bots, it is the folder that has the app.py file.
-> 
+>
 > **Within** the project folder, make sure you select all the files and folders before running the command to create the zip file. This will create a single zip file within the project folder. If your root folder location is incorrect, the **bot will fail to run in the Azure portal**.

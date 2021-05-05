@@ -30,14 +30,25 @@ The Bot Framework Command Line Interface (CLI) lets you automate the management 
 
 This article describes how to perform some common tasks used to deploy a QnA Maker KB using the Bot Framework CLI.
 
-1. [Create your QnA Maker resource in Azure Cognitive Services](#create-your-qna-maker-resource-in-azure-cognitive-services)
-1. [Install the Bot Framework CLI](#install-the-bot-framework-cli)
-1. [Create your QnA Maker initialization file](#create-your-qna-maker-initialization-file)
-1. [Create your QnA Maker model](#create-your-qna-maker-model)
-1. [Create your QnA Maker knowledge base](#create-your-qna-maker-knowledge-base)
-1. [Test your QnA Maker knowledge base](#test-your-qna-maker-knowledge-base)
-1. [Publish your QnA Maker knowledge base](#publish-your-qna-maker-knowledge-base)
-1. [Create a QnA Maker knowledge base and publish it to production using the build command](#create-a-qna-maker-knowledge-base-and-publish-it-to-production-using-the-build-command)
+- [Deploy QnA Maker knowledge base using the Bot Framework qnamaker CLI commands](#deploy-qna-maker-knowledge-base-using-the-bot-framework-qnamaker-cli-commands)
+  - [Prerequisites](#prerequisites)
+  - [Using the qnamaker CLI commands to enable QnA Maker in your bot](#using-the-qnamaker-cli-commands-to-enable-qna-maker-in-your-bot)
+  - [Create your QnA Maker resource in Azure Cognitive Services](#create-your-qna-maker-resource-in-azure-cognitive-services)
+  - [Install the Bot Framework CLI](#install-the-bot-framework-cli)
+  - [Create your QnA Maker initialization file](#create-your-qna-maker-initialization-file)
+  - [Create your QnA Maker model](#create-your-qna-maker-model)
+  - [Create your QnA Maker knowledge base](#create-your-qna-maker-knowledge-base)
+  - [Test your QnA Maker knowledge base](#test-your-qna-maker-knowledge-base)
+  - [Publish your QnA Maker knowledge base](#publish-your-qna-maker-knowledge-base)
+  - [Create a QnA Maker knowledge base and publish it to production using the build command](#create-a-qna-maker-knowledge-base-and-publish-it-to-production-using-the-build-command)
+    - [How to use the build command](#how-to-use-the-build-command)
+      - [The qnamaker:build parameters](#the-qnamakerbuild-parameters)
+      - [The qnamaker configuration file](#the-qnamaker-configuration-file)
+    - [QnA and multiple language variations](#qna-and-multiple-language-variations)
+    - [QnA Maker Knowledge Bases created](#qna-maker-knowledge-bases-created)
+    - [The settings file generated using the build command](#the-settings-file-generated-using-the-build-command)
+    - [The dialog file](#the-dialog-file)
+  - [Additional information](#additional-information)
 
 Once your bot project's QnA Maker KB .qna files have been created, you are ready to follow the steps outlined in this article to create your QnA Maker KB. If you do not have a project with QnA Maker KB .qna files, you can use the [QnAMaker][qna-maker-sample]. See the sample repository's readme for information on [Getting the samples][getting-the-samples].
 
@@ -244,7 +255,7 @@ The pattern for the .qna file name when language variants are used is as follows
 
 For example:
 
-```
+```qna
 example.en-us.qna
 example.fr-fr.qna
 example.de-de.qna
@@ -267,7 +278,7 @@ The QnA Maker KB name:
 
 For example, if your botName is _MyProject_ and your username is _YuuriTanaka_, the names of your KBs would be as follows:
 
-```
+```qna
 MyProject(YuuriTanaka).en-us.qna
 MyProject(YuuriTanaka).fr-fr.qna
 MyProject(YuuriTanaka).de-de.qna

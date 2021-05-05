@@ -1,11 +1,12 @@
 ---
 title: Add authentication to a bot via Azure Bot Service
-description: Describes how to use the Azure Bot Service authentication features to add SSO to your bot.
+description: Describes how to use the Azure Bot Service authentication features in your bot.
+author: mmiele
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 11/24/2020
+ms.date: 02/11/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -68,8 +69,8 @@ how to [implement sequential conversation flow][simple-dialog], and how to [reus
 
 | Sample | BotBuilder version | Demonstrates |
 |:---|:---:|:---|
-| **Authentication** in [**CSharp**][cs-auth-sample] or [**JavaScript**][js-auth-sample] or  [**Python**][python-auth-sample] | v4 | OAuthCard support |
-| **Authentication MSGraph** in [**CSharp**][cs-msgraph-sample] or [**JavaScript**][js-msgraph-sample] or [**Python**](https://aka.ms/bot-auth-msgraph-python-sample-code)| v4 |  Microsoft Graph API support with OAuth 2 |
+| **Authentication** in [**C#**][cs-auth-sample] or [**JavaScript**][js-auth-sample] or  [**Python**][python-auth-sample] | v4 | OAuthCard support |
+| **Authentication MSGraph** in [**C#**][cs-msgraph-sample] or [**JavaScript**][js-msgraph-sample] or [**Python**](https://aka.ms/bot-auth-msgraph-python-sample-code)| v4 |  Microsoft Graph API support with OAuth 2 |
 
 ### About the samples
 
@@ -281,6 +282,16 @@ You will need your bot's app ID and password to complete this process.
 
     [!code-json[appsettings](~/../botbuilder-samples/samples/csharp_dotnetcore/18.bot-authentication/appsettings.json)]
 
+1. Update **startup.cs**:
+
+    To use OAuth in _non-public Azure clouds_, like government cloud, you must add the following code in the `startup.cs` file:
+
+    ```csharp
+    string uri = "https://api.botframework.azure.us";
+    MicrosoftAppCredentials.TrustServiceUrl(uri);
+    OAuthClientConfig.OAuthEndpoint = uri;
+    ```
+
 # [JavaScript](#tab/javascript)
 
 1. Clone from the github repository you want to work with: [**Bot authentication**][js-auth-sample] or [**Bot authentication MSGraph**][js-msgraph-sample].
@@ -472,7 +483,7 @@ It is best practice to let users explicitly sign out or logout, instead of relyi
 
 **Dialogs\LogoutDialog.cs**
 
-[!code-csharp[Allow logout](~/../botbuilder-samples/samples/csharp_dotnetcore/18.bot-authentication/Dialogs/LogoutDialog.cs?range=44-61&highlight=11)]
+[!code-csharp[Allow logout](~/../botbuilder-samples/samples/csharp_dotnetcore/18.bot-authentication/Dialogs/LogoutDialog.cs?range=45-63&highlight=11)]
 
 # [JavaScript](#tab/javascript)
 

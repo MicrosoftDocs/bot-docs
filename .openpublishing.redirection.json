@@ -1,5 +1,10 @@
 {
   "redirections": [
+		{
+			"source_path": "articles/security-baseline.md",
+			"redirect_url": "/security/benchmark/azure/baselines/bot-service-security-baseline",
+			"redirect_document_id": false
+		},
     {
       "source_path": "articles/bot-builder-tutorial-authentication.md",
       "redirect_url": "/previous-versions/azure/bot-service/bot-builder-tutorial-authentication",
@@ -2083,9 +2088,29 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "articles/v4sdk/bot-builder-dialogs-greeting.md",
+      "redirect_url": "/azure/bot-service/bot-builder-send-welcome-message",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "articles/v4sdk/bot-builder-tutorial-basic-deploy.md",
       "redirect_url": "/azure/bot-service/bot-builder-tutorial-create-basic-bot",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-virtual-assistant-template.md",
+      "redirect_url": "/azure/bot-service/bot-builder-virtual-assistant-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-skills-overview.md",
+      "redirect_url": "/azure/bot-service/bot-builder-virtual-assistant-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/bot-service-manage-speech-priming.md",
+      "redirect_url": "/azure/bot-service/",
+      "redirect_document_id": false
     }
   ]
 }

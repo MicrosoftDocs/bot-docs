@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 02/19/2020
+ms.date: 04/19/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -74,7 +74,7 @@ To convert an existing bot to a skill bot takes just a few steps, as outlined in
 
    **V3EchoBot\\Web.config**
 
-   [!code-xml[app settings](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3EchoBot/Web.config?range=11-16)]
+   [!code-xml[app settings](~/../botbuilder-samples/Migration/MigrationV3V4/CSharp/Skills/V3EchoBot/Web.config?range=11-16)]
 
 1. Add a custom claims validator and a supporting authentication configuration class.
 
@@ -82,13 +82,13 @@ To convert an existing bot to a skill bot takes just a few steps, as outlined in
 
    This implements custom claims validation and throws an `UnauthorizedAccessException` if validation fails.
 
-   [!code-csharp[claims validator](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3EchoBot/Authentication/CustomAllowedCallersClaimsValidator.cs?range=4-72&highlight=45,63,66)]
+   [!code-csharp[claims validator](~/../botbuilder-samples/Migration/MigrationV3V4/CSharp/Skills/V3EchoBot/Authentication/CustomAllowedCallersClaimsValidator.cs?range=4-72&highlight=45,63,66)]
 
    **V3EchoBot\\Authentication\\CustomSkillAuthenticationConfiguration.cs**
 
    This loads the allowed callers information from the configuration file and uses the `CustomAllowedCallersClaimsValidator` for claims validation.
 
-   [!code-csharp[allowed callers](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3EchoBot/Authentication/CustomSkillAuthenticationConfiguration.cs?range=4-20&highlight=12-14)]
+   [!code-csharp[allowed callers](~/../botbuilder-samples/Migration/MigrationV3V4/CSharp/Skills/V3EchoBot/Authentication/CustomSkillAuthenticationConfiguration.cs?range=4-20&highlight=12-14)]
 
 1. Update the `MessagesController` class.
 
@@ -96,27 +96,27 @@ To convert an existing bot to a skill bot takes just a few steps, as outlined in
 
    Update the using statements.
 
-   [!code-csharp[using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3EchoBot/Controllers/MessagesController.cs?range=4-15)]
+   [!code-csharp[using statements](~/../botbuilder-samples/Migration/MigrationV3V4/CSharp/Skills/V3EchoBot/Controllers/MessagesController.cs?range=4-15)]
 
    Update the class attribute from `BotAuthentication` to `SkillBotAuthentication`. Use the optional `AuthenticationConfigurationProviderType` parameter to use the custom claims validation provider.
 
-   [!code-csharp[attribute](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3EchoBot/Controllers/MessagesController.cs?range=19-21)]
+   [!code-csharp[attribute](~/../botbuilder-samples/Migration/MigrationV3V4/CSharp/Skills/V3EchoBot/Controllers/MessagesController.cs?range=19-21)]
 
    In the `HandleSystemMessage` method, add a condition to handle an `endOfConversation` message. This allows the skill to clear state and release resources when the conversation is ended from the skill consumer.
 
-   [!code-csharp[on end of conversation](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3EchoBot/Controllers/MessagesController.cs?range=45-65)]
+   [!code-csharp[on end of conversation](~/../botbuilder-samples/Migration/MigrationV3V4/CSharp/Skills/V3EchoBot/Controllers/MessagesController.cs?range=45-65)]
 
 1. Modify the bot code to allow the skill to flag that the conversation is complete when it receives an "end" or "stop" message from the user. The skill should also clear state and release resources when it ends the conversation.
 
    **V3EchoBot\\Dialogs\\RootDialog.cs**
 
-   [!code-csharp[message received](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3EchoBot/Dialogs/RootDialog.cs?range=21-41&highlight=5-13)]
+   [!code-csharp[message received](~/../botbuilder-samples/Migration/MigrationV3V4/CSharp/Skills/V3EchoBot/Dialogs/RootDialog.cs?range=21-41&highlight=5-13)]
 
 1. Use this manifest for the echo bot. Set the endpoint app ID to the bot's app ID.
 
    **V3EchoBot\\wwwroot\\echo-bot-manifest.json**
 
-   [!code-json[manifest](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3EchoBot/wwwroot/echo-bot-manifest.json?highlight=22)]
+   [!code-json[manifest](~/../botbuilder-samples/Migration/MigrationV3V4/CSharp/Skills/V3EchoBot/wwwroot/echo-bot-manifest.json?highlight=22)]
 
    For the skill-manifest schema, see [skill-manifest-2.0.0.json](https://github.com/microsoft/botframework-sdk/blob/master/schemas/skills/skill-manifest-2.0.0.json).
 
@@ -132,7 +132,7 @@ To convert an existing bot to a skill bot takes just a few steps, as outlined in
 
    **V3PizzaBot\\Web.config**
 
-   [!code-xml[app settings](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3PizzaBot/Web.config?range=11-16)]
+   [!code-xml[app settings](~/../botbuilder-samples/Migration/MigrationV3V4/CSharp/Skills/V3PizzaBot/Web.config?range=11-16)]
 
 1. Add a `ConversationHelper` class that has helper methods to
    - Send the `endOfConversation` activity when the skill ends. This can return the order information in the activity's `Value` property and set the `Code` property to reflect why the conversation ended.
@@ -140,7 +140,7 @@ To convert an existing bot to a skill bot takes just a few steps, as outlined in
 
    **V3PizzaBot\\ConversationHelper.cs**
 
-   [!code-csharp[conversation helper](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3PizzaBot/ConversationHelper.cs?range=4-79)]
+   [!code-csharp[conversation helper](~/../botbuilder-samples/Migration/MigrationV3V4/CSharp/Skills/V3PizzaBot/ConversationHelper.cs?range=4-79)]
 
 1. Update the `MessagesController` class.
 
@@ -148,15 +148,15 @@ To convert an existing bot to a skill bot takes just a few steps, as outlined in
 
    Update the using statements.
 
-   [!code-csharp[using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3PizzaBot/Controllers/MessagesController.cs?range=4-16)]
+   [!code-csharp[using statements](~/../botbuilder-samples/Migration/MigrationV3V4/CSharp/Skills/V3PizzaBot/Controllers/MessagesController.cs?range=4-16)]
 
    Update the class attribute from `BotAuthentication` to `SkillBotAuthentication`. This bot uses the default claims validator.
 
-   [!code-csharp[attribute](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3PizzaBot/Controllers/MessagesController.cs?range=20-21)]
+   [!code-csharp[attribute](~/../botbuilder-samples/Migration/MigrationV3V4/CSharp/Skills/V3PizzaBot/Controllers/MessagesController.cs?range=20-21)]
 
    In the `Post` method, modify the `message` activity condition to allow the user to cancel their ordering process from within the skill. Also, add an `endOfConversation` activity condition to allow the skill to clear state and release resources when the conversation is ended from the skill consumer.
 
-   [!code-csharp[on end of conversation](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3PizzaBot/Controllers/MessagesController.cs?range=69-87)]
+   [!code-csharp[on end of conversation](~/../botbuilder-samples/Migration/MigrationV3V4/CSharp/Skills/V3PizzaBot/Controllers/MessagesController.cs?range=69-87)]
 
 1. Modify the bot code.
 
@@ -164,21 +164,21 @@ To convert an existing bot to a skill bot takes just a few steps, as outlined in
 
    Update the using statements.
 
-   [!code-csharp[using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3PizzaBot/PizzaOrderDialog.cs?range=4-14)]
+   [!code-csharp[using statements](~/../botbuilder-samples/Migration/MigrationV3V4/CSharp/Skills/V3PizzaBot/PizzaOrderDialog.cs?range=4-14)]
 
    Add a welcome message. This will help the user know what's going on when the root bot invokes the pizza bot as a skill.
 
-   [!code-csharp[start form](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3PizzaBot/PizzaOrderDialog.cs?range=29-35)]
+   [!code-csharp[start form](~/../botbuilder-samples/Migration/MigrationV3V4/CSharp/Skills/V3PizzaBot/PizzaOrderDialog.cs?range=29-35)]
 
    Modify the bot code to allow the skill to flag that the conversation is complete when the user cancels or completes their order. The skill should also clear state and release resources when it ends the conversation.
 
-   [!code-csharp[form complete](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3PizzaBot/PizzaOrderDialog.cs?range=76-104)]
+   [!code-csharp[form complete](~/../botbuilder-samples/Migration/MigrationV3V4/CSharp/Skills/V3PizzaBot/PizzaOrderDialog.cs?range=76-104)]
 
 1. Use this manifest for the pizza bot. Set the endpoint app ID to the bot's app ID.
 
    **V3PizzaBot\\wwwroot\\pizza-bot-manifest.json**
 
-   [!code-json[manifest](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3PizzaBot/wwwroot/pizza-bot-manifest.json?highlight=22)]
+   [!code-json[manifest](~/../botbuilder-samples/Migration/MigrationV3V4/CSharp/Skills/V3PizzaBot/wwwroot/pizza-bot-manifest.json?highlight=22)]
 
    For the skill-manifest schema, see [skill-manifest-2.0.0.json](https://github.com/microsoft/botframework-sdk/blob/master/schemas/skills/skill-manifest-2.0.0.json).
 
@@ -194,7 +194,7 @@ To convert an existing bot to a skill bot takes just a few steps, as outlined in
 
    **V3SimpleSandwichBot\\Web.config**
 
-   [!code-xml[app settings](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3SimpleSandwichBot/Web.config?range=11-16)]
+   [!code-xml[app settings](~/../botbuilder-samples/Migration/MigrationV3V4/CSharp/Skills/V3SimpleSandwichBot/Web.config?range=11-16)]
 
 1. Add a `ConversationHelper` class that has helper methods to
    - Send the `endOfConversation` activity when the skill ends. This can return the order information in the activity's `Value` property and set the `Code` property to reflect why the conversation ended.
@@ -202,7 +202,7 @@ To convert an existing bot to a skill bot takes just a few steps, as outlined in
 
    **V3SimpleSandwichBot\\ConversationHelper.cs**
 
-   [!code-csharp[conversation helper](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3SimpleSandwichBot/ConversationHelper.cs?range=4-79)]
+   [!code-csharp[conversation helper](~/../botbuilder-samples/Migration/MigrationV3V4/CSharp/Skills/V3SimpleSandwichBot/ConversationHelper.cs?range=4-79)]
 
 1. Update the `MessagesController` class.
 
@@ -210,15 +210,15 @@ To convert an existing bot to a skill bot takes just a few steps, as outlined in
 
    Update the using statements.
 
-   [!code-csharp[using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3SimpleSandwichBot/Controllers/MessagesController.cs?range=4-17)]
+   [!code-csharp[using statements](~/../botbuilder-samples/Migration/MigrationV3V4/CSharp/Skills/V3SimpleSandwichBot/Controllers/MessagesController.cs?range=4-17)]
 
    Update the class attribute from `BotAuthentication` to `SkillBotAuthentication`. This bot uses the default claims validator.
 
-   [!code-csharp[attribute](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3SimpleSandwichBot/Controllers/MessagesController.cs?range=21-22)]
+   [!code-csharp[attribute](~/../botbuilder-samples/Migration/MigrationV3V4/CSharp/Skills/V3SimpleSandwichBot/Controllers/MessagesController.cs?range=21-22)]
 
    In the `Post` method, modify the `message` activity condition to allow the user to cancel their ordering process from within the skill. Also, add an `endOfConversation` activity condition to allow the skill to clear state and release resources when the conversation is ended from the skill consumer.
 
-   [!code-csharp[on end of conversation](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3SimpleSandwichBot/Controllers/MessagesController.cs?range=42-60)]
+   [!code-csharp[on end of conversation](~/../botbuilder-samples/Migration/MigrationV3V4/CSharp/Skills/V3SimpleSandwichBot/Controllers/MessagesController.cs?range=42-60)]
 
 1. Modify the sandwich form.
 
@@ -226,17 +226,17 @@ To convert an existing bot to a skill bot takes just a few steps, as outlined in
 
    Update the using statements.
 
-   [!code-csharp[using statements](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3SimpleSandwichBot/Sandwich.cs?range=4-8)]
+   [!code-csharp[using statements](~/../botbuilder-samples/Migration/MigrationV3V4/CSharp/Skills/V3SimpleSandwichBot/Sandwich.cs?range=4-8)]
 
    Modify the form's `BuildForm` method to allow the skill to flag that the conversation is complete.
 
-   [!code-csharp[form complete](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3SimpleSandwichBot/Sandwich.cs?range=47-54&highlight=6)]
+   [!code-csharp[form complete](~/../botbuilder-samples/Migration/MigrationV3V4/CSharp/Skills/V3SimpleSandwichBot/Sandwich.cs?range=47-54&highlight=6)]
 
 1. Use this manifest for the sandwich bot. Set the endpoint app ID to the bot's app ID.
 
    **V3SimpleSandwichBot\\wwwroot\\sandwich-bot-manifest.json**
 
-   [!code-json[manifest](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V3SimpleSandwichBot/wwwroot/sandwich-bot-manifest.json?highlight=22)]
+   [!code-json[manifest](~/../botbuilder-samples/Migration/MigrationV3V4/CSharp/Skills/V3SimpleSandwichBot/wwwroot/sandwich-bot-manifest.json?highlight=22)]
 
    For the skill-manifest schema, see [skill-manifest-2.0.0.json](https://github.com/microsoft/botframework-sdk/blob/master/schemas/skills/skill-manifest-2.0.0.json).
 
@@ -248,7 +248,7 @@ The simple root bot consumes the 3 skills and lets you verify that the conversio
 
    **V4SimpleRootBot\\appsettings.json**
 
-   [!code-json[configuration](~/../botbuilder-samples/MigrationV3V4/CSharp/Skills/V4SimpleRootBot/appsettings.json?highlight=2-3,8,13,18)]
+   [!code-json[configuration](~/../botbuilder-samples/Migration/MigrationV3V4/CSharp/Skills/V4SimpleRootBot/appsettings.json?highlight=2-3,8,13,18)]
 
 ## Test the root bot
 

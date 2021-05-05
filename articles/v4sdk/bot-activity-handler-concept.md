@@ -2,7 +2,7 @@
 title: Event-driven conversations and activity handlers - Bot Service
 description: Become familiar with the bot activity handler. Learn about managing bot reasoning based on the type of activity received from a user.
 author: JonathanFingold
-ms.author: v-jofin
+ms.author: kamrani
 manager: kamrani
 ms.topic: conceptual
 ms.service: bot-service
@@ -76,7 +76,7 @@ The handlers defined in `ActivityHandler` are:
 | Message reaction activity received | `OnMessageReactionActivityAsync` | On a `messageReaction` activity, calls a handler if one or more reactions were added or removed from a message. |
 | Message reactions added to a message | `OnReactionsAddedAsync` | Override this to handle reactions added to a message. |
 | Message reactions removed from a message | `OnReactionsRemovedAsync` | Override this to handle reactions removed from a message. |
-| Installation update activity received | `OnInstallationUpdateActivityAsync` | On an `installationUpdate` activity, calls a handler based on whether the bot was installed or unistalled. |
+| Installation update activity received | `OnInstallationUpdateActivityAsync` | On an `installationUpdate` activity, calls a handler based on whether the bot was installed or uninstalled. |
 | Bot installed | `OnInstallationUpdateAddAsync` | Override this to add logic for when the bot is installed within an organizational unit. |
 | Bot uninstalled | `OnInstallationUpdateRemoveAsync` | Override this to add logic for when the bot is uninstalled within an organizational unit. |
 | Other activity type received | `OnUnrecognizedActivityTypeAsync` | Override this to handle any activity type otherwise unhandled. |

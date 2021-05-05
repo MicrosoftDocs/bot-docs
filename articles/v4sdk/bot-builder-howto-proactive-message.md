@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 11/23/2020
+ms.date: 04/02/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -20,16 +20,16 @@ Occasionally, a bot might need to send a _proactive message_, a message in respo
 
 Proactive messages can be useful in a variety of scenarios. For example, if the user has previously asked the bot to monitor the price of a product, the bot can alert the user if the price of the product has dropped by 20%. Or, if a bot requires some time to compile a response to the user's question, it may inform the user of the delay and allow the conversation to continue in the meantime. When the bot finishes compiling the response to the question, it will share that information with the user.
 
+> [!Note]
+> This article covers information about proactive messages for bots in general. For information about proactive messages in Microsoft Teams, see:
+> - The **Teams conversation bot** sample in [**C#**](https://aka.ms/cs-teams-conversations-sample), [**JavaScript**](https://aka.ms/js-teams-conversations-sample), or [**Python**](https://aka.ms/py-teams-conversations-sample).
+> - Microsoft Teams documentation on how to [send proactive messages](/microsoftteams/platform/bots/how-to/conversations/send-proactive-messages).
+
 ## Requirements
 
 Before you can send a proactive message, your bot needs a _conversation reference_. Your bot can retrieve the conversation reference from any activity it has received from the user, but this typically requires the user to interact with the bot at least once before the bot can send a proactive message.
 
 Many channels prohibit a bot from messaging a user unless the user has messaged the bot at least once. Some channels allow exceptions. For instance, the Teams channel allows your bot to send a proactive (or 1-on-1) message to individuals in an already established group conversation that includes the bot.
-
-More information about proactive messages in Teams can be found in these resources:
-
-- The **Teams conversation bot** sample in [**C#**](https://aka.ms/cs-teams-conversations-sample), [**JavaScript**](https://aka.ms/js-teams-conversations-sample), or [**Python**](https://aka.ms/py-teams-conversations-sample).
-- Microsoft Teams documentation on how to [send proactive messages](/microsoftteams/platform/bots/how-to/conversations/send-proactive-messages)
 
 ## Prerequisites
 
@@ -114,7 +114,7 @@ The second controller, the _notify_ controller, is responsible for sending the p
 Each time the bot's notify page is requested, the notify controller retrieves the conversation references from the dictionary.
 The controller then uses the `ContinueConversationAsync` and `BotCallback` methods to send the proactive message.
 
-[!code-csharp[Notify logic](~/../botbuilder-samples/samples/csharp_dotnetcore/16.proactive-messages/Controllers/NotifyController.cs?range=17-54&highlight=20,32-37)]
+[!code-csharp[Notify logic](~/../botbuilder-samples/samples/csharp_dotnetcore/16.proactive-messages/Controllers/NotifyController.cs?range=17-52&highlight=20,32-35)]
 
 # [JavaScript](#tab/javascript)
 
@@ -124,7 +124,7 @@ Each time the server's `/api/notify` page is requested, the server retrieves the
 The server then uses the `continueConversation` method to send the proactive message.
 The parameter to `continueConversation` is a function that serves as the bot's turn handler for this turn.
 
-[!code-javascript[Notify logic](~/../botbuilder-samples/samples/javascript_nodejs/16.proactive-messages/index.js?range=70-84&highlight=4-8)]
+[!code-javascript[Notify logic](~/../botbuilder-samples/samples/javascript_nodejs/16.proactive-messages/index.js?range=70-82&highlight=4-6)]
 
 # [Python](#tab/python)
 

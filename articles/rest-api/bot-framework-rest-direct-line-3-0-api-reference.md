@@ -98,7 +98,7 @@ Generates a token that is valid for one conversation.
 POST /v3/directline/tokens/generate
 ```
 
-| | |
+| Content | Description |
 |----|----|
 | **Request body** | A [TokenParameters](#tokenparameters-object) object |
 | **Returns** | A [Conversation](#conversation-object) object |
@@ -111,7 +111,7 @@ Refreshes the token.
 POST /v3/directline/tokens/refresh
 ```
 
-| | |
+| Content | Description |
 |----|----|
 | **Request body** | n/a |
 | **Returns** | A [Conversation](#conversation-object) object |
@@ -136,7 +136,7 @@ Opens a new conversation with the bot.
 POST /v3/directline/conversations
 ```
 
-| | |
+| Content | Description |
 |----|----|
 | **Request body** | A [TokenParameters](#tokenparameters-object) object |
 | **Returns** | A [Conversation](#conversation-object) object |
@@ -149,7 +149,7 @@ Gets information about an existing conversation and also generates a new WebSock
 GET /v3/directline/conversations/{conversationId}?watermark={watermark_value}
 ```
 
-| | |
+| Content | Description |
 |----|----|
 | **Request body** | n/a |
 | **Returns** | A [Conversation](#conversation-object) object |
@@ -162,7 +162,7 @@ Retrieves activities from the bot for the specified conversation. You may option
 GET /v3/directline/conversations/{conversationId}/activities?watermark={watermark_value}
 ```
 
-| | |
+| Content | Description |
 |----|----|
 | **Request body** | n/a |
 | **Returns** | An [ActivitySet](#activityset-object) object. The response contains `watermark` as a property of the `ActivitySet` object. Clients should page through the available activities by advancing the `watermark` value until no activities are returned. |
@@ -175,7 +175,7 @@ Sends an activity to the bot.
 POST /v3/directline/conversations/{conversationId}/activities
 ```
 
-| | |
+| Content | Description |
 |----|----|
 | **Request body** | An [Activity][] object |
 | **Returns** | A [ResourceResponse][] that contains an `id` property which specifies the ID of the Activity that was sent to the bot. |
@@ -188,7 +188,7 @@ Uploads and sends file(s) as attachment(s). Set the `userId` parameter in the re
 POST /v3/directline/conversations/{conversationId}/upload?userId={userId}
 ```
 
-| | |
+| Content | Description |
 |----|----|
 | **Request body** | For a single attachment, populate the request body with the file contents. For multiple attachments, create a multipart request body that contains one part for each attachment, and also (optionally) one part for the [Activity][] object that should serve as the container for the specified attachment(s). For more information, see [Send an activity to the bot](bot-framework-rest-direct-line-3-0-send-activity.md). |
 | **Returns** | A [ResourceResponse][] that contains an `id` property which specifies the ID of the Activity that was sent to the bot. |
