@@ -4,7 +4,7 @@
 
 1. Select **Open Bot** on the Emulator's **Welcome** tab.
 
-1. Enter your bot's URL, which is the URL of the local port, with **/api/messages** added to the path, typically `http://localhost:3978/api/messages`.
+1. Enter your bot's URL, which is the URL of the local port, with `/api/messages` added to the path, typically `http://localhost:3978/api/messages`.
 
    <!--This is the same process in the Emulator for all three languages.-->
    ![open a bot screen](~/media/python/quickstart/open-bot.png)
