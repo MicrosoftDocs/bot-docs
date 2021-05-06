@@ -81,4 +81,4 @@ You can download the code to work on it locally.
     1. [!INCLUDE [download keys snippet](../includes/snippet-abs-key-download.md)]
 
 ## Next steps
-After you download the code, you can continue to develop the bot locally on your machine. Once you test your bot and are ready to upload the bot code to the Azure portal, follow the instructions listed under [set up continous deployment](../bot-service-build-continuous-deployment.md) topic to automatically update code after you make changes.
+After you download the code, you can continue to develop the bot locally on your machine. Once you test your bot and are ready to upload the bot code to the Azure portal, follow the instructions listed under [set up continuous deployment](../bot-service-build-continuous-deployment.md) topic to automatically update code after you make changes.
