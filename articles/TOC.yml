@@ -513,7 +513,7 @@
   - name: FAQ
     items:
     - name: Index
-      href: bot-service-resources-bot-framework-faq.md
+      href: bot-service-resources-bot-framework-faq.yml
     - name: Availability
       href: bot-service-resources-faq-availability.md
     - name: General

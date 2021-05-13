@@ -16,7 +16,7 @@ summary: |
 
   <!-- Attention writers!!
      1 - This article contains FAQs regarding Bot Framework Azure.
-     1 - When you create a new FAQ, please add the related link to the proper section in bot-service-resources-bot-framework-faq.md.-->
+     1 - When you create a new FAQ, please add the related link to the proper section in bot-service-resources-bot-framework-faq.yml.-->
 
   [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 

@@ -454,7 +454,7 @@
       ]
     },
     {
-      "source_path": "articles/bot-service-resources-bot-framework-faq.md",
+      "source_path": "articles/bot-service-resources-bot-framework-faq.yml",
       "redirect_url": "/previous-versions/azure/bot-service/bot-service-resources-bot-framework-faq",
       "redirect_document_id": false,
       "monikers": [

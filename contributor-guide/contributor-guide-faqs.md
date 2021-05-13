@@ -172,7 +172,7 @@ Writing in YAML format can be a little tricky because you have to obey to strict
 
         <!-- Attention writers!!
         1 - This article contains FAQs regarding Bot Framework Ecosystem.
-        1 - When you create a new FAQ, please add the related link to the proper section in bot-service-resources-bot-framework-faq.md.-->
+        1 - When you create a new FAQ, please add the related link to the proper section in bot-service-resources-bot-framework-faq.yml.-->
 
     [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
     ```
