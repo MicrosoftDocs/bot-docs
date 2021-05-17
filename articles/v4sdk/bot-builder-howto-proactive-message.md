@@ -22,7 +22,7 @@ Proactive messages can be useful in a variety of scenarios. For example, if the 
 
 > [!Note]
 > This article covers information about proactive messages for bots in general. For information about proactive messages in Microsoft Teams, see:
-> - The **Teams conversation bot** sample in [**C#**](https://aka.ms/cs-teams-conversations-sample), [**JavaScript**](https://aka.ms/js-teams-conversations-sample), or [**Python**](https://aka.ms/py-teams-conversations-sample).
+> - The **Teams conversation bot** sample in [**C#**](https://aka.ms/cs-teams-conversations-sample), [**JavaScript**](https://aka.ms/js-teams-conversations-sample), [**Java**](https://aka.ms/java-teams-conversations-sample), or [**Python**](https://aka.ms/py-teams-conversations-sample).
 > - Microsoft Teams documentation on how to [send proactive messages](/microsoftteams/platform/bots/how-to/conversations/send-proactive-messages).
 
 ## Requirements
@@ -34,7 +34,7 @@ Many channels prohibit a bot from messaging a user unless the user has messaged 
 ## Prerequisites
 
 - Understand [bot basics](bot-builder-basics.md).
-- A copy of the **proactive messages** sample in [**C#**](https://aka.ms/proactive-sample-cs), [**JavaScript**](https://aka.ms/proactive-sample-js), or [**Python**](https://aka.ms/bot-proactive-python-sample-code). The sample is used to explain proactive messaging in this article.
+- A copy of the **proactive messages** sample in [**C#**](https://aka.ms/proactive-sample-cs), [**JavaScript**](https://aka.ms/proactive-sample-js), [**Java**](https://aka.ms/proactive-sample-java), or [**Python**](https://aka.ms/bot-proactive-python-sample-code). The sample is used to explain proactive messaging in this article.
 
 ## About the proactive sample
 
@@ -79,6 +79,13 @@ When the Emulator connects to the bot, the bot receives two conversation update 
 [!code-javascript[onConversationUpdateActivity](~/../botbuilder-samples/samples/javascript_nodejs/16.proactive-messages/bots/proactiveBot.js?range=13-17&highlight=2)]
 
 [!code-javascript[onConversationUpdateActivity](~/../botbuilder-samples/samples/javascript_nodejs/16.proactive-messages/bots/proactiveBot.js?range=41-44&highlight=2-3)]
+
+# [Java](#tab/java)
+
+**ProactiveBot.java**
+
+[!code-java[OnConversationUpdateActivityAsync](~/../botbuilder-samples/samples/java_springboot/16.proactive-messages/src/main/java/com/microsoft/bot/sample/proactive/ProactiveBot.java?range=74-84&highlight=3,9-10)]
+
 
 # [Python](#tab/python)
 
@@ -125,6 +132,16 @@ The server then uses the `continueConversation` method to send the proactive mes
 The parameter to `continueConversation` is a function that serves as the bot's turn handler for this turn.
 
 [!code-javascript[Notify logic](~/../botbuilder-samples/samples/javascript_nodejs/16.proactive-messages/index.js?range=70-82&highlight=4-6)]
+
+# [Java](#tab/java)
+
+**NotifyController.java**
+
+Each time the bot's notify page is requested, the notify controller retrieves the conversation references from the dictionary.
+The controller then uses the `continueConversation` method to send the proactive message.
+
+[!code-java[Notify logic](~/../botbuilder-samples/samples/java_springboot/16.proactive-messages/src/main/java/com/microsoft/bot/sample/proactive/NotifyController.java?range=26-64&highlight=28-30)]
+
 
 # [Python](#tab/python)
 

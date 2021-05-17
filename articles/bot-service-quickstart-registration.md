@@ -1,27 +1,29 @@
 ---
-title: Create a Bot Channels Registration with Bot Service - Bot Service
-description: Learn how to register bots with the Bot Service. See how to connect bots to Azure Bot Service channels so that they can interact with users.
+title: Register a bot with Azure Bot Service - Bot Service
+description: Learn how to register bots with the Bot Service.
 ms.author: kamrani
 manager: kamrani
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 03/15/2021
+ms.date: 04/22/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Bot channels registration
+# Register a bot with Azure
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-This article shows how to register a bot with the **Azure Bot Service**. If the bot is hosted elsewhere, you can also make it available in Azure and connect it to the supported channels. There are 2 ways to register a bot with Azure:
+This article shows how to register a bot with the Azure Bot Service when you develop and host it in Azure.
 
-1. Following the steps in the article [Create a bot with Azure Bot Service](~/v4sdk/abs-quickstart.md), the bot is created on and registered with Azure and a Web application is created to host the bot. You use this approach if you develop and host a bot in Azure.
-1. To create and develop your bot locally, follow the steps in this article. When you register your bot, you supply the web address where your bot is hosted. You can still host it in Azure.
+If the bot is hosted elsewhere, you can also make it available in Azure and connect it to the supported channels. You supply the web address where your bot is hosted.
 
 > [!IMPORTANT]
 > You only need to register a bot if it is not hosted in Azure.
-Bots created using the Azure portal or the Command Line Interface (CLI) are already registered with the Azure Bot Service. For more information, see [Deploy your bot](~/bot-builder-deploy-az-cli.md) and [Create a bot with Azure Bot Service](~/v4sdk/abs-quickstart.md).
+Bots created using the Azure portal or the Command Line Interface (CLI) are already registered with the Azure Bot Service. For more information, see [Deploy your bot](~/bot-builder-deploy-az-cli.md).
 
+[!INCLUDE [azure bot resource](includes/azure-bot-resource/azure-bot-resource.md)]
+
+<!-- 
 ## Create a registration application
 
 1. In your browser, navigate to the [Azure portal](https://ms.portal.azure.com). If you do not have a subscription, you can register for a <a href="https://azure.microsoft.com/free/" target="_blank">free account</a>.
@@ -70,6 +72,7 @@ Bots created using the Azure portal or the Command Line Interface (CLI) are alre
 
 > [!NOTE]
 > The registration application will show the Global region even though you selected a different one. This is expected.
+-->
 
 ## Manual app registration
 
@@ -82,25 +85,43 @@ A manual registration is necessary for situations like:
 
 ## Update the bot
 
-1. Bot Framework SDK for .NET. Set the following key values in the `appsettings.json` file:
-    - `MicrosoftAppId = <appId>`
-    - `MicrosoftAppPassword = <appSecret>`
+# [Csharp](#tab/cshap)
 
-1. Bot Framework SDK for Node.js. Set the following environment variables in the `.env` file:
-    - `MICROSOFT_APP_ID = <appId>`
-    - `MICROSOFT_APP_PASSWORD = <appSecret>`
+Set the following key values in the `appsettings.json` file:
 
-1. Bot Framework SDK for Python. Set the following environment variables in the `config.py` file:
-    - `APP_ID = os.environ.get("MicrosoftAppId", <appId>)`
-    - `APP_PASSWORD = os.environ.get("MicrosoftAppPassword", <appSecret>)`
+- `MicrosoftAppId = <appId>`
+- `MicrosoftAppPassword = <appSecret>`
 
+# [Javascript](#tab/javascript)
+
+Set the following environment variables in the `.env` file:
+
+- `MICROSOFT_APP_ID = <appId>`
+- `MICROSOFT_APP_PASSWORD = <appSecret>`
+
+# [Java](#tab/java)
+
+Set the following environment variables in the `application.properties` file:
+
+- `MicrosoftAppId = <appId>`
+- `MicrosoftAppPassword = <appSecret>`
+
+# [Python](#tab/python)
+
+Set the following environment variables in the `config.py` file:
+
+- `APP_ID = os.environ.get("MicrosoftAppId", <appId>)`
+- `APP_PASSWORD = os.environ.get("MicrosoftAppPassword", <appSecret>)`
+
+---
+
+<!-- 
 ## Test the bot
 
 Now that your bot service is created, [test it in Web Chat](v4sdk/abs-quickstart.md#test-the-bot).
+-->
 
 ## Next steps
-
-In this topic, you learned how to register your hosted bot with the Bot Service. The next step is to learn how to manage your Bot Service.
 
 > [!div class="nextstepaction"]
 > [Manage a bot](bot-service-manage-overview.md)

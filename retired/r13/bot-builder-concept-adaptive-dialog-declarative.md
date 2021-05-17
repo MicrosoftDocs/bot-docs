@@ -163,7 +163,7 @@ This section contains all [triggers](bot-builder-concept-adaptive-dialog-trigger
 
 | `$kind` value            | Trigger name     | Description                                                                                                                                                   |
 | ------------------------ | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|`Microsoft.OnChooseIntent`| `OnChooseIntent` | This trigger is run when ambiguity has been detected between intents from multiple recognizers in a [CrossTrainedRecognizerSet][cross-trained-recognizer-set].|
+|`Microsoft.OnChooseIntent`| `OnChooseIntent` | This trigger is run when ambiguity has been detected between intents from multiple recognizers in a CrossTrainedRecognizerSet.                                |
 |`Microsoft.OnIntent`      | `OnIntent`       | Actions to perform when specified intent is recognized.                                                                                                       |
 |`Microsoft.OnQnAMatch`    | `OnQnAMatch`     | This trigger is run when the [QnAMakerRecognizer][qna-maker-recognizer] has returned a `QnAMatch` intent. The entity @answer will have the `QnAMaker` answer. |
 |`Microsoft.OnUnknownIntent`|`OnUnknownIntent`| Actions to perform when user input is unrecognized or no match is found in any of the `OnIntent` triggers.                                                    |
@@ -259,7 +259,7 @@ This section contains all [actions](bot-builder-concept-adaptive-dialog-actions.
 |`Microsoft.ChoiceInput`     | [ChoiceInput][choiceinput]       | Used to asks for a choice from a **set of options**. | The value or index of the selection.         |
 |`Microsoft.ConfirmInput`    | [ConfirmInput][confirminput]     | Used to request a **confirmation** from the user.    | A Boolean value.                             |
 |`Microsoft.DateTimeInput`   | [DateTimeInput][datetimeinput]   | Used to ask your users for a **date and or time**.   | A collection of date-time objects.           |
-|`Microsoft.InputDialog`     | [InputDialog][inputdialog]       | This is the base class that all of the input classes derive from. It defines all shared properties. |
+|`Microsoft.InputDialog`     | InputDialog                      | This is the base class that all of the input classes derive from. It defines all shared properties. |
 |`Microsoft.NumberInput`     | [NumberInput][numberinput]       | Used to ask your users for a **number**.             | A numeric value.                             |
 |`Microsoft.OAuthInput`      | [OAuthInput][oauthinput]         | Used to enable your users to **sign into a secure site**.| A token response.                        |
 |`Microsoft.TextInput`       | [TextInput][textinput]           | Used to ask your users for a **word or sentence**.   | A string.                                    |
@@ -442,12 +442,12 @@ For additional information on using this command, see [bf dialog:verify][bf-dial
 
 <!-- Footnote-style links -->
 [declarative-ref]: ../adaptive-dialog/adaptive-dialog-prebuilt-declarative.md
-[triggers]: bot-builder-concept-adaptive-dialog-triggers.md
-[actions]: bot-builder-concept-adaptive-dialog-actions.md
+[triggers]: /composer/concept-events-and-triggers
+[actions]: /composer/concept-dialog#dialog-actions
 [concept-basics]: bot-builder-basics.md
 [concept-state]: bot-builder-concept-state.md
 [concept-dialogs]: bot-builder-concept-dialog.md
-[concept-adaptive]: bot-builder-adaptive-dialog-introduction.md
+[concept-adaptive]: /composer/introduction#adaptive-dialogs
 [lg-file-format]: ../file-format/bot-builder-lg-file-format.md
 [creating-the-schema-file]: bot-builder-dialogs-declarative.md#creating-the-schema-file
 
@@ -455,26 +455,25 @@ For additional information on using this command, see [bf dialog:verify][bf-dial
 [bf-cli]: /azure/bot-service/bf-cli-overview
 [bf-cli-install]: /azure/bot-service/bf-cli-overview#installation
 [intellisense]: /visualstudio/ide/using-intellisense
-[recognizer-types]: bot-builder-concept-adaptive-dialog-recognizers.md#recognizer-types
-[intents]: bot-builder-concept-adaptive-dialog-recognizers.md#intents
-[entity]: bot-builder-concept-adaptive-dialog-recognizers.md#entities
-[generator]: bot-builder-concept-adaptive-dialog-generators.md
+[recognizer-types]: ../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md
+[intents]: ../file-format/bot-builder-lu-file-format.md#intent
+[entity]: ../file-format/bot-builder-lu-file-format.md#entity
+[generator]: /composer/concept-language-generation
 
-<!-- (Triggers) Recognizer event triggers  -->
+<!-- (Triggers) Recognizer event triggers
 [cross-trained-recognizer-set]:bot-builder-concept-adaptive-dialog-recognizers.md#cross-trained-recognizer-set
 [qna-maker-recognizer]:bot-builder-concept-adaptive-dialog-recognizers.md#qna-maker-recognizer
 [botframework-activity]: https://github.com/microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md
-
+  -->
 <!-- (Actions) Input  -->
-[attachmentinput]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#attachmentinput
-[choiceinput]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#choiceinput
-[confirminput]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#confirminput
-[datetimeinput]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#datetimeinput
-[inputdialog]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#inputdialog
-[numberinput]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#numberinput
-[oauthinput]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#oauthinput
-[textinput]: ../adaptive-dialog/adaptive-dialog-prebuilt-inputs.md#textinput
-[send-activity]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#send-activity
+[attachmentinput]: /composer/how-to-ask-for-user-input#file-or-attachment-input
+[choiceinput]: /composer/how-to-ask-for-user-input#multiple-choice-input
+[confirminput]: /composer/how-to-ask-for-user-input#confirmation-input
+[datetimeinput]: /composer/how-to-ask-for-user-input#date-or-time-input
+[numberinput]: /composer/how-to-ask-for-user-input#number-input
+[oauthinput]: /composer/how-to-use-oauth
+[textinput]: /composer/how-to-ask-for-user-input#text-input
+[send-activity]: /composer/how-to-define-triggers#activities
 
 <!--  (Actions) Create a condition -->
 [ifcondition]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#ifcondition
@@ -510,7 +509,7 @@ For additional information on using this command, see [bf dialog:verify][bf-dial
 <!--  (Actions) Access external resources -->
 [beginskill]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#beginskill
 [httprequest]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#httprequest
-[emitevent]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#emitevent
+[emitevent]: /composer/concept-events-and-triggers#custom-events
 [sign-out-user]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#sign-out-user
 [custom-trigger]: ../adaptive-dialog/adaptive-dialog-prebuilt-triggers.md#custom-event-trigger
 <!--[codeaction]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#codeaction-->

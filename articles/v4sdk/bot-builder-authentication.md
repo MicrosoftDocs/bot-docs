@@ -6,30 +6,9 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 02/11/2021
+ms.date: 04/12/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
-
-<!--
-Related TODO:
-- Check code in [Web Chat channel](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-webchat?view=azure-bot-service-4.0)
-- Check guidance in [DirectLine authentication](https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0)
-
-
-General TODO: (Feedback from CSE (Nafis))
-- Add note that: token management is based on user ID
-- Explain why/how to share existing website authentication with a bot.
-- Risk: Even people who use a DirectLine token can be vulnerable to user ID impersonation.
-    Docs/samples that show exchange of secret for token don't specify a user ID, so an attacker can impersonate a different user by modifying the ID client side. There's a [blog post](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fblog.botframework.com%2F2018%2F09%2F01%2Fusing-webchat-with-azure-bot-services-authentication%2F&data=02%7C01%7Cv-jofing%40microsoft.com%7Cee005e1c9d2c4f4e7ea508d6b231b422%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636892323874079713&sdata=b0DWMxHzmwQvg5EJtlqKFDzR7fYKmg10fXma%2B8zGqEI%3D&reserved=0) that shows how to do this properly.
-"Major issues":
-- This doc is a sample walkthrough, but there's no deeper documentation explaining how the Azure Bot Service is handling tokens. How does the OAuth flow work? Where is it storing my users' access tokens? What's the security and best practices around using it?
-
-"Minor issues":
-- AAD v2 steps tell you to add delegated permission scopes during registration, but this shouldn't be necessary in AAD v2 due to dynamic scopes. (Ming, "This is currently necessary because scopes are not exposed through our runtime API. We don't currently have a way for the developer to specify which scope he wants at runtime.")
-
-- "The scope of the connection setting needs to have both openid and a resource in the Azure AD graph, such as Mail.Read." Unclear if I need to take some action at this point to make happen. Kind of out of context. I'm registering an AAD application in the portal, there's no connection setting
-- Does the bot need all of these scopes for the samples? (e.g. "Read all users' basic profiles")
--->
 
 # Add authentication to a bot
 
@@ -42,10 +21,10 @@ For an overview of how the Bot Framework handles this kind of authentication, se
 > [!NOTE]
 > Authentication also works with BotBuilder v3. However, this article covers just the v4 sample code.
 
-This article references two samples. One shows how to obtain an authentication token. The other is more complex and shows how to access [Microsoft Graph](https://developer.microsoft.com/en-us/graph) on behalf of the user. In both cases you can use Azure Active Directory (AD) v1 or Azure AD v2 as an identity provider to obtain an OAuth token for the bot.
+This article references two samples. One shows how to obtain an authentication token. The other is more complex and shows how to access [Microsoft Graph](/en-us/graph) on behalf of the user. In both cases you can use Azure Active Directory (AD) v1 or Azure AD v2 as an identity provider to obtain an OAuth token for the bot.
 This article covers how to:
 
-- [Create the Azure bot registration](#create-the-azure-bot-registration)
+- [Create an Azure bot resource](#create-an-azure-bot-resource)
 - [Create the Azure AD identity provider](#create-the-azure-ad-identity-provider)
 - [Register the Azure AD identity provider with the bot](#register-the-azure-ad-identity-provider-with-the-bot)
 - [Prepare the bot code](#prepare-the-bot-code)
@@ -81,6 +60,10 @@ To run the samples referenced in this article, you need the following:
 
 > [!IMPORTANT]
 > Whenever you register a bot in Azure, it gets assigned an Azure AD application. However, this application secures channel-to-bot access. You need an additional Azure AD application for each external secured resource you want the bot to access on behalf of the user.
+
+[!INCLUDE [azure bot resource](../includes/azure-bot-resource/azure-bot-resource.md)]
+
+<!-- Obsolete replaced by the previous include.
 
 ## Create the Azure bot registration
 
@@ -119,6 +102,7 @@ This section shows how to register a bot resource with Azure to host the bot cod
 > You will assign the **Application (client) ID** and the **Client secret**, you saved in a file, to the bot configuration variables: `MicrosoftAppId` and `MicrosoftAppPassword`. See the [Prepare the bot code](#prepare-the-bot-code) section.
 
 After Azure has completed the registration, the bot channels registration and the bot app service will be included in the resource group you selected.
+-->
 
 ## Azure AD identity service
 
@@ -127,10 +111,10 @@ The Azure Active Directory (Azure AD) is a cloud identity service that allows yo
 You can use one of these two identity services:
 
 1. Azure AD developer platform (v1.0). Also known as the **Azure AD v1** endpoint, which allows you to build apps that securely sign in users with a Microsoft work or school account.
-For more information, see the [Azure Active Directory for developers (v1.0) overview](https://docs.microsoft.com/azure/active-directory/azuread-dev/v1-overview).
-1. Microsoft identity platform (v2.0). Also known as the **Azure AD v2** endpoint, which is an evolution of the Azure AD platform (v1.0). It allows you to build applications that sign in to all Microsoft identity providers and get tokens to call Microsoft APIs, such as Microsoft Graph, or other APIs that developers have built. For more information, see the [Microsoft identity platform (v2.0) overview](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview),
+For more information, see the [Azure Active Directory for developers (v1.0) overview](/azure/active-directory/azuread-dev/v1-overview).
+1. Microsoft identity platform (v2.0). Also known as the **Azure AD v2** endpoint, which is an evolution of the Azure AD platform (v1.0). It allows you to build applications that sign in to all Microsoft identity providers and get tokens to call Microsoft APIs, such as Microsoft Graph, or other APIs that developers have built. For more information, see the [Microsoft identity platform (v2.0) overview](/azure/active-directory/develop/active-directory-appmodel-v2-overview),
 
-For information about the differences between the v1 and v2 endpoints, see [Why update to Microsoft identity platform (v2.0)?](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare). For complete information, see [Microsoft identity platform (formerly Azure Active Directory for developers)](https://docs.microsoft.com/azure/active-directory/develop/).
+For information about the differences between the v1 and v2 endpoints, see [Why update to Microsoft identity platform (v2.0)?](/azure/active-directory/develop/active-directory-v2-compare). For complete information, see [Microsoft identity platform (formerly Azure Active Directory for developers)](/azure/active-directory/develop/).
 
 ### Create the Azure AD identity provider
 
@@ -141,7 +125,7 @@ This section shows how to create an Azure AD identity provider that uses OAuth2 
 > in which you can consent to delegate permissions requested by an application.
 
 1. Open the [Azure Active Directory][azure-aad-blade] panel in the Azure portal.
-    If you are not in the correct tenant, click **Switch directory** to switch to the correct tenant. (For instruction on creating a tenant, see [Access the portal and create a tenant](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).)
+    If you are not in the correct tenant, click **Switch directory** to switch to the correct tenant. (For instruction on creating a tenant, see [Access the portal and create a tenant](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).)
 1. Open the **App registrations** panel.
 1. In the **App registrations** panel, click **New registration**.
 1. Fill in the required fields and create the app registration.
@@ -211,7 +195,7 @@ The next step is to register the Azure AD application that you just created with
         - When creating the Azure AD app if you selected *Accounts in this organizational directory only (Microsoft only - Single tenant)* enter the **tenant ID** you recorded earlier for the AAD app.
         - However, if you selected *Accounts in any organizational directory (Any AAD directory - Multi tenant and personal Microsoft accounts e.g. Xbox, Outlook.com)* or *Accounts in any organizational directory(Microsoft Azure AD directory - Multi tenant)* enter the word **common** instead of a tenant ID. Otherwise, the AAD app will verify through the tenant whose ID was selected and exclude personal MS accounts.
 
-        This will be the tenant associated with the users who can be authenticated. For more information, see [Tenancy in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/single-and-multi-tenant-apps).
+        This will be the tenant associated with the users who can be authenticated. For more information, see [Tenancy in Azure Active Directory](/azure/active-directory/develop/single-and-multi-tenant-apps).
 
     1. For **Scopes**, enter the names of the permission you chose from the application registration. For testing purposes, you can just enter:
        `openid profile`.
@@ -241,7 +225,7 @@ The next step is to register the Azure AD application that you just created with
         - When creating the Azure AD app if you selected *Accounts in this organizational directory only (Microsoft only - Single tenant)* enter the **tenant ID** you recorded earlier for the AAD app.
         - However, if you selected *Accounts in any organizational directory (Any AAD directory - Multi tenant and personal Microsoft accounts e.g. Xbox, Outlook.com)* or *Accounts in any organizational directory(Microsoft Azure AD directory - Multi tenant)* enter the word **common** instead of a tenant ID. Otherwise, the AAD app will verify through the tenant whose ID was selected and exclude personal MS accounts.
 
-       This will be the tenant associated with the users who can be authenticated. For more information, see [Tenancy in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/single-and-multi-tenant-apps).
+       This will be the tenant associated with the users who can be authenticated. For more information, see [Tenancy in Azure Active Directory](/azure/active-directory/develop/single-and-multi-tenant-apps).
 
     1. For **Resource URL**, enter `https://graph.microsoft.com/`.
     1. Leave **Scopes** blank.
@@ -548,11 +532,11 @@ Finally, make sure to add an appropriate `TeamsActivityHandler` file (`TeamsActi
 The `TeamsActivityHandler` also sends *message reaction* activities. A message reaction activity references the original activity using the *reply to ID* field. This activity should also be visible through the [Activity Feed][teams-activity-feed] in Microsoft Teams.
 
 > [!NOTE]
-> You need to create a manifest and include `token.botframework.com` in the `validDomains` section; otherwise the OAuthCard **Sign in** button will not open the authentication window. Use the [App Studio](https://docs.microsoft.com/microsoftteams/platform/get-started/get-started-app-studio) to generate your manifest.
+> You need to create a manifest and include `token.botframework.com` in the `validDomains` section; otherwise the OAuthCard **Sign in** button will not open the authentication window. Use the [App Studio](/microsoftteams/platform/get-started/get-started-app-studio) to generate your manifest.
 
 ### Further reading
 
-- [Bot Framework additional resources](https://docs.microsoft.com/azure/bot-service/bot-service-resources-links-help) includes links for additional support.
+- [Bot Framework additional resources](/azure/bot-service/bot-service-resources-links-help) includes links for additional support.
 - The [Bot Framework SDK](https://github.com/microsoft/botbuilder) repo has more information about repos, samples, tools, and specs associated with the Bot Builder SDK.
 
 <!-- Footnote-style links -->

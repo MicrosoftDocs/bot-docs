@@ -32,13 +32,20 @@ In the bot's activity handlers, use the turn context object's `SendActivityAsync
 ```cs
 await turnContext.SendActivityAsync($"Welcome!");
 ```
-
 # [JavaScript](#tab/javascript)
 
 In the bot's activity handlers, use the turn context object's `sendActivity` method to send a single message response. You can also use the object's `sendActivities` method to send multiple responses at once.
 
 ```javascript
 await context.sendActivity("Welcome!");
+```
+
+# [Java](#tab/java)
+
+In the bot's activity handlers, use the turn context object's `sendActivity` method to send a single message response. You can also use the object's `sendActivities` method to send multiple responses at once.
+
+```java
+turnContext.sendActivity("Welcome!");
 ```
 
 # [Python](#tab/python)
@@ -82,6 +89,14 @@ In the bot's activity handlers, use the following code to receive a message.
 
 ```javascript
 let text = turnContext.activity.text;
+```
+
+# [Java](#tab/java)
+
+In the bot's activity handlers, use the following code to receive a message.
+
+```java
+String responseMessage = turnContext.getActivity().getText();
 ```
 
 # [Python](#tab/python)
@@ -149,6 +164,24 @@ this.onMessage(async (context, next) => {
 	}
 	await next();
 });
+```
+# [Java](#tab/java)
+
+```java
+@Override
+protected CompletableFuture<Void> onMessageActivity(TurnContext turnContext) {
+    if (turnContext.getActivity().getText().toLowerCase().equals("wait")) {
+        List<Activity> activities = new ArrayList<Activity>();
+        activities.add(new Activity(ActivityTypes.TYPING));
+        activities.add(new Activity(ActivityTypes.DELAY) {{setValue(3000);}});
+        activities.add(MessageFactory.text("Finished typing", "Finished typing", null));
+        return turnContext.sendActivities(activities).thenApply(result -> null);
+    } else {
+
+        return turnContext.sendActivity(MessageFactory.text("Echo: " + turnContext.getActivity().getText()))
+            .thenApply(sendResult -> null);
+    }
+}
 ```
 
 # [Python](#tab/python)

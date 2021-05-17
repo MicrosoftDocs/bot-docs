@@ -7,27 +7,26 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 03/24/2021
+ms.date: 04/21/2021
 ---
 
 # Create a bot with Azure Bot Service
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-Azure Bot Service provides the core components for creating bots, including the Bot Framework SDK for developing bots and the bot service for connecting bots to channels.
-This article shows how to create a bot using the Bot Framework SDK v4 and choosing either .NET or Node.js template.
+This topic shows how to create the **Azure Bot** resource, which provides the infrastructure to build a bot. Once you have created the resource, you can then build your bot. 
 
-You have two approaches to create a bot with Azure:
+[!INCLUDE [composer sdk tip](../includes/azure-bot-resource/composer-tip.md)]
 
-1. **Web App**. Create a bot and register it with Azure using a Web application as shown in this article. You use this approach if you develop and host a bot in Azure.
-1. **Bot channels registration**. Create and develop your bot locally and host it on a platform different from Azure. When you register your bot, you provide the web address where your bot is hosted. You can still host it in Azure. Follow the steps described in the [Bot channels registration](../bot-service-quickstart-registration.md) article.
-
-[!INCLUDE [Azure vs local development](../includes/snippet-quickstart-paths.md)]
 
 ## Prerequisites
 
 - [Azure](https://portal.azure.com) account
 
+[!INCLUDE [azure bot resource](../includes/azure-bot-resource/azure-bot-resource.md)]
+
+
+<!-- Replaced by the previous include 
 ### Create a new bot service
 
 1. Log in to the [Azure portal](https://portal.azure.com/).
@@ -83,6 +82,8 @@ You can download the code to work on it locally.
     [!INCLUDE [download keys snippet](../includes/snippet-abs-key-download.md)]
 
 :::image type="content" source="../media/azure-bot-quickstarts/web-app-bot-download.png" alt-text="Links on the Overview pane to download the bot source code.":::
+
+-->
 
 ## Additional information
 

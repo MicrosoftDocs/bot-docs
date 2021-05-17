@@ -89,7 +89,7 @@ You can use the full, typical webchat package that contains the most typically u
 </html>
 ```
 
-See the working sample of the [full Web Chat bundle](https://github.com/Microsoft/BotFramework-WebChat/tree/master/samples/01.a.getting-started-full-bundle).
+See the working sample of the [full Web Chat bundle](https://github.com/microsoft/BotFramework-WebChat/tree/main/samples/01.getting-started/a.full-bundle).
 
 ### Integrate with React
 
@@ -120,7 +120,7 @@ export default class extends React.Component {
 
 > You can also run `npm install botframework-webchat@master` to install a development build that is synced with Web Chat's GitHub `master` branch.
 
-See a working sample of [Web Chat rendered via React](https://github.com/Microsoft/BotFramework-WebChat/tree/master/samples/03.a.host-with-react/).
+See a working sample of [Web Chat rendered via React](https://github.com/microsoft/BotFramework-WebChat/tree/main/samples/01.getting-started/e.host-with-react).
 
 > [!TIP]
 > If you are new to React and jsx you can find training on Reacts [Getting Started](https://reactjs.org/docs/getting-started.html) page.
@@ -141,7 +141,7 @@ Web Chat is designed to be customizable without forking the source code. The tab
 | Add new UI components         |                    | :heavy_check_mark: |
 | Recompose the whole UI        |                    | :heavy_check_mark: |
 
-See more about [customizing Web Chat](https://github.com/Microsoft/BotFramework-WebChat/blob/master/SAMPLES.md) to learn more on customization.
+See more about [customizing Web Chat](https://github.com/microsoft/BotFramework-WebChat/tree/main/samples#readme) to learn more on customization.
 
 > [!NOTE]
 > For information on Content Delivery Networks (CDNs) See [Content delivery networks (CDNs)](/azure/architecture/best-practices/cdn)

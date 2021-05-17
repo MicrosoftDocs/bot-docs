@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 05/06/2020
+ms.date: 05/05/2021
 ---
 
 # Recognizers in adaptive dialogs
@@ -122,6 +122,7 @@ Adaptive dialogs support the following recognizers:
 * [RegexRecognizer](#regexrecognizer)
 * [LUIS recognizer](#luis-recognizer)
 * [QnA Maker recognizer](#qna-maker-recognizer)
+* [Orchestrator recognizer](#orchestrator-recognizer)
 * [Multi-language recognizer](#multi-language-recognizer)
 * [CrossTrained recognizer set](#cross-trained-recognizer-set)
 * [RecognizerSet](#recognizer-set)
@@ -150,6 +151,13 @@ For detailed steps on how to create your LUIS application and deploy your LUIS m
 [QnAMaker.ai][13] is one of the [Microsoft Cognitive Services][14] that enables you to create rich question-answer pairs from existing content - documents, URLs, PDFs, and so on. You can use the QnA Maker recognizer to integrate with the service.
 
 For detailed information and an example how to create a QnA Maker recognizer, see the [QnA Maker recognizer](../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md#qna-maker-recognizer) section in the Recognizers in adaptive dialogs - reference guide.
+
+### Orchestrator recognizer
+
+[Orchestrator][16] is a language understanding solution optimized for conversational AI applications.  It is a replacement of the Bot Framework Dispatcher, introduced in 2018.   Orchestrator provides natural language understanding methods while also simplifying the process of language modeling. 
+
+
+For detailed steps on how to create and evaluate your Orchestrator snapshot using the Bot Framework CLI, see [How to create Orchestrator snapshot using the Bot Framework Orchestrator CLI commands][orchestrator-cli].
 
 ### Multi-language recognizer
 
@@ -205,6 +213,8 @@ The cross-trained recognizer set compares recognition results from multiple reco
 [13]:https://qnamaker.ai
 [14]:https://azure.microsoft.com/services/cognitive-services/
 [15]:/adaptive-cards
+[16]:https://aka.ms/bf-orchestrator
 [recognizers-ref]: ../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md
 [how-to-deploy-using-luis-cli]: ../v4sdk/bot-builder-howto-bf-cli-deploy-luis.md
 [interruptions]: bot-builder-concept-adaptive-dialog-interruptions.md
+[orchestrator-cli]:https://github.com/microsoft/botframework-sdk/blob/main/Orchestrator/docs/BFOrchestratorUsage.md

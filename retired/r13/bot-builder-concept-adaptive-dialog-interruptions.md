@@ -109,7 +109,7 @@ The _allow interruptions_ property is defined when you create your [inputs][inpu
 
 > [!TIP]
 >
-> `personName` is a prebuilt entity provided by [LUIS](https://www.luis.ai/) that detects people names. It is very useful because it is already trained, so you don't need to add example utterances containing `personName` to your bots intents. For more information on using prebuilt entities in in your bot see the [.lu file format](/file-format/bot-builder-lu-file-format.md).
+> `personName` is a prebuilt entity provided by [LUIS](https://www.luis.ai/) that detects people names. It is very useful because it is already trained, so you don't need to add example utterances containing `personName` to your bots intents. For more information on using prebuilt entities in in your bot see the [.lu file format](../file-format/bot-builder-lu-file-format.md).
 
 ### Handling interruptions locally
 

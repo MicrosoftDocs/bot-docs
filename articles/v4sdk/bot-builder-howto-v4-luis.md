@@ -22,7 +22,7 @@ This topic walks you through adding LUIS to a flight booking application to reco
 ## Prerequisites
 
 - A [LUIS](https://www.luis.ai) account.
-- A copy of the **Core Bot** sample in [**C#**](https://aka.ms/cs-core-sample), [**JavaScript**](https://aka.ms/js-core-sample), or [**Python**](https://aka.ms/python-core-sample).
+- A copy of the **Core Bot** sample in [**C#**](https://aka.ms/cs-core-sample), [**JavaScript**](https://aka.ms/js-core-sample), [**Java**](https://aka.ms/java-core-sample), or [**Python**](https://aka.ms/python-core-sample).
 - Knowledge of [bot basics](bot-builder-basics.md), [natural language processing](https://docs.microsoft.com/azure/cognitive-services/luis/what-is-luis), and [managing bot resources](bot-file-basics.md).
 
 ## About this sample
@@ -62,6 +62,24 @@ Upon the response back, `mainDialog` preserves information for the user returned
 - `destination` the destination city.
 - `origin` the originating city.
 - `travelDate` the date to book the flight.
+
+# [Java](#tab/java)
+
+1. After each processing of user input, `DialogBot` saves the current state of both `UserState` and `ConversationState`.
+2. Once all the required information has been gathered the coding sample creates a demo flight booking reservation.
+3. In this article we'll be covering the LUIS aspects of this sample. However, the general flow of the sample is shown below:
+
+- `onMembersAdded` is called when a new user is connected and displays a welcome card.
+- `onMessageActivity` is called for each user input received.
+
+![LUIS sample logic flow](./media/how-to-luis/luis-logic-flow-java.png)
+
+The `onMessageActivity` module runs the appropriate dialog through the `run` dialog extension method. Then the main dialog calls the LUIS helper to find the the top scoring user intent. If the top intent for the user input returns "BookFlight", the helper fills out information from the user that LUIS returned. After that, the main dialog starts the `BookingDialog`, which acquires additional information as needed from the user such as:
+
+- `Origin` the originating city
+- `TravelDate` the date to book the flight
+- `Destination` the destination city
+
 
 # [Python](#tab/python)
 
@@ -139,6 +157,15 @@ Add the information required to access your LUIS app including application id, a
 
 [!code[env](~/../BotBuilder-Samples/samples/javascript_nodejs/13.core-bot/.env?range=1-5)]
 
+# [Java](#tab/java)
+
+Add the information required to access your LUIS app including application id, authoring key, and region into the `application.properties` file. These are the values you saved previously from your published LUIS app. Note that the API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
+
+**application.properties**
+
+[!code-java[appsettings](~/../BotBuilder-Samples/samples/java_springboot/13.core-bot/src/main/resources/application.properties?range=1-6)]
+
+
 # [Python](#tab/python)
 
 Add the information required to access your LUIS app including application id, authoring key, and region into the `config.py` file. These are the values you saved previously from your published LUIS app. Note that the API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
@@ -178,6 +205,33 @@ To connect to the LUIS service, the bot uses the information you added above fro
 [!code-javascript[luis helper](~/../BotBuilder-Samples/samples/javascript_nodejs/13.core-bot/dialogs/flightBookingRecognizer.js?range=6-70)]
 
 The logic to extract From, To and TravelDate is implemented as helper methods inside `flightBookingRecognizer.js`. These methods are used after calling `flightBookingRecognizer.executeLuisQuery()` from `mainDialog.js`
+
+# [Java](#tab/java)
+
+Be sure that the **com.microsoft.bot.bot-ai-luis-v3** package is added to your pom.xml file.
+
+```xml
+<dependency>
+    <groupId>com.microsoft.bot</groupId>
+    <artifactId>bot-ai-luis-v3</artifactId>
+    <version>4.13.0</version>
+</dependency>
+```
+
+To connect to the LUIS service, the bot pulls the information you added above from the application.properties file. The `FlightBookingRecognizer` class contains code with your settings from the application.properties file and queries the LUIS service by calling `recognize` method.
+
+**FlightBookingRecognizer.java**
+
+[!code-java[luisHelper](~/../BotBuilder-Samples/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/FlightBookingRecognizer.java?range=27-50)]
+
+[!code-java[luisHelper](~/../BotBuilder-Samples/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/FlightBookingRecognizer.java?range=143-152)]
+
+The `FlightBookingRecognizer.cs` contains the logic to extract *From*, *To* and *TravelDate*; and is called from from the `MainDialog.java` to decode the results of the Luis query result.
+
+**FlightBookingRecognizer.java**
+
+[!code-csharp[luis helper](~/../BotBuilder-Samples/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/FlightBookingRecognizer.java?range=72-141)]
+
 
 # [Python](#tab/python)
 

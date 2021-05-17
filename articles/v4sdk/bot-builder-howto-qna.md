@@ -23,7 +23,7 @@ One of the basic requirements in creating your own QnA Maker service is to popul
 
 - A [QnA Maker](https://www.qnamaker.ai/) account
 - Knowledge of [bot basics](bot-builder-basics.md), [QnA Maker](https://docs.microsoft.com/azure/cognitive-services/qnamaker/overview/overview), and [managing bot resources](bot-file-basics.md).
-- A copy of the **QnA Maker (simple)** sample in [**C#**](https://aka.ms/cs-qna), [**JavaScript**](https://aka.ms/js-qna-sample), or [**Python**](https://aka.ms/bot-qna-python-sample-code).
+- A copy of the **QnA Maker (simple)** sample in [**C#**](https://aka.ms/cs-qna), [**JavaScript**](https://aka.ms/js-qna-sample), [**Java**](https://aka.ms/java-qna-sample), or [**Python**](https://aka.ms/bot-qna-python-sample-code).
 
 ## About this sample
 
@@ -40,6 +40,12 @@ To use QnA Maker in your bot, you need to create a knowledge base in the [QnA Ma
 ![QnABot JS logic flow](./media/qnabot-js-logic-flow.png)
 
 `OnMessage` is called for each user input received. When called, it accesses your `qnamaker` connector that was pre-configured using values provided from your sample code's **.env** file.  The qnamaker method `getAnswers` connects your bot to your external QnA Maker knowledge base.
+
+## [Java](#tab/java)
+
+![QnABot logic flow](./media/qnabot-logic-flow-java.png)
+
+`onMessageActivity` is called for each user input received. When called, it accesses `configuration` information stored within the sample code's **application.properties** file to find the value to connect to your pre-configured QnA Maker knowledge base.
 
 ## [Python](#tab/python)
 
@@ -93,6 +99,12 @@ If you aren't deploying this for production, your bot's app ID and password fiel
 
 [!code-javascript[.env file](~/../botbuilder-samples/samples/javascript_nodejs/11.qnamaker/.env)]
 
+## [Java](#tab/java)
+
+**application.properties**
+
+[!code-java[appsettings](~/../botbuilder-samples/samples/java_springboot/11.qnamaker/src/main/resources/application.properties)]
+
 ## [Python](#tab/python)
 
 **config.py**
@@ -127,6 +139,15 @@ In the **QnABot.js** file, we use the connection information provided by your .e
 
 [!code-javascript[QnAMaker](~/../botbuilder-samples/samples/javascript_nodejs/11.qnamaker/bots/QnABot.js?range=12-16)]
 
+## [Java](#tab/java)
+
+In **QnABot.java**, in the `onMessageActivity` method, create a QnAMaker instance. The `QnABot` class is also where the names of the connection information, saved in **application.properties** above, are pulled in. If you have chosen different names for your knowledge base connection information in your settings file, be sure to update the names here to reflect your chosen name.
+
+**QnABot.java**
+
+[!code-java[qna connection](~/../botbuilder-samples/samples/java_springboot/11.qnamaker/src/main/java/com/microsoft/bot/sample/qnamaker/QnABot.java?range=25-30)]
+
+
 ## [Python](#tab/python)
 
 In the **qna_bot.py** file, use the connection information provided by the **config.py** file to establish a connection to the QnA Maker service: `self.qna_maker`.
@@ -154,6 +175,14 @@ In the **QnABot.js** file, we pass the user's input to the QnA Maker service's `
 
 [!code-javascript[OnMessage](~/../botbuilder-samples/samples/javascript_nodejs/11.qnamaker/bots/QnABot.js?range=45-54)]
 
+## [Java](#tab/java)
+
+When your bot needs an answer from QnAMaker, call the `getAnswers` method from your bot code to get the appropriate answer based on the current context. If you're accessing your knowledge base, change the _no answers found_ message below to provide helpful instructions for your users..
+
+**QnABot.java**
+
+[!code-java[qna get answers](~/../botbuilder-samples/samples/java_springboot/11.qnamaker/src/main/java/com/microsoft/bot/sample/qnamaker/QnABot.java?range=34-47)]
+
 ## [Python](#tab/python)
 
 In the **qna_bot.py** file, we pass the user's input to the QnA Maker service's `get_answers` method to get answers from the knowledge base. If QnA Maker returns a response, this is shown to the user. Otherwise, the user receives the message *No QnA Maker answers were found.*
@@ -173,7 +202,7 @@ Start the Emulator, connect to your bot, and send a message as shown below.
 
 ## Additional information
 
-The **QnA Maker multi-turn** sample ([**C#**](https://aka.ms/cs-qna-multiturn), [**JavaScript**](https://aka.ms/js-qna-multiturn), [**Python**](https://aka.ms/py-qna-multiturn)) shows how to use a QnA Maker dialog to support QnA Maker's follow-up prompt and active learning features.
+The **QnA Maker multi-turn** sample ([**C#**](https://aka.ms/cs-qna-multiturn), [**JavaScript**](https://aka.ms/js-qna-multiturn), [**Java**](https://aka.ms/java-qna-multiturn), [**Python**](https://aka.ms/py-qna-multiturn)) shows how to use a QnA Maker dialog to support QnA Maker's follow-up prompt and active learning features.
 
 - QnA Maker supports follow-up prompts, also known as multi-turn prompts.
 If the QnA Maker knowledge base requires an additional response from the user, QnA Maker sends context information that you can use to prompt the user. This information is also used to make any follow-up calls to the QnA Maker service.

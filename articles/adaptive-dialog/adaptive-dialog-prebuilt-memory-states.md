@@ -15,21 +15,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-This article provides technical details that will help you work with memory scopes in adaptive dialogs. For an introduction to memory scopes and managing state in adaptive dialogs, see the [Managing state in adaptive dialogs][managing-state] concept article.
-
-<!--
-Memory scopes available in adaptive dialogs:
-
-* [User scope](#user-scope)
-* [Conversation scope](#conversation-scope)
-* [Dialog scope](#dialog-scope)
-  * [Dialog sub-scopes](#dialog-sub-scopes)
-* [Turn scope](#turn-scope)
-  * [Turn sub-scopes](#turn-sub-scopes)
-* [Settings scope](#settings-scope)
-* [This scope](#this-scope)
-* [Class scope](#class-scope)
--->
+This article provides technical details that will help you work with memory scopes in adaptive dialogs. For an introduction to memory scopes and managing state in adaptive dialogs, see the [Conversation flow and memory][managing-state] Composer concept article.
 
 > [!TIP]
 > All property paths are case-insensitive. For example, `user.name` is the same as `user.Name`. Also, if you do not have a property named `user.name` and you create a property named `user.name.first` the `user.name` object will automatically be created for you.
@@ -55,16 +41,6 @@ Examples:
 - `conversation.lastFemaleReference`
 - `conversation.lastLocationReference`
 
-In the following example demonstrates how you might use the conversation scope to gather input from the user, creating a new `PropertyAssignment` object for use in the `SetProperties` [action][setproperties-action], getting the value from the conversation scope.
-
-```csharp
-new PropertyAssignment()
-{
-    Property = "conversation.flightBooking.departureCity",
-    Value = "=turn.recognized.entities.fromCity.location"
-},
-```
-
 ## Dialog scope
 
 Dialog scope persists data for the life of the associated dialog, providing memory space for each dialog to have internal persistent bookkeeping. Dialog scope is cleared when the associated dialog ends.
@@ -78,7 +54,7 @@ All options passed into `BeginDialog` when creating a new adaptive dialog become
 
 ### Dialog sub-scopes
 
-All trigger actions in an adaptive dialog have their own sub-scopes and are accessed by name, for example the `Foreach` action is accessed as `dialog.Foreach`. By default, the index and value are set in the `dialog.foreach` scope, which can be accessed as `dialog.Foreach.index` and `dialog.Foreach.value`. You can read more about the [`Foreach`][foreach-action] action in the **Actions in adaptive dialogs** topic.
+All trigger actions in an adaptive dialog have their own sub-scopes and are accessed by name, for example the `Foreach` action is accessed as `dialog.Foreach`. By default, the index and value are set in the `dialog.foreach` scope, which can be accessed as `dialog.Foreach.index` and `dialog.Foreach.value`.
 
 ## Turn scope
 
@@ -101,12 +77,6 @@ For example, you might have something like this defined in our .lg file to respo
 Sorry, I do not understand '${turn.activity.text}'. ${GetAge()}
 ```
 
-Or setting property values in your dialogs source code:
-
-```csharp
-ItemsProperty = "turn.activity.membersAdded"
-```
-
 #### turn.recognized
 
 All intents and entities returned from a [recognizer][recognizers] on any given turn, are automatically set in the `turn.recognized` scope and remain available until the next turn occurs. the `turn.recognized` scope has three properties:
@@ -114,20 +84,6 @@ All intents and entities returned from a [recognizer][recognizers] on any given 
 - `turn.recognized.intents.xxx`: A list of the top intents classified by the recognizer for that turn.
 - `turn.recognized.entities.xxx`: A list of entities recognized that turn.
 - `turn.recognized.score`: The _confidence score_ of the top scoring intent for that turn.
-
-For example, a flight booking application might have a book flight intent with an entity for departure destinations and another entity for arrival destinations, the example below demonstrates how to capture the departure destination value before the turn ends.
-
-```csharp
-Value = "=turn.recognized.entities.fromCity.location"
-```
-
-There is another way to accomplish this using [memory short-hand notation](../v4sdk/bot-builder-concept-adaptive-dialog-memory-states.md#memory-short-hand-notations).
-
-```csharp
-// Value is a property containing an expression. @entityName is shorthand to refer to the value of
-// the entity recognized. @fromCity.location is same as turn.recognized.entities.fromCity.location
-Value = "=@fromCity.location"
-```
 
 #### turn.dialogEvent
 
@@ -165,17 +121,6 @@ This is an example of an appsettings.json file that holds configuration settings
 }
 ```
 
-This is an example of how you would refer to the configuration settings that are stored in your appsettings.json file using the settings memory scope:
-
-```csharp
-var recognizer = new QnAMakerRecognizer()
-{
-    HostName = settings.QnAMaker.hostname,
-    EndpointKey = settings.QnAMaker:endpointKey,
-    KnowledgeBaseId = settings.QnAMaker:knowledgebaseId,
-};
-```
-
 ## This scope
 
 The `this` scope pertains the active action's property bag. This is helpful for input actions since their life type typically lasts beyond a single turn of the conversation.
@@ -183,42 +128,15 @@ The `this` scope pertains the active action's property bag. This is helpful for 
 - `this.value` holds the current recognized value for the input.
 - `this.turnCount` holds the number of times the missing information has been prompted for this input.
 
-This example shows a common usage in a bots startup class:
-
-### This scope example
-
-```csharp
-new TextInput()
-{
-    property = "user.name",
-    prompt = new ActivityTemplate("what is your name?"),
-    defaultValue = "Human",
-    defaultValueResponse = new ActivityTemplate("Sorry, I still am not getting it after ${this.turnCount} attempts. For now, I'm setting your name to '${class.defaultValue}' for now. You can always say 'My name is <your name>' to re-introduce yourself to me.")
-}
-```
-
 ## Class scope
 
 This holds the instance properties of the active dialog. you reference this scope as follows: `${class.<propertyName>}`.
 
-### Class scope example
-
-```csharp
-new TextInput()
-{
-  Property = "user.age"
-  Prompt = new ActivityTemplate("What is your age?"),
-  DefaultValue = "30",
-  DefaultValueResponse = new ActivityTemplate("Sorry, I'm not getting it in spite of you trying ${this.turnCount} number of times. \n I'm going with ${class.defaultValue} for now.")
-}
-```
-
 ## Additional information
 
-- For an introduction to managing state in adaptive dialogs, see the [Managing state in adaptive dialogs][managing-state] concept article.
-- [Memory short-hand notation](../v4sdk/bot-builder-concept-adaptive-dialog-memory-states.md#memory-short-hand-notations).
+- For an introduction to managing state in Composer, see the [Conversation flow and memory][managing-state] Composer concept article.
 
-[managing-state]: ../v4sdk/bot-builder-concept-adaptive-dialog-memory-states.md
+[managing-state]: /composer/concept-memory
 [foreach-action]: ./adaptive-dialog-prebuilt-actions.md#foreach
 [botframework-activity]: https://github.com/microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md
 [recognizers]: ../v4sdk/bot-builder-concept-adaptive-dialog-recognizers.md

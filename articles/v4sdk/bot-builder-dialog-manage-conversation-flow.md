@@ -27,7 +27,7 @@ This article shows how to implement simple conversation flow by creating prompts
 ## Prerequisites
 
 - Knowledge of [bot basics][concept-basics], [managing state][concept-state], and the [dialogs library][concept-dialogs].
-- A copy of the **Multi turn prompts** sample in either [**C#**][cs-sample], [**JavaScript**][js-sample], or [**Python**][python-sample].
+- A copy of the **Multi turn prompts** sample in either [**C#**][cs-sample], [**JavaScript**][js-sample], [**Java**][java-sample], or [**Python**][python-sample].
 
 ## About this sample
 
@@ -132,6 +132,43 @@ The dialog context allows you to start a dialog with the string ID, or continue 
 
 [!code-javascript[run method](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/dialogs/userProfileDialog.js?range=59-68)]
 
+# [Java](#tab/java)
+
+The bot interacts with the user via `UserProfileDialog`. When creating the bot's `DialogBot` class, the `UserProfileDialog` is set as its main dialog. The bot then uses a `Run` helper method to access the dialog.
+
+![Java user profile dialog](media/user-profile-dialog-java.png)
+
+**UserProfileDialog.java**
+
+Begin by creating the `UserProfileDialog` that derives from the `ComponentDialog` class, and has 7 steps.
+
+In the `UserProfileDialog` constructor, create the waterfall steps, prompts and the waterfall dialog, and add them to the dialog set. The prompts need to be in the same dialog set in which they are used.
+
+[!code-java[Constructor snippet](~/../botbuilder-samples/samples/java_springboot/05.multi-turn-prompt/src/main/java/com/microsoft/bot/sample/multiturnprompt/UserProfileDialog.java?range=34-59)]
+
+Next, add the steps that the dialog uses to prompt for input. To use a prompt, call it from a step in your dialog and retrieve the prompt result in the following step using `stepContext.getResult()`. Behind the scenes, prompts are a two-step dialog. First, the prompt asks for input. Then it returns the valid value, or starts over from the beginning with a reprompt until it receives a valid input.
+
+You should always return a non-null `DialogTurnResult` from a waterfall step. If you don't, your dialog may not work as designed. Shown below is the implementation for `nameStep` in the waterfall dialog.
+
+[!code-java[Name step](~/../botbuilder-samples/samples/java_springboot/05.multi-turn-prompt/src/main/java/com/microsoft/bot/sample/multiturnprompt/UserProfileDialog.java?range=71-77)]
+
+In `ageStep`, specify a retry prompt for when the user's input fails to validate, either because it's in a format that the prompt can't parse, or the input fails a validation criteria. In this case, if no retry prompt was provided, the prompt will use the initial prompt text to re-prompt the user for input.
+
+[!code-java[Age step](~/../botbuilder-samples/samples/java_springboot/05.multi-turn-prompt/src/main/java/com/microsoft/bot/sample/multiturnprompt/UserProfileDialog.java?range=92-105&highlight=7)]
+
+**UserProfile.java**
+
+The user's mode of transportation, name, and age are saved in an instance of the `UserProfile` class.
+
+[!code-java[UserProfile class](~/../botbuilder-samples/samples/java_springboot/05.multi-turn-prompt/src/main/java/com/microsoft/bot/sample/multiturnprompt/UserProfile.java?range=8=16)]
+
+**UserProfileDialog.java**
+
+In the last step, check the `stepContext.Result` returned by the dialog called in the previous waterfall step. If the return value is true, the user profile accessor gets and updates the user profile. To get the user profile, call `get` and then set the values of the `userProfile.Transport`, `userProfile.Name`, `userProfile.Age` and `userProfile.Picture` properties. Finally, summarize the information for the user before calling `endDialog`, which ends the dialog. Ending the dialog pops it off the dialog stack and returns an optional result to the dialog's parent. The parent is the dialog or method that started the dialog that just ended.
+
+[!code-java[SummaryStep](~/../botbuilder-samples/samples/java_springboot/05.multi-turn-prompt/src/main/java/com/microsoft/bot/sample/multiturnprompt/UserProfileDialog.java??range=142-191&highlight=3-8,43)]
+
+
 # [Python](#tab/python)
 
 To use dialogs, install the **botbuilder-dialogs** and **botbuilder-ai** PyPI packages by running `pip install botbuilder-dialogs` and `pip install botbuilder-ai` from a terminal.
@@ -204,6 +241,15 @@ Separately, the bot overrides the `ActivityHandler.run` method to save conversat
 
 [!code-javascript[override](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/bots/dialogBot.js?range=34-43&highlight=7-9)]
 
+# [Java](#tab/java)
+
+**DialogBot.java**
+
+The `onMessageActivity` handler uses the `run` method to start or continue the dialog. `onTurn` uses the bot's state management objects to persist any state changes to storage. The `ActivityHandler.onTurn` method calls the various activity handler methods, such as `onMessageActivity`. In this way, the state is saved after the message handler completes but before the turn itself completes.
+
+[!code-java[overrides](~/../botbuilder-samples/samples/java_springboot/05.multi-turn-prompt/src/main/java/com/microsoft/bot/sample/multiturnprompt/DialogBot.java?range=40-58&highlight=6-8)]
+
+
 # [Python](#tab/python)
 
 The `on_message_activity` handler uses the helper method to start or continue the dialog. The `on_turn` method uses the bot's state management objects to persist any state changes to storage. The `on_message_activity` method gets called last after other defined handlers are run, such as `on_turn`. In this way, the state is saved after the message handler completes but before the turn itself completes.
@@ -236,6 +282,15 @@ Register services for the bot in `Startup`. These services are available to othe
 Register services for the bot in `index.js`.
 
 [!code-javascript[overrides](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/index.js?range=19-60)]
+
+# [Java](#tab/java)
+
+**Application.java**
+
+Spring will provide the ConversationState, UserState, and Dialog via dependency injection. Override the getBot and return an instance of the DialogBot.
+
+[!code-java[ConfigureServices](~/../botbuilder-samples/samples/java_springboot/05.multi-turn-prompt/src/main/java/com/microsoft/bot/sample/multiturnprompt/Application.java?range=52-59)]
+
 
 # [Python](#tab/python)
 
@@ -293,6 +348,15 @@ Below is a validator code example for the `agePromptValidator` method definition
 
 [!code-javascript[age prompt validator](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/dialogs/userProfileDialog.js?range=169-172)]
 
+# [Java](#tab/java)
+
+**UserProfileDialog.java**
+
+Below is a validator code example for the `agePromptValidator` method definition. `promptContext.getRecognized().getValue()` contains the parsed value, which is an integer here for the number prompt. `promptContext.getRecognized().getSucceeded()` indicates whether the prompt was able to parse the user's input or not. The validator should return false to indicate that it did not accept the value. The prompt dialog should re-prompt the user; otherwise, return true to accept the input and return from the prompt dialog. Note that you can change the value in the validator per your scenario.
+
+[!code-csharp[prompt validator method](~/../botbuilder-samples/samples/java_springboot/05.multi-turn-prompt/src/main/java/com/microsoft/bot/sample/multiturnprompt/UserProfileDialog.java?range=193-201)]
+
+
 # [Python](#tab/python)
 
 **dialogs/user_profile_dialog.py**
@@ -319,4 +383,5 @@ Below is a validator code example for the `age_prompt_validator` method definiti
 
 [cs-sample]: https://aka.ms/cs-multi-prompts-sample
 [js-sample]: https://aka.ms/js-multi-prompts-sample
+[java-sample]: https://aka.ms/java-multi-prompts-sample
 [python-sample]: https://aka.ms/python-multi-prompts-sample

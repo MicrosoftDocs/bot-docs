@@ -1,8 +1,7 @@
 
 You need to prepare your project files before you can deploy your bot.
 
-Make sure you're in your bot's project folder.
-Then prepare your bot code for deployment.
+Make sure you're in your bot's project folder. Then prepare your bot code for deployment.
 
 ##### [C#](#tab/csharp)
 
@@ -29,6 +28,10 @@ az bot prepare-deploy --code-dir "." --lang Typescript
 ```
 
 This command generates a `web.config` file in your project folder.
+
+##### [Java](#tab/java)
+
+Skip this step and go directly to **Package Project**.  
 
 ##### [Python](#tab/python)
 

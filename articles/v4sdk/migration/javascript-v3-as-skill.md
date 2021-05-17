@@ -25,9 +25,9 @@ To migrate a JavaScript bot from v3 to v4, see how to [Migrate a Javascript v3 b
 - Node.js.
 - An Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 - To test the skills, you will need the Bot Framework Emulator and local copies of the bots:
-  - The v3 JavaScript echo skill: [**Skills/v3-skill-bot**](https://aka.ms/v3-js-echo-skill).
-  - The v3 JavaScript booking skill: [**Skills/v3-booking-bot-skill**](https://aka.ms/v3-js-booking-skill).
-  - The v4 JavaScript sample skill consumer: [**Skills/v4-root-bot**](https://aka.ms/js-simple-root-bot).
+  - The v3 JavaScript echo skill: [**Skills/v3-skill-bot**](https://aka.ms/bot/v3-js-echo-skill-bot).
+  - The v3 JavaScript booking skill: [**Skills/v3-booking-bot-skill**](https://aka.ms/bot/v3-js-booking-skill-bot).
+  - The v4 JavaScript sample skill consumer: [**Skills/v4-root-bot**](https://aka.ms/bot/js-v4-root-bot).
 
 ## About the bots
 
@@ -62,7 +62,7 @@ To convert an existing bot to a skill bot takes just a few steps, as outlined in
 
 ## Convert the echo bot
 
-See [Skills/v3-skill-bot](https://aka.ms/v3-js-echo-skill) for an example of a v3 echo bot that has been converted to a basic skill.
+See [Skills/v3-skill-bot](https://aka.ms/bot/v3-js-echo-skill-bot) for an example of a v3 echo bot that has been converted to a basic skill.
 
 1. Create a simple JavaScript v3 bot project and import required modules.
 
@@ -106,7 +106,7 @@ See [Skills/v3-skill-bot](https://aka.ms/v3-js-echo-skill) for an example of a v
 
 ## Convert the booking bot
 
-See [Skills/v3-booking-bot-skill](https://aka.ms/v3-js-booking-skill) for an example of a v3 booking bot that has been converted to a basic skill.
+See [Skills/v3-booking-bot-skill](https://aka.ms/bot/v3-js-booking-skill-bot) for an example of a v3 booking bot that has been converted to a basic skill.
 Before conversion, the bot was similar to the v3 [core-MultiDialogs](https://aka.ms/v3-js-core-multidialogs) sample.
 
 1. Import required modules.

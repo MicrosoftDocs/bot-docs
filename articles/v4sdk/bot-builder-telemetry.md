@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 07/17/2019
+ms.date: 05/11/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -28,6 +28,9 @@ In this article you will learn how to implement telemetry into your bot using Ap
 * Enabling telemetry to capture usage data from other services like [LUIS](bot-builder-howto-v4-luis.md) and [QnA Maker](bot-builder-howto-qna.md).
 
 * Visualizing your telemetry data in Application Insights.
+
+> [!NOTE]
+> You may want to look at the related Composer article [Capture your bot's telemetry](/composer/how-to-capture-telemetry). 
 
 <!-- Prerequisites-->
 ## Prerequisites

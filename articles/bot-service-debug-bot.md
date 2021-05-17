@@ -15,7 +15,7 @@ monikerRange: "azure-bot-service-4.0"
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-This article describes how to debug your bot using an integrated development environment (IDE) such as Visual Studio or Visual Studio Code and the Bot Framework Emulator. While you can use these methods to debug any bot locally, this article uses a [C#](~/dotnet/bot-builder-dotnet-sdk-quickstart.md), [Javascript](~/javascript/bot-builder-javascript-quickstart.md), or [Python](~/python/bot-builder-python-quickstart.md) bot created in the quickstart.
+This article describes how to debug your bot using an integrated development environment (IDE) such as Visual Studio or Visual Studio Code and the Bot Framework Emulator. While you can use these methods to debug any bot locally, this article uses a [C#](~/dotnet/bot-builder-dotnet-sdk-quickstart.md), [Javascript](~/javascript/bot-builder-javascript-quickstart.md), [Java](~/java/bot-builder-java-quickstart.md), or [Python](~/python/bot-builder-python-quickstart.md) bot created in the quickstart.
 
 > [!NOTE]
 > In this article, we use the Bot Framework Emulator to send and receive messages from the bot during debugging. If you are looking for other ways to debug your bot using the Bot Framework Emulator, please read the [Debug with the Bot Framework Emulator](bot-service-debug-emulator.md) article.
@@ -48,6 +48,10 @@ For more information, see [Debug with the Emulator](bot-service-debug-emulator.m
 ## [JavaScript](#tab/javascript)
 
 [!INCLUDE [javascript vscode](~/includes/bot-service-debug-bot/js-vscode.md)]
+
+## [Java](#tab/java)
+
+[!INCLUDE [java vscode](~/includes/bot-service-debug-bot/java-vscode.md)]
 
 ## [Python](#tab/python)
 

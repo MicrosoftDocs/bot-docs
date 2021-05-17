@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 11/17/2020
+ms.date: 05/10/2021
 ---
 
 # Debug with the Emulator
@@ -50,6 +50,26 @@ To run a bot using command line, do the following:
 - Copy the port number that restify is listening on.
 
     ![JS Port Number](media/bot-service-debug-emulator/js_port_number.png)
+
+### [Java](#tab/java)
+
+- Go to the command prompt and change directory to your bot project directory.
+
+- If this is the first time, build the bot running the following command:
+
+    ```cmd
+    mvn package
+    ```
+
+- Start the bot by running the following command:
+
+    ```cmd
+    java -jar .\target\<bot archive name>.jar
+    ```
+
+- Note the port number that Tomcat web server is listening on.
+
+    ![Java Port Number](media/bot-service-debug-emulator/java_port_number.png)
 
 ### [Python](#tab/python)
 
@@ -114,7 +134,7 @@ When you click the login button displayed by the bot, you will be asked to enter
 
 ![Emulator startup window](media/emulator-v4/emulator-welcome.png)
 
-To connect to a bot running locally and click **Open bot**. Add the port number your copied earlier into the following URL and paste the updated URL in the Bot URL bar:
+To connect to a bot running locally, select **Open bot**. Add the port number your copied earlier into the following URL and paste the updated URL in the Bot URL bar:
 
 *http://localhost:**port number**/api/messages*
 
@@ -131,7 +151,7 @@ When creating an AD identity provider application, remember the following:
 - When the supported account types is set to single tenant, if you use a personal subscription instead of a Microsoft account, the Emulator would issue the error: *The bot's Microsoft App ID or Microsoft App Password is incorrect..*
 - In this case, the supported account types must be set to *Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Xbox)*.
 
-For more information, see [Create an Azure AD identity provider application](bot-builder-tutorial-authentication.md#create-an-azure-ad-identity-provider-application) and [Register a new application using the Azure portal](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#register-a-new-application-using-the-azure-portal).
+For more information, see [Create an Azure AD identity provider application](bot-builder-tutorial-authentication.md#create-an-azure-ad-identity-provider-application) and [Register a new application using the Azure portal](/azure/active-directory/develop/quickstart-register-app#register-a-new-application-using-the-azure-portal).
 
 ## View detailed Message Activity with the Inspector
 

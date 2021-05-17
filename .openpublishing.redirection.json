@@ -1,10 +1,110 @@
 {
   "redirections": [
-		{
-			"source_path": "articles/security-baseline.md",
-			"redirect_url": "/security/benchmark/azure/baselines/bot-service-security-baseline",
-			"redirect_document_id": false
-		},
+    {
+      "source_path": "articles/security-baseline.md",
+      "redirect_url": "/security/benchmark/azure/baselines/bot-service-security-baseline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-howto-cross-train.md",
+      "redirect_url": "composer/concept-language-understanding",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-dialogs-declarative.md",
+      "redirect_url": "composer/concept-dialog",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-howto-handle-user-interrupts-adaptive.md",
+      "redirect_url": "composer/how-to-ask-for-user-input",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-mixed-dialogs.md",
+      "redirect_url": "composer/concept-dialog",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-dialogs-adaptive.md",
+      "redirect_url": "composer/quickstart-create-bot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-adaptive-dialog-setup.md",
+      "redirect_url": "composer/quickstart-create-bot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-howto-bf-cli-deploy-luis.md",
+      "redirect_url": "composer/concept-natural-language-processing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-howto-bf-cli-update-luis.md",
+      "redirect_url": "composer/concept-natural-language-processing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-howto-bf-cli-deploy-qna.md",
+      "redirect_url": "composer/concept-natural-language-processing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-howto-bf-cli-alterations-qna.md",
+      "redirect_url": "composer/concept-natural-language-processing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-adaptive-dialog-Introduction.md",
+      "redirect_url": "composer/concept-dialog",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-concept-adaptive-dialog-Triggers.md",
+      "redirect_url": "composer/concept-dialog#anatomy-of-a-dialog",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-concept-adaptive-dialog-Actions.md",
+      "redirect_url": "composer/concept-dialog#anatomy-of-a-dialog",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-concept-adaptive-dialog-Inputs.md",
+      "redirect_url": "composer/concept-memory#set-properties-with-prompts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-concept-adaptive-dialog-recognizers.md",
+      "redirect_url": "composer/concept-dialog#anatomy-of-a-dialog",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-concept-adaptive-dialog-generators.md",
+      "redirect_url": "composer/concept-dialog#anatomy-of-a-dialog",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-concept-adaptive-dialog-memory-states.md",
+      "redirect_url": "composer/concept-memory",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-concept-adaptive-dialog-interruptions.md",
+      "redirect_url": "composer/concept-dialog",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-concept-adaptive-dialog-declarative.md",
+      "redirect_url": "composer/concept-dialog",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-concept-cross-train.md",
+      "redirect_url": "composer/concept-natural-language-processing",
+      "redirect_document_id": false
+    },
     {
       "source_path": "articles/bot-builder-tutorial-authentication.md",
       "redirect_url": "/previous-versions/azure/bot-service/bot-builder-tutorial-authentication",
@@ -454,7 +554,7 @@
       ]
     },
     {
-      "source_path": "articles/bot-service-resources-bot-framework-faq.yml",
+      "source_path": "articles/bot-service-resources-bot-framework-faq.md",
       "redirect_url": "/previous-versions/azure/bot-service/bot-service-resources-bot-framework-faq",
       "redirect_document_id": false,
       "monikers": [
@@ -1915,11 +2015,6 @@
     {
       "source_path": "articles/dotnet/index.md",
       "redirect_url": "https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/java/bot-builder-java-quickstart.md",
-      "redirect_url": "https://github.com/Microsoft/botbuilder-java/wiki",
       "redirect_document_id": false
     },
     {

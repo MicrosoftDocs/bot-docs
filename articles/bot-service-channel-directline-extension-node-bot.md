@@ -7,7 +7,7 @@ manager: kamrani
 ms.service: bot-service
 ms.topic: conceptual
 ms.author: dev 
-ms.date: 01/15/2020
+ms.date: 05/06/2021
 ---
 
 # Configure Node.js bot for extension
@@ -18,7 +18,7 @@ This article describes how to update a bot to work with **named pipes**, and how
 
 ## Prerequisites
 
-To perform the steps described next, you need to have a **Web App Bot** (your bot) created in Azure.
+To perform the steps described next, you need to have a bot deployed in Azure.
 
 ## Enable Direct Line app service extension
 

@@ -7,25 +7,24 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 02/09/2021
+ms.date: 04/15/2021
 ---
 
 # Manage a bot
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-In your browser, navigate to the [Azure portal](https://ms.portal.azure.com/). Select your resource application, such as a **Bot Channels Registration**. On the navigation pane you'll see the sections described below.
+In your browser, navigate to the [Azure portal](https://ms.portal.azure.com/). Select your resource application, such as an **Azure Bot**. On the navigation pane you'll see the sections described below.
 
-## Bot resource settings
+## Azure Bot resource settings
 
-There are a few different types of bot resources, such as a **Web App Bot** or a **Bot Channels Registration**.
-The information available for each type of resource is largely the same.
+The **Azure Bot** resource contains the settings described below.
 
 ### General
 
 At the top of the navigation pane are links for general information applicable to a bot.
 
-:::image type="content" source="media/azure-manage-a-bot/overview.png" alt-text="Links from the navigation pane to general information about a bot.":::
+:::image type="content" source="media/azure-manage-a-bot/overview.png" alt-text="General information about a bot.":::
 
 > [!div class="mx-tdBreakAll"]
 > | Link |  Description |
@@ -39,7 +38,7 @@ At the top of the navigation pane are links for general information applicable t
 
 In the **Settings** section are links for most of your bot's management options.
 
-:::image type="content" source="media/azure-manage-a-bot/bot-management.png" alt-text="Links from the navigation pane to common management options.":::
+:::image type="content" source="media/azure-manage-a-bot/bot-management.png" alt-text="Common management options.":::
 
 > [!div class="mx-tdBreakAll"]
 > | Link |  Description |
@@ -47,45 +46,38 @@ In the **Settings** section are links for most of your bot's management options.
 > | **Bot profile** <img width="200px"/>| Manages various bot profile settings, such as display name, icon, and description. |
 > | **Configuration** | Manages various bot settings, such as analytics, messaging endpoint, and OAuth connection settings. |
 > | **Channels** | Configures the channels your bot uses to communicate with users. |
-> | **Speech priming** | Manages the connections between your LUIS app and the Bing Speech service. |
 > | **Pricing** | Manages the pricing tier for the bot service. |
 > | **Test in Web Chat** | Uses the integrated Web Chat control to quickly test your bot. |
 > | **Encryption** | Manages your encryption keys. |
 > | **Properties** | Lists your bot resource properties, such as resource ID, subscription ID, and resource group ID. |
-> | **Locks** | Manages your resource locks. |
+> | **Locks** | Manages your resource locks.|
 
 ### Monitoring
 
 In the **Monitoring** section are links for most of your bot's monitoring options.
 
+:::image type="content" source="media/azure-manage-a-bot/bot-monitoring.png" alt-text="Common monitoring options.":::
+
 > [!div class="mx-tdBreakAll"]
 > | Link |  Description |
 > | ---- | ---- |
-> | **Conversational analytics** <img width="100px"/> | Enables analytics to view the collected data with Application Insights. |
+> | **Conversational analytics** <img width="140px"/> | Enables analytics to view the collected data with Application Insights. This Analytics blade will be deprecated. For more information, see [Add telemetry to your bot](/azure/bot-service/bot-builder-telemetry?view=azure-bot-service-4.0&tabs=csharp&WT.mc_id=Portal-Microsoft_Azure_BotService&preserve-view=true) and [Analyze your bot's telemetry data](/azure/bot-service/bot-builder-telemetry-analytics-queries?view=azure-bot-service-4.0&WT.mc_id=Portal-Microsoft_Azure_BotService&preserve-view=true). |
+> | **Alerts** | Configure alert rules and attend to fired alerts to efficiently monitor your Azure resources. For more information, see [Overview of alerts in Microsoft Azure](/azure/azure-monitor/alerts/alerts-overview?toc=%2Fazure%2Fazure-monitor%2Ftoc.json).|
+> |**Metrics**| Select a metric to see data in the proper chart.|
+> |**Diagnostic settings**| Diagnostic settings are used to configure streaming export of platform logs and metrics for a resource to the destination of your choice. For more information,see [diagnostic settings](/azure/azure-monitor/essentials/diagnostic-settings?WT.mc_id=Portal-Microsoft_Azure_Monitoring&tabs=CMD). |
+> |**Logs**| Produce insights from Azure Monitor logs. |
 
 ## Application service settings
 
-A bot application, also known as an _application service_, has a set of application settings that you can access through the Azure portal. These app settings are variables passed as environment variables to the application code. For more information, see [Configure an App Service app in the Azure portal](/azure/app-service/configure-common).
+A bot application, also known as an *application service (App Service)*, has a set of application settings that you can access through the Azure portal. They are environment variables passed to the bot application code. For more information, see [Configure an App Service app in the Azure portal](/azure/app-service/configure-common).
 
 1. In your browser, navigate to the [Azure portal](https://ms.portal.azure.com/).
-1. Search for your app service and select its name.
-1. The app service is displayed.
+1. Search for your bot app service and select its name.
+1. The bot app service information is displayed. The following picture is a partial view of the settings. 
 
     :::image type="content" source="media/azure-manage-a-bot/app-service-settings.png" alt-text="Navigation pane for an app service resource.":::
 
-<!-- TODO figure out what this next paragraph is trying to say, and rewrite it to be clear. -->
-The **Application Settings** left panel contains detailed information about the bot, such as the bot's environment, debug settings, and application settings keys.
-
-If you created a web app bot, you can find a shortcut to the related application service in the **Overview** pane.
-
-:::image type="content" source="media/azure-manage-a-bot/app-service-shortcut.png" alt-text="Link to the web app service from the Overview pane.":::
-
-### MicrosoftAppID and MicrosoftAppPassword
-
-The **MicrosoftAppID** and **MicrosoftAppPassword** are kept within the bot's settings file(`appsettings.json` or `.env`), or Azure Key Vault. To retrieve them, either download your bot's setting or config file (for older bots, if it exists), or access Azure Key Vault. It may be necessary for you to test locally with the ID and password.
-
-> [!NOTE]
-> The **Bot Channels Registration** bot service comes with a *MicrosoftAppID*, but because there is no app service associated with this type of service there is also no **Application Settings** blade for you to look up the *MicrosoftAppPassword*. See [Bot Channels Registration password](bot-service-manage-settings.md#get-registration-password) to learn how to generate the password.
+[!INCLUDE [azure bot appid password](~/includes/authentication/azure-bot-appid-password.md)]
 
 ## Next steps
 

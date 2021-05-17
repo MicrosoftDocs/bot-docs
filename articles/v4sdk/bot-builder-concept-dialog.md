@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 08/03/2020
+ms.date: 05/06/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -20,23 +20,22 @@ A dialog performs a task that can represent part of or a complete conversational
 It can span just one turn or many, and can span a short or long period of time.
 
 This article describes the core classes and features of the dialog library.
-You should be familiar with [how bots work](bot-builder-basics.md) (including [what a turn is](bot-builder-basics.md#defining-a-turn)) and [managing state](bot-builder-concept-state.md).
 
-Each dialog represents a conversational task that can run to completion and return collected information.
-Each dialog represents a basic unit of control flow: it can begin, continue, and end; pause and resume; or be canceled.
+- You should be familiar with [how bots work](bot-builder-basics.md) (including [what a turn is](bot-builder-basics.md#defining-a-turn)) and [managing state](bot-builder-concept-state.md).
+- Each dialog represents a conversational task that can run to completion and return collected information.
+- Each dialog represents a basic unit of control flow: it can begin, continue, and end; pause and resume; or be canceled.
+- Dialogs are similar to a method or function in a programming language. You can pass in arguments or parameters when you start a dialog, and the dialog can later produce a return value when it ends.
 
-<!--
-You manage a dialog through its inputs and outputs. When the dialog starts, it receives a dialog option, as an optional argument. On each turn, the dialog is passed the current turn context, which includes the current activity. When the dialog ends, it can return a value. In effect, a bot can give control to a dialog, and a dialog can give control to another dialog, and so on.
--->
-
-Dialogs are similar to a method or function in a programming language. You can pass in arguments or parameters when your start a dialog, and the dialog can later produce a return value when it ends.
+> [!TIP]
+> If you are new to developing bots with the Bot Framework or creating a new conversational experience, start with  the [Bot Framework Composer](/composer/).
+> For existing SDK-first bots, not created in Composer, consider exposing your bot as a [skill](skills-about-skill-bots.md) and using Composer for future bot development.
 
 ## Dialog state
 
-Dialogs are a way of implementing a _multi-turn conversation_, and as such, they rely on _persisted state_ across turns. Without state in dialogs, your bot wouldn't know where it was in the conversation or what information it had already gathered.
+Dialogs can implement a _multi-turn conversation_, and as such, they rely on _persisted state_ across turns. Without state in dialogs, your bot wouldn't know where it was in the conversation or what information it had already gathered.
 
 <!--A bot is inherently stateless.-->
-To retain a dialog's place in the conversation, the dialog's state must be retrieved from and saved to memory each turn. This is handled via a dialog state property accessor defined on the bot's conversation state. This dialog state collects information for all active dialogs, and children of active dialogs.
+To retain a dialog's place in the conversation, the dialog's state must be retrieved from and saved to memory each turn. This is handled via a dialog state property accessor defined on the bot's conversation state. This dialog state manages information for all active dialogs, and children of active dialogs.
 This allows the bot to pick up where it left off last and to handle a variety of conversation models.
 
 At run time, the dialog state property includes information on where the dialog is in its logical process, including any internally collected information in the form of a _dialog instance_ object. Again, this needs to be read into the bot and saved out to memory each turn.
@@ -53,35 +52,33 @@ While you don't usually need to interact with these classes directly, being awar
 | _Dialog instance_ | Contains information about one active dialog.
 | _Dialog turn result_ | Contains status information from an active, or recently active, dialog. If the active  dialog ended, this contains its return value.
 
-> [!NOTE]
-> As part of the introduction of adaptive dialogs, version 4.9 of the C# SDK introduced a _dialog manager_ class that automates many of the dialog management tasks for you.
-> (Adaptive dialogs are in preview in version 4.10 of the JavaScript SDK.)
-> For more information, see the [introduction to adaptive dialogs](bot-builder-adaptive-dialog-Introduction.md).
-<!-- You can use a dialog manager to run any type of dialog. -->
-
 ## Dialog types
 
-The dialogs library provides a few types of dialogs to make your bot's conversations easier to manage.
+The dialogs library provides a few types of dialogs to make your bot's conversations easier to manage. Some of these types are described in more detail later in this article.
 
-| Type | Description
-| :--  | :--
-| _dialog_ | The base class for all dialogs.
-| _container dialog_ | The base class for all _container_ dialogs, such as component and adaptive dialogs. It maintains an inner dialog set and allows you to treat a collection of dialogs as a unit.
-| _component dialog_ | A general-purpose type of container dialog that encapsulates a set of dialogs, allowing for the reuse of the set as a whole. When a component dialog starts, it begins with a designated dialog in its collection. When the inner process completes, the component dialog ends.
-| _waterfall dialog_ | Defines a sequence of steps, allowing your bot to guide a user through a linear process. These are typically designed to work within the context of a component dialog.
-| _prompt dialogs_ | Ask the user for input and return the result. A prompt will repeat until it gets valid input or it is canceled. They are designed to work with waterfall dialogs.
-| _adaptive dialog_ | A type of container dialog that allows for flexible conversation flow. It includes built-in support for language recognition, language generation, and memory scoping features. To run an adaptive dialog (or another dialog that contains an adaptive dialog), you must start the dialog from a dialog manager.
-| _action dialogs_ | Represent programmatic structures. These let you design conversation flow much like expressions and statements in a traditional programming language let you design procedural flow in an application. These only work within an adaptive dialog.
-| _input dialogs_ | Ask the user for input, much like prompt dialogs, but can interact with other structures in an adaptive dialog. These only work within an adaptive dialog.
-| _skill dialog_ | Automates the management of one or more skill bots from a skill consumer.
-| _QnA Maker dialog_ | Automates access to a QnA Maker knowledge base.
+| Type | Description |
+|:-|:-|
+| dialog | The base class for all dialogs. |
+| [container dialog](#container-dialogs) | The base class for all _container_ dialogs, such as component and adaptive dialogs. It maintains an inner dialog set and allows you to treat a collection of dialogs as a unit. |
+| [component dialog](#component-dialogs) | A general-purpose type of container dialog that encapsulates a set of dialogs, allowing for the reuse of the set as a whole. When a component dialog starts, it begins with a designated dialog in its collection. When the inner process completes, the component dialog ends. |
+| waterfall dialog | Defines a sequence of steps, allowing your bot to guide a user through a linear process. These are typically designed to work within the context of a component dialog. |
+| prompt dialogs | Ask the user for input and return the result. A prompt will repeat until it gets valid input or it is canceled. They are designed to work with waterfall dialogs. |
+| [adaptive dialog](#adaptive-dialogs) | A type of container dialog used by Composer to provide more natural conversational flows. _Not_ intended to be used directly in an SDK-first bot. |
+| action dialogs | A type of dialog that supports the implementation of actions in Composer. _Not_ intended to be used directly in an SDK-first bot. |
+| input dialogs | A type of dialog that supports the implementation of input actions in Composer. _Not_ intended to be used directly in an SDK-first bot. |
+| [skill dialog](#skill-dialog) | Automates the management of one or more skill bots from a skill consumer. Composer directly supports skills as actions. |
+| [QnA Maker dialog](#qna-maker-dialog) | Automates access to a QnA Maker knowledge base. This dialog is designed to also work as an action within Composer. |
+
+> [!IMPORTANT]
+> _Adaptive dialogs_ were first added in version 4.9 of the C# SDK.
+> Adaptive dialogs support the [Bot Framework Composer](/composer/) and are not intended to be used directly in an SDK-first bot.
 
 ## Dialog patterns
 
 There are two main patterns for starting and managing dialogs from a bot.
 
-1. For adaptive dialogs, or any set of dialogs that contains an adaptive dialog, you need to create an instance of the dialog manager for your root dialog, and make your conversation state (and optionally your user state) available to the manager. For more information, see the [introduction to adaptive dialogs](bot-builder-adaptive-dialog-introduction.md) and how to [create a bot using adaptive dialogs](bot-builder-dialogs-adaptive.md).
-1. For other dialogs, you can use the dialog manager or just use the root dialog's _run_ extension method. For information on using the run method with a component dialog, see [about component and waterfall dialogs](bot-builder-concept-waterfall-dialogs.md) and how to [implement sequential conversation flow](bot-builder-dialog-manage-conversation-flow.md).
+1. We recommend using Bot Framework Composer to author conversational dialogs, to benefit from more natural, free-flowing conversational capabilities. For more information, see the [Introduction to Bot Framework Composer](/composer/introduction). Such bots can still be extended with code where needed.
+1. Develop your bot in one of the SDK languages and use your root dialog's _run_ extension method. For information on using the run method with a component dialog, see [about component and waterfall dialogs](bot-builder-concept-waterfall-dialogs.md) and how to [implement sequential conversation flow](bot-builder-dialog-manage-conversation-flow.md).
 
 ### The dialog stack
 
@@ -95,7 +92,9 @@ While you will not access the stack directly, understanding that it exists and i
 A container dialog <!--acts as individual dialog and--> can be part of a larger dialog set. Each container has an inner dialog set that is also managed.
 
 - Each dialog set creates a scope for resolving dialog IDs.
-- The SDK currently implements two types of container dialogs: component dialogs and adaptive dialogs. While the conceptual structure of the two are quite different, they can be used together.
+- The SDK currently implements two types of container dialogs: component dialogs and adaptive dialogs.
+
+  The conceptual structure of the two are quite different. However, a Composer bot can make use of both. <!--For example, a Composer bot can call a waterfall-based dialog. See [TODO: Gary's article](TODO.md) for more information.-->
 
 ### Dialog IDs
 
@@ -109,25 +108,20 @@ Component dialogs use a sequence model for conversations, and each dialog in the
 
 Consider using component and waterfall dialogs if your bot has a relatively simple control flow that does not require more dynamic conversation flow.
 
-[About component and waterfall dialogs](bot-builder-concept-waterfall-dialogs.md)  describes component, waterfall, and prompt dialogs in more detail.
+[About component and waterfall dialogs](bot-builder-concept-waterfall-dialogs.md) describes component, waterfall, and prompt dialogs in more detail.
 
 ### Adaptive dialogs
 
-Adaptive dialogs use a flexible model for conversations to handle a wider range of user interaction.
-An adaptive dialog can be designed to end or remain active when its inner dialog stack is empty.
-They offer several built-in capabilities, including interruption handling, language recognition, language generation, and more. With adaptive dialogs, you can focus more on modeling the conversation and less on dialog mechanics.
+Adaptive dialogs allow Composer to dynamically update conversation flow based on context and events.
+This enables dialogs to be more natural and free-flowing. Such bots can:
 
-An adaptive dialog is part of the dialogs library and works with all of the other dialog types.
-You can easily build a bot that uses many dialog types.
+- Let a user change their mind and re-answer a question answered earlier in the conversation.
+- Let a user answer two questions with one response.
+- Let a user context-switch to a different topic mid-way through a conversation.
 
-Consider using adaptive dialogs if your bot:
+This is especially handy when dealing with conversation context switches and interruptions in the middle of a conversation. Adaptive dialogs support and sit on top of a rich event system.
 
-- Requires the conversation flow to branch or loop based on business logic, user input, or other factors.
-- Needs to adjust to context, accept information in an arbitrary order, or allow one conversational thread to pause for a side-conversation and then pick back up again.
-- Needs context-specific language understanding models or needs to extract entity information from user input.
-- Would benefit from custom input processing or response generation.
-
-The [introduction to adaptive dialogs](bot-builder-adaptive-dialog-introduction.md) and the other adaptive dialog topics describe the features supported by adaptive dialogs: language recognition and language generation support, use of triggers and actions to model conversation flow, access to memory scopes, and so on. See how to [create a bot using adaptive dialogs](bot-builder-dialogs-adaptive.md) for more about using a dialog manager to run an adaptive dialog.
+The [Introduction to Bot Framework Composer](/composer/introduction) describes the features supported by Composer and adaptive dialogs: language recognition and language generation support, use of triggers and actions to model conversation flow, access to memory scopes, and so on. <!--See [Andrew's Composer article](/composer/TODO) for more about extending bots with components.-->
 
 ## Other dialogs
 
@@ -140,14 +134,21 @@ The QnA Maker dialog accesses a QnA Maker knowledge base and supports QnA Maker'
 - Follow-up prompts, also known as multi-turn prompts, allow a knowledge base to ask the user for more information before answering their question.
 - Active learning suggestions allow the knowledge base to improve over time. The QnA Maker dialog supports explicit feedback for the active learning feature.
 
-For information about QnA Maker, see how to [use QnA Maker to answer questions](bot-builder-howto-qna.md).
+For more information, see:
+
+- [What is QnA Maker?](/azure/cognitive-services/qnamaker/overview/overview).
+- In the SDK, how to [use QnA Maker to answer questions](bot-builder-howto-qna.md).
+- In Composer, how to [Add a QnA Maker knowledge base to your bot](/composer/how-to-add-qna-to-bot).
 
 ### Skill dialog
 
 A skill dialog accesses and manages one or more skills.
 The skill dialog posts activities from the parent bot to the skill bot and returns the skill responses to the user.
 
-For information about skills, see the [skills overview](skills-conceptual.md).
+For more information, see:
+
+- In the SDK, the [Skills overview](skills-conceptual.md).
+- In Composer, [About skills](/composer/concept-skills).
 
 ## Next steps
 

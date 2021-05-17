@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 12/04/2020
+ms.date: 05/06/2021
 ---
 
 # Connect a bot to Direct Line
@@ -91,7 +91,7 @@ The example contains two projects:
 
 ### Direct Line API
 
-- Credentials for the Direct Line API must be obtained from the Bot Channels Registration or the Web App Bot in the Azure portal, and will only allow the caller to connect to the bot for which they were generated. In the bot project, update the `appsettings.json` file with these values.
+- Credentials for the Direct Line API must be obtained from the Azure Bot registration, and will only allow the caller to connect to the bot for which they were generated. In the bot project, update the `appsettings.json` file with these values.
 
     ```csharp
     {

@@ -26,14 +26,14 @@ All bot applications share some common features.
 | Bot adapter | The adapter receives activities from the messaging endpoint, forwards them to the bot's turn handler, and catches any errors or exceptions the bot's logic doesn't catch. |
 | Bot object | The bot object handles the bot's reasoning or logic for the turn. |
 
-You can create an echo bot from the templates, as described in the quickstarts (for [**C#**](../dotnet/bot-builder-dotnet-sdk-quickstart.md), [**JavaScript**](../javascript/bot-builder-javascript-quickstart.md), or [**Python**](../python/bot-builder-python-quickstart.md)), or you can copy an echo bot project from the [Microsoft/BotBuilder-Samples](https://github.com/Microsoft/BotBuilder-Samples) repository.
+You can create an echo bot from the templates, as described in the quickstarts (for [**C#**](../dotnet/bot-builder-dotnet-sdk-quickstart.md), [**JavaScript**](../javascript/bot-builder-javascript-quickstart.md), [**Java**](../java/bot-builder-java-quickstart.md), or [**Python**](../python/bot-builder-python-quickstart.md)), or you can copy an echo bot project from the [Microsoft/BotBuilder-Samples](https://github.com/Microsoft/BotBuilder-Samples) repository.
 
 The C# and JavaScript templates have built-in support for streaming connections. This article does cover streaming features. For information about streaming connections, see how to [connect a bot to Direct Line Speech](../bot-service-channel-connect-directlinespeech.md).
 
 ## Prerequisites
 
 - Knowledge of [bot basics](bot-builder-basics.md).
-- A copy of the **echo bot** sample in [**C#**](https://aka.ms/cs-echobot-sample), [**JavaScript**](https://aka.ms/js-echobot-sample), or [**Python**](https://aka.ms/py-echobot-sample).
+- A copy of the **echo bot** sample in [**C#**](https://aka.ms/cs-echobot-sample), [**JavaScript**](https://aka.ms/js-echobot-sample), [**Java**](https://aka.ms/java-echobot-sample), or [**Python**](https://aka.ms/py-echobot-sample).
 
 ## Bot templates
 
@@ -60,6 +60,14 @@ The **package.json** file specifies dependencies and their associated versions f
 The **.env** file specifies the configuration information for your bot, such as the port number, app ID, and password among other things. If using certain technologies or using this bot in production, you will need to add your specific keys or URL to this configuration. For this Echo bot, however, you don't need to do anything here right now; the app ID and password may be left undefined at this time.
 
 To use the **.env** configuration file, the bot requires the `dotenv` package from npm. This is already included as a dependency in the **package.json** file.
+
+# [Java](#tab/java)
+
+The Yeoman generator creates a [Spring](https://spring.io/web-applications) based web application with a build file using [Maven](https://maven.apache.org/what-is-maven.html). 
+
+The Maven **pom.xml** file specifies dependencies and their associated versions for your bot. This is all set up by the template and your system. Additional dependencies can be installed by adding entries to the pom.xml file.
+
+The **application.properties** file specifies the configuration information for your bot, such as the port number, app ID, and password among other things. If using certain technologies or using this bot in production, you will need to add your specific keys or URL to this configuration. For this Echo bot, however, you don't need to do anything here right now; the app ID and password may be left undefined at this time.
 
 # [Python](#tab/python)
 
@@ -90,6 +98,10 @@ Then, the `Configure` method finishes the configuration of your app.
 
 In restify, you setup the web service and the objects it needs in the **index.js** file. The service, adapter, and bot are covered separately in the following sections.
 
+### [Java](#tab/java)
+
+In Spring, you setup the web service and the objects it needs in the **application.java** file. The **application.java** has comments that denote the different components and framework classes used by the bot application. The service, adapter, and bot are covered separately in the following sections.
+
 ### [Python](#tab/python)
 
 In aiohttp, you setup the web service and the objects it needs in the **app.py** file. The service, adapter, and bot are covered separately in the following sections.
@@ -115,6 +127,12 @@ Each incoming request represents the start of a new turn.
 **index.js**
 
 [!code-javascript[create server](~/../botbuilder-samples/samples/javascript_nodejs/02.echo-bot/index.js?range=20-26,62-68&highlight=10-13)]
+
+### [Java](#tab/java)
+
+**Application.java**
+
+[!code-java[Application](~/../botbuilder-samples/samples/java_springboot/02.echo-bot/src/main/java/com/microsoft/bot/sample/echo/Application.java?range=27)]
 
 ### [Python](#tab/python)
 
@@ -147,6 +165,16 @@ The adapter to use is defined in the `ConfigureServices` method.
 **index.js**
 
 [!code-javascript[create adapter](~/../botbuilder-samples/samples/javascript_nodejs/02.echo-bot/index.js?range=15-16,30-57)]
+
+### [Java](#tab/java)
+
+**Application.java**
+
+The adapter to use is defined in the `getBotFrameworkAdapter` method.
+
+[!code-java[adapter](~/../botbuilder-samples/samples/java_springboot/02.echo-bot/src/main/java/com/microsoft/bot/sample/echo/Application.java?range=55-64&highlight=9)]
+
+The AdapterWithErrorHandler is defined in the Java SDK code, in the com.microsoft.bot.integration package. This class can be reviewed in the source code for the Java SDK.
 
 ### [Python](#tab/python)
 
@@ -186,6 +214,18 @@ The bot to use is defined in the `ConfigureServices` method.
 **bot.js**
 
 [!code-javascript[bot logic](~/../botbuilder-samples/samples/javascript_nodejs/02.echo-bot/bot.js?range=4-29)]
+
+### [Java](#tab/java)
+
+**Application.java**
+
+The bot to use is defined in the `getBot` method.
+
+[!code-java[adapter](~/../botbuilder-samples/samples/java_springboot/02.echo-bot/src/main/java/com/microsoft/bot/sample/echo/Application.java?range=40-53)]
+
+**EchoBot.cs**
+
+[!code-java[adapter](~/../botbuilder-samples/samples/java_springboot/02.echo-bot/src/main/java/com/microsoft/bot/sample/echo/EchoBot.java?range=25-47)]
 
 ### [Python](#tab/python)
 

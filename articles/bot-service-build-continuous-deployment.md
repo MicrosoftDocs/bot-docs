@@ -30,6 +30,7 @@ Make sure that your repository root has the correct files in your project. This 
 |:-------|:---------------------|
 | ASP.NET Core | .sln or .csproj |
 | Node.js | server.js, app.js, or package.json with a start script |
+| Java | pom.xml  |
 | Python | app.py |
 
 ## Continuous deployment using GitHub
@@ -70,5 +71,5 @@ To disable continuous deployment, do the following:
 
 ## Additional resources
 
-- For more information about continuous deployment in Azure, see  [continuous deployment to Azure App Service](https://docs.microsoft.com/azure/app-service/deploy-continuous-deployment).
+- For more information about continuous deployment in Azure, see  [continuous deployment to Azure App Service](/azure/app-service/deploy-continuous-deployment).
 - When you use GitHub actions for the build provider, a workflow is created in your repository. You can learn more about using [GitHub Actions](https://help.github.com/en/actions) on the GitHub site.
