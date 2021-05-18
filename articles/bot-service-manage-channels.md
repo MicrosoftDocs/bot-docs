@@ -76,10 +76,24 @@ You can change your bot's schema transformation version in the **Configuration**
 
 ### Supported schema transformation versions
 
-| Schema transformation version   | Date introduced | Description     |
-| ----------| ----------- | ------------------------------------------|
-| 1.1       | April 2021  | Change Telegram channel to use [MarkdownV2 syntax](https://core.telegram.org/bots/api#markdownv2-style). |
-| 1.0       | --  | Initial version |
+- **Version 1.3**
+    - Date introduced: May 2021
+    - Changes: 
+        - Direct Line: Remove Deserialize/Reserialize of Adaptive Cards. The content of Adaptive Cards will be passed to the client as is.
+
+- **Version 1.2**
+    - Date introduced: April 2021
+    - Changes: 
+        - Slack channel: Attachment name is used for Message Text value.
+        - Facebook channel: Upgrade to [Facebook Graph API v9.0](https://developers.facebook.com/docs/graph-api/changelog/version9.0/).
+
+- **Version 1.1**
+    - Date introduced: April 2021
+    - Changes: 
+        - Telegram channel: Use [MarkdownV2 syntax](https://core.telegram.org/bots/api#markdownv2-style) for all markdown. 
+
+- **Version 1.0**
+    - Original version
 
 ## Publish a bot
 
