@@ -23,7 +23,7 @@ This topic walks you through adding LUIS to a flight booking application to reco
 
 - A [LUIS](https://www.luis.ai) account.
 - A copy of the **Core Bot** sample in [**C#**](https://aka.ms/cs-core-sample), [**JavaScript**](https://aka.ms/js-core-sample), [**Java**](https://aka.ms/java-core-sample), or [**Python**](https://aka.ms/python-core-sample).
-- Knowledge of [bot basics](bot-builder-basics.md), [natural language processing](https://docs.microsoft.com/azure/cognitive-services/luis/what-is-luis), and [managing bot resources](bot-file-basics.md).
+- Knowledge of [bot basics](bot-builder-basics.md), [natural language processing](/azure/cognitive-services/luis/what-is-luis), and [managing bot resources](bot-file-basics.md).
 
 ## About this sample
 
@@ -276,8 +276,8 @@ For more about LUIS, see the LUIS documentation:
 - [What is Language Understanding (LUIS)?](/azure/cognitive-services/LUIS/what-is-luis)
 - [Create a new LUIS app in the LUIS portal](/azure/cognitive-services/LUIS/luis-how-to-start-new-app)
 - [Design with intent and entity models](/azure/cognitive-services/LUIS/luis-concept-model)
-- [Migrate to V3 Authoring APIS](https://docs.microsoft.com/azure/cognitive-services/luis/luis-migration-authoring-entities)
-- [Migrate to V3 Prediction APIs](https://docs.microsoft.com/azure/cognitive-services/luis/luis-migration-api-v3)
+- [Migrate to V3 Authoring APIS](/azure/cognitive-services/luis/luis-migration-authoring-entities)
+- [Migrate to V3 Prediction APIs](/azure/cognitive-services/luis/luis-migration-api-v3)
 
 ## Next steps
 

@@ -71,7 +71,7 @@ The links below provide instructions for configuring channels supported by the B
 - [Facebook](bot-service-channel-connect-facebook.md)
 - [GroupMe](bot-service-channel-connect-groupme.md)
 - [Kik](bot-service-channel-connect-kik.md)
-- [Microsoft Teams](https://docs.microsoft.com/microsoftteams/platform/concepts/bots/bots-overview)
+- [Microsoft Teams](/microsoftteams/platform/concepts/bots/bots-overview)
 - [Skype](bot-service-channel-connect-skype.md)
 - [Skype for Business](bot-service-channel-connect-skypeforbusiness.md)
 - [Slack](bot-service-channel-connect-slack.md)
@@ -84,7 +84,7 @@ Implementation of some features can differ by channel. For example, not all chan
 
 Below are some additional links that can help with individual channels:
 
-- [Add bots to Microsoft Teams apps](https://docs.microsoft.com/microsoftteams/platform/concepts/bots/bots-overview)
+- [Add bots to Microsoft Teams apps](/microsoftteams/platform/concepts/bots/bots-overview)
 - [Facebook: Introduction to the Messenger Platform](https://developers.facebook.com/docs/messenger-platform/introduction)
 - [Skype for Developers](https://dev.skype.com/bots)
 - [Slack: Enabling interactions with bots](https://api.slack.com/bot-users)

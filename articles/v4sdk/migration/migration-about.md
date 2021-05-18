@@ -33,7 +33,7 @@ Version 4 of the Bot Framework SDK supports the same underlying Bot Framework Se
 - Support for ASP.NET Core.
   - The templates for creating new C# bots target the ASP.NET Core framework.
   - You can still use ASP.NET for your bots, but our focus for v4 is on supporting the ASP.NET Core framework.
-  - See the [introduction to ASP.NET Core](https://docs.microsoft.com/aspnet/core/) for more information about this framework.
+  - See the [introduction to ASP.NET Core](/aspnet/core/) for more information about this framework.
 
 ## Activity processing
 

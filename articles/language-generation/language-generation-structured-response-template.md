@@ -74,7 +74,7 @@ Here's an example of text with a suggested action. Use **|** to denote a list.
 ]
 ```
 
-Here's an example of a [Hero card](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/cards/cards-reference#hero-card) definition:
+Here's an example of a [Hero card](/microsoftteams/platform/task-modules-and-cards/cards/cards-reference#hero-card) definition:
 
 ```lg
 # HeroCard
@@ -91,7 +91,7 @@ Here's an example of a [Hero card](https://docs.microsoft.com/microsoftteams/pla
 >
 > LG provides some variability in card definition, which is converted to align with the [SDK card definition](https://aka.ms/botSpecs-cardSchema). For example, both `image` and `images` fields are supported in all the card definitions in LG even though only `images` are supported in the SDK card definition.
 >
->The values defined in all of the `image` and `images` fields in a HeroCard or thumbnail card are combined and converted to an images list in the generated card. For the other types of cards, the last defined value in the template will be assigned to the `image` field. The values you assign to the `image/images` field can be a string, [adaptive expression](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-adaptive-expressions), or array in the format using **|**.
+>The values defined in all of the `image` and `images` fields in a HeroCard or thumbnail card are combined and converted to an images list in the generated card. For the other types of cards, the last defined value in the template will be assigned to the `image` field. The values you assign to the `image/images` field can be a string, [adaptive expression](/azure/bot-service/bot-builder-concept-adaptive-expressions), or array in the format using **|**.
 
 Below is the combination of the previous templates:
 
@@ -409,8 +409,8 @@ Here's an example:
 -->
 ## Additional Information
 
-- [C# API Reference](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.languagegeneration)
-- [JavaScript API reference](https://docs.microsoft.com/javascript/api/botbuilder-lg)
+- [C# API Reference](/dotnet/api/microsoft.bot.builder.languagegeneration)
+- [JavaScript API reference](/javascript/api/botbuilder-lg)
 - Read [Debug with Adaptive Tools](../bot-service-debug-adaptive-tools.md) to learn how to analyze and debug templates.
 
 [1]:https://github.com/microsoft/botframework-cli/blob/master/packages/chatdown/docs/

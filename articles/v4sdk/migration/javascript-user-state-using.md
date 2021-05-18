@@ -141,9 +141,9 @@ To learn more about deploying a bot to Azure, see [Deploy your bot to Azure][40]
 [3]: https://aka.ms/botframework-emulator-github
 [5]: https://github.com/microsoft/botframework-emulator
 [6]: https://github.com/Microsoft/BotFramework-Emulator/releases
-[7]: https://docs.microsoft.com/azure/bot-service/bot-builder-storage-concept
-[8]: https://docs.microsoft.com/azure/bot-service/bot-builder-howto-v4-storage?tabs=javascript
-[9]: https://docs.microsoft.com/azure/bot-service/bot-builder-howto-v4-state?tabs=javascript
+[7]: /azure/bot-service/bot-builder-storage-concept
+[8]: /azure/bot-service/bot-builder-howto-v4-storage?tabs=javascript
+[9]: /azure/bot-service/bot-builder-howto-v4-state?tabs=javascript
 [21]: ../../bot-service-overview-introduction.md
 [30]: https://www.npmjs.com/package/restify
 [31]: https://www.npmjs.com/package/dotenv

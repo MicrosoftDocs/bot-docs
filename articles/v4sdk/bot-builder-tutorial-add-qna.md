@@ -152,7 +152,7 @@ Update your initialization code to load the service information for your knowled
     dotnet add package Microsoft.Bot.Builder.AI.QnA
     ```
 
-    For more information on NuGet, see the [NuGet documentation](https://docs.microsoft.com/nuget/#pivot=start&panel=start-all).
+    For more information on NuGet, see the [NuGet documentation](/nuget/#pivot=start&panel=start-all).
 
 1. In your **Startup.cs** file, add the following namespace reference.
 

@@ -20,7 +20,7 @@ Bots can communicate with users via Office 365 email in addition to other [chann
 > It is a violation of the Bot Framework [Code of Conduct](https://www.botframework.com/Content/Microsoft-Bot-Framework-Preview-Online-Services-Agreement.htm) to create "spambots", including bots that send unwanted or unsolicited bulk email.
 
 > [!NOTE]
-> If you are using Microsoft Exchange Server, make sure you have enabled [Autodiscover](https://docs.microsoft.com/exchange/client-developer/exchange-web-services/autodiscover-for-exchange) first before configuring email channel.
+> If you are using Microsoft Exchange Server, make sure you have enabled [Autodiscover](/exchange/client-developer/exchange-web-services/autodiscover-for-exchange) first before configuring email channel.
 
 ## Configure email credentials
 

@@ -14,12 +14,12 @@ ms.date: 08/26/2019
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-Bots in production should be added to Microsoft Teams as part of an app. Read [Create a bot](https://docs.microsoft.com/microsoftteams/platform/concepts/bots/bots-create) and [Test and debug your Microsoft Teams bot](https://docs.microsoft.com/microsoftteams/platform/concepts/bots/bots-test) in the Microsoft Teams documents for more information.
+Bots in production should be added to Microsoft Teams as part of an app. Read [Create a bot](/microsoftteams/platform/concepts/bots/bots-create) and [Test and debug your Microsoft Teams bot](/microsoftteams/platform/concepts/bots/bots-test) in the Microsoft Teams documents for more information.
 
 ## Test a bot in Microsoft Teams
 
 > [!IMPORTANT]
-> Adding a bot by GUID, for anything other than testing purposes, is not recommended. Doing so severely limits the functionality of a bot. Bots in production should be added to Teams as part of an app. Read [Create a bot](https://docs.microsoft.com/microsoftteams/platform/concepts/bots/bots-create) and [Test and debug your Microsoft Teams bot](https://docs.microsoft.com/microsoftteams/platform/concepts/bots/bots-test) in the Microsoft Teams documents for more information.
+> Adding a bot by GUID, for anything other than testing purposes, is not recommended. Doing so severely limits the functionality of a bot. Bots in production should be added to Teams as part of an app. Read [Create a bot](/microsoftteams/platform/concepts/bots/bots-create) and [Test and debug your Microsoft Teams bot](/microsoftteams/platform/concepts/bots/bots-test) in the Microsoft Teams documents for more information.
 
 To add the Microsoft Teams channel, open the bot in the [Azure portal](https://portal.azure.com), click the **Channels** blade, and then
 click **Teams**.
@@ -40,4 +40,4 @@ After adding the Teams channel, go to the **Channels** page and click on **Get b
 
 ## Additional information
 
-For Microsoft Teams specific information, see Teams [documentation](https://docs.microsoft.com/microsoftteams/platform/overview).
+For Microsoft Teams specific information, see Teams [documentation](/microsoftteams/platform/overview).

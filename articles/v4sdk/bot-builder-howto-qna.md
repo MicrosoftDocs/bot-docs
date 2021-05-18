@@ -22,7 +22,7 @@ One of the basic requirements in creating your own QnA Maker service is to popul
 ## Prerequisites
 
 - A [QnA Maker](https://www.qnamaker.ai/) account
-- Knowledge of [bot basics](bot-builder-basics.md), [QnA Maker](https://docs.microsoft.com/azure/cognitive-services/qnamaker/overview/overview), and [managing bot resources](bot-file-basics.md).
+- Knowledge of [bot basics](bot-builder-basics.md), [QnA Maker](/azure/cognitive-services/qnamaker/overview/overview), and [managing bot resources](bot-file-basics.md).
 - A copy of the **QnA Maker (simple)** sample in [**C#**](https://aka.ms/cs-qna), [**JavaScript**](https://aka.ms/js-qna-sample), [**Java**](https://aka.ms/java-qna-sample), or [**Python**](https://aka.ms/bot-qna-python-sample-code).
 
 ## About this sample
@@ -65,7 +65,7 @@ The user's input is sent to your knowledge base and the best returned answer is 
 You can also use these steps to access your own QnA Maker knowledge bases.
 
 > [!NOTE]
-> The QnA Maker documentation has instructions on how to [create a service](https://docs.microsoft.com/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure) in Azure and to [create, train, and publish your knowledge base](https://docs.microsoft.com/azure/cognitive-services/qnamaker/quickstarts/create-publish-knowledge-base).
+> The QnA Maker documentation has instructions on how to [create a service](/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure) in Azure and to [create, train, and publish your knowledge base](/azure/cognitive-services/qnamaker/quickstarts/create-publish-knowledge-base).
 
 ## Obtain values to connect your bot to the knowledge base
 

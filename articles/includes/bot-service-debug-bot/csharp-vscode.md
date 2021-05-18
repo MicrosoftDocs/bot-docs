@@ -8,7 +8,7 @@ In Visual Studio Code, you can set breakpoints and run the bot in debug mode to 
 
    ![Set C# breakpoint in VS Code](~/media/bot-service-debug-bot/csharp-breakpoint-set.png)
 
-1. Start the Bot Framework Emulator and connect to your bot as described in the [Debug with the Bot Framework Emulator](https://docs.microsoft.com/azure/bot-service/bot-service-debug-emulator) article.
+1. Start the Bot Framework Emulator and connect to your bot as described in the [Debug with the Bot Framework Emulator](/azure/bot-service/bot-service-debug-emulator) article.
 1. From the Emulator, send your bot a message (for example, send the message "Hi"). Execution will stop at the line where you place the breakpoint.
 
    ![Debug C# in VS Code](~/media/bot-service-debug-bot/breakpoint-caught-vscode.png)

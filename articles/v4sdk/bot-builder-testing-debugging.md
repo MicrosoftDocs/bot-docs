@@ -62,14 +62,14 @@ For example [QnA maker](bot-builder-howto-qna.md) is designed to handle certain 
 
 Keeping track of state is an important part of your bot, particularly for complex tasks. In general, best practice is to process activities as quickly as possible and let the processing complete so that state gets persisted. Activities can be sent to your bot at nearly the same time, and that can introduce very confusing bugs because of the asynchronous architecture.
 
-Most importantly, make sure that state is persisting in a way that matches your expectations. Depending on where your persisted state lives, storage emulators for [Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/local-emulator) and [Azure Table storage](https://docs.microsoft.com/azure/storage/common/storage-use-emulator) can help you verify that state before using production storage.
+Most importantly, make sure that state is persisting in a way that matches your expectations. Depending on where your persisted state lives, storage emulators for [Cosmos DB](/azure/cosmos-db/local-emulator) and [Azure Table storage](/azure/storage/common/storage-use-emulator) can help you verify that state before using production storage.
 
 >[!IMPORTANT]
 > The _Cosmos DB storage_ class has been deprecated. Containers originally created with CosmosDbStorage had no partition key set, and were given the default partition key of _\/_partitionKey_.
 >
 > Containers created with _Cosmos DB storage_ can be used with _Cosmos DB partitioned storage_. Read [Partitioning in Azure Cosmos DB](/azure/cosmos-db/partitioning-overview) for more information.
 >
-> Also note that, unlike the legacy Cosmos DB storage, the Cosmos DB partitioned storage does not automatically create a database within your Cosmos DB account. You need to [create a new database manually](https://docs.microsoft.com/azure/cosmos-db/create-cosmosdb-resources-portal), but skip manually creating a container since _CosmosDbPartitionedStorage_ will create the container for you.
+> Also note that, unlike the legacy Cosmos DB storage, the Cosmos DB partitioned storage does not automatically create a database within your Cosmos DB account. You need to [create a new database manually](/azure/cosmos-db/create-cosmosdb-resources-portal), but skip manually creating a container since _CosmosDbPartitionedStorage_ will create the container for you.
 
 ## How to use activity handlers
 
@@ -86,8 +86,8 @@ The _send activity_ method, and its handlers, pose a unique problem. Simply call
 
 ## Additional resources
 
-* [Debugging in Visual Studio](https://docs.microsoft.com/visualstudio/debugger/index)
-* [Debugging, Tracing, and Profiling](https://docs.microsoft.com/dotnet/framework/debug-trace-profile/) for the bot framework
-* Use the [ConditionalAttribute](https://docs.microsoft.com/dotnet/api/system.diagnostics.conditionalattribute) for methods you don't want to include in production code
+* [Debugging in Visual Studio](/visualstudio/debugger/index)
+* [Debugging, Tracing, and Profiling](/dotnet/framework/debug-trace-profile/) for the bot framework
+* Use the [ConditionalAttribute](/dotnet/api/system.diagnostics.conditionalattribute) for methods you don't want to include in production code
 * Use tools like [Fiddler](https://www.telerik.com/fiddler) to see network traffic
 * [Troubleshoot general problems](../bot-service-troubleshoot-bot-configuration.md) and the other troubleshooting articles in that section

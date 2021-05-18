@@ -166,8 +166,8 @@ Please, refer to the following resources for more details and background informa
 
 | Topic | Description |
 |:-|:-|
-| [Migrate a Javascript SDK v3 bot to v4](https://docs.microsoft.com/azure/bot-service/migration/conversion-javascript) | Porting v3 JavaScript bot to v4 |
-| [What's new in Bot Framework](https://docs.microsoft.com/azure/bot-service/what-is-new) | Bot Framework and Azure Bot Service key features and improvements |
+| [Migrate a Javascript SDK v3 bot to v4](/azure/bot-service/migration/conversion-javascript) | Porting v3 JavaScript bot to v4 |
+| [What's new in Bot Framework](/azure/bot-service/what-is-new) | Bot Framework and Azure Bot Service key features and improvements |
 | [How bots work](../bot-builder-basics.md) | The internal mechanism of a bot |
 | [Managing state](../bot-builder-concept-state.md) | Abstractions to make state management easier |
 | [Dialogs library](../bot-builder-concept-dialog.md) | Central concepts to manage a conversation |
