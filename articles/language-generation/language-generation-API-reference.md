@@ -19,6 +19,6 @@ monikerRange: 'azure-bot-service-4.0'
 
 Language generation templates are language-agnostic. API references are available for bot developers working with language generation in the following languages:
 
-- [C#](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.languagegeneration)
-- [JavaScript](https://docs.microsoft.com/javascript/api/botbuilder-lg)
+- [C#](/dotnet/api/microsoft.bot.builder.languagegeneration)
+- [JavaScript](/javascript/api/botbuilder-lg)
 

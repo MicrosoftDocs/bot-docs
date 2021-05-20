@@ -12,6 +12,8 @@
     href: dotnet/bot-builder-dotnet-sdk-quickstart.md
   - name: Create a bot using JavaScript
     href: javascript/bot-builder-javascript-quickstart.md
+  - name: Create a bot using Java
+    href: java/bot-builder-java-quickstart.md
   - name: Create a bot using Python
     href: python/bot-builder-python-quickstart.md
   - name: Create a bot using Azure Bot Service
@@ -33,7 +35,7 @@
 - name: Security
   items:
   - name: Security baseline
-    href: security-baseline.md
+    href: /security/benchmark/azure/baselines/bot-service-security-baseline?toc=/azure/bot-service/toc.json
   - name: Bot Service encryption
     href: bot-service-encryption.md
   - name: Authentication basics
@@ -74,28 +76,6 @@
       href: v4sdk/bot-builder-concept-middleware.md
     - name: Understand the structure of an echo bot
       href: v4sdk/bot-builder-create-a-bot-project.md
-  - name: Adaptive dialogs
-    items:
-    - name: Introduction to adaptive dialogs
-      href: v4sdk/bot-builder-adaptive-dialog-Introduction.md
-    - name: Events and triggers in adaptive dialogs
-      href: v4sdk/bot-builder-concept-adaptive-dialog-Triggers.md
-    - name: Actions in Adaptive Dialogs
-      href: v4sdk/bot-builder-concept-adaptive-dialog-Actions.md
-    - name: Asking for user input using adaptive dialogs
-      href: v4sdk/bot-builder-concept-adaptive-dialog-Inputs.md
-    - name: Recognizers in adaptive dialogs
-      href: v4sdk/bot-builder-concept-adaptive-dialog-recognizers.md
-    - name: Language Generation in adaptive dialogs
-      href: v4sdk/bot-builder-concept-adaptive-dialog-generators.md
-    - name: Memory scopes and managing state in adaptive dialogs
-      href: v4sdk/bot-builder-concept-adaptive-dialog-memory-states.md
-    - name: Handling interruptions in adaptive dialogs
-      href: v4sdk/bot-builder-concept-adaptive-dialog-interruptions.md
-    - name: Using declarative assets in adaptive dialogs
-      href: v4sdk/bot-builder-concept-adaptive-dialog-declarative.md
-    - name: Cross training your LUIS and QnA Maker models
-      href: v4sdk/bot-builder-concept-cross-train.md
   - name: Manage bot resources
     href: v4sdk/bot-file-basics.md
   - name: How bots for Microsoft Teams work
@@ -172,34 +152,16 @@
         items:
         - name: Add natural language understanding to your bot
           href: v4sdk/bot-builder-howto-v4-luis.md
-        - name: Deploy LUIS resources using LUIS CLI commands
-          href: v4sdk/bot-builder-howto-bf-cli-deploy-luis.md
-        - name: Update LUIS resources using LUIS CLI commands
-          href: v4sdk/bot-builder-howto-bf-cli-update-luis.md
       - name: QnA Maker
         items:
         - name: Answer user's questions using QnA Maker
           href: v4sdk/bot-builder-howto-qna.md
-        - name: Deploy QnA Maker knowledge base using CLI commands
-          href: v4sdk/bot-builder-howto-bf-cli-deploy-qna.md
-        - name: Customized lists of synonyms in QnA Maker
-          href: v4sdk/bot-builder-howto-bf-cli-alterations-qna.md
       - name: Use multiple LUIS and QnA models
-        href: v4sdk/bot-builder-tutorial-dispatch.md
-    - name: Adaptive dialogs
-      items:
-      - name: Create a bot project for adaptive dialogs
-        href: v4sdk/bot-builder-adaptive-dialog-setup.md
-      - name: Create a bot using adaptive dialogs
-        href: v4sdk\bot-builder-dialogs-adaptive.md
-      - name: Create a bot using adaptive, component, waterfall, and custom dialogs
-        href: v4sdk/bot-builder-mixed-dialogs.md
-      - name: Handle user interruptions in adaptive dialogs
-        href: v4sdk/bot-builder-howto-handle-user-interrupts-adaptive.md
-      - name: Create a bot using declarative adaptive dialogs
-        href: v4sdk/bot-builder-dialogs-declarative.md
-      - name: Cross train a bot to use both LUIS and QnA Maker
-        href: v4sdk/bot-builder-howto-cross-train.md
+        items:
+        - name: Use Orchestrator for intent resolution
+          href: v4sdk/bot-builder-tutorial-orchestrator.md
+        - name: Use Dispatch (deprecated) for intent resolution
+          href: v4sdk/bot-builder-tutorial-dispatch.md
     - name: Write directly to storage
       href: v4sdk/bot-builder-howto-v4-storage.md
     - name: Implement custom storage for your bot
@@ -513,7 +475,7 @@
   - name: FAQ
     items:
     - name: Index
-      href: bot-service-resources-bot-framework-faq.md
+      href: bot-service-resources-bot-framework-faq.yml
     - name: Availability
       href: bot-service-resources-faq-availability.md
     - name: General

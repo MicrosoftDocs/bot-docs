@@ -109,7 +109,7 @@ Add the skill's app ID and password to the config.py file.
 
 The skill consumer can send information to the skill. One way to accept such information is to accept them via the _value_ property on incoming messages. Another way is to handle event and invoke activities.
 
-The skill in this example does not accept input parameters.
+The skill in this example doesn't accept input parameters.
 
 ### To continue or complete a conversation
 
@@ -142,7 +142,7 @@ Optionally, use the activity's _value_ property to include a return value, and u
 
 For multi-turn skills, you would also accept `endOfConversation` activities from a skill consumer, to allow the consumer to cancel the current conversation.
 
-The logic for this skill does not change from turn to turn. If you implement a skill that allocates conversation resources, add resource cleanup code to the end-of-conversation handler.
+The logic for this skill doesn't change from turn to turn. If you implement a skill that allocates conversation resources, add resource cleanup code to the end-of-conversation handler.
 
 #### [C#](#tab/cs)
 
@@ -172,7 +172,7 @@ This sample uses an allowed callers list for claims validation. The list is defi
 
 You must add a _claims validator_ to the authentication configuration. The claims are evaluated after the authentication header. Your validation code should throw an error or exception to reject the request. There are many reasons you may want to reject an otherwise authenticated request. For example:
 
-- The skill is part of a paid-for service. User's not in the database should not have access.
+- The skill is part of a paid-for service. User's not in the database shouldn't have access.
 - The skill is proprietary. Only certain skill consumers can call the skill.
 
 > [!IMPORTANT]
@@ -182,11 +182,7 @@ You must add a _claims validator_ to the authentication configuration. The claim
 
 ### [C#](#tab/cs)
 
-Derive a claims validator from the `ClaimsValidator` class. It will throw an `UnauthorizedAccessException` to reject an incoming request. Note that the `IConfiguration.Get` method returns null if the value in the configuration file is an empty array.
-
-**EchoSkillBot\Authentication\AllowedCallersClaimsValidator.cs**
-
-[!code-csharp[Claims validator](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/Authentication/AllowedCallersClaimsValidator.cs?range=17-59)]
+The SDK provides an `AllowedCallersClaimsValidator` class that adds application-level authorization based on a simple list of IDs of the applications that are allowed to call the skill. If the list contains an asterisk (*), then all callers are allowed. The claims validator is configured in **Startup.cs**.
 
 ### [JavaScript](#tab/javascript)
 
@@ -240,7 +236,7 @@ This sample adds claims validation to the authentication configuration and uses 
 
 **EchoSkillBot\Startup.cs**
 
-[!code-csharp[Configuration](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/Startup.cs?range=28-32)]
+[!code-csharp[Configure authentication configuration and adapter](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/Startup.cs?range=28-35)]
 
 ### [JavaScript](#tab/javascript)
 
@@ -292,7 +288,7 @@ At this point, you can test the skill in the Emulator as if it were a normal bot
 Download and install the latest [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
 
 1. Run the echo skill bot locally on your machine. If you need instructions, refer to the README file for the [C#](https://aka.ms/skills-simple-bot-to-bot-csharp), [JavaScript](https://aka.ms/skills-simple-bot-to-bot-js), or [Python](https://aka.ms/skills-simple-bot-to-bot-python) sample.
-1. Use the Emulator to test the bot as shown below. Note that when you send an "end" or "stop" message to the skill, it sends an `endOfConversation` activity in addition to the reply message. The skill sends the `endOfConversation` activity to indicate the skill has finished.
+1. Use the Emulator to test the bot as shown below. When you send an "end" or "stop" message to the skill, it sends an `endOfConversation` activity in addition to the reply message. The skill sends the `endOfConversation` activity to indicate the skill has finished.
 
 ![test the echo skill](media/skills-simple-skill-test.png)
 

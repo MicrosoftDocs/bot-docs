@@ -1,27 +1,29 @@
 ---
-title: Use multiple LUIS and QnA models - Bot Service
+title: Use Dispatch for multiple LUIS and QnA models - Bot Service
 description: Learn how bots can use multiple LUIS models and QnA Maker knowledge bases. See how to use Dispatch tools to route user input to the correct model.
 keywords: Luis, QnA, Dispatch tool, multiple services, route intents
-author: diberry
+author: JonathanFingold
 ms.author: kamrani
-manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 04/20/2021
+ms.date: 05/12/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Use multiple LUIS and QnA models
+# Use Dispatch (deprecated) for intent resolution
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-If a bot uses multiple LUIS models and QnA Maker knowledge bases (knowledge bases), you can use Dispatch tool to determine which LUIS model or QnA Maker knowledge base best matches the user input. The dispatch tool does this by creating a single LUIS app to route user input to the correct model. For more information about the Dispatch, including the CLI commands, refer to the [dispatch README][dispatch-readme].
+If a bot uses multiple LUIS models and QnA Maker knowledge bases (knowledge bases), you can use the Dispatch tool to determine which LUIS model or QnA Maker knowledge base best matches the user input. The dispatch tool does this by creating a single LUIS app to route user input to the correct model. For more information about Dispatch, including the CLI commands, refer to the [Dispatch README][dispatch-readme].
+
+> [!IMPORTANT]
+> Dispatch is on the path to be deprecated and replaced with [Orchestrator](https://aka.ms/bf-orchestrator).  Please refer to this [documentation](https://github.com/microsoft/botframework-sdk/blob/main/Orchestrator/docs/DispatchMigrationExample.md) for more information on migrating your bot to use Orchestrator.
 
 ## Prerequisites
 
 - A [luis.ai](https://www.luis.ai/) account to publish LUIS apps.
 - A [QnA Maker](https://www.qnamaker.ai/) account to publish the QnA knowledge base.
-- A copy of the **NLP with Dispatch** sample in [C#][cs-sample], [JavaScript][js-sample], or [Python][python-sample].
+- A copy of the **NLP with Dispatch** sample in [C#][cs-sample], [JavaScript][js-sample], [Java][java-sample], or [Python][python-sample].
 - Knowledge of [bot basics](bot-builder-basics.md), [LUIS][howto-luis], and [QnA Maker][howto-qna].
 - The command-line [Dispatch tool](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/Dispatch)
 
@@ -48,6 +50,17 @@ This sample is based on a predefined set of LUIS and QnA Maker apps.
 - `processSampleQnA` - for bot faq questions.
 - `processWeather` - for weather queries.
 - `processHomeAutomation` - for home lighting commands.
+
+## [Java](#tab/java)
+
+![Code sample logic flow java](./media/tutorial-dispatch/dispatch-logic-flow-java.png)
+
+`onMessageActivity` is called for each user input received. This module finds the top scoring user intent and passes that result on to `dispatchToTopIntent`. DispatchToTopIntent, in turn, calls the appropriate app handler.
+
+- `processSampleQnA` - for bot faq questions.
+- `processWeather` - for weather queries.
+- `processHomeAutomation` - for home lighting commands.
+
 
 ## [Python](#tab/python)
 
@@ -88,7 +101,7 @@ The first step to setting up a QnA Maker knowledge base is to set up a QnA Maker
 
 Once your QnA Maker Service has been created in Azure, you need to record the Cognitive Services _Key 1_ provided for your QnA Maker service. This will be used as \<azure-qna-service-key1> when adding the QnA Maker app to your dispatch application.
 
-Learn more about the [two different types of keys](https://docs.microsoft.com/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure#types-of-keys-in-qna-maker) used with QnA Maker.
+Learn more about the [two different types of keys](/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure#types-of-keys-in-qna-maker) used with QnA Maker.
 
 The following steps provide you with this key:
 
@@ -148,12 +161,12 @@ The **authoring key** is only used for creating and editing the models. You need
   - The **App ID** is found in the [LUIS portal](https://www.luis.ai) for each app, Manage > Settings > Application Settings
   - The **Authoring Key** is found in the LUIS portal, top-right corner, select your own User, then Settings.
 - for Qna Maker
-  - The **App ID** is found in the [QnA Maker portal](https://http://qnamaker.ai) on the Settings page after you publish the app. This is the ID found in first part of the POST command after the knowledgebase. An example of where to find the app ID is `POST /knowledgebases/<APP-ID>/generateAnswer`.
+  - The **App ID** is found in the [QnA Maker portal](https://qnamaker.ai) on the Settings page after you publish the app. This is the ID found in first part of the POST command after the knowledgebase. An example of where to find the app ID is `POST /knowledgebases/<APP-ID>/generateAnswer`.
   - The **Authoring Key** is found in the Azure portal, for the QnA Maker resource, under the **Keys**. You only need one of the keys.
 
 The authoring key is not used to get a prediction score or confidence score from the published application. You need the endpoint keys for this action. The **[endpoint keys](#service-endpoint-keys)** are found and used later in this tutorial.
 
-Learn more about the [two different types of keys](https://docs.microsoft.com/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure#types-of-keys-in-qna-maker) used with QnA Maker.
+Learn more about the [two different types of keys](/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure#types-of-keys-in-qna-maker) used with QnA Maker.
 
 ## Create the dispatch model
 
@@ -290,6 +303,37 @@ LuisAPIHostName=<your-dispatch-app-region>
 
 When all changes are in place, save this file.
 
+## [Java](#tab/java)
+
+### Manually update your application.properties file
+
+After all of your service apps are created, the information for each needs to be added into your 'application.properties' file. The initial [Java Sample][java-sample] code contains an empty application.properties file:
+
+**application.properties**
+
+[!code-json[AppSettings](~/../botbuilder-samples/samples/java_springboot/14.nlp-with-dispatch/src/main/resources/application.properties?range=5-11)]
+
+For each of the entities shown below, add the values you recorded earlier in these instructions:
+
+**application.properties**
+
+```txt
+MicrosoftAppId=
+MicrosoftAppPassword=
+server.port=3978
+
+QnAKnowledgebaseId=<knowledge-base-id>
+QnAEndpointKey=<qna-maker-resource-key>
+QnAEndpointHostName=<your-hostname>
+
+LuisAppId =<app-id-for-dispatch-app>
+LuisAPIKey=<your-luis-endpoint-key>
+LuisAPIHostName=<your-dispatch-app-region>
+```
+
+When all changes are complete, save this file.
+
+
 ## [Python](#tab/python)
 
 ### Installing packages
@@ -349,6 +393,15 @@ In **dispatchBot.js** the information contained within configuration file _.env_
 
 [!code-javascript[ReadConfigurationInfo](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-orchestrator/bots/dispatchBot.js?range=11-26)]
 
+## [Java](#tab/java)
+
+In **BotServicesImpl.java**, the information contained within configuration file _application.properties_ is used to connect your dispatch bot to the `Dispatch` and `SampleQnA` services. The constructors use the values you provided to connect to these services.
+
+**BotServicesImpl.java**
+
+[!code-java[ReadConfigurationInfo](~/../botbuilder-samples/samples/java_springboot/14.nlp-with-dispatch/src/main/java/com/microsoft/bot/sample/nlpwithdispatch/BotServicesImpl.java?range=19-45)]
+
+
 ## [Python](#tab/python)
 
 In **dispatch_bot.py**, the information contained within configuration file _config.py_ is used to connect your dispatch bot to the _QnAMaker_ and _LuisRecognizer_ services. The constructors use the values you provided to connect to these services.
@@ -380,6 +433,15 @@ In the **dispatchBot.js** `onMessage` method, we check the user input message ag
 
 [!code-javascript[onMessage](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-orchestrator/bots/dispatchBot.js?range=31-44)]
 
+## [Java](#tab/java)
+
+In the **DispatchBot.java** file whenever the `onMessageActivity` method is called, we check the incoming user message against the Dispatch model. We then pass the Dispatch Model's `topIntent` and  `recognizerResult` on to the correct method to call the service and return the result.
+
+*bots\DispatchBot.java**
+
+[!code-java[OnMessageActivity](~/../botbuilder-samples/samples/java_springboot/14.nlp-with-dispatch/src/main/java/com/microsoft/bot/sample/nlpwithdispatch/DispatchBot.java?range=36-46)]
+
+
 ## [Python](#tab/python)
 
 In the **dispatch_bot.py** file whenever the `on_message_activity` method is called, we check the incoming user message against the Dispatch model. We then pass the Dispatch Model's `top_intent` and  `recognize_result` on to the correct method to call the service and return the result.
@@ -408,12 +470,25 @@ If method `q_sample-qna` is invoked, it uses the user input contained within the
 
 When the model produces a result, it indicates which service can most appropriately process the utterance. The code in this sample uses the recognized _topIntent_ to show how to route the request on to the corresponding service.
 
-**bots/dispatchBot.js**
-[!code-javascript[dispatchToTopIntentAsync](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-orchestrator/bots/dispatchBot.js?range=61-77)]
+**bots\dispatchBot.js**
+[!code-javascript[dispatchToTopIntentAsync](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-orchestrator/bots/dispatchBot.js?range=62-83)]
 
 If method `processHomeAutomation` or `processWeather` are invoked, they are passed the results from the dispatch model within _recognizerResult.luisResult_. The specified method then provides user feedback showing the dispatch model's top intent, plus a ranked listing of all intents and entities that were detected.
 
 If method `q_sample-qna` is invoked, it uses the user input contained within the turnContext to generate an answer from the knowledge base and display that result to the user.
+
+## [Java](#tab/java)
+
+When the model produces a result, it indicates which service can most appropriately process the utterance. The code in this bot routes the request to the corresponding service, and then summarizes the response from the called service. Depending on the _intent_ returned from Dispatch, this code uses the returned intent to route to the correct LUIS model or QnA service.
+
+**bots/DispatchBot.java**
+
+[!code-java[DispatchToTop](~/../botbuilder-samples/samples/java_springboot/14.nlp-with-dispatch/src/main/java/com/microsoft/bot/sample/nlpwithdispatch/DispatchBot.java?range=62-83)]
+
+If method `processHomeAutomation` or `processWeather` are invoked, they are passed the results from the dispatch model within _luisResult.ConnectedServiceResult_. The specified method then provides user feedback showing the dispatch model top intent, plus a ranked listing of all intents and entities that were detected.
+
+If method `processSampleQnA` is invoked, it uses the user input contained within the turnContext to generate an answer from the knowledge base and display that result to the user.
+
 
 ## [Python](#tab/python)
 
@@ -563,15 +638,16 @@ To delete QnA Maker resources:
 
 ### Best practice
 
-To improve services used in this sample, refer to best practice for [LUIS](https://docs.microsoft.com/azure/cognitive-services/luis/luis-concept-best-practices), and [QnA Maker](https://docs.microsoft.com/azure/cognitive-services/qnamaker/concepts/best-practices).
+To improve services used in this sample, refer to best practice for [LUIS](/azure/cognitive-services/luis/luis-concept-best-practices), and [QnA Maker](/azure/cognitive-services/qnamaker/concepts/best-practices).
 
 <!-- Foot-note style links -->
 
 [howto-luis]: bot-builder-howto-v4-luis.md
 [howto-qna]: bot-builder-howto-qna.md
 
-[cs-sample]: https://aka.ms/dispatch-sample-cs
-[js-sample]: https://aka.ms/dispatch-sample-js
+[cs-sample]: https://aka.ms/bot/dispatch-sample-cs-prev
+[js-sample]: https://aka.ms/bot/dispatch-sample-js-prev
+[java-sample]: https://aka.ms/dispatch-sample-java
 [python-sample]: https://aka.ms/dispatch-sample-python
 
 [dispatch-readme]: https://aka.ms/dispatch-command-line-tool

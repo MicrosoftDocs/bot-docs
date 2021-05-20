@@ -144,8 +144,8 @@ This class inherits from the v4 `BotState` class, and uses a v3-style key (`IAdd
 [3]: https://aka.ms/botframework-emulator-github
 [5]: https://github.com/microsoft/botframework-emulator
 [6]: https://github.com/Microsoft/BotFramework-Emulator/releases
-[7]: https://docs.microsoft.com/azure/bot-service/bot-builder-storage-concept
-[8]: https://docs.microsoft.com/azure/bot-service/bot-builder-howto-v4-storage?tabs=csharp
-[9]: https://docs.microsoft.com/azure/bot-service/bot-builder-howto-v4-state?tabs=csharp
+[7]: /azure/bot-service/bot-builder-storage-concept
+[8]: /azure/bot-service/bot-builder-howto-v4-storage?tabs=csharp
+[9]: /azure/bot-service/bot-builder-howto-v4-state?tabs=csharp
 [21]: ../../bot-service-overview-introduction.md
 [40]: ../../bot-builder-deploy-az-cli.md

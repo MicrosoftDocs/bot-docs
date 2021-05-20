@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 07/31/2019
+ms.date: 05/06/2021
 ---
 
 # Connect a bot to channels
@@ -16,11 +16,11 @@ ms.date: 07/31/2019
 
 A channel is a connection between communication applications and a bot. A bot, registered with Azure, uses channels to facilitate the communication with users.
 
-You can configure a bot to connect to any of the standard channels such as Alexa, Facebook Messenger, and Slack. For more information, see [Bot channels registration](bot-service-quickstart-registration.md).
+You can configure a bot to connect to any of the standard channels such as Alexa, Facebook Messenger, and Slack. For more information, see [Azure Bot registration](bot-service-quickstart-registration.md).
 
-In addition to the provided channels, you can also connect a bot to your communication application using **Direct Line** as the channel.
+In addition to the provided channels, you can also connect a bot to your communication application using **Direct Line** as the channel. For more information, see [Connect a bot to Direct Line](bot-service-channel-connect-directline.md).
 
-The Bot Framework allows you to develop a bot in a channel-agnostic way by normalizing messages that the bot sends to a channel. This involves the following:
+The Bot Framework allows you to develop a bot in a channel-agnostic way by normalizing messages that the bot sends to a channel. This implies the following:
 
 - Convert the messages from the Bot Framework schema into the channel's schema.
 - If the channel does not support all aspects of the Bot Framework schema, the Bot Connector service tries to convert the message to a format that the channel does support. For example, if the bot sends a message that contains a card with action buttons to the email channel, the connector may send the card as an image and include the actions as links in the message's text.
@@ -29,11 +29,11 @@ The Bot Framework allows you to develop a bot in a channel-agnostic way by norma
 To configure a bot to connect to a channel, complete the following steps:
 
 1. Sign in to the [Azure Portal](https://portal.azure.com).
-2. Select the bot that you want to configure.
-3. In the Bot Service blade, click **Channels** under **Bot Management**.
-4. Click the icon of the channel you want to add to your bot.
+1. Select the bot that you want to configure.
+1. In the left pane, select **Channels** under **Bot Management**.
+1. In the right pane, select the icon of the channel you want to add to your bot.
 
-    ![Connect to channels](./media/channels/connect-to-channels.png)
+    :::image type="content" source="./media/channels/connect-to-channels.png" alt-text="Connect to channels":::
 
 After you've configured the channel, users on that channel can start using your bot.
 
@@ -76,10 +76,24 @@ You can change your bot's schema transformation version in the **Configuration**
 
 ### Supported schema transformation versions
 
-| Schema transformation version   | Date introduced | Description     |
-| --------------------------------| ----------- | --------------------------------------------------------------- |
-| 1.1                             | April 2021  | Change Telegram channel to use [MarkdownV2 syntax](https://core.telegram.org/bots/api#markdownv2-style). |
-| 1.0                             | --  | Initial version |
+- **Version 1.3**
+    - Date introduced: May 2021
+    - Changes: 
+        - Direct Line: Remove Deserialize/Reserialize of Adaptive Cards. The content of Adaptive Cards will be passed to the client as is.
+
+- **Version 1.2**
+    - Date introduced: April 2021
+    - Changes: 
+        - Slack channel: Attachment name is used for Message Text value.
+        - Facebook channel: Upgrade to [Facebook Graph API v9.0](https://developers.facebook.com/docs/graph-api/changelog/version9.0/).
+
+- **Version 1.1**
+    - Date introduced: April 2021
+    - Changes: 
+        - Telegram channel: Use [MarkdownV2 syntax](https://core.telegram.org/bots/api#markdownv2-style) for all markdown. 
+
+- **Version 1.0**
+    - Original version
 
 ## Publish a bot
 

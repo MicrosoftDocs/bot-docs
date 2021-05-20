@@ -33,6 +33,12 @@ The source code shown here is based on the [Suggested actions](https://aka.ms/Su
 
 [!code-javascript[suggested actions](~/../botbuilder-samples/samples/javascript_nodejs/08.suggested-actions/bots/suggestedActionsBot.js?range=58-89)]
 
+# [Java](#tab/java)
+
+The source code shown here is based on the [Suggested actions](https://aka.ms/SuggestedActionsJava) sample.
+
+[!code-java[suggested actions](~/../botbuilder-samples/samples/java_springboot/08.suggested-actions/src/main/java/com/microsoft/bot/sample/suggestedactions/SuggestedActionsBot.java?range=102-136)]
+
 # [Python](#tab/python)
 
 The source code shown here is based on the [Suggested actions](https://aka.ms/SuggestActionsPython) sample.
@@ -43,7 +49,7 @@ The source code shown here is based on the [Suggested actions](https://aka.ms/Su
 
 ## Additional resources
 
-You can access the complete source code for the **Suggested actions** sample in [C#](https://aka.ms/SuggestedActionsCSharp), [JavaScript](https://aka.ms/SuggestActionsJS) and [Python](https://aka.ms/SuggestActionsPython).
+You can access the complete source code for the **Suggested actions** sample in [C#](https://aka.ms/SuggestedActionsCSharp), [JavaScript](https://aka.ms/SuggestActionsJS), [Java](https://aka.ms/SuggestedActionsJava) and [Python](https://aka.ms/SuggestActionsPython).
 
 ## Next steps
 

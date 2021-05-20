@@ -455,7 +455,7 @@ protected override Task OnEventActivityAsync(ITurnContext<IEventActivity> turnCo
 
 ### v3
 
-[IActivityLogger](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.history.iactivitylogger) was used.
+[IActivityLogger](/dotnet/api/microsoft.bot.builder.history.iactivitylogger) was used.
 
 ```csharp
 builder.RegisterType<ActivityLoggerImplementation>().AsImplementedInterfaces().InstancePerDependency(); 
@@ -471,7 +471,7 @@ public class ActivityLoggerImplementation : IActivityLogger
 
 ### v4
 
-Use [ITranscriptLogger](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.itranscriptlogger).
+Use [ITranscriptLogger](/dotnet/api/microsoft.bot.builder.itranscriptlogger).
 
 ```csharp
 var transcriptMiddleware = new TranscriptLoggerMiddleware(new TranscriptLoggerImplementation(Configuration.GetSection("StorageConnectionString").Value));
@@ -494,7 +494,7 @@ The interface for storing _user data_, _conversation data_, and _private convers
 
 State was persisted using an `IBotDataStore` implementation, and injecting it into the dialog state system of the SDK using Autofac.  Microsoft provided `MemoryStorage`, `DocumentDbBotDataStore`, `TableBotDataStore`, and `SqlBotDataStore` classes in [Microsoft.Bot.Builder.Azure](https://github.com/Microsoft/BotBuilder-Azure/).
 
-[IBotDataStore<BotData>](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.dialogs.internals.ibotdatastore-1?view=botbuilder-dotnet-3.0&preserve-view=true) was used to persist data.
+[IBotDataStore<BotData>](/dotnet/api/microsoft.bot.builder.dialogs.internals.ibotdatastore-1?view=botbuilder-dotnet-3.0&preserve-view=true) was used to persist data.
 
 ```csharp
 Task<bool> FlushAsync(IAddress key, CancellationToken cancellationToken);
@@ -547,7 +547,7 @@ services.AddSingleton(conversationState);
 
 ### v3
 
-[Microsoft.Bot.Builder.FormFlow](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.formflow?view=botbuilder-dotnet-3.0&preserve-view=true) was included within the core Bot Builder SDK.
+[Microsoft.Bot.Builder.FormFlow](/dotnet/api/microsoft.bot.builder.formflow?view=botbuilder-dotnet-3.0&preserve-view=true) was included within the core Bot Builder SDK.
 
 ### v4
 
@@ -557,7 +557,7 @@ services.AddSingleton(conversationState);
 
 ### v3
 
-[Microsoft.Bot.Builder.Dialogs.LuisDialog](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.dialogs.luisdialog-1?view=botbuilder-dotnet-3.0&preserve-view=true) was included within the core Bot Builder SDK.
+[Microsoft.Bot.Builder.Dialogs.LuisDialog](/dotnet/api/microsoft.bot.builder.dialogs.luisdialog-1?view=botbuilder-dotnet-3.0&preserve-view=true) was included within the core Bot Builder SDK.
 
 ### v4
 

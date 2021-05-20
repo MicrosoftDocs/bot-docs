@@ -5,7 +5,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 4/15/2020
+ms.date: 4/15/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -65,12 +65,12 @@ For each project in the sample, you need the following:
 1. An Azure AD application to register a bot resource in Azure.
 1. An Azure AD identity provider application for authentication.
     > [!NOTE]
-    > Currently, only the [Azure AD v2](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-identity-providers?view=azure-bot-service-4.0&tabs=adv2%2Cga2#azure-ad-v2-1&preserve-view=true) identity provider is supported.
+    > Currently, only the [Azure AD v2](/azure/bot-service/bot-builder-concept-identity-providers?view=azure-bot-service-4.0&tabs=adv2%2Cga2#azure-ad-v2-1&preserve-view=true) identity provider is supported.
 
-## Create the Azure RootBot registration
+## Create the Azure RootBot resource
 
-1. Create a bot registration in the [Azure portal][azure-portal] for the `RootBot`. Follow the steps described in
-[Create the Azure bot registration](bot-builder-authentication.md#create-the-azure-bot-registration).
+1. Create an Azure bot resource in the [Azure portal][azure-portal] for the `RootBot`. Follow the steps described in
+[Create an Azure bot resource](bot-builder-authentication.md#create-an-azure-bot-resource).
 1. Copy and save the bot registration **app ID** and the **client secret**.
 
 ## Create the Azure AD identity for RootBot
@@ -92,16 +92,16 @@ The Azure AD is a cloud identity service that allows you to build applications t
 
 ### Create an OAuth connection settings
 
-1. Create an Azure AD v2 connection in the `RootBot` bot registration and enter values as described in [Azure AD v2](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-identity-providers?view=azure-bot-service-4.0&tabs=adv2%2Cga2#azure-ad-v2-1&preserve-view=true) and the value described below.
+1. Create an Azure AD v2 connection in the `RootBot` bot registration and enter values as described in [Azure AD v2](/azure/bot-service/bot-builder-concept-identity-providers?view=azure-bot-service-4.0&tabs=adv2%2Cga2#azure-ad-v2-1&preserve-view=true) and the value described below.
 
 1. Leave the **Token Exchange URL** empty.
 1. In the **Scopes** box enter the `RootBot` scope value you saved in the previous steps.
 1. Copy and save the name of the connection.
 
-## Create the Azure SkillBot registration
+## Create the Azure SkillBot resource
 
-1. Create a bot registration in the [Azure portal][azure-portal] for the `SkillBot`. Follow the steps described in
-[Create the Azure bot registration](bot-builder-authentication.md#create-the-azure-bot-registration).
+1. Create an Azure bot resource in the [Azure portal][azure-portal] for the `SkillBot`. Follow the steps described in
+[Create an Azure bot resource](bot-builder-authentication.md#create-an-azure-bot-resource).
 1. Copy and save the bot registration **app ID** and the **client secret**.
 
 ## Create the Azure AD identity for SkillBot
@@ -140,7 +140,7 @@ The Azure AD is a cloud identity service that allows you to build applications t
 
 ### Create an OAuth connection settings
 
-1. Create an Azure AD v2 connection in the `SkillBot` bot registration and enter values as described in [Azure AD v2](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-identity-providers?view=azure-bot-service-4.0&tabs=adv2%2Cga2#azure-ad-v2-1&preserve-view=true) and the values described below.
+1. Create an Azure AD v2 connection in the `SkillBot` bot registration and enter values as described in [Azure AD v2](/azure/bot-service/bot-builder-concept-identity-providers?view=azure-bot-service-4.0&tabs=adv2%2Cga2#azure-ad-v2-1&preserve-view=true) and the values described below.
 1. In the **Token Exchange URL** box enter the `SkillBot` scope value you saved in the previous steps.
 1. In the **Scopes** box enter the following values separated by blank space: `profile` `User.Read` `User.ReadBasic.All` `openid`.
 
@@ -154,8 +154,8 @@ The Azure AD is a cloud identity service that allows you to build applications t
 1. Click **Accept**.
 1. This should then redirect you to a **Test Connection to \<your-connection-name> Succeeded** page.
 
-For more information, see the [Azure Active Directory for developers (v1.0) overview](https://docs.microsoft.com/azure/active-directory/azuread-dev/v1-overview) and [Microsoft identity platform (v2.0) overview](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview).
-For information about the differences between the v1 and v2 endpoints, see [Why update to Microsoft identity platform (v2.0)?](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare). For complete information, see [Microsoft identity platform (formerly Azure Active Directory for developers)](https://docs.microsoft.com/azure/active-directory/develop/).
+For more information, see the [Azure Active Directory for developers (v1.0) overview](/azure/active-directory/azuread-dev/v1-overview) and [Microsoft identity platform (v2.0) overview](/azure/active-directory/develop/active-directory-appmodel-v2-overview).
+For information about the differences between the v1 and v2 endpoints, see [Why update to Microsoft identity platform (v2.0)?](/azure/active-directory/develop/active-directory-v2-compare). For complete information, see [Microsoft identity platform (formerly Azure Active Directory for developers)](/azure/active-directory/develop/).
 
 ## Prepare the samples code
 
@@ -236,7 +236,7 @@ as shown in [Configure the Emulator for authentication](../bot-service-debug-emu
 
 After you have configured the authentication mechanism, you can perform the actual bot sample testing.
 
-1. In Visual Studio, open the `SSOWithSkills.sln` solution and configure it to start [debugging with multiple processes](https://docs.microsoft.com/visualstudio/debugger/debug-multiple-processes?view=vs-2019#start-debugging-with-multiple-processes&preserve-view=true).
+1. In Visual Studio, open the `SSOWithSkills.sln` solution and configure it to start [debugging with multiple processes](/visualstudio/debugger/debug-multiple-processes?view=vs-2019#start-debugging-with-multiple-processes&preserve-view=true).
 1. Start debugging locally on your machine.
 Notice that in the`RootBot` project `appsettings.json` file you have the following settings:
 

@@ -23,7 +23,7 @@ If you expect that your skill will be consumed from a [Power Virtual Agents](htt
 
 Power Virtual Agents places restrictions on what you may declare in your [skill manifest](./skills-write-manifest-2-1.md).
 
-- You may declare only 25 or fewer actions.
+- You may declare only 100 or fewer actions.
 - Each action is limited to 25 or fewer inputs or outputs.
 - You cannot use the array type for inputs or outputs.
 
@@ -31,7 +31,7 @@ Power Virtual Agents places restrictions on what you may declare in your [skill 
 
 In order to ensure compliance and adequate governance of custom skills being registered for use within Power Virtual Agents, your skill bot must be a registered application in Azure Active Directory. Upon adding a skill, we validate if the skill's application ID is the in the tenant of the signed in user and the skills endpoint matches the registered application's `Home Page URL`.
 
-Before you can register your bot as a skill within Power Virtual Agents, you must ensure that for the bot, the [home page in the Azure Portal](/azure/active-directory/manage-apps/application-proxy-configure-custom-home-page#change-the-home-page-in-the-azure-portal) is set to the bot's skill manifest URL.
+Before you can register your bot as a skill within Power Virtual Agents, you must ensure that for the bot, the [home page in the Azure Portal](/azure/active-directory/app-proxy/application-proxy-configure-custom-home-page#change-the-home-page-in-the-azure-portal) is set to the bot's skill manifest URL.
 
 ## Validation performed during registering a Skill
 
@@ -46,7 +46,7 @@ When an end user attempts to connect to your skill from their Power Virtual Agen
 | Skill is not yet registered | `MANIFEST_ALREADY_IMPORTED` | This skill has already been added to your bot. | Delete the skill and register it again.
 | Manifest endpoint and homepage domains match | `MANIFEST_ENDPOINT_ORIGIN_MISMATCH` | There's a mismatch in your skill endpoints. | You Azure AD app's homepage URL domain and manifest URL domain must match. See [Same-tenant restriction](#same-tenant-restriction)
 | Skill is hosted in signed in user's tenant | `APPID_NOT_IN_TENANT` | To add a skill, it must first be registered.| A global administrator must register the skill into the signed in user's organization.
-| Actions are limited | `LIMITS_TOO_MANY_ACTIONS` | The skill is limited to 25 actions.|There are too many skill actions defined in skill manifest. Remove actions and try again.
+| Actions are limited | `LIMITS_TOO_MANY_ACTIONS` | The skill is limited to 100 actions.|There are too many skill actions defined in skill manifest. Remove actions and try again.
 | Action input parameters are limited | `LIMITS_TOO_MANY_INPUTS` | Actions are limited to 25 inputs.|There are too many skill action input parameters. Remove parameters and try again.
 | Action output parameters are limited | `LIMITS_TOO_MANY_OUTPUTS` | Actions are limited to 25 outputs.|There are too many skill action output parameters. Remove parameter and try again.
 | Skill count is limited | `LIMITS_TOO_MANY_SKILLS` | Your bot can have a maximum of 25 skills.| There are too many skills added into a bot. Remove an existing skill and try again.

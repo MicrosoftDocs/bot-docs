@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 03/11/2020
+ms.date: 05/10/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -50,7 +50,7 @@ You can choose from two AD identity provider implementations which have differ
 ### Azure AD v1
 
 You use the settings shown to configure the Azure AD developer platform (v1.0), also known as **Azure AD v1** endpoint. This allows you to build  apps that securely sign in users with a Microsoft work or school account.
-For more information, see [Azure Active Directory for developers (v1.0) overview](https://docs.microsoft.com/azure/active-directory/azuread-dev/v1-overview).
+For more information, see [Azure Active Directory for developers (v1.0) overview](/azure/active-directory/azuread-dev/v1-overview).
 
 [!INCLUDE [azure-ad-v1-settings](~/includes/authentication/auth-aad-v1-settings.md)]
 
@@ -59,7 +59,7 @@ For more information, see [Azure Active Directory for developers (v1.0)�
 ### Azure AD v2
 
 You use the settings shown to configure the Microsoft identity platform (v2.0), also known as **Azure AD v2** endpoint which is an evolution of the Azure AD platform (v1.0). It allows a bot to get tokens to call Microsoft APIs, such as Microsoft Graph or custom APIs. 
-For more information, see the [Microsoft identity platform (v2.0) overview](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview).
+For more information, see the [Microsoft identity platform (v2.0) overview](/azure/active-directory/develop/active-directory-appmodel-v2-overview).
 
 The AD v2 settings enable a bot to access Office 365 data via the Microsoft Graph API.
 
@@ -69,21 +69,22 @@ The AD v2 settings enable a bot to access Office 365 data via the Microsoft Grap
 
 For more information, see:
 
-- [Why update to Microsoft identity platform (v2.0)?](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare)
+- [Why update to Microsoft identity platform (v2.0)?](/azure/active-directory/develop/active-directory-v2-compare)
 
-- [Microsoft identity platform (formerly Azure Active Directory for developers)](https://docs.microsoft.com/azure/active-directory/develop/).
+- [Microsoft identity platform (formerly Azure Active Directory for developers)](/azure/active-directory/develop/).
 
 ## Other identity providers
 
-Azure supports several identity providers. You can get a complete list, along with the related details, by running the following Azure console command:
+Azure supports several identity providers. You can get a complete list, along with the related details, by running the following Azure console commands:
 
 ```cmd
+az login
 az bot authsetting list-providers
 ```
 
 You can also see the list of these providers in the [Azure portal](https://ms.portal.azure.com/) when you define the OAuth connection settings for a bot registration app.
 
-![azure identity providers](media/concept-bot-authentication/bot-auth-identity-providers.png)
+:::image type="content" source="media/concept-bot-authentication/bot-auth-identity-providers.png" alt-text="azure identity providers":::
 
 
 ### OAuth generic providers
@@ -95,8 +96,7 @@ You can choose from two generic identity provider implementations which have d
 > [!Note]
 > You use the settings described here when configuring the **OAuth Connection Settings** in the Azure bot registration application.
 
-
-# [Generic OAuth 2](#tab/ga2)
+### [Generic OAuth 2](#tab/ga2)
 
 ### Generic OAuth 2
 
@@ -105,7 +105,7 @@ Use this provider to configure any generic OAuth2 identity provider that has sim
 [!INCLUDE [generic-oauth2-settings](~/includes/authentication/auth-generic-oauth2-settings.md)]
 
 
-# [OAuth 2 generic provider](#tab/a2gp)
+### [OAuth 2 generic provider](#tab/a2gp)
 
 ### OAuth 2 generic provider
 

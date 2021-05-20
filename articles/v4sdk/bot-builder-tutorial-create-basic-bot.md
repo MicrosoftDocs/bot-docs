@@ -32,6 +32,12 @@ You will learn how to:
 
 [!INCLUDE [javascript prerequisites](~/includes/quickstart/javascript/quickstart-javascript-prerequisites.md)]
 
+# [Java](#tab/java)
+
+[!INCLUDE [java prerequisites](~/includes/quickstart/java/quickstart-java-prerequisites.md)]
+
+[!INCLUDE [java templates additional info](~/includes/quickstart/java/tutorial-java-templates-info.md)]
+
 # [Python](#tab/python)
 
 [!INCLUDE [python prerequisites](~/includes/quickstart/python/quickstart-python-prerequisites.md)]
@@ -47,6 +53,12 @@ You will learn how to:
 # [JavaScript](#tab/javascript)
 
 [!INCLUDE [javascript quickstart create bot](~/includes/quickstart/javascript/quickstart-javascript-create-bot.md)]
+
+# [Java](#tab/java)
+
+[!INCLUDE [java quickstart create bot](~/includes/quickstart/java/quickstart-java-create-bot.md)]
+
+[!INCLUDE [java command line additional info](~/includes/quickstart/java/tutorial-java-cmdline-info.md)]
 
 # [Python](#tab/python)
 
@@ -64,6 +76,10 @@ You will learn how to:
 
 [!INCLUDE [javascript quickstart start bot](~/includes/quickstart/javascript/quickstart-javascript-start-bot.md)]
 
+# [Java](#tab/java)
+
+[!INCLUDE [java quickstart start bot](../includes/quickstart/java/quickstart-java-start-bot.md)]
+
 # [Python](#tab/python)
 
 [!INCLUDE [python quickstart start bot](~/includes/quickstart/python/quickstart-python-start-bot.md)]
@@ -72,7 +88,7 @@ You will learn how to:
 
 ## Start the Emulator and connect your bot
 
-[!INCLUDE [dotnet quickstart start Emulator](~/includes/quickstart/common/quickstart-start-emulator.md)]
+[!INCLUDE [common quickstart start emulator](~/includes/quickstart/common/quickstart-start-emulator.md)]
 
 ## Next steps
 

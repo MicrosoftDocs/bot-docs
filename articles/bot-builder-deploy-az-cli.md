@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 06/09/2020
+ms.date: 04/27/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -18,7 +18,7 @@ monikerRange: 'azure-bot-service-4.0'
 In this article we will show you how to deploy a basic bot to Azure. We will explain how to prepare your bot for deployment, deploy your bot to Azure, and test your bot in Web Chat. It would be useful to read this article before following the steps, so that you fully understand what is involved in deploying a bot.
 
 > [!IMPORTANT]
-> Make sure you are using the latest version of the [Azure CLI](https://docs.microsoft.com/cli/azure/). If you are using an Azure CLI version older than [2.2.0](https://github.com/MicrosoftDocs/azure-docs-cli/blob/master/docs-ref-conceptual/release-notes-azure-cli.md#march-10-2020), you will encounter errors of CLI commands deprecation. Also, do not mix Azure CLI deployment shown in this article with Azure portal deployment.
+> Make sure you are using the latest version of the [Azure CLI](/cli/azure/). If you are using an Azure CLI version older than [2.2.0](https://github.com/MicrosoftDocs/azure-docs-cli/blob/master/docs-ref-conceptual/release-notes-azure-cli.md#march-10-2020), you will encounter errors of CLI commands deprecation. Also, do not mix Azure CLI deployment shown in this article with Azure portal deployment.
 
 ## Prerequisites
 
@@ -28,48 +28,51 @@ In this article we will show you how to deploy a basic bot to Azure. We will exp
 
 [!INCLUDE [deploy prepare intro](~/includes/deploy/snippet-prepare-deploy-intro.md)]
 
-### 1. Login to Azure
+### Login to Azure
 
 [!INCLUDE [deploy az login](~/includes/deploy/snippet-az-login.md)]
 
-### 2. Set the subscription
+### Set the subscription
 
 [!INCLUDE [deploy az subscription](~/includes/deploy/snippet-az-set-subscription.md)]
 
-### 3. Create the application registration
+### Create the application registration
 
 [!INCLUDE [deploy create app registration](~/includes/deploy/snippet-create-app-registration.md)]
 
-### 4. Create the bot application service
+### Create the bot application service
 
-When creating the bot application service, you can deploy your bot in a new or in an existing resource group, both via the [Azure Resource Manager (ARM) template](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview). An ARM template is a JSON file that declaratively defines one or more Azure resources and that defines dependencies between the deployed resources. Make sure that you have the correct path to your bot project ARM deployment templates directory `DeploymentTemplates`, you need it to assign the value to the template file. Choose the option that works best for you:
+When creating the bot application service, you can deploy your bot in a new or in an existing resource group, both via the [Azure Resource Manager (ARM) template](/azure/azure-resource-manager/templates/overview). An ARM template is a JSON file that declaratively defines one or more Azure resources and that defines dependencies between the deployed resources. Make sure that you have the correct path to your bot project ARM deployment templates directory `DeploymentTemplates`, you need it to assign the value to the template file. Choose the option that works best for you:
 
 * [Deploy via ARM template with new resource group](#deploy-via-arm-template-with-new-resource-group)
 * [Deploy via ARM template with existing resource group](#deploy-via-arm-template-with-existing-resource-group)
 
 > [!IMPORTANT]
-> Python bots cannot be deployed to a resource group that contains Windows services/bots. Multiple Python bots can be deployed to the same resource group, but you need to create other services (LUIS, QnA, etc.) in another resource group.
+> Python and Java bots cannot be deployed to a resource group that contains Windows services/bots. Multiple Python bots can be deployed to the same resource group, but you need to create other services (LUIS, QnA, etc.) in another resource group.
 
-#### **Deploy via ARM template (with **new** Resource Group)**
+### Deploy via ARM template with new resource group
 
 <!-- ##### Create Azure resources -->
 [!INCLUDE [ARM with new resource group](~/includes/deploy/snippet-ARM-new-resource-group.md)]
 
-
-#### **Deploy via ARM template (with **existing** Resource Group)**
+### Deploy via ARM template with existing resource group
 
 [!INCLUDE [ARM with existing resource group](~/includes/deploy/snippet-ARM-existing-resource-group.md)]
 
 
-### 5. Prepare your code for deployment
+## Prepare your code for deployment
 
-#### 5.1 Retrieve or create necessary files
+### Assign app Id and password
 
-[!INCLUDE [retrieve or create IIS/Kudu files](~/includes/deploy/snippet-IIS-Kudu-files.md)]
+[!INCLUDE [assign app id and password](~/includes/deploy/snippet-assign-appid-password.md)]
 
-#### 5.2 Zip up the code directory manually
+### Prepare project
 
-[!INCLUDE [zip up code](~/includes/deploy/snippet-zip-code.md)]
+[!INCLUDE [prepare project](~/includes/deploy/snippet-IIS-Kudu-files.md)]
+
+### Package project
+
+[!INCLUDE [package project](~/includes/deploy/snippet-zip-code.md)]
 
 ## Deploy code to Azure
 

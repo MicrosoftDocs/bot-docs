@@ -20,7 +20,7 @@ A bot is inherently stateless. Once your bot is deployed, it may not run in the 
 ## Prerequisites
 
 - Knowledge of [bot basics](bot-builder-basics.md) and how bots [manage state](bot-builder-concept-state.md) is required.
-- The code in this article is based on the **State Management Bot sample**. You'll need a copy of the sample in either [C#](https://aka.ms/statebot-sample-cs), [JavaScript](https://aka.ms/statebot-sample-js) or [Python](https://aka.ms/bot-state-python-sample-code).
+- The code in this article is based on the **State Management Bot sample**. You'll need a copy of the sample in either [C#](https://aka.ms/statebot-sample-cs), [JavaScript](https://aka.ms/statebot-sample-js), [Java](https://aka.ms/bot-state-java-sample-code) or [Python](https://aka.ms/bot-state-python-sample-code).
 
 ## About this sample
 
@@ -33,6 +33,10 @@ Upon receiving user input, this sample checks the stored conversation state to s
 ## [JavaScript](#tab/javascript)
 
 ![JavaScript state bot sample](media/StateBotSample-JS-Overview.png)
+
+## [Java](#tab/java)
+
+![Java state bot sample](media/StateBotSample-Overview.png)
 
 ## [Python](#tab/python)
 
@@ -62,6 +66,24 @@ The following code examples show the definitions for the `UserProfile` and `Conv
 ## [JavaScript](#tab/javascript)
 
 This step is not necessary in JavaScript.
+
+## [Java](#tab/java)
+
+The first step in setting up state management is to define the classes containing the information to manage in the user and conversation state. The example used in this article defines the following classes:
+
+- In **UserProfile.java**, you define a `UserProfile` class for the user information that the bot will collect.
+- In **ConversationData.java**, you define a `ConversationData` class to control our conversation state while gathering user information.
+
+The following code examples show the definitions for the `UserProfile` and `ConversationData` classes.
+
+**UserProfile.java**
+
+[!code-java[UserProfile](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/UserProfile.java?range=18-28)]
+
+**ConversationData.java**
+
+[!code-java[ConversationData](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/ConversationData.java?range=18-46)]
+
 
 ## [Python](#tab/python)
 
@@ -110,6 +132,19 @@ Next, you register `MemoryStorage` that is then used to create `UserState` and `
 [!code-javascript[bot constructor](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/bots/stateManagementBot.js?range=10-12)]
 [!code-javascript[bot constructor](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/bots/stateManagementBot.js?range=17-19)]
 
+## [Java](#tab/java)
+
+Next, you register the `StateManagementBot` in Application.java. Both ConversationState and UserState are provided by default from the BotDependencyConfiguration class, and Spring will inject them into the getBot method.
+
+**Application.java**
+
+[!code-java[OverrideStartup](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/Application.java?range=51-57)]
+
+**StateManagementBot.java**
+
+[!code-java[Bot constructor](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/StateManagementBot.java?range=41-45)]
+
+
 ## [Python](#tab/python)
 
 Next, you register `MemoryStorage` that is used to create `UserState` and `ConversationState` objects. These are created in **app.py** and consumed when the bot is created.
@@ -141,6 +176,15 @@ Now you create property accessors for `UserState` and `ConversationState`. Each 
 **bots/stateManagementBot.js**
 
 [!code-javascript[Create accessors](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/bots/stateManagementBot.js?range=13-15)]
+
+## [Java](#tab/java)
+
+Now you create property accessors using the `CreateProperty` method. Each state property accessor allows you to get or set the value of the associated state property. Before you use the state properties, use each accessor to load the property from storage and get it from the state cache. To get the properly scoped key associated with the state property, you call the `get` method.
+
+**StateManagementBot.java**
+
+[!code-java[Create accessors](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/StateManagementBot.java?range=100-109)]
+
 
 ## [Python](#tab/python)
 
@@ -187,6 +231,23 @@ Before you exit each dialog turn, you use the state management objects' _saveCha
 **bots/stateManagementBot.js**
 
 [!code-javascript[OnDialog](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/bots/stateManagementBot.js?range=72-81)]
+
+## [Java](#tab/java)
+
+- If userProfile.getName() is empty and conversationData.getPromptedUserForName() is _true_, you retrieve the user name provided and store this within user state.
+- If userProfile.getName() is empty and conversationData.getPromptedUserForName() is _false_, you ask for the user's name.
+- If userProfile.getName() was previously stored, you retrieve message time and channel Id from the user input, echo all data back to the user, and store the retrieved data within conversation state.
+
+**StateManagementBot.java**
+
+[!code-java[onMessageActivity](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/StateManagementBot.java?range=98-165)]
+
+Before you exit the turn handler, you use the state management objects' _saveChanges()_ method to write all state changes back to storage.
+
+**StateManagementBot.java**
+
+[!code-java[onTurn](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/StateManagementBot.java?range=55-60)]
+
 
 ## [Python](#tab/python)
 

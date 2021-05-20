@@ -122,7 +122,7 @@ You can get coffee in our Portland store at 52 marine drive, Portland, OR
 <!---
 ## QnA Maker alterations
 
-QnA Maker supports [word alterations](https://docs.microsoft.com/azure/cognitive-services/qnamaker/concepts/best-practices#use-synonyms) as a way to improve the likelihood that a given user query is answered with an appropriate response. You can use this feature to add synonyms to keywords that take different form.
+QnA Maker supports [word alterations](/azure/cognitive-services/qnamaker/concepts/best-practices#use-synonyms) as a way to improve the likelihood that a given user query is answered with an appropriate response. You can use this feature to add synonyms to keywords that take different form.
 
 You can describe word alterations/synonyms lists in .qna files using the following notation.
 ```qna
@@ -178,7 +178,7 @@ Here's an example of the above references:
 
 ```qna
 > QnA URL reference
-[QnaURL](https://docs.microsoft.com/en-in/azure/cognitive-services/qnamaker/faqs)
+[QnaURL](/en-in/azure/cognitive-services/qnamaker/faqs)
 
 > Include all content in ./kb1.qna
 [KB1](./kb1.qna)
@@ -294,4 +294,4 @@ The Portland store is open 24/7.
 ## Additional Resources
 - See [.lu file format](bot-builder-lu-file-format.md) for information about the .lu file format.
 
-[1]:https://docs.microsoft.com/azure/cognitive-services/qnamaker/how-to/multiturn-conversation#add-a-new-question-and-answer-pair-as-a-follow-up-prompt
+[1]:/azure/cognitive-services/qnamaker/how-to/multiturn-conversation#add-a-new-question-and-answer-pair-as-a-follow-up-prompt

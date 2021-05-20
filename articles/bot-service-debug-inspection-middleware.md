@@ -19,7 +19,8 @@ This article describes how to debug a bot using inspection middleware. This feat
 We use an EchoBot built locally using the Bot Framework v4
 ([C#](dotnet/bot-builder-dotnet-sdk-quickstart.md) |
 [JavaScript](javascript/bot-builder-javascript-quickstart.md) |
-[Python](python/bot-builder-python-quickstart.md)) to show how to debug and inspect the bot's message state. You can also [Debug a bot using IDE](./bot-service-debug-bot.md) or [Debug with the Bot Framework Emulator](./bot-service-debug-emulator.md), but to debug state you need to add inspection middleware to your bot. The Inspection bot samples are available here: [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/47.inspection), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/47.inspection) and [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/47.inspection).
+[Java](java/bot-builder-java-quickstart.md) |
+[Python](python/bot-builder-python-quickstart.md)) to show how to debug and inspect the bot's message state. You can also [Debug a bot using IDE](./bot-service-debug-bot.md) or [Debug with the Bot Framework Emulator](./bot-service-debug-emulator.md), but to debug state you need to add inspection middleware to your bot. The Inspection bot samples are available here: [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/47.inspection), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/47.inspection), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/47.inspection) and [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/47.inspection).
 
 ## Prerequisites
 
@@ -75,6 +76,20 @@ Update the bot class in the **bot.js** file.
 
 [!code-javascript [inspection bot sample](~/../botbuilder-samples/samples/javascript_nodejs/47.inspection/bot.js?range=6-52)]
 
+### [Java](#tab/java)
+
+Set up the inspection state and add the inspection middleware to the adapter in the **Application.java** file. The inspection state is set by providing a new Spring @Bean to supply the BotFrameworkHttpAdapter that is set to be @Primary so it will override the default BotFrameworkHttpAdapter provided by the BotDependencyConfiguration base class. See the code update below or refer to the inspection sample here: [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/47.inspection).
+
+**Application.java**  
+[!code-java [inspection bot sample](~/../botbuilder-samples/samples/java_springboot/47.inspection/src/main/java/com/microsoft/bot/sample/inspection/Application.java?range=66-97)]
+
+AdapterWithInspection is implemented as part of the com.microsoft.bot.integration package and can be reviewed from the Java SDK source code.
+
+Update the bot class in the **EchoBot.java** file.
+
+**EchoBot.java**  
+[!code-java [inspection bot sample](~/../botbuilder-samples/samples/java_springboot/47.inspection/src/main/java/com/microsoft/bot/sample/inspection/EchoBot.java?range=29-97)]
+
 ### [Python](#tab/python)
 
 Before updating your bot's code run install the necessary PyPI packages by running the following commands in a terminal:
@@ -116,6 +131,13 @@ After updating the code you can run your bot locally and test the debugging feat
     npm start
     ```
 
+    ### [Java](#tab/java)
+
+    ```cmd
+    mvn package
+    java -jar .\target\bot-inspection-sample.jar 
+    ```
+
     ### [Python](#tab/python)
 
     ```cmd
@@ -124,7 +146,7 @@ After updating the code you can run your bot locally and test the debugging feat
 
     ---
 
-1. Open your Emulator. Click **Open Bot**. Fill in Bot URL with http://localhost:3978/api/messages and the **MicrosoftAppId** and **MicrosoftAppPassword** values. If you have a JavaScript bot you can find these values in your bot's **.env** file. If you have a C# bot you can find these values in the **appsettings.json** file. Click **Connect**.
+1. Open your Emulator. Click **Open Bot**. Fill in Bot URL with http://localhost:3978/api/messages and the **MicrosoftAppId** and **MicrosoftAppPassword** values. If you have a JavaScript bot you can find these values in your bot's **.env** file. If you have a C# bot you can find these values in the **appsettings.json** file. For a Java bot you can find these values in the **application.properties** file. Click **Connect**.
 
 1. Now open another Emulator window. This second Emulator window will work as a debugger. Follow the instructions as described in the previous step. Check **Open in debug mode** and then click **Connect**.
 
@@ -165,7 +187,7 @@ To run your bot locally do the following:
 
 Now that your local bot is connected to ngrok you can configure your local bot to your Bot Channels Registration in Azure.
 
-1. Go to your Bot Channels Registration in Azure. Click **Settings** on the left menu and set the **Messaging endpoint** with your ngrok IP. If necessary add **/api/messages** after the IP address. (For example, https://e58549b6.ngrok.io/api/messages). Check **Enable Streaming Endpoint** and **Save**.
+1. Go to your Bot Channels Registration in Azure. Click **Settings** on the left menu and set the **Messaging endpoint** with your ngrok IP. If necessary add **/api/messages** after the IP address. For example, `https://e58549b6.ngrok.io/api/messages`. Check **Enable Streaming Endpoint** and **Save**.
 
     ![endpoint](./media/bot-debug-inspection-middleware/bot-debug-channels-setting-ngrok.png)
 

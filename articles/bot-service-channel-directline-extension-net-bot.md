@@ -7,7 +7,7 @@ manager: kamrani
 ms.service: bot-service
 ms.topic: conceptual
 ms.author: kamrani
-ms.date: 01/16/2020
+ms.date: 05/06/2021
 ---
 
 # Configure .NET bot for extension
@@ -18,7 +18,7 @@ This article describes how to update a bot to work with named pipes, and how to 
 
 ## Prerequisites
 
-To perform the steps described next, you need to have a web app bot created in Azure.
+To perform the steps described next, you need to have a bot deployed in Azure.
 
 ## Enable Direct Line App Service extension
 
@@ -111,7 +111,7 @@ If everything is correct, the page will return this JSON content: `{"v":"123","k
     1. Confirm the bot is able to start up and run at all. Useful tools are **Test in WebChat**, connecting an additional channel, remote debugging, or logging.
     1. Restart the entire **Azure App Service** the bot is hosted within, to ensure a clean start up of all processes.
 
-- If you receive an "HTTP Error 500.34 - ANCM Mixed Hosting", your bot is attempting to use the `InProcess` Hosting Model. This is remedied by explicitly setting the bot to run `OutOfProcess` instead. See [Out-of-process hosting model](https://docs.microsoft.com/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#out-of-process-hosting-model) in the AZP.NET Core documentation for more information.
+- If you receive an "HTTP Error 500.34 - ANCM Mixed Hosting", your bot is attempting to use the `InProcess` Hosting Model. This is remedied by explicitly setting the bot to run `OutOfProcess` instead. See [Out-of-process hosting model](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#out-of-process-hosting-model) in the AZP.NET Core documentation for more information.
 
 - If the **initialized** value of the **.bot endpoint** is false it means the Direct Line App Service extension is unable to validate the App Service extension key added to the bot's **Application Settings** above.
     1. Confirm the value was correctly entered.

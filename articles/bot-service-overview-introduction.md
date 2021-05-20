@@ -81,13 +81,13 @@ As part of the Azure Bot Service and Bot Framework, we offer additional componen
 | --- | --- | --- |
 | Add natural language processing | Enable your bot to understand natural language, understand spelling errors, use speech, and recognize the user's intent | How to use [LUIS](~/v4sdk/bot-builder-howto-v4-luis.md)
 | Answer questions | Add a knowledge base to answer questions users ask in a more natural, conversational way | How to use [QnA Maker](~/v4sdk/bot-builder-howto-qna.md)
-| Manage multiple models | If using more than one model, such as for LUIS and QnA Maker, intelligently determine when to use which one during your bot's conversation | [Dispatch](~/v4sdk/bot-builder-tutorial-dispatch.md) tool|
+| Manage multiple models | If using more than one model, such as for LUIS and QnA Maker, intelligently determine when to use which one during your bot's conversation | [Orchestrator](~/v4sdk/bot-builder-tutorial-orchestrator.md) |
 | Add cards and buttons | Enhance the user experience with media other than text, such as graphics, menus, and cards | How to [add cards](v4sdk/bot-builder-howto-add-media-attachments.md) |
 
 > [!NOTE]
 > The table above is not a comprehensive list. Explore the articles on the left, starting with [sending messages](~/v4sdk/bot-builder-howto-send-messages.md), for more bot functionality.
 
-Additionally, we provide command line tools to help you to create, manage, and test bot assets. These tools can configure LUIS apps, build a QnA knowledge base, build models to dispatch between components, mock a conversation, and more. You can find more details in the command line tools [readme](https://aka.ms/botbuilder-tools-readme).
+Additionally, we provide command line tools to help you to create, manage, and test bot assets. These tools can configure LUIS apps, build a QnA knowledge base, build models to route between components, mock a conversation, and more. You can find more details in the command line tools [readme](https://aka.ms/bfcli).
 
 You also have access to a variety of [samples](https://github.com/microsoft/botbuilder-samples) that showcase many of the capabilities available through the SDK. These are great for developers looking for a more feature-rich starting point.
 
@@ -99,7 +99,7 @@ Bots are complex apps with a lot of different parts working together. Like any o
 
 - Test your bot on the [web](bot-service-manage-test-webchat.md). Once configured through the Azure portal your bot can also be reached through a web chat interface. The web chat interface is a great way to grant access to your bot to testers and other people who do not have direct access to the bot's running code.
 
-- [Unit Test](https://docs.microsoft.com/azure/bot-service/unit-test-bots) your bot with the current Bot Framework SDK.
+- [Unit Test](/azure/bot-service/unit-test-bots) your bot with the current Bot Framework SDK.
 
 ### Publish
 

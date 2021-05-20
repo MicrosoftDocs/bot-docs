@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: tutorial
 ms.service: bot-service
-ms.date: 03/25/2021
+ms.date: 05/06/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -32,6 +32,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 * The bot created in the [previous tutorial](bot-builder-tutorial-create-basic-bot.md). You'll add a question-and-answer feature to the bot.
 * Some familiarity with [QnA Maker](/azure/cognitive-services/qnamaker/overview/overview) is helpful. You'll use the [QnA Maker portal](https://qnamaker.ai/) to create, train, and publish the knowledge base to use with the bot.
 * Familiarity with [QnA bot creation](/azure/cognitive-services/qnamaker/tutorials/create-qna-bot) using Azure Bot Service.
+* Installed [Maven](https://maven.apache.org/), for Java only.
 
 You should also already have the [prerequisites for the previous tutorial](/azure/bot-service/bot-builder-tutorial-deploy-basic-bot#prerequisites).
 
@@ -42,10 +43,10 @@ You'll import an existing knowledge base definition from the QnA Maker sample in
 1. Clone or copy the samples repo to your computer.
 1. Sign into to the [QnA Maker portal](https://qnamaker.ai/) with your Azure credentials.
 1. Select **Create a knowledge base** in the QnA Maker portal.
-    1. If necessary, create a QnA service. (You can use an existing QnA Maker service or create a new one for this tutorial.) For more detailed QnA Maker instructions, see [Create a QnA Maker service](https://docs.microsoft.com/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure) and [Create, train, and publish your QnA Maker knowledge base](https://docs.microsoft.com/azure/cognitive-services/qnamaker/quickstarts/create-publish-knowledge-base).
+    1. If necessary, create a QnA service. (You can use an existing QnA Maker service or create a new one for this tutorial.) For more detailed QnA Maker instructions, see [Create a QnA Maker service](/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure) and [Create, train, and publish your QnA Maker knowledge base](/azure/cognitive-services/qnamaker/quickstarts/create-publish-knowledge-base).
     1. Connect your QnA Maker service to your knowledge base.
     1. Name your knowledge base.
-    1. To populate your knowledge base, use the **smartLightFAQ.tsv** file from the samples repo. If you have downloaded the samples, upload the file **smartLightFAQ.tsv** from your computer.
+    1. To populate your knowledge base, use the [smartLightFAQ.tsv](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/csharp_dotnetcore/11.qnamaker/CognitiveModels/smartLightFAQ.tsv) file from the samples repo. If you have downloaded the samples, upload the file **smartLightFAQ.tsv** from your computer.
     1. Select **Create your kb** to create the knowledge base.
 1. Select **Save and train**.
 1. Select **PUBLISH** to publish your knowledge base.
@@ -66,7 +67,7 @@ The knowledge base is now ready for your bot to use.
 
 ## Add knowledge base information to your bot
 
-Beginning with bot framework v4.3 Azure no longer provides a .bot file as part of your downloaded bot source code. Use the following instructions connect your CSharp, JavaScript or Python bot to your knowledge base.
+Use the following instructions connect your C#, JavaScript, Java, or Python bot to your knowledge base.
 
 # [C#](#tab/csharp)
 
@@ -96,6 +97,19 @@ ScmType=None
 QnAKnowledgebaseId="knowledge-base-id"
 QnAAuthKey="qna-maker-resource-key"
 QnAEndpointHostName="your-hostname" // This is a URL ending in /qnamaker
+```
+
+# [Java](#tab/java)
+
+Add the following values to your **application.properties** file:
+
+```java
+MicrosoftAppId=
+MicrosoftAppPassword=
+QnAKnowledgebaseId="knowledge-base-id"
+QnAEndpointKey="qna-maker-resource-key"
+QnAEndpointHostName="your-hostname" // This is a URL ending in /qnamaker
+server.port=3978
 ```
 
 # [Python](#tab/python)
@@ -138,7 +152,7 @@ Update your initialization code to load the service information for your knowled
     dotnet add package Microsoft.Bot.Builder.AI.QnA
     ```
 
-    For more information on NuGet, see the [NuGet documentation](https://docs.microsoft.com/nuget/#pivot=start&panel=start-all).
+    For more information on NuGet, see the [NuGet documentation](/nuget/#pivot=start&panel=start-all).
 
 1. In your **Startup.cs** file, add the following namespace reference.
 
@@ -295,6 +309,91 @@ Update your initialization code to load the service information for your knowled
     });
     ```
 
+# [Java](#tab/java)
+
+1. Add the **com.microsoft.bot.bot-ai-qna** package to your project.
+
+    To do this add the package to your Maven **pom.xml** file:
+
+    ```xml
+    <dependency>
+        <groupId>com.microsoft.bot</groupId>
+        <artifactId>bot-ai-qna</artifactId>
+        <version>4.13.0</version>
+    </dependency>
+    ```
+
+1. In your **EchoBot.cs** file, add the following namespace references.
+
+    **EchoBot.java**
+
+    ```java
+    import com.microsoft.bot.ai.qna.QnAMaker;
+    import com.microsoft.bot.ai.qna.QnAMakerEndpoint;
+    import com.microsoft.bot.ai.qna.QnAMakerOptions;
+    ```
+
+1. Add an `qnaMaker` member and add a constructor to initialize it.
+
+    **EchoBot.java**
+
+    ```java
+    QnAMaker qnaMaker;
+
+    public EchoBot(Configuration configuration) {
+        QnAMakerEndpoint qnAMakerEndpoint = new QnAMakerEndpoint();
+        qnAMakerEndpoint.setKnowledgeBaseId(configuration.getProperty("QnAKnowledgebaseId"));
+        qnAMakerEndpoint.setEndpointKey(configuration.getProperty("QnAEndpointKey"));
+        qnAMakerEndpoint.setHost(configuration.getProperty("QnAEndpointHostName"));
+
+        qnaMaker = new QnAMaker(qnAMakerEndpoint, null);
+
+    }
+    ```
+1. Update **Application.java** to provide an instance of the Configuration to the new EchoBot constructor.
+
+    **Application.java**
+
+    ```java
+    @Bean
+    public Bot getBot(Configuration configuration) {
+        return new EchoBot(configuration);
+    }    
+    ```
+
+1. Back in the **Echobot.java** file add an `AccessQnAMaker` method:
+
+    **EchoBot.java**
+
+    ```java
+    private CompletableFuture<Void> accessQnAMaker(TurnContext turnContext) {
+        return qnaMaker.getAnswers(turnContext, null).thenCompose(results -> {
+            if (results.length > 0) {
+                return turnContext
+                    .sendActivity(MessageFactory.text(String.format("QnA Maker Returned: %s" + results[0].getAnswer())))
+                    .thenApply(result -> null);
+            } else {
+                return turnContext
+                    .sendActivity(MessageFactory.text("Sorry, could not find an answer in the knowledge base."))
+                    .thenApply(result -> null);
+            }
+        });
+    }
+    ```
+
+1. Update the `onMessageActivity` method to call the new `accessQnAMaker` method.
+
+    **EchoBot.java**
+
+    ```csharp
+    @Override
+    protected CompletableFuture<Void> onMessageActivity(TurnContext turnContext) {
+        return turnContext.sendActivity(MessageFactory.text("Echo: " + turnContext.getActivity().getText()))
+            .thenCompose(sendResult -> {
+                return accessQnAMaker(turnContext);
+            });
+    }    ```
+
 # [Python](#tab/python)
 
 1. Make sure you've installed the packages as described in the samples repository README file.
@@ -380,7 +479,7 @@ You can now republish your bot back to Azure. You need to zip your project folde
 
 ### Zip your project folder
 
-[!INCLUDE [zip up code](~/includes/deploy/snippet-zip-code.md)]
+[!INCLUDE [zip up code](../includes/deploy/snippet-zip-code.md)]
 
 <!-- > [!IMPORTANT]
 > Before creating a zip of your project files, make sure that you are _in_ the correct folder.
@@ -397,7 +496,7 @@ You can now republish your bot back to Azure. You need to zip your project folde
 > [!TIP]
 > If your session token expired, run `az login` again. If you are not using your default subscription, also reset your subscription.
 
-[!INCLUDE [deploy code to Azure](~/includes/deploy/snippet-deploy-code-to-az.md)]
+[!INCLUDE [deploy code to Azure](../includes/deploy/snippet-deploy-code-to-az.md)]
 
 <!-- # [C#](#tab/csharp)
 ```cmd

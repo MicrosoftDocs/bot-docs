@@ -52,7 +52,7 @@ For more information about specific changes, see [differences between the v3 and
 
 > [!TIP]
 > If your project targets .NET Framework 4.6, you need to update it to 4.6.1 or later because **Bot.Builder.Community.Dialogs.Formflow** is a .NET Standard 2.0 library.
-> For more information, see [.NET implementation support](https://docs.microsoft.com/dotnet/standard/net-standard#net-implementation-support).
+> For more information, see [.NET implementation support](/dotnet/standard/net-standard#net-implementation-support).
 
 If you build at this point, you will get compiler errors. You can ignore these. Once we're finished with our conversion, we'll have working code.
 

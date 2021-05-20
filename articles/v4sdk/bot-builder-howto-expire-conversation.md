@@ -30,7 +30,7 @@ NOTE: in the future, provide guidance on an azure function queue or time trigger
 
 - If you don't have an Azure subscription, create a [free](https://azure.microsoft.com/free/) account before you begin.
 - Knowledge of [bot basics][concept-basics], [managing state][concept-state], and the [dialogs library][concept-dialogs].
-- A copy of the **multi-turn prompt** sample in either [**C#**][cs-sample], [**JavaScript**][js-sample], or [**Python**][python-sample].
+- A copy of the **multi-turn prompt** sample in either [**C#**][cs-sample], [**JavaScript**][js-sample], [**Java**][java-sample], or [**Python**][python-sample].
 
 ## About this sample
 
@@ -173,6 +173,74 @@ Lastly, update `index.js` to send the `ExpireAfterSeconds` parameter to `DialogB
 ```javascript
 const bot = new DialogBot(process.env.ExpireAfterSeconds, conversationState, userState, dialog);
 ```
+
+# [Java](#tab/java)
+
+**application.properties**
+
+First, add an `ExpireAfterSeconds` setting to application.properties:
+
+``` txt
+MicrosoftAppId=
+MicrosoftAppPassword=
+server.port=3978
+ExpireAfterSeconds=30
+```
+
+**DialogBot.java**
+
+Next, add `expireAfterSeconds`, `lastAccessedTimeProperty`, and `dialogStateProperty` fields to the bot class and initialize them in the bot's constructor. Also add a `Configuration` parameter to the constructor to retrieve the `ExpireAfterSeconds` value.
+
+Note that instead of creating the dialog state property accessor inline in the `onMessageActivity` method, you create and record it at initialization time. The bot will need the state property accessor not only to run the dialog, but also to clear the dialog state.
+
+```java
+    protected final int expireAfterSeconds;
+    protected final StatePropertyAccessor<LocalTime> lastAccessedTimeProperty;
+    protected final StatePropertyAccessor<DialogState> dialogStateProperty;
+
+// Existing fields omitted...
+
+    public DialogBot(
+        Configuration configuration,
+        ConversationState withConversationState,
+        UserState withUserState,
+        Dialog withDialog
+    ) {
+        dialog = withDialog;
+        conversationState = withConversationState;
+        userState = withUserState;
+
+        expireAfterSeconds = configuration.getProperty("ExpireAfterSeconds") != null ?
+                             Integer.parseInt(configuration.getProperty("ExpireAfterSeconds")) :
+                             30;
+        lastAccessedTimeProperty = conversationState.createProperty("LastAccessedTimeProperty");
+        dialogStateProperty = conversationState.createProperty("DialogStateProperty");
+
+    }
+```
+
+Finally, add code to the bot's `onTurn` method to clear the dialog state if the conversation is too old.
+
+```java
+    @Override
+    public CompletableFuture<Void> onTurn(
+        TurnContext turnContext
+    ) {
+        LocalTime lastAccess = lastAccessedTimeProperty.get(turnContext).join();
+        if (lastAccess != null 
+            && (java.time.temporal.ChronoUnit.SECONDS.between(lastAccess, LocalTime.now()) >= expireAfterSeconds)) {
+            turnContext.sendActivity("Welcome back!  Let's start over from the beginning.").join();
+            conversationState.clearState(turnContext).join();
+        }
+        return lastAccessedTimeProperty.set(turnContext, LocalTime.now()).thenCompose(setResult -> {
+            return super.onTurn(turnContext)
+            .thenCompose(result -> conversationState.saveChanges(turnContext))
+            // Save any state changes that might have occurred during the turn.
+            .thenCompose(result -> userState.saveChanges(turnContext));
+        });
+    }
+```
+
 
 ## [Python](#tab/python)
 
@@ -476,6 +544,126 @@ Finally, run npm install before starting your bot.
 npm install
 ```
 
+# [Java](#tab/java)
+
+Start with a fresh copy of the **multi-turn prompt** sample, and add the following dependencies to the pom.xml file:
+
+```xml
+<dependency>
+    <groupId>com.microsoft.bot</groupId>
+    <artifactId>bot-azure</artifactId>
+    <version>4.13.0</version>
+</dependency>
+    <dependency>
+    <groupId>com.azure</groupId>
+    <artifactId>azure-cosmos</artifactId>
+</dependency>
+```
+
+**application.properties**
+
+Update application.properties to include Cosmos DB storage options:
+
+```txt
+MicrosoftAppId=
+MicrosoftAppPassword=
+server.port=3978
+
+CosmosDbTimeToLive = 30
+CosmosDbEndpoint = <endpoint-for-your-cosmosdb-instance>
+CosmosDbAuthKey = <your-cosmosdb-auth-key>
+CosmosDbDatabaseId = <your-database-id>
+CosmosDbUserStateContainerId = <no-ttl-container-id>
+CosmosDbConversationStateContainerId = <ttl-container-id>
+```
+
+Notice the two ContainerIds, one for `UserState` and one for `ConversationState`.  This is because we are setting a default Time To Live on the `ConversationState` container, but not on `UserState`.
+
+**CosmosDbStorageInitializer.java**
+
+Next, create a `CosmosDbStorageInitializer` class, which will create the container with the configured Time To Live.
+
+```java
+package com.microsoft.bot.sample.multiturnprompt;
+
+import com.azure.cosmos.CosmosAsyncClient;
+import com.azure.cosmos.CosmosClientBuilder;
+import com.azure.cosmos.models.CosmosContainerProperties;
+import com.microsoft.bot.azure.CosmosDbPartitionedStorageOptions;
+import com.microsoft.bot.integration.Configuration;
+
+public class CosmosDbStorageInitializer {
+
+    final CosmosDbPartitionedStorageOptions storageOptions;
+    final int cosmosDbTimeToLive;
+
+    public CosmosDbStorageInitializer(Configuration configuration) {
+        storageOptions = new CosmosDbPartitionedStorageOptions();
+        storageOptions.setCosmosDbEndpoint(configuration.getProperty("CosmosDbEndpoint"));
+        storageOptions.setAuthKey(configuration.getProperty("CosmosDbAuthKey"));
+        storageOptions.setDatabaseId(configuration.getProperty("CosmosDbDatabaseId"));
+        storageOptions.setContainerId(configuration.getProperty("CosmosDbConversationStateContainerId"));
+        cosmosDbTimeToLive = configuration.getProperty("CosmosDbTimeToLive") != null
+                ? Integer.parseInt(configuration.getProperty("CosmosDbTimeToLive"))
+                : 30;
+    }
+
+    public void initialize() {
+
+        CosmosAsyncClient client = new CosmosClientBuilder().endpoint(storageOptions.getCosmosDbEndpoint())
+                .key(storageOptions.getAuthKey()).buildAsyncClient();
+
+        client.createDatabaseIfNotExists(storageOptions.getDatabaseId()).block();
+        CosmosContainerProperties cosmosContainerProperties = new CosmosContainerProperties(
+                storageOptions.getContainerId(), "/id");
+        cosmosContainerProperties.setDefaultTimeToLiveInSeconds(cosmosDbTimeToLive);
+        client.getDatabase(storageOptions.getDatabaseId()).createContainerIfNotExists(cosmosContainerProperties)
+                .block();
+        client.close();
+    }
+}
+
+```
+
+**Application.java**
+
+Lastly, update `Application.java` to use the storage initializer, and Cosmos Db for state:
+
+```java
+// Existing code omitted...
+
+@Override
+public ConversationState getConversationState(Storage storage) {
+    Configuration configuration = getConfiguration();
+    CosmosDbStorageInitializer initializer = new CosmosDbStorageInitializer(configuration);
+    initializer.initialize();
+
+    CosmosDbPartitionedStorageOptions storageOptions = new CosmosDbPartitionedStorageOptions();
+    storageOptions.setCosmosDbEndpoint(configuration.getProperty("CosmosDbEndpoint"));
+    storageOptions.setAuthKey(configuration.getProperty("CosmosDbAuthKey"));
+    storageOptions.setDatabaseId(configuration.getProperty("CosmosDbDatabaseId"));
+    storageOptions.setContainerId(configuration.getProperty("CosmosDbConversationStateContainerId"));
+    return new ConversationState(new CosmosDbPartitionedStorage(storageOptions));
+}
+
+/**
+ * Returns a UserState object. Default scope of Singleton.
+ *
+ * @param storage The Storage object to use.
+ * @return A UserState object.
+ */
+@Override
+public UserState getUserState(Storage storage) {
+    Configuration configuration = getConfiguration();
+    CosmosDbPartitionedStorageOptions storageOptions = new CosmosDbPartitionedStorageOptions();
+    storageOptions.setCosmosDbEndpoint(configuration.getProperty("CosmosDbEndpoint"));
+    storageOptions.setAuthKey(configuration.getProperty("CosmosDbAuthKey"));
+    storageOptions.setDatabaseId(configuration.getProperty("CosmosDbDatabaseId"));
+    storageOptions.setContainerId(configuration.getProperty("CosmosDbUserStateContainerId"));
+    return new UserState(new CosmosDbPartitionedStorage(storageOptions));
+}
+```
+
 ## [Python](#tab/python)
 
 Start with a fresh copy of the **multi-turn prompt** sample.
@@ -567,7 +755,8 @@ For more information, see [Configure time to live in Azure Cosmos DB][cosmos-ttl
 
 [cs-sample]: https://aka.ms/cs-multi-prompts-sample
 [js-sample]: https://aka.ms/js-multi-prompts-sample
+[java-sample]: https://aka.ms/java-multi-prompts-sample
 [python-sample]: https://aka.ms/python-multi-prompts-sample
 
-[cosmos-ttl]: https://docs.microsoft.com/azure/cosmos-db/how-to-time-to-live
+[cosmos-ttl]: /azure/cosmos-db/how-to-time-to-live
 [emulator-readme]: https://aka.ms/bot-framework-emulator-readme

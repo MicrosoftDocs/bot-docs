@@ -17,7 +17,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 Bots use adaptive expressions to evaluate the outcome of a condition based on runtime information available in memory to the dialog or the [Language Generation](bot-builder-concept-language-generation.md) system. These evaluations determine how your bot reacts to user input and other factors that impact bot functionality.
 
-Adaptive expressions address this core need by providing an adaptive expression language that can be used with the Bot Framework SDK and other conversational AI components, like [Bot Framework Composer](https://github.com/microsoft/BotFramework-Composer), [Language Generation](bot-builder-concept-language-generation.md), [Adaptive dialogs](bot-builder-adaptive-dialog-Introduction.md), and [Adaptive Cards templating](https://docs.microsoft.com/adaptive-cards/templating).
+Adaptive expressions address this core need by providing an adaptive expression language that can be used with the Bot Framework SDK and other conversational AI components, like [Bot Framework Composer](https://github.com/microsoft/BotFramework-Composer), [Language Generation](bot-builder-concept-language-generation.md), [Adaptive dialogs](bot-builder-adaptive-dialog-Introduction.md), and [Adaptive Cards templating](/adaptive-cards/templating).
 
 An adaptive expression can contain one or more explicit values, [prebuilt functions](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md), or custom functions. Consumers of adaptive expressions also have the capability to inject additional supported functions. For example, all language generation templates are available as functions as well as additional functions that are only available within that component's use of adaptive expressions.
 
@@ -98,7 +98,7 @@ Bot Framework Composer is an open-source visual authoring canvas for developers 
 
 The expression `(dialog.orderTotal + dialog.orderTax) > 50` adds the values of the properties `dialog.orderTotal` and `dialog.orderTax`, and evaluates to `True` if the sum is greater than 50 or `False` if the sum is 50 or less.
 
-Read [Conversation flow and memory](https://docs.microsoft.com/composer/concept-memory) for more information about how expressions are used in memory.
+Read [Conversation flow and memory](/composer/concept-memory) for more information about how expressions are used in memory.
 
 ## Language generation
 
@@ -120,7 +120,7 @@ Read the [using prebuilt function in variations](../file-format/bot-builder-lg-f
 
 ## Adaptive Cards templating
 
-[Adaptive Cards templating](https://docs.microsoft.com/adaptive-cards/templating/) can be used by developers of bots and other technologies to separate data from the layout in an Adaptive Card. Developers can provide [data inline](https://docs.microsoft.com/adaptive-cards/templating/language#option-a-inline-data) with the `AdaptiveCard` payload, or the more common approach of [separating the data from the template](https://docs.microsoft.com/adaptive-cards/templating/language#option-b-separating-the-template-from-the-data).
+[Adaptive Cards templating](/adaptive-cards/templating/) can be used by developers of bots and other technologies to separate data from the layout in an Adaptive Card. Developers can provide [data inline](/adaptive-cards/templating/language#option-a-inline-data) with the `AdaptiveCard` payload, or the more common approach of [separating the data from the template](/adaptive-cards/templating/language#option-b-separating-the-template-from-the-data).
 
 For example, say you have the following data:
 
@@ -152,15 +152,15 @@ And will result to the following object:
 }
 ```
 
-For more information and examples see the [adaptive cards templating documentation](https://docs.microsoft.com/adaptive-cards/templating/).
+For more information and examples see the [adaptive cards templating documentation](/adaptive-cards/templating/).
 
 ## Additional resources
 
 - [NuGet AdaptiveExpressions](https://www.nuget.org/packages/AdaptiveExpressions) package for C#
 - [npm adaptive-expressions](https://www.npmjs.com/package/adaptive-expressions) package for JavaScript
 - [Prebuilt functions](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md) supported by the adaptive expressions library
-- [C# API reference](https://docs.microsoft.com/dotnet/api/adaptiveexpressions)
-- [JavaScript API reference](https://docs.microsoft.com/javascript/api/adaptive-expressions)
+- [C# API reference](/dotnet/api/adaptiveexpressions)
+- [JavaScript API reference](/javascript/api/adaptive-expressions)
 
 [1]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#add
 [2]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#sub

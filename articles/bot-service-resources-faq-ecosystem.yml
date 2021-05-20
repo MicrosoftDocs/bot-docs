@@ -12,7 +12,7 @@ metadata:
 
 # Attention writers!!
 # - This article contains FAQs regarding Bot Framework Ecosystem.
-# - When you create a new FAQ, please add the related link to the proper section in bot-service-resources-bot-framework-faq.md.
+# - When you create a new FAQ, please add the related link to the proper section in bot-service-resources-bot-framework-faq.yml.
 
 title: Bot Framework Ecosystem Frequently Asked Questions # < 60 chars
 summary: |

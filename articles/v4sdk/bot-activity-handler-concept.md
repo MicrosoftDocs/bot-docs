@@ -41,6 +41,13 @@ Make sure to [save state](bot-builder-concept-state.md) before the turn ends. Yo
 There aren't any common situations where you will want to override the base turn handler, so be careful if you try to do so.
 There is a special handler called `onDialog`. The `onDialog` handler runs at the end, after the rest of the handlers have run, and is not tied to a certain activity type. As with all the above handlers, be sure to call `next()` to ensure the rest of the process wraps up.
 
+# [Java](#tab/java)
+
+To implement your logic for these handlers, you will override these methods in your bot, such as in the [sample activity handler](#sample-activity-handler) section below. There is no base implementation for each of these handlers, so add the logic you want in your override.
+
+There are certain situations where you will want to override the base turn handler, such as [saving state](bot-builder-concept-state.md) at the end of a turn. When doing so, be sure first to call `super.onTurn(turnContext);` to make sure the base implementation of `onTurn` is run before your additional code. That base implementation is, among other things, responsible for calling the rest of the activity handlers such as `onMessageActivity`.
+
+
 # [Python](#tab/python)
 
 When building your bot, your bot logic for handling and responding to messages will go in this `on_message_activity` handler. Likewise, your logic for handling members being added to the conversation will go in your `on_members_added` handler, which is called whenever a member is added to the conversation.
@@ -114,6 +121,38 @@ Use these methods to register listeners for each type of event:
 
 Call the `next` continuation function from each handler to allow processing to continue. If `next` is not called, processing of the activity ends.
 
+### [Java](#tab/java)
+
+The main bot logic is defined in the bot code. To implement a bot as an activity handler, derive your bot class from `ActivityHandler`, which implements the `Bot` interface. `ActivityHandler` defines various handlers for different types of activities, such as `onMessageActivity`, and `onMembersAdded`. These methods are protected, but can be overridden, since we're deriving from `ActivityHandler`.
+
+The handlers defined in `ActivityHandler` are:
+
+| Event | Handler | Description |
+| :-- | :-- | :-- |
+| Any activity type received | `onTurn` | Calls one of the other handlers, based on the type of activity received. |
+| Message activity received | `onMessageActivity` | Override this to handle a `message` activity. |
+| Conversation update activity received | `onConversationUpdateActivity` | On a `conversationUpdate` activity, calls a handler if members other than the bot joined or left the conversation. |
+| Non-bot members joined the conversation | `onMembersAdded` | Override this to handle members joining a conversation. |
+| Non-bot members left the conversation | `onMembersRemoved` | Override this to handle members leaving a conversation. |
+| Event activity received | `onEventActivity` | On an `event` activity, calls a handler specific to the event type. |
+| Token-response event activity received | `onTokenResponseEvent` | Override this to handle token response events. |
+| Non-token-response event activity received | `onEvent` | Override this to handle other types of events. |
+| Message reaction activity received | `onMessageReactionActivity` | On a `messageReaction` activity, calls a handler if one or more reactions were added or removed from a message. |
+| Message reactions added to a message | `onReactionsAdded` | Override this to handle reactions added to a message. |
+| Message reactions removed from a message | `onReactionsRemoved` | Override this to handle reactions removed from a message. |
+| Installation update activity received | `onInstallationUpdate` | On an `installationUpdate` activity, calls a handler based on whether the bot was installed or uninstalled. |
+| Bot installed | `onInstallationUpdateAdd` | Override this to add logic for when the bot is installed within an organizational unit. |
+| Bot uninstalled | `onInstallationUpdateRemove` | Override this to add logic for when the bot is uninstalled within an organizational unit. |
+| Other activity type received | `onUnrecognizedActivityType` | Override this to handle any activity type otherwise unhandled. |
+
+These different handlers have a `turnContext` that provides information about the incoming activity, which corresponds to the inbound HTTP request. Activities can be of various types, so each handler provides a strongly-typed activity in its turn context parameter; in most cases, `onMessageActivity` will always be handled, and is generally the most common.
+
+There is also the option to implement the public method `onTurn`. Currently, the base implementation of this method handles error checking and then calls each of the specific handlers (like the two we define in this sample) depending on the type of incoming activity. In most cases, you can leave that method alone and use the individual handlers, but if your situation requires a custom implementation of `onTurn`, it is still an option.
+
+> [!IMPORTANT]
+> If you do override the `onTurn` method, you'll need to call `super.onTurn` to get the base implementation to call all the other `on<activity>` handlers or call those handlers yourself. Otherwise, those handlers won't be called and that code won't be run.
+
+
 ### [Python](#tab/python)
 
 The main bot logic is defined in the bot code. To implement a bot as an activity handler, derive your bot class from `ActivityHandler`, which in turn derives from the abstract `Bot` class. `ActivityHandler` defines various handlers for different types of activities, such as `on_message_activity` and `on_members_added`. These methods are protected, but can be overridden, since we're deriving from `ActivityHandler`.
@@ -158,6 +197,10 @@ For example, you can handle _on members added_ to welcome users to a conversatio
 ### [JavaScript](#tab/javascript)
 
 [!code-javascript[JavaScript activity handler](~/../botbuilder-samples/samples/javascript_nodejs/02.echo-bot/bot.js?range=6-29)]
+
+### [Java](#tab/java)
+
+[!code-java[Java activity handler](~/../botbuilder-samples/samples/java_springboot/02.echo-bot/src/main/java/com/microsoft/bot/sample/echo/EchoBot.java?range=25-47)]
 
 ### [Python](#tab/python)
 

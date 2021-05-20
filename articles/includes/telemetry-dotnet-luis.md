@@ -18,7 +18,7 @@ We will next implement telemetry functionality in your LUIS service. The LUIS se
             "https://" + configuration["LuisAPIHostName"]);
 
         // Set the recognizer options depending on which endpoint version you want to use.
-        // More details can be found in https://docs.microsoft.com/azure/cognitive-services/luis/luis-migration-api-v3
+        // More details can be found in /azure/cognitive-services/luis/luis-migration-api-v3
         var recognizerOptions = new LuisRecognizerOptionsV3(luisApplication)
         {
             TelemetryClient = telemetryClient,

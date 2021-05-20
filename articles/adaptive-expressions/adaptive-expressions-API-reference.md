@@ -19,5 +19,5 @@ monikerRange: 'azure-bot-service-4.0'
 
 Adaptive expressions are language-agnostic. API references are available for bot developers working with adaptive expressions in the following languages:
 
-- [C#](https://docs.microsoft.com/dotnet/api/adaptiveexpressions)
-- [JavaScript](https://docs.microsoft.com/javascript/api/adaptive-expressions)
+- [C#](/dotnet/api/adaptiveexpressions)
+- [JavaScript](/javascript/api/adaptive-expressions)

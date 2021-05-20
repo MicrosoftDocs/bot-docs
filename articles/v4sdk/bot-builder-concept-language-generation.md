@@ -157,8 +157,8 @@ The call `ExpandTemplate("TimeOfDayWithCondition", new { time = "evening" })` wi
 
 - See [.lg file format][3] for more information about .lg files.
 - Read [structured response templates](../language-generation/language-generation-structured-response-template.md) to learn more about complex templates.
-- [C# API Reference](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.languagegeneration)
-- [JavaScript API reference](https://docs.microsoft.com/javascript/api/botbuilder-lg)
+- [C# API Reference](/dotnet/api/microsoft.bot.builder.languagegeneration)
+- [JavaScript API reference](/javascript/api/botbuilder-lg)
 
 <!---
 ## Change Log
