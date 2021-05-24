@@ -226,7 +226,7 @@
     items:
     - name: Manage a bot
       href: bot-service-manage-overview.md
-    - name: Bot channels registration
+    - name: Register a bot with Azure
       href: bot-service-quickstart-registration.md
     - name: Bot analytics
       href: bot-service-manage-analytics.md
