@@ -48,8 +48,8 @@ how to [implement sequential conversation flow][simple-dialog], and how to [reus
 
 | Sample | BotBuilder version | Demonstrates |
 |:---|:---:|:---|
-| **Authentication** in [**C#**][cs-auth-sample] or [**JavaScript**][js-auth-sample] or  [**Python**][python-auth-sample] | v4 | OAuthCard support |
-| **Authentication MSGraph** in [**C#**][cs-msgraph-sample] or [**JavaScript**][js-msgraph-sample] or [**Python**](https://aka.ms/bot-auth-msgraph-python-sample-code)| v4 |  Microsoft Graph API support with OAuth 2 |
+| **Authentication** in [**C#**][cs-auth-sample] or [**JavaScript**][js-auth-sample] or [**Java**][java-auth-sample] or  [**Python**][python-auth-sample] | v4 | OAuthCard support |
+| **Authentication MSGraph** in [**C#**][cs-msgraph-sample] or [**JavaScript**][js-msgraph-sample] or [**Java**][java-msgraph-sample] or [**Python**](https://aka.ms/bot-auth-msgraph-python-sample-code)| v4 |  Microsoft Graph API support with OAuth 2 |
 
 ### About the samples
 
@@ -288,6 +288,18 @@ You will need your bot's app ID and password to complete this process.
 
     [!code-txt[.env](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/.env)]
 
+# [Java](#tab/java)
+
+<!-- TODO: Add guidance (once we have it) on how not to hard-code IDs and ABS auth. -->
+
+1. Clone from the github repository the sample you want to work with: [**Bot authentication**][java-auth-sample] or [**Bot authentication MSGraph**][java-msgraph-sample].
+1. Update **application.properties**:
+
+    - Set `ConnectionName` to the name of the OAuth connection setting you added to your bot.
+    - Set `MicrosoftAppId` and `MicrosoftAppPassword` to your bot's app ID and app secret.
+
+    [!code-json[application.properties](~/../botbuilder-samples/samples/java_springboot/18.bot-authentication/src/main/resources/application.properties)]
+
 # [Python](#tab/python)
 
 1. Clone the sample [**Bot authentication**][python-auth-sample] from the github repository.
@@ -406,6 +418,29 @@ Within the following dialog step, check for the presence of a token in the resul
 
 [!code-javascript[Get OAuthPrompt result](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/dialogs/mainDialog.js?range=62-63)]
 
+# [Java](#tab/java)
+
+![architecture java image](media/how-to-auth/architecture-java.png)
+
+<!-- Submit changes for line break issues -->
+<!-- The two authentication samples have nearly identical architecture. Using 18.bot-authentication for the sample code. -->
+
+**MainDialog.java**
+
+Add an OAuth prompt to **MainDialog** in its constructor. Here, the value for the connection name was retrieved from the **application.properties** file.
+
+[!code-java[Add OAuthPrompt](~/../botbuilder-samples/samples/java_springboot/18.bot-authentication/src/main/java/com/microsoft/bot/sample/authentication/MainDialog.java?range=26-32)]
+
+Within a dialog step, use `beginDialog` to start the OAuth prompt, which asks the user to sign in.
+
+- If the user is already signed in, this will generate a token response event, without prompting the user.
+- Otherwise, this will prompt the user to sign in. The Azure Bot Service sends the token response event after the user attempts to sign in.
+
+[!code-java[Use the OAuthPrompt](~/../botbuilder-samples/samples/java_springboot/18.bot-authentication/src/main/java/com/microsoft/bot/sample/authentication/MainDialog.java?range=84)]
+
+Within the following dialog step, check for the presence of a token in the result from the previous step. If it is not null, the user successfully signed in.
+
+[!code-java[Get the OAuthPrompt result](~/../botbuilder-samples/samples/java_springboot/18.bot-authentication/src/main/java/com/microsoft/bot/sample/authentication/MainDialog.java?range=54-56)]
 # [Python](#tab/python)
 
 ![architecture python image](media/how-to-auth/architecture-python.png)
@@ -448,6 +483,13 @@ When you start an OAuth prompt, it waits for a token response event, from which 
 **AuthBot** derives from `ActivityHandler` and explicitly handles token response event activities. Here, we continue the active dialog, which allows the OAuth prompt to process the event and retrieve the token.
 
 [!code-javascript[onTokenResponseEvent](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/bots/authBot.js?range=29-31)]
+# [Java](#tab/java)
+
+**AuthBot.java**
+
+**AuthBot** derives from `Dialog` and explicitly handles token response event activities. Here, we continue the active dialog, which allows the OAuth prompt to process the event and retrieve the token.
+
+[!code-java[OnTokenResponseEvent](~/../botbuilder-samples/samples/java_springboot/18.bot-authentication/src/main/java/com/microsoft/bot/sample/authentication/AuthBot.java?range=44-50)]
 
 # [Python](#tab/python)
 
@@ -475,6 +517,11 @@ It is best practice to let users explicitly sign out or logout, instead of relyi
 
 [!code-javascript[Allow logout](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/dialogs/logoutDialog.js?range=31-42&highlight=7)]
 
+# [Java](#tab/java)
+
+**LogoutDialog.java**
+
+[!code-java[Allow logout](~/../botbuilder-samples/samples/java_springboot/18.bot-authentication/src/main/java/com/microsoft/bot/sample/authentication/LogoutDialog.java?range=49-67&highlight=8-13)]
 # [Python](#tab/python)
 
 **dialogs/logout_dialog.py**
@@ -485,7 +532,7 @@ It is best practice to let users explicitly sign out or logout, instead of relyi
 
 ### Adding Teams Authentication
 
-Teams behaves somewhat differently than other channels in regards to OAuth and requires a few changes to properly implement authentication. We will add code from the Teams Authentication Bot sample ([C#][cs-teams-auth-sample]/[JavaScript][js-teams-auth-sample]).
+Teams behaves somewhat differently than other channels in regards to OAuth and requires a few changes to properly implement authentication. We will add code from the Teams Authentication Bot sample ([C#][cs-teams-auth-sample]/[JavaScript][js-teams-auth-sample]/[Java][java-teams-auth-sample]).
 
 One difference between other channels and Teams is that Teams sends an *invoke* activity to the bot, rather than an *event* activity.
 
@@ -500,6 +547,11 @@ One difference between other channels and Teams is that Teams sends an *invoke* 
 **bots/teamsBot.js**
 
 [!code-javascript[Invoke Activity](~/../botbuilder-samples/samples/javascript_nodejs/46.teams-auth/bots/teamsBot.js?range=16-25&highlight=1)]
+# [Java](#tab/java)
+
+**TeamsBot.java**
+
+[!code-java[Invoke Activity](~/../botbuilder-samples/samples/java_springboot/46.teams-auth/src/main/java/com/microsoft/bot/sample/teamsauth/TeamsBot.java?range=46-54&highlight=2)]
 
 # [Python](#tab/python)
 
@@ -520,6 +572,11 @@ If you use an *OAuth prompt*, this invoke activity must be forwarded to the dial
 **Bots/dialogBot.js**
 
 [!code-javascript[Dialogs Handler](~/../botbuilder-samples/samples/javascript_nodejs/46.teams-auth/bots/dialogBot.js?range=6)]
+# [java](#tab/java)
+
+**DialogBot.java**
+
+[!code-java[Dialogs Handler](~/../botbuilder-samples/samples/java_springboot/46.teams-auth/src/main/java/com/microsoft/bot/sample/teamsauth/DialogBot.java?range=25)]
 
 # [Python](#tab/python)
 
@@ -555,10 +612,13 @@ The `TeamsActivityHandler` also sends *message reaction* activities. A message r
 
 [cs-auth-sample]: https://aka.ms/v4cs-bot-auth-sample
 [js-auth-sample]: https://aka.ms/v4js-bot-auth-sample
+[java-auth-sample]: https://aka.ms/v4java-bot-auth-sample
 [python-auth-sample]: https://aka.ms/bot-auth-python-sample-code
 
 [cs-msgraph-sample]: https://aka.ms/v4cs-auth-msgraph-sample
 [js-msgraph-sample]: https://aka.ms/v4js-auth-msgraph-sample
+[java-msgraph-sample]: https://aka.ms/v4java-auth-msgraph-sample
 [cs-teams-auth-sample]:https://aka.ms/cs-teams-auth-sample
 [js-teams-auth-sample]:https://aka.ms/js-teams-auth-sample
+[java-teams-auth-sample]:https://aka.ms/java-teams-auth-sample
 [teams-activity-feed]:/microsoftteams/platform/concepts/activity-feed
