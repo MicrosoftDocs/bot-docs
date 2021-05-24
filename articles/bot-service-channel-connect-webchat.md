@@ -2,12 +2,12 @@
 title: Connect a bot to the Web Chat channel - Bot Service
 description: Learn how to use the web chat control in your web page for a bot connected to the Web Chat channel.
 keywords: web chat, bot channel, web page, secret key, iframe, HTML
-author: RobStand
+author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 08/22/2019
+ms.date: 05/21/2021
 ---
 
 # Connect a bot to Web Chat
@@ -71,7 +71,7 @@ To exchange your secret for a token and generate the embed:
 
 ##### Example request
 
-```
+```http
 requestGET https://webchat.botframework.com/api/tokens
 Authorization: BotConnector YOUR_SECRET_HERE
 ```
@@ -79,7 +79,7 @@ Authorization: BotConnector YOUR_SECRET_HERE
 > [!NOTE]
 > Please note that for Azure Government, the token exchange URL is different.
 
-```
+```http
 requestGET https://webchat.botframework.azure.us/api/tokens
 Authorization: BotConnector YOUR_SECRET_HERE
 ```
@@ -128,10 +128,11 @@ Authorization: BotConnector YOUR_SECRET_HERE
 
   </script>
 </html>
-
 ```
 
-#### <a id="option-2"></a> Option 2 - Embed the web chat control in your website using the secret
+<a id="option-2"></a>
+
+#### Option 2 - Embed the web chat control in your website using the secret
 
 Use this option if you want to allow other developers to easily embed your bot into their websites.
 
@@ -226,13 +227,13 @@ The following client web page shows how to use a token with the Web Chat. If you
 For examples on how to generate a token, see:
 
 - [Single sign-on demo](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/07.advanced-web-chat-apps/e.sso-on-behalf-of-authentication)
-- [Direct Line token](https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/DirectLineTokenSite)
+- [Direct Line token](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/01.getting-started/k.direct-line-token)
 
 ## Additional resources
 
-- [Web Chat overview](~/v4sdk/bot-builder-webchat-overview.md)
-- [Web Chat customization](~/v4sdk/bot-builder-webchat-customization.md)
-- [Enable speech in Web Chat](~/bot-service-channel-connect-webchat-speech.md)
-- [Use Web Chat with the direct line app service extension](~/bot-service-channel-directline-extension-webchat-client.md)
-- [Connect a bot to Direct Line Speech](~/bot-service-channel-connect-directlinespeech.md)
-- [Add single sign on to Web Chat](~/v4sdk/bot-builder-webchat-sso.md)
+- [Web Chat overview](./v4sdk/bot-builder-webchat-overview.md)
+- [Web Chat customization](./v4sdk/bot-builder-webchat-customization.md)
+- [Enable speech in Web Chat](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/03.speech/a.direct-line-speech)
+- [Use Web Chat with the Direct Line App Service Extension](./bot-service-channel-directline-extension-webchat-client.md)
+- [Connect a bot to Direct Line Speech](./bot-service-channel-connect-directlinespeech.md)
+- [Add single sign-on to Web Chat](./v4sdk/bot-builder-webchat-sso.md)
