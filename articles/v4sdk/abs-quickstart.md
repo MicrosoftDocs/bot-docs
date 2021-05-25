@@ -7,24 +7,22 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 04/21/2021
+ms.date: 05/24/2021
 ---
 
 # Create a bot with Azure Bot Service
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-This topic shows how to create the **Azure Bot** resource, which provides the infrastructure to build a bot. Once you have created the resource, you can then build your bot. 
+This topic shows how to create the **Azure Bot** resource, which provides the infrastructure to build a bot. Once you have created the resource, you can then build your bot.
 
 [!INCLUDE [composer sdk tip](../includes/azure-bot-resource/composer-tip.md)]
-
 
 ## Prerequisites
 
 - [Azure](https://portal.azure.com) account
 
 [!INCLUDE [azure bot resource](../includes/azure-bot-resource/azure-bot-resource.md)]
-
 
 <!-- Replaced by the previous include 
 ### Create a new bot service
@@ -98,4 +96,4 @@ See [FAQ - App Registration](../bot-service-resources-faq-azure.yml#how-do-i-cre
 
 ## Next steps
 
-After you download the code, you can continue to develop the bot locally on your machine. Once you test your bot and are ready to upload the bot code to the Azure portal, follow the instructions listed under [set up continuos deployment](../bot-service-build-continuous-deployment.md) topic to automatically update code after you make changes.
+After you download the code, you can continue to develop the bot locally on your machine. Once you test your bot and are ready to upload the bot code to the Azure portal, follow the instructions listed under [set up continuous deployment](../bot-service-build-continuous-deployment.md) topic to automatically update code after you make changes.
