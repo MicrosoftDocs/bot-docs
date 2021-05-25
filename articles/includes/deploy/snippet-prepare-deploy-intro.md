@@ -20,7 +20,7 @@ With the release of Bot Framework SDK 4.3, we have _deprecated_ the use of a .bo
 
 # [Java](#tab/java)
 
-When you create a bot using a [Yeoman template](../../javascript/bot-builder-javascript-quickstart.md), the source code generated includes a `deploymentTemplates` folder that contains ARM templates. The deployment process documented here uses one of the ARM templates to provision required resources for the bot in Azure by using the Azure CLI.
+When you create a bot using a [Yeoman template](../../java/bot-builder-java-quickstart.md), the source code generated includes a `deploymentTemplates` folder that contains ARM templates. The deployment process documented here uses one of the ARM templates to provision required resources for the bot in Azure by using the Azure CLI.
 
 # [Python](#tab/python)
 
