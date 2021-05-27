@@ -25,10 +25,10 @@ sections:
     questions:
       - question: How do I create my own App Registration?
         answer: |
-          You create your own **App Registration** in cases like these:
+          You might create your own **App Registration** when:
 
-          - You created your bot in the [Bot Framework portal](https://dev.botframework.com/bots/new).
-          - You are unable to create an app registration in your organization and need another party to create the App ID for the bot you're building.
+          - You create your bot in the [Bot Framework portal](https://dev.botframework.com/bots/new).
+          - You create the app registration for a third party that does not have access to Azure.
           - You need to manually create your own App ID (and password).
 
           Follow the steps described below.
