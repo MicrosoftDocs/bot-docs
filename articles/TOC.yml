@@ -48,6 +48,8 @@
       href: v4sdk/bot-builder-concept-authentication.md
     - name: Identity providers
       href: v4sdk/bot-builder-concept-identity-providers.md
+    - name: Identity providers proxy
+      href: v4sdk/bot-builder-concept-identity-providers-proxy.md
     - name: Single sign on
       href: v4sdk/bot-builder-concept-sso.md
     - name: Add authentication to a bot
