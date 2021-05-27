@@ -334,13 +334,13 @@
   - name: v4 SDK reference
     items:
     - name: .NET SDK v4
-      href: https://aka.ms/botframework-v4-cs-sdk
+      href: /dotnet/api/?view=botbuilder-dotnet-stable&preserve-view=true
     - name: JavaScript SDK v4
-      href: https://aka.ms/bot-jssdk-v4
-    - name: Java SDK v4 (preview)
-      href: https://aka.ms/botframework-v4-java-sdk
+      href: /javascript/api/?view=botbuilder-ts-latest&preserve-view=true
+    - name: Java SDK v4
+      href: /java/api/?view=botbuilder-java&preserve-view=true
     - name: Python SDK v4
-      href: https://aka.ms/botframework-v4-python-sdk
+      href: /python/api/?view=botbuilder-py-latest&preserve-view=true
   - name: REST API reference
     items:
     - name: Bot Framework REST API
