@@ -76,19 +76,19 @@ tools:
     - title: C#
       # imageSrc should be square in ratio with no whitespace
       imageSrc: ./media/logos/logo-csharp.svg
-      url: https://aka.ms/botframework-v4-cs-sdk
+      url: /dotnet/api/?view=botbuilder-dotnet-stable
     # Card
     - title: JavaScript/TypeScript
       imageSrc: ./media/logos/logo-js.svg
-      url: https://aka.ms/bot-jssdk-v4
+      url: /javascript/api/?view=botbuilder-ts-latest
     # Card
     - title: Python
       imageSrc: ./media/logos/logo-python.svg
-      url: https://aka.ms/botframework-v4-python-sdk
+      url: /python/api/?view=botbuilder-py-latest
     # Card
-    - title: Java (preview)
+    - title: Java
       imageSrc: ./media/logos/logo-java.svg
-      url: https://docs.microsoft.com/java/api/?view=botbuilder-java-preview
+      url: /java/api/?view=botbuilder-java
 
 additionalContent:
   # Supports up to 3 sections

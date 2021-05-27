@@ -297,12 +297,12 @@ JWT parsing libraries are available for many platforms and most implement secure
 When parsing the token, you must configure the parsing library or write your own validation to ensure the token meets these requirements:
 
 1. The token was sent in the HTTP `Authorization` header with "Bearer" scheme.
-2. The token is valid JSON that conforms to the [JWT standard](http://openid.net/specs/draft-jones-json-web-token-07.html).
-3. The token contains an "issuer" claim with value of `https://sts.windows.net/d6d49420-f39b-4df7-a1dc-d59a935871db/` or `https://sts.windows.net/f8cdef31-a31e-4b4a-93e4-5f571e91255a/`. (Checking for both issuer values will ensure you are checking for both the security protocol v3.1 and v3.2 issuer values)
-4. The token contains an "audience" claim with a value equal to the bot's Microsoft App ID.
-5. The token contains an "appid" claim with the value equal to the bot's Microsoft App ID.
-6. The token is within its validity period. Industry-standard clock-skew is 5 minutes.
-7. The token has a valid cryptographic signature with a key listed in the OpenID keys document that was retrieved in [Step 3](#emulator-to-bot-step-3).
+1. The token is valid JSON that conforms to the [JWT standard](http://openid.net/specs/draft-jones-json-web-token-07.html).
+1. The token contains an "issuer" claim with one of the [highlighted values](https://github.com/microsoft/botbuilder-dotnet/blob/3c335046f95deeac50fbb0b48c7c8c42051d4f6d/libraries/Microsoft.Bot.Connector/Authentication/EmulatorValidation.cs#L28-L31) for non governmental cases. Checking for both issuer values will ensure you are checking for both the security protocol v3.1 and v3.2 issuer values.
+1. The token contains an "audience" claim with a value equal to the bot's Microsoft App ID.
+1. The Emulator, depending on the version, sends the AppId via either the appid claim (version 1) or the authorized party claim (version 2).
+1. The token is within its validity period. Industry-standard clock-skew is 5 minutes.
+1. The token has a valid cryptographic signature with a key listed in the OpenID keys document that was retrieved in [Step 3](#emulator-to-bot-step-3).
 
 > [!NOTE]
 > Requirement 5 is a specific to the Emulator verification path.
@@ -396,8 +396,12 @@ payload:
 
 | Protocol version | Valid value |
 |----|----|
-| v3.1 | `https://sts.windows.net/d6d49420-f39b-4df7-a1dc-d59a935871db/` |
-| v3.2 | `https://sts.windows.net/f8cdef31-a31e-4b4a-93e4-5f571e91255a/` |
+| v3.1  1.0| `https://sts.windows.net/d6d49420-f39b-4df7-a1dc-d59a935871db/` |
+| v3.1  2.0| `https://login.microsoftonline.com/d6d49420-f39b-4df7-a1dc-d59a935871db/v2.0`|
+| v3.2  1.0| `https://sts.windows.net/f8cdef31-a31e-4b4a-93e4-5f571e91255a/` |
+| v3.2  2.0| `https://login.microsoftonline.com/f8cdef31-a31e-4b4a-93e4-5f571e91255a/v2.0`|
+
+See also the [highlighted values](https://github.com/microsoft/botbuilder-dotnet/blob/3c335046f95deeac50fbb0b48c7c8c42051d4f6d/libraries/Microsoft.Bot.Connector/Authentication/EmulatorValidation.cs#L28-L31) for non governmental cases. 
 
 #### OpenID metadata document
 
