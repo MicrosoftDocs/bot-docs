@@ -6,7 +6,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: overview
 ms.service: bot-service
-ms.date: 03/04/2021
+ms.date: 06/01/2021
 ---
 
 # How Microsoft Teams bots work
@@ -65,6 +65,15 @@ To implement your logic for these Teams-specific activity handlers, you will ove
 ## Teams-bot logic
 
 The bot logic processes incoming activities from one or more of your bots channels and generates outgoing activities in response.  This is still true of bot derived from the Teams activity handler class, which first checks for Teams activities, then passes all other activities to the Bot Framework's activity handler.
+
+### Teams installation update activities
+
+Add a handler for the _installation update_ event to let your bot:
+
+- Send an introductory message when it is installed on a conversation thread.
+- Clean up user and thread data whit it is uninstalled from a thread.
+
+See [Installation update event](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#installation-update-event) in the Teams docs for more information.
 
 ### Teams conversation update activities
 
