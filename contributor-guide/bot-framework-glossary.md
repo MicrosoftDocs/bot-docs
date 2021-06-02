@@ -108,6 +108,16 @@ Don't use. See [Azure Bot Service](#azure-bot-service).
 - **Notes**: Many things that could create an event are called an action, so always clarify 1) what category of action you're talking about, and 2) as applicable, what type of action within that category. For this same reason, don't casually call something an action that hasn't been defined specifically as one.
 - **See also**: [card action](#card-action), [event](#event), [skill](#skill).
 
+## actionable
+
+- **Status**: In general, don't use; however.
+- **See also**: [Outlook Actionable Messages](#outlook-actionable-messages)
+
+## actionable message
+
+- **Status**: Approved, in context.
+- **See also**: [Outlook Actionable Messages](#outlook-actionable-messages)
+
 ## activity
 
 - **Status**: Informal, part of the Bot Framework protocol and SDK.
@@ -579,6 +589,31 @@ For individual flavors of the SDK, append _for \<environment>_, to match the [Az
 
 <a id="n"></a>
 <a id="o"></a>
+
+<a id="outlook-actionable-message"></a>
+<a id="outlook-actionable-messages"></a>
+
+## [Outlook] Actionable Messages
+
+- **Status**: Approved, but not in the style guide yet.
+- **Definition**: The feature that allows users to create and interact with actionable message cards.
+- **Notes**: Always qualify on first use, even when talking about an instance of such a message.
+- **Forms**:  
+  |Form|Notes|
+  |:--|:--|
+  | Actionable Messages | The Outlook feature. |
+  | actionable messages | Instances of the feature, as in a collection of such messages. |
+  | actionable message | An instance of the feature. |
+  | the Outlook Actionable Message channel | Azure connector support for such messages as a channel. Proper form still TBD. |
+  | Outlook Actionable Message cards | An Adaptive Card format that contains Outlook-specific support for Actionable Messages. |
+  | Actionable Message cards | ditto. |
+  | actionable message card | An instance of an Adaptive Card that includes Outlook-specific Adaptive Card properties or features. |
+- **See**:
+  - [Designing Outlook Actionable Message cards with the Adaptive Card format](https://docs.microsoft.com/outlook/actionable-messages/adaptive-card)
+  - [Adaptive Cards for Outlook Actionable Message Developers](https://docs.microsoft.com/en-us/adaptive-cards/getting-started/outlook)
+  - Adaptive Cards: [Universal Action Model](https://docs.microsoft.com/en-us/adaptive-cards/authoring-cards/universal-action-model)
+  - Adaptive Cards Schema Explorer: [Action.Execute](https://adaptivecards.io/explorer/Action.Execute.html)
+
 <a id="p"></a>
 
 ## package
