@@ -439,14 +439,14 @@
     items:
     - name: API reference
       href: language-generation/language-generation-API-reference.md
-    - name: .lg file format
-      href: file-format/bot-builder-lg-file-format.md
     - name: Structured response template
       href: language-generation/language-generation-structured-response-template.md
     - name: Functions injected from LG
       href: language-generation/functions-injected-from-language-generation.md
   - name: File formats
     items:
+    - name: .lg file format
+      href: file-format/bot-builder-lg-file-format.md
     - name: .lu file format
       href: file-format/bot-builder-lu-file-format.md
     - name: .qna file format
