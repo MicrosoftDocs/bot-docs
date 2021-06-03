@@ -20,8 +20,7 @@
         "NetNamespace": "Content",
         "NetMember": "Content",
         "NetType": "Content",
-        "RestApi": "Content",
-        "ZonePivotGroups": "Toc"
+        "RestApi": "Content"
       },
       "build_entry_point": "docs",
       "template_folder": "_themes",

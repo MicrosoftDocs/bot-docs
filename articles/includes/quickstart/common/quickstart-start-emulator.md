@@ -8,11 +8,11 @@
 
    <!--This is the same process in the Emulator for all three languages.-->
 
-    :::image type="content" source="~/media/quickstart/emulator-open-bot.png" alt-text="open a bot":::
+    :::image type="content" source="../../../media/quickstart/emulator-open-bot.png" alt-text="open a bot":::
 
 1. Then select **Connect**.
 
    Send a message to your bot, and the bot will respond back.
 
-    :::image type="content" source="~/media/quickstart/emulator-hello-echo.png" alt-text="echo message":::
+    :::image type="content" source="../../../media/quickstart/emulator-hello-echo.png" alt-text="echo message":::
 

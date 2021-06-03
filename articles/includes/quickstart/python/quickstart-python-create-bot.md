@@ -9,6 +9,6 @@ cookiecutter https://github.com/microsoft/BotBuilder-Samples/releases/download/T
 
 This command copies all needed files from GitHub to create an Echo Bot based on the Python [echo template][echo-template]. You will be prompted for the *name* of the bot and a *description*. Name your bot **echo-bot** and set the description to **A bot that echoes back user response.** as shown below:
 
-![set name and description](~/media/python/quickstart/set-name-description.png)
+![set name and description](../../../media/python/quickstart/set-name-description.png)
 
 [echo-template]: https://github.com/microsoft/BotBuilder-Samples/tree/master/generators/python/app/templates/echo
