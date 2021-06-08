@@ -194,7 +194,7 @@ class EchoBot extends ActivityHandler {
     constructor(myStorage) {
         super();
         this.storage = myStorage;
-        // See https://aka.ms/about-bot-activity-message to learn more about the message and other activity types.
+        // See https://docs.microsoft.com/azure/bot-service/bot-builder-basics to learn more about the message and other activity types.
         this.onMessage(async turnContext => { console.log('this gets called (message)');
         await turnContext.sendActivity(`You said '${ turnContext.activity.text }'`);
         // Save updated utterance inputs.

@@ -79,7 +79,7 @@ Edit **./index.js**, which is the entry point for our bot app. This will contain
 
     ```javascript
     // Import required bot services.
-    // See https://aka.ms/bot-services to learn more about the different parts of a bot.
+    // See https://docs.microsoft.com/azure/bot-service/bot-builder-basics to learn more about the different parts of a bot.
     const { BotFrameworkAdapter, MemoryStorage, ConversationState } = require('botbuilder');
 
     // This bot's main dialog.
