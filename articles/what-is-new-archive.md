@@ -355,7 +355,7 @@ This article summarizes key new features and improvements in Bot Framework and A
 
 ### Bot Framework Channels
 
-- [Direct Line Speech (public preview)](https://aka.ms/streaming-extensions) | [docs](directline-speech-bot.md): Bot Framework and Microsoft's Speech Services provide a channel that enables streamed speech and text bi-directionally from the client to the bot application using WebSockets.
+- [Direct Line Speech (public preview)](https://www.nuget.org/packages/Microsoft.Bot.Builder.StreamingExtensions/4.5.0-preview1) | [docs](directline-speech-bot.md): Bot Framework and Microsoft's Speech Services provide a channel that enables streamed speech and text bi-directionally from the client to the bot application using WebSockets.
 
 - [Direct Line App Service Extension (public preview)](https://portal.azure.com) | [docs](https://aka.ms/directline-ase): A version of Direct Line
 that allows clients to connect directly to bots using the Direct Line API. This offers many benefits, including increased performance and more isolation. Direct Line App Service Extension is available on all Azure App Services, including those hosted within an Azure App Service Environment. An Azure App Service Environment provides isolation and is ideal for working within a VNet. A VNet lets you create your own private space in Azure and is crucial to your cloud network as it offers isolation, segmentation, and other key benefits.
@@ -367,7 +367,7 @@ Adaptive Dialog now allow developers to dynamically update conversation flow bas
 - [Bot Framework Python SDK (preview 2)](https://github.com/microsoft/botbuilder-python) | [samples](https://github.com/Microsoft/botbuilder-python/tree/master/samples): The Python SDK now supports OAuth, Prompts, CosmosDB, and includes all major functionality in SDK 4.5. Plus, samples to help you learn about the new features in the SDK.
 
 ### Bot Framework Testing
-- [Docs](./v4sdk/unit-test-bots.md) | Unit testing packages ([C#](https://aka.ms/nuget-botbuilder-testing)/ [JavaScript](https://aka.ms/npm-botbuilder-testing)) | [C# sample](https://aka.ms/cs-core-test-sample) | [JS sample](https://aka.ms/js-core-test-sample): Addressing customers' and developers' ask for better testing tools, the July version of the SDK introduces a new unit testing capability. The Microsoft.Bot.Builder.testing package simplifies the process of unit testing dialogs in your bot.
+- [Docs](./v4sdk/unit-test-bots.md) | Unit testing packages ([C#](https://www.nuget.org/packages/Microsoft.Bot.Builder.Testing/)/ [JavaScript](https://www.npmjs.com/package/botbuilder-testing)) | [C# sample](https://aka.ms/cs-core-test-sample) | [JS sample](https://aka.ms/js-core-test-sample): Addressing customers' and developers' ask for better testing tools, the July version of the SDK introduces a new unit testing capability. The Microsoft.Bot.Builder.testing package simplifies the process of unit testing dialogs in your bot.
 
 - [Channel Testing](https://github.com/Microsoft/BotFramework-Emulator/releases) | [docs](bot-service-debug-inspection-middleware.md):
 

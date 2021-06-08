@@ -10,9 +10,9 @@ bot-builder-tutorial-create-basic-bot.md and bot-builder-dotnet-sdk-quickstart.m
 # [Visual Studio](#tab/vs)
 
 - [Visual Studio 2019 or later](https://www.visualstudio.com/downloads)
-- [Bot Framework v4 SDK Templates for Visual Studio](https://aka.ms/bot-vsix)
+- [Bot Framework v4 SDK Templates for Visual Studio](https://marketplace.visualstudio.com/items?itemName=BotBuilder.botbuilderv4)
 
-To add the bot templates to Visual Studio, download and install the [Bot Framework v4 SDK Templates for Visual Studio](https://aka.ms/bot-vsix) VSIX file.
+To add the bot templates to Visual Studio, download and install the [Bot Framework v4 SDK Templates for Visual Studio](https://marketplace.visualstudio.com/items?itemName=BotBuilder.botbuilderv4) VSIX file.
 
 [!INCLUDE [.NET VSIX templates info](../../../includes/vsix-templates-versions.md)]
 

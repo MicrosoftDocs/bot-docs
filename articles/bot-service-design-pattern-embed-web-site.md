@@ -31,7 +31,7 @@ the Skype web control and an open source web control.
 > As of October 31, 2019 the Skype channel no longer accepts new Bot publishing requests. This means that you can continue to develop bots using the Skype channel, but your bot will be limited to 100 users. You will not be able to publish your bot to a larger audience. Current Skype bots will continue to run uninterrupted. Read more about [why some features are not available in Skype anymore](https://support.skype.com/faq/fa12091/why-are-some-features-not-available-in-skype-anymore).
 
 
-The [Skype web control](https://aka.ms/bot-skype-web-control) is essentially a Skype client in a web-enabled control. Built-in Skype authentication enables the bot to authenticate and recognize users, without requiring the
+The [Skype web control](https://dev.skype.com/webcontrol) is essentially a Skype client in a web-enabled control. Built-in Skype authentication enables the bot to authenticate and recognize users, without requiring the
 developer to write any custom code. Skype will automatically recognize Microsoft Accounts used in its web client.
 
 Because the Skype web control simply acts as a front-end for Skype,

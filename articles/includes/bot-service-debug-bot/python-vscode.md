@@ -2,7 +2,7 @@
 
 In Visual Studio Code, you can set breakpoints and run the bot in debug mode to step through your code. See also [Create a bot with the Bot Framework SDK for Python](~/python/bot-builder-python-quickstart.md).
 
-1. Install the [Python extension](https://aka.ms/vscode-python-extension) in VS Code if you have not already done so. This extension provides rich support for Python in VS Code, including debugging.
+1. Install the [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python) in VS Code if you have not already done so. This extension provides rich support for Python in VS Code, including debugging.
 1. Launch VS Code and open your bot project folder.
 1. Set breakpoints as necessary. You can set breakpoints by hovering your mouse over the column to the left of the line numbers. A small red dot will appear. If you click on the dot, the breakpoint is set. If you click the dot again, the breakpoint is removed.
 1. Select the `app.py`.

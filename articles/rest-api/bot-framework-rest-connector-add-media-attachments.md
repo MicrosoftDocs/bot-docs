@@ -46,7 +46,7 @@ Content-Type: application/json
     "attachments": [
         {
             "contentType": "image/png",
-            "contentUrl": "https://aka.ms/DuckOnARock",
+            "contentUrl": "https://www.publicdomainpictures.net/pictures/30000/t2/duck-on-a-rock.jpg",
             "name": "duck-on-a-rock.jpg"
         }
     ],

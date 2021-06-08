@@ -109,7 +109,7 @@ Content-Type: application/json
                 "text": "descriptive text goes here",
                 "images": [
                     {
-                        "url": "https://aka.ms/DuckOnARock",
+                        "url": "https://www.publicdomainpictures.net/pictures/30000/t2/duck-on-a-rock.jpg",
                         "alt": "picture of a duck",
                         "tap": {
                             "type": "playAudio",
@@ -126,7 +126,7 @@ Content-Type: application/json
                     {
                         "type": "openUrl",
                         "title": "Watch Video",
-                        "image": "https://aka.ms/DuckOnARock",
+                        "image": "https://www.publicdomainpictures.net/pictures/30000/t2/duck-on-a-rock.jpg",
                         "value": "url goes here of the duck in flight"
                     }
                 ]

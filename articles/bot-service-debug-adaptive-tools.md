@@ -17,7 +17,7 @@ Adaptive Tools has a variety of tools and settings that make it easy to debug, a
 
 ## Prerequisites
 
-- Install [Visual Studio Code](https://aka.ms/vscode-downloads).
+- Install [Visual Studio Code](https://code.visualstudio.com/download).
 - Install the [Bot Framework Emulator](https://aka.ms/Emulator-wiki-getting-started).
 - A bot with one or more of the following file types:
     - [.lg](file-format/bot-builder-lg-file-format.md)

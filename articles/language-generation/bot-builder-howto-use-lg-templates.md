@@ -136,7 +136,7 @@ For example, if `Destination` equals `null`, then the `PromptforDestinationCity`
 
 ## Create a cards template
 
-Language generation templates can use cards and media to create a richer conversational experience. In **welcomeCard.lg**, four templates are used to create the [Adaptive Card](https://aka.ms/msbot-adaptivecards) that displays when you first start the bot.
+Language generation templates can use cards and media to create a richer conversational experience. In **welcomeCard.lg**, four templates are used to create the [Adaptive Card](https://adaptivecards.io/) that displays when you first start the bot.
 
 `Adaptive Card` defines an Adaptive card JSON object:
 
