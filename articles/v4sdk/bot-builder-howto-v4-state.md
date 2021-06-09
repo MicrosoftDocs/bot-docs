@@ -20,7 +20,7 @@ A bot is inherently stateless. Once your bot is deployed, it may not run in the 
 ## Prerequisites
 
 - Knowledge of [bot basics](bot-builder-basics.md) and how bots [manage state](bot-builder-concept-state.md) is required.
-- The code in this article is based on the **State Management Bot sample**. You'll need a copy of the sample in either [C#](https://aka.ms/statebot-sample-cs), [JavaScript](https://aka.ms/statebot-sample-js), [Java](https://aka.ms/bot-state-java-sample-code) or [Python](https://aka.ms/bot-state-python-sample-code).
+- The code in this article is based on the **State Management Bot sample**. You'll need a copy of the sample in either [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/45.state-management), [JavaScript](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/45.state-management), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/45.state-management) or [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/45.state-management).
 
 ## About this sample
 
@@ -269,9 +269,9 @@ Before exiting each dialog turn, the bot uses the state management objects' `sav
 
 ## Test the bot
 
-Download and install the latest [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
+Download and install the latest [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md)
 
-1. Run the sample locally on your machine. If you need instructions, refer to the README file for [C# Sample](https://aka.ms/statebot-sample-cs) or [JS Sample](https://aka.ms/statebot-sample-js).
+1. Run the sample locally on your machine. If you need instructions, refer to the README file for [C# Sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/45.state-management) or [JS Sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/45.state-management).
 1. Use the Emulator to test the bot as shown below.
 
 ![test state bot sample](media/state-bot-testing-emulator.png)

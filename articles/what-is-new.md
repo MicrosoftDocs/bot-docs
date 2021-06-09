@@ -49,5 +49,5 @@ You can see previous announcements in the [archived information](what-is-new-arc
 [8]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/typescript_nodejs
 [9]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_es6
 [10]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_webapi
-[11a]: https://aka.ms/python-sample-repo
+[11a]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python
 [12]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot

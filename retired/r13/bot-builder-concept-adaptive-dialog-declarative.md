@@ -521,9 +521,9 @@ For additional information on using this command, see [bf dialog:verify][bf-dial
 [intelliSense]: /visualstudio/ide/using-intellisense
 [composer]: https://docs.microsoft.com/composer
 
-[dialog-commands]: https://aka.ms/botframework-cli#bf-dialog
-[bf-dialogverify-patterns]: https://aka.ms/botframework-cli#bf-dialogverify-patterns
-[bf-dialogmerge-patterns]: https://aka.ms/botframework-cli#bf-dialogmerge-patterns
+[dialog-commands]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-dialog
+[bf-dialogverify-patterns]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-dialogverify-patterns
+[bf-dialogmerge-patterns]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-dialogmerge-patterns
 
 [the-dialog-file-luis]: bot-builder-howto-bf-cli-deploy-luis.md#the-dialog-file
 [the-dialog-file-qnamaker]: bot-builder-howto-bf-cli-deploy-qna.md#the-dialog-file

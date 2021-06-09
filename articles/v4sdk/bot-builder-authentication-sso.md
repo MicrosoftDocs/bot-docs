@@ -229,7 +229,7 @@ Use the following for testing:
 
 ### Test using the Emulator
 
-If you have not done so already, install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme). See also [Debug with the Emulator](../bot-service-debug-emulator.md).
+If you have not done so already, install the [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md). See also [Debug with the Emulator](../bot-service-debug-emulator.md).
 
 In order for the bot sample login to work you must configure the Emulator
 as shown in [Configure the Emulator for authentication](../bot-service-debug-emulator.md#configure-the-emulator-for-authentication).
@@ -358,6 +358,6 @@ To see how the token exchange happens, please refer to the example shown below. 
 [component-dialogs]: bot-builder-compositcontrol.md
 
 [cs-auth-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/sso-with-skills
-[js-auth-sample]: https://aka.ms/v4js-bot-auth-sample
-[python-auth-sample]: https://aka.ms/bot-auth-python-sample-code
+[js-auth-sample]: https://github.com/Microsoft/BotBuilder-Samples/blob/main/samples/javascript_nodejs/18.bot-authentication
+[python-auth-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/18.bot-authentication
 

@@ -194,4 +194,4 @@ In v3, Formflow was part of the C# SDK, but not part of the JavaScript SDK. It i
 [reuse-dialogs]: ../bot-builder-compositcontrol.md
 [interruptions]: ../bot-builder-howto-handle-user-interrupt.md
 
-[activity schema]: https://aka.ms/botSpecs-activitySchema
+[activity schema]: https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md

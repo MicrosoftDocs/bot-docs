@@ -186,7 +186,7 @@ The simple root bot consumes the 2 skills and lets you verify that the conversio
 
 ## Test the root bot
 
-Download and install the latest [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
+Download and install the latest [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md).
 
 1. Start all three bots locally on your machine.
 1. Use the Emulator to connect to the root bot.

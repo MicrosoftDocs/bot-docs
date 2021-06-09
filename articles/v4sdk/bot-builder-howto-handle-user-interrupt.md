@@ -279,7 +279,7 @@ For reference, here are the class definitions that are used in the call to creat
 
 ## To test the bot
 
-1. If you have not done so already, install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
+1. If you have not done so already, install the [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md).
 1. Run the sample locally on your machine.
 1. Start the Emulator, connect to your bot, and send messages as shown below.
 
@@ -306,7 +306,7 @@ For reference, here are the class definitions that are used in the call to creat
 [prompting]: bot-builder-prompts.md
 [component-dialogs]: bot-builder-compositcontrol.md
 
-[cs-sample]: https://aka.ms/cs-core-sample
-[js-sample]: https://aka.ms/js-core-sample
-[java-sample]: https://aka.ms/java-core-sample
-[python-sample]: https://aka.ms/bot-core-python-sample-code
+[cs-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot
+[js-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot
+[java-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/13.core-bot
+[python-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/13.core-bot

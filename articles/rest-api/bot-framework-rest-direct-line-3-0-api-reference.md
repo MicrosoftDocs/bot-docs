@@ -254,7 +254,7 @@ Clients may [send](bot-framework-rest-direct-line-3-0-send-activity.md) a single
 
 ## Additional resources
 
-- [Bot Framework Activity spec](https://aka.ms/botSpecs-activitySchema)
+- [Bot Framework Activity spec](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md)
 
 [Activity]: bot-framework-rest-connector-api-reference.md#activity-object
 [ChannelAccount]: bot-framework-rest-connector-api-reference.md#channelaccount-object

@@ -40,7 +40,7 @@ To enable the telemetry client in your LUIS recognizer:
     ```
     -->
 
-That's it; you should have a functional bot that logs telemetry data into Application insights. You can use the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme) to run your bot locally. You shouldn't see any changes in the bot's behavior, but it will be logging information into Application Insights. Interact with the bot by sending multiple messages, and the next section describes how to review the telemetry results in Application Insights.
+That's it; you should have a functional bot that logs telemetry data into Application insights. You can use the [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md) to run your bot locally. You shouldn't see any changes in the bot's behavior, but it will be logging information into Application Insights. Interact with the bot by sending multiple messages, and the next section describes how to review the telemetry results in Application Insights.
 
 For information on testing and debugging your bot, you can refer to the following articles:
 

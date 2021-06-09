@@ -160,4 +160,4 @@ if(context.activity.type === 'message'){
 
 --- -->
 
-Activities can be of several different types past the most common **message**. Explanations and further details on different activity types can be found in the [Bot Framework Activity schema](https://aka.ms/botSpecs-activitySchema).
+Activities can be of several different types past the most common **message**. Explanations and further details on different activity types can be found in the [Bot Framework Activity schema](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md).

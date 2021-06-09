@@ -25,7 +25,7 @@ For how to create a skill bot in general, see how to [implement a skill](skill-i
 - Knowledge of [bot basics](bot-builder-basics.md), [how skills bots work](skills-conceptual.md), and how to [implement a skill](skill-implement-skill.md).
 - An Azure subscription (to deploy your skill). If you don't have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 - Optionally, a [LUIS](https://www.luis.ai/) account. (For more information, see how to [add natural language understanding to your bot](bot-builder-howto-v4-luis.md).)
-- A copy of the **skills skillDialog** sample in [**C#**](https://aka.ms/skills-using-dialogs-cs), [**JavaScript**](https://aka.ms/skills-using-dialogs-js), [**Java**](https://aka.ms/skills-using-dialogs-java) or [**Python**](https://aka.ms/skills-using-dialogs-py).
+- A copy of the **skills skillDialog** sample in [**C#**](https://aka.ms/skills-using-dialogs-cs), [**JavaScript**](https://aka.ms/skills-using-dialogs-js), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/81.skills-skilldialog) or [**Python**](https://aka.ms/skills-using-dialogs-py).
 
 > [!NOTE]
 > Starting with version 4.11, you do not need an app ID and password to test a skill locally in the Emulator. An Azure subscription is still required to deploy your skill to Azure.
@@ -326,7 +326,7 @@ The latest schema version is [v2.1](https://schemas.botframework.com/schemas/ski
 
 You can test the skill in the Emulator with the skill consumer. To do so, you need to run both the skill and skill consumer bots at the same time. See how to [use a dialog to consume a skill](skill-use-skilldialog.md) for information on how to configure the skill.
 
-Download and install the latest [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
+Download and install the latest [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md).
 
 1. Run the dialog skill bot and dialog root bot locally on your machine. If you need instructions, refer to the README file for the  [C#](https://aka.ms/skills-using-dialogs-cs), [JavaScript](https://aka.ms/skills-using-dialogs-js) or [Python](https://aka.ms/skills-using-dialogs-py) sample.
 1. Use the Emulator to test the bot.

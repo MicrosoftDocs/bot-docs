@@ -43,7 +43,7 @@ For more information about specific changes, see [differences between the v3 and
 
 - Node.js
 - Visual Studio Code
-- [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
+- [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md)
 
 ## About this bot
 

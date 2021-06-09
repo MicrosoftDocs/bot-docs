@@ -7,7 +7,7 @@ The Consumption plan serverless C\# environment in Bot Service has more in commo
 Before you can debug your Consumption plan C# bot, you must complete these tasks.
 
 - Download the source code for your bot (from Azure), as described in [Set up continuous deployment](../../bot-service-build-continuous-deployment.md).
-- Download and install the [Bot Framework Emulator](https://aka.ms/Emulator-wiki-getting-started).
+- Download and install the [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md).
 - Install the <a href="https://www.npmjs.com/package/azure-functions-cli" target="_blank">Azure Functions CLI</a>.
 - Install the <a href="https://github.com/dotnet/cli" target="_blank">DotNet CLI</a>.
 

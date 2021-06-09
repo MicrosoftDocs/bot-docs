@@ -2,7 +2,7 @@
 bot-builder-tutorial-create-basic-bot.md and bot-builder-java-quickstart.md -->
 
 - Java 1.8 or later
-- [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
+- [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md)
 - [Visual Studio Code](https://www.visualstudio.com/downloads) or your favorite IDE, if you want to edit the bot code.
 - Install [Maven](https://maven.apache.org/)
 - Install [node.js](https://nodejs.org/) version 12.10 or later.

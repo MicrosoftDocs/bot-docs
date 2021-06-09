@@ -29,7 +29,7 @@ This article demonstrates how to implement a skill that echoes the user's input.
 
 - Knowledge of [bot basics](bot-builder-basics.md) and [skills](skills-conceptual.md).
 - An Azure subscription (to deploy your skill). If you don't have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
-- A copy of the **skills simple bot-to-bot** sample in [**C#**](https://aka.ms/skills-simple-bot-to-bot-csharp), [**JavaScript**](https://aka.ms/skills-simple-bot-to-bot-js) or [**Python**](https://aka.ms/skills-simple-bot-to-bot-python).
+- A copy of the **skills simple bot-to-bot** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/80.skills-simple-bot-to-bot) or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/80.skills-simple-bot-to-bot).
 
 > [!NOTE]
 > Starting with version 4.11, you do not need an app ID and password to test a skill locally in the Emulator. An Azure subscription is still required to deploy your skill to Azure.
@@ -285,9 +285,9 @@ The _skill manifest schema_ is a JSON file that describes the schema of the skil
 
 At this point, you can test the skill in the Emulator as if it were a normal bot. However, to test it as a skill, you would need to [implement a skill consumer](skill-implement-consumer.md).
 
-Download and install the latest [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
+Download and install the latest [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md)
 
-1. Run the echo skill bot locally on your machine. If you need instructions, refer to the README file for the [C#](https://aka.ms/skills-simple-bot-to-bot-csharp), [JavaScript](https://aka.ms/skills-simple-bot-to-bot-js), or [Python](https://aka.ms/skills-simple-bot-to-bot-python) sample.
+1. Run the echo skill bot locally on your machine. If you need instructions, refer to the README file for the [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/80.skills-simple-bot-to-bot), or [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/80.skills-simple-bot-to-bot) sample.
 1. Use the Emulator to test the bot as shown below. When you send an "end" or "stop" message to the skill, it sends an `endOfConversation` activity in addition to the reply message. The skill sends the `endOfConversation` activity to indicate the skill has finished.
 
 ![test the echo skill](media/skills-simple-skill-test.png)

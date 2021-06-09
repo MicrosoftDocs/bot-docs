@@ -27,11 +27,11 @@ In this topic we'll show you how to:
 
 ## [C#](#tab/csharp)
 
-The [CoreBot Tests](https://aka.ms/cs-core-test-sample) sample used in this topic references the [Microsoft.Bot.Builder.Testing](https://www.nuget.org/packages/Microsoft.Bot.Builder.Testing/) package, [XUnit](https://xunit.net/), and [Moq](https://github.com/moq/moq) to create unit tests.
+The [CoreBot Tests](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot.tests) sample used in this topic references the [Microsoft.Bot.Builder.Testing](https://www.nuget.org/packages/Microsoft.Bot.Builder.Testing/) package, [XUnit](https://xunit.net/), and [Moq](https://github.com/moq/moq) to create unit tests.
 
 ## [JavaScript](#tab/javascript)
 
-The [CoreBot Tests](https://aka.ms/js-core-test-sample) sample used in this topic references the [botbuilder-testing](https://www.npmjs.com/package/botbuilder-testing) package, [Mocha](https://mochajs.org/) to create unit tests and [Mocha Test Explorer](https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-mocha-test-adapter) to visualize test results in VS Code.
+The [CoreBot Tests](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot/tests) sample used in this topic references the [botbuilder-testing](https://www.npmjs.com/package/botbuilder-testing) package, [Mocha](https://mochajs.org/) to create unit tests and [Mocha Test Explorer](https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-mocha-test-adapter) to visualize test results in VS Code.
 
 ---
 
@@ -945,6 +945,6 @@ const mockRecognizer = new MockFlightBookingRecognizer(mockLuisResult);
 
 ## Additional information
 
-- [CoreBot Test Sample (C#)](https://aka.ms/cs-core-test-sample)
-- [CoreBot Test Sample (JavaScript)](https://aka.ms/js-core-test-sample)
+- [CoreBot Test Sample (C#)](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot.tests)
+- [CoreBot Test Sample (JavaScript)](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot/tests)
 - [Bot Testing](https://github.com/microsoft/botframework-sdk/blob/master/specs/testing/testing.md)

@@ -21,9 +21,9 @@ Messages exchanged between user and bot can contain media attachments, such as i
 
 - Knowledge of [bot basics](bot-builder-basics.md).
 - The code in this article is based on the following samples:
-  - **Using cards**: [C#](https://aka.ms/bot-cards-sample-code), [JavaScript](https://aka.ms/bot-cards-js-sample-code), [Java](https://aka.ms/bot-cards-java-sample-code), [Python](https://aka.ms/bot-cards-python-sample-code)
-  - **Handling attachments**: [C#](https://aka.ms/bot-attachments-sample-code), [JavaScript](https://aka.ms/bot-attachments-sample-code-js), [Java](https://aka.ms/bot-media-attachments-java-sample-code), [Python](https://aka.ms/bot-media-attachments-python-sample-code)
-  - **Suggested actions**: [C#](https://aka.ms/SuggestedActionsCSharp), [JavaScript](https://aka.ms/SuggestedActionsJS), [Java](https://aka.ms/SuggestedActionsJava), [Python](https://aka.ms/SuggestedActionsPython)
+  - **Using cards**: [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/06.using-cards), [JavaScript](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/06.using-cards), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/06.using-cards), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/06.using-cards)
+  - **Handling attachments**: [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/15.handling-attachments), [JavaScript](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/15.handling-attachments-js), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/15.handling-attachments), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/15.handling-attachments)
+  - **Suggested actions**: [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/08.suggested-actions), [JavaScript](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/08.suggested-actions), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/08.suggested-actions), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/08.suggested-actions)
 
 ## Send attachments
 
@@ -35,7 +35,7 @@ See also [What is the size limit of a file transferred using channels?](../bot-s
 
 ### [C#](#tab/csharp)
 
-All of the source code shown in this section is based on the [Handling attachments](https://aka.ms/bot-attachments-sample-code) sample.
+All of the source code shown in this section is based on the [Handling attachments](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/15.handling-attachments) sample.
 
 The `Attachments` property of the `Activity` object contains an array of `Attachment` objects that represent the media attachments and rich cards attached to the message. To add a media attachment to a message, create an `Attachment` object for the `reply` activity and set the `ContentType`, `ContentUrl`, and `Name` properties.
 
@@ -65,7 +65,7 @@ Lastly, an internet attachment:
 
 ### [JavaScript](#tab/javascript)
 
-The source code shown here is based on the [Handling attachments](https://aka.ms/bot-attachments-sample-code-js) sample.
+The source code shown here is based on the [Handling attachments](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/15.handling-attachments-js) sample.
 
 To use attachments, include the following libraries in your bot:
 
@@ -99,7 +99,7 @@ Lastly, an internet attachment contained in a URL:
 
 ### [Java](#tab/java)
 
-The source code shown in this section is based on the [Handling attachments](https://aka.ms/bot-media-attachments-java-sample-code) sample.
+The source code shown in this section is based on the [Handling attachments](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/15.handling-attachments) sample.
 
 The `getAttachments()` method of the `Activity` object contains an array of `Attachment` objects that represent the media attachments and rich cards attached to the message. To add a media attachment to a message, create an `Attachment` object for the `reply` activity and set the `ContentType`, `ContentUrl`, and `Name` properties.
 
@@ -129,7 +129,7 @@ Lastly, an internet attachment:
 
 ### [Python](#tab/python)
 
-The source code shown here is based on the [Handling attachments](https://aka.ms/bot-media-attachments-python-sample-code) sample.
+The source code shown here is based on the [Handling attachments](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/15.handling-attachments) sample.
 
 To create the reply message, define the text and then set up the attachments. Assigning the attachments to the reply is the same for each attachment type, however the various attachments are set up and defined differently, as seen in the following snippets.
 
@@ -169,7 +169,7 @@ Besides simple image or video attachments, you can attach a _hero card_, which a
 
 To compose a message with a hero card and button, you can attach a `HeroCard` object to a message.
 
-The source code shown here is based on the [Handling attachments](https://aka.ms/bot-attachments-sample-code) sample.
+The source code shown here is based on the [Handling attachments](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/15.handling-attachments) sample.
 
 **Bots/AttachmentsBot.cs**
 
@@ -179,7 +179,7 @@ The source code shown here is based on the [Handling attachments](https://aka.ms
 
 To compose a message with a hero card and button, you can attach a `HeroCard` object to a message.
 
-The source code shown here is based on the [Handling attachments](https://aka.ms/bot-attachments-sample-code-js) sample.
+The source code shown here is based on the [Handling attachments](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/15.handling-attachments-js) sample.
 
 **bots/attachmentsBot.js**
 
@@ -189,7 +189,7 @@ The source code shown here is based on the [Handling attachments](https://aka.ms
 
 To compose a message with a hero card and button, you can attach a `HeroCard` object to a message.
 
-The source code shown here is based on the [Handling attachments](https://aka.ms/bot-media-attachments-java-sample-code) sample.
+The source code shown here is based on the [Handling attachments](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/15.handling-attachments) sample.
 
 **AttachmentsBot.java**
 
@@ -199,7 +199,7 @@ The source code shown here is based on the [Handling attachments](https://aka.ms
 
 To compose a message with a hero card and button, you can attach a `HeroCard` object to a message.
 
-The source code shown here is based on the [Handling attachments](https://aka.ms/bot-media-attachments-python-sample-code) sample.
+The source code shown here is based on the [Handling attachments](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/15.handling-attachments) sample.
 
 **bots/attachments_bot.py**
 
@@ -219,7 +219,7 @@ The following code shows examples using various rich card events.
 
 ### [C#](#tab/csharp)
 
-For examples of all the available cards, see the [Using cards](https://aka.ms/bot-cards-sample-code) sample.
+For examples of all the available cards, see the [Using cards](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/06.using-cards) sample.
 
 **Cards.cs**
 
@@ -231,7 +231,7 @@ For examples of all the available cards, see the [Using cards](https://aka.ms/bo
 
 ### [JavaScript](#tab/javascript)
 
-For examples of all the available cards, see the [Using cards](https://aka.ms/bot-cards-js-sample-code) sample.
+For examples of all the available cards, see the [Using cards](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/06.using-cards) sample.
 
 **dialogs/mainDialog.js**
 
@@ -243,7 +243,7 @@ For examples of all the available cards, see the [Using cards](https://aka.ms/bo
 
 ### [Java](#tab/java)
 
-For examples of all the available cards, see the [Using cards](https://aka.ms/bot-cards-java-sample-code) sample.
+For examples of all the available cards, see the [Using cards](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/06.using-cards) sample.
 
 **Cards.java**
 
@@ -256,7 +256,7 @@ For examples of all the available cards, see the [Using cards](https://aka.ms/bo
 
 ### [Python](#tab/python)
 
-For examples of all the available cards, see the [Using cards](https://aka.ms/bot-cards-python-sample-code) sample.
+For examples of all the available cards, see the [Using cards](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/06.using-cards) sample.
 
 **dialogs/main_dialog.py**
 
@@ -283,7 +283,7 @@ The [Adaptive Cards Designer](http://adaptivecards.io/designer/) provides a rich
 
 To use Adaptive Cards, be sure to add the `AdaptiveCards` NuGet package.
 
-The source code shown here is based on the [Using cards](https://aka.ms/bot-cards-sample-code) sample.
+The source code shown here is based on the [Using cards](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/06.using-cards) sample.
 
 **Cards.cs**
 
@@ -295,7 +295,7 @@ This example reads the Adaptive Card JSON from a file and adds it as an attachme
 
 To use Adaptive Cards, be sure to add the `adaptivecards` npm package.
 
-The source code shown here is based on the [Using cards](https://aka.ms/bot-cards-js-sample-code) sample.
+The source code shown here is based on the [Using cards](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/06.using-cards) sample.
 
 **dialogs/mainDialog.js**
 
@@ -307,7 +307,7 @@ This example reads the Adaptive Card JSON from a file and creates a message acti
 
 ### [Java](#tab/java)
 
-The source code shown here is based on the [Using cards](https://aka.ms/bot-cards-java-sample-code) sample.
+The source code shown here is based on the [Using cards](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/06.using-cards) sample.
 
 **Cards.java**
 
@@ -317,7 +317,7 @@ This example reads the Adaptive Card JSON from a file and adds it as an attachme
 
 ### [Python](#tab/python)
 
-The source code shown here is based on the [Using cards](https://aka.ms/bot-cards-python-sample-code) sample.
+The source code shown here is based on the [Using cards](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/06.using-cards) sample.
 
 **bots/main_dialog.py**
 
@@ -335,7 +335,7 @@ Messages can also include multiple attachments in a carousel layout, which place
 
 ### [C#](#tab/csharp)
 
-The source code shown here is based on the [Using cards](https://aka.ms/bot-cards-sample-code) sample.
+The source code shown here is based on the [Using cards](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/06.using-cards) sample.
 
 **Dialogs/MainDialog.cs**
 
@@ -354,7 +354,7 @@ Once the attachments are added, you can send the reply just like any other.
 
 ### [JavaScript](#tab/javascript)
 
-The source code shown here is based on the [Using cards](https://aka.ms/bot-cards-js-sample-code) sample.
+The source code shown here is based on the [Using cards](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/06.using-cards) sample.
 
 **dialogs/mainDialog.js**
 
@@ -365,7 +365,7 @@ Once the attachments are added, you can send the reply just like any other.
 
 ### [Java](#tab/java)
 
-The source code shown here is based on the [Using cards](https://aka.ms/bot-cards-java-sample-code) sample.
+The source code shown here is based on the [Using cards](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/06.using-cards) sample.
 
 **MainDialog.java**
 
@@ -384,7 +384,7 @@ Once the attachments are added, you can send the reply just like any other.
 
 ### [Python](#tab/python)
 
-The source code shown here is based on [Using cards](https://aka.ms/bot-cards-python-sample-code) sample.
+The source code shown here is based on [Using cards](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/06.using-cards) sample.
 
 **dialogs/main_dialog.py**
 
@@ -409,7 +409,7 @@ Once the attachments are added, you can send the reply just like any other.
 
 See the [Design the user experience](../bot-service-design-user-experience.md) article for examples of available cards.
 
-For detailed information on the schema, see the [Bot Framework card schema](https://aka.ms/botSpecs-cardSchema) and the [message activity section](https://aka.ms/botSpecs-activitySchema#message-activity) of the Bot Framework Activity schema.
+For detailed information on the schema, see the [Bot Framework card schema](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-cards.md) and the [message activity section](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md#message-activity) of the Bot Framework Activity schema.
 
 ### Code sample for processing Adaptive Card input
 
@@ -605,7 +605,7 @@ This will invoke your validator to look for Adaptive Card input each time a new 
 
 ### [Python](#tab/python)
 
-<!--The source code shown here is based on the [Suggested actions](https://aka.ms/SuggestedActionsPython) sample.-->
+<!--The source code shown here is based on the [Suggested actions](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/08.suggested-actions) sample.-->
 
 Create and send an activity with suggested actions to the user.
 

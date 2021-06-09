@@ -186,7 +186,7 @@ The Bot Framework SDK provide built-in support for LUIS and QnA Maker. This enab
 
 ## Sample code
 
-- For a sample that shows how to create a basic knowledge bot using the Bot Framework SDK for .NET, see the <a href="https://aka.ms/qna-with-appinsights" target="_blank">Knowledge Bot sample</a> in GitHub.
+- For a sample that shows how to create a basic knowledge bot using the Bot Framework SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/11.qnamaker" target="_blank">Knowledge Bot sample</a> in GitHub.
 <!-- TODO: Do not have a current bot sample to work with this
 - For a sample that shows how to create more complex knowledge bots using the Bot Framework SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/demo-Search" target="_blank">Search-powered Bots sample</a> in GitHub.
 -->

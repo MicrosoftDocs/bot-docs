@@ -201,7 +201,7 @@ In this case, since no language generation (LG) template file is provided, and t
 
 ## Test the bot
 
-1. If you have not done so already, install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
+1. If you have not done so already, install the [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md).
 1. Run the sample locally on your machine.
 1. Start the Emulator, connect to your bot, and send messages as shown below.
 

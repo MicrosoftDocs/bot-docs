@@ -23,25 +23,25 @@ Buttons enhance the conversational experience by letting the user answer a quest
 
 # [C#](#tab/csharp)
 
-The source code shown here is based on the [Suggested actions](https://aka.ms/SuggestedActionsCSharp) sample.
+The source code shown here is based on the [Suggested actions](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/08.suggested-actions) sample.
 
 [!code-csharp[suggested actions](~/../botbuilder-samples/samples/csharp_dotnetcore/08.suggested-actions/Bots/SuggestedActionsBot.cs?range=80-98)]
 
 # [JavaScript](#tab/javascript)
 
-The source code shown here is based on the [Suggested actions](https://aka.ms/SuggestActionsJS) sample.
+The source code shown here is based on the [Suggested actions](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/08.suggested-actions) sample.
 
 [!code-javascript[suggested actions](~/../botbuilder-samples/samples/javascript_nodejs/08.suggested-actions/bots/suggestedActionsBot.js?range=58-89)]
 
 # [Java](#tab/java)
 
-The source code shown here is based on the [Suggested actions](https://aka.ms/SuggestedActionsJava) sample.
+The source code shown here is based on the [Suggested actions](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/08.suggested-actions) sample.
 
 [!code-java[suggested actions](~/../botbuilder-samples/samples/java_springboot/08.suggested-actions/src/main/java/com/microsoft/bot/sample/suggestedactions/SuggestedActionsBot.java?range=102-136)]
 
 # [Python](#tab/python)
 
-The source code shown here is based on the [Suggested actions](https://aka.ms/SuggestActionsPython) sample.
+The source code shown here is based on the [Suggested actions](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/08.suggested-actions) sample.
 
 [!code-python[suggested actions](~/../botbuilder-samples/samples/python/08.suggested-actions/bots/suggested_actions_bot.py?range=63-81)]
 
@@ -49,7 +49,7 @@ The source code shown here is based on the [Suggested actions](https://aka.ms/Su
 
 ## Additional resources
 
-You can access the complete source code for the **Suggested actions** sample in [C#](https://aka.ms/SuggestedActionsCSharp), [JavaScript](https://aka.ms/SuggestActionsJS), [Java](https://aka.ms/SuggestedActionsJava) and [Python](https://aka.ms/SuggestActionsPython).
+You can access the complete source code for the **Suggested actions** sample in [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/08.suggested-actions), [JavaScript](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/08.suggested-actions), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/08.suggested-actions) and [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/08.suggested-actions).
 
 ## Next steps
 

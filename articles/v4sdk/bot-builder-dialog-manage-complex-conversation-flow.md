@@ -294,7 +294,7 @@ Create and register services as needed:
 
 ## To test the bot
 
-1. If you have not done so already, install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
+1. If you have not done so already, install the [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md).
 1. Run the sample locally on your machine.
 1. Start the Emulator, connect to your bot, and send messages as shown below.
 
@@ -324,7 +324,7 @@ For more information, see [reuse dialogs][component-dialogs].
 [dialog-prompts]: bot-builder-prompts.md
 [component-dialogs]: bot-builder-compositcontrol.md
 
-[cs-sample]: https://aka.ms/cs-complex-dialog-sample
-[js-sample]: https://aka.ms/js-complex-dialog-sample
-[java-sample]: https://aka.ms/java-complex-dialog-sample
-[python-sample]: https://aka.ms/python-complex-dialog-sample
+[cs-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/43.complex-dialog
+[js-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/43.complex-dialog
+[java-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/43.complex-dialog
+[python-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/43.complex-dialog

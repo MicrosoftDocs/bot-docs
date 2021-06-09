@@ -49,7 +49,7 @@ how to [implement sequential conversation flow][simple-dialog], and how to [reus
 | Sample | BotBuilder version | Demonstrates |
 |:---|:---:|:---|
 | **Authentication** in [**C#**][cs-auth-sample] or [**JavaScript**][js-auth-sample] or [**Java**][java-auth-sample] or  [**Python**][python-auth-sample] | v4 | OAuthCard support |
-| **Authentication MSGraph** in [**C#**][cs-msgraph-sample] or [**JavaScript**][js-msgraph-sample] or [**Java**][java-msgraph-sample] or [**Python**](https://aka.ms/bot-auth-msgraph-python-sample-code)| v4 |  Microsoft Graph API support with OAuth 2 |
+| **Authentication MSGraph** in [**C#**][cs-msgraph-sample] or [**JavaScript**][js-msgraph-sample] or [**Java**][java-msgraph-sample] or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/24.bot-authentication-msgraph)| v4 |  Microsoft Graph API support with OAuth 2 |
 
 ### About the samples
 
@@ -321,7 +321,7 @@ To obtain the **Microsoft app ID** and **Microsoft app password** values, see [G
 
 ## Test the bot using the Emulator
 
-If you have not done so already, install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme). See also [Debug with the Emulator](../bot-service-debug-emulator.md).
+If you have not done so already, install the [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md). See also [Debug with the Emulator](../bot-service-debug-emulator.md).
 
 <!-- auth config steps -->
 In order for the bot sample login to work you must configure the Emulator
@@ -610,15 +610,15 @@ The `TeamsActivityHandler` also sends *message reaction* activities. A message r
 [dialog-prompts]: bot-builder-prompts.md
 [component-dialogs]: bot-builder-compositcontrol.md
 
-[cs-auth-sample]: https://aka.ms/v4cs-bot-auth-sample
-[js-auth-sample]: https://aka.ms/v4js-bot-auth-sample
-[java-auth-sample]: https://aka.ms/v4java-bot-auth-sample
-[python-auth-sample]: https://aka.ms/bot-auth-python-sample-code
+[cs-auth-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/18.bot-authentication
+[js-auth-sample]: https://github.com/Microsoft/BotBuilder-Samples/blob/main/samples/javascript_nodejs/18.bot-authentication
+[java-auth-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/18.bot-authentication
+[python-auth-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/18.bot-authentication
 
-[cs-msgraph-sample]: https://aka.ms/v4cs-auth-msgraph-sample
-[js-msgraph-sample]: https://aka.ms/v4js-auth-msgraph-sample
-[java-msgraph-sample]: https://aka.ms/v4java-auth-msgraph-sample
-[cs-teams-auth-sample]:https://aka.ms/cs-teams-auth-sample
-[js-teams-auth-sample]:https://aka.ms/js-teams-auth-sample
-[java-teams-auth-sample]:https://aka.ms/java-teams-auth-sample
+[cs-msgraph-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/24.bot-authentication-msgraph
+[js-msgraph-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/24.bot-authentication-msgraph
+[java-msgraph-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/24.bot-authentication-msgraph
+[cs-teams-auth-sample]:https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/46.teams-auth
+[js-teams-auth-sample]:https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/46.teams-auth
+[java-teams-auth-sample]:https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/46.teams-auth
 [teams-activity-feed]:/microsoftteams/platform/concepts/activity-feed

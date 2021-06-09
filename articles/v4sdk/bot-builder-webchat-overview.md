@@ -64,7 +64,7 @@ The following examples shows how to add a Web Chat control to a website.
 
 ### Integrate with JavaScript
 
-Web Chat is designed to integrate with your existing website using JavaScript or React. Integrating with JavaScript will give you some styling and customizability, for more information see the article [Integrate Web Chat into your website](https://aka.ms/integrate-webchat-into-site).
+Web Chat is designed to integrate with your existing website using JavaScript or React. Integrating with JavaScript will give you some styling and customizability, for more information see the article [Integrate Web Chat into your website](https://github.com/microsoft/BotFramework-WebChat#how-to-use).
 
 You can use the full, typical webchat package that contains the most typically used features.
 

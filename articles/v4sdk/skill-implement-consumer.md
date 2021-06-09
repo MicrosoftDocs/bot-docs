@@ -31,7 +31,7 @@ For information about using a skill dialog to consume a skill, see how to [use a
 
 - Knowledge of [bot basics](bot-builder-basics.md), [how skills bots work](skills-conceptual.md), and how to [implement a skill](skill-implement-skill.md).
 - Optionally, an Azure subscription. If you don't have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
-- A copy of the **skills simple bot-to-bot** sample in [**C#**](https://aka.ms/skills-simple-bot-to-bot-csharp), [**JavaScript**](https://aka.ms/skills-simple-bot-to-bot-js), [**Java**](https://aka.ms/java-skills-simple-bot-to-bot) or [**Python**](https://aka.ms/skills-simple-bot-to-bot-python).
+- A copy of the **skills simple bot-to-bot** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/80.skills-simple-bot-to-bot), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/80.skills-simple-bot-to-bot) or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/80.skills-simple-bot-to-bot).
 
 > [!NOTE]
 > Starting with version 4.11, you do not need an app ID and password to test a skill consumer locally in the Emulator. An Azure subscription is still required to deploy your consumer to Azure or to consume a deployed skill.
@@ -425,9 +425,9 @@ This sample uses the same authentication configuration logic for validating acti
 You can test the skill consumer in the Emulator as if it were a normal bot; however, you need to run both the skill and skill consumer bots at the same time.
 See how to [implement a skill](skill-implement-skill.md) for information on how to configure the skill.
 
-Download and install the latest [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
+Download and install the latest [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md)
 
-1. Run the echo skill bot and simple root bot locally on your machine. If you need instructions, refer to the README file for the [C#](https://aka.ms/skills-simple-bot-to-bot-csharp), [JavaScript](https://aka.ms/skills-simple-bot-to-bot-js), [Java](https://aka.ms/java-skills-simple-bot-to-bot), or [Python](https://aka.ms/skills-simple-bot-to-bot-python) sample.
+1. Run the echo skill bot and simple root bot locally on your machine. If you need instructions, refer to the README file for the [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/80.skills-simple-bot-to-bot), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/80.skills-simple-bot-to-bot), or [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/80.skills-simple-bot-to-bot) sample.
 1. Use the Emulator to test the bot as shown below. Note that when you send an `end` or `stop` message to the skill, the skill sends to the root bot an `endOfConversation` activity, in addition to the reply message. The `endOfConversation` activity's _code_ property indicates that the skill completed successfully.
 
 ![test the skill consumer](media/skills-simple-consumer-test.png)

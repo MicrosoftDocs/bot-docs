@@ -55,7 +55,7 @@ The `suggestedActions` property of the [Activity][] object can be used to presen
 ## Additional resources
 
 - [Channels reference][ChannelInspector]
-- [Activities overview](https://aka.ms/botSpecs-activitySchema)
+- [Activities overview](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md)
 - [Send and receive messages](bot-framework-rest-connector-send-and-receive-messages.md)
 - [Add media attachments to messages](bot-framework-rest-connector-add-media-attachments.md)
 - [Add rich cards to messages](bot-framework-rest-connector-add-rich-cards.md)

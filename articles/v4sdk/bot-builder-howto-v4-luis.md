@@ -22,7 +22,7 @@ This topic walks you through adding LUIS to a flight booking application to reco
 ## Prerequisites
 
 - A [LUIS](https://www.luis.ai) account.
-- A copy of the **Core Bot** sample in [**C#**](https://aka.ms/cs-core-sample), [**JavaScript**](https://aka.ms/js-core-sample), [**Java**](https://aka.ms/java-core-sample), or [**Python**](https://aka.ms/python-core-sample).
+- A copy of the **Core Bot** sample in [**C#**](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot), [**JavaScript**](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/13.core-bot), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/13.core-bot).
 - Knowledge of [bot basics](bot-builder-basics.md), [natural language processing](/azure/cognitive-services/luis/what-is-luis), and [managing bot resources](bot-file-basics.md).
 
 ## About this sample
@@ -255,9 +255,9 @@ LUIS is now configured and connected for your bot.
 
 ## Test the bot
 
-Download and install the latest [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
+Download and install the latest [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md)
 
-1. Run the sample locally on your machine. If you need instructions, refer to the readme file for the [C# Sample](https://aka.ms/cs-core-sample), [JS Sample](https://aka.ms/js-core-sample) or [Python Sample](https://aka.ms/python-core-sample).
+1. Run the sample locally on your machine. If you need instructions, refer to the readme file for the [C# Sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot), [JS Sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot) or [Python Sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/13.core-bot).
 
 1. In the Emulator, type a message such as "travel to paris" or "going from paris to berlin". Use any utterance found in the file FlightBooking.json for training the intent "Book flight".
 

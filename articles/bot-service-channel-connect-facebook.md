@@ -389,8 +389,8 @@ You can now test whether your bot is connected to Facebook correctly by sending 
 
 1. Hover over the new **Send Message** button that is now shown on your Facebook Page and select **Test Button** from the pop-up menu.  This will start a new conversation with your app via Facebook Messenger, which you can use to test messaging your bot. Once the message is received by your bot, it will send a message back to you, echoing the text from your message.
 
-You can also test this feature using the [sample bot for the Facebook adapter](https://aka.ms/csharp-61-facebook-adapter-sample) by populating the **appsettings.json** file with the same values described in the steps above.
+You can also test this feature using the [sample bot for the Facebook adapter](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/61.facebook-adapter) by populating the **appsettings.json** file with the same values described in the steps above.
 
 ## See also
 
-- **Sample code**. Use the [Facebook-events](https://aka.ms/facebook-events) sample bot to explore the bot communication with Facebook Messenger.
+- **Sample code**. Use the [Facebook-events](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/23.facebook-events) sample bot to explore the bot communication with Facebook Messenger.

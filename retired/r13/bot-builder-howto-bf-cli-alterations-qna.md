@@ -135,8 +135,8 @@ While there is no command to directly update an existing alterations list in QnA
 [create-your-qna-maker-model]: bot-builder-howto-bf-cli-deploy-qna.md#create-your-qna-maker-model
 [qnamaker-init-file]: bot-builder-howto-bf-cli-deploy-qna.md#create-your-qna-maker-initialization-file
 
-[bf-qnamakeralterationsreplace]: https://aka.ms/botframework-cli#bf-qnamakeralterationsreplace
-[bf-qnamakeralterationslist]: https://aka.ms/botframework-cli#bf-qnamakeralterationslist
+[bf-qnamakeralterationsreplace]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-qnamakeralterationsreplace
+[bf-qnamakeralterationslist]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-qnamakeralterationslist
 
-[bf-qnamakerconvert]: https://aka.ms/botframework-cli#bf-qnamakerconvert
+[bf-qnamakerconvert]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-qnamakerconvert
 <!-------------------------------------------------------------------------------------------------->

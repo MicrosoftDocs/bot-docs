@@ -30,7 +30,7 @@ In this article you will learn about:
 
 ## Prerequisites
 
-* The [QnA Maker sample code](https://aka.ms/cs-qna)
+* The [QnA Maker sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/11.qnamaker)
 
 * A subscription to [Microsoft Azure](https://portal.azure.com/)
 
@@ -43,13 +43,13 @@ In this article you will learn about:
 * A published QnA Maker knowledge base. If you do not have one, follow the steps in [Create and answer from KB](/azure/cognitive-services/qnamaker/tutorials/create-publish-query-in-portal/) tutorial to create a QnA Maker knowledge base with questions and answers.
 
 > [!NOTE]
-> This article will build on the [QnA Maker sample code](https://aka.ms/cs-qna) by stepping you through the steps required to incorporate telemetry.
+> This article will build on the [QnA Maker sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/11.qnamaker) by stepping you through the steps required to incorporate telemetry.
 
 ## Wiring up telemetry in your QnA Maker bot
 
-We will start with the [QnA Maker sample app](https://aka.ms/cs-qna) and add the code required to integrate telemetry into a bot using the QnA service. This will enable Application Insights to begin tracking requests.
+We will start with the [QnA Maker sample app](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/11.qnamaker) and add the code required to integrate telemetry into a bot using the QnA service. This will enable Application Insights to begin tracking requests.
 
-1. Open the [QnA Maker sample app](https://aka.ms/cs-qna) in Visual Studio
+1. Open the [QnA Maker sample app](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/11.qnamaker) in Visual Studio
 
 2. Add  the `Microsoft.Bot.Builder.Integration.ApplicationInsights.Core ` NuGet package. For more information on using NuGet, see [Install and manage packages in Visual Studio](/nuget/tools/package-manager-ui):
 

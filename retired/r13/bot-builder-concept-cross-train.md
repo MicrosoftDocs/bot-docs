@@ -188,7 +188,7 @@ After cross training your LUIS and QnA Maker models, you need to be sure and use
 [cross-trained-recognizer-set-concept]: /azure/cognitive-services/luis/what-is-luis
 [luis-recognizer]: bot-builder-concept-adaptive-dialog-recognizers.md#cross-trained-recognizer-set
 [luis-build]: bot-builder-howto-bf-cli-deploy-luis.md#create-and-train-a-luis-app-then-publish-it-using-the-build-command
-[bf-luiscross-train]: https://aka.ms/botframework-cli#bf-luiscross-train
+[bf-luiscross-train]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-luiscross-train
 [lu-templates]: ../file-format/bot-builder-lu-file-format.md
 [qnamaker]: /azure/cognitive-services/QnAMaker/Overview/overview
 [qnamaker-recognizer]: bot-builder-concept-adaptive-dialog-recognizers.md#qna-maker-recognizer

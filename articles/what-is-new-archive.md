@@ -291,7 +291,7 @@ During this release, the Bot Builder Community has further raised the bar by add
 
 ### Bot Framework Composer
 
-[Bot Framework Composer](/composer/) is Generally Available (GA) on the [Windows](https://aka.ms/composer-windows-download) | [macOS](https://aka.ms/composer-mac-download) | [Linux](https://aka.ms/composer-linux-download) platforms.
+[Bot Framework Composer](/composer/) is Generally Available (GA) on the [Windows](https://github.com/microsoft/BotFramework-Composer/releases/download/v1.3.0/BotFramework-Composer-1.3.0-windows-setup.exe) | [macOS](https://github.com/microsoft/BotFramework-Composer/releases/download/v1.3.0/BotFramework-Composer-1.3.0-mac.zip) | [Linux](https://github.com/microsoft/BotFramework-Composer/releases/download/v1.3.0/BotFramework-Composer-1.3.0-linux-x86_64.AppImage) platforms.
 
 Bot Framework Composer is a visual authoring canvas for developers and multi-disciplinary teams to build bots. It is an open source conversational application based on the Microsoft Bot Framework SDK. Within Composer, you will find everything you need to build a sophisticated conversational experience:
 
@@ -357,7 +357,7 @@ This article summarizes key new features and improvements in Bot Framework and A
 
 - [Direct Line Speech (public preview)](https://www.nuget.org/packages/Microsoft.Bot.Builder.StreamingExtensions/4.5.0-preview1) | [docs](directline-speech-bot.md): Bot Framework and Microsoft's Speech Services provide a channel that enables streamed speech and text bi-directionally from the client to the bot application using WebSockets.
 
-- [Direct Line App Service Extension (public preview)](https://portal.azure.com) | [docs](https://aka.ms/directline-ase): A version of Direct Line
+- [Direct Line App Service Extension (public preview)](https://portal.azure.com) | [docs](https://github.com/Jeffders/DirectLineAppServiceExtensionPreview/tree/master/docs): A version of Direct Line
 that allows clients to connect directly to bots using the Direct Line API. This offers many benefits, including increased performance and more isolation. Direct Line App Service Extension is available on all Azure App Services, including those hosted within an Azure App Service Environment. An Azure App Service Environment provides isolation and is ideal for working within a VNet. A VNet lets you create your own private space in Azure and is crucial to your cloud network as it offers isolation, segmentation, and other key benefits.
 
 ### Bot Framework SDK
@@ -367,6 +367,7 @@ Adaptive Dialog now allow developers to dynamically update conversation flow bas
 - [Bot Framework Python SDK (preview 2)](https://github.com/microsoft/botbuilder-python) | [samples](https://github.com/Microsoft/botbuilder-python/tree/master/samples): The Python SDK now supports OAuth, Prompts, CosmosDB, and includes all major functionality in SDK 4.5. Plus, samples to help you learn about the new features in the SDK.
 
 ### Bot Framework Testing
+
 - [Docs](./v4sdk/unit-test-bots.md) | Unit testing packages ([C#](https://www.nuget.org/packages/Microsoft.Bot.Builder.Testing/)/ [JavaScript](https://www.npmjs.com/package/botbuilder-testing)) | [C# sample](https://aka.ms/cs-core-test-sample) | [JS sample](https://aka.ms/js-core-test-sample): Addressing customers' and developers' ask for better testing tools, the July version of the SDK introduces a new unit testing capability. The Microsoft.Bot.Builder.testing package simplifies the process of unit testing dialogs in your bot.
 
 - [Channel Testing](https://github.com/Microsoft/BotFramework-Emulator/releases) | [docs](bot-service-debug-inspection-middleware.md):
@@ -491,7 +492,7 @@ A machine learning-based service to build natural language experiences. Quickly 
 [9]:https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_es6
 [10]:https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_webapi
 [11]:https://github.com/Microsoft/botbuilder-python/tree/master/samples
-[11a]:https://aka.ms/python-sample-repo
+[11a]:https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python
 
 [18]:https://github.com/Microsoft/botbuilder-tools/tree/master/packages/LUIS#readme
 [19]:https://github.com/Microsoft/botbuilder-tools/tree/master/packages/QnAMaker#readme

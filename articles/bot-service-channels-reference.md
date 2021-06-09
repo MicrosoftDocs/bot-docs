@@ -251,7 +251,7 @@ The following table shows the maximum number of Suggested Actions and Card Actio
 | Suggested Actions |     100     |          100           |  :x:  |    10    |   :x:   |   20    |  13   |  :x:  |  :x:  |  10  |      :x:       |    100   |   :x:  |  
 | Card Actions      |     100     |          100           |  :x:  |     3    |   :x:   |   20    |  99   |   3   |  100  |   3   |      :x:       |    :x:   |   :x:  |  
 
-For more information about the numbers shown in the above table, refer to channel support code listed [here](https://aka.ms/channelactions). 
+For more information about the numbers shown in the above table, refer to channel support code listed [here](https://github.com/microsoft/botbuilder-dotnet/blob/master/libraries/Microsoft.Bot.Builder.Dialogs/Choices/Channel.cs). 
 
 For more information on _Suggested Actions_, refer to the [Use button for input](./v4sdk/bot-builder-howto-add-suggested-actions.md) article.
 

@@ -597,7 +597,7 @@ new TextInput()
 - [Visual Studio 2019 or later](https://www.visualstudio.com/downloads) or [Visual Studio Code](https://code.visualstudio.com/Download)
 - [.NET Core 3.1](https://dotnet.microsoft.com/download)
 - A copy of the C# [Todo bot with LUIS and QnA Maker][cs-sample-todo-bot] sample.
-- [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
+- [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md)
 
 ## Build and run the bot locally
 
@@ -632,7 +632,7 @@ You can now interact with your bot.
 [create-azure-account]: https://azure.microsoft.com/free/?WT.mc_id=A261C142F
 [luis]: /azure/cognitive-services/luis/what-is-luis
 [qnamaker]: /azure/cognitive-services/qnamaker/overview/overview
-[cs-sample-todo-bot]: https://aka.ms/csharp-adaptive-dialog-08-todo-bot-luis-qnamaker-sample
+[cs-sample-todo-bot]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/adaptive-dialog/08.todo-bot-luis-qnamaker
 [lu-templates]: ../file-format/bot-builder-lu-file-format.md
 [qna-file-format]: ../file-format/bot-builder-qna-file-format.md
 [create-your-luis-authoring-resource-in-azure]: bot-builder-howto-bf-cli-deploy-luis.md#create-your-luis-authoring-resource-in-azure
@@ -648,12 +648,12 @@ You can now interact with your bot.
 [create-cognitive-services-luis]: https://portal.azure.com/#create/Microsoft.CognitiveServicesLUISAllInOne
 [create-cognitive-services-qnamaker]: https://portal.azure.com/#create/Microsoft.CognitiveServicesQnAMaker
 
-[bf-qnamakerbuild]: https://aka.ms/botframework-cli#bf-qnamakerbuild
+[bf-qnamakerbuild]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-qnamakerbuild
 [qnamaker-build]: bot-builder-howto-bf-cli-deploy-qna.md#create-a-qna-maker-knowledge-base-and-publish-it-to-production-using-the-build-command
 [qna-maker-knowledge-bases-created]: bot-builder-howto-bf-cli-deploy-qna.md#qna-maker-knowledge-bases-created
 [create-your-qna-maker-initialization-file]: bot-builder-howto-bf-cli-deploy-qna.md#create-your-qna-maker-initialization-file
 
-[bf-luisbuild]: https://aka.ms/botframework-cli#bf-luisbuild
+[bf-luisbuild]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-luisbuild
 [luis-build]: bot-builder-howto-bf-cli-deploy-luis.md#create-and-train-a-luis-app-then-publish-it-using-the-build-command
 
 [luis-migration-authoring]: /azure/cognitive-services/luis/luis-migration-authoring

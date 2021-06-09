@@ -22,7 +22,7 @@ Proactive messages can be useful in a variety of scenarios. For example, if the 
 
 > [!Note]
 > This article covers information about proactive messages for bots in general. For information about proactive messages in Microsoft Teams, see:
-> - The **Teams conversation bot** sample in [**C#**](https://aka.ms/cs-teams-conversations-sample), [**JavaScript**](https://aka.ms/js-teams-conversations-sample), [**Java**](https://aka.ms/java-teams-conversations-sample), or [**Python**](https://aka.ms/py-teams-conversations-sample).
+> - The **Teams conversation bot** sample in [**C#**](https://aka.ms/cs-teams-conversations-sample), [**JavaScript**](https://aka.ms/js-teams-conversations-sample), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/57.teams-conversation-bot), or [**Python**](https://aka.ms/py-teams-conversations-sample).
 > - Microsoft Teams documentation on how to [send proactive messages](/microsoftteams/platform/bots/how-to/conversations/send-proactive-messages).
 
 ## Requirements
@@ -34,7 +34,7 @@ Many channels prohibit a bot from messaging a user unless the user has messaged 
 ## Prerequisites
 
 - Understand [bot basics](bot-builder-basics.md).
-- A copy of the **proactive messages** sample in [**C#**](https://aka.ms/proactive-sample-cs), [**JavaScript**](https://aka.ms/proactive-sample-js), [**Java**](https://aka.ms/proactive-sample-java), or [**Python**](https://aka.ms/bot-proactive-python-sample-code). The sample is used to explain proactive messaging in this article.
+- A copy of the **proactive messages** sample in [**C#**](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/16.proactive-messages), [**JavaScript**](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/16.proactive-messages), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/16.proactive-messages), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/16.proactive-messages). The sample is used to explain proactive messaging in this article.
 
 ## About the proactive sample
 
@@ -156,7 +156,7 @@ To send a proactive message, the adapter requires an app ID for the bot. In a pr
 
 ## Test your bot
 
-1. If you have not done so already, install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
+1. If you have not done so already, install the [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md).
 1. Run the sample locally on your machine.
 1. Start the Emulator and connect to your bot.
 1. Load to your bot's api/notify page. This will generate a proactive message in the Emulator.
