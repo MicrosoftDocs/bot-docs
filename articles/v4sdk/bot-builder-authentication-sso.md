@@ -96,6 +96,10 @@ The Azure AD is a cloud identity service that allows you to build applications t
 
 1. Leave the **Token Exchange URL** empty.
 1. In the **Scopes** box enter the `RootBot` scope value you saved in the previous steps.
+    > [!NOTE]
+    > The *scopes* contains the URL that the user initially signs in into the root bot, while the *token exchange URL* is left empty.
+    >
+    > As an example, let's assume that the root bot *appid* is *rootAppId* and the skill bot *appid* is *skillAppId*. The root bot's *scopes* will look like *api://rootAppId/customScope*, which is used to login the user. This root bot's *scopes* is then exchanged with *api://skillAppId/customscope* during SSO. 
 1. Copy and save the name of the connection.
 
 ## Create the Azure SkillBot resource
