@@ -30,21 +30,19 @@ The generator supports three different template options as shown below.
    npm install -g npm
    ```
 
-1. Install [Yeoman](http://yeoman.io).
+1. Install [Yeoman](http://yeoman.io). Make sure to install globally.
 
     ```bash
-    # Make sure to install globally.
     npm install -g yo
     ```
 
-2. Install *generator-botbuilder-java*.
+1. Install *generator-botbuilder-java*. Make sure to install globally.
 
     ```bash
-    # Make sure to install globally.
     npm install -g generator-botbuilder-java
     ```
 
-3. Verify that *Yeoman* and *generator-botbuilder-java* have been installed correctly.
+1. Verify that *Yeoman* and *generator-botbuilder-java* have been installed correctly.
 
     ```bash
     yo botbuilder-java --help

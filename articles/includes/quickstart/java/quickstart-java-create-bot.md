@@ -6,7 +6,6 @@ bot-builder-tutorial-create-basic-bot.md and bot-builder-java-quickstart.md -->
 Run the following command to create an echo bot from templates. The command uses default options for its parameters. 
 
 ```bash
-# Create an echo bot using the default options.
 yo botbuilder-java -T "echo"
 ```
 
