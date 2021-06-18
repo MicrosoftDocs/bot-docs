@@ -124,7 +124,7 @@ The bot correctly answers the questions that directly map to the ones that were 
 Some knowledge bots require natural language processing (NLP) capabilities so that they can
 analyze a user's messages to determine the user's intent.
 [Language Understanding (LUIS)](https://www.luis.ai) provides a fast and effective means of adding NLP capabilities to bots.
-LUIS enables you to use existing, pre-built models from Bing and Cortana whenever they meet your needs, as well as allowing you to create specialized models of your own.
+LUIS enables you to use existing, pre-built models from Bing whenever they meet your needs, as well as allowing you to create specialized models of your own.
 
 When working with huge datasets, it's not necessarily feasible to train an NLP model with every variation of an entity.
 In a music playing bot, for example, a user might message "Play Reggae", "Play Bob Marley", or "Play One Love".

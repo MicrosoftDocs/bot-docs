@@ -57,7 +57,7 @@ Users care when the bot solves their query. A great conversational bot does not 
 ## The CUX guide
 
 The CUX guide, contains guidance on designing a bot. This guidance aligns with best practices and capitalizes on lessons learned. 
-The authors and designers of this guidance are drawing from combined decades of experience building and deploying conversational UX for a variety of bots, virtual agents, and other conversational experience projects including Cortana, Bot Framework Templates, Microsoft Virtual Assistant, Personality Chat, and others. 
+The authors and designers of this guidance are drawing from combined decades of experience building and deploying conversational UX for a variety of bots, virtual agents, and other conversational experience projects, including Bot Framework Templates, Microsoft Virtual Assistant, Personality Chat, and others. 
 
 > [!TIP]
 > Download the [CUX Guide Microsoft.pdf](https://github.com/microsoft/botframework-sdk/raw/main/docs/CUX%20Guide%20Microsoft.pdf)

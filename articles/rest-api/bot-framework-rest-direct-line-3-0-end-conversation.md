@@ -6,7 +6,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 12/13/2017
+ms.date: 06/16/2021
 ---
 
 # End a conversation in Direct Line API 3.0
@@ -14,7 +14,7 @@ ms.date: 12/13/2017
 The **endOfConversation** [activity](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md) means the channel or bot has ended the conversation.
 
 > [!NOTE]
-> While the **endOfConversation** event is only sent by very few channels, the Cortana channel is the only one that accepts it. Other channels, including Direct Line, do not implement this functionality and instead drop or forward the activity on; each channel determines how to react to an endOfConversation activity.
+> The **endOfConversation** event is sent by very few channels, and few channels accept it. Some channels, including Direct Line, do not implement this functionality and instead drop or forward the activity on; each channel determines how to react to an endOfConversation activity.
 
 ## Send an endOfConversation activity
 
