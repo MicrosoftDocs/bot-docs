@@ -191,7 +191,7 @@ The `run_dialog` method that is called from the bot's `on_message_activity` meth
 
 ## To test the bot
 
-1. If you have not done so already, install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
+1. If you have not done so already, install the [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md).
 1. Run the sample locally on your machine.
 1. Start the Emulator, connect to your bot, and send messages as shown below.
 
@@ -225,8 +225,8 @@ Learn how to create complex conversations that branch and loop.
 [prompting]: bot-builder-prompts.md
 [component-dialogs]: bot-builder-compositcontrol.md
 <!--samples-->
-[cs-sample]: https://aka.ms/cs-multi-prompts-sample
-[js-sample]: https://aka.ms/js-multi-prompts-sample
-[java-sample]: https://aka.ms/java-multi-prompts-sample
-[python-sample]: https://aka.ms/python-multi-prompts-sample
+[cs-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/05.multi-turn-prompt
+[js-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/05.multi-turn-prompt
+[java-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/05.multi-turn-prompt
+[python-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/05.multi-turn-prompt
 [lg-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/language-generation/05.multi-turn-prompt

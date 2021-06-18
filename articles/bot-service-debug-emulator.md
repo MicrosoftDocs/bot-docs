@@ -18,7 +18,7 @@ Bot Framework Emulator is a desktop application that allows bot developers to te
 
 ## Prerequisites
 
-- Install [Bot Framework Emulator](https://aka.ms/Emulator-wiki-getting-started)
+- Install [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md)
 
 ## Run a bot locally
 

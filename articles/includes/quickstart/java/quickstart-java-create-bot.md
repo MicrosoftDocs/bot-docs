@@ -6,7 +6,6 @@ bot-builder-tutorial-create-basic-bot.md and bot-builder-java-quickstart.md -->
 Run the following command to create an echo bot from templates. The command uses default options for its parameters. 
 
 ```bash
-# Create an echo bot using the default options.
 yo botbuilder-java -T "echo"
 ```
 
@@ -26,7 +25,7 @@ The generator supports a number of command line options that can be used to chan
 | --help, -h        | List help text for all supported command-line options |
 | --botName, -N     | The name given to the bot project |
 | --packageName, -P | The Java package name to use for the bot |
-| --template, -T    | The template used to generate the project.  Options are `empty`, or `echo`.  See [https://aka.ms/botbuilder-generator](https://aka.ms/botbuilder-generator) for additional information regarding the different template option and their functional differences. |
+| --template, -T    | The template used to generate the project.  Options are `empty`, or `echo`.  See [https://github.com/Microsoft/BotBuilder-Samples/tree/master/generators/generator-botbuilder](https://github.com/Microsoft/BotBuilder-Samples/tree/master/generators/generator-botbuilder) for additional information regarding the different template option and their functional differences. |
 | --noprompt        | The generator will not prompt for confirmation before creating a new bot.  Any requirement options not passed on the command line will use a reasonable default value.  This option is intended to enable automated bot generation for testing purposes. |
 
 Thanks to the template, your project contains all the code that's necessary to create the bot in this quickstart. You don't need any additional code to test your bot.

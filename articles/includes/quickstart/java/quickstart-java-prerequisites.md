@@ -2,7 +2,7 @@
 bot-builder-tutorial-create-basic-bot.md and bot-builder-java-quickstart.md -->
 
 - Java 1.8 or later
-- [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
+- [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md)
 - [Visual Studio Code](https://www.visualstudio.com/downloads) or your favorite IDE, if you want to edit the bot code.
 - Install [Maven](https://maven.apache.org/)
 - Install [node.js](https://nodejs.org/) version 12.10 or later.
@@ -30,21 +30,19 @@ The generator supports three different template options as shown below.
    npm install -g npm
    ```
 
-1. Install [Yeoman](http://yeoman.io).
+1. Install [Yeoman](http://yeoman.io). Make sure to install globally.
 
     ```bash
-    # Make sure to install globally.
     npm install -g yo
     ```
 
-2. Install *generator-botbuilder-java*.
+1. Install *generator-botbuilder-java*. Make sure to install globally.
 
     ```bash
-    # Make sure to install globally.
     npm install -g generator-botbuilder-java
     ```
 
-3. Verify that *Yeoman* and *generator-botbuilder-java* have been installed correctly.
+1. Verify that *Yeoman* and *generator-botbuilder-java* have been installed correctly.
 
     ```bash
     yo botbuilder-java --help

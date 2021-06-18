@@ -28,7 +28,7 @@ This article describes how to use an external service to execute the operation a
 - Familiarity with
   [Azure Queue Storage](/azure/storage/queues/storage-queues-introduction) and
   [Azure Functions C# script](/azure/azure-functions/functions-reference-csharp).
-- A copy of the **multi-turn prompt** sample in [**C#**](https://aka.ms/cs-multi-prompts-sample).
+- A copy of the **multi-turn prompt** sample in [**C#**](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/05.multi-turn-prompt).
 
 ## About this sample
 
@@ -142,7 +142,7 @@ For more information, see [create a storage account](/azure/storage/common/stora
 
 ## Create the bot
 
-1. Start with a copy of the C# [Multi-Turn-Prompt](https://aka.ms/cs-multi-prompts-sample) sample.
+1. Start with a copy of the C# [Multi-Turn-Prompt](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/05.multi-turn-prompt) sample.
 1. Add the **Azure.Storage.Queues** NuGet package to your project. <!--For more information, see [How to Use Queues](/azure/storage/queues/storage-dotnet-how-to-use-queues).-->
 1. Add the connection string for the Azure Storage account you created earlier, and the Storage Queue Name, to your bot's configuration file.
 
@@ -480,7 +480,7 @@ public void ConfigureServices(IServiceCollection services)
 
 ## To test the bot
 
-1. If you have not done so already, install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
+1. If you have not done so already, install the [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md).
 1. Run the sample locally on your machine.
 1. Start the Emulator, connect to your bot, and send messages as shown below.
 

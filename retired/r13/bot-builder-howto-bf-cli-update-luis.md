@@ -171,15 +171,15 @@ For information about publishing a LUIS application, see [Publish your active, t
 [lu-templates]: ../file-format/bot-builder-lu-file-format.md
 [luis-how-to-azure-subscription]: /azure/cognitive-services/luis/luis-how-to-azure-subscription
 
-[bf-luisapplicationimport]: https://aka.ms/botframework-cli-luis#bf-luisapplicationimport
-[bf-luisapplicationcreate]: https://aka.ms/botframework-cli-luis#bf-luisapplicationcreate
-[bf-luisapplicationlist]: https://aka.ms/botframework-cli-luis#bf-luisapplicationlist
-[bf-luisapplicationshow]: https://aka.ms/botframework-cli-luis#bf-luisapplicationshow
-[bf-luistrainrun]: https://aka.ms/botframework-cli-luis#bf-luistrainrun
-[luisapplicationpublish]: https://aka.ms/botframework-cli-luis#bf-luisapplicationpublish
-[bf-luisversionrename]: https://aka.ms/botframework-cli-luis#bf-luisversionrename
-[bf-luisversiondelete]:  https://aka.ms/botframework-cli-luis#bf-luisversiondelete
-[bf-luisconvert]: https://aka.ms/botframework-cli-luis#bf-luisconvert
+[bf-luisapplicationimport]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli-luis#bf-luisapplicationimport
+[bf-luisapplicationcreate]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli-luis#bf-luisapplicationcreate
+[bf-luisapplicationlist]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli-luis#bf-luisapplicationlist
+[bf-luisapplicationshow]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli-luis#bf-luisapplicationshow
+[bf-luistrainrun]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli-luis#bf-luistrainrun
+[luisapplicationpublish]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli-luis#bf-luisapplicationpublish
+[bf-luisversionrename]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli-luis#bf-luisversionrename
+[bf-luisversiondelete]:  https://github.com/microsoft/botframework-cli/tree/main/packages/cli-luis#bf-luisversiondelete
+[bf-luisconvert]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli-luis#bf-luisconvert
 
 [luis-how-to-add-intents]: /azure/cognitive-services/LUIS/luis-how-to-add-intents
 [luis-how-to-start-new-app]: /azure/cognitive-services/LUIS/luis-how-to-start-new-app

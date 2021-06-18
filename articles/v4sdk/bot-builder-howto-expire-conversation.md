@@ -753,10 +753,10 @@ For more information, see [Configure time to live in Azure Cosmos DB][cosmos-ttl
 [concept-state]: bot-builder-concept-state.md
 [concept-dialogs]: bot-builder-concept-dialog.md
 
-[cs-sample]: https://aka.ms/cs-multi-prompts-sample
-[js-sample]: https://aka.ms/js-multi-prompts-sample
-[java-sample]: https://aka.ms/java-multi-prompts-sample
-[python-sample]: https://aka.ms/python-multi-prompts-sample
+[cs-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/05.multi-turn-prompt
+[js-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/05.multi-turn-prompt
+[java-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/05.multi-turn-prompt
+[python-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/05.multi-turn-prompt
 
 [cosmos-ttl]: /azure/cosmos-db/how-to-time-to-live
-[emulator-readme]: https://aka.ms/bot-framework-emulator-readme
+[emulator-readme]: https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md

@@ -20,7 +20,7 @@ Language generation (LG) templates make it easy for bot developers to send a var
 ## Prerequisites
 
 - A [LUIS](https://luis.ai) account.
-- A copy of the language generation core bot sample in either [C#](https://aka.ms/lg-csharp-13-core-bot-sample) or [Javascript](https://aka.ms/lg-javascript-13-core-bot-sample).
+- A copy of the language generation core bot sample in either [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/language-generation/13.core-bot) or [Javascript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/language-generation/13.core-bot).
 - Knowledge of [bot basics](../v4sdk/bot-builder-basics.md) and [language generation](../v4sdk/bot-builder-concept-language-generation.md).
 
 ## About the sample
@@ -136,7 +136,7 @@ For example, if `Destination` equals `null`, then the `PromptforDestinationCity`
 
 ## Create a cards template
 
-Language generation templates can use cards and media to create a richer conversational experience. In **welcomeCard.lg**, four templates are used to create the [Adaptive Card](https://aka.ms/msbot-adaptivecards) that displays when you first start the bot.
+Language generation templates can use cards and media to create a richer conversational experience. In **welcomeCard.lg**, four templates are used to create the [Adaptive Card](https://adaptivecards.io/) that displays when you first start the bot.
 
 `Adaptive Card` defines an Adaptive card JSON object:
 
@@ -187,9 +187,9 @@ After updating your bot logic and LG templates you are ready to add LUIS to your
 
 ## Test the bot
 
-Download and install the latest [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
+Download and install the latest [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md).
 
-1. Run the sample locally on your machine. If you need instructions, refer to the readme file for the [C# Sample](https://aka.ms/cs-core-sample), [JS Sample](https://aka.ms/js-core-sample) or [Python Sample](https://aka.ms/python-core-sample).
+1. Run the sample locally on your machine. If you need instructions, refer to the readme file for the [C# Sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot), [JS Sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot) or [Python Sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/13.core-bot).
 
 1. In the Emulator, type a message such as "travel to Paris" or "going from Paris to Berlin". Use any utterance found in the file FlightBooking.json for training the intent "Book flight".
 

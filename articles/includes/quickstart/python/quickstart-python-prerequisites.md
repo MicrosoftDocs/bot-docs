@@ -25,5 +25,5 @@ The last package, **cookiecutter**, will be used to generate your bot. Verify th
 [3.6]: https://www.python.org/downloads/release/python-369/
 [3.7]: https://www.python.org/downloads/release/python-375/
 [3.8]: https://www.python.org/downloads/release/python-383/
-[Emulator]: https://aka.ms/bot-framework-emulator-readme
+[Emulator]: https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md
 [virtual-environment]:https://docs.python.org/3/library/venv.html

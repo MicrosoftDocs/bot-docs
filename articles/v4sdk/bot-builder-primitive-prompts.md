@@ -22,7 +22,7 @@ A conversation between a bot and a user often involves asking (prompting) the us
 
 ## Prerequisites
 
-- The code in this article is based on the Prompt Users for Input sample. You'll need a copy of either the **[C# sample](https://aka.ms/cs-primitive-prompt-sample), [JavaScript sample](https://aka.ms/js-primitive-prompt-sample), [Java sample](https://aka.ms/java-simple-prompt-sample), or [Python sample](https://aka.ms/python-primitive-prompt-sample)**.
+- The code in this article is based on the Prompt Users for Input sample. You'll need a copy of either the **[C# sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/44.prompt-users-for-input), [JavaScript sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/44.prompt-for-user-input), [Java sample](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/44.prompt-users-for-input), or [Python sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/44.prompt-for-user-input)**.
 - Knowledge of [managing state](bot-builder-concept-state.md) and how to [save user and conversation data](bot-builder-howto-v4-state.md).
 
 ## About the sample code
@@ -265,9 +265,9 @@ The bot uses the following criteria to validate input.
 
 ## Test the bot locally
 
-Download and install the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme) to test the bot locally.
+Download and install the [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md) to test the bot locally.
 
-1. Run the sample locally on your machine. If you need instructions, refer to the README file for [C# sample](https://aka.ms/cs-primitive-prompt-sample), [JS sample](https://aka.ms/js-primitive-prompt-sample), or the [Python sample](https://aka.ms/python-primitive-prompt-sample).
+1. Run the sample locally on your machine. If you need instructions, refer to the README file for [C# sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/44.prompt-users-for-input), [JS sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/44.prompt-for-user-input), or the [Python sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/44.prompt-for-user-input).
 1. Test it using the Emulator as shown below.
 
 ![Sample interaction in the Emulator](media/primitive-prompts.png)

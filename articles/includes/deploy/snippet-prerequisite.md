@@ -7,7 +7,7 @@
 <!-- - If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
 - Install the latest version of the [Azure cli tool](/cli/azure/install-azure-cli).
 - Install latest version of the [MSBot](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/MSBot) tool.
-- Install latest released version of the [Bot Framework Emulator](https://aka.ms/Emulator-wiki-getting-started).
+- Install latest released version of the [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md).
 - Install and configure [ngrok](https://github.com/Microsoft/BotFramework-Emulator/wiki/Tunneling-%28ngrok%29).
 - Knowledge of [Managing bot resources](~/v4sdk/bot-file-basics.md).
 

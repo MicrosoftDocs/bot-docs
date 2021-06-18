@@ -11,7 +11,7 @@ ms.date: 02/20/2020
 
 # Add speech to messages with the Bot Connector API
 
-If you are building a bot for a speech-enabled channel such as Cortana, you can construct messages that specify the text to be spoken by your bot. You can also attempt to influence the state of the client's microphone by specifying an [input hint](bot-framework-rest-connector-add-input-hints.md) to indicate whether your bot is accepting, expecting, or ignoring user input.
+If you are building a bot for a speech-enabled channel, you can construct messages that specify the text to be spoken by your bot. You can also attempt to influence the state of the client's microphone by specifying an [input hint](bot-framework-rest-connector-add-input-hints.md) to indicate whether your bot is accepting, expecting, or ignoring user input.
 
 You can configure your bot to allow client applications to communicate with it through [Direct Line Speech channel](../bot-service-channel-connect-directlinespeech.md).
 

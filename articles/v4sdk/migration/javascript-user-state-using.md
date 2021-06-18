@@ -138,7 +138,7 @@ To learn more about deploying a bot to Azure, see [Deploy your bot to Azure][40]
 - [Restify][30]
 - [dotenv][31]
 
-[3]: https://aka.ms/botframework-emulator-github
+[3]: https://github.com/microsoft/botframework-emulator
 [5]: https://github.com/microsoft/botframework-emulator
 [6]: https://github.com/Microsoft/BotFramework-Emulator/releases
 [7]: /azure/bot-service/bot-builder-storage-concept

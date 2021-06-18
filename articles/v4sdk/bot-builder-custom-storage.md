@@ -23,7 +23,7 @@ to get its job done.
 
 ## Prerequisites
 
-- The full sample code used in this article can be found here: [C# sample](https://aka.ms/scale-out).
+- The full sample code used in this article can be found here: [C# sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/42.scaleout).
 
 In this article, we will be exploring the semantics around the bot's interactions with the Azure Bot Service and the Store.
 
@@ -154,7 +154,7 @@ Implementing this against Azure Blob Storage is straight forward.
 
 As you can see Azure Blob Storage is doing the real work here. Note the catch of specific exceptions and how that is translated across to meet what will be the expectations of the calling code. That is, on the load we want a Not Found exception to return null and the Precondition Failed exception on the Save to return bool.
 
-All this source code will be available in a corresponding [sample](https://aka.ms/scale-out) and that sample will include a memory store implementation.
+All this source code will be available in a corresponding [sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/42.scaleout) and that sample will include a memory store implementation.
 
 ## Implementing the Retry Loop
 
@@ -203,4 +203,4 @@ And finally, the custom Accessor, we only need to implement Get because the stat
 
 ## Additional information
 
-The [C# sample](https://aka.ms/scale-out) code used in this article is available on GitHub.
+The [C# sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/42.scaleout) code used in this article is available on GitHub.

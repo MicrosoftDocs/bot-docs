@@ -124,7 +124,7 @@ The bot correctly answers the questions that directly map to the ones that were 
 Some knowledge bots require natural language processing (NLP) capabilities so that they can
 analyze a user's messages to determine the user's intent.
 [Language Understanding (LUIS)](https://www.luis.ai) provides a fast and effective means of adding NLP capabilities to bots.
-LUIS enables you to use existing, pre-built models from Bing and Cortana whenever they meet your needs, as well as allowing you to create specialized models of your own.
+LUIS enables you to use existing, pre-built models from Bing whenever they meet your needs, as well as allowing you to create specialized models of your own.
 
 When working with huge datasets, it's not necessarily feasible to train an NLP model with every variation of an entity.
 In a music playing bot, for example, a user might message "Play Reggae", "Play Bob Marley", or "Play One Love".
@@ -186,7 +186,7 @@ The Bot Framework SDK provide built-in support for LUIS and QnA Maker. This enab
 
 ## Sample code
 
-- For a sample that shows how to create a basic knowledge bot using the Bot Framework SDK for .NET, see the <a href="https://aka.ms/qna-with-appinsights" target="_blank">Knowledge Bot sample</a> in GitHub.
+- For a sample that shows how to create a basic knowledge bot using the Bot Framework SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/11.qnamaker" target="_blank">Knowledge Bot sample</a> in GitHub.
 <!-- TODO: Do not have a current bot sample to work with this
 - For a sample that shows how to create more complex knowledge bots using the Bot Framework SDK for .NET, see the <a href="https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/demo-Search" target="_blank">Search-powered Bots sample</a> in GitHub.
 -->

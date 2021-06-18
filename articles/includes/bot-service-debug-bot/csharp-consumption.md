@@ -7,7 +7,7 @@ The Consumption plan serverless C\# environment in Bot Service has more in commo
 Before you can debug your Consumption plan C# bot, you must complete these tasks.
 
 - Download the source code for your bot (from Azure), as described in [Set up continuous deployment](../../bot-service-build-continuous-deployment.md).
-- Download and install the [Bot Framework Emulator](https://aka.ms/Emulator-wiki-getting-started).
+- Download and install the [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md).
 - Install the <a href="https://www.npmjs.com/package/azure-functions-cli" target="_blank">Azure Functions CLI</a>.
 - Install the <a href="https://github.com/dotnet/cli" target="_blank">DotNet CLI</a>.
 
@@ -28,7 +28,7 @@ First, open a command prompt and navigate to the folder where the **project.json
 > Visual Studio 2017 changes how Visual Studio handles dependencies.
 > While Visual Studio 2015 uses **project.json** to handle dependencies,
 > Visual Studio 2017 uses a **.csproj** model when loading in Visual Studio.
-> If you are using Visual Studio 2017, download this [**.csproj** file](https://aka.ms/v3-dotnet-debug-csproj)
+> If you are using Visual Studio 2017, download this [**.csproj** file](https://botframework.blob.core.windows.net/bf-v3/azure-bot-service/bf-dotnetpreview3-debug-csproj.zip)
 > to the **/messages** folder in your repository before you run the `dotnet restore` command.
 
 ![Command prompt](~/media/bot-service-debug-bot/csharp-azureservice-debug-envconfig.png)

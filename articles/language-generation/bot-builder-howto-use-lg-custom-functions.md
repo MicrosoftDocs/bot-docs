@@ -188,9 +188,9 @@ You're now ready to test your bot.
 
 ## Test the bot
 
-Download and install the latest version of the [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme).
+Download and install the latest version of the [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md).
 
-1. Run the sample locally on your machine. If you need instructions, refer to the README file for the [C#](https://aka.ms/dotnet-lg-20-custom-function-sample)or [Javascript](https://aka.ms/js-lg-20-custom-functions-sample) sample.
+1. Run the sample locally on your machine. If you need instructions, refer to the README file for the [C#](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/language-generation/20.extending-with-custom-functions)or [Javascript](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/language-generation/20.custom-functions) sample.
 1. In the Emulator, type anything. You will notice that the Emulator will return the square root of numbers entered and `NaN` for all other input.
 
 ![test the bot](../v4sdk/media/language-generation/botbuilder-howto-custom-functions/test-bot.png)

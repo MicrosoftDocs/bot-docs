@@ -376,11 +376,11 @@ See [Using declarative assets in adaptive dialogs][declarative] for more informa
 
 [bf-cli-overview]: bf-cli-overview.md
 
-[bf-qnamakerconvert]: https://aka.ms/botframework-cli#bf-qnamakerconvert
-[bf-qnamakerkbcreate]: https://aka.ms/botframework-cli#bf-qnamakerkbcreate
-[bf-qnamakerkbpublish]: https://aka.ms/botframework-cli#bf-qnamakerkbpublish
-[bf-qnamakerinit]: https://aka.ms/botframework-cli#bf-qnamakerinit
-[bf-qnamakerbuild]: https://aka.ms/botframework-cli#bf-qnamakerbuild
+[bf-qnamakerconvert]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-qnamakerconvert
+[bf-qnamakerkbcreate]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-qnamakerkbcreate
+[bf-qnamakerkbpublish]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-qnamakerkbpublish
+[bf-qnamakerinit]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-qnamakerinit
+[bf-qnamakerbuild]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-qnamakerbuild
 [dialog-merge-command]: bot-builder-concept-adaptive-dialog-declarative.md#the-merge-command
 
 [test-knowledge-base]: /azure/cognitive-services/QnAMaker/how-to/test-knowledge-base

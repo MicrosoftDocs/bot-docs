@@ -178,4 +178,4 @@ Please, refer to the following resources for more details and background informa
 | [Complex Flow](../bot-builder-dialog-manage-complex-conversation-flow.md) | Manage complex conversation flows |
 | [Reuse Dialogs](../bot-builder-compositcontrol.md) | Create independent dialogs to handle specific scenarios |
 | [Interruptions](../bot-builder-howto-handle-user-interrupt.md) | Handling interruptions to create a robust bot |
-| [Activity Schema](https://aka.ms/botSpecs-activitySchema) | Schema for humans and automated software |
+| [Activity Schema](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md) | Schema for humans and automated software |

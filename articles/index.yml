@@ -37,12 +37,18 @@ conceptualContent:
         - url: /composer/introduction
           itemType: overview
           text: Overview
+        - url: /composer/install-composer
+          itemType: quickstart
+          text: Install Composer for Windows, macOS, or Linux
         - url: /composer/quickstart-create-bot
           itemType: quickstart
           text: Quickstart
         - url: /composer/tutorial/tutorial-introduction
           itemType: tutorial
           text: Tutorials
+        - url: /composer/concept-templates
+          itemType: learn
+          text: Use templates in Composer
         - url: /composer/how-to-publish-bot
           itemType: how-to-guide
           text: Publish to Azure

@@ -22,5 +22,5 @@ bf luis:generate:ts -i <luis-model-file> -o <output-file-name> --className <clas
 
 For additional information on using this command, see [bf luis:generate:ts][bf-luisgeneratets] in the BF CLI LUIS README.
 
-[bf-luisgeneratecs]: https://aka.ms/botframework-cli-luis#bf-luisgeneratecs
-[bf-luisgeneratets]: https://aka.ms/botframework-cli-luis#bf-luisgeneratets
+[bf-luisgeneratecs]: https://github.com/microsoft/botframework-cli/tree/main/packages/luis#bf-luisgeneratecs
+[bf-luisgeneratets]: https://github.com/microsoft/botframework-cli/tree/main/packages/luis#bf-luisgeneratets

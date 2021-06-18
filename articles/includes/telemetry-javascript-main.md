@@ -1,9 +1,9 @@
-This article starts with the [CoreBot sample app](https://aka.ms/js-core-sample) and adds the code required to integrate telemetry into any bot. This will enable Application Insights to begin tracking requests.
+This article starts with the [CoreBot sample app](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot) and adds the code required to integrate telemetry into any bot. This will enable Application Insights to begin tracking requests.
 
 > [!IMPORTANT]
 > If you have not setup your [Application Insights](/azure/azure-monitor/app/app-insights-overview) account and created your [Application Insights key](../bot-service-resources-app-insights-keys.md), do that before proceeding.
 
-1. Open the [CoreBot sample app](https://aka.ms/js-core-sample) in Visual Studio Code.
+1. Open the [CoreBot sample app](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot) in Visual Studio Code.
 
 2. Add the [Application Insights key](../bot-service-resources-app-insights-keys.md) to your `.env` file: `InstrumentationKey=<EnterInstrumentationKeyHere>`. The `.env` file contains metadata about external services the bot uses while running. For example, Application Insights and the Language Understanding (LUIS) service connection and metadata is stored there. The addition to your `.env` file must be in this format:
 

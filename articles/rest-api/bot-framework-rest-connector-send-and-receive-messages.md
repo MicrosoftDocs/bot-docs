@@ -11,7 +11,7 @@ ms.date: 12/13/2017
 
 # Send and receive messages with the Bot Connector API
 
-The Bot Connector service enables a bot to communicate across multiple channels such as Email, Slack, and more. It facilitates communication between bot and user, by relaying [activities](https://aka.ms/botSpecs-activitySchema) from bot to channel and from channel to bot. Every activity contains information used for routing the message to the appropriate destination along with information about who created the message, the context of the message, and the recipient of the message. This article describes how to use the Bot Connector service to exchange **message** activities between bot and user on a channel. 
+The Bot Connector service enables a bot to communicate across multiple channels such as Email, Slack, and more. It facilitates communication between bot and user, by relaying [activities](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md) from bot to channel and from channel to bot. Every activity contains information used for routing the message to the appropriate destination along with information about who created the message, the context of the message, and the recipient of the message. This article describes how to use the Bot Connector service to exchange **message** activities between bot and user on a channel. 
 
 ## <a id="create-reply"></a> Reply to a message
 
@@ -146,7 +146,7 @@ Your bot can then use this conversation ID to [send a message](#send-message) to
 ## Additional resources
 
 - [Create messages](bot-framework-rest-connector-create-messages.md)
-- [Bot Framework Activity schema](https://aka.ms/botSpecs-activitySchema)
+- [Bot Framework Activity schema](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md)
 
 [Activity]: bot-framework-rest-connector-api-reference.md#activity-object
 [ConversationParameters]: bot-framework-rest-connector-api-reference.md#conversationparameters-object

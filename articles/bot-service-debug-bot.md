@@ -22,7 +22,7 @@ This article describes how to debug your bot using an integrated development env
 
 ## Prerequisites
 
-- Download and install the [Bot Framework Emulator](https://aka.ms/Emulator-wiki-getting-started).
+- Download and install the [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md).
 - Download and install [Visual Studio Code](https://code.visualstudio.com) or [Visual Studio](https://www.visualstudio.com/downloads) (Community Edition or above).
 
 <!-- ### Debug a JavaScript bot using command-line and Emulator

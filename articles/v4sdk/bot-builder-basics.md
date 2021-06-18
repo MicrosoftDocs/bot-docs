@@ -44,7 +44,7 @@ Interactions involve the exchange of _activities_, which are handled in _turns_.
 ### Activities
 
 Every interaction between the user (or a channel) and the bot is represented as an *activity*.
-The Bot Framework [Activity schema](https://aka.ms/botSpecs-activitySchema) defines the activities that can be exchanged between a user or channel and a bot. Activities can represent human text or speech, app-to-app notifications, reactions to other messages, and so on.
+The Bot Framework [Activity schema](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md) defines the activities that can be exchanged between a user or channel and a bot. Activities can represent human text or speech, app-to-app notifications, reactions to other messages, and so on.
 
 <a id="defining-a-turn"></a>
 
@@ -212,12 +212,12 @@ The SDK also lets you use channel adapters, in which the adapter itself addition
 
 The SDK provides a few channel adapters in some languages.
 More channel adapters are available through the Botkit and Community repositories.
-For more details, see the Bot Framework SDK repository's table of [channels and adapters](https://aka.ms/v4-botbuilder-repo#channels-and-adapters).
+For more details, see the Bot Framework SDK repository's table of [channels and adapters](https://github.com/microsoft/botframework-sdk#channels-and-adapters).
 
 ### The Bot Connector REST API
 
 The Bot Framework SDK wraps and builds upon the Bot Connector REST API. If you want to understand the underlying HTTP requests that support the SDK, see the Connector [authentication](../rest-api/bot-framework-rest-connector-authentication.md) and associated articles.
-The activities a bot sends and receives conform to the [Bot Framework Activity schema](https://aka.ms/botSpecs-activitySchema).
+The activities a bot sends and receives conform to the [Bot Framework Activity schema](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md).
 
 ## Next steps
 

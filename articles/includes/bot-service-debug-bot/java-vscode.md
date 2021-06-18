@@ -2,7 +2,7 @@
 
 In Visual Studio Code, you can set breakpoints and run the bot in debug mode to step through your code. See also [Create a bot with the Bot Framework SDK for Java](~/java/bot-builder-java-quickstart.md).
 
-1. Install the [Java Extension Pack](https://aka.ms/vscode-java-extension-pack) in VS Code if you have not already done so. This extension provides rich support for Java in VS Code, including debugging.
+1. Install the [Java Extension Pack](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack) in VS Code if you have not already done so. This extension provides rich support for Java in VS Code, including debugging.
 1. Launch VS Code and open your bot project folder.
 1. Set breakpoints as necessary. You can set breakpoints by hovering your mouse over the column to the left of the line numbers. A small red dot will appear. If you click on the dot, the breakpoint is set. If you click the dot again, the breakpoint is removed.
 1. Select the `EchoBot.java` file and add a breakpoint to a desired location.

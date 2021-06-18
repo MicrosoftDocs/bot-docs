@@ -109,7 +109,7 @@ Content-Type: application/json
                 "text": "descriptive text goes here",
                 "images": [
                     {
-                        "url": "https://aka.ms/DuckOnARock",
+                        "url": "https://www.publicdomainpictures.net/pictures/30000/t2/duck-on-a-rock.jpg",
                         "alt": "picture of a duck",
                         "tap": {
                             "type": "playAudio",
@@ -126,7 +126,7 @@ Content-Type: application/json
                     {
                         "type": "openUrl",
                         "title": "Watch Video",
-                        "image": "https://aka.ms/DuckOnARock",
+                        "image": "https://www.publicdomainpictures.net/pictures/30000/t2/duck-on-a-rock.jpg",
                         "value": "url goes here of the duck in flight"
                     }
                 ]
@@ -273,8 +273,8 @@ The resulting card contains a title, information about who created the card (the
 - [Send and receive messages](bot-framework-rest-connector-send-and-receive-messages.md)
 - [Add media attachments to messages](bot-framework-rest-connector-add-media-attachments.md)
 - [Channel reference][ChannelInspector]
-- [Bot Framework Activity schema](https://aka.ms/botSpecs-activitySchema)
-- [Bot Framework Cards schema](https://aka.ms/botSpecs-cardSchema)
+- [Bot Framework Activity schema](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md)
+- [Bot Framework Cards schema](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-cards.md)
 
 [ChannelInspector]: ../bot-service-channels-reference.md
 [Activity]: bot-framework-rest-connector-api-reference.md#activity-object

@@ -8,7 +8,7 @@ Bots are published to Skype from the [configuration page](~/bot-service-channel-
 ### Skype for Business
 
 >[!IMPORTANT]
->Skype for Business Online will retire on July 31, 2021. Skype for Business Online customers should see no change to the service before the retirement date. Read [Skype for Business Online to Be Retired](https://aka.ms/skype-business-announcement) for more details.
+>Skype for Business Online will retire on July 31, 2021. Skype for Business Online customers should see no change to the service before the retirement date. Read [Skype for Business Online to Be Retired](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/skype-for-business-online-to-be-retired-in-2021/ba-p/777833) for more details.
 
 Skype for Business bots are registered with a [Skype for Business Online tenant](https://msdn.microsoft.com/skype/Skype-For-Business-Bot-Framework/docs/overview) by a Tenant Administrator.
 

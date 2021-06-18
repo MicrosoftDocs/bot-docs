@@ -539,4 +539,4 @@ if (message.entities) {
 ## Additional resources
 
 - [Entities and activity types](../bot-service-activities-entities.md)
-- [Bot Framework Activity schema](https://aka.ms/botSpecs-activitySchema)
+- [Bot Framework Activity schema](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md)

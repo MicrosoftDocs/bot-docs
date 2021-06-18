@@ -19,10 +19,10 @@ Structured response templates let developers define a complex structure that sup
 
 For bot applications, the following support is provided:
 
-- [activity](https://aka.ms/botSpecs-activitySchema) definition
-- [card](https://aka.ms/botSpecs-cardSchema) definition
+- [activity](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md) definition
+- [card](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-cards.md) definition
 
-The [Bot Framework activity](https://aka.ms/botSpecs-activitySchema) template includes several customizable fields. The following properties are the most commonly used and are configurable via an activity template definition:
+The [Bot Framework activity](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md) template includes several customizable fields. The following properties are the most commonly used and are configurable via an activity template definition:
 
 | Property          | Use case                                                                                                                          |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------------------|
@@ -89,7 +89,7 @@ Here's an example of a [Hero card](/microsoftteams/platform/task-modules-and-car
 
 > [!NOTE]
 >
-> LG provides some variability in card definition, which is converted to align with the [SDK card definition](https://aka.ms/botSpecs-cardSchema). For example, both `image` and `images` fields are supported in all the card definitions in LG even though only `images` are supported in the SDK card definition.
+> LG provides some variability in card definition, which is converted to align with the [SDK card definition](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-cards.md). For example, both `image` and `images` fields are supported in all the card definitions in LG even though only `images` are supported in the SDK card definition.
 >
 >The values defined in all of the `image` and `images` fields in a HeroCard or thumbnail card are combined and converted to an images list in the generated card. For the other types of cards, the last defined value in the template will be assigned to the `image` field. The values you assign to the `image/images` field can be a string, [adaptive expression](/azure/bot-service/bot-builder-concept-adaptive-expressions), or array in the format using **|**.
 

@@ -1,10 +1,10 @@
 
-This article starts from the [CoreBot sample app](https://aka.ms/cs-core-sample) and adds the code required to integrate telemetry into any bot. This will enable Application Insights to begin tracking requests.
+This article starts from the [CoreBot sample app](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot) and adds the code required to integrate telemetry into any bot. This will enable Application Insights to begin tracking requests.
 
 > [!IMPORTANT]
 > If you have not setup your [Application Insights](/azure/azure-monitor/app/app-insights-overview) account and created your [Application Insights key](../bot-service-resources-app-insights-keys.md), do that before proceeding.
 
-1. Open the [CoreBot sample app](https://aka.ms/cs-core-sample) in Visual Studio.
+1. Open the [CoreBot sample app](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot) in Visual Studio.
 
 2. Add  the `Microsoft.Bot.Builder.Integration.ApplicationInsights.Core` NuGet package. For more information on using NuGet, see [Install and manage packages in Visual Studio](/nuget/consume-packages/install-use-packages-visual-studio):
 
@@ -100,6 +100,6 @@ Follow the steps below to update your CoreBot example:
     ```
 
 > [!TIP]
-> If you are following along and updating the CoreBot sample code, you can refer to the [Application Insights sample code](https://aka.ms/csharp-corebot-app-insights-sample) if you run into any problems.
+> If you are following along and updating the CoreBot sample code, you can refer to the [Application Insights sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/21.corebot-app-insights) if you run into any problems.
 
 That's all there is to adding telemetry to your bots dialogs, at this point if you ran your bot you should see things being logged in Application Insights, however if you have any integrated technology such as LUIS and QnA Maker you will need to add the `TelemetryClient` to that code as well.

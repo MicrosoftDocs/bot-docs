@@ -24,7 +24,7 @@ We use an EchoBot built locally using the Bot Framework v4
 
 ## Prerequisites
 
-- Download and install the [Bot Framework Emulator](https://aka.ms/Emulator-wiki-getting-started)
+- Download and install the [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md)
 - Knowledge of bot [Middleware](v4sdk/bot-builder-concept-middleware.md)
 - knowledge of bot [Managing state](v4sdk/bot-builder-concept-state.md)
 - Download and install [ngrok](https://ngrok.com/) (if you want to debug a bot configured in Azure to use additional channels)

@@ -94,7 +94,7 @@ If your template needs specific properties to be passed for resolution/expansion
 
 ## Multilingual generation and language fallback policy
 
-Your bot might target more than one spoken or display language. You can manage separate instances of the *TemplateEngine*, one per target language. For an example of how to add multiple languages, also known as language fallback, to your bot, see the multi-turn prompt with language fallback sample in [C#](https://aka.ms/csharp-lg-multi-turn-prompt-language-fallback-sample) or [JavaScript](https://aka.ms/js-lg-multi-turn-prompt-language-fallback-sample).
+Your bot might target more than one spoken or display language. You can manage separate instances of the *TemplateEngine*, one per target language. For an example of how to add multiple languages, also known as language fallback, to your bot, see the multi-turn prompt with language fallback sample in [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/language-generation/05.a.multi-turn-prompt-with-language-fallback) or [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/language-generation/05.a.multi-turn-prompt-with-language-fallback).
 
 <!--
 ## Grammar check and correction
@@ -233,7 +233,7 @@ The call `ExpandTemplate("TimeOfDayWithCondition", new { time = "evening" })` wi
 [15]:https://www.npmjs.com/package/botbuilder-lg
 [20]:../file-format/bot-builder-lg-file-format.md#switch-case
 [21]:../file-format/bot-builder-lg-file-format.md#importing-external-references
-[22]:https://aka.ms/lg-vscode-extension
+[22]:https://github.com/microsoft/botbuilder-tools/tree/lg-vscode-extension/packages/LGvscodeExt
 [23]:https://github.com/microsoft/botbuilder-tools/tree/V.Future/packages/MSLG
 [26]:https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/language-generation/javascript_nodejs
 [50]:../file-format/bot-builder-lg-file-format.md#importing-external-references

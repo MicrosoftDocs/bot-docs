@@ -37,26 +37,26 @@ In this article you will learn how to implement telemetry into your bot using Ap
 
 # [C#](#tab/csharp)
 
-* The [CoreBot sample code](https://aka.ms/cs-core-sample)
-* The [Application Insights sample code](https://aka.ms/csharp-corebot-app-insights-sample)
+* The [CoreBot sample code](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot)
+* The [Application Insights sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/21.corebot-app-insights)
 * A subscription to [Microsoft Azure](https://portal.azure.com/)
 * An [Application Insights key](../bot-service-resources-app-insights-keys.md)
 * Familiarity with [Application Insights](/azure/azure-monitor/app/app-insights-overview/)
 * [git](https://git-scm.com/)
 
 > [!NOTE]
-> The [Application Insights sample code](https://aka.ms/csharp-corebot-app-insights-sample) was built on top of the [CoreBot sample code](https://aka.ms/cs-core-sample). This article will step you through modifying the CoreBot sample code to incorporate telemetry. If you are following along in Visual Studio you will have the Application Insights sample code by the time you are finished.
+> The [Application Insights sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/21.corebot-app-insights) was built on top of the [CoreBot sample code](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot). This article will step you through modifying the CoreBot sample code to incorporate telemetry. If you are following along in Visual Studio you will have the Application Insights sample code by the time you are finished.
 
 # [JavaScript](#tab/javascript)
 
-* The [CoreBot sample code](https://aka.ms/js-core-sample)
-* The [Application Insights sample code](https://aka.ms/js-corebot-app-insights-sample)
+* The [CoreBot sample code](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot)
+* The [Application Insights sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/21.corebot-app-insights)
 * A subscription to [Microsoft Azure](https://portal.azure.com/)
 * An [Application Insights key](../bot-service-resources-app-insights-keys.md)
 * Familiarity with [Application Insights](/azure/azure-monitor/app/app-insights-overview/)
 * [Visual Studio Code](https://www.visualstudio.com/downloads)
 * [Node.js](https://nodejs.org/) version 10.14 or later. Use command `node --version` to determine the version of node you have installed.
-* [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
+* [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md)
 
 > [!NOTE]
 > The [Application Insights sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/21.corebot-app-insights) was built on top of the [CoreBot sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot). This article will step you through modifying the CoreBot sample code to incorporate telemetry. If you are following along in Visual Studio Code you will have the Application Insights sample code by the time you are finished.
@@ -65,14 +65,14 @@ In this article you will learn how to implement telemetry into your bot using Ap
 
     # [Python](#tab/python)
 
-    * The [CoreBot sample code](https://aka.ms/py-core-sample)
-    * The [Application Insights sample code](https://aka.ms/py-corebot-app-insights-sample)
+    * The [CoreBot sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/13.core-bot)
+    * The [Application Insights sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/21.corebot-app-insights)
     * A subscription to [Microsoft Azure](https://portal.azure.com/)
     * An [Application Insights key](../bot-service-resources-app-insights-keys.md)
     * Familiarity with [Application Insights](/azure/azure-monitor/app/app-insights-overview/)
 
     > [!NOTE]
-    > The [Application Insights sample code](https://aka.ms/py-corebot-app-insights-sample) was built on top of the [CoreBot sample code](https://aka.ms/py-core-sample). This article will step you through modifying the CoreBot sample code to incorporate telemetry. If you are following along in Visual Studio you will have the Application Insights sample code by the time you are finished.
+    > The [Application Insights sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/21.corebot-app-insights) was built on top of the [CoreBot sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/13.core-bot). This article will step you through modifying the CoreBot sample code to incorporate telemetry. If you are following along in Visual Studio you will have the Application Insights sample code by the time you are finished.
 -->
 
 ---

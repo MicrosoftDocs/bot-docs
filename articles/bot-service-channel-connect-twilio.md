@@ -224,4 +224,4 @@ The final step is to configure your new Twilio number's messaging endpoint, to e
 
 You can now test whether your bot is connected to Twilio correctly by sending an SMS message to your Twilio number.  Once the message is received by your bot it will send a message back to you, echoing the text from your message.
 
-You can also test this feature using the [sample bot for the Twilio adapter](https://aka.ms/csharp-63-twilio-adapter-sample) by populating the appSettings.json with the same values described in the steps above.
+You can also test this feature using the [sample bot for the Twilio adapter](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/63.twilio-adapter) by populating the appSettings.json with the same values described in the steps above.

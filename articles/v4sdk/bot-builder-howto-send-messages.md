@@ -222,7 +222,7 @@ async def on_message_activity(self, turn_context: TurnContext):
 ## Additional resources
 
 - [Activity processing](~/v4sdk/bot-builder-basics.md#the-activity-processing-stack)
-- [Message activity section](https://aka.ms/botSpecs-activitySchema#message-activity)
+- [Message activity section](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md#message-activity)
 - [Language Generation](bot-builder-concept-language-generation.md)
 
 ## Next steps

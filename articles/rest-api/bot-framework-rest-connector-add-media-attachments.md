@@ -46,7 +46,7 @@ Content-Type: application/json
     "attachments": [
         {
             "contentType": "image/png",
-            "contentUrl": "https://aka.ms/DuckOnARock",
+            "contentUrl": "https://www.publicdomainpictures.net/pictures/30000/t2/duck-on-a-rock.jpg",
             "name": "duck-on-a-rock.jpg"
         }
     ],
@@ -166,8 +166,8 @@ The media event name **media/pause** will appear in the `activity.name` field. R
 - [Create messages](bot-framework-rest-connector-create-messages.md)
 - [Send and receive messages](bot-framework-rest-connector-send-and-receive-messages.md)
 - [Add rich cards to messages](bot-framework-rest-connector-add-rich-cards.md)
-- [Bot Framework Activity schema](https://aka.ms/botSpecs-activitySchema)
-- [Bot Framework card schema](https://aka.ms/botSpecs-cardSchema)
+- [Bot Framework Activity schema](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md)
+- [Bot Framework card schema](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-cards.md)
 
 [Activity]: bot-framework-rest-connector-api-reference.md#activity-object
 [Attachment]: bot-framework-rest-connector-api-reference.md#attachment-object

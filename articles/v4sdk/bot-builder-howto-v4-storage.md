@@ -21,7 +21,7 @@ You can read and write directly to your storage object without using middleware 
 
 - If you don't have an Azure subscription, create a [free](https://azure.microsoft.com/free/) account before you begin.
 - Familiarity with article: Create a bot locally for [C#](../dotnet/bot-builder-dotnet-sdk-quickstart.md), [JavaScript](../javascript/bot-builder-javascript-quickstart.md), or [Python](../python/bot-builder-python-quickstart.md).
-- Bot Framework SDK v4 templates for [Visual Studio (C#)](https://aka.ms/bot-vsix), [Node.js](https://nodejs.org), or [Yeoman](http://yeoman.io).
+- Bot Framework SDK v4 templates for [Visual Studio (C#)](https://marketplace.visualstudio.com/items?itemName=BotBuilder.botbuilderv4), [Node.js](https://nodejs.org), or [Yeoman](http://yeoman.io).
 
 [!INCLUDE [VSIX templates](~/includes/vsix-templates-versions.md)]
 
@@ -194,7 +194,7 @@ class EchoBot extends ActivityHandler {
     constructor(myStorage) {
         super();
         this.storage = myStorage;
-        // See https://aka.ms/about-bot-activity-message to learn more about the message and other activity types.
+        // See https://docs.microsoft.com/azure/bot-service/bot-builder-basics to learn more about the message and other activity types.
         this.onMessage(async turnContext => { console.log('this gets called (message)');
         await turnContext.sendActivity(`You said '${ turnContext.activity.text }'`);
         // Save updated utterance inputs.
@@ -320,7 +320,7 @@ Run your bot locally.
 
 ### Start the Emulator and connect your bot
 
-Install the Bot Framework [Emulator](https://aka.ms/bot-framework-emulator-readme)
+Install the Bot Framework [Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md)
 Next, start the Emulator and then connect to your bot in the Emulator:
 
 1. Select the **Create new bot configuration** link in the Emulator **Welcome** tab.

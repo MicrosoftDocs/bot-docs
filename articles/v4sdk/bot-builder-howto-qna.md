@@ -23,7 +23,7 @@ One of the basic requirements in creating your own QnA Maker service is to popul
 
 - A [QnA Maker](https://www.qnamaker.ai/) account
 - Knowledge of [bot basics](bot-builder-basics.md), [QnA Maker](/azure/cognitive-services/qnamaker/overview/overview), and [managing bot resources](bot-file-basics.md).
-- A copy of the **QnA Maker (simple)** sample in [**C#**](https://aka.ms/cs-qna), [**JavaScript**](https://aka.ms/js-qna-sample), [**Java**](https://aka.ms/java-qna-sample), or [**Python**](https://aka.ms/bot-qna-python-sample-code).
+- A copy of the **QnA Maker (simple)** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/11.qnamaker), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/11.qnamaker), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/11.qnamaker), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/11.qnamaker).
 
 ## About this sample
 
@@ -194,7 +194,7 @@ In the **qna_bot.py** file, we pass the user's input to the QnA Maker service's 
 
 ## Test the bot
 
-Run the sample locally on your machine. If you haven't done so already, install the [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md#download). For further instructions, refer to the sample's README ([C#](https://aka.ms/cs-qna), [JavaScript](https://aka.ms/js-qna-sample), [Python](https://aka.ms/bot-qna-python-sample-code)).
+Run the sample locally on your machine. If you haven't done so already, install the [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md#download). For further instructions, refer to the sample's README ([C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/11.qnamaker), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/11.qnamaker), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/11.qnamaker)).
 
 Start the Emulator, connect to your bot, and send a message as shown below.
 
@@ -202,7 +202,7 @@ Start the Emulator, connect to your bot, and send a message as shown below.
 
 ## Additional information
 
-The **QnA Maker multi-turn** sample ([**C#**](https://aka.ms/cs-qna-multiturn), [**JavaScript**](https://aka.ms/js-qna-multiturn), [**Java**](https://aka.ms/java-qna-multiturn), [**Python**](https://aka.ms/py-qna-multiturn)) shows how to use a QnA Maker dialog to support QnA Maker's follow-up prompt and active learning features.
+The **QnA Maker multi-turn** sample ([**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/11.qnamaker-multiturn), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/49.qnamaker-all-features), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/49.qnamaker-all-features), [**Python**](https://aka.ms/py-qna-multiturn)) shows how to use a QnA Maker dialog to support QnA Maker's follow-up prompt and active learning features.
 
 - QnA Maker supports follow-up prompts, also known as multi-turn prompts.
 If the QnA Maker knowledge base requires an additional response from the user, QnA Maker sends context information that you can use to prompt the user. This information is also used to make any follow-up calls to the QnA Maker service.
@@ -215,7 +215,7 @@ The QnA Maker dialog supports explicit feedback for the active learning feature.
 
   To enable this feature on a knowledge base, see the QnA Maker documentation on [Active learning suggestions](/azure/cognitive-services/qnamaker/concepts/active-learning-suggestions).
 
-<!--To learn how to incorporate multi-turn support in your bot, take a look at the QnA Maker Multi-turn [[**C#**](https://aka.ms/cs-qna-multiturn) | [**JS**](https://aka.ms/js-qna-multiturn)] sample.-->
+<!--To learn how to incorporate multi-turn support in your bot, take a look at the QnA Maker Multi-turn [[**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/11.qnamaker-multiturn) | [**JS**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/49.qnamaker-all-features)] sample.-->
 
 <!--TODO: Update code based on final sample 
 The following code snippets come from the proof-of-concept **multi-turn QnA Maker prompts** sample for

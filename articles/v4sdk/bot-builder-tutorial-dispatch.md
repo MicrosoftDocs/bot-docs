@@ -647,8 +647,8 @@ To improve services used in this sample, refer to best practice for [LUIS](/azur
 
 [cs-sample]: https://aka.ms/bot/dispatch-sample-cs-prev
 [js-sample]: https://aka.ms/bot/dispatch-sample-js-prev
-[java-sample]: https://aka.ms/dispatch-sample-java
-[python-sample]: https://aka.ms/dispatch-sample-python
+[java-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/14.nlp-with-dispatch
+[python-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/14.nlp-with-dispatch
 
-[dispatch-readme]: https://aka.ms/dispatch-command-line-tool
-<!--[dispatch-evaluate]: https://aka.ms/dispatch-command-line-tool#evaluating-your-dispatch-model-->
+[dispatch-readme]: https://github.com/microsoft/botbuilder-tools/tree/master/packages/Dispatch
+<!--[dispatch-evaluate]: https://github.com/microsoft/botbuilder-tools/tree/master/packages/Dispatch#evaluating-your-dispatch-model-->

@@ -59,7 +59,7 @@ Here is a trace activity you might see if you ran the Core bot without first set
 The adapter's _on turn error_ handler catches any otherwise uncaught exception thrown from the bot during a turn.
 This is a good place for a trace activity, as you can send a user-friendly message to the user and send debugging information about the exception to the Emulator.
 
-This example code is from the **Core Bot** sample. See the complete sample in [**C#**](https://aka.ms/cs-core-sample) or [**JavaScript**](https://aka.ms/js-core-sample) or [**Python**](https://aka.ms/py-core-sample). For Java the code below is from the SDK code [**Java**](https://aka.ms/botbuilder-java).
+This example code is from the **Core Bot** sample. See the complete sample in [**C#**](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot) or [**JavaScript**](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot) or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/13.core-bot). For Java the code below is from the SDK code [**Java**](https://github.com/microsoft/botbuilder-java).
 
 # [C#](#tab/csharp)
 
@@ -208,4 +208,4 @@ The adapter's **on_error** handler creates the trace activity to include the exc
 
 - How to [Debug a bot with inspection middleware](../bot-service-debug-inspection-middleware.md) describes how to add middleware that emits trace activities.
 - For debugging a deployed bot, you can use Application Insights. For more information, see [Add telemetry to your bot](bot-builder-telemetry.md).
-- For detailed information about each activity type, see the [Bot Framework Activity schema](https://aka.ms/botSpecs-activitySchema).
+- For detailed information about each activity type, see the [Bot Framework Activity schema](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md).

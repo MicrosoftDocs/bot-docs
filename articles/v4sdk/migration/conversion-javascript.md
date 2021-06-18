@@ -43,7 +43,7 @@ For more information about specific changes, see [differences between the v3 and
 
 - Node.js
 - Visual Studio Code
-- [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
+- [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md)
 
 ## About this bot
 
@@ -79,7 +79,7 @@ Edit **./index.js**, which is the entry point for our bot app. This will contain
 
     ```javascript
     // Import required bot services.
-    // See https://aka.ms/bot-services to learn more about the different parts of a bot.
+    // See https://docs.microsoft.com/azure/bot-service/bot-builder-basics to learn more about the different parts of a bot.
     const { BotFrameworkAdapter, MemoryStorage, ConversationState } = require('botbuilder');
 
     // This bot's main dialog.

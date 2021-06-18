@@ -412,7 +412,7 @@ See also the [highlighted values](https://github.com/microsoft/botbuilder-dotnet
 ## Additional resources
 
 - [Troubleshooting Bot Framework authentication](../bot-service-troubleshoot-authentication-problems.md)
-- [Bot Framework Activity schema](https://aka.ms/botSpecs-activitySchema)
+- [Bot Framework Activity schema](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md)
 - [JSON Web Token (JWT) draft-jones-json-web-token-07](http://openid.net/specs/draft-jones-json-web-token-07.html)
 - [JSON Web Signature (JWS) draft-jones-json-web-signature-04](https://tools.ietf.org/html/draft-jones-json-web-signature-04)
 - [JSON Web Key (JWK) RFC 7517](https://tools.ietf.org/html/rfc7517)

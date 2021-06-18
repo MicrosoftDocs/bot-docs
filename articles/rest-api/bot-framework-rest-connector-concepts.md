@@ -19,7 +19,7 @@ Bot Framework channels enable your bot to exchange messages with channels config
 
 ### Activity
 
-The Connector service exchanges information between bot and channel (user) by passing an [Activity][Activity] object. The most common type of activity is **message**, but there are other activity types that can be used to communicate various types of information to a bot or channel. For details about Activities in the Bot Connector service, see [Activities overview](https://aka.ms/botSpecs-activitySchema).
+The Connector service exchanges information between bot and channel (user) by passing an [Activity][Activity] object. The most common type of activity is **message**, but there are other activity types that can be used to communicate various types of information to a bot or channel. For details about Activities in the Bot Connector service, see [Activities overview](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md).
 
 ## Authentication
 
@@ -35,7 +35,7 @@ The Bot Framework provides client libraries that can be used to build bots in ei
 In addition to simplifying calls to Bot Framework REST APIs, each Bot Framework SDK also provides a powerful system for building dialogs that encapsulate conversational logic, built-in prompts for simple things such as Yes/No, strings, numbers, and enumerations, built-in support for powerful AI frameworks such as [LUIS](https://www.luis.ai/), and more.
 
 > [!NOTE]
-> As an alternative to using the SDK, you can generate your own client library in the language of your choice by using the [Bot Connector Swagger file](https://aka.ms/connector-swagger-file) or code direct to its REST API.
+> As an alternative to using the SDK, you can generate your own client library in the language of your choice by using the [Bot Connector Swagger file](https://github.com/Microsoft/botbuilder-dotnet/blob/master/libraries/Swagger/ConnectorAPI.json) or code direct to its REST API.
 
 ## Bot State service
 

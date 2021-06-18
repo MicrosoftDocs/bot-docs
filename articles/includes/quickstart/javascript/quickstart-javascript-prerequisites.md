@@ -2,7 +2,7 @@
 bot-builder-tutorial-create-basic-bot.md and bot-builder-javascript-quickstart.md -->
 
 - [Node.js](https://nodejs.org/)
-- [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
+- [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md)
 - Knowledge of [restify](http://restify.com/) and asynchronous programming in JavaScript
 - [Visual Studio Code](https://www.visualstudio.com/downloads) or your favorite IDE, if you want to edit the bot code.
 

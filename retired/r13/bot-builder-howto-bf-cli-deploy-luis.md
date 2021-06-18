@@ -358,14 +358,14 @@ See [Using declarative assets in adaptive dialogs][declarative] for more informa
 [luis-how-to-azure-subscription]: /azure/cognitive-services/luis/luis-how-to-azure-subscription
 [bf-cli-overview]: bf-cli-overview.md
 
-[bf-luisapplicationimport]: https://aka.ms/botframework-cli#bf-luisapplicationimport
-[bf-luisapplicationcreate]: https://aka.ms/botframework-cli#bf-luisapplicationcreate
-[bf-luisapplicationshow]: https://aka.ms/botframework-cli#bf-luisapplicationshow
-[bf-luistrainrun]: https://aka.ms/botframework-cli#bf-luistrainrun
-[luisapplicationpublish]: https://aka.ms/botframework-cli#bf-luisapplicationpublish
-[bf-luisgeneratecs]: https://aka.ms/botframework-cli#bf-luisgeneratecs
-[bf-luisgeneratets]: https://aka.ms/botframework-cli#bf-luisgeneratets
-[bf-luisbuild]: https://aka.ms/botframework-cli#bf-luisbuild
+[bf-luisapplicationimport]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-luisapplicationimport
+[bf-luisapplicationcreate]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-luisapplicationcreate
+[bf-luisapplicationshow]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-luisapplicationshow
+[bf-luistrainrun]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-luistrainrun
+[luisapplicationpublish]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-luisapplicationpublish
+[bf-luisgeneratecs]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-luisgeneratecs
+[bf-luisgeneratets]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-luisgeneratets
+[bf-luisbuild]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-luisbuild
 [declarative]: bot-builder-concept-adaptive-dialog-declarative.md
 [dialog-merge-command]: bot-builder-concept-adaptive-dialog-declarative.md#the-merge-command
 
@@ -377,7 +377,7 @@ See [Using declarative assets in adaptive dialogs][declarative] for more informa
 [luis-interactive-test]: /azure/cognitive-services/LUIS/luis-interactive-test
 [luis-how-to-publish-app]: /azure/cognitive-services/LUIS/luis-how-to-publish-app
 
-[ToDoBotWithLUISAndQnAMakerSample]: https://aka.ms/csharp-adaptive-dialog-08-todo-bot-luis-qnamaker-sample
+[ToDoBotWithLUISAndQnAMakerSample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/adaptive-dialog/08.todo-bot-luis-qnamaker
 
 [how-to-update-using-luis-cli]: bot-builder-howto-bf-cli-update-luis.md
 

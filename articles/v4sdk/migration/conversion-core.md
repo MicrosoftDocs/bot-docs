@@ -41,7 +41,7 @@ For more information about specific changes, see [differences between the v3 and
 
 [!INCLUDE [VSIX templates](~/includes/vsix-templates-versions.md)]
 
-1. If you haven't done so already, install the Bot Framework SDK v4 [template for C#](https://aka.ms/bot-vsix).
+1. If you haven't done so already, install the Bot Framework SDK v4 [template for C#](https://marketplace.visualstudio.com/items?itemName=BotBuilder.botbuilderv4).
 1. Open Visual Studio, and create a new Echo Bot project from the template. Name your project `ContosoHelpdeskChatBot`.
 
 ## Install additional NuGet packages

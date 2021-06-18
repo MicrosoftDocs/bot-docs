@@ -19,9 +19,9 @@ ms.date: 11/19/2019
 
 The first step in troubleshooting 500 errors is enabling Application Insights.
 
-For AppInsights samples, see the luis-with-appinsights [C# sample](https://aka.ms/cs-luis-with-appinsights-sample) and [JS sample](https://aka.ms/js-luis-with-appinsights-sample).
+For AppInsights samples, see the luis-with-appinsights [C# sample](https://github.com/Microsoft/BotBuilder-Samples/blob/main/samples/csharp_dotnetcore/21.corebot-app-insights/) and [JS sample](https://github.com/Microsoft/BotBuilder-Samples/blob/main/samples/javascript_nodejs/21.corebot-app-insights).
 
- <!-- qna-with-appinsights ([C# sample](https://aka.ms/qna-with-appinsights) / [JS sample](https://aka.ms/js-qna-with-appinsights-sample)) samples demonstrate bots that support Azure Application Insights.-->
+ <!-- qna-with-appinsights ([C# sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/11.qnamaker) / [JS sample](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/11.qnamaker)) samples demonstrate bots that support Azure Application Insights.-->
 
 See [conversation analytics telemetry](./v4sdk/bot-builder-telemetry.md) for information about how to add Application Insights to an existing bot.
 

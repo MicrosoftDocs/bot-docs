@@ -141,8 +141,8 @@ The cross-trained recognizer set compares recognition results from more than one
 [15]:https://github.com/microsoft/botframework-cli/tree/main/packages/orchestrator
 [cross-train-concepts]: ../v4sdk/bot-builder-concept-cross-train.md
 [luis-to-luis-cross-training]: ../v4sdk/bot-builder-concept-cross-train.md#luis-to-luis-cross-training
-[qnamaker-cross-train]: https://aka.ms/botframework-cli#bf-qnamakercross-train
-[bf-luiscross-train]: https://aka.ms/botframework-cli#bf-luiscross-train
-[cs-sample-todo-bot]: https://aka.ms/csharp-adaptive-dialog-08-todo-bot-luis-qnamaker-sample
+[qnamaker-cross-train]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-qnamakercross-train
+[bf-luiscross-train]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-luiscross-train
+[cs-sample-todo-bot]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/adaptive-dialog/08.todo-bot-luis-qnamaker
 [howto-cross-train]: ../v4sdk/bot-builder-howto-cross-train.md
 [update-the-recognizer-type-to-luis]: /composer/how-to-add-luis#update-the-recognizer-type-to-luis

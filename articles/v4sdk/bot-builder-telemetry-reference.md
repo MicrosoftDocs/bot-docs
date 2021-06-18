@@ -31,11 +31,11 @@ Logged by the channel when a call to the Bot returns a non-2XX Http Response.
 
 When a WaterfallDialog begins, a `WaterfallStart` event is logged.
 
-- `user_id`  ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- `session_id` ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- `customDimensions.activityId`  ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- `customDimensions.activityType`  ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- `customDimensions.channelId` ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
+- `user_id`  ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- `session_id` ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- `customDimensions.activityId`  ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- `customDimensions.activityType`  ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- `customDimensions.channelId` ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
 - `customDimensions.DialogId` (This is the dialogId (string) passed into your Waterfall.  You can consider this the "waterfall type")
 - `customDimensions.InstanceID` (unique per instance of the dialog)
 
@@ -43,11 +43,11 @@ When a WaterfallDialog begins, a `WaterfallStart` event is logged.
 
 Logs individual steps from a Waterfall Dialog.
 
-- `user_id`  ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- `session_id` ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- `customDimensions.activityId`  ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- `customDimensions.activityType`  ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- `customDimensions.channelId` ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
+- `user_id`  ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- `session_id` ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- `customDimensions.activityId`  ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- `customDimensions.activityType`  ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- `customDimensions.channelId` ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
 - `customDimensions.DialogId` (This is the dialogId (string) passed into your Waterfall.  You can consider this the "waterfall type")
 - `customDimensions.StepName` (either method name or `StepXofY` if lambda)
 - `customDimensions.InstanceID` (unique per instance of the dialog)
@@ -56,11 +56,11 @@ Logs individual steps from a Waterfall Dialog.
 
 Logs when a Waterfall Dialog completes.
 
-- `user_id`  ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- `session_id` ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- `customDimensions.activityId`  ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- `customDimensions.activityType`  ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- `customDimensions.channelId` ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
+- `user_id`  ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- `session_id` ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- `customDimensions.activityId`  ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- `customDimensions.activityType`  ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- `customDimensions.channelId` ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
 - `customDimensions.DialogId` (This is the dialogId (string) passed into your Waterfall.  You can consider this the "waterfall type")
 - `customDimensions.InstanceID` (unique per instance of the dialog)
 
@@ -68,11 +68,11 @@ Logs when a Waterfall Dialog completes.
 
 Logs when a Waterfall Dialog is canceled.
 
-- `user_id`  ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- `session_id` ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- `customDimensions.activityId`  ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- `customDimensions.activityType`  ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- `customDimensions.channelId` ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
+- `user_id`  ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- `session_id` ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- `customDimensions.activityId`  ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- `customDimensions.activityType`  ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- `customDimensions.channelId` ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
 - `customDimensions.DialogId` (This is the dialogId (string) passed into your Waterfall.  You can consider this the "waterfall type")
 - `customDimensions.StepName` (either method name or `StepXofY` if lambda)
 - `customDimensions.InstanceID` (unique per instance of the dialog)
@@ -154,11 +154,11 @@ When not overridden, this event is logged from `Microsoft.Bot.Builder.TelemetryL
 
 Logged when bot sends a message.
 
-- UserID  ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- SessionID ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- ActivityID  ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- Channel  ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- ActivityType  ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
+- UserID  ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- SessionID ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- ActivityID  ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- Channel  ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- ActivityType  ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
 - ReplyToID
 - RecipientId
 - ConversationName
@@ -171,11 +171,11 @@ Logged when bot sends a message.
 ## CustomEvent: BotMessageUpdate
 **Logged From:** TelemetryLoggerMiddleware
 Logged when a message is updated by the bot (rare case)
-- UserID  ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- SessionID ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- ActivityID ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- Channel  ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- ActivityType  ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
+- UserID  ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- SessionID ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- ActivityID ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- Channel  ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- ActivityType  ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
 - RecipientId
 - ConversationId
 - ConversationName
@@ -186,11 +186,11 @@ Logged when a message is updated by the bot (rare case)
 ## CustomEvent: BotMessageDelete
 **Logged From:** TelemetryLoggerMiddleware
 Logged when a message is deleted by the bot (rare case)
-- UserID  ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- SessionID ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- ActivityID  ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- Channel  ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- ActivityType  ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
+- UserID  ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- SessionID ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- ActivityID  ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- Channel  ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- ActivityType  ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
 - RecipientId
 - ConversationId
 - ConversationName
@@ -200,11 +200,11 @@ Logged when a message is deleted by the bot (rare case)
 
 Logs results from LUIS service.
 
-- UserID  ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- SessionID ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- ActivityID ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- Channel ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- ActivityType ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
+- UserID  ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- SessionID ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- ActivityID ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- Channel ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- ActivityType ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
 - ApplicationId
 - Intent
 - IntentScore
@@ -221,11 +221,11 @@ Logs results from LUIS service.
 
 Logs results from QnA Maker service.
 
-- UserID ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- SessionID ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- ActivityID ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- Channel ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
-- ActivityType  ([From Telemetry Initializer](https://aka.ms/telemetry-initializer))
+- UserID ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- SessionID ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- ActivityID ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- Channel ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
+- ActivityType  ([From Telemetry Initializer](https://github.com/daveta/analytics/blob/master/appinsights_blog_42/bot_application_insights.md#identifiers-and-custom-events))
 - Username (Optional for PII)
 - Question (Optional for PII)
 - MatchedQuestion

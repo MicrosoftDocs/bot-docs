@@ -20,7 +20,7 @@ The primary goal when creating any bot is to engage your user in a meaningful co
 ## Prerequisites
 
 - Understand [bot basics](bot-builder-basics.md).
-- A copy of the **Welcome user sample** in either [C# Sample](https://aka.ms/welcome-user-mvc), [JS Sample](https://aka.ms/bot-welcome-sample-js), [Java Sample](https://aka.ms/bot-welcome-sample-java) or [Python Sample](https://aka.ms/bot-welcome-python-sample-code). The code from the sample is used to explain how to send welcome messages.
+- A copy of the **Welcome user sample** in either [C# Sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/03.welcome-user), [JS Sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/03.welcome-users), [Java Sample](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/03.welcome-user) or [Python Sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/03.welcome-user). The code from the sample is used to explain how to send welcome messages.
 
 ## About this sample code
 
@@ -302,9 +302,9 @@ As mentioned above, some user inputs generate a *Hero Card* in response to their
 
 ## Test the bot
 
-Download and install the latest [Bot Framework Emulator](https://aka.ms/bot-framework-emulator-readme)
+Download and install the latest [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md)
 
-1. Run the sample locally on your machine. If you need instructions, refer to the README file for [C# Sample](https://aka.ms/welcome-user-mvc) or [JS Sample](https://aka.ms/bot-welcome-sample-js).
+1. Run the sample locally on your machine. If you need instructions, refer to the README file for [C# Sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/03.welcome-user) or [JS Sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/03.welcome-users).
 1. Use the Emulator to test the bot as shown below.
 
 ![test welcome bot sample](media/welcome-user-emulator-1.png)

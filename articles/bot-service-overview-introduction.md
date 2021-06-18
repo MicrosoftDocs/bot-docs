@@ -87,7 +87,7 @@ As part of the Azure Bot Service and Bot Framework, we offer additional componen
 > [!NOTE]
 > The table above is not a comprehensive list. Explore the articles on the left, starting with [sending messages](~/v4sdk/bot-builder-howto-send-messages.md), for more bot functionality.
 
-Additionally, we provide command line tools to help you to create, manage, and test bot assets. These tools can configure LUIS apps, build a QnA knowledge base, build models to route between components, mock a conversation, and more. You can find more details in the command line tools [readme](https://aka.ms/bfcli).
+Additionally, we provide command line tools to help you to create, manage, and test bot assets. These tools can configure LUIS apps, build a QnA knowledge base, build models to route between components, mock a conversation, and more. You can find more details in the command line tools [readme](https://github.com/microsoft/botframework-cli).
 
 You also have access to a variety of [samples](https://github.com/microsoft/botbuilder-samples) that showcase many of the capabilities available through the SDK. These are great for developers looking for a more feature-rich starting point.
 
@@ -107,7 +107,7 @@ When you are ready for your bot to be available on the web, publish your bot to 
 
 ### Connect
 
-Connect your bot to channels such as Facebook, Messenger, Kik, Slack, Microsoft Teams, Telegram, text/SMS, Twilio, and Cortana. Bot Framework does most of the work necessary to send and receive messages from all of these different platforms - your bot application receives a unified, normalized stream of messages regardless of the number and type of channels it is connected to. For information on adding channels, see [channels](bot-service-manage-channels.md) topic.
+Connect your bot to channels such as Facebook, Messenger, Kik, Slack, Microsoft Teams, Telegram, text/SMS, and Twilio. Bot Framework does most of the work necessary to send and receive messages from all of these different platforms - your bot application receives a unified, normalized stream of messages regardless of the number and type of channels it is connected to. For information on adding channels, see [channels](bot-service-manage-channels.md) topic.
 
 ### Evaluate
 
