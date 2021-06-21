@@ -7,9 +7,10 @@ In this step, you create a bot application service which sets the deployment sta
 az deployment sub create --template-file "<path-to-template-with-new-rg.json" --location <region-location-name> --parameters appId="<app-id-from-previous-step>" appSecret="<password-from-previous-step>" botId="<id or bot-app-service-name>" botSku=F0 newAppServicePlanName="<new-service-plan-name>" newWebAppName="<bot-app-service-name>" groupName="<new-group-name>" groupLocation="<region-location-name>" newAppServicePlanLocation="<region-location-name>" --name "<bot-app-service-name>"
 ```
 
-> [!NOTE]
-> This step can take a few minutes to complete.
+This step can take a few minutes to complete.
 
+> [!IMPORTANT]
+> **Web App Bot** and **Bot Channels Registration** will be deprecated but existing resources will continue to work.Bots created with a version 4.13.0 or later template will generate an Azure Bot resource.
 
 | Option   | Description |
 |:---------|:------------|
