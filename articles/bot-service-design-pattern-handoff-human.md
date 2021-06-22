@@ -20,7 +20,7 @@ Microsoft Bot Framework is an open platform that allows developers to integrate 
 
 
 <!-- We don't own this aka link, and for v4, I think there is an updated pattern.
-You can read more about the Bot Framework [handoff protocol](https://github.com/microsoft/BotBuilder-Samples/tree/main/experimental/handoff-library/#protocol) <a href=" " target="blank">here</a>.
+You can read more about the Bot Framework [handoff protocol](https://github.com/microsoft/BotBuilder-Samples/tree/main/experimental/handoff-library/#protocol).
 -->
 
 ## Handoff integration models

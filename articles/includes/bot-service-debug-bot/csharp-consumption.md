@@ -1,4 +1,4 @@
-### <a id="debug-csharp-serverless"></a> Debug a Consumption plan C\# Functions bot
+### <a id="debug-csharp-serverless"> Debug a Consumption plan C\# Functions bot
 
 The Consumption plan serverless C\# environment in Bot Service has more in common with Node.js than a typical C\# application because it requires a runtime host, much like the Node engine. In Azure, the runtime is part of the hosting environment in the cloud, but you must replicate that environment locally on your desktop.
 
@@ -8,13 +8,13 @@ Before you can debug your Consumption plan C# bot, you must complete these tasks
 
 - Download the source code for your bot (from Azure), as described in [Set up continuous deployment](../../bot-service-build-continuous-deployment.md).
 - Download and install the [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md).
-- Install the <a href="https://www.npmjs.com/package/azure-functions-cli" target="_blank">Azure Functions CLI</a>.
-- Install the <a href="https://github.com/dotnet/cli" target="_blank">DotNet CLI</a>.
+- Install the [Azure Functions CLI](https://www.npmjs.com/package/azure-functions-cli).
+- Install the [DotNet CLI](https://github.com/dotnet/cli).
 
 If you want to be able to debug your code by using breakpoints in Visual Studio 2017, you must also complete these tasks.
 
-- Download and install <a href="https://www.visualstudio.com/downloads/" target="_blank">Visual Studio 2017</a> (Community Edition or above).
-- Download and install the <a href="https://visualstudiogallery.msdn.microsoft.com/e6bf6a3d-7411-4494-8a1e-28c1a8c4ce99" target="_blank">Command Task Runner Visual Studio Extension</a>.
+- Download and install [Visual Studio 2017](https://www.visualstudio.com/downloads/) (Community Edition or above).
+- Download and install the [Command Task Runner Visual Studio Extension](https://visualstudiogallery.msdn.microsoft.com/e6bf6a3d-7411-4494-8a1e-28c1a8c4ce99).
 
 > [!NOTE]
 > Visual Studio Code is not currently supported.

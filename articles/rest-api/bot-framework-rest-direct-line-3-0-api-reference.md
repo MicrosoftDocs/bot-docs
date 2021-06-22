@@ -31,7 +31,7 @@ For details about how to obtain a secret or token that your client can use to au
 
 ## HTTP status codes
 
-The <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html" target="_blank">HTTP status code</a> that is returned with each response indicates the outcome of the corresponding request.
+The [HTTP status code](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html) that is returned with each response indicates the outcome of the corresponding request.
 
 | HTTP status code | Meaning |
 |----|----|

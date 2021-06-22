@@ -42,7 +42,7 @@ For details about how to obtain a secret or token that your client can use to au
 
 ## HTTP status codes
 
-The <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html" target="_blank">HTTP status code</a> that is returned with each response indicates the outcome of the corresponding request.
+The [HTTP status code](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html) that is returned with each response indicates the outcome of the corresponding request.
 
 | HTTP status code | Meaning |
 |----|----|
@@ -168,7 +168,7 @@ Defines a message that a client sends to a bot or receives from a bot.
 |----|----|----|
 | **id** | string | ID that uniquely identifies the message (assigned by Direct Line). |
 | **conversationId** | string | ID that identifies the conversation.  |
-| **created** | string | Date and time that the message was created, expressed in <a href="https://en.wikipedia.org/wiki/ISO_8601" target="_blank">ISO-8601</a> format. |
+| **created** | string | Date and time that the message was created, expressed in the [ISO-8601](https://www.w3.org/QA/Tips/iso-date)) format. |
 | **from** | string | ID that identifies the user that is the sender of the message. When creating a message, clients should set this property to a stable user ID. Although Direct Line will assign a user ID if none is supplied, this typically results in unexpected behavior. |
 | **text** | string | Text of the message that is sent from user to bot or bot to user. |
 | **channelData** | object | An object that contains channel-specific content. Some channels provide features that require additional information that cannot be represented using the attachment schema. For those cases, set this property to the channel-specific content as defined in the channel's documentation. This data is sent unmodified between client and bot. This property must either be set to a complex object or left empty. Do not set it to a string, number, or other simple type. |

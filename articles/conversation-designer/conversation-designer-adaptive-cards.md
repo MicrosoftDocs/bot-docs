@@ -18,10 +18,9 @@ ROBOTS: NoIndex, NoFollow
 > Conversation Designer is not available to all customers yet. More details on
 > availability of Conversation Designer will come later this year.
 
-<a href="http://adaptivecards.io" target="_blank">Adaptive Cards</a> is a new schema that defines rich UI cards for use in several 
-different endpoints including Microsoft Bot Framework channels. 
+[Adaptive Cards](https://adaptivecards.io) is a new schema that defines rich UI cards for use in several  different endpoints including Microsoft Bot Framework channels. 
 
-Conversation Designer provides a deeply integrated authoring environment to author, preview, and use adaptive cards in your bots. 
+Conversation Designer provides a deeply integrated authoring environment to author, preview, and use adaptive cards in your bots.
 
 Adaptive cards can be defined in several different key places.
 
@@ -142,4 +141,3 @@ The following JSON shows the payload of an adaptive card.
     ]
 }
 ```
-

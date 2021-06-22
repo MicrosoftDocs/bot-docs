@@ -3,7 +3,7 @@ After you have deployed your bot to the cloud and verified that the deployment w
 
 ### If you have already registered your bot with the Bot Framework:
 
-1. Return to the <a href="https://dev.botframework.com" target="_blank">Bot Framework Portal</a> and [update your bot's Settings data](~/bot-service-manage-settings.md) to specify the **Messaging endpoint** for the bot.
+1. Return to the [Bot Framework Portal](https://dev.botframework.com) and [update your bot's Settings data](~/bot-service-manage-settings.md) to specify the **Messaging endpoint** for the bot.
 
 2. [Configure the bot to run on one or more channels](~/bot-service-manage-channels.md).
 

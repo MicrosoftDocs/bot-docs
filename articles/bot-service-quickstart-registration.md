@@ -26,7 +26,7 @@ Bots created using the Azure portal or the Command Line Interface (CLI) are alre
 <!-- 
 ## Create a registration application
 
-1. In your browser, navigate to the [Azure portal](https://ms.portal.azure.com). If you do not have a subscription, you can register for a <a href="https://azure.microsoft.com/free/" target="_blank">free account</a>.
+1. In your browser, navigate to the [Azure portal](https://ms.portal.azure.com). If you do not have a subscription, you can register for a [free account](https://azure.microsoft.com/free/).
 
 1. In the left panel, click **Create a resource**.
 1. In the top center search bar, enter *bot*. From the drop-down list select **Bot Channels Registration**.

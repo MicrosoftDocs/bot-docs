@@ -19,30 +19,27 @@ Message text can be formatted using **plain**, **markdown**, or **xml**. The def
 
 [!INCLUDE [Channel Inspector intro](~/includes/snippet-channel-inspector.md)]
 
-The `textFormat` property of the [Activity][] object can be used to specify the format of the text. For example, to create a basic message that contains only plain text, set the `textFormat` property of the `Activity` object to **plain**, set the `text` property to the contents of the message and set the `locale` property to the locale of the sender. 
+The `textFormat` property of the [Activity][] object can be used to specify the format of the text. For example, to create a basic message that contains only plain text, set the `textFormat` property of the `Activity` object to **plain**, set the `text` property to the contents of the message and set the `locale` property to the locale of the sender.
 
 ## Attachments
 
-The `attachments` property of the [Activity][] object can be used to send simple media attachments 
-(image, audio, video, file) and rich cards. For details, see [Add media attachments to messages](bot-framework-rest-connector-add-media-attachments.md) and [Add rich cards to messages](bot-framework-rest-connector-add-rich-cards.md).
+The `attachments` property of the [Activity][] object can be used to send simple media attachments (image, audio, video, file) and rich cards. For details, see [Add media attachments to messages](bot-framework-rest-connector-add-media-attachments.md) and [Add rich cards to messages](bot-framework-rest-connector-add-rich-cards.md).
 
 ## Entities
 
-The `entities` property of the [Activity][] object is an array of open-ended <a href="http://schema.org/" target="_blank">schema.org</a> objects that allows the exchange of common contextual metadata between the channel and bot.
+The `entities` property of the [Activity][] object is an array of open-ended [schema.org](https://schema.org/) objects that allows the exchange of common contextual metadata between the channel and bot.
 
 ### Mention entities
 
-Many channels support the ability for a bot or user to "mention" someone within the context of a conversation. 
-To mention a user in a message, populate the message's `entities` property with a [Mention][] object. 
+Many channels support the ability for a bot or user to "mention" someone within the context of a conversation. To mention a user in a message, populate the message's `entities` property with a [Mention][] object.
 
 ### Place entities
 
-To convey <a href="https://schema.org/Place" target="_blank">location-related information</a> within a message, populate the message's `entities` property with [Place][] object. 
+To convey location-related information within a message, populate the message's`entities` property with [Place][] object.
 
 ## Channel data
 
-The `channelData` property of the [Activity][] object can be used to implement channel-specific functionality. 
-For details, see [Implement channel-specific functionality](bot-framework-rest-connector-channeldata.md).
+The `channelData` property of the [Activity][] object can be used to implement channel-specific functionality. For details, see [Implement channel-specific functionality](bot-framework-rest-connector-channeldata.md).
 
 ## Text to speech
 

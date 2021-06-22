@@ -25,7 +25,7 @@ This guide can help you to troubleshoot authentication issues with your bot by e
 
 Bot security is configured by the **Microsoft App ID** and **Microsoft App Password** that you obtain when you register your bot with the Bot Framework. These values are typically specified within the bot's configuration file and used to retrieve access tokens from the Microsoft Account service.
 
-If you have not yet done so, [deploy your bot to azure](~/bot-builder-howto-deploy-azure.md) to obtain a **Microsoft App ID** and **Microsoft App Password** that it can use for authentication.
+If you have not yet done so, [deploy your bot to azure](bot-builder-howto-deploy-azure.md) to obtain a **Microsoft App ID** and **Microsoft App Password** that it can use for authentication.
 
 > [!NOTE]
 > To find your bot's **AppID** and **AppPassword** for an already deployed bot, see [MicrosoftAppID and MicrosoftAppPassword](bot-service-manage-overview.md#microsoftappid-and-microsoftapppassword).
@@ -188,7 +188,7 @@ At this point, you have verified that your bot is accessible and functional on l
 The Bot Framework requires that bots be accessible from the internet, so you must deploy your bot to a cloud hosting platform such as Azure. Be sure to enable security for your bot prior to deployment, as described in [Step 3](#step-3).
 
 > [!NOTE]
-> If you do not already have a cloud hosting provider, you can register for a <a href="https://azure.microsoft.com/free/" target="_blank">free account</a>.
+> If you do not already have a cloud hosting provider, you can register for a [free account](https://azure.microsoft.com/free/).
 
 If you deploy your bot to Azure, SSL will automatically be configured for your application, thereby enabling the **HTTPS** endpoint that the Bot Framework requires. If you deploy to another cloud hosting provider, be sure to verify that your application is configured for SSL so that the bot will have an **HTTPS** endpoint.
 
@@ -197,7 +197,7 @@ If you deploy your bot to Azure, SSL will automatically be configured for your a
 To test your bot in the cloud with security enabled, complete the following steps.
 
 1. Ensure that your bot has been successfully deployed and is running.
-2. Sign in to the <a href="https://portal.azure.com" target="_blank">Azure Portal</a>.
+2. Sign in to the [Azure Portal](https://portal.azure.com).
 3. Navigate to the **Bot Channels Registration** for your bot within the portal.
 4. Click **Test in Web Chat** in the **Bot management** pane on the left.
 5. To test connectivity to your bot, type some text into the web chat control and press Enter.
@@ -215,7 +215,7 @@ If the bot responds appropriately to the input, you have verified that your bot 
 If you are still experiencing issues after completing the steps above, you can:
 
 - Review how-to [debug a bot](bot-service-debug-bot.md) and the other debugging articles in that section.
-- [Debug your bot in the cloud](~/bot-service-debug-emulator.md) using the Bot Framework Emulator and <a href="https://ngrok.com/" target="_blank">ngrok</a> tunnelling software. *ngrok is not a Microsoft product.*
+- [Debug your bot in the cloud](~/bot-service-debug-emulator.md) using the Bot Framework Emulator and [ngrok](https://ngrok.com/) tunnelling software. *ngrok is not a Microsoft product.*
 - Use a proxying tool like [Fiddler](https://www.telerik.com/fiddler) to inspect HTTPS traffic to and from your bot. *Fiddler is not a Microsoft product.*
 - Review the [Bot Connector authentication guide][BotConnectorAuthGuide] to learn about the authentication technologies that the Bot Framework uses.
 - Solicit help from others by using the Bot Framework [support][Support] resources.
