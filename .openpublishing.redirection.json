@@ -2193,6 +2193,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "articles/v4sdk/bot-builder-telemetry-reference.md",
+      "redirect_url": "/azure/bot-service/bot-builder-telemetry",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "articles/v4sdk/bot-builder-virtual-assistant-template.md",
       "redirect_url": "/azure/bot-service/bot-builder-virtual-assistant-introduction",
       "redirect_document_id": false
