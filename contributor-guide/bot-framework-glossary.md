@@ -108,6 +108,10 @@ Don't use. See [Azure Bot Service](#azure-bot-service).
 - **Notes**: Many things that could create an event are called an action, so always clarify 1) what category of action you're talking about, and 2) as applicable, what type of action within that category. For this same reason, don't casually call something an action that hasn't been defined specifically as one.
 - **See also**: [card action](#card-action), [event](#event), [skill](#skill).
 
+## Actionable Messages
+
+See [Outlook Actionable Messages](#outlook-actionable-messages)
+
 ## actionable
 
 - **Status**: In general, don't use; however.
@@ -609,9 +613,11 @@ For individual flavors of the SDK, append _for \<environment>_, to match the [Az
   | Actionable Message cards | ditto. |
   | actionable message card | An instance of an Adaptive Card that includes Outlook-specific Adaptive Card properties or features. |
 - **See**:
+  - [Actionable messages in Outlook and Office 365 Groups](https://docs.microsoft.com/outlook/actionable-messages/)
   - [Designing Outlook Actionable Message cards with the Adaptive Card format](https://docs.microsoft.com/outlook/actionable-messages/adaptive-card)
-  - [Adaptive Cards for Outlook Actionable Message Developers](https://docs.microsoft.com/en-us/adaptive-cards/getting-started/outlook)
-  - Adaptive Cards: [Universal Action Model](https://docs.microsoft.com/en-us/adaptive-cards/authoring-cards/universal-action-model)
+  - [Adaptive Cards for Outlook Actionable Message Developers](https://docs.microsoft.com/adaptive-cards/getting-started/outlook)
+  - Adaptive Cards: [Universal Action Model](https://docs.microsoft.com/adaptive-cards/authoring-cards/universal-action-model)
+  - [Actionable Message Designer](https://amdesigner.azurewebsites.net/)
   - Adaptive Cards Schema Explorer: [Action.Execute](https://adaptivecards.io/explorer/Action.Execute.html)
 
 <a id="p"></a>

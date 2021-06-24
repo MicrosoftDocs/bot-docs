@@ -277,6 +277,8 @@
         href: bot-service-channel-connect-line.md
       - name: Microsoft Teams
         href: channel-connect-teams.md
+      - name: Outlook (preview)
+        href: bot-service-channel-connect-actionable-email.md
       - name: Skype
         href: bot-service-channel-connect-skype.md
       - name: Skype for Business
