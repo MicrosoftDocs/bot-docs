@@ -44,15 +44,15 @@ To check the version of your Emulator, select **Help** > **About** in the menu. 
 Set up the inspection state and add the inspection middleware to the adapter in the **Startup.cs** file. The inspection state is provided through dependency injection. See the code update below or refer to the inspection sample here: [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/47.inspection).
 
 **Startup.cs**  
-[!code-csharp [inspection bot sample](~/../botbuilder-samples/samples/csharp_dotnetcore/47.inspection/Startup.cs?range=17-37)]
+[!code-csharp [inspection bot sample](../botbuilder-samples/samples/csharp_dotnetcore/47.inspection/Startup.cs?range=17-37)]
 
 **AdapterWithInspection.cs**  
-[!code-csharp [inspection bot sample](~/../botbuilder-samples/samples/csharp_dotnetcore/47.inspection/AdapterwithInspection.cs?range=14-37)]
+[!code-csharp [inspection bot sample](../botbuilder-samples/samples/csharp_dotnetcore/47.inspection/AdapterwithInspection.cs?range=14-37)]
 
 Update the bot class in the **EchoBot.cs** file.
 
 **EchoBot.cs**  
-[!code-csharp [inspection bot sample](~/../botbuilder-samples/samples/csharp_dotnetcore/47.inspection/Bots/EchoBot.cs?range=14-43)]
+[!code-csharp [inspection bot sample](../botbuilder-samples/samples/csharp_dotnetcore/47.inspection/Bots/EchoBot.cs?range=14-43)]
 
 ### [JavaScript](#tab/javascript)
 
@@ -68,27 +68,27 @@ Then you need to update the code of your JavaScript bot as follows. You can read
 
 Set up the inspection state and add the inspection middleware to the adapter in the **index.js** file.
 
-[!code-javascript [inspection bot sample](~/../botbuilder-samples/samples/javascript_nodejs/47.inspection/index.js?range=10-43)]
+[!code-javascript [inspection bot sample](../botbuilder-samples/samples/javascript_nodejs/47.inspection/index.js?range=10-43)]
 
 **bot.js**
 
 Update the bot class in the **bot.js** file.
 
-[!code-javascript [inspection bot sample](~/../botbuilder-samples/samples/javascript_nodejs/47.inspection/bot.js?range=6-52)]
+[!code-javascript [inspection bot sample](../botbuilder-samples/samples/javascript_nodejs/47.inspection/bot.js?range=6-52)]
 
 ### [Java](#tab/java)
 
 Set up the inspection state and add the inspection middleware to the adapter in the **Application.java** file. The inspection state is set by providing a new Spring @Bean to supply the BotFrameworkHttpAdapter that is set to be @Primary so it will override the default BotFrameworkHttpAdapter provided by the BotDependencyConfiguration base class. See the code update below or refer to the inspection sample here: [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/47.inspection).
 
 **Application.java**  
-[!code-java [inspection bot sample](~/../botbuilder-samples/samples/java_springboot/47.inspection/src/main/java/com/microsoft/bot/sample/inspection/Application.java?range=66-97)]
+[!code-java [inspection bot sample](../botbuilder-samples/samples/java_springboot/47.inspection/src/main/java/com/microsoft/bot/sample/inspection/Application.java?range=66-97)]
 
 AdapterWithInspection is implemented as part of the com.microsoft.bot.integration package and can be reviewed from the Java SDK source code.
 
 Update the bot class in the **EchoBot.java** file.
 
 **EchoBot.java**  
-[!code-java [inspection bot sample](~/../botbuilder-samples/samples/java_springboot/47.inspection/src/main/java/com/microsoft/bot/sample/inspection/EchoBot.java?range=29-97)]
+[!code-java [inspection bot sample](../botbuilder-samples/samples/java_springboot/47.inspection/src/main/java/com/microsoft/bot/sample/inspection/EchoBot.java?range=29-97)]
 
 ### [Python](#tab/python)
 
@@ -103,13 +103,13 @@ Set up the inspection state in the **app.py** file by adding a middleware to the
 
 **app.py**
 
-[!code-python [inspection bot sample](~/../botbuilder-samples/samples/python/47.inspection/app.py?range=76-84)]
+[!code-python [inspection bot sample](../botbuilder-samples/samples/python/47.inspection/app.py?range=76-84)]
 
 Update the bot class in the **echo_bot.py** file.
 
 **bots/echo_bot.py**
 
-[!code-python [inspection bot sample](~/../botbuilder-samples/samples/python/47.inspection/bots/echo_bot.py?range=16-64)]
+[!code-python [inspection bot sample](../botbuilder-samples/samples/python/47.inspection/bots/echo_bot.py?range=16-64)]
 
 ---
 

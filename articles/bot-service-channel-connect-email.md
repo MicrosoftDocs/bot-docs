@@ -14,7 +14,7 @@ ms.date: 12/09/2019
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-Bots can communicate with users via Office 365 email in addition to other [channels](~/bot-service-manage-channels.md). When a bot is configured to access an email account, it receives a message when a new email arrives. The bot can then respond as indicated by its business logic. For example, the bot could send an email reply acknowledging an email was received with the message, "Hi! Thanks for your order! We will begin processing it immediately."
+Bots can communicate with users via Office 365 email in addition to other [channels](bot-service-manage-channels.md). When a bot is configured to access an email account, it receives a message when a new email arrives. The bot can then respond as indicated by its business logic. For example, the bot could send an email reply acknowledging an email was received with the message, "Hi! Thanks for your order! We will begin processing it immediately."
 
 > [!WARNING]
 > It's a violation of the Bot Framework [Code of Conduct](https://www.botframework.com/Content/Developer-Code-of-Conduct-for-Microsoft-Bot-Framework.htm) to create "spambots", including bots that send unwanted or unsolicited bulk email.
@@ -32,7 +32,7 @@ Federated authentication using any vendor that replaces AAD is not supported.
 
 To add the Email channel, open the bot in the [Azure Portal](https://portal.azure.com/), click the **Channels** blade, and then click **Email**. Enter your valid email credentials and click **Save**.
 
-![Enter email credentials](~/media/bot-service-channel-connect-email/bot-service-channel-connect-email-credentials.png)
+![Enter email credentials](media/bot-service-channel-connect-email/bot-service-channel-connect-email-credentials.png)
 
 The Email channel currently works with Office 365 only. Other email services are not currently supported.
 
@@ -41,7 +41,7 @@ The Email channel currently works with Office 365 only. Other email services are
 The Email channel supports sending custom values to create more advanced, customized emails by using the activity `channelData` property.
 The snippet below shows an example of the `channelData` for an incoming custom email message, from the bot to the user.
 
-[!INCLUDE [email channelData json](~/includes/snippet-channelData-email.md)]
+[!INCLUDE [email channelData json](includes/snippet-channelData-email.md)]
 
 For more information about the activity `channelData` property, see [Create a custom Email message](v4sdk/bot-builder-channeldata.md#create-a-custom-email-message).
 
@@ -54,6 +54,6 @@ If your bot does not return a 200 OK HTTP status code within 15 seconds in respo
 
 ## Additional resources
 
-- Connect a bot to [channels](~/bot-service-manage-channels.md)
-- [Implement channel-specific functionality](~/v4sdk/bot-builder-channeldata.md) with the Bot Framework SDK for .NET
+- Connect a bot to [channels](bot-service-manage-channels.md)
+- [Implement channel-specific functionality](v4sdk/bot-builder-channeldata.md) with the Bot Framework SDK for .NET
 - Read the [channels reference](bot-service-channels-reference.md) article for more information about which features are supported on each channel

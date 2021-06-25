@@ -22,23 +22,23 @@ In this article we will show you how to deploy a basic bot to Azure. We will exp
 
 ## Prerequisites
 
-[!INCLUDE [deploy prerequisite](~/includes/deploy/snippet-prerequisite.md)]
+[!INCLUDE [deploy prerequisite](includes/deploy/snippet-prerequisite.md)]
 
 ## Prepare for deployment
 
-[!INCLUDE [deploy prepare intro](~/includes/deploy/snippet-prepare-deploy-intro.md)]
+[!INCLUDE [deploy prepare intro](includes/deploy/snippet-prepare-deploy-intro.md)]
 
 ### Login to Azure
 
-[!INCLUDE [deploy az login](~/includes/deploy/snippet-az-login.md)]
+[!INCLUDE [deploy az login](includes/deploy/snippet-az-login.md)]
 
 ### Set the subscription
 
-[!INCLUDE [deploy az subscription](~/includes/deploy/snippet-az-set-subscription.md)]
+[!INCLUDE [deploy az subscription](includes/deploy/snippet-az-set-subscription.md)]
 
 ### Create the application registration
 
-[!INCLUDE [deploy create app registration](~/includes/deploy/snippet-create-app-registration.md)]
+[!INCLUDE [deploy create app registration](includes/deploy/snippet-create-app-registration.md)]
 
 ### Create the bot application service
 
@@ -53,34 +53,34 @@ When creating the bot application service, you can deploy your bot in a new or i
 ### Deploy via ARM template with new resource group
 
 <!-- ##### Create Azure resources -->
-[!INCLUDE [ARM with new resource group](~/includes/deploy/snippet-ARM-new-resource-group.md)]
+[!INCLUDE [ARM with new resource group](includes/deploy/snippet-ARM-new-resource-group.md)]
 
 ### Deploy via ARM template with existing resource group
 
-[!INCLUDE [ARM with existing resource group](~/includes/deploy/snippet-ARM-existing-resource-group.md)]
+[!INCLUDE [ARM with existing resource group](includes/deploy/snippet-ARM-existing-resource-group.md)]
 
 
 ## Prepare your code for deployment
 
 ### Assign app Id and password
 
-[!INCLUDE [assign app id and password](~/includes/deploy/snippet-assign-appid-password.md)]
+[!INCLUDE [assign app id and password](includes/deploy/snippet-assign-appid-password.md)]
 
 ### Prepare project
 
-[!INCLUDE [prepare project](~/includes/deploy/snippet-IIS-Kudu-files.md)]
+[!INCLUDE [prepare project](includes/deploy/snippet-IIS-Kudu-files.md)]
 
 ### Package project
 
-[!INCLUDE [package project](~/includes/deploy/snippet-zip-code.md)]
+[!INCLUDE [package project](includes/deploy/snippet-zip-code.md)]
 
 ## Deploy code to Azure
 
-[!INCLUDE [deploy code to Azure](~/includes/deploy/snippet-deploy-code-to-az.md)]
+[!INCLUDE [deploy code to Azure](includes/deploy/snippet-deploy-code-to-az.md)]
 
 ## Test in Web Chat
 
-[!INCLUDE [test in web chat](~/includes/deploy/snippet-test-in-web-chat.md)]
+[!INCLUDE [test in web chat](includes/deploy/snippet-test-in-web-chat.md)]
 
 ## Additional information
 
@@ -94,4 +94,4 @@ See also [Azure Command-Line Interface (CLI) documentation](/cli/azure/) and [Az
 
 <!-- ## Appendix
 
-[!INCLUDE [deploy csharp bot to Azure](~/includes/deploy/snippet-deploy-simple-csharp-echo-bot.md)] -->
+[!INCLUDE [deploy csharp bot to Azure](includes/deploy/snippet-deploy-simple-csharp-echo-bot.md)] -->

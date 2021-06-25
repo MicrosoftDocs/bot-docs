@@ -42,20 +42,20 @@ The first thing you must do is to add the Direct Line channel to the bot.
 
 ## Manage secret keys
 
-When you add the Direct Channel, the Bot Framework generates secret keys. Your client application uses these keys to authenticate the Direct Line API requests that it issues to communicate with a bot. For more information, see [Authentication](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md).
+When you add the Direct Channel, the Bot Framework generates secret keys. Your client application uses these keys to authenticate the Direct Line API requests that it issues to communicate with a bot. For more information, see [Authentication](rest-api/bot-framework-rest-direct-line-3-0-authentication.md).
 
 1. In *Configure Direct Line*, to view a key in plain text, click **Show** for the corresponding key.
 
     ![Show Direct Line key](media/bot-service-channel-connect-directline/directline-showkey.png "Show Direct Line key")
 
-1. Copy and securely store the key. Use the key to [authenticate](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md) the Direct Line API requests that your client application issues to communicate with a bot.
+1. Copy and securely store the key. Use the key to [authenticate](rest-api/bot-framework-rest-direct-line-3-0-authentication.md) the Direct Line API requests that your client application issues to communicate with a bot.
 
     ![Copy Direct Line key](media/bot-service-channel-connect-directline/directline-copykey.png "Copy Direct Line key")
 
     > [!NOTE]
     > Secrets should not be exposed or embedded in client applications. See next step.
 
-1. The best practice is to use the Direct Line API to [exchange the key for a token](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md#generate-token). The client application then will use the token to authenticate its requests within the scope of a single conversation.
+1. The best practice is to use the Direct Line API to [exchange the key for a token](rest-api/bot-framework-rest-direct-line-3-0-authentication.md#generate-token). The client application then will use the token to authenticate its requests within the scope of a single conversation.
 
 ## Configure settings
 
