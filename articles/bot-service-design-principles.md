@@ -77,4 +77,4 @@ We use those terms relatively interchangeably because the principles of CUX desi
 
 ## Next steps
 
-Now that you're familiar with conversational user experiences, learn more about [designing the first interaction](~/bot-service-design-first-interaction.md).
+Now that you're familiar with conversational user experiences, learn more about [designing the first interaction](bot-service-design-first-interaction.md).

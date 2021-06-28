@@ -19,13 +19,13 @@ ms.date: 02/25/2020
 This guide can help you to troubleshoot authentication issues with your bot by evaluating a series of scenarios to determine where the problem exists.
 
 > [!NOTE]
-> To complete all steps in this guide, you will need to download and use the [Bot Framework Emulator][Emulator] and must have access to the bot's registration settings in the [Azure Portal](https://portal.azure.com).
+> To complete all steps in this guide, you will need to download and use the [Bot Framework Emulator][Emulator] and must have access to the bot's registration settings in the [Azure portal](https://portal.azure.com).
 
 ## App ID and password
 
 Bot security is configured by the **Microsoft App ID** and **Microsoft App Password** that you obtain when you register your bot with the Bot Framework. These values are typically specified within the bot's configuration file and used to retrieve access tokens from the Microsoft Account service.
 
-If you have not yet done so, [deploy your bot to azure](bot-builder-howto-deploy-azure.md) to obtain a **Microsoft App ID** and **Microsoft App Password** that it can use for authentication.
+If you have not yet done so, [deploy your bot to Azure](bot-builder-howto-deploy-azure.md) to obtain a **Microsoft App ID** and **Microsoft App Password** that it can use for authentication.
 
 > [!NOTE]
 > To find your bot's **AppID** and **AppPassword** for an already deployed bot, see [MicrosoftAppID and MicrosoftAppPassword](bot-service-manage-overview.md#microsoftappid-and-microsoftapppassword).
@@ -107,7 +107,7 @@ In this step, you will verify that the app ID and password that your bot will us
 
 ### Issue an HTTP request to the Microsoft login service
 
-These instructions describe how to use [cURL](https://curl.haxx.se/download.html) to issue an HTTP request to the Microsoft login service. You may use an alternative tool such as Postman, just ensure that the request conforms to the Bot Framework [authentication protocol](~/rest-api/bot-framework-rest-connector-authentication.md).
+These instructions describe how to use [cURL](https://curl.haxx.se/download.html) to issue an HTTP request to the Microsoft login service. You may use an alternative tool such as Postman, just ensure that the request conforms to the Bot Framework [authentication protocol](rest-api/bot-framework-rest-connector-authentication.md).
 
 To verify that your bot's app ID and password are valid, issue the following request using **cURL**, replacing `APP_ID` and `APP_PASSWORD` with your bot's app ID and password.
 
@@ -208,14 +208,14 @@ If an error is indicated in the chat window, use the error message to determine 
 - The **Messaging endpoint** specified on the **Settings** page for your bot in the Bot Framework Portal does not begin with `https` or is not trusted by the Bot Framework. Your bot must have a valid, chain-trusted certificate.
 - The bot is configured with missing or incorrect values for app ID or password. [Verify](#enable-security-localhost) that the bot configuration settings specify valid values for app ID and password.
 
-If the bot responds appropriately to the input, you have verified that your bot is accessible and functional in the cloud with security enabled. At this point, your bot is ready to securely [connect to a channel](~/bot-service-manage-channels.md) such as Facebook Messenger, Direct Line, and others.
+If the bot responds appropriately to the input, you have verified that your bot is accessible and functional in the cloud with security enabled. At this point, your bot is ready to securely [connect to a channel](bot-service-manage-channels.md) such as Facebook Messenger, Direct Line, and others.
 
 ## Additional resources
 
 If you are still experiencing issues after completing the steps above, you can:
 
 - Review how-to [debug a bot](bot-service-debug-bot.md) and the other debugging articles in that section.
-- [Debug your bot in the cloud](~/bot-service-debug-emulator.md) using the Bot Framework Emulator and [ngrok](https://ngrok.com/) tunnelling software. *ngrok is not a Microsoft product.*
+- [Debug your bot in the cloud](bot-service-debug-emulator.md) using the Bot Framework Emulator and [ngrok](https://ngrok.com/) tunneling software. *ngrok is not a Microsoft product.*
 - Use a proxying tool like [Fiddler](https://www.telerik.com/fiddler) to inspect HTTPS traffic to and from your bot. *Fiddler is not a Microsoft product.*
 - Review the [Bot Connector authentication guide][BotConnectorAuthGuide] to learn about the authentication technologies that the Bot Framework uses.
 - Solicit help from others by using the Bot Framework [support][Support] resources.

@@ -25,17 +25,17 @@ Search functionality can be a valuable tool within a bot.
 
 First, "fuzzy search" enables a bot to return information that's likely to be relevant to the user's question, without requiring that the user provide precise input. For example, if the user asks a music knowledge bot for information about "impala" (instead of "Tame Impala"), the bot can respond with information that's most likely to be relevant to that input.
 
-![Search Fuzzy](~/media/bot-service-design-pattern-knowledge-base/fuzzySearch2.png)
+![Search Fuzzy](media/bot-service-design-pattern-knowledge-base/fuzzySearch2.png)
 
 Search scores indicate the level of confidence for the results of a specific search, enabling a bot to order its results accordingly, or even tailor its communication based upon confidence level.
 
 For example, if confidence level is high, the bot may respond with "Here is the event that best matches your search:".
 
-![Search Confidence High](~/media/bot-service-design-pattern-knowledge-base/searchScore2.png)
+![Search Confidence High](media/bot-service-design-pattern-knowledge-base/searchScore2.png)
 
 If confidence level is low, the bot may respond with "Hmm... were you looking for any of these events?"
 
-![Search Confidence Low](~/media/bot-service-design-pattern-knowledge-base/searchScore1.png)
+![Search Confidence Low](media/bot-service-design-pattern-knowledge-base/searchScore1.png)
 
 ### Using Search to Guide a Conversation
 
@@ -45,30 +45,30 @@ Knowledge bots are generally most effective when they are designed to guide the 
 
 For example, the following bot guides a user through a conversation that facets and filters a dataset until it locates the information that the user is seeking.
 
-![Search Guided Conversation Step 1](~/media/bot-service-design-pattern-knowledge-base/guidedConvo1.png)
+![Search Guided Conversation Step 1](media/bot-service-design-pattern-knowledge-base/guidedConvo1.png)
 
-![Search Guided Conversation Step 2](~/media/bot-service-design-pattern-knowledge-base/guidedConvo2.png)
+![Search Guided Conversation Step 2](media/bot-service-design-pattern-knowledge-base/guidedConvo2.png)
 
-![Search Guided Conversation Step 3](~/media/bot-service-design-pattern-knowledge-base/guidedConvo3.png)
+![Search Guided Conversation Step 3](media/bot-service-design-pattern-knowledge-base/guidedConvo3.png)
 
-![Search Guided Conversation Step 4](~/media/bot-service-design-pattern-knowledge-base/guidedConvo4.png)
+![Search Guided Conversation Step 4](media/bot-service-design-pattern-knowledge-base/guidedConvo4.png)
 
 By processing the user's input in each step and presenting the relevant options, the bot guides the user to the information that they're seeking. Once the bot delivers that information, it can even provide guidance about more efficient ways to find similar information in the future.
 
-![Trained Search](~/media/bot-service-design-pattern-knowledge-base/Training.png)
+![Trained Search](media/bot-service-design-pattern-knowledge-base/Training.png)
 
 ### Azure Search
 
 By using [Azure Search](https://azure.microsoft.com/services/search/), you can create an efficient search index that a bot can easily search, facet, and filter. Consider a search index that is created using the Azure portal.
 
-![Azure Portal Search](~/media/bot-service-design-pattern-knowledge-base/search3.PNG)
+![Azure Portal Search](media/bot-service-design-pattern-knowledge-base/search3.PNG)
 
 You want to be able to access all properties of the data store, so you set each property as "retrievable." You want to be able to find musicians by name, so you set the **Name** property as "searchable." Finally, you want to be able to facet filter over musicians' eras, so you mark the **Eras** property as both "facetable" and "filterable."
 
 Faceting determines the values that exist in the data store for a given property, along with the magnitude of each value.
 For example, this screenshot shows that there are 5 distinct eras in the data store:
 
-![Facets](~/media/bot-service-design-pattern-knowledge-base/facet.png)
+![Facets](media/bot-service-design-pattern-knowledge-base/facet.png)
 
 Filtering, in turn, selects only the specified instances of a certain property. For example, you could filter the result set above to contain only items where **Era** is equal to "Romantic."
 
@@ -86,11 +86,11 @@ Some knowledge bots may simply aim to answer frequently asked questions (FAQs). 
 
 Using the QnA Maker web interface, you can configure a knowledge base with three question and answer pairs:
 
-![Configure KB](~/media/bot-service-design-pattern-knowledge-base/KnowledgeBaseConfig.png)
+![Configure KB](media/bot-service-design-pattern-knowledge-base/KnowledgeBaseConfig.png)
 
 Then, you can test it by asking a series of questions:
 
-![Test KB](~/media/bot-service-design-pattern-knowledge-base/exampleQnAConvo.png)
+![Test KB](media/bot-service-design-pattern-knowledge-base/exampleQnAConvo.png)
 
 The bot correctly answers the questions that directly map to the ones that were configured in the knowledge base. However, it incorrectly responds to the question "can I bring my tea?", because this question is most similar in structure to the question "can I bring my vodka?." The reason QnA Maker gives an incorrect answer is that it does not inherently understand the meaning of words. It does not know that "tea" is a type of nonalcoholic drink. Therefore, it answers "Alcohol is not allowed."
 
@@ -118,12 +118,12 @@ In the music festival bot example [covered earlier](#search),the bot guides the 
 
 It wouldn't be feasible to train the model with every possible musician name since there are so many potential values, but you could provide enough representative examples for LUIS to properly identify the entity at hand.  For example, consider that you train your model by providing examples of musicians:
 
-![Train Model Step 1](~/media/bot-service-design-pattern-knowledge-base/answerGenre.png)
-![Train Model Step 2](~/media/bot-service-design-pattern-knowledge-base/answerGenreOneWord.png)
+![Train Model Step 1](media/bot-service-design-pattern-knowledge-base/answerGenre.png)
+![Train Model Step 2](media/bot-service-design-pattern-knowledge-base/answerGenreOneWord.png)
 
-When you test this model with new utterances like, "what kind of music do the beatles play?", LUIS successfully determines the intent "answerGenre" and the identifies entity "the beatles." However, if you submit a longer question such as "what kind of music does the devil makes three play?", LUIS identifies "the devil" as the entity.
+When you test this model with new utterances like, "what kind of music do the Beatles play?", LUIS successfully determines the intent "answerGenre" and the identifies entity "the Beatles." However, if you submit a longer question such as "what kind of music does the devil makes three play?", LUIS identifies "the devil" as the entity.
 
-![Score](~/media/bot-service-design-pattern-knowledge-base/devilMakesThreeScore.png)
+![Score](media/bot-service-design-pattern-knowledge-base/devilMakesThreeScore.png)
 
 By training the model with example entities that are representative of the underlying dataset, you can increase the accuracy of your bot's language understanding.
 
@@ -140,7 +140,7 @@ Some knowledge bots might use QnA Maker to answer basic questions in combination
 2. Call LUIS first, and if no intent meets a specific threshold score, i.e., "None" intent is triggered, then call QnA Maker. Alternatively, create a LUIS intent for QnA Maker, feeding your LUIS model with example QnA questions that map to "QnAIntent."
 3. Call QnA Maker first, and if no answer meets a specific threshold score, then call LUIS.
 
-The Bot Framework SDK provide built-in support for LUIS and QnA Maker. This enables you to trigger dialogs or automatically answer questions using LUIS and/or QnA Maker without having to implement custom calls to either tool. See how to [Use multiple LUIS and QnA models with Orchestrator](v4sdk/bot-builder-tutorial-orchestrator.md) for more information.
+The Bot Framework SDK provides built-in support for LUIS and QnA Maker. This enables you to trigger dialogs or automatically answer questions using LUIS and/or QnA Maker without having to implement custom calls to either tool. See how to [Use multiple LUIS and QnA models with Orchestrator](v4sdk/bot-builder-tutorial-orchestrator.md) for more information.
 
 > [!TIP]
 > When implementing a combination of LUIS, QnA Maker, and/or Azure Search,

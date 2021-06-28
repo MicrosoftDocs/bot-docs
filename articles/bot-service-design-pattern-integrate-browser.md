@@ -35,7 +35,7 @@ This article explores the process of facilitating a user's transition from bot t
 
 This diagram shows the high-level flow for integration between bot and web browser.
 
-![Bot to web interaction](~/media/bot-service-design-pattern-integrate-browser/bot-to-web1.png)
+![Bot to web interaction](media/bot-service-design-pattern-integrate-browser/bot-to-web1.png)
 
 Consider each step of the flow:
 
@@ -47,7 +47,7 @@ Consider each step of the flow:
    > [!TIP]
    > Design this flow so that the bot will not permanently remain in the 'waiting' state if
    > the user never completes the website flow. In other words, if the user abandons the web
-   > browser and starts communicating with the bot again, the bot should acknowledge, not [ignore](~/bot-service-design-navigation.md#the-mysterious-bot)
+   > browser and starts communicating with the bot again, the bot should acknowledge, not [ignore](bot-service-design-navigation.md#the-mysterious-bot)
    > that input.
 
 4. The user completes the necessary task(s) via the web browser. This could be an OAuth flow or any sequence of events required by the scenario at hand.
@@ -85,6 +85,6 @@ As described in this article, the [BotAuth library](https://github.com/Microsoft
 
 ## Additional resources
 
-- [Dialogs](~/dotnet/bot-builder-dotnet-dialogs.md)
-- [Manage conversation flow with dialogs (.NET)](~/dotnet/bot-builder-dotnet-manage-conversation-flow.md)
-- [Manage conversation flow with dialogs (Node.js)](~/nodejs/bot-builder-nodejs-manage-conversation-flow.md)
+- [Dialogs](dotnet/bot-builder-dotnet-dialogs.md)
+- [Manage conversation flow with dialogs (.NET)](dotnet/bot-builder-dotnet-manage-conversation-flow.md)
+- [Manage conversation flow with dialogs (Node.js)](nodejs/bot-builder-nodejs-manage-conversation-flow.md)

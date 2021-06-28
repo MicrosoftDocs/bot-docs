@@ -19,7 +19,7 @@ If the bot is hosted elsewhere, you can also make it available in Azure and conn
 
 > [!IMPORTANT]
 > You only need to register a bot if it is not hosted in Azure.
-Bots created using the Azure portal or the Command Line Interface (CLI) are already registered with the Azure Bot Service. For more information, see [Deploy your bot](~/bot-builder-deploy-az-cli.md).
+Bots created using the Azure portal or the Command Line Interface (CLI) are already registered with the Azure Bot Service. For more information, see [Deploy your bot](bot-builder-deploy-az-cli.md).
 
 [!INCLUDE [azure bot resource](includes/azure-bot-resource/azure-bot-resource.md)]
 

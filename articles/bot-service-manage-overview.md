@@ -77,7 +77,7 @@ A bot application, also known as an *application service (App Service)*, has a s
 
     :::image type="content" source="media/azure-manage-a-bot/app-service-settings.png" alt-text="Navigation pane for an app service resource.":::
 
-[!INCLUDE [azure bot appid password](~/includes/authentication/azure-bot-appid-password.md)]
+[!INCLUDE [azure bot appid password](includes/authentication/azure-bot-appid-password.md)]
 
 ## Next steps
 

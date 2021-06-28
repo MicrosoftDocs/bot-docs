@@ -43,16 +43,16 @@ The *backchannel* mechanism enables the web page that is hosting the control to 
 
 ## Using the backchannel mechanism
 
-[!INCLUDE [Introduction to backchannel mechanism](~/includes/snippet-backchannel.md)]
+[!INCLUDE [Introduction to backchannel mechanism](includes/snippet-backchannel.md)]
 
 ## Sample code
 
-The open source [Web Chat](https://github.com/Microsoft/BotFramework-WebChat) control is available via GitHub. For details about how you can implement the backchannel mechanism using the open source web chat control and the Bot Framework SDK for Node.js, see [Use the backchannel mechanism](~/nodejs/bot-builder-nodejs-backchannel.md).
+The open source [Web Chat](https://github.com/Microsoft/BotFramework-WebChat) control is available via GitHub. For details about how you can implement the backchannel mechanism using the open source web chat control and the Bot Framework SDK for Node.js, see [Use the backchannel mechanism](nodejs/bot-builder-nodejs-backchannel.md).
 
 ## Additional resources
 
 - [Direct Line API][directLineAPI]
 - [Open source web chat control](https://github.com/Microsoft/BotFramework-WebChat)
-- [Use the backchannel mechanism](~/nodejs/bot-builder-nodejs-backchannel.md)
+- [Use the backchannel mechanism](nodejs/bot-builder-nodejs-backchannel.md)
 
 [directLineAPI]: rest-api/bot-framework-rest-direct-line-3-0-concepts.md#client-libraries

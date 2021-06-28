@@ -127,4 +127,4 @@ sections:
           The Bot Framework SDK supports handoff to a human. There a few **event types** for signaling handoff operations.
           These events are exchanged between a **bot** and an **agent hub**, also called engagement hub. This agent hub is defined as an application or a system that allows agents, typically humans,
           to receive and handle requests from users, as well as escalation requests from bots.
-          For detailed information, see [Transition conversations from bot to human](~/bot-service-design-pattern-handoff-human.md) article.
+          For detailed information, see [Transition conversations from bot to human](bot-service-design-pattern-handoff-human.md) article.

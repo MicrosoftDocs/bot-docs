@@ -47,7 +47,7 @@ Detailed instructions for adding cards to your bot can be found within these sec
 
 
 
-When designing your bot, do not automatically dismiss common UI elements as not being "smart enough." As discussed [previously](~/bot-service-design-principles.md#designing-a-bot), your bot should be designed to solve the user's problem in the best, quickest, and easiest manner possible. Avoid the temptation to start by incorporating natural language understanding, as it is often unnecessary and introduces unjustified complexity.
+When designing your bot, do not automatically dismiss common UI elements as not being "smart enough." As discussed in [Conversational user experience](bot-service-design-principles.md#designing-a-bot), your bot should be designed to solve the user's problem in the best, quickest, and easiest manner possible. Avoid the temptation to start by incorporating natural language understanding, as it is often unnecessary and introduces unjustified complexity.
 
 > [!TIP]
 > Start by using the minimum UI controls that enable the bot to solve the user's problem,

@@ -14,10 +14,10 @@ ms.date: 08/15/2018
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-Although bots most commonly exist outside of apps, they can also be integrated with apps. For example, you could embed a [knowledge bot](~/bot-service-design-pattern-knowledge-base.md) within an app to help users find information that might otherwise be challenging to locate within complex app structures.
+Although bots most commonly exist outside of apps, they can also be integrated with apps. For example, you could embed a [knowledge bot](bot-service-design-pattern-knowledge-base.md) within an app to help users find information that might otherwise be challenging to locate within complex app structures.
 
 You can embed a bot within a help desk app to act as the first responder to incoming user requests.
-The bot can independently resolve simple issues and [hand off](~/bot-service-design-pattern-handoff-human.md) more complex issues to a human agent.
+The bot can independently resolve simple issues and [hand off](bot-service-design-pattern-handoff-human.md) more complex issues to a human agent.
 
 ## Integrating bot with app
 
@@ -29,7 +29,7 @@ An app that is created in native code can communicate with the Bot Framework by 
 
 ### Web-based mobile app
 
-A mobile app that is built by using web language and frameworks such as [Cordova](https://cordova.apache.org/) may communicate with the Bot Framework by using the same components that a [bot embedded within a website](~/bot-service-design-pattern-embed-web-site.md) would use, just encapsulated within a native app's shell.
+A mobile app that is built by using web language and frameworks such as [Cordova](https://cordova.apache.org/) may communicate with the Bot Framework by using the same components that a [bot embedded within a website](bot-service-design-pattern-embed-web-site.md) would use, just encapsulated within a native app's shell.
 
 ### IoT app
 
@@ -64,7 +64,7 @@ public class WebPage : ContentPage
 Using this process, you can create a cross-platform mobile application 
 that renders the embedded web view with the web chat control.
 
-![Back-channel](~/media/bot-service-design-pattern-embed-app/xamarin-apps.png)
+![Back-channel](media/bot-service-design-pattern-embed-app/xamarin-apps.png)
 
 <!-- TODO: No sample bot available
 ## Sample code
