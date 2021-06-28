@@ -42,8 +42,6 @@ Some skills can perform a variety of tasks or _actions_. For example, a to-do sk
 
 ## Skill manifests
 
-A _skill manifest_ is a JSON file that describes the actions the skill can perform, its input and output parameters, and the skill's endpoints. With v2.1 of the skill manifest schema, the manifest can also describe proactive activities the skill can send and dispatch models the skill uses.
+A _skill manifest_ is a JSON file that describes the actions the skill can perform, its input and output parameters, the skill's endpoints, and dispatch models for the skill.
 
-<!--TODO Flesh this out-->
-
-For information about the skill manifest schema, see how to [write a v2.1 skill manifest](skills-write-manifest-2-1.md) or [write a v2.0 skill manifest](skills-write-manifest-2-0.md).
+For information about the skill manifest schema, see how to [write a skill manifest](skills-write-manifest.md).

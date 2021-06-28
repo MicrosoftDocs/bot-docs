@@ -21,7 +21,7 @@ If you expect that your skill will be consumed from a [Power Virtual Agents](htt
 
 ## Manifest restrictions
 
-Power Virtual Agents places restrictions on what you may declare in your [skill manifest](./skills-write-manifest-2-1.md).
+Power Virtual Agents places restrictions on what you may declare in your [skill manifest](./skills-write-manifest.md).
 
 - You may declare only 100 or fewer actions.
 - Each action is limited to 25 or fewer inputs or outputs.
