@@ -1,20 +1,20 @@
 ---
-title: Create a bot with Azure Bot Service - Bot Service
-description: Learn how to create a bot with Bot Service, an integrated, dedicated bot development environment.
-keywords: Quickstart, create bot, bot service, web app bot
+title: Create a bot resource with Azure Bot Service - Bot Service
+description: Learn how to create a bot resource with Azure Bot Service, an integrated, dedicated bot development environment.
+keywords: Quickstart, create bot resource, bot service, web app bot
 author: mmiele
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 05/24/2021
+ms.date: 06/23/2021
 ---
 
-# Create a bot with Azure Bot Service
+# Create an Azure Bot resource
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-This topic shows how to create the **Azure Bot** resource, which provides the infrastructure to build a bot. Once you have created the resource, you can then build your bot.
+The **Azure Bot** resource allows you to register your bot with the Azure Bot Service. You can build, connect, and manage bots to interact with your users wherever they are, from your app or website to Teams, Messenger and many other channels. To learn how to create a bot, see the quick start article applicable to your programming language.
 
 [!INCLUDE [composer sdk tip](../includes/azure-bot-resource/composer-tip.md)]
 
@@ -83,7 +83,10 @@ You can download the code to work on it locally.
 
 -->
 
+<!---
 ## Additional information
+
+If you're new to bot development, we recommend using [Bot Framework Composer](/composer/).
 
 ### Manual app registration
 
@@ -94,6 +97,9 @@ You might need a manual registration when:
 
 See [FAQ - App Registration](../bot-service-resources-faq-azure.yml#how-do-i-create-my-own-app-registration).
 
+--->
+
 ## Next steps
 
-After you download the code, you can continue to develop the bot locally on your machine. Once you test your bot and are ready to upload the bot code to the Azure portal, follow the instructions listed under [set up continuous deployment](../bot-service-build-continuous-deployment.md) topic to automatically update code after you make changes.
+> [!div class="nextstepaction"]
+> [Deploy your bot](../bot-builder-deploy-az-cli.md)

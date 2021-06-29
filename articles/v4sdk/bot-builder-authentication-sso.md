@@ -5,7 +5,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 4/15/2021
+ms.date: 06/23/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -70,7 +70,7 @@ For each project in the sample, you need the following:
 ## Create the Azure RootBot resource
 
 1. Create an Azure bot resource in the [Azure portal][azure-portal] for the `RootBot`. Follow the steps described in
-[Create an Azure bot resource](bot-builder-authentication.md#create-an-azure-bot-resource).
+[Create an Azure bot resource](bot-builder-authentication.md#create-the-resource).
 1. Copy and save the bot registration **app ID** and the **client secret**.
 
 ## Create the Azure AD identity for RootBot
@@ -105,7 +105,7 @@ The Azure AD is a cloud identity service that allows you to build applications t
 ## Create the Azure SkillBot resource
 
 1. Create an Azure bot resource in the [Azure portal][azure-portal] for the `SkillBot`. Follow the steps described in
-[Create an Azure bot resource](bot-builder-authentication.md#create-an-azure-bot-resource).
+[Create an Azure bot resource](bot-builder-authentication.md#create-the-resource).
 1. Copy and save the bot registration **app ID** and the **client secret**.
 
 ## Create the Azure AD identity for SkillBot

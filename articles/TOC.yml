@@ -16,7 +16,7 @@
     href: java/bot-builder-java-quickstart.md
   - name: Create a bot using Python
     href: python/bot-builder-python-quickstart.md
-  - name: Create a bot using Azure Bot Service
+  - name: Create an Azure Bot resource
     href: v4sdk/abs-quickstart.md
   # - name: Create a bot using Azure PowerShell # Doesn't work, shouldn't have been added, will add back in when it works.
   #   href: powershell/bot-builder-powershell-quickstart.md
