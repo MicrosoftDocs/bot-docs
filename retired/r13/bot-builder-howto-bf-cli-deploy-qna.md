@@ -50,7 +50,7 @@ This article describes how to perform some common tasks used to deploy a QnA Mak
     - [The dialog file](#the-dialog-file)
   - [Additional information](#additional-information)
 
-Once your bot project's QnA Maker KB .qna files have been created, you are ready to follow the steps outlined in this article to create your QnA Maker KB. If you do not have a project with QnA Maker KB .qna files, you can use the [QnAMaker][qna-maker-sample]. See the sample repository's readme for information on [Getting the samples][getting-the-samples].
+Once your bot project's QnA Maker KB .qna files have been created, you are ready to follow the steps outlined in this article to create your QnA Maker KB. If you do not have a project with QnA Maker KB .qna files, you can use the [QnAMaker][qna-maker-sample]. See the sample repository's `README` for information on [Getting the samples][getting-the-samples].
 
 ## Create your QnA Maker resource in Azure Cognitive Services
 
@@ -115,7 +115,7 @@ To create the QnA Maker CLI init file:
 > [!TIP]
 > When you enter a `bf qnamaker` CLI command, it will automatically look for the _subscriptionKey_, _kbId_, _endpointKey_ and _hostname_ values in this init file unless you include them when entering the command, at which point the values entered will override the values from the init file.
 
-For additional information on using this command, see [`bf qnamaker:init`][bf-qnamakerinit] in the BF CLI QnA Maker readme.
+For additional information on using this command, see [`bf qnamaker:init`][bf-qnamakerinit] in the BF CLI QnA Maker `README`.
 
 > [!IMPORTANT]
 >
@@ -133,7 +133,7 @@ bf qnamaker:convert -i <input-folder-name> -o <output-folder-name> --name <QnA-K
 
 For example, the command `bf qnamaker:convert -i dialogs -o output --name MyQnAMakerBot -r` will recursively search for all .qna files in the _dialogs__ directory and any subdirectories and merge them into a single file named **converted.json** in the _output_ directory. This JSON file will contain all of the information needed to create a QnA Maker KB, including the name _MyQnAMakerBot_ which will be the name of the QnA Maker knowledge base that will exist in Azure.
 
-For additional information on using this command, see [`bf qnamaker:convert`][bf-qnamakerconvert] in the BF CLI QnA Maker readme.
+For additional information on using this command, see [`bf qnamaker:convert`][bf-qnamakerconvert] in the BF CLI QnA Maker `README`.
 
 ## Create your QnA Maker knowledge base
 
@@ -150,7 +150,7 @@ bf qnamaker:kb:create --in <QnA-Maker-model-JSON-file> --name <QnA-Maker-kb-name
 > - The input file for this command is the file that is created by running the `qnamaker:convert` command as discussed in the previous step. The filename is **converted.json** by default.
 > - The `name` option is the name of the QnA Maker KB and is optional if the QnA Model JSON file has a value for the name property, otherwise it will be required.
 
-For additional information on using this command, see [`bf qnamaker:kb:create`][bf-qnamakerkbcreate] in the BF CLI QnA Maker readme.
+For additional information on using this command, see [`bf qnamaker:kb:create`][bf-qnamakerkbcreate] in the BF CLI QnA Maker `README`.
 
 ## Test your QnA Maker knowledge base
 
@@ -222,7 +222,7 @@ bf qnamaker:build --in <input-file-or-folder> --subscriptionKey <Subscription-Ke
 - `botName`: The name of your bot. This will be used to generate the name of the QnA Maker KB, this is explained in more detail in the [QnA Maker Knowledge Bases created](#qna-maker-knowledge-bases-created) section below.
 - `subscriptionKey`: The same subscription key that is in your [initialization file](#create-your-qna-maker-initialization-file).
 
-For information on additional parameters, see [bf qnamaker:build][bf-qnamakerbuild] in the BF CLI readme.
+For information on additional parameters, see [bf qnamaker:build][bf-qnamakerbuild] in the BF CLI `README`.
 
 Alternatively, you can include these required parameters in a configuration file and provide them via the `qnaConfig` parameter.
 

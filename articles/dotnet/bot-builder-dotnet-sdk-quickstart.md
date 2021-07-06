@@ -39,7 +39,7 @@ This article shows you how to build a bot by using the C# template, and then how
 
 ## Additional resources
 
-- See the [.NET Core SDK Templates](https://github.com/microsoft/BotBuilder-Samples/tree/main/generators/dotnet-templates#readme) README for more information about the .NET Core templates.
+- See the [.NET Core SDK Templates](https://github.com/microsoft/BotBuilder-Samples/tree/main/generators/dotnet-templates#readme) `README` for more information about the .NET Core templates.
 - See how to [debug a bot](../bot-service-debug-channel-ngrok.md) for how to debug using Visual Studio or Visual Studio Code and the Bot Framework Emulator.
 - See [Tunneling (ngrok)](https://github.com/Microsoft/BotFramework-Emulator/wiki/Tunneling-(ngrok)) for information on how to install ngrok.
 

@@ -396,7 +396,7 @@ Update your initialization code to load the service information for your knowled
 
 # [Python](#tab/python)
 
-1. Make sure you've installed the packages as described in the samples repository README file.
+1. Make sure you've installed the packages as described in the samples repository `README` file.
 1. Add the **botbuilder-ai** reference to the **requirements.txt** file, as shown below.
 
     **requirements.txt**

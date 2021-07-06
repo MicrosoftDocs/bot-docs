@@ -271,7 +271,7 @@ Before exiting each dialog turn, the bot uses the state management objects' `sav
 
 Download and install the latest [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md)
 
-1. Run the sample locally on your machine. If you need instructions, refer to the README file for [C# Sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/45.state-management) or [JS Sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/45.state-management).
+1. Run the sample locally on your machine. If you need instructions, refer to the `README` file for [C# Sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/45.state-management) or [JS Sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/45.state-management).
 1. Use the Emulator to test the bot as shown below.
 
 ![test state bot sample](media/state-bot-testing-emulator.png)

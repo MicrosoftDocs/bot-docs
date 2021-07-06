@@ -194,7 +194,7 @@ In the **qna_bot.py** file, we pass the user's input to the QnA Maker service's 
 
 ## Test the bot
 
-Run the sample locally on your machine. If you haven't done so already, install the [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md#download). For further instructions, refer to the sample's README ([C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/11.qnamaker), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/11.qnamaker), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/11.qnamaker)).
+Run the sample locally on your machine. If you haven't done so already, install the [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md#download). For further instructions, refer to the sample's `README` ([C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/11.qnamaker), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/11.qnamaker), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/11.qnamaker)).
 
 Start the Emulator, connect to your bot, and send a message as shown below.
 

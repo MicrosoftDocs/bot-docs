@@ -58,7 +58,7 @@ If you know what your LUIS application ID is, but need to get the active version
 bf luis:application:show --appId <application-id> --endpoint <endpoint> --subscriptionKey <subscription-key>
 ```
 
-For additional information on using this command, see [bf luis:application:show][bf-luisapplicationshow] in the Bot Framework CLI LUIS README.
+For additional information on using this command, see [bf luis:application:show][bf-luisapplicationshow] in the Bot Framework CLI LUIS `README`.
 
 If you don't know your LUIS application ID, you can use the [luis:application:list][bf-luisapplicationlist] command to get it, along with the active version ID. This command lists all LUIS apps that have been created in the specified LUIS authoring resource. The LUIS application ID is returned as `id` and the active version ID is returned as `activeVersion`.
 
@@ -66,7 +66,7 @@ If you don't know your LUIS application ID, you can use the [luis:application:li
 bf luis:application:list --endpoint <endpoint> --subscriptionKey <subscription-key>
 ```
 
-For additional information on using this command, see [bf luis:application:list][bf-luisapplicationlist] in the Bot Framework CLI LUIS README.
+For additional information on using this command, see [bf luis:application:list][bf-luisapplicationlist] in the Bot Framework CLI LUIS `README`.
 
 ## Create your LUIS Model
 
@@ -76,7 +76,7 @@ Anytime you make updates to any of the individual .lu files used in your project
 bf luis:convert -i <input-folder-name> -o <output-file-name> -r --name <name>
 ```
 
-For additional information on using this command, see [bf luis:convert][bf-luisconvert] in the Bot Framework CLI LUIS README.
+For additional information on using this command, see [bf luis:convert][bf-luisconvert] in the Bot Framework CLI LUIS `README`.
 
 <!--
 In the example below, the command is run in a command line while in the root directory of your project. It will search for all .lu files in the _dialogs_ directory and because of the `-r` option, all of its sub-directories. It will save a file named **LUISModel.json** in the _output_ directory.
@@ -100,7 +100,7 @@ Before creating a new version of your LUIS model, you can create a backup of the
 bf luis:version:delete --appId <application-id> --versionId <version-id> --endpoint <endpoint> --subscriptionKey <subscription-key>
 ```
 
-For additional information on using this command, see [bf luis:version:delete][bf-luisversiondelete] in the Bot Framework CLI LUIS README.
+For additional information on using this command, see [bf luis:version:delete][bf-luisversiondelete] in the Bot Framework CLI LUIS `README`.
 
 > [!IMPORTANT]
 >
@@ -114,7 +114,7 @@ Before you import the new version of your LUIS model, you can backup your active
 bf luis:version:rename --appId <application-id> --versionId <version-id> --newVersionId <new-version-id> --endpoint <endpoint> --subscriptionKey <subscription-key>
 ```
 
-For additional information on using this command, see [bf luis:version:rename][bf-luisversionrename] in the Bot Framework CLI LUIS README.
+For additional information on using this command, see [bf luis:version:rename][bf-luisversionrename] in the Bot Framework CLI LUIS `README`.
 
 > [!TIP]
 >
@@ -130,7 +130,7 @@ To update your LUIS app:
 luis:version:import --in <luis-model-json-file> --endpoint <endpoint> --subscriptionKey <subscription-key> --appId <app-id> --versionId <version-id>
 ```
 
-For more details and to see all options available for this command, see the [bf luis:application:import][bf-luisapplicationimport] section of the Bot Framework CLI LUIS README.
+For more details and to see all options available for this command, see the [bf luis:application:import][bf-luisapplicationimport] section of the Bot Framework CLI LUIS `README`.
 
 ## Train your LUIS Application
 
@@ -142,7 +142,7 @@ To train your LUIS app, use the `luis:train:run` command:
 bf luis:train:run --appId <application-id> --versionId <version-id> --endpoint <endpoint> --subscriptionKey <subscription-key>
 ```
 
-For additional information on using this command, see [bf luis:train:run][bf-luistrainrun] in the Bot Framework CLI LUIS README.
+For additional information on using this command, see [bf luis:train:run][bf-luistrainrun] in the Bot Framework CLI LUIS `README`.
 
 > [!TIP]
 >
@@ -156,7 +156,7 @@ When you finish building, training, and testing your active LUIS app, you can ma
 bf luis:application:publish --appId <application-id> --versionId <version-id> --endpoint <endpoint> --subscriptionKey <subscription-key>
 ```
 
-For additional information on using this command, see [bf luis:application:publish][luisapplicationpublish] in the Bot Framework CLI LUIS README.
+For additional information on using this command, see [bf luis:application:publish][luisapplicationpublish] in the Bot Framework CLI LUIS `README`.
 
 For information about publishing a LUIS application, see [Publish your active, trained app to a staging or production endpoint][luis-how-to-publish-app].
 

@@ -238,7 +238,7 @@ The bot uses the following criteria to validate input.
 > [!NOTE]
 > For the age and date input, you use the [Microsoft/Recognizers-Text](https://github.com/Microsoft/Recognizers-Text/) libraries to perform the initial parsing.
 > While you provide sample code, you do not explain how the text recognizers libraries work, and this is just one way to parse the input.
-> For more information about these libraries, see the repository's **README**.
+> For more information about these libraries, see the repository's `README`.
 
 ## [C#](#tab/csharp)
 
@@ -267,7 +267,7 @@ The bot uses the following criteria to validate input.
 
 Download and install the [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md) to test the bot locally.
 
-1. Run the sample locally on your machine. If you need instructions, refer to the README file for [C# sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/44.prompt-users-for-input), [JS sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/44.prompt-for-user-input), or the [Python sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/44.prompt-for-user-input).
+1. Run the sample locally on your machine. If you need instructions, refer to the `README` file for [C# sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/44.prompt-users-for-input), [JS sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/44.prompt-for-user-input), or the [Python sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/44.prompt-for-user-input).
 1. Test it using the Emulator as shown below.
 
 ![Sample interaction in the Emulator](media/primitive-prompts.png)

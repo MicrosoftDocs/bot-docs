@@ -666,10 +666,10 @@ For individual flavors of the SDK, append _for \<environment>_, to match the [Az
 ## README
 
 - **Status**: In general use. See the [README](https://docs.github.com/en/github/getting-started-with-github/github-glossary#readme) entry in the GitHub glossary.
-- **Definition**: A text file containing information about the files in a repository that is typically the first file a visitor to your repository will see. A README file, along with a repository license, contribution guidelines, and a code of conduct, helps you share expectations and manage contributions to your project.
+- **Definition**: A text file containing information about the files in a repository that is typically the first file a visitor to your repository will see. A `README` file, along with a repository license, contribution guidelines, and a code of conduct, helps you share expectations and manage contributions to your project.
 - **Notes**:
-  - To refer to content of a README, you can say, "See the README for the X repository..." or, "See the Bot Framework SDK README."
-  - To refer to the file as a file, you can say something like "Add a `readme.md` file to your project", and then format `readme.md` as you would any other file name or path.
+  - To refer to content of a `README`, you can say, "See the `README` for the X repository..." or, "See the Bot Framework SDK `README`."
+  - To refer to the file as a file, you can say something like "Add a `README.md` file to your project", and then format `README.md` as you would any other file name or path.
 
 ## repository
 

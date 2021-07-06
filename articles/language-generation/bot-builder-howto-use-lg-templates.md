@@ -189,7 +189,7 @@ After updating your bot logic and LG templates you are ready to add LUIS to your
 
 Download and install the latest [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md).
 
-1. Run the sample locally on your machine. If you need instructions, refer to the readme file for the [C# Sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot), [JS Sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot) or [Python Sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/13.core-bot).
+1. Run the sample locally on your machine. If you need instructions, refer to the `README` file for the [C# Sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot), [JS Sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot) or [Python Sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/13.core-bot).
 
 1. In the Emulator, type a message such as "travel to Paris" or "going from Paris to Berlin". Use any utterance found in the file FlightBooking.json for training the intent "Book flight".
 

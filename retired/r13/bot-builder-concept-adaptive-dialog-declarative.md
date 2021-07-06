@@ -401,7 +401,7 @@ To use the merge command, enter the following at the command prompt, while in th
 bf dialog:merge <filename.csproj>
 ```
 
-For additional information on using this command, see [bf dialog:merge][bf-dialogmerge-patterns] in the BF CLI LUIS readme.
+For additional information on using this command, see [bf dialog:merge][bf-dialogmerge-patterns] in the BF CLI LUIS `README`.
 
 For an example see [Creating the schema file][creating-the-schema-file] in the _Create a bot using declarative adaptive dialogs_ article.
 
@@ -421,7 +421,7 @@ To use the `verify` command, enter the following at the command prompt, while in
 bf dialog:verify <filename.csproj>
 ```
 
-For additional information on using this command, see [bf dialog:verify][bf-dialogverify-patterns] in the BF CLI LUIS readme.
+For additional information on using this command, see [bf dialog:verify][bf-dialogverify-patterns] in the BF CLI LUIS `README`.
 
 > [!NOTE]
 >

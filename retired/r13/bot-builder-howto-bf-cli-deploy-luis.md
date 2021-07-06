@@ -95,7 +95,7 @@ To create your LUIS app:
 luis:application:import --in <luis-model-json-file> --endpoint <endpoint> --subscriptionKey <subscription-key> --name <name> --versionId <initial-version-id>
 ```
 
-The example above shows the `luis:application:import` command with its required options. For more details and to see all options available for this command see the [bf luis:application:import][bf-luisapplicationimport] section of the LUIS CLI readme.
+The example above shows the `luis:application:import` command with its required options. For more details and to see all options available for this command see the [bf luis:application:import][bf-luisapplicationimport] section of the LUIS CLI `README`.
 
 To create a LUIS application without including a LUIS model see the [bf luis:application:create][bf-luisapplicationcreate] command.
 
@@ -132,7 +132,7 @@ This enables you to automate what you would normally do in the LUIS site:
 
 ![Train LUIS Application](./media/adaptive-dialogs/train.png)
 
-For additional information on using this command, see [bf luis:train:run][bf-luistrainrun] in the BF CLI LUIS readme.
+For additional information on using this command, see [bf luis:train:run][bf-luistrainrun] in the BF CLI LUIS `README`.
 
 > [!TIP]
 >
@@ -146,7 +146,7 @@ When you finish building, training, and testing your active LUIS app, make it av
 bf luis:application:publish --appId <application-id> --versionId <version-id> --endpoint <endpoint> --subscriptionKey <subscription-key>
 ```
 
-For additional information on using this command, see [bf luis:application:publish][luisapplicationpublish] in the BF CLI LUIS readme.
+For additional information on using this command, see [bf luis:application:publish][luisapplicationpublish] in the BF CLI LUIS `README`.
 
 For information about publishing a LUIS application, see [Publish your active, trained app to a staging or production endpoint][luis-how-to-publish-app].
 
@@ -188,7 +188,7 @@ The `luis:build` command will create all assets you need from your local .lu fil
 - `--authoringKey`: The same value as the subscriptionKey used in all previous commands discussed in this article.
 - `--region`: This defines the region to publish your LUIS applications. defaults to _westus_ if omitted.
 
-For information on the additional options, see [bf luis:build][bf-luisbuild] in the BF CLI readme.
+For information on the additional options, see [bf luis:build][bf-luisbuild] in the BF CLI `README`.
 
 Alternatively, you can include these required, as well as any of the other parameters in a configuration file and refer to them using the `--luConfig` option.
 

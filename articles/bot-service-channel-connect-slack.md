@@ -307,4 +307,4 @@ Navigate back to the [Slack API dashboard](https://api.slack.com/apps) and selec
 
     ![app testing](media/channels/slack-echobotapp-test.png)
 
-You can also test this feature using the [sample bot for the Slack adapter](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/60.slack-adapter) by populating the appSettings.json file with the same values described in the steps above. This sample has additional steps described in the README file to show examples of link sharing, receiving attachments, and sending interactive messages.
+You can also test this feature using the [sample bot for the Slack adapter](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/60.slack-adapter) by populating the appSettings.json file with the same values described in the steps above. This sample has additional steps described in the `README` file to show examples of link sharing, receiving attachments, and sending interactive messages.

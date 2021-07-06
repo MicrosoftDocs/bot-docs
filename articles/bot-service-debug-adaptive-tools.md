@@ -29,7 +29,7 @@ Adaptive Tools has a variety of tools and settings that make it easy to debug, a
 
 The [Adaptive Tools README](https://github.com/microsoft/BotBuilder-Samples/tree/main/experimental/adaptive-tool-readme) has all the information you need to install and use Adaptive Tools.
 
-The README includes details about:
+The `README` includes details about:
 
 - How to [install](https://github.com/microsoft/BotBuilder-Samples/tree/main/experimental/adaptive-tool-readme#getting-started) Adaptive Tools.
 - [Language features](https://github.com/microsoft/BotBuilder-Samples/tree/main/experimental/adaptive-tool-readme#language-features), like syntax highlighting and autocompletion.

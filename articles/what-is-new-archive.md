@@ -52,7 +52,7 @@ This article summarizes key new features and improvements in Bot Framework and A
 
 Welcome to the November 2020 release of the Bot Framework SDK. There are a number of updates in this version that we hope you will like; some of the key highlights include:
 
-- [Documentation](#documentation-updates): improvements to existing documentation, including READMEs for the code and samples repositories.
+- [Documentation](#documentation-updates): improvements to existing documentation, including `README` files for the code and samples repositories.
 - Teams: added support for the Participant Meeting API, and other general improvements.
 - Skills: can now be run and tested locally in the Emulator without an app ID and password, improved support for skills in adaptive dialogs.
 - Orchestrator (preview): a Language Understanding technology for routing incoming user utterances to an appropriate skill or to subsequent language processing service such as LUIS or QnA Maker.
@@ -65,7 +65,7 @@ Welcome to the November 2020 release of the Bot Framework SDK. There are a numbe
 Following feedback from customers and the Bot Framework Support team, a number of documents were created or updated. These are helpful towards providing answers and information relating to recurring issues from bot developers.
 
 - Expanded code comment documentation in the SDK repositories.
-- Improved READMEs in the samples and SDK repositories.
+- Improved `README` files in the samples and SDK repositories.
 - New and updated documents addressing recurring bot developer issues:
   - Updated and expanded the [conceptual](v4sdk/bot-builder-adaptive-dialog-Introduction.md) and [how-to](v4sdk/bot-builder-adaptive-dialog-setup.md) articles for adaptive dialogs.
   - Updated and reorganized the [authentication and security](v4sdk/bot-builder-authentication-basics.md) articles.
@@ -92,7 +92,7 @@ This article summarizes key new features and improvements in Bot Framework and A
 
 Welcome to the August 2020 release of the Bot Framework SDK. There are a number of updates in this version that we hope you will like; some of the key highlights include:
 
-- [Documentation](#documentation): improvements to existing documentation, including READMEs for the code and samples repositories.
+- [Documentation](#documentation): improvements to existing documentation, including `README` files for the code and samples repositories.
 - [Customer supportability](#customer-supportability): improvements focused on developers seeking assistance using the Bot Framework, tools and SDKs.
 - [Customer requests](#customer-requests): improvements focused on feature requests from the developer community and 3rd parties using the Bot Framework SDK and tools.
 - [Code quality](#code-quality): improvements focused on unit and functional test coverage and on the reference documentation.
@@ -106,7 +106,7 @@ Welcome to the August 2020 release of the Bot Framework SDK. There are a number 
 Following feedback from customers and the Bot Framework Support team, a number of documents were created or updated. These are helpful towards providing answers and information relating to recurring issues from bot developers.
 
 - Expanded code comment documentation in the SDK repositories.
-- Improved READMEs in the samples and SDK repositories.
+- Improved `README` files in the samples and SDK repositories.
 - New and updated documents addressing recurring bot developer issues:
   - Addition of an Azure Bot Service](/azure/bot-service/) hub page that links to both the Bot Framework Composer and the Bot Framework SDK documentation.
   - Updates to [language generation](v4sdk/bot-builder-concept-language-generation.md), [adaptive expressions](v4sdk/bot-builder-concept-adaptive-expressions.md), and [adaptive dialog](v4sdk/bot-builder-adaptive-dialog-introduction.md) articles.
@@ -153,7 +153,7 @@ Developers using the Microsoft Bot Framework have many [resources](bot-service-r
 
 - Continued improvements to Microsoft Teams API support.
 - Bot Framework CLI tools added `lg` as a core plugin and included other overall tool improvements.
-- Updated the README files in the samples and added new Teams Typescript samples.
+- Updated the `README` files in the samples and added new Teams Typescript samples.
 - Composer improved support for skills and improved integration for Cognitive Services.
 - Web Chat added many accessibility improvements.
 - Emulator added bug fixes and updates.
