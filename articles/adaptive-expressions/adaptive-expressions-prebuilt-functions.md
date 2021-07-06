@@ -94,10 +94,10 @@ You can also view the list in [alphabetical order](#prebuilt-functions-sorted-al
 |[greater](#greater)|Comparison greater than. Return `true` if the first value is more, or return `false` if less.|
 |[greaterOrEquals](#greaterOrEquals)|Comparison greater than or equal to. Return `true` if the first value is greater or equal, or return `false` if the first value is less.|
 |[if](#if)|Check whether an expression is true or false. Based on the result, return a specified value.|
-|[less](#less)|	Comparison less than opearation. Return `true` if the first value is less, or return `false` if the first value is more.|
+|[less](#less)|	Comparison less than operation. Return `true` if the first value is less, or return `false` if the first value is more.|
 |[lessOrEquals](#lessOrEquals)|	Comparison less than or equal operation. Return `true` if the first value is less than or equal, or return `false` if the first value is more.|
-|[not](#not)|	Logical not opearator. Return `true` if the expression is false, or return `false` if true.|
-|[or](#or)|Logical or opearation. Return `true` if at least one expression is true, or return `false` if all are false.|
+|[not](#not)|	Logical not operator. Return `true` if the expression is false, or return `false` if true.|
+|[or](#or)|Logical or operation. Return `true` if at least one expression is true, or return `false` if all are false.|
 |[exists](#exists)|Evaluate an expression for truthiness.|
 
 ## Conversion functions
@@ -129,7 +129,7 @@ You can also view the list in [alphabetical order](#prebuilt-functions-sorted-al
 |Function|Explanation|
 |-----------|-----------|
 |[abs](#abs)| Returns the absolute value of the specified number.|
-|[add](#add)|Mathematical and. Return the result from adding two numbers (pure number case) or concatting two or more strings.|
+|[add](#add)|Mathematical and. Return the result from adding two numbers (pure number case) or concatenating two or more strings.|
 |[div](#div)|Mathematical division. Return the integer result from dividing two numbers.|
 |[max](#max)|Return the largest value from a collection.|
 |[min](#min)|Return the smallest value from a collection.|
@@ -180,10 +180,10 @@ You can also view the list in [alphabetical order](#prebuilt-functions-sorted-al
 |[ticksToHours](#ticksToHours)| Convert a ticks property value to the number of hours. |
 |[ticksToMinutes](#ticksToMinutes)| Convert a ticks property value to the number of minutes. |
 |[dateTimeDiff](#dateTimeDiff)| Return the difference in ticks between two timestamps. |
-|[getPreviousViableDate](#getPreviousViableDate) | Return the previous viable date of a timex expression based on the current date and an optionally specified timezone. |
-|[getNextViableDate](#getNextViableDate) | Return the next viable date of a timex expression based on the current date and an optionally specified timezone. |
-|[getPreviousViableTime](#getPreviousViableTime) | Return the previous viable time of a timex expression based on the current time and an optionally specified timezone. |
-|[getNextViableTime](#getNextViableTime) | Return the next viable time of a timex expression based on the current time and an optionally specified timezone. |
+|[getPreviousViableDate](#getPreviousViableDate) | Return the previous viable date of a Timex expression based on the current date and an optionally specified timezone. |
+|[getNextViableDate](#getNextViableDate) | Return the next viable date of a Timex expression based on the current date and an optionally specified timezone. |
+|[getPreviousViableTime](#getPreviousViableTime) | Return the previous viable time of a Timex expression based on the current time and an optionally specified timezone. |
+|[getNextViableTime](#getNextViableTime) | Return the next viable time of a Timex expression based on the current time and an optionally specified timezone. |
 
 ## Timex functions
 
@@ -203,10 +203,10 @@ You can also view the list in [alphabetical order](#prebuilt-functions-sorted-al
 |Function|Explanation|
 |-----------|-----------|
 |[uriHost](#uriHost)   |Return the host value of a uniform resource identifier (URI).|
-|[uriPath](#uriPath)   |Return the path value of a unifor resource identifier (URI). |
+|[uriPath](#uriPath)   |Return the path value of a uniform resource identifier (URI). |
 |[uriPathAndQuery](#uriPathAndQuery)  |Return the path and query values for a uniform resource identifier (URI).  |
 |[uriPort](#uriPort)   |Return the port value of a uniform resource identifier (URI).|
-|[uriQuery](#uriQuery) |Retur0sn the query value of a uniform resouce identifier (URI).|
+|[uriQuery](#uriQuery) |Retur0sn the query value of a uniform resource identifier (URI).|
 |[uriScheme](#uriScheme)|Return the scheme value of a uniform resource identifier (URI).  |
 
 ## Object manipulation and construction functions
@@ -278,7 +278,7 @@ And both return the result **3.12134**.
 
 ### add
 
-Return the result from adding two or more numbers (pure number case) or concatting two or more strings (other case).
+Return the result from adding two or more numbers (pure number case) or concatenating two or more strings (other case).
 
 ```
 add(<item1>, <item2>, ...)
@@ -304,7 +304,7 @@ add(1, 1.5)
 
 And returns the result **2.5**.
 
-This example concats the specified items:
+This example concatenates the specified items:
 
 ```
 add('hello',null)
@@ -329,8 +329,8 @@ addDays('<timestamp>', <days>, '<format>'?, '<locale>'?)
 | --------- | -------- | ---- | ----------- |
 | <*timestamp*> | Yes | string | The string that contains the timestamp which must be standard UTC ISO format<br>YYYY-MM-DDTHH:mm:ss.fffZ |
 | <*days*> | Yes | integer | The positive or negative number of days to add |
-| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://wikipedia.org/wiki/ISO_8601). |
-| <*locale*> | No | string | An optional locale of culture infomation |
+| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://www.w3.org/QA/Tips/iso-date). |
+| <*locale*> | No | string | An optional locale of culture information |
 |||||
 
 | Return value | Type | Description |
@@ -382,8 +382,8 @@ addHours('<timestamp>', <hours>, '<format>'?, '<locale>'?)
 | --------- | -------- | ---- | ----------- |
 | <*timestamp*> | Yes | string | The string that contains the timestamp |
 | <*hours*> | Yes | integer | The positive or negative number of hours to add |
-| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://wikipedia.org/wiki/ISO_8601). |
-| <*locale*> | No | string | An optional locale of culture infomation |
+| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://www.w3.org/QA/Tips/iso-date). |
+| <*locale*> | No | string | An optional locale of culture information |
 |||||
 
 | Return value | Type | Description |
@@ -435,8 +435,8 @@ addMinutes('<timestamp>', <minutes>, '<format>'?, '<locale>'?)
 | --------- | -------- | ---- | ----------- |
 | <*timestamp*> | Yes | string | The string that contains the timestamp |
 | <*minutes*> | Yes | integer | The positive or negative number of minutes to add |
-| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://wikipedia.org/wiki/ISO_8601). |
-| <*locale*> | No | string | An optional locale of culture infomation |
+| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://www.w3.org/QA/Tips/iso-date). |
+| <*locale*> | No | string | An optional locale of culture information |
 |||||
 
 | Return value | Type | Description |
@@ -555,7 +555,7 @@ addSeconds('<timestamp>', <seconds>, '<format>'?)
 | --------- | -------- | ---- | ----------- |
 | <*timestamp*> | Yes | string | The string that contains the timestamp |
 | <*seconds*> | Yes | integer | The positive or negative number of seconds to add |
-| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://wikipedia.org/wiki/ISO_8601). |
+| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://www.w3.org/QA/Tips/iso-date). |
 |||||
 
 | Return value | Type | Description |
@@ -598,8 +598,8 @@ addToTime('<timestamp>', '<interval>', <timeUnit>, '<format>'?, '<locale>'?)
 | <*timestamp*> | Yes | string | The string that contains the timestamp |
 | <*interval*> | Yes | integer | The number of specified time units to add |
 | <*timeUnit*> | Yes | string | The unit of time to use with *interval*. Possible units are "Second", "Minute", "Hour", "Day", "Week", "Month", and "Year". |
-| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://wikipedia.org/wiki/ISO_8601). |
-| <*locale*> | No | string | An optional locale of culture infomation |
+| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://www.w3.org/QA/Tips/iso-date). |
+| <*locale*> | No | string | An optional locale of culture information |
 |||||
 
 | Return value | Type | Description |
@@ -640,7 +640,7 @@ all(<sequence>, <item>, <condition>)
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*sequence*> | Yes | object | A sequence to be evaluated. |
-| <*item*> | Yes | string | Refers to the elements to evaluate in the sequence. | 
+| <*item*> | Yes | string | Refers to the elements to evaluate in the sequence. |
 | <*condition*> | Yes | expression | The expression to evaluate the condition. |
 |||||
 
@@ -1035,7 +1035,7 @@ Expected return values:
 
 - If all items are lists, a list will be returned.
 - If there exists an item that is not a list, a string will be returned.
-- If a value is null, it is skipped and not concatanated.
+- If a value is null, it is skipped and not concatenated.
 
 *Example*
 
@@ -1208,9 +1208,9 @@ convertFromUTC('<timestamp>', '<destinationTimeZone>', '<format>'?, '<locale>'?)
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*timestamp*> | Yes | string | The string that contains the timestamp |
-| <*destinationTimeZone*> | Yes | string | The name of the target time zone. Supports Windows and Iana time zones. |
-| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is the ["o" format](/dotnet/standard/base-types/standard-date-and-time-format-strings#Roundtrip), yyyy-MM-ddTHH:mm:ss.fffffffK, which complies with [ISO 8601](https://wikipedia.org/wiki/ISO_8601). |
-| <*locale*> | No | string | An optional locale of culture infomation |
+| <*destinationTimeZone*> | Yes | string | The name of the target time zone. Supports Windows and IANA time zones. |
+| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is the ["o" format](/dotnet/standard/base-types/standard-date-and-time-format-strings#Roundtrip), yyyy-MM-ddTHH:mm:ss.fffffffK, which complies with [ISO 8601](https://www.w3.org/QA/Tips/iso-date). |
+| <*locale*> | No | string | An optional locale of culture information |
 |||||
 
 | Return value | Type | Description |
@@ -1255,9 +1255,9 @@ convertToUTC('<timestamp>', '<sourceTimeZone>', '<format>'?, '<locale>'?)
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*timestamp*> | Yes | string | The string that contains the timestamp |
-| <*sourceTimeZone*> | Yes | string | The name of the target time zone. Supports Windows and Iana time zones. |
-| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://wikipedia.org/wiki/ISO_8601). |
-| <*locale*> | No | string | An optional locale of culture infomation |
+| <*sourceTimeZone*> | Yes | string | The name of the target time zone. Supports Windows and IANA time zones. |
+| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://www.w3.org/QA/Tips/iso-date). |
+| <*locale*> | No | string | An optional locale of culture information |
 |||||
 
 | Return value | Type | Description |
@@ -2033,8 +2033,8 @@ formatDateTime('<timestamp>', '<format>'?, '<locale>'?)
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*timestamp*> | Yes | string | The string that contains the timestamp |
-| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://wikipedia.org/wiki/ISO_8601). |
-| <*locale*> | No | string | An optional locale of culture infomation |
+| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://www.w3.org/QA/Tips/iso-date). |
+| <*locale*> | No | string | An optional locale of culture information |
 |||||
 
 
@@ -2076,8 +2076,8 @@ formatEpoch('<epoch>', '<format>'?, '<locale>'?)
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*epoch*> | Yes | number | The epoch number |
-| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://wikipedia.org/wiki/ISO_8601). |
-| <*locale*> | No | string | An optional locale of culture infomation |
+| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://www.w3.org/QA/Tips/iso-date). |
+| <*locale*> | No | string | An optional locale of culture information |
 |||||
 
 | Return value | Type | Description |
@@ -2119,17 +2119,17 @@ formatNumber('<number>', '<precision-digits>', '<locale>'?)
 | --------- | -------- | ---- | ----------- |
 | <*number*> | Yes | number | An input number |
 | <*precision-digits*> | Yes | integer | A specified number of fractional digits|
-| <*locale*> | No| string | An optional locale of culture infomation |
+| <*locale*> | No| string | An optional locale of culture information |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*return-value*> | number | The return value of the input formated at a specified number of fractional digits and a specified locale |
+| <*return-value*> | number | The return value of the input formatted at a specified number of fractional digits and a specified locale |
 ||||
 
 *Example 1*
 
-This example formats ther number **10.333** to **2** fractional digits:
+This example formats the number **10.333** to **2** fractional digits:
 
 ```
 formatNumber(10.333, 2)
@@ -2166,9 +2166,9 @@ formatTicks('<ticks>', '<format>'?, '<locale>'?)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*epoch*> | Yes | number (or bigint in Javascript)| The ticks number |
-| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://wikipedia.org/wiki/ISO_8601). |
-| <*locale*> | No | string | An optional locale of culture infomation |
+| <*epoch*> | Yes | number (or bigint in JavaScript)| The ticks number |
+| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://www.w3.org/QA/Tips/iso-date). |
+| <*locale*> | No | string | An optional locale of culture information |
 |||||
 
 | Return value | Type | Description |
@@ -2210,8 +2210,8 @@ getFutureTime(<interval>, <timeUnit>, '<format>'?, '<locale>'?)
 | --------- | -------- | ---- | ----------- |
 | <*interval*> | Yes | integer | The number of specific time units to add |
 | <*timeUnit*> | Yes | string | The unit of time to use with *interval*. Possible units are "Second", "Minute", "Hour", "Day", "Week", "Month", and "Year".|
-| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://wikipedia.org/wiki/ISO_8601). |
-| <*locale*> | No | string | An optional locale of culture infomation |
+| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://www.w3.org/QA/Tips/iso-date). |
+| <*locale*> | No | string | An optional locale of culture information |
 |||||
 
 | Return value | Type | Description |
@@ -2253,7 +2253,7 @@ And returns the result **02.05.20 00:00:00**.
 
 ### getNextViableDate
 
-Return the next viable date of a timex expression based on the current date and an optionally specified timezone.
+Return the next viable date of a Timex expression based on the current date and an optionally specified timezone.
 
 ```
 getNextViableDate(<timexString>, <timezone>?)
@@ -2261,7 +2261,7 @@ getNextViableDate(<timexString>, <timezone>?)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*timexString*> | Yes | string | The timex string of the date to evaluate. |
+| <*timexString*> | Yes | string | The Timex string of the date to evaluate. |
 | <*timezone*> | No | string | The optional timezone. |
 |||||
 
@@ -2274,7 +2274,7 @@ getNextViableDate(<timexString>, <timezone>?)
 
 Say the date is **2020-06-12** and current time is **15:42:21**.
 
-These examples evaluate the timex string for the next viable date based on the above date and time:
+These examples evaluate the Timex string for the next viable date based on the above date and time:
 
 ```
 getPreviousViableDate("XXXX-12-20", "America/Los_Angeles")
@@ -2290,7 +2290,7 @@ And return the following strings respectively:
 
 ### getNextViableTime
 
-Return the next viable time of a timex expression based on the current time and an optionally specified timezone.
+Return the next viable time of a Timex expression based on the current time and an optionally specified timezone.
 
 ```
 getNextViableTime(<timexString>, <timezone>?)
@@ -2298,7 +2298,7 @@ getNextViableTime(<timexString>, <timezone>?)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*timexString*> | Yes | string | The timex string of the time to evaluate. |
+| <*timexString*> | Yes | string | The Timex string of the time to evaluate. |
 | <*timezone*> | No | string | The optional timezone. |
 |||||
 
@@ -2311,14 +2311,14 @@ getNextViableTime(<timexString>, <timezone>?)
 
 Say the date is **2020-06-12** and current time is **15:42:21**.
 
-These examples evaluate a timex string for the next viable time based on the above date and time:
+These examples evaluate a Timex string for the next viable time based on the above date and time:
 
 ```
 getNextViableTime("TXX:12:14", "Asia/Tokyo")
 getNextViableTime("TXX:52:14")
 ```
 
-And return the following strings repsectively:
+And return the following strings respectively:
 
 - **T16:12:14**
 - **T15:52:14**
@@ -2335,9 +2335,9 @@ getPastTime(<interval>, <timeUnit>, '<format>'?)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*interval*> | Yes | integer | The number of specific time units to substract |
+| <*interval*> | Yes | integer | The number of specific time units to subtract |
 | <*timeUnit*> | Yes | string | The unit of time to use with *interval*. Possible units are "Second", "Minute", "Hour", "Day", "Week", "Month", and "Year". |
-| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://wikipedia.org/wiki/ISO_8601). |
+| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://www.w3.org/QA/Tips/iso-date). |
 |||||
 
 | Return value | Type | Description |
@@ -2379,7 +2379,7 @@ And returns the result **31.04.20 00:00:00**.
 
 ### getPreviousViableDate
 
-Return the previous viable date of a timex expression based on the current date and an optionally specified timezone.
+Return the previous viable date of a Timex expression based on the current date and an optionally specified timezone.
 
 ```
 getPreviousViableDate(<timexString>, <timezone>?)
@@ -2387,7 +2387,7 @@ getPreviousViableDate(<timexString>, <timezone>?)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*timexString*> | Yes | string | The timex string of the date to evaluate. |
+| <*timexString*> | Yes | string | The Timex string of the date to evaluate. |
 | <*timezone*> | No | string | The optional timezone. |
 |||||
 
@@ -2400,14 +2400,14 @@ getPreviousViableDate(<timexString>, <timezone>?)
 
 Say the date is **2020-06-12** and current time is **15:42:21**.
 
-These examples evaluate a timex string for the previous viable date based on the above date and time:
+These examples evaluate a Timex string for the previous viable date based on the above date and time:
 
 ```
 getPreviousViableDate("XXXX-12-20", "Eastern Standard Time")
 getPreviousViableDate("XXXX-02-29")
 ```
 
-And return the following strings repsectively:
+And return the following strings respectively:
 
 - **2019-12-20**
 - **2020-02-29**
@@ -2416,7 +2416,7 @@ And return the following strings repsectively:
 
 ### getPreviousViableTime
 
-Return the previous viable time of a timex expression based on the current date and an optionally specified timezone.
+Return the previous viable time of a Timex expression based on the current date and an optionally specified timezone.
 
 ```
 getPreviousViableTime(<timexString>, <timezone>?)
@@ -2424,7 +2424,7 @@ getPreviousViableTime(<timexString>, <timezone>?)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*timexString*> | Yes | string | The timex string of the time to evaluate. |
+| <*timexString*> | Yes | string | The Timex string of the time to evaluate. |
 | <*timezone*> | No | string | The optional timezone. |
 |||||
 
@@ -2437,14 +2437,14 @@ getPreviousViableTime(<timexString>, <timezone>?)
 
 Say the date is **2020-06-12** and current time is **15:42:21**.
 
-These examples evaluate a timex string for the previous viable time based on the above date and time:
+These examples evaluate a Timex string for the previous viable time based on the above date and time:
 
 ```
 getPreviousViableTime("TXX:52:14")
 getPreviousViableTime("TXX:12:14", 'Europe/London')
 ```
 
-And return the following strings repsectively:
+And return the following strings respectively:
 
 - **T14:52:14**
 - **T15:12:14**
@@ -2964,7 +2964,7 @@ isDate('<input>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*input*> | Yes | bbject or string | The input TimexProperty object or a Timex expression string. |
+| <*input*> | Yes | object or string | The input TimexProperty object or a Timex expression string. |
 |||||
 
 | Return value | Type | Description |
@@ -3070,7 +3070,7 @@ isDefinite('<input>')
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*boolean-result*> | Boolean | Return `true` if the given input refers to a valid full date, or return `false` if it does not refere to a valid full date. |
+| <*boolean-result*> | Boolean | Return `true` if the given input refers to a valid full date, or return `false` if it does not refer to a valid full date. |
 ||||
 
 *Examples*
@@ -3278,7 +3278,7 @@ isPresent('<input>')
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*boolean-result*> | Boolean | Return `true` if the input refers to the present, or return false if it doesn't refere to the present. |
+| <*boolean-result*> | Boolean | Return `true` if the input refers to the present, or return false if it doesn't refer to the present. |
 ||||
 
 *Examples*
@@ -3494,7 +3494,7 @@ jPath(jsonStr, path)
 
 And it returns the result **["Anvil", "Elbow Grease"]**.
 
-*Javascript Example*
+*JavaScript Example*
 
 Say you have the following JSON:
 
@@ -3819,7 +3819,7 @@ And return the following results respectively:
 
 ### max
 
-Return the highest value from a list or array. The list or arary is inclusive at both ends.
+Return the highest value from a list or array. The list or array is inclusive at both ends.
 
 ```
 max(<number1>, <number2>, ...)
@@ -4335,7 +4335,7 @@ resolve('<timestamp')
 
 *Examples*
 
-These examples show if the given strings refere to valid time:
+These examples show if the given strings refer to valid time:
 
 ```
 resolve(T14)
@@ -4366,7 +4366,7 @@ reverse(<value>)
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*return*> | string or array | The reveresed elements of a string or array. |
+| <*return*> | string or array | The reversed elements of a string or array. |
 ||||
 
 *Examples*
@@ -4482,7 +4482,7 @@ sentenceCase('<text>', '<locale>'?)
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*text*> | Yes | string | The original string |
-| <*locale*> | No | string | An optional locale of culture infomation |
+| <*locale*> | No | string | An optional locale of culture information |
 |||||
 
 | Return value | Type | Description |
@@ -4782,7 +4782,7 @@ split('', '')
 split('hello')
 ```
 
-And returns the following arrays as the result repsectively:
+And returns the following arrays as the result respectively:
 - **["a", "b", "c"]**
 - **["h", "e", "l", "l", "o"]**
 - **[""]**, **[ ]**
@@ -4834,8 +4834,8 @@ startOfDay('<timestamp>', '<format>'?, '<locale>'?)
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*timestamp*> | Yes | string | The string that contains the timestamp |
-| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://wikipedia.org/wiki/ISO_8601). |
-| <*locale*> | No | string | An optional locale of culture infomation |
+| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://www.w3.org/QA/Tips/iso-date). |
+| <*locale*> | No | string | An optional locale of culture information |
 |||||
 
 | Return value | Type | Description |
@@ -4876,8 +4876,8 @@ startOfHour('<timestamp>', '<format>'?, '<locale>'?)
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*timestamp*> | Yes | string | The string that contains the timestamp |
-| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://wikipedia.org/wiki/ISO_8601). |
-| <*locale*> | No | string | An optional locale of culture infomation |
+| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://www.w3.org/QA/Tips/iso-date). |
+| <*locale*> | No | string | An optional locale of culture information |
 |||||
 
 | Return value | Type | Description |
@@ -4918,8 +4918,8 @@ startOfMonth('<timestamp>', '<format>'?, '<locale>'?)
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*timestamp*> | Yes | string | The string that contains the timestamp |
-| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://wikipedia.org/wiki/ISO_8601). |
-| <*locale*> | No | string | An optional locale of culture infomation |
+| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://www.w3.org/QA/Tips/iso-date). |
+| <*locale*> | No | string | An optional locale of culture information |
 |||||
 
 | Return value | Type | Description |
@@ -5001,7 +5001,7 @@ string(<value>, '<locale>'?)
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*value*> | Yes | any | The value to convert |
-| <*locale*> | No | string | An optional locale of culture infomation |
+| <*locale*> | No | string | An optional locale of culture information |
 |||||
 
 | Return value | Type | Description |
@@ -5186,8 +5186,8 @@ subtractFromTime('<timestamp>', <interval>, '<timeUnit>', '<format>'?, '<locale>
 | <*timestamp*> | Yes | string | The string that contains the timestamp |
 | <*interval*> | Yes | integer | The number of specified time units to subtract |
 | <*timeUnit*> | Yes | string | The unit of time to use with *interval*. Possible units are "Second", "Minute", "Hour", "Day", "Week", "Month", and "Year". |
-| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://wikipedia.org/wiki/ISO_8601). |
-| <*locale*> | No | string | An optional locale of culture infomation |
+| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://www.w3.org/QA/Tips/iso-date). |
+| <*locale*> | No | string | An optional locale of culture information |
 |||||
 
 | Return value | Type | Description |
@@ -5308,7 +5308,7 @@ ticks('<timestamp>')
 
 | Return value | Type | Description |
 | ------------ | -----| ----------- |
-| <*ticks-number*> | integer (bigint in Javascript)| The number of ticks since the specified timestamp |
+| <*ticks-number*> | integer (bigint in JavaScript)| The number of ticks since the specified timestamp |
 ||||
 
 *Example*
@@ -5424,7 +5424,7 @@ titleCase('<text>', '<locale>'?)
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*text*> | Yes | string | The original string |
-| <*locale*> | No | string | An optional locale of culture infomation |
+| <*locale*> | No | string | An optional locale of culture information |
 |||||
 
 | Return value | Type | Description |
@@ -5475,7 +5475,7 @@ toLower('<text>', '<locale>'?)
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*text*> | Yes | string | The string to return in lowercase format |
-| <*locale*> | No | string | An optional locale of culture infomation |
+| <*locale*> | No | string | An optional locale of culture information |
 |||||
 
 | Return value | Type | Description |
@@ -5516,7 +5516,7 @@ toUpper('<text>', '<locale>'?)
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*text*> | Yes | string | The string to return in uppercase format |
-| <*locale*> | No | string | An optional locale of culture infomation |
+| <*locale*> | No | string | An optional locale of culture information |
 |||||
 
 | Return value | Type | Description |
@@ -5890,8 +5890,8 @@ Optionally, you can specify a different format with the <*format*> parameter.
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://wikipedia.org/wiki/ISO_8601). |
-| <*locale*> | No | string | An optional locale of culture infomation |
+| <*format*> | No | string | A [custom format pattern](/dotnet/standard/base-types/custom-date-and-time-format-strings). The default format for the timestamp is UTC ISO format, YYYY-MM-DDTHH:mm:ss.fffZ, which complies with [ISO 8601](https://www.w3.org/QA/Tips/iso-date). |
+| <*locale*> | No | string | An optional locale of culture information |
 |||||
 
 | Return value | Type | Description |
@@ -5942,7 +5942,7 @@ where([<collection/instance>], <iteratorName>, <function>)
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*collection/instance*> | Yes | array | The collection with the items |
-| <*iteratorName*> | Yes | iterater name | The key item |
+| <*iteratorName*> | Yes | iterator name | The key item |
 | <*function*> | Yes | expression | Condition function used to filter items|
 |||||
 

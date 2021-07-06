@@ -6,7 +6,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 04/12/2021
+ms.date: 06/23/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -24,7 +24,7 @@ For an overview of how the Bot Framework handles this kind of authentication, se
 This article references two samples. One shows how to obtain an authentication token. The other is more complex and shows how to access [Microsoft Graph](/en-us/graph) on behalf of the user. In both cases you can use Azure Active Directory (AD) v1 or Azure AD v2 as an identity provider to obtain an OAuth token for the bot.
 This article covers how to:
 
-- [Create an Azure bot resource](#create-an-azure-bot-resource)
+- [Create an Azure bot resource](#create-the-resource)
 - [Create the Azure AD identity provider](#create-the-azure-ad-identity-provider)
 - [Register the Azure AD identity provider with the bot](#register-the-azure-ad-identity-provider-with-the-bot)
 - [Prepare the bot code](#prepare-the-bot-code)

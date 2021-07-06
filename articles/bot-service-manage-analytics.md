@@ -26,7 +26,7 @@ Too much data? You can [enable and configure sampling](/azure/application-insigh
 
 Choose which channels appear in the graphs below. Note that if a bot is not enabled on a channel, there will be no data from that channel.
 
-![Select channel](~/media/analytics-channels.png)
+![Select channel](media/analytics-channels.png)
 
 * Check the check box to include a channel in the chart.
 * Clear the check box to remove a channel from the chart.
@@ -35,7 +35,7 @@ Choose which channels appear in the graphs below. Note that if a bot is not enab
 
 Analysis is available for the past 90 days only. Data collection began when Application Insights was enabled.
 
-![Select time period](~/media/analytics-timepick.png)
+![Select time period](media/analytics-timepick.png)
 
 Click the drop-down menu and then click the amount of time the graphs should display.
 Note that changing the overall time frame will cause the time increment (X-axis) on the graphs to change accordingly.
@@ -50,7 +50,7 @@ Dashes `--` indicate no activity.
 Retention tracks how many users who sent one message came back later and sent another one.
 The chart is a rolling 10-day window; the results are not affected by changing the time frame.
 
-![Retention chart](~/media/analytics-retention.png)
+![Retention chart](media/analytics-retention.png)
 
 Note that the most recent possible date is two days ago; a user sent messages the day before yesterday and then *returned* yesterday.
 
@@ -58,7 +58,7 @@ Note that the most recent possible date is two days ago; a user sent messages th
 
 The Users graph tracks how many users accessed the bot using each channel during the specified time frame.
 
-![Users graph](~/media/analytics-users.png)
+![Users graph](media/analytics-users.png)
 
 * The percentage chart shows what percentage of users used each channel.
 * The line graph indicates how many users were accessing the bot at a certain time.
@@ -68,7 +68,7 @@ The Users graph tracks how many users accessed the bot using each channel during
 
 The Activities graph tracks how many activities were sent and received using which channel during the specified time frame.
 
-![activities graph](~/media/analytics-activities.png)
+![activities graph](media/analytics-activities.png)
 
 * The percentage chart shows what percentage of activities were communicated over each channel.
 * The line graph indicates how many activities were sent and received over the specified time frame.
@@ -90,7 +90,7 @@ You can also create an Application Insights resource later and connect it to you
 2. Open the bot in the dashboard. Click **Settings** and scroll down to the **Analytics** section.
 3. Enter the information to connect the bot to Application Insights. All fields are required.
 
-![Connect Insights](~/media/analytics-enable.png)
+![Connect Insights](media/analytics-enable.png)
 
 <!--Snip: As of 12/04/2018, parts of this appear to be out of date. However, ~/bot-service-resources-app-insights-keys.md appears to be up to date.
 
@@ -108,8 +108,8 @@ To find this value, open Application Insights and navigate to **Configure** > **
 
 /Snip-->
 
-For more information on how to locate these values, see [Application Insights keys](~/bot-service-resources-app-insights-keys.md).
+For more information on how to locate these values, see [Application Insights keys](bot-service-resources-app-insights-keys.md).
 
 ## Additional resources
 
-* [Application Insights keys](~/bot-service-resources-app-insights-keys.md)
+* [Application Insights keys](bot-service-resources-app-insights-keys.md)

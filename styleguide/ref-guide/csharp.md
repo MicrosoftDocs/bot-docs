@@ -45,7 +45,7 @@ Tools:
 
 - **Dev team** builds the NuGet packages and publishes them to the NuGet site.
 
-  In theory, they update the list of [current C# packages](https://github.com/Microsoft/BotBuilder-dotnet#packages) on the botbuilder-dotnet README page.
+  In theory, they update the list of [current C# packages](https://github.com/Microsoft/BotBuilder-dotnet#packages) on the botbuilder-dotnet `README` page.
 
 ### After an SDK release
 

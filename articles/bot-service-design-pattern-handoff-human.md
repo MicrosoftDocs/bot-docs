@@ -18,9 +18,8 @@ Regardless of how much artificial intelligence a bot possesses, there may still 
 
 Microsoft Bot Framework is an open platform that allows developers to integrate with a variety of agent engagement platforms.
 
-
 <!-- We don't own this aka link, and for v4, I think there is an updated pattern.
-You can read more about the Bot Framework [handoff protocol](https://github.com/microsoft/BotBuilder-Samples/tree/main/experimental/handoff-library/#protocol) <a href=" " target="blank">here</a>.
+You can read more about the Bot Framework [handoff protocol](https://github.com/microsoft/BotBuilder-Samples/tree/main/experimental/handoff-library/#protocol).
 -->
 
 ## Handoff integration models
@@ -35,7 +34,7 @@ In the first model, known as "Bot as an agent", the bot joins the ranks of the l
 
 The main advantage of this mode is in its simplicity – an existing bot can be onboarded to the agent hub with minimal effort, with all of the complexity of message routing taken care of by the agent hub.
 
-![Bot as an agent scenario](~/media/designing-bots/patterns/bot-as-agent-2.PNG)
+![Bot as an agent scenario](media/designing-bots/patterns/bot-as-agent-2.PNG)
 
 ### Bot as a proxy
 
@@ -43,7 +42,7 @@ The second model is known as "Bot as a proxy". The user talks directly to the bo
 
 Flexibility and control are the main advantages of this model. The bot can support a variety of channels and have control over how the conversations are escalated and routed between the user, the bot, and the agent hub.
 
-![Bot as a proxy scenario](~/media/designing-bots/patterns/bot-as-proxy-2.PNG)
+![Bot as a proxy scenario](media/designing-bots/patterns/bot-as-proxy-2.PNG)
 
 ## Handoff protocol
 

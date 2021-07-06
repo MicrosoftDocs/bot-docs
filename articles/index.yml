@@ -61,11 +61,8 @@ conceptualContent:
         - url: v4sdk/bot-builder-basics.md
           itemType: concept
           text: How bots work
-        - url: dotnet/bot-builder-dotnet-sdk-quickstart.md
+        - url: bot-service-quickstart-create-bot.md
           itemType: quickstart
-          text: Quickstart
-        - url: v4sdk/bot-builder-tutorial-create-basic-bot.md
-          itemType: tutorial
           text: Create a bot
         - url: v4sdk/bot-builder-tutorial-deploy-basic-bot.md
           itemType: tutorial

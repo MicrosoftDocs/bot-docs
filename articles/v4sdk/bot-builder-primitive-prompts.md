@@ -75,30 +75,30 @@ You use the bot's message turn handler plus user and conversation state properti
 
 Create the user and conversation state objects at startup and consume them via dependency injection in the bot constructor.
 
-**Startup.cs**  
+**Startup.cs**
 [!code-csharp[Startup.cs](~/../botbuilder-samples/samples/csharp_dotnetcore/44.prompt-users-for-input/Startup.cs?range=23-30)]
 
-**Bots/CustomPromptBot.cs**  
+**Bots/CustomPromptBot.cs**
 [!code-csharp[constructor](~/../botbuilder-samples/samples/csharp_dotnetcore/44.prompt-users-for-input/Bots/CustomPromptBot.cs?range=21-28)]
 
 ## [JavaScript](#tab/javascript)
 
 Create the user and conversation state objects in **index.js** and consume them in the bot constructor.
 
-**index.js**  
+**index.js**
 [!code-javascript[index.js](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/index.js?range=33-39)]
 
-**bots/customPromptBot.js**  
+**bots/customPromptBot.js**
 [!code-javascript[constructor](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/bots/customPromptBot.js?range=20-22)]
 [!code-javascript[constructor](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/bots/customPromptBot.js?range=27-29)]
 
 ## [Java](#tab/java)
 Construct the CustomPromptBot in the getBot method using the ConversationState and UserState instances provided by the Spring container. The constructor of CustomPromptBot will store references to the ConversationState and UserState provided during startup.
 
-**Application.java**  
+**Application.java**
 [!code-java[Application.java](~/../botbuilder-samples/samples/java_springboot/44.prompt-users-for-input/src/main/java/com/microsoft/bot/sample/promptusersforinput/Application.java?range=51-57)]
 
-**CustomPromptBot.java**  
+**CustomPromptBot.java**
 [!code-java[constructor](~/../botbuilder-samples/samples/java_springboot/44.prompt-users-for-input/src/main/java/com/microsoft/bot/sample/promptusersforinput/CustomPromptBot.java?range=37-43)]
 
 ## [Python](#tab/python)
@@ -121,7 +121,7 @@ Create the user and conversation state objects in **app.py** and consume them in
 
 Create property accessors for the user profile and conversation flow properties and then call `GetAsync` to retrieve the property value from state.
 
-**Bots/CustomPromptBot.cs**  
+**Bots/CustomPromptBot.cs**
 [!code-csharp[OnMessageActivityAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/44.prompt-users-for-input/Bots/CustomPromptBot.cs?range=30-37)]
 
 Before the turn ends, call `SaveChangesAsync` to write any state changes to storage.
@@ -132,7 +132,7 @@ Before the turn ends, call `SaveChangesAsync` to write any state changes to stor
 
 Create property accessors for the user profile and conversation flow properties and then call `get` to retrieve the property value from state.
 
-**bots/customPromptBot.js**  
+**bots/customPromptBot.js**
 [!code-javascript[onMessage](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/bots/customPromptBot.js?range=31-33)]
 
 Before the turn ends, call `saveChanges` to write any state changes to storage.
@@ -143,7 +143,7 @@ Before the turn ends, call `saveChanges` to write any state changes to storage.
 
 Create property accessors for the user profile and conversation flow properties and then call `get` to retrieve the property value from state.
 
-**CustomPromptBot.java**  
+**CustomPromptBot.java**
 [!code-java[OnMessageActivityAsync](~/../botbuilder-samples/samples/java_springboot/44.prompt-users-for-input/src/main/java/com/microsoft/bot/sample/promptusersforinput/CustomPromptBot.java?range=45-56)]
 
 Before the turn ends, call `saveChanges` to write any state changes to storage.
@@ -155,7 +155,7 @@ Before the turn ends, call `saveChanges` to write any state changes to storage.
 
 In the constructor, you create the state property accessors and set up the state management objects (created above) for our conversation.
 
-**bots/custom_prompt_bot.py**  
+**bots/custom_prompt_bot.py**
 [!code-python[on_message_activity](~/../botbuilder-samples/samples/python/44.prompt-for-user-input/bots/custom_prompt_bot.py?range=46-49)]
 
 Before the turn ends, call `SaveChangesAsync` to write any state changes to storage.
@@ -170,23 +170,23 @@ When handling message activities, the message handler uses a helper method to ma
 
 ## [C#](#tab/csharp)
 
-**Bots/CustomPromptBot.cs**  
+**Bots/CustomPromptBot.cs**
 [!code-csharp[message handler](~/../botbuilder-samples/samples/csharp_dotnetcore/44.prompt-users-for-input/Bots/CustomPromptBot.cs?range=30-44)]
 
 ## [JavaScript](#tab/javascript)
 
-**bots/customPromptBot.js**  
+**bots/customPromptBot.js**
 [!code-javascript[message handler](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/bots/customPromptBot.js?range=31-39)]
 
 ## [Java](#tab/java)
 
-**CustomPromptBot.java**  
+**CustomPromptBot.java**
 [!code-java[message handler](~/../botbuilder-samples/samples/java_springboot/44.prompt-users-for-input/src/main/java/com/microsoft/bot/sample/promptusersforinput/CustomPromptBot.java?range=45-59)]
 
 
 ## [Python](#tab/python)
 
-**bots/custom_prompt_bot.py**  
+**bots/custom_prompt_bot.py**
 [!code-python[message handler](~/../botbuilder-samples/samples/python/44.prompt-for-user-input/bots/custom_prompt_bot.py?range=46-55)]
 
 ---
@@ -205,23 +205,23 @@ The validation methods are described in the following section.
 
 ## [C#](#tab/csharp)
 
-**Bots/CustomPromptBot.cs**  
+**Bots/CustomPromptBot.cs**
 [!code-csharp[FillOutUserProfileAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/44.prompt-users-for-input/Bots/CustomPromptBot.cs?range=46-103)]
 
 ## [JavaScript](#tab/javascript)
 
-**bots/customPromptBot.js**  
+**bots/customPromptBot.js**
 [!code-javascript[fillOutUserProfile](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/bots/customPromptBot.js?range=53-118)]
 
 ## [Java](#tab/java)
 
-**CustomPromptBot.java**  
+**CustomPromptBot.java**
 [!code-java[FillOutUserProfileAsync](~/../botbuilder-samples/samples/java_springboot/44.prompt-users-for-input/src/main/java/com/microsoft/bot/sample/promptusersforinput/CustomPromptBot.java?range=61-132)]
 
 
 ## [Python](#tab/python)
 
-**bots/custom_prompt_bot.py**  
+**bots/custom_prompt_bot.py**
 [!code-python[_fill_out_user_profile](~/../botbuilder-samples/samples/python/44.prompt-for-user-input/bots/custom_prompt_bot.py?range=57-125)]
 
 ---
@@ -238,11 +238,11 @@ The bot uses the following criteria to validate input.
 > [!NOTE]
 > For the age and date input, you use the [Microsoft/Recognizers-Text](https://github.com/Microsoft/Recognizers-Text/) libraries to perform the initial parsing.
 > While you provide sample code, you do not explain how the text recognizers libraries work, and this is just one way to parse the input.
-> For more information about these libraries, see the repository's **README**.
+> For more information about these libraries, see the repository's `README`.
 
 ## [C#](#tab/csharp)
 
-**Bots/CustomPromptBot.cs**  
+**Bots/CustomPromptBot.cs**
 [!code-csharp[validation methods](~/../botbuilder-samples/samples/csharp_dotnetcore/44.prompt-users-for-input/Bots/CustomPromptBot.cs?range=105-203)]
 
 ## [JavaScript](#tab/javascript)
@@ -252,13 +252,13 @@ The bot uses the following criteria to validate input.
 
 ## [Java](#tab/java)
 
-**CustomPromptBot.java**  
+**CustomPromptBot.java**
 [!code-csharp[validation methods](~/../botbuilder-samples/samples/java_springboot/44.prompt-users-for-input/src/main/java/com/microsoft/bot/sample/promptusersforinput/CustomPromptBot.java?range=134-221)]
 
 
 ## [Python](#tab/python)
 
-**bots/custom_prompt_bot.py**  
+**bots/custom_prompt_bot.py**
 [!code-python[validation methods](~/../botbuilder-samples/samples/python/44.prompt-for-user-input/bots/custom_prompt_bot.py?range=127-189)]
 
 ---
@@ -267,7 +267,7 @@ The bot uses the following criteria to validate input.
 
 Download and install the [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md) to test the bot locally.
 
-1. Run the sample locally on your machine. If you need instructions, refer to the README file for [C# sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/44.prompt-users-for-input), [JS sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/44.prompt-for-user-input), or the [Python sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/44.prompt-for-user-input).
+1. Run the sample locally on your machine. If you need instructions, refer to the `README` file for [C# sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/44.prompt-users-for-input), [JS sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/44.prompt-for-user-input), or the [Python sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/44.prompt-for-user-input).
 1. Test it using the Emulator as shown below.
 
 ![Sample interaction in the Emulator](media/primitive-prompts.png)

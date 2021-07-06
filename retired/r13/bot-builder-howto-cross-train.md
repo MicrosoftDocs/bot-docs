@@ -166,7 +166,7 @@ The `luis:build` command will create all assets you need from your local .lu fil
 - `--authoringKey`: The subscriptionKey.
 - `--region`: The region to publish your LUIS applications.
 
-For information on the additional options, see [bf luis:build][bf-luisbuild] in the Bot Framework CLI README.
+For information on the additional options, see [bf luis:build][bf-luisbuild] in the Bot Framework CLI `README`.
 
 Alternatively, you can include these required, as well as any of the other parameters, in a configuration file and refer to them using the `--luConfig` option.
 
@@ -267,7 +267,7 @@ bf qnamaker:build --in <input-file-or-folder> --out <folder-to-save-files-to> --
 - `--botName`: The name of your bot. This will be used to generate the name of the QnA Maker KB, this is explained in more detail in the [Deploy QnA Maker knowledge base using the Bot Framework qnamaker CLI commands][qna-maker-knowledge-bases-created] article.
 - `--subscriptionKey`: The same subscription key that is in your [initialization file][create-your-qna-maker-initialization-file].
 
-For information on additional parameters, see [bf qnamaker:build][bf-qnamakerbuild] in the Bot Framework CLI qnamaker README.
+For information on additional parameters, see [bf qnamaker:build][bf-qnamakerbuild] in the Bot Framework CLI qnamaker `README`.
 
 Alternatively, you can include these required parameters in a configuration file and provide them via the `qnaConfig` parameter.
 

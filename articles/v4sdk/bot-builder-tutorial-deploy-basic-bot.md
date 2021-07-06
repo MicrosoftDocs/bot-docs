@@ -17,7 +17,7 @@ ms.date: 03/24/2021
 This tutorial describes how to deploy a basic bot to Azure. It explains how to prepare your bot for deployment, deploy your bot to Azure, and test your bot using Web Chat.
 It would be useful if you read this article before following the steps, so that you fully understand what is involved in deploying a bot.
 
-- If you've not created a basic bot yet, read the [Tutorial: Create  a basic bot](bot-builder-tutorial-create-basic-bot.md) article.
+- If you've not created a basic bot yet, read the [Create a bot](../bot-service-quickstart-create-bot.md) quickstart.
 - If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
 You will learn how to:

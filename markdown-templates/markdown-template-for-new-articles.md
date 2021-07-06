@@ -22,9 +22,11 @@ H2 headings are rendered on the page as an automatic on-page TOC. Do not hand-co
 Within an H2 section, you can use three ### signs to create H3 headings. In our content, try to avoid going deeper than 3 heading layers - the headings are often hard to distinguish on the rendered page.
 
 ## Images
+
 You can use images throughout a technical article. Make sure you include alt text for all your images. This helps accessibility and discoverability.
 
 ## Linking
+
 Your article will most likely contain links. Here's sample markdown for a link to a target that is not on the docs.microsoft.com site:
 
     [link text](url)
@@ -51,7 +53,7 @@ you can create that content inside a 'snippet' file (in the /includes folder), t
 
 For example, the following 'include' statement injects the contents that's defined in the `includes/snippet-tip-bot-config-settings.md` file.
 
-    [!include[Application configuration settings](~/includes/snippet-tip-bot-config-settings.md)]
+    [!include[Application configuration settings](includes/snippet-tip-bot-config-settings.md)]
 
 Syntax for the include statement is:
 
@@ -63,9 +65,10 @@ You can inject code from a file that resides in GitHub by using a statement like
 
     [!code-JavaScript[_samples/echobot](../_samples/echobot/server.js "Echo Bot in Node.js")]
 
-For details about how to configure this functionality, see the [OPS documenation](https://opsdocs.azurewebsites.net/en-us/opsdocs/partnerdocs/codesnippets?branch=master).
+For details about how to configure this functionality, see the [OPS documentation](https://opsdocs.azurewebsites.net/en-us/opsdocs/partnerdocs/codesnippets?branch=master).
 
 ## Notes and tips
+
 You should use notes and tips judiciously. A little bit goes a long way. Put the text of the note or tip on the line after the custom markdown extension.
 
 ```
@@ -95,6 +98,7 @@ Use hyphens to create unordered lists:
 
 
 ## Next steps
+
 Every topic should end with 1 to 3 concrete, action oriented next steps and links to the next logical piece of content to keep the customer engaged.
 
 <!--Reference style links - using these makes the source content way more readable than using inline links-->

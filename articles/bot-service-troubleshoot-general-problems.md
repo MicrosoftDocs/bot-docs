@@ -19,7 +19,7 @@ These frequently asked questions can help you to troubleshoot common bot develop
 
 1. Debug your bot's source code with [Visual Studio Code](debug-bots-locally-vscode.md) or [Visual Studio](/visualstudio/debugger/navigating-through-code-with-the-debugger).
 1. Test your bot using the [Emulator](bot-service-debug-emulator.md) before you deploy it to the cloud.
-1. Deploy your bot to a cloud hosting platform such as Azure and then test connectivity to your bot by using the built-in web chat control on your bot's dashboard in the <a href="https://portal.azure.com" target="_blank">Azure Portal</a>. If you encounter issues with your bot after you deploy it to Azure, you might consider using this blog article: [Understanding Azure troubleshooting and support](https://azure.microsoft.com/blog/understanding-azure-troubleshooting-and-support/).
+1. Deploy your bot to a cloud hosting platform such as Azure and then test connectivity to your bot by using the built-in web chat control on your bot's dashboard in the [Azure portal](https://portal.azure.com). If you encounter issues with your bot after you deploy it to Azure, you might consider using this blog article: [Understanding Azure troubleshooting and support](https://azure.microsoft.com/blog/understanding-azure-troubleshooting-and-support/).
 1. Rule out [authentication][TroubleshootingAuth] as a possible issue.
 1. Test your bot on Web Chat, Teams, or any other channel you intend to use with your bot. This will help you to validate the end-to-end user experience.
 1. Consider testing your bot on channels that have additional authentication requirements such as Direct Line or Web Chat.
@@ -102,7 +102,7 @@ In some cases, you may want to initiate an asynchronous task that waits for a fe
 
 Bots are web services and some hosting platforms, including Azure, automatically put the service to sleep if it does not receive traffic for a certain period of time. If this happens to your bot, it must restart from scratch the next time it receives a message, which makes its response much slower than if it was already running.
 
-Some hosting platforms enable you to configure your service so that it will not be put to sleep. If your bot is hosted on Azure Bot Service Web Apps, navigate to your bot's service in the [Azure Portal](https://portal.azure.com), select **Application settings**, and then select **Always on**. This option is available in most, but not all, service plans.
+Some hosting platforms enable you to configure your service so that it will not be put to sleep. If your bot is hosted on Azure Bot Service Web Apps, navigate to your bot's service in the [Azure portal](https://portal.azure.com), select **Application settings**, and then select **Always on**. This option is available in most, but not all, service plans.
 
 ## How can I guarantee message delivery order?
 
@@ -129,7 +129,7 @@ Bot Framework channels present the user's ID in the `from.Id` field of any Activ
 
 ## Why are my Facebook user names not showing anymore?
 
-Did you change your Facebook password? Doing so will invalidate the access token, and you will need to update your bot's configuration settings for the Facebook Messenger channel in the <a href="https://portal.azure.com" target="_blank">Azure Portal</a>.
+Did you change your Facebook password? Doing so will invalidate the access token, and you will need to update your bot's configuration settings for the Facebook Messenger channel in the [Azure portal](https://portal.azure.com).
 
 ## Why is my Kik bot replying "I'm sorry, I can't talk right now"?
 
@@ -159,7 +159,7 @@ If your Direct Line conversation appears to start over after every message, the 
 To fix this, set the `from` property in each message that the Direct Line client sends to a stable value that uniquely represents the user who is sending the message. For example, if a user is already signed-in to a webpage or app, you might use that existing user ID as the value of the `from` property in messages that the user sends. Alternatively, you might choose to generate a random user ID on page-load or on application-load, store that ID in a cookie or device state, and use that ID as the value of the `from` property in messages that the user sends.
 
 ## What causes the Direct Line 3.0 service to respond with HTTP status code 502 "Bad Gateway"?
-Direct Line 3.0 returns HTTP status code 502 when it tries to contact your bot but the request does not complete successfully. This error indicates that either the bot returned an error or the request timed out. For more information about errors that your bot generates, go to the bot's dashboard within the <a href="https://portal.azure.com" target="_blank">Azure Portal</a> and click the "Issues" link for the affected channel. If you have Application Insights configured for your bot, you can also find detailed error information there.
+Direct Line 3.0 returns HTTP status code 502 when it tries to contact your bot but the request does not complete successfully. This error indicates that either the bot returned an error or the request timed out. For more information about errors that your bot generates, go to the bot's dashboard within the [Azure portal](https://portal.azure.com) and click the "Issues" link for the affected channel. If you have Application Insights configured for your bot, you can also find detailed error information there.
 
 ## Why do I get an Authorization_RequestDenied exception when creating a bot?
 
@@ -173,7 +173,7 @@ First check whether you are a "Guest" of the directory:
 4. Click **Users**.
 5. Find the user from the list and ensure that the **User Type** is not a **Guest**.
 
-![Azure Active Directory User-type](~/media/azure-active-directory/user_type.png)
+![Azure Active Directory User-type](media/azure-active-directory/user_type.png)
 
 Once you verified that you are not a **Guest**, then to ensure that users within an active directory can create bot service, the directory administrator needs to configure the following settings:
 
@@ -181,7 +181,7 @@ Once you verified that you are not a **Guest**, then to ensure that users within
 2. Under **App registration** section, set **Users can register applications** to **Yes**. This allows users in your directory to create bot service.
 3. Under the **External users** section, set **Guest users permissions are limited** to **No**. This allows guest users in your directory to create bot service.
 
-![Azure Active Directory Admin Center](~/media/azure-active-directory/admin_center.png)
+![Azure Active Directory Admin Center](media/azure-active-directory/admin_center.png)
 
 ## Why can't I migrate my bot?
 

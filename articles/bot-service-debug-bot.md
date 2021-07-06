@@ -15,7 +15,7 @@ monikerRange: "azure-bot-service-4.0"
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-This article describes how to debug your bot using an integrated development environment (IDE) such as Visual Studio or Visual Studio Code and the Bot Framework Emulator. While you can use these methods to debug any bot locally, this article uses a [C#](~/dotnet/bot-builder-dotnet-sdk-quickstart.md), [Javascript](~/javascript/bot-builder-javascript-quickstart.md), [Java](~/java/bot-builder-java-quickstart.md), or [Python](~/python/bot-builder-python-quickstart.md) bot created in the quickstart.
+This article describes how to debug your bot using an integrated development environment (IDE) such as Visual Studio or Visual Studio Code and the Bot Framework Emulator. While you can use these methods to debug any bot locally, this article uses an echo bot, such as the one created in the [Create a bot](bot-service-quickstart-create-bot.md) quickstart.
 
 > [!NOTE]
 > In this article, we use the Bot Framework Emulator to send and receive messages from the bot during debugging. If you are looking for other ways to debug your bot using the Bot Framework Emulator, please read the [Debug with the Bot Framework Emulator](bot-service-debug-emulator.md) article.
@@ -37,25 +37,25 @@ For more information, see [Debug with the Emulator](bot-service-debug-emulator.m
 1. From the Emulator, send your bot a message (e.g.: send the message "Hi").
 1. Use the **Inspector** and **Log** panels on the right side of the Emulator window to debug your bot. For example, clicking on any of the messages bubble (e.g.: the "Hi" message bubble in the screenshot below) will show you the detail of that message in the **Inspector** panel. You can use it to view requests and responses as messages are exchanged between the Emulator and the bot. Alternatively, you can click on any of the linked text in the **Log** panel to view the details in the **Inspector** panel.
 
-   ![Inspector panel on the Emulator](~/media/bot-service-debug-bot/emulator_inspector.png) -->
+   ![Inspector panel on the Emulator](media/bot-service-debug-bot/emulator_inspector.png) -->
 
 ## [C#](#tab/csharp)
 
-[!INCLUDE [csharp vscode](~/includes/bot-service-debug-bot/csharp-vscode.md)]
+[!INCLUDE [csharp vscode](includes/bot-service-debug-bot/csharp-vscode.md)]
 
-[!INCLUDE [csharp visual studio](~/includes/bot-service-debug-bot/csharp-vs.md)]
+[!INCLUDE [csharp visual studio](includes/bot-service-debug-bot/csharp-vs.md)]
 
 ## [JavaScript](#tab/javascript)
 
-[!INCLUDE [javascript vscode](~/includes/bot-service-debug-bot/js-vscode.md)]
+[!INCLUDE [javascript vscode](includes/bot-service-debug-bot/js-vscode.md)]
 
 ## [Java](#tab/java)
 
-[!INCLUDE [java vscode](~/includes/bot-service-debug-bot/java-vscode.md)]
+[!INCLUDE [java vscode](includes/bot-service-debug-bot/java-vscode.md)]
 
 ## [Python](#tab/python)
 
-[!INCLUDE [python vscode](~/includes/bot-service-debug-bot/python-vscode.md)]
+[!INCLUDE [python vscode](includes/bot-service-debug-bot/python-vscode.md)]
 
 ---
 

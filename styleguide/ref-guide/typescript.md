@@ -52,7 +52,7 @@ back to [top](#top)
 
 - **Dev team** builds the npm packages and publishes them to the npm site.
 
-  In theory, they update the list of [current JavaScript packages](https://github.com/Microsoft/botbuilder-js#packages) on the botbuilder-js README page.
+  In theory, they update the list of [current JavaScript packages](https://github.com/Microsoft/botbuilder-js#packages) on the botbuilder-js `README` page.
 
 ### After a release
 

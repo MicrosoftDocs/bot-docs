@@ -6,7 +6,7 @@
 
 If you are deploying a C# bot make sure that it has been [built in Release mode](/visualstudio/debugger/how-to-set-debug-and-release-configurations). In Visual Studio, make sure that the solution configuration is set to **Release** and perform a clean rebuild of the solution before continuing. The deployment may fail if the solution configuration is set to **Debug**.
 
-When you create a bot using a [Visual Studio template](../../dotnet/bot-builder-dotnet-sdk-quickstart.md), the source code generated includes a `DeploymentTemplates` folder that contains ARM templates. The deployment process documented here uses one of the ARM templates to provision required resources for the bot in Azure by using the Azure CLI.
+When you [Create a bot](../../bot-service-quickstart-create-bot.md), the source code generated includes a `DeploymentTemplates` folder that contains ARM templates. The deployment process documented here uses one of the ARM templates to provision required resources for the bot in Azure by using the Azure CLI.
 
 With the release of Bot Framework SDK 4.3, we have _deprecated_ the use of a .bot file. Instead, we use the `appsettings.json` configuration file to manage bot resources. For information on migrating settings from the .bot file to a configuration file, see [managing bot resources](../../v4sdk/bot-file-basics.md).
 

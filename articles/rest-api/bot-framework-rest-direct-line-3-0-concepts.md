@@ -35,10 +35,10 @@ Using Direct Line API 3.0, a client can receive messages from your bot either vi
 
 The Bot Framework provides client libraries that facilitate access to Direct Line API 3.0 via C# and Node.js. 
 
-- To use the .NET client library within a Visual Studio project, install the `Microsoft.Bot.Connector.DirectLine` <a href="https://www.nuget.org/packages/Microsoft.Bot.Connector.DirectLine" target="_blank">NuGet package</a>. 
+- To use the .NET client library within a Visual Studio project, install the `Microsoft.Bot.Connector.DirectLine` [NuGet package](https://www.nuget.org/packages/Microsoft.Bot.Connector.DirectLine). 
 
-- To use the Node.js client library, install the `botframework-directlinejs` library using <a href="https://www.npmjs.com/package/botframework-directlinejs" target="_blank">NPM</a> (or <a href="https://github.com/Microsoft/BotFramework-DirectLineJS" target="_blank">download</a> the source).
+- To use the Node.js client library, install the `botframework-directlinejs` library using [NPM](https://www.npmjs.com/package/botframework-directlinejs) (or download the [source](https://github.com/Microsoft/BotFramework-DirectLineJS)).
 
 ### Web chat control 
 
-The Bot Framework provides a control that enables you to embed a Direct-Line-powered bot into your client application. For more information, see the <a href="https://github.com/Microsoft/BotFramework-WebChat" target="_blank">Microsoft Bot Framework WebChat control</a>.
+The Bot Framework provides a control that enables you to embed a Direct-Line-powered bot into your client application. For more information, see the [Microsoft Bot Framework WebChat control](https://github.com/Microsoft/BotFramework-WebChat).

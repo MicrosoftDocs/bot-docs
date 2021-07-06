@@ -33,13 +33,13 @@ In this article you will learn how to connect a bot to Webex using the adapter a
 
 3. On the next screen, enter an appropriate name, username and description for your bot, as well as choosing an icon or uploading an image of your own.
 
-    ![bot setting](~/media/bot-service-adapter-connect-webex/create-bot.png)
+    ![bot setting](media/bot-service-adapter-connect-webex/create-bot.png)
 
     Click the 'Add bot' button.
 
 4. On the next page you will be provided with an access token for your new Webex app, please make a note of this token as you will require it when configuring your bot.
 
-    ![access token](~/media/bot-service-adapter-connect-webex/create-bot-settings.png)
+    ![access token](media/bot-service-adapter-connect-webex/create-bot-settings.png)
 
 ## Wiring up the Webex adapter in your bot
 
@@ -53,13 +53,13 @@ Add  the [Microsoft.Bot.Builder.Adapters.Webex](https://www.nuget.org/packages/M
 
 Create a new class that inherits from the ***WebexAdapter*** class. This class will act as our adapter for the Webex channel. It includes error handling capabilities (much like the ***BotFrameworkAdapterWithErrorHandler*** class already in the sample, used for handling requests from Azure Bot Service).
 
-[!code-csharp[Webex Adapter With Error Handler](~/../botbuilder-samples/samples/csharp_dotnetcore/62.webex-adapter/Adapters/WebexAdapterWithErrorHandler.cs?range=11-29)]
+[!code-csharp[Webex Adapter With Error Handler](../botbuilder-samples/samples/csharp_dotnetcore/62.webex-adapter/Adapters/WebexAdapterWithErrorHandler.cs?range=11-29)]
 
 ### Create a new controller for handling Webex requests
 
 We create a new controller which will handle requests from your Webex app, on a new endpoint 'api/webex' instead of the default 'api/messages' used for requests from Azure Bot Service Channels.  By adding an additional endpoint to your bot, you can accept requests from Bot Service channels (or additional adapters), as well as from Webex, using the same bot.
 
-[!code-csharp[Webex Controller](~/../botbuilder-samples/samples/csharp_dotnetcore/62.webex-adapter/Controllers/WebexController.cs?range=12-32)]
+[!code-csharp[Webex Controller](../botbuilder-samples/samples/csharp_dotnetcore/62.webex-adapter/Controllers/WebexController.cs?range=12-32)]
 
 
 ### Inject Webex Adapter In Your Bot Startup.cs
@@ -72,14 +72,14 @@ services.AddSingleton<WebexAdapter, WebexAdapterWithErrorHandler>();
 
 Once added, your ***ConfigureServices*** method should look like this.
 
-[!code-csharp[Webex Controller](~/../botbuilder-samples/samples/csharp_dotnetcore/62.webex-adapter/Startup.cs?range=18-31)]
+[!code-csharp[Webex Controller](../botbuilder-samples/samples/csharp_dotnetcore/62.webex-adapter/Startup.cs?range=18-31)]
 
 
 ### Add Webex adapter settings to your bot's configuration file
 
 1. Add the 4 settings shown below to your appSettings.json file in your bot project.
 
-[!code-csharp[Webex Controller](~/../botbuilder-samples/samples/csharp_dotnetcore/62.webex-adapter/appsettings.json?range=1-6)]
+[!code-csharp[Webex Controller](../botbuilder-samples/samples/csharp_dotnetcore/62.webex-adapter/appsettings.json?range=1-6)]
 
 2. Populate the **WebexAccessToken** setting within the Webex Bot Access Token, that was generated when creating your Webex bot app in the earlier steps. Leave the other 3 settings empty  at this time, until we gather the information needed for them in later steps.
 
@@ -105,7 +105,7 @@ Now that you have created a Webex app and wired up the adapter in your bot proje
 
 3. Click the link for the **POST** method `https://webexapis.com/v1/webhooks` (with the description *Create a webhook*). This will display a form that allows you to send a request to the endpoint.
 
-    ![webhook endpoint](~/media/bot-service-adapter-connect-webex/webex-webhook-post-endpoint.png)
+    ![webhook endpoint](media/bot-service-adapter-connect-webex/webex-webhook-post-endpoint.png)
 
 4. Populate the form with the following details:
 
@@ -116,7 +116,7 @@ Now that you have created a Webex app and wired up the adapter in your bot proje
     1. **filter** - Leave it blank.
     1. **secret** - A secret of your choice to secure your webhook. Later you will add it to your bot's `appsettings.json`.
 
-    ![webhook form](~/media/bot-service-adapter-connect-webex/webex-webhook-form.png)
+    ![webhook form](media/bot-service-adapter-connect-webex/webex-webhook-form.png)
 
 5. Click **Run**, which should create your webhook and provide you with a success message.
 
@@ -130,7 +130,7 @@ Complete the remaining 3 settings in your bot's appsettings.json file (you alrea
 
 ## Re-deploy your bot in your Webex team
 
-Now that you have completed the configuration of your bot's settings in appsettings.json, you should re-deploy your bot (or restart your bot if you are tunnelling to a local endpoint using ngrok).  Configuration of you Webex app and bot are now complete.
+Now that you have completed the configuration of your bot's settings in appsettings.json, you should re-deploy your bot (or restart your bot if you are tunneling to a local endpoint using ngrok).  Configuration of you Webex app and bot are now complete.
 You can now login to your Webex team at [https://www.webex.com](https://www.webex.com) and chat with your bot by sending it a message, in the same way you would contact another person.
 
-![contact person](~/media/bot-service-adapter-connect-webex/webex-contact-person.png)
+![contact person](media/bot-service-adapter-connect-webex/webex-contact-person.png)

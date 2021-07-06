@@ -1,14 +1,13 @@
+#### [Visual Studio](#tab/vs)
 
-<!-- Include under "Start your bot" header in the files:
-bot-builder-tutorial-create-basic-bot.md and bot-builder-dotnet-sdk-quickstart.md -->
+In Visual Studio
 
-# [Visual Studio](#tab/vs)
+1. Open your bot project.
+1. Run the project without debugging.
 
-In Visual Studio, start the project. This will build the application, deploy it to localhost, and launch the web browser to display the application's `default.htm` page. At this point, your bot is running locally on port 3978.
+This will build the application, deploy it to localhost, and launch the web browser to display the application's `default.htm` page. At this point, your bot is running locally on port 3978.
 
-# [Visual Studio Code](#tab/vc)
-
-### Run with Visual Studio Code
+#### [VS Code](#tab/vscode)
 
 To run your bot from VS Code:
 
@@ -27,14 +26,14 @@ To run your bot from VS Code:
 
 This will build the application, deploy it to localhost, and launch the web browser to display the application's `default.htm` page. At this point, your bot is running locally on port 3978.
 
-# [Command Line](#tab/cl)
+#### [CLI](#tab/cli)
 
 To run your bot locally in a command prompt or terminal:
 
 1. Change directories to the project folder for your bot.
 1. Use `dotnet run` to start the bot.
 
-   ```cmd
+   ```console
    dotnet run
    ```
 

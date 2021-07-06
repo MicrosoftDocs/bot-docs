@@ -21,11 +21,11 @@ Skype keeps you connected with users through instant messaging, phone, and video
 
 To add the Skype channel, open the bot in the [Azure Portal](https://portal.azure.com/), click the **Channels** blade, and then click **Skype**.
 
-![Add Skype channel](~/media/channels/skype-addchannel.png)
+![Add Skype channel](media/channels/skype-addchannel.png)
 
 This will take you to the **Configure Skype** settings page.
 
-![Configure Skype channel](~/media/channels/skype_configure.png)
+![Configure Skype channel](media/channels/skype_configure.png)
 
 You need to configure settings in **Web control**, **Messaging**, **Calling**, **Groups** and **Publish**. Let's go over them one by one.
 

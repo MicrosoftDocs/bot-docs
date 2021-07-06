@@ -2,14 +2,47 @@
 
 ### App Id and password
 
-You need the Azure bot resource **app Id** and **password** to configure your bot for deployment. You will assign their values to the related variables: `MicrosoftAppId` and `MicrosoftAppPassword` contained in your bot project configuration file. The file differs depending on the programming language you use to create the bot, as shown in the table below.
+You need the Azure bot resource **app Id** and **password** to configure your bot for deployment. You will assign their values to the related variables: `MicrosoftAppId` and `MicrosoftAppPassword` contained in your bot project configuration file. The file differs depending on the programming language you use to create the bot, as shown below.
 
-|Language|File Name                 |
-|-------|---------------------------|   
-|Csharp    |`appsettings.json`      |
-|JavaScript|`.env`                  |
-|Python    |`config.py`             |
-|Java      |`application.properties`| 
+### [C#](#tab/csharp)
+
+The `appsettings.json` file contains these settings:
+
+```json
+{
+  "MicrosoftAppId": "<your app id>",
+  "MicrosoftAppPassword": "<your password>"
+}
+```
+
+### [JavaScript](#tab/javascript)
+
+The `.env` file contains these settings:
+
+```javascript
+MicrosoftAppId="<your app id>"
+MicrosoftAppPassword="<your password>"
+```
+
+### [Java](#tab/java)
+
+The `application.properties` file contains these settings:
+
+```java
+MicrosoftAppId="<your app id>"
+MicrosoftAppPassword="<your password>"
+```
+
+### [Python](#tab/python)
+
+The `config.py` file contains these settings:
+
+```python
+APP_ID = os.environ.get("MicrosoftAppId", "<your app id>")
+APP_PASSWORD = os.environ.get("MicrosoftAppPassword", "<your password>")
+```
+
+---
  
 <!-- If you downloaded the deployment details, you can get the App Id and password from there to configure your bot. Otherwise, you must perform additional steps as described below.--> 
 
@@ -34,9 +67,15 @@ After the creation of the resource is completed, download the deployment details
 1. In the left pane, in the **Settings** section, select **Configuration**. 
 1. Copy and save the value contained in the *Microsoft App ID* box.
 
-#### Get Azure bot resource password from the Azure key vault
+#### Get Azure bot resource password from Azure Key Vault
 
-You can access the **Azure Key Vault** to obtain your resource stored password. Azure Key Vault is a service that provides centralized secrets management, with full control over access policies and audit history. Fpr more information, see [Use Key Vault references for App Service and Azure Functions](/azure/app-service/app-service-key-vault-references).
+When Azure creates the Azure Bot resource, it stores the app password in Azure Key Vault. For information on how to access the key vault to obtain your password, see:
+
+- [Use Key Vault references for App Service and Azure Functions](/azure/app-service/app-service-key-vault-references).
+- [About Azure Key Vault](/azure/key-vault/general/overview) 
+- [Assign a Key Vault access policy using the Azure portal](/azure/key-vault/general/assign-access-policy-portal) 
+- [Quickstart: Set and retrieve a secret from Azure Key Vault using the Azure portal](/azure/key-vault/secrets/quick-create-portal#retrieve-a-secret-from-key-vault)
+
 
 <!-- Alternatively, you can perform the following steps, also 
 To access the client secret stored in the Azure key vault follow the steps described below.
@@ -60,9 +99,3 @@ To access the client secret stored in the Azure key vault follow the steps descr
 
 Assign the saved values to `MicrosoftAppId` and `MicrosoftAppPassword`.
 -->
-
-#### Additional information
-
-- [About Azure Key Vault](/azure/key-vault/general/overview) 
-- [Assign a Key Vault access policy using the Azure portal](/azure/key-vault/general/assign-access-policy-portal) 
-- [Quickstart: Set and retrieve a secret from Azure Key Vault using the Azure portal](/azure/key-vault/secrets/quick-create-portal#retrieve-a-secret-from-key-vault)

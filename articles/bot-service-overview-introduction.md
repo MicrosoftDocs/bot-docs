@@ -73,21 +73,21 @@ As with any type of software, having a thorough understanding of the goals, proc
 
 ### Build
 
-Your bot is a web service that implements a conversational interface and communicates with the Bot Framework Service to send and receive messages and events. Bot Framework Service is one of the components of the Azure Bot Service and Bot Framework. You can create bots in any number of environments and languages. You can start your bot development in the [Azure portal](bot-service-quickstart.md), or use [[C#](dotnet/bot-builder-dotnet-sdk-quickstart.md) | [JavaScript](javascript/bot-builder-javascript-quickstart.md) | [Python](python/bot-builder-python-quickstart.md)] templates for local development.
+Your bot is a web service that implements a conversational interface and communicates with the Bot Framework Service to send and receive messages and events. Bot Framework Service is one of the components of the Azure Bot Service and Bot Framework. You can create bots in any number of environments and languages. You can [Create a bot](bot-service-quickstart-create-bot.md) for local development.
 
 As part of the Azure Bot Service and Bot Framework, we offer additional components you can use to extend your bot's functionality:
 
 | Feature | Description | Link |
 | --- | --- | --- |
-| Add natural language processing | Enable your bot to understand natural language, understand spelling errors, use speech, and recognize the user's intent | How to use [LUIS](~/v4sdk/bot-builder-howto-v4-luis.md)
-| Answer questions | Add a knowledge base to answer questions users ask in a more natural, conversational way | How to use [QnA Maker](~/v4sdk/bot-builder-howto-qna.md)
-| Manage multiple models | If using more than one model, such as for LUIS and QnA Maker, intelligently determine when to use which one during your bot's conversation | [Orchestrator](~/v4sdk/bot-builder-tutorial-orchestrator.md) |
+| Add natural language processing | Enable your bot to understand natural language, understand spelling errors, use speech, and recognize the user's intent | How to use [LUIS](v4sdk/bot-builder-howto-v4-luis.md)
+| Answer questions | Add a knowledge base to answer questions users ask in a more natural, conversational way | How to use [QnA Maker](v4sdk/bot-builder-howto-qna.md)
+| Manage multiple models | If using more than one model, such as for LUIS and QnA Maker, intelligently determine when to use which one during your bot's conversation | [Orchestrator](v4sdk/bot-builder-tutorial-orchestrator.md) |
 | Add cards and buttons | Enhance the user experience with media other than text, such as graphics, menus, and cards | How to [add cards](v4sdk/bot-builder-howto-add-media-attachments.md) |
 
 > [!NOTE]
-> The table above is not a comprehensive list. Explore the articles on the left, starting with [sending messages](~/v4sdk/bot-builder-howto-send-messages.md), for more bot functionality.
+> The table above is not a comprehensive list. Explore the articles on the left, starting with [sending messages](v4sdk/bot-builder-howto-send-messages.md), for more bot functionality.
 
-Additionally, we provide command line tools to help you to create, manage, and test bot assets. These tools can configure LUIS apps, build a QnA knowledge base, build models to route between components, mock a conversation, and more. You can find more details in the command line tools [readme](https://github.com/microsoft/botframework-cli).
+Additionally, we provide command line tools to help you to create, manage, and test bot assets. These tools can configure LUIS apps, build a QnA knowledge base, build models to route between components, mock a conversation, and more. You can find more details in the command line tools [README](https://github.com/microsoft/botframework-cli).
 
 You also have access to a variety of [samples](https://github.com/microsoft/botbuilder-samples) that showcase many of the capabilities available through the SDK. These are great for developers looking for a more feature-rich starting point.
 

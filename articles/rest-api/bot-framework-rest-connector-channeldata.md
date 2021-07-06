@@ -48,7 +48,7 @@ This snippet shows an example of the `channelData` property for a custom email m
 ## Create a full-fidelity Slack message
 
 To create a full-fidelity Slack message, set the `Activity` object's `channelData` property to a JSON object that specifies
-<a href="https://api.slack.com/docs/messages" target="_blank">Slack messages</a>, <a href="https://api.slack.com/docs/message-attachments" target="_blank">Slack attachments</a>, and/or <a href="https://api.slack.com/docs/message-buttons" target="_blank">Slack buttons</a>.
+[Slack messages](https://api.slack.com/docs/messages), [Slack attachments](https://api.slack.com/docs/message-attachments), and/or [Slack buttons](https://api.slack.com/docs/message-buttons).
 
 > [!NOTE]
 > To support buttons in Slack messages, you must enable **Interactive Messages** when you
@@ -130,7 +130,7 @@ This snippet shows an example of the `channelData` property in the message that 
 }
 ```
 
-Your bot can reply to this message in the [normal manner](bot-framework-rest-connector-send-and-receive-messages.md#create-reply), or it can post its response directly to the endpoint that is specified by the `payload` object's `response_url` property. For information about when and how to post a response to the `response_url`, see <a href="https://api.slack.com/docs/message-buttons" target="_blank">Slack Buttons</a>. 
+Your bot can reply to this message in the [normal manner](bot-framework-rest-connector-send-and-receive-messages.md#create-reply), or it can post its response directly to the endpoint that is specified by the `payload` object's `response_url` property. For information about when and how to post a response to the `response_url`, see [Slack Buttons](https://api.slack.com/docs/message-buttons). 
 
 ## Create a Facebook notification
 
@@ -143,7 +143,7 @@ To create a Facebook notification, set the `Activity` object's `channelData` pro
 
 > [!NOTE]
 > For details about format and contents of the `notification_type` property and `attachment` property, see the 
-> <a href="https://developers.facebook.com/docs/messenger-platform/send-api-reference#guidelines" target="_blank">Facebook API documentation</a>.
+> [Facebook API documentation](https://developers.facebook.com/docs/messenger-platform/send-api-reference#guidelines).
 
 This snippet shows an example of the `channelData` property for a Facebook receipt attachment.
 
@@ -192,8 +192,7 @@ These Telegram methods are supported:
 - sendVoice
 - unbanChateMember
 
-For details about these Telegram methods and their parameters, see the 
-<a href="https://core.telegram.org/bots/api#available-methods" target="_blank">Telegram Bot API documentation</a>.
+For details about these Telegram methods and their parameters, see the [Telegram Bot API documentation](https://core.telegram.org/bots/api#available-methods).
 
 > [!NOTE]
 > <ul><li>The <code>chat_id</code> parameter is common to all Telegram methods. If you do not specify <code>chat_id</code> as a parameter, the framework will provide the ID for you.</li>
@@ -244,7 +243,7 @@ set the `Activity` object's `channelData` property to a JSON object that specifi
 
 | Property | Description |
 |----|----|
-| messages | An array of Kik messages. For details about Kik message format, see <a href="https://dev.kik.com/#/docs/messaging#message-formats" target="_blank">Kik Message Formats</a>. |
+| messages | An array of Kik messages. For details about Kik message format, see [Kik Message Formats](https://dev.kik.com/#/docs/messaging#message-formats). |
 
 This snippet shows an example of the `channelData` property for a native Kik message.
 

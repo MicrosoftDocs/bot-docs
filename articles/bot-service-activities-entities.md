@@ -20,7 +20,7 @@ Entities are a part of an activity, and provide additional information about the
 
 ## Entities
 
-The *entities* property of a message is an array of open-ended <a href="http://schema.org/" target="_blank">schema.org</a>
+The *entities* property of a message is an array of open-ended [schema.org](https://schema.org/)
 objects which allows the exchange of common contextual metadata between the channel and bot.
 
 ### Mention entities
@@ -32,7 +32,7 @@ The mention object contains these properties:
 | Property | Description |
 |----|----|
 | Type | type of the entity ("mention") |
-| Mentioned | channel account object that indicates which user was mentioned | 
+| Mentioned | channel account object that indicates which user was mentioned |
 | Text | text within the *activity.text* property that represents the mention itself (may be empty or null) |
 
 This code example shows how to add a mention entity to the entities collection.
@@ -65,7 +65,7 @@ entity = [mention];
 
 ### Place objects
 
-<a href="https://schema.org/Place" target="_blank">Location-related information</a> can be conveyed
+[Location-related information](https://schema.org/Place) can be conveyed
 within a message by populating the message's entities property with either
 a *Place* object or a *GeoCoordinates* object.
 
@@ -85,9 +85,9 @@ The geoCoordinates object contains these properties:
 |----|----|
 | Type | type of the entity ("GeoCoordinates") |
 | Name | name of the place |
-| Longitude | longitude of the location (<a href="https://en.wikipedia.org/wiki/World_Geodetic_System" target="_blank">WGS 84</a>) |
-| Latitude | latitude of the location (<a href="https://en.wikipedia.org/wiki/World_Geodetic_System" target="_blank">WGS 84</a>) |
-| Elevation | elevation of the location (<a href="https://en.wikipedia.org/wiki/World_Geodetic_System" target="_blank">WGS 84</a>) |
+| Longitude | longitude of the location ([WGS 84][WGS-84]) |
+| Latitude | latitude of the location ([WGS 84][WGS-84]) |
+| Elevation | elevation of the location ([WGS 84][WGS-84])|
 
 This code example shows how to add a place entity to the entities collection:
 
@@ -139,7 +139,7 @@ if (entity[0].type === "GeoCoordinates" && entity[0].latitude > 34) {
 ---
 
 ## Activity types
-<!-- 
+<!--
 This code example show how to process an activity of type **message**:
 
 # [C#](#tab/cs)
@@ -161,3 +161,5 @@ if(context.activity.type === 'message'){
 --- -->
 
 Activities can be of several different types past the most common **message**. Explanations and further details on different activity types can be found in the [Bot Framework Activity schema](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md).
+
+[WGS-84]: https://gisgeography.com/wgs84-world-geodetic-system/

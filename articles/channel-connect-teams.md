@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 08/26/2019
+ms.date: 07/01/2021
 ---
 
 # Connect a bot to Microsoft Teams
@@ -38,6 +38,10 @@ After adding the Teams channel, go to the **Channels** page and click on **Get b
 
 - In the browser, paste this address and then choose the Microsoft Teams app (client or web) that you use to add the bot to Teams. You should be able to see the bot listed as a contact that you can send messages to and receives messages from in Microsoft Teams.
 
+> [!NOTE]
+> When switching between local development, staging, or production environments, use one bot channel registration per environment, to avoid changing the endpoint repeatedly.
+
 ## Additional information
 
-For Microsoft Teams specific information, see Teams [documentation](/microsoftteams/platform/overview).
+- For Microsoft Teams specific information, see [Build apps for Microsoft Teams](/microsoftteams/platform/overview). 
+- To provide feedback and find additional resources, see [Microsoft Teams developer community channels](/microsoftteams/platform/feedback). 

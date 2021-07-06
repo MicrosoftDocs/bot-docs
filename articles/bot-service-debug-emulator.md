@@ -267,7 +267,7 @@ Use inspection middleware to debug a bot connected to a channel.
 Saving a conversation to a transcript file allows you to quickly draft and replay a certain set of interactions for debugging.
 
 > [!div class="nextstepaction"]
-> [Debug your bot using transcript files](~/v4sdk/bot-builder-debug-transcript.md)
+> [Debug your bot using transcript files](v4sdk/bot-builder-debug-transcript.md)
 -->
 
 <!-- Footnote-style URLs -->

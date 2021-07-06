@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 05/17/2020
+ms.date: 06/17/2021
 ---
 
 # Connect a bot to Alexa
@@ -106,3 +106,17 @@ You can configure your bot to communicate with people using Alexa devices that s
 1. Click the **Save** button in the Bot Framework Alexa Channel Configuration page.
 
 You will need to publish your Skill within Alexa before users other than yourself can communicate with it. You can test your skill, prior to publishing it, within Alexa using an Alexa device you own or from the **Test** tab for your skill. To get to the **Test** tab navigate to your Skill from the [Alexa Developer Console](https://developer.amazon.com/alexa/console/ask).
+
+## User authentication in Alexa
+
+User authentication in Alexa is done by setting up and using **Account Linking on the Alexa skill**.
+For more information, see [Understand Account Linking for Alexa Skills](https://developer.amazon.com/docs/alexa/account-linking/understand-account-linking.html).
+
+You can require account linking at the time of enabling the skill, if everything needs authentication.
+
+ 1. Attach a [sign-in card](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-cards.md#signin-card) on the outgoing activity.
+ 1. This will be converted to a **LinkAccount card** for Alexa that prompts the user to sign in using the Alexa app.
+
+If the user successfully links their account into the app a token is then available on subsequent requests in the channel data. 
+
+For more information, see also [Alexa Adapter](https://github.com/BotBuilderCommunity/botbuilder-community-dotnet/tree/develop/libraries/Bot.Builder.Community.Adapters.Alexa) maintained by the community. 

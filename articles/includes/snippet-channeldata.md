@@ -38,9 +38,9 @@ The snippet below shows an example of the `channelData` property for an incoming
 
 To create a full-fidelity Slack message,
 set the activity object's channel data property to a JSON object that specifies
-<a href="https://api.slack.com/docs/messages" target="_blank">Slack messages</a>,
-<a href="https://api.slack.com/docs/message-attachments" target="_blank">Slack attachments</a>, and/or
-<a href="https://api.slack.com/docs/message-buttons" target="_blank">Slack buttons</a>.
+- [Slack messages](https://api.slack.com/docs/messages),
+- [Slack attachments](https://api.slack.com/docs/message-attachments), and/or
+- [Slack buttons](https://api.slack.com/docs/message-buttons).
 
 > [!NOTE]
 > To support buttons in Slack messages, you must enable **Interactive Messages** when you
@@ -101,13 +101,9 @@ This snippet shows an example of the `channelData` property for a custom Slack m
 }
 ```
 
-When a user clicks a button within a Slack message, your bot will receive a response message
-in which the channel data property is populated with a `payload` JSON object.
-The `payload` object specifies contents of the original message,
-identifies the button that was clicked, and identifies the user who clicked the button.
+When a user clicks a button within a Slack message, your bot will receive a response message in which the channel data property is populated with a `payload` JSON object. The `payload` object specifies contents of the original message, identifies the button that was clicked, and identifies the user who clicked the button.
 
-This snippet shows an example of the `channelData` property in the message that a bot receives
-when a user clicks a button in the Slack message.
+This snippet shows an example of the `channelData` property in the message that a bot receives when a user clicks a button in the Slack message.
 
 ```json
 "channelData": {
@@ -125,13 +121,9 @@ when a user clicks a button in the Slack message.
 }
 ```
 
-Your bot can reply to this message in the normal manner,
-or it can post its response directly to the endpoint that is specified by
-the `payload` object's `response_url` property.
-For information about when and how to post a response to the `response_url`, see
-<a href="https://api.slack.com/docs/message-buttons" target="_blank">Slack Buttons</a>.
+Your bot can reply to this message in the normal manner, or it can post its response directly to the endpoint that is specified by the `payload` object's `response_url` property. For information about when and how to post a response to the `response_url`, see [Slack Buttons](https://api.slack.com/docs/message-buttons).
 
-You can create dynamic buttons using the following JSON.
+You can create dynamic buttons using the following JSON:
 
 ```json
 {
@@ -242,7 +234,7 @@ set the activity object's channel data property to a JSON object that specifies 
 
 > [!NOTE]
 > For details about format and contents of the `notification_type` property and `attachment` property, see the
-> <a href="https://developers.facebook.com/docs/messenger-platform/send-api-reference#guidelines" target="_blank">Facebook API documentation</a>.
+> [Facebook API documentation](https://developers.facebook.com/docs/messenger-platform/send-api-reference#guidelines).
 
 This snippet shows an example of the `channelData` property for a Facebook receipt attachment.
 
@@ -261,9 +253,7 @@ This snippet shows an example of the `channelData` property for a Facebook recei
 
 ## Create a Telegram message
 
-To create a message that implements Telegram-specific actions,
-such as sharing a voice memo or a sticker,
-set the activity object's channel data property to a JSON object that specifies these properties:
+To create a message that implements Telegram-specific actions, such as sharing a voice memo or a sticker, set the activity object's channel data property to a JSON object that specifies these properties:
 
 | Property   | Description                             |
 | ---------- | --------------------------------------- |
@@ -291,15 +281,14 @@ These Telegram methods are supported:
 - sendVoice
 - unbanChateMember
 
-For details about these Telegram methods and their parameters, see the
-<a href="https://core.telegram.org/bots/api#available-methods" target="_blank">Telegram Bot API documentation</a>.
+For details about these Telegram methods and their parameters, see the [Telegram Bot API documentation](https://core.telegram.org/bots/api#available-methods).
 
 > [!NOTE]
 > <ul><li>The <code>chat_id</code> parameter is common to all Telegram methods. If you do not specify <code>chat_id</code> as a parameter, the framework will provide the ID for you.</li>
 > <li>Instead of passing file contents inline, specify the file using a URL and media type as shown in the example below.</li>
 > <li>Within each message that your bot receives from the Telegram channel, the <code>ChannelData</code> property will include the message that your bot sent previously.</li></ul>
 
-This snippet shows an example of a `channelData` property that specifies a single Telegram method.
+This snippet shows an example of a `channelData` property that specifies a single Telegram method:
 
 ```json
 "channelData": {
@@ -313,7 +302,7 @@ This snippet shows an example of a `channelData` property that specifies a singl
 }
 ```
 
-This snippet shows an example of a `channelData` property that specifies an array of Telegram methods.
+This snippet shows an example of a `channelData` property that specifies an array of Telegram methods:
 
 ```json
 "channelData": [
@@ -336,14 +325,9 @@ This snippet shows an example of a `channelData` property that specifies an arra
 ]
 ```
 
-When a Telegram method is implemented, your bot will receive a response message
-in which the channel data property is populated with a JSON object. This response object specifies
-the contents of the original message, including an `update_id` and, at most, one optional
-parameter. For information about receiving incoming responses, see
-<a href="https://core.telegram.org/bots/api#getting-updates" target="_blank">Getting updates</a>.
+When a Telegram method is implemented, your bot will receive a response message in which the channel data property is populated with a JSON object. This response object specifies the contents of the original message, including an `update_id` and, at most, one optional parameter. For information about receiving incoming responses, see [Getting updates](https://core.telegram.org/bots/api#getting-updates).
 
-This snippet shows an example of the `channelData` property in the message that a bot receives
-when a poll is created.
+This snippet shows an example of the `channelData` property in the message that a bot receives when a poll is created:
 
 ```json
 "channelData": {
@@ -399,7 +383,7 @@ To create a native Kik message, set the activity object's channel data property 
 
 | Property | Description                                                                                                                                                                 |
 | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| messages | An array of Kik messages. For details about Kik message format, see <a href="https://dev.kik.com/#/docs/messaging#message-formats" target="_blank">Kik Message Formats</a>. |
+| messages | An array of Kik messages. For details about Kik message format, see [Kik Message Formats](https://dev.kik.com/#/docs/messaging#message-formats). |
 
 This snippet shows an example of the `channelData` property for a native Kik message.
 
@@ -452,7 +436,7 @@ These LINE actions can be specified in the action field of the message type JSON
 
 For details about these LINE methods and their parameters, see the [LINE Bot API documentation](https://developers.line.biz/en/docs/messaging-api/).
 
-This snippet shows an example of a `channelData` property that specifies a channel message type `ButtonTemplate` and 3 action types: camera, cameraRoll, Datetimepicker.
+This snippet shows an example of a `channelData` property that specifies a channel message type `ButtonTemplate` and 3 action types: camera, cameraRoll, and Datetimepicker.
 
 ```json
 "channelData": {
@@ -495,15 +479,13 @@ This snippet shows an example of a `channelData` property that specifies a chann
 
 ## Adding a bot to Teams
 
-Bots added to a team become another team member, who can be `@mentioned` as part of the conversation. In fact, bots only receive messages when they are `@mentioned`, so other conversations on the channel are not sent to the bot.
-For more information, see [Channel and Group chat conversations with a Microsoft Teams bot](/microsoftteams/platform/concepts/bots/bot-conversations/bots-conv-channel).
+Bots added to a team become another team member, who can be `@mentioned` as part of the conversation. In fact, bots only receive messages when they are `@mentioned`, so other conversations on the channel are not sent to the bot. For more information, see [Channel and Group chat conversations with a Microsoft Teams bot](/microsoftteams/platform/concepts/bots/bot-conversations/bots-conv-channel).
 
 Because bots in a group or channel respond only when they are mentioned (`@botname`) in a message, every message received by a bot in a group channel contains its own name, and you must ensure your message parsing handles that. In addition, bots can parse out other users mentioned and mention users as part of their messages.
 
 ### Check for and strip @bot mention
 
 ```csharp
-
 Mention[] m = sourceMessage.GetMentions();
 var messageText = sourceMessage.Text;
 
@@ -534,7 +516,6 @@ if (message.entities) {
 
 > [!IMPORTANT]
 > Adding a bot by GUID, for anything other than testing purposes, is not recommended. Doing so severely limits the functionality of a bot. Bots in production should be added to Teams as part of an app. See [Create a bot](/microsoftteams/platform/concepts/bots/bots-create) and [Test and debug your Microsoft Teams bot](/microsoftteams/platform/concepts/bots/bots-test).
-
 
 ## Additional resources
 

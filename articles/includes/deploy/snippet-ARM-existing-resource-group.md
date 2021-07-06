@@ -3,8 +3,10 @@ In this step, you create a bot application service which sets the deployment sta
 - [**Option 1: Existing App Service Plan**](#option-1-existing-app-service-plan)
 - [**Option 2: New App Service Plan**](#option-2-new-app-service-plan)
 
-> [!NOTE]
-> This step can take a few minutes to complete.
+This step can take a few minutes to complete.
+
+> [!IMPORTANT]
+> **Web App Bot** and **Bot Channels Registration** will be deprecated but existing resources will continue to work. Bots created with a version 4.13.0 or later template will generate an Azure Bot resource.
 
 ##### **Option 1: Existing App Service Plan**
 

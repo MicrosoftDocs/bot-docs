@@ -8,25 +8,17 @@
     href: what-is-new.md
 - name: Quickstart
   items:
-  - name: Create a bot using .NET
-    href: dotnet/bot-builder-dotnet-sdk-quickstart.md
-  - name: Create a bot using JavaScript
-    href: javascript/bot-builder-javascript-quickstart.md
-  - name: Create a bot using Java
-    href: java/bot-builder-java-quickstart.md
-  - name: Create a bot using Python
-    href: python/bot-builder-python-quickstart.md
-  - name: Create a bot using Azure Bot Service
+  - name: Create a basic bot
+    href: bot-service-quickstart-create-bot.md
+  - name: Create an Azure Bot resource
     href: v4sdk/abs-quickstart.md
   # - name: Create a bot using Azure PowerShell # Doesn't work, shouldn't have been added, will add back in when it works.
   #   href: powershell/bot-builder-powershell-quickstart.md
 - name: Tutorials
   items:
-  - name: 1. Create a basic bot
-    href: v4sdk/bot-builder-tutorial-create-basic-bot.md
-  - name: 2. Deploy a basic bot
+  - name: Deploy a basic bot
     href: v4sdk/bot-builder-tutorial-deploy-basic-bot.md
-  - name: 3. Add QnA Maker and redeploy a bot
+  - name: Add QnA Maker and redeploy a bot
     href: v4sdk/bot-builder-tutorial-add-qna.md
 - name: Samples
   items:
@@ -178,10 +170,8 @@
       items:
       - name: Implement a skill
         href: v4sdk/skill-implement-skill.md
-      - name: Write a v2.1 skill manifest
-        href: v4sdk/skills-write-manifest-2-1.md
-      - name: Write a v2.0 skill manifest
-        href: v4sdk/skills-write-manifest-2-0.md
+      - name: Write a skill manifest
+        href: v4sdk/skills-write-manifest.md
       - name: Use dialogs within a skill
         href: v4sdk/skill-actions-in-dialogs.md
       - name: Implement a skill consumer
@@ -204,6 +194,8 @@
       href: v4sdk/using-trace-activities.md
   - name: Debug
     items:
+    - name: Debugging guidelines
+      href: v4sdk/bot-builder-testing-debugging.md
     - name: Debug a bot using IDE
       href: bot-service-debug-bot.md
     - name: Debug with the Bot Framework Emulator
@@ -238,6 +230,8 @@
       items:
       - name: Connect a bot to channels
         href: bot-service-manage-channels.md
+      - name: Channel reference
+        href: bot-service-channels-reference.md
       - name: Implement channel-specific functionality
         href: v4sdk/bot-builder-channeldata.md
       - name: Cortana (retired)
@@ -277,6 +271,8 @@
         href: bot-service-channel-connect-line.md
       - name: Microsoft Teams
         href: channel-connect-teams.md
+      - name: Outlook (preview)
+        href: bot-service-channel-connect-actionable-email.md
       - name: Skype
         href: bot-service-channel-connect-skype.md
       - name: Skype for Business
@@ -466,8 +462,6 @@
     href: bot-service-compliance.md
   - name: Bot review guidelines
     href: bot-service-review-guidelines.md
-  - name: Channel reference
-    href: bot-service-channels-reference.md
   - name: Guide to identifiers
     href: bot-service-resources-identifiers-guide.md
   - name: Implement a skill for Power Virtual Agents

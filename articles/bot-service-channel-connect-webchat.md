@@ -158,7 +158,7 @@ To embed your bot in a web page by specifying the secret within the `iframe` tag
 <iframe style="height:480px; width:402px" src="https://webchat.botframework.azure.us/embed/YOUR_BOT_ID?s=YOUR_SECRET_HERE"></iframe>
 ```
 
-![Web Chat client](~/media/bot-service-channel-webchat/webchat-client.png)
+![Web Chat client](media/bot-service-channel-webchat/webchat-client.png)
 
 ### Production embedding option
 
