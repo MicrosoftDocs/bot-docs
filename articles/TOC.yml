@@ -202,6 +202,8 @@
       href: v4sdk/using-trace-activities.md
   - name: Debug
     items:
+    - name: Debugging guidelines
+      href: v4sdk/bot-builder-testing-debugging.md
     - name: Debug a bot using IDE
       href: bot-service-debug-bot.md
     - name: Debug with the Bot Framework Emulator
