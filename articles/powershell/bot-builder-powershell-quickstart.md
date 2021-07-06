@@ -7,7 +7,7 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.date: 02/23/2021
-ms.custom: devx-track-azurepowershell
+ms.custom: devx-track-azurepowershell, modeapi
 ---
 
 # Create and publish a bot with Azure PowerShell

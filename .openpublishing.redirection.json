@@ -1479,8 +1479,8 @@
     },
     {
       "source_path": "articles/bot-service-quickstart.md",
-      "redirect_url": "https://docs.microsoft.com/azure/bot-service/abs-quickstart",
-      "redirect_document_id": true
+      "redirect_url": "/azure/bot-service/bot-service-quickstart-create-bot",
+      "redirect_document_id": false
     },
     {
       "source_path": "articles/azure-bot-service-build-options.md",
@@ -1519,8 +1519,8 @@
     },
     {
       "source_path": "articles/azure-bot-service-quickstart.md",
-      "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-service-quickstart",
-      "redirect_document_id": true
+      "redirect_url": "/azure/bot-service/bot-service-quickstart-create-bot",
+      "redirect_document_id": false
     },
     {
       "source_path": "articles/azure-bot-service-serverless-template-basic.md",
@@ -1559,7 +1559,7 @@
     },
     {
       "source_path": "articles/bot-builder-overview-getstarted.md",
-      "redirect_url": "https://docs.microsoft.com/azure/bot-service/bot-service-quickstart",
+      "redirect_url": "/azure/bot-service/bot-service-quickstart-create-bot",
       "redirect_document_id": false
     },
     {
@@ -1979,8 +1979,28 @@
     },
     {
       "source_path": "articles/dotnet/bot-builder-dotnet-quickstart.md",
-      "redirect_url": "https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-sdk-quickstart",
-      "redirect_document_id": true
+      "redirect_url": "/azure/bot-service/bot-service-quickstart-create-bot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/python/bot-builder-python-quickstart.md",
+      "redirect_url": "/azure/bot-service/bot-service-quickstart-create-bot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/javascript/bot-builder-javascript-quickstart.md",
+      "redirect_url": "/azure/bot-service/bot-service-quickstart-create-bot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/java/bot-builder-java-quickstart.md",
+      "redirect_url": "/azure/bot-service/bot-service-quickstart-create-bot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-tutorial-create-basic-bot.md",
+      "redirect_url": "/azure/bot-service/bot-service-quickstart-create-bot",
+      "redirect_document_id": false
     },
     {
       "source_path": "articles/dotnet/bot-builder-dotnet-real-time-audio-video-call-overview.md",
@@ -2044,7 +2064,7 @@
     },
     {
       "source_path": "articles/nodejs/bot-builder-nodejs-quickstart.md",
-      "redirect_url": "https://docs.microsoft.com/azure/bot-service/javascript/bot-builder-javascript-quickstart",
+      "redirect_url": "/azure/bot-service/bot-service-quickstart-create-bot",
       "redirect_document_id": true
     },
     {
