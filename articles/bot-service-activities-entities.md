@@ -32,7 +32,7 @@ The mention object contains these properties:
 | Property | Description |
 |----|----|
 | Type | type of the entity ("mention") |
-| Mentioned | channel account object that indicates which user was mentioned | 
+| Mentioned | channel account object that indicates which user was mentioned |
 | Text | text within the *activity.text* property that represents the mention itself (may be empty or null) |
 
 This code example shows how to add a mention entity to the entities collection.
@@ -139,7 +139,7 @@ if (entity[0].type === "GeoCoordinates" && entity[0].latitude > 34) {
 ---
 
 ## Activity types
-<!-- 
+<!--
 This code example show how to process an activity of type **message**:
 
 # [C#](#tab/cs)

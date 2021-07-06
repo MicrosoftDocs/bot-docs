@@ -640,7 +640,7 @@ all(<sequence>, <item>, <condition>)
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*sequence*> | Yes | object | A sequence to be evaluated. |
-| <*item*> | Yes | string | Refers to the elements to evaluate in the sequence. | 
+| <*item*> | Yes | string | Refers to the elements to evaluate in the sequence. |
 | <*condition*> | Yes | expression | The expression to evaluate the condition. |
 |||||
 

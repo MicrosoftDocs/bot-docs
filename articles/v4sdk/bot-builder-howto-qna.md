@@ -1,7 +1,7 @@
 ---
 title: Use QnA Maker to answer questions - Bot Service
 description: Learn how bots can answer questions from users without parsing or interpreting the questions. See how to use QnA Maker for this task.
-keywords: question and answer, QnA, FAQs, qna maker 
+keywords: question and answer, QnA, FAQs, qna maker
 author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
@@ -217,7 +217,7 @@ The QnA Maker dialog supports explicit feedback for the active learning feature.
 
 <!--To learn how to incorporate multi-turn support in your bot, take a look at the QnA Maker Multi-turn [[**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/11.qnamaker-multiturn) | [**JS**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/49.qnamaker-all-features)] sample.-->
 
-<!--TODO: Update code based on final sample 
+<!--TODO: Update code based on final sample
 The following code snippets come from the proof-of-concept **multi-turn QnA Maker prompts** sample for
 [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/qnamaker-prompting/csharp_dotnetcore) and
 [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/qnamaker-prompting/javascript_nodejs).
@@ -397,7 +397,7 @@ async processAsync(oldState, activity){
      }
 
      return [newState, outputActivity , null];
-}  
+}
 ```
 
 ---
