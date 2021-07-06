@@ -39,7 +39,7 @@ To enable continuous deployment with GitHub, navigate to the **App Service** pag
 
 1. Click **Deployment Center** > **GitHub** > **Authorize**.
 
-   ![Continuos deployment](media/azure-bot-build/azure-deployment.png)
+   ![Continuous deployment](media/azure-bot-build/azure-deployment.png)
 
    1. In the browser window that opens up, click **Authorize AzureAppService**.
 

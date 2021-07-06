@@ -197,7 +197,7 @@ If you deploy your bot to Azure, SSL will automatically be configured for your a
 To test your bot in the cloud with security enabled, complete the following steps.
 
 1. Ensure that your bot has been successfully deployed and is running.
-2. Sign in to the [Azure Portal](https://portal.azure.com).
+2. Sign in to the [Azure portal](https://portal.azure.com).
 3. Navigate to the **Bot Channels Registration** for your bot within the portal.
 4. Click **Test in Web Chat** in the **Bot management** pane on the left.
 5. To test connectivity to your bot, type some text into the web chat control and press Enter.
