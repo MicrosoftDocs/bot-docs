@@ -1983,6 +1983,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "articles/dotnet/bot-builder-dotnet-quickstart.md",
+      "redirect_url": "/azure/bot-service/bot-service-quickstart-create-bot",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "articles/python/bot-builder-python-quickstart.md",
       "redirect_url": "/azure/bot-service/bot-service-quickstart-create-bot",
       "redirect_document_id": false
