@@ -12,9 +12,8 @@ ms.date: 12/13/2017
 # Create a bot with the Bot Connector service with the Bot Connector API
 
 > [!div class="op_single_selector"]
-> - [.NET](../dotnet/bot-builder-dotnet-quickstart.md)
-> - [Node.js](../nodejs/bot-builder-nodejs-quickstart.md)
-> - [Bot Service](../bot-service-quickstart.md)
+> - [Bot Service SDK](../bot-service-quickstart-create-bot.md)
+> - [Bot Service Azure resource](../bot-service-quickstart.md)
 > - [REST](../rest-api/bot-framework-rest-connector-quickstart.md)
 
 The Bot Connector service enables your bot to exchange messages with channels that are configured in the [Azure Portal](https://portal.azure.com), by using industry-standard REST and JSON over HTTPS. This tutorial walks you through the process of obtaining an access token from the Bot Framework and using the Bot Connector service to exchange messages with the user.

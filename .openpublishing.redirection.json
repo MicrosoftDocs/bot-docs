@@ -1978,7 +1978,7 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "articles/dotnet/bot-builder-dotnet-quickstart.md",
+      "source_path": "articles/dotnet/bot-builder-dotnet-sdk-quickstart.md",
       "redirect_url": "/azure/bot-service/bot-service-quickstart-create-bot",
       "redirect_document_id": false
     },
