@@ -26,7 +26,7 @@ For information about using a skill bot outside of dialogs, see how to [implemen
 
 - Knowledge of [bot basics](bot-builder-basics.md), [how skills bots work](skills-conceptual.md), and how to [implement a skill consumer](skill-implement-consumer.md).
 - Optionally, an Azure subscription. If you don't have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
-- A copy of the **skills skillDialog** sample in [**C#**](https://aka.ms/skills-using-dialogs-cs), [**JavaScript**](https://aka.ms/skills-using-dialogs-js) or [**Python**](https://aka.ms/skills-using-dialogs-py).
+- A copy of the **skills skillDialog** sample in [**C#**](https://aka.ms/skills-using-dialogs-cs), [**JavaScript**](https://aka.ms/skills-using-dialogs-js), [**Java**](https://aka.ms/skills-using-dialogs-java) or [**Python**](https://aka.ms/skills-using-dialogs-py).
 
 > [!NOTE]
 > Starting with version 4.11, you do not need an app ID and password to test a skill consumer locally in the Emulator. An Azure subscription is still required to deploy your consumer to Azure or to consume a deployed skill.
@@ -52,6 +52,10 @@ For information about other aspects of creating a skill consumer, see how to [im
 ### [JavaScript](#tab/js)
 
 ![JavaScript skill consumer class diagram](./media/skill-dialog/dialog-root-bot-js.png)
+
+### [Java](#tab/java)
+
+![Java skill consumer class diagram](./media/skill-dialog/dialog-root-bot-java.png)
 
 ### [Python](#tab/python)
 
@@ -94,6 +98,14 @@ Optionally, add the root bot's app ID and password and add the app ID for the ec
 
 [!code-javascript[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/.env?highlight=1-2,6)]
 
+### [Java](#tab/java)
+
+**DialogRootBot\application.properties**
+
+Optionally, add the root bot's app ID and password and add the app ID for the echo skill bot to the `BotFrameworkSkills` array.
+
+[!code-json[configuration file](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/resources/application.properties?highlight=1-2,7)]
+
 ### [Python](#tab/python)
 
 **dialog-root-bot/config.py**
@@ -111,7 +123,7 @@ The main dialog also demonstrates how to cancel the skill (through the skill dia
 
 The skill this bot uses supports a couple different features. It can book a flight or get the weather for a city. In addition, if it receives a message outside either of these contexts and a LUIS recognizer is configured, it attempts to interpret the user's intent.
 
-The skill manifest ([**C#**](https://aka.ms/skilldialog-manifest-cs), [**JavaScript**](https://aka.ms/skilldialog-manifest-js), [**Python**](https://aka.ms/skilldialog-manifest-py)) describes the actions the skill can perform, its input and output parameters, and the skill's endpoints.
+The skill manifest ([**C#**](https://aka.ms/skilldialog-manifest-cs), [**JavaScript**](https://aka.ms/skilldialog-manifest-js), [**Java**](https://aka.ms/skilldialog-manifest-java), [**Python**](https://aka.ms/skilldialog-manifest-py)) describes the actions the skill can perform, its input and output parameters, and the skill's endpoints.
 Of note, the skill can handle a "BookFlight" or "GetWeather" event. It can also handle messages.
 
 The main dialog includes code to:
@@ -157,9 +169,22 @@ In addition to conversation state, the dialog needs the root bot's app ID and re
 
 The dialog constructor checks its input parameters, adds skills dialogs, adds prompt and waterfall dialogs for managing conversation flow outside the skill, and creates a property accessor for tracking the active skill, if any.
 
-The constructor calls `AddSkillDialogs`, a helper method, to create a `SkillDialog` for each skill that is included in the configuration file, as read from the configuration file into a `SkillsConfiguration` object.
+The constructor calls `addSkillDialogs`, a helper method, to create a `SkillDialog` for each skill that is included in the configuration file, as read from the configuration file into a `SkillsConfiguration` object.
 
 [!code-javascript[addSkillDialogs](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=175-191&highlight=15)]
+
+#### [Java](#tab/java)
+
+**DialogRootBot\dialogs\MainDialog.java**
+
+The `MainDialog` class derives from `ComponentDialog`.
+In addition to conversation state, the dialog needs the root bot's app ID and references to the skill conversation ID factory, the skill HTTP client, and the skills configuration objects.
+
+The dialog constructor checks its input parameters, adds skills dialogs, adds prompt and a waterfall dialogs for managing conversation flow outside the skill, and creates a property accessor for tracking the active skill, if any.
+
+The constructor calls `addSkillDialogs`, a helper method, to create a `SkillDialog` for each skill that is included in the configuration file, as read from the configuration file into a `SkillsConfiguration` object.
+
+[!code-java[addSkillDialogs](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/java/com/microsoft/bot/sample/dialogrootbot/dialogs/MainDialog.java?range=260-279&highlight=18)]
 
 ### [Python](#tab/python)
 
@@ -192,6 +217,12 @@ In its first step, the main dialog prompts the user for which skill they'd like 
 
 [!code-javascript[selectSkillStep](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=84-99&highlight=15)]
 
+#### [Java](#tab/java)
+
+**DialogRootBot\Dialogs\MainDialog.java**
+
+[!code-java[selectSkillStepAsync](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/java/com/microsoft/bot/sample/dialogrootbot/dialogs/MainDialog.java?range=147-168&highlight=21)]
+
 #### [Python](#tab/python)
 
 **dialog-root-bot/dialogs/main_dialog.py**
@@ -223,6 +254,16 @@ The choices included in this bot help test the actions defined for this skill. M
 
 [!code-javascript[selectSkillActionStep, getSkillActions, skillActionPromptValidator](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=101-121,192-209,266-276)]
 
+#### [Java](#tab/java)
+
+**DialogRootBot\Dialogs\MainDialog.java**
+
+[!code-java[selectSkillActionStep](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/java/com/microsoft/bot/sample/dialogrootbot/dialogs/MainDialog.java?range=171-195)]
+
+[!code-java[getSkillActions](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/java/com/microsoft/bot/sample/dialogrootbot/dialogs/MainDialog.java?range=283-297)]
+
+[!code-java[skillActionPromptValidator](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/java/com/microsoft/bot/sample/dialogrootbot/dialogs/MainDialog.java?range=97-106)]
+
 #### [Python](#tab/python)
 
 **dialog-root-bot/dialogs/main_dialog.py**
@@ -253,6 +294,12 @@ In the next step, the main dialog:
 
 [!code-javascript[callSkillActionStep](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=123-147&highlight=10,18,24)]
 
+#### [Java](#tab/java)
+
+**DialogRootBot\Dialogs\MainDialog.java**
+
+[!code-java[callSkillActionStep](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/java/com/microsoft/bot/sample/dialogrootbot/dialogs/MainDialog.java?range=198-224)]
+
 #### [Python](#tab/python)
 
 **dialog-root-bot/dialogs/main_dialog.py**
@@ -282,6 +329,12 @@ In the last step, the main dialog:
 
 [!code-javascript[finalStep](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=149-170&highlight=9-11)]
 
+#### [Java](#tab/java)
+
+**DialogRootBot\Dialogs\MainDialog.java**
+
+[!code-java[FinalStepAsync](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/java/com/microsoft/bot/sample/dialogrootbot/dialogs/MainDialog.java?range=228-256)]
+
 #### [Python](#tab/python)
 
 **dialog-root-bot/dialogs/main_dialog.py**
@@ -308,6 +361,12 @@ The main dialog overrides the default behavior of the _on continue dialog_ metho
 **dialogRootBot/dialogs/mainDialog.js**
 
 [!code-javascript[onContinueDialog](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/dialogs/mainDialog.js?range=70-82)]
+
+#### [Java](#tab/java)
+
+**DialogRootBot\Dialogs\MainDialog.java**
+
+[!code-java[onContinueDialog](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/java/com/microsoft/bot/sample/dialogrootbot/dialogs/MainDialog.java?range=131-139)]
 
 #### [Python](#tab/python)
 
@@ -341,6 +400,16 @@ Since skill logic for each turn is handled by a main dialog, the activity handle
 
 [!code-javascript[run](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/bots/rootBot.js?range=47-55)]
 
+### [Java](#tab/java)
+
+**DialogRootBot\Bots\RootBot.java**
+
+[!code-java[class definition](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/java/com/microsoft/bot/sample/dialogrootbot/Bots/RootBot.java?range=31)]
+
+[!code-java[constructor](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/java/com/microsoft/bot/sample/dialogrootbot/Bots/RootBot.java?range=35-38)]
+
+[!code-java[onTurn](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/java/com/microsoft/bot/sample/dialogrootbot/Bots/RootBot.java?range=40-53)]
+
 ### [Python](#tab/python)
 
 **dialog-root-bot/bots/root_bot.py**
@@ -360,7 +429,7 @@ You can test the skill consumer in the Emulator as if it were a normal bot; howe
 
 Download and install the latest [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md).
 
-1. Run the dialog skill bot and dialog root bot locally on your machine. If you need instructions, refer to the `README` file for the  [C#](https://aka.ms/skills-using-dialogs-cs), [JavaScript](https://aka.ms/skills-using-dialogs-js) or [Python](https://aka.ms/skills-using-dialogs-py) sample.
+1. Run the dialog skill bot and dialog root bot locally on your machine. If you need instructions, refer to the `README` file for the  [C#](https://aka.ms/skills-using-dialogs-cs), [JavaScript](https://aka.ms/skills-using-dialogs-js), [Java](https://aka.ms/skills-using-dialogs-java) or [Python](https://aka.ms/skills-using-dialogs-py) sample.
 1. Use the Emulator to test the bot.
    - When you first join the conversation, the bot displays a welcome message and asks you what skill you would like to call. The skill bot for this sample has just one skill.
    - Select **DialogSkillBot**.
