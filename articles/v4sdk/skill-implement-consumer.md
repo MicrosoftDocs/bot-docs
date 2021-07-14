@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 11/11/2020
+ms.date: 07/07/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -31,7 +31,7 @@ For information about using a skill dialog to consume a skill, see how to [use a
 
 - Knowledge of [bot basics](bot-builder-basics.md), [how skills bots work](skills-conceptual.md), and how to [implement a skill](skill-implement-skill.md).
 - Optionally, an Azure subscription. If you don't have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
-- A copy of the **skills simple bot-to-bot** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/80.skills-simple-bot-to-bot), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/80.skills-simple-bot-to-bot) or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/80.skills-simple-bot-to-bot).
+- A copy of the **skills simple bot-to-bot** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/80.skills-simple-bot-to-bot), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/80.skills-simple-bot-to-bot), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/80.skills-simple-bot-to-bot).
 
 > [!NOTE]
 > Starting with version 4.11, you do not need an app ID and password to test a skill consumer locally in the Emulator. An Azure subscription is still required to deploy your consumer to Azure or to consume a deployed skill.
@@ -60,7 +60,6 @@ This article focuses on the root bot, which includes support logic in its bot an
 ### [Java](#tab/java)
 
 ![Skill consumer class java diagram](./media/skills-simple-root-java.png)
-
 
 ### [Python](#tab/python)
 
@@ -201,33 +200,29 @@ The handler uses the conversation ID factory, the authentication configuration, 
 
 **SimpleRootBot\Startup.cs**
 
-[!code-csharp[skill client and handler](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/Startup.cs?range=42-43)]
+[!code-csharp[skill ID factory, client, and handler](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/Startup.cs?range=39-42)]
 
 ### [JavaScript](#tab/js)
 
 **simple-root-bot/index.js**
 
-[!code-javascript[skill client](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=113,119,122)]
-
-[!code-javascript[skill handler](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=147-148)]
+[!code-javascript[skill ID factory, credential provider, client, and handler](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=113,119,122,147-148)]
 
 ### [Java](#tab/java)
 
 **DialogRootBot\application.java**
 
-[!code-java[skill client and handler](~/../botbuilder-samples/samples/java_springboot/80.skills-simple-bot-to-bot/DialogRootBot/src/main/java/com/microsoft/bot/sample/simplerootbot/Application.java?range=98-110)]
+[!code-java[skill client, ID factory, and handler](~/../botbuilder-samples/samples/java_springboot/80.skills-simple-bot-to-bot/DialogRootBot/src/main/java/com/microsoft/bot/sample/simplerootbot/Application.java?range=103-132)]
 
 ### [Python](#tab/python)
 
 **simple-root-bot/app.py**
 
-[!code-python[skill client](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/app.py?range=51)]
-
-[!code-python[skill handler](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/app.py?range=60-62)]
+[!code-python[skill ID factory, client, and handler](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/app.py?range=49-51,60-62)]
 
 ---
 
-HTTP traffic from the skill will come into the service URL endpoint that the skill consumer advertizes to the skill. Use a language-specific endpoint handler to forward traffic to the skill handler.
+HTTP traffic from the skill will come into the service URL endpoint that the skill consumer advertises to the skill. Use a language-specific endpoint handler to forward traffic to the skill handler.
 
 The default skill handler:
 
@@ -243,7 +238,7 @@ Of note, the skill consumer logic should:
 - Notice when a user makes a request that should be forwarded to a skill, and start the skill.
 - Look for an `endOfConversation` activity from any active skill, to notice when it completes.
 - If appropriate, add logic to let the user or skill consumer cancel a skill that has not completed yet.
-- Save state before making the call to a skill, as any response may come back to a different instance of the skill consumer. (load balancing, etc.)
+- Save state before making the call to a skill, as any response may come back to a different instance of the skill consumer.
 
 ### [C#](#tab/cs)
 
@@ -252,17 +247,15 @@ Of note, the skill consumer logic should:
 The root bot has dependencies on conversation state, the skills information, the skill client, and the general configuration. ASP.NET provides these objects through dependency injection.
 The root bot also defines a conversation state property accessor to track which skill is active.
 
-[!code-csharp[Root bot dependencies](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/Bots/RootBot.cs?range=21-55)]
+[!code-csharp[Root bot dependencies](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/Bots/RootBot.cs?range=21-47)]
 
 This sample has a helper method for forwarding activities to a skill. It saves conversation state before invoking the skill, and it checks whether the HTTP request was successful.
 
-[!code-csharp[Send to skill](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/Bots/RootBot.cs?range=135-149)]
+[!code-csharp[Send to skill](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/Bots/RootBot.cs?range=128-142)]
 
 Of note, the root bot includes logic for forwarding activities to the skill, starting the skill at the user's request, and stopping the skill when the skill completes.
 
-[!code-csharp[OnMessageActivityAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/Bots/RootBot.cs?range=77-96)]
-
-[!code-csharp[OnEndOfConversationActivityAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/Bots/RootBot.cs?range=98-122)]
+[!code-csharp[OnMessageActivityAsync, OnEndOfConversationActivityAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/Bots/RootBot.cs?range=70-115)]
 
 ### [JavaScript](#tab/js)
 
@@ -271,17 +264,15 @@ Of note, the root bot includes logic for forwarding activities to the skill, sta
 The root bot has dependencies on conversation state, the skills information, and the skill client.
 The root bot also defines a conversation state property accessor to track which skill is active.
 
-[!code-javascript[Root bot dependencies](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/rootBot.js?range=7-30)]
+[!code-javascript[Root bot dependencies](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/rootBot.js?range=7-24)]
 
 This sample has a helper method for forwarding activities to a skill. It saves conversation state before invoking the skill, and it checks whether the HTTP request was successful.
 
-[!code-javascript[Send to skill](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/rootBot.js?range=117-129)]
+[!code-javascript[Send to skill](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/rootBot.js?range=111-123)]
 
 Of note, the root bot includes logic for forwarding activities to the skill, starting the skill at the user's request, and stopping the skill when the skill completes.
 
-[!code-javascript[onMessage](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/rootBot.js?range=50-65)]
-
-[!code-javascript[onEndOfConversation](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/rootBot.js?range=68-92)]
+[!code-javascript[onMessage, onEndOfConversation](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/rootBot.js?range=44-86)]
 
 ### [Java](#tab/java)
 
@@ -294,13 +285,11 @@ The root bot also defines a conversation state property accessor to track which 
 
 This sample has a helper method for forwarding activities to a skill. It saves conversation state before invoking the skill, and it checks whether the HTTP request was successful.
 
-[!code-java[Send to skill](~/../botbuilder-samples/samples/java_springboot/80.skills-simple-bot-to-bot/DialogRootBot/src/main/java/com/microsoft/bot/sample/simplerootbot/RootBot.java?range=165.190)]
+[!code-java[Send to skill](~/../botbuilder-samples/samples/java_springboot/80.skills-simple-bot-to-bot/DialogRootBot/src/main/java/com/microsoft/bot/sample/simplerootbot/RootBot.java?range=165-190)]
 
 Of note, the root bot includes logic for forwarding activities to the skill, starting the skill at the user's request, and stopping the skill when the skill completes.
 
-[!code-java[OnMessageActivityAsync](~/../botbuilder-samples/samples/java_springboot/80.skills-simple-bot-to-bot/DialogRootBot/src/main/java/com/microsoft/bot/sample/simplerootbot/RootBot.java?range=111-126)]
-
-[!code-java[OnEndOfConversationActivityAsync](~/../botbuilder-samples/samples/java_springboot/80.skills-simple-bot-to-bot/DialogRootBot/src/main/java/com/microsoft/bot/sample/simplerootbot/RootBot.java?range=128-152)]
+[!code-java[OnMessageActivityAsync, OnEndOfConversationActivityAsync](~/../botbuilder-samples/samples/java_springboot/80.skills-simple-bot-to-bot/DialogRootBot/src/main/java/com/microsoft/bot/sample/simplerootbot/RootBot.java?range=111-152)]
 
 ### [Python](#tab/python)
 
@@ -309,7 +298,7 @@ Of note, the root bot includes logic for forwarding activities to the skill, sta
 The root bot has dependencies on conversation state, the skills information, the skill client, and the general configuration.
 The root bot also defines a conversation state property accessor to track which skill is active.
 
-[!code-python[Root bot dependencies](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/bots/root_bot.py?range=23-37)]
+[!code-python[Root bot dependencies](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/bots/root_bot.py?range=23-36)]
 
 This sample has a helper method for forwarding activities to a skill. It saves conversation state before invoking the skill, and it checks whether the HTTP request was successful.
 
@@ -317,7 +306,7 @@ This sample has a helper method for forwarding activities to a skill. It saves c
 
 Of note, the root bot includes logic for forwarding activities to the skill, starting the skill at the user's request, and stopping the skill when the skill completes.
 
-[!code-python[Handled activities](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/bots/root_bot.py?range=38-98)]
+[!code-python[on_message_activity, on_end_of_conversation_activity](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/bots/root_bot.py?range=53-98)]
 
 ---
 
@@ -325,13 +314,13 @@ Of note, the root bot includes logic for forwarding activities to the skill, sta
 
 When an error occurs, the adapter clears conversation state to reset the conversation with the user and avoid persisting an error state.
 
-It is a good practice to send an _end of conversation_ activity to any active skill before clearing conversation state in the skill consumer. This lets the skill release any resources associated with the consumer-skill conversation before the skill consumer releases the conversation.
+It's a good practice to send an _end of conversation_ activity to any active skill before clearing conversation state in the skill consumer. This lets the skill release any resources associated with the consumer-skill conversation before the skill consumer releases the conversation.
 
 ### [C#](#tab/cs)
 
 **SimpleRootBot\AdapterWithErrorHandler.cs**
 
-In this sample the turn error logic is split up among a few helper methods.
+In this sample, the turn error logic is split up among a few helper methods.
 
 [!code-csharp[On turn error](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/AdapterWithErrorHandler.cs?range=40-120)]
 
@@ -396,7 +385,7 @@ This sample uses the same authentication configuration logic for validating acti
 
 **SimpleRootBot\Startup.cs**
 
-[!code-csharp[services](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/Startup.cs?range=21-53)]
+[!code-csharp[ConfigureServices](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/Startup.cs?range=20-52)]
 
 ### [JavaScript](#tab/js)
 
@@ -416,7 +405,7 @@ This sample uses the same authentication configuration logic for validating acti
 
 **simple-root-bot/app.py**
 
-[!code-python[services](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/app.py?range=38-81)]
+[!code-python[services](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/app.py?range=38-79)]
 
 ---
 
@@ -428,7 +417,7 @@ See how to [implement a skill](skill-implement-skill.md) for information on how 
 Download and install the latest [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md)
 
 1. Run the echo skill bot and simple root bot locally on your machine. If you need instructions, refer to the `README` file for the [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/80.skills-simple-bot-to-bot), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/80.skills-simple-bot-to-bot), or [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/80.skills-simple-bot-to-bot) sample.
-1. Use the Emulator to test the bot as shown below. Note that when you send an `end` or `stop` message to the skill, the skill sends to the root bot an `endOfConversation` activity, in addition to the reply message. The `endOfConversation` activity's _code_ property indicates that the skill completed successfully.
+1. Use the Emulator to test the bot as shown below. When you send an `end` or `stop` message to the skill, the skill sends to the root bot an `endOfConversation` activity, in addition to the reply message. The `endOfConversation` activity's _code_ property indicates that the skill completed successfully.
 
 ![test the skill consumer](media/skills-simple-consumer-test.png)
 
@@ -457,7 +446,7 @@ To use the _expect replies_ delivery mode:
 - Clone the activity from the turn context.
 - Set the _delivery mode_ property of the new activity to "ExpectReplies" before sending the activity from root bot to skill.
 - Read _expected replies_ from the _invoke response_ body returned from the request response.
-- Process each activity, either within the root bot or by sending it on to the channel which initiated the original request.
+- Process each activity, either within the root bot or by sending it on to the channel that initiated the original request.
 
 Expect replies can be useful in situations in which the bot that replies to an activity needs to be the same instance of the bot that received the activity.
 
