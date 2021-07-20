@@ -1,28 +1,28 @@
 ---
-title: How bots for Microsoft Teams work
-description: A continuation of the article on How bots work specific to Microsoft Teams bots
+title: Build Microsoft Teams bots with Bot Framework SDK
+description: A continuation of the article on How bots work, specific to Microsoft Teams bots.
 author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
 ms.topic: overview
 ms.service: bot-service
-ms.date: 06/01/2021
+ms.date: 07/19/2021
 ---
 
 # How Microsoft Teams bots work
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-This is an introduction that builds on what you learned in the article [How bots work](bot-builder-basics.md) and [Event-driven conversations](bot-activity-handler-concept.md); you should be familiar with these articles before reading this.
+This article builds on what you learned in [How bots work](bot-builder-basics.md) and [Event-driven conversations](bot-activity-handler-concept.md); you should be familiar with these articles before you continue.
 
-The primary differences in bots developed for Microsoft Teams is in how activities are handled. The _Teams activity handler_ derives from the _activity handler_ and processes Teams-specific activity types before processing more general activity types.
+The primary difference in bots developed for Microsoft Teams is in how activities are handled. The _Teams activity handler_ derives from the _activity handler_ and processes Teams-specific activity types before processing more general activity types.
 
 ## Teams activity handler
 
 To create a bot for Teams, derive your bot from the _Teams activity handler_ class. When such a bot receives an activity, it routes the activity through various *activity handlers*. The initial, base handler is the *turn handler*, and it routes the activity to a handler based on the activity's type. The *turn handler* calls the handler that is designed to handle the specific type of activity that was received. The _Teams activity handler_ class is derived from the _activity handler_ class. In addition to the activity types that the _activity handler_ can process, the Teams activity handler class includes additional handlers for Teams-specific activities.
 
 A bot that derives from the Teams activity handler is similar to a bot that derives directly from the activity handler class.
-However, Teams includes additional information in `conversationUpdate` activities and sends Teams-specific `invoke` activities.
+However, Teams includes additional information in `conversationUpdate` activities and sends Teams-specific `invoke` and `event` activities.
 
 <!-- The Teams activity handler is found at:
 - https://github.com/microsoft/botbuilder-dotnet/blob/main/libraries/Microsoft.Bot.Builder/Teams/TeamsActivityHandler.cs
@@ -35,30 +35,31 @@ However, Teams includes additional information in `conversationUpdate` activitie
 
 When your Teams activity handler&ndash;bot receives a message activity, its turn handler routes the incoming message activity to its `OnMessageActivityAsync` handler, similar to how an activity handler&ndash;based bot would. However, when your Teams bot receives a conversation update activity, the Teams version of the `OnConversationUpdateActivityAsync` handler processes the activity.
 
-There is no base implementation for most of the Teams-specific activity handlers. You will need to override these handler and provide appropriate logic for your bot.
+There is no base implementation for most of the Teams-specific activity handlers. You will need to override these handlers and provide appropriate logic for your bot.
 
 ### [JavaScript](#tab/javascript)
 
 When your Teams activity handler&ndash;bot receives a message activity, its turn handler routes the incoming message activity to its `onMessage` handler, similar to how an activity handler&ndash;based bot would. However, when your Teams bot receives a conversation update activity, the Teams version of the `dispatchConversationUpdateActivity` handler processes the activity.
 
-There is no base implementation for most of the Teams-specific activity handlers. You will need to override these handler and provide appropriate logic for your bot.
+There is no base implementation for most of the Teams-specific activity handlers. You will need to override these handlers and provide appropriate logic for your bot.
 
-When overriding these Teams-specific activity handlers, define your bot logic, then **be sure to call `next()` at the end**. By calling `next()` you ensure that the next handler is run.
+When overriding these Teams-specific activity handlers, define your bot logic, then **be sure to call `next()` at the end**. By calling `next()`, you ensure that the next handler is run.
+
 ### [Java](#tab/java)
 
 When your Teams activity handler&ndash;bot receives a message activity, its turn handler routes the incoming message activity to its `onMessageActivity` handler, similar to how an activity handler&ndash;based bot would. However, when your Teams bot receives a conversation update activity, the Teams version of the `onConversationUpdateActivity` handler processes the activity.
 
-There is no base implementation for most of the Teams-specific activity handlers. You will need to override these handler and provide appropriate logic for your bot.
+There is no base implementation for most of the Teams-specific activity handlers. You will need to override these handlers and provide appropriate logic for your bot.
 
 ### [Python](#tab/python)
 
 When your Teams activity handler&ndash;bot receives a message activity, its turn handler routes the incoming message activity to its `on_message_activity` handler, similar to how an activity handler&ndash;based bot would. However, when your Teams bot receives a conversation update activity, the Teams version of the `on_conversation_update_activity` handler processes the activity.
 
-There is no base implementation for most of the Teams-specific activity handlers. You will need to override these handler and provide appropriate logic for your bot.
+There is no base implementation for most of the Teams-specific activity handlers. You will need to override these handlers and provide appropriate logic for your bot.
 
 ---
 
-All of the activity handlers described in the [activity handling](bot-activity-handler-concept.md#activity-handling) section of the _Event-driven conversations using an activity handler_ article will continue to work as they do with a non-Teams bot, with the exception of handling the members added and removed activities, these will be different in the context of a team, where the new member is added to the team as opposed to a message thread. See [Teams conversation update activities](#teams-conversation-update-activities) for more details.
+All of the activity handlers described in the [activity handling](bot-activity-handler-concept.md#activity-handling) section of the _Event-driven conversations using an activity handler_ article will continue to work as they do with a non-Teams bot, except for handling the members added and removed activities, these activities will be different in the context of a team, where the new member is added to the team as opposed to a message thread. For more information, see [Teams conversation update activities](#teams-conversation-update-activities).
 
 To implement your logic for these Teams-specific activity handlers, you will override methods in your bot.
 
@@ -184,6 +185,49 @@ Below is a list of all of the Teams activity handlers called from the `on_conver
 
 ---
 
+### Teams event activities
+
+The following table lists the Teams-specific event activities Teams sends to a bot.
+The event activities listed are for conversational bots in Teams.
+
+### [C#](#tab/csharp)
+
+These are the Teams-specific event activity handlers called from the `OnEventActivityAsync` _Teams_ activity handler.
+
+| Event types                            | Handler                    | Description                                             |
+|:---------------------------------------|:---------------------------|:--------------------------------------------------------|
+| application/vnd.microsoft.meetingEnd   | `OnTeamsMeetingEndAsync`   | The bot is associated with a meeting that just ended.   |
+| application/vnd.microsoft.meetingStart | `OnTeamsMeetingStartAsync` | The bot is associated with a meeting that just started. |
+
+### [JavaScript](#tab/javascript)
+
+These are the Teams-specific event activity handlers called from the `onEventActivity` _Teams_ activity handler.
+
+| Event types                            | Handler               | Description                                             |
+|:---------------------------------------|:----------------------|:--------------------------------------------------------|
+| application/vnd.microsoft.meetingEnd   | `onTeamsMeetingEnd`   | The bot is associated with a meeting that just ended.   |
+| application/vnd.microsoft.meetingStart | `onTeamsMeetingStart` | The bot is associated with a meeting that just started. |
+
+### [Java](#tab/java)
+
+These are the Teams-specific event activity handlers called from the `onEventActivity` _Teams_ activity handler.
+
+| Event types                            | Handler               | Description                                             |
+|:---------------------------------------|:----------------------|:--------------------------------------------------------|
+| application/vnd.microsoft.meetingEnd   | `onTeamsMeetingEnd`   | The bot is associated with a meeting that just ended.   |
+| application/vnd.microsoft.meetingStart | `onTeamsMeetingStart` | The bot is associated with a meeting that just started. |
+
+### [Python](#tab/python)
+
+These are the Teams-specific event activity handlers called from the `on_event_activity` _Teams_ activity handler.
+
+| Event types                            | Handler                        | Description                                             |
+|:---------------------------------------|:-------------------------------|:--------------------------------------------------------|
+| application/vnd.microsoft.meetingEnd   | `on_teams_meeting_end_event`   | The bot is associated with a meeting that just ended.   |
+| application/vnd.microsoft.meetingStart | `on_teams_meeting_start_event` | The bot is associated with a meeting that just started. |
+
+---
+
 ### Teams invoke activities
 
 The following table lists the Teams-specific invoke activities Teams sends to a bot.
@@ -218,6 +262,7 @@ Here is a list of all of the Teams activity handlers called from the `onInvokeAc
 | signin/verifyState              | `handleTeamsSigninVerifyState`       | Teams Sign in Verify State.       |
 | task/fetch                      | `handleTeamsTaskModuleFetch`         | Teams Task Module Fetch.          |
 | task/submit                     | `handleTeamsTaskModuleSubmit`        | Teams Task Module Submit.         |
+
 ### [Java](#tab/java)
 
 Here is a list of all of the Teams activity handlers called from the `onInvokeActivity` _Teams_ activity handler:
