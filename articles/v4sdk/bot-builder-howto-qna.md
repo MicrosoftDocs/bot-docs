@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 06/02/2020
+ms.date: 07/21/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -131,7 +131,7 @@ In **QnABot.cs**, in the `OnMessageActivityAsync` method, create a QnAMaker inst
 
 Be sure that npm package **botbuilder-ai** is installed for your project.
 
-In our sample the code for the bot logic is in the **QnABot.js** file.
+In the sample, the code for the bot logic is in the **QnABot.js** file.
 
 In the **QnABot.js** file, we use the connection information provided by your .env file to establish a connection to the QnA Maker service: _this.qnaMaker_.
 
@@ -146,7 +146,6 @@ In **QnABot.java**, in the `onMessageActivity` method, create a QnAMaker instanc
 **QnABot.java**
 
 [!code-java[qna connection](~/../botbuilder-samples/samples/java_springboot/11.qnamaker/src/main/java/com/microsoft/bot/sample/qnamaker/QnABot.java?range=25-30)]
-
 
 ## [Python](#tab/python)
 
@@ -177,7 +176,7 @@ In the **QnABot.js** file, we pass the user's input to the QnA Maker service's `
 
 ## [Java](#tab/java)
 
-When your bot needs an answer from QnAMaker, call the `getAnswers` method from your bot code to get the appropriate answer based on the current context. If you're accessing your knowledge base, change the _no answers found_ message below to provide helpful instructions for your users..
+When your bot needs an answer from QnAMaker, call the `getAnswers` method from your bot code to get the appropriate answer based on the current context. If you're accessing your knowledge base, change the _no answers found_ message to provide helpful instructions for your users.
 
 **QnABot.java**
 
@@ -202,7 +201,7 @@ Start the Emulator, connect to your bot, and send a message as shown below.
 
 ## Additional information
 
-The **QnA Maker multi-turn** sample ([**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/11.qnamaker-multiturn), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/49.qnamaker-all-features), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/49.qnamaker-all-features), [**Python**](https://aka.ms/py-qna-multiturn)) shows how to use a QnA Maker dialog to support QnA Maker's follow-up prompt and active learning features.
+The **QnA Maker multi-turn** sample ([**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/49.qnamaker-all-features), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/49.qnamaker-all-features), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/49.qnamaker-all-features), [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/49.qnamaker-all-features)) shows how to use a QnA Maker dialog to support QnA Maker's follow-up prompt and active learning features.
 
 - QnA Maker supports follow-up prompts, also known as multi-turn prompts.
 If the QnA Maker knowledge base requires an additional response from the user, QnA Maker sends context information that you can use to prompt the user. This information is also used to make any follow-up calls to the QnA Maker service.
