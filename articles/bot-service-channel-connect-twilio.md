@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 10/9/2018
+ms.date: 07/20/2021
 ---
 
 # Connect a bot to Twilio
@@ -16,11 +16,16 @@ ms.date: 10/9/2018
 
 You can configure your bot to communicate with people using the Twilio cloud communication platform.
 
-## Log in to or create a Twilio account for sending and receiving SMS messages
+
+## Connect a bot to Twilio using the Azure portal
+
+To configure a bot to communicate using Twilio, create a TwilML application and then connect the bot.
+
+To learn more about developing for Twilio, see the [Twilio SMS](https://www.twilio.com/docs/sms) documentation.
+
+### Create a TwiML Application
 
 If you don't have a Twilio account, create a [new account](https://www.twilio.com/try-twilio).
-
-## Create a TwiML Application
 
 Create a [TwiML application](https://support.twilio.com/hc/articles/223180928-How-Do-I-Create-a-TwiML-App-) following the instructions.
 
@@ -28,13 +33,13 @@ Create a [TwiML application](https://support.twilio.com/hc/articles/223180928-Ho
 
 Under **Properties**, enter a **FRIENDLY NAME**. In this tutorial we use "My TwiML app" as an example. The **REQUEST URL** under Voice can be left empty. Under **Messaging**, the **Request URL** should be `https://sms.botframework.com/api/sms`.
 
-## Select or add a phone number
+### Select or add a phone number
 
 Follow the instruction in the [Twilio documentation](https://support.twilio.com/hc/articles/223180048-Adding-a-Verified-Phone-Number-or-Caller-ID-with-Twilio) to add a verified caller ID via the console site. After you finish, you will see your verified number in **Active Numbers** under **Manage Numbers**.
 
 ![Set phone number](media/channels/twi-StepPhone.png)
 
-## Specify application to use for Voice and Messaging
+### Specify application to use for Voice and Messaging
 
 Click the number and go to **Configure**. Under both Voice and Messaging, set **CONFIGURE WITH** to be TwiML App and set **TWIML APP** to be My TwiML app. After you finish, click **Save**.
 
@@ -45,13 +50,13 @@ Go back to **Manage Numbers**, you will see the configuration of both Voice and 
 ![Specified number](media/channels/twi-StepPhone3.png)
 
 
-## Gather credentials
+### Gather credentials
 
 Go back to the [console homepage](https://www.twilio.com/console/), you will see your Account SID and Auth Token on the project dashboard, as shown below.
 
 ![Gather app credentials](media/channels/twi-StepAuth.png)
 
-## Submit credentials
+### Submit credentials
 
 In a separate window, return to the Bot Framework site at https://dev.botframework.com/. 
 
@@ -82,7 +87,7 @@ As well as the channel available in the Azure Bot Service to connect your bot wi
 
 2. Choose **Programmable Voice** from the options under **Get Started with Twilio**.
 
-![Get started with Programmable Voice](media/bot-service-channel-connect-twilio/get-started-voice.png)
+    ![Get started with Programmable Voice](media/bot-service-channel-connect-twilio/get-started-voice.png)
 
 3. On the next page, click the **Get your first Twilio number** button.  A pop-up window will show you a new number, which you can accept by clicking **Choose this number** (alternatively you can search for a different number by following the on screen instructions).
 
@@ -212,15 +217,15 @@ The final step is to configure your new Twilio number's messaging endpoint, to e
 
 1. Navigate to the Twilio [Active Numbers page](https://www.twilio.com/console/phone-numbers/incoming).
 
-2. Click the phone number you created in the earlier step.
+1. Click the phone number you created in the earlier step.
 
-3. Within the **Messaging** section, complete the **A MESSAGE COMES IN** section by choosing **Webhook** from the drop down and populating the text box with your bot's endpoint that you used to populate the **TwilioValidationUrl** setting in the previous step, such as `https://yourboturl.com/api/twilio`.
+1. Within the **Messaging** section, complete the **A MESSAGE COMES IN** section by choosing **Webhook** from the drop down and populating the text box with your bot's endpoint that you used to populate the **TwilioValidationUrl** setting in the previous step, such as `https://yourboturl.com/api/twilio`.
 
-![Configure Twilio number webhook](media/bot-service-channel-connect-twilio/twilio-number-messaging-settings.png)
+    ![Configure Twilio number webhook](media/bot-service-channel-connect-twilio/twilio-number-messaging-settings.png)
 
-4. Click the **Save** button.
+1. Click the **Save** button.
 
-### Test your bot with adapter in Twilio
+## Test your bot in Twilio
 
 You can now test whether your bot is connected to Twilio correctly by sending an SMS message to your Twilio number.  Once the message is received by your bot it will send a message back to you, echoing the text from your message.
 
