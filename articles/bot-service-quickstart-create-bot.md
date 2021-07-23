@@ -131,8 +131,25 @@ Yeoman is a tool for creating applications. For more information, see [yeoman.io
 - [Bot Framework Emulator][Emulator]
 - Knowledge of asynchronous programming in Python
 
-> [!TIP]
-> Some developers may find it useful to create Python bots in a [virtual environment][virtual-environment]. The steps below will work regardless if you're developing in a virtual environment or on your local machine.
+### Create and enable a virtual environment
+
+A virtual environment is a combination of a specific Python interpreter and libraries that are different from your global settings. The virtual environment is specific to a project and is maintained in the project folder. A benefit to using a virtual environment is that as you develop a project over time, the virtual environment always reflects the project's exact dependencies. To learn more about virtual environments, see [Creation of virtual environments](https://docs.python.org/3/library/venv.html).
+
+Navigate to the directory where you want to create your bot. Then run the following commands for your preferred platform. After you activate your virtual environment, your command line/terminal should be prefaced with `(venv)`. This lets you know that the virtual environment is active. You can deactivate your virtual environment at any time by typing: `deactivate`.
+
+**macOS/Linux**
+
+```commandline
+python3 -m venv venv
+source venv/bin/activate
+```
+
+**Windows**
+
+```commandline
+python -m venv venv
+venv\Scripts\activate.bat
+```
 
 ### Templates
 
@@ -145,13 +162,10 @@ pip install aiohttp
 pip install cookiecutter==1.7.0
 ```
 
-The last package, **cookiecutter**, will be used to generate your bot.
-
 [3.6]: https://www.python.org/downloads/release/python-369/
 [3.7]: https://www.python.org/downloads/release/python-375/
 [3.8]: https://www.python.org/downloads/release/python-383/
 [Emulator]: https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md
-[virtual-environment]:https://docs.python.org/3/library/venv.html
 
 ---
 
@@ -185,11 +199,11 @@ The generator supports a number of command line options that can be used to chan
 
 | Command&nbsp;line&nbsp;Option  | Description |
 | ------------------- | ----------- |
-| --help, -h        | List help text for all supported command-line options |
-| --botName, -N     | The name given to the bot project |
-| --packageName, -P | The Java package name to use for the bot |
-| --template, -T    | The template used to generate the project.  Options are `empty`, or `echo`.  See [https://github.com/Microsoft/BotBuilder-Samples/tree/master/generators/generator-botbuilder](https://github.com/Microsoft/BotBuilder-Samples/tree/master/generators/generator-botbuilder) for additional information regarding the different template option and their functional differences. |
-| --noprompt        | The generator will not prompt for confirmation before creating a new bot.  Any requirement options not passed on the command line will use a reasonable default value.  This option is intended to enable automated bot generation for testing purposes. |
+| `--help, -h`        | List help text for all supported command-line options |
+| `--botName, -N`     | The name given to the bot project |
+| `--packageName, -P` | The Java package name to use for the bot |
+| `--template, -T`    | The template used to generate the project. Options are `empty` or `echo`. See [https://github.com/Microsoft/BotBuilder-Samples/tree/master/generators/generator-botbuilder](https://github.com/Microsoft/BotBuilder-Samples/tree/master/generators/generator-botbuilder) for additional information regarding the different template options and their functional differences. |
+| `--noprompt`       | The generator will not prompt for confirmation before creating a new bot. Any requirement options not passed on the command line will use a reasonable default value. This option is intended to enable automated bot generation for testing purposes. |
 
 Thanks to the template, your project contains all the code that's necessary to create the bot in this quickstart. You don't need any additional code to test your bot.
 
@@ -227,18 +241,17 @@ Thanks to the template, your project contains all the code that's necessary to c
 
 ### [Python](#tab/python)
 
-To create your bot, navigate to the directory you want to create your bot. Then run the following command:
+1. From your working directory, run the following command to download the [echo bot][echo-template] template and its dependencies:
 
-```console
-cookiecutter https://github.com/microsoft/BotBuilder-Samples/releases/download/Templates/echo.zip
-```
+   ```console
+   cookiecutter https://github.com/microsoft/BotBuilder-Samples/releases/download/Templates/echo.zip
+   ```
 
-This command copies all needed files from GitHub to create an Echo Bot based on the Python [echo template][echo-template]. You will be prompted for the name of the bot and a description. Enter the following values:
+2. You'll be prompted to give your bot a name and description. Enter the following values:
+   - **bot_name**: **echo-bot**
+   - **bot_description**: **A bot that echoes back user response.**
 
-- **bot_name**: **echo-bot**
-- **bot_description**: **A bot that echoes back user response.**
-
-  ![set name and description](media/python/quickstart/set-name-description.png)
+   ![set name and description](media/python/quickstart/set-name-description.png)
 
 > [!div class="nextstepaction"]
 > [I created an echo bot](#start-your-bot) [I ran into an issue](https://microsoft.qualtrics.com/jfe/form/SV_6D4KLPZc2jTIa2O?Product=BotSDK&Page=bot-service-quickstart-create-bot&Section=create-a-bot&PLanguage=Python)
@@ -293,13 +306,19 @@ At this point, your bot is running locally on port 3978.
 
 ### [Python](#tab/python)
 
-1. From a terminal navigate to the **echo-bot** folder where you saved your bot. Run the following command to install any required packages to run your bot.
+1. From the command line/terminal, change directories to `echo-bot`.
+
+   ```console
+   cd echo-bot
+   ```
+
+1. Install the dependencies for the echo bot template.
 
     ```console
     pip install -r requirements.txt 
     ```
 
-1. Once the packages are installed run the following to  to start your bot:
+1. After the dependencies are installed, run the following command to start your bot:
 
     ```console
     python app.py
@@ -309,7 +328,7 @@ At this point, your bot is running locally on port 3978.
 
     ![bot running locally](media/python/quickstart/bot-running-locally.png)
 
-Copy the last for digits in the address on the last line (usually _3978_) since you will be using them in the next step. You are now ready to start the Emulator.
+1. Copy the last for digits in the address on the last line, usually **3978**; you'll need these when you use the Emulator to interact with your bot.
 
 > [!div class="nextstepaction"]
 > [I started the echo bot](#start-the-emulator-and-connect-your-bot) [I ran into an issue](https://microsoft.qualtrics.com/jfe/form/SV_6D4KLPZc2jTIa2O?Product=BotSDK&Page=bot-service-quickstart-create-bot&Section=start-your-bot&PLanguage=Python)
@@ -319,10 +338,8 @@ Copy the last for digits in the address on the last line (usually _3978_) since 
 ## Start the Emulator and connect your bot
 
 1. Start the Bot Framework Emulator.
-
 1. Select **Open Bot** on the Emulator's **Welcome** tab.
-
-1. Enter your bot's URL, which is the URL of the local port, with `/api/messages` added to the path, typically `http://localhost:3978/api/messages`.
+1. Enter your bot's URL, which is your local host and port, with `/api/messages` added to the path. The address is usually: `http://localhost:3978/api/messages`.
 
    <!--This is the same process in the Emulator for all three languages.-->
 
@@ -335,7 +352,7 @@ Copy the last for digits in the address on the last line (usually _3978_) since 
     :::image type="content" source="media/quickstart/emulator-hello-echo.png" alt-text="echo message":::
 
 > [!div class="nextstepaction"]
-> [Next steps](#next-steps) [I ran into an issue](https://microsoft.qualtrics.com/jfe/form/SV_6D4KLPZc2jTIa2O?Product=BotSDK&Page=bot-service-quickstart-create-bot&Section=start-the-emulator-and-connect-your-bot)
+> [I started the emulator and connected to my bot](#next-steps) [I ran into an issue](https://microsoft.qualtrics.com/jfe/form/SV_6D4KLPZc2jTIa2O?Product=BotSDK&Page=bot-service-quickstart-create-bot&Section=start-the-emulator-and-connect-your-bot)
 
 ## Additional Resources
 
