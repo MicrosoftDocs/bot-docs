@@ -1,23 +1,23 @@
 ---
-title: Create a bot with the Bot Framework SDK - Bot Service
-description: Learn how to create a bot using the Bot Framework SDK.
+title: Create a bot with the Bot Framework SDK in C#, Java, JavaScript, Python - Bot Service
+description: Create your first bot with the Bot Framework SDK using C#, Java, JavaScript or Python.
 keywords: quickstart, create bot, web app bot, c#, python, javascript, java
 author: kamrani
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 07/06/2021
-ms.custom: mode-api
+ms.date: 07/26/2021
+ms.custom: mode-api, tab-zone-seo
 ---
 
-# Create a bot
+# Create a bot with the Bot Framework SDK
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-This article shows you how to build a bot by using the Bot Framework SDK, and then shows how to test it with the Bot Framework Emulator.
+In this quickstart, you'll learn how to build your first bot with the Bot Framework SDK for C#, Java, JavaScript or Python, and how to test your bot with the Bot Framework Emulator.
 
-Creating a bot with Azure Bot Service and creating a bot locally are independent, parallel ways to create a bot.
+Creating your first bot doesn't require an Azure subscription or an Azure Bot Service resource. This quickstart focuses on creating your first bot locally. If you'd like to learn how to create a bot in Azure, see [Create an Azure Bot resource](./v4sdk/abs-quickstart.md).
 
 ## Prerequisites
 
