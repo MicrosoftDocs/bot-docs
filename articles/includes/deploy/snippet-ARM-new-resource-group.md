@@ -16,7 +16,7 @@ This step can take a few minutes to complete.
 |:---------|:------------|
 | name | The deployment name.|
 | template-file | The path to the ARM template. Usually, the `template-with-new-rg.json` file is provided in the `deploymentTemplates` folder of the bot project. This is a path to an existing template file. It can be an absolute path, or relative to the current directory. All bot templates generate ARM template files.|
-| location |Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=<location>`. |
+| location |Location. Values from: `az account list-locations`. You can configure the default location using `az config set defaults.location=<location>`. |
 | parameters | Deployment parameters, provided as a list of key=value pairs. Enter the following parameter values:
 
 - `appId` - The *app id* value from the JSON output generated in the [create the application registration](#create-the-azure-application-registration) step.
