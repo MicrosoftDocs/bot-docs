@@ -1,31 +1,31 @@
-At this point we are ready to deploy the code to the Azure Web App. 
+At this point, we are ready to deploy the code to the Azure Web App.
 
-# [C#/JavaScript/TypeScript/Python](#tab/csharp+javascript+typescript+python)
- 
+### [C# / JavaScript / TypeScript / Python](#tab/csharp+javascript+typescript+python)
+
 Run the following command from the command line to perform deployment using the kudu zip push deployment for a web app.
 
-```cmd
+```azurecli
 az webapp deployment source config-zip --resource-group "<resource-group-name>" --name "<name-of-web-app>" --src "<project-zip-path>"
 ```
 
-| Option   | Description |
-|:---------|:------------|
+| Option         | Description                                                  |
+|:---------------|:-------------------------------------------------------------|
 | resource-group | The name of the Azure resource group that contains your bot. |
-| name | Name of the Web App you used earlier. |
-| src  | The path to the zipped project file you created. |
+| name           | Name of the Web App you used earlier.                        |
+| src            | The path to the zipped project file you created.             |
 
-# [Java](#tab/java)
+### [Java](#tab/java)
 
 In the project directory, run the following command from the command line.
 
-```cmd
+```console
 mvn azure-webapp:deploy -Dgroupname="<resource-group-name>" -Dbotname="<name-of-web-app>"
 ```
 
-| Option   | Description |
-|:---------|:------------|
+| Option     | Description                                                  |
+|:-----------|:-------------------------------------------------------------|
 | Dgroupname | The name of the Azure resource group that contains your bot. |
-| Dbotname | Name of the Web App you used earlier. |
+| Dbotname   | Name of the Web App you used earlier.                        |
 
 ---
 

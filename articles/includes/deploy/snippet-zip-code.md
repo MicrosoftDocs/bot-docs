@@ -1,4 +1,4 @@
-# [C#/JavaScript/TypeScript/Python](#tab/csharp+javascript+typescript+python)
+### [C# / JavaScript / TypeScript / Python](#tab/csharp+javascript+typescript+python)
 
 When using the non-configured [zip deploy API](https://github.com/projectkudu/kudu/wiki/Deploying-from-a-zip-file-or-url) to deploy your bot's code, Web App/Kudu's behavior is as follows:
 
@@ -16,11 +16,11 @@ It is important to include your built code with all necessary dependencies in th
 >
 > **Within** the project folder, make sure you select all the files and folders before running the command to create the zip file. This will create a single zip file within the project folder. If your root folder location is incorrect, the **bot will fail to run in the Azure portal**.
 
-# [Java](#tab/java)
+### [Java](#tab/java)
 
 In the project directory, run the following command from the command line.
 
-```cmd
+```console
 mvn clean package
 ````
 

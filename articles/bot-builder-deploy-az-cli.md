@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 07/15/2021
+ms.date: 07/26/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -26,6 +26,8 @@ This article demonstrates how to deploy a basic bot to Azure. It explains how to
 
 ## Prepare for deployment
 
+This article assumes that you have a bot ready to be deployed. For information on how to create a simple echo bot, see [Create a bot with the Bot Framework SDK](bot-service-quickstart-create-bot.md). You can also use one of the samples provided in the [Bot Framework Samples](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md) repository.
+
 [!INCLUDE [deploy prepare intro](includes/deploy/snippet-prepare-deploy-intro.md)]
 
 ### Log in to Azure
@@ -36,11 +38,13 @@ This article demonstrates how to deploy a basic bot to Azure. It explains how to
 
 [!INCLUDE [deploy az subscription](includes/deploy/snippet-az-set-subscription.md)]
 
-### Create the application registration
+<a id="create-app-registration"></a>
+
+### Create an app registration
 
 [!INCLUDE [deploy create app registration](includes/deploy/snippet-create-app-registration.md)]
 
-### Create the bot application service
+### Deploy via ARM template
 
 When creating the bot application service, you can deploy your bot in a new or in an existing resource group, both via the [Azure Resource Manager (ARM) template](/azure/azure-resource-manager/templates/overview). An ARM template is a JSON file that declaratively defines one or more Azure resources and that defines dependencies between the deployed resources. Make sure that you have the correct path to your bot project ARM deployment templates directory `DeploymentTemplates`, you need it to assign the value to the template file. Choose the option that works best for you:
 
@@ -65,15 +69,15 @@ When creating the bot application service, you can deploy your bot in a new or i
 
 [!INCLUDE [assign app ID and password](includes/deploy/snippet-assign-appid-password.md)]
 
-### Prepare project
+### Retrieve or create necessary IIS/Kudu files
 
 [!INCLUDE [prepare project](includes/deploy/snippet-IIS-Kudu-files.md)]
 
-### Package project
+### Zip up the code directory manually
 
 [!INCLUDE [package project](includes/deploy/snippet-zip-code.md)]
 
-## Deploy code to Azure
+## Deploy bot to Azure
 
 [!INCLUDE [deploy code to Azure](includes/deploy/snippet-deploy-code-to-az.md)]
 

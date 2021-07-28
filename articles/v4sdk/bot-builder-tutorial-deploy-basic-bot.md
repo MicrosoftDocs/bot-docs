@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 03/24/2021
+ms.date: 07/26/2021
 ---
 
 # Tutorial: Deploy a basic bot
@@ -21,10 +21,11 @@ It would be useful if you read this article before following the steps, so that 
 - If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
 You will learn how to:
+
 > [!div class="checklist"]
-> * Prepare a basic bot for deployment
-> * Deploy the bot to Azure
-> * Test it using Web Chat
+> - Prepare a basic bot for deployment
+> - Deploy the bot to Azure
+> - Test it using Web Chat
 
 > [!IMPORTANT]
 > Make sure you are using the latest version of the [Azure CLI](/cli/azure/). If you are using an Azure CLI version older than [2.2.0](https://github.com/MicrosoftDocs/azure-docs-cli/blob/master/docs-ref-conceptual/release-notes-azure-cli.md#march-10-2020), you will encounter errors of CLI commands deprecation. Also, do not mix Azure CLI deployment shown in this article with Azure portal deployment.
@@ -35,11 +36,11 @@ You will learn how to:
 
 ## Prepare for deployment
 
-This article assumes that you have a bot ready to be deployed. For information on how to create a simple echo bot, see the [Tutorial: Create a basic bot](bot-builder-tutorial-create-basic-bot.md) article. You can also use one of the samples provided in the [Bot Framework Samples](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md) repository.
+This article assumes that you have a bot ready to be deployed. For information on how to create a simple echo bot, see [Create a bot with the Bot Framework SDK](../bot-service-quickstart-create-bot.md). You can also use one of the samples provided in the [Bot Framework Samples](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md) repository.
 
 [!INCLUDE [deploy prepare intro](../includes/deploy/snippet-prepare-deploy-intro.md)]
 
-### 1. Login to Azure
+### 1. Log in to Azure
 
 [!INCLUDE [deploy az login](../includes/deploy/snippet-az-login.md)]
 
@@ -47,7 +48,9 @@ This article assumes that you have a bot ready to be deployed. For information o
 
 [!INCLUDE [deploy az subscription](../includes/deploy/snippet-az-set-subscription.md)]
 
-### 3. Create an App registration
+<a id="create-app-registration"></a>
+
+### 3. Create an app registration
 
 [!INCLUDE [deploy create app registration](../includes/deploy/snippet-create-app-registration.md)]
 
@@ -61,11 +64,11 @@ When creating the bot application service, you can deploy your bot in a new or i
 > [!IMPORTANT]
 > Python bots can't be deployed to a resource group that contains Windows services/bots. Multiple Python bots can be deployed to the same resource group, but you need to create other services (LUIS, QnA, and so on) in another resource group.
 
-##### **Deploy via ARM template with new Resource Group**
+#### Deploy via ARM template with new Resource Group
 
 [!INCLUDE [ARM with new resource group](../includes/deploy/snippet-ARM-new-resource-group.md)]
 
-##### **Deploy via ARM template with existing Resource Group**
+#### Deploy via ARM template with existing Resource Group
 
 [!INCLUDE [ARM with existing resource group](../includes/deploy/snippet-ARM-existing-resource-group.md)]
 
@@ -79,11 +82,11 @@ For these steps, the bot's _project folder_ is the root folder for the bot.
 - For TypeScript bots, it is the folder that includes the _src_ folder (where the bot.ts and index.ts files are).
 - For Python bots, it is the folder that has the app.py file.
 
-#### **Retrieve or create necessary IIS/Kudu files**
+#### Retrieve or create necessary IIS/Kudu files
 
 [!INCLUDE [retrieve or create IIS/Kudu files](../includes/deploy/snippet-IIS-Kudu-files.md)]
 
-#### **Zip up the code directory manually**
+#### Zip up the code directory manually
 
 [!INCLUDE [zip up code](../includes/deploy/snippet-zip-code.md)]
 

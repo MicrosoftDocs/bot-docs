@@ -2,7 +2,7 @@
 - A C#, JavaScript, TypeScript, Java, or Python bot that you have developed on your local machine.
 - Latest version of the [Azure CLI](/cli/azure/install-azure-cli).
 - Familiarity with [Azure CLI and ARM templates](/azure/azure-resource-manager/resource-group-overview).
-- Installed [Maven](https://maven.apache.org/), for Java only. 
+- Installed [Maven](https://maven.apache.org/), for Java only.
 
 <!-- - If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
 - Install the latest version of the [Azure cli tool](/cli/azure/install-azure-cli).
