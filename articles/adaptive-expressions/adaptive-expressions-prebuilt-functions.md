@@ -6058,7 +6058,7 @@ xPath('<xml>', '<xpath>')
 This example finds nodes that match the `<name></name>` node in the specified arguments, and returns an array with those node values:
 
 ```
-xpath(items, '/produce/item/name')
+xPath(items, '/produce/item/name')
 ```
 
 The arguments include the **items** string, which contains this XML:
@@ -6078,7 +6078,7 @@ Here's the resulting array with the nodes that match `<name></name>`:
 Following example 1, this example finds nodes that match the `<count></count>` node and adds those node values with the [sum()](#sum) function:
 
 ```
-xpath(xml(parameters('items')), 'sum(/produce/item/count)')
+xPath(xml(parameters('items')), 'sum(/produce/item/count)')
 ```
 
 And returns the result **30**.
