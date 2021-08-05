@@ -7,7 +7,7 @@ ms.author: jameslew
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 07/21/2020
+ms.date: 08/03/2021
 ---
 
 # Compliance in Azure Bot Service 
@@ -31,18 +31,18 @@ Azure Bot Service is continually expanding its certification coverage. Currently
 
 | Globally applicable  | US Government  | Industry specific | Region or country specific |
 | :--- | :--- | :---| :---|
-| CSA STAR Certification  | DoD SRG Level 2  | HIPAA BAA | Australia IRAP |
-| CSA STAR Attestation | FedRAMP Moderate | HITRUST | Germany C5 |
-| ISO 20000-1:2011 | GxP (FDA 21 CFR Part 11) | PCI DSS Level 1 | UK G-Cloud |
-| ISO 22301:2012 | | WCAG 2.0 | |
+| CSA STAR Certification  | [Chapter 508](/compliance/regulatory/offering-Section-508-VPATS)  | HIPAA BAA | Australia IRAP |
+| CSA STAR Attestation | DoD SRG Level 2 | HITRUST | [EN 301 549](/compliance/regulatory/offering-en-301-549-eu) |
+| ISO 20000-1:2011 | FedRAMP Moderate | PCI DSS Level 1 |Germany C5 |
+| ISO 22301:2012 |GxP (FDA 21 CFR Part 11) | [WCAG 2.1](https://cloudblogs.microsoft.com/industry-blog/government/2018/09/11/accessibility-conformance-reports/) |UK G-Cloud |
 | ISO 27001:2013 | | | |
 | ISO 27017:2015 | | | |
 | ISO 27018:2014 | | | |
 | ISO 9001:2015  | | | |
 | SOC 1, 2, 3 | | | |
 
-To learn more about each of these compliance offerings and how they benefit you, see [Overview of Microsoft Azure compliance](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942) 
-page. 
+To learn more about each of these compliance offerings and how they benefit you, see [Microsoft compliance offerings](/compliance/regulatory/offering-home) page. 
+In particular, see [FedRAMP](/compliance/regulatory/offering-fedramp) and [WCAG](https://cloudblogs.microsoft.com/industry-blog/government/2018/09/11/accessibility-conformance-reports/). 
 
 The following table lists the certifications supported by Azure Bot Service in Azure Government: 
 
