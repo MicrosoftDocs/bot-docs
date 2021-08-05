@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 05/19/2020
+ms.date: 08/05/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -360,7 +360,7 @@ And returns the result **2018-03-10T00:00:00.000Z**.
 
 *Example 3*
 
-This examples adds **1** day to the specified timestamp in the **de-DE** locale:
+This example adds **1** day to the specified timestamp in the **de-DE** locale:
 
 ```
 addDays('2018-03-15T13:00:00.000Z', 1, '', 'de-dE')
@@ -413,7 +413,7 @@ And returns the result **2018-03-15T10:00:00.000Z**.
 
 *Example 3*
 
-This examples adds **2** hours to the specified timestamp in the **de-DE** locale:
+This example adds **2** hours to the specified timestamp in the **de-DE** locale:
 
 ```
 addHours('2018-03-15T13:00:00.000Z', 2, '', 'de-DE')
@@ -466,7 +466,7 @@ And returns the result **2018-03-15T00:15:00.000Z**.
 
 *Example 3*
 
-This examples adds **30** minutes to the specified timestamp in the **de-DE** locale:
+This example adds **30** minutes to the specified timestamp in the **de-DE** locale:
 
 ```
 addMinutes('2018-03-15T00:00:00.000Z', 30, '', 'de-DE')
@@ -732,10 +732,9 @@ all(<sequence>, <item>, <condition>)
 | <*condition*> | Yes | expression | The expression to evaluate the condition. |
 |||||
 
-
 | Return value | Type | Description |
 | ------------ | -----| ----------- |
-| true or false | Boolean | Return `true` if any elements satisfies the condition. Return `false` if at least one doesn't. |
+| true or false | Boolean | Return `true` if all elements satisfy the condition. Return `false` if at least one doesn't. |
 ||||
 
 *Examples*
@@ -813,7 +812,7 @@ And returns the result **"aGVsbG8="**.
 
 *Example 2*
 
-This examples takes byteArr, which equals **new byte[] { 3, 5, 1, 12 }**:
+This example takes byteArr, which equals **new byte[] { 3, 5, 1, 12 }**:
 
 ```
 base64('byteArr')
@@ -1073,7 +1072,7 @@ And return the following results respectively:
 
 *Example 4*
 
-These example combine objects will `null`:
+These examples combine objects will `null`:
 
 ```
 concat([1,2], null)
@@ -1621,7 +1620,7 @@ div(11, 5)
 
 And return the result **2**.
 
-If one of the parameters is a float, the result will be also be a float.
+If one of the parameters is a float, the result will also be a float.
 
 *Example*
 
@@ -2067,7 +2066,7 @@ And returns the result **15.03.18 00:00:00**.
 
 ### formatEpoch
 
-Return a timestamp in an optional locale format  in the specified format from UNIX time (also know as Epoch time, POSIX time, UNIX Epoch time).
+Return a timestamp in an optional locale format in the specified format from UNIX time (also know as Epoch time, POSIX time, UNIX Epoch time).
 
 ```
 formatEpoch('<epoch>', '<format>'?, '<locale>'?)
@@ -3350,7 +3349,7 @@ isTime('<input>')
 
 *Examples*
 
-These examples check if the following input referes to a valid time:
+These examples check if the following input refers to a valid time:
 
 ```
 isTime('PT30M')
@@ -3441,12 +3440,12 @@ jPath(<json>, '<path>')
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*json*> | Yes | any | The JSON object or string to search for nodes or values that match the path expression value |
-| <*path*> | Yes | any | The path expression used to find matching JSONnodes or values |
+| <*path*> | Yes | any | The path expression used to find matching JSON nodes or values |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-|[ <*json-node*>] | array | An list of JSON nodes or value that matches the specified path expression |
+|[ <*json-node*>] | array | A list of JSON nodes or values that matches the specified path expression |
 ||||
 
 *C# Example*
@@ -3848,9 +3847,6 @@ max(createArray(1, 2, 3))
 
 And return the result **3**.
 
-
-<a min="merge"></a>
-
 ### merge
 
 ```
@@ -3873,15 +3869,15 @@ Say you have the following JSON objects:
 
 ```json
 json1 = @"{
-                   'FirstName': 'John',
-                   'LastName': 'Smith',
-                   'Enabled': false,
-                    'Roles': [ 'User' ]
-                   }"
+            'FirstName': 'John',
+            'LastName': 'Smith',
+            'Enabled': false,
+            'Roles': [ 'User' ]
+          }"
 json2 =@"{
-                  'Enabled': true,
-                  'Roles': [ 'User', 'Admin' ]
-                 }"
+            'Enabled': true,
+            'Roles': [ 'User', 'Admin' ]
+          }"
 ```
 
 This example merges the JSON objects:
@@ -5175,7 +5171,7 @@ And returns the result **world**.
 
 ### subtractFromTime
 
-Subtract a number of time units from a timestamp in an optional locale format . See also [getPastTime()](#getPastTime).
+Subtract a number of time units from a timestamp in an optional locale format. See also [getPastTime()](#getPastTime).
 
 ```
 subtractFromTime('<timestamp>', <interval>, '<timeUnit>', '<format>'?, '<locale>'?)
@@ -5313,7 +5309,7 @@ ticks('<timestamp>')
 
 *Example*
 
-The example convert a timestamp to its ticks property
+This example converts a timestamp to its ticks property:
 
 ```
 ticks('2018-01-01T08:00:00.000Z')
@@ -5507,7 +5503,7 @@ And returns the result **hello world**.
 
 ### toUpper
 
-Return a string in uppercase in an optional locale format.. If a character in the string doesn't have an uppercase version, that character stays unchanged in the returned string.
+Return a string in uppercase in an optional locale format. If a character in the string doesn't have an uppercase version, that character stays unchanged in the returned string.
 
 ```
 toUpper('<text>', '<locale>'?)
@@ -5984,7 +5980,7 @@ xml('<value>')
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*value*> | Yes | string | The string with the JSON object to convert The JSON object must have only one root property, which can't be an array. Use **\\** as an escape character for the double quotation mark (").|
+| <*value*> | Yes | string | The string with the JSON object to convert. The JSON object must have only one root property, which can't be an array. Use **\\** as an escape character for the double quotation mark (").|
 ||||
 
 | Return value | Type | Description |
@@ -6050,7 +6046,7 @@ xPath('<xml>', '<xpath>')
 | ------------ | ---- | ----------- |
 | <*xml-node*> | XML | An XML node when only a single node matches the specified XPath expression |
 | <*value*> | any | The value from an XML node when only a single value matches the specified XPath expression |
-<*[<xml-node1>, <xml-node2>, ...] -or- [<value1>, <value2>, ...]*> | array | An array with XML nodes or values that match the specified XPath expression |
+| <*[\<xml-node1>, \<xml-node2>, ...] -or- [\<value1>, \<value2>, ...]*> | array | An array with XML nodes or values that match the specified XPath expression |
 ||||
 
 *Example 1*
@@ -6063,7 +6059,7 @@ xPath(items, '/produce/item/name')
 
 The arguments include the **items** string, which contains this XML:
 
-```
+```xml
 "<?xml version="1.0"?> <produce> <item> <name>Gala</name> <type>apple</type> <count>20</count> </item> <item> <name>Honeycrisp</name> <type>apple</type> <count>10</count> </item> </produce>"
 ```
 

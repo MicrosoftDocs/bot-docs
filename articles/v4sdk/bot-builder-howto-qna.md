@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 07/21/2021
+ms.date: 08/05/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -76,7 +76,7 @@ You can also use these steps to access your own QnA Maker knowledge bases.
    - Host: \<your-host-url>
    - Authorization: EndpointKey \<your-endpoint-key>
 
-Your host URL will start with **https://** and end with **/qnamaker**, such as **https://<hostname>.azure.net/qnamaker**. Your bot will need the knowledge base ID, host URL, and endpoint key to connect to your QnA Maker knowledge base.
+Your host URL will start with `https://` and end with `/qnamaker`, such as `https://<hostname>.azure.net/qnamaker`. Your bot will need the knowledge base ID, host URL, and endpoint key to connect to your QnA Maker knowledge base.
 
 ## Update the settings file
 

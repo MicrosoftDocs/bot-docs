@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 05/31/2019
+ms.date: 08/05/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -494,7 +494,7 @@ The interface for storing _user data_, _conversation data_, and _private convers
 
 State was persisted using an `IBotDataStore` implementation, and injecting it into the dialog state system of the SDK using Autofac.  Microsoft provided `MemoryStorage`, `DocumentDbBotDataStore`, `TableBotDataStore`, and `SqlBotDataStore` classes in [Microsoft.Bot.Builder.Azure](https://github.com/Microsoft/BotBuilder-Azure/).
 
-[IBotDataStore<BotData>](/dotnet/api/microsoft.bot.builder.dialogs.internals.ibotdatastore-1?view=botbuilder-dotnet-3.0&preserve-view=true) was used to persist data.
+[IBotDataStore\<BotData>](/dotnet/api/microsoft.bot.builder.dialogs.internals.ibotdatastore-1?view=botbuilder-dotnet-3.0&preserve-view=true) was used to persist data.
 
 ```csharp
 Task<bool> FlushAsync(IAddress key, CancellationToken cancellationToken);
