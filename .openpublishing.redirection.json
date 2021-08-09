@@ -435,7 +435,7 @@
     },
     {
       "source_path": "articles/bot-service-design-pattern-integrate-browser.md",
-      "redirect_url": "/previous-versions/azure/bot-service/bot-service-design-pattern-integrate-browser",
+      "redirect_url": "/azure/bot-service/bot-builder-concept-authentication-types",
       "redirect_document_id": false,
       "monikers": [
         "azure-bot-service-3.0"
