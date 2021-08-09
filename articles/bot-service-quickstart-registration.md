@@ -5,7 +5,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 04/22/2021
+ms.date: 07/22/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -19,9 +19,14 @@ If the bot is hosted elsewhere, you can also make it available in Azure and conn
 
 > [!IMPORTANT]
 > You only need to register a bot if it is not hosted in Azure.
-Bots created using the Azure portal or the Command Line Interface (CLI) are already registered with the Azure Bot Service. For more information, see [Deploy your bot](bot-builder-deploy-az-cli.md).
+> Bots created using Azure CLI are already registered with the Azure Bot Service.
 
-[!INCLUDE [azure bot resource](includes/azure-bot-resource/azure-bot-resource.md)]
+This article does not describe how to create or deploy the bot to register. For more information see:
+
+- The [Create a bot](bot-service-quickstart-create-bot.md) quickstart
+- The [Deploy a basic bot](bot-builder-deploy-az-cli.md) tutorial
+
+[!INCLUDE [Azure bot resource](includes/azure-bot-resource/azure-bot-resource.md)]
 
 <!-- 
 ## Create a registration application
@@ -76,7 +81,7 @@ Bots created using the Azure portal or the Command Line Interface (CLI) are alre
 
 ## Manual app registration
 
-A manual registration is necessary for situations like:
+A manual registration is necessary when:
 
 - You are unable to make the registrations in your organization and need another party to create the App ID for the bot you're building.
 - You need to manually create your own app ID and password.
@@ -85,28 +90,28 @@ A manual registration is necessary for situations like:
 
 ## Update the bot
 
-# [Csharp](#tab/cshap)
+### [C#](#tab/csharp)
 
 Set the following key values in the `appsettings.json` file:
 
 - `MicrosoftAppId = <appId>`
 - `MicrosoftAppPassword = <appSecret>`
 
-# [Javascript](#tab/javascript)
+### [JavaScript](#tab/javascript)
 
 Set the following environment variables in the `.env` file:
 
 - `MICROSOFT_APP_ID = <appId>`
 - `MICROSOFT_APP_PASSWORD = <appSecret>`
 
-# [Java](#tab/java)
+### [Java](#tab/java)
 
 Set the following environment variables in the `application.properties` file:
 
 - `MicrosoftAppId = <appId>`
 - `MicrosoftAppPassword = <appSecret>`
 
-# [Python](#tab/python)
+### [Python](#tab/python)
 
 Set the following environment variables in the `config.py` file:
 

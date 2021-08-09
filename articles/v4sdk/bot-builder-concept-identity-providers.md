@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 05/10/2021
+ms.date: 07/07/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -114,3 +114,8 @@ Use this provider to configure any generic OAuth 2 service provider when you nee
 [!INCLUDE [generic-provider-oauth2-settings](~/includes/authentication/auth-generic-provider-oauth2-settings.md)]
 
 ---
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Identity providers proxy](bot-builder-concept-identity-providers-proxy.md)

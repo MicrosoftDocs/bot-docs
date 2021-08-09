@@ -435,7 +435,7 @@
     },
     {
       "source_path": "articles/bot-service-design-pattern-integrate-browser.md",
-      "redirect_url": "/previous-versions/azure/bot-service/bot-service-design-pattern-integrate-browser",
+      "redirect_url": "/azure/bot-service/bot-builder-concept-authentication-types",
       "redirect_document_id": false,
       "monikers": [
         "azure-bot-service-3.0"
@@ -2246,6 +2246,11 @@
       "source_path": "articles/v4sdk/skills-write-manifest-2-0.md",
       "redirect_url": "/azure/bot-service/skills-write-manifest",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/what-is-new-archive.md",
+      "redirect_url": "/azure/bot-service/what-is-new",
+      "redirect_document_id": true
     }
   ]
 }

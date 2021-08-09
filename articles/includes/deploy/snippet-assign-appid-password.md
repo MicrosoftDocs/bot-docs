@@ -12,7 +12,7 @@ The `appsettings.json` file contains these settings:
 }
 ```
 
-### [JavaScript](#tab/javascript)
+### [JavaScript / TypeScript](#tab/javascript+typescript)
 
 The `.env` file contains these settings:
 
@@ -42,4 +42,4 @@ APP_PASSWORD = os.environ.get("MicrosoftAppPassword", "<your password>")
 ---
 
 >[!IMPORTANT]
-> After you have updated the configuration file, make sure to clean and rebuild the bot project. 
+> After you have updated the configuration file, make sure to clean and rebuild the bot project.

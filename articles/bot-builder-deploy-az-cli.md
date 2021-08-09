@@ -1,13 +1,13 @@
 ---
 title: Deploy your bot - Bot Service
 description: Learn how to deploy bots to the Azure cloud. See how to prepare bots for deployment, deploy the code to the Azure Web App, and test bots in Web Chat.
-keywords: deploy bot, azure deploy bot, publish bot
+keywords: deploy bot, Azure deploy bot, publish bot
 author: ivorb
 ms.author: kamrani
 manager: kamrani
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 04/27/2021
+ms.date: 07/26/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -15,10 +15,10 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-In this article we will show you how to deploy a basic bot to Azure. We will explain how to prepare your bot for deployment, deploy your bot to Azure, and test your bot in Web Chat. It would be useful to read this article before following the steps, so that you fully understand what is involved in deploying a bot.
+This article demonstrates how to deploy a basic bot to Azure. It explains how to prepare your bot for deployment, deploy your bot to Azure, and test your bot in Web Chat. Read through this article before following the steps, so that you fully understand what is involved in deploying a bot.
 
 > [!IMPORTANT]
-> Make sure you are using the latest version of the [Azure CLI](/cli/azure/). If you are using an Azure CLI version older than [2.2.0](https://github.com/MicrosoftDocs/azure-docs-cli/blob/master/docs-ref-conceptual/release-notes-azure-cli.md#march-10-2020), you will encounter errors of CLI commands deprecation. Also, do not mix Azure CLI deployment shown in this article with Azure portal deployment.
+> Use the latest version of the [Azure CLI](/cli/azure/). If you are using an Azure CLI version older than [2.2.0](https://github.com/MicrosoftDocs/azure-docs-cli/blob/master/docs-ref-conceptual/release-notes-azure-cli.md#march-10-2020), you might encounter errors. Also, don't mix the Azure CLI deployment shown in this article with Azure portal deployment.
 
 ## Prerequisites
 
@@ -26,21 +26,25 @@ In this article we will show you how to deploy a basic bot to Azure. We will exp
 
 ## Prepare for deployment
 
+This article assumes that you have a bot ready to be deployed. For information on how to create a simple echo bot, see [Create a bot with the Bot Framework SDK](bot-service-quickstart-create-bot.md). You can also use one of the samples provided in the [Bot Framework Samples](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md) repository.
+
 [!INCLUDE [deploy prepare intro](includes/deploy/snippet-prepare-deploy-intro.md)]
 
-### Login to Azure
+### Sign in to Azure
 
-[!INCLUDE [deploy az login](includes/deploy/snippet-az-login.md)]
+[!INCLUDE [deploy az log in](includes/deploy/snippet-az-login.md)]
 
 ### Set the subscription
 
 [!INCLUDE [deploy az subscription](includes/deploy/snippet-az-set-subscription.md)]
 
-### Create the application registration
+<a id="create-app-registration"></a>
+
+### Create an app registration
 
 [!INCLUDE [deploy create app registration](includes/deploy/snippet-create-app-registration.md)]
 
-### Create the bot application service
+### Deploy using an ARM template
 
 When creating the bot application service, you can deploy your bot in a new or in an existing resource group, both via the [Azure Resource Manager (ARM) template](/azure/azure-resource-manager/templates/overview). An ARM template is a JSON file that declaratively defines one or more Azure resources and that defines dependencies between the deployed resources. Make sure that you have the correct path to your bot project ARM deployment templates directory `DeploymentTemplates`, you need it to assign the value to the template file. Choose the option that works best for you:
 
@@ -59,22 +63,21 @@ When creating the bot application service, you can deploy your bot in a new or i
 
 [!INCLUDE [ARM with existing resource group](includes/deploy/snippet-ARM-existing-resource-group.md)]
 
-
 ## Prepare your code for deployment
 
-### Assign app Id and password
+### Assign app ID and password
 
-[!INCLUDE [assign app id and password](includes/deploy/snippet-assign-appid-password.md)]
+[!INCLUDE [assign app ID and password](includes/deploy/snippet-assign-appid-password.md)]
 
-### Prepare project
+### Retrieve or create necessary IIS/Kudu files
 
 [!INCLUDE [prepare project](includes/deploy/snippet-IIS-Kudu-files.md)]
 
-### Package project
+### Zip up the code directory manually
 
 [!INCLUDE [package project](includes/deploy/snippet-zip-code.md)]
 
-## Deploy code to Azure
+## Deploy the bot to Azure
 
 [!INCLUDE [deploy code to Azure](includes/deploy/snippet-deploy-code-to-az.md)]
 

@@ -6,7 +6,7 @@ author: JonathanFingold
 ms.author: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 05/12/2021
+ms.date: 08/05/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -147,7 +147,7 @@ The following steps provide you with this key:
     Authorization: EndpointKey <qna-maker-resource-key>
     ```
 
-    The full URL string for your hostname will look like "https://<host-id>.azure.net/qnamaker". These values will later be used within your `appsettings.json` or `.env` file.
+    The full URL string for your hostname will look like `https://<host-id>.azure.net/qnamaker`. These values will later be used within your `appsettings.json` or `.env` file.
 
 ## Dispatch app needs read access to existing apps
 

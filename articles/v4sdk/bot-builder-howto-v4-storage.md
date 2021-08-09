@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 08/27/2020
+ms.date: 07/22/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -30,11 +30,11 @@ You can read and write directly to your storage object without using middleware 
 <!-- Sent email to John Taylor on 1/20/21 about the need to create a sample bot to base
      this article on. As it is currently, this article starts with the EchoBot, then replaces everything in EchoBot.cs. The code demonstrates creating a list by saving the values the user enters into memory, then makes the required code changes to save it into a Cosmos DB database (then a Blob storage database). It is similar to echo bot in that it repeats what you enter, except that it echoes back a list of all previous entries as well. This type of article is difficult to maintain, if the underlying sample it is based off of (EchoBot) changes, it could cause things not to work and there is no great way to tie an article to a sample that is used in this way.  -->
 
-The sample code in this article begins with the structure of a basic echo bot, then extends that bot's functionality by adding additional code (provided below). This extended code creates a list to preserve user inputs as they are received. Each turn, the full list of user inputs, saved to memory, is echoed back to the user. The data structure containing this list of inputs is then modified to save to storage. Various types of storage are explored as additional functionality is added to this sample code.
+The sample code in this article begins with the structure of a basic echo bot, then extends that bot's functionality by adding additional code (provided below). This extended code creates a list to preserve user inputs as they're received. Each turn, the full list of user inputs, saved to memory, is echoed back to the user. The data structure containing this list of inputs is then modified to save to storage. Various types of storage are explored as additional functionality is added to this sample code.
 
 ## Memory storage
 
-The Bot Framework SDK allows you to store user inputs using in-memory storage. Since in-memory storage is cleared each time the bot is restarted, it is best suited for testing purposes and is not intended for production use. Persistent storage types, such as database storage, are best for production bots. <!--Be sure to set storage to **Cosmos DB**, **Blob storage**, or **Azure Table storage** before publishing your bot.-->
+The Bot Framework SDK allows you to store user inputs using in-memory storage. Since in-memory storage is cleared each time the bot is restarted, it's best suited for testing purposes and is not intended for production use. Persistent storage types, such as database storage, are best for production bots. <!--Be sure to set storage to **Cosmos DB**, **Blob storage**, or **Azure Table storage** before publishing your bot.-->
 
 ## Build a basic bot
 
@@ -347,12 +347,12 @@ Now that you've used memory storage, we'll update the code to use Azure Cosmos D
 
 ### Set up a Cosmos DB resource
 
-To use Cosmos DB in your bot, you'll need to create a database resource before getting into the code. For an in-depth description of Cosmos DB database and app creation, see the quickstart for [.Net](/azure/cosmos-db/create-sql-api-dotnet-v4), [Node.js](/azure/cosmos-db/create-sql-api-nodejs) or [Python](/azure/cosmos-db/create-sql-api-python).
+To use Cosmos DB in your bot, you'll need to create a database resource before getting into the code. For an in-depth description of Cosmos DB database and app creation, see the quickstart for [.Net](/azure/cosmos-db/create-sql-api-dotnet-v4), [Node.js](/azure/cosmos-db/create-sql-api-nodejs), or [Python](/azure/cosmos-db/create-sql-api-python).
 
 ### Create your database account
 
 1. Go to the [Azure portal](https://portal.azure.com) to create an Azure Cosmos DB account. Search for and select **Azure Cosmos DB**.
-1. In the **Azure Cosmos DB** page, select **New** to bring up the the **Create Azure Cosmos DB Account** page.
+1. In the **Azure Cosmos DB** page, select **New** to bring up the **Create Azure Cosmos DB Account** page.
 
     ![Create Cosmos DB database account](./media/create-cosmosdb-database.png)
 
@@ -361,7 +361,7 @@ To use Cosmos DB in your bot, you'll need to create a database resource before g
     1. **Resource group**. Select an existing resource group or select **Create new**, and enter a name for a new resource group.
     1. **Account name**. Enter a name to identify your Azure Cosmos account. Because _documents.azure.com_ is appended to the name that you provide to create your URI, use a unique name. Note the following guidelines:
         - The name must be unique across Azure.
-        - The name must be between three and 31 characters long.
+        - The name must be between 3 and 31 characters long.
         - The name can include only lowercase letters, numbers, and the hyphen (-) character.
     1. **API**. Select **Core(SQL)**
     1. **Location**. select a location that is closest to your users to give them the fastest access to the data.
@@ -371,6 +371,7 @@ To use Cosmos DB in your bot, you'll need to create a database resource before g
 The account creation takes a few minutes. Wait for the portal to display the _Congratulations! Your Azure Cosmos DB account was created_ page.
 
 ### Add a database
+
 <!---
 >[!IMPORTANT]
 > Unlike the legacy _Cosmos DB storage_, which has now been deprecated, the _Cosmos DB partitioned storage_ does not automatically create a database within your Cosmos DB account.
@@ -379,12 +380,12 @@ The account creation takes a few minutes. Wait for the portal to display the _Co
 > [!NOTE]
 > You should not create the container yourself. Your bot will create it for you when creating its internal Cosmos DB client, ensuring it is configured correctly for storing bot state.
 
-1. Navigate to the **Data Explorer** page within your newly created Cosmos DB account, then choose **New Database** from the **New Container** drop-down. A panel will then open on the right hand side of the window, where you can enter the details for the new database.
+1. Navigate to the **Data Explorer** page within your newly created Cosmos DB account, then choose **New Database** from the **New Container** drop-down. A panel will then open on the right-hand side of the window, where you can enter the details for the new database.
 
     ![Create Cosmos DB database resource image](./media/create-cosmosdb-database-resource.png)
 
 1. Enter an ID for your new database and, optionally, set the throughput (you can change this later) and finally select **OK** to create your database. Make a note of this database ID for use later on when configuring your bot.
-1. Now that you have created a Cosmos DB account and a database, you need to copy over some of the values for integrating your new database into your bot.  To retrieve these, navigate to the **Keys** tab within the database settings section of your Cosmos DB account.  From this page you will need your **URI** (_Cosmos DB endpoint_) and your **PRIMARY KEY** (_authorization key_).
+1. Now that you have created a Cosmos DB account and a database, you need to copy over some of the values for integrating your new database into your bot.  To retrieve these, navigate to the **Keys** tab within the database settings section of your Cosmos DB account.  From this page, you will need your **URI** (_Cosmos DB endpoint_) and your **PRIMARY KEY** (_authorization key_).
 
     ![Cosmos DB Keys](./media/cosmos-db-keys-legend.png)
 
@@ -396,7 +397,7 @@ You should now have a Cosmos DB account with a database and the following values
 
 ### Add Cosmos DB configuration information
 
-Use the details you made a note of in the previous part of this article to set your endpoint, authorization key and database ID.  Finally, you should choose an appropriate name for the container that will be created within your database to store your bot state. In the example below the Cosmos DB container that is created will be named "bot-storage".
+Use the details you made a note of in the previous part of this article to set your endpoint, authorization key, and database ID. Finally, you should choose an appropriate name for the container that will be created within your database to store your bot state. In the example below the Cosmos DB container that is created will be named "bot-storage".
 
 ### [C#](#tab/csharp)
 
@@ -450,7 +451,7 @@ Install the **Microsoft.Bot.Builder.Azure** NuGet package. For more information 
 
 ### [JavaScript](#tab/javascript)
 
-Add a references to **botbuilder-azure** using npm.
+Add a reference to **botbuilder-azure** using npm.
 <!-- Email sent to Steven Gum and Josh Gummersall to validate the following note is correct. I was able to run through this scenario without Python installed, ao I am removing this.
 > [!NOTE]
 > This npm package relies on an installation of Python existing on your development machine. If you have not previously installed Python you can find installation resources for your machine at [python.org](https://www.python.org/downloads/).
@@ -468,7 +469,7 @@ npm install --save dotenv
 
 ### [Python](#tab/python)
 
-You can add a references to botbuilder-azure in your project via pip.
+You can add a reference to botbuilder-azure in your project via pip.
 
 ```Console
 pip install botbuilder-azure
@@ -481,7 +482,7 @@ pip install botbuilder-azure
 > [!NOTE]
 > Version 4.6 introduced a new Cosmos DB storage provider, the _Cosmos DB partitioned storage_ class, and the original _Cosmos DB storage_ class is deprecated. Containers created with _Cosmos DB storage_ can be used with _Cosmos DB partitioned storage_. Read [Partitioning in Azure Cosmos DB](/azure/cosmos-db/partitioning-overview) for more information.
 >
-> Also note that, unlike the legacy Cosmos DB storage, the Cosmos DB partitioned storage does not automatically create a database within your Cosmos DB account. You need to [create a new database manually](/azure/cosmos-db/create-cosmosdb-resources-portal), but skip manually creating a container since _CosmosDbPartitionedStorage_ will create the container for you.
+> Unlike the legacy Cosmos DB storage, the Cosmos DB partitioned storage does not automatically create a database within your Cosmos DB account. You need to [create a new database manually](/azure/cosmos-db/create-cosmosdb-resources-portal), but skip manually creating a container since _CosmosDbPartitionedStorage_ will create the container for you.
 
 ### [C#](#tab/csharp)
 
@@ -537,7 +538,7 @@ const ENV_FILE = path.join(__dirname, '.env');
 require('dotenv').config({ path: ENV_FILE });
 ```
 
-Next, you will need to make changes to **index.js** to use Cosmos DB partitioned storage instead of the Bot Frameworks internal storage. Note that all the code changes in this section are made in **index.js**.
+Next, you will need to make changes to **index.js** to use Cosmos DB partitioned storage instead of the Bot Frameworks internal storage. All the code changes in this section are made in **index.js**.
 
 First, add a reference to `botbuilder-azure` in **index.js**. This will give you access to the `BlobStorage` API:
 
@@ -568,7 +569,7 @@ const myBot = new EchoBot(myStorage);
 
 The following sample code runs using the same bot code as the [memory storage](#memory-storage) sample provided above, with the exceptions listed here.
 
-Both `CosmosDbPartitionedStorage` and `CosmosDbPartitionedConfig` from `botbuilder-azure` are required create the CosmosDBStorage object.
+Both `CosmosDbPartitionedStorage` and `CosmosDbPartitionedConfig` from `botbuilder-azure` are required to create the CosmosDBStorage object.
 
 **echo_bot.py**
 
@@ -583,7 +584,7 @@ from config import DefaultConfig
 CONFIG = DefaultConfig()
 ```
 
-Comment out Memory Storage in `__init__` and replace with reference to Cosmos DB.  Use the URI (endpoint), Primary key (authorization key), database id and container id used above.
+Comment out Memory Storage in `__init__` and replace with reference to Cosmos DB.  Use the URI (endpoint), Primary key (authorization key), database ID, and container ID used above.
 
 Next, remove or comment out the Memory Storage code in `__init__` and add a reference to your Cosmos DB information from **config.py**.
 
@@ -631,7 +632,7 @@ After you have run your bot and saved your information, we can view the data sto
 
 Azure Blob storage is Microsoft's object storage solution for the cloud. Blob storage is optimized for storing massive amounts of unstructured data, such as text or binary data. This section explains how to create an Azure blob storage account and container, then how to reference your blob storage container from your bot.
 
-For additional information on Blob Storage, see [What is Azure Blob storage?](/azure/storage/blobs/storage-blobs-overview)
+For more information on Blob Storage, see [What is Azure Blob storage?](/azure/storage/blobs/storage-blobs-overview)
 
 ### Create your Blob storage account
 
@@ -639,7 +640,7 @@ To use Blob storage in your bot, you'll need to get a few things set up before g
 
 1. In the [Azure portal](https://portal.azure.com), select **All services**.
 1. In the **Featured** section of the **All services** page, select **Storage accounts**.
-1. In the **Storage accounts** page, select **New****.
+1. In the **Storage accounts** page, select **New**.
 
     ![The Blob create storage account page](./media/blob-storage-new-account.png)
 
@@ -647,7 +648,7 @@ To use Blob storage in your bot, you'll need to get a few things set up before g
 1. In the **Resource group** field, select an existing resource group or select **Create new**, and enter a name for the new resource group.
 1. In the **Storage account name** field, enter a name for the account. Note the following guidelines:
     - The name must be unique across Azure.
-    - The name must be between three and 24 characters long.
+    - The name must be between 3 and 24 characters long.
     - The name can include only numbers and lowercase letters.
 1. In the **Location** field, select a location for the storage account, or use the default location.
 1. For the rest of the settings, configure the following:
@@ -656,7 +657,7 @@ To use Blob storage in your bot, you'll need to get a few things set up before g
     - **Replication**: Leave the default setting. [Learn more about redundancy](/azure/storage/common/storage-redundancy).
 
 1. In the **Project details** section of the **Create storage account** page, select the desired values for **subscription** and **Resource group**.
-1. In the **Instance details** section of the **Create storage account** page, enter the **Storage account name** then select values for **Location**, **Account kind** and **Replication**.
+1. In the **Instance details** section of the **Create storage account** page, enter the **Storage account name** then select values for **Location**, **Account kind**, and **Replication**.
 1. Select **Review + create** to review the storage account settings.
 1. Once validated, select **Create**.
 
@@ -754,7 +755,7 @@ npm install --save dotenv
 
 ### [Python](#tab/python)
 
-you can add a references to botbuilder-azure in your project via pip.
+you can add a reference to botbuilder-azure in your project via pip.
 
 ```Console
 pip install botbuilder-azure
@@ -915,7 +916,7 @@ After you have run your bot and saved your information, we can view it in under 
 
 ## Blob transcript storage
 
-Azure blob transcript storage provides a specialized storage option that allows you to easily save and retrieve user conversations in the form of a recorded transcript. Azure blob transcript storage is particularly useful for automatically capturing user inputs to examine while debugging your bot's performance.
+Azure blob transcript storage provides a specialized storage option that allows you to easily save and retrieve user conversations in the form of a recorded transcript. Azure blob transcript storage is useful for automatically capturing user inputs to examine while debugging your bot's performance.
 
 > [!NOTE]
 > Python does not currently support _Azure Blob transcript storage_.
@@ -934,7 +935,7 @@ Azure blob transcript storage can use the same blob storage account created foll
 
 ### Blob transcript storage implementation
 
-The following code connects transcript storage pointer `_myTranscripts` to your new Azure blob transcript storage account. To create this link with a new container name, \<your-blob-transcript-container-name>, creates a new container within Blob storage to hold your transcript files.
+The following code connects transcript storage pointer `_myTranscripts` to your new Azure blob transcript storage account. To create this link with a new container name, \<your-blob-transcript-container-name>, it creates a new container within Blob storage to hold your transcript files.
 
 _Blob transcript storage_ is designed to store bot transcripts.
 
@@ -957,13 +958,13 @@ public class EchoBot : ActivityHandler
 
 ```
 
-### Store user conversations in azure blob transcripts
+### Store user conversations in Azure blob transcripts
 
 After a blob container is available to store transcripts you can begin to preserve your users' conversations with your bot. These conversations can later be used as a debugging tool to see how users interact with your bot. Each Emulator _Restart conversation_ initiates the creation of a new transcript conversation list. The following code preserves user conversation inputs within a stored transcript file.
 
 - The current transcript is saved using `LogActivityAsync`.
 - Saved transcripts are retrieved using `ListTranscriptsAsync`.
-In this sample code the Id of each stored transcript is saved into a list named "storedTranscripts". This list is later used to manage the number of stored blob transcripts we retain.
+In this sample code the ID of each stored transcript is saved into a list named "storedTranscripts". This list is later used to manage the number of stored blob transcripts we retain.
 
 **echoBot.cs**
 
@@ -1138,7 +1139,7 @@ async function createSampleNote(storage, context) {
 }
 ```
 
-Within the `createSampleNote` helper function initialize a `changes` object and add your *notes* to it, then write it to storage.
+Within the `createSampleNote` helper function, initialize a `changes` object and add your *notes* to it, then write it to storage.
 
 **bot.js**
 
@@ -1255,7 +1256,7 @@ To maintain concurrency, always read a property from storage, then modify the pr
 
 ## Next steps
 
-Now that you know how to read read and write directly from storage, lets take a look at how you can use the state manager to do that for you.
+Now that you know how to read and write directly from storage, lets take a look at how you can use the state manager to do that for you.
 
 > [!div class="nextstepaction"]
 > [Save state using conversation and user properties](bot-builder-howto-v4-state.md)

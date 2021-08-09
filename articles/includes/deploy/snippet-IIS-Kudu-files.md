@@ -5,7 +5,7 @@ Make sure you're in your bot's project folder. Then prepare your bot code for de
 
 ##### [C#](#tab/csharp)
 
-```cmd
+```azurecli
 az bot prepare-deploy --lang Csharp --code-dir "." --proj-file-path "MyBot.csproj"
 ```
 
@@ -15,7 +15,7 @@ This command generates a `.deployment` file in your bot project folder.
 
 ##### [JavaScript](#tab/javascript)
 
-```cmd
+```azurecli
 az bot prepare-deploy --code-dir "." --lang Javascript
 ```
 
@@ -23,7 +23,7 @@ The command generates two `web.config` file in your project folder. Node.js apps
 
 ##### [TypeScript](#tab/typescript)
 
-```cmd
+```azurecli
 az bot prepare-deploy --code-dir "." --lang Typescript
 ```
 
@@ -31,10 +31,10 @@ This command generates a `web.config` file in your project folder.
 
 ##### [Java](#tab/java)
 
-Skip this step and go directly to **Package Project**.  
+Skip this step and go directly to **Package Project**.
 
 ##### [Python](#tab/python)
 
-If you're using a dependency and package manager you need to convert your dependencies list to a `requirements.txt` file and add it to the folder that contains `app.py`. This is necessary because dependency installation happens on the server side for Python bots, not locally like it does for bots in other languages. The files in `deploymentTemplates` look for `requirements.txt`, and without the file your dependencies won't be installed.
+If you're using a dependency and package manager, you need to convert your dependencies list to a `requirements.txt` file and add it to the folder that contains `app.py`. This is necessary because dependency installation happens on the server side for Python bots, not locally like it does for bots in other languages. The files in `deploymentTemplates` look for `requirements.txt`, and without the file your dependencies won't be installed.
 
 ---

@@ -6,7 +6,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 11/23/2020
+ms.date: 08/04/2021
 ---
 
 # Bot Framework security guidelines
@@ -29,17 +29,16 @@ Reducing your vulnerabilities is a good way to mitigate threats, and a known way
 
 ## Common security guidelines
 
-The following areas are covered by some standard security best practices common to all applications.
+The following areas are covered by standard security best practices common to applications.
 
-### Protocols and Encryption
+### Securing network traffic
 
-Data can be tampered with during transmission. Protocols exist that provide encryption to address problems of misuse and tampering.
-In this regard, bots should communicate only over encrypted channels. This makes it hard for anyone other than the receiver and sender from seeing any part of the message or transaction.
-
-Encryption is one of the most robust methods of ensuring bot security and companies must proactively guarantee its effectiveness by taking measures to
-depersonalize and encrypt sensitive data.
+Protocols exist that provide cryptographic controls to address data tampering and disclosure during transmission. In this regard, bots should communicate only over secured channels.
 
 To exchange data on the wire any secure system must use the **HTTPS** protocol, which transfers data over HTTP in encrypted connections protected by [Transport Layer Security](https://tools.ietf.org/html/rfc5246) (TLS) or [Secure Sockets Layer](https://tools.ietf.org/html/rfc6101) (SSL).  See also [RFC 2818 - HTTP Over TLS](https://tools.ietf.org/html/rfc2818).
+
+> [!NOTE]
+> All Bot Service channels require **HTTPS** and **TLS 1.2**.
 
 ### Self-destructing messages
 

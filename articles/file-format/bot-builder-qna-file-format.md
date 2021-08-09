@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 05/16/2020
+ms.date: 08/05/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -169,7 +169,7 @@ Reference a URL for QnAMaker to ingest during KB creation via `[link name](<URL>
 
 You can also add references to utterances defined in a specific file under an intent section or as QnA pairs.
 
-- `[link name](<.lu file path>#<INTENT-NAME>)`: finds all utterances found under <INTENT-NAME> in the .lu file and adds them to the list of questions where the reference is specified.
+- `[link name](<.lu file path>#<INTENT-NAME>)`: finds all utterances found under \<INTENT-NAME> in the .lu file and adds them to the list of questions where the reference is specified.
 - `[link name](<.lu file path>#*utterances*)`: finds all utterances in the .lu file and adds them to the list of questions where the reference is specified.
 - `[link name](<.qna file path>#?)`: finds questions from all QnA pairs defined in the .qna file and adds them to the list of utterances where this reference is specified.
 - `[link name](<.qna folder>/*#?)`: finds all questions from all .qna files in the specified folder and adds them to the list of utterances where this reference is specified.
