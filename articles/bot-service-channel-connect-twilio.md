@@ -23,7 +23,7 @@ To configure a bot to communicate using Twilio, create a TwilML application and 
 
 To learn more about developing for Twilio, see the [Twilio SMS](https://www.twilio.com/docs/sms) documentation.
 
-### Create a TwiML Application
+### Create a TwiML application
 
 If you don't have a Twilio account, create a [new account](https://www.twilio.com/try-twilio).
 
@@ -39,7 +39,7 @@ Follow the instruction in the [Twilio documentation](https://support.twilio.com/
 
 ![Set phone number](media/channels/twi-StepPhone.png)
 
-### Specify application to use for Voice and Messaging
+### Specify application to use for voice and messaging
 
 Click the number and go to **Configure**. Under both Voice and Messaging, set **CONFIGURE WITH** to be TwiML App and set **TWIML APP** to be My TwiML app. After you finish, click **Save**.
 

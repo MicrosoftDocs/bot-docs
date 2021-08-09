@@ -30,7 +30,7 @@ This article assumes that you have a bot ready to be deployed. For information o
 
 [!INCLUDE [deploy prepare intro](includes/deploy/snippet-prepare-deploy-intro.md)]
 
-### Log in to Azure
+### Sign in to Azure
 
 [!INCLUDE [deploy az log in](includes/deploy/snippet-az-login.md)]
 
@@ -44,7 +44,7 @@ This article assumes that you have a bot ready to be deployed. For information o
 
 [!INCLUDE [deploy create app registration](includes/deploy/snippet-create-app-registration.md)]
 
-### Deploy via ARM template
+### Deploy using an ARM template
 
 When creating the bot application service, you can deploy your bot in a new or in an existing resource group, both via the [Azure Resource Manager (ARM) template](/azure/azure-resource-manager/templates/overview). An ARM template is a JSON file that declaratively defines one or more Azure resources and that defines dependencies between the deployed resources. Make sure that you have the correct path to your bot project ARM deployment templates directory `DeploymentTemplates`, you need it to assign the value to the template file. Choose the option that works best for you:
 
@@ -77,7 +77,7 @@ When creating the bot application service, you can deploy your bot in a new or i
 
 [!INCLUDE [package project](includes/deploy/snippet-zip-code.md)]
 
-## Deploy bot to Azure
+## Deploy the bot to Azure
 
 [!INCLUDE [deploy code to Azure](includes/deploy/snippet-deploy-code-to-az.md)]
 

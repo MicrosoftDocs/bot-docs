@@ -812,7 +812,7 @@ And returns the result **"aGVsbG8="**.
 
 *Example 2*
 
-This example takes byteArr, which equals **new byte[] { 3, 5, 1, 12 }**:
+This example takes `byteArr`, which equals `new byte[] { 3, 5, 1, 12 }`:
 
 ```
 base64('byteArr')
