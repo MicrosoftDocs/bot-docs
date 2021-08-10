@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 11/12/2020
+ms.date: 08/10/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -15,18 +15,16 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-<!-- Value prop: why skills -->
-Starting with version 4.7 of the Bot Framework SDK, you can extend a bot using another bot (a skill).
-A skill can be consumed by various other bots, facilitating reuse, and in this way, you can create a user-facing bot and extend it by consuming your own or 3rd party skills.
+<!--Starting with version 4.7 of the Bot Framework SDK,-->
+You can extend a bot using a _skill_ bot.
+A skill can be consumed by various other bots, facilitating reuse, and in this way, you can create a user-facing bot and extend it by consuming your own or third-party skills.
 
-<!-- Terminology -->
-- A _skill_ is a bot that can perform a set of tasks for another bot.
-  A bot can be both a skill and a user-facing bot.
+- A _skill_ is a bot that can perform a set of tasks for another bot&mdash;a bot can be both a skill and a user-facing bot.
 - A _skill consumer_ is a bot that can call one or more skills.
   A user-facing skill consumer is also called a _root bot_.
 - A _skill manifest_ is a JSON file that describes the actions the skill can perform, its input and output parameters, and the skill's endpoints.
   - Developers who don't have access to the skill's source code can use the information in the manifest to design their skill consumer.
-  - The _skill manifest schema_ is a JSON file that describes the schema of the skill manifest. The current version is [2.1.0](https://schemas.botframework.com/schemas/skills/v2.1/skill-manifest.json).
+  - The _skill manifest schema_ is a JSON file that describes the schema of the skill manifest.
   - See how to [implement a skill](./skill-implement-skill.md) and how to [write a skill manifest](skills-write-manifest.md) for sample skill manifests.
 
 In other words, the user interacts directly with the root bot, and the root bot delegates some of its conversational logic to a skill.
@@ -34,7 +32,7 @@ In other words, the user interacts directly with the root bot, and the root bot 
 <!-- Requirements/contract -->
 The skills feature is designed so that:
 
-- Skills and consumers communicate over HTTP using the bot framework protocol.
+- Skills and consumers communicate over HTTP using the Bot Framework protocol.
 - A skill consumer can consume multiple skills.
 - A skill consumer can consume a skill regardless of the language used to implement the skill. For example, a C# bot can consume a skill implemented using Python.
 - A skill can also be a skill consumer and call other skills.
@@ -136,7 +134,7 @@ Service-level authentication is managed by the Bot Connector service. The framew
 > [!IMPORTANT]
 > This requires all deployed bots (the skill consumer and any skills it consumes) to have valid application credentials.
 
-#### Claims validation
+### Claims validation
 
 You must add a _claims validator_ to the authentication configuration. The claims are evaluated after the authentication header. Throw an error or exception in your validation code to reject the request.
 
@@ -153,6 +151,10 @@ There are various reasons you might reject an otherwise authenticated request:
 > If you don't provide a claims validator, your bot will generate an error or exception upon receiving an activity from another bot, whether your bot is a skill or a skill consumer.
 
 <!--TODO Need a link for more information about claims and claims-based validation.-->
+
+## Debugging skill conversations
+
+[!INCLUDE [skills-about-debugging](../includes/skills-about-debugging.md)]
 
 ## Additional information
 

@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 07/07/2021
+ms.date: 08/10/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -114,7 +114,7 @@ Optionally, add the root bot's app ID and password and add the app ID for the ec
 
 **simple_root_bot/config.py**
 
-Optionall, add the root bot's app ID and password and add the app ID for the echo skill bot.
+Optionally, add the root bot's app ID and password and add the app ID for the echo skill bot.
 
 [!code-python[configuration file](~/../botbuilder-samples/samples/python/80.skills-simple-bot-to-bot/simple-root-bot/config.py?range=14-27)]
 
@@ -420,6 +420,10 @@ Download and install the latest [Bot Framework Emulator](https://github.com/micr
 1. Use the Emulator to test the bot as shown below. When you send an `end` or `stop` message to the skill, the skill sends to the root bot an `endOfConversation` activity, in addition to the reply message. The `endOfConversation` activity's _code_ property indicates that the skill completed successfully.
 
 ![test the skill consumer](media/skills-simple-consumer-test.png)
+
+### More about debugging
+
+[!INCLUDE [skills-about-debugging](../includes/skills-about-debugging.md)]
 
 ## Additional information
 

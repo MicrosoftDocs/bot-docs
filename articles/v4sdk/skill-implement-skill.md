@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 07/12/2021
+ms.date: 08/10/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -338,6 +338,10 @@ Download and install the latest [Bot Framework Emulator](https://github.com/micr
 1. Use the Emulator to test the bot as shown below. When you send an "end" or "stop" message to the skill, it sends an `endOfConversation` activity in addition to the reply message. The skill sends the `endOfConversation` activity to indicate the skill has finished.
 
 ![test the echo skill](media/skills-simple-skill-test.png)
+
+### More about debugging
+
+[!INCLUDE [skills-about-debugging](../includes/skills-about-debugging.md)]
 
 ## Next steps
 
