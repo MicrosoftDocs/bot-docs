@@ -82,7 +82,7 @@ You can also view the list in [alphabetical order](#prebuilt-functions-sorted-al
 |[any](#any) | Determines whether any elements of a sequence satisfy a condition.|
 |[all](#all) | Determine whether all elements of a sequence satisfy a condition.|
 |[reverse](#reverse)|Reverse the order of the elements in a string or array.|
-|[merge](#merge)| Merges multiple JSON objects together
+|[merge](#merge)| Merges multiple JSON objects or items in an array together.|
 
 ## Logical comparison functions
 
@@ -3847,7 +3847,11 @@ max(createArray(1, 2, 3))
 
 And return the result **3**.
 
+<a name="merge"></a>
+
 ### merge
+
+Merges multiple JSON objects or an array of objects together.
 
 ```
 merge(<json1>, <json2>, ...)
@@ -3855,15 +3859,15 @@ merge(<json1>, <json2>, ...)
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
-| <*json1*>, <*json2*>, ... | Yes | objects | The set of JSON objects to merge together. |
+| <*json1*>, <*json2*>, ... | Yes | objects or array | The set of JSON objects or array to merge together. |
 |||||
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*result*> | object | The combined JSON object. |
+| <*result*> | object | The combined JSON object or combined array objects. |
 ||||
 
-*Example*
+*Examples*
 
 Say you have the following JSON objects:
 
@@ -3887,6 +3891,13 @@ string(merge(json(json1), json(json2)))
 ```
 And returns the resulting object **{"FirstName":"John","LastName":"Smith","Enabled":true,"Roles":["User","Admin"]}**.
 
+Say you want to combine objects and a list of objects together. The following example combines JSON object and an array of objects:
+
+```
+merge({k1:'v1'}, [{k2:'v2'}, {k3: 'v3'}], {k4:'v4'})
+```
+
+And returns the object **{ ​"k1":"v1", ​"k2":"v2", ​"k3":"v3", "k4":"v4"}**.
 
 <a name="min"></a>
 
