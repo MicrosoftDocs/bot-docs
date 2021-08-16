@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "v4sdk/bot-file-basics.md",
+      "redirect_url": "/azure/bot-service/bot-builder-basics",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "articles/security-baseline.md",
       "redirect_url": "/security/benchmark/azure/baselines/bot-service-security-baseline",
       "redirect_document_id": false

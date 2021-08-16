@@ -16,7 +16,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 A bot is an app that users interact with in a conversational way, using text, graphics (such as cards or images), or speech. Azure Bot Service is a cloud platform. It hosts bots and makes them available to channels.
 
-The Bot Framework Service, which is a component of the Azure Bot Service, sends information between the user's bot-connected app (such as Facebook or Slack and so on, which we call the *channel*) and the bot. Each channel may include additional information in the activities they send. Before creating bots, it is important to understand how a bot uses activity objects to communicate with its users. Let's first take a look at activities that are exchanged when we run a simple echo bot.
+The Bot Framework Service, which is a component of the Azure Bot Service, sends information between the user's bot-connected app (such as Facebook or Slack, which we call the *channel*) and the bot. Each channel may include additional information in the activities they send. Before creating bots, it is important to understand how a bot uses activity objects to communicate with its users. Let's first take a look at activities that are exchanged when we run a simple echo bot.
 
 > [!div class="mx-imgBorder"]
 > ![activity diagram](./media/bot-builder-activity.png)
@@ -93,8 +93,8 @@ The bot object contains the conversational reasoning or logic for a turn and exp
 
 The SDK provides a couple different paradigms for managing your bot logic.
 
-- _Activity handlers_ provide an event-driven model in which the incoming activity types and sub-types are the events. This can be good for bots that have limited, short interactions with the user.
-  - Use an [activity handler](bot-activity-handler-concept.md) and implement handlers for each activity type or sub-type your bot will recognize and react to.
+- _Activity handlers_ provide an event-driven model in which the incoming activity types and subtypes are the events. This can be good for bots that have limited, short interactions with the user.
+  - Use an [activity handler](bot-activity-handler-concept.md) and implement handlers for each activity type or subtype your bot will recognize and react to.
   - Use a [Teams activity handler](bot-builder-basics-teams.md) to create bots that can connect to the Teams channel. (The Teams channel requires the bot to handle some channel-specific behavior.)
 - The [dialogs library](bot-builder-concept-dialog.md) provides a state-based model to manage a long-running conversation with the user.
   - Use an activity handler and a _component dialog_ for largely sequential conversations.
@@ -204,7 +204,10 @@ The templates are:
 
 ### Managing bot resources
 
-The bot resources, such as app ID, passwords, keys or secrets for connected services, will need to be managed appropriately. For more on how to do so, see the [Bot Framework security guidelines](bot-builder-security-guidelines.md) and about [managing bot resources](bot-file-basics.md).
+You will need to manage the resources for your bot, such as its app ID and password, and also information for any connected services. When you deploy your bot, it will need secure access to this information. To avoid complexity, most of the Bot Framework SDK articles do not describe how to manage this information.
+
+- For general security information, see [Bot Framework security guidelines](bot-builder-security-guidelines.md).
+- To manage keys and secrets in Azure, see [About Azure Key Vault](/azure/key-vault/general/key-vault-overview).
 
 ### Channel adapters
 

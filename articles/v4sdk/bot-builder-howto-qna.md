@@ -22,7 +22,7 @@ One of the basic requirements in creating your own QnA Maker service is to popul
 ## Prerequisites
 
 - A [QnA Maker](https://www.qnamaker.ai/) account
-- Knowledge of [bot basics](bot-builder-basics.md), [QnA Maker](/azure/cognitive-services/qnamaker/overview/overview), and [managing bot resources](bot-file-basics.md).
+- Knowledge of [bot basics](bot-builder-basics.md) and [QnA Maker](/azure/cognitive-services/qnamaker/overview/overview).
 - A copy of the **QnA Maker (simple)** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/11.qnamaker), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/11.qnamaker), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/11.qnamaker), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/11.qnamaker).
 
 ## About this sample

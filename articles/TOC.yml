@@ -42,11 +42,11 @@
       href: v4sdk/bot-builder-concept-identity-providers.md
     - name: Identity providers proxy
       href: v4sdk/bot-builder-concept-identity-providers-proxy.md
-    - name: Single sign on
+    - name: Single sign-on
       href: v4sdk/bot-builder-concept-sso.md
     - name: Add authentication to a bot
       href: v4sdk/bot-builder-authentication.md
-    - name: Add single sign on to a bot
+    - name: Add single sign-on to a bot
       href: v4sdk/bot-builder-authentication-sso.md
   - name: Enhanced authentication
     href: v4sdk/bot-builder-security-enhanced.md
@@ -70,8 +70,6 @@
       href: v4sdk/bot-builder-concept-middleware.md
     - name: Understand the structure of an echo bot
       href: v4sdk/bot-builder-create-a-bot-project.md
-  - name: Manage bot resources
-    href: v4sdk/bot-file-basics.md
   - name: How bots for Microsoft Teams work
     href: v4sdk/bot-builder-basics-teams.md
   - name: Skills
@@ -510,5 +508,5 @@
       href: v4sdk/bot-builder-webchat-overview.md
     - name: Customization
       href: v4sdk/bot-builder-webchat-customization.md
-    - name: Add single sign on to Web Chat
+    - name: Add single sign-on to Web Chat
       href: v4sdk/bot-builder-webchat-sso.md
