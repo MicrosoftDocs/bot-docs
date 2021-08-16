@@ -6,7 +6,7 @@ ms.author: johtaylo
 manager: kamrani
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 09/24/2020
+ms.date: 08/16/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -14,18 +14,20 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-A bot is an app that users interact with in a conversational way, using text, graphics (such as cards or images), or speech. Azure Bot Service is a cloud platform. It hosts bots and makes them available to channels.
+A bot is an app that users interact with in a conversational way, using text, graphics (such as cards or images), or speech. Azure Bot Service is a cloud platform. It hosts bots and makes them available to _channels_, such as Microsoft Teams, Facebook, or Slack.
 
-The Bot Framework Service, which is a component of the Azure Bot Service, sends information between the user's bot-connected app (such as Facebook or Slack, which we call the *channel*) and the bot. Each channel may include additional information in the activities they send. Before creating bots, it is important to understand how a bot uses activity objects to communicate with its users. Let's first take a look at activities that are exchanged when we run a simple echo bot.
+The Bot Framework Service, which is a component of the Azure Bot Service, sends information between the user's bot-connected app and the bot. Each channel can include additional information in the activities they send. Before creating bots, it is important to understand how a bot uses activity objects to communicate with its users.
 
-> [!div class="mx-imgBorder"]
-> ![activity diagram](./media/bot-builder-activity.png)
+This diagram illustrates two activity types, _conversation update_ and _message_, that might be exchanged when a user communicates with a simple echo bot.
 
-Two activity types illustrated here are: *conversation update* and *message*.
+:::image type="content" source="media/bot-builder-activity.png" alt-text="activity diagram":::
 
-The Bot Framework Service may send a conversation update when a party joins the conversation. For example, on starting a conversation with the Bot Framework Emulator, you will see two conversation update activities (one for the user joining the conversation and one for the bot joining). To distinguish these conversation update activities, check who is included in the *members added* property of the activity.
+The Bot Framework Service sends a _conversation update_ when a party joins the conversation. For example, on starting a conversation with the Bot Framework Emulator, you might see two conversation update activities (one for the user joining the conversation and one for the bot joining). To distinguish these conversation update activities, check who is included in the _members added_ property of the activity.
 
-The message activity carries conversation information between the parties. In an echo bot example, the message activities are carrying simple text and the channel will render this text. Alternatively, the message activity might carry text to be spoken, suggested actions or cards to be displayed.
+The _message_ activity carries conversation information between the parties. In an echo bot example, the message activities are carrying simple text and the channel will render this text. Alternatively, the message activity might carry text to be spoken, suggested actions or cards to be displayed.
+
+> [!TIP]
+> It's up to each channel to implement the Bot Framework protocol, and how each channel does so might be a little different. For example, some channels send conversation update activities first, and some send conversation update activities after they send the first message activity. A channel might include both the bot and user in one conversation update activity, while another might send two conversation update activities.
 
 In this example, the bot created and sent a message activity in response to the inbound message activity it had received. However, a bot can respond in other ways to a received message activity; it's not uncommon for a bot to respond to a conversation update activity by sending some welcome text in a message activity. More information can be found in how to [welcome a user](bot-builder-welcome-user.md).
 
