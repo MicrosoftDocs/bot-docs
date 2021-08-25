@@ -8,15 +8,11 @@ If you are deploying a C#, bot make sure that it has been [built in Release mode
 
 When you [Create a bot](../../bot-service-quickstart-create-bot.md), the source code generated includes a `DeploymentTemplates` folder that contains ARM templates. The deployment process documented here uses one of the ARM templates to provision required resources for the bot in Azure by using the Azure CLI.
 
-With the release of Bot Framework SDK 4.3, we have _deprecated_ the use of a .bot file. Instead, we use the `appsettings.json` configuration file to manage bot resources. For information on migrating settings from the .bot file to a configuration file, see [managing bot resources](../../v4sdk/bot-file-basics.md).
-
 [!INCLUDE [about .NET Core versions in the templates](../vsix-templates-versions.md)]
 
 # [JavaScript / TypeScript](#tab/javascript+typescript)
 
 When you create a bot using a [Yeoman template](../../javascript/bot-builder-javascript-quickstart.md), the source code generated includes a `deploymentTemplates` folder that contains ARM templates. The deployment process documented here uses one of the ARM templates to provision required resources for the bot in Azure by using the Azure CLI.
-
-With the release of Bot Framework SDK 4.3, we have _deprecated_ the use of a .bot file. Instead, we use the `appsettings.json` configuration file to manage bot resources. For information on migrating settings from the .bot file to a configuration file, see [managing bot resources](../../v4sdk/bot-file-basics.md).
 
 # [Java](#tab/java)
 
@@ -25,7 +21,5 @@ When you create a bot using a [Yeoman template](../../java/bot-builder-java-quic
 # [Python](#tab/python)
 
 When you create a bot using a [Cookiecutter template](../../python/bot-builder-python-quickstart.md), the source code generated includes a `deploymentTemplates` folder that contains ARM templates. The deployment process documented here uses one of the ARM templates to provision required resources for the bot in Azure by using the Azure CLI.
-
-With the release of Bot Framework SDK 4.3, we have _deprecated_ the use of a .bot file. Instead, we use the `.env` file, to manage bot resources. For information on migrating settings from the .bot file to a configuration file, see [managing bot resources](../../v4sdk/bot-file-basics.md).
 
 ---

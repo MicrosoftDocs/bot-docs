@@ -1,13 +1,13 @@
 ---
 title: Create .NET client for direct line app service extension
 titleSuffix: Bot Service
-description: "Learn how to create .NET clients that connect to direct line app service extensions. See how to set up C# clients that communicate with bots over WebSockets."
+description: Learn how to create .NET clients that connect to direct line app service extensions. See how to set up C# clients that communicate with bots over WebSockets.
 services: bot-service
 manager: kamrani
 ms.service: bot-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kamrani
-ms.date: 07/25/2019
+ms.date: 08/19/2021
 ---
 
 # Create .NET Client to Connect to Direct Line App Service Extension
@@ -34,30 +34,13 @@ Please, also read this companion article [Configure .NET bot for extension](bot-
 line app service extension. You can create additional sites if you'd like and use
 those secret values as well.
 
-## Add the preview NuGet package source
-
-The preview NuGet packages needed to create a C# Direct line client can be found in a NuGet feed.
-
-1. In Visual Studio navigate to the **Tools->Options** menu item.
-1. Select the **NuGet Package Manager->Package Sources** item.
-1. Click on the + button to add a new package source with these values:
-    - Name: DL ASE Preview
-    - Source: https://botbuilder.myget.org/F/experimental/api/v3/index.json
-1. Click on the **Update** button to save the values.
-1. Click **OK** to exit the Package Sources configuration.
-
 ## Create a C# Direct Line client
 
 Interactions with the direct line app service extension happen differently than traditional Direct Line because most communication happens over a *WebSocket*. The updated direct line client includes helper classes for opening and closing a *WebSocket*, sending commands through the WebSocket, and receiving Activities back from the bot. This section describes how to create a simple C# client to interact with a bot.
 
-1. In Visual Studio, create a new .NET Core 2.2 console application project.
-1. Add the **DirectLine client NuGet** to your project
-    - Click on Dependencies in the Solution tree
-    - Select **Manage Nuget Packages...**
-    - Change the Package source to `DL ASE Preview` (see the section [Add the preview Nuget package source](#add-the-preview-nuget-package-source))
-    - Find the package [Microsoft.Bot.Connector.Directline](https://botbuilder.myget.org/feed/experimental/package/nuget/Microsoft.Bot.Connector.DirectLine) version v3.0.3-Preview1 or later.
-    - Click on **Install Package**.
-1. Create a client and generate a token using a secret. This step is the same as building any other C# Direct Line client except the endpoint you need use in your bot,appended with the **.bot/** path as shown next. Do not forget the ending **/**.
+1. In Visual Studio, create a new .NET Core console application project.
+1. Clone the [Direct Line Client](https://github.com/microsoft/BotFramework-DirectLine-DotNet) from GitHub repository and include it in your project. 
+1. Create a client and generate a token using a secret. This step is the same as building any other C# Direct Line client except the endpoint you need use in your bot, appended with the **.bot/** path as shown next. Do not forget the ending **/**.
 
     ```csharp
     string endpoint = "https://<your_bot_name>.azurewebsites.net/.bot/";

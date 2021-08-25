@@ -48,6 +48,7 @@ Copy the Telegram bot's access token.
 ![Copy access token](media/channels/tg-StepBotCreated.png)
 
 ## Enter the Telegram bot's access token
+Login to the Azure Portal.  Go to your bot or [create a new Azure Bot](/quickstart-create-bot-with-azure).
 
 Go to your bot's **Channels** section in the Azure portal and click the **Telegram** button. 
 

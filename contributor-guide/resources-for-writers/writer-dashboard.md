@@ -1,40 +1,37 @@
 # Writer's dashboard
 
-**TODO**: Create a copy of this page and replace `YourGitHubAlias` with your GitHub alias.
-
 **Note**: the base URL for org-wide issues and PRs are different, as are the URLs for repo-specific queries.
 See GitHub's [Searching issues and pull requests](https://docs.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests) help topic for more info on how to construct such queries.
 
-## SDK and Composer issues and PRs
+## Issues
 
-| SDK doc set |  |
-|:-|:-|
-| [All open **issues**](https://github.com/MicrosoftDocs/bot-docs/issues) | is:open is:issue |
-| &bullet; [Open **issues** with no label](https://github.com/MicrosoftDocs/bot-docs/issues?q=is%3Aopen+is%3Aissue+no%3Alabel) | is:open is:issue no:label |
-| &bullet; [Open customer **issues**](https://github.com/MicrosoftDocs/bot-docs/issues?q=is%3Aopen+is%3Aissue+label%3A%22source%3A+customer%22) | is:open is:issue label:"source: customer" |
-| [All open **PRs**](https://github.com/MicrosoftDocs/bot-docs-pr/pulls) | is:open is:pr |
-| **Composer doc set** |  |
-| [All open **issues**](https://github.com/MicrosoftDocs/composer-docs/issues) | is:open is:issue |
-| &bullet; [Open **issues** with no label](https://github.com/MicrosoftDocs/composer-docs/issues?q=is%3Aopen+is%3Aissue+no%3Alabel) | is:open is:issue no:label |
-| &bullet; [Open customer **issues**](https://github.com/MicrosoftDocs/composer-docs/issues?q=is%3Aopen+is%3Aissue+label%3A%22source%3A+customer%22) | is:open is:issue label:"source: customer" |
-| [All open **PRs**](https://github.com/MicrosoftDocs/composer-docs-pr/pulls) | is:open is:pr |
+| Query | Composer | SDK | MicrosoftDocs | Microsoft |
+|:-|:-|:-|:-|:-|
+|<img width=180/>|<img width=100/>|<img width=90/>|<img width=110/>|<img width=100/>|
+|Open issues|[all](https://github.com/MicrosoftDocs/composer-docs/issues)|[all](https://github.com/MicrosoftDocs/bot-docs/issues)|-|-|
+|&bullet; assigned to **me**|[mine](https://github.com/MicrosoftDocs/composer-docs/issues/assigned/@me)|[mine](https://github.com/MicrosoftDocs/bot-docs/issues/assigned/@me)|[mine](https://github.com/issues?q=is%3Aissue+is%3Aopen+org%3AmicrosoftDocs+assignee%3A%40me)|[mine](https://github.com/issues?q=is%3Aissue+is%3Aopen+org%3Amicrosoft+assignee%3A%40me)|
+|&bullet; not assigned |[unassigned](https://github.com/MicrosoftDocs/composer-docs/issues?q=is%3Aopen+is%3Aissue+no%3Aassignee)|[unassigned](https://github.com/MicrosoftDocs/bot-docs/issues?q=is%3Aopen+is%3Aissue+no%3Aassignee)|-|-|
+|&bullet; not labeled|[unlabeled](https://github.com/MicrosoftDocs/composer-docs/issues?q=is%3Aopen+is%3Aissue+no%3Alabel)|[unlabeled](https://github.com/MicrosoftDocs/bot-docs/issues?q=is%3Aopen+is%3Aissue+no%3Alabel)|-|-|
 
-## Issues or PRs associated with your alias
+## Pull requests
 
-For both doc and code repos:
+| Query | Composer | SDK | MicrosoftDocs | Microsoft |
+|:-|:-|:-|:-|:-|
+|<img width=180/>|<img width=100/>|<img width=90/>|<img width=110/>|<img width=100/>|
+|Open PRs|[all](https://github.com/MicrosoftDocs/composer-docs-pr/pulls)|[all](https://github.com/MicrosoftDocs/bot-docs-pr/pulls)|-|-|
+|&bullet; authored by me|[mine](https://github.com/MicrosoftDocs/composer-docs-pr/pulls/@me)|[mine](https://github.com/MicrosoftDocs/bot-docs-pr/pulls/@me)|[mine](https://github.com/pulls?q=is%3Apr+org%3AmicrosoftDocs+is%3Aopen+author%3A%40me)|[mine](https://github.com/pulls?q=is%3Apr+org%3Amicrosoft+is%3Aopen+author%3A%40me)|
+|&emsp;&bullet; in draft |[in draft](https://github.com/MicrosoftDocs/composer-docs-pr/pulls/@me+draft%3Atrue)|[in draft](https://github.com/MicrosoftDocs/bot-docs-pr/pulls/@me+draft%3Atrue)|[in draft](https://github.com/pulls?q=is%3Apr+org%3AmicrosoftDocs+is%3Aopen+author%3A%40me+draft%3Atrue)|[in draft](https://github.com/pulls?q=is%3Apr+org%3Amicrosoft+is%3Aopen+author%3A%40me+draft%3Atrue)|
+|&emsp;&bullet; awaiting review |[in review](https://github.com/MicrosoftDocs/composer-docs-pr/pulls/@me+draft%3Afalse+review%3Anone)|[in review](https://github.com/MicrosoftDocs/bot-docs-pr/pulls/@me+draft%3Afalse+review%3Anone)|[in review](https://github.com/pulls?q=is%3Apr+org%3AmicrosoftDocs+is%3Aopen+author%3A%40me+draft%3Afalse+review%3Anone)|[in review](https://github.com/pulls?q=is%3Apr+org%3Amicrosoft+is%3Aopen+author%3A%40me+draft%3Afalse+review%3Anone)|
+|&emsp;&bullet; changes requested |[revising](https://github.com/MicrosoftDocs/composer-docs-pr/pulls/@me+draft%3Afalse+review%3Achanges_requested)|[revising](https://github.com/MicrosoftDocs/bot-docs-pr/pulls/@me+draft%3Afalse+review%3Achanges_requested)|[revising](https://github.com/pulls?q=is%3Apr+org%3AmicrosoftDocs+is%3Aopen+author%3A%40me+draft%3Afalse+review%3Achanges_requested)|[revising](https://github.com/pulls?q=is%3Apr+org%3Amicrosoft+is%3Aopen+author%3A%40me+draft%3Afalse+review%3Achanges_requested)|
+|&emsp;&bullet; reviewed & approved |[ready'ish](https://github.com/MicrosoftDocs/composer-docs-pr/pulls?q=is%3Aopen+is%3Apr+author%3A%40me+review%3Aapproved)|[ready'ish](https://github.com/MicrosoftDocs/bot-docs-pr/pulls?q=is%3Aopen+is%3Apr+author%3A%40me+review%3Aapproved)|[ready'ish](https://github.com/pulls?q=is%3Apr+org%3AmicrosoftDocs+is%3Aopen+author%3A%40me+review%3Aapproved)|[ready'ish](https://github.com/pulls?q=is%3Apr+org%3Amicrosoft+is%3Aopen+author%3A%40me+review%3Aapproved)|
+|&bullet; my review requested |[to review](https://github.com/MicrosoftDocs/composer-docs-pr/pulls/review-requested/@me)|[to review](https://github.com/MicrosoftDocs/bot-docs-pr/pulls/review-requested/@me)|[to review](https://github.com/pulls?q=is%3Apr+org%3AmicrosoftDocs+is%3Aopen+review-requested%3A@me)|[to review](https://github.com/pulls?q=is%3Apr+org%3AmicrosoftDocs+is%3Aopen+review-requested%3A@me)|
+|&bullet; labeled ready|[to merge](https://github.com/MicrosoftDocs/composer-docs-pr/pulls?q=is%3Aopen+is%3Apr+label%3A%22status%3A+ready%22) | [to merge](https://github.com/MicrosoftDocs/bot-docs-pr/pulls?q=is%3Aopen+is%3Apr+label%3A%22status%3A+ready%22) | - | - |
 
-| Query | Qualifiers |
-|:-|:-|
-| [Open **issues** _assigned_ to you](https://github.com/issues?q=is%3Aissue+is%3Aopen+org%3AmicrosoftDocs+org%3Amicrosoft+assignee%3AYourGitHubAlias) | is:issue is:open org:microsoftDocs org:microsoft<br/>assignee:YourGitHubAlias |
-| [Your open **PR**s reviewed and **approved**](https://github.com/pulls?q=is%3Apr+org%3AmicrosoftDocs+org%3Amicrosoft+author%3AYourGitHubAlias+review%3Aapproved+is%3Aopen) | is:pr is:open org:microsoftDocs org:microsoft<br/>author:YourGitHubAlias review:approved |
-| &bullet; [Not yet labeled as **ready**](https://github.com/pulls?q=is%3Apr+org%3AmicrosoftDocs+org%3Amicrosoft+author%3AYourGitHubAlias+review%3Aapproved+is%3Aopen+-label%3A%22status%3A+ready%22) ||
-| &bullet; [Labeled as **ready**](https://github.com/pulls?q=is%3Apr+org%3AmicrosoftDocs+org%3Amicrosoft+author%3AYourGitHubAlias+review%3Aapproved+is%3Aopen+label%3A%22status%3A+ready%22) ||
-| [Your open **PR**s with **changes requested**](https://github.com/pulls?q=is%3Apr+org%3AmicrosoftDocs+org%3Amicrosoft+author%3AYourGitHubAlias+review%3Achanges_requested+is%3Aopen) | is:pr is:open org:microsoftDocs org:microsoft<br/>author:YourGitHubAlias review:changes_requested |
-| [Open, non-draft **PR**s awaiting your review](https://github.com/pulls?q=is%3Apr+is%3Aopen+draft%3Afalse+org%3AmicrosoftDocs+org%3Amicrosoft+review-requested%3AYourGitHubAlias+) | is:pr is:open draft:false org:microsoftDocs org:microsoft<br/>review-requested:YourGitHubAlias |
-| [Your open **PR**s in **draft**](https://github.com/pulls?q=is%3Apr+is%3Aopen+draft%3Atrue+org%3AmicrosoftDocs+org%3Amicrosoft+author%3AYourGitHubAlias) | is:pr is:open draft:true org:microsoftDocs org:microsoft<br/>author:YourGitHubAlias |
-| [Your open **PR**s labeled as in **writing**](https://github.com/pulls?q=is%3Apr+is%3Aopen+org%3AmicrosoftDocs+org%3Amicrosoft+author%3AYourGitHubAlias+label%3A%22status%3A+writing%22) | is:pr is:open org:microsoftDocs org:microsoft<br/>author:YourGitHubAlias label:"status: writing" |
-| [Your open, _non-draft_ **PR**s awaiting review](https://github.com/pulls?q=is%3Apr+is%3Aopen+draft%3Afalse+org%3AmicrosoftDocs+org%3Amicrosoft+author%3AYourGitHubAlias+review%3Anone) | is:pr is:open draft:false org:microsoftDocs org:microsoft<br/>author:YourGitHubAlias review:none |
-| [Open **issues** you authored](https://github.com/issues?q=is%3Aissue+is%3Aopen+org%3AmicrosoftDocs+org%3Amicrosoft+author%3AYourGitHubAlias+) | is:issue is:open org:microsoftDocs org:microsoft<br/>author:YourGitHubAlias |
+## DevOps links
+
+- [Wiki pages](https://aka.ms/botservice/wiki)
+- [Work items tool](https://victorious-meadow-046a72b1e.azurestaticapps.net/)
+- [Ticket queries](https://mseng.visualstudio.com/TechnicalContent/_queries/folder/ede32a2a-94d7-4f39-9cc7-d81e09cefdd2/)
 
 ## Documentation quick links
 
@@ -62,6 +59,7 @@ For both doc and code repos:
 | [microsoftDocs / power-platform](https://github.com/MicrosoftDocs/power-platform) | Power Virtual Agents |
 | **Code repos** |  |
 | [microsoft / botframework-sdk](https://github.com/microsoft/botframework-sdk) | Central repo for the whole Bot Framework |
+| &emsp; [ / Orchestrator](https://github.com/microsoft/botframework-sdk/tree/main/Orchestrator) | Where the Orchestrator code and reference material lives |
 | [microsoft / BotBuilder-dotnet](https://github.com/Microsoft/BotBuilder-dotnet) | Bot Framework SDK for .NET (v4) |
 | [microsoft / BotBuilder-java](https://github.com/Microsoft/BotBuilder-java) | Bot Framework SDK for Java (v4) |
 | [microsoft / BotBuilder-js](https://github.com/Microsoft/BotBuilder-js) | Bot Framework SDK for JavaScript (v4) |
@@ -71,7 +69,7 @@ For both doc and code repos:
 | [microsoft / botframework-cli](https://github.com/microsoft/botframework-cli) | Bot Framework CLI |
 | [microsoft / Botframework-composer](https://github.com/microsoft/Botframework-composer) | Bot Framework Composer |
 | [microsoft / BotFramework-Emulator](https://github.com/microsoft/BotFramework-Emulator) | Bot Framework Emulator |
-| [microsoft / botframework-components](https://github.com/microsoft/botframework-components) | Bot Framework Solutions, aka Virtual Assistant |
+| [microsoft / botframework-components](https://github.com/microsoft/botframework-components) | Bot Framework Components, had been Virtual Assistant |
 | [microsoft / BotFramework-Services](https://github.com/microsoft/BotFramework-Services) | Place to file issues found in the [Bot Framework portal](https://dev.botframework.com/). |
 | [microsoft / BotFramework-WebChat](https://github.com/microsoft/BotFramework-WebChat) | Bot Framework Web Chat [component] |
 | [microsoft / botframework-directlinejs](https://github.com/microsoft/botframework-directlinejs) | Bot Framework Direct Line JavaScript client |

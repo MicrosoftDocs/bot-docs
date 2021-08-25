@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 07/07/2021
+ms.date: 08/10/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -439,6 +439,10 @@ Download and install the latest [Bot Framework Emulator](https://github.com/micr
 1. Select **DialogSkillBot** again and "BookFlight".
    1. Answer the first prompt, then enter "abort" to interrupt the skill.
    1. The root bot cancels the skill and prompts for the skill you'd like to call.
+
+### More about debugging
+
+[!INCLUDE [skills-about-debugging](../includes/skills-about-debugging.md)]
 
 ## Additional information
 

@@ -23,7 +23,7 @@ This topic walks you through adding LUIS to a flight booking application to reco
 
 - A [LUIS](https://www.luis.ai) account.
 - A copy of the **Core Bot** sample in [**C#**](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot), [**JavaScript**](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/13.core-bot), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/13.core-bot).
-- Knowledge of [bot basics](bot-builder-basics.md), [natural language processing](/azure/cognitive-services/luis/what-is-luis), and [managing bot resources](bot-file-basics.md).
+- Knowledge of [bot basics](bot-builder-basics.md) and [natural language processing](/azure/cognitive-services/luis/what-is-luis).
 
 ## About this sample
 
@@ -40,7 +40,7 @@ After each processing of user input, `DialogBot` saves the current state of both
 
 ![LUIS sample logic flow](./media/how-to-luis/luis-logic-flow.png)
 
-The `OnMessageActivityAsync` module runs the appropriate dialog through the `Run` dialog extension method. Then the main dialog calls the LUIS helper to find the the top scoring user intent. If the top intent for the user input returns "BookFlight", the helper fills out information from the user that LUIS returned. After that, the main dialog starts the `BookingDialog`, which acquires additional information as needed from the user such as:
+The `OnMessageActivityAsync` module runs the appropriate dialog through the `Run` dialog extension method. Then the main dialog calls the LUIS helper to find the top scoring user intent. If the top intent for the user input returns "BookFlight", the helper fills out information from the user that LUIS returned. After that, the main dialog starts the `BookingDialog`, which acquires additional information as needed from the user such as:
 
 - `Origin` the originating city
 - `TravelDate` the date to book the flight
@@ -74,12 +74,11 @@ Upon the response back, `mainDialog` preserves information for the user returned
 
 ![LUIS sample logic flow](./media/how-to-luis/luis-logic-flow-java.png)
 
-The `onMessageActivity` module runs the appropriate dialog through the `run` dialog extension method. Then the main dialog calls the LUIS helper to find the the top scoring user intent. If the top intent for the user input returns "BookFlight", the helper fills out information from the user that LUIS returned. After that, the main dialog starts the `BookingDialog`, which acquires additional information as needed from the user such as:
+The `onMessageActivity` module runs the appropriate dialog through the `run` dialog extension method. Then the main dialog calls the LUIS helper to find the top scoring user intent. If the top intent for the user input returns "BookFlight", the helper fills out information from the user that LUIS returned. After that, the main dialog starts the `BookingDialog`, which acquires additional information as needed from the user such as:
 
 - `Origin` the originating city
 - `TravelDate` the date to book the flight
 - `Destination` the destination city
-
 
 # [Python](#tab/python)
 
@@ -90,7 +89,7 @@ After each processing of user input, `DialogBot` saves the current state of both
 
 ![LUIS sample Python logic flow](./media/how-to-luis/luis-logic-flow-python.png)
 
-The `on_message_activity` module runs the appropriate dialog through the `run_dialog` dialog extension method. Then the main dialog calls `LuisHelper` to find the the top scoring user intent. If the top intent for the user input returns "BookFlight", the helper function fills out information from the user that LUIS returned. After that, the main dialog starts the `BookingDialog`, which acquires additional information as needed from the user such as:
+The `on_message_activity` module runs the appropriate dialog through the `run_dialog` dialog extension method. Then the main dialog calls `LuisHelper` to find the top scoring user intent. If the top intent for the user input returns "BookFlight", the helper function fills out information from the user that LUIS returned. After that, the main dialog starts the `BookingDialog`, which acquires additional information as needed from the user such as:
 
 - `destination` the destination city.
 - `origin` the originating city.
@@ -143,7 +142,7 @@ The settings file (`appsettings.json`, `.env` or `config.py`) acts as the place 
 
 # [C#](#tab/csharp)
 
-Add the information required to access your LUIS app including application id, authoring key, and region into the `appsettings.json` file. These are the values you saved previously from your published LUIS app. Note that the API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
+Add the information required to access your LUIS app including application ID, authoring key, and region into the `appsettings.json` file. These are the values you saved previously from your published LUIS app. Note that the API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
 
 **appsetting.json**
 
@@ -151,7 +150,7 @@ Add the information required to access your LUIS app including application id, a
 
 # [JavaScript](#tab/javascript)
 
-Add the information required to access your LUIS app including application id, authoring key, and region into the `.env` file. These are the values you saved previously from your published LUIS app. Note that the API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
+Add the information required to access your LUIS app including application ID, authoring key, and region into the `.env` file. These are the values you saved previously from your published LUIS app. Note that the API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
 
 **.env**
 
@@ -159,16 +158,15 @@ Add the information required to access your LUIS app including application id, a
 
 # [Java](#tab/java)
 
-Add the information required to access your LUIS app including application id, authoring key, and region into the `application.properties` file. These are the values you saved previously from your published LUIS app. Note that the API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
+Add the information required to access your LUIS app including application ID, authoring key, and region into the `application.properties` file. These are the values you saved previously from your published LUIS app. Note that the API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
 
 **application.properties**
 
 [!code-java[appsettings](~/../BotBuilder-Samples/samples/java_springboot/13.core-bot/src/main/resources/application.properties?range=1-6)]
 
-
 # [Python](#tab/python)
 
-Add the information required to access your LUIS app including application id, authoring key, and region into the `config.py` file. These are the values you saved previously from your published LUIS app. Note that the API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
+Add the information required to access your LUIS app including application ID, authoring key, and region into the `config.py` file. These are the values you saved previously from your published LUIS app. Note that the API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
 
 **config.py**
 
@@ -192,7 +190,7 @@ The `FlightBookingEx.cs` contains the logic to extract *From*, *To* and *TravelD
 
 **CognitiveModels\FlightBookingEx.cs**
 
-[!code-csharp[luis helper](~/../BotBuilder-Samples/samples/csharp_dotnetcore/13.core-bot/CognitiveModels/FlightBookingEx.cs?range=8-35)]
+[!code-csharp[LUIS helper](~/../BotBuilder-Samples/samples/csharp_dotnetcore/13.core-bot/CognitiveModels/FlightBookingEx.cs?range=8-35)]
 
 # [JavaScript](#tab/javascript)
 
@@ -202,7 +200,7 @@ To connect to the LUIS service, the bot uses the information you added above fro
 
 **dialogs/flightBookingRecognizer.js**
 
-[!code-javascript[luis helper](~/../BotBuilder-Samples/samples/javascript_nodejs/13.core-bot/dialogs/flightBookingRecognizer.js?range=6-70)]
+[!code-javascript[LUIS helper](~/../BotBuilder-Samples/samples/javascript_nodejs/13.core-bot/dialogs/flightBookingRecognizer.js?range=6-70)]
 
 The logic to extract From, To and TravelDate is implemented as helper methods inside `flightBookingRecognizer.js`. These methods are used after calling `flightBookingRecognizer.executeLuisQuery()` from `mainDialog.js`
 
@@ -226,12 +224,11 @@ To connect to the LUIS service, the bot pulls the information you added above fr
 
 [!code-java[luisHelper](~/../BotBuilder-Samples/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/FlightBookingRecognizer.java?range=143-152)]
 
-The `FlightBookingRecognizer.cs` contains the logic to extract *From*, *To* and *TravelDate*; and is called from from the `MainDialog.java` to decode the results of the Luis query result.
+The `FlightBookingRecognizer.cs` contains the logic to extract *From*, *To* and *TravelDate*; and is called from the `MainDialog.java` to decode the results of the Luis query result.
 
 **FlightBookingRecognizer.java**
 
-[!code-csharp[luis helper](~/../BotBuilder-Samples/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/FlightBookingRecognizer.java?range=72-141)]
-
+[!code-csharp[LUIS helper](~/../BotBuilder-Samples/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/FlightBookingRecognizer.java?range=72-141)]
 
 # [Python](#tab/python)
 
@@ -247,7 +244,7 @@ The logic to extract *From*, *To* and *travel_date* is implemented as helper met
 
 **helpers/luis_helper.py**
 
-[!code-python[luis helper](~/../botbuilder-samples/samples/python/13.core-bot/helpers/luis_helper.py?range=30-102)]
+[!code-python[LUIS helper](~/../botbuilder-samples/samples/python/13.core-bot/helpers/luis_helper.py?range=30-102)]
 
 ---
 
