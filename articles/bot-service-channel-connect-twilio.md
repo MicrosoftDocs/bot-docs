@@ -123,7 +123,7 @@ Now that you have wired up the adapter in your bot project, you need to identify
 To complete this step, [deploy your bot to Azure](bot-builder-deploy-az-cli.md) and make a note of the URL of your deployed bot.
 
 > [!NOTE]
-> If you are not ready to deploy your bot to Azure, or wish to debug your bot when using the Twilio adapter, you can use a tool such as [ngrok](https://www.ngrok.com) to tunnel through to your bot running locally and provide you with a publicly accessible URL for this.
+> If you're not ready to deploy your bot to Azure, or wish to debug your bot when using the Twilio adapter, you can use a tool such as [ngrok](https://www.ngrok.com) to tunnel through to your bot running locally and provide you with a publicly accessible URL for this.
 >
 > If you wish create an ngrok tunnel and obtain a URL to your bot, use the following command in a command prompt. (This assumes your local bot is running on port 3978. Change the port numbers in the command if your bot is not running on port 3978.)
 >
