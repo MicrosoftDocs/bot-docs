@@ -39,7 +39,7 @@ highlightedContent:
     # Primary CTA
     - title: "Build a weather bot with Composer"
       itemType: tutorial
-      url: /composer/quickstart-create-bot
+      url: /composer/tutorial-create-weather-bot
 
 # productDirectory section (optional)
 productDirectory:
