@@ -1,5 +1,5 @@
 ---
-title: Add natural language understanding to your bot - Bot Service
+title: Add natural language understanding to your bot - Bot Framework SDK
 description: Learn how to use LUIS for natural language understanding with the Bot Framework SDK.
 keywords: Language Understanding, LUIS, intent, recognizer, entities, middleware
 author: JonathanFingold
@@ -22,7 +22,7 @@ This topic walks you through adding LUIS to a flight booking application to reco
 ## Prerequisites
 
 - A [LUIS](https://www.luis.ai) account.
-- A copy of the **Core Bot** sample in [**C#**](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot), [**JavaScript**](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/13.core-bot), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/13.core-bot).
+- A copy of the **Core Bot** sample in [**C#**][cs-core-bot-sample], [**JavaScript**][js-core-bot-sample], [**Java**][java-core-bot-sample], or [**Python**][python-core-bot-sample].
 - Knowledge of [bot basics](bot-builder-basics.md) and [natural language processing](/azure/cognitive-services/luis/what-is-luis).
 
 ## About this sample
@@ -101,15 +101,15 @@ This article covers how to add LUIS to a bot. For information about using dialog
 
 ## Create a LUIS app in the LUIS portal
 
-1. Sign in to the [LUIS portal](https://www.luis.ai).
-    - If you don't already have an account, create one.
-    - If you don't already have an authoring resource, create one.
-    - For more information, see the LUIS documentation on how to [sign in to the LUIS portal](/azure/cognitive-services/luis/luis-how-to-start-new-app#sign-in-to-luis-portal).
-1. On the **My Apps** page, click **New app for conversation** and select **Import as JSON**.
+1. [Sign in to the LUIS portal][sign-in-luis-portal] and if needed [create an account][create-account] and [authoring resource][create-authoring-resource].
+1. On the **Conversation apps** page in [LUIS][conversation-apps], select the down arrow to the right of **New app** then select **Import as JSON**.
+
+    :::image type="content" source="./media/how-to-luis/new-luis-app.png" alt-text="Create a new LUIS app" lightbox="./media/how-to-luis/new-luis-app.png":::
+
 1. In the **Import new app** dialog:
     1. Choose the **FlightBooking.json** file in the **CognitiveModels** folder of the sample.
-    1. Enter `FlightBooking` as the optional name of the app, and click **Done**.
-1. You may be prompted to upgrade your composite entities. You can ignore this and click **Remind me later**:
+    1. Enter `FlightBooking` as the optional name of the app, and select **Done**.
+1. You may be prompted to upgrade your composite entities. You can ignore this and select **Remind me later**:
 
     ![ignore-composite-entities](./media/how-to-luis/luis-upgrade-composite-entities.png)
 
@@ -118,7 +118,7 @@ This article covers how to add LUIS to a bot. For information about using dialog
 
 ### Why use entities
 
-LUIS entities allow your bot to intelligently understand certain things or events that are different than the standard intents. This enables you to gather extra information from the user, which lets your bot respond more intelligently or possibly skip certain questions where it asks the user for that information. Along with definitions for the three LUIS intents 'Book Flight', 'Cancel', and 'None' the FlightBooking.json file also contains a set of entities such as 'From.Airport' and 'To.Airport'. These entities allow LUIS to detect and return additional information contained within the user's original input when they request a new travel booking.
+LUIS entities enable your bot to understand events beyond standard intents. This enables you to gather additional information from users which can enable you to stream line your questions and respond more intelligently. Along with definitions for the three LUIS intents 'Book Flight', 'Cancel', and 'None' the FlightBooking.json file also contains a set of entities such as 'From.Airport' and 'To.Airport'. These entities allow LUIS to detect and return additional information contained within the user's original input when they request a new travel booking.
 
 ## Obtain values to connect to your LUIS app
 
@@ -131,12 +131,12 @@ The settings file (`appsettings.json`, `.env` or `config.py`) acts as the place 
 1. Select your published LUIS app from [luis.ai](https://www.luis.ai).
 1. With your published LUIS app open, select the **MANAGE** tab.
 1. Select the **Settings** tab on the left side and record the value shown for _Application ID_ as \<YOUR_APP_ID>.
-    > [!div class="mx-imgBorder"]
-    > ![Manage LUIS app - Application Information](./media/how-to-luis/manage-luis-app-app-info.png)
-1. Select the **Azure Resources** tab on the left side and select the **Authoring Resource** group.
-    Record the value shown for _Location_ as \<YOUR_REGION> and _Primary Key_ as \<YOUR_AUTHORING_KEY>.
-    > [!div class="mx-imgBorder"]
-    > ![Manage LUIS app - Authoring Information](./media/how-to-luis/manage-luis-app-azure-resources.png)
+
+     :::image type="content" source="./media/how-to-luis/manage-luis-app-app-info.png" alt-text="Manage LUIS application information" lightbox="./media/how-to-luis/manage-luis-app-app-info.png":::
+
+1. Select the **Azure Resources** tab on the left side and select the **Authoring Resource** group. Record the value shown for _Location_ as \<YOUR_REGION> and _Primary Key_ as \<YOUR_AUTHORING_KEY>.
+
+     :::image type="content" source="./media/how-to-luis/manage-luis-app-azure-resources.png" alt-text="Manage LUIS authoring information" lightbox="./media/how-to-luis/manage-luis-app-azure-resources.png":::
 
 ### Update the settings file
 
@@ -280,3 +280,13 @@ For more about LUIS, see the LUIS documentation:
 
 > [!div class="nextstepaction"]
 > [Use QnA Maker to answer questions](./bot-builder-howto-qna.md)
+
+[cs-core-bot-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot
+[js-core-bot-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot
+[java-core-bot-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/13.core-bot
+[python-core-bot-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/13.core-bot
+[sign-in-luis-portal]: /azure/cognitive-services/luis/sign-in-luis-portal
+[create-account]: /free/cognitive-services/
+[conversation-apps]: https://www.luis.ai/applications
+[create-authoring-resource]: /azure/cognitive-services/luis/luis-how-to-azure-subscription
+[sign-in-to-luis-portal]: /azure/cognitive-services/luis/luis-how-to-start-new-app#sign-in-to-luis-portal
