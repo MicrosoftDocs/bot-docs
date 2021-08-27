@@ -22,7 +22,7 @@ This topic walks you through adding LUIS to a flight booking application to reco
 ## Prerequisites
 
 - A [LUIS](https://www.luis.ai) account.
-- A copy of the **Core Bot** sample in [**C#**][cs-core-bot-sample], [**JavaScript**][js-core-bot-sample], [**Java**][java-core-bot-sample], or [**Python**][python-core-bot-sample].
+- A copy of the **Core Bot** sample in [**C#**](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot), [**JavaScript**](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/13.core-bot), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/13.core-bot).
 - Knowledge of [bot basics](bot-builder-basics.md) and [natural language processing](/azure/cognitive-services/luis/what-is-luis).
 
 ## About this sample
