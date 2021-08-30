@@ -1,4 +1,4 @@
-<!-- Azure Bot Resource App Id and Password -->
+<!-- Azure Bot Resource App ID and Password -->
 
 ### App ID and password
 
@@ -44,7 +44,7 @@ APP_PASSWORD = os.environ.get("MicrosoftAppPassword", "<your password>")
 
 ---
 
-<!-- If you downloaded the deployment details, you can get the App Id and password from there to configure your bot. Otherwise, you must perform additional steps as described below.-->
+<!-- If you downloaded the deployment details, you can get the App ID and password from there to configure your bot. Otherwise, you must perform additional steps as described below.-->
 
 <!-- 
 #### Create a new password
@@ -57,7 +57,7 @@ APP_PASSWORD = os.environ.get("MicrosoftAppPassword", "<your password>")
 1. Select **Add**.
 1. Copy and store in a safe place the **Value** (client secret or password) and the **ID** (App Id).
 
-After the creation of the resource is completed, download the deployment details and keep them in a safe place. They contain the App Id and password. 
+After the creation of the resource is completed, download the deployment details and keep them in a safe place. They contain the App ID and password. 
 -->
 
 #### Get Azure bot resource app ID
