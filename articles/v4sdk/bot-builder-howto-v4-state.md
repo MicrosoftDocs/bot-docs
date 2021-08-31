@@ -24,7 +24,7 @@ A bot is inherently stateless. Once your bot is deployed, it may not run in the 
 
 ## About this sample
 
-Upon receiving user input, this sample checks the stored conversation state to see if this user has previously been prompted to provide their name. If not, the user's name is requested and that input is stored within user state. If so, the name stored within user state is used to converse with the user and their input data, along with the time received and input channel Id, is returned back to the user. The time and channel Id values are retrieved from the user conversation data and then saved to conversation state. The following diagram shows the relationship between the bot, user profile, and conversation data classes.
+Upon receiving user input, this sample checks the stored conversation state to see if this user has previously been prompted to provide their name. If not, the user's name is requested and that input is stored within user state. If so, the name stored within user state is used to converse with the user and their input data, along with the time received and input channel ID, is returned back to the user. The time and channel ID values are retrieved from the user conversation data and then saved to conversation state. The following diagram shows the relationship between the bot, user profile, and conversation data classes.
 
 ## [C#](#tab/csharp)
 
@@ -204,7 +204,7 @@ The preceding section covers the initialization-time steps to add state property
 
 - If userProfile.Name is empty and conversationData.PromptedUserForName is _true_, you retrieve the user name provided and store this within user state.
 - If userProfile.Name is empty and conversationData.PromptedUserForName is _false_, you ask for the user's name.
-- If userProfile.Name was previously stored, you retrieve message time and channel Id from the user input, echo all data back to the user, and store the retrieved data within conversation state.
+- If userProfile.Name was previously stored, you retrieve message time and channel ID from the user input, echo all data back to the user, and store the retrieved data within conversation state.
 
 **Bots/StateManagementBot.cs**
 
@@ -220,7 +220,7 @@ Before you exit the turn handler, you use the state management objects' _SaveCha
 
 - If userProfile.Name is empty and conversationData.PromptedUserForName is _true_, you retrieve the user name provided and store this within user state.
 - If userProfile.Name is empty and conversationData.PromptedUserForName is _false_, you ask for the user's name.
-- If userProfile.Name was previously stored, you retrieve message time and channel Id from the user input, echo all data back to the user, and store the retrieved data within conversation state.
+- If userProfile.Name was previously stored, you retrieve message time and channel ID from the user input, echo all data back to the user, and store the retrieved data within conversation state.
 
 **bots/stateManagementBot.js**
 
@@ -236,7 +236,7 @@ Before you exit each dialog turn, you use the state management objects' _saveCha
 
 - If userProfile.getName() is empty and conversationData.getPromptedUserForName() is _true_, you retrieve the user name provided and store this within user state.
 - If userProfile.getName() is empty and conversationData.getPromptedUserForName() is _false_, you ask for the user's name.
-- If userProfile.getName() was previously stored, you retrieve message time and channel Id from the user input, echo all data back to the user, and store the retrieved data within conversation state.
+- If userProfile.getName() was previously stored, you retrieve message time and channel ID from the user input, echo all data back to the user, and store the retrieved data within conversation state.
 
 **StateManagementBot.java**
 
