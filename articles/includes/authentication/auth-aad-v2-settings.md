@@ -10,7 +10,7 @@
 |**Client secret** | Azure AD identity provider app secret| \<AAD provider app secret\> |
 |**Tenant ID** | | \<directory (tenant) ID\> or `common`. See note. |
 |**Scopes** |Space separated list of the API permissions you granted Azure AD identity provider app| Values such as `openid`, `profile`, `Mail.Read`, `Mail.Send`, `User.Read`, and `User.ReadBasic.All` |
-|**Token Exchange URL** |Used for SSO in Azure AD v2| |
+|**Token Exchange URL** |Used for SSO in Azure AD v2|See note below|
 | | |
 
 **Note**
@@ -22,3 +22,5 @@
     - *Accounts in any organizational directory(Microsoft AAD directory - Multi tenant)*
 - Enter `common`  if you selected *Accounts in any organizational directory (Any AAD directory - Multi tenant and personal Microsoft accounts e.g. Skype, Xbox, Outlook.com)*. Otherwise, the AAD identity provider app will verify through the tenant whose ID was selected and exclude personal MS accounts.
 - Scopes takes a case-sensitive, space-separated list of values.
+- The **Token Exchange URL** is left blank for the root bot but is populated for the skill bot. See [Create an OAuth connection settings](../../v4sdk/bot-builder-authentication-sso.md#create-an-oauth-connection-settings-1) to learn how to get its value. 
+
