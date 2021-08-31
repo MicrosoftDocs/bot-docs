@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 2/7/2020
+ms.date: 08/26/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -132,8 +132,12 @@ At startup, user state is defined in `app.py` and consumed by the bot constructo
 We now create a property accessor that provides us a handle to `WelcomeUserState` inside the `OnMessageActivityAsync` method.
 Then call the `GetAsync` method to get the properly scoped key. We then save user state data after each user input iteration using the `SaveChangesAsync` method.
 
+**Bots\WelcomeUserState.cs**
+
+[!code-csharp[Get state](~/../BotBuilder-Samples/samples/csharp_dotnetcore/03.welcome-user/WelcomeUserState.cs?range=12-13)]
+
 **Bots\WelcomeUserBot.cs**
-[!code-csharp[Get state](~/../BotBuilder-Samples/samples/csharp_dotnetcore/03.welcome-user/bots/WelcomeUserBot.cs?range=75-76)]
+[!code-csharp[Await state](~/../BotBuilder-Samples/samples/csharp_dotnetcore/03.welcome-user/bots/WelcomeUserBot.cs?range=75-76)]
 [!code-csharp[Save state](~/../BotBuilder-Samples/samples/csharp_dotnetcore/03.welcome-user/bots/WelcomeUserBot.cs?range= 108-109)]
 
 ### [JavaScript](#tab/javascript)
@@ -141,7 +145,8 @@ Then call the `GetAsync` method to get the properly scoped key. We then save use
 We now create a property accessor that provides us a handle to welcomedUserProperty which is persisted within userState.
 
 **bots/welcomeBot.js**
-[!code-javascript[Get state](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomebot.js?range=24-27)]
+[!code-javascript[Get state](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomebot.js?range=20)]
+[!code-javascript[Await state](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomebot.js?range=24-27)]
 [!code-javascript[Save state](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomebot.js?range=93-101)]
 
 ### [Java](#tab/java)
