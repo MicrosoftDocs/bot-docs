@@ -3,7 +3,7 @@
 - name: Overview
   items:
   - name: What is the Bot Framework SDK?
-    href: bot-service-overview-introduction.md
+    href: bot-service-overview.md
   - name: What's new
     href: what-is-new.md
 - name: Quickstart
