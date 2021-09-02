@@ -1,17 +1,17 @@
 ---
-title: Add media to messages - Bot Service
-description: Learn how to add images, video, audio, files, and other media attachments to messages. View code for sending media attachments, hero cards, and Adaptive Cards.
-keywords: media, messages, images, audio, video, files, MessageFactory, rich cards, messages, adaptive cards, hero card, suggested actions
+title: Send media attachments with the Bot Framework SDK
+description: Learn how to add images, video, audio, files, and other media attachments to messages sent using the Bot Framework SDK. 
 author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 07/08/2020
+ms.date: 09/01/2021
+ms.custom: abs-meta-21q1
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Add media to messages
+# Send media attachments with Bot Framework SDK
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
@@ -404,12 +404,6 @@ Once the attachments are added, you can send the reply just like any other.
 ---
 
 <!-- TODO: Add a media card, such as video or audion. Revisit which examples we put here and link to the 06 through 08 samples. -->
-
-## Additional resources
-
-See the [Design the user experience](../bot-service-design-user-experience.md) article for examples of available cards.
-
-For detailed information on the schema, see the [Bot Framework card schema](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-cards.md) and the [message activity section](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md#message-activity) of the Bot Framework Activity schema.
 
 ### Code sample for processing Adaptive Card input
 
