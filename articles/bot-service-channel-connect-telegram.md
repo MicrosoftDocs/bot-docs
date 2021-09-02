@@ -1,12 +1,13 @@
 ---
-title: Create a bot for Telegram - Bot Service
-description: Learn how to configure bots to use the Telegram messaging app to communicate with people. See how to connect bots to Telegram.
+title: Create a bot for Telegram - Azure Bot Service
+description: Learn how to configure bots to use the Telegram messaging app to communicate with people.
 keywords: configure bot, Telegram, bot channel, Telegram bot, access token
 author: RobStand
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: how-to
 ms.service: bot-service
+ms.custom: abs-meta-21q1
 ms.date: 12/13/2017
 ---
 
@@ -25,6 +26,7 @@ Create a new [Telegram bot](https://telegram.me/botfather) using the Bot Father.
 ![Visit Bot Father](media/channels/tg-StepVisitBotFather.png)
 
 ## Create a new Telegram bot
+
 To create a new Telegram bot, send command `/newbot`.
 
 ![Create new bot](media/channels/tg-StepNewBot.png)
@@ -48,12 +50,13 @@ Copy the Telegram bot's access token.
 ![Copy access token](media/channels/tg-StepBotCreated.png)
 
 ## Enter the Telegram bot's access token
+
 Login to the Azure Portal.  Go to your bot or [create a new Azure Bot](/quickstart-create-bot-with-azure).
 
-Go to your bot's **Channels** section in the Azure portal and click the **Telegram** button. 
+Go to your bot's **Channels** section in the Azure portal and select **Telegram**.
 
 > [!NOTE]
->  The Azure portal UI will look slightly different if you have already connected your bot to Telegram. 
+> The Azure portal UI will look slightly different if you have already connected your bot to Telegram.
 
 ![Select Telegram in channels](media/channels/tg-connectBot-Azure.png)
 
@@ -61,6 +64,6 @@ Paste the token you copied previously into the **Access Token** field and click 
 
 ![Telegram access token](media/channels/tg-accessToken-Azure.png)
 
-Your bot is now successfully configured to communicate with users in Telegram. 
+Your bot is now successfully configured to communicate with users in Telegram.
 
 ![Telegram bot enabled](media/channels/tg-botEnabled-Azure.png)
