@@ -1,13 +1,13 @@
 ---
-title: Send proactive notifications to users - Bot Service
+title: Send proactive notifications to users - Azure Bot Service
 description: Learn how bots send notification messages. See how to retrieve conversation references and test proactive messages. View code samples and design considerations.
-keywords: proactive message, notification message, bot notification, 
 author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 04/02/2021
+ms.custom: abs-meta-21q1
+ms.date: 09/01/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -22,14 +22,9 @@ Proactive messages can be useful in a variety of scenarios. For example, if the 
 
 > [!Note]
 > This article covers information about proactive messages for bots in general. For information about proactive messages in Microsoft Teams, see:
+>
 > - The **Teams conversation bot** sample in [**C#**](https://aka.ms/cs-teams-conversations-sample), [**JavaScript**](https://aka.ms/js-teams-conversations-sample), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/57.teams-conversation-bot), or [**Python**](https://aka.ms/py-teams-conversations-sample).
 > - Microsoft Teams documentation on how to [send proactive messages](/microsoftteams/platform/bots/how-to/conversations/send-proactive-messages).
-
-## Requirements
-
-Before you can send a proactive message, your bot needs a _conversation reference_. Your bot can retrieve the conversation reference from any activity it has received from the user, but this typically requires the user to interact with the bot at least once before the bot can send a proactive message.
-
-Many channels prohibit a bot from messaging a user unless the user has messaged the bot at least once. Some channels allow exceptions. For instance, the Teams channel allows your bot to send a proactive (or 1-on-1) message to individuals in an already established group conversation that includes the bot.
 
 ## Prerequisites
 
@@ -62,7 +57,7 @@ The sample has a bot, a messages endpoint, and an additional notify endpoint tha
 
 ![proactive bot](media/proactive-sample-bot.png)
 
-## Retrieve and store conversation reference
+## Retrieve and store the conversation reference
 
 When the Emulator connects to the bot, the bot receives two conversation update activities. In the bot's conversation update activity handler, the conversation reference is retrieved and stored in a dictionary as shown below.
 
@@ -86,7 +81,6 @@ When the Emulator connects to the bot, the bot receives two conversation update 
 
 [!code-java[OnConversationUpdateActivityAsync](~/../botbuilder-samples/samples/java_springboot/16.proactive-messages/src/main/java/com/microsoft/bot/sample/proactive/ProactiveBot.java?range=74-84&highlight=3,9-10)]
 
-
 # [Python](#tab/python)
 
 **bots/proactive_bot.py**
@@ -101,7 +95,7 @@ The conversation reference includes a _conversation_ property that describes the
 > [!NOTE]
 > In a real-world scenario you would persist conversation references in a database instead of using an object in memory.
 
-## Send proactive message
+## Send a proactive message
 
 The second controller, the _notify_ controller, is responsible for sending the proactive message to the user. It uses the following steps to generate a proactive message.
 
@@ -158,12 +152,18 @@ To send a proactive message, the adapter requires an app ID for the bot. In a pr
 
 1. If you have not done so already, install the [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md).
 1. Run the sample locally on your machine.
-1. Start the Emulator and connect to your bot.
+2. Start the Emulator and connect to your bot.
 1. Load to your bot's api/notify page. This will generate a proactive message in the Emulator.
 
 ## Additional information
 
 Besides the sample used in this article, additional samples are available on [GitHub](https://github.com/Microsoft/BotBuilder-Samples/).
+
+### Requirements
+
+Before you can send a proactive message, your bot needs a _conversation reference_. Your bot can retrieve the conversation reference from any activity it has received from the user, but this typically requires the user to interact with the bot at least once before the bot can send a proactive message.
+
+Many channels prohibit a bot from messaging a user unless the user has messaged the bot at least once. Some channels allow exceptions. For instance, the Teams channel allows your bot to send a proactive (or 1-on-1) message to individuals in an already established group conversation that includes the bot.
 
 ### Design considerations
 
@@ -178,7 +178,7 @@ To handle notifications more smoothly, consider other ways to integrate the noti
 The _continue conversation_ method uses the conversation reference and a turn callback handler to:
 
 1. Create a turn in which the bot application can send the proactive message. The adapter creates an `event` activity for this turn, with its name set to "ContinueConversation".
-1. Send the turn through the adapter's middleware pipeline.
+2. Send the turn through the adapter's middleware pipeline.
 1. Call the turn callback handler to perform custom logic.
 
 In the **proactive messages** sample, the turn callback handler is defined in the notify controller and sends the message directly to the conversation, without sending the proactive activity through the bot's normal turn handler.
