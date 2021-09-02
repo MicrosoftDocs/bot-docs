@@ -1,15 +1,16 @@
 ---
-title: Troubleshooting bots - Bot Service
-description: Troubleshoot general problems in bot development using technical frequently asked questions.
+title: Troubleshooting Azure Bot Service bots
+description: These frequently asked questions can help you to troubleshoot common bot development or operational issues for bots built with Azure Bot Service.
 author: DeniseMak
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: troubleshooting
 ms.service: bot-service
 ms.date: 02/20/2020
+ms.custom: abs-meta-21q1
 ---
 
-# Troubleshoot general
+# General troubleshooting for Azure Bot Service bots
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
