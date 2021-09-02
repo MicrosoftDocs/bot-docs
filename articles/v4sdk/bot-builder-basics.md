@@ -1,16 +1,17 @@
 ---
-title: How bots work - Bot Service
-description: Become familiar with the Bot Framework SDK. Understand how bots communicate with users. Learn about activities, channels, HTTP POST requests, and other topics.
-author: johnataylor
-ms.author: johtaylo
+title: Basics of the Bot Framework Service
+description: Become familiar with the Bot Framework Service. Understand how bots communicate with users, and learn about activities, channels, HTTP POST requests, and more.
+author: kamrani
+ms.author: kamrani
 manager: kamrani
 ms.topic: conceptual
 ms.service: bot-service
 ms.date: 08/16/2021
 monikerRange: 'azure-bot-service-4.0'
+ms.custom: abs-meta-21q1
 ---
 
-# How bots work
+# Basics of the Bot Framework Service
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
