@@ -1,12 +1,13 @@
 ---
-title: Create messages with the Bot Connector API  - Bot Service
+title: Create messages with the Bot Framework Connector service - Azure Bot Service
 description: Become familiar with the messages that bots use to communicate with users. Learn about properties used to format text, attach files, and specify other behavior.
-author: RobStand
+author: MarcFromTerawe
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 12/13/2017
+ms.custom: abs-meta-21q1
+ms.date: 09/01/2021
 ---
 
 # Create messages with the Bot Connector API
@@ -15,7 +16,7 @@ Your bot will send [Activity][] objects of type **message** to communicate infor
 
 ## Message text and formatting
 
-Message text can be formatted using **plain**, **markdown**, or **xml**. The default format for the `textFormat` property is **markdown** and interprets text using Markdown formatting standards. The level of text format support varies across channels. 
+Message text can be formatted using **plain**, **markdown**, or **xml**. The default format for the `textFormat` property is **markdown** and interprets text using Markdown formatting standards. The level of text format support varies across channels.
 
 [!INCLUDE [Channel Inspector intro](~/includes/snippet-channel-inspector.md)]
 
@@ -35,7 +36,7 @@ Many channels support the ability for a bot or user to "mention" someone within 
 
 ### Place entities
 
-To convey location-related information within a message, populate the message's`entities` property with [Place][] object.
+To convey location-related information within a message, populate the message's `entities` property with [Place][] objects.
 
 ## Channel data
 
