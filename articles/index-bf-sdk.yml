@@ -9,8 +9,10 @@ metadata:
   ms.service: bot-service #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
   author: JonathanFingold #Required; your GitHub user alias, with correct capitalization.
-  ms.author: botcc #Required; microsoft alias of author; optional team alias.
+  ms.author: kamrani #Required; microsoft alias of author; optional team alias.
+  manager: kamrani
   ms.date: 07/22/2020 #Required; mm/dd/yyyy format.
+  ms.custom: abs-meta-21q1
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -38,13 +40,9 @@ landingContent:
     linkLists:
       - linkListType: quickstart
         links:
-          - text: Create a bot using .NET
-            url: https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-sdk-quickstart
-          - text: Create a bot using JavaScript
-            url: https://docs.microsoft.com/azure/bot-service/javascript/bot-builder-javascript-quickstart
-          - text: Create a bot using Python
-            url: https://docs.microsoft.com/azure/bot-service/python/bot-builder-python-quickstart
-          - text: Create a bot using Azure Bot Service
+          - text: Create a basic bot
+            url: https://docs.microsoft.com/azure/bot-service/bot-service-quickstart-create-bot
+          - text: Create an Azure Bot resource
             url: https://docs.microsoft.com/azure/bot-service/abs-quickstart
 
   # Card
@@ -64,8 +62,8 @@ landingContent:
         links:
           - text: .NET
             url: https://docs.microsoft.com/dotnet/api/?view=botbuilder-dotnet-stable
-          - text: Java (preview)
-            url: https://docs.microsoft.com/java/api/?view=botbuilder-java-preview
+          - text: Java
+            url: https://docs.microsoft.com/java/api/?view=botbuilder-java
           - text: JavaScript
             url: https://docs.microsoft.com/javascript/api/botbuilder
           - text: Python

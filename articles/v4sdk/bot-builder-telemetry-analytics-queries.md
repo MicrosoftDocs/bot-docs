@@ -442,7 +442,7 @@ customEvents
 
 #### Sample average-steps query results
 
-| Dialog Id               | avg steps | min steps | max steps | std  | avg short by steps | avg short by percent |
+| Dialog ID               | avg steps | min steps | max steps | std  | avg short by steps | avg short by percent |
 | ----------------------- | --------: | :-------: | :-------: | ---: | :----------------: | -------------------: |
 | FindArticlesDialog      | 6.2       | 2         | 7         | 2.04 | 0.8                | 11.4%                |
 | CreateTicket            | 4.3       | 2         | 5         | 1.5  | 0.7                | 14%                  |
@@ -541,9 +541,9 @@ Common log analytics fields in Application Insights instrumentation.
 | name             | Message type           | BotMessageSend, BotMessageReceived, LuisResult, WaterfallStep, WaterfallStart, SkillWebSocketProcessRequestLatency, SkillWebSocketOpenCloseLatency, WaterfallComplete, QnaMessage, WaterfallCancel, SkillWebSocketTurnLatency, AuthPromptValidatorAsyncFailure |
 | customDimensions | SDK Bot Analytics      | activityId=\<id>,  activityType=message,  channelId=emulator,  fromId=\<id>,  fromName=User,  locale=en-us,  recipientId=\<id>,  recipientName=Bot,  text=find  a coffee shop |
 | timestamp        | Time of event          | 2019-09-05T18:32:45.287082Z                                  |
-| instance_Id      | Conversation Id        | f7b2c416-a680-4b2c-b4cc-79c0f03d8711                         |
-| operation_Id     | Turn Id                | 084b2856947e3844a5a18a8476d99aaa                             |
-| user_Id          | Unique channel user id | emulator7c259c8e-2f47...                                     |
+| instance_Id      | Conversation ID        | f7b2c416-a680-4b2c-b4cc-79c0f03d8711                         |
+| operation_Id     | Turn ID                | 084b2856947e3844a5a18a8476d99aaa                             |
+| user_Id          | Unique channel user ID | emulator7c259c8e-2f47...                                     |
 | client_IP        | Client ip address      | 127.0.0.1 (may be absent due to privacy block)               |
 | client_City      | Client city            | Redmond (if detected, may be absent)                         |
 
@@ -587,8 +587,8 @@ QnAMaker instrumentation stores its data in the following Custom Dimensions fiel
 | question        | QnA detected question      | what can you do?                                             |
 | answer          | QnA answer                 | You have questions, I may have  answers.                     |
 | articleFound    | QnA                        | true                                                         |
-| questionId      | QnA question Id            | 488                                                          |
-| knowledgeBaseId | QnA KB Id                  | 2a4936f3-b2c8-44ff-b21f-67bc413b9727                         |
+| questionId      | QnA question ID            | 488                                                          |
+| knowledgeBaseId | QnA KB ID                  | 2a4936f3-b2c8-44ff-b21f-67bc413b9727                         |
 | matchedQuestion | Array of matched questions | ["Can you explain to me what your  role is?","Can  you tell me a bit about yourself?","Can  you tell me about you?","could  you help me","hmmm so  what can you do?","how  can you help me","How  can you help me?","How  can you help?","so  how can i  use you in my projects?","Talk to  me about your capability","What  are you capable of?",… |
 
 ## See Also

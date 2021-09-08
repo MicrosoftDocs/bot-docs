@@ -1,5 +1,5 @@
 ---
-title: Test and debug bots using the Bot Framework Emulator - Bot Service
+title: Test and debug bots using the Bot Framework Emulator
 description: Learn how to inspect, test, and debug bots using the Bot Framework Emulator desktop application.
 keywords: transcript, msbot tool, language services, speech recognition
 author: DeniseMak
@@ -8,9 +8,10 @@ manager: kamrani
 ms.topic: article
 ms.service: bot-service
 ms.date: 05/10/2021
+ms.custom: abs-meta-21q1
 ---
 
-# Debug with the Emulator
+# Test and debug with the Emulator
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
@@ -107,7 +108,7 @@ NO_PROXY=localhost
 
 If a bot requires authentication, displaying a login dialog, you must configure the Emulator as shown below.
 
-#### Using sign-in verification code
+#### Using a sign-in verification code
 
 1. Start the Emulator.
 1. In the Emulator, click the gear icon in the bottom left, or the **Emulator Settings** tab in the upper right.
@@ -153,7 +154,7 @@ When creating an AD identity provider application, remember the following:
 
 For more information, see [Create an Azure AD identity provider application](bot-builder-tutorial-authentication.md#create-an-azure-ad-identity-provider-application) and [Register a new application using the Azure portal](/azure/active-directory/develop/quickstart-register-app#register-a-new-application-using-the-azure-portal).
 
-## View detailed Message Activity with the Inspector
+## View detailed Message Activities with the Inspector
 
 Send a message to your bot and the bot should respond back. You can click on the message bubble within the conversation window and inspect the raw JSON activity using the **INSPECTOR** feature to the right side of the window. When selected, the message bubble will turn yellow and the activity JSON object will be displayed to the left of the chat window. The JSON information includes key metadata, including the channel ID, activity type, conversation ID, the text message, endpoint URL, and so on. You can inspect activities sent from the user, as well as activities the bot responds with.
 
@@ -256,7 +257,7 @@ The Bot Framework Emulator is open source. You can [contribute][EmulatorGithubCo
 
 For troubleshooting, see [troubleshoot general problems](bot-service-troubleshoot-bot-configuration.md) and the other troubleshooting articles in that section.
 
-## Next steps
+## Next step
 
 Use inspection middleware to debug a bot connected to a channel.
 

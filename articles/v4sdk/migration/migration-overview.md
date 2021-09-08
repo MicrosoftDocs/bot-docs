@@ -118,7 +118,7 @@ Fail out of a dialog. | `IDialogContext.Fail` | Throw an exception to be caught 
 To get the incoming activity | IMessage | TurnContext.activity | count | Small
 To create and send an activity to the user | Call Session.send('message') | Call TurnContext.sendActivity | count | Small |
 State management | UserState & ConversationState UserState.get(), UserState.saveChanges(), ConversationState.get(), ConversationState.saveChanges() | UserState & ConversationState with property accessors | count | Medium to Large (See [user state management](../bot-builder-concept-state.md#state-management) available) |
-Handle the start of your dialog | call session.beginDialog, passing in the id of the dialog | call DialogContext.beginDialog | count | Small |
+Handle the start of your dialog | call session.beginDialog, passing in the ID of the dialog | call DialogContext.beginDialog | count | Small |
 Send an activity | Call Session.send | Call TurnContext.sendActivity | count | Small |
 Wait for a user's response | call a prompt from within the waterfall step, ex: builder.Prompts.text(session, 'Please enter your destination'). Retrieve the response in the next step. | Return await TurnContext.prompt to begin a prompt dialog. Then retrieve the result in the next step of the waterfall. | count | Medium (depends on flow) |
 Handle continuation of your dialog | Automatic | Add additional steps to a waterfall dialog, or implement Dialog.continueDialog | count | Large |

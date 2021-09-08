@@ -1923,6 +1923,11 @@
       "source_path": "articles/what-is-new-archive.md",
       "redirect_url": "/azure/bot-service/what-is-new",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "articles/bot-service-overview-introduction.md",
+      "redirect_url": "/azure/bot-service/bot-service-overview",
+      "redirect_document_id": true
     }
   ]
 }

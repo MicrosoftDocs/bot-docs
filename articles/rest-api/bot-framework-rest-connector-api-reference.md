@@ -1,16 +1,16 @@
 ---
-title: API reference - Bot Service
-description: Learn about headers, operations, objects, and errors in the Bot Connector service and Bot State service.
-author: ivorb
+title: Bot Framework Connector service REST API reference
+description: Learn about headers, operations, objects, and errors in the Bot Framework Connector service.
+author: erhopf
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: reference
 ms.service: bot-service
 ms.date: 12/28/2020
-
+ms.custom: abs-meta-21q1
 ---
 
-# API reference - Bot Connector
+# API reference for the Bot Framework Connector service
 
 > [!NOTE]
 > The REST API is not equivalent to the SDK. The REST API is provided to allow standard REST communication, however the preferred method of interacting with the Bot Framework is the SDK.
@@ -125,20 +125,20 @@ Use these operations to create conversations, send messages (activities), and ma
 | Operation | Description |
 |----|----|
 | [Create Conversation](#create-conversation) | Creates a new conversation. |
-| [Delete Activity](#delete-activity) | Deletes an existing activity. |
-| [Delete Conversation Member](#delete-conversation-member) | Removes a member from a conversation. |
-| [Get Activity Members](#get-activity-members) | Gets the members of the specified activity within the specified conversation. |
-| [Get Conversation Member](#get-conversation-member) | Gets details about a member of a conversation. |
-| [Get Conversation Members](#get-conversation-members) | Gets the members of the specified conversation. |
-| [Get Conversation Paged Members](#get-conversation-paged-members) | Gets the members of the specified conversation one page at a time. |
-| [Get Conversations](#get-conversations) | Gets a list of conversations the bot has participated in. |
-| [Reply to Activity](#reply-to-activity) | Sends an activity (message) to the specified conversation, as a reply to the specified activity. |
+| [Delete activity](#delete-activity) | Deletes an existing activity. |
+| [Delete conversation member](#delete-conversation-member) | Removes a member from a conversation. |
+| [Get activity members](#get-activity-members) | Gets the members of the specified activity within the specified conversation. |
+| [Get conversation member](#get-conversation-member) | Gets details about a member of a conversation. |
+| [Get conversation members](#get-conversation-members) | Gets the members of the specified conversation. |
+| [Get conversation paged members](#get-conversation-paged-members) | Gets the members of the specified conversation one page at a time. |
+| [Get conversations](#get-conversations) | Gets a list of conversations the bot has participated in. |
+| [Reply to activity](#reply-to-activity) | Sends an activity (message) to the specified conversation, as a reply to the specified activity. |
 | [Send Conversation History](#send-conversation-history) | Uploads a transcript of past activities to the conversation. |
-| [Send to Conversation](#send-to-conversation) | Sends an activity (message) to the end of the specified conversation. |
-| [Update Activity](#update-activity) | Updates an existing activity. |
-| [Upload Attachment to Channel](#upload-attachment-to-channel) | Uploads an attachment directly into a channel's blob storage. |
+| [Send to conversation](#send-to-conversation) | Sends an activity (message) to the end of the specified conversation. |
+| [Update activity](#update-activity) | Updates an existing activity. |
+| [Upload attachment to channel](#upload-attachment-to-channel) | Uploads an attachment directly into a channel's blob storage. |
 
-### Create Conversation
+### Create conversation
 
 Creates a new conversation.
 
@@ -151,7 +151,7 @@ POST /v3/conversations
 | **Request body** | A [ConversationParameters](#conversationparameters-object) object |
 | **Returns** | A [ConversationResourceResponse](#conversationresourceresponse-object) object |
 
-### Delete Activity
+### Delete activity
 
 Some channels allow you to delete an existing activity. If successful, this operation removes the specified activity from the specified conversation.
 
@@ -164,7 +164,7 @@ DELETE /v3/conversations/{conversationId}/activities/{activityId}
 | **Request body** | n/a |
 | **Returns** | An HTTP Status code that indicates the outcome of the operation. Nothing is specified in the body of the response. |
 
-### Delete Conversation Member
+### Delete conversation member
 
 Removes a member from a conversation. If that member was the last member of the conversation, the conversation will also be deleted.
 
@@ -177,7 +177,7 @@ DELETE /v3/conversations/{conversationId}/members/{memberId}
 | **Request body** | n/a |
 | **Returns** | An HTTP Status code that indicates the outcome of the operation. Nothing is specified in the body of the response. |
 
-### Get Activity Members
+### Get activity members
 
 Gets the members of the specified activity within the specified conversation.
 
@@ -190,7 +190,7 @@ GET /v3/conversations/{conversationId}/activities/{activityId}/members
 | **Request body** | n/a |
 | **Returns** | An array of [ChannelAccount](#channelaccount-object) objects |
 
-### Get Conversations
+### Get conversations
 
 Gets a list of conversations the bot has participated in.
 
@@ -203,7 +203,7 @@ GET /v3/conversations?continuationToken={continuationToken}
 | **Request body** | n/a |
 | **Returns** | A [ConversationsResult](#conversationsresult-object) object |
 
-### Get Conversation Member
+### Get conversation member
 
 Gets details about a specific member of a specific conversation.
 
@@ -216,7 +216,7 @@ GET /v3/conversations/{conversationId}/members/{memberId}
 | **Request body** | n/a |
 | **Returns** | A [ChannelAccount](#channelaccount-object) object for the member. |
 
-### Get Conversation Members
+### Get conversation members
 
 Gets the members of the specified conversation.
 
@@ -229,7 +229,7 @@ GET /v3/conversations/{conversationId}/members
 | **Request body** | n/a |
 | **Returns** | An array of [ChannelAccount](#channelaccount-object) objects for the members of the conversation. |
 
-### Get Conversation Paged Members
+### Get conversation paged members
 
 Gets the members of the specified conversation one page at a time.
 
@@ -242,7 +242,7 @@ GET /v3/conversations/{conversationId}/pagedmembers?pageSize={pageSize}&continua
 | **Request body** | n/a |
 | **Returns** | A [PagedMembersResult](#pagedmembersresult-object) object |
 
-### Reply to Activity
+### Reply to activity
 
 Sends an activity (message) to the specified conversation, as a reply to the specified activity. The activity will be added as a reply to another activity, if the channel supports it. If the channel does not support nested replies, then this operation behaves like [Send to Conversation](#send-to-conversation).
 
@@ -255,7 +255,7 @@ POST /v3/conversations/{conversationId}/activities/{activityId}
 | **Request body** | An [Activity](#activity-object) object |
 | **Returns** | A [ResourceResponse](#resourceresponse-object) object |
 
-### Send Conversation History
+### Send conversation history
 
 Uploads a transcript of past activities to the conversation so that the client can render them.
 
@@ -268,7 +268,7 @@ POST /v3/conversations/{conversationId}/activities/history
 | **Request body** | A [Transcript](#transcript-object) object. |
 | **Returns** | A [ResourceResponse](#resourceresponse-object) object. |
 
-### Send to Conversation
+### Send to conversation
 
 Sends an activity (message) to the specified conversation. The activity will be appended to the end of the conversation according to the timestamp or semantics of the channel. To reply to a specific message within the conversation, use [Reply to Activity](#reply-to-activity) instead.
 
@@ -281,7 +281,7 @@ POST /v3/conversations/{conversationId}/activities
 | **Request body** | An [Activity](#activity-object) object |
 | **Returns** | A [ResourceResponse](#resourceresponse-object) object |
 
-### Update Activity
+### Update activity
 
 Some channels allow you to edit an existing activity to reflect the new state of a bot conversation. For example, you might remove buttons from a message in the conversation after the user has clicked one of the buttons. If successful, this operation updates the specified activity within the specified conversation.
 
@@ -294,7 +294,7 @@ PUT /v3/conversations/{conversationId}/activities/{activityId}
 | **Request body** | An [Activity](#activity-object) object |
 | **Returns** | A [ResourceResponse](#resourceresponse-object) object |
 
-### Upload Attachment to Channel
+### Upload attachment to channel
 
 Uploads an attachment for the specified conversation directly into a channel's blob storage. This enables you to store data in a compliant store.
 
@@ -305,7 +305,7 @@ POST /v3/conversations/{conversationId}/attachments
 | Content | Description |
 |----|----|
 | **Request body** | An [AttachmentData](#attachmentdata-object) object. |
-| **Returns** | A [ResourceResponse](#resourceresponse-object) object. The **id** property specifies the attachment ID that can be used with the [Get Attachment Info](#get-attachment-info) operation and the [Get Attachment](#get-attachment) operation. |
+| **Returns** | A [ResourceResponse](#resourceresponse-object) object. The **id** property specifies the attachment ID that can be used with the [Get attachment information](#get-attachment-information) operation and the [Get attachment](#get-attachment) operation. |
 
 ## Attachment operations
 
@@ -313,10 +313,10 @@ Use these operations to retrieve information about an attachment as well the bin
 
 | Operation | Description |
 |----|----|
-| [Get Attachment Info](#get-attachment-info) | Gets information about the specified attachment, including file name, file type, and the available views (e.g. original or thumbnail). |
+| [Get Attachment Info](#get-attachment-information) | Gets information about the specified attachment, including file name, file type, and the available views (e.g. original or thumbnail). |
 | [Get Attachment](#get-attachment) | Gets the specified view of the specified attachment as binary content. |
 
-### Get Attachment Info
+### Get attachment information
 
 Gets information about the specified attachment, including file name, type, and the available views (e.g. original or thumbnail).
 
@@ -329,7 +329,7 @@ GET /v3/attachments/{attachmentId}
 | **Request body** | n/a |
 | **Returns** | An [AttachmentInfo](#attachmentinfo-object) object |
 
-### Get Attachment
+### Get attachment
 
 Gets the specified view of the specified attachment as binary content.
 

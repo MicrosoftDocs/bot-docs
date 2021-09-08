@@ -58,8 +58,8 @@ With your transcript file loaded, you are now ready to debug interactions that y
 * Time the message was sent.
 * Plain text sent contained "Yes".
 * Message was sent to our bot.
-* User id and information.
-* Channel id, capabilities and information.
+* User ID and information.
+* Channel ID, capabilities, and information.
 
 ![debug using transcript](./media/emulator_transcript_debug.png)
 

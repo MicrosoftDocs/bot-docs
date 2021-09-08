@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot bot HTTP 500 errors - Bot Service
+title: Troubleshoot HTTP 500 Internal Service Errors with Azure Bot Service
 description: Learn how to troubleshoot HTTP 500 errors. See how to enable Application Insights, retrieve information on exceptions, and check logs and configuration files.
 keywords: troubleshoot, HTTP 500, problems.
 author: jonathanFingold
@@ -7,10 +7,11 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 11/19/2019
+ms.date: 09/01/2021
+ms.custom: abs-meta-21q1
 ---
 
-# Troubleshoot HTTP 500 errors
+# Troubleshoot HTTP 500 Internal Service Errors
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
@@ -25,11 +26,11 @@ For AppInsights samples, see the luis-with-appinsights [C# sample](https://githu
 
 See [conversation analytics telemetry](./v4sdk/bot-builder-telemetry.md) for information about how to add Application Insights to an existing bot.
 
-## Enable Application Insights on ASP.NET
+## Enable Application Insights for ASP.NET
 
 For basic Application Insights support, see how to [set up Application Insights for your ASP.NET website](/azure/application-insights/app-insights-asp-net). The Bot Framework (starting with v4.2) provides an additional level of Application Insights telemetry, but it is not required for diagnosing HTTP 500 errors.
 
-## Enable Application Insights on Node.js
+## Enable Application Insights for Node.js
 
 For basic Application Insights support, see how to [monitor your Node.js services and apps with Application Insights](/azure/azure-monitor/learn/nodejs-quick-start). The Bot Framework (starting with v4.2) provides an additional level of Application Insights telemetry, but it is not required for diagnosing HTTP 500 errors.
 
@@ -68,7 +69,7 @@ If you have only `exceptions`, analyze the details and see if they correspond to
 
 If you are receiving 500 errors and there are no further events within Application Insights from your bot, check the following:
 
-### Ensure bot runs locally
+### Ensure the bot runs locally
 
 Make sure your bot runs locally first with the Emulator.
 
@@ -176,3 +177,8 @@ Bot ASP.NET and Node will emit logs at the server level that can be inspected.
 1. Verify that you are receiving new logs.
    - If there is no activity, redeploy your bot.
    - Then switch to the **Application logs** page and look for any errors.
+
+
+## Next steps
+
+* [General troubleshooting for Azure Bot Service bots](./bot-service-troubleshoot-general-problems.md)

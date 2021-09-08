@@ -11,6 +11,6 @@ After you have deployed your bot to the cloud and verified that the deployment w
 
 1. [Register your bot with the Bot Framework](~/bot-service-quickstart-registration.md).
 
-2. Update the Microsoft App Id and Microsoft App Password values in your deployed application's configuration settings to specify the **appID** and **password** values that were generated for your bot during the registration process. To find your bot's **AppID** and **AppPassword**, see [MicrosoftAppID and MicrosoftAppPassword](~/bot-service-manage-overview.md#microsoftappid-and-microsoftapppassword).
+2. Update the Microsoft app ID and Microsoft app password values in your deployed application's configuration settings to specify the **appID** and **password** values that were generated for your bot during the registration process. To find your bot's **AppID** and **AppPassword**, see [MicrosoftAppID and MicrosoftAppPassword](~/bot-service-manage-overview.md#microsoftappid-and-microsoftapppassword).
 
 3. [Configure the bot to run on one or more channels](~/bot-service-manage-channels.md).

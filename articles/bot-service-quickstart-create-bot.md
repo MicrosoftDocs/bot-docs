@@ -1,14 +1,14 @@
 ---
-title: Create a bot with the Bot Framework SDK in C#, Java, JavaScript, Python - Bot Service
+title: Create a bot with the Bot Framework SDK in C#, Java, JavaScript, or Python - Azure Bot Service
 description: Create your first bot with the Bot Framework SDK using C#, Java, JavaScript or Python.
-keywords: quickstart, create bot, web app bot, c#, python, javascript, java
+keywords: quickstart, create bot, web app bot, c#, python, javascript, java, emulator
 author: kamrani
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: quickstart
 ms.service: bot-service
-ms.date: 07/26/2021
-ms.custom: mode-api, tab-zone-seo
+ms.date: 09/01/2021
+ms.custom: mode-api, tab-zone-seo, abs-meta-21q1
 ---
 
 # Create a bot with the Bot Framework SDK

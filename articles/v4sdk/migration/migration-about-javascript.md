@@ -123,7 +123,7 @@ Here's a list of common operations in v3, and how to accomplish them within a wa
 
 | Operation | v3 | v4 |
 |:---|:---|:---|
-| Handle the start of your dialog | call `session.beginDialog`, passing in the id of the dialog | call `DialogContext.beginDialog` |
+| Handle the start of your dialog | call `session.beginDialog`, passing in the ID of the dialog | call `DialogContext.beginDialog` |
 | Send an activity | Call `session.send`. | Call `TurnContext.sendActivity`.<br/>Use the step context's `Context` property to get the turn context (`step.context.sendActivity`).  |
 | Wait for a user's response | call a prompt from within the waterfall step, ex: `builder.Prompts.text(session, 'Please enter your destination')`. Retrieve the response in the next step. | Return await `TurnContext.prompt` to begin a prompt dialog. Then retrieve the result in the next step of the waterfall. |
 | Handle continuation of your dialog | Automatic | Add additional steps to a waterfall dialog, or implement `Dialog.continueDialog` |

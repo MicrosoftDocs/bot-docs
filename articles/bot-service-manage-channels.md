@@ -1,34 +1,31 @@
 ---
-title: Configure a bot to run on one or more channels - Bot Service
-description: Learn how to configure a bot to run on one or more channels using the Bot Framework Portal.
-keywords: bot channels, configure, facebook messenger, kik, slack, azure portal
-author: ivorb
+title: Configure an Azure Bot Service bot to run on one or more channels
+description: A channel connects a communication application to a bot. Learn how to configure a bot to run a channel using the Azure portal, Direct Line, or a custom adapter.
+keywords: bot, channel, Azure portal, Direct Line, custom adapter
+author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 05/06/2021
+ms.date: 09/01/2021
+ms.custom: abs-meta-21q1
 ---
 
-# Connect a bot to channels
+# Configure a bot to run on one or more channels
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-A channel is a connection between communication applications and a bot. A bot, registered with Azure, uses channels to facilitate the communication with users.
-
-You can configure a bot to connect to any of the standard channels such as Alexa, Facebook Messenger, and Slack. For more information, see [Azure Bot registration](bot-service-quickstart-registration.md).
-
-In addition to the provided channels, you can also connect a bot to your communication application using **Direct Line** as the channel. For more information, see [Connect a bot to Direct Line](bot-service-channel-connect-directline.md).
+A channel is a connection between a communication application and a bot. A bot, registered with Azure, uses channels to facilitate the communication with users. You can configure a bot to connect to any of the standard channels such as Alexa, Facebook Messenger, and Slack. For more information, see [Azure Bot registration](bot-service-quickstart-registration.md). In addition to the provided channels, you can also connect a bot to your communication application using Direct Line as the channel. For more information, see [Connect a bot to Direct Line](bot-service-channel-connect-directline.md).
 
 The Bot Framework allows you to develop a bot in a channel-agnostic way by normalizing messages that the bot sends to a channel. This implies the following:
 
-- Convert the messages from the Bot Framework schema into the channel's schema.
-- If the channel does not support all aspects of the Bot Framework schema, the Bot Connector service tries to convert the message to a format that the channel does support. For example, if the bot sends a message that contains a card with action buttons to the email channel, the connector may send the card as an image and include the actions as links in the message's text.
-- For most channels, you must provide channel configuration information to run a bot on the channel. Most channels require that a bot have an account on the channel. Others, like Facebook Messenger, require a bot to have an application registered with the channel also.
+- The service or an adapter translates communication between the Bot Framework Activity schema and the channel's schema.
+- If the channel does not support all aspects of the activity schema, the Bot Connector Service tries to convert the message to a format that the channel does support. For example, if the bot sends a message that contains a card with action buttons to the email channel, the connector may send the card as an image and include the actions as links in the message's text.
+- For most channels, you must provide channel configuration information to run a bot on the channel. Most channels require that a bot have an account on the channel. Others, like Facebook Messenger, require a bot to have an application registered with the channel.
 
 To configure a bot to connect to a channel, complete the following steps:
 
-1. Sign in to the [Azure Portal](https://portal.azure.com).
+1. Sign in to the [Azure portal](https://portal.azure.com).
 1. Select the bot that you want to configure.
 1. In the left pane, select **Channels** under **Bot Management**.
 1. In the right pane, select the icon of the channel you want to add to your bot.
@@ -37,7 +34,7 @@ To configure a bot to connect to a channel, complete the following steps:
 
 After you've configured the channel, users on that channel can start using your bot.
 
-## Connect a bot to a channel
+## Channels list
 
 The connection steps are different for each channel. See the related article in the table below more information.
 
@@ -46,11 +43,11 @@ The connection steps are different for each channel. See the related article in 
 > |:-|:-|
 > |[Alexa](bot-service-channel-connect-alexa.md) <img width="150px"/>|Communicate with users through Alexa devices that support Custom Skills.|
 > |[Direct Line](bot-service-channel-directline.md)| Integrate a bot into a mobile app, web page, or other applications.|
-> |[Office 365 email](bot-service-channel-connect-email.md)|Enable a bot to communicate with users via Office 365 email.|
 > |[Facebook](bot-service-channel-connect-facebook.md)|Connect a bot to both Facebook Messenger and Facebook Workplace, so that it can communicate with users on both platforms.|
 > |[Kik](bot-service-channel-connect-groupMe.md)|Configure a bot to communicate with users through the Kik messaging app.|
 > |[LINE](bot-service-channel-connect-line.md)|Configure a bot to communicate with users through the LINE app.|
 > |[Microsoft Teams](channel-connect-teams.md)|Configure a bot to communicate with users through Microsoft Teams.|
+> |[Office 365 email](bot-service-channel-connect-email.md)|Enable a bot to communicate with users via Office 365 email.|
 > |[Skype](bot-service-channel-connect-skype.md)|Configure a bot to communicate with users through Skype.|
 > |[Skype for Business](bot-service-channel-connect-skypeforbusiness.md)|Configure a bot to communicate with users through Skype for Busines.|
 > |[Slack](bot-service-channel-connect-slack.md)|Configure a bot to communicate with users through Slack.|
@@ -62,11 +59,11 @@ The connection steps are different for each channel. See the related article in 
 > |[Webex](bot-service-adapter-connect-webex.md)|Configure a bot to communicate with users using the Webex.|
 > |[Additional channels](bot-service-channel-additional-channels.md)|Additional channels available as an adapter through [provided platforms](https://botkit.ai/docs/v4/platforms/) via Botkit and [community repositories](https://botkit.ai/docs/v4/platforms/).|
 
-## Bot schema transformation version
+## Select the protocol schema transformation version
 
 As described above, a channel converts incoming messages from other services to the Bot Framework protocol schema. Likewise, messages sent by the bot to other services are transformed from the Bot Framework native schema to the format of these services. This process is called _schema transformation_. The Bot Framework Service maintains backward compatibility of the protocol in order to avoid changing behavior of the existing bots.
 
-Occasionally, a change in the schema transformation process needs to take place that can, potentially, change the behavior of the existing bots. An example of such a change could be any bug fix if a subset of the users have taken a dependency on the existing (however erroneous) behavior. Another example of such a change would be updates or improvements in other services that would benefit bots; however adopting these updates can, potentially, change the existing behavior.
+Occasionally, a change in the schema transformation process needs to take place that can, potentially, change the behavior of the existing bots. An example of such a change could be any bug fix, if a subset of the users have taken a dependency on the existing (however erroneous) behavior. Another example of such a change would be updates or improvements in other services that would benefit bots; however adopting these updates can, potentially, change the existing behavior.
 
 By controlling the _schema transformation version_ of their bots, bot developers can control when (if ever) to enable new behavior. By default, newly created bots get the most recent schema transformation version. Existing bots can be upgraded to the newest version when they are ready to take advantage of the improvements introduced in this version. Any bot can be upgraded or downgraded at any time.
 
@@ -95,11 +92,9 @@ You can change your bot's schema transformation version in the **Configuration**
 - **Version 1.0**
   - Original version
 
-## Publish a bot
+## Connect your bot to one or more channels
 
-The publishing process is different for each channel.
-
-[!INCLUDE [publishing](./includes/snippet-publish-to-channel.md)]
+The publishing process is different for each channel. For more information, see the article for each specific channel.
 
 ## Additional resources
 

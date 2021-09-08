@@ -1,13 +1,13 @@
 ---
-title: Connect a bot to Microsoft Teams - Bot Service
-description: Learn how to connect a bot to Microsoft Teams. See how to set up the bot as a contact that you can exchange messages with in Teams.
+title: Connect a bot to Microsoft Teams in Bot Framework SDK
+description: Learn how to connect a bot to Microsoft Teams. Set up the bot as a contact to exchange messages.
 keywords: Teams, bot channel, configure Teams
 author: kamrani
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 07/01/2021
+ms.date: 09/02/2021
 ---
 
 # Connect a bot to Microsoft Teams
@@ -40,6 +40,8 @@ After adding the Teams channel, go to the **Channels** page and click on **Get b
 
 > [!NOTE]
 > When switching between local development, staging, or production environments, use one bot channel registration per environment, to avoid changing the endpoint repeatedly.
+>
+> Deleting the Teams channel registration will cause a new pair of keys to be generated when it is re-enabled. This invalidates all 29:xxx and a:xxx IDs that the bot may have stored for proactive messaging.
 
 ## Additional information
 

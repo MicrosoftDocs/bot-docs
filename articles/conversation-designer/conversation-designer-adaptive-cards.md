@@ -50,7 +50,7 @@ The code snippet below shows how the **myName** entity is defined in code:
 }
 ```
 
-Additionally, if a field has an id of `@task` then the value of the field will be used as a task name. When this field is triggered (e.g.: a button click), then the named task will be executed. 
+Additionally, if a field has an ID of `@task` then the value of the field will be used as a task name. When this field is triggered (such as with a button click), then the named task will be executed. 
 
 Take this snippet code for example:
 
