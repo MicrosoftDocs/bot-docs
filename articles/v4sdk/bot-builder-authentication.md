@@ -1,12 +1,13 @@
 ---
-title: Add authentication to a bot via Azure Bot Service
-description: Describes how to use the Azure Bot Service authentication features in your bot.
+title: Add authentication to a bot in Bot Framework SDK
+description: Learn how to add user's authentication to your bot using Azure authentication.
 author: mmiele
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 06/23/2021
+ms.custom: abs-meta-21q1
+ms.date: 09/01/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 

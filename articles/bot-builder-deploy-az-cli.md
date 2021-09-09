@@ -1,17 +1,18 @@
 ---
-title: Deploy your bot - Bot Service
-description: Learn how to deploy bots to the Azure cloud. See how to prepare bots for deployment, deploy the code to the Azure Web App, and test bots in Web Chat.
+title: Deploy your bot in Azure - Bot Framework SDK
+description: Prepare a bot for deployment. Deploy the bot to the Azure resource, and test it in Web Chat.
 keywords: deploy bot, Azure deploy bot, publish bot
-author: ivorb
+author: kamrani
 ms.author: kamrani
 manager: kamrani
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 07/26/2021
+ms.custom: abs-meta-21q1
+ms.date: 09/01/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Deploy your bot
+# Deploy your bot in Azure
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 

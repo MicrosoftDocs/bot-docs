@@ -1,15 +1,16 @@
 ---
-title: Add single sign on to Web Chat - Bot Service
-description: Learn about adding single sign on to Web Chat in the Bot Framework.
+title: Single sign on with a Web Chat in Bot Framework SDK
+description: Learn about the workflow when single sign on is used in a bot and with a Web Chat client. 
 author: kamrani
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: conceptual
 ms.service: bot-service
-ms.date: 07/10/2020
+ms.custom: abs-meta-21q1
+ms.date: 09/01/2021
 ---
 
-# Add single sign on to Web Chat
+# Single sign with a Web Chat
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
