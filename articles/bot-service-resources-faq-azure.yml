@@ -146,3 +146,28 @@ sections:
           - Add `ad deployment tenant` and `az deployment operation tenant` for template deployment at tenant scope
           - az policy assignment create: Add a description to the `--location` parameter
           - `az group deployment create`: Add parameter `--aux-tenants` to support cross tenants.
+      - question: What is the Azure Bot Resource?
+        answer: |
+          The Azure Bot resource is an update from the Web App Bot/Bot Channels Registration which makes it easier for developers to get started using the Bot Framework Composer bot development tool. 
+          Instead of creating resources such as a web app during bot creation, resources are created using Bot Framework Composer which offers more flexibility in what resources are deployed. 
+          Composer provides a visual design canvas that makes bot development easier.
+      - question: Why are Web App Bot and Bot Channel Registration being deprecated?
+        answer: | 
+          Functionally, Azure Bot, Web App Bot, and Bot Channels Registration all utilize the Bot Service in the same way "under the hood".
+          The Azure Bot path is easier, and more configurable for developers. Legacy items are being removed from the Azure Marketplace, though existing resources will continue to run and be supported.
+      - question: Will my Web App Bot or Bot Channel Registration keep working and for how long?
+        answer: |
+          Yes, your Web App Bot or Bot Channel Registration based resource will continue to run. 
+          There are no plans to drop support for existing bot resources.
+      - question: Do I need to migrate my existing bot to the Azure Bot?
+        answer: |
+          No, you don't need to migrate your existing bot; it will continue to run as is.
+      - question: Can I migrate my existing bot resource to an Azure Bot?
+        answer: |
+          Currently, no, this isn't supported. If your bot isn't being used in production, you can delete your old bot resource and reuse the bot name and app ID in a new bot resource (after some time for the old record to get deleted). 
+          The new Azure Bot is designed around creating your bot using Composer, and so the gains from such a migration would be minimal.
+      - question: What's the difference between the Azure Bot and the Web App Bot or Bot Channels Registration?
+        answer: |
+          The Bot Service behind Azure Bot and Web App Bot/Bot Channels Registration is the same; the change is in how the resources are created that you use in your bot such as web apps, language understanding, and more.
+          Rather than the one size fits all templates that the Web App Bot used, Bot Framework Composer can be used to create resources for the Bot with much more flexibility than the Web App Bot templates allowed.
+          Bot Channels Registration and Azure Bot are basically the same capabilities renamed. The UX is slightly different in the Azure Portal to help customers connect to the Bot Framework Composer.
