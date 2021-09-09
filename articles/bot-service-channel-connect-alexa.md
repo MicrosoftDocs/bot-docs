@@ -91,7 +91,7 @@ You can configure your bot to communicate with people using Alexa devices that s
 
 1. Click the **Save Model** button and then click **Build Model**, which will update the configuration for your skill.
 
-1. Get your **Alexa Skill Id** either from the URL in the Alexa Portal or by going to the [Alexa Developer Console](https://developer.amazon.com/alexa/console/ask) and clicking **View Skill ID**. Your Alexa Skill ID should be a value like 'amzn1.ask.skill.A GUID'.
+1. Get your **Alexa Skill Id** either from the URL in the Alexa Portal or by going to the [Alexa Developer Console](https://developer.amazon.com/alexa/console/ask) and clicking **View Skill Id**. Your Alexa Skill ID should be a value like 'amzn1.ask.skill.A GUID'.
 
 1. In the Bot Framework Portal navigate to the Alexa Channel Configuration page and paste your **Alexa Skill Id** into the **Enter skill Id** field.
 

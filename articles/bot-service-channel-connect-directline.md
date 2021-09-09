@@ -100,7 +100,7 @@ The example contains two projects:
     }
     ```
 
-- In the Azure portal, enable Direct Line in the channels list and then, configure the Direct Line secret. Make sure that the checkbox for version 3.0 is checked. In the console client project update the `App.config` file with the Direct Line secret key and the bot handle (Bot Id).
+- In the Azure portal, enable Direct Line in the channels list and then, configure the Direct Line secret. Make sure that the checkbox for version 3.0 is checked. In the console client project update the `App.config` file with the Direct Line secret key and the bot handle (Bot ID).
 
     ```xml
     <appSettings>

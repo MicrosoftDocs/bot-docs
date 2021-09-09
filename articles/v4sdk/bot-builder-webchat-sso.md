@@ -38,7 +38,7 @@ Let's analyze the flow.
         "type": "Invoke",
         "name": "signin/tokenExchange",
         "value": {
-            "id": "<any unique Id>",
+            "id": "<any unique ID>",
             "connectionName": "<connection name on the bot (from the OAuth Card)>",
             "token": "<exchangeable token>"
         }
@@ -55,7 +55,7 @@ Let's analyze the flow.
     {
         "status": "<response code>",
         "body": {
-            "id":"<unique Id>",
+            "id":"<unique ID>",
             "connectionName": "<connection Name on the bot (from the OAuth Card)>",
             "failureDetail": "<failure reason if status code is not 200, null otherwise>"
         }
