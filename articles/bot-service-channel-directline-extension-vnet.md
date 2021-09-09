@@ -1,16 +1,17 @@
 ---
-title: Use direct line app service extension within a VNET
-titleSuffix: Bot Service
-description: Learn how to use a direct line app service extension with an Azure Virtual Network. See how to create an environment and configure an outbound connection.
+title: Use Direct Line App Service extension within a VNET in Bot Framework SDK
+titleSuffix: Azure Bot Service
+description: Use a Direct Line App Service extension with an Azure Virtual Network. Create an environment and configure an outbound connection.
 services: bot-service
 manager: kamrani
 ms.service: bot-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kamrani 
-ms.date: 07/25/2019
+ms-custom: abs-meta-21q1 
+ms.date: 09/01/2019
 ---
 
-# Use direct line app service extension within a VNET
+# Use Direct Line App Service extension within a VNET
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 

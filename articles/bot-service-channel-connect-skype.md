@@ -5,9 +5,10 @@ keywords: skype, bot channels, configure skype, publish, connect to channels
 author: kamrani
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 10/11/2018
+ms-custom: abs-meta-21q1 
+ms.date: 09/01/2019
 ---
 
 # Connect a bot to Skype
