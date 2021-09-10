@@ -86,7 +86,7 @@ The [managing state](bot-builder-concept-state.md) topic describes these state a
 
 The SDK does not require you use a specific application layer to send and receive web requests.
 The Bot Framework has templates and samples for ASP.NET (C#), restify (JavaScript), and aiohttp (Python).
-However, you can choose to use a differ application layer for your app.
+However, you can choose to use a different application layer for your app.
 
 When you create a bot using the SDK, you provide the code to receive the HTTP traffic and forward it to the adapter. The Bot Framework provides a few templates and samples that you can use to develop your own bots.
 
