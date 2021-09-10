@@ -276,6 +276,10 @@ For more about LUIS, see the LUIS documentation:
 - [Migrate to V3 Authoring APIS](/azure/cognitive-services/luis/luis-migration-authoring-entities)
 - [Migrate to V3 Prediction APIs](/azure/cognitive-services/luis/luis-migration-api-v3)
 
+> [!NOTE]
+> Different parts of the SDK define separate _entity_ classes or elements.
+> For message entities, see [Entities and activity types](../bot-service-activities-entities.md).
+
 ## Next steps
 
 > [!div class="nextstepaction"]
