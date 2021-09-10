@@ -22,7 +22,7 @@ Create the **Azure Bot** resource, which will allow you to register your bot wit
 
     :::image type="content" source="../../media/azure-manage-a-bot/azure-bot-resource-create-values.png" alt-text="Create Azure bot resource values":::
 
-    You can also select *Use existing app registration* and enter your existing **app Id** and **password**.
+    You can also select *Use existing app registration* and enter your existing **app ID** and **password**.
 
     :::image type="content" source="../../media/azure-manage-a-bot/azure-bot-resource-existing-values.png" alt-text="Create Azure bot resource existing values":::
 
@@ -39,7 +39,7 @@ Create the **Azure Bot** resource, which will allow you to register your bot wit
 
 ### Azure Key Vault
 
-When Azure creates the Azure Bot resource, it also generates an **app Id** and a **password** and stores the password in Azure Key Vault.
+When Azure creates the Azure Bot resource, it also generates an **app ID** and a **password** and stores the password in Azure Key Vault.
 
 Key Vault is a service that provides centralized secrets management, with full control over access policies and audit history. For more information, see [Use Key Vault references for App Service and Azure Functions](/azure/app-service/app-service-key-vault-references). You're charged a small fee for using the service. For more information, see [Key Vault pricing](https://azure.microsoft.com/pricing/details/key-vault/).
 
