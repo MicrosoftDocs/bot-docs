@@ -1,17 +1,17 @@
 ---
-title: How to debug a bot - Bot Service
-description: Learn how to use the Bot Framework Emulator to debug bots. See how to set breakpoints in IDEs and how to exchange messages with bots during debugging.
-author: v-ducvo
-ms.author: kamrani
+title: How to debug a Bot Framework SDK bot
+description: Learn how to use Bot Framework Emulator to debug bots. See how to set breakpoints in IDEs and how to exchange messages with bots during debugging.
 keywords: Bot Framework SDK, debug bot, test bot, bot emulator, emulator
+author: JonathanFingold
+ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 11/17/2020
+ms.date: 09/10/2021
 monikerRange: "azure-bot-service-4.0"
 ---
 
-# Debugging a bot
+# Debug an SDK-first bot
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
@@ -41,21 +41,103 @@ For more information, see [Debug with the Emulator](bot-service-debug-emulator.m
 
 ## [C#](#tab/csharp)
 
-[!INCLUDE [csharp vscode](includes/bot-service-debug-bot/csharp-vscode.md)]
+### Set C# breakpoints in Visual Studio Code
 
-[!INCLUDE [csharp visual studio](includes/bot-service-debug-bot/csharp-vs.md)]
+In Visual Studio Code, you can set breakpoints and run the bot in debug mode to step through your code. To set breakpoints in VS Code, do the following:
+
+1. Launch VS Code and open your bot project folder.
+1. Set breakpoints as necessary. You can set breakpoints by hovering your mouse over the column to the left of the line numbers. A small red dot will appear. If you click on the dot, the breakpoint is set. If you click the dot again, the breakpoint is removed.
+1. From the menu bar, click **Run** and then click **Start Debugging**. Your bot will start running in debugging mode from the Terminal in Visual Studio Code.
+
+   ![Set C# breakpoint in VS Code](media/bot-service-debug-bot/csharp-breakpoint-set.png)
+
+1. Start the Bot Framework Emulator and connect to your bot as described in the [Debug with the Bot Framework Emulator](/azure/bot-service/bot-service-debug-emulator) article.
+1. From the Emulator, send your bot a message (for example, send the message "Hi"). Execution will stop at the line where you place the breakpoint.
+
+   ![Debug C# in VS Code](media/bot-service-debug-bot/breakpoint-caught-vscode.png)
+
+### Set C# breakpoints in Visual Studio
+
+In Visual Studio (VS), you can set breakpoints and run the bot in debug mode to step through your code. To set breakpoints in VS, do the following:
+
+1. Navigate to your bot folder and open the **.sln** file. This will open the solution in VS.
+1. From the menu bar, click **Build** and click **Build Solution**.
+1. In the **Solution Explorer**, click the **.cs** file and set breakpoints as necessary. This file defines your main bot logic. In VS, you can set breakpoints by hovering your mouse over the column to the left of the line numbers. A small red dot will appear. If you click on the dot, the breakpoint is set. If you click the dot again, the breakpoint is removed.
+1. From the menu, click **Debug** and click **Start Debugging**. At this point, the bot is running locally.
+
+   ![Set C# breakpoint in VS](media/bot-service-debug-bot/breakpoint-set-vs.png)
+
+<!--
+   > [!NOTE]
+   > If you get the "Value cannot be null" error, check to make sure your **Table Storage** setting is valid.
+   > The **EchoBot** is default to using **Table Storage**. To use Table Storage in your bot, you need the table *name* and *key*. If you do not have a Table Storage instance ready, you can create one or for testing purposes, you can comment out the code that uses **TableBotDataStore** and uncomment the line of code that uses **InMemoryDataStore**. The **InMemoryDataStore** is intended for testing and prototyping only.
+-->
+
+1. Start the Bot Framework Emulator and connect to your bot as described in the section above.
+1. From the Emulator, send your bot a message, such as "Hi". Execution will stop at the line where you place the breakpoint.
+
+   ![Debug C# in VS](media/bot-service-debug-bot/breakpoint-caught-vs.png)
 
 ## [JavaScript](#tab/javascript)
 
-[!INCLUDE [javascript vscode](includes/bot-service-debug-bot/js-vscode.md)]
+### Set JavaScript breakpoints in Visual Studio Code
+
+In Visual Studio Code, you can set breakpoints and run the bot in debug mode to step through your code. To set breakpoints in VS Code, do the following:
+
+1. Launch VS Code and open your bot project folder.
+2. From the menu bar, click **Debug** and click **Start Debugging**. If you are prompted to select a runtime engine to run your code, select **Node.js**. At this point, the bot is running locally.
+3. Click the **.js** file and set breakpoints as necessary. In VS Code, you can set breakpoints by hovering your mouse over the column to the left of the line numbers. A small red dot will appear. If you click on the dot, the breakpoint is set. If you click the dot again, the breakpoint is removed.
+
+   ![Set JavaScript breakpoint in VS Code](media/bot-service-debug-bot/breakpoint-set.png)
+
+4. Start the Bot Framework Emulator and connect to your bot as described in the [Debug with the Bot Framework Emulator](/azure/bot-service/bot-service-debug-emulator) article.
+5. From the Emulator, send your bot a message (for example, send the message "Hi"). Execution will stop at the line where you place the breakpoint.
+
+   ![Debug JavaScript in VS Code](media/bot-service-debug-bot/breakpoint-caught.png)
 
 ## [Java](#tab/java)
 
-[!INCLUDE [java vscode](includes/bot-service-debug-bot/java-vscode.md)]
+### Set Java breakpoints in Visual Studio Code
+
+In Visual Studio Code, you can set breakpoints and run the bot in debug mode to step through your code. See also [Create a bot with the Bot Framework SDK for Java](~/java/bot-builder-java-quickstart.md).
+
+1. Install the [Java Extension Pack](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack) in VS Code, if you have not already done so. This extension provides rich support for Java in VS Code, including debugging.
+1. Launch VS Code and open your bot project folder.
+1. Set breakpoints as necessary. You can set breakpoints by hovering your mouse over the column to the left of the line numbers. A small red dot will appear. If you click on the dot, the breakpoint is set. If you click the dot again, the breakpoint is removed.
+1. Select the `EchoBot.java` file and add a breakpoint to a desired location.
+1. From the menu bar, click **Run** and click **Start Debugging**.
+1. Select **Java** if prompted to debug the currently selected file.
+
+   ![Set Java breakpoints in VS Code](media/bot-service-debug-bot/bot-debug-java-breakpoints.png)
+
+1. Start the Bot Framework Emulator and connect to your bot as described in the [Debug with the Bot Framework Emulator](/azure/bot-service/bot-service-debug-emulator) article.
+1. From the Emulator, send your bot a message (for example, send the message "Hi"). Execution will stop at the line where you place the breakpoint.
+
+   ![Debug java in VS Code](media/bot-service-debug-bot/bot-debug-java-breakpoint-caught.png)
+
+For more information, see [Running and debugging Java](https://code.visualstudio.com/docs/java/java-debugging).
 
 ## [Python](#tab/python)
 
-[!INCLUDE [python vscode](includes/bot-service-debug-bot/python-vscode.md)]
+### Set Python breakpoints in Visual Studio Code
+
+In Visual Studio Code, you can set breakpoints and run the bot in debug mode to step through your code. See also [Create a bot with the Bot Framework SDK for Python](~/python/bot-builder-python-quickstart.md).
+
+1. Install the [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python) in VS Code, if you have not already done so. This extension provides rich support for Python in VS Code, including debugging.
+1. Launch VS Code and open your bot project folder.
+1. Set breakpoints as necessary. You can set breakpoints by hovering your mouse over the column to the left of the line numbers. A small red dot will appear. If you click on the dot, the breakpoint is set. If you click the dot again, the breakpoint is removed.
+1. Select the `app.py`.
+1. From the menu bar, click **Debug** and click **Start Debugging**.
+1. Select **Python File** to debug the currently selected file.
+
+   ![Set Python breakpoints in VS Code](media/bot-service-debug-bot/bot-debug-python-breakpoints.png)
+
+1. Start the Bot Framework Emulator and connect to your bot as described in the [Debug with the Bot Framework Emulator](/azure/bot-service/bot-service-debug-emulator) article.
+1. From the Emulator, send your bot a message (for example, send the message "Hi"). Execution will stop at the line where you place the breakpoint.
+
+   ![Debug Python in VS Code](media/bot-service-debug-bot/bot-debug-python-breakpoint-caught.png)
+
+For more information, see [Debug your Python code](/visualstudio/python/debugging-python-in-visual-studio).
 
 ---
 

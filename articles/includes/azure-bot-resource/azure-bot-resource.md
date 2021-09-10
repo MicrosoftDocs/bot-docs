@@ -4,7 +4,8 @@
 
 Create the **Azure Bot** resource, which will allow you to register your bot with the Azure Bot Service.
 
-[!INCLUDE [azure web app channel reg deprecation](../authentication/azure-webapp-chnlreg-deprecation.md)]
+> [!WARNING]
+> **Web App Bot** and **Bot Channels Registration** are deprecated but existing resources will continue to work. You should use **Azure Bot**, instead.
 
 1. Go to the [Azure portal](https://portal.azure.com/).
 1. In the right pane, select **Create a resource**.
@@ -40,6 +41,6 @@ Create the **Azure Bot** resource, which will allow you to register your bot wit
 
 When Azure creates the Azure Bot resource, it also generates an **app Id** and a **password** and stores the password in Azure Key Vault.
 
-Key Vault is a service that provides centralized secrets management, with full control over access policies and audit history. For more information, see [Use Key Vault references for App Service and Azure Functions](/azure/app-service/app-service-key-vault-references). Note that you will be charged a small fee for using the service. For more information, see [Key Vault pricing](https://azure.microsoft.com/pricing/details/key-vault/).
+Key Vault is a service that provides centralized secrets management, with full control over access policies and audit history. For more information, see [Use Key Vault references for App Service and Azure Functions](/azure/app-service/app-service-key-vault-references). You're charged a small fee for using the service. For more information, see [Key Vault pricing](https://azure.microsoft.com/pricing/details/key-vault/).
 
-[!INCLUDE [app id and password](../authentication/azure-bot-appid-password.md)]
+[!INCLUDE [app ID and password](../authentication/azure-bot-appid-password.md)]
