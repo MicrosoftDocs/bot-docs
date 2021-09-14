@@ -1,5 +1,5 @@
 ---
-title: Tutorial to deploy a basic bot - Bot Service
+title: Tutorial to deploy a basic Azure Bot Service bot
 description: Learn how to deploy bots to Azure. See the steps to prepare for deployment, deploy, and test bots.
 keywords: echo bot, deploy, azure, tutorial
 author: mmiele
@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 07/26/2021
+ms.date: 09/14/2021
 ---
 
 # Tutorial: Deploy a basic bot
@@ -100,7 +100,19 @@ For these steps, the bot's _project folder_ is the root folder for the bot.
 
 ## Additional resources
 
-[!INCLUDE [additional resources snippet](../includes/deploy/snippet-additional-resources.md)]
+When you deploy a bot, typically these resources are created in the Azure portal:
+
+| Resources      | Description |
+|----------------|-------------|
+| Azure Bot | An Azure Bot resource.|
+| [App Service](/azure/app-service/)| Enables you to build and host web applications.|
+| [App Service plan](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview)| Defines a set of compute resources for a web app to run.|
+
+If you create your bot through the Azure portal, you are able to provision additional resources, like [Application Insights for telemetry](bot-builder-telemetry.md).
+
+To see documentation on `az bot` commands, see the [reference](/cli/azure/bot) topic.
+
+If you are unfamiliar with Azure resource group, see this [terminology](/azure/azure-resource-manager/resource-group-overview#terminology) topic.
 
 ## Next steps
 

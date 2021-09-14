@@ -2,12 +2,12 @@
 title: Add telemetry to your bot in Azure Bot Service
 description: Learn how to view information on bot availability, performance, usage, and behavior. See how to turn on telemetry tracking for Application Insights.
 keywords: telemetry, appinsights, monitor bot
-author: WashingtonKayaker
+author: erhopf
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 05/11/2021
+ms.date: 09/14/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -93,7 +93,8 @@ This article starts from the [CoreBot sample app](https://github.com/Microsoft/B
     using Microsoft.Bot.Builder.Integration.AspNet.Core;
     ```
 
-    Note: If you're following along by updating the CoreBot sample code you will notice that the using statement for `Microsoft.Bot.Builder.Integration.AspNet.Core` already exists in the CoreBot sample.
+    > [!TIP]
+    > If you're following along by updating the CoreBot sample code, you will notice that the using statement for `Microsoft.Bot.Builder.Integration.AspNet.Core` already exists in the CoreBot sample.
 
 4. Include the following code in the `ConfigureServices()` method in `Startup.cs`. This will make telemetry services available to your bot via [dependency injection (DI)](/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2&preserve-view=true):
 
@@ -126,7 +127,8 @@ This article starts from the [CoreBot sample app](https://github.com/Microsoft/B
     }
     ```
 
-    Note: If you're following along by updating the CoreBot sample code you will notice that `services.AddSingleton<IBotFrameworkHttpAdapter, AdapterWithErrorHandler>();` already exists.
+    > [!TIP]
+    > If you're following along by updating the CoreBot sample code, you will notice that `services.AddSingleton<IBotFrameworkHttpAdapter, AdapterWithErrorHandler>();` already exists.
 
 5. Instruct the adapter to use the middleware code that was added to the `ConfigureServices()` method. You do this in `AdapterWithErrorHandler.cs` with the parameter TelemetryInitializerMiddleware telemetryInitializerMiddleware in the constructor's parameter list, and the `Use(telemetryInitializerMiddleware);` statement in the constructor as shown here:
 
@@ -156,11 +158,11 @@ This article starts from the [CoreBot sample app](https://github.com/Microsoft/B
     > [!NOTE]
     > Details on getting the _Application Insights instrumentation key_ can be found in the article [Application Insights keys](../bot-service-resources-app-insights-keys.md).
 
-At this point the preliminary work to enable telemetry using Application Insights is done.  You can run your bot locally using the bot Emulator and then go into Application Insights to see what is being logged, such as response time, overall app health, and general running information.
+At this point, the preliminary work to enable telemetry using Application Insights is done. You can run your bot locally using the bot Emulator and then go into Application Insights to see what is being logged, such as response time, overall app health, and general running information.
 
 ### Enable telemetry in your bot's dialogs
 
-When adding a new dialog to any ComponentDialog, it will inherit the Microsoft.Bot.Builder.IBotTelemetryClient of its parent dialog.  For example, In the CoreBot sample application all dialogs are added to the MainDialog which is a ComponentDialog.  Once you set the TelemetryClient property to the MainDialog all dialogs added to it will automatically inherit the telemetryClient from it, so it does not need to be explicitly set when adding dialogs.
+When adding a new dialog to any ComponentDialog, it will inherit the Microsoft.Bot.Builder.IBotTelemetryClient of its parent dialog.  For example, In the CoreBot sample application all dialogs are added to the MainDialog, which is a ComponentDialog.  Once you set the TelemetryClient property to the MainDialog, all dialogs added to it will automatically inherit the telemetryClient from it, so it does not need to be explicitly set when adding dialogs.
 
 Follow the steps below to update your CoreBot example:
 
@@ -202,7 +204,7 @@ This article starts with the [CoreBot sample app](https://github.com/Microsoft/B
     [!code-javascript[Import](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=16-17)]
 
     > [!TIP]
-    > The [JavaScript Bot Samples](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs) use Node.js which follows the CommonJS module system, and the built in `require` function to include modules that exist in separate files.
+    > The [JavaScript Bot Samples](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs) use Node.js, which follows the CommonJS module system, and the built in `require` function to include modules that exist in separate files.
 
 4. Create a new function at the end of `index.js` named `getTelemetryClient` that takes your instrumentation key as a parameter and returns a _telemetry client_ using the `ApplicationInsightsTelemetryClient` module you previously referenced. This  _telemetry client_ is where your telemetry data will be sent to, in this case Application Insights.
 
@@ -230,7 +232,7 @@ This article starts with the [CoreBot sample app](https://github.com/Microsoft/B
 
     Node.js which follows the CommonJS module system, and the built in `require` function to include modules that exist in separate files.
 
-At this point the preliminary work to enable telemetry using Application Insights is done.  You can run your bot locally using the bot Emulator and then go into Application Insights to see what is being logged, such as response time, overall app health, and general running information.
+At this point, the preliminary work to enable telemetry using Application Insights is done. You can run your bot locally using the bot Emulator and then go into Application Insights to see what is being logged, such as response time, overall app health, and general running information.
 
 <!--
     # [Python](#tab/python)
@@ -310,8 +312,6 @@ Next we will see what needs to be included to add telemetry functionality to the
 
 <!--
     # [Python](#tab/python)
-
-    [!INCLUDE [python telemetry section](../includes/telemetry-python-enabling-disabling-activity-event-personal-information-logging.md)]
 -->
 
 ---
@@ -320,7 +320,7 @@ Next we will see what needs to be included to add telemetry functionality to the
 
 # [C#](#tab/csharp)
 
-We will next implement telemetry functionality in your LUIS service. The LUIS service has built-in telemetry logging available so there is very little you need to do to start getting telemetry data from LUIS.  If you are interested in enabling telemetry in a QnA Maker enabled bot, see [Add telemetry to your QnAMaker bot](../v4sdk/bot-builder-telemetry-QnAMaker.md)
+We will next implement telemetry functionality in your LUIS service. The LUIS service has built-in telemetry logging available so there's little you need to do to start getting telemetry data from LUIS.  If you are interested in enabling telemetry in a QnA Maker enabled bot, see [Add telemetry to your QnAMaker bot](../v4sdk/bot-builder-telemetry-QnAMaker.md)
 
 1. The _`IBotTelemetryClient telemetryClient`_ parameter is required in the `FlightBookingRecognizer` constructor in `FlightBookingRecognizer.cs`:
 
@@ -358,7 +358,7 @@ For information on testing and debugging your bot, you can refer to the followin
 
 # [JavaScript](#tab/javascript)
 
-We will next implement telemetry functionality in your LUIS service. The LUIS service has built-in telemetry logging available so there is very little you need to do to start getting telemetry data from LUIS.  <!---If you are interested in enabling telemetry in a QnA Maker enabled bot, see [Add telemetry to your QnAMaker bot](../v4sdk/bot-builder-telemetry-QnAMaker.md).-->
+We will next implement telemetry functionality in your LUIS service. The LUIS service has built-in telemetry logging available so there's little you need to do to start getting telemetry data from LUIS.  <!---If you are interested in enabling telemetry in a QnA Maker enabled bot, see [Add telemetry to your QnAMaker bot](../v4sdk/bot-builder-telemetry-QnAMaker.md).-->
 
 To enable the telemetry client in your LUIS recognizer:
 
