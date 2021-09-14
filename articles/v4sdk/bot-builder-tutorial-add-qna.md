@@ -1,5 +1,5 @@
 ---
-title: Azure Bot Service tutorial to have a bot answer questions - Bot Service
+title: Tutorial to answer questions with the Bot Framework SDK and QnA Maker
 description: Learn how to add question-and-answer support to bots. See how to use QnA Maker and a knowledge base with a bot so that the bot can answer questions.
 keywords: QnA Maker, question and answer, knowledge base
 author: JonathanFingold
@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: tutorial
 ms.service: bot-service
-ms.date: 05/06/2021
+ms.date: 09/14/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -361,7 +361,7 @@ Update your initialization code to load the service information for your knowled
     }    
     ```
 
-1. Back in the **Echobot.java** file add an `AccessQnAMaker` method:
+1. Back in the **Echobot.java** file, add an `AccessQnAMaker` method:
 
     **EchoBot.java**
 
@@ -469,13 +469,13 @@ Update your initialization code to load the service information for your knowled
 
 ## Test the bot locally
 
-At this point your bot should be able to answer some questions. Run the bot locally and open it in the Emulator.
+At this point, your bot should be able to answer some questions. Run the bot locally and open it in the Emulator.
 
 :::image type="content" source="./media/qna-test-bot.png" alt-text="Sample interaction with the bot and QnA Maker.":::
 
 ## Republish your bot
 
-You can now republish your bot back to Azure. You need to zip your project folder and then run the command to deploy your bot to Azure. For details please read the [Deploy your bot](../bot-builder-deploy-az-cli.md) article.
+You can now republish your bot back to Azure. Zip your project folder and then run the command to deploy your bot to Azure. For details, see how to [Deploy your bot](../bot-builder-deploy-az-cli.md).
 
 ### Zip your project folder
 
@@ -498,29 +498,11 @@ You can now republish your bot back to Azure. You need to zip your project folde
 
 [!INCLUDE [deploy code to Azure](../includes/deploy/snippet-deploy-code-to-az.md)]
 
-<!-- # [C#](#tab/csharp)
-```cmd
-az webapp deployment source config-zip --resource-group "resource-group-name" --name "bot-name-in-azure" --src "c:\bot\mybot.zip"
-```
-
-# [JavaScript](#tab/javascript)
-
-[!INCLUDE [publish snippet](~/includes/deploy/snippet-publish-js.md)]
-
-# [Python](#tab/python)
-
-az webapp deployment source config-zip --resource-group "resource_group_name" --name "unique_bot_name" --src "zi
-
-### Test the published bot
-
-After you publish the bot, give Azure a minute or two to update and start the bot.
-
-Use the Emulator to test the production endpoint for your bot, or use the Azure portal to test the bot in Web Chat.
-In either case, you should see the same behavior as you did when you tested it locally.
-
+<!--
 ## Clean up resources
 
-<!-- In the first tutorial, we should tell them to use a new resource group, so that it is easy to clean up resources. We should also mention in this step in the first tutorial not to clean up resources if they are continuing with the sequence. -->
+In the first tutorial, we should tell them to use a new resource group, so that it is easy to clean up resources. We should also mention in this step in the first tutorial not to clean up resources if they are continuing with the sequence.
+-->
 
 If you're not going to continue to use this application, delete
 the associated resources with the following steps:

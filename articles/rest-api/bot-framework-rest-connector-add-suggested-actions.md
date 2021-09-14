@@ -1,5 +1,5 @@
 ---
-title: Add suggested actions to messages - Bot Service
+title: Add suggested actions to messages - Azure Bot Service
 description: Learn how to add suggested actions to messages using the Bot Connector service.
 author: RobStand
 ms.author: kamrani
@@ -11,11 +11,13 @@ ms.date: 12/13/2017
 
 # Add suggested actions to messages with the Bot Connector API
 
-[!INCLUDE [Introduction to suggested actions](../includes/snippet-suggested-actions-intro.md)]
+Suggested actions enable your bot to present buttons that the user can tap to provide input.
+Suggested actions appear close to the composer and enhance user experience by enabling the user to answer a question or make a selection with a simple tap of a button, rather than having to type a response with a keyboard.
+Unlike buttons that appear within rich cards (which remain visible and accessible to the user even after being tapped), buttons that appear within the suggested actions pane will disappear after the user makes a selection. This prevents the user from tapping stale buttons within a conversation and simplifies bot development (since you will not need to account for that scenario).
 
 ## Send suggested actions
 
-To add suggested actions to a message, set the `suggestedActions` property of the [Activity][] object to specify the list of [CardAction][] objects that represent the buttons to be presented to the user. 
+To add suggested actions to a message, set the `suggestedActions` property of the [Activity][] object to specify the list of [CardAction][] objects that represent the buttons to be presented to the user.
 
 The following request sends a message that presents three suggested actions to the user. In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
 

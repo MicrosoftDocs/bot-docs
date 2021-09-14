@@ -133,7 +133,7 @@ We will start with the [QnA Maker sample app](https://github.com/microsoft/BotBu
 At this point the preliminary work to enable telemetry using Application Insights is done. You can run your bot locally using the bot Emulator and then go into Application Insights to see what is being logged such as response time, overall app health, and general running information.
 
 > [!TIP]
-> For information on Enabling / disabling activity event and personal information logging see [Add telemetry to your bot](bot-builder-telemetry.md#enabling-or-disabling-activity-logging)
+> For information about personal information, see [Enable or disable activity event and personal information logging](bot-builder-telemetry.md#enable-or-disable-activity-event-and-personal-information-logging).
 
 Next we will see what needs to be included to add telemetry functionality to the QnA Maker service.
 

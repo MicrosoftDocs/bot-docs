@@ -434,6 +434,125 @@ The example below shows how to set the exports option to `template1, template2`:
 
 Use  `foo.template1(1,2), foo.template2(['a', 'b', 'c'], ',')` to call these exported templates.
 
+### Cache scope
+
+The _cache scope_ options let you control when the LG evaluator reevaluates an expression it has seen before and when it stores and uses a cached result.
+
+- _Global cache_ is effective in the life cycle of an evaluation. LG caches all evaluation results, and if the template name and parameters are the same, returns the result from the cache.
+- _Local cache_ scope is the default. In the same layer, if the previous template has been called with the same template name and the same parameters, the cached result is directly returned.
+- _None cache_ scope disables all cache scope, and each time returns the new result.
+
+For examples, see the [global](#global-cache-scope-example) and [local](#local-cache-scope-example) cache scope examples.
+
+```lg
+> !# @cacheScope= global // global cache
+> !# @cacheScope= local // local cache
+> !# @cacheScope= none // none cache
+> !# @cacheScope= xxx // fallback to local cache
+```
+
+Note that the cache scope option is case-insensitive.
+
+```lg
+> !# @cacheScope= global // ok
+> !# @CACHESCOPE= global // ok
+> !# @cachescope= global // ok
+```
+
+Note that cache scope follows the scope of the entrance .lg file.
+
+Say you have two files: `a.lg` and `b.lg`, shown below:
+
+**a.lg**
+
+```lg
+> !# @cacheScope= global
+ [import](b.lg)
+```
+
+**b.lg**
+
+```lg
+> !# @cacheScope= none
+# template1
+- ${template2()} ${template2()}
+
+# template2
+- ${rand(1, 10000000)}
+```
+
+If you run the following code, you will notice that `template2` uses the cached result of the first evaluated result because of the `global` cache scope option in **a.lg**:
+
+```csharp
+var templates = Templates.ParseFile("a.lg");
+var result = templates.Evaluate("template1"); // the second "template2" would use the cache of the first evaluate result
+```
+
+#### Re-execute mark influence
+
+If the template name ends with "!", the template forces re-execution. This result won't be added to the cache regardless of the cache scope.
+
+Say you have following template:
+
+```lg
+# template2
+- ${template1()} ${template1!()} ${template1()}
+```
+
+`template1!()` fires and the result is added to the cache. The second `template1()` clobbers the result from the first `template1()`. The final call uses the results stored in the cache.
+
+#### Global cache scope example
+
+Say you have the following templates:
+
+```lg
+# template1
+- ${template2()} ${template3()}
+
+# template2
+- ${rand(1, 10)}
+- abc
+- hi
+
+# template3
+- ${template2()}
+```
+
+`template2` would be evaluated once, and the second execution in `template3` would apply the cache of the first one.
+
+Another example is in the following code snippet:
+
+```csharp
+var templates = Templates.ParseFile("xxx.lg");
+var result1 = templates.Evaluate("template", null, new EvaluationOptions { CacheScope = LGCacheScope.Global});
+
+// The second evaluation would drop all the results cached before.
+var result2 = templates.Evaluate("template", null, new EvaluationOptions { CacheScope = LGCacheScope.Global});
+```
+
+A template is parsed using the `Templates.ParseFile()` function, and the template evaluation results are stored in `result1`. Note that the second evaluation results, `result2`, drops all results previously cached.
+
+#### Local cache scope example
+
+The following examples show when the local cache scope does and doesn't work. Assume that `t()` and `subT()` are templates that take a parameter:
+
+```lg
+>  Cache works, the second template call would re-use the first's result.
+# template1
+- ${t(param)} ${t(param)}
+
+> Cache doesn't work because param1's value is different with param2's. value)
+# template2
+- ${t(param1)} ${t(param2)}
+
+> Cache doesn't work because of different layers.
+# template3
+- ${subT(param1)} ${t(param2)}
+
+# subT(param)
+- ${t(param)}
+```
+
 ## Additional Resources
 
 - [C# API Reference](/dotnet/api/microsoft.bot.builder.languagegeneration)

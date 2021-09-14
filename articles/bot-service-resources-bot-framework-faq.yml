@@ -5,9 +5,9 @@ metadata:
   author: kamrani
   ms.author: kamrani
   manager: kamrani
-  ms.topic: article
+  ms.topic: troubleshooting
   ms.service: bot-service
-  ms.date: 01/25/2020
+  ms.date: 09/08/2021
     
 title: Bot Framework FAQ
 summary: |
@@ -92,3 +92,9 @@ sections:
           - [What should I do when getting Azure CLI deprecation errors?](./bot-service-resources-faq-azure.yml#what-should-i-do-when-getting-azure-cli-deprecation-errors)
           - [What are the CLI deprecated commands related to `az deployment?`](./bot-service-resources-faq-azure.yml#what-are-the-cli-deprecated-commands-related-to--az-deployment-)
           - [How do I know whether the Azure CLI commands are deprecated?](./bot-service-resources-faq-azure.yml#how-do-i-know-whether-the-azure-cli-commands-are-deprecated)
+          - [What is the Azure Bot Resource?](./bot-service-resources-faq-azure.yml#what-is-the-azure-bot-resource)
+          - [Why are Web App Bot and Bot Channel Registration being deprecated?](./bot-service-resources-faq-azure.yml#why-are-web-app-bot-and-bot-channel-registration-being-deprecated)
+          - [Will my Web App Bot or Bot Channel Registration keep working and for how long?](./bot-service-resources-faq-azure.yml#will-my-web-app-bot-or-bot-channel-registration-keep-working-and-for-how-long)
+          - [Do I need to migrate my existing bot to the Azure Bot?](./bot-service-resources-faq-azure.yml#do-i-need-to-migrate-my-existing-bot-to-the-azure-bot)
+          - [Can I migrate my existing bot resource to an Azure Bot?](./bot-service-resources-faq-azure.yml#can-i-migrate-my-existing-bot-resource-to-an-azure-bot)
+          - [What's the difference between the Azure Bot and the Web App Bot or Bot Channels Registration?](./bot-service-resources-faq-azure.yml#what-s-the-difference-between-the-azure-bot-and-the-web-app-bot-or-bot-channels-registration)

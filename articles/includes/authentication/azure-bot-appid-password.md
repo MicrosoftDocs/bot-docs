@@ -10,7 +10,7 @@ The `appsettings.json` file contains these settings:
 
 ```json
 {
-  "MicrosoftAppId": "<your app id>",
+  "MicrosoftAppId": "<your app ID>",
   "MicrosoftAppPassword": "<your password>"
 }
 ```
@@ -20,7 +20,7 @@ The `appsettings.json` file contains these settings:
 The `.env` file contains these settings:
 
 ```javascript
-MicrosoftAppId="<your app id>"
+MicrosoftAppId="<your app ID>"
 MicrosoftAppPassword="<your password>"
 ```
 
@@ -29,7 +29,7 @@ MicrosoftAppPassword="<your password>"
 The `application.properties` file contains these settings:
 
 ```java
-MicrosoftAppId="<your app id>"
+MicrosoftAppId="<your app ID>"
 MicrosoftAppPassword="<your password>"
 ```
 
@@ -38,7 +38,7 @@ MicrosoftAppPassword="<your password>"
 The `config.py` file contains these settings:
 
 ```python
-APP_ID = os.environ.get("MicrosoftAppId", "<your app id>")
+APP_ID = os.environ.get("MicrosoftAppId", "<your app ID>")
 APP_PASSWORD = os.environ.get("MicrosoftAppPassword", "<your password>")
 ```
 
@@ -55,15 +55,15 @@ APP_PASSWORD = os.environ.get("MicrosoftAppPassword", "<your password>")
 1. In the newly displayed panel on the right, in the *Client secrets* section, select **New client secret**
 1. In the right pane, for the new client secret, enter a *description* and the *expiration date*.  
 1. Select **Add**.
-1. Copy and store in a safe place the **Value** (client secret or password) and the **ID** (App Id).
+1. Copy and store in a safe place the **Value** (client secret or password) and the **ID** (app ID).
 
 After the creation of the resource is completed, download the deployment details and keep them in a safe place. They contain the App ID and password. 
 -->
 
-#### Get Azure bot resource app ID
+#### Get Azure Bot resource app ID
 
 1. Go to the [Azure portal](https://portal.azure.com).
-1. Select the Azure bot resource to obtain its app Id.
+1. Select the Azure Bot resource to obtain its app ID.
 1. In the left pane, in the **Settings** section, select **Configuration**.
 1. Copy and save the value contained in the *Microsoft App ID* box.
 
@@ -87,7 +87,7 @@ To access the client secret stored in the Azure key vault follow the steps descr
     1. **Secrets permissions**. From the drop-down list, select *Get*, and *List*. 
         :::image type="content" source="~/media/azure-bot-resource/key-vault-secret-permissions.png" alt-text="Set Azure key vault secret permissions":::
     1. **Select principal**. Select the **None selected** link. 
-        1. In the **Principal** pane on the right, select a directory member by entering *object Id, name or email address*. 
+        1. In the **Principal** pane on the right, select a directory member by entering *object ID, name or email address*. 
         1. Select **Select**. 
             :::image type="content" source="~/media/azure-bot-resource/key-vault-principal.png" alt-text="Set Azure key vault principal":::
     1. Select **Add**.

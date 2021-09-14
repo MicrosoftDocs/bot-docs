@@ -1,12 +1,12 @@
 ---
 title: Basics of the Bot Framework Service
 description: Become familiar with the Bot Framework Service. Understand how bots communicate with users, and learn about activities, channels, HTTP POST requests, and more.
-author: kamrani
+author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 08/16/2021
+ms.date: 09/09/2021
 monikerRange: 'azure-bot-service-4.0'
 ms.custom: abs-meta-21q1
 ---
@@ -86,7 +86,7 @@ The [managing state](bot-builder-concept-state.md) topic describes these state a
 
 The SDK does not require you use a specific application layer to send and receive web requests.
 The Bot Framework has templates and samples for ASP.NET (C#), restify (JavaScript), and aiohttp (Python).
-However, you can choose to use a differ application layer for your app.
+However, you can choose to use a different application layer for your app.
 
 When you create a bot using the SDK, you provide the code to receive the HTTP traffic and forward it to the adapter. The Bot Framework provides a few templates and samples that you can use to develop your own bots.
 
@@ -170,10 +170,10 @@ The _adapter_, an integrated component of the SDK, is the core of the SDK runtim
 
 As mentioned above, the turn context provides the mechanism for the bot to send outbound activities, most often in response to an inbound activity. To achieve this, the turn context provides _send_, _update_, and _delete activity_ response methods. Each response method runs in an asynchronous process.
 
-[!INCLUDE [alert-await-send-activity](../includes/alert-await-send-activity.md)]
+> [!IMPORTANT]
+> The thread handling the primary bot turn deals with disposing of the context object when it is done. **Be sure to `await` any activity calls** so the primary thread will wait on the generated activity before finishing its processing and disposing of the turn context. Otherwise, if a response (including its handlers) takes any significant amount of time and tries to act on the context object, it may get a _context was disposed_ error.
 
-<!-- TODO Need to reorganize and rewrite parts of this. -->
-<!-- JF-Open question:
+<!-- TODO Need to reorganize and rewrite parts of this.
     Do we need more explanation of the "role of the Azure Bot Service", and if so, what do we say about it?
 -->
 

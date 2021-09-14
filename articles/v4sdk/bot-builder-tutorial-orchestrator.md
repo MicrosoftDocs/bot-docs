@@ -35,7 +35,7 @@ This sample is based on a predefined set of LUIS and QnA Maker apps.
 
 `OnMessageActivityAsync` is called for each user input received. This module finds the top scoring user intent and passes that result on to `DispatchToTopIntentAsync`. DispatchToTopIntentAsync, in turn, calls the appropriate app handler.
 
-- `ProcessSampleQnAAsync` - for bot faq questions.
+- `ProcessSampleQnAAsync` - for bot FAQ questions.
 - `ProcessWeatherAsync` - for weather queries.
 - `ProcessHomeAutomationAsync` - for home lighting commands.
 
@@ -43,9 +43,9 @@ This sample is based on a predefined set of LUIS and QnA Maker apps.
 
 ![Code sample logic flow js](./media/tutorial-dispatch/dispatch-logic-flow-js.png)
 
-`onMessage` is called for each user input received. This module finds the top scoring user intent and passes that result on to `dispatchToTopIntentAsync`. dispatchToTopIntentAsync, in turn, calls the appropriate app handler
+`onMessage` is called for each user input received. This module finds the top scoring user intent and passes that result on to `dispatchToTopIntentAsync`. `dispatchToTopIntentAsync`, in turn, calls the appropriate app handler
 
-- `processSampleQnA` - for bot faq questions.
+- `processSampleQnA` - for bot FAQ questions.
 - `processWeather` - for weather queries.
 - `processHomeAutomation` - for home lighting commands.
 
@@ -80,7 +80,7 @@ For more information, see how to **Create a LUIS app in the LUIS portal** and **
 ### Create the QnA Maker knowledge base
 1. Create your QnAMaker service from qnamaker.ai portal or from https://portal.azure.com, get the resource key for the next step below.
 
-1. Create a QnAMaker kb from the _QnAMaker_ qna file.
+1. Create a QnAMaker kb from the _QnAMaker_ .qna file.
    1. Run the following command to import, train and publish the app to the production environment.
 
       ```cmd
@@ -280,9 +280,9 @@ The `processSampleQnA` method uses the user input contained within the turn cont
 
 ## Route user utterance to QnA Maker
 
-1. In the bot Emulator, enter the text `hi` and submit the utterance. The bot submits this query to Orchestrator and gets back a response indicating which child app should get this utterance for further processing.
+1. In the Emulator, enter the text `hi` and submit the utterance. The bot submits this query to Orchestrator and gets back a response indicating which child app should get this utterance for further processing.
 
-1. By selecting the `Orchestrator Recognition Trace` line in the log, you can see the json response in the bot Emulator . The Orchestrator result is displayed in the Inspector.
+1. By selecting the `Orchestrator Recognition Trace` line in the log, you can see the JSON response in the Emulator. The Orchestrator result is displayed in the Inspector.
 
     ```json
     {
@@ -368,7 +368,7 @@ The `processSampleQnA` method uses the user input contained within the turn cont
 
    Because the utterance, `hi`, is part of the Orchestrator's **QnAMaker** intent, and is selected as the `topScoringIntent`, the bot will make a second request, this time to the QnA Maker app, with the same utterance.
 
-  1. Select the `QnAMaker Trace` line in the bot Emulator log. The QnA Maker result displays in the Inspector.
+  1. Select the `QnAMaker Trace` line in the Emulator log. The QnA Maker result displays in the Inspector.
 
       ```json
       {

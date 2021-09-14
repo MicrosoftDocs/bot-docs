@@ -19,7 +19,7 @@ This step can take a few minutes to complete.
 | location |Location. Values from: `az account list-locations`. You can configure the default location using `az config set defaults.location=<location>`. |
 | parameters | Deployment parameters, provided as a list of key=value pairs. Enter the following parameter values:
 
-- `appId` - The *app id* value from the JSON output generated in the [create the application registration](#create-the-azure-application-registration) step.
+- `appId` - The *app ID* value from the JSON output generated in the [create the application registration](#create-the-azure-application-registration) step.
 - `appSecret` - The password you provided in the [create the application registration](#create-the-azure-application-registration) step.
 - `botId` - A name for the  Bot Channels Registration resource to create. It must be globally unique. It is used as the immutable bot ID. It is also used as the default display name, which is mutable.
 - `botSku` - The pricing tier; it can be F0 (Free) or S1 (Standard).

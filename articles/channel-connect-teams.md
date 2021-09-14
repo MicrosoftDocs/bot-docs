@@ -5,7 +5,7 @@ keywords: Teams, bot channel, configure Teams
 author: kamrani
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: how-to
 ms.service: bot-service
 ms.date: 09/02/2021
 ---

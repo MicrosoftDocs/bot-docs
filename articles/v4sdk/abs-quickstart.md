@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: quickstart
 ms.service: bot-service
-ms.date: 09/01/2021
+ms.date: 09/10/2021
 ms.custom: abs-meta-21q1
 ---
 
@@ -17,7 +17,10 @@ ms.custom: abs-meta-21q1
 
 The _Azure Bot_ resource allows you to register your bot with the Azure Bot Service and to connect your bot to channels. You can build, connect, and manage bots to interact with your users wherever they are, from your app or website to Teams, Messenger and many other channels. To learn how to create a bot, see the [Create a bot with the Bot Framework SDK](../bot-service-quickstart-create-bot.md) quickstart.
 
-[!INCLUDE [composer sdk tip](../includes/azure-bot-resource/composer-tip.md)]
+> [!TIP]
+> If you're new to bot development, we recommend using [Bot Framework Composer](/composer/).
+>
+> You can keep using the SDK for those bots you have already created. However, we recommend the use of Composer for new development.
 
 ## Prerequisites
 
