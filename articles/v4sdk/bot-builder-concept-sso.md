@@ -60,7 +60,7 @@ Let's analyze the flow.
         "type": "Invoke",
         "name": "signin/tokenExchange",
         "value": {
-            "id": "<any unique Id>",
+            "id": "<any unique ID>",
             "connectionName": "<connection Name on the skill bot (from the OAuth Card)>",
             "token": "<exchangeable token>"
         }
@@ -74,7 +74,7 @@ client should wait till it receives the `TokenExchangeInvokeResponse`.
     {
         "status": "<response code>",
         "body": {
-            "id":"<unique Id>",
+            "id":"<unique ID>",
             "connectionName": "<connection Name on the skill bot (from the OAuth Card)>",
             "failureDetail": "<failure reason if status code is not 200, null otherwise>"
         }

@@ -253,7 +253,7 @@ Before you exit the turn handler, you use the state management objects' _saveCha
 
 - If `user_profile.name` is empty and `conversation_data.prompted_for_user_name` is *true*, the bot retrieves the name provided by the user and stores it in the user's state.
 - If `user_profile.name` is empty and `conversation_data.prompted_for_user_name` is *false*,the bot asks for the user's name.
-- If `user_profile.name` was previously stored, the bot retrieves **message time** and **channel Id** from the user input, echoes the data back to the user, and stores the retrieved data in the conversation state.
+- If `user_profile.name` was previously stored, the bot retrieves message time and channel ID from the user input, echoes the data back to the user, and stores the retrieved data in the conversation state.
 
 **bots/state_management_bot.py**
 
