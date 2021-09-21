@@ -8,7 +8,7 @@ ms.service: bot-service
 ms.topic: how-to
 ms.author: kamrani
 ms-custom: abs-meta-21q1 
-ms.date: 09/01/2019
+ms.date: 09/15/2021
 ---
 
 # Configure .NET bot for extension
@@ -19,7 +19,8 @@ This article describes how to update a bot to work with named pipes, and how to 
 
 ## Prerequisites
 
-To perform the steps described next, you need to have a bot deployed in Azure.
+- Bot deployed in Azure.
+- Bot Framework SDK 4.14.1 or later.
 
 ## Enable Direct Line App Service extension
 
@@ -37,24 +38,26 @@ This section describes how to enable the Direct Line App Service extension using
     - In the `Configure` method, add a call to the `UseNamedPipes` method.
 
     ```csharp
-    public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     {
         if (env.IsDevelopment())
         {
             app.UseDeveloperExceptionPage();
         }
-        else
-        {
-            app.UseHsts();
-        }
 
-        app.UseDefaultFiles();
-        app.UseStaticFiles();
-
-        // Allow the bot to use named pipes.
-        app.UseNamedPipes(System.Environment.GetEnvironmentVariable("APPSETTING_WEBSITE_SITE_NAME") + ".directline");
-
-        app.UseMvc();
+        app.UseDefaultFiles()
+            .UseStaticFiles()
+            .UseWebSockets()
+             // Allow the bot to use named pipes.
+            .UseNamedPipes(System.Environment.GetEnvironmentVariable("APPSETTING_WEBSITE_SITE_NAME") + ".directline");
+            .UseRouting()
+            .UseAuthorization()
+            .UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
+        
+        // app.UseHttpsRedirection();
     }
     ```
 
@@ -111,9 +114,8 @@ If everything is correct, the page will return this JSON content: `{"v":"123","k
     1. Double check the code for using named pipes has been added to the bot.
     1. Confirm the bot is able to start up and run at all. Useful tools are **Test in WebChat**, connecting an additional channel, remote debugging, or logging.
     1. Restart the entire **Azure App Service** the bot is hosted within, to ensure a clean start up of all processes.
-
-- If you receive an "HTTP Error 500.34 - ANCM Mixed Hosting", your bot is attempting to use the `InProcess` Hosting Model. This is remedied by explicitly setting the bot to run `OutOfProcess` instead. See [Out-of-process hosting model](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#out-of-process-hosting-model) in the AZP.NET Core documentation for more information.
-
+- Enable the bot to use the out of process hosting model, otherwise you will receive an *HTTP Error 500.34 - ANCM Mixed Hosting*. Where *ANCM* stands for *ASP.NET Core Module*. The error is caused because the bot template is using the `InProcess` hosting model by default. To configure out of process hosting, see [Out-of-process hosting model](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#out-of-process-hosting-model). 
+See also [Attributes of the aspNetCore element](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#attributes-of-the-aspnetcore-element) and [Configuration with web.config](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#configuration-with-webconfig). 
 - If the **initialized** value of the **.bot endpoint** is false it means the Direct Line App Service extension is unable to validate the App Service extension key added to the bot's **Application Settings** above.
     1. Confirm the value was correctly entered.
     1. Switch to the alternate extension key shown on your bot's **Configure Direct Line** page.
