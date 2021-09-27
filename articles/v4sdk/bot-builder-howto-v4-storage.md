@@ -1,13 +1,13 @@
 ---
-title: Write directly to storage - Bot Service
-description: Learn how to use the Bot Framework SDK for .NET to write bot data directly to various types of persistent storage without using a state manager.
+title: Write directly to storage in Bot Framework SDK
+description: Learn how to use the Bot Framework SDK to write bot data directly to various types of persistent storage, without using a state manager.
 keywords: storage, read and write, memory storage, eTag
 author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 07/22/2021
+ms.date: 09/15/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -744,7 +744,7 @@ Add references to botbuilder-azure in your project via npm.
 > This npm package relies on an installation of Python existing on your development machine. If you have not previously installed Python you can find installation resources for your machine at [Python.org](https://www.python.org/downloads/)
 
 ```Console
-npm install --save botbuilder-azure
+npm install --save botbuilder-azure-blobs
 ```
 
 If not already installed, get the dotnet package from npm in order to access your **.env** file settings.
