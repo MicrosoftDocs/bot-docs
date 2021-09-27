@@ -44,7 +44,7 @@ how to [implement sequential conversation flow][simple-dialog], and how to [reus
 - Knowledge of Azure and OAuth 2.0 development.
 - Visual Studio 2017 or later for .NET.
 - Node.js for Javascript.
-- Python 3.6 or 3.7 for Python.
+- Python [3.8+](https://www.python.org/downloads/release/python-383/) for Python.
 - One of the samples listed below.
 
 | Sample | BotBuilder version | Demonstrates |

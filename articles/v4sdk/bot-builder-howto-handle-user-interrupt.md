@@ -91,7 +91,6 @@ If the user types "cancel", it calls `cancelAllDialogs` on its inner dialog cont
 
 [!code-java[Interrupt](~/../botbuilder-samples/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/CancelAndHelpDialog.java?range=53-79)]
 
-
 ## [Python](#tab/python)
 
 To use dialogs, install the `botbuilder-dialogs` package and make sure that the sample `requirements.txt` file contains the proper reference such as `botbuilder-dialogs>=4.5.0`.
