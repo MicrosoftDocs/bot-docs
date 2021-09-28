@@ -24,7 +24,7 @@ See GitHub's [Searching issues and pull requests](https://docs.github.com/en/git
 |&emsp;&bullet; awaiting review |[in review](https://github.com/MicrosoftDocs/composer-docs-pr/pulls/@me+draft%3Afalse+review%3Anone)|[in review](https://github.com/MicrosoftDocs/bot-docs-pr/pulls/@me+draft%3Afalse+review%3Anone)|[in review](https://github.com/pulls?q=is%3Apr+org%3AmicrosoftDocs+is%3Aopen+author%3A%40me+draft%3Afalse+review%3Anone)|[in review](https://github.com/pulls?q=is%3Apr+org%3Amicrosoft+is%3Aopen+author%3A%40me+draft%3Afalse+review%3Anone)|
 |&emsp;&bullet; changes requested |[revising](https://github.com/MicrosoftDocs/composer-docs-pr/pulls/@me+draft%3Afalse+review%3Achanges_requested)|[revising](https://github.com/MicrosoftDocs/bot-docs-pr/pulls/@me+draft%3Afalse+review%3Achanges_requested)|[revising](https://github.com/pulls?q=is%3Apr+org%3AmicrosoftDocs+is%3Aopen+author%3A%40me+draft%3Afalse+review%3Achanges_requested)|[revising](https://github.com/pulls?q=is%3Apr+org%3Amicrosoft+is%3Aopen+author%3A%40me+draft%3Afalse+review%3Achanges_requested)|
 |&emsp;&bullet; reviewed & approved |[ready'ish](https://github.com/MicrosoftDocs/composer-docs-pr/pulls?q=is%3Aopen+is%3Apr+author%3A%40me+review%3Aapproved)|[ready'ish](https://github.com/MicrosoftDocs/bot-docs-pr/pulls?q=is%3Aopen+is%3Apr+author%3A%40me+review%3Aapproved)|[ready'ish](https://github.com/pulls?q=is%3Apr+org%3AmicrosoftDocs+is%3Aopen+author%3A%40me+review%3Aapproved)|[ready'ish](https://github.com/pulls?q=is%3Apr+org%3Amicrosoft+is%3Aopen+author%3A%40me+review%3Aapproved)|
-|&bullet; my review requested |[to review](https://github.com/MicrosoftDocs/composer-docs-pr/pulls/review-requested/@me)|[to review](https://github.com/MicrosoftDocs/bot-docs-pr/pulls/review-requested/@me)|[to review](https://github.com/pulls?q=is%3Apr+org%3AmicrosoftDocs+is%3Aopen+review-requested%3A@me)|[to review](https://github.com/pulls?q=is%3Apr+org%3AmicrosoftDocs+is%3Aopen+review-requested%3A@me)|
+|&bullet; my review requested |[to review](https://github.com/MicrosoftDocs/composer-docs-pr/pulls/review-requested/@me)|[to review](https://github.com/MicrosoftDocs/bot-docs-pr/pulls/review-requested/@me)|[to review](https://github.com/pulls?q=is%3Apr+org%3AmicrosoftDocs+is%3Aopen+review-requested%3A@me)|[to review](https://github.com/pulls?q=is%3Apr+org%3Amicrosoft+is%3Aopen+review-requested%3A@me)|
 |&bullet; labeled ready|[to merge](https://github.com/MicrosoftDocs/composer-docs-pr/pulls?q=is%3Aopen+is%3Apr+label%3A%22status%3A+ready%22) | [to merge](https://github.com/MicrosoftDocs/bot-docs-pr/pulls?q=is%3Aopen+is%3Apr+label%3A%22status%3A+ready%22) | - | - |
 
 ## DevOps links
@@ -34,6 +34,11 @@ See GitHub's [Searching issues and pull requests](https://docs.github.com/en/git
 - [Ticket queries](https://mseng.visualstudio.com/TechnicalContent/_queries/folder/ede32a2a-94d7-4f39-9cc7-d81e09cefdd2/)
 
 ## Documentation quick links
+
+|Resource|Notes|
+|:-|:-|
+|[Glossary](https://github.com/MicrosoftDocs/bot-docs-pr/blob/master/contributor-guide/bot-framework-glossary.md)|Evolving notes for product and service names, and bot-specific and -adjacent terminology.|
+|[Text formatting guidelines](https://github.com/MicrosoftDocs/bot-docs-pr/blob/master/contributor-guide/formatting-text.md)|Rules of thumb for formatting text i our doc set.|
 
 | Bot Framework documentation |  |
 |:-|:-|
