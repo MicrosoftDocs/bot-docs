@@ -1,13 +1,13 @@
 ---
-title: Save user and conversation data - Bot Service
-description: Learn how the Bot Framework SDK manages user and conversation (state) data. See code samples that set up storage for this data and that read and write it.
+title: Save user and conversation data in the Bot Framework SDK
+description: Learn how the Bot Framework SDK manages user and conversation data (state). See how to set up storage for this data, read it, and write it. 
 keywords: conversation state, user state, conversation, saving state, managing bot state
-author: ivorb
+author: kamrani
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 2/7/2020
+ms.date: 09/21/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
