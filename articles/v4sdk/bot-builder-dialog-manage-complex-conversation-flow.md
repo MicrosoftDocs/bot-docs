@@ -1,13 +1,13 @@
 ---
-title: Create advanced conversation flow using branches and loops - Bot Service
+title: Create advanced conversation flow using branches and loops - Bot Framework SDK
 description: Learn how to manage a complex conversation flow with dialogs in the Bot Framework SDK.
 keywords: complex conversation flow, repeat, loop, menu, dialogs, prompts, waterfalls, dialog set
 author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 03/26/2020
+ms.date: 09/24/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -292,7 +292,7 @@ Create and register services as needed:
 > Memory storage is used for testing purposes only and is not intended for production use.
 > Be sure to use a persistent type of storage for a production bot.
 
-## To test the bot
+## Test the bot
 
 1. If you have not done so already, install the [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md).
 1. Run the sample locally on your machine.
