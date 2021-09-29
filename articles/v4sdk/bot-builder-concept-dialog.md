@@ -28,7 +28,7 @@ This article describes the core classes and features of the dialog library.
 
 > [!TIP]
 > If you are new to developing bots with the Bot Framework or creating a new conversational experience, start with  the [Bot Framework Composer](/composer/).
-> For existing SDK-first bots, not created in Composer, consider exposing your bot as a [skill](skills-about-skill-bots.md) and using Composer for future bot development.
+> For existing SDK-first bots, not created in Composer, consider exposing your bot as a [skill](skills-conceptual.md) and using Composer for future bot development.
 
 ## Dialog state
 

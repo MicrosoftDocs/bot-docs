@@ -26,7 +26,7 @@ The Bot Framework skill manifest schemas use [draft 7](http://json-schema.org/sp
 
 ## Prerequisites
 
-- Knowledge of [skills](skills-conceptual.md) and [skill bots](skills-about-skill-bots.md).
+- Knowledge of [skills](skills-conceptual.md).
 - Some familiarity with [JSON Schema](http://json-schema.org/) and the JSON format.
 
 ## The skill manifest
