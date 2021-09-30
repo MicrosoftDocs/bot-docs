@@ -1,5 +1,5 @@
 ---
-title: Adaptive expressions - Bot Framework SDK
+title: Adaptive expressions in Bot Framework SDK
 description: Describes how adaptive expressions work within the Bot Framework SDK.
 keywords: adaptive expressions
 author: kamrani

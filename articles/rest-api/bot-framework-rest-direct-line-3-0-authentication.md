@@ -1,5 +1,5 @@
 ---
-title: Direct Line Authentication - Azure Bot Service
+title: Direct Line Authentication in Azure Bot Service
 description: Become familiar with authentication in version 3.0 of the Direct Line API. See how to use secrets and tokens. Learn about Azure Bot Service authentication.
 author: RobStand
 ms.author: kamrani

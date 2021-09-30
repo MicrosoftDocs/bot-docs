@@ -1,6 +1,6 @@
 ---
 title: Send and receive text message in Bot Framework SDK
-description: Learn how to make bot can send and receive text messages.
+description: Learn how to make bots send and receive text messages.
 keywords: sending message, message activities, simple text message, message, text message, receive message
 author: ivorb
 ms.author: kamrani
