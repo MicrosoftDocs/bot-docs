@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "java/bot-builder-java-samples.md",
+      "redirect_url": "/azure/bot-service/index-bf-sdk",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "v4sdk/skills-about-skill-bots.md",
       "redirect_url": "/azure/bot-service/skills-conceptual",
       "redirect_document_id": false
