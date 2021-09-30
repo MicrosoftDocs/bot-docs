@@ -1,13 +1,13 @@
 ---
-title: Implement Azure Bot Service channel-specific functionality
-description: Learn how to implement channel-specific functionality using the Bot Framework SDK for .NET.
+title: Implement channel-specific functionality in Bot Framework SDK
+description: Learn how to implement channel-specific functionality using the Bot Framework SDK for .NET. You can do so by passing native metadata to a channel. 
 keywords: channel specific, email, slack, facebook, telegram, kik, custom channel
 author: erhopf
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 05/23/2019
+ms.date: 09/28/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 

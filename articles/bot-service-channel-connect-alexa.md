@@ -1,13 +1,13 @@
 ---
-title: Connect a bot to Alexa - Bot Service
-description:  Learn how to configure a bot's connection to Alexa.
+title: Connect a bot to Alexa in Bot Framework SDK
+description:  Learn how to configure a bot to allow communication with Alexa.
 keywords: connect a bot, bot channel, Alexa bot, credentials, configure, phone
-author: NickEricson
+author: kamrani
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 06/17/2021
+ms.date: 09/21/2021
 ---
 
 # Connect a bot to Alexa
