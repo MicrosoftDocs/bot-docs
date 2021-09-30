@@ -7,7 +7,7 @@ manager: kamrani
 ms.service: bot-service
 ms.topic: how-to
 ms.author: kamrani
-ms-custom: abs-meta-21q1 
+ms-custom: abs-meta-21q1
 ms.date: 09/15/2021
 ---
 
