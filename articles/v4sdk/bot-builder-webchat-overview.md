@@ -5,9 +5,9 @@ keywords: bot framework, webchat, chat, samples, react, reference
 author: mmiele
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: overview
 ms.service: bot-service
-ms.date: 12/23/2020
+ms.date: 09/27/2021
 ---
 
 # Web Chat overview
@@ -18,7 +18,7 @@ This article contains details of the [Bot Framework Web Chat](https://github.com
 
 If you're looking to migrate from Web Chat v3 to v4, jump ahead to [the migration section](#migrating-from-web-chat-v3-to-v4).
 
-## How to use
+## Get started with Web Chat
 
 > [!NOTE]
 > For previous versions of Web Chat (v3), visit the [Web Chat v3 branch](https://github.com/Microsoft/BotFramework-WebChat/tree/v3).
@@ -60,7 +60,6 @@ The following examples shows how to add a Web Chat control to a website.
 ```
 
 > `userID`, `username`, `locale`, `botAvatarInitials`, and `userAvatarInitials` are all optional parameters to pass into the `renderWebChat` method.  For more information about style, see [Why styleOptions?](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/02.branding-styling-and-customization/a.branding-web-chat#why-stylesetoptions). To learn more about Web Chat properties, look at the [Web Chat API Reference](#web-chat-api-reference) section.
-
 
 ### Integrate with JavaScript
 
@@ -165,10 +164,11 @@ Web Chat supports the latest 2 versions of modern browsers like Chrome, Edge, an
 If you need Web Chat in Internet Explorer 11, please see the [ES5 bundle](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/01.getting-started/c.es5-bundle) and [demo](https://microsoft.github.io/BotFramework-WebChat/01.getting-started/c.es5-bundle/).
 
 Please note, however:
+
 - Web Chat does not support Internet Explorer older than version 11
 - Customization as shown in non-ES5 samples are not supported for Internet Explorer. Because IE11 is a non-modern browser, it does not support ES6, and many samples that use arrow functions and modern promises would need to be manually converted to ES5.  If you are in need of heavy customization for your app, we strongly recommend developing your app for a modern browser like Google Chrome or Edge.
 - Web Chat has no plan to support samples for IE11 (ES5).
-   - For customers who wish to manually rewrite our other samples to work in IE11, we recommend looking into converting code from ES6+ to ES5 using polyfills and transpilers like [`babel`](https://babeljs.io/docs/en/next/babel-standalone.html).
+- For customers who wish to manually rewrite our other samples to work in IE11, we recommend looking into converting code from ES6+ to ES5 using polyfills and transpilers like [`babel`](https://babeljs.io/docs/en/next/babel-standalone.html).
 
 ## How to test with Web Chat's latest bits
 
@@ -189,6 +189,7 @@ To do this you may add your packages and then change the registry of your projec
 1. Note that in your `package-lock.json`, the registries pointed to are now MyGet. The Web Chat project has upstream source proxy enabled, which will redirect non-MyGet packages to `npmjs.com`.
 
 ### Re-subscribe to official release on `npmjs.com`
+
 Re-subscribing requires that you reset your registry.
 
 1. Delete your `.npmrc file`
@@ -196,7 +197,6 @@ Re-subscribing requires that you reset your registry.
 1. Remove your `node_modules` directory
 1. Reinstall your packages with `npm i`
 1. Note that in your `package-lock.json`, the registries are pointing to https://npmjs.com/ again.
-
 
 ## Contributing
 
@@ -209,5 +209,3 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 ## Reporting Security Issues
 
 Security issues and bugs should be reported privately, via email, to the Microsoft Security Response Center (MSRC) at [secure@microsoft.com](mailto:secure@microsoft.com). You should receive a response within 24 hours. If for some reason you do not, please follow up via email to ensure we received your original message. Further information, including the [MSRC PGP](https://technet.microsoft.com/security/dn606155) key, can be found in the [Security TechCenter](https://technet.microsoft.com/security/default).
-
-Copyright (c) Microsoft Corporation. All rights reserved.
