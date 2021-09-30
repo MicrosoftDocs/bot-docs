@@ -1,13 +1,13 @@
 ---
-title: Send and receive text message - Bot Service
-description: Learn about how to send and receive text messages within the Bot Framework SDK.
+title: Send and receive text message in Bot Framework SDK
+description: Learn how to make bots send and receive text messages.
 keywords: sending message, message activities, simple text message, message, text message, receive message
 author: ivorb
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 05/14/2020
+ms.date: 09/22/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 

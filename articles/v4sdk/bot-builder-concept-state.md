@@ -1,13 +1,13 @@
 ---
-title: Managing State - Bot Service
-description: Understand how bots work with information about users in the Bot Framework SDK. Learn about the storage layer, state management, and state property accessors.
+title: Managing state in Bot Framework SDK
+description: Learn how bots handle user information, including the storage layer, state management, and state property accessors.
 keywords: state, bot state, conversation state, user state
 author: ivorb
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 11/04/2020
+ms.date: 09/21/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 

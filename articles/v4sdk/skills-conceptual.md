@@ -5,7 +5,7 @@ keywords: bot skill, host bot, skill bot, skill consumer.
 author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: conceptual
 ms.service: bot-service
 ms.date: 08/10/2021
 monikerRange: 'azure-bot-service-4.0'
@@ -78,6 +78,12 @@ These objects help manage skills and route skill traffic:
 
 The skill client and skill handler objects both use the _conversation ID factory_ to translate between the conversation the root bot uses to interact with the user and the conversation the root bot uses to interact with the skill.
 
+## Skill manifests
+
+A _skill manifest_ is a JSON file that describes the actions the skill can perform, its input and output parameters, the skill's endpoints, and dispatch models for the skill.
+
+For information about the skill manifest schema, see how to [write a skill manifest](skills-write-manifest.md).
+
 ## Bot-to-bot communication
 
 It's important to understand certain aspects of this design, independent of which bot you're designing.
@@ -91,6 +97,15 @@ It's important to understand certain aspects of this design, independent of whic
   - when to start and stop a skill.
   - managing multiple skills.
 -->
+
+### Skill actions
+
+Some skills can perform a variety of tasks or _actions_. For example, a to-do skill might allow create, update, view, and delete activities that can be accessed as discrete conversations.
+
+<!--TODO Flesh this out-->
+
+- See how to [implement a skill](skill-implement-skill.md) for a simple skill that implements one action.
+- See how to [use dialogs within a skill](skill-actions-in-dialogs.md) for a skill that uses dialogs to implement multiple actions.
 
 ### Conversation references
 
@@ -127,7 +142,7 @@ The skill consumer and skill manage their own state separately. However, the con
 
 <!-- TODO Add appropriate info about this new(?) feature to the bot basics article. -->
 
-Starting with version 4.11, you do not need an app ID and password to test a skill and skill consumer locally in the Emulator. An Azure subscription is still required to deploy your skill to Azure.
+You don't need an app ID and password to test a skill and skill consumer locally in the Emulator. An Azure subscription is still required to deploy your skill to Azure.
 
 Service-level authentication is managed by the Bot Connector service. The framework uses bearer tokens and bot application IDs to verify the identity of each bot. (The Bot Framework uses an _authentication configuration_ object to validate the authentication header on incoming requests.)
 
@@ -161,5 +176,4 @@ There are various reasons you might reject an otherwise authenticated request:
 From the user's perspective, they are interacting with the root bot.
 From the skill's perspective, the skill consumer is the channel over which it communicates with the user.
 
-- For more information about skill bots and skill manifests, see [about skill bots](skills-about-skill-bots.md).
 - For more information about skill consumers, see [about skill consumers](skills-about-skill-consumers.md).

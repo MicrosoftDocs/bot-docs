@@ -1,5 +1,5 @@
 ---
-title: Key concepts in the Bot Framework Direct Line API 3.0  - Bot Service
+title: Key concepts in the Bot Framework Direct Line API 3.0  - Azure Bot Service
 description: Learn about version 3.0 of the Bot Framework Direct Line API. View information on authentication, starting conversations, messages, and developer resources.
 author: RobStand
 ms.author: kamrani
@@ -33,12 +33,12 @@ Using Direct Line API 3.0, a client can receive messages from your bot either vi
 
 ### Client libraries
 
-The Bot Framework provides client libraries that facilitate access to Direct Line API 3.0 via C# and Node.js. 
+The Bot Framework provides client libraries that facilitate access to Direct Line API 3.0 via C# and Node.js.
 
-- To use the .NET client library within a Visual Studio project, install the `Microsoft.Bot.Connector.DirectLine` [NuGet package](https://www.nuget.org/packages/Microsoft.Bot.Connector.DirectLine). 
+- To use the .NET client library within a Visual Studio project, install the `Microsoft.Bot.Connector.DirectLine` [NuGet package](https://www.nuget.org/packages/Microsoft.Bot.Connector.DirectLine).s
 
 - To use the Node.js client library, install the `botframework-directlinejs` library using [NPM](https://www.npmjs.com/package/botframework-directlinejs) (or download the [source](https://github.com/Microsoft/BotFramework-DirectLineJS)).
 
-### Web chat control 
+### Web chat control
 
 The Bot Framework provides a control that enables you to embed a Direct-Line-powered bot into your client application. For more information, see the [Microsoft Bot Framework WebChat control](https://github.com/Microsoft/BotFramework-WebChat).

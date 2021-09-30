@@ -76,8 +76,6 @@
     items:
     - name: About skills
       href: v4sdk/skills-conceptual.md
-    - name: About skill bots
-      href: v4sdk/skills-about-skill-bots.md
     - name: About skill consumers
       href: v4sdk/skills-about-skill-consumers.md
   - name: Adaptive expressions
@@ -269,6 +267,8 @@
         href: channel-connect-teams.md
       - name: Outlook (preview)
         href: bot-service-channel-connect-actionable-email.md
+      - name: Search (preview)
+        href: bot-service-channel-connect-search.md
       - name: Skype
         href: bot-service-channel-connect-skype.md
       - name: Skype for Business

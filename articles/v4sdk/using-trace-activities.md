@@ -1,13 +1,13 @@
 ---
-title: Add trace activities to your bot - Bot Service
-description: Describes what the trace activity is in the Bot Framework SDK, and how to use it.
+title: Add trace activities to your bot in Bot Framework SDK
+description: Learn what the trace activity is and how to use it to view information about your bot while it runs locally.
 keywords: trace, activity, bot, Bot Framework SDK
 author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 04/02/2021
+ms.date: 09/27/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 

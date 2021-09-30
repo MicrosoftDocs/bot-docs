@@ -55,7 +55,7 @@ The waterfall step context contains the following:
 - *Values*: contains information you can add to the context, and is carried forward into subsequent steps.
 - *Result*: contains the result from the previous step.
 
-Additionally, the *next* method (**NextAsync** in C#, **next** in JS and Python) continues to the next step of the waterfall dialog within the same turn, enabling your bot to skip a certain step if needed.
+Additionally, the *next* method (**NextAsync** in C#, **next** in JavaScript and Python) continues to the next step of the waterfall dialog within the same turn, enabling your bot to skip a certain step if needed.
 
 ## Prompts
 

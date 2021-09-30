@@ -20,7 +20,7 @@ With respect to skills, a _root bot_ is a user-facing bot that is also a skill c
 
 From the user's perspective, the root bot is the bot they are interacting with.
 From the skill's perspective, the skill consumer is the channel over which it communicates with the user.
-(For more information, see the [skills overview](skills-conceptual.md) and [about skill bots](skills-about-skill-bots.md).)
+(For more information, see the [skills overview](skills-conceptual.md).)
 
 As a skill consumer, a root bot includes some additional logic to manage traffic between it and a skill:
 

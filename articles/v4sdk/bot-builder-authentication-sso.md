@@ -36,7 +36,7 @@ Once the users sign in the root bot, they are not required to sign into each ski
 - Knowledge of Azure and OAuth 2.0 development.
 - Visual Studio 2017 or later for .NET.
 - Node.js for Javascript.
-- Python 3.6 or 3.7 for Python.
+- Python [3.8+](https://www.python.org/downloads/release/python-383/) for Python.
 - The samples listed below.
 
 | Sample | BotBuilder version | Demonstrates |

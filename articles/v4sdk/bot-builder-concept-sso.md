@@ -1,13 +1,13 @@
 ---
-title: Single sign on - Bot Service
-description: Learn about single sign on (SSO) to allow a client to communicate with a bot or skill in the Azure Bot Service.
+title: Single sign on in Bot Framework SDK
+description: Learn about single sign on (SSO) to allow a client to communicate with a bot or a skill.
 keywords: azure bot service, authentication, bot framework token service
-author: kamrani
+author: mmiele
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: conceptual
 ms.service: bot-service
-ms.date: 03/19/2020
+ms.date: 09/27/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -60,7 +60,7 @@ Let's analyze the flow.
         "type": "Invoke",
         "name": "signin/tokenExchange",
         "value": {
-            "id": "<any unique Id>",
+            "id": "<any unique ID>",
             "connectionName": "<connection Name on the skill bot (from the OAuth Card)>",
             "token": "<exchangeable token>"
         }
@@ -74,7 +74,7 @@ client should wait till it receives the `TokenExchangeInvokeResponse`.
     {
         "status": "<response code>",
         "body": {
-            "id":"<unique Id>",
+            "id":"<unique ID>",
             "connectionName": "<connection Name on the skill bot (from the OAuth Card)>",
             "failureDetail": "<failure reason if status code is not 200, null otherwise>"
         }

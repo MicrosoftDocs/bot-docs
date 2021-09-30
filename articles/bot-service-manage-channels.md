@@ -3,12 +3,13 @@ title: Configure an Azure Bot Service bot to run on one or more channels
 description: A channel connects a communication application to a bot. Learn how to configure a bot to run a channel using the Azure portal, Direct Line, or a custom adapter.
 keywords: bot, channel, Azure portal, Direct Line, custom adapter
 author: JonathanFingold
-ms.author: kamrani
 manager: kamrani
-ms.topic: how-to
+ms.author: kamrani
 ms.service: bot-service
+ms.topic: how-to
 ms.date: 09/01/2021
 ms.custom: abs-meta-21q1
+monikerRange: 'azure-bot-service-4.0'
 ---
 
 # Configure a bot to run on one or more channels
@@ -48,6 +49,7 @@ The connection steps are different for each channel. See the related article in 
 > |[LINE](bot-service-channel-connect-line.md)|Configure a bot to communicate with users through the LINE app.|
 > |[Microsoft Teams](channel-connect-teams.md)|Configure a bot to communicate with users through Microsoft Teams.|
 > |[Office 365 email](bot-service-channel-connect-email.md)|Enable a bot to communicate with users via Office 365 email.|
+> |[Search](bot-service-channel-connect-search.md)|Enable a bot to answer user queries via Dynamics 365 federated search.|
 > |[Skype](bot-service-channel-connect-skype.md)|Configure a bot to communicate with users through Skype.|
 > |[Skype for Business](bot-service-channel-connect-skypeforbusiness.md)|Configure a bot to communicate with users through Skype for Busines.|
 > |[Slack](bot-service-channel-connect-slack.md)|Configure a bot to communicate with users through Slack.|

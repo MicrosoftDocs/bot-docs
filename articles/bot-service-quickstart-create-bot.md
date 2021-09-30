@@ -127,7 +127,7 @@ Yeoman is a tool for creating applications. For more information, see [yeoman.io
 
 ### [Python](#tab/python)
 
-- Python [3.6][], [3.7][], or [3.8][]
+- Python [3.8+][]
 - [Bot Framework Emulator][Emulator]
 - Knowledge of asynchronous programming in Python
 
@@ -162,9 +162,10 @@ pip install aiohttp
 pip install cookiecutter==1.7.0
 ```
 
-[3.6]: https://www.python.org/downloads/release/python-369/
-[3.7]: https://www.python.org/downloads/release/python-375/
-[3.8]: https://www.python.org/downloads/release/python-383/
+>[!IMPORTANT]
+>If you're using a 32-bit version of Python, make sure you also run `pip install cryptography==2.8`.
+
+[3.8+]: https://www.python.org/downloads/release/python-383/
 [Emulator]: https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md
 
 ---

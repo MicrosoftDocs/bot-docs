@@ -1,13 +1,13 @@
 ---
-title: Identity providers in Azure Bot Service
-description: Learn about identity providers in Azure Bot Service.
+title: Identity providers in Bot Framework SDK
+description: Learn about identity providers, which authenticate user or client identities and issue security tokens. They provide authentication as a service. 
 keywords: azure bot service, authentication, bot framework token service
-author: kamrani
+author: mmiele
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: conceptual
 ms.service: bot-service
-ms.date: 09/10/2021
+ms.date: 09/27/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 

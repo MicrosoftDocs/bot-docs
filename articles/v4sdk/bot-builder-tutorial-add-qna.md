@@ -467,7 +467,7 @@ Update your initialization code to load the service information for your knowled
 
 ---
 
-## Test the bot locally
+## Test your bot locally
 
 At this point, your bot should be able to answer some questions. Run the bot locally and open it in the Emulator.
 
