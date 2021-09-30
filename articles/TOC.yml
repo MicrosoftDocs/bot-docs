@@ -267,6 +267,8 @@
         href: channel-connect-teams.md
       - name: Outlook (preview)
         href: bot-service-channel-connect-actionable-email.md
+      - name: Search (preview)
+        href: bot-service-channel-connect-search.md
       - name: Skype
         href: bot-service-channel-connect-skype.md
       - name: Skype for Business
