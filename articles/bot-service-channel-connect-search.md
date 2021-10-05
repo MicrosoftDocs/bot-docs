@@ -6,7 +6,7 @@ manager: kamrani
 ms.author: kamrani
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 09/28/2021
+ms.date: 10/04/2021
 ms.custom: template-how-to
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -265,9 +265,9 @@ As an example, think of a bot that manages flight schedules and status.
 
 1. Include diverse phrases that cover the scope of your bot's features, such as departure time and current status.
 
-    For example, include queries about: arrival or departure times, airports, and current or forecast weather and temperature.
+    For example, include queries about: arrival or departure times and airports.
 
-The trigger phrases for such a bot might include:
+The trigger phrases for such a _flight schedule and status_ bot might include:
 
 - Flight timetable
 - Flight status
@@ -276,6 +276,9 @@ The trigger phrases for such a bot might include:
 - Flight 468 arrival time
 - Seattle Tacoma flight status
 - Heathrow flight status
+
+As another example, the trigger phrases for _weather forecast_ bot might include:
+
 - Local weather forecast
 - Weather info
 - Tomorrow's weather
