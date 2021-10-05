@@ -1,12 +1,12 @@
 ---
-title: Add suggested actions to messages - Azure Bot Service
+title: Add suggested actions to messages in Bot Framework SDK
 description: Learn how to add suggested actions to messages using the Bot Connector service.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 12/13/2017
+ms.date: 09/21/2021
 ---
 
 # Add suggested actions to messages with the Bot Connector API
