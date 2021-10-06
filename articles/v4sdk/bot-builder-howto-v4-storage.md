@@ -1,13 +1,13 @@
 ---
 title: Write directly to storage in Bot Framework SDK
-description: Learn how to use the Bot Framework SDK to write bot data directly to various types of persistent storage, without using a state manager.
+description: Learn how to use the Bot Framework SDK to write bot data directly to various types of persistent storage without using a state manager.
 keywords: storage, read and write, memory storage, eTag
 author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 09/15/2021
+ms.date: 09/30/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
