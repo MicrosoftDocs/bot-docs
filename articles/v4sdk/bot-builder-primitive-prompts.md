@@ -1,13 +1,13 @@
 ---
-title: Create your own prompts to gather user input - Bot Service
+title: Create your own prompts to gather user input in Bot Framework SDK
 description: Learn how to manage a conversation flow with primitive prompts in the Bot Framework SDK.
 keywords: conversation flow, prompts, conversation state, user state, custom prompts
 author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 07/13/2020
+ms.date: 10/06/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -52,7 +52,6 @@ The sample bot asks the user a series of questions, validates some of their answ
 - A `UserProfile` class for the user information that the bot will collect.
 - A `ConversationFlow` class to control our conversation state while gathering user information.
 - An inner `ConversationFlow.Question` enumeration for tracking where you are in the conversation.
-
 
 ## [Python](#tab/python)
 
@@ -150,7 +149,6 @@ Before the turn ends, call `saveChanges` to write any state changes to storage.
 
 [!code-java[OnMessageActivityAsync](~/../botbuilder-samples/samples/java_springboot/44.prompt-users-for-input/src/main/java/com/microsoft/bot/sample/promptusersforinput/CustomPromptBot.java?range=57-59)]
 
-
 ## [Python](#tab/python)
 
 In the constructor, you create the state property accessors and set up the state management objects (created above) for our conversation.
@@ -164,7 +162,7 @@ Before the turn ends, call `SaveChangesAsync` to write any state changes to stor
 
 ---
 
-## The bot's message turn handler
+## Message turn handler
 
 When handling message activities, the message handler uses a helper method to manage the conversation and prompt the user. The helper method is described in the following section.
 
@@ -254,7 +252,6 @@ The bot uses the following criteria to validate input.
 
 **CustomPromptBot.java**
 [!code-csharp[validation methods](~/../botbuilder-samples/samples/java_springboot/44.prompt-users-for-input/src/main/java/com/microsoft/bot/sample/promptusersforinput/CustomPromptBot.java?range=134-221)]
-
 
 ## [Python](#tab/python)
 
