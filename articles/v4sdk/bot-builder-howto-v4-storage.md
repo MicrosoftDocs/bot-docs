@@ -160,7 +160,7 @@ public class EchoBot : ActivityHandler
 
 ### [JavaScript](#tab/javascript)
 
-To use the **.env** configuration file, your bot needs an extra package included. If not already installed, get the dotnet package from npm:
+To use the **.env** configuration file, your bot needs an extra package included. If not already installed, get the .NET package from npm:
 
 ```console
 npm install --save dotenv
@@ -347,7 +347,7 @@ Now that you've used memory storage, we'll update the code to use Azure Cosmos D
 
 ### Set up a Cosmos DB resource
 
-To use Cosmos DB in your bot, you'll need to create a database resource before getting into the code. For an in-depth description of Cosmos DB database and app creation, see the quickstart for [.Net](/azure/cosmos-db/create-sql-api-dotnet-v4), [Node.js](/azure/cosmos-db/create-sql-api-nodejs), or [Python](/azure/cosmos-db/create-sql-api-python).
+To use Cosmos DB in your bot, you'll need to create a database resource before getting into the code. For an in-depth description of Cosmos DB database and app creation, see the quickstart for [.NET](/azure/cosmos-db/create-sql-api-dotnet-v4), [Node.js](/azure/cosmos-db/create-sql-api-nodejs), or [Python](/azure/cosmos-db/create-sql-api-python).
 
 ### Create your database account
 
@@ -461,7 +461,7 @@ Add a reference to **botbuilder-azure** using npm.
 npm install --save botbuilder-azure
 ```
 
-If not already installed, get the dotnet package from npm in order to access your **.env** file settings.
+If not already installed, get the .NET package from npm in order to access your **.env** file settings.
 
 ```Console
 npm install --save dotenv
@@ -747,7 +747,7 @@ Add references to botbuilder-azure in your project via npm.
 npm install --save botbuilder-azure-blobs
 ```
 
-If not already installed, get the dotnet package from npm in order to access your **.env** file settings.
+If not already installed, get the .NET package from npm in order to access your **.env** file settings.
 
 ```Console
 npm install --save dotenv
