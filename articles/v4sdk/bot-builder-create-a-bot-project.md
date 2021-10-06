@@ -41,7 +41,7 @@ A bot is a web application, and templates are provided for each language.
 
 # [C#](#tab/csharp)
 
-The Bot Framework includes both VSIX and dotnet templates.
+The Bot Framework includes both VSIX and .NET templates.
 
 The templates generate an [ASP.NET MVC Core](https://dotnet.microsoft.com/apps/aspnet/mvc) web app. If you look at the [ASP.NET](/aspnet/core/fundamentals/index?view=aspnetcore-3.1&preserve-view=true) fundamentals, you'll see similar code in files such as **Program.cs** and **Startup.cs**. These files are required for all web apps and are not bot specific.
 

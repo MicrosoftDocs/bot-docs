@@ -1,12 +1,12 @@
 ---
-title: Reconnect to a conversation - Bot Service
-description: Learn how to reconnect to conversations with bots after losing contact. See how to use version 3.0 of the Direct Line API to generate new WebSocket stream URLs.
-author: RobStand
+title: Reconnect to a conversation in Bot Framework SDK
+description: Learn how to reconnect to a conversation after losing contact. See how to use Direct Line API version 3.0 to generate new WebSocket stream URLs.
+author: kamrani
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: reference
 ms.service: bot-service
-ms.date: 2/20/2020
+ms.date: 10/04/2021
 ---
 
 # Reconnect to a conversation in Direct Line API 3.0

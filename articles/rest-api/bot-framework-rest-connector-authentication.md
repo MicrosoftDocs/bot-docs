@@ -1,12 +1,12 @@
 ---
-title: Authenticate requests - Bot Service
+title: Authenticate requests with the Bot Connector API
 description: Learn how to authenticate API requests in the Bot Connector API and Bot State API.
 author: RobStand
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 03/09/2021
+ms.date: 09/30/2021
 ---
 
 # Authentication with the Bot Connector API
@@ -22,12 +22,6 @@ This article describes the authentication technologies and requirements for the 
 > are sent to your bot, send messages that impersonate your bot, and steal secret keys.
 
 If you are using the [Bot Framework SDK for .NET](../dotnet/bot-builder-dotnet-overview.md) or the [Bot Framework SDK for Node.js](../nodejs/index.md), you do not need to implement the security procedures described in this article, because the SDK automatically does it for you. Simply configure your project with the App ID and password that you obtained for your bot during [registration](../bot-service-quickstart-registration.md) and the SDK will handle the rest.
-
-> [!WARNING]
-> In December 2016, v3.1 of the Bot Framework security protocol introduced changes to several values that are
-> used during token generation and validation. In late fall of 2017, v3.2 of the Bot Framework security protocol was introduced
-> which included changes to values that are used during token generation and validation.
-> For more information, see [Security protocol changes](#security-protocol-changes).
 
 ## Authentication technologies
 
@@ -243,9 +237,6 @@ payload:
 
 ## <a id="emulator-to-bot"></a> Authenticate requests from the Bot Framework Emulator to your bot
 
-> [!WARNING]
-> In late fall of 2017, v3.2 of the Bot Framework security protocol was introduced. This new version includes a new "issuer" value within tokens that are exchanged between the Bot Framework Eumaltor and your bot. To prepare for this change, the below steps outline how to check for both the v3.1 and v3.2 issuer values.
-
 The [Bot Framework Emulator](../bot-service-debug-emulator.md) is a desktop tool that you can use to test the functionality of your bot. Although the Bot Framework Emulator uses the same [authentication technologies](#authentication-technologies) as described above, it is unable to impersonate the real Bot Connector service.
 Instead, it uses the Microsoft App ID and Microsoft App Password that you specify when you connect the Emulator to your bot to create tokens that are identical to those that the bot creates.
 When the Emulator sends a request to your bot, it specifies the JWT token in the `Authorization` header of the request -- in essence, using the bot's own credentials to authenticate the request.
@@ -338,11 +329,6 @@ payload:
 > Actual fields may vary in practice. Create and validate all JWT tokens as specified above.
 
 ## Security protocol changes
-
-> [!WARNING]
-> Support for v3.0 of the security protocol was discontinued on **July 31, 2017**.
-> If you have written your own authentication code (i.e., did not use the Bot Framework SDK to create your bot),
-> you must upgrade to v3.1 of the security protocol by updating your application to use the v3.1 values that are listed below.
 
 ### [Bot to Connector authentication](#bot-to-connector)
 

@@ -277,7 +277,7 @@ The trigger phrases for such a _flight schedule and status_ bot might include:
 - Seattle Tacoma flight status
 - Heathrow flight status
 
-As another example, the trigger phrases for _weather forecast_ bot might include:
+As another example, the trigger phrases for a _weather forecast_ bot might include:
 
 - Local weather forecast
 - Weather info
