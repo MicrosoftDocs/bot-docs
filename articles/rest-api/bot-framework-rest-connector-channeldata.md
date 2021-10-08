@@ -1,12 +1,12 @@
 ---
 title: Implement channel-specific functionality using REST API - Bot Service
 description: Learn how to implement channel-specific functionality using the Bot Connector API. 
-author: JonathanFingold
+author: RobStand
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 10/08/2021
+ms.date: 12/13/2017
 ---
 
 # Implement channel-specific functionality with the Bot Connector API
@@ -39,6 +39,7 @@ This snippet shows an example of the `channelData` property for a custom email m
 "channelData":
 {
     "htmlBody": "<html><body style = /"font-family: Calibri; font-size: 11pt;/" >This is more than awesome.</body></html>",
+    "subject": "Super awesome message subject",
     "importance": "high",
     "ccRecipients": "Yasemin@adatum.com;Temel@adventure-works.com"
 }
@@ -161,23 +162,23 @@ This snippet shows an example of the `channelData` property for a Facebook recei
 
 ## Create a Telegram message
 
-To create a message that implements Telegram-specific actions,
-such as sharing a voice memo or a sticker,
-set the `Activity` object's `channelData` property to a JSON object that specifies these properties:
+To create a message that implements Telegram-specific actions, 
+such as sharing a voice memo or a sticker, 
+set the `Activity` object's `channelData` property to a JSON object that specifies these properties: 
 
 | Property | Description |
 |----|----|
 | method | The Telegram Bot API method to call. |
 | parameters | The parameters of the specified method. |
 
-These Telegram methods are supported:
+These Telegram methods are supported: 
 
 - answerInlineQuery
 - editMessageCaption
 - editMessageReplyMarkup
 - editMessageText
 - forwardMessage
-- banChatMember
+- kickChatMember
 - sendAudio
 - sendChatAction
 - sendContact
@@ -189,7 +190,7 @@ These Telegram methods are supported:
 - sendVenue
 - sendVideo
 - sendVoice
-- unbanChatMember
+- unbanChateMember
 
 For details about these Telegram methods and their parameters, see the [Telegram Bot API documentation](https://core.telegram.org/bots/api#available-methods).
 

@@ -2,12 +2,12 @@
 title: Implement channel-specific functionality in Bot Framework SDK
 description: Learn how to implement channel-specific functionality using the Bot Framework SDK for .NET. You can do so by passing native metadata to a channel. 
 keywords: channel specific, email, slack, facebook, telegram, kik, custom channel
-author: JonathanFingold
+author: erhopf
 ms.author: kamrani
 manager: kamrani
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 10/08/2021
+ms.date: 09/28/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -43,7 +43,7 @@ To create a custom email message, set the activity `channelData` property to a J
 | ccRecipients | A semicolon (;) delimited string of email addresses to add to the message's Cc (carbon copy) field. |
 | htmlBody | An HTML document that specifies the body of the email message. See the channel's documentation for information about supported HTML elements and attributes. |
 | importance | The email's importance level. Valid values are **high**, **normal**, and **low**. The default value is **normal**. |
-| subject | The email's subject. Do not include a subject in emails sent from the bot to the user, as this can create unexpected behavior. |
+| subject | The email's subject. See the channel's documentation for information about field requirements. |
 | toRecipients | A semicolon (;) delimited string of email addresses to add to the message's To field. |
 
 The outgoing and incoming messages between the user and the bot may have a `channelData` activity that contains a JSON object whose properties are specified in the previous table.
@@ -284,7 +284,7 @@ These Telegram methods are supported:
 - editMessageReplyMarkup
 - editMessageText
 - forwardMessage
-- banChatMember
+- kickChatMember
 - sendAudio
 - sendChatAction
 - sendContact
@@ -296,7 +296,7 @@ These Telegram methods are supported:
 - sendVenue
 - sendVideo
 - sendVoice
-- unbanChatMember
+- unbanChateMember
 
 For details about these Telegram methods and their parameters, see the [Telegram Bot API documentation](https://core.telegram.org/bots/api#available-methods).
 
@@ -456,11 +456,11 @@ These LINE actions can be specified in the action field of the message type JSON
 
 For details about these LINE methods and their parameters, see the [LINE Bot API documentation](https://developers.line.biz/en/docs/messaging-api/).
 
-This snippet shows an example of a `channelData` property that specifies a channel message type `ButtonTemplate` and three action types: "camera", "cameraRoll", and "datetimepicker".
+This snippet shows an example of a `channelData` property that specifies a channel message type `ButtonTemplate` and three action types: camera, cameraRoll, and Datetimepicker.
 
 ```json
 "channelData": {
-    "type": "template",
+    "type": "ButtonsTemplate",
     "altText": "This is a buttons template",
     "template": {
         "type": "buttons",

@@ -1,14 +1,14 @@
 ---
-title: Connect a Bot Framework bot to Telegram
+title: Create a bot for Telegram - Azure Bot Service
 description: Learn how to configure bots to use the Telegram messaging app to communicate with people.
 keywords: configure bot, Telegram, bot channel, Telegram bot, access token
-author: JonathanFingold
+author: RobStand
 ms.author: kamrani
 manager: kamrani
 ms.topic: how-to
 ms.service: bot-service
 ms.custom: abs-meta-21q1
-ms.date: 10/08/2021
+ms.date: 12/13/2017
 ---
 
 # Connect a bot to Telegram
