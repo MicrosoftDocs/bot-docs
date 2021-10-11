@@ -1,12 +1,12 @@
 ---
 title: Implement channel-specific functionality using REST API - Bot Service
 description: Learn how to implement channel-specific functionality using the Bot Connector API. 
-author: RobStand
+author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 12/13/2017
+ms.date: 10/08/2021
 ---
 
 # Implement channel-specific functionality with the Bot Connector API
@@ -38,8 +38,7 @@ This snippet shows an example of the `channelData` property for a custom email m
 ```json
 "channelData":
 {
-    "htmlBody": "<html><body style = /"font-family: Calibri; font-size: 11pt;/" >This is more than awesome.</body></html>",
-    "subject": "Super awesome message subject",
+    "htmlBody": "<html><body style = \"font-family: Calibri; font-size: 11pt;\" >This is more than awesome.</body></html>",
     "importance": "high",
     "ccRecipients": "Yasemin@adatum.com;Temel@adventure-works.com"
 }
@@ -109,8 +108,8 @@ This snippet shows an example of the `channelData` property for a custom Slack m
 }
 ```
 
-When a user clicks a button within a Slack message, your bot will receive a response message in which the `channelData` property is populated with a `payload` JSON object. The `payload` object specifies contents of the original message, 
-identifies the button that was clicked, and identifies the user who clicked the button. 
+When a user clicks a button within a Slack message, your bot will receive a response message in which the `channelData` property is populated with a `payload` JSON object. The `payload` object specifies contents of the original message,
+identifies the button that was clicked, and identifies the user who clicked the button.
 
 This snippet shows an example of the `channelData` property in the message that a bot receives when a user clicks a button in the Slack message.
 
@@ -123,18 +122,18 @@ This snippet shows an example of the `channelData` property in the message that 
                 "value": "yes"
             }
         ],
-        . . .
+        //...
         "original_message": "{…}",
         "response_url": "https://hooks.slack.com/actions/..."
     }
 }
 ```
 
-Your bot can reply to this message in the [normal manner](bot-framework-rest-connector-send-and-receive-messages.md#create-reply), or it can post its response directly to the endpoint that is specified by the `payload` object's `response_url` property. For information about when and how to post a response to the `response_url`, see [Slack Buttons](https://api.slack.com/docs/message-buttons). 
+Your bot can reply to this message in the [normal manner](bot-framework-rest-connector-send-and-receive-messages.md#create-reply), or it can post its response directly to the endpoint that is specified by the `payload` object's `response_url` property. For information about when and how to post a response to the `response_url`, see [Slack Buttons](https://api.slack.com/docs/message-buttons).
 
 ## Create a Facebook notification
 
-To create a Facebook notification, set the `Activity` object's `channelData` property to a JSON object that specifies these properties: 
+To create a Facebook notification, set the `Activity` object's `channelData` property to a JSON object that specifies these properties:
 
 | Property | Description |
 |----|----|
@@ -142,7 +141,7 @@ To create a Facebook notification, set the `Activity` object's `channelData` pro
 | attachment | An attachment that specifies an image, video, or other multimedia type, or a templated attachment such as a receipt. |
 
 > [!NOTE]
-> For details about format and contents of the `notification_type` property and `attachment` property, see the 
+> For details about format and contents of the `notification_type` property and `attachment` property, see the
 > [Facebook API documentation](https://developers.facebook.com/docs/messenger-platform/send-api-reference#guidelines).
 
 This snippet shows an example of the `channelData` property for a Facebook receipt attachment.
@@ -154,7 +153,7 @@ This snippet shows an example of the `channelData` property for a Facebook recei
         "type": "template"
         "payload": {
             "template_type": "receipt",
-            . . .
+            //...
         }
     }
 }
@@ -162,23 +161,23 @@ This snippet shows an example of the `channelData` property for a Facebook recei
 
 ## Create a Telegram message
 
-To create a message that implements Telegram-specific actions, 
-such as sharing a voice memo or a sticker, 
-set the `Activity` object's `channelData` property to a JSON object that specifies these properties: 
+To create a message that implements Telegram-specific actions,
+such as sharing a voice memo or a sticker,
+set the `Activity` object's `channelData` property to a JSON object that specifies these properties:
 
 | Property | Description |
 |----|----|
 | method | The Telegram Bot API method to call. |
 | parameters | The parameters of the specified method. |
 
-These Telegram methods are supported: 
+These Telegram methods are supported:
 
 - answerInlineQuery
 - editMessageCaption
 - editMessageReplyMarkup
 - editMessageText
 - forwardMessage
-- kickChatMember
+- banChatMember
 - sendAudio
 - sendChatAction
 - sendContact
@@ -190,14 +189,15 @@ These Telegram methods are supported:
 - sendVenue
 - sendVideo
 - sendVoice
-- unbanChateMember
+- unbanChatMember
 
 For details about these Telegram methods and their parameters, see the [Telegram Bot API documentation](https://core.telegram.org/bots/api#available-methods).
 
 > [!NOTE]
-> <ul><li>The <code>chat_id</code> parameter is common to all Telegram methods. If you do not specify <code>chat_id</code> as a parameter, the framework will provide the ID for you.</li>
-> <li>Instead of passing file contents inline, specify the file using a URL and media type as shown in the example below.</li>
-> <li>Within each message that your bot receives from the Telegram channel, the <code>channelData</code> property will include the message that your bot sent previously.</li></ul>
+>
+> - The `chat_id` parameter is common to all Telegram methods. If you do not specify `chat_id` as a parameter, the framework will provide the ID for you.
+> - Instead of passing file contents inline, specify the file using a URL and media type as shown in the example below.
+> - Within each message that your bot receives from the Telegram channel, the `channelData` property will include the message that your bot sent previously.
 
 This snippet shows an example of a `channelData` property that specifies a single Telegram method.
 
@@ -238,8 +238,8 @@ This snippet shows an example of a `channelData` property that specifies an arra
 
 ## Create a native Kik message
 
-To create a native Kik message, 
-set the `Activity` object's `channelData` property to a JSON object that specifies this property: 
+To create a native Kik message,
+set the `Activity` object's `channelData` property to a JSON object that specifies this property:
 
 | Property | Description |
 |----|----|
