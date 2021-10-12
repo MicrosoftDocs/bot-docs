@@ -18,7 +18,7 @@ az ad app create --display-name "displayName" --password "AtLeastSixteenCharacte
 | Option   | Description |
 |:---------|:------------|
 | display-name | The display name of the application. It is listed in the Azure portal in the general resources list and in the resource group it belongs.|
-| password | The password, also known as **client secret**, for the application. This is a password you create for this resource. It must be at least 16 characters long, contain at least 1 upper or lower case alphabetical character, and contain at least 1 special character.|
+| password | The password, also known as **client secret**, for the application. This is a password you create for this resource. It must be at least 16 characters long, contain at least 1 upper or lower case alphabetical character, at least one numeric character, and contain at least 1 special character.|
 | available-to-other-tenants| Indicates that the application can be used from any Azure AD tenant. Set this to enable your bot to work with the Azure Bot Service channels.|
 
 #### Record the appId and appSecret values

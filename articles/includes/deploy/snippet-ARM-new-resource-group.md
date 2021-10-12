@@ -1,16 +1,16 @@
-In this step, you create a bot application service which sets the deployment stage for the bot. You use an ARM template, a new service plan and a new resource group. Run the following Azure cli command to start a deployment at subscription scope from a local template file.
+In this step, you create a bot application service which sets the deployment stage for the bot. You use an ARM template, a new service plan and a new resource group. Run the following Azure CLI command to start a deployment at subscription scope from a local template file.
 
 > [!TIP]
 > Use the ARM template for a _new_ resource group, **template-with-new-rg.json**.
 
 ```azurecli
-az deployment sub create --template-file "<path-to-template-with-new-rg.json" --location <region-location-name> --parameters appId="<app-id-from-previous-step>" appSecret="<password-from-previous-step>" botId="<id or bot-app-service-name>" botSku=F0 newAppServicePlanName="<new-service-plan-name>" newWebAppName="<bot-app-service-name>" groupName="<new-group-name>" groupLocation="<region-location-name>" newAppServicePlanLocation="<region-location-name>" --name "<bot-app-service-name>"
+az deployment sub create --template-file "<path-to-template-with-new-rg.json>" --location <region-location-name> --parameters appId="<app-id-from-previous-step>" appSecret="<password-from-previous-step>" botId="<id or bot-app-service-name>" botSku=F0 newAppServicePlanName="<new-service-plan-name>" newWebAppName="<bot-app-service-name>" groupName="<new-group-name>" groupLocation="<region-location-name>" newAppServicePlanLocation="<region-location-name>" --name "<bot-app-service-name>"
 ```
 
 This step can take a few minutes to complete.
 
 > [!IMPORTANT]
-> **Web App Bot** and **Bot Channels Registration** will be deprecated but existing resources will continue to work. Bots created with a version 4.13.0 or later template will generate an Azure Bot resource.
+> **Web App Bot** and **Bot Channels Registration** are deprecated but existing resources will continue to work. Bots created with a version 4.14.1.2 or later template will generate an Azure Bot resource.
 
 | Option   | Description |
 |:---------|:------------|

@@ -12,6 +12,9 @@ This will build the application, deploy it to localhost, and launch the web brow
 To run your bot from VS Code:
 
 1. Open your bot project folder.
+
+    If you're prompted to select a project, select the one for the bot you just created.
+
 1. Go to **Run**, and then select **Run Without Debugging**.
 
    > [!div class="mx-imgBorder"]
