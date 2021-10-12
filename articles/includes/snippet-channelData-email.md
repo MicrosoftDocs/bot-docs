@@ -8,7 +8,7 @@
     "conversation": { "id": "123123123123", "topic": "awesome chat" },
     "channelData":
     {
-        "htmlBody": "<html><body style = /"font-family: Calibri; font-size: 11pt;/" >This is more than awesome.</body></html>",
+        "htmlBody": "<html><body style = \"font-family: Calibri; font-size: 11pt;\" >This is more than awesome.</body></html>",
         "importance": "high",
         "ccRecipients": "Yasemin@adatum.com;Temel@adventure-works.com",
     }
