@@ -3,7 +3,9 @@
 - name: Overview
   items:
   - name: What is the Bot Framework SDK?
-    href: bot-service-overview.md
+    href: bot-service-overview-introduction.md
+  - name: Choose the right chatbot solution for your use case
+    href: bot-overview.md
   - name: What's new
     href: what-is-new.md
 - name: Quickstart
