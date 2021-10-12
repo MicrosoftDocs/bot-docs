@@ -165,7 +165,7 @@ pip install cookiecutter==1.7.0
 >[!IMPORTANT]
 >If you're using a 32-bit version of Python, make sure you also run `pip install cryptography==2.8`.
 
-[3.8.2]: https://www.python.org/downloads/release/python-383/
+[3.8.3]: https://www.python.org/downloads/release/python-383/
 [Emulator]: https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md
 
 ---
