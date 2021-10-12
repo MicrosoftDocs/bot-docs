@@ -1,8 +1,8 @@
 ---
-title: Azure Bot Service encryption for data at rest - Bot Service
+title: Azure Bot Service encryption for data at rest in Bot Framework SDK
 description: Azure Bot Service protects your data by automatically encrypting it before persisting it to the cloud with Microsoft provided encryption keys.
 ms.service: bot-service
-ms.date: 05/10/2021
+ms.date: 10/11/2021
 ms.topic: conceptual
 author: JonathanFingold
 ms.author: jameslew
@@ -28,6 +28,9 @@ When encrypting data, Azure Bot Service encrypts with two levels of encryption. 
 To utilize the customer-managed keys feature, you must store and manage keys in **Azure Key Vault**. You can either create your own keys and store them in a key vault, or you can use the Azure Key Vault APIs to generate keys. Your bot registration and the key vault must be in the same Azure Active Directory (Azure AD) tenant, but they can be in different subscriptions. For more information about Azure Key Vault, see [What is Azure Key Vault?](/azure/key-vault/key-vault-overview).
 
 When using a customer-managed key, Azure Bot Service encrypts your data in its storage, such that if access to that key is revoked or the key is deleted, your bot won't be able to use Azure Bot Service to send or receive messages, and you won't be able to access or edit the configuration of your Bot registration in the Azure portal.
+
+When you create an Azure Bot resource via the portal, Azure generates an _app ID_ and a _password_ and stores the password in the Azure Key Vault. For more information, see [Add authentication to a bot](v4sdk/bot-builder-authentication.md#azure-key-vault). 
+For an approach using CLI, see [Configure the web app to connect to Key Vault](/azure/key-vault/general/tutorial-net-create-vault-azure-web-app#configure-the-web-app-to-connect-to-key-vault). Finally, for an example on how to store and retrieve secrets, see [Quickstart: Azure Key Vault secret client library for .NET (SDK v4)](/azure/key-vault/secrets/quick-create-net). 
 
 > [!IMPORTANT]
 > The Azure Bot Service team cannot recover a customer-managed encryption key bot without access to the key.
