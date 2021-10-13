@@ -6,7 +6,7 @@ In this step, you create a bot application service that sets the deployment stag
 This step can take a few minutes to complete.
 
 > [!IMPORTANT]
-> **Web App Bot** and **Bot Channels Registration** will be deprecated but existing resources will continue to work. Bots created with a version 4.13.0 or later template will generate an Azure Bot resource.
+> **Web App Bot** and **Bot Channels Registration** are deprecated but existing resources will continue to work. Bots created with a version 4.14.1.2 or later template will generate an Azure Bot resource.
 
 ##### **Option 1: Existing App Service Plan**
 

@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: quickstart
 ms.service: bot-service
-ms.date: 09/01/2021
+ms.date: 09/14/2021
 ms.custom: mode-api, tab-zone-seo, abs-meta-21q1
 ---
 
@@ -127,7 +127,7 @@ Yeoman is a tool for creating applications. For more information, see [yeoman.io
 
 ### [Python](#tab/python)
 
-- Python [3.8+][]
+- Python [3.8.3][]
 - [Bot Framework Emulator][Emulator]
 - Knowledge of asynchronous programming in Python
 
@@ -165,7 +165,7 @@ pip install cookiecutter==1.7.0
 >[!IMPORTANT]
 >If you're using a 32-bit version of Python, make sure you also run `pip install cryptography==2.8`.
 
-[3.8+]: https://www.python.org/downloads/release/python-383/
+[3.8.3]: https://www.python.org/downloads/release/python-383/
 [Emulator]: https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md
 
 ---
@@ -196,14 +196,14 @@ Yeoman prompts you for some information with which to create your bot. For this 
 ? Looking good.  Shall I go ahead and create your new bot? (Y/n) Enter "y"
 ```
 
-The generator supports a number of command line options that can be used to change the generator's default options or to pre-seed a prompt.
+The generator supports a number of command line options that can be used to change the generator's default options or to pre-seed a prompt. The options are case-sensitive.
 
 | Command&nbsp;line&nbsp;Option  | Description |
 | ------------------- | ----------- |
 | `--help, -h`        | List help text for all supported command-line options |
 | `--botName, -N`     | The name given to the bot project |
 | `--packageName, -P` | The Java package name to use for the bot |
-| `--template, -T`    | The template used to generate the project. Options are `empty` or `echo`. See [https://github.com/Microsoft/BotBuilder-Samples/tree/master/generators/generator-botbuilder](https://github.com/Microsoft/BotBuilder-Samples/tree/master/generators/generator-botbuilder) for additional information regarding the different template options and their functional differences. |
+| `--template, -T`    | The template used to generate the project. Options are `echo`, `empty`, or `core`. See [https://github.com/Microsoft/BotBuilder-Samples/tree/master/generators/generator-botbuilder](https://github.com/Microsoft/BotBuilder-Samples/tree/master/generators/generator-botbuilder) for additional information regarding the different template options and their functional differences. |
 | `--noprompt`       | The generator will not prompt for confirmation before creating a new bot. Any requirement options not passed on the command line will use a reasonable default value. This option is intended to enable automated bot generation for testing purposes. |
 
 Thanks to the template, your project contains all the code that's necessary to create the bot in this quickstart. You don't need any additional code to test your bot.
@@ -249,10 +249,10 @@ Thanks to the template, your project contains all the code that's necessary to c
    ```
 
 2. You'll be prompted to give your bot a name and description. Enter the following values:
-   - **bot_name**: **echo-bot**
-   - **bot_description**: **A bot that echoes back user response.**
+   - **bot_name**: *echo_bot*
+   - **bot_description**: *A bot that echoes back user response.*
 
-   ![set name and description](media/python/quickstart/set-name-description.png)
+   :::image type="content" source="media/python/quickstart/set-name-description.png" alt-text="Set Python bot name and description":::
 
 > [!div class="nextstepaction"]
 > [I created an echo bot](#start-your-bot) [I ran into an issue](https://microsoft.qualtrics.com/jfe/form/SV_6D4KLPZc2jTIa2O?Product=BotSDK&Page=bot-service-quickstart-create-bot&Section=create-a-bot&PLanguage=Python)
@@ -307,10 +307,10 @@ At this point, your bot is running locally on port 3978.
 
 ### [Python](#tab/python)
 
-1. From the command line/terminal, change directories to `echo-bot`.
+1. From the command line/terminal, change directories to `echo_bot`.
 
    ```console
-   cd echo-bot
+   cd echo_bot
    ```
 
 1. Install the dependencies for the echo bot template.
@@ -327,9 +327,9 @@ At this point, your bot is running locally on port 3978.
 
     You will know your bot is ready to test when you see the last line shown in the screenshot below:
 
-    ![bot running locally](media/python/quickstart/bot-running-locally.png)
+    :::image type="content" source="media/python/quickstart/bot-running-locally.png" alt-text="Python bot running locally":::
 
-1. Copy the last for digits in the address on the last line, usually **3978**; you'll need these when you use the Emulator to interact with your bot.
+1. Copy the http address in the last line. You will need it when you use the Emulator to interact with your bot.
 
 > [!div class="nextstepaction"]
 > [I started the echo bot](#start-the-emulator-and-connect-your-bot) [I ran into an issue](https://microsoft.qualtrics.com/jfe/form/SV_6D4KLPZc2jTIa2O?Product=BotSDK&Page=bot-service-quickstart-create-bot&Section=start-your-bot&PLanguage=Python)

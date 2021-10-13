@@ -2,12 +2,12 @@
 title: Implement channel-specific functionality in Bot Framework SDK
 description: Learn how to implement channel-specific functionality using the Bot Framework SDK for .NET. You can do so by passing native metadata to a channel. 
 keywords: channel specific, email, slack, facebook, telegram, kik, custom channel
-author: erhopf
+author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 09/28/2021
+ms.date: 10/08/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -19,13 +19,15 @@ Some channels provide features that can't be implemented with only message text 
 
 This article describes how to use a message activity's channel data property to implement this channel-specific functionality:
 
-| Channel  | Functionality                                                                  |
-| -------- | ------------------------------------------------------------------------------ |
-| Email    | Send and receive an email that contains body, subject, and importance metadata |
-| Slack    | Send full fidelity Slack messages                                              |
-| Facebook | Send Facebook notifications natively                                           |
-| Telegram | Perform Telegram-specific actions, such as sharing a voice memo or a sticker   |
-| Kik      | Send and receive native Kik messages                                           |
+| Channel | Functionality |
+|--|--|
+| [Email](#create-a-custom-email-message) | Send and receive an email that contains body, subject, and importance metadata. |
+| [Facebook](#create-a-facebook-notification) | Send Facebook notifications natively. |
+| [Kik](#create-a-native-kik-message) | Send and receive native Kik messages. |
+| [LINE](#create-a-line-message) | Send  a message that implements LINE-specific message types. |
+| [Slack](#create-a-full-fidelity-slack-message) | Send full fidelity Slack messages. |
+| [Teams](#add-a-bot-to-teams) | Handle @-mentions in Microsoft Teams messages. |
+| [Telegram](#create-a-telegram-message) | Perform Telegram-specific actions, such as sharing a voice memo or a sticker. |
 
 > [!NOTE]
 > The value of an activity object's channel data property is a JSON object.
@@ -43,13 +45,143 @@ To create a custom email message, set the activity `channelData` property to a J
 | ccRecipients | A semicolon (;) delimited string of email addresses to add to the message's Cc (carbon copy) field. |
 | htmlBody | An HTML document that specifies the body of the email message. See the channel's documentation for information about supported HTML elements and attributes. |
 | importance | The email's importance level. Valid values are **high**, **normal**, and **low**. The default value is **normal**. |
-| subject | The email's subject. See the channel's documentation for information about field requirements. |
 | toRecipients | A semicolon (;) delimited string of email addresses to add to the message's To field. |
 
 The outgoing and incoming messages between the user and the bot may have a `channelData` activity that contains a JSON object whose properties are specified in the previous table.
 The snippet below shows an example of the `channelData` property for an incoming custom email message, from the bot to the user.
 
 [!INCLUDE [email channelData json](../includes/snippet-channelData-email.md)]
+
+## Create a Facebook notification
+
+To create a Facebook notification,
+set the activity object's channel data property to a JSON object that specifies these properties:
+
+| Property | Description |
+|--|--|
+| notification_type | The type of notification, such as **REGULAR**, **SILENT_PUSH**, or **NO_PUSH**. |
+| attachment | An attachment that specifies an image, video, or other multimedia type, or a templated attachment such as a receipt. |
+
+> [!NOTE]
+> For details about format and contents of the `notification_type` property and `attachment` property, see the
+> [Facebook API documentation](https://developers.facebook.com/docs/messenger-platform/send-api-reference#guidelines).
+
+This snippet shows an example of the `channelData` property for a Facebook receipt attachment.
+
+```json
+"channelData": {
+    "notification_type": "NO_PUSH",
+    "attachment": {
+        "type": "template"
+        "payload": {
+            "template_type": "receipt",
+            //...
+        }
+    }
+}
+```
+
+## Create a native Kik message
+
+To create a native Kik message, set the activity object's channel data property to a JSON object that specifies this property:
+
+| Property | Description |
+|--|--|
+| messages | An array of Kik messages. For details about Kik message format, see [Kik Message Formats](https://dev.kik.com/#/docs/messaging#message-formats). |
+
+This snippet shows an example of the `channelData` property for a native Kik message.
+
+```json
+"channelData": {
+    "messages": [
+        {
+            "chatId": "c6dd8165…",
+            "type": "link",
+            "to": "kikhandle",
+            "title": "My Webpage",
+            "text": "Some text to display",
+            "url": "http://botframework.com",
+            "picUrl": "http://lorempixel.com/400/200/",
+            "attribution": {
+                "name": "My App",
+                "iconUrl": "http://lorempixel.com/50/50/"
+            },
+            "noForward": true,
+            "kikJsData": {
+                    "key": "value"
+                }
+        }
+    ]
+}
+```
+
+## Create a LINE message
+
+To create a message that implements LINE-specific message types (such as sticker, templates, or LINE-specific action types like opening the phone camera), set the activity object's channel data property to a JSON object that specifies LINE message types and action types.
+
+| Property | Description                       |
+| -------- | --------------------------------- |
+| type     | The LINE action/message type name |
+
+These LINE message types are supported:
+
+- Sticker
+- Imagemap
+- Template (Button, confirm, carousel)
+- Flex
+
+These LINE actions can be specified in the action field of the message type JSON object:
+
+- Postback
+- Message
+- URI
+- Datetimerpicker
+- Camera
+- Camera roll
+- Location
+
+For details about these LINE methods and their parameters, see the [LINE Bot API documentation](https://developers.line.biz/en/docs/messaging-api/).
+
+This snippet shows an example of a `channelData` property that specifies a channel message type `ButtonTemplate` and three action types: "camera", "cameraRoll", and "datetimepicker".
+
+```json
+"channelData": {
+    "type": "template",
+    "altText": "This is a buttons template",
+    "template": {
+        "type": "buttons",
+        "thumbnailImageUrl": "https://example.com/bot/images/image.jpg",
+        "imageAspectRatio": "rectangle",
+        "imageSize": "cover",
+        "imageBackgroundColor": "#FFFFFF",
+        "title": "Menu",
+        "text": "Please select",
+        "defaultAction": {
+            "type": "uri",
+            "label": "View detail",
+            "uri": "http://example.com/page/123"
+        },
+        "actions": [{
+                "type": "cameraRoll",
+                "label": "Camera roll"
+            },
+            {
+                "type": "camera",
+                "label": "Camera"
+            },
+            {
+                "type": "datetimepicker",
+                "label": "Select date",
+                "data": "storeId=12345",
+                "mode": "datetime",
+                "initial": "2017-12-25t00:00",
+                "max": "2018-01-24t23:59",
+                "min": "2017-12-25t00:00"
+            }
+        ]
+    }
+}
+```
 
 ## Create a full-fidelity Slack message
 
@@ -131,7 +263,7 @@ This snippet shows an example of the `channelData` property in the message that 
                 "value": "yes"
             }
         ],
-        . . .
+        //...
         "original_message": "{…}",
         "response_url": "https://hooks.slack.com/actions/..."
     }
@@ -239,34 +371,45 @@ To create interactive menus, use the following JSON:
 }
 ```
 
-## Create a Facebook notification
+## Add a bot to Teams
 
-To create a Facebook notification,
-set the activity object's channel data property to a JSON object that specifies these properties:
+Bots added to a team become another team member, who can be `@mentioned` as part of the conversation. In fact, bots only receive messages when they're `@mentioned`, so other conversations on the channel are not sent to the bot. For more information, see [Channel and Group chat conversations with a Microsoft Teams bot](/microsoftteams/platform/concepts/bots/bot-conversations/bots-conv-channel).
 
-| Property | Description |
-|--|--|
-| notification_type | The type of notification, such as **REGULAR**, **SILENT_PUSH**, or **NO_PUSH**. |
-| attachment | An attachment that specifies an image, video, or other multimedia type, or a templated attachment such as a receipt. |
+Because bots in a group or channel respond only when they're mentioned (`@botname`) in a message, every message received by a bot in a group channel contains its own name, and you must ensure your message parsing handles that. In addition, bots can parse out other users mentioned and mention users as part of their messages.
 
-> [!NOTE]
-> For details about format and contents of the `notification_type` property and `attachment` property, see the
-> [Facebook API documentation](https://developers.facebook.com/docs/messenger-platform/send-api-reference#guidelines).
+### Check for and strip @bot mention
 
-This snippet shows an example of the `channelData` property for a Facebook receipt attachment.
+```csharp
+Mention[] m = sourceMessage.GetMentions();
+var messageText = sourceMessage.Text;
 
-```json
-"channelData": {
-    "notification_type": "NO_PUSH",
-    "attachment": {
-        "type": "template"
-        "payload": {
-            "template_type": "receipt",
-            . . .
-        }
+for (int i = 0;i < m.Length;i++)
+{
+    if (m[i].Mentioned.Id == sourceMessage.Recipient.Id)
+    {
+        //Bot is in the @mention list.
+        //The below example will strip the bot name out of the message, so you can parse it as if it wasn't included. Note that the Text object will contain the full bot name, if applicable.
+        if (m[i].Text != null)
+            messageText = messageText.Replace(m[i].Text, "");
     }
 }
 ```
+
+```javascript
+var text = message.text;
+if (message.entities) {
+    message.entities
+        .filter(entity => ((entity.type === "mention") && (entity.mentioned.id.toLowerCase() === botId)))
+        .forEach(entity => {
+            text = text.replace(entity.text, "");
+        });
+    text = text.trim();
+}
+
+```
+
+> [!IMPORTANT]
+> Adding a bot by GUID, for anything other than testing purposes, is not recommended. Doing so severely limits the functionality of a bot. Bots in production should be added to Teams as part of an app. See [Create a bot](/microsoftteams/platform/concepts/bots/bots-create) and [Test and debug your Microsoft Teams bot](/microsoftteams/platform/concepts/bots/bots-test).
 
 ## Create a Telegram message
 
@@ -284,7 +427,7 @@ These Telegram methods are supported:
 - editMessageReplyMarkup
 - editMessageText
 - forwardMessage
-- kickChatMember
+- banChatMember
 - sendAudio
 - sendChatAction
 - sendContact
@@ -296,7 +439,7 @@ These Telegram methods are supported:
 - sendVenue
 - sendVideo
 - sendVoice
-- unbanChateMember
+- unbanChatMember
 
 For details about these Telegram methods and their parameters, see the [Telegram Bot API documentation](https://core.telegram.org/bots/api#available-methods).
 
@@ -394,148 +537,6 @@ This snippet shows an example of the `channelData` property in the message that 
     }
 }
 ```
-
-## Create a native Kik message
-
-To create a native Kik message, set the activity object's channel data property to a JSON object that specifies this property:
-
-| Property | Description |
-|--|--|
-| messages | An array of Kik messages. For details about Kik message format, see [Kik Message Formats](https://dev.kik.com/#/docs/messaging#message-formats). |
-
-This snippet shows an example of the `channelData` property for a native Kik message.
-
-```json
-"channelData": {
-    "messages": [
-        {
-            "chatId": "c6dd8165…",
-            "type": "link",
-            "to": "kikhandle",
-            "title": "My Webpage",
-            "text": "Some text to display",
-            "url": "http://botframework.com",
-            "picUrl": "http://lorempixel.com/400/200/",
-            "attribution": {
-                "name": "My App",
-                "iconUrl": "http://lorempixel.com/50/50/"
-            },
-            "noForward": true,
-            "kikJsData": {
-                    "key": "value"
-                }
-        }
-    ]
-}
-```
-
-## Create a LINE message
-
-To create a message that implements LINE-specific message types (such as sticker, templates, or LINE-specific action types like opening the phone camera), set the activity object's channel data property to a JSON object that specifies LINE message types and action types.
-
-| Property | Description                       |
-| -------- | --------------------------------- |
-| type     | The LINE action/message type name |
-
-These LINE message types are supported:
-
-- Sticker
-- Imagemap
-- Template (Button, confirm, carousel)
-- Flex
-
-These LINE actions can be specified in the action field of the message type JSON object:
-
-- Postback
-- Message
-- URI
-- Datetimerpicker
-- Camera
-- Camera roll
-- Location
-
-For details about these LINE methods and their parameters, see the [LINE Bot API documentation](https://developers.line.biz/en/docs/messaging-api/).
-
-This snippet shows an example of a `channelData` property that specifies a channel message type `ButtonTemplate` and three action types: camera, cameraRoll, and Datetimepicker.
-
-```json
-"channelData": {
-    "type": "ButtonsTemplate",
-    "altText": "This is a buttons template",
-    "template": {
-        "type": "buttons",
-        "thumbnailImageUrl": "https://example.com/bot/images/image.jpg",
-        "imageAspectRatio": "rectangle",
-        "imageSize": "cover",
-        "imageBackgroundColor": "#FFFFFF",
-        "title": "Menu",
-        "text": "Please select",
-        "defaultAction": {
-            "type": "uri",
-            "label": "View detail",
-            "uri": "http://example.com/page/123"
-        },
-        "actions": [{
-                "type": "cameraRoll",
-                "label": "Camera roll"
-            },
-            {
-                "type": "camera",
-                "label": "Camera"
-            },
-            {
-                "type": "datetimepicker",
-                "label": "Select date",
-                "data": "storeId=12345",
-                "mode": "datetime",
-                "initial": "2017-12-25t00:00",
-                "max": "2018-01-24t23:59",
-                "min": "2017-12-25t00:00"
-            }
-        ]
-    }
-}
-```
-
-## Add a bot to Teams
-
-Bots added to a team become another team member, who can be `@mentioned` as part of the conversation. In fact, bots only receive messages when they're `@mentioned`, so other conversations on the channel are not sent to the bot. For more information, see [Channel and Group chat conversations with a Microsoft Teams bot](/microsoftteams/platform/concepts/bots/bot-conversations/bots-conv-channel).
-
-Because bots in a group or channel respond only when they're mentioned (`@botname`) in a message, every message received by a bot in a group channel contains its own name, and you must ensure your message parsing handles that. In addition, bots can parse out other users mentioned and mention users as part of their messages.
-
-### Check for and strip @bot mention
-
-```csharp
-Mention[] m = sourceMessage.GetMentions();
-var messageText = sourceMessage.Text;
-
-for (int i = 0;i < m.Length;i++)
-{
-    if (m[i].Mentioned.Id == sourceMessage.Recipient.Id)
-    {
-        //Bot is in the @mention list.
-        //The below example will strip the bot name out of the message, so you can parse it as if it wasn't included. Note that the Text object will contain the full bot name, if applicable.
-        if (m[i].Text != null)
-            messageText = messageText.Replace(m[i].Text, "");
-    }
-}
-```
-
-```javascript
-var text = message.text;
-if (message.entities) {
-    message.entities
-        .filter(entity => ((entity.type === "mention") && (entity.mentioned.id.toLowerCase() === botId)))
-        .forEach(entity => {
-            text = text.replace(entity.text, "");
-        });
-    text = text.trim();
-}
-
-```
-
-> [!IMPORTANT]
-> Adding a bot by GUID, for anything other than testing purposes, is not recommended. Doing so severely limits the functionality of a bot. Bots in production should be added to Teams as part of an app. See [Create a bot](/microsoftteams/platform/concepts/bots/bots-create) and [Test and debug your Microsoft Teams bot](/microsoftteams/platform/concepts/bots/bots-test).
 
 ## Additional resources
 
