@@ -2,13 +2,13 @@
 title: Debug a channel using ngrok - Bot Service
 description: Understand how to debug a channel using ngrok
 keywords: debugging, channel, ngrok
-author: kamrani
+author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: how-to
 ms.service: bot-service
 ms.subservices: sdk
-ms.date: 11/17/2020
+ms.date: 10/19/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -34,49 +34,44 @@ When your bot is already in production, you can debug your bot from any [channel
 
 1. Open a terminal and navigate to the folder where your **ngrok** executable is.
 
-2. Run **ngrok** with the following command to create a new tunnel.
+1. Run **ngrok** with the following command to create a new tunnel.
 
-    ```cmd
+    ```console
     ngrok http 3978 -host-header="localhost:3978"
     ```
 
     > [!NOTE]
     > Please note that the port specified is the port your bot is running on. You may use any localhost port you'd like.
 
-3. When **ngrok** starts, copy and save the public forwarding URL for later.
+1. When **ngrok** starts, copy and save the public forwarding URL for later.
 
-    > [!div class="mx-imgBorder"]
-    > ![ngrok forwarding url](./media/debug-ngrok/ngrok-forwarding-url.png)
+    :::image type="content" source="/media/debug-ngrok/ngrok-forwarding-url.png" alt-text="ngrok forwarding URL":::
 
 ## Configure in Azure portal
 
 While **ngrok** is running, login to your Azure portal and view your bot settings to do some configuration.
 
-1. Select your **Bot Channels Registration** connected to your local bot.
+1. Select the **Azure Bot** resource associated with your local bot.
 
-2. Scroll down to **Configuration**. Copy and paste the **ngrok** forwarding URL in the **Messaging endpoint** field. Ensure that you maintain "/api/messages" at the end of the URL.
+1. Scroll down to **Configuration**. Copy and paste the **ngrok** forwarding URL in the **Messaging endpoint** field. Ensure that you maintain "/api/messages" at the end of the URL.
 
-    > [!div class="mx-imgBorder"]
-    > ![messaging endpoint](./media/debug-ngrok/messaging-endpoint.png)
+    :::image type="content" source="/media/debug-ngrok/messaging-endpoint.png" alt-text="messaging endpoint":::
 
-3. Scroll up and select **Save**.
+1. Scroll up and select **Save**.
 
 ## Test
 
 At this point, incoming messages from to your bot from external channels will now be sent to your local bot. The sample bot we'll use to demonstrate this is already configured live for **Microsoft Teams**. Read [Connect a bot to Microsoft Teams](channel-connect-teams.md) about connecting a local bot with **Microsoft Teams** channel.
 
-> [!div class="mx-imgBorder"]
-> ![teams channel](./media/debug-ngrok/teams-channel.png)
+:::image type="content" source="media/debug-ngrok/teams-channel.png" alt-text="Teams channel":::
 
 Locally, you can set breakpoints in Visual Studio. Expanding the text property from the incoming activity object, you will see that the message you sent the bot from teams is being intercepted locally for you to debug.
 
-> [!div class="mx-imgBorder"]
-> ![set breakpoints](./media/debug-ngrok/breakpoint.png)
+:::image type="content" source="media/debug-ngrok/breakpoint.png" alt-text="Set breakpoints":::
 
 From here you can debug normally, and run your code step by step. You can use this to debug your bot from any channel.
 
-> [!div class="mx-imgBorder"]
-> ![debug continue](./media/debug-ngrok/debug-continue.png)
+:::image type="content" source="media/debug-ngrok/debug-continue.png" alt-text="Debug continue":::
 
 ## Additional information
 
