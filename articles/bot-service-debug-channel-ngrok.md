@@ -41,7 +41,7 @@ When your bot is already in production, you can debug your bot from any [channel
     ```
 
     > [!NOTE]
-    > Please note that the port specified is the port your bot is running on. You may use any localhost port you'd like.
+    > Note that the port specified is the port your bot is running on. You may use any localhost port you'd like.
 
 1. When **ngrok** starts, copy and save the public forwarding URL for later.
 
