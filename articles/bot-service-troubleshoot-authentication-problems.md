@@ -1,12 +1,12 @@
 ---
 title: Troubleshooting Bot Framework Authentication - Bot Service
 description: Learn how to troubleshoot bot authentication errors, such as connectivity issues and problems with app IDs and passwords. View additional resources.
-author: DeniseMak
+author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: troubleshooting
 ms.service: bot-service
-ms.date: 02/25/2020
+ms.date: 10/19/2021
 ---
 
 # Troubleshooting Bot Framework authentication
@@ -37,7 +37,9 @@ In this step, you will verify that your bot is accessible and functional on loca
 > [!WARNING]
 > Disabling security for your bot may allow unknown attackers to impersonate users. Only implement the following procedure if you are operating in a protected debugging environment.
 
-### <a id="disable-security-localhost"></a> Disable security
+<a id="disable-security-localhost"></a>
+
+### Disable security
 
 To disable security for your bot, edit its configuration settings to remove the values for app ID and password.
 
@@ -46,8 +48,8 @@ To disable security for your bot, edit its configuration settings to remove the 
 If you're using the Bot Framework SDK for .NET, add or edit the settings in your **appsettings.json** file:
 
 ```json
-  "MicrosoftAppId": "",
-  "MicrosoftAppPassword": ""
+"MicrosoftAppId": "",
+"MicrosoftAppPassword": ""
 ```
 
 # [JavaScript](#tab/javascript)
@@ -70,7 +72,6 @@ class DefaultConfig:
     """ Bot Configuration """
     APP_ID = None
     APP_PASSWORD = None
-
 ```
 
 ---
@@ -132,7 +133,9 @@ If you receive an error in response to the request, examine the response to iden
 
 At this point, you have verified that your bot is accessible and functional on localhost when security is disabled and confirmed that the app ID and password that the bot will use for authentication are valid. In this step, you will verify that your bot is accessible and functional on localhost when security is enabled.
 
-### <a id="enable-security-localhost"></a> Enable security
+<a id="enable-security-localhost"></a>
+
+### Enable security
 
 Your bot's security relies on Microsoft services, even when your bot is running only on localhost. To enable security for your bot, edit its configuration settings to populate app ID and password with the values that you verified in [Step 2](#step-2).  Additionally, make sure your packages are up to date, specifically `System.IdentityModel.Tokens.Jwt` and `Microsoft.IdentityModel.Tokens`.
 
@@ -198,7 +201,7 @@ To test your bot in the cloud with security enabled, complete the following step
 
 1. Ensure that your bot has been successfully deployed and is running.
 2. Sign in to the [Azure portal](https://portal.azure.com).
-3. Navigate to the **Bot Channels Registration** for your bot within the portal.
+3. Navigate to the **Azure Bot** resource for your bot within the portal.
 4. Click **Test in Web Chat** in the **Bot management** pane on the left.
 5. To test connectivity to your bot, type some text into the web chat control and press Enter.
 
@@ -220,6 +223,6 @@ If you are still experiencing issues after completing the steps above, you can:
 - Review the [Bot Connector authentication guide][BotConnectorAuthGuide] to learn about the authentication technologies that the Bot Framework uses.
 - Solicit help from others by using the Bot Framework [support][Support] resources.
 
-[BotConnectorAuthGuide]: ~/rest-api/bot-framework-rest-connector-authentication.md
+[BotConnectorAuthGuide]: ./rest-api/bot-framework-rest-connector-authentication.md
 [Support]: bot-service-resources-links-help.md
 [Emulator]: bot-service-debug-emulator.md

@@ -1,21 +1,26 @@
 ---
-title: Key concepts in the Bot Connector and Bot State services - Bot Service
+title: Key concepts in the Bot Connector API
 description: Understand key concepts in the Bot Framework Connector service and Bot State service. 
-author: RobStand
+author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: conceptual
 ms.service: bot-service
-ms.date: 03/09/2021
+ms.date: 10/18/2021
 ---
 
-# Key concepts - Bot Connector API
+# Key concepts in the Bot Connector API
 
-Bot Framework and the Azure Bot service allow your bot to communicate with users on Teams, Facebook, and more. Channels are available in two forms: as service included as part of Azure Bot Service and as adapter libraries for use with the Bot Framework SDK. This article focuses on the standardized channels included in the Azure Bot Service.
+The Bot Framework and the Azure Bot Service allow your bot to communicate with users on Teams, Facebook, and more. Channels are available in two forms:
+
+- As a service included as part of Azure Bot Service.
+- As adapter libraries for use with the Bot Framework SDK.
+
+This article focuses on the standard channels included in the Azure Bot Service.
 
 ## Bot Framework Channels
 
-Bot Framework channels enable your bot to exchange messages with channels configured in the [Azure Portal](https://portal.azure.com). It uses industry-standard REST and JSON over HTTPS and enables authentication with JWT Bearer tokens. For detailed information about how to use the Bot Connector service, see [Authentication](bot-framework-rest-connector-authentication.md) and the remaining articles in this section.
+Bot Framework channels enable your bot to exchange messages with channels configured in the [Azure portal](https://portal.azure.com). It uses industry-standard REST and JSON over HTTPS and enables authentication with JWT Bearer tokens. For detailed information about how to use the Bot Connector service, see [Authentication](bot-framework-rest-connector-authentication.md) and the remaining articles in this section.
 
 ### Activity
 
@@ -23,25 +28,27 @@ The Connector service exchanges information between bot and channel (user) by pa
 
 ## Authentication
 
-Bot Framework Services use JWT Bearer tokens for authentication. For detailed information about how to authenticate outbound requests that your bot sends to the Bot Framework, how to authenticate inbound requests that your bot receives from the Bot Framework, and more, see [Authentication](bot-framework-rest-connector-authentication.md).
+The Bot Framework Service uses JWT Bearer tokens for authentication. For detailed information about how to authenticate outbound requests that your bot sends to the Bot Framework and how to authenticate inbound requests that your bot receives from the Bot Framework, see [Authentication](bot-framework-rest-connector-authentication.md).
 
 ## Client libraries
 
-The Bot Framework provides client libraries that can be used to build bots in either C#, JavaScript, and Python.
+The Bot Framework provides client libraries that can be used to build bots in C#, JavaScript, Python, and Java.
 
-- To build a bot using C#, use the [Bot Framework SDK for C#](../dotnet/bot-builder-dotnet-overview.md).
-- To build a bot using Node.js, use the [Bot Framework SDK for Node.js](../nodejs/index.md).
+- [Bot Framework SDK for C#](/dotnet/api/).
+- [Bot Framework SDK for Node.js](/javascript/api/botbuilder/).
+- [Bot Framework SDK for Python](/python/api/).
+- [Bot Framework SDK for Java](https://github.com/microsoft/botbuilder-java#readme).
 
-In addition to simplifying calls to Bot Framework REST APIs, each Bot Framework SDK also provides a powerful system for building dialogs that encapsulate conversational logic, built-in prompts for simple things such as Yes/No, strings, numbers, and enumerations, built-in support for powerful AI frameworks such as [LUIS](https://www.luis.ai/), and more.
+In addition to simplifying calls to Bot Framework REST APIs, each Bot Framework SDK also provides support for building dialogs that encapsulate conversational logic, built-in prompts for simple things such as Yes/No, strings, numbers, and enumerations, built-in support for powerful AI frameworks such as [LUIS](https://www.luis.ai/), and more.
 
 > [!NOTE]
-> As an alternative to using the SDK, you can generate your own client library in the language of your choice by using the [Bot Connector Swagger file](https://github.com/Microsoft/botbuilder-dotnet/blob/master/libraries/Swagger/ConnectorAPI.json) or code direct to its REST API.
+> As an alternative to using the these SDKs, you can generate your own client library in the language of your choice by using the [Bot Connector Swagger file](https://github.com/Microsoft/botbuilder-dotnet/blob/master/libraries/Swagger/ConnectorAPI.json) or code direct to its REST API.
 
 ## Bot State service
 
 The Microsoft Bot Framework State service is retired as of March 30, 2018. Previously, bots built on the Azure Bot Service or the Bot Builder SDK had a default connection to this service hosted by Microsoft to store bot state data. Bots will need to be updated to use their own state storage.
 
-## Additional resources
+## Additional information
 
 Learn more about building bots using the Connector service by reviewing articles throughout this section, beginning with [Authentication](bot-framework-rest-connector-authentication.md). If you encounter problems or have suggestions regarding the Connector service, see [Support](../bot-service-resources-links-help.md) for a list of available resources.
 
