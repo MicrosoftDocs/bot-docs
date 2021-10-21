@@ -7,7 +7,7 @@ manager: kamrani
 ms.topic: how-to
 ms.service: bot-service
 ms.custom: abs-meta-21q1
-ms.date: 09/01/2021
+ms.date: 10/21/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -373,7 +373,7 @@ Within the following dialog step, check for the presence of a token in the resul
 
 # [Java](#tab/java)
 
-![architecture java image](media/how-to-auth/architecture-java.png)
+![architecture Java image](media/how-to-auth/architecture-java.png)
 
 <!-- The two authentication samples have nearly identical architecture. Using 18.bot-authentication for the sample code. -->
 
