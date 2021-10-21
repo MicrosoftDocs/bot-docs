@@ -1,7 +1,7 @@
 ---
 title: Create a bot with the Bot Framework SDK in C#, Java, JavaScript, or Python - Azure Bot Service
 description: Create your first bot with the Bot Framework SDK using C#, Java, JavaScript or Python.
-keywords: quickstart, create bot, web app bot, c#, python, javascript, java, emulator
+keywords: quickstart, create bot, Azure Bot, C#, Python, JavaScript, Java, emulator
 author: kamrani
 ms.author: kamrani
 manager: kamrani
@@ -48,8 +48,8 @@ The generator supports three different template options as shown below.
 
 |  Template  |  Description  |
 | ---------- |  ---------  |
-| Echo&nbsp;Bot | A good template if you want a little more than "Hello World!", but not much more.  This template handles the very basics of sending messages to a bot, and having the bot process the messages by repeating them back to the user.  This template produces a bot that simply "echoes" back to the user anything the user says to the bot. |
-| Empty&nbsp;Bot | A good template if you are familiar with Bot Framework v4, and simply want a basic skeleton project.  Also a good option if you want to take sample code from the documentation and paste it into a minimal bot in order to learn. |
+| Echo Bot | A good template if you want a little more than "Hello World!", but not much more.  This template handles the very basics of sending messages to a bot, and having the bot process the messages by repeating them back to the user.  This template produces a bot that simply "echoes" back to the user anything the user says to the bot. |
+| Empty Bot | A good template if you are familiar with Bot Framework v4, and simply want a basic skeleton project.  Also a good option if you want to take sample code from the documentation and paste it into a minimal bot in order to learn. |
 | Core Bot | A good template if you want to create advanced bots, as it uses multi-turn dialogs and [LUIS](https://www.luis.ai), an AI based cognitive service, to implement language understanding. This template creates a bot that can extract places and dates to book a flight. |
 
 ### Install Yeoman
@@ -198,13 +198,13 @@ Yeoman prompts you for some information with which to create your bot. For this 
 
 The generator supports a number of command line options that can be used to change the generator's default options or to pre-seed a prompt. The options are case-sensitive.
 
-| Command&nbsp;line&nbsp;Option  | Description |
-| ------------------- | ----------- |
-| `--help, -h`        | List help text for all supported command-line options |
-| `--botName, -N`     | The name given to the bot project |
+| Command-line option | Description |
+|--|--|
+| `--help, -h` | List help text for all supported command-line options |
+| `--botName, -N` | The name given to the bot project |
 | `--packageName, -P` | The Java package name to use for the bot |
-| `--template, -T`    | The template used to generate the project. Options are `echo`, `empty`, or `core`. See [https://github.com/Microsoft/BotBuilder-Samples/tree/master/generators/generator-botbuilder](https://github.com/Microsoft/BotBuilder-Samples/tree/master/generators/generator-botbuilder) for additional information regarding the different template options and their functional differences. |
-| `--noprompt`       | The generator will not prompt for confirmation before creating a new bot. Any requirement options not passed on the command line will use a reasonable default value. This option is intended to enable automated bot generation for testing purposes. |
+| `--template, -T` | The template used to generate the project. Options are `echo`, `empty`, or `core`. See [https://github.com/Microsoft/BotBuilder-Samples/tree/master/generators/generator-botbuilder](https://github.com/Microsoft/BotBuilder-Samples/tree/master/generators/generator-botbuilder) for additional information regarding the different template options and their functional differences. |
+| `--noprompt` | The generator will not prompt for confirmation before creating a new bot. Any requirement options not passed on the command line will use a reasonable default value. This option is intended to enable automated bot generation for testing purposes. |
 
 Thanks to the template, your project contains all the code that's necessary to create the bot in this quickstart. You don't need any additional code to test your bot.
 

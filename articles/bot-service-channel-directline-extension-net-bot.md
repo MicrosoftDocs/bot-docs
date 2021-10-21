@@ -1,14 +1,14 @@
 ---
-title: Configure .NET bots for the Direct Line App Service extension in Bot Framework SDK
-titleSuffix: Bot Service
+title: Configure .NET bots for the Direct Line App Service extension in the Bot Framework SDK
 description: Configure .NET bots to work with named pipes. Enable the Direct Line App Service extension and configure bots to use the extension.
 services: bot-service
+author: JonathanFingold
+ms.author: kamrani
 manager: kamrani
 ms.service: bot-service
 ms.topic: how-to
-ms.author: kamrani
 ms-custom: abs-meta-21q1
-ms.date: 09/15/2021
+ms.date: 10/21/2021
 ---
 
 # Configure .NET bot for extension
@@ -32,7 +32,6 @@ This section describes how to enable the Direct Line App Service extension using
 > The **Microsoft.Bot.Builder.StreamingExtensions** NuGet preview packages have been deprecated. Starting with v4.8, the SDK contains a `Microsoft.Bot.Builder.Streaming` namespace. If a bot previously made use of the preview packages they must be removed before following the steps below.
 
 1. In Visual Studio, open your bot project.
-1. Make sure the project uses version 4.8 or later of the Bot Framework SDK.
 1. Allow your app to use named pipes:
     - Open the **Startup.cs** file.
     - In the `Configure` method, add a call to the `UseNamedPipes` method.
@@ -62,23 +61,19 @@ This section describes how to enable the Direct Line App Service extension using
     ```
 
 1. Save the **Startup.cs** file.
-
-1. Publish the bot to your Azure web app bot resource to deploy the updated code.
+1. Deploy your updated bot to Azure.
 
 ### Enable bot Direct Line App Service extension
 
-1. In the Azure portal, locate your **Web App Bot** resource.
+1. In the Azure portal, locate your **Azure Bot** resource.
 1. From the left panel menu under **Bot management** click on **Channels** to configure the **Azure Bot Service** channels your bot accepts messages from.
 1. If it is not already enabled, click on the **Direct Line** channel and follow instructions to enable the channel.
 1. In the **Connect to channels** table click on the **Edit** link on the **Direct Line** row.
 1. Scroll down to the **App Service extension Keys** section.
 1. Click on the **Show** link to reveal one of the keys. Copy this value for use later.
-
-    ![App Service extension keys](./media/channels/direct-line-extension-extension-keys.png)
-
 1. Navigate to the home page, click the **App Services** icon at the top of the page. You can also display the portal menu, and then click the **App Services** menu item, in the left panel. The **App Services** page is displayed.
-1. In the search box enter your **Web App Bot** resource name. Your resource will be listed.
-Notice that if you hover over the icon or the menu item, you get the list of the last resources you viewed. Chances are your **Web App Bot** resource will be listed.
+1. In the search box enter your **Azure Bot** resource name. Your resource will be listed.
+Notice that if you hover over the icon or the menu item, you get the list of the last resources you viewed. Chances are your **Azure Bot** resource will be listed.
 1. Click your resource link.
 1. In the **Settings** section, click the **Configuration** menu item.
 1. In the right panel, add the following new settings:
@@ -114,8 +109,8 @@ If everything is correct, the page will return this JSON content: `{"v":"123","k
     1. Double check the code for using named pipes has been added to the bot.
     1. Confirm the bot is able to start up and run at all. Useful tools are **Test in WebChat**, connecting an additional channel, remote debugging, or logging.
     1. Restart the entire **Azure App Service** the bot is hosted within, to ensure a clean start up of all processes.
-- Enable the bot to use the out of process hosting model, otherwise you will receive an *HTTP Error 500.34 - ANCM Mixed Hosting*. Where *ANCM* stands for *ASP.NET Core Module*. The error is caused because the bot template is using the `InProcess` hosting model by default. To configure out of process hosting, see [Out-of-process hosting model](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#out-of-process-hosting-model). 
-See also [Attributes of the aspNetCore element](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#attributes-of-the-aspnetcore-element) and [Configuration with web.config](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#configuration-with-webconfig). 
+- Enable the bot to use the out of process hosting model, otherwise you will receive an *HTTP Error 500.34 - ANCM Mixed Hosting*. Where *ANCM* stands for *ASP.NET Core Module*. The error is caused because the bot template is using the `InProcess` hosting model by default. To configure out of process hosting, see [Out-of-process hosting model](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#out-of-process-hosting-model).
+See also [Attributes of the aspNetCore element](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#attributes-of-the-aspnetcore-element) and [Configuration with web.config](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#configuration-with-webconfig).
 - If the **initialized** value of the **.bot endpoint** is false it means the Direct Line App Service extension is unable to validate the App Service extension key added to the bot's **Application Settings** above.
     1. Confirm the value was correctly entered.
     1. Switch to the alternate extension key shown on your bot's **Configure Direct Line** page.

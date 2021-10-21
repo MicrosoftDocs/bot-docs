@@ -1,13 +1,13 @@
 ---
-title: Node.js bot with direct line app service extension
-titleSuffix: Bot Service
-description: Enable Node.js bot to work with direct line app service extension
+title: Configure Node.js bots for the Direct Line App Service extension in the Bot Framework SDK
+description: Configure Node.js bots to work with named pipes. Enable the Direct Line App Service extension and configure bots to use the extension.
 services: bot-service
+author: JonathanFingold
+ms.author: dev
 manager: kamrani
 ms.service: bot-service
-ms.topic: conceptual
-ms.author: dev 
-ms.date: 05/06/2021
+ms.topic: how-to
+ms.date: 10/21/2021
 ---
 
 # Configure Node.js bot for extension
@@ -18,7 +18,7 @@ This article describes how to update a bot to work with **named pipes**, and how
 
 ## Prerequisites
 
-To perform the steps described next, you need to have a bot deployed in Azure.
+- A bot deployed in Azure, built with the Bot Framework SDK version 4.7 or later.
 
 ## Enable Direct Line app service extension
 
@@ -26,7 +26,6 @@ This section describes how to enable the Direct Line app service extension using
 
 ## Update Node.js Bot to use Direct Line App Service Extension
 
-1. BotBuilder v4.7.0 or later is required to use a Node.js bot with Direct Line App Service Extension.
 1. Allow your app to use the **Direct Line App Service Extension Named Pipe**:
 
     Update the bot's index.js (below the assignment of the adapter and bot) to include the following code that pulls the App Service name from the environment and instructs the adapter to connect to the appropriate named pipe:
@@ -62,19 +61,16 @@ This section describes how to enable the Direct Line app service extension using
     </rewrite>
     ```
 
-1. **Publish** the bot to your Azure Web App Bot resource.
+1. Deploy your updated bot to Azure.
 
 ### Enable bot Direct Line app service extension
 
-1. In the Azure portal, locate your **Web App Bot** resource.
+1. In the Azure portal, locate your Azure Bot resource.
 1. From the left panel menu under *Bot management* click on **Channels** to configure the **Azure Bot Service** channels your bot accepts messages from.
 1. If it is not already enabled, click on the **Direct Line** channel and follow instructions to enable the channel.
 1. In the **Connect to channels** table click on the **Edit** link on the Direct Line row.
 1. Scroll down to the **App Service Extension Keys** section.
 1. Click on the **Show** link to reveal one of the keys. You will use this value in the steps below.
-
-    ![App service extension keys](./media/channels/direct-line-extension-extension-keys.png)
-
 1. From the left panel menu under *Application settings* section, click the **Configuration** item.
 1. In the right panel, add the following new settings:
 

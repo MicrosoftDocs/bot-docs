@@ -5,9 +5,9 @@ keywords: .net, bot migration, skills, v3 bot
 author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 04/19/2021
+ms.date: 10/21/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -45,7 +45,7 @@ To use the skill consumer to test the skills, all 4 bots need to be running at t
 
 Bot-to-bot authentication requires that each participating bot has a valid app ID and password.
 
-1. Create a Bot Channels Registration for the bots as needed.
+1. Create an Azure Bot resource for the bots as needed.
 1. Record the app ID and password for each one.
 
 ## Conversion process
