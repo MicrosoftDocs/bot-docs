@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 08/10/2021
+ms.date: 10/21/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -51,19 +51,19 @@ This article focuses on the root bot, which includes support logic in its bot an
 
 ### [C#](#tab/cs)
 
-![Skill consumer class csharp diagram](./media/skills-simple-root-cs.png)
+![Skill consumer class C# diagram](./media/skills-simple-root-cs.png)
 
 ### [JavaScript](#tab/js)
 
-![Skill consumer class js diagram](./media/skills-simple-root-js.png)
+![Skill consumer class JavaScript diagram](./media/skills-simple-root-js.png)
 
 ### [Java](#tab/java)
 
-![Skill consumer class java diagram](./media/skills-simple-root-java.png)
+![Skill consumer class Java diagram](./media/skills-simple-root-java.png)
 
 ### [Python](#tab/python)
 
-![Skill consumer class python diagram](./media/skills-simple-root-python-2.png)
+![Skill consumer class Python diagram](./media/skills-simple-root-python-2.png)
 
 ---
 
@@ -167,9 +167,7 @@ The conversation ID factory for this sample supports a simple scenario where:
 
 ### [JavaScript](#tab/js)
 
-**simple-root-bot/skillConversationIdFactory.js**
-
-[!code-javascript[Conversation ID factory](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/skillConversationIdFactory.js?range=10-34)]
+The SDK provides a `SkillConversationIdFactory` class that can be used across any skill without requiring the source code to be replicated. The conversation ID factory is configured in **index.js**.
 
 ### [Java](#tab/java)
 

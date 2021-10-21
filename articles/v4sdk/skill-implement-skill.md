@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 08/10/2021
+ms.date: 10/21/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -45,19 +45,19 @@ This article focuses on the skill, which includes support logic in its bot and a
 
 ### [C#](#tab/cs)
 
-![Skill csharp class diagram](./media/skills-simple-skill-cs.png)
+![Skill C# class diagram](./media/skills-simple-skill-cs.png)
 
 ### [JavaScript](#tab/javascript)
 
-![Skill js class diagram](./media/skills-simple-skill-js.png)
+![Skill JavaScript class diagram](./media/skills-simple-skill-js.png)
 
 ### [Java](#tab/java)
 
-![Skill java class diagram](./media/skills-simple-skill-java.png)
+![Skill Java class diagram](./media/skills-simple-skill-java.png)
 
 ### [Python](#tab/python)
 
-![Skill python class diagram](./media/skills-simple-skill-python.png)
+![Skill Python class diagram](./media/skills-simple-skill-python.png)
 
 ---
 
@@ -104,7 +104,6 @@ Add the skill's app ID and password to the .env file.
 Add the skill's app ID and password to the application.properties file.
 
 [!code-java[configuration file](~/../botbuilder-samples/samples/java_springboot/80.skills-simple-bot-to-bot/DialogSkillBot/src/main/resources/application.properties)]
-
 
 ### [Python](#tab/python)
 
@@ -211,11 +210,7 @@ The SDK provides an `AllowedCallersClaimsValidator` class that adds application-
 
 ### [JavaScript](#tab/javascript)
 
-Define a claims validation method that throws an error to reject an incoming request.
-
-**echo-skill-bot/authentication/allowedCallersClaimsValidator.js**
-
-[!code-javascript[Claims validator](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/authentication/allowedCallersClaimsValidator.js?range=11-31)]
+The SDK provides an `allowedCallersClaimsValidator` class that adds application-level authorization based on a simple list of IDs of the applications that are allowed to call the skill. If the list contains an asterisk (*), then all callers are allowed. The claims validator is configured in **index.js**.
 
 ### [Java](#tab/java)
 
