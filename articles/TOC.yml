@@ -293,6 +293,8 @@
         href: bot-service-adapter-connect-webex.md
       - name: Additional channels
         href: bot-service-channel-additional-channels.md
+      - name: Connect to channels with Azure CLI
+        href: bot-service-channel-azure-cli.md
   - name: Migrate
     items:
     - name: Migration overview
