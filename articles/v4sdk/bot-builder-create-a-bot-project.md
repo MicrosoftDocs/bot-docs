@@ -6,7 +6,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 04/02/2021
+ms.date: 10/28/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -33,7 +33,7 @@ The C# and JavaScript templates have built-in support for streaming connections.
 ## Prerequisites
 
 - Knowledge of [bot basics](bot-builder-basics.md).
-- A copy of the **echo bot** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/02.echo-bot), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/02.echo-bot), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/02.echo-bot), or [**Python**](https://aka.ms/py-echobot-sample).
+- A copy of the **echo bot** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/02.echo-bot#readme), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/02.echo-bot#readme), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/02.echo-bot#readme), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/02.echo-bot#readme).
 
 ## Bot templates
 

@@ -358,7 +358,7 @@
       - name: Authentication
         href: rest-api/bot-framework-rest-connector-authentication.md
       - name: Activities overview
-        href: https://aka.ms/botSpecs-activitySchema
+        href: https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md
       - name: Create messages
         href: rest-api/bot-framework-rest-connector-create-messages.md
       - name: Send and receive messages
@@ -499,11 +499,11 @@
   - name: Bot Framework schemas
     items:
     - name: Activity schema
-      href: https://aka.ms/botSpecs-activitySchema
+      href: https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md
     - name: Card schema
-      href: https://aka.ms/botSpecs-cardSchema
+      href: https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-cards.md
     - name: Transcript schema
-      href: https://aka.ms/botSpecs-transcripts
+      href: https://github.com/Microsoft/botframework-sdk/blob/main/specs/transcript/transcript.md
   - name: Virtual Assistant
     href: v4sdk/bot-builder-virtual-assistant-introduction.md
   - name: WebChat

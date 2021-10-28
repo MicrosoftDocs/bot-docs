@@ -2,12 +2,12 @@
 title: Language recognizer reference for Bot Framework bots
 description: Adaptive dialogs and language recognizers work together to interpret user intent and to react fluidly to user input. This article describes builtin recognizers in the Bot Framework SDK.
 keywords: bot, recognizers, adaptive dialogs
-author: stevemunk
+author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
 ms.topic: reference
 ms.service: bot-service
-ms.date: 09/02/2021
+ms.date: 10/18/2021
 ms.custom: abs-meta-21q1
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -58,12 +58,12 @@ For more information, see the [Multilingual support](/composer/how-to-use-multip
 
 ## Orchestrator recognizer
 
-[Orchestrator][14] is a language understanding solution optimized for conversational AI applications. It replaces the Bot Framework Dispatcher. The Orchestrator recognizer enables you to extract an intent from a user's utterance, which could be used to route to an appropriate skill or recognizer, such as LUIS or QnA Maker.
+[Orchestrator][] is a language understanding solution optimized for conversational AI applications. It replaces the Bot Framework Dispatcher. The Orchestrator recognizer enables you to extract an intent from a user's utterance, which could be used to route to an appropriate skill or recognizer, such as LUIS or QnA Maker.
 
 > [!TIP]
 > For more information about how to incorporate language understanding into your bot using Orchestrator, see:
 >
-> * [What is Orchestrator][14]
+> * [What is Orchestrator][Orchestrator]
 > * [BF Orchestrator CLI][15]
 
 ## QnA Maker recognizer
@@ -139,7 +139,7 @@ The Regex recognizer consists primarily of:
 [11]:/azure/cognitive-services/luis/luis-how-to-start-new-app
 [12]:https://qnamaker.ai
 [13]:https://azure.microsoft.com/services/cognitive-services/
-[14]:https://aka.ms/bf-orchestrator
+[Orchestrator]:/composer/concept-orchestrator
 [15]:https://github.com/microsoft/botframework-cli/tree/main/packages/orchestrator
 [cross-train-concepts]: ../v4sdk/bot-builder-concept-cross-train.md
 [luis-to-luis-cross-training]: ../v4sdk/bot-builder-concept-cross-train.md#luis-to-luis-cross-training

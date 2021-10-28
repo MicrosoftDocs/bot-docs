@@ -1,13 +1,13 @@
 ---
-title: Use multiple LUIS and QnA models with Orchestrator - Bot Service
+title: Use multiple LUIS and QnA models with Orchestrator in the Bot Framework SDK
 description: Learn how bots can use multiple LUIS models and QnA Maker knowledge bases. See how to use Orchestrator to route user input to the correct model.
 keywords: Luis, QnA, Orchestrator, multiple services, route intents
-author: tsuwandy
+author: JonathanFingold
 ms.author: tiens
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 05/04/2021
+ms.date: 10/18/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -65,12 +65,12 @@ Before you can create Orchestrator snapshot file, you'll need to have your LUIS 
 
 ### Create the LUIS apps
 
-Create LUIS apps from the _HomeAutomation_ and _Weather_ lu files in the _cognitive models_ directory of the sample. 
+Create LUIS apps from the _HomeAutomation_ and _Weather_ lu files in the _cognitive models_ directory of the sample.
 
 1. Run the following command to import, train and publish the app to the production environment.
 
-    ```cmd
-    > bf luis:build --in CognitiveModels --authoringKey <YOUR-KEY> --botName <YOUR-BOT-NAME>
+    ```console
+    bf luis:build --in CognitiveModels --authoringKey <YOUR-KEY> --botName <YOUR-BOT-NAME>
     ```
 
 1. Record the application ID, display name, authoring key, and location.
@@ -81,12 +81,13 @@ For more information, see how to **Create a LUIS app in the LUIS portal** and **
 1. Create your QnAMaker service from qnamaker.ai portal or from https://portal.azure.com, get the resource key for the next step below.
 
 1. Create a QnAMaker kb from the _QnAMaker_ .qna file.
-   1. Run the following command to import, train and publish the app to the production environment.
+    1. Run the following command to import, train and publish the app to the production environment.
 
-      ```cmd
-      > bf qnamaker:build --in CognitiveModels --subscriptionKey <YOUR-KEY> --botName <YOUR-BOT-NAME>
-      ```
-   1. Record the QnA Maker kb, hostname and endpoint key from the output of the command above.
+        ```console
+        bf qnamaker:build --in CognitiveModels --subscriptionKey <YOUR-KEY> --botName <YOUR-BOT-NAME>
+        ```
+
+    1. Record the QnA Maker kb, hostname and endpoint key from the output of the command above.
 
 ## Create the Orchestrator snapshot file
 
@@ -95,23 +96,23 @@ The CLI interface for the bf orchestrator tool creates the Orchestrator snapshot
 1. Open a command prompt or terminal window, and change directories to the sample directory
 1. Make sure you have the current version of npm and the bf cli tool.
 
-    ```cmd
+    ```console
     npm i -g npm
     npm i -g @microsoft/botframework-cli
     ```
 
 1. Download Orchestrator base model file
 
-    ```cmd
-    > mkdir model
-    > bf orchestrator:basemodel:get --out ./model
+    ```console
+    mkdir model
+    bf orchestrator:basemodel:get --out ./model
     ```
 
 1. Create the Orchestrator snapshot file
 
-    ```cmd
-    > mkdir generated
-    > bf orchestrator:create --hierarchical --in ./CognitiveModels --out ./generated --model ./model
+    ```console
+    mkdir generated
+    bf orchestrator:create --hierarchical --in ./CognitiveModels --out ./generated --model ./model
     ```
 
 ## [C#](#tab/cs)
@@ -156,7 +157,7 @@ When all changes are complete, save this file.
 
 Prior to running this app for the first time you will need to install several npm packages.
 
-```powershell
+```console
 npm install
 ```
 
@@ -169,8 +170,7 @@ Once all of your service apps are created, the information for each needs to be 
 
 Add your service connection values as shown below:
 
-
-```file
+```text
 MicrosoftAppId=""
 MicrosoftAppPassword=""
 
@@ -184,7 +184,7 @@ LuisAPIHostName=<your-dispatch-app-region>
 ```
 
 When all changes are in place, save this file.
- 
+
 ---
 
 ### Connect to the services from your bot
@@ -368,27 +368,28 @@ The `processSampleQnA` method uses the user input contained within the turn cont
 
    Because the utterance, `hi`, is part of the Orchestrator's **QnAMaker** intent, and is selected as the `topScoringIntent`, the bot will make a second request, this time to the QnA Maker app, with the same utterance.
 
-  1. Select the `QnAMaker Trace` line in the Emulator log. The QnA Maker result displays in the Inspector.
+1. Select the `QnAMaker Trace` line in the Emulator log. The QnA Maker result displays in the Inspector.
 
-      ```json
-      {
-          "questions": [
-              "hi",
-              "greetings",
-              "good morning",
-              "good evening"
-          ],
-          "answer": "Hello!",
-          "score": 1,
-          "id": 96,
-          "source": "QnAMaker.tsv",
-          "metadata": [],
-          "context": {
-              "isContextOnly": false,
-              "prompts": []
-          }
-      }
-      ```
+    ```json
+    {
+        "questions": [
+            "hi",
+            "greetings",
+            "good morning",
+            "good evening"
+        ],
+        "answer": "Hello!",
+        "score": 1,
+        "id": 96,
+        "source": "QnAMaker.tsv",
+        "metadata": [],
+        "context": {
+            "isContextOnly": false,
+            "prompts": []
+        }
+    }
+    ```
+
 <!-- Foot-note style links -->
 
 [howto-luis]: bot-builder-howto-v4-luis.md
@@ -397,6 +398,6 @@ The `processSampleQnA` method uses the user input contained within the turn cont
 [cs-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/14.nlp-with-orchestrator
 [js-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/14.nlp-with-orchestrator
 
-[orchestrator]: https://aka.ms/bf-orchestrator
+[orchestrator]: /composer/concept-orchestrator
 [bf-cli]: https://github.com/microsoft/botframework-cli
 [bf-orchestrator-cli]: https://github.com/microsoft/botframework-cli/tree/main/packages/orchestrator

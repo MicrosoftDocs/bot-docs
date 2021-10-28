@@ -1686,22 +1686,22 @@
     },
     {
       "source_path": "articles/dotnet/bot-builder-dotnet-real-time-audio-video-call-overview.md",
-      "redirect_url": "https://aka.ms/realTimeMediaCalling-repo",
+      "redirect_url": "https://github.com/Microsoft/BotBuilder-RealTimeMediaCalling",
       "redirect_document_id": false
     },
     {
       "source_path": "articles/dotnet/bot-builder-dotnet-real-time-deploy-visual-studio.md",
-      "redirect_url": "https://aka.ms/realTimeMediaCalling-repo",
+      "redirect_url": "https://github.com/Microsoft/BotBuilder-RealTimeMediaCalling",
       "redirect_document_id": false
     },
     {
       "source_path": "articles/dotnet/bot-builder-dotnet-real-time-media-concepts.md",
-      "redirect_url": "https://aka.ms/realTimeMediaCalling-repo",
+      "redirect_url": "https://github.com/Microsoft/BotBuilder-RealTimeMediaCalling",
       "redirect_document_id": false
     },
     {
       "source_path": "articles/dotnet/bot-builder-dotnet-real-time-media-requirements.md",
-      "redirect_url": "https://aka.ms/realTimeMediaCalling-repo",
+      "redirect_url": "https://github.com/Microsoft/BotBuilder-RealTimeMediaCalling",
       "redirect_document_id": false
     },
     {
