@@ -2,22 +2,24 @@
 title: Connect a bot to Facebook Messenger - Bot Service
 description: Learn how to connect a bot to Facebook Messenger and Facebook Workplace. Connect a bot to Facebook using the Facebook adapter.
 keywords: Facebook Messenger, bot channel, Facebook App, App ID, App Secret, Facebook bot, credentials
-manager: kamrani
-ms.topic: article
-ms.author: kamrani
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 07/20/2021
+ms.date: 11/01/2021
 ---
 
 # Connect a bot to Facebook
 
 Your bot can be connected to both Facebook Messenger and Facebook Workplace, so that it can communicate with users on both platforms. The following instructions show how to connect a bot to these two channels.
 
-Select one of the following ways to connect your bot to Facebook: 
+Select one of the following ways to connect your bot to Facebook:
 
-- [Connect a bot to Facebook Messenger](#connect-a-bot-to-facebook-messenger). Shows how to connect a bot to Facebook Messenger. 
+- [Connect a bot to Facebook Messenger](#connect-a-bot-to-facebook-messenger). Shows how to connect a bot to Facebook Messenger.
 - [Connect a bot to Facebook Workplace](#connect-a-bot-to-facebook-workplace). Shows how to connect a bot to Facebook Workplace.
-- [Connect a bot to Facebook using the Facebook adapter](#connect-a-bot-to-facebook-using-the-facebook-adapter). Shows how to connect a bot to Facebook using the adapter. Note that the Facebook adapter is only available for C#/.NET and JavaScript/Node.js bots. 
+- [Connect a bot to Facebook using the Facebook adapter](#connect-a-bot-to-facebook-using-the-facebook-adapter). Shows how to connect a bot to Facebook using the adapter. Note that the Facebook adapter is only available for C#/.NET and JavaScript/Node.js bots.
 
 > [!NOTE]
 > The Facebook UI may appear slightly different depending on which version you are using.
@@ -120,8 +122,8 @@ After the bot is finished, Facebook has its own [review process](https://develop
 > [!NOTE]
 > Until an app is published, it is in [Development Mode](https://developers.facebook.com/docs/apps/managing-development-cycle). Plugin and API functionality will only work for admins, developers, and testers.
 
-After the review is successful, in the App Dashboard under App Review, set the app to Public. Ensure that the Facebook Page associated with this bot is published. Status appears in Pages settings. 
-Test the connection by following the steps described in the [Test your bot in Facebook](#test-your-bot-in-facebook) section. 
+After the review is successful, in the App Dashboard under App Review, set the app to Public. Ensure that the Facebook Page associated with this bot is published. Status appears in Pages settings.
+Test the connection by following the steps described in the [Test your bot in Facebook](#test-your-bot-in-facebook) section.
 
 ## Connect a bot to Facebook Workplace
 
@@ -196,7 +198,7 @@ Please refer to the **Connect a bot to Facebook Messenger** section for details.
 
 If you receive a notification from Facebook about deprecation of a certain version of the Graph API, go to [Facebook developers page](https://developers.facebook.com). Navigate to your bot's **App Settings** and go to **Settings** > **Advanced** > **Upgrade API version**, then switch **Upgrade All Calls** to version 4.0.
 
-Test the connection by following the steps described in the [Test your bot in Facebook](#test-your-bot-in-facebook) section. 
+Test the connection by following the steps described in the [Test your bot in Facebook](#test-your-bot-in-facebook) section.
 
 ## Connect a bot to Facebook using the Facebook adapter
 
