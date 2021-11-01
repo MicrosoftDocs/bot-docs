@@ -1,12 +1,13 @@
 ---
 title: Bot Framework TroubleshootIndex - Bot Service
 description: TroubleshootIndex Bot Framework Index.
-author: kamrani
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: troubleshooting
 ms.service: bot-service
-ms.date: 06/15/2020
+ms.date: 11/01/2021
 ---
 
 # Troubleshoot index
@@ -48,9 +49,9 @@ In case you don't find the answer you're looking for, you can post your question
 - [Test in Web Chat](bot-service-troubleshoot-bot-configuration.md#test-in-web-chat)
 - [Bot does not work in Web Chat](bot-service-troubleshoot-bot-configuration.md#bot-does-not-work-in-web-chat)
 - [Bot works in Web Chat but not in other channels](bot-service-troubleshoot-bot-configuration.md#bot-works-in-web-chat-but-not-in-other-channels)
-    - [Channel configuration issues](bot-service-troubleshoot-bot-configuration.md#channel-configuration-issues)
-    - [Channel-specific behavior](bot-service-troubleshoot-bot-configuration.md#channel-specific-behavior)
-    - [Channel outage](bot-service-troubleshoot-bot-configuration.md#channel-outage)
+  - [Channel configuration issues](bot-service-troubleshoot-bot-configuration.md#channel-configuration-issues)
+  - [Channel-specific behavior](bot-service-troubleshoot-bot-configuration.md#channel-specific-behavior)
+  - [Channel outage](bot-service-troubleshoot-bot-configuration.md#channel-outage)
 
 ## HTTP 500 Errors
 
