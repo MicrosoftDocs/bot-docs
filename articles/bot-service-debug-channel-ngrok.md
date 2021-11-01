@@ -2,13 +2,13 @@
 title: Debug a channel using ngrok - Bot Service
 description: Understand how to debug a channel using ngrok
 keywords: debugging, channel, ngrok
-author: kamrani
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.subservices: sdk
-ms.date: 11/17/2020
+ms.date: 11/01/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -36,7 +36,7 @@ When your bot is already in production, you can debug your bot from any [channel
 
 2. Run **ngrok** with the following command to create a new tunnel.
 
-    ```cmd
+    ```console
     ngrok http 3978 -host-header="localhost:3978"
     ```
 

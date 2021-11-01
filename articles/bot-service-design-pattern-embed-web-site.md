@@ -1,13 +1,13 @@
 ---
 title: Embed a bot in a website with Azure Bot Service
 description: Learn how to embed bots in websites by using a web control. See how the backchannel mechanism facilitates private communication between web pages and bots.
-author: matvelloso
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: conceptual
 ms.service: bot-service
-ms.date: 12/13/2017
-
+ms.date: 11/01/2021
 ---
 
 # Embed a bot in a website

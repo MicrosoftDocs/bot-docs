@@ -2,11 +2,12 @@
 title: Debug bots using Bot Framework Adaptive Tools - Bot Service
 description: Learn how to debug bots using the Bot Framework Adaptive Tools Microsoft VS Code extension.
 author: emgrol
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/25/2020
+ms.date: 11/01/2021
 ---
 
 # Debug with Adaptive Tools
@@ -21,9 +22,9 @@ Adaptive Tools has a variety of tools and settings that make it easy to debug, a
 - Install the [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md).
 
 - A bot with one or more of the following file types:
-    - [.lg](file-format/bot-builder-lg-file-format.md)
-    - [.lu](file-format/bot-builder-lu-file-format.md)
-    - dialog (.dialog). You can find examples of .dialog files in the [AdaptiveBot](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/adaptive-dialog/21.AdaptiveBot-declarative) sample.
+  - [.lg](file-format/bot-builder-lg-file-format.md)
+  - [.lu](file-format/bot-builder-lu-file-format.md)
+  - dialog (.dialog). You can find examples of .dialog files in the [AdaptiveBot](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/adaptive-dialog/21.AdaptiveBot-declarative) sample.
 
 ## About Adaptive Tools
 
