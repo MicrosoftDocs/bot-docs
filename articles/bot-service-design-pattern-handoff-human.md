@@ -6,7 +6,7 @@ ms.author: arturl
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 10/21/2020
+ms.date: 10/18/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -17,10 +17,6 @@ monikerRange: 'azure-bot-service-4.0'
 Regardless of how much artificial intelligence a bot possesses, there may still be times when it needs to hand off the conversation to a human being. This can be necessary either because the bot does not understand the user (because of an AI limitation), or if the request cannot be automated and requires a human action. In such cases the bot should recognize when it needs to hand off and provide the user with a smooth transition.
 
 Microsoft Bot Framework is an open platform that allows developers to integrate with a variety of agent engagement platforms.
-
-<!-- We don't own this aka link, and for v4, I think there is an updated pattern.
-You can read more about the Bot Framework [handoff protocol](https://github.com/microsoft/BotBuilder-Samples/tree/main/experimental/handoff-library/#protocol).
--->
 
 ## Handoff integration models
 

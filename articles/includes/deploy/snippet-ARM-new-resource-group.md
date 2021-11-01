@@ -21,7 +21,7 @@ This step can take a few minutes to complete.
 
 - `appId` - The *app ID* value from the JSON output generated in the [create the application registration](#create-the-azure-application-registration) step.
 - `appSecret` - The password you provided in the [create the application registration](#create-the-azure-application-registration) step.
-- `botId` - A name for the  Bot Channels Registration resource to create. It must be globally unique. It is used as the immutable bot ID. It is also used as the default display name, which is mutable.
+- `botId` - A name for the Azure Bot resource to create. It must be globally unique. It is used as the immutable bot ID. It is also used as the default display name, which is mutable.
 - `botSku` - The pricing tier; it can be F0 (Free) or S1 (Standard).
 - `newAppServicePlanName` - The name of the new application service plan.
 - `newWebAppName` - A name for the bot application service.

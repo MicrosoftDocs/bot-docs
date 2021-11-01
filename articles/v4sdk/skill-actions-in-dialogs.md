@@ -1,13 +1,13 @@
 ---
-title: Use dialogs within a skill | Microsoft Docs
-description: Learn how to use dialogs within a skill, using the Bot Framework SDK.
+title: Use dialogs within a skill
+description: Learn how to use dialogs within a skill to support multiple actions, using the Bot Framework SDK.
 keywords: skills
 author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 08/10/2021
+ms.date: 10/28/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -17,7 +17,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 This article demonstrates how to create a skill that supports multiple actions. It supports these actions using dialogs. The main dialog receives the initial input from the skill consumer, and then starts the appropriate action. For information about implementing the skill consumer for the associated sample code, see how to [consume a skill using dialogs](skill-use-skilldialog.md).
 
-This article assumes you are already familiar with creating skills.
+This article assumes you're already familiar with creating skills.
 For how to create a skill bot in general, see how to [implement a skill](skill-implement-skill.md).
 
 ## Prerequisites
@@ -25,7 +25,7 @@ For how to create a skill bot in general, see how to [implement a skill](skill-i
 - Knowledge of [bot basics](bot-builder-basics.md), [how skills bots work](skills-conceptual.md), and how to [implement a skill](skill-implement-skill.md).
 - An Azure subscription (to deploy your skill). If you don't have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 - Optionally, a [LUIS](https://www.luis.ai/) account. (For more information, see how to [add natural language understanding to your bot](bot-builder-howto-v4-luis.md).)
-- A copy of the **skills skillDialog** sample in [**C#**](https://aka.ms/skills-using-dialogs-cs), [**JavaScript**](https://aka.ms/skills-using-dialogs-js), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/81.skills-skilldialog) or [**Python**](https://aka.ms/skills-using-dialogs-py).
+- A copy of the **skills skillDialog** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/81.skills-skilldialog#readme), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/81.skills-skilldialog#readme), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/81.skills-skilldialog#readme), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/81.skills-skilldialog#readme).
 
 > [!NOTE]
 > Starting with version 4.11, you do not need an app ID and password to test a skill locally in the Emulator. An Azure subscription is still required to deploy your skill to Azure.
@@ -37,7 +37,7 @@ The **skills skillDialog** sample includes projects for two bots:
 - The _dialog root bot_, which uses a _skill dialog_ class to consume a skill.
 - The _dialog skill bot_, which uses a dialog to handle activities coming from skill consumers. This skill is an adaptation of the **core bot** sample. (For more about the core bot, see how to [add natural language understanding to your bot](bot-builder-howto-v4-luis.md).)
 
-This article focuses on how to use a dialogs within a skill bot to manage multiple actions.
+This article focuses on how to use a dialog within a skill bot to manage multiple actions.
 
 ### [C#](#tab/cs)
 
@@ -64,7 +64,7 @@ For information about the skill consumer bot, see how to [consume a skill using 
 For deployed bots, bot-to-bot authentication requires that each participating bot has a valid app ID and password.
 However, you can test skills and skill consumers locally with the Emulator without an app ID and password.
 
-To make the skill available to user-facing bots, register the skill with Azure. You can use a Bot Channels Registration. For more information, see how to [register a bot with Azure Bot Service](../bot-service-quickstart-registration.md).
+To make the skill available to user-facing bots, register the skill with Azure. For more information, see how to [register a bot with Azure Bot Service](../bot-service-quickstart-registration.md).
 
 Optionally, the skill bot can use a flight-booking LUIS model. To use this model, use the CognitiveModels/FlightBooking.json file to create, train, and publish the LUIS model.
 
@@ -73,7 +73,7 @@ Optionally, the skill bot can use a flight-booking LUIS model. To use this model
 1. Optionally, add the skill's app ID and password to the skill's configuration file.
    (If either the skill or skill consumer uses an app ID and password, both must.)
 
-1. If you are using the LUIS model, Add the LUIS app ID, API key, and API host name.
+1. If you're using the LUIS model, Add the LUIS app ID, API key, and API host name.
 
 ### [C#](#tab/cs)
 
@@ -200,7 +200,7 @@ If the skill doesn't recognize the type of the incoming activity or the name of 
 ### Handle message activities
 
 If the LUIS recognizer is configured, the skill calls LUIS and then starts an action based on the intent.
-If the LUIS recognizer is not configured or the intent is not supported, the skill sends an error message and ends.
+If the LUIS recognizer isn't configured or the intent isn't supported, the skill sends an error message and ends.
 
 #### [C#](#tab/cs)
 
@@ -232,7 +232,7 @@ If the LUIS recognizer is not configured or the intent is not supported, the ski
 
 The book-flight action starts a multi-step dialog to get the booking details from the user.
 
-The get-weather action is not implemented. Currently, it sends a placeholder message and then ends.
+The get-weather action isn't implemented. Currently, it sends a placeholder message and then ends.
 
 #### [C#](#tab/cs)
 
@@ -328,11 +328,11 @@ You can test the skill in the Emulator with the skill consumer. To do so, you ne
 
 Download and install the latest [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md).
 
-1. Run the dialog skill bot and dialog root bot locally on your machine. If you need instructions, refer to the `README` file for the  [C#](https://aka.ms/skills-using-dialogs-cs), [JavaScript](https://aka.ms/skills-using-dialogs-js) or [Python](https://aka.ms/skills-using-dialogs-py) sample.
+1. Run the dialog skill bot and dialog root bot locally on your machine. If you need instructions, refer to the sample's `README` file for [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/81.skills-skilldialog#readme), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/81.skills-skilldialog#readme), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/81.skills-skilldialog#readme), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/81.skills-skilldialog#readme).
 1. Use the Emulator to test the bot.
    - When you first join the conversation, the bot displays a welcome message and asks you what skill you would like to call. The skill bot for this sample has just one skill.
    - Select **DialogSkillBot**.
-1. The bot next asks you to choose an action for the skill. Choose "BookFlight".
+1. Next, the bot asks you to choose an action for the skill. Choose "BookFlight".
    1. The skill begins its book-flight action; answer the prompts.
    1. When the skill completes, the root bot displays the booking details before prompting again for the skill you'd like to call.
 1. Select **DialogSkillBot** again and "BookFlight".

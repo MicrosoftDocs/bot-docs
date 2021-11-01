@@ -1,13 +1,13 @@
 ---
-title: Bot framework authentication types in the Azure Bot Service - Bot Service
+title: Bot Framework authentication types in the Azure Bot Service
 description: Learn about bot authentication types in the Azure Bot Service.
 keywords: azure bot service, authentication, bot framework token service
-author: kamrani
+author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: conceptual
 ms.service: bot-service
-ms.date: 08/14/2020
+ms.date: 10/20/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -31,14 +31,14 @@ In this figure:
 
 > [!NOTE]
 > When a custom channel adapter is used, the adapter itself performs the tasks that the Bot Connector Service and the default Bot Adapter do. Also, it provides the authentication mechanism for the related web hook API. For an example,
-see [Connect a bot to Slack using the Slack adapter](~/bot-service-channel-connect-slack.md?tabs=adapter#connect-a-bot-to-slack-using-the-slack-adapter).
+see [Connect a bot to Slack using the Slack adapter](../bot-service-channel-connect-slack.md?tabs=adapter#connect-a-bot-to-slack-using-the-slack-adapter).
 
 ## Bot authentication
 
 A bot is identified by its **MicrosoftAppID** and **MicrosoftAppPassword**, which are kept within the bot's settings files (`appsettings.json` (.NET), `.env` (JavaScript), `config.py` (Python)) or in **Azure Key Vault**.
-For more information, see [MicrosoftAppID and MicrosoftAppPassword](~/bot-service-manage-overview.md#microsoftappid-and-microsoftapppassword).
+For more information, see [MicrosoftAppID and MicrosoftAppPassword](../bot-service-manage-overview.md#microsoftappid-and-microsoftapppassword).
 
-When you register a bot in the Azure portal, for example via the **Bot Channels Registration**, Azure creates an Active Directory (AD) registration application. If you use the Bot Framework CLI, you must specifically perform a step to create the AD registration. This registration has an application ID (`MicrosoftAppID`) and client secret (`MicrosoftAppPassword`). Azure uses these values to generate a **token** with which the bot can access secure resources.
+When you register a bot in the Azure portal, Azure creates an Active Directory (Azure AD) registration application. If you use the Bot Framework CLI, you must specifically perform a step to create the Azure AD registration. This registration has an application ID (`MicrosoftAppID`) and client secret (`MicrosoftAppPassword`). Azure uses these values to generate a **token** with which the bot can access secure resources.
 
 When a channel sends a request to a bot, via the Bot Connector service, it specifies a **token** in the **Authorization header** of the request. The bot authenticates calls from the Bot Connector service by verifying the authenticity of the token.
 
@@ -47,7 +47,7 @@ All requests must include the access token which is verified by the Bot Connecto
 
 The operations described are automatically performed by the Bot Framework SDK.
 
-For more details, see the REST API documentation on how to [authenticate requests from the Bot Connector service to your bot](~/rest-api/bot-framework-rest-connector-authentication.md#connector-to-bot) and [authenticate requests from your bot to the Bot Connector service](~/rest-api/bot-framework-rest-connector-authentication.md#bot-to-connector).
+For more details, see the REST API documentation on how to [authenticate requests from the Bot Connector service to your bot](../rest-api/bot-framework-rest-connector-authentication.md#connector-to-bot) and [authenticate requests from your bot to the Bot Connector service](../rest-api/bot-framework-rest-connector-authentication.md#bot-to-connector).
 
 ### Channels
 
@@ -57,12 +57,12 @@ Typically, channels communicate with a bot via the **Bot Connector service**. Th
 
 Besides the standard supported channels, a client application can communicate with a bot using the Direct Line channel.
 
-The client application authenticates requests to Direct Line (version 3.0) either by using a **secret** obtained from the [Direct Line channel configuration](~/bot-service-channel-connect-directline.md) page in the Azure portal or, better, by using a **token** obtained at runtime. The secret or token are specified in the Authorization header of each request.
+The client application authenticates requests to Direct Line (version 3.0) either by using a **secret** obtained from the [Direct Line channel configuration](../bot-service-channel-connect-directline.md) page in the Azure portal or, better, by using a **token** obtained at runtime. The secret or token are specified in the Authorization header of each request.
 
 > [!IMPORTANT]
-> When you use Azure Bot Service authentication with Web Chat there are some important security considerations you must keep in mind. For more information, see the [security considerations](~/bot-service-channel-connect-webchat.md#keep-your-secret-hidden-exchange-your-secret-for-a-token-and-generate-the-embed) section in the REST authentication article.
+> When you use Azure Bot Service authentication with Web Chat there are some important security considerations you must keep in mind. For more information, see the [security considerations](../bot-service-channel-connect-webchat.md#keep-your-secret-hidden-exchange-your-secret-for-a-token-and-generate-the-embed) section in the REST authentication article.
 
-For more information, see [Keep your secret hidden, exchange your secret for a token, and generate the embed](~/bot-service-channel-connect-webchat.md#keep-your-secret-hidden-exchange-your-secret-for-a-token-and-generate-the-embed).
+For more information, see [Keep your secret hidden, exchange your secret for a token, and generate the embed](../bot-service-channel-connect-webchat.md#keep-your-secret-hidden-exchange-your-secret-for-a-token-and-generate-the-embed).
 
 #### Web Chat
 
@@ -72,7 +72,7 @@ The Web Chat has two implementations: the **channel** and the **control**.
 
     ![bot web chat testing](media/concept-bot-authentication/bot-webchat-testing.PNG).
 
-    For more information, see [Connect a bot to Web Chat](~/bot-service-channel-connect-webchat.md).
+    For more information, see [Connect a bot to Web Chat](../bot-service-channel-connect-webchat.md).
 
 - You can use a Web Chat control with the Direct Line channel to provide access to a bot in a client application. For more information about the control, see [Bot Framework Web Chat](https://github.com/microsoft/BotFramework-WebChat).
 

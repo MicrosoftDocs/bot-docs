@@ -17,7 +17,7 @@ monikerRange: 'azure-bot-service-4.0'
 If a bot uses multiple LUIS models and QnA Maker knowledge bases (knowledge bases), you can use the Dispatch tool to determine which LUIS model or QnA Maker knowledge base best matches the user input. The dispatch tool does this by creating a single LUIS app to route user input to the correct model. For more information about Dispatch, including the CLI commands, refer to the [Dispatch README][dispatch-readme].
 
 > [!IMPORTANT]
-> Dispatch is on the path to be deprecated and replaced with [Orchestrator](https://aka.ms/bf-orchestrator).  Please refer to this [documentation](https://github.com/microsoft/botframework-sdk/blob/main/Orchestrator/docs/DispatchMigrationExample.md) for more information on migrating your bot to use Orchestrator.
+> Dispatch is on the path to be deprecated and replaced with [Orchestrator](/composer/concept-orchestrator).  Please refer to this [documentation](https://github.com/microsoft/botframework-sdk/blob/main/Orchestrator/docs/DispatchMigrationExample.md) for more information on migrating your bot to use Orchestrator.
 
 ## Prerequisites
 

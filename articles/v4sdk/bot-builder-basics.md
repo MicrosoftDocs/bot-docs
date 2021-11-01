@@ -6,7 +6,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 09/09/2021
+ms.date: 10/25/2021
 monikerRange: 'azure-bot-service-4.0'
 ms.custom: abs-meta-21q1
 ---
@@ -78,13 +78,13 @@ The SDK also defines an _adapter_ class that handles connectivity with the chann
 
 In addition, bots often need to retrieve and store state each turn.
 This is handled through _storage_, _bot state_, and _property accessor_ classes.
-The SDK does not provide built-in storage, but does provide abstractions for storage and a few implementations of a storage layer.
+The SDK doesn't provide built-in storage, but does provide abstractions for storage and a few implementations of a storage layer.
 The [managing state](bot-builder-concept-state.md) topic describes these state and storage features.
 
 > [!div class="mx-imgBorder"]
 > ![A bot has connectivity and reasoning elements, and an abstraction for state](../media/architecture/how-bots-work.png)
 
-The SDK does not require you use a specific application layer to send and receive web requests.
+The SDK doesn't require you use a specific application layer to send and receive web requests.
 The Bot Framework has templates and samples for ASP.NET (C#), restify (JavaScript), and aiohttp (Python).
 However, you can choose to use a different application layer for your app.
 
@@ -156,7 +156,7 @@ Activities arrive at the bot from the Bot Framework Service via an HTTP POST req
 The protocol doesn't specify the order in which these POST requests and their acknowledgments are made. However, to fit with common HTTP service frameworks, typically these requests are nested, meaning that the outbound HTTP request is made from the bot within the scope of the inbound HTTP request. This pattern is illustrated in the earlier diagram. Since there are two distinct HTTP connections back to back, the security model must provide for both.
 
 > [!NOTE]
-> The bot has 15 seconds to acknowledge the call with a status 200 on most channels. If the bot does not respond within 15 seconds, an HTTP GatewayTimeout error (504) occurs.
+> The bot has 15 seconds to acknowledge the call with a status 200 on most channels. If the bot doesn't respond within 15 seconds, an HTTP GatewayTimeout error (504) occurs.
 
 ## The activity processing stack
 
@@ -179,7 +179,7 @@ As mentioned above, the turn context provides the mechanism for the bot to send 
 
 ## Bot templates
 
-You need to choose the application layer use for your app; however, the Bot Framework has templates and samples for ASP.NET (C#), restify (JavaScript), and aiohttp (Python). The documentation is written assuming you use one of these platforms, but the SDK does not require it of you. See the [Create a bot](../bot-service-quickstart-create-bot.md) quickstart for instructions on how to access and install the templates.
+You need to choose the application layer use for your app; however, the Bot Framework has templates and samples for ASP.NET (C#), restify (JavaScript), and aiohttp (Python). The documentation is written assuming you use one of these platforms, but the SDK doesn't require it of you. See the [Create a bot](../bot-service-quickstart-create-bot.md) quickstart for instructions on how to access and install the templates.
 
 A bot is a web application, and templates are provided for each language version of the SDK.
 All templates provide a default endpoint implementation and adapter.
@@ -207,10 +207,10 @@ The templates are:
 
 ### Managing bot resources
 
-You will need to manage the resources for your bot, such as its app ID and password, and also information for any connected services. When you deploy your bot, it will need secure access to this information. To avoid complexity, most of the Bot Framework SDK articles do not describe how to manage this information.
+You'll need to manage the resources for your bot, such as its app ID and password, and also information for any connected services. When you deploy your bot, it will need secure access to this information. To avoid complexity, most of the Bot Framework SDK articles do not describe how to manage this information.
 
 - For general security information, see [Bot Framework security guidelines](bot-builder-security-guidelines.md).
-- To manage keys and secrets in Azure, see [About Azure Key Vault](/azure/key-vault/general/key-vault-overview).
+- To manage keys and secrets in Azure, see [About Azure Key Vault](/azure/key-vault/general/overview).
 
 ### Channel adapters
 

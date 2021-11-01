@@ -358,7 +358,7 @@ See [CI/CD](#cicd).
 
 - **Status**: Informal, part of the Bot Framework SDK and Composer, mostly under the covers for now. Try to avoid using this term.
 - **Definition**: A declarative dialog is part or all of an adaptive dialog, represented as _declarative assets_ in a file.
-- **Notes**: Composer primarily saves and loads bots using declarative assets, and uses a common bot, aka _the runtime_, aka _common core bot_, to consume and _run_ these assets. As such, they define the logic the bot will use and the common bot contains the code for stepping through that logic.
+- **Notes**: Composer primarily saves and loads bots using declarative assets, and uses a common bot, _the runtime_ or _common core bot_, to consume and _run_ these assets. As such, they define the logic the bot will use and the common bot contains the code for stepping through that logic.
 - **See also**: [.dialog file](#dialog-file).
 
 ## dialog

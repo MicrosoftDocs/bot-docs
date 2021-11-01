@@ -7,7 +7,7 @@ ms.author: kamrani
 manager: kamrani
 ms.topic: article
 ms.service: bot-service
-ms.date: 08/10/2021
+ms.date: 10/21/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -29,7 +29,7 @@ This article demonstrates how to implement a skill that echoes the user's input.
 
 - Knowledge of [bot basics](bot-builder-basics.md) and [skills](skills-conceptual.md).
 - An Azure subscription (to deploy your skill). If you don't have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
-- A copy of the **skills simple bot-to-bot** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/80.skills-simple-bot-to-bot), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/80.skills-simple-bot-to-bot) or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/80.skills-simple-bot-to-bot).
+- A copy of the **skills simple bot-to-bot** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/80.skills-simple-bot-to-bot), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/80.skills-simple-bot-to-bot), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/80.skills-simple-bot-to-bot).
 
 > [!NOTE]
 > Starting with version 4.11, you do not need an app ID and password to test a skill locally in the Emulator. An Azure subscription is still required to deploy your skill to Azure.
@@ -45,19 +45,19 @@ This article focuses on the skill, which includes support logic in its bot and a
 
 ### [C#](#tab/cs)
 
-![Skill csharp class diagram](./media/skills-simple-skill-cs.png)
+![Skill C# class diagram](./media/skills-simple-skill-cs.png)
 
 ### [JavaScript](#tab/javascript)
 
-![Skill js class diagram](./media/skills-simple-skill-js.png)
+![Skill JavaScript class diagram](./media/skills-simple-skill-js.png)
 
 ### [Java](#tab/java)
 
-![Skill java class diagram](./media/skills-simple-skill-java.png)
+![Skill Java class diagram](./media/skills-simple-skill-java.png)
 
 ### [Python](#tab/python)
 
-![Skill python class diagram](./media/skills-simple-skill-python.png)
+![Skill Python class diagram](./media/skills-simple-skill-python.png)
 
 ---
 
@@ -68,7 +68,7 @@ For information about the simple root bot, see how to [Implement a skill consume
 For deployed bots, bot-to-bot authentication requires that each participating bot has a valid app ID and password.
 However, you can test skills and skill consumers locally with the Emulator without an app ID and password.
 
-To make the skill available to user-facing bots, register the skill with Azure. You can use a Bot Channels Registration. For more information, see how to [register a bot with Azure Bot Service](../bot-service-quickstart-registration.md).
+To make the skill available to user-facing bots, register the skill with Azure. For more information, see how to [register a bot with Azure Bot Service](../bot-service-quickstart-registration.md).
 
 ## Application configuration
 
@@ -104,7 +104,6 @@ Add the skill's app ID and password to the .env file.
 Add the skill's app ID and password to the application.properties file.
 
 [!code-java[configuration file](~/../botbuilder-samples/samples/java_springboot/80.skills-simple-bot-to-bot/DialogSkillBot/src/main/resources/application.properties)]
-
 
 ### [Python](#tab/python)
 
@@ -211,11 +210,7 @@ The SDK provides an `AllowedCallersClaimsValidator` class that adds application-
 
 ### [JavaScript](#tab/javascript)
 
-Define a claims validation method that throws an error to reject an incoming request.
-
-**echo-skill-bot/authentication/allowedCallersClaimsValidator.js**
-
-[!code-javascript[Claims validator](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/authentication/allowedCallersClaimsValidator.js?range=11-31)]
+The SDK provides an `allowedCallersClaimsValidator` class that adds application-level authorization based on a simple list of IDs of the applications that are allowed to call the skill. If the list contains an asterisk (*), then all callers are allowed. The claims validator is configured in **index.js**.
 
 ### [Java](#tab/java)
 

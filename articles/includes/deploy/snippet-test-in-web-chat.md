@@ -3,4 +3,4 @@
 1. Open the **Test in Web Chat** pane.
 1. Interact with your deployed bot.
 
-For more information about bot channels registration, see [Register a bot with Bot Service](../../bot-service-quickstart-registration.md).
+For more information about bot registration, see [Register a bot with Bot Service](../../bot-service-quickstart-registration.md).

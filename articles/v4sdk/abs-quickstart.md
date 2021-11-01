@@ -1,7 +1,7 @@
 ---
-title: Create an Azure Bot resource in the Azure portal - Azure Bot Service
+title: Create an Azure Bot resource in the Azure portal
 description: Learn how to create a bot resource for the Azure Bot Service, an integrated, dedicated bot development environment.
-keywords: Quickstart, create bot resource, bot service, web app bot
+keywords: Quickstart, create bot resource, bot service, Azure Bot
 author: mmiele
 ms.author: kamrani
 manager: kamrani

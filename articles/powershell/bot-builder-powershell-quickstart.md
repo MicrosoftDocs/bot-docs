@@ -4,7 +4,7 @@ description: Learn how to publish a bot with Azure PowerShell.
 author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: how-to
 ms.service: bot-service
 ms.date: 02/23/2021
 ms.custom: devx-track-azurepowershell, modeapi
@@ -16,10 +16,8 @@ ms.custom: devx-track-azurepowershell, modeapi
 
 This article shows you how to use Azure PowerShell to create a bot and register it with Azure using an existing Azure Active Directory (Azure AD) application registration.
 
-You have two approaches to hosting your bot:
-
-1. **Web App Bot**. Create a bot and register it with Azure using an existing application registration as shown in this article. Use this approach to develop and host a bot in Azure.
-1. **Bot Channels Registration**. Use this approach to create and develop your bot locally and host it on a platform different from Azure. To do so, follow the steps described in the [Bot channels registration](../bot-service-quickstart-registration.md) article. When you register your bot, you provide the web address where your bot is hosted. You can still host it in Azure.
+Use an **Azure Bot** resource to host your bot.
+You'll create and develop your bot locally and host it on Azure or a different platform. Follow the steps described in how-to [Register a bot with Azure](../bot-service-quickstart-registration.md). When you register your bot, you provide the web address where your bot is hosted. You can still host it in Azure.
     <!--?Should the lead in be "...and host it on any platform?-->
 
 You can run these commands locally, using Azure PowerShell, or remotely through the Azure portal, using Azure CloudShell. For more information about Azure CloudShell, see the [Overview of Azure Cloud Shell](/azure/cloud-shell/overview).
