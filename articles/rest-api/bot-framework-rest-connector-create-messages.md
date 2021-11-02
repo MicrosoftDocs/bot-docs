@@ -1,13 +1,14 @@
 ---
 title: Create messages with the Bot Framework Connector service - Azure Bot Service
 description: Become familiar with the messages that bots use to communicate with users. Learn about properties used to format text, attach files, and specify other behavior.
-author: MarcFromTerawe
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: conceptual
 ms.service: bot-service
+ms.date: 11/01/2021
 ms.custom: abs-meta-21q1
-ms.date: 09/01/2021
 ---
 
 # Create messages with the Bot Connector API
