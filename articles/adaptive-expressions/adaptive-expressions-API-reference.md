@@ -2,12 +2,13 @@
 title: API reference for Adaptive expressions - Bot Service
 description: API reference for Adaptive expressions
 keywords: adaptive expressions, api reference
-author: kamrani
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: reference
 ms.service: bot-service
-ms.date: 07/21/2020
+ms.date: 11/01/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 

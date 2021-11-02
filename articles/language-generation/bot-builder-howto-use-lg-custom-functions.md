@@ -2,12 +2,13 @@
 title: Use custom functions in language generation - Bot Service
 description: Learn how to add custom functions to adaptive expressions and use them in language generation.
 keywords: language generation, lg templates, custom functions, adaptive expressions, C#, JS, bot
-author: kamrani
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 8/13/2020
+ms.date: 11/01/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -200,8 +201,3 @@ Download and install the latest version of the [Bot Framework Emulator](https://
 - [Structured response templates](language-generation-structured-response-template.md)
 - [.lg file format](../file-format/bot-builder-lg-file-format.md)
 - [Adaptive expressions prebuilt functions reference](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md)
-
-<!--
-## Next steps
-
-> [!div class="nextstepaction"]->
