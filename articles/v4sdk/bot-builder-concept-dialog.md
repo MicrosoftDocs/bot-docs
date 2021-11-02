@@ -3,11 +3,12 @@ title: Dialogs in the Bot Framework SDK
 description: Learn about Bot Framework SDK dialogs. Understand dialog classes and features, different types of dialogs, and dialog design patterns.
 keywords: conversation flow, dialogs, dialog state, bot conversation, dialog set, dialog context, dialog stack
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: conceptual
 ms.service: bot-service
-ms.date: 09/21/2021
+ms.date: 11/01/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 

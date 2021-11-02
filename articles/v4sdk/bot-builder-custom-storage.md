@@ -2,12 +2,13 @@
 title: Implement custom storage for your bot - Bot Service
 description: Learn how to use version 4.0 of the Bot Framework SDK to store bot state data. Understand the default framework. See how to implement additional support.
 keywords: custom, storage, state, dialog
-author: johnataylor
-ms.author: johtaylo
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: conceptual
 ms.service: bot-service
-ms.date: 05/23/2019
+ms.date: 11/01/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 

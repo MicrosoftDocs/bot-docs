@@ -3,11 +3,12 @@ title: Handle user interruptions - Bot Service
 description: Learn how bots handle user interruptions. See how to implement help and cancel interruptions, how to create and test bots, and how to handle unexpected errors.
 keywords: interrupt, interruptions, switching topic, break
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 10/18/2021
+ms.date: 11/01/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 

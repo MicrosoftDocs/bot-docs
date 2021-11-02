@@ -2,12 +2,13 @@
 title: Add telemetry to your bot in Azure Bot Service
 description: Learn how to view information on bot availability, performance, usage, and behavior. See how to turn on telemetry tracking for Application Insights.
 keywords: telemetry, appinsights, monitor bot
-author: erhopf
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 09/14/2021
+ms.date: 11/01/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -82,9 +83,9 @@ This article starts from the [CoreBot sample app](https://github.com/Microsoft/B
 
 1. Open the [CoreBot sample app](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot) in Visual Studio.
 
-2. Add  the `Microsoft.Bot.Builder.Integration.ApplicationInsights.Core` NuGet package. For more information on using NuGet, see [Install and manage packages in Visual Studio](/nuget/consume-packages/install-use-packages-visual-studio):
+1. Add  the `Microsoft.Bot.Builder.Integration.ApplicationInsights.Core` NuGet package. For more information on using NuGet, see [Install and manage packages in Visual Studio](/nuget/consume-packages/install-use-packages-visual-studio):
 
-3. Include the following statements in `Startup.cs`:
+1. Include the following statements in `Startup.cs`:
 
     ```csharp
     using Microsoft.ApplicationInsights.Extensibility;
@@ -96,7 +97,7 @@ This article starts from the [CoreBot sample app](https://github.com/Microsoft/B
     > [!TIP]
     > If you're following along by updating the CoreBot sample code, you will notice that the using statement for `Microsoft.Bot.Builder.Integration.AspNet.Core` already exists in the CoreBot sample.
 
-4. Include the following code in the `ConfigureServices()` method in `Startup.cs`. This will make telemetry services available to your bot via [dependency injection (DI)](/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2&preserve-view=true):
+1. Include the following code in the `ConfigureServices()` method in `Startup.cs`. This will make telemetry services available to your bot via [dependency injection (DI)](/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2&preserve-view=true):
 
     ```csharp
     // This method gets called by the runtime. Use this method to add services to the container.
@@ -130,7 +131,7 @@ This article starts from the [CoreBot sample app](https://github.com/Microsoft/B
     > [!TIP]
     > If you're following along by updating the CoreBot sample code, you will notice that `services.AddSingleton<IBotFrameworkHttpAdapter, AdapterWithErrorHandler>();` already exists.
 
-5. Instruct the adapter to use the middleware code that was added to the `ConfigureServices()` method. You do this in `AdapterWithErrorHandler.cs` with the parameter TelemetryInitializerMiddleware telemetryInitializerMiddleware in the constructor's parameter list, and the `Use(telemetryInitializerMiddleware);` statement in the constructor as shown here:
+1. Instruct the adapter to use the middleware code that was added to the `ConfigureServices()` method. You do this in `AdapterWithErrorHandler.cs` with the parameter TelemetryInitializerMiddleware telemetryInitializerMiddleware in the constructor's parameter list, and the `Use(telemetryInitializerMiddleware);` statement in the constructor as shown here:
 
     ```csharp
         public AdapterWithErrorHandler(IConfiguration configuration, ILogger<BotFrameworkHttpAdapter> logger, TelemetryInitializerMiddleware telemetryInitializerMiddleware, ConversationState conversationState = null)
@@ -141,9 +142,9 @@ This article starts from the [CoreBot sample app](https://github.com/Microsoft/B
     }
     ```
 
-6. You will also need to add `Microsoft.Bot.Builder.Integration.ApplicationInsights.Core` to your list of using statements in `AdapterWithErrorHandler.cs`.
+1. You will also need to add `Microsoft.Bot.Builder.Integration.ApplicationInsights.Core` to your list of using statements in `AdapterWithErrorHandler.cs`.
 
-7. Add the Application Insights instrumentation key in your `appsettings.json` file. The `appsettings.json` file contains metadata about external services the bot uses while running. For example, CosmosDB, Application Insights, and the Language Understanding (LUIS) service connection and metadata is stored there. The addition to your `appsettings.json` file must be in this format:
+1. Add the Application Insights instrumentation key in your `appsettings.json` file. The `appsettings.json` file contains metadata about external services the bot uses while running. For example, CosmosDB, Application Insights, and the Language Understanding (LUIS) service connection and metadata is stored there. The addition to your `appsettings.json` file must be in this format:
 
     ```json
     {
@@ -192,25 +193,25 @@ This article starts with the [CoreBot sample app](https://github.com/Microsoft/B
 
 1. Open the [CoreBot sample app](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot) in Visual Studio Code.
 
-2. Add the [Application Insights key](../bot-service-resources-app-insights-keys.md) to your `.env` file: `InstrumentationKey=<EnterInstrumentationKeyHere>`. The `.env` file contains metadata about external services the bot uses while running. For example, Application Insights and the Language Understanding (LUIS) service connection and metadata is stored there. The addition to your `.env` file must be in this format:
+1. Add the [Application Insights key](../bot-service-resources-app-insights-keys.md) to your `.env` file: `InstrumentationKey=<EnterInstrumentationKeyHere>`. The `.env` file contains metadata about external services the bot uses while running. For example, Application Insights and the Language Understanding (LUIS) service connection and metadata is stored there. The addition to your `.env` file must be in this format:
 
     [!code-json[env](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/.env?range=1-6&highlight=6)]
 
     > [!NOTE]
     > Details on getting the _Application Insights instrumentation key_ can be found in the article [Application Insights keys](../bot-service-resources-app-insights-keys.md).
 
-3. Add a reference to the modules `ApplicationInsightsTelemetryClient` and `TelemetryInitializerMiddleware`  that are located in `botbuilder-applicationinsights` in the Bot Framework SDK. To do this, add the following code starting near the top of `index.js`, just after the code to import required packages:
+1. Add a reference to the modules `ApplicationInsightsTelemetryClient` and `TelemetryInitializerMiddleware`  that are located in `botbuilder-applicationinsights` in the Bot Framework SDK. To do this, add the following code starting near the top of `index.js`, just after the code to import required packages:
 
     [!code-javascript[Import](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=16-17)]
 
     > [!TIP]
     > The [JavaScript Bot Samples](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs) use Node.js, which follows the CommonJS module system, and the built in `require` function to include modules that exist in separate files.
 
-4. Create a new function at the end of `index.js` named `getTelemetryClient` that takes your instrumentation key as a parameter and returns a _telemetry client_ using the `ApplicationInsightsTelemetryClient` module you previously referenced. This  _telemetry client_ is where your telemetry data will be sent to, in this case Application Insights.
+1. Create a new function at the end of `index.js` named `getTelemetryClient` that takes your instrumentation key as a parameter and returns a _telemetry client_ using the `ApplicationInsightsTelemetryClient` module you previously referenced. This  _telemetry client_ is where your telemetry data will be sent to, in this case Application Insights.
 
     [!code-javascript[getTelemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=116-122)]
 
-5. Next, you need to add the _telemetry middleware_ to the [adapter middleware pipeline](../v4sdk/bot-builder-concept-middleware.md#the-bot-middleware-pipeline). To do this, add the following code, starting just after the error handling code:  
+1. Next, you need to add the _telemetry middleware_ to the [adapter middleware pipeline](../v4sdk/bot-builder-concept-middleware.md#the-bot-middleware-pipeline). To do this, add the following code, starting just after the error handling code:  
 
     <!-- This level of detail may be too much:
         - The first step is to create a new telemetry client, in this case you are using Application Insights as the telemetry client using the module `ApplicationInsightsTelemetryClient` referenced in the previous step. This line of code will call the function `getTelemetryClient` that you will soon create, passing in the Application Insights key and that function will return a new telemetry client: `var telemetryClient = getTelemetryClient(process.env.InstrumentationKey);`. 
@@ -219,11 +220,11 @@ This article starts with the [CoreBot sample app](https://github.com/Microsoft/B
 
     [!code-javascript[telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=66-70)]
 
-6. In order for your dialog to report telemetry data, its `telemetryClient` must match the one used for the telemetry middleware, that is, `dialog.telemetryClient = telemetryClient;`
+1. In order for your dialog to report telemetry data, its `telemetryClient` must match the one used for the telemetry middleware, that is, `dialog.telemetryClient = telemetryClient;`
 
     [!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=88-93&highlight=6)]
 
-7. After creating the restify HTTP web server object, instruct it to use the `bodyParser` handler. <!--Need better/more detail-->
+1. After creating the restify HTTP web server object, instruct it to use the `bodyParser` handler. <!--Need better/more detail-->
 
     [!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=112-114)]
 
@@ -328,7 +329,7 @@ We will next implement telemetry functionality in your LUIS service. The LUIS se
     public FlightBookingRecognizer(IConfiguration configuration, IBotTelemetryClient telemetryClient)
     ```
 
-2. Next you will need to enable the `telemetryClient` when creating your `LuisRecognizer` in the `FlightBookingRecognizer` constructor. You do this by adding the `telemetryClient` as a new _LuisRecognizerOption_:
+1. Next you will need to enable the `telemetryClient` when creating your `LuisRecognizer` in the `FlightBookingRecognizer` constructor. You do this by adding the `telemetryClient` as a new _LuisRecognizerOption_:
 
     ```cs
     if (luisIsConfigured)
@@ -352,9 +353,9 @@ That's it, you should have a functional bot that logs telemetry data into Applic
 
 For information on testing and debugging your bot, you can refer to the following articles:
 
-- [Debug a bot](../bot-service-debug-bot.md)
-- [Testing and debugging guidelines](../v4sdk/bot-builder-testing-debugging.md)
-- [Debug with the Emulator](../bot-service-debug-emulator.md)
+* [Debug a bot](../bot-service-debug-bot.md)
+* [Testing and debugging guidelines](../v4sdk/bot-builder-testing-debugging.md)
+* [Debug with the Emulator](../bot-service-debug-emulator.md)
 
 # [JavaScript](#tab/javascript)
 
@@ -364,15 +365,15 @@ To enable the telemetry client in your LUIS recognizer:
 
 1. Open `FlightBookingRecognizer.js`
 
-2. Pass the `telemetryClient` parameter to the `FlightBookingRecognizer` constructor:
+1. Pass the `telemetryClient` parameter to the `FlightBookingRecognizer` constructor:
 
     [!code-javascript[FlightBookingRecognizer](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/dialogs/flightBookingRecognizer.js?range=7)]
 
-3. Set the `telemetryClient` field of the `recognizerOptions` object to the `telemetryClient` property that is passed into the `FlightBookingRecognizer` constructor, once done your constructor will appear as follows:
+1. Set the `telemetryClient` field of the `recognizerOptions` object to the `telemetryClient` property that is passed into the `FlightBookingRecognizer` constructor, once done your constructor will appear as follows:
 
     [!code-javascript[FlightBookingRecognizer](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/dialogs/flightBookingRecognizer.js?range=9-18&highlight=6)]
 
-4. And finally you need to include the `telemetryClient` when creating an instance of the `FlightBookingRecognizer` in `index.js`:
+1. And finally you need to include the `telemetryClient` when creating an instance of the `FlightBookingRecognizer` in `index.js`:
 
     [!code-javascript[FlightBookingRecognizer](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=86)]
 
@@ -401,12 +402,12 @@ Use this section as a starting point to learn how to use log queries in Applicat
 To query your data
 
 1. Go to the [Azure portal](https://portal.azure.com)
-2. Navigate to your Application Insights. Easiest way to do so is click on **Monitor > Applications** and find it there.
-3. Once in your Application Insights, you can click on _Logs (Analytics)_ on the navigation bar.
+1. Navigate to your Application Insights. Easiest way to do so is click on **Monitor > Applications** and find it there.
+1. Once in your Application Insights, you can click on _Logs (Analytics)_ on the navigation bar.
 
     ![Logs (Analytics) LogView](media/AppInsights-LogView.png)
 
-4. This will bring up the Query window.  Enter the following query and select _Run_:
+1. This will bring up the Query window.  Enter the following query and select _Run_:
 
     ```sql
     customEvents
@@ -420,7 +421,7 @@ To query your data
 
     ```
 
-5. This will return the percentage of waterfall dialogs that run to completion.
+1. This will return the percentage of waterfall dialogs that run to completion.
 
     ![App Insights Query Percent Complete](media/AppInsights-Query-PercentCompleteDialog.png)
 
