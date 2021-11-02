@@ -2,11 +2,13 @@
 title: Using JavaScript v3 user state in a v4 bot - Bot Service
 description: See an example of how to use JavaScript v3 user state in a JavaScript v4 bot.
 keywords: JavaScript, bot migration, v3 bot
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 04/19/2021
+ms.date: 11/02/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 

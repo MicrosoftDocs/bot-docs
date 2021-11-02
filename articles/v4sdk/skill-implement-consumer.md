@@ -3,11 +3,12 @@ title: Implement a skill consumer | Microsoft Docs
 description: Learn how to implement a skill consumer, using the Bot Framework SDK.
 keywords: skills
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 10/21/2021
+ms.date: 11/02/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -451,12 +452,3 @@ To use the _expect replies_ delivery mode:
 - Process each activity, either within the root bot or by sending it on to the channel that initiated the original request.
 
 Expect replies can be useful in situations in which the bot that replies to an activity needs to be the same instance of the bot that received the activity.
-
-<!--
-## Next steps
-
-TBD: Claims validation? Skill manifest?
-
-> [!div class="nextstepaction"]
-> [Add claims validation](skill-add-claims-validation.md)
--->

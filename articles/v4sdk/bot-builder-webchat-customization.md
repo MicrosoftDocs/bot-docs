@@ -2,12 +2,13 @@
 title:  Web Chat customization in the Bot Framework SDK
 description: Learn how to customize the Web Chat control. Add attachments, modify the font, color, container size, and bot avatar.
 keywords: bot framework, webchat, chat, samples, react, reference
-author: kamrani
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 09/21/2021
+ms.date: 11/02/2021
 ---
 
 # Web Chat customization
@@ -105,7 +106,7 @@ You can customize the background color and the fonts used in the chat bubbles to
 
 ## Change bot and user avatars
 
-Web Chat supports avatars, which you can customize by setting `botAvatarInitials` and `userAvatarInitials` in the `styleOptions` property. 
+Web Chat supports avatars, which you can customize by setting `botAvatarInitials` and `userAvatarInitials` in the `styleOptions` property.
 
 :::image type="content" source="../media/bot-service-channel-webchat/set-avatar-initials.png" alt-text="set avatar initials":::
 
@@ -172,16 +173,16 @@ const avatarOptions = {
 
 With the latest version of Web Chat, you can also render activities or attachments that Web Chat does not support out-of-the-box. Activities and attachments render are sent thru a customizable pipeline that modeled after [Redux middleware](https://redux.js.org/api/applymiddleware). The pipeline is flexible enough that you can do the following tasks easily:
 
--  Decorate existing activities/attachments
--  Add new activities/attachments
--  Replace existing activities/attachments (or remove them)
--  Daisy chain middleware together
+- Decorate existing activities/attachments
+- Add new activities/attachments
+- Replace existing activities/attachments (or remove them)
+- Daisy chain middleware together
 
 ### Show GitHub repository as an attachment
 
 For example, if you want to display a deck of GitHub repository cards, you can create a new React component for the GitHub repository and add it as middleware. The following image and code snippets are from the sample [the customization-card-components sample](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/05.custom-components/e.card-components).
 
-The following is the output when you enter the default message: *sample:github-repository*. 
+The following is the output when you enter the default message: *sample:github-repository*.
 
 :::image type="content" source="../media/bot-service-channel-webchat/github-repo-attachments-custom.png" alt-text="github repo attachments custom":::
 
@@ -253,7 +254,6 @@ ReactDOM.render(
    document.getElementById('webchat')
 );
 ```
-
 
 In this sample, we are adding a new React component called `GitHubRepositoryAttachment`:
 

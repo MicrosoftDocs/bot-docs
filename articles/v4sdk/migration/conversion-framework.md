@@ -3,11 +3,12 @@ title: Migrate a .NET v3 bot to a .NET Framework v4 bot - Bot Service
 description: We take an existing .NET v3 bot and migrate it to the .NET v4 SDK, using the same project.
 keywords: bot migration, formflow, dialogs, v3 bot
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 04/20/2021
+ms.date: 11/02/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -322,7 +323,7 @@ Comment out the configuration keys for **MicrosoftAppId** and **MicrosoftAppPass
 At this point, we should be able to run the bot locally in IIS and attach to it with the Emulator.
 
 1. Run the bot in IIS.
-1. Start the Emulator and connect to the bot's endpoint (for example, **http://localhost:3978/api/messages**).
+1. Start the Emulator and connect to the bot's endpoint (for example, `http://localhost:3978/api/messages`).
     - If this is the first time you are running the bot then click **File > New Bot** and follow the instructions on screen. Otherwise, click **File > Open Bot** to open an existing bot.
     - Double check your port settings in the configuration. For example, if the bot opened in your browser to `http://localhost:3979/`, then in the Emulator, set the bot's endpoint to `http://localhost:3979/api/messages`.
 1. All four dialogs should work, and you can set breakpoints in the waterfall steps to check what the dialog context and dialog state is at these points.

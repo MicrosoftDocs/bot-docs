@@ -3,11 +3,12 @@ title: Use multiple LUIS and QnA models with Orchestrator in the Bot Framework S
 description: Learn how bots can use multiple LUIS models and QnA Maker knowledge bases. See how to use Orchestrator to route user input to the correct model.
 keywords: Luis, QnA, Orchestrator, multiple services, route intents
 author: JonathanFingold
-ms.author: tiens
-manager: kamrani
-ms.topic: article
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 10/18/2021
+ms.date: 11/02/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 

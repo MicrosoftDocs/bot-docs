@@ -2,12 +2,13 @@
 title: Debugging guidelines - Bot Service
 description: View bot debugging tips, such as using the Emulator and transcripts to inspect behavior. Understand potential middleware, state, and activity handler errors.
 keywords: debugging bots, botframework debugging
-author: ivorb
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: conceptual
 ms.service: bot-service
-ms.date: 07/06/2021
+ms.date: 11/01/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -17,15 +18,15 @@ monikerRange: 'azure-bot-service-4.0'
 
 Bots are complex apps, with a lot of different parts working together. Like any other complex app, this can lead to some interesting bugs or cause your bot to behave differently than expected.
 
-Debugging, your bot can sometimes be a difficult task. Every developer has their own preferred way to accomplish that task. 
+Debugging, your bot can sometimes be a difficult task. Every developer has their own preferred way to accomplish that task.
 The guidelines below are suggestions that apply to a large majority of bots.
 
-After verifying that your bot works, the next step is connecting it to a channel. To do this, you can deploy your bot to a staging server, and create your own direct line client for your bot to connect to. For more information, see [Connect a bot to a Direct Line](../bot-service-channel-connect-directline.md). 
+After verifying that your bot works, the next step is connecting it to a channel. To do this, you can deploy your bot to a staging server, and create your own direct line client for your bot to connect to. For more information, see [Connect a bot to a Direct Line](../bot-service-channel-connect-directline.md).
 
 Creating your own client allows you to define the inner workings of the channel, as well as specifically test how your bot responds to certain activity exchanges. Once connected to your client, run your tests to set up your bot state and verify your features. If your bot utilizes a feature like speech, using these channels can offer a way to verify that functionality.
 
 > [!NOTE]
-> When deploying a bot to Azure, the [Web Chat](bot-builder-webchat-overview.md) channel is provisioned by default. 
+> When deploying a bot to Azure, the [Web Chat](bot-builder-webchat-overview.md) channel is provisioned by default.
 
 Use of both the [Emulator](../bot-service-debug-emulator.md) and [Web Chat](bot-builder-webchat-overview.md) via Azure portal here can provide further insight into how your bot performs while interacting with different channels.
 
@@ -35,9 +36,9 @@ Bots follow an event driven programming paradigm, which can be hard to rationali
 
 ## Understanding bot activities with the Emulator
 
-Your bot deals with different types of [activities](bot-builder-basics.md#the-activity-processing-stack) besides the normal _message_ activity. Understanding those activities will help you code your bot efficiently and allows you to verify the activities your bot is sending and receiving are what you expect. 
-Using the **Emulator** will show you what those activities are, when they happen, and what information they contain. 
-For more information see [Debug with the Emulator](../bot-service-debug-emulator.md). 
+Your bot deals with different types of [activities](bot-builder-basics.md#the-activity-processing-stack) besides the normal _message_ activity. Understanding those activities will help you code your bot efficiently and allows you to verify the activities your bot is sending and receiving are what you expect.
+Using the **Emulator** will show you what those activities are, when they happen, and what information they contain.
+For more information see [Debug with the Emulator](../bot-service-debug-emulator.md).
 
 ## Saving and retrieving user interactions with transcripts
 
@@ -87,9 +88,9 @@ Built-in state gets written at the end of a turn, however any activities generat
 
 The _send activity_ method, and its handlers, pose a unique problem. Simply calling _send activity_ from within the _on send activities_ handler causes an infinite forking of threads. There are ways you can work around that problem, such as by appending additional messages to the outgoing information or writing out to another location like the console or a file to avoid crashing your bot.
 
-## Debugging a production bot 
+## Debugging a production bot
 
-When your bot is in production, you can debug your bot from any channel using **ngrok**. The seamless connection of your bot to multiple channels is a key feature available in Bot Framework. For more information, see [Debug a bot from any channel using ngrok](../bot-service-debug-channel-ngrok.md) and [Debug a skill or skill consumer](skills-debug-skill-or-consumer.md). 
+When your bot is in production, you can debug your bot from any channel using **ngrok**. The seamless connection of your bot to multiple channels is a key feature available in Bot Framework. For more information, see [Debug a bot from any channel using ngrok](../bot-service-debug-channel-ngrok.md) and [Debug a skill or skill consumer](skills-debug-skill-or-consumer.md).
 
 ## Next steps
 

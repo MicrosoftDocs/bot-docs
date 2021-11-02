@@ -2,12 +2,13 @@
 title: Differences between the v3 and v4 NodeJS SDK - Bot Service
 description: Find out how versions 3 and 4 of the Bot Framework JavaScript SDK differ. Learn about changes in activity processing, state management, and dialogs.
 keywords: bot migration, dialogs, state
-author: mmiele
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: conceptual
 ms.service: bot-service
-ms.date: 11/28/2019
+ms.date: 11/02/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -47,7 +48,7 @@ When handling a message, use the turn context to get information about the incom
 | To get the incoming activity | Get the turn context's `Activity` property. |
 | To create and send an activity to the user | Call the turn context's `SendActivity` method.<br/> For more information, see [send and receive a text message](../../rest-api/bot-framework-rest-direct-line-1-1-receive-messages.md) and [add media to messages](../bot-builder-howto-add-media-attachments.md). |
 
-The `MessageFactory` class provides some helper methods for creating and formating activities.
+The `MessageFactory` class provides some helper methods for creating and formatting activities.
 
 ### Interruptions
 
