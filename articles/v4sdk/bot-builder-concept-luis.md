@@ -3,10 +3,12 @@ title: Language Understanding - Bot Service
 description: Learn how to add artificial intelligence to your bots with Microsoft Cognitive Services to make them more useful and engaging.
 keywords: LUIS, intent, recognizer, dispatch tool, qna, qna maker
 author: JonathanFingold
-ms.author: kamrani
-ms.topic: article
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: conceptual
 ms.service: bot-service
-ms.date: 05/12/2021
+ms.date: 11/01/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -63,7 +65,7 @@ Consider the following practices when designing a language model for your bot.
 
 LUIS apps recognize intent by classifying an utterance into one of multiple categories. A natural result is that determining the correct category from among a large number of intents can reduce a LUIS app's ability to distinguish between them.
 
-One way of reducing the number of intents is to use a hierarchical design. Consider the case of a personal assistant bot that has three intents related to weather, three intents related to home automation, and three other utility intents which are Help, Cancel and Greeting. If you put all the intents in the same LUIS app, you already have 9, and as you add features to the bot, you could end up with dozens. Instead, you can use the [Bot Framework Orchestrator](https://aka.ms/bf-orchestrator) to determine whether the user's request is for weather, home automation, or utility, then call the LUIS app for the category that Orchestrator determines. In this case each of the LUIS apps only starts with 3 intents.
+One way of reducing the number of intents is to use a hierarchical design. Consider the case of a personal assistant bot that has three intents related to weather, three intents related to home automation, and three other utility intents which are Help, Cancel and Greeting. If you put all the intents in the same LUIS app, you already have 9, and as you add features to the bot, you could end up with dozens. Instead, you can use the [Bot Framework Orchestrator](/composer/concept-orchestrator) to determine whether the user's request is for weather, home automation, or utility, then call the LUIS app for the category that Orchestrator determines. In this case each of the LUIS apps only starts with 3 intents.
 
 ### Use a None intent
 

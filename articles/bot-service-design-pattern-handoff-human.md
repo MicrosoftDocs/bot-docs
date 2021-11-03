@@ -1,12 +1,13 @@
 ---
 title: Transition conversations from bot to human - Bot Service
 description: Learn how to design for situations where a user starts a conversation with a bot and then must be handed off to a human.
-author: arturl
-ms.author: arturl
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: conceptual
 ms.service: bot-service
-ms.date: 10/21/2020
+ms.date: 11/01/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -17,10 +18,6 @@ monikerRange: 'azure-bot-service-4.0'
 Regardless of how much artificial intelligence a bot possesses, there may still be times when it needs to hand off the conversation to a human being. This can be necessary either because the bot does not understand the user (because of an AI limitation), or if the request cannot be automated and requires a human action. In such cases the bot should recognize when it needs to hand off and provide the user with a smooth transition.
 
 Microsoft Bot Framework is an open platform that allows developers to integrate with a variety of agent engagement platforms.
-
-<!-- We don't own this aka link, and for v4, I think there is an updated pattern.
-You can read more about the Bot Framework [handoff protocol](https://github.com/microsoft/BotBuilder-Samples/tree/main/experimental/handoff-library/#protocol).
--->
 
 ## Handoff integration models
 
@@ -48,7 +45,6 @@ Flexibility and control are the main advantages of this model. The bot can suppo
 
 The protocol is centered around events for initiation, sent by the bot to the channel, and status update, sent by the channel to the bot.
 
-
 ### Handoff initiation
 
 The *Handoff Initiation* event is created by the bot to initiate handoff.
@@ -69,7 +65,7 @@ The following are the handoff initiation event fields:
 
 - **Attachments** - The `attachments` is an **optional** field containing the list of `Attachment` objects. Bot Framework defines the "Transcript" attachment type that is used to send conversation transcript to the agent hub if required. Attachments can be sent either inline (subject to a size limit) or offline by providing `ContentUrl`.
 
-    ```C#
+    ```csharp
     handoffEvent.Attachments = new List<Attachment> {
         new Attachment {
             Content = transcript,
@@ -86,7 +82,7 @@ The following are the handoff initiation event fields:
 When a bot detects the need to hand the conversation off to an agent, it signals its intent by sending a handoff initiation event.
 In C# an higher level API `CreateHandoffInitiation` method can be used as demonstrated in the code snippet below.
 
-```C#
+```csharp
 var activities = GetRecentActivities();
 var handoffContext = new { Skill = "credit cards" };
 var handoffEvent =
@@ -146,4 +142,3 @@ The [Handoff Library](https://github.com/microsoft/BotBuilder-Samples/tree/maste
 - [Integration with LivePerson LiveEngage platform](https://developers.liveperson.com/third-party-bots-microsoft-bot-framework.html)
 - [Dialogs](v4sdk/bot-builder-dialog-manage-conversation-flow.md)
 - [Cognitive services](https://www.microsoft.com/cognitive-services/text-analytics-api)
-

@@ -3,11 +3,12 @@ title: About component and waterfall dialogs - Bot Service
 description: Describes what component, waterfall, and prompt dialogs are and how they work within the Bot Framework SDK.
 keywords: conversation flow, bot conversation, component dialog, waterfall dialog, prompt dialog, dialog set
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: conceptual
 ms.service: bot-service
-ms.date: 08/03/2020
+ms.date: 11/01/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 

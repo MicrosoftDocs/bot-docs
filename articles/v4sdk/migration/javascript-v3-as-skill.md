@@ -5,9 +5,9 @@ keywords: JavaScript, bot migration, skills, v3 bot
 author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 04/20/2021
+ms.date: 10/28/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -17,17 +17,17 @@ monikerRange: 'azure-bot-service-4.0'
 
 This article describes how to convert 2 sample JavaScript v3 bots to skills and to create a v4 skill consumer that can access these skills.
 To convert a .NET v3 bot to a skill, see how to [Convert a .NET v3 bot to a skill](net-v3-as-skill.md).
-To migrate a JavaScript bot from v3 to v4, see how to [Migrate a Javascript v3 bot to a v4 bot](conversion-javascript.md).
+To migrate a JavaScript bot from v3 to v4, see how to [Migrate a JavaScript v3 bot to a v4 bot](conversion-javascript.md).
 
 ## Prerequisites
 
 - Visual Studio Code.
 - Node.js.
 - An Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
-- To test the skills, you will need the Bot Framework Emulator and local copies of the bots:
-  - The v3 JavaScript echo skill: [**Skills/v3-skill-bot**](https://aka.ms/bot/v3-js-echo-skill-bot).
-  - The v3 JavaScript booking skill: [**Skills/v3-booking-bot-skill**](https://aka.ms/bot/v3-js-booking-skill-bot).
-  - The v4 JavaScript sample skill consumer: [**Skills/v4-root-bot**](https://aka.ms/bot/js-v4-root-bot).
+- To test the skills, you'll need the Bot Framework Emulator and local copies of the bots:
+  - The v3 JavaScript echo skill: [**Skills/v3-skill-bot**](https://github.com/microsoft/BotBuilder-Samples/tree/main/Migration/MigrationV3V4/Node/Skills#readme).
+  - The v3 JavaScript booking skill: [**Skills/v3-booking-bot-skill**](https://github.com/microsoft/BotBuilder-Samples/tree/main/Migration/MigrationV3V4/Node/Skills#readme).
+  - The v4 JavaScript sample skill consumer: [**Skills/v4-root-bot**](https://github.com/microsoft/BotBuilder-Samples/tree/main/Migration/MigrationV3V4/Node/Skills/v4-root-bot).
 
 ## About the bots
 
@@ -38,13 +38,13 @@ In this article, each v3 bot is created to act as a skill. A v4 skill consumer i
 
 Also, a v4 skill consumer, the **v4-root-bot**, demonstrates how to consume the skills and allows you to test them.
 
-To use the skill consumer to test the skills, all 3 bots need to be running at the same time. The bots can be tested locally using the Bot Framework Emulator, with each bot using a different local port.
+To use the skill consumer to test the skills, all three bots need to be running at the same time. The bots can be tested locally using the Bot Framework Emulator, with each bot using a different local port.
 
 ## Create Azure resources for the bots
 
 Bot-to-bot authentication requires that each participating bot has a valid app ID and password.
 
-1. Create a Bot Channels Registration for the bots as needed.
+1. Create an Azure Bot resource for the bots as needed.
 1. Record the app ID and password for each one.
 
 ## To convert a v3 bot
@@ -57,12 +57,12 @@ To convert an existing bot to a skill bot takes just a few steps, as outlined in
 - Modify the bot code to return an `endOfConversation` activity when the skill completes.
 - Whenever the skill completes, if it has conversation state or maintains resources, it should clear its conversation state and release resources.
 - Optionally add a manifest file.
-  Since a skill consumer does not necessarily have access to the skill code, use a skill manifest to describe the activities the skill can receive and generate, its input and output parameters, and the skill's endpoints.
+  Since a skill consumer doesn't necessarily have access to the skill code, use a skill manifest to describe the activities the skill can receive and generate, its input and output parameters, and the skill's endpoints.
   The current manifest schema is [skill-manifest-2.0.0.json](https://github.com/microsoft/botframework-sdk/blob/master/schemas/skills/skill-manifest-2.0.0.json).
 
 ## Convert the echo bot
 
-See [Skills/v3-skill-bot](https://aka.ms/bot/v3-js-echo-skill-bot) for an example of a v3 echo bot that has been converted to a basic skill.
+See [Skills/v3-skill-bot](https://github.com/microsoft/BotBuilder-Samples/tree/main/Migration/MigrationV3V4/Node/Skills#readme) for an example of a v3 echo bot that has been converted to a basic skill.
 
 1. Create a simple JavaScript v3 bot project and import required modules.
 
@@ -94,7 +94,7 @@ See [Skills/v3-skill-bot](https://aka.ms/bot/v3-js-echo-skill-bot) for an exampl
 
    [!code-javascript[universal bot](~/../botbuilder-samples/Migration/MigrationV3V4/Node/Skills/v3-skill-bot/app.js?range=35-46&highlight=6)]
 
-1. Since this bot does not maintain conversation state and does not create any resources for the conversation, the bot does not need to handle any `endOfConversation` activities that it receives from the skill consumer.
+1. Since this bot doesn't maintain conversation state and doesn't create any resources for the conversation, the bot doesn't need to handle any `endOfConversation` activities that it receives from the skill consumer.
 
 1. Use this manifest for the echo bot. Set the endpoint app ID to the bot's app ID.
 
@@ -106,8 +106,8 @@ See [Skills/v3-skill-bot](https://aka.ms/bot/v3-js-echo-skill-bot) for an exampl
 
 ## Convert the booking bot
 
-See [Skills/v3-booking-bot-skill](https://aka.ms/bot/v3-js-booking-skill-bot) for an example of a v3 booking bot that has been converted to a basic skill.
-Before conversion, the bot was similar to the v3 [core-MultiDialogs](https://aka.ms/v3-js-core-multidialogs) sample.
+See [Skills/v3-booking-bot-skill](https://github.com/microsoft/BotBuilder-Samples/tree/main/Migration/MigrationV3V4/Node/Skills#readme) for an example of a v3 booking bot that has been converted to a basic skill.
+Before conversion, the bot was similar to the v3 [core-MultiDialogs](https://github.com/microsoft/BotBuilder-Samples/tree/v3-sdk-samples/Node/core-MultiDialogs#readme) sample.
 
 1. Import required modules.
 
@@ -160,7 +160,7 @@ Before conversion, the bot was similar to the v3 [core-MultiDialogs](https://aka
 
    [!code-javascript[universal bot](~/../botbuilder-samples/Migration/MigrationV3V4/Node/Skills/v3-booking-bot-skill/app.js?range=107-108)]
 
-1. If the skill is cancelled by the skill consumer, the consumer sends an `endOfConversation` activity. Handle this activity and release any resources associated with the conversation.
+1. If the skill is canceled by the skill consumer, the consumer sends an `endOfConversation` activity. Handle this activity and release any resources associated with the conversation.
 
    **v3-booking-bot-skill/app.js**
 
@@ -176,7 +176,7 @@ Before conversion, the bot was similar to the v3 [core-MultiDialogs](https://aka
 
 ## Create the v4 root bot
 
-The simple root bot consumes the 2 skills and lets you verify that the conversion steps worked as planned. This bot will run locally on port 3978.
+The simple root bot consumes the two skills and lets you verify that the conversion steps worked as planned. This bot will run locally on port 3978.
 
 1. To the configuration file, add the root bot's app ID and password. For each of the v3 skills, add the skill's app ID.
 

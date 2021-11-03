@@ -5,9 +5,9 @@ keywords: .net, bot migration, skills, v3 bot
 author: JonathanFingold
 ms.author: kamrani
 manager: kamrani
-ms.topic: article
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 04/19/2021
+ms.date: 10/28/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -25,8 +25,8 @@ To migrate a .NET bot from v3 to v4, see how to [Migrate a .NET v3 bot to a .NET
 - .NET Core 3.1.
 - .NET Framework 4.6.1 or later.
 - An Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
-- Copies of the v3 .NET sample bots to convert: an echo bot, the [**PizzaBot**](https://aka.ms/v3-cs-pizza-bot), and the [**SimpleSandwichBot**](https://aka.ms/v3-cs-simple-sandwich-bot).
-- A copy of the v4 .NET sample skill consumer: [**SimpleRootBot**](https://aka.ms/cs-simple-root-bot).
+- Copies of the v3 .NET sample bots to convert: an echo bot, the [**PizzaBot**](https://github.com/microsoft/BotBuilder-V3/tree/master/CSharp/Samples/PizzaBot), and the [**SimpleSandwichBot**](https://github.com/microsoft/BotBuilder-V3/tree/master/CSharp/Samples/SimpleSandwichBot).
+- A copy of the v4 .NET sample skill consumer: [**SimpleRootBot**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot).
 
 ## About the bots
 
@@ -45,7 +45,7 @@ To use the skill consumer to test the skills, all 4 bots need to be running at t
 
 Bot-to-bot authentication requires that each participating bot has a valid app ID and password.
 
-1. Create a Bot Channels Registration for the bots as needed.
+1. Create an Azure Bot resource for the bots as needed.
 1. Record the app ID and password for each one.
 
 ## Conversion process

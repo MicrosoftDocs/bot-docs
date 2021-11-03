@@ -2,12 +2,13 @@
 title: Add telemetry features to your Bot Framework QnA bot
 description: Learn how to integrate telemetry features into your QnA Maker enabled bot and send event data to telemetry services like Application Insights.
 keywords: telemetry, appinsights, Application Insights, monitor bot, QnA Maker
-author: kamrani
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 07/31/2019
+ms.date: 11/01/2021
 monikerRange: 'azure-bot-service-4.0'
 ms.custom: abs-meta-21q1
 ---
@@ -51,7 +52,7 @@ We will start with the [QnA Maker sample app](https://github.com/microsoft/BotBu
 
 1. Open the [QnA Maker sample app](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/11.qnamaker) in Visual Studio
 
-2. Add the `Microsoft.Bot.Builder.Integration.ApplicationInsights.Core ` NuGet package. For more information on using NuGet, see [Install and manage packages in Visual Studio](/nuget/tools/package-manager-ui):
+2. Add the `Microsoft.Bot.Builder.Integration.ApplicationInsights.Core` NuGet package. For more information on using NuGet, see [Install and manage packages in Visual Studio](/nuget/tools/package-manager-ui):
 
 3. Include the following statements in `Startup.cs`:
 

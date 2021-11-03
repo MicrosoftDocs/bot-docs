@@ -2,12 +2,13 @@
 title: Unit test bots - Bot Service
 description: Learn how to run unit tests on bots. See how to create data-driven tests, use mock objects in testing, and check activities and results returned by dialogs.
 keywords: bot, testing bots, bot testing framework
-author: gabog
-ms.author: ggilaber
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 07/17/2019
+ms.date: 11/02/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -448,7 +449,7 @@ public class BookingDialogTestCase
 
 We also created a helper `BookingDialogTestsDataGenerator` class that exposes a `IEnumerable<object[]> BookingFlows()` method that returns a collection of the test cases to be used by the test.
 
-In order to display each test case as a separate item in Visual Studio Test Explorer, the XUnit test runner requires that complex types like `BookingDialogTestCase` implement `IXunitSerializable`, to simplify this, the Bot.Builder.Testing framework provides a `TestDataObject` class that Implements this interface and can be used to wrap the test case data without having to implement `IXunitSerializable`. 
+In order to display each test case as a separate item in Visual Studio Test Explorer, the XUnit test runner requires that complex types like `BookingDialogTestCase` implement `IXunitSerializable`, to simplify this, the Bot.Builder.Testing framework provides a `TestDataObject` class that Implements this interface and can be used to wrap the test case data without having to implement `IXunitSerializable`.
 
 Here is a fragment of `IEnumerable<object[]> BookingFlows()` that shows how the two classes are used:
 

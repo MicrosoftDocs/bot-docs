@@ -2,12 +2,13 @@
 title: Troubleshoot HTTP 500 Internal Service Errors with Azure Bot Service
 description: Learn how to troubleshoot HTTP 500 errors. See how to enable Application Insights, retrieve information on exceptions, and check logs and configuration files.
 keywords: troubleshoot, HTTP 500, problems.
-author: jonathanFingold
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: troubleshooting
 ms.service: bot-service
-ms.date: 09/01/2021
+ms.date: 11/01/2021
 ms.custom: abs-meta-21q1
 ---
 
@@ -178,7 +179,6 @@ Bot ASP.NET and Node will emit logs at the server level that can be inspected.
    - If there is no activity, redeploy your bot.
    - Then switch to the **Application logs** page and look for any errors.
 
-
 ## Next steps
 
-* [General troubleshooting for Azure Bot Service bots](./bot-service-troubleshoot-general-problems.md)
+- [General troubleshooting for Azure Bot Service bots](./bot-service-troubleshoot-general-problems.md)

@@ -2,12 +2,13 @@
 title:  Additional channels in Bot Framework SDK
 description: Learn about the various modalities to access bots via channels; specifically channel adapters and Azure channels. 
 keywords: bot channels, hangouts, Twilio, facebook, azure portal
-author: ivorb
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 09/29/2021
+ms.date: 11/01/2021
 ---
 
 # Additional channels
@@ -28,7 +29,6 @@ Some channels are accessible through Azure Bot Service or through an adapter. It
 ## Currently available adapters
 
 Each repository is responsible for maintaining the list of adapters and channels they support.
-
 
 ## When to use a channel adapter
 

@@ -3,10 +3,12 @@ title: Use Dispatch for multiple LUIS and QnA models - Bot Service
 description: Learn how bots can use multiple LUIS models and QnA Maker knowledge bases. See how to use Dispatch tools to route user input to the correct model.
 keywords: Luis, QnA, Dispatch tool, multiple services, route intents
 author: JonathanFingold
-ms.author: kamrani
-ms.topic: article
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 08/05/2021
+ms.date: 11/02/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -17,7 +19,7 @@ monikerRange: 'azure-bot-service-4.0'
 If a bot uses multiple LUIS models and QnA Maker knowledge bases (knowledge bases), you can use the Dispatch tool to determine which LUIS model or QnA Maker knowledge base best matches the user input. The dispatch tool does this by creating a single LUIS app to route user input to the correct model. For more information about Dispatch, including the CLI commands, refer to the [Dispatch README][dispatch-readme].
 
 > [!IMPORTANT]
-> Dispatch is on the path to be deprecated and replaced with [Orchestrator](https://aka.ms/bf-orchestrator).  Please refer to this [documentation](https://github.com/microsoft/botframework-sdk/blob/main/Orchestrator/docs/DispatchMigrationExample.md) for more information on migrating your bot to use Orchestrator.
+> Dispatch is on the path to be deprecated and replaced with [Orchestrator](/composer/concept-orchestrator).  Please refer to this [documentation](https://github.com/microsoft/botframework-sdk/blob/main/Orchestrator/docs/DispatchMigrationExample.md) for more information on migrating your bot to use Orchestrator.
 
 ## Prerequisites
 
@@ -60,7 +62,6 @@ This sample is based on a predefined set of LUIS and QnA Maker apps.
 - `processSampleQnA` - for bot faq questions.
 - `processWeather` - for weather queries.
 - `processHomeAutomation` - for home lighting commands.
-
 
 ## [Python](#tab/python)
 
@@ -333,7 +334,6 @@ LuisAPIHostName=<your-dispatch-app-region>
 
 When all changes are complete, save this file.
 
-
 ## [Python](#tab/python)
 
 ### Installing packages
@@ -401,7 +401,6 @@ In **BotServicesImpl.java**, the information contained within configuration file
 
 [!code-java[ReadConfigurationInfo](~/../botbuilder-samples/samples/java_springboot/14.nlp-with-dispatch/src/main/java/com/microsoft/bot/sample/nlpwithdispatch/BotServicesImpl.java?range=19-45)]
 
-
 ## [Python](#tab/python)
 
 In **dispatch_bot.py**, the information contained within configuration file _config.py_ is used to connect your dispatch bot to the _QnAMaker_ and _LuisRecognizer_ services. The constructors use the values you provided to connect to these services.
@@ -440,7 +439,6 @@ In the **DispatchBot.java** file whenever the `onMessageActivity` method is call
 *bots\DispatchBot.java**
 
 [!code-java[OnMessageActivity](~/../botbuilder-samples/samples/java_springboot/14.nlp-with-dispatch/src/main/java/com/microsoft/bot/sample/nlpwithdispatch/DispatchBot.java?range=36-46)]
-
 
 ## [Python](#tab/python)
 
@@ -488,7 +486,6 @@ When the model produces a result, it indicates which service can most appropriat
 If method `processHomeAutomation` or `processWeather` are invoked, they are passed the results from the dispatch model within _luisResult.ConnectedServiceResult_. The specified method then provides user feedback showing the dispatch model top intent, plus a ranked listing of all intents and entities that were detected.
 
 If method `processSampleQnA` is invoked, it uses the user input contained within the turnContext to generate an answer from the knowledge base and display that result to the user.
-
 
 ## [Python](#tab/python)
 

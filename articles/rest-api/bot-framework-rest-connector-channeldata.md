@@ -2,11 +2,12 @@
 title: Implement channel-specific functionality using REST API - Bot Service
 description: Learn how to implement channel-specific functionality using the Bot Connector API. 
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 10/08/2021
+ms.date: 11/01/2021
 ---
 
 # Implement channel-specific functionality with the Bot Connector API
@@ -137,7 +138,7 @@ To create a Facebook notification, set the `Activity` object's `channelData` pro
 
 | Property | Description |
 |----|----|
-| notification_type | The type of notification (e.g., **REGULAR**, **SILENT_PUSH**, **NO_PUSH**).
+| notification_type | The type of notification (such as, **REGULAR**, **SILENT_PUSH**, or **NO_PUSH**).
 | attachment | An attachment that specifies an image, video, or other multimedia type, or a templated attachment such as a receipt. |
 
 > [!NOTE]

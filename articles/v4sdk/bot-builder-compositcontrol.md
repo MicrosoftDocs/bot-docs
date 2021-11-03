@@ -2,12 +2,13 @@
 title: Manage dialog complexity | Microsoft Docs
 description: Learn how to modularize your dialog complexity using component dialogs in the Bot Framework SDK.
 keywords: composite control, modular bot logic
-author: v-ducvo
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 05/14/2020
+ms.date: 11/01/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -106,7 +107,6 @@ This is the implementation of the first step of the waterfall dialog.
 
 For more information on implementing waterfall dialogs, see how to [implement sequential conversation flow](bot-builder-dialog-manage-complex-conversation-flow.md).
 
-
 # [Python](#tab/python)
 
 To use dialogs, install the **botbuilder-dialogs** and **botbuilder-ai** PyPI packages by running `pip install botbuilder-dialogs` and `pip install botbuilder-ai` from a terminal.
@@ -172,7 +172,6 @@ The `run` method is called from the bot's `onMessage` method.
 In the sample, this is done using the `run` method that is called from the bot's `onMessageActivity` method.
 
 [!code-java[OnMessageActivity](~/../botbuilder-samples/samples/java_springboot/05.multi-turn-prompt/src/main/java/com/microsoft/bot/sample/multiturnprompt/DialogBot.java?range=50-58&highlight=8)]
-
 
 # [Python](#tab/python)
 

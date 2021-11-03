@@ -2,12 +2,13 @@
 title: Connect a bot to Kik - Bot Service
 description:  Learn how to configure bots to use the Kik messaging app to communicate with people. See how to connect bots to Kik.
 keywords: connect a bot, bot channel, Kik bot, credentials, configure, phone
-author: RobStand
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 12/13/2017
+ms.date: 11/01/2021
 ---
 
 # Connect a bot to Kik

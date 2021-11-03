@@ -2,12 +2,13 @@
 title: .qna file format - Bot Service
 description: .qna file format reference
 keywords: qna file format, reference, qnamaker
-author: kamrani
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: emgrol
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: reference
 ms.service: bot-service
-ms.date: 08/05/2021
+ms.date: 11/01/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -292,6 +293,7 @@ The Portland store is open 24/7.
 ~~~
 
 ## Additional Resources
+
 - See [.lu file format](bot-builder-lu-file-format.md) for information about the .lu file format.
 
 [1]:/azure/cognitive-services/qnamaker/how-to/multiturn-conversation#add-a-new-question-and-answer-pair-as-a-follow-up-prompt

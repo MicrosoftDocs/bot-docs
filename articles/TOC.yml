@@ -3,7 +3,7 @@
 - name: Overview
   items:
   - name: What is the Bot Framework SDK?
-    href: bot-service-overview-introduction.md
+    href: bot-service-overview.md
   - name: Choose the right chatbot solution for your use case
     href: bot-overview.md
   - name: What's new
@@ -140,14 +140,10 @@
       href: v4sdk/bot-builder-howto-expire-conversation.md
     - name: Language understanding
       items:
-      - name: LUIS
-        items:
-        - name: Add natural language understanding to your bot
-          href: v4sdk/bot-builder-howto-v4-luis.md
-      - name: QnA Maker
-        items:
-        - name: Answer user's questions using QnA Maker
-          href: v4sdk/bot-builder-howto-qna.md
+      - name: Add natural language understanding to your bot
+        href: v4sdk/bot-builder-howto-v4-luis.md
+      - name: Answer user's questions using QnA Maker
+        href: v4sdk/bot-builder-howto-qna.md
       - name: Use multiple LUIS and QnA models
         items:
         - name: Use Orchestrator for intent resolution
@@ -293,6 +289,8 @@
         href: bot-service-adapter-connect-webex.md
       - name: Additional channels
         href: bot-service-channel-additional-channels.md
+      - name: Connect to channels with Azure CLI
+        href: bot-service-channel-azure-cli.md
   - name: Migrate
     items:
     - name: Migration overview
@@ -356,7 +354,7 @@
       - name: Authentication
         href: rest-api/bot-framework-rest-connector-authentication.md
       - name: Activities overview
-        href: https://aka.ms/botSpecs-activitySchema
+        href: https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md
       - name: Create messages
         href: rest-api/bot-framework-rest-connector-create-messages.md
       - name: Send and receive messages
@@ -497,11 +495,11 @@
   - name: Bot Framework schemas
     items:
     - name: Activity schema
-      href: https://aka.ms/botSpecs-activitySchema
+      href: https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md
     - name: Card schema
-      href: https://aka.ms/botSpecs-cardSchema
+      href: https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-cards.md
     - name: Transcript schema
-      href: https://aka.ms/botSpecs-transcripts
+      href: https://github.com/Microsoft/botframework-sdk/blob/main/specs/transcript/transcript.md
   - name: Virtual Assistant
     href: v4sdk/bot-builder-virtual-assistant-introduction.md
   - name: WebChat

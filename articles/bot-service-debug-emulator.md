@@ -2,12 +2,13 @@
 title: Test and debug bots using the Bot Framework Emulator
 description: Learn how to inspect, test, and debug bots using the Bot Framework Emulator desktop application.
 keywords: transcript, msbot tool, language services, speech recognition
-author: DeniseMak
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 05/10/2021
+ms.date: 11/01/2021
 ms.custom: abs-meta-21q1
 ---
 
@@ -137,7 +138,7 @@ When you click the login button displayed by the bot, you will be asked to enter
 
 To connect to a bot running locally, select **Open bot**. Add the port number your copied earlier into the following URL and paste the updated URL in the Bot URL bar:
 
-*http://localhost:**port number**/api/messages*
+`http://localhost:<port number>/api/messages`
 
 ![Emulator open-a-bot dialog](media/bot-service-debug-emulator/open_bot_emulator.png)
 

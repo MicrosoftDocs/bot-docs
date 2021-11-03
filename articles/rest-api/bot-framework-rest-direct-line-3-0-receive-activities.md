@@ -1,12 +1,13 @@
 ---
 title: Receive activities from the bot - Bot Service
 description: Learn how to receive activity updates from bots. See how to use version 3.0 of the Direct Line API to connect by using WebSocket streams or HTTP GET requests.
-author: RobStand
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 06/13/2019
+ms.date: 11/01/2021
 ---
 
 # Receive activities from the bot in Direct Line API 3.0
@@ -21,16 +22,18 @@ The service allows only 1 WebSocket connection per conversation. Direct Line may
 
 Not all [activity types](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md) are available both via WebSocket and via HTTP GET. The following table describes the availability of the various activity types for clients that use the Direct Line protocol.
 
-| Activity type | Availability | 
-|----|----|
-| message | HTTP GET and WebSocket |
-| typing | WebSocket only |
-| conversationUpdate | Not sent/received via client |
-| contactRelationUpdate | Not supported in Direct Line |
-| endOfConversation | HTTP GET and WebSocket |
-| all other activity types | HTTP GET and WebSocket |
+| Activity type            | Availability                 |
+|--------------------------|------------------------------|
+| message                  | HTTP GET and WebSocket       |
+| typing                   | WebSocket only               |
+| conversationUpdate       | Not sent/received via client |
+| contactRelationUpdate    | Not supported in Direct Line |
+| endOfConversation        | HTTP GET and WebSocket       |
+| all other activity types | HTTP GET and WebSocket       |
 
-## <a id="connect-via-websocket"></a> Receive activities via WebSocket stream
+<a id="connect-via-websocket"></a>
+
+## Receive activities via WebSocket stream
 
 When a client sends a [Start Conversation](bot-framework-rest-direct-line-3-0-start-conversation.md) request to open a conversation with a bot, the service's response includes a `streamUrl` property that the client can subsequently use to connect via WebSocket. The stream URL is preauthorized and therefore the client's request to connect via WebSocket does NOT require an `Authorization` header.
 
@@ -89,15 +92,17 @@ A client should ignore empty messages that it receives from the Direct Line serv
 
 A client may send empty messages to the Direct Line service to verify connectivity. The Direct Line service will ignore empty messages that it receives from the client.
 
-The Direct Line service may forcibly close the WebSocket connection under certain conditions. If the client has not received an `endOfConversation` activity, it may [generate a new WebSocket stream URL](bot-framework-rest-direct-line-3-0-reconnect-to-conversation.md) that it can use to reconnect to the conversation. 
+The Direct Line service may forcibly close the WebSocket connection under certain conditions. If the client has not received an `endOfConversation` activity, it may [generate a new WebSocket stream URL](bot-framework-rest-direct-line-3-0-reconnect-to-conversation.md) that it can use to reconnect to the conversation.
 
 The WebSocket stream contains live updates and very recent messages (since the call to connect via WebSocket was issued) but it does not include messages that were sent prior to the most recent `POST` to `/v3/directline/conversations/{id}`. To retrieve messages that were sent earlier in the conversation, use `HTTP GET` as described below.
 
-## <a id="http-get"></a> Retrieve activities with HTTP GET
+<a id="http-get"></a>
+
+## Retrieve activities with HTTP GET
 
 Clients that are unable to use WebSockets can retrieve activities by using `HTTP GET`.
 
-To retrieve messages for a specific conversation, issue a `GET` request to the `/v3/directline/conversations/{conversationId}/activities` endpoint, optionally specifying the `watermark` parameter to indicate the most recent message seen by the client. 
+To retrieve messages for a specific conversation, issue a `GET` request to the `/v3/directline/conversations/{conversationId}/activities` endpoint, optionally specifying the `watermark` parameter to indicate the most recent message seen by the client.
 
 The following snippets provide an example of the Get Conversation Activities request and response. The Get Conversation Activities response contains `watermark` as a property of the [ActivitySet](bot-framework-rest-direct-line-3-0-api-reference.md#activityset-object). Clients should page through the available activities by advancing the `watermark` value until no activities are returned.
 

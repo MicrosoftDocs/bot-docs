@@ -2,12 +2,13 @@
 title: Converting a v3 bot to a skill overview - Bot Service
 description: Provides an overview of converting your v3 bot to a skill, and consuming it from a v4 bot.
 keywords: bot migration
-author:  clearab
-ms.author: anclear
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: conceptual
 ms.service: bot-service
-ms.date: 02/28/2020
+ms.date: 11/02/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 

@@ -2,12 +2,13 @@
 title: Handle user interruptions - Bot Service
 description: Learn how bots handle user interruptions. See how to implement help and cancel interruptions, how to create and test bots, and how to handle unexpected errors.
 keywords: interrupt, interruptions, switching topic, break
-author: ivorb
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 04/02/2021
+ms.date: 11/01/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -162,7 +163,6 @@ Next, in the `finalStep` method of the `MainDialog` class, the booking dialog en
 
 The code in `BookingDialog` is not shown here as it is not directly related to interruption handling. It is used to prompt users for booking details. You can find that code in **BookingDialogs.java**.
 
-
 ## [Python](#tab/python)
 
 **dialogs/main_dialog.py**
@@ -200,7 +200,6 @@ In the sample, the adapter's `onTurnError` handler receives any exceptions throw
 # [Java](#tab/java)
 
 By registering an AdapterWithErrorHandler with the Spring framework in Application.java for the BotFrameworkHttpAdapter in this sample, the adapter's `onTurnError` handler receives any exceptions thrown by your bot's turn logic. If there is an exception thrown, the handler deletes the conversation state for the current conversation to prevent the bot from getting stuck in an error loop caused by being in a bad state. In the Java SDK the AdapterWithErrorHandler.java is implemented as part of the SDK and is included in com.microsoft.bot.integration package. See the Java SDK source code for details on the implementation of this adapter.
-
 
 ## [Python](#tab/python)
 
@@ -258,7 +257,6 @@ For reference, here are the class definitions that are used in the call to creat
 [!code-java[DialogBot signature](~/../botbuilder-samples/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/DialogBot.java?range=26)]
 [!code-java[MainDialog signature](~/../botbuilder-samples/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/MainDialog.java?range=32)]
 
-
 ## [Python](#tab/python)
 
 **app.py**
@@ -286,7 +284,7 @@ For reference, here are the class definitions that are used in the call to creat
 
 ## Additional information
 
-- The 24.bot-authentication-msgraph sample in [**C#**](https://aka.ms/auth-sample-cs), [**JavaScript**](https://aka.ms/auth-sample-js), or [**Python**](https://aka.ms/auth-sample-py) shows how to handle a logout request. It uses a pattern similar to the one shown here for handling interruptions.
+- The 24.bot-authentication-msgraph sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/24.bot-authentication-msgraph#readme), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/24.bot-authentication-msgraph#readme), [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/24.bot-authentication-msgraph#readme), or [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/24.bot-authentication-msgraph#readme) shows how to handle a logout request. It uses a pattern similar to the one shown here for handling interruptions.
 
 - You should send a default response instead of doing nothing and leaving the user wondering what is going on. The default response should tell the user what commands the bot understands so the user can get back on track.
 
@@ -305,7 +303,7 @@ For reference, here are the class definitions that are used in the call to creat
 [prompting]: bot-builder-prompts.md
 [component-dialogs]: bot-builder-compositcontrol.md
 
-[cs-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot
-[js-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot
-[java-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/13.core-bot
-[python-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/13.core-bot
+[cs-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot#readme
+[js-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot#readme
+[java-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/13.core-bot#readme
+[python-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/13.core-bot#readme

@@ -1,12 +1,13 @@
 ---
 title: Create a bot with the Bot Connector service - Bot Service
 description: Learn how to create a bot. See how to obtain an access token from the Bot Framework and use the Bot Connector service to exchange messages with users. 
-author: RobStand
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: quickstart
 ms.service: bot-service
-ms.date: 12/13/2017
+ms.date: 11/01/2021
 ---
 
 # Create a bot with the Bot Connector service with the Bot Connector API
@@ -18,12 +19,14 @@ ms.date: 12/13/2017
 
 The Bot Connector service enables your bot to exchange messages with channels that are configured in the [Azure Portal](https://portal.azure.com), by using industry-standard REST and JSON over HTTPS. This tutorial walks you through the process of obtaining an access token from the Bot Framework and using the Bot Connector service to exchange messages with the user.
 
-## <a id="get-token"></a> Get an access token
+<a id="get-token"></a>
+
+## Get an access token
 
 > [!IMPORTANT]
 > If you have not already done so, you must [register your bot](../bot-service-quickstart-registration.md) with the Bot Framework to obtain its App ID and password. You will need the bot's AppID and password to get an access token.
 
-To communicate with the Bot Connector service, you must specify an access token in the `Authorization` header of each API request, using this format: 
+To communicate with the Bot Connector service, you must specify an access token in the `Authorization` header of each API request, using this format:
 
 ```http
 Authorization: Bearer ACCESS_TOKEN
@@ -45,7 +48,7 @@ grant_type=client_credentials&client_id=MICROSOFT-APP-ID&client_secret=MICROSOFT
 
 ### Response
 
-If the request succeeds, you will receive an HTTP 200 response that specifies the access token and information about its expiration. 
+If the request succeeds, you will receive an HTTP 200 response that specifies the access token and information about its expiration.
 
 ```json
 {
@@ -61,11 +64,11 @@ If the request succeeds, you will receive an HTTP 200 response that specifies th
 
 ## Exchange messages with the user
 
-A conversation is a series of messages exchanged between a user and your bot. 
+A conversation is a series of messages exchanged between a user and your bot.
 
 ### Receive a message from the user
 
-When the user sends a message, the Bot Framework Connector POSTs a request to the endpoint that you specified when you [registered](../bot-service-quickstart-registration.md) your bot. The body of the request is an [Activity][] object. The following example shows the request body that a bot receives when the user sends a simple message to the bot. 
+When the user sends a message, the Bot Framework Connector POSTs a request to the endpoint that you specified when you [registered](../bot-service-quickstart-registration.md) your bot. The body of the request is an [Activity][] object. The following example shows the request body that a bot receives when the user sends a simple message to the bot.
 
 ```json
 {
@@ -99,7 +102,7 @@ When your bot's endpoint receives a `POST` request that represents a message fro
 3. Set the **recipient** property to the contents of the **from** property in the user's message.
 4. Set the **text** and **attachments** properties as appropriate.
 
-Use the `serviceUrl` property in the incoming request to [identify the base URI](bot-framework-rest-connector-api-reference.md#base-uri) that your bot should use to issue its response. 
+Use the `serviceUrl` property in the incoming request to [identify the base URI](bot-framework-rest-connector-api-reference.md#base-uri) that your bot should use to issue its response.
 
 To send the response, `POST` your `Activity` object to `/v3/conversations/{conversationId}/activities/{activityId}`, as shown in the following example. The body of this request is an `Activity` object that prompts the user to select an available appointment time.
 
@@ -129,7 +132,7 @@ Content-Type: application/json
 }
 ```
 
-In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri). 
+In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
 
 > [!IMPORTANT]
 > As shown in this example, the `Authorization` header of each API request that you send must contain the word **Bearer** followed by the access token that you [obtained from the Bot Framework](#get-token).
@@ -184,12 +187,12 @@ Content-Type: application/json
     ],
     "replyToId": "bf3cc9a2f5de..."
 }
-```   
+```
 
 ## Next steps
 
-In this tutorial, you obtained an access token from the Bot Framework and used the Bot Connector service to exchange messages with the user. 
-You can use the [Bot Framework Emulator](../bot-service-debug-emulator.md) to test and debug your bot. 
+In this tutorial, you obtained an access token from the Bot Framework and used the Bot Connector service to exchange messages with the user.
+You can use the [Bot Framework Emulator](../bot-service-debug-emulator.md) to test and debug your bot.
 If you'd like to share your bot with others, you'll need to [configure](../bot-service-manage-channels.md) it to run on one or more channels.
 
 [Activity]: bot-framework-rest-connector-api-reference.md#activity-object

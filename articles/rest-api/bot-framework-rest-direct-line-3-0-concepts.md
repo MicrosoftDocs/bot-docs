@@ -1,12 +1,13 @@
 ---
 title: Key concepts in the Bot Framework Direct Line API 3.0  - Azure Bot Service
 description: Learn about version 3.0 of the Bot Framework Direct Line API. View information on authentication, starting conversations, messages, and developer resources.
-author: RobStand
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: conceptual
 ms.service: bot-service
-ms.date: 01/06/2019
+ms.date: 11/01/2021
 ---
 
 # Key concepts in Direct Line API 3.0
