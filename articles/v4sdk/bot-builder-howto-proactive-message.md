@@ -9,6 +9,7 @@ ms.topic: how-to
 ms.service: bot-service
 ms.date: 11/08/2021
 ms.custom: abs-meta-21q1
+ms.date: 10/18/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
