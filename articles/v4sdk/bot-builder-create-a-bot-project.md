@@ -64,7 +64,7 @@ To use the **.env** configuration file, the bot requires the `dotenv` package fr
 
 # [Java](#tab/java)
 
-The Yeoman generator creates a [Spring](https://spring.io/web-applications) based web application with a build file using [Maven](https://maven.apache.org/what-is-maven.html). 
+The Yeoman generator creates a [Spring](https://spring.io/web-applications) based web application with a build file using [Maven](https://maven.apache.org/what-is-maven.html).
 
 The Maven **pom.xml** file specifies dependencies and their associated versions for your bot. This is all set up by the template and your system. Additional dependencies can be installed by adding entries to the pom.xml file.
 

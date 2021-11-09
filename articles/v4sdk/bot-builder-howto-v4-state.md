@@ -66,7 +66,7 @@ The following code examples show the definitions for the `UserProfile` and `Conv
 
 ## [JavaScript](#tab/javascript)
 
-This step is not necessary in JavaScript.
+This step isn't necessary in JavaScript.
 
 ## [Java](#tab/java)
 
