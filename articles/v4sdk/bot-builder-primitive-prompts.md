@@ -85,7 +85,7 @@ Create the user and conversation state objects at startup and consume them via d
 Create the user and conversation state objects in **index.js** and consume them in the bot constructor.
 
 **index.js**
-[!code-javascript[index.js](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/index.js?range=33-39)]
+[!code-javascript[index.js](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/index.js?range=49-52)]
 
 **bots/customPromptBot.js**
 [!code-javascript[constructor](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/bots/customPromptBot.js?range=20-22)]
@@ -181,7 +181,6 @@ When handling message activities, the message handler uses a helper method to ma
 **CustomPromptBot.java**
 [!code-java[message handler](~/../botbuilder-samples/samples/java_springboot/44.prompt-users-for-input/src/main/java/com/microsoft/bot/sample/promptusersforinput/CustomPromptBot.java?range=45-59)]
 
-
 ## [Python](#tab/python)
 
 **bots/custom_prompt_bot.py**
@@ -215,7 +214,6 @@ The validation methods are described in the following section.
 
 **CustomPromptBot.java**
 [!code-java[FillOutUserProfileAsync](~/../botbuilder-samples/samples/java_springboot/44.prompt-users-for-input/src/main/java/com/microsoft/bot/sample/promptusersforinput/CustomPromptBot.java?range=61-132)]
-
 
 ## [Python](#tab/python)
 

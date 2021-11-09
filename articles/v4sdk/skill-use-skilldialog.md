@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/02/2021
+ms.date: 11/08/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -97,7 +97,7 @@ Optionally, add the root bot's app ID and password and add the app ID for the ec
 
 Optionally, add the root bot's app ID and password and add the app ID for the echo skill bot.
 
-[!code-javascript[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/.env?highlight=1-2,6)]
+[!code-javascript[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/.env?highlight=2-3,8)]
 
 ### [Java](#tab/java)
 

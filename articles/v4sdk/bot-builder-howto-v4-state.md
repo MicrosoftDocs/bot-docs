@@ -2,12 +2,13 @@
 title: Save user and conversation data in the Bot Framework SDK
 description: Learn how the Bot Framework SDK manages user and conversation data (state). See how to set up storage for this data, read it, and write it. 
 keywords: conversation state, user state, conversation, saving state, managing bot state
-author: kamrani
-ms.author: kamrani
-manager: kamrani
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 09/21/2021
+ms.date: 11/08/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -65,7 +66,7 @@ The following code examples show the definitions for the `UserProfile` and `Conv
 
 ## [JavaScript](#tab/javascript)
 
-This step is not necessary in JavaScript.
+This step isn't necessary in JavaScript.
 
 ## [Java](#tab/java)
 
@@ -83,7 +84,6 @@ The following code examples show the definitions for the `UserProfile` and `Conv
 **ConversationData.java**
 
 [!code-java[ConversationData](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/ConversationData.java?range=18-46)]
-
 
 ## [Python](#tab/python)
 
@@ -125,7 +125,7 @@ Next, you register `MemoryStorage` that is then used to create `UserState` and `
 
 **index.js**
 
-[!code-javascript[index.js](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/index.js?range=34-40)]
+[!code-javascript[index.js](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/index.js?range=49-55)]
 
 **bots/stateManagementBot.js**
 
@@ -143,7 +143,6 @@ Next, you register the `StateManagementBot` in Application.java. Both Conversati
 **StateManagementBot.java**
 
 [!code-java[Bot constructor](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/StateManagementBot.java?range=41-45)]
-
 
 ## [Python](#tab/python)
 
@@ -184,7 +183,6 @@ Now you create property accessors using the `CreateProperty` method. Each state 
 **StateManagementBot.java**
 
 [!code-java[Create accessors](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/StateManagementBot.java?range=100-109)]
-
 
 ## [Python](#tab/python)
 
@@ -247,7 +245,6 @@ Before you exit the turn handler, you use the state management objects' _saveCha
 **StateManagementBot.java**
 
 [!code-java[onTurn](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/StateManagementBot.java?range=55-60)]
-
 
 ## [Python](#tab/python)
 

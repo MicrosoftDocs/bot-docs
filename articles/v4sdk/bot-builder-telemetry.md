@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 11/08/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -195,7 +195,7 @@ This article starts with the [CoreBot sample app](https://github.com/Microsoft/B
 
 1. Add the [Application Insights key](../bot-service-resources-app-insights-keys.md) to your `.env` file: `InstrumentationKey=<EnterInstrumentationKeyHere>`. The `.env` file contains metadata about external services the bot uses while running. For example, Application Insights and the Language Understanding (LUIS) service connection and metadata is stored there. The addition to your `.env` file must be in this format:
 
-    [!code-json[env](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/.env?range=1-6&highlight=6)]
+    [!code-json[env](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/.env?highlight=8)]
 
     > [!NOTE]
     > Details on getting the _Application Insights instrumentation key_ can be found in the article [Application Insights keys](../bot-service-resources-app-insights-keys.md).
@@ -209,7 +209,7 @@ This article starts with the [CoreBot sample app](https://github.com/Microsoft/B
 
 1. Create a new function at the end of `index.js` named `getTelemetryClient` that takes your instrumentation key as a parameter and returns a _telemetry client_ using the `ApplicationInsightsTelemetryClient` module you previously referenced. This  _telemetry client_ is where your telemetry data will be sent to, in this case Application Insights.
 
-    [!code-javascript[getTelemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=116-122)]
+    [!code-javascript[getTelemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=129-135)]
 
 1. Next, you need to add the _telemetry middleware_ to the [adapter middleware pipeline](../v4sdk/bot-builder-concept-middleware.md#the-bot-middleware-pipeline). To do this, add the following code, starting just after the error handling code:  
 
@@ -218,15 +218,15 @@ This article starts with the [CoreBot sample app](https://github.com/Microsoft/B
         - You will pass the telemetry client you just created to the `TelemetryLoggerMiddleware` function: `var telemetryLoggerMiddleware = new TelemetryLoggerMiddleware(telemetryClient, true);` which creates a TelemetryLoggerMiddleware object that you will use to create
     -->
 
-    [!code-javascript[telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=66-70)]
+    [!code-javascript[telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=82-86)]
 
 1. In order for your dialog to report telemetry data, its `telemetryClient` must match the one used for the telemetry middleware, that is, `dialog.telemetryClient = telemetryClient;`
 
-    [!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=88-93&highlight=6)]
+    [!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=104-109&highlight=6)]
 
 1. After creating the restify HTTP web server object, instruct it to use the `bodyParser` handler. <!--Need better/more detail-->
 
-    [!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=112-114)]
+    [!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=125-127)]
 
     > [!TIP]
     > This uses the _restify_ `bodyParser` function. _restify_ is a "A Node.js web service framework optimized for building semantically correct RESTful web services ready for production use at scale. restify optimizes for introspection and performance, and is used in some of the largest Node.js deployments on Earth." See the [restify](http://restify.com) web site for more information.
@@ -234,10 +234,6 @@ This article starts with the [CoreBot sample app](https://github.com/Microsoft/B
     Node.js which follows the CommonJS module system, and the built in `require` function to include modules that exist in separate files.
 
 At this point, the preliminary work to enable telemetry using Application Insights is done. You can run your bot locally using the bot Emulator and then go into Application Insights to see what is being logged, such as response time, overall app health, and general running information.
-
-<!--
-    # [Python](#tab/python)
--->
 
 ---
 
@@ -291,7 +287,7 @@ By default, the `TelemetryInitializerMiddleware` will use the `TelemetryLoggerMi
 
 The following code snippet comes from sample `21.corebot-app-insights`, and shows the call to `TelemetryInitializerMiddleware`:
 
-[!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=66-70)]
+[!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=82-86&highlight=4)]
 
 The code snippet below shows the change needed in sample `21.corebot-app-insights`, in the call to `TelemetryInitializerMiddleware` to disable activity logging:
 
@@ -307,13 +303,9 @@ adapter.use(initializerMiddleware);
 
 When activity logging is enabled, some properties on the incoming / outgoing activities are excluded from logging by default as they are likely to contain personal information, such as user name and the activity text. You can choose to include these properties in your logging by changing the `logPersonalInformation` parameter from `false` to `true` when registering the `TelemetryLoggerMiddleware` in **index.js**.
 
-[!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=66-70&highlight=3)]
+[!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=82-86&highlight=4)]
 
 Next we will see what needs to be included to add telemetry functionality to the dialogs. This will enable you to get additional information such as what dialogs run, and statistics about each one.
-
-<!--
-    # [Python](#tab/python)
--->
 
 ---
 
@@ -384,10 +376,6 @@ For information on testing and debugging your bot, you can refer to the followin
 * [Debug a bot](../bot-service-debug-bot.md)
 * [Testing and debugging guidelines](../v4sdk/bot-builder-testing-debugging.md)
 * [Debug with the Emulator](../bot-service-debug-emulator.md)
-
-<!--
-    # [Python](#tab/python)
--->
 
 ---
 

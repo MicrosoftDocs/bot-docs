@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/02/2021
+ms.date: 11/08/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -74,11 +74,12 @@ Create LUIS apps from the _HomeAutomation_ and _Weather_ lu files in the _cognit
     bf luis:build --in CognitiveModels --authoringKey <YOUR-KEY> --botName <YOUR-BOT-NAME>
     ```
 
-1. Record the application ID, display name, authoring key, and location.
+1. Record the application IDs, display names, authoring key, and location.
 
 For more information, see how to **Create a LUIS app in the LUIS portal** and **Obtain values to connect to your LUIS app** in [Add natural language understanding to your bot](bot-builder-howto-v4-luis.md) and the LUIS documentation on how to [train](/azure/cognitive-services/LUIS/luis-how-to-train) and [publish](/azure/cognitive-services/LUIS/publishapp) an app to the production environment.
 
 ### Create the QnA Maker knowledge base
+
 1. Create your QnAMaker service from qnamaker.ai portal or from https://portal.azure.com, get the resource key for the next step below.
 
 1. Create a QnAMaker kb from the _QnAMaker_ .qna file.
@@ -133,19 +134,17 @@ Once all of your service apps are created, the information for each needs to be 
 
 **appsettings.json**
 
-[!code-json[AppSettings](~/../botbuilder-samples/samples/csharp_dotnetcore/14.nlp-with-orchestrator/AppSettings.json?range=8-17)]
+[!code-json[AppSettings](~/../botbuilder-samples/samples/csharp_dotnetcore/14.nlp-with-orchestrator/AppSettings.json)]
 
 For each of the entities shown below, add the values you recorded earlier in these instructions:
 
 ```json
-"MicrosoftAppId": "",
-"MicrosoftAppPassword": "",
-
 "QnAKnowledgebaseId": "<knowledge-base-id>",
 "QnAEndpointKey": "<qna-maker-resource-key>",
 "QnAEndpointHostName": "<your-hostname>",
 
-"LuisAppId": "<app-id-for-dispatch-app>",
+"LuisHomeAutomationAppId": "<app-id-for-home-automation-app>",
+"LuisWeatherAppId": "<app-id-for-weather-app>",
 "LuisAPIKey": "<your-luis-endpoint-key>",
 "LuisAPIHostName": "<your-dispatch-app-region>",
 ```
@@ -167,19 +166,17 @@ npm install
 Once all of your service apps are created, the information for each needs to be added into your '.env' file. The initial [JavaScript Sample][js-sample] code contains an empty .env file.
 
 **.env**
-[!code-file[EmptyEnv](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-orchestrator/.env?range=1-10)]
+[!code-file[EmptyEnv](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-orchestrator/.env)]
 
 Add your service connection values as shown below:
 
 ```text
-MicrosoftAppId=""
-MicrosoftAppPassword=""
-
 QnAKnowledgebaseId="<knowledge-base-id>"
 QnAEndpointKey="<qna-maker-resource-key>"
 QnAEndpointHostName="<your-hostname>"
 
-LuisAppId=<app-id-for-dispatch-app>
+WeatherLuisAppId=<app-id-for-weather-app>
+HomeAutomationLuisAppId=<app-id-for-home-automation-app>
 LuisAPIKey=<your-luis-endpoint-key>
 LuisAPIHostName=<your-dispatch-app-region>
 ```
@@ -198,7 +195,7 @@ In **BotServices.cs**, the information contained within configuration file _apps
 
 **BotServices.cs**
 
-[!code-csharp[ReadConfigurationInfo](~/../botbuilder-samples/samples/csharp_dotnetcore/14.nlp-with-orchestrator/BotServices.cs?range=10-47)]
+[!code-csharp[ReadConfigurationInfo](~/../botbuilder-samples/samples/csharp_dotnetcore/14.nlp-with-orchestrator/BotServices.cs?range=11-60)]
 
 ## [JavaScript](#tab/js)
 
@@ -206,7 +203,7 @@ In **dispatchBot.js** the information contained within configuration file _.env_
 
 **bots/dispatchBot.js**
 
-[!code-javascript[ReadConfigurationInfo](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-orchestrator/bots/dispatchBot.js?range=11-26)]
+[!code-javascript[ReadConfigurationInfo](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-orchestrator/bots/dispatchBot.js?range=13-40)]
 
 ---
 
@@ -216,17 +213,17 @@ For each input  from your user, the bot logic passes in user input to Orchestrat
 
 ## [C#](#tab/cs)
 
-In the **DispatchBot.cs** file whenever the `OnMessageActivityAsync` method is called, we check the incoming user message and get the top intent from Orchestrator Recognizer. We then pass the topIntent` and  `recognizerResult` on to the correct method to call the service and return the result.
+In the **DispatchBot.cs** file whenever the `OnMessageActivityAsync` method is called, we check the incoming user message and get the top intent from Orchestrator Recognizer. We then pass the `topIntent` and  `recognizerResult` on to the correct method to call the service and return the result.
 
 **bots\DispatchBot.cs**
 
-[!code-csharp[OnMessageActivity](~/../botbuilder-samples/samples/csharp_dotnetcore/14.nlp-with-orchestrator/bots/DispatchBot.cs?range=26-36)]
+[!code-csharp[OnMessageActivity](~/../botbuilder-samples/samples/csharp_dotnetcore/14.nlp-with-orchestrator/bots/DispatchBot.cs?range=27-36)]
 
 ## [JavaScript](#tab/js)
 
 In the **dispatchBot.js** `onMessage` method, we check the incoming user message and get the top intent from Orchestrator Recognizer.  We then pass this on by calling _dispatchToTopIntentAsync_.
 
-[!code-javascript[onMessage](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-orchestrator/bots/dispatchBot.js?range=31-44)]
+[!code-javascript[onMessage](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-orchestrator/bots/dispatchBot.js?range=47-62)]
 
 ---
 
@@ -238,7 +235,7 @@ When the Orchestrator recognizer produces a result, it indicates which service c
 
 **bots\DispatchBot.cs**
 
-[!code-csharp[DispatchToTop](~/../botbuilder-samples/samples/csharp_dotnetcore/14.nlp-with-orchestrator/bots/DispatchBot.cs?range=51-69)]
+[!code-csharp[DispatchToTopIntentAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/14.nlp-with-orchestrator/bots/DispatchBot.cs?range=51-69)]
 
 The `ProcessHomeAutomationAsync` and `ProcessWeatherAsync` methods use the user input contained within the turn context to to get the top intent and entities from the correct LUIS model.
 
@@ -249,7 +246,7 @@ The `ProcessSampleQnAAsync` method uses the user input contained within the turn
 When the Orchestrator recognizer produces a result, it indicates which service can most appropriately process the utterance. The code in this sample uses the recognized _topIntent_ to show how to route the request on to the corresponding service.
 
 **bots/dispatchBot.js**
-[!code-javascript[dispatchToTopIntentAsync](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-orchestrator/bots/dispatchBot.js?range=61-77)]
+[!code-javascript[dispatchToTopIntentAsync](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-orchestrator/bots/dispatchBot.js?range=79-95)]
 
 The `processHomeAutomation` and `processWeather` methods use the user input contained within the turn context to to get the top intent and entities from the correct LUIS model.
 

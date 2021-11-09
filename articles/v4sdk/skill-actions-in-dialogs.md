@@ -3,11 +3,12 @@ title: Use dialogs within a skill
 description: Learn how to use dialogs within a skill to support multiple actions, using the Bot Framework SDK.
 keywords: skills
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 10/28/2021
+ms.date: 11/08/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -85,7 +86,7 @@ Optionally, the skill bot can use a flight-booking LUIS model. To use this model
 
 **dialogSkillBot/.env**
 
-[!code-javascript[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogSkillBot/.env?highlight=1-2)]
+[!code-javascript[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogSkillBot/.env?highlight=2-3)]
 
 ### [Java](#tab/java)
 
@@ -193,7 +194,7 @@ If the skill doesn't recognize the type of the incoming activity or the name of 
 
 [!code-python[process_activity](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-skill-bot/dialogs/activity_router_dialog.py?range=38-61)]
 
-[!code-python[_on_event_activity](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-skill-bot/dialogs/activity_router_dialog.py?range=63-82)]
+[!code-python[_on_event_activity](~/../botbuilder-samples/samples/python/81.skills-skilldialog/dialog-skill-bot/dialogs/activity_router_dialog.py?range=63-86)]
 
 ---
 

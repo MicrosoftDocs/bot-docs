@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/02/2021
+ms.date: 11/08/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -141,7 +141,7 @@ This sample reads information for each skill in the configuration file into a co
 
 **DialogRootBot\SkillsConfiguration.java**
 
-[!code-java[skills configuration](~/../botbuilder-samples/samples/java_springboot/80.skills-simple-bot-to-bot/DialogRootBot/src/main/java/com/microsoft/bot/sample/simplerootbot/SkillsConfiguration.java?range=19-61)]
+[!code-java[skills configuration](~/../botbuilder-samples/samples/java_springboot/80.skills-simple-bot-to-bot/DialogRootBot/src/main/java/com/microsoft/bot/sample/simplerootbot/SkillsConfiguration.java?range=19-77)]
 
 ### [Python](#tab/python)
 
@@ -199,13 +199,17 @@ The handler uses the conversation ID factory, the authentication configuration, 
 
 **SimpleRootBot\Startup.cs**
 
-[!code-csharp[skill ID factory, client, and handler](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/Startup.cs?range=39-42)]
+[!code-csharp[skill ID factory, client, and handler](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/Startup.cs?range=42-45)]
 
 ### [JavaScript](#tab/js)
 
 **simple-root-bot/index.js**
 
-[!code-javascript[skill ID factory, credential provider, client, and handler](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=113,119,122,147-148)]
+[!code-javascript[Authentication configuration](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=39-72)]
+
+[!code-javascript[Conversation ID factory and skill client](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=157-161)]
+
+[!code-javascript[Cloud skill handler](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=184)]
 
 ### [Java](#tab/java)
 
@@ -263,15 +267,17 @@ Of note, the root bot includes logic for forwarding activities to the skill, sta
 The root bot has dependencies on conversation state, the skills information, and the skill client.
 The root bot also defines a conversation state property accessor to track which skill is active.
 
-[!code-javascript[Root bot dependencies](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/rootBot.js?range=7-24)]
+[!code-javascript[Root bot dependencies](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/rootBot.js?range=7-17)]
+
+[!code-javascript[Property accessor](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/rootBot.js?range=25-26)]
 
 This sample has a helper method for forwarding activities to a skill. It saves conversation state before invoking the skill, and it checks whether the HTTP request was successful.
 
-[!code-javascript[Send to skill](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/rootBot.js?range=111-123)]
+[!code-javascript[Send to skill](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/rootBot.js?range=113-133)]
 
 Of note, the root bot includes logic for forwarding activities to the skill, starting the skill at the user's request, and stopping the skill when the skill completes.
 
-[!code-javascript[onMessage, onEndOfConversation](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/rootBot.js?range=44-86)]
+[!code-javascript[onMessage, onEndOfConversation](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/rootBot.js?range=45-88)]
 
 ### [Java](#tab/java)
 
@@ -321,13 +327,13 @@ It's a good practice to send an _end of conversation_ activity to any active ski
 
 In this sample, the turn error logic is split up among a few helper methods.
 
-[!code-csharp[On turn error](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/AdapterWithErrorHandler.cs?range=40-120)]
+[!code-csharp[On turn error](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/AdapterWithErrorHandler.cs?range=39-119)]
 
 ### [JavaScript](#tab/js)
 
 **simple-root-bot/index.js**
 
-[!code-javascript[On turn error](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=34-101)]
+[!code-javascript[Adapter and on turn error](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=74-146)]
 
 ### [Java](#tab/java)
 
@@ -359,7 +365,7 @@ The bot defines an endpoint that forwards incoming skill activities to the root 
 
 **simple-root-bot/index.js**
 
-[!code-javascript[skill endpoint](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=149-150)]
+[!code-javascript[skill endpoint](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=184-186)]
 
 ### [Java](#tab/java)
 
@@ -384,15 +390,15 @@ This sample uses the same authentication configuration logic for validating acti
 
 **SimpleRootBot\Startup.cs**
 
-[!code-csharp[ConfigureServices](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/Startup.cs?range=20-52)]
+[!code-csharp[ConfigureServices](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/Startup.cs?range=20-55)]
 
 ### [JavaScript](#tab/js)
 
 **simple-root-bot/index.js**
 
-[!code-javascript[services](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=27-31)]
+[!code-javascript[Memory and state](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=151-155)]
 
-[!code-javascript[services](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=109-144)]
+[!code-javascript[Bot and server](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=163-182)]
 
 ### [Java](#tab/java)
 

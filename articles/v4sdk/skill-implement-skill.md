@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/02/2021
+ms.date: 11/08/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -235,7 +235,7 @@ When an error occurs, the skill's adapter should clear conversation state for th
 
 **EchoSkillBot\SkillAdapterWithErrorHandler.cs**
 
-[!code-csharp[Error handler](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/SkillAdapterWithErrorHandler.cs?range=20-75)]
+[!code-csharp[Error handler](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/SkillAdapterWithErrorHandler.cs?range=26-74)]
 
 ### [JavaScript](#tab/javascript)
 
@@ -267,7 +267,7 @@ This sample adds claims validation to the authentication configuration and uses 
 
 **EchoSkillBot\Startup.cs**
 
-[!code-csharp[Configure authentication configuration and adapter](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/Startup.cs?range=28-35)]
+[!code-csharp[Configure authentication configuration and adapter](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/Startup.cs?range=28-37)]
 
 ### [JavaScript](#tab/javascript)
 

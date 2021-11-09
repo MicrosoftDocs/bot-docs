@@ -2,12 +2,13 @@
 title: Send proactive notifications to users - Azure Bot Service
 description: Learn how bots send notification messages. See how to retrieve conversation references and test proactive messages. View code samples and design considerations.
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
+ms.date: 11/08/2021
 ms.custom: abs-meta-21q1
-ms.date: 10/18/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -125,7 +126,7 @@ Each time the server's `/api/notify` page is requested, the server retrieves the
 The server then uses the `continueConversation` method to send the proactive message.
 The parameter to `continueConversation` is a function that serves as the bot's turn handler for this turn.
 
-[!code-javascript[Notify logic](~/../botbuilder-samples/samples/javascript_nodejs/16.proactive-messages/index.js?range=70-82&highlight=4-6)]
+[!code-javascript[Notify logic](~/../botbuilder-samples/samples/javascript_nodejs/16.proactive-messages/index.js?range=80-92&highlight=4-6)]
 
 # [Java](#tab/java)
 
@@ -135,7 +136,6 @@ Each time the bot's notify page is requested, the notify controller retrieves th
 The controller then uses the `continueConversation` method to send the proactive message.
 
 [!code-java[Notify logic](~/../botbuilder-samples/samples/java_springboot/16.proactive-messages/src/main/java/com/microsoft/bot/sample/proactive/NotifyController.java?range=26-64&highlight=28-30)]
-
 
 # [Python](#tab/python)
 
@@ -152,7 +152,7 @@ To send a proactive message, the adapter requires an app ID for the bot. In a pr
 
 1. If you have not done so already, install the [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md).
 1. Run the sample locally on your machine.
-2. Start the Emulator and connect to your bot.
+1. Start the Emulator and connect to your bot.
 1. Load to your bot's api/notify page. This will generate a proactive message in the Emulator.
 
 ## Additional information
@@ -178,7 +178,7 @@ To handle notifications more smoothly, consider other ways to integrate the noti
 The _continue conversation_ method uses the conversation reference and a turn callback handler to:
 
 1. Create a turn in which the bot application can send the proactive message. The adapter creates an `event` activity for this turn, with its name set to "ContinueConversation".
-2. Send the turn through the adapter's middleware pipeline.
+1. Send the turn through the adapter's middleware pipeline.
 1. Call the turn callback handler to perform custom logic.
 
 In the **proactive messages** sample, the turn callback handler is defined in the notify controller and sends the message directly to the conversation, without sending the proactive activity through the bot's normal turn handler.
