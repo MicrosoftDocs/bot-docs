@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 11/08/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -102,7 +102,7 @@ The user state object is created at startup and dependency injected into the bot
 At startup, user state is defined in `index.js` and consumed by the bot constructor.
 
 **index.js**
-[!code-javascript[define state](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/index.js?range=53-57)]
+[!code-javascript[define state](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/index.js?range=62-69)]
 
 ### [Java](#tab/java)
 

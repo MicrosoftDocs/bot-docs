@@ -2,12 +2,13 @@
 title: Add authentication to a bot in Bot Framework SDK
 description: Learn how to add user's authentication to your bot using Azure authentication.
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
+ms.date: 11/05/2021
 ms.custom: abs-meta-21q1
-ms.date: 10/21/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -468,7 +469,7 @@ It is best practice to let users explicitly sign out, instead of relying on the 
 
 **dialogs/logoutDialog.js**
 
-[!code-javascript[Allow sign out](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/dialogs/logoutDialog.js?range=31-42&highlight=7)]
+[!code-javascript[Allow sign out](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/dialogs/logoutDialog.js?range=31-43&highlight=8)]
 
 # [Java](#tab/java)
 

@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 11/08/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -280,7 +280,7 @@ Register services for the bot in `Startup`. These services are available to othe
 
 Register services for the bot in `index.js`.
 
-[!code-javascript[overrides](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/index.js?range=19-60)]
+[!code-javascript[Create adapter, memory, state, dialog, and bot](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/index.js?range=35-73)]
 
 # [Java](#tab/java)
 
