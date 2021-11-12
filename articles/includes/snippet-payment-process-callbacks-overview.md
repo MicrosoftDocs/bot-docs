@@ -1,1 +1,0 @@
-When your bot receives a callback, it should verify that the information specified in the callback is valid and acknowledge the callback by sending an HTTP response. 

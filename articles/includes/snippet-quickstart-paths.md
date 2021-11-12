@@ -1,1 +1,0 @@
-Creating a bot with Azure Bot Service and creating a bot locally are independent, parallel ways to create a bot.
