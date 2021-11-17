@@ -162,9 +162,7 @@ The conversation ID factory for this sample supports a simple scenario where:
 
 ### [C#](#tab/cs)
 
-**SimpleRootBot\SkillConversationIdFactory.cs**
-
-[!code-csharp[Conversation ID factory](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/SkillConversationIdFactory.cs?range=17-44)]
+The SDK provides a `SkillConversationIdFactory` class that can be used across any skill without requiring the source code to be replicated. The conversation ID factory is configured in **Startup.cs**.
 
 ### [JavaScript](#tab/js)
 
