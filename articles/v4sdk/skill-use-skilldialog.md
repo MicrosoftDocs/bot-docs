@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/08/2021
+ms.date: 11/17/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -28,9 +28,6 @@ For information about using a skill bot outside of dialogs, see how to [implemen
 - Knowledge of [bot basics](bot-builder-basics.md), [how skills bots work](skills-conceptual.md), and how to [implement a skill consumer](skill-implement-consumer.md).
 - Optionally, an Azure subscription. If you don't have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 - A copy of the **skills skillDialog** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/81.skills-skilldialog#readme), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/81.skills-skilldialog#readme), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/81.skills-skilldialog#readme) or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/81.skills-skilldialog#readme).
-
-> [!NOTE]
-> Starting with version 4.11, you do not need an app ID and password to test a skill consumer locally in the Emulator. An Azure subscription is still required to deploy your consumer to Azure or to consume a deployed skill.
 
 ## About this sample
 
@@ -68,36 +65,36 @@ For information about the dialog skill bot, see how to [use dialogs within a ski
 
 ## Resources
 
-For deployed bots, bot-to-bot authentication requires that each participating bot has a valid app ID and password.
-However, you can test skills and skill consumers locally with the Emulator without an app ID and password.
+For deployed bots, bot-to-bot authentication requires that each participating bot has a valid identity.
+However, you can test skills and skill consumers locally with the Emulator without identity information.
 
 ## Application configuration
 
-1. Optionally, add the root bot's app ID and password to the config file.
+1. Optionally, add the root bot's identity information to the config file.
 1. Add the skill host endpoint (the service or callback URL) to which the skills should reply to the skill consumer.
 1. Add an entry for each skill the skill consumer will use. Each entry includes:
    - An ID the skill consumer will use to identify each skill.
-   - Optionally, the skill's app ID.
+   - Optionally, the skill bot's app or client ID.
    - The skill's messaging endpoint.
 
 > [!NOTE]
-> If either the skill or skill consumer uses an app ID and password, both must.
+> If either the skill or skill consumer specifies an identity, both must.
 
 ### [C#](#tab/cs)
 
 **DialogRootBot\appsettings.json**
 
-Optionally, add the root bot's app ID and password and add the app ID for the echo skill bot to the `BotFrameworkSkills` array.
+Optionally, add the root bot's identity information and add the app or client ID for the echo skill bot to the `BotFrameworkSkills` array.
 
-[!code-json[configuration file](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/appsettings.json?highlight=2-3,9)]
+[!code-json[configuration file](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/appsettings.json?highlight=2-5,11)]
 
 ### [JavaScript](#tab/js)
 
 **dialogRootBot/.env**
 
-Optionally, add the root bot's app ID and password and add the app ID for the echo skill bot.
+Optionally, add the root bot's identity information and add the app or client ID for the echo skill bot.
 
-[!code-javascript[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/.env?highlight=2-3,8)]
+[!code-javascript[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/.env?highlight=1-4,8)]
 
 ### [Java](#tab/java)
 
@@ -153,20 +150,20 @@ The waterfall includes the following steps, described in more detail in the next
 **DialogRootBot\Dialogs\MainDialog.cs**
 
 The `MainDialog` class derives from `ComponentDialog`.
-In addition to conversation state, the dialog needs the root bot's app ID and references to the skill conversation ID factory, the skill HTTP client, and the skills configuration objects.
+In addition to conversation state, the dialog needs the root bot's identity and references to the skill conversation ID factory, the skill HTTP client, and the skills configuration objects.
 
 The dialog constructor checks its input parameters, adds skill dialogs, adds prompt and waterfall dialogs for managing conversation flow outside the skill, and creates a property accessor for tracking the active skill, if any.
 
 The constructor calls `AddSkillDialogs`, a helper method, to create a `SkillDialog` for each skill that is included in the configuration file, as read from the configuration file into a `SkillsConfiguration` object.
 
-[!code-csharp[AddSkillDialogs](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=200-219&highlight=18)]
+[!code-csharp[AddSkillDialogs](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=196-215&highlight=18)]
 
 #### [JavaScript](#tab/js)
 
 **dialogRootBot/dialogs/mainDialog.js**
 
 The `MainDialog` class derives from `ComponentDialog`.
-In addition to conversation state, the dialog needs the root bot's app ID and references to the skill conversation ID factory, the skill HTTP client, and the skills configuration objects. The code retrieves the bot's app ID from the user environment.
+In addition to conversation state, the dialog needs the root bot's identity and references to the skill conversation ID factory, the skill HTTP client, and the skills configuration objects. The code retrieves the bot's identity from the user environment.
 
 The dialog constructor checks its input parameters, adds skills dialogs, adds prompt and waterfall dialogs for managing conversation flow outside the skill, and creates a property accessor for tracking the active skill, if any.
 
@@ -210,7 +207,7 @@ In its first step, the main dialog prompts the user for which skill they'd like 
 
 **DialogRootBot\Dialogs\MainDialog.cs**
 
-[!code-csharp[SelectSkillStepAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=99-114&highlight=15)]
+[!code-csharp[SelectSkillStepAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=95-110&highlight=15)]
 
 #### [JavaScript](#tab/js)
 
@@ -247,7 +244,7 @@ The choices included in this bot help test the actions defined for this skill. M
 
 **DialogRootBot\Dialogs\MainDialog.cs**
 
-[!code-csharp[SelectSkillActionStepAsync, GetSkillActions, SkillActionPromptValidator](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=116-136,221-238,137-148)]
+[!code-csharp[SelectSkillActionStepAsync, GetSkillActions, SkillActionPromptValidator](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=112-132,217-234,134-144)]
 
 #### [JavaScript](#tab/js)
 
@@ -287,7 +284,7 @@ In the next step, the main dialog:
 
 **DialogRootBot\Dialogs\MainDialog.cs**
 
-[!code-csharp[CallSkillActionStepAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=150-175&highlight=10,19,25)]
+[!code-csharp[CallSkillActionStepAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=146-171&highlight=10,19,25)]
 
 #### [JavaScript](#tab/js)
 
@@ -322,7 +319,7 @@ In the last step, the main dialog:
 
 **DialogRootBot\Dialogs\MainDialog.cs**
 
-[!code-csharp[FinalStepAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=177-198&highlight=9-11)]
+[!code-csharp[FinalStepAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=173-194&highlight=9-11)]
 
 #### [JavaScript](#tab/js)
 
@@ -355,7 +352,7 @@ The main dialog overrides the default behavior of the _on continue dialog_ metho
 
 **DialogRootBot\Dialogs\MainDialog.cs**
 
-[!code-csharp[OnContinueDialogAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=82-97)]
+[!code-csharp[OnContinueDialogAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogRootBot/Dialogs/MainDialog.cs?range=78-93)]
 
 #### [JavaScript](#tab/js)
 
