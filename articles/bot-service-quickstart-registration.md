@@ -2,12 +2,13 @@
 title: Register a Bot Framework SDK bot with Azure
 description: Learn how to register a bot when you develop and host it in Azure.
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
+ms.date: 11/19/2021
 ms.custom: abs-meta-21q1
-ms.date: 10/19/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
