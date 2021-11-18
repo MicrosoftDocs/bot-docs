@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/08/2021
+ms.date: 11/17/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -27,9 +27,6 @@ For how to create a skill bot in general, see how to [implement a skill](skill-i
 - An Azure subscription (to deploy your skill). If you don't have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 - Optionally, a [LUIS](https://www.luis.ai/) account. (For more information, see how to [add natural language understanding to your bot](bot-builder-howto-v4-luis.md).)
 - A copy of the **skills skillDialog** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/81.skills-skilldialog#readme), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/81.skills-skilldialog#readme), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/81.skills-skilldialog#readme), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/81.skills-skilldialog#readme).
-
-> [!NOTE]
-> Starting with version 4.11, you do not need an app ID and password to test a skill locally in the Emulator. An Azure subscription is still required to deploy your skill to Azure.
 
 ## About this sample
 
@@ -62,8 +59,8 @@ For information about the skill consumer bot, see how to [consume a skill using 
 
 ## Resources
 
-For deployed bots, bot-to-bot authentication requires that each participating bot has a valid app ID and password.
-However, you can test skills and skill consumers locally with the Emulator without an app ID and password.
+For deployed bots, bot-to-bot authentication requires that each participating bot has a valid identity.
+However, you can test skills and skill consumers locally with the Emulator without identity information.
 
 To make the skill available to user-facing bots, register the skill with Azure. For more information, see how to [register a bot with Azure Bot Service](../bot-service-quickstart-registration.md).
 
@@ -71,8 +68,8 @@ Optionally, the skill bot can use a flight-booking LUIS model. To use this model
 
 ## Application configuration
 
-1. Optionally, add the skill's app ID and password to the skill's configuration file.
-   (If either the skill or skill consumer uses an app ID and password, both must.)
+1. Optionally, add the skill's identity information to the skill's configuration file.
+   (If either the skill or skill consumer specifies an identity, both must.)
 
 1. If you're using the LUIS model, Add the LUIS app ID, API key, and API host name.
 
@@ -80,13 +77,13 @@ Optionally, the skill bot can use a flight-booking LUIS model. To use this model
 
 **DialogSkillBot\appsettings.json**
 
-[!code-json[configuration file](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogSkillBot/appsettings.json?highlight=2-3)]
+[!code-json[configuration file](~/../botbuilder-samples/samples/csharp_dotnetcore/81.skills-skilldialog/DialogSkillBot/appsettings.json)]
 
 ### [JavaScript](#tab/js)
 
 **dialogSkillBot/.env**
 
-[!code-javascript[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogSkillBot/.env?highlight=2-3)]
+[!code-javascript[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogSkillBot/.env)]
 
 ### [Java](#tab/java)
 
