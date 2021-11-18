@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 11/15/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -31,7 +31,7 @@ The interaction between users and bots is often free-form, and bots need to unde
 
 For example, consider the many ways a user of a travel bot can ask to book a flight.
 
-![Various differently formed utterances for book a flight](media/cognitive-services-add-bot-language/cognitive-services-luis-utterances.png)
+:::image type="content" source="media/cognitive-services-add-bot-language/cognitive-services-luis-utterances.png" alt-text="Various differently formed utterances for book a flight":::
 
 These utterances can have different structures and contain various synonyms for "flight" that you haven't thought of. In your bot, it can be challenging to write the logic that matches all the utterances, and still distinguishes them from other intents that contain the same words. Additionally, your bot needs to extract *entities*, which are other important words like locations and times. LUIS makes this process easy by contextually identifying intents and entities for you.
 
@@ -39,7 +39,7 @@ When you design your bot for natural language input, you determine what intents 
 
 Your bot uses the intent recognized by LUIS to determine the conversation topic, or begin a conversation flow. For example, when a user says "I'd like to book a flight", your bot detects the BookFlight intent and invokes the conversation flow for starting a search for flights. LUIS detects entities like the destination city and the departure date, both in the original utterance that triggers the intent and later in the conversation flow. Once the bot has all the information it needs, it can fulfill the user's intent.
 
-![A conversation with a bot is triggered by the BookFlight intent](media/cognitive-services-add-bot-language/cognitive-services-luis-conversation-high-level.png)
+:::image type="content" source="media/cognitive-services-add-bot-language/cognitive-services-luis-conversation-high-level.png" alt-text="A conversation with a bot is triggered by the BookFlight intent.":::
 
 ### Recognize intent in common scenarios
 
@@ -53,7 +53,7 @@ To save development time, LUIS provides pre-trained language models that recogni
 
 Once you have set up and connected LUIS, your bot can send the message to your LUIS app, which returns a JSON response that contains the intents and entities. Then, you can use the [turn context](bot-builder-basics.md#the-turn-context) in your bot's _turn handler_ to route the conversation flow based on the intent in the LUIS response.
 
-![How intents and entities are passed to your bot](./media/cognitive-services-add-bot-language/cognitive-services-luis-message-flow-bot-code.png)
+:::image type="content" source="./media/cognitive-services-add-bot-language/cognitive-services-luis-message-flow-bot-code.png" alt-text="How intents and entities are passed to your bot":::
 
 To get started using a LUIS app with your bot, check out [using LUIS for language understanding](bot-builder-howto-v4-luis.md).
 
@@ -77,7 +77,7 @@ The `None` intent is very useful for improving recognition results. In this home
 
 ### Review the utterances that LUIS app receives
 
-LUIS apps provide a feature for improving your app performance, by reviewing messages that users sent to it. See [suggested utterances](/azure/cognitive-services/LUIS/label-suggested-utterances) for a step-by-step walkthrough.
+LUIS apps provide a feature for improving your app performance, by reviewing messages that users sent to it. See [suggested utterances](/azure/cognitive-services/LUIS/label-suggested-utterances) for a step-by-step walk through.
 
 ## Integrate multiple LUIS apps and QnA services with Orchestrator
 
