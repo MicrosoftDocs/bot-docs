@@ -1,3 +1,13 @@
+---
+description: Use Azure CLI to select the Azure subscription to use.
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: include
+ms.date: 11/19/2021
+---
+
 Set the default subscription to use.
 
 ```azurecli

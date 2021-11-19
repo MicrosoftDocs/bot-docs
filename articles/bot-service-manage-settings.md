@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 11/19/2021
 ---
 
 # Configure bot registration settings
@@ -50,41 +50,7 @@ Below is the list of the **Configuration** fields:
 
 To save your changes, select **Apply** at the bottom of the blade.
 
-## Application ID and password
-
-The Azure Bot resource application ID and password are assigned to the bot's variables `MicrosoftAppID` and `MicrosoftAppPassword` contained in your bot project configuration file. The file differs depending on the programming language you use to create the bot, as shown in the table below.
-
-| Language   | File Name                |
-|------------|--------------------------|
-| C#         | `appsettings.json`       |
-| Java       | `application.properties` |
-| JavaScript | `.env`                   |
-| Python     | `config.py`              |
-
-> [!NOTE]
-> The bot resource has an application ID, but because there is no app service associated with it, there is no password. To generate the password follow the steps in the next section. <!-- If you create your bot in Composer and then provision and publish it, Composer takes care of this for you. -->
-
-### Get registration password
-
-An Azure Bot resource has an **application ID** (app ID) and a **password** associated with it.
-The Azure Bot Service assigns a unique application ID to the application. You can obtain the password following the steps described below.
-
-1. In your browser, navigate to the [Azure portal](https://ms.portal.azure.com).
-1. In the resource list, click on the registration application name.
-1. In the right panel go to the *Bot Management* section and click **Settings**. The registration application *Settings* page will display.
-1. Select the **Manage** link next to *Microsoft App ID*.
-
-    :::image type="content" source="media/bot-service-portal-configure-settings/bot-service-settings-manage.png" alt-text="Link to use to open the certificates and secrets pane":::
-
-1. In the **Certificates & secrets** pane, click the **New client secret** button.
-
-    :::image type="content" source="media/azure-bot-quickstarts/bot-channels-registration-app-secrets.png" alt-text="bot registration app secrets":::
-
-1. Add the description, select the expiration time, and click the **Add** button.
-
-    :::image type="content" source="media/azure-bot-quickstarts/bot-channels-registration-app-secrets-create.png" alt-text="bot registration create password":::
-
-    This will generate a new password for your bot. Copy this password and save it to a file. This is the only time you will see this password. If you do not have the full password saved, you will need to repeat the process to create a new password should you need it later.
+[!INCLUDE [app ID and password](includes/authentication/azure-bot-appid-password.md)]
 
 ## Additional Information
 

@@ -2,13 +2,14 @@
 title: Deploy your bot - Azure Bot Service
 description: Learn how to deploy bots to the Azure cloud. See how to prepare bots for deployment, deploy the code to the Azure Web App, and test bots in Web Chat.
 keywords: deploy bot, Azure deploy bot, publish bot
-author: kamrani
-ms.author: kamrani
-manager: kamrani
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
+ms.date: 11/19/2021
 ms.custom: abs-meta-21q1
-ms.date: 10/04/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -57,7 +58,6 @@ When creating the bot application service, you can deploy your bot in a new or i
 
 ### Deploy via ARM template with new resource group
 
-<!-- ##### Create Azure resources -->
 [!INCLUDE [ARM with new resource group](includes/deploy/snippet-ARM-new-resource-group.md)]
 
 ### Deploy via ARM template with existing resource group
@@ -66,49 +66,7 @@ When creating the bot application service, you can deploy your bot in a new or i
 
 ## Prepare your code for deployment
 
-### Assign app ID and password
-
-Add the app ID and password for the Azure Bot resource to your bot project configuration file.
-
-### [C#](#tab/csharp)
-
-The `appsettings.json` file contains these settings:
-
-```json
-{
-  "MicrosoftAppId": "<your app ID>",
-  "MicrosoftAppPassword": "<your password>"
-}
-```
-
-### [JavaScript / TypeScript](#tab/javascript+typescript)
-
-The `.env` file contains these settings:
-
-```javascript
-MicrosoftAppId="<your app ID>"
-MicrosoftAppPassword="<your password>"
-```
-
-### [Java](#tab/java)
-
-The `application.properties` file contains these settings:
-
-```java
-MicrosoftAppId="<your app ID>"
-MicrosoftAppPassword="<your password>"
-```
-
-### [Python](#tab/python)
-
-The `config.py` file contains these settings:
-
-```python
-APP_ID = os.environ.get("MicrosoftAppId", "<your app ID>")
-APP_PASSWORD = os.environ.get("MicrosoftAppPassword", "<your password>")
-```
-
----
+[!INCLUDE [azure-bot-appid-password](includes/authentication/azure-bot-appid-password.md)]
 
 >[!IMPORTANT]
 > After you have updated the configuration file, make sure to clean and rebuild the bot project.
