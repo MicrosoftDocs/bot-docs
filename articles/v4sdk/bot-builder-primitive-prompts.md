@@ -3,11 +3,12 @@ title: Create your own prompts to gather user input in Bot Framework SDK
 description: Learn how to manage a conversation flow with primitive prompts in the Bot Framework SDK.
 keywords: conversation flow, prompts, conversation state, user state, custom prompts
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 10/06/2021
+ms.date: 11/18/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -75,7 +76,7 @@ You use the bot's message turn handler plus user and conversation state properti
 Create the user and conversation state objects at startup and consume them via dependency injection in the bot constructor.
 
 **Startup.cs**
-[!code-csharp[Startup.cs](~/../botbuilder-samples/samples/csharp_dotnetcore/44.prompt-users-for-input/Startup.cs?range=23-30)]
+[!code-csharp[Memory, state, and bot](~/../botbuilder-samples/samples/csharp_dotnetcore/44.prompt-users-for-input/Startup.cs?range=27-37)]
 
 **Bots/CustomPromptBot.cs**
 [!code-csharp[constructor](~/../botbuilder-samples/samples/csharp_dotnetcore/44.prompt-users-for-input/Bots/CustomPromptBot.cs?range=21-28)]

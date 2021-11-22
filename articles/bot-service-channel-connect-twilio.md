@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 11/18/2021
 ---
 
 # Connect a bot to Twilio
@@ -115,7 +115,7 @@ Create a new controller to handle requests from Twilio, on a new endpoint `api/t
 
 In `Startup.cs`, add your Twilio adapter as a service in the `ConfigureServices` method. For example:
 
-[!code-csharp[Configure adapter in startup](~/../botbuilder-samples/samples/csharp_dotnetcore/63.twilio-adapter/Startup.cs?range=19-31&highlight=9)]
+[!code-csharp[TwilioAdapterWithErrorHandler](~/../botbuilder-samples/samples/csharp_dotnetcore/63.twilio-adapter/Startup.cs?range=30-31)]
 
 #### Obtain a URL for your bot
 
