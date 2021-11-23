@@ -2,12 +2,13 @@
 title: Bot Framework SDK Migration overview - Bot Service
 description: See how to migrate bots from version 3 to 4 of the Bot Framework SDK. Learn about changes in version 4 in state management, dialogs, and other areas.
 keywords: bot migration
-author:  mmiele
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: conceptual
 ms.service: bot-service
-ms.date: 08/05/2021
+ms.date: 11/02/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -216,7 +217,7 @@ The following are code samples you can use to learn the Bot Framework SDK V4 or 
 
 | Samples | Description |
 | :--- | :--- |
-| [Bot Framework Migration from V3 to V4 Samples](https://github.com/microsoft/BotBuilder-Samples/tree/master/MigrationV3V4) <img width="200">| Migration samples from Bot Framework V3 SDK to V4 SDK |
+| [Bot Framework Migration from V3 to V4 Samples](https://github.com/microsoft/BotBuilder-Samples/tree/master/MigrationV3V4) | Migration samples from Bot Framework V3 SDK to V4 SDK |
 | [Bot Builder .NET Samples](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore) | Bot builder C# .NET core samples |
 | [Bot Builder JavaScript Samples](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs) | Bot builder JavaScript (node.js) samples |
 | [Bot Builder All Samples](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples) | Bot builder all samples |

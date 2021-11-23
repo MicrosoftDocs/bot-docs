@@ -2,8 +2,9 @@
 title: Send media attachments with the Bot Framework SDK
 description: Learn how to add images, video, audio, files, and other media attachments to messages sent using the Bot Framework SDK. 
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
 ms.date: 09/01/2021
@@ -22,7 +23,7 @@ Messages exchanged between user and bot can contain media attachments, such as i
 - Knowledge of [bot basics](bot-builder-basics.md).
 - The code in this article is based on the following samples:
   - **Using cards**: [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/06.using-cards), [JavaScript](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/06.using-cards), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/06.using-cards), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/06.using-cards)
-  - **Handling attachments**: [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/15.handling-attachments), [JavaScript](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/15.handling-attachments-js), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/15.handling-attachments), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/15.handling-attachments)
+  - **Handling attachments**: [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/15.handling-attachments), [JavaScript](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/15.handling-attachments-js), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/15.handling-attachments), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/15.handling-attachments)
   - **Suggested actions**: [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/08.suggested-actions), [JavaScript](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/08.suggested-actions), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/08.suggested-actions), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/08.suggested-actions)
 
 ## Send attachments

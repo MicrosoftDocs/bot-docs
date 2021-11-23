@@ -1,24 +1,25 @@
 ---
 title: Key concepts in the Bot Framework Direct Line API 1.1  - Bot Service
 description: Learn about version 1.1 of the Bot Framework Direct Line API. View information on authentication, starting conversations, messages, and developer resources. 
-author: RobStand
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: conceptual
 ms.service: bot-service
-ms.date: 12/13/2017
+ms.date: 11/01/2021
 ---
 
 # Key concepts in Direct Line API 1.1
 
-You can enable communication between your bot and your own client application by using the Direct Line API. 
+You can enable communication between your bot and your own client application by using the Direct Line API.
 
 > [!IMPORTANT]
 > This article introduces key concepts in Direct Line API 1.1 and provides information about relevant developer resources. If you are creating a new connection between your client application and bot, use [Direct Line API 3.0](bot-framework-rest-direct-line-3-0-concepts.md) instead.
 
 ## Authentication
 
-Direct Line API 1.1 requests can be authenticated either by using a **secret** that you obtain from the Direct Line channel configuration page in the [Azure Portal](https://portal.azure.com) or by using a **token** that you obtain at runtime.  For more information, see [Authentication](bot-framework-rest-direct-line-1-1-authentication.md).
+Direct Line API 1.1 requests can be authenticated either by using a *secret* that you obtain from the Direct Line channel configuration page in the [Azure Portal](https://portal.azure.com) or by using a *token* that you obtain at runtime.  For more information, see [Authentication](bot-framework-rest-direct-line-1-1-authentication.md).
 
 ## Starting a conversation
 

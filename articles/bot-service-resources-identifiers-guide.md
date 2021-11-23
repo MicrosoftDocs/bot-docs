@@ -2,13 +2,13 @@
 title: Guide to IDs in the Bot Framework - Bot Service
 description: This guide describes the characteristics of ID fields present in the Bot Framework v3 protocol.
 keywords: id, bots, protocol
-author: RobStand
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: reference
 ms.service: bot-service
-ms.date: 04/30/2019
-
+ms.date: 11/01/2021
 ---
 
 # ID fields in the Bot Framework
@@ -49,7 +49,7 @@ a characteristic of the Azure portal, and not necessarily the bot handle itself.
 
 ### Rules for bot handles
 
-* Bot handles are unique (case-insensitive) within the Bot Framework.
+- Bot handles are unique (case-insensitive) within the Bot Framework.
 
 ## App ID
 
@@ -73,9 +73,9 @@ App IDs are guaranteed to be GUIDs. App IDs should be compared without case sens
 
 ### Rules for app IDs
 
-* App IDs are unique (GUID comparison) within the Microsoft App platform.
-* Every bot has exactly one corresponding app.
-* Changing which app a bot is associated with requires the assistance of the Bot Framework team.
+- App IDs are unique (GUID comparison) within the Microsoft App platform.
+- Every bot has exactly one corresponding app.
+- Changing which app a bot is associated with requires the assistance of the Bot Framework team.
 
 ## Channel Account
 
@@ -110,12 +110,12 @@ A bot is informed of its channel account address via the `recipient` field on ac
 
 ### Rules for channel accounts
 
-* Channel accounts have meaning only within their associated channel.
-* More than one ID may resolve to the same account.
-* Ordinal comparison may be used to establish that two IDs are the same.
-* There is generally no comparison that can be used to identify whether two different IDs resolve
+- Channel accounts have meaning only within their associated channel.
+- More than one ID may resolve to the same account.
+- Ordinal comparison may be used to establish that two IDs are the same.
+- There is generally no comparison that can be used to identify whether two different IDs resolve
   to the same account, bot or person.
-* The stability of associations between IDs, accounts, mailboxes, and people depends on the channel.
+- The stability of associations between IDs, accounts, mailboxes, and people depends on the channel.
 
 ## Conversation ID
 
@@ -135,9 +135,10 @@ received a message, users who sent a message.
 
 Several channels (e.g., SMS, and possibly others) have the quirk that the conversation ID assigned to a 1:1
 conversation is the remote channel account ID. This quirk has two side-effects:
+
 1. The conversation ID is subjective based on who is viewing it. If Participants A and B are talking,
    participant A sees the conversation ID to be "B" and participant B sees the conversation ID to be "A."
-2. If the bot has multiple channel accounts within this channel (for example, if the bot has two SMS numbers),
+1. If the bot has multiple channel accounts within this channel (for example, if the bot has two SMS numbers),
    the conversation ID is not sufficient to uniquely identify the conversation within the bot's field of view.
 
 Thus, a conversation ID does not necessarily uniquely identify a single conversation within a channel even
@@ -145,9 +146,9 @@ for a single bot.
 
 ### Rules for conversation IDs
 
-* Conversations have meaning only within their associated channel.
-* More than one ID may resolve to the same conversation.
-* Ordinal equality does not necessarily establish that two conversation IDs are the same conversation, although
+- Conversations have meaning only within their associated channel.
+- More than one ID may resolve to the same conversation.
+- Ordinal equality does not necessarily establish that two conversation IDs are the same conversation, although
   in most cases, it does.
 
 ## Activity ID
@@ -158,8 +159,9 @@ Example: `"id": "5678"`
 
 Activity IDs are optional and employed by channels to give the bot a way to reference the ID in subsequent
 API calls, if they are available:
-* Replying to a particular activity
-* Querying for the list of participants at the activity level
+
+- Replying to a particular activity
+- Querying for the list of participants at the activity level
 
 Because no further use cases have been established, there are no additional rules for the treatment of activity
 IDs.

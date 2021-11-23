@@ -3,12 +3,12 @@ title: Debug a channel using ngrok - Bot Service
 description: Understand how to debug a channel using ngrok
 keywords: debugging, channel, ngrok
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.subservices: sdk
-ms.date: 10/19/2021
+ms.date: 11/01/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 

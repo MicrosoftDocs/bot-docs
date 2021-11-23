@@ -1,12 +1,13 @@
 ---
 title: Bot Framework channels security - Bot Service
 description: Learn about potential security risks when users connect to a bot using the allowed channels
-author: mmiele
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: conceptual
 ms.service: bot-service
-ms.date: 03/25/2021
+ms.date: 11/01/2021
 ---
 
 # Direct Line enhanced authentication

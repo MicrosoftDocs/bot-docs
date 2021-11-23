@@ -2,11 +2,12 @@
 title: How bot projects are structured - Bot Service
 description: Learn about how bot projects are structured in the Bot Framework SDK. Learn about common aspects of bot code.
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 10/28/2021
+ms.date: 11/18/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -43,7 +44,7 @@ A bot is a web application, and templates are provided for each language.
 
 The Bot Framework includes both VSIX and .NET templates.
 
-The templates generate an [ASP.NET MVC Core](https://dotnet.microsoft.com/apps/aspnet/mvc) web app. If you look at the [ASP.NET](/aspnet/core/fundamentals/index?view=aspnetcore-3.1&preserve-view=true) fundamentals, you'll see similar code in files such as **Program.cs** and **Startup.cs**. These files are required for all web apps and are not bot specific.
+The templates generate an [ASP.NET MVC Core](https://dotnet.microsoft.com/apps/aspnet/mvc) web app. If you look at the [ASP.NET](/aspnet/core/fundamentals/index?view=aspnetcore-3.1&preserve-view=true) fundamentals, you'll see similar code in files such as **Program.cs** and **Startup.cs**. These files are required for all web apps and are not bot-specific.
 
 [!INCLUDE [VSIX templates](../includes/vsix-templates-versions.md)]
 
@@ -63,7 +64,7 @@ To use the **.env** configuration file, the bot requires the `dotenv` package fr
 
 # [Java](#tab/java)
 
-The Yeoman generator creates a [Spring](https://spring.io/web-applications) based web application with a build file using [Maven](https://maven.apache.org/what-is-maven.html). 
+The Yeoman generator creates a [Spring](https://spring.io/web-applications) based web application with a build file using [Maven](https://maven.apache.org/what-is-maven.html).
 
 The Maven **pom.xml** file specifies dependencies and their associated versions for your bot. This is all set up by the template and your system. Additional dependencies can be installed by adding entries to the pom.xml file.
 
@@ -96,15 +97,15 @@ Then, the `Configure` method finishes the configuration of your app.
 
 ### [JavaScript](#tab/javascript)
 
-In restify, you setup the web service and the objects it needs in the **index.js** file. The service, adapter, and bot are covered separately in the following sections.
+In restify, you set up the web service and the objects it needs in the **index.js** file. The service, adapter, and bot are covered separately in the following sections.
 
 ### [Java](#tab/java)
 
-In Spring, you setup the web service and the objects it needs in the **application.java** file. The **application.java** has comments that denote the different components and framework classes used by the bot application. The service, adapter, and bot are covered separately in the following sections.
+In Spring, you set up the web service and the objects it needs in the **application.java** file. The **application.java** has comments that denote the different components and framework classes used by the bot application. The service, adapter, and bot are covered separately in the following sections.
 
 ### [Python](#tab/python)
 
-In aiohttp, you setup the web service and the objects it needs in the **app.py** file. The service, adapter, and bot are covered separately in the following sections.
+In aiohttp, you set up the web service and the objects it needs in the **app.py** file. The service, adapter, and bot are covered separately in the following sections.
 
 ---
 
@@ -126,7 +127,9 @@ Each incoming request represents the start of a new turn.
 
 **index.js**
 
-[!code-javascript[create server](~/../botbuilder-samples/samples/javascript_nodejs/02.echo-bot/index.js?range=20-26,62-68&highlight=10-13)]
+[!code-javascript[Create server](~/../botbuilder-samples/samples/javascript_nodejs/02.echo-bot/index.js?range=21-26)]
+
+[!code-javascript[Listen for HTTP requests](~/../botbuilder-samples/samples/javascript_nodejs/02.echo-bot/index.js?range=74-78&highlight=4)]
 
 ### [Java](#tab/java)
 
@@ -138,7 +141,7 @@ Each incoming request represents the start of a new turn.
 
 **app.py**
 
-[!code-python[create server](~/../botbuilder-samples/samples/python/02.echo-bot/app.py?range=64-88&highlight=10)]
+[!code-python[create server](~/../botbuilder-samples/samples/python/02.echo-bot/app.py?range=64-88&highlight=12)]
 
 ---
 
@@ -154,17 +157,17 @@ The adapter allows you to add your own _on turn error_ handler.
 
 The adapter to use is defined in the `ConfigureServices` method.
 
-[!code-csharp[adapter](~/../botbuilder-samples/samples/csharp_dotnetcore/02.echo-bot/Startup.cs?range=30-31)]
+[!code-csharp[adapter](~/../botbuilder-samples/samples/csharp_dotnetcore/02.echo-bot/Startup.cs?range=34-35)]
 
 **AdapterWithErrorHandler.cs**
 
-[!code-csharp[adapter](~/../botbuilder-samples/samples/csharp_dotnetcore/02.echo-bot/AdapterWithErrorHandler.cs?range=12-33)]
+[!code-csharp[adapter](~/../botbuilder-samples/samples/csharp_dotnetcore/02.echo-bot/AdapterWithErrorHandler.cs?range=11-32)]
 
 ### [JavaScript](#tab/javascript)
 
 **index.js**
 
-[!code-javascript[create adapter](~/../botbuilder-samples/samples/javascript_nodejs/02.echo-bot/index.js?range=15-16,30-57)]
+[!code-javascript[create adapter](~/../botbuilder-samples/samples/javascript_nodejs/02.echo-bot/index.js?range=43-69)]
 
 ### [Java](#tab/java)
 
@@ -199,7 +202,7 @@ The echo bot welcomes a user when they join the conversation and echoes back any
 
 The bot to use is defined in the `ConfigureServices` method.
 
-[!code-csharp[adapter](~/../botbuilder-samples/samples/csharp_dotnetcore/02.echo-bot/Startup.cs?range=33-34)]
+[!code-csharp[EchoBot](~/../botbuilder-samples/samples/csharp_dotnetcore/02.echo-bot/Startup.cs?range=37-38)]
 
 **Bots\\EchoBot.cs**
 
@@ -209,7 +212,7 @@ The bot to use is defined in the `ConfigureServices` method.
 
 **index.js**
 
-[!code-javascript[create bot](~/../botbuilder-samples/samples/javascript_nodejs/02.echo-bot/index.js?range=18-19,60)]
+[!code-javascript[create bot](~/../botbuilder-samples/samples/javascript_nodejs/02.echo-bot/index.js?range=21-22,70-72)]
 
 **bot.js**
 

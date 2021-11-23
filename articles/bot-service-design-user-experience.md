@@ -2,12 +2,13 @@
 title: Design the user experience - Bot Service
 description: Learn how to design your bot to deliver an engaging user experience, by using rich user controls, natural language understanding, and speech.
 keywords: overview, design, user experience, UX, rich user control
-author: matvelloso
-ms.author: mateusv
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: conceptual
 ms.service: bot-service
-ms.date: 09/20/2018
+ms.date: 11/01/2021
 ---
 
 # Design the user experience
@@ -44,8 +45,6 @@ Microsoft Bot Service cards are programmable objects containing standardized col
 Cards allow you to design your bot once, and have it work across a variety of channels. However, not all card types are fully supported across all available channels.
 
 Detailed instructions for adding cards to your bot can be found within these sections [Add rich card media attachments](v4sdk/bot-builder-howto-add-media-attachments.md) and [Add suggested actions to messages](v4sdk/bot-builder-howto-add-suggested-actions.md). Sample code can also be found here for cards: [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/06.using-cards-cs)/[JS](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/06.using-cards-js) adaptive cards: [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/07.using-adaptive-cards)/[JS](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/07.using-adaptive-cards), attachments: [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/15.handling-attachments)/[JS](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/15.handling-attachments), and suggested actions: [C#](https://github.com/Microsoft/BotBuilder-Samples/)/[JS](https://github.com/Microsoft/BotBuilder-Samples/).
-
-
 
 When designing your bot, do not automatically dismiss common UI elements as not being "smart enough." As discussed in [Conversational user experience](bot-service-design-principles.md#designing-a-bot), your bot should be designed to solve the user's problem in the best, quickest, and easiest manner possible. Avoid the temptation to start by incorporating natural language understanding, as it is often unnecessary and introduces unjustified complexity.
 

@@ -2,12 +2,13 @@
 title: .lu file format - Bot Service
 description: .lu file format reference
 keywords: lu file format, reference, language understanding
-author: kamrani
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: emgrol
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: reference
 ms.service: bot-service
-ms.date: 08/05/2021
+ms.date: 11/01/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -238,35 +239,35 @@ Extending the `pizzaOrder` example from the machine-learned entity section, here
 
 ```lu
 @ list sizeList = 
-	- Extra Large :
-		- extra large
-		- XL
-		- xl
-		- huge
-		- massive
-	- Large:
-		- large
-		- big
-	- Medium :
-		- medium
-		- regular
-	- Small :
-		- small
-		- smallest
-		- individual
+    - Extra Large :
+        - extra large
+        - XL
+        - xl
+        - huge
+        - massive
+    - Large:
+        - large
+        - big
+    - Medium :
+        - medium
+        - regular
+    - Small :
+        - small
+        - smallest
+        - individual
 
 @ list crustList = 
-	- Stuffed Crust :
-		- stuffed crust
-		- stufffed crust
-	- Thin :
-		- thin
-		- thin crust
-	- Thick :
-		- thick
-		- thick crust
-		- Deep Dish
-		- deep dish
+    - Stuffed Crust :
+        - stuffed crust
+        - stufffed crust
+    - Thin :
+        - thin
+        - thin crust
+    - Thick :
+        - thick
+        - thick crust
+        - Deep Dish
+        - deep dish
 ```
 
 > [!TIP]
@@ -480,9 +481,9 @@ Phrase lists can also be used to define synonyms by marking them as interchangea
 > You can also break up the phrase list values into a bulleted list
 @ phraseList Want(interchangeable) =
     - require
-	- need
-	- desire
-	- know
+    - need
+    - desire
+    - know
 ```
 
 By default, phrase lists are available to all learned intents and entities. There are three availability states:

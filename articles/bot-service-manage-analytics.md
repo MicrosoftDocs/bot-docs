@@ -3,11 +3,12 @@ title: Bot analytics - Bot Service
 description: Learn how to use data collection and analysis to improve your bot with analytics in the Bot Framework.
 keywords: bot analytics, application insights, traffic, latency, integrations, AppInsights
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 12/04/2018
+ms.date: 11/01/2021
 ---
 
 # Bot analytics

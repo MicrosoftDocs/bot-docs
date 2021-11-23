@@ -3,12 +3,13 @@
 metadata:
   title: Bot Framework Security and Privacy Frequently Asked Questions  # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: "Answers to common security and privacy frequent asked questions." # Required; article description that is displayed in search results. < 160 chars.
-  services: service
-  ms.service: bot-service #Required; service per approved list. service slug assigned to your service by ACOM.
-  ms.topic: article # Required
-  author: mmiele #Required; your GitHub user alias, with correct capitalization.
-  ms.author: botcc #Required; microsoft alias of author; optional team alias.
-  ms.date: 01/25/2020 #Required; mm/dd/yyyy format.
+  author: JonathanFingold
+  ms.author: iawilt
+  manager: shellyha
+  ms.reviewer: micchow
+  ms.topic: troubleshooting
+  ms.service: bot-service
+  ms.date: 11/01/2021
 
 title: Bot Framework Security and Privacy Frequently Asked Questions # < 60 chars
 summary: |

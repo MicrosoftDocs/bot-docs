@@ -2,12 +2,13 @@
 title: Choose the right chatbot solution for your use case
 description: Learn when to use Bot Framework Composer and SDK, Orchestrator, or Power Virtual Agents
 keywords: 
-author: ianlumb
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: overview
 ms.service: bot-service
-ms.date: 09/08/2021
+ms.date: 11/01/2021
 ms.custom: mode-api, tab-zone-seo
 ---
 
@@ -27,7 +28,7 @@ A chatbot is an application that makes use of written or spoken natural language
 When built like this, a customer-service chatbot could respond to questions and facilitate a product purchase without the need for a human to intervene. However, chatbots can transfer conversations to human coworkers, if necessary.
 -->
 
-Chatbots can be developed as independent applications or integrated into business-application platforms. 
+Chatbots can be developed as independent applications or integrated into business-application platforms.
 
 Below you can read about the available options and when to make use of each.
 
@@ -42,8 +43,8 @@ Below you can read about the available options and when to make use of each.
 
 Bot Framework Composer is an open-source IDE for developers to author, test, provision, and manage conversational experiences. It provides a powerful visual authoring canvas for your bot logic. It let's you manage and edit:
 
-- [Dialogs](/composer/concept-dialog). 
-- [Language-understanding models](/composer/concept-language-understanding). 
+- [Dialogs](/composer/concept-dialog).
+- [Language-understanding models](/composer/concept-language-understanding).
 - [Question-and-answer knowledge bases](/composer/how-to-add-qna-to-bot).
 - [Bot responses](/composer/concept-language-generation).
 
@@ -59,7 +60,7 @@ For more information about Bot Framework Composer, refer to the [introductory pa
 
 Power Virtual Agents is the chatbot capability included in the [Microsoft Power Platform](https://powerplatform.microsoft.com/)&mdash;a business-application platform that incorporates data analysis, solution building, and process automation in addition to this chatbot capability. From an easy-to-use GUI, chatbots can be built without the need to write code or to understand any of the details of the underpinning AI technologies. Because these agents can leverage automation and other capabilities within the Power Platform, sophisticated chatbot experiences can be rapidly developed. These agents can also be leveraged by [Microsoft 365](https://www.microsoft.com/microsoft-365) and [Microsoft Dynamics 365](https://dynamics.microsoft.com/) for business-productivity use cases. Should there be a need, Power Virtual Agents can even tap into the SDK provided by the [Microsoft Bot Framework](#bot-framework-sdk) to handle more complex scenarios.
 
-For more information about Power Virtual Agents, see the [product overview page](https://powervirtualagents.microsoft.com). For details regarding pricing, refer to [Power Virtual Agents pricing](https://powervirtualagents.microsoft.com/pricing/). 
+For more information about Power Virtual Agents, see the [product overview page](https://powervirtualagents.microsoft.com). For details regarding pricing, refer to [Power Virtual Agents pricing](https://powervirtualagents.microsoft.com/pricing/).
 
 ## Bot Framework SDK
 
@@ -77,7 +78,7 @@ Additionally, bots may make use of other Azure services, such as:
 - Azure Cognitive Services to build intelligent applications.
 - Azure Storage for a cloud storage solution.
 
-Both [Power Virtual Agents](#power-virtual-agents) and [Bot Framework Composer](#bot-framework-composer) make use of the Bot Framework SDK to extend their existing capabilities and deliver more customized conversational experiences. 
+Both [Power Virtual Agents](#power-virtual-agents) and [Bot Framework Composer](#bot-framework-composer) make use of the Bot Framework SDK to extend their existing capabilities and deliver more customized conversational experiences.
 
 For more information about the Bot Framework SDK, refer to the [introductory page](bot-service-overview.md).
 
@@ -85,9 +86,9 @@ For more information about the Bot Framework SDK, refer to the [introductory pag
 
 Bot Framework SDK allows to build customized discrete and reusable components of conversational logic called **skills**. Skills may be implemented as a user-facing bots or act to support another bot. As modular components, skills are advantageous for the following reasons:
 
-- Skills help to manage complexity. Complexity is inevitable as bot-based services gain traction and use cases broaden and deepen. 
-- Skills promote reuse. Existing bots can be enhanced with skills; new bots can be rapidly developed. 
-- Skills help to ensure maintainability. Sophisticated conversational experiences may the involvement of multiple developers or even multiple teams. 
+- Skills help to manage complexity. Complexity is inevitable as bot-based services gain traction and use cases broaden and deepen.
+- Skills promote reuse. Existing bots can be enhanced with skills; new bots can be rapidly developed.
+- Skills help to ensure maintainability. Sophisticated conversational experiences may the involvement of multiple developers or even multiple teams.
 
 Even though it may be composed from a number of skills, a bot must deliver a seamless experience to the end user. This is the reason for having the **Bot Framework Orchestrator**. It seamlessly dispatches the right skill at the right time in support of a conversational experience. Triggered by utterances, the Bot Framework Orchestrator dispatches the appropriate skill by recognizing the intent of the conversation and responding accordingly.
 

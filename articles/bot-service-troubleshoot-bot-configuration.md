@@ -2,12 +2,13 @@
 title: Troubleshoot bot configuration issues - Bot Service
 description: Learn how to troubleshoot bot errors. See how to test bots in Web Chat, check responsiveness, investigate timeout issues, and resolve problems with channels.
 keywords: troubleshoot, configuration, web chat, problems.
-author: jonathanFingold
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: troubleshooting
 ms.service: bot-service
-ms.date: 5/17/2020
+ms.date: 11/01/2021
 ---
 
 # Troubleshoot bot configuration issues
@@ -65,6 +66,7 @@ If the bot works as expected in Web Chat but fails in some other channel, possib
 It's possible that channel configuration parameters, such as the bot's username and password have been set incorrectly or have changed externally. For example, a bot was configured with the Facebook channel for a particular page and the page was later deleted. The simplest solution is remove the channel and redo the channel configuration anew.
 
 The links below provide instructions for configuring channels supported by the Bot Framework:
+
 - [Alexa](bot-service-channel-connect-alexa.md)
 - [Direct Line](bot-service-channel-connect-directline.md)
 - [Email](bot-service-channel-connect-email.md)

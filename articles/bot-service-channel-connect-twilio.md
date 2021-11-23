@@ -2,12 +2,13 @@
 title: Connect a bot to Twilio - Bot Service
 description: Learn how to configure bots to use Twilio to communicate with people. See how to connect bots to Twilio through a Twilio adapter or a TwiML application.
 keywords: Twilio, bot channels, SMS, App, phone, configure Twilio, cloud communication, text
-author: RobStand
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 08/12/2021
+ms.date: 11/18/2021
 ---
 
 # Connect a bot to Twilio
@@ -56,7 +57,7 @@ Go back to the [console homepage](https://www.twilio.com/console/), you will see
 
 ### Submit credentials
 
-In a separate window, return to the Bot Framework site at https://dev.botframework.com/.
+In a separate window, return to the [Bot Framework](https://dev.botframework.com/) site.
 
 - Select **My bots** and choose the Bot that you want to connect to Twilio. This will direct you to the Azure portal.
 - Select **Channels** under **Bot Management**. Click the Twilio (SMS) icon.
@@ -114,7 +115,7 @@ Create a new controller to handle requests from Twilio, on a new endpoint `api/t
 
 In `Startup.cs`, add your Twilio adapter as a service in the `ConfigureServices` method. For example:
 
-[!code-csharp[Configure adapter in startup](~/../botbuilder-samples/samples/csharp_dotnetcore/63.twilio-adapter/Startup.cs?range=19-31&highlight=9)]
+[!code-csharp[TwilioAdapterWithErrorHandler](~/../botbuilder-samples/samples/csharp_dotnetcore/63.twilio-adapter/Startup.cs?range=30-31)]
 
 #### Obtain a URL for your bot
 

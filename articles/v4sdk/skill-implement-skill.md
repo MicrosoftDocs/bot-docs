@@ -3,11 +3,12 @@ title: Implement a skill | Microsoft Docs
 description: Learn how to implement a skill, using the Bot Framework SDK.
 keywords: skills
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 10/21/2021
+ms.date: 11/19/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -24,6 +25,8 @@ A _skill_ is a bot that can perform a set of tasks for another bot.
 This article demonstrates how to implement a skill that echoes the user's input.
 
 <!-- I haven't discussed passing values back-and-forth mid conversation. That could be the basis of another article. -->
+
+[!INCLUDE [skills-and-identity-types](../includes/skills-and-identity-types.md)]
 
 ## Prerequisites
 
@@ -65,27 +68,26 @@ For information about the simple root bot, see how to [Implement a skill consume
 
 ## Resources
 
-For deployed bots, bot-to-bot authentication requires that each participating bot has a valid app ID and password.
-However, you can test skills and skill consumers locally with the Emulator without an app ID and password.
+For deployed bots, bot-to-bot authentication requires that each participating bot has valid identity information.
+However, you can test multi-tenant skills and skill consumers locally with the Emulator without an app ID and password.
 
 To make the skill available to user-facing bots, register the skill with Azure. For more information, see how to [register a bot with Azure Bot Service](../bot-service-quickstart-registration.md).
 
 ## Application configuration
 
-Optionally, add the skill's app ID and password to the skill's configuration file.
-(If either the skill or skill consumer uses an app ID and password, both must.)
+Optionally, add the skill's identity information to its configuration file. If either the skill or skill consumer provides identity information, both must.
 
 The _allowed callers_ array can restrict which skill consumers can access the skill.
 Add an "*" element, to accept calls from any skill consumer.
 
 > [!NOTE]
-> If you are testing your skill locally without an app ID and password, neither the skill nor the skill consumer run the code to perform claims validation.
+> If you're testing your skill locally without bot identity information, neither the skill nor the skill consumer run the code to perform claims validation.
 
 ### [C#](#tab/cs)
 
 **EchoSkillBot\appsettings.json**
 
-Add the skill's app ID and password to the appsettings.json file.
+Optionally, add the skill's identity information to the appsettings.json file.
 
 [!code-csharp[configuration file](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/appsettings.json)]
 
@@ -93,7 +95,7 @@ Add the skill's app ID and password to the appsettings.json file.
 
 **echo-skill-bot/.env**
 
-Add the skill's app ID and password to the .env file.
+Optionally, add the skill's identity information to the .env file.
 
 [!code-javascript[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/.env)]
 
@@ -101,13 +103,13 @@ Add the skill's app ID and password to the .env file.
 
 **DialogSkillBot\resources\application.properties**
 
-Add the skill's app ID and password to the application.properties file.
+Optionally, add the skill's app ID and password to the application.properties file.
 
 [!code-java[configuration file](~/../botbuilder-samples/samples/java_springboot/80.skills-simple-bot-to-bot/DialogSkillBot/src/main/resources/application.properties)]
 
 ### [Python](#tab/python)
 
-Add the skill's app ID and password to the config.py file.
+Optionally, add the skill's app ID and password to the config.py file.
 
 **config.py**
 
@@ -134,13 +136,13 @@ Optionally, use the activity's _value_ property to include a return value, and u
 
 **EchoSkillBot\Bots\EchoBot.cs**
 
-[!code-csharp[Message handler](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/Bots/EchoBot.cs?range=13-31)]
+[!code-csharp[OnMessageActivityAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/Bots/EchoBot.cs?range=13-31)]
 
 #### [JavaScript](#tab/javascript)
 
 **echo-skill-bot/bot.js**
 
-[!code-javascript[Message handler](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/bot.js?range=10-26)]
+[!code-javascript[onMessage](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/bot.js?range=10-26)]
 
 #### [Java](#tab/java)
 
@@ -166,7 +168,7 @@ The logic for this skill doesn't change from turn to turn. If you implement a sk
 
 **EchoSkillBot\Bots\EchoBot.cs**
 
-[!code-csharp[End-of-conversation handler](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/Bots/EchoBot.cs?range=33-39)]
+[!code-csharp[OnEndOfConversationActivityAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/Bots/EchoBot.cs?range=33-39)]
 
 #### [JavaScript](#tab/javascript)
 
@@ -174,7 +176,7 @@ The logic for this skill doesn't change from turn to turn. If you implement a sk
 
  Use the `onUnrecognizedActivityType` method to add an end-of-conversation logic. In the handler, check whether the unrecognized activity's `type` equals `endOfConversation`.
 
-[!code-javascript[End-of-conversation handler](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/bot.js?range=28-35)]
+[!code-javascript[onEndOfConversation](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/bot.js?range=28-35)]
 
 #### [Java](#tab/java)
 
@@ -234,13 +236,13 @@ When an error occurs, the skill's adapter should clear conversation state for th
 
 **EchoSkillBot\SkillAdapterWithErrorHandler.cs**
 
-[!code-csharp[Error handler](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/SkillAdapterWithErrorHandler.cs?range=20-75)]
+[!code-csharp[HandleTurnError, SendErrorMessageAsync, and SendEoCToParentAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/SkillAdapterWithErrorHandler.cs?range=26-74)]
 
 ### [JavaScript](#tab/javascript)
 
 **echo-skill-bot/index.js**
 
-[!code-javascript[Error handler](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/index.js?range=40-82)]
+[!code-javascript[adapter.onTurnError](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/index.js?range=79-121)]
 
 ### [Java](#tab/java)
 
@@ -266,14 +268,13 @@ This sample adds claims validation to the authentication configuration and uses 
 
 **EchoSkillBot\Startup.cs**
 
-[!code-csharp[Configure authentication configuration and adapter](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/Startup.cs?range=28-35)]
+[!code-csharp[Configure authentication configuration and adapter](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/Startup.cs?range=25-58)]
 
 ### [JavaScript](#tab/javascript)
 
 **echo-skill-bot/index.js**
 
-[!code-javascript[configuration](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/index.js?range=32-38)]
-<!--C# & JS snippets checked 1/14-->
+[!code-javascript[allowedCallers, claimsValidators, authConfig, credentialsFactory, bot auth, and adapter](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/index.js?range=43-77)]
 
 ### [Java](#tab/java)
 

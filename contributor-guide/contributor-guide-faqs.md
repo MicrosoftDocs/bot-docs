@@ -154,14 +154,13 @@ Writing in YAML format can be a little tricky because you have to obey to strict
 1. Next you need to create the applicable metadata. The following is an example:
     ```yml
     metadata:
-        title: Bot Framework Ecosystem Frequently Asked Questions  # Required; page title displayed in search results. Include the brand. < 60 chars.
-        description: "Answers to common ecosystem frequent asked questions." # Required; article description that is displayed in search results. < 160 chars.
-        services: service
+        title: # Required; page title displayed in search results. Include the brand. < 60 chars.
+        description: # Required; article description that is displayed in search results. < 160 chars.
         ms.service: bot-service #Required; service per approved list. service slug assigned to your service by ACOM.
-        ms.topic: article # Required
-        author: mmiele #Required; your GitHub user alias, with correct capitalization.
-        ms.author: botcc #Required; microsoft alias of author; optional team alias.
-        ms.date: 01/06/2020 #Required; mm/dd/yyyy format.
+        ms.topic: # Required, one of the currently accepted values.
+        author: #Required; your GitHub user alias, with correct capitalization.
+        ms.author: #Required; microsoft alias of author; optional team alias.
+        ms.date: #Required; mm/dd/yyyy format.
     ```
 1. The metadata is followed by the **title** and **summary** information as shown in the example below.
 

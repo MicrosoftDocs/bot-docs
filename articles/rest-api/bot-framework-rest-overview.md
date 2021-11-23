@@ -1,12 +1,13 @@
 ---
 title: Bot Framework REST APIs  - Bot Service
 description: Get started with the Bot Framework REST APIs that can be used to build bots and clients that connect to bots.
-author: RobStand
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: conceptual
 ms.service: bot-service
-ms.date: 02/20/2020
+ms.date: 11/01/2021
 ---
 
 # Bot Framework REST APIs

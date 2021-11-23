@@ -2,12 +2,13 @@
 title: Activity processing - Bot Service
 description: Understand how bots and users interact. Learn about activities, turns, context objects, authentication, adapters, middleware, and response handlers.
 keywords: bot adapter, custom middleware, short circuit, fallback, event handlers
-author: jonathanfingold
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: conceptual
 ms.service: bot-service
-ms.date: 05/23/2019
+ms.date: 11/01/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 

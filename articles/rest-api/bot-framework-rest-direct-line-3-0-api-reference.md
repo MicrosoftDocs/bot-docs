@@ -1,12 +1,13 @@
 ---
 title: API reference - Direct Line API 3.0 - Bot Service
 description: Learn about headers, HTTP status codes, schema, operations, and objects in Direct Line API 3.0. 
-author: RobStand
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: reference
 ms.service: bot-service
-ms.date: 12/13/2017
+ms.date: 11/01/2021
 ---
 
 # API reference - Direct Line API 3.0

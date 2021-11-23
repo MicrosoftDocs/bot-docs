@@ -1,12 +1,13 @@
 ---
 title: API reference - Direct Line API 1.1 - Bot Service
 description: Learn about headers, HTTP status codes, schema, operations, and objects in Direct Line API 1.1. 
-author: RobStand
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: reference
 ms.service: bot-service
-ms.date: 12/13/2017
+ms.date: 11/01/2021
 ---
 
 # API reference - Direct Line API 1.1
@@ -140,7 +141,9 @@ POST /api/conversations/{conversationId}/messages
 | **Request body** | A [Message](#message-object) object |
 | **Returns** | No data is returned in body of the response. The service responds with an HTTP 204 status code if the message was sent successfully. The client may obtain its sent message (along with any messages that the bot has sent to the client) by using the [Get Messages](#get-messages) operation. |
 
-### <a id="upload-send-files"></a> Upload and Send File(s)
+<a id="upload-send-files"></a>
+
+### Upload and Send File(s)
 
 Uploads and sends file(s) as attachment(s). Set the `userId` parameter in the request URI to specify the ID of the user that is sending the attachments.
 

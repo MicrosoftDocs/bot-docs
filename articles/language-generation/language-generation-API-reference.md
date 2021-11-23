@@ -2,16 +2,17 @@
 title: API reference for Language Generation  - Bot Service
 description: API reference for Language Generation library
 keywords: language generation api, reference, language generation
-author: kamrani
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: emgrol
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: reference
 ms.service: bot-service
-ms.date: 07/21/2020
+ms.date: 11/01/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# API reference for language generation 
+# API reference for language generation
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
@@ -21,4 +22,3 @@ Language generation templates are language-agnostic. API references are availabl
 
 - [C#](/dotnet/api/microsoft.bot.builder.languagegeneration)
 - [JavaScript](/javascript/api/botbuilder-lg)
-

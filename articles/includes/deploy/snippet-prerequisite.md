@@ -1,18 +1,15 @@
-- A subscription to [Microsoft Azure](https://azure.microsoft.com/free/).
-- A C#, JavaScript, TypeScript, Java, or Python bot that you have developed on your local machine.
+---
+description: Common Azure CLI deployment prerequisites.
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: include
+ms.date: 11/19/2021
+---
+
+- If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+- A C#, JavaScript, TypeScript, Java, or Python bot that you have developed on your local machine. If you don't have a bot to deploy yet, see [Create a bot with the Bot Framework SDK](../../bot-service-quickstart-create-bot.md).
 - Latest version of the [Azure CLI](/cli/azure/install-azure-cli).
 - Familiarity with [Azure CLI and ARM templates](/azure/azure-resource-manager/resource-group-overview).
-- Installed [Maven](https://maven.apache.org/), for Java only.
-
-<!-- - If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
-- Install the latest version of the [Azure cli tool](/cli/azure/install-azure-cli).
-- Install latest version of the [MSBot](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/MSBot) tool.
-- Install latest released version of the [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md).
-- Install and configure [ngrok](https://github.com/Microsoft/BotFramework-Emulator/wiki/Tunneling-%28ngrok%29).
-- Knowledge of [Managing bot resources](~/v4sdk/bot-file-basics.md).
-
-With msbot 4.3.2 and later, you need Azure CLI version 2.0.54 or later. If you installed the botservice extension, remove it with this command.
-
-```cmd
-az extension remove --name botservice
-``` -->
+- For Java only, [Maven](https://maven.apache.org/).

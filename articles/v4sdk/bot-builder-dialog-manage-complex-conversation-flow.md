@@ -3,11 +3,12 @@ title: Create advanced conversation flow using branches and loops in Bot Framewo
 description: Learn how to manage a complex conversation flow with dialogs in the Bot Framework SDK.
 keywords: complex conversation flow, repeat, loop, menu, dialogs, prompts, waterfalls, dialog set
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 09/24/2021
+ms.date: 11/05/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -26,7 +27,7 @@ This article covers how to manage complex conversations that branch and loop and
 ## About this sample
 
 This sample represents a bot that can sign users up to review up to two companies from a list.
-The bot uses 3 component dialogs to manage the conversation flow.
+The bot uses three component dialogs to manage the conversation flow.
 Each component dialog includes a waterfall dialog and any prompts needed to gather user input.
 These dialogs are described in more detail in the following sections.
 It uses conversation state to manage its dialogs and uses user state to save information about the user and which companies they want to review.
@@ -79,7 +80,6 @@ The user profile will contain information gathered by the dialogs, the user's na
 
 [!code-java[UserProfile class](~/../botbuilder-samples/samples/java_springboot/43.complex-dialog/src/main/java/com/microsoft/bot/sample/complexdialog/UserProfile.java?range=9-66)]
 
-
 ### [Python](#tab/python)
 
 **data_models/user_profile.py**
@@ -90,7 +90,7 @@ The user profile will contain information gathered by the dialogs, the user's na
 
 ## Create the dialogs
 
-This bot contains 3 dialogs:
+This bot contains three dialogs:
 
 - The main dialog starts the overall process and then summarizes the collected information.
 - The top-level dialog collects the user information and includes branching logic, based on the user's age.
@@ -98,7 +98,7 @@ This bot contains 3 dialogs:
 
 ### The main dialog
 
-The main dialog has 2 steps:
+The main dialog has two steps:
 
 1. Start the top-level dialog.
 1. Retrieve and summarize the user profile that the top-level dialog collected, save that information to user state, and then signal the end of the main dialog.
@@ -120,7 +120,6 @@ The main dialog has 2 steps:
 **MainDialog.java**
 
 [!code-java[step implementations](~/../botbuilder-samples/samples/java_springboot/43.complex-dialog/src/main/java/com/microsoft/bot/sample/complexdialog/MainDialog.java?range=36-54)]
-
 
 #### [Python](#tab/python)
 
@@ -161,7 +160,6 @@ In the third (start selection) step, the conversation flow branches, based on th
 
 [!code-java[step implementations](~/../botbuilder-samples/samples/java_springboot/43.complex-dialog/src/main/java/com/microsoft/bot/sample/complexdialog/TopLevelDialog.java?range=47-94&highlight=28-34)]
 
-
 #### [Python](#tab/python)
 
 **dialogs\top_level_dialog.py**
@@ -172,7 +170,7 @@ In the third (start selection) step, the conversation flow branches, based on th
 
 ### The review-selection dialog
 
-The review-selection dialog has 2 steps:
+The review-selection dialog has two steps:
 
 1. Ask the user to choose a company to review or `done` to finish.
    - If the dialog was started with any initial information, the information is available through the _options_ property of the waterfall step context. The review-selection dialog can restart itself, and it uses this to allow the user to choose more than one company to review.
@@ -180,7 +178,7 @@ The review-selection dialog has 2 steps:
    - A `done` choice is added to allow the user to exit the loop early.
 1. Repeat this dialog or exit, as appropriate.
    - If the user chose a company to review, add it to their list.
-   - If the user has chosen 2 companies or they chose to exit, end the dialog and return the collected list.
+   - If the user has chosen two companies or they chose to exit, end the dialog and return the collected list.
    - Otherwise, restart the dialog, initializing it with the contents of their list.
 
 #### [C#](#tab/csharp)
@@ -201,7 +199,6 @@ The review-selection dialog has 2 steps:
 
 [!code-java[step implementations](~/../botbuilder-samples/samples/java_springboot/43.complex-dialog/src/main/java/com/microsoft/bot/sample/complexdialog/ReviewSelectionDialog.java?range=48-99&highlight=46-51)]
 
-
 #### [Python](#tab/python)
 
 **dialogs/review_selection_dialog.py**
@@ -215,7 +212,7 @@ The review-selection dialog has 2 steps:
 The _dialog bot_ class extends the activity handler, and it contains the logic for running the dialogs.
 The _dialog and welcome bot_ class extends the dialog bot to also welcome a user when they join the conversation.
 
-The bot's turn handler repeats the conversation flow defined by the 3 dialogs.
+The bot's turn handler repeats the conversation flow defined by the three dialogs.
 When it receives a message from the user:
 
 1. It runs the main dialog.
@@ -241,7 +238,6 @@ When it receives a message from the user:
 **DialogBot.java**
 
 [!code-java[Overrides](~/../botbuilder-samples/samples/java_springboot/43.complex-dialog/src/main/java/com/microsoft/bot/sample/complexdialog/DialogBot.java?range=40-58&highlight=7-8,18)]
-
 
 ### [Python](#tab/python)
 
@@ -269,14 +265,13 @@ Create and register services as needed:
 
 **index.js**
 
-[!code-javascript[ConfigureServices](~/../botbuilder-samples/samples/javascript_nodejs/43.complex-dialog/index.js?range=26-43)]
+[!code-javascript[Create adapter, memory, state, dialog, and bot](~/../botbuilder-samples/samples/javascript_nodejs/43.complex-dialog/index.js?range=45-59)]
 
 ### [Java](#tab/java)
 
 **Application.java**
 
 [!code-java[ConfigureServices](~/../botbuilder-samples/samples/java_springboot/43.complex-dialog/src/main/java/com/microsoft/bot/sample/complexdialog/Application.java?range=52-59)]
-
 
 ### [Python](#tab/python)
 

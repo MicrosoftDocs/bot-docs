@@ -3,11 +3,12 @@ title: Implement sequential conversation flow - Bot Service
 description: Learn how to manage a simple conversation flow with dialogs in the Bot Framework SDK.
 keywords: simple conversation flow, sequential conversation flow, dialogs, prompts, waterfalls, dialog set
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 04/02/2021
+ms.date: 11/08/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -168,7 +169,6 @@ In the last step, check the `stepContext.Result` returned by the dialog called i
 
 [!code-java[SummaryStep](~/../botbuilder-samples/samples/java_springboot/05.multi-turn-prompt/src/main/java/com/microsoft/bot/sample/multiturnprompt/UserProfileDialog.java??range=142-191&highlight=3-8,43)]
 
-
 # [Python](#tab/python)
 
 To use dialogs, install the **botbuilder-dialogs** and **botbuilder-ai** PyPI packages by running `pip install botbuilder-dialogs` and `pip install botbuilder-ai` from a terminal.
@@ -249,7 +249,6 @@ The `onMessageActivity` handler uses the `run` method to start or continue the d
 
 [!code-java[overrides](~/../botbuilder-samples/samples/java_springboot/05.multi-turn-prompt/src/main/java/com/microsoft/bot/sample/multiturnprompt/DialogBot.java?range=40-58&highlight=6-8)]
 
-
 # [Python](#tab/python)
 
 The `on_message_activity` handler uses the helper method to start or continue the dialog. The `on_turn` method uses the bot's state management objects to persist any state changes to storage. The `on_message_activity` method gets called last after other defined handlers are run, such as `on_turn`. In this way, the state is saved after the message handler completes but before the turn itself completes.
@@ -281,7 +280,7 @@ Register services for the bot in `Startup`. These services are available to othe
 
 Register services for the bot in `index.js`.
 
-[!code-javascript[overrides](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/index.js?range=19-60)]
+[!code-javascript[Create adapter, memory, state, dialog, and bot](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/index.js?range=35-73)]
 
 # [Java](#tab/java)
 
@@ -290,7 +289,6 @@ Register services for the bot in `index.js`.
 Spring will provide the ConversationState, UserState, and Dialog via dependency injection. Override the getBot and return an instance of the DialogBot.
 
 [!code-java[ConfigureServices](~/../botbuilder-samples/samples/java_springboot/05.multi-turn-prompt/src/main/java/com/microsoft/bot/sample/multiturnprompt/Application.java?range=52-59)]
-
 
 # [Python](#tab/python)
 
@@ -356,7 +354,6 @@ Below is a validator code example for the `agePromptValidator` method definition
 
 [!code-csharp[prompt validator method](~/../botbuilder-samples/samples/java_springboot/05.multi-turn-prompt/src/main/java/com/microsoft/bot/sample/multiturnprompt/UserProfileDialog.java?range=193-201)]
 
-
 # [Python](#tab/python)
 
 **dialogs/user_profile_dialog.py**
@@ -371,8 +368,6 @@ Below is a validator code example for the `age_prompt_validator` method definiti
 
 > [!div class="nextstepaction"]
 > [Add natural language understanding to your bot](bot-builder-howto-v4-luis.md)
-
-<!-- Footnote-style links -->
 
 [concept-basics]: bot-builder-basics.md
 [concept-state]: bot-builder-concept-state.md

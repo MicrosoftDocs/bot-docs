@@ -1,14 +1,15 @@
 ---
 title: Add Single sign on to a bot - Bot Service
 description: Learn how to add SSO to your bot.
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 06/23/2021
+ms.date: 11/01/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
-
 
 # Add single sign on to a bot
 
@@ -18,7 +19,6 @@ This article shows how to use the Single sign on (SSO) feature in a bot.
 To do so, it uses a *consumer* bot, also known as *root* bot, to interact with a *skill* bot.
 
 Once the users sign in the root bot, they are not required to sign into each skill bot they might use through the root bot. This is because of SSO. Without it the users would have to sign in every time they communicate with a different skill bot.
-
 
 > [!NOTE]
 > The *consumer* bot is also called *root* or *parent* bot. The *skill* bot is also called *child* bot.\
@@ -43,7 +43,6 @@ Once the users sign in the root bot, they are not required to sign into each ski
 |:---|:---:|:---|
 | SSO with Simple Skill Consumer and Skill in [**CSharp**][cs-auth-sample] | v4 | SSO support |
 
-
 ## About the samples
 
 This article references two samples: the **RootBot** and the **SkillBot**. The **RootBot** forwards activities to the **SkillBot**. They model this *typical* skill scenario:
@@ -52,7 +51,6 @@ This article references two samples: the **RootBot** and the **SkillBot**. The *
 - Both the root and skill bots implement the basic authentication described in the [Add authentication to a bot](bot-builder-authentication.md) article.
 - The user logs into root bot.
 - Because of the SSO and being already logged into the root bot, she is logged into the skill bot without requiring user interaction again.
-
 
 For an overview of how the Bot Framework handles authentication, see [User authentication](bot-builder-concept-authentication.md).
 For SSO background information, see [Single sign on](bot-builder-concept-sso.md).
@@ -99,7 +97,7 @@ The Azure AD is a cloud identity service that allows you to build applications t
     > [!NOTE]
     > The *scopes* contains the URL that the user initially signs in into the root bot, while the *token exchange URL* is left empty.
     >
-    > As an example, let's assume that the root bot *appid* is *rootAppId* and the skill bot *appid* is *skillAppId*. The root bot's *scopes* will look like *api://rootAppId/customScope*, which is used to login the user. This root bot's *scopes* is then exchanged with *api://skillAppId/customscope* during SSO. 
+    > As an example, let's assume that the root bot *appid* is *rootAppId* and the skill bot *appid* is *skillAppId*. The root bot's *scopes* will look like *api://rootAppId/customScope*, which is used to login the user. This root bot's *scopes* is then exchanged with *api://skillAppId/customscope* during SSO.
 1. Copy and save the name of the connection.
 
 ## Create the Azure SkillBot resource
@@ -167,10 +165,8 @@ You must update the `appsettings.json` file in both samples as described below.
 
 # [C#](#tab/csharp)
 
-1. From the GitHub repository clone the sample
- [SSO with Simple Skill Consumer and Skill][cs-auth-sample]
-
- 1. Open the `SkillBot` project `appsettings.json` file. From the saved file, assign the following values:
+1. From the GitHub repository clone the [SSO with Simple Skill Consumer and Skill][cs-auth-sample] sample.
+1. Open the `SkillBot` project `appsettings.json` file. From the saved file, assign the following values:
 
     ```json
     {
@@ -198,16 +194,6 @@ You must update the `appsettings.json` file in both samples as described below.
     }
     ```
 
-<!--
-# [JavaScript](#tab/javascript)
-
-TBD
-
-# [Python](#tab/python)
-
-TBD
--->
-
 ---
 
 ## Test the samples
@@ -216,15 +202,15 @@ Use the following for testing:
 
 - `RootBot` commands
 
-    - `login` allows the user to sign into the Azure AD registration using the `RootBot`. Once signed in, SSO takes care of the sign in into the the `SkillBot` also. The user does not have to sign in again.
-    - `token` displays the user's token.
-    - `logout` logs the user out of the `RootBot`.
+  - `login` allows the user to sign into the Azure AD registration using the `RootBot`. Once signed in, SSO takes care of the sign in into the the `SkillBot` also. The user does not have to sign in again.
+  - `token` displays the user's token.
+  - `logout` logs the user out of the `RootBot`.
 
 - `SkillBot` commands
 
-    - `skill login` allows the `RootBot` to sign into the `SkillBot`, on behalf of the user. The user is not shown a sign in card, if already signed in, unless SSO fails.
-    - `skill token` displays the user's token from the `SkillBot`.
-    - `skill logout` logs the user out of the `SkillBot`
+  - `skill login` allows the `RootBot` to sign into the `SkillBot`, on behalf of the user. The user is not shown a sign in card, if already signed in, unless SSO fails.
+  - `skill token` displays the user's token from the `SkillBot`.
+  - `skill logout` logs the user out of the `SkillBot`
 
 >[!NOTE]
 > The first time users try SSO on a skill, they may be presented with an OAuth card to log in. This is because they have not yet given consent to the skill's Azure AD app. To avoid this, they can grant admin consent for any graph permissions requested by the Azure AD app.
@@ -244,12 +230,13 @@ After you have configured the authentication mechanism, you can perform the actu
 1. Start debugging locally on your machine.
 Notice that in the`RootBot` project `appsettings.json` file you have the following settings:
 
-```json
-    "SkillHostEndpoint": "http://localhost:3978/api/skills/"
-    "SkillEndpoint": "http://localhost:39783/api/messages"
-```
-> [!NOTE]
-> These settings imply that, with both `RootBot` and `SkillBot` are running on the local machine. The Emulator communicates with `RootBot` on port 3978 and `RootBot` communicates with `SkillBot` on port 39783. As soon as you start debugging, two default browser windows open. One on port 3978 and the other on port 39783.
+    ```json
+        "SkillHostEndpoint": "http://localhost:3978/api/skills/"
+        "SkillEndpoint": "http://localhost:39783/api/messages"
+    ```
+
+    > [!NOTE]
+    > These settings imply that, with both `RootBot` and `SkillBot` are running on the local machine. The Emulator communicates with `RootBot` on port 3978 and `RootBot` communicates with `SkillBot` on port 39783. As soon as you start debugging, two default browser windows open. One on port 3978 and the other on port 39783.
 
 1. Start the Emulator.
 1. You need to provide your `RootBot` registration app ID and password when you connect to the bot.
@@ -364,4 +351,3 @@ To see how the token exchange happens, please refer to the example shown below. 
 [cs-auth-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/sso-with-skills
 [js-auth-sample]: https://github.com/Microsoft/BotBuilder-Samples/blob/main/samples/javascript_nodejs/18.bot-authentication
 [python-auth-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/18.bot-authentication
-

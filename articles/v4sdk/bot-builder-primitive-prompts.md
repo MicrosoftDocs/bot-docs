@@ -3,11 +3,12 @@ title: Create your own prompts to gather user input in Bot Framework SDK
 description: Learn how to manage a conversation flow with primitive prompts in the Bot Framework SDK.
 keywords: conversation flow, prompts, conversation state, user state, custom prompts
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 10/06/2021
+ms.date: 11/18/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -75,7 +76,7 @@ You use the bot's message turn handler plus user and conversation state properti
 Create the user and conversation state objects at startup and consume them via dependency injection in the bot constructor.
 
 **Startup.cs**
-[!code-csharp[Startup.cs](~/../botbuilder-samples/samples/csharp_dotnetcore/44.prompt-users-for-input/Startup.cs?range=23-30)]
+[!code-csharp[Memory, state, and bot](~/../botbuilder-samples/samples/csharp_dotnetcore/44.prompt-users-for-input/Startup.cs?range=27-37)]
 
 **Bots/CustomPromptBot.cs**
 [!code-csharp[constructor](~/../botbuilder-samples/samples/csharp_dotnetcore/44.prompt-users-for-input/Bots/CustomPromptBot.cs?range=21-28)]
@@ -85,7 +86,7 @@ Create the user and conversation state objects at startup and consume them via d
 Create the user and conversation state objects in **index.js** and consume them in the bot constructor.
 
 **index.js**
-[!code-javascript[index.js](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/index.js?range=33-39)]
+[!code-javascript[index.js](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/index.js?range=49-52)]
 
 **bots/customPromptBot.js**
 [!code-javascript[constructor](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/bots/customPromptBot.js?range=20-22)]
@@ -181,7 +182,6 @@ When handling message activities, the message handler uses a helper method to ma
 **CustomPromptBot.java**
 [!code-java[message handler](~/../botbuilder-samples/samples/java_springboot/44.prompt-users-for-input/src/main/java/com/microsoft/bot/sample/promptusersforinput/CustomPromptBot.java?range=45-59)]
 
-
 ## [Python](#tab/python)
 
 **bots/custom_prompt_bot.py**
@@ -215,7 +215,6 @@ The validation methods are described in the following section.
 
 **CustomPromptBot.java**
 [!code-java[FillOutUserProfileAsync](~/../botbuilder-samples/samples/java_springboot/44.prompt-users-for-input/src/main/java/com/microsoft/bot/sample/promptusersforinput/CustomPromptBot.java?range=61-132)]
-
 
 ## [Python](#tab/python)
 

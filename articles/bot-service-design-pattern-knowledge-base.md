@@ -1,13 +1,13 @@
 ---
 title: Design knowledge bots - Bot Service
 description: Learn about different ways to design a knowledge bot that finds and returns information in response to the user's input or query.
-author: matvelloso
-ms.author: mateusv
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: conceptual
 ms.service: bot-service
-ms.date: 12/13/2017
-
+ms.date: 11/01/2021
 ---
 
 # Design knowledge bots
@@ -137,8 +137,8 @@ By training the model with example entities that are representative of the under
 Some knowledge bots might use QnA Maker to answer basic questions in combination with LUIS to determine intents, extract entities and invoke more elaborate dialogs. For example, consider a simple IT Help Desk bot. This bot may use QnA Maker to answer basic questions about Windows or Outlook, but it might also need to facilitate scenarios like password reset, which require intent recognition and back-and-forth communication between user and bot. There are a few ways that a bot may implement a hybrid of LUIS and QnA Maker:
 
 1. Call both QnA Maker and LUIS at the same time, and respond to the user by using information from the first one that returns a score of a specific threshold.
-2. Call LUIS first, and if no intent meets a specific threshold score, i.e., "None" intent is triggered, then call QnA Maker. Alternatively, create a LUIS intent for QnA Maker, feeding your LUIS model with example QnA questions that map to "QnAIntent."
-3. Call QnA Maker first, and if no answer meets a specific threshold score, then call LUIS.
+1. Call LUIS first, and if no intent meets a specific threshold score, i.e., "None" intent is triggered, then call QnA Maker. Alternatively, create a LUIS intent for QnA Maker, feeding your LUIS model with example QnA questions that map to "QnAIntent."
+1. Call QnA Maker first, and if no answer meets a specific threshold score, then call LUIS.
 
 The Bot Framework SDK provides built-in support for LUIS and QnA Maker. This enables you to trigger dialogs or automatically answer questions using LUIS and/or QnA Maker without having to implement custom calls to either tool. See how to [Use multiple LUIS and QnA models with Orchestrator](v4sdk/bot-builder-tutorial-orchestrator.md) for more information.
 
@@ -153,6 +153,7 @@ The Bot Framework SDK provides built-in support for LUIS and QnA Maker. This ena
 ## Sample code
 
 - For a sample that shows how to create a basic knowledge bot using the Bot Framework SDK for .NET, see the [Knowledge Bot sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/11.qnamaker) on GitHub.
+
 <!-- TODO: Do not have a current bot sample to work with this
 - For a sample that shows how to create more complex knowledge bots using the Bot Framework SDK for .NET, see the [Search-powered Bots sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/demo-Search) on GitHub.
 -->

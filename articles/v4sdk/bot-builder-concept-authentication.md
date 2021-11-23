@@ -3,11 +3,12 @@ title: User authentication in the Azure Bot Service - Bot Service
 description: Learn about user authentication features in the Azure Bot Service. See how bots use OAuth connections to sign in users and access secured online resources.
 keywords: azure bot service, authentication, bot framework token service
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: conceptual
 ms.service: bot-service
-ms.date: 05/31/2019
+ms.date: 11/01/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -51,8 +52,9 @@ The Bot Framework Token Service is responsible for:
 - Acquiring user tokens.
     > [!TIP]
     > If the bot has an expired user token, the bot should:
-    >    - Log the user out
-    >    - Initiate the sign in flow again
+    >
+    > - Log the user out
+    > - Initiate the sign in flow again
 
 For example, a bot that can check a user's recent emails, using the Microsoft Graph API, requires a user token from an **Identity Provider**, in this case **Azure Active Directory**. At design time, the bot developer performs these two important steps:
 

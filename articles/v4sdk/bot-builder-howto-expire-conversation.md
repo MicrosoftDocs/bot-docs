@@ -2,12 +2,13 @@
 title: Expire a conversation - Bot Service
 description: Learn how to expire a user's conversation with a bot.
 keywords: expire, timeout
-author: ericdahlvang
-ms.author: erdahlva
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 07/14/2020
+ms.date: 11/01/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -240,7 +241,6 @@ Finally, add code to the bot's `onTurn` method to clear the dialog state if the 
         });
     }
 ```
-
 
 ## [Python](#tab/python)
 

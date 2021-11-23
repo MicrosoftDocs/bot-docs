@@ -1,12 +1,13 @@
 ---
 title: Receive messages from the bot - Bot Service
 description: Learn how to use version 1.1 of the Direct Line API to receive messages from bots. See how to issue GET requests. Become familiar with timing considerations. 
-author: RobStand
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 12/13/2017
+ms.date: 11/01/2021
 ---
 
 # Receive messages from the bot in Direct Line API 1.1
@@ -14,13 +15,13 @@ ms.date: 12/13/2017
 > [!IMPORTANT]
 > This article describes how to receive messages from the bot using Direct Line API 1.1. If you are creating a new connection between your client application and bot, use [Direct Line API 3.0](bot-framework-rest-direct-line-3-0-receive-activities.md) instead.
 
-Using the Direct Line 1.1 protocol, clients must poll an `HTTP GET` interface to receive messages. 
+Using the Direct Line 1.1 protocol, clients must poll an `HTTP GET` interface to receive messages.
 
 ## Retrieve messages with HTTP GET
 
 To retrieve messages for a specific conversation, issue a `GET` request to the `api/conversations/{conversationId}/messages` endpoint, optionally specifying the `watermark` parameter to indicate the most recent message seen by the client. An updated `watermark` value will be returned in the JSON response, even if no messages are included.
 
-The following snippets provide an example of the Get Messages request and response. The Get Messages response contains `watermark` as a property of the [MessageSet](bot-framework-rest-direct-line-1-1-api-reference.md#messageset-object). Clients should page through the available messages by advancing the `watermark` value until no messages are returned. 
+The following snippets provide an example of the Get Messages request and response. The Get Messages response contains `watermark` as a property of the [MessageSet](bot-framework-rest-direct-line-1-1-api-reference.md#messageset-object). Clients should page through the available messages by advancing the `watermark` value until no messages are returned.
 
 ### Request
 

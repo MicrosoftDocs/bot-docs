@@ -1,21 +1,24 @@
 ---
 title: Send and receive messages - Bot Service
 description: Learn how to use bots to exchange messages with users. See how to use the Bot Connector service to send messages and replies and to start conversations. 
-author: RobStand
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 12/13/2017
+ms.date: 11/01/2021
 ---
 
 # Send and receive messages with the Bot Connector API
 
-The Bot Connector service enables a bot to communicate across multiple channels such as Email, Slack, and more. It facilitates communication between bot and user, by relaying [activities](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md) from bot to channel and from channel to bot. Every activity contains information used for routing the message to the appropriate destination along with information about who created the message, the context of the message, and the recipient of the message. This article describes how to use the Bot Connector service to exchange **message** activities between bot and user on a channel. 
+The Bot Connector service enables a bot to communicate across multiple channels such as Email, Slack, and more. It facilitates communication between bot and user, by relaying [activities](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md) from bot to channel and from channel to bot. Every activity contains information used for routing the message to the appropriate destination along with information about who created the message, the context of the message, and the recipient of the message. This article describes how to use the Bot Connector service to exchange **message** activities between bot and user on a channel.
 
-## <a id="create-reply"></a> Reply to a message
+<a id="create-reply"></a>
 
-### Create a reply 
+## Reply to a message
+
+### Create a reply
 
 When the user sends a message to your bot, your bot will receive the message as an [Activity][] object of type **message**. To create a reply to a user's message, create a new `Activity` object and start by setting these properties:
 
@@ -32,9 +35,9 @@ Next, set the properties that specify the information that you want to communica
 
 ### Send the reply
 
-Use the `serviceUrl` property in the incoming activity to [identify the base URI](bot-framework-rest-connector-api-reference.md#base-uri) that your bot should use to issue its response. 
+Use the `serviceUrl` property in the incoming activity to [identify the base URI](bot-framework-rest-connector-api-reference.md#base-uri) that your bot should use to issue its response.
 
-To send the reply, issue this request: 
+To send the reply, issue this request:
 
 ```http
 POST /v3/conversations/{conversationId}/activities/{activityId}
@@ -70,34 +73,36 @@ Content-Type: application/json
 }
 ```
 
-## <a id="send-message"></a> Send a (non-reply) message
+<a id="send-message"></a>
 
-A majority of the messages that your bot sends will be in reply to messages that it receives from the user. However, there may be times when your bot needs to send a message to the conversation that is not a direct reply to any message from the user. For example, your bot may need to start a new topic of conversation or send a goodbye message at the end of the conversation. 
+## Send a (non-reply) message
 
-To send a message to a conversation that is not a direct reply to any message from the user, issue this request: 
+A majority of the messages that your bot sends will be in reply to messages that it receives from the user. However, there may be times when your bot needs to send a message to the conversation that is not a direct reply to any message from the user. For example, your bot may need to start a new topic of conversation or send a goodbye message at the end of the conversation.
+
+To send a message to a conversation that is not a direct reply to any message from the user, issue this request:
 
 ```http
 POST /v3/conversations/{conversationId}/activities
 ```
 
-In this request URI, replace **{conversationId}** with the ID of the conversation. 
-    
+In this request URI, replace **{conversationId}** with the ID of the conversation.
+
 Set the body of the request to an [Activity][] object that you create to represent your reply.
 
 > [!NOTE]
-> The Bot Framework does not impose any restrictions on the number of messages that a bot may send. 
-> However, most channels enforce throttling limits to restrict bots from sending a large number of messages in a short period of time. 
+> The Bot Framework does not impose any restrictions on the number of messages that a bot may send.
+> However, most channels enforce throttling limits to restrict bots from sending a large number of messages in a short period of time.
 > Additionally, if the bot sends multiple messages in quick succession, the channel may not always render the messages in the proper sequence.
 
 ## Start a conversation
 
-There may be times when your bot needs to initiate a conversation with one or more users. 
-To start a conversation with a user on a channel, your bot must know its account information and the user's account information on that channel. 
+There may be times when your bot needs to initiate a conversation with one or more users.
+To start a conversation with a user on a channel, your bot must know its account information and the user's account information on that channel.
 
 > [!TIP]
-> If your bot may need to start conversations with its users in the future, cache user account information, other relevant information such as user preferences and locale, and the service URL (to use as the base URI in the Start Conversation request). 
+> If your bot may need to start conversations with its users in the future, cache user account information, other relevant information such as user preferences and locale, and the service URL (to use as the base URI in the Start Conversation request).
 
-To start a conversation, issue this request: 
+To start a conversation, issue this request:
 
 ```http
 POST /v3/conversations
@@ -133,7 +138,7 @@ Content-Type: application/json
 }
 ```
 
-If the conversation is established with the specified users, the response will contain an ID that identifies the conversation. 
+If the conversation is established with the specified users, the response will contain an ID that identifies the conversation.
 
 ```json
 {

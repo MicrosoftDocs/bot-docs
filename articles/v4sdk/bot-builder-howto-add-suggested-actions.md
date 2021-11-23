@@ -2,12 +2,13 @@
 title: Use button for input - Bot Service
 description: Learn how to send suggested actions within messages using the Bot Framework SDK for JavaScript.
 keywords: suggested actions, buttons, extra input
-author: Kaiqb
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.date:  12/10/2019
+ms.date: 11/01/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 

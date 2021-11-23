@@ -2,24 +2,24 @@
 title: Identity providers proxy - Bot Service
 description: Creating an OAuth2 proxy service to call custom or advanced identity providers in the Azure Bot Service.
 keywords: azure bot service, authentication, identity providers proxy, bot framework token service
-author: kamrani
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 07/07/2021
+ms.date: 11/01/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
 # Identity providers proxy
 
-This document explains how to create a proxy to interact with custom or advanced identity providers that use OAuth2 protocol. 
- 
+This document explains how to create a proxy to interact with custom or advanced identity providers that use OAuth2 protocol.
+
 The Bot Framework allows users to log in using a variety of identity providers that use the OAuth2 protocol. However, identity providers can deviate from the core OAuth2 protocol, by offering more advanced capabilities, or alternative sign-in options. In these cases, you may not find an appropriate *connection setting configuration* that works for you. A possible solution is to do the following:
 
-1. Write an **OAuth2 provider proxy** that is in between the Bot Framework token service and the *more customized or advanced* identity provider. 
+1. Write an **OAuth2 provider proxy** that is in between the Bot Framework token service and the *more customized or advanced* identity provider.
 1. Configure the connection setting to call this proxy, and have this proxy make the calls to the custom or advanced identity provider. The proxy can also map or transform responses to make them conform to what the Bot Framework token service expects.
-
 
 ## OAuth2 Proxy Service
 
@@ -27,7 +27,7 @@ To build an **OAuth2 Proxy Service**, you need to implement a REST service with 
 
 ### Authorize API
 
-The authorize API is an **HTTP GET** that authorizes the caller, generates a code property, and redirects to the redirect URI. 
+The authorize API is an **HTTP GET** that authorizes the caller, generates a code property, and redirects to the redirect URI.
 
 ```csharp
 [HttpGet("authorize")]

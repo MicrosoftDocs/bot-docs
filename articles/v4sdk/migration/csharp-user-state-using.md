@@ -2,11 +2,13 @@
 title: Using .NET v3 user state in a v4 bot - Bot Service
 description: See an example of how to use C# v3 user state in a C# v4 bot.
 keywords: Csharp, bot migration, v3 bot
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 04/20/2021
+ms.date: 11/02/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -57,7 +59,6 @@ The code sample can be found in [v4 state bot from v3 providers](https://github.
         - Navigate to `BotBuilder-Samples/Migration/MigrationV3V4/CSharp/V4StateBotFromV3Providers` folder
         - Select `V4StateBot.sln` file
         - Press F5 to run the project
-
 
 ## Storage Provider setup
 
@@ -119,20 +120,17 @@ The `V3V4Storage` class contains the main storage mapping functionality. It impl
 
 This class inherits from the v4 `BotState` class, and uses a v3-style key (`IAddress`). This allows reads, writes & deletes to v3 storage in the same way V3 state storage has always worked.
 
-
 ## Testing the bot using Bot Framework Emulator
 
 [Bot Framework Emulator][5] is a desktop application that allows bot developers to test and debug their bots on localhost or running remotely through a tunnel.
 
 - Install the Bot Framework Emulator, [version 4.3.0 or later][6].
 
-
 ### Connect to the bot using Bot Framework Emulator
 
 - Launch Bot Framework Emulator
 - File -> Open Bot
 - Enter a Bot URL of `http://localhost:3978/api/messages`
-
 
 ## Further reading
 

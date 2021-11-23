@@ -2,12 +2,13 @@
 title: Analyze the telemetry data from your bot - Bot Service
 description: Learn how to analyze bot behavior with Kusto queries.
 keywords: telemetry, appinsights, monitor bot, Kusto, queries
-author: WashingtonKayaker
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 05/04/2020
+ms.date: 11/01/2021
 ---
 
 # Analyze your bot's telemetry data
@@ -28,6 +29,7 @@ It is helpful to have a basic understanding of the following concepts:
 
 > [!TIP]
 > If your create your bot using tools such as [Power Virtual Agents](/power-virtual-agents/fundamentals-what-is-power-virtual-agents) or [Composer](/composer), you will want to use the Adaptive Dialog version of each query when available.
+
 ## Dashboards
 
 Azure Dashboards offer a great way to view and share the information generated from your queries.  You can build custom dashboards to help monitor your bots activity by associating your queries with the tiles that you add to your dashboard. For more information on dashboards and how to associate your queries with them, see [Create and share dashboards of Log Analytics data](/azure/azure-monitor/learn/tutorial-logs-dashboards). The remainder of this article shows examples of some of the queries that you may find useful in monitoring your bots behavior.  
@@ -170,6 +172,7 @@ Once you set the telemetry client for a dialog, the dialog (and its children) wi
 
 > [!TIP]
 > If your create your bot using tools such as [Power Virtual Agents](/power-virtual-agents/fundamentals-what-is-power-virtual-agents) or [Composer](/composer/), you will want to use the adaptive dialog version of each query.
+
 #### Waterfall dialog completion
 
 ```Kusto
@@ -199,8 +202,9 @@ customEvents
 > The Kusto [join operator](/azure/data-explorer/kusto/query/joinoperator) is used to merge the rows of two tables to form a new table by matching values of the specified column(s) from each table.
 >
 > The [project operator](/azure/data-explorer/kusto/query/projectoperator) is used to select the fields that you want to show up in your output. Similar to the `extend operator` that adds a new field, the `project operator` can either choose from the existing set of fields or add a new field.
+
 #### Adaptive dialogs started and completed
- 
+
 ```Kusto
 // % Completed adaptive dialog: shows completes relative to starts. This type is the default dialog type when using Power Virtual Agents or Composer. 
 customEvents
@@ -211,6 +215,7 @@ customEvents
 | order by started desc, completed asc nulls last
 | render barchart with (kind=unstacked, xcolumn=DialogId, ycolumns=completed, started, ysplit=axes)
 ```
+
 #### Sample dialog-completion query results
 
 ![Dialog completion](./media/dialogwfratio.PNG)
@@ -254,6 +259,7 @@ customEvents
 | order by cnt
 | render barchart
 ```
+
 #### Adaptive dialogs not completed
 
 ```Kusto
@@ -340,9 +346,9 @@ DialogActivity("<SampleDialogId>")
 | 2019-08-28T19:41... | WaterfallStep _<sup>2</sup>_ | GetPointOfInterestLocations   | ...8137d76a5cbb |
 | 2019-08-28T19:41... | WaterfallStart             | null                            | ...8137d76a5cbb |
 
-<sub>1 _Completed_</sub>
+<sub>1</sub> _Completed_
 
-<sub>2 _Abandoned_</sub>
+<sub>2</sub> _Abandoned_
 
 _Interpretation: Users seem to abandon the conversation at the GetPointOfInterestLocations step._
 

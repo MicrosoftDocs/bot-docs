@@ -3,7 +3,7 @@
 - name: Overview
   items:
   - name: What is the Bot Framework SDK?
-    href: bot-service-overview-introduction.md
+    href: bot-service-overview.md
   - name: Choose the right chatbot solution for your use case
     href: bot-overview.md
   - name: What's new
@@ -70,6 +70,8 @@
       href: v4sdk/bot-builder-concept-waterfall-dialogs.md
     - name: Middleware
       href: v4sdk/bot-builder-concept-middleware.md
+    - name: Language understanding
+      href: v4sdk/bot-builder-concept-luis.md
     - name: Understand the structure of an echo bot
       href: v4sdk/bot-builder-create-a-bot-project.md
   - name: How bots for Microsoft Teams work
@@ -140,14 +142,10 @@
       href: v4sdk/bot-builder-howto-expire-conversation.md
     - name: Language understanding
       items:
-      - name: LUIS
-        items:
-        - name: Add natural language understanding to your bot
-          href: v4sdk/bot-builder-howto-v4-luis.md
-      - name: QnA Maker
-        items:
-        - name: Answer user's questions using QnA Maker
-          href: v4sdk/bot-builder-howto-qna.md
+      - name: Add natural language understanding to your bot
+        href: v4sdk/bot-builder-howto-v4-luis.md
+      - name: Answer user's questions using QnA Maker
+        href: v4sdk/bot-builder-howto-qna.md
       - name: Use multiple LUIS and QnA models
         items:
         - name: Use Orchestrator for intent resolution

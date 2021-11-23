@@ -1,13 +1,13 @@
 ---
 title: Embed a bot in an app - Bot Service
 description: Learn how to embed bots in apps. See how to integrate bots with native mobile apps, web-based mobile apps, IoT apps, and other app types. View sample code.
-author: matvelloso
-ms.author: mateusv
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: conceptual
 ms.service: bot-service
-ms.date: 08/15/2018
- 
+ms.date: 11/01/2021
 ---
 
 # Embed a bot in an app
@@ -39,7 +39,7 @@ In some scenarios, it may also use [Microsoft Cognitive Services](https://www.mi
 
 ### Other types of apps and games
 
-Other types of apps and games can communicate with the Bot Framework by using the [Direct Line API][directLineAPI]. 
+Other types of apps and games can communicate with the Bot Framework by using the [Direct Line API][directLineAPI].
 
 ## Creating a cross-platform mobile app that runs a bot
 
@@ -49,20 +49,19 @@ First, create a simple web view component and use it to host a [Web Chat](https:
 
 Next, specify the registered web chat URL as the source for the web view control in the Xamarin app:
 
-```cs
+```csharp
 public class WebPage : ContentPage
 {
-	public WebPage()
-	{
-		var browser = new WebView();
-		browser.Source = "https://webchat.botframework.com/embed/<YOUR SECRET KEY HERE>";
-		this.Content = browser;
-	}
+public WebPage()
+    {
+        var browser = new WebView();
+        browser.Source = "https://webchat.botframework.com/embed/<YOUR SECRET KEY HERE>";
+        this.Content = browser;
+    }
 }
 ```
 
-Using this process, you can create a cross-platform mobile application 
-that renders the embedded web view with the web chat control.
+Using this process, you can create a cross-platform mobile application that renders the embedded web view with the web chat control.
 
 ![Back-channel](media/bot-service-design-pattern-embed-app/xamarin-apps.png)
 

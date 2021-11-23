@@ -3,11 +3,12 @@ title: Implement a skill consumer | Microsoft Docs
 description: Learn how to implement a skill consumer, using the Bot Framework SDK.
 keywords: skills
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: how-to
 ms.service: bot-service
-ms.date: 10/21/2021
+ms.date: 11/19/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -26,6 +27,8 @@ A _root bot_ is a user-facing bot that can invoke one or more skills. A root bot
 This article demonstrates how to implement a skill consumer that uses the echo skill to echo the user's input. For a sample skill manifest and information about implementing the echo skill, see how to [implement a skill](skill-implement-skill.md).
 
 For information about using a skill dialog to consume a skill, see how to [use a dialog to consume a skill](skill-use-skilldialog.md).
+
+[!INCLUDE [skills-and-identity-types](../includes/skills-and-identity-types.md)]
 
 ## Prerequisites
 
@@ -71,26 +74,26 @@ For information about the echo skill bot, see how to [Implement a skill](skill-i
 
 ## Resources
 
-For deployed bots, bot-to-bot authentication requires that each participating bot has a valid app ID and password.
-However, you can test skills and skill consumers locally with the Emulator without an app ID and password.
+For deployed bots, bot-to-bot authentication requires that each participating bot has valid identity information.
+However, you can test multi-tenant skills and skill consumers locally with the Emulator without an app ID and password.
 
 ## Application configuration
 
-1. Optionally, add the root bot's app ID and password to the config file.
+1. Optionally, add the root bot's identity information to its config file. If either the skill or skill consumer provides identity information, both must.
 1. Add the skill host endpoint (the service or callback URL) to which the skills should reply to the skill consumer.
 1. Add an entry for each skill the skill consumer will use. Each entry includes:
    - An ID the skill consumer will use to identify each skill.
-   - Optionally, the skill's app ID.
+   - Optionally, the skill's app or client ID.
    - The skill's messaging endpoint.
 
 > [!NOTE]
-> If either the skill or skill consumer uses an app ID and password, both must.
+> If either the skill or skill consumer provides identity information, both must.
 
 ### [C#](#tab/cs)
 
 **SimpleRootBot\appsettings.json**
 
-Optionally, add the root bot's app ID and password and add the app ID for the echo skill bot to the `BotFrameworkSkills` array.
+Optionally, add the root bot's identity information and add the app or client ID for the echo skill bot.
 
 [!code-csharp[configuration file](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/appsettings.json)]
 
@@ -98,7 +101,7 @@ Optionally, add the root bot's app ID and password and add the app ID for the ec
 
 **echo-skill-bot/.env**
 
-Optionally, add the root bot's app ID and password and add the app ID for the echo skill bot.
+Optionally, add the root bot's identity information and add the app or client ID for the echo skill bot.
 
 [!code-javascript[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/.env)]
 
@@ -140,7 +143,7 @@ This sample reads information for each skill in the configuration file into a co
 
 **DialogRootBot\SkillsConfiguration.java**
 
-[!code-java[skills configuration](~/../botbuilder-samples/samples/java_springboot/80.skills-simple-bot-to-bot/DialogRootBot/src/main/java/com/microsoft/bot/sample/simplerootbot/SkillsConfiguration.java?range=19-61)]
+[!code-java[skills configuration](~/../botbuilder-samples/samples/java_springboot/80.skills-simple-bot-to-bot/DialogRootBot/src/main/java/com/microsoft/bot/sample/simplerootbot/SkillsConfiguration.java?range=19-77)]
 
 ### [Python](#tab/python)
 
@@ -161,9 +164,7 @@ The conversation ID factory for this sample supports a simple scenario where:
 
 ### [C#](#tab/cs)
 
-**SimpleRootBot\SkillConversationIdFactory.cs**
-
-[!code-csharp[Conversation ID factory](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/SkillConversationIdFactory.cs?range=17-44)]
+The SDK provides a `SkillConversationIdFactory` class that can be used across any skill without requiring the source code to be replicated. The conversation ID factory is configured in **Startup.cs**.
 
 ### [JavaScript](#tab/js)
 
@@ -198,13 +199,15 @@ The handler uses the conversation ID factory, the authentication configuration, 
 
 **SimpleRootBot\Startup.cs**
 
-[!code-csharp[skill ID factory, client, and handler](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/Startup.cs?range=39-42)]
+[!code-csharp[SkillConversationIdFactory and CloudSkillHandler](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/Startup.cs?range=68-70)]
 
 ### [JavaScript](#tab/js)
 
 **simple-root-bot/index.js**
 
-[!code-javascript[skill ID factory, credential provider, client, and handler](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=113,119,122,147-148)]
+[!code-javascript[SkillConversationIdFactory and createBotFrameworkClient](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=157-161)]
+
+[!code-javascript[CloudSkillHandler](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=184)]
 
 ### [Java](#tab/java)
 
@@ -245,15 +248,15 @@ Of note, the skill consumer logic should:
 The root bot has dependencies on conversation state, the skills information, the skill client, and the general configuration. ASP.NET provides these objects through dependency injection.
 The root bot also defines a conversation state property accessor to track which skill is active.
 
-[!code-csharp[Root bot dependencies](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/Bots/RootBot.cs?range=21-47)]
+[!code-csharp[Root bot properties and constructor](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/Bots/RootBot.cs?range=20-49)]
 
 This sample has a helper method for forwarding activities to a skill. It saves conversation state before invoking the skill, and it checks whether the HTTP request was successful.
 
-[!code-csharp[Send to skill](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/Bots/RootBot.cs?range=128-142)]
+[!code-csharp[Send to skill](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/Bots/RootBot.cs?range=131-157)]
 
 Of note, the root bot includes logic for forwarding activities to the skill, starting the skill at the user's request, and stopping the skill when the skill completes.
 
-[!code-csharp[OnMessageActivityAsync, OnEndOfConversationActivityAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/Bots/RootBot.cs?range=70-115)]
+[!code-csharp[OnMessageActivityAsync, OnEndOfConversationActivityAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/Bots/RootBot.cs?range=73-118)]
 
 ### [JavaScript](#tab/js)
 
@@ -262,15 +265,17 @@ Of note, the root bot includes logic for forwarding activities to the skill, sta
 The root bot has dependencies on conversation state, the skills information, and the skill client.
 The root bot also defines a conversation state property accessor to track which skill is active.
 
-[!code-javascript[Root bot dependencies](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/rootBot.js?range=7-24)]
+[!code-javascript[Root bot dependencies](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/rootBot.js?range=7-17)]
+
+[!code-javascript[Property accessor](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/rootBot.js?range=25-26)]
 
 This sample has a helper method for forwarding activities to a skill. It saves conversation state before invoking the skill, and it checks whether the HTTP request was successful.
 
-[!code-javascript[Send to skill](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/rootBot.js?range=111-123)]
+[!code-javascript[Send to skill](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/rootBot.js?range=113-133)]
 
 Of note, the root bot includes logic for forwarding activities to the skill, starting the skill at the user's request, and stopping the skill when the skill completes.
 
-[!code-javascript[onMessage, onEndOfConversation](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/rootBot.js?range=44-86)]
+[!code-javascript[onMessage, onEndOfConversation](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/rootBot.js?range=45-88)]
 
 ### [Java](#tab/java)
 
@@ -320,13 +325,13 @@ It's a good practice to send an _end of conversation_ activity to any active ski
 
 In this sample, the turn error logic is split up among a few helper methods.
 
-[!code-csharp[On turn error](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/AdapterWithErrorHandler.cs?range=40-120)]
+[!code-csharp[HandleTurnError, SendErrorMessageAsync, EndSkillConversationAsync, and ClearConversationStateAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/AdapterWithErrorHandler.cs?range=39-122)]
 
 ### [JavaScript](#tab/js)
 
 **simple-root-bot/index.js**
 
-[!code-javascript[On turn error](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=34-101)]
+[!code-javascript[Adapter and on turn error](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=74-146)]
 
 ### [Java](#tab/java)
 
@@ -358,7 +363,7 @@ The bot defines an endpoint that forwards incoming skill activities to the root 
 
 **simple-root-bot/index.js**
 
-[!code-javascript[skill endpoint](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=149-150)]
+[!code-javascript[skill endpoint](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=184-186)]
 
 ### [Java](#tab/java)
 
@@ -383,15 +388,13 @@ This sample uses the same authentication configuration logic for validating acti
 
 **SimpleRootBot\Startup.cs**
 
-[!code-csharp[ConfigureServices](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/Startup.cs?range=20-52)]
+[!code-csharp[AuthenticationConfiguration and BotFrameworkAuthentication](~/../botbuilder-samples/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/SimpleRootBot/Startup.cs?range=30-60)]
 
 ### [JavaScript](#tab/js)
 
 **simple-root-bot/index.js**
 
-[!code-javascript[services](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=27-31)]
-
-[!code-javascript[services](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=109-144)]
+[!code-javascript[skillsConfig, claimsValidators, authConfig, and bot auth](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/simple-root-bot/index.js?range=39-72)]
 
 ### [Java](#tab/java)
 
@@ -451,12 +454,3 @@ To use the _expect replies_ delivery mode:
 - Process each activity, either within the root bot or by sending it on to the channel that initiated the original request.
 
 Expect replies can be useful in situations in which the bot that replies to an activity needs to be the same instance of the bot that received the activity.
-
-<!--
-## Next steps
-
-TBD: Claims validation? Skill manifest?
-
-> [!div class="nextstepaction"]
-> [Add claims validation](skill-add-claims-validation.md)
--->

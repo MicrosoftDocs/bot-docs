@@ -1,12 +1,13 @@
 ---
 title: Bot Framework security guidelines - Bot Service
 description: Learn about the security guidelines in the Bot Framework.
-author: mmiele
-ms.author: kamrani
-manager: kamrani
-ms.topic: article
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: conceptual
 ms.service: bot-service
-ms.date: 08/04/2021
+ms.date: 11/01/2021
 ---
 
 # Bot Framework security guidelines
@@ -99,7 +100,6 @@ For more information, see the [User authentication](~/v4sdk/bot-builder-concept-
 ### Web Chat
 
 When you use the [Web Chat](~/bot-service-channel-connect-webchat.md) control you must keep in mind some important security considerations about impersonation and identity spoofing. For more information, see [Direct Line enhanced authentication](bot-builder-security-enhanced.md).
-
 
 ## Additional information
 
