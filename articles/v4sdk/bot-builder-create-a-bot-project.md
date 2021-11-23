@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/08/2021
+ms.date: 11/18/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -157,11 +157,11 @@ The adapter allows you to add your own _on turn error_ handler.
 
 The adapter to use is defined in the `ConfigureServices` method.
 
-[!code-csharp[adapter](~/../botbuilder-samples/samples/csharp_dotnetcore/02.echo-bot/Startup.cs?range=30-31)]
+[!code-csharp[adapter](~/../botbuilder-samples/samples/csharp_dotnetcore/02.echo-bot/Startup.cs?range=34-35)]
 
 **AdapterWithErrorHandler.cs**
 
-[!code-csharp[adapter](~/../botbuilder-samples/samples/csharp_dotnetcore/02.echo-bot/AdapterWithErrorHandler.cs?range=12-33)]
+[!code-csharp[adapter](~/../botbuilder-samples/samples/csharp_dotnetcore/02.echo-bot/AdapterWithErrorHandler.cs?range=11-32)]
 
 ### [JavaScript](#tab/javascript)
 
@@ -202,7 +202,7 @@ The echo bot welcomes a user when they join the conversation and echoes back any
 
 The bot to use is defined in the `ConfigureServices` method.
 
-[!code-csharp[adapter](~/../botbuilder-samples/samples/csharp_dotnetcore/02.echo-bot/Startup.cs?range=33-34)]
+[!code-csharp[EchoBot](~/../botbuilder-samples/samples/csharp_dotnetcore/02.echo-bot/Startup.cs?range=37-38)]
 
 **Bots\\EchoBot.cs**
 
