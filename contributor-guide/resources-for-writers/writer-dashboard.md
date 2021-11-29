@@ -38,7 +38,7 @@ See GitHub's [Searching issues and pull requests](https://docs.github.com/en/git
 |Resource|Notes|
 |:-|:-|
 |[Glossary](https://github.com/MicrosoftDocs/bot-docs-pr/blob/master/contributor-guide/bot-framework-glossary.md)|Evolving notes for product and service names, and bot-specific and -adjacent terminology.|
-|[Text formatting guidelines](https://github.com/MicrosoftDocs/bot-docs-pr/blob/master/contributor-guide/formatting-text.md)|Rules of thumb for formatting text i our doc set.|
+|[Text formatting guidelines](https://github.com/MicrosoftDocs/bot-docs-pr/blob/master/contributor-guide/formatting-text.md)|Rules of thumb for formatting text in our doc set.|
 
 | Bot Framework documentation |  |
 |:-|:-|
