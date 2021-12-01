@@ -3,28 +3,30 @@ title: Configure Node.js bots for the Direct Line App Service extension in the B
 description: Configure Node.js bots to work with named pipes. Enable the Direct Line App Service extension and configure bots to use the extension.
 services: bot-service
 author: JonathanFingold
-ms.author: dev
-manager: kamrani
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 10/21/2021
+ms.date: 11/30/2021
 ---
 
 # Configure Node.js bot for extension
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-This article describes how to update a bot to work with **named pipes**, and how to enable the Direct Line app service extension in the **Azure App Service** resource where the bot is hosted.
+This article describes how to update a Node.js bot to work with named pipes and how to enable the Direct Line App Service extension in the Azure App Service resource where the bot is hosted.
 
 ## Prerequisites
 
-- A bot deployed in Azure, built with the Bot Framework SDK version 4.7 or later.
+- A Node.js bot deployed in Azure
+- Bot Framework SDK for Node.js, 4.7 or later
 
-## Enable Direct Line app service extension
+## Enable Direct Line App Service extension
 
-This section describes how to enable the Direct Line app service extension using the app service extension key from your bot's Direct Line channel configuration.
+This section describes how to enable the Direct Line App Service extension using the App Service extension key from your bot's Direct Line channel configuration.
 
-## Update Node.js Bot to use Direct Line App Service Extension
+## Update Node.js Bot to use Direct Line App Service extension
 
 1. Allow your app to use the **Direct Line App Service Extension Named Pipe**:
 
@@ -40,7 +42,7 @@ This section describes how to enable the Direct Line app service extension using
     ```
 
 1. Save the `index.js` file.
-1. Update the `Web.Config` file to add the `AspNetCore` handler and rule needed by Direct Line App Service Extension to service requests:
+1. Update the `Web.Config` file to add the `AspNetCore` handler and rule needed by Direct Line App Service extension to service requests:
 
     Locate the `Web.Config` file in the `wwwroot` directory of your bot and modify the contents to include the following entries to the `Handlers` and `Rules` sections:
 
@@ -51,7 +53,7 @@ This section describes how to enable the Direct Line app service extension using
     
     <rewrite>
       <rules>
-        <!-- Do not interfere with Direct Line App Service Extension requests. (This rule should be as high in the rules section as possible to avoid conflicts.) -->
+        <!-- Do not interfere with Direct Line App Service extension requests. (This rule should be as high in the rules section as possible to avoid conflicts.) -->
         <rule name ="DLASE" stopProcessing="true">
           <conditions>
             <add input="{REQUEST_URI}" pattern="^/.bot"/>
@@ -63,58 +65,60 @@ This section describes how to enable the Direct Line app service extension using
 
 1. Deploy your updated bot to Azure.
 
-### Enable bot Direct Line app service extension
+### Enable bot Direct Line App Service extension
 
-1. In the Azure portal, locate your Azure Bot resource.
-1. From the left panel menu under *Bot management* click on **Channels** to configure the **Azure Bot Service** channels your bot accepts messages from.
-1. If it is not already enabled, click on the **Direct Line** channel and follow instructions to enable the channel.
-1. In the **Connect to channels** table click on the **Edit** link on the Direct Line row.
-1. Scroll down to the **App Service Extension Keys** section.
-1. Click on the **Show** link to reveal one of the keys. You will use this value in the steps below.
-1. From the left panel menu under *Application settings* section, click the **Configuration** item.
-1. In the right panel, add the following new settings:
+1. In the Azure portal, go to your **Azure Bot** resource.
+    1. From the left panel menu under **Bot management** select **Channels** to configure the **Azure Bot Service** channels your bot accepts messages from.
+    1. If it is not already enabled, select the **Direct Line** channel and follow instructions to enable the channel.
+    1. In the **Connect to channels** table select the **Edit** link on the **Direct Line** row.
+    1. Scroll down to the **App Service extension Keys** section.
+    1. Select the **Show** link to reveal one of the keys. Copy this value for use later.
+1. Go to the home page, select **App Services** at the top of the page. Alternatively, display the portal menu and then select the **App Services** menu item, in the left panel. Azure displays the **App Services** page.
+1. In the search box enter your **Azure Bot** resource name. Your resource will be listed.
 
-    |Name|Value|
-    |---|---|
-    |DirectLineExtensionKey|<App_Service_Extension_Key>|
-    |DIRECTLINE_EXTENSION_VERSION|latest|
+    Notice that if you hover over the icon or the menu item, you get the list of the last resources you viewed. Chances are your **Azure Bot** resource will be listed.
 
-    Where the *App_Service_Extension_Key* is the value you saved earlier.
+1. Select your resource link.
+    1. In the **Settings** section, select the **Configuration** menu item.
+    1. In the right panel, add the following settings:
 
-1. If your bot is hosted in a sovereign or otherwise restricted Azure cloud (i.e. you do not access Azure via the [public portal](https://portal.azure.com)) you will also need to add the following new setting:
+        |Name|Value|
+        |---|---|
+        |DirectLineExtensionKey|The value of the App Service extension key you copied earlier.|
+        |DIRECTLINE_EXTENSION_VERSION|latest|
 
-    |Name|Value|
-    |---|---|
-    |DirectLineExtensionABSEndpoint|<URL_of_Direct_Line_App_Gateway>|
+    1. If your bot is hosted in a sovereign or otherwise restricted Azure cloud, where you don't access Azure via the [public portal](https://portal.azure.com), you will also need to add the following setting:
 
-    Where *URL_of_Direct_Line_App_Gateway* is specific to the Azure cloud your bot is hosted in. For USGov this value is https://directline.botframework.azure.us/v3/extension
+        |Name|Value|
+        |---|---|
+        |DirectLineExtensionABSEndpoint|The endpoint specific to the Azure cloud your bot is hosted in. For the USGov cloud for example, the endpoint is `https://directline.botframework.azure.us/v3/extension`.|
 
-1. Still within the *Configuration* section, click on the **General** settings section and turn on **Web sockets**
-1. Click on **Save** to save the settings. This restarts the Azure App Service.
+    1. Still within the **Configuration** section, select the **General** settings section and turn on **Web sockets**.
+    1. Select **Save** to save the settings. This restarts the Azure App Service.
 
 ## Confirm Direct Line app extension and the bot are configured
 
-In your browser, navigate to https://<your_app_service>.azurewebsites.net/.bot.
-If everything is correct, the page will return this JSON content: `{"v":"123","k":true,"ib":true,"ob":true,"initialized":true}`. This is the information you obtain when **everything works correctly**, where
+In your browser, navigate to `https://<your_app_service>.azurewebsites.net/.bot`.
+If everything is correct, the page will return this JSON content: `{"v":"123","k":true,"ib":true,"ob":true,"initialized":true}`. This is the information you obtain when *everything works correctly*, where
 
-- **v** displays the build version of the Direct Line App Service Extension (ASE).
-- **k** determines whether Direct Line ASE can read an App Service Extension Key from its configuration.
-- **initialized** determines whether Direct Line ASE can use the App Service Extension Key to download the bot metadata from Azure Bot Service
-- **ib** determines whether Direct Line ASE can establish an inbound connection with the bot.
-- **ob** determines whether Direct Line ASE can establish an outbound connection with the bot.
+- **v** displays the build version of the Direct Line App Service extension.
+- **k** determines whether the extension can read an extension key from its configuration.
+- **initialized** determines whether the extension can use the extension key to download the bot metadata from Azure Bot Service.
+- **ib** determines whether the extension can establish an inbound connection with the bot.
+- **ob** determines whether the extension can establish an outbound connection with the bot.
 
 ## Troubleshooting
 
-- If the *ib* and *ob* values displayed by the **.bot endpoint* are false this means the bot and the Direct Line app service extension are unable to connect to each other. 
+- If the **ib** and **ob** values displayed by the **.bot endpoint** are false this means the bot and the Direct Line App Service extension are unable to connect to each other.
     1. Double check the code for using named pipes has been added to the bot.
     1. Confirm the bot is able to start up and run at all. Useful tools are **Test in WebChat**, connecting an additional channel, remote debugging, or logging.
     1. Restart the entire **Azure App Service** the bot is hosted within, to ensure a clean start up of all processes.
 
-- If the *initialized* value of the **.bot endpoint** is false it means the Direct Line app service extension is unable to validate the **App Service Extension Key** added to the bot's *Application Settings* above. 
+- If the **initialized** value of the **.bot endpoint** is false it means the Direct Line App Service extension is unable to validate the App Service extension key added to the bot's **Application Settings** above.
     1. Confirm the value was correctly entered.
-    1. Switch to the alternative **App Service Extension Key** shown on your bot's **Direct Line channel configuration page**.
+    1. Switch to the alternate extension key shown on your bot's **Configure Direct Line** page.
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Use Web Chat with the Direct Line app service extension](./bot-service-channel-directline-extension-webchat-client.md)
+> [Use Web Chat with the Direct Line App Service extension](./bot-service-channel-directline-extension-webchat-client.md)
