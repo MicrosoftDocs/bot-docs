@@ -3,24 +3,25 @@ title: Configure .NET bots for the Direct Line App Service extension in the Bot 
 description: Configure .NET bots to work with named pipes. Enable the Direct Line App Service extension and configure bots to use the extension.
 services: bot-service
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: how-to
 ms-custom: abs-meta-21q1
-ms.date: 10/21/2021
+ms.date: 11/30/2021
 ---
 
 # Configure .NET bot for extension
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-This article describes how to update a bot to work with named pipes, and how to enable the Direct Line App Service extension in the Azure App Service resource where the bot is hosted.
+This article describes how to update a .NET bot to work with named pipes and how to enable the Direct Line App Service extension in the Azure App Service resource where the bot is hosted.
 
 ## Prerequisites
 
-- Bot deployed in Azure.
-- Bot Framework SDK 4.14.1 or later.
+- A .NET bot deployed in Azure
+- Bot Framework SDK for .NET, 4.14.1 or later
 
 ## Enable Direct Line App Service extension
 
@@ -65,32 +66,34 @@ This section describes how to enable the Direct Line App Service extension using
 
 ### Enable bot Direct Line App Service extension
 
-1. In the Azure portal, locate your **Azure Bot** resource.
-1. From the left panel menu under **Bot management** click on **Channels** to configure the **Azure Bot Service** channels your bot accepts messages from.
-1. If it is not already enabled, click on the **Direct Line** channel and follow instructions to enable the channel.
-1. In the **Connect to channels** table click on the **Edit** link on the **Direct Line** row.
-1. Scroll down to the **App Service extension Keys** section.
-1. Click on the **Show** link to reveal one of the keys. Copy this value for use later.
-1. Navigate to the home page, click the **App Services** icon at the top of the page. You can also display the portal menu, and then click the **App Services** menu item, in the left panel. The **App Services** page is displayed.
+1. In the Azure portal, go to your **Azure Bot** resource.
+    1. From the left panel menu under **Bot management** select **Channels** to configure the **Azure Bot Service** channels your bot accepts messages from.
+    1. If it is not already enabled, select the **Direct Line** channel and follow instructions to enable the channel.
+    1. In the **Connect to channels** table select the **Edit** link on the **Direct Line** row.
+    1. Scroll down to the **App Service extension Keys** section.
+    1. Select the **Show** link to reveal one of the keys. Copy this value for use later.
+1. Go to the home page, select **App Services** at the top of the page. Alternatively, display the portal menu and then select the **App Services** menu item, in the left panel. Azure displays the **App Services** page.
 1. In the search box enter your **Azure Bot** resource name. Your resource will be listed.
-Notice that if you hover over the icon or the menu item, you get the list of the last resources you viewed. Chances are your **Azure Bot** resource will be listed.
-1. Click your resource link.
-1. In the **Settings** section, click the **Configuration** menu item.
-1. In the right panel, add the following new settings:
 
-    |Name|Value|
-    |---|---|
-    |DirectLineExtensionKey|The value of the App Service extension key you copied earlier.|
-    |DIRECTLINE_EXTENSION_VERSION|latest|
+    Notice that if you hover over the icon or the menu item, you get the list of the last resources you viewed. Chances are your **Azure Bot** resource will be listed.
 
-1. If your bot is hosted in a sovereign or otherwise restricted Azure cloud, where you don't access Azure via the [public portal](https://portal.azure.com), you will also need to add the following new setting:
+1. Select your resource link.
+    1. In the **Settings** section, select the **Configuration** menu item.
+    1. In the right panel, add the following settings:
 
-    |Name|Value|
-    |---|---|
-    |DirectLineExtensionABSEndpoint|The endpoint specific to the Azure cloud your bot is hosted in. For the USGov cloud for example, the endpoint is `https://directline.botframework.azure.us/v3/extension`.|
+        |Name|Value|
+        |---|---|
+        |DirectLineExtensionKey|The value of the App Service extension key you copied earlier.|
+        |DIRECTLINE_EXTENSION_VERSION|latest|
 
-1. Still within the **Configuration** section, click on the **General** settings section and turn on **Web sockets**.
-1. Click on **Save** to save the settings. This restarts the Azure App Service.
+    1. If your bot is hosted in a sovereign or otherwise restricted Azure cloud, where you don't access Azure via the [public portal](https://portal.azure.com), you will also need to add the following setting:
+
+        |Name|Value|
+        |---|---|
+        |DirectLineExtensionABSEndpoint|The endpoint specific to the Azure cloud your bot is hosted in. For the USGov cloud for example, the endpoint is `https://directline.botframework.azure.us/v3/extension`.|
+
+    1. Still within the **Configuration** section, select the **General** settings section and turn on **Web sockets**.
+    1. Select **Save** to save the settings. This restarts the Azure App Service.
 
 ## Confirm the extension and the bot are configured
 
@@ -109,28 +112,30 @@ If everything is correct, the page will return this JSON content: `{"v":"123","k
     1. Double check the code for using named pipes has been added to the bot.
     1. Confirm the bot is able to start up and run at all. Useful tools are **Test in WebChat**, connecting an additional channel, remote debugging, or logging.
     1. Restart the entire **Azure App Service** the bot is hosted within, to ensure a clean start up of all processes.
-- Enable the bot to use the out of process hosting model, otherwise you will receive an *HTTP Error 500.34 - ANCM Mixed Hosting*. Where *ANCM* stands for *ASP.NET Core Module*. The error is caused because the bot template is using the `InProcess` hosting model by default. To configure out of process hosting, see [Out-of-process hosting model](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#out-of-process-hosting-model).
-See also [Attributes of the aspNetCore element](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#attributes-of-the-aspnetcore-element) and [Configuration with web.config](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#configuration-with-webconfig).
+
 - If the **initialized** value of the **.bot endpoint** is false it means the Direct Line App Service extension is unable to validate the App Service extension key added to the bot's **Application Settings** above.
     1. Confirm the value was correctly entered.
     1. Switch to the alternate extension key shown on your bot's **Configure Direct Line** page.
 
-- If you attempt to use OAuth with the Direct Line App Service extension and encounter the error "Unable to get the bot AppId from the audience claim." A `ClaimsIdentity` with the `AudienceClaim` assigned needs to be set on the `BotFrameworkHttpAdapter`. In order to accomplish this a developer may subclass the adapter similar to the example below:
+- Enable the bot to use the out of process hosting model; otherwise you will receive an *HTTP Error 500.34 - ANCM Mixed Hosting*. Where *ANCM* stands for *ASP.NET Core Module*. The error is caused because the bot template is using the `InProcess` hosting model by default. To configure out of process hosting, see [Out-of-process hosting model](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#out-of-process-hosting-model).
+See also [Attributes of the aspNetCore element](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#attributes-of-the-aspnetcore-element) and [Configuration with web.config](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#configuration-with-webconfig).
 
-```csharp
-public class AdapterWithStaticClaimsIdentity : BotFrameworkHttpAdapter
-{
-    public AdapterWithStaticClaimsIdentity(IConfiguration configuration, ILogger<BotFrameworkHttpAdapter> logger, ConversationState conversationState = null)
-        : base(configuration, logger)
+- If you attempt to use OAuth with the Direct Line App Service extension and encounter the error "Unable to get the bot AppId from the audience claim." A `ClaimsIdentity` with the `AudienceClaim` assigned needs to be set on the `BotFrameworkHttpAdapter`. In order to accomplish this a developer may subclass the adapter. For example:
+
+    ```csharp
+    public class AdapterWithStaticClaimsIdentity : BotFrameworkHttpAdapter
     {
-        // Manually create the ClaimsIdentity and create a Claim with a valid AudienceClaim and the AppID for a bot using the Direct Line App Service extension.
-        var appId = configuration.GetSection(MicrosoftAppCredentials.MicrosoftAppIdKey)?.Value;
-        ClaimsIdentity = new ClaimsIdentity(new List<Claim>{
-            new Claim(AuthenticationConstants.AudienceClaim, appId)
-        });
+        public AdapterWithStaticClaimsIdentity(IConfiguration configuration, ILogger<BotFrameworkHttpAdapter> logger, ConversationState conversationState = null)
+            : base(configuration, logger)
+        {
+            // Manually create the ClaimsIdentity and create a Claim with a valid AudienceClaim and the AppID for a bot using the Direct Line App Service extension.
+            var appId = configuration.GetSection(MicrosoftAppCredentials.MicrosoftAppIdKey)?.Value;
+            ClaimsIdentity = new ClaimsIdentity(new List<Claim>{
+                new Claim(AuthenticationConstants.AudienceClaim, appId)
+            });
+        }
     }
-}
-```
+    ```
 
 ## Next steps
 
