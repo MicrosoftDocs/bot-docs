@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: reference
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 12/2/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -16,11 +16,16 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-Natural language understanding (NLU) is the heart of a conversational bot. It’s a machine learning tool whose primary purpose is to convert a users input (natural language) into objects that your bot can understand and react to.
+An .lu file describes a language understanding model.
+An .lu file contains Markdown-like, simple text-based definitions for language understanding concepts.
+You can use one or more .lu files to train a language model for the natural language understanding (NLU) service or engine that your bot uses, such as [Language Understanding (LUIS)][LUIS] or [Orchestrator][].
+The NLU engine you choose may only be able to interpret subset of the elements that an .lu file can describe.
 
-NLU engines can't magically understand what a user is saying on their own. Developers need to provide them with sets of training examples, just like any machine learning algorithm. Once trained, the NLU engine gains the ability to identify words or phrases from a user's _utterance_, and map those to a user's intention, generally in the form of _intents_, that represents a task or action the user wants to perform and _entities_ that represents an element that is relevant to the user's intent. The .lu file is where you create your langue understanding templates that define these for your bot developed using the Bot Framework SDK as well as [Composer][].
+An NLU engine relies on a language model to understand what a user says. The engine creates a language model from sets of training examples, just like any machine learning algorithm. Once trained, the engine uses the model to predict the intent of an _utterance_, generally in the form of one or more _intents_ that represent a task or action the user wants to perform and zero or more _entities_ that represent elements relevant to the intent.
 
-An .lu file contains Markdown-like, simple text based definitions for [LUIS][] concepts. Other consumers like [Orchestrator][] also consume the the .lu file, but may only be able to interpret subset of the elements defined in this article.
+You can use LUIS or Orchestrator with any bot developed using the Bot Framework SDK or [Composer][].
+
+This article is a reference for how to represent language model elements in the .lu file format. For information about how language understanding is used in bots, see [Language Understanding](../v4sdk/bot-builder-concept-luis.md) or [Natural language processing in Composer](/composer/concept-natural-language-processing).
 
 ## Defining intents using sample utterances
 
@@ -28,12 +33,12 @@ An intent represents a task or action the user wants to perform, as expressed in
 
 Some examples of intents you might define for a travel bot, with the example utterances that they are defined from:
 
-|Intent    |Example utterances                                |
-|----------|--------------------------------------------------|
-|BookFlight|"Book me a flight to Maui next week" <br /> "Fly me to Maui on the 17th"  <br /> "I need a plane ticket next Friday to Maui"            |
-|Greeting  |"Hi" <br /> "Hello" <br /> "Good afternoon"       |
-|CheckWeather|"What's the weather like in Maui next week?"    |
-|None      |"I like cookies"<br /> "Bullfrogs have been recorded jumping over 7 feet"   |
+| Intent       | Example utterances                                                                                                           |
+|--------------|------------------------------------------------------------------------------------------------------------------------------|
+| BookFlight   | "Book me a flight to Maui next week" <br /> "Fly me to Maui on the 17th"  <br /> "I need a plane ticket next Friday to Maui" |
+| Greeting     | "Hi" <br /> "Hello" <br /> "Good afternoon"                                                                                  |
+| CheckWeather | "What's the weather like in Maui next week?"                                                                                 |
+| None         | "I like cookies"<br /> "Bullfrogs have been recorded jumping over 7 feet"                                                    |
 
 In addition to the intents that you define, **None** is a fallback intent that causes the `unknownIntent` event to fire when no intents can be determined from the users utterance. When using LUIS, the **None** intent is a required intent that you need to create with utterances that are outside of your domain. The utterances associated with your **None** intent should comprise roughly 10% of the total utterances in your .lu file.
 
@@ -89,7 +94,7 @@ entity.
 |Hello, how are you?|Greeting| - |No entities to extract.|
 |"Book a flight to Maui"|BookFlight|"Maui"|"FlightDestination" entity is extracted as "Maui".|
 |"What's the weather like in Maui next week?"|CheckWeather|"Maui", "next week"|"WeatherLocation" entity is extracted as "Maui" and "DateRange" entity is extracted as "next week".|
-|"I want to order a small pizza"|orderPizza|"small"|"Size" entity is extracted as "small" .|
+|"I want to order a small pizza"|orderPizza|"small"|"Size" entity is extracted as "small".|
 |"Schedule a meeting at 1pm with Bob in Distribution"|ScheduleMeeting|"1pm", "Bob"|"MeetingTime" entity is extracted as "1pm" and "Attendees" entity is extracted as "Bob".|
 
 > [!TIP]
@@ -97,7 +102,7 @@ entity.
 
 ### Entity definitions
 
-An entity definition defines how to recognize a span in an utterance as an entity that you can then use in your bot. There are a number of different types of entities including: machine-learned, prebuilt, lists, regular expressions, and patterns.
+An entity definition defines how to recognize a span in an utterance as an entity that you can then use in your bot. There are many different types of entities including: machine-learned, prebuilt, lists, regular expressions, and patterns.
 
 Entity definitions in .lu files start the entry with the at sign (`@`) followed by the type of entity and entity name:
 
@@ -390,17 +395,17 @@ The entity place holders can correspond to entities of any type or they can be d
 
 ### Pattern syntax
 
-The .lu file format supports the LUIS [Pattern syntax][]. Pattern syntax is a template embedded in an utterance. The template should contain words and entities you want to match as well as words and punctuation you want to ignore. It is not a regular expression.
+The .lu file format supports the LUIS [Pattern syntax][]. Pattern syntax is a template embedded in an utterance. The template should contain both words and entities you want to match, as well as words and punctuation you want to ignore. The template is not a regular expression.
 
 Entities in patterns are surrounded by braces, {}. Patterns can include entities, and entities with roles. [Pattern.any][pattern-any] is an entity only used in patterns.
 
 | Function | Syntax | Nesting level | Example |
-|----------|--------|---------------|---------|
-| entity   | {} - braces | 2 | Where is form {entity-name}?
-| optional | [] - square brackets</br>There is a limit of 3 on nesting levels of any combination of optional and grouping | 2 | The question mark is optional [?] |
-|grouping | () - parentheses | 2 | is (a \| b) |
-| or | \| - vertical bar (pipe)</br>There is a limit of 2 on the vertical bars (Or) in one group | - | Where is form ({form-name-short} \| {form-name-long} \| {form-number}) |
-| beginning and/or end of utterance | ^ - caret | - | ^begin the utterance</br>the utterance is done^</br>^strict literal match of entire utterance with {number} entity^ |
+|:-|:-|:-|:-|
+| entity | {} - braces | 2 | `Where is form {entity-name}?` |
+| optional | [] - square brackets</br>There is a limit of 3 on nesting levels of any combination of optional and grouping | 2 | `The question mark is optional [?]` |
+| grouping | () - parentheses | 2 | `is (a \| b)` |
+| or | \| - vertical bar (pipe)</br>There is a limit of 2 on the vertical bars (Or) in one group | - | `Where is form ({form-name-short} \| {form-name-long} \| {form-number})` |
+| beginning and/or end of utterance | ^ - caret | - | `^begin the utterance`</br>`the utterance is done^`</br>`^strict literal match of entire utterance with {number} entity^` |
 
 See the [Pattern syntax][] article in the LUIS documentation for more information.
 
@@ -491,8 +496,8 @@ By default, phrase lists are available to all learned intents and entities. Ther
 | Availability State   | Description                                                                                     |
 | -------------------- | ----------------------------------------------------------------------------------------------- |
 | enabledForAllModels  | (default) When a phrase list is marked as `enabledForAllModels`, it is available to all models whether or not you specifically list it as a feature.         |
-| disabledForAllModels | When a phrase list is marked as `disabledForAllModels`, it will only be used in a models if it is specifically listed as a feature.                |
-| disabled             | When a phrase list is marked as `disabled`, it will not be used anywhere, including any models where it is specifically listed as a feature. This provides an easy means to turn off a phrase list to see how well things work without it. |
+| disabledForAllModels | When a phrase list is marked as `disabledForAllModels`, it is only used in a model if it is specifically listed as a feature.                |
+| disabled             | When a phrase list is marked as `disabled`, it isn't used anywhere, including any models where it is specifically listed as a feature. This provides an easy means to turn off a phrase list to see how well things work without it. |
 
 Phrase lists are globally available by default, and can also be specifically set using the `enabledForAllModels` keyword:
 
@@ -513,7 +518,7 @@ Two examples of setting a phrase list to `disabledForAllModels`:
 @ question disabledForAllModels
 ```
 
-When setting a phrase list to `disabled`, it will not be used even when even when specifically listed as a feature:
+When setting a phrase list to `disabled`, it won't be used, even when specifically listed as a feature:
 
 ```lu
 > phrase list definition, temporarily set to disabled to measure its impact
@@ -532,7 +537,7 @@ Phrase lists can be used as features for specific intents and entities as descri
 Machine learning works by taking features and learning how they relate to the desired intent or entity from example utterances.  By default, features are simply the words that make up utterances. Phrase lists provide a means to group together multiple words into a new feature; this makes the machine learning generalize better from fewer examples. By default, phrase lists are global and apply to all machine-learned models, but you can also tie them to specific intents or entities.  You can also use intents or entities as features to detect other intents as entities.  This provides modularity so that you can build up more complex concepts from simpler building blocks.
 
 >[!NOTE]
-> In machine learning, a feature is text that describes a distinguishing trait or attribute of data that your system observes and learns from. Phrase lists as well as intents and entities can be used as features as explained in this and the following sections.
+> In machine learning, a feature is text that describes a distinguishing trait or attribute of data that your system observes and learns from. Phrase lists, intents, and entities can be used as features as explained in this and the following sections.
 
 Features can be added to any learned intent or entity using the `usesFeature` keyword.
 
@@ -653,7 +658,7 @@ The sections below detail how to make [local file](#local-file-references) and [
 
 ### Local file references
 
-References the .lu file. follow Markdown link syntax. Supported references include:
+References the .lu file. Follow Markdown link syntax. Supported references include:
 
 - Reference to another .lu file via `[link name](<.lu file name>)`. Reference can be an absolute path or a relative path from the containing .lu file.
 - Reference to a folder with other .lu files is supported through:
