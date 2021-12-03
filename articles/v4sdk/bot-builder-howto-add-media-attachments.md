@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 09/01/2021
+ms.date: 12/02/2021
 ms.custom: abs-meta-21q1
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -23,7 +23,7 @@ Messages exchanged between user and bot can contain media attachments, such as i
 - Knowledge of [bot basics](bot-builder-basics.md).
 - The code in this article is based on the following samples:
   - **Using cards**: [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/06.using-cards), [JavaScript](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/06.using-cards), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/06.using-cards), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/06.using-cards)
-  - **Handling attachments**: [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/15.handling-attachments), [JavaScript](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/15.handling-attachments-js), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/15.handling-attachments), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/15.handling-attachments)
+  - **Handling attachments**: [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/15.handling-attachments), [JavaScript](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/15.handling-attachments), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/15.handling-attachments), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/15.handling-attachments)
   - **Suggested actions**: [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/08.suggested-actions), [JavaScript](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/08.suggested-actions), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/08.suggested-actions), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/08.suggested-actions)
 
 ## Send attachments
@@ -66,7 +66,7 @@ Lastly, an internet attachment:
 
 ### [JavaScript](#tab/javascript)
 
-The source code shown here is based on the [Handling attachments](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/15.handling-attachments-js) sample.
+The source code shown here is based on the [Handling attachments](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/15.handling-attachments) sample.
 
 To use attachments, include the following libraries in your bot:
 
@@ -180,7 +180,7 @@ The source code shown here is based on the [Handling attachments](https://github
 
 To compose a message with a hero card and button, you can attach a `HeroCard` object to a message.
 
-The source code shown here is based on the [Handling attachments](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/15.handling-attachments-js) sample.
+The source code shown here is based on the [Handling attachments](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/15.handling-attachments) sample.
 
 **bots/attachmentsBot.js**
 
