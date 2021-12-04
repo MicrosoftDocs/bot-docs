@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: quickstart
 ms.service: bot-service
-ms.date: 11/19/2021
+ms.date: 12/03/2021
 ms.custom: abs-meta-21q1
 ---
 
@@ -29,8 +29,7 @@ Your bot's identity can be managed in Azure in a few different ways.
 - As a _single-tenant_ app.
 - As a _multi-tenant_ app.
 
-> [!NOTE]
-> Bot Framework Composer and the Emulator currently only support multi-tenant bots.
+[!INCLUDE [identity-app-type-support](../includes/azure-bot-resource/identity-app-type-support.md)]
 
 ## Prerequisites
 

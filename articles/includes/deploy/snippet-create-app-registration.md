@@ -5,7 +5,7 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: include
-ms.date: 11/19/2021
+ms.date: 12/03/2021
 ---
 
 In this step you will create an Azure application registration, which will allow:
@@ -19,8 +19,7 @@ In this step you will create an Azure application registration, which will allow
 
 #### Create the Azure application registration
 
-> [!NOTE]
-> The Bot Framework SDK for C# or Javascript version 4.15.0 or later is required for user-assigned managed identity and single-tenant bots.
+[!INCLUDE [Note about support for each type](../azure-bot-resource/identity-app-type-support.md)]
 
 To create an Azure application registration, use the following command:
 
