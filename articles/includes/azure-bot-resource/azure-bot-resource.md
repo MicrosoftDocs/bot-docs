@@ -31,7 +31,7 @@ Create the **Azure Bot** resource, which will allow you to register your bot wit
 1. Select **Review + create**.
 1. If the validation passes, select **Create**.
 1. Select **Go to resource group**. You should see the bot and related resources listed in the resource group you selected.
-1. Select **Get the SDK from Github** to build your bot with the Bot Framework SDK.
+1. Select **Get the SDK from GitHub** to build your bot with the Bot Framework SDK.
 
     :::image type="content" source="../../media/azure-manage-a-bot/azure-bot-create-sdk.png" alt-text="Create bot in SDK":::
 
