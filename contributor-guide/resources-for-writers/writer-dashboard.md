@@ -27,12 +27,6 @@ See GitHub's [Searching issues and pull requests](https://docs.github.com/en/git
 |&bullet; my review requested |[to review](https://github.com/MicrosoftDocs/composer-docs-pr/pulls/review-requested/@me)|[to review](https://github.com/MicrosoftDocs/bot-docs-pr/pulls/review-requested/@me)|[to review](https://github.com/pulls?q=is%3Apr+org%3AmicrosoftDocs+is%3Aopen+review-requested%3A@me)|[to review](https://github.com/pulls?q=is%3Apr+org%3Amicrosoft+is%3Aopen+review-requested%3A@me)|
 |&bullet; labeled ready|[to merge](https://github.com/MicrosoftDocs/composer-docs-pr/pulls?q=is%3Aopen+is%3Apr+label%3A%22status%3A+ready%22) | [to merge](https://github.com/MicrosoftDocs/bot-docs-pr/pulls?q=is%3Aopen+is%3Apr+label%3A%22status%3A+ready%22) | - | - |
 
-## DevOps links
-
-- [Wiki pages](https://aka.ms/botservice/wiki)
-- [Work items tool](https://victorious-meadow-046a72b1e.azurestaticapps.net/)
-- [Ticket queries](https://mseng.visualstudio.com/TechnicalContent/_queries/folder/ede32a2a-94d7-4f39-9cc7-d81e09cefdd2/)
-
 ## Documentation quick links
 
 |Resource|Notes|
@@ -42,10 +36,10 @@ See GitHub's [Searching issues and pull requests](https://docs.github.com/en/git
 
 | Bot Framework documentation |  |
 |:-|:-|
-| [live](https://docs.microsoft.com/azure/bot-service/) | review site: [master](https://review.docs.microsoft.com/azure/bot-service/?branch=master) |
+| [live](https://docs.microsoft.com/azure/bot-service/) | review site: [main](https://review.docs.microsoft.com/azure/bot-service/?branch=main) |
 | **Other Microsoft documentation** |  |
 | [Azure Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/) |
-| [Microsoft Power Virtual Agents](https://docs.microsoft.com/en-us/power-virtual-agents/) |
+| [Microsoft Power Virtual Agents](https://docs.microsoft.com/power-virtual-agents/) | review site: [main](https://review.docs.microsoft.com/power-virtual-agents/?branch=main) |
 | [Microsoft Teams](https://docs.microsoft.com/microsoftteams/platform/) |
 | [Speech service](https://docs.microsoft.com/azure/cognitive-services/speech-service/) |
 
@@ -77,6 +71,7 @@ See GitHub's [Searching issues and pull requests](https://docs.github.com/en/git
 | [microsoft / botframework-components](https://github.com/microsoft/botframework-components) | Bot Framework Components, had been Virtual Assistant |
 | [microsoft / BotFramework-Services](https://github.com/microsoft/BotFramework-Services) | Place to file issues found in the [Bot Framework portal](https://dev.botframework.com/). |
 | [microsoft / BotFramework-WebChat](https://github.com/microsoft/BotFramework-WebChat) | Bot Framework Web Chat [component] |
+| [microsoft / BotFramework-DirectLine-DotNet](https://github.com/microsoft/BotFramework-DirectLine-DotNet) | Bot Framework Direct Line C# client |
 | [microsoft / botframework-directlinejs](https://github.com/microsoft/botframework-directlinejs) | Bot Framework Direct Line JavaScript client |
 | **Community** |  |
 | [BotBuilderCommunity/botbuilder-community-dotnet](https://github.com/BotBuilderCommunity/botbuilder-community-dotnet) | Bot Builder Community - .NET Extensions |
