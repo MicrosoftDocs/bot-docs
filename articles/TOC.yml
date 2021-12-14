@@ -473,15 +473,15 @@
     - name: Index
       href: bot-service-resources-bot-framework-faq.yml
     - name: Availability
-      href: bot-service-resources-faq-availability.md
+      href: bot-service-resources-faq-availability.yml
     - name: General
-      href: bot-service-resources-faq-general.md
+      href: bot-service-resources-faq-general.yml
     - name: Ecosystem
-      href: bot-service-resources-faq-ecosystem.md
+      href: bot-service-resources-faq-ecosystem.yml
     - name: Security
-      href: bot-service-resources-faq-security.md
+      href: bot-service-resources-faq-security.yml
     - name: Azure
-      href: bot-service-resources-faq-azure.md
+      href: bot-service-resources-faq-azure.yml
   - name: Troubleshoot
     items:
     - name: Index
