@@ -1,12 +1,12 @@
 ---
 title: Debug bots using Bot Framework Adaptive Tools - Bot Service
 description: Learn how to debug bots using the Bot Framework Adaptive Tools Microsoft VS Code extension.
-author: emgrol
+author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
-ms.topic: how-to
 ms.service: bot-service
+ms.topic: how-to
 ms.date: 11/01/2021
 ---
 

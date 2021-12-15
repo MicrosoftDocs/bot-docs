@@ -1,12 +1,13 @@
 ---
 title: Debug a bot with inspection middleware in Bot Framework SDK
 description: Learn how to use inspection middleware to debug bots. See how to use the Bot Framework Emulator to inspect state data and message traffic.
-author: kamrani
-ms.author: kamrani
 keywords: Bot Framework SDK, debug bot, inspection middleware, bot emulator, Azure Bot Channels Registration
-manager: kamrani
-ms.topic: how-to
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
+ms.topic: how-to
 ms.date: 09/21/2021
 ---
 
@@ -143,7 +144,7 @@ After updating the code you can run your bot locally and test the debugging feat
 
     ---
 
-1. Open your Emulator. Click **Open Bot**. Fill in Bot URL with http://localhost:3978/api/messages and the **MicrosoftAppId** and **MicrosoftAppPassword** values. If you have a JavaScript bot you can find these values in your bot's **.env** file. If you have a C# bot you can find these values in the **appsettings.json** file. For a Java bot you can find these values in the **application.properties** file. Click **Connect**.
+1. Open your Emulator. Select **Open Bot**. Fill in Bot URL with `http://localhost:3978/api/messages` and the **MicrosoftAppId** and **MicrosoftAppPassword** values. If you have a JavaScript bot you can find these values in your bot's **.env** file. If you have a C# bot you can find these values in the **appsettings.json** file. For a Java bot you can find these values in the **application.properties** file. Select **Connect**.
 
 1. Now open another Emulator window. This second Emulator window will work as a debugger. Follow the instructions as described in the previous step. Check **Open in debug mode** and then click **Connect**.
 
@@ -195,7 +196,7 @@ Now that your local bot is connected to ngrok you can configure your local bot t
 
     ![get-inputs](./media/bot-debug-inspection-middleware/bot-debug-get-inputs-id-secret.png)
 
-1. Start your Emulator, click **Open Bot**, and put http://localhost:3978/api/messages in the **Bot URL**. Fill **Microsoft App ID** and **Microsoft App password** with the same **appId** and **appSecret** you added to our bot's **.env** (**appsettings.json**) file. Then click **Connect**.
+1. Start your Emulator, select **Open Bot**, and put `http://localhost:3978/api/messages` in the **Bot URL**. Fill **Microsoft App ID** and **Microsoft App password** with the same **appId** and **appSecret** you added to our bot's **.env** (**appsettings.json**) file. Then select **Connect**.
 
 1. Your running bot is now connected to your Bot Channels Registration in Azure. You can test the web chat by clicking **Test in Web Chat** and sending messages in the chat box.
 

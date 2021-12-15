@@ -3,10 +3,11 @@ title: Add natural language understanding to your bot in Bot Framework SDK
 description: Learn how to use LUIS for natural language understanding in your bot.
 keywords: Language Understanding, LUIS, intent, recognizer, entities, middleware
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
-ms.topic: how-to
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
+ms.topic: how-to
 ms.date: 09/22/2021
 monikerRange: 'azure-bot-service-4.0'
 ---

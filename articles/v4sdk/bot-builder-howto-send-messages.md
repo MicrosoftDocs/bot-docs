@@ -2,12 +2,13 @@
 title: Send and receive text message in Bot Framework SDK
 description: Learn how to make bots send and receive text messages.
 keywords: sending message, message activities, simple text message, message, text message, receive message
-author: ivorb
-ms.author: kamrani
-manager: kamrani
-ms.topic: how-to
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
-ms.date: 09/22/2021
+ms.topic: how-to
+ms.date: 12/14/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -32,6 +33,7 @@ In the bot's activity handlers, use the turn context object's `SendActivityAsync
 ```cs
 await turnContext.SendActivityAsync($"Welcome!");
 ```
+
 # [JavaScript](#tab/javascript)
 
 In the bot's activity handlers, use the turn context object's `sendActivity` method to send a single message response. You can also use the object's `sendActivities` method to send multiple responses at once.
@@ -63,7 +65,7 @@ One of the variations provided will be picked at random by the LG system.
 
 The following example shows a simple template that includes two variations.
 
-```markdown
+```lg
 # GreetingPrefix
 - Hi
 - Hello
@@ -111,7 +113,7 @@ response = context.activity.text
 
 Add the following LG template to your .lg file to receive a message.
 
-```markdown
+```lg
 # EchoMessage
 You said '${turn.activity.text}'
 ```
@@ -153,18 +155,19 @@ protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivi
 
 ```javascript
 this.onMessage(async (context, next) => {
-	if (context.activity.text === 'wait') {
-		await context.sendActivities([
-			{ type: ActivityTypes.Typing },
-			{ type: 'delay', value: 3000 },
-			{ type: ActivityTypes.Message, text: 'Finished typing' }
-		]);
-	} else {
-		await context.sendActivity(`You said '${ context.activity.text }'. Say "wait" to watch me type.`);
-	}
-	await next();
+    if (context.activity.text === 'wait') {
+        await context.sendActivities([
+            { type: ActivityTypes.Typing },
+            { type: 'delay', value: 3000 },
+            { type: ActivityTypes.Message, text: 'Finished typing' }
+        ]);
+    } else {
+        await context.sendActivity(`You said '${ context.activity.text }'. Say "wait" to watch me type.`);
+    }
+    await next();
 });
 ```
+
 # [Java](#tab/java)
 
 ```java
@@ -210,7 +213,7 @@ async def on_message_activity(self, turn_context: TurnContext):
 
 # [LG](#tab/lg)
 
-```markdown
+```lg
 # TypingIndicator
 [Activity
     Type = typing

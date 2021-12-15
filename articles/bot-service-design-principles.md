@@ -2,13 +2,13 @@
 title: Conversational user experience in the Bot Framework SDK
 description: Learn what makes a great conversational user experience and how to design bots that delight your users.
 keywords: conversational user experience, design guide, best practices, bot design 
-author: matvelloso
-ms.author: quvanwal
-manager: kamrani
-ms.topic: overview
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: quvanwal
 ms.service: bot-service
+ms.topic: overview
 ms.date: 10/06/2021
- 
 ---
 
 # Conversational user experience
