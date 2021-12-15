@@ -2,11 +2,12 @@
 title: What's new in the Bot Service SDKs for C#, Java, JavaScript, and Python
 description: Learn about improvements and new features in the July 2021 release of the Bot Framework SDK for C#, Java, JavaScript, and Python.
 keywords: bot framework, azure bot service
-author: kamrani
-ms.author: kamrani
-manager: kamrani
-ms.topic: conceptual
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
+ms.topic: conceptual
 ms.date: 07/23/2021
 ms.custom: tab-zone-seo
 ---

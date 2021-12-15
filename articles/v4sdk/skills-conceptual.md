@@ -3,10 +3,11 @@ title: Skills overview | Microsoft Docs
 description: Describes the concepts of how conversational logic in one bot can be used by another bot using the Bot Framework SDK.
 keywords: bot skill, host bot, skill bot, skill consumer.
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
-ms.topic: conceptual
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: Gabo.Gilabert
 ms.service: bot-service
+ms.topic: conceptual
 ms.date: 08/10/2021
 monikerRange: 'azure-bot-service-4.0'
 ---

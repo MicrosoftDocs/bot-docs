@@ -1,11 +1,13 @@
 ---
 title: Azure Bot Service encryption for data at rest in Bot Framework SDK
 description: Azure Bot Service protects your data by automatically encrypting it before persisting it to the cloud with Microsoft provided encryption keys.
-ms.service: bot-service
-ms.date: 10/11/2021
-ms.topic: conceptual
 author: JonathanFingold
-ms.author: jameslew
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: jameslew
+ms.service: bot-service
+ms.topic: conceptual
+ms.date: 10/11/2021
 ---
 
 # Azure Bot Service encryption for data at rest

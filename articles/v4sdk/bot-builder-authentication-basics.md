@@ -2,10 +2,11 @@
 title: Bot Framework SDK authentication basics
 description: Learn about the authentication basics in the Bot Framework SDK. Learn how a bot can access protected resources on behalf of a user.
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
-ms.topic: conceptual
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
+ms.topic: conceptual
 ms.date: 10/20/2021
 ---
 
