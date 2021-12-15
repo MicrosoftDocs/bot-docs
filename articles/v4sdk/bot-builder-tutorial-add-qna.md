@@ -3,10 +3,11 @@ title: Tutorial to answer questions with the Bot Framework SDK and QnA Maker
 description: Learn how to add question-and-answer support to bots. See how to use QnA Maker and a knowledge base with a bot so that the bot can answer questions.
 keywords: QnA Maker, question and answer, knowledge base
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
-ms.topic: tutorial
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
+ms.topic: tutorial
 ms.date: 09/14/2021
 monikerRange: 'azure-bot-service-4.0'
 ---

@@ -5,9 +5,9 @@ keywords: skills
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: micchow
-ms.topic: how-to
+ms.reviewer: Gabo.Gilabert
 ms.service: bot-service
+ms.topic: how-to
 ms.date: 11/17/2021
 monikerRange: 'azure-bot-service-4.0'
 ---

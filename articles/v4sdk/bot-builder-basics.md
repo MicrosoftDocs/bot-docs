@@ -2,10 +2,11 @@
 title: Basics of the Bot Framework Service
 description: Become familiar with the Bot Framework Service. Understand how bots communicate with users, and learn about activities, channels, HTTP POST requests, and more.
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
-ms.topic: conceptual
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
+ms.topic: conceptual
 ms.date: 10/25/2021
 monikerRange: 'azure-bot-service-4.0'
 ms.custom: abs-meta-21q1

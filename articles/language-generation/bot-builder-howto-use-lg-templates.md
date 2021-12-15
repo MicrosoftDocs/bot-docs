@@ -3,10 +3,11 @@ title: Use bot response templates in your bot - Azure Bot Service
 description: Reusable bot response templates make it easy for bot developers to send various messages and media to users. This article demonstrates how to use bot response templates to send messages and cards.
 keywords: language generation, .lg templates, bot response, bot
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
-ms.topic: how-to
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
+ms.topic: how-to
 ms.date: 09/02/2021
 ms.custom: abs-meta-21q1
 monikerRange: 'azure-bot-service-4.0'
@@ -205,8 +206,3 @@ At this point, the code bot logic will reset and you can continue to create more
 
 - For information about bot response templates, see [Structured response templates](language-generation-structured-response-template.md) and the [.lg file format](../file-format/bot-builder-lg-file-format.md) reference.
 - For information about adaptive expressions, see [Adaptive expressions](../v4sdk/bot-builder-concept-adaptive-expressions.md) and [Adaptive expressions prebuilt functions](../adaptive-expressions/adaptive-expressions-prebuilt-functions.md).
-
-<!--
-## Next steps
-
-> [!div class="nextstepaction"]->

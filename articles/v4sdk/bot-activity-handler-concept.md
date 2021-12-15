@@ -2,10 +2,11 @@
 title: Event-driven conversations and activity handlers - Bot Service
 description: Become familiar with the bot activity handler. Learn about managing bot reasoning based on the type of activity received from a user.
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
-ms.topic: conceptual
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
+ms.topic: conceptual
 ms.date: 12/09/2020
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -46,7 +47,6 @@ There is a special handler called `onDialog`. The `onDialog` handler runs at the
 To implement your logic for these handlers, you will override these methods in your bot, such as in the [sample activity handler](#sample-activity-handler) section below. There is no base implementation for each of these handlers, so add the logic you want in your override.
 
 There are certain situations where you will want to override the base turn handler, such as [saving state](bot-builder-concept-state.md) at the end of a turn. When doing so, be sure first to call `super.onTurn(turnContext);` to make sure the base implementation of `onTurn` is run before your additional code. That base implementation is, among other things, responsible for calling the rest of the activity handlers such as `onMessageActivity`.
-
 
 # [Python](#tab/python)
 
@@ -151,7 +151,6 @@ There is also the option to implement the public method `onTurn`. Currently, the
 
 > [!IMPORTANT]
 > If you do override the `onTurn` method, you'll need to call `super.onTurn` to get the base implementation to call all the other `on<activity>` handlers or call those handlers yourself. Otherwise, those handlers won't be called and that code won't be run.
-
 
 ### [Python](#tab/python)
 

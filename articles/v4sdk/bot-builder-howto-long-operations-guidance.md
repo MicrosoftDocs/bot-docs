@@ -3,10 +3,11 @@ title: Manage a long-running operation using the Bot Framework SDK
 description: Learn how to avoid time-out issues and use proactive messages to handle long-running operations within a bot.
 keywords: long operations, time out, 15 seconds
 author: JonathanFingold
-ms.author: erdahlva
-manager: kamrani
-ms.topic: how-to
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
+ms.topic: how-to
 ms.date: 10/21/2021
 monikerRange: 'azure-bot-service-4.0'
 ---

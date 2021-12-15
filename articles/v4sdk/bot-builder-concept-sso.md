@@ -2,11 +2,12 @@
 title: Single sign on in Bot Framework SDK
 description: Learn about single sign on (SSO) to allow a client to communicate with a bot or a skill.
 keywords: azure bot service, authentication, bot framework token service
-author: mmiele
-ms.author: kamrani
-manager: kamrani
-ms.topic: conceptual
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
+ms.topic: conceptual
 ms.date: 09/27/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
