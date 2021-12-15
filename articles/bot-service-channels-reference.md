@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: reference
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 12/14/2021
 ---
 
 # Channels reference
@@ -219,7 +219,7 @@ The following table shows the maximum number of suggested actions and card actio
 | \                 | Direct Line | Direct Line (Web Chat) | Email    | Facebook | GroupMe  | Kik | Line | Teams    | Slack    | Skype | Skype Business | Telegram | Twilio   |
 |:------------------|:-----------:|:----------------------:|:--------:|:--------:|:--------:|:---:|:----:|:--------:|:--------:|:-----:|:--------------:|:--------:|:--------:|
 | Suggested actions | 100         | 100                    | &#x274c; | 10       | &#x274c; | 20  | 13   | &#x274c; | &#x274c; | 10    | &#x274c;       | 100      | &#x274c; |
-| Card actions      | 100         | 100                    | &#x274c; | 3        | &#x274c; | 20  | 99   | 3        | 100      | 3     | &#x274c;       | &#x274c; | &#x274c; |
+| Card actions      | 100         | 100                    | &#x274c; | 3        | &#x274c; | 20  | 99   | 100      | 100      | 3     | &#x274c;       | &#x274c; | &#x274c; |
 
 For more information about the numbers shown in the above table, refer to channel support code listed [here](https://github.com/microsoft/botbuilder-dotnet/blob/master/libraries/Microsoft.Bot.Builder.Dialogs/Choices/Channel.cs).
 
