@@ -1,11 +1,10 @@
 ---
-title: Configure Node.js bots for the Direct Line App Service extension in the Bot Framework SDK
+title: Configure Node.js bots for Direct Line App Service extension in the Bot Framework SDK
 description: Configure Node.js bots to work with named pipes. Enable the Direct Line App Service extension and configure bots to use the extension.
-services: bot-service
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: Daniel.Evans
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 11/30/2021
@@ -96,7 +95,7 @@ This section describes how to enable the Direct Line App Service extension using
     1. Still within the **Configuration** section, select the **General** settings section and turn on **Web sockets**.
     1. Select **Save** to save the settings. This restarts the Azure App Service.
 
-## Confirm Direct Line app extension and the bot are configured
+## Confirm Direct Line App Service extension and the bot are configured
 
 In your browser, navigate to `https://<your_app_service>.azurewebsites.net/.bot`.
 If everything is correct, the page will return this JSON content: `{"v":"123","k":true,"ib":true,"ob":true,"initialized":true}`. This is the information you obtain when *everything works correctly*, where

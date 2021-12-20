@@ -5,9 +5,9 @@ keywords: channels reference, bot builder channels, bot framework channels
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: micchow
-ms.topic: reference
+ms.reviewer: mainguy
 ms.service: bot-service
+ms.topic: reference
 ms.date: 12/14/2021
 ---
 

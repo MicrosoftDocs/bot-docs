@@ -239,8 +239,9 @@
         - name: Connect to Direct Line Speech
           href: bot-service-channel-connect-directlinespeech.md
         - name: Direct Line App Service Extension
-          href: bot-service-channel-directline-extension.md
           items:
+          - name: Direct Line App Service Extension
+            href: bot-service-channel-directline-extension.md
           - name: Configure .NET bot for extension
             href: bot-service-channel-directline-extension-net-bot.md
           - name: Configure Node.js bot for extension
