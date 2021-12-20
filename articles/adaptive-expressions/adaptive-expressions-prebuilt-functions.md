@@ -2,11 +2,12 @@
 title: Adaptive expressions prebuilt functions in Bot Framework SDK
 description: Learn about the available prebuilt functions in adaptive expressions ordered by their general purpose.
 keywords: adaptive expressions, prebuilt functions, reference
-author: kamrani
-ms.author: kamrani
-manager: kamrani
-ms.topic: reference
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
+ms.topic: reference
 ms.date: 09/22/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -35,12 +36,12 @@ You can also view the list in [alphabetical order](#prebuilt-functions-sorted-al
 
 ## String functions
 
-|Function	|Explanation|
+|Function |Explanation|
 |-----------|-----------|
 |[length](#length)|Return the length of a string.|
 |[replace](#replace)|Replace a substring with the specified string and return the updated string. This function is case-sensitive.|
-|[replaceIgnoreCase](#replaceIgnoreCase)|	Replace a substring with the specified string, and return the updated string. This function is case-insensitive.|
-|[split](#split)	|Return an array that contains substrings based on the delimiter specified.|
+|[replaceIgnoreCase](#replaceIgnoreCase)| Replace a substring with the specified string, and return the updated string. This function is case-insensitive.|
+|[split](#split) |Return an array that contains substrings based on the delimiter specified.|
 |[substring](#substring)|Return characters from a string.|
 |[toLower](#toLower)|Return a string in lowercase in an optional locale format.|
 |[toUpper](#toUpper)|Return a string in uppercase in an optional locale format.|
@@ -59,9 +60,9 @@ You can also view the list in [alphabetical order](#prebuilt-functions-sorted-al
 
 ## Collection functions
 
-|Function	|Explanation|
+|Function |Explanation|
 |-----------|-----------|
-|[contains](#contains)	|Works to find an item in a string, to find an item in an array, or to find a parameter in a complex object. <br> **Examples**: <br> contains('hello world', 'hello')<br> contains(createArray('1','2'), '1')<br> contains(json("{'foo':'bar'}"), 'foo')|
+|[contains](#contains) |Works to find an item in a string, to find an item in an array, or to find a parameter in a complex object. <br> **Examples**: <br> contains('hello world', 'hello')<br> contains(createArray('1','2'), '1')<br> contains(json("{'foo':'bar'}"), 'foo')|
 |[first](#first)|Return the first item from the collection.|
 |[join](#join) |Return a string that has all the items from an array and has each character separated by a delimiter.<br>**Example**: <br> join(createArray('a','b'), '.') = "a.b"|
 |[last](#last) |Return the last item from the collection.|
@@ -94,9 +95,9 @@ You can also view the list in [alphabetical order](#prebuilt-functions-sorted-al
 |[greater](#greater)|Comparison greater than. Return `true` if the first value is more, or return `false` if less.|
 |[greaterOrEquals](#greaterOrEquals)|Comparison greater than or equal to. Return `true` if the first value is greater or equal, or return `false` if the first value is less.|
 |[if](#if)|Check whether an expression is true or false. Based on the result, return a specified value.|
-|[less](#less)|	Comparison less than operation. Return `true` if the first value is less, or return `false` if the first value is more.|
-|[lessOrEquals](#lessOrEquals)|	Comparison less than or equal operation. Return `true` if the first value is less than or equal, or return `false` if the first value is more.|
-|[not](#not)|	Logical not operator. Return `true` if the expression is false, or return `false` if true.|
+|[less](#less)| Comparison less than operation. Return `true` if the first value is less, or return `false` if the first value is more.|
+|[lessOrEquals](#lessOrEquals)| Comparison less than or equal operation. Return `true` if the first value is less than or equal, or return `false` if the first value is more.|
+|[not](#not)| Logical not operator. Return `true` if the expression is false, or return `false` if true.|
 |[or](#or)|Logical or operation. Return `true` if at least one expression is true, or return `false` if all are false.|
 |[exists](#exists)|Evaluate an expression for truthiness.|
 
@@ -187,7 +188,7 @@ You can also view the list in [alphabetical order](#prebuilt-functions-sorted-al
 
 ## Timex functions
 
-|Function	|Explanation|
+|Function |Explanation|
 |-----------|-----------|
 |[isPresent](#isPresent)    | Return true if the TimexProperty or Timex expression refers to the present. |
 |[isDuration](#isDuration)    | Return true if the TimexProperty or Timex expression refers to a duration. |
@@ -238,8 +239,8 @@ You can also view the list in [alphabetical order](#prebuilt-functions-sorted-al
 |[isBoolean](#isBoolean)|Return true if the given input is a Boolean.|
 |[isArray](#isArray)|Return true if the given input is an array.|
 |[isObject](#isObject)|Return true if the given input is an object.|
-|[isDateTime](#isDateTime)|Return true if the given input is a UTC ISO format	timestamp.|
-|[isString](#isString)|Return true if the given input is a string.|
+|[isDateTime](#isDateTime)|Return true if the given input is a UTC ISO format timestamp.|
+|[isString](#isString)|Returns **true** if the given input is a string.|
 
 ## Prebuilt functions sorted alphabetically
 
@@ -1496,9 +1497,9 @@ This example returns the difference in ticks between two timestamps:
 dateTimeDiff('2018-01-01T08:00:00.000Z', '2019-01-01T08:00:00.000Z')
 ```
 
-Returns the result **-315360000000000**. Note that the value is a negative number.
+Returns the result **-315360000000000**. The value is a negative number.
 
-<a name="dayOfMonth"></a>	<a name="dayOfMonth"></a>
+<a name="dayOfMonth"></a> <a name="dayOfMonth"></a>
 
 ### dayOfMonth
 

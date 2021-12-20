@@ -3,10 +3,11 @@ title: Convert a JavaScript v3 bot to a skill
 description: Shows how to convert existing JavaScript v3 bots to skills and consume them from a JavaScript v4 bot.
 keywords: JavaScript, bot migration, skills, v3 bot
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
-ms.topic: how-to
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
+ms.topic: how-to
 ms.date: 10/28/2021
 monikerRange: 'azure-bot-service-4.0'
 ---

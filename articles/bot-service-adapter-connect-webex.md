@@ -1,13 +1,13 @@
 ---
-title: Connect a bot to Webex Teams | Microsoft Docs
+title: Connect a bot to Webex Teams
 description: Learn how to configure a bot's connection to Webex via the Webex adapter.
 keywords: bot adapter, Webex, Webex bot
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: micchow
-ms.topic: how-to
+ms.reviewer: mainguy
 ms.service: bot-service
+ms.topic: how-to
 ms.date: 11/01/2021
 ---
 

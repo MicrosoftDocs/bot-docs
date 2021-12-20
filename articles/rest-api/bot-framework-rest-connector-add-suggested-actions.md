@@ -1,11 +1,12 @@
 ---
 title: Add suggested actions to messages in Bot Framework SDK
 description: Learn how to add suggested actions to messages using the Bot Connector service.
-author: RobStand
-ms.author: kamrani
-manager: kamrani
-ms.topic: how-to
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
+ms.topic: how-to
 ms.date: 09/21/2021
 ---
 

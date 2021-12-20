@@ -2,11 +2,12 @@
 title: Structured response template in Bot Framework SDK
 description: Describe the structure response templates available with language generation.
 keywords: structure response template, reference, language generation, lg
-author: kamrani
-ms.author: kamrani
-manager: kamrani
-ms.topic: reference
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
+ms.topic: reference
 ms.date: 09/21/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -364,7 +365,6 @@ Suggestions can now support a full blown CardAction structure.
 #### Adaptive card
 Adaptive cards today are rendered via `[Attachment=cardpath.json adaptive]` notation. You can define adaptive cards inline and consume them via the `json()` function.
 
-
 ```lg
     # GetColor.prompt
     [Activity
@@ -407,6 +407,7 @@ Here's an example:
 
 [more test samples][4]
 -->
+
 ## Additional Information
 
 - [C# API Reference](/dotnet/api/microsoft.bot.builder.languagegeneration)

@@ -5,9 +5,9 @@ keywords: WeChat, Tencent, bot channel, WeChat App, WeChat bot, App ID, App Secr
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: micchow
-ms.topic: how-to
+ms.reviewer: mainguy
 ms.service: bot-service
+ms.topic: how-to
 ms.date: 11/01/2021
 ---
 
@@ -140,14 +140,14 @@ Don't forgot you need to set up the IP allow-list, otherwise WeChat won't accept
 
 #### Sandbox Account
 
-Sandbox account don't have **EncodingAESKey** , message from WeChat was not encrypted just leave EncodingAESKey blank. You only have three parameters here, **appID** , **appsecret** and **Token**.
+Sandbox account don't have **EncodingAESKey** , message from WeChat was not encrypted just leave EncodingAESKey blank. You only have three parameters here, **appID**, **appsecret**, and **Token**.
 
  ![sandbox_account](./media/channels/wechat-sandbox-account.png)
 
 ### Start Bot And Set Endpoint URL
 
-Now you can set your bot backend. Before you are doing this, you have to start the bot before you save the settings, WeChat will send you a request to verify the URL.
-Please set the endpoint in such pattern: **https://your_end_point/WeChat**, or set your personal settings the same with what you have done in BotController.cs
+Now you can set your bot backend. Before you are doing this, you have to start the bot before you save the settings. WeChat will send you a request to verify the URL.
+Set the endpoint in the following pattern (replace '<your_end_point>' with  your end point): `https://<your_end_point>/WeChat`. Or, set your personal settings as you did in BotController.cs.
 
  ![sandbox_account2](./media/channels/wechat-sandbox-account-2.png)
 

@@ -1,11 +1,12 @@
 ---
 title: Authenticate requests with the Bot Connector API
 description: Learn how to authenticate API requests in the Bot Connector API and Bot State API.
-author: RobStand
-ms.author: kamrani
-manager: kamrani
-ms.topic: how-to
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
+ms.topic: how-to
 ms.date: 09/30/2021
 ---
 

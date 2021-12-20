@@ -2,12 +2,13 @@
 title: Connect a bot to Skype - Azure Bot Service
 description: Learn how to make a bot available in Skype. See how to configure Skype settings so that users can interact with the bot through the Skype channel.
 keywords: skype, bot channels, configure skype, publish, connect to channels
-author: kamrani
-ms.author: kamrani
-manager: kamrani
-ms.topic: how-to
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: mainguy
 ms.service: bot-service
-ms-custom: abs-meta-21q1 
+ms.topic: how-to
+ms-custom: abs-meta-21q1
 ms.date: 09/01/2019
 ---
 

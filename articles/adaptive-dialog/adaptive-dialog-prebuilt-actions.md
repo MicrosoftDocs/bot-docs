@@ -2,11 +2,12 @@
 title: Actions in adaptive dialogs in Bot Framework SDK
 description: Learn about the adaptive dialog prebuilt actions, grouped by their general purpose.
 keywords: bot, actions, adaptive dialogs
-author: erhopf
-ms.author: kamrani
-manager: kamrani
-ms.topic: reference
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
+ms.topic: reference
 ms.date: 09/27/2021
 monikerRange: 'azure-bot-service-4.0'
 ---

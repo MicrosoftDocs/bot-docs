@@ -2,7 +2,7 @@
 title: Functions injected from the language generation library - Bot Service
 description: Describes how to inject functions from LG into templates.
 keywords: functions from lg, reference, language generation
-author: emgrol
+author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
@@ -11,7 +11,6 @@ ms.service: bot-service
 ms.date: 11/01/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
-
 
 # Functions injected from the language generation library
 
