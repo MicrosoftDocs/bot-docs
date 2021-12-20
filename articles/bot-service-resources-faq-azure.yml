@@ -1,8 +1,8 @@
 ### YamlMime:FAQ
 
 metadata:
-  title: Bot Framework Azure Frequently Asked Questions  # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: "Answers to common Azure frequent asked questions." # Required; article description that is displayed in search results. < 160 chars.
+  title: Bot Framework Azure Frequently Asked Questions
+  description: "Answers to common Azure frequently asked questions."
   author: JonathanFingold
   ms.author: iawilt
   manager: shellyha

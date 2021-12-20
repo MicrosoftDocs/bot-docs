@@ -2,11 +2,12 @@
 title:  Web Chat overview - Bot Service
 description: Become familiar with the Bot Framework Web Chat component. Learn how to use and customize this component. View available properties and other information.
 keywords: bot framework, webchat, chat, samples, react, reference
-author: mmiele
-ms.author: kamrani
-manager: kamrani
-ms.topic: overview
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
+ms.topic: overview
 ms.date: 09/27/2021
 ---
 
@@ -196,7 +197,7 @@ Re-subscribing requires that you reset your registry.
 1. Delete your root `package-lock.json`
 1. Remove your `node_modules` directory
 1. Reinstall your packages with `npm i`
-1. Note that in your `package-lock.json`, the registries are pointing to https://npmjs.com/ again.
+1. Note that in your `package-lock.json`, the registries are pointing to `https://npmjs.com/` again.
 
 ## Contributing
 
