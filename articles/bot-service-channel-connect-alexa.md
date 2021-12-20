@@ -2,11 +2,12 @@
 title: Connect a bot to Alexa in Bot Framework SDK
 description:  Learn how to configure a bot to allow communication with Alexa.
 keywords: connect a bot, bot channel, Alexa bot, credentials, configure, phone
-author: kamrani
-ms.author: kamrani
-manager: kamrani
-ms.topic: how-to
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: mainguy
 ms.service: bot-service
+ms.topic: how-to
 ms.date: 09/21/2021
 ---
 
@@ -117,6 +118,6 @@ You can require account linking at the time of enabling the skill, if everything
  1. Attach a [sign-in card](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-cards.md#signin-card) on the outgoing activity.
  1. This will be converted to a **LinkAccount card** for Alexa that prompts the user to sign in using the Alexa app.
 
-If the user successfully links their account into the app a token is then available on subsequent requests in the channel data. 
+If the user successfully links their account into the app a token is then available on subsequent requests in the channel data.
 
-For more information, see also [Alexa Adapter](https://github.com/BotBuilderCommunity/botbuilder-community-dotnet/tree/develop/libraries/Bot.Builder.Community.Adapters.Alexa) maintained by the community. 
+For more information, see also [Alexa Adapter](https://github.com/BotBuilderCommunity/botbuilder-community-dotnet/tree/develop/libraries/Bot.Builder.Community.Adapters.Alexa) maintained by the community.

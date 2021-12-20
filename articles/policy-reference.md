@@ -1,12 +1,14 @@
 ---
 title: Built-in policy definitions for Azure Bot Service
 description: Lists Azure Policy built-in policy definitions for Azure Bot Service. These built-in policy definitions provide common approaches to managing your Azure resources.
-ms.date: 04/21/2021
-ms.topic: reference
-ms.custom: subject-policy-reference
-ms.service: bot-service
 author: JonathanFingold
-ms.author: kamrani
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.service: bot-service
+ms.topic: reference
+ms.date: 04/21/2021
+ms.custom: subject-policy-reference
 ---
 # Azure Policy built-in definitions for Azure Bot Service
 

@@ -1,8 +1,8 @@
 ### YamlMime:FAQ
 
 metadata:
-  title: Bot Framework Security and Privacy Frequently Asked Questions  # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: "Answers to common security and privacy frequent asked questions." # Required; article description that is displayed in search results. < 160 chars.
+  title: Bot Framework Security and Privacy Frequently Asked Questions
+  description: "Answers to common security and privacy frequently asked questions."
   author: JonathanFingold
   ms.author: iawilt
   manager: shellyha

@@ -2,11 +2,12 @@
 title: Managing state in adaptive dialogs - reference guide
 description: Describing memory scopes in adaptive dialogs
 keywords: bot, managing state, memory scopes, user scope, conversation scope, dialog scope, settings scope, adaptive dialogs
-author: WashingtonKayaker
-ms.author: kamrani
-manager: kamrani
-ms.topic: conceptual
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
+ms.topic: conceptual
 ms.date: 06/12/2020
 monikerRange: 'azure-bot-service-4.0'
 ---

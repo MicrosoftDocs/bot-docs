@@ -2,11 +2,12 @@
 title: Inputs in adaptive dialogs in Bot Framework SDK
 description: Learn about adaptive dialogs prebuilt inputs for collecting and validating user input.
 keywords: bot, inputs, adaptive dialogs
-author: erhopf
-ms.author: kamrani
-manager: kamrani
-ms.topic: conceptual
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
+ms.topic: conceptual
 ms.date: 09/28/2021
 monikerRange: 'azure-bot-service-4.0'
 ---

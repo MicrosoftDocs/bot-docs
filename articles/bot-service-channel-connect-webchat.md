@@ -3,10 +3,11 @@ title: Connect a bot to Web Chat in the Bot Framework SDK
 description: Learn how to use the Web Chat control to connect to a bot that uses the Web Chat channel.
 keywords: web chat, bot channel, web page, secret key, iframe, HTML
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
-ms.topic: how-to
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: mainguy
 ms.service: bot-service
+ms.topic: how-to
 ms.date: 09/21/2021
 ---
 

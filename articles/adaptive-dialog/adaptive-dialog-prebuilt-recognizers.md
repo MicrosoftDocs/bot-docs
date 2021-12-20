@@ -3,10 +3,11 @@ title: Language recognizer reference for Bot Framework bots
 description: Adaptive dialogs and language recognizers work together to interpret user intent and to react fluidly to user input. This article describes builtin recognizers in the Bot Framework SDK.
 keywords: bot, recognizers, adaptive dialogs
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
-ms.topic: reference
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
+ms.topic: reference
 ms.date: 10/18/2021
 ms.custom: abs-meta-21q1
 monikerRange: 'azure-bot-service-4.0'

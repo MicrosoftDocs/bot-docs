@@ -1,11 +1,12 @@
 ---
 title: Troubleshooting Azure Bot Service bots
 description: These frequently asked questions can help you to troubleshoot common bot development or operational issues for bots built with Azure Bot Service.
-author: DeniseMak
-ms.author: kamrani
-manager: kamrani
-ms.topic: troubleshooting
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
+ms.topic: troubleshooting
 ms.date: 02/20/2020
 ms.custom: abs-meta-21q1
 ---
@@ -160,6 +161,7 @@ If your Direct Line conversation appears to start over after every message, the 
 To fix this, set the `from` property in each message that the Direct Line client sends to a stable value that uniquely represents the user who is sending the message. For example, if a user is already signed-in to a webpage or app, you might use that existing user ID as the value of the `from` property in messages that the user sends. Alternatively, you might choose to generate a random user ID on page-load or on application-load, store that ID in a cookie or device state, and use that ID as the value of the `from` property in messages that the user sends.
 
 ## What causes the Direct Line 3.0 service to respond with HTTP status code 502 "Bad Gateway"?
+
 Direct Line 3.0 returns HTTP status code 502 when it tries to contact your bot but the request does not complete successfully. This error indicates that either the bot returned an error or the request timed out. For more information about errors that your bot generates, go to the bot's dashboard within the [Azure portal](https://portal.azure.com) and click the "Issues" link for the affected channel. If you have Application Insights configured for your bot, you can also find detailed error information there.
 
 ## Why do I get an Authorization_RequestDenied exception when creating a bot?
@@ -202,5 +204,5 @@ If your bot is registered in dev.botframework.com, and you want to migrate it to
 
 [LUISPreBuiltEntities]: /azure/cognitive-services/luis/pre-builtentities
 [BotFrameworkIDGuide]: bot-service-resources-identifiers-guide.md
-[StateAPI]: ~/rest-api/bot-framework-rest-state.md
+[StateAPI]: rest-api/bot-framework-rest-state.md
 [TroubleshootingAuth]: bot-service-troubleshoot-authentication-problems.md

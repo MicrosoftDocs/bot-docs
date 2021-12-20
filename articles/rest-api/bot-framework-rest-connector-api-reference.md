@@ -1,11 +1,12 @@
 ---
 title: Bot Framework Connector service REST API reference
 description: Learn about headers, operations, objects, and errors in the Bot Framework Connector service.
-author: erhopf
-ms.author: kamrani
-manager: kamrani
-ms.topic: reference
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
+ms.topic: reference
 ms.date: 12/28/2020
 ms.custom: abs-meta-21q1
 ---

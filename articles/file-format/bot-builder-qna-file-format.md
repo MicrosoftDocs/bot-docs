@@ -2,12 +2,12 @@
 title: .qna file format - Bot Service
 description: .qna file format reference
 keywords: qna file format, reference, qnamaker
-author: emgrol
+author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
-ms.topic: reference
 ms.service: bot-service
+ms.topic: reference
 ms.date: 11/01/2021
 monikerRange: 'azure-bot-service-4.0'
 ---

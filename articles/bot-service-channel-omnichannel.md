@@ -2,8 +2,9 @@
 title: Connect a Bot Framework bot to Omnichannel
 description: Learn how to configure bots to use Omnichannel to communicate with users in your Dynamics 365 organization.
 author: JonathanFingold
-manager: kamrani
-ms.author: kamrani
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: mainguy
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 09/30/2021

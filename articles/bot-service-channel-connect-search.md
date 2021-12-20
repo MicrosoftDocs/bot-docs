@@ -2,8 +2,9 @@
 title: Connect a Bot Framework bot to Search
 description: Learn how to configure bots to use Search to communicate with people. See how to connect bots to Search in Azure.
 author: JonathanFingold
-manager: kamrani
-ms.author: kamrani
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: mainguy
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 10/04/2021

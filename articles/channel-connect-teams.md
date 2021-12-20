@@ -2,11 +2,12 @@
 title: Connect a bot to Microsoft Teams in Bot Framework SDK
 description: Learn how to connect a bot to Microsoft Teams. Set up the bot as a contact to exchange messages.
 keywords: Teams, bot channel, configure Teams
-author: kamrani
-ms.author: kamrani
-manager: kamrani
-ms.topic: how-to
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: mainguy
 ms.service: bot-service
+ms.topic: how-to
 ms.date: 09/02/2021
 ---
 

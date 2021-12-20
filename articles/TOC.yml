@@ -239,8 +239,9 @@
         - name: Connect to Direct Line Speech
           href: bot-service-channel-connect-directlinespeech.md
         - name: Direct Line App Service Extension
-          href: bot-service-channel-directline-extension.md
           items:
+          - name: Direct Line App Service Extension
+            href: bot-service-channel-directline-extension.md
           - name: Configure .NET bot for extension
             href: bot-service-channel-directline-extension-net-bot.md
           - name: Configure Node.js bot for extension
@@ -451,7 +452,7 @@
     href: bot-service-activities-entities.md
   - name: Azure Policy built-ins
     displayName: samples, policies, definitions
-    href: ./policy-reference.md
+    href: policy-reference.md
 - name: Resources
   items:
   - name: Get support

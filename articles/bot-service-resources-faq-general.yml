@@ -1,14 +1,15 @@
 ### YamlMime:FAQ
 
 metadata:
-  title: General Frequently Asked Questions in Bot Framework SDK  # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Answers to common general frequent asked questions. # Required; article description that is displayed in search results. < 160 chars.
-  services: service
-  ms.service: bot-service #Required; service per approved list. service slug assigned to your service by ACOM.
-  ms.topic: troubleshooting # Required
-  author: mmiele #Required; your GitHub user alias, with correct capitalization.
-  ms.author: botcc #Required; microsoft alias of author; optional team alias.
-  ms.date: 10/04/2021 #Required; mm/dd/yyyy format.
+  title: General Frequently Asked Questions in Bot Framework SDK
+  description: Answers to common general frequently asked questions.
+  author: JonathanFingold
+  ms.author: iawilt
+  manager: shellyha
+  ms.reviewer: micchow
+  ms.topic: troubleshooting
+  ms.service: bot-service
+  ms.date: 10/04/2021
 
 title: Bot Framework General Frequently Asked Questions
 summary: |

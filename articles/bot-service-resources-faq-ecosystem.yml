@@ -1,8 +1,8 @@
 ### YamlMime:FAQ
 
 metadata:
-  title: Bot Framework Ecosystem Frequently Asked Questions  # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: "Answers to common ecosystem frequent asked questions." # Required; article description that is displayed in search results. < 160 chars.
+  title: Bot Framework Ecosystem Frequently Asked Questions
+  description: "Answers to common ecosystem frequently asked questions."
   author: JonathanFingold
   ms.author: iawilt
   manager: shellyha

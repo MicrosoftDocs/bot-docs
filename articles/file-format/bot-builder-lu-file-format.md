@@ -2,12 +2,12 @@
 title: .lu file format - Bot Service
 description: .lu file format reference
 keywords: lu file format, reference, language understanding
-author: emgrol
+author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
-ms.topic: reference
 ms.service: bot-service
+ms.topic: reference
 ms.date: 12/2/2021
 monikerRange: 'azure-bot-service-4.0'
 ---

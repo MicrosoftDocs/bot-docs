@@ -3,10 +3,11 @@ title: Connect a bot to Direct Line Speech
 description: Learn how to connect a bot to the Direct Line Speech channel for user's voice interaction with high reliability and low latency.
 services: bot-service
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
-ms.service: bot-service
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: Daniel.Evans
 ms.topic: conceptual
+ms.service: bot-service
 ms.date: 10/18/2021
 ---
 
@@ -20,7 +21,7 @@ Once you've built your bot, onboarding it with Direct Line Speech will enable lo
 
 ## Prerequisites
 
- The Direct Line Speech channel requires a **Cognitive Services** resource, specifically a **Speech** cognitive service resource. You can either use an existing resource or create a new one. To create a new speech resource:
+The Direct Line Speech channel requires a **Cognitive Services** resource, specifically a **Speech** cognitive service resource. You can either use an existing resource or create a new one. To create a new speech resource:
 
 1. Go to the [Azure portal](https://ms.portal.azure.com/#create/hub) to create resources.
 1. In the right pane, enter "speech" in the search box.
