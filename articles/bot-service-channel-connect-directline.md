@@ -2,11 +2,12 @@
 title: Connect a bot to Direct Line in Bot Framework SDK
 description: Learn how to configure bots to communicate with client applications using the Direct Line channel.
 keywords: direct line, bot channels, custom client, connect to channels, configure
-author: mmiele
-ms.author: kamrani
-manager: kamrani
-ms.topic: how-to
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: Daniel.Evans
 ms.service: bot-service
+ms.topic: how-to
 ms.date: 09/22/2021
 ---
 
@@ -21,7 +22,7 @@ This article describes how to connect a bot to the **Direct Line channel**. Use 
 
 The first thing you must do is to add the Direct Line channel to the bot.
 
-1. In your browser, navigate to the [Azure Portal](https://portal.azure.com/).
+1. In your browser, navigate to the [Azure portal](https://portal.azure.com/).
 1. In the left panel, click the **Channels** item.
 1. In the right panel, under *Add a featured channel*, click the **Direct Line** icon (marked in red in the picture below).
 
