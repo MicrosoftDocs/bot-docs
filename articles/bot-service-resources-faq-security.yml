@@ -42,7 +42,7 @@ sections:
 
       - question: Which specific URLs do I need to allow-list in my corporate firewall to access Bot Framework services?
         answer: |
-          If you have an outbound firewall blocking traffic from your bot to the Internet, you'll need to allow-list the following URLs in that firewall:
+          If you have an outbound firewall that blocks traffic from your bot to the Internet, you'll need to allow-list the following URLs in that firewall:
 
           - `login.botframework.com` (Bot authentication)
           - `login.microsoftonline.com` (Bot authentication)
@@ -57,11 +57,11 @@ sections:
           > [!NOTE]
           > You may use `<channel>.botframework.com` if you'd prefer not to allow-list a URL with an asterisk. `<channel>` is equal to
           > every channel your bot uses such as `directline.botframework.com`, `webchat.botframework.com`, and `slack.botframework.com`.
-          > It is also worthwhile to watch traffic over your firewall while testing the bot to make sure nothing else is getting blocked.
+          > It's also worthwhile to watch traffic over your firewall while testing the bot to see what traffic it is blocking.
 
       - question: Can I block all traffic to my bot except traffic from the Bot Framework Service?
         answer: |
-          Bot Framework Services are hosted in Azure data centers world-wide and the list of Azure IPs is constantly changing.
+          Bot Framework Services is hosted in Azure data centers world-wide and the list of Azure IPs is constantly changing.
           That means allow-listing certain IP addresses may work one day and break the next as the Azure IP Addresses change.
 
       - question: Which RBAC role is required to create and deploy a bot?
@@ -145,10 +145,10 @@ sections:
           You have two different options for restricting incoming messages that your bot processes.
 
           - If you are dealing with secure data, it is definitely recommended to use OAuth to authenticate the users.
-          - Using middleware is another good option. For example, in the case of the **Teams channel**, add the `TeamsTenantFilteringMiddleware` class to your bot,
-            and wire it up in your startup method.
-            See these examples:  [C# version](https://github.com/microsoft/botbuilder-dotnet/tree/main/tests/Teams/Roster),
-            [JavaScript version](https://github.com/microsoft/botbuilder-js/tree/3481a14c39d49719be0b6917fdc85afb5381602e/libraries/teams-scenarios/integrationBot).
+          - Using middleware is another good option. For example, in the case of the **Teams channel**,
+            you can create middleware to get the tenant ID from the
+            [Teams channel data](/microsoftteams/platform/bots/how-to/conversations/conversation-messages#teams-channel-data).
+            The middleware can then decide whether to let the incoming activity continue on to your bot logic or to instead return an error message.
 
             > [!WARNING]
             > You cannot prevent Teams from sending you messages from various tenants, nor you can prevent someone from installing your bot if they have your app manifest.
