@@ -29,7 +29,7 @@ All bot applications share some common features.
 
 You can create an echo bot from the templates, as described in [Create a bot](../bot-service-quickstart-create-bot.md), or you can copy an echo bot project from the [Microsoft/BotBuilder-Samples](https://github.com/Microsoft/BotBuilder-Samples) repository.
 
-The C# and JavaScript templates have built-in support for streaming connections. This article does cover streaming features. For information about streaming connections, see how to [connect a bot to Direct Line Speech](../bot-service-channel-connect-directlinespeech.md).
+The C# and JavaScript templates have built-in support for streaming connections. However, this article doesn't cover streaming features. For information about streaming connections, see how to [connect a bot to Direct Line Speech](../bot-service-channel-connect-directlinespeech.md).
 
 ## Prerequisites
 
@@ -82,10 +82,11 @@ The **config.py** file specifies the configuration information for your bot, suc
 
 ## Resource provisioning
 
-The bot as a web app needs to create a web service, bot adapter, and bot object.
+To function as a web app, your bot needs to create a web service, bot adapter, and bot object.
 
-Many bots would also create the storage layer and memory management objects for the bot, but the echo bot does not require state.
-Other bots would also create any objects external to the bot object or adapter that either need to consume.
+For most bots, you would also create storage layer and memory management objects for the bot.
+However, the echo bot does not need to persist state between turns.
+And for some bots, you may need to create other objects that the bot object or adapter will require.
 
 ### [C#](#tab/csharp)
 
@@ -111,9 +112,10 @@ In aiohttp, you set up the web service and the objects it needs in the **app.py*
 
 ## Messaging endpoint
 
-The template implements a web service with a messaging endpoint. The service extracts the authentication header and request payload and forwards them to the adapter.
+The template implements a web service with a messaging endpoint.
+When it receives a request, the service extracts the authentication header and request payload and forwards them to the adapter.
 
-The C# and JavaScript SDKs support streaming connections. While the echo bot does not use any of the streaming features, the adapter in the template is designed to support them.
+The C# and JavaScript SDKs support streaming connections. While the echo bot does not use any of the streaming features, the adapter in the C# and JavaScript templates is designed to support them.
 
 Each incoming request represents the start of a new turn.
 
@@ -147,7 +149,7 @@ Each incoming request represents the start of a new turn.
 
 ## The bot adapter
 
-The adapter receives activities from the messaging endpoint, forwards them to the bot's turn handler, and catches any errors or exceptions the bot's logic doesn't catch.
+The adapter receives activities from the messaging endpoint, forwards them to the bot's turn handler, and catches any errors or exceptions the bot's logic doesn't catch. The adapter also forwards activities from your bot to the user's channel.
 
 The adapter allows you to add your own _on turn error_ handler.
 
@@ -189,7 +191,7 @@ The AdapterWithErrorHandler is defined in the Java SDK code, in the com.microsof
 
 ## The bot logic
 
-The echo bot uses an _activity handler_ and implements handlers for the activity types it will recognize and react to, in this case, the _conversation update_ and _message_ activities.
+The echo bot uses an _activity handler_ and implements handlers for the activity types it recognizes and reacts to, in this case, the _conversation update_ and _message_ activities.
 
 - A conversation update activity includes information on who has joined or left the conversation. For non-group conversations, both the bot and the user join the conversation when it starts. For group conversations, a conversation update is generated whenever someone joins or leaves the conversation, whether that's the bot or a user.
 - A message activity represents a message the user sends to the bot.
