@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: reference
-ms.date: 12/28/2020
+ms.date: 01/13/2022
 ms.custom: abs-meta-21q1
 ---
 
@@ -123,6 +123,11 @@ Any response that specifies an HTTP status code in the 4xx range or 5xx range wi
 
 Use these operations to create conversations, send messages (activities), and manage the contents of conversations.
 
+> [!IMPORTANT]
+> Not all channels support all endpoints. However, all channels should support the _reply to activity_ endpoint.
+>
+> For example, only Direct Line and Web Chat support the _get conversations_ endpoint.
+
 | Operation | Description |
 |----|----|
 | [Create Conversation](#create-conversation) | Creates a new conversation. |
@@ -138,9 +143,6 @@ Use these operations to create conversations, send messages (activities), and ma
 | [Send to conversation](#send-to-conversation) | Sends an activity (message) to the end of the specified conversation. |
 | [Update activity](#update-activity) | Updates an existing activity. |
 | [Upload attachment to channel](#upload-attachment-to-channel) | Uploads an attachment directly into a channel's blob storage. |
-
-> [!IMPORTANT]
-> Not all channels support all endpoints. For example, only Direct Line (and by extension, Web Chat) supports the _get conversations_ endpoint. However, all channels should support the _reply to activity_ endpoint.
 
 ### Create conversation
 
