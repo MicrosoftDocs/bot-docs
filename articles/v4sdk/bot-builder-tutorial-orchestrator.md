@@ -95,6 +95,7 @@ For more information, see how to **Create a LUIS app in the LUIS portal** and **
 
 The CLI interface for the bf orchestrator tool creates the Orchestrator snapshot file for routing to the correct LUIS or QnA Maker app at run time.
 
+1. Install the latest supported version of the [Visual C++ redistributable package](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)
 1. Open a command prompt or terminal window, and change directories to the sample directory
 1. Make sure you have the current version of npm and the bf cli tool.
 
