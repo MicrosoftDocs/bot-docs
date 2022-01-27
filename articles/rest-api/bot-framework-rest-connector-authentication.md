@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 09/30/2021
+ms.date: 01/27/2022
 ---
 
 # Authentication with the Bot Connector API
@@ -22,7 +22,7 @@ This article describes the authentication technologies and requirements for the 
 > By implementing all steps in this article, you can mitigate the risk of an attacker being able to read messages that
 > are sent to your bot, send messages that impersonate your bot, and steal secret keys.
 
-If you are using the [Bot Framework SDK for .NET](../dotnet/bot-builder-dotnet-overview.md) or the [Bot Framework SDK for Node.js](../nodejs/index.md), you do not need to implement the security procedures described in this article, because the SDK automatically does it for you. Simply configure your project with the App ID and password that you obtained for your bot during [registration](../bot-service-quickstart-registration.md) and the SDK will handle the rest.
+If you're using the [Bot Framework SDK](../index-bf-sdk.yml), you don't need to implement the security procedures described in this article, because the SDK automatically does it for you. Simply configure your project with the App ID and password that you obtained for your bot during [registration](../bot-service-quickstart-registration.md) and the SDK will handle the rest.
 
 ## Authentication technologies
 
