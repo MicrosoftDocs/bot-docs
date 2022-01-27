@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 01/26/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -78,7 +78,7 @@ public DialogBot(IConfiguration configuration, ConversationState conversationSta
     Dialog = dialog;
     Logger = logger;
 
-    TimeoutSeconds = configuration.GetValue<int>("ExpireAfterSeconds");
+    ExpireAfterSeconds = configuration.GetValue<int>("ExpireAfterSeconds");
     DialogStateProperty = ConversationState.CreateProperty<DialogState>(nameof(DialogState));
     LastAccessedTimeProperty = ConversationState.CreateProperty<DateTime>(nameof(LastAccessedTimeProperty));
 }
@@ -117,7 +117,7 @@ public override async Task OnTurnAsync(ITurnContext turnContext, CancellationTok
 
 First, add an `ExpireAfterSeconds` setting to .env:
 
-```json
+```text
 MicrosoftAppId=
 MicrosoftAppPassword=
 ExpireAfterSeconds=30
@@ -181,7 +181,7 @@ const bot = new DialogBot(process.env.ExpireAfterSeconds, conversationState, use
 
 First, add an `ExpireAfterSeconds` setting to application.properties:
 
-``` txt
+```text
 MicrosoftAppId=
 MicrosoftAppPassword=
 server.port=3978
@@ -456,7 +456,7 @@ Start with a fresh copy of the **multi-turn prompt** sample.
 
 Update .env to include Cosmos DB storage options:
 
-```txt
+```text
 MicrosoftAppId=
 MicrosoftAppPassword=
 
@@ -564,7 +564,7 @@ Start with a fresh copy of the **multi-turn prompt** sample, and add the followi
 
 Update application.properties to include Cosmos DB storage options:
 
-```txt
+```text
 MicrosoftAppId=
 MicrosoftAppPassword=
 server.port=3978
@@ -691,7 +691,7 @@ Notice the two ContainerIds, one for `UserState` and one for `ConversationState`
 
 Next, add the `botbuilder-azure` package to requirements.txt.
 
-```txt
+```text
 botbuilder-integration-aiohttp>=4.10.0
 botbuilder-dialogs>=4.10.0
 botbuilder-ai>=4.10.0
