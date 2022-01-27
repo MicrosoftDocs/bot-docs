@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: conceptual
-ms.date: 09/27/2021
+ms.date: 01/25/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -40,73 +40,66 @@ Many identity providers support a sign-out operation that revokes the user token
 
 Azure Active Directory (Azure AD) is the identity service in Microsoft Azure that provides identity management and access control capabilities. It allows you to securely sign in users using industry standard protocols like **OAuth2.0**.
 
-You can choose from two Active Directory identity provider implementations, which have different settings as shown below.
+You can choose from two Active Directory identity provider implementations, which have different settings as shown below.
 
 > [!NOTE]
-> You use the settings described here when configuring the **OAuth Connection Settings** in the Azure bot registration application. For more information, see [Add authentication to a bot](bot-builder-authentication.md).
+> Use these settings when configuring **OAuth Connection Settings** in the Azure bot registration application. For more information, see [Add authentication to a bot](bot-builder-authentication.md).
+
+# [Azure AD v2](#tab/adv2)
+
+The Microsoft identity platform (v2.0)&mdash;also known as the Azure AD v2 endpoint&mdash;allows a bot to get tokens to call Microsoft APIs, such as Microsoft Graph or other APIs. The identity platformis an evolution of the Azure AD platform (v1.0).
+For more information, see the [Microsoft identity platform (v2.0) overview](/azure/active-directory/develop/active-directory-appmodel-v2-overview).
+
+Use the AD v2 settings below to enable a bot to access Office 365 data via the Microsoft Graph API.
+
+| Property | Description or value |
+|--|--|
+| **Name** | A name for this identity provider connection. |
+| **Service Provider** | The identity provider to use. Select **Azure Active Directory v2**. |
+| **Client id** | The application (client) ID for your Azure identity provider app. |
+| **Client secret** | The secret for your Azure identity provider app. |
+| **Tenant ID** | Your directory (tenant) ID or `common`. For more information, see the note about [tenant IDs](#azure-ad-note). |
+| **Scopes** | A space-separated list of the API permissions you granted the Azure AD identity provider app, such as `openid`, `profile`, `Mail.Read`, `Mail.Send`, `User.Read`, and `User.ReadBasic.All`. |
+| **Token Exchange URL** | For an _SSO-enabled skill bot_ use the token exchange URL associated with the OAuth connection; otherwise, leave this empty. For information about the SSO token exchange URL, see [Create an OAuth connection settings](bot-builder-authentication-sso.md#create-an-oauth-connection-settings-1). |
 
 # [Azure AD v1](#tab/adv1)
 
 ### Azure AD v1
 
-You use the settings shown to configure the Azure AD developer platform (v1.0), also known as **Azure AD v1** endpoint. This allows you to build  apps that securely sign in users with a Microsoft work or school account.
-For more information, see [Azure Active Directory for developers (v1.0) overview](/azure/active-directory/azuread-dev/v1-overview).
+Use the settings shown below to configure the Azure AD developer platform (v1.0), also known as **Azure AD v1** endpoint. This allows you to build apps that securely sign in users with a Microsoft work or school account.
+For more information, see [Azure Active Directory for developers (v1.0) overview](/azure/active-directory/azuread-dev/v1-overview).
 
-| Property               | Description                           | Value                                                |
-|------------------------|---------------------------------------|------------------------------------------------------|
-| **Name**               | The name of your connection           | \<Your name for the connection\> <img width="300px"> |
-| **Service Provider**   | Azure AD Identity provider            | `Azure Active Directory`                             |
-| **Client ID**          | Azure AD identity provider app ID     | \<Azure AD provider app ID\>                         |
-| **Client secret**      | Azure AD identity provider app secret | \<Azure AD provider app secret\>                     |
-| **Grant Type**         |                                       | `authorization_code`                                 |
-| **Login URL**          |                                       | `https://login.microsoftonline.com`                  |
-| **Tenant ID**          |                                       | <directory (tenant) ID> or `common`. See note.       |
-| **Resource URL**       |                                       | `https://graph.microsoft.com/`                       |
-| **Scopes**             |                                       | _leave this blank_                                   |
-| **Token Exchange URL** | Used for SSO in Azure AD v2           | See note below                                       |
-
-> [!NOTE]
->
-> - Enter the **tenant ID** you recorded for the Azure AD identity provider app, if you selected one of the following:
->   - *Accounts in this organizational directory only (Microsoft only - Single tenant)*
->   - *Accounts in any organizational directory(Microsoft AAD directory - Multi tenant)*
-> - Enter `common`  if you selected *Accounts in any organizational directory (Any Azure AD directory - Multi tenant and personal Microsoft accounts e.g. Skype, Xbox, Outlook.com)*. Otherwise, the Azure AD identity provider app will verify through the tenant whose ID was selected and exclude personal Microsoft accounts.
-> - The **Token Exchange URL** is left blank for the root bot but is populated for the skill bot. See [Create an OAuth connection settings](../v4sdk/bot-builder-authentication-sso.md#create-an-oauth-connection-settings-1) to learn how to get its value.
-
-# [Azure AD v2](#tab/adv2)
-
-### Azure AD v2
-
-You use the settings shown to configure the Microsoft identity platform (v2.0), also known as **Azure AD v2** endpoint, which is an evolution of the Azure AD platform (v1.0). It allows a bot to get tokens to call Microsoft APIs, such as Microsoft Graph or custom APIs.
-For more information, see the [Microsoft identity platform (v2.0) overview](/azure/active-directory/develop/active-directory-appmodel-v2-overview).
-
-The AD v2 settings enable a bot to access Office 365 data via the Microsoft Graph API.
-
-| Property | Description | Value |
-|--|--|--|
-| **Name** | The name of your connection | \<Your name for the connection\> <img width="300px"> |
-| **Service Provider** | Azure AD Identity provider | `Azure Active Directory v2` |
-| **Client ID** | Azure AD identity provider app ID | \<Azure AD provider app ID\> |
-| **Client secret** | Azure AD identity provider app secret | \<Azure AD provider app secret\> |
-| **Tenant ID** |  | \<directory (tenant) ID\> or `common`. See note. |
-| **Scopes** | Space separated list of the API permissions you granted Azure AD identity provider app | Values such as `openid`, `profile`, `Mail.Read`, `Mail.Send`, `User.Read`, and `User.ReadBasic.All` |
-| **Token Exchange URL** | Used for SSO in Azure AD v2 | See note below |
-
-> [!NOTE]
->
-> - Enter the **tenant ID** you recorded for the Azure AD identity provider app, if you selected one of the following:
->   - *Accounts in this organizational directory only (Microsoft only - Single tenant)*
->   - *Accounts in any organizational directory(Microsoft AAD directory - Multi tenant)*
-> - Enter `common`  if you selected *Accounts in any organizational directory (Any Azure AD directory - Multi tenant and personal Microsoft accounts, such as Skype, Xbox, or Outlook.com)*. Otherwise, the Azure AD identity provider app will verify through the tenant whose ID was selected and exclude personal MS accounts.
-> - Scopes takes a case-sensitive, space-separated list of values.
-> - The **Token Exchange URL** is left blank for the root bot but is populated for the skill bot. See [Create an OAuth connection settings](../v4sdk/bot-builder-authentication-sso.md#create-an-oauth-connection-settings-1) to learn how to get its value.
+| Property | Description or value |
+|--|--|
+| **Name** | A name for this identity provider connection. |
+| **Service Provider** | The identity provider to use. Select **Azure Active Directory**. |
+| **Client id** | The application (client) ID for your Azure identity provider app. |
+| **Client secret** | The secret for your Azure identity provider app. |
+| **Grant Type** | `authorization_code` |
+| **Login URL** | `https://login.microsoftonline.com` |
+| **Tenant ID** | Your directory (tenant) ID or `common`. For more information, see the note below about [tenant IDs](#azure-ad-note). |
+| **Resource URL** | `https://graph.microsoft.com/` |
+| **Scopes** | Leave this empty. |
+| **Token Exchange URL** | Leave this empty. |
 
 ---
 
+<a id="azure-ad-note"></a>
+
+> [!NOTE]
+> If you selected one of the following, enter the **tenant ID** you recorded for the Azure AD identity provider app:
+>
+> - *Accounts in this organizational directory only (Microsoft only - Single tenant)*
+> - *Accounts in any organizational directory(Microsoft AAD directory - Multi tenant)*
+>
+> If you selected *Accounts in any organizational directory (Any Azure AD directory - Multi tenant and personal Microsoft accounts e.g., Skype, Xbox, Outlook.com)*, enter `common`.
+>
+> Otherwise, the Azure AD identity provider app will use the tenant to verify the selected ID and exclude personal Microsoft accounts.
+
 For more information, see:
 
-- [Why update to Microsoft identity platform (v2.0)?](/azure/active-directory/develop/active-directory-v2-compare)
-- [Microsoft identity platform (formerly Azure Active Directory for developers)](/azure/active-directory/develop/).
+- [Why update to Microsoft identity platform (v2.0)?](/azure/active-directory/develop/active-directory-v2-compare)
+- [Microsoft identity platform (formerly Azure Active Directory for developers)](/azure/active-directory/develop/).
 
 ## Other identity providers
 
@@ -125,53 +118,48 @@ You can also see the list of these providers in the [Azure portal](https://ms.po
 
 Azure supports generic OAuth2, which allows you to use your own identity provider.
 
-You can choose from two generic identity provider implementations, which have different settings as shown below.
+You can choose from two generic identity provider implementations, which have different settings as shown below.
 
 > [!NOTE]
-> You use the settings described here when configuring the **OAuth Connection Settings** in the Azure bot registration application.
+> Use the settings described here when configuring the **OAuth Connection Settings** in the Azure bot registration application.
 
 ### [Generic OAuth 2](#tab/ga2)
 
-### Generic OAuth 2
+Use this provider to configure any generic OAuth2 identity provider that has similar expectations as Azure AD provider, particularly AD v2. For this connection type, the query strings and request body payloads are fixed.
 
-Use this provider to configure any generic OAuth2 identity provider that has similar expectations as Azure AD provider, particularly AD v2. You have a limited number of properties because the query strings and request body payloads are fixed. For the values you enter, you can see how parameters to the various URLs, query strings, and bodies are in curly braces {}.
+| Property | Description or value |
+|--|--|
+| **Name** | A name for this identity provider connection. |
+| **Service Provider** | The identity provider to use. Select **Generic Oauth 2**. |
+| **Client id** | Your client ID obtained from the identity provider. |
+| **Client secret** | Your client secret obtained from the identity provider registration. |
+| **Authorization URL** | `https://login.microsoftonline.com/common/oauth2/v2.0/authorize` |
+| **Token URL** | `https://login.microsoftonline.com/common/oauth2/v2.0/token` |
+| **Refresh URL** | `https://login.microsoftonline.com/common/oauth2/v2.0/token` |
+| **Token Exchange URL** | Leave this empty. |
+| **Scopes** | A comma-separated list of the API permissions you granted to the identity provider app. |
 
-| Property | Description | Value |
-|--|--|--|
-| **Name** | The name of your connection | \<Your name for the connection\> <img width="300px"> |
-| **Service Provider** | Identity provider | From the drop-down list, select **Generic Oauth 2** |
-| **Client ID** | Identity provider app ID | \<provider ID\> |
-| **Client secret** | Identity provider app secret | <provider secret\> |
-| **Authorization URL** |  | `https://login.microsoftonline.com/common/oauth2/v2.0/authorize` |
-| *Authorization URL Query String* |  | *?client_id={ClientId}&response_type=code&redirect_uri={RedirectUrl}&scope={Scopes}&state={State}* |
-| **Token URL** |  | `https://login.microsoftonline.com/common/oauth2/v2.0/token` |
-| *Token Body* | Body to send for the token exchange | *code={Code}&grant_type=authorization_code&redirect_uri={RedirectUrl}&client_id={ClientId}&client_secret={ClientSecret}* |
-| **Refresh URL** |  | `https://login.microsoftonline.com/common/oauth2/v2.0/token` |
-| *Refresh Body Template* | Body to send with the token refresh | *refresh_token={RefreshToken}&redirect_uri={RedirectUrl}&grant_type=refresh_token&client_id={ClientId}&client_secret={ClientSecret}* |
-| **Scopes** | Comma separated list of the API permissions you granted earlier to the Azure AD authentication app | Values such as `openid`, `profile`, `Mail.Read`, `Mail.Send`, `User.Read`, and `User.ReadBasic.All` |
+### [OAuth 2 Generic Provider](#tab/a2gp)
 
-### [OAuth 2 generic provider](#tab/a2gp)
+This provider requires more configuration parameters, so use this version to configure any generic OAuth 2 service provider when you need more flexibility. With this configuration, you specify the URL templates, the query string templates, and the body templates for authorization, refresh, and token conversion.
 
-### OAuth 2 generic provider
-
-Use this provider to configure any generic OAuth 2 service provider when you need more flexibility. It requires more configuration parameters. With this configuration, you specify the URLs templates, the query string templates, and the body templates for authorization, refresh, and token conversion. For the values you enter, you can see how parameters to the various URls, query strings, and bodies are in curly braces {}.
-
-| Property | Description | Value |
-|--|--|--|
-| **Name** | The name of your connection | \<Your name for the connection\> <img width="300px"> |
-| **Service Provider** | Identity provider | From the drop-down list, select **Oauth 2 Generic Provider** |
-| **Client ID** | Identity provider app ID | \<provider ID\> |
-| **Client secret** | Identity provider app secret | <provider secret\> |
-| *Scope List Delimiter* | The character to use between scope values (often a space or comma) | *,* \<enter comma\> |
-| **Authorization URL Template** |  | `https://login.microsoftonline.com/common/oauth2/v2.0/authorize` |
-| *Authorization URL Query String* | The query string to append to the authorization URL,templated with any wanted parameters: {ClientId} {ClientSecret} {RedirectUrl} {Scopes} {State} | *?client_id={ClientId}&response_type=code&redirect_uri={RedirectUrl}&scope={Scopes}&state={State}* |
-| **Token URL Template** |  | `https://login.microsoftonline.com/common/oauth2/v2.0/token` |
-| *Token URL Query String Template* | Body to send for the token exchange | *?* \<enter question mark\> |
-| *Token Body Template* | Body to send for the token exchange | *code={Code}&grant_type=authorization_code&redirect_uri={RedirectUrl}&client_id={ClientId}&client_secret={ClientSecret}* |
-| **Refresh URL Template** |  | `https://login.microsoftonline.com/common/oauth2/v2.0/token` |
-| *Refresh URL Query String Template* | The query string to append to the refresh URL,templated with any wanted parameters: {ClientId} {ClientSecret} {RedirectUrl} {Scopes} {State} | *?* \<enter question mark\> |
-| *Refresh Body Template* | Body to send with the token refresh | *refresh_token={RefreshToken}&redirect_uri={RedirectUrl}&grant_type=refresh_token&client_id={ClientId}&client_secret={ClientSecret}* |
-| **Scopes** | Comma separated list of the API permissions you granted earlier to the Azure AD authentication app | Values such as `openid`, `profile`, `Mail.Read`, `Mail.Send`, `User.Read`, and `User.ReadBasic.All` |
+| Property | Description or value |
+|--|--|
+| **Name** | A name for this identity provider connection. |
+| **Service Provider** | The identity provider to use. Select **Oauth 2 Generic Provider**. |
+| **Client id** | Your client ID obtained from the identity provider. |
+| **Client secret** | Your client secret obtained from the identity provider registration. |
+| **Scope List Delimiter** | The separator character for the scope list. Empty spaces ( ) are not supported in this field, but can be used in the **Scopes** field if required by the identity provider. In that case, use a comma (,) for this field, and spaces ( ) in the **Scopes** field. |
+| **Authorization URL Template** | A URL template for authorization, defined by your identity provider. For example, `https://login.microsoftonline.com/common/oauth2/v2.0/authorize`. |
+| **Authorization URL Query String Template** | A query template for authorization, provided by your identity provider. Keys in the query string template will vary depending on the identity provider. |
+| **Token URL Template** | `https://login.microsoftonline.com/common/oauth2/v2.0/token` |
+| **Token URL Query String Template** | The query string separator for the token URL. Usually a question mark (?). |
+| **Token Body Template** | A template for the token body. |
+| **Refresh URL Template** | `https://login.microsoftonline.com/common/oauth2/v2.0/token` |
+| **Refresh URL Query String Template** | A refresh URL query string separator for the token URL. Usually a question mark (?). |
+| **Refresh Body Template** | A template for the refresh body. |
+| **Token Exchange URL** |Leave this empty. |
+| **Scopes** | List of scopes you want authenticated users to have once signed in. Make sure you're only setting the necessary scopes, and follow the [Least privilege access control principle](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models). For example, `User.Read`. If you're using a custom scope, use the full URI including the exposed application ID URI. |
 
 ---
 
