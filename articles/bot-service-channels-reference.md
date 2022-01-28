@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: mainguy
 ms.service: bot-service
 ms.topic: reference
-ms.date: 12/14/2021
+ms.date: 01/27/2022
 ---
 
 # Channels reference
@@ -101,7 +101,7 @@ See the [Bot Framework activity schema](https://github.com/Microsoft/botframewor
 |:---------------------|:-----------:|:----------------------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------------:|:--------:|:--------:|
 | `endOfConversation`  | &#x2714;    | &#x2714;               | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
 | `installationUpdate` | &#x2714;    | &#x2714;               | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
-| `typing`             | &#x2714;    | &#x2714;               | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
+| `typing`             | &#x2714;    | &#x2714;               | &#x274c; | &#x2714; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
 
 ### Out of use
 
