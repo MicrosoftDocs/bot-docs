@@ -65,6 +65,8 @@ When creating the bot application service, you can deploy your bot in a new or i
 > [!IMPORTANT]
 > Python bots can't be deployed to a resource group that contains Windows services/bots. Multiple Python bots can be deployed to the same resource group, but you need to create other services (LUIS, QnA, and so on) in another resource group.
 
+To create bots with data residency in Europe or the US, add the parameter `--location` with the value "westeurope" or "westus2" for any of the above commands. Read [Answering Europe’s Call: Storing and Processing EU Data in the EU](https://blogs.microsoft.com/eupolicy/2021/05/06/eu-data-boundary/) for more information about data residency.
+
 #### Deploy via ARM template with new Resource Group
 
 [!INCLUDE [ARM with new resource group](../includes/deploy/snippet-ARM-new-resource-group.md)]

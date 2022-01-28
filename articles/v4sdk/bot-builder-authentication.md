@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/05/2021
+ms.date: 12/06/2021
 ms.custom: abs-meta-21q1
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -68,9 +68,8 @@ The Azure Active Directory (Azure AD) is a cloud identity service that allows yo
 
 You can use one of these two identity services:
 
-1. Azure AD developer platform (v1.0). Also known as the **Azure AD v1** endpoint, which allows you to build apps that securely sign in users with a Microsoft work or school account.
-For more information, see the [Azure Active Directory for developers (v1.0) overview](/azure/active-directory/azuread-dev/v1-overview).
-1. Microsoft identity platform (v2.0). Also known as the **Azure AD v2** endpoint, which is an evolution of the Azure AD platform (v1.0). It allows you to build applications that sign in to all Microsoft identity providers and get tokens to call Microsoft APIs, such as Microsoft Graph, or other APIs that developers have built. For more information, see the [Microsoft identity platform (v2.0) overview](/azure/active-directory/develop/active-directory-appmodel-v2-overview),
+1. Azure AD developer platform (v1.0). Also known as the **Azure AD v1** endpoint, which allows you to build apps that securely sign in users with a Microsoft work or school account. For more information, see the [Azure Active Directory for developers (v1.0) overview](/azure/active-directory/azuread-dev/v1-overview).
+1. Microsoft identity platform (v2.0). Also known as the **Azure AD v2** endpoint, which is an evolution of the Azure AD platform (v1.0). It allows you to build applications that sign in to all Microsoft identity providers and get tokens to call Microsoft APIs, such as Microsoft Graph, or other APIs that developers have built. For more information, see the [Microsoft identity platform (v2.0) overview](/azure/active-directory/develop/active-directory-appmodel-v2-overview).
 
 For information about the differences between the v1 and v2 endpoints, see [Why update to Microsoft identity platform (v2.0)?](/azure/active-directory/develop/active-directory-v2-compare). For complete information, see [Microsoft identity platform (formerly Azure Active Directory for developers)](/azure/active-directory/develop/).
 
@@ -79,25 +78,29 @@ For information about the differences between the v1 and v2 endpoints, see [Why 
 This section shows how to create an Azure AD identity provider that uses OAuth 2.0 to authenticate the bot. You can use Azure AD v1 or Azure AD v2 endpoints.
 
 > [!TIP]
-> You will need to create and register the Azure AD application in a tenant
-> in which you can consent to delegate permissions requested by an application.
+> You'll need to create and register the Azure AD application in a tenant in which you can consent to delegate permissions requested by an application.
 
 1. Open the [Azure Active Directory][azure-aad-blade] panel in the Azure portal.
-    If you are not in the correct tenant, select **Switch directory** to switch to the correct tenant. (For instruction on creating a tenant, see [Access the portal and create a tenant](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).)
+    If you aren't in the correct tenant, select **Switch directory** to switch to the correct tenant. (For information on how to create a tenant, see [Access the portal and create a tenant](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).)
 1. Open the **App registrations** panel.
 1. In the **App registrations** panel, select **New registration**.
 1. Fill in the required fields and create the app registration.
 
    1. Name your application.
    1. Select the **Supported account types** for your application. (Any of these options will work with this sample.)
-   1. For the **Redirect URI**
-       1. Select **Web**.
-       1. Set the URL to `https://token.botframework.com/.auth/web/redirect`.
+   1. For the **Redirect URI**, select **Web** and set the URL to one of these values:
+
+      |Value|Description|
+      |:-|:-|
+      |`https://token.botframework.com/.auth/web/redirect`|For non-regionalized bots|
+      |`https://europe.token.botframework.com/.auth/web/redirect`|For bots with data residency in Europe|
+      |`https://unitedstates.token.botframework.com/.auth/web/redirect`|For bots with data residency in the United States|
+
    1. Select **Register**.
 
-      - Once it is created, Azure displays the **Overview** page for the app.
-      - Record the **Application (client) ID** value. You will use this value later as the _Client id_ when you create the connection string and register the Azure AD provider with the bot registration.
-      - Also record the **Directory (tenant) ID** value. You will also use this to register this provider application with your bot.
+      - Once it's created, Azure displays the **Overview** page for the app.
+      - Record the **Application (client) ID** value. You'll use this value later as the _client id_ when you create the connection string and register the Azure AD provider with the bot registration.
+      - Also record the **Directory (tenant) ID** value. You'll also use this to register this provider application with your bot.
 
 1. In the navigation pane, select **Certificates & secrets** to create a secret for your application.
 
@@ -105,7 +108,7 @@ This section shows how to create an Azure AD identity provider that uses OAuth 2
    1. Add a description to identify this secret from others you might need to create for this app, such as `bot login`.
    1. Set **Expires** to **Never**.
    1. Select **Add**.
-   1. Before leaving this page, record the secret. You will use this value later as the _Client secret_ when you register your Azure AD application with your bot.
+   1. Before leaving this page, record the secret. You'll use this value later as the _client secret_ when you register your Azure AD application with your bot.
 
 1. In the navigation pane, select **API permissions** to open the **API permissions** panel. It is a best practice to explicitly set the API permissions for the app.
 
@@ -220,15 +223,24 @@ You will need your bot's app ID and password to complete this process.
 
     [!code-json[appsettings](~/../botbuilder-samples/samples/csharp_dotnetcore/18.bot-authentication/appsettings.json)]
 
-1. Update **startup.cs**:
+1. Update **Startup.cs**:
 
-    To use OAuth in _non-public Azure clouds_, like government cloud, you must add the following code in the `startup.cs` file:
+    To use OAuth in _non-public Azure clouds_, like the government cloud, or in bots with data-residency, you must add the following code in the **Startup.cs** file.
 
     ```csharp
-    string uri = "https://api.botframework.azure.us";
+    string uri = "<uri-to-use>";
     MicrosoftAppCredentials.TrustServiceUrl(uri);
     OAuthClientConfig.OAuthEndpoint = uri;
     ```
+
+    Where _\<uri-to-use>_ is one of the following URIs:
+
+    |URI|Description|
+    |:-|:-|
+    |`https://europe.api.botframework.com`|For public-cloud bots with data residency in Europe.|
+    |`https://unitedstates.api.botframework.com`|For public-cloud bots with data residency in the United States.|
+    |`https://api.botframework.azure.us`|For United States government-cloud bots without data residency.|
+    |`https://api.botframework.com`|For public-cloud bots without data residency. This is the default URI and does not require a change to **Startup.cs**.|
 
 # [JavaScript](#tab/javascript)
 

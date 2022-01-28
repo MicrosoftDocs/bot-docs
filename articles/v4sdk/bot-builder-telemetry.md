@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/08/2021
+ms.date: 01/14/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -25,8 +25,8 @@ This article describes how to implement telemetry in your bot using Application 
 * How to enable telemetry to capture usage data from other services, like [LUIS](bot-builder-howto-v4-luis.md) and [QnA Maker](bot-builder-howto-qna.md).
 * How to visualize your telemetry data in Application Insights.
 
-> [!NOTE]
-> You may want to look at the related Composer article [Capture your bot's telemetry](/composer/how-to-capture-telemetry).
+> [!IMPORTANT]
+> For a regional bot that might collect personally identifiable information (PII) in telemetry, your Application Insights resource and your Azure Bot resource should be in the same region with the bot. If the resources are in different regions, the PII might leave the geographic region of the bot.
 
 ## Prerequisites
 
@@ -214,7 +214,7 @@ This article starts with the [CoreBot sample app](https://github.com/Microsoft/B
 1. Next, you need to add the _telemetry middleware_ to the [adapter middleware pipeline](../v4sdk/bot-builder-concept-middleware.md#the-bot-middleware-pipeline). To do this, add the following code, starting just after the error handling code:  
 
     <!-- This level of detail may be too much:
-        - The first step is to create a new telemetry client, in this case you are using Application Insights as the telemetry client using the module `ApplicationInsightsTelemetryClient` referenced in the previous step. This line of code will call the function `getTelemetryClient` that you will soon create, passing in the Application Insights key and that function will return a new telemetry client: `var telemetryClient = getTelemetryClient(process.env.InstrumentationKey);`. 
+        - The first step is to create a new telemetry client, in this case you are using Application Insights as the telemetry client using the module `ApplicationInsightsTelemetryClient` referenced in the previous step. This line of code will call the function `getTelemetryClient` that you will soon create, passing in the Application Insights key and that function will return a new telemetry client: `var telemetryClient = getTelemetryClient(process.env.InstrumentationKey);`.
         - You will pass the telemetry client you just created to the `TelemetryLoggerMiddleware` function: `var telemetryLoggerMiddleware = new TelemetryLoggerMiddleware(telemetryClient, true);` which creates a TelemetryLoggerMiddleware object that you will use to create
     -->
 

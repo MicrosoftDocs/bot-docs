@@ -98,7 +98,7 @@ In order to send messages and other events from your bot to Facebook Messenger, 
 
 1. In the right pane, select the **Facebook** icon.
 
-1. In the wizard enter the Facebook information stored in the previous steps. If the information is correct, at the bottom of the wizard, you should see the _callback URL_ and the _verify token_. Copy and store them.
+1. In the wizard, enter the Facebook information stored in the previous steps. If the information is correct, at the bottom of the wizard you should see the _callback URL_ and the _verify token_. Copy and store them. Note that for regional bots, there's a geo prefix in the _callback URL_; you'll need to update the _callback URL_ when you switch your bot from global to regional.  
 
     ![Interface to configure the Facebook Messenger channel](media/channels/fb-messenger-bot-config-channel.PNG)
 

@@ -5,7 +5,7 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: include
-ms.date: 11/19/2021
+ms.date: 11/29/2021
 ---
 
 <a id="app-id-and-password"></a>
@@ -16,7 +16,7 @@ You need to add identity information to your bot's configuration file. The file 
 
 > [!IMPORTANT]
 > The Java and Python versions of the Bot Framework SDK only support multi-tenant bots.
-> The C# and JavaScript versions support all three application types, for managing the bot's identity.
+> The C# and JavaScript versions support all three application types for managing the bot's identity.
 
 | Language | File name | Notes |
 |:-|:-|:-|

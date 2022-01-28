@@ -62,6 +62,8 @@ The following examples shows how to add a Web Chat control to a website.
 
 > `userID`, `username`, `locale`, `botAvatarInitials`, and `userAvatarInitials` are all optional parameters to pass into the `renderWebChat` method.  For more information about style, see [Why styleOptions?](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/02.branding-styling-and-customization/a.branding-web-chat#why-stylesetoptions). To learn more about Web Chat properties, look at the [Web Chat API Reference](#web-chat-api-reference) section.
 
+> Additionally, if your bot is a regional bot (meaning your bot resource is in a region other than "global"), you must specify the regional directline URL by setting it in an additional `domain` field in the `window.WebChat.createDirectLine()` method. Specify the domain as either `europe.webchat.botframework.com` or `unitedstates.webchat.botframework.com`, whichever is appropriate for your chosen region. Read [Answering Europe’s Call: Storing and Processing EU Data in the EU](https://blogs.microsoft.com/eupolicy/2021/05/06/eu-data-boundary/) for information about data residency.
+
 ### Integrate with JavaScript
 
 Web Chat is designed to integrate with your existing website using JavaScript or React. Integrating with JavaScript will give you some styling and customizability, for more information see the article [Integrate Web Chat into your website](https://github.com/microsoft/BotFramework-WebChat#how-to-use).
