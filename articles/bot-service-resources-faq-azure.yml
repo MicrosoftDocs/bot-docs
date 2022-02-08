@@ -41,8 +41,6 @@ sections:
               > ![new registration](media/app-registration/new-registration.png)
 
           1. Enter a display name for the application registration in the *Name* field and select the supported account types.
-
-              [!INCLUDE [select account type](includes/authentication/auth-account-types.md)]
           
               > [!div class="mx-imgBorder"]
               > ![registration details](media/app-registration/registration-details.png)

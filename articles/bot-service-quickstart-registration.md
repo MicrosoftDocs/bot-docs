@@ -38,11 +38,19 @@ A manual registration is necessary when:
 - You're unable to make the registrations in your organization and need another party to create the App ID for the bot you're building.
 - You need to manually create your own app ID and password.
 
-[!INCLUDE [select account type](includes/authentication/auth-account-types.md)]
-
 ## Update the bot
 
 To update your bot's configuration file to include its app ID and password, see [Application ID and password](bot-service-manage-settings.md#application-id-and-password) in how to **Configure bot registration settings**.
+
+## Additional information
+
+See these articles for more information about Azure applications in general.
+
+| Subject | Article |
+|:-|:-|
+| App registration | [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app) |
+| Managed identities | [What are managed identities for Azure resources?](/azure/active-directory/managed-identities-azure-resources/overview) |
+| Single-tenant and multi-tenant apps | [Tenancy in Azure Active Directory](/azure/active-directory/develop/single-and-multi-tenant-apps) |
 
 ## Next steps
 
