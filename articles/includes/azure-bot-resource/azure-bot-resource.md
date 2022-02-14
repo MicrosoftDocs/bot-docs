@@ -5,7 +5,7 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: include
-ms.date: 11/19/2021
+ms.date: 02/11/2022
 ---
 
 ## Create the resource
@@ -17,7 +17,7 @@ Create the **Azure Bot** resource, which will allow you to register your bot wit
 
 1. Go to the [Azure portal](https://portal.azure.com/).
 1. In the right pane, select **Create a resource**.
-1. In the search box enter *bot*, then press **Enter**.
+1. In the search box enter `bot`, then press **Enter**.
 1. Select the **Azure Bot** card.
 
     :::image type="content" source="../../media/azure-manage-a-bot/azure-bot-resource.png" alt-text="Select Azure bot resource":::
@@ -44,7 +44,7 @@ Create the **Azure Bot** resource, which will allow you to register your bot wit
 
 [!INCLUDE [app ID and password](../authentication/azure-bot-appid-password.md)]
 
-To add the _user-assigned managed identity_ to your bot's web app:
+If your bot is a _user-assigned managed identity_ application, update your bot's web app:
 
 1. Go to the app service page for your bot's web app.
 1. In the navigation pane under **Settings**, select **Identity**.
