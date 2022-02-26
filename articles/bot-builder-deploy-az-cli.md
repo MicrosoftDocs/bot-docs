@@ -9,8 +9,9 @@ ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
 ms.date: 11/19/2021
-ms.custom: abs-meta-21q1
+ms.custom: abs-meta-21q1, devx-track-azurecli
 monikerRange: 'azure-bot-service-4.0'
+ms.devlang: azurecli
 ---
 
 # Deploy your bot in Azure
