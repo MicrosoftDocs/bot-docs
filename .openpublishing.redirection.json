@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "v4sdk/bot-builder-tutorial-deploy-basic-bot.md",
+      "redirect_url": "tutorial-provision-a-bot.md",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "java/bot-builder-java-samples.md",
       "redirect_url": "/azure/bot-service/index-bf-sdk",
       "redirect_document_id": false

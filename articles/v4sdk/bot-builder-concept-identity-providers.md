@@ -60,7 +60,7 @@ Use the AD v2 settings below to enable a bot to access Office 365 data via the M
 | **Client secret** | The secret for your Azure identity provider app. |
 | **Tenant ID** | Your directory (tenant) ID or `common`. For more information, see the note about [tenant IDs](#azure-ad-note). |
 | **Scopes** | A space-separated list of the API permissions you granted the Azure AD identity provider app, such as `openid`, `profile`, `Mail.Read`, `Mail.Send`, `User.Read`, and `User.ReadBasic.All`. |
-| **Token Exchange URL** | For an _SSO-enabled skill bot_ use the token exchange URL associated with the OAuth connection; otherwise, leave this empty. For information about the SSO token exchange URL, see [Create an OAuth connection settings](bot-builder-authentication-sso.md#create-an-oauth-connection-settings-1). |
+| **Token Exchange URL** | For an _SSO-enabled skill bot_ use the token exchange URL associated with the OAuth connection; otherwise, leave this empty. For information about the SSO token exchange URL, see [Create an OAuth connection settings](bot-builder-authentication-sso.md#create-an-oauth-connection-setting-1). |
 
 # [Azure AD v1](#tab/adv1)
 

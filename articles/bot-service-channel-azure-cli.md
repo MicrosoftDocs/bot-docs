@@ -17,7 +17,7 @@ A channel is a connection between a communication application and a bot. A bot, 
 
 [!INCLUDE [Prepare your Azure CLI environment](includes/azure-cli-prepare-your-environment.md)]
 
-- A bot deployed to Azure. Refer to [Create a bot with the Bot Framework SDK](bot-service-quickstart-create-bot.md) and [Deploy a basic bot](v4sdk/bot-builder-tutorial-deploy-basic-bot.md).
+- A bot deployed to Azure. If you don't have one yet, see [Tutorial: Provision a bot in Azure](tutorial-provision-a-bot.md) and [Tutorial: Publish a basic bot](tutorial-publish-a-bot.md).
 
 ## Sample commands
 
