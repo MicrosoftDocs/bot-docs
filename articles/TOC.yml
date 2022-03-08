@@ -18,8 +18,12 @@
   #   href: powershell/bot-builder-powershell-quickstart.md
 - name: Tutorials
   items:
-  - name: Deploy a basic bot
-    href: v4sdk/bot-builder-tutorial-deploy-basic-bot.md
+  - name: Provision a bot in Azure
+    displayName: create, create bot resources
+    href: tutorial-provision-a-bot.md
+  - name: Publish a bot to Azure
+    displayName: deploy, deploy a bot
+    href: tutorial-publish-a-bot.md
   - name: Add QnA Maker and redeploy a bot
     href: v4sdk/bot-builder-tutorial-add-qna.md
 - name: Samples
