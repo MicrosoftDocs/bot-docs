@@ -53,7 +53,7 @@ This article describes how to debug your bot locally using ngrok and a C# [EchoB
 
 While ngrok is running, sign in to your Azure portal and view your bot settings to do some configuration.
 
-1. Select your **Bot Channels Registration** connected to your local bot.
+1. Select your bot resource connected to your local bot.
 
 1. Scroll down to **Configuration**. Copy and paste the ngrok forwarding URL in the **Messaging endpoint** field. Ensure that you maintain "/api/messages" at the end of the URL.
 

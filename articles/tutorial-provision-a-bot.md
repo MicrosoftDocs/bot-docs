@@ -64,8 +64,7 @@ Your bot project's _deployment templates_ directory contains two ARM templates.
 Choose the option that works best for you.
 This step can take a few minutes to complete.
 
-> [!TIP]
-> **Web App Bot** and **Bot Channels Registration** are deprecated but existing resources will continue to work. If you created your bot project with a VSIX or Yeoman template from SDK version 4.14.1.2 or later, your project will contain ARM templates for generating an Azure Bot resource.
+[!INCLUDE [bot-resource-type-tip](includes/bot-resource-type-tip.md)]
 
 ### [New resource group](#tab/newgroup)
 

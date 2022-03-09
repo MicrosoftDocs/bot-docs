@@ -1,7 +1,7 @@
 ---
 title: Debug a bot with inspection middleware in Bot Framework SDK
 description: Learn how to use inspection middleware to debug bots. See how to use the Bot Framework Emulator to inspect state data and message traffic.
-keywords: Bot Framework SDK, debug bot, inspection middleware, bot emulator, Azure Bot Channels Registration
+keywords: Bot Framework SDK, debug bot, inspection middleware, bot emulator, Azure Bot
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
@@ -163,7 +163,7 @@ If you want to inspect the state of your bot configured in Azure and connected t
 
 ### Run ngrok
 
-At this point you have updated your Emulator to the latest version and added the inspection middleware in your bot's code. The next step is to run ngrok and configure your local bot to your Azure Bot Channels Registration. Before running ngrok you need to run your bot locally.
+At this point you have updated your Emulator to the latest version and added the inspection middleware in your bot's code. The next step is to run ngrok and configure your local bot. Before running ngrok you need to run your bot locally.
 
 To run your bot locally do the following:
 
@@ -183,22 +183,22 @@ To run your bot locally do the following:
 
 ### Update channel registrations for your bot
 
-Now that your local bot is connected to ngrok you can configure your local bot to your Bot Channels Registration in Azure.
+Now that your local bot is connected to ngrok you can configure your bot resource in Azure to use the ngrok URL.
 
-1. Go to your Bot Channels Registration in Azure. Click **Settings** on the left menu and set the **Messaging endpoint** with your ngrok IP. If necessary add **/api/messages** after the IP address. For example, `https://e58549b6.ngrok.io/api/messages`. Check **Enable Streaming Endpoint** and **Save**.
+1. Go to your bot resource in Azure. Click **Settings** on the left menu and set the **Messaging endpoint** with your ngrok IP. If necessary add **/api/messages** after the IP address. For example, `https://e58549b6.ngrok.io/api/messages`. Check **Enable Streaming Endpoint** and **Save**.
 
     ![endpoint](./media/bot-debug-inspection-middleware/bot-debug-channels-setting-ngrok.png)
 
     > [!TIP]
     > If **Save** is not enabled, you can uncheck **Enable Streaming Endpoint** and click **Save**, then check **Enable Streaming Endpoint** and click **Save** again. You need to make sure that **Enable Streaming Endpoint** is checked and the configuration of the endpoint is saved.
 
-1. Go to your bot's resource group, click **Deployment**, and select your Bot Channels Registration that previously deployed successfully. Click **Inputs** on the left side to get the **appId** and **appSecret**. Update your bot's **.env** file (or **appsettings.json** file if you have a C# bot) with the **appId** and **appSecret**.
+1. Go to your bot's resource group, click **Deployment**, and select the bot resource that previously deployed successfully. Click **Inputs** on the left side to get the **appId** and **appSecret**. Update your bot's **.env** file (or **appsettings.json** file if you have a C# bot) with the **appId** and **appSecret**.
 
     ![get-inputs](./media/bot-debug-inspection-middleware/bot-debug-get-inputs-id-secret.png)
 
 1. Start your Emulator, select **Open Bot**, and put `http://localhost:3978/api/messages` in the **Bot URL**. Fill **Microsoft App ID** and **Microsoft App password** with the same **appId** and **appSecret** you added to our bot's **.env** (**appsettings.json**) file. Then select **Connect**.
 
-1. Your running bot is now connected to your Bot Channels Registration in Azure. You can test the web chat by clicking **Test in Web Chat** and sending messages in the chat box.
+1. Your running bot is now connected to your bot resource in Azure. You can test the web chat by clicking **Test in Web Chat** and sending messages in the chat box.
 
     ![test-web-chat](./media/bot-debug-inspection-middleware/bot-debug-test-webchat.png)
 
