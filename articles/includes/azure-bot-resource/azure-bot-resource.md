@@ -12,8 +12,7 @@ ms.date: 02/11/2022
 
 Create the **Azure Bot** resource, which will allow you to register your bot with the Azure Bot Service.
 
-> [!WARNING]
-> **Web App Bot** and **Bot Channels Registration** are deprecated but existing resources will continue to work. You should use **Azure Bot**, instead.
+[!INCLUDE [bot-resource-type-tip](../bot-resource-type-tip.md)]
 
 1. Go to the [Azure portal](https://portal.azure.com/).
 1. In the right pane, select **Create a resource**.
