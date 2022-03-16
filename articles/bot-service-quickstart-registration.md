@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 02/11/2022
+ms.date: 03/15/2022
 ms.custom: abs-meta-21q1
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -23,6 +23,8 @@ This article shows how to register such a bot with Azure Bot Service.
 > [!IMPORTANT]
 > You only need to register a bot if it is not hosted in Azure.
 > Bots created using the Azure CLI are already registered with the Azure Bot Service.
+
+[!INCLUDE [identity-app-type-support](./includes/azure-bot-resource/identity-app-type-support.md)]
 
 This article doesn't describe how to create or deploy the bot to register. For more information, see:
 
