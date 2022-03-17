@@ -73,7 +73,7 @@ The bot logic processes incoming activities from one or more of your bots channe
 Add a handler for the _installation update_ event to let your bot:
 
 - Send an introductory message when it is installed on a conversation thread.
-- Clean up user and thread data whit it is uninstalled from a thread.
+- Clean up user and thread data when it is uninstalled from a thread.
 
 See [Installation update event](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events#installation-update-event) in the Teams docs for more information.
 
