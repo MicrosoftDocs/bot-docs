@@ -160,12 +160,6 @@
       href: v4sdk/bot-builder-howto-v4-storage.md
     - name: Implement custom storage for your bot
       href: v4sdk/bot-builder-custom-storage.md
-    - name: Language Generation
-      items:
-      - name: Use language generation templates in your bot
-        href: language-generation/bot-builder-howto-use-lg-templates.md
-      - name: Use custom functions in language generation
-        href: language-generation/bot-builder-howto-use-lg-custom-functions.md
     - name: Skills
       items:
       - name: Implement a skill
