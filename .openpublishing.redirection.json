@@ -1,6 +1,21 @@
 {
   "redirections": [
     {
+      "source_path": "language-generation/bot-builder-howto-use-lg-custom-functions.md",
+      "redirect_url": "v4sdk/bot-builder-concept-language-generation.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "language-generation/bot-builder-howto-use-lg-custom-functions.md",
+      "redirect_url": "v4sdk/bot-builder-concept-language-generation.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "bot-service-adapter-connect-webex.md",
+      "redirect_url": "/azure/bot-service/bot-service-channel-additional-channels",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "v4sdk/bot-builder-tutorial-deploy-basic-bot.md",
       "redirect_url": "tutorial-provision-a-bot.md",
       "redirect_document_id": false
