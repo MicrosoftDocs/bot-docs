@@ -142,7 +142,7 @@ Authorized users can click the **Add to Slack** button provided by this modified
 As well as the channel available in the Azure Bot Service to connect your bot with Slack, you can also use the Slack adapter. In this article you will learn how to connect a bot to Slack using the adapter. This article will walk you through modifying the EchoBot sample to connect it to a Slack app.
 
 > [!NOTE]
-> The instructions below cover the C# implementation of the Slack adapter. For instructions on using the JS adapter, part of the BotKit libraries, [see the BotKit Slack documentation](https://botkit.ai/docs/v4/platforms/slack.html).
+> The instructions below cover the C# implementation of the Slack adapter. For instructions on using the JS adapter, part of the BotKit libraries, [see the BotKit Slack documentation](https://github.com/howdyai/botkit/blob/main/packages/docs/platforms/slack.md).
 
 ### Adapter prerequisites
 

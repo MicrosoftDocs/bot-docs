@@ -286,8 +286,6 @@
         href: bot-service-channel-connect-wechat.md
       - name: Web Chat
         href: bot-service-channel-connect-webchat.md
-      - name: Webex
-        href: bot-service-adapter-connect-webex.md
       - name: Additional channels
         href: bot-service-channel-additional-channels.md
       - name: Connect to channels with Azure CLI

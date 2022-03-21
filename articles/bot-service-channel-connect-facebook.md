@@ -207,7 +207,7 @@ Facebook adapters are available for [JavaScript/Node.js][JS Workplace Adapter] a
 
 In this article you will learn how to connect a bot to Facebook using the adapter.  This article will walk you through modifying the Echo bot sample to connect it to Facebook.
 
-The instructions below cover the C# implementation of the Facebook adapter. For instructions on using the JavaScript adapter, part of the BotKit libraries, [see the BotKit Facebook documentation](https://botkit.ai/docs/v4/platforms/facebook.html).
+The instructions below cover the C# implementation of the Facebook adapter. For instructions on using the JavaScript adapter, part of the BotKit libraries, [see the BotKit Facebook documentation](https://github.com/howdyai/botkit/blob/main/packages/docs/platforms/facebook.md).
 
 ### Prerequisites
 
