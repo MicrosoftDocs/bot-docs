@@ -115,11 +115,11 @@ For more information, see [create a storage account](/azure/storage/common/stora
         // Perform long operation here....
         System.Threading.Thread.Sleep(TimeSpan.FromSeconds(15));
 
-        if(originalActivity.Value.ToString().Equals("option 1", CompareOptions.OrdinalIgnoreCase))
+        if(originalActivity.Value.ToString().Equals("option 1", StringComparison.OrdinalIgnoreCase))
         {
             originalActivity.Value = " (Result for long operation one!)";
         }
-        else if(originalActivity.Value.ToString().Equals("option 2", CompareOptions.OrdinalIgnoreCase))
+        else if(originalActivity.Value.ToString().Equals("option 2", StringComparison.OrdinalIgnoreCase))
         {
             originalActivity.Value = " (A different result for operation two!)";
         }
