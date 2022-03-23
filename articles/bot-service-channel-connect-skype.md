@@ -1,6 +1,6 @@
 ---
-title: Connect a bot to Skype - Azure Bot Service
-description: Learn how to make a bot available in Skype. See how to configure Skype settings so that users can interact with the bot through the Skype channel.
+title: Connect a Bot Framework bot to Skype
+description: Learn how to configure bots to connect to Skype and communicate with users via Skype.
 keywords: skype, bot channels, configure skype, publish, connect to channels
 author: JonathanFingold
 ms.author: iawilt
@@ -9,55 +9,38 @@ ms.reviewer: mainguy
 ms.service: bot-service
 ms.topic: how-to
 ms-custom: abs-meta-21q1
-ms.date: 09/01/2019
+ms.date: 03/22/2022
 ---
 
 # Connect a bot to Skype
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-Skype keeps you connected with users through instant messaging, phone, and video calls. Extend this functionality by building bots that users can discover and interact with through the Skype interface.
+This article describes how to configure a bot already connected to Skype.
 
 >[!NOTE]
-> As of October 31, 2019 the Skype channel no longer accepts new Bot publishing requests. This means that you can continue to develop bots using the Skype channel, but your bot will be limited to 100 users. You will not be able to publish your bot to a larger audience. Current Skype bots will continue to run uninterrupted. Read more about [why some features are not available in Skype anymore](https://support.skype.com/faq/fa12091/why-are-some-features-not-available-in-skype-anymore).
+> As of October 31, 2019 the Skype channel no longer accepts new bot publishing requests. This means that you can continue to develop existing bots connected to the Skype channel, but your bot will be limited to 100 users. You will not be able to publish your bot to a larger audience. Read more about [why some features are not available in Skype anymore](https://support.skype.com/faq/fa12091/why-are-some-features-not-available-in-skype-anymore).
 
-To add the Skype channel, open the bot in the [Azure Portal](https://portal.azure.com/), click the **Channels** blade, and then click **Skype**.
+## Prerequisites
 
-![Add Skype channel](media/channels/skype-addchannel.png)
+- An Azure subscription. If you don't already have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+- An existing bot published to Azure and previously connected to Skype.
 
-This will take you to the **Configure Skype** settings page.
+## Configure your bot in Azure
 
-![Configure Skype channel](media/channels/skype_configure.png)
+1. Open the [Azure portal](https://portal.azure.com/).
+1. Open the Azure Bot resource blade for your bot.
+1. Open **Channels** and select **Skype**.
+1. Use the tabs to configure the channel:
+    1. **Messaging** controls how your bot sends and receives massages in Skype.
+    1. **Calling** controls whether calling is enabled and whether to use IVR functionality or Real Time Media functionality for calls.
+    1. **Groups** controls whether your bot can be added to a group.
+    1. Select **Save** and accept the **Terms of Service**.
 
-You need to configure settings in **Web control**, **Messaging**, **Calling**, **Groups** and **Publish**. Let's go over them one by one.
+## Web control embed code
 
-## Web control
+To embed the bot into your website, you need an embed code. To get your embed code:
 
-To embed the bot into your website, click the **Get embed code** button from the **Web control** section. This will direct you to the Skype for Developers page. Follow the instructions there to get the embed code.
-
-## Messaging
-
-This section configures how your bot sends and receives messages in Skype.
-
-## Calling
-
-This section configures the calling feature of Skype in your bot. You can specify whether **Calling** is enabled for your bot and if enabled, whether IVR functionality or Real Time Media functionality is to be used.
-
-## Groups
-
-This section configures whether your bot can be added to a group and how it behaves in a group for messaging and is also used to enable Group Video Calls for Calling bots.
-
-## Publish
-
-This section configures the publish settings of your bot. All fields labeled with a * are required fields.
-
-Bots in **Preview** are limited to 100 contacts. If you need more than 100 contacts, submit your bot for review. Clicking **Submit for Review** will automatically make your bot searchable in Skype if accepted. If your request cannot be approved, you will be notified as to what you need to change before it can be approved.
-
-> [!TIP]
-> If you are wanting to submit your bot for review, keep in mind it must meet the [skype certification checklist](https://github.com/Microsoft/skype-dev-bots/blob/master/certification/CHECKLIST.md) before it will be accepted.
-
-After finishing configuration, click **Save** and accept the **Terms of Service**. The Skype channel is now added to your bot.
-
-## Next steps
-
-* [Skype for Business](bot-service-channel-connect-skypeforbusiness.md)
+1. Go to the **Channels** blade for your bot resource.
+1. Select **Get bot embed codes**.
+1. Azure displays a list of **Bot Embed Codes**. Copy the embed code for **Skype**.

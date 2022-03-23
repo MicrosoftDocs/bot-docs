@@ -12,7 +12,7 @@
     },
     {
       "source_path": "bot-service-adapter-connect-webex.md",
-      "redirect_url": "/azure/bot-service/bot-service-channel-additional-channels",
+      "redirect_url": "bot-service-channel-additional-channels.md",
       "redirect_document_id": false
     },
     {

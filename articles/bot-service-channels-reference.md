@@ -32,10 +32,10 @@ See the [Bot Framework activity schema](https://github.com/Microsoft/botframewor
 
 ### Conversational
 
-| \                 | Direct Line | Direct Line (Web Chat) | Email    | Facebook | GroupMe  | Kik      | Teams    | Slack    | Skype    | Skype Business | Telegram | Twilio   |
-|:------------------|:-----------:|:----------------------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------------:|:--------:|:--------:|
-| `message`         | &#x2714;    | &#x2714;               | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714;       | &#x2714; | &#x2714; |
-| `messageReaction` | &#x274c;    | &#x274c;               | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x2714; | &#x274c; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
+| \                 | Direct Line | Direct Line (Web Chat) | Email    | Facebook | GroupMe  | Teams    | Slack    | Skype    | Skype Business | Telegram | Twilio   |
+|:------------------|:-----------:|:----------------------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------------:|:--------:|:--------:|
+| `message`         | &#x2714;    | &#x2714;               | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714;       | &#x2714; | &#x2714; |
+| `messageReaction` | &#x274c;    | &#x274c;               | &#x274c; | &#x274c; | &#x274c; | &#x2714; | &#x274c; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
 
 - All channels send message activities.
 - If your bot uses a dialog, forward message activities to the dialog.
@@ -47,10 +47,10 @@ See the [Bot Framework activity schema](https://github.com/Microsoft/botframewor
 
 ### Welcome
 
-| \                       | Direct Line | Direct Line (Web Chat) | Email    | Facebook | GroupMe  | Kik      | Teams    | Slack    | Skype    | Skype Business | Telegram | Twilio   |
-|:------------------------|:-----------:|:----------------------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------------:|:--------:|:--------:|
-| `conversationUpdate`    | &#x2714;    | &#x2714;               | &#x274c; | &#x2753; | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x274c; | &#x274c;       | &#x2714; | &#x274c; |
-| `contactRelationUpdate` | &#x274c;    | &#x274c;               | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x2714; | &#x2714;       | &#x274c; | &#x274c; |
+| \                       | Direct Line | Direct Line (Web Chat) | Email    | Facebook | GroupMe  | Teams    | Slack    | Skype    | Skype Business | Telegram | Twilio   |
+|:------------------------|:-----------:|:----------------------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------------:|:--------:|:--------:|
+| `conversationUpdate`    | &#x2714;    | &#x2714;               | &#x274c; | &#x2753; | &#x2714; | &#x2714; | &#x2714; | &#x274c; | &#x274c;       | &#x2714; | &#x274c; |
+| `contactRelationUpdate` | &#x274c;    | &#x274c;               | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x2714; | &#x2714;       | &#x274c; | &#x274c; |
 
 - It is common for channels to send conversation update activities.
 - The main types of conversation updates are conversation members added and members removed.
@@ -59,11 +59,11 @@ See the [Bot Framework activity schema](https://github.com/Microsoft/botframewor
 
 ### Application extensibility
 
-| \                             | Direct Line | Direct Line (Web Chat) | Email    | Facebook | GroupMe  | Kik      | Teams    | Slack    | Skype    | Skype Business | Telegram | Twilio   |
-|:------------------------------|:-----------:|:----------------------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------------:|:--------:|:--------:|
-| `event`                       | &#x2714;    | &#x2714;               | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753;       | &#x2753; | &#x2753; |
-| name = `CreateConversation`   | &#x2753;    | &#x2753;               | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753;       | &#x2753; | &#x2753; |
-| name = `ContinueConversation` | &#x2753;    | &#x2753;               | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753;       | &#x2753; | &#x2753; |
+| \                             | Direct Line | Direct Line (Web Chat) | Email    | Facebook | GroupMe  | Teams    | Slack    | Skype    | Skype Business | Telegram | Twilio   |
+|:------------------------------|:-----------:|:----------------------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------------:|:--------:|:--------:|
+| `event`                       | &#x2714;    | &#x2714;               | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753;       | &#x2753; | &#x2753; |
+| name = `CreateConversation`   | &#x2753;    | &#x2753;               | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753;       | &#x2753; | &#x2753; |
+| name = `ContinueConversation` | &#x2753;    | &#x2753;               | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753;       | &#x2753; | &#x2753; |
 
 - Event activities communicate programmatic information from a client or channel to a bot. The meaning of an event activity is defined by the `name` field, which is meaningful within the scope of a channel.
 - An application that owns both the client and server can chose to tunnel their own events through the service using event activities.
@@ -75,18 +75,18 @@ See the [Bot Framework activity schema](https://github.com/Microsoft/botframewor
 
 ### Message update
 
-| \               | Direct Line | Direct Line (Web Chat) | Email    | Facebook | GroupMe  | Kik      | Teams    | Slack    | Skype    | Skype Business | Telegram | Twilio   |
-|:----------------|:-----------:|:----------------------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------------:|:--------:|:--------:|
-| `messageUpdate` | &#x274c;    | &#x274c;               | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x2714; | &#x2753; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
-| `messageDelete` | &#x274c;    | &#x274c;               | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x2714; | &#x2753; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
+| \               | Direct Line | Direct Line (Web Chat) | Email    | Facebook | GroupMe  | Teams    | Slack    | Skype    | Skype Business | Telegram | Twilio   |
+|:----------------|:-----------:|:----------------------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------------:|:--------:|:--------:|
+| `messageUpdate` | &#x274c;    | &#x274c;               | &#x274c; | &#x274c; | &#x274c; | &#x2714; | &#x2753; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
+| `messageDelete` | &#x274c;    | &#x274c;               | &#x274c; | &#x274c; | &#x274c; | &#x2714; | &#x2753; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
 
 - Message update is currently supported by Teams.
 
 ### OAuth
 
-| \        | Direct Line | Direct Line (Web Chat) | Email    | Facebook | GroupMe  | Kik      | Teams    | Slack    | Skype    | Skype Business | Telegram | Twilio   |
-|:---------|:-----------:|:----------------------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------------:|:--------:|:--------:|
-| `invoke` | &#x2714;    | &#x2714;               | &#x274c; | &#x2753; | &#x2753; | &#x2753; | &#x274c; | &#x2753; | &#x2753; | &#x2753;       | &#x2753; | &#x2753; |
+| \        | Direct Line | Direct Line (Web Chat) | Email    | Facebook | GroupMe  | Teams    | Slack    | Skype    | Skype Business | Telegram | Twilio   |
+|:---------|:-----------:|:----------------------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------------:|:--------:|:--------:|
+| `invoke` | &#x2714;    | &#x2714;               | &#x274c; | &#x2753; | &#x2753; | &#x274c; | &#x2753; | &#x2753; | &#x2753;       | &#x2753; | &#x2753; |
 
 > [!IMPORTANT]
 > For dialogs and OAuth prompts to work, you must forward the following invoke activities to the dialog:
@@ -97,11 +97,11 @@ See the [Bot Framework activity schema](https://github.com/Microsoft/botframewor
 
 ### Uncategorized
 
-| \                    | Direct Line | Direct Line (Web Chat) | Email    | Facebook | GroupMe  | Kik      | Teams    | Slack    | Skype    | Skype Business | Telegram | Twilio   |
-|:---------------------|:-----------:|:----------------------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------------:|:--------:|:--------:|
-| `endOfConversation`  | &#x2714;    | &#x2714;               | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
-| `installationUpdate` | &#x2714;    | &#x2714;               | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
-| `typing`             | &#x2714;    | &#x2714;               | &#x274c; | &#x2714; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
+| \                    | Direct Line | Direct Line (Web Chat) | Email    | Facebook | GroupMe  | Teams    | Slack    | Skype    | Skype Business | Telegram | Twilio   |
+|:---------------------|:-----------:|:----------------------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------------:|:--------:|:--------:|
+| `endOfConversation`  | &#x2714;    | &#x2714;               | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
+| `installationUpdate` | &#x2714;    | &#x2714;               | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
+| `typing`             | &#x2714;    | &#x2714;               | &#x274c; | &#x2714; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
 
 ### Out of use
 
@@ -195,20 +195,20 @@ See the [Bot Framework activity schema](https://github.com/Microsoft/botframewor
 
 ## Summary table all activities to all channels
 
-| \                        | Direct Line | Direct Line (Web Chat) | Email    | Facebook | GroupMe  | Kik      | Teams    | Slack    | Skype    | Skype Business | Telegram | Twilio   |
-|:-------------------------|:-----------:|:----------------------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------------:|:--------:|:--------:|
-| `contactRelationUpdate`  | &#x274c;    | &#x274c;               | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x2714; | &#x2714;       | &#x274c; | &#x274c; |
-| `conversationUpdate`     | &#x2714;    | &#x2714;               | &#x274c; | &#x2753; | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x274c; | &#x274c;       | &#x2714; | &#x274c; |
-| `endOfConversation`      | &#x2714;    | &#x2714;               | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
-| `event`                  | &#x2714;    | &#x2714;               | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753;       | &#x2753; | &#x2753; |
-| - `CreateConversation`   | &#x2753;    | &#x2753;               | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753;       | &#x2753; | &#x2753; |
-| - `ContinueConversation` | &#x2753;    | &#x2753;               | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753;       | &#x2753; | &#x2753; |
-| `installationUpdate`     | &#x2714;    | &#x2714;               | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
-| `message`                | &#x2714;    | &#x2714;               | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714;       | &#x2714; | &#x2714; |
-| `messageDelete`          | &#x274c;    | &#x274c;               | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x2714; | &#x2753; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
-| `messageReaction`        | &#x274c;    | &#x274c;               | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x2714; | &#x274c; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
-| `messageUpdate`          | &#x274c;    | &#x274c;               | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x2714; | &#x2753; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
-| `typing`                 | &#x2714;    | &#x2714;               | &#x274c; | &#x2714; | &#x274c; | &#x274c; | &#x2714; | &#x2714; | &#x274c; | &#x274c;       | &#x2714; | &#x274c; |
+| \                        | Direct Line | Direct Line (Web Chat) | Email    | Facebook | GroupMe  | Teams    | Slack    | Skype    | Skype Business | Telegram | Twilio   |
+|:-------------------------|:-----------:|:----------------------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------------:|:--------:|:--------:|
+| `contactRelationUpdate`  | &#x274c;    | &#x274c;               | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x2714; | &#x2714;       | &#x274c; | &#x274c; |
+| `conversationUpdate`     | &#x2714;    | &#x2714;               | &#x274c; | &#x2753; | &#x2714; | &#x2714; | &#x2714; | &#x274c; | &#x274c;       | &#x2714; | &#x274c; |
+| `endOfConversation`      | &#x2714;    | &#x2714;               | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
+| `event`                  | &#x2714;    | &#x2714;               | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753;       | &#x2753; | &#x2753; |
+| - `CreateConversation`   | &#x2753;    | &#x2753;               | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753;       | &#x2753; | &#x2753; |
+| - `ContinueConversation` | &#x2753;    | &#x2753;               | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753;       | &#x2753; | &#x2753; |
+| `installationUpdate`     | &#x2714;    | &#x2714;               | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
+| `message`                | &#x2714;    | &#x2714;               | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714;       | &#x2714; | &#x2714; |
+| `messageDelete`          | &#x274c;    | &#x274c;               | &#x274c; | &#x274c; | &#x274c; | &#x2714; | &#x2753; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
+| `messageReaction`        | &#x274c;    | &#x274c;               | &#x274c; | &#x274c; | &#x274c; | &#x2714; | &#x274c; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
+| `messageUpdate`          | &#x274c;    | &#x274c;               | &#x274c; | &#x274c; | &#x274c; | &#x2714; | &#x2753; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
+| `typing`                 | &#x2714;    | &#x2714;               | &#x274c; | &#x2714; | &#x274c; | &#x2714; | &#x2714; | &#x274c; | &#x274c;       | &#x2714; | &#x274c; |
 
 Support for `event` and `invoke` activities varies by the activity's name and varies by channel.
 
@@ -216,10 +216,10 @@ Support for `event` and `invoke` activities varies by the activity's name and va
 
 The following table shows the maximum number of suggested actions and card actions that are supported in each channel.  The &#x274c; indicates that the action is not supported at all in the specified channel.
 
-| \                 | Direct Line | Direct Line (Web Chat) | Email    | Facebook | GroupMe  | Kik | Line | Teams    | Slack    | Skype | Skype Business | Telegram | Twilio   |
-|:------------------|:-----------:|:----------------------:|:--------:|:--------:|:--------:|:---:|:----:|:--------:|:--------:|:-----:|:--------------:|:--------:|:--------:|
-| Suggested actions | 100         | 100                    | &#x274c; | 10       | &#x274c; | 20  | 13   | &#x274c; | &#x274c; | 10    | &#x274c;       | 100      | &#x274c; |
-| Card actions      | 100         | 100                    | &#x274c; | 3        | &#x274c; | 20  | 99   | 50       | 100      | 3     | &#x274c;       | &#x274c; | &#x274c; |
+| \                 | Direct Line | Direct Line (Web Chat) | Email    | Facebook | GroupMe  | Line | Teams    | Slack    | Skype | Skype Business | Telegram | Twilio   |
+|:------------------|:-----------:|:----------------------:|:--------:|:--------:|:--------:|:----:|:--------:|:--------:|:-----:|:--------------:|:--------:|:--------:|
+| Suggested actions | 100         | 100                    | &#x274c; | 10       | &#x274c; | 13   | &#x274c; | &#x274c; | 10    | &#x274c;       | 100      | &#x274c; |
+| Card actions      | 100         | 100                    | &#x274c; | 3        | &#x274c; | 99   | 50       | 100      | 3     | &#x274c;       | &#x274c; | &#x274c; |
 
 For more information about the numbers shown in the above table, refer to channel support code listed [here](https://github.com/microsoft/botbuilder-dotnet/blob/master/libraries/Microsoft.Bot.Builder.Dialogs/Choices/Channel.cs).
 
@@ -234,7 +234,6 @@ For more information on _card actions_, see the [Send a hero card](./v4sdk/bot-b
 | Email           | &#x1f5bc;         | &#x1f4c4;      | &#x1f4c4;  | &#x2714;  | &#x2714;     | &#x2714;    | &#x2714;       | &#x1f4c4;  |
 | Facebook        | &#x26a0;&#x1f5bc; | &#x2714;       | &#x274c;   | &#x2714;  | &#x2714;     | &#x2714;    | &#x2714;       | &#x274c;   |
 | GroupMe         | &#x1f5bc;         | &#x1f4c4;      | &#x1f4c4;  | &#x1f4c4; | &#x1f4c4;    | &#x1f4c4;   | &#x1f4c4;      | &#x1f4c4;  |
-| Kik             | &#x1f5bc;         | &#x2714;       | &#x2714;   | &#x274c;  | &#x1f4c4;    | &#x274c;    | &#x2714;       | &#x1f4c4;  |
 | Line            | &#x26a0;&#x1f5bc; | &#x2714;       | &#x1f4c4;  | &#x2714;  | &#x2714;     | &#x2714;    | &#x2714;       | &#x1f4c4;  |
 | Microsoft Teams | &#x2714;          | &#x274c;       | &#x274c;   | &#x2714;  | &#x2714;     | &#x2714;    | &#x2714;       | &#x274c;   |
 | Skype           | &#x274c;          | &#x2714;       | &#x2714;   | &#x2714;  | &#x2714;     | &#x2714;    | &#x2714;       | &#x2714;   |

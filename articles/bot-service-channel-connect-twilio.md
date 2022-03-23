@@ -1,6 +1,6 @@
 ---
 title: Connect a bot to Twilio - Bot Service
-description: Learn how to configure bots to use Twilio to communicate with people. See how to connect bots to Twilio through a Twilio adapter or a TwiML application.
+description: Learn how to configure bots to use Twilio to communicate with people with a TwiML application or the Twilio adapter.
 keywords: Twilio, bot channels, SMS, App, phone, configure Twilio, cloud communication, text
 author: JonathanFingold
 ms.author: iawilt
@@ -8,68 +8,74 @@ manager: shellyha
 ms.reviewer: mainguy
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 11/18/2021
+ms.date: 03/22/2022
 ---
 
 # Connect a bot to Twilio
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-You can configure your bot to communicate with people using the Twilio cloud communication platform.
+You can configure your bot to communicate with people using the Twilio cloud communication platform. This article describes how configure a bot to communicate using Twilio by creating a TwiML application and connecting the bot in the Azure portal.
 
-## Connect a bot to Twilio using the Azure portal
+## Prerequisites
 
-To configure a bot to communicate using Twilio, create a TwilML application and then connect the bot.
+- An Azure account. If you don't already have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+- An existing bot published to Azure.
 
-To learn more about developing for Twilio, see the [Twilio SMS](https://www.twilio.com/docs/sms) documentation.
+## Create a TwiML application
 
-### Create a TwiML application
-
-If you don't have a Twilio account, create a [new account](https://www.twilio.com/try-twilio).
-
-Create a [TwiML application](https://support.twilio.com/hc/articles/223180928-How-Do-I-Create-a-TwiML-App-) following the instructions.
-
-![Create app](media/channels/twi-StepTwiml.png)
-
-Under **Properties**, enter a **FRIENDLY NAME**. In this tutorial, "My TwiML app" is an example. The **REQUEST URL** under **Voice** can be left empty. Under **Messaging**, the **Request URL** should be `https://sms.botframework.com/api/sms`.
+1. If you don't have a Twilio account, [create a new account](https://www.twilio.com/try-twilio). If you already have a Twilio account, continue to the next step.
+1. Follow the instructions to [create a TwiML application](https://support.twilio.com/hc/articles/223180928-How-Do-I-Create-a-TwiML-App-).
+    - Enter a **Friendly Name** for your TwiML app.
+    - Under **Voice Configuration**, leave the **Request URL** empty
+    - Under **Messaging Configuration**, set the **Request URL** to `https://sms.botframework.com/api/sms`.
 
 ### Select or add a phone number
 
-Follow the instruction in the [Twilio documentation](https://support.twilio.com/hc/articles/223180048-Adding-a-Verified-Phone-Number-or-Caller-ID-with-Twilio) to add a verified caller ID via the console site. After you finish, you will see your verified number in **Active Numbers** under **Manage Numbers**.
+Follow the instructions to [add a verified caller via the Console](https://support.twilio.com/hc/articles/223180048-Adding-a-Verified-Phone-Number-or-Caller-ID-with-Twilio). You can skip this if you already have a verified caller ID.
 
-![Set phone number](media/channels/twi-StepPhone.png)
+After you finish, you'll see your verified number in **Verified Caller IDs**.
 
-### Specify application to use for voice and messaging
+### Specify TwiML app to use for voice and messaging
 
-Click the number and go to **Configure**. Under both Voice and Messaging, set **CONFIGURE WITH** to be TwiML App and set **TWIML APP** to be My TwiML app. After you finish, click **Save**.
+After adding a verified caller ID, configure your number's setting to use the TwiML app you created.
 
-![Specify application](media/channels/twi-StepPhone2.png)
+1. Select **Active numbers** under **Phone Numbers > Manage**. Select the number and go to **Configure**.
+1. Under both **Voice & Fax** and **Messaging**, set **Configure With** to ***TwiML App**. Then set **TwiML APP** to the TwiML app you created earlier. After you finish, select **Save**.
+1. Select **Active Numbers** again. You'll see the **Active Configuration** of both **Voice** and **Messaging** are set to your TwiML App.
 
-Go back to **Manage Numbers**, you will see the configuration of both Voice and Messaging are changed to TwiML App.
+### Gather credentials from Twilio
 
-![Specified number](media/channels/twi-StepPhone3.png)
+1. Go back to the [Twilio Console homepage](https://www.twilio.com/console/)
+1. Under **Account Info**, you'll see your **Account SID** and **Auth Token** on the project dashboard, shown below. Copy and save these values for later steps.
 
-### Gather credentials
+    :::image type="content" source="media/channels/twi-StepAuth.png" alt-text="Gather app credentials from Twilio Console":::
 
-Go back to the [console homepage](https://www.twilio.com/console/), you will see your Account SID and Auth Token on the project dashboard, as shown below.
+### Enter Twilio credentials in the Azure portal
 
-![Gather app credentials](media/channels/twi-StepAuth.png)
+Now that you have the necessary values from Twilio, connect your bot to Twilio in the Azure portal.
 
-### Submit credentials
+1. In a separate window or tab, go to the [Azure portal](https://portal.azure.com/).
+1. Select the bot that you want to connect to Twilio.
+1. Under **Settings**, select **Channels**, then select the **Twilio (SMS)** icon from the list of **Available Channels**.
+1. Enter the **Phone Number**, **Account Sid**, and **Auth Token** you saved earlier. After you finish, select **Apply**.
 
-In a separate window, return to the [Bot Framework](https://dev.botframework.com/) site.
+    :::image type="content" source="media/channels/twi-StepSubmit.png" alt-text="Enter Twilio credentials in Azure":::
 
-- Select **My bots** and choose the Bot that you want to connect to Twilio. This will direct you to the Azure portal.
-- Select **Channels** under **Bot Management**. Click the Twilio (SMS) icon.
-- Enter the Phone Number, Account SID, and Auth Token you record earlier. After you finish, click **Save**.
+Your bot's now successfully configured to communicate with Twilio users.
 
-![Submit credentials](media/channels/twi-StepSubmit.png)
+## Test your bot in Twilio
 
-When you have completed these steps, your bot will be successfully configured to communicate with users using Twilio.
+To test whether your bot is connected to Twilio correctly, send an SMS message to your Twilio number. When your bot receives the message, it sends a message back to you, echoing the text from your message.
 
-## Connect a bot to Twilio using the Twilio adapter
+## Additional information
 
-As well as the channel available in the Azure Bot Service to connect your bot with Twilio, the [Bot Builder Community repos](https://github.com/BotBuilderCommunity/) define a custom channel adapter for Twilio.
+To learn more about developing for Twilio, see the [Twilio SMS documentation](https://www.twilio.com/docs/sms).
 
-- For information on the C# adapter, see [the Adapters section](https://github.com/BotBuilderCommunity/botbuilder-community-dotnet#adapters) in the .NET community repo.
-- For information on the JavaScript adapter, see [the Adapters section](https://github.com/BotBuilderCommunity/botbuilder-community-js#adapters) in the JavaScript community repo.
+### Connect a bot to Twilio using the Twilio adapter
+
+In addition to using the available Azure Bot Service channel to connect your bot with Twilio, the [Bot Builder Community repos](https://github.com/BotBuilderCommunity/) define a custom channel adapter for Twilio.
+
+- For information on the C# adapter, see [the Adapters section in the .NET community repo](https://github.com/BotBuilderCommunity/botbuilder-community-dotnet#adapters).
+- For information on the JavaScript adapter, see [the Adapters section in the JavaScript community repo](https://github.com/BotBuilderCommunity/botbuilder-community-js#adapters).
+
