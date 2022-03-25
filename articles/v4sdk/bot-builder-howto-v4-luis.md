@@ -114,8 +114,8 @@ This article covers how to add LUIS to a bot. For information about using dialog
 
     ![ignore-composite-entities](./media/how-to-luis/luis-upgrade-composite-entities.png)
 
-1. Train and publish your app.
-    For more information, see the LUIS documentation on how to [train](/azure/cognitive-services/LUIS/luis-how-to-train) and [publish](/azure/cognitive-services/LUIS/publishapp) an app to the production environment.
+1. Train and publish your app to the _production_ environment.
+    For more information, see the LUIS documentation on how to [train](/azure/cognitive-services/LUIS/luis-how-to-train) and [publish](/azure/cognitive-services/LUIS/publishapp) an app.
 
 ### Why use entities
 
