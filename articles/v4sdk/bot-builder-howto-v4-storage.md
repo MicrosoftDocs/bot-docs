@@ -731,12 +731,6 @@ If not previously installed, install the following packages.
 
 Install the **Microsoft.Bot.Builder.Azure.Blobs** NuGet package. For more information on using NuGet, see [Install and manage packages in Visual Studio using the NuGet Package Manager](/nuget/consume-packages/install-use-packages-visual-studio).
 
-<!--
-```Console
-Install-Package Microsoft.Bot.Builder.Azure.Blobs
-```
--->
-
 ### [JavaScript](#tab/javascript)
 
 Add references to botbuilder-azure in your project via npm.
@@ -791,8 +785,8 @@ Next, in the `ConfigureServices` method in **Startup.cs**, create the `BlobsStor
 //Use Azure Blob storage, instead of in-memory storage.
 services.AddSingleton<IStorage>(
     new BlobsStorage(
-        Configuration.GetValue<string>("dataConnectionString"),
-        Configuration.GetValue<string>("containerName")
+        Configuration.GetValue<string>("BlobConnectionString"),
+        Configuration.GetValue<string>("BlobContainerName")
         ));
 ```
 
