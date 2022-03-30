@@ -78,4 +78,3 @@ In addition to using the available Azure Bot Service channel to connect your bot
 
 - For information on the C# adapter, see [the Adapters section in the .NET community repo](https://github.com/BotBuilderCommunity/botbuilder-community-dotnet#adapters).
 - For information on the JavaScript adapter, see [the Adapters section in the JavaScript community repo](https://github.com/BotBuilderCommunity/botbuilder-community-js#adapters).
-

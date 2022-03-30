@@ -272,8 +272,6 @@
         href: bot-service-channel-connect-search.md
       - name: Skype
         href: bot-service-channel-connect-skype.md
-      - name: Skype for Business
-        href: bot-service-channel-connect-skypeforbusiness.md
       - name: Slack
         href: bot-service-channel-connect-slack.md
       - name: Telegram
