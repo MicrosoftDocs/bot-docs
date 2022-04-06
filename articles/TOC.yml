@@ -80,6 +80,8 @@
       href: v4sdk/bot-builder-create-a-bot-project.md
   - name: How bots for Microsoft Teams work
     href: v4sdk/bot-builder-basics-teams.md
+  - name: Regionalization in Azure Bot Services
+    href: v4sdk/bot-builder-concept-regionalization.md
   - name: Skills
     items:
     - name: About skills
@@ -236,20 +238,24 @@
           href: bot-service-channel-connect-directline.md
         - name: Connect to Direct Line Speech
           href: bot-service-channel-connect-directlinespeech.md
-        - name: Direct Line App Service Extension
+        - name: Direct Line App Service extension
           items:
-          - name: Direct Line App Service Extension
+          - name: Direct Line App Service extension
             href: bot-service-channel-directline-extension.md
+          - name: About network isolation
+            href: dl-network-isolation-concept.md
           - name: Configure .NET bot for extension
             href: bot-service-channel-directline-extension-net-bot.md
           - name: Configure Node.js bot for extension
             href: bot-service-channel-directline-extension-node-bot.md
-          - name: Create .NET Client with extension
+          - name: Create .NET client with extension
             href: bot-service-channel-directline-extension-net-client.md
-          - name: Use extension with WebChat
+          - name: Use extension with Web Chat
             href: bot-service-channel-directline-extension-webchat-client.md
-          - name: Use extension within VNET
+          - name: Configure a virtual network
             href: bot-service-channel-directline-extension-vnet.md
+          - name: Configure network isolation
+            href: dl-network-isolation-how-to.md
       - name: Alexa
         href: bot-service-channel-connect-alexa.md
       - name: Email

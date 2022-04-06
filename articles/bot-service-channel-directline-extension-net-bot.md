@@ -49,7 +49,7 @@ This section describes how to enable the Direct Line App Service extension using
             .UseStaticFiles()
             .UseWebSockets()
              // Allow the bot to use named pipes.
-            .UseNamedPipes(System.Environment.GetEnvironmentVariable("APPSETTING_WEBSITE_SITE_NAME") + ".directline");
+            .UseNamedPipes(System.Environment.GetEnvironmentVariable("APPSETTING_WEBSITE_SITE_NAME") + ".directline")
             .UseRouting()
             .UseAuthorization()
             .UseEndpoints(endpoints =>
