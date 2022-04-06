@@ -37,7 +37,7 @@ If you configure your own domain name, or your bot is hosted in a sovereign Azur
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script
           crossorigin="anonymous"
-          src="https://cdn.botframework.com/botframework-webchat/latest/webchat-minimal.js"
+          src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"
         ></script>
         <style>
           html,
@@ -63,10 +63,18 @@ If you configure your own domain name, or your bot is hosted in a sovereign Azur
         <div id="webchat" role="main"></div>
         <script>
           (async function() {
-            <!-- NOTE: It is highly recommended to replace the below fetch with a call to your own token service as described in step 2 above, and to avoid exposing your channel secret in client side code. -->
-            const res = await fetch('https://<your_app_service>.azurewebsites.net/.bot/v3/directline/tokens/generate', { method: 'POST', headers:{'Authorization':'Bearer ' + '<Your Bot's Direct Line channel secret>'}});
+            <!-- NOTE: You should replace the below fetch with a call to your own token service as described in step 2 above, to avoid exposing your channel secret in client side code. -->
+            const res = await fetch('https://<your_app_service>.azurewebsites.net/.bot/v3/directline/tokens/generate', 
+              {
+                "method": "POST",
+                "headers": {
+                  "Authorization": "Bearer " + "<Your Bot's Direct Line channel secret>"
+                },
+                "body": "{'user': {'id': 'my_test_id', 'name': 'my_test_name'}}"
+              }
+            );
             const { token } = await res.json();
-    
+
             window.WebChat.renderWebChat(
               {
                 directLine: await window.WebChat.createDirectLineAppServiceExtension({

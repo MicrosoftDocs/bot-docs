@@ -11,7 +11,7 @@ ms.date: 09/01/2019
 ms-custom: abs-meta-21q1 
 ---
 
-# Use Direct Line App Service extension within a VNET
+# Use Direct Line App Service extension within a virtual network
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
