@@ -81,7 +81,7 @@ See [Skills/v3-skill-bot](https://github.com/microsoft/BotBuilder-Samples/tree/m
 
    **v3-skill-bot/.env**
 
-   [!code[.env file](~/../botbuilder-samples/Migration/MigrationV3V4/Node/Skills/v3-skill-bot/.env)]
+   [!code-ini[.env file](~/../botbuilder-samples/Migration/MigrationV3V4/Node/Skills/v3-skill-bot/.env)]
 
 1. Create the chat connector for the bot. This one uses the default authentication configuration. Set `enableSkills` to `true` to allow the bot to be used as a skill. `allowedCallers` is an array of the app IDs of the bots allowed to use this skill. If the first value of this array is '*', then any bot can use this skill.
 
@@ -126,7 +126,7 @@ Before conversion, the bot was similar to the v3 [core-MultiDialogs](https://git
 
    **v3-booking-bot-skill/.env**
 
-   [!code[.env file](~/../botbuilder-samples/Migration/MigrationV3V4/Node/Skills/v3-booking-bot-skill/.env)]
+   [!code-ini[.env file](~/../botbuilder-samples/Migration/MigrationV3V4/Node/Skills/v3-booking-bot-skill/.env)]
 
 1. Create the chat connector for the bot. This one uses a custom authentication configuration. Set `enableSkills` to `true` to allow the bot to be used as a skill. `authConfiguration` contains the custom authentication configuration object to use for authentication and claims validation.
 
@@ -183,7 +183,7 @@ The simple root bot consumes the two skills and lets you verify that the convers
 
    **v4-root-bot/.env**
 
-   [!code-json[configuration](~/../botbuilder-samples/Migration/MigrationV3V4/Node/Skills/v4-root-bot/.env?highlight=2-3,6,10)]
+   [!code-ini[configuration](~/../botbuilder-samples/Migration/MigrationV3V4/Node/Skills/v4-root-bot/.env?highlight=2-3,6,10)]
 
 ## Test the root bot
 

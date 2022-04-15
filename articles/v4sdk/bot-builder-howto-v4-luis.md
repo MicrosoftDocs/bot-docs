@@ -155,7 +155,7 @@ Add the information required to access your LUIS app including application ID, a
 
 **.env**
 
-[!code[env](~/../BotBuilder-Samples/samples/javascript_nodejs/13.core-bot/.env?range=1-5)]
+[!code-ini[.env file](~/../BotBuilder-Samples/samples/javascript_nodejs/13.core-bot/.env?range=1-5)]
 
 # [Java](#tab/java)
 
@@ -163,7 +163,7 @@ Add the information required to access your LUIS app including application ID, a
 
 **application.properties**
 
-[!code-java[appsettings](~/../BotBuilder-Samples/samples/java_springboot/13.core-bot/src/main/resources/application.properties?range=1-6)]
+[!code-ini[appsettings](~/../BotBuilder-Samples/samples/java_springboot/13.core-bot/src/main/resources/application.properties?range=1-6)]
 
 # [Python](#tab/python)
 

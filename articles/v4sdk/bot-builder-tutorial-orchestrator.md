@@ -167,11 +167,11 @@ npm install
 Once all of your service apps are created, the information for each needs to be added into your '.env' file. The initial [JavaScript Sample][js-sample] code contains an empty .env file.
 
 **.env**
-[!code-file[EmptyEnv](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-orchestrator/.env)]
+[!code-ini[Empty .env file](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-orchestrator/.env)]
 
 Add your service connection values as shown below:
 
-```text
+```ini
 QnAKnowledgebaseId="<knowledge-base-id>"
 QnAEndpointKey="<qna-maker-resource-key>"
 QnAEndpointHostName="<your-hostname>"
