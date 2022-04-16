@@ -90,7 +90,7 @@ Add the following values to your **appsetting.json** file:
 
 Add the following values to your **.env** file:
 
-```text
+```ini
 MicrosoftAppId=""
 MicrosoftAppPassword=""
 ScmType=None
@@ -120,7 +120,7 @@ class DefaultConfig:
 
 Add the following values to your **application.properties** file:
 
-```java
+```ini
 MicrosoftAppId=
 MicrosoftAppPassword=
 QnAKnowledgebaseId="knowledge-base-id"

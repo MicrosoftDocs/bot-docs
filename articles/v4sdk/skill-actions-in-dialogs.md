@@ -83,13 +83,13 @@ Optionally, the skill bot can use a flight-booking LUIS model. To use this model
 
 **dialogSkillBot/.env**
 
-[!code-javascript[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogSkillBot/.env)]
+[!code-ini[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogSkillBot/.env)]
 
 ### [Java](#tab/java)
 
 **application.properties**
 
-[!code-json[configuration file](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-skill-bot/src/main/resources/application.properties?highlight=1-2)]
+[!code-ini[configuration file](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-skill-bot/src/main/resources/application.properties?highlight=1-2)]
 
 ### [Python](#tab/python)
 

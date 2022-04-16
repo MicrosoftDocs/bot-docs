@@ -117,7 +117,7 @@ public override async Task OnTurnAsync(ITurnContext turnContext, CancellationTok
 
 First, add an `ExpireAfterSeconds` setting to .env:
 
-```text
+```ini
 MicrosoftAppId=
 MicrosoftAppPassword=
 ExpireAfterSeconds=30
@@ -181,7 +181,7 @@ const bot = new DialogBot(process.env.ExpireAfterSeconds, conversationState, use
 
 First, add an `ExpireAfterSeconds` setting to application.properties:
 
-```text
+```ini
 MicrosoftAppId=
 MicrosoftAppPassword=
 server.port=3978
@@ -456,7 +456,7 @@ Start with a fresh copy of the **multi-turn prompt** sample.
 
 Update .env to include Cosmos DB storage options:
 
-```text
+```ini
 MicrosoftAppId=
 MicrosoftAppPassword=
 
@@ -564,7 +564,7 @@ Start with a fresh copy of the **multi-turn prompt** sample, and add the followi
 
 Update application.properties to include Cosmos DB storage options:
 
-```text
+```ini
 MicrosoftAppId=
 MicrosoftAppPassword=
 server.port=3978

@@ -98,13 +98,13 @@ If you aren't deploying this for production, your bot's app ID and password fiel
 
 **.env**
 
-[!code-javascript[.env file](~/../botbuilder-samples/samples/javascript_nodejs/11.qnamaker/.env)]
+[!code-ini[.env file](~/../botbuilder-samples/samples/javascript_nodejs/11.qnamaker/.env)]
 
 ## [Java](#tab/java)
 
 **application.properties**
 
-[!code-java[appsettings](~/../botbuilder-samples/samples/java_springboot/11.qnamaker/src/main/resources/application.properties)]
+[!code-ini[appsettings](~/../botbuilder-samples/samples/java_springboot/11.qnamaker/src/main/resources/application.properties)]
 
 ## [Python](#tab/python)
 

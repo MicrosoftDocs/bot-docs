@@ -97,7 +97,7 @@ Optionally, add the skill's identity information to the appsettings.json file.
 
 Optionally, add the skill's identity information to the .env file.
 
-[!code-javascript[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/.env)]
+[!code-ini[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/.env)]
 
 ### [Java](#tab/java)
 
@@ -105,7 +105,7 @@ Optionally, add the skill's identity information to the .env file.
 
 Optionally, add the skill's app ID and password to the application.properties file.
 
-[!code-java[configuration file](~/../botbuilder-samples/samples/java_springboot/80.skills-simple-bot-to-bot/DialogSkillBot/src/main/resources/application.properties)]
+[!code-ini[configuration file](~/../botbuilder-samples/samples/java_springboot/80.skills-simple-bot-to-bot/DialogSkillBot/src/main/resources/application.properties)]
 
 ### [Python](#tab/python)
 

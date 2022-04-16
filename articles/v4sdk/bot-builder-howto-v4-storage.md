@@ -419,7 +419,7 @@ Add the following information to your **.env** file.
 
 **.env**
 
-```javascript
+```ini
 CosmosDbEndpoint="<your-CosmosDb-URI>"
 CosmosDbAuthKey="<your-primary-key>"
 CosmosDbDatabaseId="<your-database-id>"
@@ -705,7 +705,7 @@ Add the following information to your **.env** file.
 
 **.env**
 
-```javascript
+```ini
 BlobConnectionString="<your-blob-connection-string>"
 BlobContainerName="<your-blob-container-name>"
 ```

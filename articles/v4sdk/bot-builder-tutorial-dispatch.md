@@ -265,7 +265,7 @@ Add your service connection values as shown below:
 
 **.env**
 
-```text
+```ini
 QnAKnowledgebaseId="<knowledge-base-id>"
 QnAEndpointKey="<qna-maker-resource-key>"
 QnAEndpointHostName="<your-hostname>"
@@ -287,7 +287,7 @@ For each of the entities shown below, add the values you recorded earlier in the
 
 **application.properties**
 
-```text
+```ini
 QnAKnowledgebaseId=<knowledge-base-id>
 QnAEndpointKey=<qna-maker-resource-key>
 QnAEndpointHostName=<your-hostname>

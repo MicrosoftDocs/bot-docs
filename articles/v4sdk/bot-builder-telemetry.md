@@ -195,7 +195,7 @@ This article starts with the [CoreBot sample app](https://github.com/Microsoft/B
 
 1. Add the [Application Insights key](../bot-service-resources-app-insights-keys.md) to your `.env` file: `InstrumentationKey=<EnterInstrumentationKeyHere>`. The `.env` file contains metadata about external services the bot uses while running. For example, Application Insights and the Language Understanding (LUIS) service connection and metadata is stored there. The addition to your `.env` file must be in this format:
 
-    [!code-json[env](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/.env?highlight=8)]
+    [!code-ini[.env file](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/.env?highlight=8)]
 
     > [!NOTE]
     > Details on getting the _Application Insights instrumentation key_ can be found in the article [Application Insights keys](../bot-service-resources-app-insights-keys.md).

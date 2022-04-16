@@ -252,7 +252,7 @@ You will need your bot's app ID and password to complete this process.
 
       Depending on the characters in your bot secret, you may need to XML escape the password. For example, any ampersands (&) will need to be encoded as `&amp;`.
 
-    [!code-txt[.env](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/.env)]
+    [!code-ini[.env](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/.env)]
 
 # [Java](#tab/java)
 
@@ -264,7 +264,7 @@ You will need your bot's app ID and password to complete this process.
     - Set `ConnectionName` to the name of the OAuth connection setting you added to your bot.
     - Set `MicrosoftAppId` and `MicrosoftAppPassword` to your bot's app ID and app secret.
 
-    [!code-json[application.properties](~/../botbuilder-samples/samples/java_springboot/18.bot-authentication/src/main/resources/application.properties)]
+    [!code-ini[application.properties](~/../botbuilder-samples/samples/java_springboot/18.bot-authentication/src/main/resources/application.properties)]
 
 # [Python](#tab/python)
 
