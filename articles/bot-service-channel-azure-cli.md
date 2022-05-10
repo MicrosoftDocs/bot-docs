@@ -80,7 +80,7 @@ az bot kik delete --resource-group ContosoBotRG --name ContosoBot
 
 You can configure your bot to communicate with Microsoft Teams. For more information, see [Connect a bot to Microsoft Teams](channel-connect-teams.md).
 
-These sample commands create a connection to the channel for Microsoft Teams by using [az bot msteams create](/cli/azure/bot/mstreams#az-bot-msteams-create). The example shows the connection in the console and deletes the connection.
+These sample commands create a connection to the channel for Microsoft Teams by using [az bot msteams create](/cli/azure/bot/msteams#az-bot-msteams-create). The example shows the connection in the console and deletes the connection.
 
 ```azurecli
 az bot msteams create --resource-group ContosoBotRG --name ContosoBot --calling-web-hook https://www.contosoapp.com/ \
@@ -163,9 +163,9 @@ This article uses the following Azure CLI commands:
 - [az bot kik create](/cli/azure/bot/kik#az-bot-kik-create)
 - [az bot kik delete](/cli/azure/bot/kik#az-bot-kik-delete)
 - [az bot kik show](/cli/azure/bot/kik#az-bot-kik-show)
-- [az bot msteams create](/cli/azure/bot/mstreams#az-bot-msteams-create)
-- [az bot msteams delete](/cli/azure/bot/mstreams#az-bot-msteams-delete)
-- [az bot msteams show](/cli/azure/bot/mstreams#az-bot-msteams-show)
+- [az bot msteams create](/cli/azure/bot/msteams#az-bot-msteams-create)
+- [az bot msteams delete](/cli/azure/bot/msteams#az-bot-msteams-delete)
+- [az bot msteams show](/cli/azure/bot/msteams#az-bot-msteams-show)
 - [az bot skype create](/cli/azure/bot/skype#az-bot-skype-create)
 - [az bot skype delete](/cli/azure/bot/skype#az-bot-skype-delete)
 - [az bot skype show](/cli/azure/bot/skype#az-bot-skype-show)
