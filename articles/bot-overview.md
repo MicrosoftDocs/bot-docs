@@ -54,7 +54,7 @@ Composer is available as [a desktop application](/composer/install-composer) for
 
 As an authoring canvas, Bot Framework Composer is broadly analogous to [Power Virtual Agents](#power-virtual-agents). An important distinction, however, is that Bot Framework Composer is independent of the Microsoft Power Platform. In other words, you can make use of Bot Framework Composer to author, test, provision, and manage _standalone_ conversational experiences.
 
-For more information about Bot Framework Composer, refer to the [introductory page](/composer/introduction). For details regarding pricing, refer to [Azure Bot Services pricing](/pricing/details/bot-services/). Once created and deployed on Azure, the chatbot service consumes resources. Costs associated with the consumption of resources on Azure are in addition to the cost of the chatbot service itself.
+For more information about Bot Framework Composer, refer to the [introductory page](/composer/introduction). For details regarding pricing, refer to [Azure Bot Services pricing](https://azure.microsoft.com/pricing/details/bot-services/). Once created and deployed on Azure, the chatbot service consumes resources. Costs associated with the consumption of resources on Azure are in addition to the cost of the chatbot service itself.
 
 ## Power Virtual Agents
 

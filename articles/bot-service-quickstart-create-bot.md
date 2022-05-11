@@ -204,7 +204,7 @@ The generator supports a number of command line options that can be used to chan
 | `--help, -h` | List help text for all supported command-line options |
 | `--botName, -N` | The name given to the bot project |
 | `--packageName, -P` | The Java package name to use for the bot |
-| `--template, -T` | The template used to generate the project. Options are `echo`, `empty`, or `core`. See [https://github.com/Microsoft/BotBuilder-Samples/tree/master/generators/generator-botbuilder](https://github.com/Microsoft/BotBuilder-Samples/tree/master/generators/generator-botbuilder) for additional information regarding the different template options and their functional differences. |
+| `--template, -T` | The template used to generate the project. Options are `echo`, `empty`, `core`. See [https://github.com/Microsoft/BotBuilder-Samples/tree/main/generators](https://github.com/microsoft/BotBuilder-Samples/tree/main/generators) for additional information regarding the different template options their functional differences. |
 | `--noprompt` | The generator will not prompt for confirmation before creating a new bot. Any requirement options not passed on the command line will use a reasonable default value. This option is intended to enable automated bot generation for testing purposes. |
 
 Thanks to the template, your project contains all the code that's necessary to create the bot in this quickstart. You don't need any additional code to test your bot.
@@ -258,7 +258,7 @@ Thanks to the template, your project contains all the code that's necessary to c
 > [!div class="nextstepaction"]
 > [I created an echo bot](#start-your-bot) [I ran into an issue](https://microsoft.qualtrics.com/jfe/form/SV_6D4KLPZc2jTIa2O?Product=BotSDK&Page=bot-service-quickstart-create-bot&Section=create-a-bot&PLanguage=Python)
 
-[echo-template]: https://github.com/microsoft/BotBuilder-Samples/tree/master/generators/python/app/templates/echo
+[echo-template]: https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/csharp_dotnetcore/01.console-echo/EchoBot.cs
 
 ---
 

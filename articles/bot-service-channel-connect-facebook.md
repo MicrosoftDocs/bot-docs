@@ -33,7 +33,7 @@ Users will access your bot from a Facebook Page. To connect the bot, you'll enab
 ### Get the Page ID
 
 1. Sign in to your [Meta for Developers](https://developers.facebook.com) account.
-1. Go to the Page on which users will access your bot. If you don't have one yet, go to [Pages](https://www.facebook.com/bookmarks/pages) and select **Create new Page**.
+1. Go to the Page on which users will access your bot. If you don't have one yet, go to [Pages](https://developers.facebook.com/docs/pages) and select **Create new Page**.
 1. Open the Page's **About** page, then copy and save the **Page ID**.
 
 ### Create your app

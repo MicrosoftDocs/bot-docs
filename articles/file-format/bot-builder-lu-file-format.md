@@ -767,9 +767,9 @@ Below are examples of how to make URI references:
 [pattern syntax]: /azure/cognitive-services/luis/reference-pattern-syntax
 [pattern-any]: /azure/cognitive-services/luis/luis-concept-entity-types#patternany-entity
 [machine-learning-feature]: /azure/cognitive-services/luis/luis-concept-feature
-[phrase-list]: /azure/cognitive-services/luis/luis-concept-feature#create-a-phrase-list-for-a-concept
+[phrase-list]: /azure/cognitive-services/luis/concepts/patterns-features?branch=main#create-a-phrase-list-for-a-concept
 [utterances]: /azure/cognitive-services/luis/luis-concept-utterance
 [orchestrator]: /composer/concept-orchestrator
 [Composer]: /composer/
-[adaptive-tools]: /bot-builder-howto-adaptive-tools.md
+[adaptive-tools]: https://marketplace.visualstudio.com/items?itemName=BotBuilder.bot-framework-adaptive-tools
 [luis-metadata]: /azure/cognitive-services/luis/luis-reference-application-settings

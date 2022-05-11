@@ -291,7 +291,7 @@ For more about LUIS, see the LUIS documentation:
 [java-core-bot-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/13.core-bot
 [python-core-bot-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/13.core-bot
 [sign-in-luis-portal]: /azure/cognitive-services/luis/sign-in-luis-portal
-[create-account]: /free/cognitive-services/
+[create-account]: https://azure.microsoft.com/services/cognitive-services/
 [conversation-apps]: https://www.luis.ai/applications
 [create-authoring-resource]: /azure/cognitive-services/luis/luis-how-to-azure-subscription
 [sign-in-to-luis-portal]: /azure/cognitive-services/luis/luis-how-to-start-new-app#sign-in-to-luis-portal

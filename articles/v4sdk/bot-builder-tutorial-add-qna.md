@@ -35,7 +35,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 * Familiarity with [QnA bot creation](/azure/cognitive-services/qnamaker/tutorials/create-qna-bot) using Azure Bot Service.
 * Installed [Maven](https://maven.apache.org/), for Java only.
 
-You should also already have the [prerequisites for the previous tutorial](/azure/bot-service/bot-builder-tutorial-deploy-basic-bot#prerequisites).
+You should also already have the [prerequisites for the previous tutorial](/azure/bot-service/tutorial-publish-a-bot#prerequisites).
 
 ## Create a QnA Maker service and knowledge base
 
