@@ -5,7 +5,7 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: include
-ms.date: 02/11/2022
+ms.date: 06/06/2022
 ---
 
 ## Create the resource
@@ -29,44 +29,40 @@ Create the **Azure Bot** resource, which will allow you to register your bot wit
 
 1. Select **Review + create**.
 1. If the validation passes, select **Create**.
-1. Select **Go to resource group**. You should see the bot and related resources listed in the resource group you selected.
-1. Select **Get the SDK from GitHub** to build your bot with the Bot Framework SDK.
+1. Once the deployment completes, select **Go to resource**. You should see the bot and related resources listed in the resource group you selected.
+1. If you don't already have the Bot Framework SDK, select **Download from GitHub** to learn how to consume the packages for your preferred language.
 
     :::image type="content" source="../../media/azure-manage-a-bot/azure-bot-create-sdk.png" alt-text="Create bot in SDK":::
 
-<a id="azure-key-vault"></a>
+You're now ready to build your bot with the Bot Framework SDK.
 
 > [!TIP]
-> When Azure creates a new single-tenant or multi-tenant Azure Bot resource with a new app ID, it also generates a _password_ and stores the password in Azure Key Vault.
->
-> Key Vault is a service that provides centralized secrets management, with full control over access policies and audit history. For more information, see [Use Key Vault references for App Service and Azure Functions](/azure/app-service/app-service-key-vault-references). You're charged a small fee for using the service. For more information, see [Key Vault pricing](https://azure.microsoft.com/pricing/details/key-vault/).
+> When Azure creates a new single-tenant or multi-tenant Azure Bot resource with a new app ID, it also generates a _password_.
 
 [!INCLUDE [app ID and password](../authentication/azure-bot-appid-password.md)]
 
-If your bot is a _user-assigned managed identity_ application, update your bot's web app:
+If you have an existing Web App resource for your bot and your bot is a _user-assigned managed identity_ application, you may need to update your bot's web app:
 
-1. Go to the app service page for your bot's web app.
-1. In the navigation pane under **Settings**, select **Identity**.
-1. On the **Identity** pane, select the **User assigned** tab and **Add** (+).
-1. On the **Add user assigned managed identity** pane:
+1. Go to the App Service blade for your bot's web app.
+1. Under **Settings**, select **Identity**.
+1. On the **Identity** blade, select the **User assigned** tab and **Add** (+).
+1. On the **Add user assigned managed identity** blade:
     1. Select your subscription.
     1. For **User assigned managed identities**, select the managed identity for your bot. If the managed identity was auto-generated for you, it will have the same name as your bot.
     1. Select **Add** to use this identity for your bot.
 
-        :::image type="content" source="../../media/how-to-create-single-tenant-bot/app-service-managed-identity.png" alt-text="The App Service Identity page with the managed identity for the bot selected.":::
+        :::image type="content" source="../../media/how-to-create-single-tenant-bot/app-service-managed-identity.png" alt-text="The App Service Identity blade with the managed identity for the bot selected.":::
 
 To get your bot's app or tenant ID:
 
-1. Go to the Azure Bot resource page for your bot.
-1. Go to the bot's **Configuration** pane.
-    From here you can copy the bot's **Microsoft App ID** or **App Tenant ID**.
+1. Go to the Azure Bot resource blade for your bot.
+1. Go to the bot's **Configuration** blade.
+    From this blade, you can copy the bot's **Microsoft App ID** or **App Tenant ID**.
 
-> [!TIP]
->When Azure creates a single-tenant or multi-tenant bot, it stores the app password in Azure Key Vault.
+Single-tenant and multi-tenant bots have an app secret or password that you need for some operations.
+Azure Bot Service hides your bot secret. However, the owner of the bot's web app resource can generate a new password:
 
-To get the _bot's app password_ from Azure Key Vault, see:
-
-- [About Azure Key Vault](/azure/key-vault/general/overview)
-- [Use Key Vault references for App Service and Azure Functions](/azure/app-service/app-service-key-vault-references).
-- [Assign a Key Vault access policy using the Azure portal](/azure/key-vault/general/assign-access-policy-portal)
-- [Quickstart: Set and retrieve a secret from Azure Key Vault using the Azure portal](/azure/key-vault/secrets/quick-create-portal#retrieve-a-secret-from-key-vault)
+1. Go to the Azure Bot resource blade for your bot.
+1. Go to the bot's **Configuration** blade.
+1. Select **Manage**, next to **Microsoft App ID**, to go to the **Certificates + secrets** blade for the web app.
+1. Follow the instructions on the blade to create a new client secret and record the value in a safe place.

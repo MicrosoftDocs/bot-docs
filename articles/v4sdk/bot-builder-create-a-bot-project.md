@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/18/2021
+ms.date: 06/06/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -91,7 +91,7 @@ And for some bots, you may need to create other objects that the bot object or a
 ### [C#](#tab/csharp)
 
 In ASP.NET, you register objects and object creation methods in the **Startup.cs** file.
-The `ConfigureServices` method loads the connected services, as well as their keys from **appsettings.json** or Azure Key Vault (if there are any), connects state, and so on. Here, the adapter and bot are defined to be available through dependency injection.
+The `ConfigureServices` method loads the connected services, as well as their keys (if there are any) from **appsettings.json**, connects state, and so on. Here, the adapter and bot are defined to be available through dependency injection.
 Then, the `Configure` method finishes the configuration of your app.
 
 `ConfigureServices` and `Configure` are called by the runtime when the app starts.
