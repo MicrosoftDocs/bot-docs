@@ -97,7 +97,7 @@ For many terms that start with the word Microsoft or Azure, like Microsoft Azure
 
 <a id="a"></a>
 
-## ABS
+## ~ABS~
 
 Don't use. See [Azure Bot Service](#azure-bot-service).
 
