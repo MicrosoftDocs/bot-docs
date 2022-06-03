@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: conceptual
-ms.date: 10/20/2021
+ms.date: 06/06/2022
 ---
 
 # Bot Framework authentication basics
@@ -23,9 +23,9 @@ Let's see if we can untangle this bundle by starting with a bird's eye view of t
 
 - When you register a bot in Azure via a **Azure Bot** resource, Azure creates an Azure Active Directory (Azure AD) registration application. This application has an app ID (`MicrosoftAppId`) and a client secret (`MicrosoftAppPassword`). You use these values in the bot configuration files as described below.
 
-- Azure AD is a cloud identity service that allows you to build applications that securely sign in _users_ using industry standard protocols like OAuth 2.0. You create an Active Directory application and use its *app ID* and *password* to select an *identity provider* and generate an *authentication* connection. You add this connection to your bot resource. You also add the connection name in the bot configuration files as described below.
+- Azure AD is a cloud identity service that allows you to build applications that securely sign in _users_ using industry standard protocols like OAuth 2.0. You create an Active Directory application and use its _app ID_ and _password_ to select an _identity provider_ and generate an _authentication_ connection. You add this connection to your bot resource. You also add the connection name in the bot configuration files as described below.
 
-- A bot is identified by its Azure Bot resource *app ID* and *password*. You add the related values in the bot's configuration file (`appsettings.json` (.NET), `.env` (JavaScript), `application.properties` (Java), or `config.py` (Python)) or in Azure Key Vault. You also add the connection name to the files. The bot uses a token based on the app ID and password to access protected resources. The bot uses different tokens, based on the authentication connection, to access the user's protected resources.
+- A bot is identified by its Azure Bot resource _app ID_ and _password_. You add the related values in the bot's configuration file or to a secrets or key manager. You also add the connection name. The bot uses a token based on the app ID and password to access protected resources. The bot uses different tokens, based on the authentication connection, to access the user's protected resources.
 
 ## Bot authentication and authorization
 

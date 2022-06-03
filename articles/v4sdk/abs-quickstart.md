@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: quickstart
 ms.service: bot-service
-ms.date: 03/03/2022
+ms.date: 06/06/2022
 ms.custom: abs-meta-21q1
 ---
 
