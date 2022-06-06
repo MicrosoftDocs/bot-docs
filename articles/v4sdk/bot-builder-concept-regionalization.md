@@ -38,11 +38,8 @@ When you create a bot in Azure, you can set its region to maintain data complian
 
 Sometimes a bot must access secured online resources on behalf of the user. [OAuth](bot-builder-concept-authentication.md) is used to authenticate the user and authorize the bot.
 
-The following regions are supported for OAuth and regional Azure Bot services:
-
-[!INCLUDE [regionalization](../includes/azure-bot-regionalization.md)]
-
-For more information, see [Add authentication to a bot](bot-builder-authentication.md).
+- For information about which regions and clouds are supported, see [supported OAuth URLs](../ref-oauth-redirect-urls.md).
+- For information on how to add user authentication, see [Add authentication to a bot](bot-builder-authentication.md).
 
 ## Regional Azure bot channels
 
