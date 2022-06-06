@@ -86,13 +86,7 @@ This section shows how to create an Azure AD identity provider that uses OAuth 2
 
    1. Name your application.
    1. Select the **Supported account types** for your application. (Any of these options will work with this sample.)
-   1. For the **Redirect URI**, select **Web** and set the URL to one of these values:
-
-      |Value|Description|
-      |:-|:-|
-      |`https://token.botframework.com/.auth/web/redirect`|For non-regionalized bots|
-      |`https://europe.token.botframework.com/.auth/web/redirect`|For bots with data residency in Europe|
-      |`https://unitedstates.token.botframework.com/.auth/web/redirect`|For bots with data residency in the United States|
+   1. For the **Redirect URI**, select **Web** and set the URL to one of the [supported OAuth redirect URLs](../ref-oauth-redirect-urls.md).
 
    1. Select **Register**.
 

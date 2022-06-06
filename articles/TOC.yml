@@ -210,6 +210,8 @@
     items:
     - name: Deploy your bot to Azure
       href: bot-builder-deploy-az-cli.md
+    - name: Configure an Azure Government bot
+      href: how-to-deploy-gov-cloud-high.md
     - name: Set up continuous deployment
       href: bot-service-build-continuous-deployment.md
   - name: Manage
@@ -450,6 +452,8 @@
       href: file-format/bot-builder-qna-file-format.md
   - name: Entities and activity types
     href: bot-service-activities-entities.md
+  - name: OAuth URL support
+    href: ref-oauth-redirect-urls.md
   - name: Azure Policy built-ins
     displayName: samples, policies, definitions
     href: policy-reference.md
