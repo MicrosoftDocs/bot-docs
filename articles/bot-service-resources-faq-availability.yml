@@ -76,21 +76,18 @@ sections:
           All new features and capabilities are developed exclusively on [Bot Framework SDK V4](https://github.com/microsoft/botframework-sdk).
           Customers are encouraged to migrate their bots to V4 as soon as possible.
 
-          We highly recommend that you start migrating your V3 bots to V4. In order to support this migration we have produced migration documentation
-          and will provide extended support for migration initiatives (via standard channels such as Stack Overflow and Microsoft Customer Support).
-
           ### Azure Bot Service
           1. The Azure Bot Service will continue to support the running of V3 bots with no planned end of life, and any running bots will not be disrupted.
           1. Channels will remain compatible with V3 with no disruption or end of life plan.
           1. Creation of new V3 bots is disabled on the portal; however, expert users who wish to deploy their V3 bots independently through other services (such as another web app service) can do so.
 
           ### SDK and Tools
-          1.    We will not be updating the V3 SDK for the foreseeable future, except to apply critical security fixes and to add a skills connector to allow V4 bots to call legacy V3 bots.
-          2.    SDKs and tools development is exclusively on V4 with no V3 work done or planned (hence we're already "there").
-          3.    We do not prevent anyone from running old tools to manage their V3 bots.
+          1. We will not be updating the V3 SDK for the foreseeable future, except to apply critical security fixes and to add a skills connector to allow V4 bots to call legacy V3 bots.
+          1. SDKs and tools development is exclusively on V4 with no V3 work done or planned (hence we're already "there").
+          1. We do not prevent anyone from running old tools to manage their V3 bots.
 
           ### References
-          - [Essential Migration Guidance](./v4sdk/migration/migration-overview.md)
+          - [How bots work](v4sdk/bot-builder-basics.md)
           - Primary V4 Repositories to develop Bot Framework bots
             - [Botbuilder for dotnet](https://github.com/microsoft/botbuilder-dotnet)
             - [Botbuilder for JS](https://github.com/microsoft/botbuilder-js)
