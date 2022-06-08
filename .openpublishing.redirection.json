@@ -2,87 +2,87 @@
   "redirections": [
     {
       "source_path": "v4sdk/migration/migration-overview.md",
-      "redirect_url": "v4sdk/bot-builder-basics.md",
+      "redirect_url": "/azure/bot-service/bot-builder-basics",
       "redirect_document_id": false
     },
     {
       "source_path": "v4sdk/migration/migration-about.md",
-      "redirect_url": "v4sdk/bot-builder-basics.md",
+      "redirect_url": "/azure/bot-service/bot-builder-basics",
       "redirect_document_id": false
     },
     {
       "source_path": "v4sdk/migration/net-migration-quickreference.md",
-      "redirect_url": "v4sdk/bot-builder-basics.md",
+      "redirect_url": "/azure/bot-service/bot-builder-basics",
       "redirect_document_id": false
     },
     {
       "source_path": "v4sdk/migration/conversion-framework.md",
-      "redirect_url": "v4sdk/bot-builder-basics.md",
+      "redirect_url": "/azure/bot-service/bot-builder-basics",
       "redirect_document_id": false
     },
     {
       "source_path": "v4sdk/migration/conversion-core.md",
-      "redirect_url": "v4sdk/bot-builder-basics.md",
+      "redirect_url": "/azure/bot-service/bot-builder-basics",
       "redirect_document_id": false
     },
     {
       "source_path": "v4sdk/migration/csharp-user-state-using.md",
-      "redirect_url": "v4sdk/bot-builder-basics.md",
+      "redirect_url": "/azure/bot-service/bot-builder-basics",
       "redirect_document_id": false
     },
     {
       "source_path": "v4sdk/migration/migration-about-javascript.md",
-      "redirect_url": "v4sdk/bot-builder-basics.md",
+      "redirect_url": "/azure/bot-service/bot-builder-basics",
       "redirect_document_id": false
     },
     {
       "source_path": "v4sdk/migration/javascript-migration-quickreference.md",
-      "redirect_url": "v4sdk/bot-builder-basics.md",
+      "redirect_url": "/azure/bot-service/bot-builder-basics",
       "redirect_document_id": false
     },
     {
       "source_path": "v4sdk/migration/conversion-javascript.md",
-      "redirect_url": "v4sdk/bot-builder-basics.md",
+      "redirect_url": "/azure/bot-service/bot-builder-basics",
       "redirect_document_id": false
     },
     {
       "source_path": "v4sdk/migration/javascript-user-state-using.md",
-      "redirect_url": "v4sdk/bot-builder-basics.md",
+      "redirect_url": "/azure/bot-service/bot-builder-basics",
       "redirect_document_id": false
     },
     {
       "source_path": "v4sdk/migration/convert-to-skill-overview.md",
-      "redirect_url": "v4sdk/bot-builder-basics.md",
+      "redirect_url": "/azure/bot-service/bot-builder-basics",
       "redirect_document_id": false
     },
     {
       "source_path": "v4sdk/migration/net-v3-as-skill.md",
-      "redirect_url": "v4sdk/bot-builder-basics.md",
+      "redirect_url": "/azure/bot-service/bot-builder-basics",
       "redirect_document_id": false
     },
     {
       "source_path": "v4sdk/migration/javascript-v3-as-skill.md",
-      "redirect_url": "v4sdk/bot-builder-basics.md",
+      "redirect_url": "/azure/bot-service/bot-builder-basics",
       "redirect_document_id": false
     },
     {
       "source_path": "language-generation/bot-builder-howto-use-lg-custom-functions.md",
-      "redirect_url": "v4sdk/bot-builder-concept-language-generation.md",
+      "redirect_url": "/azure/bot-service/bot-builder-concept-language-generation",
       "redirect_document_id": false
     },
     {
       "source_path": "language-generation/bot-builder-howto-use-lg-custom-functions.md",
-      "redirect_url": "v4sdk/bot-builder-concept-language-generation.md",
+      "redirect_url": "/azure/bot-service/bot-builder-concept-language-generation",
       "redirect_document_id": false
     },
     {
       "source_path": "bot-service-adapter-connect-webex.md",
-      "redirect_url": "bot-service-channel-additional-channels.md",
+      "redirect_url": "/azure/bot-service/bot-service-channel-additional-channels",
       "redirect_document_id": false
     },
     {
       "source_path": "v4sdk/bot-builder-tutorial-deploy-basic-bot.md",
-      "redirect_url": "tutorial-provision-a-bot.md",
+      "redirect_url": "/azure/bot-service/tutorial-provision-a-bot",
       "redirect_document_id": false
     },
     {
