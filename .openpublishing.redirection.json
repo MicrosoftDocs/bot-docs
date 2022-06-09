@@ -71,11 +71,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "articles/language-generation/bot-builder-howto-use-lg-custom-functions.md",
-      "redirect_url": "/azure/bot-service/bot-builder-concept-language-generation",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "articles/bot-service-adapter-connect-webex.md",
       "redirect_url": "/azure/bot-service/bot-service-channel-additional-channels",
       "redirect_document_id": false
