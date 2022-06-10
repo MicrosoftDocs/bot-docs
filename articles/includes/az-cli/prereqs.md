@@ -5,12 +5,18 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: include
-ms.date: 03/03/2022
+ms.date: 06/09/2022
 ---
 
-To use the Azure CLI, you need:
+To use the Azure CLI to provision and publish bots, you need:
 
 - An Azure account that has an active subscription. [Create a free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
-- An install of the [Azure CLI](/cli/azure/install-azure-cli).
-  - For _C#, JavaScript, and Python_ bots, use the _latest version_ of the [Azure CLI](/cli/azure/).
-  - For _Java_ bots, use Azure CLI _version 2.29.2_. Some steps won't work with later versions of the CLI.
+- An [install of the Azure CLI](/cli/azure/install-azure-cli).
+
+  For your programming language, use the following version of the Azure CLI.
+  Some steps won't work with later versions of the CLI.
+
+  | Language                   | CLI version |
+  |:---------------------------|:-----------:|
+  | C#, JavaScript, and Python | 2.36.0      |
+  | Java                       | 2.29.2      |
