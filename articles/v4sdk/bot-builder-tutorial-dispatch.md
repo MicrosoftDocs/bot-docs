@@ -447,9 +447,9 @@ If the `q_sample-qna` method is invoked, it uses the user input contained within
 
 ## Dispatch for user utterance to QnA Maker
 
-1. In the bot Emulator, enter the text `hi` and submit the utterance. The bot submits this query to the dispatch LUIS app and gets back a response indicating which child app should get this utterance for further processing.
+1. In the Bot Framework Emulator, enter the text `hi` and submit the utterance. The bot submits this query to the dispatch LUIS app and gets back a response indicating which child app should get this utterance for further processing.
 
-1. By selecting the `LUIS Trace` line in the log, you can see the LUIS response in the bot Emulator . The LUIS result from the dispatch LUIS app displays in the Inspector.
+1. By selecting the `LUIS Trace` line in the log, you can see the LUIS response in the Emulator . The LUIS result from the dispatch LUIS app displays in the Inspector.
 
     ```json
     {
@@ -484,7 +484,7 @@ If the `q_sample-qna` method is invoked, it uses the user input contained within
 
     Because the utterance, `hi`, is part of the dispatch LUIS app's **q_sample-qna** intent, and is selected as the `topScoringIntent`, the bot will make a second request, this time to the QnA Maker app, with the same utterance.
 
-1. Select the `QnAMaker Trace` line in the bot Emulator log. The QnA Maker result displays in the Inspector.
+1. Select the `QnAMaker Trace` line in the Emulator log. The QnA Maker result displays in the Inspector.
 
 ```json
 {
@@ -527,7 +527,7 @@ Once the file with extra utterances is added to Dispatch the utterances will sta
 
 ### To delete resources
 
-This sample creates a number of applications and resources that you can delete using the steps listed below, but you should not delete resources that *any other apps or services* rely on.
+This sample creates a number of applications and resources that you can delete using the steps listed below, but you should not delete resources that _any other apps or services_ rely on.
 
 To delete LUIS resources:
 

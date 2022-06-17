@@ -321,7 +321,7 @@ Run your bot locally.
 
 ### Start the Emulator and connect your bot
 
-Install the Bot Framework [Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md)
+Install the [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md)
 Next, start the Emulator and then connect to your bot in the Emulator:
 
 1. Select the **Create new bot configuration** link in the Emulator **Welcome** tab.

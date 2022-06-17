@@ -28,7 +28,7 @@ Creating your own client allows you to define the inner workings of the channel,
 > [!NOTE]
 > When deploying a bot to Azure, the [Web Chat](bot-builder-webchat-overview.md) channel is provisioned by default.
 
-Use of both the [Emulator](../bot-service-debug-emulator.md) and [Web Chat](bot-builder-webchat-overview.md) via Azure portal here can provide further insight into how your bot performs while interacting with different channels.
+Use of both the [Bot Framework Emulator](../bot-service-debug-emulator.md) and [Web Chat](bot-builder-webchat-overview.md) via Azure portal here can provide further insight into how your bot performs while interacting with different channels.
 
 Debugging your bot works similarly to other multi-threaded apps, with the ability to set breakpoints or use features like the immediate window.
 
@@ -37,7 +37,7 @@ Bots follow an event driven programming paradigm, which can be hard to rationali
 ## Understanding bot activities with the Emulator
 
 Your bot deals with different types of [activities](bot-builder-basics.md#the-activity-processing-stack) besides the normal _message_ activity. Understanding those activities will help you code your bot efficiently and allows you to verify the activities your bot is sending and receiving are what you expect.
-Using the **Emulator** will show you what those activities are, when they happen, and what information they contain.
+Using the Emulator will show you what those activities are, when they happen, and what information they contain.
 For more information see [Debug with the Emulator](../bot-service-debug-emulator.md).
 
 ## Saving and retrieving user interactions with transcripts

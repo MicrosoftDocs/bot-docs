@@ -388,7 +388,7 @@ payload:
 | v3.2  1.0| `https://sts.windows.net/f8cdef31-a31e-4b4a-93e4-5f571e91255a/` |
 | v3.2  2.0| `https://login.microsoftonline.com/f8cdef31-a31e-4b4a-93e4-5f571e91255a/v2.0`|
 
-See also the [highlighted values](https://github.com/microsoft/botbuilder-dotnet/blob/3c335046f95deeac50fbb0b48c7c8c42051d4f6d/libraries/Microsoft.Bot.Connector/Authentication/EmulatorValidation.cs#L28-L31) for non governmental cases. 
+See also the [highlighted values](https://github.com/microsoft/botbuilder-dotnet/blob/3c335046f95deeac50fbb0b48c7c8c42051d4f6d/libraries/Microsoft.Bot.Connector/Authentication/EmulatorValidation.cs#L28-L31) for non governmental cases.
 
 #### OpenID metadata document
 

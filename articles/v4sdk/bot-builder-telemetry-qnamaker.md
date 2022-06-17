@@ -131,7 +131,7 @@ We will start with the [QnA Maker sample app](https://github.com/microsoft/BotBu
     > * Details on getting the _Application Insights instrumentation key_ can be found in the article [Application Insights keys](../bot-service-resources-app-insights-keys.md).
     > * You should already have a [QnA maker account](/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure), if needed you can find information on getting the QnA Knowledgebase Id, Endpoint Key and HostName values in the [key management](/azure/cognitive-services/qnamaker/how-to/key-management) article.
 
-At this point the preliminary work to enable telemetry using Application Insights is done. You can run your bot locally using the bot Emulator and then go into Application Insights to see what is being logged such as response time, overall app health, and general running information.
+At this point the preliminary work to enable telemetry using Application Insights is done. You can run your bot locally using the Bot Framework Emulator and then go into Application Insights to see what is being logged such as response time, overall app health, and general running information.
 
 > [!TIP]
 > For information about personal information, see [Enable or disable activity event and personal information logging](bot-builder-telemetry.md#enable-or-disable-activity-event-and-personal-information-logging).
@@ -185,7 +185,7 @@ The QnA Maker service has built-in telemetry logging available so there is very 
 
 #### View telemetry data logged from the QnA Maker default entries
 
-You can view the results of your QnA Maker bot usage in Application Insights after running your bot in the bot Emulator by taking the following steps :
+You can view the results of your QnA Maker bot usage in Application Insights after running your bot in the Bot Framework Emulator by taking the following steps :
 
 1. Go to the [Azure portal](https://portal.azure.com/)
 

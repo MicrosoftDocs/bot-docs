@@ -40,7 +40,7 @@ Some of the resources created depend on how you decide to manage your bot's iden
 - For information about Azure resources and how they're managed in general, see the [Azure Resource Manager overview](/azure/azure-resource-manager/management/overview).
 
 > [!NOTE]
-> The Bot Framework Composer and Emulator currently only support multi-tenant bots.
+> The Bot Framework Composer and Bot Framework Emulator currently only support multi-tenant bots.
 > The Bot Framework SDK for C# or JavaScript version 4.15.0 or later is required for user-assigned managed identity and single-tenant bots.
 
 ### Skill support
