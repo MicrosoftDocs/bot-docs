@@ -60,7 +60,7 @@ The sample has a bot, a messages endpoint, and an additional notify endpoint tha
 
 ## Retrieve and store the conversation reference
 
-When the Emulator connects to the bot, the bot receives two conversation update activities. In the bot's conversation update activity handler, the conversation reference is retrieved and stored in a dictionary as shown below.
+When the Bot Framework Emulator connects to the bot, the bot receives two conversation update activities. In the bot's conversation update activity handler, the conversation reference is retrieved and stored in a dictionary as shown below.
 
 # [C#](#tab/csharp)
 

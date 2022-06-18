@@ -143,7 +143,7 @@ The skill consumer and skill manage their own state separately. However, the con
 
 <!-- TODO Add appropriate info about this new(?) feature to the bot basics article. -->
 
-You don't need an app ID and password to test a skill and skill consumer locally in the Emulator. An Azure subscription is still required to deploy your skill to Azure.
+You don't need an app ID and password to test a skill and skill consumer locally in the Bot Framework Emulator. An Azure subscription is still required to deploy your skill to Azure.
 
 Service-level authentication is managed by the Bot Connector service. The framework uses bearer tokens and bot application IDs to verify the identity of each bot. (The Bot Framework uses an _authentication configuration_ object to validate the authentication header on incoming requests.)
 

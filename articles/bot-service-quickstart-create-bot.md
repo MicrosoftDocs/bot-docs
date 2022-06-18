@@ -354,7 +354,7 @@ At this point, your bot is running locally on port 3978.
     :::image type="content" source="media/quickstart/emulator-hello-echo.png" alt-text="echo message":::
 
 > [!div class="nextstepaction"]
-> [I started the emulator and connected to my bot](#next-steps) [I ran into an issue](https://microsoft.qualtrics.com/jfe/form/SV_6D4KLPZc2jTIa2O?Product=BotSDK&Page=bot-service-quickstart-create-bot&Section=start-the-emulator-and-connect-your-bot)
+> [I started the Emulator and connected to my bot](#next-steps) [I ran into an issue](https://microsoft.qualtrics.com/jfe/form/SV_6D4KLPZc2jTIa2O?Product=BotSDK&Page=bot-service-quickstart-create-bot&Section=start-the-emulator-and-connect-your-bot)
 
 ## Additional Resources
 

@@ -15,7 +15,7 @@ Your bot identity can be managed in Azure in a few different ways.
 - As a _multi-tenant_ app.
 
 Support for the user-assigned managed identity and single-tenant app types was added for C# and JavaScript to the Bot Framework SDK in version 4.15.0.
-These app types aren't supported in the other languages or in Composer, the Emulator, or ngrok.
+These app types aren't supported in the other languages or in Bot Framework Composer, Bot Framework Emulator, or ngrok.
 
 | App type                       | Support                                                                               |
 |:-------------------------------|:--------------------------------------------------------------------------------------|

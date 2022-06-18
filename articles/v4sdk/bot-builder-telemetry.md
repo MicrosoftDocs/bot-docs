@@ -159,7 +159,7 @@ This article starts from the [CoreBot sample app](https://github.com/Microsoft/B
     > [!NOTE]
     > Details on getting the _Application Insights instrumentation key_ can be found in the article [Application Insights keys](../bot-service-resources-app-insights-keys.md).
 
-At this point, the preliminary work to enable telemetry using Application Insights is done. You can run your bot locally using the bot Emulator and then go into Application Insights to see what is being logged, such as response time, overall app health, and general running information.
+At this point, the preliminary work to enable telemetry using Application Insights is done. You can run your bot locally using the Emulator and then go into Application Insights to see what is being logged, such as response time, overall app health, and general running information.
 
 ### Enable telemetry in your bot's dialogs
 
@@ -233,7 +233,7 @@ This article starts with the [CoreBot sample app](https://github.com/Microsoft/B
 
     Node.js which follows the CommonJS module system, and the built in `require` function to include modules that exist in separate files.
 
-At this point, the preliminary work to enable telemetry using Application Insights is done. You can run your bot locally using the bot Emulator and then go into Application Insights to see what is being logged, such as response time, overall app health, and general running information.
+At this point, the preliminary work to enable telemetry using Application Insights is done. You can run your bot locally using the Emulator and then go into Application Insights to see what is being logged, such as response time, overall app health, and general running information.
 
 ---
 
