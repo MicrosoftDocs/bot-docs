@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: mainguy
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 04/05/2022
+ms.date: 07/01/2022
 ---
 
 # Configure network isolation
@@ -28,7 +28,7 @@ To add network isolation to your bot:
 - An Azure account. If you don't already have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
   - A subscription with permission to create Azure Virtual Network and network security group resources.
 - A working Direct Line App Service extension bot.
-  - Your bot uses the Bot Framework SDK version 4.14.4 or later.
+  - Your bot uses the Bot Framework SDK for C# or JavaScript, version 4.16 or later.
   - Your bot has named pipes enabled.
   - Your bot's app service has the Direct Line App Service extension enabled.
 - A Web Chat control connected to your bot's Direct Line client.
