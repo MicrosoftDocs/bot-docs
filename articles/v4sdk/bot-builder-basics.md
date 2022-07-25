@@ -18,7 +18,7 @@ ms.custom: abs-meta-21q1
 
 A bot is an app that users interact with in a conversational way, using text, graphics (such as cards or images), or speech. Azure Bot Service is a cloud platform. It hosts bots and makes them available to _channels_, such as Microsoft Teams, Facebook, or Slack.
 
-The Bot Framework Service, which is a component of the Azure Bot Service, sends information between the user's bot-connected app and the bot. Each channel can include additional information in the activities they send. Before creating bots, it is important to understand how a bot uses activity objects to communicate with its users.
+The Bot Framework Service, which is a component of the Azure Bot Service, sends information between the user's bot-connected app and the bot. Each channel can include additional information in the activities they send. Before creating bots, it's important to understand how a bot uses activity objects to communicate with its users.
 
 This diagram illustrates two activity types, _conversation update_ and _message_, that might be exchanged when a user communicates with a simple echo bot.
 
@@ -31,7 +31,7 @@ The _message_ activity carries conversation information between the parties. In 
 > [!TIP]
 > It's up to each channel to implement the Bot Framework protocol, and how each channel does so might be a little different. For example, some channels send conversation update activities first, and some send conversation update activities after they send the first message activity. A channel might include both the bot and user in one conversation update activity, while another might send two conversation update activities.
 
-In this example, the bot created and sent a message activity in response to the inbound message activity it had received. However, a bot can respond in other ways to a received message activity; it's not uncommon for a bot to respond to a conversation update activity by sending some welcome text in a message activity. More information can be found in how to [welcome a user](bot-builder-welcome-user.md).
+In this example, the bot created and sent a message activity in response to the inbound message activity it had received. However, a bot can respond in other ways to a received message activity, and it's common for a bot to respond to a conversation update activity by sending a message activity with a welcome message. More information can be found in how to [welcome a user](bot-builder-welcome-user.md).
 
 ## The Bot Framework SDK
 
@@ -82,8 +82,7 @@ This is handled through _storage_, _bot state_, and _property accessor_ classes.
 The SDK doesn't provide built-in storage, but does provide abstractions for storage and a few implementations of a storage layer.
 The [managing state](bot-builder-concept-state.md) topic describes these state and storage features.
 
-> [!div class="mx-imgBorder"]
-> ![A bot has connectivity and reasoning elements, and an abstraction for state](../media/architecture/how-bots-work.png)
+:::image type="content" source="../media/bot-builder-basics/how-bots-work.png" alt-text="A bot has connectivity and reasoning elements, and an abstraction for state":::
 
 The SDK doesn't require you use a specific application layer to send and receive web requests.
 The Bot Framework has templates and samples for ASP.NET (C#), restify (JavaScript), and aiohttp (Python).
@@ -172,7 +171,7 @@ The _adapter_, an integrated component of the SDK, is the core of the SDK runtim
 As mentioned above, the turn context provides the mechanism for the bot to send outbound activities, most often in response to an inbound activity. To achieve this, the turn context provides _send_, _update_, and _delete activity_ response methods. Each response method runs in an asynchronous process.
 
 > [!IMPORTANT]
-> The thread handling the primary bot turn deals with disposing of the context object when it is done. **Be sure to `await` any activity calls** so the primary thread will wait on the generated activity before finishing its processing and disposing of the turn context. Otherwise, if a response (including its handlers) takes any significant amount of time and tries to act on the context object, it may get a _context was disposed_ error.
+> The thread handling the primary bot turn deals with disposing of the context object when it's done. **Be sure to `await` any activity calls** so the primary thread will wait on the generated activity before finishing its processing and disposing of the turn context. Otherwise, if a response (including its handlers) takes any significant amount of time and tries to act on the context object, it may get a _context was disposed_ error.
 
 <!-- TODO Need to reorganize and rewrite parts of this.
     Do we need more explanation of the "role of the Azure Bot Service", and if so, what do we say about it?
@@ -208,7 +207,7 @@ The templates are:
 
 ### Managing bot resources
 
-You'll need to manage the resources for your bot, such as its app ID and password, and also information for any connected services. When you deploy your bot, it will need secure access to this information. To avoid complexity, most of the Bot Framework SDK articles do not describe how to manage this information.
+You'll need to manage the resources for your bot, such as its app ID and password, and also information for any connected services. When you deploy your bot, it will need secure access to this information. To avoid complexity, most of the Bot Framework SDK articles don't describe how to manage this information.
 
 - For general security information, see [Bot Framework security guidelines](bot-builder-security-guidelines.md).
 - To manage keys and secrets in Azure, see [About Azure Key Vault](/azure/key-vault/general/overview).
