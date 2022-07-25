@@ -5,9 +5,9 @@ keywords: skills
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: micchow
-ms.topic: how-to
+ms.reviewer: Gabo.Gilabert
 ms.service: bot-service
+ms.topic: how-to
 ms.date: 11/19/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -35,7 +35,7 @@ This article demonstrates how to implement a skill that echoes the user's input.
 - A copy of the **skills simple bot-to-bot** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/80.skills-simple-bot-to-bot), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/80.skills-simple-bot-to-bot), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/80.skills-simple-bot-to-bot).
 
 > [!NOTE]
-> Starting with version 4.11, you do not need an app ID and password to test a skill locally in the Emulator. An Azure subscription is still required to deploy your skill to Azure.
+> Starting with version 4.11, you do not need an app ID and password to test a skill locally in the Bot Framework Emulator. An Azure subscription is still required to deploy your skill to Azure.
 
 ## About this sample
 
@@ -97,7 +97,7 @@ Optionally, add the skill's identity information to the appsettings.json file.
 
 Optionally, add the skill's identity information to the .env file.
 
-[!code-javascript[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/.env)]
+[!code-ini[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/.env)]
 
 ### [Java](#tab/java)
 
@@ -105,7 +105,7 @@ Optionally, add the skill's identity information to the .env file.
 
 Optionally, add the skill's app ID and password to the application.properties file.
 
-[!code-java[configuration file](~/../botbuilder-samples/samples/java_springboot/80.skills-simple-bot-to-bot/DialogSkillBot/src/main/resources/application.properties)]
+[!code-ini[configuration file](~/../botbuilder-samples/samples/java_springboot/80.skills-simple-bot-to-bot/DialogSkillBot/src/main/resources/application.properties)]
 
 ### [Python](#tab/python)
 

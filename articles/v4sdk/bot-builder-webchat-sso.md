@@ -1,11 +1,12 @@
 ---
 title: Single sign on with a Web Chat in Bot Framework SDK
-description: Learn about the workflow when single sign on is used in a bot and with a Web Chat client. 
-author: kamrani
-ms.author: kamrani
-manager: kamrani
-ms.topic: conceptual
+description: Learn about the workflow when single sign on is used in a bot and with a Web Chat client.
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
+ms.topic: conceptual
 ms.custom: abs-meta-21q1
 ms.date: 09/01/2021
 ---
@@ -33,6 +34,7 @@ Let's analyze the flow.
 1. The Web Chat intercepts the OAuth card before displaying it to the user and checks if it contains a `TokenExchangeResource` property.
 1. If the property exists, the Web Chat must get an exchangeable token for the user, which must be an Azure AD v2 token.
 1. The Web Chat sends an Invoke activity to the bot with the body shown below.
+
     ```json
     {
         "type": "Invoke",

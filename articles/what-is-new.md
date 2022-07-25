@@ -2,11 +2,12 @@
 title: What's new in the Bot Service SDKs for C#, Java, JavaScript, and Python
 description: Learn about improvements and new features in the July 2021 release of the Bot Framework SDK for C#, Java, JavaScript, and Python.
 keywords: bot framework, azure bot service
-author: kamrani
-ms.author: kamrani
-manager: kamrani
-ms.topic: conceptual
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
+ms.topic: conceptual
 ms.date: 07/23/2021
 ms.custom: tab-zone-seo
 ---
@@ -147,7 +148,7 @@ Developers using the Microsoft Bot Framework have many [resources](bot-service-r
 
 ### New SDK features
 
-- [Orchestrator (preview)](https://github.com/microsoft/BotBuilder-Samples/blob/main/experimental/orchestrator/README.md): a transformer-based solution that runs locally with your bot to dispatch across one or more Bot Builder skills, LUIS applications, or QnA Maker knowledge bases.
+- [Orchestrator (preview)](https://github.com/microsoft/BotFramework-Composer/blob/main/docs/preview%20features/orchestrator.md): a transformer-based solution that runs locally with your bot to dispatch across one or more Bot Builder skills, LUIS applications, or QnA Maker knowledge bases.
 - [Bot Builder Azure Queues (C# preview)](https://www.nuget.org/packages/Microsoft.Bot.Builder.Azure.Queues): better integration with Azure Queues and the _continue conversation later_ dialog.
 - [Bot Builder Azure Blobs (C# preview)](https://www.nuget.org/packages/Microsoft.Bot.Builder.Azure.Blobs): new implementations of Azure Blob storage. This library is a replacement for the older Azure Blob storage implementation.
 

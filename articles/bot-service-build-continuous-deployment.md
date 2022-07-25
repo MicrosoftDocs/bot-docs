@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 05/17/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -16,62 +16,63 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-This article describes how to configure continuous deployment for your bot. You can enable continuous deployment to automatically deploy code changes from your source repository to Azure.
+This article describes how to configure continuous deployment. You can enable continuous deployment to automatically deploy code changes from your source repository to Azure.
 
-This article covers setting up continuous deployment for GitHub. For information on setting up continuous deployment with other source control systems, see [Additional resources](#additional-resources).
+This article covers setting up continuous deployment for GitHub. For information on setting up continuous deployment with other source control systems, see  [continuous deployment to Azure App Service](/azure/app-service/deploy-continuous-deployment).
 
 ## Prerequisites
 
 - If you don't have an Azure subscription, create a [free account](https://portal.azure.com) before you begin.
 - Before setting up continuous deployment, [Deploy your bot to Azure](bot-builder-deploy-az-cli.md) _at least once_.
+- A GitHub account and a repository to use for your bot.
 
-## Prepare your repository
+## Prepare your GitHub repository
 
-Make sure that your repository root has the correct files in your project. This will allow you to get automatic builds from the build provider.
+Add your bot project to your GitHub repository.
 
-| Runtime      | Root directory files                                   |
-|:-------------|:-------------------------------------------------------|
-| ASP.NET Core | .sln or .csproj                                        |
-| Node.js      | server.js, app.js, or package.json with a start script |
-| Java         | pom.xml                                                |
-| Python       | app.py                                                 |
+> [!IMPORTANT]
+> To enable automatic builds from the build provider, your _repository root_ must contain specific files for your project.
+>
+> | Runtime      | Root directory files                                               |
+> |:-------------|:-------------------------------------------------------------------|
+> | ASP.NET Core | **.sln** or **.csproj**                                            |
+> | Node.js      | **server.js**, **app.js**, or **package.json** with a start script |
+> | Java         | **pom.xml**                                                        |
+> | Python       | **app.py**                                                         |
 
-## Continuous deployment using GitHub
+## Set up continuous deployment with GitHub
 
-To enable continuous deployment with GitHub, navigate to the **App Service** page for your bot in the Azure portal.
+1. Go to the [Azure portal](https://portal.azure.com/).
+1. Open the **App Service** blade for your bot.
+1. Under **Deployment**, select **Deployment Center** to open the **Deployment Center** blade.
+1. Select the **Settings** tab.
+   1. For **Source**, select **GitHub**.
+   1. Change the build provider:
+      1. Select **Change provider**.
+      1. Select **App Service Build Service**, then **OK**.
 
-1. Select **Deployment Center** > **GitHub** > **Authorize**.
+   1. If you haven't connected to GitHub from Azure before, select **Authorize** to authorize Azure App Service to access your GitHub account.
+   1. Check that the **Signed in as** field shows your correct GitHub account.
 
-    :::image type="content" source="media/azure-bot-build/azure-deployment.png" alt-text="Continuous deployment":::
+       To sign into and authorize a different account, select **Change account**.
 
-    1. In the browser window that opens up, select **Authorize AzureAppService**.
+   1. For **Organization**, **Repository**, and **Branch**, select the GitHub organization, repository, and branch that contains your bot project.
+   1. Select **Save**.
 
-        :::image type="content" source="media/azure-bot-build/azure-deployment-github.png" alt-text="Azure GitHub permission":::
+At this point, continuous deployment with GitHub is set up. New commits in the selected repository and branch now deploy continuously into your App Service app. You can track the commits and deployments on the **Logs** tab.
 
-    1. After authorizing the **AzureAppService**, go back to **Deployment Center** in the Azure portal.
-
-1. Select **Continue**.
-
-    :::image type="content" source="media/azure-bot-build/azure-deployment-continue.png" alt-text="Continue to build provider":::
-
-1. On the **Build provider** page, select the build provider you want to use and select **Continue**.
-
-1. On the **Configure** page, enter the required information and select **Continue**. The information required will depend on which source control service and build provider you chose.
-
-1. On the **Summary** page, review the settings and then select **Finish**.
-
-At this point, continuous deployment with GitHub is set up. New commits in the selected repository and branch now deploy continuously into your App Service app. You can track the commits and deployments on the **Deployment Center** page.
+:::image type="content" source="media/bot-service-build-continuous-deployment/cicd-configured.png" alt-text="Deployment Center with source and build provider configured.":::
 
 ## Disable continuous deployment
 
 While your bot is configured for continuous deployment, you may not use the online code editor to make changes to your bot. If you want to use the online code editor, you can temporarily disable continuous deployment.
 
-To disable continuous deployment, do the following:
+To disable continuous deployment:
 
-1. In the [Azure portal](https://portal.azure.com), go to your bot's **All App Service settings** blade and select **Deployment Center**.
-1. Select **Disconnect** to disable continuous deployment. To re-enable continuous deployment, repeat the steps from the appropriate sections above.
+1. Go to the [Azure portal](https://portal.azure.com/).
+1. Open the **App Service** blade for your bot.
+1. Under **Deployment**, select **Deployment Center** to open the **Deployment Center** blade.
+1. Select the **Settings** tab.
+1. Select **Disconnect** to disable continuous deployment.
 
-## Additional resources
-
-- For more information about continuous deployment in Azure, see  [continuous deployment to Azure App Service](/azure/app-service/deploy-continuous-deployment).
-- When you use GitHub actions for the build provider, a workflow is created in your repository. You can learn more about using [GitHub Actions](https://help.github.com/en/actions) on the GitHub site.
+To re-enable continuous deployment, repeat the steps from [Set up continuous deployment with GitHub](#set-up-continuous-deployment-with-github).

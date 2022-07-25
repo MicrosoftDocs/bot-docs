@@ -5,9 +5,9 @@ keywords: configure bot settings, Display Name, Icon, Application Insights, Sett
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: micchow
-ms.topic: how-to
+ms.reviewer: mainguy
 ms.service: bot-service
+ms.topic: how-to
 ms.date: 11/19/2021
 ---
 
@@ -54,4 +54,4 @@ To save your changes, select **Apply** at the bottom of the blade.
 
 ## Additional Information
 
-You can use [az bot update](/cli/azure/bot#az_bot_update) to update bot settings from the command line.
+You can use [az bot update](/cli/azure/bot#az-bot-update) to update bot settings from the command line.

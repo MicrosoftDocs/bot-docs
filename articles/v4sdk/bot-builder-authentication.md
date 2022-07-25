@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/05/2021
+ms.date: 12/06/2021
 ms.custom: abs-meta-21q1
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -28,7 +28,7 @@ This article covers how to:
 - [Register the Azure AD identity provider with the bot](#register-the-azure-ad-identity-provider-with-the-bot)
 - [Prepare the bot code](#prepare-the-bot-code)
 
-Once you finish this article, you will have a bot that can respond to a few simple tasks. In the Microsoft Graph example, you can send an email, display who you are, and check recent emails. You do not need to publish the bot to test the OAuth features; however, the bot will need valid Azure app ID and password.
+Once you finish this article, you'll have a bot that can respond to a few simple tasks. In the Microsoft Graph example, you can send an email, display who you are, and check recent emails. You don't need to publish the bot to test the OAuth features; however, the bot will need valid Azure app ID and password.
 
 ## Web Chat and Direct Line considerations
 
@@ -45,17 +45,15 @@ how to [implement sequential conversation flow][simple-dialog], and how to [reus
 - Python [3.8+](https://www.python.org/downloads/release/python-383/) for Python.
 - One of the samples listed below.
 
-| Sample | BotBuilder version | Demonstrates |
-|:---|:---:|:---|
-| **Authentication** in [**C#**][cs-auth-sample] or [**JavaScript**][js-auth-sample] or [**Java**][java-auth-sample] or  [**Python**][python-auth-sample] | v4 | OAuthCard support |
-| **Authentication MSGraph** in [**C#**][cs-msgraph-sample] or [**JavaScript**][js-msgraph-sample] or [**Java**][java-msgraph-sample] or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/24.bot-authentication-msgraph)| v4 |  Microsoft Graph API support with OAuth 2.0 |
+  | Sample | BotBuilder version | Demonstrates |
+  |:---|:---:|:---|
+  | **Authentication** in [**C#**][cs-auth-sample] or [**JavaScript**][js-auth-sample] or [**Java**][java-auth-sample] or  [**Python**][python-auth-sample] | v4 | OAuthCard support |
+  | **Authentication MSGraph** in [**C#**][cs-msgraph-sample] or [**JavaScript**][js-msgraph-sample] or [**Java**][java-msgraph-sample] or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/24.bot-authentication-msgraph)| v4 |  Microsoft Graph API support with OAuth 2.0 |
 
-### About the samples
+  To run the samples referenced in this article, you need:
 
-To run the samples referenced in this article, you need the following:
-
-1. An Azure Active Directory (Azure AD) application to register a bot resource in Azure. This application allows the bot to access an external secured resource, such as Microsoft Graph. It also allows the user to communicate with the bot via several channels such as Web Chat.
-1. A separate Azure AD application that functions as the identity provider. This application provides the credentials needed to establish an OAuth connection between the bot and the secured resource. Notice that this article uses Active Directory as an identity provider. Many other providers are also supported.
+  - An Azure Active Directory (Azure AD) application with which to register a bot resource in Azure. This application allows the bot to access an external secured resource, such as Microsoft Graph. It also allows the user to communicate with the bot via several channels such as Web Chat.
+  - A separate Azure AD application to function as the identity provider. This application provides the credentials needed to establish an OAuth connection between the bot and the secured resource. Notice that this article uses Active Directory as an identity provider. Many other providers are also supported.
 
 > [!IMPORTANT]
 > Whenever you register a bot in Azure, it gets assigned an Azure AD application. However, this application secures channel-to-bot access. You need an additional Azure AD application for each external secured resource you want the bot to access on behalf of the user.
@@ -68,9 +66,8 @@ The Azure Active Directory (Azure AD) is a cloud identity service that allows yo
 
 You can use one of these two identity services:
 
-1. Azure AD developer platform (v1.0). Also known as the **Azure AD v1** endpoint, which allows you to build apps that securely sign in users with a Microsoft work or school account.
-For more information, see the [Azure Active Directory for developers (v1.0) overview](/azure/active-directory/azuread-dev/v1-overview).
-1. Microsoft identity platform (v2.0). Also known as the **Azure AD v2** endpoint, which is an evolution of the Azure AD platform (v1.0). It allows you to build applications that sign in to all Microsoft identity providers and get tokens to call Microsoft APIs, such as Microsoft Graph, or other APIs that developers have built. For more information, see the [Microsoft identity platform (v2.0) overview](/azure/active-directory/develop/active-directory-appmodel-v2-overview),
+1. Azure AD developer platform (v1.0). Also known as the **Azure AD v1** endpoint, which allows you to build apps that securely sign in users with a Microsoft work or school account. For more information, see the [Azure Active Directory for developers (v1.0) overview](/azure/active-directory/azuread-dev/v1-overview).
+1. Microsoft identity platform (v2.0). Also known as the **Azure AD v2** endpoint, which is an evolution of the Azure AD platform (v1.0). It allows you to build applications that sign in to all Microsoft identity providers and get tokens to call Microsoft APIs, such as Microsoft Graph, or other APIs that developers have built. For more information, see the [Microsoft identity platform (v2.0) overview](/azure/active-directory/develop/active-directory-appmodel-v2-overview).
 
 For information about the differences between the v1 and v2 endpoints, see [Why update to Microsoft identity platform (v2.0)?](/azure/active-directory/develop/active-directory-v2-compare). For complete information, see [Microsoft identity platform (formerly Azure Active Directory for developers)](/azure/active-directory/develop/).
 
@@ -79,25 +76,23 @@ For information about the differences between the v1 and v2 endpoints, see [Why 
 This section shows how to create an Azure AD identity provider that uses OAuth 2.0 to authenticate the bot. You can use Azure AD v1 or Azure AD v2 endpoints.
 
 > [!TIP]
-> You will need to create and register the Azure AD application in a tenant
-> in which you can consent to delegate permissions requested by an application.
+> You'll need to create and register the Azure AD application in a tenant in which you can consent to delegate permissions requested by an application.
 
 1. Open the [Azure Active Directory][azure-aad-blade] panel in the Azure portal.
-    If you are not in the correct tenant, select **Switch directory** to switch to the correct tenant. (For instruction on creating a tenant, see [Access the portal and create a tenant](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).)
+    If you aren't in the correct tenant, select **Switch directory** to switch to the correct tenant. (For information on how to create a tenant, see [Access the portal and create a tenant](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).)
 1. Open the **App registrations** panel.
 1. In the **App registrations** panel, select **New registration**.
 1. Fill in the required fields and create the app registration.
 
    1. Name your application.
    1. Select the **Supported account types** for your application. (Any of these options will work with this sample.)
-   1. For the **Redirect URI**
-       1. Select **Web**.
-       1. Set the URL to `https://token.botframework.com/.auth/web/redirect`.
+   1. For the **Redirect URI**, select **Web** and set the URL to one of the [supported OAuth redirect URLs](../ref-oauth-redirect-urls.md).
+
    1. Select **Register**.
 
-      - Once it is created, Azure displays the **Overview** page for the app.
-      - Record the **Application (client) ID** value. You will use this value later as the _Client id_ when you create the connection string and register the Azure AD provider with the bot registration.
-      - Also record the **Directory (tenant) ID** value. You will also use this to register this provider application with your bot.
+      - Once it's created, Azure displays the **Overview** page for the app.
+      - Record the **Application (client) ID** value. You'll use this value later as the _client ID_ when you create the connection string and register the Azure AD provider with the bot registration.
+      - Record the **Directory (tenant) ID** value. You'll use this value to register this provider application with your bot.
 
 1. In the navigation pane, select **Certificates & secrets** to create a secret for your application.
 
@@ -105,9 +100,9 @@ This section shows how to create an Azure AD identity provider that uses OAuth 2
    1. Add a description to identify this secret from others you might need to create for this app, such as `bot login`.
    1. Set **Expires** to **Never**.
    1. Select **Add**.
-   1. Before leaving this page, record the secret. You will use this value later as the _Client secret_ when you register your Azure AD application with your bot.
+   1. Before leaving this page, record the secret. You'll use this value later as the _client secret_ when you register your Azure AD application with your bot.
 
-1. In the navigation pane, select **API permissions** to open the **API permissions** panel. It is a best practice to explicitly set the API permissions for the app.
+1. In the navigation pane, select **API permissions** to open the **API permissions** panel. It's a best practice to explicitly set the API permissions for the app.
 
    1. Select **Add a permission** to show the **Request API permissions** pane.
    1. For this sample, select **Microsoft APIs** and **Microsoft Graph**.
@@ -128,11 +123,11 @@ This section shows how to create an Azure AD identity provider that uses OAuth 2
 You now have an Azure AD application configured.
 
 > [!NOTE]
-> You will assign the **Application (client) ID** and the **Client secret**, when you create the connection string and register the identity provider with the bot registration. See next section.
+> You'll assign the **Application (client) ID** and the **Client secret**, when you create the connection string and register the identity provider with the bot registration. See next section.
 
 ### Register the Azure AD identity provider with the bot
 
-The next step is to register the Azure AD application that you just created with the bot.
+The next step is to register your identity provider with your bot.
 
 #### [Azure AD v2](#tab/aadv2)
 
@@ -142,10 +137,10 @@ The next step is to register the Azure AD application that you just created with
 1. Fill in the form as follows:
 
     1. **Name**. Enter a name for your connection. You'll use it in your bot code.
-    1. **Service Provider**. Select **Azure Active Directory v2**. Once you select this, the Azure AD-specific fields will be displayed.
+    1. **Service Provider**. Select **Azure Active Directory v2** to display Azure AD-specific fields.
     1. **Client id**. Enter the application (client) ID you recorded for your Azure AD v2 identity provider.
     1. **Client secret**. Enter the secret you recorded for your Azure AD v2 identity provider.
-    1. **Token Exchange URL**. Leave it blank because it is used for SSO in Azure AD v2 only.
+    1. **Token Exchange URL**. Leave it blank because it's used for SSO in Azure AD v2 only.
     1. **Tenant ID**. Enter the **directory (tenant) ID** that you recorded earlier for your Azure AD app or **common** depending on the supported account types selected when you created the Azure DD app. To decide which value to assign, follow these criteria:
 
         - When creating the Azure AD app, if you selected *Accounts in this organizational directory only (Microsoft only - Single tenant)*, enter the **tenant ID** you recorded earlier for the Azure AD app.
@@ -190,11 +185,11 @@ The next step is to register the Azure AD application that you just created with
 
 > [!NOTE]
 > These values enable your application to access Office 365 data via the Microsoft Graph API.
-> Also, the **Token Exchange URL** should be left blank because it is used for SSO in Azure AD v2 only.
+> Also, the **Token Exchange URL** should be left blank because it's used for SSO in Azure AD v2 only.
 
 ### Test your connection
 
-1. Select on the connection entry to open the connection you just created.
+1. Select on the connection entry to open the connection you created.
 1. Select **Test Connection** at the top of the **Service Provider Connection Setting** pane.
 1. The first time, this should open a new browser tab listing the permissions your app is requesting and prompt you to accept.
 1. Select **Accept**.
@@ -204,13 +199,11 @@ You can now use this connection name in your bot code to retrieve user tokens.
 
 ## Prepare the bot code
 
-You will need your bot's app ID and password to complete this process.
+You'll need your bot's app ID and password to complete this process.
 
 # [C#](#tab/csharp)
 
-<!-- TODO: Add guidance (once we have it) on how not to hard-code IDs and ABS auth. -->
-
-1. Clone from the github repository the sample you want to work with: [**Bot authentication**][cs-auth-sample] or [**Bot authentication MSGraph**][cs-msgraph-sample].
+1. Clone from the GitHub repository the sample you want to work with: [**Bot authentication**][cs-auth-sample] or [**Bot authentication MSGraph**][cs-msgraph-sample].
 1. Update **appsettings.json**:
 
     - Set `ConnectionName` to the name of the OAuth connection setting you added to your bot.
@@ -220,19 +213,28 @@ You will need your bot's app ID and password to complete this process.
 
     [!code-json[appsettings](~/../botbuilder-samples/samples/csharp_dotnetcore/18.bot-authentication/appsettings.json)]
 
-1. Update **startup.cs**:
+1. Update **Startup.cs**:
 
-    To use OAuth in _non-public Azure clouds_, like government cloud, you must add the following code in the `startup.cs` file:
+    To use OAuth in _non-public Azure clouds_, like the government cloud, or in bots with data-residency, you must add the following code in the **Startup.cs** file.
 
     ```csharp
-    string uri = "https://api.botframework.azure.us";
+    string uri = "<uri-to-use>";
     MicrosoftAppCredentials.TrustServiceUrl(uri);
     OAuthClientConfig.OAuthEndpoint = uri;
     ```
 
+    Where _\<uri-to-use>_ is one of the following URIs:
+
+    |URI|Description|
+    |:-|:-|
+    |`https://europe.api.botframework.com`|For public-cloud bots with data residency in Europe.|
+    |`https://unitedstates.api.botframework.com`|For public-cloud bots with data residency in the United States.|
+    |`https://api.botframework.azure.us`|For United States government-cloud bots without data residency.|
+    |`https://api.botframework.com`|For public-cloud bots without data residency. This is the default URI and does not require a change to **Startup.cs**.|
+
 # [JavaScript](#tab/javascript)
 
-1. Clone from the github repository you want to work with: [**Bot authentication**][js-auth-sample] or [**Bot authentication MSGraph**][js-msgraph-sample].
+1. Clone from the GitHub repository you want to work with: [**Bot authentication**][js-auth-sample] or [**Bot authentication MSGraph**][js-msgraph-sample].
 1. Update **.env**:
 
     - Set `connectionName` to the name of the OAuth connection setting you added to your bot.
@@ -240,23 +242,21 @@ You will need your bot's app ID and password to complete this process.
 
       Depending on the characters in your bot secret, you may need to XML escape the password. For example, any ampersands (&) will need to be encoded as `&amp;`.
 
-    [!code-txt[.env](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/.env)]
+    [!code-ini[.env](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/.env)]
 
 # [Java](#tab/java)
 
-<!-- TODO: Add guidance (once we have it) on how not to hard-code IDs and ABS auth. -->
-
-1. Clone from the github repository the sample you want to work with: [**Bot authentication**][java-auth-sample] or [**Bot authentication MSGraph**][java-msgraph-sample].
+1. Clone from the GitHub repository the sample you want to work with: [**Bot authentication**][java-auth-sample] or [**Bot authentication MSGraph**][java-msgraph-sample].
 1. Update **application.properties**:
 
     - Set `ConnectionName` to the name of the OAuth connection setting you added to your bot.
     - Set `MicrosoftAppId` and `MicrosoftAppPassword` to your bot's app ID and app secret.
 
-    [!code-json[application.properties](~/../botbuilder-samples/samples/java_springboot/18.bot-authentication/src/main/resources/application.properties)]
+    [!code-ini[application.properties](~/../botbuilder-samples/samples/java_springboot/18.bot-authentication/src/main/resources/application.properties)]
 
 # [Python](#tab/python)
 
-1. Clone the sample [**Bot authentication**][python-auth-sample] from the github repository.
+1. Clone the sample [**Bot authentication**][python-auth-sample] from the GitHub repository.
 1. Update **config.py**:
 
     - Set `ConnectionName` to the name of the OAuth connection setting you added to your bot.
@@ -271,11 +271,11 @@ You will need your bot's app ID and password to complete this process.
 To obtain the **Microsoft app ID** and **Microsoft app password** values, see [Get registration password](~/bot-service-manage-settings.md#get-registration-password).
 
 > [!NOTE]
-> You could now publish this bot code to your Azure subscription (right-select on the project and choose **Publish**), but it is not necessary for this article. You would need to set up a publishing configuration that uses the application and hosting plan that you used when configuration the bot in the Azure portal.
+> You could now publish this bot code to your Azure subscription (right-select on the project and choose **Publish**), but it's not necessary for this article. You would need to set up a publishing configuration that uses the application and hosting plan that you used when configuration the bot in the Azure portal.
 
 ## Test the bot using the Emulator
 
-If you have not done so already, install the [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md). See also [Debug with the Emulator](../bot-service-debug-emulator.md).
+If you haven't done so already, install the [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md). See also [Debug with the Emulator](../bot-service-debug-emulator.md).
 
 <!-- auth config steps -->
 In order for the bot sample login to work you must configure the Emulator
@@ -283,14 +283,14 @@ as shown in [Configure the Emulator for authentication](../bot-service-debug-emu
 
 ### Testing
 
-After you have configured the authentication mechanism, you can perform the actual bot sample testing.
+After you've configured the authentication mechanism, you can perform the actual bot sample testing.
 
 > [!NOTE]
-> You may be asked to enter a *magic code*, because the way the bot sample is implemented. This magic code is part of the [RFC#7636](https://tools.ietf.org/html/rfc7636#page-5) and is there to add an extra security element. By removing the magic code, there is an increased security risk. This can be mitigated using Direct Line with enhanced authentication enabled. For more information, see [Bot Framework enhanced authentication](bot-builder-security-enhanced.md).
+> You may be asked to enter a *magic code*, because the way the bot sample is implemented. This magic code is part of the [RFC#7636](https://tools.ietf.org/html/rfc7636#page-5) and is there to add an extra security element. By removing the magic code, there's an increased security risk. This can be mitigated using Direct Line with enhanced authentication enabled. For more information, see [Bot Framework enhanced authentication](bot-builder-security-enhanced.md).
 
 1. Run the bot sample locally on your machine.
 1. Start the Emulator.
-1. You will need to provide your bot's app ID and password when you connect to the bot.
+1. You'll need to provide your bot's app ID and password when you connect to the bot.
     - You get the app ID and the password from the Azure app registration. These are the same values you assigned to the bot app in the `appsettings.json` or `.env` file. In the Emulator, you assign these values in the configuration file or the first time you connect to the bot.
     - If you needed to XML-escape the password in your bot code, you also need to do so here.
 1. Type `help` to see a list of available commands for the bot, and test the authentication features.
@@ -318,7 +318,7 @@ In the **Bot authentication MSGraph** sample, the dialog is designed to accept a
 
 When a user asks the bot to do something that requires the bot to have the user logged in, the bot can use an `OAuthPrompt` to initiate retrieving a token for a given connection. The `OAuthPrompt` creates a token retrieval flow that consists of:
 
-1. Checking to see if the Azure Bot Service already has a token for the current user and connection. If there is a token, the token is returned.
+1. Checking to see if the Azure Bot Service already has a token for the current user and connection. If there's a token, the token is returned.
 1. If Azure Bot Service doesn't have a cached token, an `OAuthCard` is created which is a sign-in button the user can select on.
 1. After the user selects on the `OAuthCard` sign-in button, Azure Bot Service will either send the bot the user's token directly or will present the user with a 6-digit authentication code to enter in the chat window.
 1. If the user is presented with an authentication code, the bot then exchanges this authentication code for the user's token.
@@ -347,7 +347,7 @@ Within a dialog step, use `BeginDialogAsync` to start the OAuth prompt, which as
 
 [!code-csharp[Use the OAuthPrompt](~/../botbuilder-samples/samples/csharp_dotnetcore/18.bot-authentication/Dialogs/MainDialog.cs?range=49)]
 
-Within the following dialog step, check for the presence of a token in the result from the previous step. If it is not null, the user successfully signed in.
+Within the following dialog step, check for the presence of a token in the result from the previous step. If it's not null, the user successfully signed in.
 
 [!code-csharp[Get the OAuthPrompt result](~/../botbuilder-samples/samples/csharp_dotnetcore/18.bot-authentication/Dialogs/MainDialog.cs?range=54-56)]
 
@@ -368,7 +368,7 @@ Within a dialog step, use `beginDialog` to start the OAuth prompt, which asks th
 
 [!code-javascript[Use OAuthPrompt](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/dialogs/mainDialog.js?range=57)]
 
-Within the following dialog step, check for the presence of a token in the result from the previous step. If it is not null, the user successfully signed in.
+Within the following dialog step, check for the presence of a token in the result from the previous step. If it's not null, the user successfully signed in.
 
 [!code-javascript[Get OAuthPrompt result](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/dialogs/mainDialog.js?range=62-63)]
 
@@ -391,7 +391,7 @@ Within a dialog step, use `beginDialog` to start the OAuth prompt, which asks th
 
 [!code-java[Use the OAuthPrompt](~/../botbuilder-samples/samples/java_springboot/18.bot-authentication/src/main/java/com/microsoft/bot/sample/authentication/MainDialog.java?range=86)]
 
-Within the following dialog step, check for the presence of a token in the result from the previous step. If it is not null, the user successfully signed in.
+Within the following dialog step, check for the presence of a token in the result from the previous step. If it's not null, the user successfully signed in.
 
 [!code-java[Get the OAuthPrompt result](~/../botbuilder-samples/samples/java_springboot/18.bot-authentication/src/main/java/com/microsoft/bot/sample/authentication/MainDialog.java?range=54-56)]
 
@@ -412,7 +412,7 @@ Within a dialog step, use `begin_dialog` to start the OAuth prompt, which asks t
 
 [!code-python[Add OAuthPrompt](~/../botbuilder-samples/samples/python/18.bot-authentication/dialogs/main_dialog.py?range=49)]
 
-Within the following dialog step, check for the presence of a token in the result from the previous step. If it is not null, the user successfully signed in.
+Within the following dialog step, check for the presence of a token in the result from the previous step. If it's not null, the user successfully signed in.
 
 [!code-python[Add OAuthPrompt](~/../botbuilder-samples/samples/python/18.bot-authentication/dialogs/main_dialog.py?range=54-65)]
 
@@ -458,7 +458,7 @@ When you start an OAuth prompt, it waits for a token response event, from which 
 
 ### Log the user out
 
-It is best practice to let users explicitly sign out, instead of relying on the connection to time out.
+It's best practice to let users explicitly sign out, instead of relying on the connection to time out.
 
 # [C#](#tab/csharp)
 
@@ -514,7 +514,7 @@ Microsoft Teams currently differs slightly in the way auth is integrated with th
 
 ---
 
-If you use an *OAuth prompt*, this invoke activity must be forwarded to the dialog. We will do so in the `TeamsActivityHandler`. Add the following code to your main dialog file.
+If you use an *OAuth prompt*, this invoke activity must be forwarded to the dialog. You can do so in the `TeamsActivityHandler`. Add the following code to your main dialog file.
 
 # [C#](#tab/csharp)
 

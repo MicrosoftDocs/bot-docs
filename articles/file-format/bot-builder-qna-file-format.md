@@ -2,12 +2,12 @@
 title: .qna file format - Bot Service
 description: .qna file format reference
 keywords: qna file format, reference, qnamaker
-author: emgrol
+author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
-ms.topic: reference
 ms.service: bot-service
+ms.topic: reference
 ms.date: 11/01/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -224,7 +224,7 @@ Multiturn content is represented in .qna format using Markdown link notation. Li
 - [display text](#<ID or question>)
 ```
 
-You can optionally include `context-only` for any prompts that are only contextually available for a question. Read  the section about [adding an existing question-and-answer pair as a follow-up prompt][1] to learn more about use of `context`.
+You can optionally include `context-only` for any prompts that are only contextually available for a question. Read  the section about [adding an existing question-and-answer pair as a follow-up prompt](/azure/cognitive-services/language-service/question-answering/tutorials/guided-conversations#add-question-pair-with-follow-up-prompts) to learn more about use of `context`.
 
 ```qna
 - [tell me a joke](#?joke) `context-only`

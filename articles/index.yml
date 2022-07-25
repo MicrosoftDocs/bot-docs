@@ -1,19 +1,20 @@
 ### YamlMime:Hub
 
-title: Azure Bot Service documentation # < 60 chars
-summary: Azure Bot Service provides an integrated environment that is purpose-built for bot development. # < 160 chars
-# brand: azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
+title: Azure Bot Service documentation
+summary: Azure Bot Service provides an integrated environment that is purpose-built for bot development.
 brand: azure
 
 metadata:
-  title: Azure Bot Service documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Azure Bot Service provides an integrated environment that is purpose-built for bot development. # Required; article description that is displayed in search results. < 160 chars.
+  title: Azure Bot Service documentation
+  description: Azure Bot Service provides an integrated environment that is purpose-built for bot development.
   services: service
-  ms.service: bot-service #Required; service per approved list. service slug assigned to your service by ACOM.
-  ms.topic: hub-page # Required
-  author: JonathanFingold #Required; your GitHub user alias, with correct capitalization.
-  ms.author: botcc #Required; microsoft alias of author; optional team alias.
-  ms.date: 08/02/2021 #Required; mm/dd/yyyy format.
+  ms.service: bot-service
+  ms.topic: hub-page
+  author: JonathanFingold
+  ms.author: iawilt
+  manager: shellyha
+  ms.reviewer: micchow
+  ms.date: 08/02/2021
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -44,7 +45,7 @@ highlightedContent:
 # productDirectory section (optional)
 productDirectory:
   title: Development options # < 60 chars (optional)
-  summary: There is more than one way to build and deploy a chatbot. Let's take a look at some options. # < 160 chars (optional)
+  summary: There's more than one way to build and deploy a chatbot. Let's take a look at some options. # < 160 chars (optional)
   items:
     # Card
     - title: Bot Framework Composer
@@ -89,9 +90,9 @@ conceptualContent:
         - url: bot-service-quickstart-create-bot.md
           itemType: quickstart
           text: Create a bot with the SDK
-        - url: v4sdk/bot-builder-tutorial-deploy-basic-bot.md
+        - url: tutorial-provision-a-bot.md
           itemType: tutorial
-          text: Deploy a bot to Azure with the SDK
+          text: Provision and publish a bot to Azure
         - url: bot-service-manage-channels.md
           itemType: how-to-guide
           text: Connect a bot to channels with the SDK

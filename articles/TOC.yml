@@ -18,8 +18,12 @@
   #   href: powershell/bot-builder-powershell-quickstart.md
 - name: Tutorials
   items:
-  - name: Deploy a basic bot
-    href: v4sdk/bot-builder-tutorial-deploy-basic-bot.md
+  - name: Provision a bot in Azure
+    displayName: create, create bot resources
+    href: tutorial-provision-a-bot.md
+  - name: Publish a bot to Azure
+    displayName: deploy, deploy a bot
+    href: tutorial-publish-a-bot.md
   - name: Add QnA Maker and redeploy a bot
     href: v4sdk/bot-builder-tutorial-add-qna.md
 - name: Samples
@@ -70,12 +74,14 @@
       href: v4sdk/bot-builder-concept-waterfall-dialogs.md
     - name: Middleware
       href: v4sdk/bot-builder-concept-middleware.md
-    - name: Language understanding
+    - name: Language Understanding
       href: v4sdk/bot-builder-concept-luis.md
     - name: Understand the structure of an echo bot
       href: v4sdk/bot-builder-create-a-bot-project.md
   - name: How bots for Microsoft Teams work
     href: v4sdk/bot-builder-basics-teams.md
+  - name: Regionalization in Azure Bot Services
+    href: v4sdk/bot-builder-concept-regionalization.md
   - name: Skills
     items:
     - name: About skills
@@ -156,12 +162,6 @@
       href: v4sdk/bot-builder-howto-v4-storage.md
     - name: Implement custom storage for your bot
       href: v4sdk/bot-builder-custom-storage.md
-    - name: Language Generation
-      items:
-      - name: Use language generation templates in your bot
-        href: language-generation/bot-builder-howto-use-lg-templates.md
-      - name: Use custom functions in language generation
-        href: language-generation/bot-builder-howto-use-lg-custom-functions.md
     - name: Skills
       items:
       - name: Implement a skill
@@ -204,12 +204,14 @@
       href: bot-service-debug-inspection-middleware.md
     - name: Debug your bot using transcript files
       href: v4sdk/bot-builder-debug-transcript.md
-    - name: Debug your bot with Adaptive Tools
+    - name: Debug language files with Adaptive Tools
       href: bot-service-debug-adaptive-tools.md
   - name: Deploy
     items:
     - name: Deploy your bot to Azure
       href: bot-builder-deploy-az-cli.md
+    - name: Configure an Azure Government bot
+      href: how-to-deploy-gov-cloud-high.md
     - name: Set up continuous deployment
       href: bot-service-build-continuous-deployment.md
   - name: Manage
@@ -238,19 +240,24 @@
           href: bot-service-channel-connect-directline.md
         - name: Connect to Direct Line Speech
           href: bot-service-channel-connect-directlinespeech.md
-        - name: Direct Line App Service Extension
-          href: bot-service-channel-directline-extension.md
+        - name: Direct Line App Service extension
           items:
+          - name: Direct Line App Service extension
+            href: bot-service-channel-directline-extension.md
+          - name: About network isolation
+            href: dl-network-isolation-concept.md
           - name: Configure .NET bot for extension
             href: bot-service-channel-directline-extension-net-bot.md
           - name: Configure Node.js bot for extension
             href: bot-service-channel-directline-extension-node-bot.md
-          - name: Create .NET Client with extension
+          - name: Create .NET client with extension
             href: bot-service-channel-directline-extension-net-client.md
-          - name: Use extension with WebChat
+          - name: Use extension with Web Chat
             href: bot-service-channel-directline-extension-webchat-client.md
-          - name: Use extension within VNET
+          - name: Configure a virtual network
             href: bot-service-channel-directline-extension-vnet.md
+          - name: Configure network isolation
+            href: dl-network-isolation-how-to.md
       - name: Alexa
         href: bot-service-channel-connect-alexa.md
       - name: Email
@@ -273,8 +280,6 @@
         href: bot-service-channel-connect-search.md
       - name: Skype
         href: bot-service-channel-connect-skype.md
-      - name: Skype for Business
-        href: bot-service-channel-connect-skypeforbusiness.md
       - name: Slack
         href: bot-service-channel-connect-slack.md
       - name: Telegram
@@ -287,46 +292,10 @@
         href: bot-service-channel-connect-wechat.md
       - name: Web Chat
         href: bot-service-channel-connect-webchat.md
-      - name: Webex
-        href: bot-service-adapter-connect-webex.md
       - name: Additional channels
         href: bot-service-channel-additional-channels.md
       - name: Connect to channels with Azure CLI
         href: bot-service-channel-azure-cli.md
-  - name: Migrate
-    items:
-    - name: Migration overview
-      href: v4sdk/migration/migration-overview.md
-    - name: Migrating .NET bots
-      items:
-      - name: Differences between the v3 and v4 .NET SDK
-        href: v4sdk/migration/migration-about.md
-      - name: .NET migration quick reference
-        href: v4sdk/migration/net-migration-quickreference.md
-      - name: Migrate a .NET v3 bot to a .NET Framework v4 bot
-        href: v4sdk/migration/conversion-framework.md
-      - name: Migrate a .NET v3 bot to a .NET Core v4 bot
-        href: v4sdk/migration/conversion-core.md
-      - name: Using .NET v3 user state in a v4 bot
-        href: v4sdk/migration/csharp-user-state-using.md
-    - name: Migrating JavaScript bots
-      items:
-      - name: Differences between the v3 and v4 JavaScript SDK
-        href: v4sdk/migration/migration-about-javascript.md
-      - name: JavaScript migration quick reference
-        href: v4sdk/migration/javascript-migration-quickreference.md
-      - name: Migrate a JavaScript v3 bot to a v4 bot
-        href: v4sdk/migration/conversion-javascript.md
-      - name: Using JavaScript v3 user state in a v4 bot
-        href: v4sdk/migration/javascript-user-state-using.md
-    - name: Convert a v3 bot to a skill
-      items:
-      - name: Converting to a skill overview
-        href: v4sdk/migration/convert-to-skill-overview.md
-      - name: Convert a .NET v3 bot to a skill
-        href: v4sdk/migration/net-v3-as-skill.md
-      - name: Convert a JavaScript v3 bot to a skill
-        href: v4sdk/migration/javascript-v3-as-skill.md
 - name: Reference
   items:
   - name: v4 SDK reference
@@ -449,9 +418,11 @@
       href: file-format/bot-builder-qna-file-format.md
   - name: Entities and activity types
     href: bot-service-activities-entities.md
+  - name: OAuth URL support
+    href: ref-oauth-redirect-urls.md
   - name: Azure Policy built-ins
     displayName: samples, policies, definitions
-    href: ./policy-reference.md
+    href: policy-reference.md
 - name: Resources
   items:
   - name: Get support
@@ -473,15 +444,15 @@
     - name: Index
       href: bot-service-resources-bot-framework-faq.yml
     - name: Availability
-      href: bot-service-resources-faq-availability.md
+      href: bot-service-resources-faq-availability.yml
     - name: General
-      href: bot-service-resources-faq-general.md
+      href: bot-service-resources-faq-general.yml
     - name: Ecosystem
-      href: bot-service-resources-faq-ecosystem.md
+      href: bot-service-resources-faq-ecosystem.yml
     - name: Security
-      href: bot-service-resources-faq-security.md
+      href: bot-service-resources-faq-security.yml
     - name: Azure
-      href: bot-service-resources-faq-azure.md
+      href: bot-service-resources-faq-azure.yml
   - name: Troubleshoot
     items:
     - name: Index

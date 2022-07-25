@@ -5,50 +5,22 @@ keywords: connect a bot, bot channel, Kik bot, credentials, configure, phone
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: micchow
-ms.topic: how-to
+ms.reviewer: mainguy
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.topic: how-to
+ms.date: 03/22/2022
 ---
 
 # Connect a bot to Kik
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-You can configure your bot to communicate with people using the Kik messaging app.
+>[!NOTE]
+> As of March 2022, the Kik messaging app no longer accepts new bot publishing requests. This means that you can continue to develop existing bots connected to the Kik channel, but Kik will limit how many users can access to your bot.
 
-## Install Kik on your phone
+## Next steps
 
-If you don't have Kik installed on your phone, install it via your phone's app store or at [the Kik website](https://www.kik.com/). You'll need to use an existing Kik user account or sign up for an new account.
-
-![Kik sign up](./media/channels/kik-signup.png)
-
-## Log into the dev portal with your mobile phone
-
-Use your mobile phone to log into the [Kik portal](https://dev.kik.com). When prompted, _Open this page in "Kik"?_ select **Open**.
-
-![Kik dev portal](./media/channels/kik-dev-portal.png)
-
-## Follow the bot setup process
-
-Give your bot a name.
-
-![Set up bot](./media/channels/kik-phone.png)
-
-## Gather credentials
-
-On the Configuration tab, copy the **Name** and **API key**.
-
-![Copy bot information](./media/channels/kik-configure.png)
-
-## Submit credentials
-
-![Paste credentials](./media/channels/kik-creds.png)
-
-Click **Submit Kik Credentials**.
-
-## Enable the bot
-
-Check **Enable this bot on Kik**. Then click **I'm done configuring Kik**.
-
-When you have completed these steps, your bot will be successfully configured to communicate with users in Kik.
+- For information about channel support in the Bot Connector Service, see [Connect a bot to channels](bot-service-manage-channels.md).
+- For information about building bots, see [How bots work](v4sdk/bot-builder-basics.md) and the [Create a bot with the Bot Framework SDK](bot-service-quickstart-create-bot.md) quickstart.
+- For information about deploying bots, see [Tutorial: Provision a bot in Azure](tutorial-provision-a-bot.md) and [Tutorial: Publish a basic bot](tutorial-publish-a-bot.md).
+- For more information about the Bot Framework schemas, see the [Bot Framework activity schema](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md) and the [Bot Framework cards schema](https://github.com/microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-cards.md).

@@ -3,11 +3,12 @@ title: Configure an Azure Bot Service bot to run on one or more channels
 description: A channel connects a communication application to a bot. Learn how to configure a bot to run a channel using the Azure portal, Direct Line, or a custom adapter.
 keywords: bot, channel, Azure portal, Direct Line, custom adapter
 author: JonathanFingold
-manager: kamrani
-ms.author: kamrani
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: mainguy
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 09/30/2021
+ms.date: 03/22/2022
 ms.custom: abs-meta-21q1
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -28,10 +29,8 @@ To configure a bot to connect to a channel, complete the following steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 1. Select the bot that you want to configure.
-1. In the left pane, select **Channels** under **Bot Management**.
-1. In the right pane, select the icon of the channel you want to add to your bot.
-
-    :::image type="content" source="./media/channels/connect-to-channels.png" alt-text="Connect to channels":::
+1. In the left pane, select **Channels** under **Settings**.
+1. In the right pane, select the icon of the channel you want to add to your bot. You may need to scroll down to see the list of all **Available Channels**.
 
 After you've configured the channel, users on that channel can start using your bot.
 
@@ -41,25 +40,25 @@ The connection steps are different for each channel. See the related article in 
 
 |Channel|Description|
 |:-|:-|
-|[Alexa](bot-service-channel-connect-alexa.md) <img width="150px"/>|Communicate with users through Alexa devices that support Custom Skills.|
+|[Alexa](bot-service-channel-connect-alexa.md) <img width="150px"/>|Communicate with users via Alexa custom skills.|
 |[Direct Line](bot-service-channel-directline.md)| Integrate a bot into a mobile app, web page, or other applications.|
+|[Email](bot-service-channel-connect-email.md)|Enable a bot to communicate with users via Microsoft 365 email.|
 |[Facebook](bot-service-channel-connect-facebook.md)|Connect a bot to both Facebook Messenger and Facebook Workplace, so that it can communicate with users on both platforms.|
-|[Kik](bot-service-channel-connect-groupMe.md)|Configure a bot to communicate with users through the Kik messaging app.|
+|[GroupMe](bot-service-channel-connect-groupMe.md)|Configure a bot to communicate with users through GroupMe.|
+|Kik|Kik no longer supports new bot development.|
 |[LINE](bot-service-channel-connect-line.md)|Configure a bot to communicate with users through the LINE app.|
 |[Microsoft Teams](channel-connect-teams.md)|Configure a bot to communicate with users through Microsoft Teams.|
-|[Office 365 email](bot-service-channel-connect-email.md)|Enable a bot to communicate with users via Office 365 email.|
 |[Omnichannel](bot-service-channel-omnichannel.md)|Integrate a bot to start a conversation with a customer, provide automated responses, and then shift the conversation to a human agent if required.|
-|[Search](bot-service-channel-connect-search.md)|Enable a bot to answer user queries via Dynamics 365 federated search.|
-|[Skype](bot-service-channel-connect-skype.md)|Configure a bot to communicate with users through Skype.|
-|[Skype for Business](bot-service-channel-connect-skypeforbusiness.md)|Configure a bot to communicate with users through Skype for Business.|
+|[Outlook (preview)](bot-service-channel-connect-actionable-email.md)|Configure a bot to communicate with users via quick actions from within Outlook. |
+|[Search (preview)](bot-service-channel-connect-search.md)|Enable a bot to answer user queries via Dynamics 365 federated search.|
+|Skype|Skype no longer supports new bot development.|
 |[Slack](bot-service-channel-connect-slack.md)|Configure a bot to communicate with users through Slack.|
 |[Telegram](bot-service-channel-connect-telegram.md)|Configure a bot to communicate with users through Telegram.|
 |[Telephony](bot-service-channel-connect-telephony.md)|Configure a bot to communicate with users through the Bot Framework Telephony channel.|
 |[Twilio](bot-service-channel-connect-twilio.md)|Configure a bot to communicate with users through the Twilio cloud communication platform.|
 |[WeChat](bot-service-channel-connect-wechat.md)|Configure a bot to communicate with users using the WeChat platform.|
 |[Web Chat](bot-service-channel-connect-webchat.md)| Automatically configured for you when you create a bot with the Bot Framework Service.|
-|[Webex](bot-service-adapter-connect-webex.md)|Configure a bot to communicate with users using the Webex.|
-|[Additional channels](bot-service-channel-additional-channels.md)|Additional channels available as an adapter through [provided platforms](https://botkit.ai/docs/v4/platforms/) via Botkit and [community repositories](https://botkit.ai/docs/v4/platforms/).|
+|[Additional channels](bot-service-channel-additional-channels.md)|Additional channels available as an adapter through [Botkit provided platforms](https://github.com/howdyai/botkit/blob/main/packages/docs/platforms/index.md) and [community repositories](https://github.com/BotBuilderCommunity/).|
 
 ## Select the protocol schema transformation version
 
@@ -69,7 +68,7 @@ Occasionally, a change in the schema transformation process needs to take place 
 
 By controlling the _schema transformation version_ of their bots, bot developers can control when (if ever) to enable new behavior. By default, newly created bots get the most recent schema transformation version. Existing bots can be upgraded to the newest version when they're ready to take advantage of the improvements introduced in this version. Any bot can be upgraded or downgraded at any time.
 
-You can change your bot's schema transformation version in the **Configuration** pane:
+You can change your bot's schema transformation version in the **Configuration** pane under **Settings**:
 
 :::image type="content" source="./media/channels/schema-transform-version.png" alt-text="The Schema Transformation Version field in the Configuration pane":::
 

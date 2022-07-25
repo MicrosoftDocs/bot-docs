@@ -1,36 +1,37 @@
 ---
 title: Azure Bot Service encryption for data at rest in Bot Framework SDK
 description: Azure Bot Service protects your data by automatically encrypting it before persisting it to the cloud with Microsoft provided encryption keys.
-ms.service: bot-service
-ms.date: 10/11/2021
-ms.topic: conceptual
 author: JonathanFingold
-ms.author: jameslew
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: jameslew
+ms.service: bot-service
+ms.topic: conceptual
+ms.date: 06/06/2022
 ---
 
 # Azure Bot Service encryption for data at rest
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-Azure Bot Service automatically encrypts your data when it is persisted to the cloud to protect the data and to meet organizational security and compliance commitments.
+Azure Bot Service automatically encrypts your data when it's persisted to the cloud to protect the data and to meet organizational security and compliance commitments.
 
 Encryption and decryption are transparent, meaning encryption and access are managed for you. Your data is secure by default and you don't need to modify your code or applications to take advantage of encryption.
 
 ## About encryption key management
 
-By default, your subscription uses Microsoft-managed encryption keys. You also have the option to manage your bot resource with your own keys called customer-managed keys. Customer-managed keys offer greater flexibility to create, rotate, disable, and revoke access controls to the data Azure Bot Service stores. You can also audit the encryption keys used to protect your data.
+By default, your subscription uses Microsoft-managed encryption keys. You can manage your bot resource with your own keys called customer-managed keys. Customer-managed keys offer greater flexibility to create, rotate, disable, and revoke access controls to the data Azure Bot Service stores. You can also audit the encryption keys used to protect your data.
 
 When encrypting data, Azure Bot Service encrypts with two levels of encryption. In the case where customer-managed keys aren't enabled, both keys used are Microsoft-managed keys. When customer-managed keys are enabled, the data is encrypted with both the customer-managed key and a Microsoft-managed key.
 
-
 ## Customer-managed keys with Azure Key Vault
 
-To utilize the customer-managed keys feature, you must store and manage keys in **Azure Key Vault**. You can either create your own keys and store them in a key vault, or you can use the Azure Key Vault APIs to generate keys. Your bot registration and the key vault must be in the same Azure Active Directory (Azure AD) tenant, but they can be in different subscriptions. For more information about Azure Key Vault, see [What is Azure Key Vault?](/azure/key-vault/key-vault-overview).
+To utilize the customer-managed keys feature, you must store and manage keys in **Azure Key Vault**. You can either create your own keys and store them in a key vault, or you can use the Azure Key Vault APIs to generate keys. Your Azure Bot resource and the key vault must be in the same Azure Active Directory (Azure AD) tenant, but they can be in different subscriptions. For more information about Azure Key Vault, see [What is Azure Key Vault?](/azure/key-vault/key-vault-overview).
 
-When using a customer-managed key, Azure Bot Service encrypts your data in its storage, such that if access to that key is revoked or the key is deleted, your bot won't be able to use Azure Bot Service to send or receive messages, and you won't be able to access or edit the configuration of your Bot registration in the Azure portal.
+When using a customer-managed key, Azure Bot Service encrypts your data in its storage. If access to that key is revoked or the key is deleted, your bot won't be able to use Azure Bot Service to send or receive messages, and you won't be able to access or edit the configuration of your bot in the Azure portal.
 
-When you create an Azure Bot resource via the portal, Azure generates an _app ID_ and a _password_ and stores the password in the Azure Key Vault. For more information, see [Add authentication to a bot](v4sdk/bot-builder-authentication.md#azure-key-vault). 
-For an approach using CLI, see [Configure the web app to connect to Key Vault](/azure/key-vault/general/tutorial-net-create-vault-azure-web-app#configure-the-web-app-to-connect-to-key-vault). Finally, for an example on how to store and retrieve secrets, see [Quickstart: Azure Key Vault secret client library for .NET (SDK v4)](/azure/key-vault/secrets/quick-create-net). 
+When you create an Azure Bot resource via the portal, Azure generates an _app ID_ and a _password_, but doesn't store them in Azure Key Vault.
+You can use Key Vault with Azure Bot Service. For information, see [Configure the web app to connect to Key Vault](/azure/key-vault/general/tutorial-net-create-vault-azure-web-app#configure-the-web-app-to-connect-to-key-vault). For an example on how to store and retrieve secrets with Key Vault, see [Quickstart: Azure Key Vault secret client library for .NET (SDK v4)](/azure/key-vault/secrets/quick-create-net).
 
 > [!IMPORTANT]
 > The Azure Bot Service team cannot recover a customer-managed encryption key bot without access to the key.
@@ -39,7 +40,7 @@ For an approach using CLI, see [Configure the web app to connect to Key Vault](/
 
 Azure Bot Service stores customer data about the bot, the channels it uses, configuration settings the developer sets, and where necessary, a record of currently active conversations. It also transiently, for less than 24 hours, stores the messages sent over the Direct Line or Web Chat channels and any attachments uploaded.
 
-All customer data is encrypted with two layers of encryption in Azure Bot Service; either with Microsoft managed encryption keys, or Microsoft and customer-managed encryption keys. Azure Bot Service encrypts transiently-stored data using the Microsoft-managed encryption keys, and, depending on the configuration of the bot registration, encrypts longer-term data using either the Microsoft or customer-managed encryption keys.
+All customer data is encrypted with two layers of encryption in Azure Bot Service; either with Microsoft managed encryption keys, or Microsoft and customer-managed encryption keys. Azure Bot Service encrypts transiently stored data using the Microsoft-managed encryption keys, and, depending on the configuration of the Azure Bot resource, encrypts longer-term data using either the Microsoft or customer-managed encryption keys.
 
 > [!NOTE]
 > As Azure Bot Service exists to provide customers the ability to deliver messages to and from users on other services outside Azure Bot Service, encryption doesn't extend to those services. This means that while under Azure Bot Service control, data will be stored encrypted as per the guidance in this article; however, when leaving the service to deliver to another service, the data is decrypted and then sent using TLS 1.2 encryption to the target service.
@@ -54,7 +55,7 @@ If you're using an existing Azure Key Vault instance, you can verify that these 
 
 ### Grant Azure Bot Service access to a key vault
 
-For Azure Bot Service to have access to the key vault you created for this purpose, an access policy needs to be set which gives Azure Bot Service's service principal the current set of permissions. For more information about Azure Key Vault, including how to create a key vault, see [About Azure Key Vault](/azure/key-vault/general/overview).
+For Azure Bot Service to have access to the key vault you created for this purpose, an access policy needs to be set, which gives Azure Bot Service's service principal the current set of permissions. For more information about Azure Key Vault, including how to create a key vault, see [About Azure Key Vault](/azure/key-vault/general/overview).
 
 1. Register the Azure Bot Service resource provider on your subscription containing the key vault.
     1. Go to the [Azure portal](https://ms.portal.azure.com).
@@ -80,23 +81,22 @@ For Azure Bot Service to have access to the key vault you created for this purpo
 
 ### Enable customer-managed keys
 
-To encrypt your Bot Registration with a customer-managed encryption key, follow these steps:
+To encrypt your bot with a customer-managed encryption key, follow these steps:
 
-1. Open the resource blade for your bot.
+1. Open the Azure Bot resource blade for your bot.
 1. Open the **Encryption** blade of your bot and select **Customer-Managed Keys** for the **Encryption type**.
 1. Either input your key's complete URI, including version, or click **Select a key vault and a key** to find your key.
 1. Click **Save** at the top of the blade.
 
     :::image type="content" source="media/key-vault/customer-managed-encryption.png" alt-text="Bot resource using customer-managed encryption":::
 
-Once these steps are completed, Azure Bot Service will start the encryption process. This can take some time to complete (up to 24 hours). Your bot will be completely functional during this time period.
+Once these steps are completed, Azure Bot Service will start the encryption process, which can take up to 24 hours to complete. Your bot remains functional during this time period.
 
 ### Rotate customer-managed keys
 
 To rotate a customer-managed encryption key, you must update the Azure Bot Service resource to use the new URI for the new key (or new version of the existing key).
 
 Because re-encryption with the new key occurs asynchronously, ensure the old key remains available so that data can continue to be decrypted; otherwise, your bot could stop working. You should retain the old key for at least one week.
-
 
 ### Revoke access to customer-managed keys
 

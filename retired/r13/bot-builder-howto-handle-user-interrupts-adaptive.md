@@ -152,7 +152,7 @@ Add the following values to **appsettings.json**:
 
 Add the following values to your **.env** file:
 
-``` JavaScript
+```ini
 getUserProfileDialog_en_us_lu=
 rootDialog_en_us_lu=
 LuisAPIHostName=

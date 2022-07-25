@@ -2,11 +2,12 @@
 title: Adaptive dialog events and triggers in Bot Framework SDK
 description: Describes the adaptive dialog prebuilt triggers. Triggers handle dialog specific events that are related to the lifecycle of the dialog.
 keywords: bot, triggers, adaptive dialogs
-author: kamrani
-ms.author: kamrani
-manager: kamrani
-ms.topic: reference
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
+ms.topic: reference
 ms.date: 09/27/2021
 monikerRange: 'azure-bot-service-4.0'
 ---

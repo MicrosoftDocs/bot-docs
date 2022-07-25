@@ -5,9 +5,9 @@ keywords: skills
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: micchow
-ms.topic: how-to
+ms.reviewer: Gabo.Gilabert
 ms.service: bot-service
+ms.topic: how-to
 ms.date: 11/17/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -66,7 +66,7 @@ For information about the dialog skill bot, see how to [use dialogs within a ski
 ## Resources
 
 For deployed bots, bot-to-bot authentication requires that each participating bot has a valid identity.
-However, you can test skills and skill consumers locally with the Emulator without identity information.
+However, you can test skills and skill consumers locally with the Bot Framework Emulator without identity information.
 
 ## Application configuration
 
@@ -94,7 +94,7 @@ Optionally, add the root bot's identity information and add the app or client ID
 
 Optionally, add the root bot's identity information and add the app or client ID for the echo skill bot.
 
-[!code-javascript[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/.env?highlight=1-4,8)]
+[!code-ini[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogRootBot/.env?highlight=1-4,8)]
 
 ### [Java](#tab/java)
 
@@ -102,7 +102,7 @@ Optionally, add the root bot's identity information and add the app or client ID
 
 Optionally, add the root bot's app ID and password and add the app ID for the echo skill bot to the `BotFrameworkSkills` array.
 
-[!code-json[configuration file](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/resources/application.properties?highlight=1-2,7)]
+[!code-ini[configuration file](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/resources/application.properties?highlight=1-2,7)]
 
 ### [Python](#tab/python)
 

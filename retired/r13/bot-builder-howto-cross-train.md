@@ -339,7 +339,6 @@ The configuration file is named **appsettings.json**. The following shows the co
 ```json
 {
     // The first two values are used to connect to your bot channel in Azure.
-    // See the "Bot channels registration" section below for more information.
     "MicrosoftAppId": "",
     "MicrosoftAppPassword": "",
     // The next two values are used to connect to your Azure cognitive services LUIS
@@ -392,7 +391,7 @@ This section explains the **appsettings.json** file for the Todo bot with LUIS a
 
 <!--![The appsettings.json file](./media/appsettings.json.png)-->
 
-#### Bot channels registration
+#### Azure bot resource
 
 See the [Bot channels registration][bot-channels-registration] article for details how to get the `MicrosoftAppId` and `MicrosoftAppPassword` values if needed, however, these values are not required to complete this article.
 
@@ -638,7 +637,7 @@ You can now interact with your bot.
 [create-your-luis-authoring-resource-in-azure]: bot-builder-howto-bf-cli-deploy-luis.md#create-your-luis-authoring-resource-in-azure
 [create-your-qna-maker-resource-in-azure-cognitive-services]: bot-builder-howto-bf-cli-deploy-qna.md#create-your-qna-maker-resource-in-azure-cognitive-services
 
-[bot-channels-registration]: ../bot-service-quickstart-registration.md
+[bot-channels-registration]: bot-service-quickstart-registration.md
 
 [cross-trained-recognizer-set-concept]: bot-builder-concept-adaptive-dialog-recognizers.md#cross-trained-recognizer-set
 

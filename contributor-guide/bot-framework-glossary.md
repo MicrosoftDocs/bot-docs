@@ -97,7 +97,7 @@ For many terms that start with the word Microsoft or Azure, like Microsoft Azure
 
 <a id="a"></a>
 
-## ABS
+## ~ABS~
 
 Don't use. See [Azure Bot Service](#azure-bot-service).
 
@@ -235,10 +235,8 @@ See notes for [Azure Resource Manager](#azure-resource-manager).
   - the Bot Service
   - the service
 - **Definition**: Provides an integrated environment for bot development.
-- **Notes**:
-  - Don't use ABS as an acronym.
-  - Even though the public-facing site for the service is titled "Azure Bot Services" (plural), the Cloud style guide has no such entry.
-- **See**: The [Azure Bot Services](https://azure.microsoft.com/services/bot-services/) site.
+- **Notes**: Don't use ABS as an acronym.
+- **See**: The [Azure Bot Service](https://azure.microsoft.com/services/bot-services/) marketing site.
 - **See also**: [Microsoft Bot Framework](#microsoft-bot-framework), [bot service](#bot-service).
 
 <a id="resource-manager"></a>

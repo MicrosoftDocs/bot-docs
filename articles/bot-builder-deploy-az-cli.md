@@ -1,87 +1,82 @@
 ---
-title: Deploy your bot - Azure Bot Service
+title: Publish your bot to Azure
 description: Learn how to deploy bots to the Azure cloud. See how to prepare bots for deployment, deploy the code to the Azure Web App, and test bots in Web Chat.
-keywords: deploy bot, Azure deploy bot, publish bot
+keywords: deploy bot, Azure deploy bot, provision bot, publish bot
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/19/2021
-ms.custom: abs-meta-21q1
+ms.date: 03/03/2022
+ms.custom: abs-meta-21q1, devx-track-azurecli
 monikerRange: 'azure-bot-service-4.0'
+ms.devlang: azurecli
 ---
 
-# Deploy your bot in Azure
+# Publish your bot to Azure
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-This article demonstrates how to deploy a basic bot to Azure. It explains how to prepare your bot for deployment, deploy your bot to Azure, and test your bot in Web Chat. Read through this article before following the steps, so that you fully understand what is involved in deploying a bot.
-
-> [!IMPORTANT]
-> Use the latest version of the [Azure CLI](/cli/azure/). If you are using an Azure CLI version older than [2.2.0](https://github.com/MicrosoftDocs/azure-docs-cli/blob/master/docs-ref-conceptual/release-notes-azure-cli.md#march-10-2020), you might encounter errors. Also, don't mix the Azure CLI deployment shown in this article with Azure portal deployment.
-
-## Prerequisites
-
-[!INCLUDE [deploy prerequisite](includes/deploy/snippet-prerequisite.md)]
-
-## Prepare for deployment
+This article demonstrates how to deploy a basic bot to Azure. It explains how to create resources for your bot, prepare your bot for deployment, deploy your bot to Azure, and test your bot in Web Chat.
 
 This article assumes that you have a bot ready to be deployed. For information on how to create a simple echo bot, see [Create a bot with the Bot Framework SDK](bot-service-quickstart-create-bot.md). You can also use one of the samples provided in the [Bot Framework Samples](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md) repository.
 
-[!INCLUDE [deploy prepare intro](includes/deploy/snippet-prepare-deploy-intro.md)]
+## Prerequisites
 
-### Sign in to Azure
+[!INCLUDE [Azure CLI prerequisites](./includes/az-cli/prereqs.md)]
 
-[!INCLUDE [deploy az log in](includes/deploy/snippet-az-login.md)]
+Starting with Bot Framework SDK 4.14.1.2, when you create a bot from a VSIX or Yeoman template, the resulting project contains ARM templates.
+The samples and any new bots created from a Bot Framework template contain a _deployment templates_ directory that contains the ARM templates.
+You'll use the ARM templates to provision many of your bot resources.
 
-### Set the subscription
+For Java bots, install [Maven](https://maven.apache.org/).
 
-[!INCLUDE [deploy az subscription](includes/deploy/snippet-az-set-subscription.md)]
+## Sign in to Azure and select a subscription
+
+[!INCLUDE [Sign into Azure and select a subscription](./includes/az-cli/sign-in-select-subscription.md)]
 
 <a id="create-app-registration"></a>
 
-### Create an app registration
+## Create an identity resource
 
-[!INCLUDE [deploy create app registration](includes/deploy/snippet-create-app-registration.md)]
+[!INCLUDE [Create a user-assigned managed identity or an Azure AD app registration](./includes/az-cli/create-identity-resource.md)]
 
-### Deploy using an ARM template
+## Create resources with an ARM template
 
-When creating the bot application service, you can deploy your bot in a new or in an existing resource group, both via the [Azure Resource Manager (ARM) template](/azure/azure-resource-manager/templates/overview). An ARM template is a JSON file that declaratively defines one or more Azure resources and that defines dependencies between the deployed resources. Make sure that you have the correct path to your bot project ARM deployment templates directory `DeploymentTemplates`, you need it to assign the value to the template file. Choose the option that works best for you:
+You'll use an Azure Resource Manager (ARM) template to create an app service and Azure Bot resource.
 
-* [Deploy via ARM template with new resource group](#deploy-via-arm-template-with-new-resource-group)
-* [Deploy via ARM template with existing resource group](#deploy-via-arm-template-with-existing-resource-group)
+Your bot project's _deployment templates_ directory contains two ARM templates.
 
-> [!IMPORTANT]
-> Python and Java bots cannot be deployed to a resource group that contains Windows services/bots. Multiple Python bots can be deployed to the same resource group, but you need to create other services (LUIS, QnA, etc.) in another resource group.
+- One creates resources in a _new_ resource group, with a new app service plan.
+- One creates resources in an _existing_ resource group, with a new or existing app service plan.
 
-### Deploy via ARM template with new resource group
+Choose the option that works best for you.
+This step can take a few minutes to complete.
 
-[!INCLUDE [ARM with new resource group](includes/deploy/snippet-ARM-new-resource-group.md)]
+[!INCLUDE [bot-resource-type-tip](includes/bot-resource-type-tip.md)]
 
-### Deploy via ARM template with existing resource group
+### [New resource group](#tab/newgroup)
 
-[!INCLUDE [ARM with existing resource group](includes/deploy/snippet-ARM-existing-resource-group.md)]
+[!INCLUDE [ARM with new resource group](./includes/az-cli/arm-provision-to-new-rg.md)]
 
-## Prepare your code for deployment
+### [Existing resource group](#tab/existinggroup)
 
-[!INCLUDE [azure-bot-appid-password](includes/authentication/azure-bot-appid-password.md)]
+[!INCLUDE [ARM with existing resource group](./includes/az-cli/arm-provision-to-existing-rg.md)]
 
->[!IMPORTANT]
-> After you have updated the configuration file, make sure to clean and rebuild the bot project.
+---
 
-### Retrieve or create necessary IIS/Kudu files
+## Update project configuration settings
 
-[!INCLUDE [prepare project](includes/deploy/snippet-IIS-Kudu-files.md)]
+[!INCLUDE [app ID and password](./includes/authentication/azure-bot-appid-password.md)]
 
-### Zip up the code directory manually
+## Prepare your project files
 
-[!INCLUDE [package project](includes/deploy/snippet-zip-code.md)]
+[!INCLUDE [retrieve or create IIS/Kudu files](./includes/az-cli/prepare-for-deployment.md)]
 
-## Deploy the bot to Azure
+## Publish your bot
 
-[!INCLUDE [deploy code to Azure](includes/deploy/snippet-deploy-code-to-az.md)]
+[!INCLUDE [deploy code to Azure](./includes/az-cli/deploy-to-azure.md)]
 
 ## Test in Web Chat
 
@@ -89,8 +84,30 @@ When creating the bot application service, you can deploy your bot in a new or i
 
 ## Additional information
 
-Deploying your bot to Azure will involve paying for the services you use. The [billing and cost management](/azure/billing/) article helps you understand Azure billing, monitor usage and costs, and manage your account and subscriptions.
-See also [Azure Command-Line Interface (CLI) documentation](/cli/azure/) and [Azure CLI release notes](/cli/azure/release-notes-azure-cli).
+### Resource locations
+
+Some of the commands require a location or region parameter.
+
+- Use `az account list-locations` to list supported regions for the current subscription.
+- Use `az config set defaults.location=<location>` to set the default location to use for all `az` commands.
+
+To create bots with data residency in Europe or the US, use "westeurope" or "westus2", respectively, for the location for the resource group and all bot resources.
+For more information about data residency, see [Answering Europe's Call: Storing and Processing EU Data in the EU](https://blogs.microsoft.com/eupolicy/2021/05/06/eu-data-boundary/).
+
+### Azure documentation
+
+[!INCLUDE [Azure documentation for bot hosting](./includes/azure-docs/apps-and-resources.md)]
+
+## Clean up resources
+
+If you're not going to continue to use this application, delete the associated resources with the following steps:
+
+1. In the Azure portal, open the resource group for your bot.
+    1. Select **Delete resource group** to delete the group and all the resources it contains.
+    1. Enter the _resource group name_ in the confirmation pane, then select **Delete**.
+1. If you created a single-tenant or multi-tenant app:
+    1. Go to the Azure Active Directory blade.
+    1. Locate the app registration you used for your bot, and delete it.
 
 ## Next steps
 

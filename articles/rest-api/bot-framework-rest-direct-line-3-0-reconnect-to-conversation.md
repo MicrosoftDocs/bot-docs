@@ -1,11 +1,12 @@
 ---
 title: Reconnect to a conversation in Bot Framework SDK
 description: Learn how to reconnect to a conversation after losing contact. See how to use Direct Line API version 3.0 to generate new WebSocket stream URLs.
-author: kamrani
-ms.author: kamrani
-manager: kamrani
-ms.topic: reference
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
+ms.topic: reference
 ms.date: 10/04/2021
 ---
 
@@ -15,7 +16,7 @@ If a client is using the [WebSocket interface](bot-framework-rest-direct-line-3-
 
 ## Generate a new WebSocket stream URL
 
-To generate a new WebSocket stream URL that can be used to reconnect to an existing conversation, issue this request: 
+To generate a new WebSocket stream URL that can be used to reconnect to an existing conversation, issue this request:
 
 ```http
 GET https://directline.botframework.com/v3/directline/conversations/{conversationId}?watermark={watermark_value}
@@ -54,7 +55,7 @@ HTTP/1.1 200 OK
 
 The client must use the new WebSocket stream URL to [reconnect to the conversation](bot-framework-rest-direct-line-3-0-receive-activities.md#connect-via-websocket) within 60 seconds. If the connection cannot be established during this time, the client must issue another Reconnect request to generate a new stream URL.
 
-If you have "Enhanced authentication option" enabled in the Direct Line settings, you might get a 400 "MissingProperty" error if you don't have a correctly configured token attached to the request. 
+If you have "Enhanced authentication option" enabled in the Direct Line settings, you might get a 400 "MissingProperty" error if you don't have a correctly configured token attached to the request.
 
 ## Additional resources
 

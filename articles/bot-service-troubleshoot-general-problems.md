@@ -1,11 +1,12 @@
 ---
 title: Troubleshooting Azure Bot Service bots
 description: These frequently asked questions can help you to troubleshoot common bot development or operational issues for bots built with Azure Bot Service.
-author: DeniseMak
-ms.author: kamrani
-manager: kamrani
-ms.topic: troubleshooting
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
+ms.topic: troubleshooting
 ms.date: 02/20/2020
 ms.custom: abs-meta-21q1
 ---
@@ -19,7 +20,7 @@ These frequently asked questions can help you to troubleshoot common bot develop
 ## How can I troubleshoot issues with my bot?
 
 1. Debug your bot's source code with [Visual Studio Code](debug-bots-locally-vscode.md) or [Visual Studio](/visualstudio/debugger/navigating-through-code-with-the-debugger).
-1. Test your bot using the [Emulator](bot-service-debug-emulator.md) before you deploy it to the cloud.
+1. Test your bot using the [Bot Framework Emulator](bot-service-debug-emulator.md) before you deploy it to the cloud.
 1. Deploy your bot to a cloud hosting platform such as Azure and then test connectivity to your bot by using the built-in web chat control on your bot's dashboard in the [Azure portal](https://portal.azure.com). If you encounter issues with your bot after you deploy it to Azure, you might consider using this blog article: [Understanding Azure troubleshooting and support](https://azure.microsoft.com/blog/understanding-azure-troubleshooting-and-support/).
 1. Rule out [authentication][TroubleshootingAuth] as a possible issue.
 1. Test your bot on Web Chat, Teams, or any other channel you intend to use with your bot. This will help you to validate the end-to-end user experience.
@@ -160,6 +161,7 @@ If your Direct Line conversation appears to start over after every message, the 
 To fix this, set the `from` property in each message that the Direct Line client sends to a stable value that uniquely represents the user who is sending the message. For example, if a user is already signed-in to a webpage or app, you might use that existing user ID as the value of the `from` property in messages that the user sends. Alternatively, you might choose to generate a random user ID on page-load or on application-load, store that ID in a cookie or device state, and use that ID as the value of the `from` property in messages that the user sends.
 
 ## What causes the Direct Line 3.0 service to respond with HTTP status code 502 "Bad Gateway"?
+
 Direct Line 3.0 returns HTTP status code 502 when it tries to contact your bot but the request does not complete successfully. This error indicates that either the bot returned an error or the request timed out. For more information about errors that your bot generates, go to the bot's dashboard within the [Azure portal](https://portal.azure.com) and click the "Issues" link for the affected channel. If you have Application Insights configured for your bot, you can also find detailed error information there.
 
 ## Why do I get an Authorization_RequestDenied exception when creating a bot?
@@ -202,5 +204,5 @@ If your bot is registered in dev.botframework.com, and you want to migrate it to
 
 [LUISPreBuiltEntities]: /azure/cognitive-services/luis/pre-builtentities
 [BotFrameworkIDGuide]: bot-service-resources-identifiers-guide.md
-[StateAPI]: ~/rest-api/bot-framework-rest-state.md
+[StateAPI]: rest-api/bot-framework-rest-state.md
 [TroubleshootingAuth]: bot-service-troubleshoot-authentication-problems.md

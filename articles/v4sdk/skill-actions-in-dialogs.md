@@ -5,9 +5,9 @@ keywords: skills
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: micchow
-ms.topic: how-to
+ms.reviewer: Gabo.Gilabert
 ms.service: bot-service
+ms.topic: how-to
 ms.date: 11/17/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -60,7 +60,7 @@ For information about the skill consumer bot, see how to [consume a skill using 
 ## Resources
 
 For deployed bots, bot-to-bot authentication requires that each participating bot has a valid identity.
-However, you can test skills and skill consumers locally with the Emulator without identity information.
+However, you can test skills and skill consumers locally with the Bot Framework Emulator without identity information.
 
 To make the skill available to user-facing bots, register the skill with Azure. For more information, see how to [register a bot with Azure Bot Service](../bot-service-quickstart-registration.md).
 
@@ -83,13 +83,13 @@ Optionally, the skill bot can use a flight-booking LUIS model. To use this model
 
 **dialogSkillBot/.env**
 
-[!code-javascript[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogSkillBot/.env)]
+[!code-ini[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogSkillBot/.env)]
 
 ### [Java](#tab/java)
 
 **application.properties**
 
-[!code-json[configuration file](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-skill-bot/src/main/resources/application.properties?highlight=1-2)]
+[!code-ini[configuration file](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-skill-bot/src/main/resources/application.properties?highlight=1-2)]
 
 ### [Python](#tab/python)
 

@@ -1,17 +1,18 @@
 ### YamlMime:Landing
 
-title: Bot Framework SDK documentation # < 60 chars
-summary: The Bot Framework SDK allows you to create and develop bots for the Azure Bot Service. # < 160 chars
+title: Bot Framework SDK documentation
+summary: The Bot Framework SDK allows you to create and develop bots for the Azure Bot Service.
 
 metadata:
-  title: Bot Framework SDK documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: The Bot Framework SDK allows you to create and develop bots for the Azure Bot Service. # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: bot-service #Required; service per approved list. service slug assigned to your service by ACOM.
-  ms.topic: landing-page # Required
-  author: JonathanFingold #Required; your GitHub user alias, with correct capitalization.
-  ms.author: kamrani #Required; microsoft alias of author; optional team alias.
-  manager: kamrani
-  ms.date: 07/22/2020 #Required; mm/dd/yyyy format.
+  title: Bot Framework SDK documentation
+  description: The Bot Framework SDK allows you to create and develop bots for the Azure Bot Service.
+  ms.service: bot-service
+  ms.topic: landing-page
+  author: JonathanFingold
+  ms.author: iawilt
+  manager: shellyha
+  ms.reviewer: micchow
+  ms.date: 07/22/2020
   ms.custom: abs-meta-21q1
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new

@@ -1,13 +1,13 @@
 ### YamlMime:FAQ
 
 metadata:
-  title: Bot Framework Azure Frequently Asked Questions  # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: "Answers to common Azure frequent asked questions." # Required; article description that is displayed in search results. < 160 chars.
+  title: Bot Framework Azure Frequently Asked Questions
+  description: "Answers to common Azure frequently asked questions."
   author: JonathanFingold
   ms.author: iawilt
   manager: shellyha
   ms.reviewer: micchow
-  ms.topic: troubleshooting
+  ms.topic: faq
   ms.service: bot-service
   ms.date: 11/01/2021
 
@@ -41,8 +41,6 @@ sections:
               > ![new registration](media/app-registration/new-registration.png)
 
           1. Enter a display name for the application registration in the *Name* field and select the supported account types.
-
-              [!INCLUDE [select account type](includes/authentication/auth-account-types.md)]
           
               > [!div class="mx-imgBorder"]
               > ![registration details](media/app-registration/registration-details.png)

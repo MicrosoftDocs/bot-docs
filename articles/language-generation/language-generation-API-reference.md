@@ -1,13 +1,13 @@
 ---
-title: API reference for Language Generation  - Bot Service
+title: API reference for Language Generation - Bot Service
 description: API reference for Language Generation library
 keywords: language generation api, reference, language generation
-author: emgrol
+author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
-ms.topic: reference
 ms.service: bot-service
+ms.topic: reference
 ms.date: 11/01/2021
 monikerRange: 'azure-bot-service-4.0'
 ---

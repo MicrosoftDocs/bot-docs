@@ -44,7 +44,7 @@ The source code shown here is based on the [Suggested actions](https://github.co
 
 The source code shown here is based on the [Suggested actions](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/08.suggested-actions) sample.
 
-[!code-python[suggested actions](~/../botbuilder-samples/samples/python/08.suggested-actions/bots/suggested_actions_bot.py?range=63-81)]
+[!code-python[suggested actions](~/../botbuilder-samples/samples/python/08.suggested-actions/bots/suggested_actions_bot.py?range=63-99)]
 
 ---
 

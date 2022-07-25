@@ -1,11 +1,12 @@
 ---
 title: Add media attachments to messages in Bot Framework SDK
 description: Learn how to add media attachments to messages using the Bot Connector service. 
-author: kamrani
-ms.author: kamrani
-manager: kamrani
-ms.topic: reference
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
+ms.topic: reference
 ms.date: 09/29/2021
 ---
 
@@ -85,9 +86,9 @@ For channels that support inline binaries of an image, you can set the `contentU
 
 You can attach a video file or audio file to a message by using the same process as described above for an image file. Depending on the channel, the video and audio may be played inline or it may be displayed as a link.
 
-> [!NOTE] 
+> [!NOTE]
 > Your bot may also receive messages that contain media attachments.
-> For example, a message that your bot receives may contain an attachment 
+> For example, a message that your bot receives may contain an attachment
 > if the channel enables the user to upload a photo to be analyzed or a document to be stored.
 
 ## Add an AudioCard attachment

@@ -2,10 +2,11 @@
 title: Connect a bot to Telephony in Bot Framework SDK (Preview)
 description: Learn how to add support to your bot for the Telephony channel, a speech-enabled channel.
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
-ms.topic: how-to
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: mainguy
 ms.service: bot-service
+ms.topic: how-to
 ms.date: 09/28/2021
 ---
 

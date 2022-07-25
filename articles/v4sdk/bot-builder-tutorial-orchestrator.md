@@ -95,6 +95,7 @@ For more information, see how to **Create a LUIS app in the LUIS portal** and **
 
 The CLI interface for the bf orchestrator tool creates the Orchestrator snapshot file for routing to the correct LUIS or QnA Maker app at run time.
 
+1. Install the latest supported version of the [Visual C++ redistributable package](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)
 1. Open a command prompt or terminal window, and change directories to the sample directory
 1. Make sure you have the current version of npm and the bf cli tool.
 
@@ -166,11 +167,11 @@ npm install
 Once all of your service apps are created, the information for each needs to be added into your '.env' file. The initial [JavaScript Sample][js-sample] code contains an empty .env file.
 
 **.env**
-[!code-file[EmptyEnv](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-orchestrator/.env)]
+[!code-ini[Empty .env file](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-orchestrator/.env)]
 
 Add your service connection values as shown below:
 
-```text
+```ini
 QnAKnowledgebaseId="<knowledge-base-id>"
 QnAEndpointKey="<qna-maker-resource-key>"
 QnAEndpointHostName="<your-hostname>"

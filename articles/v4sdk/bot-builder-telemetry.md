@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/08/2021
+ms.date: 01/14/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -25,8 +25,8 @@ This article describes how to implement telemetry in your bot using Application 
 * How to enable telemetry to capture usage data from other services, like [LUIS](bot-builder-howto-v4-luis.md) and [QnA Maker](bot-builder-howto-qna.md).
 * How to visualize your telemetry data in Application Insights.
 
-> [!NOTE]
-> You may want to look at the related Composer article [Capture your bot's telemetry](/composer/how-to-capture-telemetry).
+> [!IMPORTANT]
+> For a regional bot that might collect personally identifiable information (PII) in telemetry, your Application Insights resource and your Azure Bot resource should be in the same region with the bot. If the resources are in different regions, the PII might leave the geographic region of the bot.
 
 ## Prerequisites
 
@@ -159,7 +159,7 @@ This article starts from the [CoreBot sample app](https://github.com/Microsoft/B
     > [!NOTE]
     > Details on getting the _Application Insights instrumentation key_ can be found in the article [Application Insights keys](../bot-service-resources-app-insights-keys.md).
 
-At this point, the preliminary work to enable telemetry using Application Insights is done. You can run your bot locally using the bot Emulator and then go into Application Insights to see what is being logged, such as response time, overall app health, and general running information.
+At this point, the preliminary work to enable telemetry using Application Insights is done. You can run your bot locally using the Emulator and then go into Application Insights to see what is being logged, such as response time, overall app health, and general running information.
 
 ### Enable telemetry in your bot's dialogs
 
@@ -195,7 +195,7 @@ This article starts with the [CoreBot sample app](https://github.com/Microsoft/B
 
 1. Add the [Application Insights key](../bot-service-resources-app-insights-keys.md) to your `.env` file: `InstrumentationKey=<EnterInstrumentationKeyHere>`. The `.env` file contains metadata about external services the bot uses while running. For example, Application Insights and the Language Understanding (LUIS) service connection and metadata is stored there. The addition to your `.env` file must be in this format:
 
-    [!code-json[env](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/.env?highlight=8)]
+    [!code-ini[.env file](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/.env?highlight=8)]
 
     > [!NOTE]
     > Details on getting the _Application Insights instrumentation key_ can be found in the article [Application Insights keys](../bot-service-resources-app-insights-keys.md).
@@ -214,7 +214,7 @@ This article starts with the [CoreBot sample app](https://github.com/Microsoft/B
 1. Next, you need to add the _telemetry middleware_ to the [adapter middleware pipeline](../v4sdk/bot-builder-concept-middleware.md#the-bot-middleware-pipeline). To do this, add the following code, starting just after the error handling code:  
 
     <!-- This level of detail may be too much:
-        - The first step is to create a new telemetry client, in this case you are using Application Insights as the telemetry client using the module `ApplicationInsightsTelemetryClient` referenced in the previous step. This line of code will call the function `getTelemetryClient` that you will soon create, passing in the Application Insights key and that function will return a new telemetry client: `var telemetryClient = getTelemetryClient(process.env.InstrumentationKey);`. 
+        - The first step is to create a new telemetry client, in this case you are using Application Insights as the telemetry client using the module `ApplicationInsightsTelemetryClient` referenced in the previous step. This line of code will call the function `getTelemetryClient` that you will soon create, passing in the Application Insights key and that function will return a new telemetry client: `var telemetryClient = getTelemetryClient(process.env.InstrumentationKey);`.
         - You will pass the telemetry client you just created to the `TelemetryLoggerMiddleware` function: `var telemetryLoggerMiddleware = new TelemetryLoggerMiddleware(telemetryClient, true);` which creates a TelemetryLoggerMiddleware object that you will use to create
     -->
 
@@ -233,7 +233,7 @@ This article starts with the [CoreBot sample app](https://github.com/Microsoft/B
 
     Node.js which follows the CommonJS module system, and the built in `require` function to include modules that exist in separate files.
 
-At this point, the preliminary work to enable telemetry using Application Insights is done. You can run your bot locally using the bot Emulator and then go into Application Insights to see what is being logged, such as response time, overall app health, and general running information.
+At this point, the preliminary work to enable telemetry using Application Insights is done. You can run your bot locally using the Emulator and then go into Application Insights to see what is being logged, such as response time, overall app health, and general running information.
 
 ---
 

@@ -1,27 +1,29 @@
 ### YamlMime:FAQ
+
 metadata:
   title: Bot Framework Frequently Asked Questions Index - Bot Service
   description: Frequently Asked Questions Bot Framework Index.
-  author: kamrani
-  ms.author: kamrani
-  manager: kamrani
-  ms.topic: troubleshooting
+  author: JonathanFingold
+  ms.author: iawilt
+  manager: shellyha
+  ms.reviewer: micchow
+  ms.topic: faq
   ms.service: bot-service
   ms.date: 09/08/2021
-    
+
 title: Bot Framework FAQ
 summary: |
   [!INCLUDE [applies-to-v4](./includes/applies-to-v4-current.md)]
-  
+
   <!-- Attention writers!! When you create a new FAQ, please add the related link in the proper section below.
   Also, notice this topic is in markdown (.md) format because being an index it is simpler to maintain.
   The actual FAQs are contained in separate files that are in yaml () format. The reasons for the yaml format
   are explained in this article: Create FAQ content (https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-faq-guide?branch=master).
   -->
-  
+
   The following are some common questions you might have.
   In case you don't find the answer you're looking for, you can post your questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/botframework) using the `botframework` tag. If you're a new user, visit the [Stack Overflow Help Center](https://stackoverflow.com/help/how-to-ask) first.
-  
+
 sections:
   - name: Ignored
     questions:
@@ -33,7 +35,7 @@ sections:
           - [How can I migrate Azure Bot Service from one region to another?](./bot-service-resources-faq-availability.yml#how-can-i-migrate-azure-bot-service-from-one-region-to-another)
           - [What is the v4 SDK?](./bot-service-resources-faq-availability.yml#what-is-the-v4-sdk)
           - [Bot Framework SDK Version 3 Lifetime Support and Deprecation Notice](./bot-service-resources-faq-availability.yml#bot-framework-sdk-version-3-lifetime-support-and-deprecation-notice)
-          
+
       - question: |
           Bot Framework general
         answer: |
@@ -52,11 +54,11 @@ sections:
           - [How will I know if I'm impacted by rate limiting?](./bot-service-resources-faq-general.yml#how-will-i-know-if-i-m-impacted-by-rate-limiting)
           - [How to implement human handoff?](./bot-service-resources-faq-general.yml#how-to-implement-human-handoff)
           - [What is the size limit of a file transferred using a channel?](./bot-service-resources-faq-general.yml#what-is-the-size-limit-of-a-file-transferred-using-channels)
-          
+
       - question: |
           Ecosystem
         answer: |
-          - [How do I enable the Emulator to connect to localhost while behind a corporate proxy?](./bot-service-resources-faq-ecosystem.yml#how-do-i-enable-the-emulator-to-connect-to-localhost-while-behind-a-corporate-proxy)
+          - [How do I enable the Bot Framework Emulator to connect to localhost while behind a corporate proxy?](./bot-service-resources-faq-ecosystem.yml#how-do-i-enable-the-bot-framework-emulator-to-connect-to-localhost-while-behind-a-corporate-proxy)
           - [When will you add more conversation experiences to the Bot Framework?](./bot-service-resources-faq-ecosystem.yml#when-will-you-add-more-conversation-experiences-to-the-bot-framework)
           - [I have a communication channel I'd like to be configurable with Bot Framework. Can I work with Microsoft to do that?](./bot-service-resources-faq-ecosystem.yml#i-have-a-communication-channel-i-d-like-to-be-configurable-with-bot-framework--can-i-work-with-microsoft-to-do-that)
           - [If I want to create a bot for Microsoft Teams, what tools and services should I use?](./bot-service-resources-faq-ecosystem.yml#if-i-want-to-create-a-bot-for-microsoft-teams--what-tools-and-services-should-i-use)
@@ -68,7 +70,7 @@ sections:
           - [How can I use more than the maximum number of LUIS intents?](./bot-service-resources-faq-ecosystem.yml#how-can-i-use-more-than-the-maximum-number-of-luis-intents)
           - [How can I use more than one LUIS model?](./bot-service-resources-faq-ecosystem.yml#how-can-i-use-more-than-one-luis-model)
           - [Where can I get more help on LUIS?](./bot-service-resources-faq-ecosystem.yml#where-can-i-get-more-help-on-luis)
-          
+
       - question: |
           Security and Privacy
         answer: |
@@ -82,7 +84,7 @@ sections:
           - [Which RBAC role is required to create and deploy a bot?](./bot-service-resources-faq-security.yml#which-rbac-role-is-required-to-create-and-deploy-a-bot)
           - [What keeps my bot secure from clients impersonating the Bot Framework Service?](./bot-service-resources-faq-security.yml#what-keeps-my-bot-secure-from-clients-impersonating-the-bot-framework-service)
           - [What is the purpose of the magic code during authentication?](./bot-service-resources-faq-security.yml#what-is-the-purpose-of-the-magic-code-during-authentication)
-          
+
       - question: |
           Azure
         answer: |

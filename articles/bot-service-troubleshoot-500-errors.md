@@ -72,7 +72,7 @@ If you are receiving 500 errors and there are no further events within Applicati
 
 ### Ensure the bot runs locally
 
-Make sure your bot runs locally first with the Emulator.
+First, test your bot locally with the Bot Framework Emulator.
 
 ### Ensure configuration files are being copied (.NET only)
 

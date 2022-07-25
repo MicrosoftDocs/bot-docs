@@ -1,13 +1,14 @@
 ---
-title: Bot Framework authentication types in the Azure Bot Service
+title: Bot Framework authentication types
 description: Learn about bot authentication types in the Azure Bot Service.
 keywords: azure bot service, authentication, bot framework token service
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
-ms.topic: conceptual
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
-ms.date: 10/20/2021
+ms.topic: conceptual
+ms.date: 06/06/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -22,9 +23,9 @@ In the Bot Framework, two broad authentication categories exist: **bot authentic
 In this figure:
 
 - **Host Platform** is the bot hosting platform. It can be Azure or any host platform you chose.
-- **Bot Connector Service** facilitates communication between a bot and a channel. It converts messages received from channels into activity objects, and send them to the bot's messaging endpoint. Likewise, it converts activity objects received from the bot into messages understood by the channel and sends them to the channel.
-- **Bot Adapter**. This is the default Bot Framework adapter. It performs these tasks:
-  - Converts the JSON payload into an object. At this point, it is already an activity object, thanks to the Bot Connector Service.
+- **Bot Connector Service** facilitates communication between a bot and a channel. It converts messages received from channels into activity objects, and sends them to the bot's messaging endpoint. Likewise, it converts activity objects received from the bot into messages understood by the channel and sends them to the channel.
+- **Bot Adapter** is the default Bot Framework adapter. It:
+  - Converts the JSON payload into an activity object.
   - Creates a turn context and adds the activity object to it.
   - Runs middleware, if any.
   - Forwards the turn context to the bot.
@@ -35,7 +36,7 @@ see [Connect a bot to Slack using the Slack adapter](../bot-service-channel-conn
 
 ## Bot authentication
 
-A bot is identified by its **MicrosoftAppID** and **MicrosoftAppPassword**, which are kept within the bot's settings files (`appsettings.json` (.NET), `.env` (JavaScript), `config.py` (Python)) or in **Azure Key Vault**.
+A bot is identified by its **MicrosoftAppID** and **MicrosoftAppPassword**, which are kept within the bot's settings files (`appsettings.json` (.NET), `.env` (JavaScript), `config.py` (Python)) or in a secrets or key manager.
 For more information, see [MicrosoftAppID and MicrosoftAppPassword](../bot-service-manage-overview.md#microsoftappid-and-microsoftapppassword).
 
 When you register a bot in the Azure portal, Azure creates an Active Directory (Azure AD) registration application. If you use the Bot Framework CLI, you must specifically perform a step to create the Azure AD registration. This registration has an application ID (`MicrosoftAppID`) and client secret (`MicrosoftAppPassword`). Azure uses these values to generate a **token** with which the bot can access secure resources.
@@ -43,21 +44,22 @@ When you register a bot in the Azure portal, Azure creates an Active Directory (
 When a channel sends a request to a bot, via the Bot Connector service, it specifies a **token** in the **Authorization header** of the request. The bot authenticates calls from the Bot Connector service by verifying the authenticity of the token.
 
 When the bot sends a request to a channel via the **Bot Connector service**, it must specify the **token** in the **Authorization header** of the request.
-All requests must include the access token which is verified by the Bot Connector service to authorize the request.
+All requests must include the access token, which is verified by the Bot Connector service to authorize the request.
 
 The operations described are automatically performed by the Bot Framework SDK.
 
-For more details, see the REST API documentation on how to [authenticate requests from the Bot Connector service to your bot](../rest-api/bot-framework-rest-connector-authentication.md#connector-to-bot) and [authenticate requests from your bot to the Bot Connector service](../rest-api/bot-framework-rest-connector-authentication.md#bot-to-connector).
+For more information, see the REST API documentation on how to [authenticate requests from the Bot Connector service to your bot](../rest-api/bot-framework-rest-connector-authentication.md#connector-to-bot) and [authenticate requests from your bot to the Bot Connector service](../rest-api/bot-framework-rest-connector-authentication.md#bot-to-connector).
 
 ### Channels
 
-Typically, channels communicate with a bot via the **Bot Connector service**. This means that the previous authentication principles generally apply. You may want to notice characteristics of specific channels.
+Typically, channels communicate with a bot via the **Bot Connector service**, so the previous authentication principles generally apply.
+Some channels and features have unique authentication considerations.
 
 #### Direct Line
 
 Besides the standard supported channels, a client application can communicate with a bot using the Direct Line channel.
 
-The client application authenticates requests to Direct Line (version 3.0) either by using a **secret** obtained from the [Direct Line channel configuration](../bot-service-channel-connect-directline.md) page in the Azure portal or, better, by using a **token** obtained at runtime. The secret or token are specified in the Authorization header of each request.
+The client application authenticates requests to Direct Line (version 3.0) either by using a **secret** obtained from the [Direct Line channel configuration](../bot-service-channel-connect-directline.md) page in the Azure portal or, better, by using a **token** obtained at runtime. The secret or token is specified in the Authorization header of each request.
 
 > [!IMPORTANT]
 > When you use Azure Bot Service authentication with Web Chat there are some important security considerations you must keep in mind. For more information, see the [security considerations](../bot-service-channel-connect-webchat.md#keep-your-secret-hidden-exchange-your-secret-for-a-token-and-generate-the-embed) section in the REST authentication article.
@@ -91,7 +93,7 @@ Service-level authentication is managed by the Bot Connector service. The framew
 
 #### Claims validation
 
-In addition to this basic level of authentication, you must add a _claims validator_ to the authentication configuration of the skill and the skill consumer. The claims are evaluated after the authentication header. This allows each bot to restrict which other bots it will accept activities from.
+In addition to this basic level of authentication, you must add a _claims validator_ to the authentication configuration of the skill and the skill consumer. The claims are evaluated after the authentication header. This process allows each bot to restrict which other bots it will accept activities from.
 
 For sample claims validation, see how to [implement a skill](skill-implement-skill.md) and [implement a skill consumer](skill-implement-consumer.md).
 
@@ -101,7 +103,7 @@ The Bot Framework Emulator has its own authentication flow and its own tokens. T
 
 ## User authentication
 
-At times a bot must access secured online resources on behalf of the user. To do that the bot must be authorized. This is because to perform certain operations such as checking email, checking on flight status, or placing an order, the bot needs to call an external service such as Microsoft Graph, GitHub, or a company's REST service. OAuth is used to authenticate the user and authorize the bot.
+At times, a bot must access secured online resources on behalf of the user. To do that the bot must be authorized. This is because to perform certain operations such as checking email, checking on flight status, or placing an order, the bot needs to call an external service such as Microsoft Graph, GitHub, or a company's REST service. OAuth is used to authenticate the user and authorize the bot.
 
 > [!NOTE]
 > Two macro-steps are involved for a bot to access a user's resources.
@@ -120,7 +122,7 @@ An identity provider authenticates user or client identities and issues consumab
 A bot can use a trusted identity provider to:
 
 - Enable single sign-on (SSO) features, allowing it to access multiple secured resources.
-- Connect to cloud computing resources on behalf of a user, decreasing the need for users to re-authenticate.
+- Connect to cloud computing resources on behalf of a user, decreasing the need for users to reauthenticate.
 
 > [!NOTE]
 > The token issued during **Bot authentication** is not the same token issued during **User authentication**. The first is used to establish secure communication between a bot, channels and, ultimately, client applications. The second is used to authorize the bot to access secured resource on behalf of the user.

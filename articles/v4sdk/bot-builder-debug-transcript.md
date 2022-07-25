@@ -26,11 +26,11 @@ A bot transcript file is a specialized JSON file that preserves the interactions
 
 This article shows how to create bot transcript files using Microsoft's [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator). Transcript files may also be created programmatically; see [Blob transcript storage](./bot-builder-howto-v4-storage.md#blob-transcript-storage) to read more concerning that approach. In this article we will use the Bot Framework sample code for [Multi Turn Prompt Bot](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/05.multi-turn-prompt) that requests a user's mode of transportation, name and age, but any code that can be accessed using Microsoft's Bot Framework Emulator may be used to create a transcript file.
 
-To begin this process ensure that the bot code you want to test is running within your development environment. Start the bot framework Emulator, select the _Open Bot_ button, then enter the address of _localhost:port_ shown in your browser followed by "/api/messages" as shown in the image below. Now click the _Connect_ button to connect the Emulator to your bot.
+To begin this process ensure that the bot code you want to test is running within your development environment. Start the Bot Framework Emulator, select the _Open Bot_ button, then enter the address of _localhost:port_ shown in your browser followed by "/api/messages" as shown in the image below. Now click the _Connect_ button to connect the Emulator to your bot.
 
 ![connect Emulator to your code](./media/emulator_open_bot_configuration.png)
 
-After connecting the Emulator to your running code, test your code by sending simulated user interactions to the bot. For this example we have passed in the user's mode of transportation, name and age. After you have entered all of the user interactions you want to preserve, use the bot framework Emulator to create and save a transcript file containing this conversation.
+After connecting the Emulator to your running code, test your code by sending simulated user interactions to the bot. For this example we have passed in the user's mode of transportation, name and age. After you have entered all of the user interactions you want to preserve, use the Bot Framework Emulator to create and save a transcript file containing this conversation.
 
 Within the _Live Chat_ tab (shown below), select the _Save transcript_ button.
 
@@ -38,7 +38,7 @@ Within the _Live Chat_ tab (shown below), select the _Save transcript_ button.
 
 Choose a location and name for your transcript file and then select the save button.
 
-![transcript saveas ursula](./media/emulator_transcript_saveas_ursula.png)
+![save transcript](./media/emulator_transcript_saveas_ursula.png)
 
 All of the user interactions and bot responses that you entered to test your code with the Emulator have now been saved into a transcript file that you can later reload to help debug interactions between your user and your bot.
 
@@ -72,6 +72,6 @@ Using transcript files together with the Bot Framework Emulator is just one of t
 For additional testing and debugging information see:
 
 * [Bot testing and debugging guidelines](./bot-builder-testing-debugging.md)
-* [Debug with the bot framework emulator](../bot-service-debug-emulator.md)
+* [Debug with the Bot Framework Emulator](../bot-service-debug-emulator.md)
 * [Troubleshoot general problems](../bot-service-troubleshoot-bot-configuration.md) and the other troubleshooting articles in that section.
 * [Debugging in Visual Studio](/visualstudio/debugger/index)

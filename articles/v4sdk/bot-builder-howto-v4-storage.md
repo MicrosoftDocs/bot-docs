@@ -3,10 +3,11 @@ title: Write directly to storage in Bot Framework SDK
 description: Learn how to use the Bot Framework SDK to write bot data directly to various types of persistent storage without using a state manager.
 keywords: storage, read and write, memory storage, eTag
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
-ms.topic: how-to
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
+ms.topic: how-to
 ms.date: 09/30/2021
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -320,7 +321,7 @@ Run your bot locally.
 
 ### Start the Emulator and connect your bot
 
-Install the Bot Framework [Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md)
+Install the [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md)
 Next, start the Emulator and then connect to your bot in the Emulator:
 
 1. Select the **Create new bot configuration** link in the Emulator **Welcome** tab.
@@ -418,7 +419,7 @@ Add the following information to your **.env** file.
 
 **.env**
 
-```javascript
+```ini
 CosmosDbEndpoint="<your-CosmosDb-URI>"
 CosmosDbAuthKey="<your-primary-key>"
 CosmosDbDatabaseId="<your-database-id>"
@@ -704,7 +705,7 @@ Add the following information to your **.env** file.
 
 **.env**
 
-```javascript
+```ini
 BlobConnectionString="<your-blob-connection-string>"
 BlobContainerName="<your-blob-container-name>"
 ```
@@ -729,12 +730,6 @@ If not previously installed, install the following packages.
 ### [C#](#tab/csharp)
 
 Install the **Microsoft.Bot.Builder.Azure.Blobs** NuGet package. For more information on using NuGet, see [Install and manage packages in Visual Studio using the NuGet Package Manager](/nuget/consume-packages/install-use-packages-visual-studio).
-
-<!--
-```Console
-Install-Package Microsoft.Bot.Builder.Azure.Blobs
-```
--->
 
 ### [JavaScript](#tab/javascript)
 
@@ -790,8 +785,8 @@ Next, in the `ConfigureServices` method in **Startup.cs**, create the `BlobsStor
 //Use Azure Blob storage, instead of in-memory storage.
 services.AddSingleton<IStorage>(
     new BlobsStorage(
-        Configuration.GetValue<string>("dataConnectionString"),
-        Configuration.GetValue<string>("containerName")
+        Configuration.GetValue<string>("BlobConnectionString"),
+        Configuration.GetValue<string>("BlobContainerName")
         ));
 ```
 

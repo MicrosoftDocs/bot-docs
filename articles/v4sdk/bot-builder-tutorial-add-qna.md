@@ -3,11 +3,12 @@ title: Tutorial to answer questions with the Bot Framework SDK and QnA Maker
 description: Learn how to add question-and-answer support to bots. See how to use QnA Maker and a knowledge base with a bot so that the bot can answer questions.
 keywords: QnA Maker, question and answer, knowledge base
 author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
-ms.topic: tutorial
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
 ms.service: bot-service
-ms.date: 09/14/2021
+ms.topic: tutorial
+ms.date: 03/03/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -34,7 +35,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 * Familiarity with [QnA bot creation](/azure/cognitive-services/qnamaker/tutorials/create-qna-bot) using Azure Bot Service.
 * Installed [Maven](https://maven.apache.org/), for Java only.
 
-You should also already have the [prerequisites for the previous tutorial](/azure/bot-service/bot-builder-tutorial-deploy-basic-bot#prerequisites).
+You should also already have the [prerequisites for the previous tutorial](/azure/bot-service/tutorial-publish-a-bot#prerequisites).
 
 ## Create a QnA Maker service and knowledge base
 
@@ -46,12 +47,12 @@ You'll import an existing knowledge base definition from the QnA Maker sample in
     1. If necessary, create a QnA service. (You can use an existing QnA Maker service or create a new one for this tutorial.) For more detailed QnA Maker instructions, see [Create a QnA Maker service](/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure) and [Create, train, and publish your QnA Maker knowledge base](/azure/cognitive-services/qnamaker/quickstarts/create-publish-knowledge-base).
     1. Connect your QnA Maker service to your knowledge base.
     1. Name your knowledge base.
-    1. To populate your knowledge base, use the [smartLightFAQ.tsv](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/csharp_dotnetcore/11.qnamaker/CognitiveModels/smartLightFAQ.tsv) file from the samples repo. If you have downloaded the samples, upload the file **smartLightFAQ.tsv** from your computer.
+    1. To populate your knowledge base, use the [smartLightFAQ.tsv](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/csharp_dotnetcore/11.qnamaker/CognitiveModels/smartLightFAQ.tsv) file from the samples repo. If you've downloaded the samples, upload the file **smartLightFAQ.tsv** from your computer.
     1. Select **Create your kb** to create the knowledge base.
 1. Select **Save and train**.
 1. Select **PUBLISH** to publish your knowledge base.
 
-Once your QnA Maker app is published, select **SETTINGS**, and scroll down to *Deployment details*. Copy the following values from the *Postman* HTTP example request.
+Once your QnA Maker app is published, select **SETTINGS**, and scroll down to _Deployment details_. Copy the following values from the _Postman_ HTTP example request.
 
 ```text
 POST /knowledgebases/<knowledge-base-id>/generateAnswer
@@ -71,7 +72,7 @@ Use the following instructions connect your C#, JavaScript, Java, or Python bot 
 
 # [C#](#tab/csharp)
 
-Add the following values to you **appsetting.json** file:
+Add the following values to your **appsetting.json** file:
 
 ```json
 {
@@ -89,7 +90,7 @@ Add the following values to you **appsetting.json** file:
 
 Add the following values to your **.env** file:
 
-```text
+```ini
 MicrosoftAppId=""
 MicrosoftAppPassword=""
 ScmType=None
@@ -97,19 +98,6 @@ ScmType=None
 QnAKnowledgebaseId="knowledge-base-id"
 QnAAuthKey="qna-maker-resource-key"
 QnAEndpointHostName="your-hostname" // This is a URL ending in /qnamaker
-```
-
-# [Java](#tab/java)
-
-Add the following values to your **application.properties** file:
-
-```java
-MicrosoftAppId=
-MicrosoftAppPassword=
-QnAKnowledgebaseId="knowledge-base-id"
-QnAEndpointKey="qna-maker-resource-key"
-QnAEndpointHostName="your-hostname" // This is a URL ending in /qnamaker
-server.port=3978
 ```
 
 # [Python](#tab/python)
@@ -126,6 +114,19 @@ class DefaultConfig:
     QNA_KNOWLEDGEBASE_ID = os.environ.get("QnAKnowledgebaseId", "")
     QNA_ENDPOINT_KEY = os.environ.get("QnAEndpointKey", "")
     QNA_ENDPOINT_HOST = os.environ.get("QnAEndpointHostName", "")
+```
+
+# [Java](#tab/java)
+
+Add the following values to your **application.properties** file:
+
+```ini
+MicrosoftAppId=
+MicrosoftAppPassword=
+QnAKnowledgebaseId="knowledge-base-id"
+QnAEndpointKey="qna-maker-resource-key"
+QnAEndpointHostName="your-hostname" // This is a URL ending in /qnamaker
+server.port=3978
 ```
 
 ---
@@ -271,7 +272,7 @@ Update your initialization code to load the service information for your knowled
     const { QnAMaker } = require('botbuilder-ai');
     ```
 
-1. Modify the constructor to take the configuration parameters required to create a QnA Maker connector and throw an error if these parameters are not provided.
+1. Modify the constructor to take the configuration parameters required to create a QnA Maker connector and throw an error if these parameters aren't provided.
 
     **bot.js**
 
@@ -313,7 +314,7 @@ Update your initialization code to load the service information for your knowled
 
 1. Add the **com.microsoft.bot.bot-ai-qna** package to your project.
 
-    To do this add the package to your Maven **pom.xml** file:
+    To do this, add the package to your Maven **pom.xml** file:
 
     ```xml
     <dependency>
@@ -350,6 +351,7 @@ Update your initialization code to load the service information for your knowled
 
     }
     ```
+
 1. Update **Application.java** to provide an instance of the Configuration to the new EchoBot constructor.
 
     **Application.java**
@@ -469,47 +471,35 @@ Update your initialization code to load the service information for your knowled
 
 ## Test your bot locally
 
-At this point, your bot should be able to answer some questions. Run the bot locally and open it in the Emulator.
+At this point, your bot should be able to answer some questions. Run the bot locally and open it in the Bot Framework Emulator.
 
 :::image type="content" source="./media/qna-test-bot.png" alt-text="Sample interaction with the bot and QnA Maker.":::
 
 ## Republish your bot
 
-You can now republish your bot back to Azure. Zip your project folder and then run the command to deploy your bot to Azure. For details, see how to [Deploy your bot](../bot-builder-deploy-az-cli.md).
+Now you can republish your bot back to Azure. Zip your project folder and then run the command to redeploy your bot.
 
-### Zip your project folder
+### Prepare your project files
 
-[!INCLUDE [zip up code](../includes/deploy/snippet-zip-code.md)]
+[!INCLUDE [Create Kudu files, compress files](../includes/az-cli/prepare-for-deployment.md)]
 
-<!-- > [!IMPORTANT]
-> Before creating a zip of your project files, make sure that you are _in_ the correct folder.
-> - For C# bots, it is the folder that has the .csproj file.
-> - For JS bots, it is the folder that has the app.js or index.js file.
-> - For Python bots, it is the folder that has the app.py file.
->
-> Select all the files and zip them up while in that folder, then run the command while still in that folder.
->
-> If your root folder location is incorrect, the **bot will fail to run in the Azure portal**. -->
-
-### Deploy your code to Azure
+### Republish your bot
 
 > [!TIP]
-> If your session token expired, run `az login` again. If you are not using your default subscription, also reset your subscription.
+> If your session token expired, run `az login` again. If you aren't using your default subscription, also reset your subscription.
 
-[!INCLUDE [deploy code to Azure](../includes/deploy/snippet-deploy-code-to-az.md)]
+[!INCLUDE [deploy code to Azure](../includes/az-cli/deploy-to-azure.md)]
 
-<!--
 ## Clean up resources
 
-In the first tutorial, we should tell them to use a new resource group, so that it is easy to clean up resources. We should also mention in this step in the first tutorial not to clean up resources if they are continuing with the sequence.
--->
-
-If you're not going to continue to use this application, delete
-the associated resources with the following steps:
+If you aren't going to use this application again, delete the associated resources with the following steps:
 
 1. In the Azure portal, open the resource group for your bot.
-2. Select **Delete resource group** to delete the group and all the resources it contains.
-3. Enter the _resource group name_ in the confirmation pane, then select **Delete**.
+    1. Select **Delete resource group** to delete the group and all the resources it contains.
+    1. Enter the _resource group name_ in the confirmation pane, then select **Delete**.
+1. If you created a single-tenant or multi-tenant app:
+    1. Go to the Azure Active Directory blade.
+    1. Locate the app registration you used for your bot, and delete it.
 
 ## Next steps
 

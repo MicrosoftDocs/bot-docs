@@ -1,124 +1,100 @@
 ---
 title: Connect a bot to LINE - Bot Service
-description:  Learn how to connect bots to LINE. See how to configure bots to communicate with people through the LINE app. View troubleshooting tips.
+description: Learn how to connect bots to LINE. See how to configure bots to communicate with people through the LINE app.
 keywords: connect a bot, bot channel, LINE bot, credentials, configure, phone
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: micchow
-ms.topic: how-to
+ms.reviewer: mainguy
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.topic: how-to
+ms.date: 03/22/2022
 ---
 
 # Connect a bot to LINE
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-You can configure your bot to communicate with people through the LINE app.
+You can configure your bot to communicate with people through the LINE app. This article describes how to create a LINE channel using the LINE Developers Console, connect your bot to your LINE channel in Azure, and test your bot in the LINE mobile app.
 
-## Log into the LINE console
+## Prerequisites
 
-Log into the [LINE developer console](https://developers.line.biz/console/register/messaging-api/provider/) of your LINE account, using *Log in with Line*.
+- An Azure account. If you don't already have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+- An existing bot published to Azure.
+- A mobile device with the LINE app and a QR reader.
 
-> [!NOTE]
-> If you haven't already, [download LINE](https://line.me/), then go to your settings to register your email address.
+## Create a channel in the LINE Developers Console
 
-### Register as a developer
+To build bots with LINE, you need to create a channel in the LINE Developers Console. Follow the steps in the documentation below that are relevant to you before continuing:
 
-If this is your first time on the LINE developer console, enter your name and email address to create a developer account.
+- If you already have a LINE Official account: [Adding a channel to your existing LINE Official Account](https://developers.line.biz/en/docs/messaging-api/getting-started/#using-oa-manager).
+- If you don't have a LINE account: [Creating a channel on the LINE Developers Console](https://developers.line.biz/en/docs/messaging-api/getting-started/#using-console).
 
-![LINE screenshot register developer](./media/channels/LINE-screenshot-1.png)
+## Get values from your channel settings
 
-## Create a new provider
+Once you've confirmed your channel settings, you'll be directed to your channel's **Basic settings** page.
 
-First, create a provider for your bot if you don't already have one set up. The provider is the entity (individual or company) that offers your app.
-
-![LINE screenshot create provider](./media/channels/LINE-screenshot-2.png)
-
-## Create a Messaging API channel
-
-Next, create a new Messaging API channel.
-
-![LINE screenshot channel type](./media/channels/LINE-channel-type-selection.png)
-
-Create a new Messaging API channel by clicking on the green square.
-
-![LINE screenshot create channel](./media/channels/LINE-create-channel.png)
-
-The name cannot include "LINE" or some similar string. Fill out the required fields and confirm your channel settings.
-
-![LINE screenshot channel settings](./media/channels/LINE-screenshot-4.png)
-
-## Get necessary values from your channel settings
-
-Once you've confirmed your channel settings, you'll be directed to a page similar to this.
-
-![LINE screenshot channel page](./media/channels/LINE-screenshot-5.png)
-
-Click on the channel you created to access your channel settings, and scroll down to find the **Basic information > Channel secret**. Save that somewhere for a moment. Verify the Available features include `PUSH_MESSAGE`.
-
-![LINE screenshot channel secret](./media/channels/LINE-screenshot-6.png)
-
-Then, scroll farther to **Messaging settings**. There, you will see a **Channel access token** field, with an *issue* button. Click that button to get your access token, and save that for the moment as well.
-
-![LINE screenshot channel token](./media/channels/LINE-screenshot-8.png)
+1. Scroll down to find the **Channel secret**. Copy the value and save it for later steps.
+1. Scroll back up and select the **Messaging settings** tab.
+1. At the bottom of the page you'll see a **Channel access token (long lived)** field, with an **Issue** button. Select that button to get your access token.
+1. Copy and save the access token for later steps.
 
 ## Connect your LINE channel to your Azure bot
 
-Log in to the [Azure portal](https://portal.azure.com/) and find your bot, and click on **Channels**.
+After obtaining the values above, you're ready to connect your Azure bot to LINE in the Azure portal.
 
-![LINE screenshot azure settings](./media/channels/LINE-channel-setting-2.png)
-
-There, select the LINE channel and paste the channel secret and access token from above into the appropriate fields. Be sure to save your changes.
-
-Copy the custom webhook URL that Azure gives you.
-
-![LINE screenshot azure settings for LINE](./media/channels/LINE-channel-setting-1.png)
+1. Sign in to the [Azure portal](https://portal.azure.com/) and find your bot. Then select **Channels**.
+1. Select **LINE** from the **Available channels** list.
+1. Enter the **Channel Secret** and **Channel Access Token** you saved earlier. Then select **Apply**.
+1. If your bot is successfully connected, the **Webhook URL** will appear. Copy and save the URL for later steps.
 
 ## Configure LINE webhook settings
 
-Next, go back to the LINE developer console and paste the webhook URL from Azure into the **Message settings > Webhook URL**, and click **Verify** to verify the connection. If you just created the channel in Azure, it may take a few minutes to take effect.
+After connecting your channel in Azure and obtaining your webhook URL, return to the LINE Developers Console to configure LINE webhook setting.
 
-Then, enable **Message settings > Use webhooks**.
+1. Go back to the [LINE Developers console](https://developers.line.biz/console/).
+1. Select the channel you created earlier from **Recently visited channels**.
+1. Select the **Messaging API** setting and scroll down to **Webhook settings**. Enter the **Webhook URL** from Azure and select **Update**.
+1. Select the **Verify** button under the URL. A success message will appear if the webhook URL is properly configured.
+1. Then enable **Use webhook**, shown below:
 
-> [!IMPORTANT]
-> In LINE Developer Console, you must first set the webhook URL, and only then set **Use webhooks = Enabled**. First enabling webhooks with an empty URL will not set the enabled status, even though the UI may say otherwise.
+    :::image type="content" source="./media/channels/LINE-webhook-settings.png"  alt-text="LINE Webhook settings":::
 
-After you added a webhook URL and then enabled webhooks, make sure to reload this page and verify that these changes were set correctly.
+    > [!IMPORTANT]
+    > In LINE Developers Console, set the webhook URL before you enable **Use webhook**. Enabling webhooks with an empty URL won't set the enabled status, even though the UI may say otherwise.
 
-![LINE screenshot webhooks](./media/channels/LINE-screenshot-9.png)
+1. After adding a webhook URL and enabling **Use webhook**, reload this page and verify that the changes were set correctly.
 
 ## Test your bot
 
-Once you have completed these steps, your bot will be successfully configured to communicate with users on LINE and is ready to test.
+Once you've completed these steps, your bot will be successfully configured to communicate with users on LINE. The steps below explain how to test your bot.
 
 ### Add your bot to your LINE mobile app
 
-In the LINE developer console, navigate to the settings page and you will see a QR code of your bot.
+To test your bot, you need to use the LINE mobile app.
 
-In the Mobile LINE app, go to the right most navigation tab with three dots [**...**] and tap on the QR code icon.
-
-![LINE screenshot mobile app](./media/channels/LINE-screenshot-12.jpg)
-
-Point the QR code reader at the QR code in your developer console. You should now be able to interact with your bot in your mobile LINE app and test your bot.
+1. Scroll up in the **Messaging API** tab to see the bot's QR code.
+1. Using a mobile device with the LINE app installed, scan the QR code and select the link that appears.
+1. You should now be able to interact with your bot in your mobile LINE app and test your bot.
 
 ### Automatic messages
 
-When you start testing your bot, you may notice the bot sends unexpected messages that are not the ones you specified in the `conversationUpdate` activity.  Your dialog may look something like this:
+When you start testing your bot, it may send unexpected messages that aren't the ones you specified in the `conversationUpdate` activity.
 
-![LINE screenshot conversation](./media/channels/LINE-screenshot-conversation.jpg)
+To avoid sending these messages, take the following steps:
 
-To avoid sending these messages, you need to switch off the Auto-response messages.
+1. Go to the LINE Developers Console and select your channel. Then select the **Messaging API** tab.
+1. Scroll down to the **LINE Official Account features** section. Find **Auto-reply messages** and select the **Edit** link.
+1. A new page titled **Response settings** will open up. Under **Detailed settings** set **Auto-response** to *Disabled*.
 
-![LINE screenshot auto response](./media/channels/LINE-screenshot-10.png)
+    :::image type="content" source="./media/channels/LINE-detailed-settings.png"  alt-text="LINE Detailed settings":::
 
-Alternatively, you can choose to keep these messages. In this case, it may be a good idea to click "Set message" and edit it.
+1. Alternatively, you can choose to keep these messages. Select **Auto-response message settings** to edit the auto response message.
 
-![LINE screenshot set auto response](./media/channels/LINE-screenshot-11.png)
+## Additional information
 
-## Troubleshooting
+### Troubleshooting
 
-* In case your bot is not responding to any of your messages at all, navigate to your bot in Azure portal, and choose Test in Web Chat.  
-  * If the bot works there, but does not respond in LINE, reload your LINE Developer Console page and repeat the webhook instructions above. Be sure you set the **Webhook URL** before enabling webhooks.
-  * If the bot doesn't work in Web Chat, debug the issue for your bot then come back and finish configuring your LINE channel.
+- If your bot isn't responding to any of your messages, go to your bot in Azure portal, and select **Test in Web Chat**.  
+  - If the bot works there but doesn't respond in LINE, reload your LINE Developer Console page and repeat the webhook instructions above. Be sure you set the **Webhook URL** before enabling webhooks.
+  - If the bot doesn't work in Web Chat, debug the bot issue and then finish configuring your LINE channel.

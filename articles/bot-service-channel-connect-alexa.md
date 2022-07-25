@@ -1,122 +1,165 @@
 ---
-title: Connect a bot to Alexa in Bot Framework SDK
-description:  Learn how to configure a bot to allow communication with Alexa.
+title: Connect a bot to Alexa
+description: Learn how to configure your bot in Azure to allow communication with Alexa.
 keywords: connect a bot, bot channel, Alexa bot, credentials, configure, phone
-author: kamrani
-ms.author: kamrani
-manager: kamrani
-ms.topic: how-to
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: mainguy
 ms.service: bot-service
-ms.date: 09/21/2021
+ms.topic: how-to
+ms.date: 03/22/2022
 ---
 
 # Connect a bot to Alexa
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-You can configure your bot to communicate with people using Alexa devices that support Custom Skills.
+You can configure your bot to communicate with people through an Alexa custom skill. This article describes how to create an Alexa skill using the Alexa Developer Console, connect your bot to your Alexa skill in Azure, and test your bot in Alexa.
+
+## Prerequisites
+
+- An Azure subscription. If you don't already have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+- A bot published to Azure that you want to connect to Alexa.
+- An Amazon account.
 
 > [!IMPORTANT]
-> Your bot must use the [Bot Framework SDK](https://github.com/microsoft/botframework-sdk) version 4.8 or later. When you create a new bot via the Azure Portal, the bot will use the latest version available at that time. If you have an existing bot you may need to update your SDK version.
+> Your bot must use the [Bot Framework SDK](https://github.com/microsoft/botframework-sdk) version 4.8 or later. If you have an existing bot you may need to update your SDK version and republish your bot.
 
 ## Create an Alexa skill
 
-1. Log into the [Alexa Developer Console](https://developer.amazon.com/alexa/console/ask) and then click the 'Create Skill' button.
+1. Sign in to the [Alexa Developer Console](https://developer.amazon.com/alexa/console/ask) and select **Create Skill**.
 
-1. On the next screen enter a name for your new skill.  On this page you can **Choose a model to add to your skill** (**Custom** selected by default) and **Choose a method to host your skill's backend resources** (**Provision your own** selected by default).  Leave the default options selected and click the **Create Skill** button.
+1. On the next page:
+    1. Enter a name for your new skill.
+    1. Make sure that **Choose a model to add to your skill** is set to **Custom**.
+    1. Make sure that **Choose a method to host your skill's backend resources** is set to **Provision your own**.
+    1. Select **Create Skill**.
 
-    ![Screenshot: Choose a model and hosting](./media/channels/alexa-create-skill-options.png)
+    :::image type="content" source="media/channels/alexa-create-skill-options.png" alt-text="Choose model and hosting":::
 
-1. On the next screen you will be asked to **Choose a template**.  **Start from scratch** will be selected by default. Leave **Start from scratch** selected and click the **Choose** button.
+1. On the next page:
+    1. Make sure that **Choose a template** is set to **Start from scratch**
+    1. Select **Choose**.
 
-    ![Screenshot: Choose a template](./media/channels/alexa-create-skill-options2.png)
+    :::image type="content" source="media/channels/alexa-create-skill-options2.png" alt-text="Choose a template":::
 
-1. You will now be presented with your skill dashboard. Navigate to **JSON Editor** within the **Interaction Model** section of the left hand menu.
+1. On your skill dashboard under **Interaction Model**, select **JSON Editor**.
 
-1. Paste the JSON below into the **JSON Editor**, replacing the following values;
+1. In the JSON editor:
+    1. Replace the existing contents with the following JSON.
 
-    * **YOUR SKILL INVOCATION NAME** - This is the name that users will use to invoke your skill on Alexa. For example, if your skill invocation name was 'adapter helper', then a user would could say "Alexa, launch adapter helper" to launch the skill.
-
-    * **EXAMPLE PHRASES** - You should provide 3 example phases that users could use to interact with your skill.  For example, if a user might say "Alexa, ask adapter helper to give me details of the alexa adapter", your example phrase would be "give me details of the alexa adapter".
-
-    ```json
-    {
-        "interactionModel": {
-            "languageModel": {
-                "invocationName": "<YOUR SKILL INVOCATION NAME>",
-                "intents": [
-                    {
-                        "name": "GetUserIntent",
-                        "slots": [
-                            {
-                                "name": "phrase",
-                                "type": "phrase"
-                            }
-                        ],
-                        "samples": [
-                            "{phrase}"
-                        ]
-                    },
-                    {
-                        "name": "AMAZON.StopIntent",
-                        "samples": []
-                    }
-                ],
-                "types": [
-                    {
-                        "name": "phrase",
-                        "values": [
-                            {
-                                "name": {
-                                    "value": "<EXAMPLE PHRASE>"
+        ```json
+        {
+            "interactionModel": {
+                "languageModel": {
+                    "invocationName": "<your-skill-invocation-name>",
+                    "intents": [
+                        {
+                            "name": "GetUserIntent",
+                            "slots": [
+                                {
+                                    "name": "phrase",
+                                    "type": "phrase"
                                 }
-                            },
-                            {
-                                "name": {
-                                    "value": "<EXAMPLE PHRASE>"
+                            ],
+                            "samples": [
+                                "{phrase}"
+                            ]
+                        },
+                        {
+                            "name": "AMAZON.StopIntent",
+                            "samples": []
+                        }
+                    ],
+                    "types": [
+                        {
+                            "name": "phrase",
+                            "values": [
+                                {
+                                    "name": {
+                                        "value": "<example-phrase>"
+                                    }
+                                },
+                                {
+                                    "name": {
+                                        "value": "<example-phrase>"
+                                    }
+                                },
+                                {
+                                    "name": {
+                                        "value": "<example-phrase>"
+                                    }
                                 }
-                            },
-                            {
-                                "name": {
-                                    "value": "<EXAMPLE PHRASE>"
-                                }
-                            }
-                        ]
-                    }
-                ]
+                            ]
+                        }
+                    ]
+                }
             }
         }
-    }
-    ```
+        ```
 
-1. Click the **Save Model** button and then click **Build Model**, which will update the configuration for your skill.
+    1. For `invocationName`, change \<your-skill-invocation-name> to the name that users will use to invoke your skill on Alexa. For example, if your skill invocation name was "adapter helper", then a user could say "Alexa, launch adapter helper" to launch the skill.
 
-1. Get your **Alexa Skill Id** either from the URL in the Alexa Portal or by going to the [Alexa Developer Console](https://developer.amazon.com/alexa/console/ask) and clicking **View Skill Id**. Your Alexa Skill ID should be a value like 'amzn1.ask.skill.A GUID'.
+    1. In the `values` array under `types`, replace the three instances of `<example-phrase>` with phrases that users can say to trigger your skill. For example, if a user says "Alexa, ask adapter helper to give me details of the alexa adapter", one example phrase could be "give me details of the alexa adapter".
 
-1. In the Bot Framework Portal navigate to the Alexa Channel Configuration page and paste your **Alexa Skill Id** into the **Enter skill Id** field.
+1. Select **Save Model**, then select **Build Model**. This updates your skill's configuration on Alexa.
 
-1. In the Alexa Portal navigate to the **Endpoint** section on the left hand menu.  Select **HTTPS** as the **Service Endpoint Type** and set the **Default Region** endpoint to the **Alexa Service Endpoint URI** value copied from the Bot Framework Alexa Configuration page.
+## Configure your bot in Azure
 
-1. In the drop down underneath the text box where you have defined your endpoint, you need to select the type of certificate being used. Choose **My development endpoint is a sub-domain of a domain that has a wildcard certificate from a certificate authority**.
+To complete this step, you'll need your Alexa Skill ID. Get the ID either from the URL in the Alexa portal or by going to the [Alexa Developer Console](https://developer.amazon.com/alexa/console/ask) and selecting **Copy Skill ID**. Your Alexa Skill ID should be a value like "amzn1.ask.skill.\<some-guid>".
 
-    ![Screenshot: Choose service endpoint type](./media/channels/alexa-endpoint.PNG)
+1. Open the [Azure portal](https://portal.azure.com/).
+1. Open the Azure Bot resource blade for your bot.
+1. Open **Channels** and select **Alexa**.
+1. In **Alexa Channel Configuration**, enter the information you copied in the previous step.
+    1. In **Enter skill Id**, enter the Alexa skill ID that you copied from the Alexa Developer Console.
+    1. Select **Apply**.
+    1. Copy the Azure-generated Alexa service endpoint URI.
 
-1. Click the **Save Endpoints** button in the Alexa Portal.
+## Update your Alexa bot registration
 
-1. Click the **Save** button in the Bot Framework Alexa Channel Configuration page.
+1. Sign in to the [Alexa Developer Console](https://developer.amazon.com/alexa/console/ask).
+1. Find and open your skill's configuration page.
+1. Select **Endpoint**.
+1. For **Service Endpoint Type**, select **HTTPS**.
+1. For **Default Region**:
+    1. Enter the Alexa service endpoint URI you copied from the Azure portal.
+    1. In the drop-down, select **My development endpoint is a sub-domain of a domain that has a wildcard certificate from a certificate authority**.
 
-You will need to publish your Skill within Alexa before users other than yourself can communicate with it. You can test your skill, prior to publishing it, within Alexa using an Alexa device you own or from the **Test** tab for your skill. To get to the **Test** tab navigate to your Skill from the [Alexa Developer Console](https://developer.amazon.com/alexa/console/ask).
+    :::image type="content" source="media/channels/alexa-endpoint.png" alt-text="Set service endpoint and endpoint type":::
 
-## User authentication in Alexa
+1. Select **Save Endpoints**.
+
+## Test and publish your skill
+
+If you own an Alexa device, you can test your skill before you publish it.
+
+See the [Alexa Skills Kit developer documentation for custom voice model skills](https://developer.amazon.com/docs/alexa/custom-skills/understanding-custom-skills.html) for information on how to test and publish your skill on their platform.
+
+## Additional information
+
+For more information about Alexa skills, see the Amazon developer documentation:
+
+- [What is the Alexa Skills Kit?](https://developer.amazon.com/docs/alexa/ask-overviews/what-is-the-alexa-skills-kit.html)
+- [Custom Voice Model Skills](https://developer.amazon.com/docs/alexa/custom-skills/understanding-custom-skills.html)
+- [Alexa Skills Kit Object Schemas](https://developer.amazon.com/docs/alexa/smapi/object-schemas.html)
+
+### User authentication in Alexa
 
 User authentication in Alexa is done by setting up and using **Account Linking on the Alexa skill**.
 For more information, see [Understand Account Linking for Alexa Skills](https://developer.amazon.com/docs/alexa/account-linking/understand-account-linking.html).
+You can require account linking when the user enables the skill, or you can require it as part of a conversation flow.
 
-You can require account linking at the time of enabling the skill, if everything needs authentication.
+If you add user authentication as part of the conversation:
 
- 1. Attach a [sign-in card](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-cards.md#signin-card) on the outgoing activity.
- 1. This will be converted to a **LinkAccount card** for Alexa that prompts the user to sign in using the Alexa app.
+1. Attach a [sign-in card](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-cards.md#signin-card) on the outgoing activity. This will be converted to an Alexa **LinkAccount card** that prompts the user to sign in using the Alexa app.
 
-If the user successfully links their account into the app a token is then available on subsequent requests in the channel data. 
+1. If the user successfully links their account into the app, a token is then available on subsequent requests in the channel data.
 
-For more information, see also [Alexa Adapter](https://github.com/BotBuilderCommunity/botbuilder-community-dotnet/tree/develop/libraries/Bot.Builder.Community.Adapters.Alexa) maintained by the community. 
+## Next steps
+
+- For information about building bots, see [How bots work](v4sdk/bot-builder-basics.md) and the [Create a bot with the Bot Framework SDK](bot-service-quickstart-create-bot.md) quickstart.
+- For information about deploying bots, see [Tutorial: Provision a bot in Azure](tutorial-provision-a-bot.md) and [Tutorial: Publish a basic bot](tutorial-publish-a-bot.md).
+- For information about channel support in the Bot Connector Service, see [Connect a bot to channels](bot-service-manage-channels.md).
+- For more information about the Bot Framework schemas, see the [Bot Framework activity schema](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md) and the [Bot Framework cards schema](https://github.com/microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-cards.md).
