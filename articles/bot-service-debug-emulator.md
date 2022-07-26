@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 07/25/2022
 ms.custom: abs-meta-21q1
 ---
 
@@ -38,7 +38,7 @@ To run a bot using command line, do the following:
 
 - Copy the port number in the line before *Application started. Press CTRL+C to shut down.*
 
-    ![C# Port Number](media/bot-service-debug-emulator/csharp_port_number.png)
+    :::image type="content" source="media/bot-service-debug-emulator/csharp_port_number.png" alt-text="C# port number":::
 
 ### [JavaScript](#tab/javascript)
 
@@ -51,7 +51,7 @@ To run a bot using command line, do the following:
 
 - Copy the port number that restify is listening on.
 
-    ![JS Port Number](media/bot-service-debug-emulator/js_port_number.png)
+    :::image type="content" source="media/bot-service-debug-emulator/js_port_number.png" alt-text="JavaScript port number":::
 
 ### [Java](#tab/java)
 
@@ -69,9 +69,9 @@ To run a bot using command line, do the following:
     java -jar .\target\<bot archive name>.jar
     ```
 
-- Note the port number that Tomcat web server is listening on.
+- Copy the port number that Tomcat web server is listening on.
 
-    ![Java Port Number](media/bot-service-debug-emulator/java_port_number.png)
+    :::image type="content" source="media/bot-service-debug-emulator/java_port_number.png" alt-text="Java port number":::
 
 ### [Python](#tab/python)
 
@@ -84,7 +84,7 @@ To run a bot using command line, do the following:
 
 - Copy the port number that restify is listening on.
 
-    ![JS Port Number](media/bot-service-debug-emulator/js_port_number.png)
+    :::image type="content" source="media/bot-service-debug-emulator/python_port_number.png" alt-text="Python port number":::
 
 ---
 
@@ -112,12 +112,12 @@ If a bot requires authentication, displaying a login dialog, you must configure 
 #### Using a sign-in verification code
 
 1. Start the Emulator.
-1. In the Emulator, click the gear icon in the bottom left, or the **Emulator Settings** tab in the upper right.
-1. Check the box by **Use a sign-in verification code for OAuthCards**.
-1. Check the box by **Bypass ngrok for local address**
-1. Click the  **Save** button.
+1. In the Emulator, select **Settings** (the gear icon) in the left pane.
+1. Enable **Bypass ngrok for local addresses**.
+1. Enable **Use a sign-in verification code for OAuthCards**.
+1. Select **Save**.
 
-When you click the login button displayed by the bot, a validation code will be generated.
+When you select the login button displayed by the bot, a validation code will be generated.
 You'll enter the code in the bot input chat box for the authentication to take place.
 After that you can perform the allowed operations.
 
@@ -126,21 +126,21 @@ Alternatively, you can perform the steps described below.
 #### Using authentication tokens
 
 1. Start the Emulator.
-1. In the Emulator, click the gear icon in the bottom left, or the **Emulator Settings** tab in the upper right.
-1. Check the box by **Use version1.0 authentication tokens**.
-1. Enter the local path to the **ngrok** tool. For more the tool information, see [ngrok](https://ngrok.com/).
-1. Check the box by **Run ngrok when the Emulator starts up**.
-1. Click the  **Save** button.
+1. In the Emulator, select **Settings** (the gear icon) in the left pane.
+1. Enter the local path to ngrok. For more information about ngrok, see [ngrok](https://ngrok.com/).
+1. Enable **Run ngrok when the Emulator starts up**.
+1. Enable **Use version 1.0 authentication tokens**.
+1. Select **Save**.
 
-When you click the login button displayed by the bot, you will be asked to enter your credentials. An authentication token is generated. After that you can perform the allowed operations.
+When you select the login button displayed by the bot, you will be asked to enter your credentials. An authentication token is generated. After that you can perform the allowed operations.
 
-![Emulator startup window](media/emulator-v4/emulator-welcome.png)
+:::image type="content" source="media/emulator-v4/emulator-welcome.png" alt-text="Emulator startup window":::
 
 To connect to a bot running locally, select **Open bot**. Add the port number your copied earlier into the following URL and paste the updated URL in the Bot URL bar:
 
 `http://localhost:<port number>/api/messages`
 
-![Emulator open-a-bot dialog](media/bot-service-debug-emulator/open_bot_emulator.png)
+:::image type="content" source="media/bot-service-debug-emulator/open_bot_emulator.png" alt-text="Emulator open-a-bot dialog":::
 
 If your bot is running with [Microsoft Account (MSA) credentials](#use-bot-credentials), enter these credentials too.
 
@@ -157,54 +157,49 @@ For more information, see [Create an Azure AD identity provider application](bot
 
 ## View detailed Message Activities with the Inspector
 
-Send a message to your bot and the bot should respond back. You can click on the message bubble within the conversation window and inspect the raw JSON activity using the **INSPECTOR** feature to the right side of the window. When selected, the message bubble will turn yellow and the activity JSON object will be displayed to the left of the chat window. The JSON information includes key metadata, including the channel ID, activity type, conversation ID, the text message, endpoint URL, and so on. You can inspect activities sent from the user, as well as activities the bot responds with.
+Send a message to your bot and the bot should respond back. You can select the message bubble within the conversation window and inspect the raw JSON activity using the **INSPECTOR** feature to the right side of the window. When selected, the message bubble will turn yellow and the activity JSON object will be displayed to the left of the chat window. The JSON information includes key metadata, including the channel ID, activity type, conversation ID, the text message, endpoint URL, and so on. You can inspect activities sent from the user, as well as activities the bot responds with.
 
-![Emulator Message Activity](media/emulator-v4/emulator-view-message-activity-03.png)
+:::image type="content" source="media/emulator-v4/emulator-view-message-activity-03.png" alt-text="Emulator message activity JSON":::
 
 > [!TIP]
 > You can debug state changes in a bot connected to a channel by adding [Inspection Middleware](bot-service-debug-inspection-middleware.md) to the bot.
 
 ## Inspect services
 
-With the v4 Emulator you can also inspect the JSON responses from LUIS and QnA. Using a bot with a connected language service, you can select **trace** in the LOG window to the bottom right. This new tool also provides features to update your language services directly from the Emulator.
+With the v4 Emulator you can also inspect the JSON responses from LUIS and QnA Maker. Using a bot with a connected language service, you can select **trace** in the LOG window to the bottom right. This new tool also provides features to update your language services directly from the Emulator.
 
-![LUIS Inspector](media/emulator-v4/emulator-luis-inspector.png)
+:::image type="content" source="media/emulator-v4/emulator-luis-inspector.png" alt-text="LUIS Inspector":::
 
 With a connected LUIS service, you'll notice that the trace link specifies **Luis Trace**. When selected, you'll see the raw response from your LUIS service, which includes intents, entities along with their specified scores. You also have the option to re-assign intents for your user utterances.
 
-![QnA Inspector](media/emulator-v4/emulator-qna-inspector.png)
+:::image type="content" source="media/emulator-v4/emulator-qna-inspector.png" alt-text="QnA Inspector":::
 
-With a connected QnA service, the log will display **QnA Trace**, and when selected you can preview the question and answer pair associated with that activity, along with a confidence score. From here, you can add alternative question phrasing for an answer.
+With a connected QnA Maker service, the log will display **QnA Trace**. When selected, you can preview the question and answer pair associated with that activity, along with a confidence score. From here, you can add alternative question phrasing for an answer.
 
 ### Login to Azure
 
-You can use Emulator to login in to your Azure account. This is particularly helpful for you to add and manage services your bot depends on. Log into Azure by following these steps:
+You can use the Emulator to sign in to your Azure account. This is particularly helpful for you to add and manage services your bot depends on. Log into Azure by following these steps:
 
-1. Click on File -> Sign in with Azure
+1. Select **File**, then **Sign in with Azure**.
 
-    ![Emulator sign in with Azure](media/emulator-v4/emulator-azure-login.png)
+    :::image type="content" source="media/emulator-v4/emulator-azure-login.png" alt-text="Emulator sign in with Azure":::
 
-1. On the welcome screen click on Sign in with your Azure account. You can optionally have Emulator keep you signed in across Emulator application restarts.
+1. On the **Welcome** screen, select **Sign in with your Azure account**. You can optionally have Emulator keep you signed in across Emulator application restarts.
 
-    ![Emulator Azure sign in success](media/emulator-v4/emulator-azure-login-success.png)
+    :::image type="content" source="media/emulator-v4/emulator-azure-login-success.png" alt-text="Emulator Azure sign in success":::
 
 ## Disabling data collection
 
 If you decide that you no longer want to allow the Emulator to collect usage data, you can easily disable data collection by following these steps:
 
-1. Navigate to the Emulator's settings page by clicking on the Settings button (gear icon) in the nav bar on the left side.
+1. In the Emulator, select **Settings** (the gear icon) in the left pane.
 
-    ![Emulator settings button](media/emulator-v4/emulator-disable-data-1.png)
+    :::image type="content" source="media/emulator-v4/emulator-disable-data-1.png" alt-text="Emulator settings button":::
 
-2. Uncheck the checkbox labeled *Help improve the Emulator by allowing us to collect usage data* under the **Data Collection** section.
+1. Under **Data Collection**, deselect **Help improve the Emulator by allowing us to collect usage data**.
+1. Select **Save**.
 
-    ![Emulator settings, data collection](media/emulator-v4/emulator-disable-data-2.png)
-
-3. Click the "Save" button.
-
-    ![Emulator settings, save button](media/emulator-v4/emulator-disable-data-3.png)
-
-If you change your mind, you can always enable it by re-checking the checkbox.
+If you change your mind, you can reenable data collection later.
 
 ## Additional resources
 
