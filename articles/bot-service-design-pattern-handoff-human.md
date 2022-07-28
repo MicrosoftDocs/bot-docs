@@ -1,5 +1,5 @@
 ---
-title: Transition conversations from bot to human - Bot Service
+title: Transition conversations from bot to human
 description: Learn how to design for situations where a user starts a conversation with a bot and then must be handed off to a human.
 author: JonathanFingold
 ms.author: iawilt
@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 07/27/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -15,31 +15,31 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-Regardless of how much artificial intelligence a bot possesses, there may still be times when it needs to hand off the conversation to a human being. This can be necessary either because the bot does not understand the user (because of an AI limitation), or if the request cannot be automated and requires a human action. In such cases the bot should recognize when it needs to hand off and provide the user with a smooth transition.
+Regardless of how much artificial intelligence a bot possesses, it might still need to hand off the conversation to a human being. Such a hand off might be necessary if the bot doesn't understand the user (because of an AI limitation), or if the request can't be automated and requires a human action. In such cases, the bot should recognize when it needs to hand off the conversation and provide the user with a smooth transition.
 
-Microsoft Bot Framework is an open platform that allows developers to integrate with a variety of agent engagement platforms.
+Microsoft Bot Framework is an open platform that allows developers to integrate with various agent engagement platforms.
 
 ## Handoff integration models
 
 Microsoft Bot Framework supports two models for integration with agent engagement platforms. The handoff protocol is identical for both models, however the onboarding details differ between the models and the agent engagement platforms.
 
-The goal is not to offer a universal solution for integration with any customer's system, but rather to provide a **common language** and **best practices** for bot developers and system integrators building conversational AI systems with human in the loop.
+The goal isn't to offer a universal solution for integration with any customer's system, but rather to provide a _common language_ and _best practices_ for bot developers and system integrators with which to build conversational AI systems with a human in the loop.
 
 ### Bot as an agent
 
-In the first model, known as "Bot as an agent", the bot joins the ranks of the live agents connected to the agent hub and responds to user requests as if the requests came from any other Bot Framework channel. The conversation between the user and the bot can be escalated to a human agent, at which point the bot disengages from the active conversation.
+In the first model, known as _bot as an agent_, the bot joins the ranks of the live agents connected to the agent hub and responds to user requests as if the requests came from any other Bot Framework channel. The conversation between the user and the bot can be escalated to a human agent, at which point the bot disengages from the active conversation.
 
-The main advantage of this mode is in its simplicity – an existing bot can be onboarded to the agent hub with minimal effort, with all of the complexity of message routing taken care of by the agent hub.
+The main advantage of this model is its simplicity&mdash;you can add an existing bot to the agent hub with minimal effort, and the agent hub will handle the complexity of message routing.
 
-![Bot as an agent scenario](media/designing-bots/patterns/bot-as-agent-2.PNG)
+:::image type="content" source="media/designing-bots/patterns/bot-as-agent-2.PNG" alt-text="Diagram of an agent hub that can direct messages to a bot or human agents.":::
 
 ### Bot as a proxy
 
-The second model is known as "Bot as a proxy". The user talks directly to the bot, until the bot decides that it needs help from a human agent. The message router component in the bot redirects the conversation to the agent hub, which dispatches it to the appropriate agent. The bot stays in the loop and can collect the transcript of the conversation, filter messages, or provide additional content to both the agent and the user.
+The second model is known as _bot as a proxy_. The user talks directly to the bot, until the bot decides that it needs help from a human agent. The message router component in the bot redirects the conversation to the agent hub, which dispatches it to the appropriate agent. The bot stays in the loop and can collect the transcript of the conversation, filter messages, or provide additional content to both the agent and the user.
 
-Flexibility and control are the main advantages of this model. The bot can support a variety of channels and have control over how the conversations are escalated and routed between the user, the bot, and the agent hub.
+Flexibility and control are the main advantages of this model. The bot can support multiple channels and have control over how the conversations are escalated and routed between the user, the bot, and the agent hub.
 
-![Bot as a proxy scenario](media/designing-bots/patterns/bot-as-proxy-2.PNG)
+:::image type="content" source="media/designing-bots/patterns/bot-as-proxy-2.PNG" alt-text="Diagram of a bot that can route messages to an agent hub.":::
 
 ## Handoff protocol
 
@@ -47,23 +47,19 @@ The protocol is centered around events for initiation, sent by the bot to the ch
 
 ### Handoff initiation
 
-The *Handoff Initiation* event is created by the bot to initiate handoff.
+A _handoff initiation_ event is created by the bot to initiate handoff.
 
-The event contains two components:
+The event can include:
 
-- The **context of the handoff request** that is necessary to route the conversation to the right agent.
-- The **transcript of the conversation**. The agent can read the conversation that took place between the customer and the bot before the handoff was initiated.
+- The context of the handoff request, to route the conversation to an appropriate agent.
+- A transcript of the conversation, so an agent can read the conversation that took place between the customer and the bot before the handoff was initiated.
 
-The following are the handoff initiation event fields:
+The following are common handoff initiation event properties:
 
-- **Name** - The `name` is a **required** field that is set to `"handoff.initiate"`.
-- **Value** - The `value` field is an object containing agent hub-specific JSON content, such as required agent skill and so on.  This field is **optional**.
-
-    ```json
-    { "Skill" : "credit cards" }
-    ```
-
-- **Attachments** - The `attachments` is an **optional** field containing the list of `Attachment` objects. Bot Framework defines the "Transcript" attachment type that is used to send conversation transcript to the agent hub if required. Attachments can be sent either inline (subject to a size limit) or offline by providing `ContentUrl`.
+- Name: Required, the _name_ property must be set to "handoff.initiate".
+- Conversation: Required, the _conversation_ property describes the conversation in which the activity exists. Conversation _must_ include the conversation `Id`.
+- Value: Optional, the _value_ property can contain agent hub-specific JSON content that the hub can use to route the conversation to a relevant agent.
+- Attachments: Optional, the _attachments_ property can include a transcript as an attachment. The Bot Framework defines a _transcript_ attachment type. An attachment can be sent either inline (subject to a size limit) or offline by providing `ContentUrl`.
 
     ```csharp
     handoffEvent.Attachments = new List<Attachment> {
@@ -71,16 +67,15 @@ The following are the handoff initiation event fields:
             Content = transcript,
             ContentType = "application/json",
             Name = "Transcript",
-        }};
+        }
+    };
     ```
 
     > [!NOTE]
     > Agent hubs **must ignore** attachment types they don't understand.
 
-- **Conversation** - The `conversation` is a **required** field of type `ConversationAccount` describing the conversation being handed over. Critically, it MUST include the conversation `Id` that can be used for correlation with the other events.
-
 When a bot detects the need to hand the conversation off to an agent, it signals its intent by sending a handoff initiation event.
-In C# an higher level API `CreateHandoffInitiation` method can be used as demonstrated in the code snippet below.
+The SDK for C# includes a `CreateHandoffInitiation` method to create a valid handoff initiation event.
 
 ```csharp
 var activities = GetRecentActivities();
@@ -93,44 +88,41 @@ await turnContext.SendActivityAsync(handoffEvent);
 
 ### Handoff status
 
-The *Handoff Status* event is sent to the bot by the agent hub. The event informs the bot about the status of the initiated handoff operation.
+A _handoff status_ event is sent to the bot by the agent hub. The event informs the bot about the status of the initiated handoff operation.
 
 > [!NOTE]
-> Bots are **not required** to handle the event, however they **must not** reject it.
+> Bots are _not required_ to handle a handoff status event; however, they _must not_ reject it.
 
-The following are the handoff status event fields:
+The following are common handoff status event fields:
 
-- **Name** - The `name` is a **required** field that is set to `"handoff.status"`.
+- Name: Required, the _name_ property must be set to "handoff.status".
+- Conversation: Required, the _conversation_ property describes the conversation in which the activity exists. Conversation _must_ include the conversation `Id`.
+- Value: Required, the _value_ property that describes the current status of the handoff operation. The value has the following properties.
+  - State: Required, the _state_ property can have one of these values:
 
-- **Value** - The `value` is a **required** field describing the current status of the handoff operation. It is a JSON object containing the **required** field `state` and an optional field `message`, as defined below.
+    | Value       | Meaning                                                                                                          |
+    |:------------|:-----------------------------------------------------------------------------------------------------------------|
+    | "accepted"  | An agent accepted the request and taken control of the conversation.                                             |
+    | "failed"    | The handoff request failed. The _message_ property might contain additional information relevant to the failure. |
+    | "completed" | The handoff request completed.                                                                                   |
 
-The `state` has one of the following values:
+  - Message: Optional, the _message_ property is an object defined by the agent hub.
 
-- `accepted`- An agent has accepted the request and taken control of the conversation.
-- `failed`- Handoff request has failed. The `message` might contain additional information relevant to the failure.
-- `completed` - Handoff request has completed.
-
-The format and possible value of the `message` field are unspecified.
-
-- Successful handoff completion:
+  Here are some example value objects:
 
     ```json
     { "state" : "completed" }
     ```
 
-- Handoff operation failed due to a timeout:
-
     ```json
     { "state" : "failed", "message" : "Cannot find agent with requested skill" }
     ```
 
-- **Conversation** -`Conversation`is a **required** field of type `ConversationAccount` describing the conversation that has been accepted or rejected. The `Id` of the conversation MUST be the same as in the HandoffInitiation that initiated the handoff.
-
 ## Handoff library
 
-The [Handoff Library](https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/handoff-library) has been created to complement the Bot Framework v4 SDK in supporting handoff; specifically:
+The [Handoff Library](https://github.com/microsoft/BotBuilder-Samples/tree/main/experimental/handoff-library) has been created to complement the Bot Framework v4 SDK in supporting handoff; specifically:
 
-- Implements the additions to the Bot Framework SDK to support handoff to an agent (also known as *escalation*.
+- Implements the additions to the Bot Framework SDK to support handoff to an agent (also known as _escalation_).
 - Contains definitions of three event types for signaling handoff operations.
 
 > [!NOTE]

@@ -397,7 +397,7 @@ See the [Bot channels registration][bot-channels-registration] article for detai
 
 #### LUIS key and hostname
 
-The *LuisAPIKey* is the `subscriptionKey`, and the *LuisAPIHostName* is the `ENDPOINT` value. Both values are found in the **Keys and Endpoint** blade in the Azure cognitive services LUIS authoring resource page as shown in the screen shot below:
+The *LuisAPIKey* is the `subscriptionKey`, and the *LuisAPIHostName* is the `ENDPOINT` value. Both values are found in the **Keys and Endpoint** blade in the Azure cognitive services LUIS authoring resource page as shown in the screenshot below:
 
 ![Keys and endpoint for LUIS resource in Azure. Values for LuisAPIKey and LuisAPIHostName.](./media/adaptive-dialogs/keys-and-endpoint-cross-train.png)
 
@@ -407,7 +407,7 @@ The _luis_ section contains all luis application IDs used by your bot. These val
 
 #### QnA Maker hostname and endpoint key
 
-`QnAHostName` is the **Host** value and `QnAEndpointKey` is the **EndpointKey** value, both found in QnA Maker, accessed by selecting the **view code** button when in the **My knowledge bases** page as shown in the screen shot below:
+`QnAHostName` is the **Host** value and `QnAEndpointKey` is the **EndpointKey** value, both found in QnA Maker, accessed by selecting the **view code** button when in the **My knowledge bases** page as shown in the screenshot below:
 
 ![QnA Maker View Code](./media/qna-maker-view-code.png)
 

@@ -583,19 +583,19 @@ When this dialog starts, its `OnBeginDialog` trigger executes:
 ```CS
 new SetProperties()
 {
-	Assignments = new List<PropertyAssignment>()
-	{
-		new PropertyAssignment()
-		{
-			Property = "user.profile.name",
-			Value = "=coalesce(dialog.userName, @personName)"
-		},
-		new PropertyAssignment()
-		{
-			Property = "user.profile.age",
-			Value = "=coalesce(dialog.userAge, @age)"
-		}
-	}
+    Assignments = new List<PropertyAssignment>()
+    {
+        new PropertyAssignment()
+        {
+            Property = "user.profile.name",
+            Value = "=coalesce(dialog.userName, @personName)"
+        },
+        new PropertyAssignment()
+        {
+            Property = "user.profile.age",
+            Value = "=coalesce(dialog.userAge, @age)"
+        }
+    }
 },
 new TextInput()
 {
@@ -639,13 +639,13 @@ new TextInput()
 
 <!--
 new SetProperty().configure({
-	property: new StringExpression("user.profile.name"),
-	value: new ValueExpression("=coalesce(dialog.userName, @personName)")
+    property: new StringExpression("user.profile.name"),
+    value: new ValueExpression("=coalesce(dialog.userName, @personName)")
 }),
 new SetProperty().configure(
 {
-	property: new StringExpression("user.profile.age"),
-	value: new ValueExpression("=coalesce(dialog.userAge, @age)")
+    property: new StringExpression("user.profile.age"),
+    value: new ValueExpression("=coalesce(dialog.userAge, @age)")
 }),
 
 ---
@@ -657,7 +657,7 @@ new SetProperty().configure(
 1. Run the sample locally on your machine.
 1. Start the Emulator, connect to your bot, and send messages as shown below.
 
-The screen shot shown below verifies that you can interrupt the conversational flow by requesting help even though the currently active adaptive dialog does not contain the corresponding trigger.
+The screenshot shown below verifies that you can interrupt the conversational flow by requesting help even though the currently active adaptive dialog does not contain the corresponding trigger.
 
 ![test adaptive dialog interruption sample](./media/adaptive-dialogs/test-interruption-bot.png)
 
