@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/08/2021
+ms.date: 07/27/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -16,12 +16,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-<!-- What is it and why use it -->
-
 A _trace activity_ is an activity that your bot can send to the Bot Framework Emulator.
 You can use trace activities to interactively debug a bot, as they allow you to view information about your bot while it runs locally.
-
-<!-- Details -->
 
 Trace activities are sent only to the Emulator and not to any other client or channel.
 The Emulator displays them in the log but not the main chat panel.
@@ -29,7 +25,7 @@ The Emulator displays them in the log but not the main chat panel.
 - Trace activities sent via the turn context are sent through the _send activity handlers_ registered on the turn context.
 - Trace activities sent via the turn context are associated with the inbound activity, by applying the conversation reference, if there was one.
   For a proactive message, the _reply to ID_ will be a new GUID.
-- Regardless of how it is sent, a trace activity never sets the _responded_ flag.
+- Regardless of how it's sent, a trace activity never sets the _responded_ flag.
 
 ## To use a trace activity
 
@@ -38,11 +34,11 @@ In order to see a trace activity in the Emulator, you need a scenario in which y
 To send a trace activity from your bot:
 
 1. Create a new activity.
-   - Set its _type_ property to "trace". This is required.
-   - Optionally set its _name_, _label_, _value_, and _value type_ properties, as appropriate for the trace.
+   - Set its required _type_ property to "trace".
+   - Optionally, set its _name_, _label_, _value_, and _value type_ properties, as appropriate for the trace.
 1. Use the _turn context_ object's _send activity_ method to send the trace activity.
    - This method adds values for the remaining required properties of the activity, based on the incoming activity.
-     These include the _channel ID_, _service URL_, _from_, and _recipient_ properties.
+     These properties include the _channel ID_, _service URL_, _from_, and _recipient_ properties.
 
 To view a trace activity in the Emulator:
 
@@ -51,16 +47,16 @@ To view a trace activity in the Emulator:
    - Interact with the bot and use the steps in your scenario to generate the trace activity.
    - When your bot emits the trace activity, the trace activity is displayed in the Emulator log.
 
-Here is a trace activity you might see if you ran the Core bot without first setting up the QnAMaker knowledge base that the bot relies upon.
+Here's a trace activity you might see if you ran the Core bot without first setting up the QnAMaker knowledge base that the bot relies upon.
 
-![Screen shot of the Emulator](./media/using-trace-activities.png)
+:::image type="content" source="./media/using-trace-activities.png" alt-text="Screenshot of trace activity output in the Emulator.":::
 
 ## Add a trace activity to the adapter's on-error handler
 
 The adapter's _on turn error_ handler catches any otherwise uncaught exception thrown from the bot during a turn.
-This is a good place for a trace activity, as you can send a user-friendly message to the user and send debugging information about the exception to the Emulator.
+The error handler is a good place for a trace activity, as you can send a user-friendly message to the user and send debugging information about the exception to the Emulator.
 
-This example code is from the **Core Bot** sample. See the complete sample in [**C#**](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot) or [**JavaScript**](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot) or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/13.core-bot). For Java the code below is from the SDK code [**Java**](https://github.com/microsoft/botbuilder-java).
+This example code is from the **Core Bot** sample. See the complete sample in [**C#**](https://github.com/Microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/13.core-bot), [**JavaScript**](https://github.com/Microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/13.core-bot), [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/13.core-bot), or [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/13.core-bot).
 
 # [C#](#tab/csharp)
 
@@ -80,13 +76,11 @@ The adapter's **onTurnError** handler creates the trace activity to include the 
 
 # [Java](#tab/Java)
 
-The adapter's **onTurnError** handler creates the trace activity to include the exception information and sends it to the Emulator. In the Java SDK an AdapterWithErrorHandler is included as part of the SDK in the com.microsoft.bot.integration package. The source code for the default adapter is shown below. You can  develop your own custom AdapterWithErrorHandler to provide any extended or additional functionality that might be desired.
+In the Java SDK, an `AdapterWithErrorHandler` class is included as part of the SDK in the **com.microsoft.bot.integration** package.
+The adapter's **onTurnError** handler creates the trace activity to include the exception information and sends it to the Emulator.
+The source code for the default adapter is shown below.
 
-**AdapterWithErrorHandler.cs**
-
-<!--Copied from:
-https://github.com/microsoft/botbuilder-java/blob/main/libraries/bot-integration-core/src/main/java/com/microsoft/bot/integration/AdapterWithErrorHandler.java#L68-L89
--->
+**AdapterWithErrorHandler.java**
 
 ```java
 setOnTurnError((turnContext, exception) -> {
@@ -124,7 +118,7 @@ The adapter's **on_error** handler creates the trace activity to include the exc
 
 ---
 
-## Additional resources
+## Next steps
 
 - How to [Debug a bot with inspection middleware](../bot-service-debug-inspection-middleware.md) describes how to add middleware that emits trace activities.
 - For debugging a deployed bot, you can use Application Insights. For more information, see [Add telemetry to your bot](bot-builder-telemetry.md).

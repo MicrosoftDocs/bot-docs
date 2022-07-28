@@ -49,7 +49,7 @@ All customer data is encrypted with two layers of encryption in Azure Bot Servic
 
 Using customer-managed keys with Azure Bot Service requires that you enable two properties on the Azure Key Vault instance you plan to use to host your encryption keys: **Soft delete** and **Purge protection**. These features ensure that if for some reason your key is accidentally deleted, you can recover it. For more information about soft delete and purge protection, see the [Azure Key Vault soft-delete overview](/azure/key-vault/general/soft-delete-overview).
 
-:::image type="content" source="media/key-vault/encryption-settings.png" alt-text="Screen shot of soft delete and purge protection enabled":::
+:::image type="content" source="media/key-vault/encryption-settings.png" alt-text="Screenshot of soft delete and purge protection enabled.":::
 
 If you're using an existing Azure Key Vault instance, you can verify that these properties are enabled by looking at the **Properties** section on the Azure portal. If any of these properties aren't enabled, see the **Key Vault** section in [How to enable soft delete and purge protection](/azure/key-vault/general/key-vault-recovery).
 
