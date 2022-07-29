@@ -1,10 +1,16 @@
+---
+description: Procedure for getting C# bot templates by various means, part of the quickstart to create a basic bot.
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: include
+ms.date: 07/28/2022
+---
+
 #### [Visual Studio](#tab/vs)
 
 In Visual Studio, create a new bot project using the **Echo Bot (Bot Framework v4 - .NET Core 3.1)** template. To see only bot templates, choose **AI Bots** from the project types.
-
-:::image type="content" source="../../../media/azure-bot-quickstarts/bot-builder-dotnet-project-vs2019.png" alt-text="Visual Studio create a new project dialog":::
-
-Thanks to the template, your project contains all the necessary code to create the bot in this quickstart. You don't need any additional code to test your bot.
 
 #### [VS Code](#tab/vscode)
 
@@ -29,6 +35,8 @@ Make sure that [.NET Core 3.1](https://dotnet.microsoft.com/download) is install
    ```
 
 ---
+
+Thanks to the template, your project contains all the necessary code to create the bot in this quickstart. You don't need any more code to test your bot.
 
 > [!TIP]
 > If you create a _Core_ bot:
