@@ -14,7 +14,7 @@ ms.date: 11/01/2021
 
 Some channels allow your bot to send _rich cards_ to users. A rich card is an attachment that contains interactive elements, such as buttons, text, images, audio, video, and so on.
 
-This article describes how to create rich cards that you can attachment to a message.
+This article describes how to create rich cards that you can attach to a message.
 See how to [add media attachments to messages](bot-framework-rest-connector-add-media-attachments.md) for specific instructions on adding an attachment to a message.
 
 ## Types of rich cards
@@ -264,9 +264,9 @@ The following example shows a single Adaptive Card attachment object, representi
 
 ```
 
-The resulting card contains a title, information about who created the card (their name and avatar), when the card was created, a description of the work assignments, and information related to the assignment. There are also buttons which can be clicked to either comment on the work assignment or view it:
+The resulting card contains a title, information about who created the card (their name and avatar), when the card was created, a description of the work assignments, and information related to the assignment. There are also buttons that can be clicked to either comment on the work assignment or view it:
 
-![Adaptive Card calendar reminder](../media/adaptive-card-reminder.png)
+:::image type="content" source="../media/adaptive-card-reminder.png" alt-text="Example calendar reminder as an Adaptive Card.":::
 
 ## Additional resources
 

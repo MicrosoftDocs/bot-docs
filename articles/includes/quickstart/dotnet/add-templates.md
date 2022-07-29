@@ -1,3 +1,13 @@
+---
+description: Procedure for getting C# bot templates by various means, part of the quickstart to create a basic bot.
+author: JonathanFingold
+ms.author: iawilt
+manager: shellyha
+ms.reviewer: micchow
+ms.topic: include
+ms.date: 07/28/2022
+---
+
 #### [Visual Studio](#tab/vs)
 
 - [Visual Studio 2019 or later](https://www.visualstudio.com/downloads)
@@ -9,14 +19,15 @@ To add the bot templates to Visual Studio, download and install the [Bot Framewo
 
 #### [VS Code / CLI](#tab/vscode+cli)
 
-.NET Core Templates will help you to quickly build new conversational AI bots using Bot Framework v4. As of May 2020, these templates and the code they generate require .NET Core 3.1.
+.NET Core Templates will help you to quickly build new conversational AI bots using Bot Framework v4.
+As of May 2020, these templates and the code they generate require .NET Core 3.1.
 
 To install the Bot Framework templates:
 
 1. Open a console window.
 
 1. Download and install [.NET Core SDK download](https://dotnet.microsoft.com/download) version 3.1 or later.
-1. You can use this command to determine which version of the .NET Core command-line interface you have installed.
+1. You can use this command to determine which versions of the .NET Core command-line interface are installed.
 
    ```console
    dotnet --version
@@ -37,6 +48,6 @@ To install the Bot Framework templates:
    ```
 
 > [!NOTE]
-> The above installation steps will install all three Bot Framework templates. You don't need to install all the templates and can install just the ones you will use. This article makes use of the _echo bot_ template.
+> The steps above install all three Bot Framework templates. You don't need to install all the templates and can install just the ones you will use. This article makes use of the _echo bot_ template.
 
 ---
