@@ -1,5 +1,5 @@
 ---
-title: Bot Framework channels security - Bot Service
+title: Bot Framework channels security
 description: Learn about potential security risks when users connect to a bot using the allowed channels
 author: JonathanFingold
 ms.author: iawilt
@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 08/01/2022
 ---
 
 # Direct Line enhanced authentication
@@ -28,7 +28,7 @@ The code in this article is based on the sample: [MVC DirectLine token controlle
 
 ## Impersonation
 
-Impersonation refers to the action of an attacker that makes the bot think he is someone else. For example, in Web Chat, the attacker can impersonate someone else by **changing the user ID** of the Web Chat instance.
+Impersonation refers to the action of an attacker that makes the bot think they're someone else. For example, in Web Chat, the attacker can impersonate someone else by **changing the user ID** of the Web Chat instance.
 
 ### Impersonation mitigation
 
@@ -120,10 +120,7 @@ When a bot asks the channel user A to sign-in to an identity provider, the sign-
 
 In the Web Chat control, there are two mechanisms to assure that the proper user is signed in.
 
-1. **Magic code**. At the end of the sign-in process, the user is presented with a randomly generated 6-digit code (*magic code*). The user must type this code in the conversation to complete the sign-in process. This tends to result in a bad user's experience. Additionally, it is still susceptible to phishing attacks. A malicious user can trick another user to sign-in and obtain the magic code through phishing.
-
-    >[!WARNING]
-    > The use of the magic code has been deprecated. Instead, it's recommended to use the **Direct Line enhanced authentication** approach, described below.
+1. **Magic code**. At the end of the sign-in process, the user is presented with a randomly generated 6-digit code (*magic code*). The user must type this code in the conversation to complete the sign-in process. This tends to result in a bad user's experience. Additionally, it's still susceptible to phishing attacks. A malicious user can trick another user to sign-in and obtain the magic code through phishing.
 
 1. **Direct Line enhanced authentication**. Because of the issues with the *magic code* approach, Azure Bot Service removed its need. Azure Bot Service guarantees that the sign-in process can only be completed in the **same browser session** as the Web Chat itself.
 To enable this protection, you must start Web Chat with a **Direct Line token** that contains a **list of trusted domains that can host the bot's Web Chat client**. With enhanced authentication options, you can statically specify the trusted domains (trusted origins) list in the Direct Line configuration page. See [Configure enhanced authentication](../bot-service-channel-connect-directline.md#configure-enhanced-authentication) section.
