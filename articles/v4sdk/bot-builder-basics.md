@@ -1,6 +1,6 @@
 ---
-title: Basics of the Bot Framework Service
-description: Become familiar with the Bot Framework Service. Understand how bots communicate with users, and learn about activities, channels, HTTP POST requests, and more.
+title: Basics of the Microsoft Bot Framework
+description: Become familiar with the Microsoft Bot Framework. Understand how bots communicate with users, and learn about activities, channels, HTTP POST requests, and more.
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
@@ -12,7 +12,7 @@ monikerRange: 'azure-bot-service-4.0'
 ms.custom: abs-meta-21q1
 ---
 
-# Basics of the Bot Framework Service
+# Basics of the Microsoft Bot Framework
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
@@ -97,8 +97,6 @@ The SDK provides a couple different paradigms for managing your bot logic.
 - The [dialogs library](bot-builder-concept-dialog.md) provides a state-based model to manage a long-running conversation with the user.
   - Use an activity handler and a _component dialog_ for largely sequential conversations.
     See [about component and waterfall dialogs](bot-builder-concept-waterfall-dialogs.md) for more information.
-  - Use a _dialog manager_ and an _adaptive dialog_ for flexible conversation flow that can handle a wider range of user interaction. <!-- Your bot class can forward activities to the dialog manager directly or pass them through an activity handler first. -->
-    See the [introduction to adaptive dialogs](bot-builder-adaptive-dialog-introduction.md) for more information.
 - Implement your own bot class and provide your own logic for handling each turn. For an example, see how to [create your own prompts to gather user input](bot-builder-primitive-prompts.md).
 
 ### The bot adapter
