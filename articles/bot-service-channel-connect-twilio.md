@@ -8,14 +8,14 @@ manager: shellyha
 ms.reviewer: mainguy
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 03/22/2022
+ms.date: 08/05/2022
 ---
 
 # Connect a bot to Twilio
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-You can configure your bot to communicate with people using the Twilio cloud communication platform. This article describes how configure a bot to communicate using Twilio by creating a TwiML application and connecting the bot in the Azure portal.
+You can configure your bot to communicate with people using the Twilio cloud communication platform. This article describes how to configure a bot to communicate using Twilio by creating a TwiML application and connecting the bot in the Azure portal.
 
 ## Prerequisites
 
@@ -28,7 +28,9 @@ You can configure your bot to communicate with people using the Twilio cloud com
 1. Follow the instructions to [create a TwiML application](https://support.twilio.com/hc/articles/223180928-How-Do-I-Create-a-TwiML-App-).
     - Enter a **Friendly Name** for your TwiML app.
     - Under **Voice Configuration**, leave the **Request URL** empty
-    - Under **Messaging Configuration**, set the **Request URL** to `https://sms.botframework.com/api/sms`.
+    - Under **Messaging Configuration**, set the **Request URL**:
+      - For a global bot, enter `https://sms.botframework.com/api/sms`.
+      - For a regional bot, enter `https://europe.sms.botframework.com/api/sms`.
 
 ### Select or add a phone number
 

@@ -24,7 +24,7 @@ Use an Azure Bot resource to register a bot with regional Azure Bot services. Ad
 
 Your bot can be hosted anywhere, even if you have a regional Azure Bot resource. To maintain complete end-to-end data residency, however, you should host your bot code in the same locality as your Azure Bot resource. For example, developers hosting bots in the European Union will want to ensure their bots are deployed in a region within EU geographical boundaries.
 
-For more information about deploying local bots, see [Deploy your bot in Azure](../bot-builder-deploy-az-cli.md).
+For more information about deploying regionalized bots, see [Provision and publish a bot](../provision-and-publish-a-bot.md).
 
 ## Register regional Azure bots
 
@@ -40,22 +40,3 @@ Sometimes a bot must access secured online resources on behalf of the user. [OAu
 
 - For information about which regions and clouds are supported, see [supported OAuth URLs](../ref-oauth-redirect-urls.md).
 - For information on how to add user authentication, see [Add authentication to a bot](bot-builder-authentication.md).
-
-## Regional Azure bot channels
-
-The regional Azure Bot Service supports the following channels:
-
-- [WebChat](../bot-service-channel-connect-webchat.md)
-- [DirectLine](../bot-service-channel-directline.md)
-- [DirectLine Speech](../bot-service-channel-connect-directlinespeech.md)
-- [Facebook](../bot-service-channel-connect-facebook.md)
-
-Further channel support may be added in the future. For more information, see the article about [managing channels](../bot-service-manage-channels.md).
-
-## Additional information
-
-For information about adding regionalization to Bot Framework Composer bots, see the relevant articles about adding regional settings, including:
-
-- [Create your first bot with Azure](/composer/quickstart-create-bot-with-azure.md) in Composer
-- [Provision Azure resources](/composer/how-to-provision-azure-resources.md) in Composer
-- [Publish your bot to Azure](/composer/how-to-publish-bot.md) from Composer

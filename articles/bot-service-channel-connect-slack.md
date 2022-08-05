@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: mainguy
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 03/22/2022
+ms.date: 08/05/2022
 ---
 
 # Connect a bot to Slack
@@ -43,7 +43,9 @@ Once the app is created, add a redirect URL to your app.
 
 1. Select **OAuth & Permissions**.
 1. In the resulting pane, under **Redirect URLs**, select **Add a new Redirect URL**.
-1. In the input box, enter `https://slack.botframework.com/` and select **Add**.
+1. In the input box, enter one of the following redirect URLs and select **Add**.
+    - For a global bot, enter `https://slack.botframework.com`.
+    - For a regional bot, enter `https://europe.slack.botframework.com`.
 1. Select **Save URLs**.
 
 ### Subscribe to bot events
@@ -53,7 +55,9 @@ Subscribe to events based on the features your bot will use in Slack.
 
 1. Select **Event Subscriptions**.
 1. In the resulting pane, toggle **Enable Events** to **On**.
-1. For **Request URL**, enter `https://slack.botframework.com/api/Events/{bot-name}`, where `{bot-name}` is the display name for your Azure Bot resource, without the braces.
+1. For **Request URL**, enter one of the following request URLs, where `{bot-name}` is the display name for your Azure Bot resource, without the braces.
+    - For a global bot, enter `https://slack.botframework.com/api/Events/{bot-name}`.
+    - For a regional bot, enter `https://europe.slack.botframework.com/api/Events/{bot-name}`.
 1. Under **Subscribe to bot events**, select **Add Bot User Event**, then subscribe to events. For example:
     - `member_joined_channel`
     - `member_left_channel`
@@ -75,7 +79,9 @@ After you subscribe to bot events, enable users to message your bot.
 Optionally, enable interactive messages.
 
 1. Select **Interactivity & Shortcuts**.
-1. For **Request URL**, enter `https://slack.botframework.com/api/Actions`.
+1. For **Request URL**:
+    - For a global bot, enter `https://slack.botframework.com/api/Actions`.
+    - For a regional bot, enter `https://europe.slack.botframework.com/Actions`.
 1. Select **Save changes**.
 
 ### Copy your app information
