@@ -1,6 +1,6 @@
 ---
 title: Create an Azure Bot resource in the Azure portal
-description: Learn how to create a bot resource for the Azure Bot Service, an integrated, dedicated bot development environment.
+description: Learn how to use the Azure portal to create a bot resource for the Azure Bot Service, an integrated, dedicated bot development environment.
 keywords: Quickstart, create bot resource, bot service, Azure Bot
 author: JonathanFingold
 ms.author: iawilt
@@ -8,17 +8,22 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: quickstart
 ms.service: bot-service
-ms.date: 06/06/2022
+ms.date: 07/22/2022
 ms.custom: abs-meta-21q1
 ---
 
-# Create an Azure Bot resource
+# Use the Azure portal to Create an Azure Bot resource
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-The _Azure Bot_ resource (_bot resource_) allows you to register your bot with Azure Bot Services and to connect your bot to channels. You can build, connect, and manage bots to interact with your users wherever they are, from your app or website to Teams, Messenger and many other channels. To learn how to create a bot, see the [Create a bot with the Bot Framework SDK](../bot-service-quickstart-create-bot.md) quickstart.
+The _Azure Bot_ resource (_bot resource_) allows you to register your bot with Azure Bot Services and to connect your bot to channels. You can build, connect, and manage bots to interact with your users wherever they are, from your app or website to Teams, Messenger and many other channels.
 
-This article describes how to create a bot resource through the Azure portal. For information on how to create a bot resource through the Azure CLI, see how to [Deploy your bot in Azure](../bot-builder-deploy-az-cli.md).
+This article describes how to create a bot resource through the Azure portal.
+
+- To learn how to create a bot, see the [Create a bot with the Bot Framework SDK](../bot-service-quickstart-create-bot.md) quickstart.
+- For information on how to provision and publish a bot to Azure, see how to [Deploy your bot in Azure](../bot-builder-deploy-az-cli.md).
+
+## Managing resources
 
 When you create a bot resource, Azure creates associated resources.
 Some of the resources created depend on how you decide to manage your bot's identity.
@@ -30,7 +35,6 @@ Some of the resources created depend on how you decide to manage your bot's iden
 - If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 - The Bot Framework SDK for C# or JavaScript version 4.15.0 or later, for user-assigned managed identity and single-tenant bots.
 
-<!-- ## Create the resource -->
 [!INCLUDE [azure bot resource](../includes/azure-bot-resource/azure-bot-resource.md)]
 
 ## Additional information

@@ -1,6 +1,6 @@
 ---
-title: Bot Framework channels security
-description: Learn about potential security risks when users connect to a bot using the allowed channels
+title: Direct Line enhanced authentication
+description: Learn about potential security risks when users connect to a bot and how Direct Line enhanced authentication can mitigate some risks.
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha

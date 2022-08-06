@@ -16,16 +16,6 @@
     href: v4sdk/abs-quickstart.md
   # - name: Create a bot using Azure PowerShell # Doesn't work, shouldn't have been added, will add back in when it works.
   #   href: powershell/bot-builder-powershell-quickstart.md
-- name: Tutorials
-  items:
-  - name: Provision a bot in Azure
-    displayName: create, create bot resources
-    href: tutorial-provision-a-bot.md
-  - name: Publish a bot to Azure
-    displayName: deploy, deploy a bot
-    href: tutorial-publish-a-bot.md
-  - name: Add QnA Maker and redeploy a bot
-    href: v4sdk/bot-builder-tutorial-add-qna.md
 - name: Samples
   items:
   - name: Bot Framework samples repo on GitHub
@@ -209,10 +199,18 @@
   - name: Deploy
     items:
     - name: Deploy your bot to Azure
-      href: bot-builder-deploy-az-cli.md
+      displayName: Provision and publish your bot to Azure
+      href: provision-and-publish-a-bot.md
+    - name: Provision an App Service resource
+      displayName: Create an App Service for a bot
+      href: provision-app-service.md
+    - name: Provision an Azure Bot resource
+      displayName: Create an Azure Bot resource
+      href: provision-azure-bot.md
     - name: Configure an Azure Government bot
       href: how-to-deploy-gov-cloud-high.md
     - name: Set up continuous deployment
+      displayName: Set up continuous integration and delivery, Set up CI/CD, Set up CICD
       href: bot-service-build-continuous-deployment.md
   - name: Manage
     items:
@@ -220,9 +218,8 @@
       href: bot-service-manage-overview.md
     - name: Register a bot with Azure
       href: bot-service-quickstart-registration.md
-    - name: Bot analytics
-      href: bot-service-manage-analytics.md
     - name: Configure bot settings
+      displayName: endpoint, icon
       href: bot-service-manage-settings.md
     - name: Channels
       items:
@@ -475,7 +472,7 @@
       href: https://github.com/Microsoft/botframework-sdk/blob/main/specs/transcript/transcript.md
   - name: Virtual Assistant
     href: v4sdk/bot-builder-virtual-assistant-introduction.md
-  - name: WebChat
+  - name: Web Chat
     items:
     - name: Overview
       href: v4sdk/bot-builder-webchat-overview.md
