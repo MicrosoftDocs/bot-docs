@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 12/06/2021
+ms.date: 08/08/2022
 ms.custom: abs-meta-21q1
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -48,7 +48,8 @@ how to [implement sequential conversation flow][simple-dialog], and how to [reus
   | Sample | BotBuilder version | Demonstrates |
   |:---|:---:|:---|
   | **Authentication** in [**C#**][cs-auth-sample] or [**JavaScript**][js-auth-sample] or [**Java**][java-auth-sample] or  [**Python**][python-auth-sample] | v4 | OAuthCard support |
-  | **Authentication MSGraph** in [**C#**][cs-msgraph-sample] or [**JavaScript**][js-msgraph-sample] or [**Java**][java-msgraph-sample] or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/24.bot-authentication-msgraph)| v4 |  Microsoft Graph API support with OAuth 2.0 |
+  | **Authentication for Microsoft Graph** in [**C#**][cs-msgraph-sample] or [**JavaScript**][js-msgraph-sample] or [**Java**][java-msgraph-sample] or [**Python**][python-msgraph-sample]| v4 |  Microsoft Graph API support with OAuth 2.0 |
+  | **Authentication for Microsoft Teams** in [**C#**][cs-teams-auth-sample] or [**JavaScript**][js-teams-auth-sample] or [**Java**][java-teams-auth-sample] or [**Python**][python-teams-auth-sample]| v4 |  Microsoft Graph API support with OAuth 2.0 |
 
   To run the samples referenced in this article, you need:
 
@@ -118,7 +119,7 @@ This section shows how to create an Azure AD identity provider that uses OAuth 2
       - **User.Read**
       - **User.ReadBasic.All**
 
-   1. Select **Add permissions**. (The first time a user accesses this app through the bot, they will need to grant consent.)
+   1. Select **Add permissions**. (The first time a user accesses this app through the bot, they'll need to grant consent.)
 
 You now have an Azure AD application configured.
 
@@ -143,8 +144,8 @@ The next step is to register your identity provider with your bot.
     1. **Token Exchange URL**. Leave it blank because it's used for SSO in Azure AD v2 only.
     1. **Tenant ID**. Enter the **directory (tenant) ID** that you recorded earlier for your Azure AD app or **common** depending on the supported account types selected when you created the Azure DD app. To decide which value to assign, follow these criteria:
 
-        - When creating the Azure AD app, if you selected *Accounts in this organizational directory only (Microsoft only - Single tenant)*, enter the **tenant ID** you recorded earlier for the Azure AD app.
-        - However, if you selected *Accounts in any organizational directory (Any Azure AD directory - Multi tenant and personal Microsoft accounts e.g. Xbox, Outlook.com)* or *Accounts in any organizational directory(Microsoft Azure AD directory - Multi tenant)*, enter the word **common** instead of a tenant ID. Otherwise, the Azure AD app will verify through the tenant whose ID was selected and exclude personal MS accounts.
+        - When creating the Azure AD app, if you selected **Accounts in this organizational directory only (Microsoft only - Single tenant)**, enter the tenant ID you recorded earlier for the Azure AD app.
+        - However, if you selected **Accounts in any organizational directory (Any Azure AD directory - Multi tenant and personal Microsoft accounts e.g. Xbox, Outlook.com)** or **Accounts in any organizational directory(Microsoft Azure AD directory - Multi tenant)**, enter `common` instead of a tenant ID. Otherwise, the Azure AD app will verify through the tenant whose ID was selected and exclude personal Microsoft accounts.
 
         This will be the tenant associated with the users who can be authenticated. For more information, see [Tenancy in Azure Active Directory](/azure/active-directory/develop/single-and-multi-tenant-apps).
 
@@ -171,8 +172,8 @@ The next step is to register your identity provider with your bot.
     1. For **Login URL**, enter `https://login.microsoftonline.com`.
     1.For **Tenant ID**, enter the **directory (tenant) ID** that you recorded earlier for your Azure AD app or **common** depending on the supported account types selected when you created the ADD app. To decide which value to assign, follow these criteria:
 
-        - When creating the Azure AD app, if you selected *Accounts in this organizational directory only (Microsoft only - Single tenant)*, enter the **tenant ID** you recorded earlier for the Azure AD app.
-        - However, if you selected *Accounts in any organizational directory (Any Azure AD directory - Multi tenant and personal Microsoft accounts e.g. Xbox, Outlook.com)* or *Accounts in any organizational directory(Microsoft Azure AD directory - Multi tenant)*, enter the word **common** instead of a tenant ID. Otherwise, the Azure AD app will verify through the tenant whose ID was selected and exclude personal MS accounts.
+        - When creating the Azure AD app, if you selected **Accounts in this organizational directory only (Microsoft only - Single tenant)**, enter the tenant ID you recorded earlier for the Azure AD app.
+        - However, if you selected **Accounts in any organizational directory (Any Azure AD directory - Multi tenant and personal Microsoft accounts e.g. Xbox, Outlook.com)** or **Accounts in any organizational directory(Microsoft Azure AD directory - Multi tenant)**, enter `common` instead of a tenant ID. Otherwise, the Azure AD app will verify through the tenant whose ID was selected and exclude personal MS accounts.
 
        This will be the tenant associated with the users who can be authenticated. For more information, see [Tenancy in Azure Active Directory](/azure/active-directory/develop/single-and-multi-tenant-apps).
 
@@ -201,9 +202,9 @@ You can now use this connection name in your bot code to retrieve user tokens.
 
 You'll need your bot's app ID and password to complete this process.
 
-# [C#](#tab/csharp)
+### [C#](#tab/csharp)
 
-1. Clone from the GitHub repository the sample you want to work with: [**Bot authentication**][cs-auth-sample] or [**Bot authentication MSGraph**][cs-msgraph-sample].
+1. Clone from the GitHub repository the sample you want to work with: [**Bot authentication**][cs-auth-sample] or [**Bot authentication for Microsoft Graph**][cs-msgraph-sample].
 1. Update **appsettings.json**:
 
     - Set `ConnectionName` to the name of the OAuth connection setting you added to your bot.
@@ -230,11 +231,11 @@ You'll need your bot's app ID and password to complete this process.
     |`https://europe.api.botframework.com`|For public-cloud bots with data residency in Europe.|
     |`https://unitedstates.api.botframework.com`|For public-cloud bots with data residency in the United States.|
     |`https://api.botframework.azure.us`|For United States government-cloud bots without data residency.|
-    |`https://api.botframework.com`|For public-cloud bots without data residency. This is the default URI and does not require a change to **Startup.cs**.|
+    |`https://api.botframework.com`|For public-cloud bots without data residency. This is the default URI and doesn't require a change to **Startup.cs**.|
 
-# [JavaScript](#tab/javascript)
+### [JavaScript](#tab/javascript)
 
-1. Clone from the GitHub repository you want to work with: [**Bot authentication**][js-auth-sample] or [**Bot authentication MSGraph**][js-msgraph-sample].
+1. Clone from the GitHub repository you want to work with: [**Bot authentication**][js-auth-sample] or [**Bot authentication for Microsoft Graph**][js-msgraph-sample].
 1. Update **.env**:
 
     - Set `connectionName` to the name of the OAuth connection setting you added to your bot.
@@ -244,9 +245,9 @@ You'll need your bot's app ID and password to complete this process.
 
     [!code-ini[.env](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/.env)]
 
-# [Java](#tab/java)
+### [Java](#tab/java)
 
-1. Clone from the GitHub repository the sample you want to work with: [**Bot authentication**][java-auth-sample] or [**Bot authentication MSGraph**][java-msgraph-sample].
+1. Clone from the GitHub repository the sample you want to work with: [**Bot authentication**][java-auth-sample] or [**Bot authentication for Microsoft Graph**][java-msgraph-sample].
 1. Update **application.properties**:
 
     - Set `ConnectionName` to the name of the OAuth connection setting you added to your bot.
@@ -254,9 +255,9 @@ You'll need your bot's app ID and password to complete this process.
 
     [!code-ini[application.properties](~/../botbuilder-samples/samples/java_springboot/18.bot-authentication/src/main/resources/application.properties)]
 
-# [Python](#tab/python)
+### [Python](#tab/python)
 
-1. Clone the sample [**Bot authentication**][python-auth-sample] from the GitHub repository.
+1. Clone the GitHub repository the sample you want to work with: [**Bot authentication**][python-auth-sample] or [**Bot authentication for Microsoft Graph**][python-msgraph-sample].
 1. Update **config.py**:
 
     - Set `ConnectionName` to the name of the OAuth connection setting you added to your bot.
@@ -277,7 +278,6 @@ To obtain the **Microsoft app ID** and **Microsoft app password** values, see [G
 
 If you haven't done so already, install the [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md). See also [Debug with the Emulator](../bot-service-debug-emulator.md).
 
-<!-- auth config steps -->
 In order for the bot sample login to work you must configure the Emulator
 as shown in [Configure the Emulator for authentication](../bot-service-debug-emulator.md#configure-the-emulator-for-authentication).
 
@@ -286,7 +286,7 @@ as shown in [Configure the Emulator for authentication](../bot-service-debug-emu
 After you've configured the authentication mechanism, you can perform the actual bot sample testing.
 
 > [!NOTE]
-> You may be asked to enter a *magic code*, because the way the bot sample is implemented. This magic code is part of the [RFC#7636](https://tools.ietf.org/html/rfc7636#page-5) and is there to add an extra security element. By removing the magic code, there's an increased security risk. This can be mitigated using Direct Line with enhanced authentication enabled. For more information, see [Bot Framework enhanced authentication](bot-builder-security-enhanced.md).
+> You may be asked to enter a _magic code_, because the way the bot sample is implemented. This magic code is part of the [RFC#7636](https://tools.ietf.org/html/rfc7636#page-5) and is there to add an extra security element. By removing the magic code, there's an increased security risk. This can be mitigated using Direct Line with enhanced authentication enabled. For more information, see [Bot Framework enhanced authentication](bot-builder-security-enhanced.md).
 
 1. Run the bot sample locally on your machine.
 1. Start the Emulator.
@@ -304,13 +304,13 @@ After you've configured the authentication mechanism, you can perform the actual
 
 In the **Bot authentication** sample, the dialog is designed to retrieve the user token after the user is logged in.
 
-![auth bot test image](media/how-to-auth/auth-bot-test.png)
+:::image type="content" source="media/how-to-auth/auth-bot-test.png" alt-text="Sample conversation with the authentication sample bot.":::
 
-## Authentication MSGraph example
+## Authentication for Microsoft Graph example
 
-In the **Bot authentication MSGraph** sample, the dialog is designed to accept a limited set of commands after the user is logged in.
+In the **Bot authentication for Microsoft Graph** sample, the dialog is designed to accept a limited set of commands after the user is logged in.
 
-![msgraph bot test image](media/how-to-auth/msgraph-bot-test.png)
+:::image type="content" source="media/how-to-auth/msgraph-bot-test.png" alt-text="Sample conversation with the Microsoft Graph authentication sample bot.":::
 
 ---
 
@@ -320,19 +320,16 @@ When a user asks the bot to do something that requires the bot to have the user 
 
 1. Checking to see if the Azure Bot Service already has a token for the current user and connection. If there's a token, the token is returned.
 1. If Azure Bot Service doesn't have a cached token, an `OAuthCard` is created which is a sign-in button the user can select on.
-1. After the user selects on the `OAuthCard` sign-in button, Azure Bot Service will either send the bot the user's token directly or will present the user with a 6-digit authentication code to enter in the chat window.
+1. After the user selects on the `OAuthCard` sign-in button, Azure Bot Service will either send the bot the user's token directly or present the user with a 6-digit authentication code to enter in the chat window.
 1. If the user is presented with an authentication code, the bot then exchanges this authentication code for the user's token.
 
 The following sections describe how the sample implements some common authentication tasks.
 
 ### Use an OAuth prompt to sign the user in and get a token
 
-# [C#](#tab/csharp)
+### [C#](#tab/csharp)
 
-![architecture csharp image](media/how-to-auth/architecture.png)
-
-<!-- Submit changes for line break issues -->
-<!-- The two authentication samples have nearly identical architecture. Using 18.bot-authentication for the sample code. -->
+:::image type="content" source="media/how-to-auth/architecture.png" alt-text="Architecture diagram for the C# sample.":::
 
 **Dialogs\MainDialog.cs**
 
@@ -351,9 +348,9 @@ Within the following dialog step, check for the presence of a token in the resul
 
 [!code-csharp[Get the OAuthPrompt result](~/../botbuilder-samples/samples/csharp_dotnetcore/18.bot-authentication/Dialogs/MainDialog.cs?range=54-56)]
 
-# [JavaScript](#tab/javascript)
+### [JavaScript](#tab/javascript)
 
-![architecture js image](media/how-to-auth/architecture-js.png)
+:::image type="content" source="media/how-to-auth/architecture-js.png" alt-text="Architecture diagram for the JavaScript sample.":::
 
 **dialogs/mainDialog.js**
 
@@ -372,11 +369,9 @@ Within the following dialog step, check for the presence of a token in the resul
 
 [!code-javascript[Get OAuthPrompt result](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/dialogs/mainDialog.js?range=62-63)]
 
-# [Java](#tab/java)
+### [Java](#tab/java)
 
-![architecture Java image](media/how-to-auth/architecture-java.png)
-
-<!-- The two authentication samples have nearly identical architecture. Using 18.bot-authentication for the sample code. -->
+:::image type="content" source="media/how-to-auth/architecture-java.png" alt-text="Architecture diagram for the Java sample.":::
 
 **MainDialog.java**
 
@@ -395,9 +390,9 @@ Within the following dialog step, check for the presence of a token in the resul
 
 [!code-java[Get the OAuthPrompt result](~/../botbuilder-samples/samples/java_springboot/18.bot-authentication/src/main/java/com/microsoft/bot/sample/authentication/MainDialog.java?range=54-56)]
 
-# [Python](#tab/python)
+### [Python](#tab/python)
 
-![architecture python image](media/how-to-auth/architecture-python.png)
+:::image type="content" source="media/how-to-auth/architecture-python.png" alt-text="Architecture diagram for the Python sample.":::
 
 **dialogs/main_dialog.py**
 
@@ -422,7 +417,7 @@ Within the following dialog step, check for the presence of a token in the resul
 
 When you start an OAuth prompt, it waits for a token response event, from which it will retrieve the user's token.
 
-# [C#](#tab/csharp)
+### [C#](#tab/csharp)
 
 **Bots\AuthBot.cs**
 
@@ -430,7 +425,7 @@ When you start an OAuth prompt, it waits for a token response event, from which 
 
 [!code-csharp[OnTokenResponseEventAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/18.bot-authentication/Bots/AuthBot.cs?range=32-38)]
 
-# [JavaScript](#tab/javascript)
+### [JavaScript](#tab/javascript)
 
 **bots/authBot.js**
 
@@ -438,7 +433,7 @@ When you start an OAuth prompt, it waits for a token response event, from which 
 
 [!code-javascript[onTokenResponseEvent](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/bots/authBot.js?range=29-31)]
 
-# [Java](#tab/java)
+### [Java](#tab/java)
 
 **AuthBot.java**
 
@@ -446,7 +441,7 @@ When you start an OAuth prompt, it waits for a token response event, from which 
 
 [!code-java[OnTokenResponseEvent](~/../botbuilder-samples/samples/java_springboot/18.bot-authentication/src/main/java/com/microsoft/bot/sample/authentication/AuthBot.java?range=44-50)]
 
-# [Python](#tab/python)
+### [Python](#tab/python)
 
 **bots/auth_bot.py**
 
@@ -460,24 +455,24 @@ When you start an OAuth prompt, it waits for a token response event, from which 
 
 It's best practice to let users explicitly sign out, instead of relying on the connection to time out.
 
-# [C#](#tab/csharp)
+### [C#](#tab/csharp)
 
 **Dialogs\LogoutDialog.cs**
 
 [!code-csharp[Allow sign out](~/../botbuilder-samples/samples/csharp_dotnetcore/18.bot-authentication/Dialogs/LogoutDialog.cs?range=45-63&highlight=11)]
 
-# [JavaScript](#tab/javascript)
+### [JavaScript](#tab/javascript)
 
 **dialogs/logoutDialog.js**
 
 [!code-javascript[Allow sign out](~/../botbuilder-samples/samples/javascript_nodejs/18.bot-authentication/dialogs/logoutDialog.js?range=31-43&highlight=8)]
 
-# [Java](#tab/java)
+### [Java](#tab/java)
 
 **LogoutDialog.java**
 
 [!code-java[Allow sign out](~/../botbuilder-samples/samples/java_springboot/18.bot-authentication/src/main/java/com/microsoft/bot/sample/authentication/LogoutDialog.java?range=49-67&highlight=8-13)]
-# [Python](#tab/python)
+### [Python](#tab/python)
 
 **dialogs/logout_dialog.py**
 
@@ -487,54 +482,54 @@ It's best practice to let users explicitly sign out, instead of relying on the c
 
 ### Adding Teams Authentication
 
-OAuth is handled somewhat differently in Teams than in other channels. The Teams Authentication Bot sample (in [C#][cs-teams-auth-sample], [JavaScript][js-teams-auth-sample], or [Java][java-teams-auth-sample]) demonstrates how to properly implement authentication for Teams.
+OAuth is handled differently in Teams than in other channels. The Teams Authentication Bot sample (in [C#][cs-teams-auth-sample], [JavaScript][js-teams-auth-sample], [Java][java-teams-auth-sample], or [Python][python-teams-auth-sample]) demonstrates how to properly implement authentication for Teams.
 
-One difference between other channels and Teams is that Teams sends an *invoke* activity to the bot, rather than an *event* activity.
+One difference between other channels and Teams is that Teams sends an _invoke_ activity to the bot, rather than an _event_ activity.
 
-# [C#](#tab/csharp)
+### [C#](#tab/csharp)
 
 **Bots/TeamsBot.cs**
 
 [!code-csharp[Invoke Activity](~/../botbuilder-samples/samples/csharp_dotnetcore/46.teams-auth/Bots/TeamsBot.cs?range=34-42&highlight=1)]
 
-# [JavaScript](#tab/javascript)
+### [JavaScript](#tab/javascript)
 
 **bots/teamsBot.js**
 
 [!code-javascript[Invoke Activity](~/../botbuilder-samples/samples/javascript_nodejs/46.teams-auth/bots/teamsBot.js?range=16-25&highlight=1)]
-# [Java](#tab/java)
+### [Java](#tab/java)
 
 **TeamsBot.java**
 
 [!code-java[Invoke Activity](~/../botbuilder-samples/samples/java_springboot/46.teams-auth/src/main/java/com/microsoft/bot/sample/teamsauth/TeamsBot.java?range=46-54&highlight=2)]
 
-# [Python](#tab/python)
+### [Python](#tab/python)
 
 Microsoft Teams currently differs slightly in the way auth is integrated with the bot. For more information, see the [Teams documentation](/microsoftteams/platform/bots/how-to/create-a-bot-for-teams) on authentication.
 
 ---
 
-If you use an *OAuth prompt*, this invoke activity must be forwarded to the dialog. You can do so in the `TeamsActivityHandler`. Add the following code to your main dialog file.
+If you use an _OAuth prompt_, this invoke activity must be forwarded to the dialog. You can do so in the `TeamsActivityHandler`. Add the following code to your main dialog file.
 
-# [C#](#tab/csharp)
+### [C#](#tab/csharp)
 
 **Bots/DialogBot.cs**
 
 [!code-csharp[Dialogs Handler](~/../botbuilder-samples/samples/csharp_dotnetcore/46.teams-auth/Bots/DialogBot.cs?range=19)]
 
-# [JavaScript](#tab/javascript)
+### [JavaScript](#tab/javascript)
 
 **Bots/dialogBot.js**
 
 [!code-javascript[Dialogs Handler](~/../botbuilder-samples/samples/javascript_nodejs/46.teams-auth/bots/dialogBot.js?range=6)]
 
-# [Java](#tab/java)
+### [Java](#tab/java)
 
 **DialogBot.java**
 
 [!code-java[Dialogs Handler](~/../botbuilder-samples/samples/java_springboot/46.teams-auth/src/main/java/com/microsoft/bot/sample/teamsauth/DialogBot.java?range=25)]
 
-# [Python](#tab/python)
+### [Python](#tab/python)
 
 Microsoft Teams currently differs slightly in the way auth is integrated with the bot. For more information, see the [Teams documentation](/microsoftteams/platform/bots/how-to/create-a-bot-for-teams) on authentication.
 
@@ -542,17 +537,15 @@ Microsoft Teams currently differs slightly in the way auth is integrated with th
 
 Finally, make sure to add an appropriate `TeamsActivityHandler` file (`TeamsActivityHandler.cs` for C# bots and `teamsActivityHandler.js` for JavaScript bots) at the topmost level in your bot's folder.
 
-The `TeamsActivityHandler` also sends *message reaction* activities. A message reaction activity references the original activity using the *reply to ID* field. This activity should also be visible through the [Activity Feed][teams-activity-feed] in Microsoft Teams.
+The `TeamsActivityHandler` also sends _message reaction_ activities. A message reaction activity references the original activity using the _reply to ID_ field. This activity should also be visible through the [Activity Feed][teams-activity-feed] in Microsoft Teams.
 
 > [!NOTE]
 > You need to create a manifest and include `token.botframework.com` in the `validDomains` section; otherwise the OAuthCard **Sign in** button will not open the authentication window. Use the [App Studio](/microsoftteams/platform/get-started/get-started-app-studio) to generate your manifest.
 
 ### Further reading
 
-- [Bot Framework additional resources](/azure/bot-service/bot-service-resources-links-help) includes links for additional support.
+- [Bot Framework additional resources](../bot-service-resources-links-help.md) includes links for additional support.
 - The [Bot Framework SDK](https://github.com/microsoft/botbuilder) repo has more information about repos, samples, tools, and specs associated with the Bot Builder SDK.
-
-<!-- Footnote-style links -->
 
 [azure-portal]: https://ms.portal.azure.com
 [azure-aad-blade]: https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview
@@ -574,7 +567,11 @@ The `TeamsActivityHandler` also sends *message reaction* activities. A message r
 [cs-msgraph-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/24.bot-authentication-msgraph
 [js-msgraph-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/24.bot-authentication-msgraph
 [java-msgraph-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/24.bot-authentication-msgraph
+[python-msgraph-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/24.bot-authentication-msgraph
+
 [cs-teams-auth-sample]:https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/46.teams-auth
 [js-teams-auth-sample]:https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/46.teams-auth
 [java-teams-auth-sample]:https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/46.teams-auth
+[python-teams-auth-sample]:https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/46.teams-auth
+
 [teams-activity-feed]:/microsoftteams/platform/concepts/activity-feed

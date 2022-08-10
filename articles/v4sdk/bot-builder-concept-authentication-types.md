@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: conceptual
-ms.date: 06/06/2022
+ms.date: 08/08/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -18,7 +18,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 In the Bot Framework, two broad authentication categories exist: **bot authentication** and **user authentication**. Each has an associated **token** to allow access to secured resources. The following figure shows the elements involved in both bot and user authentication.
 
-![bot framework authentication context](media/concept-bot-authentication/bot-framework-auth-context.png)
+:::image type="content" source="media/concept-bot-authentication/bot-framework-auth-context.png" alt-text="Diagram illustrating the difference between the token for a bot and the token for a user.":::
 
 In this figure:
 
@@ -71,11 +71,7 @@ For more information, see [Keep your secret hidden, exchange your secret for a t
 The Web Chat has two implementations: the **channel** and the **control**.
 
 - When you register a bot with Azure, the Web Chat channel is automatically configured to allow testing of the bot.
-
-    ![bot web chat testing](media/concept-bot-authentication/bot-webchat-testing.PNG).
-
-    For more information, see [Connect a bot to Web Chat](../bot-service-channel-connect-webchat.md).
-
+  For more information, see [Connect a bot to Web Chat](../bot-service-channel-connect-webchat.md).
 - You can use a Web Chat control with the Direct Line channel to provide access to a bot in a client application. For more information about the control, see [Bot Framework Web Chat](https://github.com/microsoft/BotFramework-WebChat).
 
 ### Skills
