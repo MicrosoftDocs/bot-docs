@@ -1,14 +1,13 @@
 ---
-title: Implement sequential conversation flow - Bot Service
-description: Learn how to manage a simple conversation flow with dialogs in the Bot Framework SDK.
-keywords: simple conversation flow, sequential conversation flow, dialogs, prompts, waterfalls, dialog set
+title: Implement sequential conversation flow
+description: Learn how to manage linear conversation flow with dialogs in the Bot Framework SDK.
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/08/2021
+ms.date: 08/10/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -16,11 +15,11 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-Gathering information by posing questions is one of the main ways a bot interacts with users. The dialogs library provides useful built-in features such as *prompt* classes that make it easy to ask questions and validate the response to make sure it matches a specific data type or meets custom validation rules.
+Gathering information by posing questions is one of the main ways a bot interacts with users. The dialogs library provides useful built-in features such as _prompt_ classes that make it easy to ask questions and validate the response to make sure it matches a specific data type or meets custom validation rules.
 
-You can manage simple and complex conversation flows using the dialogs library. In a simple interaction, the bot runs through a fixed sequence of steps, and the conversation finishes. A dialog is useful when the bot needs to gather information from the user.
+You can manage linear and more complex conversation flows using the dialogs library. In a linear interaction, the bot runs through a fixed sequence of steps, and the conversation finishes. A dialog is useful when the bot needs to gather information from the user.
 
-This article shows how to implement simple conversation flow by creating prompts and calling them from a waterfall dialog.
+This article shows how to implement linear conversation flow by creating prompts and calling them from a waterfall dialog.
 
 > [!TIP]
 > For examples of how to write your own prompts without using the dialogs library, see the [Create your own prompts to gather user input](bot-builder-primitive-prompts.md) article.
@@ -28,11 +27,11 @@ This article shows how to implement simple conversation flow by creating prompts
 ## Prerequisites
 
 - Knowledge of [bot basics][concept-basics], [managing state][concept-state], and the [dialogs library][concept-dialogs].
-- A copy of the **Multi turn prompts** sample in either [**C#**][cs-sample], [**JavaScript**][js-sample], [**Java**][java-sample], or [**Python**][python-sample].
+- A copy of the **Multi turn prompts** sample in [C#][cs-sample], [JavaScript][js-sample], [Java][java-sample], or [Python][python-sample].
 
 ## About this sample
 
-The multi-turn prompts sample uses a waterfall dialog, a few prompts, and a component dialog to create a simple interaction that asks the user a series of questions. The code uses a dialog to cycle through these steps:
+The multi-turn prompts sample uses a waterfall dialog, a few prompts, and a component dialog to create a linear interaction that asks the user a series of questions. The code uses a dialog to cycle through these steps:
 
 | Steps        | Prompt type  |
 |:-------------|:-------------|
@@ -43,7 +42,7 @@ The multi-turn prompts sample uses a waterfall dialog, a few prompts, and a comp
 | If they're not using Microsoft Teams, ask them for a profile picture | Attachment prompt, with validation to allow a missing attachment |
 | Ask if the collected information is "ok" | Reuse Confirm prompt |
 
-Finally, if they answered yes, display the collected information; otherwise, tell the user that their information will not be kept.
+Finally, if they answered yes, display the collected information; otherwise, tell the user that their information won't be kept.
 
 ## Create the main dialog
 
@@ -53,13 +52,13 @@ To use dialogs, install the **Microsoft.Bot.Builder.Dialogs** NuGet package.
 
 The bot interacts with the user via `UserProfileDialog`. When creating the bot's `DialogBot` class, the `UserProfileDialog` is set as its main dialog. The bot then uses a `Run` helper method to access the dialog.
 
-![C# user profile dialog](media/user-profile-dialog.png)
+:::image type="content" source="media/user-profile-dialog.png" alt-text="Class diagram for the C# sample.":::
 
 **Dialogs\UserProfileDialog.cs**
 
-Begin by creating the `UserProfileDialog` that derives from the `ComponentDialog` class, and has 7 steps.
+Begin by creating the `UserProfileDialog` that derives from the `ComponentDialog` class, and has seven steps.
 
-In the `UserProfileDialog` constructor, create the waterfall steps, prompts and the waterfall dialog, and add them to the dialog set. The prompts need to be in the same dialog set in which they are used.
+In the `UserProfileDialog` constructor, create the waterfall steps, prompts and the waterfall dialog, and add them to the dialog set. The prompts need to be in the same dialog set in which they're used.
 
 [!code-csharp[Constructor snippet](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=20-47)]
 
@@ -69,7 +68,7 @@ You should always return a non-null `DialogTurnResult` from a waterfall step. If
 
 [!code-csharp[Name step](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=61-66)]
 
-In `AgeStepAsync`, specify a retry prompt for when the user's input fails to validate, either because it's in a format that the prompt can't parse, or the input fails a validation criteria. In this case, if no retry prompt was provided, the prompt will use the initial prompt text to re-prompt the user for input.
+In `AgeStepAsync`, specify a retry prompt for when the user's input fails to validate, either because it's in a format that the prompt can't parse, or the input fails a validation criteria. In this case, if no retry prompt was provided, the prompt will use the initial prompt text to reprompt the user for input.
 
 [!code-csharp[Age step](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=79-98&highlight=10)]
 
@@ -91,23 +90,23 @@ To use dialogs, your project needs to install the **botbuilder-dialogs** npm pac
 
 The bot interacts with the user via a `UserProfileDialog`. When creating the bot's `DialogBot`, the `UserProfileDialog` is set as its main dialog. The bot then uses a `run` helper method to access the dialog.
 
-![JavaScript user profile dialog](media/user-profile-dialog-js.png)
+:::image type="content" source="media/user-profile-dialog-js.png" alt-text="Class diagram for the JavaScript sample.":::
 
 **dialogs/userProfileDialog.js**
 
-Begin by creating the `UserProfileDialog` that derives from the `ComponentDialog` class, and has 7 steps.
+Begin by creating the `UserProfileDialog` that derives from the `ComponentDialog` class, and has seven steps.
 
-In the `UserProfileDialog` constructor, create the waterfall steps, prompts and the waterfall dialog, and add them to the dialog set. The prompts need to be in the same dialog set in which they are used.
+In the `UserProfileDialog` constructor, create the waterfall steps, prompts and the waterfall dialog, and add them to the dialog set. The prompts need to be in the same dialog set in which they're used.
 
 [!code-javascript[Constructor snippet](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/dialogs/userProfileDialog.js?range=29-51)]
 
-Next, add the steps that the dialog uses to prompt for input. To use a prompt, call it from a step in your dialog and retrieve the prompt result in the following step from the step context, in this case by using `step.result`. Behind the scenes, prompts are a two-step dialog. First, the prompt asks for input. Then it returns the valid value, or starts over from the beginning with a re-prompt until it receives a valid input.
+Next, add the steps that the dialog uses to prompt for input. To use a prompt, call it from a step in your dialog and retrieve the prompt result in the following step from the step context, in this case by using `step.result`. Behind the scenes, prompts are a two-step dialog. First, the prompt asks for input. Then it returns the valid value, or starts over from the beginning with a reprompt until it receives a valid input.
 
 You should always return a non-null `DialogTurnResult` from a waterfall step. If you don't, your dialog may not work as designed. Shown below is the implementation for the `nameStep` in the waterfall dialog.
 
 [!code-javascript[name step](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/dialogs/userProfileDialog.js?range=79-82)]
 
-In `ageStep`, specify a retry prompt for when the user's input fails to validate, either because it's in a format that the prompt can't parse, or the input fails a validation criteria, specified in the constructor above. In this case, if no retry prompt was provided, the prompt will use the initial prompt text to re-prompt the user for input.
+In `ageStep`, specify a retry prompt for when the user's input fails to validate, either because it's in a format that the prompt can't parse, or the input fails a validation criteria, specified in the constructor above. In this case, if no retry prompt was provided, the prompt will use the initial prompt text to reprompt the user for input.
 
 [!code-javascript[age step](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/dialogs/userProfileDialog.js?range=94-105&highlight=5)]
 
@@ -137,13 +136,13 @@ The dialog context allows you to start a dialog with the string ID, or continue 
 
 The bot interacts with the user via `UserProfileDialog`. When creating the bot's `DialogBot` class, the `UserProfileDialog` is set as its main dialog. The bot then uses a `Run` helper method to access the dialog.
 
-![Java user profile dialog](media/user-profile-dialog-java.png)
+:::image type="content" source="media/user-profile-dialog-java.png" alt-text="Class diagram for the Java sample.":::
 
 **UserProfileDialog.java**
 
-Begin by creating the `UserProfileDialog` that derives from the `ComponentDialog` class, and has 7 steps.
+Begin by creating the `UserProfileDialog` that derives from the `ComponentDialog` class, and has seven steps.
 
-In the `UserProfileDialog` constructor, create the waterfall steps, prompts and the waterfall dialog, and add them to the dialog set. The prompts need to be in the same dialog set in which they are used.
+In the `UserProfileDialog` constructor, create the waterfall steps, prompts and the waterfall dialog, and add them to the dialog set. The prompts need to be in the same dialog set in which they're used.
 
 [!code-java[Constructor snippet](~/../botbuilder-samples/samples/java_springboot/05.multi-turn-prompt/src/main/java/com/microsoft/bot/sample/multiturnprompt/UserProfileDialog.java?range=34-59)]
 
@@ -153,7 +152,7 @@ You should always return a non-null `DialogTurnResult` from a waterfall step. If
 
 [!code-java[Name step](~/../botbuilder-samples/samples/java_springboot/05.multi-turn-prompt/src/main/java/com/microsoft/bot/sample/multiturnprompt/UserProfileDialog.java?range=71-77)]
 
-In `ageStep`, specify a retry prompt for when the user's input fails to validate, either because it's in a format that the prompt can't parse, or the input fails a validation criteria. In this case, if no retry prompt was provided, the prompt will use the initial prompt text to re-prompt the user for input.
+In `ageStep`, specify a retry prompt for when the user's input fails to validate, either because it's in a format that the prompt can't parse, or the input fails a validation criteria. In this case, if no retry prompt was provided, the prompt will use the initial prompt text to reprompt the user for input.
 
 [!code-java[Age step](~/../botbuilder-samples/samples/java_springboot/05.multi-turn-prompt/src/main/java/com/microsoft/bot/sample/multiturnprompt/UserProfileDialog.java?range=92-105&highlight=7)]
 
@@ -175,23 +174,23 @@ To use dialogs, install the **botbuilder-dialogs** and **botbuilder-ai** PyPI pa
 
 The bot interacts with the user via `UserProfileDialog`. When the bot's `DialogBot` class is created, the `UserProfileDialog` is set as its main dialog. The bot then uses a `run_dialog` helper method to access the dialog.
 
-![Python user profile dialog](media/user-profile-dialog-python.png)
+:::image type="content" source="media/user-profile-dialog-python.png" alt-text="Class diagram for the Python sample.":::
 
 **dialogs\user_profile_dialog.py**
 
-Begin by creating the `UserProfileDialog` that derives from the `ComponentDialog` class, and has 7 steps.
+Begin by creating the `UserProfileDialog` that derives from the `ComponentDialog` class, and has seven steps.
 
-In the `UserProfileDialog` constructor, create the waterfall steps, prompts and the waterfall dialog, and add them to the dialog set. The prompts need to be in the same dialog set in which they are used.
+In the `UserProfileDialog` constructor, create the waterfall steps, prompts and the waterfall dialog, and add them to the dialog set. The prompts need to be in the same dialog set in which they're used.
 
 [!code-python[Constructor snippet](~/../botbuilder-samples/samples/python/05.multi-turn-prompt/dialogs/user_profile_dialog.py?range=26-57)]
 
-Next, add the steps that the dialog uses to prompt for input. To use a prompt, call it from a step in your dialog and retrieve the prompt result in the following step using `step_context.result`. Behind the scenes, prompts are a two-step dialog. First, the prompt asks for input. Then it returns the valid value, or starts over from the beginning with a re-prompt until it receives a valid input.
+Next, add the steps that the dialog uses to prompt for input. To use a prompt, call it from a step in your dialog and retrieve the prompt result in the following step using `step_context.result`. Behind the scenes, prompts are a two-step dialog. First, the prompt asks for input. Then it returns the valid value, or starts over from the beginning with a reprompt until it receives a valid input.
 
 You should always return a non-null `DialogTurnResult` from a waterfall step. If you don't, your dialog may not work as designed. Here you can see the implementation for the `name_step` in the waterfall dialog.
 
 [!code-python[name step](~/../botbuilder-samples/samples/python/05.multi-turn-prompt/dialogs/user_profile_dialog.py?range=73-79)]
 
-In `age_step`, specify a retry prompt for when the user's input fails to validate, either because it's in a format that the prompt can not parse, or the input fails a validation criteria, specified in the constructor above. In this case, if no retry prompt was provided, the prompt will use the initial prompt text to re-prompt the user for input
+In `age_step`, specify a retry prompt for when the user's input fails to validate, either because it's in a format that the prompt can't parse, or the input fails a validation criteria, specified in the constructor above. In this case, if no retry prompt was provided, the prompt will use the initial prompt text to reprompt the user for input
 
 [!code-python[age step](~/../botbuilder-samples/samples/python/05.multi-turn-prompt/dialogs/user_profile_dialog.py?range=100-116)]
 
@@ -203,7 +202,7 @@ The user's mode of transportation, name, and age are saved in an instance of the
 
 **dialogs\user_profile_dialog.py**
 
-In the last step, check the `step_context.result` returned by the dialog called in the previous waterfall step. If the return value is true, the user profile accessor gets and updates the user profile. To get the user profile, call `get`, and then set the values of the `user_profile.transport`, `user_profile.name`, and `user_profile.age` properties. Finally, summarize the for the user before calling `end_dialog`, which ends the dialog. Ending the dialog pops it off the dialog stack and returns an optional result to the dialog's parent. The parent is the dialog or method that started the dialog that just ended.
+In the last step, check the `step_context.result` returned by the dialog called in the previous waterfall step. If the return value is true, the user profile accessor gets and updates the user profile. To get the user profile, call `get`, and then set the values of the `user_profile.transport`, `user_profile.name`, and `user_profile.age` properties. Finally, summarize the information for the user before calling `end_dialog`, which ends the dialog. Ending the dialog pops it off the dialog stack and returns an optional result to the dialog's parent. The parent is the dialog or method that started the dialog that just ended.
 
 [!code-python[summary step](~/../botbuilder-samples/samples/python/05.multi-turn-prompt/dialogs/user_profile_dialog.py?range=166-204)]
 
@@ -254,6 +253,7 @@ The `onMessageActivity` handler uses the `run` method to start or continue the d
 The `on_message_activity` handler uses the helper method to start or continue the dialog. The `on_turn` method uses the bot's state management objects to persist any state changes to storage. The `on_message_activity` method gets called last after other defined handlers are run, such as `on_turn`. In this way, the state is saved after the message handler completes but before the turn itself completes.
 
 **bots\dialog_bot.py**
+
 [!code-python[overrides](~/../botbuilder-samples/samples/python/05.multi-turn-prompt/bots/dialog_bot.py?range=39-51&highlight=4-6)]
 
 ---
@@ -302,13 +302,13 @@ Register services for the bot in `app.py`.
 > Memory storage is used for testing purposes only and is not intended for production use.
 > Be sure to use a persistent type of storage for a production bot.
 
-## To test the bot
+## Test your bot
 
 1. If you haven't done so already, install the [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md).
 1. Run the sample locally on your machine.
 1. Start the Emulator, connect to your bot, and send messages as shown below.
 
-![Sample run of the multi-turn prompt dialog](../media/emulator-v4/multi-turn-prompt.png)
+:::image type="content" source="../media/emulator-v4/multi-turn-prompt.png" alt-text="An example transcript of a conversation with the multi-turn prompt bot.":::
 
 ## Additional information
 
@@ -321,11 +321,11 @@ In this bot, two state property accessors are defined:
 
 The _get_ and _set_ methods of a state property accessor get and set the value of the property in the state management object's cache. The cache is populated the first time the value of a state property is requested in a turn, but it must be persisted explicitly. In order to persist changes to both of these state properties, a call to the _save changes_ method, of the corresponding state management object, is performed.
 
-This sample updates the user profile state from within the dialog. This practice can work for a simple bot, but it won't work if you want to reuse a dialog across bots.
+This sample updates the user profile state from within the dialog. This practice can work for some bots, but it won't work if you want to reuse a dialog across bots.
 
 There are various options for keeping dialog steps and bot state separate. For example, once your dialog gathers complete information, you can:
 
-- Use the *end dialog* method to provide the collected data as return value back to the parent context. This can be the bot's turn handler or an earlier active dialog on the dialog stack and it's how the prompt classes are designed.
+- Use the _end dialog_ method to provide the collected data as return value back to the parent context. This can be the bot's turn handler or an earlier active dialog on the dialog stack and it's how the prompt classes are designed.
 - Generate a request to an appropriate service. This might work well if your bot acts as a front end to a larger service.
 
 ### Definition of a prompt validator method
@@ -334,7 +334,7 @@ There are various options for keeping dialog steps and bot state separate. For e
 
 **UserProfileDialog.cs**
 
-Below is a validator code example for the `AgePromptValidatorAsync` method definition. `promptContext.Recognized.Value` contains the parsed value, which is an integer here for the number prompt. `promptContext.Recognized.Succeeded` indicates whether the prompt was able to parse the user's input or not. The validator should return false to indicate that the value was not accepted and the prompt dialog should reprompt the user; otherwise, return true to accept the input and return from the prompt dialog. Note that you can change the value in the validator per your scenario.
+Below is a validator code example for the `AgePromptValidatorAsync` method definition. `promptContext.Recognized.Value` contains the parsed value, which is an integer here for the number prompt. `promptContext.Recognized.Succeeded` indicates whether the prompt was able to parse the user's input or not. The validator should return false to indicate that the value wasn't accepted and the prompt dialog should reprompt the user; otherwise, return true to accept the input and return from the prompt dialog. You can change the value in the validator per your scenario.
 
 [!code-csharp[prompt validator method](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=180-184)]
 
@@ -342,7 +342,7 @@ Below is a validator code example for the `AgePromptValidatorAsync` method defin
 
 **dialogs\userProfileDialog.js**
 
-Below is a validator code example for the `agePromptValidator` method definition. `promptContext.recognized.value` contains the parsed value, which is an integer here for the number prompt. `promptContext.recognized.succeeded` indicates whether the prompt was able to parse the user's input or not. The validator should return false to indicate that the value was not accepted and the prompt dialog should reprompt the user; otherwise, return true to accept the input and return from the prompt dialog. Note that you can change the value in the validator per your scenario.
+Below is a validator code example for the `agePromptValidator` method definition. `promptContext.recognized.value` contains the parsed value, which is an integer here for the number prompt. `promptContext.recognized.succeeded` indicates whether the prompt was able to parse the user's input or not. The validator should return false to indicate that the value wasn't accepted and the prompt dialog should reprompt the user; otherwise, return true to accept the input and return from the prompt dialog. You can change the value in the validator per your scenario.
 
 [!code-javascript[age prompt validator](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/dialogs/userProfileDialog.js?range=169-172)]
 
@@ -350,7 +350,7 @@ Below is a validator code example for the `agePromptValidator` method definition
 
 **UserProfileDialog.java**
 
-Below is a validator code example for the `agePromptValidator` method definition. `promptContext.getRecognized().getValue()` contains the parsed value, which is an integer here for the number prompt. `promptContext.getRecognized().getSucceeded()` indicates whether the prompt was able to parse the user's input or not. The validator should return false to indicate that it did not accept the value. The prompt dialog should re-prompt the user; otherwise, return true to accept the input and return from the prompt dialog. Note that you can change the value in the validator per your scenario.
+Below is a validator code example for the `agePromptValidator` method definition. `promptContext.getRecognized().getValue()` contains the parsed value, which is an integer here for the number prompt. `promptContext.getRecognized().getSucceeded()` indicates whether the prompt was able to parse the user's input or not. The validator should return false to indicate that it didn't accept the value. The prompt dialog should reprompt the user; otherwise, return true to accept the input and return from the prompt dialog. You can change the value in the validator per your scenario.
 
 [!code-csharp[prompt validator method](~/../botbuilder-samples/samples/java_springboot/05.multi-turn-prompt/src/main/java/com/microsoft/bot/sample/multiturnprompt/UserProfileDialog.java?range=193-201)]
 
@@ -358,7 +358,7 @@ Below is a validator code example for the `agePromptValidator` method definition
 
 **dialogs/user_profile_dialog.py**
 
-Below is a validator code example for the `age_prompt_validator` method definition. `prompt_context.recognized.value` contains the parsed value, which is an integer here for the number prompt. `prompt_context.recognized.succeeded` indicates whether the prompt was able to parse the user's input or not. The validator should return false to indicate that the value was not accepted and the prompt dialog should reprompt the user; otherwise, return true to accept the input and return from the prompt dialog. Note that you can change the value in the validator per your scenario.
+Below is a validator code example for the `age_prompt_validator` method definition. `prompt_context.recognized.value` contains the parsed value, which is an integer here for the number prompt. `prompt_context.recognized.succeeded` indicates whether the prompt was able to parse the user's input or not. The validator should return false to indicate that the value wasn't accepted and the prompt dialog should reprompt the user; otherwise, return true to accept the input and return from the prompt dialog. You can change the value in the validator per your scenario.
 
 [!code-python[prompt validator method](~/../botbuilder-samples/samples/python/05.multi-turn-prompt/dialogs/user_profile_dialog.py?range=207-212)]
 
