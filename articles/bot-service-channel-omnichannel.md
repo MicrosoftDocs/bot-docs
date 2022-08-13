@@ -40,7 +40,7 @@ For instructions, see [Integrate an Azure bot](/dynamics365/customer-service/con
 
 ## Additional information
 
-You can design your bot so that it can hand off the conversation to a human agent. See [Transition conversations from bot to human](/azure/bot-service/bot-service-design-pattern-handoff-human) for more information.
+You can design your bot so that it can hand off the conversation to a human agent. See [Transition conversations from bot to human](bot-service-design-pattern-handoff-human.md) for more information.
 
 ## Next steps
 
