@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 08/08/2022
+ms.date: 08/12/2022
 ms.custom: abs-meta-21q1
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -99,9 +99,9 @@ This section shows how to create an Azure AD identity provider that uses OAuth 2
 
    1. Under **Client secrets**, select **New client secret**.
    1. Add a description to identify this secret from others you might need to create for this app, such as `bot login`.
-   1. Set **Expires** to **Never**.
+   1. For **Expires**, choose a length of time after which the secret will expire.
    1. Select **Add**.
-   1. Before leaving this page, record the secret. You'll use this value later as the _client secret_ when you register your Azure AD application with your bot.
+   1. Before leaving **Certificates & secrets**, record the secret. You'll use this value later as the _client secret_ when you register your Azure AD application with your bot.
 
 1. In the navigation pane, select **API permissions** to open the **API permissions** panel. It's a best practice to explicitly set the API permissions for the app.
 
