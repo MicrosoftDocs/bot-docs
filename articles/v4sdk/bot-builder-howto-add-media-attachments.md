@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 12/02/2021
+ms.date: 08/12/2022
 ms.custom: abs-meta-21q1
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -66,7 +66,7 @@ Lastly, an internet attachment:
 
 ### [JavaScript](#tab/javascript)
 
-The source code shown here is based on the [Handling attachments](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/15.handling-attachments) sample.
+The following source code is from the [Handling attachments](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/15.handling-attachments) sample.
 
 To use attachments, include the following libraries in your bot:
 
@@ -130,7 +130,7 @@ Lastly, an internet attachment:
 
 ### [Python](#tab/python)
 
-The source code shown here is based on the [Handling attachments](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/15.handling-attachments) sample.
+The following source code is from the [Handling attachments](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/15.handling-attachments) sample.
 
 To create the reply message, define the text and then set up the attachments. Assigning the attachments to the reply is the same for each attachment type, however the various attachments are set up and defined differently, as seen in the following snippets.
 
@@ -170,7 +170,7 @@ Besides simple image or video attachments, you can attach a _hero card_, which a
 
 To compose a message with a hero card and button, you can attach a `HeroCard` object to a message.
 
-The source code shown here is based on the [Handling attachments](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/15.handling-attachments) sample.
+The following source code is from the [Handling attachments](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/15.handling-attachments) sample.
 
 **Bots/AttachmentsBot.cs**
 
@@ -180,7 +180,7 @@ The source code shown here is based on the [Handling attachments](https://github
 
 To compose a message with a hero card and button, you can attach a `HeroCard` object to a message.
 
-The source code shown here is based on the [Handling attachments](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/15.handling-attachments) sample.
+The following source code is from the [Handling attachments](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/15.handling-attachments) sample.
 
 **bots/attachmentsBot.js**
 
@@ -190,7 +190,7 @@ The source code shown here is based on the [Handling attachments](https://github
 
 To compose a message with a hero card and button, you can attach a `HeroCard` object to a message.
 
-The source code shown here is based on the [Handling attachments](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/15.handling-attachments) sample.
+The following source code is from the [Handling attachments](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/15.handling-attachments) sample.
 
 **AttachmentsBot.java**
 
@@ -200,7 +200,7 @@ The source code shown here is based on the [Handling attachments](https://github
 
 To compose a message with a hero card and button, you can attach a `HeroCard` object to a message.
 
-The source code shown here is based on the [Handling attachments](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/15.handling-attachments) sample.
+The following source code is from the [Handling attachments](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/15.handling-attachments) sample.
 
 **bots/attachments_bot.py**
 
@@ -271,7 +271,7 @@ For examples of all the available cards, see the [Using cards](https://github.co
 
 ## Send an Adaptive Card
 
-While you can use the _message factory_ to create a message that contains an attachment (of any sort), an _Adaptive Card_ is one specific type of attachment. Note that some channels don't support Adaptive Cards, and channels that do may only partially support them. For example, if you send an Adaptive Card in Facebook, the buttons won't work while texts and images work well. The message factory is a Bot Framework SDK helper class used to automate creation steps for you.
+While you can use the _message factory_ to create a message that contains an attachment (of any sort), an _Adaptive Card_ is one specific type of attachment. Not all channels support Adaptive Cards, and some channels may only partially support Adaptive Cards. For example, if you send an Adaptive Card in Facebook, the buttons won't work while texts and images work well. The message factory is a Bot Framework SDK helper class used to automate creation steps for you.
 
 Adaptive Cards are an open card exchange format enabling developers to exchange UI content in a common and consistent way. However, not all channels support Adaptive Cards.
 
@@ -284,7 +284,7 @@ The [Adaptive Cards Designer](http://adaptivecards.io/designer/) provides a rich
 
 To use Adaptive Cards, be sure to add the `AdaptiveCards` NuGet package.
 
-The source code shown here is based on the [Using cards](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/06.using-cards) sample.
+The following source code is from the [Using cards](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/06.using-cards) sample.
 
 **Cards.cs**
 
@@ -296,7 +296,7 @@ This example reads the Adaptive Card JSON from a file and adds it as an attachme
 
 To use Adaptive Cards, be sure to add the `adaptivecards` npm package.
 
-The source code shown here is based on the [Using cards](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/06.using-cards) sample.
+The following source code is from the [Using cards](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/06.using-cards) sample.
 
 **dialogs/mainDialog.js**
 
@@ -308,7 +308,7 @@ This example reads the Adaptive Card JSON from a file and creates a message acti
 
 ### [Java](#tab/java)
 
-The source code shown here is based on the [Using cards](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/06.using-cards) sample.
+The following source code is from the [Using cards](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/06.using-cards) sample.
 
 **Cards.java**
 
@@ -318,7 +318,7 @@ This example reads the Adaptive Card JSON from a file and adds it as an attachme
 
 ### [Python](#tab/python)
 
-The source code shown here is based on the [Using cards](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/06.using-cards) sample.
+The following source code is from the [Using cards](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/06.using-cards) sample.
 
 **bots/main_dialog.py**
 
@@ -336,7 +336,7 @@ Messages can also include multiple attachments in a carousel layout, which place
 
 ### [C#](#tab/csharp)
 
-The source code shown here is based on the [Using cards](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/06.using-cards) sample.
+The following source code is from the [Using cards](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/06.using-cards) sample.
 
 **Dialogs/MainDialog.cs**
 
@@ -355,7 +355,7 @@ Once the attachments are added, you can send the reply just like any other.
 
 ### [JavaScript](#tab/javascript)
 
-The source code shown here is based on the [Using cards](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/06.using-cards) sample.
+The following source code is from the [Using cards](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/06.using-cards) sample.
 
 **dialogs/mainDialog.js**
 
@@ -366,7 +366,7 @@ Once the attachments are added, you can send the reply just like any other.
 
 ### [Java](#tab/java)
 
-The source code shown here is based on the [Using cards](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/06.using-cards) sample.
+The following source code is from the [Using cards](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/06.using-cards) sample.
 
 **MainDialog.java**
 
@@ -404,8 +404,6 @@ Once the attachments are added, you can send the reply just like any other.
 
 ---
 
-<!-- TODO: Add a media card, such as video or audion. Revisit which examples we put here and link to the 06 through 08 samples. -->
-
 ### Code sample for processing Adaptive Card input
 
 The following sample shows one way to use Adaptive Card inputs within a bot dialog class.
@@ -438,7 +436,7 @@ You first need to add the text input and button functionality to the existing ad
 ]
 ```
 
-Note that the ID of the text input field is set to `"text"`. When the user selects **OK**, the message the Adaptive Card generates will have a _value_ property that has a property named `"text"` which contains the information the user entered in the text input field of the card.
+The ID of the text input field is set to "text". When the user selects **OK**, the message the Adaptive Card generates will have a _value_ property that has a property named `text` that contains the information the user entered in the text input field of the card.
 
 ### [C#](#tab/csharp)
 
@@ -456,7 +454,7 @@ using Newtonsoft.Json.Linq;
 <!---------------------------------------------------------------------------------------->
 
 to **MainDialog.cs** and install the latest stable NuGet package of **Newtonsoft.Json**.
-In the validator code we added the logic flow into the code comments.
+In the validator code, we added the logic flow into the code comments.
 This `ChoiceValidator` method is placed into the **Using cards** sample just after the closed brace public for declaration of MainDialog:
 
 ```csharp
@@ -525,13 +523,13 @@ if(turnContext._activity.text == null
   }
 ```
 
-If this check finds a non-existent text input from the client, it looks to see if there is input from an Adaptive Card.
+If this check finds a non-existent text input from the client, it looks to see if there's input from an Adaptive Card.
 If an Adaptive Card input exists at `_activity.value.text`, it copies this into the normal text input field.
 
 ### [Java](#tab/java)
 
 Our validator uses the **Serialization** helper from com.microsoft.bot.schema to first convert this to a `JsonNode`,
-and then create a trimmed text string for comparison. We will also need a few other imports to complete this, so add:
+and then create a trimmed text string for comparison. We'll also need a few other imports to complete this, so add:
 
 ```java
 import com.fasterxml.jackson.databind.JsonNode;
@@ -546,7 +544,7 @@ import org.apache.commons.lang3.StringUtils;
 <!---------------------------------------------------------------------------------------->
 
 to **MainDialog.java**.
-In the validator code we added the logic flow into the code comments.
+In the validator code, we added the logic flow into the code comments.
 This `PromptValidator` expression is placed into the **Using cards** sample just after the closed brace public for declaration of MainDialog:
 
 ```java
@@ -600,7 +598,7 @@ This will invoke your validator to look for Adaptive Card input each time a new 
 
 ### [Python](#tab/python)
 
-<!--The source code shown here is based on the [Suggested actions](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/08.suggested-actions) sample.-->
+<!--The following source code is from the [Suggested actions](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/08.suggested-actions) sample.-->
 
 Create and send an activity with suggested actions to the user.
 
@@ -641,12 +639,10 @@ This will invoke your validator to look for Adaptive Card input each time a new 
 
 ---
 
-To test your code, once an Adaptive Card has been displayed, select the **Text** button, Enter a valid selection such as _Hero Card_ then select the **OK** button.
+## Test the Using Cards bot
 
-![Test Adaptive Card](media/adaptive-card-input.png)
-
-1. The first input will be used to start a new dialog.
-2. Select the **OK** button again and this input will be used to select a new card.
+1. Run the **Using cards** sample locally and open the bot in the Bot Framework Emulator.
+1. Follow the prompts in the bot to display a card type, such as an Adaptive Card.
 
 ## Next steps
 

@@ -34,12 +34,12 @@ The language model contains three intents: `Book Flight`, `Cancel`, and `None`. 
 
 # [C#](#tab/csharp)
 
-After each processing of user input, `DialogBot` saves the current state of both `UserState` and `ConversationState`. Once all the required information has been gathered the coding sample creates a demo flight booking reservation. In this article we'll be covering the LUIS aspects of this sample. However, the general flow of the sample is shown below:
+After each processing of user input, `DialogBot` saves the current state of both `UserState` and `ConversationState`. Once all the required information has been gathered, the coding sample creates a demo flight booking reservation. In this article, we'll be covering the LUIS aspects of this sample. However, the general flow of the sample is shown below:
 
 - `OnMembersAddedAsync` is called when a new user is connected and displays a welcome card.
 - `OnMessageActivityAsync` is called for each user input received.
 
-![LUIS sample logic flow](./media/how-to-luis/luis-logic-flow.png)
+:::image type="content" source="./media/how-to-luis/luis-logic-flow.png" alt-text="Class diagram outlining the structure of the C# sample.":::
 
 The `OnMessageActivityAsync` module runs the appropriate dialog through the `Run` dialog extension method. Then the main dialog calls the LUIS helper to find the top scoring user intent. If the top intent for the user input returns "BookFlight", the helper fills out information from the user that LUIS returned. After that, the main dialog starts the `BookingDialog`, which acquires additional information as needed from the user such as:
 
@@ -49,14 +49,14 @@ The `OnMessageActivityAsync` module runs the appropriate dialog through the `Run
 
 # [JavaScript](#tab/javascript)
 
-After each processing of user input, `dialogBot` saves the current state of both `userState` and `conversationState`. Once all the required information has been gathered the coding sample creates a demo flight booking reservation. In this article we'll be covering the LUIS aspects of this sample. However, the general flow of the sample is shown below:
+After each processing of user input, `dialogBot` saves the current state of both `userState` and `conversationState`. Once all the required information has been gathered, the coding sample creates a demo flight booking reservation. In this article, we'll be covering the LUIS aspects of this sample. However, the general flow of the sample is shown below:
 
 - `onMembersAdded` is called when a new user is connected and displays a welcome card.
 - `OnMessage` is called for each user input received.
 
-![LUIS sample javascript logic flow](./media/how-to-luis/luis-logic-flow-js.png)
+:::image type="content" source="./media/how-to-luis/luis-logic-flow-js.png" alt-text="Class diagram outlining the structure of the JavaScript sample.":::
 
-The `onMessage` module runs the `mainDialog` which gathers user input.
+The `onMessage` module runs the `mainDialog`, which gathers user input.
 Then the main dialog calls the LUIS helper `FlightBookingRecognizer` to find the top scoring user intent. If the top intent for the user input returns "BookFlight", the helper fills out information from the user that LUIS returned.
 Upon the response back, `mainDialog` preserves information for the user returned by LUIS and starts `bookingDialog`. `bookingDialog` acquires additional information as needed from the user such as
 
@@ -67,13 +67,13 @@ Upon the response back, `mainDialog` preserves information for the user returned
 # [Java](#tab/java)
 
 1. After each processing of user input, `DialogBot` saves the current state of both `UserState` and `ConversationState`.
-2. Once all the required information has been gathered the coding sample creates a demo flight booking reservation.
-3. In this article we'll be covering the LUIS aspects of this sample. However, the general flow of the sample is shown below:
+2. Once all the required information has been gathered, the coding sample creates a demo flight booking reservation.
+3. In this article, we'll be covering the LUIS aspects of this sample. However, the general flow of the sample is shown below:
 
 - `onMembersAdded` is called when a new user is connected and displays a welcome card.
 - `onMessageActivity` is called for each user input received.
 
-![LUIS sample logic flow](./media/how-to-luis/luis-logic-flow-java.png)
+:::image type="content" source="./media/how-to-luis/luis-logic-flow-java.png" alt-text="Class diagram outlining the structure of the Java sample.":::
 
 The `onMessageActivity` module runs the appropriate dialog through the `run` dialog extension method. Then the main dialog calls the LUIS helper to find the top scoring user intent. If the top intent for the user input returns "BookFlight", the helper fills out information from the user that LUIS returned. After that, the main dialog starts the `BookingDialog`, which acquires additional information as needed from the user such as:
 
@@ -83,12 +83,12 @@ The `onMessageActivity` module runs the appropriate dialog through the `run` dia
 
 # [Python](#tab/python)
 
-After each processing of user input, `DialogBot` saves the current state of both `user_state` and `conversation_state`. Once all the required information has been gathered the coding sample creates a demo flight booking reservation. In this article we'll be covering the LUIS aspects of this sample. However, the general flow of the sample is shown below:
+After each processing of user input, `DialogBot` saves the current state of both `user_state` and `conversation_state`. Once all the required information has been gathered, the coding sample creates a demo flight booking reservation. In this article, we'll be covering the LUIS aspects of this sample. However, the general flow of the sample is shown below:
 
 - `on_members_added_activity` is called when a new user is connected and displays a welcome card.
 - `on_message_activity` is called for each user input received.
 
-![LUIS sample Python logic flow](./media/how-to-luis/luis-logic-flow-python.png)
+:::image type="content" source="./media/how-to-luis/luis-logic-flow-python.png" alt-text="Class diagram outlining the structure of the Python sample.":::
 
 The `on_message_activity` module runs the appropriate dialog through the `run_dialog` dialog extension method. Then the main dialog calls `LuisHelper` to find the top scoring user intent. If the top intent for the user input returns "BookFlight", the helper function fills out information from the user that LUIS returned. After that, the main dialog starts the `BookingDialog`, which acquires additional information as needed from the user such as:
 
@@ -103,27 +103,21 @@ This article covers how to add LUIS to a bot. For information about using dialog
 ## Create a LUIS app in the LUIS portal
 
 1. [Sign in to the LUIS portal][sign-in-luis-portal] and if needed [create an account][create-account] and [authoring resource][create-authoring-resource].
-1. On the **Conversation apps** page in [LUIS][conversation-apps], select the down arrow to the right of **New app** then select **Import as JSON**.
-
-    :::image type="content" source="./media/how-to-luis/new-luis-app.png" alt-text="Create a new LUIS app" lightbox="./media/how-to-luis/new-luis-app.png":::
-
+1. On the **Conversation apps** page in [LUIS][conversation-apps], select **Import**, then **Import as JSON**.
 1. In the **Import new app** dialog:
     1. Choose the **FlightBooking.json** file in the **CognitiveModels** folder of the sample.
     1. Enter `FlightBooking` as the optional name of the app, and select **Done**.
-1. You may be prompted to upgrade your composite entities. You can ignore this and select **Remind me later**:
-
-    ![ignore-composite-entities](./media/how-to-luis/luis-upgrade-composite-entities.png)
-
-1. Train and publish your app to the _production_ environment.
+1. The site may display **How to create an effective LUIS app** and **Upgrade your composite entities** dialogs. You can dismiss these dialogs and continue.
+1. Train your app, then publish your app to the _production_ environment.
     For more information, see the LUIS documentation on how to [train](/azure/cognitive-services/LUIS/luis-how-to-train) and [publish](/azure/cognitive-services/LUIS/publishapp) an app.
 
 ### Why use entities
 
-LUIS entities enable your bot to understand events beyond standard intents. This enables you to gather additional information from users which can enable you to stream line your questions and respond more intelligently. Along with definitions for the three LUIS intents 'Book Flight', 'Cancel', and 'None' the FlightBooking.json file also contains a set of entities such as 'From.Airport' and 'To.Airport'. These entities allow LUIS to detect and return additional information contained within the user's original input when they request a new travel booking.
+LUIS entities enable your bot to understand events beyond standard intents. This enables you to gather from users additional information, so your bot can ask questions and respond more intelligently. Along with definitions for the three LUIS intents 'Book Flight', 'Cancel', and 'None', the FlightBooking.json file also contains a set of entities such as 'From.Airport' and 'To.Airport'. These entities allow LUIS to detect and return additional information contained within the user's original input when they request a new travel booking.
 
 ## Obtain values to connect to your LUIS app
 
-Once your LUIS app is published, you can access it from your bot. You will need to record several values to access your LUIS app from within your bot. You can retrieve that information using the LUIS portal.
+Once your LUIS app is published, you can access it from your bot. You'll need to record several values to access your LUIS app from within your bot. You can retrieve that information using the LUIS portal.
 
 ### Retrieve application information from the LUIS.ai portal
 
@@ -133,17 +127,17 @@ The settings file (`appsettings.json`, `.env` or `config.py`) acts as the place 
 1. With your published LUIS app open, select the **MANAGE** tab.
 1. Select the **Settings** tab on the left side and record the value shown for _Application ID_ as \<YOUR_APP_ID>.
 
-     :::image type="content" source="./media/how-to-luis/manage-luis-app-app-info.png" alt-text="Manage LUIS application information" lightbox="./media/how-to-luis/manage-luis-app-app-info.png":::
+     :::image type="content" source="./media/how-to-luis/manage-luis-app-app-info.png" alt-text="Screenshot of the Manage page displaying your application ID." lightbox="./media/how-to-luis/manage-luis-app-app-info.png":::
 
 1. Select the **Azure Resources** tab on the left side and select the **Authoring Resource** group. Record the value shown for _Location_ as \<YOUR_REGION> and _Primary Key_ as \<YOUR_AUTHORING_KEY>.
 
-     :::image type="content" source="./media/how-to-luis/manage-luis-app-azure-resources.png" alt-text="Manage LUIS authoring information" lightbox="./media/how-to-luis/manage-luis-app-azure-resources.png":::
+     :::image type="content" source="./media/how-to-luis/manage-luis-app-azure-resources.png" alt-text="Screenshot of the Manage page displaying your location and primary key." lightbox="./media/how-to-luis/manage-luis-app-azure-resources.png":::
 
 ### Update the settings file
 
 # [C#](#tab/csharp)
 
-Add the information required to access your LUIS app including application ID, authoring key, and region into the `appsettings.json` file. These are the values you saved previously from your published LUIS app. Note that the API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
+Add the information required to access your LUIS app including application ID, authoring key, and region into the `appsettings.json` file. These are the values you saved previously from your published LUIS app. The API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
 
 **appsetting.json**
 
@@ -151,7 +145,7 @@ Add the information required to access your LUIS app including application ID, a
 
 # [JavaScript](#tab/javascript)
 
-Add the information required to access your LUIS app including application ID, authoring key, and region into the `.env` file. These are the values you saved previously from your published LUIS app. Note that the API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
+Add the information required to access your LUIS app including application ID, authoring key, and region into the `.env` file. These are the values you saved previously from your published LUIS app. The API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
 
 **.env**
 
@@ -159,7 +153,7 @@ Add the information required to access your LUIS app including application ID, a
 
 # [Java](#tab/java)
 
-Add the information required to access your LUIS app including application ID, authoring key, and region into the `application.properties` file. These are the values you saved previously from your published LUIS app. Note that the API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
+Add the information required to access your LUIS app including application ID, authoring key, and region into the `application.properties` file. These are the values you saved previously from your published LUIS app. The API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
 
 **application.properties**
 
@@ -167,7 +161,7 @@ Add the information required to access your LUIS app including application ID, a
 
 # [Python](#tab/python)
 
-Add the information required to access your LUIS app including application ID, authoring key, and region into the `config.py` file. These are the values you saved previously from your published LUIS app. Note that the API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
+Add the information required to access your LUIS app including application ID, authoring key, and region into the `config.py` file. These are the values you saved previously from your published LUIS app. The API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
 
 **config.py**
 
@@ -259,13 +253,9 @@ Download and install the latest [Bot Framework Emulator](https://github.com/micr
 
 1. In the Emulator, type a message such as "travel to paris" or "going from paris to berlin". Use any utterance found in the file FlightBooking.json for training the intent "Book flight".
 
-![LUIS booking input](./media/how-to-luis/luis-user-travel-input.png)
+If the top intent returned from LUIS resolves to "Book flight", your bot will ask more questions until it has enough information stored to create a travel booking. At that point it will return this booking information back to your user.
 
-If the top intent returned from LUIS resolves to "Book flight" your bot will ask additional questions until it has enough information stored to create a travel booking. At that point it will return this booking information back to your user.
-
-![LUIS booking result](./media/how-to-luis/luis-travel-result.png)
-
-At this point the code bot logic will reset and you can continue to create additional bookings.
+At this point, the code bot logic will reset and you can continue to create more bookings.
 
 ## Additional information
 
