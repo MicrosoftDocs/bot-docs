@@ -1,5 +1,5 @@
 ---
-title: Write directly to storage in Bot Framework SDK
+title: Write directly to storage
 description: Learn how to use the Bot Framework SDK to write bot data directly to various types of persistent storage without using a state manager.
 keywords: storage, read and write, memory storage, eTag
 author: JonathanFingold
@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 09/30/2021
+ms.date: 08/15/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -24,18 +24,15 @@ You can read and write directly to your storage object without using middleware 
 - Familiarity with [Creating a bot](../bot-service-quickstart-create-bot.md) locally.
 - Bot Framework SDK v4 templates for [Visual Studio (C#)](https://marketplace.visualstudio.com/items?itemName=BotBuilder.botbuilderv4), [Node.js](https://nodejs.org), or [Yeoman](http://yeoman.io).
 
-[!INCLUDE [VSIX templates](~/includes/vsix-templates-versions.md)]
+[!INCLUDE [VSIX templates](../includes/vsix-templates-versions.md)]
 
 ## About this sample
-
-<!-- Sent email to John Taylor on 1/20/21 about the need to create a sample bot to base
-     this article on. As it is currently, this article starts with the EchoBot, then replaces everything in EchoBot.cs. The code demonstrates creating a list by saving the values the user enters into memory, then makes the required code changes to save it into a Cosmos DB database (then a Blob storage database). It is similar to echo bot in that it repeats what you enter, except that it echoes back a list of all previous entries as well. This type of article is difficult to maintain, if the underlying sample it is based off of (EchoBot) changes, it could cause things not to work and there is no great way to tie an article to a sample that is used in this way.  -->
 
 The sample code in this article begins with the structure of a basic echo bot, then extends that bot's functionality by adding additional code (provided below). This extended code creates a list to preserve user inputs as they're received. Each turn, the full list of user inputs, saved to memory, is echoed back to the user. The data structure containing this list of inputs is then modified to save to storage. Various types of storage are explored as additional functionality is added to this sample code.
 
 ## Memory storage
 
-The Bot Framework SDK allows you to store user inputs using in-memory storage. Since in-memory storage is cleared each time the bot is restarted, it's best suited for testing purposes and is not intended for production use. Persistent storage types, such as database storage, are best for production bots. <!--Be sure to set storage to **Cosmos DB**, **Blob storage**, or **Azure Table storage** before publishing your bot.-->
+The Bot Framework SDK allows you to store user inputs using in-memory storage. Since in-memory storage is cleared each time the bot is restarted, it's best suited for testing purposes and isn't intended for production use. Persistent storage types, such as database storage, are best for production bots.
 
 ## Build a basic bot
 
@@ -169,7 +166,7 @@ npm install --save dotenv
 
 Modify the code in **index.js** that creates the main dialog. The existing line of code to create the main dialog is `const myBot = new EchoBot();`, it needs updated to enable passing a storage object to the `EchoBot` constructor so you can store the user's input to the bot's internal memory:
 
-First you will need to add a reference to `MemoryStorage` in `botbuilder`:
+First you'll need to add a reference to `MemoryStorage` in `botbuilder`:
 
 ```javascript
 const { MemoryStorage } = require('botbuilder');
@@ -182,7 +179,7 @@ const myStorage = new MemoryStorage();
 const myBot = new EchoBot(myStorage);
 ```
 
-This passes in a `MemoryStorage` object to the `EchoBot` constructor. You will change that later to pass a _Cosmos DB_ or _Blob Storage_ object.
+This passes in a `MemoryStorage` object to the `EchoBot` constructor. You'll change that later to pass a _Cosmos DB_ or _Blob Storage_ object.
 
 Next, replace the code in **bot.js** with the following code:
 
@@ -331,7 +328,7 @@ Next, start the Emulator and then connect to your bot in the Emulator:
 
 Send a message to your bot. The bot will list the messages it has received.
 
-![Emulator test storage bot](./media/emulator-direct-storage-test.png)
+:::image type="content" source="./media/emulator-direct-storage-test.png" alt-text="A conversation with the bot that shows the bot keeping a list of messages from the user.":::
 
 The remainder of this article will demonstrate how to save to persistent storage instead of the bot's internal memory.
 
@@ -355,7 +352,7 @@ To use Cosmos DB in your bot, you'll need to create a database resource before g
 1. Go to the [Azure portal](https://portal.azure.com) to create an Azure Cosmos DB account. Search for and select **Azure Cosmos DB**.
 1. In the **Azure Cosmos DB** page, select **New** to bring up the **Create Azure Cosmos DB Account** page.
 
-    ![Create Cosmos DB database account](./media/create-cosmosdb-database.png)
+    :::image type="content" source="./media/create-cosmosdb-database.png" alt-text="Screenshot of creating your Cosmos DB account.":::
 
 1. Provide values for the following fields:
     1. **Subscription**. Select the Azure subscription that you want to use for this Azure Cosmos account.
@@ -373,22 +370,15 @@ The account creation takes a few minutes. Wait for the portal to display the _Co
 
 ### Add a database
 
-<!---
->[!IMPORTANT]
-> Unlike the legacy _Cosmos DB storage_, which has now been deprecated, the _Cosmos DB partitioned storage_ does not automatically create a database within your Cosmos DB account.
--->
-
 > [!NOTE]
 > You should not create the container yourself. Your bot will create it for you when creating its internal Cosmos DB client, ensuring it is configured correctly for storing bot state.
 
 1. Navigate to the **Data Explorer** page within your newly created Cosmos DB account, then choose **New Database** from the **New Container** drop-down. A panel will then open on the right-hand side of the window, where you can enter the details for the new database.
 
-    ![Create Cosmos DB database resource image](./media/create-cosmosdb-database-resource.png)
+    :::image type="content" source="./media/create-cosmosdb-database-resource.png" alt-text="Screenshot of creating your Cosmos DB database.":::
 
 1. Enter an ID for your new database and, optionally, set the throughput (you can change this later) and finally select **OK** to create your database. Make a note of this database ID for use later on when configuring your bot.
-1. Now that you have created a Cosmos DB account and a database, you need to copy over some of the values for integrating your new database into your bot.  To retrieve these, navigate to the **Keys** tab within the database settings section of your Cosmos DB account.  From this page, you will need your **URI** (_Cosmos DB endpoint_) and your **PRIMARY KEY** (_authorization key_).
-
-    ![Cosmos DB Keys](./media/cosmos-db-keys-legend.png)
+1. Now that you've created a Cosmos DB account and a database, you need to copy over some of the values for integrating your new database into your bot.  To retrieve these, navigate to the **Keys** tab within the database settings section of your Cosmos DB account.  From this page, you'll need your **URI** (_Cosmos DB endpoint_) and your **PRIMARY KEY** (_authorization key_).
 
 You should now have a Cosmos DB account with a database and the following values ready to use in your bot settings.
 
@@ -443,7 +433,7 @@ COSMOS_DB_CONTAINER_ID="bot-storage"
 
 #### Installing Cosmos DB packages
 
-Make sure you have the packages necessary for Cosmos DB.
+Make sure you've the packages necessary for Cosmos DB.
 
 ### [C#](#tab/csharp)
 
@@ -453,10 +443,6 @@ Install the **Microsoft.Bot.Builder.Azure** NuGet package. For more information 
 ### [JavaScript](#tab/javascript)
 
 Add a reference to **botbuilder-azure** using npm.
-<!-- Email sent to Steven Gum and Josh Gummersall to validate the following note is correct. I was able to run through this scenario without Python installed, ao I am removing this.
-> [!NOTE]
-> This npm package relies on an installation of Python existing on your development machine. If you have not previously installed Python you can find installation resources for your machine at [python.org](https://www.python.org/downloads/).
- -->
 
 ```Console
 npm install --save botbuilder-azure
@@ -539,7 +525,7 @@ const ENV_FILE = path.join(__dirname, '.env');
 require('dotenv').config({ path: ENV_FILE });
 ```
 
-Next, you will need to make changes to **index.js** to use Cosmos DB partitioned storage instead of the Bot Frameworks internal storage. All the code changes in this section are made in **index.js**.
+Next, you'll need to make changes to **index.js** to use Cosmos DB partitioned storage instead of the Bot Frameworks internal storage. All the code changes in this section are made in **index.js**.
 
 First, add a reference to `botbuilder-azure` in **index.js**. This will give you access to the `BlobStorage` API:
 
@@ -578,7 +564,7 @@ Both `CosmosDbPartitionedStorage` and `CosmosDbPartitionedConfig` from `botbuild
 from botbuilder.azure import CosmosDbPartitionedStorage, CosmosDbPartitionedConfig
 ```
 
-In order to access the settings in **config.py**, you will import `DefaultConfig` as shown below:
+In order to access the settings in **config.py**, you'll import `DefaultConfig` as shown below:
 
 ```python
 from config import DefaultConfig
@@ -621,13 +607,14 @@ Now start the Bot Framework Emulator and connect to your bot:
 ## Interact with your Cosmos DB bot
 
 Send a message to your bot, and the bot will list the messages it received.
-![Emulator running](./media/emulator-direct-storage-test.png)
+
+:::image type="content" source="./media/emulator-direct-storage-test.png" alt-text="A conversation with the bot that shows the bot keeping a list of messages from the user.":::
 
 ### View your Cosmos DB data
 
-After you have run your bot and saved your information, we can view the data stored in the Azure portal under the **Data Explorer** tab.
+After you've run your bot and saved your information, you can view the data stored in the Azure portal under the **Data Explorer** tab.
 
-![Data Explorer example](./media/data_explorer.PNG)
+:::image type="content" source="./media/data_explorer.PNG" alt-text="Screenshot of the Data Explorer in the Azure portal.":::
 
 ## Using Blob storage
 
@@ -643,7 +630,7 @@ To use Blob storage in your bot, you'll need to get a few things set up before g
 1. In the **Featured** section of the **All services** page, select **Storage accounts**.
 1. In the **Storage accounts** page, select **New**.
 
-    ![The Blob create storage account page](./media/blob-storage-new-account.png)
+    :::image type="content" source="./media/blob-storage-new-account.png" alt-text="Screenshot of creating an Azure Storage account.":::
 
 1. In the **Subscription** field, select the subscription in which to create the storage account.
 1. In the **Resource group** field, select an existing resource group or select **Create new**, and enter a name for the new resource group.
@@ -670,23 +657,20 @@ Once your Blob storage account is created, open it, then:
 1. Then right-click on **BLOB CONTAINERS**
 1. Select **Create blob container** from the drop-down list.
 
-    ![Create Blob storage container](./media/create-blob-container.png)
+    :::image type="content" source="./media/create-blob-container.png" alt-text="Screenshot of creating a blob container.":::
 
-1. Enter a name in the **New container** form. You will use this name for the value of your "_blob-storage-container-name_" to provide access to your Blob storage account. Note the following guidelines:
+1. Enter a name in the **New container** form. You'll use this name for the value of your "_blob container name_" to provide access to your Blob storage account. Note the following guidelines:
     - This name may only contain lowercase letters, numbers, and hyphens.
     - This name must begin with a letter or a number.
     - Each hyphen must be preceded and followed by a valid non-hyphen character.
-    - The name must be between three and 63 characters long.
+    - The name must be between 3 and 63 characters long.
 
 #### Add Blob storage configuration information
 
 Find the Blob storage keys you need to configure Blob storage for your bot as shown above:
 
 1. In the Azure portal, open your Blob storage account and select **Access keys** in the **Settings** section.
-
-    ![Find Blob storage Keys](./media/find-blob-storage-keys.png)
-
-Use **Connection string** as the value for your "_connection-string_" to provide access to your Blob storage account.
+1. To configure your bot to access to your Blob storage account, use **Connection string** as the value for the _blob connection string_.
 
 ### [C#](#tab/csharp)
 
@@ -736,7 +720,7 @@ Install the **Microsoft.Bot.Builder.Azure.Blobs** NuGet package. For more inform
 Add references to botbuilder-azure in your project via npm.
 
 > [!NOTE]
-> This npm package relies on an installation of Python existing on your development machine. If you have not previously installed Python you can find installation resources for your machine at [Python.org](https://www.python.org/downloads/)
+> This npm package relies on an installation of Python existing on your development machine. If you've not previously installed Python you can find installation resources for your machine at [Python.org](https://www.python.org/downloads/)
 
 ```Console
 npm install --save botbuilder-azure-blobs
@@ -831,7 +815,7 @@ const ENV_FILE = path.join(__dirname, '.env');
 require('dotenv').config({ path: ENV_FILE });
 ```
 
-Next, you will need to make changes use Blob storage instead of the Bot Frameworks internal storage.
+Next, you'll need to make changes use Blob storage instead of the Bot Frameworks internal storage.
 
 Next, add a reference to `botbuilder-azure`. This will give you access to the Blob Storage API:
 
@@ -862,7 +846,7 @@ This will require `BlobStorage` and `BlobStorageSettings` from `botbuilder-azure
 from botbuilder.azure import BlobStorage, BlobStorageSettings
 ```
 
-In order to access the settings in **config.py**, you will import `DefaultConfig` as shown below:
+In order to access the settings in **config.py**, you'll import `DefaultConfig` as shown below:
 
 ```python
 from config import DefaultConfig
@@ -903,11 +887,11 @@ Next, start the Emulator and then connect to your bot in the Emulator:
 
 Send a message to your bot, and the bot will list the messages it receives.
 
-![Emulator test storage bot](./media/emulator-direct-storage-test.png)
+:::image type="content" source="./media/emulator-direct-storage-test.png" alt-text="A conversation with the bot that shows the bot keeping a list of messages from the user.":::
 
 ### View your Blob storage data
 
-After you have run your bot and saved your information, we can view it in under the **Storage Explorer** tab in the Azure portal.
+After you've run your bot and saved your information, we can view it in under the **Storage Explorer** tab in the Azure portal.
 
 ## Blob transcript storage
 
@@ -921,7 +905,7 @@ Azure blob transcript storage provides a specialized storage option that allows 
 
 Azure blob transcript storage can use the same blob storage account created following the steps detailed in sections "_Create your blob storage account_" and "_Add configuration information_" above. We now add a container to hold our transcripts
 
-![Create transcript container](./media/create-blob-transcript-container.png)
+:::image type="content" source="./media/create-blob-transcript-container.png" alt-text="Screenshot of creating a blob container to use as a transcript store.":::
 
 1. Open your Azure blob storage account.
 1. Select **Storage Explorer**.
@@ -955,11 +939,11 @@ public class EchoBot : ActivityHandler
 
 ### Store user conversations in Azure blob transcripts
 
-After a blob container is available to store transcripts you can begin to preserve your users' conversations with your bot. These conversations can later be used as a debugging tool to see how users interact with your bot. Each Emulator _Restart conversation_ initiates the creation of a new transcript conversation list. The following code preserves user conversation inputs within a stored transcript file.
+After a blob container is available to store transcripts, you can begin to preserve your users' conversations with your bot. These conversations can later be used as a debugging tool to see how users interact with your bot. Each Emulator _Restart conversation_ initiates the creation of a new transcript conversation list. The following code preserves user conversation inputs within a stored transcript file.
 
 - The current transcript is saved using `LogActivityAsync`.
 - Saved transcripts are retrieved using `ListTranscriptsAsync`.
-In this sample code the ID of each stored transcript is saved into a list named "storedTranscripts". This list is later used to manage the number of stored blob transcripts we retain.
+In this sample code, the ID of each stored transcript is saved into a list named "storedTranscripts". This list is later used to manage the number of stored blob transcripts we retain.
 
 **echoBot.cs**
 
@@ -1041,23 +1025,21 @@ protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivi
 
 ```
 
-See [Azure Blob Transcript Storage](/dotnet/api/microsoft.bot.builder.azure.blobs.blobstranscriptstore) for more information about the class.
+For more information about the class, see [Azure Blob Transcript Storage](/dotnet/api/microsoft.bot.builder.azure.blobs.blobstranscriptstore).
 
 ## Additional Information
 
 ### Manage concurrency using eTags
 
-In our bot code example we set the `eTag` property of each `IStoreItem` to `*`. The `eTag` (entity tag) member of your store object is used within Cosmos DB to manage concurrency. The `eTag` tells your database what to do if another instance of the bot has changed the object in the same storage that your bot is writing to.
-
-<!-- define optimistic concurrency -->
+In our bot code example, we set the `eTag` property of each `IStoreItem` to `*`. The `eTag` (entity tag) member of your store object is used within Cosmos DB to manage concurrency. The `eTag` tells your database what to do if another instance of the bot has changed the object in the same storage that your bot is writing to.
 
 #### Last write wins - allow overwrites
 
-An `eTag` property value of asterisk (`*`) indicates that the last writer wins. When creating a new data store, you can set `eTag` of a property to `*` to indicate that you have not previously saved the data that you are writing, or that you want the last writer to overwrite any previously saved property. If concurrency is not an issue for your bot, setting the `eTag` property to `*` for any data that you are writing enables overwrites.
+An `eTag` property value of asterisk (`*`) indicates that the last writer wins. When creating a new data store, you can set `eTag` of a property to `*` to indicate that you've not previously saved the data that you're writing, or that you want the last writer to overwrite any previously saved property. If concurrency isn't an issue for your bot, setting the `eTag` property to `*` for any data that you're writing enables overwrites.
 
 #### Maintain concurrency and prevent overwrites
 
-When storing your data into Cosmos DB, use a value other than `*` for the `eTag` if you want to prevent concurrent access to a property and avoid overwriting changes from another instance of the bot. The bot receives an error response with the message `etag conflict key=` when it attempts to save state data and the `eTag` is not the same value as the `eTag` in storage. <!-- To control concurrency of data that is stored using `IStorage`, the BotBuilder SDK checks the entity tag (ETag) for `Storage.Write()` requests. -->
+When storing your data into Cosmos DB, use a value other than `*` for the `eTag` if you want to prevent concurrent access to a property and avoid overwriting changes from another instance of the bot. The bot receives an error response with the message `etag conflict key=` when it attempts to save state data and the `eTag` isn't the same value as the `eTag` in storage.
 
 By default, the Cosmos DB store checks the `eTag` property of a storage object for equality every time a bot writes to that item, and then updates it to a new unique value after each write. If the `eTag` property on write doesn't match the `eTag` in storage, it means another bot or thread changed the data.
 
