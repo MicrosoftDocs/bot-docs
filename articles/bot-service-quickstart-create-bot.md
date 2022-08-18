@@ -1,14 +1,13 @@
 ---
-title: Create a bot with the Bot Framework SDK in C#, Java, JavaScript, or Python - Azure Bot Service
-description: Create your first bot with the Bot Framework SDK using C#, Java, JavaScript or Python.
-keywords: quickstart, create bot, Azure Bot, C#, Python, JavaScript, Java, emulator
+title: Create a basic bot
+description: Create your first bot with the Bot Framework SDK, in C#, Java, JavaScript, or Python.
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: quickstart
-ms.date: 09/14/2021
+ms.date: 08/15/2022
 ms.custom: mode-api, tab-zone-seo, abs-meta-21q1
 ---
 
@@ -28,7 +27,7 @@ Creating your first bot doesn't require an Azure subscription or an Azure Bot Se
 - [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md)
 - Knowledge of [ASP.NET Core](/aspnet/core/) and [asynchronous programming in C#](/dotnet/csharp/programming-guide/concepts/async/index)
 
-### Templates
+### C# templates
 
 [!INCLUDE [Add templates in C#](includes/quickstart/dotnet/add-templates.md)]
 
@@ -41,7 +40,7 @@ Creating your first bot doesn't require an Azure subscription or an Azure Bot Se
 - Install [node.js](https://nodejs.org/) version 12.10 or later.
 - An Azure account if you want to deploy to [Azure](https://azure.microsoft.com/).
 
-### Templates
+### Java templates
 
 Use the Yeoman generator to quickly set up a conversational AI bot using core AI capabilities in the [Bot Framework v4](https://dev.botframework.com). For more information, see [yeoman.io](https://yeoman.io).
 
@@ -87,7 +86,7 @@ The generator supports three different template options as shown below.
 - Knowledge of [restify](http://restify.com/) and asynchronous programming in JavaScript
 - [Visual Studio Code](https://www.visualstudio.com/downloads) or your favorite IDE, if you want to edit the bot code.
 
-### Templates
+### JavaScript and TypeScript templates
 
 To install Yeoman and the Yeoman generator for Bot Framework v4:
 
@@ -152,7 +151,7 @@ python -m venv venv
 venv\Scripts\activate.bat
 ```
 
-### Templates
+### Python templates
 
 Install the necessary packages by running the following `pip install` commands:
 
@@ -342,8 +341,6 @@ At this point, your bot is running locally on port 3978.
 1. Start the Bot Framework Emulator.
 1. Select **Open Bot** on the Emulator's **Welcome** tab.
 1. Enter your bot's URL, which is your local host and port, with `/api/messages` added to the path. The address is usually: `http://localhost:3978/api/messages`.
-
-   <!--This is the same process in the Emulator for all three languages.-->
 
     :::image type="content" source="media/quickstart/emulator-open-bot.png" alt-text="open a bot":::
 
