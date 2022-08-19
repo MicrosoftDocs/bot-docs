@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 08/15/2022
+ms.date: 08/18/2022
 ms.custom: template-how-to
 ---
 
@@ -106,8 +106,8 @@ az bot update --resource-group <resource group> --name <azureBotId> --endpoint <
 
 | Option         | Description                                                                                             |
 |:---------------|:--------------------------------------------------------------------------------------------------------|
-| resource-group | Name of the Azure resource group in which to create the App Service.                                    |
-| name           | The globally unique and immutable bot ID.                                                               |
+| resource-group | Name of the Azure resource group that contains the App Service.                                         |
+| name           | The globally unique and immutable handle for your bot.                                                  |
 | endpoint       | The messaging endpoint for your bot, such as `https://<appServiceName>.azurewebsites.net/api/messages`. |
 
 ## Additional information
