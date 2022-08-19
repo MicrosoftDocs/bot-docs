@@ -160,13 +160,12 @@ For more information, see [How to manage Azure resource groups with the Azure CL
     On success, the command generates JSON output.
 
     ```azurecli
-    az ad app create --display-name "<name>" --password "<password>"
+    az ad app create --display-name "<name>"
     ```
   
     | Option | Description |
     |:-|:-|
     | display-name | The display name for the app registration. |
-    | password | The password, or _client secret_, for the application. It must be at least 16 characters long, contain at least 1 upper or lower case alphabetical character, at least one numeric character, and contain at least 1 special character. |
 
     For more information, see the [az ad app](/cli/azure/ad/app) reference.
 
@@ -179,9 +178,17 @@ For more information, see [How to manage Azure resource groups with the Azure CL
 1. Use the `az ad app create` command to create an Azure Active Directory app registration.
     On success, the command generates JSON output.
 
-    ```azurecli
-    az ad app create --display-name "<name>" --password "<password>" --available-to-other-tenants
-    ```
+    - For Azure CLI 2.39.0 or later, use:
+
+      ```azurecli
+      az ad app create --display-name "<name>" --sign-in-audience "AzureADandPersonalMicrosoftAccount"
+      ```
+
+    - For earlier versions, use:
+
+      ```azurecli
+      az ad app create --display-name "<name>" --password "<password>" --available-to-other-tenants
+      ```
 
     | Option | Description |
     |:-|:-|
@@ -189,7 +196,8 @@ For more information, see [How to manage Azure resource groups with the Azure CL
     | password | The password, or _client secret_, for the application. It must be at least 16 characters long and contain at least one upper-case or lower-case alphabetical character, at least one numeric character, and at least one special character. |
     | available-to-other-tenants | Include this flag to create a multi-tenant bot. It allows the application to be accessible from any Azure AD tenant. |
 
-    For more information, see the [az ad app](/cli/azure/ad/app) reference.
+    For more information about `az ad app`, see the [command reference](/cli/azure/ad/app).
+    For more information about the `sign-in-audience` parameter, see [sigInAudience values](/graph/api/resources/application#signinaudience-values).
 
 1. Record values you'll need in later steps.
    1. The password you entered in the command
