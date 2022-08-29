@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 07/22/2022
+ms.date: 08/29/2022
 ms.custom: template-how-to
 ---
 
@@ -156,52 +156,34 @@ For more information, see [How to manage Azure resource groups with the Azure CL
 
 ### [Single-tenant](#tab/singletenant)
 
+Use the following commands to create your app registration and set its password.
+On success, these commands generate JSON output.
+
 1. Use the `az ad app create` command to create an Azure Active Directory app registration.
-    On success, the command generates JSON output.
+    This command generates an app ID that you'll use in the next step.
 
     ```azurecli
-    az ad app create --display-name "<name>"
+    az ad app create --display-name "<app-registration-display-name>" --sign-in-audience "AzureADMyOrg"
     ```
   
-    | Option | Description |
-    |:-|:-|
-    | display-name | The display name for the app registration. |
+    | Option           | Description                                                                               |
+    |:-----------------|:------------------------------------------------------------------------------------------|
+    | display-name     | The display name for your app registration.                                               |
+    | sign-in-audience | The supported Microsoft accounts for the app. Use `AzureADMyOrg` for a single tenant app. |
 
-    For more information, see the [az ad app](/cli/azure/ad/app) reference.
+1. Use the `az ad app credential reset` command to generate a new password for your app registration.
 
-1. Record values you'll need in later steps.
-   1. The password you entered in the command
-   1. The `appId` from the command output
+   ```azurecli
+   az ad app credential reset --id "<appId>"
+   ```
+
+1. Record values you'll need in later steps: the _app ID_ and _password_ from the command output.
+
+For more information about `az ad app`, see the [command reference](/cli/azure/ad/app). For more information about the `sign-in-audience` parameter, see [sigInAudience values](/graph/api/resources/application#signinaudience-values).
 
 ### [Multi-tenant](#tab/multitenant)
 
-1. Use the `az ad app create` command to create an Azure Active Directory app registration.
-    On success, the command generates JSON output.
-
-    - For Azure CLI 2.39.0 or later, use:
-
-      ```azurecli
-      az ad app create --display-name "<name>" --sign-in-audience "AzureADandPersonalMicrosoftAccount"
-      ```
-
-    - For earlier versions, use:
-
-      ```azurecli
-      az ad app create --display-name "<name>" --password "<password>" --available-to-other-tenants
-      ```
-
-    | Option | Description |
-    |:-|:-|
-    | display-name | The display name for the app registration. |
-    | password | The password, or _client secret_, for the application. It must be at least 16 characters long and contain at least one upper-case or lower-case alphabetical character, at least one numeric character, and at least one special character. |
-    | available-to-other-tenants | Include this flag to create a multi-tenant bot. It allows the application to be accessible from any Azure AD tenant. |
-
-    For more information about `az ad app`, see the [command reference](/cli/azure/ad/app).
-    For more information about the `sign-in-audience` parameter, see [sigInAudience values](/graph/api/resources/application#signinaudience-values).
-
-1. Record values you'll need in later steps.
-   1. The password you entered in the command
-   1. The `appId` from the command output
+[!INCLUDE [create-identity-multi-tenant](includes/az-cli/create-identity-multi-tenant.md)]
 
 ---
 
