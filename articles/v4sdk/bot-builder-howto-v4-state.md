@@ -1,14 +1,13 @@
 ---
-title: Save user and conversation data in the Bot Framework SDK
+title: Save user and conversation data
 description: Learn how the Bot Framework SDK manages user and conversation data (state). See how to set up storage for this data, read it, and write it. 
-keywords: conversation state, user state, conversation, saving state, managing bot state
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/08/2021
+ms.date: 08/30/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -63,11 +62,11 @@ The following code examples show the definitions for the `UserProfile` and `Conv
 
 **UserProfile.cs**
 
-[!code-csharp[UserProfile](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/UserProfile.cs?range=7-11)]
+[!code-csharp[UserProfile class](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/UserProfile.cs?range=7-10)]
 
 **ConversationData.cs**
 
-[!code-csharp[ConversationData](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/ConversationData.cs?range=6-17)]
+[!code-csharp[ConversationData class](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/ConversationData.cs?range=7-17)]
 
 ## [JavaScript](#tab/javascript)
 
@@ -84,11 +83,11 @@ The following code examples show the definitions for the `UserProfile` and `Conv
 
 **UserProfile.java**
 
-[!code-java[UserProfile](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/UserProfile.java?range=18-28)]
+[!code-java[UserProfile class](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/UserProfile.java?range=18-28)]
 
 **ConversationData.java**
 
-[!code-java[ConversationData](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/ConversationData.java?range=18-46)]
+[!code-java[ConversationData class](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/ConversationData.java?range=18-46)]
 
 ## [Python](#tab/python)
 
@@ -117,8 +116,7 @@ Next, you register `MemoryStorage` that is used to create `UserState` and `Conve
 
 **Startup.cs**
 
-[!code-csharp[ConfigureServices](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/Startup.cs?range=24-27)]
-[!code-csharp[ConfigureServices](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/Startup.cs?range=49-55)]
+[!code-csharp[MemoryStorage, UserState, and ConversationState definitions](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/Startup.cs?range=34-35,55-61)]
 
 **Bots/StateManagementBot.cs**
 
@@ -130,12 +128,11 @@ Next, you register `MemoryStorage` that is then used to create `UserState` and `
 
 **index.js**
 
-[!code-javascript[index.js](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/index.js?range=49-55)]
+[!code-javascript[MemoryStorage, UserState, ConversationState, and bot objects](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/index.js?range=43-50)]
 
 **bots/stateManagementBot.js**
 
-[!code-javascript[bot constructor](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/bots/stateManagementBot.js?range=10-12)]
-[!code-javascript[bot constructor](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/bots/stateManagementBot.js?range=17-19)]
+[!code-javascript[state properties and constructor](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/bots/stateManagementBot.js?range=7-19)]
 
 ## [Java](#tab/java)
 
@@ -143,11 +140,7 @@ Next, you register the `StateManagementBot` in Application.java. Both Conversati
 
 **Application.java**
 
-[!code-java[OverrideStartup](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/Application.java?range=51-57)]
-
-**StateManagementBot.java**
-
-[!code-java[Bot constructor](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/StateManagementBot.java?range=41-45)]
+[!code-java[getBot method](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/Application.java?range=54-60)]
 
 ## [Python](#tab/python)
 
@@ -155,11 +148,11 @@ Next, you register `MemoryStorage` that is used to create `UserState` and `Conve
 
 **app.py**
 
-[!code-python[app.py](~/../botbuilder-samples/samples/python/45.state-management/app.py?range=68-71)]
+[!code-python[MemoryStorage, UserState, ConversationState, and bot objects](~/../botbuilder-samples/samples/python/45.state-management/app.py?range=68-74)]
 
 **bots/state_management_bot.py**
 
-[!code-python[bot constructor](~/../botbuilder-samples/samples/python/45.state-management/bots/state_management_bot.py?range=13-25)]
+[!code-python[bot constructor](~/../botbuilder-samples/samples/python/45.state-management/bots/state_management_bot.py?range=14-30)]
 
 ---
 
@@ -183,11 +176,11 @@ Now you create property accessors for `UserState` and `ConversationState`. Each 
 
 ## [Java](#tab/java)
 
-Now you create property accessors using the `CreateProperty` method. Each state property accessor allows you to get or set the value of the associated state property. Before you use the state properties, use each accessor to load the property from storage and get it from the state cache. To get the properly scoped key associated with the state property, you call the `get` method.
+Now you create property accessors using the `createProperty` method. Each state property accessor allows you to get or set the value of the associated state property. Before you use the state properties, use each accessor to load the property from storage and get it from the state cache. To get the properly scoped key associated with the state property, you call the `get` method.
 
 **StateManagementBot.java**
 
-[!code-java[Create accessors](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/StateManagementBot.java?range=100-109)]
+[!code-java[Create property accessors](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/StateManagementBot.java?range=105-108)]
 
 ## [Python](#tab/python)
 
@@ -243,13 +236,13 @@ Before you exit each dialog turn, you use the state management objects' _saveCha
 
 **StateManagementBot.java**
 
-[!code-java[onMessageActivity](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/StateManagementBot.java?range=98-165)]
+[!code-java[onMessageActivity method](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/StateManagementBot.java?range=102-168)]
 
 Before you exit the turn handler, you use the state management objects' _saveChanges()_ method to write all state changes back to storage.
 
 **StateManagementBot.java**
 
-[!code-java[onTurn](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/StateManagementBot.java?range=55-60)]
+[!code-java[onTurn method](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/StateManagementBot.java?range=58-64)]
 
 ## [Python](#tab/python)
 
@@ -259,13 +252,13 @@ Before you exit the turn handler, you use the state management objects' _saveCha
 
 **bots/state_management_bot.py**
 
-[!code-python[state_message_activity](~/../botbuilder-samples/samples/python/45.state-management/bots/state_management_bot.py?range=47-89)]
+[!code-python[on_message_activity](~/../botbuilder-samples/samples/python/45.state-management/bots/state_management_bot.py?range=47-89)]
 
 Before each dialog turn ends, the bot uses the state management objects' `save_changes` method to persist all changes by writing state information in the storage.
 
 **bots/state_management_bot.py**
 
-[!code-python[state_storage](~/../botbuilder-samples/samples/python/45.state-management/bots/state_management_bot.py?range=32-36)]
+[!code-python[on_turn](~/../botbuilder-samples/samples/python/45.state-management/bots/state_management_bot.py?range=32-36)]
 
 ---
 
