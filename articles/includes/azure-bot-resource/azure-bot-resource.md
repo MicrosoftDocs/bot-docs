@@ -5,7 +5,7 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: include
-ms.date: 07/22/2022
+ms.date: 09/06/2022
 ---
 
 ## Create the resource
@@ -46,6 +46,8 @@ You're now ready to build your bot with the Bot Framework SDK.
 
 [!INCLUDE [app ID and password](../authentication/azure-bot-appid-password.md)]
 
+### To update your app service
+
 If you have an existing App Service resource (web app) for your bot and your bot is a _user-assigned managed identity_ application, you may need to update your bot's app service:
 
 1. Go to the App Service blade for your bot's web app.
@@ -58,11 +60,15 @@ If you have an existing App Service resource (web app) for your bot and your bot
 
         :::image type="content" source="../../media/how-to-create-single-tenant-bot/app-service-managed-identity.png" alt-text="The App Service Identity blade with the managed identity for the bot selected.":::
 
+### To get your app or tenant ID
+
 To get your bot's app or tenant ID:
 
 1. Go to the Azure Bot resource blade for your bot.
 1. Go to the bot's **Configuration** blade.
     From this blade, you can copy the bot's **Microsoft App ID** or **App Tenant ID**.
+
+### To generate a new password
 
 Single-tenant and multi-tenant bots have an app secret or password that you need for some operations.
 Azure Bot Service hides your bot secret. However, the owner of the bot's App Service resource can generate a new password:
