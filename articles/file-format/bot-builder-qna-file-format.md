@@ -1,5 +1,5 @@
 ---
-title: .qna file format - Bot Service
+title: .qna file format
 description: .qna file format reference
 keywords: qna file format, reference, qnamaker
 author: JonathanFingold
@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: reference
-ms.date: 11/01/2021
+ms.date: 09/01/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -16,19 +16,9 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
+[!INCLUDE [qnamaker-sunset-alert](../includes/qnamaker-sunset-alert.md)]
+
 .qna files contain Markdown-like text based definitions for [QnAmaker.ai](http://qnamaker.ai) concepts. This article covers the various concepts expressed via the .qna file format.
-
-<!--
-Supported concepts:
-
-- [Comments](#Adding-comments)
-- [QnA pairs](#Question-and-Answer-pairs)
-- [Filters](#QnAMaker-Filters)
-- [QnA Alterations](#QnA-Maker-alterations)
-- [File references](#QnA-Maker-pdf-file-ingestion)
-- [References](#External-references)
-- [Model description](#Model-description)
-- [Multi-turn content](#Multi-turn-content)-->
 
 ## Adding comments
 
@@ -119,25 +109,6 @@ You can get coffee in our Seattle store at 1 pike place, Seattle, WA
 You can get coffee in our Portland store at 52 marine drive, Portland, OR
 ```
 ~~~
-
-<!---
-## QnA Maker alterations
-
-QnA Maker supports [word alterations](/azure/cognitive-services/qnamaker/concepts/best-practices#use-synonyms) as a way to improve the likelihood that a given user query is answered with an appropriate response. You can use this feature to add synonyms to keywords that take different form.
-
-You can describe word alterations/synonyms lists in .qna files using the following notation.
-```qna
-$<synonym word>:qna-alteration=
-- <list of synonyms>
-```
-
-Here's an example:
-```qna
-$botframework : qna-alterations=
-- bot framework
-- Microsoft bot framework
-```
--->
 
 ## QnA Maker PDF file ingestion
 

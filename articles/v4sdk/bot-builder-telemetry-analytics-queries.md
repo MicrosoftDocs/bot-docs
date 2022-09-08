@@ -1,5 +1,5 @@
 ---
-title: Analyze the telemetry data from your bot - Bot Service
+title: Analyze the telemetry data from your bot
 description: Learn how to analyze bot behavior with Kusto queries.
 keywords: telemetry, appinsights, monitor bot, Kusto, queries
 author: JonathanFingold
@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 09/01/2022
 ---
 
 # Analyze your bot's telemetry data
@@ -17,11 +17,11 @@ ms.date: 11/01/2021
 
 ## Analyzing Bot behavior
 
-The following collection of queries can be used to analyze bot behavior. You can use the collection to author custom queries in [Azure Monitor Log Analytics](/azure/azure-monitor/log-query/log-analytics-tutorial) and to create monitoring and [PowerBI](/power-bi/fundamentals/power-bi-overview) visualization dashboards.
+The following collection of queries can be used to analyze bot behavior. You can use the collection to author custom queries in [Azure Monitor Log Analytics](/azure/azure-monitor/log-query/log-analytics-tutorial) and to create monitoring and [Power BI](/power-bi/fundamentals/power-bi-overview) visualization dashboards.
 
 ## Prerequisites
 
-It is helpful to have a basic understanding of the following concepts:
+It's helpful to have a basic understanding of the following concepts:
 
 * [Kusto queries](/azure/data-explorer/kusto/query/)
 * How to use [Log Analytics](/azure/azure-monitor/log-query/get-started-queries) in the Azure portal to write Azure Monitor log queries
@@ -37,7 +37,7 @@ Azure Dashboards offer a great way to view and share the information generated f
 ## Example Kusto queries
 
 > [!NOTE]
-> It is recommended to pivot on different dimensions such as period, channel, and locale for all queries in this article.
+> It's recommended to pivot on different dimensions such as period, channel, and locale for all queries in this article.
 
 ### Number of users per period
 
@@ -67,43 +67,17 @@ customEvents
 
 #### Sample number-of-users-per-period query results
 
-<!-- 
-
-OPEN ISSUE: Is it possible to define a more descriptive title in the legend when drawing the graph (vs. "Count")?  Or overall title on top or underneath?  
-
-Use the render PropertyName parameter:  title, xtitle, ytitle,, legend
-
--->
-
 ![Number of users per period](./media/userscount.png)
-
-<!--  
-
-OPEN ISSUE 1:
-
-    "Days with little interaction may indicate service health issues"
-
-    This is an interesting statement – I'm not sure if there's a way to overlay service health metrics over these metrics.  It should all be in App Insights.
-
-OPEN ISSUE 2:
-
-    Gary Pretty: Overlap for activity per period - Looks like we have a large overlap between ‘Activity per period’ and ‘Activity per user per period’ – given that activity per user is only really useful in some scenarios, such as authenticated, I think it might simplify things to update the ‘Activity per period’ query / instructions to include a note as to how to filter down per user?   Not sure about this one myself, but thought it was worth bringing up.
-
-    < I agree with you.  One approach might be to include both in the same section, with the ‘Activity per period’ as the primary with a note about what might be considered more of a 'special case’ (I will need input on more details of where this is most applicable – as I've commented in a previous email). >
-
-QUESTION: What changes are required?
-
--->
 
 ### Activity per period
 
-This example illustrates how to measure the volume of activity per desired dimension, whether that be a count of the number of conversations, dialogs, or messages per day for the past 14 days. The time period can be easily changed by assigning different values to the `querystartdate`, `queryEndDate` and `interval` variables. The desired dimension is defined by the `extend` clause in the following example, `metric` can be set to either _InstanceId_, _DialogId_ or _activityId_.
+This example illustrates how to measure the volume of activity per desired dimension, such as a count of the number of conversations, dialogs, or messages per day for the past 14 days. The time period can be easily changed by assigning different values to the `querystartdate`, `queryEndDate` and `interval` variables. The desired dimension is defined by the `extend` clause in the following example, `metric` can be set to either _InstanceId_, _DialogId_ or _activityId_.
 
-Assign *metric* to the dimension that you want to display:
+Assign _metric_ to the dimension that you want to display:
 
-* *InstanceId* measures the number of [Conversations](../bot-service-design-conversation-flow.md)
-* *DialogId* measures the number of [Dialogs](bot-builder-concept-dialog.md)
-* *ActivityId* measures the number of [Messages](../rest-api/bot-framework-rest-connector-create-messages.md)
+* _InstanceId_ measures the number of [Conversations](../bot-service-design-conversation-flow.md)
+* _DialogId_ measures the number of [Dialogs](bot-builder-concept-dialog.md)
+* _ActivityId_ measures the number of [Messages](../rest-api/bot-framework-rest-connector-create-messages.md)
 
 ```Kusto
 // Measures the number of activity's (conversations, dialogs, messages) per period.
@@ -132,9 +106,9 @@ customEvents
 
 ### Activity per user per period
 
-This example demonstrates how to count the number of activities per user per period. This demonstrates drilling down in the _activity per period_ query to focus on the activity per user per period. The activities include dialogs, conversations or messages.  This helps to measure user interaction with your bot and can help in determining potential problems, for example:
+This example demonstrates how to count the number of activities per user per period. This query drills down into the _activity per period_ query to focus on the activity per user per period. The activities include dialogs, conversations or messages. This query measures user interaction with your bot, which can help find potential problems, such as:
 
-* Days with lots of activity by a single user may mean attack or test
+* Days with lots of activity by a single user may mean an attack or test
 * Days with little interaction may indicate service health issues
 
 > [!TIP]
@@ -168,7 +142,7 @@ customEvents
 
 ### Dialog completion
 
-Once you set the telemetry client for a dialog, the dialog (and its children) will emit some default telemetry data, such as _started_ and _completed_. This example can be used to measure the *completed* dialogs relative to *started* dialogs.  If the number of dialogs started is greater than the number completed, some of your users are not completing the dialog flow. This can be used as a starting point in identifying and troubleshooting any potential dialog logic.  It can also be used to identify the more popular and less frequented dialogs.
+Once you set the telemetry client for a dialog, the dialog (and its children) will emit some default telemetry data, such as _started_ and _completed_. This example can be used to measure the _completed_ dialogs relative to _started_ dialogs.  If the number of dialogs started is greater than the number completed, some of your users aren't completing the dialog flow. You can use this query to help you identify and troubleshoot any potential dialog logic. It can also be used to identify which dialogs are most and least frequently used.
 
 > [!TIP]
 > If your create your bot using tools such as [Power Virtual Agents](/power-virtual-agents/fundamentals-what-is-power-virtual-agents) or [Composer](/composer/), you will want to use the adaptive dialog version of each query.
@@ -222,21 +196,7 @@ customEvents
 
 ### Dialog incompletion
 
-This example can be used to count the number of dialog flows that started but never completed due to cancellation or abandonment during the specified time period. You can use it to review incomplete dialogs and examine whether they were actively cancelled due to user confusion or simply abandoned due to user distraction or loss of interest.
-
-<!--  
-
-OPEN ISSUE:
-
-"If number of started dialogs is much greater than number of completed, users do not complete the dialog flow. Troubleshoot dialog logic."
-
-you can use the funnel view to understand where step dropoff is.  If there is a doc describing how to do that in our docs, point to it... 
-
-QUESTION: Who can I talk to about a a doc describing this? 
-
-ALSO: I removed what was line 6 in the example because it was a duplicate where statement: | where timestamp > period    // change timespan accordingly
-
--->
+This example can be used to count the number of dialog flows that started but never completed due to cancellation or abandonment during the specified time period. You can use it to review incomplete dialogs and examine whether they were actively canceled due to user confusion or abandoned due to user distraction or loss of interest.
 
 #### Waterfall dialogs not completed
 
@@ -290,7 +250,7 @@ customEvents
 
 #### Waterfall start/step/complete for dialog in conversation
 
-This example shows the sequence of dialog steps, grouped by conversation (instanceId). This can be useful in determining which steps lead to dialog interruption.
+This example shows the sequence of dialog steps, grouped by conversation (instanceId), which can be useful in determining which steps lead to dialog interruption.
 
 The run this query, enter the value of the desired `DialogId` in place of \<SampleDialogId>
 
@@ -385,11 +345,11 @@ DialogSteps("<SampleDialogId>")
 | WaterfallComplete | 11        |
 | WaterfallCancel   | 1         |
 
-_Interpretation: Of 21 invocations of dialog sequence, only 11 has completed, 9 were abandoned, and one was cancelled by the user._
+_Interpretation: Of 21 invocations of dialog sequence, only 11 has completed, 9 were abandoned, and one was canceled by the user._
 
 ### Average duration in dialog
 
-This example measures the average amount of time users spend in a given dialog. A long time spend in a dialog may suggest opportunities to simplify.
+This example measures the average amount of time users spend in a given dialog. Your bot might benefit from simplifying dialogs that take a user a long time to complete.
 
  ```Kusto
 // Average dialog duration
@@ -404,7 +364,7 @@ customEvents
 | join kind=leftouter (customEvents | where name=="WaterfallCancel" | extend instanceId = tostring(customDimensions['InstanceId'])) on instanceId
 | join kind=leftouter (customEvents | where name=="WaterfallComplete" | extend instanceId = tostring(customDimensions['InstanceId'])) on instanceId
 | extend duration = case(not(isnull(timestamp1)), timestamp1 - timestamp,
-not(isnull(timestamp2)), timestamp2 - timestamp, 0s) // Abandoned are not counted. Alternate: now()-timestamp)
+not(isnull(timestamp2)), timestamp2 - timestamp, 0s) // Abandoned aren't counted. Alternate: now()-timestamp
 | extend seconds = round(duration / 1s)
 | summarize AvgSeconds=avg(seconds) by tostring(DialogId)
 | order by AvgSeconds desc nulls last
@@ -417,12 +377,12 @@ not(isnull(timestamp2)), timestamp2 - timestamp, 0s) // Abandoned are not counte
 
 ### Average steps in dialog
 
-This example shows each executed dialogs "length" as calculated by average, min, max and standard deviation. This can help analyze dialog quality. For example:
+This example shows each invoked dialog's "length" as calculated by average, min, max and standard deviation. This can help analyze dialog quality. For example:
 
-* Dialogs with a lot of steps should be evaluated for simplification opportunities
+* Dialogs with too many steps should be evaluated for simplification opportunities.
 * Dialogs with a wide gap between min/max/average could mean that users get stalled trying to complete the tasks. You may need to evaluate the possibility of there being shorter paths to complete the tasks, or ways to reduce the dialog complexity.
-* Dialogs with a large standard-deviation suggest complex paths or broken experience (abandon/cancel)
-* Dialogs with very few steps may be so because they were never completed. Analyzing the completion/abandonment rates may help to make that determination.  
+* Dialogs with a large standard-deviation suggest complex paths or broken experience (abandon/cancel).
+* Dialogs with few steps may be so because they were never completed. Analyzing the completion/abandonment rates may help to make that determination.  
 
 ```Kusto
 // min/max/std/avg steps per dialog
@@ -493,19 +453,11 @@ customEvents
 
  _Interpretation: Emulator testing used to be most popular but once we went live, DirectLineSpeech, is the most popular channel._
 
-<!--  
-
-Open Issue: More interesting than the "certainty" score would be linking intent to dialog completion %. That infers "certainty" by user's actions. 
-
-QUESTION: What changes are required?
-
--->
-
 ### Total Intents by popularity
 
-This example applies to LUIS enabled bots. It shows a summary of all [intents](bot-builder-concept-luis.md#recognize-intent) by popularity, and corresponding intent detection certainty score.
+This example applies to LUIS enabled bots. It shows a summary of all intents by popularity, and corresponding intent detection certainty score.
 
-* In practice, the view should separated for each metric.
+* In practice, the view should be separated for each metric.
 * Popular intent paths should be optimized for user experience.
 * Low average scores indicate poor recognition & possible missing actual user intent.
 
@@ -532,7 +484,8 @@ customEvents
 _Interpretation: For example the most popular intent, confirm is detected only with 23% confidence on average._
 
 > [!TIP]
-> Barcharts are one of over a dozen options available with Kusto queries.  Some other options include: anomalychart, areachart, columnchart, linechart, scatterchart. for more details see the [render operator](/azure/data-explorer/kusto/query/renderoperator) topic.
+> Barcharts are one of over a dozen options available with Kusto queries. Some other options include: anomalychart, areachart, columnchart, linechart, scatterchart.
+> For more information, see the [render operator](/azure/data-explorer/kusto/query/renderoperator) topic.
 
 ## Schema of Bot Analytics Instrumentation
 
@@ -559,7 +512,7 @@ Most of bot specific activity data is stored in _customDimensions_ field.
 
 | **Field**     | **Description**      | **Sample Values**                                 |
 | ------------- | -------------------- | ------------------------------------------------- |
-| activityId    | Message id           | \<id>: 8da6d750-d00b-11e9-80e0-c14234b3bc2a       |
+| activityId    | Message ID           | \<id>: 8da6d750-d00b-11e9-80e0-c14234b3bc2a       |
 | activityType  | Type of message      | message, conversationUpdate,  event, invoke       |
 | channelId     | Channel identifier   | emulator, directline, msteams,  webchat           |
 | fromId        | From Identifier      | \<id>                                             |

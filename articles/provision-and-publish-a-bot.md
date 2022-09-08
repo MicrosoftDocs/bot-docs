@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 08/29/2022
+ms.date: 09/01/2022
 ms.custom: template-how-to
 ---
 
@@ -50,7 +50,7 @@ Before you begin, make these decisions.
 > [!IMPORTANT]
 > Python bots can't be deployed to a resource group that contains Windows services or bots.
 > However, multiple Python bots can be deployed to the same resource group.
-> Create other services, such as LUIS or QnA Maker, in a different resource group.
+> Create other services, such as Cognitive Services, in a different resource group.
 
 ### Azure resources
 

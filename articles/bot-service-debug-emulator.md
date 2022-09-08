@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 07/25/2022
+ms.date: 09/01/2022
 ms.custom: abs-meta-21q1
 ---
 
@@ -166,6 +166,8 @@ Send a message to your bot and the bot should respond back. You can select the m
 
 ## Inspect services
 
+[!INCLUDE [qnamaker-sunset-alert](includes/qnamaker-sunset-alert.md)]
+
 With the v4 Emulator you can also inspect the JSON responses from LUIS and QnA Maker. Using a bot with a connected language service, you can select **trace** in the LOG window to the bottom right. This new tool also provides features to update your language services directly from the Emulator.
 
 :::image type="content" source="media/emulator-v4/emulator-luis-inspector.png" alt-text="LUIS Inspector":::
@@ -213,8 +215,6 @@ Use inspection middleware to debug a bot connected to a channel.
 
 > [!div class="nextstepaction"]
 > [Debug your bot using transcript files](bot-service-debug-inspection-middleware.md)
-
-<!-- Footnote-style URLs -->
 
 [EmulatorGithubContribute]: https://github.com/Microsoft/BotFramework-Emulator/wiki/How-to-Contribute
 [EmulatorGithubBugs]: https://github.com/Microsoft/BotFramework-Emulator/wiki/Submitting-Bugs-%26-Suggestions

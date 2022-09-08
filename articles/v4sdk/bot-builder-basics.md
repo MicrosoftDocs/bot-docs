@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: conceptual
-ms.date: 08/01/2022
+ms.date: 09/01/2022
 monikerRange: 'azure-bot-service-4.0'
 ms.custom: abs-meta-21q1
 ---
@@ -168,10 +168,6 @@ As mentioned above, the turn context provides the mechanism for the bot to send 
 > [!IMPORTANT]
 > The thread handling the primary bot turn deals with disposing of the context object when it's done. **Be sure to `await` any activity calls** so the primary thread will wait on the generated activity before finishing its processing and disposing of the turn context. Otherwise, if a response (including its handlers) takes any significant amount of time and tries to act on the context object, it may get a _context was disposed_ error.
 
-<!-- TODO Need to reorganize and rewrite parts of this.
-    Do we need more explanation of the "role of the Azure Bot Service", and if so, what do we say about it?
--->
-
 ## Bot templates
 
 You need to choose the application layer use for your app; however, the Bot Framework has templates and samples for ASP.NET (C#), restify (JavaScript), and aiohttp (Python). The documentation is written assuming you use one of these platforms, but the SDK doesn't require it of you. See the [Create a bot](../bot-service-quickstart-create-bot.md) quickstart for instructions on how to access and install the templates.
@@ -197,6 +193,8 @@ The templates are:
   - Uses an activity handler to welcome users.
   - Uses a component dialog and child dialogs to manage the conversation.
   - The dialogs use Language Understanding (LUIS) and QnA Maker features.
+
+[!INCLUDE [qnamaker-sunset-alert](../includes/qnamaker-sunset-alert.md)]
 
 ## Additional information
 

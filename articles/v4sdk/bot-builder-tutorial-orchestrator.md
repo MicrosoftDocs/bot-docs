@@ -1,5 +1,5 @@
 ---
-title: Use multiple LUIS and QnA models with Orchestrator in the Bot Framework SDK
+title: Use multiple LUIS and QnA Maker projects with Orchestrator
 description: Learn how bots can use multiple LUIS models and QnA Maker knowledge bases. See how to use Orchestrator to route user input to the correct model.
 keywords: Luis, QnA, Orchestrator, multiple services, route intents
 author: JonathanFingold
@@ -8,31 +8,50 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/08/2021
+ms.date: 09/01/2022
 monikerRange: 'azure-bot-service-4.0'
+
+ROBOTS: NOINDEX
 ---
 
 # Use multiple LUIS and QnA models with Orchestrator
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-If a bot uses multiple LUIS models and QnA Maker knowledge bases (knowledge bases), you can use Orchestrator to determine which LUIS model or QnA Maker knowledge base best matches the user input. The [bf orchestrator CLI tool][bf-orchestrator-cli] does this by creating a Orchestrator snapshot file that will be used to route user input to the correct model at run time. For more information about Orchestrator, including the CLI commands, click [here][orchestrator].
+[!INCLUDE [qnamaker-sunset-alert](../includes/qnamaker-sunset-alert.md)]
+
+If a bot uses multiple Language Understanding (LUIS) models and QnA Maker knowledge bases, you can use Bot Framework Orchestrator to determine which LUIS model or QnA Maker knowledge base best matches the user input. You can use the `bf orchestrator` CLI command to create an Orchestrator snapshot file, then use the snapshot file to route user input to the correct model at run time.
+
+This article describes how to use an _existing_ QnA Maker knowledge base with Orchestrator.
+
+- For new bots, consider using the [question answering](bot-builder-concept-luis.md#question-answering) and [orchestration workflow](bot-builder-concept-luis.md#use-orchestration-workflow) features of Azure Cognitive Service for Language.
+- For more information about Orchestrator, see [Intent recognition with Orchestrator in Composer][orchestrator].
+- For more information about the `bf orchestrator` command, see [the Bot Framework CLI README][bf-orchestrator-cli].
 
 ## Prerequisites
 
 - A [luis.ai](https://www.luis.ai/) account to author LUIS apps.
-- A [QnA Maker](https://www.qnamaker.ai/) account to author the QnA knowledge base.
+- A [QnA Maker](https://www.qnamaker.ai/) account and an existing QnA Maker knowledge base.
 - A copy of the **NLP with Orchestrator** sample in [C#][cs-sample] or [JavaScript][js-sample].
 - Knowledge of [bot basics](bot-builder-basics.md), [LUIS][howto-luis], and [QnA Maker][howto-qna].
-- Install the command-line [BF CLI][bf-cli]
+- Install the command-line [BF CLI][bf-cli].
 
 ## About this sample
 
-This sample is based on a predefined set of LUIS and QnA Maker apps.
+This sample is based on a predefined set of LUIS and QnA Maker projects.
+However, to use QnA Maker in your bot, you need an existing knowledge base in the [QnA Maker](https://www.qnamaker.ai/) portal.
+Your bot then can use the knowledge base to answer the user's questions.
+
+For new bot development, consider using [Power Virtual Agents](/power-virtual-agents/fundamentals-what-is-power-virtual-agents).
+If you need to create a new knowledge base for a Bot Framework SDK bot, see the following Cognitive Services articles:
+
+- [What is question answering?](/azure/cognitive-services/language-service/question-answering/overview)
+- [Create an FAQ bot](/azure/cognitive-services/language-service/question-answering/tutorials/bot-service)
+- [Azure Cognitive Language Services Question Answering client library for .NET](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/cognitivelanguage/Azure.AI.Language.QuestionAnswering#readme)
 
 ## [C#](#tab/cs)
 
-![Code sample logic flow cs](./media/tutorial-dispatch/dispatch-logic-flow.png)
+![Code sample logic flow cs](./media/tutorial-orchestrator/class-diagram-cs.png)
 
 `OnMessageActivityAsync` is called for each user input received. This module finds the top scoring user intent and passes that result on to `DispatchToTopIntentAsync`. DispatchToTopIntentAsync, in turn, calls the appropriate app handler.
 
@@ -42,7 +61,7 @@ This sample is based on a predefined set of LUIS and QnA Maker apps.
 
 ## [JavaScript](#tab/js)
 
-![Code sample logic flow js](./media/tutorial-dispatch/dispatch-logic-flow-js.png)
+![Code sample logic flow js](./media/tutorial-orchestrator/class-diagram-js.png)
 
 `onMessage` is called for each user input received. This module finds the top scoring user intent and passes that result on to `dispatchToTopIntentAsync`. `dispatchToTopIntentAsync`, in turn, calls the appropriate app handler
 
@@ -54,9 +73,9 @@ This sample is based on a predefined set of LUIS and QnA Maker apps.
 
 The handler calls the LUIS or QnA Maker service and returns the generated result back to the user.
 
-## Create LUIS apps and QnA knowledge base
+## Create LUIS apps
 
-Before you can create Orchestrator snapshot file, you'll need to have your LUIS apps and QnA knowledge bases created and published. In this article, we'll publish the following models that are included with the _NLP With Orchestrator_ sample in the `\CognitiveModels` folder:
+Before you can create an Orchestrator snapshot file, you need LUIS apps and QnA knowledge bases created and published. The sample bot referenced in this article uses the following models, included with the _NLP With Orchestrator_ sample in the `\CognitiveModels` folder:
 
 | Name | Description |
 |------|------|
@@ -78,26 +97,22 @@ Create LUIS apps from the _HomeAutomation_ and _Weather_ lu files in the _cognit
 
 For more information, see how to **Create a LUIS app in the LUIS portal** and **Obtain values to connect to your LUIS app** in [Add natural language understanding to your bot](bot-builder-howto-v4-luis.md) and the LUIS documentation on how to [train](/azure/cognitive-services/LUIS/luis-how-to-train) and [publish](/azure/cognitive-services/LUIS/publishapp) an app to the production environment.
 
-### Create the QnA Maker knowledge base
+## Obtain values to connect your bot to the knowledge base
 
-1. Create your QnAMaker service from qnamaker.ai portal or from https://portal.azure.com, get the resource key for the next step below.
+[!INCLUDE [qnamaker-sunset-alert](../includes/qnamaker-sunset-alert.md)]
 
-1. Create a QnAMaker kb from the _QnAMaker_ .qna file.
-    1. Run the following command to import, train and publish the app to the production environment.
+You need an existing knowledge base and your QnA Maker hostname and endpoint key.
 
-        ```console
-        bf qnamaker:build --in CognitiveModels --subscriptionKey <YOUR-KEY> --botName <YOUR-BOT-NAME>
-        ```
-
-    1. Record the QnA Maker kb, hostname and endpoint key from the output of the command above.
+> [!TIP]
+> The QnA Maker documentation has instructions on how to [create, train, and publish your knowledge base](/azure/cognitive-services/qnamaker/quickstarts/create-publish-knowledge-base).
 
 ## Create the Orchestrator snapshot file
 
-The CLI interface for the bf orchestrator tool creates the Orchestrator snapshot file for routing to the correct LUIS or QnA Maker app at run time.
+The CLI interface for the Orchestrator tool creates the Orchestrator snapshot file for routing to the correct LUIS or QnA Maker app at run time.
 
-1. Install the latest supported version of the [Visual C++ redistributable package](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)
+1. Install the latest supported version of the [Visual C++ Redistributable package](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)
 1. Open a command prompt or terminal window, and change directories to the sample directory
-1. Make sure you have the current version of npm and the bf cli tool.
+1. Make sure you have the current version of npm and the Bot Framework CLI.
 
     ```console
     npm i -g npm
@@ -156,7 +171,7 @@ When all changes are complete, save this file.
 
 ### Installing packages
 
-Prior to running this app for the first time you will need to install several npm packages.
+Prior to running this app for the first time, install required npm packages.
 
 ```console
 npm install
@@ -238,7 +253,7 @@ When the Orchestrator recognizer produces a result, it indicates which service c
 
 [!code-csharp[DispatchToTopIntentAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/14.nlp-with-orchestrator/bots/DispatchBot.cs?range=51-69)]
 
-The `ProcessHomeAutomationAsync` and `ProcessWeatherAsync` methods use the user input contained within the turn context to to get the top intent and entities from the correct LUIS model.
+The `ProcessHomeAutomationAsync` and `ProcessWeatherAsync` methods use the user input contained within the turn context to get the top intent and entities from the correct LUIS model.
 
 The `ProcessSampleQnAAsync` method uses the user input contained within the turn context to generate an answer from the knowledge base and display that result to the user.
 
@@ -249,7 +264,7 @@ When the Orchestrator recognizer produces a result, it indicates which service c
 **bots/dispatchBot.js**
 [!code-javascript[dispatchToTopIntentAsync](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-orchestrator/bots/dispatchBot.js?range=79-95)]
 
-The `processHomeAutomation` and `processWeather` methods use the user input contained within the turn context to to get the top intent and entities from the correct LUIS model.
+The `processHomeAutomation` and `processWeather` methods use the user input contained within the turn context to get the top intent and entities from the correct LUIS model.
 
 The `processSampleQnA` method uses the user input contained within the turn context to generate an answer from the knowledge base and display that result to the user.
 
@@ -260,7 +275,7 @@ The `processSampleQnA` method uses the user input contained within the turn cont
 
 ## Test your bot
 
-1. Using your development environment, start the sample code. Note the _localhost_ address shown in the address bar of the browser window opened by your App: "https://localhost:<Port_Number>".
+1. Using your development environment, start the sample code. Note the _localhost_ address shown in the address bar of the browser window opened by your App: `https://localhost:<Port_Number>`.
 1. Open Bot Framework Emulator, click on **Open Bot** button.  
 1. In the **Open a bot** dialog box, enter your bot endpoint URL, such as `http://localhost:3978/api/messages`. Click **Connect**.
 1. For your reference, here are some of the questions and commands that are covered by the services built for your bot:
@@ -389,8 +404,6 @@ The `processSampleQnA` method uses the user input contained within the turn cont
     }
     ```
 
-<!-- Foot-note style links -->
-
 [howto-luis]: bot-builder-howto-v4-luis.md
 [howto-qna]: bot-builder-howto-qna.md
 
@@ -399,4 +412,4 @@ The `processSampleQnA` method uses the user input contained within the turn cont
 
 [orchestrator]: /composer/concept-orchestrator
 [bf-cli]: https://github.com/microsoft/botframework-cli
-[bf-orchestrator-cli]: https://github.com/microsoft/botframework-cli/tree/main/packages/orchestrator
+[bf-orchestrator-cli]: https://github.com/microsoft/botframework-cli/tree/main/packages/orchestrator#readme

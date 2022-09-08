@@ -1,5 +1,5 @@
 ---
-title: Add telemetry to your bot in Azure Bot Service
+title: Add telemetry to your bot
 description: Learn how to view information on bot availability, performance, usage, and behavior. See how to turn on telemetry tracking for Application Insights.
 keywords: telemetry, appinsights, monitor bot
 author: JonathanFingold
@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 01/14/2022
+ms.date: 09/01/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -22,7 +22,7 @@ This article describes how to implement telemetry in your bot using Application 
 
 * The code required to wire up telemetry in your bot and connect to Application Insights.
 * How to enable telemetry in your bot's [Dialogs](bot-builder-concept-dialog.md).
-* How to enable telemetry to capture usage data from other services, like [LUIS](bot-builder-howto-v4-luis.md) and [QnA Maker](bot-builder-howto-qna.md).
+* How to enable telemetry to capture usage data from other services, like Azure Cognitive Services.
 * How to visualize your telemetry data in Application Insights.
 
 > [!IMPORTANT]
@@ -55,20 +55,6 @@ This article describes how to implement telemetry in your bot using Application 
 
 > [!NOTE]
 > The [Application Insights sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/21.corebot-app-insights) was built on top of the [CoreBot sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot). This article will step you through modifying the CoreBot sample code to incorporate telemetry. If you are following along in Visual Studio Code you will have the Application Insights sample code by the time you are finished.
-
-<!--
-
-    # [Python](#tab/python)
-
-    * The [CoreBot sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/13.core-bot)
-    * The [Application Insights sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/21.corebot-app-insights)
-    * A subscription to [Microsoft Azure](https://portal.azure.com/)
-    * An [Application Insights key](../bot-service-resources-app-insights-keys.md)
-    * Familiarity with [Application Insights](/azure/azure-monitor/app/app-insights-overview/)
-
-    > [!NOTE]
-    > The [Application Insights sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/21.corebot-app-insights) was built on top of the [CoreBot sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/13.core-bot). This article will step you through modifying the CoreBot sample code to incorporate telemetry. If you are following along in Visual Studio you will have the Application Insights sample code by the time you are finished.
--->
 
 ---
 
@@ -182,7 +168,7 @@ Follow the steps below to update your CoreBot example:
 > [!TIP]
 > If you are following along and updating the CoreBot sample code, you can refer to the [Application Insights sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/21.corebot-app-insights) if you run into any problems.
 
-That's all there is to adding telemetry to your bots dialogs, at this point if you ran your bot you should see things being logged in Application Insights, however if you have any integrated technology such as LUIS and QnA Maker you will need to add the `TelemetryClient` to that code as well.
+That's all there is to adding telemetry to your bots dialogs, at this point if you ran your bot you should see things being logged in Application Insights, however if you have any integrated technology such as a Cognitive Service you will need to add the `TelemetryClient` to that code as well.
 
 # [JavaScript](#tab/javascript)
 
@@ -212,11 +198,6 @@ This article starts with the [CoreBot sample app](https://github.com/Microsoft/B
     [!code-javascript[getTelemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=129-135)]
 
 1. Next, you need to add the _telemetry middleware_ to the [adapter middleware pipeline](../v4sdk/bot-builder-concept-middleware.md#the-bot-middleware-pipeline). To do this, add the following code, starting just after the error handling code:  
-
-    <!-- This level of detail may be too much:
-        - The first step is to create a new telemetry client, in this case you are using Application Insights as the telemetry client using the module `ApplicationInsightsTelemetryClient` referenced in the previous step. This line of code will call the function `getTelemetryClient` that you will soon create, passing in the Application Insights key and that function will return a new telemetry client: `var telemetryClient = getTelemetryClient(process.env.InstrumentationKey);`.
-        - You will pass the telemetry client you just created to the `TelemetryLoggerMiddleware` function: `var telemetryLoggerMiddleware = new TelemetryLoggerMiddleware(telemetryClient, true);` which creates a TelemetryLoggerMiddleware object that you will use to create
-    -->
 
     [!code-javascript[telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=82-86)]
 
@@ -311,9 +292,11 @@ Next we will see what needs to be included to add telemetry functionality to the
 
 ## Enabling telemetry to capture usage data from other services like LUIS and QnA Maker
 
+[!INCLUDE [qnamaker-sunset-alert](../includes/qnamaker-sunset-alert.md)]
+
 # [C#](#tab/csharp)
 
-We will next implement telemetry functionality in your LUIS service. The LUIS service has built-in telemetry logging available so there's little you need to do to start getting telemetry data from LUIS.  If you are interested in enabling telemetry in a QnA Maker enabled bot, see [Add telemetry to your QnAMaker bot](../v4sdk/bot-builder-telemetry-QnAMaker.md)
+We will next implement telemetry functionality in your LUIS service. The LUIS service has built-in telemetry logging available so there's little you need to do to start getting telemetry data from LUIS.  If you are interested in enabling telemetry in a QnA Maker enabled bot, see [Add telemetry to your QnA Maker bot](../v4sdk/bot-builder-telemetry-QnAMaker.md)
 
 1. The _`IBotTelemetryClient telemetryClient`_ parameter is required in the `FlightBookingRecognizer` constructor in `FlightBookingRecognizer.cs`:
 
@@ -351,7 +334,7 @@ For information on testing and debugging your bot, you can refer to the followin
 
 # [JavaScript](#tab/javascript)
 
-We will next implement telemetry functionality in your LUIS service. The LUIS service has built-in telemetry logging available so there's little you need to do to start getting telemetry data from LUIS.  <!---If you are interested in enabling telemetry in a QnA Maker enabled bot, see [Add telemetry to your QnAMaker bot](../v4sdk/bot-builder-telemetry-QnAMaker.md).-->
+We will next implement telemetry functionality in your LUIS service. The LUIS service has built-in telemetry logging available so there's little you need to do to start getting telemetry data from LUIS.
 
 To enable the telemetry client in your LUIS recognizer:
 
@@ -428,7 +411,7 @@ There, you'll see some default information about your bot performance and any ad
 
 ## Additional Information
 
-* [Add telemetry to your QnAMaker bot](bot-builder-telemetry-qnamaker.md)
+* [Add telemetry to your QnA Maker bot](bot-builder-telemetry-qnamaker.md)
 * [What is Application Insights?](/azure/azure-monitor/app/app-insights-overview/)
 * [Using Search in Application Insights](/azure/azure-monitor/app/diagnostic-search/)
 * [Create custom KPI dashboards using Azure Application Insights](/azure/azure-monitor/learn/tutorial-app-dashboards/)

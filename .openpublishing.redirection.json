@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/v4sdk/bot-builder-tutorial-dispatch.md",
+      "redirect_url": "/azure/bot-service/bot-builder-concept-luis",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "articles/v4sdk/bot-builder-concept-activity-processing.md",
       "redirect_url": "/azure/bot-service/bot-builder-basics",
       "redirect_document_id": false
