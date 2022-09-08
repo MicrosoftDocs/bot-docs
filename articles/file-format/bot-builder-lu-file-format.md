@@ -1,5 +1,5 @@
 ---
-title: .lu file format - Bot Service
+title: .lu file format
 description: .lu file format reference
 keywords: lu file format, reference, language understanding
 author: JonathanFingold
@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: reference
-ms.date: 12/2/2021
+ms.date: 09/01/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -152,7 +152,7 @@ The following example demonstrates a machine-learned entity named city (`@ ml ci
 - Purchase ticket from {@city = Washington} to {@city = Tampa Bay}
 ```
 
-When a user says something similar like “_I need a flight booked from London to madrid_”, LUIS will detect the 'bookFlight` intent and extract both London and Madrid as city entities.
+When a user says something similar like "_I need a flight booked from London to madrid_", LUIS will detect the 'bookFlight` intent and extract both London and Madrid as city entities.
 
 [Roles](#roles) are essentially an additional layer of contextual information you can add to your machine-learned entities, that also learn from context. The following example utterance shows the departure and destination roles associated with the city entity:
 
@@ -657,6 +657,8 @@ See the table below for a description of the application metadata values used in
 The sections below detail how to make [local file](#local-file-references) and [URI](#uri-references) references.
 
 ### Local file references
+
+[!INCLUDE [qnamaker-sunset-alert](../includes/qnamaker-sunset-alert.md)]
 
 References the .lu file. Follow Markdown link syntax. Supported references include:
 

@@ -14,45 +14,34 @@ metadata:
   ms.author: iawilt
   manager: shellyha
   ms.reviewer: micchow
-  ms.date: 08/02/2021
+  ms.date: 09/01/2022
 
 # highlightedContent section (optional)
 # Maximum of 8 items
 highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
-    # Card 
-    # Primary CTA
-    - title: "Create your first bot with Composer"
-      itemType: get-started
-      url: /composer/quickstart-create-bot
-    # Card
-    # Overview of available services
-    #- title: "What is a chatbot?"
-    #  itemType: overview
-    #  url: index-bf-sdk.yml
     # Card
     # Comparison of PVA, Bot Framework Composer, and Bot SDK
-    - title: "Choose the right bot building tool for your use case"
-      itemType: learn
-      url: /learn/modules/choose-bot-building-tool/
+    - title: "Choose the right chatbot solution"
+      itemType: overview
+      url: bot-overview.md
     # Card
     # Primary CTA
-    - title: "Build a weather bot with Composer"
-      itemType: tutorial
-      url: /composer/tutorial-create-weather-bot
+    - title: "Introduction to Power Virtual Agents"
+      itemType: overview
+      url: /power-virtual-agents/fundamentals-what-is-power-virtual-agents
+    # Card 
+    # Primary CTA
+    - title: "Create a Bot Framework SDK bot"
+      itemType: get-started
+      url: bot-service-quickstart-create-bot.md
 
 # productDirectory section (optional)
 productDirectory:
-  title: Development options # < 60 chars (optional)
-  summary: There's more than one way to build and deploy a chatbot. Let's take a look at some options. # < 160 chars (optional)
+  title: Development options
+  summary: There's more than one way to build and deploy a chatbot. Let's take a look at some options.
   items:
-    # Card
-    - title: Bot Framework Composer
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: ./media/logos/logo-composer.svg
-      summary: An open-source IDE built on the Bot Framework SDK. Composer lets you build chatbots with a visual authoring canvas, and extend with code.
-      url: /composer/introduction
     # Card
     - title: Bot Framework SDK
       imageSrc: ./media/logos/logo-bot-sdk.svg
@@ -63,24 +52,14 @@ productDirectory:
       imageSrc: ./media/logos/logo-pva.svg
       summary: Create chatbots with an easy to use graphical interface. No coding or AI expertise required. Works with Power Apps, and extendable with code. 
       url: /power-virtual-agents/fundamentals-what-is-power-virtual-agents
+    # Card
+    - title: Bot Framework Composer
+      imageSrc: ./media/logos/logo-composer.svg
+      summary: An open-source IDE built on the Bot Framework SDK. Composer lets you build chatbots with a visual authoring canvas, and extend with code.
+      url: /composer/introduction
 
 conceptualContent:
   items:
-    # Card
-    - title: Bot Framework Composer
-      links:
-        - url: /composer/introduction
-          itemType: overview
-          text: What is Bot Framework Composer?
-        - url: /composer/install-composer
-          itemType: get-started
-          text: Install Composer for Windows, macOS, or Linux
-        - url: /composer/quickstart-create-bot
-          itemType: quickstart
-          text: Create your first bot with Composer
-        - url: /composer/tutorial/tutorial-introduction
-          itemType: tutorial
-          text: Build a weather bot with Composer
     # Card
     - title: Bot Framework SDK
       links:
@@ -111,18 +90,27 @@ conceptualContent:
         - url: /power-virtual-agents/requirements-quotas
           itemType: reference
           text: Quotas, limits, and configuration options
+    # Card
+    - title: Bot Framework Composer
+      links:
+        - url: /composer/introduction
+          itemType: overview
+          text: What is Bot Framework Composer?
+        - url: /composer/install-composer
+          itemType: get-started
+          text: Install Composer for Windows, macOS, or Linux
+        - url: /composer/quickstart-create-bot
+          itemType: quickstart
+          text: Create your first bot with Composer
+        - url: /composer/tutorial/tutorial-introduction
+          itemType: tutorial
+          text: Build a weather bot with Composer
 tools:
   title: Reference # < 60 chars (optional)
-  summary: Dive deep into reference for Bot Framework Composer, Bot Framework SDK, and Power Virtual Agents. # < 160 chars (optional)
+  summary: Dive deep into reference for the Bot Framework SDK, Power Virtual Agents, and Bot Framework Composer. # < 160 chars (optional)
   items:
     # Card
-    - title: Composer
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: ./media/logos/logo-composer.svg
-      url: /composer/install-composer
-    # Card
     - title: C#
-      # imageSrc should be square in ratio with no whitespace
       imageSrc: ./media/logos/logo-csharp.svg
       url: /dotnet/api/?view=botbuilder-dotnet-stable
     # Card
@@ -139,9 +127,12 @@ tools:
       url: /java/api/?view=botbuilder-java
     # Card
     - title: Power Virtual Agents
-      # imageSrc should be square in ratio with no whitespace
       imageSrc: ./media/logos/logo-pva.svg
       url: /power-virtual-agents/fundamentals-what-is-power-virtual-agents
+    # Card
+    - title: Composer
+      imageSrc: ./media/logos/logo-composer.svg
+      url: /composer/install-composer
 
 additionalContent:
   # Supports up to 3 sections
@@ -157,27 +148,31 @@ additionalContent:
             url: https://github.com/Microsoft/BotFramework-Emulator#readme
           - text: Web Chat
             url: https://github.com/Microsoft/BotFramework-WebChat#readme
+          - text: Bot Framework Orchestrator
+            url: https://github.com/microsoft/botframework-sdk/tree/main/Orchestrator#readme
         # Card
         - title: Learn modules # < 60 chars (optional)
           links:
           - text: Choose a bot building tool
             url: /learn/modules/choose-bot-building-tool/
-          - text: Introduction to Azure Bot Service and Bot Framework Composer
-            url: /learn/modules/intro-to-bot-service-bot-framework-composer/
           - text: Create a bot with the Bot Framework SDK
             url: /learn/modules/design-bot-conversation-flow/
           - text: Create chatbots with Power Virtual Agents
             url: /learn/modules/explore-power-virtual-agents/
+          - text: Introduction to Azure Bot Service and Bot Framework Composer
+            url: /learn/modules/intro-to-bot-service-bot-framework-composer/
         # Card
         - title: Related technologies # < 60 chars (optional)
           links:
+          - text: Power Virtual Agents
+            url: /power-virtual-agents
           - text: Microsoft Teams
             url: /microsoftteams/platform
-          - text: Language Understanding (LUIS)
-            url: /azure/cognitive-services/luis
-          - text: QnA Maker
-            url: /azure/cognitive-services/qnamaker
-          - text: Speech service
-            url: /azure/cognitive-services/speech-service
           - text: Adaptive Cards
             url: /adaptive-cards
+          - text: Azure Cognitive Services
+            url: /azure/cognitive-services
+          - text: Azure Cognitive Service for Language
+            url: /azure/cognitive-services/language-service
+          - text: Speech service
+            url: /azure/cognitive-services/speech-service

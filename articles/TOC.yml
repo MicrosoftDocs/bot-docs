@@ -4,7 +4,7 @@
   items:
   - name: What is the Bot Framework SDK?
     href: bot-service-overview.md
-  - name: Choose the right chatbot solution for your use case
+  - name: Choose the right chatbot solution
     href: bot-overview.md
   - name: What's new
     href: what-is-new.md
@@ -14,8 +14,6 @@
     href: bot-service-quickstart-create-bot.md
   - name: Create an Azure Bot resource
     href: v4sdk/abs-quickstart.md
-  # - name: Create a bot using Azure PowerShell # Doesn't work, shouldn't have been added, will add back in when it works.
-  #   href: powershell/bot-builder-powershell-quickstart.md
 - name: Samples
   items:
   - name: Bot Framework samples repo on GitHub
@@ -64,13 +62,13 @@
       href: v4sdk/bot-builder-concept-waterfall-dialogs.md
     - name: Middleware
       href: v4sdk/bot-builder-concept-middleware.md
-    - name: Language Understanding
+    - name: Natural language understanding
       href: v4sdk/bot-builder-concept-luis.md
     - name: Understand the structure of an echo bot
       href: v4sdk/bot-builder-create-a-bot-project.md
   - name: How bots for Microsoft Teams work
     href: v4sdk/bot-builder-basics-teams.md
-  - name: Regionalization in Azure Bot Services
+  - name: Regionalization in Azure Bot Service
     href: v4sdk/bot-builder-concept-regionalization.md
   - name: Skills
     items:
@@ -142,12 +140,8 @@
         href: v4sdk/bot-builder-howto-v4-luis.md
       - name: Answer user's questions using QnA Maker
         href: v4sdk/bot-builder-howto-qna.md
-      - name: Use multiple LUIS and QnA models
-        items:
-        - name: Use Orchestrator for intent resolution
-          href: v4sdk/bot-builder-tutorial-orchestrator.md
-        - name: Use Dispatch (deprecated) for intent resolution
-          href: v4sdk/bot-builder-tutorial-dispatch.md
+      - name: Use Orchestrator for intent resolution
+        href: v4sdk/bot-builder-tutorial-orchestrator.md
     - name: Write directly to storage
       href: v4sdk/bot-builder-howto-v4-storage.md
     - name: Implement custom storage for your bot

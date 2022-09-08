@@ -1,5 +1,5 @@
 ---
-title: Add natural language understanding to your bot in Bot Framework SDK
+title: Add natural language understanding to your bot
 description: Learn how to use LUIS for natural language understanding in your bot.
 keywords: Language Understanding, LUIS, intent, recognizer, entities, middleware
 author: JonathanFingold
@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 09/22/2021
+ms.date: 09/01/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -267,14 +267,9 @@ For more about LUIS, see the LUIS documentation:
 - [Migrate to V3 Authoring APIS](/azure/cognitive-services/luis/luis-migration-authoring-entities)
 - [Migrate to V3 Prediction APIs](/azure/cognitive-services/luis/luis-migration-api-v3)
 
-> [!NOTE]
+> [!TIP]
 > Different parts of the SDK define separate _entity_ classes or elements.
 > For message entities, see [Entities and activity types](../bot-service-activities-entities.md).
-
-## Next steps
-
-> [!div class="nextstepaction"]
-> [Use QnA Maker to answer questions](./bot-builder-howto-qna.md)
 
 [cs-core-bot-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot
 [js-core-bot-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot

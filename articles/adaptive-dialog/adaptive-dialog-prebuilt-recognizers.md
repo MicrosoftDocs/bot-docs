@@ -1,5 +1,5 @@
 ---
-title: Language recognizer reference for Bot Framework bots
+title: Prebuilt recognizers for adaptive dialogs
 description: Adaptive dialogs and language recognizers work together to interpret user intent and to react fluidly to user input. This article describes builtin recognizers in the Bot Framework SDK.
 keywords: bot, recognizers, adaptive dialogs
 author: JonathanFingold
@@ -8,12 +8,12 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: reference
-ms.date: 10/18/2021
+ms.date: 09/01/2022
 ms.custom: abs-meta-21q1
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Language recognizer reference for Bot Framework bots
+# Recognizers in adaptive dialogs
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
@@ -29,6 +29,8 @@ The cross-trained recognizer set compares recognition results from more than one
 * Raise an `OnChooseIntent` event to allow your code to choose which recognition result to use. Each recognizer's results are returned via the `turn.recognized.candidates` property. This enables you to choose the most appropriate result.
 
 ## Default recognizer
+
+[!INCLUDE [qnamaker-sunset-alert](../includes/qnamaker-sunset-alert.md)]
 
 The default recognizer was created to replace the following recognizers:
 

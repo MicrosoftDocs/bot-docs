@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 09/01/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-*Dialogs* are a central concept in the SDK, providing ways to manage a long-running conversation with the user.
+_Dialogs_ are a central concept in the SDK, providing ways to manage a long-running conversation with the user.
 A dialog performs a task that can represent part of or a complete conversational thread.
 It can span just one turn or many, and can span a short or long period of time.
 
@@ -35,7 +35,6 @@ This article describes the core classes and features of the dialog library.
 
 Dialogs can implement a _multi-turn conversation_, and as such, they rely on _persisted state_ across turns. Without state in dialogs, your bot wouldn't know where it was in the conversation or what information it had already gathered.
 
-<!--A bot is inherently stateless.-->
 To retain a dialog's place in the conversation, the dialog's state must be retrieved from and saved to memory each turn. This is handled via a dialog state property accessor defined on the bot's conversation state. This dialog state manages information for all active dialogs, and children of active dialogs.
 This allows the bot to pick up where it left off last and to handle a variety of conversation models.
 
@@ -64,7 +63,7 @@ The dialogs library provides a few types of dialogs to make your bot's conversat
 | [component dialog](#component-dialogs) | A general-purpose type of container dialog that encapsulates a set of dialogs, allowing for the reuse of the set as a whole. When a component dialog starts, it begins with a designated dialog in its collection. When the inner process completes, the component dialog ends. |
 | waterfall dialog | Defines a sequence of steps, allowing your bot to guide a user through a linear process. These are typically designed to work within the context of a component dialog. |
 | prompt dialogs | Ask the user for input and return the result. A prompt will repeat until it gets valid input or it is canceled. They are designed to work with waterfall dialogs. |
-| [adaptive dialog](#adaptive-dialogs) | A type of container dialog used by Composer to provide more natural conversational flows. _Not_ intended to be used directly in an SDK-first bot. |
+| adaptive dialog | A type of container dialog used by Composer to provide more natural conversational flows. _Not_ intended to be used directly in an SDK-first bot. |
 | action dialogs | A type of dialog that supports the implementation of actions in Composer. _Not_ intended to be used directly in an SDK-first bot. |
 | input dialogs | A type of dialog that supports the implementation of input actions in Composer. _Not_ intended to be used directly in an SDK-first bot. |
 | [skill dialog](#skill-dialog) | Automates the management of one or more skill bots from a skill consumer. Composer directly supports skills as actions. |
@@ -95,7 +94,7 @@ A container dialog <!--acts as individual dialog and--> can be part of a larger 
 - Each dialog set creates a scope for resolving dialog IDs.
 - The SDK currently implements two types of container dialogs: component dialogs and adaptive dialogs.
 
-  The conceptual structure of the two are quite different. However, a Composer bot can make use of both. <!--For example, a Composer bot can call a waterfall-based dialog. See [TODO: Gary's article](TODO.md) for more information.-->
+  The conceptual structure of the two are quite different. However, a Composer bot can make use of both.
 
 ### Dialog IDs
 
@@ -111,24 +110,13 @@ Consider using component and waterfall dialogs if your bot has a relatively simp
 
 [About component and waterfall dialogs](bot-builder-concept-waterfall-dialogs.md) describes component, waterfall, and prompt dialogs in more detail.
 
-### Adaptive dialogs
-
-Adaptive dialogs allow Composer to dynamically update conversation flow based on context and events.
-This enables dialogs to be more natural and free-flowing. Such bots can:
-
-- Let a user change their mind and re-answer a question answered earlier in the conversation.
-- Let a user answer two questions with one response.
-- Let a user context-switch to a different topic mid-way through a conversation.
-
-This is especially handy when dealing with conversation context switches and interruptions in the middle of a conversation. Adaptive dialogs support and sit on top of a rich event system.
-
-The [Introduction to Bot Framework Composer](/composer/introduction) describes the features supported by Composer and adaptive dialogs: language recognition and language generation support, use of triggers and actions to model conversation flow, access to memory scopes, and so on. <!--See [Andrew's Composer article](/composer/TODO) for more about extending bots with components.-->
-
 ## Other dialogs
 
 The QnA Maker and skill dialogs can be used as stand-alone dialogs or as part of a collection of dialogs in a container.
 
 ### QnA Maker dialog
+
+[!INCLUDE [qnamaker-sunset-alert](../includes/qnamaker-sunset-alert.md)]
 
 The QnA Maker dialog accesses a QnA Maker knowledge base and supports QnA Maker's follow-up prompt and active learning features.
 

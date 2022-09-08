@@ -1,5 +1,5 @@
 ---
-title: Design the user experience - Bot Service
+title: Design the user experience
 description: Learn how to design your bot to deliver an engaging user experience, by using rich user controls, natural language understanding, and speech.
 keywords: overview, design, user experience, UX, rich user control
 author: JonathanFingold
@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 07/28/2022
+ms.date: 09/01/2022
 ---
 
 # Design the user experience
@@ -79,7 +79,7 @@ In other cases, a user may type a specific command. For example, a DevOps bot th
 > Designing a bot to require specific commands from the user can often provide a good user experience while
 > also eliminating the need for natural language understanding capability.
 
-For a _knowledge base_ or _questions and answers_ bot, a user may ask general questions. For example, imagine a bot that can answer questions based on the contents of thousands of documents. [QnA Maker](/azure/cognitive-services/qnamaker/) and [Azure Search](/azure/search/) are both technologies designed specifically for this type of scenario. For more information, see [Design knowledge bots](bot-service-design-pattern-knowledge-base.md).
+For a _knowledge base_ or _questions and answers_ bot, a user may ask general questions. For example, imagine a bot that can answer questions based on the contents of thousands of documents. [Azure Cognitive Services](/azure/cognitive-services/) and [Azure Search](/azure/search/) are both technologies designed specifically for this type of scenario. For more information, see [Design knowledge bots](bot-service-design-pattern-knowledge-base.md) and [Language understanding](v4sdk/bot-builder-concept-luis.md).
 
 > [!TIP]
 > If you are designing a bot that will answer questions based on structured or unstructured data from

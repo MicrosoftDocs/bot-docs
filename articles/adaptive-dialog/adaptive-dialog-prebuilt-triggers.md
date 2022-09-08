@@ -1,5 +1,5 @@
 ---
-title: Adaptive dialog events and triggers in Bot Framework SDK
+title: Events and triggers for adaptive dialogs
 description: Describes the adaptive dialog prebuilt triggers. Triggers handle dialog specific events that are related to the lifecycle of the dialog.
 keywords: bot, triggers, adaptive dialogs
 author: JonathanFingold
@@ -8,11 +8,11 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: reference
-ms.date: 09/27/2021
+ms.date: 09/01/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Events and triggers in adaptive dialogs - reference guide
+# Events and triggers in adaptive dialogs
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
@@ -20,22 +20,22 @@ For an introduction to this topic, see the [Triggers](/composer/concept-events-a
 
 ## Recognizer event triggers
 
+[!INCLUDE [qnamaker-sunset-alert](../includes/qnamaker-sunset-alert.md)]
+
 | Event cause               | Trigger name  | Base event    | Description                                                       |
 | ------------------------- | ------------- | ------------- | ----------------------------------------------------------------- |
 | Choose Intent | `OnChooseIntent` |`ChooseIntent` | This trigger is run when ambiguity has been detected between intents from multiple recognizers in a [CrossTrainedRecognizerSet][recognizers-cross-trained-recognizer-set].|
 | Intent recognized| `OnIntent` | `RecognizedIntent` | Actions to perform when specified intent is recognized.           |
 |QnAMatch intent|`OnQnAMatch`| `RecognizedIntent` |This trigger is run when the [QnAMakerRecognizer][qna-maker-recognizer] has returned a `QnAMatch` intent. The entity `@answer` will have the `QnAMaker` answer.|
-|Unknown intent recognized| `OnUnknownIntent` | `UnknownIntent` | Actions to perform when user input is unrecognized or no match is found in any of the `OnIntent` triggers. You can also use this as your first trigger in your root dialog in place of the `OnBeginDialog` to preform any needed tasks when the dialog first starts. |
+|Unknown intent recognized| `OnUnknownIntent` | `UnknownIntent` | Actions to perform when user input is unrecognized or no match is found in any of the `OnIntent` triggers. You can also use this as your first trigger in your root dialog in place of the `OnBeginDialog` to perform any needed tasks when the dialog first starts. |
 
-The `OnIntent` trigger lets you handle the `recognizedIntent` event. The `recognizedIntent` event is raised by a recognizer. With the exception of the [QnA Maker recognizer][qna-maker-recognizer], all of the Bot Framework SDK built-in recognizers emit this event when they successfully identify a user _input_ so that your bot can respond appropriately.
+The `OnIntent` trigger lets you handle the `recognizedIntent` event. The `recognizedIntent` event is raised by a recognizer. Except for the [QnA Maker recognizer][qna-maker-recognizer], all of the Bot Framework SDK built-in recognizers emit this event when they successfully identify a user _input_ so that your bot can respond appropriately.
 
 Use the `OnUnknownIntent` trigger to catch and respond when a `recognizedIntent` event isn't caught and handled by any of the other triggers. This means that any unhandled intent (including "none") can cause it to trigger, but only if there aren't any currently executing actions for the dialog. Use the `OnUnknownIntent` trigger to catch and respond when a "none" intent occurs. Using the `OnIntent` trigger to handle a "none" intent can produce unexpected results.
 
-<!--Use the `OnUnknownIntent` trigger to catch and respond when a "none" intent occurs. This is especially helpful to capture and handle cases where your dialog wishes to participate in consultation.-->
-
 ## Dialog event triggers
 
-Dialog triggers handle dialog specific events that are related to the _lifecycle_ of the dialog.  There are currently 6 dialog triggers in the Bot Framework SDK and they all derive from the `OnDialogEvent` class.
+Dialog triggers handle dialog specific events that are related to the _lifecycle_ of the dialog.  There are currently six dialog triggers in the Bot Framework SDK, and they all derive from the `OnDialogEvent` class.
 
 > [!TIP]
 > These aren't like normal interruption event handlers where the child's actions will continue running after the handler's actions complete. For all of the events below, the bot will run a new set of actions and will end the turn once those actions have finished.
@@ -43,9 +43,9 @@ Dialog triggers handle dialog specific events that are related to the _lifecycle
 | Trigger name     | Base event   | Description                                                                                                                         |
 | ---------------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
 | `OnBeginDialog`    | `BeginDialog`  | Actions to perform when this dialog begins. For use with child dialogs only, not to be used in your root dialog, In root dialogs, use `OnUnknownIntent` to perform dialog initialization activities.|
-| `OnCancelDialog`   | `CancelDialog` | This event allows you to prevent the current dialog from being cancelled due to a child dialog executing a `CancelAllDialogs` action. |
+| `OnCancelDialog`   | `CancelDialog` | This event allows you to prevent the current dialog from being canceled due to a child dialog executing a `CancelAllDialogs` action. |
 | `OnEndOfActions`   | `EndOfActions` | This event occurs once all actions and ambiguity events have been processed.                                                        |
-| `OnError`          | `Error`        | Actions to perform when an `Error` dialog event occurs. This event is similar to `OnCancelDialog` in that you are preventing the adaptive dialog that contains this trigger from ending, in this case due to an error in a child dialog.|
+| `OnError`          | `Error`        | Actions to perform when an `Error` dialog event occurs. This event is similar to `OnCancelDialog` in that you're preventing the adaptive dialog that contains this trigger from ending, in this case due to an error in a child dialog.|
 | `OnRepromptDialog` |`RepromptDialog`| Actions to perform when `RepromptDialog` event occurs.                                                                              |
 | `OnDialog` | `DialogEvents.VersionChanged` | |
 

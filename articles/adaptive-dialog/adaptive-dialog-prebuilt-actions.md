@@ -1,5 +1,5 @@
 ---
-title: Actions in adaptive dialogs in Bot Framework SDK
+title: Prebuilt actions for adaptive dialogs
 description: Learn about the adaptive dialog prebuilt actions, grouped by their general purpose.
 keywords: bot, actions, adaptive dialogs
 author: JonathanFingold
@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: reference
-ms.date: 03/03/2022
+ms.date: 09/01/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -80,6 +80,8 @@ The remaining actions relate to looping statements which enable you to repeat th
 | `UpdateActivity`         | Update an activity       | Updates an activity that was previously sent to a user.                                                |
 
 ## Access external resources
+
+[!INCLUDE [qnamaker-sunset-alert](../includes/qnamaker-sunset-alert.md)]
 
 | Action Name           | Action title           | Description                                                                                                |
 |:----------------------|:-----------------------|:-----------------------------------------------------------------------------------------------------------|
