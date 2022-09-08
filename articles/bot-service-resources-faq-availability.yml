@@ -57,8 +57,8 @@ sections:
           > For more information about question-and-answer support in the Bot Framework SDK, see [Language Understanding](v4sdk/bot-builder-concept-luis.md).
 
           For more information, see:
-          - [Deploy the Language Understanding (LUIS) container to Azure Container Instances](https://docs.microsoft.com/azure/cognitive-services/luis/deploy-luis-on-container-instances)
-          - [Container support in Azure Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-container-support)
+          - [Deploy the Language Understanding (LUIS) container to Azure Container Instances](/azure/cognitive-services/luis/deploy-luis-on-container-instances)
+          - [Container support in Azure Cognitive Services](/azure/cognitive-services/cognitive-services-container-support)
 
       - question: What is the v4 SDK?
         answer: |

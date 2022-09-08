@@ -18,7 +18,7 @@ summary: |
   <!-- Attention writers!! When you create a new FAQ, please add the related link in the proper section below.
   Also, notice this topic is in markdown (.md) format because being an index it is simpler to maintain.
   The actual FAQs are contained in separate files that are in yaml () format. The reasons for the yaml format
-  are explained in this article: Create FAQ content (https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-faq-guide?branch=master).
+  are explained in [Create FAQ content](https://review.docs.microsoft.com/help/contribute/contribute-how-to-faq-guide?branch=main).
   -->
 
   The following are some common questions you might have.

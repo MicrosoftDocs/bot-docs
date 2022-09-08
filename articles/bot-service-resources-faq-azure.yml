@@ -84,7 +84,7 @@ sections:
 
       - question: What files do I need to zip up for deployment?
         answer: |
-          You must manually create a zip archive with all the files in the project, as described in the step: [zip up the code directory manually step](https://docs.microsoft.com/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0&tabs=csharp#52-zip-up-the-code-directory-manually).
+          You must manually create a zip archive with all the files in the project, as described in the step: [zip up the code directory manually step](/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0&tabs=csharp#52-zip-up-the-code-directory-manually).
           Please, make sure that you select all the files and folders in your bot's project folder.
           Then, while still in the project folder, zip up all the selected files and folders as shown in the picture below.
 
