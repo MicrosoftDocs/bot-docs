@@ -37,7 +37,7 @@ The [Onboarding guide][] has info on how to run local builds. For us, this curre
 
 - Download the [docfx][docfx-tool] tool from https://github.com/dotnet/docfx/releases
 
-  This downloads a .zip file. Extract the contents to a directory you can easily find, such as **C:\\Program Files\\docfx\\**.
+  This downloads a .zip file. Extract the contents to a directory you can easily find, such as **C:\Program Files\docfx**.
 
 back to [top](#top)
 
@@ -69,24 +69,36 @@ back to [top](#top)
 We should only use [typeDoc][typeDoc docs] supported markup, though these sections can include Markdown. The only JSDoc markup that _should_ work that isn't covered by typeDoc is the `@remarks` tag. See [JSDoc usage][] and the [jsdoc repo][] for info for JSDoc.
 
 See these resources for TypeScript and JavaScript:
+
 - [TypeScript docs][]&mdash;an official TypeScript language reference.
 - [MDN JavaScript docs][]&mdash;Mozilla developer network resources for JavaScript.
 - [Node.js docs][]&mdash;Node.js documentation.
 
 The rest of these sections cover style and wording guidance. It is intended to supplement OPS guidance in the [Docs contributor guide][] and the [Onboarding guide][].
 
-- [Text formatting](#text-formatting)
-- [Symbol references](#symbol-references)
-- [@module](#module)
-- [Summary](#summary)
-- [Object types](#object-types)
-- [Modifiers](#modifiers)
-- [@typeparam \<param-name>](#typeparam-param-name)
-- [@param \<param-name>](#param-param-name)
-- [@returns](#returns)
-- [@remarks](#remarks)
-- [Code blocks](#code-blocks)
-- [General guidance](#general-guidance)
+- [<a id="top"></a>TypeScript ref doc guide](#typescript-ref-doc-guide)
+  - [Repos](#repos)
+  - [Tools (for local builds)](#tools-for-local-builds)
+  - [Cross-team coordination](#cross-team-coordination)
+    - [Before a release](#before-a-release)
+    - [Pushing a release](#pushing-a-release)
+    - [After a release](#after-a-release)
+  - [Markup and boilerplate](#markup-and-boilerplate)
+    - [Text formatting](#text-formatting)
+    - [Symbol references](#symbol-references)
+    - [@module](#module)
+    - [Summary](#summary)
+    - [Object types](#object-types)
+    - [Modifiers](#modifiers)
+    - [@typeparam \<param-name>](#typeparam-param-name)
+    - [@param \<param-name>](#param-param-name)
+    - [@returns](#returns)
+    - [@remarks](#remarks)
+    - [Code blocks](#code-blocks)
+    - [General guidance](#general-guidance)
+      - [Event emitters and events](#event-emitters-and-events)
+      - [Continuation functions](#continuation-functions)
+      - [Chaining semantics](#chaining-semantics)
 
 ### Text formatting
 
@@ -104,10 +116,10 @@ The rest of these sections cover style and wording guidance. It is intended to s
 
 Use `[link-text](xref:uid)` style links to link to other Bot Framework and Microsoft TypeScript ref docs.
 
-To find the uid for JavaScript, go to https://docs.microsoft.com/en-us/javascript/api/ and search for the member you want to link to. The uid will be the link text, as opposed to the link target.
-For example, the xref uid for the BotAdapter.use method is __botbuilder-core.BotAdapter.use__.
+To find the uid for JavaScript, go to the [JavaScript API browser](https://docs.microsoft.com/javascript/api/) and search for the member you want to link to. The uid will be the link text, as opposed to the link target.
+For example, the xref uid for the BotAdapter.use method is **botbuilder-core.BotAdapter.use**.
 
-For links into our docs, link "directly" to the article, such as https://docs.microsoft.com/azure/bot-service/bot-builder-howto-send-messages for the **Send and receive text messages** how to.
+For links into our docs, link "directly" to the article, such as [Send and receive text messages](https://docs.microsoft.com/azure/bot-service/bot-builder-howto-send-messages) for the **Send and receive text messages** how to.
 
 For links to other docs, use an aka link as you would in the conceptual topics.
 
@@ -228,7 +240,7 @@ back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
 | function |  |
 | optional |  |
 | default  |  |
-| [**rest**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters) |  |
+| [**rest**](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Functions/rest_parameters) |  |
 | this |  |
 | parameter property |  |
 -->
@@ -264,24 +276,24 @@ Include more information as necessary about the item in the remarks section. You
 
 Sample code sample:
 
-~~~typeDoc
+````typeDoc
   * For example:
   * ```JavaScript
   * const result = await dc.beginDialog('greeting', { name: user.name });
   * ```
-~~~
+````
 
 Optionally, include a _see also_ section. When linking to members of a different class, qualify the link text with the object name.
 
 Sample see also section:
 
-~~~typeDoc
+```typeDoc
   * **See also**
   * - [endDialog](xref:botbuilder-dialogs.DialogContext.endDialog)
   * - [prompt](xref:botbuilder-dialogs.DialogContext.prompt)
   * - [replaceDialog](xref:botbuilder-dialogs.DialogContext.replaceDialog)
   * - [Dialog.beginDialog](xref:botbuilder-dialogs.Dialog.beginDialog)
-~~~
+```
 
 back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
 
@@ -303,18 +315,18 @@ Useful articles in the OPS (publishing) guides:
 
 | Topic or section | Description
 |:-|:-
-| [Azure reference writing style](https://review.docs.microsoft.com/en-us/help/contribute-ref/contribute-ref-resource-ref-writing-style?branch=master) | Overall guidance on writing ref docs.
-| [API reference](https://review.docs.microsoft.com/en-us/help/contribute-ref/contribute-ref-how-to-document-sdk?branch=master#api-reference) | A section outlining the basic quality bar for reference docs.
-| [Documenting JavaScript APIs](https://review.docs.microsoft.com/en-us/help/onboard/admin/reference/js-ts/documenting-api?branch=master) | jsDoc- and typeDoc-specific information.
+| [Azure reference writing style](https://review.docs.microsoft.com/help/contribute-ref/contribute-ref-resource-ref-writing-style?branch=main) | Overall guidance on writing ref docs.
+| [API reference](https://review.docs.microsoft.com/help/contribute-ref/contribute-ref-how-to-document-sdk?branch=main#api-reference) | A section outlining the basic quality bar for reference docs.
+| [Documenting JavaScript APIs](https://review.docs.microsoft.com/help/onboard/admin/reference/js-ts/documenting-api?branch=main) | jsDoc- and typeDoc-specific information.
 
 Useful MS style guide links:
 
-- [Developer content](https://docs.microsoft.com/en-us/style-guide/developer-content/)
-- [Capitalization](https://docs.microsoft.com/en-us/style-guide/capitalization)
-- [Punctuation](https://docs.microsoft.com/en-us/style-guide/punctuation/)
-- [Grammar and parts of speech](https://docs.microsoft.com/en-us/style-guide/grammar/grammar-and-parts-of-speech)
-- [Acronyms](https://docs.microsoft.com/en-us/style-guide/acronyms)
-- [Word choice](https://docs.microsoft.com/en-us/style-guide/word-choice/)
+- [Developer content](https://docs.microsoft.com/style-guide/developer-content/)
+- [Capitalization](https://docs.microsoft.com/style-guide/capitalization)
+- [Punctuation](https://docs.microsoft.com/style-guide/punctuation/)
+- [Grammar and parts of speech](https://docs.microsoft.com/style-guide/grammar/grammar-and-parts-of-speech)
+- [Acronyms](https://docs.microsoft.com/style-guide/acronyms)
+- [Word choice](https://docs.microsoft.com/style-guide/word-choice/)
 
 #### Event emitters and events
 
@@ -326,8 +338,8 @@ back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
 
 <!-- Footnote links: Onboarding & ref doc refresh ----- -->
 
-[Docs contributor guide]: https://review.docs.microsoft.com/en-us/help/contribute/?branch=master
-[Onboarding guide]: https://review.docs.microsoft.com/help/onboard/admin/reference?branch=master
+[Docs contributor guide]: https://review.docs.microsoft.com/help/contribute/?branch=main
+[Onboarding guide]: https://review.docs.microsoft.com/help/onboard/admin/reference?branch=main
 
 <!-- Footnote links: local build tools ----- -->
 
@@ -335,14 +347,10 @@ back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
 [typedoc-npm]: https://www.npmjs.com/package/typedoc
 [docfx-tool]: https://dotnet.github.io/docfx/index.html
 
-<!-- Footnote links: style ----- -->
-
-[Microsoft style guide]: https://docs.microsoft.com/en-us/style-guide/welcome/
-
 <!-- Footnote links: Language and markup reference ----- -->
 
 [TypeScript docs]: http://www.typescriptlang.org/docs/home.html
-[MDN JavaScript docs]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+[MDN JavaScript docs]: https://developer.mozilla.org/docs/Web/JavaScript
 [Node.js docs]: https://nodejs.org/en/docs/
 
 [typeDoc docs]: https://typedoc.org/guides/doccomments

@@ -2,39 +2,39 @@
 
 ## Existing resources [for writers]
 
-- **Microsoft style guide** (public)<br/>
-  https://docs.microsoft.com/en-us/style-guide/welcome/
+- **Microsoft style guide** (public)  
+  https://docs.microsoft.com/style-guide/welcome/
 
-- **Microsoft docs contributor's guide** (public)<br/>
-  https://docs.microsoft.com/en-us/contribute/
+- **Microsoft docs contributor's guide** (public)  
+  https://docs.microsoft.com/contribute/
 
-- **Validation reference** (public)<br/>
-  https://docs.microsoft.com/en-us/contribute/validation-reference/
+- **Validation reference** (public)  
+  https://docs.microsoft.com/contribute/validation-reference/
 
-- **Docs contributor's guide** (internal)<br/>
-  This includes Azure-specific guidance on overview, quickstart, and tutorial articles.<br/>
-  https://review.docs.microsoft.com/help/contribute/index?branch=master
+- **Docs contributor's guide** (internal)  
+  This includes Azure-specific guidance on overview, quickstart, and tutorial articles.  
+  https://review.docs.microsoft.com/help/contribute/index?branch=main
 
-- **Onboarding guide** (internal)<br/>
-  https://review.docs.microsoft.com/help/onboard/admin/reference?branch=master
+- **Onboarding guide** (internal)  
+  https://review.docs.microsoft.com/help/onboard/admin/reference?branch=main
 
-- Our own **Bot Framework technical content contributors' guide** (semi-public)<br/>
-  Somewhat stale and in need of updating…<br/>
-  https://github.com/MicrosoftDocs/bot-docs-pr/blob/master/contributor-guide/contributor-guide-index.md
+- Our own **Bot Framework technical content contributors' guide** (semi-public)  
+  Somewhat stale and in need of updating…  
+  https://github.com/MicrosoftDocs/bot-docs-pr/blob/main/contributor-guide/contributor-guide-index.md
 
 - Teams channels
   - **Docs support**
 
 ## Types of articles
 
-Refer to the [Docs contributor's guide](https://docs.microsoft.com/en-us/contribute/) (**Create content** > **Write** section) for overall guidance on specific article types. The structure of overview, quickstart, and tutorial articles are highly constrained.
+Refer to the [Microsoft Docs contributor guide](https://docs.microsoft.com/contribute/) (**Create content** > **Write** section) for overall guidance on specific article types. The structure of overview, quickstart, and tutorial articles are highly constrained.
 
 ## General guidance
 
 The Microsoft style guide has most of the general guidance, including:
 
-- [Grammar and parts of speech](https://docs.microsoft.com/en-us/style-guide/grammar/grammar-and-parts-of-speech)
-- [Word choice](https://docs.microsoft.com/en-us/style-guide/word-choice/)
+- [Grammar and parts of speech](https://docs.microsoft.com/style-guide/grammar/grammar-and-parts-of-speech)
+- [Word choice](https://docs.microsoft.com/style-guide/word-choice/)
 - A-Z word list and term collections
 
 ## Links
@@ -47,10 +47,9 @@ Use normal Markdown links [link text](in-repo link target).
 
 Use xref links, `[link text](xref:UID)`. Note that UIDs are case-sensitive.
 
-#### C\#
+#### C#
 
-To find the xref for C#, go to https://docs.microsoft.com/en-us/dotnet/api/ and search for the member you want to link to. The xref will be the page's ms.assetID metadata value.
-For example, the xref for the BotAdapter.Use method is __Microsoft.Bot.Builder.BotAdapter.Use*__.
+To find the xref for C#, go to the [.NET API browser](https://docs.microsoft.com/dotnet/api/) and search for the member you want to link to. The xref will be the page's ms.assetID metadata value. For example, the xref for the BotAdapter.Use method is **Microsoft.Bot.Builder.BotAdapter.Use***.
 
 ```html
 <meta name="ms.assetid" content="Microsoft.Bot.Builder.BotAdapter.Use*" />
@@ -58,14 +57,21 @@ For example, the xref for the BotAdapter.Use method is __Microsoft.Bot.Builder.B
 
 #### JavaScript/TypeScript
 
-To find the xref for JavaScript, go to https://docs.microsoft.com/en-us/javascript/api/ and search for the member you want to link to. The xref will be the link text, as opposed to the link target.
-For example, the xref for the BotAdapter.use method is __botbuilder-core.BotAdapter.use__.
+To find the xref for JavaScript, go to the [JavaScript API browser](https://docs.microsoft.com/javascript/api/) and search for the member you want to link to. The xref will be the link text, as opposed to the link target. For example, the xref for the BotAdapter.use method is **botbuilder-core.BotAdapter.use**.
 
 ### For sample code snippets
 
 Use the code macro, for instance:
 
-```markdown
+New:
+
+```md
+:::code language="csharp" source="~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs" range="2-24,26":::
+```
+
+Old:
+
+```md
 [!code-csharp[Constructor snippet](~/../botbuilder-samples/samples/csharp_dotnetcore/05.multi-turn-prompt/Dialogs/UserProfileDialog.cs?range=22-41)]
 ```
 

@@ -17,7 +17,7 @@ Please add a spell check for code comments to the check-in process.
 [recommended docXML tags]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments
 
 The C# projects use docXML for reference documentation.
-See the **Microsoft docs** [C# docXML guide][] and [recommended docXML tags][] for detailed information on how to use C# docXML comments.
+See the **Microsoft Docs** [C# docXML guide][] and [recommended docXML tags][] for detailed information on how to use C# docXML comments.
 
 See the public **Microsoft style guide** [reference documentation](https://docs.microsoft.com/style-guide/developer-content/reference-documentation) section for general guidance on documenting specific types and members.
 
@@ -74,7 +74,7 @@ You can use Markdown within docXML; however, don't use Markdown headings or imag
 
 The JS projects use  [JsDoc](https://jsdoc.app/) and [TypeDoc](http://typedoc.org/guides/doccomments/) conventions  for reference documentation.
 
-All JavaScript and TypeScript API documentation on *docs.microsoft.com* is indexed in the [JavaScript API Browser](https://review.docs.microsoft.com/en-us/javascript/api/?branch=master). This ensures that the customers have a single entry point to discover all possible JavaScript APIs.
+All JavaScript and TypeScript API documentation on *docs.microsoft.com* is indexed in the [JavaScript API Browser](https://review.docs.microsoft.com/javascript/api/?branch=main). This ensures that the customers have a single entry point to discover all possible JavaScript APIs.
 
 ## Tags
 
@@ -349,7 +349,6 @@ exports.authenticateWithUsernamePassword = function (username, password, callbac
 > [!NOTE]
 > The braced type annotation is ignored by the publishing pipeline. The type is obtained from the code definition.
 
-
 ## Reference SDK-defined types
 
 The SDK-defined types are found in the Bot Framerk SDK libraries.
@@ -362,7 +361,7 @@ To link to the auto-generated API reference pages, use XRef links with the **uni
 > [!NOTE]
 > By default, link text shows only the member or type name. The optional `displayProperty=nameWithType` query parameter produces fully qualified link text, that is, *namespace.type* for types, and *type.member* for type members, including enumeration type members.
 
-To find the UID for the API on `docs.microsoft.com`, type all or some of its full name in the  [JavaScript API Browser](https://review.docs.microsoft.com/en-us/javascript/api) search box. The UDI are displayed on the left side. The following picture shows an example, where the UIDs are in the red box:
+To find the UID for the API on `docs.microsoft.com`, type all or some of its full name in the  [JavaScript API Browser](https://review.docs.microsoft.com/javascript/api) search box. The UDI are displayed on the left side. The following picture shows an example, where the UIDs are in the red box:
 
 ![JS UIDs](../media/js-udis.PNG)
 
@@ -372,9 +371,11 @@ To test the UID is correct, enter the following in yor browser:
     https://xref.docs.microsoft.com/query?uid=<UID to test>
 ```
 
-If the UID is correct you will get a long string withe the `href ` of the reference documentation page. For example, if you enter this in your browser:
+If the UID is correct you will get a long string with the `href` of the reference documentation page. For example, if you enter this in your browser:
 
+```url
 https://xref.docs.microsoft.com/query?uid=botbuilder-core.ConversationState.getStorageKey
+```
 
 You obtain this string:
 
@@ -384,27 +385,27 @@ You obtain this string:
 
 And if you enter the `href` value in your browser:
 
+```url
 https://docs.microsoft.com/javascript/api/botbuilder-core/conversationstate#getstoragekey-turncontext-
+```
 
 You get the documentation page for `getStorageKey(TurnContext)`.
-
 
 ### Examples
 
 > [!div class="mx-tdBreakAll"]
 > |Type|Example|Link|
 > |------|-----|------|
-> |Class|`[ConversationState](xref:botbuilder-core.ConversationState)`|[ConversationState](https://review.docs.microsoft.com/en-us/javascript/api/botbuilder-core/conversationstate?view=botbuilder-ts-latest&branch=master)|
+> |Class|`[ConversationState](xref:botbuilder-core.ConversationState)`|[ConversationState](https://review.docs.microsoft.com/javascript/api/botbuilder-core/conversationstate?view=botbuilder-ts-latest&branch=main)|
 > |Method|`[clear()](xref:botbuilder-core.ConversationState.clear)`|[ConversationState.clear](https://docs.microsoft.com/javascript/api/botbuilder-core/conversationstate#clear-turncontext-)|
 > |Interface|`[ChannelAccount](xref:botframework-schema.ChannelAccount)`|[ChannelAccount](https://docs.microsoft.com/javascript/api/botframework-schema/channelaccount)|
 
-
-For more information on XRef links, see [XRef (cross reference) links](https://review.docs.microsoft.com/en-us/help/contribute/links-how-to?branch=master#xref-cross-reference-links).
-
+For more information on XRef links, see [XRef (cross reference) links](https://review.docs.microsoft.com/help/contribute/links-how-to?branch=main#xref-cross-reference-links).
 
 ## Additional information
 
 ### Errors
+
 > [!div class="mx-tdBreakAll"]
 > |Error Type|Error Example|Error Message|Solution|
 > |-------------|----------|---------|---------|
@@ -414,16 +415,18 @@ For more information on XRef links, see [XRef (cross reference) links](https://r
 
 - Add snippet code in comment example.
 
-    \```JavaScript <br/>
-    const { ConversationState, MemoryStorage } = require('botbuilder'); <br/>
-    \```
+  ````md
+  ```JavaScript
+  const { ConversationState, MemoryStorage } = require('botbuilder');
+  ```
+  ````
+
 - Do use `@remarks` tags.
 - Do use `[<link-text>](xref:<link-uid>)` links.
 - The UIDs are in the generated .yaml files.
-  Or, search for the target using the [JavaScript API Browser](https://review.docs.microsoft.com/en-us/javascript/api).
+  Or, search for the target using the [JavaScript API Browser](https://review.docs.microsoft.com/javascript/api).
 - Don't use `[[ ]]` links. :stuck_out_tongue_closed_eyes:
 - Don't use `@see` tags.    :stuck_out_tongue_closed_eyes:
-
 
 ### Open Issues
 
@@ -451,7 +454,6 @@ export type TokenizerFunction = (text: string, locale?: string) => Token[];
 It produces the following output:
 
 ![typescript error](../media/typescript-error.png)
-
 
 #### Unresolved type link
 
@@ -486,7 +488,6 @@ Generated reference documentation:
 public getSkillConversationReference(skillConversationId: string): Promise<SkillConversationReference> {
     throw new Error('Not Implemented');
 }
-
 ```
 
 Generated reference documentation:
@@ -524,9 +525,9 @@ For more information about reST and Sphinx (the tool used to generate the docume
 
 To reference `sys.exc_info()`:
 
-~~~python
-    :param trace: the traceback information as returned by :func:`sys.exc_info`.
-~~~
+```python
+:param trace: the traceback information as returned by :func:`sys.exc_info`.
+```
 
 ### Types
 
@@ -534,111 +535,110 @@ To reference `sys.exc_info()`:
 
 Use the [built-in function](https://docs.python.org/3/library/functions.html#func-str) associated with the type. Do not include the parentheses.
 
-**good**
+Good:
 
 ```python
-    :param url: The actual URL for this request (to show in individual request instances).
-    :type url: str
+:param url: The actual URL for this request (to show in individual request instances).
+:type url: str
 ```
 
-**bad**
+Bad:
 
 ```python
-    :param url: The actual URL for this request (to show in individual request instances).
-    :type url: string
+:param url: The actual URL for this request (to show in individual request instances).
+:type url: string
 ```
 
 ```python
-    :param url: The actual URL for this request (to show in individual request instances).
-    :type url: str()
+:param url: The actual URL for this request (to show in individual request instances).
+:type url: str()
 ```
 
 #### SDK-defined types
 
 When referencing a type in the same package, you can leave off the package name:
 
-~~~python
-    :param storage: The storage layer this state management object will use to store and retrieve state
-    :type storage:  :class:`Storage`
-~~~
+```python
+:param storage: The storage layer this state management object will use to store and retrieve state
+:type storage:  :class:`Storage`
+```
 
 When referencing a type in a different package, you need to include the package name:
 
-~~~python
-    :param storage: The storage layer this state management object will use to store and retrieve state
-    :type storage:  :class:`botbuilder.core.Storage`
-~~~
+```python
+:param storage: The storage layer this state management object will use to store and retrieve state
+:type storage:  :class:`botbuilder.core.Storage`
+```
 
 ### Common errors
 
 #### When linking to methods, do not add () to the end of function names within the `:func:` tag
 
-**good**
+Good:
 
-~~~python
-    :param start_time: the start time of the request. The value should look the
-    same as the one returned by :func:`datetime.isoformat` (defaults to: None)
-~~~
+```python
+:param start_time: the start time of the request. The value should look the
+same as the one returned by :func:`datetime.isoformat` (defaults to: None)
+```
 
-**bad**
+Bad:
 
-~~~python
-    :param start_time: the start time of the request. The value should look the
-    same as the one returned by :func:`datetime.isoformat()` (defaults to: None)
-~~~
+```python
+:param start_time: the start time of the request. The value should look the
+same as the one returned by :func:`datetime.isoformat()` (defaults to: None)
+```
 
 #### Do not add `:param x:` without adding a `:type x:`
 
-**good**
+Good:
 
-~~~python
-    :param name: The name for this request. All requests with the same name will be grouped together.
-    :type name: str
-    :param url: The actual URL for this request (to show in individual request instances).
-    :type url: str
-~~~
+```python
+:param name: The name for this request. All requests with the same name will be grouped together.
+:type name: str
+:param url: The actual URL for this request (to show in individual request instances).
+:type url: str
+```
 
-**bad**
+Bad:
 
-~~~python
-    :param name: The name for this request. All requests with the same name will be grouped together.
-    :param url: The actual URL for this request (to show in individual request instances).
-
-~~~
+```python
+:param name: The name for this request. All requests with the same name will be grouped together.
+:param url: The actual URL for this request (to show in individual request instances).
+```
 
 #### Do not add a field list (a list of `:param x:`, `:type x`:, `:return:`, or `:rtype:` blocks) without descriptions
 
 This will result in malformed method/class summaries.
 
-**good**
+Good:
 
 ```python
-    :param my_value: Description of the parameter
-    :type my_value: int
-    :return: A new other object
-    :rtype: my_other_module.MyOtherClass
+:param my_value: Description of the parameter
+:type my_value: int
+:return: A new other object
+:rtype: my_other_module.MyOtherClass
 ```
 
-**bad**
+Bad:
 
 ```python
-    :param my_value:
-    :type my_value:
-    :return:
-    :rtype:
+:param my_value:
+:type my_value:
+:return:
+:rtype:
 ```
 
 #### Do not mix syntax from other languages
 
 Only use the reStructuredText syntax detailed in [how to document a Python API](https://review.docs.microsoft.com/help/onboard/admin/reference/python/documenting-api). Do not use Google/Numpy, HTML/CSS, or any other syntax aside from Markdown in the comments. Mixing syntax may result in malformed code comments.
 
-**good**
+Good:
 
 ```python
 :param reference: A reference to the conversation to continue.
 ```
 
-**bad**
+Bad:
 
 ```python
 :param reference: A reference to the conversation to continue.</param>
@@ -646,11 +646,11 @@ Only use the reStructuredText syntax detailed in [how to document a Python API](
 
 ### Samples
 
-See the OPS Onboarding Guide's **How to document a Python API** for a good example of how to use a bunch of the Sphinx markup together, [Fully formatted code file](https://review.docs.microsoft.com/en-us/help/onboard/admin/reference/python/documenting-api?branch=master#fully-formatted-code-file).
+See the OPS Onboarding Guide's **How to document a Python API** for a good example of how to use a bunch of the Sphinx markup together, [Fully formatted code file](https://review.docs.microsoft.com/help/onboard/admin/reference/python/documenting-api?branch=main#fully-formatted-code-file).
 
 Here are a few more examples:
 
-~~~python
+```python
 class BotState(PropertyManager):
     """
     Defines a state management object and automates the reading and writing of
@@ -662,9 +662,9 @@ class BotState(PropertyManager):
         defines these scopes: :class:`ConversationState`, :class:`UserState`, and :class:`PrivateConversationState`.
         You can define additional scopes for your bot.
     """
-~~~
+```
 
-~~~python
+```python
     def __init__(self, storage: Storage, context_service_key: str):
         """
         Initializes a new instance of the :class:`BotState` class.
@@ -684,9 +684,9 @@ class BotState(PropertyManager):
         self.state_key = "state"
         self._storage = storage
         self._context_service_key = context_service_key
-~~~
+```
 
-~~~python
+```python
     def create_property(self, name: str) -> StatePropertyAccessor:
         """
         Creates a property definition and registers it with this :class:`BotState`.
@@ -699,7 +699,7 @@ class BotState(PropertyManager):
         if not name:
             raise TypeError("BotState.create_property(): name cannot be None or empty.")
         return BotStatePropertyAccessor(self, name)
-~~~
+```
 
 ## Java
 
