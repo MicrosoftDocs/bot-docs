@@ -1,6 +1,6 @@
 # Steps to follow when you retire, rename, or move an Bot Framework technical article
 
-This guidance is for SMEs who are listed as the author of an Bot Framework technical article that needs to be retired, renamed, or moved in docs.microsoft.com/azure.
+This guidance is for SMEs who are listed as the author of an Bot Framework technical article that needs to be retired, renamed, or moved in [Azure documentation](docs.microsoft.com/azure).
 
 If you're a member of our Bot Framework community and you think an article should be retired for any reason, please leave a comment in the comment stream for the article to let the author know something is wrong with the article.
 
@@ -78,7 +78,7 @@ These cleanup tasks need to be performed immediately after the changes are publi
 1. Remove cached pages from search engines (only if absolutely necessary).
 1. Clean up redirect
 
-#### Contributors' guide links
+#### Contributor guide links
 
 - [Overview article](../README.md)
 - [Index of guidance articles](contributor-guide-index.md)
