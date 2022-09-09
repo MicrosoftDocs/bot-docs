@@ -108,7 +108,7 @@
         href: bot-service-design-pattern-embed-web-site.md
   - name: Develop
     items:
-    - name: Send and receive text message
+    - name: Send and receive text messages
       href: v4sdk/bot-builder-howto-send-messages.md
     - name: Add media to messages
       href: v4sdk/bot-builder-howto-add-media-attachments.md
