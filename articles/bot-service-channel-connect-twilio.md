@@ -1,21 +1,21 @@
 ---
-title: Connect a bot to Twilio - Bot Service
-description: Learn how to configure bots to use Twilio to communicate with people with a TwiML application or the Twilio adapter.
+title: "Connect a bot to Twilio (SMS)"
+description: Learn how to configure bots to use SMS via Twilio to communicate with people with a TwiML application or the Twilio adapter.
 keywords: Twilio, bot channels, SMS, App, phone, configure Twilio, cloud communication, text
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: mainguy
+ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 08/05/2022
+ms.date: 09/12/2022
 ---
 
-# Connect a bot to Twilio
+# Connect a bot to Twilio (SMS)
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-You can configure your bot to communicate with people using the Twilio cloud communication platform. This article describes how to configure a bot to communicate using Twilio by creating a TwiML application and connecting the bot in the Azure portal.
+You can configure your bot to communicate with people using the Twilio (SMS) cloud communication platform. This article describes how to configure a bot to communicate using Twilio by creating a TwiML application and connecting the bot in the Azure portal.
 
 ## Prerequisites
 

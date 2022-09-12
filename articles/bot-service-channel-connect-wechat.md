@@ -5,7 +5,7 @@ keywords: WeChat, Tencent, bot channel, WeChat App, WeChat bot, App ID, App Secr
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: mainguy
+ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 07/25/2022

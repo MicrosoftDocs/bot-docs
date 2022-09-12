@@ -5,7 +5,7 @@ keywords: Office 365, bot channels, email, email credentials, azure portal, cust
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: mainguy
+ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 03/10/2022

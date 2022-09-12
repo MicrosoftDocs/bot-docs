@@ -5,7 +5,7 @@ keywords: azure portal, bot management, test in web chat, MicrosoftAppID, Micros
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: mainguy
+ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: conceptual
 ms.date: 10/21/2021

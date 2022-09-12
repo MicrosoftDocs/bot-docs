@@ -5,10 +5,10 @@ keywords: channels reference, bot builder channels, bot framework channels
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: mainguy
+ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: reference
-ms.date: 01/27/2022
+ms.date: 09/01/2022
 ---
 
 # Channels reference
@@ -139,13 +139,6 @@ See the [Bot Framework activity schema](https://github.com/Microsoft/botframewor
 - `message`
 
 ### GroupMe
-
-- `conversationUpdate`
-- `invoke`
-  - `tokens/response`
-- `message`
-
-### Kik
 
 - `conversationUpdate`
 - `invoke`

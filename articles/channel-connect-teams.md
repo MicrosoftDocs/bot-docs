@@ -4,7 +4,7 @@ description: Learn how to configure bots to connect to the Microsoft Teams chann
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: mainguy
+ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 03/30/2022
@@ -33,7 +33,7 @@ You can configure your bot to communicate with people via Microsoft Teams. This 
     1. Select **Apply**.
 1. Select **Get bot embed code**, locate the embed code for Teams, and then copy the _https_ part of the code. For example, `https://teams.microsoft.com/l/chat/0/0?users=28:b8a22302e-9303-4e54-b348-343232`. You can use this code to test the bot in Teams.
 
-> ![TIP]
+> [!TIP]
 >
 > - The **Calling** tab supports the Teams calling feature. For more information, see [Register calls and meetings bot for Microsoft Teams](/microsoftteams/platform/bots/calls-and-meetings/registering-calling-bot).
 > - The **Publish** tab contains information about how to publish your Teams app to the Teams Store.

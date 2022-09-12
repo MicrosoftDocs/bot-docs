@@ -65,20 +65,7 @@ If the bot works as expected in Web Chat but fails in some other channel, possib
 
 It's possible that channel configuration parameters, such as the bot's username and password have been set incorrectly or have changed externally. For example, a bot was configured with the Facebook channel for a particular page and the page was later deleted. The simplest solution is remove the channel and redo the channel configuration anew.
 
-The links below provide instructions for configuring channels supported by the Bot Framework:
-
-- [Alexa](bot-service-channel-connect-alexa.md)
-- [Direct Line](bot-service-channel-connect-directline.md)
-- [Email](bot-service-channel-connect-email.md)
-- [Facebook](bot-service-channel-connect-facebook.md)
-- [GroupMe](bot-service-channel-connect-groupme.md)
-- [Kik](bot-service-channel-connect-kik.md)
-- [Microsoft Teams](/microsoftteams/platform/concepts/bots/bots-overview)
-- [Skype](bot-service-channel-connect-skype.md)
-- [Skype for Business](bot-service-channel-connect-skypeforbusiness.md)
-- [Slack](bot-service-channel-connect-slack.md)
-- [Telegram](bot-service-channel-connect-telegram.md)
-- [Twilio](bot-service-channel-connect-twilio.md)
+For a list of supported channels and instructions on how to configure each one, see the [Channels list](bot-service-manage-channels.md#channels-list) in **Connect a bot to channels**.
 
 ### Channel-specific behavior
 

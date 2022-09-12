@@ -133,10 +133,6 @@ Bot Framework channels present the user's ID in the `from.Id` field of any Activ
 
 Did you change your Facebook password? Doing so will invalidate the access token, and you will need to update your bot's configuration settings for the Facebook Messenger channel in the [Azure portal](https://portal.azure.com).
 
-## Why is my Kik bot replying "I'm sorry, I can't talk right now"?
-
-Bots in development on Kik are allowed 50 subscribers. After 50 unique users have interacted with your bot, any new user that attempts to chat with your bot will receive the message "I'm sorry, I can't talk right now." For more information, see [Kik documentation](https://botsupport.kik.com/hc/articles/225764648-How-can-I-share-my-bot-with-Kik-users-while-in-development-).
-
 ## How can I use authenticated services from my bot?
 
 For Azure Active Directory authentication, see the [Add authentication to your bot](v4sdk/bot-builder-authentication.md) tutorial.

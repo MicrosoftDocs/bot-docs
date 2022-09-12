@@ -1,14 +1,14 @@
 ---
 title: Implement channel-specific functionality in Bot Framework SDK
 description: Learn how to implement channel-specific functionality using the Bot Framework SDK for .NET. You can do so by passing native metadata to a channel. 
-keywords: channel specific, email, slack, facebook, telegram, kik, custom channel
+keywords: channel specific, email, slack, facebook, telegram, custom channel
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 10/08/2021
+ms.date: 09/01/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -24,7 +24,6 @@ This article describes how to use a message activity's channel data property to 
 |--|--|
 | [Email](#create-a-custom-email-message) | Send and receive an email that contains body, subject, and importance metadata. |
 | [Facebook](#create-a-facebook-notification) | Send Facebook notifications natively. |
-| [Kik](#create-a-native-kik-message) | Send and receive native Kik messages. |
 | [LINE](#create-a-line-message) | Send  a message that implements LINE-specific message types. |
 | [Slack](#create-a-full-fidelity-slack-message) | Send full fidelity Slack messages. |
 | [Teams](#add-a-bot-to-teams) | Handle @-mentions in Microsoft Teams messages. |
@@ -36,7 +35,7 @@ This article describes how to use a message activity's channel data property to 
 > `channelData` JSON property in various scenarios.
 > To create a JSON object using .NET, use the `JObject` (.NET) class.
 
-## Create a custom Email message
+## Create a custom email message
 
 To create a custom email message, set the activity `channelData` property to a JSON object that contains the following properties:
 
@@ -79,40 +78,6 @@ This snippet shows an example of the `channelData` property for a Facebook recei
             //...
         }
     }
-}
-```
-
-## Create a native Kik message
-
-To create a native Kik message, set the activity object's channel data property to a JSON object that specifies this property:
-
-| Property | Description |
-|--|--|
-| messages | An array of Kik messages. For details about Kik message format, see [Kik Message Formats](https://dev.kik.com/#/docs/messaging#message-formats). |
-
-This snippet shows an example of the `channelData` property for a native Kik message.
-
-```json
-"channelData": {
-    "messages": [
-        {
-            "chatId": "c6dd8165…",
-            "type": "link",
-            "to": "kikhandle",
-            "title": "My Webpage",
-            "text": "Some text to display",
-            "url": "http://botframework.com",
-            "picUrl": "http://lorempixel.com/400/200/",
-            "attribution": {
-                "name": "My App",
-                "iconUrl": "http://lorempixel.com/50/50/"
-            },
-            "noForward": true,
-            "kikJsData": {
-                    "key": "value"
-                }
-        }
-    ]
 }
 ```
 
