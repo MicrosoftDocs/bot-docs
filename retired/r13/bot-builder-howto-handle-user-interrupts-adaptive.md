@@ -41,22 +41,21 @@ What is covered in this section:
 1. [Use the Bot Framework CLI to connect your bot to your LUIS resource in Azure](#use-the-bot-framework-cli-to-connect-your-bot-to-your-luis-resource-in-azure)
 1. [Update your configuration file](#update-your-configuration-file)
 
-
 ### Create LUIS resources in the Azure portal
 
 1. Go to the Azure [Create Cognitive Services][CognitiveServicesLUISAllInOne] page.  
-2. In the **Create options** section, select **Authoring**.
+1. In the **Create options** section, select **Authoring**.
 
    ![Create options to authoring image](./media/adaptive-dialogs/create-options-authoring.png)
 
-3. Enter values for each of the fields, then select the **Review + create** button.
+1. Enter values for each of the fields, then select the **Review + create** button.
 
    ![Create cognitive services image](./media/adaptive-dialogs/create-cognitive-services.png)
 
     > [!NOTE]
     > When entering the **Resource Group** and **Name**, keep in mind that you cannot change these values later. Also note that the value you give for **Name** will be part of your **Endpoint URL**.
 
-4. Review the values to ensure they are correct, then select the **Create** button.
+1. Review the values to ensure they are correct, then select the **Create** button.
 
 ### Get your authoring key
 
@@ -66,14 +65,14 @@ Now that you have created your LUIS resource in the Azure portal, you can get yo
 
    ![deployment is complete image](./media/adaptive-dialogs/your-deployment-is-complete.png)
 
-2. In the left panel, select **Keys and Endpoint**.
-3. Copy the **KEY 1** value, this is your *Authoring Key*. You need to enter this as the value for:
-    -  `LuisAPIKey`: A setting in your configuration file.
+1. In the left panel, select **Keys and Endpoint**.
+1. Copy the **KEY 1** value, this is your _Authoring Key_. You need to enter this as the value for:
+    - `LuisAPIKey`: A setting in your configuration file.
     - `--authoringKey`: A property of the `bf luis:build` CLI command that is discussed in the following section.
 
    ![keys and endpoint image](./media/adaptive-dialogs/keys-and-endpoint.png)
 
-4. Copy and save the **ENDPOINT**. You will assign this value to `LuisAPIHostName` in your configuration file.
+1. Copy and save the **ENDPOINT**. You will assign this value to `LuisAPIHostName` in your configuration file.
 
 With this new LUIS resources in Azure portal, you are now ready to connect your bot to it.
 
@@ -81,7 +80,7 @@ With this new LUIS resources in Azure portal, you are now ready to connect your 
 
 This section explains how to use the Bot Framework CLI to connect your bot to your LUIS resources in Azure. This automates the various tasks required to create, update, train and publish LUIS applications for each .lu file for the bot. In order to use this, you first need Node.js and the Bot Framework CLI.
 
-1. If you have **Node.js** installed, make sure you have version 10.14 or later by running the following from a command prompt: `npm node.js –version`. You can get the latest version by running the following from a command prompt: `npm i -g npm`.
+1. If you have **Node.js** installed, make sure you have version 10.14 or later by running the following from a command prompt: `npm node.js -version`. You can get the latest version by running the following from a command prompt: `npm i -g npm`.
 
     If you do not have it installed, you can install it from the [Node.js download page](https://nodejs.org/download/).
 
@@ -379,6 +378,7 @@ Here is the [Structured response template][structured-response-template] in **Ro
 ##### Cancel
 
 If selected:
+
 1. The bot fires an `intent` event with a value of "Cancel".
 1. The `OnIntent` trigger containing _Intent = "Cancel"_ fires, causing its actions to execute.
 1. This results in the [ConfirmInput][confirm-input] action executing, which displays the message "Are you sure you want to cancel?"
@@ -510,7 +510,7 @@ Configuring its recognizer is the first thing that happens when `userProfileDial
 
 As mentioned previously, every adaptive dialog has its own recognizer, and the .lu file associated with it is exclusively tied to that dialog. In the .lu file, you define the [intents][intents], [utterances][utterances] and [entities][entities] that are to be used in that dialog. If the user enters an intent that is not defined in that dialog's .lu file, the adaptive dialog consultation mechanism enables your bot to bubble up the user intent to the parent dialog to handle, if it can. In this case, the _Help_ and _Cancel_ intents are defined in the root dialog, but your bot can still handle those user intents even when `userProfileDialog` is the active dialog. This is explained in detail in a later section, titled [GetUserProfileDialog Triggers](#getuserprofiledialog-triggers).
 
-For the most part, the code in GetUserProfileDialog used to define the recognizer is the same as the code used in the [root dialog](#rootdialog-recognizer), the only difference is that you need to reference GetUserProfileDialog_en_us_lu for the `ApplicationId ` value as opposed to RootDialog_en_us_lu, in the `CreateLuisRecognizer` method. See the section [Files generated](#files-generated) for more information about the file being referenced.
+For the most part, the code in GetUserProfileDialog used to define the recognizer is the same as the code used in the [root dialog](#rootdialog-recognizer), the only difference is that you need to reference GetUserProfileDialog_en_us_lu for the `ApplicationId` value as opposed to RootDialog_en_us_lu, in the `CreateLuisRecognizer` method. See the section [Files generated](#files-generated) for more information about the file being referenced.
 
 [!code-csharp[CreateLuisRecognizer](~/../botbuilder-samples/samples/csharp_dotnetcore/adaptive-dialog/05.interruptions-bot/Dialogs/GetUserProfileDialog/GetUserProfileDialog.cs?range=171-186&highlight=10)]
 
@@ -690,14 +690,10 @@ The screenshot shown below verifies that you can interrupt the conversational fl
 
 [adaptive-expressions]: bot-builder-concept-adaptive-expressions.md
 [person-name]: ../file-format/bot-builder-lu-file-format.md#machine-learned-entity
-[prediction-score]: /azure/cognitive-services/luis/luis-concept-prediction-score 
+[prediction-score]: /azure/cognitive-services/luis/luis-concept-prediction-score
 
 <!-- Setting up LUIS ----->
-[create-luis-resources-in-azure-portal]: https://docs.microsoft.com/azure/cognitive-services/luis/luis-how-to-azure-subscription#create-luis-resources-in-azure-portal
 [CognitiveServicesLUISAllInOne]: https://portal.azure.com/#create/Microsoft.CognitiveServicesLUISAllInOne
 
 <!-- Sample links ----->
 [cs-sample]: https://aka.ms/cs-adaptive-interruptions-sample
-[js-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/adaptive-dialog/javascript_nodejs/05.interruptions-bot
-[python-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/adaptive-dialog/python/05.interruptions-bot
-[rootdialog.lu]: https://github.com/microsoft/BotBuilder-Samples/blob/master/samples/csharp_dotnetcore/adaptive-dialog/05.interruptions-bot/Dialogs/RootDialog/RootDialog.lu

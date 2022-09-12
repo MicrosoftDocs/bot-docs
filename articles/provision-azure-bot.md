@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 08/18/2022
+ms.date: 09/12/2022
 ms.custom: template-how-to
 ---
 
@@ -84,7 +84,7 @@ Leave `UMSIName`, `UMSIResourceGroupName`, and `tenantId` blank.
 To create the Azure Bot resource for your bot, use the following command.
 
 ```azurecli
-az deployment group create –-resource-group <resource-group> --template-file <template-file-path> --parameters @<parameters-file-path>
+az deployment group create --resource-group <resource-group> --template-file <template-file-path> --parameters @<parameters-file-path>
 ```
 
 | Option         | Description                                                                                         |

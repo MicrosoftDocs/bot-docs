@@ -10,9 +10,9 @@ These should be considered the sources of truth, and you _should not_ "use Micro
 
 #### On Corpnet
 
-- [Microsoft Cloud Style Guide][] / **A–Z names + terms dictionary** &mdash; Cloud-specific style guide.
-- [Microsoft Writing Style Guide][] / **A–Z word list and term collections** &mdash; Microsoft-wide style guide.
-- [Microsoft 365 Style Guide][] / **A–Z word list** &mdash; for terms specific to Microsoft 365, in addition to Windows, Office 365, and Microsoft Teams.
+- [Microsoft Cloud Style Guide][] / **A&ndash;Z names + terms dictionary** &mdash; Cloud-specific style guide.
+- [Microsoft Writing Style Guide][] / **A&ndash;Z word list and term collections** &mdash; Microsoft-wide style guide.
+- [Microsoft 365 Style Guide][] / **A&ndash;Z word list** &mdash; for terms specific to Microsoft 365, in addition to Windows, Office 365, and Microsoft Teams.
 - [Term Studio](https://termstudio.azurewebsites.net/default.aspx) &mdash; This is used by localization and is not meant for our consumption. However, in the absence of other material, it is sometimes useful for identifying the correct version of a product name.
 
 > [!TIP]
@@ -478,7 +478,7 @@ See [web](#web).
   - LUIS&mdash;on subsequent mentions.
 - **Notes**:
   - The casing is different for the product versus the general concept.
-  - "Don’t use Azure LUIS or Microsoft LUIS. LUIS is part of Azure Cognitive Services but it isn't Microsoft or Azure branded."
+  - "Don't use Azure LUIS or Microsoft LUIS. LUIS is part of Azure Cognitive Services but it isn't Microsoft or Azure branded."
 - **See also**: [language understanding](#language-understanding).
 
 ## library
