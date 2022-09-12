@@ -35,7 +35,6 @@ In case you don't find the answer you're looking for, you can post your question
 - [How do identifiers work in the Bot Framework?](bot-service-troubleshoot-general-problems.md#how-do-identifiers-work-in-the-bot-framework)
 - [How can I get access to the user ID?](bot-service-troubleshoot-general-problems.md#how-can-i-get-access-to-the-user-id)
 - [Why are my Facebook user names not showing anymore?](bot-service-troubleshoot-general-problems.md#why-are-my-facebook-user-names-not-showing-anymore)
-- [Why is my Kik bot replying "I'm sorry, I can't talk right now"?](bot-service-troubleshoot-general-problems.md#why-is-my-kik-bot-replying-im-sorry-i-cant-talk-right-now)
 - [How can I use authenticated services from my bot?](bot-service-troubleshoot-general-problems.md#how-can-i-use-authenticated-services-from-my-bot)
 - [How can I limit access to my bot to a pre-determined list of users?](bot-service-troubleshoot-general-problems.md#how-can-i-limit-access-to-my-bot-to-a-pre-determined-list-of-users)
 - [Why does my Direct Line 1.1 conversation start over after every message?](bot-service-troubleshoot-general-problems.md#why-does-my-direct-line-11-conversation-start-over-after-every-message)

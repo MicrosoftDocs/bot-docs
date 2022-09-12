@@ -1,13 +1,13 @@
 ---
 title: Connect your bot to channels with Azure CLI
-description: This sample shows Azure CLI commands for connecting your bot to a communication application, such as email, Facebook, or the Kik messaging app.
+description: This sample shows Azure CLI commands for connecting your bot to a communication application, such as email or Facebook.
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 08/06/2021
+ms.date: 09/01/2022
 ms.custom: devx-track-azurecli
 ---
 
@@ -61,19 +61,6 @@ az bot facebook create --resource-group ContosoBotRG --name ContosoBot --appid <
    --page-id <myPageId> --secret <secret> --token <token>
 az bot facebook show --resource-group ContosoBotRG --name ContosoBot
 az bot facebook delete --resource-group ContosoBotRG --name ContosoBot 
-```
-
-### Kik
-
-You can configure your bot to communicate through the Kik messaging app. For more information, see [Connect a bot to Kik](bot-service-channel-connect-kik.md).
-
-These sample commands create a connection to the channel for the Kik app by using [az bot kik create](/cli/azure/bot/kik#az-bot-kik-create). The example shows the connection in the console and deletes the connection.
-
-```azurecli
-az bot kik create --resource-group ContosoBotRG --name ContosoBot --user-name <mykikname> \
-   --key <key> --is-validated false
-az bot kik show --resource-group ContosoBotRG --name ContosoBot
-az bot kik delete --resource-group ContosoBotRG --name ContosoBot
 ```
 
 ### Microsoft Teams
@@ -160,9 +147,6 @@ This article uses the following Azure CLI commands:
 - [az bot facebook create](/cli/azure/bot/facebook#az-bot-facebook-create)
 - [az bot facebook delete](/cli/azure/bot/facebook#az-bot-facebook-delete)
 - [az bot facebook show](/cli/azure/bot/facebook#az-bot-facebook-show)
-- [az bot kik create](/cli/azure/bot/kik#az-bot-kik-create)
-- [az bot kik delete](/cli/azure/bot/kik#az-bot-kik-delete)
-- [az bot kik show](/cli/azure/bot/kik#az-bot-kik-show)
 - [az bot msteams create](/cli/azure/bot/msteams#az-bot-msteams-create)
 - [az bot msteams delete](/cli/azure/bot/msteams#az-bot-msteams-delete)
 - [az bot msteams show](/cli/azure/bot/msteams#az-bot-msteams-show)

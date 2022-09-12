@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 03/22/2022
+ms.date: 09/12/2022
 ms.custom: abs-meta-21q1
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -38,27 +38,27 @@ After you've configured the channel, users on that channel can start using your 
 
 The connection steps are different for each channel. See the related article in the table below more information.
 
-|Channel|Description|
+| Channel | Description |
 |:-|:-|
-|[Alexa](bot-service-channel-connect-alexa.md) <img width="150px"/>|Communicate with users via Alexa custom skills.|
-|[Direct Line](bot-service-channel-directline.md)| Integrate a bot into a mobile app, web page, or other applications.|
-|[Email](bot-service-channel-connect-email.md)|Enable a bot to communicate with users via Microsoft 365 email.|
-|[Facebook](bot-service-channel-connect-facebook.md)|Connect a bot to both Facebook Messenger and Facebook Workplace, so that it can communicate with users on both platforms.|
-|[GroupMe](bot-service-channel-connect-groupMe.md)|Configure a bot to communicate with users through GroupMe.|
-|Kik|Kik no longer supports new bot development.|
-|[LINE](bot-service-channel-connect-line.md)|Configure a bot to communicate with users through the LINE app.|
-|[Microsoft Teams](channel-connect-teams.md)|Configure a bot to communicate with users through Microsoft Teams.|
-|[Omnichannel](bot-service-channel-omnichannel.md)|Integrate a bot to start a conversation with a customer, provide automated responses, and then shift the conversation to a human agent if required.|
-|[Outlook (preview)](bot-service-channel-connect-actionable-email.md)|Configure a bot to communicate with users via quick actions from within Outlook. |
-|[Search (preview)](bot-service-channel-connect-search.md)|Enable a bot to answer user queries via Dynamics 365 federated search.|
-|Skype|Skype no longer supports new bot development.|
-|[Slack](bot-service-channel-connect-slack.md)|Configure a bot to communicate with users through Slack.|
-|[Telegram](bot-service-channel-connect-telegram.md)|Configure a bot to communicate with users through Telegram.|
-|[Telephony](bot-service-channel-connect-telephony.md)|Configure a bot to communicate with users through the Bot Framework Telephony channel.|
-|[Twilio](bot-service-channel-connect-twilio.md)|Configure a bot to communicate with users through the Twilio cloud communication platform.|
-|[WeChat](bot-service-channel-connect-wechat.md)|Configure a bot to communicate with users using the WeChat platform.|
-|[Web Chat](bot-service-channel-connect-webchat.md)| Automatically configured for you when you create a bot with the Bot Framework Service.|
-|[Additional channels](bot-service-channel-additional-channels.md)|Additional channels available as an adapter through [Botkit provided platforms](https://github.com/howdyai/botkit/blob/main/packages/docs/platforms/index.md) and [community repositories](https://github.com/BotBuilderCommunity/).|
+| [Alexa](bot-service-channel-connect-alexa.md) <img width="150px"/> | Communicate with users via Alexa custom skills. |
+| [Direct Line](bot-service-channel-directline.md) | Integrate a bot into a mobile app, web page, or other applications. |
+| [Email](bot-service-channel-connect-email.md) | Enable a bot to communicate with users via Microsoft 365 email. |
+| [Facebook](bot-service-channel-connect-facebook.md) | Connect a bot to both Facebook Messenger and Facebook Workplace, so that it can communicate with users on both platforms. |
+| [GroupMe](bot-service-channel-connect-groupMe.md) | Configure a bot to communicate with users through GroupMe. |
+| Kik | Kik no longer supports new bot development. |
+| [LINE](bot-service-channel-connect-line.md) | Configure a bot to communicate with users through the LINE app. |
+| [Microsoft Teams](channel-connect-teams.md) | Configure a bot to communicate with users through Microsoft Teams. |
+| [Omnichannel](bot-service-channel-omnichannel.md) | Integrate a bot to start a conversation with a customer, provide automated responses, and then shift the conversation to a human agent if required. |
+| [Outlook (preview)](bot-service-channel-connect-actionable-email.md) | Configure a bot to communicate with users via quick actions from within Outlook. |
+| [Search (preview)](bot-service-channel-connect-search.md) | Enable a bot to answer user queries via Dynamics 365 federated search. |
+| Skype | Skype no longer supports new bot development. |
+| [Slack](bot-service-channel-connect-slack.md) | Configure a bot to communicate with users through Slack. |
+| [Telegram](bot-service-channel-connect-telegram.md) | Configure a bot to communicate with users through Telegram. |
+| Telephony | Telephony is in preview and is not currently accepting additional customers. |
+| [Twilio (SMS)](bot-service-channel-connect-twilio.md) | Configure a bot to communicate with users through the Twilio cloud communication platform. |
+| [WeChat](bot-service-channel-connect-wechat.md) | Configure a bot to communicate with users using the WeChat platform. |
+| [Web Chat](bot-service-channel-connect-webchat.md) | Automatically configured for you when you create a bot with the Bot Framework Service. |
+| [Additional channels](bot-service-channel-additional-channels.md) | Additional channels available as an adapter through [Botkit provided platforms](https://github.com/howdyai/botkit/blob/main/packages/docs/platforms/index.md) and [community repositories](https://github.com/BotBuilderCommunity/). |
 
 ## Select the protocol schema transformation version
 

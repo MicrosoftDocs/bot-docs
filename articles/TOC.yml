@@ -259,8 +259,6 @@
         href: bot-service-channel-connect-facebook.md
       - name: GroupMe
         href: bot-service-channel-connect-groupme.md
-      - name: Kik
-        href: bot-service-channel-connect-kik.md
       - name: LINE
         href: bot-service-channel-connect-line.md
       - name: Microsoft Teams
@@ -277,9 +275,7 @@
         href: bot-service-channel-connect-slack.md
       - name: Telegram
         href: bot-service-channel-connect-telegram.md
-      - name: Telephony
-        href: bot-service-channel-connect-telephony.md
-      - name: Twilio
+      - name: Twilio (SMS)
         href: bot-service-channel-connect-twilio.md
       - name: WeChat
         href: bot-service-channel-connect-wechat.md
