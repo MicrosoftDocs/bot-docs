@@ -4,7 +4,7 @@ description: Learn how to add support to your bot for the Telephony channel, a s
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: mainguy
+ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 09/28/2021

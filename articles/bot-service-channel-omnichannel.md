@@ -4,7 +4,7 @@ description: Learn how to configure bots to use Omnichannel to communicate with 
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: mainguy
+ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 09/30/2021

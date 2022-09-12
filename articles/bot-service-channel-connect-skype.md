@@ -5,7 +5,7 @@ keywords: skype, bot channels, configure skype, publish, connect to channels
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: mainguy
+ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
 ms-custom: abs-meta-21q1

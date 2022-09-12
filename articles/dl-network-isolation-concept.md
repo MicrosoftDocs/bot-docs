@@ -5,7 +5,7 @@ displayName: private network, isolated network
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: mainguy
+ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: conceptual
 ms.date: 04/05/2022

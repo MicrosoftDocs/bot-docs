@@ -5,7 +5,7 @@ keywords: Twilio, bot channels, SMS, App, phone, configure Twilio, cloud communi
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: mainguy
+ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 08/05/2022

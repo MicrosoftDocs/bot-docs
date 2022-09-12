@@ -5,7 +5,7 @@ keywords: configure bot, Telegram, bot channel, Telegram bot, access token
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: mainguy
+ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
 ms.custom: abs-meta-21q1

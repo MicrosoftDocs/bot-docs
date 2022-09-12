@@ -5,7 +5,7 @@ keywords: bot channel, GroupMe, create GroupMe
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: mainguy
+ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 08/05/2022
