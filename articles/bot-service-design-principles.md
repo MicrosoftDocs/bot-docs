@@ -25,7 +25,7 @@ CUX allows us to interact with our devices, apps, and digital services the way w
 Other modalities can burden users with the task of learning interaction behaviors that are meaningful to the system: the syntax of a command line, the information architecture of a graphical user interface, or the touch affordances of a device.
 CUX turns the tables.
 Instead of users having to learn the system, it's the system that learns.
-It learns what we teach it about human language&mdash;patterns of speech, colloquialisms, chit-chat, even abusive words – so that it can respond appropriately.
+It learns what we teach it about human language&mdash;patterns of speech, colloquialisms, chit-chat, even abusive words&mdash;so that it can respond appropriately.
 
 ## A great conversational bot
 

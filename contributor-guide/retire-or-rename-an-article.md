@@ -47,7 +47,7 @@ Do not delete articles from the bot-framework-docs-pr or bot-framework-docs repo
 
 Do not rely on redirects to take care of cross-links from other articles. Update or remove the cross references to the article you are retiring, renaming, or moving, including links in articles owned by other authors.
 
-1. Ensure you are working in an up-to-date local branch – run `git pull upstream master` (or the appropriate variation on this command).
+1. Ensure you are working in an up-to-date local branch&mdash;run `git pull upstream master` (or the appropriate variation on this command).
 1. Scan the bot-framework-docs-pr/articles folder and the bot-framework-docs-pr/includes folder for any articles and includes that link to the article you want to retire, move, or rename. Either remove the cross-links or replace them with an appropriate new cross-link. You can use a search and replace utility to find the cross-links if you have one installed. If you don't, you can use Windows PowerShell for free! Here's how to use PowerShell to find the cross-links:
 
    1. Start Windows PowerShell.

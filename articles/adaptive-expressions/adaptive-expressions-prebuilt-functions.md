@@ -2563,10 +2563,10 @@ Listed below are the strings associated with the time of day:
 |Time of day | Timestamp |
 |---|---|
 | midnight | 12AM |
-| morning | 12:01AM – 11:59PM |
+| morning | 12:01AM &ndash; 11:59PM |
 | afternoon | 12PM |
-| evening | 06:00PM – 10:00PM |
-| night | 10:01PM – 11:59PM |
+| evening | 06:00PM &ndash; 10:00PM |
+| night | 10:01PM &ndash; 11:59PM |
 
 
 *Example*

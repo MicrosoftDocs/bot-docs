@@ -37,14 +37,14 @@ Follow the steps in this article to create a local working branch on your comput
 
     ```console
     git add --all
-    git commit –m "<comment>"
+    git commit -m "<comment>"
     ```
 
     Or, to add only the specific files you modified:
 
     ```console
     git add <file path>
-    git commit –m "<comment>"
+    git commit -m "<comment>"
     ```
 
 1. Update your local working branch with changes from the upstream master branch:

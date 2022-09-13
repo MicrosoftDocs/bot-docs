@@ -102,7 +102,7 @@ TL;DR, skip to [Typography quick reference](#typography-quick-reference).
 
 See:
 
-- Microsoft Style Guide / A–Z word list and term collections / I / [icon](https://docs.microsoft.com/style-guide/a-z-word-list-term-collections/i/icon)
+- Microsoft Style Guide / A&ndash;Z word list and term collections / I / [icon](https://docs.microsoft.com/style-guide/a-z-word-list-term-collections/i/icon)
 - [Icons Guidance](https://review.docs.microsoft.com/help/contribute/markdown-reference?branch=main#icons)
 - [Test themes and transparency](https://review.docs.microsoft.com/help/contribute/contribute-how-to-create-conceptual-art?branch=main#test-multiple-themes-and-transparency)
 
