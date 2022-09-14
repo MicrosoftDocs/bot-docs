@@ -5,7 +5,7 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: include
-ms.date: 07/28/2022
+ms.date: 09/13/2022
 ---
 
 #### [Visual Studio](#tab/vs)
@@ -15,7 +15,7 @@ ms.date: 07/28/2022
 
 To add the bot templates to Visual Studio, download and install the [Bot Framework v4 SDK Templates for Visual Studio](https://marketplace.visualstudio.com/items?itemName=BotBuilder.botbuilderv4) VSIX file.
 
-[!INCLUDE [.NET VSIX templates info](../../vsix-templates-versions.md)]
+[!INCLUDE [Install VSIX templates from within Visual Studio](../../vsix-templates-versions.md)]
 
 #### [VS Code / CLI](#tab/vscode+cli)
 
