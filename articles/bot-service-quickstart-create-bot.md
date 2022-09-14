@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: quickstart
-ms.date: 08/15/2022
+ms.date: 09/13/2022
 ms.custom: mode-api, tab-zone-seo, abs-meta-21q1
 ---
 
@@ -15,7 +15,7 @@ ms.custom: mode-api, tab-zone-seo, abs-meta-21q1
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-In this quickstart, you'll learn how to build your first bot with the Bot Framework SDK for C#, Java, JavaScript or Python, and how to test your bot with the Bot Framework Emulator.
+This article describes how to build your first bot with the Bot Framework SDK for C#, Java, JavaScript or Python, and how to test your bot with the Bot Framework Emulator.
 
 Creating your first bot doesn't require an Azure subscription or an Azure Bot Service resource. This quickstart focuses on creating your first bot locally. If you'd like to learn how to create a bot in Azure, see [Create an Azure Bot resource](./v4sdk/abs-quickstart.md).
 
@@ -28,6 +28,8 @@ Creating your first bot doesn't require an Azure subscription or an Azure Bot Se
 - Knowledge of [ASP.NET Core](/aspnet/core/) and [asynchronous programming in C#](/dotnet/csharp/programming-guide/concepts/async/index)
 
 ### C# templates
+
+The current bot samples use .NET Core 3.1 templates.
 
 [!INCLUDE [Add templates in C#](includes/quickstart/dotnet/add-templates.md)]
 
@@ -49,7 +51,7 @@ The generator supports three different template options as shown below.
 |  Template  |  Description  |
 | ---------- |  ---------  |
 | Echo Bot | A good template if you want a little more than "Hello World!", but not much more.  This template handles the very basics of sending messages to a bot, and having the bot process the messages by repeating them back to the user.  This template produces a bot that simply "echoes" back to the user anything the user says to the bot. |
-| Empty Bot | A good template if you are familiar with Bot Framework v4, and simply want a basic skeleton project.  Also a good option if you want to take sample code from the documentation and paste it into a minimal bot in order to learn. |
+| Empty Bot | A good template if you're familiar with Bot Framework v4, and simply want a basic skeleton project.  Also a good option if you want to take sample code from the documentation and paste it into a minimal bot in order to learn. |
 | Core Bot | A good template if you want to create advanced bots, as it uses multi-turn dialogs and [LUIS](https://www.luis.ai), an AI based cognitive service, to implement language understanding. This template creates a bot that can extract places and dates to book a flight. |
 
 ### Install Yeoman
@@ -119,7 +121,7 @@ Yeoman is a tool for creating applications. For more information, see [yeoman.io
     > If this is the case you can try running this command with elevated permissions.
     > This call may also hang without exiting if Python is already installed on your system:
     >
-    > Only run this command if you are on Windows.
+    > Only run this command if you're on Windows.
     >
     > ```console
     > npm install -g windows-build-tools
@@ -139,14 +141,14 @@ Navigate to the directory where you want to create your bot. Then run the follow
 
 **macOS/Linux**
 
-```commandline
+```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
 
 **Windows**
 
-```commandline
+```console
 python -m venv venv
 venv\Scripts\activate.bat
 ```
@@ -196,17 +198,17 @@ Yeoman prompts you for some information with which to create your bot. For this 
 ? Looking good.  Shall I go ahead and create your new bot? (Y/n) Enter "y"
 ```
 
-The generator supports a number of command line options that can be used to change the generator's default options or to pre-seed a prompt. The options are case-sensitive.
+The generator supports many command-line options you can use to change the generator's defaults or to pre-seed a prompt. The options are case-sensitive.
 
 | Command-line option | Description |
 |--|--|
 | `--help, -h` | List help text for all supported command-line options |
 | `--botName, -N` | The name given to the bot project |
 | `--packageName, -P` | The Java package name to use for the bot |
-| `--template, -T` | The template used to generate the project. Options are `echo`, `empty`, `core`. See [https://github.com/Microsoft/BotBuilder-Samples/tree/main/generators](https://github.com/microsoft/BotBuilder-Samples/tree/main/generators) for additional information regarding the different template options their functional differences. |
-| `--noprompt` | The generator will not prompt for confirmation before creating a new bot. Any requirement options not passed on the command line will use a reasonable default value. This option is intended to enable automated bot generation for testing purposes. |
+| `--template, -T` | The template used to generate the project. Options are `echo`, `empty`, `core`. For more information about the different templates, see the GitHub repository for your language, [C#](https://github.com/microsoft/botbuilder-dotnet/tree/main/generators/dotnet-templates#readme),  [JavaScript](https://github.com/microsoft/botbuilder-js/tree/main/generators/generator-botbuilder#readme), [Python](https://github.com/microsoft/botbuilder-python/tree/main/generators#readme), or [Java](https://github.com/microsoft/botbuilder-java/tree/main/generators#readme). |
+| `--noprompt` | The generator won't prompt for confirmation before creating a new bot. Any requirement options not passed on the command line will use a reasonable default value. This option is intended to enable automated bot generation for testing purposes. |
 
-Thanks to the template, your project contains all the code that's necessary to create the bot in this quickstart. You don't need any additional code to test your bot.
+Thanks to the template, your project contains all the code that's necessary to create the bot in this quickstart. You don't need any other code to test your bot.
 
 > [!NOTE]
 > If you create a `Core` bot, you'll need a LUIS language model. You can create a language model at [luis.ai](https://www.luis.ai). After creating the model, update the configuration file.
@@ -232,7 +234,7 @@ Thanks to the template, your project contains all the code that's necessary to c
    ? Looking good.  Shall I go ahead and create your new bot? Yes
    ```
 
-Thanks to the template, your project contains all the code that's necessary to create the bot in this quickstart. You don't need any additional code to test your bot.
+Thanks to the template, your project contains all the code that's necessary to create the bot in this quickstart. You don't need any other code to test your bot.
 
 > [!NOTE]
 > If you create a `Core` bot, you'll need a LUIS language model. You can create a language model at [luis.ai](https://www.luis.ai). After creating the model, update the configuration file.
@@ -286,7 +288,7 @@ Thanks to the template, your project contains all the code that's necessary to c
     java -jar .\target\<archive-name>.jar
     ```
 
-You are now ready to start the Emulator.
+You're now ready to start the Emulator.
 
 > [!div class="nextstepaction"]
 > [I started the echo bot](#start-the-emulator-and-connect-your-bot) [I ran into an issue](https://microsoft.qualtrics.com/jfe/form/SV_6D4KLPZc2jTIa2O?Product=BotSDK&Page=bot-service-quickstart-create-bot&Section=start-your-bot&PLanguage=Java)
@@ -325,11 +327,11 @@ At this point, your bot is running locally on port 3978.
     python app.py
     ```
 
-    You will know your bot is ready to test when you see the last line shown in the screenshot below:
+    You'll know your bot is ready to test when you see the last line shown in the screenshot below:
 
     :::image type="content" source="media/python/quickstart/bot-running-locally.png" alt-text="Python bot running locally":::
 
-1. Copy the http address in the last line. You will need it when you use the Emulator to interact with your bot.
+1. Copy the http address in the last line. You'll need it when you use the Emulator to interact with your bot.
 
 > [!div class="nextstepaction"]
 > [I started the echo bot](#start-the-emulator-and-connect-your-bot) [I ran into an issue](https://microsoft.qualtrics.com/jfe/form/SV_6D4KLPZc2jTIa2O?Product=BotSDK&Page=bot-service-quickstart-create-bot&Section=start-your-bot&PLanguage=Python)
@@ -353,12 +355,10 @@ At this point, your bot is running locally on port 3978.
 > [!div class="nextstepaction"]
 > [I started the Emulator and connected to my bot](#next-steps) [I ran into an issue](https://microsoft.qualtrics.com/jfe/form/SV_6D4KLPZc2jTIa2O?Product=BotSDK&Page=bot-service-quickstart-create-bot&Section=start-the-emulator-and-connect-your-bot)
 
-## Additional Resources
-
-- See [Debug a bot](bot-service-debug-channel-ngrok.md) for how to debug using Visual Studio or Visual Studio Code and the Bot Framework Emulator.
-- See [Tunneling (ngrok)](https://github.com/Microsoft/BotFramework-Emulator/wiki/Tunneling-(ngrok)) for information on how to install ngrok.
-
 ## Next steps
+
+- For information about how to debug using Visual Studio or Visual Studio Code and the Bot Framework Emulator, see [Debug a bot](bot-service-debug-channel-ngrok.md).
+- For information about ngrok, see [Tunneling (ngrok)](https://github.com/Microsoft/BotFramework-Emulator/wiki/Tunneling-(ngrok)).
 
 > [!div class="nextstepaction"]
 > [Deploy your bot to Azure](bot-builder-deploy-az-cli.md)
