@@ -18,7 +18,7 @@ The main sources for NuGet packages are NuGet (stable/official) and [BotBuilder.
 
 ## Tools (for local builds)
 
-The [Onboarding guide][] has info on how to run local builds, see [How to Test a .NET-based API Reference Project Locally](https://review.docs.microsoft.com/help/onboard/admin/reference/dotnet/testing-locally?branch=main).
+The [Onboarding guide][] has info on how to run local builds, see [How to Test a .NET-based API Reference Project Locally](https://review.learn.microsoft.com/help/onboard/admin/reference/dotnet/testing-locally?branch=main).
 
 Tools:
 
@@ -54,18 +54,18 @@ back to [top](#top)
 
 The [C# docXML guide][] and [recommended docXML tags][] describe how to use C# /// (docXML) comments.
 
-See the public [Microsoft style guide][] [reference documentation](https://docs.microsoft.com/style-guide/developer-content/reference-documentation) section for general guidance on documenting specific types and members.
+See the public [Microsoft style guide][] [reference documentation](https://learn.microsoft.com/style-guide/developer-content/reference-documentation) section for general guidance on documenting specific types and members.
 See the [.NET API docs wiki][] for more specific guidance and boilerplate.
 
 <!-- Writing and onboarding guides -->
 
-[Microsoft style guide]: https://docs.microsoft.com/style-guide/welcome/
-[Onboarding guide]: https://review.docs.microsoft.com/help/onboard/admin/reference?branch=main
+[Microsoft style guide]: https://learn.microsoft.com/style-guide/welcome/
+[Onboarding guide]: https://review.learn.microsoft.com/help/onboard/admin/reference?branch=main
 
 <!-- local build tools -->
 
 <!-- Language and markup reference ----- -->
 
-[C# docXML guide]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/
-[recommended docXML tags]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments
+[C# docXML guide]: https://learn.microsoft.com/dotnet/csharp/programming-guide/xmldoc/
+[recommended docXML tags]: https://learn.microsoft.com/dotnet/csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments
 [.NET API docs wiki]: https://github.com/dotnet/dotnet-api-docs/wiki

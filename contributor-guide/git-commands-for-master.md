@@ -2,7 +2,7 @@
 
 ## Standard process (working from master)
 
-Follow the steps in this article to create a local working branch on your computer so that you can create a new article for the Bot Framework technical documentation section of docs.microsoft.com/Bot Framework or update an existing article.
+Follow the steps in this article to create a local working branch on your computer so that you can create a new article for the Bot Framework technical documentation section of learn.microsoft.com/Bot Framework or update an existing article.
 
 1. Start Git Bash (or the command-line tool you use for Git).
 

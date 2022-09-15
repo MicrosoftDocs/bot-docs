@@ -36,7 +36,7 @@ If you are working **without MS credentials, you will not have access to RAS, My
 
 ### Basic tools
 
-1. **VS Code** from this location: http://code.visualstudio.com. Add the **Docs Authoring Pack** extension. For more information, see [Install Visual Studio Code extensions](https://review.docs.microsoft.com/help/contribute/contribute-get-started-setup-tools?branch=main#install-visual-studio-code-extensions).
+1. **VS Code** from this location: http://code.visualstudio.com. Add the **Docs Authoring Pack** extension. For more information, see [Install Visual Studio Code extensions](https://review.learn.microsoft.com/help/contribute/contribute-get-started-setup-tools?branch=main#install-visual-studio-code-extensions).
 
 1. **Microsoft Teams** from this location: http://teams.microsoft.com. (fix)
     1. The documentation team uses Microsoft Teams for miscellaneous artifacts.  The writers should contact their agency's tech support if they need help installing or accessing Teams. Once granted access, you'll be able to browse (and manage) content.
@@ -55,7 +55,7 @@ If you are working **without MS credentials, you will not have access to RAS, My
 
 1. [Docs portal](https://ops.microsoft.com/#/login). Find links to contributor guide, onboarding and admin guide, docs support team, portal help.
 
-1. [Broken link report in Docs Portal](https://review.docs.microsoft.com/help/contribute/broken-link-report?branch=main). A new broken link report is enabled on all repos that are live on Docs. The report is available through the Docs Portal. Any user with Read permissions for a repo can view the broken link report for that repo. (doc)
+1. [Broken link report in Docs Portal](https://review.learn.microsoft.com/help/contribute/broken-link-report?branch=main). A new broken link report is enabled on all repos that are live on Docs. The report is available through the Docs Portal. Any user with Read permissions for a repo can view the broken link report for that repo. (doc)
 
 <!-- 1. http://skyeyereports.cloudapp.net/home.?? Provides analytics about our docs including stuff like page views, CSAT ratings, verbatims, etc.-->
 
@@ -81,7 +81,7 @@ If you are working **without MS credentials, you will not have access to RAS, My
 1. Add your full name, Microsoft as the company, and a picture of yourself to your GitHub profile (**Settings/Profile**).
 1. Email Kamran Iqbal your GitHub username to let him know you are in the GitHub orgs so he can add you to teams.
 
-For more information, see [Setup a GitHub account](https://review.docs.microsoft.com/help/contribute/contribute-get-started-setup-github?branch=main).
+For more information, see [Setup a GitHub account](https://review.learn.microsoft.com/help/contribute/contribute-get-started-setup-github?branch=main).
 
 #### Set local environment
 
@@ -102,7 +102,7 @@ We have two main private content repos for the Bot Framework docs, and a number 
     1. style guide:  https://github.com/MicrosoftDocs/bot-docs-pr/tree/master/styleguide
     1. Markdown template:  https://github.com/MicrosoftDocs/bot-docs-pr/blob/master/markdown-templates/markdown-template-for-new-articles.md.
 1. We write our documentation in **Markdown** using **VS Code**.  For information about markdown see:
-    1. [Docs Markdown reference](https://docs.microsoft.com/contribute/markdown-reference) on Microsoft contributor guide.
+    1. [Docs Markdown reference](https://learn.microsoft.com/contribute/markdown-reference) on Microsoft contributor guide.
     2. [Markdown Viewer / Browser Extension](https://github.com/simov/markdown-viewer) on GitHub.
 
 #### Primary writing repositories for our team
@@ -136,7 +136,7 @@ The following are the steps to create the API reference documentation:
 
 In the form enter the following:
 
-1. What is the name and version of SDK or API you would like reference content published on docs.microsoft.com? - **Bot Framework SDK**.
+1. What is the name and version of SDK or API you would like reference content published on learn.microsoft.com? - **Bot Framework SDK**.
 1. Is this for a preview release of your API? Required to answer. Yes/No
 1. What is your `ms.service` or `ms.product` value? Please enter "ms.prod: \<your value>" or "ms.service: \<your value>"  - **bot-service**.
 1. What organization is your product in? - **Other/Unsure**.
@@ -154,7 +154,7 @@ To search for the latest onboarding request:
 1. In the search box enter *Bot Framework SDK*.
 1. Select the onboarding request.
 
-For more information, see [Reference Onboarding](https://review.docs.microsoft.com/help/onboard/reference?branch=main).
+For more information, see [Reference Onboarding](https://review.learn.microsoft.com/help/onboard/reference?branch=main).
 
 ### Secondary repositories
 
@@ -178,14 +178,14 @@ The following are intermediate reference documentation archives used by the publ
 | Location <img width="200px"/>                                  | Description            |
 |:---------------------------------------------------------------|:-----------------------|
 | https://styleguides.azurewebsites.net                          | MS Style guides        |
-| https://review.docs.microsoft.com/help/contribute/?branch=main | Docs contributor guide |
-| https://review.docs.microsoft.com/help/onboard/?branch=main    | Reference Onboarding   |
+| https://review.learn.microsoft.com/help/contribute/?branch=main | Docs contributor guide |
+| https://review.learn.microsoft.com/help/onboard/?branch=main    | Reference Onboarding   |
 
 ## Links
 
 | Location <img width="200px"/>                        | Description                                |
 |:-----------------------------------------------------|:-------------------------------------------|
-| https://docs.microsoft.com/azure/bot-service/        | Bot Framework documentation portal         |
+| https://learn.microsoft.com/azure/bot-service/        | Bot Framework documentation portal         |
 | https://dev.botframework.com/                        | Microsoft Bot Framework development portal |
 | https://github.com/MicrosoftDocs/bot-docs-archive-pr | Archived documentation articles            |
 
