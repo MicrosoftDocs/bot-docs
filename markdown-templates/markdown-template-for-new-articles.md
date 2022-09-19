@@ -22,32 +22,32 @@ H2 headings are rendered on the page as an automatic on-page TOC. Do not hand-co
 
 Within an H2 section, you can use three ### signs to create H3 headings. In our content, try to avoid going deeper than 3 heading layers - the heading levels are often hard to distinguish on the rendered page.
 
-For more information, see [Markdown/Headings](https://review.docs.microsoft.com/help/platform/markdown-reference?branch=main#headings).
+For more information, see [Markdown/Headings](https://review.learn.microsoft.com/help/platform/markdown-reference?branch=main#headings).
 
 ## Images
 
 Use the `:::image` macro for images.
 
-For more information, see [Markdown/Images](https://review.docs.microsoft.com/help/platform/markdown-reference?branch=main#images).
+For more information, see [Markdown/Images](https://review.learn.microsoft.com/help/platform/markdown-reference?branch=main#images).
 
 ## Linking
 
 Your article will most likely contain links. Use the right type of link, based on the link target: file in repo, site-relative, full URL.
 
-For more details, see [Links](https://review.docs.microsoft.com/help/platform/links-how-to?branch=main).
+For more details, see [Links](https://review.learn.microsoft.com/help/platform/links-how-to?branch=main).
 
 ## Include files
 
 Whenever the same piece of content exists in multiple places throughout the docs (ex: the same few sentences describing a term, or the same tip/note/warning/etc.),
 you can create that content inside a 'snippet' file (in the /includes folder), then simply reference that file in markdown to dynamically inject its contents into any article.
 
-For more details, see [Includes](https://review.docs.microsoft.com/help/platform/includes-best-practices?branch=main).
+For more details, see [Includes](https://review.learn.microsoft.com/help/platform/includes-best-practices?branch=main).
 
 ## Including code from a GitHub repo
 
 Use the `:::code` macro for code snippets from a GitHub samples repo.
 
-For more information, see [How to include code in docs](https://review.docs.microsoft.com/help/platform/code-in-docs?branch=main).
+For more information, see [How to include code in docs](https://review.learn.microsoft.com/help/platform/code-in-docs?branch=main).
 
 ## Notes and tips
 
@@ -64,7 +64,7 @@ Use notes and tips judiciously. A little bit goes a long way.
 > Important text.
 ```
 
-For more information, see [Markdown/Alerts](https://review.docs.microsoft.com/help/platform/markdown-reference?branch=main#alerts-note-tip-important-caution-warning)
+For more information, see [Markdown/Alerts](https://review.learn.microsoft.com/help/platform/markdown-reference?branch=main#alerts-note-tip-important-caution-warning)
 
 ## Lists
 
