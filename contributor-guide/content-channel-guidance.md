@@ -4,15 +4,15 @@ GitHub is a relatively easy way (once you get over the Git hump) to author and p
 
 ## Technical content that belongs in the bot-framework-docs-pr repository
 
-The following types of content are authored in bot-framework-docs-pr and published to [Azure documentation](https://docs.microsoft.com/azure).
+The following types of content are authored in bot-framework-docs-pr and published to [Azure documentation](https://learn.microsoft.com/azure).
 
 **Technical articles about using the product** belong in the bot-framework-docs and bot-framework-docs-pr repositories for publication to Microsoft Docs. They should contain conceptual or procedural information required to understand and use the product. The technical content channel is for technical content showing people **how** to do something. You can talk about the "what" and "why" to help customers understand intent, but the articles should focus on the actual content telling people how to do the task or complete the scenario.
 
 Specific guidance exists for certain types of content, such as customer stories and service limits.
 
-* **Case studies/customer stories**: In principle, customer stories/case studies can live either on the [customer stories site](https://customers.microsoft.com/) or in the technical documentation repository, which publishes to [Azure documentation](https://docs.microsoft.com/azure). The difference is audience and technical depth. The customer stories site addresses BDM and TDM audiences, and the content is not about technical deployment or operational details. The technical content channel addresses evaluators, implementers, and users and goes into technical depth appropriate for new to advanced users. Customer stories require approval, see [What can I publish on docs.microsoft.com?](https://review.docs.microsoft.com/help/contribute/contribute-get-started-channel-guidance?branch=main) for more info.
+* **Case studies/customer stories**: In principle, customer stories/case studies can live either on the [customer stories site](https://customers.microsoft.com/) or in the technical documentation repository, which publishes to [Azure documentation](https://learn.microsoft.com/azure). The difference is audience and technical depth. The customer stories site addresses BDM and TDM audiences, and the content is not about technical deployment or operational details. The technical content channel addresses evaluators, implementers, and users and goes into technical depth appropriate for new to advanced users. Customer stories require approval, see [What can I publish on Microsoft Learn?](https://review.learn.microsoft.com/help/contribute/contribute-get-started-channel-guidance?branch=main) for more info.
 
-* **Service limits**: Every service where subscription and service limits, quotas, and constraints apply must have an include file that documents the most important limits, quotas, or constraints. The include must be added to the all-up [Bot Framework subscription and service limits, quotas, and constraints](https://docs.microsoft.com/azure/azure-subscription-service-limits) article. Optionally, a service-specific limits article may also be published to the service-specific content; the include must be reused in that article.
+* **Service limits**: Every service where subscription and service limits, quotas, and constraints apply must have an include file that documents the most important limits, quotas, or constraints. The include must be added to the all-up [Bot Framework subscription and service limits, quotas, and constraints](https://learn.microsoft.com/azure/azure-subscription-service-limits) article. Optionally, a service-specific limits article may also be published to the service-specific content; the include must be reused in that article.
 
 * **Top issue troubleshooting content**: Most technical troubleshooting content should be published as KB articles at [Microsoft Support](https://support.microsoft.com/). Per agreement with CSS and Apex management, each Bot Framework service may also publish a limited set of two types of troubleshooting content with their technical documentation: up to 10 top issue troubleshooting articles per service, and up to 10 troubleshooting index articles that summarize the symptoms, causes, quick steps, and links to other content (KB articles or documentation) for top call drivers.
 
@@ -36,7 +36,7 @@ The following types of content are delivered in other Bot Framework or Microsoft
 
 * **Future product plans**: Do not publish statements about future product plans in technical documentation. Technical documentation should describe only what is possible in the released product.
 
-* **Learning paths**: Learning paths are delivered at [Microsoft Learn](https://docs.microsoft.com/training/). See [Microsoft Learn Contributor Guide](https://review.docs.microsoft.com/help/learn/?branch=main) for instructions.
+* **Learning paths**: Learning paths are delivered at [Microsoft Learn training](https://learn.microsoft.com/training/). See the [Microsoft Learn Contributor Guide](https://review.learn.microsoft.com/help/learn/?branch=main) for instructions.
 
 * **Legal terms**: There are all-up Bot Framework legal terms: [Microsoft Azure Legal Information](https://azure.microsoft.com/support/legal/).
 
@@ -52,7 +52,7 @@ The following types of content are delivered in other Bot Framework or Microsoft
 
 * **Redirect articles**:  Do not republish an article so that the content of the article is a link to the replacement content. Convert the article into an actual redirect so the user doesn't have to click to go the replacement content.
 
-* **Reference content**: managed reference, REST APIs, PowerShell cmdlet help, schema reference, and error reference content is published to docs.microsoft.com, but not through this repository.
+* **Reference content**: Managed reference, REST APIs, PowerShell cmdlet help, schema reference, and error reference content is published to Microsoft Learn, but not through this repository.
 
 * **Regions**: In technical articles, do not discuss, describe, or explain the regions in which a feature, product, service, or procedure applies or is available. Feature and service availability by region is documented only on the following ACOM page: [Products available by region](https://azure.microsoft.com/regions/services/). Provide a link to the ACOM page.
 

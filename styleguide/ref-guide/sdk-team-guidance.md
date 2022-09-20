@@ -13,13 +13,13 @@ Please add a spell check for code comments to the check-in process.
 
 ## C\#
 
-[C# docXML guide]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/
-[recommended docXML tags]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments
+[C# docXML guide]: https://learn.microsoft.com/dotnet/csharp/programming-guide/xmldoc/
+[recommended docXML tags]: https://learn.microsoft.com/dotnet/csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments
 
 The C# projects use docXML for reference documentation.
 See the **Microsoft Docs** [C# docXML guide][] and [recommended docXML tags][] for detailed information on how to use C# docXML comments.
 
-See the public **Microsoft style guide** [reference documentation](https://docs.microsoft.com/style-guide/developer-content/reference-documentation) section for general guidance on documenting specific types and members.
+See the public **Microsoft style guide** [reference documentation](https://learn.microsoft.com/style-guide/developer-content/reference-documentation) section for general guidance on documenting specific types and members.
 
 ### Style guidance
 
@@ -33,18 +33,18 @@ Use `///`-style comments (and not `/** */`-style comments)  for docXML markup.
 
 You can use Markdown within docXML; however, don't use Markdown headings or image links in docXML.
 
-[c]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/code-inline
-[code]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/code
-[cref]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/cref-attribute
-[example]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/example
-[exception]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/exception
-[inheritdoc]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/inheritdoc
-[list]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/list
-[paramref]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/paramref
-[remarks]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/remarks
-[see]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/see
-[seealso]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/seealso
-[typeparamref]: https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/typeparamref
+[c]: https://learn.microsoft.com/dotnet/csharp/programming-guide/xmldoc/code-inline
+[code]: https://learn.microsoft.com/dotnet/csharp/programming-guide/xmldoc/code
+[cref]: https://learn.microsoft.com/dotnet/csharp/programming-guide/xmldoc/cref-attribute
+[example]: https://learn.microsoft.com/dotnet/csharp/programming-guide/xmldoc/example
+[exception]: https://learn.microsoft.com/dotnet/csharp/programming-guide/xmldoc/exception
+[inheritdoc]: https://learn.microsoft.com/dotnet/csharp/programming-guide/xmldoc/inheritdoc
+[list]: https://learn.microsoft.com/dotnet/csharp/programming-guide/xmldoc/list
+[paramref]: https://learn.microsoft.com/dotnet/csharp/programming-guide/xmldoc/paramref
+[remarks]: https://learn.microsoft.com/dotnet/csharp/programming-guide/xmldoc/remarks
+[see]: https://learn.microsoft.com/dotnet/csharp/programming-guide/xmldoc/see
+[seealso]: https://learn.microsoft.com/dotnet/csharp/programming-guide/xmldoc/seealso
+[typeparamref]: https://learn.microsoft.com/dotnet/csharp/programming-guide/xmldoc/typeparamref
 
 | Task | Guidance
 | :-- | :--
@@ -74,7 +74,7 @@ You can use Markdown within docXML; however, don't use Markdown headings or imag
 
 The JS projects use  [JsDoc](https://jsdoc.app/) and [TypeDoc](http://typedoc.org/guides/doccomments/) conventions  for reference documentation.
 
-All JavaScript and TypeScript API documentation on *docs.microsoft.com* is indexed in the [JavaScript API Browser](https://review.docs.microsoft.com/javascript/api/?branch=main). This ensures that the customers have a single entry point to discover all possible JavaScript APIs.
+All JavaScript and TypeScript API documentation on `learn.microsoft.com` is indexed in the [JavaScript API Browser](https://review.learn.microsoft.com/javascript/api/?branch=main). This ensures that the customers have a single entry point to discover all possible JavaScript APIs.
 
 ## Tags
 
@@ -361,32 +361,32 @@ To link to the auto-generated API reference pages, use XRef links with the **uni
 > [!NOTE]
 > By default, link text shows only the member or type name. The optional `displayProperty=nameWithType` query parameter produces fully qualified link text, that is, *namespace.type* for types, and *type.member* for type members, including enumeration type members.
 
-To find the UID for the API on `docs.microsoft.com`, type all or some of its full name in the  [JavaScript API Browser](https://review.docs.microsoft.com/javascript/api) search box. The UDI are displayed on the left side. The following picture shows an example, where the UIDs are in the red box:
+To find the UID for the API on `learn.microsoft.com`, type all or some of its full name in the  [JavaScript API Browser](https://review.learn.microsoft.com/javascript/api) search box. The UDI are displayed on the left side. The following picture shows an example, where the UIDs are in the red box:
 
 ![JS UIDs](../media/js-udis.PNG)
 
 To test the UID is correct, enter the following in yor browser:
 
 ```http
-    https://xref.docs.microsoft.com/query?uid=<UID to test>
+    https://xref.learn.microsoft.com/query?uid=<UID to test>
 ```
 
 If the UID is correct you will get a long string with the `href` of the reference documentation page. For example, if you enter this in your browser:
 
 ```url
-https://xref.docs.microsoft.com/query?uid=botbuilder-core.ConversationState.getStorageKey
+https://xref.learn.microsoft.com/query?uid=botbuilder-core.ConversationState.getStorageKey
 ```
 
 You obtain this string:
 
 ```json
-[{"uid":"botbuilder-core.ConversationState.getStorageKey","name":"getStorageKey(TurnContext)","href":"https://docs.microsoft.com/javascript/api/botbuilder-core/conversationstate#getstoragekey-turncontext-","tags":["/javascript","public"]}]
+[{"uid":"botbuilder-core.ConversationState.getStorageKey","name":"getStorageKey(TurnContext)","href":"https://learn.microsoft.com/javascript/api/botbuilder-core/conversationstate#getstoragekey-turncontext-","tags":["/javascript","public"]}]
 ```
 
 And if you enter the `href` value in your browser:
 
 ```url
-https://docs.microsoft.com/javascript/api/botbuilder-core/conversationstate#getstoragekey-turncontext-
+https://learn.microsoft.com/javascript/api/botbuilder-core/conversationstate#getstoragekey-turncontext-
 ```
 
 You get the documentation page for `getStorageKey(TurnContext)`.
@@ -396,11 +396,11 @@ You get the documentation page for `getStorageKey(TurnContext)`.
 > [!div class="mx-tdBreakAll"]
 > |Type|Example|Link|
 > |------|-----|------|
-> |Class|`[ConversationState](xref:botbuilder-core.ConversationState)`|[ConversationState](https://review.docs.microsoft.com/javascript/api/botbuilder-core/conversationstate?view=botbuilder-ts-latest&branch=main)|
-> |Method|`[clear()](xref:botbuilder-core.ConversationState.clear)`|[ConversationState.clear](https://docs.microsoft.com/javascript/api/botbuilder-core/conversationstate#clear-turncontext-)|
-> |Interface|`[ChannelAccount](xref:botframework-schema.ChannelAccount)`|[ChannelAccount](https://docs.microsoft.com/javascript/api/botframework-schema/channelaccount)|
+> |Class|`[ConversationState](xref:botbuilder-core.ConversationState)`|[ConversationState](https://review.learn.microsoft.com/javascript/api/botbuilder-core/conversationstate?view=botbuilder-ts-latest&branch=main)|
+> |Method|`[clear()](xref:botbuilder-core.ConversationState.clear)`|[ConversationState.clear](https://learn.microsoft.com/javascript/api/botbuilder-core/conversationstate#clear-turncontext-)|
+> |Interface|`[ChannelAccount](xref:botframework-schema.ChannelAccount)`|[ChannelAccount](https://learn.microsoft.com/javascript/api/botframework-schema/channelaccount)|
 
-For more information on XRef links, see [XRef (cross reference) links](https://review.docs.microsoft.com/help/contribute/links-how-to?branch=main#xref-cross-reference-links).
+For more information on XRef links, see [XRef (cross reference) links](https://review.learn.microsoft.com/help/contribute/links-how-to?branch=main#xref-cross-reference-links).
 
 ## Additional information
 
@@ -424,7 +424,7 @@ For more information on XRef links, see [XRef (cross reference) links](https://r
 - Do use `@remarks` tags.
 - Do use `[<link-text>](xref:<link-uid>)` links.
 - The UIDs are in the generated .yaml files.
-  Or, search for the target using the [JavaScript API Browser](https://review.docs.microsoft.com/javascript/api).
+  Or, search for the target using the [JavaScript API Browser](https://review.learn.microsoft.com/javascript/api).
 - Don't use `[[ ]]` links. :stuck_out_tongue_closed_eyes:
 - Don't use `@see` tags.    :stuck_out_tongue_closed_eyes:
 
@@ -511,7 +511,7 @@ Also included:
 
 ### Syntax and reST reference documents
 
-Follow the reStructuredText (reST) syntax detailed in [how to document a Python API](https://review.docs.microsoft.com/help/onboard/admin/reference/python/documenting-api). Failing to do some may result in malformed code comments.
+Follow the reStructuredText (reST) syntax detailed in [how to document a Python API](https://review.learn.microsoft.com/help/onboard/admin/reference/python/documenting-api). Failing to do some may result in malformed code comments.
 
 For more information about reST and Sphinx (the tool used to generate the documentation) see the following:
 
@@ -630,7 +630,7 @@ Bad:
 
 #### Do not mix syntax from other languages
 
-Only use the reStructuredText syntax detailed in [how to document a Python API](https://review.docs.microsoft.com/help/onboard/admin/reference/python/documenting-api). Do not use Google/Numpy, HTML/CSS, or any other syntax aside from Markdown in the comments. Mixing syntax may result in malformed code comments.
+Only use the reStructuredText syntax detailed in [how to document a Python API](https://review.learn.microsoft.com/help/onboard/admin/reference/python/documenting-api). Do not use Google/Numpy, HTML/CSS, or any other syntax aside from Markdown in the comments. Mixing syntax may result in malformed code comments.
 
 Good:
 
@@ -646,7 +646,7 @@ Bad:
 
 ### Samples
 
-See the OPS Onboarding Guide's **How to document a Python API** for a good example of how to use a bunch of the Sphinx markup together, [Fully formatted code file](https://review.docs.microsoft.com/help/onboard/admin/reference/python/documenting-api?branch=main#fully-formatted-code-file).
+See the OPS Onboarding Guide's **How to document a Python API** for a good example of how to use a bunch of the Sphinx markup together, [Fully formatted code file](https://review.learn.microsoft.com/help/onboard/admin/reference/python/documenting-api?branch=main#fully-formatted-code-file).
 
 Here are a few more examples:
 
