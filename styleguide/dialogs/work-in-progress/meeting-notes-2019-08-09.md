@@ -38,10 +38,10 @@ Without confusing the issue, I found the following:
 
 ​[8/9 4:08 PM] v-emolsh@microsoft.com
 
-[DialogSet namespace](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.dialogs.dialogset?view=botbuilder-dotnet-stable)
+[DialogSet namespace](https://learn.microsoft.com/dotnet/api/microsoft.bot.builder.dialogs.dialogset?view=botbuilder-dotnet-stable)
 
 > DialogSet Class (Microsoft.Bot.Builder.Dialogs)A related set of dialogs that can all call each other.
-><br> docs.microsoft.com
+><br> learn.microsoft.com
 
 ​[8/9 4:15 PM] v-liyan@microsoft.com
 

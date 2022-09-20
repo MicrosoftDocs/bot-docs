@@ -36,12 +36,12 @@ See GitHub's [Searching issues and pull requests](https://docs.github.com/en/git
 
 | Bot Framework documentation |  |
 |:-|:-|
-| [live](https://docs.microsoft.com/azure/bot-service/) | review site: [main](https://review.docs.microsoft.com/azure/bot-service/?branch=main) |
+| [live](https://learn.microsoft.com/azure/bot-service/) | review site: [main](https://review.learn.microsoft.com/azure/bot-service/?branch=main) |
 | **Other Microsoft documentation** |  |
-| [Azure Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/) |
-| [Microsoft Power Virtual Agents](https://docs.microsoft.com/power-virtual-agents/) | review site: [main](https://review.docs.microsoft.com/power-virtual-agents/?branch=main) |
-| [Microsoft Teams](https://docs.microsoft.com/microsoftteams/platform/) |
-| [Speech service](https://docs.microsoft.com/azure/cognitive-services/speech-service/) |
+| [Azure Cognitive Services](https://learn.microsoft.com/azure/cognitive-services/) |
+| [Microsoft Power Virtual Agents](https://learn.microsoft.com/power-virtual-agents/) | review site: [main](https://review.learn.microsoft.com/power-virtual-agents/?branch=main) |
+| [Microsoft Teams](https://learn.microsoft.com/microsoftteams/platform/) |
+| [Speech service](https://learn.microsoft.com/azure/cognitive-services/speech-service/) |
 
 ## Additional repos
 

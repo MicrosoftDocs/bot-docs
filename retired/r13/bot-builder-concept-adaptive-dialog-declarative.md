@@ -519,7 +519,7 @@ For additional information on using this command, see [bf dialog:verify][bf-dial
 [traceactivity]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#traceactivity
 
 [intelliSense]: /visualstudio/ide/using-intellisense
-[composer]: https://docs.microsoft.com/composer
+[composer]: https://learn.microsoft.com/composer
 
 [dialog-commands]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-dialog
 [bf-dialogverify-patterns]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-dialogverify-patterns

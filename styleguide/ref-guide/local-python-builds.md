@@ -7,9 +7,9 @@ The API reference documentation is generated from comments in the source code an
 The **reStructuredText** (RST) is a file format for textual data used primarily in the Python programming language community for technical documentation.
 It is a lightweight markup language designed to be both processable by documentation-processing software, and easily readable by humans.
 
-- For the RST syntax, see [How to document a Python API](https://review.docs.microsoft.com/help/onboard/admin/reference/python/documenting-api?branch=main).
+- For the RST syntax, see [How to document a Python API](https://review.learn.microsoft.com/help/onboard/admin/reference/python/documenting-api?branch=main).
 
-- This article follows the instructions provided in [Testing Python Content Locally](https://review.docs.microsoft.com/help/onboard/admin/reference/python/testing-locally?branch=main).
+- This article follows the instructions provided in [Testing Python Content Locally](https://review.learn.microsoft.com/help/onboard/admin/reference/python/testing-locally?branch=main).
 
 ## Prerequisites
 

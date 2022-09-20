@@ -116,10 +116,10 @@ The rest of these sections cover style and wording guidance. It is intended to s
 
 Use `[link-text](xref:uid)` style links to link to other Bot Framework and Microsoft TypeScript ref docs.
 
-To find the uid for JavaScript, go to the [JavaScript API browser](https://docs.microsoft.com/javascript/api/) and search for the member you want to link to. The uid will be the link text, as opposed to the link target.
+To find the uid for JavaScript, go to the [JavaScript API browser](https://learn.microsoft.com/javascript/api/) and search for the member you want to link to. The uid will be the link text, as opposed to the link target.
 For example, the xref uid for the BotAdapter.use method is **botbuilder-core.BotAdapter.use**.
 
-For links into our docs, link "directly" to the article, such as [Send and receive text messages](https://docs.microsoft.com/azure/bot-service/bot-builder-howto-send-messages) for the **Send and receive text messages** how to.
+For links into our docs, link "directly" to the article, such as [Send and receive text messages](https://learn.microsoft.com/azure/bot-service/bot-builder-howto-send-messages) for the **Send and receive text messages** how to.
 
 For links to other docs, use an aka link as you would in the conceptual topics.
 
@@ -315,18 +315,18 @@ Useful articles in the OPS (publishing) guides:
 
 | Topic or section | Description
 |:-|:-
-| [Azure reference writing style](https://review.docs.microsoft.com/help/contribute-ref/contribute-ref-resource-ref-writing-style?branch=main) | Overall guidance on writing ref docs.
-| [API reference](https://review.docs.microsoft.com/help/contribute-ref/contribute-ref-how-to-document-sdk?branch=main#api-reference) | A section outlining the basic quality bar for reference docs.
-| [Documenting JavaScript APIs](https://review.docs.microsoft.com/help/onboard/admin/reference/js-ts/documenting-api?branch=main) | jsDoc- and typeDoc-specific information.
+| [Azure reference writing style](https://review.learn.microsoft.com/help/contribute-ref/contribute-ref-resource-ref-writing-style?branch=main) | Overall guidance on writing ref docs.
+| [API reference](https://review.learn.microsoft.com/help/contribute-ref/contribute-ref-how-to-document-sdk?branch=main#api-reference) | A section outlining the basic quality bar for reference docs.
+| [Documenting JavaScript APIs](https://review.learn.microsoft.com/help/onboard/admin/reference/js-ts/documenting-api?branch=main) | jsDoc- and typeDoc-specific information.
 
 Useful MS style guide links:
 
-- [Developer content](https://docs.microsoft.com/style-guide/developer-content/)
-- [Capitalization](https://docs.microsoft.com/style-guide/capitalization)
-- [Punctuation](https://docs.microsoft.com/style-guide/punctuation/)
-- [Grammar and parts of speech](https://docs.microsoft.com/style-guide/grammar/grammar-and-parts-of-speech)
-- [Acronyms](https://docs.microsoft.com/style-guide/acronyms)
-- [Word choice](https://docs.microsoft.com/style-guide/word-choice/)
+- [Developer content](https://learn.microsoft.com/style-guide/developer-content/)
+- [Capitalization](https://learn.microsoft.com/style-guide/capitalization)
+- [Punctuation](https://learn.microsoft.com/style-guide/punctuation/)
+- [Grammar and parts of speech](https://learn.microsoft.com/style-guide/grammar/grammar-and-parts-of-speech)
+- [Acronyms](https://learn.microsoft.com/style-guide/acronyms)
+- [Word choice](https://learn.microsoft.com/style-guide/word-choice/)
 
 #### Event emitters and events
 
@@ -338,8 +338,8 @@ back to [top](#top) > [Markup and boilerplate](#markup-and-boilerplate)
 
 <!-- Footnote links: Onboarding & ref doc refresh ----- -->
 
-[Docs contributor guide]: https://review.docs.microsoft.com/help/contribute/?branch=main
-[Onboarding guide]: https://review.docs.microsoft.com/help/onboard/admin/reference?branch=main
+[Docs contributor guide]: https://review.learn.microsoft.com/help/contribute/?branch=main
+[Onboarding guide]: https://review.learn.microsoft.com/help/onboard/admin/reference?branch=main
 
 <!-- Footnote links: local build tools ----- -->
 

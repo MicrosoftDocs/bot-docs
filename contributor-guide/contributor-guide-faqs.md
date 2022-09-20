@@ -63,7 +63,7 @@ Blah blah [unique link text][] blah blah.
 [unique link text]: link-target
 ```
 
-For more information, see [Reference-style links](https://review.docs.microsoft.com/help/platform/links-how-to?branch=main#reference-style-links).
+For more information, see [Reference-style links](https://review.learn.microsoft.com/help/platform/links-how-to?branch=main#reference-style-links).
 
 ### How do I define link text?
 
@@ -134,7 +134,7 @@ These kind of links, which are usually defined in the page footnote and are not 
 
 ### When to include Markdown files?
 
-Use include Markdown files *only if their content need to be repeated in multiple articles*. The include feature instructs the documentation build system to replace the reference with the content of the include file at build time. For more information, see [Included Markdown files](https://docs.microsoft.com/contribute/markdown-reference#included-markdown-files).
+Use include Markdown files *only if their content need to be repeated in multiple articles*. The include feature instructs the documentation build system to replace the reference with the content of the include file at build time. For more information, see [Included Markdown files](https://learn.microsoft.com/contribute/markdown-reference#included-markdown-files).
 
 ### How to remove unused include files?
 
@@ -146,7 +146,7 @@ Go ahead and delete them and rebuild the PR. It should not happen, but if you ge
 
 ### How to create FAQ content?
 
-When you have frequently asked questions (FAQ) and answers about products, features, and services, you can use a *structured YAML template* to present the content. The purpose of using a structured YAML template is to align with a specific schema that Google has defined for FAQ pages. That schema provides better crawlability, ranking, and relevance in the search engine. For more information, see [Create FAQ content](https://review.docs.microsoft.com/help/contribute/contribute-how-to-faq-guide?branch=main).
+When you have frequently asked questions (FAQ) and answers about products, features, and services, you can use a *structured YAML template* to present the content. The purpose of using a structured YAML template is to align with a specific schema that Google has defined for FAQ pages. That schema provides better crawlability, ranking, and relevance in the search engine. For more information, see [Create FAQ content](https://review.learn.microsoft.com/help/contribute/contribute-how-to-faq-guide?branch=main).
 
 Writing in YAML format can be a little tricky because you have to obey to strict rules such as proper spacing, positioning of keywords and so on.
 
@@ -163,11 +163,11 @@ Writing in YAML format can be a little tricky because you have to obey to strict
 ### How do I use the word "we"?
 
 The use of **we** is discouraged. Instead, focus on the customer, and avoid making Microsoft the subject.
-For more information, see [we](https://docs.microsoft.com/style-guide/a-z-word-list-term-collections/w/we).
+For more information, see [we](https://learn.microsoft.com/style-guide/a-z-word-list-term-collections/w/we).
 
 ### How do I use verbs?
 
-Using verbs correctly helps you write clear and simple sentences. The present tense is often easier to read and understand than the past or future tense. It's the best choice for most content. For more information, see [Verbs](https://docs.microsoft.com/style-guide/grammar/verbs).
+Using verbs correctly helps you write clear and simple sentences. The present tense is often easier to read and understand than the past or future tense. It's the best choice for most content. For more information, see [Verbs](https://learn.microsoft.com/style-guide/grammar/verbs).
 
 <a id="t"></a>
 <a id="u"></a>
@@ -181,5 +181,5 @@ Using verbs correctly helps you write clear and simple sentences. The present te
 
 - [How to Write Good](https://www.plainlanguage.gov/resources/humor/how-to-write-good/)
 - [Federal plain language guidelines](https://www.plainlanguage.gov/guidelines/)
-- [Contributor Guide](https://review.docs.microsoft.com/help/contribute/?branch=main)
-- [Create FAQ content](https://review.docs.microsoft.com/help/contribute/contribute-how-to-faq-guide?branch=main)
+- [Contributor Guide](https://review.learn.microsoft.com/help/contribute/?branch=main)
+- [Create FAQ content](https://review.learn.microsoft.com/help/contribute/contribute-how-to-faq-guide?branch=main)

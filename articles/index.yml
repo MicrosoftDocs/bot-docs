@@ -154,13 +154,13 @@ additionalContent:
         - title: Learn modules # < 60 chars (optional)
           links:
           - text: Choose a bot building tool
-            url: /learn/modules/choose-bot-building-tool/
+            url: /training/modules/choose-bot-building-tool/
           - text: Create a bot with the Bot Framework SDK
-            url: /learn/modules/design-bot-conversation-flow/
+            url: /training/modules/design-bot-conversation-flow/
           - text: Create chatbots with Power Virtual Agents
-            url: /learn/modules/explore-power-virtual-agents/
+            url: /training/modules/explore-power-virtual-agents/
           - text: Introduction to Azure Bot Service and Bot Framework Composer
-            url: /learn/modules/intro-to-bot-service-bot-framework-composer/
+            url: /training/modules/intro-to-bot-service-bot-framework-composer/
         # Card
         - title: Related technologies # < 60 chars (optional)
           links:
