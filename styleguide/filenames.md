@@ -4,12 +4,12 @@ URLs must be consistent, hierarchical, and as shallow as possible to perform wel
 
 To ensure well-structured URLs, use one of following URL patterns:
 
-- `https://docs.microsoft.com/bot-framework/{technology}/{filename}`
-- `https://docs.microsoft.com/bot-framework/{technology}/{userjourney-or-secondary-category}/{filename}`  
+- `https://learn.microsoft.com/bot-framework/{technology}/{filename}`
+- `https://learn.microsoft.com/bot-framework/{technology}/{userjourney-or-secondary-category}/{filename}`  
   Use this option if the content set is large and requires deeper hierarchies.
 
 >[!IMPORTANT]
-> The more elements (folders) in the URL path, the harder for a search engine to crawl the content. Try to limit URLs to 2-3 levels deep from the base URL https://docs.microsoft.com/
+> The more elements (folders) in the URL path, the harder for a search engine to crawl the content. Try to limit URLs to 2-3 levels deep from the base URL https://learn.microsoft.com/
 
 ## Follow guidance for friendly filenames
 

@@ -1,6 +1,6 @@
 # Steps to follow when you retire, rename, or move an Bot Framework technical article
 
-This guidance is for SMEs who are listed as the author of an Bot Framework technical article that needs to be retired, renamed, or moved in [Azure documentation](docs.microsoft.com/azure).
+This guidance is for SMEs who are listed as the author of an Bot Framework technical article that needs to be retired, renamed, or moved in [Azure documentation](learn.microsoft.com/azure).
 
 If you're a member of our Bot Framework community and you think an article should be retired for any reason, please leave a comment in the comment stream for the article to let the author know something is wrong with the article.
 
@@ -32,14 +32,14 @@ In our publishing workflow, the article you want to retire, rename, or move must
 
 - **Move**: Create a copy of the article in the new location, and then change the metadata of the original article so the article redirects to the new one.
 
-For example, if you want to move a file from the `articles` folder into a sub-folder, you need to update the original file to contain just metadata in the header. The `/azure/` part is important, as the root of the site is `docs.microsoft.com`.
+For example, if you want to move a file from the `articles` folder into a sub-folder, you need to update the original file to contain just metadata in the header. The `/azure/` part is important, as the root of the site is `learn.microsoft.com`.
 
 ```yml
 redirect_url: /azure/azure-resource-manager/resource-manager-subscription-examples
 redirect_document_id: TRUE 
 ```
 
-For more information, see the OPS documentation on [How to retire, move, or rename a technical article](https://review.docs.microsoft.com/help/platform/retire-rename-articles?branch=main).
+For more information, see the OPS documentation on [How to retire, move, or rename a technical article](https://review.learn.microsoft.com/help/platform/retire-rename-articles?branch=main).
 
 Do not delete articles from the bot-framework-docs-pr or bot-framework-docs repositories, period. If you delete an article, you cannot create the article-level redirects, which guarantees that customers will experience 404s.
 
@@ -71,7 +71,7 @@ Publish your changes to the article repository by submitting a pull request. Tes
 
 ### Step 5: Cleanup tasks
 
-These cleanup tasks need to be performed immediately after the changes are published. For details, see the OPS [Cleanup tasks list](https://review.docs.microsoft.com/help/platform/retire-rename-articles?branch=main#step-5-cleanup-tasks).
+These cleanup tasks need to be performed immediately after the changes are published. For details, see the OPS [Cleanup tasks list](https://review.learn.microsoft.com/help/platform/retire-rename-articles?branch=main#step-5-cleanup-tasks).
 
 1. Update the FWLink tool.
 1. Manage inbound links.

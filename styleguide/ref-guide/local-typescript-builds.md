@@ -193,5 +193,5 @@ Note that **type2doxfx** generates a TOC for each library. We need to combine th
 - Don't use [[ ]] links.
 - Do use \[\<link-text>](xref:\<link-uid>) links.
   - The UIDs are in the generated .yaml files.
-  - Or, search for the target at the [JavaScript API browser](https://docs.microsoft.com/javascript/api/).
+  - Or, search for the target at the [JavaScript API browser](https://learn.microsoft.com/javascript/api/).
 - Don't use @see tags.

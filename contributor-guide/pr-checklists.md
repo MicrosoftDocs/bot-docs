@@ -15,7 +15,7 @@
 - [ ] No locales in links.
 - [ ] Only one H1 heading.
 - [ ] Bullets and numbers, images, and code snippets are properly indented and ordered (quick pass is fine in most cases).
-- [ ] Specific topics types (like quickstarts, tutorials, etc.) follow the Docs guidance. See [Choose the correct topic type for your article](https://review.docs.microsoft.com/help/contribute/content-type-comparison) for more information about correctly formatting information.
+- [ ] Specific topics types (like quickstarts, tutorials, etc.) follow the Docs guidance. See [Choose the correct topic type for your article](https://review.learn.microsoft.com/help/contribute/content-type-comparison) for more information about correctly formatting information.
 - [ ] Re-request a review once you've finished addressing feedback and want a reviewer to take a second pass.
 
 Specific scenarios:
@@ -26,7 +26,7 @@ Specific scenarios:
 - Link additions/updates:
   - [ ] Confirm links work. Actually click them.
     - Site-relative links will generate a 404, most of the time. Remove **review** from the URL to check the link.
-      - Example: change `https://review.docs.microsoft.com/azure/...` to `https://docs.microsoft.com/azure/...`.
+      - Example: change `https://review.learn.microsoft.com/azure/...` to `https://learn.microsoft.com/azure/...`.
 - New article added to the docset:
   - [ ] All checks passed in the [New article](#new-article) section below.
 - Article retired from the docset:

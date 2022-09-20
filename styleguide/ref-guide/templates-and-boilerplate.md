@@ -64,11 +64,11 @@ For **derived** types, try to use wording similar to that of the base/parent cla
 
 | Feature | C# | Java | JavaScript/TypeScript | Python |
 | :-- | :-- | :-- | :-- | :-- |
-| Abstract base classes | [Abstract Classes and Class Members](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members#abstract-classes-and-class-members) | | [Abstract classes](https://www.typescriptlang.org/docs/handbook/classes.html#abstract-classes) | [PEP 3119](https://www.python.org/dev/peps/pep-3119/) |
+| Abstract base classes | [Abstract Classes and Class Members](https://learn.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members#abstract-classes-and-class-members) | | [Abstract classes](https://www.typescriptlang.org/docs/handbook/classes.html#abstract-classes) | [PEP 3119](https://www.python.org/dev/peps/pep-3119/) |
 | Delegates | | | | |
-| Exceptions/errors | [Exceptions and Exception Handling](https://docs.microsoft.com/dotnet/csharp/programming-guide/exceptions/) | | [MDN>Error](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error) [Node.js>Errors](https://nodejs.org/dist/latest-v12.x/docs/api/errors.html) | [PEP 3109](https://www.python.org/dev/peps/pep-3109/) |
+| Exceptions/errors | [Exceptions and Exception Handling](https://learn.microsoft.com/dotnet/csharp/programming-guide/exceptions/) | | [MDN>Error](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error) [Node.js>Errors](https://nodejs.org/dist/latest-v12.x/docs/api/errors.html) | [PEP 3109](https://www.python.org/dev/peps/pep-3109/) |
 | Eventing | | | [Node.js>Events](https://nodejs.org/dist/latest-v12.x/docs/api/events.html) | |
-| Generics | [Generics](https://docs.microsoft.com/dotnet/csharp/programming-guide/generics/) | | [Generics](https://www.typescriptlang.org/docs/handbook/generics.html) | [PEP 560](https://www.python.org/dev/peps/pep-0560/) |
+| Generics | [Generics](https://learn.microsoft.com/dotnet/csharp/programming-guide/generics/) | | [Generics](https://www.typescriptlang.org/docs/handbook/generics.html) | [PEP 560](https://www.python.org/dev/peps/pep-0560/) |
 
 #### Summary: control-like types
 
