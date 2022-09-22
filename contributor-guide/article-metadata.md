@@ -1,8 +1,7 @@
-
-
 # Metadata for Bot Framework technical articles
+
 The standard Bot Framework metadata section looks like this:
-  ```
+  ```yaml
   ---
   title: <page title displayed in search results. Include the brand Azure> - Bot Service
   description: <article description that is displayed in search results>
@@ -17,15 +16,16 @@ The standard Bot Framework metadata section looks like this:
   ms.topic: article
   ms.date: mm/dd/yyyy
   ms.author: kamrani # the Writing team manager's alias.
----
+  ---
   ```
+
 ## Usage
 
 - The element name and attribute names are case sensitive.
 
 ## Attributes and values
 
-![](./media/article-metadata/checkmark-small.png)**title**: Required; important for SEO. Title text appears in the browser tab and as the heading in a search result. Use up to 60 characters including spaces and including the site identifier *| Microsoft Docs* (typed as: space pipe space Microsoft Docs). The H1 of an article should expand on the title, not duplicate it. 
+![](./media/article-metadata/checkmark-small.png)**title**: Required; important for SEO. Title text appears in the browser tab and as the heading in a search result. Use up to 60 characters including spaces and including the site identifier *| Microsoft Learn* (typed as: space pipe space Microsoft Learn). The H1 of an article should expand on the title, not duplicate it.
 
 ![](./media/article-metadata/checkmark-small.png)**description**: Required; important for SEO (relevance) and site functionality. The description should be at least 115 characters long to 145 characters maximum including spaces. Describe the purpose of your content so customers will know whether to choose it from a list of search results. The value is:
 

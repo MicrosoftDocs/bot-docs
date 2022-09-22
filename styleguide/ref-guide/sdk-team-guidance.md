@@ -17,7 +17,7 @@ Please add a spell check for code comments to the check-in process.
 [recommended docXML tags]: https://learn.microsoft.com/dotnet/csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments
 
 The C# projects use docXML for reference documentation.
-See the **Microsoft Docs** [C# docXML guide][] and [recommended docXML tags][] for detailed information on how to use C# docXML comments.
+See the **Microsoft Learn** [C# docXML guide][] and [recommended docXML tags][] for detailed information on how to use C# docXML comments.
 
 See the public **Microsoft style guide** [reference documentation](https://learn.microsoft.com/style-guide/developer-content/reference-documentation) section for general guidance on documenting specific types and members.
 

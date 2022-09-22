@@ -1,5 +1,5 @@
 ---
-title: Manage dialog complexity | Microsoft Docs
+title: Manage dialog complexity
 description: Learn how to modularize your dialog complexity using component dialogs in the Bot Framework SDK.
 keywords: composite control, modular bot logic
 author: JonathanFingold

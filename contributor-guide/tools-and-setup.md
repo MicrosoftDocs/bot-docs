@@ -24,7 +24,7 @@ Every published technical article supports a comment stream provided by the [Liv
 
 As a Microsoft employee and article author or contributor, you need to sign up for Livefyre so you can participate in the comment stream for the article.
 
-1. Your Livefyre account needs to be created within Microsoft Docs. Pick a published article, such as [What is the Microsoft identity platform?](https://learn.microsoft.com/azure/active-directory/develop/v2-overview).
+1. Your Livefyre account needs to be created within Microsoft Learn. Pick a published article, such as [What is the Microsoft identity platform?](https://learn.microsoft.com/azure/active-directory/develop/v2-overview).
 
 1. At the bottom of the article, click the *Sign in* link in the comments section.
 
