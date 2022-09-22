@@ -6,7 +6,7 @@ GitHub is a relatively easy way (once you get over the Git hump) to author and p
 
 The following types of content are authored in bot-framework-docs-pr and published to [Azure documentation](https://learn.microsoft.com/azure).
 
-**Technical articles about using the product** belong in the bot-framework-docs and bot-framework-docs-pr repositories for publication to Microsoft Docs. They should contain conceptual or procedural information required to understand and use the product. The technical content channel is for technical content showing people **how** to do something. You can talk about the "what" and "why" to help customers understand intent, but the articles should focus on the actual content telling people how to do the task or complete the scenario.
+**Technical articles about using the product** belong in the bot-framework-docs and bot-framework-docs-pr repositories for publication to Microsoft Learn. They should contain conceptual or procedural information required to understand and use the product. The technical content channel is for technical content showing people **how** to do something. You can talk about the "what" and "why" to help customers understand intent, but the articles should focus on the actual content telling people how to do the task or complete the scenario.
 
 Specific guidance exists for certain types of content, such as customer stories and service limits.
 

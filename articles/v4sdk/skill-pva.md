@@ -1,5 +1,5 @@
 ---
-title: Implement a skill for Power Virtual Agents | Microsoft Docs
+title: Implement a skill for Power Virtual Agents
 description: Learn how to implement a skill that can be used in Power Virtual Agents, using the Bot Framework SDK.
 keywords: skills
 author: JonathanFingold

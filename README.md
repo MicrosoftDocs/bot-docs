@@ -30,7 +30,7 @@ You can submit updates to the [Bot Framework documentation](https://learn.micros
 ## About your contributions to Bot Framework content
 ### Minor corrections
 
-Minor corrections or clarifications you submit for documentation and code examples in this repo are covered by the [Microsoft Docs Terms of Use](https://learn.microsoft.com/legal/termsofuse).
+Minor corrections or clarifications you submit for documentation and code examples in this repo are covered by the [learn.microsoft.com Terms of Use](https://learn.microsoft.com/legal/termsofuse).
 
 ### Larger submissions
 If you submit a pull request with new or significant changes to documentation and code examples, we'll send a comment in GitHub asking you to submit an online Contribution License Agreement (CLA) if you are not an employee of Microsoft. We need you to complete the online form before we can accept your pull request.

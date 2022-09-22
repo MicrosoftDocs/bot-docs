@@ -5,13 +5,13 @@
 - **Microsoft style guide** (public)  
   https://learn.microsoft.com/style-guide/welcome/
 
-- **Microsoft Docs contributor's guide** (public)  
+- **Microsoft Docs contributor guide** (public)  
   https://learn.microsoft.com/contribute/
 
 - **Validation reference** (public)  
   https://learn.microsoft.com/contribute/validation-reference/
 
-- **Docs contributor's guide** (internal)  
+- **Microsoft Docs contributor guide** (internal)  
   This includes Azure-specific guidance on overview, quickstart, and tutorial articles.  
   https://review.learn.microsoft.com/help/contribute/index?branch=main
 

@@ -1,5 +1,5 @@
 ---
-title: How to debug a skill or skill consumer | Microsoft Docs
+title: How to debug a skill or skill consumer
 description: Describes how to debug a skill or skill consumer with ngrok, when only one bot is local.
 keywords: bot skill, skill bot, skill consumer, debug
 author: JonathanFingold
