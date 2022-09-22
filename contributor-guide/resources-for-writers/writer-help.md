@@ -55,7 +55,7 @@ If you are working **without MS credentials, you will not have access to RAS, My
 
 1. [Docs portal](https://ops.microsoft.com/#/login). Find links to contributor guide, onboarding and admin guide, docs support team, portal help.
 
-1. [Broken link report in Docs Portal](https://review.learn.microsoft.com/help/contribute/broken-link-report?branch=main). A new broken link report is enabled on all repos that are live on Docs. The report is available through the Docs Portal. Any user with Read permissions for a repo can view the broken link report for that repo. (doc)
+1. [Broken link report in Docs Portal](https://review.learn.microsoft.com/help/contribute/broken-link-report?branch=main). A broken link report is enabled on all repos that are live on Microsoft Learn. The report is available through the Docs Portal. Any user with Read permissions for a repo can view the broken link report for that repo. (doc)
 
 <!-- 1. http://skyeyereports.cloudapp.net/home.?? Provides analytics about our docs including stuff like page views, CSAT ratings, verbatims, etc.-->
 
