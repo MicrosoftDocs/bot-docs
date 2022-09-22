@@ -56,7 +56,17 @@ To get and use a JWT token for your bot:
 > [!IMPORTANT]
 > If you have not already done so, you must [register your bot](../bot-service-quickstart-registration.md) with the Bot Framework to obtain its AppID and password. You need the bot's App ID and password to request an access token.
 
-To request an access token from the login service, issue the following request, replacing **MICROSOFT-APP-ID** and **MICROSOFT-APP-PASSWORD** with the bot's AppID and password that you obtained when you [registered](../bot-service-quickstart-registration.md) your bot with the Bot Framework.
+Your bot identity can be managed in Azure in a few different ways.
+
+- As a _user-assigned managed identity_, so that you don't need to manage the bot's credentials yourself.
+- As a _single-tenant_ app.
+- As a _multi-tenant_ app.
+
+Request an access token based on your bot's application type.
+
+#### [Multi-tenant](#tab/multitenant)
+
+To request an access token from the login service, issue the following request, replacing **MICROSOFT-APP-ID** and **MICROSOFT-APP-PASSWORD** with the bot's AppID and password that you obtained when you [registered](../bot-service-quickstart-registration.md) your bot with the Bot Service.
 
 ```http
 POST https://login.microsoftonline.com/botframework.com/oauth2/v2.0/token
@@ -65,6 +75,27 @@ Content-Type: application/x-www-form-urlencoded
 
 grant_type=client_credentials&client_id=MICROSOFT-APP-ID&client_secret=MICROSOFT-APP-PASSWORD&scope=https%3A%2F%2Fapi.botframework.com%2F.default
 ```
+
+#### [Single-tenant](#tab/singletenant)
+
+To request an access token from the login service, issue the following request, replacing **MICROSOFT-APP-ID**,  **MICROSOFT-APP-PASSWORD** and **MICROSOFT-TENANT-ID** with the bot's AppID, password and tenant Id that you obtained when you [registered](../bot-service-quickstart-registration.md) your bot with the Bot Service.
+
+```http
+POST https://login.microsoftonline.com/MICROSOFT-TENANT-ID/oauth2/v2.0/token
+Host: login.microsoftonline.com
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=client_credentials&client_id=MICROSOFT-APP-ID&client_secret=MICROSOFT-APP-PASSWORD&scope=https%3A%2F%2Fapi.botframework.com%2F.default
+```
+
+#### [User-assigned managed identity](#tab/userassigned)
+
+App Service and Azure Functions provide an internally accessible REST endpoint for token retrieval. To request an access token from the `MSI/token` endpoint, make a GET request to the endpoint. Use the `resource` and `client_id` query parameters. Set `resource` to `https://api.botframework.com` and `client_id` to the bot's managed identity app ID. The request doesn't require other query parameters.
+
+- For more information about the token endpoint, see [Connect to Azure services in app code](/azure/app-service/overview-managed-identity?context=%2Fazure%2Factive-directory%2Fmanaged-identities-azure-resources%2Fcontext%2Fmsi-context&tabs=portal%2Chttp#connect-to-azure-services-in-app-code).
+- For more information about bot app IDs, see [Create an Azure Bot resource](../bot-service-quickstart-registration.md).
+
+---
 
 ### Step 2: Obtain the JWT token from the Azure AD v2 account login service response
 
