@@ -1,5 +1,5 @@
 ---
-title: Implement a skill | Microsoft Docs
+title: Implement a skill
 description: Learn how to implement a skill, using the Bot Framework SDK.
 keywords: skills
 author: JonathanFingold

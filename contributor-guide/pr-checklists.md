@@ -15,7 +15,7 @@
 - [ ] No locales in links.
 - [ ] Only one H1 heading.
 - [ ] Bullets and numbers, images, and code snippets are properly indented and ordered (quick pass is fine in most cases).
-- [ ] Specific topics types (like quickstarts, tutorials, etc.) follow the Docs guidance. See [Choose the correct topic type for your article](https://review.learn.microsoft.com/help/contribute/content-type-comparison) for more information about correctly formatting information.
+- [ ] Specific topic types (like quickstarts, tutorials, etc.) follow the Microsoft Docs guidance. See [Choose the correct topic type for your article](https://review.learn.microsoft.com/help/contribute/content-type-comparison) for more information about correctly formatting information.
 - [ ] Re-request a review once you've finished addressing feedback and want a reviewer to take a second pass.
 
 Specific scenarios:

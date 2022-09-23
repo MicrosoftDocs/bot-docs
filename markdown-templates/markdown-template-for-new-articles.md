@@ -10,7 +10,7 @@ ms.service: bot-service
 ms.date: mm/dd/yyyy # date the article was updated in mm/dd/yyyy format
 ---
 
-# Markdown template for Bot Framework on Microsoft Docs (WIP)
+# Markdown template for Bot Framework on Microsoft Learn (WIP)
 
 Your article should have only one H1 heading, which you create with a single # sign. The H1 heading should always be followed by a descriptive paragraph that helps the customer understand what the article is about. It should contain keywords you think customers would use to search for this piece of content. Do not start the article with a note or tip - always start with an introductory paragraph.
 

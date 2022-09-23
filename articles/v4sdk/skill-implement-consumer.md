@@ -1,5 +1,5 @@
 ---
-title: Implement a skill consumer | Microsoft Docs
+title: Implement a skill consumer
 description: Learn how to implement a skill consumer, using the Bot Framework SDK.
 keywords: skills
 author: JonathanFingold
