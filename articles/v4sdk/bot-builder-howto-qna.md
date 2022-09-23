@@ -47,25 +47,25 @@ If you need to create a new knowledge base for a Bot Framework SDK bot, see the 
 
 ## [C#](#tab/cs)
 
-![QnABot logic flow](./media/qnabot-logic-flow.png)
+:::image type="content" source="./media/qnabot-logic-flow.png" alt-text="C# QnABot logic flow":::
 
 `OnMessageActivityAsync` is called for each user input received. When called, it accesses configuration settings from the sample code's **appsetting.json** file to find the value to connect to your pre-configured QnA Maker knowledge base.
 
 ## [JavaScript](#tab/js)
 
-![QnABot JS logic flow](./media/qnabot-js-logic-flow.png)
+:::image type="content" source="./media/qnabot-js-logic-flow.png" alt-text="JavaScript QnABot logic flow":::
 
 `OnMessage` is called for each user input received. When called, it accesses configuration settings from your sample code's **.env** file.  The qnamaker method `getAnswers` connects your bot to your external QnA Maker knowledge base.
 
 ## [Java](#tab/java)
 
-![QnABot logic flow](./media/qnabot-logic-flow-java.png)
+:::image type="content" source="./media/qnabot-logic-flow-java.png" alt-text="Java QnABot logic flow":::
 
 `onMessageActivity` is called for each user input received. When called, it accesses configuration settings from the sample code's **application.properties** file to find the value to connect to your pre-configured QnA Maker knowledge base.
 
 ## [Python](#tab/python)
 
-![QnABot Python logic flow](./media/qnabot-python-logic-flow.png)
+:::image type="content" source="./media/qnabot-python-logic-flow.png" alt-text="Python QnABot logic flow":::
 
 `on_message_activity` is called for each user input received. When called, it accesses configuration settings from your sample code's **config.py** file.  The method `qna_maker.getAnswers` connects your bot to your external QnA Maker knowledge base.
 
@@ -134,7 +134,7 @@ In **QnABot.cs**, in the `OnMessageActivityAsync` method, create a QnAMaker inst
 
 **Bots/QnABot.cs**
 
-[!code-csharp[qna connection](~/../botbuilder-samples/samples/csharp_dotnetcore/11.qnamaker/Bots/QnABot.cs?range=32-39)]
+[!code-csharp[QnA Maker connection](~/../botbuilder-samples/samples/csharp_dotnetcore/11.qnamaker/Bots/QnABot.cs?range=32-39)]
 
 ## [JavaScript](#tab/js)
 
@@ -154,7 +154,7 @@ In **QnABot.java**, in the `onMessageActivity` method, create a QnAMaker instanc
 
 **QnABot.java**
 
-[!code-java[qna connection](~/../botbuilder-samples/samples/java_springboot/11.qnamaker/src/main/java/com/microsoft/bot/sample/qnamaker/QnABot.java?range=25-30)]
+[!code-java[QnA Maker connection](~/../botbuilder-samples/samples/java_springboot/11.qnamaker/src/main/java/com/microsoft/bot/sample/qnamaker/QnABot.java?range=25-30)]
 
 ## [Python](#tab/python)
 
@@ -173,7 +173,7 @@ When your bot needs an answer from QnAMaker, call the `GetAnswersAsync` method f
 
 **Bots/QnABot.cs**
 
-[!code-csharp[qna get answers](~/../botbuilder-samples/samples/csharp_dotnetcore/11.qnamaker/Bots/QnABot.cs?range=43-54)]
+[!code-csharp[QnA Maker get answers](~/../botbuilder-samples/samples/csharp_dotnetcore/11.qnamaker/Bots/QnABot.cs?range=43-54)]
 
 ## [JavaScript](#tab/js)
 
@@ -189,11 +189,11 @@ When your bot needs an answer from QnAMaker, call the `getAnswers` method from y
 
 **QnABot.java**
 
-[!code-java[qna get answers](~/../botbuilder-samples/samples/java_springboot/11.qnamaker/src/main/java/com/microsoft/bot/sample/qnamaker/QnABot.java?range=34-47)]
+[!code-java[QnA Maker get answers](~/../botbuilder-samples/samples/java_springboot/11.qnamaker/src/main/java/com/microsoft/bot/sample/qnamaker/QnABot.java?range=34-47)]
 
 ## [Python](#tab/python)
 
-In the **qna_bot.py** file, we pass the user's input to the QnA Maker service's `get_answers` method to get answers from the knowledge base. If QnA Maker returns a response, this is shown to the user. Otherwise, the user receives the message *No QnA Maker answers were found.*
+In the **qna_bot.py** file, we pass the user's input to the QnA Maker service's `get_answers` method to get answers from the knowledge base. If QnA Maker returns a response, this is shown to the user. Otherwise, the user receives the message _No QnA Maker answers were found._
 
 **bots/qna_bot.py**
 [!code-python[get_answers](~/../botbuilder-samples/samples/python/11.qnamaker/bots/qna_bot.py?range=32-37)]
@@ -206,14 +206,14 @@ Run the sample locally on your machine. If you haven't done so already, install 
 
 Start the Emulator, connect to your bot, and send messages to your bot. The responses to your questions will vary, based on the information your knowledge base.
 
-![test qna sample](../media/emulator-v4/qna-test-bot.png)
+:::image type="content" source="../media/emulator-v4/qna-test-bot.png" alt-text="Test sample bot.":::
 
 ## Additional information
 
 The **QnA Maker multi-turn** sample ([**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/49.qnamaker-all-features), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/49.qnamaker-all-features), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/49.qnamaker-all-features), [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/49.qnamaker-all-features)) shows how to use a QnA Maker dialog to support QnA Maker's follow-up prompt and active learning features.
 
 - QnA Maker supports follow-up prompts, also known as multi-turn prompts.
-If the QnA Maker knowledge base requires an additional response from the user, QnA Maker sends context information that you can use to prompt the user. This information is also used to make any follow-up calls to the QnA Maker service.
+If the QnA Maker knowledge base requires more information from the user, QnA Maker sends context information that you can use to prompt the user. This information is also used to make any follow-up calls to the QnA Maker service.
 In version 4.6, the Bot Framework SDK added support for this feature.
 
   To construct such a knowledge base, see the QnA Maker documentation on how to [Use follow-up prompts to create multiple turns of a conversation](/azure/cognitive-services/QnAMaker/How-To/multi-turn).
