@@ -368,13 +368,13 @@ To find the UID for the API on `learn.microsoft.com`, type all or some of its fu
 To test the UID is correct, enter the following in yor browser:
 
 ```http
-    https://xref.learn.microsoft.com/query?uid=<UID to test>
+    https://xref.docs.microsoft.com/query?uid=<UID to test>
 ```
 
 If the UID is correct you will get a long string with the `href` of the reference documentation page. For example, if you enter this in your browser:
 
 ```url
-https://xref.learn.microsoft.com/query?uid=botbuilder-core.ConversationState.getStorageKey
+https://xref.docs.microsoft.com/query?uid=botbuilder-core.ConversationState.getStorageKey
 ```
 
 You obtain this string:
