@@ -24,7 +24,7 @@ The Bot Connector service enables your bot to exchange messages with channels th
 ## Get an access token
 
 > [!IMPORTANT]
-> If you have not already done so, you must [register your bot](../bot-service-quickstart-registration.md) with the Bot Framework to obtain its App ID and password. You will need the bot's AppID and password to get an access token.
+> If you haven't already done so, you must [register your bot](../bot-service-quickstart-registration.md) with the Bot Framework to obtain its App ID and password. You will need the bot's AppID and password to get an access token.
 
 To communicate with the Bot Connector service, you must specify an access token in the `Authorization` header of each API request, using this format:
 
@@ -95,7 +95,7 @@ When the user sends a message, the Bot Framework Connector POSTs a request to th
 
 ### Reply to the user's message
 
-When your bot's endpoint receives a `POST` request that represents a message from the user (i.e., `type` = **message**), use the information in that request to create the [Activity][] object for your response.
+When your bot's endpoint receives a `POST` request that represents a message from the user (such as, `type` = **message**), use the information in that request to create the [Activity][] object for your response.
 
 1. Set the **conversation** property to the contents of the **conversation** property in the user's message.
 2. Set the **from** property to the contents of the **recipient** property in the user's message.

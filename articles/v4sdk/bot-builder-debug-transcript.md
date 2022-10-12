@@ -20,7 +20,7 @@ One of the keys to successful testing and debugging a bot is your ability to rec
 
 ## The bot transcript file
 
-A bot transcript file is a specialized JSON file that preserves the interactions between a user and your bot. A transcript file preserves not only the contents of a message, but also interaction details such as the user ID, channel ID, channel type, channel capabilities, time of the interaction, etc. All of this information can then be used to help find and resolve issues when testing or debugging your bot.
+A bot transcript file is a specialized JSON file that preserves the interactions between a user and your bot. A transcript file preserves not only the contents of a message, but also interaction details such as the user ID, channel ID, channel type, channel capabilities, time of the interaction, and so on. All of this information can then be used to help find and resolve issues when testing or debugging your bot.
 
 ## Creating/Storing a bot transcript file
 

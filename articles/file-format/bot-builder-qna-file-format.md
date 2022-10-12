@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: reference
-ms.date: 09/01/2022
+ms.date: 10/11/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -34,17 +34,17 @@ The .qna file and parser support question and answer definitions.
 
 Here's the syntax of a basic question and answer definition:
 
-~~~qna
+````qna
 # ? Question
 [list of question variations]
 ```
 Answer
 ```
-~~~
+````
 
 Here's are examples of question and answer definitions:
 
-~~~qna
+````qna
 > # QnA Definitions
 ### ? who is the ceo?
 ```
@@ -58,7 +58,7 @@ See [this link](https://docs.botframework.com/en-us/azure-bot-service/templates/
 You can use our REST apis to manage your KB.
 \#1. See here for details: https://westus.dev.cognitive.microsoft.com/docs/services/58994a073d9e04097c7ba6fe/operations/58994a073d9e041ad42d9baa
 ```
-~~~
+````
 
 Note that the `markdown` type identifier for an `answer` is optional.
 
@@ -66,13 +66,13 @@ Note that the `markdown` type identifier for an `answer` is optional.
 
 You can add multiple questions to the same answer by simply adding variations to questions.
 
-~~~qna
+````qna
 ### ? Aren't you feeling happy today?
 - Feeling cheerful?
 ```markdown
 I'm quite happy, thank you.
 ```
-~~~
+````
 
 ## QnAMaker Filters
 
@@ -88,7 +88,7 @@ Use the following syntax to add filters:
 
 Here's an example of how a filter could be used:
 
-~~~qna
+````qna
 ### ? Where can I get coffee?
 - I need coffee
 
@@ -108,7 +108,7 @@ You can get coffee in our Seattle store at 1 pike place, Seattle, WA
 ```markdown
 You can get coffee in our Portland store at 52 marine drive, Portland, OR
 ```
-~~~
+````
 
 ## QnA Maker PDF file ingestion
 
@@ -166,6 +166,8 @@ Here's an example of the above references:
 
 You can include configuration information for your LUIS application or QnA Maker KB in the .qna file to help direct the parser to handle the LU content correctly.
 
+[!INCLUDE [luis-sunset-alert](../includes/luis-sunset-alert.md)]
+
 Here's how to add configuration information sing **> !#**:
 
 ```qna
@@ -211,7 +213,7 @@ The first QnA pair that has the link text as a `question` will be added as the p
 
 When you're directly using a question, use Markdown convention and replace spaces with hyphens (for example, use `#?when-is-the-portland-store-open` instead of `#?when is the portland store open`). The parser will do its best to find the link.
 
-~~~qna
+````qna
 # ?store hours
 ```
 Most our stores are open M-F 9AM-10PM.
@@ -230,7 +232,7 @@ The Seattle store is open M-F 9AM-10PM.
 ```
 The Portland store is open 24/7.
 ```
-~~~
+````
 
 Note that the link will not actually render as a clickable link in most Markdown renderers.
 
@@ -238,7 +240,7 @@ Note that the link will not actually render as a clickable link in most Markdown
 
 Assign IDs for each prompt with a number. You can see in the example below the prompt for each store has been assigned a different numeric value.
 
-~~~qna
+````qna
 # ?store hours
 ```
 Most our stores are open M-F 9AM-10PM.
@@ -261,10 +263,8 @@ The Seattle store is open M-F 9AM-10PM.
 ```
 The Portland store is open 24/7.
 ```
-~~~
+````
 
 ## Additional Resources
 
 - See [.lu file format](bot-builder-lu-file-format.md) for information about the .lu file format.
-
-[1]:/azure/cognitive-services/qnamaker/how-to/multiturn-conversation#add-a-new-question-and-answer-pair-as-a-follow-up-prompt

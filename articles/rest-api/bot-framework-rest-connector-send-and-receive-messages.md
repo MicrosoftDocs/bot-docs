@@ -90,7 +90,7 @@ In this request URI, replace **{conversationId}** with the ID of the conversatio
 Set the body of the request to an [Activity][] object that you create to represent your reply.
 
 > [!NOTE]
-> The Bot Framework does not impose any restrictions on the number of messages that a bot may send.
+> The Bot Framework doesn't impose any restrictions on the number of messages that a bot may send.
 > However, most channels enforce throttling limits to restrict bots from sending a large number of messages in a short period of time.
 > Additionally, if the bot sends multiple messages in quick succession, the channel may not always render the messages in the proper sequence.
 

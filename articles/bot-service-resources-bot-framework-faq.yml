@@ -9,14 +9,14 @@ metadata:
   ms.reviewer: micchow
   ms.topic: faq
   ms.service: bot-service
-  ms.date: 09/08/2021
+  ms.date: 10/10/2022
 
 title: Bot Framework FAQ
 summary: |
   [!INCLUDE [applies-to-v4](./includes/applies-to-v4-current.md)]
 
   <!-- Attention writers!! When you create a new FAQ, please add the related link in the proper section below.
-  Also, notice this topic is in markdown (.md) format because being an index it is simpler to maintain.
+  Also, notice this topic is in markdown (.md) format because being an index it's simpler to maintain.
   The actual FAQs are contained in separate files that are in yaml () format. The reasons for the yaml format
   are explained in [Create FAQ content](https://review.learn.microsoft.com/help/contribute/contribute-how-to-faq-guide?branch=main).
   -->
@@ -42,11 +42,8 @@ sections:
           - [Why doesn't the Typing activity do anything?](./bot-service-resources-faq-general.yml#why-doesn-t-the-typing-activity-do-anything)
           - [What is the difference between the Connector library and Builder library in the SDK?](./bot-service-resources-faq-general.yml#what-is-the-difference-between-the-connector-library-and-builder-library-in-the-sdk)
           - [How do user messages relate to HTTPS method calls?](./bot-service-resources-faq-general.yml#how-do-user-messages-relate-to-https-method-calls)
-          - [How can I intercept all messages between the user and my bot?](./bot-service-resources-faq-general.yml#how-can-i-intercept-all-messages-between-the-user-and-my-bot)
-          - [What is the IDialogStack.Forward method in the Bot Framework SDK for .NET?](./bot-service-resources-faq-general.yml#what-is-the-idialogstack-forward-method-in-the-bot-framework-sdk-for--net)
           - [What is the difference between "proactive" and "reactive"?](./bot-service-resources-faq-general.yml#what-is-the-difference-between--proactive--and--reactive-)
           - [How can I send proactive messages to the user?](./bot-service-resources-faq-general.yml#how-can-i-send-proactive-messages-to-the-user)
-          - [How can I reference non-serializable services from my C# dialogs in SDK v3?](./bot-service-resources-faq-general.yml#how-can-i-reference-non-serializable-services-from-my-c--dialogs-in-sdk-v3)
           - [What is an ETag? How does it relate to bot data bag storage?](./bot-service-resources-faq-general.yml#what-is-an-etag---how-does-it-relate-to-bot-data-bag-storage)
           - [What is rate limiting?](./bot-service-resources-faq-general.yml#what-is-rate-limiting)
           - [How does rate limiting occur?](./bot-service-resources-faq-general.yml#how-does-rate-limiting-occur)

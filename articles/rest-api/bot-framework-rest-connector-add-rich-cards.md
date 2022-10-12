@@ -76,7 +76,7 @@ Some channels allow you to add multiple rich cards to the `attachments` array wi
 > [!TIP]
 > To display multiple rich cards in list format, set the [Activity][] object's `attachmentLayout` property to "list".
 > To display multiple rich cards in carousel format, set the `Activity` object's `attachmentLayout` property to "carousel".
-> If the channel does not support carousel format, it will display the rich cards in list format, even if the `attachmentLayout` property specifies "carousel".
+> If the channel doesn't support carousel format, it will display the rich cards in list format, even if the `attachmentLayout` property specifies "carousel".
 
 The following example shows a complete message that contains a single Hero card attachment. In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
 

@@ -53,7 +53,7 @@ HTTP/1.1 201 Created
 Typically, a start conversation request is used to open a new conversation and an **HTTP 201** status code is returned if the new conversation is successfully started. However, if a client submits a start conversation request with a Direct Line token in the `Authorization` header that has previously been used to start a conversation using the start conversation operation, an **HTTP 200** status code will be returned to indicate that the request was acceptable but no conversation was created (as it already existed).
 
 > [!TIP]
-> You have 60 seconds to connect to the WebSocket stream URL. If the connection cannot be established during this time, you can [reconnect to the conversation](bot-framework-rest-direct-line-3-0-reconnect-to-conversation.md) to generate a new stream URL.
+> You have 60 seconds to connect to the WebSocket stream URL. If the connection can't be established during this time, you can [reconnect to the conversation](bot-framework-rest-direct-line-3-0-reconnect-to-conversation.md) to generate a new stream URL.
 
 ## Start conversation versus generate token
 

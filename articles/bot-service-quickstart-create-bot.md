@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: quickstart
-ms.date: 09/13/2022
+ms.date: 10/10/2022
 ms.custom: mode-api, tab-zone-seo, abs-meta-21q1
 ---
 
@@ -53,6 +53,8 @@ The generator supports three different template options as shown below.
 | Echo Bot | A good template if you want a little more than "Hello World!", but not much more.  This template handles the very basics of sending messages to a bot, and having the bot process the messages by repeating them back to the user.  This template produces a bot that simply "echoes" back to the user anything the user says to the bot. |
 | Empty Bot | A good template if you're familiar with Bot Framework v4, and simply want a basic skeleton project.  Also a good option if you want to take sample code from the documentation and paste it into a minimal bot in order to learn. |
 | Core Bot | A good template if you want to create advanced bots, as it uses multi-turn dialogs and [LUIS](https://www.luis.ai), an AI based cognitive service, to implement language understanding. This template creates a bot that can extract places and dates to book a flight. |
+
+[!INCLUDE [luis-sunset-alert](includes/luis-sunset-alert.md)]
 
 ### Install Yeoman
 
@@ -210,9 +212,6 @@ The generator supports many command-line options you can use to change the gener
 
 Thanks to the template, your project contains all the code that's necessary to create the bot in this quickstart. You don't need any other code to test your bot.
 
-> [!NOTE]
-> If you create a `Core` bot, you'll need a LUIS language model. You can create a language model at [luis.ai](https://www.luis.ai). After creating the model, update the configuration file.
-
 > [!div class="nextstepaction"]
 > [I created an echo bot](#start-your-bot) [I ran into an issue](https://microsoft.qualtrics.com/jfe/form/SV_6D4KLPZc2jTIa2O?Product=BotSDK&Page=bot-service-quickstart-create-bot&Section=create-a-bot&PLanguage=Java)
 
@@ -235,9 +234,6 @@ Thanks to the template, your project contains all the code that's necessary to c
    ```
 
 Thanks to the template, your project contains all the code that's necessary to create the bot in this quickstart. You don't need any other code to test your bot.
-
-> [!NOTE]
-> If you create a `Core` bot, you'll need a LUIS language model. You can create a language model at [luis.ai](https://www.luis.ai). After creating the model, update the configuration file.
 
 > [!div class="nextstepaction"]
 > [I created an echo bot](#start-your-bot) [I ran into an issue](https://microsoft.qualtrics.com/jfe/form/SV_6D4KLPZc2jTIa2O?Product=BotSDK&Page=bot-service-quickstart-create-bot&Section=create-a-bot&PLanguage=Javascript)

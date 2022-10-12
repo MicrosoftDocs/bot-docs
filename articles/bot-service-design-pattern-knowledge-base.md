@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 09/01/2022
+ms.date: 10/10/2022
 ---
 
 # Design knowledge bots
@@ -112,6 +112,10 @@ The [Bot Framework Samples](https://github.com/microsoft/BotBuilder-Samples#read
 | 13     | Core bot             | Interpret the user's intent using LUIS.                                        |
 | 14     | NLP with dispatch    | Dispatch user messages to LUIS or QnA Maker using Orchestrator.                |
 | 49     | QnA Maker (advanced) | Answer questions using multi-turn and active learning features in QnA Maker.   |
+
+[!INCLUDE [qnamaker-sunset-alert](includes/qnamaker-sunset-alert.md)]
+
+[!INCLUDE [luis-sunset-alert](includes/luis-sunset-alert.md)]
 
 The [Azure SDK for .NET](https://github.com/Azure/azure-sdk-for-net#readme) and [Azure SDK for Python](https://github.com/Azure/azure-sdk-for-python#readme) repositories also have a few samples:
 

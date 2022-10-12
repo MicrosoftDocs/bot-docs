@@ -14,7 +14,7 @@ ms.date: 10/05/2020
 # About Direct Line
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
-The Bot Framework offers multiple channels with the Direct Line branding. It is important that you select the version that best fits the conversational AI experience you are designing.
+The Bot Framework offers multiple channels with the Direct Line branding. It's important that you select the version that best fits the conversational AI experience you're designing.
 
 - **Direct Line**. This is the standard channel offering of Direct Line. It works by default with bot templates via the [Azure portal](https://ms.portal.azure.com/), bots from the [Bot Builder Samples](https://github.com/Microsoft/BotBuilder-Samples/blob/main/README.md), and bots created with the [Azure CLI](/cli/azure/what-is-azure-cli). This is the Direct Line best suited in the majority of the cases. See [Connect a bot to Direct Line](bot-service-channel-connect-directline.md).
 - **Direct Line Speech**. It provides text to speech and speech to text services within the channel. It allows a client to stream audio directly to the channel which will then be converted to text and sent to the bot. The Direct Line Speech is also able to convert text messages from the bot into audio messages as spoken by a variety of A.I. powered voices. Combined, this makes Direct Line Speech capable of having audio only conversations with clients. See [Connect a bot to Direct Line Speech](bot-service-channel-connect-directlinespeech.md).

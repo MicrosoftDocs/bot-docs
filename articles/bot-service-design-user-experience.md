@@ -8,14 +8,14 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 09/01/2022
+ms.date: 10/10/2022
 ---
 
 # Design the user experience
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-You can create bots with various features such as text, buttons, images, rich cards displayed in carousel or list format, and more. However, each channel such as Facebook, Slack, etc. ultimately controls how its messaging clients render features. Even when multiple channels support a feature, each channel may render the feature in a slightly different way. In cases where a message contains feature(s) that a channel doesn't natively support, the channel may attempt to down-render message contents as text or as a static image, which can significantly impact the message's appearance on the client. In some cases, a channel may not support a particular feature at all. For example, GroupMe clients can't display a typing indicator.
+You can create bots with various features such as text, buttons, images, rich cards displayed in carousel or list format, and more. However, each channel, such as Facebook, Slack, and so on, ultimately controls how its messaging clients render features. Even when multiple channels support a feature, each channel may render the feature in a slightly different way. In cases where a message contains feature(s) that a channel doesn't natively support, the channel may attempt to down-render message contents as text or as a static image, which can significantly impact the message's appearance on the client. In some cases, a channel may not support a particular feature at all. For example, GroupMe clients can't display a typing indicator.
 
 ## Rich user controls
 
@@ -62,7 +62,7 @@ When designing your bot, don't automatically dismiss common UI elements as not b
 
 ## Text and natural language understanding
 
-A bot can accept text input from users and attempt to parse that input using regular expression matching or natural language understanding APIs, such as [LUIS](https://www.luis.ai). Depending on the type of input that the user provides, natural language understanding may or may not be a good solution.
+A bot can accept text input from users and attempt to parse that input using regular expression matching or natural language understanding APIs. Depending on the type of input that the user provides, natural language understanding may or may not be a good solution.
 
 In some cases, a bot may ask the user a specific question. For example, if the bot asks, "What is your name?", the user may answer with text that specifies only the name, "John", or with a sentence, "My name is John".
 
@@ -82,11 +82,11 @@ In other cases, a user may type a specific command. For example, a DevOps bot th
 For a _knowledge base_ or _questions and answers_ bot, a user may ask general questions. For example, imagine a bot that can answer questions based on the contents of thousands of documents. [Azure Cognitive Services](/azure/cognitive-services/) and [Azure Search](/azure/search/) are both technologies designed specifically for this type of scenario. For more information, see [Design knowledge bots](bot-service-design-pattern-knowledge-base.md) and [Language understanding](v4sdk/bot-builder-concept-luis.md).
 
 > [!TIP]
-> If you are designing a bot that will answer questions based on structured or unstructured data from
+> If you're designing a bot that will answer questions based on structured or unstructured data from
 > databases, web pages, or documents, consider using technologies designed specifically to address this
 > scenario, rather than attempting to solve the problem with natural language understanding.
 
-In other scenarios, a user may type simple requests based on natural language. For example, a user may type "I want a pepperoni pizza" or "Are there any vegetarian restaurants within 3 miles from my house open now?". Natural language understanding APIs such as [LUIS.ai](/azure/cognitive-services/luis/) are a great fit for scenarios like this.
+In other scenarios, a user may type simple requests based on natural language. For example, a user may type "I want a pepperoni pizza" or "Are there any vegetarian restaurants within 3 miles from my house open now?". Natural language understanding APIs are a great fit for scenarios like this.
 
 Using the APIs, your bot can extract the key components of the user's text to identify the user's intent. When implementing natural language understanding capabilities in your bot, set realistic expectations for the level of detail that users are likely to provide in their input.
 

@@ -21,7 +21,7 @@ If you don't currently host your bot in Azure, you can still make it available i
 This article shows how to register such a bot with Azure Bot Service.
 
 > [!IMPORTANT]
-> You only need to register a bot if it is not hosted in Azure.
+> You only need to register a bot if it's not hosted in Azure.
 > Bots created using the Azure CLI are already registered with the Azure Bot Service.
 
 [!INCLUDE [identity-app-type-support](./includes/azure-bot-resource/identity-app-type-support.md)]

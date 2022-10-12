@@ -29,4 +29,4 @@ Refer to the [Azure Bot service](../bot-service-overview-introduction.md) docs t
 
 Most channels such as Facebook, Teams, or Slack provide clients, but with Direct Line you can enable your own client application to communicate with your bot. [Web Chat](https://github.com/microsoft/BotFramework-WebChat) is an open source example of a Direct Line client, and it can be used as-is or modified or learned from when making your own client. The Direct Line API implements an authentication mechanism that uses standard secret/token patterns and provides a stable schema, even if your bot changes its protocol version. To learn more about using the Direct Line API to enable communication between a client and your bot, see [Key concepts](bot-framework-rest-direct-line-3-0-concepts.md).
 
-Direct Line clients can be in different languages and locations (e.g. a desktop app instead of a web page). For more information, see [About Direct Line](../bot-service-channel-directline.md).
+Direct Line clients can be in different languages and locations (for example, a desktop app instead of a web page). For more information, see [About Direct Line](../bot-service-channel-directline.md).

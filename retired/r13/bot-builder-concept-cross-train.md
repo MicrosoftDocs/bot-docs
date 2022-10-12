@@ -108,7 +108,7 @@ After cross training with the hotel booking .lu file, it would look like this:
 - reserve a hotel room
 ```
 
-The utterance _reserve a hotel room_ is associated with the `_interruption` intent. When the `_interruption` intent is detected, it bubbles up any utterance associated with it to its parent dialog, whose recognizer returns the `BookHotel` intent. When cross training LUIS to LUIS, you need to include all user utterances from all intents from the dialog you are cross training with.
+The utterance _reserve a hotel room_ is associated with the `_interruption` intent. When the `_interruption` intent is detected, it bubbles up any utterance associated with it to its parent dialog, whose recognizer returns the `BookHotel` intent. When cross training LUIS to LUIS, you need to include all user utterances from all intents from the dialog you're cross training with.
 
 ![Travel bot diagram after cross training](./media/adaptive-dialogs/after-cross-train.png)
 
@@ -167,7 +167,7 @@ The advantage of global interruptions in this scenario is the ability it provide
 
 ## The Bot Framework CLI cross-train command
 
-Cross training your bot can quickly become a challenging and error prone task in even a minimally complex bot, especially when you are still making frequent updates to the LUIS or QnA Maker models. The Bot Framework SDK provides a tool to automate this process. For information on the Bot Framework CLI cross-train command, refer to the _Cross-trained recognizer set_ section of the [Recognizers in adaptive dialogs - reference guide](../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md#cross-trained-recognizer-set).
+Cross training your bot can quickly become a challenging and error prone task in even a minimally complex bot, especially when you're still making frequent updates to the LUIS or QnA Maker models. The Bot Framework SDK provides a tool to automate this process. For information on the Bot Framework CLI cross-train command, refer to the _Cross-trained recognizer set_ section of the [Recognizers in adaptive dialogs - reference guide](../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md#cross-trained-recognizer-set).
 
 ## Source code updates
 

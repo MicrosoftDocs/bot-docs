@@ -196,6 +196,8 @@ The templates are:
 
 [!INCLUDE [qnamaker-sunset-alert](../includes/qnamaker-sunset-alert.md)]
 
+[!INCLUDE [luis-sunset-alert](../includes/luis-sunset-alert.md)]
+
 ## Additional information
 
 ### Managing bot resources

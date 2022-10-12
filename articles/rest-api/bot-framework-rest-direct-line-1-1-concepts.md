@@ -15,7 +15,7 @@ ms.date: 11/01/2021
 You can enable communication between your bot and your own client application by using the Direct Line API.
 
 > [!IMPORTANT]
-> This article introduces key concepts in Direct Line API 1.1 and provides information about relevant developer resources. If you are creating a new connection between your client application and bot, use [Direct Line API 3.0](bot-framework-rest-direct-line-3-0-concepts.md) instead.
+> This article introduces key concepts in Direct Line API 1.1 and provides information about relevant developer resources. If you're creating a new connection between your client application and bot, use [Direct Line API 3.0](bot-framework-rest-direct-line-3-0-concepts.md) instead.
 
 ## Authentication
 

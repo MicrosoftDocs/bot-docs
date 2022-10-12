@@ -8,13 +8,15 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 09/01/2022
+ms.date: 10/11/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
 # Add natural language understanding to your bot
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
+
+[!INCLUDE [luis-sunset-alert](../includes/luis-sunset-alert.md)]
 
 The ability to understand what your user means conversationally and contextually can be a difficult task, but can provide your bot a more natural conversation feel. _Language Understanding (LUIS)_ is a cloud-based API service that enables you to do just that so that your bot can recognize the intent of user messages, allow for more natural language from your user, and better direct the conversation flow.
 
@@ -271,12 +273,7 @@ For more about LUIS, see the LUIS documentation:
 > Different parts of the SDK define separate _entity_ classes or elements.
 > For message entities, see [Entities and activity types](../bot-service-activities-entities.md).
 
-[cs-core-bot-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot
-[js-core-bot-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot
-[java-core-bot-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/13.core-bot
-[python-core-bot-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/13.core-bot
 [sign-in-luis-portal]: /azure/cognitive-services/luis/sign-in-luis-portal
 [create-account]: https://azure.microsoft.com/services/cognitive-services/
 [conversation-apps]: https://www.luis.ai/applications
 [create-authoring-resource]: /azure/cognitive-services/luis/luis-how-to-azure-subscription
-[sign-in-to-luis-portal]: /azure/cognitive-services/luis/luis-how-to-start-new-app#sign-in-to-luis-portal

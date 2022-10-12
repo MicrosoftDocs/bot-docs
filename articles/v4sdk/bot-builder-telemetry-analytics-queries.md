@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 09/01/2022
+ms.date: 10/11/2022
 ---
 
 # Analyze your bot's telemetry data
@@ -292,19 +292,19 @@ DialogActivity("<SampleDialogId>")
 
 ##### Sample query results
 
-| **timestamp**       | **name**                   | **StepName**                    | **InstanceId**  |
-| ------------------- | -------------------------- | ------------------------------- | --------------- |
-| 2019-08-23T20:04... | WaterfallStart             | null                            | ...79c0f03d8701 |
-| 2019-08-23T20:04... | WaterfallStep              | GetPointOfInterestLocations     | ...79c0f03d8701 |
-| 2019-08-23T20:04... | WaterfallStep              | ProcessPointOfInterestSelection | ...79c0f03d8701 |
-| 2019-08-23T20:04... | WaterfallStep              | GetRoutesToDestination          | ...79c0f03d8701 |
-| 2019-08-23T20:05... | WaterfallStep              | ResponseToStartRoutePrompt      | ...79c0f03d8701 |
-| 2019-08-23T20:05... | WaterfallComplete _<sup>1</sup>_ | null                      | ...79c0f03d8701 |
-| 2019-08-28T23:35... | WaterfallStart             | null                            | ...6ac8b3211b99 |
-| 2019-08-28T23:35... | WaterfallStep _<sup>2</sup>_ | GetPointOfInterestLocations   | ...6ac8b3211b99 |
-| 2019-08-28T19:41... | WaterfallStart             | null                            | ...8137d76a5cbb |
-| 2019-08-28T19:41... | WaterfallStep _<sup>2</sup>_ | GetPointOfInterestLocations   | ...8137d76a5cbb |
-| 2019-08-28T19:41... | WaterfallStart             | null                            | ...8137d76a5cbb |
+| timestamp           | name                             | StepName                        | InstanceId      |
+|---------------------|----------------------------------|---------------------------------|-----------------|
+| 2019-08-23T20:04... | WaterfallStart                   | null                            | ...79c0f03d8701 |
+| 2019-08-23T20:04... | WaterfallStep                    | GetPointOfInterestLocations     | ...79c0f03d8701 |
+| 2019-08-23T20:04... | WaterfallStep                    | ProcessPointOfInterestSelection | ...79c0f03d8701 |
+| 2019-08-23T20:04... | WaterfallStep                    | GetRoutesToDestination          | ...79c0f03d8701 |
+| 2019-08-23T20:05... | WaterfallStep                    | ResponseToStartRoutePrompt      | ...79c0f03d8701 |
+| 2019-08-23T20:05... | WaterfallComplete _<sup>1</sup>_ | null                            | ...79c0f03d8701 |
+| 2019-08-28T23:35... | WaterfallStart                   | null                            | ...6ac8b3211b99 |
+| 2019-08-28T23:35... | WaterfallStep _<sup>2</sup>_     | GetPointOfInterestLocations     | ...6ac8b3211b99 |
+| 2019-08-28T19:41... | WaterfallStart                   | null                            | ...8137d76a5cbb |
+| 2019-08-28T19:41... | WaterfallStep _<sup>2</sup>_     | GetPointOfInterestLocations     | ...8137d76a5cbb |
+| 2019-08-28T19:41... | WaterfallStart                   | null                            | ...8137d76a5cbb |
 
 <sub>1</sub> _Completed_
 
@@ -313,7 +313,7 @@ DialogActivity("<SampleDialogId>")
 _Interpretation: Users seem to abandon the conversation at the GetPointOfInterestLocations step._
 
 > [!NOTE]
-> Waterfall dialogs execute a sequence (start, multiple steps, complete). If a sequence shows start with no complete, it means the dialog was interrupted either due to user abandoning or canceling the dialog. In this detailed analysis, one can see this behavior (see completed vs. abandoned steps).
+> Waterfall dialogs execute a sequence (start, multiple steps, complete). If a sequence shows start with no complete, it means the dialog was interrupted either due to user abandoning or canceling the dialog. In this detailed analysis, one can see this behavior (see completed versus abandoned steps).
 
 #### Waterfall start/step/complete/cancel steps aggregate totals
 
@@ -445,7 +445,7 @@ customEvents
 > You may want to consider trying these variations:
 >
 > * Run the query without the timestamp bucketing: `bin(timestamp, groupByInterval)`.
-> * You can also use `dcount` for distinct users vs `count` for all user event activities.  This also works for repeat users.
+> * You can also use `dcount` for distinct users and `count` for all user event activities. This also works for repeat users.
 
 #### Sample channel-activity-by-activity query results
 
@@ -456,6 +456,8 @@ customEvents
 ### Total Intents by popularity
 
 This example applies to LUIS enabled bots. It shows a summary of all intents by popularity, and corresponding intent detection certainty score.
+
+[!INCLUDE [luis-sunset-alert](../includes/luis-sunset-alert.md)]
 
 * In practice, the view should be separated for each metric.
 * Popular intent paths should be optimized for user experience.
@@ -506,6 +508,10 @@ Common log analytics fields in Application Insights instrumentation.
 | client_IP        | Client ip address      | 127.0.0.1 (may be absent due to privacy block)               |
 | client_City      | Client city            | Redmond (if detected, may be absent)                         |
 
+[!INCLUDE [qnamaker-sunset-alert](../includes/qnamaker-sunset-alert.md)]
+
+[!INCLUDE [luis-sunset-alert](../includes/luis-sunset-alert.md)]
+
 ### Custom Dimensions
 
 Most of bot specific activity data is stored in _customDimensions_ field.
@@ -524,6 +530,8 @@ Most of bot specific activity data is stored in _customDimensions_ field.
 
 ### Custom Dimensions: LUIS
 
+[!INCLUDE [luis-sunset-alert](../includes/luis-sunset-alert.md)]
+
 LUIS instrumentation stores its data in the following Custom Dimensions fields.
 
 | **Field**      | **Description**         | **Sample Values**                                       |
@@ -535,6 +543,8 @@ LUIS instrumentation stores its data in the following Custom Dimensions fields.
 | sentimentLabel | LUIS detected sentiment | positive                                                |
 
 ### Custom Dimensions: QnAMaker
+
+[!INCLUDE [qnamaker-sunset-alert](../includes/qnamaker-sunset-alert.md)]
 
 QnAMaker instrumentation stores its data in the following Custom Dimensions fields.
 

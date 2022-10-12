@@ -23,7 +23,7 @@ This article provides technical details that will help you work with memory scop
 
 ## User scope
 
-User scope is persistent data scoped to the ID of the user you are conversing with.  
+User scope is persistent data scoped to the ID of the user you're conversing with.  
 
 Examples:
 
@@ -32,7 +32,7 @@ Examples:
 
 ## Conversation scope
 
-Conversation scope is persistent data scoped to the ID of the conversation you are having.  
+Conversation scope is persistent data scoped to the ID of the conversation you're having.  
 
 Examples:
 
@@ -51,11 +51,11 @@ Dialog scope shorthand examples:
 - The shorthand for `dialog.orderStarted` is `$orderStarted`.
 - The shorthand for `dialog.shoppingCart` is `$shoppingCart`.
 
-All options passed into `BeginDialog` when creating a new adaptive dialog become properties of that dialog and can be accessed as long as it is in scope. You access these properties by name: dialog.\<propertyName>. For example, if the caller passed {a : '1', b: '2'} then they will be set as dialog.a and dialog.b.
+All options passed into `BeginDialog` when creating a new adaptive dialog become properties of that dialog and can be accessed as long as it's in scope. You access these properties by name: dialog.\<propertyName>. For example, if the caller passed {a : '1', b: '2'} then they'll be set as dialog.a and dialog.b.
 
-### Dialog sub-scopes
+### Dialog subscopes
 
-All trigger actions in an adaptive dialog have their own sub-scopes and are accessed by name, for example the `Foreach` action is accessed as `dialog.Foreach`. By default, the index and value are set in the `dialog.foreach` scope, which can be accessed as `dialog.Foreach.index` and `dialog.Foreach.value`.
+All trigger actions in an adaptive dialog have their own subscopes and are accessed by name. For example, the `Foreach` action is accessed as `dialog.Foreach`. By default, the index and value are set in the `dialog.foreach` scope, which can be accessed as `dialog.Foreach.index` and `dialog.Foreach.value`.
 
 ## Turn scope
 
@@ -66,7 +66,7 @@ Examples:
 - `turn.bookingConfirmation`
 - `turn.activityProcessed`
 
-### Turn sub-scopes
+### Turn subscopes
 
 #### turn.activity
 
@@ -88,7 +88,7 @@ All intents and entities returned from a [recognizer][recognizers] on any given 
 
 #### turn.dialogEvent
 
-`turn.dialogEvent` contains the payload of an event raised either by the system or your code. You can access the information contained in the payload by accessing the turn.dialogEvent.\<eventName\>.value scope.
+`turn.dialogEvent` contains the payload of an event raised either by the system or your code. You can access the information contained in the payload by accessing the `turn.dialogEvent.<eventName>.value` scope.
 
 #### turn.lastResult
 
@@ -96,7 +96,7 @@ All intents and entities returned from a [recognizer][recognizers] on any given 
 
 #### turn.activityProcessed
 
-`turn.activityProcessed`, a boolean property which if set means that `turnContext.activity` has been consumed by some component in the system.
+`turn.activityProcessed`, a Boolean property; `true` indicates that the `turnContext.activity` has been consumed by some component in the system.
 
 #### turn.interrupted
 
@@ -104,7 +104,7 @@ All intents and entities returned from a [recognizer][recognizers] on any given 
 
 ## Settings scope
 
-This represents any settings that are made available to the bot via the platform specific settings configuration system, for example if you are developing your bot using C#, these settings will appear in the appsettings.json file<!--, if you are developing your bot using JavaScript, these settings will appear in the .env file or the config.py file when developing with Python. Additionally, some settings are contained in the dynamic environment settings in Azure, all are available in the settings scope-->.
+This represents any settings that are made available to the bot via the platform specific settings configuration system, for example if you're developing your bot using C#, these settings will appear in the appsettings.json file<!--, if you're developing your bot using JavaScript, these settings will appear in the .env file or the config.py file when developing with Python. Additionally, some settings are contained in the dynamic environment settings in Azure, all are available in the settings scope-->.
 
 ### Settings scope example
 <!--TODO P2: rewrite this with language tabs for C#/JS. -->
@@ -138,6 +138,5 @@ This holds the instance properties of the active dialog. you reference this scop
 - For an introduction to managing state in Composer, see the [Conversation flow and memory][managing-state] Composer concept article.
 
 [managing-state]: /composer/concept-memory
-[foreach-action]: ./adaptive-dialog-prebuilt-actions.md#foreach
 [botframework-activity]: https://github.com/microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md
 [recognizers]: ../v4sdk/bot-builder-concept-adaptive-dialog-recognizers.md

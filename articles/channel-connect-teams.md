@@ -51,7 +51,7 @@ Bots in production should be added to Teams as part of a Teams app. For more inf
 > [!TIP]
 > Use one bot channel registration per environment, since your endpoint changes when you switch between local development, staging, and production environments.
 >
-> Deleting the Teams channel registration will cause a new pair of keys to be generated when it is re-enabled. This invalidates all 29:xxx and a:xxx IDs that the bot may have stored for proactive messaging.
+> Deleting the Teams channel registration will cause a new pair of keys to be generated when it's re-enabled. This invalidates all 29:xxx and a:xxx IDs that the bot may have stored for proactive messaging.
 
 ## Publish your bot in Teams
 

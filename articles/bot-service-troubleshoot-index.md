@@ -46,7 +46,7 @@ In case you don't find the answer you're looking for, you can post your question
 ## Configuration
 
 - [Test in Web Chat](bot-service-troubleshoot-bot-configuration.md#test-in-web-chat)
-- [Bot does not work in Web Chat](bot-service-troubleshoot-bot-configuration.md#bot-does-not-work-in-web-chat)
+- [Bot doesn't work in Web Chat](bot-service-troubleshoot-bot-configuration.md#bot-does-not-work-in-web-chat)
 - [Bot works in Web Chat but not in other channels](bot-service-troubleshoot-bot-configuration.md#bot-works-in-web-chat-but-not-in-other-channels)
   - [Channel configuration issues](bot-service-troubleshoot-bot-configuration.md#channel-configuration-issues)
   - [Channel-specific behavior](bot-service-troubleshoot-bot-configuration.md#channel-specific-behavior)

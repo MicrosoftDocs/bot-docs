@@ -5,12 +5,12 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: include
-ms.date: 03/03/2022
+ms.date: 10/11/2022
 ---
 
 > [!IMPORTANT]
 > Python bots can't be deployed to a resource group that contains Windows services or bots.
-> Multiple Python bots can be deployed to the same resource group; however, you need to create other services (LUIS, QnA, and so on) in another resource group.
+> Multiple Python bots can be deployed to the same resource group; however, you need to create other services (such as Cognitive Services) in another resource group.
 
 ### [User-assigned managed identity](#tab/userassigned)
 

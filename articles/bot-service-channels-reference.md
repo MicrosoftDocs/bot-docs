@@ -52,7 +52,7 @@ See the [Bot Framework activity schema](https://github.com/Microsoft/botframewor
 | `conversationUpdate`    | &#x2714;    | &#x2714;               | &#x274c; | &#x2753; | &#x2714; | &#x2714; | &#x2714; | &#x274c; | &#x274c;       | &#x2714; | &#x274c; |
 | `contactRelationUpdate` | &#x274c;    | &#x274c;               | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x2714; | &#x2714;       | &#x274c; | &#x274c; |
 
-- It is common for channels to send conversation update activities.
+- It's common for channels to send conversation update activities.
 - The main types of conversation updates are conversation members added and members removed.
 - Some channels send the conversation update when the bot is added to a conversation, and some send it after the first message sent to the bot.
 - To produce a reliable _Welcome_ behavior, include user state in your bots welcome logic.

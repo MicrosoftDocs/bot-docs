@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 09/01/2022
+ms.date: 10/11/2022
 monikerRange: 'azure-bot-service-4.0'
 
 ROBOTS: NOINDEX
@@ -225,7 +225,7 @@ The QnA Maker dialog supports explicit feedback for the active learning feature.
 
 ## Next steps
 
-QnA Maker can be combined with other Cognitive Services, to make your bot even more powerful. The Dispatch tool provides a way to combine QnA with Language Understanding (LUIS) in your bot.
+QnA Maker can be combined with other Cognitive Services, to make your bot even more powerful. Bot Framework Orchestrator provides a way to combine QnA with Language Understanding (LUIS) in your bot.
 
 > [!div class="nextstepaction"]
 > [Use Orchestrator for intent resolution](./bot-builder-tutorial-orchestrator.md)

@@ -13,7 +13,7 @@ ms.date: 11/01/2021
 # Receive messages from the bot in Direct Line API 1.1
 
 > [!IMPORTANT]
-> This article describes how to receive messages from the bot using Direct Line API 1.1. If you are creating a new connection between your client application and bot, use [Direct Line API 3.0](bot-framework-rest-direct-line-3-0-receive-activities.md) instead.
+> This article describes how to receive messages from the bot using Direct Line API 1.1. If you're creating a new connection between your client application and bot, use [Direct Line API 3.0](bot-framework-rest-direct-line-3-0-receive-activities.md) instead.
 
 Using the Direct Line 1.1 protocol, clients must poll an `HTTP GET` interface to receive messages.
 

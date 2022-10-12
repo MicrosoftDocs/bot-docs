@@ -1,12 +1,12 @@
-1.	Prefer the active voice as much as possible.
-2.	Don't use the “ -- “ convention. Prefer a terminal and second sentence.
-3.	Don't use (ex. "sample"). Prefer either ", e.g. ," or separate into another sentence, as appropriate.
-4.	Prefer ### and #### to define sections over bullet points.
-5.	Prefer concise terms instead of prolix ones, e.g., "to" instead of "in order to". Avoid filler language like “not the least of which."
-6.	Prefer one space after the period, not two.
-7.	Avoid using the first person. Exceptions are articles that are guiding the user and showing empathy, such as the Get Started articles.
-8.	Prefer "comprises" instead of "comprised of."
-9.	Prefer separation of sentences rather than parentheticals. If a concept is not a complete thought, remove it or rewrite it.
+1. Prefer the active voice as much as possible.
+2. Don't use the " -- " convention. Prefer a terminal and second sentence.
+3. Don't use (ex. "sample"). Prefer either ", e.g. ," or separate into another sentence, as appropriate.
+4. Prefer ### and #### to define sections over bullet points.
+5. Prefer concise terms instead of prolix ones, e.g., "to" instead of "in order to". Avoid filler language like "not the least of which."
+6. Prefer one space after the period, not two.
+7. Avoid using the first person. Exceptions are articles that are guiding the user and showing empathy, such as the Get Started articles.
+8. Prefer "comprises" instead of "comprised of."
+9. Prefer separation of sentences rather than parentheticals. If a concept is not a complete thought, remove it or rewrite it.
 10. Put code in backtick, e.g., `ExampleMethod`.
 11. Prefer *this* over *the following* when the item follows the text. The exceptions are lists, tables, and code blocks.
 12. Avoid words like "thus," "thereby," "wherein," "heretofor," and so on. If your docs read like a patent application, it's time to edit.

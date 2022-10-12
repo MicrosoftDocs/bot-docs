@@ -17,7 +17,7 @@ ms.date: 09/01/2021
 
 Single sign on (SSO) allows a client, such as a Web Chat control, to communicate with a bot on behalf of the user. Currently, only the [Azure AD v2](~/v4sdk/bot-builder-concept-identity-providers.md#azure-active-directory-identity-provider) identity provider is supported.
 
-Typically, a Web Chat is embedded in a website page. When the user sign on the website, the Web Chat invokes a bot on behalf of the user. The website client's token, based on the user's credentials, is exchanged for a different one to access the bot. In this way, the user does not have to sign on twice; the first time on the website, and the second time on the bot, hence the term SSO.
+Typically, a Web Chat is embedded in a website page. When the user sign on the website, the Web Chat invokes a bot on behalf of the user. The website client's token, based on the user's credentials, is exchanged for a different one to access the bot. In this way, the user doesn't have to sign on twice; the first time on the website, and the second time on the bot, hence the term SSO.
 
 The following diagram shows the SSO flow when using a Web Chat client.
 
@@ -64,6 +64,6 @@ Let's analyze the flow.
     }
     ```
 
-1. If the `TokenExchangeInvokeResponse` has a `status` of `200`, then the Web Chat does not show the OAuth card. For any other `status` or if the `TokenExchangeInvokeResponse` is not received, then the Web Chat shows the OAuth card to the user. This ensures that the SSO flow falls back to normal OAuthCard flow, in case of any errors or unmet dependencies like user consent.
+1. If the `TokenExchangeInvokeResponse` has a `status` of `200`, then the Web Chat doesn't show the OAuth card. For any other `status` or if the `TokenExchangeInvokeResponse` is not received, then the Web Chat shows the OAuth card to the user. This ensures that the SSO flow falls back to normal OAuthCard flow, in case of any errors or unmet dependencies like user consent.
 
 For an implementation example, please refer to this [SSO sample](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/07.advanced-web-chat-apps/e.sso-on-behalf-of-authentication).

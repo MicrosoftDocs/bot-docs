@@ -28,7 +28,7 @@ When you build a conversation flow that prompts for user input, you need to deci
 
 ## Building a conversational flow
 
-Suppose you are building a bot to take orders for a local coffee shop.  You might build a conversational flow that looks something like this:
+Suppose you're building a bot to take orders for a local coffee shop.  You might build a conversational flow that looks something like this:
 
 > **User**: I'd like to order a coffee.
 >

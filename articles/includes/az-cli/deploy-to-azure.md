@@ -8,7 +8,7 @@ ms.topic: include
 ms.date: 03/03/2022
 ---
 
-At this point, you are ready to deploy code for your bot to your App Service resource.
+At this point, you're ready to deploy code for your bot to your App Service resource.
 
 > [!NOTE]
 > This step can take a few minutes to complete.

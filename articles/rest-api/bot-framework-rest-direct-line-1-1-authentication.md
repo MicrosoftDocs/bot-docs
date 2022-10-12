@@ -13,7 +13,7 @@ ms.date: 11/01/2021
 # Authentication in Direct Line API 1.1
 
 > [!IMPORTANT]
-> This article describes authentication in Direct Line API 1.1. If you are creating a new connection between your client application and bot, use [Direct Line API 3.0](bot-framework-rest-direct-line-3-0-authentication.md) instead.
+> This article describes authentication in Direct Line API 1.1. If you're creating a new connection between your client application and bot, use [Direct Line API 3.0](bot-framework-rest-direct-line-3-0-authentication.md) instead.
 
 A client can authenticate requests to Direct Line API 1.1 either by using a *secret* that you [obtain from the Direct Line channel configuration page](../bot-service-channel-connect-directline.md) in the Bot Framework Portal or by using a *token* that you obtain at runtime.
 

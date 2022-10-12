@@ -138,7 +138,7 @@ Use include Markdown files *only if their content need to be repeated in multipl
 
 ### How to remove unused include files?
 
-When building your PR, you may notice that some include files do not have a *View* link. It's likely that they are not used anymore and have not been deleted from the repository.
+When building your PR, you may notice that some include files do not have a *View* link. It's likely that they are not used anymore and haven't been deleted from the repository.
 
 ![unused include files](media/contributor-guide-faqs/unused-include-files.png)
 

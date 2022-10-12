@@ -258,7 +258,7 @@ See notes for [Azure Resource Manager](#azure-resource-manager).
 
 - **Status**: Informal.
 - **Definition**: "Bots provide an experience that feels less like using a computer and more like dealing with a person - or at least an intelligent robot."
-- **Notes**: As a generic term, a _bot_ could also refer to a bot developed for another platform using a differ framework. If needed, qualify when you are talking about a bot developed using the Bot Framework SDK (or Composer).
+- **Notes**: As a generic term, a _bot_ could also refer to a bot developed for another platform using a differ framework. If needed, qualify when you're talking about a bot developed using the Bot Framework SDK (or Composer).
 - **See**: [What is a bot?](https://learn.microsoft.com/azure/bot-service/bot-service-overview-introduction#what-is-a-bot) in the SDK **What is the Bot Framework SDK?** article.
 - **See also**: [bot service](#bot-service), [Azure Bot Service](#azure-bot-service).
 

@@ -283,7 +283,7 @@ Note that this style of composition can only exists at the root level. If there 
 There are two prebuilt functions used to externally reference files
 
 1. `fromFile(fileAbsoluteOrRelativePath)` loads a specified file. Content returned by this function will support evaluation of content.Template references and properties/ expressions are evaluated.
-2. `ActivityAttachment(content, contentType)` sets the `contentType` if it is not already specified in the content.
+2. `ActivityAttachment(content, contentType)` sets the `contentType` if it's not already specified in the content.
 
 With these two prebuilt functions, you can pull in any externally defined content, including all card types. Use the following structured LG to compose an activity:
 
@@ -317,7 +317,7 @@ You can also use attachments, seen below:
 
 <!--
 ## Chatdown style content as structured activity template
-It is a natural extension to also define full [chatdown][1] style templates using the structured template definition capability. This helps eliminate the need to always define chatdown style cards in a multi-line definition
+It's a natural extension to also define full [chatdown][1] style templates using the structured template definition capability. This helps eliminate the need to always define chatdown style cards in a multi-line definition
 
 ### Existing chatdown style constructs supported
 1. Typing

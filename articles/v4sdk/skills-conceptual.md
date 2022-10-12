@@ -37,7 +37,7 @@ The skills feature is designed so that:
 - A skill consumer can consume multiple skills.
 - A skill consumer can consume a skill regardless of the language used to implement the skill. For example, a C# bot can consume a skill implemented using Python.
 - A skill can also be a skill consumer and call other skills.
-- Skills support user authentication; however, user authentication is local to the skill and cannot be transferred to another bot.
+- Skills support user authentication; however, user authentication is local to the skill and can't be transferred to another bot.
 - Skills can work with both the Bot Framework adapter and custom adapters.
 
 This diagram shows some of the possible permutations.
@@ -115,7 +115,7 @@ The user-root conversation is different than the root-skill conversation.
 The _conversation ID factory_ helps to manage traffic between a skill consumer and a skill. The factory translates between the ID of the conversation the root has with the user and the one it has with the skill.
 In other words, it generates a conversation ID for use between the root and the skill, and recovers the original user-root conversation ID from the root-skill conversation ID.
 
-<!-- Hopefully, this just gets folded into the SDK and does not need to get described in detail.
+<!-- Hopefully, this just gets folded into the SDK and doesn't need to get described in detail.
 - The host needs to save or encode original conversation ID and service URL and create a conversation ID for use between it and the skill.
   - Generated conversation IDs must be usable as a URL path parameter.
   - A modified activity gets the new conversation ID and service URL (of the host, as the host provides a channel interface to the skill).

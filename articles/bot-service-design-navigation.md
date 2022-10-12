@@ -58,7 +58,7 @@ Consider the following scenario:
 Although you may be tempted to design every dialog within your bot to listen for, and respond appropriately to, certain keywords, this approach isn't recommended.
 
 > [!TIP]
-> _Do_: Implement [middleware](v4sdk/bot-builder-create-middleware.md) that will examine user input for the keywords that you specify (ex: "help", "cancel", "start over", etc.) and respond appropriately.
+> _Do_: Implement [middleware](v4sdk/bot-builder-create-middleware.md) that will examine user input for the keywords that you specify (ex: "help", "cancel", "start over", and so on) and respond appropriately.
 >
 > _Don't_: Design every dialog to examine user input for a list of keywords.
 

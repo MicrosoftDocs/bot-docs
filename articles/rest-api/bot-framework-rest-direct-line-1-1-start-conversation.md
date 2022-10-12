@@ -13,7 +13,7 @@ ms.date: 11/01/2021
 # Start a conversation in Direct Line API 1.1
 
 > [!IMPORTANT]
-> This article describes how to start a conversation using Direct Line API 1.1. If you are creating a new connection between your client application and bot, use [Direct Line API 3.0](bot-framework-rest-direct-line-3-0-start-conversation.md) instead.
+> This article describes how to start a conversation using Direct Line API 1.1. If you're creating a new connection between your client application and bot, use [Direct Line API 3.0](bot-framework-rest-direct-line-3-0-start-conversation.md) instead.
 
 Direct Line conversations are explicitly opened by clients and may run as long as the bot and client participate and have valid credentials. While the conversation is open, both the bot and client may send messages. More than one client may connect to a given conversation and each client may participate on behalf of multiple users.
 

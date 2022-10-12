@@ -34,7 +34,7 @@ When you create an Azure Bot resource via the portal, Azure generates an _app ID
 You can use Key Vault with Azure Bot Service. For information, see [Configure the web app to connect to Key Vault](/azure/key-vault/general/tutorial-net-create-vault-azure-web-app#configure-the-web-app-to-connect-to-key-vault). For an example on how to store and retrieve secrets with Key Vault, see [Quickstart: Azure Key Vault secret client library for .NET (SDK v4)](/azure/key-vault/secrets/quick-create-net).
 
 > [!IMPORTANT]
-> The Azure Bot Service team cannot recover a customer-managed encryption key bot without access to the key.
+> The Azure Bot Service team can't recover a customer-managed encryption key bot without access to the key.
 
 ## What data is encrypted?
 

@@ -177,7 +177,7 @@ Resolve the path using `path.join()` and use the `Templates` constant to parse t
 const lgFile = Templates.parseFile(path.join(__dirname, 'rootDialog.lg'));
 ```
 
-By joining the path you ensure that you are calling the correct template files for your bot.
+By joining the path you ensure that you're calling the correct template files for your bot.
 
 Now you can create the `TemplateEngineLanguageGenerator` to manage the templates in **rootDialog.lg**:
 

@@ -85,7 +85,7 @@ The **config.py** file specifies the configuration information for your bot, suc
 To function as a web app, your bot needs to create a web service, bot adapter, and bot object.
 
 For most bots, you would also create storage layer and memory management objects for the bot.
-However, the echo bot does not need to persist state between turns.
+However, the echo bot doesn't need to persist state between turns.
 And for some bots, you may need to create other objects that the bot object or adapter will require.
 
 ### [C#](#tab/csharp)
@@ -115,7 +115,7 @@ In aiohttp, you set up the web service and the objects it needs in the **app.py*
 The template implements a web service with a messaging endpoint.
 When it receives a request, the service extracts the authentication header and request payload and forwards them to the adapter.
 
-The C# and JavaScript SDKs support streaming connections. While the echo bot does not use any of the streaming features, the adapter in the C# and JavaScript templates is designed to support them.
+The C# and JavaScript SDKs support streaming connections. While the echo bot doesn't use any of the streaming features, the adapter in the C# and JavaScript templates is designed to support them.
 
 Each incoming request represents the start of a new turn.
 

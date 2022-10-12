@@ -18,7 +18,7 @@ Likewise, when the Connector service sends a request to your bot, it must includ
 This article describes the authentication technologies and requirements for the service-level authentication that takes place between a bot and the Bot Connector service. If you're writing your own authentication code, you must implement the security procedures described in this article to enable your bot to exchange messages with the Bot Connector service.
 
 > [!IMPORTANT]
-> If you're writing your own authentication code, it is critical that you implement all security procedures correctly.
+> If you're writing your own authentication code, it's critical that you implement all security procedures correctly.
 > By implementing all steps in this article, you can mitigate the risk of an attacker being able to read messages that
 > are sent to your bot, send messages that impersonate your bot, and steal secret keys.
 
@@ -35,7 +35,7 @@ Four authentication technologies are used to establish trust between a bot and t
 | **JSON Web Token (JWT)** | JSON Web Tokens are used to encode tokens that are sent to and from the bot. **Clients should fully verify all JWT tokens that they receive**, according to the requirements outlined in this article. |
 | **OpenID metadata** | The Bot Connector service publishes a list of valid tokens that it uses to sign its own JWT tokens to OpenID metadata at a well-known, static endpoint. |
 
-This article describes how to use these technologies via standard HTTPS and JSON. No special SDKs are required, although you may find that helpers for OpenID etc. are useful.
+This article describes how to use these technologies via standard HTTPS and JSON. No special SDKs are required, although you may find that helpers for OpenID and others are useful.
 
 ## <a id="bot-to-connector"></a> Authenticate requests from your bot to the Bot Connector service
 
@@ -54,7 +54,7 @@ To get and use a JWT token for your bot:
 ### Step 1: Request an access token from the Azure AD v2 account login service
 
 > [!IMPORTANT]
-> If you have not already done so, you must [register your bot](../bot-service-quickstart-registration.md) with the Bot Framework to obtain its AppID and password. You need the bot's App ID and password to request an access token.
+> If you haven't already done so, you must [register your bot](../bot-service-quickstart-registration.md) with the Bot Framework to obtain its AppID and password. You need the bot's App ID and password to request an access token.
 
 Your bot identity can be managed in Azure in a few different ways.
 
@@ -226,7 +226,7 @@ The `endorsements` property within each key contains one or more endorsement str
 
 To verify the authenticity of the token that was sent by the Bot Connector service, you must extract the token from the `Authorization` header of the request, parse the token, verify its contents, and verify its signature.
 
-JWT parsing libraries are available for many platforms and most implement secure and reliable parsing for JWT tokens, although you must typically configure these libraries to require that certain characteristics of the token (its issuer, audience, etc.) contain correct values.
+JWT parsing libraries are available for many platforms and most implement secure and reliable parsing for JWT tokens, although you must typically configure these libraries to require that certain characteristics of the token (its issuer, audience, and so on) contain correct values.
 When parsing the token, you must configure the parsing library or write your own validation to ensure the token meets these requirements:
 
 1. The token was sent in the HTTP `Authorization` header with "Bearer" scheme.
@@ -274,7 +274,7 @@ payload:
 
 ## <a id="emulator-to-bot"></a> Authenticate requests from the Bot Framework Emulator to your bot
 
-The [Bot Framework Emulator](../bot-service-debug-emulator.md) is a desktop tool that you can use to test the functionality of your bot. Although the Bot Framework Emulator uses the same [authentication technologies](#authentication-technologies) as described above, it is unable to impersonate the real Bot Connector service.
+The [Bot Framework Emulator](../bot-service-debug-emulator.md) is a desktop tool that you can use to test the functionality of your bot. Although the Bot Framework Emulator uses the same [authentication technologies](#authentication-technologies) as described above, it's unable to impersonate the real Bot Connector service.
 Instead, it uses the Microsoft App ID and Microsoft App Password that you specify when you connect the Emulator to your bot to create tokens that are identical to those that the bot creates.
 When the Emulator sends a request to your bot, it specifies the JWT token in the `Authorization` header of the request&mdash;in essence, using the bot's own credentials to authenticate the request.
 
@@ -324,7 +324,7 @@ The response body specifies the document in the [JWK format](https://tools.ietf.
 
 To verify the authenticity of the token that was sent by the Emulator, you must extract the token from the `Authorization` header of the request, parse the token, verify its contents, and verify its signature.
 
-JWT parsing libraries are available for many platforms and most implement secure and reliable parsing for JWT tokens, although you must typically configure these libraries to require that certain characteristics of the token (its issuer, audience, etc.) contain correct values.
+JWT parsing libraries are available for many platforms and most implement secure and reliable parsing for JWT tokens, although you must typically configure these libraries to require that certain characteristics of the token (its issuer, audience, and so on) contain correct values.
 When parsing the token, you must configure the parsing library or write your own validation to ensure the token meets these requirements:
 
 1. The token was sent in the HTTP `Authorization` header with "Bearer" scheme.

@@ -14,7 +14,7 @@ ms.date: 11/01/2021
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-Bots are more and more prevalent in key business areas like financial services, retail, travel, and so on. A bot might collect very sensitive data such as credit cards, SSN, bank accounts, and other personal information. So, it is important that bots are secure and protect against common threats and vulnerabilities.
+Bots are more and more prevalent in key business areas like financial services, retail, travel, and so on. A bot might collect very sensitive data such as credit cards, SSN, bank accounts, and other personal information. So, it's important that bots are secure and protect against common threats and vulnerabilities.
 
 You can take some standard preventative measures to improve your bot's security. Some security measures are similar to the ones used in other software systems, while some are specific to the Bot Framework. For the latter, refer to the [Azure Security Benchmark](../security-baseline.md). The benchmark provides recommendations on how you can secure your cloud solutions on Azure.
 
@@ -43,7 +43,7 @@ To exchange data on the wire any secure system must use the **HTTPS** protocol, 
 
 ### Self-destructing messages
 
-Permanently delete any sensitive data as soon as it is no longer needed, usually after the message exchange ends, or after a certain amount of time. This can include personally-identifying information, IDs, PINs, passwords, security questions and answers, and so so.
+Permanently delete any sensitive data as soon as it's no longer needed, usually after the message exchange ends, or after a certain amount of time. This can include personally-identifying information, IDs, PINs, passwords, security questions and answers, and so so.
 
 ### Data storage
 
@@ -58,13 +58,13 @@ Some common security techniques are listed below.
 
 #### Database hardening
 
-- Make sure that the database is still supported by the vendor, and you are running the latest version of the database with all the security patches installed to remove known vulnerabilities.
+- Make sure that the database is still supported by the vendor, and you're running the latest version of the database with all the security patches installed to remove known vulnerabilities.
 - Uninstall or disable any features or services that you don't need and make sure you change the passwords of any default accounts from their default values; or better, delete any default accounts that you don't need.
 - Make sure that all the database security controls provided by the database are enabled, unless there is a specific reason for any to be disabled.
 
 #### Minimize valuable information
 
-- Make sure that you are not storing any confidential information that doesn't need to be in the database.
+- Make sure that you're not storing any confidential information that doesn't need to be in the database.
 - Data retained for compliance or other purposes can be moved to more secure storage, perhaps offline, which is less susceptible to database security threats.
 - Make sure to delete any history files that are written by a server during the original installation procedure. If the installation is successful these files have no value but can contain information that can potentially be exploited.
 
@@ -85,7 +85,7 @@ The following guidelines describe the Bot Framework best practice security measu
 The Bot Connector service natively uses HTTPS to exchange messages between a bot and channels (users). the Bot Framework SDK automates basic bot-to-channel authentication for you.
 
 > [!WARNING]
-> If you are writing your own authentication code, it is critical that you implement all security procedures correctly. By implementing all steps described in the [Authentication](~/rest-api/bot-framework-rest-connector-authentication.md) article, you can mitigate the risk of an attacker being able to read messages that are sent to your bot, send messages that impersonate your bot, and steal secret keys.
+> If you're writing your own authentication code, it's critical that you implement all security procedures correctly. By implementing all steps described in the [Authentication](~/rest-api/bot-framework-rest-connector-authentication.md) article, you can mitigate the risk of an attacker being able to read messages that are sent to your bot, send messages that impersonate your bot, and steal secret keys.
 
 ### User authentication
 

@@ -33,7 +33,7 @@ Impersonation refers to the action of an attacker who makes the bot think that t
 
     > [!NOTE]
     > Direct Line creates a _token_ based on the Direct Line secret and embeds the `User.Id` in the token.
-    > It assures that the messages sent to the bot have that `User.Id` as the activity's `From.Id`. If a client sends a message to Direct Line having a different `From.Id`, it will be changed to the _ID embedded in the token_ before forwarding the message to the bot. So you cannot use another user ID after a channel secret is initialized with that ID.
+    > It assures that the messages sent to the bot have that `User.Id` as the activity's `From.Id`. If a client sends a message to Direct Line having a different `From.Id`, it will be changed to the _ID embedded in the token_ before forwarding the message to the bot. So you can't use another user ID after a channel secret is initialized with that ID.
 
     This feature requires the user ID to start with `dl_` as shown below.
 

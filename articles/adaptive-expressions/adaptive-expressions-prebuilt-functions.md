@@ -1035,7 +1035,7 @@ Expected return values:
 
 - If all items are lists, a list will be returned.
 - If there exists an item that is not a list, a string will be returned.
-- If a value is null, it is skipped and not concatenated.
+- If a value is null, it's skipped and not concatenated.
 
 *Example*
 
@@ -1921,7 +1921,7 @@ And returns the result **[1, 2, [3, 4], [5, 6]]**.
 
 ### float
 
-Convert the string version of a floating-point number to a floating-point number. You can use this function only when passing custom parameters to an app, such as a logic app. An exception will be thrown if the string cannot be converted to a float.
+Convert the string version of a floating-point number to a floating-point number. You can use this function only when passing custom parameters to an app, such as a logic app. An exception will be thrown if the string can't be converted to a float.
 
 ```
 float('<value>')
@@ -2727,7 +2727,7 @@ And returns the result **1**.
 
 ### indicesAndValues
 
-Turn an array or object into an array of objects with index (current index) and value properties. For arrays, the index is the position in the array.  For objects, it is the key for the value.
+Turn an array or object into an array of objects with index (current index) and value properties. For arrays, the index is the position in the array.  For objects, it's the key for the value.
 
 ```
 indicesAndValues('<collection or object>')
@@ -2828,7 +2828,7 @@ And returns a new object:
 
 ### int
 
-Return the integer version of a string. An exception will be thrown if the string cannot be converted to an integer.
+Return the integer version of a string. An exception will be thrown if the string can't be converted to an integer.
 
 ```
 int('<value>')
@@ -2902,7 +2902,7 @@ isArray('<input>')
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*Boolean-result*> | Boolean | Return `true` if a given input is an array, or return `false` if it is not an array. |
+| <*Boolean-result*> | Boolean | Return `true` if a given input is an array, or return `false` if it's not an array. |
 ||||
 
 *Examples*
@@ -3002,7 +3002,7 @@ isDateRange('<input>')
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*boolean-result*> | Boolean | Return `true` if given input refers to a valid date range, or return `false` if it is not a valid date range. |
+| <*boolean-result*> | Boolean | Return `true` if given input refers to a valid date range, or return `false` if it's not a valid date range. |
 ||||
 
 *Examples*
@@ -3036,7 +3036,7 @@ isDateTime('<input>')
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*Boolean-result*> | Boolean | Return `true` if a given input is a UTC ISO format timestamp string, or return `false` if it is not a UTC ISO format timestamp string. |
+| <*Boolean-result*> | Boolean | Return `true` if a given input is a UTC ISO format timestamp string, or return `false` if it's not a UTC ISO format timestamp string. |
 ||||
 
 *Examples*
@@ -3070,7 +3070,7 @@ isDefinite('<input>')
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*boolean-result*> | Boolean | Return `true` if the given input refers to a valid full date, or return `false` if it does not refer to a valid full date. |
+| <*boolean-result*> | Boolean | Return `true` if the given input refers to a valid full date, or return `false` if it doesn't refer to a valid full date. |
 ||||
 
 *Examples*
@@ -3211,7 +3211,7 @@ isMatch('<target**string>', '<pattern>')
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*Boolean-result*> | Boolean | Return `true` if a given string is matches a common regular expression pattern, or return `false` if it does not match the pattern. |
+| <*Boolean-result*> | Boolean | Return `true` if a given string is matches a common regular expression pattern, or return `false` if it doesn't match the pattern. |
 ||||
 
 *Examples*
@@ -3231,7 +3231,7 @@ And return the same result `true`.
 
 ### isObject
 
-Return `true` if a given input is a complex object or return `false` if it is a primitive object. Primitive objects include strings, numbers, and Booleans; complex types, like classes, contain properties. <!--In C#, the input is neither a value type nor a string. In JavaScript, it reflects to the input is not a primitive data types.-->
+Return `true` if a given input is a complex object or return `false` if it's a primitive object. Primitive objects include strings, numbers, and Booleans; complex types, like classes, contain properties. <!--In C#, the input is neither a value type nor a string. In JavaScript, it reflects to the input is not a primitive data types.-->
 
 ```
 isObject('<input>')
@@ -3244,7 +3244,7 @@ isObject('<input>')
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*Boolean-result*> | Boolean | Return `true` if a given input is a complex object, or return `false` if it is a primitive object. |
+| <*Boolean-result*> | Boolean | Return `true` if a given input is a complex object, or return `false` if it's a primitive object. |
 ||||
 
 *Examples*
