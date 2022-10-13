@@ -209,7 +209,7 @@ The `on_members_added_activity` checks to see if a new user has been added and t
 
 ### [C#](#tab/csharp)
 
-It is also important to consider when your user's input might actually contain useful information, and this may vary for each channel. To ensure your user has a good experience on all possible channels, we check the status flag _didBotWelcomeUser_ and if this is "false", we do not process the initial user input. We instead provide the user with an initial welcome message. The bool _welcomedUserProperty_ is then set to "true", stored in UserState and our code will now process this user's input from all additional message activities.
+It's also important to consider when your user's input might actually contain useful information, and this may vary for each channel. To ensure your user has a good experience on all possible channels, we check the status flag _didBotWelcomeUser_ and if this is "false", we do not process the initial user input. We instead provide the user with an initial welcome message. The bool _welcomedUserProperty_ is then set to "true", stored in UserState and our code will now process this user's input from all additional message activities.
 
 **Bots\WelcomeUserBot.cs**
 [!code-csharp[DidBotWelcomeUser](~/../BotBuilder-Samples/samples/csharp_dotnetcore/03.welcome-user/bots/WelcomeUserBot.cs?range=73-87)]
@@ -217,7 +217,7 @@ It is also important to consider when your user's input might actually contain u
 
 ### [JavaScript](#tab/javascript)
 
-It is also important to consider when your user's input might actually contain useful information, and this may vary for each channel. To ensure your user has a good experience on all possible channels, we check the didBotWelcomedUser property, if it does not exist, we set it to "false" and do not process the initial user input. We instead provide the user with an initial welcome message. The bool didBotWelcomeUser is then set to "true" and our code processes the user input from all additional message activities.
+It's also important to consider when your user's input might actually contain useful information, and this may vary for each channel. To ensure your user has a good experience on all possible channels, we check the didBotWelcomedUser property, if it doesn't exist, we set it to "false" and do not process the initial user input. We instead provide the user with an initial welcome message. The bool didBotWelcomeUser is then set to "true" and our code processes the user input from all additional message activities.
 
 **bots/welcomeBot.js**
 [!code-javascript[DidBotWelcomeUser](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomebot.js?range=24-39)]
@@ -225,7 +225,7 @@ It is also important to consider when your user's input might actually contain u
 
 ### [Java](#tab/java)
 
-It is important to consider when your user's input might contain useful information, which may vary for each channel. To ensure your user has a good experience on all possible channels, we check the status flag _getDidBotWelcomeUser_ and if this is "false", we do not process the initial user input. We instead provide the user with an initial welcome message. The bool _setDidBotWelcomeUser_ is then set to "true", stored in UserState and our code will now process this user's input from all additional message activities.
+It's important to consider when your user's input might contain useful information, which may vary for each channel. To ensure your user has a good experience on all possible channels, we check the status flag _getDidBotWelcomeUser_ and if this is "false", we do not process the initial user input. We instead provide the user with an initial welcome message. The bool _setDidBotWelcomeUser_ is then set to "true", stored in UserState and our code will now process this user's input from all additional message activities.
 
 **WelcomeUserBot.java**
 [!code-java[DidBotWelcomeUser](~/../BotBuilder-Samples/samples/java_springboot/03.welcome-user/src/main/java/com/microsoft/bot/sample/welcomeuser/WelcomeUserBot.java?range=149-167)]
@@ -233,7 +233,7 @@ It is important to consider when your user's input might contain useful informat
 
 ### [Python](#tab/python)
 
-It is also important to consider when the user's input might actually contain useful information, this may vary for each channel. To ensure the user has a good experience on all possible channels, `on_message_activity` checks the `did_welcome_user` property. The first time, it sets  it to *false* and does not process the user input. Instead, it provides the user with an initial welcome message. Then it sets `did_welcome_user` to *true* and processes the user input from all additional message activities.
+It's also important to consider when the user's input might actually contain useful information, this may vary for each channel. To ensure the user has a good experience on all possible channels, `on_message_activity` checks the `did_welcome_user` property. The first time, it sets  it to *false* and doesn't process the user input. Instead, it provides the user with an initial welcome message. Then it sets `did_welcome_user` to *true* and processes the user input from all additional message activities.
 
 **bots/welcome-user-bot.py**
 [!code-python[DidBotWelcomeUser](~/../botbuilder-samples/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=93-103)]

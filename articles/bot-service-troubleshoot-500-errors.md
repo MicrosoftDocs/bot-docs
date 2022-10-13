@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: troubleshooting
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 10/11/2022
 ms.custom: abs-meta-21q1
 ---
 
@@ -23,17 +23,19 @@ The first step in troubleshooting 500 errors is enabling Application Insights.
 
 For AppInsights samples, see the luis-with-appinsights [C# sample](https://github.com/Microsoft/BotBuilder-Samples/blob/main/samples/csharp_dotnetcore/21.corebot-app-insights/) and [JS sample](https://github.com/Microsoft/BotBuilder-Samples/blob/main/samples/javascript_nodejs/21.corebot-app-insights).
 
+[!INCLUDE [luis-sunset-alert](includes/luis-sunset-alert.md)]
+
  <!-- qna-with-appinsights ([C# sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/11.qnamaker) / [JS sample](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/11.qnamaker)) samples demonstrate bots that support Azure Application Insights.-->
 
 See [conversation analytics telemetry](./v4sdk/bot-builder-telemetry.md) for information about how to add Application Insights to an existing bot.
 
 ## Enable Application Insights for ASP.NET
 
-For basic Application Insights support, see how to [set up Application Insights for your ASP.NET website](/azure/application-insights/app-insights-asp-net). The Bot Framework (starting with v4.2) provides an additional level of Application Insights telemetry, but it is not required for diagnosing HTTP 500 errors.
+For basic Application Insights support, see how to [set up Application Insights for your ASP.NET website](/azure/application-insights/app-insights-asp-net). The Bot Framework (starting with v4.2) provides an additional level of Application Insights telemetry, but it's not required for diagnosing HTTP 500 errors.
 
 ## Enable Application Insights for Node.js
 
-For basic Application Insights support, see how to [monitor your Node.js services and apps with Application Insights](/azure/azure-monitor/learn/nodejs-quick-start). The Bot Framework (starting with v4.2) provides an additional level of Application Insights telemetry, but it is not required for diagnosing HTTP 500 errors.
+For basic Application Insights support, see how to [monitor your Node.js services and apps with Application Insights](/azure/azure-monitor/learn/nodejs-quick-start). The Bot Framework (starting with v4.2) provides an additional level of Application Insights telemetry, but it's not required for diagnosing HTTP 500 errors.
 
 ## Query for exceptions
 
@@ -68,7 +70,7 @@ If you have only `exceptions`, analyze the details and see if they correspond to
 
 ## No Application Insights events
 
-If you are receiving 500 errors and there are no further events within Application Insights from your bot, check the following:
+If you're receiving 500 errors and there are no further events within Application Insights from your bot, check the following:
 
 ### Ensure the bot runs locally
 
@@ -159,7 +161,7 @@ Bot ASP.NET and Node will emit logs at the server level that can be inspected.
 1. Open the **Monitoring / Diagnostics Logs** page for the app service.
    - Ensure that **Application Logging (Filesystem)** is enabled. Be sure to click **Save** if you change this setting.
 1. Switch to the **Monitoring / Log Stream** page.
-   - Select **Web server logs** and ensure you see a message that you are connected. It should look something like the following:
+   - Select **Web server logs** and ensure you see a message that you're connected. It should look something like the following:
 
      ```bash
      Connecting...
@@ -173,9 +175,9 @@ Bot ASP.NET and Node will emit logs at the server level that can be inspected.
 1. Using a separate browser, open your bot in the Azure Portal.
 1. Open the **App Service Settings / All App service settings** page to see all service settings.
 1. Switch to the **Overview** page for the app service and click **Restart**.
-   - It will prompt if you are sure; select **yes**.
+   - It will prompt if you're sure; select **yes**.
 1. Return to the first browser window and watch the logs.
-1. Verify that you are receiving new logs.
+1. Verify that you're receiving new logs.
    - If there is no activity, redeploy your bot.
    - Then switch to the **Application logs** page and look for any errors.
 

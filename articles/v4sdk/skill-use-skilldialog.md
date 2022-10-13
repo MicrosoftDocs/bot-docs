@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: Gabo.Gilabert
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 11/17/2021
+ms.date: 10/11/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -38,9 +38,6 @@ The **skills skillDialog** sample includes projects for two bots:
 
 This article focuses on how to use a _skill dialog_ class in a root bot to manage the skill, to send message and event activities and to cancel the skill.
 
-<!--
-If you use middleware in your skill consumer, see how to [use middleware in a skill consumer](skill-middleware-in-consumer.md) to avoid some common problems.
--->
 For information about other aspects of creating a skill consumer, see how to [implement a skill consumer](skill-implement-consumer.md).
 
 ### [C#](#tab/cs)
@@ -120,6 +117,8 @@ The bot's main dialog includes a _skill dialog_ for each skill this bot consumes
 The main dialog also demonstrates how to cancel the skill (through the skill dialog) based on user input.
 
 The skill this bot uses supports a couple different features. It can book a flight or get the weather for a city. In addition, if it receives a message outside either of these contexts and a LUIS recognizer is configured, it attempts to interpret the user's intent.
+
+[!INCLUDE [luis-sunset-alert](../includes/luis-sunset-alert.md)]
 
 The skill manifest ([**C#**](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/csharp_dotnetcore/81.skills-skilldialog/DialogSkillBot/wwwroot/manifest/dialogchildbot-manifest-1.0.json), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/javascript_nodejs/81.skills-skilldialog/dialogSkillBot/manifest/dialogchildbot-manifest-1.0.json), [**Java**](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/java_springboot/81.skills-skilldialog/dialog-skill-bot/src/main/webapp/manifest/echoskillbot-manifest-1.0.json), [**Python**](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/python/81.skills-skilldialog/dialog-skill-bot/wwwroot/manifest/dialogchildbot-manifest-1.0.json)) describes the actions the skill can perform, its input and output parameters, and the skill's endpoints.
 Of note, the skill can handle a "BookFlight" or "GetWeather" event. It can also handle messages.
@@ -445,5 +444,3 @@ Download and install the latest [Bot Framework Emulator](https://github.com/micr
 ## Additional information
 
 See how to [implement a skill consumer](skill-implement-consumer.md) for how to implement a skill consumer in general.
-
-<!-- [Use middleware in a skill consumer](skill-middleware-in-consumer.md) describes how to avoid some common problems. -->

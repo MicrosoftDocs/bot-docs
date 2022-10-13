@@ -28,7 +28,7 @@ Below is the list of the **Bot profile** fields:
 |:-|:-|
 | Icon | A custom icon to visually identify your bot in channels and as the icon for your bot in Microsoft Teams or other services. |
 | Display name | The name of your bot in channels and directories. You can change this value later. |
-| Bot handle | A unique identifier for your bot. This value cannot be changed after creating your bot with the Bot Service. |
+| Bot handle | A unique identifier for your bot. This value can't be changed after creating your bot with the Bot Service. |
 | Description | A description of your bot. Some channels display the description. You can change this value later. |
 
 To save your changes, select **Apply** at the bottom of the blade.
@@ -42,7 +42,7 @@ Below is the list of the **Configuration** fields:
 | Field | Description |
 |:-|:-|
 | Messaging endpoint | The endpoint to communicate with your bot. |
-| Microsoft App ID | Unique identifier for your bot. This value cannot be changed. You can generate a new password by clicking on the **Manage** link. |
+| Microsoft App ID | Unique identifier for your bot. This value can't be changed. You can generate a new password by clicking on the **Manage** link. |
 | Schema Transformation Version | The bot schema transform version to use for this bot. For more information, see [Connect a bot to channels](bot-service-manage-channels.md). |
 | Application Insights Instrumentation key | Unique key for bot telemetry. Copy your Azure Application Insights Key to this field if you want to receive bot telemetry for this bot. This value is optional. For more details on this field, see [Application Insights keys](bot-service-resources-app-insights-keys.md). |
 | Application Insights API key | Unique key for bot analytics. Copy your Azure Application Insights API Key to this field if you want to view analytics about your bot in the Dashboard. This value is optional. For more details on this field, see [Application Insights keys](bot-service-resources-app-insights-keys.md). |

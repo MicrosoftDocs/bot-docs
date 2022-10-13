@@ -15,7 +15,7 @@ ms.date: 11/01/2021
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-Azure Bot Service is a global Azure service and therefore is available to customers in all regions in the clouds where it is deployed, including:  
+Azure Bot Service is a global Azure service and therefore is available to customers in all regions in the clouds where it's deployed, including:  
 
 - Azure public cloud, which is available globally.
 - Azure Government is available in four regions in the United States to US government agencies and their partners.

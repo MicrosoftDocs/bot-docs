@@ -38,7 +38,7 @@ The standard Bot Framework metadata section looks like this:
 
 ![](./media/article-metadata/checkmark-small.png)**author**: Required, one value only. List the GitHub account for the primary author or article SME. Get the capitalization right, it matters!
 
-![](./media/article-metadata/checkmark-small.png)**manager**: Required if you are a Microsoft contributor. List the email alias of the content publishing manager for the technology area. If you are a community contributor, include the attribute but leave it empty so we can fill it out.
+![](./media/article-metadata/checkmark-small.png)**manager**: Required if you're a Microsoft contributor. List the email alias of the content publishing manager for the technology area. If you're a community contributor, include the attribute but leave it empty so we can fill it out.
 
 ![](./media/article-metadata/checkmark-small.png)**keywords**: Optional. For use by SEO champs only. Separate terms with commas. **Check with your SEO champ before you change or delete content in this article containing these terms.** This attribute records keywords the SEO champ has targeted and is tracking in order to improve search rank. The keywords do not render in the published HTML. Validation does not require this attribute.
 

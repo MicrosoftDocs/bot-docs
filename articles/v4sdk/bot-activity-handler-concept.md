@@ -90,7 +90,7 @@ The handlers defined in `ActivityHandler` are:
 
 These different handlers have a `turnContext` that provides information about the incoming activity, which corresponds to the inbound HTTP request. Activities can be of various types, so each handler provides a strongly-typed activity in its turn context parameter; in most cases, `OnMessageActivityAsync` will always be handled, and is generally the most common.
 
-As in previous 4.x versions of this framework, there is also the option to implement the public method `OnTurnAsync`. Currently, the base implementation of this method handles error checking and then calls each of the specific handlers (like the two we define in this sample) depending on the type of incoming activity. In most cases, you can leave that method alone and use the individual handlers, but if your situation requires a custom implementation of `OnTurnAsync`, it is still an option.
+As in previous 4.x versions of this framework, there is also the option to implement the public method `OnTurnAsync`. Currently, the base implementation of this method handles error checking and then calls each of the specific handlers (like the two we define in this sample) depending on the type of incoming activity. In most cases, you can leave that method alone and use the individual handlers, but if your situation requires a custom implementation of `OnTurnAsync`, it's still an option.
 
 > [!IMPORTANT]
 > If you do override the `OnTurnAsync` method, you'll need to call `base.OnTurnAsync` to get the base implementation to call all the other `On<activity>Async` handlers or call those handlers yourself. Otherwise, those handlers won't be called and that code won't be run.
@@ -147,7 +147,7 @@ The handlers defined in `ActivityHandler` are:
 
 These different handlers have a `turnContext` that provides information about the incoming activity, which corresponds to the inbound HTTP request. Activities can be of various types, so each handler provides a strongly-typed activity in its turn context parameter; in most cases, `onMessageActivity` will always be handled, and is generally the most common.
 
-There is also the option to implement the public method `onTurn`. Currently, the base implementation of this method handles error checking and then calls each of the specific handlers (like the two we define in this sample) depending on the type of incoming activity. In most cases, you can leave that method alone and use the individual handlers, but if your situation requires a custom implementation of `onTurn`, it is still an option.
+There is also the option to implement the public method `onTurn`. Currently, the base implementation of this method handles error checking and then calls each of the specific handlers (like the two we define in this sample) depending on the type of incoming activity. In most cases, you can leave that method alone and use the individual handlers, but if your situation requires a custom implementation of `onTurn`, it's still an option.
 
 > [!IMPORTANT]
 > If you do override the `onTurn` method, you'll need to call `super.onTurn` to get the base implementation to call all the other `on<activity>` handlers or call those handlers yourself. Otherwise, those handlers won't be called and that code won't be run.
@@ -178,7 +178,7 @@ The handlers defined in `ActivityHandler` are:
 
 These different handlers have a `turn_context` that provides information about the incoming activity, which corresponds to the inbound HTTP request. Activities can be of various types, so each handler provides a strongly-typed activity in its turn context parameter; in most cases, `on_message_activity` will always be handled, and is generally the most common.
 
-As in previous 4.x versions of this framework, there is also the option to implement the public method `on_turn`. Currently, the base implementation of this method handles error checking and then calls each of the specific handlers (like the two we define in this sample) depending on the type of incoming activity. In most cases, you can leave that method alone and use the individual handlers, but if your situation requires a custom implementation of `on_turn`, it is still an option.
+As in previous 4.x versions of this framework, there is also the option to implement the public method `on_turn`. Currently, the base implementation of this method handles error checking and then calls each of the specific handlers (like the two we define in this sample) depending on the type of incoming activity. In most cases, you can leave that method alone and use the individual handlers, but if your situation requires a custom implementation of `on_turn`, it's still an option.
 
 > [!IMPORTANT]
 > If you do override the `on_turn` method, you'll need to call `super().on_turn` to get the base implementation to call all the other `on_<activity>` handlers or call those handlers yourself. Otherwise, those handlers won't be called and that code won't be run.
@@ -210,4 +210,4 @@ For example, you can handle _on members added_ to welcome users to a conversatio
 ## Next steps
 
 - The Microsoft Teams channel introduces some Teams-specific activities that your bot will need to support to work properly with Teams. To understand key concepts of developing bots for Microsoft Teams, see [How Microsoft Teams bots work](bot-builder-basics-teams.md)
-- An activity handler is a good way to design a bot that does not need to track conversational state between turns. The [dialogs library](bot-builder-concept-dialog.md) provides ways to manage a long-running conversation with the user.
+- An activity handler is a good way to design a bot that doesn't need to track conversational state between turns. The [dialogs library](bot-builder-concept-dialog.md) provides ways to manage a long-running conversation with the user.

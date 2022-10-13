@@ -45,8 +45,8 @@ Adaptive dialogs provide a way to access and manage memory and all adaptive dial
 
 Here are the different memory scopes available in adaptive dialogs, each with a link to additional information contained in the memory states reference article:
 
-* [User scope][user-scope] is persistent data scoped to the ID of the user you are conversing with.
-* [Conversation scope][conversation-scope] is persistent data scoped to the ID of the conversation you are having.
+* [User scope][user-scope] is persistent data scoped to the ID of the user you're conversing with.
+* [Conversation scope][conversation-scope] is persistent data scoped to the ID of the conversation you're having.
 * [Dialog scope][dialog-scope] persists data for the life of the associated dialog, providing memory space for each dialog to have internal persistent bookkeeping.
 * [Turn scope][turn-scope] provides a place to share data for the lifetime of the current turn.
 * [Settings scope][settings-scope] represents any settings that are made available to the bot via the platform specific settings configuration system.
@@ -57,13 +57,13 @@ Here are the different memory scopes available in adaptive dialogs, each with a 
 
 There are few short-hand notations supported to access specific memory scopes.
 
-| Symbol | Usage           | Expansion                             | Notes                                                                                                                   |
-|--------|-----------------|---------------------------------------|------------------------------------------------------------------------------------------------------------------------ |
-| $      | `$userName`     | `dialog.userName`                     | Short hand notation that represents the dialog scope.                                                                   |
-| #      | `#intentName`   | `turn.recognized.intents.intentName`  | Short hand used to denote a named intent returned by the recognizer.                                                    |
-| @      | `@entityName`   | `turn.recognized.entities.entityName` | `@entityName` returns the first and _only_ the first value found for the entity, immaterial of the value's cardinality. |
-| @@     | `@@entityName`  | `turn.recognized.entities.entityName` | `@@entityName` will return the actual value of the entity, preserving the value's cardinality.                          |
-| %      | `%propertyName` | `class.propertyName`                  | Used to refer to instance properties (e.g. `MaxTurnCount`, `DefaultValue` etc).                                         |
+| Symbol | Usage | Expansion | Notes |
+|--|--|--|--|
+| $ | `$userName` | `dialog.userName` | Short hand notation that represents the dialog scope. |
+| # | `#intentName` | `turn.recognized.intents.intentName` | Short hand used to denote a named intent returned by the recognizer. |
+| @ | `@entityName` | `turn.recognized.entities.entityName` | `@entityName` returns the first and _only_ the first value found for the entity, immaterial of the value's cardinality. |
+| @@ | `@@entityName` | `turn.recognized.entities.entityName` | `@@entityName` will return the actual value of the entity, preserving the value's cardinality. |
+| % | `%propertyName` | `class.propertyName` | Used to refer to instance properties, such as `MaxTurnCount`, `DefaultValue`, and so on. |
 
 ## Additional information
 
@@ -74,16 +74,11 @@ There are few short-hand notations supported to access specific memory scopes.
 [bot-builder-basics]:bot-builder-basics.md
 [introduction]:bot-builder-adaptive-dialog-introduction.md
 [managing-state]:bot-builder-concept-state.md
-[recognizers]:bot-builder-concept-adaptive-dialog-recognizers.md
-[botframework-activity]:https://github.com/microsoft/botbuilder/blob/master/specs/botframework-activity/botframework-activity.md
-[foreach-action]:../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#foreach
-[setproperties-action]:../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#setproperties
 [concept-dialog]:bot-builder-concept-dialog.md
 
 <!-- Links to the Adaptive dialogs managing state reference article-->
 [user-scope]: ../adaptive-dialog/adaptive-dialog-prebuilt-memory-states.md#user-scope
 [conversation-scope]: ../adaptive-dialog/adaptive-dialog-prebuilt-memory-states.md#conversation-scope
-[dialog-scope]: ../adaptive-dialog/adaptive-dialog-prebuilt-memory-states.md#dialog-scope
 [dialog-scope]: ../adaptive-dialog/adaptive-dialog-prebuilt-memory-states.md#dialog-scope
 [turn-scope]: ../adaptive-dialog/adaptive-dialog-prebuilt-memory-states.md#turn-scope
 [settings-scope]: ../adaptive-dialog/adaptive-dialog-prebuilt-memory-states.md#settings-scope

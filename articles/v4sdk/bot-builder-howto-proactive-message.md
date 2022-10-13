@@ -180,7 +180,7 @@ The _continue conversation_ method uses the conversation reference and a turn ca
 1. Call the turn callback handler to perform custom logic.
 
 In the **proactive messages** sample, the turn callback handler is defined in the notify controller and sends the message directly to the conversation, without sending the proactive activity through the bot's normal turn handler.
-The sample code also does not access or update the bot's state on the proactive turn.
+The sample code also doesn't access or update the bot's state on the proactive turn.
 
 Many bots are stateful and use state to manage a conversation over multiple turns.
 When the continue conversation method creates a turn context, the turn will have the correct user and conversation state associated with it, and you can integrate proactive turns into your bot's logic.

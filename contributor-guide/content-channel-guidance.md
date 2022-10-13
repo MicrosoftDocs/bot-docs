@@ -56,7 +56,7 @@ The following types of content are delivered in other Bot Framework or Microsoft
 
 * **Regions**: In technical articles, do not discuss, describe, or explain the regions in which a feature, product, service, or procedure applies or is available. Feature and service availability by region is documented only on the following ACOM page: [Products available by region](https://azure.microsoft.com/regions/services/). Provide a link to the ACOM page.
 
-  You can use specific regions in examples when you are describing procedures or tools where a customer has to work across regions. For example, this sentence is OK:
+  You can use specific regions in examples when you're describing procedures or tools where a customer has to work across regions. For example, this sentence is OK:
 
   > The following screenshot shows two pings from two different region client machines, one in the East Asia region and one in the West US.
 

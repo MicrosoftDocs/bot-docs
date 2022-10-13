@@ -89,10 +89,10 @@ For more information, see [Azure Active Directory for developers (v1.0) overview
 > [!NOTE]
 > If you selected one of the following, enter the **tenant ID** you recorded for the Azure AD identity provider app:
 >
-> - *Accounts in this organizational directory only (Microsoft only - Single tenant)*
-> - *Accounts in any organizational directory(Microsoft AAD directory - Multi tenant)*
+> - **Accounts in this organizational directory only (Microsoft only - Single tenant)**
+> - **Accounts in any organizational directory(Microsoft AAD directory - Multi tenant)**
 >
-> If you selected *Accounts in any organizational directory (Any Azure AD directory - Multi tenant and personal Microsoft accounts e.g., Skype, Xbox, Outlook.com)*, enter `common`.
+> If you selected **Accounts in any organizational directory (Any Azure AD directory - Multi tenant and personal Microsoft accounts e.g., Skype, Xbox, Outlook.com)**, enter `common`.
 >
 > Otherwise, the Azure AD identity provider app will use the tenant to verify the selected ID and exclude personal Microsoft accounts.
 

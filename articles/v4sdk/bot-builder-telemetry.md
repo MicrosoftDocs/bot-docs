@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 09/01/2022
+ms.date: 10/11/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -40,7 +40,7 @@ This article describes how to implement telemetry in your bot using Application 
 * [git](https://git-scm.com/)
 
 > [!NOTE]
-> The [Application Insights sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/21.corebot-app-insights) was built on top of the [CoreBot sample code](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot). This article will step you through modifying the CoreBot sample code to incorporate telemetry. If you are following along in Visual Studio you will have the Application Insights sample code by the time you are finished.
+> The [Application Insights sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/21.corebot-app-insights) was built on top of the [CoreBot sample code](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot). This article will step you through modifying the CoreBot sample code to incorporate telemetry. If you're following along in Visual Studio you will have the Application Insights sample code by the time you're finished.
 
 # [JavaScript](#tab/javascript)
 
@@ -54,7 +54,7 @@ This article describes how to implement telemetry in your bot using Application 
 * [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md)
 
 > [!NOTE]
-> The [Application Insights sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/21.corebot-app-insights) was built on top of the [CoreBot sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot). This article will step you through modifying the CoreBot sample code to incorporate telemetry. If you are following along in Visual Studio Code you will have the Application Insights sample code by the time you are finished.
+> The [Application Insights sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/21.corebot-app-insights) was built on top of the [CoreBot sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot). This article will step you through modifying the CoreBot sample code to incorporate telemetry. If you're following along in Visual Studio Code you will have the Application Insights sample code by the time you're finished.
 
 ---
 
@@ -65,7 +65,7 @@ This article describes how to implement telemetry in your bot using Application 
 This article starts from the [CoreBot sample app](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot) and adds the code required to integrate telemetry into any bot. This will enable Application Insights to begin tracking requests.
 
 > [!IMPORTANT]
-> If you have not setup your [Application Insights](/azure/azure-monitor/app/app-insights-overview) account and created your [Application Insights key](../bot-service-resources-app-insights-keys.md), do that before proceeding.
+> If you haven't setup your [Application Insights](/azure/azure-monitor/app/app-insights-overview) account and created your [Application Insights key](../bot-service-resources-app-insights-keys.md), do that before proceeding.
 
 1. Open the [CoreBot sample app](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot) in Visual Studio.
 
@@ -130,7 +130,7 @@ This article starts from the [CoreBot sample app](https://github.com/Microsoft/B
 
 1. You will also need to add `Microsoft.Bot.Builder.Integration.ApplicationInsights.Core` to your list of using statements in `AdapterWithErrorHandler.cs`.
 
-1. Add the Application Insights instrumentation key in your `appsettings.json` file. The `appsettings.json` file contains metadata about external services the bot uses while running. For example, CosmosDB, Application Insights, and the Language Understanding (LUIS) service connection and metadata is stored there. The addition to your `appsettings.json` file must be in this format:
+1. Add the Application Insights instrumentation key in your `appsettings.json` file. The `appsettings.json` file contains metadata about external services the bot uses while running. For example, CosmosDB, Application Insights, and Azure Cognitive Services connection and metadata is stored there. The addition to your `appsettings.json` file must be in this format:
 
     ```json
     {
@@ -149,7 +149,7 @@ At this point, the preliminary work to enable telemetry using Application Insigh
 
 ### Enable telemetry in your bot's dialogs
 
-When adding a new dialog to any ComponentDialog, it will inherit the Microsoft.Bot.Builder.IBotTelemetryClient of its parent dialog.  For example, In the CoreBot sample application all dialogs are added to the MainDialog, which is a ComponentDialog.  Once you set the TelemetryClient property to the MainDialog, all dialogs added to it will automatically inherit the telemetryClient from it, so it does not need to be explicitly set when adding dialogs.
+When adding a new dialog to any ComponentDialog, it will inherit the Microsoft.Bot.Builder.IBotTelemetryClient of its parent dialog.  For example, In the CoreBot sample application all dialogs are added to the MainDialog, which is a ComponentDialog.  Once you set the TelemetryClient property to the MainDialog, all dialogs added to it will automatically inherit the telemetryClient from it, so it doesn't need to be explicitly set when adding dialogs.
 
 Follow the steps below to update your CoreBot example:
 
@@ -166,7 +166,7 @@ Follow the steps below to update your CoreBot example:
     ```
 
 > [!TIP]
-> If you are following along and updating the CoreBot sample code, you can refer to the [Application Insights sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/21.corebot-app-insights) if you run into any problems.
+> If you're following along and updating the CoreBot sample code, you can refer to the [Application Insights sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/21.corebot-app-insights) if you run into any problems.
 
 That's all there is to adding telemetry to your bots dialogs, at this point if you ran your bot you should see things being logged in Application Insights, however if you have any integrated technology such as a Cognitive Service you will need to add the `TelemetryClient` to that code as well.
 
@@ -175,11 +175,11 @@ That's all there is to adding telemetry to your bots dialogs, at this point if y
 This article starts with the [CoreBot sample app](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot) and adds the code required to integrate telemetry into any bot. This will enable Application Insights to begin tracking requests.
 
 > [!IMPORTANT]
-> If you have not setup your [Application Insights](/azure/azure-monitor/app/app-insights-overview) account and created your [Application Insights key](../bot-service-resources-app-insights-keys.md), do that before proceeding.
+> If you haven't setup your [Application Insights](/azure/azure-monitor/app/app-insights-overview) account and created your [Application Insights key](../bot-service-resources-app-insights-keys.md), do that before proceeding.
 
 1. Open the [CoreBot sample app](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot) in Visual Studio Code.
 
-1. Add the [Application Insights key](../bot-service-resources-app-insights-keys.md) to your `.env` file: `InstrumentationKey=<EnterInstrumentationKeyHere>`. The `.env` file contains metadata about external services the bot uses while running. For example, Application Insights and the Language Understanding (LUIS) service connection and metadata is stored there. The addition to your `.env` file must be in this format:
+1. Add the [Application Insights key](../bot-service-resources-app-insights-keys.md) to your `.env` file: `InstrumentationKey=<EnterInstrumentationKeyHere>`. The `.env` file contains metadata about external services the bot uses while running. For example, Application Insights and Azure Cognitive Services connection and metadata is stored there. The addition to your `.env` file must be in this format:
 
     [!code-ini[.env file](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/.env?highlight=8)]
 
@@ -294,9 +294,11 @@ Next we will see what needs to be included to add telemetry functionality to the
 
 [!INCLUDE [qnamaker-sunset-alert](../includes/qnamaker-sunset-alert.md)]
 
+[!INCLUDE [luis-sunset-alert](../includes/luis-sunset-alert.md)]
+
 # [C#](#tab/csharp)
 
-We will next implement telemetry functionality in your LUIS service. The LUIS service has built-in telemetry logging available so there's little you need to do to start getting telemetry data from LUIS.  If you are interested in enabling telemetry in a QnA Maker enabled bot, see [Add telemetry to your QnA Maker bot](../v4sdk/bot-builder-telemetry-QnAMaker.md)
+We will next implement telemetry functionality in your LUIS service. The LUIS service has built-in telemetry logging available so there's little you need to do to start getting telemetry data from LUIS.  If you're interested in enabling telemetry in a QnA Maker enabled bot, see [Add telemetry to your QnA Maker bot](../v4sdk/bot-builder-telemetry-QnAMaker.md)
 
 1. The _`IBotTelemetryClient telemetryClient`_ parameter is required in the `FlightBookingRecognizer` constructor in `FlightBookingRecognizer.cs`:
 

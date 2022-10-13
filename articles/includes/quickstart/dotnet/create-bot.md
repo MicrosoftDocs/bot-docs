@@ -5,7 +5,7 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: include
-ms.date: 09/13/2022
+ms.date: 10/10/2022
 ---
 
 #### [Visual Studio](#tab/vs)
@@ -37,9 +37,3 @@ Make sure that [.NET Core 3.1](https://dotnet.microsoft.com/download) is install
 ---
 
 Thanks to the template, your project contains all the necessary code to create the bot in this quickstart. You don't need any more code to test your bot.
-
-> [!TIP]
-> If you create a _Core_ bot:
->
-> - Only the solution directory receives the bot name.
-> - You'll need a LUIS language model. You can create a language model at [luis.ai](https://www.luis.ai). After creating the model, update the configuration file.

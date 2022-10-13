@@ -1,14 +1,14 @@
 ---
 title: Language understanding
-description: Learn how to add artificial intelligence to your bots with Microsoft Cognitive Services to make them more useful and engaging.
-keywords: Cognitive Services, CLU, LUIS, QnA Maker
+description: Learn how to add artificial intelligence to your bots with Azure Cognitive Services to make them more useful and engaging.
+keywords: Cognitive Services, CLU, LUIS, QnA Maker, custom question answering
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 09/01/2022
+ms.date: 10/10/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -54,10 +54,10 @@ This article describes both the newer and older features and services, and where
 
 Natural language understanding features let you build custom natural language understanding models to predict the overall intention of user's message and extract important information from it.
 
-| Service or feature                          | Description                                                               |
-|:--------------------------------------------|:--------------------------------------------------------------------------|
-| Conversational Language Understanding (CLU) | A feature of the Azure Cognitive Service for Language service.            |
-| Language Understanding (LUIS)               | An Azure Cognitive Services service. (CLU is an updated version of LUIS.) |
+| Service or feature | Description |
+|:-|:-|
+| Conversational Language Understanding (CLU) | A feature of the Azure Cognitive Service for Language service. |
+| Language Understanding (LUIS) | An Azure Cognitive Services service. (CLU is an updated version of LUIS.)<br/><br/>LUIS will be retired on 1 October 2025. |
 
 ### Conversational Language Understanding (CLU)
 
@@ -72,6 +72,10 @@ For more information, see:
 - The introduction to the [Azure Cognitive Language Services Conversations client library for .NET](/dotnet/api/overview/azure/ai.language.conversations-readme-pre)
 
 ### Language Understanding (LUIS)
+
+> [!NOTE]
+> [Language Understanding (LUIS) will be retired on 1 October 2025](https://azure.microsoft.com/updates/language-understanding-retirement/).
+> Beginning 1 April 2023, you won't be able to create new LUIS resources.
 
 LUIS applies custom machine-learning intelligence to a user's conversational, natural language text to predict overall meaning, and pull out relevant, detailed information.
 
@@ -94,7 +98,7 @@ Knowledge bases represent semi-structured content, such as that found in FAQs, m
 
 ### Question answering
 
-Question answering provides cloud-based natural language processing (NLP) that allows you to create a natural conversational layer over your data. It is used to find the most appropriate answer for any input from your custom knowledge base of information.
+Question answering provides cloud-based natural language processing (NLP) that allows you to create a natural conversational layer over your data. It's used to find the most appropriate answer for any input from your custom knowledge base of information.
 
 To use question answering in your bot, create and deploy a question answering project, then implement in your bot a _QnA Maker client_ that forwards requests to the question answering API.
 
@@ -168,6 +172,9 @@ For more information, see:
 > [!NOTE]
 > [Azure QnA Maker will be retired on 31 March 2025](https://azure.microsoft.com/updates/azure-qna-maker-will-be-retired-on-31-march-2025/).
 > Beginning 1 October 2022, you won't be able to create new QnA Maker resources or knowledge bases.
+>
+> [Language Understanding (LUIS) will be retired on 1 October 2025](https://azure.microsoft.com/updates/language-understanding-retirement/).
+> Beginning 1 April 2023, you won't be able to create new LUIS resources.
 
 Bot Framework Orchestrator is an intent-only recognition engine. The Bot Framework CLI includes tools to generate a language model for Orchestrator from a collection of QnA Maker knowledge bases and LUIS language models. Your bot can then use Orchestrator to determine which service can best respond to the user's input.
 

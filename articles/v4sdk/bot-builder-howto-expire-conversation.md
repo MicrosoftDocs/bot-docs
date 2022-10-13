@@ -16,7 +16,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-A bot sometimes needs to restart a conversation from the beginning.  For instance, if a user does not respond after a certain period of time.  This article describes two methods for expiring a conversation:
+A bot sometimes needs to restart a conversation from the beginning.  For instance, if a user doesn't respond after a certain period of time.  This article describes two methods for expiring a conversation:
 
 - Track the last time a message was received from a user, and clear state if the time is greater than a preconfigured length upon receiving the next message from the user. For more information, see the [user interaction expiration](#user-interaction-expiration) section.
 - Use a storage layer feature, such as Cosmos DB Time To Live (TTL), to automatically clear state after a preconfigured length of time. For more information, see the [storage expiration](#storage-expiration) section.
@@ -62,7 +62,7 @@ First, add an `ExpireAfterSeconds` setting to appsettings.json:
 
 Next, add `ExpireAfterSeconds`, `LastAccessedTimeProperty`, and `DialogStateProperty` fields to the bot class and initialize them in the bot's constructor. Also add an `IConfiguration` parameter to the constructor with which to retrieve the `ExpireAfterSeconds` value.
 
-Note that instead of creating the dialog state property accessor inline in the `OnMessageActivityAsync` method, you are creating and recording it at initialization time. The bot will need the state property accessor not only to run the dialog, but also to clear the dialog state.
+Note that instead of creating the dialog state property accessor inline in the `OnMessageActivityAsync` method, you're creating and recording it at initialization time. The bot will need the state property accessor not only to run the dialog, but also to clear the dialog state.
 
 ```csharp
 protected readonly int ExpireAfterSeconds;
@@ -335,7 +335,7 @@ BOT = DialogBot(CONFIG.EXPIRE_AFTER_SECONDS, CONVERSATION_STATE, USER_STATE, DIA
 
 Cosmos DB provides a Time To Live (TTL) feature which allows you to delete items automatically from a container after a certain time period.  This can be configured from within the Azure portal or during container creation (using the language-specific Cosmos DB SDKs).
 
-The Bot Framework SDK does not expose a TTL configuration setting.  However, container initialization can be overridden and the Cosmos DB SDK can be used to configure TTL prior to Bot Framework storage initialization.
+The Bot Framework SDK doesn't expose a TTL configuration setting.  However, container initialization can be overridden and the Cosmos DB SDK can be used to configure TTL prior to Bot Framework storage initialization.
 
 # [C#](#tab/csharp)
 
@@ -742,7 +742,7 @@ For more information, see [Configure time to live in Azure Cosmos DB][cosmos-ttl
 
 ## To test the bot
 
-1. If you have not done so already, install the [Bot Framework Emulator][emulator-readme].
+1. If you haven't done so already, install the [Bot Framework Emulator][emulator-readme].
 1. Run the sample locally on your machine.
 1. Start the Emulator, connect to your bot, and send a message to it.
 1. After one of the prompts, wait 30 seconds before responding.

@@ -111,7 +111,7 @@ The [HTTP status code](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html) t
 | 401              | The bot isn't yet authenticated.                             |
 | 403              | The bot isn't authorized to perform the requested operation. |
 | 404              | The requested resource wasn't found.                         |
-| 405              | The channel does not support the requested operation.        |
+| 405              | The channel doesn't support the requested operation.        |
 | 500              | An internal server error occurred.                           |
 | 503              | The service is temporarily unavailable.                      |
 
@@ -250,7 +250,7 @@ GET /v3/conversations/{conversationId}/pagedmembers?pageSize={pageSize}&continua
 
 ### Reply to activity
 
-Sends an activity (message) to the specified conversation, as a reply to the specified activity. The activity will be added as a reply to another activity, if the channel supports it. If the channel does not support nested replies, then this operation behaves like [Send to Conversation](#send-to-conversation).
+Sends an activity (message) to the specified conversation, as a reply to the specified activity. The activity will be added as a reply to another activity, if the channel supports it. If the channel doesn't support nested replies, then this operation behaves like [Send to Conversation](#send-to-conversation).
 
 ```http
 POST /v3/conversations/{conversationId}/activities/{activityId}
@@ -419,7 +419,7 @@ Defines a message that is exchanged between bot and user.
 | **attachmentLayout** | String | Layout of the rich card **attachments** that the message includes. One of these values: **carousel**, **list**. For more information about rich card attachments, see [Add rich card attachments to messages](bot-framework-rest-connector-add-rich-cards.md). |
 | **attachments** | [Attachment](#attachment-object)[] | Array of **Attachment** objects that defines additional information to include in the message. Each attachment may be either a file (for example, audio, video, image) or a rich card. |
 | **callerId** | String | A string containing an IRI identifying the caller of a bot. This field isn't intended to be transmitted over the wire, but is instead populated by bots and clients based on cryptographically verifiable data that asserts the identity of the callers (for example, tokens). |
-| **channelData** | Object | An object that contains channel-specific content. Some channels provide features that require additional information that cannot be represented using the attachment schema. For those cases, set this property to the channel-specific content as defined in the channel's documentation. For more information, see [Implement channel-specific functionality](bot-framework-rest-connector-channeldata.md). |
+| **channelData** | Object | An object that contains channel-specific content. Some channels provide features that require additional information that can't be represented using the attachment schema. For those cases, set this property to the channel-specific content as defined in the channel's documentation. For more information, see [Implement channel-specific functionality](bot-framework-rest-connector-channeldata.md). |
 | **channelId** | String | An ID that uniquely identifies the channel. Set by the channel. |
 | **code** | String | Code indicating why the conversation has ended. |
 | **conversation** | [ConversationAccount](#conversationaccount-object) | A **ConversationAccount** object that defines the conversation to which the activity belongs. |
@@ -626,7 +626,7 @@ Defines parameters for creating a new conversation.
 
 | Property | Type | Description |
 |----|----|----|
-| **activity** | [Activity](#activity-object) | The initial message to send to the conversation when it is created. |
+| **activity** | [Activity](#activity-object) | The initial message to send to the conversation when it's created. |
 | **bot** | [ChannelAccount](#channelaccount-object) | Channel account information needed to route a message to the bot. |
 | **channelData** | Object | Channel-specific payload for creating the conversation. |
 | **isGroup** | Boolean | Indicates whether this is a group conversation. |
@@ -784,7 +784,7 @@ Defines a user or bot that was mentioned in the conversation.
 
 | Property | Type | Description |
 |----|----|----|
-| **mentioned** | [ChannelAccount](#channelaccount-object) | A **ChannelAccount** object that specifies the user or the bot that was mentioned. Some channels, such as Slack, assign names per conversation, so it is possible that your bot's mentioned name (in the message's **recipient** property) may be different from the handle that you specified when you [registered](../bot-service-quickstart-registration.md) your bot. However, the account IDs for both would be the same. |
+| **mentioned** | [ChannelAccount](#channelaccount-object) | A **ChannelAccount** object that specifies the user or the bot that was mentioned. Some channels, such as Slack, assign names per conversation, so it's possible that your bot's mentioned name (in the message's **recipient** property) may be different from the handle that you specified when you [registered](../bot-service-quickstart-registration.md) your bot. However, the account IDs for both would be the same. |
 | **text** | String | The user or bot as mentioned in the conversation. For example, if the message is "@ColorBot pick me a new color," this property would be set to **\@ColorBot**. Not all channels set this property. |
 | **type** | String | This object's type. Always set to **Mention**. |
 

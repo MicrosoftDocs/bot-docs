@@ -77,7 +77,7 @@ Interactions with the Direct Line App Service extension happen differently than 
     }
     ```
 
-1. Now you are ready to open the WebSocket on the `StreamingConversations` property using the conversation's token, `conversationId`, and your `ReceiveActivities` callback:
+1. Now you're ready to open the WebSocket on the `StreamingConversations` property using the conversation's token, `conversationId`, and your `ReceiveActivities` callback:
 
     ```csharp
     var client = new DirectLineClient(

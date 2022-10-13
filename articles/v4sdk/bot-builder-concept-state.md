@@ -45,7 +45,7 @@ The Bot Framework SDK includes some implementations for the storage layer:
 >
 > Containers created with _Cosmos DB storage_ can be used with _Cosmos DB partitioned storage_. Read [Partitioning in Azure Cosmos DB](/azure/cosmos-db/partitioning-overview) for more information.
 >
-> Also note that, unlike the legacy Cosmos DB storage, the Cosmos DB partitioned storage does not automatically create a database within your Cosmos DB account. You need to [create a new database manually](/azure/cosmos-db/create-cosmosdb-resources-portal), but skip manually creating a container since _CosmosDbPartitionedStorage_ will create the container for you.
+> Also note that, unlike the legacy Cosmos DB storage, the Cosmos DB partitioned storage doesn't automatically create a database within your Cosmos DB account. You need to [create a new database manually](/azure/cosmos-db/create-cosmosdb-resources-portal), but skip manually creating a container since _CosmosDbPartitionedStorage_ will create the container for you.
 
 For instructions on how to connect to other storage options, see [write directly to storage](bot-builder-howto-v4-storage.md).
 
@@ -124,7 +124,7 @@ The accessor methods are the primary way for your bot to interact with state. Ho
 - The accessor's _get_ method:
   - Accessor requests property from the state cache.
   - If the property is in the cache, return it. Otherwise, get it from the state management object.
-    (If it is not yet in state, use the factory method provided in the accessors _get_ call.)
+    (If it's not yet in state, use the factory method provided in the accessors _get_ call.)
 - The accessor's _set_ method:
   - Update the state cache with the new property value.
 - The state management object's _save changes_ method:

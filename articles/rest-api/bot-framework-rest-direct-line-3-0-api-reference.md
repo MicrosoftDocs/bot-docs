@@ -245,11 +245,11 @@ Clients may [receive](bot-framework-rest-direct-line-3-0-receive-activities.md) 
 
 When a client sends an `Activity` to a bot via Direct Line:
 
-- The `type` property specifies the type activity it is sending (typically **message**).
+- The `type` property specifies the type activity it's sending (typically **message**).
 - The `from` property must be populated with a user ID, chosen by the client.
 - Attachments may contain URLs to existing resources or URLs uploaded through the Direct Line attachment endpoint.
 - The `channelData` property is preserved without modification.
-- The total size of the activity, when serialized to JSON and encrypted, must not exceed 256K characters. Therefore it is recommended that activities are kept under 150K. If more data is needed consider breaking the activity into multiple and/or consider using attachments.
+- The total size of the activity, when serialized to JSON and encrypted, must not exceed 256K characters. We recommend that you keep activities under 150K. If more data is needed, consider splitting the activity up or using attachments.
 
 Clients may [send](bot-framework-rest-direct-line-3-0-send-activity.md) a single activity per request.
 

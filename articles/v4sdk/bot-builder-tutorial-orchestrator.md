@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 09/01/2022
+ms.date: 10/11/2022
 monikerRange: 'azure-bot-service-4.0'
 
 ROBOTS: NOINDEX
@@ -19,6 +19,8 @@ ROBOTS: NOINDEX
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 [!INCLUDE [qnamaker-sunset-alert](../includes/qnamaker-sunset-alert.md)]
+
+[!INCLUDE [luis-sunset-alert](../includes/luis-sunset-alert.md)]
 
 If a bot uses multiple Language Understanding (LUIS) models and QnA Maker knowledge bases, you can use Bot Framework Orchestrator to determine which LUIS model or QnA Maker knowledge base best matches the user input. You can use the `bf orchestrator` CLI command to create an Orchestrator snapshot file, then use the snapshot file to route user input to the correct model at run time.
 

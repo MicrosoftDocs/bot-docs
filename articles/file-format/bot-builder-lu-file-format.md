@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: reference
-ms.date: 09/01/2022
+ms.date: 10/11/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -24,6 +24,8 @@ The NLU engine you choose may only be able to interpret subset of the elements t
 An NLU engine relies on a language model to understand what a user says. The engine creates a language model from sets of training examples, just like any machine learning algorithm. Once trained, the engine uses the model to predict the intent of an _utterance_, generally in the form of one or more _intents_ that represent a task or action the user wants to perform and zero or more _entities_ that represent elements relevant to the intent.
 
 You can use LUIS or Orchestrator with any bot developed using the Bot Framework SDK or [Composer][].
+
+[!INCLUDE [luis-sunset-alert](../includes/luis-sunset-alert.md)]
 
 This article is a reference for how to represent language model elements in the .lu file format. For information about how language understanding is used in bots, see [Language Understanding](../v4sdk/bot-builder-concept-luis.md) or [Natural language processing in Composer](/composer/concept-natural-language-processing).
 
@@ -389,7 +391,7 @@ $city:Portland=
 
 ## Patterns
 
-[Patterns][] allow you to cover a large number of examples that should be matched by creating an utterance with place holders for where entities should be found. The patterns are a token level regular expression with place holders for entities. If an utterance has any entity place holders or pattern syntax then it is interpreted as a pattern. Otherwise, it is interpreted as an utterance for training machine learning.
+[Patterns][] allow you to cover a large number of examples that should be matched by creating an utterance with place holders for where entities should be found. The patterns are a token level regular expression with place holders for entities. If an utterance has any entity place holders or pattern syntax then it's interpreted as a pattern. Otherwise, it's interpreted as an utterance for training machine learning.
 
 The entity place holders can correspond to entities of any type or they can be defined by the pattern itself, such as when a section in the pattern is an entity that is identified by looking at the surrounding words.
 
@@ -425,7 +427,7 @@ By contrast, the following example is a _labeled_ utterance where `alarmTime` is
 - delete the {alarmTime=7AM} alarm
 ```
 
-You cannot mix entity labels and entity place holders in the same utterance, but you can use place holders that correspond to machine-learned entities.
+You can't mix entity labels and entity place holders in the same utterance, but you can use place holders that correspond to machine-learned entities.
 
 > [!TIP]
 > You should understand how your bot responds to user input before adding patterns, because patterns are weighted more heavily than example utterances and will skew confidence. There is no harm adding them in the beginning of your model design, but it's easier to see how each pattern changes the model after the model is tested with utterances.
@@ -435,7 +437,7 @@ You cannot mix entity labels and entity place holders in the same utterance, but
 
 A [machine-learning feature][] provides additional context to find a concept contained in your sample utterances. Features will ultimately improve your bots ability to determine the user's intent as well as extract the elements (entities) from the user's utterance that are relevant to that intent. Features are hints, not hard rules and these hints are used in conjunction with the labels to find the relevant data.
 
-The smallest unit that can be a feature is a _token_. A token is an alpha-numeric (A-Z, 0-9) string, it cannot contain any spaces or punctuation. A feature is most often a word or phrase such as people's names a location such as a city or other distinguishing traits such as dates and times. They must be an exact match, so use variations of words, such as:
+The smallest unit that can be a feature is a _token_. A token is an alpha-numeric (A-Z, 0-9) string, it can't contain any spaces or punctuation. A feature is most often a word or phrase such as people's names a location such as a city or other distinguishing traits such as dates and times. They must be an exact match, so use variations of words, such as:
 
 - plural forms
 - verb tenses
@@ -495,9 +497,9 @@ By default, phrase lists are available to all learned intents and entities. Ther
 
 | Availability State   | Description                                                                                     |
 | -------------------- | ----------------------------------------------------------------------------------------------- |
-| enabledForAllModels  | (default) When a phrase list is marked as `enabledForAllModels`, it is available to all models whether or not you specifically list it as a feature.         |
-| disabledForAllModels | When a phrase list is marked as `disabledForAllModels`, it is only used in a model if it is specifically listed as a feature.                |
-| disabled             | When a phrase list is marked as `disabled`, it isn't used anywhere, including any models where it is specifically listed as a feature. This provides an easy means to turn off a phrase list to see how well things work without it. |
+| enabledForAllModels  | (default) When a phrase list is marked as `enabledForAllModels`, it's available to all models whether or not you specifically list it as a feature.         |
+| disabledForAllModels | When a phrase list is marked as `disabledForAllModels`, it's only used in a model if it's specifically listed as a feature.                |
+| disabled             | When a phrase list is marked as `disabled`, it isn't used anywhere, including any models where it's specifically listed as a feature. This provides an easy means to turn off a phrase list to see how well things work without it. |
 
 Phrase lists are globally available by default, and can also be specifically set using the `enabledForAllModels` keyword:
 
@@ -757,21 +759,8 @@ Below are examples of how to make URI references:
 - Read [Debug with Adaptive Tools](../bot-service-debug-adaptive-tools.md) to learn how to analyze .lu files.
 
 [luis]: https://luis.ai
-[intent]: /azure/cognitive-services/luis/luis-concept-intent
 [entity]: /azure/cognitive-services/luis/luis-concept-entity-types
 [ml-entity]: /azure/cognitive-services/luis/luis-concept-entity-types#machine-learned-ml-entity
-[prebuilt-entity]: /azure/cognitive-services/luis/luis-concept-entity-types#prebuilt-entity
-[list-entity]: /azure/cognitive-services/luis/luis-concept-entity-types#list-entity
-[entity-composite]: /azure/cognitive-services/luis/reference-entity-composite
-[regular-expression-entity]: /azure/cognitive-services/luis/luis-concept-entity-types#regular-expression-entity
-[roles]: /azure/cognitive-services/luis/luis-concept-roles
-[patterns]: /azure/cognitive-services/luis/luis-concept-patterns
-[pattern syntax]: /azure/cognitive-services/luis/reference-pattern-syntax
-[pattern-any]: /azure/cognitive-services/luis/luis-concept-entity-types#patternany-entity
-[machine-learning-feature]: /azure/cognitive-services/luis/luis-concept-feature
-[phrase-list]: /azure/cognitive-services/luis/concepts/patterns-features?branch=main#create-a-phrase-list-for-a-concept
-[utterances]: /azure/cognitive-services/luis/luis-concept-utterance
 [orchestrator]: /composer/concept-orchestrator
 [Composer]: /composer/
 [adaptive-tools]: https://marketplace.visualstudio.com/items?itemName=BotBuilder.bot-framework-adaptive-tools
-[luis-metadata]: /azure/cognitive-services/luis/luis-reference-application-settings

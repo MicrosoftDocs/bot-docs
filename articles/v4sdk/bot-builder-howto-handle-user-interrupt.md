@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 08/10/2022
+ms.date: 10/11/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -21,7 +21,12 @@ Handling interruptions is an important aspect of a robust bot. Users won't alway
 ## Prerequisites
 
 - Knowledge of [bot basics][concept-basics], [managing state][concept-state], the [dialogs library][concept-dialogs], and how to [reuse dialogs][component-dialogs].
-- A copy of the **Core bot** sample in [C#][cs-sample], [JavaScript][js-sample], [Java][java-sample] or [Python][python-sample].
+- A copy of the core bot sample in [C#][cs-sample], [JavaScript][js-sample], [Java][java-sample] or [Python][python-sample].
+
+The core bot sample uses Language Understanding (LUIS) to identify user intents; however, identifying user intent is not the focus of this article.
+For information about identifying user intents, see [Natural language understanding](bot-builder-concept-luis.md) and [Add natural language understanding to your bot](bot-builder-howto-v4-luis.md).
+
+[!INCLUDE [luis-sunset-alert](../includes/luis-sunset-alert.md)]
 
 ## About this sample
 
@@ -96,6 +101,7 @@ If the user types "cancel", it calls `cancelAllDialogs` on its inner dialog cont
 
 To use dialogs, install the `botbuilder-dialogs` package and make sure that the sample `requirements.txt` file contains the proper reference such as `botbuilder-dialogs>=4.5.0`.
 For more information, about installing the packages, see the samples repository [README](https://github.com/microsoft/botbuilder-python) file.
+
 > [!NOTE]
 > Running `pip install botbuilder-dialogs` will also install `botbuilder-core`, `botbuilder-connector`, and `botbuilder-schema`.
 
@@ -291,12 +297,6 @@ For reference, here are the class definitions that are used in the call to creat
 [concept-basics]: bot-builder-basics.md
 [concept-state]: bot-builder-concept-state.md
 [concept-dialogs]: bot-builder-concept-dialog.md
-
-[using-luis]: bot-builder-howto-v4-luis.md
-[using-qna]: bot-builder-howto-qna.md
-
-[simple-flow]: bot-builder-dialog-manage-conversation-flow.md
-[prompting]: bot-builder-prompts.md
 [component-dialogs]: bot-builder-compositcontrol.md
 
 [cs-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot#readme

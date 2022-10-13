@@ -32,8 +32,8 @@ Each repository is responsible for maintaining the list of adapters and channels
 
 ## When to use a channel adapter
 
-1. Azure Bot Service does not support the channel you want.
-1. Security and compliance requirements of your deployment dictate that you cannot rely on an outside service.
+1. Azure Bot Service doesn't support the channel you want.
+1. Security and compliance requirements of your deployment dictate that you can't rely on an outside service.
 1. Depth of features that you need in a particular channel may not be supported.
 
 ## When to use an Azure channel

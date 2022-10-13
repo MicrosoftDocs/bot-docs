@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/02/2021
+ms.date: 10/11/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -18,11 +18,11 @@ monikerRange: 'azure-bot-service-4.0'
 
 In this topic we'll show you how to:
 
-- Create unit tests for bots
-- Use assert to check for activities returned by a dialog turn against expected values
-- Use assert to check the results returned by a dialog
-- Create different types of data driven tests
-- Create mock objects for the different dependencies of a dialog (i.e. LUIS recognizers, etc.)
+- Create unit tests for bots.
+- Use assert to check for activities returned by a dialog turn against expected values.
+- Use assert to check the results returned by a dialog.
+- Create different types of data driven tests.
+- Create mock objects for the different dependencies of a dialog, such as language recognizers, and so on.
 
 ## Prerequisites
 
@@ -35,6 +35,11 @@ The [CoreBot Tests](https://github.com/microsoft/BotBuilder-Samples/tree/master/
 The [CoreBot Tests](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot/tests) sample used in this topic references the [botbuilder-testing](https://www.npmjs.com/package/botbuilder-testing) package, [Mocha](https://mochajs.org/) to create unit tests and [Mocha Test Explorer](https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-mocha-test-adapter) to visualize test results in VS Code.
 
 ---
+
+The core bot sample uses Language Understanding (LUIS) to identify user intents; however, identifying user intent is not the focus of this article.
+For information about identifying user intents, see [Natural language understanding](bot-builder-concept-luis.md) and [Add natural language understanding to your bot](bot-builder-howto-v4-luis.md).
+
+[!INCLUDE [luis-sunset-alert](../includes/luis-sunset-alert.md)]
 
 ## Testing Dialogs
 
@@ -102,7 +107,7 @@ The `DialogTestClient` class is included in the [botbuilder-testing]() npm packa
 
 ### DialogTestClient
 
-The first parameter of `DialogTestClient` is the target channel. This allows you to test different rendering logic based on the target channel for your bot (Teams, Slack, etc.). If you are uncertain about your target channel, you can use the `Emulator` or `Test` channel IDs but keep in mind that some components may behave differently depending on the current channel, for example, `ConfirmPrompt` renders the Yes/No options differently for the `Test` and `Emulator` channels. You can also use this parameter to test conditional rendering logic in your dialog based on the channel ID.
+The first parameter of `DialogTestClient` is the target channel. This allows you to test different rendering logic based on the target channel for your bot (Teams, Slack, and so on). If you're uncertain about your target channel, you can use the `Emulator` or `Test` channel IDs but keep in mind that some components may behave differently depending on the current channel, for example, `ConfirmPrompt` renders the Yes/No options differently for the `Test` and `Emulator` channels. You can also use this parameter to test conditional rendering logic in your dialog based on the channel ID.
 
 The second parameter is an instance of the dialog being tested (Note: **"sut"** stands for "System Under Test", we use this acronym in the code snippets in this article).
 
@@ -152,7 +157,7 @@ assert.strictEqual(reply.text, 'All set, I have booked your flight to Seattle fo
 
 ## [C#](#tab/csharp)
 
-The code in the CoreBot sample only asserts the `Text` property of the returned activities. In more complex bots you may want to assert other properties like `Speak`, `InputHint`, `ChannelData`, etc.
+The code in the CoreBot sample only asserts the `Text` property of the returned activities. In more complex bots you may want to assert other properties like `Speak`, `InputHint`, `ChannelData`, and so on.
 
 ```csharp
 Assert.Equal("Sure thing, wait while I finalize your reservation...", reply.Text);
@@ -164,7 +169,7 @@ You can do this by checking each property individually as shown above, you can w
 
 ## [JavaScript](#tab/javascript)
 
-The code in the CoreBot sample only asserts the `text` property of the returned activities. In more complex bots you may want to assert other properties like `speak`, `inputHint`, `channelData`, etc.
+The code in the CoreBot sample only asserts the `text` property of the returned activities. In more complex bots you may want to assert other properties like `speak`, `inputHint`, `channelData`, and so on.
 
 ```javascript
 assert.strictEqual(reply.text, 'Sure thing, wait while I finalize your reservation...');
@@ -178,7 +183,7 @@ You can do this by checking each property individually as shown above, you can w
 
 ### Passing parameters to your dialogs
 
-The `DialogTestClient` constructor has an `initialDialogOptions` that can be used to pass parameters to your dialog. For example, the `MainDialog` in this sample, initializes a `BookingDetails` object from the LUIS results with the entities it resolves from the user's utterance and passes this object in the call to invoke `BookingDialog`.
+The `DialogTestClient` constructor has an `initialDialogOptions` that can be used to pass parameters to your dialog. For example, the `MainDialog` in this sample, initializes a `BookingDetails` object from the language recognition results, with the entities it resolves from the user's utterance, and passes this object in the call to invoke `BookingDialog`.
 
 You can implement this in a test as follows:
 
@@ -281,7 +286,7 @@ The `dialogTurnResult` property can also be used to inspect and assert intermedi
 
 ### Analyzing test output
 
-Sometimes it is necessary to read a unit test transcript to analyze the test execution without having to debug the test.
+Sometimes it's necessary to read a unit test transcript to analyze the test execution without having to debug the test.
 
 ## [C#](#tab/csharp)
 
@@ -312,7 +317,7 @@ public class BookingDialogTests
 }
 ```
 
-Here is an example of what the `XUnitDialogTestLogger` logs to the output window when it is configured:
+Here is an example of what the `XUnitDialogTestLogger` logs to the output window when it's configured:
 
 ![Middleware output from XUnit](media/how-to-unit-test/cs/XUnitMiddlewareOutput.png)
 
@@ -328,7 +333,7 @@ To use this middleware, simply pass it to `DialogTestClient` through the `middle
 const client = new DialogTestClient('msteams', sut, testData.initialData, [new DialogTestLogger()]);
 ```
 
-Here is an example of what the `DialogTestLogger` logs to the output window when it is configured:
+Here is an example of what the `DialogTestLogger` logs to the output window when it's configured:
 
 ![Output from the dialog test logger](media/how-to-unit-test/js/DialogTestLoggerOutput.png)
 
@@ -338,9 +343,12 @@ This output will be also logged on the build server during the continuous integr
 
 ## Data Driven Tests
 
-In most cases the dialog logic doesn't change and the different execution paths in a conversation are based on the user utterances. Rather than writing a single unit test for each variant in the conversation it is easier to use data driven tests (also known as parameterized test).
+In most cases the dialog logic doesn't change and the different execution paths in a conversation are based on the user utterances. Rather than writing a single unit test for each variant in the conversation it's easier to use data driven tests (also known as parameterized test).
 
-For example, the sample test in the overview section of this document shows how to test one execution flow, but what happens if the user says no to the confirmation? what if they use a different date? etc.
+For example, the sample test in the overview section of this document shows how to test one execution flow, but not others, such as:
+
+- What happens if the user says no to the confirmation?
+- What if they use a different date?
 
 Data driven tests allow us to test all these permutations without having to rewrite the tests.
 
@@ -396,7 +404,7 @@ The new test will be executed 4 times with the different parameters and each cas
 
 ### Theory tests using MemberData and complex types
 
-`InlineData` is useful for small data driven tests that receive simple value type parameters (string, int, etc.).
+`InlineData` is useful for small data driven tests that receive simple value type parameters (string, int, and so on).
 
 The `BookingDialog` receives a `BookingDetails` object and returns a new `BookingDetails` object. A non-parameterized version of a test for this dialog would look as follows:
 
@@ -591,7 +599,7 @@ The new test will be executed 4 times with the different parameters and each cas
 
 ### Data driven tests with complex types
 
-Using a simple list of utterances is useful for small data driven tests that receive simple value type parameters (string, int, etc.) or small objects.
+Using a simple list of utterances is useful for small data driven tests that receive simple value type parameters (string, int, and so on) or small objects.
 
 The `BookingDialog` receives a `BookingDetails` object and returns a new `BookingDetails` object. A non parameterized version of a test for this dialog would look as follows:
 
@@ -708,11 +716,11 @@ Here is an example of the results for the `DialogFlowUseCases` test suite in Moc
 
 You can use mock elements for the things that are not currently tested. For reference, this level can generally be thought of as unit and integration testing.
 
-Mocking as many elements as you can allows for better isolation of the piece you're testing. Candidates for mock elements include storage, the adapter, middleware, activity pipeline, channels, and anything else that is not directly part of your bot. This could also involve removing certain aspects temporarily, such as middleware not involved in the part of your bot that you are testing, to isolate each piece. However, if you are testing your middleware, you may want to mock your bot instead.
+Mocking as many elements as you can allows for better isolation of the piece you're testing. Candidates for mock elements include storage, the adapter, middleware, activity pipeline, channels, and anything else that is not directly part of your bot. This could also involve removing certain aspects temporarily, such as middleware not involved in the part of your bot that you're testing, to isolate each piece. However, if you're testing your middleware, you may want to mock your bot instead.
 
 Mocking elements can take a handful of forms, from replacing an element with a different known object to implementing a bare bones hello world functionality. This could also take the form of simply removing the element, if it's not necessary, or simply force it to do nothing.
 
-Mocks allow us to configure the dependencies of a dialog and ensure they are in a known state during the execution of the test without having to rely on external resources like databases, LUIS models or other objects.
+Mocks allow us to configure the dependencies of a dialog and ensure they are in a known state during the execution of the test without having to rely on external resources like databases, language models or other objects.
 
 In order to make your dialog easier to test and reduce its dependencies on external objects, you may need to inject the external dependencies in the dialog constructor.
 
@@ -868,6 +876,8 @@ In this example, we implement the mock dialog by deriving from `BookingDialog`  
 
 ### Mocking LUIS results
 
+[!INCLUDE [luis-sunset-alert](../includes/luis-sunset-alert.md)]
+
 In simple scenarios, you can implement mock LUIS results through code as follows:
 
 ## [C#](#tab/csharp)
@@ -915,7 +925,7 @@ const mockRecognizer = new MockFlightBookingRecognizer(mockLuisResult);
 
 ---
 
-But LUIS results can be complex, and when they are it is simpler to capture the desired result in a json file, add it as a resource to your project and deserialize it into a LUIS result. Here is an example:
+LUIS results can be complex. When they are, it's simpler to capture the desired result in a JSON file, add it as a resource to your project, and deserialize it into a LUIS result. Here's an example:
 
 ## [C#](#tab/csharp)
 

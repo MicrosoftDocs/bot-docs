@@ -339,7 +339,7 @@ The remainder of this article will demonstrate how to save to persistent storage
 >
 > Containers created with _Cosmos DB storage_ can be used with _Cosmos DB partitioned storage_. Read [Partitioning in Azure Cosmos DB](/azure/cosmos-db/partitioning-overview) for more information.
 >
-> Also note that, unlike the legacy Cosmos DB storage, the Cosmos DB partitioned storage does not automatically create a database within your Cosmos DB account. You need to [create a new database manually](/azure/cosmos-db/create-cosmosdb-resources-portal), but skip manually creating a container since _CosmosDbPartitionedStorage_ will create the container for you.
+> Also note that, unlike the legacy Cosmos DB storage, the Cosmos DB partitioned storage doesn't automatically create a database within your Cosmos DB account. You need to [create a new database manually](/azure/cosmos-db/create-cosmosdb-resources-portal), but skip manually creating a container since _CosmosDbPartitionedStorage_ will create the container for you.
 
 Now that you've used memory storage, we'll update the code to use Azure Cosmos DB. Cosmos DB is Microsoft's globally distributed, multi-model database. Azure Cosmos DB enables you to elastically and independently scale throughput and storage across any number of Azure's geographic regions. It offers throughput, latency, availability, and consistency guarantees with comprehensive service level agreements (SLAs).
 
@@ -371,7 +371,7 @@ The account creation takes a few minutes. Wait for the portal to display the _Co
 ### Add a database
 
 > [!NOTE]
-> You should not create the container yourself. Your bot will create it for you when creating its internal Cosmos DB client, ensuring it is configured correctly for storing bot state.
+> You should not create the container yourself. Your bot will create it for you when creating its internal Cosmos DB client, ensuring it's configured correctly for storing bot state.
 
 1. Navigate to the **Data Explorer** page within your newly created Cosmos DB account, then choose **New Database** from the **New Container** drop-down. A panel will then open on the right-hand side of the window, where you can enter the details for the new database.
 
@@ -469,7 +469,7 @@ pip install botbuilder-azure
 > [!NOTE]
 > Version 4.6 introduced a new Cosmos DB storage provider, the _Cosmos DB partitioned storage_ class, and the original _Cosmos DB storage_ class is deprecated. Containers created with _Cosmos DB storage_ can be used with _Cosmos DB partitioned storage_. Read [Partitioning in Azure Cosmos DB](/azure/cosmos-db/partitioning-overview) for more information.
 >
-> Unlike the legacy Cosmos DB storage, the Cosmos DB partitioned storage does not automatically create a database within your Cosmos DB account. You need to [create a new database manually](/azure/cosmos-db/create-cosmosdb-resources-portal), but skip manually creating a container since _CosmosDbPartitionedStorage_ will create the container for you.
+> Unlike the legacy Cosmos DB storage, the Cosmos DB partitioned storage doesn't automatically create a database within your Cosmos DB account. You need to [create a new database manually](/azure/cosmos-db/create-cosmosdb-resources-portal), but skip manually creating a container since _CosmosDbPartitionedStorage_ will create the container for you.
 
 ### [C#](#tab/csharp)
 
@@ -898,7 +898,7 @@ After you've run your bot and saved your information, we can view it in under th
 Azure blob transcript storage provides a specialized storage option that allows you to easily save and retrieve user conversations in the form of a recorded transcript. Azure blob transcript storage is useful for automatically capturing user inputs to examine while debugging your bot's performance.
 
 > [!NOTE]
-> Python does not currently support _Azure Blob transcript storage_.
+> Python doesn't currently support _Azure Blob transcript storage_.
 > While JavaScript supports Blob transcript storage, the following directions are for C# only.
 
 ### Set up a Blob transcript storage container

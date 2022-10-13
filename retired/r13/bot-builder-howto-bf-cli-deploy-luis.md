@@ -33,7 +33,7 @@ This article explains how to deploy a LUIS resource. For information on how to u
 This article describes how to perform some common tasks using the Bot Framework CLI.
 
 
-Once your bot project's language understanding resources have been created, you are ready to follow the steps outlined in this article to get LUIS working.
+Once your bot project's language understanding resources have been created, you're ready to follow the steps outlined in this article to get LUIS working.
 
 ## Create your LUIS authoring resource in Azure
 
@@ -63,7 +63,7 @@ The LUIS authoring resource includes information your bot will use to access you
 
 > [!TIP]
 >
-> There are two types of subscription keys associated with a LUIS resource, depending on which type of LUIS resource you are referring to. A LUIS authoring resource has an authoring key and a LUIS prediction resource has a prediction key, both are subscription keys and both can be found in the _Keys and endpoint_ blade.
+> There are two types of subscription keys associated with a LUIS resource, depending on which type of LUIS resource you're referring to. A LUIS authoring resource has an authoring key and a LUIS prediction resource has a prediction key, both are subscription keys and both can be found in the _Keys and endpoint_ blade.
 
 For more information on see [Create LUIS resources][luis-how-to-azure-subscription].
 

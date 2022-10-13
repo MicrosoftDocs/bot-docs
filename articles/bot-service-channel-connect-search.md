@@ -241,7 +241,7 @@ To remove the Search channel from your bot:
 To delete your bot resource:
 
 1. In the Azure portal, go to your bot resource.
-1. If you have not already done so, remove the Search channel from your bot.
+1. If you haven't already done so, remove the Search channel from your bot.
 1. At the top of the **Overview** pane, select **Delete**.
 1. Select **OK** to confirm the operation.
 

@@ -112,7 +112,7 @@ Once you have your **OAuth2 Proxy Service** running, you can create an *OAuth Se
 
 1. Give a name to the connection setting.
 1. Select the **Generic Oauth 2** service provider.
-1. Enter a **Client id** and **Client secret** for the connection. These values might be provided by your advanced or custom identity provider, or these could be specific just to your proxy if the identity provider you are using does not use client id and secret.
+1. Enter a **Client id** and **Client secret** for the connection. These values might be provided by your advanced or custom identity provider, or these could be specific just to your proxy if the identity provider you're using doesn't use client id and secret.
 1. For the **Authorization URL**, you should copy the address of your authorization REST API, for example `https://proxy.com/api/oauth/authorize`.
 1. For the **Token and Refresh URL**, you should copy the address of your token REST API, for example `https://proxy.com/api/oauth/token`. The Token Exchange URL is valid only for AAD based providers and so can be ignored.
 1. Finally, add any scopes that are appropriate.

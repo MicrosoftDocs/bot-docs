@@ -62,7 +62,7 @@ The following examples shows how to add a Web Chat control to a website.
 
 > `userID`, `username`, `locale`, `botAvatarInitials`, and `userAvatarInitials` are all optional parameters to pass into the `renderWebChat` method.  For more information about style, see [Why styleOptions?](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/02.branding-styling-and-customization/a.branding-web-chat#why-stylesetoptions). To learn more about Web Chat properties, look at the [Web Chat API Reference](#web-chat-api-reference) section.
 
-> Additionally, if your bot is a regional bot (meaning your bot resource is in a region other than "global"), you must specify the regional directline URL by setting it in an additional `domain` field in the `window.WebChat.createDirectLine()` method. Specify the domain as either `europe.webchat.botframework.com` or `unitedstates.webchat.botframework.com`, whichever is appropriate for your chosen region. Read [Answering Europe’s Call: Storing and Processing EU Data in the EU](https://blogs.microsoft.com/eupolicy/2021/05/06/eu-data-boundary/) for information about data residency.
+> Additionally, if your bot is a regional bot (meaning your bot resource is in a region other than "global"), you must specify the regional directline URL by setting it in an additional `domain` field in the `window.WebChat.createDirectLine()` method. Specify the domain as either `europe.webchat.botframework.com` or `unitedstates.webchat.botframework.com`, whichever is appropriate for your chosen region. Read [Answering Europe's Call: Storing and Processing EU Data in the EU](https://blogs.microsoft.com/eupolicy/2021/05/06/eu-data-boundary/) for information about data residency.
 
 ### Integrate with JavaScript
 
@@ -125,11 +125,11 @@ export default class extends React.Component {
 See a working sample of [Web Chat rendered via React](https://github.com/microsoft/BotFramework-WebChat/tree/main/samples/01.getting-started/e.host-with-react).
 
 > [!TIP]
-> If you are new to React and jsx you can find training on Reacts [Getting Started](https://reactjs.org/docs/getting-started.html) page.
+> If you're new to React and jsx you can find training on Reacts [Getting Started](https://reactjs.org/docs/getting-started.html) page.
 
 ## Customize Web Chat UI
 
-Web Chat is designed to be customizable without forking the source code. The table below outlines what kind of customizations you can achieve when you are importing Web Chat in different ways. This list is not exhaustive.
+Web Chat is designed to be customizable without forking the source code. The table below outlines what kind of customizations you can achieve when you're importing Web Chat in different ways. This list is not exhaustive.
 
 | Customization                 | CDN bundle         | React              |
 | ----------------------------- | ------------------ | ------------------ |
@@ -166,10 +166,8 @@ Also, feel free to examine the source code starting with [`packages/component/sr
 Web Chat supports the latest 2 versions of modern browsers like Chrome, Edge, and FireFox.
 If you need Web Chat in Internet Explorer 11, please see the [ES5 bundle](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/01.getting-started/c.es5-bundle) and [demo](https://microsoft.github.io/BotFramework-WebChat/01.getting-started/c.es5-bundle/).
 
-Please note, however:
-
-- Web Chat does not support Internet Explorer older than version 11
-- Customization as shown in non-ES5 samples are not supported for Internet Explorer. Because IE11 is a non-modern browser, it does not support ES6, and many samples that use arrow functions and modern promises would need to be manually converted to ES5.  If you are in need of heavy customization for your app, we strongly recommend developing your app for a modern browser like Google Chrome or Edge.
+- Web Chat doesn't support Internet Explorer older than version 11
+- Customization as shown in non-ES5 samples are not supported for Internet Explorer. Because IE11 is a non-modern browser, it doesn't support ES6, and many samples that use arrow functions and modern promises would need to be manually converted to ES5.  If you're in need of heavy customization for your app, we strongly recommend developing your app for a modern browser like Google Chrome or Edge.
 - Web Chat has no plan to support samples for IE11 (ES5).
 - For customers who wish to manually rewrite our other samples to work in IE11, we recommend looking into converting code from ES6+ to ES5 using polyfills and transpilers like [`babel`](https://babeljs.io/docs/en/next/babel-standalone.html).
 

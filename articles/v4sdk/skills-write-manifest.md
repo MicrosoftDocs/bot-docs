@@ -255,7 +255,7 @@ Describes any other activity type accepted or sent by the skill.
 |:-|:-|:-|:-|
 | type | String | Required | The activity type. Must be one of the other Bot Framework activity types: "contactRelationUpdate", "conversationUpdate", "deleteUserData", "endOfConversation", "handoff", "installationUpdate", "messageDelete", "messageReaction", "messageUpdate", "suggestion", "trace", or "typing". |
 
-The otherActivities object can include other properties, but the skill manifest schema does not define their meaning.
+The otherActivities object can include other properties, but the skill manifest schema doesn't define their meaning.
 
 ### [v2.0](#tab/v2-0)
 
@@ -289,7 +289,7 @@ Here's a sample subschema for flight booking information.
 
 ## Dispatch models
 
-The dispatch model contains a list of language models and a list of top-level intents supported by the skill. It is an advanced feature to enable a developer of a skill consumer to compose a language model that combines the features of the consumer and skill bots.
+The dispatch model contains a list of language models and a list of top-level intents supported by the skill. It's an advanced feature to enable a developer of a skill consumer to compose a language model that combines the features of the consumer and skill bots.
 
 Each language model uses the `.lu` or `.qna` file format. For more information on these formats, see [.lu file format](../file-format/bot-builder-lu-file-format.md) and [.qna file format](../file-format/bot-builder-qna-file-format.md).
 

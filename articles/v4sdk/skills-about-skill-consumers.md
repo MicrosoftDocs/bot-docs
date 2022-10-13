@@ -26,7 +26,7 @@ From the skill's perspective, the skill consumer is the channel over which it co
 As a skill consumer, a root bot includes some additional logic to manage traffic between it and a skill:
 
 - Configuration information for each skill the root uses.
-- A _conversation ID factory_ that allows the root to switch back and forth between the conversation it is having with the user and the one it is having with a skill.
+- A _conversation ID factory_ that allows the root to switch back and forth between the conversation it's having with the user and the one it's having with a skill.
 - A _skill client_ that can package and forward activities to a skill bot.
 - A _skill handler_ that can receive requests and unpack activities from a skill bot.
 
@@ -69,7 +69,7 @@ The skill consumer uses a skill handler to receive activities from a skill. The 
 ## Manage a skill directly
 
 You need to add logic to your skill consumer to track any active skills.
-It is up to the consumer as to how it manages skills in general, whether it can maintain multiple active skills in parallel or not, and so on.
+It's up to the consumer as to how it manages skills in general, whether it can maintain multiple active skills in parallel or not, and so on.
 Specific scenarios to consider include:
 
 - Initiating a new consumer-skill conversation. (This will be associated with a specific consumer-user conversation.)
@@ -84,7 +84,7 @@ See how to [implement a skill consumer](skill-implement-consumer.md) for a consu
 
 ## Manage a skill using a skill dialog
 
-If you are using the [dialogs library](bot-builder-concept-dialog.md), you can use a _skill dialog_ to manage a skill. While the skill dialog is the active dialog, it will forward activities to the associated skill.
+If you're using the [dialogs library](bot-builder-concept-dialog.md), you can use a _skill dialog_ to manage a skill. While the skill dialog is the active dialog, it will forward activities to the associated skill.
 
 - When you create the skill dialog, use the _dialog options_ parameter to provide all the information the dialog needs to manage the skill, such as the consumer's app ID and callback URL, the conversation ID factory to use, the skill's properties, and so on.
   - If you want to manage more than one skill as a dialog, you will need to create a separate skill dialog for each skill.

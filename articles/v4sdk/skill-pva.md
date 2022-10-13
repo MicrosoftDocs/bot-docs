@@ -26,7 +26,7 @@ Power Virtual Agents places restrictions on what you may declare in your [skill 
 
 - You may declare only 100 or fewer actions.
 - Each action is limited to 25 or fewer inputs or outputs.
-- You cannot use the array type for inputs or outputs.
+- You can't use the array type for inputs or outputs.
 
 ## Same-tenant restriction
 

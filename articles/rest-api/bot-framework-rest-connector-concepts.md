@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: conceptual
-ms.date: 10/18/2021
+ms.date: 10/11/2022
 ---
 
 # Key concepts in the Bot Connector API
@@ -41,6 +41,10 @@ The Bot Framework provides client libraries that can be used to build bots in C#
 - [Bot Framework SDK for Java](https://github.com/microsoft/botbuilder-java#readme).
 
 In addition to simplifying calls to Bot Framework REST APIs, each Bot Framework SDK also provides support for building dialogs that encapsulate conversational logic, built-in prompts for simple things such as Yes/No, strings, numbers, and enumerations, built-in support for powerful AI frameworks such as [LUIS](https://www.luis.ai/), and more.
+
+[!INCLUDE [qnamaker-sunset-alert](../includes/qnamaker-sunset-alert.md)]
+
+[!INCLUDE [luis-sunset-alert](../includes/luis-sunset-alert.md)]
 
 > [!NOTE]
 > As an alternative to using the these SDKs, you can generate your own client library in the language of your choice by using the [Bot Connector Swagger file](https://github.com/Microsoft/botbuilder-dotnet/blob/master/libraries/Swagger/ConnectorAPI.json) or code direct to its REST API.

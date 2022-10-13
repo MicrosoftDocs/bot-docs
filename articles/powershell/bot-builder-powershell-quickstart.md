@@ -147,7 +147,7 @@ Remove-AzBotService -Name MyEchoBot -ResourceGroupName myResourceGroup
 
 > [!CAUTION]
 > The following example deletes the specified resource group and all resources contained within it.
-> If resources outside the scope of this article exist in the specified resource group, they will
+> If resources outside the scope of this article exist in the specified resource group, they'll
 > also be deleted.
 
 ```azurepowershell-interactive

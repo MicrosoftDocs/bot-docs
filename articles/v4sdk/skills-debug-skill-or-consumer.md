@@ -39,7 +39,7 @@ In this scenario, you do not need to modify the configuration of the deployed sk
 
 ## To debug a local skill bot
 
-While you are testing changes to a skill, you may want to run and debug it locally while it is accessed from a consumer bot hosted on a staging server.
+While you're testing changes to a skill, you may want to run and debug it locally while it's accessed from a consumer bot hosted on a staging server.
 
 In this scenario, you need to modify the configuration of the deployed skill consumer. Since you will use the consumer to test the bot.
 

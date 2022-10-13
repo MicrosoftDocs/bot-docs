@@ -170,7 +170,7 @@ The next step is to register your identity provider with your bot.
     1. For **Client secret**, enter the secret that you created to grant the bot access to the Azure AD app.
     1. For **Grant Type**, enter `authorization_code`.
     1. For **Login URL**, enter `https://login.microsoftonline.com`.
-    1.For **Tenant ID**, enter the **directory (tenant) ID** that you recorded earlier for your Azure AD app or **common** depending on the supported account types selected when you created the ADD app. To decide which value to assign, follow these criteria:
+    1. For **Tenant ID**, enter the **directory (tenant) ID** that you recorded earlier for your Azure AD app or **common** depending on the supported account types selected when you created the ADD app. To decide which value to assign, follow these criteria:
 
         - When creating the Azure AD app, if you selected **Accounts in this organizational directory only (Microsoft only - Single tenant)**, enter the tenant ID you recorded earlier for the Azure AD app.
         - However, if you selected **Accounts in any organizational directory (Any Azure AD directory - Multi tenant and personal Microsoft accounts e.g. Xbox, Outlook.com)** or **Accounts in any organizational directory(Microsoft Azure AD directory - Multi tenant)**, enter `common` instead of a tenant ID. Otherwise, the Azure AD app will verify through the tenant whose ID was selected and exclude personal MS accounts.
