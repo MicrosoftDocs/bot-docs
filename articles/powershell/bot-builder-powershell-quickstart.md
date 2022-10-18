@@ -33,7 +33,7 @@ Creating a bot with Azure Bot Service and creating a bot locally are independent
   account before you begin.
 
 - An existing Azure AD application registration that can be used from any Azure AD tenant.
-  - To complete this quickstart, you will need the app ID and secret for the application registration.
+  - To complete this quickstart, you'll need the app ID and secret for the application registration.
 
 - [Install the Az PowerShell module](/powershell/azure/install-az-ps). This is required because the Az.BotService module is in preview.
 

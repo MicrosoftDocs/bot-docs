@@ -85,7 +85,7 @@ There are two main patterns for starting and managing dialogs from a bot.
 A dialog context contains information about all active dialogs and includes a _dialog stack_, which acts as a _call stack_ for all the active dialogs.
 Each container dialog has an inner set of dialogs that it's controlling, and so each active container dialog introduces an inner dialog context and dialog stack as part of its state.
 
-While you will not access the stack directly, understanding that it exists and its function will help you understand how various aspects of the dialogs library work.
+While you won't access the stack directly, understanding that it exists and its function will help you understand how various aspects of the dialogs library work.
 
 ## Container dialogs
 

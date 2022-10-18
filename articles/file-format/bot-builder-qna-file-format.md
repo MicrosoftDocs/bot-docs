@@ -49,7 +49,7 @@ Here's are examples of question and answer definitions:
 ### ? who is the ceo?
 ```
 You can change the default message if you use the QnAMakerDialog.
-See [this link](https://docs.botframework.com/en-us/azure-bot-service/templates/qnamaker/#navtitle) for details.
+For details, see [Azure Bot Service documentation](https://docs.botframework.com/azure-bot-service/templates/qnamaker/#navtitle).
 ```
 
 
@@ -234,7 +234,8 @@ The Portland store is open 24/7.
 ```
 ````
 
-Note that the link will not actually render as a clickable link in most Markdown renderers.
+> [!TIP]
+> The link won't actually render as a selectable link in most Markdown renderers.
 
 ### Assign an explicit ID to a QnA pair
 

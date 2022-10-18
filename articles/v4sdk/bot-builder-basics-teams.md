@@ -36,13 +36,13 @@ However, Teams includes additional information in `conversationUpdate` activitie
 
 When your Teams activity handler&ndash;bot receives a message activity, its turn handler routes the incoming message activity to its `OnMessageActivityAsync` handler, similar to how an activity handler&ndash;based bot would. However, when your Teams bot receives a conversation update activity, the Teams version of the `OnConversationUpdateActivityAsync` handler processes the activity.
 
-There is no base implementation for most of the Teams-specific activity handlers. You will need to override these handlers and provide appropriate logic for your bot.
+There is no base implementation for most of the Teams-specific activity handlers. You'll need to override these handlers and provide appropriate logic for your bot.
 
 ### [JavaScript](#tab/javascript)
 
 When your Teams activity handler&ndash;bot receives a message activity, its turn handler routes the incoming message activity to its `onMessage` handler, similar to how an activity handler&ndash;based bot would. However, when your Teams bot receives a conversation update activity, the Teams version of the `dispatchConversationUpdateActivity` handler processes the activity.
 
-There is no base implementation for most of the Teams-specific activity handlers. You will need to override these handlers and provide appropriate logic for your bot.
+There is no base implementation for most of the Teams-specific activity handlers. You'll need to override these handlers and provide appropriate logic for your bot.
 
 When overriding these Teams-specific activity handlers, define your bot logic, then **be sure to call `next()` at the end**. By calling `next()`, you ensure that the next handler is run.
 
@@ -50,19 +50,19 @@ When overriding these Teams-specific activity handlers, define your bot logic, t
 
 When your Teams activity handler&ndash;bot receives a message activity, its turn handler routes the incoming message activity to its `onMessageActivity` handler, similar to how an activity handler&ndash;based bot would. However, when your Teams bot receives a conversation update activity, the Teams version of the `onConversationUpdateActivity` handler processes the activity.
 
-There is no base implementation for most of the Teams-specific activity handlers. You will need to override these handlers and provide appropriate logic for your bot.
+There is no base implementation for most of the Teams-specific activity handlers. You'll need to override these handlers and provide appropriate logic for your bot.
 
 ### [Python](#tab/python)
 
 When your Teams activity handler&ndash;bot receives a message activity, its turn handler routes the incoming message activity to its `on_message_activity` handler, similar to how an activity handler&ndash;based bot would. However, when your Teams bot receives a conversation update activity, the Teams version of the `on_conversation_update_activity` handler processes the activity.
 
-There is no base implementation for most of the Teams-specific activity handlers. You will need to override these handlers and provide appropriate logic for your bot.
+There is no base implementation for most of the Teams-specific activity handlers. You'll need to override these handlers and provide appropriate logic for your bot.
 
 ---
 
 All of the activity handlers described in the [activity handling](bot-activity-handler-concept.md#activity-handling) section of the _Event-driven conversations using an activity handler_ article will continue to work as they do with a non-Teams bot, except for handling the members added and removed activities, these activities will be different in the context of a team, where the new member is added to the team as opposed to a message thread. For more information, see [Teams conversation update activities](#teams-conversation-update-activities).
 
-To implement your logic for these Teams-specific activity handlers, you will override methods in your bot.
+To implement your logic for these Teams-specific activity handlers, you'll override methods in your bot.
 
 ## Teams-bot logic
 

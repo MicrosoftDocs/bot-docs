@@ -76,7 +76,7 @@ This section describes how to enable the Direct Line App Service extension using
 
 [!INCLUDE [Troubleshoot Direct Line extension](includes/directline-troubleshoot.md)]
 
-- Enable the bot to use the out of process hosting model; otherwise, you will receive an *HTTP Error 500.34 - ANCM Mixed Hosting* error (where *ANCM* stands for *ASP.NET Core Module*). This error occurs because the bot template is using the `InProcess` hosting model by default. To configure out of process hosting, see [Out-of-process hosting model](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#out-of-process-hosting-model).
+- Enable the bot to use the out of process hosting model; otherwise, you'll receive an *HTTP Error 500.34 - ANCM Mixed Hosting* error (where *ANCM* stands for *ASP.NET Core Module*). This error occurs because the bot template is using the `InProcess` hosting model by default. To configure out of process hosting, see [Out-of-process hosting model](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#out-of-process-hosting-model).
 See [Attributes of the aspNetCore element](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#attributes-of-the-aspnetcore-element) and [Configuration with web.config](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#configuration-with-webconfig) for more information.
 
 - If you attempt to use OAuth with the Direct Line App Service extension and encounter the error "Unable to get the bot AppId from the audience claim.", set `ClaimsIdentity` to `AudienceClaim` on the `BotFrameworkHttpAdapter`. To accomplish this, a developer may subclass the adapter. For example:

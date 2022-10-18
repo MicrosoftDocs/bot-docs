@@ -59,7 +59,7 @@ HTTP/1.1 200 OK
 
 ## Timing considerations
 
-Even though Direct Line is a multi-part protocol with potential timing gaps, the protocol and service is designed to make it easy to build a reliable client. The `watermark` property that is sent in the Get Messages response is reliable. A client will not miss any messages as long as it replays the watermark verbatim.
+Even though Direct Line is a multi-part protocol with potential timing gaps, the protocol and service is designed to make it easy to build a reliable client. The `watermark` property that is sent in the Get Messages response is reliable. A client won't miss any messages as long as it replays the watermark verbatim.
 
 Clients should choose a polling interval that matches their intended use.
 

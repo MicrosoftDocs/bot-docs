@@ -71,7 +71,7 @@ To generate a scope URI and application ID for your bot:
     1. In the **Add a client application** pane, set **Client ID** to `81473081-50b9-469a-b9d8-303109583ecb`, the Search platform's client ID.
     1. Under **Authorized scopes**, select the scope URI you created in the previous step.
     1. Select **Add application**.
-1. Go to the **Overview** pane. Copy the **Application ID URI**. You will need this when you register your bot in the Search channel.
+1. Go to the **Overview** pane. Copy the **Application ID URI**. You'll need this when you register your bot in the Search channel.
 
 ## Implement your bot
 

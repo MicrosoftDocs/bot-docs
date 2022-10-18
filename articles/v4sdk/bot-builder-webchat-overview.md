@@ -25,7 +25,7 @@ If you're looking to migrate from Web Chat v3 to v4, jump ahead to [the migratio
 > For previous versions of Web Chat (v3), visit the [Web Chat v3 branch](https://github.com/Microsoft/BotFramework-WebChat/tree/v3).
 
 First, create a bot using [Azure Bot Service](https://azure.microsoft.com/services/bot-service/).
-Once the bot is created, you will need to [obtain the bot's Web Chat secret](../bot-service-channel-connect-webchat.md#get-your-bot-secret-key) in Azure Portal. Then use the secret to [generate a token](../rest-api/bot-framework-rest-direct-line-3-0-authentication.md) and pass it to your Web Chat.
+Once the bot is created, you'll need to [obtain the bot's Web Chat secret](../bot-service-channel-connect-webchat.md#get-your-bot-secret-key) in Azure portal. Then use the secret to [generate a token](../rest-api/bot-framework-rest-direct-line-3-0-authentication.md) and pass it to your Web Chat.
 
 The following examples shows how to add a Web Chat control to a website.
 
@@ -175,9 +175,9 @@ If you need Web Chat in Internet Explorer 11, please see the [ES5 bundle](https:
 
 *Testing unreleased features is only available via MyGet packaging at this time.*
 
-If you want to test a feature or bug fix that has not yet been released, you will want to point your Web Chat package to Web Chat's daily feed, as opposed the official npmjs feed.
+If you want to test a feature or bug fix that has not yet been released, you'll want to point your Web Chat package to Web Chat's daily feed, as opposed the official npmjs feed.
 
-Currently, you may access Web Chat's dailies by subscribing to our MyGet feed. To do this, you will need to update the registry in your project. **This change is reversible, and our directions include how to revert back to subscribing to the official release**.
+Currently, you may access Web Chat's dailies by subscribing to our MyGet feed. To do this, you'll need to update the registry in your project. **This change is reversible, and our directions include how to revert back to subscribing to the official release**.
 
 ### Subscribe to latest bits on `myget.org`
 

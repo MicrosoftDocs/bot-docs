@@ -17,7 +17,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-Direct Line Speech uses a new WebSocket based streaming capability of Bot Framework to exchange messages between the Direct Line Speech channel and your bot. After enabling the Direct Line Speech channel in the Azure Portal, you will need to update your bot to listen for and accept these WebSocket connections. These instructions explain how to do this.
+Direct Line Speech uses a new WebSocket based streaming capability of Bot Framework to exchange messages between the Direct Line Speech channel and your bot. After enabling the Direct Line Speech channel in the Azure portal, you'll need to update your bot to listen for and accept these WebSocket connections. These instructions explain how to do this.
 
 ## Upgrade to the latest version of the SDK
 
@@ -25,7 +25,7 @@ For Direct Line Speech ensure you're using the latest version of Bot Builder SDK
 
 ## Update your .NET Core bot if it uses AddBot and UseBotFramework
 
-If you have created a bot using v4 of the Bot Builder SDK prior to version 4.3.2, your bot likely doesn't include a BotController but instead uses the AddBot() and UseBotFramework() methods in the Startup.cs file to expose the POST endpoint where the bot receives messages. To expose the new streaming endpoint, you will need to add a BotController and remove the AddBot() and UseBotFramework() methods. These instructions walk through the changes that need to be made. If you already have these changes, continue to the next step.
+If you have created a bot using v4 of the Bot Builder SDK prior to version 4.3.2, your bot likely doesn't include a BotController but instead uses the AddBot() and UseBotFramework() methods in the Startup.cs file to expose the POST endpoint where the bot receives messages. To expose the new streaming endpoint, you'll need to add a BotController and remove the AddBot() and UseBotFramework() methods. These instructions walk through the changes that need to be made. If you already have these changes, continue to the next step.
 
 Add a new MVC controller to your bot project by adding a file called BotController.cs. Add the controller code to this file:
 
@@ -88,7 +88,7 @@ The remainder of your bot code stays the same!
 
 ## Ensure WebSockets are enabled
 
-When you create a new bot from the Azure Portal using one of the templates such as EchoBot, you will get a bot that includes an ASP.NET MVC controller that exposes a GET and POST endpoint and will also use WebSockets. These instructions explain how to add these elements to your bot if you're upgrading or did not make your bot from a template.
+When you create a new bot from the Azure portal using one of the templates such as EchoBot, you'll get a bot that includes an ASP.NET MVC controller that exposes a GET and POST endpoint and will also use WebSockets. These instructions explain how to add these elements to your bot if you're upgrading or did not make your bot from a template.
 
 Open **BotController.cs** under the Controllers folder in your solution
 

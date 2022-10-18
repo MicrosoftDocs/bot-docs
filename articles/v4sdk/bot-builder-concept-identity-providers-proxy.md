@@ -23,7 +23,7 @@ The Bot Framework allows users to log in using a variety of identity providers t
 
 ## OAuth2 Proxy Service
 
-To build an **OAuth2 Proxy Service**, you need to implement a REST service with two OAuth2 APIs: one for authorization and one for retrieving a token. Below you will find a C# example of each of these methods and what you can do in these methods to call a custom or advanced identity provider.
+To build an **OAuth2 Proxy Service**, you need to implement a REST service with two OAuth2 APIs: one for authorization and one for retrieving a token. Below, you'll find a C# example of each of these methods and what you can do in these methods to call a custom or advanced identity provider.
 
 ### Authorize API
 
@@ -62,7 +62,7 @@ public ActionResult Authorize(
 
 ### Token API
 
-The Token API is an **HTTP POST** that is called by the Bot Framework token service. The Bot Framework token service will send the `client_id` and `client_secret` in the request’s body. These values should be validated and/or passed along to the custom or advanced identity provider.
+The Token API is an **HTTP POST** that is called by the Bot Framework token service. The Bot Framework token service will send the `client_id` and `client_secret` in the request's body. These values should be validated and/or passed along to the custom or advanced identity provider.
 The response to this call is a JSON object containing the `access_token` and expiration value of the token (all other values are ignored). If your identity provider returns an `id_token` or some other value that you want to return instead, you just need to map it to the `access_token` property of your response before you return.
 
 ```csharp

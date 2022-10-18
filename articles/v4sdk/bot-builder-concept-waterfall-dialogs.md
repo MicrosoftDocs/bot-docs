@@ -175,7 +175,7 @@ You can replace a dialog with itself, creating a loop, by using the _replace dia
 This is a great way to handle [complex interactions](~/v4sdk/bot-builder-dialog-manage-complex-conversation-flow.md) and one technique for managing menus.
 
 > [!NOTE]
-> If you need to persist the internal state for the current dialog, you will need to pass information to the new instance of the dialog in the call to the _replace dialog_ method, and then initialize the dialog appropriately.
+> If you need to persist the internal state for the current dialog, you'll need to pass information to the new instance of the dialog in the call to the _replace dialog_ method, and then initialize the dialog appropriately.
 
 ### Branch a conversation
 

@@ -19,13 +19,13 @@ This article describes how to use Web Chat with the Direct Line App Service exte
 ## Integrate Web Chat client
 
 > [!NOTE]
-> Adaptive Cards sent through the Direct Line App Service extension do not undergo the same processing as those sent through other versions of the Direct Line channel. Due to this the JSON representation of the Adaptive Card sent to Web Chat from the Direct Line App Service extension will not have default values added by the channel if the fields are omitted by the bot when the card is created.
+> Adaptive Cards sent through the Direct Line App Service extension do not undergo the same processing as those sent through other versions of the Direct Line channel. Due to this the JSON representation of the Adaptive Card sent to Web Chat from the Direct Line App Service extension won't have default values added by the channel if the fields are omitted by the bot when the card is created.
 
 Generally speaking, the approach is the same as before. With the exception that in version 4.9.1 or later of Web Chat there is built-in support for establishing a two-way _WebSocket_. This allows Web Chat to directly connect to the Direct Line App Service extension hosted with your bot instead of connecting to [https://directline.botframework.com/](bot-service-channel-connect-directline.md).
 The Direct Line URL for your bot will be `https://<your_app_service>.azurewebsites.net/.bot/`, the Direct Line _endpoint_ on your app service extension.
 If you configure your own domain name, or your bot is hosted in a sovereign Azure cloud, substitute in the appropriate URL and append the `/.bot/` path to access the Direct Line App Service extension's REST APIs.
 
-1. Exchange the secret for a token by following the instructions in the [Authentication](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0&preserve-view=true) article. Instead of obtaining a token at `https://directline.botframework.com/v3/directline/tokens/generate`, you will generate the token directly from your Direct Line App Service extension at  `https://<your_app_service>.azurewebsites.net/.bot/v3/directline/tokens/generate`.
+1. Exchange the secret for a token by following the instructions in the [Authentication](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0&preserve-view=true) article. Instead of obtaining a token at `https://directline.botframework.com/v3/directline/tokens/generate`, you'll generate the token directly from your Direct Line App Service extension at  `https://<your_app_service>.azurewebsites.net/.bot/v3/directline/tokens/generate`.
 
 1. For an example that shows how to fetch a token see [Web Chat Samples](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/01.getting-started/i.protocol-direct-line-app-service-extension).
 

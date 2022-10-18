@@ -482,7 +482,7 @@ Say you have two files: `a.lg` and `b.lg`, shown below:
 - ${rand(1, 10000000)}
 ```
 
-If you run the following code, you will notice that `template2` uses the cached result of the first evaluated result because of the `global` cache scope option in **a.lg**:
+If you run the following code, you'll notice that `template2` uses the cached result of the first evaluated result because of the `global` cache scope option in **a.lg**:
 
 ```csharp
 var templates = Templates.ParseFile("a.lg");
