@@ -130,7 +130,7 @@ You'll also need to modify your bot to use a custom channel adapter for Facebook
 If you don't yet have an account, create one.
 
 1. Submit an application to [Workplace](https://www.facebook.com/workplace) on behalf of your company.
-1. Once your application has been approved, you will receive an email inviting you to join. The response may take a while.
+1. Once your application has been approved, you'll receive an email inviting you to join. The response may take a while.
 1. From the e-mail invitation, select **Get Started**.
 1. Enter your profile information.
     > [!TIP]

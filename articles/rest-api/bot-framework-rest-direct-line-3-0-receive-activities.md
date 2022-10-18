@@ -156,7 +156,7 @@ HTTP/1.1 200 OK
 
 Most clients wish to retain a complete message history. Even though Direct Line is a multi-part protocol with potential timing gaps, the protocol and service is designed to make it easy to build a reliable client.
 
-- The `watermark` property that is sent in the WebSocket stream and Get Conversation Activities response is reliable. A client will not miss any messages as long as it replays the watermark verbatim.
+- The `watermark` property that is sent in the WebSocket stream and Get Conversation Activities response is reliable. A client won't miss any messages as long as it replays the watermark verbatim.
 
 - When a client starts a conversation and connects to the WebSocket stream, any activities that are sent after the POST but before the socket is opened are replayed before new activities.
 

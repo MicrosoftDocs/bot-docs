@@ -48,6 +48,6 @@ To install the Bot Framework templates:
    ```
 
 > [!NOTE]
-> The steps above install all three Bot Framework templates. You don't need to install all the templates and can install just the ones you will use. This article makes use of the _echo bot_ template.
+> The steps above install all three Bot Framework templates. You don't need to install all the templates and can install just the ones you'll use. This article makes use of the _echo bot_ template.
 
 ---

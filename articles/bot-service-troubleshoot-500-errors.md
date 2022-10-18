@@ -156,7 +156,7 @@ Bot ASP.NET and Node will emit logs at the server level that can be inspected.
 
 #### Set up a browser to watch your logs
 
-1. Open your bot in the [Azure Portal](https://portal.azure.com/).
+1. Open your bot in the [Azure portal](https://portal.azure.com/).
 1. Open the **App Service Settings / All App service settings** page to see all service settings.
 1. Open the **Monitoring / Diagnostics Logs** page for the app service.
    - Ensure that **Application Logging (Filesystem)** is enabled. Be sure to click **Save** if you change this setting.
@@ -172,7 +172,7 @@ Bot ASP.NET and Node will emit logs at the server level that can be inspected.
 
 #### Set up browser to restart your bot service
 
-1. Using a separate browser, open your bot in the Azure Portal.
+1. Using a separate browser, open your bot in the Azure portal.
 1. Open the **App Service Settings / All App service settings** page to see all service settings.
 1. Switch to the **Overview** page for the app service and click **Restart**.
    - It will prompt if you're sure; select **yes**.

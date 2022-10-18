@@ -135,7 +135,7 @@ With the exception of [prebuilt entities](#prebuilt-entities), entity names can 
 
 ### Entity types
 
-There are several types of entities in LUIS. In the following sections you will learn about these entity types along with related concepts such as [roles](#roles) and [features](#adding-features-to-intents-and-entities) with examples of how to create LU templates that use them.
+There are several types of entities in LUIS. In the following sections, you'll learn about these entity types and related concepts, such as [roles](#roles) and [features](#adding-features-to-intents-and-entities), and examples of how to create LU templates that use them.
 
 #### Machine-learned entity
 
@@ -527,7 +527,7 @@ When setting a phrase list to `disabled`, it won't be used, even when specifical
 
 @ phraselist yourPhraseList disabled
 
-> phrase list as feature to intent, will not be used
+> phrase list as feature to intent, won't be used
 
 @ intent yourIntent usesFeature yourPhraseList
 ```
@@ -703,7 +703,7 @@ Here's an example of the aforementioned references:
 
 > With the above statement, the parser will parse all.lu and extract out all utterances associated with the 'Help' intent and add them under 'None' intent as defined in this file.
 
-> NOTE: This **only** works for utterances as entities that are referenced by the uttearnces in the 'Help' intent will not be brought forward to this .lu file.
+> NOTE: This **only** works for utterances as entities that are referenced by the uttearnces in the 'Help' intent won't be brought forward to this .lu file.
 
 # All utterances
 > you can use the *utterances* wild card to include all utterances from a lu file. This includes utterances across all intents defined in that .lu file.

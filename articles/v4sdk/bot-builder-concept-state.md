@@ -113,7 +113,7 @@ The accessors allow the SDK to get state from the underlying storage, and update
 The accessor's _delete_ method removes the property from the cache, and also deletes it from the underlying storage.
 
 > [!IMPORTANT]
-> For the first call to an accessor's _get_ method, you must provide a factory method to create the object if it doesn't yet exist in your state. If no factory method is given, you will get an exception. Details on how to use a factory method can be found in the [state how-to article](bot-builder-howto-v4-state.md).
+> For the first call to an accessor's _get_ method, you must provide a factory method to create the object if it doesn't yet exist in your state. If no factory method is given, you'll get an exception. Details on how to use a factory method can be found in the [state how-to article](bot-builder-howto-v4-state.md).
 
 To persist any changes you make to the state property you get from the accessor, the property in the state cache must be updated. You can do so via a call the accessors _set_ method, which sets the value of your property in the cache, and is available if that needs to be read or updated later in that turn. To actually persist that data to the underlying storage (and thus make it available after the current turn), you must then [save your state](#saving-state).
 

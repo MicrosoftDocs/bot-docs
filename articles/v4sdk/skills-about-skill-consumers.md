@@ -87,8 +87,8 @@ See how to [implement a skill consumer](skill-implement-consumer.md) for a consu
 If you're using the [dialogs library](bot-builder-concept-dialog.md), you can use a _skill dialog_ to manage a skill. While the skill dialog is the active dialog, it will forward activities to the associated skill.
 
 - When you create the skill dialog, use the _dialog options_ parameter to provide all the information the dialog needs to manage the skill, such as the consumer's app ID and callback URL, the conversation ID factory to use, the skill's properties, and so on.
-  - If you want to manage more than one skill as a dialog, you will need to create a separate skill dialog for each skill.
-  - Often, you will add the skill dialog to a component dialog.
+  - If you want to manage more than one skill as a dialog, you'll need to create a separate skill dialog for each skill.
+  - Often, you'll add the skill dialog to a component dialog.
 - To start the skill dialog, use the dialog context's _begin_ method and provide the skill dialog's ID. Use the _options_ parameter to provide the activity the consumer will send as the first activity to the skill.
 - You can cancel or interrupt the skill dialog as you would any other dialog. See how to [handle user interruptions](bot-builder-howto-handle-user-interrupt.md) for an example.
 
@@ -96,6 +96,6 @@ See how to [use a dialog to consume a skill](skill-use-skilldialog.md) for a con
 
 ## Using a delivery mode of expect replies
 
-Bots and skills use industry-standard REST and JSON over HTTPS for communication. Normal activity processing flow starts when the root bot receives a post from a channel at the its _messaging endpoint_. The root bot then sends the activity on to the skill for processing. Replies from the skill are posted back to the root bot's _skill host endpoint_, not the its messaging endpoint. Finally, the replies are processed further or posted back to the channel by the root bot. This normal flow can be altered by changing the _delivery mode_ of the activity sent to the skill. If _delivery mode_ is set to "ExpectReplies", the skill will not post back to the skill host endpoint.  Instead, all reply activities are serialized into the body of the response.  The root bot then iterates over these activities, processing them similar to how they would have been processed by the skill host endpoint.
+Bots and skills use industry-standard REST and JSON over HTTPS for communication. Normal activity processing flow starts when the root bot receives a post from a channel at the its _messaging endpoint_. The root bot then sends the activity on to the skill for processing. Replies from the skill are posted back to the root bot's _skill host endpoint_, not the its messaging endpoint. Finally, the replies are processed further or posted back to the channel by the root bot. This normal flow can be altered by changing the _delivery mode_ of the activity sent to the skill. If _delivery mode_ is set to "ExpectReplies", the skill won't post back to the skill host endpoint.  Instead, all reply activities are serialized into the body of the response.  The root bot then iterates over these activities, processing them similar to how they would have been processed by the skill host endpoint.
 
 For information, see the [Delivery mode](https://github.com/microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md#delivery-mode) in the Activity specification.

@@ -41,7 +41,7 @@ Before you begin, make these decisions.
 
 | Decision | Notes |
 |:-|:-|
-| How you will manage the identities of your bot resources in Azure | You can use a user-assigned managed identity, a single-tenant app registration, or a mutli-tenant app registration. For more information, see [Create an identity resource](#create-an-identity-resource). |
+| How you'll manage the identities of your bot resources in Azure | You can use a user-assigned managed identity, a single-tenant app registration, or a mutli-tenant app registration. For more information, see [Create an identity resource](#create-an-identity-resource). |
 | In which resource group or resource groups you'll create your bot resources | Until you're familiar with this process, we recommend using one resource group. For more information, see [Manage Azure resources](/azure/azure-resource-manager/management/). |
 | Whether your bot will be _regional_ or _global_ | For information about regional bots, see [Regionalization in Azure Bot Service](v4sdk/bot-builder-concept-regionalization.md). |
 
@@ -57,7 +57,7 @@ Before you begin, make these decisions.
 Before you can deploy your bot, you create (or _provision_) the Azure resources it will need.
 For some of the steps, you can use an existing resource or create a new one.
 
-You may find it helpful to decide ahead of time on the names of the new resources you will create and the names of the existing resources you will use.
+You may find it helpful to decide ahead of time on the names of the new resources you'll create and the names of the existing resources you'll use.
 Your bot will use these types of resources.
 
 - The Azure subscription that you'll use to provision, publish, and manage the bot
@@ -69,7 +69,7 @@ Your bot will use these types of resources.
 
 ### Information used across resources
 
-As you create resources in Azure, Azure will generate or request IDs, passwords, and other information that you will need in later steps.
+As you create resources in Azure, Azure will generate or request IDs, passwords, and other information that you'll need in later steps.
 The following table lists the information beyond resource names you'll need to record, in which step it's generated, and in which steps it's used.
 
 > [!CAUTION]
@@ -242,7 +242,7 @@ When using the non-configured [zip deploy API](https://github.com/projectkudu/ku
 
 _Kudu assumes by default that deployments from .zip files are ready to run and don't require extra build steps during deployment, such as npm install or dotnet restore/dotnet publish._
 
-It's important to include your built code with all necessary dependencies in the zip file being deployed; otherwise, your bot will not work as intended. For more information, see the Azure documentation on how to [Deploy files to App Service](/azure/app-service/deploy-zip).
+It's important to include your built code with all necessary dependencies in the zip file being deployed; otherwise, your bot won't work as intended. For more information, see the Azure documentation on how to [Deploy files to App Service](/azure/app-service/deploy-zip).
 
 ## Next steps
 

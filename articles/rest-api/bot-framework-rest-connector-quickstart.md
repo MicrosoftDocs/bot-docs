@@ -17,14 +17,14 @@ ms.date: 11/01/2021
 > - [Bot Service Azure resource](../bot-service-quickstart.md)
 > - [REST](../rest-api/bot-framework-rest-connector-quickstart.md)
 
-The Bot Connector service enables your bot to exchange messages with channels that are configured in the [Azure Portal](https://portal.azure.com), by using industry-standard REST and JSON over HTTPS. This tutorial walks you through the process of obtaining an access token from the Bot Framework and using the Bot Connector service to exchange messages with the user.
+The Bot Connector service enables your bot to exchange messages with channels that are configured in the [Azure portal](https://portal.azure.com), by using industry-standard REST and JSON over HTTPS. This tutorial walks you through the process of obtaining an access token from the Bot Framework and using the Bot Connector service to exchange messages with the user.
 
 <a id="get-token"></a>
 
 ## Get an access token
 
 > [!IMPORTANT]
-> If you haven't already done so, you must [register your bot](../bot-service-quickstart-registration.md) with the Bot Framework to obtain its App ID and password. You will need the bot's AppID and password to get an access token.
+> If you haven't already done so, you must [register your bot](../bot-service-quickstart-registration.md) with the Bot Framework to obtain its App ID and password. You'll need the bot's AppID and password to get an access token.
 
 To communicate with the Bot Connector service, you must specify an access token in the `Authorization` header of each API request, using this format:
 
@@ -48,7 +48,7 @@ grant_type=client_credentials&client_id=MICROSOFT-APP-ID&client_secret=MICROSOFT
 
 ### Response
 
-If the request succeeds, you will receive an HTTP 200 response that specifies the access token and information about its expiration.
+If the request succeeds, you'll receive an HTTP 200 response that specifies the access token and information about its expiration.
 
 ```json
 {

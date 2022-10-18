@@ -40,7 +40,7 @@ This article describes how to implement telemetry in your bot using Application 
 * [git](https://git-scm.com/)
 
 > [!NOTE]
-> The [Application Insights sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/21.corebot-app-insights) was built on top of the [CoreBot sample code](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot). This article will step you through modifying the CoreBot sample code to incorporate telemetry. If you're following along in Visual Studio you will have the Application Insights sample code by the time you're finished.
+> The [Application Insights sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/21.corebot-app-insights) was built on top of the [CoreBot sample code](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot). This article will step you through modifying the CoreBot sample code to incorporate telemetry. If you're following along in Visual Studio, you'll have the Application Insights sample code by the time you're finished.
 
 # [JavaScript](#tab/javascript)
 
@@ -54,7 +54,7 @@ This article describes how to implement telemetry in your bot using Application 
 * [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md)
 
 > [!NOTE]
-> The [Application Insights sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/21.corebot-app-insights) was built on top of the [CoreBot sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot). This article will step you through modifying the CoreBot sample code to incorporate telemetry. If you're following along in Visual Studio Code you will have the Application Insights sample code by the time you're finished.
+> The [Application Insights sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/21.corebot-app-insights) was built on top of the [CoreBot sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot). This article will step you through modifying the CoreBot sample code to incorporate telemetry. If you're following along in Visual Studio Code, you'll have the Application Insights sample code by the time you're finished.
 
 ---
 
@@ -81,7 +81,7 @@ This article starts from the [CoreBot sample app](https://github.com/Microsoft/B
     ```
 
     > [!TIP]
-    > If you're following along by updating the CoreBot sample code, you will notice that the using statement for `Microsoft.Bot.Builder.Integration.AspNet.Core` already exists in the CoreBot sample.
+    > If you're following along by updating the CoreBot sample code, you'll notice that the using statement for `Microsoft.Bot.Builder.Integration.AspNet.Core` already exists in the CoreBot sample.
 
 1. Include the following code in the `ConfigureServices()` method in `Startup.cs`. This will make telemetry services available to your bot via [dependency injection (DI)](/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2&preserve-view=true):
 
@@ -115,7 +115,7 @@ This article starts from the [CoreBot sample app](https://github.com/Microsoft/B
     ```
 
     > [!TIP]
-    > If you're following along by updating the CoreBot sample code, you will notice that `services.AddSingleton<IBotFrameworkHttpAdapter, AdapterWithErrorHandler>();` already exists.
+    > If you're following along by updating the CoreBot sample code, you'll notice that `services.AddSingleton<IBotFrameworkHttpAdapter, AdapterWithErrorHandler>();` already exists.
 
 1. Instruct the adapter to use the middleware code that was added to the `ConfigureServices()` method. You do this in `AdapterWithErrorHandler.cs` with the parameter TelemetryInitializerMiddleware telemetryInitializerMiddleware in the constructor's parameter list, and the `Use(telemetryInitializerMiddleware);` statement in the constructor as shown here:
 
@@ -128,7 +128,7 @@ This article starts from the [CoreBot sample app](https://github.com/Microsoft/B
     }
     ```
 
-1. You will also need to add `Microsoft.Bot.Builder.Integration.ApplicationInsights.Core` to your list of using statements in `AdapterWithErrorHandler.cs`.
+1. You'll also need to add `Microsoft.Bot.Builder.Integration.ApplicationInsights.Core` to your list of using statements in `AdapterWithErrorHandler.cs`.
 
 1. Add the Application Insights instrumentation key in your `appsettings.json` file. The `appsettings.json` file contains metadata about external services the bot uses while running. For example, CosmosDB, Application Insights, and Azure Cognitive Services connection and metadata is stored there. The addition to your `appsettings.json` file must be in this format:
 
@@ -168,7 +168,7 @@ Follow the steps below to update your CoreBot example:
 > [!TIP]
 > If you're following along and updating the CoreBot sample code, you can refer to the [Application Insights sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/21.corebot-app-insights) if you run into any problems.
 
-That's all there is to adding telemetry to your bots dialogs, at this point if you ran your bot you should see things being logged in Application Insights, however if you have any integrated technology such as a Cognitive Service you will need to add the `TelemetryClient` to that code as well.
+That's all there is to adding telemetry to your bot dialogs. If you run your bot now, you should see things being logged in Application Insights; however, if you have any integrated technology such as a Cognitive Service, you'll need to add the `TelemetryClient` to that code as well.
 
 # [JavaScript](#tab/javascript)
 
@@ -306,7 +306,7 @@ We will next implement telemetry functionality in your LUIS service. The LUIS se
     public FlightBookingRecognizer(IConfiguration configuration, IBotTelemetryClient telemetryClient)
     ```
 
-1. Next you will need to enable the `telemetryClient` when creating your `LuisRecognizer` in the `FlightBookingRecognizer` constructor. You do this by adding the `telemetryClient` as a new _LuisRecognizerOption_:
+1. Next, enable the `telemetryClient` when you create your `LuisRecognizer` in the `FlightBookingRecognizer` constructor. Do this by adding the `telemetryClient` as a new _LuisRecognizerOption_:
 
     ```cs
     if (luisIsConfigured)
