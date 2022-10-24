@@ -992,7 +992,7 @@ coalesce(<object**1>, <object**2>, ...)
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*first-non-null-item*> | any | The first item or value that is not null. If all parameters are null, this function returns null. |
+| <*first-non-null-item*> | any | The first item or value that isn't null. If all parameters are null, this function returns null. |
 ||||
 
 *Example*
@@ -1034,7 +1034,7 @@ concat('<text1>', '<text2>', ...)
 Expected return values:
 
 - If all items are lists, a list will be returned.
-- If there exists an item that is not a list, a string will be returned.
+- If there exists an item that isn't a list, a string will be returned.
 - If a value is null, it's skipped and not concatenated.
 
 *Example*
@@ -1602,7 +1602,7 @@ div(<dividend>, <divisor>)
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*dividend*> | Yes | number | The number to divide by the *divisor* |
-| <*divisor*> | Yes | number | The number that divides the *dividend*. Cannot be 0. |
+| <*divisor*> | Yes | number | The number that divides the *dividend*. Can't be 0. |
 |||||
 
 | Return value | Type | Description |
@@ -2701,7 +2701,7 @@ indexOf('<text>', '<searchText>')
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
 | <*index-value*> | integer | The starting position or index value of the specified substring.
-If the string is not found, return the number -1. |
+If the string isn't found, return the number -1. |
 ||||
 
 *Example 1*
@@ -3138,7 +3138,7 @@ isFloat('<input>')
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*Boolean-result*> | Boolean | Return `true` if a given input is a floating-point number, or return `false` if the input is not a floating-point number. |
+| <*Boolean-result*> | Boolean | Return `true` if a given input is a floating-point number, or return `false` if the input isn't a floating-point number. |
 ||||
 
 *Examples*
@@ -3231,7 +3231,7 @@ And return the same result `true`.
 
 ### isObject
 
-Return `true` if a given input is a complex object or return `false` if it's a primitive object. Primitive objects include strings, numbers, and Booleans; complex types, like classes, contain properties. <!--In C#, the input is neither a value type nor a string. In JavaScript, it reflects to the input is not a primitive data types.-->
+Return `true` if a given input is a complex object or return `false` if it's a primitive object. Primitive objects include strings, numbers, and Booleans; complex types, like classes, contain properties.
 
 ```
 isObject('<input>')
@@ -3687,7 +3687,7 @@ lastIndexOf('<text>', '<searchText>')
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*ending-index-value*> | integer | The starting position or index value of the last occurrence of the specified substring. If the string is not found, return the number **-1**. |
+| <*ending-index-value*> | integer | The starting position or index value of the last occurrence of the specified substring. If the string isn't found, return the number **-1**. |
 ||||
 
 *Example 1*
@@ -3946,7 +3946,7 @@ mod(<dividend>, <divisor>)
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |
 | <*dividend*> | Yes | number | The number to divide by the *divisor* |
-| <*divisor*> | Yes | number | The number that divides the *dividend*. Cannot be 0. |
+| <*divisor*> | Yes | number | The number that divides the *dividend*. Can't be 0. |
 |||||
 
 | Return value | Type | Description |
@@ -4257,7 +4257,7 @@ replace('<text>', '<oldText>', '<newText>')
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*updated-text*> | string | The updated string after replacing the substring. If the substring is not found, the function returns the original string. |
+| <*updated-text*> | string | The updated string after replacing the substring. If the substring isn't found, the function returns the original string. |
 ||||
 
 *Example 1*
@@ -4307,7 +4307,7 @@ replaceIgnoreCase('<text>', '<oldText>', '<newText>')
 
 | Return value | Type | Description |
 | ------------ | ---- | ----------- |
-| <*updated-text*> | string | The updated string after replacing the substring. If the substring is not found, return the original string. |
+| <*updated-text*> | string | The updated string after replacing the substring. If the substring isn't found, return the original string. |
 ||||
 
 *Example*

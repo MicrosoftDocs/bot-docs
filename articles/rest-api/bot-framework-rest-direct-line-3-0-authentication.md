@@ -151,8 +151,8 @@ The information presented in this section is based on the [Add authentication to
 **Azure Bot Service authentication** enables you to authenticate users to and get **access tokens** from various identity providers such as _Azure Active Directory_, _GitHub_, _Uber_ and so on. You can also configure authentication for a custom **OAuth2** identity provider. All this enables you to write **one piece of authentication code** that works across all supported identity providers and channels. To use these capabilities:
 
 1. Statically configure `settings` on your bot that contains the details of your application registration with an identity provider.
-2. Use an `OAuthCard`, backed by the application information you supplied in the previous step, to sign-in a user.
-3. Retrieve access tokens through **Azure Bot Service API**.
+1. Use an `OAuthCard`, backed by the application information you supplied in the previous step, to sign-in a user.
+1. Retrieve access tokens through **Azure Bot Service API**.
 
 ### Security considerations
 

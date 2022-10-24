@@ -19,7 +19,7 @@ monikerRange: 'azure-bot-service-4.0'
 This article provides technical details that will help you work with memory scopes in adaptive dialogs. For an introduction to memory scopes and managing state in adaptive dialogs, see the [Conversation flow and memory][managing-state] Composer concept article.
 
 > [!TIP]
-> All property paths are case-insensitive. For example, `user.name` is the same as `user.Name`. Also, if you do not have a property named `user.name` and you create a property named `user.name.first` the `user.name` object will automatically be created for you.
+> All property paths are case-insensitive. For example, `user.name` is the same as `user.Name`. Also, if you don't have a property named `user.name` and you create a property named `user.name.first` the `user.name` object will automatically be created for you.
 
 ## User scope
 
@@ -75,7 +75,7 @@ Each incoming [activity][botframework-activity] to the bot is available via `tur
 For example, you might have something like this defined in our .lg file to respond to a user that entered an invalid value when prompted for their age:
 
 ```lg
-Sorry, I do not understand '${turn.activity.text}'. ${GetAge()}
+Sorry, I don't understand '${turn.activity.text}'. ${GetAge()}
 ```
 
 #### turn.recognized

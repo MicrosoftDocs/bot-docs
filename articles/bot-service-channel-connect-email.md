@@ -57,10 +57,10 @@ The Email channel currently works with Office 365 only. Other email services are
 
 > [!NOTE]
 >
-> - Federated authentication using any vendor that replaces Azure AD is not supported.
+> - Federated authentication using any vendor that replaces Azure AD isn't supported.
 > - For security reasons, usage of _basic authentication_ in Exchange Online is being disabled on October 1st, 2022.
 >   You should migrate all of your bots to use _modern authentication_ before the deadline.
-> - If you use Microsoft Exchange Server, make sure you have enabled [Autodiscover](/exchange/client-developer/exchange-web-services/autodiscover-for-exchange) first, before configuring email to use basic authentication.
+> - If you use Microsoft Exchange Server, make sure you've enabled [Autodiscover](/exchange/client-developer/exchange-web-services/autodiscover-for-exchange) first, before configuring email to use basic authentication.
 > - If you're using an Office 365 account with MFA enabled on it, make sure you disable MFA for the specified account first; then you can configure the account for the email channel. Otherwise, the connection will fail.
 
 1. Open the [Azure portal](https://portal.azure.com/).

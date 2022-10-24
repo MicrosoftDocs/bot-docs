@@ -71,7 +71,7 @@ A bot application, also known as an *application service (App Service)*, has a s
 
 ## Next steps
 
-Now that you have explored the Bot Service blade in the Azure portal, learn about the Bot Framework Service, how bots communicate with users, and about activities, channels, HTTP POST requests, and more.
+Now that you've explored the Bot Service blade in the Azure portal, learn about the Bot Framework Service, how bots communicate with users, and about activities, channels, HTTP POST requests, and more.
 
 > [!div class="nextstepaction"]
 > [How bots work](v4sdk/bot-builder-basics.md)

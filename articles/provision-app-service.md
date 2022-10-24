@@ -30,7 +30,7 @@ This article describes how to create an App Service resource with the Azure CLI 
 
 - This process uses an Azure Resource Manager template (ARM template) to create an App Service resource for your bot.
 
-  If you do not have the current templates, create a copy in your bot project of the **deploymentTemplates** folder: [C#](https://github.com/microsoft/botbuilder-dotnet/tree/main/generators/dotnet-templates/Microsoft.BotFramework.CSharp.EchoBot/content), [JavaScript](https://github.com/microsoft/botbuilder-js/tree/main/generators/generator-botbuilder/generators/app/templates/echo), [Python](https://github.com/microsoft/botbuilder-python/tree/main/generators/app/templates/echo/%7B%7Bcookiecutter.bot_name%7D%7D), or [Java](https://github.com/microsoft/botbuilder-java/tree/main/generators/generators/app/templates/echo/project).
+  If you don't have the current templates, create a copy in your bot project of the **deploymentTemplates** folder: [C#](https://github.com/microsoft/botbuilder-dotnet/tree/main/generators/dotnet-templates/Microsoft.BotFramework.CSharp.EchoBot/content), [JavaScript](https://github.com/microsoft/botbuilder-js/tree/main/generators/generator-botbuilder/generators/app/templates/echo), [Python](https://github.com/microsoft/botbuilder-python/tree/main/generators/app/templates/echo/%7B%7Bcookiecutter.bot_name%7D%7D), or [Java](https://github.com/microsoft/botbuilder-java/tree/main/generators/generators/app/templates/echo/project).
 
 > [!TIP]
 > This is part of the larger process to provision and publish a bot.

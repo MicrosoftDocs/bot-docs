@@ -146,7 +146,7 @@ For information about the dialogs library, see the [dialogs library](bot-builder
 
 When you call the accessor's set method to record the updated state, that state property has not yet been saved to your persisted storage, and instead is only saved to your bot's state cache. To save any changes in the state cache to your persisted state, you must call the state management object's _save changes_ method, which is available on the implementation of the bot state class mentioned above (such as user state or conversation state).
 
-Calling the save changes method for a state management object (such as the buckets mentioned above) saves all properties in the state cache that you have set up to that point for that bucket, but not for any of the other buckets you may have in your bot's state.
+Calling the save changes method for a state management object (such as the buckets mentioned above) saves all properties in the state cache that you've set up to that point for that bucket, but not for any of the other buckets you may have in your bot's state.
 
 > [!TIP]
 > Bot state implements a "last write wins" behavior, where the last write will stamp over the previously written state. This may work for many applications but has implications, particularly in scaled-out scenarios, where there may be some level of concurrency or latency in play.

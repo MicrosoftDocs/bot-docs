@@ -43,7 +43,7 @@ You can configure your bot to communicate with people via Microsoft Teams. This 
 Bots in production should be added to Teams as part of a Teams app. For more information, see [Test your app](/microsoftteams/platform/concepts/build-and-test/test-app-overview).
 
 > [!IMPORTANT]
-> Adding a bot by GUID, for anything other than testing purposes, is not recommended. Doing so severely limits the functionality of a bot. Bots in production should be added to Teams as part of an app.
+> Adding a bot by GUID, for anything other than testing purposes, isn't recommended. Doing so severely limits the functionality of a bot. Bots in production should be added to Teams as part of an app.
 
 1. In your browser, open the URL you copied from your embed code, then choose the Microsoft Teams app (client or web) that you use to add the bot to Teams. You should be able to see the bot listed as a contact that you can send messages to and receive messages from in Microsoft Teams.
 1. Interact with your bot in Teams.

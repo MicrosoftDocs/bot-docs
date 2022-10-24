@@ -248,6 +248,7 @@
           - name: Use extension with Web Chat
             href: bot-service-channel-directline-extension-webchat-client.md
           - name: Configure a virtual network
+            displayName: Use Direct Line App Service extension within a VNET, Use Direct Line App Service extension within a virtual network
             href: bot-service-channel-directline-extension-vnet.md
           - name: Configure network isolation
             href: dl-network-isolation-how-to.md

@@ -17,7 +17,7 @@ ms.date: 08/05/2022
 
 When you [create a bot](bot-service-quickstart.md) with Azure, the Web Chat channel is automatically configured for you. The Web Chat channel includes the [Web Chat control](https://github.com/microsoft/BotFramework-WebChat], which provides the ability for users to interact with the bot directly in a web page.
 
-The Web Chat channel contains everything you need to embed the Web Chat control in a web page. All you have to do to use the Web Chat control is get your bot's secret key and embed the control in a web page.
+The Web Chat channel contains everything you need to embed the Web Chat control in a web page. To do so, you'll get your bot's secret key and then embed the control in a web page.
 
 ## Prerequisites
 
@@ -61,9 +61,9 @@ To exchange your secret for a token and generate the embed:
     - For a global bot, the token exchange URL is `https://webchat.botframework.com/api/tokens`.
     - For a regional bot, the token URL is `https://europe.webchat.botframework.com/api/tokens`.
 
-2. The response to your **GET** request will contain the token (surrounded with quotation marks) that can be used to start a conversation by rendering the Web Chat control. A token is valid for one conversation only; to start another conversation, you need to generate a new token.
+1. The response to your **GET** request will contain the token (surrounded with quotation marks) that can be used to start a conversation by rendering the Web Chat control. A token is valid for one conversation only; to start another conversation, you need to generate a new token.
 
-3. Within the **Embedded code** that you copied from the Web Chat channel earlier, change the `s=` parameter to `t=` and replace "YOUR_SECRET_HERE" with your token.
+1. Within the **Embedded code** that you copied from the Web Chat channel earlier, change the `s=` parameter to `t=` and replace "YOUR_SECRET_HERE" with your token.
 
 > [!NOTE]
 > Tokens will automatically be renewed before they expire.

@@ -246,7 +246,7 @@ Thanks to the template, your project contains all the code that's necessary to c
    cookiecutter https://github.com/microsoft/BotBuilder-Samples/releases/download/Templates/echo.zip
    ```
 
-2. You'll be prompted to give your bot a name and description. Enter the following values:
+1. You'll be prompted to give your bot a name and description. Enter the following values:
    - **bot_name**: *echo_bot*
    - **bot_description**: *A bot that echoes back user response.*
 

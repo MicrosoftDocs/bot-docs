@@ -158,7 +158,7 @@ To fix this, set the `from` property in each message that the Direct Line client
 
 ## What causes the Direct Line 3.0 service to respond with HTTP status code 502 "Bad Gateway"?
 
-Direct Line 3.0 returns HTTP status code 502 when it tries to contact your bot but the request doesn't complete successfully. This error indicates that either the bot returned an error or the request timed out. For more information about errors that your bot generates, go to the bot's dashboard within the [Azure portal](https://portal.azure.com) and select the "Issues" link for the affected channel. If you have Application Insights configured for your bot, you can also find detailed error information there.
+Direct Line 3.0 returns HTTP status code 502 when it tries to contact your bot but the request doesn't complete successfully. This error indicates that either the bot returned an error or the request timed out. For more information about errors that your bot generates, go to the bot's dashboard within the [Azure portal](https://portal.azure.com) and select the "Issues" link for the affected channel. If you configured Application Insights for your bot, you can also find detailed error information there.
 
 ## Why do I get an Authorization_RequestDenied exception when creating a bot?
 
@@ -167,18 +167,18 @@ Permission to create Azure Bot Service bots are managed through the Azure Active
 First check whether you're a "Guest" of the directory:
 
 1. Sign-in to [Azure portal](https://portal.azure.com).
-2. Select **All services** and search for *active*.
-3. Select **Azure Active Directory**.
-4. Select **Users**.
-5. Find the user from the list and ensure that the **User Type** isn't a **Guest**.
+1. Select **All services** and search for *active*.
+1. Select **Azure Active Directory**.
+1. Select **Users**.
+1. Find the user from the list and ensure that the **User Type** isn't a **Guest**.
 
 :::image type="content" source="media/azure-active-directory/user_type.png" alt-text="Azure Active Directory User-type":::
 
 Once you verified that you're not a **Guest**, then to ensure that users within an active directory can create bot service, the directory administrator needs to configure the following settings:
 
 1. Sign-in to [Azure Active Directory admin center](https://aad.portal.azure.com). Go to **Users and groups** and select **User settings**.
-2. Under **App registration** section, set **Users can register applications** to **Yes**. This allows users in your directory to create bot service.
-3. Under the **External users** section, set **Guest users permissions are limited** to **No**. This allows guest users in your directory to create bot service.
+1. Under **App registration** section, set **Users can register applications** to **Yes**. This allows users in your directory to create bot service.
+1. Under the **External users** section, set **Guest users permissions are limited** to **No**. This allows guest users in your directory to create bot service.
 
 :::image type="content" source="media/azure-active-directory/admin_center.png" alt-text="Azure Active Directory Admin Center":::
 
@@ -188,9 +188,9 @@ If your bot is registered in dev.botframework.com, and you want to migrate it to
 
 1. From the target directory, add a new user (via email address) that isn't a member of the default directory, grant the user contributor role on the subscriptions that are the target of the migration.
 
-2. From [Dev Portal](https://dev.botframework.com), add the user's email address as co-owners of the bot that should be migrated. Then sign out.
+1. From [Dev Portal](https://dev.botframework.com), add the user's email address as co-owners of the bot that should be migrated. Then sign out.
 
-3. Sign in to [Dev Portal](https://dev.botframework.com) as the new user and proceed to migrate the bot.
+1. Sign in to [Dev Portal](https://dev.botframework.com) as the new user and proceed to migrate the bot.
 
 ## Where can I get more help?
 

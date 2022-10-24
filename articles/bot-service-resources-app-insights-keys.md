@@ -17,8 +17,8 @@ ms.date: 11/01/2021
 Azure **Application Insights** displays data about your application in a Microsoft Azure resource. To add telemetry to your bot, you need an Azure subscription and an Application Insights resource created for your bot. From this resource, you can obtain the three keys to configure your bot:
 
 1. Instrumentation key
-2. Application ID
-3. API key
+1. Application ID
+1. API key
 
 This topic will show you how to create these Application Insights keys.
 
@@ -66,7 +66,7 @@ To get the API key:
     :::image type="content" source="media/portal-app-insights-appid-apikey.png" alt-text="Portal screen capture of the Application ID and API Key":::
 
     > [!WARNING]
-    > Copy this **API key** and save it because this key will never be shown to you again. If you lose this key, you have to create a new one.
+    > Copy this **API key** and save it because this key will never be shown to you again. If you lose this key, you'll need to create a new one.
 
 1. Copy the API key to the **Application Insights API key** field of your bot's settings.
 

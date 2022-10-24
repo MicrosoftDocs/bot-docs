@@ -14,7 +14,7 @@ ms.date: 10/19/2021
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-<!-- Attention writers!!
+<!-- Attention writers!
      1 - When you create a new FAQ, please add the related link to the proper section in bot-service-troubleshoot-index.md.-->
 
 This guide can help you to troubleshoot authentication issues with your bot by evaluating a series of scenarios to determine where the problem exists.
@@ -82,12 +82,12 @@ class DefaultConfig:
 Next, test your bot on localhost by using the Bot Framework Emulator.
 
 1. Start your bot on localhost.
-2. Start the Bot Framework Emulator.
-3. Connect to your bot using the Emulator.
+1. Start the Bot Framework Emulator.
+1. Connect to your bot using the Emulator.
     - Type `http://localhost:port-number/api/messages` into the Emulator's address bar, where **port-number** matches the port number shown in the browser where your application is running.
     - Ensure that the **Microsoft App ID** and **Microsoft App Password** fields are both empty.
     - Click **Connect**.
-4. To test connectivity to your bot, type some text into the Emulator and press Enter.
+1. To test connectivity to your bot, type some text into the Emulator and press Enter.
 
 If the bot responds to the input and there are no errors in the chat window, you've verified that your bot is accessible and functional on localhost when security is disabled. Proceed to [Step 2](#step-2).
 
@@ -168,13 +168,13 @@ var connector = new builder.ChatConnector({
 Next, test your bot on localhost by using the Bot Framework Emulator.
 
 1. Start your bot on localhost.
-2. Start the Bot Framework Emulator.
-3. Connect to your bot using the Emulator.
+1. Start the Bot Framework Emulator.
+1. Connect to your bot using the Emulator.
     - Type `http://localhost:port-number/api/messages` into the Emulator's address bar, where **port-number** matches the port number shown in the browser where your application is running.
     - Enter your bot's app ID into the **Microsoft App ID** field.
     - Enter your bot's password into the **Microsoft App Password** field.
     - Click **Connect**.
-4. To test connectivity to your bot, type some text into the Emulator and press Enter.
+1. To test connectivity to your bot, type some text into the Emulator and press Enter.
 
 If the bot responds to the input and there are no errors in the chat window, you've verified that your bot is accessible and functional on localhost when security is enabled.  Proceed to [Step 4](#step-4-test-your-bot-in-the-cloud).
 
@@ -203,10 +203,10 @@ If you deploy your bot to Azure, SSL will automatically be configured for your a
 To test your bot in the cloud with security enabled, complete the following steps.
 
 1. Ensure that your bot has been successfully deployed and is running.
-2. Sign in to the [Azure portal](https://portal.azure.com).
-3. Navigate to the **Azure Bot** resource for your bot within the portal.
-4. Click **Test in Web Chat** in the **Bot management** pane on the left.
-5. To test connectivity to your bot, type some text into the web chat control and press Enter.
+1. Sign in to the [Azure portal](https://portal.azure.com).
+1. Navigate to the **Azure Bot** resource for your bot within the portal.
+1. Click **Test in Web Chat** in the **Bot management** pane on the left.
+1. To test connectivity to your bot, type some text into the web chat control and press Enter.
 
 If an error is indicated in the chat window, use the error message to determine the cause of the error. Common issues include:
 

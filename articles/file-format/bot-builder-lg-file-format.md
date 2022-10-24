@@ -265,7 +265,7 @@ The example above uses the [join][5] prebuilt function to list all values in the
 
 Given templates and prebuilt functions share the same invocation signature, a template name can't be the same as a prebuilt function name.
 
- A template name should not match a prebuilt function name. The prebuilt function takes precedence. To avoid such conflicts, you can prepend `lg.` when referencing your template name. For example:
+ A template name shouldn't match a prebuilt function name. The prebuilt function takes precedence. To avoid such conflicts, you can prepend `lg.` when referencing your template name. For example:
 
 ```lg
 > Custom length function with one parameter.

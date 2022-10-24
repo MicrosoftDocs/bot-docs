@@ -44,7 +44,7 @@ When an end user attempts to connect to your skill from their Power Virtual Agen
 | Manifest is retrievable | `MANIFEST_FETCH_FAILED` | We ran into problems getting the skill manifest. | Verify your manifest URL is a link to your manifest; try opening your manifest URL in a web browser. If the URL renders the page within 10 seconds, re-register your skill.
 | Manifest is readable | `MANIFEST_TOO_LARGE` | The manifest is too large. | Your manifest must be 500 KB or less.
 | Manifest is readable | `MANIFEST_MALFORMED` | The manifest is incompatible. | Check if the manifest is a valid JSON file. Check if the manifest contains required properties, such as `name`, `msaAppId`, and so on. See [Manifest restrictions](#manifest-restrictions) for more information.
-| Skill is not yet registered | `MANIFEST_ALREADY_IMPORTED` | This skill has already been added to your bot. | Delete the skill and register it again.
+| Skill isn't yet registered | `MANIFEST_ALREADY_IMPORTED` | This skill has already been added to your bot. | Delete the skill and register it again.
 | Manifest endpoint and homepage domains match | `MANIFEST_ENDPOINT_ORIGIN_MISMATCH` | There's a mismatch in your skill endpoints. | You Azure AD app's homepage URL domain and manifest URL domain must match. See [Same-tenant restriction](#same-tenant-restriction)
 | Skill is hosted in signed in user's tenant | `APPID_NOT_IN_TENANT` | To add a skill, it must first be registered.| A global administrator must register the skill into the signed in user's organization.
 | Actions are limited | `LIMITS_TOO_MANY_ACTIONS` | The skill is limited to 100 actions.|There are too many skill actions defined in skill manifest. Remove actions and try again.

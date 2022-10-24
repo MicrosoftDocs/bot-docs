@@ -96,7 +96,7 @@ Bots are complex apps with a lot of different parts working together. Like any o
 
 - Test your bot locally with the [Bot Framework Emulator](bot-service-debug-emulator.md). The Bot Framework Emulator is a stand-alone app that not only provides a chat interface but also debugging and interrogation tools to help understand how and why your bot does what it does. The Emulator can be run locally alongside your in-development bot application.
 
-- Test your bot on the [web](bot-service-manage-test-webchat.md). Once configured through the Azure portal your bot can also be reached through a web chat interface. The web chat interface is a great way to grant access to your bot to testers and other people who do not have direct access to the bot's running code.
+- Test your bot on the [web](bot-service-manage-test-webchat.md). Once configured through the Azure portal your bot can also be reached through a web chat interface. The web chat interface is a great way to grant access to your bot to testers and other people who don't have direct access to the bot's running code.
 
 - [Unit Test](/azure/bot-service/unit-test-bots) your bot with the current Bot Framework SDK.
 

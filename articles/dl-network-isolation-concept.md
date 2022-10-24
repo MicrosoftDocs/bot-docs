@@ -43,7 +43,7 @@ Private endpoints are available in the Bot Service via the Direct Line App Servi
 
 1. For [user authentication](./v4sdk/bot-builder-concept-authentication.md) to work, your bot client needs to communicate with the service provider&mdash;such as Azure Active Directory or GitHub&mdash;and the token endpoint.
 
-    If your bot client is in your virtual network, you'll need to allow-list both endpoints from within your virtual network. Do this for the token endpoint via [service tags](./bot-service-channel-directline-extension-vnet.md). Your bot endpoint itself also needs access to the token endpoint, as described below.
+    If your bot client is in your virtual network, you'll need to allowlist both endpoints from within your virtual network. Do this for the token endpoint via [service tags](./bot-service-channel-directline-extension-vnet.md). Your bot endpoint itself also needs access to the token endpoint, as described below.
 
 1. With the App Service extension, your bot endpoint and the App Service extension need to send outbound HTTPS requests to Bot Framework services.
 

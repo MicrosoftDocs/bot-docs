@@ -425,7 +425,7 @@ Defines a message that is exchanged between bot and user.
 | **conversation** | [ConversationAccount](#conversationaccount-object) | A **ConversationAccount** object that defines the conversation to which the activity belongs. |
 | **deliveryMode** | String | A delivery hint to signal to the recipient alternate delivery paths for the activity. One of these values: **normal**, **notification**. |
 | **entities** | object[] | Array of objects that represents the entities that were mentioned in the message. Objects in this array may be any [Schema.org](http://schema.org/) object. For example, the array may include [Mention](#mention-object) objects that identify someone who was mentioned in the conversation and [Place](#place-object) objects that identify a place that was mentioned in the conversation. |
-| **expiration** | String | The time at which the activity should be considered to be "expired" and should not be presented to the recipient. |
+| **expiration** | String | The time at which the activity should be considered to be "expired" and shouldn't be presented to the recipient. |
 | **from** | [ChannelAccount](#channelaccount-object) | A **ChannelAccount** object that specifies the sender of the message. |
 | **historyDisclosed** | Boolean | Flag that indicates whether or not history is disclosed. Default value is **false**. |
 | **id** | String | ID that uniquely identifies the activity on the channel. |

@@ -23,7 +23,7 @@ Handling interruptions is an important aspect of a robust bot. Users won't alway
 - Knowledge of [bot basics][concept-basics], [managing state][concept-state], the [dialogs library][concept-dialogs], and how to [reuse dialogs][component-dialogs].
 - A copy of the core bot sample in [C#][cs-sample], [JavaScript][js-sample], [Java][java-sample] or [Python][python-sample].
 
-The core bot sample uses Language Understanding (LUIS) to identify user intents; however, identifying user intent is not the focus of this article.
+The core bot sample uses Language Understanding (LUIS) to identify user intents; however, identifying user intent isn't the focus of this article.
 For information about identifying user intents, see [Natural language understanding](bot-builder-concept-luis.md) and [Add natural language understanding to your bot](bot-builder-howto-v4-luis.md).
 
 [!INCLUDE [luis-sunset-alert](../includes/luis-sunset-alert.md)]

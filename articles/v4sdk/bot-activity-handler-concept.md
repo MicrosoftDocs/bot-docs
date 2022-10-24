@@ -40,7 +40,7 @@ To add these listeners, you'll register them in your bot as seen in the [Bot log
 Make sure to [save state](bot-builder-concept-state.md) before the turn ends. You can do so by overriding the activity handler `run` method and saving state after the parent's `run` method completes.
 
 There are no common situations where you'll want to override the base turn handler, so be careful if you try to do so.
-There is a special handler called `onDialog`. The `onDialog` handler runs at the end, after the rest of the handlers have run, and is not tied to a certain activity type. As with all the above handlers, be sure to call `next()` to ensure the rest of the process wraps up.
+There is a special handler called `onDialog`. The `onDialog` handler runs at the end, after the rest of the handlers have run, and isn't tied to a certain activity type. As with all the above handlers, be sure to call `next()` to ensure the rest of the process wraps up.
 
 # [Java](#tab/java)
 
@@ -116,10 +116,10 @@ Use these methods to register listeners for each type of event:
 | Installation update activity received | `onInstallationUpdate` | Registers a listener for when any `installationUpdate` activity is received. |
 | Bot installed | `onInstallationUpdateAdd` | Registers a listener for when the bot is installed within an organizational unit. |
 | Bot uninstalled | `onInstallationUpdateRemove` | Registers a listener for when the bot is uninstalled within an organizational unit. |
-| Other activity type received | `onUnrecognizedActivityType` | Registers a listener for when a handler for the specific type of activity is not defined. |
+| Other activity type received | `onUnrecognizedActivityType` | Registers a listener for when a handler for the specific type of activity isn't defined. |
 | Activity handlers have completed | `onDialog` | Called after any applicable handlers have completed. |
 
-Call the `next` continuation function from each handler to allow processing to continue. If `next` is not called, processing of the activity ends.
+Call the `next` continuation function from each handler to allow processing to continue. If `next` isn't called, processing of the activity ends.
 
 ### [Java](#tab/java)
 

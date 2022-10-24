@@ -14,7 +14,7 @@ ms.date: 03/25/2022
 
 Bot Framework Adaptive Tools is a VS Code extension that helps developers handle .lg, .lu, and dialog (.dialog) files efficiently.
 
-Adaptive Tools has a variety of tools and settings that make it easy to debug, analyze and enhance you language files. Features like syntax highlighting, diagnostic checks, and debugging let developers troubleshoot language files, while autocompletion and suggestion enhance and simplify the process of bot asset creation.
+Adaptive Tools has various tools and settings that make it easy to debug, analyze and enhance you language files. Features like syntax highlighting, diagnostic checks, and debugging let developers troubleshoot language files, while autocompletion and suggestion enhance and simplify the process of bot asset creation.
 
 ## Prerequisites
 

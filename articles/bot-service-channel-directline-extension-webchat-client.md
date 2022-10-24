@@ -19,7 +19,7 @@ This article describes how to use Web Chat with the Direct Line App Service exte
 ## Integrate Web Chat client
 
 > [!NOTE]
-> Adaptive Cards sent through the Direct Line App Service extension do not undergo the same processing as those sent through other versions of the Direct Line channel. Due to this the JSON representation of the Adaptive Card sent to Web Chat from the Direct Line App Service extension won't have default values added by the channel if the fields are omitted by the bot when the card is created.
+> Adaptive Cards sent through the Direct Line App Service extension don't undergo the same processing as those sent through other versions of the Direct Line channel. Due to this the JSON representation of the Adaptive Card sent to Web Chat from the Direct Line App Service extension won't have default values added by the channel if the fields are omitted by the bot when the card is created.
 
 Generally speaking, the approach is the same as before. With the exception that in version 4.9.1 or later of Web Chat there is built-in support for establishing a two-way _WebSocket_. This allows Web Chat to directly connect to the Direct Line App Service extension hosted with your bot instead of connecting to [https://directline.botframework.com/](bot-service-channel-connect-directline.md).
 The Direct Line URL for your bot will be `https://<your_app_service>.azurewebsites.net/.bot/`, the Direct Line _endpoint_ on your app service extension.

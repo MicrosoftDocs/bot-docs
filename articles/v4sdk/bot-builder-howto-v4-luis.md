@@ -69,8 +69,8 @@ Upon the response back, `mainDialog` preserves information for the user returned
 # [Java](#tab/java)
 
 1. After each processing of user input, `DialogBot` saves the current state of both `UserState` and `ConversationState`.
-2. Once all the required information has been gathered, the coding sample creates a demo flight booking reservation.
-3. In this article, we'll be covering the LUIS aspects of this sample. However, the general flow of the sample is shown below:
+1. Once all the required information has been gathered, the coding sample creates a demo flight booking reservation.
+1. In this article, we'll be covering the LUIS aspects of this sample. However, the general flow of the sample is shown below:
 
 - `onMembersAdded` is called when a new user is connected and displays a welcome card.
 - `onMessageActivity` is called for each user input received.

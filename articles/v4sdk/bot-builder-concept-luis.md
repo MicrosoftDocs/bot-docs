@@ -16,7 +16,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-Bots can use a variety of conversational styles, from structured and guided to free-form and open-ended.
+Bots can use various conversational styles, from structured and guided to free-form and open-ended.
 Based on what a user says, your bot needs to decide what to do next in its conversation flow.
 Azure Cognitive Services includes features to help with this task.
 These features can help a bot search for information, ask questions, or interpret the user's intent.

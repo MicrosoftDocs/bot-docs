@@ -190,7 +190,7 @@ You can use the Emulator to sign in to your Azure account. This is helpful for y
 
 1. On the **Welcome** screen, select **Sign in with your Azure account**. You can optionally have Emulator keep you signed in across Emulator application restarts.
 
-    :::image type="content" source="media/emulator-v4/emulator-azure-login-success.png" alt-text="Emulator Azure sign in success":::
+    :::image type="content" source="media/emulator-v4/emulator-azure-login-success.png" alt-text="Emulator Azure sign-in success":::
 
 ## Disabling data collection
 

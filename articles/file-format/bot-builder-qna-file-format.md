@@ -112,7 +112,7 @@ You can get coffee in our Portland store at 52 marine drive, Portland, OR
 
 ## QnA Maker PDF file ingestion
 
-QnA Maker also supports ingesting PDF files during KB creation. You can add files for QnA Maker to ingest using the URL reference scheme. If the URI's content type is not text or HTML, then the parser will add it to files collection for QnA Maker to ingest.
+QnA Maker also supports ingesting PDF files during KB creation. You can add files for QnA Maker to ingest using the URL reference scheme. If the URI's content type isn't text or HTML, then the parser will add it to files collection for QnA Maker to ingest.
 
 ```qna
 [SurfaceManual.pdf](https://download.microsoft.com/download/2/9/B/29B20383-302C-4517-A006-B0186F04BE28/surface-pro-4-user-guide-EN.pdf)

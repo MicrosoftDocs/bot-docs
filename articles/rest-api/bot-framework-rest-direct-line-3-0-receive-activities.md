@@ -166,7 +166,7 @@ Clients that poll using `HTTP GET` should choose a polling interval that matches
 
 - Service-to-service applications often use a polling interval of 5s or 10s.
 
-- Client-facing applications often use a polling interval of 1s, and issue a single additional request shortly after every message that the client sends (to rapidly retrieve a bot's response). This delay can be as short at 300ms but should be tuned based on the bot's speed and transit time. Polling should not be more frequent than once per second for any extended period of time.
+- Client-facing applications often use a polling interval of 1s, and issue a single additional request shortly after every message that the client sends (to rapidly retrieve a bot's response). This delay can be as short at 300ms but should be tuned based on the bot's speed and transit time. Polling shouldn't be more frequent than once per second for any extended period of time.
 
 ## Additional resources
 

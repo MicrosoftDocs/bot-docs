@@ -284,7 +284,7 @@ Create and register services as needed:
 ---
 
 > [!NOTE]
-> Memory storage is used for testing purposes only and is not intended for production use.
+> Memory storage is used for testing purposes only and isn't intended for production use.
 > Be sure to use a persistent type of storage for a production bot.
 
 ## Test the bot

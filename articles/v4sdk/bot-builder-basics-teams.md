@@ -82,9 +82,6 @@ See [Installation update event](/microsoftteams/platform/bots/how-to/conversatio
 The following table lists the Teams events that generate a _conversation update_ activity in a bot.
 The Microsoft Teams [Conversation update events](/microsoftteams/platform/bots/how-to/conversations/subscribe-to-conversation-events) article describes how to use each of these events.
 
-<!-- Ignoring the teamHardDeleted event type for now, which is not currently documented in Teams. -->
-<!-- Teams docs have a questionable description of `teamRestored`. (https://github.com/MicrosoftDocs/msteams-docs/issues/2830) Using what I think makes sense for now. -->
-
 ### [C#](#tab/csharp)
 
 Below is a list of all of the Teams activity handlers called from the `OnConversationUpdateActivityAsync` method of the _Teams_ activity handler.

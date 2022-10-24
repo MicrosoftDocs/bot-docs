@@ -54,7 +54,7 @@ The Bot Framework Token Service is responsible for:
   > If the bot has an expired user token, the bot should:
   >
   > - Log the user out
-  > - Initiate the sign in flow again
+  > - Initiate the sign-in flow again
 
 For example, a bot that can check a user's recent emails, using the Microsoft Graph API, requires a user token from an **Identity Provider**, in this case **Azure Active Directory**. At design time, the bot developer performs these two important steps:
 

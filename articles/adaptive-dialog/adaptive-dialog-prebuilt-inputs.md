@@ -16,7 +16,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-The Bot Framework SDK defines a variety of input dialogs for collecting and validating user input.
+The Bot Framework SDK defines various input dialogs for collecting and validating user input.
 
 | Input type       | Input class                       | Description                                              | Returns                                  |
 | ---------------- | --------------------------------- | -------------------------------------------------------- | ---------------------------------------- |
@@ -75,7 +75,7 @@ Use this to define what property the input dialog is bound to. For example:
 
 ### UnrecognizedPrompt
 
-The activity template with which to reprompt for input if the user input is not recognized. (If the input fails for [max turn count](#maxturncount) turns, then the [default value](#defaultvalue) is used and the [default value response](#defaultvalueresponse) is sent.)
+The activity template with which to reprompt for input if the user input isn't recognized. (If the input fails for [max turn count](#maxturncount) turns, then the [default value](#defaultvalue) is used and the [default value response](#defaultvalueresponse) is sent.)
 
 ### Validations
 
@@ -117,26 +117,26 @@ The `NumberInput` action inherits all of the properties defined in [InputDialog]
 <!--https://blog.botframework.com/2018/02/01/contributing-luis-microsoft-recognizers-text-part-2/-->
 
 1. `DefaultLocale`: Sets the default locale for input processing that will be used unless one is passed by the caller. Supported locales are Spanish, Dutch, English, French, German, Japanese, Portuguese, Chinese.
-2. `OutputFormat`: Using [adaptive expressions][adaptive-expressions] you can take actions to manipulate the number in some way. For example, you could write an expression to convert a number entered as a temperature given in Fahrenheit to its equivalent Celsius value, perform a mathematical calculation such as adding tax and shipping costs to the value entered, or simply perform a type conversion to specify that the value is either a float or integer as demonstrated in the sample code below.
+1. `OutputFormat`: Using [adaptive expressions][adaptive-expressions] you can take actions to manipulate the number in some way. For example, you could write an expression to convert a number entered as a temperature given in Fahrenheit to its equivalent Celsius value, perform a mathematical calculation such as adding tax and shipping costs to the value entered, or simply perform a type conversion to specify that the value is either a float or integer as demonstrated in the sample code below.
 
 ## ConfirmInput
 
-**Confirmation inputs** are useful to use after you have already asked the user a question and want to confirm their answer. Unlike the **Multiple choice** action that enables your bot to present the user with a list to choose from, confirmation prompts ask the user to make a binary (yes/no) decision.
+**Confirmation inputs** are useful to use after you ask the user a question and want to confirm their answer. Unlike the **Multiple choice** action that enables your bot to present the user with a list to choose from, confirmation prompts ask the user to make a binary (yes/no) decision.
 
 The `ConfirmInput` action inherits all of the properties defined in [InputDialog](#inputdialog) and defines these additional properties:
 
-1. `ChoiceOptions`: Used to format the presentation of the confirmation choices that are presented to the user, this is an [adaptive expression][adaptive-expressions] that evaluates to a `ChoiceSet` object. This `ChoiceSet` object will only be used as a back up if the initial attempt at recognition of the `ConfirmInput` fails. When the `ConfirmInput` action executes, it first tries to evaluate the input as a Boolean value. If that fails, it makes a second attempt, this time using a choice recognizer evaluating against the ChoiceSet.
-2. `ConfirmChoices`: The choices or an [adaptive expression][adaptive-expressions] that evaluates to the choices that will be presented to the user.
-3. `DefaultLocale`: Sets the default locale for input processing that will be used unless one is passed by the caller. Supported locales are Spanish, Dutch, English, French, German, Japanese, Portuguese, Chinese
-4. `OutputFormat`: The default output format for the `ConfirmInput` action is a boolean. You can override that using the `OutputFormat` property, an [adaptive expressions][adaptive-expressions] which you can use to modify the return results if needed. For example you can use this to cause the  `ConfirmInput` action to return a number: `OutputFormat = "if(this.value == true, 1, 0)"`.
+1. `ChoiceOptions`: Used to format the presentation of the confirmation choices that are presented to the user, this is an [adaptive expression][adaptive-expressions] that evaluates to a `ChoiceSet` object. This `ChoiceSet` object will only be used as a backup if the initial attempt at recognition of the `ConfirmInput` fails. When the `ConfirmInput` action executes, it first tries to evaluate the input as a Boolean value. If that fails, it makes a second attempt, this time using a choice recognizer evaluating against the ChoiceSet.
+1. `ConfirmChoices`: The choices or an [adaptive expression][adaptive-expressions] that evaluates to the choices that will be presented to the user.
+1. `DefaultLocale`: Sets the default locale for input processing that will be used unless one is passed by the caller. Supported locales are Spanish, Dutch, English, French, German, Japanese, Portuguese, Chinese
+1. `OutputFormat`: The default output format for the `ConfirmInput` action is a boolean. You can override that using the `OutputFormat` property, an [adaptive expressions][adaptive-expressions] which you can use to modify the return results if needed. For example you can use this to cause the  `ConfirmInput` action to return a number: `OutputFormat = "if(this.value == true, 1, 0)"`.
 If this property is set then the output of the expression is the value returned by the dialog.
-5. `Style`: This defines the type of list to present to the user when confirming their input. This uses the `ListStyle` enum which consists of:
+1. `Style`: This defines the type of list to present to the user when confirming their input. This uses the `ListStyle` enum which consists of:
     1. `None`: Don't include any choices for prompt.
-    2. `Auto`: Automatically select the appropriate style for the current channel.
-    3. `Inline`: Add choices to prompt as an inline list.
-    4. `List`: Add choices to prompt as a numbered list.
-    5. `SuggestedAction`: Add choices to prompt as suggested actions.
-    6. `HeroCard`: Add choices to prompt as a HeroCard with buttons.
+    1. `Auto`: Automatically select the appropriate style for the current channel.
+    1. `Inline`: Add choices to prompt as an inline list.
+    1. `List`: Add choices to prompt as a numbered list.
+    1. `SuggestedAction`: Add choices to prompt as suggested actions.
+    1. `HeroCard`: Add choices to prompt as a HeroCard with buttons.
 
 ## ChoiceInput
 
@@ -145,21 +145,21 @@ If this property is set then the output of the expression is the value returned 
 The `ChoiceInput` action inherits all of the properties defined in [InputDialog](#inputdialog) and defines these additional properties:
 
 1. `ChoiceOptions`: This property is used to format the presentation of the confirmation choices that are presented to the user.
-2. `Choices`: An adaptive expression that evaluates to a ChoiceSet that contains the [ordered] list of choices for the user to choose from.
-3. `DefaultLocale`: Sets the default locale for input processing that will be used unless one is passed by the caller. Supported locales are Spanish, Dutch, English, French, German, Japanese, Portuguese, Chinese
-4. `OutputFormat`: an adaptive expression that evaluates to one of the `ChoiceOutputFormat` enumeration values.
-5. `Style`: This defines the type of list to present to the user when confirming their input. This uses the `ListStyle` enum which consists of:
+1. `Choices`: An adaptive expression that evaluates to a ChoiceSet that contains the [ordered] list of choices for the user to choose from.
+1. `DefaultLocale`: Sets the default locale for input processing that will be used unless one is passed by the caller. Supported locales are Spanish, Dutch, English, French, German, Japanese, Portuguese, Chinese
+1. `OutputFormat`: an adaptive expression that evaluates to one of the `ChoiceOutputFormat` enumeration values.
+1. `Style`: This defines the type of list to present to the user when confirming their input. This uses the `ListStyle` enum which consists of:
     1. `None`: Don't include any choices for prompt.
-    2. `Auto`: Automatically select the appropriate style for the current channel.
-    3. `Inline`: Add choices to prompt as an inline list.
-    4. `List`: Add choices to prompt as a numbered list.
-    5. `SuggestedAction`: Add choices to prompt as suggested actions.
-    6. `HeroCard`: Add choices to prompt as a HeroCard with buttons.
-6. `RecognizerOptions`: `FindChoicesOptions` or expression which evaluates to `FindChoicesOptions`. The `FindChoicesOptions` has these properties:
+    1. `Auto`: Automatically select the appropriate style for the current channel.
+    1. `Inline`: Add choices to prompt as an inline list.
+    1. `List`: Add choices to prompt as a numbered list.
+    1. `SuggestedAction`: Add choices to prompt as suggested actions.
+    1. `HeroCard`: Add choices to prompt as a HeroCard with buttons.
+1. `RecognizerOptions`: `FindChoicesOptions` or expression which evaluates to `FindChoicesOptions`. The `FindChoicesOptions` has these properties:
     1. `NoValue`: A Boolean value. `true` to search over each choice's _value_ property; otherwise, `false`. The default is `false`.
-    2. `NoAction`: A Boolean value. `true` to search over the title of each choice's _action_ property; otherwise, `false`. The default is `false`.
-    3. `RecognizeNumbers`: A Boolean value. `true` to allow the input fall-back on using a number recognizer to match against the input choices; otherwise, `false`. The default is `true`.
-    4. `RecognizeOrdinals`: A Boolean value. `true` to allow the input to fall-back on using an ordinal number recognizer to match against the input choices; otherwise, `false`. The default is `true`.
+    1. `NoAction`: A Boolean value. `true` to search over the title of each choice's _action_ property; otherwise, `false`. The default is `false`.
+    1. `RecognizeNumbers`: A Boolean value. `true` to allow the input to fall back on using a number recognizer to match against the input choices; otherwise, `false`. The default is `true`.
+    1. `RecognizeOrdinals`: A Boolean value. `true` to allow the input to fall back on using an ordinal number recognizer to match against the input choices; otherwise, `false`. The default is `true`.
 
 ## DateTimeInput
 
@@ -168,7 +168,7 @@ Asks for a date/time.
 The `DateTimeInput` action inherits all of the properties defined in [InputDialog](#inputdialog) and defines these additional properties:
 
 1. `DefaultLocale`: Sets the default locale for input processing that will be used unless one is passed by the caller. Supported locales are Spanish, Dutch, English, French, German, Japanese, Portuguese, Chinese.
-2. `OutputFormat`: The default output for `DateTimeInput` is an array of `DateTimeResolutions`, this property allows you to define an adaptive expression. Whatever value it returns become the final value for the dialog's `property` property, whether or not it evaluates to a date-time or not.
+1. `OutputFormat`: The default output for `DateTimeInput` is an array of `DateTimeResolutions`, this property allows you to define an adaptive expression. Whatever value it returns become the final value for the dialog's `property` property, whether or not it evaluates to a date-time or not.
 
 ## AttachmentInput
 
@@ -178,7 +178,7 @@ The `AttachmentInput` action inherits all of the properties defined in [InputDia
 
 * `OutputFormat`: The `AttachmentOutputFormat` or an expression which evaluates to an `AttachmentOutputFormat`. Valid `AttachmentOutputFormat` values are:
     1. `All`: return all attachments as a List.
-    2. `First`: return only the first attachment.
+    1. `First`: return only the first attachment.
 
 ## OAuthInput
 
@@ -187,20 +187,20 @@ Use to ask user to sign in.
 The `OAuthInput` action inherits all of the properties defined in [InputDialog](#inputdialog) and defines these additional properties:
 
 1. `ConnectionName`: Name of the OAuth connection configured in Azure Bot Service settings page for the bot.
-2. `Text`: Additional text to display in the sign in card.
-3. `Title`: Title text to display in the sign in card.
-4. `Timeout`: This is the number of milliseconds `OAuthInput` waits for the user authentication to complete.  The default is 900,000 milliseconds, which is 15 minutes.
+1. `Text`: Additional text to display in the sign-in card.
+1. `Title`: Title text to display in the sign-in card.
+1. `Timeout`: This is the number of milliseconds `OAuthInput` waits for the user authentication to complete.  The default is 900,000 milliseconds, which is 15 minutes.
 
 The `OAuthInput` action also defines two new methods:
 
 1. `GetUserTokenAsync`: This method attempts to retrieve the user's token.
-2. `SignOutUserAsync`: This method signs out the user.
+1. `SignOutUserAsync`: This method signs out the user.
 
 The `OAuthInput` action returns a `TokenResponse` object which contains values for `ChannelId`, `ConnectionName`, `Token`, `Expiration`. In the example below, the return value is placed into the `turn` memory scope: `turn.oauth`. You can access values from this as demonstrated in the `LoginSteps()` method: `new SendActivity("Here is your token '${turn.oauth.token}'.")`.
 
 ### Additional information related to OAuth
 
-The following links provide generalized information on the topic of authentication in the Microsoft Bot Framework SDK. This information is not tailored or specific to adaptive dialogs.
+The following links provide generalized information on the topic of authentication in the Microsoft Bot Framework SDK. This information isn't tailored or specific to adaptive dialogs.
 
 * [Bot authentication][authentication]
 * [Add authentication to a bot][add-authentication]

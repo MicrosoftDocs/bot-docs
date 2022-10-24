@@ -130,7 +130,7 @@ First, we create an object for accessing our QnA Maker knowledge base.
 
 Be sure that the **Microsoft.Bot.Builder.AI.QnA** NuGet package is installed for your project.
 
-In **QnABot.cs**, in the `OnMessageActivityAsync` method, create a QnAMaker instance. The `QnABot` class is also where the names of the connection information, saved in **appsettings.json** above, are pulled in. If you have chosen different names for your knowledge base connection information in your settings file, be sure to update the names here to reflect your chosen name.
+In **QnABot.cs**, in the `OnMessageActivityAsync` method, create a QnAMaker instance. The `QnABot` class is also where the names of the connection information, saved in **appsettings.json** above, are pulled in. If you chose different names for your knowledge base connection information in your settings file, be sure to update the names here to reflect your chosen name.
 
 **Bots/QnABot.cs**
 
@@ -150,7 +150,7 @@ In the **QnABot.js** file, we use the connection information provided by your .e
 
 ## [Java](#tab/java)
 
-In **QnABot.java**, in the `onMessageActivity` method, create a QnAMaker instance. The `QnABot` class is also where the names of the connection information, saved in **application.properties** above, are pulled in. If you have chosen different names for your knowledge base connection information in your settings file, be sure to update the names here to reflect your chosen name.
+In **QnABot.java**, in the `onMessageActivity` method, create a QnAMaker instance. The `QnABot` class is also where the names of the connection information, saved in **application.properties** above, are pulled in. If you chose different names for your knowledge base connection information in your settings file, be sure to update the names here to reflect your chosen name.
 
 **QnABot.java**
 

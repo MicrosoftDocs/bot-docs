@@ -15,7 +15,7 @@ title: Bot Framework Security and Privacy Frequently Asked Questions # < 60 char
 summary: |
   This article answers commonly asked security and privacy questions.
 
-  <!-- Attention writers!!
+  <!-- Attention writers!
      1 - This article contains FAQs regarding Bot Framework security and privacy.
      1 - When you create a new FAQ, please add the related link to the proper section in bot-service-resources-bot-framework-faq.yml.-->
 
@@ -40,9 +40,9 @@ sections:
           Users have a way to report a misbehaving bot via the bot's contact card in the directory.
           Developers must abide by Microsoft terms of service to participate in the service.
 
-      - question: Which specific URLs do I need to allow-list in my corporate firewall to access Bot Framework services?
+      - question: Which specific URLs do I need to allowlist in my corporate firewall to access Bot Framework services?
         answer: |
-          If you have an outbound firewall that blocks traffic from your bot to the Internet, you'll need to allow-list the following URLs in that firewall:
+          If you have an outbound firewall that blocks traffic from your bot to the Internet, you'll need to allowlist the following URLs in that firewall:
 
           - `login.botframework.com` (Bot authentication)
           - `login.microsoftonline.com` (Bot authentication)
@@ -57,7 +57,7 @@ sections:
           [!INCLUDE [luis-sunset-alert](./includes/luis-sunset-alert.md)]
 
           > [!NOTE]
-          > You may use `<channel>.botframework.com` if you'd prefer not to allow-list a URL with an asterisk. `<channel>` is equal to
+          > You may use `<channel>.botframework.com` if you'd prefer not to allowlist a URL with an asterisk. `<channel>` is equal to
           > every channel your bot uses such as `directline.botframework.com`, `webchat.botframework.com`, and `slack.botframework.com`.
           > It's also worthwhile to watch traffic over your firewall while testing the bot to see what traffic it's blocking.
 
@@ -113,8 +113,8 @@ sections:
 
           > [!NOTE]
           > These are outbound connections from the bot to the Internet.
-          > There is not a list of IP Addresses or DNS names that the Bot Framework Connector Service will use to talk to the bot.
-          > Inbound IP Address allow-listing is not supported.
+          > There isn't a list of IP Addresses or DNS names that the Bot Framework Connector Service will use to talk to the bot.
+          > Inbound IP Address allow-listing isn't supported.
 
       - question: What is the purpose of the magic code during authentication?
         answer: |

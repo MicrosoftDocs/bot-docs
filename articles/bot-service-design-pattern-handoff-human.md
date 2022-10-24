@@ -115,7 +115,7 @@ The following are common handoff status event fields:
     ```
 
     ```json
-    { "state" : "failed", "message" : "Cannot find agent with requested skill" }
+    { "state" : "failed", "message" : "Can't find agent with requested skill" }
     ```
 
 ## Handoff library
