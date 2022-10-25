@@ -77,8 +77,8 @@ The two main events encountered by the bot are:
 
 ![welcome user logic flow python diagram](media/welcome-user-flow-python.png)
 
-Whenever a new user is connected, they are provided with a *welcome message*, *information message*, and a *pattern message* by the bot.
-When a new user input is received, the `welcome_user_state.did_welcome_user` property is checked to see if it is set to *true*. If it is not set to *true*, an initial welcome user message is returned to the user. If it is set to *true*, based on the content of the user's input this bot will do one of the following:
+Whenever a new user is connected, they are provided with a _welcome message_, _information message_, and a _pattern message_ by the bot.
+When a new user input is received, the `welcome_user_state.did_welcome_user` property is checked to see if it is set to _true_. If it isn't set to _true_, an initial welcome user message is returned to the user. If it is set to _true_, based on the content of the user's input this bot will do one of the following:
 
 - Echo back a greeting received from the user.
 - Display a hero card providing addition information about bots.

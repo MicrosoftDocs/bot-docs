@@ -42,7 +42,7 @@ The following is a simple greeting LG template. Notice that all of the greetings
 
 ## LG in action
 
-You can use LG in a variety of ways when developing bots. To start, create one or more [.lg file(s)][lg-file-format] to cover all possible scenarios where you would use the language generation sub-system with your bot's replies to a user.
+You can use LG in various ways when developing bots. To start, create one or more [.lg file(s)][lg-file-format] to cover all possible scenarios where you would use the language generation sub-system with your bot's replies to a user.
 
 ## Multilingual generation and language fallback policy
 

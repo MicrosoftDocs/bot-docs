@@ -139,7 +139,7 @@ There are several types of entities in LUIS. In the following sections, you'll l
 
 #### Machine-learned entity
 
-[Machine-learned entities][ml-entity] are entities that enable you to provide examples where you label them in the example utterances. This gives them the context needed to learn from. The machine-learned entity is ideal when identifying data that is not always well formatted but has the same meaning.
+[Machine-learned entities][ml-entity] are entities that enable you to provide examples where you label them in the example utterances. This gives them the context needed to learn from. The machine-learned entity is ideal when identifying data that isn't always well formatted but has the same meaning.
 
 The following example demonstrates a machine-learned entity named city (`@ ml city`) and a `bookFlight` intent with sample utterances with your entities labeled:
 
@@ -397,7 +397,7 @@ The entity place holders can correspond to entities of any type or they can be d
 
 ### Pattern syntax
 
-The .lu file format supports the LUIS [Pattern syntax][]. Pattern syntax is a template embedded in an utterance. The template should contain both words and entities you want to match, as well as words and punctuation you want to ignore. The template is not a regular expression.
+The .lu file format supports the LUIS [Pattern syntax][]. Pattern syntax is a template embedded in an utterance. The template should contain both words and entities you want to match, as well as words and punctuation you want to ignore. The template isn't a regular expression.
 
 Entities in patterns are surrounded by braces, {}. Patterns can include entities, and entities with roles. [Pattern.any][pattern-any] is an entity only used in patterns.
 
@@ -452,7 +452,7 @@ There are two types of features supported in an .lu template:
 
 ## Phrase list
 
-A [phrase list][phrase-list] is a list of words or phrases that help find the concept you're trying to identify. The list is not case-sensitive. Phrase lists have two different purposes:
+A [phrase list][phrase-list] is a list of words or phrases that help find the concept you're trying to identify. The list isn't case-sensitive. Phrase lists have two different purposes:
 
 - **Extend the dictionary**: This is the default when you define a phrase list   and is known as _non-interchangeable_. Multi-word phrases become a feature to the machine learning which requires fewer examples to learn. In this usage, there is no relationship between the members of the phase list.
 - **Define synonyms**: Interchangeable phrase lists are used to define synonyms that mean _the same thing_.  This usage helps generalize with fewer examples.  Any phrase in the list results in the same feature to the machine learning. To use this requires specifying `interchangeable` in your phrase list definition (`@ phraselist <Name>(interchangeable)`)

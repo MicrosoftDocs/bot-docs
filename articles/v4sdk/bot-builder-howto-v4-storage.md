@@ -322,7 +322,7 @@ Install the [Bot Framework Emulator](https://github.com/microsoft/BotFramework-E
 Next, start the Emulator and then connect to your bot in the Emulator:
 
 1. Select the **Create new bot configuration** link in the Emulator **Welcome** tab.
-2. Fill in fields to connect to your bot, given the information on the webpage displayed when you started your bot.
+1. Fill in fields to connect to your bot, given the information on the webpage displayed when you started your bot.
 
 ### Interact with your bot
 
@@ -371,7 +371,7 @@ The account creation takes a few minutes. Wait for the portal to display the _Co
 ### Add a database
 
 > [!NOTE]
-> You should not create the container yourself. Your bot will create it for you when creating its internal Cosmos DB client, ensuring it's configured correctly for storing bot state.
+> Don't create the container yourself. Your bot will create it for you when creating its internal Cosmos DB client, ensuring it's configured correctly for storing bot state.
 
 1. Navigate to the **Data Explorer** page within your newly created Cosmos DB account, then choose **New Database** from the **New Container** drop-down. A panel will then open on the right-hand side of the window, where you can enter the details for the new database.
 
@@ -602,7 +602,7 @@ Run your bot locally.
 Now start the Bot Framework Emulator and connect to your bot:
 
 1. Select the **create a new bot configuration** link in the Emulator **Welcome** tab.
-2. Fill in fields to connect to your bot, given the information on the webpage displayed when you started your bot.
+1. Fill in fields to connect to your bot, given the information on the webpage displayed when you started your bot.
 
 ## Interact with your Cosmos DB bot
 
@@ -881,7 +881,7 @@ Run your bot locally.
 Next, start the Emulator and then connect to your bot in the Emulator:
 
 1. Select the **Create new bot configuration** link in the Emulator "Welcome" tab.
-2. Fill in fields to connect to your bot, given the information on the webpage displayed when you started your bot.
+1. Fill in fields to connect to your bot, given the information on the webpage displayed when you started your bot.
 
 ## Interact with your Blob storage bot
 

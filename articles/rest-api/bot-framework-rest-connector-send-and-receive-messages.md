@@ -77,9 +77,9 @@ Content-Type: application/json
 
 ## Send a (non-reply) message
 
-A majority of the messages that your bot sends will be in reply to messages that it receives from the user. However, there may be times when your bot needs to send a message to the conversation that is not a direct reply to any message from the user. For example, your bot may need to start a new topic of conversation or send a goodbye message at the end of the conversation.
+A majority of the messages that your bot sends will be in reply to messages that it receives from the user. However, there may be times when your bot needs to send a message to the conversation that isn't a direct reply to any message from the user. For example, your bot may need to start a new topic of conversation or send a goodbye message at the end of the conversation.
 
-To send a message to a conversation that is not a direct reply to any message from the user, issue this request:
+To send a message to a conversation that isn't a direct reply to any message from the user, issue this request:
 
 ```http
 POST /v3/conversations/{conversationId}/activities

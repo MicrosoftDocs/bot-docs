@@ -98,9 +98,9 @@ When the user sends a message, the Bot Framework Connector POSTs a request to th
 When your bot's endpoint receives a `POST` request that represents a message from the user (such as, `type` = **message**), use the information in that request to create the [Activity][] object for your response.
 
 1. Set the **conversation** property to the contents of the **conversation** property in the user's message.
-2. Set the **from** property to the contents of the **recipient** property in the user's message.
-3. Set the **recipient** property to the contents of the **from** property in the user's message.
-4. Set the **text** and **attachments** properties as appropriate.
+1. Set the **from** property to the contents of the **recipient** property in the user's message.
+1. Set the **recipient** property to the contents of the **from** property in the user's message.
+1. Set the **text** and **attachments** properties as appropriate.
 
 Use the `serviceUrl` property in the incoming request to [identify the base URI](bot-framework-rest-connector-api-reference.md#base-uri) that your bot should use to issue its response.
 

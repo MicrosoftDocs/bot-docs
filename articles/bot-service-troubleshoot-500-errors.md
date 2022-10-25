@@ -16,7 +16,7 @@ ms.custom: abs-meta-21q1
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-<!-- Attention writers!!
+<!-- Attention writers!
      1 - When you create a new FAQ, please add the related link to the proper section in bot-service-troubleshoot-index.md.-->
 
 The first step in troubleshooting 500 errors is enabling Application Insights.
@@ -66,7 +66,7 @@ union_all
     | order by timestamp desc
 ```
 
-If you have only `exceptions`, analyze the details and see if they correspond to lines in your code. If you only see exceptions coming from the Channel Connector (`Microsoft.Bot.ChannelConnector`) then see [No Application Insights events](#no-application-insights-events) to ensure that Application Insights is set up correctly and your code is logging events.
+If you only have `exceptions`, analyze the details and see if they correspond to lines in your code. If you only see exceptions coming from the Channel Connector (`Microsoft.Bot.ChannelConnector`) then see [No Application Insights events](#no-application-insights-events) to ensure that Application Insights is set up correctly and your code is logging events.
 
 ## No Application Insights events
 

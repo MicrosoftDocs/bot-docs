@@ -33,7 +33,7 @@ The [Bot Framework activity](https://github.com/Microsoft/botframework-sdk/blob/
 | SuggestedActions  | List of actions rendered as suggestions to user.                                                                                  |
 | InputHint         | Controls audio capture stream state on devices that support spoken input. Possible values include `accepting`, `expecting`, or `ignoring`.   |
 
-There is no default fallback behavior implemented by the template resolver. If a property is not specified, then it remains unspecified. For example, the `Speak` property isn't automatically assigned to be the `Text` property if only the `Text` property is specified.
+There is no default fallback behavior implemented by the template resolver. If a property isn't specified, then it remains unspecified. For example, the `Speak` property isn't automatically assigned to be the `Text` property if only the `Text` property is specified.
 
 ## Definition
 
@@ -225,7 +225,7 @@ A call to `evaluateTemplate('T1')` would result in the following internal struct
 
 ## Full reference to another structured template
 
-You can include a reference to a another structured template as a property in another structured template, or as  a reference in another simple or conditional response template
+You can include a reference to another structured template as a property in another structured template, or as  a reference in another simple or conditional response template
 
 Here's an example of full reference to another structured template:
 
@@ -276,14 +276,14 @@ With this context, a call to `evaluateTemplate('ST1')` will result in the follow
 ]
 ```
 
-Note that this style of composition can only exists at the root level. If there is a reference to another structured template within a property, then the resolution is contextual to that property.
+Note that this style of composition can only exist at the root level. If there is a reference to another structured template within a property, then the resolution is contextual to that property.
 
 ## External file reference in attachment structured
 
 There are two prebuilt functions used to externally reference files
 
-1. `fromFile(fileAbsoluteOrRelativePath)` loads a specified file. Content returned by this function will support evaluation of content.Template references and properties/ expressions are evaluated.
-2. `ActivityAttachment(content, contentType)` sets the `contentType` if it's not already specified in the content.
+1. `fromFile(fileAbsoluteOrRelativePath)` loads a specified file. Content returned by this function will support evaluation of content. Template references, properties, and expressions are evaluated.
+1. `ActivityAttachment(content, contentType)` sets the `contentType` if it's not already specified in the content.
 
 With these two prebuilt functions, you can pull in any externally defined content, including all card types. Use the following structured LG to compose an activity:
 
@@ -315,105 +315,8 @@ You can also use attachments, seen below:
 ]
 ```
 
-<!--
-## Chatdown style content as structured activity template
-It's a natural extension to also define full [chatdown][1] style templates using the structured template definition capability. This helps eliminate the need to always define chatdown style cards in a multi-line definition
-
-### Existing chatdown style constructs supported
-1. Typing
-2. Suggestions
-3. HeroCard
-4. SigninCard
-5. ThumbnailCard
-6. AudioCard
-7. VideoCard
-8. AnimationCard
-9. MediaCard
-8. SigninCard
-9. OAuthCard
-10. Attachment
-11. AttachmentLayout
-12. [New] CardAction
-13. [New] AdaptiveCard
-14. Activity
-
-### Improvements to chatown style constructs
-
-#### CardAction
-```lg
-# CardAction (title, type, value)
-[CardAction
-> type can be 'openUrl', 'imBack', 'postBack', 'messageBack'
-    Type = ${if(type == null, 'imBack', type)}
-> description that appears on button
-    Title = ${title}
-> payload to return as object.
-    Value = ${value}
-]
-```
-
-#### Suggestions
-Suggestions can now support a full blown CardAction structure.
-
-```lg
-# AskForColor
-[Activity
-    SuggestedActions = ${CardAction('red')} | ${CardAction('blue') | ${CardAction('See all choices', 'openUrl', 'http://contoso.com/color/choices')}}
-]
-```
-
-#### Adaptive card
-Adaptive cards today are rendered via `[Attachment=cardpath.json adaptive]` notation. You can define adaptive cards inline and consume them via the `json()` function.
-
-```lg
-    # GetColor.prompt
-    [Activity
-        Attachments = ${json(GetColor.adaptive.card())
-    ]
-
-    # GetColor.adaptive.card
-    - ```json
-    {
-        // adaptive card definition
-    }
-    ```
-```
-
-### All card types
-Buttons in any of the card types will also support full blown CardAction definition.
-
-Here's an example:
-```lg
-# HeroCardTemplate
-[HeroCard
-    title = BotFramework Hero Card
-    subtitle = Microsoft Bot Framework
-    text = Build and connect intelligent bots to interact with your users naturally wherever they are, from text/sms to Skype, Slack, Office 365 mail and other popular services.
-    image = https://sec.ch9.ms/ch9/7ff5/e07cfef0-aa3b-40bb-9baa-7c9ef8ff7ff5/buildreactionbotframework_960.jpg
-    buttons = {CardAction('Option 1| Option 2| Option 3')} | {CardAction('See our library', 'postBack', 'http://contoso.com/cards/all')}
-]
-```
-
-#### other type of activity
-[Bot framework activity protocol][2] supports ability for bot to send a custom activity to the client. We will add support for it via structured LG using the following definition. This should set the outgoing activities `type` property to `event` or the type Activity owns.
-
-```lg
-[Activity
-    type = event
-    name = some name
-    value = some value
-]
-```
-
-[more test samples][4]
--->
-
 ## Additional Information
 
 - [C# API Reference](/dotnet/api/microsoft.bot.builder.languagegeneration)
 - [JavaScript API reference](/javascript/api/botbuilder-lg)
 - Read [Debug with Adaptive Tools](../bot-service-debug-adaptive-tools.md) to learn how to analyze and debug templates.
-
-[1]:https://github.com/microsoft/botframework-cli/blob/master/packages/chatdown/docs/
-[2]:https://github.com/Microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md
-[4]:https://github.com/microsoft/botbuilder-dotnet/blob/master/tests/Microsoft.Bot.Builder.Dialogs.Adaptive.Templates.Tests/lg/NormalStructuredLG.lg

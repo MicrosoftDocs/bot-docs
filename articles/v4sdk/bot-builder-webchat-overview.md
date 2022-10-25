@@ -129,7 +129,7 @@ See a working sample of [Web Chat rendered via React](https://github.com/microso
 
 ## Customize Web Chat UI
 
-Web Chat is designed to be customizable without forking the source code. The table below outlines what kind of customizations you can achieve when you're importing Web Chat in different ways. This list is not exhaustive.
+Web Chat is designed to be customizable without forking the source code. The table below outlines what kind of customizations you can achieve when you're importing Web Chat in different ways. This list isn't exhaustive.
 
 | Customization                 | CDN bundle         | React              |
 | ----------------------------- | ------------------ | ------------------ |

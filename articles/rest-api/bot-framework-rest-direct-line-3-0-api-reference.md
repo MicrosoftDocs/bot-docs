@@ -41,9 +41,9 @@ The [HTTP status code](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html) 
 | 202 | The request has been accepted for processing. |
 | 204 | The request succeeded but no content was returned. |
 | 400 | The request was malformed or otherwise incorrect. |
-| 401 | The client is not authorized to make the request. Often this status code occurs because the `Authorization` header is missing or malformed. |
-| 403 | The client is not allowed to perform the requested operation. If the request specified a token that was previously valid but has expired, the `code` property of the [Error][] that is returned within the [ErrorResponse][] object is set to `TokenExpired`. |
-| 404 | The requested resource was not found. Typically this status code indicates an invalid request URI. |
+| 401 | The client isn't authorized to make the request. Often this status code occurs because the `Authorization` header is missing or malformed. |
+| 403 | The client isn't allowed to perform the requested operation. If the request specified a token that was previously valid but has expired, the `code` property of the [Error][] that is returned within the [ErrorResponse][] object is set to `TokenExpired`. |
+| 404 | The requested resource wasn't found. Typically this status code indicates an invalid request URI. |
 | 500 | An internal server error occurred within the Direct Line service. |
 | 502 | The bot is unavailable or returned an error. **This is a common error code.** |
 

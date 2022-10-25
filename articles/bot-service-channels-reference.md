@@ -207,7 +207,7 @@ Support for `event` and `invoke` activities varies by the activity's name and va
 
 ## Action support by channel
 
-The following table shows the maximum number of suggested actions and card actions that are supported in each channel.  The &#x274c; indicates that the action is not supported at all in the specified channel.
+The following table shows the maximum number of suggested actions and card actions that are supported in each channel.  The &#x274c; indicates that the action isn't supported at all in the specified channel.
 
 | \                 | Direct Line | Direct Line (Web Chat) | Email    | Facebook | GroupMe  | Line | Teams    | Slack    | Skype | Skype Business | Telegram | Twilio   |
 |:------------------|:-----------:|:----------------------:|:--------:|:--------:|:--------:|:----:|:--------:|:--------:|:-----:|:--------------:|:--------:|:--------:|

@@ -121,7 +121,7 @@ A bot can use a trusted identity provider to:
 - Connect to cloud computing resources on behalf of a user, decreasing the need for users to reauthenticate.
 
 > [!NOTE]
-> The token issued during **Bot authentication** is not the same token issued during **User authentication**. The first is used to establish secure communication between a bot, channels and, ultimately, client applications. The second is used to authorize the bot to access secured resource on behalf of the user.
+> The token issued during **Bot authentication** isn't the same token issued during **User authentication**. The first is used to establish secure communication between a bot, channels and, ultimately, client applications. The second is used to authorize the bot to access secured resource on behalf of the user.
 
 Notice that channels provide their own, separate user authentication to let a user sign in to the channel.
 

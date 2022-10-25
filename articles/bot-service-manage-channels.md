@@ -54,7 +54,7 @@ The connection steps are different for each channel. See the related article in 
 | Skype | Skype no longer supports new bot development. |
 | [Slack](bot-service-channel-connect-slack.md) | Configure a bot to communicate with users through Slack. |
 | [Telegram](bot-service-channel-connect-telegram.md) | Configure a bot to communicate with users through Telegram. |
-| Telephony | Telephony is in preview and is not currently accepting additional customers. |
+| Telephony | Telephony is in preview and isn't currently accepting additional customers. |
 | [Twilio (SMS)](bot-service-channel-connect-twilio.md) | Configure a bot to communicate with users through the Twilio cloud communication platform. |
 | [WeChat](bot-service-channel-connect-wechat.md) | Configure a bot to communicate with users using the WeChat platform. |
 | [Web Chat](bot-service-channel-connect-webchat.md) | Automatically configured for you when you create a bot with the Bot Framework Service. |

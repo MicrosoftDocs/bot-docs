@@ -36,7 +36,7 @@ The [CoreBot Tests](https://github.com/microsoft/BotBuilder-Samples/tree/master/
 
 ---
 
-The core bot sample uses Language Understanding (LUIS) to identify user intents; however, identifying user intent is not the focus of this article.
+The core bot sample uses Language Understanding (LUIS) to identify user intents; however, identifying user intent isn't the focus of this article.
 For information about identifying user intents, see [Natural language understanding](bot-builder-concept-luis.md) and [Add natural language understanding to your bot](bot-builder-howto-v4-luis.md).
 
 [!INCLUDE [luis-sunset-alert](../includes/luis-sunset-alert.md)]
@@ -358,7 +358,7 @@ In the CoreBot sample, we use `Theory` tests from XUnit to parameterize tests.
 
 ### Theory tests using InlineData
 
-The following test checks that a dialog gets cancelled when the user says "cancel".
+The following test checks that a dialog gets canceled when the user says "cancel".
 
 ```csharp
 [Fact]
@@ -551,7 +551,7 @@ Here is an example of the results for the `DialogFlowUseCases` tests in Visual S
 
 ### Simple data driven tests
 
-The following test checks that a dialog gets cancelled when the user says "cancel".
+The following test checks that a dialog gets canceled when the user says "cancel".
 
 ```javascript
 describe('ShouldBeAbleToCancel', () => {
@@ -716,7 +716,7 @@ Here is an example of the results for the `DialogFlowUseCases` test suite in Moc
 
 You can use mock elements for the things that are not currently tested. For reference, this level can generally be thought of as unit and integration testing.
 
-Mocking as many elements as you can allows for better isolation of the piece you're testing. Candidates for mock elements include storage, the adapter, middleware, activity pipeline, channels, and anything else that is not directly part of your bot. This could also involve removing certain aspects temporarily, such as middleware not involved in the part of your bot that you're testing, to isolate each piece. However, if you're testing your middleware, you may want to mock your bot instead.
+Mocking as many elements as you can allows for better isolation of the piece you're testing. Candidates for mock elements include storage, the adapter, middleware, activity pipeline, channels, and anything else that isn't directly part of your bot. This could also involve removing certain aspects temporarily, such as middleware not involved in the part of your bot that you're testing, to isolate each piece. However, if you're testing your middleware, you may want to mock your bot instead.
 
 Mocking elements can take a handful of forms, from replacing an element with a different known object to implementing a bare bones hello world functionality. This could also take the form of simply removing the element, if it's not necessary, or simply force it to do nothing.
 

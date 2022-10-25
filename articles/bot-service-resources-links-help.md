@@ -17,7 +17,7 @@ ms.date: 11/01/2021
 These resources provide additional information and support for developing bots with the Bot Framework.
 
 > [!IMPORTANT]
-> Please use one of these resources for support rather than posting comments on this article. This article is not monitored for support requests.
+> Please use one of these resources for support rather than posting comments on this article. This article isn't monitored for support requests.
 
 | Support type | Contact |
 |--|--|

@@ -375,7 +375,7 @@ if (message.entities) {
 ```
 
 > [!IMPORTANT]
-> Adding a bot by GUID, for anything other than testing purposes, is not recommended. Doing so severely limits the functionality of a bot. Bots in production should be added to Teams as part of an app. See [Create a bot](/microsoftteams/platform/concepts/bots/bots-create) and [Test and debug your Microsoft Teams bot](/microsoftteams/platform/concepts/bots/bots-test).
+> Adding a bot by GUID, for anything other than testing purposes, isn't recommended. Doing so severely limits the functionality of a bot. Bots in production should be added to Teams as part of an app. See [Create a bot](/microsoftteams/platform/concepts/bots/bots-create) and [Test and debug your Microsoft Teams bot](/microsoftteams/platform/concepts/bots/bots-test).
 
 ## Create a Telegram message
 

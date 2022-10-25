@@ -59,11 +59,11 @@ Let's analyze the flow.
         "body": {
             "id":"<unique ID>",
             "connectionName": "<connection Name on the bot (from the OAuth Card)>",
-            "failureDetail": "<failure reason if status code is not 200, null otherwise>"
+            "failureDetail": "<failure reason if status code isn't 200, null otherwise>"
         }
     }
     ```
 
-1. If the `TokenExchangeInvokeResponse` has a `status` of `200`, then the Web Chat doesn't show the OAuth card. For any other `status` or if the `TokenExchangeInvokeResponse` is not received, then the Web Chat shows the OAuth card to the user. This ensures that the SSO flow falls back to normal OAuthCard flow, in case of any errors or unmet dependencies like user consent.
+1. If the `TokenExchangeInvokeResponse` has a `status` of `200`, then the Web Chat doesn't show the OAuth card. For any other `status` or if the `TokenExchangeInvokeResponse` isn't received, then the Web Chat shows the OAuth card to the user. This ensures that the SSO flow falls back to normal OAuthCard flow, in case of any errors or unmet dependencies like user consent.
 
 For an implementation example, please refer to this [SSO sample](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/07.advanced-web-chat-apps/e.sso-on-behalf-of-authentication).

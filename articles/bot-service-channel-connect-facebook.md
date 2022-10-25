@@ -21,7 +21,7 @@ This article shows how to add the Facebook channel to your bot via Azure portal.
 
 - An Azure subscription. If you don't already have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 - A bot published to Azure that you want to connect to Facebook.
-- A Facebook for Developers account. If you do not have an account, you can create one at [developers.facebook.com](https://developers.facebook.com).
+- A Facebook for Developers account. If you don't have an account, you can create one at [developers.facebook.com](https://developers.facebook.com).
 - To use Facebook Workplace with your bot, you must create a Workplace account and a custom integration to connect the bot to.
 
 ## Create a Facebook app
@@ -156,7 +156,7 @@ Once complete, the site creates an app with defined permissions and a page of ty
 
     :::image type="content" source="media/channels/fb-keys.png" alt-text="Workplace keys":::
 
-1. Now you have finished creating a custom integration. You can find the page of type `Bot` in your Workplace community, as shown below.
+1. You've finished creating a custom integration. Now, you can find the page of type `Bot` in your Workplace community, as shown below.
 
     :::image type="content" source="media/channels/fb-page.png" alt-text="Workplace page":::
 

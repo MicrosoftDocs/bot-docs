@@ -36,7 +36,7 @@ This article describes the core classes and features of the dialog library.
 Dialogs can implement a _multi-turn conversation_, and as such, they rely on _persisted state_ across turns. Without state in dialogs, your bot wouldn't know where it was in the conversation or what information it had already gathered.
 
 To retain a dialog's place in the conversation, the dialog's state must be retrieved from and saved to memory each turn. This is handled via a dialog state property accessor defined on the bot's conversation state. This dialog state manages information for all active dialogs, and children of active dialogs.
-This allows the bot to pick up where it left off last and to handle a variety of conversation models.
+This allows the bot to pick up where it left off last and to handle various conversation models.
 
 At run time, the dialog state property includes information on where the dialog is in its logical process, including any internally collected information in the form of a _dialog instance_ object. Again, this needs to be read into the bot and saved out to memory each turn.
 
