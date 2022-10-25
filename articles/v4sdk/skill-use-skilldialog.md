@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: Gabo.Gilabert
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 10/11/2022
+ms.date: 10/25/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -177,7 +177,7 @@ The constructor calls `addSkillDialogs`, a helper method, to create a `SkillDial
 The `MainDialog` class derives from `ComponentDialog`.
 In addition to conversation state, the dialog needs the root bot's app ID and references to the skill conversation ID factory, the skill HTTP client, and the skills configuration objects.
 
-The dialog constructor checks its input parameters, adds skills dialogs, adds prompt and a waterfall dialogs for managing conversation flow outside the skill, and creates a property accessor for tracking the active skill, if any.
+The dialog constructor checks its input parameters, adds skills dialogs, adds prompt and waterfall dialogs for managing conversation flow outside the skill, and creates a property accessor for tracking the active skill, if any.
 
 The constructor calls `addSkillDialogs`, a helper method, to create a `SkillDialog` for each skill that is included in the configuration file, as read from the configuration file into a `SkillsConfiguration` object.
 
@@ -200,7 +200,7 @@ The constructor calls `AddSkillDialogs`, a helper method, to create a `SkillDial
 
 ### Select a skill
 
-In its first step, the main dialog prompts the user for which skill they'd like to call, and uses the "SkllPrompt" choice prompt to get the answer. (This bot defines only one skill.)
+In its first step, the main dialog prompts the user for which skill they'd like to call, and uses the "SkillPrompt" choice prompt to get the answer. (This bot defines only one skill.)
 
 #### [C#](#tab/cs)
 
@@ -342,9 +342,9 @@ In the last step, the main dialog:
 
 ### Allow the user to cancel the skill
 
-The main dialog overrides the default behavior of the _on continue dialog_ method to allow the user to cancel the current skill, if any. The method:
+The main dialog overrides the default behavior of the _on continue dialog_ method to allow the user to cancel the current skill, if any. Within the method:
 
-- If there is an active skill and the user sends an "abort" message, cancel all dialogs and queue the main dialog to restart from the beginning.
+- If there's an active skill and the user sends an "abort" message, cancel all dialogs and queue the main dialog to restart from the beginning.
 - Then, call the base implementation of the _on continue dialog_ method to continue processing the current turn.
 
 #### [C#](#tab/cs)
