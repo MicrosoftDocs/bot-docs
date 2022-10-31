@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 07/27/2022
+ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -26,6 +26,8 @@ The Emulator displays them in the log but not the main chat panel.
 - Trace activities sent via the turn context are associated with the inbound activity, by applying the conversation reference, if there was one.
   For a proactive message, the _reply to ID_ will be a new GUID.
 - Regardless of how it's sent, a trace activity never sets the _responded_ flag.
+
+[!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
 
 ## To use a trace activity
 

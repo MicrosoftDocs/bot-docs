@@ -40,6 +40,8 @@ The Bot Framework provides client libraries that can be used to build bots in C#
 - [Bot Framework SDK for Python](/python/api/).
 - [Bot Framework SDK for Java](https://github.com/microsoft/botbuilder-java#readme).
 
+[!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
+
 In addition to simplifying calls to Bot Framework REST APIs, each Bot Framework SDK also provides support for building dialogs that encapsulate conversational logic, built-in prompts for simple things such as Yes/No, strings, numbers, and enumerations, built-in support for powerful AI frameworks such as [LUIS](https://www.luis.ai/), and more.
 
 [!INCLUDE [qnamaker-sunset-alert](../includes/qnamaker-sunset-alert.md)]

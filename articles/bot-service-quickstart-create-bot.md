@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: quickstart
-ms.date: 10/10/2022
+ms.date: 10/26/2022
 ms.custom: mode-api, tab-zone-seo, abs-meta-21q1
 ---
 
@@ -19,11 +19,13 @@ This article describes how to build your first bot with the Bot Framework SDK fo
 
 Creating your first bot doesn't require an Azure subscription or an Azure Bot Service resource. This quickstart focuses on creating your first bot locally. If you'd like to learn how to create a bot in Azure, see [Create an Azure Bot resource](./v4sdk/abs-quickstart.md).
 
+[!INCLUDE [java-python-sunset-alert](includes/java-python-sunset-alert.md)]
+
 ## Prerequisites
 
 ### [C#](#tab/csharp)
 
-- [ASP.NET Core Runtime 3.1](https://dotnet.microsoft.com/download)
+- [.NET 6.0 SDK](https://dotnet.microsoft.com/download)
 - [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md)
 - Knowledge of [ASP.NET Core](/aspnet/core/) and [asynchronous programming in C#](/dotnet/csharp/programming-guide/concepts/async/index)
 
@@ -44,7 +46,7 @@ The current bot samples use .NET Core 3.1 templates.
 
 ### Java templates
 
-Use the Yeoman generator to quickly set up a conversational AI bot using core AI capabilities in the [Bot Framework v4](https://dev.botframework.com). For more information, see [yeoman.io](https://yeoman.io).
+Use the Yeoman generator to quickly create a conversational AI bot using core AI capabilities in the [Bot Framework v4](https://dev.botframework.com). For more information, see [yeoman.io](https://yeoman.io).
 
 The generator supports three different template options as shown below.
 

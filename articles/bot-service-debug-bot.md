@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 07/25/2022
+ms.date: 10/26/2022
 monikerRange: "azure-bot-service-4.0"
 ---
 
@@ -20,6 +20,8 @@ This article describes how to debug your bot using an IDE, such as Visual Studio
 
 > [!NOTE]
 > In this article, we use the Bot Framework Emulator to send and receive messages from the bot during debugging. If you're looking for other ways to debug your bot using the Bot Framework Emulator, please read the [Debug with the Bot Framework Emulator](bot-service-debug-emulator.md) article.
+
+[!INCLUDE [java-python-sunset-alert](includes/java-python-sunset-alert.md)]
 
 ## Prerequisites
 
@@ -124,8 +126,8 @@ For more information, see [Debug your Python code](/visualstudio/python/debuggin
 
 ## Additional resources
 
-- See [troubleshoot general problems](bot-service-troubleshoot-bot-configuration.md) and the other troubleshooting articles in that section.
-- See the how to [Debug with the Emulator](bot-service-debug-emulator.md).
+- [Troubleshoot bot configuration issues](bot-service-troubleshoot-bot-configuration.md) and the other troubleshooting articles in that section.
+- [Debug with the Emulator](bot-service-debug-emulator.md).
 
 ## Next steps
 

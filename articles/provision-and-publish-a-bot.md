@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 09/01/2022
+ms.date: 10/26/2022
 ms.custom: template-how-to
 ---
 
@@ -22,6 +22,8 @@ This article assumes that you have a bot ready to be deployed. For information o
 > [!TIP]
 > This article creates an Azure Bot resource for your bot.
 > Existing bots that use a Web App Bot resource or a Bot Channels Registration resource will continue to work, but you can't create new bots that use these resource types.
+
+[!INCLUDE [java-python-sunset-alert](includes/java-python-sunset-alert.md)]
 
 ## Prerequisites
 

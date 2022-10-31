@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 08/12/2022
+ms.date: 10/26/2022
 ms.custom: abs-meta-21q1
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -17,6 +17,8 @@ monikerRange: 'azure-bot-service-4.0'
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 Messages exchanged between user and bot can contain media attachments, such as images, video, audio, and files. The Bot Framework SDK supports the task of sending rich messages to the user. To determine the type of rich messages a channel (Facebook, Slack, and so on) supports, consult the channel's documentation for information about limitations.
+
+[!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
 
 ## Prerequisites
 
@@ -253,7 +255,6 @@ For examples of all the available cards, see the [Using cards](https://github.co
 **Cards.java**
 
 [!code-java[GetSigninCard](~/../botbuilder-samples/samples/java_springboot/06.using-cards/src/main/java/com/microsoft/bot/sample/usingcards/Cards.java?range=98-103)]
-
 
 ### [Python](#tab/python)
 

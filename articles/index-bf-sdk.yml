@@ -118,11 +118,11 @@ landingContent:
         links:
           - text: .NET
             url: /dotnet/api/?view=botbuilder-dotnet-stable
-          - text: Java
-            url: /java/api/?view=botbuilder-java
           - text: JavaScript
             url: /javascript/api/botbuilder
-          - text: Python
+          - text: Java (retiring Nov 2023)
+            url: /java/api/?view=botbuilder-java
+          - text: Python(retiring Nov 2023)
             url: /python/api/?view=botbuilder-py-latest
 
   # Card

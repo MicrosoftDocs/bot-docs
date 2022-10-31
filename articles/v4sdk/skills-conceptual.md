@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: Gabo.Gilabert
 ms.service: bot-service
 ms.topic: conceptual
-ms.date: 08/10/2021
+ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -33,7 +33,7 @@ The skills feature is designed so that:
 
 - Skills and consumers communicate over HTTP using the Bot Framework protocol.
 - A skill consumer can consume multiple skills.
-- A skill consumer can consume a skill regardless of the language used to implement the skill. For example, a C# bot can consume a skill implemented using Python.
+- A skill consumer can consume a skill regardless of the language used to implement the skill. For example, a C# bot can consume a skill implemented using JavaScript.
 - A skill can also be a skill consumer and call other skills.
 - Skills support user authentication; however, user authentication is local to the skill and can't be transferred to another bot.
 - Skills can work with both the Bot Framework adapter and custom adapters.

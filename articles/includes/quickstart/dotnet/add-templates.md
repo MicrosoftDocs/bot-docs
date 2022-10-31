@@ -5,12 +5,12 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: include
-ms.date: 09/13/2022
+ms.date: 10/26/2022
 ---
 
 #### [Visual Studio](#tab/vs)
 
-- [Visual Studio 2019 or later](https://www.visualstudio.com/downloads)
+- [Visual Studio 2022 or later](https://www.visualstudio.com/downloads)
 - [Bot Framework v4 SDK Templates for Visual Studio](https://marketplace.visualstudio.com/items?itemName=BotBuilder.botbuilderv4)
 
 To add the bot templates to Visual Studio, download and install the [Bot Framework v4 SDK Templates for Visual Studio](https://marketplace.visualstudio.com/items?itemName=BotBuilder.botbuilderv4) VSIX file.
@@ -20,7 +20,7 @@ To add the bot templates to Visual Studio, download and install the [Bot Framewo
 #### [VS Code / CLI](#tab/vscode+cli)
 
 .NET Core Templates will help you to quickly build new conversational AI bots using Bot Framework v4.
-As of May 2020, these templates and the code they generate require .NET Core 3.1.
+As of May 2020, these templates and the code they generate require .NET Core 3.1 or later.
 
 To install the Bot Framework templates:
 

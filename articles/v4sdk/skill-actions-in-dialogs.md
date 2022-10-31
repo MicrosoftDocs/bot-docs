@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: Gabo.Gilabert
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 10/11/2022
+ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -20,6 +20,8 @@ This article demonstrates how to create a skill that supports multiple actions. 
 
 This article assumes you're already familiar with creating skills.
 For how to create a skill bot in general, see how to [implement a skill](skill-implement-skill.md).
+
+[!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
 
 ## Prerequisites
 

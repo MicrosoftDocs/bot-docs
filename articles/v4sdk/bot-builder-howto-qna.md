@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 10/11/2022
+ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
 
 ROBOTS: NOINDEX
@@ -27,6 +27,8 @@ One of the basic requirements in creating your own QnA Maker service is to popul
 This article describes how to use an _existing_ QnA Maker knowledge base from your bot.
 
 For new bots, consider using the [question answering](bot-builder-concept-luis.md#question-answering) feature of Azure Cognitive Service for Language.
+
+[!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
 
 ## Prerequisites
 

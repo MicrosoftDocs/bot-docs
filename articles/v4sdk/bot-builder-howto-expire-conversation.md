@@ -1,5 +1,5 @@
 ---
-title: Expire a conversation - Bot Service
+title: Expire a conversation
 description: Learn how to expire a user's conversation with a bot.
 keywords: expire, timeout
 author: JonathanFingold
@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 01/26/2022
+ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -21,11 +21,7 @@ A bot sometimes needs to restart a conversation from the beginning.  For instanc
 - Track the last time a message was received from a user, and clear state if the time is greater than a preconfigured length upon receiving the next message from the user. For more information, see the [user interaction expiration](#user-interaction-expiration) section.
 - Use a storage layer feature, such as Cosmos DB Time To Live (TTL), to automatically clear state after a preconfigured length of time. For more information, see the [storage expiration](#storage-expiration) section.
 
-<!-- 
-NOTE: in the future, provide guidance on an azure function queue or time trigger
-
-- Track the last time a message was received from a user, and run a Web Job or Azure Function to clear the state and/or proactively message the user. See [Proactive Expiration](#proactive-expiration)
--->
+[!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
 
 ## Prerequisites
 
@@ -62,7 +58,7 @@ First, add an `ExpireAfterSeconds` setting to appsettings.json:
 
 Next, add `ExpireAfterSeconds`, `LastAccessedTimeProperty`, and `DialogStateProperty` fields to the bot class and initialize them in the bot's constructor. Also add an `IConfiguration` parameter to the constructor with which to retrieve the `ExpireAfterSeconds` value.
 
-Note that instead of creating the dialog state property accessor inline in the `OnMessageActivityAsync` method, you're creating and recording it at initialization time. The bot will need the state property accessor not only to run the dialog, but also to clear the dialog state.
+Instead of creating the dialog state property accessor inline in the `OnMessageActivityAsync` method, you're creating and recording it at initialization time. The bot will need the state property accessor not only to run the dialog, but also to clear the dialog state.
 
 ```csharp
 protected readonly int ExpireAfterSeconds;
@@ -192,7 +188,7 @@ ExpireAfterSeconds=30
 
 Next, add `expireAfterSeconds`, `lastAccessedTimeProperty`, and `dialogStateProperty` fields to the bot class and initialize them in the bot's constructor. Also add a `Configuration` parameter to the constructor to retrieve the `ExpireAfterSeconds` value.
 
-Note that instead of creating the dialog state property accessor inline in the `onMessageActivity` method, you create and record it at initialization time. The bot will need the state property accessor not only to run the dialog, but also to clear the dialog state.
+Instead of creating the dialog state property accessor inline in the `onMessageActivity` method, you create and record it at initialization time. The bot will need the state property accessor not only to run the dialog, but also to clear the dialog state.
 
 ```java
     protected final int expireAfterSeconds;
@@ -333,7 +329,7 @@ BOT = DialogBot(CONFIG.EXPIRE_AFTER_SECONDS, CONVERSATION_STATE, USER_STATE, DIA
 
 ## Storage Expiration
 
-Cosmos DB provides a Time To Live (TTL) feature which allows you to delete items automatically from a container after a certain time period.  This can be configured from within the Azure portal or during container creation (using the language-specific Cosmos DB SDKs).
+Cosmos DB provides a Time To Live (TTL) feature that allows you to delete items automatically from a container after a certain time period.  This can be configured from within the Azure portal or during container creation (using the language-specific Cosmos DB SDKs).
 
 The Bot Framework SDK doesn't expose a TTL configuration setting.  However, container initialization can be overridden and the Cosmos DB SDK can be used to configure TTL prior to Bot Framework storage initialization.
 
@@ -359,7 +355,7 @@ Update appsettings.json to include Cosmos DB storage options:
 }
 ```
 
-Notice the two ContainerIds, one for `UserState` and one for `ConversationState`.  This is because we are setting a default Time To Live on the `ConversationState` container, but not on `UserState`.
+Notice the two ContainerIds, one for `UserState` and one for `ConversationState`.  The default TTL is set on the `ConversationState` container, but not on `UserState`.
 
 **CosmosDbStorageInitializerHostedService.cs**
 
@@ -410,7 +406,7 @@ public class CosmosDbStorageInitializerHostedService : IHostedService
 
 **Startup.cs**
 
-Lastly, update `Startup.cs` to use the storage initializer, and Cosmos Db for state:
+Lastly, update `Startup.cs` to use the storage initializer, and Cosmos DB for state:
 
 ```csharp
 // Existing code omitted...
@@ -468,7 +464,7 @@ CosmosDbUserStateContainerId=<no-ttl-container-id>
 CosmosDbConversationStateContainerId=<ttl-container-id>
 ```
 
-Notice the two ContainerIds, one for `UserState` and one for `ConversationState`.  This is because we are setting a default Time To Live on the `ConversationState` container, but not `UserState`.
+Notice the two ContainerIds, one for `UserState` and one for `ConversationState`.  The default TTL is set on the `ConversationState` container, but not `UserState`.
 
 **project.json**
 
@@ -577,7 +573,7 @@ CosmosDbUserStateContainerId = <no-ttl-container-id>
 CosmosDbConversationStateContainerId = <ttl-container-id>
 ```
 
-Notice the two ContainerIds, one for `UserState` and one for `ConversationState`.  This is because we are setting a default Time To Live on the `ConversationState` container, but not on `UserState`.
+Notice the two ContainerIds, one for `UserState` and one for `ConversationState`.  The default TTL is set on the `ConversationState` container, but not on `UserState`.
 
 **CosmosDbStorageInitializer.java**
 
@@ -627,7 +623,7 @@ public class CosmosDbStorageInitializer {
 
 **Application.java**
 
-Lastly, update `Application.java` to use the storage initializer, and Cosmos Db for state:
+Lastly, update `Application.java` to use the storage initializer, and Cosmos DB for state:
 
 ```java
 // Existing code omitted...
@@ -685,7 +681,7 @@ COSMOSDB_USER_STATE_CONTAINER_ID = os.environ.get("CosmosDbUserStateContainerId"
 COSMOSDB_CONVERSATION_STATE_CONTAINER_ID = os.environ.get("CosmosDbConversationStateContainerId", "<ttl-container-id>")
 ```
 
-Notice the two ContainerIds, one for `UserState` and one for `ConversationState`.  This is because we are setting a default Time To Live on the `ConversationState` container, but not `UserState`.
+Notice the two ContainerIds, one for `UserState` and one for `ConversationState`.  The default TTL is set on the `ConversationState` container, but not `UserState`.
 
 **requirements.txt**
 
@@ -732,11 +728,6 @@ if len(containers) < 1:
 ---
 
 Cosmos DB will now automatically delete conversation state records after 30 seconds of inactivity.
-
-<!-- 
-## Proactive Expiration
-add Azure Function with ConversationReference solution 
--->
 
 For more information, see [Configure time to live in Azure Cosmos DB][cosmos-ttl]
 

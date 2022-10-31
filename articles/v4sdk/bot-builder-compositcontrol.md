@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -21,6 +21,8 @@ With component dialogs, you can create independent dialogs to handle specific sc
 - Added to another `ComponentDialog` or `DialogSet` in your bot.
 - Exported as a part of a package.
 - Used within other bots.
+
+[!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
 
 ## Prerequisites
 

@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: conceptual
-ms.date: 09/01/2022
+ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
 ms.custom: abs-meta-21q1
 ---
@@ -31,7 +31,7 @@ The _message_ activity carries conversation information between the parties. In 
 > [!TIP]
 > It's up to each channel to implement the Bot Framework protocol, and how each channel does so might be a little different. For example, some channels send conversation update activities first, and some send conversation update activities after they send the first message activity. A channel might include both the bot and user in one conversation update activity, while another might send two conversation update activities.
 
-In this example, the bot created and sent a message activity in response to the inbound message activity it had received. However, a bot can respond in other ways to a received message activity, and it's common for a bot to respond to a conversation update activity by sending a message activity with a welcome message. More information can be found in how to [welcome a user](bot-builder-welcome-user.md).
+In this example, the bot created and sent a message activity in response to the inbound message activity it had received. However, a bot can respond in other ways to a received message activity, and it's common for a bot to respond to a conversation update activity by sending a message activity with a welcome message. For more information, see how to [welcome a user](bot-builder-welcome-user.md).
 
 ## The Bot Framework SDK
 
@@ -85,6 +85,8 @@ However, you can choose to use a different application layer for your app.
 
 When you create a bot using the SDK, you provide the code to receive the HTTP traffic and forward it to the adapter. The Bot Framework provides a few templates and samples that you can use to develop your own bots.
 
+[!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
+
 ### Bot logic
 
 The bot object contains the conversational reasoning or logic for a turn and exposes a _turn handler_, which is the method that can accept incoming activities from the bot adapter.
@@ -96,7 +98,7 @@ The SDK provides a couple different paradigms for managing your bot logic.
   - Use a [Teams activity handler](bot-builder-basics-teams.md) to create bots that can connect to the Teams channel. (The Teams channel requires the bot to handle some channel-specific behavior.)
 - The [dialogs library](bot-builder-concept-dialog.md) provides a state-based model to manage a long-running conversation with the user.
   - Use an activity handler and a _component dialog_ for largely sequential conversations.
-    See [about component and waterfall dialogs](bot-builder-concept-waterfall-dialogs.md) for more information.
+    For more information, see [about component and waterfall dialogs](bot-builder-concept-waterfall-dialogs.md).
 - Implement your own bot class and provide your own logic for handling each turn. For an example, see how to [create your own prompts to gather user input](bot-builder-primitive-prompts.md).
 
 ### The bot adapter
@@ -213,7 +215,7 @@ The SDK also lets you use channel adapters, in which the adapter itself addition
 
 The SDK provides a few channel adapters in some languages.
 More channel adapters are available through the Botkit and Community repositories.
-For more details, see the Bot Framework SDK repository's table of [channels and adapters](https://github.com/microsoft/botframework-sdk#channels-and-adapters).
+For more information, see the Bot Framework SDK repository's table of [channels and adapters](https://github.com/microsoft/botframework-sdk#channels-and-adapters).
 
 ### The Bot Connector REST API
 

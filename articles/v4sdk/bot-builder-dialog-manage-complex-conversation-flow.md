@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 08/08/2022
+ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -18,6 +18,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 You can create complex conversation flows using the dialogs library.
 This article covers how to manage complex conversations that branch and loop and how to pass arguments between different parts of the dialog.
+
+[!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
 
 ## Prerequisites
 

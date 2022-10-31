@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: Gabo.Gilabert
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 11/19/2021
+ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -24,9 +24,9 @@ A _skill_ is a bot that can perform a set of tasks for another bot.
 
 This article demonstrates how to implement a skill that echoes the user's input.
 
-<!-- I haven't discussed passing values back-and-forth mid conversation. That could be the basis of another article. -->
-
 [!INCLUDE [skills-and-identity-types](../includes/skills-and-identity-types.md)]
+
+[!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
 
 ## Prerequisites
 

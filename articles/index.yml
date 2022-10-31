@@ -45,7 +45,7 @@ productDirectory:
     # Card
     - title: Bot Framework SDK
       imageSrc: ./media/logos/logo-bot-sdk.svg
-      summary: A modular set of developer tools to build, test, deploy, and manage chatbots in C#, Java, JavaScript, or Python. 
+      summary: A modular set of developer tools to build, test, deploy, and manage chatbots in C# or JavaScript. 
       url: bot-service-overview-introduction.md
     # Card
     - title: Power Virtual Agents
@@ -109,27 +109,15 @@ tools:
   title: Reference # < 60 chars (optional)
   summary: Dive deep into reference for the Bot Framework SDK, Power Virtual Agents, and Bot Framework Composer. # < 160 chars (optional)
   items:
-    # Card
     - title: C#
       imageSrc: ./media/logos/logo-csharp.svg
       url: /dotnet/api/?view=botbuilder-dotnet-stable
-    # Card
     - title: JavaScript
       imageSrc: ./media/logos/logo-js.svg
       url: /javascript/api/?view=botbuilder-ts-latest
-    # Card
-    - title: Python
-      imageSrc: ./media/logos/logo-python.svg
-      url: /python/api/?view=botbuilder-py-latest
-    # Card
-    - title: Java
-      imageSrc: ./media/logos/logo-java.svg
-      url: /java/api/?view=botbuilder-java
-    # Card
     - title: Power Virtual Agents
       imageSrc: ./media/logos/logo-pva.svg
       url: /power-virtual-agents/fundamentals-what-is-power-virtual-agents
-    # Card
     - title: Composer
       imageSrc: ./media/logos/logo-composer.svg
       url: /composer/install-composer
