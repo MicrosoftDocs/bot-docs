@@ -1,5 +1,5 @@
 ---
-title: Send welcome message to users - Bot Service
+title: Send welcome message to users
 description: Find out how to engage users in meaningful conversations with bots by learning about welcome messages. See code samples that detect and greet new users.
 keywords: overview, develop, user experience, welcome, personalized experience, C#, JS, welcome message, bot, greet, greeting
 author: JonathanFingold
@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/08/2021
+ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -17,6 +17,8 @@ monikerRange: 'azure-bot-service-4.0'
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 The primary goal when creating any bot is to engage your user in a meaningful conversation. One of the best ways to achieve this goal is to ensure that from the moment a user first connects, they understand your bot's main purpose and capabilities, the reason your bot was created. This article provides code examples to help you welcome users to your bot.
+
+[!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
 
 ## Prerequisites
 
@@ -198,7 +200,7 @@ In **WelcomeUserBot**, we check for an activity update using `onMembersAdded()` 
 
 ### [Python](#tab/python)
 
-The `on_members_added_activity` checks to see if a new user has been added and then sends three initial welcome messages: a *welcome message*, an *information message* and a *pattern message*.
+The `on_members_added_activity` checks to see if a new user has been added and then sends three initial welcome messages: a _welcome message_, an _information message_ and a _pattern message_.
 
 **bots/welcome-user-bot.py**
 [!code-python[on_members_added_activity](~/../botbuilder-samples/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=63-82)]
@@ -233,7 +235,7 @@ It's important to consider when your user's input might contain useful informati
 
 ### [Python](#tab/python)
 
-It's also important to consider when the user's input might actually contain useful information, this may vary for each channel. To ensure the user has a good experience on all possible channels, `on_message_activity` checks the `did_welcome_user` property. The first time, it sets  it to *false* and doesn't process the user input. Instead, it provides the user with an initial welcome message. Then it sets `did_welcome_user` to *true* and processes the user input from all additional message activities.
+It's also important to consider when the user's input might actually contain useful information, this may vary for each channel. To ensure the user has a good experience on all possible channels, `on_message_activity` checks the `did_welcome_user` property. The first time, it sets  it to _false_ and doesn't process the user input. Instead, it provides the user with an initial welcome message. Then it sets `did_welcome_user` to _true_ and processes the user input from all additional message activities.
 
 **bots/welcome-user-bot.py**
 [!code-python[DidBotWelcomeUser](~/../botbuilder-samples/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=93-103)]
@@ -267,7 +269,7 @@ An input of 'intro' or 'help' calls the function `sendIntroCard` to present the 
 
 ### [Python](#tab/python)
 
-An user's input of *intro* or *help* causes the bot to call `__send_intro_card` which presents the user with an intro adaptive card.
+An user's input of _intro_ or _help_ causes the bot to call `__send_intro_card` which presents the user with an intro adaptive card.
 
 **bots/welcome-user-bot.py**
 [!code-python[SwitchOnUtterance](~/../botbuilder-samples/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=109-114&highlight=97-106)]
@@ -276,7 +278,7 @@ An user's input of *intro* or *help* causes the bot to call `__send_intro_card` 
 
 ## Using hero card greeting
 
-As mentioned above, some user inputs generate a *Hero Card* in response to their request. You can learn more about hero card greetings here [Send an Intro Card](./bot-builder-howto-add-media-attachments.md). Below is the code required to create this bot's hero card response.
+As mentioned above, some user inputs generate a _Hero Card_ in response to their request. You can learn more about hero card greetings here [Send an Intro Card](./bot-builder-howto-add-media-attachments.md). Below is the code required to create this bot's hero card response.
 
 ### [C#](#tab/csharp)
 

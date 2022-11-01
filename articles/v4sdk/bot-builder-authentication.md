@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 08/12/2022
+ms.date: 10/26/2022
 ms.custom: abs-meta-21q1
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -29,6 +29,8 @@ This article covers how to:
 - [Prepare the bot code](#prepare-the-bot-code)
 
 Once you finish this article, you'll have a bot that can respond to a few simple tasks. In the Microsoft Graph example, you can send an email, display who you are, and check recent emails. You don't need to publish the bot to test the OAuth features; however, the bot will need valid Azure app ID and password.
+
+[!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
 
 ## Web Chat and Direct Line considerations
 
@@ -549,14 +551,12 @@ The `TeamsActivityHandler` also sends _message reaction_ activities. A message r
 
 [azure-portal]: https://ms.portal.azure.com
 [azure-aad-blade]: https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview
-[aad-registration-blade]: https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredAppsPreview
 
 [concept-basics]: bot-builder-basics.md
 [concept-state]: bot-builder-concept-state.md
 [concept-dialogs]: bot-builder-concept-dialog.md
 
 [simple-dialog]: bot-builder-dialog-manage-conversation-flow.md
-[dialog-prompts]: bot-builder-prompts.md
 [component-dialogs]: bot-builder-compositcontrol.md
 
 [cs-auth-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/18.bot-authentication

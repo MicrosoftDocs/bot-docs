@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 08/08/2022
+ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -33,7 +33,7 @@ For more information about user authentication, see [Bot Framework authenticatio
 - Knowledge of [Bot basics][concept-basics], [Managing state][concept-state], and [About single sign-on](bot-builder-concept-sso.md).
 - Knowledge of [The dialogs library][concept-dialogs] and how to [implement sequential conversation flow][simple-dialog] and [reuse dialogs][component-dialogs]
 - Knowledge of Azure and OAuth 2.0 development.
-- Visual Studio 2017 or later for .NET.
+- Visual Studio 2019 or later for .NET.
 - The SSO with simple skill consumer and skill in [C#][cs-auth-sample].
 
 ## About the sample
@@ -301,17 +301,12 @@ To see how the token exchange happens, please refer to the example shown below. 
 [!code-csharp[sso-token-exchange](~/../botbuilder-samples/experimental/sso-with-skills/RootBot/TokenExchangeSkillHandler.cs?range=92-136)]
 
 [azure-portal]: https://ms.portal.azure.com
-[azure-aad-blade]: https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview
-[aad-registration-blade]: https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredAppsPreview
 
 [concept-basics]: bot-builder-basics.md
 [concept-state]: bot-builder-concept-state.md
 [concept-dialogs]: bot-builder-concept-dialog.md
 
 [simple-dialog]: bot-builder-dialog-manage-conversation-flow.md
-[dialog-prompts]: bot-builder-prompts.md
 [component-dialogs]: bot-builder-compositcontrol.md
 
 [cs-auth-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/sso-with-skills
-[js-auth-sample]: https://github.com/Microsoft/BotBuilder-Samples/blob/main/samples/javascript_nodejs/18.bot-authentication
-[python-auth-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/18.bot-authentication

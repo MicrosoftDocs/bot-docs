@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 08/10/2022
+ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -20,9 +20,9 @@ Gathering information by posing questions is one of the main ways a bot interact
 You can manage linear and more complex conversation flows using the dialogs library. In a linear interaction, the bot runs through a fixed sequence of steps, and the conversation finishes. A dialog is useful when the bot needs to gather information from the user.
 
 This article shows how to implement linear conversation flow by creating prompts and calling them from a waterfall dialog.
+For examples of how to write your own prompts without using the dialogs library, see the [Create your own prompts to gather user input](bot-builder-primitive-prompts.md) article.
 
-> [!TIP]
-> For examples of how to write your own prompts without using the dialogs library, see the [Create your own prompts to gather user input](bot-builder-primitive-prompts.md) article.
+[!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
 
 ## Prerequisites
 

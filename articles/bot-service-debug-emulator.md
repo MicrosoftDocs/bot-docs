@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 10/10/2022
+ms.date: 10/26/2022
 ms.custom: abs-meta-21q1
 ---
 
@@ -17,6 +17,8 @@ ms.custom: abs-meta-21q1
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
 Bot Framework Emulator is a desktop application that allows bot developers to test and debug bots, either locally or remotely. Using the Emulator, you can chat with your bot and inspect the messages that your bot sends and receives. The Emulator displays messages as they would appear in a web chat UI and logs JSON requests and responses as you exchange messages with your bot. Before you deploy your bot to the cloud, run it locally and test it using the Emulator. You can test your bot using the Emulator even if you haven't yet [created](./bot-service-quickstart.md) it with Azure Bot Service or configured it to run on any channels.
+
+[!INCLUDE [java-python-sunset-alert](includes/java-python-sunset-alert.md)]
 
 ## Prerequisites
 
@@ -104,7 +106,6 @@ In order to bypass the `HTTP_PROXY` and `HTTPS_PROXY` settings and allow the Emu
 NO_PROXY=localhost
 ```
 
-<!-- auth config steps -->
 ### Configure the Emulator for authentication
 
 If a bot requires authentication, displaying a login dialog, you must configure the Emulator as shown below.
@@ -211,12 +212,12 @@ The Bot Framework Emulator is open source. You can [contribute][EmulatorGithubCo
 
 For troubleshooting, see [troubleshoot general problems](bot-service-troubleshoot-bot-configuration.md) and the other troubleshooting articles in that section.
 
+[EmulatorGithubContribute]: https://github.com/Microsoft/BotFramework-Emulator/wiki/How-to-Contribute
+[EmulatorGithubBugs]: https://github.com/Microsoft/BotFramework-Emulator/wiki/Submitting-Bugs-%26-Suggestions
+
 ## Next step
 
 Use inspection middleware to debug a bot connected to a channel.
 
 > [!div class="nextstepaction"]
 > [Debug your bot using transcript files](bot-service-debug-inspection-middleware.md)
-
-[EmulatorGithubContribute]: https://github.com/Microsoft/BotFramework-Emulator/wiki/How-to-Contribute
-[EmulatorGithubBugs]: https://github.com/Microsoft/BotFramework-Emulator/wiki/Submitting-Bugs-%26-Suggestions

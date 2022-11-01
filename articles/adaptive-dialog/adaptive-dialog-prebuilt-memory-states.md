@@ -104,11 +104,11 @@ All intents and entities returned from a [recognizer][recognizers] on any given 
 
 ## Settings scope
 
-This represents any settings that are made available to the bot via the platform specific settings configuration system, for example if you're developing your bot using C#, these settings will appear in the appsettings.json file<!--, if you're developing your bot using JavaScript, these settings will appear in the .env file or the config.py file when developing with Python. Additionally, some settings are contained in the dynamic environment settings in Azure, all are available in the settings scope-->.
+This represents any settings that are made available to the bot via the platform specific settings configuration system, for example if you're developing your bot using C#, these settings will appear in the **appsettings.json** file.
 
 ### Settings scope example
-<!--TODO P2: rewrite this with language tabs for C#/JS. -->
-This is an example of an appsettings.json file that holds configuration settings for your bot:
+
+This is an example of an **appsettings.json** file that holds configuration settings for your bot:
 
 ```json
 {

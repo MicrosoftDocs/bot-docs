@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 08/30/2022
+ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -16,6 +16,8 @@ monikerRange: 'azure-bot-service-4.0'
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 A bot is inherently stateless. Once your bot is deployed, it may not run in the same process or on the same machine from one turn to the next. However, your bot may need to track the context of a conversation so that it can manage its behavior and remember answers to previous questions. The state and storage features of the Bot Framework SDK allow you to add state to your bot. Bots use state management and storage objects to manage and persist state. The state manager provides an abstraction layer that lets you access state properties using property accessors, independent of the type of underlying storage.
+
+[!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
 
 ## Prerequisites
 

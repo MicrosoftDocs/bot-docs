@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 09/12/2022
+ms.date: 10/26/2022
 ms.custom: template-how-to
 ---
 
@@ -22,6 +22,8 @@ This is part of the larger process to provision and publish a bot.
 - For information on the complete process, see [Provision and publish a bot](provision-and-publish-a-bot.md).
 - For information on how to create an App Service resource, see [Use Azure CLI to create an App Service resource](provision-app-service.md).
 - For instructions for how to use the Azure portal, see the [Create an Azure Bot resource](v4sdk/abs-quickstart.md) quickstart.
+
+[!INCLUDE [java-python-sunset-alert](includes/java-python-sunset-alert.md)]
 
 ## Prerequisites
 

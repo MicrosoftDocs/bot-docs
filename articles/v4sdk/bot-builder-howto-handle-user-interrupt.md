@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 10/11/2022
+ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -17,6 +17,8 @@ monikerRange: 'azure-bot-service-4.0'
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 Handling interruptions is an important aspect of a robust bot. Users won't always follow your defined conversation flow, step by step. They may try to ask a question in the middle of the process, or simply want to cancel it instead of completing it. This article describes some common ways to handle user interruptions in your bot.
+
+[!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
 
 ## Prerequisites
 

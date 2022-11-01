@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 10/11/2022
+ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -21,6 +21,8 @@ monikerRange: 'azure-bot-service-4.0'
 The ability to understand what your user means conversationally and contextually can be a difficult task, but can provide your bot a more natural conversation feel. _Language Understanding (LUIS)_ is a cloud-based API service that enables you to do just that so that your bot can recognize the intent of user messages, allow for more natural language from your user, and better direct the conversation flow.
 
 This topic walks you through adding LUIS to a flight booking application to recognize different intents and entities contained within user input.
+
+[!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
 
 ## Prerequisites
 

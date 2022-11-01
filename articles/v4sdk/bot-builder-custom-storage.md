@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 08/02/2022
+ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -21,6 +21,8 @@ A bot's interactions fall into three areas: the exchange of activities with Azur
 :::image type="content" source="../media/scale-out/scale-out-interaction.png" alt-text="Interaction diagram outlining relationship between the Azure Bot Service, a bot, a memory store, and other services.":::
 
 This article explores how to extend the semantics between the Azure Bot Service and the bot's memory state and storage.
+
+[!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
 
 ## Prerequisites
 

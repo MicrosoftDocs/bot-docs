@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 10/11/2022
+ms.date: 10/26/2022
 ms.custom: template-how-to
 ---
 
@@ -23,6 +23,8 @@ This article describes how to create an App Service resource with the Azure CLI 
 
 - For information on the complete process, see how to [Provision and publish a bot](provision-and-publish-a-bot.md).
 - For information on how to create an Azure Bot resource, see [Use Azure CLI to create an Azure Bot resource](provision-azure-bot.md).
+
+[!INCLUDE [java-python-sunset-alert](includes/java-python-sunset-alert.md)]
 
 ## Prerequisites
 

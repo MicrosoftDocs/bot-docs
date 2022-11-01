@@ -1,5 +1,5 @@
 ---
-title: Identity providers proxy - Bot Service
+title: Identity providers proxy
 description: Creating an OAuth2 proxy service to call custom or advanced identity providers in the Azure Bot Service.
 keywords: azure bot service, authentication, identity providers proxy, bot framework token service
 author: JonathanFingold
@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -117,7 +117,7 @@ Once you have your **OAuth2 Proxy Service** running, you can create an *OAuth Se
 1. For the **Token and Refresh URL**, you should copy the address of your token REST API, for example `https://proxy.com/api/oauth/token`. The Token Exchange URL is valid only for AAD based providers and so can be ignored.
 1. Finally, add any scopes that are appropriate.
 
-## OAuthController for .NET Core 3.1 ASP.NET Web App
+## OAuthController for ASP.NET web app
 
 ```csharp
 using Microsoft.AspNetCore.Mvc;

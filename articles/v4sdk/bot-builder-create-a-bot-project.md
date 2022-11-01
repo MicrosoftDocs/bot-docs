@@ -1,5 +1,5 @@
 ---
-title: How bot projects are structured - Bot Service
+title: How bot projects are structured
 description: Learn about how bot projects are structured in the Bot Framework SDK. Learn about common aspects of bot code.
 author: JonathanFingold
 ms.author: iawilt
@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 06/06/2022
+ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: 'azure-bot-service-4.0'
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 The Bot Framework templates and samples are written for ASP.NET (C#), restify (JavaScript), and aiohttp (Python).
-However, the web service features are not part of the Bot Framework SDK, but part of the web framework you choose to use.
+However, the web service features aren't part of the Bot Framework SDK, but part of the web framework you choose to use.
 
 All bot applications share some common features.
 
@@ -31,6 +31,8 @@ You can create an echo bot from the templates, as described in [Create a bot](..
 
 The C# and JavaScript templates have built-in support for streaming connections. However, this article doesn't cover streaming features. For information about streaming connections, see how to [connect a bot to Direct Line Speech](../bot-service-channel-connect-directlinespeech.md).
 
+[!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
+
 ## Prerequisites
 
 - Knowledge of [bot basics](bot-builder-basics.md).
@@ -44,7 +46,7 @@ A bot is a web application, and templates are provided for each language.
 
 The Bot Framework includes both VSIX and .NET templates.
 
-The templates generate an [ASP.NET MVC Core](https://dotnet.microsoft.com/apps/aspnet/mvc) web app. If you look at the [ASP.NET](/aspnet/core/fundamentals/index?view=aspnetcore-3.1&preserve-view=true) fundamentals, you'll see similar code in files such as **Program.cs** and **Startup.cs**. These files are required for all web apps and are not bot-specific.
+The templates generate an [ASP.NET MVC Core](https://dotnet.microsoft.com/apps/aspnet/mvc) web app. If you look at the [ASP.NET](/aspnet/core/fundamentals/index?view=aspnetcore-3.1&preserve-view=true) fundamentals, you'll see similar code in files such as **Program.cs** and **Startup.cs**. These files are required for all web apps and aren't bot-specific.
 
 [!INCLUDE [VSIX templates](../includes/vsix-templates-versions.md)]
 
@@ -91,7 +93,7 @@ And for some bots, you may need to create other objects that the bot object or a
 ### [C#](#tab/csharp)
 
 In ASP.NET, you register objects and object creation methods in the **Startup.cs** file.
-The `ConfigureServices` method loads the connected services, as well as their keys (if there are any) from **appsettings.json**, connects state, and so on. Here, the adapter and bot are defined to be available through dependency injection.
+The `ConfigureServices` method loads the connected services and their keys (if there are any) from **appsettings.json**, connects state, and so on. Here, the adapter and bot are defined to be available through dependency injection.
 Then, the `Configure` method finishes the configuration of your app.
 
 `ConfigureServices` and `Configure` are called by the runtime when the app starts.

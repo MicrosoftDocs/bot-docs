@@ -14,7 +14,7 @@ In Visual Studio, create a new bot project and use the **Echo Bot (Bot Framework
 
 #### [VS Code](#tab/vscode)
 
-Make sure that [.NET Core 3.1](https://dotnet.microsoft.com/download) is installed.
+Make sure that [.NET Core 3.1](https://dotnet.microsoft.com/download) or later is installed.
 
 1. In Visual Studio Code, open a new terminal window.
 1. Go to the directory in which you want to create your bot project.

@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 08/10/2022
+ms.date: 10/26/2022
 ms.custom: abs-meta-21q1
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -21,11 +21,12 @@ Occasionally, a bot might need to send a _proactive message_, a message in respo
 
 Proactive messages can be useful in various scenarios. For example, if the user has previously asked the bot to monitor the price of a product, the bot can alert the user if the price of the product has dropped by 20%. Or, if a bot requires some time to compile a response to the user's question, it may inform the user of the delay and allow the conversation to continue in the meantime. When the bot finishes compiling the response to the question, it will share that information with the user.
 
-> [!NOTE]
-> This article covers information about proactive messages for bots in general. For information about proactive messages in Microsoft Teams, see
->
-> - The **Teams conversation bot** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot#readme), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot#readme), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/57.teams-conversation-bot#readme), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot#readme).
-> - The Microsoft Teams documentation on how to [send proactive messages](/microsoftteams/platform/bots/how-to/conversations/send-proactive-messages).
+This article covers information about proactive messages for bots in general. For information about proactive messages in Microsoft Teams, see
+
+- The **Teams conversation bot** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot#readme), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot#readme), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/57.teams-conversation-bot#readme), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot#readme).
+- The Microsoft Teams documentation on how to [send proactive messages](/microsoftteams/platform/bots/how-to/conversations/send-proactive-messages).
+
+[!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
 
 ## Prerequisites
 

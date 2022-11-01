@@ -9,7 +9,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: overview
-ms.date: 09/12/2021
+ms.date: 10/26/2022
 ms.custom: abs-meta-21q1
 ---
 
@@ -45,10 +45,11 @@ What makes bots unique is their use of mechanisms generally reserved for human-t
 
 Azure Bot Service and the Bot Framework include:
 
-- Bot Framework SDKs for developing bots in C#, JavaScript, Python, or Java
-- CLI tools for help with end-to-end bot development
-- Bot Connector Service, which relays messages and events between bots and channels
-- Azure resources for bot management and configuration
+- Bot Framework SDKs for developing bots in C#, JavaScript, Python, or Java.
+  (The Python and Java SDKs are being retired with final long-term support ending in November 2023.)
+- CLI tools for help with end-to-end bot development.
+- Bot Connector Service, which relays messages and events between bots and channels.
+- Azure resources for bot management and configuration.
 
 Additionally, bots may use other Azure services, such as:
 

@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: reference
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 10/26/2022
 ---
 
 # Bot Framework additional resources
@@ -30,3 +30,5 @@ These resources provide additional information and support for developing bots w
 | **Documentation issues** | Submit an [issue](https://github.com/MicrosoftDocs/bot-framework-docs/issues) to the Bot Framework documentation GitHub repo. |
 | **Documentation updates** | Click the Edit link on an article and submit a pull request to the [Bot Framework documentation GitHub repository](https://github.com/MicrosoftDocs/bot-framework-docs). |
 | **Reporting abuse** | Contact us at [bf-reports@microsoft.com](mailto://bf-reports@microsoft.com) |
+
+[!INCLUDE [java-python-sunset-alert](includes/java-python-sunset-alert.md)]
