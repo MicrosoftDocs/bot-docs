@@ -107,7 +107,7 @@ When you're ready for your bot to be available on the web, [deploy your bot to A
 
 ### Connect
 
-Connect your bot to channels such as Facebook, Messenger, Slack, Microsoft Teams, Telegram, and SMS via Twilio. Bot Framework does most of the work necessary to send and receive messages from all of these different platforms&mdash;your bot application receives a unified, normalized stream of messages regardless of the number and type of channels it's connected to. For information on adding channels, see [channels](bot-service-manage-channels.md) topic.
+Connect your bot to channels, such as Facebook, Messenger, Slack, Microsoft Teams, Telegram, and SMS via Twilio. Bot Framework does most of the work necessary to send and receive messages from all of these different platforms&mdash;your bot application receives a unified, normalized stream of messages regardless of the number and type of channels it's connected to. For information on adding channels, see [channels](bot-service-manage-channels.md) topic.
 
 ### Evaluate
 

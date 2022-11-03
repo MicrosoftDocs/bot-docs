@@ -125,7 +125,7 @@ This snippet shows an example of the `channelData` property in the message that 
             }
         ],
         //...
-        "original_message": "{…}",
+        "original_message": "{...}",
         "response_url": "https://hooks.slack.com/actions/..."
     }
 }

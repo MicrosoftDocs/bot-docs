@@ -558,7 +558,7 @@ QnAMaker instrumentation stores its data in the following Custom Dimensions fiel
 | articleFound    | QnA                        | true                                                         |
 | questionId      | QnA question ID            | 488                                                          |
 | knowledgeBaseId | QnA KB ID                  | 2a4936f3-b2c8-44ff-b21f-67bc413b9727                         |
-| matchedQuestion | Array of matched questions | ["Can you explain to me what your  role is?","Can  you tell me a bit about yourself?","Can  you tell me about you?","could  you help me","hmmm so  what can you do?","how  can you help me","How  can you help me?","How  can you help?","so  how can i  use you in my projects?","Talk to  me about your capability","What  are you capable of?",… |
+| matchedQuestion | Array of matched questions | ["Can you explain to me what your role is?","Can you tell me a bit about yourself?","Can you tell me about you?","could you help me","hmmm so what can you do?","how can you help me","How can you help me?","How can you help?","so how can i use you in my projects?","Talk to me about your capability","What are you capable of?", ...] |
 
 ## See Also
 

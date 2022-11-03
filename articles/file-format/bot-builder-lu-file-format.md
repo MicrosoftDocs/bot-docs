@@ -539,7 +539,7 @@ Phrase lists can be used as features for specific intents and entities as descri
 Machine learning works by taking features and learning how they relate to the desired intent or entity from example utterances.  By default, features are simply the words that make up utterances. Phrase lists provide a means to group together multiple words into a new feature; this makes the machine learning generalize better from fewer examples. By default, phrase lists are global and apply to all machine-learned models, but you can also tie them to specific intents or entities.  You can also use intents or entities as features to detect other intents as entities.  This provides modularity so that you can build up more complex concepts from simpler building blocks.
 
 >[!NOTE]
-> In machine learning, a feature is text that describes a distinguishing trait or attribute of data that your system observes and learns from. Phrase lists, intents, and entities can be used as features as explained in this and the following sections.
+> In machine learning, a feature is text that describes a distinguishing trait or attribute of data that your system observes and learns from. Phrase lists, intents, and entities can be used as features as explained in this and the following sections.
 
 Features can be added to any learned intent or entity using the `usesFeature` keyword.
 

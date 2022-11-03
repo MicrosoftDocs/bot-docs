@@ -71,7 +71,7 @@ The activity template with which to initially prompt for user input.
 
 The memory path, or an expression that evaluates to the memory path, of the property to bind the input dialog to. The memory path will be used to get the initial value for the input dialog. It will also be used to store the result of this dialog. Both the `Prompt` and the `Value` property go through recognition and validation steps, so an invalid initial value will result in a prompt.
 
-Use this to define what property the input dialog is bound to. For example:
+Use this to define what property the input dialog is bound to. For example:
 
 ### UnrecognizedPrompt
 
@@ -79,7 +79,7 @@ The activity template with which to reprompt for input if the user input isn't r
 
 ### Validations
 
-A list of Boolean expressions. Recognized input is invalid if any of these expressions evaluate to `false`. You can use `this.value` to examine the user input in the validation expressions. Validations are expressed using [adaptive expressions][adaptive-expressions]
+A list of Boolean expressions. Recognized input is invalid if any of these expressions evaluate to `false`. You can use `this.value` to examine the user input in the validation expressions. Validations are expressed using [adaptive expressions][adaptive-expressions]
 
 ### Value
 
