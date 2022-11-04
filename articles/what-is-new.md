@@ -81,7 +81,7 @@ For more information, see [Bot Framework SDK v4.11 release notes](https://github
 
 ### Documentation updates
 
-Following feedback from customers and the Bot Framework Support team, a number of documents were created or updated. These are helpful towards providing answers and information relating to recurring issues from bot developers.
+Following feedback from customers and the Bot Framework Support team, a number of documents were created or updated. These are helpful towards providing answers and information relating to recurring issues from bot developers.
 
 - Expanded code comment documentation in the SDK repositories.
 - Improved `README` files in the samples and SDK repositories.
@@ -106,7 +106,7 @@ For more information, see [Bot Framework SDK v4.10 release notes](https://github
 
 ### Documentation
 
-Following feedback from customers and the Bot Framework Support team, a number of documents were created or updated. These are helpful towards providing answers and information relating to recurring issues from bot developers.
+Following feedback from customers and the Bot Framework Support team, a number of documents were created or updated. These are helpful towards providing answers and information relating to recurring issues from bot developers.
 
 - Expanded code comment documentation in the SDK repositories.
 - Improved `README` files in the samples and SDK repositories.
@@ -169,7 +169,6 @@ For complete release notes for all Bot Framework SDK releases, see [release note
 [2]: https://github.com/Microsoft/botbuilder-js#packages
 [3]: https://github.com/Microsoft/botbuilder-python#packages
 [3a]: https://github.com/Microsoft/botbuilder-java#packages
-[5]: index.yml
 [6]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore
 [7]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs
 [8]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/typescript_nodejs

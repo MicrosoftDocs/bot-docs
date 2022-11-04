@@ -55,7 +55,7 @@ Content-Type: application/json
 }
 ```
 
-For channels that support inline binaries of an image, you can set the `contentUrl` property of the `Attachment` to a base64 binary of the image (for example, **data:image/jpg;base64,iVBORw0KGgo…**). The channel will display the image or the image's URL next to the message's text string.
+For channels that support inline binaries of an image, you can set the `contentUrl` property of the `Attachment` to a base64 binary of the image (for example, **data:image/jpg;base64,iVBORw0KGgo...**). The channel will display the image or the image's URL next to the message's text string.
 
 ```json
 {
@@ -76,7 +76,7 @@ For channels that support inline binaries of an image, you can set the `contentU
     "attachments": [
         {
             "contentType": "image/jpg",
-            "contentUrl": "data:image/jpg;base64,iVBORw0KGgo…",
+            "contentUrl": "data:image/jpg;base64,iVBORw0KGgo...",
             "name": "duck-on-a-rock.jpg"
         }
     ],
