@@ -414,7 +414,7 @@ Lastly, update `Startup.cs` to use the storage initializer, and Cosmos DB for st
 // commented out MemoryStorage, since we are using CosmosDbPartitionedStorage instead
 // services.AddSingleton<IStorage, MemoryStorage>();
 
-// Add the Initializer as a HostedService (so it is called during the app service startup)
+// Add the Initializer as a HostedService (so it's called during the app service startup)
 services.AddHostedService<CosmosDbStorageInitializerHostedService>();
 
 // Create the storage options for User state

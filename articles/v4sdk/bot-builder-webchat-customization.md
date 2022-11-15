@@ -61,7 +61,7 @@ To adjust the size of the Web Chat container, use the _style set's_ `rootHeight`
 :::image type="content" source="../media/bot-service-channel-webchat/chat-container-height-width.png" alt-text="Set Web Chat with root height and root width":::
 
 > [!WARNING]
-> In the hosting webpage, do not use your Direct Line key in plain sight. Use a token as explained in the [Production embedding option](../bot-service-channel-connect-webchat.md#production-embedding-option) section of how to **Connect a bot to Web Chat**.
+> In the hosting webpage, don't use your Direct Line key in plain sight. Use a token as explained in the [Production embedding option](../bot-service-channel-connect-webchat.md#production-embedding-option) section of how to **Connect a bot to Web Chat**.
 
 ## Change chat bubble font and color
 

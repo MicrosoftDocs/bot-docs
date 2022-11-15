@@ -242,7 +242,7 @@ public void ConfigureServices(IServiceCollection services)
 
 ### Enable or disable personal information logging
 
-By default, if activity logging is enabled, some properties on the incoming / outgoing activities are excluded from logging as they are likely to contain personal information, such as user name and the activity text. You can choose to include these properties in your logging by making the following change to **Startup.cs** when registering the `TelemetryLoggerMiddleware`.
+By default, if activity logging is enabled, some properties on the incoming / outgoing activities are excluded from logging as they're likely to contain personal information, such as user name and the activity text. You can choose to include these properties in your logging by making the following change to **Startup.cs** when registering the `TelemetryLoggerMiddleware`.
 
 ```cs
 public void ConfigureServices(IServiceCollection services)
@@ -282,7 +282,7 @@ adapter.use(initializerMiddleware);
 
 ### Enable or disable personal information logging
 
-When activity logging is enabled, some properties on the incoming / outgoing activities are excluded from logging by default as they are likely to contain personal information, such as user name and the activity text. You can choose to include these properties in your logging by changing the `logPersonalInformation` parameter from `false` to `true` when registering the `TelemetryLoggerMiddleware` in **index.js**.
+When activity logging is enabled, some properties on the incoming / outgoing activities are excluded from logging by default as they're likely to contain personal information, such as user name and the activity text. You can choose to include these properties in your logging by changing the `logPersonalInformation` parameter from `false` to `true` when registering the `TelemetryLoggerMiddleware` in **index.js**.
 
 [!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=82-86&highlight=4)]
 

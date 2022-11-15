@@ -33,7 +33,7 @@ This article is a reference for how to represent language model elements in the 
 
 An intent represents a task or action the user wants to perform, as expressed in a user's utterance. You add intents to your bot to enable it to identify groups of questions or commands that represent the same user intention.
 
-Some examples of intents you might define for a travel bot, with the example utterances that they are defined from:
+Some examples of intents you might define for a travel bot, with the example utterances that they're defined from:
 
 | Intent       | Example utterances                                                                                                           |
 |--------------|------------------------------------------------------------------------------------------------------------------------------|
@@ -199,7 +199,7 @@ The next example shows a definition of an `address` machine-learned entity, with
 
 #### Prebuilt entities
 
-Prebuilt LUIS entities are defined by the system.  This saves you work since they are of high quality and provide normalized values that are easier to use in programs. For example the phrase "one thousand and two" would become the number 1002.  The following LUIS [prebuilt entity][prebuilt-entity] types are supported:
+Prebuilt LUIS entities are defined by the system.  This saves you work since they're of high quality and provide normalized values that are easier to use in programs. For example the phrase "one thousand and two" would become the number 1002.  The following LUIS [prebuilt entity][prebuilt-entity] types are supported:
 
 - age
 - datetimeV2
@@ -228,7 +228,7 @@ Here are examples of how to define prebuilt entities:
 
 #### List entity
 
-[List entities][list-entity] represent a fixed, closed set of related words along with their synonyms. The normalized value is returned when any of the corresponding synonyms are recognized.  They are case-sensitive and extracted based on an exact text match.
+[List entities][list-entity] represent a fixed, closed set of related words along with their synonyms. The normalized value is returned when any of the corresponding synonyms are recognized.  They're case-sensitive and extracted based on an exact text match.
 
 The following example shows the syntax for defining a list entity:
 
@@ -280,7 +280,7 @@ Extending the `pizzaOrder` example from the machine-learned entity section, here
 > [!TIP]
 > Since a list entity requires an exact match to be extracted, your results may improve by adding common misspellings. One common causes of misspellings is a result of typing errors such as double letters tripled as in "stufffed crust" in the above example.
 
-When using list entities you should include a value from the list directly in the utterance, you do not need to label list entities although you can still use them as place holders in a [pattern](#patterns). The following example shows an utterance with values from the list:
+When using list entities you should include a value from the list directly in the utterance, you don't need to label list entities although you can still use them as place holders in a [pattern](#patterns). The following example shows an utterance with values from the list:
 
 ```lu
 - I'd like to order a large pepperoni stuffed crust pizza.
@@ -460,7 +460,7 @@ A [phrase list][phrase-list] is a list of words or phrases that help find the co
 >[!NOTE]
 > a _feature_ can be a phrase list or entity that you associate with an intent or entity to emphasize the importance of that feature in accurately detecting user intent. See [Add a phrase list as a feature](#add-a-phrase-list-as-a-feature) for more information.
 
-For additional information about when and how to use phrase lists including typical scenarios they are used for, see [Create a phrase list for a concept][phrase-list].
+For additional information about when and how to use phrase lists including typical scenarios they're used for, see [Create a phrase list for a concept][phrase-list].
 
 You define phrase lists using the following notation:
 

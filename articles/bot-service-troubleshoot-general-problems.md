@@ -144,7 +144,7 @@ For Azure Active Directory authentication, see the [Add authentication to your b
 
 Some channels, such as SMS and email, provide unscoped addresses. In these cases, messages from the user will contain the raw user ID in the `from.Id` property.
 
-Other channels, such as Facebook and Slack, provide either scoped or tenanted addresses in a way that prevents a bot from being able to predict a user's ID ahead of time. In these cases, you'll need to authenticate the user via a login link or shared secret in order to determine whether or not they are authorized to use the bot.
+Other channels, such as Facebook and Slack, provide either scoped or tenanted addresses in a way that prevents a bot from being able to predict a user's ID ahead of time. In these cases, you'll need to authenticate the user via a login link or shared secret in order to determine whether or not they're authorized to use the bot.
 
 ## Why does my Direct Line 1.1 conversation start over after every message?
 

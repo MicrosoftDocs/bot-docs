@@ -27,30 +27,30 @@ The primary goal when creating any bot is to engage your user in a meaningful co
 
 ## About this sample code
 
-This sample code shows how to detect and welcome new users when they are initially connected to your bot. The following diagram shows the logic flow for this bot.
+This sample code shows how to detect and welcome new users when they're initially connected to your bot. The following diagram shows the logic flow for this bot.
 
 ### [C#](#tab/csharp)
 
 The two main events encountered by the bot are:
 
-- `OnMembersAddedAsync` which is called whenever a new user is connected to your bot
-- `OnMessageActivityAsync` which is called whenever a new user input is received.
+- `OnMembersAddedAsync`, called when a new user connects to your bot.
+- `OnMessageActivityAsync`, called when your bot receives new user input.
 
-![welcome user logic flow csharp diagram](media/welcome-user-flow.png)
+:::image type="content" source="./media/welcome-user-flow.png" alt-text="Logic flow diagram for C# sample.":::
 
-Whenever a new user is connected, they are provided with a `WelcomeMessage`, `InfoMessage`, and `PatternMessage` by the bot.
+Whenever a new user is connected, they're provided with a `WelcomeMessage`, `InfoMessage`, and `PatternMessage` by the bot.
 When a new user input is received, WelcomeUserState is checked to see if `DidBotWelcomeUser` is set to _true_. If not, an initial welcome user message is returned to the user.
 
 ### [JavaScript](#tab/javascript)
 
 The two main events encountered by the bot are:
 
-- `onMembersAdded` which is called whenever a new user is connected to your bot
-- `onMessage` which is called whenever a new user input is received.
+- `onMembersAdded`, called when a new user connects to your bot.
+- `onMessage`, called when your bot receives new user input.
 
-![welcome user logic flow js diagram](media/welcome-user-flow-js.png)
+:::image type="content" source="./media/welcome-user-flow-js.png" alt-text="Logic flow diagram for JavaScript sample.":::
 
-Whenever a new user is connected, they are provided with a `welcomeMessage`, `infoMessage`, and `patternMessage` by the bot.
+Whenever a new user is connected, they're provided with a `welcomeMessage`, `infoMessage`, and `patternMessage` by the bot.
 When a new user input is received, `welcomedUserProperty` is checked to see if `didBotWelcomeUser` is set to _true_. If not, an initial welcome user message is returned to the user.
 If `DidBotWelcomeUser` is _true_, the user's input is evaluated. Based on the content of the user's input this bot will do one of the following:
 
@@ -62,25 +62,25 @@ If `DidBotWelcomeUser` is _true_, the user's input is evaluated. Based on the co
 
 The two main events encountered by the bot are:
 
-- `onMembersAdded` which is called whenever a new user is connected to your bot
-- `onMessageActivity` which is called whenever a new user input is received.
+- `onMembersAdded`, called when a new user connects to your bot.
+- `onMessageActivity`, called when your bot receives new user input.
 
-![welcome user logic flow csharp diagram](media/welcome-user-flow-java.png)
+:::image type="content" source="./media/welcome-user-flow-java.png" alt-text="Logic flow diagram for Java sample.":::
 
-Whenever a new user is connected, they are provided with a `WELCOME_MESSAGE`, `INFO_MESSAGE`, and `PATTERN_MESSAGE` by the bot.
+Whenever a new user is connected, they're provided with a `WELCOME_MESSAGE`, `INFO_MESSAGE`, and `PATTERN_MESSAGE` by the bot.
 When a new user input is received, WelcomeUserState is checked to see if `getDidBotWelcomeUser()` is set to _true_. If not, an initial welcome user message is returned to the user.
 
 ### [Python](#tab/python)
 
 The two main events encountered by the bot are:
 
-- `on_members_added_activity` which is called whenever a new user is connected to your bot
-- `on_message_activity` which is called whenever a new user input is received.
+- `on_members_added_activity`, called when a new user connects to your bot.
+- `on_message_activity`, called when your bot receives new user input.
 
-![welcome user logic flow python diagram](media/welcome-user-flow-python.png)
+:::image type="content" source="./media/welcome-user-flow-python.png" alt-text="Logic flow diagram for Python sample.":::
 
-Whenever a new user is connected, they are provided with a _welcome message_, _information message_, and a _pattern message_ by the bot.
-When a new user input is received, the `welcome_user_state.did_welcome_user` property is checked to see if it is set to _true_. If it isn't set to _true_, an initial welcome user message is returned to the user. If it is set to _true_, based on the content of the user's input this bot will do one of the following:
+Whenever a new user is connected, they're provided with a _welcome message_, _information message_, and a _pattern message_ by the bot.
+When a new user input is received, the `welcome_user_state.did_welcome_user` property is checked. If it isn't set to _true_, an initial welcome user message is returned to the user. If it's set to _true_, based on the content of the user's input this bot will do one of the following:
 
 - Echo back a greeting received from the user.
 - Display a hero card providing addition information about bots.
@@ -211,7 +211,7 @@ The `on_members_added_activity` checks to see if a new user has been added and t
 
 ### [C#](#tab/csharp)
 
-It's also important to consider when your user's input might actually contain useful information, and this may vary for each channel. To ensure your user has a good experience on all possible channels, we check the status flag _didBotWelcomeUser_ and if this is "false", we do not process the initial user input. We instead provide the user with an initial welcome message. The bool _welcomedUserProperty_ is then set to "true", stored in UserState and our code will now process this user's input from all additional message activities.
+It's also important to consider when your user's input might actually contain useful information, and this may vary for each channel. To ensure your user has a good experience on all possible channels, we check the status flag _didBotWelcomeUser_ and if this is "false", we don't process the initial user input. We instead provide the user with an initial welcome message. The bool _welcomedUserProperty_ is then set to "true", stored in UserState and our code will now process this user's input from all additional message activities.
 
 **Bots\WelcomeUserBot.cs**
 [!code-csharp[DidBotWelcomeUser](~/../BotBuilder-Samples/samples/csharp_dotnetcore/03.welcome-user/bots/WelcomeUserBot.cs?range=73-87)]
@@ -219,7 +219,7 @@ It's also important to consider when your user's input might actually contain us
 
 ### [JavaScript](#tab/javascript)
 
-It's also important to consider when your user's input might actually contain useful information, and this may vary for each channel. To ensure your user has a good experience on all possible channels, we check the didBotWelcomedUser property, if it doesn't exist, we set it to "false" and do not process the initial user input. We instead provide the user with an initial welcome message. The bool didBotWelcomeUser is then set to "true" and our code processes the user input from all additional message activities.
+It's also important to consider when your user's input might actually contain useful information, and this may vary for each channel. To ensure your user has a good experience on all possible channels, we check the didBotWelcomedUser property, if it doesn't exist, we set it to "false" and don't process the initial user input. We instead provide the user with an initial welcome message. The bool didBotWelcomeUser is then set to "true" and our code processes the user input from all additional message activities.
 
 **bots/welcomeBot.js**
 [!code-javascript[DidBotWelcomeUser](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomebot.js?range=24-39)]
@@ -227,7 +227,7 @@ It's also important to consider when your user's input might actually contain us
 
 ### [Java](#tab/java)
 
-It's important to consider when your user's input might contain useful information, which may vary for each channel. To ensure your user has a good experience on all possible channels, we check the status flag _getDidBotWelcomeUser_ and if this is "false", we do not process the initial user input. We instead provide the user with an initial welcome message. The bool _setDidBotWelcomeUser_ is then set to "true", stored in UserState and our code will now process this user's input from all additional message activities.
+It's important to consider when your user's input might contain useful information, which may vary for each channel. To ensure your user has a good experience on all possible channels, we check the status flag _getDidBotWelcomeUser_ and if this is "false", we don't process the initial user input. We instead provide the user with an initial welcome message. The bool _setDidBotWelcomeUser_ is then set to "true", stored in UserState and our code will now process this user's input from all additional message activities.
 
 **WelcomeUserBot.java**
 [!code-java[DidBotWelcomeUser](~/../BotBuilder-Samples/samples/java_springboot/03.welcome-user/src/main/java/com/microsoft/bot/sample/welcomeuser/WelcomeUserBot.java?range=149-167)]
@@ -244,7 +244,7 @@ It's also important to consider when the user's input might actually contain use
 
 ## Process additional input
 
-Once a new user has been welcomed, user input information is evaluated for each message turn and the bot provides a response based on the context of that user input. The following code shows the decision logic used to generate that response.
+Once a new user has been welcomed, user input information is evaluated for each message turn, and the bot provides a response based on the context of that user input. The following code shows the decision logic used to generate that response.
 
 ### [C#](#tab/csharp)
 
@@ -269,7 +269,7 @@ An input of 'intro' or 'help' calls the function `sendIntroCard` to present the 
 
 ### [Python](#tab/python)
 
-An user's input of _intro_ or _help_ causes the bot to call `__send_intro_card` which presents the user with an intro adaptive card.
+A user's input of _intro_ or _help_ causes the bot to call `__send_intro_card`, which presents the user with an intro adaptive card.
 
 **bots/welcome-user-bot.py**
 [!code-python[SwitchOnUtterance](~/../botbuilder-samples/samples/python/03.welcome-user/bots/welcome_user_bot.py?range=109-114&highlight=97-106)]
@@ -306,14 +306,17 @@ As mentioned above, some user inputs generate a _Hero Card_ in response to their
 
 Download and install the latest [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md)
 
-1. Run the sample locally on your machine. If you need instructions, refer to the `README` file for [C# Sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/03.welcome-user) or [JS Sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/03.welcome-users).
-1. Use the Emulator to test the bot as shown below.
+1. Run the sample locally on your machine. If you need instructions, refer to the `README` file for the [C# sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/03.welcome-user) or [JavaScript sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/03.welcome-users).
+1. Open the Emulator to test your bot.
+    1. When you start a conversation with your bot, it will send you a series of welcome messages.
+    1. When you send a "hello" message the first time, your bot replies with some advice.
+    1. When you send subsequent "hello" messages, your bot replies with, "You said hello."
 
-![test welcome bot sample](media/welcome-user-emulator-1.png)
+        :::image type="content" source="media/welcome-user-emulator-1.png" alt-text="Screenshot of initial interactions with your bot in the Emulator.":::
 
-Test hero card greeting.
+    1. Send a "help" message to your bot. It responds by sending a hero card.
 
-![test welcome bot card](media/welcome-user-emulator-2.png)
+        :::image type="content" source="media/welcome-user-emulator-2.png" alt-text="Screenshot of the help message and the bot response in the Emulator.":::
 
 ## Additional Resources
 

@@ -56,7 +56,7 @@ There are two main scenarios where private endpoints are used:
 - For your bot to access the token endpoint.
 - For the Direct Line channel extension to access the Bot Service.
 
-A private endpoint _projects_ required services into your virtual network, so that they are available inside your network directly, without exposing your virtual network to the internet or allow-listing any IP addresses. All traffic through a private endpoint goes through the Azure internal servers to ensure that your traffic isn't leaked to the internet.
+A private endpoint _projects_ required services into your virtual network, so that they're available inside your network directly, without exposing your virtual network to the internet or allow-listing any IP addresses. All traffic through a private endpoint goes through the Azure internal servers to ensure that your traffic isn't leaked to the internet.
 
 The service uses two sub-resources, `Bot` and `Token`, to project services into your network. When you add a private endpoint, Azure generates a bot-specific DNS record for each sub-resource and configures the endpoint in the DNS zone group. This ensures that endpoints from different bots which target the same sub-resource can be distinguished from each other, while reusing the same DNS zone group resource.
 

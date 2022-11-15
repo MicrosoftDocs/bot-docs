@@ -359,7 +359,7 @@ Developers can set parser options to further customize how input is evaluated. U
 
 ### Strict option
 
-Developers who do not want to allow a null result for a null evaluated result can implement the **strict** option. Below is an example of a simple strict option:
+Developers who don't want to allow a null result for a null evaluated result can implement the **strict** option. Below is an example of a simple strict option:
 
 ```lg
 > !# @strict = true

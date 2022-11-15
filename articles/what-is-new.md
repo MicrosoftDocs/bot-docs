@@ -22,7 +22,7 @@ This article summarizes key new features and improvements in Bot Framework and A
 
 ## Insiders
 
-Want to try new features as soon as possible? You can download the nightly Insiders build [[C#](https://github.com/microsoft/botbuilder-dotnet/blob/main/dailyBuilds.md)] [[JS](https://github.com/microsoft/botbuilder-js/blob/main/dailyBuilds.md)] [[Python](https://github.com/microsoft/botbuilder-python/blob/master/UsingTestPyPI.md)] [[CLI](https://github.com/Microsoft/botframework-cli#nightly-builds)] and try the latest updates as soon as they are available. And for the latest Bot Framework news, updates, and content, follow us on Twitter @msbotframework!
+Want to try new features as soon as possible? You can download the nightly Insiders build [[C#](https://github.com/microsoft/botbuilder-dotnet/blob/main/dailyBuilds.md)] [[JS](https://github.com/microsoft/botbuilder-js/blob/main/dailyBuilds.md)] [[Python](https://github.com/microsoft/botbuilder-python/blob/master/UsingTestPyPI.md)] [[CLI](https://github.com/Microsoft/botframework-cli#nightly-builds)] and try the latest updates as soon as they're available. And for the latest Bot Framework news, updates, and content, follow us on Twitter @msbotframework!
 
 ## July 2021 - v4.14
 
