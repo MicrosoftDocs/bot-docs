@@ -44,7 +44,7 @@ Azure Dashboards offer a great way to view and share the information generated f
 This example results in a line chart that shows how many distinct users communicated with your bot per day for the past 14 days.  The time period can be easily changed by assigning different values to the `queryStartDate`, `queryEndDate` and `interval` variables.
 
 > [!IMPORTANT]
-> You'll only get a correct count of unique users in this query if they are authenticated users, and the results may also depend on the channel capabilities.
+> You'll only get a correct count of unique users in this query if they're authenticated users, and the results may also depend on the channel capabilities.
 
 ```Kusto
 // number of users per period

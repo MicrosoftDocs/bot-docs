@@ -160,7 +160,7 @@ Most clients wish to retain a complete message history. Even though Direct Line 
 
 - When a client starts a conversation and connects to the WebSocket stream, any activities that are sent after the POST but before the socket is opened are replayed before new activities.
 
-- When a client issues a Get Conversation Activities request (to refresh history) while it's connected to the WebSocket stream, activities may be duplicated across both channels. Clients should keep track of all known activity IDs so that they are able to reject duplicate activities, should they occur.
+- When a client issues a Get Conversation Activities request (to refresh history) while it's connected to the WebSocket stream, activities may be duplicated across both channels. Clients should keep track of all known activity IDs so that they're able to reject duplicate activities, should they occur.
 
 Clients that poll using `HTTP GET` should choose a polling interval that matches their intended use.
 

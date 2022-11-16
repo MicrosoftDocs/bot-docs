@@ -235,9 +235,8 @@ The bot uses the following criteria to validate input.
   It's normalized by returning just the date portion of the parsed input.
 
 > [!NOTE]
-> For the age and date input, you use the [Microsoft/Recognizers-Text](https://github.com/Microsoft/Recognizers-Text/) libraries to perform the initial parsing.
-> While you provide sample code, you do not explain how the text recognizers libraries work, and this is just one way to parse the input.
-> For more information about these libraries, see the repository's `README`.
+> For the age and date input, the sample uses the [Microsoft/Recognizers-Text](https://github.com/Microsoft/Recognizers-Text/) libraries to perform the initial parsing.
+> This is just one way to parse the input. For more information about these libraries, see the project's [README](https://github.com/Microsoft/Recognizers-Text#readme).
 
 ## [C#](#tab/csharp)
 

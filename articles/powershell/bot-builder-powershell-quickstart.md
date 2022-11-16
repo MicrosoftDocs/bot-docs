@@ -65,7 +65,7 @@ If you have multiple Azure subscriptions, choose the appropriate subscription in
 
 ## Create a resource group
 
-If you do not already have an [Azure resource group](/azure/azure-resource-manager/management/overview) you want to use for your bot, create a new one using the [New-AzResourceGroup](/powershell/module/az.resources/new-azresourcegroup) cmdlet.
+If you don't already have an [Azure resource group](/azure/azure-resource-manager/management/overview) you want to use for your bot, create a new one using the [New-AzResourceGroup](/powershell/module/az.resources/new-azresourcegroup) cmdlet.
 
 - A resource group is a logical container in which Azure resources are deployed and managed as a group.
 

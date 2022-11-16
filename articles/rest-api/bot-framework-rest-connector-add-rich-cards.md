@@ -69,7 +69,7 @@ To add a rich card attachment to a message:
 1. Add the `Attachment` object to the `attachments` array of the message.
 
 > [!TIP]
-> Messages that contain rich card attachments typically do not specify `text`.
+> Messages that contain rich card attachments typically don't specify `text`.
 
 Some channels allow you to add multiple rich cards to the `attachments` array within a message. This capability can be useful in scenarios where you want to provide the user with multiple options. For example, if your bot lets users book hotel rooms, it could present the user with a list of rich cards that shows the types of available rooms. Each card could contain a picture and list of amenities corresponding to the room type and the user could select a room type by tapping a card or clicking a button.
 

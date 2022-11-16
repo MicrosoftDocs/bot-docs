@@ -146,7 +146,7 @@ There are various reasons you might reject an otherwise authenticated request:
 
 ## Additional information
 
-From the user's perspective, they are interacting with the root bot.
+From the user's perspective, they're interacting with the root bot.
 From the skill's perspective, the skill consumer is the channel over which it communicates with the user.
 
 - For more information about skill consumers, see [about skill consumers](skills-about-skill-consumers.md).

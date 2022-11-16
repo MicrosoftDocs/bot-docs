@@ -27,7 +27,7 @@ If you're looking to migrate from Web Chat v3 to v4, jump ahead to [the migratio
 First, create a bot using [Azure Bot Service](https://azure.microsoft.com/services/bot-service/).
 Once the bot is created, you'll need to [obtain the bot's Web Chat secret](../bot-service-channel-connect-webchat.md#get-your-bot-secret-key) in Azure portal. Then use the secret to [generate a token](../rest-api/bot-framework-rest-direct-line-3-0-authentication.md) and pass it to your Web Chat.
 
-The following examples shows how to add a Web Chat control to a website.
+The following example shows how to add a Web Chat control to a website.
 
 ```html
 <!DOCTYPE html>
@@ -60,15 +60,15 @@ The following examples shows how to add a Web Chat control to a website.
 </html>
 ```
 
-> `userID`, `username`, `locale`, `botAvatarInitials`, and `userAvatarInitials` are all optional parameters to pass into the `renderWebChat` method.  For more information about style, see [Why styleOptions?](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/02.branding-styling-and-customization/a.branding-web-chat#why-stylesetoptions). To learn more about Web Chat properties, look at the [Web Chat API Reference](#web-chat-api-reference) section.
+> `userID`, `username`, `locale`, `botAvatarInitials`, and `userAvatarInitials` are all optional parameters to pass into the `renderWebChat` method. For more information about style, see [Why styleOptions?](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/02.branding-styling-and-customization/a.branding-web-chat#why-stylesetoptions). To learn more about Web Chat properties, look at the [Web Chat API Reference](#web-chat-api-reference) section.
 
 > Additionally, if your bot is a regional bot (meaning your bot resource is in a region other than "global"), you must specify the regional directline URL by setting it in an additional `domain` field in the `window.WebChat.createDirectLine()` method. Specify the domain as either `europe.webchat.botframework.com` or `unitedstates.webchat.botframework.com`, whichever is appropriate for your chosen region. Read [Answering Europe's Call: Storing and Processing EU Data in the EU](https://blogs.microsoft.com/eupolicy/2021/05/06/eu-data-boundary/) for information about data residency.
 
 ### Integrate with JavaScript
 
-Web Chat is designed to integrate with your existing website using JavaScript or React. Integrating with JavaScript will give you some styling and customizability, for more information see the article [Integrate Web Chat into your website](https://github.com/microsoft/BotFramework-WebChat#how-to-use).
+Web Chat is designed to integrate with your existing website using JavaScript or React. Integrating with JavaScript will give you some styling and customizability, for more information, see [Integrate Web Chat into your website](https://github.com/microsoft/BotFramework-WebChat#how-to-use).
 
-You can use the full, typical webchat package that contains the most typically used features.
+You can use the full, typical `botframework-webchat` package that contains the most typically used features.
 
 ```html
 <!DOCTYPE html>
@@ -150,11 +150,11 @@ See more about [customizing Web Chat](https://github.com/microsoft/BotFramework-
 
 ## Migrating from Web Chat v3 to v4
 
-There are three possible paths that migration might take when migrating from v3 to v4. First, please compare your beginning scenario with the one listed below.
+There are three possible paths that migration might take when migrating from v3 to v4. Compare your beginning scenario with the one listed below.
 
 - To upgrade a Web Chat control embedded in an `<iframe>`, see the documentation in the Web Chat repo for the [embed package](https://github.com/microsoft/BotFramework-WebChat/tree/master/packages/embed#readme).
 - To upgrade a Web Chat control that uses little to no customization, review the Web Chat [00.migration/a.v3-to-v4](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/00.migration/a.v3-to-v4) sample, which describes the process.
-- To upgrade a forked version of Web Chat v3 with a lot of customization, see the Web Chat [migration guidance](https://github.com/microsoft/BotFramework-WebChat/blob/master/docs/MIGRATION.md#my-website-is-integrated-with-a-fork-of-web-chat-v3-i-have-implemented-a-lot-of-customization-in-my-version-of-web-chat-and-i-am-concerned-v4-is-not-compatible-with-my-needs).
+- To upgrade a forked version of a highly customized Web Chat, see the Web Chat [migration guidance](https://github.com/microsoft/BotFramework-WebChat/blob/master/docs/MIGRATION.md#my-website-is-integrated-with-a-fork-of-web-chat-v3-i-have-implemented-a-lot-of-customization-in-my-version-of-web-chat-and-i-am-concerned-v4-is-not-compatible-with-my-needs).
 
 ## Web Chat API Reference
 
@@ -164,10 +164,10 @@ Also, feel free to examine the source code starting with [`packages/component/sr
 ## Browser compatibility
 
 Web Chat supports the latest 2 versions of modern browsers like Chrome, Edge, and FireFox.
-If you need Web Chat in Internet Explorer 11, please see the [ES5 bundle](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/01.getting-started/c.es5-bundle) and [demo](https://microsoft.github.io/BotFramework-WebChat/01.getting-started/c.es5-bundle/).
+If you need Web Chat in Internet Explorer 11, see the [ES5 bundle](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/01.getting-started/c.es5-bundle) and [demo](https://microsoft.github.io/BotFramework-WebChat/01.getting-started/c.es5-bundle/).
 
 - Web Chat doesn't support Internet Explorer older than version 11
-- Customization as shown in non-ES5 samples are not supported for Internet Explorer. Because IE11 is a non-modern browser, it doesn't support ES6, and many samples that use arrow functions and modern promises would need to be manually converted to ES5.  If you're in need of heavy customization for your app, we strongly recommend developing your app for a modern browser like Google Chrome or Edge.
+- Customization as shown in non-ES5 samples aren't supported for Internet Explorer. Because IE11 is a non-modern browser, it doesn't support ES6, and many samples that use arrow functions and modern promises would need to be manually converted to ES5.  If you're in need of heavy customization for your app, we strongly recommend developing your app for a modern browser like Google Chrome or Edge.
 - Web Chat has no plan to support samples for IE11 (ES5).
 - For customers who wish to manually rewrite our other samples to work in IE11, we recommend looking into converting code from ES6+ to ES5 using polyfills and transpilers like [`babel`](https://babeljs.io/docs/en/next/babel-standalone.html).
 
@@ -175,7 +175,7 @@ If you need Web Chat in Internet Explorer 11, please see the [ES5 bundle](https:
 
 *Testing unreleased features is only available via MyGet packaging at this time.*
 
-If you want to test a feature or bug fix that has not yet been released, you'll want to point your Web Chat package to Web Chat's daily feed, as opposed the official npmjs feed.
+If you want to test a feature or bug fix that hasn't yet been released, you'll want to point your Web Chat package to Web Chat's daily feed, as opposed the official npmjs feed.
 
 Currently, you may access Web Chat's dailies by subscribing to our MyGet feed. To do this, you'll need to update the registry in your project. **This change is reversible, and our directions include how to revert back to subscribing to the official release**.
 
@@ -187,26 +187,26 @@ To do this you may add your packages and then change the registry of your projec
 1. In your project's root directory, create a `.npmrc` file
 1. Add the following line to your file: `registry=https://botbuilder.myget.org/F/botframework-webchat/npm/`
 1. Add Web Chat to your project dependencies `npm i botframework-webchat --save`
-1. Note that in your `package-lock.json`, the registries pointed to are now MyGet. The Web Chat project has upstream source proxy enabled, which will redirect non-MyGet packages to `npmjs.com`.
+1. In your `package-lock.json`, the registries pointed to are now MyGet. The Web Chat project has upstream source proxy enabled, which will redirect non-MyGet packages to `npmjs.com`.
 
-### Re-subscribe to official release on `npmjs.com`
+### Resubscribe to official release on `npmjs.com`
 
-Re-subscribing requires that you reset your registry.
+Resubscribing requires that you reset your registry.
 
 1. Delete your `.npmrc file`
 1. Delete your root `package-lock.json`
 1. Remove your `node_modules` directory
 1. Reinstall your packages with `npm i`
-1. Note that in your `package-lock.json`, the registries are pointing to `https://npmjs.com/` again.
+1. In your `package-lock.json`, the registries are pointing to `https://npmjs.com/` again.
 
 ## Contributing
 
 See our [Contributing page](https://github.com/Microsoft/BotFramework-WebChat/tree/master/.github/CONTRIBUTING.md) for details on how to build the project and our repository guidelines for Pull Requests.
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
+For more information, see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
 ## Reporting Security Issues
 
-Security issues and bugs should be reported privately, via email, to the Microsoft Security Response Center (MSRC) at [secure@microsoft.com](mailto:secure@microsoft.com). You should receive a response within 24 hours. If for some reason you do not, please follow up via email to ensure we received your original message. Further information, including the [MSRC PGP](https://technet.microsoft.com/security/dn606155) key, can be found in the [Security TechCenter](https://technet.microsoft.com/security/default).
+Security issues and bugs should be reported privately, via email, to the Microsoft Security Response Center (MSRC) at [secure@microsoft.com](mailto:secure@microsoft.com). You should receive a response within 24 hours. If for some reason you don't, follow up via email to ensure we received your original message. Further information, including the [MSRC PGP](https://technet.microsoft.com/security/dn606155) key, can be found in the [Security TechCenter](https://technet.microsoft.com/security/default).

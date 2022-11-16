@@ -720,7 +720,7 @@ Mocking as many elements as you can allows for better isolation of the piece you
 
 Mocking elements can take a handful of forms, from replacing an element with a different known object to implementing a bare bones hello world functionality. This could also take the form of simply removing the element, if it's not necessary, or simply force it to do nothing.
 
-Mocks allow us to configure the dependencies of a dialog and ensure they are in a known state during the execution of the test without having to rely on external resources like databases, language models or other objects.
+Mocks allow us to configure the dependencies of a dialog and ensure they're in a known state during the execution of the test without having to rely on external resources like databases, language models or other objects.
 
 In order to make your dialog easier to test and reduce its dependencies on external objects, you may need to inject the external dependencies in the dialog constructor.
 

@@ -62,7 +62,7 @@ The dialogs library provides a few types of dialogs to make your bot's conversat
 | [container dialog](#container-dialogs) | The base class for all _container_ dialogs, such as component and adaptive dialogs. It maintains an inner dialog set and allows you to treat a collection of dialogs as a unit. |
 | [component dialog](#component-dialogs) | A general-purpose type of container dialog that encapsulates a set of dialogs, allowing for the reuse of the set as a whole. When a component dialog starts, it begins with a designated dialog in its collection. When the inner process completes, the component dialog ends. |
 | waterfall dialog | Defines a sequence of steps, allowing your bot to guide a user through a linear process. These are typically designed to work within the context of a component dialog. |
-| prompt dialogs | Ask the user for input and return the result. A prompt will repeat until it gets valid input or it's canceled. They are designed to work with waterfall dialogs. |
+| prompt dialogs | Ask the user for input and return the result. A prompt will repeat until it gets valid input or it's canceled. They're designed to work with waterfall dialogs. |
 | adaptive dialog | A type of container dialog used by Composer to provide more natural conversational flows. _Not_ intended to be used directly in an SDK-first bot. |
 | action dialogs | A type of dialog that supports the implementation of actions in Composer. _Not_ intended to be used directly in an SDK-first bot. |
 | input dialogs | A type of dialog that supports the implementation of input actions in Composer. _Not_ intended to be used directly in an SDK-first bot. |
