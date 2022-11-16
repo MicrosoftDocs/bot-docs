@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 10/26/2022
+ms.date: 11/09/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -117,6 +117,10 @@ The Azure AD is a cloud identity service that allows you to build applications t
 1. Select **Add scope**.
 1. Copy and save the scope value.
 1. Select **Add a client application**. In the far right section, in the **Client ID** box, enter the **RootBot identity** app ID you saved before. Make sure you use the _RootBot_ identity and not the registration app ID.
+
+    > [!NOTE]
+    > For client applications, Azure Bot Service does not support single sing-on with the Azure Active Directory B2C identity provider.
+
 1. Under **Authorized scope**, check the box by the scope value.
 1. Select **Add application**.
 1. In the navigation pane on the left, select **API permissions**. It's a best practice to explicitly set the API permissions for the app.
@@ -296,7 +300,7 @@ The following time-sequence diagram applies to the samples used in the article a
 1. SSO sends the **SkillBot** **skill token** to the **RootBot**.
 1. The **RootBot** displays the skill token for the user to see. Notice that the skill token was generated without the user having to sign in the **SKillBot**. This is because of the SSO.
 
-To see how the token exchange happens, please refer to the example shown below. The function can be found in [TokenExchangeSkillHandler.cs](https://github.com/microsoft/BotBuilder-Samples/blob/master/experimental/sso-with-skills/RootBot/TokenExchangeSkillHandler.cs).
+The following example shows how the token exchange happens. The code is from the [TokenExchangeSkillHandler.cs](https://github.com/microsoft/BotBuilder-Samples/blob/master/experimental/sso-with-skills/RootBot/TokenExchangeSkillHandler.cs) file.
 
 [!code-csharp[sso-token-exchange](~/../botbuilder-samples/experimental/sso-with-skills/RootBot/TokenExchangeSkillHandler.cs?range=92-136)]
 

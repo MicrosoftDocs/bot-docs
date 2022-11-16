@@ -5,14 +5,15 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: include
-ms.date: 03/30/2022
+ms.date: 11/15/2022
 ---
 
 1. In the Azure portal, go to your **Azure Bot** resource.
     1. Under **Settings** select **Channels** to configure the channels your bot accepts messages from.
     1. If it isn't already enabled, select the **Direct Line** channel from the list of **Available channels** to enable the channel.
     1. After enabling **Direct Line**, select it again from the **Channels** page.
-    1. Under **App Service extension Keys** select the **Show** button (eye icon) to reveal one of the keys. Copy this value for use later.
+    1. Select the **App Service extension** tab.
+    1. Under **App Service Extension Keys**, select the eye icon next to the corresponding key.
 1. Go to the home page and select **App Services** at the top of the page. Alternatively, display the portal menu and then select the **App Services** menu item. Azure will display the **App Services** page.
 1. In the search box, enter your **Azure Bot** resource name. Your resource will be listed.
 
