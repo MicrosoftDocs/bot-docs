@@ -31,7 +31,7 @@ In this article you'll learn about:
 
 ## Prerequisites
 
-- The [QnA Maker sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/11.qnamaker)
+- The [QnA Maker sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/archive/csharp_dotnetcore/11.qnamaker)
 - A subscription to [Microsoft Azure](https://portal.azure.com/)
 - An [Application Insights key](../bot-service-resources-app-insights-keys.md)
 - Familiarity with [QnA Maker](https://qnamaker.ai/) is helpful.
@@ -39,13 +39,13 @@ In this article you'll learn about:
 - An _existing_ and published QnA Maker knowledge base.
 
 > [!NOTE]
-> This article builds on the [QnA Maker sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/11.qnamaker) by stepping you through the steps required to incorporate telemetry.
+> This article builds on the [QnA Maker sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/archive/csharp_dotnetcore/11.qnamaker) by stepping you through the steps required to incorporate telemetry.
 
 ## Add telemetry code to your QnA Maker bot
 
-We'll start with the [QnA Maker sample app](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/11.qnamaker) and add the code required to integrate telemetry into a bot that uses the QnA Maker service. This will enable Application Insights to track requests.
+We'll start with the [QnA Maker sample app](https://github.com/microsoft/BotBuilder-Samples/tree/master/archive/csharp_dotnetcore/11.qnamaker) and add the code required to integrate telemetry into a bot that uses the QnA Maker service. This will enable Application Insights to track requests.
 
-1. Open the [QnA Maker sample app](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/11.qnamaker) in Visual Studio.
+1. Open the [QnA Maker sample app](https://github.com/microsoft/BotBuilder-Samples/tree/master/archive/csharp_dotnetcore/11.qnamaker) in Visual Studio.
 1. Add the `Microsoft.Bot.Builder.Integration.ApplicationInsights.Core` NuGet package. For more information on using NuGet, see [Install and manage packages in Visual Studio](/nuget/tools/package-manager-ui):
 1. Include the following statements in `Startup.cs`:
 
@@ -223,7 +223,7 @@ After learning how to add custom properties we'll learn how to create a new cust
     }
     ```
 
-1. Add a class constructor to `MyQnAMaker`. Note that you'll need two more using statements for the constructor parameters for `System.Net.Http` and `Microsoft.Bot.Builder`:
+1. Add a class constructor to `MyQnAMaker`. You'll need two more using statements for the constructor parameters for `System.Net.Http` and `Microsoft.Bot.Builder`:
 
     ```csharp
     using Microsoft.Bot.Builder.AI.QnA;

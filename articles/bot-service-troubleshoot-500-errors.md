@@ -25,8 +25,6 @@ For AppInsights samples, see the luis-with-appinsights [C# sample](https://githu
 
 [!INCLUDE [luis-sunset-alert](includes/luis-sunset-alert.md)]
 
- <!-- qna-with-appinsights ([C# sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/11.qnamaker) / [JS sample](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/11.qnamaker)) samples demonstrate bots that support Azure Application Insights.-->
-
 See [conversation analytics telemetry](./v4sdk/bot-builder-telemetry.md) for information about how to add Application Insights to an existing bot.
 
 ## Enable Application Insights for ASP.NET
@@ -66,7 +64,7 @@ union_all
     | order by timestamp desc
 ```
 
-If you only have `exceptions`, analyze the details and see if they correspond to lines in your code. If you only see exceptions coming from the Channel Connector (`Microsoft.Bot.ChannelConnector`) then see [No Application Insights events](#no-application-insights-events) to ensure that Application Insights is set up correctly and your code is logging events.
+If you only have `exceptions`, analyze the details and see if they correspond to lines in your code. If you only see exceptions coming from the Channel Connector (`Microsoft.Bot.ChannelConnector`), then see [No Application Insights events](#no-application-insights-events) to ensure that Application Insights is set up correctly and your code is logging events.
 
 ## No Application Insights events
 
@@ -178,7 +176,7 @@ Bot ASP.NET and Node will emit logs at the server level that can be inspected.
    - It will prompt if you're sure; select **yes**.
 1. Return to the first browser window and watch the logs.
 1. Verify that you're receiving new logs.
-   - If there is no activity, redeploy your bot.
+   - If there's no activity, redeploy your bot.
    - Then switch to the **Application logs** page and look for any errors.
 
 ## Next steps
