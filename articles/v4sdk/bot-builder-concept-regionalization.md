@@ -1,8 +1,8 @@
 ---
 title: Regionalization support
 description: Learn about regionalization in Azure Bot Service and how to meet your data compliance requirements.
-author: emgrol
-ms.author: v-eolshefski
+author: JonathanFingold
+ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service

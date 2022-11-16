@@ -416,6 +416,14 @@ See [CI/CD](#cicd).
 <a id="event"></a>
 <a id="event-activity"></a>
 
+## European Union data boundary
+
+- **Notes**: A GDPR related effort to make sure customer data stays in the European Union region.
+
+## EUDB
+
+Don't use. See [European Union data boundary](#european-union-data-boundary).
+
 ## event
 
 - **Status**: Complicated, see notes.
