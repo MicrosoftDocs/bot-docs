@@ -71,7 +71,7 @@ To confirm that your existing bot is configured correctly:
 
 ### Verify that connectivity is broken
 
-1. In a separate browser tab, open the Direct Line client endpoint for your bot. For example, `https://<your-app_service>.azurewebsites..net/.bot`.
+1. In a separate browser tab, open the Direct Line client endpoint for your bot. For example, `https://<your-app_service>.azurewebsites.net/.bot`.
 1. Verify the page displays the following:
 
     ```json
@@ -96,13 +96,13 @@ To confirm that your existing bot is configured correctly:
 1. Under **Settings**, select **Configuration**.
     1. On the **Application settings** tab, select **New application setting**.
         1. Set **Name** to `DirectLineExtensionABSEndpoint`.
-        1. Set **Value** to the private endpoint URL, for example, `https://<your_azure_bot>.botplinks.botframework.com/v3/extension`.
+        1. Set **Value** to the private endpoint URL, for example, `https://<your_azure_bot>.privatelink.directline.botframework.com/v3/extension`.
         1. Save the new setting.
 
 ## Restart your app service and verify that connectivity is restored
 
 1. Restart the app service for your bot.
-1. In a separate browser tab, open the Direct Line client endpoint for your bot. For example, `https://<your-app_service>.azurewebsites..net/.bot`.
+1. In a separate browser tab, open the Direct Line client endpoint for your bot. For example, `https://<your-app_service>.azurewebsites.net/.bot`.
 1. Verify the page displays the following:
 
     ```json

@@ -32,12 +32,24 @@ This article describes how to use the Direct Line App Service extension with an 
 
 1. Direct Line App Service extension requires an outbound connection so that it can issue HTTP requests. This can be configured as an outbound rule in your VNET NSG that is associated with the App Service Environment's subnet. The rule that required is as follows:
 
-| Field                   | Value           |
-|:------------------------|:----------------|
-| Source                  | Any             |
-| Source Port             | *               |
-| Destination             | Service Tag     |
-| Destination Service Tag | AzureBotService |
-| Destination port ranges | 443             |
-| Protocol                | Any             |
-| Action                  | Allow           |
+    | Field                   | Value           |
+    |:------------------------|:----------------|
+    | Source                  | Any             |
+    | Source Port             | *               |
+    | Destination             | Service Tag     |
+    | Destination Service Tag | AzureBotService |
+    | Destination port ranges | 443             |
+    | Protocol                | Any             |
+    | Action                  | Allow           |
+
+1. If your bot uses OAuth for user sign in to Azure Active Directory, add a second outbound rule that's associated with `https://login.microsoftonline.com/botframework.com`:
+
+    | Field                   | Value                |
+    |:------------------------|:---------------------|
+    | Source                  | Any                  |
+    | Source Port             | *                    |
+    | Destination             | Service Tag          |
+    | Destination Service Tag | AzureActiveDirectory |
+    | Destination port ranges | 443                  |
+    | Protocol                | Any                  |
+    | Action                  | Allow                |
