@@ -34,7 +34,7 @@ For new bots, consider using the [question answering](bot-builder-concept-luis.m
 
 - A [QnA Maker](https://www.qnamaker.ai/) account and an existing QnA Maker knowledge base.
 - Knowledge of [bot basics](bot-builder-basics.md) and [QnA Maker](/azure/cognitive-services/qnamaker/overview/overview).
-- A copy of the **QnA Maker (simple)** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/11.qnamaker), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/11.qnamaker), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/11.qnamaker), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/11.qnamaker).
+- A copy of the **QnA Maker (simple)** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/master/archive/csharp_dotnetcore/11.qnamaker), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/master/archive/javascript_nodejs/11.qnamaker), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/java_springboot/11.qnamaker), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/archive/python/11.qnamaker).
 
 ## About this sample
 
@@ -102,25 +102,25 @@ If you aren't deploying this for production, you can leave your bot's app ID and
 
 **appsettings.json**
 
-[!code-csharp[appsettings](~/../botbuilder-samples/samples/csharp_dotnetcore/11.qnamaker/appsettings.json)]
+[!code-csharp[appsettings](~/../botbuilder-samples/archive/csharp_dotnetcore/11.qnamaker/appsettings.json)]
 
 ## [JavaScript](#tab/js)
 
 **.env**
 
-[!code-ini[.env file](~/../botbuilder-samples/samples/javascript_nodejs/11.qnamaker/.env)]
+[!code-ini[.env file](~/../botbuilder-samples/archive/javascript_nodejs/11.qnamaker/.env)]
 
 ## [Java](#tab/java)
 
 **application.properties**
 
-[!code-ini[appsettings](~/../botbuilder-samples/samples/java_springboot/11.qnamaker/src/main/resources/application.properties)]
+[!code-ini[appsettings](~/../botbuilder-samples/archive/java_springboot/11.qnamaker/src/main/resources/application.properties)]
 
 ## [Python](#tab/python)
 
 **config.py**
 
-[!code-python[config.py](~/../botbuilder-samples/samples/python/11.qnamaker/config.py?range=10-18)]
+[!code-python[config.py](~/../botbuilder-samples/archive/python/11.qnamaker/config.py?range=10-18)]
 
 ---
 
@@ -136,7 +136,7 @@ In **QnABot.cs**, in the `OnMessageActivityAsync` method, create a QnAMaker inst
 
 **Bots/QnABot.cs**
 
-[!code-csharp[QnA Maker connection](~/../botbuilder-samples/samples/csharp_dotnetcore/11.qnamaker/Bots/QnABot.cs?range=32-39)]
+[!code-csharp[QnA Maker connection](~/../botbuilder-samples/archive/csharp_dotnetcore/11.qnamaker/Bots/QnABot.cs?range=32-39)]
 
 ## [JavaScript](#tab/js)
 
@@ -148,7 +148,7 @@ In the **QnABot.js** file, we use the connection information provided by your .e
 
 **bots/QnABot.js**
 
-[!code-javascript[QnAMaker](~/../botbuilder-samples/samples/javascript_nodejs/11.qnamaker/bots/QnABot.js?range=12-16)]
+[!code-javascript[QnAMaker](~/../botbuilder-samples/archive/javascript_nodejs/11.qnamaker/bots/QnABot.js?range=12-16)]
 
 ## [Java](#tab/java)
 
@@ -156,14 +156,14 @@ In **QnABot.java**, in the `onMessageActivity` method, create a QnAMaker instanc
 
 **QnABot.java**
 
-[!code-java[QnA Maker connection](~/../botbuilder-samples/samples/java_springboot/11.qnamaker/src/main/java/com/microsoft/bot/sample/qnamaker/QnABot.java?range=25-30)]
+[!code-java[QnA Maker connection](~/../botbuilder-samples/archive/java_springboot/11.qnamaker/src/main/java/com/microsoft/bot/sample/qnamaker/QnABot.java?range=25-30)]
 
 ## [Python](#tab/python)
 
 In the **qna_bot.py** file, use the connection information provided by the **config.py** file to establish a connection to the QnA Maker service: `self.qna_maker`.
 
 **bots/qna_bot.py**
-[!code-python[QnAMaker](~/../botbuilder-samples/samples/python/11.qnamaker/bots/qna_bot.py?range=13-19)]
+[!code-python[QnAMaker](~/../botbuilder-samples/archive/python/11.qnamaker/bots/qna_bot.py?range=13-19)]
 
 ---
 
@@ -175,7 +175,7 @@ When your bot needs an answer from QnAMaker, call the `GetAnswersAsync` method f
 
 **Bots/QnABot.cs**
 
-[!code-csharp[QnA Maker get answers](~/../botbuilder-samples/samples/csharp_dotnetcore/11.qnamaker/Bots/QnABot.cs?range=43-54)]
+[!code-csharp[QnA Maker get answers](~/../botbuilder-samples/archive/csharp_dotnetcore/11.qnamaker/Bots/QnABot.cs?range=43-54)]
 
 ## [JavaScript](#tab/js)
 
@@ -183,7 +183,7 @@ In the **QnABot.js** file, we pass the user's input to the QnA Maker service's `
 
 **bots/QnABot.js**
 
-[!code-javascript[OnMessage](~/../botbuilder-samples/samples/javascript_nodejs/11.qnamaker/bots/QnABot.js?range=45-54)]
+[!code-javascript[OnMessage](~/../botbuilder-samples/archive/javascript_nodejs/11.qnamaker/bots/QnABot.js?range=45-54)]
 
 ## [Java](#tab/java)
 
@@ -191,14 +191,14 @@ When your bot needs an answer from QnAMaker, call the `getAnswers` method from y
 
 **QnABot.java**
 
-[!code-java[QnA Maker get answers](~/../botbuilder-samples/samples/java_springboot/11.qnamaker/src/main/java/com/microsoft/bot/sample/qnamaker/QnABot.java?range=34-47)]
+[!code-java[QnA Maker get answers](~/../botbuilder-samples/archive/java_springboot/11.qnamaker/src/main/java/com/microsoft/bot/sample/qnamaker/QnABot.java?range=34-47)]
 
 ## [Python](#tab/python)
 
 In the **qna_bot.py** file, we pass the user's input to the QnA Maker service's `get_answers` method to get answers from the knowledge base. If QnA Maker returns a response, this is shown to the user. Otherwise, the user receives the message _No QnA Maker answers were found._
 
 **bots/qna_bot.py**
-[!code-python[get_answers](~/../botbuilder-samples/samples/python/11.qnamaker/bots/qna_bot.py?range=32-37)]
+[!code-python[get_answers](~/../botbuilder-samples/archive/python/11.qnamaker/bots/qna_bot.py?range=32-37)]
 
 ---
 
