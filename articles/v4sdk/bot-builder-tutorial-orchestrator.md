@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 10/11/2022
+ms.date: 11/17/2022
 monikerRange: 'azure-bot-service-4.0'
 
 ROBOTS: NOINDEX
@@ -37,6 +37,9 @@ This article describes how to use an _existing_ QnA Maker knowledge base with Or
 - A copy of the **NLP with Orchestrator** sample in [C#][cs-sample] or [JavaScript][js-sample].
 - Knowledge of [bot basics](bot-builder-basics.md), [LUIS][howto-luis], and [QnA Maker][howto-qna].
 - Install the command-line [BF CLI][bf-cli].
+
+[cs-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/csharp_dotnetcore/14.nlp-with-orchestrator
+[js-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/javascript_nodejs/14.nlp-with-orchestrator
 
 ## About this sample
 
@@ -87,7 +90,7 @@ Before you can create an Orchestrator snapshot file, you need LUIS apps and QnA 
 
 ### Create the LUIS apps
 
-Create LUIS apps from the _HomeAutomation_ and _Weather_ lu files in the _cognitive models_ directory of the sample.
+Create LUIS apps from the _HomeAutomation_ and _Weather_ .lu files in the _cognitive models_ directory of the sample.
 
 1. Run the following command to import, train and publish the app to the production environment.
 
@@ -152,7 +155,7 @@ Once all of your service apps are created, the information for each needs to be 
 
 **appsettings.json**
 
-[!code-json[AppSettings](~/../botbuilder-samples/samples/csharp_dotnetcore/14.nlp-with-orchestrator/AppSettings.json)]
+[!code-json[AppSettings](~/../botbuilder-samples/archive/csharp_dotnetcore/14.nlp-with-orchestrator/AppSettings.json)]
 
 For each of the entities shown below, add the values you recorded earlier in these instructions:
 
@@ -184,7 +187,7 @@ npm install
 Once all of your service apps are created, the information for each needs to be added into your '.env' file. The initial [JavaScript Sample][js-sample] code contains an empty .env file.
 
 **.env**
-[!code-ini[Empty .env file](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-orchestrator/.env)]
+[!code-ini[Empty .env file](~/../botbuilder-samples/archive/javascript_nodejs/14.nlp-with-orchestrator/.env)]
 
 Add your service connection values as shown below:
 
@@ -213,7 +216,7 @@ In **BotServices.cs**, the information contained within configuration file _apps
 
 **BotServices.cs**
 
-[!code-csharp[ReadConfigurationInfo](~/../botbuilder-samples/samples/csharp_dotnetcore/14.nlp-with-orchestrator/BotServices.cs?range=11-60)]
+[!code-csharp[ReadConfigurationInfo](~/../botbuilder-samples/archive/csharp_dotnetcore/14.nlp-with-orchestrator/BotServices.cs?range=11-60)]
 
 ## [JavaScript](#tab/js)
 
@@ -221,7 +224,7 @@ In **dispatchBot.js** the information contained within configuration file _.env_
 
 **bots/dispatchBot.js**
 
-[!code-javascript[ReadConfigurationInfo](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-orchestrator/bots/dispatchBot.js?range=13-40)]
+[!code-javascript[ReadConfigurationInfo](~/../botbuilder-samples/archive/javascript_nodejs/14.nlp-with-orchestrator/bots/dispatchBot.js?range=13-40)]
 
 ---
 
@@ -235,13 +238,13 @@ In the **DispatchBot.cs** file whenever the `OnMessageActivityAsync` method is c
 
 **bots\DispatchBot.cs**
 
-[!code-csharp[OnMessageActivity](~/../botbuilder-samples/samples/csharp_dotnetcore/14.nlp-with-orchestrator/bots/DispatchBot.cs?range=27-36)]
+[!code-csharp[OnMessageActivity](~/../botbuilder-samples/archive/csharp_dotnetcore/14.nlp-with-orchestrator/bots/DispatchBot.cs?range=27-36)]
 
 ## [JavaScript](#tab/js)
 
 In the **dispatchBot.js** `onMessage` method, we check the incoming user message and get the top intent from Orchestrator Recognizer.  We then pass this on by calling _dispatchToTopIntentAsync_.
 
-[!code-javascript[onMessage](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-orchestrator/bots/dispatchBot.js?range=47-62)]
+[!code-javascript[onMessage](~/../botbuilder-samples/archive/javascript_nodejs/14.nlp-with-orchestrator/bots/dispatchBot.js?range=47-62)]
 
 ---
 
@@ -253,7 +256,7 @@ When the Orchestrator recognizer produces a result, it indicates which service c
 
 **bots\DispatchBot.cs**
 
-[!code-csharp[DispatchToTopIntentAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/14.nlp-with-orchestrator/bots/DispatchBot.cs?range=51-69)]
+[!code-csharp[DispatchToTopIntentAsync](~/../botbuilder-samples/archive/csharp_dotnetcore/14.nlp-with-orchestrator/bots/DispatchBot.cs?range=51-69)]
 
 The `ProcessHomeAutomationAsync` and `ProcessWeatherAsync` methods use the user input contained within the turn context to get the top intent and entities from the correct LUIS model.
 
@@ -264,7 +267,7 @@ The `ProcessSampleQnAAsync` method uses the user input contained within the turn
 When the Orchestrator recognizer produces a result, it indicates which service can most appropriately process the utterance. The code in this sample uses the recognized _topIntent_ to show how to route the request on to the corresponding service.
 
 **bots/dispatchBot.js**
-[!code-javascript[dispatchToTopIntentAsync](~/../botbuilder-samples/samples/javascript_nodejs/14.nlp-with-orchestrator/bots/dispatchBot.js?range=79-95)]
+[!code-javascript[dispatchToTopIntentAsync](~/../botbuilder-samples/archive/javascript_nodejs/14.nlp-with-orchestrator/bots/dispatchBot.js?range=79-95)]
 
 The `processHomeAutomation` and `processWeather` methods use the user input contained within the turn context to get the top intent and entities from the correct LUIS model.
 
@@ -408,9 +411,6 @@ The `processSampleQnA` method uses the user input contained within the turn cont
 
 [howto-luis]: bot-builder-howto-v4-luis.md
 [howto-qna]: bot-builder-howto-qna.md
-
-[cs-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/14.nlp-with-orchestrator
-[js-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/14.nlp-with-orchestrator
 
 [orchestrator]: /composer/concept-orchestrator
 [bf-cli]: https://github.com/microsoft/botframework-cli
