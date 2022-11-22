@@ -62,7 +62,7 @@ Support for `event` and `invoke` activities varies by the activity's name and va
 
 ## Card support by channel
 
-The following table whether a given channel can render a given card type.
+The following table indicates whether a given channel can render a given card type.
 Even if a channel can render a card type, the channel may not support all features on the card.
 Before releasing your bot, test the behavior of each card your bot can send.
 
@@ -101,7 +101,7 @@ Within the table, the following terms have the following meanings.
 ## Card action support by channel
 
 The following table shows the maximum number of suggested actions and card actions that a given channel supports.
-"None" indicates that the action type isn't supported in the channel.
+A value of "None" indicates that the action type isn't supported in the channel.
 
 | Channel                                | Suggested actions | Card actions |
 |:---------------------------------------|:-----------------:|:------------:|
