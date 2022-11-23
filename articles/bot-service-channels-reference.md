@@ -8,240 +8,205 @@ manager: shellyha
 ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: reference
-ms.date: 09/01/2022
+ms.date: 11/10/2022
 ---
 
 # Channels reference
 
-## Categorized activities by channel
-
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-The following tables show what events (activities on the wire) can come from which channels.
+This article outlines channel support for various Bot Framework features:
 
-These symbols are used in the tables:
+- The activity types each channel can send or receive.
+- The card types each channel can display, including Adaptive Cards.
+- Card action and suggested action support on each channel.
+- A general classification of the different activity types.
 
-| Symbol   | Meaning                                                   |
-|:--------:|:----------------------------------------------------------|
-| &#x2714; | The bot should expect to receive this activity.           |
-| &#x274c; | The bot should **never** expect to receive this activity. |
-| &#x2753; | Currently undetermined whether the bot can receive this.  |
+For detailed information about the structure of activities and cards at the protocol level,
+see the Bot Framework [activity](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md)
+and [card](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-cards.md) schemas.
 
-Activities can meaningfully be split into separate categories. For each category, we have a table of possible activities.
-See the [Bot Framework activity schema](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md) for a detailed description of each type of activity, and the information that each type of activity contains.
+Adaptive Cards is a separate technology. For more information, see [adaptivecards.io](https://adaptivecards.io/).
 
-### Conversational
+## Activity support by channel
 
-| \                 | Direct Line | Direct Line (Web Chat) | Email    | Facebook | GroupMe  | Teams    | Slack    | Skype    | Skype Business | Telegram | Twilio   |
-|:------------------|:-----------:|:----------------------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------------:|:--------:|:--------:|
-| `message`         | &#x2714;    | &#x2714;               | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714;       | &#x2714; | &#x2714; |
-| `messageReaction` | &#x274c;    | &#x274c;               | &#x274c; | &#x274c; | &#x274c; | &#x2714; | &#x274c; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
+The following table indicates whether a given channel can send a given activity type to your bot.
+Within the table, the following terms have the following meanings.
 
-- All channels send message activities.
-- If your bot uses a dialog, forward message activities to the dialog.
-- Message reactions don't need to be forwarded to the dialog, even though they're very much part of the conversation.
-- There are logically two types of message reactions: added and removed.
+| Term         | Meaning                                               |
+|:-------------|:------------------------------------------------------|
+| Yes          | The bot can receive this activity from the channel.   |
+| No           | The bot can't receive this activity from the channel. |
+| Undetermined | Currently undetermined.                               |
 
-> [!TIP]
-> Message reactions are things like a _thumbs up_ on a previous comment. They can happen out of order, and can be thought of as similar to buttons.
-
-### Welcome
-
-| \                       | Direct Line | Direct Line (Web Chat) | Email    | Facebook | GroupMe  | Teams    | Slack    | Skype    | Skype Business | Telegram | Twilio   |
-|:------------------------|:-----------:|:----------------------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------------:|:--------:|:--------:|
-| `conversationUpdate`    | &#x2714;    | &#x2714;               | &#x274c; | &#x2753; | &#x2714; | &#x2714; | &#x2714; | &#x274c; | &#x274c;       | &#x2714; | &#x274c; |
-| `contactRelationUpdate` | &#x274c;    | &#x274c;               | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x2714; | &#x2714;       | &#x274c; | &#x274c; |
-
-- It's common for channels to send conversation update activities.
-- The main types of conversation updates are conversation members added and members removed.
-- Some channels send the conversation update when the bot is added to a conversation, and some send it after the first message sent to the bot.
-- To produce a reliable _Welcome_ behavior, include user state in your bots welcome logic.
-
-### Application extensibility
-
-| \                             | Direct Line | Direct Line (Web Chat) | Email    | Facebook | GroupMe  | Teams    | Slack    | Skype    | Skype Business | Telegram | Twilio   |
-|:------------------------------|:-----------:|:----------------------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------------:|:--------:|:--------:|
-| `event`                       | &#x2714;    | &#x2714;               | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753;       | &#x2753; | &#x2753; |
-| name = `CreateConversation`   | &#x2753;    | &#x2753;               | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753;       | &#x2753; | &#x2753; |
-| name = `ContinueConversation` | &#x2753;    | &#x2753;               | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753;       | &#x2753; | &#x2753; |
-
-- Event activities communicate programmatic information from a client or channel to a bot. The meaning of an event activity is defined by the `name` field, which is meaningful within the scope of a channel.
-- An application that owns both the client and server can chose to tunnel their own events through the service using event activities.
-
-#### Microsoft Teams
-
-- Along with other activity types, Microsoft Teams defines a few Teams-specific `invoke` activities. See [How Microsoft Teams bots work](v4sdk/bot-builder-basics-teams.md) for more information.
-- Invoke activities communicate programmatic information from a client or channel to a bot, and have a corresponding return payload for use within the channel. The meaning of an invoke activity is defined by the `name` field, which is meaningful within the scope of a channel.
-
-### Message update
-
-| \               | Direct Line | Direct Line (Web Chat) | Email    | Facebook | GroupMe  | Teams    | Slack    | Skype    | Skype Business | Telegram | Twilio   |
-|:----------------|:-----------:|:----------------------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------------:|:--------:|:--------:|
-| `messageUpdate` | &#x274c;    | &#x274c;               | &#x274c; | &#x274c; | &#x274c; | &#x2714; | &#x2753; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
-| `messageDelete` | &#x274c;    | &#x274c;               | &#x274c; | &#x274c; | &#x274c; | &#x2714; | &#x2753; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
-
-- Message update is currently supported by Teams.
-
-### OAuth
-
-| \        | Direct Line | Direct Line (Web Chat) | Email    | Facebook | GroupMe  | Teams    | Slack    | Skype    | Skype Business | Telegram | Twilio   |
-|:---------|:-----------:|:----------------------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------------:|:--------:|:--------:|
-| `invoke` | &#x2714;    | &#x2714;               | &#x274c; | &#x2753; | &#x2753; | &#x274c; | &#x2753; | &#x2753; | &#x2753;       | &#x2753; | &#x2753; |
-
-> [!IMPORTANT]
-> For dialogs and OAuth prompts to work, you must forward the following invoke activities to the dialog:
->
-> - `signin/verifyState`
-> - `signin/tokenExchange`
-> - `tokens/response`
-
-### Uncategorized
-
-| \                    | Direct Line | Direct Line (Web Chat) | Email    | Facebook | GroupMe  | Teams    | Slack    | Skype    | Skype Business | Telegram | Twilio   |
-|:---------------------|:-----------:|:----------------------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------------:|:--------:|:--------:|
-| `endOfConversation`  | &#x2714;    | &#x2714;               | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
-| `installationUpdate` | &#x2714;    | &#x2714;               | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
-| `typing`             | &#x2714;    | &#x2714;               | &#x274c; | &#x2714; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
-
-### Out of use
-
-- `deleteUserData`
-- `handoff`
-- `invoke`: payment request
-- `invoke`: address
-- `ping`
-
-> [!NOTE]
-> The handoff activity is different from the handoff-to-human scenario. See [Transition conversations from bot to human](bot-service-design-pattern-handoff-human.md) for more information.
-
-## Summary of activities supported per channel
-
-### Direct Line
-
-- `conversationUpdate`
-- `event`
-  - `CreateConversation`
-  - `ContinueConversation`
-- `invoke`
-  - `signin/tokenExchange`
-  - `signin/verifyState`
-  - `tokens/response`
-- `message`
-
-### Email
-
-- `message`
-
-### Facebook
-
-- `invoke`
-  - `tokens/response`
-- `message`
-
-### GroupMe
-
-- `conversationUpdate`
-- `invoke`
-  - `tokens/response`
-- `message`
-
-### Teams
-
-- `conversationUpdate`
-- `invoke`
-- `message`
-- `messageDelete`
-- `messageReaction`
-- `messageUpdate`
-
-### Slack
-
-- `conversationUpdate`
-- `invoke`
-  - `tokens/response`
-- `message`
-
-### Skype
-
-- `contactRelationUpdate`
-- `invoke`
-  - `tokens/response`
-- `message`
-
-### Skype Business
-
-- `contactRelationUpdate`
-- `invoke`
-  - `tokens/response`
-- `message`
-
-### Telegram
-
-- `conversationUpdate`
-- `invoke`
-  - `tokens/response`
-- `message`
-
-### Twilio
-
-- `message`
-
-## Summary table all activities to all channels
-
-| \                        | Direct Line | Direct Line (Web Chat) | Email    | Facebook | GroupMe  | Teams    | Slack    | Skype    | Skype Business | Telegram | Twilio   |
-|:-------------------------|:-----------:|:----------------------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------------:|:--------:|:--------:|
-| `contactRelationUpdate`  | &#x274c;    | &#x274c;               | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x2714; | &#x2714;       | &#x274c; | &#x274c; |
-| `conversationUpdate`     | &#x2714;    | &#x2714;               | &#x274c; | &#x2753; | &#x2714; | &#x2714; | &#x2714; | &#x274c; | &#x274c;       | &#x2714; | &#x274c; |
-| `endOfConversation`      | &#x2714;    | &#x2714;               | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
-| `event`                  | &#x2714;    | &#x2714;               | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753;       | &#x2753; | &#x2753; |
-| - `CreateConversation`   | &#x2753;    | &#x2753;               | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753;       | &#x2753; | &#x2753; |
-| - `ContinueConversation` | &#x2753;    | &#x2753;               | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753; | &#x2753;       | &#x2753; | &#x2753; |
-| `installationUpdate`     | &#x2714;    | &#x2714;               | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
-| `message`                | &#x2714;    | &#x2714;               | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714;       | &#x2714; | &#x2714; |
-| `messageDelete`          | &#x274c;    | &#x274c;               | &#x274c; | &#x274c; | &#x274c; | &#x2714; | &#x2753; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
-| `messageReaction`        | &#x274c;    | &#x274c;               | &#x274c; | &#x274c; | &#x274c; | &#x2714; | &#x274c; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
-| `messageUpdate`          | &#x274c;    | &#x274c;               | &#x274c; | &#x274c; | &#x274c; | &#x2714; | &#x2753; | &#x274c; | &#x274c;       | &#x274c; | &#x274c; |
-| `typing`                 | &#x2714;    | &#x2714;               | &#x274c; | &#x2714; | &#x274c; | &#x2714; | &#x2714; | &#x274c; | &#x274c;       | &#x2714; | &#x274c; |
+| Channel                                | Contact relation update | Conversation update | End of conversation | Event        | Installation update | Invoke | Message | Message reaction | Message update | Message delete | Typing |
+|:---------------------------------------|:------------------------|:--------------------|:--------------------|:-------------|:--------------------|:-------|:--------|:-----------------|:---------------|:---------------|:-------|
+| Alexa                                  | No                      | No                  | Yes                 | Yes          | No                  | No     | Yes     | No               | No             | No             | No     |
+| Azure Communication Services (preview) | No                      | Yes                 | No                  | Yes          | No                  | No     | Yes     | No               | Yes            | Yes            | Yes    |
+| Direct Line                            | No                      | Yes                 | Yes                 | Yes          | Yes                 | No     | Yes     | No               | No             | No             | Yes    |
+| Direct Line Speech                     |                         |                     |                     |              |                     |        | Yes     |                  |                |                |        |
+| Email                                  | No                      | No                  | No                  | Undetermined | No                  | No     | Yes     | No               | No             | No             | No     |
+| Facebook                               | No                      | Yes                 | No                  | Yes          | No                  | No     | Yes     | Yes              | No             | No             | No     |
+| GroupMe                                | No                      | Yes                 | No                  | Undetermined | No                  | No     | Yes     | No               | No             | No             | No     |
+| LINE                                   | No                      | Yes                 | No                  | Yes          | No                  | No     | Yes     | No               | No             | No             | No     |
+| Microsoft Teams                        | No                      | Yes                 | No                  | Undetermined | No                  | Yes    | Yes     | Yes              | Yes            | Yes            | No     |
+| Omnichannel                            |                         |                     |                     |              |                     |        | Yes     |                  |                |                |        |
+| Outlook (preview)                      |                         |                     |                     |              |                     |        | Yes     |                  |                |                |        |
+| Search (preview)                       |                         |                     |                     |              |                     |        | Yes     |                  |                |                |        |
+| Slack                                  | No                      | Yes                 | No                  | Undetermined | No                  | No     | Yes     | No               | Yes            | Yes            | No     |
+| Telegram                               | No                      | Yes                 | No                  | Undetermined | No                  | No     | Yes     | No               | Yes            | Undetermined   | No     |
+| Twilio (SMS)                           | No                      | No                  | No                  | Undetermined | No                  | No     | Yes     | No               | No             | No             | No     |
+| Web Chat                               | No                      | Yes                 | Yes                 | Yes          | Yes                 | No     | Yes     | No               | No             | No             | Yes    |
 
 Support for `event` and `invoke` activities varies by the activity's name and varies by channel.
 
-## Action support by channel
-
-The following table shows the maximum number of suggested actions and card actions that are supported in each channel.  The &#x274c; indicates that the action isn't supported at all in the specified channel.
-
-| \                 | Direct Line | Direct Line (Web Chat) | Email    | Facebook | GroupMe  | Line | Teams    | Slack    | Skype | Skype Business | Telegram | Twilio   |
-|:------------------|:-----------:|:----------------------:|:--------:|:--------:|:--------:|:----:|:--------:|:--------:|:-----:|:--------------:|:--------:|:--------:|
-| Suggested actions | 100         | 100                    | &#x274c; | 10       | &#x274c; | 13   | &#x274c; | &#x274c; | 10    | &#x274c;       | 100      | &#x274c; |
-| Card actions      | 100         | 100                    | &#x274c; | 3        | &#x274c; | 99   | 50       | 100      | 3     | &#x274c;       | &#x274c; | &#x274c; |
-
-For more information about the numbers shown in the above table, refer to channel support code listed [here](https://github.com/microsoft/botbuilder-dotnet/blob/master/libraries/Microsoft.Bot.Builder.Dialogs/Choices/Channel.cs).
-
-For more information on _suggested actions_, see how to [Use button for input](./v4sdk/bot-builder-howto-add-suggested-actions.md) article.
-
-For more information on _card actions_, see the [Send a hero card](./v4sdk/bot-builder-howto-add-media-attachments.md#send-a-hero-card) section of the _Add media to messages_ article.
-
 ## Card support by channel
 
-| Channel         | Adaptive Card     | Animation card | Audio card | Hero card | Receipt card | Sign-in card | Thumbnail card | Video card |
-|:---------------:|:-----------------:|:--------------:|:----------:|:---------:|:------------:|:-----------:|:--------------:|:----------:|
-| Email           | &#x1f5bc;         | &#x1f4c4;      | &#x1f4c4;  | &#x2714;  | &#x2714;     | &#x2714;    | &#x2714;       | &#x1f4c4;  |
-| Facebook        | &#x26a0;&#x1f5bc; | &#x2714;       | &#x274c;   | &#x2714;  | &#x2714;     | &#x2714;    | &#x2714;       | &#x274c;   |
-| GroupMe         | &#x1f5bc;         | &#x1f4c4;      | &#x1f4c4;  | &#x1f4c4; | &#x1f4c4;    | &#x1f4c4;   | &#x1f4c4;      | &#x1f4c4;  |
-| Line            | &#x26a0;&#x1f5bc; | &#x2714;       | &#x1f4c4;  | &#x2714;  | &#x2714;     | &#x2714;    | &#x2714;       | &#x1f4c4;  |
-| Microsoft Teams | &#x2714;          | &#x274c;       | &#x274c;   | &#x2714;  | &#x2714;     | &#x2714;    | &#x2714;       | &#x274c;   |
-| Skype           | &#x274c;          | &#x2714;       | &#x2714;   | &#x2714;  | &#x2714;     | &#x2714;    | &#x2714;       | &#x2714;   |
-| Slack           | &#x1f5bc;         | &#x2714;       | &#x1f4c4;  | &#x1f4c4; | &#x2714;     | &#x2714;    | &#x1f4c4;      | &#x1f4c4;  |
-| Telegram        | &#x26a0;&#x1f5bc; | &#x2714;       | &#x1f4c4;  | &#x2714;  | &#x2714;     | &#x2714;    | &#x2714;       | &#x2714;   |
-| Twilio          | &#x1f5bc;         | &#x1f4c4;      | &#x274c;   | &#x1f4c4; | &#x1f4c4;    | &#x1f4c4;   | &#x1f4c4;      | &#x274c;   |
-| Web Chat        | &#x2714;          | &#x2714;       | &#x2714;   | &#x2714;  | &#x2714;     | &#x2714;    | &#x2714;       | &#x2714;   |
+The following table indicates whether a given channel can render a given card type.
+Even if a channel can render a card type, the channel may not support all features on the card.
+Before releasing your bot, test the behavior of each card your bot can send.
+
+Within the table, the following terms have the following meanings.
+
+| Term    | Meaning                                                                                                                                                              |
+|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Yes     | The card is supported on this channel; however, any given channel may only support a subset of card actions or may limit the number of actions allowed on each card. |
+| No      | The card isn't supported on this channel.                                                                                                                            |
+| Partial | Partial support. This channel might not display the card if the card contains inputs or buttons. Level of support varies by channel.                                 |
+| Image   | Card is converted to image.                                                                                                                                          |
+| Text    | Card is converted to unformatted text. Links may not be clickable, images may not display, and media may not be playable. Level of support varies by channel.        |
+
+| Channel                                | Adaptive Card  | Animation card | Audio card | Hero card | Receipt card | Sign-in card | Thumbnail card | Video card |
+|:---------------------------------------|:---------------|:---------------|:-----------|:----------|:-------------|:-------------|:---------------|:-----------|
+| Alexa                                  | No             | No             | No         | Yes       | No           | Yes          | No             | No         |
+| Azure Communication Services (preview) | Yes            | Yes            | Yes        | Yes       | Yes          | Yes          | Yes            | Yes        |
+| Email                                  | Image          | Text           | Text       | Yes       | Yes          | Yes          | Yes            | Text       |
+| Facebook                               | Image, partial | Yes            | Yes        | Yes       | Yes          | Yes          | Yes            | Yes        |
+| GroupMe                                | Image          | Text           | Text       | Text      | Text         | Text         | Text           | Text       |
+| LINE                                   | Image, partial | Yes            | Text       | Yes       | Yes          | Yes          | Yes            | Text       |
+| Microsoft Teams                        | Yes            | No             | No         | Yes       | Yes          | Yes          | Yes            | No         |
+| Omnichannel                            |                |                |            |           |              |              |                |            |
+| Outlook (preview)                      |                |                |            |           |              |              |                |            |
+| Search (preview)                       |                |                |            |           |              |              |                |            |
+| Slack                                  | Image          | Yes            | Text       | Text      | Yes          | Yes          | Text           | Text       |
+| Telegram                               | Image, partial | Yes            | Text       | Yes       | Yes          | Yes          | Yes            | Yes        |
+| Twilio (SMS)                           | Image          | Text           | No         | Text      | Text         | Text         | Text           | No         |
+| Web Chat                               | Yes            | Yes            | Yes        | Yes       | Yes          | Yes          | Yes            | Yes        |
 
 > [!NOTE]
-> The Direct Line channel technically supports all cards, but it's up to the client to implement them.
+>
+> - The Direct Line channel technically supports all cards, but it's up to the client to implement them.
+> - Kik converts card actions to suggested actions.
 
-- &#x2714;: Supported - card is supported fully with the exception that some channels only support a subset of card actions or may limit the number of actions allowed on each card. Varies by channel.
-- &#x26a0;: Partial support - card may not be displayed at all if it contains inputs or buttons. Varies by channel.
-- &#x274c;: No support
-- &#x1f5bc;: Card is converted to an image
-- &#x1f4c4;: Card is converted to unformatted text - links may not be clickable, images may not display, and media may not be playable. Varies by channel.
+## Card action support by channel
 
-These categories are intentionally broad and don't fully explain how every card feature is supported in each channel due to the many possible combinations of cards, features, and channels. Use this table as a base reference, but test each of your cards in the desired channel.
+The following table shows the maximum number of suggested actions and card actions that a given channel supports.
+A value of "None" indicates that the action type isn't supported in the channel.
+
+| Channel                                | Suggested actions | Card actions |
+|:---------------------------------------|:-----------------:|:------------:|
+| Alexa                                  | None              | None         |
+| Azure Communication Services (preview) |                   |              |
+| Direct Line                            | 100               | 100          |
+| Direct Line Speech                     | 100               | 100          |
+| Email                                  | None              | None         |
+| Facebook                               | 11                | 3            |
+| GroupMe                                | None              | None         |
+| LINE                                   | 13                | 99           |
+| Microsoft Teams                        | None              | 3            |
+| Omnichannel                            |                   |              |
+| Outlook (preview)                      |                   |              |
+| Search (preview)                       |                   |              |
+| Slack                                  | None              | 100          |
+| Telegram                               | 100               | 100          |
+| Twilio (SMS)                           | None              | None         |
+| Web Chat                               | 100               | 100          |
+
+- For more information about card actions, see [Process events within rich cards](v4sdk/bot-builder-howto-add-media-attachments.md#process-events-within-rich-cards) in the _Add media to messages_ article.
+- For more information about suggested actions, see how to [Use buttons for input](v4sdk/bot-builder-howto-add-suggested-actions.md).
+
+## Activity categories
+
+Activities can be split into separate categories.
+For a detailed description of each type of activity, and the information that each type of activity contains, see the [Bot Framework activity schema](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md).
+
+### Welcome
+
+This category includes the `conversationUpdate` and `contactRelationUpdate` activities.
+
+- Many channels send conversation update activities.
+  - Often, bot _welcome_ behavior is triggered by the conversation update activity.
+    However, producing reliable welcome behavior might require the use of conversation or user state.
+- Some channels send contact relation update activities.
+  - If your bot uses these channels, you may need to include logic for this activity in your bot's welcome behavior.
+
+### Conversational
+
+This category includes the `message`, `messageReaction`, and `endOfConversation` activities.
+
+- All channels can send and receive message activities.
+  - For bots that use dialogs, message activities should generally be passed into the dialog.
+- Some channels can send and receive message reaction activities.
+  - Depending on the design of your bot, you might pass message reaction activities into a dialog.
+  - Message reaction activities reference previous messages by ID.
+- End of conversation activities signal the end of a conversation from the sender's perspective.
+  - End of conversation activities are used in bot-to-bot communication for skills.
+
+> [!TIP]
+> A _message reaction_ includes things like a _thumbs up_ on a previous comment.
+> They can happen out of order, so they can be thought of as similar to buttons.
+> This activity type can be sent by the Teams channel.
+
+### Message update and delete
+
+This category includes the `messageUpdate` and `messageDelete` activities.
+
+- Teams supports the message update and delete activities.
+
+### Application extensibility
+
+This category includes the `event` and `invoke` activities.
+The meaning of the activity is defined by its `name` field, which is meaningful within the scope of a channel.
+
+- An application that owns both the client and server can use event activities to communicate programmatic information between the client and server.
+  - Event activities, like most activity types, are asynchronous.
+  - Direct Line and Web Chat use event activities as an extensibility mechanism.
+- Invoke activities are specific to an application and not something a client would define.
+  - Invoke activities, unlike other activity types, are synchronous.
+    (Invoke is currently the only activity type that triggers a request-reply behavior on the bot.)
+  - Microsoft Teams uses invoke activities and defines a few Teams-specific invoke activities.
+
+#### Authentication
+
+For the OAuth prompt to work with dialogs, the `TeamsVerification` invoke activity must be forwarded to the dialog.
+
+### Uncategorized
+
+The `installationUpdate`, `typing`, and `handoff` activities don't meaningfully fit into the other categories.
+
+- Installation update activities represent an installation or uninstallation of a bot within an organizational unit of a channel.
+- Typing activities represent ongoing input from a user or a bot.
+- Handoff activities are used to request or signal a change in focus between elements inside a bot, which is different from an event activity that has the name "handoff".
+
+### Out of use (includes payment specific invoke)
+
+These activity types are no longer in use:
+
+- `deleteUserData`
+- `handoff`
+- `ping`
+- `Address` invoke
+- `PaymentRequest` invoke
+
+## Additional information
+
+All channels can send and receive `message` activities.
+
+> [!TIP]
+> When adding support for a channel to your bot, familiarize yourself with the channel's developer docs.
+> Each channel has different limitations on various aspects of a conversation. Some of the differences include:
+>
+> - How much time the bot has to handle each HTTP request.
+> - Whether a bot can send an activity that's not in response to a specific user activity.
+> - How many messages the bot can send within a given time frame.
+> - How a card renders and which cards are supported.
