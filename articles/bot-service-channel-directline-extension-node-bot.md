@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: Daniel.Evans
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 03/30/2022
+ms.date: 11/28/2022
 ---
 
 # Configure Node.js bot for extension
@@ -28,42 +28,65 @@ This section describes how to enable the Direct Line App Service extension using
 
 ## Update bot code
 
-1. Allow your app to use the **Direct Line App Service Extension Named Pipe**:
+To allow your app to use the **Direct Line App Service Extension Named Pipe**:
 
-    Update the bot's index.js (below the assignment of the adapter and bot) to include the following code that pulls the App Service name from the environment and instructs the adapter to connect to the appropriate named pipe:
+1. Edit your bot's `index.js` file.
+   1. Locate the line where you create the bot's adapter.
+   1. After the adapter is created, add the following statement, which will pull the App Service name from the environment and instruct the adapter to connect to the appropriate named pipe.
 
-    ```Node.js
-    
-    adapter.useNamedPipe(async (context) => {
-        await myBot.run(context);
-        },
-        process.env.APPSETTING_WEBSITE_SITE_NAME + '.directline'
-    );
-    ```
+      - If your bot uses the `CloudAdapter` (recommended):
 
-1. Save the `index.js` file.
-1. Update the `Web.Config` file to add the `AspNetCore` handler and rule needed by Direct Line App Service extension to service requests:
+        ```javascript
+        adapter.connectNamedPipe(
+            process.env. APPSETTING_WEBSITE_SITE_NAME + '.directline',
+            async (context) => {
+                await myBot.run(context);
+            },
+            process.env.MicrosoftAppId,
+            AuthenticationConstants.ToChannelFromBotOAuthScope);
+        ```
 
-    Locate the `Web.Config` file in the `wwwroot` directory of your bot and modify the contents to include the following entries to the `Handlers` and `Rules` sections:
+      - If your bot uses the deprecated `BotFrameworkAdapter`:
 
-    ```XML
-    <handlers>      
-          <add name="aspNetCore" path="*/.bot/*" verb="*" modules="AspNetCoreModule" resourceType="Unspecified" />
-    </handlers>
-    
-    <rewrite>
-      <rules>
-        <!-- Do not interfere with Direct Line App Service extension requests. (This rule should be as high in the rules section as possible to avoid conflicts.) -->
-        <rule name ="DLASE" stopProcessing="true">
-          <conditions>
-            <add input="{REQUEST_URI}" pattern="^/.bot"/>
-          </conditions>
-        </rule>
-      </rules>
-    </rewrite>
-    ```
+        ```javascript
+        adapter.useNamedPipe(async (context) => {
+            await myBot.run(context);
+            },
+            process.env.APPSETTING_WEBSITE_SITE_NAME + '.directline'
+        );
+        ```
 
-1. Deploy your updated bot to Azure.
+   1. Save your changes.
+
+1. Edit your bot's `web.config` file to add the `AspNetCore` handler and rule needed by Direct Line App Service extension to service requests.
+
+   1. Edit your bot's `web.config` file.
+   1. Change the `webSocket` tag's `enabled` attribute to `true`.
+
+      ```xml
+      <webSocket enabled="true" />
+      ```
+
+   1. In the `<handlers>` section, add a registration for the following handler.
+
+      ```xml
+      <add name="aspNetCore" path="*/.bot/*" verb="*" modules="AspNetCoreModule" resourceType="Unspecified" />
+      ```
+
+   1. In the `<rewrite>` section, add the following rule to the rules list.
+
+      ```xml
+      <!-- Do not interfere with Direct Line App Service extension requests. (This rule should be as high in the rules section as possible to avoid conflicts.) -->
+      <rule name ="DLASE" stopProcessing="true">
+        <conditions>
+          <add input="{REQUEST_URI}" pattern="^/.bot"/>
+        </conditions>
+      </rule>
+      ```
+
+   1. Save your changes.
+
+1. Redeploy your updated bot to Azure.
 
 ### Enable bot Direct Line App Service extension
 
