@@ -56,19 +56,19 @@ This article focuses on the root bot, which includes support logic in its bot an
 
 ### [C#](#tab/cs)
 
-![Skill consumer class C# diagram](./media/skills-simple-root-cs.png)
+:::image type="content" source="./media/skills-simple-root-cs.png" alt-text="C# class diagram for the skill consumer.":::
 
 ### [JavaScript](#tab/js)
 
-![Skill consumer class JavaScript diagram](./media/skills-simple-root-js.png)
+:::image type="content" source="./media/skills-simple-root-js.png" alt-text="JavaScript class diagram for the skill consumer.":::
 
 ### [Java](#tab/java)
 
-![Skill consumer class Java diagram](./media/skills-simple-root-java.png)
+:::image type="content" source="./media/skills-simple-root-java.png" alt-text="Java class diagram for the skill consumer.":::
 
 ### [Python](#tab/python)
 
-![Skill consumer class Python diagram](./media/skills-simple-root-python-2.png)
+:::image type="content" source="./media/skills-simple-root-python-2.png" alt-text="Python class diagram for the skill consumer.":::
 
 ---
 
@@ -422,7 +422,7 @@ Download and install the latest [Bot Framework Emulator](https://github.com/micr
 1. Run the echo skill bot and simple root bot locally on your machine. If you need instructions, refer to the `README` file for the [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/80.skills-simple-bot-to-bot), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/80.skills-simple-bot-to-bot), or [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/80.skills-simple-bot-to-bot) sample.
 1. Use the Emulator to test the bot as shown below. When you send an `end` or `stop` message to the skill, the skill sends to the root bot an `endOfConversation` activity, in addition to the reply message. The `endOfConversation` activity's _code_ property indicates that the skill completed successfully.
 
-![test the skill consumer](media/skills-simple-consumer-test.png)
+:::image type="content" source="media/skills-simple-consumer-test.png" alt-text="Example transcript of an interaction with the skill consumer.":::
 
 ### More about debugging
 

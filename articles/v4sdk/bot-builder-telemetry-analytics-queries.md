@@ -67,7 +67,7 @@ customEvents
 
 #### Sample number-of-users-per-period query results
 
-![Number of users per period](./media/userscount.png)
+:::image type="content" source="./media/userscount.png" alt-text="Sample chart of number of users per period.":::
 
 ### Activity per period
 
@@ -102,13 +102,13 @@ customEvents
 
 #### Sample activity-per-period query results
 
-![Activity per period](./media/convscount.PNG)
+:::image type="content" source="./media/convscount.PNG" alt-text="Sample chart of activity per period.":::
 
 ### Activity per user per period
 
 This example demonstrates how to count the number of activities per user per period. This query drills down into the _activity per period_ query to focus on the activity per user per period. The activities include dialogs, conversations or messages. This query measures user interaction with your bot, which can help find potential problems, such as:
 
-* Days with lots of activity by a single user may mean an attack or test
+* Days with a lot of activity by a single user may mean an attack or test
 * Days with little interaction may indicate service health issues
 
 > [!TIP]
@@ -192,7 +192,7 @@ customEvents
 
 #### Sample dialog-completion query results
 
-![Dialog completion](./media/dialogwfratio.PNG)
+:::image type="content" source="./media/dialogwfratio.PNG" alt-text="Sample chart of dialogs started and dialogs completed.":::
 
 ### Dialog incompletion
 
@@ -240,11 +240,11 @@ customEvents
 ```
 
 > [!TIP]
-> The Kusto [order operator](/azure/data-explorer/kusto/query/orderoperator) (Same as the `sort operator`) is used to sort the rows of the input table into order by one or more columns.  Note: If you want to exclude null values from the results of any query, you can filter them out in your where statement, for example you could add "and isnotnull(Timestamp)", or to return null values at the beginning or end, add the `nulls first` or `nulls first` to the end of the order statement.
+> The Kusto [order operator](/azure/data-explorer/kusto/query/orderoperator) (Same as the `sort operator`) is used to sort the rows of the input table into order by one or more columns.  Note: If you want to exclude null values from the results of any query, you can filter them out in your `where` statement, for example you could add "and isnotnull(Timestamp)", or to return null values at the beginning or end, add the `nulls first` or `nulls first` to the end of the order statement.
 
 #### Sample dialog-incompletion query results
 
-![Sample query results for the summarize operation](./media/cancelleddialogs.PNG)
+:::image type="content" source="./media/cancelleddialogs.PNG" alt-text="Sample summary chart for incomplete dialogs.":::
 
 ### Dialog Sequence Drill Down
 
@@ -373,7 +373,7 @@ not(isnull(timestamp2)), timestamp2 - timestamp, 0s) // Abandoned aren't counted
 
 #### Sample average-duration query results
 
-![Sample query results for dialog duration](./media/dialogduration.PNG)
+:::image type="content" source="./media/dialogduration.PNG" alt-text="Sample chart of dialog duration.":::
 
 ### Average steps in dialog
 
@@ -449,7 +449,7 @@ customEvents
 
 #### Sample channel-activity-by-activity query results
 
-![Sample query results for channel usage](./media/ChannelsUsage.PNG)
+:::image type="content" source="./media/ChannelsUsage.PNG" alt-text="Sample chart of channel usage.":::
 
  _Interpretation: Emulator testing used to be most popular but once we went live, DirectLineSpeech, is the most popular channel._
 
@@ -481,7 +481,7 @@ customEvents
 
 #### Sample intents-by-popularity query results
 
-![Sample query results for intent popularity](./media/Telemetry/IntentPopularity.PNG)
+:::image type="content" source="./media/Telemetry/IntentPopularity.PNG" alt-text="Sample chart of intent popularity.":::
 
 _Interpretation: For example the most popular intent, confirm is detected only with 23% confidence on average._
 

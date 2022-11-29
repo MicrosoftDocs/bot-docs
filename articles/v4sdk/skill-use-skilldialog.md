@@ -44,19 +44,19 @@ For information about other aspects of creating a skill consumer, see how to [im
 
 ### [C#](#tab/cs)
 
-![C# skill consumer class diagram](./media/skill-dialog/dialog-root-bot-cs.png)
+:::image type="content" source="./media/skill-dialog/dialog-root-bot-cs.png" alt-text="C# skill consumer class diagram.":::
 
 ### [JavaScript](#tab/js)
 
-![JavaScript skill consumer class diagram](./media/skill-dialog/dialog-root-bot-js.png)
+:::image type="content" source="./media/skill-dialog/dialog-root-bot-js.png" alt-text="JavaScript skill consumer class diagram.":::
 
 ### [Java](#tab/java)
 
-![Java skill consumer class diagram](./media/skill-dialog/dialog-root-bot-java.png)
+:::image type="content" source="./media/skill-dialog/dialog-root-bot-java.png" alt-text="Java skill consumer class diagram.":::
 
 ### [Python](#tab/python)
 
-![Python skill consumer class diagram](./media/skill-dialog/dialog-root-bot-py.png)
+:::image type="content" source="./media/skill-dialog/dialog-root-bot-py.png" alt-text="Python skill consumer class diagram.":::
 
 ---
 

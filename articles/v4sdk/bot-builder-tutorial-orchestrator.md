@@ -56,7 +56,7 @@ If you need to create a new knowledge base for a Bot Framework SDK bot, see the 
 
 ## [C#](#tab/cs)
 
-![Code sample logic flow cs](./media/tutorial-orchestrator/class-diagram-cs.png)
+:::image type="content" source="./media/tutorial-orchestrator/class-diagram-cs.png" alt-text="C# class diagram.":::
 
 `OnMessageActivityAsync` is called for each user input received. This module finds the top scoring user intent and passes that result on to `DispatchToTopIntentAsync`. DispatchToTopIntentAsync, in turn, calls the appropriate app handler.
 
@@ -66,7 +66,7 @@ If you need to create a new knowledge base for a Bot Framework SDK bot, see the 
 
 ## [JavaScript](#tab/js)
 
-![Code sample logic flow js](./media/tutorial-orchestrator/class-diagram-js.png)
+:::image type="content" source="./media/tutorial-orchestrator/class-diagram-js.png" alt-text="JavaScript class diagram.":::
 
 `onMessage` is called for each user input received. This module finds the top scoring user intent and passes that result on to `dispatchToTopIntentAsync`. `dispatchToTopIntentAsync`, in turn, calls the appropriate app handler
 
