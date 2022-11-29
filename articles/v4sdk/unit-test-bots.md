@@ -43,7 +43,7 @@ For information about identifying user intents, see [Natural language understand
 
 ## Testing Dialogs
 
-In the CoreBot sample, dialogs are unit tested through the `DialogTestClient` class which provides a mechanism for testing them in isolation outside of a bot and without having to deploy your code to a web service.
+In the CoreBot sample, dialogs are unit tested through the `DialogTestClient` class, which provides a mechanism for testing them in isolation outside of a bot and without having to deploy your code to a web service.
 
 Using this class, you can write unit tests that validate dialogs responses on a turn-by-turn basis. Unit tests using `DialogTestClient` class should work with other dialogs built using the botbuilder dialogs library.
 
@@ -109,9 +109,9 @@ The `DialogTestClient` class is included in the [botbuilder-testing]() npm packa
 
 The first parameter of `DialogTestClient` is the target channel. This allows you to test different rendering logic based on the target channel for your bot (Teams, Slack, and so on). If you're uncertain about your target channel, you can use the `Emulator` or `Test` channel IDs but keep in mind that some components may behave differently depending on the current channel, for example, `ConfirmPrompt` renders the Yes/No options differently for the `Test` and `Emulator` channels. You can also use this parameter to test conditional rendering logic in your dialog based on the channel ID.
 
-The second parameter is an instance of the dialog being tested (Note: **"sut"** stands for "System Under Test", we use this acronym in the code snippets in this article).
+The second parameter is an instance of the dialog being tested. In the sample code in this article, `sut` represents the _system under test_.
 
-The `DialogTestClient` constructor provides additional parameters that allows you to further customize the client behavior or pass parameters to the dialog being tested if needed. You can pass initialization data for the dialog, add custom middleware or use your own TestAdapter and `ConversationState` instance.
+The `DialogTestClient` constructor provides additional parameters that allow you to further customize the client behavior or pass parameters to the dialog being tested if needed. You can pass initialization data for the dialog, add custom middleware or use your own TestAdapter and `ConversationState` instance.
 
 ### Sending and receiving messages
 
@@ -317,9 +317,9 @@ public class BookingDialogTests
 }
 ```
 
-Here is an example of what the `XUnitDialogTestLogger` logs to the output window when it's configured:
+Here's an example of what the `XUnitDialogTestLogger` logs to the output window when it's configured:
 
-![Middleware output from XUnit](media/how-to-unit-test/cs/XUnitMiddlewareOutput.png)
+:::image type="content" source="media/how-to-unit-test/cs/XUnitMiddlewareOutput.png" alt-text="Example middleware output from XUnit.":::
 
 For additional information on sending test output to the console when using XUnit see [Capturing Output](https://xunit.net/docs/capturing-output.html) in the XUnit documentation.
 
@@ -327,15 +327,15 @@ For additional information on sending test output to the console when using XUni
 
 The [botbuilder-testing](https://www.npmjs.com/package/botbuilder-testing) package includes a `DialogTestLogger` that logs the messages sent and received by the dialog to the console.
 
-To use this middleware, simply pass it to `DialogTestClient` through the `middlewares` parameter.
+To use this middleware, pass it to `DialogTestClient` through the `middlewares` parameter.
 
 ```javascript
 const client = new DialogTestClient('msteams', sut, testData.initialData, [new DialogTestLogger()]);
 ```
 
-Here is an example of what the `DialogTestLogger` logs to the output window when it's configured:
+Here's an example of what the `DialogTestLogger` logs to the output window when it's configured:
 
-![Output from the dialog test logger](media/how-to-unit-test/js/DialogTestLoggerOutput.png)
+:::image type="content" source="media/how-to-unit-test/js/DialogTestLoggerOutput.png" alt-text="Sample output from the dialog test logger.":::
 
 ---
 
@@ -376,7 +376,7 @@ public async Task ShouldBeAbleToCancel()
 }
 ```
 
-To cancel a dialog, users can type "quit", "never mind", and "stop it". Rather then writing a new test case for every possible word, write a single `Theory` test method that accepts parameters via a list of `InlineData` values to define the parameters for each test case:
+To cancel a dialog, users can type "quit", "never mind", and "stop it". Rather than writing a new test case for every possible word, write a single `Theory` test method that accepts parameters via a list of `InlineData` values to define the parameters for each test case:
 
 ```csharp
 [Theory]
@@ -398,9 +398,9 @@ public async Task ShouldBeAbleToCancel(string cancelUtterance)
 }
 ```
 
-The new test will be executed 4 times with the different parameters and each case will show as a child item under the `ShouldBeAbleToCancel` test in Visual Studio Test Explorer. If any of them fail as shown below, you can right click and debug the scenario that failed rather than re-running the entire set of tests.
+The new test will be executed four times with the different parameters and each case will show as a child item under the `ShouldBeAbleToCancel` test in Visual Studio Test Explorer. If any of them fail as shown below, you can right click and debug the scenario that failed rather than rerunning the entire set of tests.
 
-![Test results for in-line data](media/how-to-unit-test/cs/InlineDataTestResults.png)
+:::image type="content" source="media/how-to-unit-test/cs/InlineDataTestResults.png" alt-text="Example test results for in-line data.":::
 
 ### Theory tests using MemberData and complex types
 
@@ -459,7 +459,7 @@ We also created a helper `BookingDialogTestsDataGenerator` class that exposes a 
 
 In order to display each test case as a separate item in Visual Studio Test Explorer, the XUnit test runner requires that complex types like `BookingDialogTestCase` implement `IXunitSerializable`, to simplify this, the Bot.Builder.Testing framework provides a `TestDataObject` class that Implements this interface and can be used to wrap the test case data without having to implement `IXunitSerializable`.
 
-Here is a fragment of `IEnumerable<object[]> BookingFlows()` that shows how the two classes are used:
+Here's a fragment of `IEnumerable<object[]> BookingFlows()` that shows how the two classes are used:
 
 ```csharp
 public static class BookingDialogTestsDataGenerator
@@ -543,9 +543,9 @@ public async Task DialogFlowUseCases(TestDataObject testData)
 }
 ```
 
-Here is an example of the results for the `DialogFlowUseCases` tests in Visual Studio Test Explorer when the test is executed:
+Here's an example of the results for the `DialogFlowUseCases` tests in Visual Studio Test Explorer when the test is executed:
 
-![Example results for the booking dialog](media/how-to-unit-test/cs/BookingDialogTestsResults.png)
+:::image type="content" source="media/how-to-unit-test/cs/BookingDialogTestsResults.png" alt-text="Example results for the booking dialog.":::
 
 ## [JavaScript](#tab/javascript)
 
@@ -570,7 +570,7 @@ describe('ShouldBeAbleToCancel', () => {
 });
 ```
 
-Consider that later on we need to be able to handle other utterances for cancel like "quit", "never mind" and "stop it". Rather than writing 3 more repetitive tests for each new utterance, we can refactor the test to use a list of utterances to define the parameters for each test case:
+Consider that later on we need to be able to handle other utterances for cancel like "quit", "never mind" and "stop it". Rather than writing three more repetitive tests for each new utterance, we can refactor the test to use a list of utterances to define the parameters for each test case:
 
 ```javascript
 describe('ShouldBeAbleToCancel', () => {
@@ -593,9 +593,9 @@ describe('ShouldBeAbleToCancel', () => {
 });
 ```
 
-The new test will be executed 4 times with the different parameters and each case will show as a child item under the `ShouldBeAbleToCancel` test suite in [Mocha Test Explorer](https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-mocha-test-adapter). If any of them fail like shown below, you can run and debug the scenario that failed rather than re-running the entire set of tests.
+The new test will be executed four times with the different parameters and each case will show as a child item under the `ShouldBeAbleToCancel` test suite in [Mocha Test Explorer](https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-mocha-test-adapter). If any of them fail like shown below, you can run and debug the scenario that failed rather than rerunning the entire set of tests.
 
-![Example results for the cancel test](media/how-to-unit-test/js/SimpleCancelTestResults.png)
+:::image type="content" source="media/how-to-unit-test/js/SimpleCancelTestResults.png" alt-text="Example results for the cancel test.":::
 
 ### Data driven tests with complex types
 
@@ -679,7 +679,7 @@ module.exports = [
 ];
 ```
 
-Once we created the list that contain the test data, we can refactor our test to map this list into individual test cases.
+Once we created the list that contains the test data, we can refactor our test to map this list into individual test cases.
 
 ```javascript
 describe('DialogFlowUseCases', () => {
@@ -706,19 +706,19 @@ describe('DialogFlowUseCases', () => {
 });
 ```
 
-Here is an example of the results for the `DialogFlowUseCases` test suite in Mocha Test Explorer when the test suite is executed:
+Here's an example of the results for the `DialogFlowUseCases` test suite in Mocha Test Explorer when the test suite is executed:
 
-![Updated example results for the booking dialog](media/how-to-unit-test/js/BookingDialogTestsResults.png)
+:::image type="content" source="media/how-to-unit-test/js/BookingDialogTestsResults.png" alt-text="Updated example results for the booking dialog.":::
 
 ---
 
 ## Using Mocks
 
-You can use mock elements for the things that are not currently tested. For reference, this level can generally be thought of as unit and integration testing.
+You can use mock elements for the things that aren't currently tested. For reference, this level can generally be thought of as unit and integration testing.
 
 Mocking as many elements as you can allows for better isolation of the piece you're testing. Candidates for mock elements include storage, the adapter, middleware, activity pipeline, channels, and anything else that isn't directly part of your bot. This could also involve removing certain aspects temporarily, such as middleware not involved in the part of your bot that you're testing, to isolate each piece. However, if you're testing your middleware, you may want to mock your bot instead.
 
-Mocking elements can take a handful of forms, from replacing an element with a different known object to implementing a bare bones hello world functionality. This could also take the form of simply removing the element, if it's not necessary, or simply force it to do nothing.
+Mocking elements can take a handful of forms, from replacing an element with a different known object to implementing minimal hello world functionality. This could also take the form of removing the element, if it's not necessary, or forcing it to do nothing.
 
 Mocks allow us to configure the dependencies of a dialog and ensure they're in a known state during the execution of the test without having to rely on external resources like databases, language models or other objects.
 

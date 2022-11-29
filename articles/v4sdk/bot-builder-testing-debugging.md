@@ -16,14 +16,14 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-Bots are complex apps, with a lot of different parts working together. Like any other complex app, this can lead to some interesting bugs or cause your bot to behave differently than expected.
+Bots are complex apps, with many parts working together. Like any other complex app, this can lead to some interesting bugs or cause your bot to behave differently than expected.
 
 Debugging, your bot can sometimes be a difficult task. Every developer has their own preferred way to accomplish that task.
-The guidelines below are suggestions that apply to a large majority of bots.
+The guidelines below are suggestions that apply to most bots.
 
 After verifying that your bot works, the next step is connecting it to a channel. To do this, you can deploy your bot to a staging server, and create your own direct line client for your bot to connect to. For more information, see [Connect a bot to a Direct Line](../bot-service-channel-connect-directline.md).
 
-Creating your own client allows you to define the inner workings of the channel, as well as specifically test how your bot responds to certain activity exchanges. Once connected to your client, run your tests to set up your bot state and verify your features. If your bot utilizes a feature like speech, using these channels can offer a way to verify that functionality.
+Creating your own client allows you to define the inner workings of the channel, and test how your bot responds to certain activity exchanges. Once connected to your client, run your tests to set up your bot state and verify your features. If your bot utilizes a feature like speech, using these channels can offer a way to verify that functionality.
 
 > [!NOTE]
 > When deploying a bot to Azure, the [Web Chat](bot-builder-webchat-overview.md) channel is provisioned by default.
@@ -38,7 +38,7 @@ Bots follow an event driven programming paradigm, which can be hard to rationali
 
 Your bot deals with different types of [activities](bot-builder-basics.md#the-activity-processing-stack) besides the normal _message_ activity. Understanding those activities will help you code your bot efficiently and allows you to verify the activities your bot is sending and receiving are what you expect.
 Using the Emulator will show you what those activities are, when they happen, and what information they contain.
-For more information see [Debug with the Emulator](../bot-service-debug-emulator.md).
+For more information, see [Debug with the Emulator](../bot-service-debug-emulator.md).
 
 ## Saving and retrieving user interactions with transcripts
 
@@ -46,7 +46,7 @@ Azure blob transcript storage provides a specialized resource where you can both
 
 Additionally, once user input interactions have been stored, you can use Azure's "_storage explorer_" to manually view data contained in transcripts stored within your blob transcript store. The following example opens "_storage explorer_" from settings for "_mynewtestblobstorage_." To open a saved user input select:    Blob Container > ChannelId > TranscriptId > ConversationId
 
-![Examine_stored_transcript_text](./media/examine_transcript_text_in_azure.png)
+:::image type="content" source="./media/examine_transcript_text_in_azure.png" alt-text="Example of a transcript entry stored in a blob transcript store.":::
 
 This opens the stored user conversation input in JSON format. User input is preserved together with the key "_text:_."
 For more information on creating and using a bot transcript file, see [Debug your bot using transcript files](bot-builder-debug-transcript.md).
@@ -55,11 +55,11 @@ For more information on creating and using a bot transcript file, see [Debug you
 
 [Middleware](bot-builder-concept-middleware.md) may not be intuitive when first attempting to use it, particularly regarding the continuation, or short-circuiting, of execution. Middleware can execute on the leading or trailing edge of a turn, with a call to the `next()` delegate dictating when execution is passed to the bot logic.
 
-If you're using multiple pieces of middleware the delegate may pass execution to a different piece of middleware if that is how your pipeline is oriented. Details on [the bot middleware pipeline](bot-builder-concept-middleware.md#the-bot-middleware-pipeline) can help make that idea clearer.
+If you're using multiple pieces of middleware and it's how your pipeline is oriented, the delegate may pass execution to a different piece of middleware. Details on [the bot middleware pipeline](bot-builder-concept-middleware.md#the-bot-middleware-pipeline) can help make that idea clearer.
 
 If the `next()` delegate isn't called, that's referred to as [short circuit routing](bot-builder-concept-middleware.md#short-circuiting). This happens when the middleware satisfies the current activity and determines it's not necessary to pass execution on.
 
-Understanding when, and why, middleware short-circuits helps indicate which piece of middleware should come first in your pipeline. Additionally, understanding what to expect is particularly important for built-in middleware provided by the SDK or other developers. Some find it helpful to try creating your own middleware first to experiment a bit before diving into the built-in middleware.
+Understanding when, and why, middleware short-circuits can help indicate which piece of middleware should come first in your pipeline. Additionally, understanding what to expect is important for built-in middleware provided by the SDK or other developers. Some find it helpful to try creating your own middleware first to experiment a bit before diving into the built-in middleware.
 
 For more information on how to debug a bot using inspection middleware, see [Debug a bot with inspection middleware](../bot-service-debug-inspection-middleware.md).  
 
@@ -69,7 +69,7 @@ For example [QnA maker](bot-builder-howto-qna.md) is designed to handle certain 
 
 ## Understanding state
 
-Keeping track of state is an important part of your bot, particularly for complex tasks. In general, best practice is to process activities as quickly as possible and let the processing complete so that state gets persisted. Activities can be sent to your bot at nearly the same time, and that can introduce very confusing bugs because of the asynchronous architecture.
+Keeping track of state is an important part of your bot, particularly for complex tasks. In general, best practice is to process activities as quickly as possible and let the processing complete so that state gets persisted. Activities can be sent to your bot at nearly the same time, and that can introduce confusing bugs because of the asynchronous architecture.
 
 Most importantly, make sure that state is persisting in a way that matches your expectations. Depending on where your persisted state lives, storage emulators for [Cosmos DB](/azure/cosmos-db/local-emulator) and [Azure Table storage](/azure/storage/common/storage-use-emulator) can help you verify that state before using production storage.
 

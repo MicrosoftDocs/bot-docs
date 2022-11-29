@@ -174,7 +174,7 @@ The QnA Maker service has built-in telemetry logging available, so there's littl
     > [!TIP]
     > Make sure that the property names that you use in the `_configuration` entries match the property names you used in the AppSettings.json file and the values for those properties are obtained by selecting the _View Code_ button on the [My knowledge bases](https://www.qnamaker.ai/Home/MyServices) page in the QnA Maker portal:
 
-    ![AppSettings](media/AppSettings.json-QnAMaker.png)
+    :::image type="content" source="media/AppSettings.json-QnAMaker.png" alt-text="Illustration of where the app settings are found in the LUIS portal.":::
 
 #### View telemetry data logged from the QnA Maker default entries
 

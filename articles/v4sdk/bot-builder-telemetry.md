@@ -130,7 +130,7 @@ This article starts from the [CoreBot sample app](https://github.com/Microsoft/B
 
 1. You'll also need to add `Microsoft.Bot.Builder.Integration.ApplicationInsights.Core` to your list of using statements in `AdapterWithErrorHandler.cs`.
 
-1. Add the Application Insights instrumentation key in your `appsettings.json` file. The `appsettings.json` file contains metadata about external services the bot uses while running. For example, CosmosDB, Application Insights, and Azure Cognitive Services connection and metadata is stored there. The addition to your `appsettings.json` file must be in this format:
+1. Add the Application Insights instrumentation key in your `appsettings.json` file. The `appsettings.json` file contains metadata about external services the bot uses while running. For example, Cosmos DB, Application Insights, and Azure Cognitive Services connection and metadata is stored there. The addition to your `appsettings.json` file must be in this format:
 
     ```json
     {
@@ -149,7 +149,7 @@ At this point, the preliminary work to enable telemetry using Application Insigh
 
 ### Enable telemetry in your bot's dialogs
 
-When adding a new dialog to any ComponentDialog, it will inherit the Microsoft.Bot.Builder.IBotTelemetryClient of its parent dialog.  For example, In the CoreBot sample application all dialogs are added to the MainDialog, which is a ComponentDialog.  Once you set the TelemetryClient property to the MainDialog, all dialogs added to it will automatically inherit the telemetryClient from it, so it doesn't need to be explicitly set when adding dialogs.
+When adding a new dialog to any ComponentDialog, it will inherit the Microsoft.Bot.Builder.IBotTelemetryClient of its parent dialog. For example, in the CoreBot sample application, all dialogs are added to the MainDialog, which is a ComponentDialog. Once you set the TelemetryClient property to the MainDialog, all dialogs added to it will automatically inherit the telemetryClient from it, so it doesn't need to be explicitly set when adding dialogs.
 
 Follow the steps below to update your CoreBot example:
 
@@ -168,7 +168,7 @@ Follow the steps below to update your CoreBot example:
 > [!TIP]
 > If you're following along and updating the CoreBot sample code, you can refer to the [Application Insights sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/21.corebot-app-insights) if you run into any problems.
 
-That's all there is to adding telemetry to your bot dialogs. If you run your bot now, you should see things being logged in Application Insights; however, if you have any integrated technology such as a Cognitive Service, you'll need to add the `TelemetryClient` to that code as well.
+Telemetry is now added to your bot dialogs. If you run your bot now, you should see things being logged in Application Insights; however, if you have any integrated technology such as a Cognitive Service, you'll need to add the `TelemetryClient` to that code as well.
 
 # [JavaScript](#tab/javascript)
 
@@ -210,9 +210,9 @@ This article starts with the [CoreBot sample app](https://github.com/Microsoft/B
     [!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=125-127)]
 
     > [!TIP]
-    > This uses the _restify_ `bodyParser` function. _restify_ is a "A Node.js web service framework optimized for building semantically correct RESTful web services ready for production use at scale. restify optimizes for introspection and performance, and is used in some of the largest Node.js deployments on Earth." See the [restify](http://restify.com) web site for more information.
+    > This uses the _restify_ `bodyParser` function. _restify_ is a "A Node.js web service framework optimized for building semantically correct RESTful web services ready for production use at scale. restify optimizes for introspection and performance, and is used in some of the largest Node.js deployments on Earth." For more information, see the [restify](http://restify.com) web site.
 
-    Node.js which follows the CommonJS module system, and the built in `require` function to include modules that exist in separate files.
+    Node.js follows the CommonJS module system and uses the built-in `require` function to include modules that exist in separate files.
 
 At this point, the preliminary work to enable telemetry using Application Insights is done. You can run your bot locally using the Emulator and then go into Application Insights to see what is being logged, such as response time, overall app health, and general running information.
 
@@ -226,7 +226,7 @@ At this point, the preliminary work to enable telemetry using Application Insigh
 
 By default, the `TelemetryInitializerMiddleware` will use the `TelemetryLoggerMiddleware` to log telemetry when your bot sends / receives activities. Activity logging creates custom event logs in your Application Insights resource. If you wish, you can disable activity event logging by setting  `logActivityTelemetry` to false on the `TelemetryInitializerMiddleware` when registering it in **Startup.cs**.
 
-```cs
+```csharp
 public void ConfigureServices(IServiceCollection services)
 {
     ...
@@ -244,7 +244,7 @@ public void ConfigureServices(IServiceCollection services)
 
 By default, if activity logging is enabled, some properties on the incoming / outgoing activities are excluded from logging as they're likely to contain personal information, such as user name and the activity text. You can choose to include these properties in your logging by making the following change to **Startup.cs** when registering the `TelemetryLoggerMiddleware`.
 
-```cs
+```csharp
 public void ConfigureServices(IServiceCollection services)
 {
     ...
@@ -258,7 +258,7 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-Next we will see what needs to be included to add telemetry functionality to the dialogs. This will enable you to get additional information such as what dialogs run, and statistics about each one.
+Next we'll see what needs to be included to add telemetry functionality to the dialogs. This will enable you to get additional information such as what dialogs run, and statistics about each one.
 
 # [JavaScript](#tab/javascript)
 
@@ -286,7 +286,7 @@ When activity logging is enabled, some properties on the incoming / outgoing act
 
 [!code-javascript[dialog.telemetryClient](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/index.js?range=82-86&highlight=4)]
 
-Next we will see what needs to be included to add telemetry functionality to the dialogs. This will enable you to get additional information such as what dialogs run, and statistics about each one.
+Next we'll see what needs to be included to add telemetry functionality to the dialogs. This will enable you to get additional information such as what dialogs run, and statistics about each one.
 
 ---
 
@@ -298,17 +298,17 @@ Next we will see what needs to be included to add telemetry functionality to the
 
 # [C#](#tab/csharp)
 
-We will next implement telemetry functionality in your LUIS service. The LUIS service has built-in telemetry logging available so there's little you need to do to start getting telemetry data from LUIS.  If you're interested in enabling telemetry in a QnA Maker enabled bot, see [Add telemetry to your QnA Maker bot](../v4sdk/bot-builder-telemetry-QnAMaker.md)
+We'll next implement telemetry functionality in your LUIS service. The LUIS service has built-in telemetry logging available so there's little you need to do to start getting telemetry data from LUIS. If you're interested in enabling telemetry in a QnA Maker enabled bot, see [Add telemetry to your QnA Maker bot](../v4sdk/bot-builder-telemetry-QnAMaker.md)
 
 1. The _`IBotTelemetryClient telemetryClient`_ parameter is required in the `FlightBookingRecognizer` constructor in `FlightBookingRecognizer.cs`:
 
-    ```cs
+    ```csharp
     public FlightBookingRecognizer(IConfiguration configuration, IBotTelemetryClient telemetryClient)
     ```
 
 1. Next, enable the `telemetryClient` when you create your `LuisRecognizer` in the `FlightBookingRecognizer` constructor. Do this by adding the `telemetryClient` as a new _LuisRecognizerOption_:
 
-    ```cs
+    ```csharp
     if (luisIsConfigured)
     {
         var luisApplication = new LuisApplication(
@@ -326,7 +326,7 @@ We will next implement telemetry functionality in your LUIS service. The LUIS se
     }
     ```
 
-That's it, you should have a functional bot that logs telemetry data into Application insights. You can use the [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md) to run your bot locally. You shouldn't see any changes in the bot's behavior, but it will be logging information into Application Insights. Interact with the bot by sending multiple messages and in the next section we will review the telemetry results in Application Insights.
+That's it, you should have a functional bot that logs telemetry data into Application insights. You can use the [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md) to run your bot locally. You shouldn't see any changes in the bot's behavior, but it will be logging information into Application Insights. Interact with the bot by sending multiple messages and in the next section we'll review the telemetry results in Application Insights.
 
 For information on testing and debugging your bot, you can refer to the following articles:
 
@@ -336,7 +336,7 @@ For information on testing and debugging your bot, you can refer to the followin
 
 # [JavaScript](#tab/javascript)
 
-We will next implement telemetry functionality in your LUIS service. The LUIS service has built-in telemetry logging available so there's little you need to do to start getting telemetry data from LUIS.
+We'll next implement telemetry functionality in your LUIS service. The LUIS service has built-in telemetry logging available so there's little you need to do to start getting telemetry data from LUIS.
 
 To enable the telemetry client in your LUIS recognizer:
 
@@ -366,7 +366,7 @@ For information on testing and debugging your bot, you can refer to the followin
 
 ## Visualizing your telemetry data in Application Insights
 
-Application Insights monitors the availability, performance, and usage of your bot application whether it's hosted in the cloud or on-premises. It leverages the powerful data analysis platform in Azure Monitor to provide you with deep insights into your application's operations and diagnose errors without waiting for a user to report them. There are a few ways to see the telemetry data collected by Application Insights, two of the primary ways are through queries and the dashboard.
+Application Insights monitors the availability, performance, and usage of your bot application whether it's hosted in the cloud or on-premises. It uses the powerful data analysis platform in Azure Monitor to provide you with deep insights into your application's operations and diagnose errors without waiting for a user to report them. There are a few ways to see the telemetry data collected by Application Insights, two of the primary ways are through queries and the dashboard.
 
 ### Querying your telemetry data in Application Insights using Kusto Queries
 
@@ -375,10 +375,10 @@ Use this section as a starting point to learn how to use log queries in Applicat
 To query your data
 
 1. Go to the [Azure portal](https://portal.azure.com)
-1. Navigate to your Application Insights. Easiest way to do so is click on **Monitor > Applications** and find it there.
-1. Once in your Application Insights, you can click on _Logs (Analytics)_ on the navigation bar.
+1. To go to your Application Insights page, select **Monitor**, then **Applications**, and find it there.
+1. Once in your Application Insights, select **Logs (Analytics)**.
 
-    ![Logs (Analytics) LogView](media/AppInsights-LogView.png)
+    :::image type="content" source="media/AppInsights-LogView.png" alt-text="Screenshot with the Logs (Analytics) button on the Application Insights page of a bot.":::
 
 1. This will bring up the Query window.  Enter the following query and select _Run_:
 
@@ -391,23 +391,22 @@ To query your data
     | summarize starts=countif(name=='WaterfallStart'), completes=countif(name1=='WaterfallComplete') by bin(timestamp, 1d), tostring(DialogId)
     | project Percentage=max_of(0.0, completes * 1.0 / starts), timestamp, tostring(DialogId)
     | render timechart
-
     ```
 
 1. This will return the percentage of waterfall dialogs that run to completion.
 
-    ![App Insights Query Percent Complete](media/AppInsights-Query-PercentCompleteDialog.png)
+    :::image type="content" source="media/AppInsights-Query-PercentCompleteDialog.png" alt-text="Sample output of the App Insights query.":::
 
 > [!TIP]
-> You can pin any query to your Application Insights dashboard   by selecting the button on the top right of the **Logs (Analytics)** blade. Just select the dashboard you want it pinned to, and it will be available next time you visit that dashboard.
+> You can pin any query to your Application Insights dashboard by selecting the button on the top right of the **Logs (Analytics)** blade. Just select the dashboard you want it pinned to, and it will be available next time you visit that dashboard.
 
 ## The Application Insights dashboard
 
 Anytime you create an Application Insights resource in Azure, a new dashboard will automatically be created and associated with it.  You can see that dashboard by selecting the button at the top of your Application Insights blade, labeled **Application Dashboard**.
 
-![Application Dashboard Link](media/Application-Dashboard-Link.png)
+:::image type="content" source="media/Application-Dashboard-Link.png" alt-text="Screenshot with the Application Dashboard button on the Application Insights page of a bot.":::
 
-Alternatively, to view the data, go to the Azure portal. Click **Dashboard** on the left, then select the dashboard you want from the drop-down.
+Alternatively, to view the data, go to the Azure portal. Select **Dashboard** on the left, then select the dashboard you want from the drop-down.
 
 There, you'll see some default information about your bot performance and any additional queries that you've pinned to your dashboard.
 

@@ -43,19 +43,19 @@ This article focuses on how to use a dialog within a skill bot to manage multipl
 
 ### [C#](#tab/cs)
 
-![C# skill class diagram](./media/skill-dialog/dialog-skill-bot-cs.png)
+:::image type="content" source="./media/skill-dialog/dialog-skill-bot-cs.png" alt-text="C# class diagram.":::
 
 ### [JavaScript](#tab/js)
 
-![JavaScript skill class diagram](./media/skill-dialog/dialog-skill-bot-js.png)
+:::image type="content" source="./media/skill-dialog/dialog-skill-bot-js.png" alt-text="JavaScript class diagram.":::
 
 ### [Java](#tab/java)
 
-![Java skill class diagram](./media/skill-dialog/dialog-skill-bot-java.png)
+:::image type="content" source="./media/skill-dialog/dialog-skill-bot-java.png" alt-text="Java class diagram.":::
 
 ### [Python](#tab/python)
 
-![Python skill class diagram](./media/skill-dialog/dialog-skill-bot-py.png)
+:::image type="content" source="./media/skill-dialog/dialog-skill-bot-py.png" alt-text="Python class diagram.":::
 
 ---
 

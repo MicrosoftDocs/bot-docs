@@ -40,7 +40,7 @@ The skills feature is designed so that:
 
 This diagram shows some of the possible permutations.
 
-![Block diagram](./media/skills-block-diagram.png)
+:::image type="content" source="./media/skills-block-diagram.png" alt-text="Illustration of permutations between skill consumers and skills.":::
 
 ## Conceptual architecture
 
@@ -53,7 +53,7 @@ A skill and skill consumer are separate bots, and you publish them independently
 
 This diagram outlines the flow of activities from the user to the root bot to a skill and back again.
 
-![Architecture diagram](./media/skills-conceptual-architecture.png)
+:::image type="content" source="./media/skills-conceptual-architecture.png" alt-text="Illustration of how activities flow from the user to the skill and back again.":::
 
 1. The root bot's adapter receives activities from the user and forwards them to the root bot's activity handler.
    (Activities from the user are received at the root bot's messaging endpoint.)

@@ -48,19 +48,19 @@ This article focuses on the skill, which includes support logic in its bot and a
 
 ### [C#](#tab/cs)
 
-![Skill C# class diagram](./media/skills-simple-skill-cs.png)
+:::image type="content" source="./media/skills-simple-skill-cs.png" alt-text="Skill C# class diagram.":::
 
 ### [JavaScript](#tab/javascript)
 
-![Skill JavaScript class diagram](./media/skills-simple-skill-js.png)
+:::image type="content" source="./media/skills-simple-skill-js.png" alt-text="Skill JavaScript class diagram.":::
 
 ### [Java](#tab/java)
 
-![Skill Java class diagram](./media/skills-simple-skill-java.png)
+:::image type="content" source="./media/skills-simple-skill-java.png" alt-text="Skill Java class diagram.":::
 
 ### [Python](#tab/python)
 
-![Skill Python class diagram](./media/skills-simple-skill-python.png)
+:::image type="content" source="./media/skills-simple-skill-python.png" alt-text="Skill Python class diagram.":::
 
 ---
 
@@ -333,7 +333,7 @@ Download and install the latest [Bot Framework Emulator](https://github.com/micr
 1. Run the echo skill bot locally on your machine. If you need instructions, refer to the `README` file for the [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/80.skills-simple-bot-to-bot), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/java_springboot/80.skills-simple-bot-to-bot), or [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/80.skills-simple-bot-to-bot) sample.
 1. Use the Emulator to test the bot as shown below. When you send an "end" or "stop" message to the skill, it sends an `endOfConversation` activity in addition to the reply message. The skill sends the `endOfConversation` activity to indicate the skill has finished.
 
-![test the echo skill](media/skills-simple-skill-test.png)
+:::image type="content" source="media/skills-simple-skill-test.png" alt-text="Example transcript showing the end-of-conversation activity.":::
 
 ### More about debugging
 
