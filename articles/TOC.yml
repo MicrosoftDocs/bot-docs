@@ -254,7 +254,7 @@
             href: dl-network-isolation-how-to.md
       - name: Alexa
         href: bot-service-channel-connect-alexa.md
-      - name: Azure Communication Services (preview)
+      - name: Azure Communication Services Chat (preview)
         href: bot-service-channel-azure-communication.md
       - name: Email
         href: bot-service-channel-connect-email.md
