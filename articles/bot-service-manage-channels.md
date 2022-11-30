@@ -41,7 +41,7 @@ The connection steps are different for each channel. See the related article in 
 | Channel | Description |
 |:-|:-|
 | [Alexa](bot-service-channel-connect-alexa.md) <img width="150px"/> | Communicate with users via Alexa custom skills. |
-| [Azure Communication Services (preview)](bot-service-channel-azure-communication.md) | Use Azure Communication Services to add a bot to the chat features of your website. |
+| [Azure Communication Services Chat (preview)](bot-service-channel-azure-communication.md) | Use Azure Communication Services Chat to add a bot to the chat features of your website. |
 | [Direct Line](bot-service-channel-directline.md) | Integrate a bot into a mobile app, web page, or other applications. |
 | [Email](bot-service-channel-connect-email.md) | Enable a bot to communicate with users via Microsoft 365 email. |
 | [Facebook](bot-service-channel-connect-facebook.md) | Connect a bot to both Facebook Messenger and Facebook Workplace, so that it can communicate with users on both platforms. |

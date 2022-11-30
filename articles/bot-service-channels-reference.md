@@ -39,24 +39,24 @@ Within the table, the following terms have the following meanings.
 | No           | The bot can't receive this activity from the channel. |
 | Undetermined | Currently undetermined.                               |
 
-| Channel                                | Contact relation update | Conversation update | End of conversation | Event        | Installation update | Invoke | Message | Message reaction | Message update | Message delete | Typing |
-|:---------------------------------------|:------------------------|:--------------------|:--------------------|:-------------|:--------------------|:-------|:--------|:-----------------|:---------------|:---------------|:-------|
-| Alexa                                  | No                      | No                  | Yes                 | Yes          | No                  | No     | Yes     | No               | No             | No             | No     |
-| Azure Communication Services (preview) | No                      | Yes                 | No                  | Yes          | No                  | No     | Yes     | No               | Yes            | Yes            | Yes    |
-| Direct Line                            | No                      | Yes                 | Yes                 | Yes          | Yes                 | No     | Yes     | No               | No             | No             | Yes    |
-| Direct Line Speech                     |                         |                     |                     |              |                     |        | Yes     |                  |                |                |        |
-| Email                                  | No                      | No                  | No                  | Undetermined | No                  | No     | Yes     | No               | No             | No             | No     |
-| Facebook                               | No                      | Yes                 | No                  | Yes          | No                  | No     | Yes     | Yes              | No             | No             | No     |
-| GroupMe                                | No                      | Yes                 | No                  | Undetermined | No                  | No     | Yes     | No               | No             | No             | No     |
-| LINE                                   | No                      | Yes                 | No                  | Yes          | No                  | No     | Yes     | No               | No             | No             | No     |
-| Microsoft Teams                        | No                      | Yes                 | No                  | Undetermined | No                  | Yes    | Yes     | Yes              | Yes            | Yes            | No     |
-| Omnichannel                            |                         |                     |                     |              |                     |        | Yes     |                  |                |                |        |
-| Outlook (preview)                      |                         |                     |                     |              |                     |        | Yes     |                  |                |                |        |
-| Search (preview)                       |                         |                     |                     |              |                     |        | Yes     |                  |                |                |        |
-| Slack                                  | No                      | Yes                 | No                  | Undetermined | No                  | No     | Yes     | No               | Yes            | Yes            | No     |
-| Telegram                               | No                      | Yes                 | No                  | Undetermined | No                  | No     | Yes     | No               | Yes            | Undetermined   | No     |
-| Twilio (SMS)                           | No                      | No                  | No                  | Undetermined | No                  | No     | Yes     | No               | No             | No             | No     |
-| Web Chat                               | No                      | Yes                 | Yes                 | Yes          | Yes                 | No     | Yes     | No               | No             | No             | Yes    |
+| Channel                                     | Contact relation update | Conversation update | End of conversation | Event        | Installation update | Invoke | Message | Message reaction | Message update | Message delete | Typing |
+|:--------------------------------------------|:------------------------|:--------------------|:--------------------|:-------------|:--------------------|:-------|:--------|:-----------------|:---------------|:---------------|:-------|
+| Alexa                                       | No                      | No                  | Yes                 | Yes          | No                  | No     | Yes     | No               | No             | No             | No     |
+| Azure Communication Services Chat (preview) | No                      | Yes                 | No                  | Yes          | No                  | No     | Yes     | No               | Yes            | Yes            | Yes    |
+| Direct Line                                 | No                      | Yes                 | Yes                 | Yes          | Yes                 | No     | Yes     | No               | No             | No             | Yes    |
+| Direct Line Speech                          |                         |                     |                     |              |                     |        | Yes     |                  |                |                |        |
+| Email                                       | No                      | No                  | No                  | Undetermined | No                  | No     | Yes     | No               | No             | No             | No     |
+| Facebook                                    | No                      | Yes                 | No                  | Yes          | No                  | No     | Yes     | Yes              | No             | No             | No     |
+| GroupMe                                     | No                      | Yes                 | No                  | Undetermined | No                  | No     | Yes     | No               | No             | No             | No     |
+| LINE                                        | No                      | Yes                 | No                  | Yes          | No                  | No     | Yes     | No               | No             | No             | No     |
+| Microsoft Teams                             | No                      | Yes                 | No                  | Undetermined | No                  | Yes    | Yes     | Yes              | Yes            | Yes            | No     |
+| Omnichannel                                 |                         |                     |                     |              |                     |        | Yes     |                  |                |                |        |
+| Outlook (preview)                           |                         |                     |                     |              |                     |        | Yes     |                  |                |                |        |
+| Search (preview)                            |                         |                     |                     |              |                     |        | Yes     |                  |                |                |        |
+| Slack                                       | No                      | Yes                 | No                  | Undetermined | No                  | No     | Yes     | No               | Yes            | Yes            | No     |
+| Telegram                                    | No                      | Yes                 | No                  | Undetermined | No                  | No     | Yes     | No               | Yes            | Undetermined   | No     |
+| Twilio (SMS)                                | No                      | No                  | No                  | Undetermined | No                  | No     | Yes     | No               | No             | No             | No     |
+| Web Chat                                    | No                      | Yes                 | Yes                 | Yes          | Yes                 | No     | Yes     | No               | No             | No             | Yes    |
 
 Support for `event` and `invoke` activities varies by the activity's name and varies by channel.
 
@@ -76,22 +76,22 @@ Within the table, the following terms have the following meanings.
 | Image   | Card is converted to image.                                                                                                                                          |
 | Text    | Card is converted to unformatted text. Links may not be clickable, images may not display, and media may not be playable. Level of support varies by channel.        |
 
-| Channel                                | Adaptive Card  | Animation card | Audio card | Hero card | Receipt card | Sign-in card | Thumbnail card | Video card |
-|:---------------------------------------|:---------------|:---------------|:-----------|:----------|:-------------|:-------------|:---------------|:-----------|
-| Alexa                                  | No             | No             | No         | Yes       | No           | Yes          | No             | No         |
-| Azure Communication Services (preview) | Yes            | Yes            | Yes        | Yes       | Yes          | Yes          | Yes            | Yes        |
-| Email                                  | Image          | Text           | Text       | Yes       | Yes          | Yes          | Yes            | Text       |
-| Facebook                               | Image, partial | Yes            | Yes        | Yes       | Yes          | Yes          | Yes            | Yes        |
-| GroupMe                                | Image          | Text           | Text       | Text      | Text         | Text         | Text           | Text       |
-| LINE                                   | Image, partial | Yes            | Text       | Yes       | Yes          | Yes          | Yes            | Text       |
-| Microsoft Teams                        | Yes            | No             | No         | Yes       | Yes          | Yes          | Yes            | No         |
-| Omnichannel                            |                |                |            |           |              |              |                |            |
-| Outlook (preview)                      |                |                |            |           |              |              |                |            |
-| Search (preview)                       |                |                |            |           |              |              |                |            |
-| Slack                                  | Image          | Yes            | Text       | Text      | Yes          | Yes          | Text           | Text       |
-| Telegram                               | Image, partial | Yes            | Text       | Yes       | Yes          | Yes          | Yes            | Yes        |
-| Twilio (SMS)                           | Image          | Text           | No         | Text      | Text         | Text         | Text           | No         |
-| Web Chat                               | Yes            | Yes            | Yes        | Yes       | Yes          | Yes          | Yes            | Yes        |
+| Channel                                     | Adaptive Card  | Animation card | Audio card | Hero card | Receipt card | Sign-in card | Thumbnail card | Video card |
+|:--------------------------------------------|:---------------|:---------------|:-----------|:----------|:-------------|:-------------|:---------------|:-----------|
+| Alexa                                       | No             | No             | No         | Yes       | No           | Yes          | No             | No         |
+| Azure Communication Services Chat (preview) | Yes            | Yes            | Yes        | Yes       | Yes          | Yes          | Yes            | Yes        |
+| Email                                       | Image          | Text           | Text       | Yes       | Yes          | Yes          | Yes            | Text       |
+| Facebook                                    | Image, partial | Yes            | Yes        | Yes       | Yes          | Yes          | Yes            | Yes        |
+| GroupMe                                     | Image          | Text           | Text       | Text      | Text         | Text         | Text           | Text       |
+| LINE                                        | Image, partial | Yes            | Text       | Yes       | Yes          | Yes          | Yes            | Text       |
+| Microsoft Teams                             | Yes            | No             | No         | Yes       | Yes          | Yes          | Yes            | No         |
+| Omnichannel                                 |                |                |            |           |              |              |                |            |
+| Outlook (preview)                           |                |                |            |           |              |              |                |            |
+| Search (preview)                            |                |                |            |           |              |              |                |            |
+| Slack                                       | Image          | Yes            | Text       | Text      | Yes          | Yes          | Text           | Text       |
+| Telegram                                    | Image, partial | Yes            | Text       | Yes       | Yes          | Yes          | Yes            | Yes        |
+| Twilio (SMS)                                | Image          | Text           | No         | Text      | Text         | Text         | Text           | No         |
+| Web Chat                                    | Yes            | Yes            | Yes        | Yes       | Yes          | Yes          | Yes            | Yes        |
 
 > [!NOTE]
 >
@@ -103,24 +103,24 @@ Within the table, the following terms have the following meanings.
 The following table shows the maximum number of suggested actions and card actions that a given channel supports.
 A value of "None" indicates that the action type isn't supported in the channel.
 
-| Channel                                | Suggested actions | Card actions |
-|:---------------------------------------|:-----------------:|:------------:|
-| Alexa                                  | None              | None         |
-| Azure Communication Services (preview) |                   |              |
-| Direct Line                            | 100               | 100          |
-| Direct Line Speech                     | 100               | 100          |
-| Email                                  | None              | None         |
-| Facebook                               | 11                | 3            |
-| GroupMe                                | None              | None         |
-| LINE                                   | 13                | 99           |
-| Microsoft Teams                        | None              | 3            |
-| Omnichannel                            |                   |              |
-| Outlook (preview)                      |                   |              |
-| Search (preview)                       |                   |              |
-| Slack                                  | None              | 100          |
-| Telegram                               | 100               | 100          |
-| Twilio (SMS)                           | None              | None         |
-| Web Chat                               | 100               | 100          |
+| Channel                                     | Suggested actions | Card actions |
+|:--------------------------------------------|:-----------------:|:------------:|
+| Alexa                                       | None              | None         |
+| Azure Communication Services Chat (preview) |                   |              |
+| Direct Line                                 | 100               | 100          |
+| Direct Line Speech                          | 100               | 100          |
+| Email                                       | None              | None         |
+| Facebook                                    | 11                | 3            |
+| GroupMe                                     | None              | None         |
+| LINE                                        | 13                | 99           |
+| Microsoft Teams                             | None              | 3            |
+| Omnichannel                                 |                   |              |
+| Outlook (preview)                           |                   |              |
+| Search (preview)                            |                   |              |
+| Slack                                       | None              | 100          |
+| Telegram                                    | 100               | 100          |
+| Twilio (SMS)                                | None              | None         |
+| Web Chat                                    | 100               | 100          |
 
 - For more information about card actions, see [Process events within rich cards](v4sdk/bot-builder-howto-add-media-attachments.md#process-events-within-rich-cards) in the _Add media to messages_ article.
 - For more information about suggested actions, see how to [Use buttons for input](v4sdk/bot-builder-howto-add-suggested-actions.md).
@@ -186,7 +186,7 @@ The `installationUpdate`, `typing`, and `handoff` activities don't meaningfully 
 
 - Installation update activities represent an installation or uninstallation of a bot within an organizational unit of a channel.
 - Typing activities represent ongoing input from a user or a bot.
-- Handoff activities are used to request or signal a change in focus between elements inside a bot, which is different from an event activity that has the name "handoff".
+- Handoff activities request or signal a change in focus between elements inside a bot. The _handoff_ activity is different from an _event_ activity that has the name "handoff".
 
 ### Out of use (includes payment specific invoke)
 

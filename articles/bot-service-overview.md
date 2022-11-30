@@ -9,7 +9,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: overview
-ms.date: 10/26/2022
+ms.date: 11/29/2022
 ms.custom: abs-meta-21q1
 ---
 
@@ -18,6 +18,9 @@ ms.custom: abs-meta-21q1
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
 Microsoft Bot Framework and Azure Bot Service are a collection of libraries, tools, and services that let you build, test, deploy, and manage intelligent bots. The Bot Framework includes a modular and extensible SDK for building bots and connecting to AI services. With this framework, developers can create bots that use speech, understand natural language, answer questions, and more.
+
+> [!TIP]
+> For a list of Microsoft products and services for building bots, who they support, and a brief description of each, see [Choose the right chatbot solution for your use case](/azure/bot-service/bot-overview).
 
 ## What is a bot?
 
@@ -37,11 +40,11 @@ Your users connect to your bot through a channel, such as Facebook, Slack, Micro
 
 Bots are often implemented as a web application, hosted in Azure and using APIs to send and receive messages.
 What's in a bot varies widely depending on what kind of bot it is and what its purpose is.
-A simple bot can receive a messages and echo them back to the user, with very little code involved.
+A bot can receive messages and echo them back to the user, with little code involved.
 A more complex bot can rely on various tools and services to deliver richer experiences on a wide variety of platforms.
 
 Bots can do the same things other types of software can do&mdash;read from and write to files, use databases and APIs, and do the regular computational tasks.
-What makes bots unique is their use of mechanisms generally reserved for human-to-human communication.
+What makes bots unique is their use of mechanisms used in human-to-human communication.
 
 Azure Bot Service and the Bot Framework include:
 
@@ -59,7 +62,7 @@ Additionally, bots may use other Azure services, such as:
 ## How to build a bot
 
 Azure Bot Service and Microsoft Bot Framework offer an integrated set of tools and services to help you design and build bots, through all stages of the bot life cycle.
-SDKs exist for C#, Java, JavaScript, Typescript, and Python.
+SDKs exist for C#, Java, JavaScript, TypeScript, and Python.
 Choose your favorite development environment or command line tools to create your bot.
 
 :::image type="content" source="media/bot-service-overview.png" alt-text="Illustration of the steps in the bot life cycle.":::
@@ -93,7 +96,7 @@ The samples demonstrate many capabilities of the SDK.
 
 ### Test
 
-Bots are complex apps with a lot of different parts working together. Like any other complex app, this can lead to some interesting bugs or cause your bot to behave differently than expected. Before publishing, test your bot. We provide several ways to test bots before they're released for use:
+Bots are complex apps with many different parts working together. Like any other complex app, this can lead to some interesting bugs or cause your bot to behave differently than expected. Before publishing, test your bot. We provide several ways to test bots before they're released for use:
 
 - Test your bot locally with the [Bot Framework Emulator](bot-service-debug-emulator.md). The Bot Framework Emulator is a stand-alone app that not only provides a chat interface but also debugging and interrogation tools to help understand how and why your bot does what it does. The Emulator can be run locally alongside your in-development bot application.
 
