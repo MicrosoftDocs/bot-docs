@@ -140,6 +140,8 @@
       items:
       - name: Add natural language understanding to your bot
         href: v4sdk/bot-builder-howto-v4-luis.md
+      - name: Answer questions with custom question answering
+        href: bot-builder-howto-answer-questions.md
       - name: Answer user's questions using QnA Maker
         href: v4sdk/bot-builder-howto-qna.md
       - name: Use Orchestrator for intent resolution
