@@ -94,7 +94,7 @@ In **CustomQABot.js**, in the constructor, create a knowledge base client. In th
 
 ## Test the bot
 
-Run the sample locally on your machine. If you haven't done so already, install the [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md#download). For further instructions, refer to the sample's `README` ([C#][CS readme], [JavaScript][JS readme].
+Run the sample locally on your machine. If you haven't done so already, install the [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md#download). For further instructions, refer to the sample's `README` ([C#][CS readme] or [JavaScript][JS readme]).
 
 Start the Emulator, connect to your bot, and send messages to your bot. The responses to your questions will vary, based on the information your knowledge base.
 
