@@ -13,9 +13,9 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Use question answering to answer questions
 
-[!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
+[!INCLUDE [applies-to-v4](./includes/applies-to-v4-current.md)]
 
-The [question answering](bot-builder-concept-luis.md#question-answering) feature of Azure Cognitive Service for Language provides cloud-based natural language processing (NLP) that allows you to create a natural conversational layer over your data. It's used to find the most appropriate answer for any input from your custom knowledge base of information.
+The [question answering](v4sdk/bot-builder-concept-luis.md#question-answering) feature of Azure Cognitive Service for Language provides cloud-based natural language processing (NLP) that allows you to create a natural conversational layer over your data. It's used to find the most appropriate answer for any input from your custom knowledge base of information.
 
 This article describes how to add question answering to your bot.
 
