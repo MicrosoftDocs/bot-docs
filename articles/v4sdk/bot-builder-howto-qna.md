@@ -26,7 +26,7 @@ One of the basic requirements in creating your own QnA Maker service is to popul
 
 This article describes how to use an _existing_ QnA Maker knowledge base from your bot.
 
-For new bots, consider using the [question answering](bot-builder-concept-luis.md#question-answering) feature of Azure Cognitive Service for Language.
+For new bots, consider using the [question answering](bot-builder-concept-luis.md#question-answering) feature of Azure Cognitive Service for Language. For information, see [Use question answering to answer questions](../bot-builder-howto-answer-questions.md).
 
 [!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
 

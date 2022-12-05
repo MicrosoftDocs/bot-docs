@@ -17,7 +17,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 The [question answering](v4sdk/bot-builder-concept-luis.md#question-answering) feature of Azure Cognitive Service for Language provides cloud-based natural language processing (NLP) that allows you to create a natural conversational layer over your data. It's used to find the most appropriate answer for any input from your custom knowledge base of information.
 
-This article describes how to add question answering to your bot.
+This article describes how to use the question answering feature in your bot.
 
 ## Prerequisites
 
@@ -32,34 +32,34 @@ This article describes how to add question answering to your bot.
 
 To use question answering in your bot, you need an existing knowledge base. Your bot then can use the knowledge base to answer the user's questions.
 
-If you need to create a new knowledge base for a Bot Framework SDK bot, see the README for the sample.
+If you need to create a new knowledge base for a Bot Framework SDK bot, see the README for the custom question answering sample.
 
 ## [C#](#tab/cs)
 
 :::image type="content" source="./media/bot-builder-howto-answer-questions/flow-diagram-cs.png" alt-text="C# question answering bot logic flow.":::
 
-`OnMessageActivityAsync` is called for each user input received. When called, it accesses configuration settings from the sample code's **appsetting.json** file to find the value to connect to your knowledge base.
+`OnMessageActivityAsync` is called for each user input received. When called, it accesses configuration settings from the sample code's **appsetting.json** file and connects to your knowledge base.
 
 ## [JavaScript](#tab/js)
 
 :::image type="content" source="./media/bot-builder-howto-answer-questions/flow-diagram-js.png" alt-text="JavaScript question answering bot logic flow.":::
 
-`OnMessage` is called for each user input received. When called, it accesses configuration settings from your sample code's **.env** file to find the value to connect to your knowledge base.
+`OnMessage` is called for each user input received. When called, it accesses configuration settings from your sample code's **.env** file and connects to your knowledge base.
 
 ---
 
 The user's input is sent to your knowledge base and the best returned answer is displayed back to your user.
 
-## Obtain values to connect your bot to the knowledge base
+## Get your knowledge base connection settings
 
 1. In [Language Studio](https://language.cognitive.azure.com/), open you language resource.
 1. Copy the following information to your bot's configuration file:
 
-    - The host name for your language endpoint
-    - The `Ocp-Apim-Subscription-Key`, which is your endpoint key
-    - The project name, which acts as your knowledge base ID
+    - The host name for your language endpoint.
+    - The `Ocp-Apim-Subscription-Key`, which is your endpoint key.
+    - The project name, which acts as your knowledge base ID.
 
-Your host name is the part of the endpoint URL between `https://` and `/language`, such as `https://<hostname>/language`. Your bot needs the project name, host URL, and endpoint key to connect to your knowledge base.
+Your host name is the part of the endpoint URL between `https://` and `/language`, for example, `https://<hostname>/language`. Your bot needs the project name, host URL, and endpoint key to connect to your knowledge base.
 
 > [!TIP]
 > If you aren't deploying this for production, you can leave your bot's app ID and password fields blank.

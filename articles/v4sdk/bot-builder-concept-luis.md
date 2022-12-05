@@ -104,8 +104,8 @@ To use question answering in your bot, create and deploy a question answering pr
 
 For more information, see:
 
+- [Use question answering to answer questions](../bot-builder-howto-answer-questions.md)
 - [What is question answering?](/azure/cognitive-services/language-service/question-answering/overview)
-- _QnA Maker client_ interface reference for [C#/.NET](/dotnet/api/microsoft.bot.builder.ai.qna.iqnamakerclient) or [JavaScript/node.js](/javascript/api/botbuilder-ai/qnamakerclient)
 - The introduction to the [Azure Cognitive Language Services Question Answering client library for .NET](/dotnet/api/overview/azure/ai.language.questionanswering-readme-pre)
 
 ### QnA Maker
