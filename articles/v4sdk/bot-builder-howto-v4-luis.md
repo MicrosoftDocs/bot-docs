@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 10/26/2022
+ms.date: 12/07/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -133,9 +133,11 @@ The settings file (`appsettings.json`, `.env` or `config.py`) acts as the place 
 
      :::image type="content" source="./media/how-to-luis/manage-luis-app-app-info.png" alt-text="Screenshot of the Manage page displaying your application ID." lightbox="./media/how-to-luis/manage-luis-app-app-info.png":::
 
-1. Select the **Azure Resources** tab on the left side and select the **Authoring Resource** group. Record the value shown for _Location_ as \<YOUR_REGION> and _Primary Key_ as \<YOUR_AUTHORING_KEY>.
+1. Select the **Azure Resources**, then **Prediction Resource**. Record the value shown for _Location_ as \<YOUR_REGION> and _Primary Key_ as \<YOUR_AUTHORING_KEY>.
 
      :::image type="content" source="./media/how-to-luis/manage-luis-app-azure-resources.png" alt-text="Screenshot of the Manage page displaying your location and primary key." lightbox="./media/how-to-luis/manage-luis-app-azure-resources.png":::
+
+     Alternatively, you can use the region and primary key for your authoring resource.
 
 ### Update the settings file
 
