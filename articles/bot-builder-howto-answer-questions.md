@@ -52,7 +52,7 @@ The user's input is sent to your knowledge base and the best returned answer is 
 
 ## Get your knowledge base connection settings
 
-1. In [Language Studio](https://language.cognitive.azure.com/), open you language resource.
+1. In [Language Studio](https://language.cognitive.azure.com/), open your language resource.
 1. Copy the following information to your bot's configuration file:
 
     - The host name for your language endpoint.
