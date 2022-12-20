@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 03/30/2022
+ms.date: 12/20/2022
 ---
 
 # Connect a bot to Microsoft Teams
@@ -55,7 +55,12 @@ Bots in production should be added to Teams as part of a Teams app. For more inf
 
 ## Publish your bot in Teams
 
-For instructions on how to publish your app, see [Distribute your Microsoft Teams app](/microsoftteams/platform/concepts/deploy-and-publish/apps-publish-overview).
+For instructions on how to publish your app, see the Teams overview of how to [Distribute your Microsoft Teams app](/microsoftteams/platform/concepts/deploy-and-publish/apps-publish-overview). It and the associated articles cover how to:
+
+- Choose and configure install options for your bot
+- Create your Teams app manifest, icon, and package
+- Upload your app to Teams
+- Publish your app to your org or to the Teams store
 
 ## Additional information
 
