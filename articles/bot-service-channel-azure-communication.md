@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 11/22/2022
+ms.date: 01/04/2023
 ms.custom: template-how-to
 ---
 
@@ -23,7 +23,7 @@ Retail websites, product websites, and applications often include a chat bubble 
 - Knowledge of the [Basics of the Bot Framework Service](v4sdk/bot-builder-basics.md) and how to [Create a bot with the Bot Framework SDK](bot-service-quickstart-create-bot.md).
 - A published bot that you want to connect to the channel.
 - An Azure account with a current subscription. If you don't have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
-- An Azure Communication Services resource. If you don't have one, see [Create your Azure Communication Services resource](/azure/communication-services/quickstarts/).
+- An Azure Communication Services resource. If you don't have one, see [Create a Azure Communication Services resource](/azure/communication-services/quickstarts/create-communication-resource).
 - .NET 6.0 or later.
 - Visual Studio 2022 or later.
 

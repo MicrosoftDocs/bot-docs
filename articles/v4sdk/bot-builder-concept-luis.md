@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 10/10/2022
+ms.date: 01/04/2023
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -69,7 +69,7 @@ For more information, see:
 
 - [What is conversational language understanding?](/azure/cognitive-services/language-service/conversational-language-understanding/overview)
 - _Telemetry recognizer_ interface reference for [C#/.NET](/dotnet/api/microsoft.bot.builder.ai.luis.itelemetryrecognizer) or [JavaScript/node.js](/javascript/api/botbuilder-ai/luisrecognizertelemetryclient)
-- The introduction to the [Azure Cognitive Language Services Conversations client library for .NET](/dotnet/api/overview/azure/ai.language.conversations-readme-pre)
+- [Azure Cognitive Language Services Conversations client library for .NET](/dotnet/api/overview/azure/ai.language.conversations-readme)
 
 ### Language Understanding (LUIS)
 
@@ -106,7 +106,7 @@ For more information, see:
 
 - [What is question answering?](/azure/cognitive-services/language-service/question-answering/overview)
 - _QnA Maker client_ interface reference for [C#/.NET](/dotnet/api/microsoft.bot.builder.ai.qna.iqnamakerclient) or [JavaScript/node.js](/javascript/api/botbuilder-ai/qnamakerclient)
-- The introduction to the [Azure Cognitive Language Services Question Answering client library for .NET](/dotnet/api/overview/azure/ai.language.questionanswering-readme-pre)
+- [Azure Cognitive Language Services Question Answering client library for .NET](/dotnet/api/overview/azure/ai.language.questionanswering-readme)
 
 ### QnA Maker
 
@@ -165,7 +165,7 @@ To use the orchestration workflow in your bot, create an orchestration workflow 
 For more information, see:
 
 - [What is orchestration workflow?](/azure/cognitive-services/language-service/orchestration-workflow/overview)
-- The introduction to the [Azure Cognitive Language Services Conversations client library for .NET](/dotnet/api/overview/azure/ai.language.conversations-readme-pre)
+- [Azure Cognitive Language Services Conversations client library for .NET](/dotnet/api/overview/azure/ai.language.conversations-readme)
 
 ### Orchestrator
 
