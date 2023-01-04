@@ -150,7 +150,7 @@ See [Outlook Actionable Messages](#outlook-actionable-messages)
 - **Definition**:
   - "Adaptive Cards are an open card exchange format enabling developers to exchange UI content in a common and consistent way."
   - "An Adaptive Card is a JSON-serialized card object model."
-- **Notes**: _Adaptive Cards_ (plural) is the official name of the format. _Adative Card_ (singular) refers to a JSON object in that format or a rendering of such a card.
+- **Notes**: _Adaptive Cards_ (plural) is the official name of the format. _Adaptive Card_ (singular) refers to a JSON object in that format or a rendering of such a card.
 - **See**: [Adaptive Cards](https://learn.microsoft.com/adaptive-cards) docs.
 - **See also**: [card](#card).
 
