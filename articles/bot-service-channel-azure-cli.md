@@ -15,7 +15,7 @@ ms.custom: devx-track-azurecli
 
 A channel is a connection between a communication application and a bot. A bot, registered with Azure, uses channels to enable communication with users. The commands in this article connect a bot to various channels. For more information, see [Connect a bot to channels](bot-service-manage-channels.md).
 
-[!INCLUDE [Prepare your Azure CLI environment](includes/azure-cli-prepare-your-environment.md)]
+[!INCLUDE [include](~/../articles/reusable-content/azure-cli/azure-cli-prepare-your-environment.md)]
 
 - A bot deployed to Azure. If you don't have one yet, see [Tutorial: Provision a bot in Azure](tutorial-provision-a-bot.md) and [Tutorial: Publish a basic bot](tutorial-publish-a-bot.md).
 
