@@ -212,6 +212,8 @@
       href: bot-service-manage-overview.md
     - name: Register a bot with Azure
       href: bot-service-quickstart-registration.md
+    - name: Reliability guidance
+      href: bot-service-reliability-guidance.md
     - name: Configure bot settings
       displayName: endpoint, icon
       href: bot-service-manage-settings.md

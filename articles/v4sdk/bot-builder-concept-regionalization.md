@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: conceptual
-ms.date: 09/01/2022
+ms.date: 01/11/2023
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -32,6 +32,8 @@ When you create a bot in Azure, you can set its region to maintain data complian
 >[!NOTE]
 > Bot data may go beyond geographical boundaries as bot end-to-end scenarios may depend on many services.
 > The regional Azure Bot service only supports data in Azure Bot services. Other Azure services&mdash;such as Azure Cognitive Services&mdash;and third-party channels may not align with compliance obligation and run the risk of data leaving the geographical region.  
+
+For guidance about reliability support in Azure Bot Service, see [What is reliability in Azure Bot Service](/azure/reliability/reliability-bot).
 
 ## Add authentication to a regional Azure bot
 
