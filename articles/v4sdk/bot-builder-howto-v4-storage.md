@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 10/26/2022
+ms.date: 01/27/2023
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -529,13 +529,13 @@ require('dotenv').config({ path: ENV_FILE });
 
 Next, you'll need to make changes to **index.js** to use Cosmos DB partitioned storage instead of the Bot Frameworks internal storage. All the code changes in this section are made in **index.js**.
 
-First, add a reference to `botbuilder-azure` in **index.js**. This will give you access to the `BlobStorage` API:
+First, add a reference to **botbuilder-azure** in **index.js**. This will give you access to the `CosmosDbPartitionedStorage` class.
 
 ```javascript
 const { CosmosDbPartitionedStorage } = require('botbuilder-azure');
 ```
 
-Next, create the new `CosmosDbPartitionedStorage` object:
+Next, create a new `CosmosDbPartitionedStorage` object.
 
 ```javascript
 const myStorage = new CosmosDbPartitionedStorage({
@@ -719,7 +719,7 @@ Install the **Microsoft.Bot.Builder.Azure.Blobs** NuGet package. For more inform
 
 ### [JavaScript](#tab/javascript)
 
-Add references to botbuilder-azure in your project via npm.
+Add references to `botbuilder-azure-blobs` in your project via npm.
 
 > [!NOTE]
 > This npm package relies on an installation of Python existing on your development machine. If you've not previously installed Python you can find installation resources for your machine at [Python.org](https://www.python.org/downloads/)
@@ -819,19 +819,19 @@ require('dotenv').config({ path: ENV_FILE });
 
 Next, you'll need to make changes use Blob storage instead of the Bot Frameworks internal storage.
 
-Next, add a reference to `botbuilder-azure`. This will give you access to the Blob Storage API:
+Next, add a reference to `botbuilder-azure-blobs`. This will give you access to the Blob Storage API:
 
 ```javascript
-const { BlobStorage } = require("botbuilder-azure");
+const { BlobsStorage } = require("botbuilder-azure-blobs");
 ```
 
-Now you can modify your code to use `BlobStorage` by modifying your `myStorage` declaration as follows:
+To modify your code to use the `BlobsStorage` class, modify your `myStorage` declaration as follows:
 
 ```javascript
-const myStorage = new BlobStorage({
-    containerName: process.env.BlobContainerName,
-    storageAccountOrConnectionString: process.env.BlobConnectionString
-});
+const myStorage = new BlobsStorage(
+    process.env.BlobConnectionString,
+    process.env.BlobContainerName
+);
 ```
 
 Once your storage is set to point to your Blob Storage account, your bot code will now store and retrieve data from Blob storage.
