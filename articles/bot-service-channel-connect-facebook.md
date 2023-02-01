@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 01/11/2023
+ms.date: 01/31/2023
 ---
 
 # Connect a bot to Facebook
@@ -118,6 +118,12 @@ Go back to the Facebook settings to finish up the configuration process.
 
 ## Make your app public
 
+Until an app is published, it's in [Development Mode](https://developers.facebook.com/docs/apps/managing-development-cycle). Plugin and API functionality will only work for admins, developers, and testers.
+
+Only the creator (the Facebook Dev account that created the page and bot) can get a bot response. Normal Facebook users can't see the page or the bot. Give dev or test roles to target users, so they can also chat with bot.
+
+Users to be added to tester roles must first register on the Meta for Developers site. The tester role is not available to Facebook users that don't have a Meta for Developers account. For more information about app roles and test users, see the [Meta for Developers developer documentation](https://developers.facebook.com/docs/).
+
 ### Submit for review
 
 Facebook requires a Privacy Policy URL and Terms of Service URL on its basic app settings page. The [Code of Conduct](https://investor.fb.com/corporate-governance/code-of-conduct/default.aspx) page contains third party resource links to help create a privacy policy. The [Terms of Use](https://www.facebook.com/terms.php) page contains sample terms to help create an appropriate Terms of Service document.
@@ -125,9 +131,6 @@ Facebook requires a Privacy Policy URL and Terms of Service URL on its basic app
 After the bot is finished, Facebook has its own [review process](https://developers.facebook.com/docs/messenger-platform/app-review) for apps that are published to Messenger. The bot will be tested to ensure it's compliant with Facebook's [Platform Policies](https://developers.facebook.com/docs/messenger-platform/policy-overview).
 
 ### Make the app public and publish the Page
-
-> [!TIP]
-> Until an app is published, it's in [Development Mode](https://developers.facebook.com/docs/apps/managing-development-cycle). Plugin and API functionality will only work for admins, developers, and testers.
 
 After the review is successful, in the App Dashboard under App Review, set the app to Public. Ensure that the Facebook Page associated with this bot is published. Status appears in Pages settings.
 
@@ -146,14 +149,13 @@ Test the connection by following the steps described in the [Test your bot in Fa
 
 You can now test whether your bot is connected to Facebook correctly by sending a message via the Facebook Page you associated with your new Facebook app.
 
-1. Go to your Facebook Page.
-1. Select **Add a button**.
-1. On the **Edit action button** page, select **Send message**.
-    1. On the **Frequently asked questions** page, review the default question and answer, then select **Save**.
-    1. The site replaces the previous **Edit action button** with a new **Edit Send message** button.
-1. Select **Edit Send message** then select **Test button**.
-    1. The site displays your Page with the sample question as a suggested action.
-    1. Enter any message you want to test the connection to your bot.
+1. Go Facebook and switch to the profile for your page.
+1. Select more actions (**&hellip;**), then **Add Action Button**.
+    1. In the **Customize your action button** dialog, select **Try it** and follow the instructions.
+    1. On the **Action Button** page under **Get people to contact you**, select **Send Message**.
+    1. Select **Next**, complete the dialog and save your changes.
+1. Switch back to your personal profile.
+1. Go to your page, and select **Message** to test the connection to your bot.
 
 You can also test this feature using the [sample bot for the Facebook adapter](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/61.facebook-adapter) by populating the **appsettings.json** file with the same values described in the previous steps.
 
