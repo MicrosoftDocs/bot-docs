@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: reference
-ms.date: 01/13/2022
+ms.date: 02/07/2023
 ms.custom: abs-meta-21q1
 ---
 
@@ -21,6 +21,10 @@ Within the Bot Framework, the Bot Connector service enables your bot to exchange
 ## Base URI
 
 When a user sends a message to your bot, the incoming request contains an [Activity](#activity-object) object with a `serviceUrl` property that specifies the endpoint to which your bot should send its response. To access the Bot Connector service, use the `serviceUrl` value as the base URI for API requests.
+
+> [!TIP]
+> For the Teams channel in the public cloud, use `https://smba.trafficmanager.net/teams/` as the Direct Line base URI.
+> For more information, see [how to create a conversation and a proactive message in Teams](/microsoftteams/platform/bots/how-to/conversations/send-proactive-messages#create-the-conversation).
 
 For example, assume that your bot receives the following activity when the user sends a message to the bot.
 
