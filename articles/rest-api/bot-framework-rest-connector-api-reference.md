@@ -23,7 +23,7 @@ Within the Bot Framework, the Bot Connector service enables your bot to exchange
 When a user sends a message to your bot, the incoming request contains an [Activity](#activity-object) object with a `serviceUrl` property that specifies the endpoint to which your bot should send its response. To access the Bot Connector service, use the `serviceUrl` value as the base URI for API requests.
 
 > [!TIP]
-> For the Teams channel in the public cloud, use `https://smba.trafficmanager.net/teams/` as the Direct Line base URI.
+> For the Teams channel in the public cloud, use `https://smba.trafficmanager.net/teams/` as the service URL.
 > For more information, see [how to create a conversation and a proactive message in Teams](/microsoftteams/platform/bots/how-to/conversations/send-proactive-messages#create-the-conversation).
 
 For example, assume that your bot receives the following activity when the user sends a message to the bot.
@@ -51,7 +51,7 @@ For example, assume that your bot receives the following activity when the user 
 }
 ```
 
-The `serviceUrl` property within the user's message indicates that the bot should send its response to the endpoint `https://smba.trafficmanager.net/apis`; this will be the base URI for any subsequent requests that the bot issues in the context of this conversation. If your bot will need to send a proactive message to the user, be sure to save the value of `serviceUrl`.
+The `serviceUrl` property within the user's message indicates that the bot should send its response to the endpoint `https://smba.trafficmanager.net/apis`&mdash;or  `https://smba.trafficmanager.net/teams/apis` for the Teams channel. The service URL will be the base URI for any subsequent requests that the bot issues in the context of this conversation. If your bot will need to send a proactive message to the user, be sure to save the value of `serviceUrl`.
 
 The following example shows the request that the bot issues to respond to the user's message.
 
@@ -115,7 +115,7 @@ The [HTTP status code](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html) t
 | 401              | The bot isn't yet authenticated.                             |
 | 403              | The bot isn't authorized to perform the requested operation. |
 | 404              | The requested resource wasn't found.                         |
-| 405              | The channel doesn't support the requested operation.        |
+| 405              | The channel doesn't support the requested operation.         |
 | 500              | An internal server error occurred.                           |
 | 503              | The service is temporarily unavailable.                      |
 
