@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: Daniel.Evans
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 11/28/2022
+ms.date: 02/09/2023
 ---
 
 # Configure Node.js bot for extension
@@ -38,7 +38,7 @@ To allow your app to use the **Direct Line App Service Extension Named Pipe**:
 
         ```javascript
         adapter.connectNamedPipe(
-            process.env. APPSETTING_WEBSITE_SITE_NAME + '.directline',
+            process.env.APPSETTING_WEBSITE_SITE_NAME + '.directline',
             async (context) => {
                 await myBot.run(context);
             },
