@@ -135,7 +135,7 @@ Adding an [AudioCard][] or [VideoCard][] attachment is the same as adding a medi
 }
 ```
 
-Once the channel receives this attachment, it will start playing the audio file. If a user interacts with audio by clicking the **Pause** button, for example, the channel will send a callback to the bot with a JSON that look something like this:
+Once the channel receives this attachment, it will start playing the audio file. If a user interacts with audio by selecting **Pause**, for example, the channel will send a callback to the bot with a JSON that looks something like this:
 
 ```json
 {
