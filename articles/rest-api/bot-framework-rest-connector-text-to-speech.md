@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 02/10/2023
 ---
 
 # Add speech to messages with the Bot Connector API
@@ -23,7 +23,7 @@ To specify text to be spoken by your bot on a speech-enabled channel, set the `s
 The following request sends a message that specifies text to be displayed and text to be spoken and indicates that the bot is [expecting user input](bot-framework-rest-connector-add-input-hints.md). It specifies the `speak` property using  [SSML](/azure/cognitive-services/speech-service/speech-synthesis-markup) format to indicate that the word "sure" should be spoken with a moderate amount of emphasis. In this example request, Direct Line represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
 
 ```http
-POST https://smba.trafficmanager.net/apis/v3/conversations/abcd1234/activities/5d5cdc723
+POST https://smba.trafficmanager.net/teams/v3/conversations/abcd1234/activities/5d5cdc723
 Authorization: Bearer ACCESS_TOKEN
 Content-Type: application/json
 ```

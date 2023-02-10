@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: quickstart
 ms.service: bot-service
-ms.date: 02/07/2023
+ms.date: 02/10/2023
 ---
 
 # Create a bot with the Bot Connector service with the Bot Connector API
@@ -75,7 +75,7 @@ When the user sends a message, the Bot Framework Connector POSTs a request to th
     "type": "message",
     "id": "bf3cc9a2f5de...",
     "timestamp": "2016-10-19T20:17:52.2891902Z",
-    "serviceUrl": "https://smba.trafficmanager.net/apis",
+    "serviceUrl": "https://smba.trafficmanager.net/teams",
     "channelId": "channel's name/id",
     "from": {
         "id": "1234abcd",
@@ -107,7 +107,7 @@ Use the `serviceUrl` property in the incoming request to [identify the base URI]
 To send the response, `POST` your `Activity` object to `/v3/conversations/{conversationId}/activities/{activityId}`, as shown in the following example. The body of this request is an `Activity` object that prompts the user to select an available appointment time. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
 
 ```http
-POST https://smba.trafficmanager.net/apis/v3/conversations/abcd1234/activities/bf3cc9a2f5de... 
+POST https://smba.trafficmanager.net/teams/v3/conversations/abcd1234/activities/bf3cc9a2f5de... 
 Authorization: Bearer eyJhbGciOiJIUzI1Ni...
 Content-Type: application/json
 ```
@@ -132,7 +132,7 @@ Content-Type: application/json
 }
 ```
 
-In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
+In this example request, `https://smba.trafficmanager.net/teams` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
 
 > [!IMPORTANT]
 > As shown in this example, the `Authorization` header of each API request that you send must contain the word **Bearer** followed by the access token that you [obtained from the Bot Framework](#get-token).
@@ -140,7 +140,7 @@ In this example request, `https://smba.trafficmanager.net/apis` represents the b
 To send another message that enables a user to select an available appointment time by clicking a button, `POST` another request to the same endpoint:
 
 ```http
-POST https://smba.trafficmanager.net/apis/v3/conversations/abcd1234/activities/bf3cc9a2f5de... 
+POST https://smba.trafficmanager.net/teams/v3/conversations/abcd1234/activities/bf3cc9a2f5de... 
 Authorization: Bearer eyJhbGciOiJIUzI1Ni...
 Content-Type: application/json
 ```

@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: reference
-ms.date: 02/07/2023
+ms.date: 02/10/2023
 ms.custom: abs-meta-21q1
 ---
 
@@ -22,9 +22,7 @@ Within the Bot Framework, the Bot Connector service enables your bot to exchange
 
 When a user sends a message to your bot, the incoming request contains an [Activity](#activity-object) object with a `serviceUrl` property that specifies the endpoint to which your bot should send its response. To access the Bot Connector service, use the `serviceUrl` value as the base URI for API requests.
 
-> [!TIP]
-> For the Teams channel in the public cloud, use `https://smba.trafficmanager.net/teams/` as the service URL.
-> For more information, see [how to create a conversation and a proactive message in Teams](/microsoftteams/platform/bots/how-to/conversations/send-proactive-messages#create-the-conversation).
+When you don't already have a service URL for the channel, use `https://smba.trafficmanager.net/teams/` as the service URL. For more information, see [how to create a conversation and a proactive message in Teams](/microsoftteams/platform/bots/how-to/conversations/send-proactive-messages#create-the-conversation).
 
 For example, assume that your bot receives the following activity when the user sends a message to the bot.
 
@@ -33,7 +31,7 @@ For example, assume that your bot receives the following activity when the user 
     "type": "message",
     "id": "bf3cc9a2f5de...",
     "timestamp": "2016-10-19T20:17:52.2891902Z",
-    "serviceUrl": "https://smba.trafficmanager.net/apis",
+    "serviceUrl": "https://smba.trafficmanager.net/teams/",
     "channelId": "channel's name/id",
     "from": {
         "id": "1234abcd",
@@ -51,12 +49,12 @@ For example, assume that your bot receives the following activity when the user 
 }
 ```
 
-The `serviceUrl` property within the user's message indicates that the bot should send its response to the endpoint `https://smba.trafficmanager.net/apis`&mdash;or  `https://smba.trafficmanager.net/teams/apis` for the Teams channel. The service URL will be the base URI for any subsequent requests that the bot issues in the context of this conversation. If your bot will need to send a proactive message to the user, be sure to save the value of `serviceUrl`.
+The `serviceUrl` property within the user's message indicates that the bot should send its response to the endpoint `https://smba.trafficmanager.net/teams/`. The service URL will be the base URI for any subsequent requests that the bot issues in the context of this conversation. If your bot will need to send a proactive message to the user, be sure to save the value of `serviceUrl`.
 
 The following example shows the request that the bot issues to respond to the user's message.
 
 ```http
-POST https://smba.trafficmanager.net/apis/v3/conversations/abcd1234/activities/bf3cc9a2f5de...
+POST https://smba.trafficmanager.net/teams/v3/conversations/abcd1234/activities/bf3cc9a2f5de...
 Authorization: Bearer eyJhbGciOiJIUzI1Ni...
 Content-Type: application/json
 ```
