@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/bot-service-debug-adaptive-tools.md",
+      "redirect_url": "/azure/bot-service/file-format/bot-builder-lg-file-format",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "articles/bot-service-channel-connect-telephony.md",
       "redirect_url": "/azure/bot-service/bot-service-manage-channels",
       "redirect_document_id": false

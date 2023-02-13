@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 10/26/2022
+ms.date: 01/18/2023
 ms.custom: template-how-to
 ---
 
@@ -103,7 +103,7 @@ Some parameters are specific to using an existing or new app service plan.
 Create the app service for your bot.
 
 ```azurecli
-az deployment group create --resource-group <resource-group> --template-file <template-file-path> --parameters @<parameters-file-path>
+az deployment group create --resource-group <resource-group> --template-file <template-file-path> --parameters "@<parameters-file-path>"
 ```
 
 | Option         | Description                                                                                         |

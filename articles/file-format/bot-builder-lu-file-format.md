@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: reference
-ms.date: 10/11/2022
+ms.date: 01/04/2023
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -78,11 +78,11 @@ Here is an example .lu file demonstrating these intents and example utterances t
 ```
 
 > [!NOTE]
->Use the **-**, **+**, or **\*** character to denote lists. Numbered lists are not supported.
+> Use the **-**, **+**, or **\*** character to denote lists. Numbered lists are not supported.
 >
 > Use **>** to create a comment.
 >
-> Multiple comment ("**>**") characters can also be used to define outlining sections in the .lu file to help you organize the content.  Both [Composer][] and [Bot Framework Adaptive Tools][adaptive-tools] allow you to take advantage of outlining when editing LU files.
+> Multiple comment ("**>**") characters can also be used to define outlining sections in the .lu file to help you organize the content. [Composer][] allows you to take advantage of outlining when editing LU files.
 
 For more information about intents and utterances, see [Intents in your LUIS app](/azure/cognitive-services/luis/luis-concept-intent) and [Understand what good utterances are for your LUIS app](/azure/cognitive-services/luis/luis-concept-utterance) in the LUIS documentation.
 
@@ -756,11 +756,9 @@ Below are examples of how to make URI references:
 ## Additional Information
 
 - Read [.qna file format](bot-builder-qna-file-format.md) for more information about .qna files.
-- Read [Debug with Adaptive Tools](../bot-service-debug-adaptive-tools.md) to learn how to analyze .lu files.
 
 [luis]: https://luis.ai
 [entity]: /azure/cognitive-services/luis/luis-concept-entity-types
 [ml-entity]: /azure/cognitive-services/luis/luis-concept-entity-types#machine-learned-ml-entity
 [orchestrator]: /composer/concept-orchestrator
 [Composer]: /composer/
-[adaptive-tools]: https://marketplace.visualstudio.com/items?itemName=BotBuilder.bot-framework-adaptive-tools

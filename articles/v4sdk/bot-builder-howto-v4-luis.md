@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 10/26/2022
+ms.date: 12/07/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -38,7 +38,7 @@ The language model contains three intents: `Book Flight`, `Cancel`, and `None`. 
 
 # [C#](#tab/csharp)
 
-After each processing of user input, `DialogBot` saves the current state of both `UserState` and `ConversationState`. Once all the required information has been gathered, the coding sample creates a demo flight booking reservation. In this article, we'll be covering the LUIS aspects of this sample. However, the general flow of the sample is shown below:
+After each processing of user input, `DialogBot` saves the current state of both `UserState` and `ConversationState`. Once all the required information has been gathered, the coding sample creates a demo flight booking reservation. In this article, we'll be covering the LUIS aspects of this sample. However, the general flow of the sample is:
 
 - `OnMembersAddedAsync` is called when a new user is connected and displays a welcome card.
 - `OnMessageActivityAsync` is called for each user input received.
@@ -53,7 +53,7 @@ The `OnMessageActivityAsync` module runs the appropriate dialog through the `Run
 
 # [JavaScript](#tab/javascript)
 
-After each processing of user input, `dialogBot` saves the current state of both `userState` and `conversationState`. Once all the required information has been gathered, the coding sample creates a demo flight booking reservation. In this article, we'll be covering the LUIS aspects of this sample. However, the general flow of the sample is shown below:
+After each processing of user input, `dialogBot` saves the current state of both `userState` and `conversationState`. Once all the required information has been gathered, the coding sample creates a demo flight booking reservation. In this article, we'll be covering the LUIS aspects of this sample. However, the general flow of the sample is:
 
 - `onMembersAdded` is called when a new user is connected and displays a welcome card.
 - `OnMessage` is called for each user input received.
@@ -72,7 +72,7 @@ Upon the response back, `mainDialog` preserves information for the user returned
 
 1. After each processing of user input, `DialogBot` saves the current state of both `UserState` and `ConversationState`.
 1. Once all the required information has been gathered, the coding sample creates a demo flight booking reservation.
-1. In this article, we'll be covering the LUIS aspects of this sample. However, the general flow of the sample is shown below:
+1. In this article, we'll be covering the LUIS aspects of this sample. However, the general flow of the sample is:
 
 - `onMembersAdded` is called when a new user is connected and displays a welcome card.
 - `onMessageActivity` is called for each user input received.
@@ -87,7 +87,7 @@ The `onMessageActivity` module runs the appropriate dialog through the `run` dia
 
 # [Python](#tab/python)
 
-After each processing of user input, `DialogBot` saves the current state of both `user_state` and `conversation_state`. Once all the required information has been gathered, the coding sample creates a demo flight booking reservation. In this article, we'll be covering the LUIS aspects of this sample. However, the general flow of the sample is shown below:
+After each processing of user input, `DialogBot` saves the current state of both `user_state` and `conversation_state`. Once all the required information has been gathered, the coding sample creates a demo flight booking reservation. In this article, we'll be covering the LUIS aspects of this sample. However, the general flow of the sample is:
 
 - `on_members_added_activity` is called when a new user is connected and displays a welcome card.
 - `on_message_activity` is called for each user input received.
@@ -133,39 +133,41 @@ The settings file (`appsettings.json`, `.env` or `config.py`) acts as the place 
 
      :::image type="content" source="./media/how-to-luis/manage-luis-app-app-info.png" alt-text="Screenshot of the Manage page displaying your application ID." lightbox="./media/how-to-luis/manage-luis-app-app-info.png":::
 
-1. Select the **Azure Resources** tab on the left side and select the **Authoring Resource** group. Record the value shown for _Location_ as \<YOUR_REGION> and _Primary Key_ as \<YOUR_AUTHORING_KEY>.
+1. Select **Azure Resources**, then **Prediction Resource**. Record the value shown for _Location_ as \<YOUR_REGION> and _Primary Key_ as \<YOUR_AUTHORING_KEY>.
 
      :::image type="content" source="./media/how-to-luis/manage-luis-app-azure-resources.png" alt-text="Screenshot of the Manage page displaying your location and primary key." lightbox="./media/how-to-luis/manage-luis-app-azure-resources.png":::
+
+     Alternatively, you can use the region and primary key for your authoring resource.
 
 ### Update the settings file
 
 # [C#](#tab/csharp)
 
-Add the information required to access your LUIS app including application ID, authoring key, and region into the `appsettings.json` file. These are the values you saved previously from your published LUIS app. The API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
+Add the information required to access your LUIS app including application ID, authoring key, and region into the `appsettings.json` file. In the previous step, you retrieved these values from your published LUIS app. The API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
 
 **appsetting.json**
 
-[!code-json[appsettings](~/../BotBuilder-Samples/samples/csharp_dotnetcore/13.core-bot/appsettings.json?range=1-7)]
+[!code-json[appsettings](~/../BotBuilder-Samples/samples/csharp_dotnetcore/13.core-bot/appsettings.json)]
 
 # [JavaScript](#tab/javascript)
 
-Add the information required to access your LUIS app including application ID, authoring key, and region into the `.env` file. These are the values you saved previously from your published LUIS app. The API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
+Add the information required to access your LUIS app including application ID, authoring key, and region into the `.env` file. In the previous step, you retrieved these values from your published LUIS app. The API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
 
 **.env**
 
-[!code-ini[.env file](~/../BotBuilder-Samples/samples/javascript_nodejs/13.core-bot/.env?range=1-5)]
+[!code-ini[.env file](~/../BotBuilder-Samples/samples/javascript_nodejs/13.core-bot/.env)]
 
 # [Java](#tab/java)
 
-Add the information required to access your LUIS app including application ID, authoring key, and region into the `application.properties` file. These are the values you saved previously from your published LUIS app. The API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
+Add the information required to access your LUIS app including application ID, authoring key, and region into the `application.properties` file. In the previous step, you retrieved these values from your published LUIS app. The API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
 
 **application.properties**
 
-[!code-ini[appsettings](~/../BotBuilder-Samples/samples/java_springboot/13.core-bot/src/main/resources/application.properties?range=1-6)]
+[!code-ini[appsettings](~/../BotBuilder-Samples/samples/java_springboot/13.core-bot/src/main/resources/application.properties)]
 
 # [Python](#tab/python)
 
-Add the information required to access your LUIS app including application ID, authoring key, and region into the `config.py` file. These are the values you saved previously from your published LUIS app. The API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
+Add the information required to access your LUIS app including application ID, authoring key, and region into the `config.py` file. In the previous step, you retrieved these values from your published LUIS app. The API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
 
 **config.py**
 
@@ -179,13 +181,13 @@ Add the information required to access your LUIS app including application ID, a
 
 Be sure that the **Microsoft.Bot.Builder.AI.Luis** NuGet package is installed for your project.
 
-To connect to the LUIS service, the bot pulls the information you added above from the appsetting.json file. The `FlightBookingRecognizer` class contains code with your settings from the appsetting.json file and queries the LUIS service by calling `RecognizeAsync` method.
+To connect to the LUIS service, the bot pulls the information you added to the appsetting.json file. The `FlightBookingRecognizer` class contains code with your settings from the appsetting.json file and queries the LUIS service by calling `RecognizeAsync` method.
 
 **FlightBookingRecognizer.cs**
 
 [!code-csharp[luisHelper](~/../BotBuilder-Samples/samples/csharp_dotnetcore/13.core-bot/FlightBookingRecognizer.cs?range=12-48)]
 
-The `FlightBookingEx.cs` contains the logic to extract *From*, *To* and *TravelDate*; it extends the partial class `FlightBooking.cs` used to store LUIS results when calling `FlightBookingRecognizer.RecognizeAsync<FlightBooking>` from the `MainDialog.cs`.
+The `FlightBookingEx.cs` contains the logic to extract _From_, _To_ and _TravelDate_; it extends the partial class `FlightBooking.cs` used to store LUIS results when calling `FlightBookingRecognizer.RecognizeAsync<FlightBooking>` from the `MainDialog.cs`.
 
 **CognitiveModels\FlightBookingEx.cs**
 
@@ -195,7 +197,7 @@ The `FlightBookingEx.cs` contains the logic to extract *From*, *To* and *TravelD
 
 To use LUIS, your project needs to install the **botbuilder-ai** npm package.
 
-To connect to the LUIS service, the bot uses the information you added above from the `.env` file. The `flightBookingRecognizer.js` class contains the code that imports your settings from the `.env` file and queries the LUIS service by calling `recognize()` method.
+To connect to the LUIS service, the bot uses the information you added to the `.env` file. The `flightBookingRecognizer.js` class contains the code that imports your settings from the `.env` file and queries the LUIS service by calling `recognize()` method.
 
 **dialogs/flightBookingRecognizer.js**
 
@@ -207,39 +209,33 @@ The logic to extract From, To and TravelDate is implemented as helper methods in
 
 Be sure that the **com.microsoft.bot.bot-ai-luis-v3** package is added to your pom.xml file.
 
-```xml
-<dependency>
-    <groupId>com.microsoft.bot</groupId>
-    <artifactId>bot-ai-luis-v3</artifactId>
-    <version>4.13.0</version>
-</dependency>
-```
+:::code language="xml" source="~/../BotBuilder-Samples/samples/java_springboot/13.core-bot/pom.xml" range="109-113":::
 
-To connect to the LUIS service, the bot pulls the information you added above from the application.properties file. The `FlightBookingRecognizer` class contains code with your settings from the application.properties file and queries the LUIS service by calling `recognize` method.
+To connect to the LUIS service, the bot pulls the information you added to the application.properties file. The `FlightBookingRecognizer` class contains code with your settings from the application.properties file and queries the LUIS service by calling `recognize` method.
 
 **FlightBookingRecognizer.java**
 
 [!code-java[luisHelper](~/../BotBuilder-Samples/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/FlightBookingRecognizer.java?range=27-50)]
 
-[!code-java[luisHelper](~/../BotBuilder-Samples/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/FlightBookingRecognizer.java?range=143-152)]
+[!code-java[luisHelper](~/../BotBuilder-Samples/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/FlightBookingRecognizer.java?range=142-151)]
 
-The `FlightBookingRecognizer.cs` contains the logic to extract *From*, *To* and *TravelDate*; and is called from the `MainDialog.java` to decode the results of the Luis query result.
+The `FlightBookingRecognizer.cs` contains the logic to extract _From_, _To_ and _TravelDate_; and is called from the `MainDialog.java` to decode the results of the Luis query result.
 
 **FlightBookingRecognizer.java**
 
-[!code-csharp[LUIS helper](~/../BotBuilder-Samples/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/FlightBookingRecognizer.java?range=72-141)]
+[!code-csharp[LUIS helper](~/../BotBuilder-Samples/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/FlightBookingRecognizer.java?range=71-140)]
 
 # [Python](#tab/python)
 
 Be sure that the **botbuilder-ai** PyPI package is installed for your project.
 
-To connect to the LUIS service, the bot uses the information you added above from the `config.py` file. The `FlightBookingRecognizer` class contains the code that imports your settings from the `config.py` file and queries the LUIS service by calling `recognize()` method.
+To connect to the LUIS service, the bot uses the information you added to the `config.py` file. The `FlightBookingRecognizer` class contains the code that imports your settings from the `config.py` file and queries the LUIS service by calling `recognize()` method.
 
 **flight_booking_recognizer.py**
 
 [!code-python[config.py](~/../botbuilder-samples/samples/python/13.core-bot/flight_booking_recognizer.py?range=10-36&highlight=26)]
 
-The logic to extract *From*, *To* and *travel_date* is implemented as helper methods from the `LuisHelper` class inside `luis_helper.py`. These methods are used after calling `LuisHelper.execute_luis_query()` from `main_dialog.py`
+The logic to extract _From_, _To_ and _travel_date_ is implemented as helper methods from the `LuisHelper` class inside `luis_helper.py`. These methods are used after calling `LuisHelper.execute_luis_query()` from `main_dialog.py`
 
 **helpers/luis_helper.py**
 

@@ -7,7 +7,7 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: reference
-ms.date: 09/10/2022
+ms.date: 01/04/2023
 ms.custom: subject-monitoring
 ---
 
@@ -54,4 +54,4 @@ For more information on the schema of Activity Log entries, see [Activity  Log s
 ## See Also
 
 - See [Monitoring Azure Azure Bot Service](monitor-bot-service.md) for a description of monitoring Azure Azure Bot Service.
-- See [Monitoring Azure resources with Azure Monitor](/azure/azure-monitor/insights/monitor-azure-resources) for details on monitoring Azure resources.
+- See [Monitor Azure resources with Azure Monitor](/azure/azure-monitor/essentials/monitor-azure-resource) for details on monitoring Azure resources.

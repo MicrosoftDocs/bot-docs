@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 03/22/2022
+ms.date: 01/31/2023
 ---
 
 # Connect a bot to Facebook
@@ -22,6 +22,7 @@ This article shows how to add the Facebook channel to your bot via Azure portal.
 - An Azure subscription. If you don't already have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 - A bot published to Azure that you want to connect to Facebook.
 - A Facebook for Developers account. If you don't have an account, you can create one at [developers.facebook.com](https://developers.facebook.com).
+- A Facebook page from which users will access your bot. If you don't have one yet, [Create a new Page](https://www.facebook.com/help/104002523024878).
 - To use Facebook Workplace with your bot, you must create a Workplace account and a custom integration to connect the bot to.
 
 ## Create a Facebook app
@@ -30,14 +31,9 @@ This article shows how to add the Facebook channel to your bot via Azure portal.
 
 Users will access your bot from a Facebook Page. To connect the bot, you'll enable Facebook Messenger on the Facebook Page and then connect the bot to the Page.
 
-### Get the Page ID
-
-1. Sign in to your [Meta for Developers](https://developers.facebook.com) account.
-1. Go to the Page on which users will access your bot. If you don't have one yet, go to [Pages](https://developers.facebook.com/docs/pages) and select **Create new Page**.
-1. Open the Page's **About** page, then copy and save the **Page ID**.
-
 ### Create your app
 
+1. Sign in to your [Meta for Developers](https://developers.facebook.com) account.
 1. Go to [Create a new Facebook App](https://developers.facebook.com/apps/create).
 1. On the **Select an app type** page, select **Business** and then **Next**.
 1. On the **Provide basic information** page, enter a name for your app and select **Create app**.
@@ -53,16 +49,21 @@ Users will access your bot from a Facebook Page. To connect the bot, you'll enab
 
 1. Select **Dashboard**.
 1. In the resulting pane, scroll down to the **Messenger** tile and select **Set Up**.
-1. The site adds Messenger settings to your app and display the settings page.
+1. The site adds Messenger settings to your app and displays the settings page.
 
 ### Add pages and generate tokens
 
-1. Scroll down to the **Access Tokens** section and select **Add or Remove Pages**.
+1. Under **Messenger**, select **Settings**.
+1. Scroll down to **Access Tokens** and select **Add or Remove Pages**.
     1. When prompted for the identity to associate with Messenger, either continue with your current account or sign in to another.
     1. When prompted for the Pages you want to use with your app, select the pages and then select **Next**.
     1. If prompted to submit the request for Login Review, review the information and select **Done**.
-    1. On success, the site displays a success pages. Select **OK** to continue.
+    1. On success, the site displays a success page. Select **OK** to continue.
+
 1. The Page you added now appears in the **Pages** list.
+
+    Copy and save the Page ID for later.
+
 1. Select **Generate token** for the Page.
     1. The site displays security information and gives you a chance to copy the token.
     1. Read and acknowledge the warning.
@@ -110,64 +111,18 @@ Go back to the Facebook settings to finish up the configuration process.
 
 ### [Facebook Workplace](#tab/workplace)
 
-[JS Workplace Adapter]: https://www.npmjs.com/package/botbuilder-adapter-facebook
-[CS Workplace Adapter]: https://github.com/microsoft/botbuilder-dotnet/tree/main/libraries/Adapters/Microsoft.Bot.Builder.Adapters.Facebook
-
 > [!NOTE]
-> On December 16, 2019, Workplace by Facebook changed its security model for custom integrations. Prior integrations built using Microsoft Bot Framework v4 need to be updated to use the Bot Framework Facebook adapters per the instructions below prior to February 28, 2020.
->
-> Facebook will only consider integrations with limited access to Workplace data (low sensitivity permissions) eligible for continued use until December 31, 2020 if such integrations have completed and passed Security RFI and if the developer reaches out before January 15, 2020 via [Direct Support](https://my.workplace.com/work/admin/direct_support) to request continued use of the app.
->
-> Custom channel adapters are available for Facebook in [JavaScript/Node.js][JS Workplace Adapter] and [C#/.NET][CS Workplace Adapter].
-
-Facebook Workplace is a business-oriented version of Facebook, which allows employees to easily connect and collaborate.
-
-The following instructions describe how to create a custom Facebook Workplace integration.
-You'll also need to modify your bot to use a custom channel adapter for Facebook Workplace.
-
-### Create a Workplace Premium account
-
-If you don't yet have an account, create one.
-
-1. Submit an application to [Workplace](https://www.facebook.com/workplace) on behalf of your company.
-1. Once your application has been approved, you'll receive an email inviting you to join. The response may take a while.
-1. From the e-mail invitation, select **Get Started**.
-1. Enter your profile information.
-    > [!TIP]
-    > Set yourself as the system administrator. Remember that only system administrators can create custom integrations.
-1. Select **Preview Profile** and verify the information is correct.
-1. Access **Free Trial**.
-1. Create a **password**.
-1. Select **Invite Coworkers** to invite employees to sign-in. The employees you invited will become members as soon as they sign. They will go through a similar sign-in process as described in these steps.
-
-### Create a custom integration
-
-Create a [custom integration](https://developers.facebook.com/docs/workplace/custom-integrations-new) for your Workplace.
-Once complete, the site creates an app with defined permissions and a page of type `Bot` (visible only within your Workplace community).
-
-1. In the **Admin Panel**, open the **Integrations** tab.
-1. Select **Create your own custom App**.
-
-    :::image type="content" source="media/channels/fb-integration.png" alt-text="Workplace integration":::
-
-1. Choose a display name and a profile picture for the app. Such information will be shared with the page of type `Bot`.
-1. Set the **Allow API Access to App Settings** to "Yes".
-1. Copy and safely store the App ID, App Secret and App Token that's shown to you.
-
-    :::image type="content" source="media/channels/fb-keys.png" alt-text="Workplace keys":::
-
-1. You've finished creating a custom integration. Now, you can find the page of type `Bot` in your Workplace community, as shown below.
-
-    :::image type="content" source="media/channels/fb-page.png" alt-text="Workplace page":::
-
-### Add the Facebook adapter to your bot project
-
-1. Modify your bot project to use a custom channel adapter for Facebook. The custom channel adapter for Facebook&mdash;and information on how to add it to your bot&mdash;is available for [JavaScript/Node.js][JS Workplace Adapter] or [C#/.NET][CS Workplace Adapter].
-1. To your bot's configuration file, add the **Facebook App ID**, **Facebook App Secret** and **Page Access Token** values that you copied from Facebook Workplace previously. Instead of a traditional page ID, use the numbers following the integrations name on its **About** page.
+> On December 16, 2019, Workplace by Facebook changed its security model for custom integrations. Facebook is not accepting new app integrations for Facebook Workplace.
 
 ---
 
 ## Make your app public
+
+Until an app is published, it's in [Development Mode](https://developers.facebook.com/docs/apps/managing-development-cycle). Plugin and API functionality will only work for admins, developers, and testers.
+
+Only the creator (the Facebook Dev account that created the page and bot) can get a bot response. Normal Facebook users can't see the page or the bot. Give dev or test roles to target users, so they can also chat with bot.
+
+Users to be added to tester roles must first register on the Meta for Developers site. The tester role is not available to Facebook users that don't have a Meta for Developers account. For more information about app roles and test users, see the [Meta for Developers developer documentation](https://developers.facebook.com/docs/).
 
 ### Submit for review
 
@@ -177,9 +132,6 @@ After the bot is finished, Facebook has its own [review process](https://develop
 
 ### Make the app public and publish the Page
 
-> [!TIP]
-> Until an app is published, it's in [Development Mode](https://developers.facebook.com/docs/apps/managing-development-cycle). Plugin and API functionality will only work for admins, developers, and testers.
-
 After the review is successful, in the App Dashboard under App Review, set the app to Public. Ensure that the Facebook Page associated with this bot is published. Status appears in Pages settings.
 
 ### Set the API version
@@ -187,7 +139,7 @@ After the review is successful, in the App Dashboard under App Review, set the a
 If you receive a notification from Facebook about deprecation of a certain version of the Graph API:
 
 1. Go to [Meta for Developers](https://developers.facebook.com).
-1. Go to the app your created for your bot.
+1. Go to the app you created for your bot.
 1. Under **Settings**, select **Advanced**.
 1. Select **Upgrade API version**, then switch **Upgrade All Calls** to version 4.0.
 
@@ -197,16 +149,15 @@ Test the connection by following the steps described in the [Test your bot in Fa
 
 You can now test whether your bot is connected to Facebook correctly by sending a message via the Facebook Page you associated with your new Facebook app.
 
-1. Go to your Facebook Page.
-1. Select **Add a button**.
-1. On the **Edit action button** page, select **Send message**.
-    1. On the **Frequently asked questions** page, review the default question and answer, then select **Save**.
-    1. The site replaces the previous **Edit action button** with a new **Edit Send message** button.
-1. Select **Edit Send message** then select **Test button**.
-    1. The site displays your Page with the sample question as a suggested action.
-    1. Enter any message you want to test the connection to your bot.
+1. Go Facebook and switch to the profile for your page.
+1. Select more actions (**&hellip;**), then **Add Action Button**.
+    1. In the **Customize your action button** dialog, select **Try it** and follow the instructions.
+    1. On the **Action Button** page under **Get people to contact you**, select **Send Message**.
+    1. Select **Next**, complete the dialog and save your changes.
+1. Switch back to your personal profile.
+1. Go to your page, and select **Message** to test the connection to your bot.
 
-You can also test this feature using the [sample bot for the Facebook adapter](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/61.facebook-adapter) by populating the **appsettings.json** file with the same values described in the steps above.
+You can also test this feature using the [sample bot for the Facebook adapter](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/61.facebook-adapter) by populating the **appsettings.json** file with the same values described in the previous steps.
 
 ## Additional information
 
@@ -223,24 +174,3 @@ For Facebook Workplace documentation, see:
 
 - [Workplace Help Center](https://workplace.facebook.com/help/work/)
 - [Workplace Developer Documentation](https://developers.facebook.com/docs/workplace)
-
-### Connect a bot to Facebook using the Facebook adapter
-
-The custom channel adapter for Facebook is available for [JavaScript/Node.js][JS Workplace Adapter] or [C#/.NET][CS Workplace Adapter]. The README describes how to add it to your bot.
-
-- To connect to Facebook Workplace, your bot must use the custom channel adapter.
-- To connect to Facebook Messenger, your bot can use the Azure channel or the custom channel adapter.
-
-To complete configuration of your Facebook app for a bot that uses the custom channel adapter:
-
-1. Within the dashboard for your app, select **Messenger** and then select **Settings**.
-1. In the **Webhooks** section, select **Add Callback URL**.
-1. In the **Callback URL** text box enter the Facebook endpoint for your bot. For example, `https://yourboturl.com/api/facebook`.
-1. In the **Verify Token** text box enter the verify token you created earlier and used in your bot application's **appsettings.json** file.
-1. Make sure your bot is running, and then select **Verify and Save** to verify your callback URL.
-1. Once your callback URL has been verified, select **Add Subscriptions** that is now shown. In the pop-up window, choose the following subscriptions and select **Save**.
-
-    - **messages**
-    - **messaging_postbacks**
-    - **messaging_optins**
-    - **messaging_deliveries**

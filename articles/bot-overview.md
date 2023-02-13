@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: overview
 ms.service: bot-service
-ms.date: 11/29/2022
+ms.date: 01/04/2023
 ms.custom: mode-api, tab-zone-seo
 ---
 
@@ -66,7 +66,7 @@ Additionally, bots may make use of other Azure services:
 
 For more information about the Bot Framework SDK, see [What is the Bot Framework SDK](bot-service-overview.md).
 Once you have created and deployed your bot to Azure, the chatbot service consumes resources.
-For details about pricing, see [Azure Bot Services pricing](/pricing/details/bot-services/).
+For details about pricing, see [Azure Bot Services pricing](https://azure.microsoft.com/pricing/details/bot-services/).
 Costs associated with the consumption of resources on Azure are in addition to the cost of the chatbot service itself.
 
 ## Skill bots

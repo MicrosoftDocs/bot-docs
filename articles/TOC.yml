@@ -192,8 +192,6 @@
       href: bot-service-debug-inspection-middleware.md
     - name: Debug your bot using transcript files
       href: v4sdk/bot-builder-debug-transcript.md
-    - name: Debug language files with Adaptive Tools
-      href: bot-service-debug-adaptive-tools.md
   - name: Deploy
     items:
     - name: Deploy your bot to Azure
@@ -216,6 +214,8 @@
       href: bot-service-manage-overview.md
     - name: Register a bot with Azure
       href: bot-service-quickstart-registration.md
+    - name: Reliability guidance
+      href: bot-service-reliability-guidance.md
     - name: Configure bot settings
       displayName: endpoint, icon
       href: bot-service-manage-settings.md

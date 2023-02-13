@@ -8,14 +8,14 @@ manager: shellyha
 ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 08/05/2022
+ms.date: 01/04/2023
 ---
 
 # Connect a bot to Web Chat
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-When you [create a bot](bot-service-quickstart.md) with Azure, the Web Chat channel is automatically configured for you. The Web Chat channel includes the [Web Chat control](https://github.com/microsoft/BotFramework-WebChat], which provides the ability for users to interact with the bot directly in a web page.
+When you [create a bot](bot-service-quickstart.md) with Azure, the Web Chat channel is automatically configured for you. The Web Chat channel includes the [Web Chat control](https://github.com/microsoft/BotFramework-WebChat), which provides the ability for users to interact with the bot directly in a web page.
 
 The Web Chat channel contains everything you need to embed the Web Chat control in a web page. To do so, you'll get your bot's secret key and then embed the control in a web page.
 
