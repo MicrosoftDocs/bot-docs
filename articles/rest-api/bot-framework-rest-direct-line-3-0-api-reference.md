@@ -1,5 +1,5 @@
 ---
-title: API reference - Direct Line API 3.0 - Bot Service
+title: API reference - Direct Line API 3.0
 description: Learn about headers, HTTP status codes, schema, operations, and objects in Direct Line API 3.0. 
 author: JonathanFingold
 ms.author: iawilt
@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: reference
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 01/31/2023
 ---
 
 # API reference - Direct Line API 3.0
@@ -16,9 +16,10 @@ You can enable your client application to communicate with your bot by using Dir
 
 ## Base URI
 
-To access Direct Line API 3.0, use this base URI for all API requests:
+To access Direct Line API 3.0, use one of these base URIs for all API requests:
 
-`https://directline.botframework.com`
+- For global bots, use `https://directline.botframework.com`
+- For regional bots, use `https://europe.directline.botframework.com`
 
 ## Headers
 
