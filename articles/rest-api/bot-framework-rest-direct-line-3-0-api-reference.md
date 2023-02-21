@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: reference
 ms.service: bot-service
-ms.date: 01/31/2023
+ms.date: 02/07/2023
 ---
 
 # API reference - Direct Line API 3.0
@@ -20,6 +20,9 @@ To access Direct Line API 3.0, use one of these base URIs for all API requests:
 
 - For global bots, use `https://directline.botframework.com`
 - For regional bots, use `https://europe.directline.botframework.com`
+
+> [!TIP]
+> A request might fail if you use the global base URI for a regional bot, as some requests could go beyond geographical boundaries.
 
 ## Headers
 
@@ -43,7 +46,7 @@ The [HTTP status code](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html) 
 | 204 | The request succeeded but no content was returned. |
 | 400 | The request was malformed or otherwise incorrect. |
 | 401 | The client isn't authorized to make the request. Often this status code occurs because the `Authorization` header is missing or malformed. |
-| 403 | The client isn't allowed to perform the requested operation. If the request specified a token that was previously valid but has expired, the `code` property of the [Error][] that is returned within the [ErrorResponse][] object is set to `TokenExpired`. |
+| 403 | The client isn't allowed to perform the requested operation. The operation can fail for the following reasons. <ul><li>An invalid token: when the request uses a token that was previously valid but has expired, the `code` property of the [Error][] that is returned within the [ErrorResponse][] object is set to `TokenExpired`.</li><li>A data boundary violation: if your bot is a regional bot, but the Base URI is not regional, some requests may go beyond geographical boundaries.</li><li>An invalid target resource: the target bot or site is invalid or was deleted.</li></ul> |
 | 404 | The requested resource wasn't found. Typically this status code indicates an invalid request URI. |
 | 500 | An internal server error occurred within the Direct Line service. |
 | 502 | The bot is unavailable or returned an error. **This is a common error code.** |
