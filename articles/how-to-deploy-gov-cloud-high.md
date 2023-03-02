@@ -134,9 +134,9 @@ Add the following settings to your **appsettings.json** file.
 "ValidateAuthority": true,
 ```
 
-Add the following settings to your **.env** file.
+### [JavaScript](#tab/javascript)
 
-Add the following settings to your DoD environment **.env** file.
+Add the following settings to your **.env** file.
 
 ```ini
 ChannelService=https://botframework.azure.us
