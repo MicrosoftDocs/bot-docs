@@ -117,7 +117,7 @@ ToBotFromEmulatorOpenIdMetadataUrl=https://login.microsoftonline.us/cab8a31a-190
 ValidateAuthority=true
 ```
 
-There is also a **DoD** environment which shares most (but not all) settings with the Office 365 GCC High environment. For this environment use the following settings.
+There is also a **DoD environment** which shares most (but not all) settings with the Office 365 GCC High environment. For this environment use the following settings.
 
 ### [C#](#tab/csharp)
 
