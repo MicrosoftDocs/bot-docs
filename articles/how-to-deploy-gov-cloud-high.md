@@ -116,6 +116,7 @@ ToBotFromChannelOpenIdMetadataUrl=https://login.botframework.azure.us/v1/.well-k
 ToBotFromEmulatorOpenIdMetadataUrl=https://login.microsoftonline.us/cab8a31a-1906-4287-a0d8-4eef66b95f6e/v2.0/.well-known/openid-configuration
 ValidateAuthority=true
 ```
+---
 
 There is also a **DoD environment** which shares most (but not all) settings with the Office 365 GCC High environment. For the DoD environment use the following settings.
 
