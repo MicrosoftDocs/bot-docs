@@ -117,11 +117,11 @@ ToBotFromEmulatorOpenIdMetadataUrl=https://login.microsoftonline.us/cab8a31a-190
 ValidateAuthority=true
 ```
 
-There is also a **DoD environment** which shares most (but not all) settings with the Office 365 GCC High environment. For this environment use the following settings.
+There is also a **DoD environment** which shares most (but not all) settings with the Office 365 GCC High environment. For the DoD environment use the following settings.
 
 ### [C#](#tab/csharp)
 
-Add the following settings to your DoD environment **appsettings.json** file.
+Add the following settings to your **appsettings.json** file.
 
 ```json
 "ChannelService": "https://botframework.azure.us", 
@@ -134,7 +134,7 @@ Add the following settings to your DoD environment **appsettings.json** file.
 "ValidateAuthority": true,
 ```
 
-### [JavaScript](#tab/javascript)
+Add the following settings to your **.env** file.
 
 Add the following settings to your DoD environment **.env** file.
 
