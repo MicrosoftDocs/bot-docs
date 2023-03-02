@@ -136,7 +136,7 @@ Add the following settings to your DoD environment **appsettings.json** file.
 
 ### [JavaScript](#tab/javascript)
 
-Add the following settings to your **.env** file.
+Add the following settings to your DoD environment **.env** file.
 
 ```ini
 ChannelService=https://botframework.azure.us
