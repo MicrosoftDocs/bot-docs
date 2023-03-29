@@ -5,6 +5,7 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: include
+ms.custom: devx-track-azurecli
 ms.date: 10/11/2022
 ---
 
