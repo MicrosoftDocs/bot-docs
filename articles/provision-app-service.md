@@ -8,7 +8,7 @@ ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 01/18/2023
-ms.custom: template-how-to
+ms.custom: template-how-to, devx-track-arm-template, devx-track-azurecli
 ---
 
 # Use Azure CLI to create an App Service resource
