@@ -266,8 +266,8 @@
         href: bot-service-channel-connect-line.md
       - name: Microsoft Teams
         href: channel-connect-teams.md
-        href: bot-service-channel-connect-m365.md
       - name: M365 (preview)
+        href: bot-service-channel-connect-m365.md
       - name: Omnichannel
         href: bot-service-channel-omnichannel.md
       - name: Outlook (preview)
