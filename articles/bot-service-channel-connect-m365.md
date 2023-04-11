@@ -39,7 +39,7 @@ You can configure your bot to communicate with people in Microsoft 365 applicati
 
 ## Test your bot in Outlook
 
-To test your bot in Outlook, you need to publish the app in Teams and update the [Teams developer manifest](/microsoftteams/platform/resources/schema/manifest-schema) schema version 1.13 to enable your Teams message extension to run in Outlook.
+To test your bot in Outlook, you need to publish the app in Teams and update the [Teams developer manifest](/microsoftteams/platform/resources/schema/manifest-schema) schema version to greater than 1.13 to enable your Teams message extension to run in Outlook.
 
 For instructions on how to publish your app, see the Teams overview of how to [Distribute your Microsoft Teams app](/microsoftteams/platform/concepts/deploy-and-publish/apps-publish-overview). It and the associated articles cover how to:
 
