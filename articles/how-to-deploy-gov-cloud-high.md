@@ -119,6 +119,42 @@ ValidateAuthority=true
 
 ---
 
+## Congifure for DoD environment
+
+There is also a **DoD environment** which shares most (but not all) settings with the Office 365 GCC High environment. For the DoD environment use the following settings.
+
+### [C#](#tab/csharp)
+
+Add the following settings to your **appsettings.json** file.
+
+```json
+"ChannelService": "https://botframework.azure.us", 
+"OAuthUrl": "https://apiDoD.botframework.azure.us", 
+"ToChannelFromBotLoginUrl": "https://login.microsoftonline.us/MicrosoftServices.onmicrosoft.us",
+"ToChannelFromBotOAuthScope": "https://api.botframework.us", 
+"ToBotFromChannelTokenIssuer": "https://api.botframework.us", 
+"ToBotFromChannelOpenIdMetadataUrl": "https://login.botframework.azure.us/v1/.well-known/openidconfiguration",
+"ToBotFromEmulatorOpenIdMetadataUrl": "https://login.microsoftonline.us/cab8a31a-1906-4287-a0d8-4eef66b95f6e/v2.0/.well-known/openid-configuration",
+"ValidateAuthority": true,
+```
+
+### [JavaScript](#tab/javascript)
+
+Add the following settings to your **.env** file.
+
+```ini
+ChannelService=https://botframework.azure.us
+OAuthUrl=https://apiDoD.botframework.azure.us
+ToChannelFromBotLoginUrl=https://login.microsoftonline.us/MicrosoftServices.onmicrosoft.us
+ToChannelFromBotOAuthScope=https://api.botframework.us
+ToBotFromChannelTokenIssuer=https://api.botframework.us
+ToBotFromChannelOpenIdMetadataUrl=https://login.botframework.azure.us/v1/.well-known/openidconfiguration
+ToBotFromEmulatorOpenIdMetadataUrl=https://login.microsoftonline.us/cab8a31a-1906-4287-a0d8-4eef66b95f6e/v2.0/.well-known/openid-configuration
+ValidateAuthority=true
+```
+
+---
+
 ## Add user authentication to your bot
 
 Your bot can use various identity providers to access resources on behalf of a user, such as Azure Active Directory (Azure AD) and many other OAuth providers.
