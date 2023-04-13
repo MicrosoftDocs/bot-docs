@@ -128,8 +128,8 @@ If your private endpoint doesn't work correctly, you can add a rule to allow out
 
 If you want to block public access to your Azure Bot Service and only allow access through Private Endpoint, you can disable network access of Azure Bot Service in Azure portal.
 
-[!TIP]
-This will unconfigure the Teams channels. All other channels except Direct Line can not be configurated or updated in Azure portal.
+> [!TIP]
+> This will unconfigure the Teams channels. All other channels except Direct Line can not be configurated or updated in Azure portal.
 
 1. Go to [Azure portal](https://portal.azure.com).
 1. Open the app service for your bot.
