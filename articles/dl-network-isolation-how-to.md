@@ -3,9 +3,9 @@ title: Configure network isolation
 description: Learn how to configure your bot in a virtual network to restrict user access to your bot.
 displayName: private network, isolated network
 author: JonathanFingold
-ms.author: iawilt
-manager: shellyha
-ms.reviewer: jameslew
+ms.author: v-bondkendal
+manager: iawilt
+ms.reviewer: yiba
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 07/01/2022
@@ -125,6 +125,11 @@ If your private endpoint doesn't work correctly, you can add a rule to allow out
 1. Restart your app service.
 
 ## Disable public network access to your bot
+
+You can block public access to your Azure Bot Service and only allow access through Private Endpoint. You can disable network access of Azure Bot Service in Azure portal.
+
+> [!TIP]
+> This will unconfigure the Teams channels. No other channels (except Direct Line) can be configurated or updated in Azure portal.
 
 1. Go to [Azure portal](https://portal.azure.com).
 1. Open the app service for your bot.
