@@ -3,7 +3,7 @@ title: Choose the right chatbot solution for your use case
 description: Learn about different chatbot solutions, who they're for, and when to use them.
 author: iaanw
 ms.author: iawilt
-manager:leeclontz
+manager: leeclontz
 ms.reviewer: micchow
 ms.topic: overview
 ms.service: bot-service
