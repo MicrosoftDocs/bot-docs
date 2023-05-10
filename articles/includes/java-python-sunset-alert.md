@@ -14,6 +14,6 @@ ms.date: 05/11/2023
 >   
 > Existing bots built with these SDKs will continue to function.
 >
-> For new bot building, consider using [Power Virtual Agents](/power-virtual-agents) and read about [choosing the right chatbot solution](bot-overview.md).
+> For new bot building, consider using [Power Virtual Agents](/power-virtual-agents) and read about [choosing the right chatbot solution](../bot-overview.md).
 >   
 > For more information, see [The future of bot building](https://powervirtualagents.microsoft.com/blog/the-future-of-bot-building/).
