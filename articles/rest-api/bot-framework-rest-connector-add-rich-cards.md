@@ -141,9 +141,9 @@ Content-Type: application/json
 ## Add an Adaptive card to a message
 
 The Adaptive Card can contain any combination of text, speech, images, buttons, and input fields.
-Adaptive Cards are created using the JSON format specified in [Adaptive Cards](http://adaptivecards.io), which gives you full control over card content and format.
+Adaptive Cards are created using the JSON format specified in [Adaptive Cards](https://adaptivecards.io), which gives you full control over card content and format.
 
-Leverage the information within the [Adaptive Cards](http://adaptivecards.io) site to understand Adaptive Card schema, explore Adaptive Card elements, and see JSON samples that can be used to create cards of varying composition and complexity. Additionally, you can use the Interactive Visualizer to design Adaptive Card payloads and preview card output.
+Leverage the information within the [Adaptive Cards](https://adaptivecards.io) site to understand Adaptive Card schema, explore Adaptive Card elements, and see JSON samples that can be used to create cards of varying composition and complexity. Additionally, you can use the Interactive Visualizer to design Adaptive Card payloads and preview card output.
 
 The following example shows a single Adaptive Card attachment object, representing a work assignment. To send this to a user, you would need to add it as an attachment in a message.
 
