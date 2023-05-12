@@ -20,15 +20,6 @@ This article explores how to integrate bots with websites and the process of usi
 
 Microsoft provides two different ways to integrate a bot in a website: the [Skype web control](#skype-web-control) and an [open source web control](#open-source-web-control).
 
-## Skype web control
-
->[!NOTE]
-> As of October 31, 2019 the Skype channel no longer accepts new Bot publishing requests. This means that you can continue to develop bots using the Skype channel, but your bot will be limited to 100 users. You won't be able to publish your bot to a larger audience. Current Skype bots will continue to run uninterrupted. Read more about [why some features are not available in Skype anymore](https://support.skype.com/faq/fa12091/why-are-some-features-not-available-in-skype-anymore).
-
-The [Skype web control](https://dev.skype.com/webcontrol) is essentially a Skype client in a web-enabled control. Built-in Skype authentication enables the bot to authenticate and recognize users, without requiring the developer to write any custom code. Skype will automatically recognize Microsoft Accounts used in its web client.
-
-Because the Skype web control acts as a front-end for Skype, the user's Skype client automatically has access to the full context of any conversation that the web control facilitates. Even after the web browser is closed, the user may continue to interact with the bot using the Skype client.
-
 ## Open source web control
 
 The open source [Web Chat](https://github.com/Microsoft/BotFramework-WebChat) control is based upon ReactJS and uses the [Direct Line API][directLineAPI] to communicate with the Bot Framework. The Web Chat control provides a blank canvas for implementing the Web Chat, giving you full control over its behaviors and the user experience that it delivers.
