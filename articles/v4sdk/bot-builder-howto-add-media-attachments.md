@@ -276,7 +276,7 @@ While you can use the _message factory_ to create a message that contains an att
 
 Adaptive Cards are an open card exchange format enabling developers to exchange UI content in a common and consistent way. However, not all channels support Adaptive Cards.
 
-The [Adaptive Cards Designer](http://adaptivecards.io/designer/) provides a rich, interactive design-time experience for authoring adaptive cards.
+The [Adaptive Cards Designer](https://adaptivecards.io/designer/) provides a rich, interactive design-time experience for authoring adaptive cards.
 
 > [!NOTE]
 > You should test this feature with the channels your bot will use to determine whether those channels support adaptive cards.
