@@ -18,7 +18,7 @@ Although bots commonly exist outside of websites, they can also be embedded with
 
 This article explores how to integrate bots with websites and the process of using the *backchannel* mechanism to facilitate private communication between a web page and a bot.
 
-Microsoft provides two different ways to integrate a bot in a website: the [Skype web control](#skype-web-control) and an [open source web control](#open-source-web-control).
+Microsoft provides two different ways to integrate a bot in a website: the [Skype web control](bot-service-channel-connect-skype.md) and an [open source web control](#open-source-web-control).
 
 ## Open source web control
 
