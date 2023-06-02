@@ -234,7 +234,7 @@ The following table lists the Teams-specific invoke activities Teams sends to a 
 The invoke activities listed are for conversational bots in Teams. The Bot Framework SDK also supports invokes specific to messaging extensions. For more information, see the Teams [What are messaging extensions](/microsoftteams/platform/messaging-extensions/what-are-messaging-extensions) article.
 
 > [!NOTE]
-> Microsoft Teams platform documentation and Teams JavaScript client library (TeamsJS) refer to task modules as modal *dialogs*. See [Dialogs](/microsoftteams/platform/task-modules-and-cards/what-are-task-modules) for more info.
+> Microsoft Teams platform documentation and Teams JavaScript client library (TeamsJS) refer to task modules as modal *dialogs*. See [Dialogs](/microsoftteams/platform/task-modules-and-cards/what-are-task-modules) for more information.
 
 ### [C#](#tab/csharp)
 
