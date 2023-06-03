@@ -233,6 +233,9 @@ These are the Teams-specific event activity handlers called from the `on_event_a
 The following table lists the Teams-specific invoke activities Teams sends to a bot.
 The invoke activities listed are for conversational bots in Teams. The Bot Framework SDK also supports invokes specific to messaging extensions. For more information, see the Teams [What are messaging extensions](/microsoftteams/platform/messaging-extensions/what-are-messaging-extensions) article.
 
+> [!NOTE]
+> Microsoft Teams platform documentation and Teams JavaScript client library (TeamsJS) refer to task modules as modal *dialogs*. See [Dialogs](/microsoftteams/platform/task-modules-and-cards/what-are-task-modules) for more information.
+
 ### [C#](#tab/csharp)
 
 Here's a list of all of the Teams activity handlers called from the `OnInvokeActivityAsync` _Teams_ activity handler:
@@ -260,8 +263,8 @@ Here's a list of all of the Teams activity handlers called from the `onInvokeAct
 | fileConsent/invoke              | `handleTeamsFileConsent`             | Teams File Consent.               |
 | fileConsent/invoke              | `handleTeamsFileConsentDecline`      | Teams File Consent.               |
 | signin/verifyState              | `handleTeamsSigninVerifyState`       | Teams Sign in Verify State.       |
-| task/fetch                      | `handleTeamsTaskModuleFetch`         | Teams Task Module Fetch.          |
-| task/submit                     | `handleTeamsTaskModuleSubmit`        | Teams Task Module Submit.         |
+| task/fetch                      | `handleTeamsTaskModuleFetch`         | Teams Task Module (modal dialog) Fetch.          |
+| task/submit                     | `handleTeamsTaskModuleSubmit`        | Teams Task Module (modal dialog) Submit.         |
 
 ### [Java](#tab/java)
 
