@@ -44,7 +44,7 @@ To confirm that your existing bot is configured correctly:
 
     - **v** shows the build version of the Direct Line App Service extension.
     - **k** indicates whether the extension was able to read an extension key from its configuration.
-    - **initialized** indicates whether the extension was able to download bot metadata from Azure Bot Service.
+    - **initialized** indicates whether the extension was able to download bot metadata from Azure AI Bot Service.
     - **ib** indicates whether the extension was able to establish an inbound connection to the bot.
     - **ob** indicates whether the extension was able to establish an outbound connection from the bot.
 
@@ -113,7 +113,7 @@ To confirm that your existing bot is configured correctly:
 
 1. Use the Web Chat control connected to your bot's Direct Line client to interact with your bot inside the private network.
 
-If your private endpoint doesn't work correctly, you can add a rule to allow outbound traffic specifically to Azure Bot Service.
+If your private endpoint doesn't work correctly, you can add a rule to allow outbound traffic specifically to Azure AI Bot Service.
 
 > [!NOTE]
 > This will make you virtual network a little less isolated.
@@ -126,7 +126,7 @@ If your private endpoint doesn't work correctly, you can add a rule to allow out
 
 ## Disable public network access to your bot
 
-You can block public access to your Azure Bot Service and only allow access through Private Endpoint. You can disable network access of Azure Bot Service in Azure portal.
+You can block public access to your Azure AI Bot Service and only allow access through Private Endpoint. You can disable network access of Azure AI Bot Service in Azure portal.
 
 > [!TIP]
 > This will unconfigure the Teams channels. No other channels (except Direct Line) can be configurated or updated in Azure portal.

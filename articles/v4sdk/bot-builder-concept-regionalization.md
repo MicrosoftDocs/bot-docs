@@ -1,6 +1,6 @@
 ---
 title: Regionalization support
-description: Learn about regionalization in Azure Bot Service and how to meet your data compliance requirements.
+description: Learn about regionalization in Azure AI Bot Service and how to meet your data compliance requirements.
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
@@ -11,13 +11,13 @@ ms.date: 01/11/2023
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Regionalization in Azure Bot Service
+# Regionalization in Azure AI Bot Service
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-Azure Bot Service is a global Azure service that allows bot developers in all regions to register their bot and connect it to different channels. This also lets developers meet compliance obligations, especially following the [Schrems II decision](https://blogs.microsoft.com/eupolicy/2021/05/06/eu-data-boundary/).
+Azure AI Bot Service is a global Azure service that allows bot developers in all regions to register their bot and connect it to different channels. This also lets developers meet compliance obligations, especially following the [Schrems II decision](https://blogs.microsoft.com/eupolicy/2021/05/06/eu-data-boundary/).
 
-Use an Azure Bot resource to register a bot with regional Azure Bot services. Adding regional settings to a bot ensures user personal data is preserved, stored, and processed within certain geographic boundaries (like EU boundaries). This article explains the areas of bot development impacted by regionalization and where to update settings to maintain compliance.
+Use an Azure Bot resource to register a bot with regional Azure AI Bot Services. Adding regional settings to a bot ensures user personal data is preserved, stored, and processed within certain geographic boundaries (like EU boundaries). This article explains the areas of bot development impacted by regionalization and where to update settings to maintain compliance.
 
 ## Deploy locally developed regional Azure bots
 
@@ -31,9 +31,9 @@ When you create a bot in Azure, you can set its region to maintain data complian
 
 >[!NOTE]
 > Bot data may go beyond geographical boundaries as bot end-to-end scenarios may depend on many services.
-> The regional Azure Bot service only supports data in Azure Bot services. Other Azure services&mdash;such as Azure Cognitive Services&mdash;and third-party channels may not align with compliance obligation and run the risk of data leaving the geographical region.  
+> The regional Azure AI Bot Service only supports data in Azure AI Bot Services. Other Azure services&mdash;such as Azure AI services&mdash;and third-party channels may not align with compliance obligation and run the risk of data leaving the geographical region.  
 
-For guidance about reliability support in Azure Bot Service, see [What is reliability in Azure Bot Service](/azure/reliability/reliability-bot).
+For guidance about reliability support in Azure AI Bot Service, see [What is reliability in Azure AI Bot Service](/azure/reliability/reliability-bot).
 
 ## Add authentication to a regional Azure bot
 

@@ -1,4 +1,4 @@
-# Writing guidelines for Azure Bot Service "conceptual" content
+# Writing guidelines for Azure AI Bot Service "conceptual" content
 
 ## Existing resources [for writers]
 

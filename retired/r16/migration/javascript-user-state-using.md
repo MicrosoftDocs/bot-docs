@@ -133,7 +133,7 @@ To learn more about deploying a bot to Azure, see [Deploy your bot to Azure][40]
 
 ## Further reading
 
-- [Azure Bot Service Introduction][21]
+- [Azure AI Bot Service Introduction][21]
 - [Bot State][7]
 - [Write directly to storage][8]
 - [Managing conversation and user state][9]

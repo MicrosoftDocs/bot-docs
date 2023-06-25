@@ -148,7 +148,7 @@ For detailed steps on how to create your LUIS application and deploy your LUIS m
 
 ### QnA Maker Recognizer
 
-[QnAMaker.ai][13] is one of the [Microsoft Cognitive Services][14] that enables you to create rich question-answer pairs from existing content - documents, URLs, PDFs, and so on. You can use the QnA Maker recognizer to integrate with the service.
+[QnAMaker.ai][13] is one of the [Microsoft Azure AI services][14] that enables you to create rich question-answer pairs from existing content - documents, URLs, PDFs, and so on. You can use the QnA Maker recognizer to integrate with the service.
 
 For detailed information and an example how to create a QnA Maker recognizer, see the [QnA Maker recognizer](../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md#qna-maker-recognizer) section in the Recognizers in adaptive dialogs - reference guide.
 

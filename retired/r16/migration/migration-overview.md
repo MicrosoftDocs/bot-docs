@@ -38,7 +38,7 @@ If you can not migrate from a v3 bot to a v4 bot immediately, you may still want
 - Expanded Subject Matter Expert (SME) personnel in the development cycle: New GUI designer permits non-developers to collaborate on conversation design
 - Development velocity: New debugging and testing developer tools
 - Performance insights: New telemetry features to evaluate and improve conversation quality
-- Intelligence: Improved cognitive services capabilities
+- Intelligence: Improved Azure AI services capabilities
 
 ## Why migrate
 <!-- [!] The declarative model introduced with Adaptive Dialogs would go great here (when ready).  -->
@@ -64,7 +64,7 @@ If you can not migrate from a v3 bot to a v4 bot immediately, you may still want
 - Future
   - Declarative design permits level of abstraction for designers
   - GUI Dialog Designer
-- Azure Bot Service
+- Azure AI Bot Service
   - Direct Line Speech Channel. Bringing together the Bot Framework and Microsoft's Speech Services. This provides a channel that enables streamed speech and text bi-directionally from the client to the bot application
 
 ## What's changed
@@ -234,7 +234,7 @@ Please, refer to the following resources for more details and background informa
 
 | Topic | Description |
 | :--- | :--- |
-| [What's new in Bot Framework](../../what-is-new.md) | Bot Framework and Azure Bot Service key features and improvements|
+| [What's new in Bot Framework](../../what-is-new.md) | Bot Framework and Azure AI Bot Service key features and improvements|
 |[How bots work](../bot-builder-basics.md)|The internal mechanism of a bot|
 |[Managing state](../bot-builder-concept-state.md)|Abstractions to make state management easier|
 |[Dialogs library](../bot-builder-concept-dialog.md)| Central concepts to manage a conversation|

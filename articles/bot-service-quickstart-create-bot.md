@@ -17,7 +17,7 @@ ms.custom: mode-api, tab-zone-seo, abs-meta-21q1
 
 This article describes how to build your first bot with the Bot Framework SDK for C#, Java, JavaScript or Python, and how to test your bot with the Bot Framework Emulator.
 
-Creating your first bot doesn't require an Azure subscription or an Azure Bot Service resource. This quickstart focuses on creating your first bot locally. If you'd like to learn how to create a bot in Azure, see [Create an Azure Bot resource](./v4sdk/abs-quickstart.md).
+Creating your first bot doesn't require an Azure subscription or an Azure AI Bot Service resource. This quickstart focuses on creating your first bot locally. If you'd like to learn how to create a bot in Azure, see [Create an Azure Bot resource](./v4sdk/abs-quickstart.md).
 
 [!INCLUDE [java-python-sunset-alert](includes/java-python-sunset-alert.md)]
 

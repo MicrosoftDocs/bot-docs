@@ -26,7 +26,7 @@ The Web Chat channel contains everything you need to embed the Web Chat control 
 
 ## Web Chat security considerations
 
-When you use Azure Bot Service authentication with Web Chat, there are some important security considerations you must keep in mind. For more information, see [Security considerations](rest-api/bot-framework-rest-direct-line-3-0-authentication.md#security-considerations).
+When you use Azure AI Bot Service authentication with Web Chat, there are some important security considerations you must keep in mind. For more information, see [Security considerations](rest-api/bot-framework-rest-direct-line-3-0-authentication.md#security-considerations).
 
 ## Embed the Web Chat control in a web page
 

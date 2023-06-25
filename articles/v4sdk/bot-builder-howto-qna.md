@@ -26,7 +26,7 @@ One of the basic requirements in creating your own QnA Maker service is to popul
 
 This article describes how to use an _existing_ QnA Maker knowledge base from your bot.
 
-For new bots, consider using the [question answering](bot-builder-concept-luis.md#question-answering) feature of Azure Cognitive Service for Language.
+For new bots, consider using the [question answering](bot-builder-concept-luis.md#question-answering) feature of Azure AI Language.
 
 [!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
 
@@ -41,7 +41,7 @@ For new bots, consider using the [question answering](bot-builder-concept-luis.m
 To use QnA Maker in your bot, you need an existing knowledge base in the [QnA Maker](https://www.qnamaker.ai/) portal. Your bot then can use the knowledge base to answer the user's questions.
 
 For new bot development, consider using [Power Virtual Agents](/power-virtual-agents/fundamentals-what-is-power-virtual-agents).
-If you need to create a new knowledge base for a Bot Framework SDK bot, see the following Cognitive Services articles:
+If you need to create a new knowledge base for a Bot Framework SDK bot, see the following Azure AI services articles:
 
 - [What is question answering?](/azure/cognitive-services/language-service/question-answering/overview)
 - [Create an FAQ bot](/azure/cognitive-services/language-service/question-answering/tutorials/bot-service)
@@ -227,7 +227,7 @@ The QnA Maker dialog supports explicit feedback for the active learning feature.
 
 ## Next steps
 
-QnA Maker can be combined with other Cognitive Services, to make your bot even more powerful. Bot Framework Orchestrator provides a way to combine QnA with Language Understanding (LUIS) in your bot.
+QnA Maker can be combined with other Azure AI services, to make your bot even more powerful. Bot Framework Orchestrator provides a way to combine QnA with Language Understanding (LUIS) in your bot.
 
 > [!div class="nextstepaction"]
 > [Use Orchestrator for intent resolution](./bot-builder-tutorial-orchestrator.md)

@@ -73,7 +73,7 @@ For more information, see the [Multilingual support](/composer/how-to-use-multip
 
 ## QnA Maker recognizer
 
-[QnAMaker.ai][12] is one of the [Azure Cognitive Services][13] that enables you to create rich question-answer pairs from existing content - documents, URLs, PDFs, and so on. You can use the QnA Maker recognizer to integrate with the service.
+[QnAMaker.ai][12] is one of the [Azure AI services][13] that enables you to create rich question-answer pairs from existing content - documents, URLs, PDFs, and so on. You can use the QnA Maker recognizer to integrate with the service.
 
 > [!NOTE]
 > The QnA Maker recognizer will emit a `QnAMatch` event, which you can handle with an `OnQnAMatch` trigger.

@@ -18,11 +18,11 @@ monikerRange: 'azure-bot-service-4.0'
 
 If you don't currently host your bot in Azure, you can still make it available in Azure and use Azure to connect your bot to channels. To do so, enter in Azure the web address where your bot is hosted.
 
-This article shows how to register such a bot with Azure Bot Service.
+This article shows how to register such a bot with Azure AI Bot Service.
 
 > [!IMPORTANT]
 > You only need to register a bot if it's not hosted in Azure.
-> Bots created using the Azure CLI are already registered with the Azure Bot Service.
+> Bots created using the Azure CLI are already registered with the Azure AI Bot Service.
 
 [!INCLUDE [identity-app-type-support](./includes/azure-bot-resource/identity-app-type-support.md)]
 

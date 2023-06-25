@@ -1,6 +1,6 @@
 ---
 title: Create an Azure Bot resource in the Azure portal
-description: Learn how to use the Azure portal to create a bot resource for the Azure Bot Service, an integrated, dedicated bot development environment.
+description: Learn how to use the Azure portal to create a bot resource for the Azure AI Bot Service, an integrated, dedicated bot development environment.
 keywords: Quickstart, create bot resource, bot service, Azure Bot
 author: JonathanFingold
 ms.author: iawilt
@@ -16,7 +16,7 @@ ms.custom: abs-meta-21q1
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-The _Azure Bot_ resource (_bot resource_) allows you to register your bot with Azure Bot Services and to connect your bot to channels. You can build, connect, and manage bots to interact with your users wherever they are, from your app or website to Teams, Messenger and many other channels.
+The _Azure Bot_ resource (_bot resource_) allows you to register your bot with Azure AI Bot Services and to connect your bot to channels. You can build, connect, and manage bots to interact with your users wherever they are, from your app or website to Teams, Messenger and many other channels.
 
 This article describes how to create a bot resource through the Azure portal.
 

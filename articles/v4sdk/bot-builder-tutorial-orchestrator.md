@@ -26,7 +26,7 @@ If a bot uses multiple Language Understanding (LUIS) models and QnA Maker knowle
 
 This article describes how to use an _existing_ QnA Maker knowledge base with Orchestrator.
 
-- For new bots, consider using the [question answering](bot-builder-concept-luis.md#question-answering) and [orchestration workflow](bot-builder-concept-luis.md#use-orchestration-workflow) features of Azure Cognitive Service for Language.
+- For new bots, consider using the [question answering](bot-builder-concept-luis.md#question-answering) and [orchestration workflow](bot-builder-concept-luis.md#use-orchestration-workflow) features of Azure AI Language.
 - For more information about Orchestrator, see [Intent recognition with Orchestrator in Composer][orchestrator].
 - For more information about the `bf orchestrator` command, see [the Bot Framework CLI README][bf-orchestrator-cli].
 
@@ -48,7 +48,7 @@ However, to use QnA Maker in your bot, you need an existing knowledge base in th
 Your bot then can use the knowledge base to answer the user's questions.
 
 For new bot development, consider using [Power Virtual Agents](/power-virtual-agents/fundamentals-what-is-power-virtual-agents).
-If you need to create a new knowledge base for a Bot Framework SDK bot, see the following Cognitive Services articles:
+If you need to create a new knowledge base for a Bot Framework SDK bot, see the following Azure AI services articles:
 
 - [What is question answering?](/azure/cognitive-services/language-service/question-answering/overview)
 - [Create an FAQ bot](/azure/cognitive-services/language-service/question-answering/tutorials/bot-service)

@@ -6,11 +6,11 @@
     tocHref: /azure/
     topicHref: /azure/index
     items:
-    - name: Applied AI Services
+    - name: Azure AI services
       tocHref: /azure/applied-ai-services/
       topicHref: /azure/applied-ai-services/
       items:
-      - name: Azure Bot Service
+      - name: Azure AI Bot Service
         href: /azure/bot-service/
         items:
         - name: Bot Framework SDK

@@ -43,14 +43,14 @@ What is covered in this section:
 
 ### Create LUIS resources in the Azure portal
 
-1. Go to the Azure [Create Cognitive Services][CognitiveServicesLUISAllInOne] page.  
+1. Go to the Azure [Create Azure AI services][CognitiveServicesLUISAllInOne] page.  
 1. In the **Create options** section, select **Authoring**.
 
    ![Create options to authoring image](./media/adaptive-dialogs/create-options-authoring.png)
 
 1. Enter values for each of the fields, then select the **Review + create** button.
 
-   ![Create cognitive services image](./media/adaptive-dialogs/create-cognitive-services.png)
+   ![Create Azure AI services image](./media/adaptive-dialogs/create-cognitive-services.png)
 
     > [!NOTE]
     > When entering the **Resource Group** and **Name**, keep in mind that you cannot change these values later. Also note that the value you give for **Name** will be part of your **Endpoint URL**.
