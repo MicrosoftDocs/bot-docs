@@ -161,6 +161,6 @@ additionalContent:
           - text: Azure AI services
             url: /azure/cognitive-services
           - text: Azure AI service for Language
-            url: /azure/cognitive-services/language-service
+            url: /azure/ai-services/language-service
           - text: Speech service
-            url: /azure/cognitive-services/speech-service
+            url: /azure/ai-services/speech-service

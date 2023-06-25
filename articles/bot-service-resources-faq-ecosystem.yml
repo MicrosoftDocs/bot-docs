@@ -115,7 +115,7 @@ sections:
         answer: |
           [!INCLUDE [luis-sunset-alert](includes/luis-sunset-alert.md)]
 
-          For a list of examples, see the [Pre-built entities section](/azure/cognitive-services/LUIS/luis-reference-prebuilt-entities) of the LUIS documentation.
+          For a list of examples, see the [Pre-built entities section](/azure/ai-services/LUIS/luis-reference-prebuilt-entities) of the LUIS documentation.
 
       - question: How can I use more than the maximum number of LUIS intents?
         answer: |
@@ -139,5 +139,5 @@ sections:
 
           - [Introduction to Language Understanding (LUIS) - Azure AI services](https://www.youtube.com/watch?v=jWeLajon9M8) (video)
           - [Advanced Learning Session for Language Understanding (LUIS)](https://www.youtube.com/watch?v=39L0Gv2EcSk) (video)
-          - [LUIS documentation](/azure/cognitive-services/luis/)
+          - [LUIS documentation](/azure/ai-services/luis/)
           - [Language Understanding Forum](https://social.msdn.microsoft.com/forums/azure/home?forum=LUIS)

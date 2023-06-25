@@ -35,7 +35,7 @@ A mobile app built with a web language and frameworks such as [Cordova](https://
 
 An IoT app can communicate with the Bot Framework by using the [Direct Line API][directLineAPI].
 
-In some scenarios, it may also use [Azure AI services](https://www.microsoft.com/cognitive-services/) like [Speech](/azure/cognitive-services/speech-service/), [Translator](/azure/cognitive-services/translator/), [Text Analytics](/azure/cognitive-services/text-analytics/), and [Azure AI Vision](/azure/cognitive-services/computer-vision/).
+In some scenarios, it may also use [Azure AI services](https://www.microsoft.com/cognitive-services/) like [Speech](/azure/ai-services/speech-service/), [Translator](/azure/ai-services/translator/), [Text Analytics](/azure/ai-services/text-analytics/), and [Azure AI Vision](/azure/ai-services/computer-vision/).
 
 ### Other types of apps and games
 

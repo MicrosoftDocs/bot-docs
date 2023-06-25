@@ -33,7 +33,7 @@ For new bots, consider using the [question answering](bot-builder-concept-luis.m
 ## Prerequisites
 
 - A [QnA Maker](https://www.qnamaker.ai/) account and an existing QnA Maker knowledge base.
-- Knowledge of [bot basics](bot-builder-basics.md) and [QnA Maker](/azure/cognitive-services/qnamaker/overview/overview).
+- Knowledge of [bot basics](bot-builder-basics.md) and [QnA Maker](/azure/ai-services/qnamaker/overview/overview).
 - A copy of the **QnA Maker (simple)** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/master/archive/csharp_dotnetcore/11.qnamaker), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/master/archive/javascript_nodejs/11.qnamaker), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/java_springboot/11.qnamaker), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/archive/python/11.qnamaker).
 
 ## About this sample
@@ -43,8 +43,8 @@ To use QnA Maker in your bot, you need an existing knowledge base in the [QnA Ma
 For new bot development, consider using [Power Virtual Agents](/power-virtual-agents/fundamentals-what-is-power-virtual-agents).
 If you need to create a new knowledge base for a Bot Framework SDK bot, see the following Azure AI services articles:
 
-- [What is question answering?](/azure/cognitive-services/language-service/question-answering/overview)
-- [Create an FAQ bot](/azure/cognitive-services/language-service/question-answering/tutorials/bot-service)
+- [What is question answering?](/azure/ai-services/language-service/question-answering/overview)
+- [Create an FAQ bot](/azure/ai-services/language-service/question-answering/tutorials/bot-service)
 - [Azure Cognitive Language Services Question Answering client library for .NET](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/cognitivelanguage/Azure.AI.Language.QuestionAnswering#readme)
 
 ## [C#](#tab/cs)
@@ -78,7 +78,7 @@ The user's input is sent to your knowledge base and the best returned answer is 
 ## Obtain values to connect your bot to the knowledge base
 
 > [!TIP]
-> The QnA Maker documentation has instructions on how to [create, train, and publish your knowledge base](/azure/cognitive-services/qnamaker/quickstarts/create-publish-knowledge-base).
+> The QnA Maker documentation has instructions on how to [create, train, and publish your knowledge base](/azure/ai-services/qnamaker/quickstarts/create-publish-knowledge-base).
 
 1. In the [QnA Maker](https://www.qnamaker.ai/) site, select your knowledge base.
 1. With your knowledge base open, select the **SETTINGS** tab. Record the value shown for _service name_. This value is useful for finding your knowledge base of interest when using the QnA Maker portal interface. It's not used to connect your bot app to this knowledge base.
@@ -218,12 +218,12 @@ The **QnA Maker multi-turn** sample ([**C#**](https://github.com/microsoft/BotBu
 If the QnA Maker knowledge base requires more information from the user, QnA Maker sends context information that you can use to prompt the user. This information is also used to make any follow-up calls to the QnA Maker service.
 In version 4.6, the Bot Framework SDK added support for this feature.
 
-  To construct such a knowledge base, see the QnA Maker documentation on how to [Use follow-up prompts to create multiple turns of a conversation](/azure/cognitive-services/QnAMaker/How-To/multi-turn).
+  To construct such a knowledge base, see the QnA Maker documentation on how to [Use follow-up prompts to create multiple turns of a conversation](/azure/ai-services/QnAMaker/How-To/multi-turn).
 
 - QnA Maker also supports active learning suggestions, allowing the knowledge base to improve over time.
 The QnA Maker dialog supports explicit feedback for the active learning feature.
 
-  To enable this feature on a knowledge base, see the QnA Maker documentation on [Active learning suggestions](/azure/cognitive-services/qnamaker/concepts/active-learning-suggestions).
+  To enable this feature on a knowledge base, see the QnA Maker documentation on [Active learning suggestions](/azure/ai-services/qnamaker/concepts/active-learning-suggestions).
 
 ## Next steps
 
