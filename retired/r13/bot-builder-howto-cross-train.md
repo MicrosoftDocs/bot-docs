@@ -39,8 +39,8 @@ You will also need an [Azure account][create-azure-account].
 This article describes how to create a bot that is cross trained to use both LUIS and QnA Maker recognizers to respond to a user. This will entail the following steps:
 
 1. Introduction to the [todo bot with LUIS and QnA Maker](#the-todo-bot-with-luis-and-qna-maker-sample) sample
-1. [Create your LUIS authoring resource in Azure AI services](#create-your-luis-authoring-resource-in-azure)
-1. [Create your QnA Maker resource in Azure AI services](#create-your-qna-maker-resource-in-azure-cognitive-services)
+1. [Create your Azure AI LUIS authoring resource](#create-your-luis-authoring-resource)
+1. [Create your Azure AI QnA Maker resource](#create-your-azure-ai-qna-maker-resource)
 1. [Install the Bot Framework SDK CLI](#install-the-bot-framework-cli)
 1. [Generate cross-trained LU models](#generate-cross-trained-lu-models)
 1. [Create and publish LUIS applications using the build command](#create-and-publish-luis-applications-using-the-build-command)
@@ -63,7 +63,7 @@ git clone https://github.com/Microsoft/botbuilder-samples.git
 
 If you don't already have a LUIS authoring resource you want to use for this, you can follow the steps below to create one. For an in-depth explanation of this process, see the article [Deploy LUIS resources using the Bot Framework LUIS CLI commands][create-your-luis-authoring-resource-in-azure].
 
-1. Go to the Azure [Create LUIS Azure AI services][create-cognitive-services-luis] page.  
+1. Go to the [create Azure AI LUIS][create-cognitive-services-luis] page.  
 2. In the **Create options** section, select **Authoring** to create a LUIS authoring resource.
 
    ![Set Create options to Authoring image](./media/adaptive-dialogs/create-options-authoring.png)
@@ -82,11 +82,11 @@ The LUIS authoring resource will contain the information needed when running the
 
    ![Keys and endpoint for LUIS resource in Azure](./media/adaptive-dialogs/keys-and-endpoint-cross-train.png)
 
-## Create your QnA Maker resource in Azure AI services
+## Create your Azure AI QnA Maker resource
 
 If you don't already have a QnA Maker resource, you can follow the steps below to create one. For an in-depth explanation of this process, see the article [Deploy QnA Maker knowledge base using the Bot Framework qnamaker CLI commands][create-your-qna-maker-resource-in-azure-cognitive-services].
 
-1. Go to the Azure [Create Qna Maker Azure AI services][create-cognitive-services-qnamaker] page.
+1. Go to the Azure [Create Azure AI QnA Maker][create-cognitive-services-qnamaker] page.
 2. Enter values for each of the fields, then select the **Review + create** button.
 
    ![Create your QnA Maker knowledge base in Azure](./media/adaptive-dialogs/create-qna-maker-cross-trainsample.png)

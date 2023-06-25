@@ -107,7 +107,7 @@ sections:
 
       - question: How does the Bot Framework relate to Azure AI services?
         answer: |
-          Both the Bot Framework and [Azure AI services](https://www.microsoft.com/cognitive) are built from years of research and use in popular Microsoft products.
+          Both the Bot Framework and [Azure AI services](/azure/ai-services/) are built from years of research and use in popular Microsoft products.
           These capabilities enable every organization to take advantage of the power of data, the cloud and intelligence to build their own intelligent systems that unlock new opportunities,
           increase their speed of business and lead the industries in which they serve their customers.
 
@@ -137,7 +137,5 @@ sections:
         answer: |
           [!INCLUDE [luis-sunset-alert](includes/luis-sunset-alert.md)]
 
-          - [Introduction to Language Understanding (LUIS) - Azure AI services](https://www.youtube.com/watch?v=jWeLajon9M8) (video)
-          - [Advanced Learning Session for Language Understanding (LUIS)](https://www.youtube.com/watch?v=39L0Gv2EcSk) (video)
           - [LUIS documentation](/azure/ai-services/luis/)
           - [Language Understanding Forum](https://social.msdn.microsoft.com/forums/azure/home?forum=LUIS)

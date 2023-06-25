@@ -33,7 +33,7 @@ This article describes how to perform some common tasks used to deploy a QnA Mak
 - [Deploy QnA Maker knowledge base using the Bot Framework qnamaker CLI commands](#deploy-qna-maker-knowledge-base-using-the-bot-framework-qnamaker-cli-commands)
   - [Prerequisites](#prerequisites)
   - [Using the qnamaker CLI commands to enable QnA Maker in your bot](#using-the-qnamaker-cli-commands-to-enable-qna-maker-in-your-bot)
-  - [Create your QnA Maker resource in Azure AI services](#create-your-qna-maker-resource-in-azure-cognitive-services)
+  - [Create Azure AI QnA Maker resource](#create-azure-ai-qna-maker-resource)
   - [Install the Bot Framework CLI](#install-the-bot-framework-cli)
   - [Create your QnA Maker initialization file](#create-your-qna-maker-initialization-file)
   - [Create your QnA Maker model](#create-your-qna-maker-model)
@@ -52,7 +52,7 @@ This article describes how to perform some common tasks used to deploy a QnA Mak
 
 Once your bot project's QnA Maker KB .qna files have been created, you are ready to follow the steps outlined in this article to create your QnA Maker KB. If you do not have a project with QnA Maker KB .qna files, you can use the [QnAMaker][qna-maker-sample]. See the sample repository's `README` for information on [Getting the samples][getting-the-samples].
 
-## Create your QnA Maker resource in Azure AI services
+## Create your Azure AI QnA Maker resource
 
 The QnA Maker resource is an [Azure AI services][cognitive-services-overview] resource that you create using Azure's [Create Azure AI services][create-cognitive-services] page. This provides the security keys and endpoint needed to access your QnA Maker KB in Azure.
 
@@ -104,7 +104,7 @@ bf qnamaker:init
 To create the QnA Maker CLI init file:
 
 1. From your console, enter `bf qnamaker:init`
-1. You will be prompted for the subscription key to your QnA Maker Azure AI services resource in Azure. You can find this in the _Keys and Endpoint_ blade:
+1. You will be prompted for the subscription key to your Azure AI QnA Maker resource in Azure. You can find this in the _Keys and Endpoint_ blade:
 
     ![QnA Maker Keys and Endpoint in Azure](./media/adaptive-dialogs/keys-and-endpoint-qnamaker.png)
 

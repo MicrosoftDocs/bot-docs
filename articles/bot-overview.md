@@ -68,7 +68,7 @@ Additionally, bots may make use of other Azure services:
 
 For more information about the Bot Framework SDK, see [What is the Bot Framework SDK](bot-service-overview.md).
 Once you have created and deployed your bot to Azure, the chatbot service consumes resources.
-For details about pricing, see [Azure AI Bot Services pricing](https://azure.microsoft.com/pricing/details/bot-services/).
+For details about pricing, see [Azure AI Bot Service pricing](https://azure.microsoft.com/pricing/details/bot-services/).
 Costs associated with the consumption of resources on Azure are in addition to the cost of the chatbot service itself.
 
 ## Skill bots

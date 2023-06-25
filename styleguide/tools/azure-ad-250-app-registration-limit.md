@@ -9,7 +9,7 @@ to have **250 apps** at a given time. The problem is that when you delete an app
 > [!NOTE]
 > Michael Richardson wrote up a great solution to do an effective deletion under 5 minutes, which Eric Dahlvang pointed to.
 
-Again, Azure AI Bot Services require an Azure AD app. There is a limit on 250 apps for our Azure accounts. At that point, you can get an error when provisioning new bots in using the Azure portal, and analogous errors through other bot creation means such as ARM SDK, ARM templates and others.
+Again, Azure AI Bot Service requires an Azure AD app. There is a limit on 250 apps for our Azure accounts. At that point, you can get an error when provisioning new bots in using the Azure portal, and analogous errors through other bot creation means such as ARM SDK, ARM templates and others.
 
 ## Problem
 

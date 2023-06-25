@@ -30,7 +30,7 @@ This table illustrates the difference between guided and open-ended questions.
 | I'm the travel bot. Select one of the following options: find flights, find hotels, find rental car. | I can help you book travel. What would you like to do? |
 | Do you need anything else? Click yes or no.                                                          | Do you need anything else?                             |
 
-Azure AI services provides AI services with which to build intelligent apps, websites, and bots.
+Azure AI services provides features with which to build intelligent apps, websites, and bots.
 Adding these features to your bot can allow your bot to respond to open-ended user input more appropriately.
 
 This article describes support in the Bot Framework SDK for some of the features available in Azure AI services.
@@ -57,7 +57,7 @@ Natural language understanding features let you build custom natural language un
 | Service or feature | Description |
 |:-|:-|
 | Conversational Language Understanding (CLU) | A feature of the Azure AI Language service. |
-| Language Understanding (LUIS) | an Azure AI services service. (CLU is an updated version of LUIS.)<br/><br/>LUIS will be retired on 1 October 2025. |
+| Language Understanding (LUIS) | An Azure AI service. (CLU is an updated version of LUIS.)<br/><br/>LUIS will be retired on 1 October 2025. |
 
 ### Conversational Language Understanding (CLU)
 
@@ -94,7 +94,7 @@ Knowledge bases represent semi-structured content, such as that found in FAQs, m
 | Service or feature | Description |
 |:-|:-|
 | Question answering | A feature of the Azure AI Language service. |
-| QnA Maker | an Azure AI services service. (Question answering is an updated version of QnA Maker.)<br/><br/>Azure AI QnA Maker will be retired on 31 March 2025. |
+| QnA Maker | An Azure AI services service. (Question answering is an updated version of QnA Maker.)<br/><br/>Azure AI QnA Maker will be retired on 31 March 2025. |
 
 ### Question answering
 

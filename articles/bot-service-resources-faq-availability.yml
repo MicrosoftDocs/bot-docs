@@ -47,7 +47,7 @@ sections:
 
           You can run a bot offline with limited capabilities. For example, if you want to use a bot offline that uses Azure AI services,
           you must build a container for the bot, and required tools, and a container for the Azure AI services. Both connected via Docker Compose bridged network.
-          This is a "partial" offline solution because a Azure AI container needs periodic online connection.
+          This is a "partial" offline solution because an Azure AI services container needs periodic online connection.
 
           > [!NOTE]
           > [Azure AI QnA Maker will be retired on 31 March 2025](https://azure.microsoft.com/updates/azure-qna-maker-will-be-retired-on-31-march-2025/).

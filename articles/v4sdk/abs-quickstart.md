@@ -16,7 +16,7 @@ ms.custom: abs-meta-21q1
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-The _Azure Bot_ resource (_bot resource_) allows you to register your bot with Azure AI Bot Services and to connect your bot to channels. You can build, connect, and manage bots to interact with your users wherever they are, from your app or website to Teams, Messenger and many other channels.
+The _Azure Bot_ resource (_bot resource_) allows you to register your bot with Azure AI Bot Service and to connect your bot to channels. You can build, connect, and manage bots to interact with your users wherever they are, from your app or website to Teams, Messenger and many other channels.
 
 This article describes how to create a bot resource through the Azure portal.
 

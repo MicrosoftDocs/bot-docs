@@ -317,7 +317,6 @@ We'll next implement telemetry functionality in your LUIS service. The LUIS serv
             "https://" + configuration["LuisAPIHostName"]);
 
         // Set the recognizer options depending on which endpoint version you want to use.
-        // More details can be found in /azure/ai-services/luis/luis-migration-api-v3
         var recognizerOptions = new LuisRecognizerOptionsV3(luisApplication)
         {
             TelemetryClient = telemetryClient,

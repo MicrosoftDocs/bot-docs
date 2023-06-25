@@ -133,4 +133,4 @@ The [Handoff Library](https://github.com/microsoft/BotBuilder-Samples/tree/main/
 - [Integration with Microsoft Dynamics Omnichannel for Customer Service](https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/handoff-library/csharp_dotnetcore/samples)
 - [Integration with LivePerson LiveEngage platform](https://developers.liveperson.com/third-party-bots-microsoft-bot-framework.html)
 - [Dialogs](v4sdk/bot-builder-dialog-manage-conversation-flow.md)
-- [Azure AI services](https://www.microsoft.com/cognitive-services/text-analytics-api)
+- [Azure AI services](/azure/ai-services/)

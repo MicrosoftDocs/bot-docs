@@ -49,7 +49,7 @@ Here's are examples of question and answer definitions:
 ### ? who is the ceo?
 ```
 You can change the default message if you use the QnAMakerDialog.
-For details, see [Azure AI Bot Service documentation](https://docs.botframework.com/azure-bot-service/templates/qnamaker/#navtitle).
+For details, see [Azure AI Bot Service documentation](/articles/adaptive-dialog/adaptive-dialog-prebuilt-actions.md).
 ```
 
 
@@ -150,7 +150,7 @@ Here's an example of the above references:
 
 ```qna
 > QnA URL reference
-[QnaURL](/en-in/azure/ai-services/qnamaker/faqs)
+[QnaURL](/azure/ai-services/qnamaker/faqs)
 
 > Include all content in ./kb1.qna
 [KB1](./kb1.qna)
