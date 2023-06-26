@@ -79,7 +79,7 @@ Within the table, the following terms have the following meanings.
 | Channel                                     | Adaptive Card  | Animation card | Audio card | Hero card | Receipt card | Sign-in card | Thumbnail card | Video card |
 |:--------------------------------------------|:---------------|:---------------|:-----------|:----------|:-------------|:-------------|:---------------|:-----------|
 | Alexa                                       | No             | No             | No         | Yes       | No           | Yes          | No             | No         |
-| Azure Communication Services Chat (preview) | Yes (ACS to ACS only - see following note) | Yes            | Yes        | Yes       | Yes          | Yes          | Yes            | Yes        |
+| Azure Communication Services Chat (preview) | Yes* | Yes            | Yes        | Yes       | Yes          | Yes          | Yes            | Yes        |
 | Email                                       | Image          | Text           | Text       | Yes       | Yes          | Yes          | Yes            | Text       |
 | Facebook                                    | Image, partial | Yes            | Yes        | Yes       | Yes          | Yes          | Yes            | Yes        |
 | GroupMe                                     | Image          | Text           | Text       | Text      | Text         | Text         | Text           | Text       |
@@ -95,12 +95,13 @@ Within the table, the following terms have the following meanings.
 
 > [!NOTE]
 > 
-> For ACS Chat, Adaptive cards are only supported in ACS to ACS use cases, not ACS to Teams use cases.
+> 
 
 > [!NOTE]
 >
 > - The Direct Line channel technically supports all cards, but it's up to the client to implement them.
 > - Kik converts card actions to suggested actions.
+> - *For Azure Communication Services Chat, Adaptive cards are only supported within Azure Communication Services use cases, and not for Azure Communication Services to Teams use cases.
 
 ## Card action support by channel
 
