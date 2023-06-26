@@ -94,10 +94,6 @@ Within the table, the following terms have the following meanings.
 | Web Chat                                    | Yes            | Yes            | Yes        | Yes       | Yes          | Yes          | Yes            | Yes        |
 
 > [!NOTE]
-> 
-> 
-
-> [!NOTE]
 >
 > - The Direct Line channel technically supports all cards, but it's up to the client to implement them.
 > - Kik converts card actions to suggested actions.
