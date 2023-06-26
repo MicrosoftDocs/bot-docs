@@ -96,7 +96,6 @@ Within the table, the following terms have the following meanings.
 > [!NOTE]
 >
 > - The Direct Line channel technically supports all cards, but it's up to the client to implement them.
-> - Kik converts card actions to suggested actions.
 > - *For Azure Communication Services Chat, Adaptive cards are only supported within Azure Communication Services use cases, and not for Azure Communication Services to Teams use cases.
 
 ## Card action support by channel
