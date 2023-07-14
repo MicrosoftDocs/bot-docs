@@ -486,68 +486,6 @@ It's best practice to let users explicitly sign out, instead of relying on the c
 
 OAuth is handled differently in Teams than in other channels. The Teams Authentication Bot sample (in [C#][cs-teams-auth-sample], [JavaScript][js-teams-auth-sample], [Java][java-teams-auth-sample], or [Python][python-teams-auth-sample]) demonstrates how to properly implement authentication for Teams.
 
-One difference between other channels and Teams is that Teams sends an _invoke_ activity to the bot, rather than an _event_ activity.
-
-### [C#](#tab/csharp)
-
-**Bots/TeamsBot.cs**
-
-[!code-csharp[Invoke Activity](~/../botbuilder-samples/samples/csharp_dotnetcore/46.teams-auth/Bots/TeamsBot.cs?range=34-42&highlight=1)]
-
-### [JavaScript](#tab/javascript)
-
-**bots/teamsBot.js**
-
-[!code-javascript[Invoke Activity](~/../botbuilder-samples/samples/javascript_nodejs/46.teams-auth/bots/teamsBot.js?range=16-25&highlight=1)]
-### [Java](#tab/java)
-
-**TeamsBot.java**
-
-[!code-java[Invoke Activity](~/../botbuilder-samples/samples/java_springboot/46.teams-auth/src/main/java/com/microsoft/bot/sample/teamsauth/TeamsBot.java?range=46-54&highlight=2)]
-
-### [Python](#tab/python)
-
-Microsoft Teams currently differs slightly in the way auth is integrated with the bot. For more information, see the [Teams documentation](/microsoftteams/platform/bots/how-to/create-a-bot-for-teams) on authentication.
-
----
-
-If you use an _OAuth prompt_, this invoke activity must be forwarded to the dialog. You can do so in the `TeamsActivityHandler`. Add the following code to your main dialog file.
-
-### [C#](#tab/csharp)
-
-**Bots/DialogBot.cs**
-
-[!code-csharp[Dialogs Handler](~/../botbuilder-samples/samples/csharp_dotnetcore/46.teams-auth/Bots/DialogBot.cs?range=19)]
-
-### [JavaScript](#tab/javascript)
-
-**Bots/dialogBot.js**
-
-[!code-javascript[Dialogs Handler](~/../botbuilder-samples/samples/javascript_nodejs/46.teams-auth/bots/dialogBot.js?range=6)]
-
-### [Java](#tab/java)
-
-**DialogBot.java**
-
-[!code-java[Dialogs Handler](~/../botbuilder-samples/samples/java_springboot/46.teams-auth/src/main/java/com/microsoft/bot/sample/teamsauth/DialogBot.java?range=25)]
-
-### [Python](#tab/python)
-
-Microsoft Teams currently differs slightly in the way auth is integrated with the bot. For more information, see the [Teams documentation](/microsoftteams/platform/bots/how-to/create-a-bot-for-teams) on authentication.
-
----
-
-Finally, make sure to add an appropriate `TeamsActivityHandler` file (`TeamsActivityHandler.cs` for C# bots and `teamsActivityHandler.js` for JavaScript bots) at the topmost level in your bot's folder.
-
-The `TeamsActivityHandler` also sends _message reaction_ activities. A message reaction activity references the original activity using the _reply to ID_ field. This activity should also be visible through the [Activity Feed][teams-activity-feed] in Microsoft Teams.
-
-> [!NOTE]
-> You need to create a manifest and include a token URL in the `validDomains` section; otherwise the OAuthCard **Sign in** button won't open the authentication window.
->
-> - For a global bot, the token URL is `token.botframework.com`.
-> - For a regional bot, the token URL is `europe.token.botframework.com`.
->
-> Use the [App Studio](/microsoftteams/platform/get-started/get-started-app-studio) to generate your manifest.
 
 ### Further reading
 
@@ -574,9 +512,9 @@ The `TeamsActivityHandler` also sends _message reaction_ activities. A message r
 [java-msgraph-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/24.bot-authentication-msgraph
 [python-msgraph-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/24.bot-authentication-msgraph
 
-[cs-teams-auth-sample]:https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/46.teams-auth
-[js-teams-auth-sample]:https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/46.teams-auth
-[java-teams-auth-sample]:https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/46.teams-auth
-[python-teams-auth-sample]:https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/46.teams-auth
+[cs-teams-auth-sample]:https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-teams-authentication/csharp
+[js-teams-auth-sample]:https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-conversation-sso-quickstart/js
+[java-teams-auth-sample]:https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-teams-authentication/java
+[python-teams-auth-sample]:https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-teams-authentication/python
 
 [teams-activity-feed]:/microsoftteams/platform/concepts/activity-feed
