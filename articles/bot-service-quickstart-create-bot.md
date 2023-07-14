@@ -54,7 +54,7 @@ The generator supports three different template options as shown below.
 | ---------- |  ---------  |
 | Echo Bot | A good template if you want a little more than "Hello World!", but not much more.  This template handles the very basics of sending messages to a bot, and having the bot process the messages by repeating them back to the user.  This template produces a bot that simply "echoes" back to the user anything the user says to the bot. |
 | Empty Bot | A good template if you're familiar with Bot Framework v4, and simply want a basic skeleton project.  Also a good option if you want to take sample code from the documentation and paste it into a minimal bot in order to learn. |
-| Core Bot | A good template if you want to create advanced bots, as it uses multi-turn dialogs and [LUIS](https://www.luis.ai), an AI based cognitive service, to implement language understanding. This template creates a bot that can extract places and dates to book a flight. |
+| Core Bot | A good template if you want to create advanced bots, as it uses multi-turn dialogs and [Azure AI LUIS](https://www.luis.ai) to implement language understanding. This template creates a bot that can extract places and dates to book a flight. |
 
 [!INCLUDE [luis-sunset-alert](includes/luis-sunset-alert.md)]
 

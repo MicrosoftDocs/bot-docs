@@ -23,7 +23,7 @@ Once you've built your bot, onboarding it with Direct Line Speech will enable lo
 
 - An Azure account. If you don't already have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 - An existing bot published to Azure.
-- A **Speech** cognitive service resource. You can either [create a new Speech resource](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesSpeechServices) in Azure or use an existing one.
+- An [Azure AI Speech](/azure/ai-services/speech-service/index.yml) resource. You can either [create a new Speech resource](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesSpeechServices) in Azure or use an existing one.
 
 ## Add the Direct Line Speech channel
 

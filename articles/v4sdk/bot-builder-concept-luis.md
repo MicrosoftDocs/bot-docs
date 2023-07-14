@@ -36,7 +36,7 @@ Adding these features to your bot can allow your bot to respond to open-ended us
 This article describes support in the Bot Framework SDK for some of the features available in Azure AI services.
 
 - For tips on how to design these features into your bot, see [Design knowledge bots](../bot-service-design-pattern-knowledge-base.md).
-- For detailed information about Azure Cognitive Service, see the [Azure AI services documentation](/azure/ai-services/).
+- For detailed information about Azure AI services, see the [Azure AI services documentation](/azure/ai-services/).
 
 ## General guidance
 
@@ -136,7 +136,7 @@ Azure Cognitive Search helps your bot provide users with a rich search experienc
 
 You can use [Azure Cognitive Search](/azure/search/) to create an efficient index with which to search, facet, and filter a data store.
 
-- For how to configure Cognitive Search within Cognitive Service for Language, see [Configure custom question answering enabled resources](/azure/ai-services/language-service/question-answering/how-to/configure-resources).
+- For how to configure Cognitive Search within Azure AI Language, see [Configure custom question answering enabled resources](/azure/ai-services/language-service/question-answering/how-to/configure-resources).
 - For information about the Cognitive Search service, see [What is Azure Cognitive Search?](/azure/search/search-what-is-azure-search).
 
 ## Use multiple features together

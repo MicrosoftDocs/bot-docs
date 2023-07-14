@@ -168,7 +168,7 @@ Follow the steps below to update your CoreBot example:
 > [!TIP]
 > If you're following along and updating the CoreBot sample code, you can refer to the [Application Insights sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/21.corebot-app-insights) if you run into any problems.
 
-Telemetry is now added to your bot dialogs. If you run your bot now, you should see things being logged in Application Insights; however, if you have any integrated technology such as a Cognitive Service, you'll need to add the `TelemetryClient` to that code as well.
+Telemetry is now added to your bot dialogs. If you run your bot now, you should see things being logged in Application Insights; however, if you have any integrated technology such as an Azure AI service, you'll need to add the `TelemetryClient` to that code as well.
 
 # [JavaScript](#tab/javascript)
 
