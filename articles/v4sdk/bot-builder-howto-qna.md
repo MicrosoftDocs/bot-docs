@@ -234,12 +234,12 @@ QnA Maker can be combined with other Azure AI services, to make your bot even mo
 > [!div class="nextstepaction"]
 > [Use Orchestrator for intent resolution](./bot-builder-tutorial-orchestrator.md)
 
-[**C#** (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/master/archive/csharp_dotnetcore/11.qnamaker
-[**JavaScript** (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/master/archive/javascript_nodejs/11.qnamaker
-[**Java** (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/java_springboot/11.qnamaker
-[**Python** (archived): (https://github.com/microsoft/BotBuilder-Samples/tree/master/archive/python/11.qnamaker
+[**C#** (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/csharp_dotnetcore/11.qnamaker
+[**JavaScript** (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/javascript_nodejs/11.qnamaker
+[**Java** (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/11.qnamaker
+[**Python** (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/python/11.qnamaker
 
-[**C#** multi-turn sample (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/49.qnamaker-all-features
-[**JavaScript** multi-turn sample (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/49.qnamaker-all-features
-[**Java** multi-turn sample (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/49.qnamaker-all-features
-[**Python** multi-turn sample (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/49.qnamaker-all-features
+[**C#** multi-turn sample (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/csharp_dotnetcore/49.qnamaker-all-features
+[**JavaScript** multi-turn sample (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/javascript_nodejs/49.qnamaker-all-features
+[**Java** multi-turn sample (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/49.qnamaker-all-features
+[**Python** multi-turn sample (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/python/49.qnamaker-all-features
