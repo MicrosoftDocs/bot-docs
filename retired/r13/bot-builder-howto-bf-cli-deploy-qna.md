@@ -366,8 +366,8 @@ See [Using declarative assets in adaptive dialogs][declarative] for more informa
 - How to [Create customized lists of synonyms for your QnA Maker knowledge base](bot-builder-howto-bf-cli-alterations-qna.md)
 
 <!-------------------------------------------------------------------------------------------------->
-[qna-overview]: /azure/ai-services/qnamaker/overview/overview
-[cognitive-services-overview]: /azure/ai-services/Welcome
+[qna-overview]: /azure/cognitive-services/qnamaker/overview/overview
+[cognitive-services-overview]: /azure/cognitive-services/Welcome
 [create-cognitive-services]: https://portal.azure.com/#create/Microsoft.CognitiveServicesQnAMaker
 [qna-maker-recognizer]: bot-builder-concept-adaptive-dialog-recognizers.md#qna-maker-recognizer
 [qna-file-format]: ../file-format/bot-builder-qna-file-format.md
@@ -383,8 +383,8 @@ See [Using declarative assets in adaptive dialogs][declarative] for more informa
 [bf-qnamakerbuild]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-qnamakerbuild
 [dialog-merge-command]: bot-builder-concept-adaptive-dialog-declarative.md#the-merge-command
 
-[test-knowledge-base]: /azure/ai-services/QnAMaker/how-to/test-knowledge-base
-[batch-testing]: /azure/ai-services/QnAMaker/quickstarts/batch-testing
+[test-knowledge-base]: /azure/cognitive-services/QnAMaker/how-to/test-knowledge-base
+[batch-testing]: /azure/cognitive-services/QnAMaker/quickstarts/batch-testing
 [declarative]: bot-builder-concept-adaptive-dialog-declarative.md
 
 [qna-maker-sample]: https://aka.ms/csharp-adaptive-dialog-07-qnamaker-sample

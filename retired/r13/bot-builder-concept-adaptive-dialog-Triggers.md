@@ -154,5 +154,5 @@ For detailed information and an example, see the [Custom event triggers][custom-
 
 <!-- External links-->
 [luis]:https://www.luis.ai/home
-[luis-prediction-scores]:/azure/ai-services/luis/luis-concept-prediction-score
+[luis-prediction-scores]:/azure/cognitive-services/luis/luis-concept-prediction-score
 

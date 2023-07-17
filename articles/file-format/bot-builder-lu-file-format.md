@@ -84,7 +84,7 @@ Here is an example .lu file demonstrating these intents and example utterances t
 >
 > Multiple comment ("**>**") characters can also be used to define outlining sections in the .lu file to help you organize the content. [Composer][] allows you to take advantage of outlining when editing LU files.
 
-For more information about intents and utterances, see [Intents in your LUIS app](/azure/ai-services/luis/luis-concept-intent) and [Understand what good utterances are for your LUIS app](/azure/ai-services/luis/luis-concept-utterance) in the LUIS documentation.
+For more information about intents and utterances, see [Intents in your LUIS app](/azure/cognitive-services/luis/luis-concept-intent) and [Understand what good utterances are for your LUIS app](/azure/cognitive-services/luis/luis-concept-utterance) in the LUIS documentation.
 
 ## Entities
 
@@ -758,7 +758,7 @@ Below are examples of how to make URI references:
 - Read [.qna file format](bot-builder-qna-file-format.md) for more information about .qna files.
 
 [luis]: https://luis.ai
-[entity]: /azure/ai-services/luis/luis-concept-entity-types
-[ml-entity]: /azure/ai-services/luis/luis-concept-entity-types#machine-learned-ml-entity
+[entity]: /azure/cognitive-services/luis/luis-concept-entity-types
+[ml-entity]: /azure/cognitive-services/luis/luis-concept-entity-types#machine-learned-ml-entity
 [orchestrator]: /composer/concept-orchestrator
 [Composer]: /composer/

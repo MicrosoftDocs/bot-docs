@@ -214,8 +214,8 @@ _Confirmation and correction_ enables the scenario where you ask the user for co
 - [Cross train your bot to use both LUIS and QnA Maker recognizers][cross-train-concepts].
 - [Adaptive expressions][adaptive-expressions].
 - [.lu file format](/file-format/bot-builder-lu-file-format.md)
-- [Intents in your LUIS app](/azure/ai-services/LUIS/luis-concept-intent)
-- [Understand what good utterances are for your LUIS app](/azure/ai-services/LUIS/luis-concept-utterance)
+- [Intents in your LUIS app](/azure/cognitive-services/LUIS/luis-concept-intent)
+- [Understand what good utterances are for your LUIS app](/azure/cognitive-services/LUIS/luis-concept-utterance)
 
 [introduction]:bot-builder-adaptive-dialog-introduction.md
 [inputs]: bot-builder-concept-adaptive-dialog-Inputs.md

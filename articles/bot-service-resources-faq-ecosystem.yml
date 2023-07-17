@@ -107,7 +107,7 @@ sections:
 
       - question: How does the Bot Framework relate to Azure AI services?
         answer: |
-          Both the Bot Framework and [Azure AI services](/azure/ai-services/) are built from years of research and use in popular Microsoft products.
+          Both the Bot Framework and [Azure AI services](/azure/cognitive-services/) are built from years of research and use in popular Microsoft products.
           These capabilities enable every organization to take advantage of the power of data, the cloud and intelligence to build their own intelligent systems that unlock new opportunities,
           increase their speed of business and lead the industries in which they serve their customers.
 
@@ -115,7 +115,7 @@ sections:
         answer: |
           [!INCLUDE [luis-sunset-alert](includes/luis-sunset-alert.md)]
 
-          For a list of examples, see the [Pre-built entities section](/azure/ai-services/LUIS/luis-reference-prebuilt-entities) of the LUIS documentation.
+          For a list of examples, see the [Pre-built entities section](/azure/cognitive-services/LUIS/luis-reference-prebuilt-entities) of the LUIS documentation.
 
       - question: How can I use more than the maximum number of LUIS intents?
         answer: |
@@ -137,5 +137,5 @@ sections:
         answer: |
           [!INCLUDE [luis-sunset-alert](includes/luis-sunset-alert.md)]
 
-          - [LUIS documentation](/azure/ai-services/luis/)
+          - [LUIS documentation](/azure/cognitive-services/luis/)
           - [Language Understanding Forum](https://social.msdn.microsoft.com/forums/azure/home?forum=LUIS)

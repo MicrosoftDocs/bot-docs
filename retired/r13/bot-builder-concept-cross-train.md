@@ -183,14 +183,14 @@ After cross training your LUIS and QnA Maker models, you need to be sure and use
 [utterances]: bot-builder-concept-adaptive-dialog-recognizers.md#utterances
 [interruptions]: bot-builder-concept-adaptive-dialog-interruptions.md
 [Global-interrupts]: bot-builder-concept-adaptive-dialog-interruptions.md#handling-interruptions-globally
-[luis]: /azure/ai-services/luis/what-is-luis
+[luis]: /azure/cognitive-services/luis/what-is-luis
 [luis-recognizer]: bot-builder-concept-adaptive-dialog-recognizers.md#luis-recognizer
-[cross-trained-recognizer-set-concept]: /azure/ai-services/luis/what-is-luis
+[cross-trained-recognizer-set-concept]: /azure/cognitive-services/luis/what-is-luis
 [luis-recognizer]: bot-builder-concept-adaptive-dialog-recognizers.md#cross-trained-recognizer-set
 [luis-build]: bot-builder-howto-bf-cli-deploy-luis.md#create-and-train-a-luis-app-then-publish-it-using-the-build-command
 [bf-luiscross-train]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-luiscross-train
 [lu-templates]: ../file-format/bot-builder-lu-file-format.md
-[qnamaker]: /azure/ai-services/QnAMaker/Overview/overview
+[qnamaker]: /azure/cognitive-services/QnAMaker/Overview/overview
 [qnamaker-recognizer]: bot-builder-concept-adaptive-dialog-recognizers.md#qna-maker-recognizer
 [qna-file-format]: ../file-format/bot-builder-qna-file-format.md
 [qnamaker-build]: bot-builder-howto-bf-cli-deploy-qna.md#create-a-qna-maker-knowledge-base-and-publish-it-to-production-using-the-build-command

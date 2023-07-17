@@ -690,7 +690,7 @@ The screenshot shown below verifies that you can interrupt the conversational fl
 
 [adaptive-expressions]: bot-builder-concept-adaptive-expressions.md
 [person-name]: ../file-format/bot-builder-lu-file-format.md#machine-learned-entity
-[prediction-score]: /azure/ai-services/luis/luis-concept-prediction-score
+[prediction-score]: /azure/cognitive-services/luis/luis-concept-prediction-score
 
 <!-- Setting up LUIS ----->
 [CognitiveServicesLUISAllInOne]: https://portal.azure.com/#create/Microsoft.CognitiveServicesLUISAllInOne

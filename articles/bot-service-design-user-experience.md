@@ -79,7 +79,7 @@ In other cases, a user may type a specific command. For example, a DevOps bot th
 > Designing a bot to require specific commands from the user can often provide a good user experience while
 > also eliminating the need for natural language understanding capability.
 
-For a _knowledge base_ or _questions and answers_ bot, a user may ask general questions. For example, imagine a bot that can answer questions based on the contents of thousands of documents. [Azure AI services](/azure/ai-services/) and [Azure Search](/azure/search/) are both technologies designed specifically for this type of scenario. For more information, see [Design knowledge bots](bot-service-design-pattern-knowledge-base.md) and [Language understanding](v4sdk/bot-builder-concept-luis.md).
+For a _knowledge base_ or _questions and answers_ bot, a user may ask general questions. For example, imagine a bot that can answer questions based on the contents of thousands of documents. [Azure AI services](/azure/cognitive-services/) and [Azure Search](/azure/search/) are both technologies designed specifically for this type of scenario. For more information, see [Design knowledge bots](bot-service-design-pattern-knowledge-base.md) and [Language understanding](v4sdk/bot-builder-concept-luis.md).
 
 > [!TIP]
 > If you're designing a bot that will answer questions based on structured or unstructured data from

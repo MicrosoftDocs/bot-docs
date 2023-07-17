@@ -35,7 +35,7 @@ In this article you'll learn about:
 - A subscription to [Microsoft Azure](https://portal.azure.com/)
 - An [Application Insights key](../bot-service-resources-app-insights-keys.md)
 - Familiarity with [QnA Maker](https://qnamaker.ai/) is helpful.
-- A [QnA Maker](/azure/ai-services/qnamaker/how-to/set-up-qnamaker-service-azure) account.
+- A [QnA Maker](/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure) account.
 - An _existing_ and published QnA Maker knowledge base.
 
 > [!NOTE]
@@ -122,7 +122,7 @@ We'll start with the [QnA Maker sample app](https://github.com/microsoft/BotBuil
     > [!NOTE]
     >
     > - Details on getting the _Application Insights instrumentation key_ can be found in the article [Application Insights keys](../bot-service-resources-app-insights-keys.md).
-    > - You should already have a [QnA Maker account](/azure/ai-services/qnamaker/how-to/set-up-qnamaker-service-azure). For information on getting the QnA Maker knowledge base ID, endpoint key and host values, see the [Publish to get GenerateAnswer endpoint](/azure/ai-services/qnamaker/how-to/metadata-generateanswer-usage#publish-to-get-generateanswer-endpoint) section of QnA Maker's **Get an answer with the GenerateAnswer API** article.
+    > - You should already have a [QnA Maker account](/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure). For information on getting the QnA Maker knowledge base ID, endpoint key and host values, see the [Publish to get GenerateAnswer endpoint](/azure/cognitive-services/qnamaker/how-to/metadata-generateanswer-usage#publish-to-get-generateanswer-endpoint) section of QnA Maker's **Get an answer with the GenerateAnswer API** article.
 
 At this point, the preliminary work to enable telemetry using Application Insights is done. You can run your bot locally using the Bot Framework Emulator and then go into Application Insights to see what is being logged such as response time, overall app health, and general running information.
 

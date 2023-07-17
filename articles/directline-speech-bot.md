@@ -153,6 +153,6 @@ protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivi
 
 ## Additional information
 
-- For a complete example of creating and using a voice enabled bot, see [Tutorial: Voice-enable your bot using the Speech SDK](/azure/ai-services/speech-service/tutorial-voice-enable-your-bot-speech-sdk).
+- For a complete example of creating and using a voice enabled bot, see [Tutorial: Voice-enable your bot using the Speech SDK](/azure/cognitive-services/speech-service/tutorial-voice-enable-your-bot-speech-sdk).
 
 - For more information on working with activities, see [how bots work](./v4sdk/bot-builder-basics.md) and [how to send and receive text messages](./v4sdk/bot-builder-howto-send-messages.md).

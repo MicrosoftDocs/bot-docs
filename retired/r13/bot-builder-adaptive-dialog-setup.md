@@ -168,8 +168,8 @@ Adaptive dialogs are a powerful tool and have many ways in which they can be cus
 - [Events and triggers](bot-builder-concept-adaptive-dialog-Triggers.md)
 - [Actions](bot-builder-concept-adaptive-dialog-actions.md) and [inputs](bot-builder-concept-adaptive-dialog-inputs.md)
 - [Recognizers](bot-builder-concept-adaptive-dialog-recognizers.md)
-  - [What is LUIS](/azure/ai-services/luis/what-is-luis)
-  - [What is QnA Maker](/azure/ai-services/qnamaker/overview/overview)
+  - [What is LUIS](/azure/cognitive-services/luis/what-is-luis)
+  - [What is QnA Maker](/azure/cognitive-services/qnamaker/overview/overview)
 - [Memory scopes and paths](bot-builder-concept-adaptive-dialog-memory-states.md)
 - [Declarative dialogs](bot-builder-concept-adaptive-dialog-declarative.md) and type converters
   - [Creating a schema file](bot-builder-dialogs-declarative.md#creating-the-schema-file)

@@ -125,7 +125,7 @@ The QnA Maker dialog accesses a QnA Maker knowledge base and supports QnA Maker'
 
 For more information, see:
 
-- [What is QnA Maker?](/azure/ai-services/qnamaker/overview/overview).
+- [What is QnA Maker?](/azure/cognitive-services/qnamaker/overview/overview).
 - In the SDK, how to [use QnA Maker to answer questions](bot-builder-howto-qna.md).
 - In Composer, how to [Add a QnA Maker knowledge base to your bot](/composer/how-to-add-qna-to-bot).
 

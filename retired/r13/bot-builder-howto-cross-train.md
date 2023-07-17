@@ -629,8 +629,8 @@ You can now interact with your bot.
 
 <!------------------------------------------------------------------------------------------------------------------>
 [create-azure-account]: https://azure.microsoft.com/free/?WT.mc_id=A261C142F
-[luis]: /azure/ai-services/luis/what-is-luis
-[qnamaker]: /azure/ai-services/qnamaker/overview/overview
+[luis]: /azure/cognitive-services/luis/what-is-luis
+[qnamaker]: /azure/cognitive-services/qnamaker/overview/overview
 [cs-sample-todo-bot]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/adaptive-dialog/08.todo-bot-luis-qnamaker
 [lu-templates]: ../file-format/bot-builder-lu-file-format.md
 [qna-file-format]: ../file-format/bot-builder-qna-file-format.md
@@ -655,6 +655,6 @@ You can now interact with your bot.
 [bf-luisbuild]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-luisbuild
 [luis-build]: bot-builder-howto-bf-cli-deploy-luis.md#create-and-train-a-luis-app-then-publish-it-using-the-build-command
 
-[luis-migration-authoring]: /azure/ai-services/luis/luis-migration-authoring
+[luis-migration-authoring]: /azure/cognitive-services/luis/luis-migration-authoring
 
 <!---------------------------------------------------------------------------------------------------------------->
