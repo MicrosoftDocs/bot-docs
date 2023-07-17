@@ -49,8 +49,8 @@ Your bot then can use the knowledge base to answer the user's questions.
 For new bot development, consider using [Power Virtual Agents](/power-virtual-agents/fundamentals-what-is-power-virtual-agents).
 If you need to create a new knowledge base for a Bot Framework SDK bot, see the following Azure AI services articles:
 
-- [What is question answering?](/azure/cognitive-services/language-service/question-answering/overview)
-- [Create an FAQ bot](/azure/cognitive-services/language-service/question-answering/tutorials/bot-service)
+- [What is question answering?](/azure/ai-services/language-service/question-answering/overview)
+- [Create an FAQ bot](/azure/ai-services/language-service/question-answering/tutorials/bot-service)
 - [Azure Cognitive Language Services Question Answering client library for .NET](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/cognitivelanguage/Azure.AI.Language.QuestionAnswering#readme)
 
 ## [C#](#tab/cs)
@@ -99,7 +99,7 @@ Create LUIS apps from the _HomeAutomation_ and _Weather_ .lu files in the _cogni
 
 1. Record the application IDs, display names, authoring key, and location.
 
-For more information, see how to **Create a LUIS app in the LUIS portal** and **Obtain values to connect to your LUIS app** in [Add natural language understanding to your bot](bot-builder-howto-v4-luis.md) and the LUIS documentation on how to [train](/azure/cognitive-services/LUIS/luis-how-to-train) and [publish](/azure/cognitive-services/LUIS/publishapp) an app to the production environment.
+For more information, see how to **Create a LUIS app in the LUIS portal** and **Obtain values to connect to your LUIS app** in [Add natural language understanding to your bot](bot-builder-howto-v4-luis.md) and the LUIS documentation on how to [train](/azure/ai-services/LUIS/luis-how-to-train) and [publish](/azure/ai-services/LUIS/publishapp) an app to the production environment.
 
 ## Obtain values to connect your bot to the knowledge base
 
@@ -108,7 +108,7 @@ For more information, see how to **Create a LUIS app in the LUIS portal** and **
 You need an existing knowledge base and your QnA Maker hostname and endpoint key.
 
 > [!TIP]
-> The QnA Maker documentation has instructions on how to [create, train, and publish your knowledge base](/azure/cognitive-services/qnamaker/quickstarts/create-publish-knowledge-base).
+> The QnA Maker documentation has instructions on how to [create, train, and publish your knowledge base](/azure/ai-services/qnamaker/quickstarts/create-publish-knowledge-base).
 
 ## Create the Orchestrator snapshot file
 

@@ -348,14 +348,14 @@ See [Using declarative assets in adaptive dialogs][declarative] for more informa
 - [Updating your LUIS Models][how-to-update-using-luis-cli]
 
 <!-------------------------------------------------------------------------------------------->
-[cognitive-services-overview]: /azure/cognitive-services/Welcome
+[cognitive-services-overview]: /azure/ai-services/Welcome
 [create-cognitive-services]: https://portal.azure.com/#create/Microsoft.CognitiveServicesLUISAllInOne
 [luis-recognizer]: bot-builder-concept-adaptive-dialog-recognizers.md#luis-recognizer
 [natural-language-processing-in-adaptive-dialogs]: bot-builder-concept-adaptive-dialog-recognizers.md#introduction-to-natural-language-processing-in-adaptive-dialogs
 [language-understanding]: bot-builder-concept-adaptive-dialog-recognizers.md#language-understanding
 [lu-templates]: ../file-format/bot-builder-lu-file-format.md
 [model-description]: ../file-format/bot-builder-lu-file-format.md#model-description
-[luis-how-to-azure-subscription]: /azure/cognitive-services/luis/luis-how-to-azure-subscription
+[luis-how-to-azure-subscription]: /azure/ai-services/luis/luis-how-to-azure-subscription
 [bf-cli-overview]: bf-cli-overview.md
 
 [bf-luisapplicationimport]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-luisapplicationimport
@@ -369,13 +369,13 @@ See [Using declarative assets in adaptive dialogs][declarative] for more informa
 [declarative]: bot-builder-concept-adaptive-dialog-declarative.md
 [dialog-merge-command]: bot-builder-concept-adaptive-dialog-declarative.md#the-merge-command
 
-[luis-how-to-add-intents]: /azure/cognitive-services/LUIS/luis-how-to-add-intents
-[luis-how-to-start-new-app]: /azure/cognitive-services/LUIS/luis-how-to-start-new-app
-[luis-how-to-train]: /azure/cognitive-services/LUIS/luis-how-to-train
-[luis-concept-test]: /azure/cognitive-services/LUIS/luis-concept-test
-[test-an-utterance]: /azure/cognitive-services/LUIS/luis-interactive-test#test-an-utterance
-[luis-interactive-test]: /azure/cognitive-services/LUIS/luis-interactive-test
-[luis-how-to-publish-app]: /azure/cognitive-services/LUIS/luis-how-to-publish-app
+[luis-how-to-add-intents]: /azure/ai-services/LUIS/luis-how-to-add-intents
+[luis-how-to-start-new-app]: /azure/ai-services/LUIS/luis-how-to-start-new-app
+[luis-how-to-train]: /azure/ai-services/LUIS/luis-how-to-train
+[luis-concept-test]: /azure/ai-services/LUIS/luis-concept-test
+[test-an-utterance]: /azure/ai-services/LUIS/luis-interactive-test#test-an-utterance
+[luis-interactive-test]: /azure/ai-services/LUIS/luis-interactive-test
+[luis-how-to-publish-app]: /azure/ai-services/LUIS/luis-how-to-publish-app
 
 [ToDoBotWithLUISAndQnAMakerSample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/adaptive-dialog/08.todo-bot-luis-qnamaker
 

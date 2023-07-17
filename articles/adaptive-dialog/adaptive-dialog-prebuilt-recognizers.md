@@ -135,15 +135,15 @@ The Regex recognizer consists primarily of:
 [2]:/dotnet/standard/base-types/regular-expression-language-quick-reference
 [3]:https://github.com/microsoft/botbuilder/blob/master/specs/botframework-activity/botframework-activity.md#locale
 [4]:https://luis.ai
-[5]:/azure/cognitive-services/luis/what-is-luis
+[5]:/azure/ai-services/luis/what-is-luis
 [6]:../v4sdk/bot-builder-concept-luis.md
 [7]:../file-format/bot-builder-lu-file-format.md
 [8]:../v4sdk/bot-builder-concept-adaptive-expressions.md
-[9]:/azure/cognitive-services/luis/luis-concept-data-extraction?tabs=V2
+[9]:/azure/ai-services/luis/luis-concept-data-extraction?tabs=V2
 [10]:../v4sdk/bot-builder-howto-v4-luis.md
-[11]:/azure/cognitive-services/luis/luis-how-to-start-new-app
+[11]:/azure/ai-services/luis/luis-how-to-start-new-app
 [12]:https://qnamaker.ai
-[13]:https://azure.microsoft.com/services/cognitive-services/
+[13]:https://azure.microsoft.com/services/ai-services/
 [Orchestrator]:/composer/concept-orchestrator
 [15]:https://github.com/microsoft/botframework-cli/tree/main/packages/orchestrator
 [update-the-recognizer-type-to-luis]: /composer/how-to-add-luis#update-the-recognizer-type-to-luis

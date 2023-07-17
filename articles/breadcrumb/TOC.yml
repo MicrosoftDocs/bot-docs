@@ -7,8 +7,8 @@
     topicHref: /azure/index
     items:
     - name: Azure AI services
-      tocHref: /azure/cognitive-services/
-      topicHref: /azure/cognitive-services/
+      tocHref: /azure/ai-services/
+      topicHref: /azure/ai-services/
       items:
       - name: Azure AI Bot Service
         href: /azure/bot-service/

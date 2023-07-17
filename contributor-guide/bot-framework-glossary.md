@@ -407,8 +407,8 @@ See [CI/CD](#cicd).
 - **Definition**:
   - "A robust, end-to-end solution for creating a flexible, extensible voice assistant. It is powered by the Bot Framework and its Direct Line Speech channel, that is optimized for voice-in, voice-out interaction with bots."
   - Direct Line Speech is a collection of services and protocols for supporting speech-enabled bots.
-- **Notes**: Provides integration with the [Speech SDK](https://learn.microsoft.com/azure/cognitive-services/speech-service/speech-sdk).
-- **See**: [What is Direct Line Speech?](https://learn.microsoft.com/azure/cognitive-services/speech-service/direct-line-speech).
+- **Notes**: Provides integration with the [Speech SDK](https://learn.microsoft.com/azure/ai-services/speech-service/speech-sdk).
+- **See**: [What is Direct Line Speech?](https://learn.microsoft.com/azure/ai-services/speech-service/direct-line-speech).
 - **See also**: [Direct Line](#direct-line), [WebSockets](#websocket).
 
 <a id="e"></a>
