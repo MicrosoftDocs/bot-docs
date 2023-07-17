@@ -105,7 +105,7 @@ sections:
           - For programmatic approach to exchange your secret for a token, use the code snippet provided in the [production embedding option](bot-service-channel-connect-webchat.md#production-embedding-option)
             and adjust the URLs from global Azure to Azure Government.
 
-      - question: How does the Bot Framework relate to Azure AI services?
+      - question: How does the Bot Framework relate to Azure cognitive services?
         answer: |
           Both the Bot Framework and [Azure AI services](/azure/cognitive-services/) are built from years of research and use in popular Microsoft products.
           These capabilities enable every organization to take advantage of the power of data, the cloud and intelligence to build their own intelligent systems that unlock new opportunities,
