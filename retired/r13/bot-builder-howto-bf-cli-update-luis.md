@@ -169,10 +169,7 @@ For information about publishing a LUIS application, see [Publish your active, t
 [natural-language-processing-in-adaptive-dialogs]: bot-builder-concept-adaptive-dialog-recognizers.md#introduction-to-natural-language-processing-in-adaptive-dialogs
 [language-understanding]: bot-builder-concept-adaptive-dialog-recognizers.md#language-understanding
 [lu-templates]: ../file-format/bot-builder-lu-file-format.md
-[luis-how-to-azure-subscription]: /azure/ai-services/luis/luis-how-to-azure-subscription
-
 [bf-luisapplicationimport]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli-luis#bf-luisapplicationimport
-[bf-luisapplicationcreate]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli-luis#bf-luisapplicationcreate
 [bf-luisapplicationlist]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli-luis#bf-luisapplicationlist
 [bf-luisapplicationshow]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli-luis#bf-luisapplicationshow
 [bf-luistrainrun]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli-luis#bf-luistrainrun
@@ -180,14 +177,9 @@ For information about publishing a LUIS application, see [Publish your active, t
 [bf-luisversionrename]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli-luis#bf-luisversionrename
 [bf-luisversiondelete]:  https://github.com/microsoft/botframework-cli/tree/main/packages/cli-luis#bf-luisversiondelete
 [bf-luisconvert]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli-luis#bf-luisconvert
-
-[luis-how-to-add-intents]: /azure/ai-services/LUIS/luis-how-to-add-intents
-[luis-how-to-start-new-app]: /azure/ai-services/LUIS/luis-how-to-start-new-app
-[luis-how-to-train]: /azure/ai-services/LUIS/luis-how-to-train
-[luis-concept-test]: /azure/ai-services/LUIS/luis-concept-test
-[test-an-utterance]: /azure/ai-services/LUIS/luis-interactive-test#test-an-utterance
-[luis-interactive-test]: /azure/ai-services/LUIS/luis-interactive-test
-[luis-how-to-publish-app]: /azure/ai-services/LUIS/luis-how-to-publish-app
-
+[luis-how-to-train]: /azure/ai-services/LUIS/how-to/train-test
+[luis-concept-test]: /azure/ai-services/LUIS/how-to/train-test
+[test-an-utterance]: /azure/ai-services/LUIS/how-to/train-test
+[luis-how-to-publish-app]: /azure/ai-services/LUIS/how-to/publish
 [how-to-deploy-using-luis-cli]: bot-builder-howto-bf-cli-deploy-luis.md
 <!-------------------------------------------------------------------------------------------------->

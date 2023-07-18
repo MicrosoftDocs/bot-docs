@@ -99,7 +99,7 @@ Create LUIS apps from the _HomeAutomation_ and _Weather_ .lu files in the _cogni
 
 1. Record the application IDs, display names, authoring key, and location.
 
-For more information, see how to **Create a LUIS app in the LUIS portal** and **Obtain values to connect to your LUIS app** in [Add natural language understanding to your bot](bot-builder-howto-v4-luis.md) and the LUIS documentation on how to [train](/azure/ai-services/LUIS/luis-how-to-train) and [publish](/azure/ai-services/LUIS/publishapp) an app to the production environment.
+For more information, see how to **Create a LUIS app in the LUIS portal** and **Obtain values to connect to your LUIS app** in [Add natural language understanding to your bot](bot-builder-howto-v4-luis.md) and the LUIS documentation on how to [train](/azure/ai-services/LUIS/how-to/train-test) and [publish](/azure/ai-servicesLUIS/how-to/publish) an app to the production environment.
 
 ## Obtain values to connect your bot to the knowledge base
 

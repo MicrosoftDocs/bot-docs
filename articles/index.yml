@@ -159,8 +159,8 @@ additionalContent:
           - text: Adaptive Cards
             url: /adaptive-cards
           - text: Azure AI services
-            url: /azure/cognitive-services
-          - text: Azure AI service for Language
+            url: /azure/ai-services
+          - text: Azure AI Language
             url: /azure/ai-services/language-service
-          - text: Speech service
+          - text: Azure AI Speech
             url: /azure/ai-services/speech-service

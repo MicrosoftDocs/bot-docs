@@ -50,7 +50,6 @@ Language Understanding (LUIS) is a cloud-based API service that applies custom m
 > * [Add LUIS for language understanding][update-the-recognizer-type-to-luis]
 > * [LUIS.ai][4] is a machine learning-based service that enables you to build natural language capabilities into your bot.
 > * [What is LUIS][5]
-> * [Create a new LUIS app in the LUIS portal][11]
 > * [Language Understanding][6]
 > * [.lu file format][7]
 > * [Adaptive expressions][8]
@@ -141,7 +140,6 @@ The Regex recognizer consists primarily of:
 [8]:../v4sdk/bot-builder-concept-adaptive-expressions.md
 [9]:/azure/ai-services/luis/luis-concept-data-extraction?tabs=V2
 [10]:../v4sdk/bot-builder-howto-v4-luis.md
-[11]:/azure/ai-services/luis/luis-how-to-start-new-app
 [12]:https://qnamaker.ai
 [13]:https://azure.microsoft.com/services/ai-services/
 [Orchestrator]:/composer/concept-orchestrator

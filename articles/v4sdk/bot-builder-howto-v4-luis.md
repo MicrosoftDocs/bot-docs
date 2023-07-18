@@ -113,7 +113,7 @@ This article covers how to add LUIS to a bot. For information about using dialog
     1. Enter `FlightBooking` as the optional name of the app, and select **Done**.
 1. The site may display **How to create an effective LUIS app** and **Upgrade your composite entities** dialogs. You can dismiss these dialogs and continue.
 1. Train your app, then publish your app to the _production_ environment.
-    For more information, see the LUIS documentation on how to [train](/azure/ai-services/LUIS/luis-how-to-train) and [publish](/azure/ai-services/LUIS/publishapp) an app.
+    For more information, see the LUIS documentation on how to [train](/azure/ai-services/LUIS/how-to/train-test) and [publish](/azure/ai-services/LUIS/how-to/publish) an app.
 
 ### Why use entities
 
@@ -262,7 +262,7 @@ At this point, the code bot logic will reset and you can continue to create more
 For more about LUIS, see the LUIS documentation:
 
 - [What is Language Understanding (LUIS)?](/azure/ai-services/LUIS/what-is-luis)
-- [Create a new LUIS app in the LUIS portal](/azure/ai-services/LUIS/luis-how-to-start-new-app)
+- [Create a new LUIS app in the LUIS portal](/azure/ai-services/LUIS/how-to/sign-in)
 - [Design with intent and entity models](/azure/ai-services/LUIS/luis-concept-model)
 - [Migrate to V3 Authoring APIS](/azure/ai-services/luis/luis-migration-authoring-entities)
 - [Migrate to V3 Prediction APIs](/azure/ai-services/luis/luis-migration-api-v3)
@@ -271,7 +271,7 @@ For more about LUIS, see the LUIS documentation:
 > Different parts of the SDK define separate _entity_ classes or elements.
 > For message entities, see [Entities and activity types](../bot-service-activities-entities.md).
 
-[sign-in-luis-portal]: /azure/ai-services/luis/sign-in-luis-portal
+[sign-in-luis-portal]: /azure/ai-services/luis/how-to/sign-in
 [create-account]: https://azure.microsoft.com/services/ai-services/
 [conversation-apps]: https://www.luis.ai/applications
 [create-authoring-resource]: /azure/ai-services/luis/luis-how-to-azure-subscription

@@ -216,5 +216,4 @@ The cross-trained recognizer set compares recognition results from multiple reco
 [16]:https://aka.ms/bf-orchestrator
 [recognizers-ref]: ../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md
 [how-to-deploy-using-luis-cli]: ../v4sdk/bot-builder-howto-bf-cli-deploy-luis.md
-[interruptions]: bot-builder-concept-adaptive-dialog-interruptions.md
 [orchestrator-cli]:https://github.com/microsoft/botframework-sdk/blob/main/Orchestrator/docs/BFOrchestratorUsage.md

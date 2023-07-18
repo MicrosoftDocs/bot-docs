@@ -150,7 +150,7 @@ Here's an example of the above references:
 
 ```qna
 > QnA URL reference
-[QnaURL](/azure/ai-services/qnamaker/faqs)
+[QnaURL](/azure/ai-services/qnamaker/)
 
 > Include all content in ./kb1.qna
 [KB1](./kb1.qna)

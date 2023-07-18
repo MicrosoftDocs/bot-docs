@@ -225,7 +225,7 @@ In version 4.6, the Bot Framework SDK added support for this feature.
 - QnA Maker also supports active learning suggestions, allowing the knowledge base to improve over time.
 The QnA Maker dialog supports explicit feedback for the active learning feature.
 
-  To enable this feature on a knowledge base, see the QnA Maker documentation on [Active learning suggestions](/azure/ai-services/qnamaker/concepts/active-learning-suggestions).
+  To enable this feature on a knowledge base, see the QnA Maker documentation on [Active learning suggestions](/azure/ai-services/qnamaker/).
 
 ## Next steps
 

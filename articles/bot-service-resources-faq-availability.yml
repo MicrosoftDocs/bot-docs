@@ -61,7 +61,7 @@ sections:
           > see [Natural language understanding](./v4sdk/bot-builder-concept-luis.md).
 
           For more information, see:
-          - [Deploy the Language Understanding (LUIS) container to Azure Container Instances](/azure/ai-services/luis/deploy-luis-on-container-instances)
+          - [Deploy the Language Understanding (LUIS) container to Azure Container Instances](/azure/ai-services/containers/azure-container-instance-recipe)
           - [Container support in Azure AI services](/azure/ai-services/cognitive-services-container-support)
 
       - question: What is the v4 SDK?

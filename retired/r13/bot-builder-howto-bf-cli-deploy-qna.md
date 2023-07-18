@@ -54,9 +54,9 @@ Once your bot project's QnA Maker KB .qna files have been created, you are ready
 
 ## Create your Azure AI QnA Maker resource
 
-The QnA Maker resource is an [Azure AI services][cognitive-services-overview] resource that you create using Azure's [Create Azure AI services][create-cognitive-services] page. This provides the security keys and endpoint needed to access your QnA Maker KB in Azure.
+The QnA Maker resource is an [Azure AI services][ai-services-overview] resource that you create using Azure's [Create Azure AI services][create-ai-services] page. This provides the security keys and endpoint needed to access your QnA Maker KB in Azure.
 
-1. Go to the Azure [Create Azure AI services][create-cognitive-services] page.
+1. Go to the Azure [Create Azure AI services][create-ai-services] page.
 2. Enter values for each of the fields, then select the **Review + create** button.
 
    ![Create your QnA Maker knowledge base in Azure](./media/adaptive-dialogs/create-qna-maker.png)
@@ -367,26 +367,19 @@ See [Using declarative assets in adaptive dialogs][declarative] for more informa
 
 <!-------------------------------------------------------------------------------------------------->
 [qna-overview]: /azure/ai-services/qnamaker/overview/overview
-[cognitive-services-overview]: /azure/ai-services/Welcome
-[create-cognitive-services]: https://portal.azure.com/#create/Microsoft.CognitiveServicesQnAMaker
+[ai-services-overview]: /azure/ai-services/
+[create-ai-services]: https://portal.azure.com/#create/Microsoft.CognitiveServicesQnAMaker
 [qna-maker-recognizer]: bot-builder-concept-adaptive-dialog-recognizers.md#qna-maker-recognizer
 [qna-file-format]: ../file-format/bot-builder-qna-file-format.md
-
 [natural-language-processing-in-adaptive-dialogs]: bot-builder-concept-adaptive-dialog-recognizers.md#introduction-to-natural-language-processing-in-adaptive-dialogs
-
-[bf-cli-overview]: bf-cli-overview.md
-
 [bf-qnamakerconvert]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-qnamakerconvert
 [bf-qnamakerkbcreate]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-qnamakerkbcreate
-[bf-qnamakerkbpublish]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-qnamakerkbpublish
 [bf-qnamakerinit]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-qnamakerinit
 [bf-qnamakerbuild]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-qnamakerbuild
 [dialog-merge-command]: bot-builder-concept-adaptive-dialog-declarative.md#the-merge-command
-
 [test-knowledge-base]: /azure/ai-services/QnAMaker/how-to/test-knowledge-base
 [batch-testing]: /azure/ai-services/QnAMaker/quickstarts/batch-testing
 [declarative]: bot-builder-concept-adaptive-dialog-declarative.md
-
 [qna-maker-sample]: https://aka.ms/csharp-adaptive-dialog-07-qnamaker-sample
 [getting-the-samples]: https://aka.ms/botbuilder-samples-repo#getting-the-samples
 <!-------------------------------------------------------------------------------------------------->
