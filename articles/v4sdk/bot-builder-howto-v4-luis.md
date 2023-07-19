@@ -272,6 +272,6 @@ For more about LUIS, see the LUIS documentation:
 > For message entities, see [Entities and activity types](../bot-service-activities-entities.md).
 
 [sign-in-luis-portal]: /azure/ai-services/luis/how-to/sign-in
-[create-account]: https://azure.microsoft.com/services/ai-services/
+[create-account]: https://azure.microsoft.com/products/ai-services/
 [conversation-apps]: https://www.luis.ai/applications
 [create-authoring-resource]: /azure/ai-services/luis/luis-how-to-azure-subscription
