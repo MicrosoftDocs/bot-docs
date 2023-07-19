@@ -36,14 +36,14 @@ casing, and thus bots may use ordinal comparisons to establish equivalence.
 
 ## Bot Handle
 
-Every bot that has been registered with the Azure Bot Service has a bot handle.
+Every bot that has been registered with the Azure AI Bot Service has a bot handle.
 
 Example: `FooBot`
 
-A bot handle represents a bot's registration with the online Azure Bot Service. This registration is associated
+A bot handle represents a bot's registration with the online Azure AI Bot Service. This registration is associated
 with an HTTP webhook endpoint and registrations with channels.
 
-The Azure Bot Service ensures uniqueness of bot handles. The Azure portal performs a case-insensitive
+The Azure AI Bot Service ensures uniqueness of bot handles. The Azure portal performs a case-insensitive
 uniqueness check (meaning that case variations of bot handle are treated as a single handle) although this is
 a characteristic of the Azure portal, and not necessarily the bot handle itself.
 
@@ -53,7 +53,7 @@ a characteristic of the Azure portal, and not necessarily the bot handle itself.
 
 ## App ID
 
-Every bot that has been registered with the Azure Bot Service has an App ID.
+Every bot that has been registered with the Azure AI Bot Service has an App ID.
 
 > [!NOTE]
 > Previously, apps were commonly referred to as "MSA Apps" or "MSA/AAD Apps." Apps are now more commonly referred to simply as "apps", but some protocol elements may refer to apps as "MSA Apps" in perpetuity.

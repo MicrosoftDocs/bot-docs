@@ -1,7 +1,7 @@
 ---
 title: Bot Framework authentication types
-description: Learn about bot authentication types in the Azure Bot Service.
-keywords: azure bot service, authentication, bot framework token service
+description: Learn about bot authentication types in the Azure AI Bot Service.
+keywords: Azure AI Bot Service, authentication, bot framework token service
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
@@ -62,7 +62,7 @@ Besides the standard supported channels, a client application can communicate wi
 The client application authenticates requests to Direct Line (version 3.0) either by using a **secret** obtained from the [Direct Line channel configuration](../bot-service-channel-connect-directline.md) page in the Azure portal or, better, by using a **token** obtained at runtime. The secret or token is specified in the Authorization header of each request.
 
 > [!IMPORTANT]
-> When you use Azure Bot Service authentication with Web Chat there are some important security considerations you must keep in mind. For more information, see the [security considerations](../bot-service-channel-connect-webchat.md#keep-your-secret-hidden-exchange-your-secret-for-a-token-and-generate-the-embed) section in the REST authentication article.
+> When you use Azure AI Bot Service authentication with Web Chat there are some important security considerations you must keep in mind. For more information, see the [security considerations](../bot-service-channel-connect-webchat.md#keep-your-secret-hidden-exchange-your-secret-for-a-token-and-generate-the-embed) section in the REST authentication article.
 
 For more information, see [Keep your secret hidden, exchange your secret for a token, and generate the embed](../bot-service-channel-connect-webchat.md#keep-your-secret-hidden-exchange-your-secret-for-a-token-and-generate-the-embed).
 

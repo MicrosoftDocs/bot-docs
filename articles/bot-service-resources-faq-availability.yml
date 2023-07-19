@@ -29,9 +29,9 @@ sections:
           We created the Bot Framework to make it easier for developers to build and connect great bots to users, wherever they converse,
           including on Microsoft's premier channels.
 
-      - question:  How can I migrate Azure Bot Service from one region to another?
+      - question:  How can I migrate Azure AI Bot Service from one region to another?
         answer: |
-          Azure Bot Service doesn't support region move. It's a global service that isn't tied to any specific region.
+          Azure AI Bot Service doesn't support region move. It's a global service that isn't tied to any specific region.
 
       - question: How to run a bot offline?
         answer: |
@@ -45,24 +45,24 @@ sections:
           >[!NOTE]
           > The bot must have its endpoint publicly reachable by the connector.
 
-          You can run a bot offline with limited capabilities. For example, if you want to use a bot offline that uses Azure Cognitive Services,
-          you must build a container for the bot, and required tools, and a container for the cognitive services. Both connected via Docker Compose bridged network.
-          This is a "partial" offline solution because a Cognitive Services container needs periodic online connection.
+          You can run a bot offline with limited capabilities. For example, if you want to use a bot offline that uses Azure AI services,
+          you must build a container for the bot, and required tools, and a container for the Azure AI services. Both connected via Docker Compose bridged network.
+          This is a "partial" offline solution because an Azure AI services container needs periodic online connection.
 
           > [!NOTE]
-          > [Azure QnA Maker will be retired on 31 March 2025](https://azure.microsoft.com/updates/azure-qna-maker-will-be-retired-on-31-march-2025/).
+          > [Azure AI QnA Maker will be retired on 31 March 2025](https://azure.microsoft.com/updates/azure-qna-maker-will-be-retired-on-31-march-2025/).
           > Beginning 1 October 2022, you won't be able to create new QnA Maker resources or knowledge bases.
           >
           > [Language Understanding (LUIS) will be retired on 1 October 2025](https://azure.microsoft.com/updates/language-understanding-retirement/).
           > Beginning 1 April 2023, you won't be able to create new LUIS resources.
           >
-          > Newer versions of theses services are now available as part of Azure Cognitive Service for Language.
+          > Newer versions of theses services are now available as part of Azure AI Language.
           > For more information about question-and-answer and language understanding support in the Bot Framework SDK,
           > see [Natural language understanding](./v4sdk/bot-builder-concept-luis.md).
 
           For more information, see:
-          - [Deploy the Language Understanding (LUIS) container to Azure Container Instances](/azure/cognitive-services/luis/deploy-luis-on-container-instances)
-          - [Container support in Azure Cognitive Services](/azure/cognitive-services/cognitive-services-container-support)
+          - [Deploy the Language Understanding (LUIS) container to Azure Container Instances](/azure/ai-services/containers/azure-container-instance-recipe)
+          - [Container support in Azure AI services](/azure/ai-services/cognitive-services-container-support)
 
       - question: What is the v4 SDK?
         answer: |
@@ -77,14 +77,14 @@ sections:
           As announced previously, the V3 SDK is being retired. Accordingly, there will be no more development in V3 repositories.
           **Existing V3 bot workloads will continue to run without interruption. We have no plans to disrupt any running workloads**.
 
-          As mentioned, Bot Builder SDK V3 bots continue to run and be supported by Azure Bot Service.
+          As mentioned, Bot Builder SDK V3 bots continue to run and be supported by Azure AI Bot Service.
           Bot Builder SDK V3 will only be supported  for critical security bug fixes, connector, and protocol layer compatibility updates.
 
           All new features and capabilities are developed exclusively on [Bot Framework SDK V4](https://github.com/microsoft/botframework-sdk).
           Customers are encouraged to migrate their bots to V4 as soon as possible.
 
-          ### Azure Bot Service
-          1. The Azure Bot Service will continue to support the running of V3 bots with no planned end of life, and any running bots won't be disrupted.
+          ### Azure AI Bot Service
+          1. The Azure AI Bot Service will continue to support the running of V3 bots with no planned end of life, and any running bots won't be disrupted.
           1. Channels will remain compatible with V3 with no disruption or end of life plan.
           1. Creation of new V3 bots is disabled on the portal; however, expert users who wish to deploy their V3 bots independently through other services (such as another web app service) can do so.
 

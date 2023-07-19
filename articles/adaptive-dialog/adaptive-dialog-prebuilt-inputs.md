@@ -186,7 +186,7 @@ Use to ask user to sign in.
 
 The `OAuthInput` action inherits all of the properties defined in [InputDialog](#inputdialog) and defines these additional properties:
 
-1. `ConnectionName`: Name of the OAuth connection configured in Azure Bot Service settings page for the bot.
+1. `ConnectionName`: Name of the OAuth connection configured in Azure AI Bot Service settings page for the bot.
 1. `Text`: Additional text to display in the sign-in card.
 1. `Title`: Title text to display in the sign-in card.
 1. `Timeout`: This is the number of milliseconds `OAuthInput` waits for the user authentication to complete.  The default is 900,000 milliseconds, which is 15 minutes.

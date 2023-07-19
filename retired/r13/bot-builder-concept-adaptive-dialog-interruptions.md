@@ -214,16 +214,14 @@ _Confirmation and correction_ enables the scenario where you ask the user for co
 - [Cross train your bot to use both LUIS and QnA Maker recognizers][cross-train-concepts].
 - [Adaptive expressions][adaptive-expressions].
 - [.lu file format](/file-format/bot-builder-lu-file-format.md)
-- [Intents in your LUIS app](/azure/cognitive-services/LUIS/luis-concept-intent)
-- [Understand what good utterances are for your LUIS app](/azure/cognitive-services/LUIS/luis-concept-utterance)
+- [Intents in your LUIS app](/azure/ai-services/LUIS/concepts/intents)
+- [Understand what good utterances are for your LUIS app](/azure/ai-services/LUIS/concepts/utterances)
 
 [introduction]:bot-builder-adaptive-dialog-introduction.md
 [inputs]: bot-builder-concept-adaptive-dialog-Inputs.md
 [language-understanding]: bot-builder-concept-adaptive-dialog-recognizers.md#language-understanding
 [intents]: bot-builder-concept-adaptive-dialog-recognizers.md#intents
 [entities]: bot-builder-concept-adaptive-dialog-recognizers.md#entities
-[entities-lu]: ../file-format/bot-builder-lu-file-format.md#list-entity
-[utterances-lu]: ../file-format/bot-builder-lu-file-format.md#utterances
 [adaptive-expressions]: bot-builder-concept-adaptive-expressions.md
 [dialog-scope]: ../adaptive-dialog/adaptive-dialog-prebuilt-memory-states.md#dialog-scope
 [turn-scope]: ../adaptive-dialog/adaptive-dialog-prebuilt-memory-states.md#turn-scope

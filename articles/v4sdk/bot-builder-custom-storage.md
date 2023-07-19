@@ -16,11 +16,11 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-A bot's interactions fall into three areas: the exchange of activities with Azure Bot Service, the loading and saving of bot and dialog state with a memory store, and integration with back-end services.
+A bot's interactions fall into three areas: the exchange of activities with Azure AI Bot Service, the loading and saving of bot and dialog state with a memory store, and integration with back-end services.
 
-:::image type="content" source="../media/scale-out/scale-out-interaction.png" alt-text="Interaction diagram outlining relationship between the Azure Bot Service, a bot, a memory store, and other services.":::
+:::image type="content" source="../media/scale-out/scale-out-interaction.png" alt-text="Interaction diagram outlining relationship between the Azure AI Bot Service, a bot, a memory store, and other services.":::
 
-This article explores how to extend the semantics between the Azure Bot Service and the bot's memory state and storage.
+This article explores how to extend the semantics between the Azure AI Bot Service and the bot's memory state and storage.
 
 [!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
 
@@ -38,7 +38,7 @@ This implementation fits the needs of applications where the pieces are used tog
 
 The SDK is a framework and not an application with fixed behavior.
 In other words, the implementation of many of the mechanisms in the framework is a default implementation and not the only possible implementation.
-The framework doesn't dictate the relationship between the exchange of activities with Azure Bot Service and the loading and saving of any bot state.
+The framework doesn't dictate the relationship between the exchange of activities with Azure AI Bot Service and the loading and saving of any bot state.
 
 This article describes one way to modify the semantics of the default state and storage implementation when it doesn't quite work for your application.
 The scale-out sample provides an alternate implementation of state and storage that has different semantics than the default ones.

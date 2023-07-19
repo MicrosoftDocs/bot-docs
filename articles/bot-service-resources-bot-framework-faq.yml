@@ -32,7 +32,7 @@ sections:
         answer: |
           - [Why did Microsoft develop the Bot Framework?](./bot-service-resources-faq-availability.yml#why-did-microsoft-develop-the-bot-framework)
           - [How to run a bot offline?](./bot-service-resources-faq-availability.yml#how-to-run-a-bot-offline)
-          - [How can I migrate Azure Bot Service from one region to another?](./bot-service-resources-faq-availability.yml#how-can-i-migrate-azure-bot-service-from-one-region-to-another)
+          - [How can I migrate Azure AI Bot Service from one region to another?](./bot-service-resources-faq-availability.yml#how-can-i-migrate-azure-ai-bot-service-from-one-region-to-another)
           - [What is the v4 SDK?](./bot-service-resources-faq-availability.yml#what-is-the-v4-sdk)
           - [Bot Framework SDK Version 3 Lifetime Support and Deprecation Notice](./bot-service-resources-faq-availability.yml#bot-framework-sdk-version-3-lifetime-support-and-deprecation-notice)
 
@@ -61,7 +61,7 @@ sections:
           - [If I want to create a bot for Microsoft Teams, what tools and services should I use?](./bot-service-resources-faq-ecosystem.yml#if-i-want-to-create-a-bot-for-microsoft-teams--what-tools-and-services-should-i-use)
           - [How do I create a bot that uses the US Government data center?](./bot-service-resources-faq-ecosystem.yml#how-do-i-create-a-bot-that-uses-the-us-government-data-center)
           - [What is the Direct Line channel?](./bot-service-resources-faq-ecosystem.yml#what-is-the-direct-line-channel)
-          - [How does the Bot Framework relate to Cognitive Services?](./bot-service-resources-faq-ecosystem.yml#how-does-the-bot-framework-relate-to-cognitive-services)
+          - [How does the Bot Framework relate to Azure AI services?](./bot-service-resources-faq-ecosystem.yml#how-does-the-bot-framework-relate-to-azure-cognitive-services)
           - [What are the steps to configure Web Chat and Direct Line for Azure Government?](./bot-service-resources-faq-ecosystem.yml#what-are-the-steps-to-configure-web-chat-and-direct-line-for-azure-government)
           - [What are the possible machine-readable resolutions of the LUIS built-in date, time, duration, and set entities?](./bot-service-resources-faq-ecosystem.yml#what-are-the-possible-machine-readable-resolutions-of-the-luis-built-in-date--time--duration--and-set-entities)
           - [How can I use more than the maximum number of LUIS intents?](./bot-service-resources-faq-ecosystem.yml#how-can-i-use-more-than-the-maximum-number-of-luis-intents)

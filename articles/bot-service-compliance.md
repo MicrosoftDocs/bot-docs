@@ -1,6 +1,6 @@
 ---
-title: Compliance in Azure Bot Service - Bot Service
-description: Learn how the Azure Bot Service helps users meet compliance obligations. See which certificates the service holds in various industries and geographic areas.
+title: Compliance in Azure AI Bot Service - Bot Service
+description: Learn how the Azure AI Bot Service helps users meet compliance obligations. See which certificates the service holds in various industries and geographic areas.
 keywords: bot service, compliance
 author: JonathanFingold
 ms.author: iawilt
@@ -11,20 +11,20 @@ ms.service: bot-service
 ms.date: 11/01/2021
 ---
 
-# Compliance in Azure Bot Service
+# Compliance in Azure AI Bot Service
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-Azure Bot Service is a global Azure service and therefore is available to customers in all regions in the clouds where it's deployed, including:
+Azure AI Bot Service is a global Azure service and therefore is available to customers in all regions in the clouds where it's deployed, including:
 
 - Azure public cloud, which is available globally.
 - Azure Government is available in four regions in the United States to US government agencies and their partners.
 
 To help customers meet their own compliance obligations across regulated industries and markets worldwide, Azure maintains the largest compliance portfolio in the industry in terms of both breadth (total number of offerings) and depth (number of customer-facing services in assessment scope). Azure compliance offerings are grouped into four segments - globally applicable, US Government, industry specific, and region or country/region specific. Compliance offerings are based on various types of assurances, including formal certifications, attestations, validations, authorizations, and assessments produced by independent third-party auditing firms, as well as contractual amendments, self-assessments, and customer guidance documents produced by Microsoft.
 
-## Azure Bot Service certifications
+## Azure AI Bot Service certifications
 
-Azure Bot Service is continually expanding its certification coverage. Currently, Azure Bot Service is certified with the following certificates:
+Azure AI Bot Service is continually expanding its certification coverage. Currently, Azure AI Bot Service is certified with the following certificates:
 
 | Globally applicable  | US Government  | Industry specific | Region or country specific |
 | :--- | :--- | :---| :---|
@@ -41,7 +41,7 @@ Azure Bot Service is continually expanding its certification coverage. Currently
 To learn more about each of these compliance offerings and how they benefit you, see [Microsoft compliance offerings](/compliance/regulatory/offering-home) page.
 In particular, see [FedRAMP](/compliance/regulatory/offering-fedramp) and [WCAG](https://cloudblogs.microsoft.com/industry-blog/government/2018/09/11/accessibility-conformance-reports/).
 
-The following table lists the certifications supported by Azure Bot Service in Azure Government:
+The following table lists the certifications supported by Azure AI Bot Service in Azure Government:
 
 | Globally applicable | US Government | Industry specific |
 | :--- | :--- | :--- |
@@ -55,6 +55,6 @@ The following table lists the certifications supported by Azure Bot Service in A
 
 ## Next steps
 
-To find out the latest compliance certifications for Azure Bot Service, see the [Overview of Azure compliance](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942).
+To find out the latest compliance certifications for Azure AI Bot Service, see the [Overview of Azure compliance](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942).
 
 For more information about Microsoft certifications, see the [Azure Trust Center](https://azure.microsoft.com/overview/trusted-cloud/).

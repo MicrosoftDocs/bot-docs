@@ -16,6 +16,6 @@ In your browser, go to `https://<your_app_service>.azurewebsites.net/.bot`. If e
 
 - **v** shows the build version of the Direct Line App Service extension.
 - **k** indicates whether the extension was able to read an extension key from its configuration.
-- **initialized** indicates whether the extension was able to download bot metadata from Azure Bot Service.
+- **initialized** indicates whether the extension was able to download bot metadata from Azure AI Bot Service.
 - **ib** indicates whether the extension was able to establish an inbound connection to the bot.
 - **ob** indicates whether the extension was able to establish an outbound connection from the bot.

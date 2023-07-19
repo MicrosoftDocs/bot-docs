@@ -47,9 +47,9 @@ Let's analyze the flow.
     }
     ```
 
-1. The bot processes the `TokenExchangeInvokeRequest` by issuing a request to the Azure Bot Service to obtain an exchangeable token.
+1. The bot processes the `TokenExchangeInvokeRequest` by issuing a request to the Azure AI Bot Service to obtain an exchangeable token.
 
-1. The Azure Bot Service sends the token to the bot.
+1. The Azure AI Bot Service sends the token to the bot.
 
 1. The bot returns a `TokenExchangeInvokeResponse` back to the Web Chat. The Web Chat waits until it receives the `TokenExchangeInvokeResponse`.
 

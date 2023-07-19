@@ -1,7 +1,7 @@
 ---
 title: Single sign-on in the Bot Framework SDK
 description: Learn about single sign-on (SSO) to allow apps to share access to user resources.
-keywords: azure bot service, authentication, bot framework token service
+keywords: Azure AI Bot Service, authentication, bot framework token service
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha

@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Bot Framework SDK documentation
-summary: The Bot Framework SDK allows you to create and develop bots for Azure Bot Service.
+summary: The Bot Framework SDK allows you to create and develop bots for Azure AI Bot Service.
 
 metadata:
   title: Bot Framework SDK documentation
-  description: The Bot Framework SDK allows you to create and develop bots for Azure Bot Service.
+  description: The Bot Framework SDK allows you to create and develop bots for Azure AI Bot Service.
   ms.service: bot-service
   ms.topic: landing-page
   author: JonathanFingold
@@ -148,7 +148,7 @@ landingContent:
             url: /power-virtual-agents/
           - text: Microsoft Teams Overview
             url: /microsoftteams/teams-overview
-          - text: Azure Cognitive Services
+          - text: Azure AI services
             url: /azure/cognitive-services
       - linkListType: concept
         links:

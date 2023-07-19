@@ -1,7 +1,7 @@
 ---
 title: Language understanding
-description: Learn how to add artificial intelligence to your bots with Azure Cognitive Services to make them more useful and engaging.
-keywords: Cognitive Services, CLU, LUIS, QnA Maker, custom question answering
+description: Learn how to add artificial intelligence to your bots with Azure AI services to make them more useful and engaging.
+keywords: Azure AI services, CLU, LUIS, QnA Maker, custom question answering
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
@@ -18,7 +18,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 Bots can use various conversational styles, from structured and guided to free-form and open-ended.
 Based on what a user says, your bot needs to decide what to do next in its conversation flow.
-Azure Cognitive Services includes features to help with this task.
+Azure AI services includes features to help with this task.
 These features can help a bot search for information, ask questions, or interpret the user's intent.
 
 The interaction between users and bots is often free-form, and bots need to understand language naturally and contextually.
@@ -30,25 +30,25 @@ This table illustrates the difference between guided and open-ended questions.
 | I'm the travel bot. Select one of the following options: find flights, find hotels, find rental car. | I can help you book travel. What would you like to do? |
 | Do you need anything else? Click yes or no.                                                          | Do you need anything else?                             |
 
-Azure Cognitive Services provides AI services with which to build intelligent apps, websites, and bots.
+Azure AI services provides features with which to build intelligent apps, websites, and bots.
 Adding these features to your bot can allow your bot to respond to open-ended user input more appropriately.
 
-This article describes support in the Bot Framework SDK for some of the features available in Azure Cognitive Services.
+This article describes support in the Bot Framework SDK for some of the features available in Azure AI services.
 
 - For tips on how to design these features into your bot, see [Design knowledge bots](../bot-service-design-pattern-knowledge-base.md).
-- For detailed information about Azure Cognitive Service, see the [Azure Cognitive Services documentation](/azure/cognitive-services/).
+- For detailed information about Azure AI services, see the [Azure AI services documentation](/azure/ai-services/).
 
 ## General guidance
 
-Azure Cognitive Services incorporates evolving technologies.
-Azure Cognitive Service for Language integrates various features that were previously implemented as separate services.
+Azure AI services incorporates evolving technologies.
+Azure AI Language integrates various features that were previously implemented as separate services.
 This article describes both the newer and older features and services, and where to find more information about each.
 
 | Scenario | Guidance |
 |:-|:-|
 | New bot development | Consider using Power Virtual Agents, which is designed to support teams where members have a mix of skills and disciplines. For more information, see [Power Virtual Agents](/power-virtual-agents/fundamentals-what-is-power-virtual-agents) and [Enable advanced AI features](/power-virtual-agents/advanced-ai-features). |
-| New language projects for existing Bot Framework SDK bots | Consider using features of the Azure Cognitive Service for Language service, such as conversational language understanding (CLU) and answering questions. |
-| Existing bots with existing language projects | Your language projects will continue to work, but consider migrating to Azure Cognitive Service for Language. For more information, see the [Migrate existing language projects](#migrate-existing-language-projects) section later in this article. |
+| New language projects for existing Bot Framework SDK bots | Consider using features of the Azure AI Language service, such as conversational language understanding (CLU) and answering questions. |
+| Existing bots with existing language projects | Your language projects will continue to work, but consider migrating to Azure AI Language. For more information, see the [Migrate existing language projects](#migrate-existing-language-projects) section later in this article. |
 
 ## Language understanding
 
@@ -56,8 +56,8 @@ Natural language understanding features let you build custom natural language un
 
 | Service or feature | Description |
 |:-|:-|
-| Conversational Language Understanding (CLU) | A feature of the Azure Cognitive Service for Language service. |
-| Language Understanding (LUIS) | An Azure Cognitive Services service. (CLU is an updated version of LUIS.)<br/><br/>LUIS will be retired on 1 October 2025. |
+| Conversational Language Understanding (CLU) | A feature of the Azure AI Language service. |
+| Language Understanding (LUIS) | An Azure AI service. (CLU is an updated version of LUIS.)<br/><br/>LUIS will be retired on 1 October 2025. |
 
 ### Conversational Language Understanding (CLU)
 
@@ -67,7 +67,7 @@ To use CLU in your bot, create a language resource and a conversation project, t
 
 For more information, see:
 
-- [What is conversational language understanding?](/azure/cognitive-services/language-service/conversational-language-understanding/overview)
+- [What is conversational language understanding?](/azure/ai-services/language-service/conversational-language-understanding/overview)
 - _Telemetry recognizer_ interface reference for [C#/.NET](/dotnet/api/microsoft.bot.builder.ai.luis.itelemetryrecognizer) or [JavaScript/node.js](/javascript/api/botbuilder-ai/luisrecognizertelemetryclient)
 - [Azure Cognitive Language Services Conversations client library for .NET](/dotnet/api/overview/azure/ai.language.conversations-readme)
 
@@ -83,7 +83,7 @@ To use LUIS in your bot, create, train, and publish a LUIS app, then add a _LUIS
 
 For more information, see:
 
-- [What is Language Understanding (LUIS)?](/azure/cognitive-services/luis/what-is-luis)
+- [What is Language Understanding (LUIS)?](/azure/ai-services/luis/what-is-luis)
 - [Add natural language understanding to your bot](bot-builder-howto-v4-luis.md)
 
 ## Questions and answers
@@ -93,8 +93,8 @@ Knowledge bases represent semi-structured content, such as that found in FAQs, m
 
 | Service or feature | Description |
 |:-|:-|
-| Question answering | A feature of the Azure Cognitive Service for Language service. |
-| QnA Maker | An Azure Cognitive Services service. (Question answering is an updated version of QnA Maker.)<br/><br/>Azure QnA Maker will be retired on 31 March 2025. |
+| Question answering | A feature of the Azure AI Language service. |
+| QnA Maker | An Azure AI services service. (Question answering is an updated version of QnA Maker.)<br/><br/>Azure AI QnA Maker will be retired on 31 March 2025. |
 
 ### Question answering
 
@@ -104,14 +104,14 @@ To use question answering in your bot, create and deploy a question answering pr
 
 For more information, see:
 
-- [What is question answering?](/azure/cognitive-services/language-service/question-answering/overview)
+- [What is question answering?](/azure/ai-services/language-service/question-answering/overview)
 - _QnA Maker client_ interface reference for [C#/.NET](/dotnet/api/microsoft.bot.builder.ai.qna.iqnamakerclient) or [JavaScript/node.js](/javascript/api/botbuilder-ai/qnamakerclient)
 - [Azure Cognitive Language Services Question Answering client library for .NET](/dotnet/api/overview/azure/ai.language.questionanswering-readme)
 
 ### QnA Maker
 
 > [!NOTE]
-> [Azure QnA Maker will be retired on 31 March 2025](https://azure.microsoft.com/updates/azure-qna-maker-will-be-retired-on-31-march-2025/).
+> [Azure AI QnA Maker will be retired on 31 March 2025](https://azure.microsoft.com/updates/azure-qna-maker-will-be-retired-on-31-march-2025/).
 > Beginning 1 October 2022, you won't be able to create new QnA Maker resources or knowledge bases.
 
 QnA Maker has the built-in ability to scrape questions and answers from an existing FAQ site, plus it also allows you to manually configure your own custom list of questions and answers.
@@ -122,21 +122,21 @@ To use QnA Maker in your bot, create a QnA Maker service, publish your knowledge
 
 For more information, see:
 
-- [What is QnA Maker?](/azure/cognitive-services/qnamaker/overview/overview)
+- [What is QnA Maker?](/azure/ai-services/qnamaker/overview/overview)
 - [Use QnA Maker to answer questions](bot-builder-howto-qna.md)
 
 ## Search
 
 Azure Cognitive Search helps your bot provide users with a rich search experience, including the ability to facet and filter information.
 
-- You can use Azure Cognitive Search as a feature within Azure Cognitive Service for Language.
+- You can use Azure Cognitive Search as a feature within Azure AI Language.
 - You can use the Azure Cognitive Search service directly.
 
 ### Azure Cognitive Search
 
 You can use [Azure Cognitive Search](/azure/search/) to create an efficient index with which to search, facet, and filter a data store.
 
-- For how to configure Cognitive Search within Cognitive Service for Language, see [Configure custom question answering enabled resources](/azure/cognitive-services/language-service/question-answering/how-to/configure-resources).
+- For how to configure Cognitive Search within Azure AI Language, see [Configure custom question answering enabled resources](/azure/ai-services/language-service/question-answering/how-to/configure-resources).
 - For information about the Cognitive Search service, see [What is Azure Cognitive Search?](/azure/search/search-what-is-azure-search).
 
 ## Use multiple features together
@@ -152,7 +152,7 @@ This table describes different ways you can integrate multiple features.
 
 | Service or feature | Description |
 |:-|:-|
-| Orchestration workflow | A feature of the Azure Cognitive Service for Language service that allows you to use multiple question answering, CLU, and LUIS projects together. |
+| Orchestration workflow | A feature of the Azure AI Language service that allows you to use multiple question answering, CLU, and LUIS projects together. |
 | Bot Framework Orchestrator | An intent-only recognition engine, which you can use to determine which LUIS model or QnA Maker knowledge base can best handle a given message. |
 | Custom | You can implement your own logic to decide how best to handle the user's request. |
 
@@ -164,13 +164,13 @@ To use the orchestration workflow in your bot, create an orchestration workflow 
 
 For more information, see:
 
-- [What is orchestration workflow?](/azure/cognitive-services/language-service/orchestration-workflow/overview)
+- [What is orchestration workflow?](/azure/ai-services/language-service/orchestration-workflow/overview)
 - [Azure Cognitive Language Services Conversations client library for .NET](/dotnet/api/overview/azure/ai.language.conversations-readme)
 
 ### Orchestrator
 
 > [!NOTE]
-> [Azure QnA Maker will be retired on 31 March 2025](https://azure.microsoft.com/updates/azure-qna-maker-will-be-retired-on-31-march-2025/).
+> [Azure AI QnA Maker will be retired on 31 March 2025](https://azure.microsoft.com/updates/azure-qna-maker-will-be-retired-on-31-march-2025/).
 > Beginning 1 October 2022, you won't be able to create new QnA Maker resources or knowledge bases.
 >
 > [Language Understanding (LUIS) will be retired on 1 October 2025](https://azure.microsoft.com/updates/language-understanding-retirement/).
@@ -196,19 +196,19 @@ There are two main ways to implement your own logic:
 
 ## Migrate existing language projects
 
-For information on migrating resources from older services to Azure Cognitive Service for Language, see:
+For information on migrating resources from older services to Azure AI Language, see:
 
-- [Migrate from LUIS, QnA Maker, and Text Analytics](/azure/cognitive-services/language-service/concepts/migrate)
-- [Backwards compatibility with LUIS applications](/azure/cognitive-services/language-service/conversational-language-understanding/concepts/backwards-compatibility)
-- [Migrate from QnA Maker to Question Answering](/azure/cognitive-services/language-service/question-answering/how-to/migrate-qnamaker-to-question-answering)
-- [Migrate from QnA Maker to custom question answering](/azure/cognitive-services/language-service/question-answering/how-to/migrate-qnamaker)
+- [Migrate from LUIS, QnA Maker, and Text Analytics](/azure/ai-services/language-service/concepts/migrate)
+- [Backwards compatibility with LUIS applications](/azure/ai-services/language-service/conversational-language-understanding/concepts/backwards-compatibility)
+- [Migrate from QnA Maker to Question Answering](/azure/ai-services/language-service/question-answering/how-to/migrate-qnamaker-to-question-answering)
+- [Migrate from QnA Maker to custom question answering](/azure/ai-services/language-service/question-answering/how-to/migrate-qnamaker)
 
 ## Additional resources
 
 To manage specific project or resources:
 
 - To manage of Azure resources, go to the [Azure portal](https://ms.portal.azure.com/).
-- To manage Azure Cognitive Service for Language projects, go to the [Language Studio portal](https://language.cognitive.azure.com/home).
+- To manage Azure AI Language projects, go to the [Language Studio portal](https://language.cognitive.azure.com/home).
   - [Conversational language understanding (CLU) projects](https://language.cognitive.azure.com/clu/projects)
   - [Question answering projects](https://language.cognitive.azure.com/questionAnswering/projects)
 - To manage LUIS apps, go to the [Language Understanding (LUIS) portal](https://www.luis.ai/).
@@ -216,9 +216,9 @@ To manage specific project or resources:
 
 For documentation for a specific feature or service:
 
-- [What is Azure Cognitive Service for Language?](/azure/cognitive-services/language-service/overview)
-  - [What is conversational language understanding?](/azure/cognitive-services/language-service/conversational-language-understanding/overview)
-  - [What is question answering?](/azure/cognitive-services/language-service/question-answering/overview)
+- [What is Azure AI Language?](/azure/ai-services/language-service/overview)
+  - [What is conversational language understanding?](/azure/ai-services/language-service/conversational-language-understanding/overview)
+  - [What is question answering?](/azure/ai-services/language-service/question-answering/overview)
 - [What is Azure Cognitive Search?](/azure/search/search-what-is-azure-search)
-- [What is Language Understanding (LUIS)?](/azure/cognitive-services/luis/what-is-luis)
-- [What is QnA Maker?](/azure/cognitive-services/qnamaker/overview/overview)
+- [What is Language Understanding (LUIS)?](/azure/ai-services/luis/what-is-luis)
+- [What is QnA Maker?](/azure/ai-services/qnamaker/overview/overview)

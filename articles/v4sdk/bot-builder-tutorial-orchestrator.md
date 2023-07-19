@@ -26,7 +26,7 @@ If a bot uses multiple Language Understanding (LUIS) models and QnA Maker knowle
 
 This article describes how to use an _existing_ QnA Maker knowledge base with Orchestrator.
 
-- For new bots, consider using the [question answering](bot-builder-concept-luis.md#question-answering) and [orchestration workflow](bot-builder-concept-luis.md#use-orchestration-workflow) features of Azure Cognitive Service for Language.
+- For new bots, consider using the [question answering](bot-builder-concept-luis.md#question-answering) and [orchestration workflow](bot-builder-concept-luis.md#use-orchestration-workflow) features of Azure AI Language.
 - For more information about Orchestrator, see [Intent recognition with Orchestrator in Composer][orchestrator].
 - For more information about the `bf orchestrator` command, see [the Bot Framework CLI README][bf-orchestrator-cli].
 
@@ -34,12 +34,11 @@ This article describes how to use an _existing_ QnA Maker knowledge base with Or
 
 - A [luis.ai](https://www.luis.ai/) account to author LUIS apps.
 - A [QnA Maker](https://www.qnamaker.ai/) account and an existing QnA Maker knowledge base.
-- A copy of the **NLP with Orchestrator** sample in [C#][cs-sample] or [JavaScript][js-sample].
+- A copy of the **NLP with Orchestrator** sample in [**C#** (archived)][] or [**JavaScript** (archived)][].
 - Knowledge of [bot basics](bot-builder-basics.md), [LUIS][howto-luis], and [QnA Maker][howto-qna].
 - Install the command-line [BF CLI][bf-cli].
 
-[cs-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/csharp_dotnetcore/14.nlp-with-orchestrator
-[js-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/javascript_nodejs/14.nlp-with-orchestrator
+
 
 ## About this sample
 
@@ -48,10 +47,10 @@ However, to use QnA Maker in your bot, you need an existing knowledge base in th
 Your bot then can use the knowledge base to answer the user's questions.
 
 For new bot development, consider using [Power Virtual Agents](/power-virtual-agents/fundamentals-what-is-power-virtual-agents).
-If you need to create a new knowledge base for a Bot Framework SDK bot, see the following Cognitive Services articles:
+If you need to create a new knowledge base for a Bot Framework SDK bot, see the following Azure AI services articles:
 
-- [What is question answering?](/azure/cognitive-services/language-service/question-answering/overview)
-- [Create an FAQ bot](/azure/cognitive-services/language-service/question-answering/tutorials/bot-service)
+- [What is question answering?](/azure/ai-services/language-service/question-answering/overview)
+- [Create an FAQ bot](/azure/ai-services/language-service/question-answering/tutorials/bot-service)
 - [Azure Cognitive Language Services Question Answering client library for .NET](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/cognitivelanguage/Azure.AI.Language.QuestionAnswering#readme)
 
 ## [C#](#tab/cs)
@@ -100,7 +99,7 @@ Create LUIS apps from the _HomeAutomation_ and _Weather_ .lu files in the _cogni
 
 1. Record the application IDs, display names, authoring key, and location.
 
-For more information, see how to **Create a LUIS app in the LUIS portal** and **Obtain values to connect to your LUIS app** in [Add natural language understanding to your bot](bot-builder-howto-v4-luis.md) and the LUIS documentation on how to [train](/azure/cognitive-services/LUIS/luis-how-to-train) and [publish](/azure/cognitive-services/LUIS/publishapp) an app to the production environment.
+For more information, see how to **Create a LUIS app in the LUIS portal** and **Obtain values to connect to your LUIS app** in [Add natural language understanding to your bot](bot-builder-howto-v4-luis.md) and the LUIS documentation on how to [train](/azure/ai-services/LUIS/how-to/train-test) and [publish](/azure/ai-services/LUIS/how-to/publish) an app to the production environment.
 
 ## Obtain values to connect your bot to the knowledge base
 
@@ -109,7 +108,7 @@ For more information, see how to **Create a LUIS app in the LUIS portal** and **
 You need an existing knowledge base and your QnA Maker hostname and endpoint key.
 
 > [!TIP]
-> The QnA Maker documentation has instructions on how to [create, train, and publish your knowledge base](/azure/cognitive-services/qnamaker/quickstarts/create-publish-knowledge-base).
+> The QnA Maker documentation has instructions on how to [create, train, and publish your knowledge base](/azure/ai-services/qnamaker/quickstarts/create-publish-knowledge-base).
 
 ## Create the Orchestrator snapshot file
 
@@ -151,11 +150,11 @@ Prior to running this app for the first time ensure that several NuGet packages 
 
 ### Manually update your appsettings.json file
 
-Once all of your service apps are created, the information for each needs to be added into your 'appsettings.json' file. The initial [C# Sample][cs-sample] code contains an empty appsettings.json file:
+Once all of your service apps are created, the information for each needs to be added into your 'appsettings.json' file. The initial sample for [**C#** (archived)][] code contains an empty appsettings.json file:
 
 **appsettings.json**
 
-[!code-json[AppSettings](~/../botbuilder-samples/archive/csharp_dotnetcore/14.nlp-with-orchestrator/AppSettings.json)]
+[**C#** (archived)][]
 
 For each of the entities shown below, add the values you recorded earlier in these instructions:
 
@@ -184,10 +183,11 @@ npm install
 
 ### Manually update your .env file
 
-Once all of your service apps are created, the information for each needs to be added into your '.env' file. The initial [JavaScript Sample][js-sample] code contains an empty .env file.
+Once all of your service apps are created, the information for each needs to be added into your '.env' file. The initial sample for [**JavaScript** (archived)][] code contains an empty .env file.
 
 **.env**
-[!code-ini[Empty .env file](~/../botbuilder-samples/archive/javascript_nodejs/14.nlp-with-orchestrator/.env)]
+
+[**JavaScript** (archived)][]
 
 Add your service connection values as shown below:
 
@@ -216,7 +216,7 @@ In **BotServices.cs**, the information contained within configuration file _apps
 
 **BotServices.cs**
 
-[!code-csharp[ReadConfigurationInfo](~/../botbuilder-samples/archive/csharp_dotnetcore/14.nlp-with-orchestrator/BotServices.cs?range=11-60)]
+[**C#** (archived)][]
 
 ## [JavaScript](#tab/js)
 
@@ -224,7 +224,7 @@ In **dispatchBot.js** the information contained within configuration file _.env_
 
 **bots/dispatchBot.js**
 
-[!code-javascript[ReadConfigurationInfo](~/../botbuilder-samples/archive/javascript_nodejs/14.nlp-with-orchestrator/bots/dispatchBot.js?range=13-40)]
+[**JavaScript** (archived)][]
 
 ---
 
@@ -238,13 +238,13 @@ In the **DispatchBot.cs** file whenever the `OnMessageActivityAsync` method is c
 
 **bots\DispatchBot.cs**
 
-[!code-csharp[OnMessageActivity](~/../botbuilder-samples/archive/csharp_dotnetcore/14.nlp-with-orchestrator/bots/DispatchBot.cs?range=27-36)]
+[**C#** (archived)][]
 
 ## [JavaScript](#tab/js)
 
 In the **dispatchBot.js** `onMessage` method, we check the incoming user message and get the top intent from Orchestrator Recognizer.  We then pass this on by calling _dispatchToTopIntentAsync_.
 
-[!code-javascript[onMessage](~/../botbuilder-samples/archive/javascript_nodejs/14.nlp-with-orchestrator/bots/dispatchBot.js?range=47-62)]
+[**JavaScript** (archived)][]
 
 ---
 
@@ -256,7 +256,7 @@ When the Orchestrator recognizer produces a result, it indicates which service c
 
 **bots\DispatchBot.cs**
 
-[!code-csharp[DispatchToTopIntentAsync](~/../botbuilder-samples/archive/csharp_dotnetcore/14.nlp-with-orchestrator/bots/DispatchBot.cs?range=51-69)]
+[**C#** (archived)][]
 
 The `ProcessHomeAutomationAsync` and `ProcessWeatherAsync` methods use the user input contained within the turn context to get the top intent and entities from the correct LUIS model.
 
@@ -267,7 +267,8 @@ The `ProcessSampleQnAAsync` method uses the user input contained within the turn
 When the Orchestrator recognizer produces a result, it indicates which service can most appropriately process the utterance. The code in this sample uses the recognized _topIntent_ to show how to route the request on to the corresponding service.
 
 **bots/dispatchBot.js**
-[!code-javascript[dispatchToTopIntentAsync](~/../botbuilder-samples/archive/javascript_nodejs/14.nlp-with-orchestrator/bots/dispatchBot.js?range=79-95)]
+
+[**JavaScript** (archived)][]
 
 The `processHomeAutomation` and `processWeather` methods use the user input contained within the turn context to get the top intent and entities from the correct LUIS model.
 
@@ -411,6 +412,11 @@ The `processSampleQnA` method uses the user input contained within the turn cont
 
 [howto-luis]: bot-builder-howto-v4-luis.md
 [howto-qna]: bot-builder-howto-qna.md
+
+[**C#** (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/csharp_dotnetcore/14.nlp-with-orchestrator
+[**JavaScript** (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/javascript_nodejs/14.nlp-with-orchestrator
+[**Java** (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/14.nlp-with-orchestrator
+[**Python** (archived)]: (https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/python/14.nlp-with-orchestrator
 
 [orchestrator]: /composer/concept-orchestrator
 [bf-cli]: https://github.com/microsoft/botframework-cli

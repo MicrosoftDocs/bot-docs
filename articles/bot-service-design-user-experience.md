@@ -27,7 +27,7 @@ Application and website developers have relied on UI controls to enable users to
 
 Cards allow you to present your users with various visual, audio, and/or selectable messages and help to assist conversation flow. If a user needs to select from within a fixed set of items you can display a carousel of cards, each containing an image, a text description, and a single selection button. If a user has a set of choices for a single item, you can present a smaller single image and a collection of buttons with various options to choose between. Did they ask for more information on a subject? Cards can provide in depth information using audio or video output, or a receipt that details their shopping experience. There's an incredibly wide range of uses for cards to help guide the conversation between your user and your bot. The type of card you use will be determined by the needs of your application. Let's take a closer look at cards, their actions, and some recommended uses.
 
-Azure Bot Service cards are programmable objects containing standardized collections of rich user controls that are recognized across a wide range of channels. The following table describes the list of available cards and best practice suggestions of usage for each type of card.
+Azure AI Bot Service cards are programmable objects containing standardized collections of rich user controls that are recognized across a wide range of channels. The following table describes the list of available cards and best practice suggestions of usage for each type of card.
 
 | Card type | Example | Description |
 |--|--|--|
@@ -79,7 +79,7 @@ In other cases, a user may type a specific command. For example, a DevOps bot th
 > Designing a bot to require specific commands from the user can often provide a good user experience while
 > also eliminating the need for natural language understanding capability.
 
-For a _knowledge base_ or _questions and answers_ bot, a user may ask general questions. For example, imagine a bot that can answer questions based on the contents of thousands of documents. [Azure Cognitive Services](/azure/cognitive-services/) and [Azure Search](/azure/search/) are both technologies designed specifically for this type of scenario. For more information, see [Design knowledge bots](bot-service-design-pattern-knowledge-base.md) and [Language understanding](v4sdk/bot-builder-concept-luis.md).
+For a _knowledge base_ or _questions and answers_ bot, a user may ask general questions. For example, imagine a bot that can answer questions based on the contents of thousands of documents. [Azure AI services](/azure/ai-services/) and [Azure Search](/azure/search/) are both technologies designed specifically for this type of scenario. For more information, see [Design knowledge bots](bot-service-design-pattern-knowledge-base.md) and [Language understanding](v4sdk/bot-builder-concept-luis.md).
 
 > [!TIP]
 > If you're designing a bot that will answer questions based on structured or unstructured data from

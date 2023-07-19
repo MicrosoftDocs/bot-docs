@@ -148,7 +148,7 @@ For detailed steps on how to create your LUIS application and deploy your LUIS m
 
 ### QnA Maker Recognizer
 
-[QnAMaker.ai][13] is one of the [Microsoft Cognitive Services][14] that enables you to create rich question-answer pairs from existing content - documents, URLs, PDFs, and so on. You can use the QnA Maker recognizer to integrate with the service.
+[QnAMaker.ai][13] is one of the [Microsoft Azure AI services][14] that enables you to create rich question-answer pairs from existing content - documents, URLs, PDFs, and so on. You can use the QnA Maker recognizer to integrate with the service.
 
 For detailed information and an example how to create a QnA Maker recognizer, see the [QnA Maker recognizer](../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md#qna-maker-recognizer) section in the Recognizers in adaptive dialogs - reference guide.
 
@@ -203,18 +203,17 @@ The cross-trained recognizer set compares recognition results from multiple reco
 [3]:bot-builder-concept-dialog.md
 [4]:bot-builder-concept-adaptive-dialog-generators.md
 [5]:https://github.com/microsoft/botbuilder/blob/master/specs/botframework-activity/botframework-activity.md#locale
-[6]:/azure/cognitive-services/luis/what-is-luis
+[6]:/azure/ai-services/luis/what-is-luis
 [7]:../v4sdk/bot-builder-concept-luis.md
 [8]:../file-format/bot-builder-lu-file-format.md
 [9]:bot-builder-concept-adaptive-expressions.md
 [10]:bot-builder-concept-adaptive-dialog-memory-states.md
-[11]:/azure/cognitive-services/luis/luis-concept-data-extraction?tabs=V2
+[11]:/azure/ai-services/luis/luis-concept-data-extraction?tabs=V2
 [12]:bot-builder-howto-v4-luis.md
 [13]:https://qnamaker.ai
-[14]:https://azure.microsoft.com/services/cognitive-services/
+[14]:https://azure.microsoft.com/services/ai-services/
 [15]:/adaptive-cards
 [16]:https://aka.ms/bf-orchestrator
 [recognizers-ref]: ../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md
 [how-to-deploy-using-luis-cli]: ../v4sdk/bot-builder-howto-bf-cli-deploy-luis.md
-[interruptions]: bot-builder-concept-adaptive-dialog-interruptions.md
 [orchestrator-cli]:https://github.com/microsoft/botframework-sdk/blob/main/Orchestrator/docs/BFOrchestratorUsage.md

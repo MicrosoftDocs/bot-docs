@@ -16,7 +16,7 @@ ms.custom: abs-meta-21q1
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-Bot Framework Emulator is a desktop application that allows bot developers to test and debug bots, either locally or remotely. Using the Emulator, you can chat with your bot and inspect the messages that your bot sends and receives. The Emulator displays messages as they would appear in a web chat UI and logs JSON requests and responses as you exchange messages with your bot. Before you deploy your bot to the cloud, run it locally and test it using the Emulator. You can test your bot using the Emulator even if you haven't yet [created](./bot-service-quickstart.md) it with Azure Bot Service or configured it to run on any channels.
+Bot Framework Emulator is a desktop application that allows bot developers to test and debug bots, either locally or remotely. Using the Emulator, you can chat with your bot and inspect the messages that your bot sends and receives. The Emulator displays messages as they would appear in a web chat UI and logs JSON requests and responses as you exchange messages with your bot. Before you deploy your bot to the cloud, run it locally and test it using the Emulator. You can test your bot using the Emulator even if you haven't yet [created](./bot-service-quickstart.md) it with Azure AI Bot Service or configured it to run on any channels.
 
 [!INCLUDE [java-python-sunset-alert](includes/java-python-sunset-alert.md)]
 
@@ -147,7 +147,7 @@ If your bot is running with [Microsoft Account (MSA) credentials](#use-bot-crede
 
 ### Use bot credentials
 
-When you open the bot, set the **Microsoft App ID** and **Microsoft App password** if your bot is running with credentials. If you created your bot with the Azure Bot Service, the credentials are available on the bot's App Service, under the **Settings -> Configuration** section. If you don't know the values, you can remove those from the locally running bot's configuration file, then run the bot in the Emulator. If the bot isn't running with these settings, you don't need to run the Emulator with the settings either.
+When you open the bot, set the **Microsoft App ID** and **Microsoft App password** if your bot is running with credentials. If you created your bot with the Azure AI Bot Service, the credentials are available on the bot's App Service, under the **Settings -> Configuration** section. If you don't know the values, you can remove those from the locally running bot's configuration file, then run the bot in the Emulator. If the bot isn't running with these settings, you don't need to run the Emulator with the settings either.
 
 When creating an AD identity provider application, remember the following:
 
