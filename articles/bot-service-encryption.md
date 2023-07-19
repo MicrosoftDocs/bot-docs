@@ -87,7 +87,7 @@ For Azure Bot Service to have access to the key vault you created for this purpo
 1. Allow Key Vault to bypass your firewall.
     1. Open the **Key vaults** blade and select your key vault.
     1. Open the **Networking** blade and go to the **Firewalls and virtual networks** tab.
-    1. If **Allow access from** is set to **Private endpoint and selected networks**, set **Allow trusted Microsoft services to bypass this firewall** to **Yes**.
+    1. If **Allow access from** is set to **Disable public access**, make sure **Allow trusted Microsoft services to bypass this firewall** is selected.
     1. Select **Save** to save any changes you made.
 
     :::image type="content" source="media/key-vault/firewall-exception.png" alt-text="Firewall exception added for Key Vault":::
