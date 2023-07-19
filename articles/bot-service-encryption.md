@@ -64,20 +64,33 @@ For Azure AI Bot Service to have access to the key vault you created for this pu
 
     :::image type="content" source="media/key-vault/register-resource-provider.png" alt-text="Microsoft.BotService registered as a resource provider":::
 
-1. Configure an access policy on your key vault, giving the **Bot Service CMEK Prod** service principal the **Get** (from the **Key Management Operations**) and **Unwrap Key** and **Wrap Key** (from the **Cryptographic Operations**) key permissions.
-    1. Open the **Key vaults** blade and select your key vault.
-    1. Make sure that the **Bot Service CMEK Prod** application is added as an access policy and has these 3 permissions. You may need to add the **Bot Service CMEK Prod** application as an access policy to your key vault.
-    1. Select **Save** to save any changes you made.
+1. Azure Key Vault supports two permission models: Azure role-based access control (RBAC) or vault access policy. You can choose to use either permission model.
 
-    :::image type="content" source="media/key-vault/access-policies.png" alt-text="Bot Service CMEK Prod added as an access policy":::
+    :::image type="content" source="media/key-vault/choose-permission-model.png" alt-text="Screenshot of the two permission models available for your key vault.":::
+
+    1. To configure the Azure RBAC permission model on your key vault:
+        1. Open the **Key vaults** blade and select your key vault.
+        2. Go to the **Access control (IAM)** blade, and assign the **Key Vault Crypto Service Encryption User** role to **Bot Service CMEK Prod**. Only a user with the subscription owner role can make this change.
+
+        :::image type="content" source="media/key-vault/key-vault-rbac.png" alt-text="Screenshot of key vault configuration showing the crypto service encryption user role has been added.":::
+
+    1. To configure the Key Vault access policy permission model on your key vault:
+        1. Open the **Key vaults** blade and select your key vault.
+        1. Add the **Bot Service CMEK Prod** application as an access policy, and assign it the following permissions:
+         - **Get** (from the **Key Management Operations**)
+         - **Unwrap Key** (from the **Cryptographic Operations**)
+         - **Wrap Key** (from the **Cryptographic Operations**)
+        1. Select **Save** to save any changes you made.
+
+        :::image type="content" source="media/key-vault/access-policies.png" alt-text="Bot Service CMEK Prod added as an access policy":::
 
 1. Allow Key Vault to bypass your firewall.
     1. Open the **Key vaults** blade and select your key vault.
     1. Open the **Networking** blade and go to the **Firewalls and virtual networks** tab.
-    1. If **Allow access from** is set to **Private endpoint and selected networks**, set **Allow trusted Microsoft services to bypass this firewall** to **Yes**.
+    1. If **Allow access from** is set to **Disable public access**, make sure **Allow trusted Microsoft services to bypass this firewall** is selected.
     1. Select **Save** to save any changes you made.
 
-        :::image type="content" source="media/key-vault/firewall-exception.png" alt-text="Firewall exception added for Key Vault":::
+    :::image type="content" source="media/key-vault/firewall-exception.png" alt-text="Firewall exception added for Key Vault":::
 
 ### Enable customer-managed keys
 
