@@ -133,7 +133,7 @@ For more information about Slack support for bots, see the Slack API documentati
 
 ## Connect a bot to Slack using the Slack adapter
 
-As well as the channel available in the Azure Bot Service to connect your bot with Slack, the [Bot Builder Community repos](https://github.com/BotBuilderCommunity/) define a custom channel adapter for Slack.
+As well as the channel available in the Azure AI Bot Service to connect your bot with Slack, the [Bot Builder Community repos](https://github.com/BotBuilderCommunity/) define a custom channel adapter for Slack.
 
 - For information on the C# adapter, see [the Adapters section](https://github.com/BotBuilderCommunity/botbuilder-community-dotnet#adapters) in the .NET community repo.
 - For information on the JavaScript adapter, see [the Adapters section](https://github.com/BotBuilderCommunity/botbuilder-community-js#adapters) in the JavaScript community repo.

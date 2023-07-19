@@ -11,7 +11,7 @@ ms.date: 10/11/2022
 
 > [!IMPORTANT]
 > Python bots can't be deployed to a resource group that contains Windows services or bots.
-> Multiple Python bots can be deployed to the same resource group; however, you need to create other services (such as Cognitive Services) in another resource group.
+> Multiple Python bots can be deployed to the same resource group; however, you need to create other services (such as Azure AI services) in another resource group.
 
 ### [User-assigned managed identity](#tab/userassigned)
 

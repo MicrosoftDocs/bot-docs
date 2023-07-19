@@ -20,10 +20,10 @@ Regardless of the use case for which a knowledge bot is designed, its basic obje
 For example, one knowledge bot might answer questions about events such as, "What bot events are there at this conference?", "When is the next Reggae show?", or "Who is Tame Impala?" Another might answer IT-related questions such as "How do I update my operating system?" or "Where do I go to reset my password?". Yet another might answer questions about contacts such as "Who is John Doe?" or "What is Jane Doe's email address?".
 
 This article covers some of the AI capabilities you can add to a bot, such as to let a user search for information, ask questions, or interact with information.
-For which Azure Cognitive Services features the Bot Framework SDK supports, see [Natural language understanding](v4sdk/bot-builder-concept-luis.md).
+For which Azure AI services features the Bot Framework SDK supports, see [Natural language understanding](v4sdk/bot-builder-concept-luis.md).
 
 > [!TIP]
-> Cognitive Services incorporates evolving technologies. This article describes both newer and older features.
+> Azure AI services incorporates evolving technologies. This article describes both newer and older features.
 
 ## About confidence scores
 

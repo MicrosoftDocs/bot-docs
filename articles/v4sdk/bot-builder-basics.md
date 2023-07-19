@@ -16,9 +16,9 @@ ms.custom: abs-meta-21q1
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-A bot is an app that users interact with in a conversational way, using text, graphics (such as cards or images), or speech. Azure Bot Service is a cloud platform. It hosts bots and makes them available to _channels_, such as Microsoft Teams, Facebook, or Slack.
+A bot is an app that users interact with in a conversational way, using text, graphics (such as cards or images), or speech. Azure AI Bot Service is a cloud platform. It hosts bots and makes them available to _channels_, such as Microsoft Teams, Facebook, or Slack.
 
-The Bot Framework Service, which is a component of the Azure Bot Service, sends information between the user's bot-connected app and the bot. Each channel can include additional information in the activities they send. Before creating bots, it's important to understand how a bot uses activity objects to communicate with its users.
+The Bot Framework Service, which is a component of the Azure AI Bot Service, sends information between the user's bot-connected app and the bot. Each channel can include additional information in the activities they send. Before creating bots, it's important to understand how a bot uses activity objects to communicate with its users.
 
 This diagram illustrates two activity types, _conversation update_ and _message_, that might be exchanged when a user communicates with an echo bot.
 
@@ -35,7 +35,7 @@ In this example, the bot created and sent a message activity in response to the 
 
 ## The Bot Framework SDK
 
-The Bot Framework SDK allows you to build bots that can be hosted on the Azure Bot Service. The service defines a REST API and an activity protocol for how your bot and channels or users can interact. The SDK builds upon this REST API and provides an abstraction of the service so that you can focus on the conversational logic. While you don't need to understand the REST service to use the SDK, understanding some of its features can be helpful.
+The Bot Framework SDK allows you to build bots that can be hosted on the Azure AI Bot Service. The service defines a REST API and an activity protocol for how your bot and channels or users can interact. The SDK builds upon this REST API and provides an abstraction of the service so that you can focus on the conversational logic. While you don't need to understand the REST service to use the SDK, understanding some of its features can be helpful.
 
 Bots are apps that have a conversational interface. They can be used to shift simple, repetitive tasks, such as taking a dinner reservation or gathering profile information, on to automated systems that may no longer require direct human intervention. Users converse with a bot using text, interactive cards, and speech. A bot interaction can be a quick question and answer, or it can be a sophisticated conversation that intelligently provides access to services.
 
@@ -158,7 +158,7 @@ The protocol doesn't specify the order in which these POST requests and their ac
 Let's drill into the previous sequence diagram with a focus on the arrival of a message activity.
 
 :::image type="complex" source="media/bot-builder-activity-processing-stack.png" alt-text="Sequence diagram illustrating how an activity is processed by a bot.":::
-    The channel sends the user's message to the Azure Bot Service, and the service forwards the message to the bot's messaging endpoint. The bot's response is sent to the user within the scope of the turn.
+    The channel sends the user's message to the Azure AI Bot Service, and the service forwards the message to the bot's messaging endpoint. The bot's response is sent to the user within the scope of the turn.
 :::image-end:::
 
 In the example above, the bot replied to the message activity with another message activity containing the same text message. Processing starts with the HTTP POST request, with the activity information carried as a JSON payload, arriving at the web server. Often, ASP.NET projects are used for C# bots, and a popular framework such as Express or restify is used for JavaScript Node.js bots.

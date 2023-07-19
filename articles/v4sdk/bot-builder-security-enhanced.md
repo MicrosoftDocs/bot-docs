@@ -29,7 +29,7 @@ Impersonation refers to the action of an attacker who makes the bot think that t
 
 - Make the user ID _unguessable_.
 - [Connect a bot to Direct Line](../bot-service-channel-connect-directline.md).
-- Enable the Direct Line channel's [enhanced authentication](../bot-service-channel-connect-directline.md#configure-settings) option to allow the Azure Bot Service to further detect and reject any user ID change. This means the user ID (`Activity.From.Id`) on messages from Direct Line to the bot will always be the same as the one you used to initialize the Web Chat control.
+- Enable the Direct Line channel's [enhanced authentication](../bot-service-channel-connect-directline.md#configure-settings) option to allow the Azure AI Bot Service to further detect and reject any user ID change. This means the user ID (`Activity.From.Id`) on messages from Direct Line to the bot will always be the same as the one you used to initialize the Web Chat control.
 
     > [!NOTE]
     > Direct Line creates a _token_ based on the Direct Line secret and embeds the `User.Id` in the token.
@@ -39,7 +39,7 @@ Impersonation refers to the action of an attacker who makes the bot think that t
 
     > [!TIP]
     > For a regional bot, set `dlUrl` to "https://westeurope.directline.botframework.com/v3/directline/tokens/generate".
-    > For more information about regional bots, see [Regionalization in Azure Bot Service](bot-builder-concept-regionalization.md).
+    > For more information about regional bots, see [Regionalization in Azure AI Bot Service](bot-builder-concept-regionalization.md).
 
     ```csharp
     public class HomeController : Controller

@@ -32,7 +32,7 @@ sections:
         answer: |
           The Connector library is the exposition of the REST API.
           The Builder library adds the conversational dialog programming model and other features such as prompts, waterfalls, chains, and guided form completion.
-          The Builder library also provides access to cognitive services such as natural language understanding.
+          The Builder library also provides access to Azure AI services such as natural language understanding.
 
       - question:  How do user messages relate to HTTPS method calls?
         answer: |

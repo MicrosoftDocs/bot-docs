@@ -1,7 +1,7 @@
 ---
-title: User authentication in the Azure Bot Service - Bot Service
-description: Learn about user authentication features in the Azure Bot Service. See how bots use OAuth connections to sign in users and access secured online resources.
-keywords: azure bot service, authentication, bot framework token service
+title: User authentication in the Azure AI Bot Service - Bot Service
+description: Learn about user authentication features in the Azure AI Bot Service. See how bots use OAuth connections to sign in users and access secured online resources.
+keywords: Azure AI Bot Service, authentication, bot framework token service
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
@@ -31,9 +31,9 @@ Each external service has a way of securing those calls. A common way to issue t
 To secure the call to an external service, the bot must ask the user to sign-in, so it can acquire the user's token for that service.
 Many services support token retrieval via the **OAuth** or **OAuth2** protocol.
 
-The Azure Bot Service provides specialized **sign-in** cards and services that work with the OAuth protocol and manage the token life-cycle. A bot can use these features to acquire a user token.
+The Azure AI Bot Service provides specialized **sign-in** cards and services that work with the OAuth protocol and manage the token life-cycle. A bot can use these features to acquire a user token.
 
-- As part of bot configuration, an **OAuth connection** is registered within the Azure Bot Service resource in Azure.
+- As part of bot configuration, an **OAuth connection** is registered within the Azure AI Bot Service resource in Azure.
 
     The connection contains information about the **identity provider** to use, along with a valid OAuth client ID and secret, the OAuth scopes to enable, and any other connection metadata required by that identity provider.
 
@@ -41,7 +41,7 @@ The Azure Bot Service provides specialized **sign-in** cards and services that w
 
 The following image shows the elements involved in the authentication process.
 
-:::image type="content" source="media/concept-bot-authentication/bot-auth-components.png" alt-text="Diagram illustrating the relationship between authentication components in Azure Bot Service.":::
+:::image type="content" source="media/concept-bot-authentication/bot-auth-components.png" alt-text="Diagram illustrating the relationship between authentication components in Azure AI Bot Service.":::
 
 ## About the Bot Framework Token Service
 
@@ -92,7 +92,7 @@ Some channels such as Microsoft Teams, Direct Line, and WebChat are able to do t
 
 > [!IMPORTANT]
 > Please, keep in mind these important [Security considerations](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md#security-considerations).
-> You can find additional information in this blog post: [Using WebChat with Azure Bot Service Authentication](https://blog.botframework.com/2018/09/01/using-webchat-with-azure-bot-services-authentication/).
+> You can find additional information in this blog post: [Using WebChat with Azure AI Bot Service Authentication](https://blog.botframework.com/2018/09/01/using-webchat-with-azure-bot-services-authentication/).
 
 ## Next steps
 

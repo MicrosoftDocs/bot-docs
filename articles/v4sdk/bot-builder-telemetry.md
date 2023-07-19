@@ -22,7 +22,7 @@ This article describes how to implement telemetry in your bot using Application 
 
 * The code required to wire up telemetry in your bot and connect to Application Insights.
 * How to enable telemetry in your bot's [Dialogs](bot-builder-concept-dialog.md).
-* How to enable telemetry to capture usage data from other services, like Azure Cognitive Services.
+* How to enable telemetry to capture usage data from other services, like Azure AI services.
 * How to visualize your telemetry data in Application Insights.
 
 > [!IMPORTANT]
@@ -130,7 +130,7 @@ This article starts from the [CoreBot sample app](https://github.com/Microsoft/B
 
 1. You'll also need to add `Microsoft.Bot.Builder.Integration.ApplicationInsights.Core` to your list of using statements in `AdapterWithErrorHandler.cs`.
 
-1. Add the Application Insights instrumentation key in your `appsettings.json` file. The `appsettings.json` file contains metadata about external services the bot uses while running. For example, Cosmos DB, Application Insights, and Azure Cognitive Services connection and metadata is stored there. The addition to your `appsettings.json` file must be in this format:
+1. Add the Application Insights instrumentation key in your `appsettings.json` file. The `appsettings.json` file contains metadata about external services the bot uses while running. For example, Cosmos DB, Application Insights, and Azure AI services connection and metadata is stored there. The addition to your `appsettings.json` file must be in this format:
 
     ```json
     {
@@ -168,7 +168,7 @@ Follow the steps below to update your CoreBot example:
 > [!TIP]
 > If you're following along and updating the CoreBot sample code, you can refer to the [Application Insights sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/21.corebot-app-insights) if you run into any problems.
 
-Telemetry is now added to your bot dialogs. If you run your bot now, you should see things being logged in Application Insights; however, if you have any integrated technology such as a Cognitive Service, you'll need to add the `TelemetryClient` to that code as well.
+Telemetry is now added to your bot dialogs. If you run your bot now, you should see things being logged in Application Insights; however, if you have any integrated technology such as an Azure AI service, you'll need to add the `TelemetryClient` to that code as well.
 
 # [JavaScript](#tab/javascript)
 
@@ -179,7 +179,7 @@ This article starts with the [CoreBot sample app](https://github.com/Microsoft/B
 
 1. Open the [CoreBot sample app](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot) in Visual Studio Code.
 
-1. Add the [Application Insights key](../bot-service-resources-app-insights-keys.md) to your `.env` file: `InstrumentationKey=<EnterInstrumentationKeyHere>`. The `.env` file contains metadata about external services the bot uses while running. For example, Application Insights and Azure Cognitive Services connection and metadata is stored there. The addition to your `.env` file must be in this format:
+1. Add the [Application Insights key](../bot-service-resources-app-insights-keys.md) to your `.env` file: `InstrumentationKey=<EnterInstrumentationKeyHere>`. The `.env` file contains metadata about external services the bot uses while running. For example, Application Insights and Azure AI services connection and metadata is stored there. The addition to your `.env` file must be in this format:
 
     [!code-ini[.env file](~/../botbuilder-samples/samples/javascript_nodejs/21.corebot-app-insights/.env?highlight=8)]
 
@@ -317,7 +317,6 @@ We'll next implement telemetry functionality in your LUIS service. The LUIS serv
             "https://" + configuration["LuisAPIHostName"]);
 
         // Set the recognizer options depending on which endpoint version you want to use.
-        // More details can be found in /azure/cognitive-services/luis/luis-migration-api-v3
         var recognizerOptions = new LuisRecognizerOptionsV3(luisApplication)
         {
             TelemetryClient = telemetryClient,

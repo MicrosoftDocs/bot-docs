@@ -1,5 +1,5 @@
 ---
-title: About network isolation in Azure Bot Service
+title: About network isolation in Azure AI Bot Service
 description: Learn about Azure Virtual Network and how a virtual network lets you restrict user access to your bot.
 displayName: private network, isolated network
 author: JonathanFingold
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 04/05/2022
 ---
 
-# Network isolation in Azure Bot Service
+# Network isolation in Azure AI Bot Service
 
 This article covers concepts around network isolation for your Azure bot and its dependent services.
 
 You may want to restrict access to your bot to a private network.
-The only way to do this in the Azure Bot Service is to use the Direct Line App Service extension.
+The only way to do this in the Azure AI Bot Service is to use the Direct Line App Service extension.
 For example, you can use the App Service extension to host a company-internal bot and require users to access the bot from within your company network.
 
 For detailed instructions on how to configure your bot in a private network, see how to [Use an isolated network](./dl-network-isolation-how-to.md).

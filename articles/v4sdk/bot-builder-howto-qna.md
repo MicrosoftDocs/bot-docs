@@ -26,25 +26,25 @@ One of the basic requirements in creating your own QnA Maker service is to popul
 
 This article describes how to use an _existing_ QnA Maker knowledge base from your bot.
 
-For new bots, consider using the [question answering](bot-builder-concept-luis.md#question-answering) feature of Azure Cognitive Service for Language.
+For new bots, consider using the [question answering](bot-builder-concept-luis.md#question-answering) feature of Azure AI Language.
 
 [!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
 
 ## Prerequisites
 
 - A [QnA Maker](https://www.qnamaker.ai/) account and an existing QnA Maker knowledge base.
-- Knowledge of [bot basics](bot-builder-basics.md) and [QnA Maker](/azure/cognitive-services/qnamaker/overview/overview).
-- A copy of the **QnA Maker (simple)** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/master/archive/csharp_dotnetcore/11.qnamaker), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/master/archive/javascript_nodejs/11.qnamaker), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/java_springboot/11.qnamaker), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/archive/python/11.qnamaker).
+- Knowledge of [bot basics](bot-builder-basics.md) and [QnA Maker](/azure/ai-services/qnamaker/overview/overview).
+- A copy of the **QnA Maker (simple)** sample in [**C#** (archived)][], [**JavaScript** (archived)][], [**Java** (archived)][], or [**Python** (archived)][].
 
 ## About this sample
 
 To use QnA Maker in your bot, you need an existing knowledge base in the [QnA Maker](https://www.qnamaker.ai/) portal. Your bot then can use the knowledge base to answer the user's questions.
 
 For new bot development, consider using [Power Virtual Agents](/power-virtual-agents/fundamentals-what-is-power-virtual-agents).
-If you need to create a new knowledge base for a Bot Framework SDK bot, see the following Cognitive Services articles:
+If you need to create a new knowledge base for a Bot Framework SDK bot, see the following Azure AI services articles:
 
-- [What is question answering?](/azure/cognitive-services/language-service/question-answering/overview)
-- [Create an FAQ bot](/azure/cognitive-services/language-service/question-answering/tutorials/bot-service)
+- [What is question answering?](/azure/ai-services/language-service/question-answering/overview)
+- [Create an FAQ bot](/azure/ai-services/language-service/question-answering/tutorials/bot-service)
 - [Azure Cognitive Language Services Question Answering client library for .NET](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/cognitivelanguage/Azure.AI.Language.QuestionAnswering#readme)
 
 ## [C#](#tab/cs)
@@ -78,7 +78,7 @@ The user's input is sent to your knowledge base and the best returned answer is 
 ## Obtain values to connect your bot to the knowledge base
 
 > [!TIP]
-> The QnA Maker documentation has instructions on how to [create, train, and publish your knowledge base](/azure/cognitive-services/qnamaker/quickstarts/create-publish-knowledge-base).
+> The QnA Maker documentation has instructions on how to [create, train, and publish your knowledge base](/azure/ai-services/qnamaker/quickstarts/create-publish-knowledge-base).
 
 1. In the [QnA Maker](https://www.qnamaker.ai/) site, select your knowledge base.
 1. With your knowledge base open, select the **SETTINGS** tab. Record the value shown for _service name_. This value is useful for finding your knowledge base of interest when using the QnA Maker portal interface. It's not used to connect your bot app to this knowledge base.
@@ -102,25 +102,25 @@ If you aren't deploying this for production, you can leave your bot's app ID and
 
 **appsettings.json**
 
-[!code-csharp[appsettings](~/../botbuilder-samples/archive/csharp_dotnetcore/11.qnamaker/appsettings.json)]
+[**C#** (archived)][]
 
 ## [JavaScript](#tab/js)
 
 **.env**
 
-[!code-ini[.env file](~/../botbuilder-samples/archive/javascript_nodejs/11.qnamaker/.env)]
+[**JavaScript** (archived)][]
 
 ## [Java](#tab/java)
 
 **application.properties**
 
-[!code-ini[appsettings](~/../botbuilder-samples/archive/java_springboot/11.qnamaker/src/main/resources/application.properties)]
+[**Java** (archived)][]
 
 ## [Python](#tab/python)
 
 **config.py**
 
-[!code-python[config.py](~/../botbuilder-samples/archive/python/11.qnamaker/config.py?range=10-18)]
+[**Python** (archived)][]
 
 ---
 
@@ -136,7 +136,7 @@ In **QnABot.cs**, in the `OnMessageActivityAsync` method, create a QnAMaker inst
 
 **Bots/QnABot.cs**
 
-[!code-csharp[QnA Maker connection](~/../botbuilder-samples/archive/csharp_dotnetcore/11.qnamaker/Bots/QnABot.cs?range=32-39)]
+[**C#** (archived)][]
 
 ## [JavaScript](#tab/js)
 
@@ -148,7 +148,7 @@ In the **QnABot.js** file, we use the connection information provided by your .e
 
 **bots/QnABot.js**
 
-[!code-javascript[QnAMaker](~/../botbuilder-samples/archive/javascript_nodejs/11.qnamaker/bots/QnABot.js?range=12-16)]
+[**JavaScript** (archived)][]
 
 ## [Java](#tab/java)
 
@@ -156,14 +156,15 @@ In **QnABot.java**, in the `onMessageActivity` method, create a QnAMaker instanc
 
 **QnABot.java**
 
-[!code-java[QnA Maker connection](~/../botbuilder-samples/archive/java_springboot/11.qnamaker/src/main/java/com/microsoft/bot/sample/qnamaker/QnABot.java?range=25-30)]
+[**Java** (archived)][]
 
 ## [Python](#tab/python)
 
 In the **qna_bot.py** file, use the connection information provided by the **config.py** file to establish a connection to the QnA Maker service: `self.qna_maker`.
 
 **bots/qna_bot.py**
-[!code-python[QnAMaker](~/../botbuilder-samples/archive/python/11.qnamaker/bots/qna_bot.py?range=13-19)]
+
+[**Python** (archived)][]
 
 ---
 
@@ -175,7 +176,7 @@ When your bot needs an answer from QnAMaker, call the `GetAnswersAsync` method f
 
 **Bots/QnABot.cs**
 
-[!code-csharp[QnA Maker get answers](~/../botbuilder-samples/archive/csharp_dotnetcore/11.qnamaker/Bots/QnABot.cs?range=43-54)]
+[**C#** (archived)][]
 
 ## [JavaScript](#tab/js)
 
@@ -183,7 +184,7 @@ In the **QnABot.js** file, we pass the user's input to the QnA Maker service's `
 
 **bots/QnABot.js**
 
-[!code-javascript[OnMessage](~/../botbuilder-samples/archive/javascript_nodejs/11.qnamaker/bots/QnABot.js?range=45-54)]
+[**JavaScript** (archived)][]
 
 ## [Java](#tab/java)
 
@@ -191,20 +192,21 @@ When your bot needs an answer from QnAMaker, call the `getAnswers` method from y
 
 **QnABot.java**
 
-[!code-java[QnA Maker get answers](~/../botbuilder-samples/archive/java_springboot/11.qnamaker/src/main/java/com/microsoft/bot/sample/qnamaker/QnABot.java?range=34-47)]
+[**Java** (archived)][]
 
 ## [Python](#tab/python)
 
 In the **qna_bot.py** file, we pass the user's input to the QnA Maker service's `get_answers` method to get answers from the knowledge base. If QnA Maker returns a response, this is shown to the user. Otherwise, the user receives the message _No QnA Maker answers were found._
 
 **bots/qna_bot.py**
-[!code-python[get_answers](~/../botbuilder-samples/archive/python/11.qnamaker/bots/qna_bot.py?range=32-37)]
+
+[**Python** (archived)][]
 
 ---
 
 ## Test the bot
 
-Run the sample locally on your machine. If you haven't done so already, install the [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md#download). For further instructions, refer to the sample's `README` ([C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/11.qnamaker), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/11.qnamaker), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/11.qnamaker)).
+Run the sample locally on your machine. If you haven't done so already, install the [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md#download). For further instructions, refer to the sample's `README` ([**C#** (archived)][], [**JavaScript** (archived)][], [**Java** (archived)][], or [**Python** (archived)][]).
 
 Start the Emulator, connect to your bot, and send messages to your bot. The responses to your questions will vary, based on the information your knowledge base.
 
@@ -212,22 +214,32 @@ Start the Emulator, connect to your bot, and send messages to your bot. The resp
 
 ## Additional information
 
-The **QnA Maker multi-turn** sample ([**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/49.qnamaker-all-features), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/49.qnamaker-all-features), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/49.qnamaker-all-features), [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/49.qnamaker-all-features)) shows how to use a QnA Maker dialog to support QnA Maker's follow-up prompt and active learning features.
+The **QnA Maker multi-turn** sample ([**C#** multi-turn sample (archived)][], [**JavaScript** multi-turn sample (archived)][], [**Java** multi-turn sample (archived)][], [**Python** multi-turn sample (archived)][]) shows how to use a QnA Maker dialog to support QnA Maker's follow-up prompt and active learning features.
 
 - QnA Maker supports follow-up prompts, also known as multi-turn prompts.
 If the QnA Maker knowledge base requires more information from the user, QnA Maker sends context information that you can use to prompt the user. This information is also used to make any follow-up calls to the QnA Maker service.
 In version 4.6, the Bot Framework SDK added support for this feature.
 
-  To construct such a knowledge base, see the QnA Maker documentation on how to [Use follow-up prompts to create multiple turns of a conversation](/azure/cognitive-services/QnAMaker/How-To/multi-turn).
+  To construct such a knowledge base, see the QnA Maker documentation on how to [Use follow-up prompts to create multiple turns of a conversation](/azure/ai-services/QnAMaker/How-To/multi-turn).
 
 - QnA Maker also supports active learning suggestions, allowing the knowledge base to improve over time.
 The QnA Maker dialog supports explicit feedback for the active learning feature.
 
-  To enable this feature on a knowledge base, see the QnA Maker documentation on [Active learning suggestions](/azure/cognitive-services/qnamaker/concepts/active-learning-suggestions).
+  To enable this feature on a knowledge base, see the QnA Maker documentation on [Active learning suggestions](/azure/ai-services/qnamaker/).
 
 ## Next steps
 
-QnA Maker can be combined with other Cognitive Services, to make your bot even more powerful. Bot Framework Orchestrator provides a way to combine QnA with Language Understanding (LUIS) in your bot.
+QnA Maker can be combined with other Azure AI services, to make your bot even more powerful. Bot Framework Orchestrator provides a way to combine QnA with Language Understanding (LUIS) in your bot.
 
 > [!div class="nextstepaction"]
 > [Use Orchestrator for intent resolution](./bot-builder-tutorial-orchestrator.md)
+
+[**C#** (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/csharp_dotnetcore/11.qnamaker
+[**JavaScript** (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/javascript_nodejs/11.qnamaker
+[**Java** (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/11.qnamaker
+[**Python** (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/python/11.qnamaker
+
+[**C#** multi-turn sample (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/csharp_dotnetcore/49.qnamaker-all-features
+[**JavaScript** multi-turn sample (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/javascript_nodejs/49.qnamaker-all-features
+[**Java** multi-turn sample (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/49.qnamaker-all-features
+[**Python** multi-turn sample (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/python/49.qnamaker-all-features

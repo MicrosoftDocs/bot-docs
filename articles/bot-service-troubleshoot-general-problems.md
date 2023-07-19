@@ -1,6 +1,6 @@
 ---
-title: Troubleshooting Azure Bot Service bots
-description: These frequently asked questions can help you to troubleshoot common bot development or operational issues for bots built with Azure Bot Service.
+title: Troubleshooting Azure AI Bot Service bots
+description: These frequently asked questions can help you to troubleshoot common bot development or operational issues for bots built with Azure AI Bot Service.
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
@@ -11,7 +11,7 @@ ms.date: 02/20/2020
 ms.custom: abs-meta-21q1
 ---
 
-# General troubleshooting for Azure Bot Service bots
+# General troubleshooting for Azure AI Bot Service bots
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
@@ -107,7 +107,7 @@ In some cases, you may want to initiate an asynchronous task that waits for a fe
 
 Bots are web services and some hosting platforms, including Azure, automatically put the service to sleep if it doesn't receive traffic for a certain period of time. If this happens to your bot, it must restart from scratch the next time it receives a message, which makes its response much slower than if it was already running.
 
-Some hosting platforms enable you to configure your service so that it won't be put to sleep. If your bot is hosted on Azure Bot Service Web Apps, go to your bot's service in the [Azure portal](https://portal.azure.com), select **Application settings**, and then select **Always on**. This option is available in most, but not all, service plans.
+Some hosting platforms enable you to configure your service so that it won't be put to sleep. If your bot is hosted on Azure AI Bot Service Web Apps, go to your bot's service in the [Azure portal](https://portal.azure.com), select **Application settings**, and then select **Always on**. This option is available in most, but not all, service plans.
 
 ## How can I guarantee message delivery order?
 
@@ -162,7 +162,7 @@ Direct Line 3.0 returns HTTP status code 502 when it tries to contact your bot b
 
 ## Why do I get an Authorization_RequestDenied exception when creating a bot?
 
-Permission to create Azure Bot Service bots are managed through the Azure Active Directory (Azure AD) portal. If permissions aren't properly configured in the [Azure Active Directory admin center](https://aad.portal.azure.com), users will get the **Authorization_RequestDenied** exception when trying to create a bot service.
+Permission to create Azure AI Bot Service bots are managed through the Azure Active Directory (Azure AD) portal. If permissions aren't properly configured in the [Azure Active Directory admin center](https://aad.portal.azure.com), users will get the **Authorization_RequestDenied** exception when trying to create a bot service.
 
 First check whether you're a "Guest" of the directory:
 

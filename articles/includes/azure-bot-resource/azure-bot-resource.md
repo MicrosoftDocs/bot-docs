@@ -10,7 +10,7 @@ ms.date: 09/06/2022
 
 ## Create the resource
 
-Create the **Azure Bot** resource, which will allow you to register your bot with the Azure Bot Service.
+Create the **Azure Bot** resource, which will allow you to register your bot with the Azure AI Bot Service.
 
 [!INCLUDE [bot-resource-type-tip](../bot-resource-type-tip.md)]
 
@@ -24,7 +24,7 @@ Create the **Azure Bot** resource, which will allow you to register your bot wit
 1. Select **Create**.
 1. Enter values in the required fields and review and update settings.
 
-   1. Provide information under **Project details**. Select whether your bot will have global or local data residency. Currently, the local data residency feature is only available for resources in the "westeurope" region. For more information, see [Regionalization in Azure Bot Service](../../v4sdk/bot-builder-concept-regionalization.md).
+   1. Provide information under **Project details**. Select whether your bot will have global or local data residency. Currently, the local data residency feature is only available for resources in the "westeurope" region. For more information, see [Regionalization in Azure AI Bot Service](../../v4sdk/bot-builder-concept-regionalization.md).
 
       :::image type="content" source="../../media/azure-bot-resource/azure-bot-project-details.png" alt-text="The project details settings for an Azure Bot resource":::
 
@@ -71,7 +71,7 @@ To get your bot's app or tenant ID:
 ### To generate a new password
 
 Single-tenant and multi-tenant bots have an app secret or password that you need for some operations.
-Azure Bot Service hides your bot secret. However, the owner of the bot's App Service resource can generate a new password:
+Azure AI Bot Service hides your bot secret. However, the owner of the bot's App Service resource can generate a new password:
 
 1. Go to the Azure Bot resource blade for your bot.
 1. Go to the bot's **Configuration** blade.

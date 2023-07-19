@@ -1,8 +1,8 @@
 ---
 title: What is the Bot Framework SDK?
-description: The Bot Framework, along with the Azure Bot Service, provides tools to build, test, deploy, and manage intelligent bots, all in one place. The Bot Framework includes a modular and extensible SDK for building bots, as well as tools, templates, and related AI services. With this framework, developers can create bots that use speech, understand natural language, handle questions and answers, and more.
+description: The Bot Framework, along with the Azure AI Bot Service, provides tools to build, test, deploy, and manage intelligent bots, all in one place. The Bot Framework includes a modular and extensible SDK for building bots, as well as tools, templates, and related AI services. With this framework, developers can create bots that use speech, understand natural language, handle questions and answers, and more.
 keywords: overview, introduction, SDK, outline
-displayName: About the Bot Framework SDK, About the Azure Bot Service
+displayName: About the Bot Framework SDK, About the Azure AI Bot Service
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
@@ -17,7 +17,7 @@ ms.custom: abs-meta-21q1
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-Microsoft Bot Framework and Azure Bot Service are a collection of libraries, tools, and services that let you build, test, deploy, and manage intelligent bots. The Bot Framework includes a modular and extensible SDK for building bots and connecting to AI services. With this framework, developers can create bots that use speech, understand natural language, answer questions, and more.
+Microsoft Bot Framework and Azure AI Bot Service are a collection of libraries, tools, and services that let you build, test, deploy, and manage intelligent bots. The Bot Framework includes a modular and extensible SDK for building bots and connecting to AI services. With this framework, developers can create bots that use speech, understand natural language, answer questions, and more.
 
 > [!TIP]
 > For a list of Microsoft products and services for building bots, who they support, and a brief description of each, see [Choose the right chatbot solution for your use case](/azure/bot-service/bot-overview).
@@ -46,7 +46,7 @@ A more complex bot can rely on various tools and services to deliver richer expe
 Bots can do the same things other types of software can do&mdash;read from and write to files, use databases and APIs, and do the regular computational tasks.
 What makes bots unique is their use of mechanisms used in human-to-human communication.
 
-Azure Bot Service and the Bot Framework include:
+Azure AI Bot Service and the Bot Framework include:
 
 - Bot Framework SDKs for developing bots in C#, JavaScript, Python, or Java.
   (The Python and Java SDKs are being retired with final long-term support ending in November 2023.)
@@ -56,12 +56,12 @@ Azure Bot Service and the Bot Framework include:
 
 Additionally, bots may use other Azure services, such as:
 
-- Azure Cognitive Services to build intelligent applications
+- Azure AI services to build intelligent applications
 - Azure Storage for cloud storage solution
 
 ## How to build a bot
 
-Azure Bot Service and Microsoft Bot Framework offer an integrated set of tools and services to help you design and build bots, through all stages of the bot life cycle.
+Azure AI Bot Service and Microsoft Bot Framework offer an integrated set of tools and services to help you design and build bots, through all stages of the bot life cycle.
 SDKs exist for C#, Java, JavaScript, TypeScript, and Python.
 Choose your favorite development environment or command line tools to create your bot.
 
@@ -80,7 +80,7 @@ Typically, a bot is a web service hosted in Azure.
 In Azure, you can configure your bot to send and receive messages and events from various channels.
 You can create bots in any number of environments and languages. You can [create a bot](bot-service-quickstart-create-bot.md) for local development.
 
-With Azure Bot Service and the Bot Framework, you can use other libraries and services to extend your bot's functionality. This table describes some of the features supported by the SDK.
+With Azure AI Bot Service and the Bot Framework, you can use other libraries and services to extend your bot's functionality. This table describes some of the features supported by the SDK.
 
 | Feature | Description | More information |
 |:-|:-|:-|

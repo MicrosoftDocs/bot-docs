@@ -1,9 +1,9 @@
 ---
-title: Publish a bot with Azure PowerShell - Azure Bot Service
+title: Publish a bot with Azure PowerShell - Azure AI Bot Service
 description: Learn how to publish a bot with Azure PowerShell.
-author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
+author: iaanw
+ms.author: iawilt
+manager: leeclontz
 ms.topic: how-to
 ms.service: bot-service
 ms.date: 02/23/2021
@@ -25,7 +25,7 @@ You can run these commands locally, using Azure PowerShell, or remotely through 
 > [!IMPORTANT]
 > While the **Az.BotService** PowerShell module is in preview, you must install it separately using the `Install-Module` cmdlet.
 
-Creating a bot with Azure Bot Service and creating a bot locally are independent, parallel ways to create a bot.
+Creating a bot with Azure AI Bot Service and creating a bot locally are independent, parallel ways to create a bot.
 
 ## Prerequisites
 

@@ -13,7 +13,7 @@ ms.custom: template-how-to
 
 # Configure Bot Framework bots for US Government customers
 
-This article is for US government customers who are deploying Bot Framework and Azure Bot Service bots to the Microsoft Azure Government cloud.
+This article is for US government customers who are deploying Bot Framework and Azure AI Bot Service bots to the Microsoft Azure Government cloud.
 
 > [!TIP]
 > Bots in Azure Government that connect to Microsoft Teams must use the Microsoft Office 365 Government Community Cloud (GCC) High environment.
@@ -175,9 +175,9 @@ For more information about Microsoft Azure Government and Office 365 Government 
 With these steps your bot should be configured to work successfully in the Azure Government cloud and the Office 365 GCC High environment.
 Other useful references regarding Bot Service in Azure Government.
 
-- [Tutorial: Deploy a basic bot using Azure Bot Service](tutorial-publish-a-bot.md)
+- [Tutorial: Deploy a basic bot using Azure AI Bot Service](tutorial-publish-a-bot.md)
 - [Add authentication to a bot in Bot Framework SDK](v4sdk/bot-builder-authentication.md)
 - [Connect a bot to Web Chat in the Bot Framework SDK](bot-service-channel-connect-webchat.md)
 - [Authenticate requests with the Bot Connector API](rest-api/bot-framework-rest-connector-authentication.md)
-- [Compliance in the Azure Bot Service](bot-service-compliance.md)
+- [Compliance in the Azure AI Bot Service](bot-service-compliance.md)
 - [Azure Government Documentation](/azure/azure-government/)

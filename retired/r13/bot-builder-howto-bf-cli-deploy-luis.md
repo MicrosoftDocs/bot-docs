@@ -37,16 +37,16 @@ Once your bot project's language understanding resources have been created, you'
 
 ## Create your LUIS authoring resource in Azure
 
-The LUIS authoring resource is an [Azure Cognitive Services][cognitive-services-overview] resource that you create using Azure's [Create Cognitive Services][create-cognitive-services] page. You can think of this as a container for your LUIS applications and the model, or models that those LUIS applications are comprised of. The LUIS authoring resource provides a secure way to author your LUIS resources.  You need this to be able to perform the activities involved, such as create, update, train, and publish a LUIS app. The Bot Framework CLI LUIS group provides the commands you need to accomplish these tasks.
+The LUIS authoring resource is an [Azure AI services][ai-services-overview] resource that you create using Azure's [Create Azure AI services][create-ai-services] page. You can think of this as a container for your LUIS applications and the model, or models that those LUIS applications are comprised of. The LUIS authoring resource provides a secure way to author your LUIS resources.  You need this to be able to perform the activities involved, such as create, update, train, and publish a LUIS app. The Bot Framework CLI LUIS group provides the commands you need to accomplish these tasks.
 
-1. Go to the Azure [Create Cognitive Services][create-cognitive-services] page.  
+1. Go to the Azure [Create Azure AI services][create-ai-services] page.  
 2. In the **Create options** section, select **Authoring** to create a LUIS authoring resource.
 
    ![Set Create options to Authoring image](./media/adaptive-dialogs/create-options-authoring.png)
 
 3. Enter values for each of the fields, then select the **Review + create** button.
 
-   ![Set Create cognitive services image](./media/adaptive-dialogs/create-cognitive-services.png)
+   ![Set Create Azure AI services image](./media/adaptive-dialogs/create-ai-services.png)
 
     > [!NOTE]
     > When entering the **Resource Group** and **Name**, keep in mind that you cannot change these values later. Also note that the value you give for **Name** will be part of your **Endpoint URL**.
@@ -73,7 +73,7 @@ For more information on see [Create LUIS resources][luis-how-to-azure-subscripti
 
 ## Create your LUIS model
 
-Once you have created all the individual .lu files needed in your project, you can combine them to create your LUIS model using the `luis:convert` command. This results in a JSON file that you will reference when creating your LUIS application hosted in Azure Cognitive Services in the _LUIS authoring resource_ you created previously.
+Once you have created all the individual .lu files needed in your project, you can combine them to create your LUIS model using the `luis:convert` command. This results in a JSON file that you will reference when creating your LUIS application hosted in Azure AI services in the _LUIS authoring resource_ you created previously.
 
 ``` cli
 bf luis:convert -i <input-folder-name> -o <output-file-name> -r
@@ -156,7 +156,7 @@ For information about publishing a LUIS application, see [Publish your active, t
 
 ## Create and train a LUIS app then publish it using the build command
 
-It is helpful to understand how the process of deploying a LUIS app works, and after completing this article up to this point, you should have a better understanding of the processes involved in creating the LUIS model, using that model to create a LUIS app in an Azure Cognitive Services resource, then train and publish it using the Bot Framework CLI commands.
+It is helpful to understand how the process of deploying a LUIS app works, and after completing this article up to this point, you should have a better understanding of the processes involved in creating the LUIS model, using that model to create a LUIS app in an Azure AI services resource, then train and publish it using the Bot Framework CLI commands.
 
 These commands give you a lot of flexibility when tailoring scripts to your specific needs.
 You can use the `luis:build` command to create or update, then train and publish a LUIS app.
@@ -165,7 +165,7 @@ However, using the `luis:build` command provides you with fewer options for cont
 For each .lu file, including .lu files for each locale, the build command combines all the following actions into a single command:
 
 1. Creates one LUIS model for [every locale](#lu-and-multiple-language-variations) found using your existing .lu files.
-1. Using that model, it creates a new LUIS app in the specified Azure Cognitive Services resource if none exists, otherwise it will update the existing LUIS app.
+1. Using that model, it creates a new LUIS app in the specified Azure AI services resource if none exists, otherwise it will update the existing LUIS app.
 1. When updating an existing LUIS app, it will automatically increment the versionId and optionally delete the old version.
 1. Trains the new or updated LUIS app, then publishes it.
 1. If you include the `--dialog` option, it will output the `.dialog` definition files that can be used by the [LUIS recognizer][luis-recognizer] when developing using the [declarative approach][declarative]. This is explained in [The dialog file](#the-dialog-file) section.
@@ -348,36 +348,27 @@ See [Using declarative assets in adaptive dialogs][declarative] for more informa
 - [Updating your LUIS Models][how-to-update-using-luis-cli]
 
 <!-------------------------------------------------------------------------------------------->
-[cognitive-services-overview]: /azure/cognitive-services/Welcome
-[create-cognitive-services]: https://portal.azure.com/#create/Microsoft.CognitiveServicesLUISAllInOne
+[ai-services-overview]: /azure/ai-services/
+[create-ai-services]: https://portal.azure.com/#create/Microsoft.CognitiveServicesLUISAllInOne
 [luis-recognizer]: bot-builder-concept-adaptive-dialog-recognizers.md#luis-recognizer
 [natural-language-processing-in-adaptive-dialogs]: bot-builder-concept-adaptive-dialog-recognizers.md#introduction-to-natural-language-processing-in-adaptive-dialogs
 [language-understanding]: bot-builder-concept-adaptive-dialog-recognizers.md#language-understanding
 [lu-templates]: ../file-format/bot-builder-lu-file-format.md
 [model-description]: ../file-format/bot-builder-lu-file-format.md#model-description
-[luis-how-to-azure-subscription]: /azure/cognitive-services/luis/luis-how-to-azure-subscription
-[bf-cli-overview]: bf-cli-overview.md
-
+[luis-how-to-azure-subscription]: /azure/ai-services/luis/luis-how-to-azure-subscription
 [bf-luisapplicationimport]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-luisapplicationimport
 [bf-luisapplicationcreate]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-luisapplicationcreate
 [bf-luisapplicationshow]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-luisapplicationshow
 [bf-luistrainrun]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-luistrainrun
 [luisapplicationpublish]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-luisapplicationpublish
-[bf-luisgeneratecs]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-luisgeneratecs
-[bf-luisgeneratets]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-luisgeneratets
 [bf-luisbuild]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-luisbuild
 [declarative]: bot-builder-concept-adaptive-dialog-declarative.md
 [dialog-merge-command]: bot-builder-concept-adaptive-dialog-declarative.md#the-merge-command
+[luis-how-to-train]: /azure/ai-services/LUIS/how-to/train-test
+[luis-concept-test]: /azure/ai-services/LUIS/how-to/train-test
+[test-an-utterance]: /azure/ai-services/LUIS/how-to/train-test
+[luis-how-to-publish-app]: /azure/ai-services/LUIS/how-to/publish
 
-[luis-how-to-add-intents]: /azure/cognitive-services/LUIS/luis-how-to-add-intents
-[luis-how-to-start-new-app]: /azure/cognitive-services/LUIS/luis-how-to-start-new-app
-[luis-how-to-train]: /azure/cognitive-services/LUIS/luis-how-to-train
-[luis-concept-test]: /azure/cognitive-services/LUIS/luis-concept-test
-[test-an-utterance]: /azure/cognitive-services/LUIS/luis-interactive-test#test-an-utterance
-[luis-interactive-test]: /azure/cognitive-services/LUIS/luis-interactive-test
-[luis-how-to-publish-app]: /azure/cognitive-services/LUIS/luis-how-to-publish-app
-
-[ToDoBotWithLUISAndQnAMakerSample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/adaptive-dialog/08.todo-bot-luis-qnamaker
 
 [how-to-update-using-luis-cli]: bot-builder-howto-bf-cli-update-luis.md
 

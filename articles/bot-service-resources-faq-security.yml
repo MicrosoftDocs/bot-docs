@@ -88,18 +88,18 @@ sections:
           ```
 
           > [!NOTE]
-          > [Azure QnA Maker will be retired on 31 March 2025](https://azure.microsoft.com/updates/azure-qna-maker-will-be-retired-on-31-march-2025/).
+          > [Azure AI QnA Maker will be retired on 31 March 2025](https://azure.microsoft.com/updates/azure-qna-maker-will-be-retired-on-31-march-2025/).
           > Beginning 1 October 2022, you won't be able to create new QnA Maker resources or knowledge bases.
           >
           > [Language Understanding (LUIS) will be retired on 1 October 2025](https://azure.microsoft.com/updates/language-understanding-retirement/).
           > Beginning 1 April 2023, you won't be able to create new LUIS resources.
           >
-          > Newer versions of theses services are now available as part of Azure Cognitive Service for Language.
+          > Newer versions of theses services are now available as part of Azure AI Language.
           > For more information about question-and-answer and language understanding support in the Bot Framework SDK,
           > see [Natural language understanding](./v4sdk/bot-builder-concept-luis.md).
 
           > [!NOTE]
-          > LUIS and QnA Maker require Cognitive Services permissions. QnA Maker also requires Search permissions.
+          > LUIS and QnA Maker require Azure AI services permissions. QnA Maker also requires Search permissions.
           > When creating a custom role, remember that any inherited *deny* permissions will supersede these *allow* permissions.
 
       - question: What keeps my bot secure from clients impersonating the Bot Framework Service?
@@ -128,8 +128,8 @@ sections:
               > [!WARNING]
               > The use of the magic code is deprecated. Instead, you should use **Direct Line enhanced authentication**, described below.
 
-          1. **Direct Line enhanced authentication**. Because of the issues with the *magic code* approach, Azure Bot Service removed its need.
-          Azure Bot Service guarantees that the sign-in process can only be completed in the **same browser session** as the Web Chat itself.
+          1. **Direct Line enhanced authentication**. Because of the issues with the *magic code* approach, Azure AI Bot Service removed its need.
+          Azure AI Bot Service guarantees that the sign-in process can only be completed in the **same browser session** as the Web Chat itself.
           To enable this protection, you must start Web Chat with a **Direct Line token** that contains a list of **trusted origins**,
           also know as trusted domains, that can host the bot's Web Chat client.
           With enhanced authentication options, you can statically specify the list of trusted origins in the Direct Line configuration page.

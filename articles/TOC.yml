@@ -68,9 +68,9 @@
       href: v4sdk/bot-builder-create-a-bot-project.md
   - name: How bots for Microsoft Teams work
     href: v4sdk/bot-builder-basics-teams.md
-  - name: Regionalization in Azure Bot Service
+  - name: Regionalization in Azure AI Bot Service
     href: v4sdk/bot-builder-concept-regionalization.md
-  - name: Monitor Azure Bot Service
+  - name: Monitor Azure AI Bot Service
     href: monitor-bot-service.md
   - name: Skills
     items:

@@ -134,7 +134,7 @@ This class inherits from the v4 `BotState` class, and uses a v3-style key (`IAdd
 
 ## Further reading
 
-- [Azure Bot Service Introduction][21]
+- [Azure AI Bot Service Introduction][21]
 - [Bot State][7]
 - [Write directly to storage][8]
 - [Managing conversation and user state][9]

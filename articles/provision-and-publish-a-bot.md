@@ -45,14 +45,14 @@ Before you begin, make these decisions.
 |:-|:-|
 | How you'll manage the identities of your bot resources in Azure | You can use a user-assigned managed identity, a single-tenant app registration, or a mutli-tenant app registration. For more information, see [Create an identity resource](#create-an-identity-resource). |
 | In which resource group or resource groups you'll create your bot resources | Until you're familiar with this process, we recommend using one resource group. For more information, see [Manage Azure resources](/azure/azure-resource-manager/management/). |
-| Whether your bot will be _regional_ or _global_ | For information about regional bots, see [Regionalization in Azure Bot Service](v4sdk/bot-builder-concept-regionalization.md). |
+| Whether your bot will be _regional_ or _global_ | For information about regional bots, see [Regionalization in Azure AI Bot Service](v4sdk/bot-builder-concept-regionalization.md). |
 
 [!INCLUDE [Note about support for each identity app type](includes/azure-bot-resource/identity-app-type-support.md)]
 
 > [!IMPORTANT]
 > Python bots can't be deployed to a resource group that contains Windows services or bots.
 > However, multiple Python bots can be deployed to the same resource group.
-> Create other services, such as Cognitive Services, in a different resource group.
+> Create other services, such as Azure AI services, in a different resource group.
 
 ### Azure resources
 

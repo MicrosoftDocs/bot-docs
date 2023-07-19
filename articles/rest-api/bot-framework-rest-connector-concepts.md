@@ -12,12 +12,12 @@ ms.date: 10/11/2022
 
 # Key concepts in the Bot Connector API
 
-The Bot Framework and the Azure Bot Service allow your bot to communicate with users on Teams, Facebook, and more. Channels are available in two forms:
+The Bot Framework and the Azure AI Bot Service allow your bot to communicate with users on Teams, Facebook, and more. Channels are available in two forms:
 
-- As a service included as part of Azure Bot Service.
+- As a service included as part of Azure AI Bot Service.
 - As adapter libraries for use with the Bot Framework SDK.
 
-This article focuses on the standard channels included in the Azure Bot Service.
+This article focuses on the standard channels included in the Azure AI Bot Service.
 
 ## Bot Framework Channels
 
@@ -53,7 +53,7 @@ In addition to simplifying calls to Bot Framework REST APIs, each Bot Framework 
 
 ## Bot State service
 
-The Microsoft Bot Framework State service is retired as of March 30, 2018. Previously, bots built on the Azure Bot Service or the Bot Builder SDK had a default connection to this service hosted by Microsoft to store bot state data. Bots will need to be updated to use their own state storage.
+The Microsoft Bot Framework State service is retired as of March 30, 2018. Previously, bots built on the Azure AI Bot Service or the Bot Builder SDK had a default connection to this service hosted by Microsoft to store bot state data. Bots will need to be updated to use their own state storage.
 
 ## Additional information
 
