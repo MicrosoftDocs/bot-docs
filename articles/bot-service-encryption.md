@@ -64,7 +64,7 @@ For Azure AI Bot Service to have access to the key vault you created for this pu
 
     :::image type="content" source="media/key-vault/register-resource-provider.png" alt-text="Microsoft.BotService registered as a resource provider":::
 
-1. Azure Key Vault supports two permission models: Azure role-based access control (RBAC) or vault access policy. You can choose to use either permission model. Please Make sure the Access Policy is set to **Allow public access from all networks** in **Networking** blade of the Key Vault at this step. And the operator must have the **Key Management Operations** permission.
+1. Azure Key Vault supports two permission models: Azure role-based access control (RBAC) or vault access policy. You can choose to use either permission model. Please ensure that the **Firewalls and virtual networks** in the **Networking** blade of the Key Vault is set to **Allow public access from all networks** at this step. Additionally, ensure that the operator has been granted the Key Management Operations permission.
 
     :::image type="content" source="media/key-vault/choose-permission-model.png" alt-text="Screenshot of the two permission models available for your key vault.":::
 
