@@ -144,9 +144,9 @@ The next step is to register your identity provider with your bot.
     1. **Client id**. Enter the application (client) ID you recorded for your Azure AD v2 identity provider.
     1. **Client secret**. Enter the secret you recorded for your Azure AD v2 identity provider.
   
-        > [!NOTE]
-        > If you want to use cert, you could choose **AAD v2 with Certificates** provider.
-        > You need to give Bot Service Token Store (appid: 5b404cf4-a79d-4cfe-b866-24bf8e1a4921) the permission to get the cert.
+        > [!TIP]
+        > If you want to use certificates, you can select the **AAD v2 with Certificates** provider.
+        > You'll need to give Bot Service Token Store (appid: 5b404cf4-a79d-4cfe-b866-24bf8e1a4921) the permission to get the certificate.
 
     1. **Token Exchange URL**. Leave it blank because it's used for SSO in Azure AD v2 only.
     1. **Tenant ID**. Enter the **directory (tenant) ID** that you recorded earlier for your Azure AD app or **common** depending on the supported account types selected when you created the Azure DD app. To decide which value to assign, follow these criteria:
