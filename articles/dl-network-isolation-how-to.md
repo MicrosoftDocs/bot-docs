@@ -13,6 +13,8 @@ ms.date: 07/01/2022
 
 # Configure network isolation
 
+**Commencing September 1, 2023, we kindly inform you that we will not be accepting new customers for this solution. We would like to suggest utilizing [Azure Service Tag](https://learn.microsoft.com/en-us/azure/virtual-network/service-tags-overview#available-service-tags) as the preferred approach for network isolation. We appreciate your understanding and would like to assure you that our team remains committed to providing ongoing support to our existing DL-ASE customers.**
+
 You can add network isolation to an existing Direct Line App Service extension bot.
 A private endpoint lets your network isolated bot communicate with required Bot Framework services so that the bot can run correctly while being limited to the virtual network.
 

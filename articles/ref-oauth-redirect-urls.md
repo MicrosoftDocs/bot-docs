@@ -29,6 +29,27 @@ Choose the URLs to use with your bot and identity provider based on your data re
 
 The default OAuth and OAuth redirect URLs are `https://token.botframework.com` and `https://token.botframework.com/.auth/web/redirect`, which can be used for public-cloud bots with no data residency requirements.
 
+## To configure OAuthUrl in bot
+Update appsettings.json to include OAuthUrl options:
+
+```json
+{
+  "MicrosoftAppType": "",
+  "MicrosoftAppId": "",
+  "MicrosoftAppPassword": "",
+
+  "BotOpenIdMetadata": "https://login.botframework.com/v1/.well-known/openidconfiguration",
+  "CallerId": "urn:botframework:azure",
+  "OAuthUrl": "https://europe.token.botframework.com/",
+  "ToBotFromChannelOpenIdMetadataUrl": "https://login.botframework.com/v1/.well-known/openidconfiguration",
+  "ToBotFromChannelTokenIssuer": "https://api.botframework.com",
+  "ToBotFromEmulatorOpenIdMetadataUrl": "https://login.microsoftonline.com/botframework.com/v2.0/.well-known/openid-configuration",
+  "ToChannelFromBotLoginUrl": "https://login.microsoftonline.com/{0}",
+  "ToChannelFromBotOAuthScope": "https://api.botframework.com",
+  "ValidateAuthority": true
+}
+```
+
 ## Additional information
 
 Some environments use endpoints different than the ones listed here.

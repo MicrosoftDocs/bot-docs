@@ -12,6 +12,8 @@ ms.date: 02/09/2023
 
 # Configure Node.js bot for extension
 
+**Commencing September 1, 2023, we kindly inform you that we will not be accepting new customers for this solution. We would like to suggest utilizing [Azure Service Tag](https://learn.microsoft.com/en-us/azure/virtual-network/service-tags-overview#available-service-tags) as the preferred approach for network isolation. We appreciate your understanding and would like to assure you that our team remains committed to providing ongoing support to our existing DL-ASE customers.**
+
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
 This article describes how to update a Node.js bot to work with named pipes and how to enable the Direct Line App Service extension in the Azure App Service resource where the bot is hosted.

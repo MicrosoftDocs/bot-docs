@@ -13,6 +13,8 @@ ms.date: 04/05/2022
 
 # Network isolation in Azure AI Bot Service
 
+**Commencing September 1, 2023, we kindly inform you that we will not be accepting new customers for this solution. We would like to suggest utilizing [Azure Service Tag](https://learn.microsoft.com/en-us/azure/virtual-network/service-tags-overview#available-service-tags) as the preferred approach for network isolation. We appreciate your understanding and would like to assure you that our team remains committed to providing ongoing support to our existing DL-ASE customers.**
+
 This article covers concepts around network isolation for your Azure bot and its dependent services.
 
 You may want to restrict access to your bot to a private network.
