@@ -150,7 +150,7 @@ The following example demonstrates a machine-learned entity named city (`@ ml ci
 > Define the bookFlight intent with sample utterances that contain the machine-learned entities
 # bookFlight
 - Book a flight from {@city = Cairo} to {@city = Seattle}
-- Get me 2 tickets for a flight to {@city = Bangalore}
+- Get me 2 tickets for a flight to {@city = Bengaluru}
 - Purchase ticket from {@city = Washington} to {@city = Tampa Bay}
 ```
 
