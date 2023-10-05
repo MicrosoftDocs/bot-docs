@@ -1,5 +1,5 @@
 ---
-title: Use QnA Maker to answer questions - Bot Service
+title: Use QnA Maker to answer questions
 description: Learn how bots can answer questions from users without parsing or interpreting the questions. See how to use QnA Maker for this task.
 keywords: question and answer, QnA, FAQs, qna maker
 author: JonathanFingold
@@ -8,67 +8,77 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
+
+ROBOTS: NOINDEX
 ---
 
 # Use QnA Maker to answer questions
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
+[!INCLUDE [qnamaker-sunset-alert](../includes/qnamaker-sunset-alert.md)]
+
 QnA Maker provides a conversational question and answer layer over your data. This allows your bot to send a question to the QnA Maker and receive an answer without needing to parse and interpret the question intent.
 
 One of the basic requirements in creating your own QnA Maker service is to populate it with questions and answers. In many cases, the questions and answers already exist in content like FAQs or other documentation; other times, you may want to customize your answers to questions in a more natural, conversational way.
 
+This article describes how to use an _existing_ QnA Maker knowledge base from your bot.
+
+For new bots, consider using the [question answering](bot-builder-concept-luis.md#question-answering) feature of Azure AI Language.
+
+[!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
+
 ## Prerequisites
 
-- A [QnA Maker](https://www.qnamaker.ai/) account
-- Knowledge of [bot basics](bot-builder-basics.md) and [QnA Maker](/azure/cognitive-services/qnamaker/overview/overview).
-- A copy of the **QnA Maker (simple)** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/11.qnamaker), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/11.qnamaker), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/11.qnamaker), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/11.qnamaker).
+- A [QnA Maker](https://www.qnamaker.ai/) account and an existing QnA Maker knowledge base.
+- Knowledge of [bot basics](bot-builder-basics.md) and [QnA Maker](/azure/ai-services/qnamaker/overview/overview).
+- A copy of the **QnA Maker (simple)** sample in [**C#** (archived)][], [**JavaScript** (archived)][], [**Java** (archived)][], or [**Python** (archived)][].
 
 ## About this sample
 
-To use QnA Maker in your bot, you need to create a knowledge base in the [QnA Maker](https://www.qnamaker.ai/) portal, as shown in the next section. Your bot then can use the knowledge base to answer the user's questions.
+To use QnA Maker in your bot, you need an existing knowledge base in the [QnA Maker](https://www.qnamaker.ai/) portal. Your bot then can use the knowledge base to answer the user's questions.
+
+For new bot development, consider using [Power Virtual Agents](/power-virtual-agents/fundamentals-what-is-power-virtual-agents).
+If you need to create a new knowledge base for a Bot Framework SDK bot, see the following Azure AI services articles:
+
+- [What is question answering?](/azure/ai-services/language-service/question-answering/overview)
+- [Create an FAQ bot](/azure/ai-services/language-service/question-answering/tutorials/bot-service)
+- [Azure Cognitive Language Services Question Answering client library for .NET](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/cognitivelanguage/Azure.AI.Language.QuestionAnswering#readme)
 
 ## [C#](#tab/cs)
 
-![QnABot logic flow](./media/qnabot-logic-flow.png)
+:::image type="content" source="./media/qnabot-logic-flow.png" alt-text="C# QnABot logic flow":::
 
-`OnMessageActivityAsync` is called for each user input received. When called, it accesses `_configuration` information stored within the sample code's **appsetting.json** file to find the value to connect to your pre-configured QnA Maker knowledge base.
+`OnMessageActivityAsync` is called for each user input received. When called, it accesses configuration settings from the sample code's **appsetting.json** file to find the value to connect to your pre-configured QnA Maker knowledge base.
 
 ## [JavaScript](#tab/js)
 
-![QnABot JS logic flow](./media/qnabot-js-logic-flow.png)
+:::image type="content" source="./media/qnabot-js-logic-flow.png" alt-text="JavaScript QnABot logic flow":::
 
-`OnMessage` is called for each user input received. When called, it accesses your `qnamaker` connector that was pre-configured using values provided from your sample code's **.env** file.  The qnamaker method `getAnswers` connects your bot to your external QnA Maker knowledge base.
+`OnMessage` is called for each user input received. When called, it accesses configuration settings from your sample code's **.env** file.  The qnamaker method `getAnswers` connects your bot to your external QnA Maker knowledge base.
 
 ## [Java](#tab/java)
 
-![QnABot logic flow](./media/qnabot-logic-flow-java.png)
+:::image type="content" source="./media/qnabot-logic-flow-java.png" alt-text="Java QnABot logic flow":::
 
-`onMessageActivity` is called for each user input received. When called, it accesses `configuration` information stored within the sample code's **application.properties** file to find the value to connect to your pre-configured QnA Maker knowledge base.
+`onMessageActivity` is called for each user input received. When called, it accesses configuration settings from the sample code's **application.properties** file to find the value to connect to your pre-configured QnA Maker knowledge base.
 
 ## [Python](#tab/python)
 
-![QnABot Python logic flow](./media/qnabot-python-logic-flow.png)
+:::image type="content" source="./media/qnabot-python-logic-flow.png" alt-text="Python QnABot logic flow":::
 
-`on_message_activity` is called for each user input received. When called, it accesses your `qna_maker` connector that was pre-configured using values provided from your sample code's **config.py** file.  The method `qna_maker.getAnswers` connects your bot to your external QnA Maker knowledge base.
+`on_message_activity` is called for each user input received. When called, it accesses configuration settings from your sample code's **config.py** file.  The method `qna_maker.getAnswers` connects your bot to your external QnA Maker knowledge base.
 
 ---
 
 The user's input is sent to your knowledge base and the best returned answer is displayed back to your user.
 
-## Create a QnA Maker service and publish a knowledge base
-
-1. Create a QnA Maker service.
-1. Create a knowledge base using the **smartLightFAQ.tsv** file located in the CognitiveModels folder of the sample project. Name your knowledge base **qna**, and use the **smartLightFAQ.tsv** file to populate it.
-
-You can also use these steps to access your own QnA Maker knowledge bases.
-
-> [!NOTE]
-> The QnA Maker documentation has instructions on how to [create a service](/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure) in Azure and to [create, train, and publish your knowledge base](/azure/cognitive-services/qnamaker/quickstarts/create-publish-knowledge-base).
-
 ## Obtain values to connect your bot to the knowledge base
+
+> [!TIP]
+> The QnA Maker documentation has instructions on how to [create, train, and publish your knowledge base](/azure/ai-services/qnamaker/quickstarts/create-publish-knowledge-base).
 
 1. In the [QnA Maker](https://www.qnamaker.ai/) site, select your knowledge base.
 1. With your knowledge base open, select the **SETTINGS** tab. Record the value shown for _service name_. This value is useful for finding your knowledge base of interest when using the QnA Maker portal interface. It's not used to connect your bot app to this knowledge base.
@@ -77,13 +87,13 @@ You can also use these steps to access your own QnA Maker knowledge bases.
    - Host: \<your-host-url>
    - Authorization: EndpointKey \<your-endpoint-key>
 
-Your host URL will start with `https://` and end with `/qnamaker`, such as `https://<hostname>.azure.net/qnamaker`. Your bot will need the knowledge base ID, host URL, and endpoint key to connect to your QnA Maker knowledge base.
+Your host URL will start with `https://` and end with `/qnamaker`, such as `https://<hostname>.azure.net/qnamaker`. Your bot needs the knowledge base ID, host URL, and endpoint key to connect to your QnA Maker knowledge base.
 
 ## Update the settings file
 
-First, add the information required to access your knowledge base including hostname, endpoint key and knowledge base ID (kbId) into the settings file. These are the values you saved from the **SETTINGS** tab of your knowledge base in QnA Maker.
+First, add the information required to access your knowledge base&mdash;including host name, endpoint key and knowledge base ID (kbId)&mdash;to the settings file. These are the values you saved from the **SETTINGS** tab of your knowledge base in QnA Maker.
 
-If you aren't deploying this for production, your bot's app ID and password fields can be left blank.
+If you aren't deploying this for production, you can leave your bot's app ID and password fields blank.
 
 > [!NOTE]
 > To add a QnA Maker knowledge base into an existing bot application, be sure to add informative titles for your QnA entries. The "name" value within this section provides the key required to access this information from within your app.
@@ -92,25 +102,25 @@ If you aren't deploying this for production, your bot's app ID and password fiel
 
 **appsettings.json**
 
-[!code-csharp[appsettings](~/../botbuilder-samples/samples/csharp_dotnetcore/11.qnamaker/appsettings.json)]
+[**C#** (archived)][]
 
 ## [JavaScript](#tab/js)
 
 **.env**
 
-[!code-ini[.env file](~/../botbuilder-samples/samples/javascript_nodejs/11.qnamaker/.env)]
+[**JavaScript** (archived)][]
 
 ## [Java](#tab/java)
 
 **application.properties**
 
-[!code-ini[appsettings](~/../botbuilder-samples/samples/java_springboot/11.qnamaker/src/main/resources/application.properties)]
+[**Java** (archived)][]
 
 ## [Python](#tab/python)
 
 **config.py**
 
-[!code-python[config.py](~/../botbuilder-samples/samples/python/11.qnamaker/config.py?range=10-18)]
+[**Python** (archived)][]
 
 ---
 
@@ -122,11 +132,11 @@ First, we create an object for accessing our QnA Maker knowledge base.
 
 Be sure that the **Microsoft.Bot.Builder.AI.QnA** NuGet package is installed for your project.
 
-In **QnABot.cs**, in the `OnMessageActivityAsync` method, create a QnAMaker instance. The `QnABot` class is also where the names of the connection information, saved in **appsettings.json** above, are pulled in. If you have chosen different names for your knowledge base connection information in your settings file, be sure to update the names here to reflect your chosen name.
+In **QnABot.cs**, in the `OnMessageActivityAsync` method, create a QnAMaker instance. The `QnABot` class is also where the names of the connection information, saved in **appsettings.json** above, are pulled in. If you chose different names for your knowledge base connection information in your settings file, be sure to update the names here to reflect your chosen name.
 
 **Bots/QnABot.cs**
 
-[!code-csharp[qna connection](~/../botbuilder-samples/samples/csharp_dotnetcore/11.qnamaker/Bots/QnABot.cs?range=32-39)]
+[**C#** (archived)][]
 
 ## [JavaScript](#tab/js)
 
@@ -138,22 +148,23 @@ In the **QnABot.js** file, we use the connection information provided by your .e
 
 **bots/QnABot.js**
 
-[!code-javascript[QnAMaker](~/../botbuilder-samples/samples/javascript_nodejs/11.qnamaker/bots/QnABot.js?range=12-16)]
+[**JavaScript** (archived)][]
 
 ## [Java](#tab/java)
 
-In **QnABot.java**, in the `onMessageActivity` method, create a QnAMaker instance. The `QnABot` class is also where the names of the connection information, saved in **application.properties** above, are pulled in. If you have chosen different names for your knowledge base connection information in your settings file, be sure to update the names here to reflect your chosen name.
+In **QnABot.java**, in the `onMessageActivity` method, create a QnAMaker instance. The `QnABot` class is also where the names of the connection information, saved in **application.properties** above, are pulled in. If you chose different names for your knowledge base connection information in your settings file, be sure to update the names here to reflect your chosen name.
 
 **QnABot.java**
 
-[!code-java[qna connection](~/../botbuilder-samples/samples/java_springboot/11.qnamaker/src/main/java/com/microsoft/bot/sample/qnamaker/QnABot.java?range=25-30)]
+[**Java** (archived)][]
 
 ## [Python](#tab/python)
 
 In the **qna_bot.py** file, use the connection information provided by the **config.py** file to establish a connection to the QnA Maker service: `self.qna_maker`.
 
 **bots/qna_bot.py**
-[!code-python[QnAMaker](~/../botbuilder-samples/samples/python/11.qnamaker/bots/qna_bot.py?range=13-19)]
+
+[**Python** (archived)][]
 
 ---
 
@@ -165,7 +176,7 @@ When your bot needs an answer from QnAMaker, call the `GetAnswersAsync` method f
 
 **Bots/QnABot.cs**
 
-[!code-csharp[qna get answers](~/../botbuilder-samples/samples/csharp_dotnetcore/11.qnamaker/Bots/QnABot.cs?range=43-54)]
+[**C#** (archived)][]
 
 ## [JavaScript](#tab/js)
 
@@ -173,7 +184,7 @@ In the **QnABot.js** file, we pass the user's input to the QnA Maker service's `
 
 **bots/QnABot.js**
 
-[!code-javascript[OnMessage](~/../botbuilder-samples/samples/javascript_nodejs/11.qnamaker/bots/QnABot.js?range=45-54)]
+[**JavaScript** (archived)][]
 
 ## [Java](#tab/java)
 
@@ -181,43 +192,54 @@ When your bot needs an answer from QnAMaker, call the `getAnswers` method from y
 
 **QnABot.java**
 
-[!code-java[qna get answers](~/../botbuilder-samples/samples/java_springboot/11.qnamaker/src/main/java/com/microsoft/bot/sample/qnamaker/QnABot.java?range=34-47)]
+[**Java** (archived)][]
 
 ## [Python](#tab/python)
 
-In the **qna_bot.py** file, we pass the user's input to the QnA Maker service's `get_answers` method to get answers from the knowledge base. If QnA Maker returns a response, this is shown to the user. Otherwise, the user receives the message *No QnA Maker answers were found.*
+In the **qna_bot.py** file, we pass the user's input to the QnA Maker service's `get_answers` method to get answers from the knowledge base. If QnA Maker returns a response, this is shown to the user. Otherwise, the user receives the message _No QnA Maker answers were found._
 
 **bots/qna_bot.py**
-[!code-python[get_answers](~/../botbuilder-samples/samples/python/11.qnamaker/bots/qna_bot.py?range=32-37)]
+
+[**Python** (archived)][]
 
 ---
 
 ## Test the bot
 
-Run the sample locally on your machine. If you haven't done so already, install the [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md#download). For further instructions, refer to the sample's `README` ([C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/11.qnamaker), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/11.qnamaker), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/11.qnamaker)).
+Run the sample locally on your machine. If you haven't done so already, install the [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md#download). For further instructions, refer to the sample's `README` ([**C#** (archived)][], [**JavaScript** (archived)][], [**Java** (archived)][], or [**Python** (archived)][]).
 
-Start the Emulator, connect to your bot, and send a message as shown below.
+Start the Emulator, connect to your bot, and send messages to your bot. The responses to your questions will vary, based on the information your knowledge base.
 
-![test qna sample](../media/emulator-v4/qna-test-bot.png)
+:::image type="content" source="../media/emulator-v4/qna-test-bot.png" alt-text="Test sample bot.":::
 
 ## Additional information
 
-The **QnA Maker multi-turn** sample ([**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/49.qnamaker-all-features), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/49.qnamaker-all-features), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/49.qnamaker-all-features), [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/49.qnamaker-all-features)) shows how to use a QnA Maker dialog to support QnA Maker's follow-up prompt and active learning features.
+The **QnA Maker multi-turn** sample ([**C#** multi-turn sample (archived)][], [**JavaScript** multi-turn sample (archived)][], [**Java** multi-turn sample (archived)][], [**Python** multi-turn sample (archived)][]) shows how to use a QnA Maker dialog to support QnA Maker's follow-up prompt and active learning features.
 
 - QnA Maker supports follow-up prompts, also known as multi-turn prompts.
-If the QnA Maker knowledge base requires an additional response from the user, QnA Maker sends context information that you can use to prompt the user. This information is also used to make any follow-up calls to the QnA Maker service.
+If the QnA Maker knowledge base requires more information from the user, QnA Maker sends context information that you can use to prompt the user. This information is also used to make any follow-up calls to the QnA Maker service.
 In version 4.6, the Bot Framework SDK added support for this feature.
 
-  To construct such a knowledge base, see the QnA Maker documentation on how to [Use follow-up prompts to create multiple turns of a conversation](/azure/cognitive-services/QnAMaker/How-To/multi-turn).
+  To construct such a knowledge base, see the QnA Maker documentation on how to [Use follow-up prompts to create multiple turns of a conversation](/azure/ai-services/QnAMaker/How-To/multi-turn).
 
 - QnA Maker also supports active learning suggestions, allowing the knowledge base to improve over time.
 The QnA Maker dialog supports explicit feedback for the active learning feature.
 
-  To enable this feature on a knowledge base, see the QnA Maker documentation on [Active learning suggestions](/azure/cognitive-services/qnamaker/concepts/active-learning-suggestions).
+  To enable this feature on a knowledge base, see the QnA Maker documentation on [Active learning suggestions](/azure/ai-services/qnamaker/).
 
 ## Next steps
 
-QnA Maker can be combined with other Cognitive Services, to make your bot even more powerful. The Dispatch tool provides a way to combine QnA with Language Understanding (LUIS) in your bot.
+QnA Maker can be combined with other Azure AI services, to make your bot even more powerful. Bot Framework Orchestrator provides a way to combine QnA with Language Understanding (LUIS) in your bot.
 
 > [!div class="nextstepaction"]
-> [Combine LUIS and QnA services using the Dispatch tool](./bot-builder-tutorial-dispatch.md)
+> [Use Orchestrator for intent resolution](./bot-builder-tutorial-orchestrator.md)
+
+[**C#** (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/csharp_dotnetcore/11.qnamaker
+[**JavaScript** (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/javascript_nodejs/11.qnamaker
+[**Java** (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/11.qnamaker
+[**Python** (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/python/11.qnamaker
+
+[**C#** multi-turn sample (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/csharp_dotnetcore/49.qnamaker-all-features
+[**JavaScript** multi-turn sample (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/javascript_nodejs/49.qnamaker-all-features
+[**Java** multi-turn sample (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/49.qnamaker-all-features
+[**Python** multi-turn sample (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/python/49.qnamaker-all-features

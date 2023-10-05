@@ -4,7 +4,7 @@ description: Learn how to configure bots to send and receive actionable email me
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: mainguy
+ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 06/09/2021

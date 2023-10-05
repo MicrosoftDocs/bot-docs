@@ -13,7 +13,7 @@ ms.date: 11/01/2021
 # API reference - Direct Line API 1.1
 
 > [!IMPORTANT]
-> This article contains reference information for Direct Line API 1.1. If you are creating a new connection between your client application and bot, use [Direct Line API 3.0](bot-framework-rest-direct-line-3-0-api-reference.md) instead.
+> This article contains reference information for Direct Line API 1.1. If you're creating a new connection between your client application and bot, use [Direct Line API 3.0](bot-framework-rest-direct-line-3-0-api-reference.md) instead.
 
 You can enable your client application to communicate with your bot by using Direct Line API 1.1. Direct Line API 1.1 uses industry-standard REST and JSON over HTTPS.
 
@@ -50,9 +50,9 @@ The [HTTP status code](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html) t
 | 200 | The request succeeded. |
 | 204 | The request succeeded but no content was returned. |
 | 400 | The request was malformed or otherwise incorrect. |
-| 401 | The client is not authorized to make the request. Often this status code occurs because the `Authorization` header is missing or malformed. |
-| 403 | The client is not allowed to perform the requested operation. Often this status code occurs because the `Authorization` header specifies an invalid token or secret. |
-| 404 | The requested resource was not found. Typically this status code indicates an invalid request URI. |
+| 401 | The client isn't authorized to make the request. Often this status code occurs because the `Authorization` header is missing or malformed. |
+| 403 | The client isn't allowed to perform the requested operation. Often this status code occurs because the `Authorization` header specifies an invalid token or secret. |
+| 404 | The requested resource wasn't found. Typically this status code indicates an invalid request URI. |
 | 500 | An internal server error occurred within the Direct Line service |
 | 502 | A failure occurred within the bot; the bot is unavailable or returned an error.  **This is a common error code.** |
 
@@ -174,11 +174,11 @@ Defines a message that a client sends to a bot or receives from a bot.
 | **created** | string | Date and time that the message was created, expressed in the [ISO-8601](https://www.w3.org/QA/Tips/iso-date)) format. |
 | **from** | string | ID that identifies the user that is the sender of the message. When creating a message, clients should set this property to a stable user ID. Although Direct Line will assign a user ID if none is supplied, this typically results in unexpected behavior. |
 | **text** | string | Text of the message that is sent from user to bot or bot to user. |
-| **channelData** | object | An object that contains channel-specific content. Some channels provide features that require additional information that cannot be represented using the attachment schema. For those cases, set this property to the channel-specific content as defined in the channel's documentation. This data is sent unmodified between client and bot. This property must either be set to a complex object or left empty. Do not set it to a string, number, or other simple type. |
-| **images** | string[] | Array of strings that contains the URL(s) for the image(s) that the message contains. In some cases, strings in this array may be relative URLs. If any string in this array does not begin with either "http" or "https", prepend `https://directline.botframework.com` to the string to form the complete URL. |
-| **attachments** | [Attachment](#attachment-object)[] | Array of **Attachment** objects that represent the non-image attachments that the message contains. Each object in the array contains a `url` property and a `contentType` property. In messages that a client receives from a bot, the `url` property may sometimes specify a relative URL. For any `url` property value that does not begin with either "http" or "https", prepend `https://directline.botframework.com` to the string to form the complete URL. |
+| **channelData** | object | An object that contains channel-specific content. Some channels provide features that require additional information that can't be represented using the attachment schema. For those cases, set this property to the channel-specific content as defined in the channel's documentation. This data is sent unmodified between client and bot. This property must either be set to a complex object or left empty. Do not set it to a string, number, or other simple type. |
+| **images** | string[] | Array of strings that contains the URL(s) for the image(s) that the message contains. In some cases, strings in this array may be relative URLs. If any string in this array doesn't begin with either "http" or "https", prepend `https://directline.botframework.com` to the string to form the complete URL. |
+| **attachments** | [Attachment](#attachment-object)[] | Array of **Attachment** objects that represent the non-image attachments that the message contains. Each object in the array contains a `url` property and a `contentType` property. In messages that a client receives from a bot, the `url` property may sometimes specify a relative URL. For any `url` property value that doesn't begin with either "http" or "https", prepend `https://directline.botframework.com` to the string to form the complete URL. |
 
-The following example shows a Message object that contains all possible properties. In most cases when creating a message, the client only needs to supply the `from` property and at least one content property (e.g., `text`, `images`, `attachments`, or `channelData`).
+The following example shows a Message object that contains all possible properties. In most cases when creating a message, the client only needs to supply the `from` property and at least one content property (such as `text`, `images`, `attachments`, or `channelData`).
 
 ```json
 {

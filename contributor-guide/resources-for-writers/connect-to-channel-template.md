@@ -3,7 +3,7 @@
 #    Can exceed 60 characters; although it will be truncated in search, The keywords are still valuable.
 title: Connect a Bot Framework bot to {channel-name}
 #Required; ~100 to ~160 characters; include scenario and benefit.
-# For the last part of the description, mention whether this applies to the Azure Bot Service, a custom channel adapter, or both.
+# For the last part of the description, mention whether this applies to the Azure AI Bot Service, a custom channel adapter, or both.
 description: Learn how to configure bots to use {channel-name} to communicate with people. See how to connect bots to {channel-name} through {the-type-of-connection}.
 author: #Required; a current writer's GitHub alias, with correct capitalization.
 manager: shellyha #Required; current manager's Github alias.

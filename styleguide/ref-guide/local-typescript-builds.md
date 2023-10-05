@@ -15,10 +15,10 @@ We nee **typedoc**, **type2docfx**, and **docfx** for local builds:
     npm i -g typedoc
     ```
 
-- Get **docfx** from https://github.com/dotnet/docfx/releases, and then extract it.
+- Get **docfx** from [docfx releases](https://github.com/dotnet/docfx/releases), and then extract it.
 - Periodically check for updates, as these tools do not run a self check.
 
-The example commands here assume **docfx** is in **C:\\Program Files\\docfx\\** and that you are using **\\temp\\typeDocs\\** for temporary files.
+The example commands here assume **docfx** is in **C:\Program Files\docfx** and that you are using **\temp\typeDocs** for temporary files.
 
 The "current" (as of 4.5) modules are:
 
@@ -35,7 +35,7 @@ The "current" (as of 4.5) modules are:
 
 ## Remove old temp files
 
-I've been using a **\\temp\\typeDocs** directory for my intermediate files.
+I've been using a **\temp\typeDocs** directory for my intermediate files.
 
 ```cmd
 rmdir /s /q \temp\typeDocs
@@ -181,17 +181,17 @@ Note that **type2doxfx** generates a TOC for each library. We need to combine th
     ```
 
 1. Open the site in a browser to review the local build:
-   - http://localhost:8080/_site/botbuilder-typescript/botbuilder-ts-latest/api/botbuilder/
+   - `http://localhost:8080/_site/botbuilder-typescript/botbuilder-ts-latest/api/botbuilder/`
    - **Note**: The port number might be different; check the status message from the docfx serve command.
    - **Note**: Links in the TOC are missing a **.html** at the end of the URLs.
 
 ---
 
-# Other notes
+## Other notes
 
 - Do use @remarks tags.
 - Don't use [[ ]] links.
 - Do use \[\<link-text>](xref:\<link-uid>) links.
   - The UIDs are in the generated .yaml files.
-  - Or, search for the target at https://docs.microsoft.com/en-us/javascript/api/
+  - Or, search for the target at the [JavaScript API browser](https://learn.microsoft.com/javascript/api/).
 - Don't use @see tags.

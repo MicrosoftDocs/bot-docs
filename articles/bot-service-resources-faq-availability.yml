@@ -9,13 +9,13 @@ metadata:
   ms.reviewer: micchow
   ms.topic: faq
   ms.service: bot-service
-  ms.date: 11/01/2021
+  ms.date: 09/01/2022
 
 title: Bot Framework Availability Frequently Asked Questions
 summary: |
   This article answers commonly asked availability questions.
 
-  <!-- Attention writers!!
+  <!-- Attention writers!
      1 - This article contains FAQs regarding Bot Framework background and availability.
      1 - When you create a new FAQ, please add the related link to the proper section in bot-service-resources-bot-framework-faq.yml.-->
 
@@ -29,15 +29,14 @@ sections:
           We created the Bot Framework to make it easier for developers to build and connect great bots to users, wherever they converse,
           including on Microsoft's premier channels.
 
-      - question:  How can I migrate Azure Bot Service from one region to another?
+      - question:  How can I migrate Azure AI Bot Service from one region to another?
         answer: |
-          Azure Bot Service does not support region move. It's a global service that is not tied to any specific region.
+          Azure AI Bot Service doesn't support region move. It's a global service that isn't tied to any specific region.
 
       - question: How to run a bot offline?
         answer: |
-          <!-- WIP -->
           Before talking about the use of a bot offline, meaning a bot not deployed on Azure or on some other host services but on premises, let's clarify a few points.
-          - A bot is a web service that does not have a UI, so the user must interact with it via other means, in the form of channels,
+          - A bot is a web service that doesn't have a UI, so the user must interact with it via other means, in the form of channels,
           which use the [Bot Framework Service](rest-api/bot-framework-rest-connector-concepts.md).
           The connector functions as a *proxy* to relay messages between a client and the bot.
           - The **connector** is a global application hosted on Azure nodes and spread geographically for availability and scalability.
@@ -46,16 +45,24 @@ sections:
           >[!NOTE]
           > The bot must have its endpoint publicly reachable by the connector.
 
-          You can run a bot offline with limited capabilities. For example, if you want to use a bot offline that has LUIS capability,
-          you must build a container for the bot, and required tools, and a container for LUIS. Both connected via Docker Compose bridged network.
-          This is a "partial" offline solution because a Cognitive Services container needs periodic online connection.
+          You can run a bot offline with limited capabilities. For example, if you want to use a bot offline that uses Azure AI services,
+          you must build a container for the bot, and required tools, and a container for the Azure AI services. Both connected via Docker Compose bridged network.
+          This is a "partial" offline solution because an Azure AI services container needs periodic online connection.
 
           > [!NOTE]
-          > The QnA service is not supported in a bot running offline.
+          > [Azure AI QnA Maker will be retired on 31 March 2025](https://azure.microsoft.com/updates/azure-qna-maker-will-be-retired-on-31-march-2025/).
+          > Beginning 1 October 2022, you won't be able to create new QnA Maker resources or knowledge bases.
+          >
+          > [Language Understanding (LUIS) will be retired on 1 October 2025](https://azure.microsoft.com/updates/language-understanding-retirement/).
+          > Beginning 1 April 2023, you won't be able to create new LUIS resources.
+          >
+          > Newer versions of theses services are now available as part of Azure AI Language.
+          > For more information about question-and-answer and language understanding support in the Bot Framework SDK,
+          > see [Natural language understanding](./v4sdk/bot-builder-concept-luis.md).
 
           For more information, see:
-          - [Deploy the Language Understanding (LUIS) container to Azure Container Instances](https://docs.microsoft.com/azure/cognitive-services/luis/deploy-luis-on-container-instances)
-          - [Container support in Azure Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-container-support)
+          - [Deploy the Language Understanding (LUIS) container to Azure Container Instances](/azure/ai-services/containers/azure-container-instance-recipe)
+          - [Container support in Azure AI services](/azure/ai-services/cognitive-services-container-support)
 
       - question: What is the v4 SDK?
         answer: |
@@ -66,34 +73,34 @@ sections:
 
       - question: Bot Framework SDK Version 3 Lifetime Support and Deprecation Notice
         answer: |
-          Microsoft Bot Framework SDK V4 was released in September 2018, and since then we have shipped a few dot-release improvements.
+          Microsoft Bot Framework SDK V4 was released in September 2018, and since then we've shipped a few dot-release improvements.
           As announced previously, the V3 SDK is being retired. Accordingly, there will be no more development in V3 repositories.
           **Existing V3 bot workloads will continue to run without interruption. We have no plans to disrupt any running workloads**.
 
-          As mentioned, Bot Builder SDK V3 bots continue to run and be supported by Azure Bot Service.
+          As mentioned, Bot Builder SDK V3 bots continue to run and be supported by Azure AI Bot Service.
           Bot Builder SDK V3 will only be supported  for critical security bug fixes, connector, and protocol layer compatibility updates.
 
           All new features and capabilities are developed exclusively on [Bot Framework SDK V4](https://github.com/microsoft/botframework-sdk).
           Customers are encouraged to migrate their bots to V4 as soon as possible.
 
-          ### Azure Bot Service
-          1. The Azure Bot Service will continue to support the running of V3 bots with no planned end of life, and any running bots will not be disrupted.
+          ### Azure AI Bot Service
+          1. The Azure AI Bot Service will continue to support the running of V3 bots with no planned end of life, and any running bots won't be disrupted.
           1. Channels will remain compatible with V3 with no disruption or end of life plan.
           1. Creation of new V3 bots is disabled on the portal; however, expert users who wish to deploy their V3 bots independently through other services (such as another web app service) can do so.
 
           ### SDK and Tools
-          1. We will not be updating the V3 SDK for the foreseeable future, except to apply critical security fixes and to add a skills connector to allow V4 bots to call legacy V3 bots.
+          1. We won't be updating the V3 SDK for the foreseeable future, except to apply critical security fixes and to add a skills connector to allow V4 bots to call legacy V3 bots.
           1. SDKs and tools development is exclusively on V4 with no V3 work done or planned (hence we're already "there").
-          1. We do not prevent anyone from running old tools to manage their V3 bots.
+          1. We don't prevent anyone from running old tools to manage their V3 bots.
 
           ### References
           - [How bots work](v4sdk/bot-builder-basics.md)
           - Primary V4 Repositories to develop Bot Framework bots
-            - [Botbuilder for dotnet](https://github.com/microsoft/botbuilder-dotnet)
-            - [Botbuilder for JS](https://github.com/microsoft/botbuilder-js)
+            - [Bot Framework SDK for .NET](https://github.com/microsoft/botbuilder-dotnet)
+            - [Bot Framework SDK for JavaScript](https://github.com/microsoft/botbuilder-js)
           - QnA Maker Libraries were replaced with the following V4 libraries
-            - [Libraries for dotnet](https://github.com/Microsoft/botbuilder-dotnet/tree/master/libraries/Microsoft.Bot.Builder.AI.QnA)
-            - [Libraries for JS](https://github.com/Microsoft/botbuilder-js/blob/master/libraries/botbuilder-ai/src/qnaMaker.ts)
+            - [Microsoft.Bot.Builder.AI.QnA](https://github.com/Microsoft/botbuilder-dotnet/tree/master/libraries/Microsoft.Bot.Builder.AI.QnA)
+            - [botbuilder-ai](https://github.com/Microsoft/botbuilder-js/blob/master/libraries/botbuilder-ai/src/qnaMaker.ts)
           - Azure Libraries were replaced with the following V4 libraries
-            - [Botbuilder for JS Azure](https://github.com/Microsoft/botbuilder-js/tree/master/libraries/botbuilder-azure)
-            - [Botbuilder for dotnet Azure](https://github.com/Microsoft/botbuilder-dotnet/tree/master/libraries/Microsoft.Bot.Builder.Azure)
+            - [botbuilder-azure](https://github.com/Microsoft/botbuilder-js/tree/master/libraries/botbuilder-azure)
+            - [Microsoft.Bot.Builder.Azure](https://github.com/Microsoft/botbuilder-dotnet/tree/master/libraries/Microsoft.Bot.Builder.Azure)

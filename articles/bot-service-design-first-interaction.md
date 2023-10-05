@@ -1,23 +1,22 @@
 ---
-title: Design a bot's first user interaction - Bot Service
+title: Design a bot's first user interaction
 description: Learn what makes a great first user experience and how to design your bots for success.  
-keywords: first impression, beginning, language vs menu 
+keywords: first impression, beginning, language versus menu 
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 07/26/2022
 ---
 
 # Design a bot's first user interaction
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-## First impressions matter
-
-The very first interaction between the user and bot is critical to the user experience. When designing your bot, keep in mind that there is more to that first message than just saying "hi." When you build an app, you design the first screen to provide important [navigation](bot-service-design-navigation.md) cues. Users should intuitively understand things such as where the menu is located and how it works, where to go for help, what the privacy policy is, and so on. When you design a bot, the user's first interaction with the bot should provide that same type of information.
+First impressions matter.
+The first interaction between the user and bot is critical to the user experience. When designing your bot, keep in mind that there's more to that first message than just saying "hi." When you build an app, you design the first screen to provide important [navigation](bot-service-design-navigation.md) cues. Users should intuitively understand things such as where the menu is located and how it works, where to go for help, what the privacy policy is, and so on. When you design a bot, the user's first interaction with the bot should provide that same type of information.
 
 ## Language versus menus
 
@@ -25,13 +24,13 @@ Consider the following two designs:
 
 ### Design 1
 
-![welcome message, without suggestions](./media/bot-service-design-first-interaction/hello1.png)
+:::image type="content" source="./media/bot-service-design-first-interaction/hello1.png" alt-text="A welcome message, without suggestions, 'Hello user, how can I help you?'":::
 
 ### Design 2
 
-![welcome message, with suggestions](./media/bot-service-design-first-interaction/hello2.png)
+:::image type="content" source="./media/bot-service-design-first-interaction/hello2.png" alt-text="A welcome message, with suggestions: orders, products, or help.":::
 
-Starting the bot with an open-ended question such as "How can I help you?" is generally not recommended. If your bot has a hundred different things it can do, chances are users won't be able to guess most of them. Your bot didn't tell them what it can do, so how can they possibly know?
+Don't start your bot with an open-ended question, such as "How can I help you?". If your bot has a hundred different things it can do, chances are users won't be able to guess most of them. Your bot didn't tell them what it can do, so how can they possibly know?
 
 Menus provide a simple solution to that problem. First, by listing the available options, your bot is conveying its capabilities to the user. Second, menus spare the user from having to type too much, instead they can just click. Finally, the use of menus can significantly simplify your natural language models by narrowing the scope of input that the bot could receive from the user.
 
@@ -48,7 +47,7 @@ In addition to providing an intuitive and easily navigated first interaction,
 a well-designed bot provides the user with access to information about its privacy policy and terms of use.
 
 > [!TIP]
-> If your bot collects personal data from the user, it's important to convey that and to describe what will be done with the data.
+> If your bot collects personal data from the user, it's important to convey that and to describe what'll be done with the data.
 
 ## Next steps
 

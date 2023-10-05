@@ -16,4 +16,4 @@ Bots typically use storage to keep track of a user's place in the conversation o
 
 Originally, Bot Framework shipped with a state service for storing this data, but most modern bots (and all recent releases of the Bot Framework SDK) use storage controlled directly by the bot developer instead of this centrally managed service.
 
-The central Bot Framework State service is retired as of March 30, 2018. For more information, see [Reminder: The Bot Framework State service has been retired – what you need to know](https://blog.botframework.com/2018/04/02/reminder-the-bot-framework-state-service-has-been-retired-what-you-need-to-know/).
+The central Bot Framework State service is retired as of March 30, 2018. For more information, see [Reminder: The Bot Framework State service has been retired&mdash;what you need to know](https://blog.botframework.com/2018/04/02/reminder-the-bot-framework-state-service-has-been-retired-what-you-need-to-know/).

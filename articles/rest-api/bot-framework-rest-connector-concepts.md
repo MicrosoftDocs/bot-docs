@@ -7,17 +7,17 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: conceptual
-ms.date: 10/18/2021
+ms.date: 10/11/2022
 ---
 
 # Key concepts in the Bot Connector API
 
-The Bot Framework and the Azure Bot Service allow your bot to communicate with users on Teams, Facebook, and more. Channels are available in two forms:
+The Bot Framework and the Azure AI Bot Service allow your bot to communicate with users on Teams, Facebook, and more. Channels are available in two forms:
 
-- As a service included as part of Azure Bot Service.
+- As a service included as part of Azure AI Bot Service.
 - As adapter libraries for use with the Bot Framework SDK.
 
-This article focuses on the standard channels included in the Azure Bot Service.
+This article focuses on the standard channels included in the Azure AI Bot Service.
 
 ## Bot Framework Channels
 
@@ -40,14 +40,20 @@ The Bot Framework provides client libraries that can be used to build bots in C#
 - [Bot Framework SDK for Python](/python/api/).
 - [Bot Framework SDK for Java](https://github.com/microsoft/botbuilder-java#readme).
 
+[!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
+
 In addition to simplifying calls to Bot Framework REST APIs, each Bot Framework SDK also provides support for building dialogs that encapsulate conversational logic, built-in prompts for simple things such as Yes/No, strings, numbers, and enumerations, built-in support for powerful AI frameworks such as [LUIS](https://www.luis.ai/), and more.
+
+[!INCLUDE [qnamaker-sunset-alert](../includes/qnamaker-sunset-alert.md)]
+
+[!INCLUDE [luis-sunset-alert](../includes/luis-sunset-alert.md)]
 
 > [!NOTE]
 > As an alternative to using the these SDKs, you can generate your own client library in the language of your choice by using the [Bot Connector Swagger file](https://github.com/Microsoft/botbuilder-dotnet/blob/master/libraries/Swagger/ConnectorAPI.json) or code direct to its REST API.
 
 ## Bot State service
 
-The Microsoft Bot Framework State service is retired as of March 30, 2018. Previously, bots built on the Azure Bot Service or the Bot Builder SDK had a default connection to this service hosted by Microsoft to store bot state data. Bots will need to be updated to use their own state storage.
+The Microsoft Bot Framework State service is retired as of March 30, 2018. Previously, bots built on the Azure AI Bot Service or the Bot Builder SDK had a default connection to this service hosted by Microsoft to store bot state data. Bots will need to be updated to use their own state storage.
 
 ## Additional information
 

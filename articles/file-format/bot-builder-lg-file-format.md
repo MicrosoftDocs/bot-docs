@@ -86,7 +86,7 @@ Template names are case-sensitive and can only contain letters, underscores, and
 # TemplateName
 ```
 
-Templates cannot start with a number, and any part of a template name split by **.** cannot start with a number.
+Templates can't start with a number, and any part of a template name split by **.** can't start with a number.
 
 ### Template response variations
 
@@ -126,7 +126,7 @@ Here is an example of a simple template that includes two variations.
 Conditional response templates let you author content that's selected based on a condition. All conditions are expressed using [adaptive expressions][3].
 
 > [!IMPORTANT]
-> Conditional templates cannot be nested in a single conditional response template. Use composition in a [structured response template](../language-generation/language-generation-structured-response-template.md) to nest conditionals.
+> Conditional templates can't be nested in a single conditional response template. Use composition in a [structured response template](../language-generation/language-generation-structured-response-template.md) to nest conditionals.
 
 #### If-else template
 
@@ -187,7 +187,7 @@ Here's a more complicated SWITCH CASE DEFAULT example:
 ```
 
 > [!NOTE]
-> Like conditional templates, switch templates cannot be nested.
+> Like conditional templates, switch templates can't be nested.
 
 ### Structured response template
 
@@ -263,9 +263,9 @@ Entities can be used as a parameter:
 
 The example above uses the [join][5] prebuilt function to list all values in the `recentTasks` collection.
 
-Given templates and prebuilt functions share the same invocation signature, a template name cannot be the same as a prebuilt function name.
+Given templates and prebuilt functions share the same invocation signature, a template name can't be the same as a prebuilt function name.
 
- A template name should not match a prebuilt function name. The prebuilt function takes precedence. To avoid such conflicts, you can prepend `lg.` when referencing your template name. For example:
+ A template name shouldn't match a prebuilt function name. The prebuilt function takes precedence. To avoid such conflicts, you can prepend `lg.` when referencing your template name. For example:
 
 ```lg
 > Custom length function with one parameter.
@@ -359,7 +359,7 @@ Developers can set parser options to further customize how input is evaluated. U
 
 ### Strict option
 
-Developers who do not want to allow a null result for a null evaluated result can implement the **strict** option. Below is an example of a simple strict option:
+Developers who don't want to allow a null result for a null evaluated result can implement the **strict** option. Below is an example of a simple strict option:
 
 ```lg
 > !# @strict = true
@@ -482,7 +482,7 @@ Say you have two files: `a.lg` and `b.lg`, shown below:
 - ${rand(1, 10000000)}
 ```
 
-If you run the following code, you will notice that `template2` uses the cached result of the first evaluated result because of the `global` cache scope option in **a.lg**:
+If you run the following code, you'll notice that `template2` uses the cached result of the first evaluated result because of the `global` cache scope option in **a.lg**:
 
 ```csharp
 var templates = Templates.ParseFile("a.lg");

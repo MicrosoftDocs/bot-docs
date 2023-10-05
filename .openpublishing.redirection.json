@@ -1,6 +1,56 @@
 {
   "redirections": [
     {
+      "source_path": "articles/bot-service-debug-adaptive-tools.md",
+      "redirect_url": "/azure/bot-service/file-format/bot-builder-lg-file-format",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/bot-service-channel-connect-telephony.md",
+      "redirect_url": "/azure/bot-service/bot-service-manage-channels",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/bot-service-channel-connect-kik.md",
+      "redirect_url": "/azure/bot-service/bot-service-manage-channels",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-tutorial-dispatch.md",
+      "redirect_url": "/azure/bot-service/bot-builder-concept-luis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-concept-activity-processing.md",
+      "redirect_url": "/azure/bot-service/bot-builder-basics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/bot-service-manage-analytics.md",
+      "redirect_url": "/azure/bot-service/bot-service-manage-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/tutorial-provision-a-bot.md",
+      "redirect_url": "/azure/bot-service/provision-and-publish-a-bot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/tutorial-publish-a-bot.md",
+      "redirect_url": "/azure/bot-service/provision-and-publish-a-bot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/v4sdk/bot-builder-tutorial-add-qna.md",
+      "redirect_url": "/azure/bot-service/provision-and-publish-a-bot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/bot-builder-deploy-az-cli.md",
+      "redirect_url": "/azure/bot-service/provision-and-publish-a-bot",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "articles/v4sdk/migration/migration-overview.md",
       "redirect_url": "/azure/bot-service/bot-builder-basics",
       "redirect_document_id": false

@@ -1,5 +1,5 @@
 ---
-title: Skills overview | Microsoft Docs
+title: Skills overview
 description: Describes the concepts of how conversational logic in one bot can be used by another bot using the Bot Framework SDK.
 keywords: bot skill, host bot, skill bot, skill consumer.
 author: JonathanFingold
@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: Gabo.Gilabert
 ms.service: bot-service
 ms.topic: conceptual
-ms.date: 08/10/2021
+ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -16,7 +16,6 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-<!--Starting with version 4.7 of the Bot Framework SDK,-->
 You can extend a bot using a _skill_ bot.
 A skill can be consumed by various other bots, facilitating reuse, and in this way, you can create a user-facing bot and extend it by consuming your own or third-party skills.
 
@@ -30,21 +29,18 @@ A skill can be consumed by various other bots, facilitating reuse, and in this w
 
 In other words, the user interacts directly with the root bot, and the root bot delegates some of its conversational logic to a skill.
 
-<!-- Requirements/contract -->
 The skills feature is designed so that:
 
 - Skills and consumers communicate over HTTP using the Bot Framework protocol.
 - A skill consumer can consume multiple skills.
-- A skill consumer can consume a skill regardless of the language used to implement the skill. For example, a C# bot can consume a skill implemented using Python.
+- A skill consumer can consume a skill regardless of the language used to implement the skill. For example, a C# bot can consume a skill implemented using JavaScript.
 - A skill can also be a skill consumer and call other skills.
-- Skills support user authentication; however, user authentication is local to the skill and cannot be transferred to another bot.
+- Skills support user authentication; however, user authentication is local to the skill and can't be transferred to another bot.
 - Skills can work with both the Bot Framework adapter and custom adapters.
 
 This diagram shows some of the possible permutations.
 
-![Block diagram](./media/skills-block-diagram.png)
-
-<!--TBD: - Skills support proactive messaging. -->
+:::image type="content" source="./media/skills-block-diagram.png" alt-text="Illustration of permutations between skill consumers and skills.":::
 
 ## Conceptual architecture
 
@@ -57,7 +53,7 @@ A skill and skill consumer are separate bots, and you publish them independently
 
 This diagram outlines the flow of activities from the user to the root bot to a skill and back again.
 
-![Architecture diagram](./media/skills-conceptual-architecture.png)
+:::image type="content" source="./media/skills-conceptual-architecture.png" alt-text="Illustration of how activities flow from the user to the skill and back again.":::
 
 1. The root bot's adapter receives activities from the user and forwards them to the root bot's activity handler.
    (Activities from the user are received at the root bot's messaging endpoint.)
@@ -89,21 +85,9 @@ For information about the skill manifest schema, see how to [write a skill manif
 
 It's important to understand certain aspects of this design, independent of which bot you're designing.
 
-<!--
-- infrastructure concerns:
-  - stateless, cross-server application (memory management and middleware).
-  - authentication, in both directions, plus claims validation.
-- implementation concerns:
-  - classes, objects, and logic you need to add to your host (and skill).
-  - when to start and stop a skill.
-  - managing multiple skills.
--->
-
 ### Skill actions
 
-Some skills can perform a variety of tasks or _actions_. For example, a to-do skill might allow create, update, view, and delete activities that can be accessed as discrete conversations.
-
-<!--TODO Flesh this out-->
+Some skills can perform multiple tasks or _actions_. For example, a to-do skill might allow create, update, view, and delete activities that can be accessed as discrete conversations.
 
 - See how to [implement a skill](skill-implement-skill.md) for a simple skill that implements one action.
 - See how to [use dialogs within a skill](skill-actions-in-dialogs.md) for a skill that uses dialogs to implement multiple actions.
@@ -115,15 +99,7 @@ The user-root conversation is different than the root-skill conversation.
 The _conversation ID factory_ helps to manage traffic between a skill consumer and a skill. The factory translates between the ID of the conversation the root has with the user and the one it has with the skill.
 In other words, it generates a conversation ID for use between the root and the skill, and recovers the original user-root conversation ID from the root-skill conversation ID.
 
-<!-- Hopefully, this just gets folded into the SDK and does not need to get described in detail.
-- The host needs to save or encode original conversation ID and service URL and create a conversation ID for use between it and the skill.
-  - Generated conversation IDs must be usable as a URL path parameter.
-  - A modified activity gets the new conversation ID and service URL (of the host, as the host provides a channel interface to the skill).
-- Upon receiving an activity from the skill, host needs to decode or recover the original conversation ID and service URL so that the activity can get forwarded back to the user in the original conversation.
--->
-
 ### Cross-server coordination
-<!-- or, Statelessness in the host -->
 
 The root and skill bots communicate over HTTP.
 So, the instance of the root bot that receives an activity from a skill may not be the same instance that sent the initiating activity; in other words, different servers may handle these two requests.
@@ -141,8 +117,6 @@ The skill consumer and skill manage their own state separately. However, the con
 
 ### Bot-to-bot authentication
 
-<!-- TODO Add appropriate info about this new(?) feature to the bot basics article. -->
-
 You don't need an app ID and password to test a skill and skill consumer locally in the Bot Framework Emulator. An Azure subscription is still required to deploy your skill to Azure.
 
 Service-level authentication is managed by the Bot Connector service. The framework uses bearer tokens and bot application IDs to verify the identity of each bot. (The Bot Framework uses an _authentication configuration_ object to validate the authentication header on incoming requests.)
@@ -155,18 +129,16 @@ Service-level authentication is managed by the Bot Connector service. The framew
 You must add a _claims validator_ to the authentication configuration. The claims are evaluated after the authentication header. Throw an error or exception in your validation code to reject the request.
 
 > [!NOTE]
-> The bot performs claims validation if it has an app ID and password; otherwise, claims validation is not performed.
+> The bot performs claims validation if it has an app ID and password; otherwise, claims validation isn't performed.
 
 There are various reasons you might reject an otherwise authenticated request:
 
 - When the skill consumer should accept traffic only from skills that it may have initiated a conversation with.
-- When a skill is part of a paid-for service, and users not in the database should not have access.
+- When a skill is part of a paid-for service, and users not in the database shouldn't have access.
 - When you want to restrict access to the skill to specific skill consumers.
 
 > [!IMPORTANT]
 > If you don't provide a claims validator, your bot will generate an error or exception upon receiving an activity from another bot, whether your bot is a skill or a skill consumer.
-
-<!--TODO Need a link for more information about claims and claims-based validation.-->
 
 ## Debugging skill conversations
 
@@ -174,7 +146,7 @@ There are various reasons you might reject an otherwise authenticated request:
 
 ## Additional information
 
-From the user's perspective, they are interacting with the root bot.
+From the user's perspective, they're interacting with the root bot.
 From the skill's perspective, the skill consumer is the channel over which it communicates with the user.
 
 - For more information about skill consumers, see [about skill consumers](skills-about-skill-consumers.md).

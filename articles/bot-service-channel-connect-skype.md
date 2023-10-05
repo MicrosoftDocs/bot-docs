@@ -5,7 +5,7 @@ keywords: skype, bot channels, configure skype, publish, connect to channels
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: mainguy
+ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
 ms-custom: abs-meta-21q1
@@ -19,7 +19,7 @@ ms.date: 03/30/2022
 This article describes how to configure a bot already connected to Skype.
 
 >[!NOTE]
-> As of October 31, 2019 the Skype channel no longer accepts new bot publishing requests. This means that you can continue to develop existing bots connected to the Skype channel, but your bot will be limited to 100 users. You will not be able to publish your bot to a larger audience. Read more about [why some features are not available in Skype anymore](https://support.skype.com/faq/fa12091/why-are-some-features-not-available-in-skype-anymore).
+> As of May 12, 2023 Skype bots are again supported and will be going forward.
 
 ## Prerequisites
 

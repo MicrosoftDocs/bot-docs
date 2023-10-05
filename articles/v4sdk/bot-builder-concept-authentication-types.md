@@ -1,14 +1,14 @@
 ---
 title: Bot Framework authentication types
-description: Learn about bot authentication types in the Azure Bot Service.
-keywords: azure bot service, authentication, bot framework token service
+description: Learn about bot authentication types in the Azure AI Bot Service.
+keywords: Azure AI Bot Service, authentication, bot framework token service
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: conceptual
-ms.date: 06/06/2022
+ms.date: 08/08/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -18,7 +18,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 In the Bot Framework, two broad authentication categories exist: **bot authentication** and **user authentication**. Each has an associated **token** to allow access to secured resources. The following figure shows the elements involved in both bot and user authentication.
 
-![bot framework authentication context](media/concept-bot-authentication/bot-framework-auth-context.png)
+:::image type="content" source="media/concept-bot-authentication/bot-framework-auth-context.png" alt-text="Diagram illustrating the difference between the token for a bot and the token for a user.":::
 
 In this figure:
 
@@ -62,7 +62,7 @@ Besides the standard supported channels, a client application can communicate wi
 The client application authenticates requests to Direct Line (version 3.0) either by using a **secret** obtained from the [Direct Line channel configuration](../bot-service-channel-connect-directline.md) page in the Azure portal or, better, by using a **token** obtained at runtime. The secret or token is specified in the Authorization header of each request.
 
 > [!IMPORTANT]
-> When you use Azure Bot Service authentication with Web Chat there are some important security considerations you must keep in mind. For more information, see the [security considerations](../bot-service-channel-connect-webchat.md#keep-your-secret-hidden-exchange-your-secret-for-a-token-and-generate-the-embed) section in the REST authentication article.
+> When you use Azure AI Bot Service authentication with Web Chat there are some important security considerations you must keep in mind. For more information, see the [security considerations](../bot-service-channel-connect-webchat.md#keep-your-secret-hidden-exchange-your-secret-for-a-token-and-generate-the-embed) section in the REST authentication article.
 
 For more information, see [Keep your secret hidden, exchange your secret for a token, and generate the embed](../bot-service-channel-connect-webchat.md#keep-your-secret-hidden-exchange-your-secret-for-a-token-and-generate-the-embed).
 
@@ -71,11 +71,7 @@ For more information, see [Keep your secret hidden, exchange your secret for a t
 The Web Chat has two implementations: the **channel** and the **control**.
 
 - When you register a bot with Azure, the Web Chat channel is automatically configured to allow testing of the bot.
-
-    ![bot web chat testing](media/concept-bot-authentication/bot-webchat-testing.PNG).
-
-    For more information, see [Connect a bot to Web Chat](../bot-service-channel-connect-webchat.md).
-
+  For more information, see [Connect a bot to Web Chat](../bot-service-channel-connect-webchat.md).
 - You can use a Web Chat control with the Direct Line channel to provide access to a bot in a client application. For more information about the control, see [Bot Framework Web Chat](https://github.com/microsoft/BotFramework-WebChat).
 
 ### Skills
@@ -125,7 +121,7 @@ A bot can use a trusted identity provider to:
 - Connect to cloud computing resources on behalf of a user, decreasing the need for users to reauthenticate.
 
 > [!NOTE]
-> The token issued during **Bot authentication** is not the same token issued during **User authentication**. The first is used to establish secure communication between a bot, channels and, ultimately, client applications. The second is used to authorize the bot to access secured resource on behalf of the user.
+> The token issued during **Bot authentication** isn't the same token issued during **User authentication**. The first is used to establish secure communication between a bot, channels and, ultimately, client applications. The second is used to authorize the bot to access secured resource on behalf of the user.
 
 Notice that channels provide their own, separate user authentication to let a user sign in to the channel.
 

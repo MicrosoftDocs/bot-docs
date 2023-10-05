@@ -5,7 +5,8 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: include
-ms.date: 06/09/2022
+ms.custom: devx-track-azurecli
+ms.date: 08/18/2022
 ---
 
 To use the Azure CLI to provision and publish bots, you need:
@@ -16,7 +17,8 @@ To use the Azure CLI to provision and publish bots, you need:
   For your programming language, use the following version of the Azure CLI.
   Some steps won't work with later versions of the CLI.
 
-  | Language                   | CLI version |
-  |:---------------------------|:-----------:|
-  | C#, JavaScript, and Python | 2.36.0      |
-  | Java                       | 2.29.2      |
+  | Language          | CLI version     |
+  |:------------------|:---------------:|
+  | C# and JavaScript | 2.39.0 or later |
+  | Python            | 2.36.0          |
+  | Java              | 2.29.2          |

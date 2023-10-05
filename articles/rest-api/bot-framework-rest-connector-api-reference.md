@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: reference
-ms.date: 01/13/2022
+ms.date: 02/10/2023
 ms.custom: abs-meta-21q1
 ---
 
@@ -22,6 +22,8 @@ Within the Bot Framework, the Bot Connector service enables your bot to exchange
 
 When a user sends a message to your bot, the incoming request contains an [Activity](#activity-object) object with a `serviceUrl` property that specifies the endpoint to which your bot should send its response. To access the Bot Connector service, use the `serviceUrl` value as the base URI for API requests.
 
+When you don't already have a service URL for the channel, use `https://smba.trafficmanager.net/teams/` as the service URL. For more information, see [how to create a conversation and a proactive message in Teams](/microsoftteams/platform/bots/how-to/conversations/send-proactive-messages#create-the-conversation).
+
 For example, assume that your bot receives the following activity when the user sends a message to the bot.
 
 ```json
@@ -29,7 +31,7 @@ For example, assume that your bot receives the following activity when the user 
     "type": "message",
     "id": "bf3cc9a2f5de...",
     "timestamp": "2016-10-19T20:17:52.2891902Z",
-    "serviceUrl": "https://smba.trafficmanager.net/apis",
+    "serviceUrl": "https://smba.trafficmanager.net/teams/",
     "channelId": "channel's name/id",
     "from": {
         "id": "1234abcd",
@@ -47,12 +49,12 @@ For example, assume that your bot receives the following activity when the user 
 }
 ```
 
-The `serviceUrl` property within the user's message indicates that the bot should send its response to the endpoint `https://smba.trafficmanager.net/apis`; this will be the base URI for any subsequent requests that the bot issues in the context of this conversation. If your bot will need to send a proactive message to the user, be sure to save the value of `serviceUrl`.
+The `serviceUrl` property within the user's message indicates that the bot should send its response to the endpoint `https://smba.trafficmanager.net/teams/`. The service URL will be the base URI for any subsequent requests that the bot issues in the context of this conversation. If your bot will need to send a proactive message to the user, be sure to save the value of `serviceUrl`.
 
 The following example shows the request that the bot issues to respond to the user's message.
 
 ```http
-POST https://smba.trafficmanager.net/apis/v3/conversations/abcd1234/activities/bf3cc9a2f5de...
+POST https://smba.trafficmanager.net/teams/v3/conversations/abcd1234/activities/bf3cc9a2f5de...
 Authorization: Bearer eyJhbGciOiJIUzI1Ni...
 Content-Type: application/json
 ```
@@ -111,7 +113,7 @@ The [HTTP status code](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html) t
 | 401              | The bot isn't yet authenticated.                             |
 | 403              | The bot isn't authorized to perform the requested operation. |
 | 404              | The requested resource wasn't found.                         |
-| 405              | The channel does not support the requested operation.        |
+| 405              | The channel doesn't support the requested operation.         |
 | 500              | An internal server error occurred.                           |
 | 503              | The service is temporarily unavailable.                      |
 
@@ -250,7 +252,7 @@ GET /v3/conversations/{conversationId}/pagedmembers?pageSize={pageSize}&continua
 
 ### Reply to activity
 
-Sends an activity (message) to the specified conversation, as a reply to the specified activity. The activity will be added as a reply to another activity, if the channel supports it. If the channel does not support nested replies, then this operation behaves like [Send to Conversation](#send-to-conversation).
+Sends an activity (message) to the specified conversation, as a reply to the specified activity. The activity will be added as a reply to another activity, if the channel supports it. If the channel doesn't support nested replies, then this operation behaves like [Send to Conversation](#send-to-conversation).
 
 ```http
 POST /v3/conversations/{conversationId}/activities/{activityId}
@@ -350,7 +352,7 @@ GET /v3/attachments/{attachmentId}/views/{viewId}
 
 ## State operations (deprecated)
 
-The Microsoft Bot Framework State service is retired as of March 30, 2018. Previously, bots built on the Azure Bot Service or the Bot Builder SDK had a default connection to this service hosted by Microsoft to store bot state data. Bots will need to be updated to use their own state storage.
+The Microsoft Bot Framework State service is retired as of March 30, 2018. Previously, bots built on the Azure AI Bot Service or the Bot Builder SDK had a default connection to this service hosted by Microsoft to store bot state data. Bots will need to be updated to use their own state storage.
 
 | Operation | Description |
 |----|----|
@@ -419,13 +421,13 @@ Defines a message that is exchanged between bot and user.
 | **attachmentLayout** | String | Layout of the rich card **attachments** that the message includes. One of these values: **carousel**, **list**. For more information about rich card attachments, see [Add rich card attachments to messages](bot-framework-rest-connector-add-rich-cards.md). |
 | **attachments** | [Attachment](#attachment-object)[] | Array of **Attachment** objects that defines additional information to include in the message. Each attachment may be either a file (for example, audio, video, image) or a rich card. |
 | **callerId** | String | A string containing an IRI identifying the caller of a bot. This field isn't intended to be transmitted over the wire, but is instead populated by bots and clients based on cryptographically verifiable data that asserts the identity of the callers (for example, tokens). |
-| **channelData** | Object | An object that contains channel-specific content. Some channels provide features that require additional information that cannot be represented using the attachment schema. For those cases, set this property to the channel-specific content as defined in the channel's documentation. For more information, see [Implement channel-specific functionality](bot-framework-rest-connector-channeldata.md). |
+| **channelData** | Object | An object that contains channel-specific content. Some channels provide features that require additional information that can't be represented using the attachment schema. For those cases, set this property to the channel-specific content as defined in the channel's documentation. For more information, see [Implement channel-specific functionality](bot-framework-rest-connector-channeldata.md). |
 | **channelId** | String | An ID that uniquely identifies the channel. Set by the channel. |
 | **code** | String | Code indicating why the conversation has ended. |
 | **conversation** | [ConversationAccount](#conversationaccount-object) | A **ConversationAccount** object that defines the conversation to which the activity belongs. |
 | **deliveryMode** | String | A delivery hint to signal to the recipient alternate delivery paths for the activity. One of these values: **normal**, **notification**. |
 | **entities** | object[] | Array of objects that represents the entities that were mentioned in the message. Objects in this array may be any [Schema.org](http://schema.org/) object. For example, the array may include [Mention](#mention-object) objects that identify someone who was mentioned in the conversation and [Place](#place-object) objects that identify a place that was mentioned in the conversation. |
-| **expiration** | String | The time at which the activity should be considered to be "expired" and should not be presented to the recipient. |
+| **expiration** | String | The time at which the activity should be considered to be "expired" and shouldn't be presented to the recipient. |
 | **from** | [ChannelAccount](#channelaccount-object) | A **ChannelAccount** object that specifies the sender of the message. |
 | **historyDisclosed** | Boolean | Flag that indicates whether or not history is disclosed. Default value is **false**. |
 | **id** | String | ID that uniquely identifies the activity on the channel. |
@@ -599,7 +601,7 @@ Defines a conversation in a channel.
 
 | Property | Type | Description |
 |----|----|----|
-| **aadObjectId** | String | This account's object ID within Azure Active Directory (AAD). |
+| **aadObjectId** | String | This account's object ID within Azure Active Directory. |
 | **conversationType** | String | Indicates the type of the conversation in channels that distinguish between conversation types (for example, group or personal). |
 | **id** | String | The ID that identifies the conversation. The ID is unique per channel. If the channel starts the conversation, it sets this ID; otherwise, the bot sets this property to the ID that it gets back in the response when it starts the conversation (see [Create Conversation](#create-conversation)). |
 | **isGroup** | Boolean | Flag to indicate whether the conversation contains more than two participants at the time the activity was generated. Set to **true** if this is a group conversation; otherwise, **false**. The default is **false**. |
@@ -626,7 +628,7 @@ Defines parameters for creating a new conversation.
 
 | Property | Type | Description |
 |----|----|----|
-| **activity** | [Activity](#activity-object) | The initial message to send to the conversation when it is created. |
+| **activity** | [Activity](#activity-object) | The initial message to send to the conversation when it's created. |
 | **bot** | [ChannelAccount](#channelaccount-object) | Channel account information needed to route a message to the bot. |
 | **channelData** | Object | Channel-specific payload for creating the conversation. |
 | **isGroup** | Boolean | Indicates whether this is a group conversation. |
@@ -784,7 +786,7 @@ Defines a user or bot that was mentioned in the conversation.
 
 | Property | Type | Description |
 |----|----|----|
-| **mentioned** | [ChannelAccount](#channelaccount-object) | A **ChannelAccount** object that specifies the user or the bot that was mentioned. Some channels, such as Slack, assign names per conversation, so it is possible that your bot's mentioned name (in the message's **recipient** property) may be different from the handle that you specified when you [registered](../bot-service-quickstart-registration.md) your bot. However, the account IDs for both would be the same. |
+| **mentioned** | [ChannelAccount](#channelaccount-object) | A **ChannelAccount** object that specifies the user or the bot that was mentioned. Some channels, such as Slack, assign names per conversation, so it's possible that your bot's mentioned name (in the message's **recipient** property) may be different from the handle that you specified when you [registered](../bot-service-quickstart-registration.md) your bot. However, the account IDs for both would be the same. |
 | **text** | String | The user or bot as mentioned in the conversation. For example, if the message is "@ColorBot pick me a new color," this property would be set to **\@ColorBot**. Not all channels set this property. |
 | **type** | String | This object's type. Always set to **Mention**. |
 

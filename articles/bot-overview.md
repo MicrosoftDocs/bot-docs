@@ -1,13 +1,13 @@
 ---
 title: Choose the right chatbot solution for your use case
-description: Learn when to use Power Virtual Agents, Composer, Bot Framework, and Azure Bot Service bots.
-author: JonathanFingold
+description: Learn about different chatbot solutions, who they're for, and when to use them.
+author: iaanw
 ms.author: iawilt
-manager: shellyha
+manager: leeclontz
 ms.reviewer: micchow
 ms.topic: overview
 ms.service: bot-service
-ms.date: 05/12/2022
+ms.date: 05/11/2023
 ms.custom: mode-api, tab-zone-seo
 ---
 
@@ -15,15 +15,15 @@ ms.custom: mode-api, tab-zone-seo
 
 A chatbot is an application that has written or spoken natural language as its user interface. In other words, a conversation is the means through which questions are answered, requests are serviced, and so on.
 
+This article provides an overview of some of the chatbot solutions Microsoft provides. If you're new to making chatbots, we recommend starting with Power Virtual Agents.
+
 The following table lists Microsoft products and services for building bots, who they support, and a brief description. Following sections describe each product in more detail.
 
 | Product | Audience | Description |
 |:-|:-|:-|
 | [Power Virtual Agents](#power-virtual-agents) | Fusion teams, citizen developers | Power Virtual Agents is an end-to-end bot-building tool, with built-in natural language understanding models, data connectivity through Power Automate, and support for multiple channels. |
-| [Bot Framework SDK](#bot-framework-sdk) | Developers | Provides a framework for building bots, including tools, templates, and related AI services.|
 | [Health Bot](#health-bot) | Healthcare organizations | Provides support for healthcare organizations. Health Bot helps you build and deploy compliant, AI-powered virtual health assistants and health bots. |
-
-We recommend new users start with Power Virtual Agents.
+| [Bot Framework SDK](#bot-framework-sdk) | Developers | Provides a framework for building bots, including tools, templates, and related AI services. The SDK is ideal for developers who want to build bots that are publicly available on the Microsoft Teams app store. |
 
 ## Power Virtual Agents
 
@@ -31,18 +31,30 @@ Power Virtual Agents is designed to support _fusion teams_&mdash;where professio
 
 Power Virtual Agents is a tool for chatbot development that's included in [Microsoft Power Platform](https://powerplatform.microsoft.com/)&mdash;a business-application platform that incorporates data analysis, solution building, and process automation.
 You don't need to write code or understand the details of the underlying AI technologies to build bots in Power Virtual Agents.
-Such bots can leverage automation and other capabilities within the Power Platform, and you can rapidly develop sophisticated chatbot experiences.
+Such bots can apply automation and other capabilities within the Power Platform, and you can rapidly develop sophisticated chatbot experiences.
 
 - You can connect virtual agents to various user platforms, such as [Microsoft 365](https://www.microsoft.com/microsoft-365) and [Microsoft Dynamics 365](https://dynamics.microsoft.com/).
 - You can use over 600 prebuilt data connectors, available through Power Automate.
 
 For more information about Power Virtual Agents, see the [product overview page](https://powervirtualagents.microsoft.com). For details about pricing, see [Power Virtual Agents pricing](https://powervirtualagents.microsoft.com/pricing/).
 
+## Health Bot
+
+The Health Bot Service is a cloud platform that healthcare organizations can use to build and deploy compliant, AI-powered virtual health assistants and health bots. The service can help organizations improve processes and reduce costs. It offers your users _intelligent_ and _personalized_ access to health-related information and interactions through a natural conversation experience.
+
+The Health Bot Service is ideal for developers in IT departments of healthcare organizations such as providers, pharmaceutical companies, telemedicine providers, and health insurers. Healthcare organizations can use the service to build a _health bot instance_ and integrate it with their systems that patients, provdiders, and other representatives interact with.
+
+The Health Bot Service contains a built-in medical database, including triage protocols. You can also extend a health bot instance to include your own scenarios and integrate with other IT systems and data sources.
+
+For more information about the Health Bot Service, see [Health Bot Overview](/azure/health-bot/overview). For information about pricing models, see [Choosing the right Health Bot plan](/azure/health-bot/resources/pricing-details).
+
 ## Bot Framework SDK
 
-Microsoft Bot Framework and Azure Bot Service provide tools to build, test, deploy, and manage intelligent bots. The Bot Framework includes a modular and extensible SDK for building bots, including tools, templates, and related AI services. With this framework, developers can create bots that use speech, understand natural language, handle questions and answers, and more.
+Microsoft Bot Framework and Azure AI Bot Service provide tools to build, test, deploy, and manage intelligent bots. The Bot Framework includes a modular and extensible SDK for building bots, including tools, templates, and related AI services. With this framework, developers can create bots that use speech, understand natural language, handle questions and answers, and more.
 
-Azure Bot Service and the Bot Framework offer:
+The SDK is ideal for developers who want to build bots that are publicly available on the Microsoft Teams app store.
+
+Azure AI Bot Service and the Bot Framework offer:
 
 - The Bot Framework SDK for developing bots.
 - Bot Framework tools to cover end-to-end bot development workflow.
@@ -51,23 +63,13 @@ Azure Bot Service and the Bot Framework offer:
 
 Additionally, bots may make use of other Azure services:
 
-- Azure Cognitive Services to build intelligent applications.
+- Azure AI services to build intelligent applications.
 - Azure Storage for cloud storage.
 
 For more information about the Bot Framework SDK, see [What is the Bot Framework SDK](bot-service-overview.md).
-Once created and deployed on Azure, the chatbot service consumes resources.
-For details about pricing, see [Azure Bot Services pricing](/pricing/details/bot-services/).
+Once you have created and deployed your bot to Azure, the chatbot service consumes resources.
+For details about pricing, see [Azure AI Bot Service pricing](https://azure.microsoft.com/pricing/details/bot-services/).
 Costs associated with the consumption of resources on Azure are in addition to the cost of the chatbot service itself.
-
-## Health Bot
-
-The Health Bot Service is a cloud platform healthcare organizations can use to build and deploy compliant, AI-powered virtual health assistants and health bots. The service can help organizations improve processes and reduce costs. It offers your users _intelligent_ and _personalized_ access to health-related information and interactions through a natural conversation experience.
-
-The Health Bot Service is ideal for developers in IT departments of healthcare organizations such as providers, pharmaceutical companies, telemedicine providers, and health insurers. Using the service, healthcare organizations can build a _health bot instance_ and integrate it with their systems that patients, provdiders, and other representatives interact with.
-
-The Health Bot Service contains a built-in medical database, including triage protocols. You can also extend a health bot instance to include your own scenarios and integrate with other IT systems and data sources.
-
-For more information about the Health Bot Service, see [Health Bot Overview](/azure/health-bot/overview). For information about pricing models, see [Choosing the right Health Bot plan](/azure/health-bot/resources/pricing-details).
 
 ## Skill bots
 
@@ -81,5 +83,5 @@ As an advanced scenario, you can create a _skill_ bot that provides features to 
 ## Next Steps
 
 - [Create and deploy a Power Virtual Agents bot online](/power-virtual-agents/fundamentals-get-started)
-- [Create a bot with the Bot Framework SDK](bot-service-quickstart-create-bot.md)
 - [Create your first Health Bot](/azure/health-bot/quickstart-createyourhealthcarebot)
+- [Create a bot with the Bot Framework SDK](bot-service-quickstart-create-bot.md)

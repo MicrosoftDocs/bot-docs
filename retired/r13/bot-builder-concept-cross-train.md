@@ -108,7 +108,7 @@ After cross training with the hotel booking .lu file, it would look like this:
 - reserve a hotel room
 ```
 
-The utterance _reserve a hotel room_ is associated with the `_interruption` intent. When the `_interruption` intent is detected, it bubbles up any utterance associated with it to its parent dialog, whose recognizer returns the `BookHotel` intent. When cross training LUIS to LUIS, you need to include all user utterances from all intents from the dialog you are cross training with.
+The utterance _reserve a hotel room_ is associated with the `_interruption` intent. When the `_interruption` intent is detected, it bubbles up any utterance associated with it to its parent dialog, whose recognizer returns the `BookHotel` intent. When cross training LUIS to LUIS, you need to include all user utterances from all intents from the dialog you're cross training with.
 
 ![Travel bot diagram after cross training](./media/adaptive-dialogs/after-cross-train.png)
 
@@ -167,7 +167,7 @@ The advantage of global interruptions in this scenario is the ability it provide
 
 ## The Bot Framework CLI cross-train command
 
-Cross training your bot can quickly become a challenging and error prone task in even a minimally complex bot, especially when you are still making frequent updates to the LUIS or QnA Maker models. The Bot Framework SDK provides a tool to automate this process. For information on the Bot Framework CLI cross-train command, refer to the _Cross-trained recognizer set_ section of the [Recognizers in adaptive dialogs - reference guide](../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md#cross-trained-recognizer-set).
+Cross training your bot can quickly become a challenging and error prone task in even a minimally complex bot, especially when you're still making frequent updates to the LUIS or QnA Maker models. The Bot Framework SDK provides a tool to automate this process. For information on the Bot Framework CLI cross-train command, refer to the _Cross-trained recognizer set_ section of the [Recognizers in adaptive dialogs - reference guide](../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md#cross-trained-recognizer-set).
 
 ## Source code updates
 
@@ -179,23 +179,8 @@ After cross training your LUIS and QnA Maker models, you need to be sure and use
 - The [Cross-trained recognizer set][crosstrainedrecognizerset-ref-guide] section of the Recognizers in adaptive dialogs - reference guide.
 
 <!------------------------------------------------------------------------------------------------------------->
-[intents]: bot-builder-concept-adaptive-dialog-recognizers.md#intents
-[utterances]: bot-builder-concept-adaptive-dialog-recognizers.md#utterances
 [interruptions]: bot-builder-concept-adaptive-dialog-interruptions.md
 [Global-interrupts]: bot-builder-concept-adaptive-dialog-interruptions.md#handling-interruptions-globally
-[luis]: /azure/cognitive-services/luis/what-is-luis
 [luis-recognizer]: bot-builder-concept-adaptive-dialog-recognizers.md#luis-recognizer
-[cross-trained-recognizer-set-concept]: /azure/cognitive-services/luis/what-is-luis
-[luis-recognizer]: bot-builder-concept-adaptive-dialog-recognizers.md#cross-trained-recognizer-set
-[luis-build]: bot-builder-howto-bf-cli-deploy-luis.md#create-and-train-a-luis-app-then-publish-it-using-the-build-command
-[bf-luiscross-train]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-luiscross-train
-[lu-templates]: ../file-format/bot-builder-lu-file-format.md
-[qnamaker]: /azure/cognitive-services/QnAMaker/Overview/overview
-[qnamaker-recognizer]: bot-builder-concept-adaptive-dialog-recognizers.md#qna-maker-recognizer
-[qna-file-format]: ../file-format/bot-builder-qna-file-format.md
-[qnamaker-build]: bot-builder-howto-bf-cli-deploy-qna.md#create-a-qna-maker-knowledge-base-and-publish-it-to-production-using-the-build-command
-[recognizer]: bot-builder-concept-adaptive-dialog-recognizers.md
-[cross-trained-recognizer-set-concept]: bot-builder-concept-adaptive-dialog-recognizers.md#cross-trained-recognizer-set
+[cross-trained-recognizer-set-concept]: /azure/ai-services/luis/what-is-luis
 [crosstrainedrecognizerset-ref-guide]: ../adaptive-dialog/adaptive-dialog-prebuilt-recognizers.md#cross-trained-recognizer-set
-[bf-cli]: bf-cli-overview.md
-[language-generation]: bot-builder-concept-adaptive-dialog-generators.md

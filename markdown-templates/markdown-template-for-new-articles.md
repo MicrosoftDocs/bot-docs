@@ -1,15 +1,16 @@
 ---
-title: Page title that displays in the browser tab and search results - Bot Service
+title: Page title that displays in the browser tab and search results
 description: Article description that will be displayed on landing pages and in most search results
 author: GitHub-alias-of-only-one-author
-ms.author: your-alias
-manager: rstand
-ms.topic: article
-ms.prod: bot-framework
-# date the article was updated in mm/dd/yyyy format
-ms.date: 05/01/2017
+ms.author: writing-lead-ms-alias
+manager: writing-manager-ms-alias
+ms.reviewer: editor-ms-alias
+ms.topic: overview
+ms.service: bot-service
+ms.date: mm/dd/yyyy # date the article was updated in mm/dd/yyyy format
 ---
-# Markdown template for Bot Framework on Microsoft Docs (WIP)
+
+# Markdown template for Bot Framework on Microsoft Learn (WIP)
 
 Your article should have only one H1 heading, which you create with a single # sign. The H1 heading should always be followed by a descriptive paragraph that helps the customer understand what the article is about. It should contain keywords you think customers would use to search for this piece of content. Do not start the article with a note or tip - always start with an introductory paragraph.
 
@@ -19,59 +20,40 @@ Two ## signs create an H2 heading - if your article needs to be structured with 
 
 H2 headings are rendered on the page as an automatic on-page TOC. Do not hand-code article navigation in an article. Use the H2 headings to do that.
 
-Within an H2 section, you can use three ### signs to create H3 headings. In our content, try to avoid going deeper than 3 heading layers - the headings are often hard to distinguish on the rendered page.
+Within an H2 section, you can use three ### signs to create H3 headings. In our content, try to avoid going deeper than 3 heading layers - the heading levels are often hard to distinguish on the rendered page.
+
+For more information, see [Markdown/Headings](https://review.learn.microsoft.com/help/platform/markdown-reference?branch=main#headings).
 
 ## Images
 
-You can use images throughout a technical article. Make sure you include alt text for all your images. This helps accessibility and discoverability.
+Use the `:::image` macro for images.
+
+For more information, see [Markdown/Images](https://review.learn.microsoft.com/help/platform/markdown-reference?branch=main#images).
 
 ## Linking
 
-Your article will most likely contain links. Here's sample markdown for a link to a target that is not on the docs.microsoft.com site:
+Your article will most likely contain links. Use the right type of link, based on the link target: file in repo, site-relative, full URL.
 
-    [link text](url)
-    [Scott Guthrie's blog](http://weblogs.asp.net/scottgu)
+For more details, see [Links](https://review.learn.microsoft.com/help/platform/links-how-to?branch=main).
 
-Launch an (external) link in a new tab by using an HTML anchor tag as shown in this example:
-
-    <a href="url" target="_blank">link text</a>
-
-    <a href="http://weblogs.asp.net/scottgu" target="_blank">Scott Guthrie's blog</a>
-
-Here's sample markdown for a link to another technical article in the botframework-docs repository:
-
-    [link text](../articles/article-name.md)
-
-You can also use so-called reference style links where you define the links at the bottom of the article, and reference them like this:
-
-    I get 10 times more traffic from [Google][gog] than from [Yahoo][yah] or [MSN][msn].
-
-## Using 'Include' files
+## Include files
 
 Whenever the same piece of content exists in multiple places throughout the docs (ex: the same few sentences describing a term, or the same tip/note/warning/etc.),
 you can create that content inside a 'snippet' file (in the /includes folder), then simply reference that file in markdown to dynamically inject its contents into any article.
 
-For example, the following 'include' statement injects the contents that's defined in the `includes/snippet-tip-bot-config-settings.md` file.
-
-    [!include[Application configuration settings](includes/snippet-tip-bot-config-settings.md)]
-
-Syntax for the include statement is:
-
-    [!include[description-of-the-include-contents](path-to-md-file-that-contains-the-markdown-to-include)]
+For more details, see [Includes](https://review.learn.microsoft.com/help/platform/includes-best-practices?branch=main).
 
 ## Including code from a GitHub repo
 
-You can inject code from a file that resides in GitHub by using a statement like the following:
+Use the `:::code` macro for code snippets from a GitHub samples repo.
 
-    [!code-JavaScript[_samples/echobot](../_samples/echobot/server.js "Echo Bot in Node.js")]
-
-For details about how to configure this functionality, see the [OPS documentation](https://opsdocs.azurewebsites.net/en-us/opsdocs/partnerdocs/codesnippets?branch=master).
+For more information, see [How to include code in docs](https://review.learn.microsoft.com/help/platform/code-in-docs?branch=main).
 
 ## Notes and tips
 
-You should use notes and tips judiciously. A little bit goes a long way. Put the text of the note or tip on the line after the custom markdown extension.
+Use notes and tips judiciously. A little bit goes a long way.
 
-```
+```md
 > [!NOTE]
 > Note text.
 
@@ -82,13 +64,15 @@ You should use notes and tips judiciously. A little bit goes a long way. Put the
 > Important text.
 ```
 
+For more information, see [Markdown/Alerts](https://review.learn.microsoft.com/help/platform/markdown-reference?branch=main#alerts-note-tip-important-caution-warning)
+
 ## Lists
 
 A simple numbered list in markdown creates a numbered list on your published page.
 
 1. First step.
-2. Second step.
-3. Third step.
+1. Second step.
+1. Third step.
 
 Use hyphens to create unordered lists:
 
@@ -96,12 +80,6 @@ Use hyphens to create unordered lists:
 - Item
 - Item
 
-
 ## Next steps
 
 Every topic should end with 1 to 3 concrete, action oriented next steps and links to the next logical piece of content to keep the customer engaged.
-
-<!--Reference style links - using these makes the source content way more readable than using inline links-->
-[gog]: http://google.com/        
-[yah]: http://search.yahoo.com/  
-[msn]: http://search.msn.com/    

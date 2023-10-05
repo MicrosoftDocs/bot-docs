@@ -77,7 +77,7 @@ To link to other Microsoft sites (MSDN, azure.microsoft.com, TechNet), use an ab
 
 
 ### Use friendly link text for all links
-The words you include in a link should be friendly - in other words, they should be normal English words or the title of the page you are linking to. Do not use "click here". It's bad for SEO and doesn't adequately describe the target.
+The words you include in a link should be friendly. In other words, they should be normal English words or the title of the page you're linking to. Do not use "click here". It's bad for SEO and doesn't adequately describe the target.
 
 **Correct:**
 

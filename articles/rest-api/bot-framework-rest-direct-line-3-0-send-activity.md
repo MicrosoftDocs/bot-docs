@@ -45,7 +45,7 @@ Content-Type: application/json
 When the activity is delivered to the bot, the service responds with an HTTP status code that reflects the bot's status code. If the bot generates an error, an HTTP 502 response ("Bad Gateway") is returned to the client in response to its Send Activity request.
 
 > [!NOTE]
-> This can be caused by the fact that a correct token was not used. Only the token which was received against *start conversation* can be used to send an activity.
+> This can be caused by the fact that a correct token wasn't used. Only the token which was received against *start conversation* can be used to send an activity.
 
 If the POST is successful, the response contains a JSON payload that specifies the ID of the Activity that was sent to the bot.
 
@@ -139,7 +139,7 @@ HTTP/1.1 200 OK
 
 To send multiple attachments by upload, `POST` a multipart request to the `/v3/directline/conversations/{conversationId}/upload` endpoint. Set the `Content-Type` header of the request to `multipart/form-data` and include the `Content-Type` header and `Content-Disposition` header for each part to specify each attachment's type and filename. In the request URI, set the `userId` parameter to the ID of the user that is sending the message.
 
-You may include an `Activity` object within the request by adding a part that specifies the `Content-Type` header value `application/vnd.microsoft.activity`. If the request includes an Activity, the attachments that are specified by other parts of the payload are added as attachments to that Activity before it is sent. If the request does not include an Activity, an empty Activity is created to serve as the container in which the specified attachments are sent.
+You may include an `Activity` object within the request by adding a part that specifies the `Content-Type` header value `application/vnd.microsoft.activity`. If the request includes an Activity, the attachments that are specified by other parts of the payload are added as attachments to that Activity before it's sent. If the request doesn't include an Activity, an empty Activity is created to serve as the container in which the specified attachments are sent.
 
 The following snippets provide an example of the Send (multiple) Attachments request and response. In this example, the request sends a message that contains some text and a single image attachment. Additional parts could be added to the request to include multiple attachments in this message.
 

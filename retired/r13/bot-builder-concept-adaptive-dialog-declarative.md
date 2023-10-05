@@ -175,7 +175,7 @@ This section contains all [triggers](bot-builder-concept-adaptive-dialog-trigger
 |`Microsoft.OnBeginDialog`  | `OnBeginDialog`  | Actions to perform when this dialog begins. For use with child dialogs only.                                                         |
 |`Microsoft.OnCancelDialog` | `OnCancelDialog` | This event allows you to prevent the current dialog from being cancelled due to a child dialog executing a CancelAllDialogs action.  |
 |`Microsoft.OnEndOfActions` | `OnEndOfActions` | This event occurs once all actions and ambiguity events have been processed.                                                         |
-|`Microsoft.OnError`        | `OnError`        | Action to perform when an `Error` dialog event occurs. This event is similar to `OnCancelDialog` in that you are preventing the current dialog from ending, in this case due to an error in a child dialog.|
+|`Microsoft.OnError`        | `OnError`        | Action to perform when an `Error` dialog event occurs. This event is similar to `OnCancelDialog` in that you're preventing the current dialog from ending, in this case due to an error in a child dialog.|
 |`Microsoft.OnRepromptDialog` |`OnRepromptDialog`| Actions to perform when `RepromptDialog` event occurs.                                                                             |
 
 > [!IMPORTANT]
@@ -426,7 +426,7 @@ For additional information on using this command, see [bf dialog:verify][bf-dial
 > [!NOTE]
 >
 > [Composer][composer] creates a merged `.schema` file and valid `.dialog` files; however,
-> the verify command can be very useful if you are creating these files by hand.
+> the verify command can be very useful if you're creating these files by hand.
 
 ### Install the Bot Framework CLI
 
@@ -519,7 +519,7 @@ For additional information on using this command, see [bf dialog:verify][bf-dial
 [traceactivity]: ../adaptive-dialog/adaptive-dialog-prebuilt-actions.md#traceactivity
 
 [intelliSense]: /visualstudio/ide/using-intellisense
-[composer]: https://docs.microsoft.com/composer
+[composer]: https://learn.microsoft.com/composer
 
 [dialog-commands]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-dialog
 [bf-dialogverify-patterns]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-dialogverify-patterns

@@ -1,22 +1,24 @@
 ---
-title: About network isolation in Azure Bot Service
+title: About network isolation in Azure AI Bot Service
 description: Learn about Azure Virtual Network and how a virtual network lets you restrict user access to your bot.
 displayName: private network, isolated network
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: mainguy
+ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: conceptual
 ms.date: 04/05/2022
 ---
 
-# Network isolation in Azure Bot Service
+# Network isolation in Azure AI Bot Service
+
+**Commencing September 1, 2023, it is strongly advised to employ the [Azure Service Tag](/azure/virtual-network/service-tags-overview#available-service-tags) method for network isolation. The utilization of DL-ASE should be limited to highly specific scenarios. Prior to implementing this solution in a production environment, we kindly recommend consulting your support team for guidance.**
 
 This article covers concepts around network isolation for your Azure bot and its dependent services.
 
 You may want to restrict access to your bot to a private network.
-The only way to do this in the Azure Bot Service is to use the Direct Line App Service extension.
+The only way to do this in the Azure AI Bot Service is to use the Direct Line App Service extension.
 For example, you can use the App Service extension to host a company-internal bot and require users to access the bot from within your company network.
 
 For detailed instructions on how to configure your bot in a private network, see how to [Use an isolated network](./dl-network-isolation-how-to.md).
@@ -43,7 +45,7 @@ Private endpoints are available in the Bot Service via the Direct Line App Servi
 
 1. For [user authentication](./v4sdk/bot-builder-concept-authentication.md) to work, your bot client needs to communicate with the service provider&mdash;such as Azure Active Directory or GitHub&mdash;and the token endpoint.
 
-    If your bot client is in your virtual network, you'll need to allow-list both endpoints from within your virtual network. Do this for the token endpoint via [service tags](./bot-service-channel-directline-extension-vnet.md). Your bot endpoint itself also needs access to the token endpoint, as described below.
+    If your bot client is in your virtual network, you'll need to allowlist both endpoints from within your virtual network. Do this for the token endpoint via [service tags](./bot-service-channel-directline-extension-vnet.md). Your bot endpoint itself also needs access to the token endpoint, as described below.
 
 1. With the App Service extension, your bot endpoint and the App Service extension need to send outbound HTTPS requests to Bot Framework services.
 
@@ -56,7 +58,7 @@ There are two main scenarios where private endpoints are used:
 - For your bot to access the token endpoint.
 - For the Direct Line channel extension to access the Bot Service.
 
-A private endpoint _projects_ required services into your virtual network, so that they are available inside your network directly, without exposing your virtual network to the internet or allow-listing any IP addresses. All traffic through a private endpoint goes through the Azure internal servers to ensure that your traffic isn't leaked to the internet.
+A private endpoint _projects_ required services into your virtual network, so that they're available inside your network directly, without exposing your virtual network to the internet or allow-listing any IP addresses. All traffic through a private endpoint goes through the Azure internal servers to ensure that your traffic isn't leaked to the internet.
 
 The service uses two sub-resources, `Bot` and `Token`, to project services into your network. When you add a private endpoint, Azure generates a bot-specific DNS record for each sub-resource and configures the endpoint in the DNS zone group. This ensures that endpoints from different bots which target the same sub-resource can be distinguished from each other, while reusing the same DNS zone group resource.
 

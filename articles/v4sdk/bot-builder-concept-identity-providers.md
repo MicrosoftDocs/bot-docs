@@ -1,7 +1,7 @@
 ---
 title: Identity providers in Bot Framework SDK
 description: Learn about identity providers, which authenticate user or client identities and issue security tokens. They provide authentication as a service. 
-keywords: azure bot service, authentication, bot framework token service
+keywords: Azure AI Bot Service, authentication, bot framework token service
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
@@ -89,10 +89,10 @@ For more information, see [Azure Active Directory for developers (v1.0) overview
 > [!NOTE]
 > If you selected one of the following, enter the **tenant ID** you recorded for the Azure AD identity provider app:
 >
-> - *Accounts in this organizational directory only (Microsoft only - Single tenant)*
-> - *Accounts in any organizational directory(Microsoft AAD directory - Multi tenant)*
+> - **Accounts in this organizational directory only (Microsoft only - Single tenant)**
+> - **Accounts in any organizational directory(Microsoft AAD directory - Multi tenant)**
 >
-> If you selected *Accounts in any organizational directory (Any Azure AD directory - Multi tenant and personal Microsoft accounts e.g., Skype, Xbox, Outlook.com)*, enter `common`.
+> If you selected **Accounts in any organizational directory (Any Azure AD directory - Multi tenant and personal Microsoft accounts e.g., Skype, Xbox, Outlook.com)**, enter `common`.
 >
 > Otherwise, the Azure AD identity provider app will use the tenant to verify the selected ID and exclude personal Microsoft accounts.
 
@@ -151,13 +151,13 @@ This provider requires more configuration parameters, so use this version to con
 | **Client secret** | Your client secret obtained from the identity provider registration. |
 | **Scope List Delimiter** | The separator character for the scope list. Empty spaces ( ) are not supported in this field, but can be used in the **Scopes** field if required by the identity provider. In that case, use a comma (,) for this field, and spaces ( ) in the **Scopes** field. |
 | **Authorization URL Template** | A URL template for authorization, defined by your identity provider. For example, `https://login.microsoftonline.com/common/oauth2/v2.0/authorize`. |
-| **Authorization URL Query String Template** | A query template for authorization, provided by your identity provider. Keys in the query string template will vary depending on the identity provider. |
+| **Authorization URL Query String Template** | A query template for authorization, provided by your identity provider. Keys in the query string template will vary depending on the identity provider. For example, `?client_id={ClientId}&response_type=code&redirect_uri={RedirectUrl}&scope={Scopes}&state={State}`. |
 | **Token URL Template** | `https://login.microsoftonline.com/common/oauth2/v2.0/token` |
 | **Token URL Query String Template** | The query string separator for the token URL. Usually a question mark (?). |
-| **Token Body Template** | A template for the token body. |
+| **Token Body Template** | A template for the token body. For example, `code={Code}&grant_type=authorization_code&redirect_uri={RedirectUrl}&client_id={ClientId}&client_secret={ClientSecret}`. |
 | **Refresh URL Template** | `https://login.microsoftonline.com/common/oauth2/v2.0/token` |
 | **Refresh URL Query String Template** | A refresh URL query string separator for the token URL. Usually a question mark (?). |
-| **Refresh Body Template** | A template for the refresh body. |
+| **Refresh Body Template** | A template for the refresh body. For example, `refresh_token={RefreshToken}&redirect_uri={RedirectUrl}&grant_type=refresh_token&client_id={ClientId}&client_secret={ClientSecret}`. |
 | **Token Exchange URL** |Leave this empty. |
 | **Scopes** | List of scopes you want authenticated users to have once signed in. Make sure you're only setting the necessary scopes, and follow the [Least privilege access control principle](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models). For example, `User.Read`. If you're using a custom scope, use the full URI including the exposed application ID URI. |
 

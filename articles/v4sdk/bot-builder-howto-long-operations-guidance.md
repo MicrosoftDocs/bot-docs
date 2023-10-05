@@ -1,5 +1,5 @@
 ---
-title: Manage a long-running operation using the Bot Framework SDK
+title: Manage a long-running operation
 description: Learn how to avoid time-out issues and use proactive messages to handle long-running operations within a bot.
 keywords: long operations, time out, 15 seconds
 author: JonathanFingold
@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 10/21/2021
+ms.date: 08/10/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-Proper handling of long-running operations is an important aspect of a robust bot. When the Azure Bot Service sends an activity to your bot from a channel, the bot is expected to process the activity quickly. If the bot doesn't complete the operation within 10 to 15 seconds, depending on the channel, the Azure Bot Service will time out and report back to the client a `504:GatewayTimeout`, as described in [How bots work][concept-basics].
+Proper handling of long-running operations is an important aspect of a robust bot. When the Azure AI Bot Service sends an activity to your bot from a channel, the bot is expected to process the activity quickly. If the bot doesn't complete the operation within 10 to 15 seconds, depending on the channel, the Azure AI Bot Service will time out and report back to the client a `504:GatewayTimeout`, as described in [How bots work][concept-basics].
 
 This article describes how to use an external service to execute the operation and to notify the bot when it has completed.
 
@@ -29,7 +29,7 @@ This article describes how to use an external service to execute the operation a
 - Familiarity with
   [Azure Queue Storage](/azure/storage/queues/storage-queues-introduction) and
   [Azure Functions C# script](/azure/azure-functions/functions-reference-csharp).
-- A copy of the **multi-turn prompt** sample in [**C#**](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/05.multi-turn-prompt).
+- A copy of the **multi-turn prompt** sample in [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/05.multi-turn-prompt).
 
 ## About this sample
 
@@ -45,8 +45,6 @@ This article begins with the multi-turn prompt sample bot and adds code for perf
 
 This example defines a `LongOperationPrompt` class, derived from the abstract `ActivityPrompt` class. When the `LongOperationPrompt` queues the activity to be processed, it includes a choice from the user within the activity's _value_ property. This activity is then consumed by Azure Functions, modified, and wrapped in a different `event` activity before it's sent back to the bot using a Direct Line client. Within the bot, the event activity is used to resume the conversation by calling the adapter's _continue conversation_ method. The dialog stack is then loaded, and the `LongOperationPrompt` completes.
 
-<!--The event activity is on a different conversation. Continue conversation is used to retrieve the bot's conversation with the user.-->
-
 This article touches on many different technologies. See the [additional information](#additional-information) section for links to associated articles.
 
 ## Create an Azure Storage account
@@ -57,9 +55,9 @@ For more information, see [create a storage account](/azure/storage/common/stora
 
 ## Create a bot resource
 
-1. Before creating the registration, setup ngrok and retrieve a URL to be used as the bot's _messaging endpoint_ during local debugging. The messaging endpoint will be the HTTPS forwarding URL with `/api/messages/` appended&mdash;the default port for new bots is 3978.
+1. Setup ngrok and retrieve a URL to be used as the bot's _messaging endpoint_ during local debugging. The messaging endpoint will be the HTTPS forwarding URL with `/api/messages/` appended&mdash;the default port for new bots is 3978.
 
-    For more information, see how to [debug a bot using ngrok](/azure/bot-service/bot-service-debug-channel-ngrok).
+    For more information, see how to [debug a bot using ngrok](../bot-service-debug-channel-ngrok.md).
 
 1. Create an Azure Bot resource in the Azure portal or with the Azure CLI. Set the bot's messaging endpoint to the one you created with ngrok. After the bot resource is created, obtain the bot's Microsoft app ID and password. Enable the Direct Line channel, and retrieve a Direct Line secret. You'll add these to your bot code and C# function.
 
@@ -144,7 +142,7 @@ For more information, see [create a storage account](/azure/storage/common/stora
 ## Create the bot
 
 1. Start with a copy of the C# [Multi-Turn-Prompt](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/05.multi-turn-prompt) sample.
-1. Add the **Azure.Storage.Queues** NuGet package to your project. <!--For more information, see [How to Use Queues](/azure/storage/queues/storage-dotnet-how-to-use-queues).-->
+1. Add the **Azure.Storage.Queues** NuGet package to your project.
 1. Add the connection string for the Azure Storage account you created earlier, and the Storage Queue Name, to your bot's configuration file.
 
     Ensure the queue name is the same as the one you used to create the Queue Trigger Function earlier. Also add the values for the `MicrosoftAppId` and `MicrosoftAppPassword` properties that you generated earlier when you created the Azure Bot resource.
@@ -483,9 +481,13 @@ public void ConfigureServices(IServiceCollection services)
 
 1. If you haven't done so already, install the [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md).
 1. Run the sample locally on your machine.
-1. Start the Emulator, connect to your bot, and send messages as shown below.
+1. Start the Emulator and connect to your bot.
+1. Choose a long operation to start.
+    - The bot sends a _one moment, please_ message and queues the Azure function.
+    - If the user tries to interact with the bot before the operation completes, the bot replies with a _still working_ message.
+    - Once the operation completes, the bot sends a proactive message to the user to let them know it finished.
 
-    ![Bot Example](./media/how-to-long-operations/long-operations-bot-example.png)
+:::image type="content" source="./media/how-to-long-operations/long-operations-bot-example.png" alt-text="Sample transcript with the user initiating a long operation and eventually receiving a proactive message that the operation completed.":::
 
 ## Additional information
 
@@ -495,9 +497,7 @@ public void ConfigureServices(IServiceCollection services)
 | Azure portal | [Manage a bot](../bot-service-manage-overview.md)<br/>[Connect a bot to Direct Line](../bot-service-channel-connect-directline.md) |
 | Azure Storage | [Azure Queue Storage](/azure/storage/queues/storage-queues-introduction)<br/>[Create a storage account](/azure/storage/common/storage-account-create)<br/>[Copy your credentials from the Azure portal](/azure/storage/queues/storage-dotnet-how-to-use-queues?tabs=dotnet#copy-your-credentials-from-the-azure-portal)<br/>[How to Use Queues](/azure/storage/queues/storage-dotnet-how-to-use-queues) |
 | Bot basics | [How bots work][concept-basics]<br/>[Prompts in waterfall dialogs](bot-builder-concept-waterfall-dialogs.md#prompts)<br/>[Proactive messaging](bot-builder-howto-proactive-message.md) |
-| ngrok | [Debug a bot using ngrok](/azure/bot-service/bot-service-debug-channel-ngrok) |
-
-<!-- Footnote-style links -->
+| ngrok | [Debug a bot using ngrok](../bot-service-debug-channel-ngrok.md) |
 
 [concept-basics]: bot-builder-basics.md
 [concept-dialogs]: bot-builder-concept-dialog.md

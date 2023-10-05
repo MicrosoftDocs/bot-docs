@@ -1,5 +1,5 @@
 ---
-title: Create your own prompts to gather user input in Bot Framework SDK
+title: Create your own prompts to gather user input
 description: Learn how to manage a conversation flow with primitive prompts in the Bot Framework SDK.
 keywords: conversation flow, prompts, conversation state, user state, custom prompts
 author: JonathanFingold
@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/18/2021
+ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -21,9 +21,11 @@ A conversation between a bot and a user often involves asking (prompting) the us
 > [!TIP]
 > The dialogs library provides built-in prompts that provide more functionality that users can use. Examples of those prompts can be found in the [Implement sequential conversation flow](bot-builder-dialog-manage-conversation-flow.md) article.
 
+[!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
+
 ## Prerequisites
 
-- The code in this article is based on the Prompt Users for Input sample. You'll need a copy of either the **[C# sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/44.prompt-users-for-input), [JavaScript sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/44.prompt-for-user-input), [Java sample](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/44.prompt-users-for-input), or [Python sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/44.prompt-for-user-input)**.
+- The code in this article is based on the Prompt Users for Input sample. You'll need a copy of the [C# sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/44.prompt-users-for-input), [JavaScript sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/44.prompt-for-user-input), [Java sample](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/44.prompt-users-for-input), or [Python sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/44.prompt-for-user-input).
 - Knowledge of [managing state](bot-builder-concept-state.md) and how to [save user and conversation data](bot-builder-howto-v4-state.md).
 
 ## About the sample code
@@ -32,7 +34,7 @@ The sample bot asks the user a series of questions, validates some of their answ
 
 ## [C#](#tab/csharp)
 
-![custom-prompts in C#](media/CustomPromptBotSample-Overview.png)
+:::image type="content" source="media/CustomPromptBotSample-Overview.png" alt-text="Class diagram for the C# sample.":::
 
 - A `UserProfile` class for the user information that the bot will collect.
 - A `ConversationFlow` class to control our conversation state while gathering user information.
@@ -40,7 +42,7 @@ The sample bot asks the user a series of questions, validates some of their answ
 
 ## [JavaScript](#tab/javascript)
 
-![custom-prompts in JavaScript](media/CustomPromptBotSample-JS-Overview.png)
+:::image type="content" source="media/CustomPromptBotSample-JS-Overview.png" alt-text="Class diagram for the JavaScript sample.":::
 
 - A `userProfile` class for the user information that the bot will collect.
 - A `conversationFlow` class to control our conversation state while gathering user information.
@@ -48,7 +50,7 @@ The sample bot asks the user a series of questions, validates some of their answ
 
 ## [Java](#tab/java)
 
-![custom-prompts in Java](media/CustomPromptBotSample-Overview.png)
+:::image type="content" source="media/CustomPromptBotSample-Overview.png" alt-text="Class diagram for the Java sample.":::
 
 - A `UserProfile` class for the user information that the bot will collect.
 - A `ConversationFlow` class to control our conversation state while gathering user information.
@@ -56,7 +58,7 @@ The sample bot asks the user a series of questions, validates some of their answ
 
 ## [Python](#tab/python)
 
-![custom-promptsin Python](media/CustomPromptBotSample-Python-Overview.png)
+:::image type="content" source="media/CustomPromptBotSample-Python-Overview.png" alt-text="Class diagram for the Python sample.":::
 
 - A `UserProfile` class for the user information that the bot will collect.
 - A `ConversationFlow` class to control our conversation state while gathering user information.
@@ -64,8 +66,8 @@ The sample bot asks the user a series of questions, validates some of their answ
 
 ---
 
-The user state will track the user's name, age, and chosen date, and conversation state will track what you've just asked the user.
-Since you don't plan to deploy this bot, you'll configure both user and conversation state to use _memory storage_.
+The user state will track the user's name, age, and chosen date, and conversation state will track what you last asked the user.
+Since you don't plan to deploy this bot, you'll configure user and conversation state to use _memory storage_.
 
 You use the bot's message turn handler plus user and conversation state properties to manage the flow of the conversation and the collection of input. In your bot, you'll record the state property information received during each iteration of the message turn handler.
 
@@ -233,9 +235,8 @@ The bot uses the following criteria to validate input.
   It's normalized by returning just the date portion of the parsed input.
 
 > [!NOTE]
-> For the age and date input, you use the [Microsoft/Recognizers-Text](https://github.com/Microsoft/Recognizers-Text/) libraries to perform the initial parsing.
-> While you provide sample code, you do not explain how the text recognizers libraries work, and this is just one way to parse the input.
-> For more information about these libraries, see the repository's `README`.
+> For the age and date input, the sample uses the [Microsoft/Recognizers-Text](https://github.com/Microsoft/Recognizers-Text/) libraries to perform the initial parsing.
+> This is just one way to parse the input. For more information about these libraries, see the project's [README](https://github.com/Microsoft/Recognizers-Text#readme).
 
 ## [C#](#tab/csharp)
 
@@ -264,9 +265,7 @@ The bot uses the following criteria to validate input.
 Download and install the [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md) to test the bot locally.
 
 1. Run the sample locally on your machine. If you need instructions, refer to the `README` file for [C# sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/44.prompt-users-for-input), [JS sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/44.prompt-for-user-input), or the [Python sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/44.prompt-for-user-input).
-1. Test it using the Emulator as shown below.
-
-![Sample interaction in the Emulator](media/primitive-prompts.png)
+1. Test it using the Emulator.
 
 ## Additional resources
 

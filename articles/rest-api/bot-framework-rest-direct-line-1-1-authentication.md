@@ -13,7 +13,7 @@ ms.date: 11/01/2021
 # Authentication in Direct Line API 1.1
 
 > [!IMPORTANT]
-> This article describes authentication in Direct Line API 1.1. If you are creating a new connection between your client application and bot, use [Direct Line API 3.0](bot-framework-rest-direct-line-3-0-authentication.md) instead.
+> This article describes authentication in Direct Line API 1.1. If you're creating a new connection between your client application and bot, use [Direct Line API 3.0](bot-framework-rest-direct-line-3-0-authentication.md) instead.
 
 A client can authenticate requests to Direct Line API 1.1 either by using a *secret* that you [obtain from the Direct Line channel configuration page](../bot-service-channel-connect-directline.md) in the Bot Framework Portal or by using a *token* that you obtain at runtime.
 
@@ -33,7 +33,7 @@ Authorization: BotConnector SECRET_OR_TOKEN
 
 ## Secrets and tokens
 
-A Direct Line *secret* is a master key that can be used to access any conversation that belongs to the associated bot. A *secret* can also be used to obtain a *token*. Secrets do not expire.
+A Direct Line *secret* is a master key that can be used to access any conversation that belongs to the associated bot. A *secret* can also be used to obtain a *token*. Secrets don't expire.
 
 A Direct Line *token* is a key that can be used to access a single conversation. A token expires but can be refreshed.
 
@@ -44,15 +44,15 @@ If you're creating a service-to-service application, specifying the *secret* in 
 
 ## Get a Direct Line secret
 
-You can [obtain a Direct Line secret](../bot-service-channel-connect-directline.md) via the Direct Line channel configuration page for your bot in the [Azure Portal](https://portal.azure.com):
+You can [obtain a Direct Line secret](../bot-service-channel-connect-directline.md) via the Direct Line channel configuration page for your bot in the [Azure portal](https://portal.azure.com):
 
-![Direct Line configuration](../media/direct-line-configure.png)
+:::image type="content" source="../media/direct-line-configure.png" alt-text="Screenshot of configuration settings for a Direct Line site.":::
 
 <a id="generate-token"></a>
 
 ## Generate a Direct Line token
 
-To generate a Direct Line token that can be used to access a single conversation, first obtain the Direct Line secret from the Direct Line channel configuration page in the [Azure Portal](https://portal.azure.com). Then issue this request to exchange your Direct Line secret for a Direct Line token:
+To generate a Direct Line token that can be used to access a single conversation, first obtain the Direct Line secret from the Direct Line channel configuration page in the [Azure portal](https://portal.azure.com). Then issue this request to exchange your Direct Line secret for a Direct Line token:
 
 ```http
 POST https://directline.botframework.com/api/tokens/conversation
@@ -83,7 +83,7 @@ HTTP/1.1 200 OK
 
 ### Generate Token versus Start Conversation
 
-The Generate Token operation (`POST /api/tokens/conversation`) is similar to the [Start Conversation](bot-framework-rest-direct-line-1-1-start-conversation.md) operation (`POST /api/conversations`) in that both operations return a `token` that can be used to access a single conversation. However, unlike the Start Conversation operation, the Generate Token operation does not start the conversation or contact the bot.
+The Generate Token operation (`POST /api/tokens/conversation`) is similar to the [Start Conversation](bot-framework-rest-direct-line-1-1-start-conversation.md) operation (`POST /api/conversations`) in that both operations return a `token` that can be used to access a single conversation. However, unlike the Start Conversation operation, the Generate Token operation doesn't start the conversation or contact the bot.
 
 If you plan to distribute the token to clients and want them to initiate the conversation, use the Generate Token operation. If you intend to start the conversation immediately, use the [Start Conversation](bot-framework-rest-direct-line-1-1-start-conversation.md) operation instead.
 
@@ -91,7 +91,7 @@ If you plan to distribute the token to clients and want them to initiate the con
 
 ## Refresh a Direct Line token
 
-A Direct Line token is valid for 30 minutes from the time it is generated and can be refreshed an unlimited amount of times, as long as it has not expired. An expired token cannot be refreshed. To refresh a Direct Line token, issue this request:
+A Direct Line token is valid for 30 minutes from the time it's generated and can be refreshed an unlimited number of times, as long as it hasn't expired. An expired token can't be refreshed. To refresh a Direct Line token, issue this request:
 
 ```http
 POST https://directline.botframework.com/api/tokens/{conversationId}/renew

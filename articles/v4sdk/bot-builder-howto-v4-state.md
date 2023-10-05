@@ -1,14 +1,13 @@
 ---
-title: Save user and conversation data in the Bot Framework SDK
+title: Save user and conversation data
 description: Learn how the Bot Framework SDK manages user and conversation data (state). See how to set up storage for this data, read it, and write it. 
-keywords: conversation state, user state, conversation, saving state, managing bot state
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/08/2021
+ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -18,10 +17,17 @@ monikerRange: 'azure-bot-service-4.0'
 
 A bot is inherently stateless. Once your bot is deployed, it may not run in the same process or on the same machine from one turn to the next. However, your bot may need to track the context of a conversation so that it can manage its behavior and remember answers to previous questions. The state and storage features of the Bot Framework SDK allow you to add state to your bot. Bots use state management and storage objects to manage and persist state. The state manager provides an abstraction layer that lets you access state properties using property accessors, independent of the type of underlying storage.
 
+[!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
+
 ## Prerequisites
 
 - Knowledge of [bot basics](bot-builder-basics.md) and how bots [manage state](bot-builder-concept-state.md) is required.
-- The code in this article is based on the **State Management Bot sample**. You'll need a copy of the sample in either [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/45.state-management), [JavaScript](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/45.state-management), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/45.state-management) or [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/45.state-management).
+- The code in this article is based on the **State Management Bot sample**. You'll need a copy of the sample in either [C#][cs-sample], [JavaScript][js-sample], [Java][java-sample], or [Python][py-sample].
+
+[cs-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/45.state-management
+[js-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/45.state-management
+[java-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/45.state-management
+[py-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/45.state-management
 
 ## About this sample
 
@@ -29,19 +35,19 @@ Upon receiving user input, this sample checks the stored conversation state to s
 
 ## [C#](#tab/csharp)
 
-![C# state bot sample](media/StateBotSample-Overview.png)
+:::image type="content" source="media/StateBotSample-Overview.png" alt-text="Class diagram outlining the structure of the C# sample.":::
 
 ## [JavaScript](#tab/javascript)
 
-![JavaScript state bot sample](media/StateBotSample-JS-Overview.png)
+:::image type="content" source="media/StateBotSample-JS-Overview.png" alt-text="Class diagram outlining the structure of the JavaScript sample.":::
 
 ## [Java](#tab/java)
 
-![Java state bot sample](media/StateBotSample-Overview.png)
+:::image type="content" source="media/StateBotSample-Overview.png" alt-text="Class diagram outlining the structure of the Java sample.":::
 
 ## [Python](#tab/python)
 
-![Python state bot sample](media/StateBotSample-Python-Overview.png)
+:::image type="content" source="media/StateBotSample-Python-Overview.png" alt-text="Class diagram outlining the structure of the Python sample.":::
 
 ---
 
@@ -58,11 +64,11 @@ The following code examples show the definitions for the `UserProfile` and `Conv
 
 **UserProfile.cs**
 
-[!code-csharp[UserProfile](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/UserProfile.cs?range=7-11)]
+[!code-csharp[UserProfile class](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/UserProfile.cs?range=7-10)]
 
 **ConversationData.cs**
 
-[!code-csharp[ConversationData](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/ConversationData.cs?range=6-17)]
+[!code-csharp[ConversationData class](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/ConversationData.cs?range=7-17)]
 
 ## [JavaScript](#tab/javascript)
 
@@ -79,18 +85,18 @@ The following code examples show the definitions for the `UserProfile` and `Conv
 
 **UserProfile.java**
 
-[!code-java[UserProfile](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/UserProfile.java?range=18-28)]
+[!code-java[UserProfile class](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/UserProfile.java?range=18-28)]
 
 **ConversationData.java**
 
-[!code-java[ConversationData](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/ConversationData.java?range=18-46)]
+[!code-java[ConversationData class](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/ConversationData.java?range=18-46)]
 
 ## [Python](#tab/python)
 
 The first step in setting up state management is to define the classes containing the information to manage in the user and conversation state. The example used in this article, defines the following classes:
 
-- The **user_profile.py** contains the `UserProfile` class which stores the user information collected by the bot.
-- The **conversation_data.py** contains the `ConversationData` class which controls the conversation state while gathering user information.
+- The **user_profile.py** contains the `UserProfile` class that stores the user information collected by the bot.
+- The **conversation_data.py** contains the `ConversationData` class that controls the conversation state while gathering user information.
 
 The following code examples show the definitions for the `UserProfile` and `ConversationData` classes.
 
@@ -112,8 +118,7 @@ Next, you register `MemoryStorage` that is used to create `UserState` and `Conve
 
 **Startup.cs**
 
-[!code-csharp[ConfigureServices](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/Startup.cs?range=24-27)]
-[!code-csharp[ConfigureServices](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/Startup.cs?range=49-55)]
+[!code-csharp[MemoryStorage, UserState, and ConversationState definitions](~/../BotBuilder-Samples/samples/csharp_dotnetcore/45.state-management/Startup.cs?range=34-35,55-61)]
 
 **Bots/StateManagementBot.cs**
 
@@ -125,12 +130,11 @@ Next, you register `MemoryStorage` that is then used to create `UserState` and `
 
 **index.js**
 
-[!code-javascript[index.js](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/index.js?range=49-55)]
+[!code-javascript[MemoryStorage, UserState, ConversationState, and bot objects](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/index.js?range=43-50)]
 
 **bots/stateManagementBot.js**
 
-[!code-javascript[bot constructor](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/bots/stateManagementBot.js?range=10-12)]
-[!code-javascript[bot constructor](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/bots/stateManagementBot.js?range=17-19)]
+[!code-javascript[state properties and constructor](~/../BotBuilder-Samples/samples/javascript_nodejs/45.state-management/bots/stateManagementBot.js?range=7-19)]
 
 ## [Java](#tab/java)
 
@@ -138,11 +142,7 @@ Next, you register the `StateManagementBot` in Application.java. Both Conversati
 
 **Application.java**
 
-[!code-java[OverrideStartup](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/Application.java?range=51-57)]
-
-**StateManagementBot.java**
-
-[!code-java[Bot constructor](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/StateManagementBot.java?range=41-45)]
+[!code-java[getBot method](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/Application.java?range=54-60)]
 
 ## [Python](#tab/python)
 
@@ -150,11 +150,11 @@ Next, you register `MemoryStorage` that is used to create `UserState` and `Conve
 
 **app.py**
 
-[!code-python[app.py](~/../botbuilder-samples/samples/python/45.state-management/app.py?range=68-71)]
+[!code-python[MemoryStorage, UserState, ConversationState, and bot objects](~/../botbuilder-samples/samples/python/45.state-management/app.py?range=68-74)]
 
 **bots/state_management_bot.py**
 
-[!code-python[bot constructor](~/../botbuilder-samples/samples/python/45.state-management/bots/state_management_bot.py?range=13-25)]
+[!code-python[bot constructor](~/../botbuilder-samples/samples/python/45.state-management/bots/state_management_bot.py?range=14-30)]
 
 ---
 
@@ -178,11 +178,11 @@ Now you create property accessors for `UserState` and `ConversationState`. Each 
 
 ## [Java](#tab/java)
 
-Now you create property accessors using the `CreateProperty` method. Each state property accessor allows you to get or set the value of the associated state property. Before you use the state properties, use each accessor to load the property from storage and get it from the state cache. To get the properly scoped key associated with the state property, you call the `get` method.
+Now you create property accessors using the `createProperty` method. Each state property accessor allows you to get or set the value of the associated state property. Before you use the state properties, use each accessor to load the property from storage and get it from the state cache. To get the properly scoped key associated with the state property, you call the `get` method.
 
 **StateManagementBot.java**
 
-[!code-java[Create accessors](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/StateManagementBot.java?range=100-109)]
+[!code-java[Create property accessors](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/StateManagementBot.java?range=105-108)]
 
 ## [Python](#tab/python)
 
@@ -200,9 +200,9 @@ The preceding section covers the initialization-time steps to add state property
 
 ## [C#](#tab/csharp)
 
-- If userProfile.Name is empty and conversationData.PromptedUserForName is _true_, you retrieve the user name provided and store this within user state.
-- If userProfile.Name is empty and conversationData.PromptedUserForName is _false_, you ask for the user's name.
-- If userProfile.Name was previously stored, you retrieve message time and channel ID from the user input, echo all data back to the user, and store the retrieved data within conversation state.
+- If `userProfile.Name` is empty and `conversationData.PromptedUserForName` is _true_, you retrieve the user name provided and store this within user state.
+- If `userProfile.Name` is empty and `conversationData.PromptedUserForName` is _false_, you ask for the user's name.
+- If `userProfile.Name` was previously stored, you retrieve message time and channel ID from the user input, echo all data back to the user, and store the retrieved data within conversation state.
 
 **Bots/StateManagementBot.cs**
 
@@ -216,9 +216,9 @@ Before you exit the turn handler, you use the state management objects' _SaveCha
 
 ## [JavaScript](#tab/javascript)
 
-- If userProfile.Name is empty and conversationData.PromptedUserForName is _true_, you retrieve the user name provided and store this within user state.
-- If userProfile.Name is empty and conversationData.PromptedUserForName is _false_, you ask for the user's name.
-- If userProfile.Name was previously stored, you retrieve message time and channel ID from the user input, echo all data back to the user, and store the retrieved data within conversation state.
+- If `userProfile.Name` is empty and `conversationData.PromptedUserForName` is _true_, you retrieve the user name provided and store this within user state.
+- If `userProfile.Name` is empty and `conversationData.PromptedUserForName` is _false_, you ask for the user's name.
+- If `userProfile.Name` was previously stored, you retrieve message time and channel ID from the user input, echo all data back to the user, and store the retrieved data within conversation state.
 
 **bots/stateManagementBot.js**
 
@@ -232,60 +232,59 @@ Before you exit each dialog turn, you use the state management objects' _saveCha
 
 ## [Java](#tab/java)
 
-- If userProfile.getName() is empty and conversationData.getPromptedUserForName() is _true_, you retrieve the user name provided and store this within user state.
-- If userProfile.getName() is empty and conversationData.getPromptedUserForName() is _false_, you ask for the user's name.
-- If userProfile.getName() was previously stored, you retrieve message time and channel ID from the user input, echo all data back to the user, and store the retrieved data within conversation state.
+- If `userProfile.getName()` is empty and `conversationData.getPromptedUserForName()` is _true_, you retrieve the user name provided and store this within user state.
+- If `userProfile.getName()` is empty and `conversationData.getPromptedUserForName()` is _false_, you ask for the user's name.
+- If `userProfile.getName()` was previously stored, you retrieve message time and channel ID from the user input, echo all data back to the user, and store the retrieved data within conversation state.
 
 **StateManagementBot.java**
 
-[!code-java[onMessageActivity](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/StateManagementBot.java?range=98-165)]
+[!code-java[onMessageActivity method](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/StateManagementBot.java?range=102-168)]
 
 Before you exit the turn handler, you use the state management objects' _saveChanges()_ method to write all state changes back to storage.
 
 **StateManagementBot.java**
 
-[!code-java[onTurn](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/StateManagementBot.java?range=55-60)]
+[!code-java[onTurn method](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/StateManagementBot.java?range=58-64)]
 
 ## [Python](#tab/python)
 
-- If `user_profile.name` is empty and `conversation_data.prompted_for_user_name` is *true*, the bot retrieves the name provided by the user and stores it in the user's state.
-- If `user_profile.name` is empty and `conversation_data.prompted_for_user_name` is *false*,the bot asks for the user's name.
+- If `user_profile.name` is empty and `conversation_data.prompted_for_user_name` is _true_, the bot retrieves the name provided by the user and stores it in the user's state.
+- If `user_profile.name` is empty and `conversation_data.prompted_for_user_name` is _false_, the bot asks for the user's name.
 - If `user_profile.name` was previously stored, the bot retrieves message time and channel ID from the user input, echoes the data back to the user, and stores the retrieved data in the conversation state.
 
 **bots/state_management_bot.py**
 
-[!code-python[state_message_activity](~/../botbuilder-samples/samples/python/45.state-management/bots/state_management_bot.py?range=47-89)]
+[!code-python[on_message_activity](~/../botbuilder-samples/samples/python/45.state-management/bots/state_management_bot.py?range=47-89)]
 
-Before exiting each dialog turn, the bot uses the state management objects' `save_changes` method to persist all changes by writing state information in the storage.
+Before each dialog turn ends, the bot uses the state management objects' `save_changes` method to persist all changes by writing state information in the storage.
 
 **bots/state_management_bot.py**
 
-[!code-python[state_storage](~/../botbuilder-samples/samples/python/45.state-management/bots/state_management_bot.py?range=32-36)]
+[!code-python[on_turn](~/../botbuilder-samples/samples/python/45.state-management/bots/state_management_bot.py?range=32-36)]
 
 ---
 
-## Test the bot
+## Test your bot
 
-Download and install the latest [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md)
+1. Download and install the latest [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md)
+1. Run the sample locally on your machine.
+   If you need instructions, refer to the README for [C#][cs-sample], [JavaScript][js-sample], [Java][java-sample], or [Python][py-sample].
+1. Use the Emulator to test your sample bot.
 
-1. Run the sample locally on your machine. If you need instructions, refer to the `README` file for [C# Sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/45.state-management) or [JS Sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/45.state-management).
-1. Use the Emulator to test the bot as shown below.
+## Additional information
 
-![test state bot sample](media/state-bot-testing-emulator.png)
+This article described how you can add state to your bot. See the following table for more information about related topics.
 
-## Additional resources
-
-**Privacy:** If you intend to store user's personal data, you should ensure compliance with [General Data Protection Regulation](https://blog.botframework.com/2018/04/23/general-data-protection-regulation-gdpr).
-
-**State management:** All of the state management calls are asynchronous, and last-writer-wins by default. In practice, you should get, set, and save state as close together in your bot as possible.
-
-**Critical business data:** Use bot state to store preferences, user name, or the last thing they ordered, but do not use it to store critical business data. For critical data, [create your own storage components](bot-builder-custom-storage.md) or write directly to [storage](bot-builder-howto-v4-storage.md).
-
-**Recognizer-Text:** The sample uses the Microsoft/Recognizers-Text libraries to parse and validate user input. For more information, see the [overview](https://github.com/Microsoft/Recognizers-Text#microsoft-recognizers-text-overview) page.
+| Topic | Notes |
+|:-|:-|
+| Privacy | If you intend to store user's personal data, you should ensure compliance with [General Data Protection Regulation](https://blog.botframework.com/2018/04/23/general-data-protection-regulation-gdpr). |
+| State management | All of the state management calls are asynchronous, and last-writer-wins by default. In practice, you should get, set, and save state as close together in your bot as possible. For a discussion of how to implement optimistic locking, see [Implement custom storage for your bot](bot-builder-custom-storage.md). |
+| Critical business data | Use bot state to store preferences, user name, or the last thing they ordered, but don't use it to store critical business data. For critical data, [create your own storage components](bot-builder-custom-storage.md) or write directly to [storage](bot-builder-howto-v4-storage.md). |
+| Recognizer-Text | The sample uses the Microsoft/Recognizers-Text libraries to parse and validate user input. For more information, see the [overview](https://github.com/Microsoft/Recognizers-Text#microsoft-recognizers-text-overview) page. |
 
 ## Next steps
 
-Now that you know how to configure state to help you read and write bot data to storage, let's learn how ask the user a series of questions, validate their answers, and save their input.
+Learn how to ask the user a series of questions, validate their answers, and save their input.
 
 > [!div class="nextstepaction"]
 > [Create your own prompts to gather user input](bot-builder-primitive-prompts.md).

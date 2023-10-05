@@ -3,15 +3,17 @@ title: Configure network isolation
 description: Learn how to configure your bot in a virtual network to restrict user access to your bot.
 displayName: private network, isolated network
 author: JonathanFingold
-ms.author: iawilt
-manager: shellyha
-ms.reviewer: mainguy
+ms.author: v-bondkendal
+manager: iawilt
+ms.reviewer: yiba
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 07/01/2022
 ---
 
 # Configure network isolation
+
+**Commencing September 1, 2023, it is strongly advised to employ the [Azure Service Tag](/azure/virtual-network/service-tags-overview#available-service-tags) method for network isolation. The utilization of DL-ASE should be limited to highly specific scenarios. Prior to implementing this solution in a production environment, we kindly recommend consulting your support team for guidance.**
 
 You can add network isolation to an existing Direct Line App Service extension bot.
 A private endpoint lets your network isolated bot communicate with required Bot Framework services so that the bot can run correctly while being limited to the virtual network.
@@ -44,7 +46,7 @@ To confirm that your existing bot is configured correctly:
 
     - **v** shows the build version of the Direct Line App Service extension.
     - **k** indicates whether the extension was able to read an extension key from its configuration.
-    - **initialized** indicates whether the extension was able to download bot metadata from Azure Bot Service.
+    - **initialized** indicates whether the extension was able to download bot metadata from Azure AI Bot Service.
     - **ib** indicates whether the extension was able to establish an inbound connection to the bot.
     - **ob** indicates whether the extension was able to establish an outbound connection from the bot.
 
@@ -71,7 +73,7 @@ To confirm that your existing bot is configured correctly:
 
 ### Verify that connectivity is broken
 
-1. In a separate browser tab, open the Direct Line client endpoint for your bot. For example, `https://<your-app_service>.azurewebsites..net/.bot`.
+1. In a separate browser tab, open the Direct Line client endpoint for your bot. For example, `https://<your-app_service>.azurewebsites.net/.bot`.
 1. Verify the page displays the following:
 
     ```json
@@ -96,13 +98,13 @@ To confirm that your existing bot is configured correctly:
 1. Under **Settings**, select **Configuration**.
     1. On the **Application settings** tab, select **New application setting**.
         1. Set **Name** to `DirectLineExtensionABSEndpoint`.
-        1. Set **Value** to the private endpoint URL, for example, `https://<your_azure_bot>.botplinks.botframework.com/v3/extension`.
+        1. Set **Value** to the private endpoint URL, for example, `https://<your_azure_bot>.privatelink.directline.botframework.com/v3/extension`.
         1. Save the new setting.
 
 ## Restart your app service and verify that connectivity is restored
 
 1. Restart the app service for your bot.
-1. In a separate browser tab, open the Direct Line client endpoint for your bot. For example, `https://<your-app_service>.azurewebsites..net/.bot`.
+1. In a separate browser tab, open the Direct Line client endpoint for your bot. For example, `https://<your-app_service>.azurewebsites.net/.bot`.
 1. Verify the page displays the following:
 
     ```json
@@ -113,7 +115,7 @@ To confirm that your existing bot is configured correctly:
 
 1. Use the Web Chat control connected to your bot's Direct Line client to interact with your bot inside the private network.
 
-If your private endpoint doesn't work correctly, you can add a rule to allow outbound traffic specifically to Azure Bot Service.
+If your private endpoint doesn't work correctly, you can add a rule to allow outbound traffic specifically to Azure AI Bot Service.
 
 > [!NOTE]
 > This will make you virtual network a little less isolated.
@@ -125,6 +127,11 @@ If your private endpoint doesn't work correctly, you can add a rule to allow out
 1. Restart your app service.
 
 ## Disable public network access to your bot
+
+You can block public access to your Azure AI Bot Service and only allow access through Private Endpoint. You can disable network access of Azure AI Bot Service in Azure portal.
+
+> [!TIP]
+> This will unconfigure the Teams channels. No other channels (except Direct Line) can be configurated or updated in Azure portal.
 
 1. Go to [Azure portal](https://portal.azure.com).
 1. Open the app service for your bot.

@@ -15,7 +15,7 @@ ms.date: 09/27/2021
 The **endOfConversation** [activity](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md) means the channel or bot has ended the conversation.
 
 > [!NOTE]
-> The **endOfConversation** event is sent by very few channels, and few channels accept it. Some channels, including Direct Line, do not implement this functionality and instead drop or forward the activity on; each channel determines how to react to an endOfConversation activity.
+> The **endOfConversation** event is sent by very few channels, and few channels accept it. Some channels, including Direct Line, don't implement this functionality and instead drop or forward the activity on; each channel determines how to react to an endOfConversation activity.
 
 ## Send an endOfConversation activity
 

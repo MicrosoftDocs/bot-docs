@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: Daniel.Evans
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 03/30/2022
+ms.date: 11/15/2022
 ---
 
 # Connect a bot to Direct Line
@@ -40,9 +40,11 @@ Alternatively, you can add a new site instead of using the default site. Select 
 
 When you add the Direct Channel, the Bot Framework generates secret keys. Your client application uses these keys to authenticate the Direct Line API requests that it issues to communicate with a bot. For more information, see [Authentication](rest-api/bot-framework-rest-direct-line-3-0-authentication.md).
 
-1. To view an **App Service Extension Key** in plain text, make sure you're on the **Direct Line** channel page. Then select the eye icon next to the corresponding key.
+1. To view a site's Direct Line secret in plain text, go to the **Direct Line** channel page.
+1. Select the **Direct Line** tab, then the site you want to get the key for, such as **Default_Site**. Azure will open a **Configure the site** pane.
+1. Under **Secret keys**, select the eye icon next to the corresponding key.
 
-    :::image type="content" source="media/bot-service-channel-connect-directline/directline-showkey.png" alt-text="Show Direct Line App Service Extension keys":::
+    :::image type="content" source="media/bot-service-channel-connect-directline/directline-showkey.png" alt-text="Show Direct Line keys":::
 
 1. Copy and securely store the key. Use the key to [authenticate](rest-api/bot-framework-rest-direct-line-3-0-authentication.md) the Direct Line API requests that your client application issues to communicate with a bot.
 

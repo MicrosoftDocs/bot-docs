@@ -15,11 +15,11 @@ ms.date: 11/01/2021
 You can enable communication between your bot and your own client application by using the Direct Line API.
 
 > [!IMPORTANT]
-> This article introduces key concepts in Direct Line API 1.1 and provides information about relevant developer resources. If you are creating a new connection between your client application and bot, use [Direct Line API 3.0](bot-framework-rest-direct-line-3-0-concepts.md) instead.
+> This article introduces key concepts in Direct Line API 1.1 and provides information about relevant developer resources. If you're creating a new connection between your client application and bot, use [Direct Line API 3.0](bot-framework-rest-direct-line-3-0-concepts.md) instead.
 
 ## Authentication
 
-Direct Line API 1.1 requests can be authenticated either by using a *secret* that you obtain from the Direct Line channel configuration page in the [Azure Portal](https://portal.azure.com) or by using a *token* that you obtain at runtime.  For more information, see [Authentication](bot-framework-rest-direct-line-1-1-authentication.md).
+Direct Line API 1.1 requests can be authenticated either by using a *secret* that you obtain from the Direct Line channel configuration page in the [Azure portal](https://portal.azure.com) or by using a *token* that you obtain at runtime.  For more information, see [Authentication](bot-framework-rest-direct-line-1-1-authentication.md).
 
 ## Starting a conversation
 

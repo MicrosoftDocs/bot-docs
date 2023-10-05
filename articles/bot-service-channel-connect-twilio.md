@@ -1,21 +1,21 @@
 ---
-title: Connect a bot to Twilio - Bot Service
-description: Learn how to configure bots to use Twilio to communicate with people with a TwiML application or the Twilio adapter.
+title: "Connect a bot to Twilio (SMS)"
+description: Learn how to configure bots to use SMS via Twilio to communicate with people with a TwiML application or the Twilio adapter.
 keywords: Twilio, bot channels, SMS, App, phone, configure Twilio, cloud communication, text
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: mainguy
+ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 03/22/2022
+ms.date: 09/12/2022
 ---
 
-# Connect a bot to Twilio
+# Connect a bot to Twilio (SMS)
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-You can configure your bot to communicate with people using the Twilio cloud communication platform. This article describes how configure a bot to communicate using Twilio by creating a TwiML application and connecting the bot in the Azure portal.
+You can configure your bot to communicate with people using the Twilio (SMS) cloud communication platform. This article describes how to configure a bot to communicate using Twilio by creating a TwiML application and connecting the bot in the Azure portal.
 
 ## Prerequisites
 
@@ -28,7 +28,9 @@ You can configure your bot to communicate with people using the Twilio cloud com
 1. Follow the instructions to [create a TwiML application](https://support.twilio.com/hc/articles/223180928-How-Do-I-Create-a-TwiML-App-).
     - Enter a **Friendly Name** for your TwiML app.
     - Under **Voice Configuration**, leave the **Request URL** empty
-    - Under **Messaging Configuration**, set the **Request URL** to `https://sms.botframework.com/api/sms`.
+    - Under **Messaging Configuration**, set the **Request URL**:
+      - For a global bot, enter `https://sms.botframework.com/api/sms`.
+      - For a regional bot, enter `https://europe.sms.botframework.com/api/sms`.
 
 ### Select or add a phone number
 
@@ -74,7 +76,7 @@ To learn more about developing for Twilio, see the [Twilio SMS documentation](ht
 
 ### Connect a bot to Twilio using the Twilio adapter
 
-In addition to using the available Azure Bot Service channel to connect your bot with Twilio, the [Bot Builder Community repos](https://github.com/BotBuilderCommunity/) define a custom channel adapter for Twilio.
+In addition to using the available Azure AI Bot Service channel to connect your bot with Twilio, the [Bot Builder Community repos](https://github.com/BotBuilderCommunity/) define a custom channel adapter for Twilio.
 
 - For information on the C# adapter, see [the Adapters section in the .NET community repo](https://github.com/BotBuilderCommunity/botbuilder-community-dotnet#adapters).
 - For information on the JavaScript adapter, see [the Adapters section in the JavaScript community repo](https://github.com/BotBuilderCommunity/botbuilder-community-js#adapters).

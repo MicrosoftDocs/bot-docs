@@ -9,16 +9,16 @@ metadata:
   ms.reviewer: micchow
   ms.topic: faq
   ms.service: bot-service
-  ms.date: 09/08/2021
+  ms.date: 10/10/2022
 
 title: Bot Framework FAQ
 summary: |
   [!INCLUDE [applies-to-v4](./includes/applies-to-v4-current.md)]
 
-  <!-- Attention writers!! When you create a new FAQ, please add the related link in the proper section below.
-  Also, notice this topic is in markdown (.md) format because being an index it is simpler to maintain.
+  <!-- Attention writers! When you create a new FAQ, please add the related link in the proper section below.
+  Also, notice this topic is in markdown (.md) format because being an index it's simpler to maintain.
   The actual FAQs are contained in separate files that are in yaml () format. The reasons for the yaml format
-  are explained in this article: Create FAQ content (https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-faq-guide?branch=master).
+  are explained in [Create FAQ content](https://review.learn.microsoft.com/help/contribute/contribute-how-to-faq-guide?branch=main).
   -->
 
   The following are some common questions you might have.
@@ -32,7 +32,7 @@ sections:
         answer: |
           - [Why did Microsoft develop the Bot Framework?](./bot-service-resources-faq-availability.yml#why-did-microsoft-develop-the-bot-framework)
           - [How to run a bot offline?](./bot-service-resources-faq-availability.yml#how-to-run-a-bot-offline)
-          - [How can I migrate Azure Bot Service from one region to another?](./bot-service-resources-faq-availability.yml#how-can-i-migrate-azure-bot-service-from-one-region-to-another)
+          - [How can I migrate Azure AI Bot Service from one region to another?](./bot-service-resources-faq-availability.yml#how-can-i-migrate-azure-ai-bot-service-from-one-region-to-another)
           - [What is the v4 SDK?](./bot-service-resources-faq-availability.yml#what-is-the-v4-sdk)
           - [Bot Framework SDK Version 3 Lifetime Support and Deprecation Notice](./bot-service-resources-faq-availability.yml#bot-framework-sdk-version-3-lifetime-support-and-deprecation-notice)
 
@@ -42,11 +42,8 @@ sections:
           - [Why doesn't the Typing activity do anything?](./bot-service-resources-faq-general.yml#why-doesn-t-the-typing-activity-do-anything)
           - [What is the difference between the Connector library and Builder library in the SDK?](./bot-service-resources-faq-general.yml#what-is-the-difference-between-the-connector-library-and-builder-library-in-the-sdk)
           - [How do user messages relate to HTTPS method calls?](./bot-service-resources-faq-general.yml#how-do-user-messages-relate-to-https-method-calls)
-          - [How can I intercept all messages between the user and my bot?](./bot-service-resources-faq-general.yml#how-can-i-intercept-all-messages-between-the-user-and-my-bot)
-          - [What is the IDialogStack.Forward method in the Bot Framework SDK for .NET?](./bot-service-resources-faq-general.yml#what-is-the-idialogstack-forward-method-in-the-bot-framework-sdk-for--net)
           - [What is the difference between "proactive" and "reactive"?](./bot-service-resources-faq-general.yml#what-is-the-difference-between--proactive--and--reactive-)
           - [How can I send proactive messages to the user?](./bot-service-resources-faq-general.yml#how-can-i-send-proactive-messages-to-the-user)
-          - [How can I reference non-serializable services from my C# dialogs in SDK v3?](./bot-service-resources-faq-general.yml#how-can-i-reference-non-serializable-services-from-my-c--dialogs-in-sdk-v3)
           - [What is an ETag? How does it relate to bot data bag storage?](./bot-service-resources-faq-general.yml#what-is-an-etag---how-does-it-relate-to-bot-data-bag-storage)
           - [What is rate limiting?](./bot-service-resources-faq-general.yml#what-is-rate-limiting)
           - [How does rate limiting occur?](./bot-service-resources-faq-general.yml#how-does-rate-limiting-occur)
@@ -64,7 +61,7 @@ sections:
           - [If I want to create a bot for Microsoft Teams, what tools and services should I use?](./bot-service-resources-faq-ecosystem.yml#if-i-want-to-create-a-bot-for-microsoft-teams--what-tools-and-services-should-i-use)
           - [How do I create a bot that uses the US Government data center?](./bot-service-resources-faq-ecosystem.yml#how-do-i-create-a-bot-that-uses-the-us-government-data-center)
           - [What is the Direct Line channel?](./bot-service-resources-faq-ecosystem.yml#what-is-the-direct-line-channel)
-          - [How does the Bot Framework relate to Cognitive Services?](./bot-service-resources-faq-ecosystem.yml#how-does-the-bot-framework-relate-to-cognitive-services)
+          - [How does the Bot Framework relate to Azure AI services?](./bot-service-resources-faq-ecosystem.yml#how-does-the-bot-framework-relate-to-azure-cognitive-services)
           - [What are the steps to configure Web Chat and Direct Line for Azure Government?](./bot-service-resources-faq-ecosystem.yml#what-are-the-steps-to-configure-web-chat-and-direct-line-for-azure-government)
           - [What are the possible machine-readable resolutions of the LUIS built-in date, time, duration, and set entities?](./bot-service-resources-faq-ecosystem.yml#what-are-the-possible-machine-readable-resolutions-of-the-luis-built-in-date--time--duration--and-set-entities)
           - [How can I use more than the maximum number of LUIS intents?](./bot-service-resources-faq-ecosystem.yml#how-can-i-use-more-than-the-maximum-number-of-luis-intents)
@@ -79,7 +76,7 @@ sections:
           - [How do you ban or remove bots from the service?](./bot-service-resources-faq-security.yml#how-do-you-ban-or-remove-bots-from-the-service)
           - [How does the Bot Framework handle identity and access management?](./bot-service-resources-faq-security.yml#how-does-the-bot-framework-handle-identity-and-access-management)
           - [How do I restrict the use of my bot to users belonging to my tenant only?](./bot-service-resources-faq-security.yml#how-do-i-restrict-the-use-of-my-bot-to-users-belonging-to-my-tenant-only)
-          - [Which specific URLs do I need to allow-list in my corporate firewall to access Bot Framework services?](./bot-service-resources-faq-security.yml#which-specific-urls-do-i-need-to-allow-list-in-my-corporate-firewall-to-access-bot-framework-services)
+          - [Which specific URLs do I need to allowlist in my corporate firewall to access Bot Framework services?](./bot-service-resources-faq-security.yml#which-specific-urls-do-i-need-to-allowlist-in-my-corporate-firewall-to-access-bot-framework-services)
           - [Can I block all traffic to my bot except traffic from the Bot Framework Service?](./bot-service-resources-faq-security.yml#can-i-block-all-traffic-to-my-bot-except-traffic-from-the-bot-framework-service)
           - [Which RBAC role is required to create and deploy a bot?](./bot-service-resources-faq-security.yml#which-rbac-role-is-required-to-create-and-deploy-a-bot)
           - [What keeps my bot secure from clients impersonating the Bot Framework Service?](./bot-service-resources-faq-security.yml#what-keeps-my-bot-secure-from-clients-impersonating-the-bot-framework-service)

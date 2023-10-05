@@ -1,5 +1,5 @@
 ---
-title: Language recognizer reference for Bot Framework bots
+title: Prebuilt recognizers for adaptive dialogs
 description: Adaptive dialogs and language recognizers work together to interpret user intent and to react fluidly to user input. This article describes builtin recognizers in the Bot Framework SDK.
 keywords: bot, recognizers, adaptive dialogs
 author: JonathanFingold
@@ -8,12 +8,12 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: reference
-ms.date: 10/18/2021
+ms.date: 10/11/2022
 ms.custom: abs-meta-21q1
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Language recognizer reference for Bot Framework bots
+# Recognizers in adaptive dialogs
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
@@ -29,6 +29,10 @@ The cross-trained recognizer set compares recognition results from more than one
 * Raise an `OnChooseIntent` event to allow your code to choose which recognition result to use. Each recognizer's results are returned via the `turn.recognized.candidates` property. This enables you to choose the most appropriate result.
 
 ## Default recognizer
+
+[!INCLUDE [qnamaker-sunset-alert](../includes/qnamaker-sunset-alert.md)]
+
+[!INCLUDE [luis-sunset-alert](../includes/luis-sunset-alert.md)]
 
 The default recognizer was created to replace the following recognizers:
 
@@ -46,7 +50,6 @@ Language Understanding (LUIS) is a cloud-based API service that applies custom m
 > * [Add LUIS for language understanding][update-the-recognizer-type-to-luis]
 > * [LUIS.ai][4] is a machine learning-based service that enables you to build natural language capabilities into your bot.
 > * [What is LUIS][5]
-> * [Create a new LUIS app in the LUIS portal][11]
 > * [Language Understanding][6]
 > * [.lu file format][7]
 > * [Adaptive expressions][8]
@@ -69,7 +72,7 @@ For more information, see the [Multilingual support](/composer/how-to-use-multip
 
 ## QnA Maker recognizer
 
-[QnAMaker.ai][12] is one of the [Microsoft Cognitive Services][13] that enables you to create rich question-answer pairs from existing content - documents, URLs, PDFs, and so on. You can use the QnA Maker recognizer to integrate with the service.
+[QnAMaker.ai][12] is one of the [Azure AI services][13] that enables you to create rich question-answer pairs from existing content - documents, URLs, PDFs, and so on. You can use the QnA Maker recognizer to integrate with the service.
 
 > [!NOTE]
 > The QnA Maker recognizer will emit a `QnAMatch` event, which you can handle with an `OnQnAMatch` trigger.
@@ -112,7 +115,7 @@ The Regex recognizer consists primarily of:
 
 > [!TIP]
 >
-> * The Regex recognizer emits a "None" intent when the input utterance does not match any defined intent. You can create an `OnIntent` trigger with `Intent = "None"` to handle this scenario.
+> * The Regex recognizer emits a "None" intent when the input utterance doesn't match any defined intent. You can create an `OnIntent` trigger with `Intent = "None"` to handle this scenario.
 > * The Regex recognizer is useful for testing and quick prototyping. For more sophisticated bots we recommend using the Language Understanding (LUIS) recognizer.
 > * You might find the [Regular expression language quick reference][2] helpful.
 
@@ -131,21 +134,14 @@ The Regex recognizer consists primarily of:
 [2]:/dotnet/standard/base-types/regular-expression-language-quick-reference
 [3]:https://github.com/microsoft/botbuilder/blob/master/specs/botframework-activity/botframework-activity.md#locale
 [4]:https://luis.ai
-[5]:/azure/cognitive-services/luis/what-is-luis
+[5]:/azure/ai-services/luis/what-is-luis
 [6]:../v4sdk/bot-builder-concept-luis.md
 [7]:../file-format/bot-builder-lu-file-format.md
 [8]:../v4sdk/bot-builder-concept-adaptive-expressions.md
-[9]:/azure/cognitive-services/luis/luis-concept-data-extraction?tabs=V2
+[9]:/azure/ai-services/luis/luis-concept-data-extraction?tabs=V2
 [10]:../v4sdk/bot-builder-howto-v4-luis.md
-[11]:/azure/cognitive-services/luis/luis-how-to-start-new-app
 [12]:https://qnamaker.ai
-[13]:https://azure.microsoft.com/services/cognitive-services/
+[13]:https://azure.microsoft.com/products/ai-services/
 [Orchestrator]:/composer/concept-orchestrator
 [15]:https://github.com/microsoft/botframework-cli/tree/main/packages/orchestrator
-[cross-train-concepts]: ../v4sdk/bot-builder-concept-cross-train.md
-[luis-to-luis-cross-training]: ../v4sdk/bot-builder-concept-cross-train.md#luis-to-luis-cross-training
-[qnamaker-cross-train]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-qnamakercross-train
-[bf-luiscross-train]: https://github.com/microsoft/botframework-cli/tree/main/packages/cli#bf-luiscross-train
-[cs-sample-todo-bot]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/adaptive-dialog/08.todo-bot-luis-qnamaker
-[howto-cross-train]: ../v4sdk/bot-builder-howto-cross-train.md
 [update-the-recognizer-type-to-luis]: /composer/how-to-add-luis#update-the-recognizer-type-to-luis

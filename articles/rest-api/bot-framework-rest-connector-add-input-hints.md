@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 02/10/2023
 ---
 
 # Add input hints to messages with the Bot Connector API
@@ -16,12 +16,12 @@ By specifying an input hint for a message, you can indicate whether your bot is 
 
 ## Accepting input
 
-To indicate that your bot is passively ready for input but is not awaiting a response from the user, set the `inputHint` property to **acceptingInput** within the [Activity][] object that represents your message. On many channels, this will cause the client's input box to be enabled and microphone to be closed, but still accessible to the user.
+To indicate that your bot is passively ready for input but isn't awaiting a response from the user, set the `inputHint` property to **acceptingInput** within the [Activity][] object that represents your message. On many channels, this will cause the client's input box to be enabled and microphone to be closed, but still accessible to the user.
 
 The following example shows a request that sends a message and specifies that the bot is accepting input. In this example request, Direct Line represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
 
 ```http
-POST https://smba.trafficmanager.net/apis/v3/conversations/abcd1234/activities/5d5cdc723
+POST https://smba.trafficmanager.net/teams/v3/conversations/abcd1234/activities/5d5cdc723
 Authorization: Bearer ACCESS_TOKEN
 Content-Type: application/json
 ```
@@ -54,7 +54,7 @@ To indicate that your bot is actively awaiting a response from the user, set the
 The following example shows a request that sends a message and specifies that the bot is expecting input. In this example request, Direct Line represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
 
 ```http
-POST https://smba.trafficmanager.net/apis/v3/conversations/abcd1234/activities/5d5cdc723
+POST https://smba.trafficmanager.net/teams/v3/conversations/abcd1234/activities/5d5cdc723
 Authorization: Bearer ACCESS_TOKEN
 Content-Type: application/json
 ```
@@ -82,12 +82,12 @@ Content-Type: application/json
 
 ## Ignoring input
 
-To indicate that your bot is not ready to receive input from the user, set the `inputHint` property to **ignoringInput** within the [Activity][] object that represents your message. On channels that support it, this will cause the client's input box to be disabled and microphone to be closed.
+To indicate that your bot isn't ready to receive input from the user, set the `inputHint` property to **ignoringInput** within the [Activity][] object that represents your message. On channels that support it, this will cause the client's input box to be disabled and microphone to be closed.
 
 The following example shows a request that sends a message and specifies that the bot is ignoring input. In this example request, Direct Line represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
 
 ```http
-POST https://smba.trafficmanager.net/apis/v3/conversations/abcd1234/activities/5d5cdc723
+POST https://smba.trafficmanager.net/teams/v3/conversations/abcd1234/activities/5d5cdc723
 Authorization: Bearer ACCESS_TOKEN
 Content-Type: application/json
 ```

@@ -1,5 +1,5 @@
 ---
-title: API reference - Direct Line API 3.0 - Bot Service
+title: API reference - Direct Line API 3.0
 description: Learn about headers, HTTP status codes, schema, operations, and objects in Direct Line API 3.0. 
 author: JonathanFingold
 ms.author: iawilt
@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: reference
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 02/07/2023
 ---
 
 # API reference - Direct Line API 3.0
@@ -16,9 +16,13 @@ You can enable your client application to communicate with your bot by using Dir
 
 ## Base URI
 
-To access Direct Line API 3.0, use this base URI for all API requests:
+To access Direct Line API 3.0, use one of these base URIs for all API requests:
 
-`https://directline.botframework.com`
+- For global bots, use `https://directline.botframework.com`
+- For regional bots, use `https://europe.directline.botframework.com`
+
+> [!TIP]
+> A request might fail if you use the global base URI for a regional bot, as some requests could go beyond geographical boundaries.
 
 ## Headers
 
@@ -41,9 +45,9 @@ The [HTTP status code](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html) 
 | 202 | The request has been accepted for processing. |
 | 204 | The request succeeded but no content was returned. |
 | 400 | The request was malformed or otherwise incorrect. |
-| 401 | The client is not authorized to make the request. Often this status code occurs because the `Authorization` header is missing or malformed. |
-| 403 | The client is not allowed to perform the requested operation. If the request specified a token that was previously valid but has expired, the `code` property of the [Error][] that is returned within the [ErrorResponse][] object is set to `TokenExpired`. |
-| 404 | The requested resource was not found. Typically this status code indicates an invalid request URI. |
+| 401 | The client isn't authorized to make the request. Often this status code occurs because the `Authorization` header is missing or malformed. |
+| 403 | The client isn't allowed to perform the requested operation. The operation can fail for the following reasons. <ul><li>An invalid token: when the request uses a token that was previously valid but has expired, the `code` property of the [Error][] that is returned within the [ErrorResponse][] object is set to `TokenExpired`.</li><li>A data boundary violation: if your bot is a regional bot, but the Base URI is not regional, some requests may go beyond geographical boundaries.</li><li>An invalid target resource: the target bot or site is invalid or was deleted.</li></ul> |
+| 404 | The requested resource wasn't found. Typically this status code indicates an invalid request URI. |
 | 500 | An internal server error occurred within the Direct Line service. |
 | 502 | The bot is unavailable or returned an error. **This is a common error code.** |
 
@@ -245,11 +249,11 @@ Clients may [receive](bot-framework-rest-direct-line-3-0-receive-activities.md) 
 
 When a client sends an `Activity` to a bot via Direct Line:
 
-- The `type` property specifies the type activity it is sending (typically **message**).
+- The `type` property specifies the type activity it's sending (typically **message**).
 - The `from` property must be populated with a user ID, chosen by the client.
 - Attachments may contain URLs to existing resources or URLs uploaded through the Direct Line attachment endpoint.
 - The `channelData` property is preserved without modification.
-- The total size of the activity, when serialized to JSON and encrypted, must not exceed 256K characters. Therefore it is recommended that activities are kept under 150K. If more data is needed consider breaking the activity into multiple and/or consider using attachments.
+- The total size of the activity, when serialized to JSON and encrypted, must not exceed 256K characters. We recommend that you keep activities under 150K. If more data is needed, consider splitting the activity up or using attachments.
 
 Clients may [send](bot-framework-rest-direct-line-3-0-send-activity.md) a single activity per request.
 

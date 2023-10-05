@@ -12,6 +12,8 @@ ms.date: 03/30/2022
 
 # Create .NET Client to Connect to Direct Line App Service extension
 
+**Commencing September 1, 2023, it is strongly advised to employ the [Azure Service Tag](/azure/virtual-network/service-tags-overview#available-service-tags) method for network isolation. The utilization of DL-ASE should be limited to highly specific scenarios. Prior to implementing this solution in a production environment, we kindly recommend consulting your support team for guidance.**
+
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
 This article describes how to create a .NET client in C# which connects to the Direct Line App Service extension.
@@ -77,7 +79,7 @@ Interactions with the Direct Line App Service extension happen differently than 
     }
     ```
 
-1. Now you are ready to open the WebSocket on the `StreamingConversations` property using the conversation's token, `conversationId`, and your `ReceiveActivities` callback:
+1. Now you're ready to open the WebSocket on the `StreamingConversations` property using the conversation's token, `conversationId`, and your `ReceiveActivities` callback:
 
     ```csharp
     var client = new DirectLineClient(

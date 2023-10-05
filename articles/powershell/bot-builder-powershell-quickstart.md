@@ -1,9 +1,9 @@
 ---
-title: Publish a bot with Azure PowerShell - Azure Bot Service
+title: Publish a bot with Azure PowerShell - Azure AI Bot Service
 description: Learn how to publish a bot with Azure PowerShell.
-author: JonathanFingold
-ms.author: kamrani
-manager: kamrani
+author: iaanw
+ms.author: iawilt
+manager: leeclontz
 ms.topic: how-to
 ms.service: bot-service
 ms.date: 02/23/2021
@@ -25,7 +25,7 @@ You can run these commands locally, using Azure PowerShell, or remotely through 
 > [!IMPORTANT]
 > While the **Az.BotService** PowerShell module is in preview, you must install it separately using the `Install-Module` cmdlet.
 
-Creating a bot with Azure Bot Service and creating a bot locally are independent, parallel ways to create a bot.
+Creating a bot with Azure AI Bot Service and creating a bot locally are independent, parallel ways to create a bot.
 
 ## Prerequisites
 
@@ -33,7 +33,7 @@ Creating a bot with Azure Bot Service and creating a bot locally are independent
   account before you begin.
 
 - An existing Azure AD application registration that can be used from any Azure AD tenant.
-  - To complete this quickstart, you will need the app ID and secret for the application registration.
+  - To complete this quickstart, you'll need the app ID and secret for the application registration.
 
 - [Install the Az PowerShell module](/powershell/azure/install-az-ps). This is required because the Az.BotService module is in preview.
 
@@ -65,7 +65,7 @@ If you have multiple Azure subscriptions, choose the appropriate subscription in
 
 ## Create a resource group
 
-If you do not already have an [Azure resource group](/azure/azure-resource-manager/management/overview) you want to use for your bot, create a new one using the [New-AzResourceGroup](/powershell/module/az.resources/new-azresourcegroup) cmdlet.
+If you don't already have an [Azure resource group](/azure/azure-resource-manager/management/overview) you want to use for your bot, create a new one using the [New-AzResourceGroup](/powershell/module/az.resources/new-azresourcegroup) cmdlet.
 
 - A resource group is a logical container in which Azure resources are deployed and managed as a group.
 
@@ -147,7 +147,7 @@ Remove-AzBotService -Name MyEchoBot -ResourceGroupName myResourceGroup
 
 > [!CAUTION]
 > The following example deletes the specified resource group and all resources contained within it.
-> If resources outside the scope of this article exist in the specified resource group, they will
+> If resources outside the scope of this article exist in the specified resource group, they'll
 > also be deleted.
 
 ```azurepowershell-interactive

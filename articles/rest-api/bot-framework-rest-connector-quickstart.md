@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: quickstart
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 02/10/2023
 ---
 
 # Create a bot with the Bot Connector service with the Bot Connector API
@@ -17,14 +17,14 @@ ms.date: 11/01/2021
 > - [Bot Service Azure resource](../bot-service-quickstart.md)
 > - [REST](../rest-api/bot-framework-rest-connector-quickstart.md)
 
-The Bot Connector service enables your bot to exchange messages with channels that are configured in the [Azure Portal](https://portal.azure.com), by using industry-standard REST and JSON over HTTPS. This tutorial walks you through the process of obtaining an access token from the Bot Framework and using the Bot Connector service to exchange messages with the user.
+The Bot Connector service enables your bot to exchange messages with channels that are configured in the [Azure portal](https://portal.azure.com), by using industry-standard REST and JSON over HTTPS. This tutorial walks you through the process of obtaining an access token from the Bot Framework and using the Bot Connector service to exchange messages with the user.
 
 <a id="get-token"></a>
 
 ## Get an access token
 
 > [!IMPORTANT]
-> If you have not already done so, you must [register your bot](../bot-service-quickstart-registration.md) with the Bot Framework to obtain its App ID and password. You will need the bot's AppID and password to get an access token.
+> If you haven't already done so, you must [register your bot](../bot-service-quickstart-registration.md) with the Bot Framework to obtain its App ID and password. You'll need the bot's AppID and password to get an access token.
 
 To communicate with the Bot Connector service, you must specify an access token in the `Authorization` header of each API request, using this format:
 
@@ -48,7 +48,7 @@ grant_type=client_credentials&client_id=MICROSOFT-APP-ID&client_secret=MICROSOFT
 
 ### Response
 
-If the request succeeds, you will receive an HTTP 200 response that specifies the access token and information about its expiration.
+If the request succeeds, you'll receive an HTTP 200 response that specifies the access token and information about its expiration.
 
 ```json
 {
@@ -75,7 +75,7 @@ When the user sends a message, the Bot Framework Connector POSTs a request to th
     "type": "message",
     "id": "bf3cc9a2f5de...",
     "timestamp": "2016-10-19T20:17:52.2891902Z",
-    "serviceUrl": "https://smba.trafficmanager.net/apis",
+    "serviceUrl": "https://smba.trafficmanager.net/teams",
     "channelId": "channel's name/id",
     "from": {
         "id": "1234abcd",
@@ -95,19 +95,19 @@ When the user sends a message, the Bot Framework Connector POSTs a request to th
 
 ### Reply to the user's message
 
-When your bot's endpoint receives a `POST` request that represents a message from the user (i.e., `type` = **message**), use the information in that request to create the [Activity][] object for your response.
+When your bot's endpoint receives a `POST` request that represents a message from the user (such as, `type` = **message**), use the information in that request to create the [Activity][] object for your response.
 
 1. Set the **conversation** property to the contents of the **conversation** property in the user's message.
-2. Set the **from** property to the contents of the **recipient** property in the user's message.
-3. Set the **recipient** property to the contents of the **from** property in the user's message.
-4. Set the **text** and **attachments** properties as appropriate.
+1. Set the **from** property to the contents of the **recipient** property in the user's message.
+1. Set the **recipient** property to the contents of the **from** property in the user's message.
+1. Set the **text** and **attachments** properties as appropriate.
 
 Use the `serviceUrl` property in the incoming request to [identify the base URI](bot-framework-rest-connector-api-reference.md#base-uri) that your bot should use to issue its response.
 
-To send the response, `POST` your `Activity` object to `/v3/conversations/{conversationId}/activities/{activityId}`, as shown in the following example. The body of this request is an `Activity` object that prompts the user to select an available appointment time.
+To send the response, `POST` your `Activity` object to `/v3/conversations/{conversationId}/activities/{activityId}`, as shown in the following example. The body of this request is an `Activity` object that prompts the user to select an available appointment time. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
 
 ```http
-POST https://smba.trafficmanager.net/apis/v3/conversations/abcd1234/activities/bf3cc9a2f5de... 
+POST https://smba.trafficmanager.net/teams/v3/conversations/abcd1234/activities/bf3cc9a2f5de... 
 Authorization: Bearer eyJhbGciOiJIUzI1Ni...
 Content-Type: application/json
 ```
@@ -132,7 +132,7 @@ Content-Type: application/json
 }
 ```
 
-In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
+In this example request, `https://smba.trafficmanager.net/teams` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
 
 > [!IMPORTANT]
 > As shown in this example, the `Authorization` header of each API request that you send must contain the word **Bearer** followed by the access token that you [obtained from the Bot Framework](#get-token).
@@ -140,7 +140,7 @@ In this example request, `https://smba.trafficmanager.net/apis` represents the b
 To send another message that enables a user to select an available appointment time by clicking a button, `POST` another request to the same endpoint:
 
 ```http
-POST https://smba.trafficmanager.net/apis/v3/conversations/abcd1234/activities/bf3cc9a2f5de... 
+POST https://smba.trafficmanager.net/teams/v3/conversations/abcd1234/activities/bf3cc9a2f5de... 
 Authorization: Bearer eyJhbGciOiJIUzI1Ni...
 Content-Type: application/json
 ```

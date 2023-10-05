@@ -94,7 +94,7 @@ A client may send empty messages to the Direct Line service to verify connectivi
 
 The Direct Line service may forcibly close the WebSocket connection under certain conditions. If the client has not received an `endOfConversation` activity, it may [generate a new WebSocket stream URL](bot-framework-rest-direct-line-3-0-reconnect-to-conversation.md) that it can use to reconnect to the conversation.
 
-The WebSocket stream contains live updates and very recent messages (since the call to connect via WebSocket was issued) but it does not include messages that were sent prior to the most recent `POST` to `/v3/directline/conversations/{id}`. To retrieve messages that were sent earlier in the conversation, use `HTTP GET` as described below.
+The WebSocket stream contains live updates and very recent messages (since the call to connect via WebSocket was issued) but it doesn't include messages that were sent prior to the most recent `POST` to `/v3/directline/conversations/{id}`. To retrieve messages that were sent earlier in the conversation, use `HTTP GET` as described below.
 
 <a id="http-get"></a>
 
@@ -156,17 +156,17 @@ HTTP/1.1 200 OK
 
 Most clients wish to retain a complete message history. Even though Direct Line is a multi-part protocol with potential timing gaps, the protocol and service is designed to make it easy to build a reliable client.
 
-- The `watermark` property that is sent in the WebSocket stream and Get Conversation Activities response is reliable. A client will not miss any messages as long as it replays the watermark verbatim.
+- The `watermark` property that is sent in the WebSocket stream and Get Conversation Activities response is reliable. A client won't miss any messages as long as it replays the watermark verbatim.
 
 - When a client starts a conversation and connects to the WebSocket stream, any activities that are sent after the POST but before the socket is opened are replayed before new activities.
 
-- When a client issues a Get Conversation Activities request (to refresh history) while it is connected to the WebSocket stream, activities may be duplicated across both channels. Clients should keep track of all known activity IDs so that they are able to reject duplicate activities, should they occur.
+- When a client issues a Get Conversation Activities request (to refresh history) while it's connected to the WebSocket stream, activities may be duplicated across both channels. Clients should keep track of all known activity IDs so that they're able to reject duplicate activities, should they occur.
 
 Clients that poll using `HTTP GET` should choose a polling interval that matches their intended use.
 
 - Service-to-service applications often use a polling interval of 5s or 10s.
 
-- Client-facing applications often use a polling interval of 1s, and issue a single additional request shortly after every message that the client sends (to rapidly retrieve a bot's response). This delay can be as short at 300ms but should be tuned based on the bot's speed and transit time. Polling should not be more frequent than once per second for any extended period of time.
+- Client-facing applications often use a polling interval of 1s, and issue a single additional request shortly after every message that the client sends (to rapidly retrieve a bot's response). This delay can be as short at 300ms but should be tuned based on the bot's speed and transit time. Polling shouldn't be more frequent than once per second for any extended period of time.
 
 ## Additional resources
 

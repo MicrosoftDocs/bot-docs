@@ -1,5 +1,5 @@
 ---
-title: Embed a bot in an app - Bot Service
+title: Embed a bot in an app
 description: Learn how to embed bots in apps. See how to integrate bots with native mobile apps, web-based mobile apps, IoT apps, and other app types. View sample code.
 author: JonathanFingold
 ms.author: iawilt
@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 07/26/2022
 ---
 
 # Embed a bot in an app
@@ -25,17 +25,17 @@ The way to integrate a bot with an app varies depending on the type of app.
 
 ### Native mobile app
 
-An app that is created in native code can communicate with the Bot Framework by using the [Direct Line API][directLineAPI], either via REST or web sockets.
+An app that's created in native code can communicate with the Bot Framework by using the [Direct Line API][directLineAPI], either via REST or web sockets.
 
 ### Web-based mobile app
 
-A mobile app that is built by using web language and frameworks such as [Cordova](https://cordova.apache.org/) may communicate with the Bot Framework by using the same components that a [bot embedded within a website](bot-service-design-pattern-embed-web-site.md) would use, just encapsulated within a native app's shell.
+A mobile app built with a web language and frameworks such as [Cordova](https://cordova.apache.org/) may communicate with the Bot Framework by using the same components that a [bot embedded within a website](bot-service-design-pattern-embed-web-site.md) would use, just encapsulated within a native app's shell.
 
 ### IoT app
 
 An IoT app can communicate with the Bot Framework by using the [Direct Line API][directLineAPI].
 
-In some scenarios, it may also use [Microsoft Cognitive Services](https://www.microsoft.com/cognitive-services/) like [Speech](/azure/cognitive-services/speech-service/), [Translator](/azure/cognitive-services/translator/), [Text Analytics](/azure/cognitive-services/text-analytics/), and [Computer Vision](/azure/cognitive-services/computer-vision/).
+In some scenarios, it may also use [Azure AI services](/azure/ai-services/) like [Speech](/azure/ai-services/speech-service/), [Translator](/azure/ai-services/translator/), [Language](/azure/ai-services/language-service/), and [Vision](/azure/ai-services/computer-vision/).
 
 ### Other types of apps and games
 
@@ -45,7 +45,7 @@ Other types of apps and games can communicate with the Bot Framework by using th
 
 This example of creating a mobile app that runs a bot uses [Xamarin](https://www.xamarin.com/), a popular tool for building cross-platform mobile applications.
 
-First, create a simple web view component and use it to host a [Web Chat](https://github.com/Microsoft/BotFramework-WebChat) control. Then, using Azure portal, add the Web Chat channel.
+First, create a web view component and use it to host a [Web Chat](https://github.com/Microsoft/BotFramework-WebChat) control. Then, using Azure portal, add the Web Chat channel.
 
 Next, specify the registered web chat URL as the source for the web view control in the Xamarin app:
 
@@ -63,17 +63,11 @@ public WebPage()
 
 Using this process, you can create a cross-platform mobile application that renders the embedded web view with the web chat control.
 
-![Back-channel](media/bot-service-design-pattern-embed-app/xamarin-apps.png)
-
-<!-- TODO: No sample bot available
-## Sample code
-
-For a complete sample that shows how to create a cross-platform mobile app that runs a bot, see the [Bot in Apps sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/capability-BotInApps) in GitHub.
--->
+:::image type="content" source="media/bot-service-design-pattern-embed-app/xamarin-apps.png" alt-text="Examples of a bot recognizing what type of device the user's on.":::
 
 ## Additional resources
 
 - [Direct Line API][directLineAPI]
-- [Microsoft Cognitive Services](https://www.microsoft.com/cognitive-services/)
+- [Azure AI services](/azure/ai-services/)
 
 [directLineAPI]: https://docs.botframework.com/restapi/directline3/#navtitle

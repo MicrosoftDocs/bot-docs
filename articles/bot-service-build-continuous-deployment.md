@@ -1,5 +1,5 @@
 ---
-title: Configure continuous deployment for Bot Service - Bot Service
+title: Configure continuous deployment
 description: Learn how to set up continuous deployment from source control for a Bot Service.
 keywords: continuous deployment, publish, deploy, azure portal
 author: JonathanFingold
@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 05/17/2022
+ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -19,6 +19,8 @@ monikerRange: 'azure-bot-service-4.0'
 This article describes how to configure continuous deployment. You can enable continuous deployment to automatically deploy code changes from your source repository to Azure.
 
 This article covers setting up continuous deployment for GitHub. For information on setting up continuous deployment with other source control systems, see  [continuous deployment to Azure App Service](/azure/app-service/deploy-continuous-deployment).
+
+[!INCLUDE [java-python-sunset-alert](includes/java-python-sunset-alert.md)]
 
 ## Prerequisites
 
@@ -61,7 +63,7 @@ Add your bot project to your GitHub repository.
 
 At this point, continuous deployment with GitHub is set up. New commits in the selected repository and branch now deploy continuously into your App Service app. You can track the commits and deployments on the **Logs** tab.
 
-:::image type="content" source="media/bot-service-build-continuous-deployment/cicd-configured.png" alt-text="Deployment Center with source and build provider configured.":::
+:::image type="content" source="media/bot-service-build-continuous-deployment/cicd-configured.png" alt-text="Screenshot of the Deployment Center blade, with the source and build provider configured.":::
 
 ## Disable continuous deployment
 

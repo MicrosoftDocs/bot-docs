@@ -5,6 +5,7 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: include
+ms.custom: devx-track-azurecli
 ms.date: 03/03/2022
 ---
 
@@ -16,8 +17,8 @@ ms.date: 03/03/2022
     az login
     ```
 
-    A browser window will open. Complete the sign in process.
-    On success, the command outputs a list of the subscriptions your account has access to.
+    - A browser window will open. Complete the sign-in process.
+    - On success, the command outputs a list of the subscriptions your account has access to.
 
 1. To set the subscription to use, run:
 

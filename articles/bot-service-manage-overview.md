@@ -5,7 +5,7 @@ keywords: azure portal, bot management, test in web chat, MicrosoftAppID, Micros
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: mainguy
+ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: conceptual
 ms.date: 10/21/2021
@@ -61,7 +61,7 @@ In the **Monitoring** section are links for most of your bot's monitoring option
 
 ## Application service settings
 
-A bot application, also known as an *application service (App Service)*, has a set of application settings that you can access through the Azure portal. They are environment variables passed to the bot application code. For more information, see [Configure an App Service app in the Azure portal](/azure/app-service/configure-common).
+A bot application, also known as an *application service (App Service)*, has a set of application settings that you can access through the Azure portal. They're environment variables passed to the bot application code. For more information, see [Configure an App Service app in the Azure portal](/azure/app-service/configure-common).
 
 1. In your browser, navigate to the [Azure portal](https://ms.portal.azure.com/).
 1. Search for your bot app service and select its name.
@@ -71,7 +71,7 @@ A bot application, also known as an *application service (App Service)*, has a s
 
 ## Next steps
 
-Now that you have explored the Bot Service blade in the Azure portal, learn about the Bot Framework Service, how bots communicate with users, and about activities, channels, HTTP POST requests, and more.
+Now that you've explored the Bot Service blade in the Azure portal, learn about the Bot Framework Service, how bots communicate with users, and about activities, channels, HTTP POST requests, and more.
 
 > [!div class="nextstepaction"]
 > [How bots work](v4sdk/bot-builder-basics.md)

@@ -13,7 +13,7 @@ ms.date: 11/01/2021
 # Receive messages from the bot in Direct Line API 1.1
 
 > [!IMPORTANT]
-> This article describes how to receive messages from the bot using Direct Line API 1.1. If you are creating a new connection between your client application and bot, use [Direct Line API 3.0](bot-framework-rest-direct-line-3-0-receive-activities.md) instead.
+> This article describes how to receive messages from the bot using Direct Line API 1.1. If you're creating a new connection between your client application and bot, use [Direct Line API 3.0](bot-framework-rest-direct-line-3-0-receive-activities.md) instead.
 
 Using the Direct Line 1.1 protocol, clients must poll an `HTTP GET` interface to receive messages.
 
@@ -59,7 +59,7 @@ HTTP/1.1 200 OK
 
 ## Timing considerations
 
-Even though Direct Line is a multi-part protocol with potential timing gaps, the protocol and service is designed to make it easy to build a reliable client. The `watermark` property that is sent in the Get Messages response is reliable. A client will not miss any messages as long as it replays the watermark verbatim.
+Even though Direct Line is a multi-part protocol with potential timing gaps, the protocol and service is designed to make it easy to build a reliable client. The `watermark` property that is sent in the Get Messages response is reliable. A client won't miss any messages as long as it replays the watermark verbatim.
 
 Clients should choose a polling interval that matches their intended use.
 

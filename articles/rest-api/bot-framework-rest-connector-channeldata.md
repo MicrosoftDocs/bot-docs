@@ -7,12 +7,14 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 09/01/2022
 ---
 
 # Implement channel-specific functionality with the Bot Connector API
 
-Some channels provide features that cannot be implemented by using only [message text and attachments](bot-framework-rest-connector-create-messages.md). To implement channel-specific functionality, you can pass native metadata to a channel in the [Activity[]] object's `channelData` property. For example, your bot can use the `channelData` property to instruct Telegram to send a sticker or to instruct Office365 to send an email.
+Some channels provide features that can't be implemented by using only [message text and attachments](bot-framework-rest-connector-create-messages.md). To implement channel-specific functionality, you can pass native metadata to a channel in the [Activity][] object's `channelData` property. For example, your bot can use the `channelData` property to instruct Telegram to send a sticker or to instruct Office365 to send an email.
+
+[Activity]: bot-framework-rest-connector-api-reference.md#activity-object
 
 This article describes how to use a message activity's `channelData` property to implement this channel-specific functionality:
 
@@ -22,7 +24,6 @@ This article describes how to use a message activity's `channelData` property to
 | Slack    | Send full fidelity Slack messages                                              |
 | Facebook | Send Facebook notifications natively                                           |
 | Telegram | Perform Telegram-specific actions, such as sharing a voice memo or a sticker   |
-| Kik      | Send and receive native Kik messages                                           |
 
 > [!NOTE]
 > The value of an `Activity` object's `channelData` property is a JSON object.
@@ -124,7 +125,7 @@ This snippet shows an example of the `channelData` property in the message that 
             }
         ],
         //...
-        "original_message": "{…}",
+        "original_message": "{...}",
         "response_url": "https://hooks.slack.com/actions/..."
     }
 }
@@ -196,7 +197,7 @@ For details about these Telegram methods and their parameters, see the [Telegram
 
 > [!NOTE]
 >
-> - The `chat_id` parameter is common to all Telegram methods. If you do not specify `chat_id` as a parameter, the framework will provide the ID for you.
+> - The `chat_id` parameter is common to all Telegram methods. If you don't specify `chat_id` as a parameter, the framework will provide the ID for you.
 > - Instead of passing file contents inline, specify the file using a URL and media type as shown in the example below.
 > - Within each message that your bot receives from the Telegram channel, the `channelData` property will include the message that your bot sent previously.
 
@@ -237,46 +238,9 @@ This snippet shows an example of a `channelData` property that specifies an arra
 ]
 ```
 
-## Create a native Kik message
-
-To create a native Kik message,
-set the `Activity` object's `channelData` property to a JSON object that specifies this property:
-
-| Property | Description |
-|----|----|
-| messages | An array of Kik messages. For details about Kik message format, see [Kik Message Formats](https://dev.kik.com/#/docs/messaging#message-formats). |
-
-This snippet shows an example of the `channelData` property for a native Kik message.
-
-```json
-"channelData": {
-    "messages": [
-        {
-            "chatId": "c6dd8165…",
-            "type": "link",
-            "to": "kikhandle",
-            "title": "My Webpage",
-            "text": "Some text to display",
-            "url": "http://botframework.com",
-            "picUrl": "http://lorempixel.com/400/200/",
-            "attribution": {
-                "name": "My App",
-                "iconUrl": "http://lorempixel.com/50/50/"
-            },
-            "noForward": true,
-            "kikJsData": {
-                    "key": "value"
-                }
-        }
-    ]
-}
-```
-
 ## Additional resources
 
 - [Create messages](bot-framework-rest-connector-create-messages.md)
 - [Send and receive messages](bot-framework-rest-connector-send-and-receive-messages.md)
 - [Bot Framework Activity schema](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md)
 - [Channels reference](../bot-service-channels-reference.md)
-
-[Activity]: bot-framework-rest-connector-api-reference.md#activity-object

@@ -4,10 +4,10 @@ description: Learn how to configure bots to connect to the Microsoft Teams chann
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: mainguy
+ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 03/30/2022
+ms.date: 12/20/2022
 ---
 
 # Connect a bot to Microsoft Teams
@@ -33,7 +33,7 @@ You can configure your bot to communicate with people via Microsoft Teams. This 
     1. Select **Apply**.
 1. Select **Get bot embed code**, locate the embed code for Teams, and then copy the _https_ part of the code. For example, `https://teams.microsoft.com/l/chat/0/0?users=28:b8a22302e-9303-4e54-b348-343232`. You can use this code to test the bot in Teams.
 
-> ![TIP]
+> [!TIP]
 >
 > - The **Calling** tab supports the Teams calling feature. For more information, see [Register calls and meetings bot for Microsoft Teams](/microsoftteams/platform/bots/calls-and-meetings/registering-calling-bot).
 > - The **Publish** tab contains information about how to publish your Teams app to the Teams Store.
@@ -43,7 +43,7 @@ You can configure your bot to communicate with people via Microsoft Teams. This 
 Bots in production should be added to Teams as part of a Teams app. For more information, see [Test your app](/microsoftteams/platform/concepts/build-and-test/test-app-overview).
 
 > [!IMPORTANT]
-> Adding a bot by GUID, for anything other than testing purposes, is not recommended. Doing so severely limits the functionality of a bot. Bots in production should be added to Teams as part of an app.
+> Adding a bot by GUID, for anything other than testing purposes, isn't recommended. Doing so severely limits the functionality of a bot. Bots in production should be added to Teams as part of an app.
 
 1. In your browser, open the URL you copied from your embed code, then choose the Microsoft Teams app (client or web) that you use to add the bot to Teams. You should be able to see the bot listed as a contact that you can send messages to and receive messages from in Microsoft Teams.
 1. Interact with your bot in Teams.
@@ -51,11 +51,16 @@ Bots in production should be added to Teams as part of a Teams app. For more inf
 > [!TIP]
 > Use one bot channel registration per environment, since your endpoint changes when you switch between local development, staging, and production environments.
 >
-> Deleting the Teams channel registration will cause a new pair of keys to be generated when it is re-enabled. This invalidates all 29:xxx and a:xxx IDs that the bot may have stored for proactive messaging.
+> Deleting the Teams channel registration will cause a new pair of keys to be generated when it's re-enabled. This invalidates all 29:xxx and a:xxx IDs that the bot may have stored for proactive messaging.
 
 ## Publish your bot in Teams
 
-For instructions on how to publish your app, see [Distribute your Microsoft Teams app](/microsoftteams/platform/concepts/deploy-and-publish/apps-publish-overview).
+For instructions on how to publish your app, see the Teams overview of how to [Distribute your Microsoft Teams app](/microsoftteams/platform/concepts/deploy-and-publish/apps-publish-overview). It and the associated articles cover how to:
+
+- Choose and configure install options for your bot
+- Create your Teams app manifest, icon, and package
+- Upload your app to Teams
+- Publish your app to your org or to the Teams store
 
 ## Additional information
 

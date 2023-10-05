@@ -1,5 +1,5 @@
 ---
-title: Implement a skill | Microsoft Docs
+title: Implement a skill
 description: Learn how to implement a skill, using the Bot Framework SDK.
 keywords: skills
 author: JonathanFingold
@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: Gabo.Gilabert
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 11/19/2021
+ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -24,9 +24,9 @@ A _skill_ is a bot that can perform a set of tasks for another bot.
 
 This article demonstrates how to implement a skill that echoes the user's input.
 
-<!-- I haven't discussed passing values back-and-forth mid conversation. That could be the basis of another article. -->
-
 [!INCLUDE [skills-and-identity-types](../includes/skills-and-identity-types.md)]
+
+[!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
 
 ## Prerequisites
 
@@ -35,7 +35,7 @@ This article demonstrates how to implement a skill that echoes the user's input.
 - A copy of the **skills simple bot-to-bot** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/80.skills-simple-bot-to-bot), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/80.skills-simple-bot-to-bot), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/80.skills-simple-bot-to-bot).
 
 > [!NOTE]
-> Starting with version 4.11, you do not need an app ID and password to test a skill locally in the Bot Framework Emulator. An Azure subscription is still required to deploy your skill to Azure.
+> Starting with version 4.11, you don't need an app ID and password to test a skill locally in the Bot Framework Emulator. An Azure subscription is still required to deploy your skill to Azure.
 
 ## About this sample
 
@@ -48,19 +48,19 @@ This article focuses on the skill, which includes support logic in its bot and a
 
 ### [C#](#tab/cs)
 
-![Skill C# class diagram](./media/skills-simple-skill-cs.png)
+:::image type="content" source="./media/skills-simple-skill-cs.png" alt-text="Skill C# class diagram.":::
 
 ### [JavaScript](#tab/javascript)
 
-![Skill JavaScript class diagram](./media/skills-simple-skill-js.png)
+:::image type="content" source="./media/skills-simple-skill-js.png" alt-text="Skill JavaScript class diagram.":::
 
 ### [Java](#tab/java)
 
-![Skill Java class diagram](./media/skills-simple-skill-java.png)
+:::image type="content" source="./media/skills-simple-skill-java.png" alt-text="Skill Java class diagram.":::
 
 ### [Python](#tab/python)
 
-![Skill Python class diagram](./media/skills-simple-skill-python.png)
+:::image type="content" source="./media/skills-simple-skill-python.png" alt-text="Skill Python class diagram.":::
 
 ---
 
@@ -71,7 +71,7 @@ For information about the simple root bot, see how to [Implement a skill consume
 For deployed bots, bot-to-bot authentication requires that each participating bot has valid identity information.
 However, you can test multi-tenant skills and skill consumers locally with the Emulator without an app ID and password.
 
-To make the skill available to user-facing bots, register the skill with Azure. For more information, see how to [register a bot with Azure Bot Service](../bot-service-quickstart-registration.md).
+To make the skill available to user-facing bots, register the skill with Azure. For more information, see how to [register a bot with Azure AI Bot Service](../bot-service-quickstart-registration.md).
 
 ## Application configuration
 
@@ -333,7 +333,7 @@ Download and install the latest [Bot Framework Emulator](https://github.com/micr
 1. Run the echo skill bot locally on your machine. If you need instructions, refer to the `README` file for the [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/80.skills-simple-bot-to-bot), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/java_springboot/80.skills-simple-bot-to-bot), or [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/80.skills-simple-bot-to-bot) sample.
 1. Use the Emulator to test the bot as shown below. When you send an "end" or "stop" message to the skill, it sends an `endOfConversation` activity in addition to the reply message. The skill sends the `endOfConversation` activity to indicate the skill has finished.
 
-![test the echo skill](media/skills-simple-skill-test.png)
+:::image type="content" source="media/skills-simple-skill-test.png" alt-text="Example transcript showing the end-of-conversation activity.":::
 
 ### More about debugging
 

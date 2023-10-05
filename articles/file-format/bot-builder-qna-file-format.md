@@ -1,5 +1,5 @@
 ---
-title: .qna file format - Bot Service
+title: .qna file format
 description: .qna file format reference
 keywords: qna file format, reference, qnamaker
 author: JonathanFingold
@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: reference
-ms.date: 11/01/2021
+ms.date: 10/11/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -16,19 +16,9 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
+[!INCLUDE [qnamaker-sunset-alert](../includes/qnamaker-sunset-alert.md)]
+
 .qna files contain Markdown-like text based definitions for [QnAmaker.ai](http://qnamaker.ai) concepts. This article covers the various concepts expressed via the .qna file format.
-
-<!--
-Supported concepts:
-
-- [Comments](#Adding-comments)
-- [QnA pairs](#Question-and-Answer-pairs)
-- [Filters](#QnAMaker-Filters)
-- [QnA Alterations](#QnA-Maker-alterations)
-- [File references](#QnA-Maker-pdf-file-ingestion)
-- [References](#External-references)
-- [Model description](#Model-description)
-- [Multi-turn content](#Multi-turn-content)-->
 
 ## Adding comments
 
@@ -44,22 +34,22 @@ The .qna file and parser support question and answer definitions.
 
 Here's the syntax of a basic question and answer definition:
 
-~~~qna
+````qna
 # ? Question
 [list of question variations]
 ```
 Answer
 ```
-~~~
+````
 
 Here's are examples of question and answer definitions:
 
-~~~qna
+````qna
 > # QnA Definitions
 ### ? who is the ceo?
 ```
 You can change the default message if you use the QnAMakerDialog.
-See [this link](https://docs.botframework.com/en-us/azure-bot-service/templates/qnamaker/#navtitle) for details.
+For details, see [Azure AI Bot Service documentation](/articles/adaptive-dialog/adaptive-dialog-prebuilt-actions.md).
 ```
 
 
@@ -68,7 +58,7 @@ See [this link](https://docs.botframework.com/en-us/azure-bot-service/templates/
 You can use our REST apis to manage your KB.
 \#1. See here for details: https://westus.dev.cognitive.microsoft.com/docs/services/58994a073d9e04097c7ba6fe/operations/58994a073d9e041ad42d9baa
 ```
-~~~
+````
 
 Note that the `markdown` type identifier for an `answer` is optional.
 
@@ -76,13 +66,13 @@ Note that the `markdown` type identifier for an `answer` is optional.
 
 You can add multiple questions to the same answer by simply adding variations to questions.
 
-~~~qna
+````qna
 ### ? Aren't you feeling happy today?
 - Feeling cheerful?
 ```markdown
 I'm quite happy, thank you.
 ```
-~~~
+````
 
 ## QnAMaker Filters
 
@@ -98,7 +88,7 @@ Use the following syntax to add filters:
 
 Here's an example of how a filter could be used:
 
-~~~qna
+````qna
 ### ? Where can I get coffee?
 - I need coffee
 
@@ -118,30 +108,11 @@ You can get coffee in our Seattle store at 1 pike place, Seattle, WA
 ```markdown
 You can get coffee in our Portland store at 52 marine drive, Portland, OR
 ```
-~~~
-
-<!---
-## QnA Maker alterations
-
-QnA Maker supports [word alterations](/azure/cognitive-services/qnamaker/concepts/best-practices#use-synonyms) as a way to improve the likelihood that a given user query is answered with an appropriate response. You can use this feature to add synonyms to keywords that take different form.
-
-You can describe word alterations/synonyms lists in .qna files using the following notation.
-```qna
-$<synonym word>:qna-alteration=
-- <list of synonyms>
-```
-
-Here's an example:
-```qna
-$botframework : qna-alterations=
-- bot framework
-- Microsoft bot framework
-```
--->
+````
 
 ## QnA Maker PDF file ingestion
 
-QnA Maker also supports ingesting PDF files during KB creation. You can add files for QnA Maker to ingest using the URL reference scheme. If the URI's content type is not text or HTML, then the parser will add it to files collection for QnA Maker to ingest.
+QnA Maker also supports ingesting PDF files during KB creation. You can add files for QnA Maker to ingest using the URL reference scheme. If the URI's content type isn't text or HTML, then the parser will add it to files collection for QnA Maker to ingest.
 
 ```qna
 [SurfaceManual.pdf](https://download.microsoft.com/download/2/9/B/29B20383-302C-4517-A006-B0186F04BE28/surface-pro-4-user-guide-EN.pdf)
@@ -179,7 +150,7 @@ Here's an example of the above references:
 
 ```qna
 > QnA URL reference
-[QnaURL](/en-in/azure/cognitive-services/qnamaker/faqs)
+[QnaURL](/azure/ai-services/qnamaker/)
 
 > Include all content in ./kb1.qna
 [KB1](./kb1.qna)
@@ -194,6 +165,8 @@ Here's an example of the above references:
 ## Model description
 
 You can include configuration information for your LUIS application or QnA Maker KB in the .qna file to help direct the parser to handle the LU content correctly.
+
+[!INCLUDE [luis-sunset-alert](../includes/luis-sunset-alert.md)]
 
 Here's how to add configuration information sing **> !#**:
 
@@ -224,7 +197,7 @@ Multiturn content is represented in .qna format using Markdown link notation. Li
 - [display text](#<ID or question>)
 ```
 
-You can optionally include `context-only` for any prompts that are only contextually available for a question. Read  the section about [adding an existing question-and-answer pair as a follow-up prompt](/azure/cognitive-services/language-service/question-answering/tutorials/guided-conversations#add-question-pair-with-follow-up-prompts) to learn more about use of `context`.
+You can optionally include `context-only` for any prompts that are only contextually available for a question. Read  the section about [adding an existing question-and-answer pair as a follow-up prompt](/azure/ai-services/language-service/question-answering/tutorials/guided-conversations#add-question-pair-with-follow-up-prompts) to learn more about use of `context`.
 
 ```qna
 - [tell me a joke](#?joke) `context-only`
@@ -240,7 +213,7 @@ The first QnA pair that has the link text as a `question` will be added as the p
 
 When you're directly using a question, use Markdown convention and replace spaces with hyphens (for example, use `#?when-is-the-portland-store-open` instead of `#?when is the portland store open`). The parser will do its best to find the link.
 
-~~~qna
+````qna
 # ?store hours
 ```
 Most our stores are open M-F 9AM-10PM.
@@ -259,15 +232,16 @@ The Seattle store is open M-F 9AM-10PM.
 ```
 The Portland store is open 24/7.
 ```
-~~~
+````
 
-Note that the link will not actually render as a clickable link in most Markdown renderers.
+> [!TIP]
+> The link won't actually render as a selectable link in most Markdown renderers.
 
 ### Assign an explicit ID to a QnA pair
 
 Assign IDs for each prompt with a number. You can see in the example below the prompt for each store has been assigned a different numeric value.
 
-~~~qna
+````qna
 # ?store hours
 ```
 Most our stores are open M-F 9AM-10PM.
@@ -290,10 +264,8 @@ The Seattle store is open M-F 9AM-10PM.
 ```
 The Portland store is open 24/7.
 ```
-~~~
+````
 
 ## Additional Resources
 
 - See [.lu file format](bot-builder-lu-file-format.md) for information about the .lu file format.
-
-[1]:/azure/cognitive-services/qnamaker/how-to/multiturn-conversation#add-a-new-question-and-answer-pair-as-a-follow-up-prompt

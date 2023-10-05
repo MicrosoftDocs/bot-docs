@@ -14,7 +14,7 @@ ms.date: 11/01/2021
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-<!-- Attention writers!! When you create a new FAQ, please add the related link to the proper section below. -->
+<!-- Attention writers! When you create a new FAQ, please add the related link to the proper section below. -->
 
 The following are some common questions that address problems you might face.
 In case you don't find the answer you're looking for, you can post your questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/botframework) using the `botframework` tag. If you're a new user, visit the [Stack Overflow Help Center](https://stackoverflow.com/help/how-to-ask).
@@ -35,7 +35,6 @@ In case you don't find the answer you're looking for, you can post your question
 - [How do identifiers work in the Bot Framework?](bot-service-troubleshoot-general-problems.md#how-do-identifiers-work-in-the-bot-framework)
 - [How can I get access to the user ID?](bot-service-troubleshoot-general-problems.md#how-can-i-get-access-to-the-user-id)
 - [Why are my Facebook user names not showing anymore?](bot-service-troubleshoot-general-problems.md#why-are-my-facebook-user-names-not-showing-anymore)
-- [Why is my Kik bot replying "I'm sorry, I can't talk right now"?](bot-service-troubleshoot-general-problems.md#why-is-my-kik-bot-replying-im-sorry-i-cant-talk-right-now)
 - [How can I use authenticated services from my bot?](bot-service-troubleshoot-general-problems.md#how-can-i-use-authenticated-services-from-my-bot)
 - [How can I limit access to my bot to a pre-determined list of users?](bot-service-troubleshoot-general-problems.md#how-can-i-limit-access-to-my-bot-to-a-pre-determined-list-of-users)
 - [Why does my Direct Line 1.1 conversation start over after every message?](bot-service-troubleshoot-general-problems.md#why-does-my-direct-line-11-conversation-start-over-after-every-message)
@@ -47,7 +46,7 @@ In case you don't find the answer you're looking for, you can post your question
 ## Configuration
 
 - [Test in Web Chat](bot-service-troubleshoot-bot-configuration.md#test-in-web-chat)
-- [Bot does not work in Web Chat](bot-service-troubleshoot-bot-configuration.md#bot-does-not-work-in-web-chat)
+- [Bot doesn't work in Web Chat](bot-service-troubleshoot-bot-configuration.md#bot-does-not-work-in-web-chat)
 - [Bot works in Web Chat but not in other channels](bot-service-troubleshoot-bot-configuration.md#bot-works-in-web-chat-but-not-in-other-channels)
   - [Channel configuration issues](bot-service-troubleshoot-bot-configuration.md#channel-configuration-issues)
   - [Channel-specific behavior](bot-service-troubleshoot-bot-configuration.md#channel-specific-behavior)

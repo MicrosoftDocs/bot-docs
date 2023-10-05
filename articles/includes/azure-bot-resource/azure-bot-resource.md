@@ -5,12 +5,12 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: include
-ms.date: 06/06/2022
+ms.date: 09/06/2022
 ---
 
 ## Create the resource
 
-Create the **Azure Bot** resource, which will allow you to register your bot with the Azure Bot Service.
+Create the **Azure Bot** resource, which will allow you to register your bot with the Azure AI Bot Service.
 
 [!INCLUDE [bot-resource-type-tip](../bot-resource-type-tip.md)]
 
@@ -22,10 +22,15 @@ Create the **Azure Bot** resource, which will allow you to register your bot wit
     :::image type="content" source="../../media/azure-manage-a-bot/azure-bot-resource.png" alt-text="Select Azure bot resource":::
 
 1. Select **Create**.
-1. Enter values in the required fields.
-    Choose which type of app to create and whether to use existing or create new identity information.
+1. Enter values in the required fields and review and update settings.
 
-    :::image type="content" source="../../media/azure-manage-a-bot/create-new-user-assigned-managed-identity.png" alt-text="Create a user-assigned managed identity Azure Bot resource with a new app ID.":::
+   1. Provide information under **Project details**. Select whether your bot will have global or local data residency. Currently, the local data residency feature is only available for resources in the "westeurope" region. For more information, see [Regionalization in Azure AI Bot Service](../../v4sdk/bot-builder-concept-regionalization.md).
+
+      :::image type="content" source="../../media/azure-bot-resource/azure-bot-project-details.png" alt-text="The project details settings for an Azure Bot resource":::
+
+   1. Provide information under **Microsoft App ID**. Select how your bot identity will be managed in Azure and whether to create a new identity or use an existing one.
+
+      :::image type="content" source="../../media/azure-bot-resource/azure-bot-ms-app-id.png" alt-text="The Microsoft app ID settings for an Azure Bot resource":::
 
 1. Select **Review + create**.
 1. If the validation passes, select **Create**.
@@ -41,7 +46,9 @@ You're now ready to build your bot with the Bot Framework SDK.
 
 [!INCLUDE [app ID and password](../authentication/azure-bot-appid-password.md)]
 
-If you have an existing Web App resource for your bot and your bot is a _user-assigned managed identity_ application, you may need to update your bot's web app:
+### To update your app service
+
+If you have an existing App Service resource (web app) for your bot and your bot is a _user-assigned managed identity_ application, you may need to update your bot's app service:
 
 1. Go to the App Service blade for your bot's web app.
 1. Under **Settings**, select **Identity**.
@@ -53,16 +60,20 @@ If you have an existing Web App resource for your bot and your bot is a _user-as
 
         :::image type="content" source="../../media/how-to-create-single-tenant-bot/app-service-managed-identity.png" alt-text="The App Service Identity blade with the managed identity for the bot selected.":::
 
+### To get your app or tenant ID
+
 To get your bot's app or tenant ID:
 
 1. Go to the Azure Bot resource blade for your bot.
 1. Go to the bot's **Configuration** blade.
     From this blade, you can copy the bot's **Microsoft App ID** or **App Tenant ID**.
 
+### To generate a new password
+
 Single-tenant and multi-tenant bots have an app secret or password that you need for some operations.
-Azure Bot Service hides your bot secret. However, the owner of the bot's web app resource can generate a new password:
+Azure AI Bot Service hides your bot secret. However, the owner of the bot's App Service resource can generate a new password:
 
 1. Go to the Azure Bot resource blade for your bot.
 1. Go to the bot's **Configuration** blade.
-1. Select **Manage**, next to **Microsoft App ID**, to go to the **Certificates + secrets** blade for the web app.
+1. Select **Manage**, next to **Microsoft App ID**, to go to the **Certificates + secrets** blade for the app service.
 1. Follow the instructions on the blade to create a new client secret and record the value in a safe place.

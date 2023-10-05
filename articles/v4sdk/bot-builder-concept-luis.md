@@ -1,100 +1,224 @@
 ---
-title: Language Understanding - Bot Service
-description: Learn how to add artificial intelligence to your bots with Microsoft Cognitive Services to make them more useful and engaging.
-keywords: LUIS, intent, recognizer, dispatch tool, qna, qna maker
+title: Language understanding
+description: Learn how to add artificial intelligence to your bots with Azure AI services to make them more useful and engaging.
+keywords: Azure AI services, CLU, LUIS, QnA Maker, custom question answering
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 11/15/2021
+ms.date: 01/04/2023
 monikerRange: 'azure-bot-service-4.0'
 ---
 
-# Language Understanding
+# Natural language understanding
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-Bots can use a variety of conversational styles, from the structured and guided to the free-form and open-ended. A bot needs to decide what to do next in its conversation flow, based on what the user said, and in an open-ended conversation, there is a wider range of user replies.
+Bots can use various conversational styles, from structured and guided to free-form and open-ended.
+Based on what a user says, your bot needs to decide what to do next in its conversation flow.
+Azure AI services includes features to help with this task.
+These features can help a bot search for information, ask questions, or interpret the user's intent.
 
-| Guided | Open |
-|------|------|
+The interaction between users and bots is often free-form, and bots need to understand language naturally and contextually.
+In an open-ended conversation, there can be a wide range of user replies, and bots can provide more or less structure or guidance.
+This table illustrates the difference between guided and open-ended questions.
+
+| Guided                                                                                               | Open-ended                                             |
+|:-----------------------------------------------------------------------------------------------------|:-------------------------------------------------------|
 | I'm the travel bot. Select one of the following options: find flights, find hotels, find rental car. | I can help you book travel. What would you like to do? |
-| Do you need anything else? Click yes or no. | Do you need anything else? |
+| Do you need anything else? Click yes or no.                                                          | Do you need anything else?                             |
 
-The interaction between users and bots is often free-form, and bots need to understand language naturally and contextually. This article explains how Language Understanding (LUIS) help you to determine what users want, to identify concepts and entities in sentences, and ultimately to allow your bots to respond with the appropriate action.
+Azure AI services provides features with which to build intelligent apps, websites, and bots.
+Adding these features to your bot can allow your bot to respond to open-ended user input more appropriately.
 
-## Recognize intent
+This article describes support in the Bot Framework SDK for some of the features available in Azure AI services.
 
-[LUIS](/azure/cognitive-services/luis/home) helps you by determining the user's **intent**, which is what they want to do, from what they say, so your bot can respond appropriately. LUIS is especially helpful when what they say to your bot doesn't follow a predictable structure or a specific pattern. If a bot has a conversational user interface, in which the user speaks or types a response, there can be endless variations on *utterances*, which are the spoken or textual input from the user.
+- For tips on how to design these features into your bot, see [Design knowledge bots](../bot-service-design-pattern-knowledge-base.md).
+- For detailed information about Azure AI services, see the [Azure AI services documentation](/azure/ai-services/).
 
-For example, consider the many ways a user of a travel bot can ask to book a flight.
+## General guidance
 
-:::image type="content" source="media/cognitive-services-add-bot-language/cognitive-services-luis-utterances.png" alt-text="Various differently formed utterances for book a flight":::
+Azure AI services incorporates evolving technologies.
+Azure AI Language integrates various features that were previously implemented as separate services.
+This article describes both the newer and older features and services, and where to find more information about each.
 
-These utterances can have different structures and contain various synonyms for "flight" that you haven't thought of. In your bot, it can be challenging to write the logic that matches all the utterances, and still distinguishes them from other intents that contain the same words. Additionally, your bot needs to extract *entities*, which are other important words like locations and times. LUIS makes this process easy by contextually identifying intents and entities for you.
+| Scenario | Guidance |
+|:-|:-|
+| New bot development | Consider using Power Virtual Agents, which is designed to support teams where members have a mix of skills and disciplines. For more information, see [Power Virtual Agents](/power-virtual-agents/fundamentals-what-is-power-virtual-agents) and [Enable advanced AI features](/power-virtual-agents/advanced-ai-features). |
+| New language projects for existing Bot Framework SDK bots | Consider using features of the Azure AI Language service, such as conversational language understanding (CLU) and answering questions. |
+| Existing bots with existing language projects | Your language projects will continue to work, but consider migrating to Azure AI Language. For more information, see the [Migrate existing language projects](#migrate-existing-language-projects) section later in this article. |
 
-When you design your bot for natural language input, you determine what intents and entities your bot needs to recognize, and think about how they'll connect to actions that your bot takes. In [luis.ai](https://www.luis.ai), you define custom intents and entities and you specify their behavior by providing examples for each intent and labeling the entities within them.
+## Language understanding
 
-Your bot uses the intent recognized by LUIS to determine the conversation topic, or begin a conversation flow. For example, when a user says "I'd like to book a flight", your bot detects the BookFlight intent and invokes the conversation flow for starting a search for flights. LUIS detects entities like the destination city and the departure date, both in the original utterance that triggers the intent and later in the conversation flow. Once the bot has all the information it needs, it can fulfill the user's intent.
+Natural language understanding features let you build custom natural language understanding models to predict the overall intention of user's message and extract important information from it.
 
-:::image type="content" source="media/cognitive-services-add-bot-language/cognitive-services-luis-conversation-high-level.png" alt-text="A conversation with a bot is triggered by the BookFlight intent.":::
+| Service or feature | Description |
+|:-|:-|
+| Conversational Language Understanding (CLU) | A feature of the Azure AI Language service. |
+| Language Understanding (LUIS) | An Azure AI service. (CLU is an updated version of LUIS.)<br/><br/>LUIS will be retired on 1 October 2025. |
 
-### Recognize intent in common scenarios
+### Conversational Language Understanding (CLU)
 
-To save development time, LUIS provides pre-trained language models that recognize common utterances for common categories of bots.
+Conversational language understanding (CLU) enables users to build custom natural language understanding models to predict the overall intention of an incoming utterance and extract important information from it. CLU only provides the intelligence to understand the input text for the client application and doesn't perform any actions on its own.
 
-**Prebuilt domains** are pre-trained, ready-to-use collections of intents and entities that work well together for common scenarios like appointments, reminders, management, fitness, entertainment, communication, reservations, and more. The **Utilities** prebuilt domain helps your bot handle common tasks like Cancel, Confirm, Help, Repeat, and Stop. Take a look at the [prebuilt domains](/azure/cognitive-services/LUIS/luis-how-to-use-prebuilt-domains) that LUIS offers.
+To use CLU in your bot, create a language resource and a conversation project, train and deploy your language model, and then implement in your bot a _telemetry recognizer_ that forwards requests to the CLU API.
 
-**Prebuilt entities** help your bot recognize common types of information like dates, times, numbers, temperature, currency, geography, and age. See [use prebuilt entities](/azure/cognitive-services/LUIS/pre-builtentities) for background on the types that LUIS can recognize.
+For more information, see:
 
-## How your bot gets messages from LUIS
+- [What is conversational language understanding?](/azure/ai-services/language-service/conversational-language-understanding/overview)
+- _Telemetry recognizer_ interface reference for [C#/.NET](/dotnet/api/microsoft.bot.builder.ai.luis.itelemetryrecognizer) or [JavaScript/node.js](/javascript/api/botbuilder-ai/luisrecognizertelemetryclient)
+- [Azure Cognitive Language Services Conversations client library for .NET](/dotnet/api/overview/azure/ai.language.conversations-readme)
 
-Once you have set up and connected LUIS, your bot can send the message to your LUIS app, which returns a JSON response that contains the intents and entities. Then, you can use the [turn context](bot-builder-basics.md#the-turn-context) in your bot's _turn handler_ to route the conversation flow based on the intent in the LUIS response.
+### Language Understanding (LUIS)
 
-:::image type="content" source="./media/cognitive-services-add-bot-language/cognitive-services-luis-message-flow-bot-code.png" alt-text="How intents and entities are passed to your bot":::
+> [!NOTE]
+> [Language Understanding (LUIS) will be retired on 1 October 2025](https://azure.microsoft.com/updates/language-understanding-retirement/).
+> Beginning 1 April 2023, you won't be able to create new LUIS resources.
 
-To get started using a LUIS app with your bot, check out [using LUIS for language understanding](bot-builder-howto-v4-luis.md).
+LUIS applies custom machine-learning intelligence to a user's conversational, natural language text to predict overall meaning, and pull out relevant, detailed information.
 
-## Best practices for Language Understanding
+To use LUIS in your bot, create, train, and publish a LUIS app, then add a _LUIS recognizer_ to your bot.
 
-Consider the following practices when designing a language model for your bot.
+For more information, see:
 
-### Consider the number of intents
+- [What is Language Understanding (LUIS)?](/azure/ai-services/luis/what-is-luis)
+- [Add natural language understanding to your bot](bot-builder-howto-v4-luis.md)
 
-LUIS apps recognize intent by classifying an utterance into one of multiple categories. A natural result is that determining the correct category from among a large number of intents can reduce a LUIS app's ability to distinguish between them.
+## Questions and answers
 
-One way of reducing the number of intents is to use a hierarchical design. Consider the case of a personal assistant bot that has three intents related to weather, three intents related to home automation, and three other utility intents which are Help, Cancel and Greeting. If you put all the intents in the same LUIS app, you already have 9, and as you add features to the bot, you could end up with dozens. Instead, you can use the [Bot Framework Orchestrator](/composer/concept-orchestrator) to determine whether the user's request is for weather, home automation, or utility, then call the LUIS app for the category that Orchestrator determines. In this case each of the LUIS apps only starts with 3 intents.
+Question-and-answer features let you build knowledge bases to answer user questions.
+Knowledge bases represent semi-structured content, such as that found in FAQs, manuals, and documents.
 
-### Use a None intent
+| Service or feature | Description |
+|:-|:-|
+| Question answering | A feature of the Azure AI Language service. |
+| QnA Maker | An Azure AI services service. (Question answering is an updated version of QnA Maker.)<br/><br/>Azure AI QnA Maker will be retired on 31 March 2025. |
 
-It's often the case that users of your bot will say something unexpected or unrelated to the current conversation flow. The _None_ intent is provided for handling those messages.
+### Question answering
 
-If you don't train an intent for handling the fallback, default or "none of the above" cases, your LUIS app can only classify messages into the intents it has defined. So for example, let's say you have a LUIS app with two intents: `HomeAutomation.TurnOn` and `HomeAutomation.TurnOff`. If those are the only intents, and the input is something unrelated like "schedule an appointment on Friday", your LUIS app has no choice but to classify that message as either HomeAutomation.TurnOn or HomeAutomation.TurnOff. If your LUIS app has a `None` intent with a few examples, you can provide some fallback logic in your bot to handle unexpected utterances.
+Question answering provides cloud-based natural language processing (NLP) that allows you to create a natural conversational layer over your data. It's used to find the most appropriate answer for any input from your custom knowledge base of information.
 
-The `None` intent is very useful for improving recognition results. In this home automation scenario, "schedule an appointment on Friday" may produce the `HomeAutomation.TurnOn` intent with a low confidence, and your bot should reject it. You can add such phrases to your model under the `None` intent, so that they resolve correctly to `None`.
+To use question answering in your bot, create and deploy a question answering project, then implement in your bot a _QnA Maker client_ that forwards requests to the question answering API.
 
-### Review the utterances that LUIS app receives
+For more information, see:
 
-LUIS apps provide a feature for improving your app performance, by reviewing messages that users sent to it. See [suggested utterances](/azure/cognitive-services/LUIS/label-suggested-utterances) for a step-by-step walk through.
+- [What is question answering?](/azure/ai-services/language-service/question-answering/overview)
+- _QnA Maker client_ interface reference for [C#/.NET](/dotnet/api/microsoft.bot.builder.ai.qna.iqnamakerclient) or [JavaScript/node.js](/javascript/api/botbuilder-ai/qnamakerclient)
+- [Azure Cognitive Language Services Question Answering client library for .NET](/dotnet/api/overview/azure/ai.language.questionanswering-readme)
 
-## Integrate multiple LUIS apps and QnA services with Orchestrator
+### QnA Maker
 
-When building a multi-purpose bot that understands multiple conversational topics, you can start to develop services for each function separately, and then integrate them together. These services can include Language Understanding (LUIS) apps and QnA Maker services. Here are a few example scenarios in which a bot might combine multiple LUIS apps, multiple QnA Maker services, or a combination of the two:
+> [!NOTE]
+> [Azure AI QnA Maker will be retired on 31 March 2025](https://azure.microsoft.com/updates/azure-qna-maker-will-be-retired-on-31-march-2025/).
+> Beginning 1 October 2022, you won't be able to create new QnA Maker resources or knowledge bases.
 
-* A personal assistant bot lets the user invoke a variety of commands. Each category of commands form a "skill" that can be developed separately, and each skill has a LUIS app.
-* A bot searches many knowledge bases to find answers to frequently asked questions (FAQs).
-* A bot for a business has LUIS apps for creating customer accounts and placing orders, and also has a QnAMaker service for its FAQ.  
+QnA Maker has the built-in ability to scrape questions and answers from an existing FAQ site, plus it also allows you to manually configure your own custom list of questions and answers.
+QnA Maker has natural language processing abilities, enabling it to even provide answers to questions that are worded slightly differently than expected.
+However, it doesn't have semantic language understanding abilities, so it can't determine that a puppy is a type of dog, for example.
 
-### Bot Framework Orchestrator CLI
+To use QnA Maker in your bot, create a QnA Maker service, publish your knowledge base, and add a _QnA Maker_ object to your bot.
 
-The Orchestrator CLI helps you integrate multiple LUIS apps and QnA Maker services with your bot, by creating an *Orchestrator snapshot file*, which is used at run time to route messages to the appropriate LUIS and QnAMaker services. See the [Orchestrator tutorial](./bot-builder-tutorial-orchestrator.md) for a step-by-step tutorial that combines multiple LUIS apps and QnA Maker in one bot.
+For more information, see:
 
-## Use LUIS to improve speech recognition
+- [What is QnA Maker?](/azure/ai-services/qnamaker/overview/overview)
+- [Use QnA Maker to answer questions](bot-builder-howto-qna.md)
 
-For a bot that users will speak to, integrating it with LUIS can help your bot identify words that might be misunderstood when converting speech to text.  For example, in a chess scenario, a user might say: "Move knight to A 7". Without context for the user's intent, the utterance might be recognized as: "Move night 287". By creating entities that represent chess pieces and coordinates and labeling them in utterances, you provide context for speech recognition to identify them.
+## Search
+
+Azure Cognitive Search helps your bot provide users with a rich search experience, including the ability to facet and filter information.
+
+- You can use Azure Cognitive Search as a feature within Azure AI Language.
+- You can use the Azure Cognitive Search service directly.
+
+### Azure Cognitive Search
+
+You can use [Azure Cognitive Search](/azure/search/) to create an efficient index with which to search, facet, and filter a data store.
+
+- For how to configure Cognitive Search within Azure AI Language, see [Configure custom question answering enabled resources](/azure/ai-services/language-service/question-answering/how-to/configure-resources).
+- For information about the Cognitive Search service, see [What is Azure Cognitive Search?](/azure/search/search-what-is-azure-search).
+
+## Use multiple features together
+
+To build a multi-purpose bot that understands multiple conversational topics, begin with support for each function separately, and then integrate them together.
+Scenarios in which a bot might combine multiple features include:
+
+- A bot that provides a set of features, where each feature has its own language model.
+- A bot that searches multiple knowledge bases to find answers to a user's questions.
+- A bot that integrates different types of features, such as language understanding, answering questions, and search.
+
+This table describes different ways you can integrate multiple features.
+
+| Service or feature | Description |
+|:-|:-|
+| Orchestration workflow | A feature of the Azure AI Language service that allows you to use multiple question answering, CLU, and LUIS projects together. |
+| Bot Framework Orchestrator | An intent-only recognition engine, which you can use to determine which LUIS model or QnA Maker knowledge base can best handle a given message. |
+| Custom | You can implement your own logic to decide how best to handle the user's request. |
+
+### Use orchestration workflow
+
+The orchestration workflow applies machine-learning intelligence to enable you to build orchestration models to connect conversational language understanding (CLU) components, question answering projects, and LUIS applications.
+
+To use the orchestration workflow in your bot, create an orchestration workflow project, build your schema, train and deploy your model, then query your model API for intent predictions.
+
+For more information, see:
+
+- [What is orchestration workflow?](/azure/ai-services/language-service/orchestration-workflow/overview)
+- [Azure Cognitive Language Services Conversations client library for .NET](/dotnet/api/overview/azure/ai.language.conversations-readme)
+
+### Orchestrator
+
+> [!NOTE]
+> [Azure AI QnA Maker will be retired on 31 March 2025](https://azure.microsoft.com/updates/azure-qna-maker-will-be-retired-on-31-march-2025/).
+> Beginning 1 October 2022, you won't be able to create new QnA Maker resources or knowledge bases.
+>
+> [Language Understanding (LUIS) will be retired on 1 October 2025](https://azure.microsoft.com/updates/language-understanding-retirement/).
+> Beginning 1 April 2023, you won't be able to create new LUIS resources.
+
+Bot Framework Orchestrator is an intent-only recognition engine. The Bot Framework CLI includes tools to generate a language model for Orchestrator from a collection of QnA Maker knowledge bases and LUIS language models. Your bot can then use Orchestrator to determine which service can best respond to the user's input.
+
+The Bot Framework SDK provides built-in support for LUIS and QnA Maker. This enables you to trigger dialogs or automatically answer questions using LUIS and QnA Maker with minimal configuration.
+
+For more information, see [Use multiple LUIS and QnA models with Orchestrator](bot-builder-tutorial-orchestrator.md).
+
+### Custom logic
+
+There are two main ways to implement your own logic:
+
+1. For each message, call all relevant services that your bot supports. Use the results from the service that has the best confidence score. If the best score is ambiguous, ask the user to choose which response they want.
+1. Call each service in a preferred order. Use the first result that has a sufficient confidence score.
+
+> [!TIP]
+> When implementing a combination of different service or feature types, test inputs with each of the tools to determine the threshold score for each of your models. The services and features use different scoring criteria, so the scores generated across these tools are not directly comparable.
+>
+> The LUIS and QnA Maker services normalize scores. So, one score can be _good_ in one LUIS model but not so good in another model.
+
+## Migrate existing language projects
+
+For information on migrating resources from older services to Azure AI Language, see:
+
+- [Migrate from LUIS, QnA Maker, and Text Analytics](/azure/ai-services/language-service/concepts/migrate)
+- [Backwards compatibility with LUIS applications](/azure/ai-services/language-service/conversational-language-understanding/concepts/backwards-compatibility)
+- [Migrate from QnA Maker to Question Answering](/azure/ai-services/language-service/question-answering/how-to/migrate-qnamaker-to-question-answering)
+- [Migrate from QnA Maker to custom question answering](/azure/ai-services/language-service/question-answering/how-to/migrate-qnamaker)
 
 ## Additional resources
 
-Refer to [Cognitive Services](/azure/cognitive-services/) documentation for more information.
+To manage specific project or resources:
+
+- To manage of Azure resources, go to the [Azure portal](https://ms.portal.azure.com/).
+- To manage Azure AI Language projects, go to the [Language Studio portal](https://language.cognitive.azure.com/home).
+  - [Conversational language understanding (CLU) projects](https://language.cognitive.azure.com/clu/projects)
+  - [Question answering projects](https://language.cognitive.azure.com/questionAnswering/projects)
+- To manage LUIS apps, go to the [Language Understanding (LUIS) portal](https://www.luis.ai/).
+- To manage QnA Maker knowledge bases, go to the [QnA Maker portal](https://www.qnamaker.ai/).
+
+For documentation for a specific feature or service:
+
+- [What is Azure AI Language?](/azure/ai-services/language-service/overview)
+  - [What is conversational language understanding?](/azure/ai-services/language-service/conversational-language-understanding/overview)
+  - [What is question answering?](/azure/ai-services/language-service/question-answering/overview)
+- [What is Azure Cognitive Search?](/azure/search/search-what-is-azure-search)
+- [What is Language Understanding (LUIS)?](/azure/ai-services/luis/what-is-luis)
+- [What is QnA Maker?](/azure/ai-services/qnamaker/overview/overview)

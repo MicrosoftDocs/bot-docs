@@ -5,19 +5,19 @@ keywords: web chat, bot channel, web page, secret key, HTML
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: mainguy
+ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 03/30/2022
+ms.date: 01/04/2023
 ---
 
 # Connect a bot to Web Chat
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-When you [create a bot](bot-service-quickstart.md) with Azure, the Web Chat channel is automatically configured for you. The Web Chat channel includes the [Web Chat control](https://github.com/microsoft/BotFramework-WebChat], which provides the ability for users to interact with the bot directly in a web page.
+When you [create a bot](bot-service-quickstart.md) with Azure, the Web Chat channel is automatically configured for you. The Web Chat channel includes the [Web Chat control](https://github.com/microsoft/BotFramework-WebChat), which provides the ability for users to interact with the bot directly in a web page.
 
-The Web Chat channel contains everything you need to embed the Web Chat control in a web page. All you have to do to use the Web Chat control is get your bot's secret key and embed the control in a web page.
+The Web Chat channel contains everything you need to embed the Web Chat control in a web page. To do so, you'll get your bot's secret key and then embed the control in a web page.
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ The Web Chat channel contains everything you need to embed the Web Chat control 
 
 ## Web Chat security considerations
 
-When you use Azure Bot Service authentication with Web Chat, there are some important security considerations you must keep in mind. For more information, see [Security considerations](rest-api/bot-framework-rest-direct-line-3-0-authentication.md#security-considerations).
+When you use Azure AI Bot Service authentication with Web Chat, there are some important security considerations you must keep in mind. For more information, see [Security considerations](rest-api/bot-framework-rest-direct-line-3-0-authentication.md#security-considerations).
 
 ## Embed the Web Chat control in a web page
 
@@ -39,7 +39,7 @@ The following image shows the components involved when embedding the Web Chat co
 
 ### Get your bot secret key
 
-1. Go to [Azure Portal](https://portal.azure.com) and open your bot.
+1. Go to [Azure portal](https://portal.azure.com) and open your bot.
 1. Under **Settings**, select **Channels**. Then select **Web Chat**.
 1. The **Web Chat** page will open. Select the **Default Site** from the list of **Sites**.
 1. Copy the first **Secret key** and the **Embed code**.
@@ -57,24 +57,35 @@ Using this option won't completely prevent other developers from embedding your 
 
 To exchange your secret for a token and generate the embed:
 
-1. Issue a **GET** request to `https://webchat.botframework.com/api/tokens` and pass your web chat secret via the `Authorization` header. The `Authorization` header uses the `BotConnector` scheme and includes your secret.
+1. Issue a **GET** request to the token exchange URL and pass your web chat secret via the `Authorization` header. The `Authorization` header uses the `BotConnector` scheme and includes your secret.
+    - For a global bot, the token exchange URL is `https://webchat.botframework.com/api/tokens`.
+    - For a regional bot, the token URL is `https://europe.webchat.botframework.com/api/tokens`.
 
-2. The response to your **GET** request will contain the token (surrounded with quotation marks) that can be used to start a conversation by rendering the Web Chat control. A token is valid for one conversation only; to start another conversation, you need to generate a new token.
+1. The response to your **GET** request will contain the token (surrounded with quotation marks) that can be used to start a conversation by rendering the Web Chat control. A token is valid for one conversation only; to start another conversation, you need to generate a new token.
 
-3. Within the **Embedded code** that you copied from the Web Chat channel earlier, change the `s=` parameter to `t=` and replace "YOUR_SECRET_HERE" with your token.
+1. Within the **Embedded code** that you copied from the Web Chat channel earlier, change the `s=` parameter to `t=` and replace "YOUR_SECRET_HERE" with your token.
 
 > [!NOTE]
 > Tokens will automatically be renewed before they expire.
 
-##### Example request
+##### Example requests
+
+For a global bot:
 
 ```http
 requestGET https://webchat.botframework.com/api/tokens
 Authorization: BotConnector YOUR_SECRET_HERE
 ```
 
+For a regional bot:
+
+```http
+requestGET https://europe.webchat.botframework.com/api/tokens
+Authorization: BotConnector YOUR_SECRET_HERE
+```
+
 > [!NOTE]
-> Please note that for Azure Government, the token exchange URL is different.
+> For Azure Government, the token exchange URL is different.
 
 ```http
 requestGET https://webchat.botframework.azure.us/api/tokens
@@ -138,7 +149,7 @@ This option doesn't expose the Web Chat channel secret key in the client web pag
 The client needs to provide a token to talk to the bot. To learn about the differences between secrets and tokens
 and to understand the risks associated with using secrets, see [Direct Line authentication](rest-api/bot-framework-rest-direct-line-3-0-authentication.md).
 
-The following client web page shows how to use a token with the Web Chat. If you use Azure Gov, adjust the URLs from public to government.
+The following client web page shows how to use a token with the Web Chat. If you have a regional or Azure Gov bot, adjust the URLs from public to government.
 
 ```html
 <!DOCTYPE html>

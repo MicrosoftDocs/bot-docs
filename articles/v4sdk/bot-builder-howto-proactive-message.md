@@ -1,5 +1,5 @@
 ---
-title: Send proactive notifications to users - Azure Bot Service
+title: Send proactive notifications to users
 description: Learn how bots send notification messages. See how to retrieve conversation references and test proactive messages. View code samples and design considerations.
 author: JonathanFingold
 ms.author: iawilt
@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/08/2021
+ms.date: 10/26/2022
 ms.custom: abs-meta-21q1
 monikerRange: 'azure-bot-service-4.0'
 ---
@@ -19,13 +19,14 @@ monikerRange: 'azure-bot-service-4.0'
 Typically, a bot sends a message to a user directly in response to receiving a message from the user.
 Occasionally, a bot might need to send a _proactive message_, a message in response to stimulus not originating from the user.
 
-Proactive messages can be useful in a variety of scenarios. For example, if the user has previously asked the bot to monitor the price of a product, the bot can alert the user if the price of the product has dropped by 20%. Or, if a bot requires some time to compile a response to the user's question, it may inform the user of the delay and allow the conversation to continue in the meantime. When the bot finishes compiling the response to the question, it will share that information with the user.
+Proactive messages can be useful in various scenarios. For example, if the user has previously asked the bot to monitor the price of a product, the bot can alert the user if the price of the product has dropped by 20%. Or, if a bot requires some time to compile a response to the user's question, it may inform the user of the delay and allow the conversation to continue in the meantime. When the bot finishes compiling the response to the question, it will share that information with the user.
 
-> [!Note]
-> This article covers information about proactive messages for bots in general. For information about proactive messages in Microsoft Teams, see
->
-> - The **Teams conversation bot** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot#readme), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot#readme), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/57.teams-conversation-bot#readme), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot#readme).
-> - The Microsoft Teams documentation on how to [send proactive messages](/microsoftteams/platform/bots/how-to/conversations/send-proactive-messages).
+This article covers information about proactive messages for bots in general. For information about proactive messages in Microsoft Teams, see
+
+- The **Teams conversation bot** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot#readme), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot#readme), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/57.teams-conversation-bot#readme), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot#readme).
+- The Microsoft Teams documentation on how to [send proactive messages](/microsoftteams/platform/bots/how-to/conversations/send-proactive-messages).
+
+[!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
 
 ## Prerequisites
 
@@ -42,11 +43,11 @@ In general, a bot as an application has a few layers:
 
 In response to an incoming message from the user, the app calls the adapter's _process activity_ method, which creates a turn and turn context, calls its middleware pipeline, and then calls the bot's turn handler.
 
-To initiate a proactive message, the bot application needs to be able to receive additional input.
+To initiate a proactive message, the bot application needs to be able to receive other input.
 The application logic for initiating a proactive message is outside the scope of the SDK.
 For this sample, a _notify_ endpoint, in addition to a standard _messages_ endpoint, is used to trigger the proactive turn.
 
-In response to a GET request on this notify endpoint, the app calls the adapter's _continue conversation_ method, which behaves similarly to the the _process activity_ method. The _continue conversation_ method:
+In response to a GET request on this notify endpoint, the app calls the adapter's _continue conversation_ method, which behaves similarly to the _process activity_ method. The _continue conversation_ method:
 
 - Takes an appropriate conversation reference for the user and the callback method to use for the proactive turn.
 - Creates an event activity and turn context for the proactive turn.
@@ -54,9 +55,9 @@ In response to a GET request on this notify endpoint, the app calls the adapter'
 - Calls the provided callback method.
 - The turn context uses the conversation reference to send any messages to the user.
 
-The sample has a bot, a messages endpoint, and an additional notify endpoint that is used to send proactive messages to the user, as shown in the following illustration.
+The sample has a bot, a messages endpoint, and an extra endpoint that's used to send proactive messages to the user, as shown in the following illustration.
 
-![proactive bot](media/proactive-sample-bot.png)
+:::image type="content" source="media/proactive-sample-bot.png" alt-text="Interaction diagram showing how the bot gets a conversation reference and uses it to send a proactive message.":::
 
 ## Retrieve and store the conversation reference
 
@@ -150,14 +151,12 @@ To send a proactive message, the adapter requires an app ID for the bot. In a pr
 
 ## Test your bot
 
-1. If you have not done so already, install the [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md).
+1. If you haven't done so already, install the [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md).
 1. Run the sample locally on your machine.
 1. Start the Emulator and connect to your bot.
 1. Load to your bot's api/notify page. This will generate a proactive message in the Emulator.
 
 ## Additional information
-
-Besides the sample used in this article, additional samples are available on [GitHub](https://github.com/Microsoft/BotBuilder-Samples/).
 
 ### Requirements
 
@@ -169,7 +168,7 @@ Many channels prohibit a bot from messaging a user unless the user has messaged 
 
 When implementing proactive messages in your bot, don't send several proactive messages within a short amount of time. Some channels enforce restrictions on how frequently a bot can send messages to the user, and will disable the bot if it violates those restrictions.
 
-An ad hoc proactive message is the simplest type of proactive message. The bot simply interjects the message into the conversation whenever it is triggered, without any regard for whether the user is currently engaged in a separate topic of conversation with the bot and will not attempt to change the conversation in any way.
+For the simplest type of proactive message, the bot interjects the message into the conversation when it's triggered, without regard for the current state or topic of conversation. In this scenario, the proactive message interrupts the normal flow of conversation.
 
 To handle notifications more smoothly, consider other ways to integrate the notification into the conversation flow, such as setting a flag in the conversation state or adding the notification to a queue.
 
@@ -182,7 +181,7 @@ The _continue conversation_ method uses the conversation reference and a turn ca
 1. Call the turn callback handler to perform custom logic.
 
 In the **proactive messages** sample, the turn callback handler is defined in the notify controller and sends the message directly to the conversation, without sending the proactive activity through the bot's normal turn handler.
-The sample code also does not access or update the bot's state on the proactive turn.
+The sample code also doesn't access or update the bot's state on the proactive turn.
 
 Many bots are stateful and use state to manage a conversation over multiple turns.
 When the continue conversation method creates a turn context, the turn will have the correct user and conversation state associated with it, and you can integrate proactive turns into your bot's logic.
@@ -191,7 +190,7 @@ If you need the bot logic to be aware of the proactive message, you have a few o
 - Provide the bot's turn handler as the turn callback handler. The bot will then receive the "ContinueConversation" event activity.
 - Use the turn callback handler to add information to the turn context first, and then call the bot's turn handler.
 
-In both of these cases, you will need to design your bot logic to handle the proactive event.
+In both of these cases, you'll need to design your bot logic to handle the proactive event.
 
 ## Next steps
 

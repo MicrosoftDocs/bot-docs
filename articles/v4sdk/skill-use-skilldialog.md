@@ -1,5 +1,5 @@
 ---
-title: Use a dialog to consume a skill | Microsoft Docs
+title: Use a dialog to consume a skill
 description: Learn how to consume a skill using dialogs, using the Bot Framework SDK.
 keywords: skills
 author: JonathanFingold
@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: Gabo.Gilabert
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 11/17/2021
+ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -22,6 +22,8 @@ The skill bot accessed by this consumer can handle both message and event activi
 For a sample skill manifest and information about implementing the skill, see how to [use dialogs within a skill](skill-actions-in-dialogs.md).
 
 For information about using a skill bot outside of dialogs, see how to [implement a skill consumer](skill-implement-consumer.md).
+
+[!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
 
 ## Prerequisites
 
@@ -38,26 +40,23 @@ The **skills skillDialog** sample includes projects for two bots:
 
 This article focuses on how to use a _skill dialog_ class in a root bot to manage the skill, to send message and event activities and to cancel the skill.
 
-<!--
-If you use middleware in your skill consumer, see how to [use middleware in a skill consumer](skill-middleware-in-consumer.md) to avoid some common problems.
--->
 For information about other aspects of creating a skill consumer, see how to [implement a skill consumer](skill-implement-consumer.md).
 
 ### [C#](#tab/cs)
 
-![C# skill consumer class diagram](./media/skill-dialog/dialog-root-bot-cs.png)
+:::image type="content" source="./media/skill-dialog/dialog-root-bot-cs.png" alt-text="C# skill consumer class diagram.":::
 
 ### [JavaScript](#tab/js)
 
-![JavaScript skill consumer class diagram](./media/skill-dialog/dialog-root-bot-js.png)
+:::image type="content" source="./media/skill-dialog/dialog-root-bot-js.png" alt-text="JavaScript skill consumer class diagram.":::
 
 ### [Java](#tab/java)
 
-![Java skill consumer class diagram](./media/skill-dialog/dialog-root-bot-java.png)
+:::image type="content" source="./media/skill-dialog/dialog-root-bot-java.png" alt-text="Java skill consumer class diagram.":::
 
 ### [Python](#tab/python)
 
-![Python skill consumer class diagram](./media/skill-dialog/dialog-root-bot-py.png)
+:::image type="content" source="./media/skill-dialog/dialog-root-bot-py.png" alt-text="Python skill consumer class diagram.":::
 
 ---
 
@@ -121,6 +120,8 @@ The main dialog also demonstrates how to cancel the skill (through the skill dia
 
 The skill this bot uses supports a couple different features. It can book a flight or get the weather for a city. In addition, if it receives a message outside either of these contexts and a LUIS recognizer is configured, it attempts to interpret the user's intent.
 
+[!INCLUDE [luis-sunset-alert](../includes/luis-sunset-alert.md)]
+
 The skill manifest ([**C#**](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/csharp_dotnetcore/81.skills-skilldialog/DialogSkillBot/wwwroot/manifest/dialogchildbot-manifest-1.0.json), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/javascript_nodejs/81.skills-skilldialog/dialogSkillBot/manifest/dialogchildbot-manifest-1.0.json), [**Java**](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/java_springboot/81.skills-skilldialog/dialog-skill-bot/src/main/webapp/manifest/echoskillbot-manifest-1.0.json), [**Python**](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/python/81.skills-skilldialog/dialog-skill-bot/wwwroot/manifest/dialogchildbot-manifest-1.0.json)) describes the actions the skill can perform, its input and output parameters, and the skill's endpoints.
 Of note, the skill can handle a "BookFlight" or "GetWeather" event. It can also handle messages.
 
@@ -178,7 +179,7 @@ The constructor calls `addSkillDialogs`, a helper method, to create a `SkillDial
 The `MainDialog` class derives from `ComponentDialog`.
 In addition to conversation state, the dialog needs the root bot's app ID and references to the skill conversation ID factory, the skill HTTP client, and the skills configuration objects.
 
-The dialog constructor checks its input parameters, adds skills dialogs, adds prompt and a waterfall dialogs for managing conversation flow outside the skill, and creates a property accessor for tracking the active skill, if any.
+The dialog constructor checks its input parameters, adds skills dialogs, adds prompt and waterfall dialogs for managing conversation flow outside the skill, and creates a property accessor for tracking the active skill, if any.
 
 The constructor calls `addSkillDialogs`, a helper method, to create a `SkillDialog` for each skill that is included in the configuration file, as read from the configuration file into a `SkillsConfiguration` object.
 
@@ -201,7 +202,7 @@ The constructor calls `AddSkillDialogs`, a helper method, to create a `SkillDial
 
 ### Select a skill
 
-In its first step, the main dialog prompts the user for which skill they'd like to call, and uses the "SkllPrompt" choice prompt to get the answer. (This bot defines only one skill.)
+In its first step, the main dialog prompts the user for which skill they'd like to call, and uses the "SkillPrompt" choice prompt to get the answer. (This bot defines only one skill.)
 
 #### [C#](#tab/cs)
 
@@ -343,9 +344,9 @@ In the last step, the main dialog:
 
 ### Allow the user to cancel the skill
 
-The main dialog overrides the default behavior of the _on continue dialog_ method to allow the user to cancel the current skill, if any. The method:
+The main dialog overrides the default behavior of the _on continue dialog_ method to allow the user to cancel the current skill, if any. Within the method:
 
-- If there is an active skill and the user sends an "abort" message, cancel all dialogs and queue the main dialog to restart from the beginning.
+- If there's an active skill and the user sends an "abort" message, cancel all dialogs and queue the main dialog to restart from the beginning.
 - Then, call the base implementation of the _on continue dialog_ method to continue processing the current turn.
 
 #### [C#](#tab/cs)
@@ -445,5 +446,3 @@ Download and install the latest [Bot Framework Emulator](https://github.com/micr
 ## Additional information
 
 See how to [implement a skill consumer](skill-implement-consumer.md) for how to implement a skill consumer in general.
-
-<!-- [Use middleware in a skill consumer](skill-middleware-in-consumer.md) describes how to avoid some common problems. -->

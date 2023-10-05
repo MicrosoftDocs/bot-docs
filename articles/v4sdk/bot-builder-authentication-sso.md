@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 03/03/2022
+ms.date: 11/09/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -26,18 +26,14 @@ For more information about skills, see [Skills overview](skills-conceptual.md) a
 For more information about user authentication, see [Bot Framework authentication basics](bot-builder-authentication-basics.md), [User authentication](bot-builder-concept-authentication.md), and [Add authentication to a bot](bot-builder-authentication.md).
 
 > [!IMPORTANT]
-> When you use Azure Bot Service authentication with _Web Chat_, there are some important security considerations you must keep in mind. For more information, see the [security considerations](../rest-api/bot-framework-rest-direct-line-3-0-authentication.md#security-considerations) section in the REST authentication article.
+> When you use Azure AI Bot Service authentication with _Web Chat_, there are some important security considerations you must keep in mind. For more information, see the [security considerations](../rest-api/bot-framework-rest-direct-line-3-0-authentication.md#security-considerations) section in the REST authentication article.
 
 ## Prerequisites
 
-- Knowledge of these Bot Framework SDK features:
-  - [Bot basics][concept-basics]
-  - [Managing state][concept-state]
-  - [The dialogs library][concept-dialogs]
-  - How to [implement sequential conversation flow][simple-dialog] and [reuse dialogs][component-dialogs]
-  - [About single sign-on](bot-builder-concept-sso.md).
+- Knowledge of [Bot basics][concept-basics], [Managing state][concept-state], and [About single sign-on](bot-builder-concept-sso.md).
+- Knowledge of [The dialogs library][concept-dialogs] and how to [implement sequential conversation flow][simple-dialog] and [reuse dialogs][component-dialogs]
 - Knowledge of Azure and OAuth 2.0 development.
-- Visual Studio 2017 or later for .NET.
+- Visual Studio 2019 or later for .NET.
 - The SSO with simple skill consumer and skill in [C#][cs-auth-sample].
 
 ## About the sample
@@ -84,7 +80,9 @@ The Azure AD is a cloud identity service that allows you to build applications t
 1. Select **Add scope**.
 1. Copy and save the scope value.
 
-### Create an OAuth connection setting
+<a id="create-an-oauth-connection-setting-1"></a>
+
+### Create an OAuth connection setting for RootBot
 
 1. Create an Azure AD v2 connection in the `RootBot` bot registration and enter values as described in [Azure AD v2](/azure/bot-service/bot-builder-concept-identity-providers?view=azure-bot-service-4.0&tabs=adv2%2Cga2#azure-ad-v2-1&preserve-view=true) and the value described below.
 
@@ -93,7 +91,7 @@ The Azure AD is a cloud identity service that allows you to build applications t
     > [!NOTE]
     > _Scopes_ contains the URL that the user initially signs in into the root bot, while _token exchange URL_ is left empty.
     >
-    > As an example, let's assume that the root bot _appid_ is _rootAppId_ and the skill bot *appid* is _skillAppId_. The root bot's _scopes_ will look like _api://rootAppId/customScope_, which is used to login the user. This root bot's *scopes* is then exchanged with _api://skillAppId/customscope_ during SSO.
+    > As an example, let's assume that the root bot _appid_ is _rootAppId_ and the skill bot _appid_ is _skillAppId_. The root bot's _scopes_ will look like _api://rootAppId/customScope_, which is used to login the user. This root bot's _scopes_ is then exchanged with _api://skillAppId/customscope_ during SSO.
 1. Copy and save the name of the connection.
 
 ## Create the Azure SkillBot resource
@@ -119,6 +117,10 @@ The Azure AD is a cloud identity service that allows you to build applications t
 1. Select **Add scope**.
 1. Copy and save the scope value.
 1. Select **Add a client application**. In the far right section, in the **Client ID** box, enter the **RootBot identity** app ID you saved before. Make sure you use the _RootBot_ identity and not the registration app ID.
+
+    > [!NOTE]
+    > For client applications, Azure AI Bot Service does not support single sing-on with the Azure Active Directory B2C identity provider.
+
 1. Under **Authorized scope**, check the box by the scope value.
 1. Select **Add application**.
 1. In the navigation pane on the left, select **API permissions**. It's a best practice to explicitly set the API permissions for the app.
@@ -136,7 +138,7 @@ The Azure AD is a cloud identity service that allows you to build applications t
 
    1. Select **Add permissions**.
 
-### Create an OAuth connection setting
+### Create an OAuth connection setting for SkillBot
 
 1. Create an Azure AD v2 connection in the `SkillBot` bot registration and enter values as described in [Azure AD v2](/azure/bot-service/bot-builder-concept-identity-providers?view=azure-bot-service-4.0&tabs=adv2%2Cga2#azure-ad-v2-1&preserve-view=true) and the values described below.
 1. In the **Token Exchange URL** box, enter the `SkillBot` scope value you saved in the previous steps.
@@ -158,8 +160,6 @@ For information about the differences between the v1 and v2 endpoints, see [Why 
 ## Prepare the samples code
 
 You must update the `appsettings.json` file in both samples as described below.
-
-# [C#](#tab/csharp)
 
 1. Clone the [SSO with Simple Skill Consumer and Skill][cs-auth-sample] sample from the GitHub repository.
 1. Open the `SkillBot` project `appsettings.json` file. Assign the following values from the saved file:
@@ -190,8 +190,6 @@ You must update the `appsettings.json` file in both samples as described below.
     }
     ```
 
----
-
 ## Test the samples
 
 Use the following for testing:
@@ -204,14 +202,14 @@ Use the following for testing:
 
 - `SkillBot` commands
 
-  - `skill login` allows the `RootBot` to sign into the `SkillBot`, on behalf of the user. The user is not shown a sign-in card, if already signed in, unless SSO fails.
+  - `skill login` allows the `RootBot` to sign into the `SkillBot`, on behalf of the user. The user isn't shown a sign-in card, if already signed in, unless SSO fails.
   - `skill token` displays the user's token from the `SkillBot`.
   - `skill logout` logs the user out of the `SkillBot`
 
->[!NOTE]
+> [!NOTE]
 > The first time users try SSO on a skill, they may be presented with an OAuth card to log in. This is because they haven't yet given consent to the skill's Azure AD app. To avoid this, they can grant admin consent for any graph permissions requested by the Azure AD app.
 
-# [Emulator](#tab/eml)
+### [Emulator](#tab/eml)
 
 If you haven't done so already, install the [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md). See also [Debug with the Emulator](../bot-service-debug-emulator.md).
 
@@ -225,8 +223,8 @@ After you've configured the authentication mechanism, you can perform the actual
 Notice that in the`RootBot` project `appsettings.json` file you've the following settings:
 
     ```json
-        "SkillHostEndpoint": "http://localhost:3978/api/skills/"
-        "SkillEndpoint": "http://localhost:39783/api/messages"
+    "SkillHostEndpoint": "http://localhost:3978/api/skills/"
+    "SkillEndpoint": "http://localhost:39783/api/messages"
     ```
 
     > [!NOTE]
@@ -237,28 +235,24 @@ Notice that in the`RootBot` project `appsettings.json` file you've the following
 1. Type `hi` to start the conversation.
 1. Enter **login**.  The `RootBot` will display a _Sign In to AAD_ authentication card.
 
-    ![Root sign in](media/how-to-auth/auth-bot-sso-test-root-signin.PNG)
+    :::image type="content" source="media/how-to-auth/auth-bot-sso-test-root-signin.PNG" alt-text="Example of a sign-in card.":::
 
 1. Select **Sign In**. The pop-up dialog _Confirm Open URL_ is displayed.
 
-    ![Root confirm url](media/how-to-auth/auth-bot-test-confirm-url.PNG)
+    :::image type="content" source="media/how-to-auth/auth-bot-test-confirm-url.PNG" alt-text="Screenshot of the 'open URL' confirmation message.":::
 
 1. Select **Confirm**. You'll be logged in and the `RootBot` token is displayed.
 1. Enter **token** to display the token again.
 
-    ![Root token image](media/how-to-auth/auth-bot-sso-test-token.PNG)
+    :::image type="content" source="media/how-to-auth/auth-bot-sso-test-token.PNG" alt-text="Example of a message displaying the root token.":::
 
     Now you're ready to communicate with the `SkillBot`. Once you've signed using the `RootBot`, you don't need to provide your credentials again until you sign out. This demonstrates that SSO is working.
 
 1. Enter **skill login** in the Emulator box. You'll not be asked to log in again. Instead the SkillBot token is displayed.
-
-1. Go ahead enter **skill token** to display the token again.
-
-     ![Skill token image](media/how-to-auth/auth-bot-sso-test-skill-token.PNG)
-
+1. Enter **skill token** to display the token again.
 1. Now you can enter **skill logout** to sign out of the `SkillBot`. Then enter **logout** to sign out of the `SimpleRootBoot`.
 
-# [Web Chat](#tab/wct)
+### [Web Chat](#tab/wct)
 
 1. Deploy the root bot and the skill bot to Azure. For more information, see [Tutorial: Provision a bot in Azure](../tutorial-provision-a-bot.md) and [Tutorial: Publish a basic bot](../tutorial-publish-a-bot.md).
 1. In your code editor, for example Visual Studio, replace the localhost addresses in the `RootBot` project `appsetting.js` file with the actual Azure addresses as shown below.
@@ -269,40 +263,35 @@ Notice that in the`RootBot` project `appsettings.json` file you've the following
     ````
 
 1. In your browser, go to the [Azure portal][azure-portal].
-1. Open your root bot registration. In the left, pane select **Test in Web Chat**. The dialog window with your root bot is displayed with the bot greeting message.
+1. Open your root bot registration. In the left pane, select **Test in Web Chat**. The dialog window with your root bot is displayed with the bot greeting message.
 1. Start the conversation with the bot by entering _hi_ for example. The bot will echo your message back.
 1. Enter **login**. The `RootBot` will display a _Sign In to AAD_ authentication card.
 
-    ![Skill sign in](media/how-to-auth/auth-bot-sso-test-webchat-root-signin.PNG)
+    :::image type="content" source="media/how-to-auth/auth-bot-sso-test-webchat-root-signin.PNG" alt-text="Example of a sign-in card.":::
 
 1. Select **Sign In**. A web page with a validation code is displayed.
 1. To finish signing in, copy the code and enter it in the input box. The `RootBot` token is displayed.
 1. Enter **token** to display the token again.
 
-    ![Root token webchat](media/how-to-auth/auth-bot-sso-test-webchat-token.PNG)
+    :::image type="content" source="media/how-to-auth/auth-bot-sso-test-webchat-token.PNG" alt-text="Example of a message displaying the root token.":::
 
     Now you're ready to communicate with the `SkillBot`. Once you've signed in the `RootBot`, you don't need to provide your credentials again until you sign out. This demonstrates that SSO is working.
 
 1. Enter **skill login**.  The SkillBot token is displayed.
-
-    ![Skill token webchat](media/how-to-auth/auth-bot-sso-test-webchat-skill-token.PNG)
-
-1. Enter **skill token** to display the token again.
-This tells you that you're communicating with the `SkillBot` without the need to sign in again. SSO in action!
+1. Enter **skill token** to display the token again. This tells you that you're communicating with the `SkillBot` without the need to sign in again. SSO in action!
 1. Now you can enter **skill logout** to sign out of the `SkillBot`. Then enter **logout** to sign out of the `SimpleRootBoot`.
 
 ---
 
 ## Additional information
 
-The following time-sequence diagram applies to the samples used in the article and shows the interaction between the various components involved. _ABS_ stands for _Azure Bot Service_.
+The following time-sequence diagram applies to the samples used in the article and shows the interaction between the various components involved. _ABS_ stands for _Azure AI Bot Service_.
 
-![Skill token flow](media/how-to-auth/auth-bot-sso-sample-flow-diagram.PNG)
+:::image type="content" source="media/how-to-auth/auth-bot-sso-sample-flow-diagram.PNG" alt-text="Sequence diagram illustrating the skill token flow.":::
 
-<!-- verify -->
 1. The first time, the user enters the `login` command for the **RootBot**.
 1. The **RootBot** sends an **OAuthCard** asking the user to sign in.
-1. The user enters the authentication credentials that are sent to the **ABS** (Azure Bot Service).
+1. The user enters the authentication credentials that are sent to the **ABS** (Azure AI Bot Service).
 1. The **ABS** sends the authentication token, generated based on the user's credentials, to the **RootBot**.
 1. The **RootBot** displays the root token for the user to see.
 1. The user enters the `skill login` command for the **SkillBot**.
@@ -311,26 +300,17 @@ The following time-sequence diagram applies to the samples used in the article a
 1. SSO sends the **SkillBot** **skill token** to the **RootBot**.
 1. The **RootBot** displays the skill token for the user to see. Notice that the skill token was generated without the user having to sign in the **SKillBot**. This is because of the SSO.
 
-To see how the token exchange happens, please refer to the example shown below. The function can be found in [TokenExchangeSkillHandler.cs](https://github.com/microsoft/BotBuilder-Samples/blob/master/experimental/sso-with-skills/RootBot/TokenExchangeSkillHandler.cs).
-
-# [C#](#tab/csharp)
+The following example shows how the token exchange happens. The code is from the [TokenExchangeSkillHandler.cs](https://github.com/microsoft/BotBuilder-Samples/blob/master/experimental/sso-with-skills/RootBot/TokenExchangeSkillHandler.cs) file.
 
 [!code-csharp[sso-token-exchange](~/../botbuilder-samples/experimental/sso-with-skills/RootBot/TokenExchangeSkillHandler.cs?range=92-136)]
 
----
-
 [azure-portal]: https://ms.portal.azure.com
-[azure-aad-blade]: https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview
-[aad-registration-blade]: https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredAppsPreview
 
 [concept-basics]: bot-builder-basics.md
 [concept-state]: bot-builder-concept-state.md
 [concept-dialogs]: bot-builder-concept-dialog.md
 
 [simple-dialog]: bot-builder-dialog-manage-conversation-flow.md
-[dialog-prompts]: bot-builder-prompts.md
 [component-dialogs]: bot-builder-compositcontrol.md
 
 [cs-auth-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/experimental/sso-with-skills
-[js-auth-sample]: https://github.com/Microsoft/BotBuilder-Samples/blob/main/samples/javascript_nodejs/18.bot-authentication
-[python-auth-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/18.bot-authentication

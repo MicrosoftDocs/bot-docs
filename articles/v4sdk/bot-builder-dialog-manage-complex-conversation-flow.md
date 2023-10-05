@@ -1,5 +1,5 @@
 ---
-title: Create advanced conversation flow using branches and loops in Bot Framework SDK
+title: Create advanced conversation flow using branches and loops
 description: Learn how to manage a complex conversation flow with dialogs in the Bot Framework SDK.
 keywords: complex conversation flow, repeat, loop, menu, dialogs, prompts, waterfalls, dialog set
 author: JonathanFingold
@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/05/2021
+ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -18,6 +18,8 @@ monikerRange: 'azure-bot-service-4.0'
 
 You can create complex conversation flows using the dialogs library.
 This article covers how to manage complex conversations that branch and loop and how to pass arguments between different parts of the dialog.
+
+[!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
 
 ## Prerequisites
 
@@ -38,23 +40,23 @@ The bot derives from the activity handler. Like many of the sample bots, it welc
 
 To use dialogs, install the **Microsoft.Bot.Builder.Dialogs** NuGet package.
 
-![C# complex bot flow diagram](./media/complex-conversation-flow.png)
+:::image type="content" source="./media/complex-conversation-flow.png" alt-text="Class diagram for C# sample.":::
 
 ### [JavaScript](#tab/javascript)
 
 To use dialogs, your project needs to install the **botbuilder-dialogs** npm package.
 
-![JavaScript complex bot flow diagram](./media/complex-conversation-flow-js.png)
+:::image type="content" source="./media/complex-conversation-flow-js.png" alt-text="Class diagram for JavaScript sample.":::
 
 ### [Java](#tab/java)
 
-![Java complex bot flow diagram](./media/complex-conversation-flow-java.png)
+:::image type="content" source="./media/complex-conversation-flow-java.png" alt-text="Class diagram for Java sample.":::
 
 ### [Python](#tab/python)
 
 To use dialogs, your project needs to install the **botbuilder-dialogs** PyPI package by running `pip install botbuilder-dialogs`.
 
-![Python complex bot flow diagram](./media/complex-conversation-flow-python.png)
+:::image type="content" source="./media/complex-conversation-flow-python.png" alt-text="Class diagram for Python sample.":::
 
 ---
 
@@ -131,7 +133,7 @@ The main dialog has two steps:
 
 ### The top-level dialog
 
-The top-level dialog has 4 steps:
+The top-level dialog has four steps:
 
 1. Ask for the user's name.
 1. Ask for the user's age.
@@ -284,20 +286,20 @@ Create and register services as needed:
 ---
 
 > [!NOTE]
-> Memory storage is used for testing purposes only and is not intended for production use.
+> Memory storage is used for testing purposes only and isn't intended for production use.
 > Be sure to use a persistent type of storage for a production bot.
 
 ## Test the bot
 
-1. If you have not done so already, install the [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md).
+1. If you haven't done so already, install the [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md).
 1. Run the sample locally on your machine.
 1. Start the Emulator, connect to your bot, and send messages as shown below.
 
-![test complex dialog sample](~/media/emulator-v4/test-complex-dialog.png)
+    :::image type="content" source="../media/emulator-v4/test-complex-dialog.png" alt-text="Example transcript from a conversation with the complex dialog bot.":::
 
 ## Additional resources
 
-For an introduction on how to implement a dialog, see [implement sequential conversation flow][simple-dialog], which uses a single waterfall dialog and a few prompts to create a simple interaction that asks the user a series of questions.
+For an introduction on how to implement a dialog, see [implement sequential conversation flow][simple-dialog], which uses a single waterfall dialog and a few prompts to ask the user a series of questions.
 
 The Dialogs library includes basic validation for prompts. You can also add custom validation. For more information, see [gather user input using a dialog prompt][dialog-prompts].
 
@@ -308,8 +310,6 @@ For more information, see [reuse dialogs][component-dialogs].
 
 > [!div class="nextstepaction"]
 > [Reuse dialogs](bot-builder-compositcontrol.md)
-
-<!-- Footnote-style links -->
 
 [concept-basics]: bot-builder-basics.md
 [concept-state]: bot-builder-concept-state.md

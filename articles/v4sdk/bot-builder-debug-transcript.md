@@ -1,5 +1,5 @@
 ---
-title: Debug your bot using transcript files - Bot Service
+title: Debug your bot using transcript files
 description: Learn how to use transcript files to debug bots. See how to create and retrieve these files, which provide detailed sets of user interactions and bot responses.
 keywords: debugging, faq, transcript file, emulator
 author: JonathanFingold
@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 08/10/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -20,58 +20,72 @@ One of the keys to successful testing and debugging a bot is your ability to rec
 
 ## The bot transcript file
 
-A bot transcript file is a specialized JSON file that preserves the interactions between a user and your bot. A transcript file preserves not only the contents of a message, but also interaction details such as the user ID, channel ID, channel type, channel capabilities, time of the interaction, etc. All of this information can then be used to help find and resolve issues when testing or debugging your bot.
+A bot transcript file is a specialized JSON file that preserves the interactions between a user and your bot. A transcript file preserves not only the contents of a message, but also interaction details such as the user ID, channel ID, channel type, channel capabilities, time of the interaction, and so on. All of this information can then be used to help find and resolve issues when testing or debugging your bot.
 
 ## Creating/Storing a bot transcript file
 
-This article shows how to create bot transcript files using Microsoft's [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator). Transcript files may also be created programmatically; see [Blob transcript storage](./bot-builder-howto-v4-storage.md#blob-transcript-storage) to read more concerning that approach. In this article we will use the Bot Framework sample code for [Multi Turn Prompt Bot](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/05.multi-turn-prompt) that requests a user's mode of transportation, name and age, but any code that can be accessed using Microsoft's Bot Framework Emulator may be used to create a transcript file.
+This article shows how to create bot transcript files using the [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator). Transcript files may also be created programmatically; see [Blob transcript storage](./bot-builder-howto-v4-storage.md#blob-transcript-storage) to read more concerning that approach. In this article, we'll use the Bot Framework sample code for [Multi Turn Prompt Bot](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/05.multi-turn-prompt) that requests a user's mode of transportation, name and age, but any code that can be accessed using Microsoft's Bot Framework Emulator may be used to create a transcript file.
 
-To begin this process ensure that the bot code you want to test is running within your development environment. Start the Bot Framework Emulator, select the _Open Bot_ button, then enter the address of _localhost:port_ shown in your browser followed by "/api/messages" as shown in the image below. Now click the _Connect_ button to connect the Emulator to your bot.
+To begin this process, ensure that the bot code you want to test is running within your development environment.
 
-![connect Emulator to your code](./media/emulator_open_bot_configuration.png)
+1. Start the Emulator.
+1. On the **Welcome** tab, select **Open Bot**.
+1. Enter the address of the port to which your bot is listening, followed by `/api/messages`, for instance, `http://localhost:3978/api/messages`.
 
-After connecting the Emulator to your running code, test your code by sending simulated user interactions to the bot. For this example we have passed in the user's mode of transportation, name and age. After you have entered all of the user interactions you want to preserve, use the Bot Framework Emulator to create and save a transcript file containing this conversation.
+    If your bot is configured with a Microsoft app ID and password, enter the ID and password in the **Open a bot** dialog. Otherwise, the Emulator won't be able to connect to your bot.
 
-Within the _Live Chat_ tab (shown below), select the _Save transcript_ button.
+1. Select **Connect** to connect the Emulator to your bot.
 
-![select save transcript](./media/emulator_transcript_save.png)
+    :::image type="content" source="./media/emulator_open_bot_configuration.png" alt-text="Screenshot of dialog for connecting to a bot from the Emulator.":::
 
-Choose a location and name for your transcript file and then select the save button.
+Test your code by interacting with your bot in the Emulator. After you've entered all of the user interactions you want to preserve, use the Bot Framework Emulator to create and save a transcript file containing this conversation.
 
-![save transcript](./media/emulator_transcript_saveas_ursula.png)
+1. In the **Live Chat** tab, select **Save transcript**.
+
+    :::image type="content" source="./media/emulator_transcript_save.png" alt-text="Screenshot of a conversation and the 'save transcript' button in the Emulator.":::
+
+1. Choose a location and name for your transcript file and select **Save**.
+
+    :::image type="content" source="./media/emulator_transcript_saveas_ursula.png" alt-text="Screenshot of the 'save conversation transcript' dialog.":::
 
 All of the user interactions and bot responses that you entered to test your code with the Emulator have now been saved into a transcript file that you can later reload to help debug interactions between your user and your bot.
 
 ## Retrieving a bot transcript file
 
-To retrieve a bot transcript file using the Bot Framework Emulator, select the _File_ then _Open Transcript..._ in the upper left corner of the Emulator, as shown below. Next, select the transcript file that you want to retrieve. (Transcripts may also be accessed from within the _TRANSCRIPTS_ list control in the _RESOURCES_ section of the Emulator)
+When you open a transcript file, the Emulator loads the saved conversation into a new tab.
 
-In this example we are retrieving the transcript file named "ursula_user.transcript". Selecting a transcript file will automatically load the entire preserved conversation into a new Tab titled _Transcript_.
+To retrieve a bot transcript file:
 
-![retrieve saved transcript](./media/emulator_transcript_retrieve.png)
+1. Open the Emulator.
+1. From the menu, select **File** then **Open Transcript**.
+1. Use the **Open transcript file** to select and open the transcript file you want to retrieve.
+
+:::image type="content" source="./media/emulator_transcript_retrieve.png" alt-text="Screenshot of the 'open transcript file' dialog.":::
 
 ## Debug using transcript file
 
-With your transcript file loaded, you are now ready to debug interactions that you captured between a user and your bot. To do this, simply click on any event or activity recorded in the _LOG_ section shown in the lower right area of the Emulator. In the example shown below, we selected the user's first interaction when they sent the message "Hello". When we do this, all of the information in your transcript file concerning this specific interaction is displayed in the Emulator's _INSPECTOR_ window in JSON format. Looking at some of these values from the bottom upward, we see the:
+With your transcript file loaded, you're now ready to debug interactions that you captured between a user and your bot.
 
-* Interaction type was _message_.
-* Time the message was sent.
-* Plain text sent contained "Yes".
-* Message was sent to our bot.
-* User ID and information.
-* Channel ID, capabilities, and information.
+1. Select any user or bot message, or activity recorded in the Emulator's _log_ pane.
+1. The Emulator will display the activity information in the _inspector_ pane. The activity information is the payload of the HTTP request for the activity.
 
-![debug using transcript](./media/emulator_transcript_debug.png)
+    A message activity includes:
 
-This detailed level of information allows you to follow the step-by-step interactions between the user's input and your bot's response, which is useful for debugging situations where your bot either did not respond back in the manner that you anticipated or did not respond back to the user at all. Having both these values and a record of the steps leading up to the failed interaction allows you to step through your code, find the location where your bot does not respond as anticipated, and resolve those issues.
+   - The activity type
+   - The time the activity was sent from or received by the channel
+   - Information about the user's channel
+   - Information about the sender and receiver of the activity, in the `from` and `recipient` fields, respectively
+   - Information specific to the type of activity, such as the message text for a message activity.
 
-Using transcript files together with the Bot Framework Emulator is just one of the many tools you can use to help you test and debug your bot's code and user interactions. To find more ways to test and debug your bot, see the additional resources listed below.
+This detailed level of information allows you to follow the step-by-step interactions between the user's input and your bot's response, which is useful for debugging situations where your bot either didn't respond in the manner that you anticipated or didn't respond to the user at all. Having both these values and a record of the steps leading up to the failed interaction allows you to step through your code, find the location where your bot doesn't respond as anticipated, and resolve those issues.
+
+Using transcript files together with the Bot Framework Emulator is just one of the many tools you can use to help you test and debug your bot's code and user interactions.
 
 ## Additional information
 
-For additional testing and debugging information see:
+For more testing and debugging information, see:
 
-* [Bot testing and debugging guidelines](./bot-builder-testing-debugging.md)
-* [Debug with the Bot Framework Emulator](../bot-service-debug-emulator.md)
-* [Troubleshoot general problems](../bot-service-troubleshoot-bot-configuration.md) and the other troubleshooting articles in that section.
-* [Debugging in Visual Studio](/visualstudio/debugger/index)
+- [Bot testing and debugging guidelines](./bot-builder-testing-debugging.md)
+- [Debug with the Bot Framework Emulator](../bot-service-debug-emulator.md)
+- [Troubleshoot general problems](../bot-service-troubleshoot-bot-configuration.md) and the other troubleshooting articles in that section.
+- [Debugging in Visual Studio](/visualstudio/debugger/index)

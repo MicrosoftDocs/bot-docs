@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 08/18/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -32,18 +32,19 @@ This article describes how to debug your bot locally using ngrok and a C# [EchoB
 
 ## Run ngrok
 
-[ngrok](https://ngrok.com/docs) is a cross-platform application that can create a tunnelling or forwarding URL, so that internet requests reach your local machine. Use ngrok to forward messages from external channels on the web directly to your local machine to allow debugging, as opposed to the standard messaging endpoint configured in the Azure portal.
+[ngrok](https://ngrok.com/docs) is a cross-platform application that can create a tunneling or forwarding URL, so that internet requests reach your local machine. Use ngrok to forward messages from external channels on the web directly to your local machine to allow debugging, as opposed to the standard messaging endpoint configured in the Azure portal.
 
 1. Open a terminal and go to the folder with the ngrok executable.
 
 1. Run ngrok with the following command to create a new tunnel.
 
     ```console
-    ngrok http 3978 -host-header="localhost:3978"
+    ngrok http 3978 --host-header rewrite
     ```
 
     > [!NOTE]
-    > Note that the port specified is the port your bot is running on. You may use any localhost port you'd like.
+    > The port specified is the port your bot is running on. You may use any localhost port you'd like.
+
 
 1. When ngrok starts, copy and save the public forwarding URL for later.
 

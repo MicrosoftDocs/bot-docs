@@ -56,7 +56,7 @@ It's the job of our group of pull request reviewers to review file names when a 
 Folders should be created only for services, and the file name should match the ACOM service slug. Use only letters and hyphens, and use all lowercase letters. Obtain approval from the repository admin before you create a new folder that is not for a released service.
 
 ## Changing case in file names
-Windows operating systems are case insensitive, so if you need to change a file name to fix casing, it is better to make a substantive change, unless you are able to make the change on a Linux or Mac. For example:
+Windows operating systems are case insensitive, so if you need to change a file name to fix casing, it is better to make a substantive change, unless you're able to make the change on a Linux or Mac. For example:
 
   biztalk-administration-and-Development-Task-List-in-BizTalk-Services --> biztalk-services-administration-and-development-task-list
 

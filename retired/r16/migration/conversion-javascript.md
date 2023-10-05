@@ -60,7 +60,7 @@ The bot you're migrating demonstrates the use of multiple dialogs to manage conv
 1. You will need a v4 project into which to port the bot code. To create a project locally, see [Create a bot with the Bot Framework SDK for JavaScript](../../javascript/bot-builder-javascript-quickstart.md).
 
     > [!TIP]
-    > You can also create a project on Azure, see [Create a bot with Azure Bot Service](../../bot-service-quickstart.md).
+    > You can also create a project on Azure, see [Create a bot with Azure AI Bot Service](../../bot-service-quickstart.md).
     > However, these two methods result in a slight difference in supporting files. The v4 project for this article was created as a local project.
 
 1. Then open the project in Visual Studio Code.
@@ -81,7 +81,7 @@ Edit **./index.js**, which is the entry point for our bot app. This will contain
 
     ```javascript
     // Import required bot services.
-    // See https://docs.microsoft.com/azure/bot-service/bot-builder-basics to learn more about the different parts of a bot.
+    // See https://learn.microsoft.com/azure/bot-service/bot-builder-basics to learn more about the different parts of a bot.
     const { BotFrameworkAdapter, MemoryStorage, ConversationState } = require('botbuilder');
 
     // This bot's main dialog.

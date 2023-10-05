@@ -4,7 +4,7 @@
   items:
   - name: What is the Bot Framework SDK?
     href: bot-service-overview.md
-  - name: Choose the right chatbot solution for your use case
+  - name: Choose the right chatbot solution
     href: bot-overview.md
   - name: What's new
     href: what-is-new.md
@@ -14,18 +14,6 @@
     href: bot-service-quickstart-create-bot.md
   - name: Create an Azure Bot resource
     href: v4sdk/abs-quickstart.md
-  # - name: Create a bot using Azure PowerShell # Doesn't work, shouldn't have been added, will add back in when it works.
-  #   href: powershell/bot-builder-powershell-quickstart.md
-- name: Tutorials
-  items:
-  - name: Provision a bot in Azure
-    displayName: create, create bot resources
-    href: tutorial-provision-a-bot.md
-  - name: Publish a bot to Azure
-    displayName: deploy, deploy a bot
-    href: tutorial-publish-a-bot.md
-  - name: Add QnA Maker and redeploy a bot
-    href: v4sdk/bot-builder-tutorial-add-qna.md
 - name: Samples
   items:
   - name: Bot Framework samples repo on GitHub
@@ -74,14 +62,16 @@
       href: v4sdk/bot-builder-concept-waterfall-dialogs.md
     - name: Middleware
       href: v4sdk/bot-builder-concept-middleware.md
-    - name: Language Understanding
+    - name: Natural language understanding
       href: v4sdk/bot-builder-concept-luis.md
     - name: Understand the structure of an echo bot
       href: v4sdk/bot-builder-create-a-bot-project.md
   - name: How bots for Microsoft Teams work
     href: v4sdk/bot-builder-basics-teams.md
-  - name: Regionalization in Azure Bot Services
+  - name: Regionalization in Azure AI Bot Service
     href: v4sdk/bot-builder-concept-regionalization.md
+  - name: Monitor Azure AI Bot Service
+    href: monitor-bot-service.md
   - name: Skills
     items:
     - name: About skills
@@ -120,7 +110,7 @@
         href: bot-service-design-pattern-embed-web-site.md
   - name: Develop
     items:
-    - name: Send and receive text message
+    - name: Send and receive text messages
       href: v4sdk/bot-builder-howto-send-messages.md
     - name: Add media to messages
       href: v4sdk/bot-builder-howto-add-media-attachments.md
@@ -152,12 +142,8 @@
         href: v4sdk/bot-builder-howto-v4-luis.md
       - name: Answer user's questions using QnA Maker
         href: v4sdk/bot-builder-howto-qna.md
-      - name: Use multiple LUIS and QnA models
-        items:
-        - name: Use Orchestrator for intent resolution
-          href: v4sdk/bot-builder-tutorial-orchestrator.md
-        - name: Use Dispatch (deprecated) for intent resolution
-          href: v4sdk/bot-builder-tutorial-dispatch.md
+      - name: Use Orchestrator for intent resolution
+        href: v4sdk/bot-builder-tutorial-orchestrator.md
     - name: Write directly to storage
       href: v4sdk/bot-builder-howto-v4-storage.md
     - name: Implement custom storage for your bot
@@ -204,15 +190,21 @@
       href: bot-service-debug-inspection-middleware.md
     - name: Debug your bot using transcript files
       href: v4sdk/bot-builder-debug-transcript.md
-    - name: Debug language files with Adaptive Tools
-      href: bot-service-debug-adaptive-tools.md
   - name: Deploy
     items:
     - name: Deploy your bot to Azure
-      href: bot-builder-deploy-az-cli.md
+      displayName: Provision and publish your bot to Azure
+      href: provision-and-publish-a-bot.md
+    - name: Provision an App Service resource
+      displayName: Create an App Service for a bot
+      href: provision-app-service.md
+    - name: Provision an Azure Bot resource
+      displayName: Create an Azure Bot resource
+      href: provision-azure-bot.md
     - name: Configure an Azure Government bot
       href: how-to-deploy-gov-cloud-high.md
     - name: Set up continuous deployment
+      displayName: Set up continuous integration and delivery, Set up CI/CD, Set up CICD
       href: bot-service-build-continuous-deployment.md
   - name: Manage
     items:
@@ -220,9 +212,10 @@
       href: bot-service-manage-overview.md
     - name: Register a bot with Azure
       href: bot-service-quickstart-registration.md
-    - name: Bot analytics
-      href: bot-service-manage-analytics.md
+    - name: Reliability guidance
+      href: bot-service-reliability-guidance.md
     - name: Configure bot settings
+      displayName: endpoint, icon
       href: bot-service-manage-settings.md
     - name: Channels
       items:
@@ -255,23 +248,26 @@
           - name: Use extension with Web Chat
             href: bot-service-channel-directline-extension-webchat-client.md
           - name: Configure a virtual network
+            displayName: Use Direct Line App Service extension within a VNET, Use Direct Line App Service extension within a virtual network
             href: bot-service-channel-directline-extension-vnet.md
           - name: Configure network isolation
             href: dl-network-isolation-how-to.md
       - name: Alexa
         href: bot-service-channel-connect-alexa.md
+      - name: Azure Communication Services Chat (preview)
+        href: bot-service-channel-azure-communication.md
       - name: Email
         href: bot-service-channel-connect-email.md
       - name: Facebook
         href: bot-service-channel-connect-facebook.md
       - name: GroupMe
         href: bot-service-channel-connect-groupme.md
-      - name: Kik
-        href: bot-service-channel-connect-kik.md
       - name: LINE
         href: bot-service-channel-connect-line.md
       - name: Microsoft Teams
         href: channel-connect-teams.md
+      - name: M365 (preview)
+        href: bot-service-channel-connect-m365.md
       - name: Omnichannel
         href: bot-service-channel-omnichannel.md
       - name: Outlook (preview)
@@ -284,9 +280,7 @@
         href: bot-service-channel-connect-slack.md
       - name: Telegram
         href: bot-service-channel-connect-telegram.md
-      - name: Telephony
-        href: bot-service-channel-connect-telephony.md
-      - name: Twilio
+      - name: Twilio (SMS)
         href: bot-service-channel-connect-twilio.md
       - name: WeChat
         href: bot-service-channel-connect-wechat.md
@@ -308,6 +302,8 @@
       href: /java/api/?view=botbuilder-java&preserve-view=true
     - name: Python SDK v4
       href: /python/api/?view=botbuilder-py-latest&preserve-view=true
+  - name: Monitoring data
+    href: monitor-bot-service-reference.md
   - name: REST API reference
     items:
     - name: Bot Framework REST API
@@ -475,7 +471,7 @@
       href: https://github.com/Microsoft/botframework-sdk/blob/main/specs/transcript/transcript.md
   - name: Virtual Assistant
     href: v4sdk/bot-builder-virtual-assistant-introduction.md
-  - name: WebChat
+  - name: Web Chat
     items:
     - name: Overview
       href: v4sdk/bot-builder-webchat-overview.md

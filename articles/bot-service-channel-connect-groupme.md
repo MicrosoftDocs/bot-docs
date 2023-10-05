@@ -5,10 +5,10 @@ keywords: bot channel, GroupMe, create GroupMe
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: mainguy
+ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 03/22/2022
+ms.date: 08/05/2022
 ---
 
 # Connect a bot to GroupMe
@@ -28,7 +28,9 @@ You can configure your bot to communicate with people through GroupMe. This arti
 1. Go to the GroupMe developers site and sign in to your account.
 1. [Create a GroupMe application](https://dev.groupme.com/applications/new) for your bot.
     1. Enter a name for your application.
-    1. For the **Callback URL**, enter `https://groupme.botframework.com/Home/Login`.
+    1. For the **Callback URL**:
+        - For a global bot, enter `https://groupme.botframework.com/Home/Login`.
+        - For a regional bot, enter `https://europe.groupme.botframework.com/Home/Login`.
     1. Enter the rest of the information requested.
     1. Agree to GroupMe's terms of use and branding standards.
     1. Select **Save** to complete creation of the app.

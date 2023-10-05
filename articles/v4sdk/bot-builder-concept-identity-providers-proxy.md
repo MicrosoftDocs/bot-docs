@@ -1,14 +1,14 @@
 ---
-title: Identity providers proxy - Bot Service
-description: Creating an OAuth2 proxy service to call custom or advanced identity providers in the Azure Bot Service.
-keywords: azure bot service, authentication, identity providers proxy, bot framework token service
+title: Identity providers proxy
+description: Creating an OAuth2 proxy service to call custom or advanced identity providers in the Azure AI Bot Service.
+keywords: Azure AI Bot Service, authentication, identity providers proxy, bot framework token service
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -16,14 +16,14 @@ monikerRange: 'azure-bot-service-4.0'
 
 This document explains how to create a proxy to interact with custom or advanced identity providers that use OAuth2 protocol.
 
-The Bot Framework allows users to log in using a variety of identity providers that use the OAuth2 protocol. However, identity providers can deviate from the core OAuth2 protocol, by offering more advanced capabilities, or alternative sign-in options. In these cases, you may not find an appropriate *connection setting configuration* that works for you. A possible solution is to do the following:
+The Bot Framework allows users to log in using various identity providers that use the OAuth2 protocol. However, identity providers can deviate from the core OAuth2 protocol, by offering more advanced capabilities, or alternative sign-in options. In these cases, you may not find an appropriate *connection setting configuration* that works for you. A possible solution is to do the following:
 
 1. Write an **OAuth2 provider proxy** that is in between the Bot Framework token service and the *more customized or advanced* identity provider.
 1. Configure the connection setting to call this proxy, and have this proxy make the calls to the custom or advanced identity provider. The proxy can also map or transform responses to make them conform to what the Bot Framework token service expects.
 
 ## OAuth2 Proxy Service
 
-To build an **OAuth2 Proxy Service**, you need to implement a REST service with two OAuth2 APIs: one for authorization and one for retrieving a token. Below you will find a C# example of each of these methods and what you can do in these methods to call a custom or advanced identity provider.
+To build an **OAuth2 Proxy Service**, you need to implement a REST service with two OAuth2 APIs: one for authorization and one for retrieving a token. Below, you'll find a C# example of each of these methods and what you can do in these methods to call a custom or advanced identity provider.
 
 ### Authorize API
 
@@ -62,7 +62,7 @@ public ActionResult Authorize(
 
 ### Token API
 
-The Token API is an **HTTP POST** that is called by the Bot Framework token service. The Bot Framework token service will send the `client_id` and `client_secret` in the request’s body. These values should be validated and/or passed along to the custom or advanced identity provider.
+The Token API is an **HTTP POST** that is called by the Bot Framework token service. The Bot Framework token service will send the `client_id` and `client_secret` in the request's body. These values should be validated and/or passed along to the custom or advanced identity provider.
 The response to this call is a JSON object containing the `access_token` and expiration value of the token (all other values are ignored). If your identity provider returns an `id_token` or some other value that you want to return instead, you just need to map it to the `access_token` property of your response before you return.
 
 ```csharp
@@ -108,16 +108,16 @@ public async Task<ActionResult> Token()
 
 ## Proxy Connection Setting Configuration
 
-Once you have your **OAuth2 Proxy Service** running, you can create an *OAuth Service Provider Connection Setting* on your Azure Bot Service resource. Follow the steps described below.
+Once you have your **OAuth2 Proxy Service** running, you can create an *OAuth Service Provider Connection Setting* on your Azure AI Bot Service resource. Follow the steps described below.
 
 1. Give a name to the connection setting.
 1. Select the **Generic Oauth 2** service provider.
-1. Enter a **Client id** and **Client secret** for the connection. These values might be provided by your advanced or custom identity provider, or these could be specific just to your proxy if the identity provider you are using does not use client id and secret.
+1. Enter a **Client id** and **Client secret** for the connection. These values might be provided by your advanced or custom identity provider, or these could be specific just to your proxy if the identity provider you're using doesn't use client id and secret.
 1. For the **Authorization URL**, you should copy the address of your authorization REST API, for example `https://proxy.com/api/oauth/authorize`.
 1. For the **Token and Refresh URL**, you should copy the address of your token REST API, for example `https://proxy.com/api/oauth/token`. The Token Exchange URL is valid only for AAD based providers and so can be ignored.
 1. Finally, add any scopes that are appropriate.
 
-## OAuthController for .NET Core 3.1 ASP.NET Web App
+## OAuthController for ASP.NET web app
 
 ```csharp
 using Microsoft.AspNetCore.Mvc;

@@ -1,5 +1,5 @@
 ---
-title: Implement a skill for Power Virtual Agents | Microsoft Docs
+title: Implement a skill for Power Virtual Agents
 description: Learn how to implement a skill that can be used in Power Virtual Agents, using the Bot Framework SDK.
 keywords: skills
 author: JonathanFingold
@@ -26,13 +26,13 @@ Power Virtual Agents places restrictions on what you may declare in your [skill 
 
 - You may declare only 100 or fewer actions.
 - Each action is limited to 25 or fewer inputs or outputs.
-- You cannot use the array type for inputs or outputs.
+- You can't use the array type for inputs or outputs.
 
 ## Same-tenant restriction
 
 In order to ensure compliance and adequate governance of custom skills being registered for use within Power Virtual Agents, your skill bot must be a registered application in Azure Active Directory. Upon adding a skill, we validate if the skill's application ID is the in the tenant of the signed in user and the skills endpoint matches the registered application's `Home Page URL`.
 
-Before you can register your bot as a skill within Power Virtual Agents, you must ensure that for the bot, the [home page in the Azure Portal](/azure/active-directory/app-proxy/application-proxy-configure-custom-home-page#change-the-home-page-in-the-azure-portal) is set to the bot's skill manifest URL.
+Before you can register your bot as a skill within Power Virtual Agents, you must ensure that for the bot, the [home page in the Azure portal](/azure/active-directory/app-proxy/application-proxy-configure-custom-home-page#change-the-home-page-in-the-azure-portal) is set to the bot's skill manifest URL.
 
 ## Validation performed during registering a Skill
 
@@ -44,7 +44,7 @@ When an end user attempts to connect to your skill from their Power Virtual Agen
 | Manifest is retrievable | `MANIFEST_FETCH_FAILED` | We ran into problems getting the skill manifest. | Verify your manifest URL is a link to your manifest; try opening your manifest URL in a web browser. If the URL renders the page within 10 seconds, re-register your skill.
 | Manifest is readable | `MANIFEST_TOO_LARGE` | The manifest is too large. | Your manifest must be 500 KB or less.
 | Manifest is readable | `MANIFEST_MALFORMED` | The manifest is incompatible. | Check if the manifest is a valid JSON file. Check if the manifest contains required properties, such as `name`, `msaAppId`, and so on. See [Manifest restrictions](#manifest-restrictions) for more information.
-| Skill is not yet registered | `MANIFEST_ALREADY_IMPORTED` | This skill has already been added to your bot. | Delete the skill and register it again.
+| Skill isn't yet registered | `MANIFEST_ALREADY_IMPORTED` | This skill has already been added to your bot. | Delete the skill and register it again.
 | Manifest endpoint and homepage domains match | `MANIFEST_ENDPOINT_ORIGIN_MISMATCH` | There's a mismatch in your skill endpoints. | You Azure AD app's homepage URL domain and manifest URL domain must match. See [Same-tenant restriction](#same-tenant-restriction)
 | Skill is hosted in signed in user's tenant | `APPID_NOT_IN_TENANT` | To add a skill, it must first be registered.| A global administrator must register the skill into the signed in user's organization.
 | Actions are limited | `LIMITS_TOO_MANY_ACTIONS` | The skill is limited to 100 actions.|There are too many skill actions defined in skill manifest. Remove actions and try again.

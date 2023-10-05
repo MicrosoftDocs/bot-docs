@@ -61,7 +61,7 @@ To adjust the size of the Web Chat container, use the _style set's_ `rootHeight`
 :::image type="content" source="../media/bot-service-channel-webchat/chat-container-height-width.png" alt-text="Set Web Chat with root height and root width":::
 
 > [!WARNING]
-> In the hosting webpage, do not use your Direct Line key in plain sight. Use a token as explained in the [Production embedding option](../bot-service-channel-connect-webchat.md#production-embedding-option) section of how to **Connect a bot to Web Chat**.
+> In the hosting webpage, don't use your Direct Line key in plain sight. Use a token as explained in the [Production embedding option](../bot-service-channel-connect-webchat.md#production-embedding-option) section of how to **Connect a bot to Web Chat**.
 
 ## Change chat bubble font and color
 
@@ -171,7 +171,7 @@ const avatarOptions = {
 
 ## Custom rendering activity or attachment
 
-With the latest version of Web Chat, you can also render activities or attachments that Web Chat does not support out-of-the-box. Activities and attachments render are sent thru a customizable pipeline that modeled after [Redux middleware](https://redux.js.org/api/applymiddleware). The pipeline is flexible enough that you can do the following tasks easily:
+With the latest version of Web Chat, you can also render activities or attachments that Web Chat doesn't support out-of-the-box. Activities and attachments render are sent thru a customizable pipeline that modeled after [Redux middleware](https://redux.js.org/api/applymiddleware). The pipeline is flexible enough that you can do the following tasks easily:
 
 - Decorate existing activities/attachments
 - Add new activities/attachments

@@ -10,9 +10,9 @@ These should be considered the sources of truth, and you _should not_ "use Micro
 
 #### On Corpnet
 
-- [Microsoft Cloud Style Guide][] / **A–Z names + terms dictionary** &mdash; Cloud-specific style guide.
-- [Microsoft Writing Style Guide][] / **A–Z word list and term collections** &mdash; Microsoft-wide style guide.
-- [Microsoft 365 Style Guide][] / **A–Z word list** &mdash; for terms specific to Microsoft 365, in addition to Windows, Office 365, and Microsoft Teams.
+- [Microsoft Cloud Style Guide][] / **A&ndash;Z names + terms dictionary** &mdash; Cloud-specific style guide.
+- [Microsoft Writing Style Guide][] / **A&ndash;Z word list and term collections** &mdash; Microsoft-wide style guide.
+- [Microsoft 365 Style Guide][] / **A&ndash;Z word list** &mdash; for terms specific to Microsoft 365, in addition to Windows, Office 365, and Microsoft Teams.
 - [Term Studio](https://termstudio.azurewebsites.net/default.aspx) &mdash; This is used by localization and is not meant for our consumption. However, in the absence of other material, it is sometimes useful for identifying the correct version of a product name.
 
 > [!TIP]
@@ -99,7 +99,7 @@ For many terms that start with the word Microsoft or Azure, like Microsoft Azure
 
 ## ~ABS~
 
-Don't use. See [Azure Bot Service](#azure-bot-service).
+Don't use. See [Azure AI Bot Service](#azure-bot-service).
 
 ## action
 
@@ -133,7 +133,7 @@ See [Outlook Actionable Messages](#outlook-actionable-messages)
 
 - **Status**: Informal, part of the Bot Framework SDK.
 - **Definition**: An event-driven way to organize the conversational logic for your bot.
-- **See**: [Event-driven conversations](https://docs.microsoft.com/azure/bot-service/bot-activity-handler-concept) in the SDK docs.
+- **See**: [Event-driven conversations](https://learn.microsoft.com/azure/bot-service/bot-activity-handler-concept) in the SDK docs.
 - **See also**: [activity](#activity), [event](#event), [Teams activity handler](#teams-activity-handler).
 
 <a id="adaptive-card"></a>
@@ -150,8 +150,8 @@ See [Outlook Actionable Messages](#outlook-actionable-messages)
 - **Definition**:
   - "Adaptive Cards are an open card exchange format enabling developers to exchange UI content in a common and consistent way."
   - "An Adaptive Card is a JSON-serialized card object model."
-- **Notes**: _Adaptive Cards_ (plural) is the official name of the format. _Adative Card_ (singular) refers to a JSON object in that format or a rendering of such a card.
-- **See**: [Adaptive Cards](https://docs.microsoft.com/adaptive-cards) docs.
+- **Notes**: _Adaptive Cards_ (plural) is the official name of the format. _Adaptive Card_ (singular) refers to a JSON object in that format or a rendering of such a card.
+- **See**: [Adaptive Cards](https://learn.microsoft.com/adaptive-cards) docs.
 - **See also**: [card](#card).
 
 ## adaptive dialog
@@ -160,7 +160,7 @@ See [Outlook Actionable Messages](#outlook-actionable-messages)
 - **Definition**:
   - "A type of container dialog that allows for flexible conversation flow. It includes built-in support for language recognition, language generation, and memory scoping features. To run an adaptive dialog (or another dialog that contains an adaptive dialog), you must start the dialog from a dialog manager."
   - "Adaptive dialogs offer a new event-based addition to the dialogs library that enables you to easily layer in sophisticated conversation management techniques like handling interruptions, dispatching, and more."
-- **See**: List of [dialog types](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-dialog#dialog-types) in the SDK docs.
+- **See**: List of [dialog types](https://learn.microsoft.com/azure/bot-service/bot-builder-concept-dialog#dialog-types) in the SDK docs.
 - **See also**: [dialog](#dialog), [dialogs library](#dialogs-library).
 
 ## Adaptive Tools
@@ -190,7 +190,7 @@ See [[Microsoft] Bot Framework Adaptive Tools](#bot-framework-adaptive-tools).
 - **Notes**:
   - Don't use ASE as an acronym.
 - **See**:
-  - [Introduction to the App Service Environments](https://docs.microsoft.com/azure/app-service/environment/intro)
+  - [Introduction to the App Service Environments](https://learn.microsoft.com/azure/app-service/environment/intro)
   - [[Azure] App Service](https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=25375) in the Cloud style guide
 - **See also**: [Direct Line App Service extension](#direct-line-app-service-extension).
 
@@ -230,13 +230,13 @@ See notes for [Azure Resource Manager](#azure-resource-manager).
 - **Status**: Approved.
   See [Bot Service](https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=42286) in the Cloud style guide.
 - **Forms**:
-  - the Microsoft Azure Bot Service
-  - the Azure Bot Service
+  - the Microsoft Azure AI Bot Service
+  - the Azure AI Bot Service
   - the Bot Service
   - the service
 - **Definition**: Provides an integrated environment for bot development.
 - **Notes**: Don't use ABS as an acronym.
-- **See**: The [Azure Bot Service](https://azure.microsoft.com/services/bot-services/) marketing site.
+- **See**: The [Azure AI Bot Service](https://azure.microsoft.com/services/bot-services/) marketing site.
 - **See also**: [Microsoft Bot Framework](#microsoft-bot-framework), [bot service](#bot-service).
 
 <a id="resource-manager"></a>
@@ -258,9 +258,9 @@ See notes for [Azure Resource Manager](#azure-resource-manager).
 
 - **Status**: Informal.
 - **Definition**: "Bots provide an experience that feels less like using a computer and more like dealing with a person - or at least an intelligent robot."
-- **Notes**: As a generic term, a _bot_ could also refer to a bot developed for another platform using a differ framework. If needed, qualify when you are talking about a bot developed using the Bot Framework SDK (or Composer).
-- **See**: [What is a bot?](https://docs.microsoft.com/azure/bot-service/bot-service-overview-introduction#what-is-a-bot) in the SDK **What is the Bot Framework SDK?** article.
-- **See also**: [bot service](#bot-service), [Azure Bot Service](#azure-bot-service).
+- **Notes**: As a generic term, a _bot_ could also refer to a bot developed for another platform using a differ framework. If needed, qualify when you're talking about a bot developed using the Bot Framework SDK (or Composer).
+- **See**: [What is a bot?](https://learn.microsoft.com/azure/bot-service/bot-service-overview-introduction#what-is-a-bot) in the SDK **What is the Bot Framework SDK?** article.
+- **See also**: [bot service](#bot-service), [Azure AI Bot Service](#azure-bot-service).
 
 ## bot adapter
 
@@ -268,11 +268,11 @@ See notes for [Azure Resource Manager](#azure-resource-manager).
 - **Short form**: adapter
 - **Definition**: "Represents a bot adapter that can connect a bot to a service endpoint."
 - **Notes**:
-  - There are two categories of adapters, Azure Bot Service adapters and channel adapters. For Bot Service adapters, the Azure Bot Service handles translation between the channel's schema and the Bot Framework activity schema. Channel adapters bypass the Bot Service and have to do this translation themselves.
+  - There are two categories of adapters, Azure AI Bot Service adapters and channel adapters. For Bot Service adapters, the Azure AI Bot Service handles translation between the channel's schema and the Bot Framework activity schema. Channel adapters bypass the Bot Service and have to do this translation themselves.
   - A bot adapter is the generic term for any object that serves the purpose of an adapter for a bot.
   - A specific bot's adapter is the particular adapter that bot uses.
   - For a bot that uses a channel adapter, it could use multiple ones to support different channels.
-- **See**: [The bot adapter](https://docs.microsoft.com/azure/bot-service/bot-builder-basics#the-bot-adapter) in the SDK **How bots work** article.
+- **See**: [The bot adapter](https://learn.microsoft.com/azure/bot-service/bot-builder-basics#the-bot-adapter) in the SDK **How bots work** article.
 - **See also**: [channel](#channel), [channel adapter](#channel-adapter).
 
 ## Bot Framework
@@ -286,8 +286,8 @@ See [Microsoft Bot Framework Connector](#microsoft-bot-framework-connector).
 ## bot service
 
 - **Status**: Informal.
-- **Definition**: An instance created by the user using the Azure Bot Service.
-- **See also**: [Azure Bot Service](#azure-bot-service).
+- **Definition**: An instance created by the user using the Azure AI Bot Service.
+- **See also**: [Azure AI Bot Service](#azure-bot-service).
 
 <a id="c"></a>
 
@@ -328,7 +328,7 @@ See [bot](#bot).
 - **Status**: Approved. See [CI/CD](https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=47522) in the Cloud style guide.
 - **Definition**: Continuous integration and continuous delivery.
 - **Notes**: Spell out on first mention.
-- **Example**: From [Build a CI/CD pipeline for chatbots with ARM templates](https://docs.microsoft.com/azure/architecture/example-scenario/apps/devops-cicd-chatbot), "This article presents a DevOps approach to setting up a continuous integration and continuous deployment (CI/CD) pipeline that deploys a chatbot app and its infrastructure as code."
+- **Example**: From [Build a CI/CD pipeline for chatbots with ARM templates](https://learn.microsoft.com/azure/architecture/example-scenario/apps/devops-cicd-chatbot), "This article presents a DevOps approach to setting up a continuous integration and continuous deployment (CI/CD) pipeline that deploys a chatbot app and its infrastructure as code."
 
 ## CLI
 
@@ -364,14 +364,14 @@ See [CI/CD](#cicd).
 - **Status**: Informal, part of the Bot Framework SDK.
 - **Definition**: "Dialogs are a central concept in the SDK, providing ways to manage a long-running conversation with the user. A dialog performs a task that can represent part of or a complete conversational thread. It can span just one turn or many, and can span a short or long period of time."
 - **Notes**: There are many types of dialogs. If you need to call out a specific type of dialog, use the same conventions as the **Dialogs library** article.
-- **See**: [Dialogs library](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-dialog) in the SDK docs.
+- **See**: [Dialogs library](https://learn.microsoft.com/azure/bot-service/bot-builder-concept-dialog) in the SDK docs.
 - **See also**: [dialogs library](#dialogs-library).
 
 ## dialogs library
 
 - **Status**: Informal, part of the Bot Framework SDK.
 - **Definition**: The code libraries that support dialogs. For example, these NuGet packages for the Bot Framework SDK for .NET: `Microsoft.Bot.Builder.Dialogs`, `Microsoft.Bot.Builder.Dialogs.Declarative`, `Microsoft.Bot.Builder.Dialogs.Adaptive`, and `Microsoft.Bot.Builder.Dialogs.Adaptive.Teams`.
-- **See**: [Dialogs library](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-dialog) in the SDK docs.
+- **See**: [Dialogs library](https://learn.microsoft.com/azure/bot-service/bot-builder-concept-dialog) in the SDK docs.
 - **See also**: [adaptive dialog](#adaptive-dialog), [dialog](#dialog).
 
 <a id="direct-line"></a>
@@ -407,14 +407,22 @@ See [CI/CD](#cicd).
 - **Definition**:
   - "A robust, end-to-end solution for creating a flexible, extensible voice assistant. It is powered by the Bot Framework and its Direct Line Speech channel, that is optimized for voice-in, voice-out interaction with bots."
   - Direct Line Speech is a collection of services and protocols for supporting speech-enabled bots.
-- **Notes**: Provides integration with the [Speech SDK](https://docs.microsoft.com/azure/cognitive-services/speech-service/speech-sdk).
-- **See**: [What is Direct Line Speech?](https://docs.microsoft.com/azure/cognitive-services/speech-service/direct-line-speech).
+- **Notes**: Provides integration with the [Speech SDK](/azure/ai-services/speech-service/speech-sdk).
+- **See**: [What is Direct Line Speech?](/azure/ai-services/speech-service/direct-line-speech).
 - **See also**: [Direct Line](#direct-line), [WebSockets](#websocket).
 
 <a id="e"></a>
 
 <a id="event"></a>
 <a id="event-activity"></a>
+
+## European Union data boundary
+
+- **Notes**: A GDPR related effort to make sure customer data stays in the European Union region.
+
+## EUDB
+
+Don't use. See [European Union data boundary](#european-union-data-boundary).
 
 ## event
 
@@ -445,7 +453,7 @@ See [CI/CD](#cicd).
 - **Notes**: The `handoff` activity is deprecated and is different than the `event` activity with a `name` of `"handoff.initiate"` or `"handoff.status"`.
 - **See**:
   - Activity schema: [Handoff activity](https://github.com/Microsoft/botframework-sdk/blob/main/specs/botframework-activity/botframework-activity.md#handoff-activity)
-  - SDK docs: [Handoff to human pattern](https://docs.microsoft.com/azure/bot-service/bot-service-design-pattern-handoff-human)
+  - SDK docs: [Handoff to human pattern](https://learn.microsoft.com/azure/bot-service/bot-service-design-pattern-handoff-human)
 - **See also**: [event](#event).
 
 <a id="i"></a>
@@ -472,13 +480,13 @@ See [web](#web).
 - **Status**: Approved. See [Language Understanding (LUIS)](https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=48260) in the Cloud style guide.
 - **Definition**:
   - LUIS portal: "An AI service that allows users to interact with your applications, bots, and IoT devices by using natural language."
-  - Term Studio: "The Cognitive Services Language API service that applies custom machine-learning intelligence to a user's conversational, natural language text to predict overall meaning, and pull out relevant, detailed information."
+  - Term Studio: "The Azure AI services Language API service that applies custom machine-learning intelligence to a user's conversational, natural language text to predict overall meaning, and pull out relevant, detailed information."
 - **Forms**:
   - Language Understanding (LUIS)&mdash;on fist use.
   - LUIS&mdash;on subsequent mentions.
 - **Notes**:
   - The casing is different for the product versus the general concept.
-  - "Don’t use Azure LUIS or Microsoft LUIS. LUIS is part of Azure Cognitive Services but it isn't Microsoft or Azure branded."
+  - "Don't use Azure LUIS or Microsoft LUIS. LUIS is part of Azure AI services but it isn't Microsoft or Azure branded."
 - **See also**: [language understanding](#language-understanding).
 
 ## library
@@ -571,8 +579,8 @@ Tools, products, services, and so on that are all part of the Microsoft Bot Fram
 |the Bot Framework CLI tool| the Bot Framework CLI, the CLI| A CLI (command-line interface) for managing Bot Framework bots and related services.|
 |the Bot Framework Composer| Composer| The open-source visual authoring tool that is used to build bots.|
 |the Bot Framework Emulator| the Emulator| The application that allows bot developers to test and debug their bots locally or run them remotely through a tunnel.<br/> Do not use _Bot Framework Channel Emulator_ or _the emulator_.|
-|the Bot Framework protocol| the protocol| A set of data-transfer protocols and schemas used by the Azure Bot Service for exchanging information between a bot and channel.|
-|the Bot Framework SDK| the SDK|&bullet; "...a modular and extensible SDK for building bots..."<br/>&bullet; "The Bot Framework SDK allows you to build bots that can be hosted on the Azure Bot Service. The service defines a REST API and an activity protocol for how your bot and channels or users can interact. The SDK builds upon this REST API and provides an abstraction of the service so that you can focus on the conversational logic."<br/>**Note**: The SDK builds upon the Bot Framework Connector service. If relevant, qualify which language version of the SDK you're talking about.|
+|the Bot Framework protocol| the protocol| A set of data-transfer protocols and schemas used by the Azure AI Bot Service for exchanging information between a bot and channel.|
+|the Bot Framework SDK| the SDK|&bullet; "...a modular and extensible SDK for building bots..."<br/>&bullet; "The Bot Framework SDK allows you to build bots that can be hosted on the Azure AI Bot Service. The service defines a REST API and an activity protocol for how your bot and channels or users can interact. The SDK builds upon this REST API and provides an abstraction of the service so that you can focus on the conversational logic."<br/>**Note**: The SDK builds upon the Bot Framework Connector service. If relevant, qualify which language version of the SDK you're talking about.|
 |the Bot Framework Connector service|the Connector service, the service| The communication service that helps you connect your bot with many different communication channels, such as SMS, email, and Skype.<br/>**Note**: The Connector service defines a REST API.|
 
 For individual flavors of the SDK, append _for \<environment>_, to match the [Azure SDK](https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=27903).
@@ -611,10 +619,10 @@ For individual flavors of the SDK, append _for \<environment>_, to match the [Az
   | Actionable Message cards | ditto. |
   | actionable message card | An instance of an Adaptive Card that includes Outlook-specific Adaptive Card properties or features. |
 - **See**:
-  - [Actionable messages in Outlook and Office 365 Groups](https://docs.microsoft.com/outlook/actionable-messages/)
-  - [Designing Outlook Actionable Message cards with the Adaptive Card format](https://docs.microsoft.com/outlook/actionable-messages/adaptive-card)
-  - [Adaptive Cards for Outlook Actionable Message Developers](https://docs.microsoft.com/adaptive-cards/getting-started/outlook)
-  - Adaptive Cards: [Universal Action Model](https://docs.microsoft.com/adaptive-cards/authoring-cards/universal-action-model)
+  - [Actionable messages in Outlook and Office 365 Groups](https://learn.microsoft.com/outlook/actionable-messages/)
+  - [Designing Outlook Actionable Message cards with the Adaptive Card format](https://learn.microsoft.com/outlook/actionable-messages/adaptive-card)
+  - [Adaptive Cards for Outlook Actionable Message Developers](https://learn.microsoft.com/adaptive-cards/getting-started/outlook)
+  - Adaptive Cards: [Universal Action Model](https://learn.microsoft.com/adaptive-cards/authoring-cards/universal-action-model)
   - [Actionable Message Designer](https://amdesigner.azurewebsites.net/)
   - Adaptive Cards Schema Explorer: [Action.Execute](https://adaptivecards.io/explorer/Action.Execute.html)
 
@@ -655,7 +663,7 @@ For individual flavors of the SDK, append _for \<environment>_, to match the [Az
 - **Notes**:
   - Do not shorten to PVA.
   - Power Virtual Agents is singular. Don't treat it as plural in a sentence.
-- **See**: [Power Virtual Agents overview](https://docs.microsoft.com/power-virtual-agents/fundamentals-what-is-power-virtual-agents).
+- **See**: [Power Virtual Agents overview](https://learn.microsoft.com/power-virtual-agents/fundamentals-what-is-power-virtual-agents).
 
 <a id="q"></a>
 
@@ -746,7 +754,7 @@ TBD
 
 - **Status**: Informal, part of the Bot Framework SDK.
 - **Definition**: An event-driven way to organize the conversational logic for a bot designed to work with Microsoft Teams.
-- **See**: [How Microsoft Teams bots work](https://docs.microsoft.com/azure/bot-service/bot-builder-basics-teams) in the SDK docs.
+- **See**: [How Microsoft Teams bots work](https://learn.microsoft.com/azure/bot-service/bot-builder-basics-teams) in the SDK docs.
 - **See also**: [activity](#activity), [activity handler](#activity-handler), [event](#event), [Microsoft Teams](#teams).
 
 ## the

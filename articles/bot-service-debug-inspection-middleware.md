@@ -8,7 +8,8 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 07/26/2022
+ms.date: 10/26/2022
+
 ---
 
 # Debug a bot with inspection middleware
@@ -16,6 +17,10 @@ ms.date: 07/26/2022
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
 This article describes how to debug a bot using inspection middleware. This feature allows the Bot Framework Emulator to debug traffic into and out of the bot, and to see the current state of the bot. You can use a trace message to send data to the Emulator and then inspect the state of your bot in any given turn of the conversation.
+
+We use an EchoBot built locally using the Bot Framework v4 in the [Create a bot quickstart](bot-service-quickstart-create-bot.md) to show how to debug and inspect the bot's message state. You can also [Debug a bot using IDE](./bot-service-debug-bot.md) or [Debug with the Bot Framework Emulator](./bot-service-debug-emulator.md), but to debug state you need to add inspection middleware to your bot. The inspection bot samples are available for [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/47.inspection), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/47.inspection), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/47.inspection), and [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/47.inspection).
+
+[!INCLUDE [java-python-sunset-alert](includes/java-python-sunset-alert.md)]
 
 ## Prerequisites
 
@@ -140,7 +145,7 @@ After updating the code, you can run your bot locally and test the debugging fea
 
     ---
 
-1. Open your Emulator. Select **Open Bot**. Fill in the **Bot URL** with `http://localhost:3978/api/messages` and the **MicrosoftAppId** and **MicrosoftAppPassword** values. If you have a JavaScript bot you can find these values in your bot's **.env** file. If you have a C# bot you can find these values in the **appsettings.json** file. For a Java bot you can find these values in the **application.properties** file. Select **Connect**.
+1. Open your Emulator. Select **Open Bot**. Fill in the **Bot URL** with `http://localhost:3978/api/messages` and the **MicrosoftAppId** and **MicrosoftAppPassword** values. If you have a JavaScript bot, you can find these values in your bot's **.env** file. If you have a C# bot, you can find these values in the **appsettings.json** file. For a Java bot you can find these values in the **application.properties** file. Select **Connect**.
 
 1. Now open another Emulator window. This second Emulator window will work as a debugger. Follow the instructions as described in the previous step. Check **Open in debug mode** and then select **Connect**.
 
@@ -159,7 +164,7 @@ If you want to inspect the state of your bot configured in Azure and connected t
 
 ### Run ngrok
 
-At this point you have updated your Emulator to the latest version and added the inspection middleware in your bot's code. The next step is to run ngrok and configure your local bot. Before running ngrok you need to run your bot locally.
+At this point, you've updated your Emulator to the latest version and added the inspection middleware in your bot's code. The next step is to run ngrok and configure your local bot. Before running ngrok you need to run your bot locally.
 
 To run your bot locally:
 

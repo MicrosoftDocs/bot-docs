@@ -11,7 +11,7 @@ metadata:
   ms.service: bot-service
   ms.date: 11/01/2021
 
-# Attention writers!!
+# Attention writers!
 # - This article contains FAQs regarding Bot Framework Ecosystem.
 # - When you create a new FAQ, please add the related link to the proper section in bot-service-resources-bot-framework-faq.yml.
 
@@ -27,7 +27,7 @@ sections:
       - question: How do I enable the Bot Framework Emulator to connect to localhost while behind a corporate proxy?
         answer: |
           When developing a bot in a corporate environment, typically, the proxy will block the connection unless you specify that it should be bypassed for `localhost`.
-          To do that on your local machine you must define the following environment variable :
+          To do that on your local machine you must define the following environment variable:
 
           ```cmd
           NO_PROXY=localhost
@@ -36,19 +36,19 @@ sections:
 
       - question: When will you add more conversation experiences to the Bot Framework?
         answer: |
-          We plan on making continuous improvements to the Bot Framework, including additional channels, but cannot provide a schedule at this time.
+          We plan on making continuous improvements to the Bot Framework, including additional channels, but can't provide a schedule at this time.
           If you would like a specific channel added to the framework, [let us know][Support].
 
       - question: I have a communication channel I'd like to be configurable with Bot Framework. Can I work with Microsoft to do that?
         answer: |
-          We have not provided a general mechanism for developers to add new channels to Bot Framework, but you can connect your bot to your app via the [Direct Line API][DirectLineAPI].
-          If you are a developer of a communication channel and would like to work with us to enable your channel in the Bot Framework [we'd love to hear from you][Support].
+          We haven't provided a general mechanism for developers to add new channels to Bot Framework, but you can connect your bot to your app via the [Direct Line API][DirectLineAPI].
+          If you're a developer of a communication channel and would like to work with us to enable your channel in the Bot Framework, [we'd love to hear from you][Support].
 
       - question: If I want to create a bot for Microsoft Teams, what tools and services should I use?
         answer: |
           The Bot Framework is designed to build, connect, and deploy high quality, responsive, performant and scalable bots for Teams and many other channels.
-          The SDK can be used to create text/sms, image, button and card-capable bots (which constitute the majority of bot interactions today across conversation experiences)
-          as well as bot interactions which are Teams-specific such as rich audio and video experiences.
+          The SDK can be used to create text/sms, image, button and card-capable bots (that is, most bot interactions across conversation experiences)
+          as well as bot interactions that are Teams-specific, such as rich audio and video experiences.
 
           If you already have a great bot and would like to reach the Teams audience, your bot can easily be connected to Teams (or any supported channel) via the Bot Framework
           for REST API (provided it has an internet-accessible REST endpoint).
@@ -72,9 +72,9 @@ sections:
 
       - question: What are the steps to configure Web Chat and Direct Line for Azure Government?
         answer: |
-          The steps to configure Web Chat and Direct Line for Azure Government are similar to the those used for public Azure.
-          In Azure Government, you set the [domain](https://github.com/microsoft/BotFramework-WebChat/blob/master/packages/bundle/src/createDirectLine.js#L6) to the Azure Government URL because the [default domain](https://github.com/microsoft/BotFramework-DirectLineJS/blob/master/src/directLine.ts#L456) applies to public Azure, not Azure Government.
-          Note that the public Azure URL (`https://webchat.botframework.com/v3/directline`) is different from Azure Government URL (`https://webchat.botframework.azure.us/v3/directline`) for the Web Chat and Direct Line configuration.
+          The steps to configure Web Chat and Direct Line for Azure Government are similar to those used for global Azure.
+          In Azure Government, you set the [domain](https://github.com/microsoft/BotFramework-WebChat/blob/master/packages/bundle/src/createDirectLine.js#L6) to the Azure Government URL because the [default domain](https://github.com/microsoft/BotFramework-DirectLineJS/blob/master/src/directLine.ts#L456) applies to global Azure, not Azure Government.
+          The global Azure URL (`https://webchat.botframework.com/v3/directline`) is different from Azure Government URL (`https://webchat.botframework.azure.us/v3/directline`) for the Web Chat and Direct Line configuration.
           The following example shows how to set the domain to the Azure Government URL:
 
           ```html
@@ -103,24 +103,30 @@ sections:
           - [Connect a bot to Web Chat](bot-service-channel-connect-webchat.md)
           - [Connect a bot to Direct Line](bot-service-channel-connect-directline.md)
           - For programmatic approach to exchange your secret for a token, use the code snippet provided in the [production embedding option](bot-service-channel-connect-webchat.md#production-embedding-option)
-            and adjust the URLs from public Azure to Azure Government.
+            and adjust the URLs from global Azure to Azure Government.
 
-      - question: How does the Bot Framework relate to Cognitive Services?
+      - question: How does the Bot Framework relate to Azure cognitive services?
         answer: |
-          Both the Bot Framework and [Cognitive Services](https://www.microsoft.com/cognitive) are built from years of research and use in popular Microsoft products.
+          Both the Bot Framework and [Azure AI services](/azure/ai-services/) are built from years of research and use in popular Microsoft products.
           These capabilities enable every organization to take advantage of the power of data, the cloud and intelligence to build their own intelligent systems that unlock new opportunities,
           increase their speed of business and lead the industries in which they serve their customers.
 
       - question: What are the possible machine-readable resolutions of the LUIS built-in date, time, duration, and set entities?
         answer: |
-          For a list of examples, see the [Pre-built entities section](/azure/cognitive-services/LUIS/luis-reference-prebuilt-entities) of the LUIS documentation.
+          [!INCLUDE [luis-sunset-alert](includes/luis-sunset-alert.md)]
+
+          For a list of examples, see the [Pre-built entities section](/azure/ai-services/LUIS/luis-reference-prebuilt-entities) of the LUIS documentation.
 
       - question: How can I use more than the maximum number of LUIS intents?
         answer: |
+          [!INCLUDE [luis-sunset-alert](includes/luis-sunset-alert.md)]
+
           You might consider splitting up your model and calling the LUIS service in series or parallel.
 
       - question: How can I use more than one LUIS model?
         answer: |
+          [!INCLUDE [luis-sunset-alert](includes/luis-sunset-alert.md)]
+
           Both the Bot Framework SDK for Node.js and the Bot Framework SDK for .NET support calling multiple LUIS models from a single LUIS intent dialog. Keep in mind the following caveats:
 
           * Using multiple LUIS models assumes the LUIS models have non-overlapping sets of intents.
@@ -129,7 +135,7 @@ sections:
 
       - question: Where can I get more help on LUIS?
         answer: |
-          - [Introduction to Language Understanding (LUIS) - Microsoft Cognitive Services](https://www.youtube.com/watch?v=jWeLajon9M8) (video)
-          - [Advanced Learning Session for Language Understanding (LUIS)](https://www.youtube.com/watch?v=39L0Gv2EcSk) (video)
-          - [LUIS documentation](/azure/cognitive-services/luis/)
+          [!INCLUDE [luis-sunset-alert](includes/luis-sunset-alert.md)]
+
+          - [LUIS documentation](/azure/ai-services/luis/)
           - [Language Understanding Forum](https://social.msdn.microsoft.com/forums/azure/home?forum=LUIS)

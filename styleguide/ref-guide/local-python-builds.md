@@ -7,9 +7,9 @@ The API reference documentation is generated from comments in the source code an
 The **reStructuredText** (RST) is a file format for textual data used primarily in the Python programming language community for technical documentation.
 It is a lightweight markup language designed to be both processable by documentation-processing software, and easily readable by humans.
 
-- For the RST syntax, see [How to document a Python API](https://review.docs.microsoft.com/en-us/help/onboard/admin/reference/python/documenting-api?branch=master).
+- For the RST syntax, see [How to document a Python API](https://review.learn.microsoft.com/help/onboard/admin/reference/python/documenting-api?branch=main).
 
-- This article follows the instructions provided in [Testing Python Content Locally](https://review.docs.microsoft.com/en-us/help/onboard/admin/reference/python/testing-locally?branch=master).
+- This article follows the instructions provided in [Testing Python Content Locally](https://review.learn.microsoft.com/help/onboard/admin/reference/python/testing-locally?branch=main).
 
 ## Prerequisites
 
@@ -19,15 +19,15 @@ It is a lightweight markup language designed to be both processable by documenta
 
 ### Install Sphinx
 
-    ```cmd
-    pip install -U Sphinx
-    ```
+```cmd
+pip install -U Sphinx
+```
 
 Install an additional component to support the DocFX tool:
 
-    ```cmd
-    pip install -U sphinx-docfx-yaml
-    ```
+```cmd
+pip install -U sphinx-docfx-yaml
+```
 
 ### Check files for errors (optional)
 
@@ -37,45 +37,44 @@ You can set a variety of [options](https://github.com/myint/rstcheck#options), l
 
 1. Prepare your file by removing all code from the file. This ensure that `rstcheck` is recognizing issues solely with RST, not issues with the code itself. Make sure that all your left with is the classes/methods and docstrings containing RST reference comments. Here's an example:
 
-```python
-class DialogSet:
+    ```python
+    class DialogSet:
 
-    def add():
-        """
-        Adds a new dialog to the set and returns the added dialog.
-        
-        :param dialog: The dialog to add.
-        """
-        return
-        
-    async def find():
-        """
-        Finds a dialog that was previously added to the set using meth:`add()`
-        
-        :param dialog_id: ID of the dialog/prompt to look up.
-        :return: The dialog if found, otherwise null.
-        """
-        return
-```
+        def add():
+            """
+            Adds a new dialog to the set and returns the added dialog.
+            
+            :param dialog: The dialog to add.
+            """
+            return
+            
+        async def find():
+            """
+            Finds a dialog that was previously added to the set using meth:`add()`
+            
+            :param dialog_id: ID of the dialog/prompt to look up.
+            :return: The dialog if found, otherwise null.
+            """
+            return
+    ```
 
-Adding `return` at the end of each method reduces the likelihood of running into an EOL error.
+    Adding `return` at the end of each method reduces the likelihood of running into an EOL error.
 
-2. Run the following from the command line:
+1. Run the following from the command line:
 
-```cmd
-rstcheck <file_name>
-```
+    ```cmd
+    rstcheck <file_name>
+    ```
 
 ## Organize your code directory
 
 We suggest to perform the steps below to facilitate the creation of a local reference build.
 
 1. If possible, create a list of files that have errors or need to be updated. Having this list will greatly reduce the amount of time spent on the local build, and it will be used in later steps in the build process.
-1. In your local repository clone the SDK library for which you want to create a local documentation build. For example for Python, clone https://github.com/microsoft/botbuilder-python.
+1. In your local repository clone the SDK library for which you want to create a local documentation build. For example for Python, clone `https://github.com/microsoft/botbuilder-python`.
 1. Create a folder named `<local path>\APIReference` folder.
 1. In the folder, create a sub-folder named `libraries`.
-1. From your cloned SDK copy into the `libraries` the folders that contain the actual code (with related sub-folders). For examples from `\botbuilder-python\libraries\botbuilder-core\botbuilder\core` copy the `core` folder. From `botbuilder-python\libraries\botbuilder-dialogs\botbuilder\dialogs` copy the `dialogs` folder.
-The following is a an example of how the library directory looks like:
+1. From your cloned SDK copy into the `libraries` the folders that contain the actual code (with related sub-folders). For examples from `\botbuilder-python\libraries\botbuilder-core\botbuilder\core` copy the `core` folder. From `botbuilder-python\libraries\botbuilder-dialogs\botbuilder\dialogs` copy the `dialogs` folder. The following is a an example of how the library directory looks like:
 
     ![sphinx libraries dir structure](../media/sphinx-libraries.PNG)
 
@@ -94,8 +93,8 @@ The following steps produce a local doc build structure. `.rst` files that conta
     sphinx-quickstart
     ```
 
-> [!NOTE]
-> If you get this sphinx error: `could not import extension docfx_yaml.extension` you must (re)install **Sphinx DocFX YAML** which is an exporter for the Sphinx Autodoc module into DocFX YAML. Execute the command: `pip install sphinx-docfx-yaml`. For more information, see [Sphinx DocFX YAML](https://github.com/docascode/sphinx-docfx-yaml).
+    > [!NOTE]
+    > If you get this sphinx error: `could not import extension docfx_yaml.extension` you must (re)install **Sphinx DocFX YAML** which is an exporter for the Sphinx Autodoc module into DocFX YAML. Execute the command: `pip install sphinx-docfx-yaml`. For more information, see [Sphinx DocFX YAML](https://github.com/docascode/sphinx-docfx-yaml).
 
 1. You will be asked some questions. Answer as follows:
 
@@ -129,8 +128,9 @@ The following steps produce a local doc build structure. `.rst` files that conta
 1. Create a number of  `.rst` files in the `source` folder representing of the APIs to document.
 
     ```cmd
-        sphinx-apidoc -f .\libraries  -o source
+    sphinx-apidoc -f .\libraries  -o source
     ```
+
 1. Edit the `index.rst` file by adding the `modules` line as shown below. Make sure the alignment is correct
 
     ![sphinx dir structure](../media/sphinx-index-rst.PNG)
@@ -142,7 +142,7 @@ sphinx-apidoc <path to folder where the .py files are> -o . --module-first --no-
 1. Create the `YML` files in the `build/docfx_yaml` folder by executing the command:
 
     ```cmd
-        sphinx-build source build
+    sphinx-build source build
     ```
 
     Once the build completes, you should have the `YML` files in `build/docfx_yaml` folder.
@@ -159,7 +159,8 @@ Now that we have the `YML` files, we can preview them with a locally-running `Do
     ```cmd
     "<path to DocFX folder>\docfx.exe" init -q
     ```
-This creates a new `docfx_project` folder.
+
+    This creates a new `docfx_project` folder.
 
 1. Copy the `YML` files previously generated via Sphinx in `build/docfx_yaml`. into the `docfx_project/api` folder.
 1. Once done, make sure that your terminal console is open in the `docfx_project` folder.
@@ -182,12 +183,10 @@ When you rebuild the documentation because comments have changed or for whatever
 1. Delete the content of the `docfx_project/api` folder. **Do not delete the `index.md` file**.
 1. In the directory `<local path>\APIReference` execute the commands:
 
-```cmd
-
-sphinx-apidoc -f .\libraries  -o source
-sphinx-build source build
-
-```
+    ```cmd
+    sphinx-apidoc -f .\libraries  -o source
+    sphinx-build source build
+    ```
 
 1. Perform a preliminary test using the HTML output files. Navigate to the `build` directory and click on the `index.html` file. YOu should be able to navigate to the documentation file you are analyzing and check what kind of errors it contains. This should give you a clue on how to fix them.
 
@@ -203,9 +202,7 @@ sphinx-build source build
 1. Build the site (on line docs) locally and display the documentation by running the command:
 
     ```cmd
-
     "<path to DocFX folder>\docfx.exe" --serve
-
     ```
 
     The following is an example of the local build:

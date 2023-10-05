@@ -4,7 +4,7 @@ description: Learn how to configure bots to use Search to communicate with peopl
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: mainguy
+ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 10/04/2021
@@ -71,7 +71,7 @@ To generate a scope URI and application ID for your bot:
     1. In the **Add a client application** pane, set **Client ID** to `81473081-50b9-469a-b9d8-303109583ecb`, the Search platform's client ID.
     1. Under **Authorized scopes**, select the scope URI you created in the previous step.
     1. Select **Add application**.
-1. Go to the **Overview** pane. Copy the **Application ID URI**. You will need this when you register your bot in the Search channel.
+1. Go to the **Overview** pane. Copy the **Application ID URI**. You'll need this when you register your bot in the Search channel.
 
 ## Implement your bot
 
@@ -241,7 +241,7 @@ To remove the Search channel from your bot:
 To delete your bot resource:
 
 1. In the Azure portal, go to your bot resource.
-1. If you have not already done so, remove the Search channel from your bot.
+1. If you haven't already done so, remove the Search channel from your bot.
 1. At the top of the **Overview** pane, select **Delete**.
 1. Select **OK** to confirm the operation.
 

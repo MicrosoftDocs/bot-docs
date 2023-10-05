@@ -1,5 +1,5 @@
 ---
-title: .lu file format - Bot Service
+title: .lu file format
 description: .lu file format reference
 keywords: lu file format, reference, language understanding
 author: JonathanFingold
@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: reference
-ms.date: 12/2/2021
+ms.date: 01/04/2023
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -25,13 +25,15 @@ An NLU engine relies on a language model to understand what a user says. The eng
 
 You can use LUIS or Orchestrator with any bot developed using the Bot Framework SDK or [Composer][].
 
+[!INCLUDE [luis-sunset-alert](../includes/luis-sunset-alert.md)]
+
 This article is a reference for how to represent language model elements in the .lu file format. For information about how language understanding is used in bots, see [Language Understanding](../v4sdk/bot-builder-concept-luis.md) or [Natural language processing in Composer](/composer/concept-natural-language-processing).
 
 ## Defining intents using sample utterances
 
 An intent represents a task or action the user wants to perform, as expressed in a user's utterance. You add intents to your bot to enable it to identify groups of questions or commands that represent the same user intention.
 
-Some examples of intents you might define for a travel bot, with the example utterances that they are defined from:
+Some examples of intents you might define for a travel bot, with the example utterances that they're defined from:
 
 | Intent       | Example utterances                                                                                                           |
 |--------------|------------------------------------------------------------------------------------------------------------------------------|
@@ -76,13 +78,13 @@ Here is an example .lu file demonstrating these intents and example utterances t
 ```
 
 > [!NOTE]
->Use the **-**, **+**, or **\*** character to denote lists. Numbered lists are not supported.
+> Use the **-**, **+**, or **\*** character to denote lists. Numbered lists are not supported.
 >
 > Use **>** to create a comment.
 >
-> Multiple comment ("**>**") characters can also be used to define outlining sections in the .lu file to help you organize the content.  Both [Composer][] and [Bot Framework Adaptive Tools][adaptive-tools] allow you to take advantage of outlining when editing LU files.
+> Multiple comment ("**>**") characters can also be used to define outlining sections in the .lu file to help you organize the content. [Composer][] allows you to take advantage of outlining when editing LU files.
 
-For more information about intents and utterances, see [Intents in your LUIS app](/azure/cognitive-services/luis/luis-concept-intent) and [Understand what good utterances are for your LUIS app](/azure/cognitive-services/luis/luis-concept-utterance) in the LUIS documentation.
+For more information about intents and utterances, see [Intents in your LUIS app](/azure/ai-services/luis/concepts/intents) and [Understand what good utterances are for your LUIS app](/azure/ai-services/luis/concepts/utterances) in the LUIS documentation.
 
 ## Entities
 
@@ -133,11 +135,11 @@ With the exception of [prebuilt entities](#prebuilt-entities), entity names can 
 
 ### Entity types
 
-There are several types of entities in LUIS. In the following sections you will learn about these entity types along with related concepts such as [roles](#roles) and [features](#adding-features-to-intents-and-entities) with examples of how to create LU templates that use them.
+There are several types of entities in LUIS. In the following sections, you'll learn about these entity types and related concepts, such as [roles](#roles) and [features](#adding-features-to-intents-and-entities), and examples of how to create LU templates that use them.
 
 #### Machine-learned entity
 
-[Machine-learned entities][ml-entity] are entities that enable you to provide examples where you label them in the example utterances. This gives them the context needed to learn from. The machine-learned entity is ideal when identifying data that is not always well formatted but has the same meaning.
+[Machine-learned entities][ml-entity] are entities that enable you to provide examples where you label them in the example utterances. This gives them the context needed to learn from. The machine-learned entity is ideal when identifying data that isn't always well formatted but has the same meaning.
 
 The following example demonstrates a machine-learned entity named city (`@ ml city`) and a `bookFlight` intent with sample utterances with your entities labeled:
 
@@ -148,11 +150,11 @@ The following example demonstrates a machine-learned entity named city (`@ ml ci
 > Define the bookFlight intent with sample utterances that contain the machine-learned entities
 # bookFlight
 - Book a flight from {@city = Cairo} to {@city = Seattle}
-- Get me 2 tickets for a flight to {@city = Bangalore}
+- Get me 2 tickets for a flight to {@city = Bengaluru}
 - Purchase ticket from {@city = Washington} to {@city = Tampa Bay}
 ```
 
-When a user says something similar like “_I need a flight booked from London to madrid_”, LUIS will detect the 'bookFlight` intent and extract both London and Madrid as city entities.
+When a user says something similar like "_I need a flight booked from London to madrid_", LUIS will detect the 'bookFlight` intent and extract both London and Madrid as city entities.
 
 [Roles](#roles) are essentially an additional layer of contextual information you can add to your machine-learned entities, that also learn from context. The following example utterance shows the departure and destination roles associated with the city entity:
 
@@ -197,7 +199,7 @@ The next example shows a definition of an `address` machine-learned entity, with
 
 #### Prebuilt entities
 
-Prebuilt LUIS entities are defined by the system.  This saves you work since they are of high quality and provide normalized values that are easier to use in programs. For example the phrase "one thousand and two" would become the number 1002.  The following LUIS [prebuilt entity][prebuilt-entity] types are supported:
+Prebuilt LUIS entities are defined by the system.  This saves you work since they're of high quality and provide normalized values that are easier to use in programs. For example the phrase "one thousand and two" would become the number 1002.  The following LUIS [prebuilt entity][prebuilt-entity] types are supported:
 
 - age
 - datetimeV2
@@ -226,7 +228,7 @@ Here are examples of how to define prebuilt entities:
 
 #### List entity
 
-[List entities][list-entity] represent a fixed, closed set of related words along with their synonyms. The normalized value is returned when any of the corresponding synonyms are recognized.  They are case-sensitive and extracted based on an exact text match.
+[List entities][list-entity] represent a fixed, closed set of related words along with their synonyms. The normalized value is returned when any of the corresponding synonyms are recognized.  They're case-sensitive and extracted based on an exact text match.
 
 The following example shows the syntax for defining a list entity:
 
@@ -278,7 +280,7 @@ Extending the `pizzaOrder` example from the machine-learned entity section, here
 > [!TIP]
 > Since a list entity requires an exact match to be extracted, your results may improve by adding common misspellings. One common causes of misspellings is a result of typing errors such as double letters tripled as in "stufffed crust" in the above example.
 
-When using list entities you should include a value from the list directly in the utterance, you do not need to label list entities although you can still use them as place holders in a [pattern](#patterns). The following example shows an utterance with values from the list:
+When using list entities you should include a value from the list directly in the utterance, you don't need to label list entities although you can still use them as place holders in a [pattern](#patterns). The following example shows an utterance with values from the list:
 
 ```lu
 - I'd like to order a large pepperoni stuffed crust pizza.
@@ -389,13 +391,13 @@ $city:Portland=
 
 ## Patterns
 
-[Patterns][] allow you to cover a large number of examples that should be matched by creating an utterance with place holders for where entities should be found. The patterns are a token level regular expression with place holders for entities. If an utterance has any entity place holders or pattern syntax then it is interpreted as a pattern. Otherwise, it is interpreted as an utterance for training machine learning.
+[Patterns][] allow you to cover a large number of examples that should be matched by creating an utterance with place holders for where entities should be found. The patterns are a token level regular expression with place holders for entities. If an utterance has any entity place holders or pattern syntax then it's interpreted as a pattern. Otherwise, it's interpreted as an utterance for training machine learning.
 
 The entity place holders can correspond to entities of any type or they can be defined by the pattern itself, such as when a section in the pattern is an entity that is identified by looking at the surrounding words.
 
 ### Pattern syntax
 
-The .lu file format supports the LUIS [Pattern syntax][]. Pattern syntax is a template embedded in an utterance. The template should contain both words and entities you want to match, as well as words and punctuation you want to ignore. The template is not a regular expression.
+The .lu file format supports the LUIS [Pattern syntax][]. Pattern syntax is a template embedded in an utterance. The template should contain both words and entities you want to match, as well as words and punctuation you want to ignore. The template isn't a regular expression.
 
 Entities in patterns are surrounded by braces, {}. Patterns can include entities, and entities with roles. [Pattern.any][pattern-any] is an entity only used in patterns.
 
@@ -425,7 +427,7 @@ By contrast, the following example is a _labeled_ utterance where `alarmTime` is
 - delete the {alarmTime=7AM} alarm
 ```
 
-You cannot mix entity labels and entity place holders in the same utterance, but you can use place holders that correspond to machine-learned entities.
+You can't mix entity labels and entity place holders in the same utterance, but you can use place holders that correspond to machine-learned entities.
 
 > [!TIP]
 > You should understand how your bot responds to user input before adding patterns, because patterns are weighted more heavily than example utterances and will skew confidence. There is no harm adding them in the beginning of your model design, but it's easier to see how each pattern changes the model after the model is tested with utterances.
@@ -435,7 +437,7 @@ You cannot mix entity labels and entity place holders in the same utterance, but
 
 A [machine-learning feature][] provides additional context to find a concept contained in your sample utterances. Features will ultimately improve your bots ability to determine the user's intent as well as extract the elements (entities) from the user's utterance that are relevant to that intent. Features are hints, not hard rules and these hints are used in conjunction with the labels to find the relevant data.
 
-The smallest unit that can be a feature is a _token_. A token is an alpha-numeric (A-Z, 0-9) string, it cannot contain any spaces or punctuation. A feature is most often a word or phrase such as people's names a location such as a city or other distinguishing traits such as dates and times. They must be an exact match, so use variations of words, such as:
+The smallest unit that can be a feature is a _token_. A token is an alpha-numeric (A-Z, 0-9) string, it can't contain any spaces or punctuation. A feature is most often a word or phrase such as people's names a location such as a city or other distinguishing traits such as dates and times. They must be an exact match, so use variations of words, such as:
 
 - plural forms
 - verb tenses
@@ -450,7 +452,7 @@ There are two types of features supported in an .lu template:
 
 ## Phrase list
 
-A [phrase list][phrase-list] is a list of words or phrases that help find the concept you're trying to identify. The list is not case-sensitive. Phrase lists have two different purposes:
+A [phrase list][phrase-list] is a list of words or phrases that help find the concept you're trying to identify. The list isn't case-sensitive. Phrase lists have two different purposes:
 
 - **Extend the dictionary**: This is the default when you define a phrase list   and is known as _non-interchangeable_. Multi-word phrases become a feature to the machine learning which requires fewer examples to learn. In this usage, there is no relationship between the members of the phase list.
 - **Define synonyms**: Interchangeable phrase lists are used to define synonyms that mean _the same thing_.  This usage helps generalize with fewer examples.  Any phrase in the list results in the same feature to the machine learning. To use this requires specifying `interchangeable` in your phrase list definition (`@ phraselist <Name>(interchangeable)`)
@@ -458,7 +460,7 @@ A [phrase list][phrase-list] is a list of words or phrases that help find the co
 >[!NOTE]
 > a _feature_ can be a phrase list or entity that you associate with an intent or entity to emphasize the importance of that feature in accurately detecting user intent. See [Add a phrase list as a feature](#add-a-phrase-list-as-a-feature) for more information.
 
-For additional information about when and how to use phrase lists including typical scenarios they are used for, see [Create a phrase list for a concept][phrase-list].
+For additional information about when and how to use phrase lists including typical scenarios they're used for, see [Create a phrase list for a concept][phrase-list].
 
 You define phrase lists using the following notation:
 
@@ -495,9 +497,9 @@ By default, phrase lists are available to all learned intents and entities. Ther
 
 | Availability State   | Description                                                                                     |
 | -------------------- | ----------------------------------------------------------------------------------------------- |
-| enabledForAllModels  | (default) When a phrase list is marked as `enabledForAllModels`, it is available to all models whether or not you specifically list it as a feature.         |
-| disabledForAllModels | When a phrase list is marked as `disabledForAllModels`, it is only used in a model if it is specifically listed as a feature.                |
-| disabled             | When a phrase list is marked as `disabled`, it isn't used anywhere, including any models where it is specifically listed as a feature. This provides an easy means to turn off a phrase list to see how well things work without it. |
+| enabledForAllModels  | (default) When a phrase list is marked as `enabledForAllModels`, it's available to all models whether or not you specifically list it as a feature.         |
+| disabledForAllModels | When a phrase list is marked as `disabledForAllModels`, it's only used in a model if it's specifically listed as a feature.                |
+| disabled             | When a phrase list is marked as `disabled`, it isn't used anywhere, including any models where it's specifically listed as a feature. This provides an easy means to turn off a phrase list to see how well things work without it. |
 
 Phrase lists are globally available by default, and can also be specifically set using the `enabledForAllModels` keyword:
 
@@ -525,7 +527,7 @@ When setting a phrase list to `disabled`, it won't be used, even when specifical
 
 @ phraselist yourPhraseList disabled
 
-> phrase list as feature to intent, will not be used
+> phrase list as feature to intent, won't be used
 
 @ intent yourIntent usesFeature yourPhraseList
 ```
@@ -537,7 +539,7 @@ Phrase lists can be used as features for specific intents and entities as descri
 Machine learning works by taking features and learning how they relate to the desired intent or entity from example utterances.  By default, features are simply the words that make up utterances. Phrase lists provide a means to group together multiple words into a new feature; this makes the machine learning generalize better from fewer examples. By default, phrase lists are global and apply to all machine-learned models, but you can also tie them to specific intents or entities.  You can also use intents or entities as features to detect other intents as entities.  This provides modularity so that you can build up more complex concepts from simpler building blocks.
 
 >[!NOTE]
-> In machine learning, a feature is text that describes a distinguishing trait or attribute of data that your system observes and learns from. Phrase lists, intents, and entities can be used as features as explained in this and the following sections.
+> In machine learning, a feature is text that describes a distinguishing trait or attribute of data that your system observes and learns from. Phrase lists, intents, and entities can be used as features as explained in this and the following sections.
 
 Features can be added to any learned intent or entity using the `usesFeature` keyword.
 
@@ -658,6 +660,8 @@ The sections below detail how to make [local file](#local-file-references) and [
 
 ### Local file references
 
+[!INCLUDE [qnamaker-sunset-alert](../includes/qnamaker-sunset-alert.md)]
+
 References the .lu file. Follow Markdown link syntax. Supported references include:
 
 - Reference to another .lu file via `[link name](<.lu file name>)`. Reference can be an absolute path or a relative path from the containing .lu file.
@@ -699,7 +703,7 @@ Here's an example of the aforementioned references:
 
 > With the above statement, the parser will parse all.lu and extract out all utterances associated with the 'Help' intent and add them under 'None' intent as defined in this file.
 
-> NOTE: This **only** works for utterances as entities that are referenced by the uttearnces in the 'Help' intent will not be brought forward to this .lu file.
+> NOTE: This **only** works for utterances as entities that are referenced by the uttearnces in the 'Help' intent won't be brought forward to this .lu file.
 
 # All utterances
 > you can use the *utterances* wild card to include all utterances from a lu file. This includes utterances across all intents defined in that .lu file.
@@ -752,24 +756,9 @@ Below are examples of how to make URI references:
 ## Additional Information
 
 - Read [.qna file format](bot-builder-qna-file-format.md) for more information about .qna files.
-- Read [Debug with Adaptive Tools](../bot-service-debug-adaptive-tools.md) to learn how to analyze .lu files.
 
 [luis]: https://luis.ai
-[intent]: /azure/cognitive-services/luis/luis-concept-intent
-[entity]: /azure/cognitive-services/luis/luis-concept-entity-types
-[ml-entity]: /azure/cognitive-services/luis/luis-concept-entity-types#machine-learned-ml-entity
-[prebuilt-entity]: /azure/cognitive-services/luis/luis-concept-entity-types#prebuilt-entity
-[list-entity]: /azure/cognitive-services/luis/luis-concept-entity-types#list-entity
-[entity-composite]: /azure/cognitive-services/luis/reference-entity-composite
-[regular-expression-entity]: /azure/cognitive-services/luis/luis-concept-entity-types#regular-expression-entity
-[roles]: /azure/cognitive-services/luis/luis-concept-roles
-[patterns]: /azure/cognitive-services/luis/luis-concept-patterns
-[pattern syntax]: /azure/cognitive-services/luis/reference-pattern-syntax
-[pattern-any]: /azure/cognitive-services/luis/luis-concept-entity-types#patternany-entity
-[machine-learning-feature]: /azure/cognitive-services/luis/luis-concept-feature
-[phrase-list]: /azure/cognitive-services/luis/concepts/patterns-features?branch=main#create-a-phrase-list-for-a-concept
-[utterances]: /azure/cognitive-services/luis/luis-concept-utterance
+[entity]: /azure/ai-services/luis/concepts/entities
+[ml-entity]: /azure/ai-services/luis/concepts/entities
 [orchestrator]: /composer/concept-orchestrator
 [Composer]: /composer/
-[adaptive-tools]: https://marketplace.visualstudio.com/items?itemName=BotBuilder.bot-framework-adaptive-tools
-[luis-metadata]: /azure/cognitive-services/luis/luis-reference-application-settings

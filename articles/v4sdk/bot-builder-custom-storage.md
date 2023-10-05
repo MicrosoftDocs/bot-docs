@@ -1,6 +1,6 @@
 ---
-title: Implement custom storage for your bot - Bot Service
-description: Learn how to use version 4.0 of the Bot Framework SDK to store bot state data. Understand the default framework. See how to implement additional support.
+title: Implement custom storage for your bot
+description: Learn how to use version 4.0 of the Bot Framework SDK to store bot state data. Understand the default framework. See how to expand support.
 keywords: custom, storage, state, dialog
 author: JonathanFingold
 ms.author: iawilt
@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: conceptual
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -16,187 +16,233 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-A bot's interactions fall into three areas: firstly, the exchange of Activities with the Azure Bot Service, secondly,
-the loading and saving of dialog state with a Store, and finally any other back-end services the bot needs to work with
-to get its job done.
+A bot's interactions fall into three areas: the exchange of activities with Azure AI Bot Service, the loading and saving of bot and dialog state with a memory store, and integration with back-end services.
 
-![scaleout interaction diagram](../media/scale-out/scale-out-interaction.png)
+:::image type="content" source="../media/scale-out/scale-out-interaction.png" alt-text="Interaction diagram outlining relationship between the Azure AI Bot Service, a bot, a memory store, and other services.":::
+
+This article explores how to extend the semantics between the Azure AI Bot Service and the bot's memory state and storage.
+
+[!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
 
 ## Prerequisites
 
-- The full sample code used in this article can be found here: [C# sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/42.scaleout).
+- Knowledge of [Basics of the Microsoft Bot Framework](bot-builder-basics.md), [Event-driven conversations using an activity handler](bot-activity-handler-concept.md), and [Managing state](bot-builder-concept-state.md).
+- A copy of the scale-out sample in [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/42.scaleout), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/42.scaleout), or [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/42.scaleout).
 
-In this article, we will be exploring the semantics around the bot's interactions with the Azure Bot Service and the Store.
+This article focuses on the C# version of the sample.
 
-The Bot Framework includes a default implementation; this implementation will most likely fit the needs of many
-applications, and all that is needed to be done to make use of it is to plug the pieces together with a few lines of
-initialization code. Many of the samples illustrate just that.
+## Background
 
-The goal here, however, is to describe what you can do when the semantics of the default implementation doesn't quite work
-as you might like in your application. The basic point is that this is a framework and not a canned application with
-fixed behavior, in other words, the implementation of many of the mechanisms in the framework is just the default
-implementation and not the only implementation.
+The Bot Framework SDK includes a default implementation of bot state and memory storage.
+This implementation fits the needs of applications where the pieces are used together with a few lines of initialization code, as demonstrated in many of the samples.
 
-Specifically, the framework does not dictate the relationship between the exchange of Activities with the Azure
-Bot Service and the loading and saving of any Bot state; it simply provides a default. To illustrate this point further,
-we will be developing an alternative implementation that has different semantics. This alternative solution sits
-equally well in the framework and may even be more appropriate for the application being developed. It all depends on the scenario.
+The SDK is a framework and not an application with fixed behavior.
+In other words, the implementation of many of the mechanisms in the framework is a default implementation and not the only possible implementation.
+The framework doesn't dictate the relationship between the exchange of activities with Azure AI Bot Service and the loading and saving of any bot state.
 
-## Behavior of the default BotFrameworkAdapter and Storage providers
+This article describes one way to modify the semantics of the default state and storage implementation when it doesn't quite work for your application.
+The scale-out sample provides an alternate implementation of state and storage that has different semantics than the default ones.
+This alternate solution sits equally well in the framework.
+Depending on your scenario, this alternate solution may be more appropriate for the application you're developing.
 
-Firstly, let's review the default implementation that ships as part of the framework packages as shown by the following
-sequence diagram:
+## Behavior of the default adapter and storage provider
 
-![scaleout default diagram](../media/scale-out/scale-out-default.png)
+With the default implementation, on receiving an activity, the bot loads the state corresponding to the conversation.
+It then runs the dialog logic with this state and the inbound activity.
+In the process of running the dialog, one or more outbound activities are created and immediately sent.
+When the processing of the dialog is complete, the bot saves the updated state, overwriting the old state.
 
-On receiving an Activity, the bot loads the state corresponding to this conversation. It then runs the dialog logic
-with this state and the Activity that has just arrived. In the process of executing the dialog, one or more outbound
-activities are created and immediately sent. When the processing of the dialog is complete, the bot saves the updated
-state, overwriting the old state with new.
+:::image type="content" source="../media/scale-out/scale-out-default.png" alt-text="Sequence diagram showing the default behavior of a bot and its memory store.":::
 
-It is worth considering a couple of things that can go wrong with this behavior.
+However, a few things can go wrong with this behavior.
 
-Firstly, if the Save operation were to fail for some reason the state has implicitly slipped out of sync with
-what is seen on the channel because the user having seen the responses is under the impression that the state
-has moved forward, but it hasn't. This is generally worse than if the state was successful and the response
-messaging were successful. This can have implications for the conversation design: for example, the dialog might
-include additional, otherwise redundant confirmation exchanges with the user.
+- If the save operation fails for some reason, then state has implicitly slipped out of sync with what the user sees on the channel.
+  The user has seen responses from the bot and believes that the state has moved forward, but it hasn't.
+  This error can be worse than if the state update succeeded but the user didn't receive the response messages.
 
-Secondly, if the implementation is deployed scaled out across multiple nodes, the state can accidentally get
-overwritten - this can be particularly confusing because the dialog will likely have sent activities to the channel
-carrying confirmation messages. Consider the example of a pizza order bot, if the user, on being asked for a topping,
-adds mushroom and without delay adds cheese, in a scaled-out scenario with multiple instances running subsequent
-activities can be sent concurrently to different machines running the bot. When this happens, there is what is referred
-to as a "race condition" where one machine might overwrite the state written by another. However, in our scenario,
-because the responses were already sent, the user has received confirmation that both mushroom and cheese were added.
-Unfortunately, when the pizza arrives, it will only contain mushroom or cheese, not both.
+  Such state errors can have implications for your conversation design.
+  For example, the dialog might require extra, otherwise redundant, confirmation exchanges with the user.
+
+- If the implementation is deployed _scaled out_ across multiple nodes, the state can accidentally get overwritten.
+  This error can be confusing because the dialog will likely have sent activities to the channel carrying confirmation messages.
+
+  Consider a pizza order bot, where the bot asks user for topping choices, and the user sends two rapid messages: one to add mushrooms and one to add cheese.
+  In a scaled-out scenario, multiple instances of the bot might be active, and the two user messages could be handled by two separate instances on separate machines.
+  Such a conflict is referred to as a _race condition_, where one machine might overwrite the state written by another.
+  However, because the responses were already sent, the user received confirmation that both mushroom and cheese were added to their order.
+  Unfortunately, when the pizza arrives, it only contains mushroom or cheese, but not both.
 
 ## Optimistic locking
 
-The solution is to introduce some locking around the state. The particular style of locking we will be using here is called
-optimistic locking because we will let everything run as if they were each the only thing running and then we will detect any
-concurrency violations after the processing has been done. This may sound complicated but is very easy to build using cloud
-storage technologies and the right extension points in the bot framework.
+The scale-out sample introduces some locking around the state.
+The sample implements _optimistic locking_, which lets each instance run as if it were the only one running and then check for any concurrency violations.
+This locking may sound complicated, but known solutions exist, and you can use cloud storage technologies and the right extension points in the Bot Framework.
 
-We will use a standard HTTP mechanism based on the entity tag header, (ETag). Understanding this mechanism is crucial to
-understanding the code that follows. The following diagram illustrates the sequence.
+The sample uses a standard HTTP mechanism based on the entity tag header (ETag).
+Understanding this mechanism is crucial to understanding the code that follows. The following diagram illustrates the sequence.
 
-![scaleout precondition failed diagram](../media/scale-out/scale-out-precondition-failed.png)
+:::image type="content" source="../media/scale-out/scale-out-precondition-failed.png" alt-text="Sequence diagram showing a race condition, with the second update failing.":::
 
-The diagram illustrates the case of two clients that are performing an update to some resource. When a client issues a
-GET request and a resource is returned from the server, it is accompanied by an ETag header. The ETag header is an opaque
-value that represents the state of the resource. If a resource is changed, the ETag will be updated. When the client has
-done its update to the state, it POSTs it back to the server, making this request the client attaches the ETag value it had
-previously received in a precondition If-Match header. If this ETag does not match the value, the server last returned
-(on any response, to any client) the precondition check fails with a 412 Precondition Failure. This failure is an indicator
-to the client making the POST request that the resource has been updated. On seeing this failure, the typical behavior for
-a client will be to GET the resource again, apply the update it wanted, and POST the resource back. This second
-POST will be successful, assuming of course, that no other client has come and updated the resource, and if it has the
-client will just have to try again.
+The diagram has two clients that are performing an update to some resource.
 
-This process is called "optimistic" because the client, having got hold of a resource proceeds to do its processing,
-the resource itself is not "locked" in the sense that other clients can access it without any restriction. Any contention
-between clients over what the state of the resource should be is not determined until the processing has been done. As a
-rule, in a distributed system this strategy is more optimal than the opposite "pessimistic" approach.
+1. When a client issues a GET request and a resource is returned from the server, the server includes an ETag header.
 
-The optimistic locking mechanism we've covered assumes program logic can be safely retried, needless, to say the important
-thing to consider here is what happens to external service calls. The ideal solution here is if these services can be made
-idempotent. In computer science, an idempotent operation is one that has no additional effect if it is called more than once
-with the same input parameters. Pure HTTP REST services that implement GET, PUT and DELETE fit this description. The reasoning
-here is intuitive: we might be retrying the processing and so making any calls it needs to make have no additional effect as
-they are re-executed as part of that retry is a good thing. For the sake of this discussion, we will assume we are living in
-an ideal world and the backend services shown to the right of the system picture at the beginning of this article are all
-idempotent HTTP REST services, from here on we will focus only on the exchange of activities.
+   The ETag header is an opaque value that represents the state of the resource.
+   If a resource is changed, the server updates its ETag for the resource.
+
+1. When the client wants to persist a state change, it issues a POST request to the server, with the ETag value in an `If-Match` precondition header.
+1. If the request's ETag value doesn't match the server's, then the precondition check fails with a `412` (Precondition Failed) response.
+
+   This failure indicates that the current value on server no longer matches the original value the client was operating on.
+
+1. If the client receives a precondition failed response, the client typically gets a fresh value for the resource, applies the update it wanted, and attempts to post the resource update again.
+
+   This second POST request succeeds if no other client has updated the resource. Otherwise, the client can try again.
+
+This process is called _optimistic_ because the client, once it has a resource, proceeds to do its processing&mdash;the resource itself isn't _locked_, as other clients can access it without any restriction.
+Any contention between clients over what the state of the resource should be isn't determined until the processing has been done.
+In a distributed system, this strategy is often more optimal than the opposite _pessimistic_ approach.
+
+The optimistic locking mechanism as described assumes that your program logic can be safely retried.
+The ideal situation is where these service requests are _idempotent_.
+In computer science, an idempotent operation is one that has no extra effect if it's called more than once with the same input parameters.
+Pure HTTP REST services that implement the GET, PUT, and DELETE requests are often idempotent.
+If a service request won't produce extra effects, then requests can be safely re-executed as part of a retry strategy.
+
+The scale-out sample and the remainder of this article assume that the backend services your bot uses are all idempotent HTTP REST services.
 
 ## Buffering outbound activities
 
-The sending of an Activity is not an idempotent operation, nor is it clear that would make much sense in the end-to-end scenario.
-After all the Activity is often just carrying a message that is appended to a view or perhaps spoken by a text to speech agent.
+Sending an activity isn't an idempotent operation.
+The activity is often a message that relays information to the user, and repeating the same message two or more times might be confusing or misleading.
 
-The key thing we want to avoid with sending the activities is sending them multiple times. The problem we have is that the optimistic locking mechanism requires that we with rerun our logic possibly multiple times. The solution is simple: we must
-buffer the outbound activities from the dialog until we are sure we are not going to rerun the logic. That is until after we
-have a successful Save operation. We are looking for a flow that looks something like the following:
+Optimistic locking implies that your bot logic may need to be rerun multiple times.
+To avoid sending any given activity multiple times, wait for the state update operation to succeed before sending activities to the user.
+Your bot logic should look something like the following diagram.
 
-![scaleout buffer diagram](../media/scale-out/scale-out-buffer.png)
+:::image type="content" source="../media/scale-out/scale-out-buffer.png" alt-text="Sequence diagram with messages being sent after dialog state is saved.":::
 
-Assuming we can build a retry loop around the dialog execution we get the following behavior when there is a
-precondition failure on the Save operation:
+Once you build a retry loop into your dialog execution, you have the following behavior when there's a precondition failure on the save operation.
 
-![scaleout save diagram](../media/scale-out/scale-out-save.png)
+:::image type="content" source="../media/scale-out/scale-out-save.png" alt-text="Sequence diagram with messages being sent after a retry attempt succeeds.":::
 
-Applying this mechanism and revisiting our example from earlier we should never see an erroneous positive acknowledgment of a pizza topping being added to an order. In fact, although we might have scaled out our deployment across multiple machines, we have effectively serialized our state updates with the optimistic locking scheme. In our pizza ordering but the acknowledgement from adding an item can now even be written to reflect the full state accurately. For example, if the user immediately types "cheese" and then before the bot has had a chance to reply "mushroom" the two replies can now be "pizza with cheese" and then "pizza with cheese and mushroom."
+With this mechanism in place, the pizza bot from the earlier example should never send an erroneous positive acknowledgment of a pizza topping being added to an order.
+Even with the bot deployed across multiple machines, the optimistic locking scheme effectively serializes the state updates.
+In the pizza bot, the acknowledgment from adding an item can now even reflect the full state accurately.
+For example, if the user quickly types "cheese" and then "mushroom", and these messages are handled by two different instances of the bot, the last instance to complete can include "a pizza with cheese and mushroom" as part of its response.
 
-Looking at the sequence diagram we can see that the replies could be lost after a successful Save operation, however, they could be lost anywhere in the end to end communication. The point is this is not a problem the state management infrastructure can fix. It will require a higher-level protocol and possibly one involving the user of the channel. For example, if the bot appears to the user not to have replied it is reasonable to expect the user to ultimately try again or some such behavior. So while it is reasonable for a scenario to have occasional transient outages such as this it is far less reasonable to expect a user to be able to filter out erroneous positive acknowledgements or other unintended messages.
+This new custom storage solution does three things that the default implementation in the SDK doesn't do:
 
-Pulling this all together, in our new custom storage solution, we are going to do three things the default implementation in the framework doesn't do. Firstly, we are going to use ETags to detect contention, secondly we are going to retry the processing when the ETag failure is detected and thirdly we are going to buffer any outbound Activities until we have a successful save. The remainder of this article describes the implementation of these three parts.
+1. It uses ETags to detect contention.
+1. It retries the processing when an ETag failure is detected.
+1. It waits to send outbound activities until it has successfully saved state.
 
-## Implementing ETag Support
+The remainder of this article describes the implementation of these three parts.
 
-We start out by defining an interface for our new store with ETag support.
-The interface will make it very easy to leverage the dependency injection mechanisms we have in ASP.NET.
-Having the interface means we can implement a version for production.
-We could also implement a version for unit tests that runs in memory without the need of hitting the network.
+## Implement ETag support
 
-The interface consists of Load and Save methods. Both these take the key we will use for the state. The Load will return the data and the associated ETag. And the Save will take these in. Additionally, the Save will return bool. This bool will indicate whether the ETag has matched and the Save was successful. This is not intended as a general error indicator but rather a specific indicator of precondition failure, we model this as a return code rather than an exception because we will be writing control flow logic around this in the shape of our retry loop.
+First, define an interface for our new store that includes ETag support.
+The interface helps use the dependency injection mechanisms in ASP.NET.
+Starting with the interface allows you to implement separate versions for unit tests and for production.
+For example, the unit test version might run in memory and not require a network connection.
 
-As we would like this lowest level storage piece to be pluggable, we will make sure to avoid placing any serialization requirements on it, however we would like to specify that the content save should be JSON, that way a store implementation can set the content-type. The easiest and most natural way to do this in .NET is through the argument types, specifically we will type the content argument as JObject. In JavaScript or TypeScript this will just be a regular native object.
+The interface consists of _load_ and _save_ methods.
+Both methods will use a _key_ parameter to identify the state to load from or save to storage.
 
-This is the resulting interface:
+- _Load_ will return the state value and associated ETag.
+- _Save_ will have parameters for the state value and associated ETag and return a Boolean value that indicates whether the operation succeeded.
+  The return value won't serve as a general error indicator, but instead as a specific indicator of precondition failure.
+  Checking the return code will part of the logic of the retry loop.
+
+To make the storage implementation widely applicable, avoid placing serialization requirements on it.
+However, many modern storage services support JSON as the content-type.
+In C#, you can use the `JObject` type to represent a JSON object.
+In JavaScript or TypeScript, JSON is a regular native object.
+
+Here's a definition of the custom interface.
 
 **IStore.cs**
 
 [!code-csharp[IStore](~/../botbuilder-samples/samples/csharp_dotnetcore/42.scaleout/IStore.cs?range=14-19)]
 
-Implementing this against Azure Blob Storage is straight forward.
+Here's an implementation for Azure Blob Storage.
 
 **BlobStore.cs**
 
 [!code-csharp[BlobStore](~/../botbuilder-samples/samples/csharp_dotnetcore/42.scaleout/BlobStore.cs?range=18-101)]
 
-As you can see Azure Blob Storage is doing the real work here. Note the catch of specific exceptions and how that is translated across to meet what will be the expectations of the calling code. That is, on the load we want a Not Found exception to return null and the Precondition Failed exception on the Save to return bool.
+Azure Blob Storage does much of the work. Each method checks for a specific exception to meet the expectations of the calling code.
 
-All this source code will be available in a corresponding [sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/42.scaleout) and that sample will include a memory store implementation.
+- The `LoadAsync` method, in response to a storage exception with a _not found_ status code, returns a null value.
+- The `SaveAsync` method, in response to a storage exception with a _precondition failed_ code, returns `false`.
 
-## Implementing the Retry Loop
+## Implement a retry loop
 
-The basic shape of the loop is derived directly from the behavior shown in the sequence diagrams.
+The design of the retry loop implements the behavior shown in the sequence diagrams.
 
-On receiving an Activity we create a key for the corresponding state for that conversation. We are not changing the relationship between Activity and conversation state, so we will be creating the key in exactly the same way as in the default state implementation.
+1. On receiving an activity, create a key for the conversation state.
 
-After having created the appropriate key we will attempt to Load the corresponding state. Then run the bot's dialogs and then attempt to Save. If that Save is successful, we will send the outbound Activities that resulted from running the dialog and be done. Otherwise we will go back and repeat the whole process from before the Load. Redoing the Load will give us a new ETag and so next time the Save will hopefully be successful.
+    The relationship between an activity and the conversation state is the same for the custom storage as for the default implementation.
+    Therefore, you can construct the key the same way that the default state implementation does.
 
-The resulting OnTurn implementation looks like this:
+1. Attempt to load the conversation state.
+1. Run the bot's dialogs and capture the outbound activities to send.
+1. Attempt to save the conversation state.
+    - On success, send the outbound activities and exit.
+    - On failure, repeat this process from the step to load the conversation state.
+
+      The new load of conversation state gets a new and current ETag and conversation state. The dialog is rerun, and the save state step has a chance to succeed.
+
+Here's an implementation for the message activity handler.
 
 **ScaleoutBot.cs**
 
 [!code-csharp[OnMessageActivity](~/../botbuilder-samples/samples/csharp_dotnetcore/42.scaleout/Bots/ScaleOutBot.cs?range=43-72)]
 
-Note that we have modeled the dialog execution as a function call. Perhaps a more sophisticated implementation would have defined an interface and made this dependency injectable but for our purposes having the dialog all sit behind a static function emphasize the functional nature of our approach. As a general statement, organizing our implementation such that the crucial parts become functional puts us in a very good place when it comes to having it work successfully on networks.
+> [!NOTE]
+> The sample implements dialog execution as a function call.
+> A more sophisticated approach might be to define an interface and use dependency injection.
+> For this example, however, the static function emphasizes the functional nature of this optimistic locking approach.
+> In general, when you implement the crucial parts of your code in a functional way, you improve its chances to work successfully on networks.
 
-## Implementing outbound Activity buffering
+## Implement an outbound activity buffer
 
-The next requirement is that we buffer outbound Activities until a successful Save has been performed. This will require a custom BotAdapter implementation. In this code, we will implement the abstract SendActivity function to add the Activity to a list rather than sending it. The dialog we will be hosting will be non-the-wiser.
-In this particular scenario UpdateActivity and DeleteActivity operations are not supported and so will just throw Not Implemented from those methods. We also don't care about the return value from the SendActivity. This is used by some channels in scenarios where updates to Activities need to be sent, for example, to disable buttons on cards displayed in the channel. These message exchanges can get complicated particularly when state is required, that is outside the scope of this article. The full implementation of the custom BotAdapter looks like this:
+The next requirement is to buffer outbound activities until after a successful save operation happens, which requires a custom adapter implementation.
+The custom `SendActivitiesAsync` method shouldn't send the activities to the use, but add the activities to a list.
+Your dialog code won't need modification.
+
+- In this particular scenario, the _update activity_ and _delete activity_ operations aren't supported and the associated methods will throw _not implemented_ exceptions.
+- The return value from the send activities operation is used by some channels to allow a bot to modify or delete a previously sent message, for example, to disable buttons on cards displayed in the channel. These message exchanges can get complicated, particularly when state is required, and are outside the scope of this article.
+- Your dialog creates and uses this custom adapter, so it can buffer activities.
+- Your bot's turn handler will use a more standard `AdapterWithErrorHandler` to send the activities to the user.
+
+Here's an implementation of the custom adapter.
 
 **DialogHostAdapter.cs**
 
 [!code-csharp[DialogHostAdapter](~/../botbuilder-samples/samples/csharp_dotnetcore/42.scaleout/DialogHostAdapter.cs?range=19-46)]
 
-## Integration
+## Use your custom storage in a bot
 
-All that is left to do is glue these various new pieces together and plug them into the existing framework pieces. The main retry loop just sits in the IBot OnTurn function. It holds our custom IStore implementation which for testing purposes we have made dependency injectable. We have put all the dialog hosting code into a class called DialogHost that exposes a single public static function. This function is defined to take the inbound Activity and the old state and then return the resulting Activities and new state.
+The last step is to use these custom classes and methods with existing framework classes and methods.
 
-The first thing to do in this function is to create the custom BotAdapter we introduced earlier. Then we will just run the dialog in exactly the same was as we usually do by creating a DialogSet and DialogContext and doing the usual Continue or Begin flow. The only piece we haven't covered is the need for a custom Accessor. This turns out to be a very simple shim that facilitates passing the dialog state into the dialog system. The Accessor uses ref semantics when working with the dialog system and so all that is needed is to pass the handle across. To make things even clearer we have constrained the class template we are using to ref semantics.
+- The main retry loop becomes part of your bot's `ActivityHandler.OnMessageActivityAsync` method and includes your custom storage through dependency injection.
+- The dialog hosting code is added to `DialogHost` class that exposes a static `RunAsync` method. The dialog host:
+  - Takes the inbound activity and the old state and then returns the resulting activities and new state.
+  - Creates the custom adapter and otherwise runs the dialog in the same way as the SDK does.
+  - Creates a custom state property accessor, a shim that passes the dialog state into the dialog system.
+    The accessor uses reference semantics to pass an accessor handle to the dialog system.
 
-We are being very cautious in the layering, we are putting the JsonSerialization inline in our hosting code because we didn't want it inside the pluggable storage layer when different implementations might serialize differently.
+> [!TIP]
+> The JSON serialization is added inline to the hosting code to keep it outside of the pluggable storage layer, so that different implementations can serialize differently.
 
-Here is the driver code:
+Here's an implementation of the dialog host.
 
 **DialogHost.cs**
 
 [!code-csharp[DialogHost](~/../botbuilder-samples/samples/csharp_dotnetcore/42.scaleout/DialogHost.cs?range=22-72)]
 
-And finally, the custom Accessor, we only need to implement Get because the state is by ref:
+And finally, here's an implementation of the custom state property accessor.
 
 **RefAccessor.cs**
 
@@ -204,4 +250,4 @@ And finally, the custom Accessor, we only need to implement Get because the stat
 
 ## Additional information
 
-The [C# sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/42.scaleout) code used in this article is available on GitHub.
+The scale-out sample is available from the Bot Framework samples repo on GitHub in [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/42.scaleout), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/42.scaleout), and [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/42.scaleout).

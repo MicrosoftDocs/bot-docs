@@ -1,5 +1,5 @@
 ---
-title: Actions in adaptive dialogs in Bot Framework SDK
+title: Prebuilt actions for adaptive dialogs
 description: Learn about the adaptive dialog prebuilt actions, grouped by their general purpose.
 keywords: bot, actions, adaptive dialogs
 author: JonathanFingold
@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: reference
-ms.date: 03/03/2022
+ms.date: 09/01/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -36,7 +36,7 @@ This article lists the actions defined in the Bot Framework SDK, grouped by thei
 
 ## Conditions and looping
 
-The conditional actions are designed to help your bot make decisions based on any pre-defined condition that you have created. These actions are specified by a set of conditional statements that have Boolean expressions, which are evaluated to a Boolean value of true or false.
+The conditional actions are designed to help your bot make decisions based on any pre-defined condition that you've created. These actions are specified by a set of conditional statements that have Boolean expressions, which are evaluated to a Boolean value of true or false.
 
 The remaining actions relate to looping statements which enable you to repeat the execution of a block of code for every element in a collection.
 
@@ -80,6 +80,8 @@ The remaining actions relate to looping statements which enable you to repeat th
 | `UpdateActivity`         | Update an activity       | Updates an activity that was previously sent to a user.                                                |
 
 ## Access external resources
+
+[!INCLUDE [qnamaker-sunset-alert](../includes/qnamaker-sunset-alert.md)]
 
 | Action Name           | Action title           | Description                                                                                                |
 |:----------------------|:-----------------------|:-----------------------------------------------------------------------------------------------------------|

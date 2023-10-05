@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: Gabo.Gilabert
 ms.service: bot-service
 ms.topic: how-to
-ms.date: 11/17/2021
+ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -21,12 +21,16 @@ This article demonstrates how to create a skill that supports multiple actions. 
 This article assumes you're already familiar with creating skills.
 For how to create a skill bot in general, see how to [implement a skill](skill-implement-skill.md).
 
+[!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
+
 ## Prerequisites
 
 - Knowledge of [bot basics](bot-builder-basics.md), [how skills bots work](skills-conceptual.md), and how to [implement a skill](skill-implement-skill.md).
 - An Azure subscription (to deploy your skill). If you don't have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 - Optionally, a [LUIS](https://www.luis.ai/) account. (For more information, see how to [add natural language understanding to your bot](bot-builder-howto-v4-luis.md).)
 - A copy of the **skills skillDialog** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/81.skills-skilldialog#readme), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/81.skills-skilldialog#readme), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/81.skills-skilldialog#readme), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/81.skills-skilldialog#readme).
+
+[!INCLUDE [luis-sunset-alert](../includes/luis-sunset-alert.md)]
 
 ## About this sample
 
@@ -39,19 +43,19 @@ This article focuses on how to use a dialog within a skill bot to manage multipl
 
 ### [C#](#tab/cs)
 
-![C# skill class diagram](./media/skill-dialog/dialog-skill-bot-cs.png)
+:::image type="content" source="./media/skill-dialog/dialog-skill-bot-cs.png" alt-text="C# class diagram.":::
 
 ### [JavaScript](#tab/js)
 
-![JavaScript skill class diagram](./media/skill-dialog/dialog-skill-bot-js.png)
+:::image type="content" source="./media/skill-dialog/dialog-skill-bot-js.png" alt-text="JavaScript class diagram.":::
 
 ### [Java](#tab/java)
 
-![Java skill class diagram](./media/skill-dialog/dialog-skill-bot-java.png)
+:::image type="content" source="./media/skill-dialog/dialog-skill-bot-java.png" alt-text="Java class diagram.":::
 
 ### [Python](#tab/python)
 
-![Python skill class diagram](./media/skill-dialog/dialog-skill-bot-py.png)
+:::image type="content" source="./media/skill-dialog/dialog-skill-bot-py.png" alt-text="Python class diagram.":::
 
 ---
 
@@ -62,7 +66,7 @@ For information about the skill consumer bot, see how to [consume a skill using 
 For deployed bots, bot-to-bot authentication requires that each participating bot has a valid identity.
 However, you can test skills and skill consumers locally with the Bot Framework Emulator without identity information.
 
-To make the skill available to user-facing bots, register the skill with Azure. For more information, see how to [register a bot with Azure Bot Service](../bot-service-quickstart-registration.md).
+To make the skill available to user-facing bots, register the skill with Azure. For more information, see how to [register a bot with Azure AI Bot Service](../bot-service-quickstart-registration.md).
 
 Optionally, the skill bot can use a flight-booking LUIS model. To use this model, use the CognitiveModels/FlightBooking.json file to create, train, and publish the LUIS model.
 
