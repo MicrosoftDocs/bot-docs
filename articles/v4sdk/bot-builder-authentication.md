@@ -218,25 +218,43 @@ You'll need your bot's app ID and password to complete this process.
     - Set `MicrosoftAppId` and `MicrosoftAppPassword` to your bot's app ID and app secret.
 
       Depending on the characters in your bot secret, you may need to XML escape the password. For example, any ampersands (&) will need to be encoded as `&amp;`.
-
+      
     [!code-json[appsettings](~/../botbuilder-samples/samples/csharp_dotnetcore/18.bot-authentication/appsettings.json)]
+    
+    To use OAuth in bot with data-residency in public cloud, you must add the following configurations in your appsettings
+    ```json
+    "OAuthUrl": "<Regional-OAuth-Uri>",
+    "ToChannelFromBotOAuthScope": "https://api.botframework.com",
+    "ToChannelFromBotLoginUrlTemplate": "https://api.botframework.com",
+    "PublicAzureChannel": "https://api.botframework.com",
+    "ToBotFromChannelOpenIdMetadataUrl": "https://login.botframework.com/v1/.well-known/openidconfiguration",
+    "ToBotFromEmulatorOpenIdMetadataUrl": "https://login.microsoftonline.com/common/v2.0/.well-known/openid-configuration",
+    "ToBotFromChannelTokenIssuer": "https://api.botframework.com",
+    "ToChannelFromBotLoginUrl": "https://login.microsoftonline.com/botframework.com",
+    ```
+    
+    Where _\<Regional-OAuth-Url>_ is one of the following URIs:
+    
+    |URI|Description|
+    |:-|:-|
+    |`https://europe.api.botframework.com`|For public-cloud bots with data residency in Europe.|
+    |`https://unitedstates.api.botframework.com`|For public-cloud bots with data residency in the United States.|
 
 1. Update **Startup.cs**:
 
-    To use OAuth in _non-public Azure clouds_, like the government cloud, or in bots with data-residency, you must add the following code in the **Startup.cs** file.
+    To use OAuth in _non-public Azure clouds_, like the government cloud, you must add the following code in the **Startup.cs** file.
 
     ```csharp
     string uri = "<uri-to-use>";
     MicrosoftAppCredentials.TrustServiceUrl(uri);
     OAuthClientConfig.OAuthEndpoint = uri;
+
     ```
 
     Where _\<uri-to-use>_ is one of the following URIs:
 
     |URI|Description|
     |:-|:-|
-    |`https://europe.api.botframework.com`|For public-cloud bots with data residency in Europe.|
-    |`https://unitedstates.api.botframework.com`|For public-cloud bots with data residency in the United States.|
     |`https://api.botframework.azure.us`|For United States government-cloud bots without data residency.|
     |`https://api.botframework.com`|For public-cloud bots without data residency. This is the default URI and doesn't require a change to **Startup.cs**.|
 

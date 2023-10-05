@@ -1552,7 +1552,9 @@ div(11, 5)
 
 And return the result **2**.
 
-If one of the parameters is a float, the result will also be a float.
+There exists some gap between Javascript and .NET SDK. For example, the following expression will return different results in Javascript and .NET SDK:
+
+If one of the parameters is a float, the result will also be a FLOAT with .NET SDK.
 
 *Example*
 
@@ -1561,6 +1563,22 @@ div(11.2, 2)
 ```
 
 Returns the result **5.6**.
+
+If one of the parameters is a float, the result will be an INT with Javascript SDK.
+
+*Example*
+
+```
+div(11.2, 2)
+```
+
+Returns the result **5**.
+
+The workaround for Javascript to keep a certain number of decimal places in results is to use such expression. For example, to keep 3 decimal places:
+
+```
+float(concat(string(div(a, b)),'.',string(mod(div(a*1000, b), 1000))))
+```
 
 <a name="empty"></a>
 

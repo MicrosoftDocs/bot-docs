@@ -1,5 +1,5 @@
 ---
-title: Debug a bot with inspection middleware in Bot Framework SDK
+title: Debug a bot with inspection middleware in the Bot Framework SDK
 description: Learn how to use inspection middleware to debug bots. See how to use the Bot Framework Emulator to inspect state data and message traffic.
 keywords: Bot Framework SDK, debug bot, inspection middleware, bot emulator, Azure Bot
 author: JonathanFingold
@@ -9,6 +9,7 @@ ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 10/26/2022
+
 ---
 
 # Debug a bot with inspection middleware
@@ -17,31 +18,29 @@ ms.date: 10/26/2022
 
 This article describes how to debug a bot using inspection middleware. This feature allows the Bot Framework Emulator to debug traffic into and out of the bot, and to see the current state of the bot. You can use a trace message to send data to the Emulator and then inspect the state of your bot in any given turn of the conversation.
 
-We use an EchoBot built locally using the Bot Framework v4
-[Create a bot](bot-service-quickstart-create-bot.md) to show how to debug and inspect the bot's message state. You can also [Debug a bot using IDE](./bot-service-debug-bot.md) or [Debug with the Bot Framework Emulator](./bot-service-debug-emulator.md), but to debug state you need to add inspection middleware to your bot. The Inspection bot samples are available for [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/47.inspection), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/47.inspection), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/47.inspection), and [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/47.inspection).
+We use an EchoBot built locally using the Bot Framework v4 in the [Create a bot quickstart](bot-service-quickstart-create-bot.md) to show how to debug and inspect the bot's message state. You can also [Debug a bot using IDE](./bot-service-debug-bot.md) or [Debug with the Bot Framework Emulator](./bot-service-debug-emulator.md), but to debug state you need to add inspection middleware to your bot. The inspection bot samples are available for [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/47.inspection), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/47.inspection), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/47.inspection), and [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/47.inspection).
 
 [!INCLUDE [java-python-sunset-alert](includes/java-python-sunset-alert.md)]
 
 ## Prerequisites
 
-- Download and install the [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md)
-- Knowledge of bot [Middleware](v4sdk/bot-builder-concept-middleware.md)
-- knowledge of bot [Managing state](v4sdk/bot-builder-concept-state.md)
-- Download and install [ngrok](https://ngrok.com/) (if you want to debug a bot configured in Azure to use additional channels)
+- Knowledge of bot [Middleware](v4sdk/bot-builder-concept-middleware.md) and [Managing state](v4sdk/bot-builder-concept-state.md)
+- Knowledge of how to [Debug an SDK-first bot](bot-service-debug-bot.md) and [Test and debug with the Emulator](bot-service-debug-emulator.md)
+- An install of the [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md)
+- An install [ngrok](https://ngrok.com/) (if you want to debug a bot configured in Azure to use other channels)
+- A copy of the inspection bot sample for [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/47.inspection), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/47.inspection), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/47.inspection), or [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/47.inspection)
 
 ## Update your Emulator to the latest version
 
-Before using the bot inspection middleware to debug your bot, update your Emulator to version 4.5 or later. Check the [latest version](https://github.com/Microsoft/BotFramework-Emulator/releases) for updates.
+Before using bot inspection middleware to debug your bot, update your Emulator to version 4.5 or later. Check the [latest version](https://github.com/Microsoft/BotFramework-Emulator/releases) for updates.
 
 To check the version of your Emulator, select **Help**, then **About** in the menu. You'll see the current version of your Emulator.
 
-:::image type="content" source="./media/bot-debug-inspection-middleware/bot-debug-check-emulator-version.png" alt-text="current version":::
-
-## Update your bot's code
+## Update your bot code
 
 ### [C#](#tab/csharp)
 
-Set up the inspection state and add the inspection middleware to the adapter in the **Startup.cs** file. The inspection state is provided through dependency injection. See the code update below or refer to the [Inspection middleware](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/47.inspection) sample on GitHub.
+The inspection state and inspection middleware are configured in the **Startup.cs** file and then used by the adapter.
 
 **Startup.cs**  
 [!code-csharp [inspection bot sample](../botbuilder-samples/samples/csharp_dotnetcore/47.inspection/Startup.cs?range=24-25,35-37)]
@@ -56,7 +55,7 @@ Update the bot class in the **EchoBot.cs** file.
 
 ### [JavaScript](#tab/javascript)
 
-Before updating your bot's code you should update its packages to the latest versions by executing the following command in your terminal:
+Before updating your bot's code, update its packages to the latest versions by executing the following command in your terminal:
 
 ```console
 npm install --save botbuilder@latest
@@ -115,7 +114,7 @@ Update the bot class in the **echo_bot.py** file.
 
 ## Test your bot locally
 
-After updating the code you can run your bot locally and test the debugging feature using two Emulators: one to send and receive messages, and the other to inspect the state of messages in debugging mode. To test your bot locally take the following steps:
+After updating the code, you can run your bot locally and test the debugging feature using two Emulators: one to send and receive messages, and the other to inspect the state of messages in debugging mode. To test your bot locally:
 
 1. Go to your bot's directory in a terminal and execute the following command to run your bot locally:
 
@@ -167,7 +166,7 @@ If you want to inspect the state of your bot configured in Azure and connected t
 
 At this point, you've updated your Emulator to the latest version and added the inspection middleware in your bot's code. The next step is to run ngrok and configure your local bot. Before running ngrok you need to run your bot locally.
 
-To run your bot locally do the following:
+To run your bot locally:
 
 1. Go to your bot's folder in a terminal and set your npm registration to use the [latest builds](https://botbuilder.myget.org/feed/botbuilder-v4-js-daily/package/npm/botbuilder-azure)
 
@@ -224,8 +223,7 @@ You can start debugging your bot by sending messages in the configured channel's
 
 :::image type="content" source="./media/bot-debug-inspection-middleware/debug-state-inspection-channel-chat.gif" alt-text="debug-inspection-middleware":::
 
-## Additional resources
+## Next steps
 
-- Try the inspection middleware bot sample in [C#](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/47.inspection), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/47.inspection), or [Python](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/python/47.inspection) .
-- Read [troubleshoot general problems](bot-service-troubleshoot-bot-configuration.md) and the other troubleshooting articles in that section.
-- Read the how to [Debug with the Emulator](bot-service-debug-emulator.md) article.
+- Learn how to [Debug your bot using transcript files](v4sdk/bot-builder-debug-transcript.md).
+- Learn how to [Debug a skill or skill consumer](v4sdk/skills-debug-skill-or-consumer.md).

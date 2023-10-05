@@ -13,6 +13,8 @@ ms.date: 11/01/2022
 
 # Direct Line App Service extension
 
+**Commencing September 1, 2023, it is strongly advised to employ the [Azure Service Tag](/azure/virtual-network/service-tags-overview#available-service-tags) method for network isolation. The utilization of DL-ASE should be limited to highly specific scenarios. Prior to implementing this solution in a production environment, we kindly recommend consulting your support team for guidance.**
+
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
 The Direct Line App Service extension allows clients to connect directly with the host, where the bot is located. It runs inside the same subscription, app service, and Azure network as your bot and provides network isolation and, in some cases, improved performance. The client application uses [WebSocket protocol](https://tools.ietf.org/html/rfc6455) to communicate with the bot.

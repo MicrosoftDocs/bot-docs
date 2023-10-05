@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 02/10/2023
 ---
 
 # Adding rich card attachments to messages with the Bot Connector API
@@ -78,10 +78,10 @@ Some channels allow you to add multiple rich cards to the `attachments` array wi
 > To display multiple rich cards in carousel format, set the `Activity` object's `attachmentLayout` property to "carousel".
 > If the channel doesn't support carousel format, it will display the rich cards in list format, even if the `attachmentLayout` property specifies "carousel".
 
-The following example shows a complete message that contains a single Hero card attachment. In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
+The following example shows a complete message that contains a single Hero card attachment. In this example request, `https://smba.trafficmanager.net/teams` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
 
 ```http
-POST https://smba.trafficmanager.net/apis/v3/conversations/abcd1234/activities/5d5cdc723
+POST https://smba.trafficmanager.net/teams/v3/conversations/abcd1234/activities/5d5cdc723
 Authorization: Bearer ACCESS_TOKEN
 Content-Type: application/json
 ```

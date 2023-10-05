@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 02/10/2023
 ---
 
 # Add input hints to messages with the Bot Connector API
@@ -21,7 +21,7 @@ To indicate that your bot is passively ready for input but isn't awaiting a resp
 The following example shows a request that sends a message and specifies that the bot is accepting input. In this example request, Direct Line represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
 
 ```http
-POST https://smba.trafficmanager.net/apis/v3/conversations/abcd1234/activities/5d5cdc723
+POST https://smba.trafficmanager.net/teams/v3/conversations/abcd1234/activities/5d5cdc723
 Authorization: Bearer ACCESS_TOKEN
 Content-Type: application/json
 ```
@@ -54,7 +54,7 @@ To indicate that your bot is actively awaiting a response from the user, set the
 The following example shows a request that sends a message and specifies that the bot is expecting input. In this example request, Direct Line represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
 
 ```http
-POST https://smba.trafficmanager.net/apis/v3/conversations/abcd1234/activities/5d5cdc723
+POST https://smba.trafficmanager.net/teams/v3/conversations/abcd1234/activities/5d5cdc723
 Authorization: Bearer ACCESS_TOKEN
 Content-Type: application/json
 ```
@@ -87,7 +87,7 @@ To indicate that your bot isn't ready to receive input from the user, set the `i
 The following example shows a request that sends a message and specifies that the bot is ignoring input. In this example request, Direct Line represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
 
 ```http
-POST https://smba.trafficmanager.net/apis/v3/conversations/abcd1234/activities/5d5cdc723
+POST https://smba.trafficmanager.net/teams/v3/conversations/abcd1234/activities/5d5cdc723
 Authorization: Bearer ACCESS_TOKEN
 Content-Type: application/json
 ```
