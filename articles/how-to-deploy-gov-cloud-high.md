@@ -119,7 +119,7 @@ ValidateAuthority=true
 
 ---
 
-## Congifure for DoD environment
+## Configure for DoD environment
 
 There is also a **DoD environment** which shares most (but not all) settings with the Office 365 GCC High environment. For the DoD environment use the following settings.
 
