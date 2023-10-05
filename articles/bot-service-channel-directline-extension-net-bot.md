@@ -13,6 +13,8 @@ ms-custom: abs-meta-21q1
 
 # Configure .NET bot for extension
 
+**Commencing September 1, 2023, it is strongly advised to employ the [Azure Service Tag](/azure/virtual-network/service-tags-overview#available-service-tags) method for network isolation. The utilization of DL-ASE should be limited to highly specific scenarios. Prior to implementing this solution in a production environment, we kindly recommend consulting your support team for guidance.**
+
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
 This article describes how to update a .NET bot to work with named pipes and how to enable the Direct Line App Service extension in the Azure App Service resource in which you deployed your bot.
