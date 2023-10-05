@@ -19,6 +19,6 @@ These app types aren't supported in the other languages or in Bot Framework Comp
 
 | App type                       | Support                                                                               |
 |:-------------------------------|:--------------------------------------------------------------------------------------|
-| User-assigned managed identity | Azure Bot Service and the C# and JavaScript SDKs                                      |
-| Single-tenant                  | Azure Bot Service and the C# and JavaScript SDKs                                      |
-| Multi-tenant                   | Azure Bot Service, all Bot Framework SDK languages, Composer, the Emulator, and ngrok |
+| User-assigned managed identity | Azure AI Bot Service and the C# and JavaScript SDKs                                      |
+| Single-tenant                  | Azure AI Bot Service and the C# and JavaScript SDKs                                      |
+| Multi-tenant                   | Azure AI Bot Service, all Bot Framework SDK languages, Composer, the Emulator, and ngrok |

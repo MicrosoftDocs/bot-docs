@@ -15,7 +15,7 @@ ms.date: 06/06/2022
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 Often a bot must access protected resources, for example email account, on behalf of the user. In order to do that the bot must be **authorized** based on the user's credentials. Before that, the user must be **authenticated** first.
-The bot must be a known entity, that is, it must be authenticated within the Azure Bot Service context. This happens prior to the bot being authorized to operate on behalf of the user.
+The bot must be a known entity, that is, it must be authenticated within the Azure AI Bot Service context. This happens prior to the bot being authorized to operate on behalf of the user.
 
 Let's see if we can untangle this bundle by starting with a bird's eye view of the Bot Framework authentication context.
 
@@ -59,7 +59,7 @@ The following articles provide in-depth information and examples about authentic
 | [Identity providers](bot-builder-concept-identity-providers.md) | Describes the use of identity providers. They allow you to build applications that securely sign in users using industry standard protocols like OAuth2.0. |
 | [User authentication](bot-builder-concept-authentication.md) | Describes user's authentication and the related token to authorize a bot to perform tasks on the user's behalf. |
 | [Single sign on](bot-builder-concept-sso.md) | Describes single user authentication for multiple protected resources access. |
-| [Register a bot with Azure](../bot-service-quickstart-registration.md) | Shows how to register a bot with the Azure Bot Service. |
+| [Register a bot with Azure](../bot-service-quickstart-registration.md) | Shows how to register a bot with the Azure AI Bot Service. |
 | [Bot Framework security guidelines](bot-builder-security-guidelines.md) | Describes security in general and as it applies to the Bot Framework. |
 | [Add authentication to a bot](bot-builder-authentication.md) | Shows how to create bot channel registration, create an authentication connection, and prepare the code. |
 | [Add single sign on to a bot](bot-builder-authentication-sso.md) | Shows how to add single sign-on authentication to a bot. |

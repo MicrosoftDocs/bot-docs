@@ -84,7 +84,7 @@ Here is an example .lu file demonstrating these intents and example utterances t
 >
 > Multiple comment ("**>**") characters can also be used to define outlining sections in the .lu file to help you organize the content. [Composer][] allows you to take advantage of outlining when editing LU files.
 
-For more information about intents and utterances, see [Intents in your LUIS app](/azure/cognitive-services/luis/luis-concept-intent) and [Understand what good utterances are for your LUIS app](/azure/cognitive-services/luis/luis-concept-utterance) in the LUIS documentation.
+For more information about intents and utterances, see [Intents in your LUIS app](/azure/ai-services/luis/concepts/intents) and [Understand what good utterances are for your LUIS app](/azure/ai-services/luis/concepts/utterances) in the LUIS documentation.
 
 ## Entities
 
@@ -150,7 +150,7 @@ The following example demonstrates a machine-learned entity named city (`@ ml ci
 > Define the bookFlight intent with sample utterances that contain the machine-learned entities
 # bookFlight
 - Book a flight from {@city = Cairo} to {@city = Seattle}
-- Get me 2 tickets for a flight to {@city = Bangalore}
+- Get me 2 tickets for a flight to {@city = Bengaluru}
 - Purchase ticket from {@city = Washington} to {@city = Tampa Bay}
 ```
 
@@ -758,7 +758,7 @@ Below are examples of how to make URI references:
 - Read [.qna file format](bot-builder-qna-file-format.md) for more information about .qna files.
 
 [luis]: https://luis.ai
-[entity]: /azure/cognitive-services/luis/luis-concept-entity-types
-[ml-entity]: /azure/cognitive-services/luis/luis-concept-entity-types#machine-learned-ml-entity
+[entity]: /azure/ai-services/luis/concepts/entities
+[ml-entity]: /azure/ai-services/luis/concepts/entities
 [orchestrator]: /composer/concept-orchestrator
 [Composer]: /composer/

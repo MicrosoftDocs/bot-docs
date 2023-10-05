@@ -17,14 +17,14 @@ ms.date: 11/01/2021
 
 You can make your bot accessible in channels in two ways:
 
-1. **Azure Bot Service channels**: make your bot available in channels with the Azure Bot Service. This works for all supported languages.
+1. **Azure AI Bot Service channels**: make your bot available in channels with the Azure AI Bot Service. This works for all supported languages.
 1. **Channel adapters**: make your bot available in channels with an adapter. The channel adapter translates between the Bot Framework activity schema and the native schema of a channel. The SDK, Botkit, and Bot Builder Community repos provide various channel adapters, which are language specific.
 
-    1. The Bot Framework SDK repo lists many of the [available adapters](https://github.com/microsoft/botframework-sdk#channels-and-adapters), including Azure Bot Service channels and channel adapters.
+    1. The Bot Framework SDK repo lists many of the [available adapters](https://github.com/microsoft/botframework-sdk#channels-and-adapters), including Azure AI Bot Service channels and channel adapters.
     1. The Botkit repo includes channel adapters, which they call [platform adapters](https://github.com/howdyai/botkit/blob/main/packages/docs/platforms/index.md). Botkit is an open source developer tool for building chat bots, apps and custom integrations for major messaging platforms.
     1. The [Bot Builder Community](https://github.com/BotBuilderCommunity/) repositories include channel adapters. View the README for each repo to see which channel adapters have been developed.
 
-Some channels are accessible through Azure Bot Service or through an adapter. It's up to you when to use a channel versus an adapter.
+Some channels are accessible through Azure AI Bot Service or through an adapter. It's up to you when to use a channel versus an adapter.
 
 ## Currently available adapters
 
@@ -32,7 +32,7 @@ Each repository is responsible for maintaining the list of adapters and channels
 
 ## When to use a channel adapter
 
-1. Azure Bot Service doesn't support the channel you want.
+1. Azure AI Bot Service doesn't support the channel you want.
 1. Security and compliance requirements of your deployment dictate that you can't rely on an outside service.
 1. Depth of features that you need in a particular channel may not be supported.
 

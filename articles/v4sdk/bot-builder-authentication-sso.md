@@ -26,7 +26,7 @@ For more information about skills, see [Skills overview](skills-conceptual.md) a
 For more information about user authentication, see [Bot Framework authentication basics](bot-builder-authentication-basics.md), [User authentication](bot-builder-concept-authentication.md), and [Add authentication to a bot](bot-builder-authentication.md).
 
 > [!IMPORTANT]
-> When you use Azure Bot Service authentication with _Web Chat_, there are some important security considerations you must keep in mind. For more information, see the [security considerations](../rest-api/bot-framework-rest-direct-line-3-0-authentication.md#security-considerations) section in the REST authentication article.
+> When you use Azure AI Bot Service authentication with _Web Chat_, there are some important security considerations you must keep in mind. For more information, see the [security considerations](../rest-api/bot-framework-rest-direct-line-3-0-authentication.md#security-considerations) section in the REST authentication article.
 
 ## Prerequisites
 
@@ -119,7 +119,7 @@ The Azure AD is a cloud identity service that allows you to build applications t
 1. Select **Add a client application**. In the far right section, in the **Client ID** box, enter the **RootBot identity** app ID you saved before. Make sure you use the _RootBot_ identity and not the registration app ID.
 
     > [!NOTE]
-    > For client applications, Azure Bot Service does not support single sing-on with the Azure Active Directory B2C identity provider.
+    > For client applications, Azure AI Bot Service does not support single sing-on with the Azure Active Directory B2C identity provider.
 
 1. Under **Authorized scope**, check the box by the scope value.
 1. Select **Add application**.
@@ -285,13 +285,13 @@ Notice that in the`RootBot` project `appsettings.json` file you've the following
 
 ## Additional information
 
-The following time-sequence diagram applies to the samples used in the article and shows the interaction between the various components involved. _ABS_ stands for _Azure Bot Service_.
+The following time-sequence diagram applies to the samples used in the article and shows the interaction between the various components involved. _ABS_ stands for _Azure AI Bot Service_.
 
 :::image type="content" source="media/how-to-auth/auth-bot-sso-sample-flow-diagram.PNG" alt-text="Sequence diagram illustrating the skill token flow.":::
 
 1. The first time, the user enters the `login` command for the **RootBot**.
 1. The **RootBot** sends an **OAuthCard** asking the user to sign in.
-1. The user enters the authentication credentials that are sent to the **ABS** (Azure Bot Service).
+1. The user enters the authentication credentials that are sent to the **ABS** (Azure AI Bot Service).
 1. The **ABS** sends the authentication token, generated based on the user's credentials, to the **RootBot**.
 1. The **RootBot** displays the root token for the user to see.
 1. The user enters the `skill login` command for the **SkillBot**.

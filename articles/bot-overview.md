@@ -1,13 +1,13 @@
 ---
 title: Choose the right chatbot solution for your use case
 description: Learn about different chatbot solutions, who they're for, and when to use them.
-author: JonathanFingold
+author: iaanw
 ms.author: iawilt
-manager: shellyha
+manager: leeclontz
 ms.reviewer: micchow
 ms.topic: overview
 ms.service: bot-service
-ms.date: 01/04/2023
+ms.date: 05/11/2023
 ms.custom: mode-api, tab-zone-seo
 ---
 
@@ -23,7 +23,7 @@ The following table lists Microsoft products and services for building bots, who
 |:-|:-|:-|
 | [Power Virtual Agents](#power-virtual-agents) | Fusion teams, citizen developers | Power Virtual Agents is an end-to-end bot-building tool, with built-in natural language understanding models, data connectivity through Power Automate, and support for multiple channels. |
 | [Health Bot](#health-bot) | Healthcare organizations | Provides support for healthcare organizations. Health Bot helps you build and deploy compliant, AI-powered virtual health assistants and health bots. |
-| [Bot Framework SDK](#bot-framework-sdk) | Developers | Provides a framework for building bots, including tools, templates, and related AI services.|
+| [Bot Framework SDK](#bot-framework-sdk) | Developers | Provides a framework for building bots, including tools, templates, and related AI services. The SDK is ideal for developers who want to build bots that are publicly available on the Microsoft Teams app store. |
 
 ## Power Virtual Agents
 
@@ -50,9 +50,11 @@ For more information about the Health Bot Service, see [Health Bot Overview](/az
 
 ## Bot Framework SDK
 
-Microsoft Bot Framework and Azure Bot Service provide tools to build, test, deploy, and manage intelligent bots. The Bot Framework includes a modular and extensible SDK for building bots, including tools, templates, and related AI services. With this framework, developers can create bots that use speech, understand natural language, handle questions and answers, and more.
+Microsoft Bot Framework and Azure AI Bot Service provide tools to build, test, deploy, and manage intelligent bots. The Bot Framework includes a modular and extensible SDK for building bots, including tools, templates, and related AI services. With this framework, developers can create bots that use speech, understand natural language, handle questions and answers, and more.
 
-Azure Bot Service and the Bot Framework offer:
+The SDK is ideal for developers who want to build bots that are publicly available on the Microsoft Teams app store.
+
+Azure AI Bot Service and the Bot Framework offer:
 
 - The Bot Framework SDK for developing bots.
 - Bot Framework tools to cover end-to-end bot development workflow.
@@ -61,12 +63,12 @@ Azure Bot Service and the Bot Framework offer:
 
 Additionally, bots may make use of other Azure services:
 
-- Azure Cognitive Services to build intelligent applications.
+- Azure AI services to build intelligent applications.
 - Azure Storage for cloud storage.
 
 For more information about the Bot Framework SDK, see [What is the Bot Framework SDK](bot-service-overview.md).
 Once you have created and deployed your bot to Azure, the chatbot service consumes resources.
-For details about pricing, see [Azure Bot Services pricing](https://azure.microsoft.com/pricing/details/bot-services/).
+For details about pricing, see [Azure AI Bot Service pricing](https://azure.microsoft.com/pricing/details/bot-services/).
 Costs associated with the consumption of resources on Azure are in addition to the cost of the chatbot service itself.
 
 ## Skill bots

@@ -38,10 +38,10 @@ See GitHub's [Searching issues and pull requests](https://docs.github.com/en/git
 |:-|:-|
 | [live](https://learn.microsoft.com/azure/bot-service/) | review site: [main](https://review.learn.microsoft.com/azure/bot-service/?branch=main) |
 | **Other Microsoft documentation** |  |
-| [Azure Cognitive Services](https://learn.microsoft.com/azure/cognitive-services/) |
+| [Azure AI services](/azure/ai-services/) |
 | [Microsoft Power Virtual Agents](https://learn.microsoft.com/power-virtual-agents/) | review site: [main](https://review.learn.microsoft.com/power-virtual-agents/?branch=main) |
 | [Microsoft Teams](https://learn.microsoft.com/microsoftteams/platform/) |
-| [Speech service](https://learn.microsoft.com/azure/cognitive-services/speech-service/) |
+| [Speech service](/azure/ai-services/speech-service/) |
 
 ## Additional repos
 

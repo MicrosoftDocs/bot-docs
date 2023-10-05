@@ -1,12 +1,12 @@
 ### YamlMime:Hub
 
-title: Azure Bot Service documentation
-summary: Azure Bot Service provides an integrated environment that is purpose-built for bot development.
+title: Azure AI Bot Service documentation
+summary: Azure AI Bot Service provides an integrated environment that is purpose-built for bot development.
 brand: azure
 
 metadata:
-  title: Azure Bot Service documentation
-  description: Azure Bot Service provides an integrated environment that is purpose-built for bot development.
+  title: Azure AI Bot Service documentation
+  description: Azure AI Bot Service provides an integrated environment that is purpose-built for bot development.
   services: service
   ms.service: bot-service
   ms.topic: hub-page
@@ -147,7 +147,7 @@ additionalContent:
             url: /training/modules/design-bot-conversation-flow/
           - text: Create chatbots with Power Virtual Agents
             url: /training/modules/explore-power-virtual-agents/
-          - text: Introduction to Azure Bot Service and Bot Framework Composer
+          - text: Introduction to Azure AI Bot Service and Bot Framework Composer
             url: /training/modules/intro-to-bot-service-bot-framework-composer/
         # Card
         - title: Related technologies # < 60 chars (optional)
@@ -158,9 +158,9 @@ additionalContent:
             url: /microsoftteams/platform
           - text: Adaptive Cards
             url: /adaptive-cards
-          - text: Azure Cognitive Services
-            url: /azure/cognitive-services
-          - text: Azure Cognitive Service for Language
-            url: /azure/cognitive-services/language-service
-          - text: Speech service
-            url: /azure/cognitive-services/speech-service
+          - text: Azure AI services
+            url: /azure/ai-services
+          - text: Azure AI Language
+            url: /azure/ai-services/language-service
+          - text: Azure AI Speech
+            url: /azure/ai-services/speech-service

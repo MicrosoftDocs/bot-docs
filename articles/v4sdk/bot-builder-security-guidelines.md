@@ -89,11 +89,11 @@ The Bot Connector service natively uses HTTPS to exchange messages between a bot
 
 ### User authentication
 
-**Azure Bot Service authentication** enables you to authenticate users to and get **access tokens** from various identity providers such as *Azure Active Directory*, *GitHub*, *Uber* and so on. You can also configure authentication for a custom **OAuth2** identity provider. All this enables you to write **one piece of authentication code** that works across all supported identity providers and channels. To utilize these capabilities you need to perform the following steps:
+**Azure AI Bot Service authentication** enables you to authenticate users to and get **access tokens** from various identity providers such as *Azure Active Directory*, *GitHub*, *Uber* and so on. You can also configure authentication for a custom **OAuth2** identity provider. All this enables you to write **one piece of authentication code** that works across all supported identity providers and channels. To utilize these capabilities you need to perform the following steps:
 
 1. Statically configure `settings` on your bot that contains the details of your application registration with an identity provider.
 1. Use an `OAuthCard`, backed by the application information you supplied in the previous step, to sign-in a user.
-1. Retrieve access tokens through **Azure Bot Service API**. A good practice is to place a time limit on how long an authenticated user can stay *logged in*.
+1. Retrieve access tokens through **Azure AI Bot Service API**. A good practice is to place a time limit on how long an authenticated user can stay *logged in*.
 
 For more information, see the [User authentication](~/v4sdk/bot-builder-concept-authentication.md) article.
 
@@ -104,7 +104,7 @@ When you use the [Web Chat](~/bot-service-channel-connect-webchat.md) control yo
 ## Additional information
 
 - [User authentication](~/v4sdk/bot-builder-concept-authentication.md)
-- [Add authentication to your bot via Azure Bot Service](~/v4sdk/bot-builder-authentication.md)
+- [Add authentication to your bot via Azure AI Bot Service](~/v4sdk/bot-builder-authentication.md)
 - [Enable security and test on localhost](~/bot-service-troubleshoot-authentication-problems.md#step-3-enable-security-and-test-on-localhost-)
 - [Secrets and tokens](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md#secrets-and-tokens)
 - [Authentication technologies](~/rest-api/bot-framework-rest-connector-authentication.md#authentication-technologies)

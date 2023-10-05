@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: reference
-ms.date: 01/13/2022
+ms.date: 02/10/2023
 ms.custom: abs-meta-21q1
 ---
 
@@ -22,6 +22,8 @@ Within the Bot Framework, the Bot Connector service enables your bot to exchange
 
 When a user sends a message to your bot, the incoming request contains an [Activity](#activity-object) object with a `serviceUrl` property that specifies the endpoint to which your bot should send its response. To access the Bot Connector service, use the `serviceUrl` value as the base URI for API requests.
 
+When you don't already have a service URL for the channel, use `https://smba.trafficmanager.net/teams/` as the service URL. For more information, see [how to create a conversation and a proactive message in Teams](/microsoftteams/platform/bots/how-to/conversations/send-proactive-messages#create-the-conversation).
+
 For example, assume that your bot receives the following activity when the user sends a message to the bot.
 
 ```json
@@ -29,7 +31,7 @@ For example, assume that your bot receives the following activity when the user 
     "type": "message",
     "id": "bf3cc9a2f5de...",
     "timestamp": "2016-10-19T20:17:52.2891902Z",
-    "serviceUrl": "https://smba.trafficmanager.net/apis",
+    "serviceUrl": "https://smba.trafficmanager.net/teams/",
     "channelId": "channel's name/id",
     "from": {
         "id": "1234abcd",
@@ -47,12 +49,12 @@ For example, assume that your bot receives the following activity when the user 
 }
 ```
 
-The `serviceUrl` property within the user's message indicates that the bot should send its response to the endpoint `https://smba.trafficmanager.net/apis`; this will be the base URI for any subsequent requests that the bot issues in the context of this conversation. If your bot will need to send a proactive message to the user, be sure to save the value of `serviceUrl`.
+The `serviceUrl` property within the user's message indicates that the bot should send its response to the endpoint `https://smba.trafficmanager.net/teams/`. The service URL will be the base URI for any subsequent requests that the bot issues in the context of this conversation. If your bot will need to send a proactive message to the user, be sure to save the value of `serviceUrl`.
 
 The following example shows the request that the bot issues to respond to the user's message.
 
 ```http
-POST https://smba.trafficmanager.net/apis/v3/conversations/abcd1234/activities/bf3cc9a2f5de...
+POST https://smba.trafficmanager.net/teams/v3/conversations/abcd1234/activities/bf3cc9a2f5de...
 Authorization: Bearer eyJhbGciOiJIUzI1Ni...
 Content-Type: application/json
 ```
@@ -111,7 +113,7 @@ The [HTTP status code](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html) t
 | 401              | The bot isn't yet authenticated.                             |
 | 403              | The bot isn't authorized to perform the requested operation. |
 | 404              | The requested resource wasn't found.                         |
-| 405              | The channel doesn't support the requested operation.        |
+| 405              | The channel doesn't support the requested operation.         |
 | 500              | An internal server error occurred.                           |
 | 503              | The service is temporarily unavailable.                      |
 
@@ -350,7 +352,7 @@ GET /v3/attachments/{attachmentId}/views/{viewId}
 
 ## State operations (deprecated)
 
-The Microsoft Bot Framework State service is retired as of March 30, 2018. Previously, bots built on the Azure Bot Service or the Bot Builder SDK had a default connection to this service hosted by Microsoft to store bot state data. Bots will need to be updated to use their own state storage.
+The Microsoft Bot Framework State service is retired as of March 30, 2018. Previously, bots built on the Azure AI Bot Service or the Bot Builder SDK had a default connection to this service hosted by Microsoft to store bot state data. Bots will need to be updated to use their own state storage.
 
 | Operation | Description |
 |----|----|
@@ -599,7 +601,7 @@ Defines a conversation in a channel.
 
 | Property | Type | Description |
 |----|----|----|
-| **aadObjectId** | String | This account's object ID within Azure Active Directory (AAD). |
+| **aadObjectId** | String | This account's object ID within Azure Active Directory. |
 | **conversationType** | String | Indicates the type of the conversation in channels that distinguish between conversation types (for example, group or personal). |
 | **id** | String | The ID that identifies the conversation. The ID is unique per channel. If the channel starts the conversation, it sets this ID; otherwise, the bot sets this property to the ID that it gets back in the response when it starts the conversation (see [Create Conversation](#create-conversation)). |
 | **isGroup** | Boolean | Flag to indicate whether the conversation contains more than two participants at the time the activity was generated. Set to **true** if this is a group conversation; otherwise, **false**. The default is **false**. |

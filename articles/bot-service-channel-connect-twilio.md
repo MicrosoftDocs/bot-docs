@@ -76,7 +76,7 @@ To learn more about developing for Twilio, see the [Twilio SMS documentation](ht
 
 ### Connect a bot to Twilio using the Twilio adapter
 
-In addition to using the available Azure Bot Service channel to connect your bot with Twilio, the [Bot Builder Community repos](https://github.com/BotBuilderCommunity/) define a custom channel adapter for Twilio.
+In addition to using the available Azure AI Bot Service channel to connect your bot with Twilio, the [Bot Builder Community repos](https://github.com/BotBuilderCommunity/) define a custom channel adapter for Twilio.
 
 - For information on the C# adapter, see [the Adapters section in the .NET community repo](https://github.com/BotBuilderCommunity/botbuilder-community-dotnet#adapters).
 - For information on the JavaScript adapter, see [the Adapters section in the JavaScript community repo](https://github.com/BotBuilderCommunity/botbuilder-community-js#adapters).

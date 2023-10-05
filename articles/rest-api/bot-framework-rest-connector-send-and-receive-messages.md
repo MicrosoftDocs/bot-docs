@@ -7,7 +7,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
-ms.date: 11/01/2021
+ms.date: 02/10/2023
 ---
 
 # Send and receive messages with the Bot Connector API
@@ -45,10 +45,10 @@ POST /v3/conversations/{conversationId}/activities/{activityId}
 
 In this request URI, replace **{conversationId}** with the value of the `conversation` object's `id` property within your (reply) Activity and replace **{activityId}** with the value of the `replyToId` property within your (reply) Activity. Set the body of the request to the [Activity][] object that you created to represent your reply.
 
-The following example shows a request that sends a simple text-only reply to a user's message. In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
+The following example shows a request that sends a simple text-only reply to a user's message. In this example request, `https://smba.trafficmanager.net/teams` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
 
 ```http
-POST https://smba.trafficmanager.net/apis/v3/conversations/abcd1234/activities/5d5cdc723 
+POST https://smba.trafficmanager.net/teams/v3/conversations/abcd1234/activities/5d5cdc723 
 Authorization: Bearer ACCESS_TOKEN 
 Content-Type: application/json 
 ```
@@ -113,10 +113,10 @@ Set the body of the request to a [ConversationParameters][] object that specifie
 > [!NOTE]
 > Not all channels support group conversations. Consult the channel's documentation to determine whether a channel supports group conversations and to identify the maximum number of participants that a channel allows in a conversation.
 
-The following example shows a request that starts a conversation. In this example request, `https://smba.trafficmanager.net/apis` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
+The following example shows a request that starts a conversation. In this example request, `https://smba.trafficmanager.net/teams` represents the base URI; the base URI for requests that your bot issues may be different. For details about setting the base URI, see [API Reference](bot-framework-rest-connector-api-reference.md#base-uri).
 
 ```http
-POST https://smba.trafficmanager.net/apis/v3/conversations 
+POST https://smba.trafficmanager.net/teams/v3/conversations 
 Authorization: Bearer ACCESS_TOKEN
 Content-Type: application/json
 ```

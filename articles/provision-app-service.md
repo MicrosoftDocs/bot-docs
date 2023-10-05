@@ -8,7 +8,7 @@ ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 01/18/2023
-ms.custom: template-how-to
+ms.custom: template-how-to, devx-track-arm-template, devx-track-azurecli
 ---
 
 # Use Azure CLI to create an App Service resource
@@ -19,7 +19,7 @@ This article describes how to create an App Service resource with the Azure CLI 
 
 > [!IMPORTANT]
 > Python bots can't be deployed to a resource group that contains Windows services or bots.
-> Multiple Python bots can be deployed to the same resource group; however, you need to create other services (such as Cognitive Services) in another resource group.
+> Multiple Python bots can be deployed to the same resource group; however, you need to create other services (such as Azure AI services) in another resource group.
 
 - For information on the complete process, see how to [Provision and publish a bot](provision-and-publish-a-bot.md).
 - For information on how to create an Azure Bot resource, see [Use Azure CLI to create an Azure Bot resource](provision-azure-bot.md).

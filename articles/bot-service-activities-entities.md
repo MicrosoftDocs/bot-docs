@@ -1,5 +1,5 @@
 ---
-title: Entities and activity types in Azure Bot Service
+title: Entities and activity types in Azure AI Bot Service
 description: Learn how entities store information that bots and channels use when exchanging messages. See how to populate entity properties and how to consume entities.
 keywords: mention entities, activity types, consume entities
 author: JonathanFingold

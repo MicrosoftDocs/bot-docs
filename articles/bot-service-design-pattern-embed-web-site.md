@@ -1,5 +1,5 @@
 ---
-title: Embed a bot in a website with Azure Bot Service
+title: Embed a bot in a website with Azure AI Bot Service
 description: Learn how to embed bots in websites by using a web control. See how the backchannel mechanism facilitates private communication between web pages and bots.
 author: JonathanFingold
 ms.author: iawilt
@@ -18,16 +18,7 @@ Although bots commonly exist outside of websites, they can also be embedded with
 
 This article explores how to integrate bots with websites and the process of using the *backchannel* mechanism to facilitate private communication between a web page and a bot.
 
-Microsoft provides two different ways to integrate a bot in a website: the [Skype web control](#skype-web-control) and an [open source web control](#open-source-web-control).
-
-## Skype web control
-
->[!NOTE]
-> As of October 31, 2019 the Skype channel no longer accepts new Bot publishing requests. This means that you can continue to develop bots using the Skype channel, but your bot will be limited to 100 users. You won't be able to publish your bot to a larger audience. Current Skype bots will continue to run uninterrupted. Read more about [why some features are not available in Skype anymore](https://support.skype.com/faq/fa12091/why-are-some-features-not-available-in-skype-anymore).
-
-The [Skype web control](https://dev.skype.com/webcontrol) is essentially a Skype client in a web-enabled control. Built-in Skype authentication enables the bot to authenticate and recognize users, without requiring the developer to write any custom code. Skype will automatically recognize Microsoft Accounts used in its web client.
-
-Because the Skype web control acts as a front-end for Skype, the user's Skype client automatically has access to the full context of any conversation that the web control facilitates. Even after the web browser is closed, the user may continue to interact with the bot using the Skype client.
+Microsoft provides two different ways to integrate a bot in a website: the [Skype web control](bot-service-channel-connect-skype.md) and an [open source web control](#open-source-web-control).
 
 ## Open source web control
 

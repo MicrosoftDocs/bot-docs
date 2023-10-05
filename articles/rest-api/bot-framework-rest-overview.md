@@ -16,14 +16,14 @@ Most Bot Framework bots are built using the Bot Framework SDK, which organizes y
 
 ## Build a bot
 
-By coding with Bot Framework REST APIs, you can send and receive messages with users on any channel configured in your bot's Azure Bot Service registration.
+By coding with Bot Framework REST APIs, you can send and receive messages with users on any channel configured in your bot's Azure AI Bot Service registration.
 
 > [!TIP]
 > The Bot Framework provides client libraries that can be used to build bots in either C# or Node.js.
 > To build a bot using C#, use the [Bot Framework SDK for C#](../dotnet/bot-builder-dotnet-overview.md).
 > To build a bot using Node.js, use the [Bot Framework SDK for Node.js](../nodejs/index.md).
 
-Refer to the [Azure Bot service](../bot-service-overview-introduction.md) docs to learn more about building bots using the service.
+Refer to the [Azure AI Bot Service](../bot-service-overview-introduction.md) docs to learn more about building bots using the service.
 
 ## Build a Direct Line client
 
