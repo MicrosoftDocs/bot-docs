@@ -12,7 +12,7 @@ ms.date: 09/29/2021
 
 # Use Web Chat with the Direct Line App Service extension
 
-**Commencing September 1, 2023, it is strongly advised to employ [Azure Service Tag](https://learn.microsoft.com/en-us/azure/virtual-network/service-tags-overview#available-service-tags) method for network isolation. The utilization of DL-ASE should be limited to highly specific scenarios. Prior to implementing this solution in a production environment, we kindly recommend consulting your support team for guidance.**
+**Commencing September 1, 2023, it is strongly advised to employ the [Azure Service Tag](/azure/virtual-network/service-tags-overview#available-service-tags) method for network isolation. The utilization of DL-ASE should be limited to highly specific scenarios. Prior to implementing this solution in a production environment, we kindly recommend consulting your support team for guidance.**
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
