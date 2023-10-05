@@ -45,6 +45,7 @@ This article describes how to debug your bot locally using ngrok and a C# [EchoB
     > [!NOTE]
     > The port specified is the port your bot is running on. You may use any localhost port you'd like.
 
+
 1. When ngrok starts, copy and save the public forwarding URL for later.
 
     :::image type="content" source="media/debug-ngrok/ngrok-forwarding-url.png" alt-text="ngrok forwarding URL":::
