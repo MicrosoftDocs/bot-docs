@@ -55,7 +55,7 @@ Use the AD v2 settings below to enable a bot to access Office 365 data via the M
 | Property | Description or value |
 |--|--|
 | **Name** | A name for this identity provider connection. |
-| **Service Provider** | The identity provider to use. Select **Microsoft Microsoft Entra ID**. |
+| **Service Provider** | The identity provider to use. Select **Microsoft Entra ID**. |
 | **Client id** | The application (client) ID for your Azure identity provider app. |
 | **Client secret** | The secret for your Azure identity provider app. |
 | **Tenant ID** | Your directory (tenant) ID or `common`. For more information, see the note about [tenant IDs](#azure-ad-note). |
@@ -72,7 +72,7 @@ For more information, see [Microsoft Entra ID for developers (v1.0) overview](/a
 | Property | Description or value |
 |--|--|
 | **Name** | A name for this identity provider connection. |
-| **Service Provider** | The identity provider to use. Select **Microsoft Microsoft Entra ID**. |
+| **Service Provider** | The identity provider to use. Select **Microsoft Entra ID**. |
 | **Client id** | The application (client) ID for your Azure identity provider app. |
 | **Client secret** | The secret for your Azure identity provider app. |
 | **Grant Type** | `authorization_code` |

@@ -217,7 +217,7 @@ See notes for [Azure Resource Manager](#azure-resource-manager).
 - **Status**: Approved. See [Microsoft Entra ID](https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=25369) in the Cloud style guide.
 - **Definition**: "The identity service in Microsoft Azure that provides identity management and access control capabilities through a REST-based API. (The on-premises product is Windows Server Active Directory.)"
 - **Forms**:
-  - Microsoft Microsoft Entra ID
+  - Microsoft Entra ID
   - Microsoft Entra ID
   - Microsoft Entra ID
 - **Notes**: Don't use _AAD_ as an acronym.

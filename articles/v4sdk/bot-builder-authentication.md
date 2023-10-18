@@ -140,7 +140,7 @@ The next step is to register your identity provider with your bot.
 1. Fill in the form as follows:
 
     1. **Name**. Enter a name for your connection. You'll use it in your bot code.
-    1. **Service Provider**. Select **Microsoft Microsoft Entra ID** to display Microsoft Entra ID-specific fields.
+    1. **Service Provider**. Select **Microsoft Entra ID** to display Microsoft Entra ID-specific fields.
     1. **Client id**. Enter the application (client) ID you recorded for your Microsoft Entra ID identity provider.
     1. **Client secret**. Enter the secret you recorded for your Microsoft Entra ID identity provider.
   
@@ -152,7 +152,7 @@ The next step is to register your identity provider with your bot.
     1. **Tenant ID**. Enter the **directory (tenant) ID** that you recorded earlier for your Microsoft Entra ID app or **common** depending on the supported account types selected when you created the Azure DD app. To decide which value to assign, follow these criteria:
 
         - When creating the Microsoft Entra ID app, if you selected **Accounts in this organizational directory only (Microsoft only - Single tenant)**, enter the tenant ID you recorded earlier for the Microsoft Entra ID app.
-        - However, if you selected **Accounts in any organizational directory (Any Microsoft Entra ID directory - Multi tenant and personal Microsoft accounts e.g. Xbox, Outlook.com)** or **Accounts in any organizational directory(Microsoft Microsoft Entra ID directory - Multi tenant)**, enter `common` instead of a tenant ID. Otherwise, the Microsoft Entra ID app will verify through the tenant whose ID was selected and exclude personal Microsoft accounts.
+        - However, if you selected **Accounts in any organizational directory (Any Microsoft Entra ID directory - Multi tenant and personal Microsoft accounts e.g. Xbox, Outlook.com)** or **Accounts in any organizational directory(Microsoft Entra ID directory - Multi tenant)**, enter `common` instead of a tenant ID. Otherwise, the Microsoft Entra ID app will verify through the tenant whose ID was selected and exclude personal Microsoft accounts.
 
         This will be the tenant associated with the users who can be authenticated. For more information, see [Tenancy in Microsoft Entra ID](/azure/active-directory/develop/single-and-multi-tenant-apps).
 
@@ -172,7 +172,7 @@ The next step is to register your identity provider with your bot.
 1. Fill in the form as follows:
 
     1. For **Name**, enter a name for your connection. You'll use this name in your bot code.
-    1. For **Service Provider**, select **Microsoft Microsoft Entra ID**. Once you select this, the Microsoft Entra ID-specific fields will be displayed.
+    1. For **Service Provider**, select **Microsoft Entra ID**. Once you select this, the Microsoft Entra ID-specific fields will be displayed.
     1. For **Client id**, enter the application (client) ID that you recorded for your Azure AD v1 application.
     1. For **Client secret**, enter the secret that you created to grant the bot access to the Microsoft Entra ID app.
     1. For **Grant Type**, enter `authorization_code`.
@@ -180,7 +180,7 @@ The next step is to register your identity provider with your bot.
     1. For **Tenant ID**, enter the **directory (tenant) ID** that you recorded earlier for your Microsoft Entra ID app or **common** depending on the supported account types selected when you created the ADD app. To decide which value to assign, follow these criteria:
 
         - When creating the Microsoft Entra ID app, if you selected **Accounts in this organizational directory only (Microsoft only - Single tenant)**, enter the tenant ID you recorded earlier for the Microsoft Entra ID app.
-        - However, if you selected **Accounts in any organizational directory (Any Microsoft Entra ID directory - Multi tenant and personal Microsoft accounts e.g. Xbox, Outlook.com)** or **Accounts in any organizational directory(Microsoft Microsoft Entra ID directory - Multi tenant)**, enter `common` instead of a tenant ID. Otherwise, the Microsoft Entra ID app will verify through the tenant whose ID was selected and exclude personal MS accounts.
+        - However, if you selected **Accounts in any organizational directory (Any Microsoft Entra ID directory - Multi tenant and personal Microsoft accounts e.g. Xbox, Outlook.com)** or **Accounts in any organizational directory(Microsoft Entra ID directory - Multi tenant)**, enter `common` instead of a tenant ID. Otherwise, the Microsoft Entra ID app will verify through the tenant whose ID was selected and exclude personal MS accounts.
 
        This will be the tenant associated with the users who can be authenticated. For more information, see [Tenancy in Microsoft Entra ID](/azure/active-directory/develop/single-and-multi-tenant-apps).
 

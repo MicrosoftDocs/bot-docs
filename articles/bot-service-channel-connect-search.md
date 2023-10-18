@@ -55,7 +55,7 @@ To generate a scope URI and application ID for your bot:
 
 1. Go to the Azure portal.
 1. If you don't already have a bot resource, create an Azure Bot resource.
-1. Go to the **Microsoft Microsoft Entra ID** service.
+1. Go to the **Microsoft Entra ID** service.
 1. Go to the **App registrations** pane.
 1. Select the application associated with your bot.
 1. Go to the **Expose an API** pane.

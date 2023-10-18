@@ -168,7 +168,7 @@ First check whether you're a "Guest" of the directory:
 
 1. Sign-in to [Azure portal](https://portal.azure.com).
 1. Select **All services** and search for *active*.
-1. Select **Microsoft Microsoft Entra ID**.
+1. Select **Microsoft Entra ID**.
 1. Select **Users**.
 1. Find the user from the list and ensure that the **User Type** isn't a **Guest**.
 
