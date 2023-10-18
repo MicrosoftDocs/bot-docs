@@ -26,7 +26,7 @@ When encrypting data, Azure AI Bot Service encrypts with two levels of encryptio
 
 ## Customer-managed keys with Azure Key Vault
 
-To utilize the customer-managed keys feature, you must store and manage keys in **Azure Key Vault**. You can either create your own keys and store them in a key vault, or you can use the Azure Key Vault APIs to generate keys. Your Azure Bot resource and the key vault must be in the same Entra ID tenant, but they can be in different subscriptions. For more information about Azure Key Vault, see [What is Azure Key Vault?](/azure/key-vault/key-vault-overview).
+To utilize the customer-managed keys feature, you must store and manage keys in **Azure Key Vault**. You can either create your own keys and store them in a key vault, or you can use the Azure Key Vault APIs to generate keys. Your Azure Bot resource and the key vault must be in the same Microsoft Entra ID tenant, but they can be in different subscriptions. For more information about Azure Key Vault, see [What is Azure Key Vault?](/azure/key-vault/key-vault-overview).
 
 When using a customer-managed key, Azure AI Bot Service encrypts your data in its storage. If access to that key is revoked or the key is deleted, your bot won't be able to use Azure AI Bot Service to send or receive messages, and you won't be able to access or edit the configuration of your bot in the Azure portal.
 

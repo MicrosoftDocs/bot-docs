@@ -17,7 +17,7 @@ See these articles for more information about Azure applications and resources t
 | Azure regions | [Regions and availability zones](/azure/availability-zones/az-overview) |
 | Resource groups and resource management | [Manage Azure resources](/azure/azure-resource-manager/management/) |
 | Managed identities | [What are managed identities for Azure resources?](/azure/active-directory/managed-identities-azure-resources/overview) |
-| Single-tenant and multi-tenant apps | [Tenancy in Entra ID](/azure/active-directory/develop/single-and-multi-tenant-apps) |
+| Single-tenant and multi-tenant apps | [Tenancy in Microsoft Entra ID](/azure/active-directory/develop/single-and-multi-tenant-apps) |
 | Web applications | [App Service](/azure/app-service/) |
 | Compute resources for web applications | [App Service plans](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview) |
 | Azure Resource Manager templates (ARM templates) | [What are ARM templates?](/azure/azure-resource-manager/templates/overview) and [How to use Azure Resource Manager (ARM) deployment templates with Azure CLI](/azure/azure-resource-manager/templates/deploy-cli) |

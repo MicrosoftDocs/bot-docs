@@ -24,8 +24,8 @@ This article references two samples. One shows how to obtain an authentication t
 This article covers how to:
 
 - Create an Azure Bot resource
-- Create the Entra ID identity provider
-- Register the Entra ID identity provider with the bot
+- Create the Microsoft Entra ID identity provider
+- Register the Microsoft Entra ID identity provider with the bot
 - Prepare the bot code
 
 Once you finish this article, you'll have a bot that can respond to a few simple tasks. In the Microsoft Graph example, you can send an email, display who you are, and check recent emails. You don't need to publish the bot to test the OAuth features; however, the bot will need valid Azure app ID and password.
@@ -55,33 +55,33 @@ how to [implement sequential conversation flow][simple-dialog], and how to [reus
 
   To run the samples referenced in this article, you need:
 
-  - An Entra ID application with which to register a bot resource in Azure. This application allows the bot to access an external secured resource, such as Microsoft Graph. It also allows the user to communicate with the bot via several channels such as Web Chat.
-  - A separate Entra ID application to function as the identity provider. This application provides the credentials needed to establish an OAuth connection between the bot and the secured resource. Notice that this article uses Active Directory as an identity provider. Many other providers are also supported.
+  - An Microsoft Entra ID application with which to register a bot resource in Azure. This application allows the bot to access an external secured resource, such as Microsoft Graph. It also allows the user to communicate with the bot via several channels such as Web Chat.
+  - A separate Microsoft Entra ID application to function as the identity provider. This application provides the credentials needed to establish an OAuth connection between the bot and the secured resource. Notice that this article uses Active Directory as an identity provider. Many other providers are also supported.
 
 > [!IMPORTANT]
-> Whenever you register a bot in Azure, it gets assigned an Entra ID application. However, this application secures channel-to-bot access. You need an additional Entra ID application for each external secured resource you want the bot to access on behalf of the user.
+> Whenever you register a bot in Azure, it gets assigned an Microsoft Entra ID application. However, this application secures channel-to-bot access. You need an additional Microsoft Entra ID application for each external secured resource you want the bot to access on behalf of the user.
 
 [!INCLUDE [azure bot resource](../includes/azure-bot-resource/azure-bot-resource.md)]
 
-## Entra ID identity service
+## Microsoft Entra ID identity service
 
-The Entra ID is a cloud identity service that allows you to build applications that securely sign in users using industry standard protocols like OAuth 2.0.
+The Microsoft Entra ID is a cloud identity service that allows you to build applications that securely sign in users using industry standard protocols like OAuth 2.0.
 
 You can use one of these two identity services:
 
-1. Entra ID developer platform (v1.0). Also known as the **Azure AD v1** endpoint, which allows you to build apps that securely sign in users with a Microsoft work or school account. For more information, see the [Entra ID for developers (v1.0) overview](/azure/active-directory/azuread-dev/v1-overview).
-1. Microsoft identity platform (v2.0). Also known as the **Entra ID** endpoint, which is an evolution of the Azure AD platform (v1.0). It allows you to build applications that sign in to all Microsoft identity providers and get tokens to call Microsoft APIs, such as Microsoft Graph, or other APIs that developers have built. For more information, see the [Microsoft identity platform (v2.0) overview](/azure/active-directory/develop/active-directory-appmodel-v2-overview).
+1. Microsoft Entra ID developer platform (v1.0). Also known as the **Azure AD v1** endpoint, which allows you to build apps that securely sign in users with a Microsoft work or school account. For more information, see the [Microsoft Entra ID for developers (v1.0) overview](/azure/active-directory/azuread-dev/v1-overview).
+1. Microsoft identity platform (v2.0). Also known as the **Microsoft Entra ID** endpoint, which is an evolution of the Azure AD platform (v1.0). It allows you to build applications that sign in to all Microsoft identity providers and get tokens to call Microsoft APIs, such as Microsoft Graph, or other APIs that developers have built. For more information, see the [Microsoft identity platform (v2.0) overview](/azure/active-directory/develop/active-directory-appmodel-v2-overview).
 
-For information about the differences between the v1 and v2 endpoints, see [Why update to Microsoft identity platform (v2.0)?](/azure/active-directory/develop/active-directory-v2-compare). For complete information, see [Microsoft identity platform (formerly Entra ID for developers)](/azure/active-directory/develop/).
+For information about the differences between the v1 and v2 endpoints, see [Why update to Microsoft identity platform (v2.0)?](/azure/active-directory/develop/active-directory-v2-compare). For complete information, see [Microsoft identity platform (formerly Microsoft Entra ID for developers)](/azure/active-directory/develop/).
 
-### Create the Entra ID identity provider
+### Create the Microsoft Entra ID identity provider
 
-This section shows how to create an Entra ID identity provider that uses OAuth 2.0 to authenticate the bot. You can use Azure AD v1 or Entra ID endpoints.
+This section shows how to create an Microsoft Entra ID identity provider that uses OAuth 2.0 to authenticate the bot. You can use Azure AD v1 or Microsoft Entra ID endpoints.
 
 > [!TIP]
-> You'll need to create and register the Entra ID application in a tenant in which you can consent to delegate permissions requested by an application.
+> You'll need to create and register the Microsoft Entra ID application in a tenant in which you can consent to delegate permissions requested by an application.
 
-1. Open the [Entra ID][azure-aad-blade] panel in the Azure portal.
+1. Open the [Microsoft Entra ID][azure-aad-blade] panel in the Azure portal.
     If you aren't in the correct tenant, select **Switch directory** to switch to the correct tenant. (For information on how to create a tenant, see [Access the portal and create a tenant](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).)
 1. Open the **App registrations** panel.
 1. In the **App registrations** panel, select **New registration**.
@@ -94,7 +94,7 @@ This section shows how to create an Entra ID identity provider that uses OAuth 2
    1. Select **Register**.
 
       - Once it's created, Azure displays the **Overview** page for the app.
-      - Record the **Application (client) ID** value. You'll use this value later as the _client ID_ when you create the connection string and register the Entra ID provider with the bot registration.
+      - Record the **Application (client) ID** value. You'll use this value later as the _client ID_ when you create the connection string and register the Microsoft Entra ID provider with the bot registration.
       - Record the **Directory (tenant) ID** value. You'll use this value to register this provider application with your bot.
 
 1. In the navigation pane, select **Certificates & secrets** to create a secret for your application.
@@ -103,7 +103,7 @@ This section shows how to create an Entra ID identity provider that uses OAuth 2
    1. Add a description to identify this secret from others you might need to create for this app, such as `bot login`.
    1. For **Expires**, choose a length of time after which the secret will expire.
    1. Select **Add**.
-   1. Before leaving **Certificates & secrets**, record the secret. You'll use this value later as the _client secret_ when you register your Entra ID application with your bot.
+   1. Before leaving **Certificates & secrets**, record the secret. You'll use this value later as the _client secret_ when you register your Microsoft Entra ID application with your bot.
 
 1. In the navigation pane, select **API permissions** to open the **API permissions** panel. It's a best practice to explicitly set the API permissions for the app.
 
@@ -123,16 +123,16 @@ This section shows how to create an Entra ID identity provider that uses OAuth 2
 
    1. Select **Add permissions**. (The first time a user accesses this app through the bot, they'll need to grant consent.)
 
-You now have an Entra ID application configured.
+You now have an Microsoft Entra ID application configured.
 
 > [!NOTE]
 > You'll assign the **Application (client) ID** and the **Client secret**, when you create the connection string and register the identity provider with the bot registration. See next section.
 
-### Register the Entra ID identity provider with the bot
+### Register the Microsoft Entra ID identity provider with the bot
 
 The next step is to register your identity provider with your bot.
 
-#### [Entra ID](#tab/aadv2)
+#### [Microsoft Entra ID](#tab/aadv2)
 
 1. Open your bot's Azure Bot resource page in the [Azure portal][azure-portal].
 1. Select **Settings**.
@@ -140,27 +140,27 @@ The next step is to register your identity provider with your bot.
 1. Fill in the form as follows:
 
     1. **Name**. Enter a name for your connection. You'll use it in your bot code.
-    1. **Service Provider**. Select **Microsoft Entra ID** to display Entra ID-specific fields.
-    1. **Client id**. Enter the application (client) ID you recorded for your Entra ID identity provider.
-    1. **Client secret**. Enter the secret you recorded for your Entra ID identity provider.
+    1. **Service Provider**. Select **Microsoft Microsoft Entra ID** to display Microsoft Entra ID-specific fields.
+    1. **Client id**. Enter the application (client) ID you recorded for your Microsoft Entra ID identity provider.
+    1. **Client secret**. Enter the secret you recorded for your Microsoft Entra ID identity provider.
   
         > [!TIP]
         > If you want to use certificates, you can select the **AAD v2 with Certificates** provider.
         > You'll need to give Bot Service Token Store (appid: 5b404cf4-a79d-4cfe-b866-24bf8e1a4921) the permission to get the certificate.
 
-    1. **Token Exchange URL**. Leave it blank because it's used for SSO in Entra ID only.
-    1. **Tenant ID**. Enter the **directory (tenant) ID** that you recorded earlier for your Entra ID app or **common** depending on the supported account types selected when you created the Azure DD app. To decide which value to assign, follow these criteria:
+    1. **Token Exchange URL**. Leave it blank because it's used for SSO in Microsoft Entra ID only.
+    1. **Tenant ID**. Enter the **directory (tenant) ID** that you recorded earlier for your Microsoft Entra ID app or **common** depending on the supported account types selected when you created the Azure DD app. To decide which value to assign, follow these criteria:
 
-        - When creating the Entra ID app, if you selected **Accounts in this organizational directory only (Microsoft only - Single tenant)**, enter the tenant ID you recorded earlier for the Entra ID app.
-        - However, if you selected **Accounts in any organizational directory (Any Entra ID directory - Multi tenant and personal Microsoft accounts e.g. Xbox, Outlook.com)** or **Accounts in any organizational directory(Microsoft Entra ID directory - Multi tenant)**, enter `common` instead of a tenant ID. Otherwise, the Entra ID app will verify through the tenant whose ID was selected and exclude personal Microsoft accounts.
+        - When creating the Microsoft Entra ID app, if you selected **Accounts in this organizational directory only (Microsoft only - Single tenant)**, enter the tenant ID you recorded earlier for the Microsoft Entra ID app.
+        - However, if you selected **Accounts in any organizational directory (Any Microsoft Entra ID directory - Multi tenant and personal Microsoft accounts e.g. Xbox, Outlook.com)** or **Accounts in any organizational directory(Microsoft Microsoft Entra ID directory - Multi tenant)**, enter `common` instead of a tenant ID. Otherwise, the Microsoft Entra ID app will verify through the tenant whose ID was selected and exclude personal Microsoft accounts.
 
-        This will be the tenant associated with the users who can be authenticated. For more information, see [Tenancy in Entra ID](/azure/active-directory/develop/single-and-multi-tenant-apps).
+        This will be the tenant associated with the users who can be authenticated. For more information, see [Tenancy in Microsoft Entra ID](/azure/active-directory/develop/single-and-multi-tenant-apps).
 
     1. For **Scopes**, enter the names of the permission you chose from the application registration. For testing purposes, you can just enter:
        `openid profile`.
 
         > [!NOTE]
-        > For Entra ID, **Scopes** field takes a case-sensitive, space-separated list of values.
+        > For Microsoft Entra ID, **Scopes** field takes a case-sensitive, space-separated list of values.
 
 1. Select **Save**.
 
@@ -172,17 +172,17 @@ The next step is to register your identity provider with your bot.
 1. Fill in the form as follows:
 
     1. For **Name**, enter a name for your connection. You'll use this name in your bot code.
-    1. For **Service Provider**, select **Microsoft Entra ID**. Once you select this, the Entra ID-specific fields will be displayed.
+    1. For **Service Provider**, select **Microsoft Microsoft Entra ID**. Once you select this, the Microsoft Entra ID-specific fields will be displayed.
     1. For **Client id**, enter the application (client) ID that you recorded for your Azure AD v1 application.
-    1. For **Client secret**, enter the secret that you created to grant the bot access to the Entra ID app.
+    1. For **Client secret**, enter the secret that you created to grant the bot access to the Microsoft Entra ID app.
     1. For **Grant Type**, enter `authorization_code`.
     1. For **Login URL**, enter `https://login.microsoftonline.com`.
-    1. For **Tenant ID**, enter the **directory (tenant) ID** that you recorded earlier for your Entra ID app or **common** depending on the supported account types selected when you created the ADD app. To decide which value to assign, follow these criteria:
+    1. For **Tenant ID**, enter the **directory (tenant) ID** that you recorded earlier for your Microsoft Entra ID app or **common** depending on the supported account types selected when you created the ADD app. To decide which value to assign, follow these criteria:
 
-        - When creating the Entra ID app, if you selected **Accounts in this organizational directory only (Microsoft only - Single tenant)**, enter the tenant ID you recorded earlier for the Entra ID app.
-        - However, if you selected **Accounts in any organizational directory (Any Entra ID directory - Multi tenant and personal Microsoft accounts e.g. Xbox, Outlook.com)** or **Accounts in any organizational directory(Microsoft Entra ID directory - Multi tenant)**, enter `common` instead of a tenant ID. Otherwise, the Entra ID app will verify through the tenant whose ID was selected and exclude personal MS accounts.
+        - When creating the Microsoft Entra ID app, if you selected **Accounts in this organizational directory only (Microsoft only - Single tenant)**, enter the tenant ID you recorded earlier for the Microsoft Entra ID app.
+        - However, if you selected **Accounts in any organizational directory (Any Microsoft Entra ID directory - Multi tenant and personal Microsoft accounts e.g. Xbox, Outlook.com)** or **Accounts in any organizational directory(Microsoft Microsoft Entra ID directory - Multi tenant)**, enter `common` instead of a tenant ID. Otherwise, the Microsoft Entra ID app will verify through the tenant whose ID was selected and exclude personal MS accounts.
 
-       This will be the tenant associated with the users who can be authenticated. For more information, see [Tenancy in Entra ID](/azure/active-directory/develop/single-and-multi-tenant-apps).
+       This will be the tenant associated with the users who can be authenticated. For more information, see [Tenancy in Microsoft Entra ID](/azure/active-directory/develop/single-and-multi-tenant-apps).
 
     1. For **Resource URL**, enter `https://graph.microsoft.com/`.
     1. Leave **Scopes** blank.
@@ -193,7 +193,7 @@ The next step is to register your identity provider with your bot.
 
 > [!NOTE]
 > These values enable your application to access Office 365 data via the Microsoft Graph API.
-> Also, the **Token Exchange URL** should be left blank because it's used for SSO in Entra ID only.
+> Also, the **Token Exchange URL** should be left blank because it's used for SSO in Microsoft Entra ID only.
 
 ### Test your connection
 

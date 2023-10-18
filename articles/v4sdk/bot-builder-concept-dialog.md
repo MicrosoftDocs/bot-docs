@@ -16,7 +16,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-_Dialogs_ are a central concept in the SDK, providing ways to manage a long-running conversation with the user.
+_Dialogs_ are a cMicrosoft Entral concept in the SDK, providing ways to manage a long-running conversation with the user.
 A dialog performs a task that can represent part of or a complete conversational thread.
 It can span just one turn or many, and can span a short or long period of time.
 

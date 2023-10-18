@@ -237,7 +237,7 @@ Please, refer to the following resources for more details and background informa
 | [What's new in Bot Framework](../../what-is-new.md) | Bot Framework and Azure AI Bot Service key features and improvements|
 |[How bots work](../bot-builder-basics.md)|The internal mechanism of a bot|
 |[Managing state](../bot-builder-concept-state.md)|Abstractions to make state management easier|
-|[Dialogs library](../bot-builder-concept-dialog.md)| Central concepts to manage a conversation|
+|[Dialogs library](../bot-builder-concept-dialog.md)| CMicrosoft Entral concepts to manage a conversation|
 |[Send and receive text messages](../bot-builder-howto-send-messages.md)|Primary way a bot communicate with users|
 |[Send Media](../bot-builder-howto-add-media-attachments.md)|Media attachments, such as images, video, audio, and files|
 |[Sequential conversation flow](../bot-builder-dialog-manage-conversation-flow.md)| Questioning as the main way a bot interacts with users|

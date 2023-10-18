@@ -15,7 +15,7 @@ ms.date: 09/01/2021
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-Single sign-on (SSO) allows a client, such as a Web Chat control, to communicate with a bot on behalf of the user. Currently, only the [Entra ID](bot-builder-concept-identity-providers.md#azure-active-directory-identity-provider) identity provider is supported.
+Single sign-on (SSO) allows a client, such as a Web Chat control, to communicate with a bot on behalf of the user. Currently, only the [Microsoft Entra ID](bot-builder-concept-identity-providers.md#azure-active-directory-identity-provider) identity provider is supported.
 
 Typically, a Web Chat is embedded in a website page. When the user signs in to the website, the Web Chat invokes a bot on behalf of the user. The website client's token, based on the user's credentials, is exchanged for a different one to access the bot. In this way, the user doesn't have to sign in twice; the first time on the website, and the second time on the bot, hence the term SSO.
 
@@ -32,7 +32,7 @@ Let's analyze the flow.
 1. The Web Chat starts a conversation with the bot via an OAuth trigger activity.
 1. The bot sends back an OAuth Card to the Web Chat.
 1. The Web Chat intercepts the OAuth card before displaying it to the user and checks if it contains a `TokenExchangeResource` property.
-1. If the property exists, the Web Chat must get an exchangeable token for the user, which must be an Entra ID token.
+1. If the property exists, the Web Chat must get an exchangeable token for the user, which must be an Microsoft Entra ID token.
 1. The Web Chat sends an Invoke activity to the bot with the body shown below.
 
     ```json

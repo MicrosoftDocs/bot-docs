@@ -157,7 +157,7 @@ ValidateAuthority=true
 
 ## Add user authentication to your bot
 
-Your bot can use various identity providers to access resources on behalf of a user, such as Entra ID and many other OAuth providers.
+Your bot can use various identity providers to access resources on behalf of a user, such as Microsoft Entra ID and many other OAuth providers.
 
 The Office 365 GCC High environment uses a redirect URL that is different from the ones used for other environments.
 When configuring your bot for authentication within the Office 365 GCC High environment, use `https://tokengcch.botframework.azure.us/.auth/web/redirect` as the OAuth redirect URL and follow the steps in how to [add authentication to your bot](v4sdk/bot-builder-authentication.md).

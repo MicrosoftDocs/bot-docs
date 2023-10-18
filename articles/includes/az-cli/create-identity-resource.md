@@ -50,7 +50,7 @@ To create an Azure application registration:
 
 ### [Single-tenant](#tab/singletenant)
 
-1. Use the `az ad app create` command to create an Entra ID app registration.
+1. Use the `az ad app create` command to create an Microsoft Entra ID app registration.
     On success, the command generates JSON output.
 
     ```azurecli
@@ -69,7 +69,7 @@ To create an Azure application registration:
 
 ### [Multi-tenant](#tab/multitenant)
 
-1. Use the `az ad app create` command to create an Entra ID app registration.
+1. Use the `az ad app create` command to create an Microsoft Entra ID app registration.
     On success, the command generates JSON output.
 
     ```azurecli
@@ -80,7 +80,7 @@ To create an Azure application registration:
     |:-|:-|
     | display-name | The display name for the app registration. |
     | password | The password, or _client secret_, for the application. It must be at least 16 characters long, contain at least 1 upper or lower case alphabetical character, at least one numeric character, and contain at least 1 special character. |
-    | available-to-other-tenants | Include this flag to create a multi-tenant bot. It allows the application to be accessible from any Entra ID tenant. |
+    | available-to-other-tenants | Include this flag to create a multi-tenant bot. It allows the application to be accessible from any Microsoft Entra ID tenant. |
 
     For more information, see the [az ad app](/cli/azure/ad/app) reference.
 

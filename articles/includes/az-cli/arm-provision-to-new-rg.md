@@ -62,4 +62,4 @@ Not all parameters apply to all app types.
 | newAppServicePlanName | The name of the app service plan to create for the bot. |
 | newAppServicePlanSku | Optional, the pricing tier to use for the app service plan. Default is `S1`. |
 | newWebAppName | The name of the app service to create for the bot. Must be a globally-unique web app name. Default is the value for the `botId` parameter. |
-| tenantId | For users-assigned managed identity and single-tenant app types, the Entra ID tenant to use for bot authentication. Default is your subscription tenant ID. |
+| tenantId | For users-assigned managed identity and single-tenant app types, the Microsoft Entra ID tenant to use for bot authentication. Default is your subscription tenant ID. |

@@ -52,10 +52,10 @@ The **RootBot** supports SSO. It communicates with the **SkillBot** on behalf of
 
 For each project in the sample, you need the following:
 
-1. An Entra ID application to register a bot resource in Azure.
-1. An Entra ID identity provider application for authentication.
+1. An Microsoft Entra ID application to register a bot resource in Azure.
+1. An Microsoft Entra ID identity provider application for authentication.
     > [!NOTE]
-    > Currently, only the [Entra ID](/azure/bot-service/bot-builder-concept-identity-providers?view=azure-bot-service-4.0&tabs=adv2%2Cga2#azure-ad-v2-1&preserve-view=true) identity provider is supported.
+    > Currently, only the [Microsoft Entra ID](/azure/bot-service/bot-builder-concept-identity-providers?view=azure-bot-service-4.0&tabs=adv2%2Cga2#azure-ad-v2-1&preserve-view=true) identity provider is supported.
 
 ## Create the Azure RootBot resource
 
@@ -63,11 +63,11 @@ For each project in the sample, you need the following:
 [Create an Azure bot resource](bot-builder-authentication.md#create-the-resource).
 1. Copy and save the bot registration **app ID** and the **client secret**.
 
-## Create the Entra ID identity for RootBot
+## Create the Microsoft Entra ID identity for RootBot
 
-The Entra ID is a cloud identity service that allows you to build applications that securely sign in users using industry standard protocols like OAuth2.0.
+The Microsoft Entra ID is a cloud identity service that allows you to build applications that securely sign in users using industry standard protocols like OAuth2.0.
 
-1. Create an identity application for the `RootBot` that uses Entra ID  to authenticate the user. Follow the steps described in [Create the Entra ID identity provider](bot-builder-authentication.md#create-the-azure-ad-identity-provider).
+1. Create an identity application for the `RootBot` that uses Microsoft Entra ID  to authenticate the user. Follow the steps described in [Create the Microsoft Entra ID identity provider](bot-builder-authentication.md#create-the-azure-ad-identity-provider).
 
 1. In the left pane, select **Manifest**.
 1. Set `accessTokenAcceptedVersion` to 2.
@@ -84,7 +84,7 @@ The Entra ID is a cloud identity service that allows you to build applications t
 
 ### Create an OAuth connection setting for RootBot
 
-1. Create an Entra ID connection in the `RootBot` bot registration and enter values as described in [Entra ID](/azure/bot-service/bot-builder-concept-identity-providers?view=azure-bot-service-4.0&tabs=adv2%2Cga2#azure-ad-v2-1&preserve-view=true) and the value described below.
+1. Create an Microsoft Entra ID connection in the `RootBot` bot registration and enter values as described in [Microsoft Entra ID](/azure/bot-service/bot-builder-concept-identity-providers?view=azure-bot-service-4.0&tabs=adv2%2Cga2#azure-ad-v2-1&preserve-view=true) and the value described below.
 
 1. Leave the **Token Exchange URL** empty.
 1. In the **Scopes** box, enter the `RootBot` scope value you saved in the previous steps.
@@ -100,11 +100,11 @@ The Entra ID is a cloud identity service that allows you to build applications t
 [Create an Azure bot resource](bot-builder-authentication.md#create-the-resource).
 1. Copy and save the bot registration **app ID** and the **client secret**.
 
-## Create the Entra ID identity for SkillBot
+## Create the Microsoft Entra ID identity for SkillBot
 
-The Entra ID is a cloud identity service that allows you to build applications that securely sign in users using industry standard protocols like OAuth2.0.
+The Microsoft Entra ID is a cloud identity service that allows you to build applications that securely sign in users using industry standard protocols like OAuth2.0.
 
-1. Create an identity application for the `SkillBot` that uses Entra ID  to authenticate the bot. Follow the steps described in [Create the Entra ID identity provider](bot-builder-authentication.md#create-the-azure-ad-identity-provider).
+1. Create an identity application for the `SkillBot` that uses Microsoft Entra ID  to authenticate the bot. Follow the steps described in [Create the Microsoft Entra ID identity provider](bot-builder-authentication.md#create-the-azure-ad-identity-provider).
 
 1. In the left pane, select **Manifest**.
 1. Set `accessTokenAcceptedVersion` to 2.
@@ -119,7 +119,7 @@ The Entra ID is a cloud identity service that allows you to build applications t
 1. Select **Add a client application**. In the far right section, in the **Client ID** box, enter the **RootBot identity** app ID you saved before. Make sure you use the _RootBot_ identity and not the registration app ID.
 
     > [!NOTE]
-    > For client applications, Azure AI Bot Service does not support single sing-on with the Entra ID B2C identity provider.
+    > For client applications, Azure AI Bot Service does not support single sing-on with the Microsoft Entra ID B2C identity provider.
 
 1. Under **Authorized scope**, check the box by the scope value.
 1. Select **Add application**.
@@ -140,7 +140,7 @@ The Entra ID is a cloud identity service that allows you to build applications t
 
 ### Create an OAuth connection setting for SkillBot
 
-1. Create an Entra ID connection in the `SkillBot` bot registration and enter values as described in [Entra ID](/azure/bot-service/bot-builder-concept-identity-providers?view=azure-bot-service-4.0&tabs=adv2%2Cga2#azure-ad-v2-1&preserve-view=true) and the values described below.
+1. Create an Microsoft Entra ID connection in the `SkillBot` bot registration and enter values as described in [Microsoft Entra ID](/azure/bot-service/bot-builder-concept-identity-providers?view=azure-bot-service-4.0&tabs=adv2%2Cga2#azure-ad-v2-1&preserve-view=true) and the values described below.
 1. In the **Token Exchange URL** box, enter the `SkillBot` scope value you saved in the previous steps.
 1. In the **Scopes** box, enter the following values separated by blank space: `profile` `User.Read` `User.ReadBasic.All` `openid`.
 
@@ -154,8 +154,8 @@ The Entra ID is a cloud identity service that allows you to build applications t
 1. Select **Accept**.
 1. This should then redirect you to a **Test Connection to \<your-connection-name> Succeeded** page.
 
-For more information, see the [Entra ID for developers (v1.0) overview](/azure/active-directory/azuread-dev/v1-overview) and [Microsoft identity platform (v2.0) overview](/azure/active-directory/develop/active-directory-appmodel-v2-overview).
-For information about the differences between the v1 and v2 endpoints, see [Why update to Microsoft identity platform (v2.0)?](/azure/active-directory/develop/active-directory-v2-compare). For complete information, see [Microsoft identity platform (formerly Entra ID for developers)](/azure/active-directory/develop/).
+For more information, see the [Microsoft Entra ID for developers (v1.0) overview](/azure/active-directory/azuread-dev/v1-overview) and [Microsoft identity platform (v2.0) overview](/azure/active-directory/develop/active-directory-appmodel-v2-overview).
+For information about the differences between the v1 and v2 endpoints, see [Why update to Microsoft identity platform (v2.0)?](/azure/active-directory/develop/active-directory-v2-compare). For complete information, see [Microsoft identity platform (formerly Microsoft Entra ID for developers)](/azure/active-directory/develop/).
 
 ## Prepare the samples code
 
@@ -196,7 +196,7 @@ Use the following for testing:
 
 - `RootBot` commands
 
-  - `login` allows the user to sign into the Entra ID registration using the `RootBot`. Once signed in, SSO takes care of the sign-in into the `SkillBot` also. The user doesn't have to sign in again.
+  - `login` allows the user to sign into the Microsoft Entra ID registration using the `RootBot`. Once signed in, SSO takes care of the sign-in into the `SkillBot` also. The user doesn't have to sign in again.
   - `token` displays the user's token.
   - `logout` logs the user out of the `RootBot`.
 
@@ -207,7 +207,7 @@ Use the following for testing:
   - `skill logout` logs the user out of the `SkillBot`
 
 > [!NOTE]
-> The first time users try SSO on a skill, they may be presented with an OAuth card to log in. This is because they haven't yet given consent to the skill's Entra ID app. To avoid this, they can grant admin consent for any graph permissions requested by the Entra ID app.
+> The first time users try SSO on a skill, they may be presented with an OAuth card to log in. This is because they haven't yet given consent to the skill's Microsoft Entra ID app. To avoid this, they can grant admin consent for any graph permissions requested by the Microsoft Entra ID app.
 
 ### [Emulator](#tab/eml)
 
@@ -255,7 +255,7 @@ Notice that in the`RootBot` project `appsettings.json` file you've the following
 ### [Web Chat](#tab/wct)
 
 1. Deploy the root bot and the skill bot to Azure. For more information, see [Tutorial: Provision a bot in Azure](../tutorial-provision-a-bot.md) and [Tutorial: Publish a basic bot](../tutorial-publish-a-bot.md).
-1. In your code editor, for example Visual Studio, replace the localhost addresses in the `RootBot` project `appsetting.js` file with the actual Entra IDdresses as shown below.
+1. In your code editor, for example Visual Studio, replace the localhost addresses in the `RootBot` project `appsetting.js` file with the actual Microsoft Entra IDdresses as shown below.
 
     ```json
     "SkillHostEndpoint": "https://<your root bot deployed name>.azurewebsites.net/api/skills"

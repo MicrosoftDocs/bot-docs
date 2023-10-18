@@ -28,7 +28,7 @@ A well-designed bot will have a conversational flow that feels natural. The bot 
 
 Conversations with a bot can focus on the task a bot is trying to achieve, which is called a procedural flow. The bot asks the user a series of questions to gather all the information it needs before processing the task.
 
-In a procedural conversation flow, you define the order of the questions and the bot will ask the questions in the order you defined. You can organize the questions into logical groups to keep the code centralized while staying focused on guiding the conversation. For example, you may design one module to contain the logic that helps the user browse for products and a separate module to contain the logic that helps the user create a new order.
+In a procedural conversation flow, you define the order of the questions and the bot will ask the questions in the order you defined. You can organize the questions into logical groups to keep the code cMicrosoft Entralized while staying focused on guiding the conversation. For example, you may design one module to contain the logic that helps the user browse for products and a separate module to contain the logic that helps the user create a new order.
 
 You can structure these modules to flow in any way you like, ranging from free form to sequential. The Bot Framework SDK provides a dialogs library that allows you to construct any conversational flow your bot needs. The library includes [waterfall dialogs](/azure/bot-service/bot-builder-concept-waterfall-dialogs) for creating a sequence of steps and prompts for asking users questions. For more information, see [Dialogs library](/azure/bot-service/bot-builder-concept-dialog).
 

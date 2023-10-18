@@ -212,14 +212,14 @@ See notes for [Azure Resource Manager](#azure-resource-manager).
 <a id="microsoft-azure-active-directory"></a>
 <a id="azure-active-directory"></a>
 
-## [Microsoft] Entra ID
+## [Microsoft] Microsoft Entra ID
 
-- **Status**: Approved. See [Entra ID](https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=25369) in the Cloud style guide.
+- **Status**: Approved. See [Microsoft Entra ID](https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=25369) in the Cloud style guide.
 - **Definition**: "The identity service in Microsoft Azure that provides identity management and access control capabilities through a REST-based API. (The on-premises product is Windows Server Active Directory.)"
 - **Forms**:
+  - Microsoft Microsoft Entra ID
   - Microsoft Entra ID
-  - Entra ID
-  - Entra ID
+  - Microsoft Entra ID
 - **Notes**: Don't use _AAD_ as an acronym.
 
 <a id="microsoft-azure-bot-service"></a>
@@ -362,7 +362,7 @@ See [CI/CD](#cicd).
 ## dialog
 
 - **Status**: Informal, part of the Bot Framework SDK.
-- **Definition**: "Dialogs are a central concept in the SDK, providing ways to manage a long-running conversation with the user. A dialog performs a task that can represent part of or a complete conversational thread. It can span just one turn or many, and can span a short or long period of time."
+- **Definition**: "Dialogs are a cMicrosoft Entral concept in the SDK, providing ways to manage a long-running conversation with the user. A dialog performs a task that can represent part of or a complete conversational thread. It can span just one turn or many, and can span a short or long period of time."
 - **Notes**: There are many types of dialogs. If you need to call out a specific type of dialog, use the same conventions as the **Dialogs library** article.
 - **See**: [Dialogs library](https://learn.microsoft.com/azure/bot-service/bot-builder-concept-dialog) in the SDK docs.
 - **See also**: [dialogs library](#dialogs-library).
@@ -530,8 +530,8 @@ See [web](#web).
 - **Definition**: "Your account for all things Microsoft. It enables every customer to get the most out of their Microsoft experience."
 - **Notes**:
   - Do not shorten to MSA.
-  - In contrast to a _work or school account_ (via Entra ID).
-- **See also**: [Entra ID](#azure-active-directory).
+  - In contrast to a _work or school account_ (via Microsoft Entra ID).
+- **See also**: [Microsoft Entra ID](#azure-active-directory).
 
 <a id="microsoft-bot-framework"></a>
 
@@ -680,7 +680,7 @@ For individual flavors of the SDK, append _for \<environment>_, to match the [Az
 ## repository
 
 - **Status**: In general use, though its meaning varies.
-- **Definition**: A central location (to varying extents) that contains code or packages. This can be at anywhere from the project level or platform level.
+- **Definition**: A cMicrosoft Entral location (to varying extents) that contains code or packages. This can be at anywhere from the project level or platform level.
 - **Notes**: Don't shorten to _repo_.
 - **See also**: [package](#package).
 

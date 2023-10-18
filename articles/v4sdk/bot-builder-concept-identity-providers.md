@@ -36,18 +36,18 @@ Many identity providers support a sign-out operation that revokes the user token
 > [!IMPORTANT]
 > SSO enhances usability by reducing the number of times a user must enter credentials. It also provides better security by decreasing the potential attack surface.
 
-## Entra ID identity provider
+## Microsoft Entra ID identity provider
 
-Entra ID is the identity service in Microsoft Azure that provides identity management and access control capabilities. It allows you to securely sign in users using industry standard protocols like **OAuth2.0**.
+Microsoft Entra ID is the identity service in Microsoft Azure that provides identity management and access control capabilities. It allows you to securely sign in users using industry standard protocols like **OAuth2.0**.
 
 You can choose from two Active Directory identity provider implementations, which have different settings as shown below.
 
 > [!NOTE]
 > Use these settings when configuring **OAuth Connection Settings** in the Azure bot registration application. For more information, see [Add authentication to a bot](bot-builder-authentication.md).
 
-# [Entra ID](#tab/adv2)
+# [Microsoft Entra ID](#tab/adv2)
 
-The Microsoft identity platform (v2.0)&mdash;also known as the Entra ID endpoint&mdash;allows a bot to get tokens to call Microsoft APIs, such as Microsoft Graph or other APIs. The identity platformis an evolution of the Azure AD platform (v1.0).
+The Microsoft identity platform (v2.0)&mdash;also known as the Microsoft Entra ID endpoint&mdash;allows a bot to get tokens to call Microsoft APIs, such as Microsoft Graph or other APIs. The identity platformis an evolution of the Azure AD platform (v1.0).
 For more information, see the [Microsoft identity platform (v2.0) overview](/azure/active-directory/develop/active-directory-appmodel-v2-overview).
 
 Use the AD v2 settings below to enable a bot to access Office 365 data via the Microsoft Graph API.
@@ -55,24 +55,24 @@ Use the AD v2 settings below to enable a bot to access Office 365 data via the M
 | Property | Description or value |
 |--|--|
 | **Name** | A name for this identity provider connection. |
-| **Service Provider** | The identity provider to use. Select **Microsoft Entra ID**. |
+| **Service Provider** | The identity provider to use. Select **Microsoft Microsoft Entra ID**. |
 | **Client id** | The application (client) ID for your Azure identity provider app. |
 | **Client secret** | The secret for your Azure identity provider app. |
 | **Tenant ID** | Your directory (tenant) ID or `common`. For more information, see the note about [tenant IDs](#azure-ad-note). |
-| **Scopes** | A space-separated list of the API permissions you granted the Entra ID identity provider app, such as `openid`, `profile`, `Mail.Read`, `Mail.Send`, `User.Read`, and `User.ReadBasic.All`. |
+| **Scopes** | A space-separated list of the API permissions you granted the Microsoft Entra ID identity provider app, such as `openid`, `profile`, `Mail.Read`, `Mail.Send`, `User.Read`, and `User.ReadBasic.All`. |
 | **Token Exchange URL** | For an _SSO-enabled skill bot_ use the token exchange URL associated with the OAuth connection; otherwise, leave this empty. For information about the SSO token exchange URL, see [Create an OAuth connection settings](bot-builder-authentication-sso.md#create-an-oauth-connection-setting-1). |
 
 # [Azure AD v1](#tab/adv1)
 
 ### Azure AD v1
 
-Use the settings shown below to configure the Entra ID developer platform (v1.0), also known as **Azure AD v1** endpoint. This allows you to build apps that securely sign in users with a Microsoft work or school account.
-For more information, see [Entra ID for developers (v1.0) overview](/azure/active-directory/azuread-dev/v1-overview).
+Use the settings shown below to configure the Microsoft Entra ID developer platform (v1.0), also known as **Azure AD v1** endpoint. This allows you to build apps that securely sign in users with a Microsoft work or school account.
+For more information, see [Microsoft Entra ID for developers (v1.0) overview](/azure/active-directory/azuread-dev/v1-overview).
 
 | Property | Description or value |
 |--|--|
 | **Name** | A name for this identity provider connection. |
-| **Service Provider** | The identity provider to use. Select **Microsoft Entra ID**. |
+| **Service Provider** | The identity provider to use. Select **Microsoft Microsoft Entra ID**. |
 | **Client id** | The application (client) ID for your Azure identity provider app. |
 | **Client secret** | The secret for your Azure identity provider app. |
 | **Grant Type** | `authorization_code` |
@@ -87,19 +87,19 @@ For more information, see [Entra ID for developers (v1.0) overview](/azure/activ
 <a id="azure-ad-note"></a>
 
 > [!NOTE]
-> If you selected one of the following, enter the **tenant ID** you recorded for the Entra ID identity provider app:
+> If you selected one of the following, enter the **tenant ID** you recorded for the Microsoft Entra ID identity provider app:
 >
 > - **Accounts in this organizational directory only (Microsoft only - Single tenant)**
 > - **Accounts in any organizational directory(Microsoft AAD directory - Multi tenant)**
 >
-> If you selected **Accounts in any organizational directory (Any Entra ID directory - Multi tenant and personal Microsoft accounts e.g., Skype, Xbox, Outlook.com)**, enter `common`.
+> If you selected **Accounts in any organizational directory (Any Microsoft Entra ID directory - Multi tenant and personal Microsoft accounts e.g., Skype, Xbox, Outlook.com)**, enter `common`.
 >
-> Otherwise, the Entra ID identity provider app will use the tenant to verify the selected ID and exclude personal Microsoft accounts.
+> Otherwise, the Microsoft Entra ID identity provider app will use the tenant to verify the selected ID and exclude personal Microsoft accounts.
 
 For more information, see:
 
 - [Why update to Microsoft identity platform (v2.0)?](/azure/active-directory/develop/active-directory-v2-compare)
-- [Microsoft identity platform (Entra ID for developers)](/azure/active-directory/develop/).
+- [Microsoft identity platform (Microsoft Entra ID for developers)](/azure/active-directory/develop/).
 
 ## Other identity providers
 
@@ -125,7 +125,7 @@ You can choose from two generic identity provider implementations, which have di
 
 ### [Generic OAuth 2](#tab/ga2)
 
-Use this provider to configure any generic OAuth2 identity provider that has similar expectations as Entra ID provider, particularly AD v2. For this connection type, the query strings and request body payloads are fixed.
+Use this provider to configure any generic OAuth2 identity provider that has similar expectations as Microsoft Entra ID provider, particularly AD v2. For this connection type, the query strings and request body payloads are fixed.
 
 | Property | Description or value |
 |--|--|

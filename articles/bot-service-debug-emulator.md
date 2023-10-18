@@ -152,9 +152,9 @@ When you open the bot, set the **Microsoft App ID** and **Microsoft App password
 When creating an AD identity provider application, remember the following:
 
 - When the supported account type is set to single tenant, if you use a personal subscription instead of a Microsoft account, the Emulator would issue the error: **The bot's Microsoft App ID or Microsoft App Password is incorrect.**
-- In this case, the supported account types must be set to **Accounts in any organizational directory (Any Entra ID directory - Multitenant) and personal Microsoft accounts (e.g. Xbox)**.
+- In this case, the supported account types must be set to **Accounts in any organizational directory (Any Microsoft Entra ID directory - Multitenant) and personal Microsoft accounts (e.g. Xbox)**.
 
-For more information, see [Create an Entra ID identity provider application](bot-builder-tutorial-authentication.md#create-an-azure-ad-identity-provider-application) and [Register a new application using the Azure portal](/azure/active-directory/develop/quickstart-register-app#register-a-new-application-using-the-azure-portal).
+For more information, see [Create an Microsoft Entra ID identity provider application](bot-builder-tutorial-authentication.md#create-an-azure-ad-identity-provider-application) and [Register a new application using the Azure portal](/azure/active-directory/develop/quickstart-register-app#register-a-new-application-using-the-azure-portal).
 
 ## View detailed Message Activities with the Inspector
 

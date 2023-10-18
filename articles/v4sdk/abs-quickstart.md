@@ -39,7 +39,7 @@ Some of the resources created depend on how you decide to manage your bot's iden
 
 ## Additional information
 
-- For information about identity management with Entra ID, see [What is Entra ID?](/azure/active-directory/fundamentals/active-directory-whatis).
+- For information about identity management with Microsoft Entra ID, see [What is Microsoft Entra ID?](/azure/active-directory/fundamentals/active-directory-whatis).
 - For information about Azure App Service and App Service plans, see the [App Service overview](/azure/app-service/overview).
 - For information about Azure resources and how they're managed in general, see the [Azure Resource Manager overview](/azure/azure-resource-manager/management/overview).
 

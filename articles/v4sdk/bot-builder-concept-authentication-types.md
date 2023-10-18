@@ -39,7 +39,7 @@ see [Connect a bot to Slack using the Slack adapter](../bot-service-channel-conn
 A bot is identified by its **MicrosoftAppID** and **MicrosoftAppPassword**, which are kept within the bot's settings files (`appsettings.json` (.NET), `.env` (JavaScript), `config.py` (Python)) or in a secrets or key manager.
 For more information, see [MicrosoftAppID and MicrosoftAppPassword](../bot-service-manage-overview.md#microsoftappid-and-microsoftapppassword).
 
-When you register a bot in the Azure portal, Azure creates an Entra ID registration application. If you use the Bot Framework CLI, you must specifically perform a step to create the Entra ID registration. This registration has an application ID (`MicrosoftAppID`) and client secret (`MicrosoftAppPassword`). Azure uses these values to generate a **token** with which the bot can access secure resources.
+When you register a bot in the Azure portal, Azure creates an Microsoft Entra ID registration application. If you use the Bot Framework CLI, you must specifically perform a step to create the Microsoft Entra ID registration. This registration has an application ID (`MicrosoftAppID`) and client secret (`MicrosoftAppPassword`). Azure uses these values to generate a **token** with which the bot can access secure resources.
 
 When a channel sends a request to a bot, via the Bot Connector service, it specifies a **token** in the **Authorization header** of the request. The bot authenticates calls from the Bot Connector service by verifying the authenticity of the token.
 
