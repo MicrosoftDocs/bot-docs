@@ -31,7 +31,7 @@ Four authentication technologies are used to establish trust between a bot and t
 | Technology | Description |
 |----|----|
 | **SSL/TLS** | SSL/TLS is used for all service-to-service connections. `X.509v3` certificates are used to establish the identity of all HTTPS services. **Clients should always inspect service certificates to ensure they are trusted and valid.** (Client certificates are NOT used as part of this scheme.) |
-| **OAuth 2.0** | OAuth 2.0 uses the Entra ID v2 account login service to generate a secure token that a bot can use to send messages. This token is a service-to-service token; no user login is required. |
+| **OAuth 2.0** | OAuth 2.0 uses the Entra ID account login service to generate a secure token that a bot can use to send messages. This token is a service-to-service token; no user login is required. |
 | **JSON Web Token (JWT)** | JSON Web Tokens are used to encode tokens that are sent to and from the bot. **Clients should fully verify all JWT tokens that they receive**, according to the requirements outlined in this article. |
 | **OpenID metadata** | The Bot Connector service publishes a list of valid tokens that it uses to sign its own JWT tokens to OpenID metadata at a well-known, static endpoint. |
 
