@@ -148,7 +148,7 @@ HTTP/1.1 200 OK
 
 The information presented in this section is based on the [Add authentication to your bot via Azure AI Bot Service](../v4sdk/bot-builder-authentication.md) article.
 
-**Azure AI Bot Service authentication** enables you to authenticate users to and get **access tokens** from various identity providers such as _Azure Active Directory_, _GitHub_, _Uber_ and so on. You can also configure authentication for a custom **OAuth2** identity provider. All this enables you to write **one piece of authentication code** that works across all supported identity providers and channels. To use these capabilities:
+**Azure AI Bot Service authentication** enables you to authenticate users to and get **access tokens** from various identity providers such as _Entra ID_, _GitHub_, _Uber_ and so on. You can also configure authentication for a custom **OAuth2** identity provider. All this enables you to write **one piece of authentication code** that works across all supported identity providers and channels. To use these capabilities:
 
 1. Statically configure `settings` on your bot that contains the details of your application registration with an identity provider.
 1. Use an `OAuthCard`, backed by the application information you supplied in the previous step, to sign-in a user.

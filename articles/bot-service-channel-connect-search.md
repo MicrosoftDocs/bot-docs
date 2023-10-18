@@ -49,13 +49,13 @@ This article uses the C# [federated search bot](https://github.com/Azure/federat
 > This step is only needed if your bot requires access to protected user resources.
 
 In some business workflows, a bot might require user credentials to perform an action on the user's behalf.
-To create a single sign-on (SSO) experience for your bot in the Search channel, you must allow the search platform to secure an access token from Azure AD on behalf of the user.
+To create a single sign-on (SSO) experience for your bot in the Search channel, you must allow the search platform to secure an access token from Entra ID on behalf of the user.
 
 To generate a scope URI and application ID for your bot:
 
 1. Go to the Azure portal.
 1. If you don't already have a bot resource, create an Azure Bot resource.
-1. Go to the **Azure Active Directory** service.
+1. Go to the **Microsoft Entra ID** service.
 1. Go to the **App registrations** pane.
 1. Select the application associated with your bot.
 1. Go to the **Expose an API** pane.

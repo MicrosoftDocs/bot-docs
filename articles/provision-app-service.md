@@ -63,7 +63,7 @@ By default, the name of the parameters file is **parameters-for-template-BotApp-
 | `appSecret` |String| Optional. For single-tenant and multi-tenant app types, the password for the identity resource. |
 | `UMSIName` | String | Optional. For user-assigned managed identity app types, the name of the identity resource.|
 | `UMSIResourceGroupName` | String | Optional. For user-assigned managed identity app types, the resource group for the identity resource. |
-| `tenantId` | String | Optional. For user-assigned managed identity and single-tenant app types, The Azure AD tenant ID for the identity resource. |
+| `tenantId` | String | Optional. For user-assigned managed identity and single-tenant app types, The Entra ID tenant ID for the identity resource. |
 
 Not all parameters apply to all app types.
 

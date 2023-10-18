@@ -28,7 +28,7 @@ The Email channel currently works with Office 365 only. Other email services are
 
 - If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 - A dedicated Office 365 email account for the bot.
-- Permission to grant the bot `Mail.ReadWrite` and `Mail.Send` access. For more information, see [Understanding Azure AD application consent experiences](/azure/active-directory/develop/application-consent-experience).
+- Permission to grant the bot `Mail.ReadWrite` and `Mail.Send` access. For more information, see [Understanding Entra ID application consent experiences](/azure/active-directory/develop/application-consent-experience).
 
 > [!NOTE]
 > You shouldn't use your own personal email accounts for bots, as every message sent to that email account will be forwarded to the bot. This can result in the bot inappropriately sending a response to a sender. For this reason, bots should only use dedicated M365 email accounts.
@@ -57,7 +57,7 @@ The Email channel currently works with Office 365 only. Other email services are
 
 > [!NOTE]
 >
-> - Federated authentication using any vendor that replaces Azure AD isn't supported.
+> - Federated authentication using any vendor that replaces Entra ID isn't supported.
 > - For security reasons, usage of _basic authentication_ in Exchange Online is being disabled on October 1st, 2022.
 >   You should migrate all of your bots to use _modern authentication_ before the deadline.
 > - If you use Microsoft Exchange Server, make sure you've enabled [Autodiscover](/exchange/client-developer/exchange-web-services/autodiscover-for-exchange) first, before configuring email to use basic authentication.
@@ -86,7 +86,7 @@ For more information about the activity `channelData` property, see [Create a cu
 
 ## Troubleshoot
 
-For errors that can occur while processing consent to an application, see [Understanding Azure AD application consent experiences](/azure/active-directory/develop/application-consent-experience) and [Unexpected error when performing consent to an application](/azure/active-directory/manage-apps/application-sign-in-unexpected-user-consent-error).
+For errors that can occur while processing consent to an application, see [Understanding Entra ID application consent experiences](/azure/active-directory/develop/application-consent-experience) and [Unexpected error when performing consent to an application](/azure/active-directory/manage-apps/application-sign-in-unexpected-user-consent-error).
 
 If your bot doesn't return a 200 OK HTTP status code within 15 seconds in response to an incoming email message, the email channel will try to resend the message, and your bot may receive the same email message activity a few times. For more information, see the [HTTP details](v4sdk/bot-builder-basics.md#http-details) section in **How bots work** and the [troubleshooting timeout errors](https://github.com/daveta/analytics/blob/master/troubleshooting_timeout.md) article.
 

@@ -212,14 +212,14 @@ See notes for [Azure Resource Manager](#azure-resource-manager).
 <a id="microsoft-azure-active-directory"></a>
 <a id="azure-active-directory"></a>
 
-## [Microsoft] Azure Active Directory
+## [Microsoft] Entra ID
 
-- **Status**: Approved. See [Azure Active Directory](https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=25369) in the Cloud style guide.
+- **Status**: Approved. See [Entra ID](https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=25369) in the Cloud style guide.
 - **Definition**: "The identity service in Microsoft Azure that provides identity management and access control capabilities through a REST-based API. (The on-premises product is Windows Server Active Directory.)"
 - **Forms**:
-  - Microsoft Azure Active Directory
-  - Azure Active Directory
-  - Azure AD
+  - Microsoft Entra ID
+  - Entra ID
+  - Entra ID
 - **Notes**: Don't use _AAD_ as an acronym.
 
 <a id="microsoft-azure-bot-service"></a>
@@ -530,8 +530,8 @@ See [web](#web).
 - **Definition**: "Your account for all things Microsoft. It enables every customer to get the most out of their Microsoft experience."
 - **Notes**:
   - Do not shorten to MSA.
-  - In contrast to a _work or school account_ (via Azure Active Directory).
-- **See also**: [Azure Active Directory](#azure-active-directory).
+  - In contrast to a _work or school account_ (via Entra ID).
+- **See also**: [Entra ID](#azure-active-directory).
 
 <a id="microsoft-bot-framework"></a>
 

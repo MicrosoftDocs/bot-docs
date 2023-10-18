@@ -135,7 +135,7 @@ Did you change your Facebook password? Doing so will invalidate the access token
 
 ## How can I use authenticated services from my bot?
 
-For Azure Active Directory authentication, see the [Add authentication to your bot](v4sdk/bot-builder-authentication.md) tutorial.
+For Entra ID authentication, see the [Add authentication to your bot](v4sdk/bot-builder-authentication.md) tutorial.
 
 > [!NOTE]
 > If you add authentication and security functionality to your bot, you should ensure that the patterns you implement in your code comply with the security standards that are appropriate for your application.
@@ -162,25 +162,25 @@ Direct Line 3.0 returns HTTP status code 502 when it tries to contact your bot b
 
 ## Why do I get an Authorization_RequestDenied exception when creating a bot?
 
-Permission to create Azure AI Bot Service bots are managed through the Azure Active Directory (Azure AD) portal. If permissions aren't properly configured in the [Azure Active Directory admin center](https://aad.portal.azure.com), users will get the **Authorization_RequestDenied** exception when trying to create a bot service.
+Permission to create Azure AI Bot Service bots are managed through the Entra ID portal. If permissions aren't properly configured in the [Entra ID admin center](https://aad.portal.azure.com), users will get the **Authorization_RequestDenied** exception when trying to create a bot service.
 
 First check whether you're a "Guest" of the directory:
 
 1. Sign-in to [Azure portal](https://portal.azure.com).
 1. Select **All services** and search for *active*.
-1. Select **Azure Active Directory**.
+1. Select **Microsoft Entra ID**.
 1. Select **Users**.
 1. Find the user from the list and ensure that the **User Type** isn't a **Guest**.
 
-:::image type="content" source="media/azure-active-directory/user_type.png" alt-text="Azure Active Directory User-type":::
+:::image type="content" source="media/azure-active-directory/user_type.png" alt-text="Entra ID User-type":::
 
 Once you verified that you're not a **Guest**, then to ensure that users within an active directory can create bot service, the directory administrator needs to configure the following settings:
 
-1. Sign-in to [Azure Active Directory admin center](https://aad.portal.azure.com). Go to **Users and groups** and select **User settings**.
+1. Sign-in to [Entra ID admin center](https://aad.portal.azure.com). Go to **Users and groups** and select **User settings**.
 1. Under **App registration** section, set **Users can register applications** to **Yes**. This allows users in your directory to create bot service.
 1. Under the **External users** section, set **Guest users permissions are limited** to **No**. This allows guest users in your directory to create bot service.
 
-:::image type="content" source="media/azure-active-directory/admin_center.png" alt-text="Azure Active Directory Admin Center":::
+:::image type="content" source="media/azure-active-directory/admin_center.png" alt-text="Entra ID Admin Center":::
 
 ## Why can't I migrate my bot?
 

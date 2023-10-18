@@ -44,7 +44,7 @@ This article describes how to use the Direct Line App Service extension with an 
     | Protocol                | Any             |
     | Action                  | Allow           |
 
-1. If your bot uses OAuth for user sign in to Azure Active Directory, add a second outbound rule that's associated with `https://login.microsoftonline.com/botframework.com`:
+1. If your bot uses OAuth for user sign in to Entra ID, add a second outbound rule that's associated with `https://login.microsoftonline.com/botframework.com`:
 
     | Field                   | Value                |
     |:------------------------|:---------------------|

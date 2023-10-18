@@ -89,7 +89,7 @@ The Bot Connector service natively uses HTTPS to exchange messages between a bot
 
 ### User authentication
 
-**Azure AI Bot Service authentication** enables you to authenticate users to and get **access tokens** from various identity providers such as *Azure Active Directory*, *GitHub*, *Uber* and so on. You can also configure authentication for a custom **OAuth2** identity provider. All this enables you to write **one piece of authentication code** that works across all supported identity providers and channels. To utilize these capabilities you need to perform the following steps:
+**Azure AI Bot Service authentication** enables you to authenticate users to and get **access tokens** from various identity providers such as *Entra ID*, *GitHub*, *Uber* and so on. You can also configure authentication for a custom **OAuth2** identity provider. All this enables you to write **one piece of authentication code** that works across all supported identity providers and channels. To utilize these capabilities you need to perform the following steps:
 
 1. Statically configure `settings` on your bot that contains the details of your application registration with an identity provider.
 1. Use an `OAuthCard`, backed by the application information you supplied in the previous step, to sign-in a user.
