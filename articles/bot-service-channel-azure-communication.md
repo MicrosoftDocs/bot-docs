@@ -11,7 +11,7 @@ ms.date: 01/04/2023
 ms.custom: template-how-to
 ---
 
-# Connect a bot to Azure Communication Services Chat (preview)
+# Connect a bot to Azure Communication Services Chat
 
 Retail websites, product websites, and applications often include a chat bubble in the bottom right-hand corner of the page. When you click on the bubble, a chat application pops up and you are greeted by a bot. The bot may collect details about you, hand you off to a live agent, or go through frequently asked questions for support. Azure Communications Services Chat Service gives you the APIs and SDKs to build the chat application and add a bot to a chat thread to provide this type of customer experience.
 
