@@ -89,7 +89,6 @@
       "uhfHeaderId": "azure",
       "archive_url": "https://docs.microsoft.com/previous-versions/azure/bot-service/index-bf-sdk",
       "breadcrumb_path": "/azure/bot-service/breadcrumb/TOC.json",
-      "extendBreadcrumb": true,
       "author": "kaiqb",
       "brand": "azure",
       "searchScope": [

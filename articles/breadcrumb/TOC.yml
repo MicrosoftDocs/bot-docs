@@ -1,4 +1,4 @@
-- name: Docs
+- name: Learn
   tocHref: /
   topicHref: /
   items:
@@ -6,13 +6,9 @@
     tocHref: /azure/
     topicHref: /azure/index
     items:
-    - name: Azure AI services
+    - name: AI Services
       tocHref: /azure/ai-services/
       topicHref: /azure/ai-services/
       items:
-      - name: Azure AI Bot Service
+      - name: AI Bot Service
         href: /azure/bot-service/
-        items:
-        - name: Bot Framework SDK
-          tocHref: /azure/bot-service/
-          topicHref: /azure/bot-service/index-bf-sdk
