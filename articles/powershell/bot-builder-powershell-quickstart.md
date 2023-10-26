@@ -14,7 +14,7 @@ ms.custom: devx-track-azurepowershell, modeapi
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-This article shows you how to use Azure PowerShell to create a bot and register it with Azure using an existing Azure Active Directory (Azure AD) application registration.
+This article shows you how to use Azure PowerShell to create a bot and register it with Azure using an existing Microsoft Entra ID application registration.
 
 Use an **Azure Bot** resource to host your bot.
 You'll create and develop your bot locally and host it on Azure or a different platform. Follow the steps described in how-to [Register a bot with Azure](../bot-service-quickstart-registration.md). When you register your bot, you provide the web address where your bot is hosted. You can still host it in Azure.
@@ -32,7 +32,7 @@ Creating a bot with Azure AI Bot Service and creating a bot locally are independ
 - If you don't have an Azure subscription, create a [free](https://azure.microsoft.com/free/)
   account before you begin.
 
-- An existing Azure AD application registration that can be used from any Azure AD tenant.
+- An existing Microsoft Entra ID application registration that can be used from any Microsoft Entra ID tenant.
   - To complete this quickstart, you'll need the app ID and secret for the application registration.
 
 - [Install the Az PowerShell module](/powershell/azure/install-az-ps). This is required because the Az.BotService module is in preview.

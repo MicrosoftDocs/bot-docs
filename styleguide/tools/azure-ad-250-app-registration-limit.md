@@ -1,19 +1,19 @@
 
-# Fix Azure AD 250 app registration limit
+# Fix Microsoft Entra ID 250 app registration limit
 
 ## Overview
 
-If you create a lot of bots and Azure AD apps, you probably run into the limit imposed by Azure AD on app registrations that allows
+If you create a lot of bots and Microsoft Entra ID apps, you probably run into the limit imposed by Microsoft Entra ID on app registrations that allows
 to have **250 apps** at a given time. The problem is that when you delete an app using the Azure portal, it takes 30 days for the app to be fully deleted, which means that you cannot provision another one for 30 days. The approach described here takes **3-5 minutes** to complete.
 
 > [!NOTE]
 > Michael Richardson wrote up a great solution to do an effective deletion under 5 minutes, which Eric Dahlvang pointed to.
 
-Again, Azure AI Bot Service requires an Azure AD app. There is a limit on 250 apps for our Azure accounts. At that point, you can get an error when provisioning new bots in using the Azure portal, and analogous errors through other bot creation means such as ARM SDK, ARM templates and others.
+Again, Azure AI Bot Service requires an Microsoft Entra ID app. There is a limit on 250 apps for our Azure accounts. At that point, you can get an error when provisioning new bots in using the Azure portal, and analogous errors through other bot creation means such as ARM SDK, ARM templates and others.
 
 ## Problem
 
-The problem is that, if you go to the Azure portal and delete some Azure AD app registrations, they will take up to 7 days to be fully internally deleted and only then you will be able to create another bot.
+The problem is that, if you go to the Azure portal and delete some Microsoft Entra ID app registrations, they will take up to 7 days to be fully internally deleted and only then you will be able to create another bot.
 
 The section below illustrates how to delete app registrations in such a way that the **deletion is reflected right away**.
 
