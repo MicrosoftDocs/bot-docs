@@ -12,7 +12,7 @@
     - A [relatively] _simple dialog_ is one that might ask a series of questions and then reply with an answer or acknowledgement, without branching or other control logic.
     - A [relatively] _complex dialog_ is one that can progress in multiple ways, such as spawning child dialogs, and so on.
 
-    ...Dialogs are a central concept in the Bot Framework SDK, and provide a way to manage a conversation with the user.
+    ...Dialogs are a cMicrosoft Entral concept in the Bot Framework SDK, and provide a way to manage a conversation with the user.
 
     ...A dialog guides the conversation, sometimes in response user input or other stimuli. Logically, a dialog can be thought of as composed of _turns_.
 

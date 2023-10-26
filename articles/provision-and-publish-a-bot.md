@@ -64,7 +64,7 @@ Your bot will use these types of resources.
 
 - The Azure subscription that you'll use to provision, publish, and manage the bot
 - One or more resource groups
-- A user-assigned managed identity _or_ an Azure Active Directory app registration
+- A user-assigned managed identity _or_ an Microsoft Entra ID app registration
 - An App Service Plan resource
 - An App Service resource
 - An Azure Bot resource
@@ -161,7 +161,7 @@ For more information, see [How to manage Azure resource groups with the Azure CL
 Use the following commands to create your app registration and set its password.
 On success, these commands generate JSON output.
 
-1. Use the `az ad app create` command to create an Azure Active Directory app registration.
+1. Use the `az ad app create` command to create an Microsoft Entra ID app registration.
     This command generates an app ID that you'll use in the next step.
 
     ```azurecli
@@ -230,7 +230,7 @@ If you're not going to publish this application, delete the associated resources
     1. Select **Delete resource group** to delete the group and all the resources it contains.
     1. Enter the _resource group name_ in the confirmation pane, then select **Delete**.
 1. If you created a single-tenant or multi-tenant app:
-    1. Go to the Azure Active Directory blade.
+    1. Go to the Microsoft Entra ID blade.
     1. Locate the app registration you used for your bot, and delete it.
 
 ## Additional resources

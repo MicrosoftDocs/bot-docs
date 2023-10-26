@@ -588,7 +588,7 @@ Defines a bot or user account on the channel.
 
 | Property | Type | Description |
 |----|----|----|
-| **aadObjectId** | String | This account's object ID within Azure Active Directory. |
+| **aadObjectId** | String | This account's object ID within Microsoft Entra ID. |
 | **id** | String | Unique ID for the user or bot on this channel. |
 | **name** | String | Display-friendly name of the bot or user. |
 | **role** | String | Role of the entity behind the account. Either **user** or **bot**. |
@@ -601,7 +601,7 @@ Defines a conversation in a channel.
 
 | Property | Type | Description |
 |----|----|----|
-| **aadObjectId** | String | This account's object ID within Azure Active Directory. |
+| **aadObjectId** | String | This account's object ID within Microsoft Entra ID. |
 | **conversationType** | String | Indicates the type of the conversation in channels that distinguish between conversation types (for example, group or personal). |
 | **id** | String | The ID that identifies the conversation. The ID is unique per channel. If the channel starts the conversation, it sets this ID; otherwise, the bot sets this property to the ID that it gets back in the response when it starts the conversation (see [Create Conversation](#create-conversation)). |
 | **isGroup** | Boolean | Flag to indicate whether the conversation contains more than two participants at the time the activity was generated. Set to **true** if this is a group conversation; otherwise, **false**. The default is **false**. |

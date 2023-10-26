@@ -460,7 +460,7 @@ Note that the cache scope option is case-insensitive.
 > !# @cachescope= global // ok
 ```
 
-Note that cache scope follows the scope of the entrance .lg file.
+Note that cache scope follows the scope of the Microsoft Entrance .lg file.
 
 Say you have two files: `a.lg` and `b.lg`, shown below:
 

@@ -18,7 +18,7 @@ monikerRange: 'azure-bot-service-4.0'
 
 Single sign-on (SSO) allows access to resources to be shared across independent applications.
 For instance, a user could sign in to a service in a root bot, and the root bot could share the access token with a skill bot.
-Currently, only the [Azure Active Directory v2](./bot-builder-concept-identity-providers.md#azure-active-directory-identity-provider) identity provider is supported.
+Currently, only the [Microsoft Entra ID](./bot-builder-concept-identity-providers.md#azure-active-directory-identity-provider) identity provider is supported.
 
 SSO applies to the following scenarios:
 
@@ -53,7 +53,7 @@ Let's analyze the flow.
 1. The client starts a conversation with the bot triggering an OAuth scenario.
 1. The bot sends back an OAuth Card to the client.
 1. The client intercepts the OAuth card before displaying it to the user and checks if it contains a `TokenExchangeResource` property.
-1. If the property exists, the client sends a `TokenExchangeInvokeRequest` to the bot. The client must have an exchangeable token for the user, which must be an Azure Active Directory v2 token and whose audience must be the same as `TokenExchangeResource.Uri` property. The client sends an Invoke activity to the bot with the body shown below.
+1. If the property exists, the client sends a `TokenExchangeInvokeRequest` to the bot. The client must have an exchangeable token for the user, which must be an Microsoft Entra ID token and whose audience must be the same as `TokenExchangeResource.Uri` property. The client sends an Invoke activity to the bot with the body shown below.
 
     ```json
     {

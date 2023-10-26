@@ -56,9 +56,9 @@ The Bot Framework Token Service is responsible for:
   > - Log the user out
   > - Initiate the sign-in flow again
 
-For example, a bot that can check a user's recent emails, using the Microsoft Graph API, requires a user token from an **Identity Provider**, in this case **Azure Active Directory**. At design time, the bot developer performs these two important steps:
+For example, a bot that can check a user's recent emails, using the Microsoft Graph API, requires a user token from an **Identity Provider**, in this case **Microsoft Entra ID**. At design time, the bot developer performs these two important steps:
 
-1. Registers an Azure Active Directory application, an Identity Provider, with the Bot Framework Token Service, via the Azure portal.
+1. Registers an Microsoft Entra ID application, an Identity Provider, with the Bot Framework Token Service, via the Azure portal.
 1. Configures an OAuth connection (named for example `GraphConnection`) for the bot.
 
 The following picture shows the time sequence of the user's interaction with a bot when an email request is made using the Microsoft Graph service.

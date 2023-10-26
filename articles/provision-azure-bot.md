@@ -59,7 +59,7 @@ By default, the name of the parameters file is **parameters-for-template-AzureBo
 | `appId` |String| Required. The client ID or app ID from the identity resource you created earlier. This is the Microsoft app ID of the app service. |
 | `UMSIName` | String | Optional. For user-assigned managed identity app types, the name of the identity resource.|
 | `UMSIResourceGroupName` | String | Optional. For user-assigned managed identity app types, the resource group for the identity resource. |
-| `tenantId` | String | Optional. For user-assigned managed identity and single-tenant app types, The Azure AD tenant ID for the identity resource. |
+| `tenantId` | String | Optional. For user-assigned managed identity and single-tenant app types, The Microsoft Entra ID tenant ID for the identity resource. |
 
 > [!TIP]
 > The bot's messaging endpoint must be set before a published bot can receive messages.

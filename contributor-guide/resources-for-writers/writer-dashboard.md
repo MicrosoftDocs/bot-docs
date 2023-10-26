@@ -57,7 +57,7 @@ See GitHub's [Searching issues and pull requests](https://docs.github.com/en/git
 | [microsoftDocs / msteams-docs](https://github.com/MicrosoftDocs/msteams-docs) | Microsoft Teams |
 | [microsoftDocs / power-platform](https://github.com/MicrosoftDocs/power-platform) | Power Virtual Agents |
 | **Code repos** |  |
-| [microsoft / botframework-sdk](https://github.com/microsoft/botframework-sdk) | Central repo for the whole Bot Framework |
+| [microsoft / botframework-sdk](https://github.com/microsoft/botframework-sdk) | CMicrosoft Entral repo for the whole Bot Framework |
 | &emsp; [ / Orchestrator](https://github.com/microsoft/botframework-sdk/tree/main/Orchestrator) | Where the Orchestrator code and reference material lives |
 | [microsoft / BotBuilder-dotnet](https://github.com/Microsoft/BotBuilder-dotnet) | Bot Framework SDK for .NET (v4) |
 | [microsoft / BotBuilder-java](https://github.com/Microsoft/BotBuilder-java) | Bot Framework SDK for Java (v4) |

@@ -52,7 +52,7 @@ See these articles for more information about Azure applications in general.
 |:-|:-|
 | App registration | [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app) |
 | Managed identities | [What are managed identities for Azure resources?](/azure/active-directory/managed-identities-azure-resources/overview) |
-| Single-tenant and multi-tenant apps | [Tenancy in Azure Active Directory](/azure/active-directory/develop/single-and-multi-tenant-apps) |
+| Single-tenant and multi-tenant apps | [Tenancy in Microsoft Entra ID](/azure/active-directory/develop/single-and-multi-tenant-apps) |
 
 ## Next steps
 
