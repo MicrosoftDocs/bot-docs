@@ -20,5 +20,5 @@ To use the Azure CLI to provision and publish bots, you need:
   | Language          | CLI version     |
   |:------------------|:---------------:|
   | C# and JavaScript | 2.39.0 or later |
-  | Python            | 2.39.0 or later |
+  | Python            | 2.55.0 or later |
   | Java              | 2.29.2          |
