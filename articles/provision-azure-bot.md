@@ -51,9 +51,9 @@ By default, the name of the parameters file is **parameters-for-template-AzureBo
 
 | Parameter | Type | Description |
 |:-|:-|:-|
-| `azureBotId` |String| Required. The globally unique and immutable handle for your bot, such as `ContsoCustomerService`. |
+| `azureBotId` |String| Required. The globally unique and immutable handle for your bot, such as `ContosoCustomerService`. |
 | `azureBotSku` | String | Optional. The SKU of the Azure Bot resource. Allowed values: "F0" (free) and "S1" (standard). Default is "S1". |
-| `azureBotRegion` | String | Optional. The location of the Azure Bot. Allowed values: "global" and "westeurope". Default is "global". |
+| `azureBotRegion` | String | Optional. The location of the Azure Bot. Allowed values: "global", "westeurope" and "westus". Default is "global". |
 | `botEndpoint` |String| Optional. The messaging endpoint for your bot, such as `https://<appServiceName>.azurewebsites.net/api/messages`. |
 | `appType` | String | Required. How the identities of your bot resources are managed. Allowed values are: "MultiTenant", "SingleTenant", and "UserAssignedMSI". Default is "MultiTenant". |
 | `appId` |String| Required. The client ID or app ID from the identity resource you created earlier. This is the Microsoft app ID of the app service. |
