@@ -49,7 +49,7 @@ What makes bots unique is their use of mechanisms used in human-to-human communi
 Azure AI Bot Service and the Bot Framework include:
 
 - Bot Framework SDKs for developing bots in C#, JavaScript, Python, or Java.
-  (The Python and Java SDKs are being retired with final long-term support ending in November 2023.)
+  (The Java SDK is retired with final long-term support ending in November 2023.)
 - CLI tools for help with end-to-end bot development.
 - Bot Connector Service, which relays messages and events between bots and channels.
 - Azure resources for bot management and configuration.
