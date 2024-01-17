@@ -45,7 +45,7 @@ Once the app is created, add a redirect URL to your app.
 1. In the resulting pane, under **Redirect URLs**, select **Add a new Redirect URL**.
 1. In the input box, enter one of the following redirect URLs and select **Add**.
     - For a global bot, enter `https://slack.botframework.com`.
-    - For a regional bot, enter `https://europe.slack.botframework.com`.
+    - For a regional bot, enter `https://europe.slack.botframework.com` or `https://india.slack.botframework.com`.
 1. Select **Save URLs**.
 
 ### Subscribe to bot events
@@ -57,7 +57,7 @@ Subscribe to events based on the features your bot will use in Slack.
 1. In the resulting pane, toggle **Enable Events** to **On**.
 1. For **Request URL**, enter one of the following request URLs, where `{bot-name}` is the display name for your Azure Bot resource, without the braces.
     - For a global bot, enter `https://slack.botframework.com/api/Events/{bot-name}`.
-    - For a regional bot, enter `https://europe.slack.botframework.com/api/Events/{bot-name}`.
+    - For a regional bot, enter `https://europe.slack.botframework.com/api/Events/{bot-name}` or `https://india.slack.botframework.com/api/Events/{bot-name}`.
 1. Under **Subscribe to bot events**, select **Add Bot User Event**, then subscribe to events. For example:
     - `member_joined_channel`
     - `member_left_channel`
@@ -81,7 +81,7 @@ Optionally, enable interactive messages.
 1. Select **Interactivity & Shortcuts**.
 1. For **Request URL**:
     - For a global bot, enter `https://slack.botframework.com/api/Actions`.
-    - For a regional bot, enter `https://europe.slack.botframework.com/Actions`.
+    - For a regional bot, enter `https://europe.slack.botframework.com/Actions` or `https://india.slack.botframework.com/Actions`.
 1. Select **Save changes**.
 
 ### Copy your app information

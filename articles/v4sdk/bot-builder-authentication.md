@@ -239,6 +239,7 @@ You'll need your bot's app ID and password to complete this process.
     |:-|:-|
     |`https://europe.api.botframework.com`|For public-cloud bots with data residency in Europe.|
     |`https://unitedstates.api.botframework.com`|For public-cloud bots with data residency in the United States.|
+    |`https://india.api.botframework.com`|For public-cloud bots with data residency in India.|
 
 1. Update **Startup.cs**:
 

@@ -38,7 +38,7 @@ Impersonation refers to the action of an attacker who makes the bot think that t
     This feature requires the user ID to start with `dl_` as shown below.
 
     > [!TIP]
-    > For a regional bot, set `dlUrl` to "https://westeurope.directline.botframework.com/v3/directline/tokens/generate".
+    > For a regional bot, set `dlUrl` to "https://europe.directline.botframework.com/v3/directline/tokens/generate" or "https://india.directline.botframework.com/v3/directline/tokens/generate".
     > For more information about regional bots, see [Regionalization in Azure AI Bot Service](bot-builder-concept-regionalization.md).
 
     ```csharp

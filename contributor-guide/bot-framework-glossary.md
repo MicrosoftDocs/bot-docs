@@ -424,6 +424,10 @@ See [CI/CD](#cicd).
 
 Don't use. See [European Union data boundary](#european-union-data-boundary).
 
+## Indian data boundary
+
+- **Notes**: A GDPR related effort to make sure customer data stays in the Indian region.
+
 ## event
 
 - **Status**: Complicated, see notes.
