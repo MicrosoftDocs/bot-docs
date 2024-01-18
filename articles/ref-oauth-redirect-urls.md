@@ -25,6 +25,7 @@ Choose the URLs to use with your bot and identity provider based on your data re
 | None           | Public           | `https://token.botframework.com`              | `https://token.botframework.com/.auth/web/redirect`              |
 | Europe         | Public           | `https://europe.token.botframework.com`       | `https://europe.token.botframework.com/.auth/web/redirect`       |
 | United States  | Public           | `https://unitedstates.token.botframework.com` | `https://unitedstates.token.botframework.com/.auth/web/redirect` |
+| India         | Public           | `https://india.token.botframework.com`       | `https://india.token.botframework.com/.auth/web/redirect`       |
 | None           | Azure Government | `https://token.botframework.azure.us`         | `https://token.botframework.azure.us/.auth/web/redirect`         |
 
 The default OAuth and OAuth redirect URLs are `https://token.botframework.com` and `https://token.botframework.com/.auth/web/redirect`, which can be used for public-cloud bots with no data residency requirements.
