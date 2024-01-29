@@ -19,7 +19,12 @@ You can enable your client application to communicate with your bot by using Dir
 To access Direct Line API 3.0, use one of these base URIs for all API requests:
 
 - For global bots, use `https://directline.botframework.com`
-- For regional bots, use `https://europe.directline.botframework.com` or `https://india.directline.botframework.com`
+- For a regional bot, enter following uri according to the selected region:
+
+    | Region | Base URI |
+    |:-|:-|
+    | Europe| https://europe.directline.botframework.com |
+    | India | https://india.directline.botframework.com |
 
 > [!TIP]
 > A request might fail if you use the global base URI for a regional bot, as some requests could go beyond geographical boundaries.
