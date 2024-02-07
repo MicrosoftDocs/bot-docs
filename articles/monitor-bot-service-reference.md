@@ -37,12 +37,12 @@ At a minimum your service should have the following two articles:
 # Bot Service monitoring data reference
 
 <!-- Intro. Required. -->
-[!INCLUDE [horz-monitor-ref-intro](../~/articles/reusable-content/azure-monitor/horizontals/horz-monitor-ref-intro.md)]
+[!INCLUDE [horz-monitor-ref-intro](~/../articles/articles/reusable-content/azure-monitor/horizontals/horz-monitor-ref-intro.md)]
 
 See [Monitor Bot Service](monitor-bot-service.md) for details on the data you can collect for Bot Service and how to use it.
 
 <!-- ## Metrics. Required section. -->
-[!INCLUDE [horz-monitor-ref-metrics-intro](../~/articles/reusable-content/azure-monitor/horizontals/horz-monitor-ref-metrics-intro.md)]
+[!INCLUDE [horz-monitor-ref-metrics-intro](~/../articles/articles/reusable-content/azure-monitor/horizontals/horz-monitor-ref-metrics-intro.md)]
 
 <!-- Repeat the following section for each resource type/namespace in your service. -->
 ### Supported metrics for microsoft.botservice/botservices
@@ -55,8 +55,8 @@ The following table lists the metrics available for the microsoft.botservice/bot
 <!-- Use either the LINK or INCLUDE option and remove the other option.
 - LINK to metrics page. Example: - [Microsoft.Storage/storageAccounts/blobServices](/azure/azure-monitor/reference/supported-metrics/microsoft-storage-storageaccounts-blobservices-metrics)
 - OR INCLUDE metrics table, starting with the metrics tableheader: -->
-[!INCLUDE [horz-monitor-ref-metrics-tableheader](../~/articles/reusable-content/azure-monitor/horizontals/horz-monitor-ref-metrics-tableheader.md)]
-[!INCLUDE [microsoft.botservice/botservices](../~/azure-reference-other-repo/azure-monitor-ref/supported-metrics/includes/microsoft-botservice-botservices-metrics-include.md)]
+[!INCLUDE [horz-monitor-ref-metrics-tableheader](~/../articles/articles/reusable-content/azure-monitor/horizontals/horz-monitor-ref-metrics-tableheader.md)]
+[!INCLUDE [microsoft.botservice/botservices](~/../articles/azure-reference-other-repo/azure-monitor-ref/supported-metrics/includes/microsoft-botservice-botservices-metrics-include.md)]
 
 ### Supported metrics for Microsoft.BotService/botServices/channels
 The following table lists the metrics available for the Microsoft.BotService/botServices/channels resource type.
