@@ -70,7 +70,7 @@
     href: v4sdk/bot-builder-basics-teams.md
   - name: Regionalization in Azure AI Bot Service
     href: v4sdk/bot-builder-concept-regionalization.md
-  - name: Monitor Azure AI Bot Service
+  - name: Monitor
     href: monitor-bot-service.md
   - name: Skills
     items:
@@ -304,7 +304,7 @@
       href: /java/api/?view=botbuilder-java&preserve-view=true
     - name: Python SDK v4
       href: /python/api/?view=botbuilder-py-latest&preserve-view=true
-  - name: Monitoring data
+  - name: Monitoring data reference
     href: monitor-bot-service-reference.md
   - name: REST API reference
     items:
