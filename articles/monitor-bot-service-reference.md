@@ -1,7 +1,7 @@
 ---
 title: Monitoring data reference for Bot Service
 description: This article contains important reference material you need when you monitor Bot Service.
-ms.date: mm/dd/yyyy
+ms.date: 02/06/2024
 ms.custom: horz-monitor
 ms.topic: reference
 author: JonathanFingold

@@ -36,7 +36,7 @@ At a minimum your service should have the following two articles:
 # Monitor Bot Service
 
 <!-- Intro. Required. -->
-[!INCLUDE [horz-monitor-intro](~/docs/reusable-content/azure-monitor/horizontals/horz-monitor-intro.md)]
+[!INCLUDE [horz-monitor-intro](~/articles/reusable-content/azure-monitor/horizontals/horz-monitor-intro.md)]
 
 <!-- ## Insights. Optional section. If your service has insights, add the following include and information. -->
 [!INCLUDE [horz-monitor-insights](~/articles/reusable-content/azure-monitor/horizontals/horz-monitor-insights.md)]
