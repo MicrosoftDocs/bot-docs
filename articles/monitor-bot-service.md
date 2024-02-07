@@ -36,12 +36,12 @@ At a minimum your service should have the following two articles:
 # Monitor Bot Service
 
 <!-- Intro. Required. -->
-[!INCLUDE [horz-monitor-intro](~/articles/reusable-content/azure-monitor/horizontals/horz-monitor-intro.md)]
+[!INCLUDE [horz-monitor-intro](~/docs/reusable-content/azure-monitor/horizontals/horz-monitor-intro.md)]
 
 <!-- ## Insights. Optional section. If your service has insights, add the following include and information. -->
 [!INCLUDE [horz-monitor-insights](~/articles/reusable-content/azure-monitor/horizontals/horz-monitor-insights.md)]
 <!-- Insights service-specific information. Add brief information about what your Azure Monitor insights provide here. You can refer to another article that gives details or add a screenshot. -->
-Telemetry logging enables bot applications to send event data to telemetry services such as Application Insights. Telemetry offers insights into your bot by showing which features are used the most, detects unwanted behavior, and offers visibility into availability, performance, and usage. For more information, see [Add telemetry to your bot](bot-builder-telemetry.md).
+Telemetry logging enables bot applications to send event data to telemetry services such as Application Insights. Telemetry offers insights into your bot by showing which features are used the most, detects unwanted behavior, and offers visibility into availability, performance, and usage. For more information, see [Add telemetry to your bot](v4sdk/bot-builder-telemetry.md).
 
 <!-- ## Resource types. Required section. -->
 [!INCLUDE [horz-monitor-resource-types](~/articles/reusable-content/azure-monitor/horizontals/horz-monitor-resource-types.md)]
