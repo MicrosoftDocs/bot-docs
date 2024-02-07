@@ -58,42 +58,12 @@ The following table lists the metrics available for the microsoft.botservice/bot
 [!INCLUDE [horz-monitor-ref-metrics-tableheader](~/../articles/reusable-content/azure-monitor/horizontals/horz-monitor-ref-metrics-tableheader.md)]
 [!INCLUDE [microsoft.botservice/botservices](~/../azure-reference-other-repo/azure-monitor-ref/supported-metrics/includes/microsoft-botservice-botservices-metrics-include.md)]
 
-### Supported metrics for Microsoft.BotService/botServices/channels
-The following table lists the metrics available for the Microsoft.BotService/botServices/channels resource type.
-[!INCLUDE [horz-monitor-ref-metrics-tableheader](~/../articles/reusable-content/azure-monitor/horizontals/horz-monitor-ref-metrics-tableheader.md)]
-[!INCLUDE [microsoft.botservice/botservices/channels](~/../azure-reference-other-repo/azure-monitor-ref/supported-metrics/includes/microsoft-botservice-botservices-channels-metrics-include.md)]
-
-### Supported metrics for Microsoft.BotService/botServices/connections
-The following table lists the metrics available for the Microsoft.BotService/botServices/connections resource type.
-[!INCLUDE [horz-monitor-ref-metrics-tableheader](~/../articles/reusable-content/azure-monitor/horizontals/horz-monitor-ref-metrics-tableheader.md)]
-[!INCLUDE [microsoft.botservice/botservices/connections](~/../azure-reference-other-repo/azure-monitor-ref/supported-metrics/includes/microsoft-botservice-botservices-connections-metrics-include.md)]
-
-### Supported metrics for Microsoft.BotService/checknameavailability
-The following table lists the metrics available for the Microsoft.BotService/botServices/channels resource type.
-[!INCLUDE [horz-monitor-ref-metrics-tableheader](~/../articles/reusable-content/azure-monitor/horizontals/horz-monitor-ref-metrics-tableheader.md)]
-[!INCLUDE [microsoft.botservice/checknameavailability](~/../azure-reference-other-repo/azure-monitor-ref/supported-metrics/includes/microsoft-botservice-checknameavailability-metrics-include.md)]
-
-### Supported metrics for Microsoft.BotService/hostsettings
-The following table lists the metrics available for the Microsoft.BotService/botServices/channels resource type.
-[!INCLUDE [horz-monitor-ref-metrics-tableheader](~/../articles/reusable-content/azure-monitor/horizontals/horz-monitor-ref-metrics-tableheader.md)]
-[!INCLUDE [microsoft.botservice/hostsettings](~/../azure-reference-other-repo/azure-monitor-ref/supported-metrics/includes/microsoft-botservice-hostsettings-metrics-include.md)]
-
-### Supported metrics for Microsoft.BotService/listauthserviceproviders
-The following table lists the metrics available for the Microsoft.BotService/listauthserviceproviders resource type.
-[!INCLUDE [horz-monitor-ref-metrics-tableheader](~/../articles/reusable-content/azure-monitor/horizontals/horz-monitor-ref-metrics-tableheader.md)]
-[!INCLUDE [microsoft.botservice/listauthserviceproviders](~/../azure-reference-other-repo/azure-monitor-ref/supported-metrics/includes/microsoft-botservice-listauthserviceproviders-metrics-include.md)]
-
-### Supported metrics for Microsoft.BotService/listqnamakerendpointkeys
-The following table lists the metrics available for the Microsoft.BotService/listqnamakerendpointkeys resource type.
-[!INCLUDE [horz-monitor-ref-metrics-tableheader](~/../articles/reusable-content/azure-monitor/horizontals/horz-monitor-ref-metrics-tableheader.md)]
-[!INCLUDE [microsoft.botservice/listqnamakerendpointkeys](~/../azure-reference-other-repo/azure-monitor-ref/supported-metrics/includes/microsoft-botservice-listqnamakerendpointkeys-metrics-include.md)]
-
 <!-- ## Metric dimensions. Required section. -->
 [!INCLUDE [horz-monitor-ref-metrics-dimensions-intro](~/../articles/reusable-content/azure-monitor/horizontals/horz-monitor-ref-metrics-dimensions-intro.md)]
 <!-- Use one of the following includes, depending on whether you have metrics with dimensions.
 - If you have metrics with dimensions, use the following include and list the metrics with dimensions after the include. For an example, see https://learn.microsoft.com/azure/storage/common/monitor-storage-reference#metrics-dimensions. Questions: email azmondocs@microsoft.com. -->
 [!INCLUDE [horz-monitor-ref-metrics-dimensions](~/../articles/reusable-content/azure-monitor/horizontals/horz-monitor-ref-metrics-dimensions.md)]
-For the dimensions associated with Bot Service metrics, see the **Dimensions** columns in the preceding metrics tables.
+The **Dimensions** columns in the preceding metrics table lists the dimensions associated with Bot Service metrics.
 
 <!-- ## Resource logs. Required section. -->
 [!INCLUDE [horz-monitor-ref-resource-logs](~/../articles/reusable-content/azure-monitor/horizontals/horz-monitor-ref-resource-logs.md)]
@@ -123,7 +93,7 @@ Microsoft.Storage/storageAccounts
 <!-- ## Activity log. Required section. -->
 [!INCLUDE [horz-monitor-ref-activity-log](~/../articles/reusable-content/azure-monitor/horizontals/horz-monitor-ref-activity-log.md)]
 <!-- Refer to https://learn.microsoft.com/azure/role-based-access-control/resource-provider-operations and link to the possible operations for your service, using the format - [<Namespace> resource provider operations](/azure/role-based-access-control/resource-provider-operations#<namespace>). -->
-- [Microsoft.BotService resource provider operations](/azure/role-based-access-control/resource-provider-operations#microsoftbotservice).
+- [Microsoft.BotService resource provider operations](/azure/role-based-access-control/resource-provider-operations#microsoftbotservice)
 
 <!-- ## Other schemas. Optional section. Please keep heading in this order. If your service uses other schemas, add the following include and information. 
 [!INCLUDE [horz-monitor-ref-other-schemas](~/../articles/reusable-content/azure-monitor/horizontals/horz-monitor-ref-other-schemas.md)]
