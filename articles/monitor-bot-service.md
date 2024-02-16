@@ -4,7 +4,7 @@ description: Start here to learn how to monitor Azure AI Bot Service.
 ms.date: 02/15/2024
 ms.custom: horz-monitor
 ms.topic: conceptual
-author: JonathanFingold
+author: iaanw
 ms.author: iawilt
 ms.service: bot-service
 ---
@@ -252,7 +252,7 @@ The following table lists common and recommended alert rules for Bot Service.
 ## Related content
 <!-- You can change the wording and add more links if useful. -->
 
-- For more information about implementing telemetry in your bot using Application Insights, see [Add telemetry to your bot](v4sdk/bot-builder-telemetry.md)
+- For more information about implementing telemetry in your bot using Application Insights, see [Add telemetry to your bot](v4sdk/bot-builder-telemetry.md).
 - For a collection of Kusto query examples for analyzing bot behavior, see [Analyze your bot's telemetry data](v4sdk/bot-builder-telemetry-analytics-queries.md).
 - For a reference of the metrics, logs, and other important values created for Bot Service, see [Bot Service monitoring data reference](monitor-bot-service-reference.md).
 - For general details on monitoring Azure resources, see [Monitoring Azure resources with Azure Monitor](/azure/azure-monitor/essentials/monitor-azure-resource).
