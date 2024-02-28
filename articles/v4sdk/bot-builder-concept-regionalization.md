@@ -17,11 +17,11 @@ monikerRange: 'azure-bot-service-4.0'
 
 Azure AI Bot Service is a global Azure service that allows bot developers in all regions to register their bot and connect it to different channels. This also lets developers meet compliance obligations, especially following the [Schrems II decision](https://blogs.microsoft.com/eupolicy/2021/05/06/eu-data-boundary/).
 
-Use an Azure Bot resource to register a bot with a regional Azure AI Bot Service. Adding regional settings to a bot ensures user personal data is preserved, stored, and processed within certain geographic boundaries (like EU boundaries). This article explains the areas of bot development impacted by regionalization and where to update settings to maintain compliance.
+Use an Azure Bot resource to register a bot with a regional Azure AI Bot Service. Adding regional settings to a bot ensures user personal data is preserved, stored, and processed within certain geographic boundaries (like EU boundaries, Indian boundaries). This article explains the areas of bot development impacted by regionalization and where to update settings to maintain compliance.
 
 ## Deploy locally developed regional Azure bots
 
-Your bot can be hosted anywhere, even if you have a regional Azure Bot resource. To maintain complete end-to-end data residency, however, you should host your bot code in the same locality as your Azure Bot resource. For example, developers hosting bots in the European Union will want to ensure their bots are deployed in a region within EU geographical boundaries.
+Your bot can be hosted anywhere, even if you have a regional Azure Bot resource. To maintain complete end-to-end data residency, however, you should host your bot code in the same locality as your Azure Bot resource. Currently, regional bots are supported in Europen and India. For example, developers hosting bots in the European Union will want to ensure their bots are deployed in a region within EU geographical boundaries.
 
 For more information about deploying regionalized bots, see [Provision and publish a bot](../provision-and-publish-a-bot.md).
 

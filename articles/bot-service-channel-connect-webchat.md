@@ -59,7 +59,12 @@ To exchange your secret for a token and generate the embed:
 
 1. Issue a **GET** request to the token exchange URL and pass your web chat secret via the `Authorization` header. The `Authorization` header uses the `BotConnector` scheme and includes your secret.
     - For a global bot, the token exchange URL is `https://webchat.botframework.com/api/tokens`.
-    - For a regional bot, the token URL is `https://europe.webchat.botframework.com/api/tokens` or `https://india.webchat.botframework.com/api/tokens`.
+    - For a regional bot, enter following url according to the selected region:
+
+    | Region | Token Exchange URL |
+    |:-|:-|
+    | Europe| https://europe.webchat.botframework.com/api/tokens |
+    | India | https://india.webchat.botframework.com/api/tokens |
 
 1. The response to your **GET** request will contain the token (surrounded with quotation marks) that can be used to start a conversation by rendering the Web Chat control. A token is valid for one conversation only; to start another conversation, you need to generate a new token.
 
@@ -80,7 +85,11 @@ Authorization: BotConnector YOUR_SECRET_HERE
 For a regional bot:
 
 ```http
-requestGET https://europe.webchat.botframework.com/api/tokens
+requestGET 
+    ## Europe region
+    https://europe.webchat.botframework.com/api/tokens
+    ## India region
+    https://india.webchat.botframework.com/api/tokens
 Authorization: BotConnector YOUR_SECRET_HERE
 ```
 
