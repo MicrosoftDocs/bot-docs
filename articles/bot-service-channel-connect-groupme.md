@@ -30,7 +30,12 @@ You can configure your bot to communicate with people through GroupMe. This arti
     1. Enter a name for your application.
     1. For the **Callback URL**:
         - For a global bot, enter `https://groupme.botframework.com/Home/Login`.
-        - For a regional bot, enter `https://europe.groupme.botframework.com/Home/Login` or `https://india.groupme.botframework.com/Home/Login`.
+        - For a regional bot, enter following url according to the selected region:
+
+        | Region | Callback URL |
+        |:-|:-|
+        | Europe| https://europe.groupme.botframework.com/Home/Login |
+        | India | https://india.groupme.botframework.com/Home/Login |
     1. Enter the rest of the information requested.
     1. Agree to GroupMe's terms of use and branding standards.
     1. Select **Save** to complete creation of the app.

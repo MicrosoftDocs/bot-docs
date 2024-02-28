@@ -127,10 +127,6 @@ az group create --name "<group>" --location "<region>"
 | name     | The name of the resource group to create.         |
 | location | The region in which to create the resource group. |
 
-> [!TIP]
-> Currently, regionalized bots are available for Europe and India.
-> For a regionalized bot, use "--location westeurope" for Europe and "--location centralindial" for India.
-
 For more information, see [How to manage Azure resource groups with the Azure CLI](/cli/azure/manage-azure-groups-azure-cli).
 
 ## Create an identity resource

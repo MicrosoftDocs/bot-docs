@@ -30,7 +30,12 @@ You can configure your bot to communicate with people using the Twilio (SMS) clo
     - Under **Voice Configuration**, leave the **Request URL** empty
     - Under **Messaging Configuration**, set the **Request URL**:
       - For a global bot, enter `https://sms.botframework.com/api/sms`.
-      - For a regional bot, enter `https://europe.sms.botframework.com/api/sms` or `https://india.sms.botframework.com/api/sms`.
+      - For a regional bot, enter following url according to the selected region:
+
+      | Region | Request URL |
+      |:-|:-|
+      | Europe| https://europe.sms.botframework.com/api/sms |
+      | India | https://india.sms.botframework.com/api/sms |
 
 ### Select or add a phone number
 
