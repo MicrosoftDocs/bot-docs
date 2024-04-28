@@ -10,7 +10,7 @@ ms.reviewer: yiba
 manager: iawilt
 ms.custom: publication, authoring, ceX, bap-template
 ms.collection: virtual-agent
-ms.service: power-virtual-agents
+ms.service: copilot-studio
 ---
 
 # Connect a Bot to Microsoft 365
