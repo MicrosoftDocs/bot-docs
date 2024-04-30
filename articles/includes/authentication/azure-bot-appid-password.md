@@ -16,7 +16,8 @@ Follow these steps to add identity information to your bot's configuration file.
 The file differs depending on the programming language you use to create the bot.
 
 > [!IMPORTANT]
-> The Java and Python versions of the Bot Framework SDK only support multi-tenant bots.
+> The Java version of the Bot Framework SDK only supports multi-tenant bots.
+> The Python version of the Bot Framework SDK supports multi-tenant and single-tenant bots.
 > The C# and JavaScript versions support all three application types for managing the bot's identity.
 
 | Language   | File name              | Notes                                                                                                               |
@@ -24,7 +25,7 @@ The file differs depending on the programming language you use to create the bot
 | C#         | appsettings.json       | Supports all three application types for managing your bot's identity.                                              |
 | JavaScript | .env                   | Supports all three application types for managing your bot's identity.                                              |
 | Java       | application.properties | Only supports multi-tenant bots.                                                                                    |
-| Python     | config.py              | Only supports multi-tenant bots. Provide the identity properties as arguments to the `os.environ.get` method calls. |
+| Python     | config.py              | Supports multi-tenant and single-tenant bots. Provide the properties as arguments to the `os.environ.get` method calls. |
 
 The identity information you need to add depends on the bot's application type.
 Provide the following values in your configuration file.
@@ -42,7 +43,7 @@ Only available for C# and JavaScript bots.
 
 #### [Single-tenant](#tab/singletenant)
 
-Only available for C# and JavaScript bots.
+Only available for C#, JavaScript, and Python bots.
 
 | Property               | Value                    |
 |:-----------------------|:-------------------------|

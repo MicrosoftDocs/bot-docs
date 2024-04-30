@@ -9,7 +9,7 @@ ms.custom: devx-track-azurecli
 ms.date: 08/29/2022
 ---
 
-### [C# / JavaScript](#tab/csharp+javascript)
+### [C# / JavaScript / Python](#tab/csharp+javascript)
 
 For Azure CLI 2.39.0 or later, use the following commands to create your app registration and set its password. On success, these commands generate JSON output.
 
@@ -35,7 +35,7 @@ For Azure CLI 2.39.0 or later, use the following commands to create your app reg
 
 For more information about `az ad app`, see the [command reference](/cli/azure/ad/app). For more information about the `sign-in-audience` parameter, see [sigInAudience values](/graph/api/resources/application#signinaudience-values).
 
-### [Java / Python](#tab/java+python)
+### [Java](#tab/java+python)
 
 For Azure CLI 2.36.0 or earlier, use the following command to create your app registration and set its password. On success, this command generates JSON output.
 
