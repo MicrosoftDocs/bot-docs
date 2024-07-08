@@ -7,10 +7,6 @@ The `messageBack` card action has a more generalized meaning than the other card
 | call         | Initiates a phone call.                                                      | Destination for the phone call in this format: `tel:123123123123`. |
 | downloadFile | Downloads a file.                                                            | The URL of the file to download.                                   |
 | imBack       | Sends a message to the bot, and posts a visible response in the chat.        | Text of the message to send.                                       |
-----------|:-----------------------------------------------------------------------------|:-------------------------------------------------------------------|
-| call         | Initiates a phone call.                                                      | Destination for the phone call in this format: `tel:123123123123`. |
-| downloadFile | Downloads a file.                                                            | The URL of the file to download.                                   |
-| imBack       | Sends a message to the bot, and posts a visible response in the chat.        | Text of the message to send.                                       |
 | messageBack  | Represents a text response to be sent via the chat system.                   | An optional programmatic value to include in generated messages.   |
 | openUrl      | Opens a URL in the built-in browser.                                         | The URL to open.                                                   |
 | playAudio    | Plays audio.                                                                 | The URL of the audio to play.                                      |
