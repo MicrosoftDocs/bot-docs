@@ -9,6 +9,8 @@ ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 01/04/2023
+ms.custom:
+  - evergreen
 ---
 
 # Connect a bot to Web Chat

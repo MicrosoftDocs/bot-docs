@@ -6,6 +6,8 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: include
 ms.date: 03/03/2022
+ms.custom:
+  - evergreen
 ---
 
 Prepare your project files before you deploy your bot.

@@ -9,6 +9,8 @@ ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: reference
 ms.date: 11/10/2022
+ms.custom:
+  - evergreen
 ---
 
 # Channels reference

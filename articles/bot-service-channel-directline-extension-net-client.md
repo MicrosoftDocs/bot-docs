@@ -8,6 +8,8 @@ ms.reviewer: Daniel.Evans
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 03/30/2022
+ms.custom:
+  - evergreen
 ---
 
 # Create .NET Client to Connect to Direct Line App Service extension

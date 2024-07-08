@@ -7,7 +7,9 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: conceptual
-ms.custom: abs-meta-21q1
+ms.custom:
+  - abs-meta-21q1
+  - evergreen
 ms.date: 09/01/2021
 ---
 

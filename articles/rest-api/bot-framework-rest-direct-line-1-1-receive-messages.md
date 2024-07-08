@@ -8,6 +8,8 @@ ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
 ms.date: 11/01/2021
+ms.custom:
+  - evergreen
 ---
 
 # Receive messages from the bot in Direct Line API 1.1

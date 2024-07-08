@@ -8,7 +8,10 @@ ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 10/26/2022
-ms.custom: template-how-to, devx-track-azurecli
+ms.custom:
+  - template-how-to
+  - devx-track-azurecli
+  - evergreen
 ---
 
 # Provision and publish a bot

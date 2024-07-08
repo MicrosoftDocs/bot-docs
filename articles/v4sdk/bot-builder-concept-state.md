@@ -10,6 +10,8 @@ ms.topic: conceptual
 ms.service: bot-service
 ms.date: 08/01/2022
 monikerRange: 'azure-bot-service-4.0'
+ms.custom:
+  - evergreen
 ---
 
 # Managing state

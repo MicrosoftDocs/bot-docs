@@ -10,6 +10,8 @@ ms.topic: reference
 ms.service: bot-service
 ms.date: 11/02/2021
 monikerRange: 'azure-bot-service-4.0'
+ms.custom:
+  - evergreen
 ---
 
 # Implement a skill for use in Power Virtual Agents

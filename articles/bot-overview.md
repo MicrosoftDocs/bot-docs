@@ -8,7 +8,10 @@ ms.reviewer: micchow
 ms.topic: overview
 ms.service: bot-service
 ms.date: 05/11/2023
-ms.custom: mode-api, tab-zone-seo
+ms.custom:
+  - mode-api
+  - tab-zone-seo
+  - evergreen
 ---
 
 # Choose the right chatbot solution for your use case

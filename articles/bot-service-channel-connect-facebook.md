@@ -9,6 +9,8 @@ ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 01/31/2023
+ms.custom:
+  - evergreen
 ---
 
 # Connect a bot to Facebook

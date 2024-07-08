@@ -8,6 +8,8 @@ ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 02/10/2023
+ms.custom:
+  - evergreen
 ---
 
 # Authentication with the Bot Connector API

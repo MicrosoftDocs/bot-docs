@@ -7,7 +7,10 @@ manager: leeclontz
 ms.topic: how-to
 ms.service: bot-service
 ms.date: 02/23/2021
-ms.custom: devx-track-azurepowershell, modeapi
+ms.custom:
+  - devx-track-azurepowershell
+  - modeapi
+  - evergreen
 ---
 
 # Create and publish a bot with Azure PowerShell

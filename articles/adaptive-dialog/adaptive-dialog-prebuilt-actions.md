@@ -10,6 +10,8 @@ ms.service: bot-service
 ms.topic: reference
 ms.date: 09/01/2022
 monikerRange: 'azure-bot-service-4.0'
+ms.custom:
+  - evergreen
 ---
 
 # Actions in adaptive dialogs - reference guide

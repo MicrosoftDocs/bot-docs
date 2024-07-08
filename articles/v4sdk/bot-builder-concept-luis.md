@@ -10,6 +10,8 @@ ms.topic: conceptual
 ms.service: bot-service
 ms.date: 01/04/2023
 monikerRange: 'azure-bot-service-4.0'
+ms.custom:
+  - evergreen
 ---
 
 # Natural language understanding

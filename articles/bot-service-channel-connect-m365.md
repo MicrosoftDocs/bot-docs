@@ -8,7 +8,12 @@ author: KendalBond007
 ms.author: v-bondkendal
 ms.reviewer: yiba
 manager: iawilt
-ms.custom: publication, authoring, ceX, bap-template
+ms.custom:
+  - publication
+  - authoring
+  - ceX
+  - bap-template
+  - evergreen
 ms.collection: virtual-agent
 ms.service: copilot-studio
 ---

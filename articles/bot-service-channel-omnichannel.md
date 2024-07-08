@@ -8,7 +8,9 @@ ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 12/27/2022
-ms.custom: template-how-to
+ms.custom:
+  - template-how-to
+  - evergreen
 ---
 
 # Connect a bot to the Omnichannel channel

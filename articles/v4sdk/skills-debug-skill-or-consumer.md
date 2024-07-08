@@ -10,6 +10,8 @@ ms.topic: how-to
 ms.service: bot-service
 ms.date: 11/02/2021
 monikerRange: 'azure-bot-service-4.0'
+ms.custom:
+  - evergreen
 ---
 
 # Debug a skill or skill consumer

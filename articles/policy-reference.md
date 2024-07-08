@@ -8,7 +8,9 @@ ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: reference
 ms.date: 04/21/2021
-ms.custom: subject-policy-reference
+ms.custom:
+  - subject-policy-reference
+  - evergreen
 ---
 # Azure Policy built-in definitions for Azure AI Bot Service
 

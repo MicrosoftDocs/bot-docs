@@ -8,6 +8,8 @@ ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: troubleshooting
 ms.date: 10/19/2021
+ms.custom:
+  - evergreen
 ---
 
 # Troubleshooting Bot Framework authentication

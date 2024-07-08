@@ -9,6 +9,8 @@ ms.reviewer: yiba
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 07/01/2022
+ms.custom:
+  - evergreen
 ---
 
 # Configure network isolation

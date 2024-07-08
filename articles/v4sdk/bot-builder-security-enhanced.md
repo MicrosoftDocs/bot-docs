@@ -8,6 +8,8 @@ ms.reviewer: micchow
 ms.topic: conceptual
 ms.service: bot-service
 ms.date: 08/18/2022
+ms.custom:
+  - evergreen
 ---
 
 # Direct Line enhanced authentication

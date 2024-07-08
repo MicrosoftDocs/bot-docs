@@ -8,6 +8,8 @@ ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: reference
 ms.date: 09/27/2021
+ms.custom:
+  - evergreen
 ---
 
 # End a conversation in Direct Line API 3.0

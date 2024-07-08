@@ -6,6 +6,8 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: include
 ms.date: 11/19/2021
+ms.custom:
+  - evergreen
 ---
 
 Some types of skill consumers are not able to use some types of skill bots.

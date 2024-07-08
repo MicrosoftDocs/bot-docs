@@ -8,6 +8,8 @@ ms.reviewer: micchow
 ms.topic: quickstart
 ms.service: bot-service
 ms.date: 02/10/2023
+ms.custom:
+  - evergreen
 ---
 
 # Create a bot with the Bot Connector service with the Bot Connector API

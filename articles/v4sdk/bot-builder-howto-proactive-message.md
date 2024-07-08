@@ -8,7 +8,9 @@ ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
 ms.date: 10/26/2022
-ms.custom: abs-meta-21q1
+ms.custom:
+  - abs-meta-21q1
+  - evergreen
 monikerRange: 'azure-bot-service-4.0'
 ---
 

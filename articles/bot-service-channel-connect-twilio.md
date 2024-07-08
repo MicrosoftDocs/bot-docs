@@ -9,6 +9,8 @@ ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 09/12/2022
+ms.custom:
+  - evergreen
 ---
 
 # Connect a bot to Twilio (SMS)

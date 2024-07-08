@@ -9,6 +9,8 @@ ms.reviewer: Daniel.Evans
 ms.service: bot-service
 ms.topic: conceptual
 ms.date: 11/01/2022
+ms.custom:
+  - evergreen
 ---
 
 # Direct Line App Service extension

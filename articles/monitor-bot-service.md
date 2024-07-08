@@ -2,7 +2,9 @@
 title: Monitor Azure AI Bot Service
 description: Start here to learn how to monitor Azure AI Bot Service.
 ms.date: 02/27/2024
-ms.custom: horz-monitor
+ms.custom:
+  - horz-monitor
+  - evergreen
 ms.topic: conceptual
 author: iaanw
 ms.author: iawilt

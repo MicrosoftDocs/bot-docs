@@ -9,6 +9,8 @@ ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
 ms.date: 10/11/2022
+ms.custom:
+  - evergreen
 ---
 
 # Analyze your bot's telemetry data

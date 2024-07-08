@@ -10,6 +10,8 @@ ms.service: bot-service
 ms.topic: how-to
 ms.date: 12/07/2022
 monikerRange: 'azure-bot-service-4.0'
+ms.custom:
+  - evergreen
 ---
 
 # Add natural language understanding to your bot

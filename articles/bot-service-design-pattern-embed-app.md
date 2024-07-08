@@ -8,6 +8,8 @@ ms.reviewer: micchow
 ms.topic: conceptual
 ms.service: bot-service
 ms.date: 07/26/2022
+ms.custom:
+  - evergreen
 ---
 
 # Embed a bot in an app

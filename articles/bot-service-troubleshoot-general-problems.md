@@ -8,7 +8,9 @@ ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: troubleshooting
 ms.date: 02/20/2020
-ms.custom: abs-meta-21q1
+ms.custom:
+  - abs-meta-21q1
+  - evergreen
 ---
 
 # General troubleshooting for Azure AI Bot Service bots

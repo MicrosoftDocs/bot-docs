@@ -8,6 +8,8 @@ ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: conceptual
 ms.date: 06/06/2022
+ms.custom:
+  - evergreen
 ---
 
 # Azure AI Bot Service encryption for data at rest

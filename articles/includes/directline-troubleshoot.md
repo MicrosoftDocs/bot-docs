@@ -6,6 +6,8 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: include
 ms.date: 03/30/2022
+ms.custom:
+  - evergreen
 ---
 
 - If the **ib** and **ob** values displayed by the **.bot endpoint** are false, the bot and the Direct Line App Service extension are unable to connect to each other.

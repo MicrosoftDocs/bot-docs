@@ -8,7 +8,9 @@ ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 05/23/2022
-ms.custom: template-how-to
+ms.custom:
+  - template-how-to
+  - evergreen
 ---
 
 # Configure Bot Framework bots for US Government customers

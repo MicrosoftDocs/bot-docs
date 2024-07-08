@@ -8,7 +8,11 @@ ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: quickstart
 ms.date: 10/26/2022
-ms.custom: mode-api, tab-zone-seo, abs-meta-21q1
+ms.custom:
+  - mode-api
+  - tab-zone-seo
+  - abs-meta-21q1
+  - evergreen
 ---
 
 # Create a bot with the Bot Framework SDK

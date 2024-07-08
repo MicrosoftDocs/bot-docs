@@ -9,6 +9,8 @@ ms.reviewer: Daniel.Evans
 ms.topic: conceptual
 ms.service: bot-service
 ms.date: 03/30/2022
+ms.custom:
+  - evergreen
 ---
 
 # Connect a bot to Direct Line Speech
