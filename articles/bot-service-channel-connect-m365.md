@@ -5,7 +5,7 @@ keywords: "Publish, channel, M365"
 ms.date: 03/30/2023
 ms.topic: how-to
 author: KendalBond007
-ms.author: jim.lewallen
+ms.author: jameslew
 ms.reviewer: yiba
 manager: iawilt
 ms.custom:
