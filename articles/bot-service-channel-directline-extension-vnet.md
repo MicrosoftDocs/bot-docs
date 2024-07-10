@@ -9,6 +9,8 @@ ms.service: bot-service
 ms.topic: how-to
 ms.date: 09/01/2019
 ms-custom: abs-meta-21q1 
+ms.custom:
+  - evergreen
 ---
 
 # Use Direct Line App Service extension within a virtual network

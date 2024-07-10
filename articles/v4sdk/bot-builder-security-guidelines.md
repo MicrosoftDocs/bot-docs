@@ -8,6 +8,8 @@ ms.reviewer: micchow
 ms.topic: conceptual
 ms.service: bot-service
 ms.date: 11/01/2021
+ms.custom:
+  - evergreen
 ---
 
 # Bot Framework security guidelines
@@ -105,7 +107,7 @@ When you use the [Web Chat](~/bot-service-channel-connect-webchat.md) control yo
 
 - [User authentication](~/v4sdk/bot-builder-concept-authentication.md)
 - [Add authentication to your bot via Azure AI Bot Service](~/v4sdk/bot-builder-authentication.md)
-- [Enable security and test on localhost](~/bot-service-troubleshoot-authentication-problems.md#step-3-enable-security-and-test-on-localhost-)
+- [Enable security and test on localhost](~/bot-service-troubleshoot-authentication-problems.md#step-3-enable-security-and-test-on-localhost)
 - [Secrets and tokens](~/rest-api/bot-framework-rest-direct-line-3-0-authentication.md#secrets-and-tokens)
 - [Authentication technologies](~/rest-api/bot-framework-rest-connector-authentication.md#authentication-technologies)
 - [Enhanced Direct Line Authentication Features](https://blog.botframework.com/2018/09/25/enhanced-direct-line-authentication-features)

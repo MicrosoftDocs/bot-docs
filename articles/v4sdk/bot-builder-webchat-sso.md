@@ -7,7 +7,9 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: conceptual
-ms.custom: abs-meta-21q1
+ms.custom:
+  - abs-meta-21q1
+  - evergreen
 ms.date: 09/01/2021
 ---
 
@@ -15,7 +17,7 @@ ms.date: 09/01/2021
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-Single sign-on (SSO) allows a client, such as a Web Chat control, to communicate with a bot on behalf of the user. Currently, only the [Microsoft Entra ID](bot-builder-concept-identity-providers.md#azure-active-directory-identity-provider) identity provider is supported.
+Single sign-on (SSO) allows a client, such as a Web Chat control, to communicate with a bot on behalf of the user. Currently, only the [Microsoft Entra ID](bot-builder-concept-identity-providers.md#microsoft-entra-id-identity-provider) identity provider is supported.
 
 Typically, a Web Chat is embedded in a website page. When the user signs in to the website, the Web Chat invokes a bot on behalf of the user. The website client's token, based on the user's credentials, is exchanged for a different one to access the bot. In this way, the user doesn't have to sign in twice; the first time on the website, and the second time on the bot, hence the term SSO.
 

@@ -8,7 +8,9 @@ ms.reviewer: micchow
 ms.topic: conceptual
 ms.service: bot-service
 ms.date: 11/01/2021
-ms.custom: abs-meta-21q1
+ms.custom:
+  - abs-meta-21q1
+  - evergreen
 ---
 
 # Create messages with the Bot Connector API

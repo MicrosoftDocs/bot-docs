@@ -5,10 +5,15 @@ keywords: "Publish, channel, M365"
 ms.date: 03/30/2023
 ms.topic: how-to
 author: KendalBond007
-ms.author: v-bondkendal
+ms.author: jameslew
 ms.reviewer: yiba
 manager: iawilt
-ms.custom: publication, authoring, ceX, bap-template
+ms.custom:
+  - publication
+  - authoring
+  - ceX
+  - bap-template
+  - evergreen
 ms.collection: virtual-agent
 ms.service: copilot-studio
 ---

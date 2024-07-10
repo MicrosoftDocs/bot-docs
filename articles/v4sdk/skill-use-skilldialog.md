@@ -10,6 +10,8 @@ ms.service: bot-service
 ms.topic: how-to
 ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
+ms.custom:
+  - evergreen
 ---
 
 # Use a dialog to consume a skill

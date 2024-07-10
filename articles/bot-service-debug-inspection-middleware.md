@@ -10,6 +10,8 @@ ms.service: bot-service
 ms.topic: how-to
 ms.date: 10/26/2022
 
+ms.custom:
+  - evergreen
 ---
 
 # Debug a bot with inspection middleware

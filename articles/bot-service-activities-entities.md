@@ -9,7 +9,9 @@ ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: reference
 ms.date: 10/10/2022
-ms.custom: code-snippets
+ms.custom:
+  - code-snippets
+  - evergreen
 ---
 
 # Entities and activity types
@@ -59,7 +61,6 @@ entities.Add(entity);
 > When attempting to determine user intent, the  bot may want to ignore that portion
 > of the message where it's mentioned. Call the `GetMentions` method and evaluate
 > the `Mention` objects returned in the response.
-
 ### [JavaScript](#tab/js)
 
 ```javascript

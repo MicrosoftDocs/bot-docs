@@ -8,6 +8,8 @@ ms.reviewer: micchow
 ms.topic: reference
 ms.service: bot-service
 ms.date: 10/26/2022
+ms.custom:
+  - evergreen
 ---
 
 # Bot Framework additional resources

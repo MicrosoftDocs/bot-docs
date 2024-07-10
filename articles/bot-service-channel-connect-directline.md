@@ -9,6 +9,8 @@ ms.reviewer: Daniel.Evans
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 11/15/2022
+ms.custom:
+  - evergreen
 ---
 
 # Connect a bot to Direct Line

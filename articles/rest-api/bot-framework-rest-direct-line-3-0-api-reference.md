@@ -8,6 +8,8 @@ ms.reviewer: micchow
 ms.topic: reference
 ms.service: bot-service
 ms.date: 02/07/2023
+ms.custom:
+  - evergreen
 ---
 
 # API reference - Direct Line API 3.0
@@ -23,8 +25,8 @@ To access Direct Line API 3.0, use one of these base URIs for all API requests:
 
     | Region | Base URI |
     |:-|:-|
-    | Europe| https://europe.directline.botframework.com |
-    | India | https://india.directline.botframework.com |
+    | Europe| `https://europe.directline.botframework.com` |
+    | India | `https://india.directline.botframework.com` |
 
 > [!TIP]
 > A request might fail if you use the global base URI for a regional bot, as some requests could go beyond geographical boundaries.

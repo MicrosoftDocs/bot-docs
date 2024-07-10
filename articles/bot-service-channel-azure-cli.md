@@ -8,7 +8,9 @@ ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 09/01/2022
-ms.custom: devx-track-azurecli
+ms.custom:
+  - devx-track-azurecli
+  - evergreen
 ---
 
 # Connect your bot to channels with Azure CLI

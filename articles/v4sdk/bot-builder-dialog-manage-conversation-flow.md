@@ -9,6 +9,8 @@ ms.topic: how-to
 ms.service: bot-service
 ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
+ms.custom:
+  - evergreen
 ---
 
 # Implement sequential conversation flow

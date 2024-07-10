@@ -10,6 +10,8 @@ ms.service: bot-service
 ms.topic: conceptual
 ms.date: 11/02/2021
 monikerRange: 'azure-bot-service-4.0'
+ms.custom:
+  - evergreen
 ---
 
 # About skill consumers

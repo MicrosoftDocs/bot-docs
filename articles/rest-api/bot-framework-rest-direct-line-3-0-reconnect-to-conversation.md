@@ -8,6 +8,8 @@ ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: reference
 ms.date: 10/04/2021
+ms.custom:
+  - evergreen
 ---
 
 # Reconnect to a conversation in Direct Line API 3.0

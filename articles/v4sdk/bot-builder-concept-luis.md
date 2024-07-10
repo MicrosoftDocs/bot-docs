@@ -10,6 +10,8 @@ ms.topic: conceptual
 ms.service: bot-service
 ms.date: 01/04/2023
 monikerRange: 'azure-bot-service-4.0'
+ms.custom:
+  - evergreen
 ---
 
 # Natural language understanding
@@ -107,7 +109,6 @@ For more information, see:
 
 - [Use question answering to answer questions](../bot-builder-howto-answer-questions.md)
 - [What is question answering?](/azure/cognitive-services/language-service/question-answering/overview)
-- The introduction to the [Azure Cognitive Language Services Question Answering client library for .NET](/dotnet/api/overview/azure/ai.language.questionanswering-readme-pre)
 - _QnA Maker client_ interface reference for [C#/.NET](/dotnet/api/microsoft.bot.builder.ai.qna.iqnamakerclient) or [JavaScript/node.js](/javascript/api/botbuilder-ai/qnamakerclient)
 - [Azure Cognitive Language Services Question Answering client library for .NET](/dotnet/api/overview/azure/ai.language.questionanswering-readme)
 
@@ -202,7 +203,7 @@ There are two main ways to implement your own logic:
 For information on migrating resources from older services to Azure AI Language, see:
 
 - [Migrate from LUIS, QnA Maker, and Text Analytics](/azure/ai-services/language-service/concepts/migrate)
-- [Backwards compatibility with LUIS applications](/azure/ai-services/language-service/conversational-language-understanding/concepts/backwards-compatibility)
+- [Backwards compatibility with LUIS applications](/azure/ai-services/language-service/conversational-language-understanding/how-to/migrate-from-luis)
 - [Migrate from QnA Maker to Question Answering](/azure/ai-services/language-service/question-answering/how-to/migrate-qnamaker-to-question-answering)
 - [Migrate from QnA Maker to custom question answering](/azure/ai-services/language-service/question-answering/how-to/migrate-qnamaker)
 

@@ -2,7 +2,9 @@
 title: Monitoring data reference for Azure AI Bot Service
 description: This article contains important reference material you need when you monitor Azure AI Bot Service.
 ms.date: 02/27/2024
-ms.custom: horz-monitor
+ms.custom:
+  - horz-monitor
+  - evergreen
 ms.topic: reference
 author: iaanw
 ms.author: iawilt

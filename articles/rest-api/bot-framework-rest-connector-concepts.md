@@ -8,6 +8,8 @@ ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: conceptual
 ms.date: 10/11/2022
+ms.custom:
+  - evergreen
 ---
 
 # Key concepts in the Bot Connector API

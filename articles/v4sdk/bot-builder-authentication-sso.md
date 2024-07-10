@@ -9,6 +9,8 @@ ms.topic: how-to
 ms.service: bot-service
 ms.date: 11/09/2022
 monikerRange: 'azure-bot-service-4.0'
+ms.custom:
+  - evergreen
 ---
 
 # Add single sign-on to a bot
@@ -67,7 +69,7 @@ For each project in the sample, you need the following:
 
 The Microsoft Entra ID is a cloud identity service that allows you to build applications that securely sign in users using industry standard protocols like OAuth2.0.
 
-1. Create an identity application for the `RootBot` that uses Microsoft Entra ID  to authenticate the user. Follow the steps described in [Create the Microsoft Entra ID identity provider](bot-builder-authentication.md#create-the-azure-ad-identity-provider).
+1. Create an identity application for the `RootBot` that uses Microsoft Entra ID  to authenticate the user. Follow the steps described in [Create the Microsoft Entra ID identity provider](bot-builder-authentication.md#create-the-microsoft-entra-id-identity-provider).
 
 1. In the left pane, select **Manifest**.
 1. Set `accessTokenAcceptedVersion` to 2.
@@ -104,7 +106,7 @@ The Microsoft Entra ID is a cloud identity service that allows you to build appl
 
 The Microsoft Entra ID is a cloud identity service that allows you to build applications that securely sign in users using industry standard protocols like OAuth2.0.
 
-1. Create an identity application for the `SkillBot` that uses Microsoft Entra ID  to authenticate the bot. Follow the steps described in [Create the Microsoft Entra ID identity provider](bot-builder-authentication.md#create-the-azure-ad-identity-provider).
+1. Create an identity application for the `SkillBot` that uses Microsoft Entra ID  to authenticate the bot. Follow the steps described in [Create the Microsoft Entra ID identity provider](bot-builder-authentication.md#create-the-microsoft-entra-id-identity-provider).
 
 1. In the left pane, select **Manifest**.
 1. Set `accessTokenAcceptedVersion` to 2.

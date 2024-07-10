@@ -9,6 +9,8 @@ ms.service: bot-service
 ms.topic: conceptual
 ms.date: 01/11/2023
 monikerRange: 'azure-bot-service-4.0'
+ms.custom:
+  - evergreen
 ---
 
 # Regionalization in Azure AI Bot Service

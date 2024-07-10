@@ -12,6 +12,8 @@ ms.date: 11/17/2022
 monikerRange: 'azure-bot-service-4.0'
 
 ROBOTS: NOINDEX
+ms.custom:
+  - evergreen
 ---
 
 # Use multiple LUIS and QnA models with Orchestrator

@@ -9,6 +9,8 @@ ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 11/19/2021
+ms.custom:
+  - evergreen
 ---
 
 # Configure bot registration settings

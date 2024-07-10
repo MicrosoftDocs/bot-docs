@@ -10,6 +10,8 @@ ms.topic: how-to
 ms.service: bot-service
 ms.date: 11/01/2021
 monikerRange: 'azure-bot-service-4.0'
+ms.custom:
+  - evergreen
 ---
 
 # Functions injected from the language generation library

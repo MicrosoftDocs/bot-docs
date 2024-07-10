@@ -10,6 +10,8 @@ ms.service: bot-service
 ms.topic: reference
 ms.date: 09/21/2021
 monikerRange: 'azure-bot-service-4.0'
+ms.custom:
+  - evergreen
 ---
 
 # Structured response template

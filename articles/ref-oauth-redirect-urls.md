@@ -8,6 +8,8 @@ ms.reviewer: micchow
 ms.topic: reference
 ms.service: bot-service
 ms.date: 05/23/2022
+ms.custom:
+  - evergreen
 ---
 
 # OAuth URL support in Azure AI Bot Service

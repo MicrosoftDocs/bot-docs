@@ -8,6 +8,8 @@ ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
 ms.date: 02/10/2023
+ms.custom:
+  - evergreen
 ---
 
 # Adding rich card attachments to messages with the Bot Connector API

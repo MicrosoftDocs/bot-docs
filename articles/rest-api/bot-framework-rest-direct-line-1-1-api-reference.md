@@ -8,6 +8,8 @@ ms.reviewer: micchow
 ms.topic: reference
 ms.service: bot-service
 ms.date: 11/01/2021
+ms.custom:
+  - evergreen
 ---
 
 # API reference - Direct Line API 1.1

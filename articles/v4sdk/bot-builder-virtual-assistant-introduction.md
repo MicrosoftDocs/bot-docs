@@ -8,6 +8,8 @@ ms.reviewer: micchow
 ms.topic: conceptual
 ms.service: bot-service
 ms.date: 11/02/2021
+ms.custom:
+  - evergreen
 ---
 
 # Virtual Assistant overview

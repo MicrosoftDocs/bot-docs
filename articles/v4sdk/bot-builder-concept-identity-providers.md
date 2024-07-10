@@ -10,6 +10,8 @@ ms.service: bot-service
 ms.topic: conceptual
 ms.date: 01/25/2022
 monikerRange: 'azure-bot-service-4.0'
+ms.custom:
+  - evergreen
 ---
 
 # Identity providers

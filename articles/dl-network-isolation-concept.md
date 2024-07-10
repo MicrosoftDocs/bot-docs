@@ -9,6 +9,8 @@ ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: conceptual
 ms.date: 04/05/2022
+ms.custom:
+  - evergreen
 ---
 
 # Network isolation in Azure AI Bot Service

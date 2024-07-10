@@ -8,6 +8,8 @@ ms.reviewer: micchow
 ms.topic: troubleshooting
 ms.service: bot-service
 ms.date: 11/01/2021
+ms.custom:
+  - evergreen
 ---
 
 # Troubleshoot index
@@ -46,7 +48,7 @@ In case you don't find the answer you're looking for, you can post your question
 ## Configuration
 
 - [Test in Web Chat](bot-service-troubleshoot-bot-configuration.md#test-in-web-chat)
-- [Bot doesn't work in Web Chat](bot-service-troubleshoot-bot-configuration.md#bot-does-not-work-in-web-chat)
+- [Bot doesn't work in Web Chat](bot-service-troubleshoot-bot-configuration.md#bot-doesnt-work-in-web-chat)
 - [Bot works in Web Chat but not in other channels](bot-service-troubleshoot-bot-configuration.md#bot-works-in-web-chat-but-not-in-other-channels)
   - [Channel configuration issues](bot-service-troubleshoot-bot-configuration.md#channel-configuration-issues)
   - [Channel-specific behavior](bot-service-troubleshoot-bot-configuration.md#channel-specific-behavior)
@@ -54,8 +56,8 @@ In case you don't find the answer you're looking for, you can post your question
 
 ## HTTP 500 Errors
 
-- [Enable Application Insights on ASP.NET](bot-service-troubleshoot-500-errors.md#enable-application-insights-on-aspnet)
-- [Enable Application Insights on Node.js](bot-service-troubleshoot-500-errors.md#enable-application-insights-on-nodejs)
+- [Enable Application Insights on ASP.NET](bot-service-troubleshoot-500-errors.md#enable-application-insights-for-aspnet)
+- [Enable Application Insights on Node.js](bot-service-troubleshoot-500-errors.md#enable-application-insights-for-nodejs)
 - [Query for exceptions](bot-service-troubleshoot-500-errors.md#query-for-exceptions)
 - [No Application Insights events](bot-service-troubleshoot-500-errors.md#no-application-insights-events)
 
@@ -64,5 +66,5 @@ In case you don't find the answer you're looking for, you can post your question
 - [App ID and password](bot-service-troubleshoot-authentication-problems.md#app-id-and-password)
 - [Step 1: Disable security and test on localhost](bot-service-troubleshoot-authentication-problems.md#step-1-disable-security-and-test-on-localhost)
 - [Step 2: Verify your bot's app ID and password](bot-service-troubleshoot-authentication-problems.md#step-2)
-- [Step 3: Enable security and test on localhost](bot-service-troubleshoot-authentication-problems.md#step-3-enable-security-and-test-on-localhost-)
+- [Step 3: Enable security and test on localhost](bot-service-troubleshoot-authentication-problems.md#step-3-enable-security-and-test-on-localhost)
 - [Step 4: Test your bot in the cloud](bot-service-troubleshoot-authentication-problems.md#step-4-test-your-bot-in-the-cloud)

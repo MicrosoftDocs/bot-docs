@@ -8,6 +8,8 @@ ms.reviewer: Daniel.Evans
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 02/09/2023
+ms.custom:
+  - evergreen
 ---
 
 # Configure Node.js bot for extension

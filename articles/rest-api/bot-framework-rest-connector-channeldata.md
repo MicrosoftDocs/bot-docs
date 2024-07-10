@@ -8,6 +8,8 @@ ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
 ms.date: 09/01/2022
+ms.custom:
+  - evergreen
 ---
 
 # Implement channel-specific functionality with the Bot Connector API

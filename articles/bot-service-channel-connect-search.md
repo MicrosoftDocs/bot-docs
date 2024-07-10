@@ -8,7 +8,9 @@ ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 10/04/2021
-ms.custom: template-how-to
+ms.custom:
+  - template-how-to
+  - evergreen
 monikerRange: 'azure-bot-service-4.0'
 ---
 

@@ -8,6 +8,8 @@ ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: overview
 ms.date: 10/26/2022
+ms.custom:
+  - evergreen
 ---
 
 # How Microsoft Teams bots work

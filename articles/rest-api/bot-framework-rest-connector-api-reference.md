@@ -8,7 +8,9 @@ ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: reference
 ms.date: 02/10/2023
-ms.custom: abs-meta-21q1
+ms.custom:
+  - abs-meta-21q1
+  - evergreen
 ---
 
 # API reference for the Bot Framework Connector service
