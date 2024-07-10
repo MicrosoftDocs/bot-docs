@@ -31,7 +31,7 @@ Bot security is configured by the **Microsoft App ID** and **Microsoft App Passw
 If you haven't yet done so, [deploy your bot to Azure](bot-builder-howto-deploy-azure.md) to obtain a **Microsoft App ID** and **Microsoft App Password** that it can use for authentication.
 
 > [!NOTE]
-> To find your bot's **AppID** and **AppPassword** for an already deployed bot, see [MicrosoftAppID and MicrosoftAppPassword](bot-service-manage-overview.md#microsoftappid-and-microsoftapppassword).
+> To find your bot's **AppID** and **AppPassword** for an already deployed bot, see [MicrosoftAppID and MicrosoftAppPassword](bot-service-manage-overview.md#bot-identity-information).
 
 ## Step 1: Disable security and test on localhost
 
@@ -163,7 +163,7 @@ var connector = new builder.ChatConnector({
 ```
 
 > [!NOTE]
-> To find your bot's **AppID** and **AppPassword**, see [MicrosoftAppID and MicrosoftAppPassword](bot-service-manage-overview.md#microsoftappid-and-microsoftapppassword).
+> To find your bot's **AppID** and **AppPassword**, see [MicrosoftAppID and MicrosoftAppPassword](bot-service-manage-overview.md#bot-identity-information).
 
 ### Test your bot on localhost
 
