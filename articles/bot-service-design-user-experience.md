@@ -56,7 +56,7 @@ Cards allow you to design your bot once, and have it work across various channel
   | 8      | Suggested actions | Demonstrates use of suggested actions.                |
   | 15     | Attachments       | Demonstrates how to accept user provided attachments. |
 
-When designing your bot, don't automatically dismiss common UI elements as not being _smart enough_. As discussed in [Conversational user experience](bot-service-design-principles.md#designing-a-bot), your bot should be designed to solve the user's problem in the best, quickest, and easiest manner possible. Avoid the temptation to start by incorporating natural language understanding, as it's often unnecessary and introduces unjustified complexity.
+When designing your bot, don't automatically dismiss common UI elements as not being _smart enough_. As discussed in [Conversational user experience](bot-service-design-principles.md#a-great-conversational-bot), your bot should be designed to solve the user's problem in the best, quickest, and easiest manner possible. Avoid the temptation to start by incorporating natural language understanding, as it's often unnecessary and introduces unjustified complexity.
 
 > [!TIP]
 > Start by using the minimum UI controls that enable the bot to solve the user's problem,

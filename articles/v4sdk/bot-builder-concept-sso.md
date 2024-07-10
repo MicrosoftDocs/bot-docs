@@ -20,7 +20,7 @@ ms.custom:
 
 Single sign-on (SSO) allows access to resources to be shared across independent applications.
 For instance, a user could sign in to a service in a root bot, and the root bot could share the access token with a skill bot.
-Currently, only the [Microsoft Entra ID](./bot-builder-concept-identity-providers.md#azure-active-directory-identity-provider) identity provider is supported.
+Currently, only the [Microsoft Entra ID](./bot-builder-concept-identity-providers.md#microsoft-entra-id-identity-provider) identity provider is supported.
 
 SSO applies to the following scenarios:
 

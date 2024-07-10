@@ -36,8 +36,8 @@ You can configure your bot to communicate with people using the Twilio (SMS) clo
 
       | Region | Request URL |
       |:-|:-|
-      | Europe| https://europe.sms.botframework.com/api/sms |
-      | India | https://india.sms.botframework.com/api/sms |
+      | Europe| `https://europe.sms.botframework.com/api/sms` |
+      | India | `https://india.sms.botframework.com/api/sms` |
 
 ### Select or add a phone number
 

@@ -44,7 +44,7 @@ A manual registration is necessary when:
 
 ## Update the bot
 
-To update your bot's configuration file to include its app ID and password, see [Application ID and password](bot-service-manage-settings.md#application-id-and-password) in how to **Configure bot registration settings**.
+To update your bot's configuration file to include its app ID and password, see [Application ID and password](bot-service-manage-settings.md#bot-identity-information) in how to **Configure bot registration settings**.
 
 ## Additional information
 

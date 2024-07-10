@@ -49,7 +49,7 @@ The Health Bot Service is ideal for developers in IT departments of healthcare o
 
 The Health Bot Service contains a built-in medical database, including triage protocols. You can also extend a health bot instance to include your own scenarios and integrate with other IT systems and data sources.
 
-For more information about the Health Bot Service, see [Health Bot Overview](/azure/health-bot/overview). For information about pricing models, see [Choosing the right Health Bot plan](/azure/health-bot/resources/pricing-details).
+For more information about the Health Bot Service, see [Health Bot Overview](/azure/health-bot/overview). For information about pricing models, see [Choosing the right Health Bot plan](/azure/health-bot/pricing-details).
 
 ## Bot Framework SDK
 
