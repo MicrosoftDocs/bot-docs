@@ -9,6 +9,8 @@ ms.topic: conceptual
 ms.service: bot-service
 ms.date: 07/27/2022
 monikerRange: 'azure-bot-service-4.0'
+ms.custom:
+  - evergreen
 ---
 
 # Transition conversations from bot to human

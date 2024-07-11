@@ -8,7 +8,9 @@ ms.reviewer: micchow
 ms.topic: how-to
 ms.service: bot-service
 ms.date: 03/15/2022
-ms.custom: abs-meta-21q1
+ms.custom:
+  - abs-meta-21q1
+  - evergreen
 monikerRange: 'azure-bot-service-4.0'
 ---
 
@@ -42,7 +44,7 @@ A manual registration is necessary when:
 
 ## Update the bot
 
-To update your bot's configuration file to include its app ID and password, see [Application ID and password](bot-service-manage-settings.md#application-id-and-password) in how to **Configure bot registration settings**.
+To update your bot's configuration file to include its app ID and password, see [Application ID and password](bot-service-manage-settings.md#bot-identity-information) in how to **Configure bot registration settings**.
 
 ## Additional information
 

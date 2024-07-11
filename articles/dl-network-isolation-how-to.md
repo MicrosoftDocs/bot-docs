@@ -3,12 +3,14 @@ title: Configure network isolation
 description: Learn how to configure your bot in a virtual network to restrict user access to your bot.
 displayName: private network, isolated network
 author: JonathanFingold
-ms.author: v-bondkendal
+ms.author: jameslew
 manager: iawilt
 ms.reviewer: yiba
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 07/01/2022
+ms.custom:
+  - evergreen
 ---
 
 # Configure network isolation

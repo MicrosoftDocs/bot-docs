@@ -10,6 +10,8 @@ ms.service: bot-service
 ms.topic: conceptual
 ms.date: 06/12/2020
 monikerRange: 'azure-bot-service-4.0'
+ms.custom:
+  - evergreen
 ---
 
 # Managing state in adaptive dialogs - reference guide

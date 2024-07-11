@@ -10,6 +10,8 @@ ms.service: bot-service
 ms.topic: reference
 ms.date: 11/01/2021
 monikerRange: 'azure-bot-service-4.0'
+ms.custom:
+  - evergreen
 ---
 
 # .lg file format

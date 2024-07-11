@@ -6,6 +6,8 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: include
 ms.date: 03/30/2022
+ms.custom:
+  - evergreen
 ---
 
 In your browser, go to `https://<your_app_service>.azurewebsites.net/.bot`. If everything is correct, the page will return the following JSON content:

@@ -6,6 +6,8 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: include
 ms.date: 11/15/2022
+ms.custom:
+  - evergreen
 ---
 
 1. In the Azure portal, go to your **Azure Bot** resource.

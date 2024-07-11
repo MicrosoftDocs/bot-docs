@@ -9,7 +9,9 @@ ms.reviewer: micchow
 ms.topic: quickstart
 ms.service: bot-service
 ms.date: 07/22/2022
-ms.custom: abs-meta-21q1
+ms.custom:
+  - abs-meta-21q1
+  - evergreen
 ---
 
 # Use the Azure portal to Create an Azure Bot resource

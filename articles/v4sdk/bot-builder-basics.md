@@ -9,7 +9,9 @@ ms.service: bot-service
 ms.topic: conceptual
 ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
-ms.custom: abs-meta-21q1
+ms.custom:
+  - abs-meta-21q1
+  - evergreen
 ---
 
 # Basics of the Microsoft Bot Framework

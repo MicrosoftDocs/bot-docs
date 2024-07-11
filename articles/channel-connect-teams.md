@@ -8,6 +8,8 @@ ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 12/20/2022
+ms.custom:
+  - evergreen
 ---
 
 # Connect a bot to Microsoft Teams

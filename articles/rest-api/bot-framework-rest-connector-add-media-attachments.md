@@ -8,6 +8,8 @@ ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: reference
 ms.date: 02/10/2023
+ms.custom:
+  - evergreen
 ---
 
 # Add media attachments to messages with the Bot Connector API

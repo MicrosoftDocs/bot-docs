@@ -9,6 +9,8 @@ ms.reviewer: micchow
 ms.topic: reference
 ms.service: bot-service
 ms.date: 11/01/2021
+ms.custom:
+  - evergreen
 ---
 
 # Compliance in Azure AI Bot Service
@@ -55,6 +57,6 @@ The following table lists the certifications supported by Azure AI Bot Service i
 
 ## Next steps
 
-To find out the latest compliance certifications for Azure AI Bot Service, see the [Overview of Azure compliance](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942).
+To find out the latest compliance certifications for Azure AI Bot Service, see the [Overview of Azure compliance](/azure/compliance/offerings/).
 
 For more information about Microsoft certifications, see the [Azure Trust Center](https://azure.microsoft.com/overview/trusted-cloud/).

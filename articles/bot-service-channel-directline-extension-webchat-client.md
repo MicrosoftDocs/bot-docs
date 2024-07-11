@@ -8,6 +8,8 @@ ms.reviewer: Daniel.Evans
 ms.service: bot-service
 ms.topic: conceptual
 ms.date: 09/29/2021
+ms.custom:
+  - evergreen
 ---
 
 # Use Web Chat with the Direct Line App Service extension

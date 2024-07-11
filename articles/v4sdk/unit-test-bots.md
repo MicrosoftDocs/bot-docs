@@ -10,6 +10,8 @@ ms.topic: how-to
 ms.service: bot-service
 ms.date: 10/11/2022
 monikerRange: 'azure-bot-service-4.0'
+ms.custom:
+  - evergreen
 ---
 
 # How to unit test bots

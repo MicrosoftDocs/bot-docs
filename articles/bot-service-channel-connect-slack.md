@@ -9,6 +9,8 @@ ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 08/05/2022
+ms.custom:
+  - evergreen
 ---
 
 # Connect a bot to Slack
@@ -66,8 +68,8 @@ Subscribe to events based on the features your bot will use in Slack.
 
     | Region | Request URL |
     |:-|:-|
-    | Europe| https://europe.slack.botframework.com/api/Events/{bot-name} |
-    | India | https://india.slack.botframework.com/api/Events/{bot-name} |
+    | Europe| `https://europe.slack.botframework.com/api/Events/{bot-name}` |
+    | India | `https://india.slack.botframework.com/api/Events/{bot-name}` |
 1. Under **Subscribe to bot events**, select **Add Bot User Event**, then subscribe to events. For example:
     - `member_joined_channel`
     - `member_left_channel`
@@ -95,8 +97,8 @@ Optionally, enable interactive messages.
 
     | Region | Request URL |
     |:-|:-|
-    | Europe| https://europe.slack.botframework.com/Actions |
-    | India | https://india.slack.botframework.com/Actions |
+    | Europe| `https://europe.slack.botframework.com/Actions` |
+    | India | `https://india.slack.botframework.com/Actions` |
 1. Select **Save changes**.
 
 ### Copy your app information
@@ -144,7 +146,7 @@ For more information about Slack support for bots, see the Slack API documentati
 
 - [Developer docs and guides](https://api.slack.com/docs)
 - [Permission scopes](https://api.slack.com/scopes)
-- [Understanding OAuth scopes for Bots](https://api.slack.com/tutorials/understanding-oauth-scopes-bot)
+- [Understanding OAuth scopes for Bots](https://api.slack.com/tutorials/tracks/understanding-oauth-scopes-bot)
 
 ## Connect a bot to Slack using the Slack adapter
 

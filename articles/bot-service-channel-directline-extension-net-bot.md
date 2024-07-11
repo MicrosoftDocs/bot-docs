@@ -9,6 +9,8 @@ ms.service: bot-service
 ms.topic: how-to
 ms.date: 10/20/2022
 ms-custom: abs-meta-21q1
+ms.custom:
+  - evergreen
 ---
 
 # Configure .NET bot for extension

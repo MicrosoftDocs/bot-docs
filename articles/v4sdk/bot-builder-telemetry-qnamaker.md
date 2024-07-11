@@ -10,7 +10,9 @@ ms.topic: how-to
 ms.service: bot-service
 ms.date: 09/01/2022
 monikerRange: 'azure-bot-service-4.0'
-ms.custom: abs-meta-21q1
+ms.custom:
+  - abs-meta-21q1
+  - evergreen
 ---
 
 # Add telemetry to your QnA Maker bot

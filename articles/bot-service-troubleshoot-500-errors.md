@@ -9,7 +9,9 @@ ms.reviewer: micchow
 ms.topic: troubleshooting
 ms.service: bot-service
 ms.date: 10/11/2022
-ms.custom: abs-meta-21q1
+ms.custom:
+  - abs-meta-21q1
+  - evergreen
 ---
 
 # Troubleshoot HTTP 500 Internal Service Errors

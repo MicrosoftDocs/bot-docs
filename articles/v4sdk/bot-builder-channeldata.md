@@ -10,6 +10,8 @@ ms.service: bot-service
 ms.topic: how-to
 ms.date: 09/01/2022
 monikerRange: 'azure-bot-service-4.0'
+ms.custom:
+  - evergreen
 ---
 
 # Implement channel-specific functionality

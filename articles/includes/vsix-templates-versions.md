@@ -6,6 +6,8 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.service: bot-service
+ms.custom:
+  - evergreen
 ---
 
 > [!NOTE]

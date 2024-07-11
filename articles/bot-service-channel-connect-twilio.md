@@ -9,6 +9,8 @@ ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
 ms.date: 09/12/2022
+ms.custom:
+  - evergreen
 ---
 
 # Connect a bot to Twilio (SMS)
@@ -34,8 +36,8 @@ You can configure your bot to communicate with people using the Twilio (SMS) clo
 
       | Region | Request URL |
       |:-|:-|
-      | Europe| https://europe.sms.botframework.com/api/sms |
-      | India | https://india.sms.botframework.com/api/sms |
+      | Europe| `https://europe.sms.botframework.com/api/sms` |
+      | India | `https://india.sms.botframework.com/api/sms` |
 
 ### Select or add a phone number
 

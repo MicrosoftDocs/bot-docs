@@ -8,7 +8,9 @@ manager: shellyha
 ms.reviewer: jameslew
 ms.service: bot-service
 ms.topic: how-to
-ms.custom: abs-meta-21q1
+ms.custom:
+  - abs-meta-21q1
+  - evergreen
 ms.date: 03/22/2022
 ---
 

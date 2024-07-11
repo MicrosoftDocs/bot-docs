@@ -12,6 +12,8 @@ ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
 
 ROBOTS: NOINDEX
+ms.custom:
+  - evergreen
 ---
 
 # Use QnA Maker to answer questions

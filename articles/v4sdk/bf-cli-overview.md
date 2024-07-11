@@ -9,6 +9,8 @@ ms.topic: reference
 ms.service: bot-service
 ms.date: 11/01/2021
 monikerRange: 'azure-bot-service-4.0'
+ms.custom:
+  - evergreen
 ---
 
 # Bot Framework CLI tool

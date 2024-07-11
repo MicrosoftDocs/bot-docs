@@ -8,6 +8,8 @@ ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: overview
 ms.date: 10/18/2021
+ms.custom:
+  - evergreen
 ---
 
 # Authentication in Direct Line API 3.0

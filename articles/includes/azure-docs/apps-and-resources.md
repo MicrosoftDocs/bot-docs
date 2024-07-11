@@ -6,6 +6,8 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: include
 ms.date: 03/03/2022
+ms.custom:
+  - evergreen
 ---
 
 See these articles for more information about Azure applications and resources that are used to host a bot.

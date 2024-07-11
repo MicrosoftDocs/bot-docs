@@ -9,7 +9,9 @@ ms.reviewer: micchow
 ms.service: bot-service
 ms.topic: conceptual
 ms.date: 11/29/2022
-ms.custom: tab-zone-seo
+ms.custom:
+  - tab-zone-seo
+  - evergreen
 ---
 
 # What's new for the Bot Framework SDKs

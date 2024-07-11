@@ -8,6 +8,8 @@ ms.reviewer: micchow
 ms.topic: troubleshooting
 ms.service: bot-service
 ms.date: 11/01/2021
+ms.custom:
+  - evergreen
 ---
 
 # Bot Framework User-Agent requests
