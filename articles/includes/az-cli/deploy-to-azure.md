@@ -19,11 +19,7 @@ At this point, you're ready to deploy code for your bot to your App Service reso
 
 ### [C# / JavaScript / Python](#tab/csharp+javascript+python)
 
-Run the following command from the command line to perform deployment using the Kudu zip push deployment for your app service (web app).
-
-```azurecli
-az webapp deployment source config-zip --resource-group "<resource-group-name>" --name "<name-of-app-service>" --src "<project-zip-path>"
-```
+Run the [`az webapp deploy` command](/cli/azure/webapp#az-webapp-deploy) from the command line to perform deployment using the Kudu zip push deployment for your app service (web app).
 
 | Option         | Description                                                           |
 |:---------------|:----------------------------------------------------------------------|
@@ -33,7 +29,7 @@ az webapp deployment source config-zip --resource-group "<resource-group-name>" 
 
 > [!TIP]
 > By default, this command deploys to the production slot. Use the optional `--slot` parameter to specify a different slot.
-> For more information, see the [az webapp deployment source config-zip](/cli/azure/webapp/deployment/source) command reference.
+> For more information, see the [`az webapp deploy` command reference documentation](/cli/azure/webapp#az-webapp-deploy).
 
 ### [Java](#tab/java)
 
