@@ -19,22 +19,21 @@ The file differs depending on the programming language you use to create the bot
 
 > [!IMPORTANT]
 > The Java version of the Bot Framework SDK only supports multi-tenant bots.
-> The Python version of the Bot Framework SDK supports multi-tenant and single-tenant bots.
-> The C# and JavaScript versions support all three application types for managing the bot's identity.
+> The C#, JavaScript, and Python versions support all three application types for managing the bot's identity.
 
 | Language   | File name              | Notes                                                                                                               |
 |:-----------|:-----------------------|:--------------------------------------------------------------------------------------------------------------------|
 | C#         | appsettings.json       | Supports all three application types for managing your bot's identity.                                              |
 | JavaScript | .env                   | Supports all three application types for managing your bot's identity.                                              |
 | Java       | application.properties | Only supports multi-tenant bots.                                                                                    |
-| Python     | config.py              | Supports multi-tenant and single-tenant bots. Provide the properties as arguments to the `os.environ.get` method calls. |
+| Python     | config.py              | Supports all three application types for managing your bot's identity. |
 
 The identity information you need to add depends on the bot's application type.
 Provide the following values in your configuration file.
 
 #### [User-assigned managed identity](#tab/userassigned)
 
-Only available for C# and JavaScript bots.
+Available for C#, JavaScript, and Python bots.
 
 | Property               | Value                                                                      |
 |:-----------------------|:---------------------------------------------------------------------------|
@@ -45,7 +44,7 @@ Only available for C# and JavaScript bots.
 
 #### [Single-tenant](#tab/singletenant)
 
-Only available for C#, JavaScript, and Python bots.
+Available for C#, JavaScript, and Python bots.
 
 | Property               | Value                    |
 |:-----------------------|:-------------------------|
