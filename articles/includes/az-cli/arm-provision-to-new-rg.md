@@ -24,7 +24,7 @@ az deployment sub create --template-file "<path>" --location <bot-region> --para
 For a single-tenant bot, run this command to provision resources in a new resource group and new app service plan.
 
 ```azurecli
-az deployment create --template-file "<path>" --location <bot-region> --parameters appType="SingleTenant" appId="<app-id>" appSecret="<password>" tenantId="<tenant-id>" botId="<bot-id>" botSku=<tier> newAppServicePlanName="<plan-name>" newWebAppName="<service-name>" groupName="<group-name>" groupLocation="<group-region>" newAppServicePlanLocation="<plan-region>" --name "<deployment-name>"
+az deployment sub create --template-file "<path>" --location <bot-region> --parameters appType="SingleTenant" appId="<app-id>" appSecret="<password>" tenantId="<tenant-id>" botId="<bot-id>" botSku=<tier> newAppServicePlanName="<plan-name>" newWebAppName="<service-name>" groupName="<group-name>" groupLocation="<group-region>" newAppServicePlanLocation="<plan-region>" --name "<deployment-name>"
 ```
 
 ### [Multi-tenant](#tab/multitenant)
