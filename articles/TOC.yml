@@ -70,7 +70,7 @@
     href: v4sdk/bot-builder-basics-teams.md
   - name: Regionalization in Azure AI Bot Service
     href: v4sdk/bot-builder-concept-regionalization.md
-  - name: Monitor
+  - name: Monitor Bot Service
     href: monitor-bot-service.md
   - name: Skills
     items:
