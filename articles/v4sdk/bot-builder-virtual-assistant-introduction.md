@@ -6,7 +6,7 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: conceptual
-ms.service: bot-service
+ms.service: azure-ai-bot-service
 ms.date: 11/02/2021
 ms.custom:
   - evergreen

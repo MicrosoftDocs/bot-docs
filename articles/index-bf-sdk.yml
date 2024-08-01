@@ -6,7 +6,7 @@ summary: The Bot Framework SDK allows you to create and develop bots for Azure A
 metadata:
   title: Bot Framework SDK documentation
   description: The Bot Framework SDK allows you to create and develop bots for Azure AI Bot Service.
-  ms.service: bot-service
+  ms.service: azure-ai-bot-service
   ms.topic: landing-page
   author: JonathanFingold
   ms.author: iawilt

@@ -6,7 +6,7 @@ author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: Gabo.Gilabert
-ms.service: bot-service
+ms.service: azure-ai-bot-service
 ms.topic: how-to
 ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
