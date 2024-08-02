@@ -7,7 +7,7 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: troubleshooting
-ms.service: bot-service
+ms.service: azure-ai-bot-service
 ms.date: 10/11/2022
 ms.custom:
   - abs-meta-21q1

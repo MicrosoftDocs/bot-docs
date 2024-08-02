@@ -8,7 +8,7 @@ metadata:
   title: Azure AI Bot Service documentation
   description: Azure AI Bot Service provides an integrated environment that is purpose-built for bot development.
   services: service
-  ms.service: bot-service
+  ms.service: azure-ai-bot-service
   ms.topic: hub-page
   author: JonathanFingold
   ms.author: iawilt

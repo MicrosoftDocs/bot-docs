@@ -6,7 +6,7 @@ author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
-ms.service: bot-service
+ms.service: azure-ai-bot-service
 ms.topic: how-to
 ms.date: 12/14/2021
 ms-custom: abs-meta-21q1

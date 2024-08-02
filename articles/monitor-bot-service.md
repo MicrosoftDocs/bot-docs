@@ -8,7 +8,7 @@ ms.custom:
 ms.topic: conceptual
 author: iaanw
 ms.author: iawilt
-ms.service: bot-service
+ms.service: azure-ai-bot-service
 ---
 
 # Monitor Azure AI Bot Service

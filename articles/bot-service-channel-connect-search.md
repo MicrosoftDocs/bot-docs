@@ -5,7 +5,7 @@ author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: jameslew
-ms.service: bot-service
+ms.service: azure-ai-bot-service
 ms.topic: how-to
 ms.date: 10/04/2021
 ms.custom:

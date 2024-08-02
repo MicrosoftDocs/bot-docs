@@ -5,7 +5,7 @@ author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
-ms.service: bot-service
+ms.service: azure-ai-bot-service
 ms.custom:
   - evergreen
 ---

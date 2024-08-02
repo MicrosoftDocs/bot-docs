@@ -6,7 +6,7 @@ author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: Daniel.Evans
-ms.service: bot-service
+ms.service: azure-ai-bot-service
 ms.topic: conceptual
 ms.date: 11/01/2022
 ms.custom:

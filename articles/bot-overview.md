@@ -6,7 +6,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.reviewer: micchow
 ms.topic: overview
-ms.service: bot-service
+ms.service: azure-ai-bot-service
 ms.date: 05/11/2023
 ms.custom:
   - mode-api
