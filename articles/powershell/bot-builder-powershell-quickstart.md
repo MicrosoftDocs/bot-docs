@@ -5,7 +5,7 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.topic: how-to
-ms.service: bot-service
+ms.service: azure-ai-bot-service
 ms.date: 02/23/2021
 ms.custom:
   - devx-track-azurepowershell

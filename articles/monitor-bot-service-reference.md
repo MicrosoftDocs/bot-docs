@@ -8,7 +8,7 @@ ms.custom:
 ms.topic: reference
 author: iaanw
 ms.author: iawilt
-ms.service: bot-service
+ms.service: azure-ai-bot-service
 ---
 
 # Azure AI Bot Service monitoring data reference

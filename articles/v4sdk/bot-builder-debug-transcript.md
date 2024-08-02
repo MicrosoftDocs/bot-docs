@@ -7,7 +7,7 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: conceptual
-ms.service: bot-service
+ms.service: azure-ai-bot-service
 ms.date: 08/10/2022
 monikerRange: 'azure-bot-service-4.0'
 ms.custom:
