@@ -6,7 +6,7 @@ author: JonathanFingold
 ms.author: jameslew
 manager: iawilt
 ms.reviewer: yiba
-ms.service: bot-service
+ms.service: azure-ai-bot-service
 ms.topic: how-to
 ms.date: 07/01/2022
 ms.custom:
