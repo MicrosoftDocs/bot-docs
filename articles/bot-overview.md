@@ -45,7 +45,7 @@ For more information about Copilot Studio, see the [product overview page](https
 
 The Health Bot Service is a cloud platform that healthcare organizations can use to build and deploy compliant, AI-powered virtual health assistants and health bots. The service can help organizations improve processes and reduce costs. It offers your users _intelligent_ and _personalized_ access to health-related information and interactions through a natural conversation experience.
 
-The Health Bot Service is ideal for developers in IT departments of healthcare organizations such as providers, pharmaceutical companies, telemedicine providers, and health insurers. Healthcare organizations can use the service to build a _health bot instance_ and integrate it with their systems that patients, provdiders, and other representatives interact with.
+The Health Bot Service is ideal for developers in IT departments of healthcare organizations such as providers, pharmaceutical companies, telemedicine providers, and health insurers. Healthcare organizations can use the service to build a _health bot instance_ and integrate it with their systems that patients, providers, and other representatives interact with.
 
 The Health Bot Service contains a built-in medical database, including triage protocols. You can also extend a health bot instance to include your own scenarios and integrate with other IT systems and data sources.
 
