@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: Gabo.Gilabert
 ms.service: azure-ai-bot-service
 ms.topic: how-to
-ms.date: 10/26/2022
+ms.date: 08/08/2024
 monikerRange: 'azure-bot-service-4.0'
 ms.custom:
   - evergreen
@@ -344,4 +344,4 @@ Download and install the latest [Bot Framework Emulator](https://github.com/micr
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Implement a skill for Power Virtual Agents](skill-pva.md)
+> [Implement a skill for Microsoft Copilot Studio](skill-pva.md)

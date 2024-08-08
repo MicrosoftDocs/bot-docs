@@ -1,8 +1,8 @@
 ---
 title: Add a chatbot to M365 (preview)
-description: Connect your bot to M365 so people in your organization can interact with it in Power Virtual Agents preview.
+description: Connect your bot to M365 so people in your organization can interact with it in Microsoft Copilot Studio preview.
 keywords: "Publish, channel, M365"
-ms.date: 03/30/2023
+ms.date: 08/08/2024
 ms.topic: how-to
 author: KendalBond007
 ms.author: jameslew
