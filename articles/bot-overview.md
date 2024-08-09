@@ -24,7 +24,7 @@ The following table lists Microsoft products and services for building bots, who
 
 | Product | Audience | Description |
 |:-|:-|:-|
-| [Copilot Studio](#power-virtual-agents) | Fusion teams, citizen developers | Copilot Studio is an end-to-end copilot-building tool, with built-in natural language understanding models, data connectivity through Power Automate, and support for multiple channels. |
+| [Copilot Studio](#copilot-studio) | Fusion teams, citizen developers | Copilot Studio is an end-to-end copilot-building tool, with built-in natural language understanding models, data connectivity through Power Automate, and support for multiple channels. |
 | [Health Bot](#health-bot) | Healthcare organizations | Provides support for healthcare organizations. Health Bot helps you build and deploy compliant, AI-powered virtual health assistants and health bots. |
 | [Bot Framework SDK](#bot-framework-sdk) | Developers | Provides a framework for building bots, including tools, templates, and related AI services. The SDK is ideal for developers who want to build bots that are publicly available on the Microsoft Teams app store. |
 
