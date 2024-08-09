@@ -39,7 +39,7 @@ Such bots can apply automation and other capabilities within the Power Platform,
 - You can connect virtual agents to various user platforms, such as [Microsoft 365](https://www.microsoft.com/microsoft-365) and [Microsoft Dynamics 365](https://dynamics.microsoft.com/).
 - You can use over 600 prebuilt data connectors, available through Power Automate.
 
-For more information about Copilot Studio, see the [product overview page](https://powervirtualagents.microsoft.com). For details about pricing, see [Copilot Studio pricing](https://powervirtualagents.microsoft.com/pricing/).
+For more information about Copilot Studio, see the [product overview page](https://www.microsoft.com/microsoft-copilot/microsoft-copilot-studio/). For details about pricing, see [Copilot Studio pricing](https://www.microsoft.com/microsoft-copilot/microsoft-copilot-studio/#Pricing).
 
 ## Health Bot
 
@@ -79,12 +79,12 @@ Costs associated with the consumption of resources on Azure are in addition to t
 As an advanced scenario, you can create a _skill_ bot that provides features to other bots. You can develop the skill bot and the bot that _consumes_ the skill in different products. For more information about skill bots, see:
 
 - [About skills in the SDK](./v4sdk/skills-conceptual.md)
-- [Use a Copilot Studio copilot as a skill](/power-virtual-agents/advanced-use-pva-as-a-skill)
-- [Configure a skill for use in Copilot Studio](/power-virtual-agents/configuration-add-skills)
+- [Use a Copilot Studio copilot as a skill](/microsoft-copilot-studio/advanced-use-pva-as-a-skill)
+- [Configure a skill for use in Copilot Studio](/microsoft-copilot-studio/configuration-add-skills)
 - [Implement a skill with the Bot Framework SDK](./v4sdk/skill-implement-skill.md)
 
 ## Next Steps
 
-- [Create and deploy a Copilot Studio copilot online](/power-virtual-agents/fundamentals-get-started)
+- [Create and deploy a Copilot Studio copilot online](/microsoft-copilot-studio/fundamentals-get-started)
 - [Create your first Health Bot](/azure/health-bot/quickstart-createyourhealthcarebot)
 - [Create a bot with the Bot Framework SDK](bot-service-quickstart-create-bot.md)

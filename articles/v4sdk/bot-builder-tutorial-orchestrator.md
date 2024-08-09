@@ -48,7 +48,7 @@ This sample is based on a predefined set of LUIS and QnA Maker projects.
 However, to use QnA Maker in your bot, you need an existing knowledge base in the [QnA Maker](https://www.qnamaker.ai/) portal.
 Your bot then can use the knowledge base to answer the user's questions.
 
-For new bot development, consider using [Microsoft Copilot Studio](/power-virtual-agents/fundamentals-what-is-power-virtual-agents).
+For new bot development, consider using [Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio).
 If you need to create a new knowledge base for a Bot Framework SDK bot, see the following Azure AI services articles:
 
 - [What is question answering?](/azure/ai-services/language-service/question-answering/overview)

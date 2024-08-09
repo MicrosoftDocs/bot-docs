@@ -15,6 +15,6 @@ ms.custom:
 >   
 > Existing bots built with the Java SDK will continue to function.
 >
-> For new bot building, consider using [Microsoft Copilot Studio](/power-virtual-agents) and read about [choosing the right copilot solution](../bot-overview.md).
+> For new bot building, consider using [Microsoft Copilot Studio](/microsoft-copilot-studio) and read about [choosing the right copilot solution](../bot-overview.md).
 >   
 > For more information, see [The future of bot building](https://powervirtualagents.microsoft.com/blog/the-future-of-bot-building/).
