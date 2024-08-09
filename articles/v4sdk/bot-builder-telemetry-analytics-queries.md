@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: azure-ai-bot-service
-ms.date: 10/11/2022
+ms.date: 08/08/2024
 ms.custom:
   - evergreen
 ---
@@ -30,7 +30,7 @@ It's helpful to have a basic understanding of the following concepts:
 * The basic concepts of [Log queries](/azure/azure-monitor/log-query/get-started-queries) in Azure Monitor
 
 > [!TIP]
-> If your create your bot using tools such as [Power Virtual Agents](/power-virtual-agents/fundamentals-what-is-power-virtual-agents) or [Composer](/composer), you'll want to use the Adaptive Dialog version of each query when available.
+> If your create your bot using tools such as [Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio) or [Composer](/composer), you'll want to use the Adaptive Dialog version of each query when available.
 
 ## Dashboards
 
@@ -147,7 +147,7 @@ customEvents
 Once you set the telemetry client for a dialog, the dialog (and its children) will emit some default telemetry data, such as _started_ and _completed_. This example can be used to measure the _completed_ dialogs relative to _started_ dialogs.  If the number of dialogs started is greater than the number completed, some of your users aren't completing the dialog flow. You can use this query to help you identify and troubleshoot any potential dialog logic. It can also be used to identify which dialogs are most and least frequently used.
 
 > [!TIP]
-> If your create your bot using tools such as [Power Virtual Agents](/power-virtual-agents/fundamentals-what-is-power-virtual-agents) or [Composer](/composer/), you'll want to use the adaptive dialog version of each query.
+> If your create your bot using tools such as [Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio) or [Composer](/composer/), you'll want to use the adaptive dialog version of each query.
 
 #### Waterfall dialog completion
 
@@ -182,7 +182,7 @@ customEvents
 #### Adaptive dialogs started and completed
 
 ```Kusto
-// % Completed adaptive dialog: shows completes relative to starts. This type is the default dialog type when using Power Virtual Agents or Composer. 
+// % Completed adaptive dialog: shows completes relative to starts. This type is the default dialog type when using Copilot Studio or Composer. 
 customEvents
 | where name=="AdaptiveDialogStart" or name == "AdaptiveDialogComplete"
 | extend DialogId = tostring(customDimensions['DialogId'])
@@ -225,7 +225,7 @@ customEvents
 #### Adaptive dialogs not completed
 
 ```Kusto
-// Show incomplete dialogs for adaptive dialogs; this type is the default dialog type when using Power Virtual Agents or Composer.
+// Show incomplete dialogs for adaptive dialogs; this type is the default dialog type when using Copilot Studio or Composer.
 let queryStartDate = ago(14d);
 let queryEndDate = now();
 customEvents

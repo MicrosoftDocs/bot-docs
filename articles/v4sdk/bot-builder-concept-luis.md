@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: conceptual
 ms.service: azure-ai-bot-service
-ms.date: 01/04/2023
+ms.date: 08/08/2024
 monikerRange: 'azure-bot-service-4.0'
 ms.custom:
   - evergreen
@@ -48,7 +48,7 @@ This article describes both the newer and older features and services, and where
 
 | Scenario | Guidance |
 |:-|:-|
-| New bot development | Consider using Power Virtual Agents, which is designed to support teams where members have a mix of skills and disciplines. For more information, see [Power Virtual Agents](/power-virtual-agents/fundamentals-what-is-power-virtual-agents) and [Enable advanced AI features](/power-virtual-agents/advanced-ai-features). |
+| New bot development | Consider using Microsoft Copilot Studio, which is designed to support teams where members have a mix of skills and disciplines. For more information, see [Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio) and [Enable advanced AI features](/microsoft-copilot-studio/advanced-ai-features). |
 | New language projects for existing Bot Framework SDK bots | Consider using features of the Azure AI Language service, such as conversational language understanding (CLU) and answering questions. |
 | Existing bots with existing language projects | Your language projects will continue to work, but consider migrating to Azure AI Language. For more information, see the [Migrate existing language projects](#migrate-existing-language-projects) section later in this article. |
 

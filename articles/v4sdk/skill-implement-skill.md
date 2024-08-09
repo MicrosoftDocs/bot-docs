@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: Gabo.Gilabert
 ms.service: azure-ai-bot-service
 ms.topic: how-to
-ms.date: 10/26/2022
+ms.date: 08/08/2024
 monikerRange: 'azure-bot-service-4.0'
 ms.custom:
   - evergreen
@@ -21,7 +21,7 @@ ms.custom:
 You can use skills to extend another bot.
 A _skill_ is a bot that can perform a set of tasks for another bot.
 
-- A skill's interface is described by a manifest. Developers who don't have access to the skill's source code can use the information in the manifest to design their skill consumer.
+- A manifest describes a skill's interface. Developers who don't have access to the skill's source code can use the information in the manifest to design their skill consumer.
 - A skill can use claims validation to manage which bots or users can access it.
 
 This article demonstrates how to implement a skill that echoes the user's input.
@@ -71,7 +71,7 @@ For information about the simple root bot, see how to [Implement a skill consume
 ## Resources
 
 For deployed bots, bot-to-bot authentication requires that each participating bot has valid identity information.
-However, you can test multi-tenant skills and skill consumers locally with the Emulator without an app ID and password.
+However, you can test multitenant skills and skill consumers locally with the Emulator without an app ID and password.
 
 To make the skill available to user-facing bots, register the skill with Azure. For more information, see how to [register a bot with Azure AI Bot Service](../bot-service-quickstart-registration.md).
 
@@ -80,7 +80,7 @@ To make the skill available to user-facing bots, register the skill with Azure. 
 Optionally, add the skill's identity information to its configuration file. If either the skill or skill consumer provides identity information, both must.
 
 The _allowed callers_ array can restrict which skill consumers can access the skill.
-Add an "*" element, to accept calls from any skill consumer.
+To accept calls from any skill consumer, add an "*" element.
 
 > [!NOTE]
 > If you're testing your skill locally without bot identity information, neither the skill nor the skill consumer run the code to perform claims validation.
@@ -131,7 +131,7 @@ The skill in this example doesn't accept input parameters.
 
 When the skill sends an activity, the skill consumer should forward the activity on to the user.
 
-However, you need to send an `endOfConversation` activity when the skill finishes; otherwise, the skill consumer will continue to forward user activities to the skill.
+However, you need to send an `endOfConversation` activity when the skill finishes; otherwise, the skill consumer continues to forward user activities to the skill.
 Optionally, use the activity's _value_ property to include a return value, and use the activity's _code_ property to indicate why the skill is ending.
 
 #### [C#](#tab/cs)
@@ -196,9 +196,9 @@ The logic for this skill doesn't change from turn to turn. If you implement a sk
 
 ## Claims validator
 
-This sample uses an allowed callers list for claims validation. The list is defined in the skill's configuration file and is read into the validator object when it's created.
+This sample uses an allowed callers list for claims validation. The skill's configuration file defines the list. The validator object then reads the list.
 
-You must add a _claims validator_ to the authentication configuration. The claims are evaluated after the authentication header. Your validation code should throw an error or exception to reject the request. There are many reasons you may want to reject an otherwise authenticated request. For example:
+You must add a _claims validator_ to the authentication configuration. The claims are evaluated after the authentication header. Your validation code should throw an error or exception to reject the request. There are many reasons you might want to reject an otherwise authenticated request. For example:
 
 - The skill is part of a paid-for service. User's not in the database shouldn't have access.
 - The skill is proprietary. Only certain skill consumers can call the skill.
@@ -232,7 +232,7 @@ Define a claims validation method that throws an error to reject an incoming req
 
 ## Skill adapter
 
-When an error occurs, the skill's adapter should clear conversation state for the skill, and it should also send an `endOfConversation` activity to the skill consumer. Use the _code_ property of the activity to signal that the skill ended due to an error.
+When an error occurs, the skill's adapter should clear conversation state for the skill, and it should also send an `endOfConversation` activity to the skill consumer. To signal that the skill ended due to an error, use the _code_ property of the activity.
 
 ### [C#](#tab/cs)
 
@@ -333,7 +333,7 @@ At this point, you can test the skill in the Emulator as if it were a normal bot
 Download and install the latest [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md)
 
 1. Run the echo skill bot locally on your machine. If you need instructions, refer to the `README` file for the [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/80.skills-simple-bot-to-bot), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/java_springboot/80.skills-simple-bot-to-bot), or [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/80.skills-simple-bot-to-bot) sample.
-1. Use the Emulator to test the bot as shown below. When you send an "end" or "stop" message to the skill, it sends an `endOfConversation` activity in addition to the reply message. The skill sends the `endOfConversation` activity to indicate the skill has finished.
+1. Use the Emulator to test the bot. When you send an "end" or "stop" message to the skill, it sends an `endOfConversation` activity in addition to the reply message. The skill sends the `endOfConversation` activity to indicate the skill is finished.
 
 :::image type="content" source="media/skills-simple-skill-test.png" alt-text="Example transcript showing the end-of-conversation activity.":::
 
@@ -344,4 +344,4 @@ Download and install the latest [Bot Framework Emulator](https://github.com/micr
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Implement a skill for Power Virtual Agents](skill-pva.md)
+> [Implement a skill for Copilot Studio](skill-pva.md)

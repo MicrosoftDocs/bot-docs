@@ -7,7 +7,7 @@ manager: leeclontz
 ms.reviewer: micchow
 ms.topic: overview
 ms.service: azure-ai-bot-service
-ms.date: 05/11/2023
+ms.date: 08/08/2024
 ms.custom:
   - mode-api
   - tab-zone-seo
@@ -16,36 +16,36 @@ ms.custom:
 
 # Choose the right chatbot solution for your use case
 
-A chatbot is an application that has written or spoken natural language as its user interface. In other words, a conversation is the means through which questions are answered, requests are serviced, and so on.
+A copilot is an application that has written or spoken natural language as its user interface. In other words, a conversation is the means through which questions are answered, requests are serviced, and so on.
 
-This article provides an overview of some of the chatbot solutions Microsoft provides. If you're new to making chatbots, we recommend starting with Power Virtual Agents.
+This article provides an overview of some of the chatbot solutions Microsoft provides. If you're new to making chatbots, we recommend starting with Copilot Studio.
 
 The following table lists Microsoft products and services for building bots, who they support, and a brief description. Following sections describe each product in more detail.
 
 | Product | Audience | Description |
 |:-|:-|:-|
-| [Power Virtual Agents](#power-virtual-agents) | Fusion teams, citizen developers | Power Virtual Agents is an end-to-end bot-building tool, with built-in natural language understanding models, data connectivity through Power Automate, and support for multiple channels. |
+| [Copilot Studio](#copilot-studio) | Fusion teams, citizen developers | Copilot Studio is an end-to-end copilot-building tool, with built-in natural language understanding models, data connectivity through Power Automate, and support for multiple channels. |
 | [Health Bot](#health-bot) | Healthcare organizations | Provides support for healthcare organizations. Health Bot helps you build and deploy compliant, AI-powered virtual health assistants and health bots. |
 | [Bot Framework SDK](#bot-framework-sdk) | Developers | Provides a framework for building bots, including tools, templates, and related AI services. The SDK is ideal for developers who want to build bots that are publicly available on the Microsoft Teams app store. |
 
-## Power Virtual Agents
+## Copilot Studio
 
-Power Virtual Agents is designed to support _fusion teams_&mdash;where professional developers and various subject matter experts collaborate. It also supports citizen developers and specialized vendors.
+Copilot Studio is designed to support _fusion teams_&mdash;where professional developers and various subject matter experts collaborate. It also supports citizen developers and specialized vendors.
 
-Power Virtual Agents is a tool for chatbot development that's included in [Microsoft Power Platform](https://powerplatform.microsoft.com/)&mdash;a business-application platform that incorporates data analysis, solution building, and process automation.
-You don't need to write code or understand the details of the underlying AI technologies to build bots in Power Virtual Agents.
+Copilot Studio is a tool for chatbot development that's included in [Microsoft Power Platform](https://powerplatform.microsoft.com/)&mdash;a business-application platform that incorporates data analysis, solution building, and process automation.
+You don't need to write code or understand the details of the underlying AI technologies to build bots in Copilot Studio.
 Such bots can apply automation and other capabilities within the Power Platform, and you can rapidly develop sophisticated chatbot experiences.
 
 - You can connect virtual agents to various user platforms, such as [Microsoft 365](https://www.microsoft.com/microsoft-365) and [Microsoft Dynamics 365](https://dynamics.microsoft.com/).
 - You can use over 600 prebuilt data connectors, available through Power Automate.
 
-For more information about Power Virtual Agents, see the [product overview page](https://powervirtualagents.microsoft.com). For details about pricing, see [Power Virtual Agents pricing](https://powervirtualagents.microsoft.com/pricing/).
+For more information about Copilot Studio, see the [product overview page](https://www.microsoft.com/microsoft-copilot/microsoft-copilot-studio/). For details about pricing, see [Copilot Studio pricing](https://www.microsoft.com/microsoft-copilot/microsoft-copilot-studio/#Pricing).
 
 ## Health Bot
 
 The Health Bot Service is a cloud platform that healthcare organizations can use to build and deploy compliant, AI-powered virtual health assistants and health bots. The service can help organizations improve processes and reduce costs. It offers your users _intelligent_ and _personalized_ access to health-related information and interactions through a natural conversation experience.
 
-The Health Bot Service is ideal for developers in IT departments of healthcare organizations such as providers, pharmaceutical companies, telemedicine providers, and health insurers. Healthcare organizations can use the service to build a _health bot instance_ and integrate it with their systems that patients, provdiders, and other representatives interact with.
+The Health Bot Service is ideal for developers in IT departments of healthcare organizations such as providers, pharmaceutical companies, telemedicine providers, and health insurers. Healthcare organizations can use the service to build a _health bot instance_ and integrate it with their systems that patients, providers, and other representatives interact with.
 
 The Health Bot Service contains a built-in medical database, including triage protocols. You can also extend a health bot instance to include your own scenarios and integrate with other IT systems and data sources.
 
@@ -79,12 +79,12 @@ Costs associated with the consumption of resources on Azure are in addition to t
 As an advanced scenario, you can create a _skill_ bot that provides features to other bots. You can develop the skill bot and the bot that _consumes_ the skill in different products. For more information about skill bots, see:
 
 - [About skills in the SDK](./v4sdk/skills-conceptual.md)
-- [Use a Power Virtual Agents bot as a skill](/power-virtual-agents/advanced-use-pva-as-a-skill)
-- [Configure a skill for use in Power Virtual Agents](/power-virtual-agents/configuration-add-skills)
+- [Use a Copilot Studio copilot as a skill](/microsoft-copilot-studio/advanced-use-pva-as-a-skill)
+- [Configure a skill for use in Copilot Studio](/microsoft-copilot-studio/configuration-add-skills)
 - [Implement a skill with the Bot Framework SDK](./v4sdk/skill-implement-skill.md)
 
 ## Next Steps
 
-- [Create and deploy a Power Virtual Agents bot online](/power-virtual-agents/fundamentals-get-started)
+- [Create and deploy a Copilot Studio copilot online](/microsoft-copilot-studio/fundamentals-get-started)
 - [Create your first Health Bot](/azure/health-bot/quickstart-createyourhealthcarebot)
 - [Create a bot with the Bot Framework SDK](bot-service-quickstart-create-bot.md)
