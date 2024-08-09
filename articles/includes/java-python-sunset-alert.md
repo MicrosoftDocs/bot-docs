@@ -5,7 +5,7 @@ ms.author: iawilt
 manager: leeclontz
 ms.reviewer: micchow
 ms.topic: include
-ms.date: 05/11/2023
+ms.date: 08/08/2024
 ms.custom:
   - evergreen
 ---
@@ -15,6 +15,6 @@ ms.custom:
 >   
 > Existing bots built with the Java SDK will continue to function.
 >
-> For new bot building, consider using [Power Virtual Agents](/power-virtual-agents) and read about [choosing the right chatbot solution](../bot-overview.md).
+> For new bot building, consider using [Microsoft Copilot Studio](/microsoft-copilot-studio) and read about [choosing the right copilot solution](../bot-overview.md).
 >   
 > For more information, see [The future of bot building](https://powervirtualagents.microsoft.com/blog/the-future-of-bot-building/).

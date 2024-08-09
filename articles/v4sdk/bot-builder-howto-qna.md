@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: azure-ai-bot-service
-ms.date: 10/26/2022
+ms.date: 08/08/2024
 monikerRange: 'azure-bot-service-4.0'
 
 ROBOTS: NOINDEX
@@ -42,7 +42,7 @@ For new bots, consider using the [question answering](bot-builder-concept-luis.m
 
 To use QnA Maker in your bot, you need an existing knowledge base in the [QnA Maker](https://www.qnamaker.ai/) portal. Your bot then can use the knowledge base to answer the user's questions.
 
-For new bot development, consider using [Power Virtual Agents](/power-virtual-agents/fundamentals-what-is-power-virtual-agents).
+For new bot development, consider using [Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio).
 If you need to create a new knowledge base for a Bot Framework SDK bot, see the following Azure AI services articles:
 
 - [What is question answering?](/azure/ai-services/language-service/question-answering/overview)
