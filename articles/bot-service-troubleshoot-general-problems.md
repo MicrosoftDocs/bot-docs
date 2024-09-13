@@ -91,7 +91,7 @@ All dialog steps need to feed into the next step of the waterfall, or end the cu
 
 ## What causes an error with HTTP status code 429 "Too Many Requests"?
 
-An error response with HTTP status code 429 indicates that too many requests have been issued in a given amount of time. The body of the response should include an explanation of the problem and may also specify the minimum required interval between requests. One possible source for this error is the [ngrok](https://ngrok.com/) tool. If you're on a free plan and running into ngrok's limits, go to the pricing and limits page on their website for more [options](https://ngrok.com/product#pricing).
+An error response with HTTP status code 429 indicates that too many requests have been issued in a given amount of time. The body of the response should include an explanation of the problem and may also specify the minimum required interval between requests. 
 
 ## Why aren't my bot messages getting received by the user?
 
