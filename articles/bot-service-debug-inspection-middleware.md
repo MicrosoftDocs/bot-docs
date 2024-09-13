@@ -177,7 +177,7 @@ To run your bot locally:
 1. Open another command prompt and go to your bot's project folder. Run the following command:
 
     ```console
-   devtunnel -a -p 3978
+   devtunnel host -a -p 3978
     ```
 
 1. devtunnel is now connected to your locally running bot. Copy the secure (HTTPS) public URL.

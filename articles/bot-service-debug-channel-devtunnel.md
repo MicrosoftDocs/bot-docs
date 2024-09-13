@@ -39,7 +39,7 @@ This article describes how to debug your bot locally using a tunnel and a C# [Ec
 1. Run devtunnel with the following command to create a new tunnel.
 
     ```console
-    devtunnel -a -p 3978
+    devtunnel host -a -p 3978
     ```
 
     > [!NOTE]
