@@ -2068,6 +2068,11 @@
       "source_path": "articles/bot-service-overview-introduction.md",
       "redirect_url": "/azure/bot-service/bot-service-overview",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "articles/bot-service-debug-channel-ngrok.md",
+      "redirect_url": "articles/bot-service-debug-channel-devtunnel.md",
+      "redirect_document_id": true
     }
   ]
 }
