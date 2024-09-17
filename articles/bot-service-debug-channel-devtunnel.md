@@ -48,7 +48,7 @@ This article describes how to debug your bot locally using a tunnel and a C# [Ec
 
 1. When devtunnel starts, copy and save the public forwarding URL for later.
 
-    :::image type="content" source="media/debug-devtunnel/devtunnel-forwarding-url.png" alt-text="devtunnel forwarding URL":::
+   :::image type="content" source="media/debug-devtunnel/devtunnel-forwarding-url.png" alt-text="devtunnel forwarding URL":::
 
 ## Configure in Azure portal
 
@@ -58,7 +58,7 @@ While devtunnel is running, sign in to your Azure portal and view your bot setti
 
 1. Locate **Settings/Configuration**. Copy and paste the devtunnel forwarding URL in the **Messaging endpoint** field. Ensure that you maintain "/api/messages" at the end of the URL.
 
-    :::image type="content" source="media/debug-devtunnel/messaging-endpoint.png" alt-text="Messaging endpoint":::
+   :::image type="content" source="media/debug-devtunnel/messaging-endpoint.png" alt-text="Messaging endpoint":::
 
 1. Select **Apply**.
 
