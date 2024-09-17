@@ -70,11 +70,11 @@ Use the following guidelines when creating and including art files:
     ![This is an example of a browser window screenshot.](./media/create-images-markdown/helloworldlocal.png)
 * Use caution with what information is revealed in screenshots.  Do not reveal internal company information or personal information.
 * In conceptual art or diagrams, use the official icons in the Cloud and Enterprise symbol and icon set. A public set is available at https://aka.ms/CnESymbols.
-* Replace personal or private information in screenshots with placeholder text enclosed in angle brackets. This includes user names, subscription IDs, and other related info. Personal names can be replaced with an [approved fictitious name](https://aka.ms/ficticiousnames)(Employee-only link). Do not use the crayon or marker tip in Paint to obscure or blur personal or private information.
+* Replace personal or private information in screenshots so that real information is not used. This includes user names, subscription IDs, and other related info. Personal names can be replaced with an [approved fictitious name](https://aka.ms/ficticiousnames)(Employee-only link). IDs can either be obscured with a colored box or replaced with a fictional ID from an [Approved list of sensitive identifiers](https://review.learn.microsoft.com/en-us/help/platform/reference-sensitive-identifier?branch=main) Do not use the crayon or marker tip in Paint to obscure or blur personal or private information.
   
-  The following image has been correctly updated to replace the actual **subscription ID** with placeholder information:
+  The following image has been correctly updated to replace the actual **subscription ID** with fictional information:
   
-  ![Private information replaced with placeholder](./media/create-images-markdown/placeholder-in-screenshot-correct.png)
+  ![Private information replaced with fictional information](./media/create-images-markdown/replace-information-fictional.png)
 
 ### Contributors' Guide Links
 
