@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: azure-ai-bot-service
-ms.date: 09/12/2024
+ms.date: 09/17/2024
 monikerRange: 'azure-bot-service-4.0'
 ms.custom:
   - evergreen
@@ -30,7 +30,7 @@ This article describes how to debug your bot locally using a tunnel and a C# [Ec
 - Install a tunneling software such as [Dev Tunnels](https://aka.ms/devtunnels).
 - A C# [Echo bot](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/02.echo-bot), configured as a multi-tenant app, and connected to any [channel](bot-service-manage-channels.md).
 
-## Configue a tunnel
+## Configure a tunnel
 
 [Dev Tunnels](https://aka.ms/devtunnels) is a cross-platform application that can create a tunneling or forwarding URL, so that internet requests reach your local machine. Use devtunnel to forward messages from external channels on the web directly to your local machine to allow debugging, as opposed to the standard messaging endpoint configured in the Azure portal.
 
