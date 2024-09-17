@@ -2,10 +2,10 @@
 title: Debug a channel using a tunnel
 description: Understand how to debug a channel using a tunnel
 keywords: debugging, channel, tunnel
-author: JonathanFingold
-ms.author: iawilt
-manager: shellyha
-ms.reviewer: micchow
+author: rido-min
+ms.author: rido-min
+manager: kjette
+ms.reviewer: cyanderson
 ms.topic: how-to
 ms.service: azure-ai-bot-service
 ms.date: 09/17/2024
