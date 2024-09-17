@@ -57,11 +57,11 @@ For more information, see [create a storage account](/azure/storage/common/stora
 
 ## Create a bot resource
 
-1. Setup ngrok and retrieve a URL to be used as the bot's _messaging endpoint_ during local debugging. The messaging endpoint will be the HTTPS forwarding URL with `/api/messages/` appended&mdash;the default port for new bots is 3978.
+1. Setup Dev Tunnels and retrieve a URL to be used as the bot's _messaging endpoint_ during local debugging. The messaging endpoint will be the HTTPS forwarding URL with `/api/messages/` appended&mdash;the default port for new bots is 3978.
 
-    For more information, see how to [debug a bot using ngrok](../bot-service-debug-channel-ngrok.md).
+    For more information, see how to [debug a bot using devtunnel](../bot-service-debug-channel-devtunnel.md).
 
-1. Create an Azure Bot resource in the Azure portal or with the Azure CLI. Set the bot's messaging endpoint to the one you created with ngrok. After the bot resource is created, obtain the bot's Microsoft app ID and password. Enable the Direct Line channel, and retrieve a Direct Line secret. You'll add these to your bot code and C# function.
+1. Create an Azure Bot resource in the Azure portal or with the Azure CLI. Set the bot's messaging endpoint to the one you created with Dev Tunnels. After the bot resource is created, obtain the bot's Microsoft app ID and password. Enable the Direct Line channel, and retrieve a Direct Line secret. You'll add these to your bot code and C# function.
 
     For more information, see how to [manage a bot](../bot-service-manage-overview.md) and how to [connect a bot to Direct Line](../bot-service-channel-connect-directline.md).
 
@@ -499,7 +499,7 @@ public void ConfigureServices(IServiceCollection services)
 | Azure portal | [Manage a bot](../bot-service-manage-overview.md)<br/>[Connect a bot to Direct Line](../bot-service-channel-connect-directline.md) |
 | Azure Storage | [Azure Queue Storage](/azure/storage/queues/storage-queues-introduction)<br/>[Create a storage account](/azure/storage/common/storage-account-create)<br/>[Copy your credentials from the Azure portal](/azure/storage/queues/storage-dotnet-how-to-use-queues?tabs=dotnet#copy-your-credentials-from-the-azure-portal)<br/>[How to Use Queues](/azure/storage/queues/storage-dotnet-how-to-use-queues) |
 | Bot basics | [How bots work][concept-basics]<br/>[Prompts in waterfall dialogs](bot-builder-concept-waterfall-dialogs.md#prompts)<br/>[Proactive messaging](bot-builder-howto-proactive-message.md) |
-| ngrok | [Debug a bot using ngrok](../bot-service-debug-channel-ngrok.md) |
+| Dev Tunnels | [Debug a bot using devtunnel](../bot-service-debug-channel-devtunnel.md) |
 
 [concept-basics]: bot-builder-basics.md
 [concept-dialogs]: bot-builder-concept-dialog.md

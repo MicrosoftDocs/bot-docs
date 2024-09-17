@@ -92,7 +92,7 @@ The _send activity_ method, and its handlers, pose a unique problem. Simply call
 
 ## Debugging a production bot
 
-When your bot is in production, you can debug your bot from any channel using **ngrok**. The seamless connection of your bot to multiple channels is a key feature available in Bot Framework. For more information, see [Debug a bot from any channel using ngrok](../bot-service-debug-channel-ngrok.md) and [Debug a skill or skill consumer](skills-debug-skill-or-consumer.md).
+When your bot is in production, you can debug your bot from any channel using **Dev Tunnels**. The seamless connection of your bot to multiple channels is a key feature available in Bot Framework. For more information, see [Debug a bot from any channel using devtunnel](../bot-service-debug-channel-devtunnel.md) and [Debug a skill or skill consumer](skills-debug-skill-or-consumer.md).
 
 ## Next steps
 

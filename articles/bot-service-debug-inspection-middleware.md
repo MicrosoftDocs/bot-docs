@@ -29,12 +29,12 @@ We use an EchoBot built locally using the Bot Framework v4 in the [Create a bot 
 - Knowledge of bot [Middleware](v4sdk/bot-builder-concept-middleware.md) and [Managing state](v4sdk/bot-builder-concept-state.md)
 - Knowledge of how to [Debug an SDK-first bot](bot-service-debug-bot.md) and [Test and debug with the Emulator](bot-service-debug-emulator.md)
 - An install of the [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md)
-- An install [ngrok](https://ngrok.com/) (if you want to debug a bot configured in Azure to use other channels)
+- An install [Dev Tunnel](https://aka.ms/devtunnels) (if you want to debug a bot configured in Azure to use other channels)
 - A copy of the inspection bot sample for [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/47.inspection), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/47.inspection), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/47.inspection), or [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/47.inspection)
 
 ## Update your Emulator to the latest version
 
-Before using bot inspection middleware to debug your bot, update your Emulator to version 4.5 or later. Check the [latest version](https://github.com/Microsoft/BotFramework-Emulator/releases) for updates.
+Before using bot inspection middleware to debug your bot, update your Emulator to version 4.15 or later. Check the [latest version](https://github.com/Microsoft/BotFramework-Emulator/releases) for updates.
 
 To check the version of your Emulator, select **Help**, then **About** in the menu. You'll see the current version of your Emulator.
 
@@ -162,11 +162,11 @@ After updating the code, you can run your bot locally and test the debugging fea
 
 ## Inspect the state of a bot configured in Azure
 
-If you want to inspect the state of your bot configured in Azure and connected to channels (like Teams) you'll need to install and run [ngrok](https://ngrok.com/).
+If you want to inspect the state of your bot configured in Azure and connected to channels (like Teams) you'll need to install and run [Dev Tunnels](https://aka.ms/devtunnels).
 
-### Run ngrok
+### Run devtunnel
 
-At this point, you've updated your Emulator to the latest version and added the inspection middleware in your bot's code. The next step is to run ngrok and configure your local bot. Before running ngrok you need to run your bot locally.
+At this point, you've updated your Emulator to the latest version and added the inspection middleware in your bot's code. The next step is to run devtunnel and configure your local bot. Before running devtunnel you need to run your bot locally.
 
 To run your bot locally:
 
@@ -177,22 +177,22 @@ To run your bot locally:
 1. Open another command prompt and go to your bot's project folder. Run the following command:
 
     ```console
-    ngrok http 3978
+   devtunnel host -a -p 3978
     ```
 
-1. ngrok is now connected to your locally running bot. Copy the secure (HTTPS) public IP address.
+1. devtunnel is now connected to your locally running bot. Copy the secure (HTTPS) public URL.
 
-    :::image type="content" source="./media/bot-debug-inspection-middleware/bot-debug-ngrok.png" alt-text="ngrok success":::
+    :::image type="content" source="./media/debug-devtunnel/devtunnel-forwarding-url.png" alt-text="devtunnel success":::
 
 ### Update your bot resource
 
-Now that your local bot is connected to ngrok, you can configure your bot resource in Azure to use the ngrok URL.
+Now that your local bot is connected to devtunnel, you can configure your bot resource in Azure to use the devtunnel URL.
 
 1. Go to your bot resource in Azure. On the left menu, under **Settings**, select **Configuration**.
-   1. Set the **Messaging endpoint** to the ngrok IP address you copied. If necessary add **/api/messages** after the IP address. For example, `https://e58549b6.ngrok.io/api/messages`.
+   1. Set the **Messaging endpoint** to the devtunnel URL address you copied. If necessary add **/api/messages** after the IP address. For example, `https://0qg12llz-3978.usw2.devtunnels.ms/api/messages`.
    1. Select **Enable Streaming Endpoint**.
 
-       :::image type="content" source="./media/bot-debug-inspection-middleware/bot-debug-channels-setting-ngrok.png" alt-text="Set endpoint":::
+       :::image type="content" source="./media/bot-debug-inspection-middleware/bot-debug-channels-setting-devtunnel.png" alt-text="Set endpoint":::
 
    1. Select **Apply** to save your changes.
        > [!TIP]
@@ -212,7 +212,7 @@ Now that your local bot is connected to ngrok, you can configure your bot resour
 ### Enable debugging mode
 
 1. In your Emulator, select **Debug**, then **Start Debugging**.
-1. Enter the ngrok IP address (don't forget to add **/api/messages**) for the **Bot URL** (for example, `https://e58549b6.ngrok.io/api/messages`).
+1. Enter the devtunnel URL (don't forget to add **/api/messages**) for the **Bot URL** (for example, `https://4jj51x75-51865.usw2.devtunnels.ms/api/messages`).
    1. For **Microsoft App ID**, enter your bot's app ID.
    1. For **Microsoft App password**, enter your bot's app secret.
    1. Make sure **Open in debug mode** is checked as well.

@@ -223,7 +223,7 @@ If the bot responds appropriately to the input, you've verified that your bot is
 If you're still experiencing issues after completing the steps above, you can:
 
 - Review how-to [debug a bot](bot-service-debug-bot.md) and the other debugging articles in that section.
-- [Debug your bot in the cloud](bot-service-debug-emulator.md) using the Bot Framework Emulator and [ngrok](https://ngrok.com/) tunneling software. *ngrok isn't a Microsoft product.*
+- [Debug your bot in the cloud](bot-service-debug-emulator.md) using the Bot Framework Emulator and [Dev Tunnels](https://aka.ms/devtunnels tunneling software. 
 - Use a proxying tool like [Fiddler](https://www.telerik.com/fiddler) to inspect HTTPS traffic to and from your bot. *Fiddler isn't a Microsoft product.*
 - Review the [Bot Connector authentication guide][BotConnectorAuthGuide] to learn about the authentication technologies that the Bot Framework uses.
 - Solicit help from others by using the Bot Framework [support][Support] resources.
