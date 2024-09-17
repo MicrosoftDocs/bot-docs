@@ -359,8 +359,8 @@ At this point, your bot is running locally on port 3978.
 
 ## Next steps
 
-- For information about how to debug using Visual Studio or Visual Studio Code and the Bot Framework Emulator, see [Debug a bot](bot-service-debug-channel-ngrok.md).
-- For information about ngrok, see [Tunneling (ngrok)](https://github.com/Microsoft/BotFramework-Emulator/wiki/Tunneling-(ngrok)).
+- For information about how to debug using Visual Studio or Visual Studio Code and the Bot Framework Emulator, see [Debug a bot](bot-service-debug-channel-devtunnel.md).
+- For information about devtunnel, see [Tunneling (devtunnel)](https://github.com/Microsoft/BotFramework-Emulator/wiki/Tunneling-(devtunnel)).
 
 > [!div class="nextstepaction"]
 > [Deploy your bot to Azure](bot-builder-deploy-az-cli.md)

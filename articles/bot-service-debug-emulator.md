@@ -116,7 +116,6 @@ If a bot requires authentication, displaying a login dialog, you must configure 
 
 1. Start the Emulator.
 1. In the Emulator, select **Settings** (the gear icon) in the left pane.
-1. Enable **Bypass ngrok for local addresses**.
 1. Enable **Use a sign-in verification code for OAuthCards**.
 1. Select **Save**.
 
@@ -130,8 +129,6 @@ Alternatively, you can perform the steps described below.
 
 1. Start the Emulator.
 1. In the Emulator, select **Settings** (the gear icon) in the left pane.
-1. Enter the local path to ngrok. For more information about ngrok, see [ngrok](https://ngrok.com/).
-1. Enable **Run ngrok when the Emulator starts up**.
 1. Enable **Use version 1.0 authentication tokens**.
 1. Select **Save**.
 

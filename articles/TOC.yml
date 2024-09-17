@@ -184,8 +184,8 @@
       href: bot-service-debug-bot.md
     - name: Debug with the Bot Framework Emulator
       href: bot-service-debug-emulator.md
-    - name: Debug a bot from any channel using ngrok
-      href: bot-service-debug-channel-ngrok.md
+    - name: Debug a bot from any channel using Dev Tunnels
+      href: bot-service-debug-channel-devtunnel.md
     - name: Debug a skill or skill consumer
       href: v4sdk/skills-debug-skill-or-consumer.md
     - name: Debug a bot with inspection middleware

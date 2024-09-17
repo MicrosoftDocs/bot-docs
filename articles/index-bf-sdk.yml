@@ -77,7 +77,7 @@ landingContent:
           - text: Add trace activities to your bot
             url: v4sdk/using-trace-activities.md
           - text: Test a published bot with the Emulator
-            url: bot-service-debug-channel-ngrok.md
+            url: bot-service-debug-channel-devtunnel.md
           - text: Debug a skill or skill consumer
             url: v4sdk/skills-debug-skill-or-consumer.md
 
