@@ -15,11 +15,11 @@ ms.custom:
 
 # Configure Bot Framework bots for China customers
 
-This article is for China customers who are deploying Bot Framework and Azure AI Bot Service bots to the Microsoft Azure Mooncake cloud.
+This article is for China/Mooncake customers who are deploying Bot Framework and Azure AI Bot Service bots to the Microsoft Azure Mooncake cloud.
 
 ## Prerequisites
 
-- An account in the Azure Mooncake cloud.
+- An account in the Azure China cloud.
 - The C# or JavaScript bot project you want to configure.
 - Bot Framework SDK version 4.14 or later.
 
@@ -139,7 +139,7 @@ To configure a bot to connect to a channel, complete the following steps:
 4. In the right pane, select the icon of the channel you want to add to your bot. You may need to scroll down to see the list of all **Available Channels**.
 
 
-The connection steps vary for each channel. Refer to the related article in the table below for more information on Mooncake supported channels.
+The connection steps vary for each channel. Refer to the related article in the table below for more information on Azure China cloud supported channels.
 
 | Channel | Description |
 |:-|:-|
@@ -151,7 +151,7 @@ The connection steps vary for each channel. Refer to the related article in the 
 
 ## Next steps
 
-With these steps, your bot should be configured to work successfully in the Azure Mooncake cloud. Other useful references regarding Bot Service in Azure Mooncake.
+With these steps, your bot should be configured to work successfully in the Azure China cloud. Other useful references regarding Bot Service in Azure China.
 
 - [Tutorial: Deploy a basic bot using Azure AI Bot Service](tutorial-publish-a-bot.md)
 - [Add authentication to a bot in Bot Framework SDK](v4sdk/bot-builder-authentication.md)
