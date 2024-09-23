@@ -39,7 +39,7 @@ You can configure your bot to communicate with people via Microsoft Teams. This 
 >
 > - The **Calling** tab supports the Teams calling feature. For more information, see [Register calls and meetings bot for Microsoft Teams](/microsoftteams/platform/bots/calls-and-meetings/registering-calling-bot).
 > - The **Publish** tab contains information about how to publish your Teams app to the Teams Store.
-> - The **China Mooncake** cloud does not support the **Get bot embed code** feature. To test the Teams channel, create the Teams app and deploy it using the steps mentioned below.
+> - The **Microsoft Azure operated by 21Vianet** does not support the **Get bot embed code** feature. To test the Teams channel, create the Teams app and deploy it using the steps mentioned below.
 
 ## Test your bot in Teams
 
