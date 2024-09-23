@@ -30,7 +30,7 @@ The cloud adapter lets you specify settings specific to the Azure Mooncake cloud
 
 ### [C#](#tab/csharp)
 
-The `ConfigurationBotFrameworkAuthentication` class reads authentication settings from your bot configuration file. Upon creation, the cloud adapter will utilize these authentication settings.
+The `ConfigurationBotFrameworkAuthentication` class reads authentication settings from your bot configuration file. Upon creation, the cloud adapter utilizes these authentication settings.
 
 Make sure that the `ConfigureServices` method in your **Startup.cs** file contains this line.
 
@@ -54,7 +54,7 @@ const adapter = new CloudAdapter(botFrameworkAuthentication);
 
 ## Configure UserAssignedMSI/SingleTenant Bot
 
-Extra authentication settings are necessary for the bot to function correctly in the Mooncake environment. Ensure to replace "App-Tenant-Id" with the bot's tenant ID.
+Extra authentication settings are necessary for the bot to function correctly in the Mooncake environment. Ensure to replace "App-Tenant-ID" with the bot's tenant ID.
 
 ### [C#](#tab/csharp)
 
@@ -62,7 +62,7 @@ Add the following settings to your **appsettings.json** file.
 
 ```json
 "OAuthUrl": "https://token.botframework.azure.cn/", 
-"ToChannelFromBotLoginUrl": "https://login.partner.microsoftonline.cn/<App-Tenant-Id>",
+"ToChannelFromBotLoginUrl": "https://login.partner.microsoftonline.cn/<App-Tenant-ID>",
 "ToChannelFromBotOAuthScope": "https://api.botframework.azure.cn",
 "ToBotFromChannelTokenIssuer": "https://api.botframework.azure.cn",
 "ToBotFromChannelOpenIdMetadataUrl": "https://login.botframework.azure.cn/v1/.well-known/openidconfiguration",
@@ -139,8 +139,7 @@ To configure a bot to connect to a channel, complete the following steps:
 4. In the right pane, select the icon of the channel you want to add to your bot. You may need to scroll down to see the list of all **Available Channels**.
 
 
-The connection steps are different for each channel. See the related article in the table below more information. (Mooncake supported channels)
-
+The connection steps vary for each channel. Refer to the related article in the table below for more information on Mooncake supported channels.
 
 | Channel | Description |
 |:-|:-|

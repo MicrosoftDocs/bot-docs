@@ -18,7 +18,7 @@ Azure AI Bot Service provides different OAuth and OAuth redirect URLs to meet sp
 
 - The bot needs the OAuth URL at run time.
 - You need to provide the OAuth redirect URL when you create or configure your OAuth identity provider.
-- For more information, see [how to add authentication to your a bot](v4sdk/bot-builder-authentication.md).
+- For more information, see [how to add authentication to your bot](v4sdk/bot-builder-authentication.md).
 
 Choose the URLs to use with your bot and identity provider based on your data residency requirements and whether your bot is in the public cloud or the Microsoft Azure Government cloud.
 
