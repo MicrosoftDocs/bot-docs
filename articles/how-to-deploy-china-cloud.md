@@ -1,6 +1,6 @@
 ---
-title: Deploy Bots to Azure Mooncake
-description: Learn how to configure a bot to operate in the Microsoft Azure Mooncake.
+title: Deploy Bots to Microsoft Azure operated by 21Vianet
+description: Learn how to configure a bot to operate in the Microsoft Azure operated by 21Vianet.
 author: singhvikra-micro
 ms.author: singhvikra
 manager: kunsingh
@@ -13,20 +13,20 @@ ms.custom:
   - evergreen
 ---
 
-# Configure Bot Framework bots for China customers
+# Configure a bot in Microsoft Azure operated by 21Vianet
 
-This article is for China/Mooncake customers who are deploying Bot Framework and Azure AI Bot Service bots to the Microsoft Azure Mooncake cloud.
+This guide is designed for Microsoft Azure customers deploying Bot Framework and Azure AI Bot Service bots on the Microsoft Azure platform operated by 21Vianet.
 
 ## Prerequisites
 
-- An account in the Azure China cloud.
+- An account in the Microsoft Azure.
 - The C# or JavaScript bot project you want to configure.
 - Bot Framework SDK version 4.14 or later.
 
 ## Use the cloud adapter
 
 Make sure that your bot uses the _cloud adapter_, or an adapter that derives from the cloud adapter.
-The cloud adapter lets you specify settings specific to the Azure Mooncake cloud.
+The cloud adapter lets you specify settings specific to the Microsoft Azure Cloud.
 
 ### [C#](#tab/csharp)
 
@@ -54,7 +54,7 @@ const adapter = new CloudAdapter(botFrameworkAuthentication);
 
 ## Configure UserAssignedMSI/SingleTenant Bot
 
-Extra authentication settings are necessary for the bot to function correctly in the Mooncake environment. Ensure to replace "App-Tenant-ID" with the bot's tenant ID.
+To ensure the bot functions correctly in the Microsoft Azure Cloud, additional authentication settings are necessary. Replace the "App-Tenant-ID" with the bot's tenant ID.
 
 ### [C#](#tab/csharp)
 
@@ -124,8 +124,8 @@ ValidateAuthority=true
 
 Your bot can use various identity providers to access resources on behalf of a user, such as Microsoft Entra ID and many other OAuth providers.
 
-The Mooncake environment uses a redirect URL that is different from the ones used for other environments.
-When configuring your bot for authentication within the Mooncake environment, use `https://token.botframework.azure.cn/.auth/web/redirect` as the OAuth redirect URL and follow the steps in how to [add authentication to your bot](v4sdk/bot-builder-authentication.md).
+The Microsoft Azure Cloud uses a redirect URL that is different from the ones used for other environments.
+To configuring your bot for authentication, use `https://token.botframework.azure.cn/.auth/web/redirect` as the OAuth redirect URL and follow the steps in how to [add authentication to your bot](v4sdk/bot-builder-authentication.md).
 
 ---
 
@@ -139,7 +139,7 @@ To configure a bot to connect to a channel, complete the following steps:
 4. In the right pane, select the icon of the channel you want to add to your bot. You may need to scroll down to see the list of all **Available Channels**.
 
 
-The connection steps vary for each channel. Refer to the related article in the table below for more information on Azure China cloud supported channels.
+The connection steps vary for each channel. Refer to the related article in the table below for more information on supported channels.
 
 | Channel | Description |
 |:-|:-|
@@ -151,7 +151,7 @@ The connection steps vary for each channel. Refer to the related article in the 
 
 ## Next steps
 
-With these steps, your bot should be configured to work successfully in the Azure China cloud. Other useful references regarding Bot Service in Azure China.
+With these steps, your bot should be configured to work successfully. Other useful references regarding Bot Service.
 
 - [Tutorial: Deploy a basic bot using Azure AI Bot Service](tutorial-publish-a-bot.md)
 - [Add authentication to a bot in Bot Framework SDK](v4sdk/bot-builder-authentication.md)
