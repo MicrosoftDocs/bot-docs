@@ -15,7 +15,7 @@ ms.custom:
 
 # Configure a bot in Microsoft Azure operated by 21Vianet
 
-This guide is designed for Microsoft Azure customers deploying Bot Framework and Azure AI Bot Service bots on the Microsoft Azure platform operated by 21Vianet.
+This guide helps Microsoft Azure customers deploy Bot Framework and Azure AI Bot Service bots on the Microsoft Azure platform operated by 21Vianet.
 
 ## Prerequisites
 
@@ -54,7 +54,7 @@ const adapter = new CloudAdapter(botFrameworkAuthentication);
 
 ## Configure UserAssignedMSI/SingleTenant Bot
 
-To ensure the bot functions correctly in the Microsoft Azure Cloud, additional authentication settings are necessary. Replace the "App-Tenant-ID" with the bot's tenant ID.
+To ensure the bot functions correctly in the Microsoft Azure Cloud, extra authentication settings are necessary. Replace the "App-Tenant-ID" with the bot's tenant ID.
 
 ### [C#](#tab/csharp)
 
@@ -136,10 +136,7 @@ To configure a bot to connect to a channel, complete the following steps:
 1. Sign in to the [Azure portal](https://portal.azure.cn).
 2. Select the bot that you want to configure.
 3. In the left pane, select **Channels** under **Settings**.
-4. In the right pane, select the icon of the channel you want to add to your bot. You may need to scroll down to see the list of all **Available Channels**.
-
-
-The connection steps vary for each channel. Refer to the related article in the table below for more information on supported channels.
+4. In the right pane, select the icon of the channel you want to add to your bot. You may need to scroll down to see the list of all **Available Channels**. The connection steps vary for each channel. For more information on supported channels, see the related articles.
 
 | Channel | Description |
 |:-|:-|
