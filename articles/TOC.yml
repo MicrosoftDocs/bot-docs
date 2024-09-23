@@ -205,7 +205,7 @@
       href: provision-azure-bot.md
     - name: Configure an Azure Government bot
       href: how-to-deploy-gov-cloud-high.md
-    - name: Configure an Azure China bot
+    - name: Configure a bot in Microsoft Azure operated by 21Vianet
       href: how-to-deploy-china-cloud.md
     - name: Set up continuous deployment
       displayName: Set up continuous integration and delivery, Set up CI/CD, Set up CICD
