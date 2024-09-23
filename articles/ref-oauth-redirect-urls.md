@@ -29,6 +29,7 @@ Choose the URLs to use with your bot and identity provider based on your data re
 | United States  | Public           | `https://unitedstates.token.botframework.com` | `https://unitedstates.token.botframework.com/.auth/web/redirect` |
 | India         | Public           | `https://india.token.botframework.com`       | `https://india.token.botframework.com/.auth/web/redirect`       |
 | None           | Azure Government | `https://token.botframework.azure.us`         | `https://token.botframework.azure.us/.auth/web/redirect`         |
+| None           | China Mooncake | `https://token.botframework.azure.cn`         | `https://token.botframework.azure.cn/.auth/web/redirect`         |
 
 The default OAuth and OAuth redirect URLs are `https://token.botframework.com` and `https://token.botframework.com/.auth/web/redirect`, which can be used for public-cloud bots with no data residency requirements.
 
@@ -62,3 +63,4 @@ See these articles for related information.
 - [Regionalization in Azure AI Bot Service](v4sdk/bot-builder-concept-regionalization.md)
 - [Bot Framework authentication basics](v4sdk/bot-builder-authentication-basics.md)
 - [Configure Bot Framework bots for US Government customers](how-to-deploy-gov-cloud-high.md)
+- [Configure Bot Framework bots for China Mooncake customers](how-to-deploy-china-cloud.md)
