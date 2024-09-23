@@ -15,7 +15,7 @@ ms.custom:
 
 # Configure Bot Framework bots for China customers
 
-This article is for china customers who are deploying Bot Framework and Azure AI Bot Service bots to the Microsoft Azure Mooncake cloud.
+This article is for China customers who are deploying Bot Framework and Azure AI Bot Service bots to the Microsoft Azure Mooncake cloud.
 
 ## Prerequisites
 
@@ -30,8 +30,7 @@ The cloud adapter lets you specify settings specific to the Azure Mooncake cloud
 
 ### [C#](#tab/csharp)
 
-The `ConfigurationBotFrameworkAuthentication` class reads authentication settings from your bot configuration file.
-The cloud adapter, when it's created, will use these authentication settings.
+The `ConfigurationBotFrameworkAuthentication` class reads authentication settings from your bot configuration file. Upon creation, the cloud adapter will utilize these authentication settings.
 
 Make sure that the `ConfigureServices` method in your **Startup.cs** file contains this line.
 
@@ -55,7 +54,7 @@ const adapter = new CloudAdapter(botFrameworkAuthentication);
 
 ## Configure UserAssignedMSI/SingleTenant Bot
 
-Additional authentication settings are necessary for the bot to function correctly in the Mooncake environment. Ensure to replace "App-Tenant-Id" with the bot's tenant ID.
+Extra authentication settings are necessary for the bot to function correctly in the Mooncake environment. Ensure to replace "App-Tenant-Id" with the bot's tenant ID.
 
 ### [C#](#tab/csharp)
 
@@ -89,7 +88,7 @@ ValidateAuthority=true
 
 ## Configure MultiTenant Bot
 
-For the MultiTenant bot use the following settings.
+For the multitenant bot, use the following settings.
 
 ### [C#](#tab/csharp)
 
@@ -153,7 +152,7 @@ The connection steps are different for each channel. See the related article in 
 
 ## Next steps
 
-With these steps your bot should be configured to work successfully in the Azure Mooncake cloud. Other useful references regarding Bot Service in Azure Mooncake.
+With these steps, your bot should be configured to work successfully in the Azure Mooncake cloud. Other useful references regarding Bot Service in Azure Mooncake.
 
 - [Tutorial: Deploy a basic bot using Azure AI Bot Service](tutorial-publish-a-bot.md)
 - [Add authentication to a bot in Bot Framework SDK](v4sdk/bot-builder-authentication.md)
