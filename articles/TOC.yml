@@ -42,6 +42,8 @@
       href: v4sdk/bot-builder-authentication.md
     - name: Add single sign-on to a bot
       href: v4sdk/bot-builder-authentication-sso.md
+    - name: Add authentication using federated credentials
+      href: v4sdk/bot-builder-authentication-federated-credential.md  
   - name: Enhanced authentication
     href: v4sdk/bot-builder-security-enhanced.md
   - name: Security guidelines
