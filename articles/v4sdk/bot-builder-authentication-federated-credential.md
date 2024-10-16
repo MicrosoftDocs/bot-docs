@@ -21,9 +21,6 @@ monikerRange: 'azure-bot-service-4.0'
 
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
-> [!NOTE]
-> The feature is supported for all the listed tenants (*ME/Torus/MS Corp/Microsoft Services tenants).
-
 For an overview of how the Bot Framework handles this kind of authentication, see [User authentication](bot-builder-concept-authentication.md).
 
 This article covers how to:
@@ -223,22 +220,15 @@ If your bot uses an existing App Service resource (web app) and is a _single_ or
 ## Microsoft Entra ID identity service
 
 The Microsoft Entra ID is a cloud identity service that allows you to build applications that securely sign in users using industry standard protocols like OAuth 2.0.
-
-You can use one of these two identity services:
-
-1. Microsoft Entra ID developer platform (v1.0). Also known as the **Azure AD v1** endpoint, which allows you to build apps that securely sign in users with a Microsoft work or school account. For more information, see the [Microsoft Entra ID for developers (v1.0) overview](/azure/active-directory/azuread-dev/v1-overview).
 1. Microsoft identity platform (v2.0). Also known as the **Microsoft Entra ID** endpoint, which is an evolution of the Azure AD platform (v1.0).It lets you build applications that sign in to all Microsoft identity providers and obtain tokens to call Microsoft APIs, like Microsoft Graph, or other developer-built APIs. For more information, see the [Microsoft identity platform (v2.0) overview](/azure/active-directory/develop/active-directory-appmodel-v2-overview).
 
 For information about the differences between the v1 and v2 endpoints, see [Why update to Microsoft identity platform (v2.0)?](/azure/active-directory/develop/active-directory-v2-compare). For complete information, see [Microsoft identity platform (formerly Microsoft Entra ID for developers)](/azure/active-directory/develop/).
 
 
 
-
-
-
 ### Create the Microsoft Entra ID identity provider
 
-This section shows how to create a Microsoft Entra ID identity provider that uses OAuth 2.0 to authenticate the bot. You can use Azure AD v1 or Microsoft Entra ID endpoints.
+This section shows how to create a Microsoft Entra ID identity provider that uses OAuth 2.0 to authenticate the bot. You can use Microsoft Entra ID endpoints.
 
 > [!TIP]
 > You'll need to create and register the Microsoft Entra ID application in a tenant in which you can consent to delegate permissions requested by an application.
@@ -282,7 +272,7 @@ This section shows how to create a Microsoft Entra ID identity provider that use
                  |9ExAW52n_ky4ZiS_jhpJIQ |Base64url encoded of Bot Service Token Store|
                  |ND1y8_Vv60yhSNmdzSUR_A |Base64url encoded of Bot Framework Dev Portal|
 
-               - The following table contains Base64url encoded byte-array representation of some supported tenant IDs. Use the value which represents tenant of your app. Sample code to generate base64url encoded byte-array can be found in [https://dotnetfiddle.net/dpTlF6].
+               - The following table contains Base64url encoded byte-array representation of some supported tenant IDs. Use the value which represents tenant of your app. Sample code to generate base64url encoded byte-array can be found in [encoder-helper-code].
 
                  | Encoded Value | Description |
                  |--|--|
@@ -292,8 +282,8 @@ This section shows how to create a Microsoft Entra ID identity provider that use
                  | IRngM2RNjE-gVVva_9XjPQ|Base64url encoded AME tenant ID (33e01921-4d64-4f8c-a055-5bdaffd5e33d)|
                
                 The Primary Identity service owners calculate it once and provide it to their consumers.
-            1. **_Audience_** : api://AzureADTokenExchange
-            1. **_Unique-identifier-for-projected-identity_** : The token has the same value used when requesting a token from the 1-P application to impersonate in the customer tenant, passed as a customer parameter in the request attribute - fmi_path.
+            1. **_Audience_** : api://AzureADTokenExchange (Use Cloud specific values)
+            1. **_Unique-identifier-for-projected-identity_** : The token has the same value specified as the Unique Identifier in the OAuth Connection Setting.
     
         1. Provide information under **Credential details**.
             
@@ -328,8 +318,9 @@ You now have a Microsoft Entra ID application configured.
 ### Register the Microsoft Entra ID identity provider with the bot
 
 The next step is to register your identity provider with your bot.
-
-#### Microsoft Entra ID
+> [!NOTE]
+> Single Tenant Entra Application is only support for **AAD v2 with Federated Credentials** service provider.
+> Support for multi-tenant apps will be added in future.
 
 1. Open your bot's Azure Bot resource page in the [Azure portal][azure-portal].
 1. Select **Settings**.
@@ -337,8 +328,8 @@ The next step is to register your identity provider with your bot.
 1. Fill in the form as follows:
 
     1. **Name**. Enter a name for your connection. You use it in your bot code.
-    1. **Service Provider**. Select **AAD v2 with Federated Credentials** to display Microsoft Entra ID-specific fields.
-    1. **Client id**. Enter the application (client) ID you recorded for your Microsoft Entra ID identity provider.
+    1. **Service Provider**. Select **AAD v2 with Federated Credentials** to display service provider specific fields.
+    1. **Client id**. Enter the application (client) ID you recorded for your Microsoft Entra ID identity provider(**Only Single Tenant Supported**).
     1. **Unique Identifier**. Enter the unique identifier you recorded for your Microsoft Entra ID identity provider while creating federated credentials.
     1. **Token Exchange URL**. Leave it blank because it's used for SSO in Microsoft Entra ID only.
     1. **Tenant ID**. Enter the **directory (tenant) ID** that you recorded earlier for your Microsoft Entra ID app or **common** depending on the supported account types selected when you created the Azure DD app. To decide which value to assign, follow these criteria:
@@ -518,3 +509,4 @@ It's best practice to let users explicitly sign out, instead of relying on the c
 [component-dialogs]: bot-builder-compositcontrol.md
 
 [cs-auth-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/86.bot-authentication-fic
+[encoder-helper-code]: [https://dotnetfiddle.net/dpTlF6]
