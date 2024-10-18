@@ -287,10 +287,10 @@ This section shows how to create a Microsoft Entra ID identity provider that use
 
                  | Encoded Value | Description |
                  |--|--|
-                 | v4j5cvGGr0GRqy180BHbRw | Base64url encoded MSIT tenant ID (72f988bf-86f1-41af-91ab-2d7cd011db47) |
-                 | PwFflyR_6Een06vEdSvzRg |Base64url encoded PME tenant ID (975f013f-7f24-47e8-a7d3-abc4752bf346)  |
-                 | 6q7FzcUVtk2wefyt0lBdwg | Base64url encoded Torus tenant ID (cdc5aeea-15c5-4db6-b079-fcadd2505dc2)|
-                 | IRngM2RNjE-gVVva_9XjPQ|Base64url encoded AME tenant ID (33e01921-4d64-4f8c-a055-5bdaffd5e33d)|
+                 | v4j5cvGGr0GRqy180BHbRw | Base64url encoded MSIT tenant ID (aaaabbbb-0000-cccc-1111-dddd2222eeee) |
+                 | PwFflyR_6Een06vEdSvzRg |Base64url encoded PME tenant ID (bbbbcccc-1111-dddd-2222-eeee3333ffff)  |
+                 | 6q7FzcUVtk2wefyt0lBdwg | Base64url encoded Torus tenant ID (ccccdddd-2222-eeee-3333-ffff4444aaaa)|
+                 | IRngM2RNjE-gVVva_9XjPQ|Base64url encoded AME tenant ID (ddddeeee-3333-ffff-4444-aaaa5555bbbb)|
                
                 The Primary Identity service owners calculate it once and provide it to their consumers.
             1. **_Audience_** : api://AzureADTokenExchange
