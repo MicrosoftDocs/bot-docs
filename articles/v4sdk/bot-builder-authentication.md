@@ -148,7 +148,7 @@ The next step is to register your identity provider with your bot.
   
         > [!TIP]
         > If you want to use certificates, you can select the **AAD v2 with Certificates** provider.
-        > You'll need to give Bot Service Token Store (appid: 5b404cf4-a79d-4cfe-b866-24bf8e1a4921) the permission to get the certificate.
+        > You'll need to give Bot Service Token Store (appid: 00001111-aaaa-2222-bbbb-3333cccc4444) the permission to get the certificate.
 
     1. **Token Exchange URL**. Leave it blank because it's used for SSO in Microsoft Entra ID only.
     1. **Tenant ID**. Enter the **directory (tenant) ID** that you recorded earlier for your Microsoft Entra ID app or **common** depending on the supported account types selected when you created the Azure DD app. To decide which value to assign, follow these criteria:
