@@ -263,7 +263,7 @@ This section shows how to create a Microsoft Entra ID identity provider that use
           
             :::image type="content" source="../media/azure-manage-a-bot/entra-fic-creds-scenario-others-account.png" alt-text="Connect your account":::
             
-            1. **_Issuer_** : https://login.microsoftonline.com/{customer-tenant-ID}/v2.0
+            1. **_Issuer_** : `https://login.microsoftonline.com/{customer-tenant-ID}/v2.0`
             1. **_Subject Identifier_** : /eid1/c/pub/t/{base64 encoded customer tenant ID}/a/{base64 encoded 1-P app client ID}/{unique-identifier-for-projected-identity}
                - The following table contains Base64url encoded byte-array representation of supported First party application IDs. Use this value which represents our First party app.
                
@@ -272,7 +272,7 @@ This section shows how to create a Microsoft Entra ID identity provider that use
                  |9ExAW52n_ky4ZiS_jhpJIQ |Base64url encoded of Bot Service Token Store|
                  |ND1y8_Vv60yhSNmdzSUR_A |Base64url encoded of Bot Framework Dev Portal|
 
-               - The following table contains Base64url encoded byte-array representation of some supported tenant IDs. Use the value which represents tenant of your app. Sample code to generate base64url encoded byte-array can be found in [encoder-helper-code].
+               - The following table contains Base64url encoded byte-array representation of some supported tenant IDs. Use the value which represents tenant of your app.
 
                  | Encoded Value | Description |
                  |--|--|
