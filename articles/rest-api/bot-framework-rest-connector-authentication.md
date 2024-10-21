@@ -424,8 +424,8 @@ payload:
 
 | Protocol version | Valid value |
 |----|----|
-| v3.1  1.0| `https://sts.windows.net/d6d49420-f39b-4df7-a1dc-d59a935871db/` |
-| v3.1  2.0| `https://login.microsoftonline.com/d6d49420-f39b-4df7-a1dc-d59a935871db/v2.0`|
+| v3.1  1.0| `https://sts.windows.net/aaaabbbb-0000-cccc-1111-dddd2222eeee/` |
+| v3.1  2.0| `https://login.microsoftonline.com/aaaabbbb-0000-cccc-1111-dddd2222eeee/v2.0`|
 | v3.2  1.0| `https://sts.windows.net/f8cdef31-a31e-4b4a-93e4-5f571e91255a/` |
 | v3.2  2.0| `https://login.microsoftonline.com/f8cdef31-a31e-4b4a-93e4-5f571e91255a/v2.0`|
 
