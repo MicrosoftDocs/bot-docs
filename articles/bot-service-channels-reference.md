@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: jameslew
 ms.service: azure-ai-bot-service
 ms.topic: reference
-ms.date: 11/10/2022
+ms.date: 10/30/2024
 ms.custom:
   - evergreen
 ---
@@ -44,7 +44,7 @@ Within the table, the following terms have the following meanings.
 | Channel                                     | Contact relation update | Conversation update | End of conversation | Event        | Installation update | Invoke | Message | Message reaction | Message update | Message delete | Typing |
 |:--------------------------------------------|:------------------------|:--------------------|:--------------------|:-------------|:--------------------|:-------|:--------|:-----------------|:---------------|:---------------|:-------|
 | Alexa                                       | No                      | No                  | Yes                 | Yes          | No                  | No     | Yes     | No               | No             | No             | No     |
-| Azure Communication Services Chat | No                      | Yes                 | No                  | Yes          | No                  | No     | Yes     | No               | Yes            | Yes            | Yes    |
+| Azure Communication Services                | No                      | Yes                 | No                  | Yes          | No                  | No     | Yes     | No               | Yes            | Yes            | Yes    |
 | Direct Line                                 | No                      | Yes                 | Yes                 | Yes          | Yes                 | No     | Yes     | No               | No             | No             | Yes    |
 | Direct Line Speech                          |                         |                     |                     |              |                     |        | Yes     |                  |                |                |        |
 | Email                                       | No                      | No                  | No                  | Undetermined | No                  | No     | Yes     | No               | No             | No             | No     |
@@ -81,7 +81,7 @@ Within the table, the following terms have the following meanings.
 | Channel                                     | Adaptive Card  | Animation card | Audio card | Hero card | Receipt card | Sign-in card | Thumbnail card | Video card |
 |:--------------------------------------------|:---------------|:---------------|:-----------|:----------|:-------------|:-------------|:---------------|:-----------|
 | Alexa                                       | No             | No             | No         | Yes       | No           | Yes          | No             | No         |
-| Azure Communication Services Chat | Yes* | Yes            | Yes        | Yes       | Yes          | Yes          | Yes            | Yes        |
+| Azure Communication Services                | Yes*           | Yes            | Yes        | Yes       | Yes          | Yes          | Yes            | Yes        |
 | Email                                       | Image          | Text           | Text       | Yes       | Yes          | Yes          | Yes            | Text       |
 | Facebook                                    | Image, partial | Yes            | Yes        | Yes       | Yes          | Yes          | Yes            | Yes        |
 | GroupMe                                     | Image          | Text           | Text       | Text      | Text         | Text         | Text           | Text       |
@@ -108,7 +108,7 @@ A value of "None" indicates that the action type isn't supported in the channel.
 | Channel                                     | Suggested actions | Card actions |
 |:--------------------------------------------|:-----------------:|:------------:|
 | Alexa                                       | None              | None         |
-| Azure Communication Services Chat           |                   |              |
+| Azure Communication Services                |                   |              |
 | Direct Line                                 | 100               | 100          |
 | Direct Line Speech                          | 100               | 100          |
 | Email                                       | None              | None         |
