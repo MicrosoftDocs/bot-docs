@@ -1,6 +1,6 @@
 ---
-title: Connect a bot to Azure Communication Services Chat
-description: Learn how to configure Bot Framework bots to use Azure Communication Services Chat to communicate with users.
+title: Connect a bot to Azure Communication Services
+description: Learn how to configure Bot Framework bots to use Azure Communication Services to communicate with users.
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
@@ -13,9 +13,9 @@ ms.custom:
   - evergreen
 ---
 
-# Connect a bot to Azure Communication Services Chat
+# Connect a bot to Azure Communication Services
 
-Retail websites, product websites, and applications often include a chat bubble in the bottom right-hand corner of the page. When you click on the bubble, a chat application pops up and you are greeted by a bot. The bot may collect details about you, hand you off to a live agent, or go through frequently asked questions for support. Azure Communications Services Chat Service gives you the APIs and SDKs to build the chat application and add a bot to a chat thread to provide this type of customer experience.
+Azure Communication Services provides the APIs and SDKs to build multi-participant collaboration applications that can include a bot. This bot can greet users, perform intake tasks to determine the topic, and answer questions. Azure Communication Services allows you to hand off the conversation to a human agent. It also enables a supervisor or additional bot to monitor or participate in the conversation if necessary. Additionally, Azure Communication Services offers a [UI library](https://azure.github.io/communication-ui-library) to easily build conversational user experiences that can be embedded into your existing web pages.
 
 
 ## Prerequisites
@@ -31,13 +31,13 @@ Retail websites, product websites, and applications often include a chat bubble 
 
 1. In the Azure portal, go to your bot resource.
 1. Open the **Channels** blade and select **Communication Services - Chat**.
-1. On the **Configure Communication - Chat** blade, connect to your Azure Communication Services resource and save. For more information, see the Azure Communication Services documentation on how to [enable the Azure Communication Services Chat channel](/azure/communication-services/quickstarts/chat/quickstart-botframework-integration#step-3---enable-azure-communication-services-chat-channel).
+1. On the Configure Communication blade, connect to your Azure Communication Services resource and save. For more information, see the Azure Communication Services documentation on how to  [enable the Azure Communication Services channel](/azure/communication-services/quickstarts/chat/quickstart-botframework-integration#step-3---enable-azure-communication-services-chat-channel).
 
 Your bot is now registered with Azure Communication Services.
 
 ## Create a chat app and add your bot as a participant
 
-Now that your bot is registered with Azure Communication Services, you can create a chat thread with your bot as a participant.
+Now that your bot is registered with Azure Communication Services, you can create a chat thread with your bot as a participant. 
 For more information, see [Add a bot to your chat app](/azure/communication-services/quickstarts/chat/quickstart-botframework-integration) in the Azure Communication Services documentation.
 
 ## Additional information
@@ -50,3 +50,4 @@ The Azure Communications Services channel has a limit of 28 KB for message activ
 - For information about channel support in the Bot Connector Service, see [Connect a bot to channels](bot-service-manage-channels.md).
 - For information about building bots, see [How bots work](v4sdk/bot-builder-basics.md) and the [Create a bot with the Bot Framework SDK](bot-service-quickstart-create-bot.md) quickstart.
 - For information about deploying bots, see [Deploy your bot](bot-builder-deploy-az-cli.md) and [Set up continuous deployment](bot-service-build-continuous-deployment.md).
+- For information about [Azure Communication Services UI Library](https://azure.github.io/communication-ui-library)
