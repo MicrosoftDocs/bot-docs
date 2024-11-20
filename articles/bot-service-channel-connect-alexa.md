@@ -129,8 +129,6 @@ To complete this step, you'll need your Alexa Skill ID. Get the ID either from t
     1. Enter the Alexa service endpoint URI you copied from the Azure portal.
     1. In the drop-down, select **My development endpoint is a sub-domain of a domain that has a wildcard certificate from a certificate authority**.
 
-    :::image type="content" source="media/channels/alexa-endpoint.png" alt-text="Set service endpoint and endpoint type":::
-
 1. Select **Save Endpoints**.
 
 ## Test and publish your skill
