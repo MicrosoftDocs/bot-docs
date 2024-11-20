@@ -159,8 +159,6 @@ For more information, see [Create an Microsoft Entra ID identity provider applic
 
 Send a message to your bot and the bot should respond back. You can select the message bubble within the conversation window and inspect the raw JSON activity using the **INSPECTOR** feature to the right side of the window. When selected, the message bubble will turn yellow and the activity JSON object will be displayed to the left of the chat window. The JSON information includes key metadata, including the channel ID, activity type, conversation ID, the text message, endpoint URL, and so on. You can inspect activities sent from the user, and activities the bot responds with.
 
-:::image type="content" source="media/emulator-v4/emulator-view-message-activity-03.png" alt-text="Emulator message activity JSON":::
-
 > [!TIP]
 > You can debug state changes in a bot connected to a channel by adding [Inspection Middleware](bot-service-debug-inspection-middleware.md) to the bot.
 

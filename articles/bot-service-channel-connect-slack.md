@@ -122,8 +122,6 @@ To complete this step, you'll need your Slack application credentials from the p
     1. Optionally, provide a **Landing Page URL** that Slack users will be redirected to after they add your bot.
     1. The **OAuth & Permissions Redirect URL** and **Event Subscription Request URL** values should match the values you entered in Slack to [add the redirect URL](#add-a-new-redirect-url) and to [subscribe to bot events](#subscribe-to-bot-events).
 
-    :::image type="content" source="media/channels/slack-SubmitCredentials.png" alt-text="submit credentials":::
-
 1. Select **Apply**.
 1. You're redirected to Slack to finish installing your Slack app.
     - If the requested permissions look correct, select **Allow**.
