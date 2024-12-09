@@ -60,7 +60,7 @@ Every bot that has been registered with the Azure AI Bot Service has an App ID.
 > [!NOTE]
 > Previously, apps were commonly referred to as "MSA Apps" or "MSA/AAD Apps." Apps are now more commonly referred to simply as "apps", but some protocol elements may refer to apps as "MSA Apps" in perpetuity.
 
-Example: `"msaAppId": "353826a6-4557-45f8-8d88-6aa0526b8f77"`
+Example: `"msaAppId": "00001111-aaaa-2222-bbbb-3333cccc4444"`
 
 An app represents a registration with the Identity team's App portal, and serves as the service-to-service
 identity mechanism within the Bot Framework runtime protocol. Apps may have other non-bot associations, such
