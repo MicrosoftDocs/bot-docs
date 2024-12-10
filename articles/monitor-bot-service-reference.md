@@ -62,7 +62,7 @@ The **Dimensions** columns in the preceding metrics tables list the dimensions a
 [!INCLUDE [horz-monitor-ref-resource-logs](~/../articles/reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-resource-logs.md)]
 
 ### Supported resource logs for microsoft.botservice/botservices
-[!INCLUDE [Microsoft.BotService/botservices](~/../articles/reusable-content/ce-skilling/azure/includes/azure-monitor/reference/metrics/microsoft-botservice-botservices-logs-include.md)]
+[!INCLUDE [Microsoft.BotService/botservices](~/../articles/reusable-content/ce-skilling/azure/includes/azure-monitor/reference/logs/microsoft-botservice-botservices-logs-include.md)]
 
 [!INCLUDE [horz-monitor-ref-logs-tables](~/../articles/reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-logs-tables.md)]
 
