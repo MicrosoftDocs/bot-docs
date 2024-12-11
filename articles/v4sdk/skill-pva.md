@@ -48,7 +48,7 @@ When an end user attempts to connect to your skill from their copilot, they'll f
 | Manifest is readable | `MANIFEST_MALFORMED` | The manifest is incompatible. | Check if the manifest is a valid JSON file. Check if the manifest contains required properties, such as `name`, `msaAppId`, and so on. See [Manifest restrictions](#manifest-restrictions) for more information.
 | Skill isn't yet registered | `MANIFEST_ALREADY_IMPORTED` | This skill has already been added to your bot. | Delete the skill and register it again.
 | Manifest endpoint and homepage domains match | `MANIFEST_ENDPOINT_ORIGIN_MISMATCH` | There's a mismatch in your skill endpoints. | You Microsoft Entra ID app's homepage URL domain and manifest URL domain must match. See [Same-tenant restriction](#same-tenant-restriction)
-| Skill is hosted in signed in user's tenant | `APPID_NOT_IN_TENANT` | To add a skill, it must first be registered.| A global administrator must register the skill into the signed in user's organization.
+| Skill is hosted in signed in user's tenant | `APPID_NOT_IN_TENANT` | To add a skill, it must first be registered.| An administrator must register the skill into the signed in user's organization.
 | Actions are limited | `LIMITS_TOO_MANY_ACTIONS` | The skill is limited to 100 actions.|There are too many skill actions defined in skill manifest. Remove actions and try again.
 | Action input parameters are limited | `LIMITS_TOO_MANY_INPUTS` | Actions are limited to 25 inputs.|There are too many skill action input parameters. Remove parameters and try again.
 | Action output parameters are limited | `LIMITS_TOO_MANY_OUTPUTS` | Actions are limited to 25 outputs.|There are too many skill action output parameters. Remove parameter and try again.
