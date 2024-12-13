@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: azure-ai-bot-service
 ms.topic: how-to
-ms.date: 01/27/2023
+ms.date: 12/13/2024
 monikerRange: 'azure-bot-service-4.0'
 ms.custom:
   - evergreen
@@ -37,6 +37,9 @@ The sample code in this article begins with the structure of a basic echo bot, t
 ## Memory storage
 
 The Bot Framework SDK allows you to store user inputs using in-memory storage. Since in-memory storage is cleared each time the bot is restarted, it's best suited for testing purposes and isn't intended for production use. Persistent storage types, such as database storage, are best for production bots.
+
+> [!IMPORTANT]
+> This article contains legacy code samples using [connection strings](/dotnet/framework/data/adonet/connection-strings-and-configuration-files) in configuration files for internal connection to storage. Microsoft recommends that you use the most secure authentication flow available. If you're connecting to an Azure resource, [Managed Identities for Azure resources](/entra/identity/managed-identities-azure-resources) is the recommended authentication method.
 
 ## Build a basic bot
 
