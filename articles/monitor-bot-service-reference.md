@@ -21,38 +21,38 @@ See [Monitor Azure AI Bot Service](monitor-bot-service.md) for details on the da
 
 ### Supported metrics for microsoft.botservice/botservices
 The following table lists the metrics available for the microsoft.botservice/botservices resource type.
-[!INCLUDE [headings](~/reusable-content/ce-skilling/azure/includes/azure-monitor/reference/metrics/metrics-headings.md)] 
-[!INCLUDE [microsoft.botservice/botservices](~/reusable-content/ce-skilling/azure/includes/azure-monitor/reference/metrics/microsoft-botservice-botservices-metrics-include.md)] 
+[!INCLUDE [horz-monitor-ref-metrics-tableheader](~/../articles/reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-metrics-tableheader.md)]
+[!INCLUDE [microsoft.botservice/botservices](~/../articles/reusable-content/ce-skilling/azure/includes/azure-monitor/reference/metrics/microsoft-botservice-botservices-metrics-include.md)]
 
 ### Supported metrics for Microsoft.BotService/botServices/channels
 The following table lists the metrics available for the Microsoft.BotService/botServices/channels resource type.
 [!INCLUDE [horz-monitor-ref-metrics-tableheader](~/../articles/reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-metrics-tableheader.md)]
-[!INCLUDE [Microsoft.BotService/botServices/channels](~/../azure-reference-other-repo/azure-monitor-ref/supported-metrics/includes/microsoft-botservice-botservices-channels-metrics-include.md)]
+[!INCLUDE [Microsoft.BotService/botServices/channels](~/../articles/reusable-content/ce-skilling/azure/includes/azure-monitor/reference/metrics/microsoft-botservice-botservices-channels-metrics-include.md)]
 
 ### Supported metrics for Microsoft.BotService/botServices/connections
 The following table lists the metrics available for the Microsoft.BotService/botServices/connections resource type.
 [!INCLUDE [horz-monitor-ref-metrics-tableheader](~/../articles/reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-metrics-tableheader.md)]
-[!INCLUDE [Microsoft.BotService/botServices/connections](~/../azure-reference-other-repo/azure-monitor-ref/supported-metrics/includes/microsoft-botservice-botservices-connections-metrics-include.md)]
+[!INCLUDE [Microsoft.BotService/botServices/connections](~/../articles/reusable-content/ce-skilling/azure/includes/azure-monitor/reference/metrics/microsoft-botservice-botservices-connections-metrics-include.md)]
 
 ### Supported metrics for Microsoft.BotService/checknameavailability
 The following table lists the metrics available for the Microsoft.BotService/checknameavailability resource type.
 [!INCLUDE [horz-monitor-ref-metrics-tableheader](~/../articles/reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-metrics-tableheader.md)]
-[!INCLUDE [Microsoft.BotService/checknameavailability](~/../azure-reference-other-repo/azure-monitor-ref/supported-metrics/includes/microsoft-botservice-checknameavailability-metrics-include.md)]
+[!INCLUDE [Microsoft.BotService/checknameavailability](~/../articles/reusable-content/ce-skilling/azure/includes/azure-monitor/reference/metrics/microsoft-botservice-checknameavailability-metrics-include.md)]
 
 ### Supported metrics for Microsoft.BotService/hostsettings
 The following table lists the metrics available for the Microsoft.BotService/hostsettings resource type.
 [!INCLUDE [horz-monitor-ref-metrics-tableheader](~/../articles/reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-metrics-tableheader.md)]
-[!INCLUDE [microsoft.botservice/botservices](~/../azure-reference-other-repo/azure-monitor-ref/supported-metrics/includes/microsoft-botservice-hostsettings-metrics-include.md)]
+[!INCLUDE [microsoft.botservice/botservices](~/../articles/reusable-content/ce-skilling/azure/includes/azure-monitor/reference/metrics/microsoft-botservice-hostsettings-metrics-include.md)]
 
 ### Supported metrics for Microsoft.BotService/listauthserviceproviders
 The following table lists the metrics available for the Microsoft.BotService/listauthserviceproviders resource type.
 [!INCLUDE [horz-monitor-ref-metrics-tableheader](~/../articles/reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-metrics-tableheader.md)]
-[!INCLUDE [Microsoft.BotService/listauthserviceproviders](~/../azure-reference-other-repo/azure-monitor-ref/supported-metrics/includes/microsoft-botservice-listauthserviceproviders-metrics-include.md)]
+[!INCLUDE [Microsoft.BotService/listauthserviceproviders](~/../articles/reusable-content/ce-skilling/azure/includes/azure-monitor/reference/metrics/microsoft-botservice-listauthserviceproviders-metrics-include.md)]
 
 ### Supported metrics for Microsoft.BotService/listqnamakerendpointkeys
 The following table lists the metrics available for the Microsoft.BotService/listqnamakerendpointkeys resource type.
 [!INCLUDE [horz-monitor-ref-metrics-tableheader](~/../articles/reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-metrics-tableheader.md)]
-[!INCLUDE [Microsoft.BotService/listqnamakerendpointkeys](~/../azure-reference-other-repo/azure-monitor-ref/supported-metrics/includes/microsoft-botservice-listqnamakerendpointkeys-metrics-include.md)]
+[!INCLUDE [Microsoft.BotService/listqnamakerendpointkeys](~/../articles/reusable-content/ce-skilling/azure/includes/azure-monitor/reference/metrics/microsoft-botservice-listqnamakerendpointkeys-metrics-include.md)]
 
 [!INCLUDE [horz-monitor-ref-metrics-dimensions-intro](~/../articles/reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-metrics-dimensions-intro.md)]
 [!INCLUDE [horz-monitor-ref-metrics-dimensions](~/../articles/reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-metrics-dimensions.md)]
@@ -62,7 +62,7 @@ The **Dimensions** columns in the preceding metrics tables list the dimensions a
 [!INCLUDE [horz-monitor-ref-resource-logs](~/../articles/reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-resource-logs.md)]
 
 ### Supported resource logs for microsoft.botservice/botservices
-[!INCLUDE [Microsoft.BotService/botservices](~/../azure-reference-other-repo/azure-monitor-ref/supported-logs/includes/microsoft-botservice-botservices-logs-include.md)]
+[!INCLUDE [Microsoft.BotService/botservices](~/../articles/reusable-content/ce-skilling/azure/includes/azure-monitor/reference/logs/microsoft-botservice-botservices-logs-include.md)]
 
 [!INCLUDE [horz-monitor-ref-logs-tables](~/../articles/reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-logs-tables.md)]
 
