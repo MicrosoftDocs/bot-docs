@@ -21,8 +21,8 @@ See [Monitor Azure AI Bot Service](monitor-bot-service.md) for details on the da
 
 ### Supported metrics for microsoft.botservice/botservices
 The following table lists the metrics available for the microsoft.botservice/botservices resource type.
-[!INCLUDE [horz-monitor-ref-metrics-tableheader](~/../articles/reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-metrics-tableheader.md)]
-[!INCLUDE [microsoft.botservice/botservices](~/../azure-reference-other-repo/azure-monitor-ref/supported-metrics/includes/microsoft-botservice-botservices-metrics-include.md)]
+[!INCLUDE [headings](~/reusable-content/ce-skilling/azure/includes/azure-monitor/reference/metrics/metrics-headings.md)] 
+[!INCLUDE [microsoft.botservice/botservices](~/reusable-content/ce-skilling/azure/includes/azure-monitor/reference/metrics/microsoft-botservice-botservices-metrics-include.md)] 
 
 ### Supported metrics for Microsoft.BotService/botServices/channels
 The following table lists the metrics available for the Microsoft.BotService/botServices/channels resource type.
