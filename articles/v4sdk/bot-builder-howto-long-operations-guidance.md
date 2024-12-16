@@ -49,8 +49,7 @@ This example defines a `LongOperationPrompt` class, derived from the abstract `A
 
 This article touches on many different technologies. See the [additional information](#additional-information) section for links to associated articles.
 
-> [!IMPORTANT]
-> This article contains legacy code samples using [connection strings](/dotnet/framework/data/adonet/connection-strings-and-configuration-files) in configuration files for internal connection to storage. Microsoft recommends that you use the most secure authentication flow available. If you're connecting to an Azure resource, [Managed Identities for Azure resources](/entra/identity/managed-identities-azure-resources) is the recommended authentication method. For more details, see [Migrate applications away from secret-based authentication](/entra/identity/enterprise-apps/migrate-applications-from-secrets).
+[!INCLUDE [ropc-connection-strings](../includes/ropc-connection-strings-important.md)]
 
 ## Create an Azure Storage account
 
