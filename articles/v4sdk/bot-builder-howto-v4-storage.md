@@ -34,8 +34,7 @@ You can read and write directly to your storage object without using middleware 
 
 The sample code in this article begins with the structure of a basic echo bot, then extends that bot's functionality by adding additional code (provided below). This extended code creates a list to preserve user inputs as they're received. Each turn, the full list of user inputs, saved to memory, is echoed back to the user. The data structure containing this list of inputs is then modified to save to storage. Various types of storage are explored as additional functionality is added to this sample code.
 
-> [!IMPORTANT]
-> This article contains legacy code samples using [connection strings](/dotnet/framework/data/adonet/connection-strings-and-configuration-files) in configuration files for internal connection to storage. Microsoft recommends that you use the most secure authentication flow available. If you're connecting to an Azure resource, [Managed Identities for Azure resources](/entra/identity/managed-identities-azure-resources) is the recommended authentication method. For more details, see [Migrate applications away from secret-based authentication](/entra/identity/enterprise-apps/migrate-applications-from-secrets).
+[!INCLUDE [ropc-connection-strings](../includes/ropc-connection-strings-important.md)]
 
 ## Memory storage
 
