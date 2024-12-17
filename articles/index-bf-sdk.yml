@@ -130,7 +130,7 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
-          - text: Get Support
+          - text: Get support
             url: bot-service-resources-links-help.md
       - linkListType: sample
         links:
@@ -146,7 +146,7 @@ landingContent:
         links:
           - text: Copilot Studio
             url: /microsoft-copilot-studio/
-          - text: Microsoft Teams Overview
+          - text: Microsoft Teams overview
             url: /microsoftteams/teams-overview
           - text: Azure AI services
             url: /azure/cognitive-services
