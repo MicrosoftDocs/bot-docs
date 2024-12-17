@@ -104,7 +104,7 @@ conceptualContent:
           text: Build a weather bot with Composer
 tools:
   title: Reference # < 60 chars (optional)
-  summary: Dive deep into reference for the Bot Framework SDK, Power Virtual Agents, and Bot Framework Composer. # < 160 chars (optional)
+  summary: Dive deep into reference for the Bot Framework SDK, Copilot Studio, and Bot Framework Composer. # < 160 chars (optional)
   items:
     - title: C#
       imageSrc: ./media/logos/logo-csharp.svg
