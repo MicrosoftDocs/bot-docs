@@ -51,7 +51,7 @@ productDirectory:
     - title: Copilot Studio
       imageSrc: ./media/logos/logo-copilot-studio.svg
       summary: Create agents with an easy to use graphical interface. No coding or AI expertise required. Works with Power Apps, and extendable with code. 
-      url: /power-virtual-agents/fundamentals-what-is-power-virtual-agents
+      url: /microsoft-copilot-studio/fundamentals-what-is-copilot-studio
     # Card
     - title: Bot Framework Composer
       imageSrc: ./media/logos/logo-composer.svg
