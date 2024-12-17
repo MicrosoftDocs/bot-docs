@@ -14,7 +14,7 @@ metadata:
   ms.author: iawilt
   manager: shellyha
   ms.reviewer: micchow
-  ms.date: 09/01/2022
+  ms.date: 12/17/2024
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -22,15 +22,15 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    # Comparison of PVA, Bot Framework Composer, and Bot SDK
+    # Comparison of Copilot Studio, Bot Framework Composer, and Bot SDK
     - title: "Choose the right chatbot solution"
       itemType: overview
       url: bot-overview.md
     # Card
     # Primary CTA
-    - title: "Introduction to Power Virtual Agents"
+    - title: "What is Microsoft Copilot Studio"
       itemType: overview
-      url: /power-virtual-agents/fundamentals-what-is-power-virtual-agents
+      url: /microsoft-copilot-studio/fundamentals-what-is-copilot-studio
     # Card 
     # Primary CTA
     - title: "Create a Bot Framework SDK bot"
@@ -48,9 +48,9 @@ productDirectory:
       summary: A modular set of developer tools to build, test, deploy, and manage chatbots in C# or JavaScript. 
       url: bot-service-overview-introduction.md
     # Card
-    - title: Power Virtual Agents
-      imageSrc: ./media/logos/logo-pva.svg
-      summary: Create chatbots with an easy to use graphical interface. No coding or AI expertise required. Works with Power Apps, and extendable with code. 
+    - title: Copilot Studio
+      imageSrc: ./media/logos/logo-copilot-studio.svg
+      summary: Create agents with an easy to use graphical interface. No coding or AI expertise required. Works with Power Apps, and extendable with code. 
       url: /power-virtual-agents/fundamentals-what-is-power-virtual-agents
     # Card
     - title: Bot Framework Composer
@@ -76,18 +76,15 @@ conceptualContent:
           itemType: how-to-guide
           text: Connect a bot to channels with the SDK
     # Card
-    - title: Power Virtual Agents
+    - title: Copilot Studio
       links:
-        - url: /power-virtual-agents/fundamentals-what-is-power-virtual-agents
+        - url: /microsoft-copilot-studio/fundamentals-what-is-copilot-studio
           itemType: overview
-          text: What is a Power Virtual Agent?
-        - url: /power-virtual-agents/fundamentals-get-started
+          text: What is Copilot Studio?
+        - url: /microsoft-copilot-studio/fundamentals-get-started
           itemType: quickstart
-          text: Create and deploy a Power Virtual Agent bot
-        - url: /power-virtual-agents/teams/fundamentals-get-started-teams
-          itemType: tutorial
-          text: Build a Power Virtual Agent HR bot in Teams
-        - url: /power-virtual-agents/requirements-quotas
+          text: Quickstart - Create your first agent
+        - url: /microsoft-copilot-studio/requirements-quotas
           itemType: reference
           text: Quotas, limits, and configuration options
     # Card
@@ -115,9 +112,9 @@ tools:
     - title: JavaScript
       imageSrc: ./media/logos/logo-js.svg
       url: /javascript/api/?view=botbuilder-ts-latest
-    - title: Power Virtual Agents
-      imageSrc: ./media/logos/logo-pva.svg
-      url: /power-virtual-agents/fundamentals-what-is-power-virtual-agents
+    - title: Copilot Studio
+      imageSrc: ./media/logos/logo-copilot-studio.svg
+      url: /microsoft-copilot-studio/fundamentals-what-is-copilot-studio
     - title: Composer
       imageSrc: ./media/logos/logo-composer.svg
       url: /composer/install-composer
@@ -145,15 +142,15 @@ additionalContent:
             url: /training/modules/choose-bot-building-tool/
           - text: Create a bot with the Bot Framework SDK
             url: /training/modules/design-bot-conversation-flow/
-          - text: Create chatbots with Power Virtual Agents
-            url: /training/modules/explore-power-virtual-agents/
+          - text: Build an initial agent with Microsoft Copilot Studio
+            url: /training/modules/create-copilots-copilot-studio/
           - text: Introduction to Azure AI Bot Service and Bot Framework Composer
             url: /training/modules/intro-to-bot-service-bot-framework-composer/
         # Card
         - title: Related technologies # < 60 chars (optional)
           links:
-          - text: Power Virtual Agents
-            url: /power-virtual-agents
+          - text: Copilot Studio
+            url: /microsoft-copilot-studio
           - text: Microsoft Teams
             url: /microsoftteams/platform
           - text: Adaptive Cards
