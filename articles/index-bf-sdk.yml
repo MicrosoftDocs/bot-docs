@@ -12,7 +12,7 @@ metadata:
   ms.author: iawilt
   manager: shellyha
   ms.reviewer: micchow
-  ms.date: 09/01/2022
+  ms.date: 12/17/2024
 
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
@@ -144,8 +144,8 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Power Virtual Agents
-            url: /power-virtual-agents/
+          - text: Copilot Studio
+            url: /microsoft-copilot-studio/
           - text: Microsoft Teams Overview
             url: /microsoftteams/teams-overview
           - text: Azure AI services
