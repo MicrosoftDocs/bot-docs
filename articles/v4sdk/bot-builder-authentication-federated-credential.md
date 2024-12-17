@@ -264,24 +264,16 @@ This section shows how to create a Microsoft Entra ID identity provider that use
             :::image type="content" source="../media/azure-manage-a-bot/entra-fic-creds-scenario-others-account.png" alt-text="Connect your account":::
             
             1. **_Issuer_** : `https://login.microsoftonline.com/{customer-tenant-ID}/v2.0`
-            1. **_Subject Identifier_** : /eid1/c/pub/t/{base64 encoded customer tenant ID}/a/{base64 encoded 1-P app client ID}/{unique-identifier-for-projected-identity}
-               - The following table contains Base64url encoded byte-array representation of supported First party application IDs. Use this value which represents our First party app.
+            1. **_Subject Identifier_** : /eid1/c/pub/t/{base64 encoded customer tenant ID}/a/{base64 encoded first-party app client ID}/{unique-identifier-for-projected-identity}
+               - The following table contains Base64url encoded byte-array representation of supported first-party application IDs. Use this value which represents our first-party app.
                
                  | Encoded Value | Description |
                  |--|--|
                  |9ExAW52n_ky4ZiS_jhpJIQ |Base64url encoded of Bot Service Token Store|
                  |ND1y8_Vv60yhSNmdzSUR_A |Base64url encoded of Bot Framework Dev Portal|
 
-               - The following table contains Base64url encoded byte-array representation of some supported tenant IDs. Use the value which represents tenant of your app.
-
-                 | Encoded Value | Description |
-                 |--|--|
-                 | v4j5cvGGr0GRqy180BHbRw | Base64url encoded MSIT tenant ID (aaaabbbb-0000-cccc-1111-dddd2222eeee) |
-                 | PwFflyR_6Een06vEdSvzRg |Base64url encoded PME tenant ID (bbbbcccc-1111-dddd-2222-eeee3333ffff)  |
-                 | 6q7FzcUVtk2wefyt0lBdwg | Base64url encoded Torus tenant ID (ccccdddd-2222-eeee-3333-ffff4444aaaa)|
-                 | IRngM2RNjE-gVVva_9XjPQ|Base64url encoded AME tenant ID (ddddeeee-3333-ffff-4444-aaaa5555bbbb)|
+               - The following [sample code](https://dotnetfiddle.net/p11CFZ) assists you in converting your tenant ID to a Base64url encoded byte-array representation. Please use the value that corresponds to the tenant of your application                 
                
-                The Primary Identity service owners calculate it once and provide it to their consumers.
             1. **_Audience_** : api://AzureADTokenExchange (Use Cloud specific values)
             1. **_Unique-identifier-for-projected-identity_** : The token has the same value specified as the Unique Identifier in the OAuth Connection Setting.
     
@@ -509,4 +501,3 @@ It's best practice to let users explicitly sign out, instead of relying on the c
 [component-dialogs]: bot-builder-compositcontrol.md
 
 [cs-auth-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/86.bot-authentication-fic
-[encoder-helper-code]: [https://dotnetfiddle.net/dpTlF6]
