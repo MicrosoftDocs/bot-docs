@@ -264,16 +264,15 @@ This section shows how to create a Microsoft Entra ID identity provider that use
             :::image type="content" source="../media/azure-manage-a-bot/entra-fic-creds-scenario-others-account.png" alt-text="Connect your account":::
             
             1. **_Issuer_** : `https://login.microsoftonline.com/{customer-tenant-ID}/v2.0`
-            1. **_Subject Identifier_** : /eid1/c/pub/t/{base64 encoded customer tenant ID}/a/{base64 encoded 1-P app client ID}/{unique-identifier-for-projected-identity}
-               - The following table contains Base64url encoded byte-array representation of supported First party application IDs. Use this value which represents our First party app.
+            1. **_Subject Identifier_** : /eid1/c/pub/t/{base64 encoded customer tenant ID}/a/{base64 encoded first-party app client ID}/{unique-identifier-for-projected-identity}
+               - The following table contains Base64url encoded byte-array representation of supported first-party application IDs. Use this value which represents our first-party app.
                
                  | Encoded Value | Description |
                  |--|--|
                  |9ExAW52n_ky4ZiS_jhpJIQ |Base64url encoded of Bot Service Token Store|
                  |ND1y8_Vv60yhSNmdzSUR_A |Base64url encoded of Bot Framework Dev Portal|
 
-               - The sample code[https://dotnetfiddle.net/p11CFZ] will assist in converting tenant IDs to a Base64url encoded byte-array representation. Please use the value that corresponds to the tenant of your application
-                 
+               - The following [sample code](https://dotnetfiddle.net/p11CFZ) assists you in converting your tenant ID to a Base64url encoded byte-array representation. Please use the value that corresponds to the tenant of your application                 
                
             1. **_Audience_** : api://AzureADTokenExchange (Use Cloud specific values)
             1. **_Unique-identifier-for-projected-identity_** : The token has the same value specified as the Unique Identifier in the OAuth Connection Setting.
