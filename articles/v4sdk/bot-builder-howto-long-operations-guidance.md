@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: azure-ai-bot-service
 ms.topic: how-to
-ms.date: 08/10/2022
+ms.date: 12/13/2024
 monikerRange: 'azure-bot-service-4.0'
 ms.custom:
   - evergreen
@@ -48,6 +48,8 @@ This article begins with the multi-turn prompt sample bot and adds code for perf
 This example defines a `LongOperationPrompt` class, derived from the abstract `ActivityPrompt` class. When the `LongOperationPrompt` queues the activity to be processed, it includes a choice from the user within the activity's _value_ property. This activity is then consumed by Azure Functions, modified, and wrapped in a different `event` activity before it's sent back to the bot using a Direct Line client. Within the bot, the event activity is used to resume the conversation by calling the adapter's _continue conversation_ method. The dialog stack is then loaded, and the `LongOperationPrompt` completes.
 
 This article touches on many different technologies. See the [additional information](#additional-information) section for links to associated articles.
+
+[!INCLUDE [ropc-connection-strings](../includes/ropc-connection-strings-important.md)]
 
 ## Create an Azure Storage account
 

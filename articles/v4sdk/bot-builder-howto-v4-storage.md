@@ -8,7 +8,7 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: azure-ai-bot-service
 ms.topic: how-to
-ms.date: 01/27/2023
+ms.date: 12/13/2024
 monikerRange: 'azure-bot-service-4.0'
 ms.custom:
   - evergreen
@@ -33,6 +33,8 @@ You can read and write directly to your storage object without using middleware 
 ## About this sample
 
 The sample code in this article begins with the structure of a basic echo bot, then extends that bot's functionality by adding additional code (provided below). This extended code creates a list to preserve user inputs as they're received. Each turn, the full list of user inputs, saved to memory, is echoed back to the user. The data structure containing this list of inputs is then modified to save to storage. Various types of storage are explored as additional functionality is added to this sample code.
+
+[!INCLUDE [ropc-connection-strings](../includes/ropc-connection-strings-important.md)]
 
 ## Memory storage
 
