@@ -8,7 +8,6 @@ ms.topic: include
 ms.custom:
   - devx-track-azurecli
   - evergreen
-ms.date: 08/29/2022
 ---
 
 ### [C# / JavaScript / Python](#tab/csharp+javascript)

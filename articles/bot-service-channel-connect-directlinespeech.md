@@ -8,7 +8,6 @@ manager: shellyha
 ms.reviewer: Daniel.Evans
 ms.topic: conceptual
 ms.service: azure-ai-bot-service
-ms.date: 03/30/2022
 ms.custom:
   - evergreen
 ---

@@ -5,7 +5,6 @@ ms.author: iawilt
 manager: leeclontz
 ms.reviewer: micchow
 ms.topic: include
-ms.date: 08/08/2024
 ms.custom:
   - evergreen
 ---

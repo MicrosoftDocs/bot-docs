@@ -11,7 +11,6 @@ ms.topic: how-to
 ms.custom:
   - abs-meta-21q1
   - evergreen
-ms.date: 03/22/2022
 ---
 
 # Connect a bot to Telegram

@@ -7,7 +7,6 @@ manager: kunsingh
 ms.reviewer: kunsingh
 ms.topic: how-to
 ms.service: azure-ai-bot-service
-ms.date: 10/06/2024
 ms.custom:
   - abs-meta-21q1
   - evergreen

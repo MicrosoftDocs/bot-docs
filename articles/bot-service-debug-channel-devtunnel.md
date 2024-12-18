@@ -8,7 +8,6 @@ manager: kjette
 ms.reviewer: cyanderson
 ms.topic: how-to
 ms.service: azure-ai-bot-service
-ms.date: 09/17/2024
 monikerRange: 'azure-bot-service-4.0'
 ms.custom:
   - evergreen
