@@ -7,7 +7,6 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: quickstart
 ms.service: azure-ai-bot-service
-ms.date: 02/10/2023
 ms.custom:
   - evergreen
 ---

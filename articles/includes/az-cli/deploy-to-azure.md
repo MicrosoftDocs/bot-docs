@@ -8,7 +8,6 @@ ms.topic: include
 ms.custom:
   - devx-track-azurecli
   - evergreen
-ms.date: 03/03/2022
 ---
 
 At this point, you're ready to deploy code for your bot to your App Service resource.

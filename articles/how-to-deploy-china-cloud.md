@@ -7,7 +7,6 @@ manager: kunsingh
 ms.reviewer: kparihar
 ms.service: azure-ai-bot-service
 ms.topic: how-to
-ms.date: 09/23/2024
 ms.custom:
   - template-how-to
   - evergreen

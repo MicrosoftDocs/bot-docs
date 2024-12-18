@@ -7,7 +7,6 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: azure-ai-bot-service
 ms.topic: quickstart
-ms.date: 10/26/2022
 ms.custom:
   - mode-api
   - tab-zone-seo

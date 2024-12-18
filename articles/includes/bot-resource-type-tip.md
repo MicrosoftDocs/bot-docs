@@ -5,7 +5,6 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: include
-ms.date: 07/22/2022
 ms.custom:
   - evergreen
 ---

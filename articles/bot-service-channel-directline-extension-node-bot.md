@@ -7,7 +7,6 @@ manager: shellyha
 ms.reviewer: Daniel.Evans
 ms.service: azure-ai-bot-service
 ms.topic: how-to
-ms.date: 02/09/2023
 ms.custom:
   - evergreen
 ---

@@ -9,7 +9,6 @@ ms.reviewer: jameslew
 ms.service: azure-ai-bot-service
 ms.topic: how-to
 ms-custom: abs-meta-21q1
-ms.date: 03/30/2022
 ms.custom:
   - evergreen
 ---

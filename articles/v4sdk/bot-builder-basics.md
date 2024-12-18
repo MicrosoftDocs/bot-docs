@@ -7,7 +7,6 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: azure-ai-bot-service
 ms.topic: conceptual
-ms.date: 10/26/2022
 monikerRange: 'azure-bot-service-4.0'
 ms.custom:
   - abs-meta-21q1

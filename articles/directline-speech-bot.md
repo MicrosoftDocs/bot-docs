@@ -8,7 +8,6 @@ manager: shellyha
 ms.reviewer: micchow
 ms.service: azure-ai-bot-service
 ms.topic: how-to
-ms.date: 12/14/2021
 ms-custom: abs-meta-21q1
 monikerRange: 'azure-bot-service-4.0'
 ms.custom:
