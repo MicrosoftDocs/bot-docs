@@ -8,7 +8,6 @@ ms.topic: include
 ms.custom:
   - devx-track-azurecli
   - evergreen
-ms.date: 03/03/2022
 ---
 
 [!INCLUDE [Note about support for each identity app type](../azure-bot-resource/identity-app-type-support.md)]

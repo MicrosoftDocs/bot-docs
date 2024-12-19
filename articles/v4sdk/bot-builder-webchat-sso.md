@@ -10,7 +10,6 @@ ms.topic: conceptual
 ms.custom:
   - abs-meta-21q1
   - evergreen
-ms.date: 09/01/2021
 ---
 
 # Single sign with a Web Chat

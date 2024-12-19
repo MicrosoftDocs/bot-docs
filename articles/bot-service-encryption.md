@@ -7,7 +7,6 @@ manager: shellyha
 ms.reviewer: jameslew
 ms.service: azure-ai-bot-service
 ms.topic: conceptual
-ms.date: 06/06/2022
 ms.custom:
   - evergreen
 ---

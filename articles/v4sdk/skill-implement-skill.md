@@ -8,7 +8,6 @@ manager: shellyha
 ms.reviewer: Gabo.Gilabert
 ms.service: azure-ai-bot-service
 ms.topic: how-to
-ms.date: 08/08/2024
 monikerRange: 'azure-bot-service-4.0'
 ms.custom:
   - evergreen

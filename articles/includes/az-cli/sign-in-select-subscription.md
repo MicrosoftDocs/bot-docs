@@ -8,7 +8,6 @@ ms.topic: include
 ms.custom:
   - devx-track-azurecli
   - evergreen
-ms.date: 03/03/2022
 ---
 
 1. Open a command window.

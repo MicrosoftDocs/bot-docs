@@ -1,6 +1,5 @@
 ---
 ms.topic: include
-ms.date: 09/13/2022
 author: JonathanFingold
 ms.author: iawilt
 manager: shellyha

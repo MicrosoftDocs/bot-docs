@@ -8,7 +8,6 @@ manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
 ms.service: azure-ai-bot-service
-ms.date: 08/08/2024
 ms.custom:
   - evergreen
 ---

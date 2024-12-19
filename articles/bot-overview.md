@@ -7,7 +7,6 @@ manager: leeclontz
 ms.reviewer: micchow
 ms.topic: overview
 ms.service: azure-ai-bot-service
-ms.date: 08/08/2024
 ms.custom:
   - mode-api
   - tab-zone-seo
