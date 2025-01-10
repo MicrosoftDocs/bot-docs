@@ -107,7 +107,7 @@
         "**/**.md": "kaiqb"
       },
       "ms.date": {
-        "**/**.md": "12/13/2018"
+        "**/**.md": "10/09/2024"
       },
       "monikerRange": {
         "v4sdk/**.md": "azure-bot-service-4.0"
