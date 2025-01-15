@@ -29,6 +29,12 @@ Copilot Studio places restrictions on what you can declare in your [skill manife
 - Each action is limited to 25 or fewer inputs or outputs.
 - You can't use the array type for inputs or outputs.
 
+## Same-tenant restriction
+
+In order to ensure compliance and adequate governance of custom skills being registered for use within Copilot Studio, your skill bot must be a registered application in Microsoft Entra ID. Upon adding a skill, we validate if the skill's application ID is in the tenant of the signed in user and the skills endpoint matches the registered application's `Home Page URL`.
+
+Before you can register your bot as a skill within Copilot Studio, you must ensure that for the bot, the [home page in the Azure portal](/entra/identity/app-proxy/application-proxy-configure-custom-home-page#change-the-home-page-in-the-azure-portal) is set to the bot's skill manifest URL.
+
 ## Single-tenant and multitenant restriction
 
 Copilot Studio previously created multitenant Entra ID applications. However, now it's creating single-tenant Entra ID applications. For sills to work properly with the agents based on new single-tenant Entra ID applications, the skills need to be configured for a single-tenant instance.
@@ -73,7 +79,7 @@ When an end user attempts to connect to your skill from their copilot, they'll f
 | Manifest is readable | `MANIFEST_TOO_LARGE` | The manifest is too large. | Your manifest must be 500 KB or less.
 | Manifest is readable | `MANIFEST_MALFORMED` | The manifest is incompatible. | Check if the manifest is a valid JSON file. Check if the manifest contains required properties, such as `name`, `msaAppId`, and so on. See [Manifest restrictions](#manifest-restrictions) for more information.
 | Skill isn't yet registered | `MANIFEST_ALREADY_IMPORTED` | This skill has already been added to your bot. | Delete the skill and register it again.
-| Manifest endpoint and homepage domains match | `MANIFEST_ENDPOINT_ORIGIN_MISMATCH` | There's a mismatch in your skill endpoints. | You Microsoft Entra ID app's homepage URL domain and manifest URL domain must match. See [Single-tenant and multitenant restriction](#single-tenant-and-multitenant-restriction)
+| Manifest endpoint and homepage domains match | `MANIFEST_ENDPOINT_ORIGIN_MISMATCH` | There's a mismatch in your skill endpoints. | You Microsoft Entra ID app's homepage URL domain and manifest URL domain must match. See [Same-tenant restriction](#same-tenant-restriction)
 | Skill is hosted in signed in user's tenant | `APPID_NOT_IN_TENANT` | To add a skill, it must first be registered.| An administrator must register the skill into the signed in user's organization.
 | Actions are limited | `LIMITS_TOO_MANY_ACTIONS` | The skill is limited to 100 actions.|There are too many skill actions defined in skill manifest. Remove actions and try again.
 | Action input parameters are limited | `LIMITS_TOO_MANY_INPUTS` | Actions are limited to 25 inputs.|There are too many skill action input parameters. Remove parameters and try again.
