@@ -43,7 +43,7 @@ Copilot Studio previously created multitenant Entra ID applications. However, no
 
 You can convert existing skills from multitenant support to single-tenant support. To convert a multitenant skill to a single-tenant skill, you need to perform the following changes:
 
-- Create a new single-tentant Entra ID app regristration
+- Create a new single-tenant Entra ID app regristration
 - Update the skill configuration to use single-tenant
 - Deploy the skill
 - (Optional) update the source code
