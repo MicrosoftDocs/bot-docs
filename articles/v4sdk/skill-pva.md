@@ -68,7 +68,11 @@ For reference, the following values were used for multitenant skills:
 
 After converting the values, import the skill into an instance of your agent created as a single-tenant instance. You can also view the Entra ID app regristration, to see how it was created. Go to **Manage** > **Authentication** > **Supported account types**.
 
-:::image type="content" source="media/authentication-supported-account-types.png" alt-text="Screenshot highlighting the Supported account type options.":::
+:::image type="content" source="./media/authentication-supported-account-types.png" alt-text="Screenshot highlighting the Supported account type options.":::
+
+### Multitenant to single-tenant code update
+
+After converting the values, you might need to also update the code to allow connection of the specified tenant to the skill. For more information, see [BotBuilder-Samples](https://github.com/microsoft/BotBuilder-Samples/blob/6952b9e548038d58e3c8cd607acaa72dcf7648a0/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/Startup.cs#L40-L48).
 
 ## Validation performed during registering a Skill
 
