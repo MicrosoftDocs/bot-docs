@@ -29,11 +29,38 @@ Copilot Studio places restrictions on what you can declare in your [skill manife
 - Each action is limited to 25 or fewer inputs or outputs.
 - You can't use the array type for inputs or outputs.
 
-## Same-tenant restriction
+## Single-tenant and multitenant restriction
 
-In order to ensure compliance and adequate governance of custom skills being registered for use within Copilot Studio, your skill bot must be a registered application in Microsoft Entra ID. Upon adding a skill, we validate if the skill's application ID is in the tenant of the signed in user and the skills endpoint matches the registered application's `Home Page URL`.
+Copilot Studio previously created multitenant Entra ID applications. However, now it's creating single-tenant Entra ID applications. For sills to work properly with the agents based on new single-tenant Entra ID applications, the skills need to be configured for a single-tenant instance.
 
-Before you can register your bot as a skill within Copilot Studio, you must ensure that for the bot, the [home page in the Azure portal](/azure/active-directory/app-proxy/application-proxy-configure-custom-home-page#change-the-home-page-in-the-azure-portal) is set to the bot's skill manifest URL.
+## Convert an existing skill from multitenant to single-tenant
+
+You can convert existing skills from multitenant support to single-tenant support. To convert a multitenant skill to a single-tenant skill, you need to perform the following changes:
+
+- Create a new single-tentant Entra ID app regristration
+- Update the skill configuration to use single-tenant
+- Deploy the skill
+- (Optional) update the source code
+
+The following values are required for single-tenant skills:
+
+| Property               | Value                   |
+| ---------------------- | ----------------------- |
+| `MicrosoftAppType`     | `SingleTenant`          |
+| `MicrosoftAppId`       | The bot's app ID        |
+| `MicrosoftAppPassword` | The bot's app password  |
+| `MicrosoftAppTenantId` | The bot's app tenant ID |
+
+For reference, the following values were used for multitenant skills:
+
+| Property               | Value                                           |
+| ---------------------- | ----------------------------------------------- |
+| `MicrosoftAppType`     | `MultiTenant`                                   |
+| `MicrosoftAppId`       | The bot's app ID                                |
+| `MicrosoftAppPassword` | The bot's app password                          |
+| `MicrosoftAppTenantId` | Not applicable; left blank for multitenant bots |
+
+After converting the values, import the skill into an instance of your agent created as a single-tenant instance.
 
 ## Validation performed during registering a Skill
 
