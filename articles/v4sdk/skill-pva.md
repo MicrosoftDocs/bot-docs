@@ -37,7 +37,7 @@ Before you can register your bot as a skill within Copilot Studio, you must ensu
 
 ## Single-tenant and multitenant restriction
 
-Copilot Studio previously created multitenant Entra ID applications. However, now it's creating single-tenant Entra ID applications. For sills to work properly with the agents based on new single-tenant Entra ID applications, the skills need to be configured for a single-tenant instance.
+Copilot Studio previously created multitenant Entra ID applications. However, now it's creating single-tenant Entra ID applications. For skills to work properly with the agents based on new single-tenant Entra ID applications, the skills need to be configured for a single-tenant instance.
 
 ## Convert an existing skill from multitenant to single-tenant
 
