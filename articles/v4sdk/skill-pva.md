@@ -68,6 +68,8 @@ For reference, the following values were used for multitenant skills:
 
 After converting the values, import the skill into an instance of your agent created as a single-tenant instance. You can also view the Entra ID app regristration, to see how it was created. Go to **Manage** > **Authentication** > **Supported account types**.
 
+:::image type="content" source="media/authentication-supported-account-types.png" alt-text="Screenshot highlighting the Supported account type options.":::
+
 ## Validation performed during registering a Skill
 
 When an end user attempts to connect to your skill from their copilot, they'll first need to [import the skill to Copilot Studio](/microsoft-copilot-studio/advanced-use-skills). Your skill goes through a series of validation checks. A failure of one of these checks might result in an error message as described in this table.
