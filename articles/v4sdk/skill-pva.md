@@ -68,7 +68,7 @@ For reference, the following values were used for multitenant skills:
 
 After converting the values, import the skill into an instance of your agent created as a single-tenant instance. You can also view the Entra ID app regristration, to see how it was created. Go to **Manage** > **Authentication** > **Supported account types**.
 
-:::image type="content" source="./media/authentication-supported-account-types.png" alt-text="Screenshot highlighting the Supported account type options.":::
+:::image type="content" source="./media/skill-pva/authentication-supported-account-types.png" alt-text="Screenshot highlighting the Supported account type options.":::
 
 ### Multitenant to single-tenant code update
 
