@@ -66,7 +66,7 @@ For reference, the following values were used for multitenant skills:
 | `MicrosoftAppPassword` | The bot's app password                          |
 | `MicrosoftAppTenantId` | Not applicable; left blank for multitenant bots |
 
-After converting the values, import the skill into an instance of your agent created as a single-tenant instance. You can also view the Entra ID app regristration, to see how it was created. Go to **Manage** > **Authentication** > **Supported account types**.
+After converting the values, import the skill into an instance of your agent created as a single-tenant instance. You can also view the Entra ID app registration, to see how it was created. Go to **Manage** > **Authentication** > **Supported account types**.
 
 :::image type="content" source="./media/skill-pva/authentication-supported-account-types.png" alt-text="Screenshot highlighting the Supported account type options.":::
 
