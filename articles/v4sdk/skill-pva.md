@@ -33,7 +33,46 @@ Copilot Studio places restrictions on what you can declare in your [skill manife
 
 In order to ensure compliance and adequate governance of custom skills being registered for use within Copilot Studio, your skill bot must be a registered application in Microsoft Entra ID. Upon adding a skill, we validate if the skill's application ID is in the tenant of the signed in user and the skills endpoint matches the registered application's `Home Page URL`.
 
-Before you can register your bot as a skill within Copilot Studio, you must ensure that for the bot, the [home page in the Azure portal](/azure/active-directory/app-proxy/application-proxy-configure-custom-home-page#change-the-home-page-in-the-azure-portal) is set to the bot's skill manifest URL.
+Before you can register your bot as a skill within Copilot Studio, you must ensure that for the bot, the [home page in the Azure portal](/entra/identity/app-proxy/application-proxy-configure-custom-home-page#change-the-home-page-in-the-azure-portal) is set to the bot's skill manifest URL.
+
+## Single-tenant and multitenant restriction
+
+Copilot Studio previously created multitenant Entra ID applications. However, now it's creating single-tenant Entra ID applications. For skills to work properly with the agents based on new single-tenant Entra ID applications, the skills need to be configured for a single-tenant instance.
+
+## Convert an existing skill from multitenant to single-tenant
+
+You can convert existing skills from multitenant support to single-tenant support. To convert a multitenant skill to a single-tenant skill, you need to perform the following changes:
+
+- Create a new single-tenant Entra ID app registration
+- Update the skill configuration to use single-tenant
+- Deploy the skill
+- (Optional) update the source code
+
+The following values are required for single-tenant skills:
+
+| Property               | Value                   |
+| ---------------------- | ----------------------- |
+| `MicrosoftAppType`     | `SingleTenant`          |
+| `MicrosoftAppId`       | The bot's app ID        |
+| `MicrosoftAppPassword` | The bot's app password  |
+| `MicrosoftAppTenantId` | The bot's app tenant ID |
+
+For reference, the following values were used for multitenant skills:
+
+| Property               | Value                                           |
+| ---------------------- | ----------------------------------------------- |
+| `MicrosoftAppType`     | `MultiTenant`                                   |
+| `MicrosoftAppId`       | The bot's app ID                                |
+| `MicrosoftAppPassword` | The bot's app password                          |
+| `MicrosoftAppTenantId` | Not applicable; left blank for multitenant bots |
+
+After converting the values, import the skill into an instance of your agent created as a single-tenant instance. You can also view the Entra ID app registration, to see how it was created. Go to **Manage** > **Authentication** > **Supported account types**.
+
+:::image type="content" source="./media/skill-pva/authentication-supported-account-types.png" alt-text="Screenshot highlighting the Supported account type options.":::
+
+### Multitenant to single-tenant code update
+
+After converting the values, you might need to also update the code to allow connection of the specified tenant to the skill. For more information, see [BotBuilder-Samples](https://github.com/microsoft/BotBuilder-Samples/blob/6952b9e548038d58e3c8cd607acaa72dcf7648a0/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/Startup.cs#L40-L48).
 
 ## Validation performed during registering a Skill
 
