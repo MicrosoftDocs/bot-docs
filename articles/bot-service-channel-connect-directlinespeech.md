@@ -18,7 +18,7 @@ ms.custom:
 
 This article describes how to connect a bot to the Direct Line Speech channel. Use this channel to allow users to interact with a bot via voice.
 
-Once you've built your bot, onboarding it with Direct Line Speech will enable low-latency, high reliability connection with client applications using the [Speech SDK](/azure/ai-services/speech-service/speech-sdk). These connections are optimized for voice in and voice out conversational experiences. For more information on Direct Line Speech and how to build client applications, visit the [custom voice-first virtual assistant](/azure/ai-services/speech-service/voice-assistants) page.
+Once you've built your bot, onboarding it with Direct Line Speech will enable low-latency, high reliability connection with client applications using the [Speech SDK](/azure/ai-services/speech-service/speech-sdk). These connections are optimized for voice in and voice out conversational experiences. For more information on Direct Line Speech and how to build client applications, visit the [What is Direct Line Speech?](/azure/ai-services/speech-service/direct-line-speech) page.
 
 ## Prerequisites
 
