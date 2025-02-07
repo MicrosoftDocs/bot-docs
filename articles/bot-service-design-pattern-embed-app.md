@@ -44,11 +44,11 @@ Other types of apps and games can communicate with the Bot Framework by using th
 
 ## Creating a cross-platform mobile app that runs a bot
 
-This example of creating a mobile app that runs a bot uses [Xamarin](https://www.xamarin.com/), a popular tool for building cross-platform mobile applications.
+This example of creating a mobile app that runs a bot uses [.NET MAUI](/dotnet/maui), a tool for building cross-platform applications.
 
 First, create a web view component and use it to host a [Web Chat](https://github.com/Microsoft/BotFramework-WebChat) control. Then, using Azure portal, add the Web Chat channel.
 
-Next, specify the registered web chat URL as the source for the web view control in the Xamarin app:
+Next, specify the registered web chat URL as the source for the web view control in the .NET MAUI app:
 
 ```csharp
 public class WebPage : ContentPage
@@ -62,9 +62,7 @@ public WebPage()
 }
 ```
 
-Using this process, you can create a cross-platform mobile application that renders the embedded web view with the web chat control.
-
-:::image type="content" source="media/bot-service-design-pattern-embed-app/xamarin-apps.png" alt-text="Examples of a bot recognizing what type of device the user's on.":::
+Using this process, you can create a cross-platform application that renders the embedded web view with the web chat control.
 
 ## Additional resources
 
