@@ -397,25 +397,6 @@ See [CI/CD](#cicd).
 - **Notes**: Don't use ASE as an acronym.
 - **See also**: [App Service Environment](#app-service-environment).
 
-## Direct Line channel
-
-## Direct Line Speech
-
-- **Status**: Internal, but approved.
-- **Forms**:
-  - Direct Line Speech
-- **Definition**:
-  - "A robust, end-to-end solution for creating a flexible, extensible voice assistant. It is powered by the Bot Framework and its Direct Line Speech channel, that is optimized for voice-in, voice-out interaction with bots."
-  - Direct Line Speech is a collection of services and protocols for supporting speech-enabled bots.
-- **Notes**: Provides integration with the [Speech SDK](/azure/ai-services/speech-service/speech-sdk).
-- **See**: [What is Direct Line Speech?](/azure/ai-services/speech-service/direct-line-speech).
-- **See also**: [Direct Line](#direct-line), [WebSockets](#websocket).
-
-<a id="e"></a>
-
-<a id="event"></a>
-<a id="event-activity"></a>
-
 ## European Union data boundary
 
 - **Notes**: A GDPR related effort to make sure customer data stays in the European Union region.

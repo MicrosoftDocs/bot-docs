@@ -45,7 +45,6 @@ Within the table, the following terms have the following meanings.
 | Alexa                                       | No                      | No                  | Yes                 | Yes          | No                  | No     | Yes     | No               | No             | No             | No     |
 | Azure Communication Services                | No                      | Yes                 | No                  | Yes          | No                  | No     | Yes     | No               | Yes            | Yes            | Yes    |
 | Direct Line                                 | No                      | Yes                 | Yes                 | Yes          | Yes                 | No     | Yes     | No               | No             | No             | Yes    |
-| Direct Line Speech                          |                         |                     |                     |              |                     |        | Yes     |                  |                |                |        |
 | Email                                       | No                      | No                  | No                  | Undetermined | No                  | No     | Yes     | No               | No             | No             | No     |
 | Facebook                                    | No                      | Yes                 | No                  | Yes          | No                  | No     | Yes     | Yes              | No             | No             | No     |
 | GroupMe                                     | No                      | Yes                 | No                  | Undetermined | No                  | No     | Yes     | No               | No             | No             | No     |
@@ -109,7 +108,6 @@ A value of "None" indicates that the action type isn't supported in the channel.
 | Alexa                                       | None              | None         |
 | Azure Communication Services                |                   |              |
 | Direct Line                                 | 100               | 100          |
-| Direct Line Speech                          | 100               | 100          |
 | Email                                       | None              | None         |
 | Facebook                                    | 11                | 3            |
 | GroupMe                                     | None              | None         |

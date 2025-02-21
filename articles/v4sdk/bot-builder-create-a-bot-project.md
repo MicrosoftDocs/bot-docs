@@ -30,7 +30,7 @@ All bot applications share some common features.
 
 You can create an echo bot from the templates, as described in [Create a bot](../bot-service-quickstart-create-bot.md), or you can copy an echo bot project from the [Microsoft/BotBuilder-Samples](https://github.com/Microsoft/BotBuilder-Samples) repository.
 
-The C# and JavaScript templates have built-in support for streaming connections. However, this article doesn't cover streaming features. For information about streaming connections, see how to [connect a bot to Direct Line Speech](../bot-service-channel-connect-directlinespeech.md).
+The C# and JavaScript templates have built-in support for streaming connections. However, this article doesn't cover streaming features. 
 
 [!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
 

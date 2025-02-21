@@ -225,5 +225,4 @@ For examples on how to generate a token, see:
 - [Web Chat customization](./v4sdk/bot-builder-webchat-customization.md)
 - [Enable speech in Web Chat](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/03.speech/a.direct-line-speech)
 - [Use Web Chat with the Direct Line App Service Extension](./bot-service-channel-directline-extension-webchat-client.md)
-- [Connect a bot to Direct Line Speech](./bot-service-channel-connect-directlinespeech.md)
 - [Add single sign-on to Web Chat](./v4sdk/bot-builder-webchat-sso.md)

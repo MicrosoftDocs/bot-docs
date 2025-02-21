@@ -49,4 +49,3 @@ The Direct Line App Service extension is pre-installed on all instances of Azure
 ## Additional resources
 
 - [Connect a bot to Direct Line](bot-service-channel-connect-directline.md)
-- [Connect a bot to Direct Line Speech](bot-service-channel-connect-directlinespeech.md)
