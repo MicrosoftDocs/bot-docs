@@ -1,6 +1,6 @@
 ---
 title: Update a multitenant skill to a single-tenant skill
-description: Learn how to implement a skill that can be used in Microsoft Copilot Studio, using the Bot Framework SDK.
+description: Learn how to multitenant skill to a single-tenant skill for Copilot Studio agents.
 keywords: skills
 author: JonathanFingold
 ms.author: iawilt
