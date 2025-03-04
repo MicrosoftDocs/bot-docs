@@ -39,42 +39,7 @@ Before you can register your bot as a skill within Copilot Studio, you must ensu
 
 Copilot Studio previously created multitenant Entra ID applications. However, now it's creating single-tenant Entra ID applications. For skills to work properly with the agents based on new single-tenant Entra ID applications, the skills need to be configured for a single-tenant instance.
 
-## Convert an existing skill from multitenant to single-tenant
-
-You can convert existing skills from multitenant support to single-tenant support. To convert a multitenant skill to a single-tenant skill, you need to perform the following changes:
-
-- Create a new single-tenant Entra ID app registration
-- Update the skill configuration to use single-tenant
-- Deploy the skill
-- (Optional) update the source code
-
-The following values are required for single-tenant skills:
-
-| Property               | Value                   |
-| ---------------------- | ----------------------- |
-| `MicrosoftAppType`     | `SingleTenant`          |
-| `MicrosoftAppId`       | The bot's app ID        |
-| `MicrosoftAppPassword` | The bot's app password  |
-| `MicrosoftAppTenantId` | The bot's app tenant ID |
-
-For reference, the following values were used for multitenant skills:
-
-| Property               | Value                                           |
-| ---------------------- | ----------------------------------------------- |
-| `MicrosoftAppType`     | `MultiTenant`                                   |
-| `MicrosoftAppId`       | The bot's app ID                                |
-| `MicrosoftAppPassword` | The bot's app password                          |
-| `MicrosoftAppTenantId` | Not applicable; left blank for multitenant bots |
-
-After converting the values, import the skill into an instance of your agent created as a single-tenant instance. You can also view the Entra ID app registration, to see how it was created. Go to **Manage** > **Authentication** > **Supported account types**.
-
-:::image type="content" source="./media/skill-pva/authentication-supported-account-types.png" alt-text="Screenshot highlighting the Supported account type options.":::
-
-### Multitenant to single-tenant code update
-
-After converting the values, you might need to also update the code to allow connection of the specified tenant to the skill. For more information, see [BotBuilder-Samples](https://github.com/microsoft/BotBuilder-Samples/blob/6952b9e548038d58e3c8cd607acaa72dcf7648a0/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/Startup.cs#L40-L48).
-
-## Validation performed during registering a Skill
+## Validation performed when registering a Skill
 
 When an end user attempts to connect to your skill from their copilot, they'll first need to [import the skill to Copilot Studio](/microsoft-copilot-studio/advanced-use-skills). Your skill goes through a series of validation checks. A failure of one of these checks might result in an error message as described in this table.
 
