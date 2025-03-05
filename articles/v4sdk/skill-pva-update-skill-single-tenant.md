@@ -42,7 +42,7 @@ For skills already deployed into the same tenant as the Copilot Studio agent, an
 
 ## Update a multitenant skill to a singlet-tenant skill
 
-For skills already deployed into the same tenant as the Copilot Stuido agent, but the skill is used by an existing multitenant agent, you need to update the multitenant skill to accept a single-tenant skill.
+For skills already deployed into the same tenant as the Copilot Studio agent, but the skill is used by an existing multitenant agent, you need to update the multitenant skill to accept a single-tenant skill token.
 
 1. Update the skills validation configuration to all the tenant ID of the agent. For more information, see [Multitenant to single-tenant code update](skill-pva-convert-skill-single-tenant.md#multitenant-to-single-tenant-code-update).
 1. Create the token for the agent's tenant ID (deploy the app regristration to the correct tenant).

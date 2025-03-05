@@ -19,8 +19,8 @@ You can convert existing skills from multitenant support to single-tenant suppor
 
 - Create a new single-tenant Entra ID app registration
 - Update the skill configuration to use single-tenant
-- Deploy the skill
 - (Optional) update the source code
+- Deploy the skill
 
 The following values are required for single-tenant skills:
 
