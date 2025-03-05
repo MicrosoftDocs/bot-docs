@@ -28,7 +28,7 @@ These skills have the following artifacts which refer to multitenant and single-
 
 The Copilot Studio agent calls the skill based on the Bot Framework SDK, as shown in the following illustration:
 
-:::image type="content" source="{source}" alt-text="{alt-text}":::
+:::image type="content" source="./media/skill-pva/agent-to-skill-calls.png" alt-text="Graphic illustrating the call flow between a Copilot Studio agent and a Bot Framework skill.":::
 
 In this scenario, the following actions occur:
 
