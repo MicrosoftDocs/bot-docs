@@ -39,7 +39,6 @@ Before you can register your bot as a skill within Copilot Studio, you must ensu
 
 Copilot Studio previously created multitenant Entra ID applications. However, now it's creating single-tenant Entra ID applications. For skills to work properly with the agents based on new single-tenant Entra ID applications, the skills need to be configured for a single-tenant instance. For more information, see [Convert an existing skill from multitenant to single-tenant](skill-pva-convert-skill-single-tenant.md) or [Update a multitenant skill to a single-tenant skill](skill-pva-update-skill-single-tenant.md).  
 
-
 ## Validation performed when registering a Skill
 
 When an end user attempts to connect to your skill from their copilot, they'll first need to [import the skill to Copilot Studio](/microsoft-copilot-studio/advanced-use-skills). Your skill goes through a series of validation checks. A failure of one of these checks might result in an error message as described in this table.
