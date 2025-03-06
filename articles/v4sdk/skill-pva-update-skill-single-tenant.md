@@ -32,7 +32,7 @@ The Copilot Studio agent calls the skill based on the Bot Framework SDK, as show
 
 In this scenario, the following actions occur:
 
-- Copilot Studio creates the token as per the app regristration setting. For newly created Copilot Studio agents, this is single-tenant, which means that the token audience is set to the same tenant ID as the agent.
+- Copilot Studio creates the token as per the app registration setting. For newly created Copilot Studio agents, this is single-tenant, which means that the token audience is set to the same tenant ID as the agent.
 - Copilot Studio only accepts tokens for the tenant ID the agent is in, or for the Bot Framework skill.
 - The Entra ID only issues tokens for the Bot Framework skill if the skill is multitenant.
  
@@ -40,7 +40,7 @@ In this scenario, the following actions occur:
 
 For skills already deployed into the same tenant as the Copilot Studio agent, and only used by the new agent, [convert the skill to a single-tenant skill](skill-pva-convert-skill-single-tenant.md).
 
-## Update a multitenant skill to a singlet-tenant skill
+## Update a multitenant skill to a single-tenant skill
 
 For skills already deployed into the same tenant as the Copilot Studio agent, but the skill is used by an existing multitenant agent, you need to update the multitenant skill to accept a single-tenant skill token.
 
