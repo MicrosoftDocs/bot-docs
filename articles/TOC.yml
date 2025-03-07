@@ -437,8 +437,14 @@
     href: bot-service-review-guidelines.md
   - name: Guide to identifiers
     href: bot-service-resources-identifiers-guide.md
-  - name: Implement a skill for Power Virtual Agents
+  - name: Implement skills for Copilot Studio
     href: v4sdk/skill-pva.md
+  - name: Convert and update skills from multitenant to single-tenant
+    items:
+      - name: Convert an existing skill from multitenant to single-tenant
+        href: v4sdk/skill-pva-convert-skill-single-tenant.md
+      - name: Update an existing skill from multitenant to single-tenant
+        href: v4sdk/skill-pva-update-skill-single-tenant.md    
   - name: User-agent requests
     href: bot-service-resources-user-agent.md
   - name: FAQ
