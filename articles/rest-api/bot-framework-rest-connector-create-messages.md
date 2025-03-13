@@ -14,7 +14,7 @@ ms.custom:
 
 # Create messages with the Bot Connector API
 
-Your bot will send [Activity][] objects of type **message** to communicate information to users, and likewise, will also receive **message** activities from users. Some messages may simply consist of plain text, while others may contain richer content such as [text to be spoken](bot-framework-rest-connector-text-to-speech.md), [suggested actions](bot-framework-rest-connector-add-suggested-actions.md), [media attachments](bot-framework-rest-connector-add-media-attachments.md), [rich cards](bot-framework-rest-connector-add-rich-cards.md), and [channel-specific data](bot-framework-rest-connector-channeldata.md). This article describes some of the commonly-used message properties.
+Your bot will send [Activity][] objects of type **message** to communicate information to users, and likewise, will also receive **message** activities from users. Some messages may simply consist of plain text, while others may contain richer content such as [suggested actions](bot-framework-rest-connector-add-suggested-actions.md), [media attachments](bot-framework-rest-connector-add-media-attachments.md), [rich cards](bot-framework-rest-connector-add-rich-cards.md), and [channel-specific data](bot-framework-rest-connector-channeldata.md). This article describes some of the commonly-used message properties.
 
 ## Message text and formatting
 
@@ -43,10 +43,6 @@ To convey location-related information within a message, populate the message's 
 ## Channel data
 
 The `channelData` property of the [Activity][] object can be used to implement channel-specific functionality. For details, see [Implement channel-specific functionality](bot-framework-rest-connector-channeldata.md).
-
-## Text to speech
-
-The `speak` property of the [Activity][] object can be used to specify the text to be spoken by your bot on a speech-enabled channel and the `inputHint` property of the `Activity` object can be used to influence the state of the client's microphone. For details, see [Add speech to messages](bot-framework-rest-connector-text-to-speech.md) and [Add input hints to messages](bot-framework-rest-connector-add-input-hints.md).
 
 ## Suggested actions
 

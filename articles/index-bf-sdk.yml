@@ -148,7 +148,7 @@ landingContent:
           - text: Microsoft Teams overview
             url: /microsoftteams/teams-overview
           - text: Azure AI services
-            url: /azure/cognitive-services
+            url: /azure/ai-services
       - linkListType: concept
         links:
           - text: How Microsoft Teams bots work

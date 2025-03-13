@@ -15,8 +15,6 @@ ms.custom:
 
 If you're building a bot for a speech-enabled channel, you can construct messages that specify the text to be spoken by your bot. You can also attempt to influence the state of the client's microphone by specifying an [input hint](bot-framework-rest-connector-add-input-hints.md) to indicate whether your bot is accepting, expecting, or ignoring user input.
 
-You can configure your bot to allow client applications to communicate with it through [Direct Line Speech channel](../bot-service-channel-connect-directlinespeech.md).
-
 ## Specify text to be spoken by your bot
 
 To specify text to be spoken by your bot on a speech-enabled channel, set the `speak` property within the [Activity][Activity] object that represents your message. You can set the `speak` property to either a plain text string or a string that is formatted as [Speech Synthesis Markup Language (SSML)](/azure/ai-services/speech-service/speech-synthesis-markup), an XML-based markup language that enables you to control various characteristics of your bot's speech such as voice, rate, volume, pronunciation, pitch, and more. If the channel doesn't support, the message is delivered as text.
