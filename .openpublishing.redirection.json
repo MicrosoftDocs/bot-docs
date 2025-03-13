@@ -2071,7 +2071,17 @@
     },
     {
       "source_path": "articles/bot-service-debug-channel-ngrok.md",
-      "redirect_url": "articles/bot-service-debug-channel-devtunnel.md",
+      "redirect_url": "articles/bot-service-debug-channel-devtunnel",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/bot-service-channel-connect-directlinespeech.md",
+      "redirect_url": "articles/bot-service-channel-directline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/directline-speech-bot.md",
+      "redirect_url": "articles/bot-service-channel-directline",
       "redirect_document_id": false
     }
   ]

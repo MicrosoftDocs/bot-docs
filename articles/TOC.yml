@@ -170,8 +170,6 @@
       href: v4sdk/bot-builder-telemetry-QnAMaker.md
     - name: Analyze your bot's telemetry data
       href: v4sdk/bot-builder-telemetry-analytics-queries.md
-    - name: Use Direct Line Speech in your bot
-      href: directline-speech-bot.md
   - name: Test
     items:
     - name: Unit testing bots
@@ -237,8 +235,6 @@
           href: bot-service-channel-directline.md
         - name: Connect to Direct Line
           href: bot-service-channel-connect-directline.md
-        - name: Connect to Direct Line Speech
-          href: bot-service-channel-connect-directlinespeech.md
         - name: Direct Line App Service extension
           items:
           - name: Direct Line App Service extension
