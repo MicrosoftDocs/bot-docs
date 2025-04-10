@@ -1,5 +1,5 @@
 ---
-title: Update a multitenant skill to a single-tenant skill
+title: Update a skill to support both single-tenant and multitenant agents
 description: Learn how to multitenant skill to a single-tenant skill for Copilot Studio agents.
 keywords: skills
 author: JonathanFingold
@@ -13,7 +13,7 @@ ms.custom:
   - evergreen
 ---
 
-# Update a multitenant skill to a single-tenant skill
+# Update a skill to support both single-tenant and multitenant agents
 
 Copilot Studio users can [implement skills in Copilot Studio](/microsoft-copilot-studio/configuration-add-skills).
 
@@ -35,14 +35,19 @@ In this scenario, the following actions occur:
 - Copilot Studio creates the token as per the app registration setting. For newly created Copilot Studio agents, this is single-tenant, which means that the token audience is set to the same tenant ID as the agent.
 - Copilot Studio only accepts tokens for the tenant ID the agent is in, or for the Bot Framework skill.
 - The Entra ID only issues tokens for the Bot Framework skill if the skill is multitenant.
- 
-## Convert a skill to single-tenant
 
-For skills already deployed into the same tenant as the Copilot Studio agent, and only used by the new agent, [convert the skill to a single-tenant skill](skill-pva-convert-skill-single-tenant.md).
+## Update skill to support single-tenant and multitenant agents
 
-## Update a multitenant skill to a single-tenant skill
+For skills already deployed into the same tenant as the Copilot Studio agent, but the skill is used by an existing multitenant agent, you need to update the multitenant skill to also accept a single-tenant skill token.
 
-For skills already deployed into the same tenant as the Copilot Studio agent, but the skill is used by an existing multitenant agent, you need to update the multitenant skill to accept a single-tenant skill token.
+1. Update the skill's validation configuration to include the tenant ID of the agent. For example start by adding [this code](https://github.com/microsoft/BotBuilder-Samples/blob/6952b9e548038d58e3c8cd607acaa72dcf7648a0/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/Startup.cs#L29-L55) to the Startup.cs of your skill.
 
-1. Update the skills validation configuration to all the tenant ID of the agent. For more information, see [Multitenant to single-tenant code update](skill-pva-convert-skill-single-tenant.md#multitenant-to-single-tenant-code-update).
-1. Create the token for the agent's tenant ID (deploy the app regristration to the correct tenant).
+1. Change the configuration of your skill and set `MicrosoftAppTenantId` to your tenant ID
+
+1. Keep the value of `MicrosoftAppType` set to `MultiTenant`.
+
+1. Build the skill and redeploy it.
+
+1. The skill's application registration needs to be in the same tenant as your agent for the skill to be working with a single tenant agent.
+
+This updated skill will be able to be added into a single-tenant or multitenant agent. If the skill is used in multiple tenants then it will need to be deployed one skill per tenant with its application registration in the agent's tenant.
