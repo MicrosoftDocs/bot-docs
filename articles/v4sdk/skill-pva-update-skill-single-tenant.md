@@ -50,4 +50,4 @@ For skills already deployed into the same tenant as the Copilot Studio agent, bu
 
 1. The skill's application registration needs to be in the same tenant as your agent for the skill to be working with a single tenant agent.
 
-This updated skill will be able to be added into a single-tenant or multitenant agent. If the skill is used in multiple tenants then it will need to be deployed one skill per tenant with its application registration in the agent's tenant.
+You can now add the updated skill into a single-tenant or multitenant agent. For each Copilot Studio agent, the skill must be deployed with its application registration in the same tenant the agent using the skill was created in.
