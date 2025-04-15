@@ -443,7 +443,7 @@
     items:
       - name: Convert an existing skill from multitenant to single-tenant
         href: v4sdk/skill-pva-convert-skill-single-tenant.md
-      - name: Update an existing skill from multitenant to single-tenant
+      - name: Update skill to support both single-tenant and multitenant agents
         href: v4sdk/skill-pva-update-skill-single-tenant.md    
   - name: User-agent requests
     href: bot-service-resources-user-agent.md
