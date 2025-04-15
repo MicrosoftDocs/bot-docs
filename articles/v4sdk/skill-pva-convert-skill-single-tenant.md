@@ -46,4 +46,4 @@ After converting the values, import the skill into an instance of your agent cre
 
 ## Multitenant to single-tenant code update
 
-After converting the values, you might need to also update the code to allow connection of the specified tenant to the skill. For more information, see [BotBuilder-Samples](https://github.com/microsoft/BotBuilder-Samples/blob/6952b9e548038d58e3c8cd607acaa72dcf7648a0/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/Startup.cs#L40-L48).
+After converting the values, you might need to also update the code to allow connection of the specified tenant to the skill. For more information, see [BotBuilder-Samples](https://github.com/microsoft/BotBuilder-Samples/blob/6952b9e548038d58e3c8cd607acaa72dcf7648a0/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/Startup.cs#L29-L55).
