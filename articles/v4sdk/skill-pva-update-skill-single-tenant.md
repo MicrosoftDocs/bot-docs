@@ -34,7 +34,7 @@ In this scenario, the following actions occur:
 
 - Copilot Studio creates the token as per the app registration setting. For newly created Copilot Studio agents, this is single-tenant, which means that the token audience is set to the same tenant ID as the agent.
 - Copilot Studio only accepts tokens for the tenant ID the agent is in, or for the Bot Framework tenant.
-- The Entra ID only issues tokens for the Bot Framework tenant if the skill is multitenant.
+- Entra ID only issues tokens for the Bot Framework tenant if the skill is multitenant.
 
 ## Update skill to support single-tenant and multitenant agents
 
