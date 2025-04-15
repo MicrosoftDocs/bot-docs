@@ -33,18 +33,18 @@ The Copilot Studio agent calls the skill based on the Bot Framework SDK, as show
 In this scenario, the following actions occur:
 
 - Copilot Studio creates the token as per the app registration setting. For newly created Copilot Studio agents, this is single-tenant, which means that the token audience is set to the same tenant ID as the agent.
-- Copilot Studio only accepts tokens for the tenant ID the agent is in, or for the Bot Framework skill.
-- The Entra ID only issues tokens for the Bot Framework skill if the skill is multitenant.
+- Copilot Studio only accepts tokens for the tenant ID the agent is in, or for the Bot Framework tenant.
+- The Entra ID only issues tokens for the Bot Framework tenant if the skill is multitenant.
 
 ## Update skill to support single-tenant and multitenant agents
 
 For skills already deployed into the same tenant as the Copilot Studio agent, but the skill is used by an existing multitenant agent, you need to update the multitenant skill to also accept a single-tenant skill token.
 
-1. Update the skill's validation configuration to include the tenant ID of the agent. For example start by adding [this code](https://github.com/microsoft/BotBuilder-Samples/blob/6952b9e548038d58e3c8cd607acaa72dcf7648a0/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/Startup.cs#L29-L55) to the Startup.cs of your skill.
+1. Update the skill's validation configuration to include the tenant ID of the agent. For example start by adding [this code](https://github.com/microsoft/BotBuilder-Samples/blob/6952b9e548038d58e3c8cd607acaa72dcf7648a0/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot/EchoSkillBot/Startup.cs#L29-L55) to the Startup.cs of your skill. Change the code on line 38 of the code snippet to specify the tenant ID statically inline.
 
-1. Change the configuration of your skill and set `MicrosoftAppTenantId` to your tenant ID
+1. In the configuration of your skill, do **not** set `MicrosoftAppTenantId`.
 
-1. Keep the value of `MicrosoftAppType` set to `MultiTenant`.
+1. Keep the value of `MicrosoftAppType` in the configuration set to `MultiTenant`.
 
 1. Build the skill and redeploy it.
 
