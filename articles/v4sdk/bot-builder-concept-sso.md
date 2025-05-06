@@ -7,7 +7,7 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.service: azure-ai-bot-service
-ms.topic: conceptual
+ms.topic: article
 monikerRange: 'azure-bot-service-4.0'
 ms.custom:
   - evergreen

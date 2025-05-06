@@ -7,7 +7,7 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: Gabo.Gilabert
 ms.service: azure-ai-bot-service
-ms.topic: conceptual
+ms.topic: concept-article
 monikerRange: 'azure-bot-service-4.0'
 ms.custom:
   - evergreen
