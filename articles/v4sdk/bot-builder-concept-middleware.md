@@ -6,7 +6,7 @@ author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
-ms.topic: conceptual
+ms.topic: article
 ms.service: azure-ai-bot-service
 monikerRange: 'azure-bot-service-4.0'
 ms.custom:

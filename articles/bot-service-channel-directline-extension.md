@@ -7,7 +7,7 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: Daniel.Evans
 ms.service: azure-ai-bot-service
-ms.topic: conceptual
+ms.topic: article
 ms.custom:
   - evergreen
 ---

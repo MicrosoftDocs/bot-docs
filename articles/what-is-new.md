@@ -7,7 +7,7 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.service: azure-ai-bot-service
-ms.topic: conceptual
+ms.topic: whats-new
 ms.custom:
   - tab-zone-seo
   - evergreen

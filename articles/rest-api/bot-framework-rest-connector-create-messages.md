@@ -5,7 +5,7 @@ author: JonathanFingold
 ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
-ms.topic: conceptual
+ms.topic: article
 ms.service: azure-ai-bot-service
 ms.custom:
   - abs-meta-21q1
