@@ -6,7 +6,7 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: micchow
 ms.service: azure-ai-bot-service
-ms.topic: conceptual
+ms.topic: overview
 monikerRange: 'azure-bot-service-4.0'
 ms.custom:
   - abs-meta-21q1
