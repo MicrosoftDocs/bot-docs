@@ -89,6 +89,10 @@ ValidateAuthority=true
 
 For the multitenant bot, use the following settings.
 
+> [!IMPORTANT]
+> **Multi-tenant bot creation will be deprecated after July 31, 2025.**
+> For continued support, please migrate to **single-tenant** or **user-assigned managed identity**.
+
 ### [C#](#tab/csharp)
 
 Add the following settings to your **appsettings.json** file.
