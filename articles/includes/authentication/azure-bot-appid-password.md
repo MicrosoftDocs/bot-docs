@@ -11,24 +11,23 @@ ms.custom:
 
 <a id="app-id-and-password"></a>
 
-### Bot identity information
+### Bot Identity Information
 
-Follow these steps to add identity information to your bot's configuration file.
-The file differs depending on the programming language you use to create the bot.
+Follow these steps to add identity information to your bot's configuration file. The file differs depending on the programming language used to create the bot.
 
 > [!IMPORTANT]
-> The Java version of the Bot Framework SDK only supports multi-tenant bots.
-> The C#, JavaScript, and Python versions support all three application types for managing the bot's identity.
+>
+> - The **Java** version of the Bot Framework SDK only supports **multi-tenant** bots.
+> - The **C#**, **JavaScript**, and **Python** versions support all three application types for managing the bot's identity.
 
 | Language   | File name              | Notes                                                                                                               |
 |:-----------|:-----------------------|:--------------------------------------------------------------------------------------------------------------------|
 | C#         | appsettings.json       | Supports all three application types for managing your bot's identity.                                              |
 | JavaScript | .env                   | Supports all three application types for managing your bot's identity.                                              |
 | Java       | application.properties | Only supports multi-tenant bots.                                                                                    |
-| Python     | config.py              | Supports all three application types for managing your bot's identity. |
+| Python     | config.py              | Supports all three application types for managing your bot's identity.                                              |
 
-The identity information you need to add depends on the bot's application type.
-Provide the following values in your configuration file.
+The identity information you need to add depends on the bot's application type. Provide the following values in your configuration file.
 
 #### [User-assigned managed identity](#tab/userassigned)
 
@@ -55,6 +54,10 @@ Available for C#, JavaScript, and Python bots.
 #### [Multi-tenant](#tab/multitenant)
 
 Available for bots in all programming languages: C#, JavaScript, Java, and Python.
+
+> [!IMPORTANT]
+> **Multi-tenant bot creation will be deprecated after July 31, 2025.**
+> For continued support, please migrate to **single-tenant** or **user-assigned managed identity**.
 
 | Property               | Value                                                    |
 |:-----------------------|:---------------------------------------------------------|
