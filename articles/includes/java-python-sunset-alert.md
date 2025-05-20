@@ -10,10 +10,4 @@ ms.custom:
 ---
 
 > [!NOTE]
-> The Bot Framework JavaScript, C#, and Python SDKs will continue to be supported, however, the Java SDK is being retired with final long-term support ending in November 2023.
->   
-> Existing bots built with the Java SDK will continue to function.
->
-> For new bot building, consider using [Microsoft Copilot Studio](/microsoft-copilot-studio) and read about [choosing the right copilot solution](../bot-overview.md).
->   
-> For more information, see [The future of bot building](https://powervirtualagents.microsoft.com/blog/the-future-of-bot-building/).
+> To build agents with your choice of AI services, orchestration, and knowledge, consider using the Microsoft 365 Agents SDK. The Agents SDK has support for C#, JavaScript or Python. You can learn more about the Agents SDK at [aka.ms/agents](https://github.com/Microsoft/Agents). If you're looking for a SaaS-based agent platform, consider [Microsoft Copilot Studio](https://www.microsoft.com/microsoft-copilot/microsoft-copilot-studio?msockid=357f4ad089cb66b636e85f308872673e). If you have an existing bot built with the Bot Framework SDK, you can update your bot to the Agents SDK. You can review the core changes and updates at [Bot Framework SDK to Agents SDK migration guidance](https://aka.ms/bfmigrationguidance). Support tickets for the Bot Framework SDK will no longer be serviced as of December 31, 2025.
