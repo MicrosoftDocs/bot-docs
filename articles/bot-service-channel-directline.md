@@ -28,7 +28,7 @@ Over time these offerings will be simplified.
 | Availability and Licensing | GA | GA  |
 | Speech recognition and text-to-speech performance | Standard | Standard |
 | Supports legacy web browsers | Yes | Yes |
-| Bot Framework SDK support | All v3, v4 | v4.63+ required |
+| Bot Framework SDK support | All v3, v4 | v4.6.3+ required |
 | Client SDK support | JS, C# | JS, C# |
 | Works with Web Chat  | Yes | Yes |
 | VNET | No | Yes |
