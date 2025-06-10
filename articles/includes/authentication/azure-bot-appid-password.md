@@ -56,7 +56,6 @@ Available for C#, JavaScript, and Python bots.
 Available for bots in all programming languages: C#, JavaScript, Java, and Python.
 
 > [!IMPORTANT]
-
 > - **Multi-tenant bot creation will be deprecated after July 31, 2025.**
 > - Existing multi-tenant bots will continue to function, but new multi-tenant bot creation will no longer be supported after that date.
 > - To ensure continued support, use **single-tenant** or **user-assigned managed identity** going forward.
