@@ -7,6 +7,7 @@ ms.reviewer: micchow
 ms.topic: include
 ms.custom:
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 See these articles for more information about Azure applications and resources that are used to host a bot.

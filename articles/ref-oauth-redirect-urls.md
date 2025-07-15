@@ -9,6 +9,7 @@ ms.topic: reference
 ms.service: azure-ai-bot-service
 ms.custom:
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # OAuth URL support in Azure AI Bot Service

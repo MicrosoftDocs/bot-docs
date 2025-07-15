@@ -12,6 +12,7 @@ ms.topic: overview
 ms.custom:
   - abs-meta-21q1
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # What is the Bot Framework SDK?

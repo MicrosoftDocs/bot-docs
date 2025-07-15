@@ -9,6 +9,7 @@ ms.service: azure-ai-bot-service
 ms.topic: how-to
 ms.custom:
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # Create .NET Client to Connect to Direct Line App Service extension

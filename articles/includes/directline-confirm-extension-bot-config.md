@@ -7,6 +7,7 @@ ms.reviewer: micchow
 ms.topic: include
 ms.custom:
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 In your browser, go to `https://<your_app_service>.azurewebsites.net/.bot`. If everything is correct, the page will return the following JSON content:

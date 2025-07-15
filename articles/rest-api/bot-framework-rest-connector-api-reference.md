@@ -10,6 +10,7 @@ ms.topic: reference
 ms.custom:
   - abs-meta-21q1
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # API reference for the Bot Framework Connector service

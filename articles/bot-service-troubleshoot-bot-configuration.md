@@ -10,6 +10,7 @@ ms.topic: troubleshooting
 ms.service: azure-ai-bot-service
 ms.custom:
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # Troubleshoot bot configuration issues

@@ -13,6 +13,7 @@ ms.custom:
   - ceX
   - bap-template
   - evergreen
+ms.update-cycle: 1095-days
 ms.collection: virtual-agent
 ms.service: copilot-studio
 ---

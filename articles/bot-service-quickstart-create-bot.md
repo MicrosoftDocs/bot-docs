@@ -12,6 +12,7 @@ ms.custom:
   - tab-zone-seo
   - abs-meta-21q1
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # Create a bot with the Bot Framework SDK

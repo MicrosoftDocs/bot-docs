@@ -9,6 +9,7 @@ ms.topic: how-to
 ms.service: azure-ai-bot-service
 ms.custom:
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # Start a conversation in Direct Line API 3.0

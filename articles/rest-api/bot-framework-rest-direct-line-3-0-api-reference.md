@@ -9,6 +9,7 @@ ms.topic: reference
 ms.service: azure-ai-bot-service
 ms.custom:
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # API reference - Direct Line API 3.0

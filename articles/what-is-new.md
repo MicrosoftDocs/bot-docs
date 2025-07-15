@@ -11,6 +11,7 @@ ms.topic: whats-new
 ms.custom:
   - tab-zone-seo
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # What's new for the Bot Framework SDKs

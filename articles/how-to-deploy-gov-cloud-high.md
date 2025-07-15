@@ -10,6 +10,7 @@ ms.topic: how-to
 ms.custom:
   - template-how-to
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # Configure Bot Framework bots for US Government customers

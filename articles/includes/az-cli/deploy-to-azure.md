@@ -8,6 +8,7 @@ ms.topic: include
 ms.custom:
   - devx-track-azurecli
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 At this point, you're ready to deploy code for your bot to your App Service resource.

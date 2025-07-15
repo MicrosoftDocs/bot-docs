@@ -10,6 +10,7 @@ ms.topic: how-to
 ms-custom: abs-meta-21q1
 ms.custom:
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # Configure .NET bot for extension

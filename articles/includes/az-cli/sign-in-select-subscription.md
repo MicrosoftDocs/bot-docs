@@ -8,6 +8,7 @@ ms.topic: include
 ms.custom:
   - devx-track-azurecli
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 1. Open a command window.

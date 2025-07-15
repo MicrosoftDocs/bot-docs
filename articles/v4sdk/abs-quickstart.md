@@ -11,6 +11,7 @@ ms.service: azure-ai-bot-service
 ms.custom:
   - abs-meta-21q1
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # Use the Azure portal to Create an Azure Bot resource

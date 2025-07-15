@@ -10,6 +10,7 @@ ms.topic: how-to
 ms.service: azure-ai-bot-service
 ms.custom:
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # Design a bot's first user interaction

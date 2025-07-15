@@ -9,6 +9,7 @@ ms.service: azure-ai-bot-service
 ms.topic: how-to
 ms.custom:
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # Add suggested actions to messages with the Bot Connector API

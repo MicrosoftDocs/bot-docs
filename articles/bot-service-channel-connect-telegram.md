@@ -11,6 +11,7 @@ ms.topic: how-to
 ms.custom:
   - abs-meta-21q1
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # Connect a bot to Telegram
