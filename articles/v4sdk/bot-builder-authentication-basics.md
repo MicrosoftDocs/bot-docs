@@ -9,6 +9,7 @@ ms.service: azure-ai-bot-service
 ms.topic: quickstart
 ms.custom:
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # Bot Framework authentication basics

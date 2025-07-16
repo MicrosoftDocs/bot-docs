@@ -10,6 +10,7 @@ ms.service: azure-ai-bot-service
 ms.topic: how-to
 ms.custom:
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # Connect a bot to email

@@ -12,6 +12,7 @@ ms.custom:
   - devx-track-arm-template
   - devx-track-azurecli
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # Use Azure CLI to create an App Service resource

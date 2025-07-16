@@ -9,6 +9,7 @@ ms.topic: overview
 ms.service: azure-ai-bot-service
 ms.custom:
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # Bot Framework REST APIs

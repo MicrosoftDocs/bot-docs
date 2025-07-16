@@ -9,6 +9,7 @@ ms.service: azure-ai-bot-service
 ms.topic: troubleshooting
 ms.custom:
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # Troubleshooting Bot Framework authentication

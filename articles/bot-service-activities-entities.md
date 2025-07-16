@@ -11,6 +11,7 @@ ms.topic: reference
 ms.custom:
   - code-snippets
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # Entities and activity types

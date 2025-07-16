@@ -10,6 +10,7 @@ ms.topic: reference
 ms.custom:
   - subject-policy-reference
   - evergreen
+ms.update-cycle: 1095-days
 ---
 # Azure Policy built-in definitions for Azure AI Bot Service
 

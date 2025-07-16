@@ -7,6 +7,7 @@ ms.reviewer: micchow
 ms.topic: include
 ms.custom:
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 Your bot's identity can be managed in Azure in several ways:

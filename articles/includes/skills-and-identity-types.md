@@ -7,6 +7,7 @@ ms.reviewer: micchow
 ms.topic: include
 ms.custom:
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 Some types of skill consumers are not able to use some types of skill bots.

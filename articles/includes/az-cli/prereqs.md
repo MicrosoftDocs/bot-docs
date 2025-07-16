@@ -8,6 +8,7 @@ ms.topic: include
 ms.custom:
   - devx-track-azurecli
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 To use the Azure CLI to provision and publish bots, you need:

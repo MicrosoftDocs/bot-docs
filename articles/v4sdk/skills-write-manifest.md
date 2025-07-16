@@ -9,6 +9,7 @@ ms.service: azure-ai-bot-service
 ms.topic: reference
 ms.custom:
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # Write a skill manifest

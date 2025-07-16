@@ -10,6 +10,7 @@ ms.topic: how-to
 ms.custom:
   - template-how-to
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # Configure a bot in Microsoft Azure operated by 21Vianet

@@ -9,6 +9,7 @@ ms.topic: concept-article
 ms.service: azure-ai-bot-service
 ms.custom:
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # Key concepts in Direct Line API 1.1

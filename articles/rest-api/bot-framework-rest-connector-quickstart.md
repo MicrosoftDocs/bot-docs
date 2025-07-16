@@ -9,6 +9,7 @@ ms.topic: quickstart
 ms.service: azure-ai-bot-service
 ms.custom:
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # Create a bot with the Bot Connector service with the Bot Connector API

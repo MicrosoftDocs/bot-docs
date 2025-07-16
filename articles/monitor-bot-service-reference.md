@@ -4,6 +4,7 @@ description: This article contains important reference material you need when yo
 ms.custom:
   - horz-monitor
   - evergreen
+ms.update-cycle: 1095-days
 ms.topic: reference
 author: iaanw
 ms.author: iawilt

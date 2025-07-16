@@ -4,6 +4,7 @@ description: Start here to learn how to monitor Azure AI Bot Service.
 ms.custom:
   - horz-monitor
   - evergreen
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: iaanw
 ms.author: iawilt
