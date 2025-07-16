@@ -12,6 +12,7 @@ monikerRange: 'azure-bot-service-4.0'
 ms.custom:
   - abs-meta-21q1
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # Add telemetry to your QnA Maker bot

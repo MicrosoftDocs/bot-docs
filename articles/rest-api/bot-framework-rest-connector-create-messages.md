@@ -10,6 +10,7 @@ ms.service: azure-ai-bot-service
 ms.custom:
   - abs-meta-21q1
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # Create messages with the Bot Connector API

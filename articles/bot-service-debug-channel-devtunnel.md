@@ -11,6 +11,7 @@ ms.service: azure-ai-bot-service
 monikerRange: 'azure-bot-service-4.0'
 ms.custom:
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # Debug a bot from any channel using a tunnel

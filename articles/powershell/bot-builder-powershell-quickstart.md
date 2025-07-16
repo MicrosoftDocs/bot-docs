@@ -10,6 +10,7 @@ ms.custom:
   - devx-track-azurepowershell
   - modeapi
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # Create and publish a bot with Azure PowerShell

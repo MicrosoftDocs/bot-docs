@@ -11,6 +11,7 @@ ms.custom:
   - template-how-to
   - devx-track-azurecli
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # Provision and publish a bot

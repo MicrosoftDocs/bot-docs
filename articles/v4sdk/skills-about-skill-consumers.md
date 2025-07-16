@@ -11,6 +11,7 @@ ms.topic: concept-article
 monikerRange: 'azure-bot-service-4.0'
 ms.custom:
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # About skill consumers

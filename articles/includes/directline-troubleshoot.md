@@ -7,6 +7,7 @@ ms.reviewer: micchow
 ms.topic: include
 ms.custom:
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 - If the **ib** and **ob** values displayed by the **.bot endpoint** are false, the bot and the Direct Line App Service extension are unable to connect to each other.

@@ -10,6 +10,7 @@ ms.service: azure-ai-bot-service
 ms.topic: concept-article
 ms.custom:
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # Network isolation in Azure AI Bot Service

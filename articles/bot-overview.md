@@ -11,6 +11,7 @@ ms.custom:
   - mode-api
   - tab-zone-seo
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # Choose the right chatbot solution for your use case

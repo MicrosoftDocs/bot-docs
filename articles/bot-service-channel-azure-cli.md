@@ -10,6 +10,7 @@ ms.topic: how-to
 ms.custom:
   - devx-track-azurecli
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # Connect your bot to channels with Azure CLI

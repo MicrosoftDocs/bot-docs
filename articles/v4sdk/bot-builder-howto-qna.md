@@ -12,6 +12,7 @@ monikerRange: 'azure-bot-service-4.0'
 ROBOTS: NOINDEX
 ms.custom:
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # Use QnA Maker to answer questions

@@ -9,6 +9,7 @@ ms.service: azure-ai-bot-service
 ms.topic: overview
 ms.custom:
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # Authentication in Direct Line API 3.0

@@ -10,6 +10,7 @@ ms.topic: concept-article
 ms.custom:
   - abs-meta-21q1
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # Single sign with a Web Chat

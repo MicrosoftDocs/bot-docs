@@ -10,6 +10,7 @@ ms.topic: troubleshooting
 ms.custom:
   - abs-meta-21q1
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # General troubleshooting for Azure AI Bot Service bots

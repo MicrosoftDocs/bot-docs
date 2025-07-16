@@ -11,6 +11,7 @@ ms.service: azure-ai-bot-service
 monikerRange: 'azure-bot-service-4.0'
 ms.custom:
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # Update a skill to support both single-tenant and multitenant agents

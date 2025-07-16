@@ -10,6 +10,7 @@ ms.service: azure-ai-bot-service
 ms.topic: article
 ms.custom:
   - evergreen
+ms.update-cycle: 1095-days
 ---
 
 # Direct Line App Service extension
