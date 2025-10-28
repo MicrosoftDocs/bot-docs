@@ -22,7 +22,7 @@ This article describes how to connect a bot to the **Direct Line** channel. Use 
 
 ## Prerequisites
 
-- An Azure account. If you don't already have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+- An Azure account. If you don't already have one, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 - An existing bot published to Azure.
 
 ## Add the Direct Line channel

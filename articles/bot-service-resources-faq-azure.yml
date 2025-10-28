@@ -33,7 +33,7 @@ sections:
 
           Follow the steps described below.
 
-          1. Sign into your [Azure account](https://portal.azure.com). If you don't have an Azure account, you can [sign up for a free account](https://azure.microsoft.com/free/).
+          1. Sign into your [Azure account](https://portal.azure.com). If you don't have an Azure account, you can [sign up for a free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
           1. Go to [the app registrations pane](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) and click **New registration** in the action bar at the top.
 
               :::image type="content" source="media/app-registration/new-registration.png" alt-text="new registration":::

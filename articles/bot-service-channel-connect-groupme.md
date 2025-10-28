@@ -21,7 +21,7 @@ You can configure your bot to communicate with people through GroupMe. This arti
 
 ## Prerequisites
 
-- An Azure subscription. If you don't already have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+- An Azure subscription. If you don't already have one, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 - A bot published to Azure that you want to connect to GroupMe.
 - A GroupMe account. If you don't have a GroupMe account, [sign up for a new account](https://web.groupme.com/signup).
 

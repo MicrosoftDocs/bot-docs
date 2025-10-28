@@ -28,7 +28,7 @@ The Email channel currently works with Office 365 only. Other email services are
 
 ## Prerequisites
 
-- If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+- If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 - A dedicated Office 365 email account for the bot.
 - Permission to grant the bot `Mail.ReadWrite` and `Mail.Send` access. For more information, see [Understanding Microsoft Entra ID application consent experiences](/azure/active-directory/develop/application-consent-experience).
 

@@ -21,7 +21,7 @@ This article shows how to add the Facebook channel to your bot via Azure portal.
 
 ## Prerequisites
 
-- An Azure subscription. If you don't already have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+- An Azure subscription. If you don't already have one, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 - A bot published to Azure that you want to connect to Facebook.
 - A Facebook for Developers account. If you don't have an account, you can create one at [developers.facebook.com](https://developers.facebook.com).
 - A Facebook page from which users will access your bot. If you don't have one yet, [Create a new Page](https://www.facebook.com/help/104002523024878).

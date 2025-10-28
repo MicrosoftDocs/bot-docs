@@ -34,7 +34,7 @@ Some of the resources created depend on how you decide to manage your bot's iden
 
 ## Prerequisites
 
-- If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+- If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 - The Bot Framework SDK for C# or JavaScript version 4.15.0 or later, for user-assigned managed identity and single-tenant bots.
 
 [!INCLUDE [azure bot resource](../includes/azure-bot-resource/azure-bot-resource.md)]

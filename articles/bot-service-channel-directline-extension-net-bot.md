@@ -23,7 +23,7 @@ This article describes how to update a .NET bot to work with named pipes and how
 
 ## Prerequisites
 
-- An Azure account. If you don't already have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+- An Azure account. If you don't already have one, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 - A .NET bot deployed in Azure.
 - Bot Framework SDK for .NET, 4.14.1 or later.
 

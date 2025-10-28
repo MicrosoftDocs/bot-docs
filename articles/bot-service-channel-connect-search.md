@@ -40,7 +40,7 @@ The following steps are required to connect your bot to the Search channel. Thes
 
 - Knowledge of [Basics of the Bot Framework Service](v4sdk/bot-builder-basics.md) and how to [Create a bot with the Bot Framework SDK](bot-service-quickstart-create-bot.md).
 - The bot to connect to the channel.
-- If you don't have an Azure account, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+- If you don't have an Azure account, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 
 You can implement your bot in any of the languages supported by the Bot Framework SDK.
 This article uses the C# [federated search bot](https://github.com/Azure/federated-search-preview/tree/main/Samples/csharp_dotnetcore#01.fedetated-search-provider) as an example.
