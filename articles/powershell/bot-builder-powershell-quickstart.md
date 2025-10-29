@@ -32,7 +32,7 @@ Creating a bot with Azure AI Bot Service and creating a bot locally are independ
 
 ## Prerequisites
 
-- If you don't have an Azure subscription, create a [free](https://azure.microsoft.com/free/)
+- If you don't have an Azure subscription, create a [free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)
   account before you begin.
 
 - An existing Microsoft Entra ID application registration that can be used from any Microsoft Entra ID tenant.

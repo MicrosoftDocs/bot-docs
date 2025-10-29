@@ -20,7 +20,7 @@ You can configure your bot to communicate with people via Microsoft Teams. This 
 
 ## Prerequisites
 
-- An Azure subscription. If you don't already have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+- An Azure subscription. If you don't already have one, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 - A bot published to Azure that you want to connect to Teams.
 - A developer tenant in Teams with custom app uploading or sideloading enabled. For more information, see [Prepare your Microsoft 365 tenant](/microsoftteams/platform/concepts/build-and-test/prepare-your-o365-tenant).
 - A valid Teams app package. For more information, see [Upload your app in Microsoft Teams](/microsoftteams/platform/concepts/deploy-and-publish/apps-upload).

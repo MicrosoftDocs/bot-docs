@@ -21,7 +21,7 @@ The Omnichannel channel lets you connect your bot to omnichannel capabilities of
 
 - Knowledge of [Basics of the Bot Framework Service](v4sdk/bot-builder-basics.md) and how to [Create a bot with the Bot Framework SDK](bot-service-quickstart-create-bot.md).
 - The bot to connect to the channel.
-- If you don't have an Azure account, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+- If you don't have an Azure account, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 
 ## Connect your bot to the Omnichannel channel
 

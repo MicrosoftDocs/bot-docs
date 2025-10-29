@@ -21,7 +21,7 @@ You can configure your bot to communicate with people through the LINE app. This
 
 ## Prerequisites
 
-- An Azure account. If you don't already have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+- An Azure account. If you don't already have one, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 - An existing bot published to Azure.
 - A mobile device with the LINE app and a QR reader.
 

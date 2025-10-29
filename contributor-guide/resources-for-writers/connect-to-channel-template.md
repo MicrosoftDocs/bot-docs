@@ -47,7 +47,7 @@ The {channel-name} channel lets your bot communicate with users through {summary
 <!-- Remove this section if prerequisites are not needed
 
 # If the how-to requires Azure.
-- An Azure subscription. If you don't already have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+- An Azure subscription. If you don't already have one, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 - A bot published to Azure that you want to connect to {channel-name}.
 
 # If the how-to requires a channel-specific developer account, prefer their phrasing for the link for creating the account.

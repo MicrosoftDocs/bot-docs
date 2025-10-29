@@ -29,7 +29,7 @@ To add network isolation to your bot:
 
 ## Prerequisites
 
-- An Azure account. If you don't already have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+- An Azure account. If you don't already have one, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
   - A subscription with permission to create Azure Virtual Network and network security group resources.
 - A working Direct Line App Service extension bot.
   - Your bot uses the Bot Framework SDK for C# or JavaScript, version 4.16 or later.

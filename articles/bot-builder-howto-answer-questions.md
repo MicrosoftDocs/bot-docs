@@ -23,7 +23,7 @@ This article describes how to use the question answering feature in your bot.
 
 ## Prerequisites
 
-- If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+- If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 - A language resource in [Language Studio](https://language.cognitive.azure.com/), with the custom question answering feature enabled.
 - A copy of the **Custom Question Answering** sample in [**C#**][cs sample] or [**JavaScript**][js sample].
 

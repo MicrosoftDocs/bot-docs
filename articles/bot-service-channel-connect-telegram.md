@@ -24,7 +24,7 @@ You can configure your bot to communicate with people using the Telegram messagi
 
 ## Prerequisites
 
-- An Azure account. If you don't already have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+- An Azure account. If you don't already have one, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 - An existing bot published to Azure.
 - A device with [Telegram](https://telegram.org/) installed and a Telegram account.
 
