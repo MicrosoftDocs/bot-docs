@@ -23,7 +23,7 @@ This article shows how to add a Slack channel to your bot in the Azure portal. F
 
 ## Prerequisites
 
-- An Azure subscription. If you don't already have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+- An Azure subscription. If you don't already have one, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 - A bot published to Azure that you want to connect to Slack.
 - Access to a Slack workspace with sufficient permissions to create and manage applications at [https://api.slack.com/apps](https://api.slack.com/apps). If you don't have access to a Slack environment, you can [create a workspace](https://www.slack.com).
 

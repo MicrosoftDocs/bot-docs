@@ -22,7 +22,7 @@ Azure Communication Services provides the APIs and SDKs to build multi-participa
 
 - Knowledge of the [Basics of the Bot Framework Service](v4sdk/bot-builder-basics.md) and how to [Create a bot with the Bot Framework SDK](bot-service-quickstart-create-bot.md).
 - A published bot that you want to connect to the channel.
-- An Azure account with a current subscription. If you don't have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+- An Azure account with a current subscription. If you don't have one, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 - An Azure Communication Services resource. If you don't have one, see [Create an Azure Communication Services resource](/azure/communication-services/quickstarts/create-communication-resource).
 - .NET 6.0 or later.
 - Visual Studio 2022 or later.

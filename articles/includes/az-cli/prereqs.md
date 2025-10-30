@@ -13,7 +13,7 @@ ms.update-cycle: 1095-days
 
 To use the Azure CLI to provision and publish bots, you need:
 
-- An Azure account that has an active subscription. [Create a free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+- An Azure account that has an active subscription. [Create a free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 - An [install of the Azure CLI](/cli/azure/install-azure-cli).
 
   For your programming language, use the following version of the Azure CLI.
