@@ -1,10 +1,7 @@
 ### YamlMime:Landing
 
 title: Bot Framework SDK documentation
-summary: The Bot Framework SDK allows you to create and develop bots for Azure AI Bot Service.
-
-> [!IMPORTANT]
-> The Bot Framework SDK allows you to create and develop bots for Azure AI Bot Service. IMPORTANT: This SDK is no longer updated or maintained. To build agents with your choice of AI services, orchestration, and knowledge, consider using the Microsoft 365 Agents SDK.
+summary: The Bot Framework SDK allows you to create and develop bots for Azure AI Bot Service. IMPORTANT: This SDK is no longer updated or maintained. To build agents with your choice of AI services, orchestration, and knowledge, consider using the Microsoft 365 Agents SDK.
 
 metadata:
   title: Bot Framework SDK documentation
