@@ -18,8 +18,10 @@ ms.update-cycle: 1095-days
 
 [!INCLUDE [applies-to-v4](includes/applies-to-v4-current.md)]
 
-The Bot Framework SDKs for C#, JavaScript, Python, and Java are an [Open Source SDK](https://github.com/microsoft/botframework-sdk/#readme) that enables developers to model and build sophisticated conversations using C#, Java, JavaScript, or Python.
-
-For release notes for each version, see the [C# releases](https://github.com/microsoft/Botbuilder-dotnet/releases), [JavaScript releases](https://github.com/microsoft/botbuilder-js/releases), [Python release](https://github.com/microsoft/botbuilder-python/releases), and [Java releases](https://github.com/microsoft/botbuilder-java/releases) pages.
+We are in the process of archiving the Bot Framework SDK repository on GitHub. This means that this project is no longer updated or maintained. However, customers using this tool should not be disrupted. The tool is no longer supported through service tickets in the Azure portal and does not receive product updates.
 
 [!INCLUDE [java-python-sunset-alert](includes/java-python-sunset-alert.md)]
+
+For historical release notes for each version, see the [C# releases](https://github.com/microsoft/Botbuilder-dotnet/releases), [JavaScript releases](https://github.com/microsoft/botbuilder-js/releases), [Python release](https://github.com/microsoft/botbuilder-python/releases), and [Java releases](https://github.com/microsoft/botbuilder-java/releases) pages.
+
+
