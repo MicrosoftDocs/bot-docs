@@ -1,7 +1,7 @@
 ---
 description: Azure CLI instructions to sign into Azure and select a subscription.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: include

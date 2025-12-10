@@ -7,7 +7,7 @@ ms.custom:
 ms.update-cycle: 1095-days
 ms.topic: how-to
 author: iaanw
-ms.author: iawilt
+ms.author: kunsinghms
 ms.service: azure-ai-bot-service
 ---
 
@@ -149,6 +149,7 @@ For more information and a collection of Kusto query examples for analyzing bot 
 [!INCLUDE [horz-monitor-insights-alerts](~/../articles/reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-insights-alerts.md)]
 
 ### Bot Service alert rules
+
 The following table lists common and recommended alert rules for Bot Service.
 
 | Alert type | Condition | Description  |

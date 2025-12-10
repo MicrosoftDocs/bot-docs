@@ -3,7 +3,7 @@ title:  Web Chat customization in the Bot Framework SDK
 description: Learn how to customize the Web Chat control. Add attachments, modify the font, color, container size, and bot avatar.
 keywords: bot framework, webchat, chat, samples, react, reference
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
@@ -184,11 +184,11 @@ With the latest version of Web Chat, you can also render activities or attachmen
 
 For example, if you want to display a deck of GitHub repository cards, you can create a new React component for the GitHub repository and add it as middleware. The following image and code snippets are from the sample [the customization-card-components sample](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/05.custom-components/e.card-components).
 
-The following is the output when you enter the default message: *sample:github-repository*.
+The following is the output when you enter the default message: _sample:github-repository_.
 
 :::image type="content" source="../media/bot-service-channel-webchat/github-repo-attachments-custom.png" alt-text="github repo attachments custom":::
 
-If you enter *help* you obtain the selection of all the cards you can choose. This is one of many examples:
+If you enter _help_ you obtain the selection of all the cards you can choose. This is one of many examples:
 
 :::image type="content" source="../media/bot-service-channel-webchat/image-attachment-custom.png" alt-text="image attachment custom":::
 

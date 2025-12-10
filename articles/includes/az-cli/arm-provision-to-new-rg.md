@@ -1,7 +1,7 @@
 ---
 description: Use Azure CLI to create the application service in a new resource group.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: include

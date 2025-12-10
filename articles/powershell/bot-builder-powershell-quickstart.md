@@ -2,7 +2,7 @@
 title: Publish a bot with Azure PowerShell - Azure AI Bot Service
 description: Learn how to publish a bot with Azure PowerShell.
 author: iaanw
-ms.author: iawilt
+ms.author: kunsinghms
 manager: leeclontz
 ms.topic: how-to
 ms.service: azure-ai-bot-service

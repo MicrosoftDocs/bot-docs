@@ -3,7 +3,7 @@ title: .lu file format
 description: .lu file format reference
 keywords: lu file format, reference, language understanding
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.service: azure-ai-bot-service

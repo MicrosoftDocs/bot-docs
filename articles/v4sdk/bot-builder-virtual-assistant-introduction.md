@@ -2,7 +2,7 @@
 title: Virtual Assistant overview - Bot Service
 description: Become familiar with the Bot Framework Virtual Assistant template. Learn about features, understand design principles, and view example scenarios.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: overview

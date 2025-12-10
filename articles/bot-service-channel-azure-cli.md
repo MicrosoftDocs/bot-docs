@@ -2,7 +2,7 @@
 title: Connect your bot to channels with Azure CLI
 description: This sample shows Azure CLI commands for connecting your bot to a communication application, such as email or Facebook.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.service: azure-ai-bot-service

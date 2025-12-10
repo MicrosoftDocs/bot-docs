@@ -2,7 +2,7 @@
 title: API reference - Direct Line API 3.0
 description: Learn about headers, HTTP status codes, schema, operations, and objects in Direct Line API 3.0. 
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: reference

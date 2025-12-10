@@ -3,7 +3,7 @@ title: Events and triggers for adaptive dialogs
 description: Describes the adaptive dialog prebuilt triggers. Triggers handle dialog specific events that are related to the lifecycle of the dialog.
 keywords: bot, triggers, adaptive dialogs
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.service: azure-ai-bot-service
@@ -90,8 +90,6 @@ You can emit your own events by adding the [EmitEvent][emitevent] action to any 
 | ------------ | --------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | Custom event | `OnDialogEvent` | `OnCondition` | Actions to perform when a custom event is detected. Use [Emit a custom event][emitevent] action to raise a custom event. |
 
-[triggers]:../v4sdk/bot-builder-concept-adaptive-dialog-triggers.md
-[inputs]:../v4sdk/bot-builder-concept-adaptive-dialog-inputs.md
 
 [recognizers-cross-trained-recognizer-set]:../v4sdk/bot-builder-concept-adaptive-dialog-recognizers.md#cross-trained-recognizer-set
 [qna-maker-recognizer]:adaptive-dialog-prebuilt-recognizers.md#qna-maker-recognizer

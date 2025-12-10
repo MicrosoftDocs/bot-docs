@@ -3,7 +3,7 @@ title: Troubleshoot HTTP 500 Internal Service Errors with Azure AI Bot Service
 description: Learn how to troubleshoot HTTP 500 errors. See how to enable Application Insights, retrieve information on exceptions, and check logs and configuration files.
 keywords: troubleshoot, HTTP 500, problems.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: troubleshooting

@@ -3,7 +3,7 @@ title: What's new in the Bot Service SDKs for C#, Java, JavaScript, and Python
 description: Learn about improvements and new features in the July 2021 release of the Bot Framework SDK for C#, Java, JavaScript, and Python.
 keywords: bot framework, Azure AI Bot Service
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.service: azure-ai-bot-service
@@ -23,5 +23,3 @@ We are in the process of archiving the Bot Framework SDK repository on GitHub. T
 [!INCLUDE [java-python-sunset-alert](includes/java-python-sunset-alert.md)]
 
 For historical release notes for each version, see the [C# releases](https://github.com/microsoft/Botbuilder-dotnet/releases), [JavaScript releases](https://github.com/microsoft/botbuilder-js/releases), [Python release](https://github.com/microsoft/botbuilder-python/releases), and [Java releases](https://github.com/microsoft/botbuilder-java/releases) pages.
-
-

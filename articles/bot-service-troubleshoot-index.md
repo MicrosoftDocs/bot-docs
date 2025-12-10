@@ -2,7 +2,7 @@
 title: Bot Framework TroubleshootIndex - Bot Service
 description: TroubleshootIndex Bot Framework Index.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: troubleshooting

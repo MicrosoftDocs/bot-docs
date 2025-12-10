@@ -1,7 +1,7 @@
 ---
 description: Use Azure CLI to create an application registration.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: include

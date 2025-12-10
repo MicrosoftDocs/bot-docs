@@ -2,7 +2,7 @@
 title: Use question answering to answer questions
 description: Learn how bots can answer questions from users without parsing or interpreting the questions. See how to use question answering for this task.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to

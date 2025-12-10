@@ -2,7 +2,7 @@
 title: Single sign-on with a Web Chat in Bot Framework SDK
 description: Learn about the workflow when single sign-on is used in a bot and with a Web Chat client.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.service: azure-ai-bot-service

@@ -2,7 +2,7 @@
 title: Create .NET client for Direct Line App Service extension
 description: Learn how to create .NET clients that connect to Direct Line App Service extension and communicate with bots over WebSockets.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: Daniel.Evans
 ms.service: azure-ai-bot-service
@@ -35,7 +35,6 @@ Please, also read this companion article [Configure .NET bot for extension](bot-
 1. Select **Direct Line** from **Channels** after enabling it.
 1. Go to the **Sites** section. There is typically a **Default_Site** unless you've deleted or renamed it.
 1. Select the **Show link** button (eye icon) to reveal one of the keys; then copy and save its value. You'll use this value in the section [Create a C# Direct Line client](#create-a-c-direct-line-client).
-
 
 > [!NOTE]
 > This value is your Direct Line client secret used to connect to Direct Line App Service extension.

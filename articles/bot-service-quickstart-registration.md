@@ -2,7 +2,7 @@
 title: Register a Bot Framework bot with Azure
 description: If you don't currently host your bot in Azure, you can still make it available in Azure. To do so, you enter in Azure the web address where your bot is hosted.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to

@@ -3,7 +3,7 @@ title: Use multiple LUIS and QnA Maker projects with Orchestrator
 description: Learn how bots can use multiple LUIS models and QnA Maker knowledge bases. See how to use Orchestrator to route user input to the correct model.
 keywords: Luis, QnA, Orchestrator, multiple services, route intents
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
@@ -38,8 +38,6 @@ This article describes how to use an _existing_ QnA Maker knowledge base with Or
 - A copy of the **NLP with Orchestrator** sample in [**C#** (archived)][] or [**JavaScript** (archived)][].
 - Knowledge of [bot basics](bot-builder-basics.md), [LUIS][howto-luis], and [QnA Maker][howto-qna].
 - Install the command-line [BF CLI][bf-cli].
-
-
 
 ## About this sample
 
@@ -416,8 +414,7 @@ The `processSampleQnA` method uses the user input contained within the turn cont
 
 [**C#** (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/csharp_dotnetcore/14.nlp-with-orchestrator
 [**JavaScript** (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/javascript_nodejs/14.nlp-with-orchestrator
-[**Java** (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/14.nlp-with-orchestrator
-[**Python** (archived)]: (https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/python/14.nlp-with-orchestrator
+[**Python** (archived)]: (<https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/python/14.nlp-with-orchestrator>
 
 [orchestrator]: /composer/concept-orchestrator
 [bf-cli]: https://github.com/microsoft/botframework-cli

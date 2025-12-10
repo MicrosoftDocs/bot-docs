@@ -2,7 +2,7 @@
 title: Add suggested actions to messages in Bot Framework SDK
 description: Learn how to add suggested actions to messages using the Bot Connector service.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.service: azure-ai-bot-service
@@ -77,7 +77,6 @@ When the user taps one of the suggested actions, the bot will receive a message 
 - [Create messages](bot-framework-rest-connector-create-messages.md)
 - [Send and receive messages](bot-framework-rest-connector-send-and-receive-messages.md)
 
-[channelInspector]: ../bot-service-channel-inspector.md
 
 [Activity]: bot-framework-rest-connector-api-reference.md#activity-object
 [CardAction]: bot-framework-rest-connector-api-reference.md#cardaction-object

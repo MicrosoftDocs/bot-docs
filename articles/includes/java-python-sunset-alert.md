@@ -1,7 +1,7 @@
 ---
 description: Sunset notice for the Bot Framework Java SDK
 author: iaanw
-ms.author: iawilt
+ms.author: kunsinghms
 manager: leeclontz
 ms.reviewer: micchow
 ms.topic: include

@@ -3,7 +3,7 @@ title: Debug a channel using a tunnel
 description: Understand how to debug a channel using a tunnel
 keywords: debugging, channel, tunnel
 author: jameslew
-ms.author: jameslew
+ms.author: kunsinghms
 manager: kjette
 ms.reviewer: cyanderson
 ms.topic: how-to
@@ -22,7 +22,6 @@ While your bot is in development, you can use an IDE and the Bot Framework Emula
 If your bot is in production, you can debug your bot from any channel using a tunnel. The seamless connection of your bot to multiple channels is a key feature available in the Bot Framework.
 
 This article describes how to debug your bot locally using a tunnel and a C# [EchoBot](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/02.echo-bot) in a channel connected to your bot. This article uses [Microsoft Teams](channel-connect-teams.md) as an example channel.
-
 
 ## Prerequisites
 
@@ -44,7 +43,6 @@ This article describes how to debug your bot locally using a tunnel and a C# [Ec
 
     > [!NOTE]
     > The port specified is the port your bot is running on. You may use any localhost port you'd like.
-
 
 1. When devtunnel starts, copy and save the public forwarding URL for later.
 

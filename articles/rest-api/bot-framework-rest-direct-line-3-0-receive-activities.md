@@ -2,7 +2,7 @@
 title: Receive activities from the bot - Bot Service
 description: Learn how to receive activity updates from bots. See how to use version 3.0 of the Direct Line API to connect by using WebSocket streams or HTTP GET requests.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to

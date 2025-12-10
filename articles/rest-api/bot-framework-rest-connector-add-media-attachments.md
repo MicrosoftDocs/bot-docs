@@ -2,7 +2,7 @@
 title: Add media attachments to messages in Bot Framework SDK
 description: Learn how to add media attachments to messages using the Bot Connector service. 
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.service: azure-ai-bot-service

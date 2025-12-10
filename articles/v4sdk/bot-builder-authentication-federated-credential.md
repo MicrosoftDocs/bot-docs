@@ -2,7 +2,7 @@
 title: Implement Authentication with Federated Identity Credentials
 description: Learn how to integrate user authentication using federated identity credentials
 author: kparihar
-ms.author: kparihar
+ms.author: kunsinghms
 manager: kunsingh
 ms.reviewer: kunsingh
 ms.topic: how-to
@@ -18,7 +18,6 @@ monikerRange: 'azure-bot-service-4.0'
 
 # Implement Authentication with Federated Identity Credentials
 
-
 [!INCLUDE [applies-to-v4](../includes/applies-to-v4-current.md)]
 
 For an overview of how the Bot Framework handles this kind of authentication, see [User authentication](bot-builder-concept-authentication.md).
@@ -33,7 +32,6 @@ This article covers how to:
 Once you finish this article, you have a bot that can respond to a few simple tasks.
 
 [!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
-
 
 ## Prerequisites
 
@@ -57,9 +55,7 @@ how to [implement sequential conversation flow][simple-dialog], and how to [reus
 > [!IMPORTANT]
 > Whenever you register a bot in Azure, it gets assigned an Microsoft Entra ID application. However, this application secures channel-to-bot access. You need an additional Microsoft Entra ID application for each external secured resource you want the bot to access on behalf of the user.
 
-
 ## Create the Azure Bot resource
-
 
 Create the **Azure Bot** resource, which allows you to register your bot with the Azure AI Bot Service.
 
@@ -92,11 +88,9 @@ Create the **Azure Bot** resource, which allows you to register your bot with th
 
 You're now ready to build your bot with the Bot Framework SDK.
 
-
 ### Create a User Assigned Managed Identity
 
 Create the **User Assigned Managed Identity** resource, which allows you to set up an identity that is used as a trust mechanism to obtain access tokens from the Microsoft Entra application.
-
 
 1. Go to the [Azure portal](https://portal.azure.com/).
 1. In the right pane, select **Create a resource**.
@@ -115,7 +109,6 @@ Create the **User Assigned Managed Identity** resource, which allows you to set 
 1. Select **Review + create**.
 1. If the validation passes, select **Create**.
 1. Once the deployment completes, select **Go to resource**. You should see the managed identity and related resources listed in the resource group you selected.
-
 
 ### To create a new Federated Credentials
 
@@ -138,21 +131,17 @@ The owner of the bot's App Service resource can add a new trust:
         1. On the **Select a managed identity** blade:
         1. Select your subscription.
         1. For **User assigned managed identities**, select the managed identity created earlier.
-        1. Select **Select** to use this identity for your bot. 
+        1. Select **Select** to use this identity for your bot.
             :::image type="content" source="../media/azure-manage-a-bot/entra-fic-creds-scenario-select-search.png" alt-text="Select a Managed Identity":::
     1. Provide information under **Credential details**.
         :::image type="content" source="../media/azure-manage-a-bot/entra-fic-creds-scenario-cred.png" alt-text="Enter Credential details":::
 
 1. Select **Add** to add the credential.
 
-
-
-
 ### To update your Bot
 
 > [!NOTE]
 > The Bot Framework SDK version 4.22.8 or later supports the use of Federated credentials.
-
 
 1. Upgrade the Bot Framework SDK version to 4.22.8 or later.
 1. To enable the Federated Credential for your bot, add the following code to your Startup.cs file:
@@ -169,14 +158,14 @@ The owner of the bot's App Service resource can add a new trust:
     > [!IMPORTANT]
     > The Java version of the Bot Framework SDK only supports multi-tenant bots.
     > The C#, JavaScript, and Python versions support all three application types for managing the bot's identity.
-    
+
     | Language   | File name              | Notes                                                                                                               |
     |:-----------|:-----------------------|:--------------------------------------------------------------------------------------------------------------------|
     | C#         | appsettings.json       | Supports all three application types for managing your bot's identity.                                              |
     | JavaScript | .env                   | Supports all three application types for managing your bot's identity.                                              |
     | Java       | application.properties | Only supports multitenant bots.                                                                                    |
     | Python     | config.py              | Supports all three application types for managing your bot's identity. |
-    
+
 The identity information you need to add depends on the bot's application type.
 Provide the following values in your configuration file.
 
@@ -187,8 +176,6 @@ Provide the following values in your configuration file.
 | `MicrosoftAppClientId` | The User Managed Identity password.  |
 | `MicrosoftAppTenantId` | The bot's app tenant ID. |
 
-
-
 ### To get your app or tenant ID
 
 To get your bot's app or tenant ID:
@@ -196,7 +183,6 @@ To get your bot's app or tenant ID:
 1. Go to the Azure Bot resource blade for your bot.
 1. Go to the bot's **Configuration** blade.
     From this blade, you can copy the bot's **Microsoft App ID** or **App Tenant ID**.
-
 
 ### To update your app service
 
@@ -212,19 +198,13 @@ If your bot uses an existing App Service resource (web app) and is a _single_ or
 
         :::image type="content" source="../media/how-to-create-single-tenant-bot/app-service-managed-identity.png" alt-text="The App Service Identity blade with the managed identity for the bot selected.":::
 
-
-
-
-
-
 ## Microsoft Entra ID identity service
 
 The Microsoft Entra ID is a cloud identity service that allows you to build applications that securely sign in users using industry standard protocols like OAuth 2.0.
+
 1. Microsoft identity platform (v2.0). Also known as the **Microsoft Entra ID** endpoint, which is an evolution of the Azure AD platform (v1.0).It lets you build applications that sign in to all Microsoft identity providers and obtain tokens to call Microsoft APIs, like Microsoft Graph, or other developer-built APIs. For more information, see the [Microsoft identity platform (v2.0) overview](/azure/active-directory/develop/active-directory-appmodel-v2-overview).
 
 For information about the differences between the v1 and v2 endpoints, see [Why update to Microsoft identity platform (v2.0)?](/azure/active-directory/develop/active-directory-v2-compare). For complete information, see [Microsoft identity platform (formerly Microsoft Entra ID for developers)](/azure/active-directory/develop/).
-
-
 
 ### Create the Microsoft Entra ID identity provider
 
@@ -253,36 +233,35 @@ This section shows how to create a Microsoft Entra ID identity provider that use
     1. Under **Federated Credentials**, select **Add Credentials**.
 
         :::image type="content" source="../media/azure-manage-a-bot/entra-fic-creds.png" alt-text="Create a Federated Credentials.":::
-    
+
     1. On Add Credentials page, Choose the **Federated credential scenario** to **Other Issuer**
 
        :::image type="content" source="../media/azure-manage-a-bot/entra-fic-creds-scenario-others.png" alt-text="Select Federated Credentials Other Issuer Scenario.":::
-    
+
     1. Enter values in the required fields and review and update settings
         1. Provide information under **Connect your account**.
-          
+
             :::image type="content" source="../media/azure-manage-a-bot/entra-fic-creds-scenario-others-account.png" alt-text="Connect your account":::
-            
+
             1. **_Issuer_** : `https://login.microsoftonline.com/{customer-tenant-ID}/v2.0`
             1. **_Subject Identifier_** : /eid1/c/pub/t/{base64 encoded customer tenant ID}/a/{base64 encoded first-party app client ID}/{unique-identifier-for-projected-identity}
                - The following table contains Base64url encoded byte-array representation of supported first-party application IDs. Use this value which represents our first-party app.
-               
+
                  | Encoded Value | Description |
                  |--|--|
                  |9ExAW52n_ky4ZiS_jhpJIQ |Base64url encoded of Bot Service Token Store|
                  |ND1y8_Vv60yhSNmdzSUR_A |Base64url encoded of Bot Framework Dev Portal|
 
-               - The following [sample code](https://dotnetfiddle.net/p11CFZ) assists you in converting your tenant ID to a Base64url encoded byte-array representation. Please use the value that corresponds to the tenant of your application                 
-               
+               - The following [sample code](https://dotnetfiddle.net/p11CFZ) assists you in converting your tenant ID to a Base64url encoded byte-array representation. Please use the value that corresponds to the tenant of your application
+
             1. **_Audience_** : api://AzureADTokenExchange (Use Cloud specific values)
             1. **_Unique-identifier-for-projected-identity_** : The token has the same value specified as the Unique Identifier in the OAuth Connection Setting.
-    
-        1. Provide information under **Credential details**.
-            
-            :::image type="content" source="../media/azure-manage-a-bot/entra-fic-creds-scenario-cred.png" alt-text="Enter Credential details":::
-        
-        1. Select **Add** to add the credential.
 
+        1. Provide information under **Credential details**.
+
+            :::image type="content" source="../media/azure-manage-a-bot/entra-fic-creds-scenario-cred.png" alt-text="Enter Credential details":::
+
+        1. Select **Add** to add the credential.
 
 1. In the navigation pane, select **API permissions** to open the **API permissions** panel. It's a best practice to explicitly set the API permissions for the app.
 
@@ -302,7 +281,6 @@ This section shows how to create a Microsoft Entra ID identity provider that use
    1. Select **Add permissions**. (The first time a user accesses this app through the bot, they need to grant consent.)
 
 You now have a Microsoft Entra ID application configured.
-
 
 > [!NOTE]
 > You'll assign the **Application (client) ID**, when you create the connection string and register the identity provider with the bot registration. See next section.
@@ -362,10 +340,11 @@ You need your bot's app ID and password to complete this process.
 
     - Set `ConnectionName` to the name of the OAuth connection setting you added to your bot.
     - Set `MicrosoftAppId` and `MicrosoftAppClientId` to your bot's app ID and app secret.
-      
+
     [!code-json[appsettings](~/../botbuilder-samples/samples/csharp_dotnetcore/86.bot-authentication-fic/appsettings.json)]
 
     To use OAuth in bot with data-residency in public cloud, you must add the following configurations in your appsettings
+
     ```json
     "OAuthUrl": "<Regional-OAuth-Uri>",
     "ToChannelFromBotOAuthScope": "https://api.botframework.com",
@@ -376,9 +355,9 @@ You need your bot's app ID and password to complete this process.
     "ToBotFromChannelTokenIssuer": "https://api.botframework.com",
     "ToChannelFromBotLoginUrl": "https://login.microsoftonline.com/botframework.com",
     ```
-    
+
     Where _\<Regional-OAuth-Url>_ is one of the following URIs:
-    
+
     |URI|Description|
     |:-|:-|
     |`https://europe.api.botframework.com`|For public-cloud bots with data residency in Europe.|
@@ -405,7 +384,6 @@ You need your bot's app ID and password to complete this process.
 
 > [!NOTE]
 > You could now publish the bot code to your Azure subscription (right-select on the project and choose **Publish**), but it's not necessary for this article. You would need to set up a publishing configuration that uses the application and hosting plan that you used when configuration the bot in the Azure portal.
-
 
 ### Testing
 
@@ -483,12 +461,10 @@ It's best practice to let users explicitly sign out, instead of relying on the c
 
 ---
 
-
 ### Further reading
 
 - [Bot Framework other resources](../bot-service-resources-links-help.md) includes links for more support.
 - The [Bot Framework SDK](https://github.com/microsoft/botbuilder) repo has more information about repos, samples, tools, and specs associated with the Bot Builder SDK.
-
 
 [azure-portal]: https://ms.portal.azure.com
 [azure-aad-blade]: https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview

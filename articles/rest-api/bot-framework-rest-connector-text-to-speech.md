@@ -2,7 +2,7 @@
 title: Add speech to messages - Bot Service
 description: Learn how to add speech to bot messages. See how to specify and format the text that bots use on speech-enabled channels and how to include input hints.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to

@@ -2,7 +2,7 @@
 title: Regionalization support
 description: Learn about regionalization in Azure AI Bot Service and how to meet your data compliance requirements.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.service: azure-ai-bot-service

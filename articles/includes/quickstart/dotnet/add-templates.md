@@ -1,7 +1,7 @@
 ---
 description: Procedure for getting C# bot templates by various means, part of the quickstart to create a basic bot.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: include

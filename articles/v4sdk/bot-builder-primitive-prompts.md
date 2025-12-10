@@ -3,7 +3,7 @@ title: Create your own prompts to gather user input
 description: Learn how to manage a conversation flow with primitive prompts in the Bot Framework SDK.
 keywords: conversation flow, prompts, conversation state, user state, custom prompts
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
@@ -69,7 +69,7 @@ The sample bot asks the user a series of questions, validates some of their answ
 ---
 
 The user state will track the user's name, age, and chosen date, and conversation state will track what you last asked the user.
-Since you don't plan to deploy this bot, you'll configure user and conversation state to use _memory storage_.
+Since you don't plan to deploy this bot, you'll configure user and conversation state to use *memory storage*.
 
 You use the bot's message turn handler plus user and conversation state properties to manage the flow of the conversation and the collection of input. In your bot, you'll record the state property information received during each iteration of the message turn handler.
 
@@ -97,6 +97,7 @@ Create the user and conversation state objects in **index.js** and consume them 
 [!code-javascript[constructor](~/../botbuilder-samples/samples/javascript_nodejs/44.prompt-for-user-input/bots/customPromptBot.js?range=27-29)]
 
 ## [Java](#tab/java)
+
 Construct the CustomPromptBot in the getBot method using the ConversationState and UserState instances provided by the Spring container. The constructor of CustomPromptBot will store references to the ConversationState and UserState provided during startup.
 
 **Application.java**

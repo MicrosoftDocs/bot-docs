@@ -1,7 +1,7 @@
 ---
 description: Provides links to Azure documentation for concepts and resources used in support of bot hosting.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: include

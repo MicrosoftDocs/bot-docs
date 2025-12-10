@@ -3,7 +3,7 @@ title: Test and debug bots using the Bot Framework Emulator
 description: Learn how to inspect, test, and debug bots using the Bot Framework Emulator desktop application.
 keywords: transcript, msbot tool, language services, speech recognition
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to

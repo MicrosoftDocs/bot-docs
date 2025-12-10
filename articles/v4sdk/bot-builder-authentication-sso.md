@@ -2,7 +2,7 @@
 title: Add single sign-on to a bot
 description: Learn how to add single sign-on (SSO) to your bot to reduce the number of times your users need to sign in to other services.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to

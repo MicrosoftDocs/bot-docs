@@ -2,7 +2,7 @@
 title: Transition conversations from bot to human
 description: Learn how to design for situations where a user starts a conversation with a bot and then must be handed off to a human.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to

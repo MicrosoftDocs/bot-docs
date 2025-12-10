@@ -3,7 +3,7 @@ title: Identity providers proxy
 description: Creating an OAuth2 proxy service to call custom or advanced identity providers in the Azure AI Bot Service.
 keywords: Azure AI Bot Service, authentication, identity providers proxy, bot framework token service
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to

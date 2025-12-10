@@ -3,7 +3,7 @@ title: Connect a bot to Alexa
 description: Learn how to configure your bot in Azure to allow communication with Alexa.
 keywords: connect a bot, bot channel, Alexa bot, credentials, configure, phone
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: jameslew
 ms.service: azure-ai-bot-service

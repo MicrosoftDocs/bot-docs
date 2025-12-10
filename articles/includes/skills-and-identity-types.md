@@ -1,7 +1,7 @@
 ---
 description: Table of support for different combinations of skill and consumer identity-management flavors.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: include

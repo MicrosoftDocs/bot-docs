@@ -2,7 +2,7 @@
 title: Key concepts in the Bot Connector API
 description: Understand key concepts in the Bot Framework Connector service and Bot State service. 
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.service: azure-ai-bot-service

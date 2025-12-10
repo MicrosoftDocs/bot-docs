@@ -3,7 +3,7 @@ title: Middleware
 description: Learn about middleware, the layer between adapters and bots. See what type of functionality to implement in middleware and learn about short circuiting.
 keywords: middleware, middleware pipeline, short circuit, middleware uses
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: article

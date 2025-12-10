@@ -3,7 +3,7 @@ title: User authentication in the Azure AI Bot Service - Bot Service
 description: Learn about user authentication features in the Azure AI Bot Service. See how bots use OAuth connections to sign in users and access secured online resources.
 keywords: Azure AI Bot Service, authentication, bot framework token service
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: overview

@@ -3,7 +3,7 @@ title: Implement channel-specific functionality in Bot Framework SDK
 description: Learn how to implement channel-specific functionality using the Bot Framework SDK for .NET. You can do so by passing native metadata to a channel. 
 keywords: channel specific, email, slack, facebook, telegram, custom channel
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.service: azure-ai-bot-service

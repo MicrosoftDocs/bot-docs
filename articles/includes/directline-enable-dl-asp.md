@@ -1,7 +1,7 @@
 ---
 description: Enable bot Direct Line App Service extension
 author: emgrol
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: include

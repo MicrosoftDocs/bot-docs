@@ -3,7 +3,7 @@ title: Implement a skill consumer
 description: Learn how to implement a skill consumer, using the Bot Framework SDK.
 keywords: skills
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: Gabo.Gilabert
 ms.service: azure-ai-bot-service

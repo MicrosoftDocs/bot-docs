@@ -4,7 +4,7 @@ description: Connect your bot to M365 so people in your organization can interac
 keywords: "Publish, channel, M365"
 ms.topic: how-to
 author: KendalBond007
-ms.author: jameslew
+ms.author: kunsinghms
 ms.reviewer: yiba
 manager: iawilt
 ms.custom:

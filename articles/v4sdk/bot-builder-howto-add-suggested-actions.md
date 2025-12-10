@@ -3,7 +3,7 @@ title: Use button for input
 description: Learn how to send suggested actions within messages using the Bot Framework SDK for JavaScript.
 keywords: suggested actions, buttons, extra input
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
@@ -24,7 +24,7 @@ Buttons enhance the conversational experience by letting the user answer a quest
 
 ## Suggest action using button
 
-*Suggested actions* enable your bot to present buttons. You can create a list of suggested actions (also known as _quick replies_) that will be shown to the user for a single turn of the conversation.
+*Suggested actions* enable your bot to present buttons. You can create a list of suggested actions (also known as *quick replies*) that will be shown to the user for a single turn of the conversation.
 
 # [C#](#tab/csharp)
 

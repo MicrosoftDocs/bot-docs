@@ -2,7 +2,7 @@
 title: Use Direct Line App Service extension within a VNET
 description: Use a Direct Line App Service extension with an Azure Virtual Network. Create an environment and configure an outbound connection.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: Daniel.Evans
 ms.service: azure-ai-bot-service

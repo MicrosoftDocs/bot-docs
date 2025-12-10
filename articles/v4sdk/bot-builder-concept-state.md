@@ -3,7 +3,7 @@ title: Managing state in Bot Framework SDK
 description: Learn how bots handle user information, including the storage layer, state management, and state property accessors.
 keywords: state, bot state, conversation state, user state
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: concept-article

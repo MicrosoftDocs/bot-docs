@@ -2,7 +2,7 @@
 title: Application Insights keys - Bot Service
 description: Learn how to add telemetry to a bot. See how to create the keys that you need to view data that Azure Application Insights collects about your application.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to

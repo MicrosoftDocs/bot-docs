@@ -3,7 +3,7 @@ title: Connect a Bot Framework bot to GroupMe
 description: Learn how to configure bots to connect to the GroupMe channel and to communicate with users via the GroupMe group messaging app.
 keywords: bot channel, GroupMe, create GroupMe
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: jameslew
 ms.service: azure-ai-bot-service
@@ -36,8 +36,9 @@ You can configure your bot to communicate with people through GroupMe. This arti
 
         | Region | Callback URL |
         |:-|:-|
-        | Europe| https://europe.groupme.botframework.com/Home/Login |
-        | India | https://india.groupme.botframework.com/Home/Login |
+        | Europe| <https://europe.groupme.botframework.com/Home/Login> |
+        | India | <https://india.groupme.botframework.com/Home/Login> |
+
     1. Enter the rest of the information requested.
     1. Agree to GroupMe's terms of use and branding standards.
     1. Select **Save** to complete creation of the app.

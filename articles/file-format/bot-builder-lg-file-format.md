@@ -3,7 +3,7 @@ title: .lg file format - Bot Service
 description: .lg file format reference
 keywords: lg file format, reference, language generation
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.service: azure-ai-bot-service
@@ -562,15 +562,7 @@ The following examples show when the local cache scope does and doesn't work. As
 - [JavaScript API reference](/javascript/api/botbuilder-lg)
 - Read [Debug with Adaptive Tools](../bot-service-debug-adaptive-tools.md) to learn how to analyze and debug .lg files.
 
-[1]:https://github.com/Microsoft/botbuilder-tools/blob/master/packages/Ludown/docs/lu-file-format.md
 [3]:../v4sdk/bot-builder-concept-adaptive-expressions.md
 [4]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md
 [5]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#join
-[6]:https://github.com/microsoft/botframework-cli/tree/master/packages/chatdown
-[7]:https://github.com/microsoft/botframework-cli/blob/master/packages/chatdown/docs/chatdown-format.md
-[8]:https://github.com/microsoft/botframework-cli/blob/master/packages/chatdown/docs/examples/CardExamples.chat
-[9]:https://github.com/microsoft/botframework-cli/blob/master/packages/chatdown/docs/chatdown-format.md#message-commands
-[10]:https://github.com/microsoft/botframework-cli/blob/master/packages/chatdown/docs/chatdown-format.md#message-cards
-[11]:https://github.com/microsoft/botframework-cli/blob/master/packages/chatdown/docs/chatdown-format.md#message-attachments
-[12]:https://github.com/microsoft/botframework-cli/blob/master/packages/chatdown/docs/chatdown-format.md
 [13]:../language-generation/functions-injected-from-language-generation.md

@@ -2,7 +2,7 @@
 title: Connect to Outlook for Actionable Messages - Bot Service
 description: Learn how to configure bots to send and receive actionable email messages by using Adaptive Cards to power your Outlook Actionable Messages.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: jameslew
 ms.service: azure-ai-bot-service

@@ -3,7 +3,7 @@ title: Analyze the telemetry data from your bot
 description: Learn how to analyze bot behavior with Kusto queries.
 keywords: telemetry, appinsights, monitor bot, Kusto, queries
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to

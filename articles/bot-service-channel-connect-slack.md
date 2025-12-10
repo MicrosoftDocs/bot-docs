@@ -3,7 +3,7 @@ title: Connect a Bot Framework bot to Slack
 description: Learn how to configure bots to connect to the Slack channel and communicate with users via Slack.
 keywords: connect a bot, bot channel, Slack bot, Slack messaging app, slack adapter
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: jameslew
 ms.service: azure-ai-bot-service
@@ -51,8 +51,9 @@ Once the app is created, add a redirect URL to your app.
 
     | Region | Redirect URL |
     |:-|:-|
-    | Europe| https://europe.slack.botframework.com |
-    | India | https://india.slack.botframework.com |
+    | Europe| <https://europe.slack.botframework.com> |
+    | India | <https://india.slack.botframework.com> |
+
 1. Select **Save URLs**.
 
 ### Subscribe to bot events
@@ -70,6 +71,7 @@ Subscribe to events based on the features your bot will use in Slack.
     |:-|:-|
     | Europe| `https://europe.slack.botframework.com/api/Events/{bot-name}` |
     | India | `https://india.slack.botframework.com/api/Events/{bot-name}` |
+
 1. Under **Subscribe to bot events**, select **Add Bot User Event**, then subscribe to events. For example:
     - `member_joined_channel`
     - `member_left_channel`
@@ -99,6 +101,7 @@ Optionally, enable interactive messages.
     |:-|:-|
     | Europe| `https://europe.slack.botframework.com/Actions` |
     | India | `https://india.slack.botframework.com/Actions` |
+
 1. Select **Save changes**.
 
 ### Copy your app information

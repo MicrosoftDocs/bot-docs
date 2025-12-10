@@ -1,6 +1,7 @@
 # Metadata for Bot Framework technical articles
 
 The standard Bot Framework metadata section looks like this:
+
   ```yaml
   ---
   title: <page title displayed in search results. Include the brand Azure> - Bot Service
@@ -15,7 +16,7 @@ The standard Bot Framework metadata section looks like this:
   ms.devlang: <optional>
   ms.topic: article
   ms.date: mm/dd/yyyy
-  ms.author: kamrani # the Writing team manager's alias.
+  ms.author: kunsinghms # the Writing team manager's alias.
   ---
   ```
 
@@ -25,7 +26,7 @@ The standard Bot Framework metadata section looks like this:
 
 ## Attributes and values
 
-![](./media/article-metadata/checkmark-small.png)**title**: Required; important for SEO. Title text appears in the browser tab and as the heading in a search result. Use up to 60 characters including spaces. The H1 of an article should expand on the title, not duplicate it. 
+![](./media/article-metadata/checkmark-small.png)**title**: Required; important for SEO. Title text appears in the browser tab and as the heading in a search result. Use up to 60 characters including spaces. The H1 of an article should expand on the title, not duplicate it.
 
 ![](./media/article-metadata/checkmark-small.png)**description**: Required; important for SEO (relevance) and site functionality. The description should be at least 115 characters long to 145 characters maximum including spaces. Describe the purpose of your content so customers will know whether to choose it from a list of search results. The value is:
 
@@ -56,23 +57,19 @@ The list of approved values is listed in [Apply metadata to a file](https://revi
 
 ![](./media/article-metadata/checkmark-small.png)**ms.topic**: Required. Specifies the topic type. Most new pages created by contributors will use "article".
 
- - **article**: A conceptual topic, tutorial, feature guide, or other non-reference article
+- **article**: A conceptual topic, tutorial, feature guide, or other non-reference article
 
- - **get-started-article**: assign to articles that are featured in the Get Started or Overview section of the left navigation for a service.
+- **get-started-article**: assign to articles that are featured in the Get Started or Overview section of the left navigation for a service.
 
- - **hero-article**: a "hero" tutorial that is designed to provide an introduction to a service or feature that gets visitors started using the service quickly and drives free-trial sign-ups and MSDN activations. Assign this value ONLY to articles that are featured on the documentation landing page for your service.
+- **hero-article**: a "hero" tutorial that is designed to provide an introduction to a service or feature that gets visitors started using the service quickly and drives free-trial sign-ups and MSDN activations. Assign this value ONLY to articles that are featured on the documentation landing page for your service.
 
 ![](./media/article-metadata/checkmark-small.png) **ms.date**: Required. Specifies the date the article was last reviewed for relevance, accuracy, correct screenshots, and working links. Enter the date in mm/dd/yyyy format. This date also appears on the published article as the last updated date.
 
 ![](./media/article-metadata/checkmark-small.png) **ms.author**: Required. Specifies the author(s) associated with the topic. Internal reports (such as freshness) use this value to associate the right author(s) with the article. To specify multiple values you should separate them with semicolons. Either Microsoft aliases or complete email addresses are acceptable. The length can be no longer than 200 characters.
 
-
 ### Contributors' Guide Links
+
 * [Overview article](../README.md)
-* [Index of guidance articles](contributor-guide-index.md)
+- [Index of guidance articles](contributor-guide-index.md)
 
 <!--Anchors-->
-[Syntax]: #syntax
-[Usage]: #usage
-[Attributes and values for the properties section]: #attributes-and-values-for-the-properties-section
-[Attributes and values for the tags section]: #attributes-and-values-for-the-tags-section

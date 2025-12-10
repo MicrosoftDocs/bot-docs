@@ -3,7 +3,7 @@ title: Design a bot's first user interaction
 description: Learn what makes a great first user experience and how to design your bots for success.  
 keywords: first impression, beginning, language versus menu 
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to

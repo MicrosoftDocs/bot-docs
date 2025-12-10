@@ -2,7 +2,7 @@
 title: Implement sequential conversation flow
 description: Learn how to manage linear conversation flow with dialogs in the Bot Framework SDK.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to

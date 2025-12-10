@@ -2,7 +2,7 @@
 title: Start a conversation - Bot Service
 description: Learn how to use version 3.0 of the Direct Line API to start conversations with bots. Find out how the start conversation and generate token operations differ.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to

@@ -2,7 +2,7 @@
 title: Receive messages from the bot - Bot Service
 description: Learn how to use version 1.1 of the Direct Line API to receive messages from bots. See how to issue GET requests. Become familiar with timing considerations. 
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to

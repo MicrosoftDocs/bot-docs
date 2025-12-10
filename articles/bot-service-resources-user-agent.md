@@ -2,7 +2,7 @@
 title: Bot Framework User-Agent requests - Bot Service
 description: Learn about requests that the Bot Framework service sends to web servers. Understand why the service sends these webhook calls. See how to stop them.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: troubleshooting

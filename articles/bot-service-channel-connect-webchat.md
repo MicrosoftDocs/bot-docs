@@ -3,7 +3,7 @@ title: Connect a bot to Web Chat in the Bot Framework SDK
 description: Learn how to use the Web Chat control to connect to a bot that uses the Web Chat channel.
 keywords: web chat, bot channel, web page, secret key, HTML
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: jameslew
 ms.service: azure-ai-bot-service
@@ -65,8 +65,8 @@ To exchange your secret for a token and generate the embed:
 
     | Region | Token Exchange URL |
     |:-|:-|
-    | Europe| https://europe.webchat.botframework.com/api/tokens |
-    | India | https://india.webchat.botframework.com/api/tokens |
+    | Europe| <https://europe.webchat.botframework.com/api/tokens> |
+    | India | <https://india.webchat.botframework.com/api/tokens> |
 
 1. The response to your **GET** request will contain the token (surrounded with quotation marks) that can be used to start a conversation by rendering the Web Chat control. A token is valid for one conversation only; to start another conversation, you need to generate a new token.
 

@@ -3,7 +3,7 @@ title: About network isolation in Azure AI Bot Service
 description: Learn about Azure Virtual Network and how a virtual network lets you restrict user access to your bot.
 displayName: private network, isolated network
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: jameslew
 ms.service: azure-ai-bot-service

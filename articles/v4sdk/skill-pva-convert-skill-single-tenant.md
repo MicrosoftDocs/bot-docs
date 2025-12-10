@@ -3,7 +3,7 @@ title: Convert an existing skill from multitenant to single-tenant
 description: Learn how to convert an existing skill from multitenant to single-tenant for use in Copilot Studio agents.
 keywords: skills
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: reference

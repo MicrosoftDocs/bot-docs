@@ -2,7 +2,7 @@
 title: Azure Bot Framework CLI tool - Bot Service
 description: About the Bot Framework Command-Line Interface (CLI) tool.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: reference

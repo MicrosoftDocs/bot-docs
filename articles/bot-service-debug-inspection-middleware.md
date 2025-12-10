@@ -3,7 +3,7 @@ title: Debug a bot with inspection middleware in the Bot Framework SDK
 description: Learn how to use inspection middleware to debug bots. See how to use the Bot Framework Emulator to inspect state data and message traffic.
 keywords: Bot Framework SDK, debug bot, inspection middleware, bot emulator, Azure Bot
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.service: azure-ai-bot-service
@@ -119,26 +119,26 @@ After updating the code, you can run your bot locally and test the debugging fea
 
 1. Go to your bot's directory in a terminal and execute the following command to run your bot locally:
 
-    ### [C#](#tab/csharp)
+   ### [C#](#tab/csharp)
 
     ```console
     dotnet run
     ```
 
-    ### [JavaScript](#tab/javascript)
+   ### [JavaScript](#tab/javascript)
 
     ```console
     npm start
     ```
 
-    ### [Java](#tab/java)
+   ### [Java](#tab/java)
 
     ```console
     mvn package
     java -jar .\target\bot-inspection-sample.jar 
     ```
 
-    ### [Python](#tab/python)
+   ### [Python](#tab/python)
 
     ```console
     python app.py

@@ -5,7 +5,7 @@ description: Lists the articles available in the Bot Framework technical content
 ms.service: contributor-guide
 ms.topic: article
 ms.date: 12/19/2014
-ms.author: tysonn
+ms.author: kunsinghms
 ---
 
 # Bot Framework technical content contributors' guide index

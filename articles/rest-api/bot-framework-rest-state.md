@@ -2,7 +2,7 @@
 title: Manage state data - Bot Service
 description: Learn about alternatives to the deprecated Bot State service. See how to keep track of information about users and conversations without using this service.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: article

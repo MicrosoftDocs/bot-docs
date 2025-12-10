@@ -3,7 +3,7 @@ title: Write directly to storage
 description: Learn how to use the Bot Framework SDK to write bot data directly to various types of persistent storage without using a state manager.
 keywords: storage, read and write, memory storage, eTag
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.service: azure-ai-bot-service
@@ -1122,7 +1122,7 @@ async function createSampleNote(storage, context) {
 }
 ```
 
-Within the `createSampleNote` helper function, initialize a `changes` object and add your *notes* to it, then write it to storage.
+Within the `createSampleNote` helper function, initialize a `changes` object and add your _notes_ to it, then write it to storage.
 
 **bot.js**
 

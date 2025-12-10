@@ -2,7 +2,7 @@
 title: Connect a Bot Framework bot to Microsoft Teams
 description: Learn how to configure bots to connect to the Microsoft Teams channel and communicate with users via Teams.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: jameslew
 ms.service: azure-ai-bot-service

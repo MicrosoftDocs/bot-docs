@@ -2,7 +2,7 @@
 title: Direct Line enhanced authentication
 description: Learn about potential security risks when users connect to a bot and how Direct Line enhanced authentication can mitigate some risks.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
@@ -42,8 +42,8 @@ Impersonation refers to the action of an attacker who makes the bot think that t
     > [!TIP]
     > For a regional bot, set `dlUrl` according to the selected region.<br>
     If selected europe, set
-    "https://europe.directline.botframework.com/v3/directline/tokens/generate".<br>
-    If selected india, set "https://india.directline.botframework.com/v3/directline/tokens/generate".<br>
+    "<https://europe.directline.botframework.com/v3/directline/tokens/generate>".<br>
+    If selected india, set "<https://india.directline.botframework.com/v3/directline/tokens/generate>".<br>
     > For more information about regional bots, see [Regionalization in Azure AI Bot Service](bot-builder-concept-regionalization.md).
 
     ```csharp

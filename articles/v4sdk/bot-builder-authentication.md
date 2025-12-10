@@ -2,7 +2,7 @@
 title: Add authentication to a bot in Bot Framework SDK
 description: Learn how to add user's authentication to your bot using Azure authentication.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: how-to
@@ -220,10 +220,11 @@ You'll need your bot's app ID and password to complete this process.
     - Set `MicrosoftAppId` and `MicrosoftAppPassword` to your bot's app ID and app secret.
 
       Depending on the characters in your bot secret, you may need to XML escape the password. For example, any ampersands (&) will need to be encoded as `&amp;`.
-      
+
     [!code-json[appsettings](~/../botbuilder-samples/samples/csharp_dotnetcore/18.bot-authentication/appsettings.json)]
-    
+
     To use OAuth in bot with data-residency in public cloud, you must add the following configurations in your appsettings
+
     ```json
     "OAuthUrl": "<Regional-OAuth-Uri>",
     "ToChannelFromBotOAuthScope": "https://api.botframework.com",
@@ -234,9 +235,9 @@ You'll need your bot's app ID and password to complete this process.
     "ToBotFromChannelTokenIssuer": "https://api.botframework.com",
     "ToChannelFromBotLoginUrl": "https://login.microsoftonline.com/botframework.com",
     ```
-    
+
     Where _\<Regional-OAuth-Url>_ is one of the following URIs:
-    
+
     |URI|Description|
     |:-|:-|
     |`https://europe.api.botframework.com`|For public-cloud bots with data residency in Europe.|
@@ -500,6 +501,7 @@ It's best practice to let users explicitly sign out, instead of relying on the c
 **LogoutDialog.java**
 
 [!code-java[Allow sign out](~/../botbuilder-samples/samples/java_springboot/18.bot-authentication/src/main/java/com/microsoft/bot/sample/authentication/LogoutDialog.java?range=49-67&highlight=8-13)]
+
 ### [Python](#tab/python)
 
 **dialogs/logout_dialog.py**
@@ -511,7 +513,6 @@ It's best practice to let users explicitly sign out, instead of relying on the c
 ### Adding Teams Authentication
 
 OAuth is handled differently in Teams than in other channels. The Teams Authentication Bot sample (in [C#][cs-teams-auth-sample], [JavaScript][js-teams-auth-sample], [Java][java-teams-auth-sample], or [Python][python-teams-auth-sample]) demonstrates how to properly implement authentication for Teams.
-
 
 ### Further reading
 
@@ -543,4 +544,3 @@ OAuth is handled differently in Teams than in other channels. The Teams Authenti
 [java-teams-auth-sample]:https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-teams-authentication/java
 [python-teams-auth-sample]:https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-teams-authentication/python
 
-[teams-activity-feed]:/microsoftteams/platform/concepts/activity-feed

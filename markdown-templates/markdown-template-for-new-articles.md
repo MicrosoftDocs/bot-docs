@@ -2,7 +2,7 @@
 title: Page title that displays in the browser tab and search results
 description: Article description that will be displayed on landing pages and in most search results
 author: GitHub-alias-of-only-one-author
-ms.author: writing-lead-ms-alias
+ms.author: kunsinghms
 manager: writing-manager-ms-alias
 ms.reviewer: editor-ms-alias
 ms.topic: overview

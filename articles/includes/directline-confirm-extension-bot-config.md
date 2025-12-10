@@ -1,7 +1,7 @@
 ---
 description: Confirm Direct Line App Service extension and the bot are configured
 author: emgrol
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: include

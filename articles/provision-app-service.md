@@ -2,7 +2,7 @@
 title: Use Azure CLI to create an App Service resource
 description: Learn how to create an App Service resource with the Azure CLI and an ARM template.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.service: azure-ai-bot-service

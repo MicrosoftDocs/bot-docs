@@ -3,7 +3,7 @@ title: Connect a Bot Framework bot to Skype
 description: Learn how to configure bots to connect to Skype and communicate with users via Skype.
 keywords: skype, bot channels, configure skype, publish, connect to channels
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: jameslew
 ms.service: azure-ai-bot-service

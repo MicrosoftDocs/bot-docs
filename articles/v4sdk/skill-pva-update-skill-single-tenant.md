@@ -3,7 +3,7 @@ title: Update a skill to support both single-tenant and multitenant agents
 description: Learn how to multitenant skill to a single-tenant skill for Copilot Studio agents.
 keywords: skills
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: reference

@@ -2,7 +2,7 @@
 title: Reliability in Azure AI Bot Service
 description: Learn where to find reliability guidance for Azure AI Bot Service.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: jameslew
 ms.service: azure-ai-bot-service

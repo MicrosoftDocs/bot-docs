@@ -2,7 +2,7 @@
 title: Troubleshooting Azure AI Bot Service bots
 description: These frequently asked questions can help you to troubleshoot common bot development or operational issues for bots built with Azure AI Bot Service.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.service: azure-ai-bot-service
@@ -91,7 +91,7 @@ All dialog steps need to feed into the next step of the waterfall, or end the cu
 
 ## What causes an error with HTTP status code 429 "Too Many Requests"?
 
-An error response with HTTP status code 429 indicates that too many requests have been issued in a given amount of time. The body of the response should include an explanation of the problem and may also specify the minimum required interval between requests. 
+An error response with HTTP status code 429 indicates that too many requests have been issued in a given amount of time. The body of the response should include an explanation of the problem and may also specify the minimum required interval between requests.
 
 ## Why aren't my bot messages getting received by the user?
 

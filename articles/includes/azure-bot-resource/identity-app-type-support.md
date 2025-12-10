@@ -1,7 +1,7 @@
 ---
 description: Note about product support for different identity management types in Azure Bot applications.
 author: JonathanFingold
-ms.author: iawilt
+ms.author: kunsinghms
 manager: shellyha
 ms.reviewer: micchow
 ms.topic: include
