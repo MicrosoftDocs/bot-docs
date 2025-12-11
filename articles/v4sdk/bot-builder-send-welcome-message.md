@@ -60,18 +60,6 @@ If `DidBotWelcomeUser` is _true_, the user's input is evaluated. Based on the co
 - Display a hero card providing addition information about bots.
 - Resend the `WelcomeMessage` explaining expected inputs for this bot.
 
-### [Java](#tab/java)
-
-The two main events encountered by the bot are:
-
-- `onMembersAdded`, called when a new user connects to your bot.
-- `onMessageActivity`, called when your bot receives new user input.
-
-:::image type="content" source="./media/welcome-user-flow-java.png" alt-text="Logic flow diagram for Java sample.":::
-
-Whenever a new user is connected, they're provided with a `WELCOME_MESSAGE`, `INFO_MESSAGE`, and `PATTERN_MESSAGE` by the bot.
-When a new user input is received, WelcomeUserState is checked to see if `getDidBotWelcomeUser()` is set to _true_. If not, an initial welcome user message is returned to the user.
-
 ### [Python](#tab/python)
 
 The two main events encountered by the bot are:

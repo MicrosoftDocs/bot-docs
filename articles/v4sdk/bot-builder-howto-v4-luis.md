@@ -70,23 +70,6 @@ Upon the response back, `mainDialog` preserves information for the user returned
 - `origin` the originating city.
 - `travelDate` the date to book the flight.
 
-# [Java](#tab/java)
-
-1. After each processing of user input, `DialogBot` saves the current state of both `UserState` and `ConversationState`.
-1. Once all the required information has been gathered, the coding sample creates a demo flight booking reservation.
-1. In this article, we'll be covering the LUIS aspects of this sample. However, the general flow of the sample is:
-
-- `onMembersAdded` is called when a new user is connected and displays a welcome card.
-- `onMessageActivity` is called for each user input received.
-
-:::image type="content" source="./media/how-to-luis/luis-logic-flow-java.png" alt-text="Class diagram outlining the structure of the Java sample.":::
-
-The `onMessageActivity` module runs the appropriate dialog through the `run` dialog extension method. Then the main dialog calls the LUIS helper to find the top scoring user intent. If the top intent for the user input returns "BookFlight", the helper fills out information from the user that LUIS returned. After that, the main dialog starts the `BookingDialog`, which acquires additional information as needed from the user such as:
-
-- `Origin` the originating city
-- `TravelDate` the date to book the flight
-- `Destination` the destination city
-
 # [Python](#tab/python)
 
 After each processing of user input, `DialogBot` saves the current state of both `user_state` and `conversation_state`. Once all the required information has been gathered, the coding sample creates a demo flight booking reservation. In this article, we'll be covering the LUIS aspects of this sample. However, the general flow of the sample is:

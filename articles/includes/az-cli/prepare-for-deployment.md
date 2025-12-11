@@ -52,15 +52,6 @@ Prepare your project files before you deploy your bot.
 
 1. Within your project's root folder, create a zip file that contains all files and subfolders.
 
-### [Java](#tab/java)
-
-1. Switch to your project's root folder.
-1. In the project directory, run the following command from the command line:
-
-    ```console
-    mvn clean package
-    ````
-
 ### [Python](#tab/python)
 
 > [!TIP]

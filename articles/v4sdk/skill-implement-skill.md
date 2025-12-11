@@ -56,10 +56,6 @@ This article focuses on the skill, which includes support logic in its bot and a
 
 :::image type="content" source="./media/skills-simple-skill-js.png" alt-text="Skill JavaScript class diagram.":::
 
-### [Java](#tab/java)
-
-:::image type="content" source="./media/skills-simple-skill-java.png" alt-text="Skill Java class diagram.":::
-
 ### [Python](#tab/python)
 
 :::image type="content" source="./media/skills-simple-skill-python.png" alt-text="Skill Python class diagram.":::
@@ -195,10 +191,6 @@ The SDK provides an `AllowedCallersClaimsValidator` class that adds application-
 ### [JavaScript](#tab/javascript)
 
 The SDK provides an `allowedCallersClaimsValidator` class that adds application-level authorization based on a simple list of IDs of the applications that are allowed to call the skill. If the list contains an asterisk (*), then all callers are allowed. The claims validator is configured in **index.js**.
-
-### [Java](#tab/java)
-
-The SDK provides an `AllowedCallersClaimsValidator` class that adds application-level authorization based on a simple list of IDs of the applications that are allowed to call the skill. If the list contains an asterisk (*), then all callers are allowed. The claims validator is configured in **Application.java**.
 
 ### [Python](#tab/python)
 

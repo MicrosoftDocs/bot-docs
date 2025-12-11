@@ -52,10 +52,6 @@ For information about other aspects of creating a skill consumer, see how to [im
 
 :::image type="content" source="./media/skill-dialog/dialog-root-bot-js.png" alt-text="JavaScript skill consumer class diagram.":::
 
-### [Java](#tab/java)
-
-:::image type="content" source="./media/skill-dialog/dialog-root-bot-java.png" alt-text="Java skill consumer class diagram.":::
-
 ### [Python](#tab/python)
 
 :::image type="content" source="./media/skill-dialog/dialog-root-bot-py.png" alt-text="Python skill consumer class diagram.":::

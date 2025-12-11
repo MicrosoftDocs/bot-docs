@@ -37,24 +37,4 @@ For Azure CLI 2.39.0 or later, use the following commands to create your app reg
 
 For more information about `az ad app`, see the [command reference](/cli/azure/ad/app). For more information about the `sign-in-audience` parameter, see [sigInAudience values](/graph/api/resources/application#signinaudience-values).
 
-### [Java](#tab/java+python)
-
-For Azure CLI 2.36.0 or earlier, use the following command to create your app registration and set its password. On success, this command generates JSON output.
-
-1. Use the `az ad app create` command to create an Microsoft Entra ID app registration.
-
-   ```azurecli
-   az ad app create --display-name "<name>" --password "<password>" --available-to-other-tenants
-   ```
-
-   | Option | Description |
-   |:-|:-|
-   | display-name | The display name for the app registration. |
-   | password | The password, or _client secret_, for the application. It must be at least 16 characters long and contain at least one upper-case or lower-case alphabetical character, at least one numeric character, and at least one special character. |
-   | available-to-other-tenants | Include this flag to create a multi-tenant bot. It allows the application to be accessible from any Microsoft Entra ID tenant. |
-
-1. Record values you'll need in later steps.
-   1. The password you used
-   1. The _app ID_ from the command output
-
 ---

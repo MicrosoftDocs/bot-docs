@@ -14,10 +14,6 @@ When you [Create a bot](../../bot-service-quickstart-create-bot.md), the source 
 
 When you create a bot using a [Yeoman template](../../javascript/bot-builder-javascript-quickstart.md), the source code generated includes a `deploymentTemplates` folder that contains ARM templates. The deployment process documented here uses one of the ARM templates to provision required resources for the bot in Azure by using the Azure CLI.
 
-# [Java](#tab/java)
-
-When you create a bot using a [Yeoman template](../../java/bot-builder-java-quickstart.md), the source code generated includes a `deploymentTemplates` folder that contains ARM templates. The deployment process documented here uses one of the ARM templates to provision required resources for the bot in Azure by using the Azure CLI.
-
 # [Python](#tab/python)
 
 When you create a bot using a [Cookiecutter template](../../python/bot-builder-python-quickstart.md), the source code generated includes a `deploymentTemplates` folder that contains ARM templates. The deployment process documented here uses one of the ARM templates to provision required resources for the bot in Azure by using the Azure CLI.

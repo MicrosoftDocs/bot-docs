@@ -60,12 +60,6 @@ If you need to create a new knowledge base for a Bot Framework SDK bot, see the 
 
 `OnMessage` is called for each user input received. When called, it accesses configuration settings from your sample code's **.env** file.  The qnamaker method `getAnswers` connects your bot to your external QnA Maker knowledge base.
 
-## [Java](#tab/java)
-
-:::image type="content" source="./media/qnabot-logic-flow-java.png" alt-text="Java QnABot logic flow":::
-
-`onMessageActivity` is called for each user input received. When called, it accesses configuration settings from the sample code's **application.properties** file to find the value to connect to your pre-configured QnA Maker knowledge base.
-
 ## [Python](#tab/python)
 
 :::image type="content" source="./media/qnabot-python-logic-flow.png" alt-text="Python QnABot logic flow":::
@@ -111,12 +105,6 @@ If you aren't deploying this for production, you can leave your bot's app ID and
 
 [**JavaScript** (archived)][]
 
-## [Java](#tab/java)
-
-**application.properties**
-
-[**Java** (archived)][]
-
 ## [Python](#tab/python)
 
 **config.py**
@@ -151,14 +139,6 @@ In the **QnABot.js** file, we use the connection information provided by your .e
 
 [**JavaScript** (archived)][]
 
-## [Java](#tab/java)
-
-In **QnABot.java**, in the `onMessageActivity` method, create a QnAMaker instance. The `QnABot` class is also where the names of the connection information, saved in **application.properties** above, are pulled in. If you chose different names for your knowledge base connection information in your settings file, be sure to update the names here to reflect your chosen name.
-
-**QnABot.java**
-
-[**Java** (archived)][]
-
 ## [Python](#tab/python)
 
 In the **qna_bot.py** file, use the connection information provided by the **config.py** file to establish a connection to the QnA Maker service: `self.qna_maker`.
@@ -186,14 +166,6 @@ In the **QnABot.js** file, we pass the user's input to the QnA Maker service's `
 **bots/QnABot.js**
 
 [**JavaScript** (archived)][]
-
-## [Java](#tab/java)
-
-When your bot needs an answer from QnAMaker, call the `getAnswers` method from your bot code to get the appropriate answer based on the current context. If you're accessing your knowledge base, change the _no answers found_ message to provide helpful instructions for your users.
-
-**QnABot.java**
-
-[**Java** (archived)][]
 
 ## [Python](#tab/python)
 
