@@ -2,8 +2,8 @@
 title: Use a dialog to consume a skill
 description: Learn how to consume a skill using dialogs, using the Bot Framework SDK.
 keywords: skills
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.service: azure-ai-bot-service

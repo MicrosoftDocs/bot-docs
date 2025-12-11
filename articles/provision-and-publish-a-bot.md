@@ -1,8 +1,8 @@
 ---
 title: Provision and publish a bot in Azure
 description: Learn how to create Azure resources and publish your bot to Azure.
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.service: azure-ai-bot-service

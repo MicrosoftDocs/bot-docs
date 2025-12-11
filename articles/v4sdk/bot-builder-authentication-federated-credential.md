@@ -2,7 +2,7 @@
 title: Implement Authentication with Federated Identity Credentials
 description: Learn how to integrate user authentication using federated identity credentials
 author: kparihar
-ms.author: kunsinghms
+ms.author: kunsingh
 manager: kunsingh
 ms.reviewer: pehecke
 ms.topic: how-to

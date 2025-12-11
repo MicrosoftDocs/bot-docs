@@ -1,8 +1,8 @@
 ---
 title: API reference - Direct Line API 1.1 - Bot Service
 description: Learn about headers, HTTP status codes, schema, operations, and objects in Direct Line API 1.1. 
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.topic: reference

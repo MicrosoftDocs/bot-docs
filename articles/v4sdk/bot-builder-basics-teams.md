@@ -1,8 +1,8 @@
 ---
 title: Build Microsoft Teams bots with Bot Framework SDK
 description: A continuation of the article on How bots work, specific to Microsoft Teams bots.
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.service: azure-ai-bot-service

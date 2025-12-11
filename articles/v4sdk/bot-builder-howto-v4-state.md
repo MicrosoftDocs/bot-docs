@@ -1,8 +1,8 @@
 ---
 title: Save user and conversation data
 description: Learn how the Bot Framework SDK manages user and conversation data (state). See how to set up storage for this data, read it, and write it. 
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.topic: how-to

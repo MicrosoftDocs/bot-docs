@@ -6,8 +6,8 @@ ms.custom:
   - evergreen
 ms.update-cycle: 1095-days
 ms.topic: reference
-author: iaanw
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 ms.service: azure-ai-bot-service
 ---
 

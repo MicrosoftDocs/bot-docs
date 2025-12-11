@@ -2,8 +2,8 @@
 title: Adaptive expressions in Bot Framework SDK
 description: Describes how adaptive expressions work within the Bot Framework SDK.
 keywords: adaptive expressions
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.service: azure-ai-bot-service

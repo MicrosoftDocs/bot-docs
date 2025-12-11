@@ -1,8 +1,8 @@
 ---
 title: Implement channel-specific functionality using REST API - Bot Service
 description: Learn how to implement channel-specific functionality using the Bot Connector API. 
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.topic: how-to

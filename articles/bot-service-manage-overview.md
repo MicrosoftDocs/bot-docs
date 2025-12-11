@@ -2,8 +2,8 @@
 title: Manage a bot
 description: Learn how to manage bots. See how to use the Azure portal to find information on activity logs, build options, debug settings, and other properties.
 keywords: azure portal, bot management, test in web chat, MicrosoftAppID, MicrosoftAppPassword, application settings
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.service: azure-ai-bot-service

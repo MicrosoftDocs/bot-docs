@@ -1,8 +1,8 @@
 ---
 title: Add input hints to messages - Bot Service
 description: Learn how to add input hints to bot messages. See how to use the Bot Framework Connector service to specify whether a bot is accepting, expecting, or ignoring user input.
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.topic: how-to

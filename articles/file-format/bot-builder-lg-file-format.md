@@ -2,8 +2,8 @@
 title: .lg file format - Bot Service
 description: .lg file format reference
 keywords: lg file format, reference, language generation
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.service: azure-ai-bot-service

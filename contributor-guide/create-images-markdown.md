@@ -4,7 +4,7 @@ description: Explains how to create images in markdown according to guidelines s
 services: ''
 solutions: ''
 documentationcenter: ''
-author: kenhoff
+author: kunsinghms
 manager: ilanas
 editor: tysonn
 
@@ -14,7 +14,7 @@ ms.topic: article
 ms.tgt_pltfrm: ''
 ms.workload: ''
 ms.date: 06/25/2015
-ms.author: kunsinghms
+ms.author: kunsingh
 
 ---
 # Create images in markdown

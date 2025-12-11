@@ -2,8 +2,8 @@
 title: Use dialogs within a skill
 description: Learn how to use dialogs within a skill to support multiple actions, using the Bot Framework SDK.
 keywords: skills
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.service: azure-ai-bot-service

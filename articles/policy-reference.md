@@ -1,8 +1,8 @@
 ---
 title: Built-in policy definitions for Azure AI Bot Service
 description: Lists Azure Policy built-in policy definitions for Azure AI Bot Service. These built-in policy definitions provide common approaches to managing your Azure resources.
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.service: azure-ai-bot-service

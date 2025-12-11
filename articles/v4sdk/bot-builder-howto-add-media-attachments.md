@@ -1,8 +1,8 @@
 ---
 title: Send media attachments with the Bot Framework SDK
 description: Learn how to add images, video, audio, files, and other media attachments to messages sent using the Bot Framework SDK. 
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.topic: how-to

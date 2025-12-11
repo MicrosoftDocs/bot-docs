@@ -2,8 +2,8 @@
 title:  Web Chat customization in the Bot Framework SDK
 description: Learn how to customize the Web Chat control. Add attachments, modify the font, color, container size, and bot avatar.
 keywords: bot framework, webchat, chat, samples, react, reference
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.topic: how-to

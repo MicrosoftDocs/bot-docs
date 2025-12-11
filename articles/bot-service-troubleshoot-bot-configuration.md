@@ -2,8 +2,8 @@
 title: Troubleshoot bot configuration issues - Bot Service
 description: Learn how to troubleshoot bot errors. See how to test bots in Web Chat, check responsiveness, investigate timeout issues, and resolve problems with channels.
 keywords: troubleshoot, configuration, web chat, problems.
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.topic: troubleshooting

@@ -8,7 +8,7 @@ The standard Bot Framework metadata section looks like this:
   description: <article description that is displayed in search results>
   services: <service slug assigned to your service by ACOM>
   cloud: <optional; cloud value assigned by ACOM for sovereign clouds such as Azure Government and Azure Stack>
-  author: <your GitHub user alias, with correct capitalization>
+  author: kunsinghms # GitHub user alias, with correct capitalization>
   manager: <alias of the content publishing manager responsible for the service area>
 
   ms.service: <service per approved list>
@@ -16,7 +16,7 @@ The standard Bot Framework metadata section looks like this:
   ms.devlang: <optional>
   ms.topic: article
   ms.date: mm/dd/yyyy
-  ms.author: kunsinghms # the Writing team manager's alias.
+  ms.author: kunsingh # the Writing team manager's alias.
   ---
   ```
 
@@ -69,7 +69,8 @@ The list of approved values is listed in [Apply metadata to a file](https://revi
 
 ### Contributors' Guide Links
 
-* [Overview article](../README.md)
+- [Overview article](../README.md)
+
 - [Index of guidance articles](contributor-guide-index.md)
 
 <!--Anchors-->

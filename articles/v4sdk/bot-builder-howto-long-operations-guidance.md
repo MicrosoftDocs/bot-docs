@@ -2,8 +2,8 @@
 title: Manage a long-running operation
 description: Learn how to avoid time-out issues and use proactive messages to handle long-running operations within a bot.
 keywords: long operations, time out, 15 seconds
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.service: azure-ai-bot-service

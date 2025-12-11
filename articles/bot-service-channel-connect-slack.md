@@ -2,8 +2,8 @@
 title: Connect a Bot Framework bot to Slack
 description: Learn how to configure bots to connect to the Slack channel and communicate with users via Slack.
 keywords: connect a bot, bot channel, Slack bot, Slack messaging app, slack adapter
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.service: azure-ai-bot-service

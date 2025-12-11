@@ -2,8 +2,8 @@
 title: Prebuilt actions for adaptive dialogs
 description: Learn about the adaptive dialog prebuilt actions, grouped by their general purpose.
 keywords: bot, actions, adaptive dialogs
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.service: azure-ai-bot-service

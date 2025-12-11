@@ -2,8 +2,8 @@
 title: How to debug a Bot Framework SDK bot
 description: Learn how to use Bot Framework Emulator to debug bots. See how to set breakpoints in IDEs and how to exchange messages with bots during debugging.
 keywords: Bot Framework SDK, debug bot, test bot, bot emulator, emulator
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.topic: how-to

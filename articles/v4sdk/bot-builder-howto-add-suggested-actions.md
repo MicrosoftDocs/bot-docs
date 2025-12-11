@@ -2,8 +2,8 @@
 title: Use button for input
 description: Learn how to send suggested actions within messages using the Bot Framework SDK for JavaScript.
 keywords: suggested actions, buttons, extra input
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.topic: how-to

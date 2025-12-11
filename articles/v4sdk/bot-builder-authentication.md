@@ -1,8 +1,8 @@
 ---
 title: Add authentication to a bot in Bot Framework SDK
 description: Learn how to add user's authentication to your bot using Azure authentication.
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.topic: how-to

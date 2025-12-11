@@ -2,8 +2,8 @@
 title: Design bot navigation
 description: Learn how to design a good navigation structure for your bot and how to avoid the most common navigation design errors.
 keywords: navigation, overview, stubborn bot, clueless bot, mysterious bot, captain obvious bot, bot that can't forget
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.topic: how-to

@@ -1,7 +1,7 @@
 ---
 description: Procedure for adding bot identity information to the bot's configuration file.
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.topic: include

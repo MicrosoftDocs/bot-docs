@@ -2,8 +2,8 @@
 title: "Connect a bot to Twilio (SMS)"
 description: Learn how to configure bots to use SMS via Twilio to communicate with people with a TwiML application or the Twilio adapter.
 keywords: Twilio, bot channels, SMS, App, phone, configure Twilio, cloud communication, text
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.service: azure-ai-bot-service

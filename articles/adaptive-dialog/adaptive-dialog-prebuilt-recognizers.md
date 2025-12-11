@@ -2,8 +2,8 @@
 title: Prebuilt recognizers for adaptive dialogs
 description: Adaptive dialogs and language recognizers work together to interpret user intent and to react fluidly to user input. This article describes builtin recognizers in the Bot Framework SDK.
 keywords: bot, recognizers, adaptive dialogs
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.service: azure-ai-bot-service

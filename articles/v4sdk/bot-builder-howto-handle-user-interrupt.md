@@ -2,8 +2,8 @@
 title: Handle user interruptions
 description: Learn how bots handle user interruptions. See how to implement help and cancel interruptions, how to create and test bots, and how to handle unexpected errors.
 keywords: interrupt, interruptions, switching topic, break
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.topic: how-to

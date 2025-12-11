@@ -1,8 +1,8 @@
 ---
 title: Connect a bot to Azure Communication Services
 description: Learn how to configure Bot Framework bots to use Azure Communication Services to communicate with users.
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.service: azure-ai-bot-service

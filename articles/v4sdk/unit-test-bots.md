@@ -2,8 +2,8 @@
 title: Unit test bots - Bot Service
 description: Learn how to run unit tests on bots. See how to create data-driven tests, use mock objects in testing, and check activities and results returned by dialogs.
 keywords: bot, testing bots, bot testing framework
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.topic: how-to

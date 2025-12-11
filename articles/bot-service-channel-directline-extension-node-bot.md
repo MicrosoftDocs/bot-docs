@@ -1,8 +1,8 @@
 ---
 title: Configure Node.js bots for Direct Line App Service extension in the Bot Framework SDK
 description: Configure Node.js bots to work with named pipes. Enable the Direct Line App Service extension and configure bots to use the extension.
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.service: azure-ai-bot-service

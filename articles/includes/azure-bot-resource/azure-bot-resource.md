@@ -1,7 +1,7 @@
 ---
 description: Procedure for creating an Azure Bot resource, in all identity-management flavors.
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.topic: include

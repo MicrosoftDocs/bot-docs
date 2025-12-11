@@ -2,8 +2,8 @@
 title: Send and receive text messages
 description: Learn how to make bots send and receive text messages.
 keywords: sending message, message activities, simple text message, message, text message, receive message
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.service: azure-ai-bot-service

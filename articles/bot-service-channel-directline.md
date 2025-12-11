@@ -2,8 +2,8 @@
 title: About Direct Line channel
 titleSuffix: Bot Service
 description: Learn about the Bot Framework Direct Line three channels. Select the channel to use to integrate bots into mobile apps, webpages, and other applications.
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.service: azure-ai-bot-service

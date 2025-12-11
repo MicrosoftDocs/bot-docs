@@ -2,8 +2,8 @@
 title: Create your own prompts to gather user input
 description: Learn how to manage a conversation flow with primitive prompts in the Bot Framework SDK.
 keywords: conversation flow, prompts, conversation state, user state, custom prompts
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.topic: how-to

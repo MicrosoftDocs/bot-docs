@@ -1,8 +1,8 @@
 ---
 title: Create a bot with the Bot Connector service - Bot Service
 description: Learn how to create a bot. See how to obtain an access token from the Bot Framework and use the Bot Connector service to exchange messages with users. 
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.topic: quickstart

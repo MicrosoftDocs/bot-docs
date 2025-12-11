@@ -2,8 +2,8 @@
 title: Language understanding
 description: Learn how to add artificial intelligence to your bots with Azure AI services to make them more useful and engaging.
 keywords: Azure AI services, CLU, LUIS, QnA Maker, custom question answering
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.topic: article

@@ -1,8 +1,8 @@
 ---
 title: Additional support resources for the Bot Framework - Bot Service
 description: Learn about resources such as the Bot Framework Samples repo, Stack Overflow, and Gitter that provide information on using the Bot Framework to develop bots.
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.topic: reference

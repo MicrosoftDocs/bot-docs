@@ -2,8 +2,8 @@
 title: API reference for Adaptive expressions - Bot Service
 description: API reference for Adaptive expressions
 keywords: adaptive expressions, api reference
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.topic: reference

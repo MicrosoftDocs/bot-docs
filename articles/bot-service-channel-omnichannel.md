@@ -1,8 +1,8 @@
 ---
 title: Connect a Bot Framework bot to Omnichannel
 description: Learn how to configure bots to use the omnichannel capabilities of the Chat Add-in for Dynamics 365 Customer Service.
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.service: azure-ai-bot-service

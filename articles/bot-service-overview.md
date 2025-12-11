@@ -3,8 +3,8 @@ title: What is the Bot Framework SDK?
 description: The Bot Framework, along with the Azure AI Bot Service, provides tools to build, test, deploy, and manage intelligent bots, all in one place. The Bot Framework includes a modular and extensible SDK for building bots, as well as tools, templates, and related AI services. With this framework, developers can create bots that use speech, understand natural language, handle questions and answers, and more.
 keywords: overview, introduction, SDK, outline
 displayName: About the Bot Framework SDK, About the Azure AI Bot Service
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.service: azure-ai-bot-service

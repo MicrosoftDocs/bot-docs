@@ -2,8 +2,8 @@
 title: Adaptive expressions prebuilt functions in Bot Framework SDK
 description: Learn about the available prebuilt functions in adaptive expressions ordered by their general purpose.
 keywords: adaptive expressions, prebuilt functions, reference
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.service: azure-ai-bot-service

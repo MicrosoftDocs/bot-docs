@@ -2,8 +2,8 @@
 title: How to debug a skill or skill consumer
 description: Describes how to debug a skill or skill consumer with Dev Tunnels, when only one bot is local.
 keywords: bot skill, skill bot, skill consumer, debug
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.topic: how-to

@@ -2,8 +2,8 @@
 title: Design the user experience
 description: Learn how to design your bot to deliver an engaging user experience, by using rich user controls, natural language understanding, and speech.
 keywords: overview, design, user experience, UX, rich user control
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.topic: how-to

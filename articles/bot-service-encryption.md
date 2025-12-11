@@ -1,8 +1,8 @@
 ---
 title: Azure AI Bot Service encryption for data at rest in Bot Framework SDK
 description: Azure AI Bot Service protects your data by automatically encrypting it before persisting it to the cloud with Microsoft provided encryption keys.
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.service: azure-ai-bot-service

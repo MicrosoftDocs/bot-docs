@@ -2,8 +2,8 @@
 title: Add trace activities to your bot in Bot Framework SDK
 description: Learn what the trace activity is and how to use it to view information about your bot while it runs locally.
 keywords: trace, activity, bot, Bot Framework SDK
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.topic: how-to

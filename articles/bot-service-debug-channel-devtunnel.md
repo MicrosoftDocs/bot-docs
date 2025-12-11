@@ -2,8 +2,8 @@
 title: Debug a channel using a tunnel
 description: Understand how to debug a channel using a tunnel
 keywords: debugging, channel, tunnel
-author: jameslew
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: kjette
 ms.reviewer: pehecke
 ms.topic: how-to

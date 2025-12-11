@@ -1,8 +1,8 @@
 ---
 title: Event-driven conversations and activity handlers
 description: Become familiar with the bot activity handler. Learn about managing bot reasoning based on the type of activity received from a user.
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.service: azure-ai-bot-service

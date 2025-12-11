@@ -2,8 +2,8 @@
 title: Use multiple LUIS and QnA Maker projects with Orchestrator
 description: Learn how bots can use multiple LUIS models and QnA Maker knowledge bases. See how to use Orchestrator to route user input to the correct model.
 keywords: Luis, QnA, Orchestrator, multiple services, route intents
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.topic: how-to

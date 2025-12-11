@@ -2,8 +2,8 @@
 title: Events and triggers for adaptive dialogs
 description: Describes the adaptive dialog prebuilt triggers. Triggers handle dialog specific events that are related to the lifecycle of the dialog.
 keywords: bot, triggers, adaptive dialogs
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.service: azure-ai-bot-service

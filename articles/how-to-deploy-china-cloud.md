@@ -1,8 +1,8 @@
 ---
 title: Deploy Bots to Microsoft Azure operated by 21Vianet
 description: Learn how to configure a bot to operate in the Microsoft Azure operated by 21Vianet.
-author: singhvikra-micro
-ms.author: singhvikra
+author: kunsinghms
+ms.author: kunsingh
 manager: kunsingh
 ms.reviewer: pehecke
 ms.service: azure-ai-bot-service

@@ -2,8 +2,8 @@
 title: Add natural language understanding to your bot
 description: Learn how to use LUIS for natural language understanding in your bot.
 keywords: Language Understanding, LUIS, intent, recognizer, entities, middleware
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.service: azure-ai-bot-service

@@ -2,8 +2,8 @@
 title: Guide to IDs in the Bot Framework - Bot Service
 description: This guide describes the characteristics of ID fields present in the Bot Framework v3 protocol.
 keywords: id, bots, protocol
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.topic: reference

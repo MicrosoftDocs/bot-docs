@@ -2,8 +2,8 @@
 title: Configure continuous deployment
 description: Learn how to set up continuous deployment from source control for a Bot Service.
 keywords: continuous deployment, publish, deploy, azure portal
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.topic: how-to

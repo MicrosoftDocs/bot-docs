@@ -1,8 +1,8 @@
 ---
 title: Send proactive notifications to users
 description: Learn how bots send notification messages. See how to retrieve conversation references and test proactive messages. View code samples and design considerations.
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.topic: how-to

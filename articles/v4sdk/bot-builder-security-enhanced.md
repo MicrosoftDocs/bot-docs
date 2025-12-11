@@ -1,8 +1,8 @@
 ---
 title: Direct Line enhanced authentication
 description: Learn about potential security risks when users connect to a bot and how Direct Line enhanced authentication can mitigate some risks.
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.topic: how-to

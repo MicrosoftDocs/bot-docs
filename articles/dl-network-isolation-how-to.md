@@ -2,8 +2,8 @@
 title: Configure network isolation
 description: Learn how to configure your bot in a virtual network to restrict user access to your bot.
 displayName: private network, isolated network
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: iawilt
 ms.reviewer: pehecke
 ms.service: azure-ai-bot-service

@@ -1,8 +1,8 @@
 ---
 title: Supported OAuth URLs
 description: Azure AI Bot Service provides various OAuth URLs. Choose a URL based on data residency requirements and which cloud your bot is in.
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.topic: reference

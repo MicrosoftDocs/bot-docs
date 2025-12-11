@@ -1,7 +1,7 @@
 ---
 description: Use Azure CLI to deploy your bot files to Azure.
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.topic: include

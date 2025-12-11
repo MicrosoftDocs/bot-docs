@@ -2,8 +2,8 @@
 title: .qna file format
 description: .qna file format reference
 keywords: qna file format, reference, qnamaker
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.service: azure-ai-bot-service

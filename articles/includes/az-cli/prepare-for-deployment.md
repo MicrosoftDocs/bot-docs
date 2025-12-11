@@ -1,7 +1,7 @@
 ---
 description: Describes how to prepare a bot project for deployment. Assumes that the bot has already been provisioned in Azure.
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.topic: include

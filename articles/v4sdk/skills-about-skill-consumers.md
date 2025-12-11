@@ -2,8 +2,8 @@
 title: About skill consumers
 description: Describes how conversational logic in a skill bot can be used by a skill consumer using the Bot Framework SDK.
 keywords: bot skill, host bot, skill consumer.
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.service: azure-ai-bot-service

@@ -2,8 +2,8 @@
 title: Add telemetry features to your QnA Maker bot
 description: Learn how to integrate telemetry features into your QnA Maker enabled bot and send event data to telemetry services like Application Insights.
 keywords: telemetry, appinsights, Application Insights, monitor bot, QnA Maker
-author: JonathanFingold
-ms.author: kunsinghms
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
 ms.reviewer: pehecke
 ms.topic: how-to
