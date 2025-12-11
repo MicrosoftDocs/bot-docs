@@ -60,7 +60,7 @@ Here's a trace activity you might see if you ran the Core bot without first sett
 The adapter's _on turn error_ handler catches any otherwise uncaught exception thrown from the bot during a turn.
 The error handler is a good place for a trace activity, as you can send a user-friendly message to the user and send debugging information about the exception to the Emulator.
 
-This example code is from the **Core Bot** sample. See the complete sample in [**C#**](https://github.com/Microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/13.core-bot), [**JavaScript**](https://github.com/Microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/13.core-bot), [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/13.core-bot), or [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/13.core-bot).
+This example code is from the **Core Bot** sample. See the complete sample in [**C#**](https://github.com/Microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/13.core-bot), [**JavaScript**](https://github.com/Microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/13.core-bot), [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/13.core-bot).
 
 # [C#](#tab/csharp)
 
@@ -77,40 +77,6 @@ The adapter's **onTurnError** handler creates the trace activity to include the 
 **index.js**
 
 [!code-javascript[onTurnError](~/../BotBuilder-Samples/samples/javascript_nodejs/13.core-bot/index.js?range=50-73&highlight=10-15)]
-
-# [Java](#tab/Java)
-
-In the Java SDK, an `AdapterWithErrorHandler` class is included as part of the SDK in the **com.microsoft.bot.integration** package.
-The adapter's **onTurnError** handler creates the trace activity to include the exception information and sends it to the Emulator.
-The source code for the default adapter is shown below.
-
-**AdapterWithErrorHandler.java**
-
-```java
-setOnTurnError((turnContext, exception) -> {
-    LoggerFactory.getLogger(AdapterWithErrorHandler.class).error("onTurnError", exception);
-
-
-    return turnContext.sendActivities(
-        MessageFactory.text(ERROR_MSG_ONE), MessageFactory.text(ERROR_MSG_TWO)
-    ).thenCompose(resourceResponse -> sendTraceActivity(turnContext, exception))
-        .thenCompose(stageResult -> {
-            if (withConversationState != null) {
-                // Delete the conversationState for the current conversation to prevent the
-                // bot from getting stuck in a error-loop caused by being in a bad state.
-                // ConversationState should be thought of as similar to "cookie-state" in a
-                // Web pages.
-                return withConversationState.delete(turnContext)
-                    .exceptionally(deleteException -> {
-                        LoggerFactory.getLogger(AdapterWithErrorHandler.class)
-                            .error("ConversationState.delete", deleteException);
-                        return null;
-                    });
-            }
-            return CompletableFuture.completedFuture(null);
-        });
-});
-```
 
 # [Python](#tab/python)
 

@@ -542,126 +542,6 @@ Finally, run npm install before starting your bot.
 npm install
 ```
 
-# [Java](#tab/java)
-
-Start with a fresh copy of the **multi-turn prompt** sample, and add the following dependencies to the pom.xml file:
-
-```xml
-<dependency>
-    <groupId>com.microsoft.bot</groupId>
-    <artifactId>bot-azure</artifactId>
-    <version>4.13.0</version>
-</dependency>
-    <dependency>
-    <groupId>com.azure</groupId>
-    <artifactId>azure-cosmos</artifactId>
-</dependency>
-```
-
-**application.properties**
-
-Update application.properties to include Cosmos DB storage options:
-
-```ini
-MicrosoftAppId=
-MicrosoftAppPassword=
-server.port=3978
-
-CosmosDbTimeToLive = 30
-CosmosDbEndpoint = <endpoint-for-your-cosmosdb-instance>
-CosmosDbAuthKey = <your-cosmosdb-auth-key>
-CosmosDbDatabaseId = <your-database-id>
-CosmosDbUserStateContainerId = <no-ttl-container-id>
-CosmosDbConversationStateContainerId = <ttl-container-id>
-```
-
-Notice the two ContainerIds, one for `UserState` and one for `ConversationState`.  The default TTL is set on the `ConversationState` container, but not on `UserState`.
-
-**CosmosDbStorageInitializer.java**
-
-Next, create a `CosmosDbStorageInitializer` class, which will create the container with the configured Time To Live.
-
-```java
-package com.microsoft.bot.sample.multiturnprompt;
-
-import com.azure.cosmos.CosmosAsyncClient;
-import com.azure.cosmos.CosmosClientBuilder;
-import com.azure.cosmos.models.CosmosContainerProperties;
-import com.microsoft.bot.azure.CosmosDbPartitionedStorageOptions;
-import com.microsoft.bot.integration.Configuration;
-
-public class CosmosDbStorageInitializer {
-
-    final CosmosDbPartitionedStorageOptions storageOptions;
-    final int cosmosDbTimeToLive;
-
-    public CosmosDbStorageInitializer(Configuration configuration) {
-        storageOptions = new CosmosDbPartitionedStorageOptions();
-        storageOptions.setCosmosDbEndpoint(configuration.getProperty("CosmosDbEndpoint"));
-        storageOptions.setAuthKey(configuration.getProperty("CosmosDbAuthKey"));
-        storageOptions.setDatabaseId(configuration.getProperty("CosmosDbDatabaseId"));
-        storageOptions.setContainerId(configuration.getProperty("CosmosDbConversationStateContainerId"));
-        cosmosDbTimeToLive = configuration.getProperty("CosmosDbTimeToLive") != null
-                ? Integer.parseInt(configuration.getProperty("CosmosDbTimeToLive"))
-                : 30;
-    }
-
-    public void initialize() {
-
-        CosmosAsyncClient client = new CosmosClientBuilder().endpoint(storageOptions.getCosmosDbEndpoint())
-                .key(storageOptions.getAuthKey()).buildAsyncClient();
-
-        client.createDatabaseIfNotExists(storageOptions.getDatabaseId()).block();
-        CosmosContainerProperties cosmosContainerProperties = new CosmosContainerProperties(
-                storageOptions.getContainerId(), "/id");
-        cosmosContainerProperties.setDefaultTimeToLiveInSeconds(cosmosDbTimeToLive);
-        client.getDatabase(storageOptions.getDatabaseId()).createContainerIfNotExists(cosmosContainerProperties)
-                .block();
-        client.close();
-    }
-}
-
-```
-
-**Application.java**
-
-Lastly, update `Application.java` to use the storage initializer, and Cosmos DB for state:
-
-```java
-// Existing code omitted...
-
-@Override
-public ConversationState getConversationState(Storage storage) {
-    Configuration configuration = getConfiguration();
-    CosmosDbStorageInitializer initializer = new CosmosDbStorageInitializer(configuration);
-    initializer.initialize();
-
-    CosmosDbPartitionedStorageOptions storageOptions = new CosmosDbPartitionedStorageOptions();
-    storageOptions.setCosmosDbEndpoint(configuration.getProperty("CosmosDbEndpoint"));
-    storageOptions.setAuthKey(configuration.getProperty("CosmosDbAuthKey"));
-    storageOptions.setDatabaseId(configuration.getProperty("CosmosDbDatabaseId"));
-    storageOptions.setContainerId(configuration.getProperty("CosmosDbConversationStateContainerId"));
-    return new ConversationState(new CosmosDbPartitionedStorage(storageOptions));
-}
-
-/**
- * Returns a UserState object. Default scope of Singleton.
- *
- * @param storage The Storage object to use.
- * @return A UserState object.
- */
-@Override
-public UserState getUserState(Storage storage) {
-    Configuration configuration = getConfiguration();
-    CosmosDbPartitionedStorageOptions storageOptions = new CosmosDbPartitionedStorageOptions();
-    storageOptions.setCosmosDbEndpoint(configuration.getProperty("CosmosDbEndpoint"));
-    storageOptions.setAuthKey(configuration.getProperty("CosmosDbAuthKey"));
-    storageOptions.setDatabaseId(configuration.getProperty("CosmosDbDatabaseId"));
-    storageOptions.setContainerId(configuration.getProperty("CosmosDbUserStateContainerId"));
-    return new UserState(new CosmosDbPartitionedStorage(storageOptions));
-}
-```
-
 ## [Python](#tab/python)
 
 Start with a fresh copy of the **multi-turn prompt** sample.
@@ -748,7 +628,6 @@ For more information, see [Configure time to live in Azure Cosmos DB][cosmos-ttl
 
 [cs-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/05.multi-turn-prompt
 [js-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/05.multi-turn-prompt
-[java-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/05.multi-turn-prompt
 [python-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/05.multi-turn-prompt
 
 [cosmos-ttl]: /azure/cosmos-db/how-to-time-to-live

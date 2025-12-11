@@ -91,24 +91,6 @@ The following code represents the first step of the waterfall dialog.
 
 For more information on implementing waterfall dialogs, see how to [implement sequential conversation flow](bot-builder-dialog-manage-complex-conversation-flow.md).
 
-### [Java](#tab/java)
-
-**UserProfileDialog.java**
-
-Here the `UserProfileDialog` class derives from the `ComponentDialog` class.
-
-[!code-java[Class](~/../botbuilder-samples/samples/java_springboot/05.multi-turn-prompt/src/main/java/com/microsoft/bot/sample/multiturnprompt/UserProfileDialog.java?range=31)]
-
-Within the constructor, the `addDialog` method adds dialogs and prompts to the component dialog. The first item you add with this method is set as the initial dialog. You can change the initial dialog by calling the `setInitialDialogId` method and provide the name of the initial dialog. When you start a component dialog, it will start its _initial dialog_.
-
-[!code-java[Constructor](~/../botbuilder-samples/samples/java_springboot/05.multi-turn-prompt/src/main/java/com/microsoft/bot/sample/multiturnprompt/UserProfileDialog.java?range=34-59)]
-
-The following code represents the first step of the waterfall dialog.
-
-[!code-java[First step](~/../botbuilder-samples/samples/java_springboot/05.multi-turn-prompt/src/main/java/com/microsoft/bot/sample/multiturnprompt/UserProfileDialog.java?range=71-77)]
-
-For more information on implementing waterfall dialogs, see how to [implement sequential conversation flow](bot-builder-dialog-manage-complex-conversation-flow.md).
-
 ### [Python](#tab/python)
 
 To use dialogs, install the **botbuilder-dialogs** and **botbuilder-ai** PyPI packages by running `pip install botbuilder-dialogs` and `pip install botbuilder-ai` from a terminal.
@@ -167,14 +149,6 @@ The `run` method is called from the bot's `onMessage` method.
 
 [!code-javascript[onMessage](~/../botbuilder-samples/samples/javascript_nodejs/05.multi-turn-prompt/bots/dialogBot.js?range=24-31&highlight=5)]
 
-### [Java](#tab/java)
-
-**DialogBot.java**
-
-In the sample, this is done using the `run` method that is called from the bot's `onMessageActivity` method.
-
-[!code-java[OnMessageActivity](~/../botbuilder-samples/samples/java_springboot/05.multi-turn-prompt/src/main/java/com/microsoft/bot/sample/multiturnprompt/DialogBot.java?range=50-58&highlight=8)]
-
 ### [Python](#tab/python)
 
 **helpers/dialog_helper.py**
@@ -220,5 +194,4 @@ Learn how to create complex conversations that branch and loop.
 
 [cs-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/05.multi-turn-prompt
 [js-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/05.multi-turn-prompt
-[java-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/05.multi-turn-prompt
 [python-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/05.multi-turn-prompt
