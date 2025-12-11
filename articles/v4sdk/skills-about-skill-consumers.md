@@ -5,7 +5,7 @@ keywords: bot skill, host bot, skill consumer.
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: Gabo.Gilabert
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: concept-article
 monikerRange: 'azure-bot-service-4.0'

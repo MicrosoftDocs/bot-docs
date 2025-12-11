@@ -4,7 +4,7 @@ description: Article description that will be displayed on landing pages and in 
 author: GitHub-alias-of-only-one-author
 ms.author: kunsinghms
 manager: writing-manager-ms-alias
-ms.reviewer: editor-ms-alias
+ms.reviewer: pehecke
 ms.topic: overview
 ms.service: bot-service
 ms.date: mm/dd/yyyy # date the article was updated in mm/dd/yyyy format

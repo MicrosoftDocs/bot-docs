@@ -4,7 +4,7 @@ description: Learn about resources such as the Bot Framework Samples repo, Stack
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: reference
 ms.service: azure-ai-bot-service
 ms.custom:

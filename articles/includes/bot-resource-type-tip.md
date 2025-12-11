@@ -3,7 +3,7 @@ description: Common alert about the Web App Bot and Bot Channels Registration de
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: include
 ms.custom:
   - evergreen

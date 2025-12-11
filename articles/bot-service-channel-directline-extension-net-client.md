@@ -4,7 +4,7 @@ description: Learn how to create .NET clients that connect to Direct Line App Se
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: Daniel.Evans
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: how-to
 ms.custom:

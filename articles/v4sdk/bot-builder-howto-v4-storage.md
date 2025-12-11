@@ -5,7 +5,7 @@ keywords: storage, read and write, memory storage, eTag
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: how-to
 monikerRange: 'azure-bot-service-4.0'

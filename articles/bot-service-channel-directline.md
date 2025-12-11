@@ -5,7 +5,7 @@ description: Learn about the Bot Framework Direct Line three channels. Select th
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: Daniel.Evans
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: overview
 ms.custom:

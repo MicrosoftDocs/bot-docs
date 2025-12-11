@@ -4,7 +4,7 @@ description: Learn about version 3.0 of the Bot Framework Direct Line API. View 
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: concept-article
 ms.service: azure-ai-bot-service
 ms.custom:

@@ -3,7 +3,7 @@ description: Use Azure CLI to create an application service in an existing resou
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: include
 ms.custom:
   - devx-track-azurecli

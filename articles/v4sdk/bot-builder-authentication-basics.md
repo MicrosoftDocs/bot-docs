@@ -4,7 +4,7 @@ description: Learn about the authentication basics in the Bot Framework SDK. Lea
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: quickstart
 ms.custom:

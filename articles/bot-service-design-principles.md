@@ -5,7 +5,7 @@ keywords: conversational user experience, design guide, best practices, bot desi
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: quvanwal
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: overview
 ms.custom:

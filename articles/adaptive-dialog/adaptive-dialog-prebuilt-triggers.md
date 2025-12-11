@@ -5,7 +5,7 @@ keywords: bot, triggers, adaptive dialogs
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: reference
 monikerRange: 'azure-bot-service-4.0'
@@ -89,7 +89,6 @@ You can emit your own events by adding the [EmitEvent][emitevent] action to any 
 | Event cause  | Trigger name    | Base class    | Description                                                                                                              |
 | ------------ | --------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | Custom event | `OnDialogEvent` | `OnCondition` | Actions to perform when a custom event is detected. Use [Emit a custom event][emitevent] action to raise a custom event. |
-
 
 [recognizers-cross-trained-recognizer-set]:../v4sdk/bot-builder-concept-adaptive-dialog-recognizers.md#cross-trained-recognizer-set
 [qna-maker-recognizer]:adaptive-dialog-prebuilt-recognizers.md#qna-maker-recognizer

@@ -4,7 +4,7 @@ description: Get started with the Bot Framework REST APIs that can be used to bu
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: overview
 ms.service: azure-ai-bot-service
 ms.custom:

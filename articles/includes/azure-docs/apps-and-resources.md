@@ -3,7 +3,7 @@ description: Provides links to Azure documentation for concepts and resources us
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: include
 ms.custom:
   - evergreen

@@ -4,7 +4,7 @@ description: A continuation of the article on How bots work, specific to Microso
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: overview
 ms.custom:

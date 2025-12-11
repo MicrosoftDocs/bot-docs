@@ -4,7 +4,7 @@ description: Learn how to add user's authentication to your bot using Azure auth
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: how-to
 ms.service: azure-ai-bot-service
 ms.custom:
@@ -543,4 +543,3 @@ OAuth is handled differently in Teams than in other channels. The Teams Authenti
 [js-teams-auth-sample]:https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-conversation-sso-quickstart/js
 [java-teams-auth-sample]:https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-teams-authentication/java
 [python-teams-auth-sample]:https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-teams-authentication/python
-

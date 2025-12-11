@@ -4,7 +4,7 @@ description: Learn how to integrate user authentication using federated identity
 author: kparihar
 ms.author: kunsinghms
 manager: kunsingh
-ms.reviewer: kunsingh
+ms.reviewer: pehecke
 ms.topic: how-to
 ms.service: azure-ai-bot-service
 ms.custom:

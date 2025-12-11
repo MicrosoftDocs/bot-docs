@@ -4,7 +4,7 @@ description: Learn about regionalization in Azure AI Bot Service and how to meet
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: article
 monikerRange: 'azure-bot-service-4.0'

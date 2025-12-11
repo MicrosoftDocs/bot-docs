@@ -4,7 +4,7 @@ description: Learn about alternatives to the deprecated Bot State service. See h
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: article
 ms.service: azure-ai-bot-service
 ms.custom:

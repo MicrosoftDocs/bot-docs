@@ -5,7 +5,7 @@ keywords: bot, recognizers, adaptive dialogs
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: reference
 ms.custom:

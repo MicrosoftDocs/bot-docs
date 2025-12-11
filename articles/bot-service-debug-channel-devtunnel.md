@@ -5,7 +5,7 @@ keywords: debugging, channel, tunnel
 author: jameslew
 ms.author: kunsinghms
 manager: kjette
-ms.reviewer: cyanderson
+ms.reviewer: pehecke
 ms.topic: how-to
 ms.service: azure-ai-bot-service
 monikerRange: 'azure-bot-service-4.0'

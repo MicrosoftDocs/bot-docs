@@ -4,7 +4,7 @@ description: Learn about the contents and structure of a Bot Framework skill man
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: Gabo.Gilabert
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: reference
 ms.custom:

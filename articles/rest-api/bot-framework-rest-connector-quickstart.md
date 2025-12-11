@@ -4,7 +4,7 @@ description: Learn how to create a bot. See how to obtain an access token from t
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: quickstart
 ms.service: azure-ai-bot-service
 ms.custom:

@@ -5,7 +5,7 @@ keywords: Bot Framework SDK, debug bot, inspection middleware, bot emulator, Azu
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: how-to
 ms.custom:

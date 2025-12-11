@@ -3,7 +3,7 @@ description: Sunset notice for the Language Understanding (LUIS) service
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: include
 ms.custom:
   - evergreen

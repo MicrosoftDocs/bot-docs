@@ -5,7 +5,7 @@ keywords: Facebook Messenger, bot channel, Facebook App, Facebook bot
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: jameslew
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: how-to
 ms.custom:

@@ -5,7 +5,7 @@ keywords: Quickstart, create bot resource, bot service, Azure Bot
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: quickstart
 ms.service: azure-ai-bot-service
 ms.custom:

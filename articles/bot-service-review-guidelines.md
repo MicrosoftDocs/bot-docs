@@ -4,7 +4,7 @@ description: Learn about the minimum requirements your app integration must meet
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: article
 ms.custom:

@@ -3,7 +3,7 @@ description: Procedure for adding bot identity information to the bot's configur
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: include
 ms.custom:
   - evergreen

@@ -4,7 +4,7 @@ description: Become familiar with the Bot Framework Virtual Assistant template. 
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: overview
 ms.service: azure-ai-bot-service
 ms.custom:

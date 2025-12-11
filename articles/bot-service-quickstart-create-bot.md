@@ -4,7 +4,7 @@ description: Create your first bot with the Bot Framework SDK, in C#, Java, Java
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: quickstart
 ms.custom:

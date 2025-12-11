@@ -5,7 +5,7 @@ keywords: bot framework, Azure AI Bot Service
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: whats-new
 ms.custom:

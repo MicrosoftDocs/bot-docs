@@ -5,7 +5,7 @@ keywords: design, control, conversation flow, handle interruptions, overview
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: article
 ms.service: azure-ai-bot-service
 ms.custom:

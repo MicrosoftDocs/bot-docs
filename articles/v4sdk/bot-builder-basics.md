@@ -4,7 +4,7 @@ description: Become familiar with the Microsoft Bot Framework. Understand how bo
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: overview
 monikerRange: 'azure-bot-service-4.0'

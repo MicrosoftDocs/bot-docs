@@ -8,7 +8,7 @@ description: Learn how to configure bots to use {channel-name} to communicate wi
 author: #Required; a current writer's GitHub alias, with correct capitalization.
 manager: shellyha #Required; current manager's Github alias.
 ms.author: #Required; Microsoft alias of author; can use the alias of an MS FTE on the team (yours or iawilt).
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: bot-service
 ms.topic: how-to
 ms.date: #Required; mm/dd/yyyy format.

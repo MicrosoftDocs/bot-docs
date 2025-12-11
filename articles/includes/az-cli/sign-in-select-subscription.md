@@ -3,7 +3,7 @@ description: Azure CLI instructions to sign into Azure and select a subscription
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: include
 ms.custom:
   - devx-track-azurecli

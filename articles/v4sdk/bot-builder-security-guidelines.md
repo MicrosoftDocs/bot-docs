@@ -4,7 +4,7 @@ description: Learn about the security guidelines in the Bot Framework.
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: article
 ms.service: azure-ai-bot-service
 ms.custom:

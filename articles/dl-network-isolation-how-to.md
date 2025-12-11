@@ -5,7 +5,7 @@ displayName: private network, isolated network
 author: JonathanFingold
 ms.author: kunsinghms
 manager: iawilt
-ms.reviewer: yiba
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: how-to
 ms.custom:

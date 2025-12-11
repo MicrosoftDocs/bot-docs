@@ -5,7 +5,7 @@ keywords: skills
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: reference
 ms.service: azure-ai-bot-service
 monikerRange: 'azure-bot-service-4.0'

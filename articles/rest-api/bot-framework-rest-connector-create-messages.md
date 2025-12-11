@@ -4,7 +4,7 @@ description: Become familiar with the messages that bots use to communicate with
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: article
 ms.service: azure-ai-bot-service
 ms.custom:

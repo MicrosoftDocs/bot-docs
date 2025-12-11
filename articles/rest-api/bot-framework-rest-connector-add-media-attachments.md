@@ -4,7 +4,7 @@ description: Learn how to add media attachments to messages using the Bot Connec
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: reference
 ms.custom:

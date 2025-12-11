@@ -4,7 +4,7 @@ description: Learn how to configure a bot to operate in the Microsoft Azure oper
 author: singhvikra-micro
 ms.author: singhvikra
 manager: kunsingh
-ms.reviewer: kparihar
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: how-to
 ms.custom:
@@ -124,7 +124,7 @@ ToBotFromEmulatorOpenIdMetadataUrl=https://login.partner.microsoftonline.cn/a55a
 ValidateAuthority=true
 ```
 
---- 
+---
 
 ## Add user authentication to your bot
 

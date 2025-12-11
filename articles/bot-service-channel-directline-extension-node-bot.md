@@ -4,7 +4,7 @@ description: Configure Node.js bots to work with named pipes. Enable the Direct 
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: Daniel.Evans
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: how-to
 ms.custom:

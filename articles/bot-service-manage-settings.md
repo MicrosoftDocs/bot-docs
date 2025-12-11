@@ -5,7 +5,7 @@ keywords: configure bot settings, Display Name, Icon, Application Insights, Sett
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: jameslew
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: how-to
 ms.custom:

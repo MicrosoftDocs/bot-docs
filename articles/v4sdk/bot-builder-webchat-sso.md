@@ -4,7 +4,7 @@ description: Learn about the workflow when single sign-on is used in a bot and w
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: concept-article
 ms.custom:

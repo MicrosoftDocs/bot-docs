@@ -5,7 +5,7 @@ keywords: bot, channel, Azure portal, Direct Line, custom adapter
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: jameslew
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: how-to
 ms.custom:

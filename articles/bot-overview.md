@@ -4,7 +4,7 @@ description: Learn about different chatbot solutions, who they're for, and when 
 author: iaanw
 ms.author: kunsinghms
 manager: leeclontz
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: overview
 ms.service: azure-ai-bot-service
 ms.custom:

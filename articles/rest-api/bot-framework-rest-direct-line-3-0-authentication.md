@@ -4,7 +4,7 @@ description: Become familiar with authentication in version 3.0 of the Direct Li
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: overview
 ms.custom:

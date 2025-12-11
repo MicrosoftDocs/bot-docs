@@ -4,7 +4,7 @@ description: Learn how to troubleshoot bot authentication errors, such as connec
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: troubleshooting
 ms.custom:

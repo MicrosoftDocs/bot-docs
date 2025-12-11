@@ -4,7 +4,7 @@ description: Learn how to embed bots in apps. See how to integrate bots with nat
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: overview
 ms.service: azure-ai-bot-service
 ms.custom:

@@ -3,7 +3,7 @@ description: Troubleshoot Direct Line extension
 author: emgrol
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: include
 ms.custom:
   - evergreen

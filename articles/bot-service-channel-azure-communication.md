@@ -4,7 +4,7 @@ description: Learn how to configure Bot Framework bots to use Azure Communicatio
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: jameslew
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: how-to
 ms.custom:

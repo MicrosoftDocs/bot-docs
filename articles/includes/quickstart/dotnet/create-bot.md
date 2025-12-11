@@ -3,7 +3,7 @@ description: Procedure for getting C# bot templates by various means, part of th
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: include
 ms.custom:
   - evergreen

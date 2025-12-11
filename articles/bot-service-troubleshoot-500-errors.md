@@ -5,7 +5,7 @@ keywords: troubleshoot, HTTP 500, problems.
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: troubleshooting
 ms.service: azure-ai-bot-service
 ms.custom:

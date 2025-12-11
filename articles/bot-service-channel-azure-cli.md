@@ -4,7 +4,7 @@ description: This sample shows Azure CLI commands for connecting your bot to a c
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: how-to
 ms.custom:

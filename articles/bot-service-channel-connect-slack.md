@@ -5,7 +5,7 @@ keywords: connect a bot, bot channel, Slack bot, Slack messaging app, slack adap
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: jameslew
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: how-to
 ms.custom:

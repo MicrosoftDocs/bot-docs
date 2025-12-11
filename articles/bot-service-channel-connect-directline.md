@@ -5,7 +5,7 @@ keywords: direct line, bot channels, custom client, connect to channels, configu
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: Daniel.Evans
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: how-to
 ms.custom:

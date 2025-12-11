@@ -5,7 +5,7 @@ keywords: adaptive expressions, prebuilt functions, reference
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: reference
 monikerRange: 'azure-bot-service-4.0'

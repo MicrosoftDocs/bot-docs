@@ -4,7 +4,7 @@ description: Learn about headers, HTTP status codes, schema, operations, and obj
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: reference
 ms.service: azure-ai-bot-service
 ms.custom:

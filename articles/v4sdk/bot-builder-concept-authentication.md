@@ -5,7 +5,7 @@ keywords: Azure AI Bot Service, authentication, bot framework token service
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: overview
 ms.service: azure-ai-bot-service
 monikerRange: 'azure-bot-service-4.0'

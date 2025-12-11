@@ -5,7 +5,7 @@ keywords: Azure AI services, CLU, LUIS, QnA Maker, custom question answering
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: article
 ms.service: azure-ai-bot-service
 monikerRange: 'azure-bot-service-4.0'

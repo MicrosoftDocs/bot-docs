@@ -4,7 +4,7 @@ description: Learn how to create an Azure Bot resource with the Azure CLI and an
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: how-to
 ms.custom:

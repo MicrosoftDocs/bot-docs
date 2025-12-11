@@ -4,7 +4,7 @@ description: Understand key concepts in the Bot Framework Connector service and 
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: concept-article
 ms.custom:

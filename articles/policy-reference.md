@@ -4,7 +4,7 @@ description: Lists Azure Policy built-in policy definitions for Azure AI Bot Ser
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: reference
 ms.custom:

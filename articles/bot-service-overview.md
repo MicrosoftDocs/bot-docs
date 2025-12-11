@@ -6,7 +6,7 @@ displayName: About the Bot Framework SDK, About the Azure AI Bot Service
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: overview
 ms.custom:

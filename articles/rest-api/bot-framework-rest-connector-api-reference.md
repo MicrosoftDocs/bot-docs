@@ -4,7 +4,7 @@ description: Learn about headers, operations, objects, and errors in the Bot Fra
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: reference
 ms.custom:

@@ -4,7 +4,7 @@ description: Learn how to configure a bot to operate in the Microsoft Azure Gove
 author: jameslew
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: jameslew
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: how-to
 ms.custom:

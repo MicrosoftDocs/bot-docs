@@ -5,7 +5,7 @@ keywords: "Publish, channel, M365"
 ms.topic: how-to
 author: KendalBond007
 ms.author: kunsinghms
-ms.reviewer: yiba
+ms.reviewer: pehecke
 manager: iawilt
 ms.custom:
   - publication

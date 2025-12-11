@@ -4,7 +4,7 @@ description: These frequently asked questions can help you to troubleshoot commo
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: troubleshooting
 ms.custom:

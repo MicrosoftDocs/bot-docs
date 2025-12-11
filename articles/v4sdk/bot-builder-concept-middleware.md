@@ -5,7 +5,7 @@ keywords: middleware, middleware pipeline, short circuit, middleware uses
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: article
 ms.service: azure-ai-bot-service
 monikerRange: 'azure-bot-service-4.0'

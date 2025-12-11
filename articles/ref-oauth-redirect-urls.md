@@ -4,7 +4,7 @@ description: Azure AI Bot Service provides various OAuth URLs. Choose a URL base
 author: JonathanFingold
 ms.author: kunsinghms
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: reference
 ms.service: azure-ai-bot-service
 ms.custom:
