@@ -149,7 +149,7 @@ Add the information required to access your LUIS app including application ID, a
 
 **appsetting.json**
 
-[!code-json[appsettings](~/../BotBuilder-Samples/samples/csharp_dotnetcore/13.core-bot/appsettings.json)]
+[!code-json[appsettings](~/../BotBuilder-Samples/archive/samples/csharp_dotnetcore/13.core-bot/appsettings.json)]
 
 # [JavaScript](#tab/javascript)
 
@@ -157,7 +157,7 @@ Add the information required to access your LUIS app including application ID, a
 
 **.env**
 
-[!code-ini[.env file](~/../BotBuilder-Samples/samples/javascript_nodejs/13.core-bot/.env)]
+[!code-ini[.env file](~/../BotBuilder-Samples/archive/samples/javascript_nodejs/13.core-bot/.env)]
 
 # [Java](#tab/java)
 
@@ -173,7 +173,7 @@ Add the information required to access your LUIS app including application ID, a
 
 **config.py**
 
-[!code-python[config.py](~/../botbuilder-samples/samples/python/13.core-bot/config.py?range=14-19)]
+[!code-python[config.py](~/../botbuilder-samples/archive/samples/python/13.core-bot/config.py?range=14-19)]
 
 ---
 
@@ -187,13 +187,13 @@ To connect to the LUIS service, the bot pulls the information you added to the a
 
 **FlightBookingRecognizer.cs**
 
-[!code-csharp[luisHelper](~/../BotBuilder-Samples/samples/csharp_dotnetcore/13.core-bot/FlightBookingRecognizer.cs?range=12-48)]
+[!code-csharp[luisHelper](~/../BotBuilder-Samples/archive/samples/csharp_dotnetcore/13.core-bot/FlightBookingRecognizer.cs?range=12-48)]
 
 The `FlightBookingEx.cs` contains the logic to extract _From_, _To_ and _TravelDate_; it extends the partial class `FlightBooking.cs` used to store LUIS results when calling `FlightBookingRecognizer.RecognizeAsync<FlightBooking>` from the `MainDialog.cs`.
 
 **CognitiveModels\FlightBookingEx.cs**
 
-[!code-csharp[LUIS helper](~/../BotBuilder-Samples/samples/csharp_dotnetcore/13.core-bot/CognitiveModels/FlightBookingEx.cs?range=8-35)]
+[!code-csharp[LUIS helper](~/../BotBuilder-Samples/archive/samples/csharp_dotnetcore/13.core-bot/CognitiveModels/FlightBookingEx.cs?range=8-35)]
 
 # [JavaScript](#tab/javascript)
 
@@ -203,7 +203,7 @@ To connect to the LUIS service, the bot uses the information you added to the `.
 
 **dialogs/flightBookingRecognizer.js**
 
-[!code-javascript[LUIS helper](~/../BotBuilder-Samples/samples/javascript_nodejs/13.core-bot/dialogs/flightBookingRecognizer.js?range=6-70)]
+[!code-javascript[LUIS helper](~/../BotBuilder-Samples/archive/samples/javascript_nodejs/13.core-bot/dialogs/flightBookingRecognizer.js?range=6-70)]
 
 The logic to extract From, To and TravelDate is implemented as helper methods inside `flightBookingRecognizer.js`. These methods are used after calling `flightBookingRecognizer.executeLuisQuery()` from `mainDialog.js`
 
@@ -235,13 +235,13 @@ To connect to the LUIS service, the bot uses the information you added to the `c
 
 **flight_booking_recognizer.py**
 
-[!code-python[config.py](~/../botbuilder-samples/samples/python/13.core-bot/flight_booking_recognizer.py?range=10-36&highlight=26)]
+[!code-python[config.py](~/../botbuilder-samples/archive/samples/python/13.core-bot/flight_booking_recognizer.py?range=10-36&highlight=26)]
 
 The logic to extract _From_, _To_ and _travel_date_ is implemented as helper methods from the `LuisHelper` class inside `luis_helper.py`. These methods are used after calling `LuisHelper.execute_luis_query()` from `main_dialog.py`
 
 **helpers/luis_helper.py**
 
-[!code-python[LUIS helper](~/../botbuilder-samples/samples/python/13.core-bot/helpers/luis_helper.py?range=30-102)]
+[!code-python[LUIS helper](~/../botbuilder-samples/archive/samples/python/13.core-bot/helpers/luis_helper.py?range=30-102)]
 
 ---
 
