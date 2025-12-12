@@ -38,7 +38,7 @@ The C# and JavaScript templates have built-in support for streaming connections.
 ## Prerequisites
 
 - Knowledge of [bot basics](bot-builder-basics.md).
-- A copy of the **echo bot** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/02.echo-bot#readme), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/02.echo-bot#readme), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/02.echo-bot#readme), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/02.echo-bot#readme).
+- A copy of the **echo bot** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/02.echo-bot#readme), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/02.echo-bot#readme), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/02.echo-bot#readme), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/02.echo-bot#readme).
 
 ## Bot templates
 
@@ -141,7 +141,7 @@ Each incoming request represents the start of a new turn.
 
 **Application.java**
 
-[!code-java[Application](~/../botbuilder-samples/samples/java_springboot/02.echo-bot/src/main/java/com/microsoft/bot/sample/echo/Application.java?range=27)]
+[!code-java[Application](~/../botbuilder-samples/archive/samples/java_springboot/02.echo-bot/src/main/java/com/microsoft/bot/sample/echo/Application.java?range=27)]
 
 ### [Python](#tab/python)
 
@@ -181,7 +181,7 @@ The adapter to use is defined in the `ConfigureServices` method.
 
 The adapter to use is defined in the `getBotFrameworkAdapter` method.
 
-[!code-java[adapter](~/../botbuilder-samples/samples/java_springboot/02.echo-bot/src/main/java/com/microsoft/bot/sample/echo/Application.java?range=55-64&highlight=9)]
+[!code-java[adapter](~/../botbuilder-samples/archive/samples/java_springboot/02.echo-bot/src/main/java/com/microsoft/bot/sample/echo/Application.java?range=55-64&highlight=9)]
 
 The AdapterWithErrorHandler is defined in the Java SDK code, in the com.microsoft.bot.integration package. This class can be reviewed in the source code for the Java SDK.
 
@@ -230,11 +230,11 @@ The bot to use is defined in the `ConfigureServices` method.
 
 The bot to use is defined in the `getBot` method.
 
-[!code-java[adapter](~/../botbuilder-samples/samples/java_springboot/02.echo-bot/src/main/java/com/microsoft/bot/sample/echo/Application.java?range=40-53)]
+[!code-java[adapter](~/../botbuilder-samples/archive/samples/java_springboot/02.echo-bot/src/main/java/com/microsoft/bot/sample/echo/Application.java?range=40-53)]
 
 **EchoBot.cs**
 
-[!code-java[adapter](~/../botbuilder-samples/samples/java_springboot/02.echo-bot/src/main/java/com/microsoft/bot/sample/echo/EchoBot.java?range=25-47)]
+[!code-java[adapter](~/../botbuilder-samples/archive/samples/java_springboot/02.echo-bot/src/main/java/com/microsoft/bot/sample/echo/EchoBot.java?range=25-47)]
 
 ### [Python](#tab/python)
 

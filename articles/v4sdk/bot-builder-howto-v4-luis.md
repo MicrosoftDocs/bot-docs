@@ -29,7 +29,7 @@ This topic walks you through adding LUIS to a flight booking application to reco
 ## Prerequisites
 
 - A [LUIS](https://www.luis.ai) account.
-- A copy of the **Core Bot** sample in [**C#**](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot), [**JavaScript**](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/13.core-bot), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/13.core-bot).
+- A copy of the **Core Bot** sample in [**C#**](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot), [**JavaScript**](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/13.core-bot), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/13.core-bot).
 - Knowledge of [bot basics](bot-builder-basics.md) and [natural language processing](/azure/ai-services/luis/what-is-luis).
 
 ## About this sample
@@ -165,7 +165,7 @@ Add the information required to access your LUIS app including application ID, a
 
 **application.properties**
 
-[!code-ini[appsettings](~/../BotBuilder-Samples/samples/java_springboot/13.core-bot/src/main/resources/application.properties)]
+[!code-ini[appsettings](~/../BotBuilder-Samples/archive/samples/java_springboot/13.core-bot/src/main/resources/application.properties)]
 
 # [Python](#tab/python)
 
@@ -211,21 +211,21 @@ The logic to extract From, To and TravelDate is implemented as helper methods in
 
 Be sure that the **com.microsoft.bot.bot-ai-luis-v3** package is added to your pom.xml file.
 
-:::code language="xml" source="~/../BotBuilder-Samples/samples/java_springboot/13.core-bot/pom.xml" range="109-113":::
+:::code language="xml" source="~/../BotBuilder-Samples/archive/samples/java_springboot/13.core-bot/pom.xml" range="109-113":::
 
 To connect to the LUIS service, the bot pulls the information you added to the application.properties file. The `FlightBookingRecognizer` class contains code with your settings from the application.properties file and queries the LUIS service by calling `recognize` method.
 
 **FlightBookingRecognizer.java**
 
-[!code-java[luisHelper](~/../BotBuilder-Samples/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/FlightBookingRecognizer.java?range=27-50)]
+[!code-java[luisHelper](~/../BotBuilder-Samples/archive/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/FlightBookingRecognizer.java?range=27-50)]
 
-[!code-java[luisHelper](~/../BotBuilder-Samples/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/FlightBookingRecognizer.java?range=142-151)]
+[!code-java[luisHelper](~/../BotBuilder-Samples/archive/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/FlightBookingRecognizer.java?range=142-151)]
 
 The `FlightBookingRecognizer.cs` contains the logic to extract _From_, _To_ and _TravelDate_; and is called from the `MainDialog.java` to decode the results of the Luis query result.
 
 **FlightBookingRecognizer.java**
 
-[!code-csharp[LUIS helper](~/../BotBuilder-Samples/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/FlightBookingRecognizer.java?range=71-140)]
+[!code-csharp[LUIS helper](~/../BotBuilder-Samples/archive/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/FlightBookingRecognizer.java?range=71-140)]
 
 # [Python](#tab/python)
 

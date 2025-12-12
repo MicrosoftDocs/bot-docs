@@ -60,7 +60,7 @@ Here's a trace activity you might see if you ran the Core bot without first sett
 The adapter's _on turn error_ handler catches any otherwise uncaught exception thrown from the bot during a turn.
 The error handler is a good place for a trace activity, as you can send a user-friendly message to the user and send debugging information about the exception to the Emulator.
 
-This example code is from the **Core Bot** sample. See the complete sample in [**C#**](https://github.com/Microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/13.core-bot), [**JavaScript**](https://github.com/Microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/13.core-bot), [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/13.core-bot), or [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/13.core-bot).
+This example code is from the **Core Bot** sample. See the complete sample in [**C#**](https://github.com/Microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/13.core-bot), [**JavaScript**](https://github.com/Microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/13.core-bot), [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/13.core-bot), or [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/13.core-bot).
 
 # [C#](#tab/csharp)
 

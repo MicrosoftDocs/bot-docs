@@ -203,7 +203,7 @@ For example, you can handle _on members added_ to welcome users to a conversatio
 
 ### [Java](#tab/java)
 
-[!code-java[Java activity handler](~/../botbuilder-samples/samples/java_springboot/02.echo-bot/src/main/java/com/microsoft/bot/sample/echo/EchoBot.java?range=25-47)]
+[!code-java[Java activity handler](~/../botbuilder-samples/archive/samples/java_springboot/02.echo-bot/src/main/java/com/microsoft/bot/sample/echo/EchoBot.java?range=25-47)]
 
 ### [Python](#tab/python)
 

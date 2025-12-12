@@ -27,7 +27,7 @@ A conversation between a bot and a user often involves asking (prompting) the us
 
 ## Prerequisites
 
-- The code in this article is based on the Prompt Users for Input sample. You'll need a copy of the [C# sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/44.prompt-users-for-input), [JavaScript sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/44.prompt-for-user-input), [Java sample](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/44.prompt-users-for-input), or [Python sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/44.prompt-for-user-input).
+- The code in this article is based on the Prompt Users for Input sample. You'll need a copy of the [C# sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/44.prompt-users-for-input), [JavaScript sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/44.prompt-for-user-input), [Java sample](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/44.prompt-users-for-input), or [Python sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/44.prompt-for-user-input).
 - Knowledge of [managing state](bot-builder-concept-state.md) and how to [save user and conversation data](bot-builder-howto-v4-state.md).
 
 ## About the sample code
@@ -101,10 +101,10 @@ Create the user and conversation state objects in **index.js** and consume them 
 Construct the CustomPromptBot in the getBot method using the ConversationState and UserState instances provided by the Spring container. The constructor of CustomPromptBot will store references to the ConversationState and UserState provided during startup.
 
 **Application.java**
-[!code-java[Application.java](~/../botbuilder-samples/samples/java_springboot/44.prompt-users-for-input/src/main/java/com/microsoft/bot/sample/promptusersforinput/Application.java?range=51-57)]
+[!code-java[Application.java](~/../botbuilder-samples/archive/samples/java_springboot/44.prompt-users-for-input/src/main/java/com/microsoft/bot/sample/promptusersforinput/Application.java?range=51-57)]
 
 **CustomPromptBot.java**
-[!code-java[constructor](~/../botbuilder-samples/samples/java_springboot/44.prompt-users-for-input/src/main/java/com/microsoft/bot/sample/promptusersforinput/CustomPromptBot.java?range=37-43)]
+[!code-java[constructor](~/../botbuilder-samples/archive/samples/java_springboot/44.prompt-users-for-input/src/main/java/com/microsoft/bot/sample/promptusersforinput/CustomPromptBot.java?range=37-43)]
 
 ## [Python](#tab/python)
 
@@ -149,11 +149,11 @@ Before the turn ends, call `saveChanges` to write any state changes to storage.
 Create property accessors for the user profile and conversation flow properties and then call `get` to retrieve the property value from state.
 
 **CustomPromptBot.java**
-[!code-java[OnMessageActivityAsync](~/../botbuilder-samples/samples/java_springboot/44.prompt-users-for-input/src/main/java/com/microsoft/bot/sample/promptusersforinput/CustomPromptBot.java?range=45-56)]
+[!code-java[OnMessageActivityAsync](~/../botbuilder-samples/archive/samples/java_springboot/44.prompt-users-for-input/src/main/java/com/microsoft/bot/sample/promptusersforinput/CustomPromptBot.java?range=45-56)]
 
 Before the turn ends, call `saveChanges` to write any state changes to storage.
 
-[!code-java[OnMessageActivityAsync](~/../botbuilder-samples/samples/java_springboot/44.prompt-users-for-input/src/main/java/com/microsoft/bot/sample/promptusersforinput/CustomPromptBot.java?range=57-59)]
+[!code-java[OnMessageActivityAsync](~/../botbuilder-samples/archive/samples/java_springboot/44.prompt-users-for-input/src/main/java/com/microsoft/bot/sample/promptusersforinput/CustomPromptBot.java?range=57-59)]
 
 ## [Python](#tab/python)
 
@@ -185,7 +185,7 @@ When handling message activities, the message handler uses a helper method to ma
 ## [Java](#tab/java)
 
 **CustomPromptBot.java**
-[!code-java[message handler](~/../botbuilder-samples/samples/java_springboot/44.prompt-users-for-input/src/main/java/com/microsoft/bot/sample/promptusersforinput/CustomPromptBot.java?range=45-59)]
+[!code-java[message handler](~/../botbuilder-samples/archive/samples/java_springboot/44.prompt-users-for-input/src/main/java/com/microsoft/bot/sample/promptusersforinput/CustomPromptBot.java?range=45-59)]
 
 ## [Python](#tab/python)
 
@@ -219,7 +219,7 @@ The validation methods are described in the following section.
 ## [Java](#tab/java)
 
 **CustomPromptBot.java**
-[!code-java[FillOutUserProfileAsync](~/../botbuilder-samples/samples/java_springboot/44.prompt-users-for-input/src/main/java/com/microsoft/bot/sample/promptusersforinput/CustomPromptBot.java?range=61-132)]
+[!code-java[FillOutUserProfileAsync](~/../botbuilder-samples/archive/samples/java_springboot/44.prompt-users-for-input/src/main/java/com/microsoft/bot/sample/promptusersforinput/CustomPromptBot.java?range=61-132)]
 
 ## [Python](#tab/python)
 
@@ -254,7 +254,7 @@ The bot uses the following criteria to validate input.
 ## [Java](#tab/java)
 
 **CustomPromptBot.java**
-[!code-csharp[validation methods](~/../botbuilder-samples/samples/java_springboot/44.prompt-users-for-input/src/main/java/com/microsoft/bot/sample/promptusersforinput/CustomPromptBot.java?range=134-221)]
+[!code-csharp[validation methods](~/../botbuilder-samples/archive/samples/java_springboot/44.prompt-users-for-input/src/main/java/com/microsoft/bot/sample/promptusersforinput/CustomPromptBot.java?range=134-221)]
 
 ## [Python](#tab/python)
 

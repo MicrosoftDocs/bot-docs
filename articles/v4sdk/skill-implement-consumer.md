@@ -38,7 +38,7 @@ For information about using a skill dialog to consume a skill, see how to [use a
 
 - Knowledge of [bot basics](bot-builder-basics.md), [how skills bots work](skills-conceptual.md), and how to [implement a skill](skill-implement-skill.md).
 - Optionally, an Azure subscription. If you don't have one, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
-- A copy of the **skills simple bot-to-bot** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/80.skills-simple-bot-to-bot), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/80.skills-simple-bot-to-bot), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/80.skills-simple-bot-to-bot).
+- A copy of the **skills simple bot-to-bot** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/80.skills-simple-bot-to-bot), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/80.skills-simple-bot-to-bot), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/80.skills-simple-bot-to-bot).
 
 > [!NOTE]
 > Starting with version 4.11, you don't need an app ID and password to test a skill consumer locally in the Bot Framework Emulator. An Azure subscription is still required to deploy your consumer to Azure or to consume a deployed skill.
@@ -115,7 +115,7 @@ Optionally, add the root bot's identity information and add the app or client ID
 
 Optionally, add the root bot's app ID and password and add the app ID for the echo skill bot to the `BotFrameworkSkills` array.
 
-[!code-ini[configuration file](~/../botbuilder-samples/samples/java_springboot/80.skills-simple-bot-to-bot/DialogRootBot/src/main/resources/application.properties)]
+[!code-ini[configuration file](~/../botbuilder-samples/archive/samples/java_springboot/80.skills-simple-bot-to-bot/DialogRootBot/src/main/resources/application.properties)]
 
 ### [Python](#tab/python)
 
@@ -147,7 +147,7 @@ This sample reads information for each skill in the configuration file into a co
 
 **DialogRootBot\SkillsConfiguration.java**
 
-[!code-java[skills configuration](~/../botbuilder-samples/samples/java_springboot/80.skills-simple-bot-to-bot/DialogRootBot/src/main/java/com/microsoft/bot/sample/simplerootbot/SkillsConfiguration.java?range=19-77)]
+[!code-java[skills configuration](~/../botbuilder-samples/archive/samples/java_springboot/80.skills-simple-bot-to-bot/DialogRootBot/src/main/java/com/microsoft/bot/sample/simplerootbot/SkillsConfiguration.java?range=19-77)]
 
 ### [Python](#tab/python)
 
@@ -217,7 +217,7 @@ The handler uses the conversation ID factory, the authentication configuration, 
 
 **DialogRootBot\application.java**
 
-[!code-java[skill client, ID factory, and handler](~/../botbuilder-samples/samples/java_springboot/80.skills-simple-bot-to-bot/DialogRootBot/src/main/java/com/microsoft/bot/sample/simplerootbot/Application.java?range=103-132)]
+[!code-java[skill client, ID factory, and handler](~/../botbuilder-samples/archive/samples/java_springboot/80.skills-simple-bot-to-bot/DialogRootBot/src/main/java/com/microsoft/bot/sample/simplerootbot/Application.java?range=103-132)]
 
 ### [Python](#tab/python)
 
@@ -288,15 +288,15 @@ Of note, the root bot includes logic for forwarding activities to the skill, sta
 The root bot has dependencies on conversation state, the skills information, the skill client, and the general configuration. ASP.NET provides these objects through dependency injection.
 The root bot also defines a conversation state property accessor to track which skill is active.
 
-[!code-java[Root bot dependencies](~/../botbuilder-samples/samples/java_springboot/80.skills-simple-bot-to-bot/DialogRootBot/src/main/java/com/microsoft/bot/sample/simplerootbot/RootBot.java?range=36-90)]
+[!code-java[Root bot dependencies](~/../botbuilder-samples/archive/samples/java_springboot/80.skills-simple-bot-to-bot/DialogRootBot/src/main/java/com/microsoft/bot/sample/simplerootbot/RootBot.java?range=36-90)]
 
 This sample has a helper method for forwarding activities to a skill. It saves conversation state before invoking the skill, and it checks whether the HTTP request was successful.
 
-[!code-java[Send to skill](~/../botbuilder-samples/samples/java_springboot/80.skills-simple-bot-to-bot/DialogRootBot/src/main/java/com/microsoft/bot/sample/simplerootbot/RootBot.java?range=165-190)]
+[!code-java[Send to skill](~/../botbuilder-samples/archive/samples/java_springboot/80.skills-simple-bot-to-bot/DialogRootBot/src/main/java/com/microsoft/bot/sample/simplerootbot/RootBot.java?range=165-190)]
 
 Of note, the root bot includes logic for forwarding activities to the skill, starting the skill at the user's request, and stopping the skill when the skill completes.
 
-[!code-java[OnMessageActivityAsync, OnEndOfConversationActivityAsync](~/../botbuilder-samples/samples/java_springboot/80.skills-simple-bot-to-bot/DialogRootBot/src/main/java/com/microsoft/bot/sample/simplerootbot/RootBot.java?range=111-152)]
+[!code-java[OnMessageActivityAsync, OnEndOfConversationActivityAsync](~/../botbuilder-samples/archive/samples/java_springboot/80.skills-simple-bot-to-bot/DialogRootBot/src/main/java/com/microsoft/bot/sample/simplerootbot/RootBot.java?range=111-152)]
 
 ### [Python](#tab/python)
 
@@ -343,7 +343,7 @@ In this sample, the turn error logic is split up among a few helper methods.
 
 In this sample the turn error logic is split up among a few helper methods.
 
-[!code-java[On turn error](~/../botbuilder-samples/samples/java_springboot/80.skills-simple-bot-to-bot/DialogRootBot/src/main/java/com/microsoft/bot/sample/simplerootbot/SkillAdapterWithErrorHandler.java?range=43-128)]
+[!code-java[On turn error](~/../botbuilder-samples/archive/samples/java_springboot/80.skills-simple-bot-to-bot/DialogRootBot/src/main/java/com/microsoft/bot/sample/simplerootbot/SkillAdapterWithErrorHandler.java?range=43-128)]
 
 ### [Python](#tab/python)
 
@@ -373,7 +373,7 @@ The bot defines an endpoint that forwards incoming skill activities to the root 
 
 **DialogRootBot\Controllers\SkillController.java**
 
-[!code-java[skill endpoint](~/../botbuilder-samples/samples/java_springboot/80.skills-simple-bot-to-bot/DialogRootBot/src/main/java/com/microsoft/bot/sample/simplerootbot/controller/SkillController.java?range=9-16)]
+[!code-java[skill endpoint](~/../botbuilder-samples/archive/samples/java_springboot/80.skills-simple-bot-to-bot/DialogRootBot/src/main/java/com/microsoft/bot/sample/simplerootbot/controller/SkillController.java?range=9-16)]
 
 ### [Python](#tab/python)
 
@@ -404,7 +404,7 @@ This sample uses the same authentication configuration logic for validating acti
 
 **DialogRootBot\Application.java**
 
-[!code-java[services](~/../botbuilder-samples/samples/java_springboot/80.skills-simple-bot-to-bot/DialogRootBot/src/main/java/com/microsoft/bot/sample/simplerootbot/Application.java?range=41-133)]
+[!code-java[services](~/../botbuilder-samples/archive/samples/java_springboot/80.skills-simple-bot-to-bot/DialogRootBot/src/main/java/com/microsoft/bot/sample/simplerootbot/Application.java?range=41-133)]
 
 ### [Python](#tab/python)
 
@@ -421,7 +421,7 @@ See how to [implement a skill](skill-implement-skill.md) for information on how 
 
 Download and install the latest [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md)
 
-1. Run the echo skill bot and simple root bot locally on your machine. If you need instructions, refer to the `README` file for the [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/80.skills-simple-bot-to-bot), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/80.skills-simple-bot-to-bot), or [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/80.skills-simple-bot-to-bot) sample.
+1. Run the echo skill bot and simple root bot locally on your machine. If you need instructions, refer to the `README` file for the [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/80.skills-simple-bot-to-bot), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/80.skills-simple-bot-to-bot), or [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/80.skills-simple-bot-to-bot) sample.
 1. Use the Emulator to test the bot as shown below. When you send an `end` or `stop` message to the skill, the skill sends to the root bot an `endOfConversation` activity, in addition to the reply message. The `endOfConversation` activity's _code_ property indicates that the skill completed successfully.
 
 :::image type="content" source="media/skills-simple-consumer-test.png" alt-text="Example transcript of an interaction with the skill consumer.":::

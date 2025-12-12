@@ -748,7 +748,7 @@ For more information, see [Configure time to live in Azure Cosmos DB][cosmos-ttl
 
 [cs-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/05.multi-turn-prompt
 [js-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/05.multi-turn-prompt
-[java-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/05.multi-turn-prompt
+[java-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/05.multi-turn-prompt
 [python-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/05.multi-turn-prompt
 
 [cosmos-ttl]: /azure/cosmos-db/how-to-time-to-live

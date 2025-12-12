@@ -31,7 +31,7 @@ For information about using a skill bot outside of dialogs, see how to [implemen
 
 - Knowledge of [bot basics](bot-builder-basics.md), [how skills bots work](skills-conceptual.md), and how to [implement a skill consumer](skill-implement-consumer.md).
 - Optionally, an Azure subscription. If you don't have one, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
-- A copy of the **skills skillDialog** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/81.skills-skilldialog#readme), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/81.skills-skilldialog#readme), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/81.skills-skilldialog#readme) or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/81.skills-skilldialog#readme).
+- A copy of the **skills skillDialog** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/81.skills-skilldialog#readme), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/81.skills-skilldialog#readme), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/81.skills-skilldialog#readme) or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/81.skills-skilldialog#readme).
 
 ## About this sample
 
@@ -103,7 +103,7 @@ Optionally, add the root bot's identity information and add the app or client ID
 
 Optionally, add the root bot's app ID and password and add the app ID for the echo skill bot to the `BotFrameworkSkills` array.
 
-[!code-ini[configuration file](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/resources/application.properties?highlight=1-2,7)]
+[!code-ini[configuration file](~/../botbuilder-samples/archive/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/resources/application.properties?highlight=1-2,7)]
 
 ### [Python](#tab/python)
 
@@ -124,7 +124,7 @@ The skill this bot uses supports a couple different features. It can book a flig
 
 [!INCLUDE [luis-sunset-alert](../includes/luis-sunset-alert.md)]
 
-The skill manifest ([**C#**](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/csharp_dotnetcore/81.skills-skilldialog/DialogSkillBot/wwwroot/manifest/dialogchildbot-manifest-1.0.json), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/javascript_nodejs/81.skills-skilldialog/dialogSkillBot/manifest/dialogchildbot-manifest-1.0.json), [**Java**](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/java_springboot/81.skills-skilldialog/dialog-skill-bot/src/main/webapp/manifest/echoskillbot-manifest-1.0.json), [**Python**](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/python/81.skills-skilldialog/dialog-skill-bot/wwwroot/manifest/dialogchildbot-manifest-1.0.json)) describes the actions the skill can perform, its input and output parameters, and the skill's endpoints.
+The skill manifest ([**C#**](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/csharp_dotnetcore/81.skills-skilldialog/DialogSkillBot/wwwroot/manifest/dialogchildbot-manifest-1.0.json), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/javascript_nodejs/81.skills-skilldialog/dialogSkillBot/manifest/dialogchildbot-manifest-1.0.json), [**Java**](https://github.com/microsoft/BotBuilder-Samples/blob/main/archive/samples/java_springboot/81.skills-skilldialog/dialog-skill-bot/src/main/webapp/manifest/echoskillbot-manifest-1.0.json), [**Python**](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/python/81.skills-skilldialog/dialog-skill-bot/wwwroot/manifest/dialogchildbot-manifest-1.0.json)) describes the actions the skill can perform, its input and output parameters, and the skill's endpoints.
 Of note, the skill can handle a "BookFlight" or "GetWeather" event. It can also handle messages.
 
 The main dialog includes code to:
@@ -185,7 +185,7 @@ The dialog constructor checks its input parameters, adds skills dialogs, adds pr
 
 The constructor calls `addSkillDialogs`, a helper method, to create a `SkillDialog` for each skill that is included in the configuration file, as read from the configuration file into a `SkillsConfiguration` object.
 
-[!code-java[addSkillDialogs](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/java/com/microsoft/bot/sample/dialogrootbot/dialogs/MainDialog.java?range=260-279&highlight=18)]
+[!code-java[addSkillDialogs](~/../botbuilder-samples/archive/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/java/com/microsoft/bot/sample/dialogrootbot/dialogs/MainDialog.java?range=260-279&highlight=18)]
 
 ### [Python](#tab/python)
 
@@ -222,7 +222,7 @@ In its first step, the main dialog prompts the user for which skill they'd like 
 
 **DialogRootBot\Dialogs\MainDialog.java**
 
-[!code-java[selectSkillStepAsync](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/java/com/microsoft/bot/sample/dialogrootbot/dialogs/MainDialog.java?range=147-168&highlight=21)]
+[!code-java[selectSkillStepAsync](~/../botbuilder-samples/archive/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/java/com/microsoft/bot/sample/dialogrootbot/dialogs/MainDialog.java?range=147-168&highlight=21)]
 
 #### [Python](#tab/python)
 
@@ -259,11 +259,11 @@ The choices included in this bot help test the actions defined for this skill. M
 
 **DialogRootBot\Dialogs\MainDialog.java**
 
-[!code-java[selectSkillActionStep](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/java/com/microsoft/bot/sample/dialogrootbot/dialogs/MainDialog.java?range=171-195)]
+[!code-java[selectSkillActionStep](~/../botbuilder-samples/archive/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/java/com/microsoft/bot/sample/dialogrootbot/dialogs/MainDialog.java?range=171-195)]
 
-[!code-java[getSkillActions](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/java/com/microsoft/bot/sample/dialogrootbot/dialogs/MainDialog.java?range=283-297)]
+[!code-java[getSkillActions](~/../botbuilder-samples/archive/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/java/com/microsoft/bot/sample/dialogrootbot/dialogs/MainDialog.java?range=283-297)]
 
-[!code-java[skillActionPromptValidator](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/java/com/microsoft/bot/sample/dialogrootbot/dialogs/MainDialog.java?range=97-106)]
+[!code-java[skillActionPromptValidator](~/../botbuilder-samples/archive/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/java/com/microsoft/bot/sample/dialogrootbot/dialogs/MainDialog.java?range=97-106)]
 
 #### [Python](#tab/python)
 
@@ -299,7 +299,7 @@ In the next step, the main dialog:
 
 **DialogRootBot\Dialogs\MainDialog.java**
 
-[!code-java[callSkillActionStep](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/java/com/microsoft/bot/sample/dialogrootbot/dialogs/MainDialog.java?range=198-224)]
+[!code-java[callSkillActionStep](~/../botbuilder-samples/archive/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/java/com/microsoft/bot/sample/dialogrootbot/dialogs/MainDialog.java?range=198-224)]
 
 #### [Python](#tab/python)
 
@@ -334,7 +334,7 @@ In the last step, the main dialog:
 
 **DialogRootBot\Dialogs\MainDialog.java**
 
-[!code-java[FinalStepAsync](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/java/com/microsoft/bot/sample/dialogrootbot/dialogs/MainDialog.java?range=228-256)]
+[!code-java[FinalStepAsync](~/../botbuilder-samples/archive/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/java/com/microsoft/bot/sample/dialogrootbot/dialogs/MainDialog.java?range=228-256)]
 
 #### [Python](#tab/python)
 
@@ -367,7 +367,7 @@ The main dialog overrides the default behavior of the _on continue dialog_ metho
 
 **DialogRootBot\Dialogs\MainDialog.java**
 
-[!code-java[onContinueDialog](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/java/com/microsoft/bot/sample/dialogrootbot/dialogs/MainDialog.java?range=131-139)]
+[!code-java[onContinueDialog](~/../botbuilder-samples/archive/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/java/com/microsoft/bot/sample/dialogrootbot/dialogs/MainDialog.java?range=131-139)]
 
 #### [Python](#tab/python)
 
@@ -405,11 +405,11 @@ Since skill logic for each turn is handled by a main dialog, the activity handle
 
 **DialogRootBot\Bots\RootBot.java**
 
-[!code-java[class definition](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/java/com/microsoft/bot/sample/dialogrootbot/Bots/RootBot.java?range=31)]
+[!code-java[class definition](~/../botbuilder-samples/archive/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/java/com/microsoft/bot/sample/dialogrootbot/Bots/RootBot.java?range=31)]
 
-[!code-java[constructor](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/java/com/microsoft/bot/sample/dialogrootbot/Bots/RootBot.java?range=35-38)]
+[!code-java[constructor](~/../botbuilder-samples/archive/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/java/com/microsoft/bot/sample/dialogrootbot/Bots/RootBot.java?range=35-38)]
 
-[!code-java[onTurn](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/java/com/microsoft/bot/sample/dialogrootbot/Bots/RootBot.java?range=40-53)]
+[!code-java[onTurn](~/../botbuilder-samples/archive/samples/java_springboot/81.skills-skilldialog/dialog-root-bot/src/main/java/com/microsoft/bot/sample/dialogrootbot/Bots/RootBot.java?range=40-53)]
 
 ### [Python](#tab/python)
 
@@ -430,7 +430,7 @@ You can test the skill consumer in the Emulator as if it were a normal bot; howe
 
 Download and install the latest [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md).
 
-1. Run the dialog skill bot and dialog root bot locally on your machine. If you need instructions, refer to the sample's `README` for [**C#**](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/csharp_dotnetcore/81.skills-skilldialog/DialogSkillBot/wwwroot/manifest/dialogchildbot-manifest-1.0.json), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/javascript_nodejs/81.skills-skilldialog/dialogSkillBot/manifest/dialogchildbot-manifest-1.0.json), [**Java**](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/java_springboot/81.skills-skilldialog/dialog-skill-bot/src/main/webapp/manifest/echoskillbot-manifest-1.0.json), [**Python**](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/python/81.skills-skilldialog/dialog-skill-bot/wwwroot/manifest/dialogchildbot-manifest-1.0.json).
+1. Run the dialog skill bot and dialog root bot locally on your machine. If you need instructions, refer to the sample's `README` for [**C#**](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/csharp_dotnetcore/81.skills-skilldialog/DialogSkillBot/wwwroot/manifest/dialogchildbot-manifest-1.0.json), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/javascript_nodejs/81.skills-skilldialog/dialogSkillBot/manifest/dialogchildbot-manifest-1.0.json), [**Java**](https://github.com/microsoft/BotBuilder-Samples/blob/main/archive/samples/java_springboot/81.skills-skilldialog/dialog-skill-bot/src/main/webapp/manifest/echoskillbot-manifest-1.0.json), [**Python**](https://github.com/microsoft/BotBuilder-Samples/blob/main/samples/python/81.skills-skilldialog/dialog-skill-bot/wwwroot/manifest/dialogchildbot-manifest-1.0.json).
 1. Use the Emulator to test the bot.
    - When you first join the conversation, the bot displays a welcome message and asks you what skill you would like to call. The skill bot for this sample has just one skill.
    - Select **DialogSkillBot**.

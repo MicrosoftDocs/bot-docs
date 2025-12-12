@@ -28,7 +28,7 @@ A bot is inherently stateless. Once your bot is deployed, it may not run in the 
 
 [cs-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/45.state-management
 [js-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/45.state-management
-[java-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/45.state-management
+[java-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/45.state-management
 [py-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/45.state-management
 
 ## About this sample
@@ -87,11 +87,11 @@ The following code examples show the definitions for the `UserProfile` and `Conv
 
 **UserProfile.java**
 
-[!code-java[UserProfile class](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/UserProfile.java?range=18-28)]
+[!code-java[UserProfile class](~/../BotBuilder-Samples/archive/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/UserProfile.java?range=18-28)]
 
 **ConversationData.java**
 
-[!code-java[ConversationData class](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/ConversationData.java?range=18-46)]
+[!code-java[ConversationData class](~/../BotBuilder-Samples/archive/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/ConversationData.java?range=18-46)]
 
 ## [Python](#tab/python)
 
@@ -144,7 +144,7 @@ Next, you register the `StateManagementBot` in Application.java. Both Conversati
 
 **Application.java**
 
-[!code-java[getBot method](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/Application.java?range=54-60)]
+[!code-java[getBot method](~/../BotBuilder-Samples/archive/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/Application.java?range=54-60)]
 
 ## [Python](#tab/python)
 
@@ -184,7 +184,7 @@ Now you create property accessors using the `createProperty` method. Each state 
 
 **StateManagementBot.java**
 
-[!code-java[Create property accessors](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/StateManagementBot.java?range=105-108)]
+[!code-java[Create property accessors](~/../BotBuilder-Samples/archive/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/StateManagementBot.java?range=105-108)]
 
 ## [Python](#tab/python)
 
@@ -240,13 +240,13 @@ Before you exit each dialog turn, you use the state management objects' _saveCha
 
 **StateManagementBot.java**
 
-[!code-java[onMessageActivity method](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/StateManagementBot.java?range=102-168)]
+[!code-java[onMessageActivity method](~/../BotBuilder-Samples/archive/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/StateManagementBot.java?range=102-168)]
 
 Before you exit the turn handler, you use the state management objects' _saveChanges()_ method to write all state changes back to storage.
 
 **StateManagementBot.java**
 
-[!code-java[onTurn method](~/../BotBuilder-Samples/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/StateManagementBot.java?range=58-64)]
+[!code-java[onTurn method](~/../BotBuilder-Samples/archive/samples/java_springboot/45.state-management/src/main/java/com/microsoft/bot/sample/statemanagement/StateManagementBot.java?range=58-64)]
 
 ## [Python](#tab/python)
 

@@ -89,17 +89,17 @@ If the user types "cancel", it calls `cancelAllDialogs` on its inner dialog cont
 
 Implement the `CancelAndHelpDialog` class to handle user interruptions. The cancelable dialogs, `BookingDialog` and `DateResolverDialog` derive from this class.
 
-[!code-java[Class signature](~/../botbuilder-samples/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/CancelAndHelpDialog.java?range=20)]
+[!code-java[Class signature](~/../botbuilder-samples/archive/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/CancelAndHelpDialog.java?range=20)]
 
 In the `CancelAndHelpDialog` class, the `onContinueDialog` method calls the `interrupt` method to check if the user has interrupted the normal flow. If the flow is interrupted, base class methods are called; otherwise, the return value from the `interrupt` is returned.
 
-[!code-java[Overrides](~/../botbuilder-samples/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/CancelAndHelpDialog.java?range=43-51)]
+[!code-java[Overrides](~/../botbuilder-samples/archive/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/CancelAndHelpDialog.java?range=43-51)]
 
 If the user types "help", the `interrupt` method sends a message and then calls `DialogTurnResult(DialogTurnStatus.WAITING)` to indicate that the dialog on top is waiting for a response from the user. In this way, the conversation flow is interrupted for a turn only, and the next turn continues from where the conversation left off.
 
 If the user types "cancel", it calls `cancelAllDialogs` on its inner dialog context, which clears its dialog stack and causes it to exit with a canceled status and no result value. To the `MainDialog` (shown later on), it will appear that the booking dialog ended and returned null, similar to when the user chooses not to confirm their booking.
 
-[!code-java[Interrupt](~/../botbuilder-samples/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/CancelAndHelpDialog.java?range=53-79)]
+[!code-java[Interrupt](~/../botbuilder-samples/archive/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/CancelAndHelpDialog.java?range=53-79)]
 
 ## [Python](#tab/python)
 
@@ -165,11 +165,11 @@ The code in `BookingDialog` isn't shown here as it's not directly related to int
 
 As the new message activity arrives, the bot runs the `MainDialog`. The `MainDialog` prompts the user for what it can help with. And then, it starts the `BookingDialog` in the `MainDialog.actStep` method, with a call to `beginDialog` as shown below.
 
-[!code-java[ActStep](~/../botbuilder-samples/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/MainDialog.java?range=100-156&highlight=4,27)]
+[!code-java[ActStep](~/../botbuilder-samples/archive/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/MainDialog.java?range=100-156&highlight=4,27)]
 
 Next, in the `finalStep` method of the `MainDialog` class, the booking dialog ended and the booking is considered to be complete or canceled.
 
-[!code-java[FinalStep](~/../botbuilder-samples/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/MainDialog.java?range=207-231)]
+[!code-java[FinalStep](~/../botbuilder-samples/archive/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/MainDialog.java?range=207-231)]
 
 The code in `BookingDialog` isn't shown here as it's not directly related to interruption handling. It's used to prompt users for booking details. You can find that code in **BookingDialogs.java**.
 
@@ -259,13 +259,13 @@ For reference, here are the class definitions that are used in the call to creat
 
 Finally, in `Application.java`, the bot is created.
 
-[!code-java[Add transient bot](~/../botbuilder-samples/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/Application.java?range=57-66)]
+[!code-java[Add transient bot](~/../botbuilder-samples/archive/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/Application.java?range=57-66)]
 
 For reference, here are the class definitions that are used in the call to create the bot above.
 
-[!code-java[DialogAndWelcomeBot signature](~/../botbuilder-samples/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/DialogAndWelcomeBot.java?range=31)]
-[!code-java[DialogBot signature](~/../botbuilder-samples/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/DialogBot.java?range=26)]
-[!code-java[MainDialog signature](~/../botbuilder-samples/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/MainDialog.java?range=32)]
+[!code-java[DialogAndWelcomeBot signature](~/../botbuilder-samples/archive/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/DialogAndWelcomeBot.java?range=31)]
+[!code-java[DialogBot signature](~/../botbuilder-samples/archive/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/DialogBot.java?range=26)]
+[!code-java[MainDialog signature](~/../botbuilder-samples/archive/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/MainDialog.java?range=32)]
 
 ## [Python](#tab/python)
 
@@ -292,7 +292,7 @@ For reference, here are the class definitions that are used in the call to creat
 
 ## Additional information
 
-- The **24.bot-authentication-msgraph** sample in [C#](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/24.bot-authentication-msgraph#readme), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/24.bot-authentication-msgraph#readme), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/24.bot-authentication-msgraph#readme), or [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/24.bot-authentication-msgraph#readme) shows how to handle a logout request. It uses a pattern similar to the one shown here for handling interruptions.
+- The **24.bot-authentication-msgraph** sample in [C#](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/24.bot-authentication-msgraph#readme), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/24.bot-authentication-msgraph#readme), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/24.bot-authentication-msgraph#readme), or [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/24.bot-authentication-msgraph#readme) shows how to handle a logout request. It uses a pattern similar to the one shown here for handling interruptions.
 
 - You should send a default response instead of doing nothing and leaving the user wondering what is going on. The default response should tell the user what commands the bot understands so the user can get back on track.
 
@@ -305,5 +305,5 @@ For reference, here are the class definitions that are used in the call to creat
 
 [cs-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot#readme
 [js-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot#readme
-[java-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/13.core-bot#readme
+[java-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/13.core-bot#readme
 [python-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/13.core-bot#readme
