@@ -30,7 +30,7 @@ For how to create a skill bot in general, see how to [implement a skill](skill-i
 - Knowledge of [bot basics](bot-builder-basics.md), [how skills bots work](skills-conceptual.md), and how to [implement a skill](skill-implement-skill.md).
 - An Azure subscription (to deploy your skill). If you don't have one, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 - Optionally, a [LUIS](https://www.luis.ai/) account. (For more information, see how to [add natural language understanding to your bot](bot-builder-howto-v4-luis.md).)
-- A copy of the **skills skillDialog** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/81.skills-skilldialog#readme), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/81.skills-skilldialog#readme), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/81.skills-skilldialog#readme).
+- A copy of the **skills skillDialog** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/81.skills-skilldialog#readme), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/81.skills-skilldialog#readme), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/81.skills-skilldialog#readme), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/81.skills-skilldialog#readme).
 
 [!INCLUDE [luis-sunset-alert](../includes/luis-sunset-alert.md)]
 
@@ -91,6 +91,12 @@ Optionally, the skill bot can use a flight-booking LUIS model. To use this model
 
 [!code-ini[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogSkillBot/.env)]
 
+### [Java](#tab/java)
+
+**application.properties**
+
+[!code-ini[configuration file](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-skill-bot/src/main/resources/application.properties?highlight=1-2)]
+
 ### [Python](#tab/python)
 
 **dialog-skill-bot/config.py**
@@ -138,6 +144,12 @@ It also accepts a LUIS recognizer. If this recognizer is initialized, the dialog
 
 [!code-javascript[constructor](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogSkillBot/dialogs/activityRouterDialog.js?range=17-32)]
 
+#### [Java](#tab/java)
+
+**DialogSkillBot\Dialogs\ActivityRouterDialog.java**
+
+[!code-java[constructor](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-skill-bot/src/main/java/com/microsoft/bot/sample/dialogskillbot/dialogs/ActivityRouterDialog.java?range=34-47)]
+
 #### [Python](#tab/python)
 
 **dialog-skill-bot/dialogs/activity_router_dialog.py**
@@ -171,6 +183,14 @@ If the skill doesn't recognize the type of the incoming activity or the name of 
 
 [!code-javascript[onEventActivity](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogSkillBot/dialogs/activityRouterDialog.js?range=60-88)]
 
+#### [Java](#tab/java)
+
+**DialogSkillBot\Dialogs\ActivityRouterDialog.java**
+
+[!code-java[ProcessActivityAsync](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-skill-bot/src/main/java/com/microsoft/bot/sample/dialogskillbot/dialogs/ActivityRouterDialog.java?range=49-78)]
+
+[!code-java[OnEventActivityAsync](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-skill-bot/src/main/java/com/microsoft/bot/sample/dialogskillbot/dialogs/ActivityRouterDialog.java?range=80-107)]
+
 #### [Python](#tab/python)
 
 **dialog-skill-bot/dialogs/activity_router_dialog.py**
@@ -197,6 +217,12 @@ If the LUIS recognizer isn't configured or the intent isn't supported, the skill
 **dialogSkillBot/dialogs/activityRouterDialog.js**
 
 [!code-javascript[onMessageActivity](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogSkillBot/dialogs/activityRouterDialog.js?range=90-136&highlight=22-23,33-36)]
+
+#### [Java](#tab/java)
+
+**DialogSkillBot\Dialogs\ActivityRouterDialog.java**
+
+[!code-java[onMessageActivity](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-skill-bot/src/main/java/com/microsoft/bot/sample/dialogskillbot/dialogs/ActivityRouterDialog.java?range=109-180&highlight=24,42-46)]
 
 #### [Python](#tab/python)
 
@@ -227,6 +253,14 @@ The get-weather action isn't implemented. Currently, it sends a placeholder mess
 [!code-javascript[beginBookFlight](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogSkillBot/dialogs/activityRouterDialog.js?range=148-155)]
 
 [!code-javascript[beginGetWeather](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogSkillBot/dialogs/activityRouterDialog.js?range=138-146)]
+
+#### [Java](#tab/java)
+
+**DialogSkillBot\Dialogs\ActivityRouterDialog.java**
+
+[!code-java[BeginBookFlight](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-skill-bot/src/main/java/com/microsoft/bot/sample/dialogskillbot/dialogs/ActivityRouterDialog.java?range=208-223)]
+
+[!code-java[BeginGetWeather](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-skill-bot/src/main/java/com/microsoft/bot/sample/dialogskillbot/dialogs/ActivityRouterDialog.java?range=182-207)]
 
 #### [Python](#tab/python)
 
@@ -275,6 +309,12 @@ The manifest contains the information you need to access the skill from another 
 
 [!code-json[Manifest](~/../botbuilder-samples/samples/javascript_nodejs/81.skills-skilldialog/dialogSkillBot/manifest/dialogchildbot-manifest-1.0.json)]
 
+### [Java](#tab/java)
+
+**dialog-skill-bot\webapp\manifest\dialogchildbot-manifest-1.0.json**
+
+[!code-json[Manifest](~/../botbuilder-samples/samples/java_springboot/81.skills-skilldialog/dialog-skill-bot/src/main/webapp/manifest/echoskillbot-manifest-1.0.json)]
+
 ### [Python](#tab/python)
 
 **dialog-skill-bot/wwwroot/manifest/dialogchildbot-manifest-1.0.json**
@@ -292,7 +332,7 @@ You can test the skill in the Emulator with the skill consumer. To do so, you ne
 
 Download and install the latest [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md).
 
-1. Run the dialog skill bot and dialog root bot locally on your machine. If you need instructions, refer to the sample's `README` file for [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/81.skills-skilldialog#readme), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/81.skills-skilldialog#readme), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/81.skills-skilldialog#readme).
+1. Run the dialog skill bot and dialog root bot locally on your machine. If you need instructions, refer to the sample's `README` file for [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/81.skills-skilldialog#readme), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/81.skills-skilldialog#readme), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/81.skills-skilldialog#readme), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/81.skills-skilldialog#readme).
 1. Use the Emulator to test the bot.
    - When you first join the conversation, the bot displays a welcome message and asks you what skill you would like to call. The skill bot for this sample has just one skill.
    - Select **DialogSkillBot**.
