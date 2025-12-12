@@ -78,6 +78,12 @@ The user profile will contain information gathered by the dialogs, the user's na
 
 [!code-javascript[UserProfile class](~/../botbuilder-samples/samples/javascript_nodejs/43.complex-dialog/userProfile.js?range=4-12)]
 
+### [Java](#tab/java)
+
+**UserProfile.java**
+
+[!code-java[UserProfile class](~/../botbuilder-samples/samples/java_springboot/43.complex-dialog/src/main/java/com/microsoft/bot/sample/complexdialog/UserProfile.java?range=9-66)]
+
 ### [Python](#tab/python)
 
 **data_models/user_profile.py**
@@ -113,6 +119,12 @@ The main dialog has two steps:
 
 [!code-javascript[step implementations](~/../botbuilder-samples/samples/javascript_nodejs/43.complex-dialog/dialogs/mainDialog.js?range=43-55)]
 
+#### [Java](#tab/java)
+
+**MainDialog.java**
+
+[!code-java[step implementations](~/../botbuilder-samples/samples/java_springboot/43.complex-dialog/src/main/java/com/microsoft/bot/sample/complexdialog/MainDialog.java?range=36-54)]
+
 #### [Python](#tab/python)
 
 **dialogs\main_dialog.py**
@@ -146,6 +158,12 @@ In the third (start selection) step, the conversation flow branches, based on th
 
 [!code-javascript[step implementations](~/../botbuilder-samples/samples/javascript_nodejs/43.complex-dialog/dialogs/topLevelDialog.js?range=32-76&highlight=25-33)]
 
+#### [Java](#tab/java)
+
+**TopLevelDialog.java**
+
+[!code-java[step implementations](~/../botbuilder-samples/samples/java_springboot/43.complex-dialog/src/main/java/com/microsoft/bot/sample/complexdialog/TopLevelDialog.java?range=47-94&highlight=28-34)]
+
 #### [Python](#tab/python)
 
 **dialogs\top_level_dialog.py**
@@ -178,6 +196,12 @@ The review-selection dialog has two steps:
 **dialogs/reviewSelectionDialog.js**
 
 [!code-javascript[step implementations](~/../botbuilder-samples/samples/javascript_nodejs/43.complex-dialog/dialogs/reviewSelectionDialog.js?range=33-78&highlight=39-45)]
+
+#### [Java](#tab/java)
+
+**ReviewSelectionDialog.java**
+
+[!code-java[step implementations](~/../botbuilder-samples/samples/java_springboot/43.complex-dialog/src/main/java/com/microsoft/bot/sample/complexdialog/ReviewSelectionDialog.java?range=48-99&highlight=46-51)]
 
 #### [Python](#tab/python)
 
@@ -213,6 +237,12 @@ When it receives a message from the user:
 [!code-javascript[onMessage](~/../botbuilder-samples/samples/javascript_nodejs/43.complex-dialog/bots/dialogBot.js?range=24-32&highlight=4-5)]
 [!code-javascript[run](~/../botbuilder-samples/samples/javascript_nodejs/43.complex-dialog/bots/dialogBot.js?range=35-44&highlight=7-9)]
 
+### [Java](#tab/java)
+
+**DialogBot.java**
+
+[!code-java[Overrides](~/../botbuilder-samples/samples/java_springboot/43.complex-dialog/src/main/java/com/microsoft/bot/sample/complexdialog/DialogBot.java?range=40-58&highlight=7-8,18)]
+
 ### [Python](#tab/python)
 
 **bots/dialog_bot.py**
@@ -240,6 +270,12 @@ Create and register services as needed:
 **index.js**
 
 [!code-javascript[Create adapter, memory, state, dialog, and bot](~/../botbuilder-samples/samples/javascript_nodejs/43.complex-dialog/index.js?range=45-59)]
+
+### [Java](#tab/java)
+
+**Application.java**
+
+[!code-java[ConfigureServices](~/../botbuilder-samples/samples/java_springboot/43.complex-dialog/src/main/java/com/microsoft/bot/sample/complexdialog/Application.java?range=52-59)]
 
 ### [Python](#tab/python)
 
@@ -287,4 +323,5 @@ For more information, see [reuse dialogs][component-dialogs].
 
 [cs-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/43.complex-dialog
 [js-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/43.complex-dialog
+[java-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/43.complex-dialog
 [python-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/43.complex-dialog

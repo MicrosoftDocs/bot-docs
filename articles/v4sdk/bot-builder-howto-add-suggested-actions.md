@@ -38,6 +38,12 @@ Here's an example from the [Suggested actions](https://github.com/Microsoft/BotB
 
 [!code-javascript[suggested actions](~/../botbuilder-samples/samples/javascript_nodejs/08.suggested-actions/bots/suggestedActionsBot.js?range=58-89)]
 
+# [Java](#tab/java)
+
+Here's an example from the [Suggested actions](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/08.suggested-actions) sample.
+
+[!code-java[suggested actions](~/../botbuilder-samples/samples/java_springboot/08.suggested-actions/src/main/java/com/microsoft/bot/sample/suggestedactions/SuggestedActionsBot.java?range=102-136)]
+
 # [Python](#tab/python)
 
 Here's an example from the [Suggested actions](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/08.suggested-actions) sample.
@@ -48,7 +54,7 @@ Here's an example from the [Suggested actions](https://github.com/microsoft/BotB
 
 ## Additional resources
 
-You can access the complete source code for the **Suggested actions** sample in [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/08.suggested-actions), [JavaScript](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/08.suggested-actions), and [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/08.suggested-actions).
+You can access the complete source code for the **Suggested actions** sample in [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/08.suggested-actions), [JavaScript](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/08.suggested-actions), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/08.suggested-actions) and [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/08.suggested-actions).
 
 ## Next steps
 

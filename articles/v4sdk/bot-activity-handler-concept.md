@@ -201,6 +201,10 @@ For example, you can handle _on members added_ to welcome users to a conversatio
 
 [!code-javascript[JavaScript activity handler](~/../botbuilder-samples/samples/javascript_nodejs/02.echo-bot/bot.js?range=6-29)]
 
+### [Java](#tab/java)
+
+[!code-java[Java activity handler](~/../botbuilder-samples/samples/java_springboot/02.echo-bot/src/main/java/com/microsoft/bot/sample/echo/EchoBot.java?range=25-47)]
+
 ### [Python](#tab/python)
 
 [!code-python[Python activity handler](~/../botbuilder-samples/samples/python/02.echo-bot/bots/echo_bot.py?range=8-19)]
