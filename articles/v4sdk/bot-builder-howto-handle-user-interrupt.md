@@ -175,6 +175,10 @@ In the sample, the adapter's `onTurnError` handler receives any exceptions throw
 
 [!code-javascript[AdapterWithErrorHandler](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/index.js?range=50-73)]
 
+# [Java](#tab/java)
+
+By registering an `AdapterWithErrorHandler` with the Spring framework in **Application.java** for the `BotFrameworkHttpAdapter` in this sample, the adapter's `onTurnError` handler receives any exceptions thrown by your bot's turn logic. If there's an exception thrown, the handler deletes the conversation state for the current conversation to prevent the bot from getting stuck in an error loop caused by being in a bad state. In the Java SDK, the `AdapterWithErrorHandler` is implemented as part of the SDK and is included in the **com.microsoft.bot.integration** package. See the Java SDK source code for details on the implementation of this adapter.
+
 ## [Python](#tab/python)
 
 **adapter_with_error_handler.py**

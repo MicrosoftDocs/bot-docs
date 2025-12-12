@@ -173,6 +173,73 @@ Lastly, update `index.js` to send the `ExpireAfterSeconds` parameter to `DialogB
 const bot = new DialogBot(process.env.ExpireAfterSeconds, conversationState, userState, dialog);
 ```
 
+# [Java](#tab/java)
+
+**application.properties**
+
+First, add an `ExpireAfterSeconds` setting to application.properties:
+
+```ini
+MicrosoftAppId=
+MicrosoftAppPassword=
+server.port=3978
+ExpireAfterSeconds=30
+```
+
+**DialogBot.java**
+
+Next, add `expireAfterSeconds`, `lastAccessedTimeProperty`, and `dialogStateProperty` fields to the bot class and initialize them in the bot's constructor. Also add a `Configuration` parameter to the constructor to retrieve the `ExpireAfterSeconds` value.
+
+Instead of creating the dialog state property accessor inline in the `onMessageActivity` method, you create and record it at initialization time. The bot will need the state property accessor not only to run the dialog, but also to clear the dialog state.
+
+```java
+    protected final int expireAfterSeconds;
+    protected final StatePropertyAccessor<LocalTime> lastAccessedTimeProperty;
+    protected final StatePropertyAccessor<DialogState> dialogStateProperty;
+
+// Existing fields omitted...
+
+    public DialogBot(
+        Configuration configuration,
+        ConversationState withConversationState,
+        UserState withUserState,
+        Dialog withDialog
+    ) {
+        dialog = withDialog;
+        conversationState = withConversationState;
+        userState = withUserState;
+
+        expireAfterSeconds = configuration.getProperty("ExpireAfterSeconds") != null ?
+                             Integer.parseInt(configuration.getProperty("ExpireAfterSeconds")) :
+                             30;
+        lastAccessedTimeProperty = conversationState.createProperty("LastAccessedTimeProperty");
+        dialogStateProperty = conversationState.createProperty("DialogStateProperty");
+
+    }
+```
+
+Finally, add code to the bot's `onTurn` method to clear the dialog state if the conversation is too old.
+
+```java
+    @Override
+    public CompletableFuture<Void> onTurn(
+        TurnContext turnContext
+    ) {
+        LocalTime lastAccess = lastAccessedTimeProperty.get(turnContext).join();
+        if (lastAccess != null 
+            && (java.time.temporal.ChronoUnit.SECONDS.between(lastAccess, LocalTime.now()) >= expireAfterSeconds)) {
+            turnContext.sendActivity("Welcome back!  Let's start over from the beginning.").join();
+            conversationState.clearState(turnContext).join();
+        }
+        return lastAccessedTimeProperty.set(turnContext, LocalTime.now()).thenCompose(setResult -> {
+            return super.onTurn(turnContext)
+            .thenCompose(result -> conversationState.saveChanges(turnContext))
+            // Save any state changes that might have occurred during the turn.
+            .thenCompose(result -> userState.saveChanges(turnContext));
+        });
+    }
+```
+
 ## [Python](#tab/python)
 
 **config.py**

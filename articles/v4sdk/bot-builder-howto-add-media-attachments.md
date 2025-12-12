@@ -448,6 +448,76 @@ if(turnContext._activity.text == null
 If this check finds a non-existent text input from the client, it looks to see if there's input from an Adaptive Card.
 If an Adaptive Card input exists at `_activity.value.text`, it copies this into the normal text input field.
 
+### [Java](#tab/java)
+
+Our validator uses the **Serialization** helper from com.microsoft.bot.schema to first convert this to a `JsonNode`,
+and then create a trimmed text string for comparison. We'll also need a few other imports to complete this, so add:
+
+```java
+import com.fasterxml.jackson.databind.JsonNode;
+import com.microsoft.bot.dialogs.prompts.PromptValidator;
+import com.microsoft.bot.schema.Serialization;
+import java.util.Optional;
+import org.apache.commons.lang3.StringUtils;
+```
+
+<!---------------------------------------------------------------------------------------->
+<!-- This module has completely changed, this section needs to be completely re-written -->
+<!---------------------------------------------------------------------------------------->
+
+to **MainDialog.java**.
+In the validator code, we added the logic flow into the code comments.
+This `PromptValidator` expression is placed into the **Using cards** sample just after the closed brace public for declaration of MainDialog:
+
+```java
+PromptValidator<FoundChoice> validator = (promptContext) -> {
+    // Retrieves Adaptive Card comment text as JObject.
+    // looks for JObject field "text" and converts that input into a trimmed text
+    // string.
+    JsonNode jsonNode = Serialization.getAs(promptContext.getContext().getActivity().getValue(), JsonNode.class);
+    JsonNode textNode = jsonNode != null ? jsonNode.get("text") : null;
+    String text = textNode != null ? textNode.textValue() : "";
+
+    // Logic: 1. if succeeded = true, just return promptContext
+    // 2. if false, see if JObject contained Adaptive Card input.
+    // No = (bad input) return promptContext
+    // Yes = update Value field with JObject text string, return "true".
+    if (!promptContext.getRecognized().getSucceeded() && text != null) {
+        Optional<Choice> choice = promptContext.getOptions()
+            .getChoices()
+            .stream()
+            .filter(c -> StringUtils.compareIgnoreCase(c.getValue(), text) == 0)
+            .findFirst();
+
+        if (choice.isPresent()) {
+            promptContext.getRecognized().setValue(new FoundChoice() {
+                {
+                    setValue(choice.get().getValue());
+                }
+            });
+            return CompletableFuture.completedFuture(true);
+        }
+    }
+    return CompletableFuture.completedFuture(promptContext.getRecognized().getSucceeded());
+};
+```
+
+Now above in the `MainDialog` declaration change:
+
+```java
+// Define the main dialog and its related components.
+addDialog(new ChoicePrompt("ChoicePrompt"));
+```
+
+to:
+
+```java
+// Define the main dialog and its related components.
+addDialog(new ChoicePrompt("ChoicePrompt", validator, null));
+```
+
+This will invoke your validator to look for Adaptive Card input each time a new choice prompt is created.
+
 ### [Python](#tab/python)
 
 <!--The following source code is from the [Suggested actions](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/08.suggested-actions) sample.-->

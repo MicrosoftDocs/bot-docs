@@ -117,6 +117,13 @@ After updating the code, you can run your bot locally and test the debugging fea
     npm start
     ```
 
+   ### [Java](#tab/java)
+
+    ```console
+    mvn package
+    java -jar .\target\bot-inspection-sample.jar 
+    ```
+
    ### [Python](#tab/python)
 
     ```console

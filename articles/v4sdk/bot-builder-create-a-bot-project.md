@@ -66,6 +66,14 @@ The **.env** file specifies the configuration information for your bot, such as 
 
 To use the **.env** configuration file, the bot requires the `dotenv` package from npm. This is already included as a dependency in the **package.json** file.
 
+# [Java](#tab/java)
+
+The Yeoman generator creates a [Spring](https://spring.io/web-applications) based web application with a build file using [Maven](https://maven.apache.org/what-is-maven.html).
+
+The Maven **pom.xml** file specifies dependencies and their associated versions for your bot. This is all set up by the template and your system. Additional dependencies can be installed by adding entries to the pom.xml file.
+
+The **application.properties** file specifies the configuration information for your bot, such as the port number, app ID, and password among other things. If using certain technologies or using this bot in production, you'll need to add your specific keys or URL to this configuration. For this Echo bot, however, you don't need to do anything here right now; the app ID and password may be left undefined at this time.
+
 # [Python](#tab/python)
 
 The Python Cookiecutter templates create an [aiohttp](https://docs.aiohttp.org/) web application.
@@ -95,6 +103,10 @@ Then, the `Configure` method finishes the configuration of your app.
 ### [JavaScript](#tab/javascript)
 
 In restify, you set up the web service and the objects it needs in the **index.js** file. The service, adapter, and bot are covered separately in the following sections.
+
+### [Java](#tab/java)
+
+In Spring, you set up the web service and the objects it needs in the **application.java** file. The **application.java** has comments that denote the different components and framework classes used by the bot application. The service, adapter, and bot are covered separately in the following sections.
 
 ### [Python](#tab/python)
 

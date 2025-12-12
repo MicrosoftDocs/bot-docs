@@ -39,6 +39,56 @@ The current bot samples use .NET Core 3.1 templates.
 
 [!INCLUDE [Add templates in C#](includes/quickstart/dotnet/add-templates.md)]
 
+### [Java](#tab/java)
+
+- Java 1.8 or later
+- [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md)
+- [Visual Studio Code](https://www.visualstudio.com/downloads) or your favorite IDE, if you want to edit the bot code.
+- Install [Maven](https://maven.apache.org/)
+- Install [node.js](https://nodejs.org/) version 12.10 or later.
+- An Azure account if you want to deploy to [Azure](https://azure.microsoft.com/).
+
+### Java templates
+
+Use the Yeoman generator to quickly create a conversational AI bot using core AI capabilities in the [Bot Framework v4](https://dev.botframework.com). For more information, see [yeoman.io](https://yeoman.io).
+
+The generator supports three different template options as shown below.
+
+|  Template  |  Description  |
+| ---------- |  ---------  |
+| Echo Bot | A good template if you want a little more than "Hello World!", but not much more.  This template handles the very basics of sending messages to a bot, and having the bot process the messages by repeating them back to the user.  This template produces a bot that simply "echoes" back to the user anything the user says to the bot. |
+| Empty Bot | A good template if you're familiar with Bot Framework v4, and simply want a basic skeleton project.  Also a good option if you want to take sample code from the documentation and paste it into a minimal bot in order to learn. |
+| Core Bot | A good template if you want to create advanced bots, as it uses multi-turn dialogs and [Azure AI LUIS](https://www.luis.ai) to implement language understanding. This template creates a bot that can extract places and dates to book a flight. |
+
+[!INCLUDE [luis-sunset-alert](includes/luis-sunset-alert.md)]
+
+### Install Yeoman
+
+1. Assure that you have installed [node.js](https://nodejs.org/) version 12.10 or later.
+1. Install latest [npm](https://www.npmjs.com).
+
+   ```console
+   npm install -g npm
+   ```
+
+1. Install [Yeoman](http://yeoman.io). Make sure to install globally.
+
+    ```console
+    npm install -g yo
+    ```
+
+1. Install *generator-botbuilder-java*. Make sure to install globally.
+
+    ```console
+    npm install -g generator-botbuilder-java
+    ```
+
+1. Verify that *Yeoman* and *generator-botbuilder-java* have been installed correctly.
+
+    ```console
+    yo botbuilder-java --help
+    ```
+
 ### [JavaScript](#tab/javascript)
 
 - [Node.js](https://nodejs.org/)
@@ -139,6 +189,38 @@ pip install cookiecutter==1.7.0
 > [!div class="nextstepaction"]
 > [I created an echo bot](#start-your-bot) [I ran into an issue](https://microsoft.qualtrics.com/jfe/form/SV_6D4KLPZc2jTIa2O?Product=BotSDK&Page=bot-service-quickstart-create-bot&Section=create-a-bot&PLanguage=Csharp)
 
+### [Java](#tab/java)
+
+Run the following command to create an echo bot from templates. The command uses default options for its parameters.
+
+```console
+yo botbuilder-java -T "echo"
+```
+
+Yeoman prompts you for some information with which to create your bot. For this tutorial, use the default values.
+
+```text
+? What's the name of your bot? (echo)
+? What's the fully qualified package name of your bot? (com.mycompany.echo)
+? Which template would you like to start with? (Use arrow keys) Select "Echo Bot"
+? Looking good.  Shall I go ahead and create your new bot? (Y/n) Enter "y"
+```
+
+The generator supports many command-line options you can use to change the generator's defaults or to pre-seed a prompt. The options are case-sensitive.
+
+| Command-line option | Description |
+|--|--|
+| `--help, -h` | List help text for all supported command-line options |
+| `--botName, -N` | The name given to the bot project |
+| `--packageName, -P` | The Java package name to use for the bot |
+| `--template, -T` | The template used to generate the project. Options are `echo`, `empty`, `core`. For more information about the different templates, see the GitHub repository for your language, [C#](https://github.com/microsoft/botbuilder-dotnet/tree/main/generators/dotnet-templates#readme),  [JavaScript](https://github.com/microsoft/botbuilder-js/tree/main/generators/generator-botbuilder#readme), [Python](https://github.com/microsoft/botbuilder-python/tree/main/generators#readme), or [Java](https://github.com/microsoft/botbuilder-java/tree/main/generators#readme). |
+| `--noprompt` | The generator won't prompt for confirmation before creating a new bot. Any requirement options not passed on the command line will use a reasonable default value. This option is intended to enable automated bot generation for testing purposes. |
+
+Thanks to the template, your project contains all the code that's necessary to create the bot in this quickstart. You don't need any other code to test your bot.
+
+> [!div class="nextstepaction"]
+> [I created an echo bot](#start-your-bot) [I ran into an issue](https://microsoft.qualtrics.com/jfe/form/SV_6D4KLPZc2jTIa2O?Product=BotSDK&Page=bot-service-quickstart-create-bot&Section=create-a-bot&PLanguage=Java)
+
 ### [JavaScript](#tab/javascript)
 
 1. Use the generator to create an echo bot.
@@ -191,6 +273,27 @@ Thanks to the template, your project contains all the code that's necessary to c
 
 > [!div class="nextstepaction"]
 > [I started the echo bot](#start-the-emulator-and-connect-your-bot) [I ran into an issue](https://microsoft.qualtrics.com/jfe/form/SV_6D4KLPZc2jTIa2O?Product=BotSDK&Page=bot-service-quickstart-create-bot&Section=start-your-bot&PLanguage=Csharp)
+
+### [Java](#tab/java)
+
+1. From a terminal, navigate to the directory where you saved your bot, then execute the commands listed below.
+
+1. Build the Maven project and packages it into a *.jar* file (archive).
+
+    ```console
+    mvn package
+    ```
+
+1. Run the bot locally. Replace the *archive-name* with the actual name from the previous command.
+
+    ```console
+    java -jar .\target\<archive-name>.jar
+    ```
+
+You're now ready to start the Emulator.
+
+> [!div class="nextstepaction"]
+> [I started the echo bot](#start-the-emulator-and-connect-your-bot) [I ran into an issue](https://microsoft.qualtrics.com/jfe/form/SV_6D4KLPZc2jTIa2O?Product=BotSDK&Page=bot-service-quickstart-create-bot&Section=start-your-bot&PLanguage=Java)
 
 ### [JavaScript](#tab/javascript)
 

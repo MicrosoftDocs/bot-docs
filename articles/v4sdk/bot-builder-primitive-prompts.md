@@ -50,6 +50,14 @@ The sample bot asks the user a series of questions, validates some of their answ
 - A `conversationFlow` class to control our conversation state while gathering user information.
 - An inner `conversationFlow.question` enumeration for tracking where you are in the conversation.
 
+## [Java](#tab/java)
+
+:::image type="content" source="media/CustomPromptBotSample-Overview.png" alt-text="Class diagram for the Java sample.":::
+
+- A `UserProfile` class for the user information that the bot will collect.
+- A `ConversationFlow` class to control our conversation state while gathering user information.
+- An inner `ConversationFlow.Question` enumeration for tracking where you are in the conversation.
+
 ## [Python](#tab/python)
 
 :::image type="content" source="media/CustomPromptBotSample-Python-Overview.png" alt-text="Class diagram for the Python sample.":::

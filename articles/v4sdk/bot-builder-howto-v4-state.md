@@ -42,6 +42,10 @@ Upon receiving user input, this sample checks the stored conversation state to s
 
 :::image type="content" source="media/StateBotSample-JS-Overview.png" alt-text="Class diagram outlining the structure of the JavaScript sample.":::
 
+## [Java](#tab/java)
+
+:::image type="content" source="media/StateBotSample-Overview.png" alt-text="Class diagram outlining the structure of the Java sample.":::
+
 ## [Python](#tab/python)
 
 :::image type="content" source="media/StateBotSample-Python-Overview.png" alt-text="Class diagram outlining the structure of the Python sample.":::

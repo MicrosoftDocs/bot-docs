@@ -64,6 +64,10 @@ This article focuses on the root bot, which includes support logic in its bot an
 
 :::image type="content" source="./media/skills-simple-root-js.png" alt-text="JavaScript class diagram for the skill consumer.":::
 
+### [Java](#tab/java)
+
+:::image type="content" source="./media/skills-simple-root-java.png" alt-text="Java class diagram for the skill consumer.":::
+
 ### [Python](#tab/python)
 
 :::image type="content" source="./media/skills-simple-root-python-2.png" alt-text="Python class diagram for the skill consumer.":::
@@ -155,6 +159,10 @@ The SDK provides a `SkillConversationIdFactory` class that can be used across an
 ### [JavaScript](#tab/js)
 
 The SDK provides a `SkillConversationIdFactory` class that can be used across any skill without requiring the source code to be replicated. The conversation ID factory is configured in **index.js**.
+
+### [Java](#tab/java)
+
+Java has implemented the SkillConversationIdFactory class as an SDK class that can be used across any skill without requiring the source code to be replicated. The code for SkillConversationIdFactory can be found in the botbuilder package source code [[botbuilder Java SDK code](https://github.com/microsoft/botbuilder-java/tree/main/libraries/bot-builder)].
 
 ### [Python](#tab/python)
 

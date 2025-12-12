@@ -50,6 +50,10 @@ To use dialogs, your project needs to install the **botbuilder-dialogs** npm pac
 
 :::image type="content" source="./media/complex-conversation-flow-js.png" alt-text="Class diagram for JavaScript sample.":::
 
+### [Java](#tab/java)
+
+:::image type="content" source="./media/complex-conversation-flow-java.png" alt-text="Class diagram for Java sample.":::
+
 ### [Python](#tab/python)
 
 To use dialogs, your project needs to install the **botbuilder-dialogs** PyPI package by running `pip install botbuilder-dialogs`.
