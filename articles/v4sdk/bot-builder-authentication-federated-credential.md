@@ -421,17 +421,17 @@ The following sections describe how the sample implements some common authentica
 
 Add an OAuth prompt to **MainDialog** in its constructor. Here, the value for the connection name was retrieved from the **appsettings.json** file.
 
-[!code-csharp[Add OAuthPrompt](~/../botbuilder-samples/samples/csharp_dotnetcore/86.bot-authentication-fic/Dialogs/MainDialog.cs?range=23-31)]
+[!code-csharp[Add OAuthPrompt](~/../botbuilder-samples/archive/samples/csharp_dotnetcore/18.bot-authentication/Dialogs/MainDialog.cs?range=23-31)]
 
 Within a dialog step, use `BeginDialogAsync` to start the OAuth prompt, which asks the user to sign in.
 
 - If the user is already signed in, a token response event is generated without prompting the user. Otherwise, the user is prompted to sign in. After the user attempts to sign in, the Azure AI Bot Service sends the token response event.
 
-[!code-csharp[Use the OAuthPrompt](~/../botbuilder-samples/samples/csharp_dotnetcore/86.bot-authentication-fic/Dialogs/MainDialog.cs?range=49)]
+[!code-csharp[Use the OAuthPrompt](~/../botbuilder-samples/archive/samples/csharp_dotnetcore/18.bot-authentication/Dialogs/MainDialog.cs?range=49)]
 
 Within the following dialog step, check for the presence of a token in the result from the previous step. If it's not null, the user successfully signed in.
 
-[!code-csharp[Get the OAuthPrompt result](~/../botbuilder-samples/samples/csharp_dotnetcore/86.bot-authentication-fic/Dialogs/MainDialog.cs?range=54-56)]
+[!code-csharp[Get the OAuthPrompt result](~/../botbuilder-samples/archive/samples/csharp_dotnetcore/18.bot-authentication/Dialogs/MainDialog.cs?range=54-56)]
 
 ---
 
@@ -457,7 +457,7 @@ It's best practice to let users explicitly sign out, instead of relying on the c
 
 **Dialogs\LogoutDialog.cs**
 
-[!code-csharp[Allow sign out](~/../botbuilder-samples/samples/csharp_dotnetcore/86.bot-authentication-fic/Dialogs/LogoutDialog.cs?range=45-63&highlight=11)]
+[!code-csharp[Allow sign out](~/../botbuilder-samples/archive/samples/csharp_dotnetcore/18.bot-authentication/Dialogs/LogoutDialog.cs?range=45-63&highlight=11)]
 
 ---
 
