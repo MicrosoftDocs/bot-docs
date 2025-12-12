@@ -155,9 +155,9 @@ Add the information required to access your LUIS app including application ID, a
 
 Add the information required to access your LUIS app including application ID, authoring key, and region into the `.env` file. In the previous step, you retrieved these values from your published LUIS app. The API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
 
-**.env**
+<!--**.env**
 
-[!code-ini[.env file](~/../BotBuilder-Samples/archive/samples/javascript_nodejs/13.core-bot/.env)]
+[!code-ini[.env file](~/../BotBuilder-Samples/archive/samples/javascript_nodejs/13.core-bot/.env)]-->
 
 # [Java](#tab/java)
 
