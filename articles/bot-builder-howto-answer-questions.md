@@ -1,10 +1,10 @@
 ---
 title: Use question answering to answer questions
 description: Learn how bots can answer questions from users without parsing or interpreting the questions. See how to use question answering for this task.
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: how-to
 ms.service: azure-ai-bot-service
 monikerRange: 'azure-bot-service-4.0'

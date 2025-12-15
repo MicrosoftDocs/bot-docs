@@ -1,10 +1,10 @@
 ---
 title: Create a basic bot
 description: Create your first bot with the Bot Framework SDK, in C#, Java, JavaScript, or Python.
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: quickstart
 ms.custom:

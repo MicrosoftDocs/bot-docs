@@ -2,10 +2,10 @@
 title: Middleware
 description: Learn about middleware, the layer between adapters and bots. See what type of functionality to implement in middleware and learn about short circuiting.
 keywords: middleware, middleware pipeline, short circuit, middleware uses
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: article
 ms.service: azure-ai-bot-service
 monikerRange: 'azure-bot-service-4.0'

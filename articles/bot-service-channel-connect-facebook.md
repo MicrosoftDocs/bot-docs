@@ -2,10 +2,10 @@
 title: Connect a Bot Framework bot to Facebook
 description: Learn how to configure bots to connect to Facebook Messenger and Facebook Workplace and communicate with users via Facebook.
 keywords: Facebook Messenger, bot channel, Facebook App, Facebook bot
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: jameslew
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: how-to
 ms.custom:

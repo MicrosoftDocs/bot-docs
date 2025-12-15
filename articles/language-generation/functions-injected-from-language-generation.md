@@ -2,10 +2,10 @@
 title: Functions injected from the language generation library - Bot Service
 description: Describes how to inject functions from LG into templates.
 keywords: functions from lg, reference, language generation
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: how-to
 ms.service: azure-ai-bot-service
 monikerRange: 'azure-bot-service-4.0'
@@ -179,9 +179,9 @@ Suppose you have the following template:
 
 Calling `template("welcome", "DL")` will result in one of the following:
 
-- _Hi DL_
-- _Hello DL_
-- _Hey DL_
+- *Hi DL*
+- *Hello DL*
+- *Hey DL*
 
 ## fromFile
 
@@ -215,7 +215,7 @@ fromFile('/home/user/test.txt')
 
 The `fromFile()` function will evaluate the expression and the result will replace the original expression.
 
-Calling `fromFile('/home/user/test.txt')` results in the string _you have 3 alarms_.
+Calling `fromFile('/home/user/test.txt')` results in the string *you have 3 alarms*.
 
 ## isTemplate
 

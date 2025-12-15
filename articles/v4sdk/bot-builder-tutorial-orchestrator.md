@@ -2,10 +2,10 @@
 title: Use multiple LUIS and QnA Maker projects with Orchestrator
 description: Learn how bots can use multiple LUIS models and QnA Maker knowledge bases. See how to use Orchestrator to route user input to the correct model.
 keywords: Luis, QnA, Orchestrator, multiple services, route intents
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: how-to
 ms.service: azure-ai-bot-service
 monikerRange: 'azure-bot-service-4.0'
@@ -38,8 +38,6 @@ This article describes how to use an _existing_ QnA Maker knowledge base with Or
 - A copy of the **NLP with Orchestrator** sample in [**C#** (archived)][] or [**JavaScript** (archived)][].
 - Knowledge of [bot basics](bot-builder-basics.md), [LUIS][howto-luis], and [QnA Maker][howto-qna].
 - Install the command-line [BF CLI][bf-cli].
-
-
 
 ## About this sample
 
@@ -115,7 +113,7 @@ You need an existing knowledge base and your QnA Maker hostname and endpoint key
 
 The CLI interface for the Orchestrator tool creates the Orchestrator snapshot file for routing to the correct LUIS or QnA Maker app at run time.
 
-1. Install the latest supported version of the [Visual C++ Redistributable package](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)
+1. Install the latest supported version of the [Visual C++ Redistributable package](/cpp/windows/latest-supported-vc-redist?view=msvc-170&preserve-view=true)
 1. Open a command prompt or terminal window, and change directories to the sample directory
 1. Make sure you have the current version of npm and the Bot Framework CLI.
 
@@ -416,8 +414,7 @@ The `processSampleQnA` method uses the user input contained within the turn cont
 
 [**C#** (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/csharp_dotnetcore/14.nlp-with-orchestrator
 [**JavaScript** (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/javascript_nodejs/14.nlp-with-orchestrator
-[**Java** (archived)]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/14.nlp-with-orchestrator
-[**Python** (archived)]: (https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/python/14.nlp-with-orchestrator
+[**Python** (archived)]: (<https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/python/14.nlp-with-orchestrator>
 
 [orchestrator]: /composer/concept-orchestrator
 [bf-cli]: https://github.com/microsoft/botframework-cli

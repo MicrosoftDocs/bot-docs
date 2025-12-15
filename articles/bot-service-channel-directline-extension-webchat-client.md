@@ -1,10 +1,10 @@
 ---
 title: Use Web Chat with the Direct Line App Service extension in Bot Framework SDK
 description: Learn how to use Web Chat with a Direct Line App Service extension. View code that shows how to set up a direct line URL for a bot and obtain a token.
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: Daniel.Evans
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: how-to
 ms.custom:

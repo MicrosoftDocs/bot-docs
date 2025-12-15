@@ -2,10 +2,10 @@
 title: Manage a long-running operation
 description: Learn how to avoid time-out issues and use proactive messages to handle long-running operations within a bot.
 keywords: long operations, time out, 15 seconds
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: how-to
 monikerRange: 'azure-bot-service-4.0'
@@ -504,4 +504,3 @@ public void ConfigureServices(IServiceCollection services)
 | Dev Tunnels | [Debug a bot using devtunnel](../bot-service-debug-channel-devtunnel.md) |
 
 [concept-basics]: bot-builder-basics.md
-[concept-dialogs]: bot-builder-concept-dialog.md

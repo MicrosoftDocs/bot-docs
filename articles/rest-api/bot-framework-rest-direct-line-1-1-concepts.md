@@ -1,10 +1,10 @@
 ---
 title: Key concepts in the Bot Framework Direct Line API 1.1  - Bot Service
 description: Learn about version 1.1 of the Bot Framework Direct Line API. View information on authentication, starting conversations, messages, and developer resources. 
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: concept-article
 ms.service: azure-ai-bot-service
 ms.custom:

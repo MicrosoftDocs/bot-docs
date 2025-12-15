@@ -2,10 +2,10 @@
 title: Create advanced conversation flow using branches and loops
 description: Learn how to manage a complex conversation flow with dialogs in the Bot Framework SDK.
 keywords: complex conversation flow, repeat, loop, menu, dialogs, prompts, waterfalls, dialog set
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: how-to
 ms.service: azure-ai-bot-service
 monikerRange: 'azure-bot-service-4.0'
@@ -82,7 +82,7 @@ The user profile will contain information gathered by the dialogs, the user's na
 
 **UserProfile.java**
 
-[!code-java[UserProfile class](~/../botbuilder-samples/samples/java_springboot/43.complex-dialog/src/main/java/com/microsoft/bot/sample/complexdialog/UserProfile.java?range=9-66)]
+[!code-java[UserProfile class](~/../botbuilder-samples/archive/samples/java_springboot/43.complex-dialog/src/main/java/com/microsoft/bot/sample/complexdialog/UserProfile.java?range=9-66)]
 
 ### [Python](#tab/python)
 
@@ -123,7 +123,7 @@ The main dialog has two steps:
 
 **MainDialog.java**
 
-[!code-java[step implementations](~/../botbuilder-samples/samples/java_springboot/43.complex-dialog/src/main/java/com/microsoft/bot/sample/complexdialog/MainDialog.java?range=36-54)]
+[!code-java[step implementations](~/../botbuilder-samples/archive/samples/java_springboot/43.complex-dialog/src/main/java/com/microsoft/bot/sample/complexdialog/MainDialog.java?range=36-54)]
 
 #### [Python](#tab/python)
 
@@ -162,7 +162,7 @@ In the third (start selection) step, the conversation flow branches, based on th
 
 **TopLevelDialog.java**
 
-[!code-java[step implementations](~/../botbuilder-samples/samples/java_springboot/43.complex-dialog/src/main/java/com/microsoft/bot/sample/complexdialog/TopLevelDialog.java?range=47-94&highlight=28-34)]
+[!code-java[step implementations](~/../botbuilder-samples/archive/samples/java_springboot/43.complex-dialog/src/main/java/com/microsoft/bot/sample/complexdialog/TopLevelDialog.java?range=47-94&highlight=28-34)]
 
 #### [Python](#tab/python)
 
@@ -201,7 +201,7 @@ The review-selection dialog has two steps:
 
 **ReviewSelectionDialog.java**
 
-[!code-java[step implementations](~/../botbuilder-samples/samples/java_springboot/43.complex-dialog/src/main/java/com/microsoft/bot/sample/complexdialog/ReviewSelectionDialog.java?range=48-99&highlight=46-51)]
+[!code-java[step implementations](~/../botbuilder-samples/archive/samples/java_springboot/43.complex-dialog/src/main/java/com/microsoft/bot/sample/complexdialog/ReviewSelectionDialog.java?range=48-99&highlight=46-51)]
 
 #### [Python](#tab/python)
 
@@ -241,7 +241,7 @@ When it receives a message from the user:
 
 **DialogBot.java**
 
-[!code-java[Overrides](~/../botbuilder-samples/samples/java_springboot/43.complex-dialog/src/main/java/com/microsoft/bot/sample/complexdialog/DialogBot.java?range=40-58&highlight=7-8,18)]
+[!code-java[Overrides](~/../botbuilder-samples/archive/samples/java_springboot/43.complex-dialog/src/main/java/com/microsoft/bot/sample/complexdialog/DialogBot.java?range=40-58&highlight=7-8,18)]
 
 ### [Python](#tab/python)
 
@@ -275,7 +275,7 @@ Create and register services as needed:
 
 **Application.java**
 
-[!code-java[ConfigureServices](~/../botbuilder-samples/samples/java_springboot/43.complex-dialog/src/main/java/com/microsoft/bot/sample/complexdialog/Application.java?range=52-59)]
+[!code-java[ConfigureServices](~/../botbuilder-samples/archive/samples/java_springboot/43.complex-dialog/src/main/java/com/microsoft/bot/sample/complexdialog/Application.java?range=52-59)]
 
 ### [Python](#tab/python)
 
@@ -323,5 +323,5 @@ For more information, see [reuse dialogs][component-dialogs].
 
 [cs-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/43.complex-dialog
 [js-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/43.complex-dialog
-[java-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/43.complex-dialog
+[java-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/43.complex-dialog
 [python-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/43.complex-dialog

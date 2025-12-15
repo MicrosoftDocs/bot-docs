@@ -1,10 +1,10 @@
 ---
 title: Page title that displays in the browser tab and search results
 description: Article description that will be displayed on landing pages and in most search results
-author: GitHub-alias-of-only-one-author
-ms.author: writing-lead-ms-alias
+author: kunsinghms
+ms.author: kunsingh
 manager: writing-manager-ms-alias
-ms.reviewer: editor-ms-alias
+ms.reviewer: pehecke
 ms.topic: overview
 ms.service: bot-service
 ms.date: mm/dd/yyyy # date the article was updated in mm/dd/yyyy format

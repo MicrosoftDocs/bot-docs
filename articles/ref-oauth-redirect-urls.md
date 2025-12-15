@@ -1,10 +1,10 @@
 ---
 title: Supported OAuth URLs
 description: Azure AI Bot Service provides various OAuth URLs. Choose a URL based on data residency requirements and which cloud your bot is in.
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: reference
 ms.service: azure-ai-bot-service
 ms.custom:
@@ -34,6 +34,7 @@ Choose the URLs to use with your bot and identity provider based on your data re
 The default OAuth and OAuth redirect URLs are `https://token.botframework.com` and `https://token.botframework.com/.auth/web/redirect`, which can be used for public-cloud bots with no data residency requirements.
 
 ## To configure OAuthUrl in bot
+
 Update appsettings.json to include OAuthUrl options:
 
 ```json

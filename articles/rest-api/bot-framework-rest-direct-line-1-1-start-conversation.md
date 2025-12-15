@@ -1,10 +1,10 @@
 ---
 title: Start a conversation using Direct Line API 1.1 - Bot Service
 description: Learn how to use version 1.1 of the Direct Line API to start conversations with bots. Find out how the Start Conversation and Generate Token operations differ.
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: how-to
 ms.service: azure-ai-bot-service
 ms.custom:

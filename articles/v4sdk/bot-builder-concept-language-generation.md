@@ -2,10 +2,10 @@
 title: Language Generation
 description: Describes how Language Generation works within the Bot Framework SDK.
 keywords: language generation
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: concept-article
 ms.service: azure-ai-bot-service
 monikerRange: 'azure-bot-service-4.0'

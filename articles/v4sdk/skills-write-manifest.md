@@ -1,10 +1,10 @@
 ---
 title: Bot Framework a skill manifest schema
 description: Learn about the contents and structure of a Bot Framework skill manifest.
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: Gabo.Gilabert
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: reference
 ms.custom:

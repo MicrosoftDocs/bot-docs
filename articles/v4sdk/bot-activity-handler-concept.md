@@ -1,10 +1,10 @@
 ---
 title: Event-driven conversations and activity handlers
 description: Become familiar with the bot activity handler. Learn about managing bot reasoning based on the type of activity received from a user.
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: article
 monikerRange: 'azure-bot-service-4.0'
@@ -203,7 +203,7 @@ For example, you can handle _on members added_ to welcome users to a conversatio
 
 ### [Java](#tab/java)
 
-[!code-java[Java activity handler](~/../botbuilder-samples/samples/java_springboot/02.echo-bot/src/main/java/com/microsoft/bot/sample/echo/EchoBot.java?range=25-47)]
+[!code-java[Java activity handler](~/../botbuilder-samples/archive/samples/java_springboot/02.echo-bot/src/main/java/com/microsoft/bot/sample/echo/EchoBot.java?range=25-47)]
 
 ### [Python](#tab/python)
 

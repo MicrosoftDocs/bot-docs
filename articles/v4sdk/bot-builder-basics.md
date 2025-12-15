@@ -1,10 +1,10 @@
 ---
 title: Basics of the Microsoft Bot Framework
 description: Become familiar with the Microsoft Bot Framework. Understand how bots communicate with users, and learn about activities, channels, HTTP POST requests, and more.
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: overview
 monikerRange: 'azure-bot-service-4.0'

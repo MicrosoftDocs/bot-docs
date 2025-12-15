@@ -2,10 +2,10 @@
 title: Debug your bot using transcript files
 description: Learn how to use transcript files to debug bots. See how to create and retrieve these files, which provide detailed sets of user interactions and bot responses.
 keywords: debugging, faq, transcript file, emulator
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: how-to
 ms.service: azure-ai-bot-service
 monikerRange: 'azure-bot-service-4.0'

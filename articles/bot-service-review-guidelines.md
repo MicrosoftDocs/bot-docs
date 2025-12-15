@@ -1,10 +1,10 @@
 ---
 title: Bot review guidelines
 description: Learn about the minimum requirements your app integration must meet before it may be published to a Microsoft channel such as Microsoft Teams.
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: article
 ms.custom:

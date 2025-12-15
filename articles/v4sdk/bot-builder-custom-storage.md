@@ -2,10 +2,10 @@
 title: Implement custom storage for your bot
 description: Learn how to use version 4.0 of the Bot Framework SDK to store bot state data. Understand the default framework. See how to expand support.
 keywords: custom, storage, state, dialog
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: how-to
 ms.service: azure-ai-bot-service
 monikerRange: 'azure-bot-service-4.0'
@@ -29,7 +29,7 @@ This article explores how to extend the semantics between the Azure AI Bot Servi
 ## Prerequisites
 
 - Knowledge of [Basics of the Microsoft Bot Framework](bot-builder-basics.md), [Event-driven conversations using an activity handler](bot-activity-handler-concept.md), and [Managing state](bot-builder-concept-state.md).
-- A copy of the scale-out sample in [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/42.scaleout), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/42.scaleout), or [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/42.scaleout).
+- A copy of the scale-out sample in [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/42.scaleout), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/42.scaleout), or [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/42.scaleout).
 
 This article focuses on the C# version of the sample.
 
@@ -252,4 +252,4 @@ And finally, here's an implementation of the custom state property accessor.
 
 ## Additional information
 
-The scale-out sample is available from the Bot Framework samples repo on GitHub in [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/42.scaleout), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/42.scaleout), and [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/42.scaleout).
+The scale-out sample is available from the Bot Framework samples repo on GitHub in [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/42.scaleout), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/42.scaleout), and [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/42.scaleout).

@@ -1,10 +1,10 @@
 ---
 title: Send media attachments with the Bot Framework SDK
 description: Learn how to add images, video, audio, files, and other media attachments to messages sent using the Bot Framework SDK. 
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: how-to
 ms.service: azure-ai-bot-service
 ms.custom:
@@ -26,9 +26,9 @@ Messages exchanged between user and bot can contain media attachments, such as i
 
 - Knowledge of [bot basics](bot-builder-basics.md).
 - The code in this article is based on the following samples:
-  - **Using cards**: [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/06.using-cards), [JavaScript](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/06.using-cards), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/06.using-cards), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/06.using-cards)
-  - **Handling attachments**: [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/15.handling-attachments), [JavaScript](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/15.handling-attachments), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/15.handling-attachments), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/15.handling-attachments)
-  - **Suggested actions**: [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/08.suggested-actions), [JavaScript](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/08.suggested-actions), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/08.suggested-actions), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/08.suggested-actions)
+  - **Using cards**: [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/06.using-cards), [JavaScript](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/06.using-cards), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/06.using-cards), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/06.using-cards)
+  - **Handling attachments**: [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/15.handling-attachments), [JavaScript](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/15.handling-attachments), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/15.handling-attachments), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/15.handling-attachments)
+  - **Suggested actions**: [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/08.suggested-actions), [JavaScript](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/08.suggested-actions), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/08.suggested-actions), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/08.suggested-actions)
 
 ## Send attachments
 
@@ -104,7 +104,7 @@ Lastly, an internet attachment contained in a URL:
 
 ### [Java](#tab/java)
 
-The source code shown in this section is based on the [Handling attachments](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/15.handling-attachments) sample.
+The source code shown in this section is based on the [Handling attachments](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/15.handling-attachments) sample.
 
 The `getAttachments()` method of the `Activity` object contains an array of `Attachment` objects that represent the media attachments and rich cards attached to the message. To add a media attachment to a message, create an `Attachment` object for the `reply` activity and set the `ContentType`, `ContentUrl`, and `Name` properties.
 
@@ -112,25 +112,25 @@ To create the reply message, define the text and then set up the attachments. As
 
 **AttachmentsBot.java**
 
-[!code-java[reply inline](~/../botbuilder-samples/samples/java_springboot/15.handling-attachments/src/main/java/com/microsoft/bot/sample/attachments/AttachmentsBot.java?range=122-127)]
+[!code-java[reply inline](~/../botbuilder-samples/archive/samples/java_springboot/15.handling-attachments/src/main/java/com/microsoft/bot/sample/attachments/AttachmentsBot.java?range=122-127)]
 
 Next, we look at the types of attachments. First is an inline attachment:
 
 **AttachmentsBot.java**
 
-[!code-java[inline attachment](~/../botbuilder-samples/samples/java_springboot/15.handling-attachments/src/main/java/com/microsoft/bot/sample/attachments/AttachmentsBot.java?range=192-206)]
+[!code-java[inline attachment](~/../botbuilder-samples/archive/samples/java_springboot/15.handling-attachments/src/main/java/com/microsoft/bot/sample/attachments/AttachmentsBot.java?range=192-206)]
 
 Then, an uploaded attachment:
 
 **AttachmentsBot.java**
 
-[!code-java[uploaded attachment](~/../botbuilder-samples/samples/java_springboot/15.handling-attachments/src/main/java/com/microsoft/bot/sample/attachments/AttachmentsBot.java?range=209-240)]
+[!code-java[uploaded attachment](~/../botbuilder-samples/archive/samples/java_springboot/15.handling-attachments/src/main/java/com/microsoft/bot/sample/attachments/AttachmentsBot.java?range=209-240)]
 
 Lastly, an internet attachment:
 
 **AttachmentsBot.java**
 
-[!code-java[online attachment](~/../botbuilder-samples/samples/java_springboot/15.handling-attachments/src/main/java/com/microsoft/bot/sample/attachments/AttachmentsBot.java?range=242-250)]
+[!code-java[online attachment](~/../botbuilder-samples/archive/samples/java_springboot/15.handling-attachments/src/main/java/com/microsoft/bot/sample/attachments/AttachmentsBot.java?range=242-250)]
 
 ### [Python](#tab/python)
 
@@ -194,11 +194,11 @@ The following source code is from the [Handling attachments](https://github.com/
 
 To compose a message with a hero card and button, you can attach a `HeroCard` object to a message.
 
-The following source code is from the [Handling attachments](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/15.handling-attachments) sample.
+The following source code is from the [Handling attachments](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/15.handling-attachments) sample.
 
 **AttachmentsBot.java**
 
-[!code-java[Hero card](~/../botbuilder-samples/samples/java_springboot/15.handling-attachments/src/main/java/com/microsoft/bot/sample/attachments/AttachmentsBot.java?range=67-83)]
+[!code-java[Hero card](~/../botbuilder-samples/archive/samples/java_springboot/15.handling-attachments/src/main/java/com/microsoft/bot/sample/attachments/AttachmentsBot.java?range=67-83)]
 
 ### [Python](#tab/python)
 
@@ -248,15 +248,15 @@ For examples of all the available cards, see the [Using cards](https://github.co
 
 ### [Java](#tab/java)
 
-For examples of all the available cards, see the [Using cards](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/06.using-cards) sample.
+For examples of all the available cards, see the [Using cards](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/06.using-cards) sample.
 
 **Cards.java**
 
-[!code-java[GetHeroCard](~/../botbuilder-samples/samples/java_springboot/06.using-cards/src/main/java/com/microsoft/bot/sample/usingcards/Cards.java?range=48-58)]
+[!code-java[GetHeroCard](~/../botbuilder-samples/archive/samples/java_springboot/06.using-cards/src/main/java/com/microsoft/bot/sample/usingcards/Cards.java?range=48-58)]
 
 **Cards.java**
 
-[!code-java[GetSigninCard](~/../botbuilder-samples/samples/java_springboot/06.using-cards/src/main/java/com/microsoft/bot/sample/usingcards/Cards.java?range=98-103)]
+[!code-java[GetSigninCard](~/../botbuilder-samples/archive/samples/java_springboot/06.using-cards/src/main/java/com/microsoft/bot/sample/usingcards/Cards.java?range=98-103)]
 
 ### [Python](#tab/python)
 
@@ -311,13 +311,13 @@ This example reads the Adaptive Card JSON from a file and creates a message acti
 
 ### [Java](#tab/java)
 
-The following source code is from the [Using cards](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/06.using-cards) sample.
+The following source code is from the [Using cards](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/06.using-cards) sample.
 
 **Cards.java**
 
 This example reads the Adaptive Card JSON from a file and adds it as an attachment.
 
-[!code-java[CreateAdaptiveCardAttachment](~/../botbuilder-samples/samples/java_springboot/06.using-cards/src/main/java/com/microsoft/bot/sample/usingcards/Cards.java?range=30-46&highlight9-10)]
+[!code-java[CreateAdaptiveCardAttachment](~/../botbuilder-samples/archive/samples/java_springboot/06.using-cards/src/main/java/com/microsoft/bot/sample/usingcards/Cards.java?range=30-46&highlight9-10)]
 
 ### [Python](#tab/python)
 
@@ -369,22 +369,22 @@ Once the attachments are added, you can send the reply just like any other.
 
 ### [Java](#tab/java)
 
-The following source code is from the [Using cards](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/06.using-cards) sample.
+The following source code is from the [Using cards](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/06.using-cards) sample.
 
 **MainDialog.java**
 
 First, create the reply and define the attachments as a list.
 
-[!code-java[ShowCardStep excerpt](~/../botbuilder-samples/samples/java_springboot/06.using-cards/src/main/java/com/microsoft/bot/sample/usingcards/MainDialog.java?range=63-68)]
+[!code-java[ShowCardStep excerpt](~/../botbuilder-samples/archive/samples/java_springboot/06.using-cards/src/main/java/com/microsoft/bot/sample/usingcards/MainDialog.java?range=63-68)]
 
 Then add the attachments and set the layout type to _carousel_.
 Here we're adding them one at a time, but feel free to manipulate the list to add the cards however you prefer.
 
-[!code-java[ShowCardStep excerpt](~/../botbuilder-samples/samples/java_springboot/06.using-cards/src/main/java/com/microsoft/bot/sample/usingcards/MainDialog.java?range=109-119)]
+[!code-java[ShowCardStep excerpt](~/../botbuilder-samples/archive/samples/java_springboot/06.using-cards/src/main/java/com/microsoft/bot/sample/usingcards/MainDialog.java?range=109-119)]
 
 Once the attachments are added, you can send the reply just like any other.
 
-[!code-java[ShowCardStep excerpt](~/../botbuilder-samples/samples/java_springboot/06.using-cards/src/main/java/com/microsoft/bot/sample/usingcards/MainDialog.java?range=123-124)]
+[!code-java[ShowCardStep excerpt](~/../botbuilder-samples/archive/samples/java_springboot/06.using-cards/src/main/java/com/microsoft/bot/sample/usingcards/MainDialog.java?range=123-124)]
 
 ### [Python](#tab/python)
 

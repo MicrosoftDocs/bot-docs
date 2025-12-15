@@ -2,10 +2,10 @@
 title: Structured response template in Bot Framework SDK
 description: Describe the structure response templates available with language generation.
 keywords: structure response template, reference, language generation, lg
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: reference
 monikerRange: 'azure-bot-service-4.0'

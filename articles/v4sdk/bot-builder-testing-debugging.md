@@ -2,10 +2,10 @@
 title: Debugging guidelines - Bot Service
 description: View bot debugging tips, such as using the Emulator and transcripts to inspect behavior. Understand potential middleware, state, and activity handler errors.
 keywords: debugging bots, botframework debugging
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: concept-article
 ms.service: azure-ai-bot-service
 monikerRange: 'azure-bot-service-4.0'

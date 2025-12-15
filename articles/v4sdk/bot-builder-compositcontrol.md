@@ -2,10 +2,10 @@
 title: Manage dialog complexity
 description: Learn how to modularize your dialog complexity using component dialogs in the Bot Framework SDK.
 keywords: composite control, modular bot logic
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: how-to
 ms.service: azure-ai-bot-service
 monikerRange: 'azure-bot-service-4.0'
@@ -97,15 +97,15 @@ For more information on implementing waterfall dialogs, see how to [implement se
 
 Here the `UserProfileDialog` class derives from the `ComponentDialog` class.
 
-[!code-java[Class](~/../botbuilder-samples/samples/java_springboot/05.multi-turn-prompt/src/main/java/com/microsoft/bot/sample/multiturnprompt/UserProfileDialog.java?range=31)]
+[!code-java[Class](~/../botbuilder-samples/archive/samples/java_springboot/05.multi-turn-prompt/src/main/java/com/microsoft/bot/sample/multiturnprompt/UserProfileDialog.java?range=31)]
 
 Within the constructor, the `addDialog` method adds dialogs and prompts to the component dialog. The first item you add with this method is set as the initial dialog. You can change the initial dialog by calling the `setInitialDialogId` method and provide the name of the initial dialog. When you start a component dialog, it will start its _initial dialog_.
 
-[!code-java[Constructor](~/../botbuilder-samples/samples/java_springboot/05.multi-turn-prompt/src/main/java/com/microsoft/bot/sample/multiturnprompt/UserProfileDialog.java?range=34-59)]
+[!code-java[Constructor](~/../botbuilder-samples/archive/samples/java_springboot/05.multi-turn-prompt/src/main/java/com/microsoft/bot/sample/multiturnprompt/UserProfileDialog.java?range=34-59)]
 
 The following code represents the first step of the waterfall dialog.
 
-[!code-java[First step](~/../botbuilder-samples/samples/java_springboot/05.multi-turn-prompt/src/main/java/com/microsoft/bot/sample/multiturnprompt/UserProfileDialog.java?range=71-77)]
+[!code-java[First step](~/../botbuilder-samples/archive/samples/java_springboot/05.multi-turn-prompt/src/main/java/com/microsoft/bot/sample/multiturnprompt/UserProfileDialog.java?range=71-77)]
 
 For more information on implementing waterfall dialogs, see how to [implement sequential conversation flow](bot-builder-dialog-manage-complex-conversation-flow.md).
 
@@ -173,7 +173,7 @@ The `run` method is called from the bot's `onMessage` method.
 
 In the sample, this is done using the `run` method that is called from the bot's `onMessageActivity` method.
 
-[!code-java[OnMessageActivity](~/../botbuilder-samples/samples/java_springboot/05.multi-turn-prompt/src/main/java/com/microsoft/bot/sample/multiturnprompt/DialogBot.java?range=50-58&highlight=8)]
+[!code-java[OnMessageActivity](~/../botbuilder-samples/archive/samples/java_springboot/05.multi-turn-prompt/src/main/java/com/microsoft/bot/sample/multiturnprompt/DialogBot.java?range=50-58&highlight=8)]
 
 ### [Python](#tab/python)
 
@@ -214,15 +214,11 @@ Learn how to create complex conversations that branch and loop.
 > [Handle user interruptions](bot-builder-dialog-manage-complex-conversation-flow.md)
 
 [concept-basics]: bot-builder-basics.md
-[concept-state]: bot-builder-concept-state.md
 [concept-dialogs]: bot-builder-concept-dialog.md
 
 [simple-flow]: bot-builder-dialog-manage-conversation-flow.md
-[prompting]: bot-builder-prompts.md
-[component-dialogs]: bot-builder-compositcontrol.md
 
 [cs-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/05.multi-turn-prompt
 [js-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/05.multi-turn-prompt
-[java-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/05.multi-turn-prompt
+[java-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/05.multi-turn-prompt
 [python-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/05.multi-turn-prompt
-[lg-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/language-generation/05.multi-turn-prompt

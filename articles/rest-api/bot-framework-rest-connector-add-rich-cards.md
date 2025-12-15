@@ -1,10 +1,10 @@
 ---
 title: Add rich card attachments to messages - Bot Service
 description: Find out how to add images, videos, audio, and files to bot messages. Learn about different types of rich cards and events that bots can process in cards.
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: how-to
 ms.service: azure-ai-bot-service
 ms.custom:

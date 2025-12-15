@@ -1,10 +1,10 @@
 ---
 title: Configure .NET bots for the Direct Line App Service extension in the Bot Framework SDK
 description: Configure .NET bots to work with named pipes. Enable the Direct Line App Service extension and configure bots to use the extension.
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: Daniel.Evans
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: how-to
 ms-custom: abs-meta-21q1

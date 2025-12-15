@@ -2,10 +2,10 @@
 title: About Direct Line channel
 titleSuffix: Bot Service
 description: Learn about the Bot Framework Direct Line three channels. Select the channel to use to integrate bots into mobile apps, webpages, and other applications.
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: Daniel.Evans
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: overview
 ms.custom:
@@ -24,7 +24,7 @@ The Bot Framework offers multiple channels with the Direct Line branding. It's i
 You can choose which offering of Direct Line is best for you by evaluating the features each offers and the needs of your solution.
 Over time these offerings will be simplified.
 
-| Feature      | Direct Line | Direct Line App Service Extension | 
+| Feature      | Direct Line | Direct Line App Service Extension |
 |--------------|-------------|-----------------------------------|
 | Availability and Licensing | GA | GA  |
 | Speech recognition and text-to-speech performance | Standard | Standard |

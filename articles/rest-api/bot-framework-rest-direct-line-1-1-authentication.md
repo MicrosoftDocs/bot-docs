@@ -1,10 +1,10 @@
 ---
 title: Direct Line API 1.1 Authentication - Bot Service
 description: Learn about authentication in version 1.1 of the Direct Line API. See how to use secrets and tokens to access conversations. Find out how to refresh tokens.
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: how-to
 ms.service: azure-ai-bot-service
 ms.custom:

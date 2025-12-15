@@ -2,10 +2,10 @@
 title: Connect a bot to Direct Line in Bot Framework SDK
 description: Learn how to configure bots to communicate with client applications using the Direct Line channel.
 keywords: direct line, bot channels, custom client, connect to channels, configure
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: Daniel.Evans
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: how-to
 ms.custom:
