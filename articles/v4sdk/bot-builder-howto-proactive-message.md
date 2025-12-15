@@ -25,7 +25,7 @@ Proactive messages can be useful in various scenarios. For example, if the user 
 
 This article covers information about proactive messages for bots in general. For information about proactive messages in Microsoft Teams, see
 
-- The **Teams conversation bot** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot#readme), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot#readme), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot#readme).
+- The **Teams conversation bot** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot#readme), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot#readme), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/57.teams-conversation-bot#readme), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot#readme).
 - The Microsoft Teams documentation on how to [send proactive messages](/microsoftteams/platform/bots/how-to/conversations/send-proactive-messages).
 
 [!INCLUDE [java-python-sunset-alert](../includes/java-python-sunset-alert.md)]
@@ -33,7 +33,7 @@ This article covers information about proactive messages for bots in general. Fo
 ## Prerequisites
 
 - Understand [bot basics](bot-builder-basics.md).
-- A copy of the **proactive messages** sample in [**C#**](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/16.proactive-messages#readme), [**JavaScript**](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/16.proactive-messages#readme), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/16.proactive-messages#readme). The sample is used to explain proactive messaging in this article.
+- A copy of the **proactive messages** sample in [**C#**](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/16.proactive-messages#readme), [**JavaScript**](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/16.proactive-messages#readme), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/16.proactive-messages#readme), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/16.proactive-messages#readme). The sample is used to explain proactive messaging in this article.
 
 ## About the proactive sample
 
@@ -78,6 +78,12 @@ When the Bot Framework Emulator connects to the bot, the bot receives two conver
 [!code-javascript[onConversationUpdateActivity](~/../botbuilder-samples/samples/javascript_nodejs/16.proactive-messages/bots/proactiveBot.js?range=13-17&highlight=2)]
 
 [!code-javascript[onConversationUpdateActivity](~/../botbuilder-samples/samples/javascript_nodejs/16.proactive-messages/bots/proactiveBot.js?range=41-44&highlight=2-3)]
+
+# [Java](#tab/java)
+
+**ProactiveBot.java**
+
+[!code-java[OnConversationUpdateActivityAsync](~/../botbuilder-samples/archive/samples/java_springboot/16.proactive-messages/src/main/java/com/microsoft/bot/sample/proactive/ProactiveBot.java?range=74-84&highlight=3,9-10)]
 
 # [Python](#tab/python)
 
@@ -124,6 +130,15 @@ The server then uses the `continueConversation` method to send the proactive mes
 The parameter to `continueConversation` is a function that serves as the bot's turn handler for this turn.
 
 [!code-javascript[Notify logic](~/../botbuilder-samples/samples/javascript_nodejs/16.proactive-messages/index.js?range=80-92&highlight=4-6)]
+
+# [Java](#tab/java)
+
+**NotifyController.java**
+
+Each time the bot's notify page is requested, the notify controller retrieves the conversation references from the dictionary.
+The controller then uses the `continueConversation` method to send the proactive message.
+
+[!code-java[Notify logic](~/../botbuilder-samples/archive/samples/java_springboot/16.proactive-messages/src/main/java/com/microsoft/bot/sample/proactive/NotifyController.java?range=26-64&highlight=28-30)]
 
 # [Python](#tab/python)
 

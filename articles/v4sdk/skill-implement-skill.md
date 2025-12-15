@@ -34,7 +34,7 @@ This article demonstrates how to implement a skill that echoes the user's input.
 
 - Knowledge of [bot basics](bot-builder-basics.md) and [skills](skills-conceptual.md).
 - An Azure subscription (to deploy your skill). If you don't have one, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
-- A copy of the **skills simple bot-to-bot** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/80.skills-simple-bot-to-bot), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/80.skills-simple-bot-to-bot).
+- A copy of the **skills simple bot-to-bot** sample in [**C#**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot), [**JavaScript**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/80.skills-simple-bot-to-bot), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/80.skills-simple-bot-to-bot), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/80.skills-simple-bot-to-bot).
 
 > [!NOTE]
 > Starting with version 4.11, you don't need an app ID and password to test a skill locally in the Bot Framework Emulator. An Azure subscription is still required to deploy your skill to Azure.
@@ -55,6 +55,10 @@ This article focuses on the skill, which includes support logic in its bot and a
 ### [JavaScript](#tab/javascript)
 
 :::image type="content" source="./media/skills-simple-skill-js.png" alt-text="Skill JavaScript class diagram.":::
+
+### [Java](#tab/java)
+
+:::image type="content" source="./media/skills-simple-skill-java.png" alt-text="Skill Java class diagram.":::
 
 ### [Python](#tab/python)
 
@@ -97,6 +101,14 @@ Optionally, add the skill's identity information to the .env file.
 
 [!code-ini[configuration file](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/.env)]
 
+### [Java](#tab/java)
+
+**DialogSkillBot\resources\application.properties**
+
+Optionally, add the skill's app ID and password to the application.properties file.
+
+[!code-ini[configuration file](~/../botbuilder-samples/archive/samples/java_springboot/80.skills-simple-bot-to-bot/DialogSkillBot/src/main/resources/application.properties)]
+
 ### [Python](#tab/python)
 
 Optionally, add the skill's app ID and password to the config.py file.
@@ -134,6 +146,12 @@ Optionally, use the activity's _value_ property to include a return value, and u
 
 [!code-javascript[onMessage](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/bot.js?range=10-26)]
 
+#### [Java](#tab/java)
+
+**echoSkillBot\EchoBot.java**
+
+[!code-java[Message handler](~/../botbuilder-samples/archive/samples/java_springboot/80.skills-simple-bot-to-bot/DialogSkillBot/src/main/java/com/microsoft/bot/sample/echoskillbot/EchoBot.java?range=28-52)]
+
 #### [Python](#tab/python)
 
 **echo-skill-bot/bots/echo_bot.py**
@@ -161,6 +179,12 @@ The logic for this skill doesn't change from turn to turn. If you implement a sk
  Use the `onUnrecognizedActivityType` method to add an end-of-conversation logic. In the handler, check whether the unrecognized activity's `type` equals `endOfConversation`.
 
 [!code-javascript[onEndOfConversation](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/bot.js?range=28-35)]
+
+#### [Java](#tab/java)
+
+**echoSkillBot\EchoBot.java**
+
+[!code-java[End-of-conversation handler](~/../botbuilder-samples/archive/samples/java_springboot/80.skills-simple-bot-to-bot/DialogSkillBot/src/main/java/com/microsoft/bot/sample/echoskillbot/EchoBot.java?range=55-61)]
 
 #### [Python](#tab/python)
 
@@ -192,6 +216,10 @@ The SDK provides an `AllowedCallersClaimsValidator` class that adds application-
 
 The SDK provides an `allowedCallersClaimsValidator` class that adds application-level authorization based on a simple list of IDs of the applications that are allowed to call the skill. If the list contains an asterisk (*), then all callers are allowed. The claims validator is configured in **index.js**.
 
+### [Java](#tab/java)
+
+The SDK provides an `AllowedCallersClaimsValidator` class that adds application-level authorization based on a simple list of IDs of the applications that are allowed to call the skill. If the list contains an asterisk (*), then all callers are allowed. The claims validator is configured in **Application.java**.
+
 ### [Python](#tab/python)
 
 Define a claims validation method that throws an error to reject an incoming request.
@@ -217,6 +245,12 @@ When an error occurs, the skill's adapter should clear conversation state for th
 **echo-skill-bot/index.js**
 
 [!code-javascript[adapter.onTurnError](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/index.js?range=79-121)]
+
+### [Java](#tab/java)
+
+**echoSkillBot\SkillAdapterWithErrorHandler.java**
+
+[!code-csharp[Error handler](~/../botbuilder-samples/archive/samples/java_springboot/80.skills-simple-bot-to-bot/DialogSkillBot/src/main/java/com/microsoft/bot/sample/echoskillbot/SkillAdapterWithErrorHandler.java?range=20-81)]
 
 ### [Python](#tab/python)
 
@@ -244,6 +278,12 @@ This sample adds claims validation to the authentication configuration and uses 
 
 [!code-javascript[allowedCallers, claimsValidators, authConfig, credentialsFactory, bot auth, and adapter](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/index.js?range=43-77)]
 
+### [Java](#tab/java)
+
+**echoSkillBot\Application.java**
+
+[!code-java[Configure authentication configuration and adapter](~/../botbuilder-samples/archive/samples/java_springboot/80.skills-simple-bot-to-bot/DialogSkillBot/src/main/java/com/microsoft/bot/sample/echoskillbot/Application.java?range=61-68)]
+
 ### [Python](#tab/python)
 
 **echo-skill-bot/app.py**
@@ -270,6 +310,12 @@ The latest schema version is [v2.1](https://schemas.botframework.com/schemas/ski
 
 [!code-json[Manifest](~/../botbuilder-samples/samples/javascript_nodejs/80.skills-simple-bot-to-bot/echo-skill-bot/manifest/echoskillbot-manifest-1.0.json)]
 
+### [Java](#tab/java)
+
+**DialogSkillBot\webapp\manifest\echoskillbot-manifest-1.0.json**
+
+[!code-json[Manifest](~/../botbuilder-samples/archive/samples/java_springboot/80.skills-simple-bot-to-bot/DialogSkillBot/src/main/webapp/manifest/echoskillbot-manifest-1.0.json)]
+
 ### [Python](#tab/python)
 
 **echo_skill_bot/wwwroot/manifest/echoskillbot-manifest-1.0.json**
@@ -286,7 +332,7 @@ At this point, you can test the skill in the Emulator as if it were a normal bot
 
 Download and install the latest [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/blob/master/README.md)
 
-1. Run the echo skill bot locally on your machine. If you need instructions, refer to the `README` file for the [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/80.skills-simple-bot-to-bot), or [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/80.skills-simple-bot-to-bot) sample.
+1. Run the echo skill bot locally on your machine. If you need instructions, refer to the `README` file for the [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/80.skills-simple-bot-to-bot), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/80.skills-simple-bot-to-bot), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/master/archive/samples/java_springboot/80.skills-simple-bot-to-bot), or [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/80.skills-simple-bot-to-bot) sample.
 1. Use the Emulator to test the bot. When you send an "end" or "stop" message to the skill, it sends an `endOfConversation` activity in addition to the reply message. The skill sends the `endOfConversation` activity to indicate the skill is finished.
 
 :::image type="content" source="media/skills-simple-skill-test.png" alt-text="Example transcript showing the end-of-conversation activity.":::

@@ -29,6 +29,19 @@ Run the [`az webapp deploy` command](/cli/azure/webapp#az-webapp-deploy) from th
 
 > [!TIP]
 > By default, this command deploys to the production slot. Use the optional `--slot` parameter to specify a different slot.
-> For more information, see the [`az webapp deploy` command reference documentation](/cli/azure/webapp#az-webapp-deploy).                 |
+> For more information, see the [`az webapp deploy` command reference documentation](/cli/azure/webapp#az-webapp-deploy).
+
+### [Java](#tab/java)
+
+In the project directory, run the following command from the command line.
+
+```console
+mvn azure-webapp:deploy -Dgroupname="<resource-group-name>" -Dbotname="<name-of-web-app>"
+```
+
+| Option     | Description                                                  |
+|:-----------|:-------------------------------------------------------------|
+| Dgroupname | The name of the Azure resource group that contains your bot. |
+| Dbotname   | Name of the app service you used earlier.                    |
 
 ---

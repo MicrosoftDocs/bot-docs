@@ -51,17 +51,17 @@ To use dialogs, install the **Microsoft.Bot.Builder.Dialogs** NuGet package.
 
 Implement the `CancelAndHelpDialog` class to handle user interruptions. The cancelable dialogs, `BookingDialog` and `DateResolverDialog` derive from this class.
 
-[!code-csharp[Class signature](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/Dialogs/CancelAndHelpDialog.cs?range=12)]
+[!code-csharp[Class signature](~/../botbuilder-samples/archive/samples/csharp_dotnetcore/13.core-bot/Dialogs/CancelAndHelpDialog.cs?range=12)]
 
 In the `CancelAndHelpDialog` class, the `OnContinueDialogAsync` method calls the `InterruptAsync` method to check if the user has interrupted the normal flow. If the flow is interrupted, base class methods are called; otherwise, the return value from the `InterruptAsync` is returned.
 
-[!code-csharp[Overrides](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/Dialogs/CancelAndHelpDialog.cs?range=22-31)]
+[!code-csharp[Overrides](~/../botbuilder-samples/archive/samples/csharp_dotnetcore/13.core-bot/Dialogs/CancelAndHelpDialog.cs?range=22-31)]
 
 If the user types "help", the `InterruptAsync` method sends a message and then calls `DialogTurnResult (DialogTurnStatus.Waiting)` to indicate that the dialog on top is waiting for a response from the user. In this way, the conversation flow is interrupted for a turn only, and the next turn continues from where the conversation left off.
 
 If the user types "cancel", it calls `CancelAllDialogsAsync` on its inner dialog context, which clears its dialog stack and causes it to exit with a canceled status and no result value. To the `MainDialog` (shown later on), it will appear that the booking dialog ended and returned null, similar to when the user chooses not to confirm their booking.
 
-[!code-csharp[Interrupt](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/Dialogs/CancelAndHelpDialog.cs?range=33-56)]
+[!code-csharp[Interrupt](~/../botbuilder-samples/archive/samples/csharp_dotnetcore/13.core-bot/Dialogs/CancelAndHelpDialog.cs?range=33-56)]
 
 # [JavaScript](#tab/javascript)
 
@@ -71,17 +71,35 @@ To use dialogs, install the **botbuilder-dialogs** npm package.
 
 Implement the `CancelAndHelpDialog` class to handle user interruptions. The cancelable dialogs, `BookingDialog` and `DateResolverDialog` extend this class.
 
-[!code-javascript[Class signature](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/dialogs/cancelAndHelpDialog.js?range=11)]
+[!code-javascript[Class signature](~/../botbuilder-samples/archive/samples/javascript_nodejs/13.core-bot/dialogs/cancelAndHelpDialog.js?range=11)]
 
 In the `CancelAndHelpDialog` class, the `onContinueDialog` method calls the `interrupt` method to check if the user has interrupted the normal flow. If the flow is interrupted, base class methods are called; otherwise, the return value from the `interrupt` is returned.
 
-[!code-javascript[Overrides](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/dialogs/cancelAndHelpDialog.js?range=12-18)]
+[!code-javascript[Overrides](~/../botbuilder-samples/archive/samples/javascript_nodejs/13.core-bot/dialogs/cancelAndHelpDialog.js?range=12-18)]
 
 If the user types "help", the `interrupt` method sends a message and then returns a `{ status: DialogTurnStatus.waiting }` object to indicate that the dialog on top is waiting for a response from the user. In this way, the conversation flow is interrupted for a turn only, and the next turn continues from where the conversation left off.
 
 If the user types "cancel", it calls `cancelAllDialogs` on its inner dialog context, which clears its dialog stack and causes it to exit with a canceled status and no result value. To the `MainDialog` (shown later on), it will appear that the booking dialog ended and returned null, similar to when the user chooses not to confirm their booking.
 
-[!code-javascript[Interrupt](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/dialogs/cancelAndHelpDialog.js?range=20-39)]
+[!code-javascript[Interrupt](~/../botbuilder-samples/archive/samples/javascript_nodejs/13.core-bot/dialogs/cancelAndHelpDialog.js?range=20-39)]
+
+# [Java](#tab/java)
+
+**CancelAndHelpDialog.java**
+
+Implement the `CancelAndHelpDialog` class to handle user interruptions. The cancelable dialogs, `BookingDialog` and `DateResolverDialog` derive from this class.
+
+[!code-java[Class signature](~/../botbuilder-samples/archive/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/CancelAndHelpDialog.java?range=20)]
+
+In the `CancelAndHelpDialog` class, the `onContinueDialog` method calls the `interrupt` method to check if the user has interrupted the normal flow. If the flow is interrupted, base class methods are called; otherwise, the return value from the `interrupt` is returned.
+
+[!code-java[Overrides](~/../botbuilder-samples/archive/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/CancelAndHelpDialog.java?range=43-51)]
+
+If the user types "help", the `interrupt` method sends a message and then calls `DialogTurnResult(DialogTurnStatus.WAITING)` to indicate that the dialog on top is waiting for a response from the user. In this way, the conversation flow is interrupted for a turn only, and the next turn continues from where the conversation left off.
+
+If the user types "cancel", it calls `cancelAllDialogs` on its inner dialog context, which clears its dialog stack and causes it to exit with a canceled status and no result value. To the `MainDialog` (shown later on), it will appear that the booking dialog ended and returned null, similar to when the user chooses not to confirm their booking.
+
+[!code-java[Interrupt](~/../botbuilder-samples/archive/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/CancelAndHelpDialog.java?range=53-79)]
 
 ## [Python](#tab/python)
 
@@ -95,17 +113,17 @@ For more information, about installing the packages, see the samples repository 
 
 Implement the `CancelAndHelpDialog` class to handle user interruptions. The cancelable dialogs, `BookingDialog` and `DateResolverDialog` derive from this class.
 
-[!code-python[class signature](~/../botbuilder-samples/samples/python/13.core-bot/dialogs/cancel_and_help_dialog.py?range=14)]
+[!code-python[class signature](~/../botbuilder-samples/archive/samples/python/13.core-bot/dialogs/cancel_and_help_dialog.py?range=14)]
 
 In the `CancelAndHelpDialog` class, the `on_continue_dialog` method calls the `interrupt` method to check if the user has interrupted the normal flow. If the flow is interrupted, base class methods are called; otherwise, the return value from the `interrupt` is returned.
 
-[!code-python[dialog](~/../botbuilder-samples/samples/python/13.core-bot/dialogs/cancel_and_help_dialog.py?range=18-23)]
+[!code-python[dialog](~/../botbuilder-samples/archive/samples/python/13.core-bot/dialogs/cancel_and_help_dialog.py?range=18-23)]
 
 If the user types "help" or "?", the `interrupt` method sends a message and then calls `DialogTurnResult(DialogTurnStatus.Waiting)` to indicate that the dialog on top of the stack is waiting for a response from the user. In this way, the conversation flow is interrupted for a turn only, and the next turn continues from where the conversation left off.
 
 If the user types "cancel" or "quit", it calls `cancel_all_dialogs()` on its inner dialog context, which clears its dialog stack and causes it to exit with a canceled status and no result value. To the `MainDialog`, shown later, it will appear that the booking dialog ended and returned null, similar to when the user chooses not to confirm their booking.
 
-[!code-python[interrupt](~/../botbuilder-samples/samples/python/13.core-bot/dialogs/cancel_and_help_dialog.py?range=25-47)]
+[!code-python[interrupt](~/../botbuilder-samples/archive/samples/python/13.core-bot/dialogs/cancel_and_help_dialog.py?range=25-47)]
 
 ---
 
@@ -119,11 +137,11 @@ Once the interrupt handling class is implemented, review what happens when this 
 
 As the new message activity arrives, the bot runs the `MainDialog`. The `MainDialog` prompts the user for what it can help with. And then it starts the `BookingDialog` in the `MainDialog.ActStepAsync` method, with a call to `BeginDialogAsync` as shown below.
 
-[!code-csharp[ActStepAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/Dialogs/MainDialog.cs?range=59-102&highlight=6,26)]
+[!code-csharp[ActStepAsync](~/../botbuilder-samples/archive/samples/csharp_dotnetcore/13.core-bot/Dialogs/MainDialog.cs?range=59-102&highlight=6,26)]
 
 Next, in the `FinalStepAsync` method of the `MainDialog` class, the booking dialog ended and the booking is considered to be complete or canceled.
 
-[!code-csharp[FinalStepAsync](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/Dialogs/MainDialog.cs?range=131-151)]
+[!code-csharp[FinalStepAsync](~/../botbuilder-samples/archive/samples/csharp_dotnetcore/13.core-bot/Dialogs/MainDialog.cs?range=131-151)]
 
 The code in `BookingDialog` isn't shown here as it's not directly related to interruption handling. It's used to prompt users for booking details. You can find that code in **Dialogs\BookingDialogs.cs**.
 
@@ -133,13 +151,27 @@ The code in `BookingDialog` isn't shown here as it's not directly related to int
 
 As the new message activity arrives, the bot runs the `MainDialog`. The `MainDialog` prompts the user for what it can help with. And then it starts the `bookingDialog` in the `MainDialog.actStep` method, with a call to `beginDialog` as shown below.
 
-[!code-javascript[Act step](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/dialogs/mainDialog.js?range=73-117&highlight=6,27)]
+[!code-javascript[Act step](~/../botbuilder-samples/archive/samples/javascript_nodejs/13.core-bot/dialogs/mainDialog.js?range=73-117&highlight=6,27)]
 
 Next, in the `finalStep` method of the `MainDialog` class, the booking dialog ended and the booking is considered to be complete or canceled.
 
-[!code-javascript[Final step](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/dialogs/mainDialog.js?range=144-161)]
+[!code-javascript[Final step](~/../botbuilder-samples/archive/samples/javascript_nodejs/13.core-bot/dialogs/mainDialog.js?range=144-161)]
 
 The code in `BookingDialog` isn't shown here as it's not directly related to interruption handling. It's used to prompt users for booking details. You can find that code in **dialogs/bookingDialogs.js**.
+
+# [Java](#tab/java)
+
+**MainDialog.java**
+
+As the new message activity arrives, the bot runs the `MainDialog`. The `MainDialog` prompts the user for what it can help with. And then, it starts the `BookingDialog` in the `MainDialog.actStep` method, with a call to `beginDialog` as shown below.
+
+[!code-java[ActStep](~/../botbuilder-samples/archive/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/MainDialog.java?range=100-156&highlight=4,27)]
+
+Next, in the `finalStep` method of the `MainDialog` class, the booking dialog ended and the booking is considered to be complete or canceled.
+
+[!code-java[FinalStep](~/../botbuilder-samples/archive/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/MainDialog.java?range=207-231)]
+
+The code in `BookingDialog` isn't shown here as it's not directly related to interruption handling. It's used to prompt users for booking details. You can find that code in **BookingDialogs.java**.
 
 ## [Python](#tab/python)
 
@@ -147,11 +179,11 @@ The code in `BookingDialog` isn't shown here as it's not directly related to int
 
 As the new message activity arrives, the bot runs the `MainDialog`. The `MainDialog` prompts the user for what it can help with. And then it starts the `bookingDialog` in the `act_step` method, with a call to `begin_dialog` as shown below.
 
-[!code-python[act step](~/../botbuilder-samples/samples/python/13.core-bot/dialogs/main_dialog.py?range=63-100&highlight=4-6,20)]
+[!code-python[act step](~/../botbuilder-samples/archive/samples/python/13.core-bot/dialogs/main_dialog.py?range=63-100&highlight=4-6,20)]
 
 Next, in the `final_step` method of the `MainDialog` class, the booking dialog ended and the booking is considered to be complete or canceled.
 
-[!code-python[final step](~/../botbuilder-samples/samples/python/13.core-bot/dialogs/main_dialog.py?range=102-118)]
+[!code-python[final step](~/../botbuilder-samples/archive/samples/python/13.core-bot/dialogs/main_dialog.py?range=102-118)]
 
 ---
 
@@ -165,7 +197,7 @@ The adapter's error handler handles any exceptions that weren't caught in the bo
 
 In the sample, the adapter's `OnTurnError` handler receives any exceptions thrown by your bot's turn logic. If there's an exception thrown, the handler deletes the conversation state for the current conversation to prevent the bot from getting stuck in an error loop caused by being in a bad state.
 
-[!code-csharp[AdapterWithErrorHandler](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/AdapterWithErrorHandler.cs?range=20-54)]
+[!code-csharp[AdapterWithErrorHandler](~/../botbuilder-samples/archive/samples/csharp_dotnetcore/13.core-bot/AdapterWithErrorHandler.cs?range=20-54)]
 
 # [JavaScript](#tab/javascript)
 
@@ -173,7 +205,11 @@ In the sample, the adapter's `OnTurnError` handler receives any exceptions throw
 
 In the sample, the adapter's `onTurnError` handler receives any exceptions thrown by your bot's turn logic. If there's an exception thrown, the handler deletes the conversation state for the current conversation to prevent the bot from getting stuck in an error loop caused by being in a bad state.
 
-[!code-javascript[AdapterWithErrorHandler](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/index.js?range=50-73)]
+[!code-javascript[AdapterWithErrorHandler](~/../botbuilder-samples/archive/samples/javascript_nodejs/13.core-bot/index.js?range=50-73)]
+
+# [Java](#tab/java)
+
+By registering an `AdapterWithErrorHandler` with the Spring framework in **Application.java** for the `BotFrameworkHttpAdapter` in this sample, the adapter's `onTurnError` handler receives any exceptions thrown by your bot's turn logic. If there's an exception thrown, the handler deletes the conversation state for the current conversation to prevent the bot from getting stuck in an error loop caused by being in a bad state. In the Java SDK, the `AdapterWithErrorHandler` is implemented as part of the SDK and is included in the **com.microsoft.bot.integration** package. See the Java SDK source code for details on the implementation of this adapter.
 
 ## [Python](#tab/python)
 
@@ -181,7 +217,7 @@ In the sample, the adapter's `onTurnError` handler receives any exceptions throw
 
 In the sample, the adapter's `on_error` handler receives any exceptions thrown by your bot's turn logic. If there's an exception thrown, the handler deletes the conversation state for the current conversation to prevent the bot from getting stuck in an error loop caused by being in a bad state.
 
-[!code-python[adapter_with_error_handler](~/../botbuilder-samples/samples/python/13.core-bot/adapter_with_error_handler.py?range=16-56)]
+[!code-python[adapter_with_error_handler](~/../botbuilder-samples/archive/samples/python/13.core-bot/adapter_with_error_handler.py?range=16-56)]
 
 ---
 
@@ -193,13 +229,13 @@ In the sample, the adapter's `on_error` handler receives any exceptions thrown b
 
 Finally, in `Startup.cs`, the bot is created as a transient, and on every turn, a new instance of the bot is created.
 
-[!code-csharp[Add transient bot](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/Startup.cs?range=43-44)]
+[!code-csharp[Add transient bot](~/../botbuilder-samples/archive/samples/csharp_dotnetcore/13.core-bot/Startup.cs?range=43-44)]
 
 For reference, here are the class definitions that are used in the call to create the bot above.
 
-[!code-csharp[DialogAndWelcomeBot signature](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=16)]
-[!code-csharp[DialogBot signature](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/Bots/DialogBot.cs?range=18-19)]
-[!code-csharp[MainDialog signature](~/../botbuilder-samples/samples/csharp_dotnetcore/13.core-bot/Dialogs/MainDialog.cs?range=17)]
+[!code-csharp[DialogAndWelcomeBot signature](~/../botbuilder-samples/archive/samples/csharp_dotnetcore/13.core-bot/Bots/DialogAndWelcomeBot.cs?range=16)]
+[!code-csharp[DialogBot signature](~/../botbuilder-samples/archive/samples/csharp_dotnetcore/13.core-bot/Bots/DialogBot.cs?range=18-19)]
+[!code-csharp[MainDialog signature](~/../botbuilder-samples/archive/samples/csharp_dotnetcore/13.core-bot/Dialogs/MainDialog.cs?range=17)]
 
 # [JavaScript](#tab/javascript)
 
@@ -207,30 +243,44 @@ For reference, here are the class definitions that are used in the call to creat
 
 Finally, in `index.js`, the bot is created.
 
-[!code-javascript[Create recognizer, dialogs, and bot](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/index.js?range=88-97)]
+[!code-javascript[Create recognizer, dialogs, and bot](~/../botbuilder-samples/archive/samples/javascript_nodejs/13.core-bot/index.js?range=88-97)]
 
 For reference, here are the class definitions that are used in the call to create the bot above.
 
-[!code-javascript[MainDialog signature](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/dialogs/mainDialog.js?range=12)]
+[!code-javascript[MainDialog signature](~/../botbuilder-samples/archive/samples/javascript_nodejs/13.core-bot/dialogs/mainDialog.js?range=12)]
 
-[!code-javascript[DialogAndWelcomeBot signature](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/bots/dialogAndWelcomeBot.js?range=8)]
+[!code-javascript[DialogAndWelcomeBot signature](~/../botbuilder-samples/archive/samples/javascript_nodejs/13.core-bot/bots/dialogAndWelcomeBot.js?range=8)]
 
-[!code-javascript[DialogBot signature](~/../botbuilder-samples/samples/javascript_nodejs/13.core-bot/bots/dialogBot.js?range=6)]
+[!code-javascript[DialogBot signature](~/../botbuilder-samples/archive/samples/javascript_nodejs/13.core-bot/bots/dialogBot.js?range=6)]
+
+# [Java](#tab/java)
+
+**Application.java**
+
+Finally, in `Application.java`, the bot is created.
+
+[!code-java[Add transient bot](~/../botbuilder-samples/archive/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/Application.java?range=57-66)]
+
+For reference, here are the class definitions that are used in the call to create the bot above.
+
+[!code-java[DialogAndWelcomeBot signature](~/../botbuilder-samples/archive/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/DialogAndWelcomeBot.java?range=31)]
+[!code-java[DialogBot signature](~/../botbuilder-samples/archive/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/DialogBot.java?range=26)]
+[!code-java[MainDialog signature](~/../botbuilder-samples/archive/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/MainDialog.java?range=32)]
 
 ## [Python](#tab/python)
 
 **app.py**
 Finally, in `app.py`, the bot is created.
 
-[!code-python[create bot](~/../botbuilder-samples/samples/python/13.core-bot/app.py?range=46-50)]
+[!code-python[create bot](~/../botbuilder-samples/archive/samples/python/13.core-bot/app.py?range=46-50)]
 
 For reference, here are the class definitions that are used in the call to create the bot.
 
-[!code-python[main dialog](~/../botbuilder-samples/samples/python/13.core-bot/dialogs/main_dialog.py?range=20)]
+[!code-python[main dialog](~/../botbuilder-samples/archive/samples/python/13.core-bot/dialogs/main_dialog.py?range=20)]
 
-[!code-python[dialog and welcome](~/../botbuilder-samples/samples/python/13.core-bot/bots/dialog_and_welcome_bot.py?range=21)]
+[!code-python[dialog and welcome](~/../botbuilder-samples/archive/samples/python/13.core-bot/bots/dialog_and_welcome_bot.py?range=21)]
 
-[!code-python[dialog](~/../botbuilder-samples/samples/python/13.core-bot/bots/dialog_bot.py?range=9)]
+[!code-python[dialog](~/../botbuilder-samples/archive/samples/python/13.core-bot/bots/dialog_bot.py?range=9)]
 
 ---
 
@@ -242,7 +292,7 @@ For reference, here are the class definitions that are used in the call to creat
 
 ## Additional information
 
-- The **24.bot-authentication-msgraph** sample in [C#](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/24.bot-authentication-msgraph#readme), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/24.bot-authentication-msgraph#readme), or [Python](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/24.bot-authentication-msgraph#readme) shows how to handle a logout request. It uses a pattern similar to the one shown here for handling interruptions.
+- The **24.bot-authentication-msgraph** sample in [C#](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/24.bot-authentication-msgraph#readme), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/24.bot-authentication-msgraph#readme), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/24.bot-authentication-msgraph#readme), or [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/24.bot-authentication-msgraph#readme) shows how to handle a logout request. It uses a pattern similar to the one shown here for handling interruptions.
 
 - You should send a default response instead of doing nothing and leaving the user wondering what is going on. The default response should tell the user what commands the bot understands so the user can get back on track.
 
@@ -255,4 +305,5 @@ For reference, here are the class definitions that are used in the call to creat
 
 [cs-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot#readme
 [js-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot#readme
+[java-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/13.core-bot#readme
 [python-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/13.core-bot#readme

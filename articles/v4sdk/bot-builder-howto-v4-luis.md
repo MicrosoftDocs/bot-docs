@@ -29,7 +29,7 @@ This topic walks you through adding LUIS to a flight booking application to reco
 ## Prerequisites
 
 - A [LUIS](https://www.luis.ai) account.
-- A copy of the **Core Bot** sample in [**C#**](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot), [**JavaScript**](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/13.core-bot).
+- A copy of the **Core Bot** sample in [**C#**](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/13.core-bot), [**JavaScript**](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/13.core-bot), [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/13.core-bot), or [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/13.core-bot).
 - Knowledge of [bot basics](bot-builder-basics.md) and [natural language processing](/azure/ai-services/luis/what-is-luis).
 
 ## About this sample
@@ -69,6 +69,23 @@ Upon the response back, `mainDialog` preserves information for the user returned
 - `destination` the destination city.
 - `origin` the originating city.
 - `travelDate` the date to book the flight.
+
+# [Java](#tab/java)
+
+1. After each processing of user input, `DialogBot` saves the current state of both `UserState` and `ConversationState`.
+1. Once all the required information has been gathered, the coding sample creates a demo flight booking reservation.
+1. In this article, we'll be covering the LUIS aspects of this sample. However, the general flow of the sample is:
+
+- `onMembersAdded` is called when a new user is connected and displays a welcome card.
+- `onMessageActivity` is called for each user input received.
+
+:::image type="content" source="./media/how-to-luis/luis-logic-flow-java.png" alt-text="Class diagram outlining the structure of the Java sample.":::
+
+The `onMessageActivity` module runs the appropriate dialog through the `run` dialog extension method. Then the main dialog calls the LUIS helper to find the top scoring user intent. If the top intent for the user input returns "BookFlight", the helper fills out information from the user that LUIS returned. After that, the main dialog starts the `BookingDialog`, which acquires additional information as needed from the user such as:
+
+- `Origin` the originating city
+- `TravelDate` the date to book the flight
+- `Destination` the destination city
 
 # [Python](#tab/python)
 
@@ -132,15 +149,23 @@ Add the information required to access your LUIS app including application ID, a
 
 **appsetting.json**
 
-[!code-json[appsettings](~/../BotBuilder-Samples/samples/csharp_dotnetcore/13.core-bot/appsettings.json)]
+[!code-json[appsettings](~/../BotBuilder-Samples/archive/samples/csharp_dotnetcore/13.core-bot/appsettings.json)]
 
 # [JavaScript](#tab/javascript)
 
 Add the information required to access your LUIS app including application ID, authoring key, and region into the `.env` file. In the previous step, you retrieved these values from your published LUIS app. The API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
 
-**.env**
+<!--**.env**
 
-[!code-ini[.env file](~/../BotBuilder-Samples/samples/javascript_nodejs/13.core-bot/.env)]
+[!code-ini[.env file](~/../BotBuilder-Samples/archive/samples/javascript_nodejs/13.core-bot/.env)]-->
+
+# [Java](#tab/java)
+
+Add the information required to access your LUIS app including application ID, authoring key, and region into the `application.properties` file. In the previous step, you retrieved these values from your published LUIS app. The API host name should be in the format `<your region>.api.cognitive.microsoft.com`.
+
+**application.properties**
+
+[!code-ini[appsettings](~/../BotBuilder-Samples/archive/samples/java_springboot/13.core-bot/src/main/resources/application.properties)]
 
 # [Python](#tab/python)
 
@@ -148,7 +173,7 @@ Add the information required to access your LUIS app including application ID, a
 
 **config.py**
 
-[!code-python[config.py](~/../botbuilder-samples/samples/python/13.core-bot/config.py?range=14-19)]
+[!code-python[config.py](~/../botbuilder-samples/archive/samples/python/13.core-bot/config.py?range=14-19)]
 
 ---
 
@@ -162,13 +187,13 @@ To connect to the LUIS service, the bot pulls the information you added to the a
 
 **FlightBookingRecognizer.cs**
 
-[!code-csharp[luisHelper](~/../BotBuilder-Samples/samples/csharp_dotnetcore/13.core-bot/FlightBookingRecognizer.cs?range=12-48)]
+[!code-csharp[luisHelper](~/../BotBuilder-Samples/archive/samples/csharp_dotnetcore/13.core-bot/FlightBookingRecognizer.cs?range=12-48)]
 
 The `FlightBookingEx.cs` contains the logic to extract _From_, _To_ and _TravelDate_; it extends the partial class `FlightBooking.cs` used to store LUIS results when calling `FlightBookingRecognizer.RecognizeAsync<FlightBooking>` from the `MainDialog.cs`.
 
 **CognitiveModels\FlightBookingEx.cs**
 
-[!code-csharp[LUIS helper](~/../BotBuilder-Samples/samples/csharp_dotnetcore/13.core-bot/CognitiveModels/FlightBookingEx.cs?range=8-35)]
+[!code-csharp[LUIS helper](~/../BotBuilder-Samples/archive/samples/csharp_dotnetcore/13.core-bot/CognitiveModels/FlightBookingEx.cs?range=8-35)]
 
 # [JavaScript](#tab/javascript)
 
@@ -178,9 +203,29 @@ To connect to the LUIS service, the bot uses the information you added to the `.
 
 **dialogs/flightBookingRecognizer.js**
 
-[!code-javascript[LUIS helper](~/../BotBuilder-Samples/samples/javascript_nodejs/13.core-bot/dialogs/flightBookingRecognizer.js?range=6-70)]
+[!code-javascript[LUIS helper](~/../BotBuilder-Samples/archive/samples/javascript_nodejs/13.core-bot/dialogs/flightBookingRecognizer.js?range=6-70)]
 
 The logic to extract From, To and TravelDate is implemented as helper methods inside `flightBookingRecognizer.js`. These methods are used after calling `flightBookingRecognizer.executeLuisQuery()` from `mainDialog.js`
+
+# [Java](#tab/java)
+
+Be sure that the **com.microsoft.bot.bot-ai-luis-v3** package is added to your pom.xml file.
+
+:::code language="xml" source="~/../BotBuilder-Samples/archive/samples/java_springboot/13.core-bot/pom.xml" range="109-113":::
+
+To connect to the LUIS service, the bot pulls the information you added to the application.properties file. The `FlightBookingRecognizer` class contains code with your settings from the application.properties file and queries the LUIS service by calling `recognize` method.
+
+**FlightBookingRecognizer.java**
+
+[!code-java[luisHelper](~/../BotBuilder-Samples/archive/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/FlightBookingRecognizer.java?range=27-50)]
+
+[!code-java[luisHelper](~/../BotBuilder-Samples/archive/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/FlightBookingRecognizer.java?range=142-151)]
+
+The `FlightBookingRecognizer.cs` contains the logic to extract _From_, _To_ and _TravelDate_; and is called from the `MainDialog.java` to decode the results of the Luis query result.
+
+**FlightBookingRecognizer.java**
+
+[!code-csharp[LUIS helper](~/../BotBuilder-Samples/archive/samples/java_springboot/13.core-bot/src/main/java/com/microsoft/bot/sample/core/FlightBookingRecognizer.java?range=71-140)]
 
 # [Python](#tab/python)
 
@@ -190,13 +235,13 @@ To connect to the LUIS service, the bot uses the information you added to the `c
 
 **flight_booking_recognizer.py**
 
-[!code-python[config.py](~/../botbuilder-samples/samples/python/13.core-bot/flight_booking_recognizer.py?range=10-36&highlight=26)]
+[!code-python[config.py](~/../botbuilder-samples/archive/samples/python/13.core-bot/flight_booking_recognizer.py?range=10-36&highlight=26)]
 
 The logic to extract _From_, _To_ and _travel_date_ is implemented as helper methods from the `LuisHelper` class inside `luis_helper.py`. These methods are used after calling `LuisHelper.execute_luis_query()` from `main_dialog.py`
 
 **helpers/luis_helper.py**
 
-[!code-python[LUIS helper](~/../botbuilder-samples/samples/python/13.core-bot/helpers/luis_helper.py?range=30-102)]
+[!code-python[LUIS helper](~/../botbuilder-samples/archive/samples/python/13.core-bot/helpers/luis_helper.py?range=30-102)]
 
 ---
 

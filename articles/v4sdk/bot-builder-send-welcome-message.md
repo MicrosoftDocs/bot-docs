@@ -25,7 +25,7 @@ The primary goal when creating any bot is to engage your user in a meaningful co
 ## Prerequisites
 
 - Understand [bot basics](bot-builder-basics.md).
-- A copy of the **Welcome user sample** in either [C# Sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/03.welcome-user), [JS Sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/03.welcome-users), or [Python Sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/03.welcome-user). The code from the sample is used to explain how to send welcome messages.
+- A copy of the **Welcome user sample** in either [C# Sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/03.welcome-user), [JS Sample](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/03.welcome-users), [Java Sample](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/03.welcome-user) or [Python Sample](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/03.welcome-user). The code from the sample is used to explain how to send welcome messages.
 
 ## About this sample code
 
@@ -59,6 +59,18 @@ If `DidBotWelcomeUser` is _true_, the user's input is evaluated. Based on the co
 - Echo back a greeting received from the user.
 - Display a hero card providing addition information about bots.
 - Resend the `WelcomeMessage` explaining expected inputs for this bot.
+
+### [Java](#tab/java)
+
+The two main events encountered by the bot are:
+
+- `onMembersAdded`, called when a new user connects to your bot.
+- `onMessageActivity`, called when your bot receives new user input.
+
+:::image type="content" source="./media/welcome-user-flow-java.png" alt-text="Logic flow diagram for Java sample.":::
+
+Whenever a new user is connected, they're provided with a `WELCOME_MESSAGE`, `INFO_MESSAGE`, and `PATTERN_MESSAGE` by the bot.
+When a new user input is received, WelcomeUserState is checked to see if `getDidBotWelcomeUser()` is set to _true_. If not, an initial welcome user message is returned to the user.
 
 ### [Python](#tab/python)
 
@@ -96,6 +108,16 @@ At startup, user state is defined in `index.js` and consumed by the bot construc
 **index.js**
 [!code-javascript[define state](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/index.js?range=62-69)]
 
+### [Java](#tab/java)
+
+The user state object is created at startup and dependency injected into the bot constructor by the Spring container.
+
+**Application.java**
+[!code-java[define state](~/../botBuilder-samples/archive/samples/java_springboot/03.welcome-user/src/main/java/com/microsoft/bot/sample/welcomeuser/Application.java?range=50-53)]
+
+**WelcomeUserBot.java**
+[!code-java[consume state](~/../BotBuilder-Samples/archive/samples/java_springboot/03.welcome-user/src/main/java/com/microsoft/bot/sample/welcomeuser/WelcomeUserBot.java?range=80-86)]
+
 ### [Python](#tab/python)
 
 At startup, user state is defined in `app.py` and consumed by the bot constructor.
@@ -130,6 +152,15 @@ We now create a property accessor that provides us a handle to welcomedUserPrope
 [!code-javascript[Await state](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomebot.js?range=24-27)]
 [!code-javascript[Save state](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomebot.js?range=93-101)]
 
+### [Java](#tab/java)
+
+We now create a property accessor that provides us a handle to `WelcomeUserState` inside the `onMessageActivity` method.
+Then call the `get` method to get the properly scoped key. We then save user state data after each user input iteration using the `saveChanges` method.
+
+**WelcomeUserBot.java**
+[!code-java[Get state](~/../BotBuilder-Samples/archive/samples/java_springboot/03.welcome-user/src/main/java/com/microsoft/bot/sample/welcomeuser/WelcomeUserBot.java?range=151-155)]
+[!code-java[Save state](~/../BotBuilder-Samples/archive/samples/java_springboot/03.welcome-user/src/main/java/com/microsoft/bot/sample/welcomeuser/WelcomeUserBot.java?range= 98-99)]
+
 ### [Python](#tab/python)
 
 This sample creates a conversation state property accessor, `user_state_accessor`, in the bot constructor.
@@ -161,6 +192,14 @@ This JavaScript code sends initial welcome messages when a user is added. This i
 **bots/welcomeBot.js**
 [!code-javascript[onMembersAdded](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomebot.js?range=63-90)]
 
+### [Java](#tab/java)
+
+In **WelcomeUserBot**, we check for an activity update using `onMembersAdded()` to see if a new user has been added to the conversation and then send them a set of three initial welcome messages `WELCOME_MESSAGE`, `INFO_MESSAGE` and `PATTERN_MESSAGE`. Complete code for this interaction is shown below.
+
+**WelcomeUserBot.java**
+[!code-java[Define messages](~/../BotBuilder-Samples/archive/samples/java_springboot/03.welcome-user/src/main/java/com/microsoft/bot/sample/welcomeuser/WelcomeUserBot.java?range=47-72)]
+[!code-java[Send messages](~/../BotBuilder-Samples/archive/samples/java_springboot/03.welcome-user/src/main/java/com/microsoft/bot/sample/welcomeuser/WelcomeUserBot.java?range=115-140)]
+
 ### [Python](#tab/python)
 
 The `on_members_added_activity` checks to see if a new user has been added and then sends three initial welcome messages: a _welcome message_, an _information message_ and a _pattern message_.
@@ -187,6 +226,14 @@ It's also important to consider when your user's input might actually contain us
 **bots/welcomeBot.js**
 [!code-javascript[DidBotWelcomeUser](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomebot.js?range=24-39)]
 [!code-javascript[DidBotWelcomeUser](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomebot.js?range=57-61)]
+
+### [Java](#tab/java)
+
+It's important to consider when your user's input might contain useful information, which may vary for each channel. To ensure your user has a good experience on all possible channels, we check the status flag _getDidBotWelcomeUser_ and if this is "false", we don't process the initial user input. We instead provide the user with an initial welcome message. The bool _setDidBotWelcomeUser_ is then set to "true", stored in UserState and our code will now process this user's input from all additional message activities.
+
+**WelcomeUserBot.java**
+[!code-java[DidBotWelcomeUser](~/../BotBuilder-Samples/archive/samples/java_springboot/03.welcome-user/src/main/java/com/microsoft/bot/sample/welcomeuser/WelcomeUserBot.java?range=149-167)]
+[!code-java[DidBotWelcomeUser](~/../BotBuilder-Samples/archive/samples/java_springboot/03.welcome-user/src/main/java/com/microsoft/bot/sample/welcomeuser/WelcomeUserBot.java?range=186-187)]
 
 ### [Python](#tab/python)
 
@@ -215,6 +262,13 @@ An input of 'intro' or 'help' uses CardFactory to present the user with an Intro
 **bots/welcomeBot.js**
 [!code-javascript[SwitchOnUtterance](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomebot.js?range=40-56)]
 
+### [Java](#tab/java)
+
+An input of 'intro' or 'help' calls the function `sendIntroCard` to present the user with an informational hero card. That code is examined in the next section of this article.
+
+**WelcomeUserBot.java**
+[!code-java[SwitchOnUtterance](~/../BotBuilder-Samples/archive/samples/java_springboot/03.welcome-user/src/main/java/com/microsoft/bot/sample/welcomeuser/WelcomeUserBot.java?range=169-183)]
+
 ### [Python](#tab/python)
 
 A user's input of _intro_ or _help_ causes the bot to call `__send_intro_card`, which presents the user with an intro adaptive card.
@@ -237,6 +291,11 @@ As mentioned above, some user inputs generate a _Hero Card_ in response to their
 
 **bots/welcomeBot.js**
 [!code-javascript[SendIntroCard](~/../BotBuilder-Samples/samples/javascript_nodejs/03.welcome-users/bots/welcomebot.js?range=103-128)]
+
+### [Java](#tab/java)
+
+**WelcomeUserBot.java**
+[!code-java[SendHeroCardGreeting](~/../BotBuilder-Samples/archive/samples/java_springboot/03.welcome-user/src/main/java/com/microsoft/bot/sample/welcomeuser/WelcomeUserBot.java?range=192-235)]
 
 ### [Python](#tab/python)
 

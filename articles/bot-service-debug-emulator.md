@@ -57,6 +57,26 @@ To run a bot using command line, do the following:
 
     :::image type="content" source="media/bot-service-debug-emulator/js_port_number.png" alt-text="JavaScript port number":::
 
+### [Java](#tab/java)
+
+- Go to the command prompt and change directory to your bot project directory.
+
+- If this is the first time, build the bot running the following command:
+
+    ```cmd
+    mvn package
+    ```
+
+- Start the bot by running the following command:
+
+    ```cmd
+    java -jar .\target\<bot archive name>.jar
+    ```
+
+- Copy the port number that Tomcat web server is listening on.
+
+    :::image type="content" source="media/bot-service-debug-emulator/java_port_number.png" alt-text="Java port number":::
+
 ### [Python](#tab/python)
 
 - Go to the command prompt and change directory to your bot project directory.

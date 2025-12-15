@@ -26,9 +26,9 @@ Messages exchanged between user and bot can contain media attachments, such as i
 
 - Knowledge of [bot basics](bot-builder-basics.md).
 - The code in this article is based on the following samples:
-  - **Using cards**: [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/06.using-cards), [JavaScript](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/06.using-cards), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/06.using-cards)
-  - **Handling attachments**: [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/15.handling-attachments), [JavaScript](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/15.handling-attachments), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/15.handling-attachments)
-  - **Suggested actions**: [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/08.suggested-actions), [JavaScript](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/08.suggested-actions), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/08.suggested-actions)
+  - **Using cards**: [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/06.using-cards), [JavaScript](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/06.using-cards), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/06.using-cards), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/06.using-cards)
+  - **Handling attachments**: [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/15.handling-attachments), [JavaScript](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/15.handling-attachments), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/15.handling-attachments), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/15.handling-attachments)
+  - **Suggested actions**: [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/08.suggested-actions), [JavaScript](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/08.suggested-actions), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/08.suggested-actions), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/08.suggested-actions)
 
 ## Send attachments
 
@@ -102,6 +102,36 @@ Lastly, an internet attachment contained in a URL:
 
 [!code-javascript[internet attachments](~/../botbuilder-samples/samples/javascript_nodejs/15.handling-attachments/bots/attachmentsBot.js?range=184-191)]
 
+### [Java](#tab/java)
+
+The source code shown in this section is based on the [Handling attachments](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/15.handling-attachments) sample.
+
+The `getAttachments()` method of the `Activity` object contains an array of `Attachment` objects that represent the media attachments and rich cards attached to the message. To add a media attachment to a message, create an `Attachment` object for the `reply` activity and set the `ContentType`, `ContentUrl`, and `Name` properties.
+
+To create the reply message, define the text and then set up the attachments. Assigning the attachments to the reply is the same for each attachment type, however the various attachments are set up and defined differently, as seen in the following snippets. The code below is setting up the reply for an inline attachment:
+
+**AttachmentsBot.java**
+
+[!code-java[reply inline](~/../botbuilder-samples/archive/samples/java_springboot/15.handling-attachments/src/main/java/com/microsoft/bot/sample/attachments/AttachmentsBot.java?range=122-127)]
+
+Next, we look at the types of attachments. First is an inline attachment:
+
+**AttachmentsBot.java**
+
+[!code-java[inline attachment](~/../botbuilder-samples/archive/samples/java_springboot/15.handling-attachments/src/main/java/com/microsoft/bot/sample/attachments/AttachmentsBot.java?range=192-206)]
+
+Then, an uploaded attachment:
+
+**AttachmentsBot.java**
+
+[!code-java[uploaded attachment](~/../botbuilder-samples/archive/samples/java_springboot/15.handling-attachments/src/main/java/com/microsoft/bot/sample/attachments/AttachmentsBot.java?range=209-240)]
+
+Lastly, an internet attachment:
+
+**AttachmentsBot.java**
+
+[!code-java[online attachment](~/../botbuilder-samples/archive/samples/java_springboot/15.handling-attachments/src/main/java/com/microsoft/bot/sample/attachments/AttachmentsBot.java?range=242-250)]
+
 ### [Python](#tab/python)
 
 The following source code is from the [Handling attachments](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/15.handling-attachments) sample.
@@ -160,6 +190,16 @@ The following source code is from the [Handling attachments](https://github.com/
 
 [!code-javascript[hero card](~/../botbuilder-samples/samples/javascript_nodejs/15.handling-attachments/bots/attachmentsBot.js?range=147-165)]
 
+### [Java](#tab/java)
+
+To compose a message with a hero card and button, you can attach a `HeroCard` object to a message.
+
+The following source code is from the [Handling attachments](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/15.handling-attachments) sample.
+
+**AttachmentsBot.java**
+
+[!code-java[Hero card](~/../botbuilder-samples/archive/samples/java_springboot/15.handling-attachments/src/main/java/com/microsoft/bot/sample/attachments/AttachmentsBot.java?range=67-83)]
+
 ### [Python](#tab/python)
 
 To compose a message with a hero card and button, you can attach a `HeroCard` object to a message.
@@ -205,6 +245,18 @@ For examples of all the available cards, see the [Using cards](https://github.co
 **dialogs/mainDialog.js**
 
 [!code-javascript[createOAuthCard](~/../botbuilder-samples/samples/javascript_nodejs/06.using-cards/dialogs/mainDialog.js?range=228-234)]
+
+### [Java](#tab/java)
+
+For examples of all the available cards, see the [Using cards](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/06.using-cards) sample.
+
+**Cards.java**
+
+[!code-java[GetHeroCard](~/../botbuilder-samples/archive/samples/java_springboot/06.using-cards/src/main/java/com/microsoft/bot/sample/usingcards/Cards.java?range=48-58)]
+
+**Cards.java**
+
+[!code-java[GetSigninCard](~/../botbuilder-samples/archive/samples/java_springboot/06.using-cards/src/main/java/com/microsoft/bot/sample/usingcards/Cards.java?range=98-103)]
 
 ### [Python](#tab/python)
 
@@ -257,6 +309,16 @@ This example reads the Adaptive Card JSON from a file and creates a message acti
 
 [!code-javascript[createAdaptiveCard](~/../botbuilder-samples/samples/javascript_nodejs/06.using-cards/dialogs/mainDialog.js?range=178-180)]
 
+### [Java](#tab/java)
+
+The following source code is from the [Using cards](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/06.using-cards) sample.
+
+**Cards.java**
+
+This example reads the Adaptive Card JSON from a file and adds it as an attachment.
+
+[!code-java[CreateAdaptiveCardAttachment](~/../botbuilder-samples/archive/samples/java_springboot/06.using-cards/src/main/java/com/microsoft/bot/sample/usingcards/Cards.java?range=30-46&highlight9-10)]
+
 ### [Python](#tab/python)
 
 The following source code is from the [Using cards](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/06.using-cards) sample.
@@ -304,6 +366,25 @@ Add the attachments and set the layout type to _carousel_.
 Once the attachments are added, you can send the reply just like any other.
 
 [!code-javascript[showCardStep excerpt](~/../botbuilder-samples/samples/javascript_nodejs/06.using-cards/dialogs/mainDialog.js?range=100-113)]
+
+### [Java](#tab/java)
+
+The following source code is from the [Using cards](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/06.using-cards) sample.
+
+**MainDialog.java**
+
+First, create the reply and define the attachments as a list.
+
+[!code-java[ShowCardStep excerpt](~/../botbuilder-samples/archive/samples/java_springboot/06.using-cards/src/main/java/com/microsoft/bot/sample/usingcards/MainDialog.java?range=63-68)]
+
+Then add the attachments and set the layout type to _carousel_.
+Here we're adding them one at a time, but feel free to manipulate the list to add the cards however you prefer.
+
+[!code-java[ShowCardStep excerpt](~/../botbuilder-samples/archive/samples/java_springboot/06.using-cards/src/main/java/com/microsoft/bot/sample/usingcards/MainDialog.java?range=109-119)]
+
+Once the attachments are added, you can send the reply just like any other.
+
+[!code-java[ShowCardStep excerpt](~/../botbuilder-samples/archive/samples/java_springboot/06.using-cards/src/main/java/com/microsoft/bot/sample/usingcards/MainDialog.java?range=123-124)]
 
 ### [Python](#tab/python)
 
@@ -447,6 +528,76 @@ if(turnContext._activity.text == null
 
 If this check finds a non-existent text input from the client, it looks to see if there's input from an Adaptive Card.
 If an Adaptive Card input exists at `_activity.value.text`, it copies this into the normal text input field.
+
+### [Java](#tab/java)
+
+Our validator uses the **Serialization** helper from com.microsoft.bot.schema to first convert this to a `JsonNode`,
+and then create a trimmed text string for comparison. We'll also need a few other imports to complete this, so add:
+
+```java
+import com.fasterxml.jackson.databind.JsonNode;
+import com.microsoft.bot.dialogs.prompts.PromptValidator;
+import com.microsoft.bot.schema.Serialization;
+import java.util.Optional;
+import org.apache.commons.lang3.StringUtils;
+```
+
+<!---------------------------------------------------------------------------------------->
+<!-- This module has completely changed, this section needs to be completely re-written -->
+<!---------------------------------------------------------------------------------------->
+
+to **MainDialog.java**.
+In the validator code, we added the logic flow into the code comments.
+This `PromptValidator` expression is placed into the **Using cards** sample just after the closed brace public for declaration of MainDialog:
+
+```java
+PromptValidator<FoundChoice> validator = (promptContext) -> {
+    // Retrieves Adaptive Card comment text as JObject.
+    // looks for JObject field "text" and converts that input into a trimmed text
+    // string.
+    JsonNode jsonNode = Serialization.getAs(promptContext.getContext().getActivity().getValue(), JsonNode.class);
+    JsonNode textNode = jsonNode != null ? jsonNode.get("text") : null;
+    String text = textNode != null ? textNode.textValue() : "";
+
+    // Logic: 1. if succeeded = true, just return promptContext
+    // 2. if false, see if JObject contained Adaptive Card input.
+    // No = (bad input) return promptContext
+    // Yes = update Value field with JObject text string, return "true".
+    if (!promptContext.getRecognized().getSucceeded() && text != null) {
+        Optional<Choice> choice = promptContext.getOptions()
+            .getChoices()
+            .stream()
+            .filter(c -> StringUtils.compareIgnoreCase(c.getValue(), text) == 0)
+            .findFirst();
+
+        if (choice.isPresent()) {
+            promptContext.getRecognized().setValue(new FoundChoice() {
+                {
+                    setValue(choice.get().getValue());
+                }
+            });
+            return CompletableFuture.completedFuture(true);
+        }
+    }
+    return CompletableFuture.completedFuture(promptContext.getRecognized().getSucceeded());
+};
+```
+
+Now above in the `MainDialog` declaration change:
+
+```java
+// Define the main dialog and its related components.
+addDialog(new ChoicePrompt("ChoicePrompt"));
+```
+
+to:
+
+```java
+// Define the main dialog and its related components.
+addDialog(new ChoicePrompt("ChoicePrompt", validator, null));
+```
+
+This will invoke your validator to look for Adaptive Card input each time a new choice prompt is created.
 
 ### [Python](#tab/python)
 

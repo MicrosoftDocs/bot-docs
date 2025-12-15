@@ -19,7 +19,7 @@ ms.update-cycle: 1095-days
 
 This article describes how to debug a bot using inspection middleware. This feature allows the Bot Framework Emulator to debug traffic into and out of the bot, and to see the current state of the bot. You can use a trace message to send data to the Emulator and then inspect the state of your bot in any given turn of the conversation.
 
-We use an EchoBot built locally using the Bot Framework v4 in the [Create a bot quickstart](bot-service-quickstart-create-bot.md) to show how to debug and inspect the bot's message state. You can also [Debug a bot using IDE](./bot-service-debug-bot.md) or [Debug with the Bot Framework Emulator](./bot-service-debug-emulator.md), but to debug state you need to add inspection middleware to your bot. The inspection bot samples are available for [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/47.inspection), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/47.inspection), and [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/47.inspection).
+We use an EchoBot built locally using the Bot Framework v4 in the [Create a bot quickstart](bot-service-quickstart-create-bot.md) to show how to debug and inspect the bot's message state. You can also [Debug a bot using IDE](./bot-service-debug-bot.md) or [Debug with the Bot Framework Emulator](./bot-service-debug-emulator.md), but to debug state you need to add inspection middleware to your bot. The inspection bot samples are available for [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/47.inspection), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/47.inspection), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/47.inspection), and [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/47.inspection).
 
 [!INCLUDE [java-python-sunset-alert](includes/java-python-sunset-alert.md)]
 
@@ -29,7 +29,7 @@ We use an EchoBot built locally using the Bot Framework v4 in the [Create a bot 
 - Knowledge of how to [Debug an SDK-first bot](bot-service-debug-bot.md) and [Test and debug with the Emulator](bot-service-debug-emulator.md)
 - An install of the [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md)
 - An install [Dev Tunnel](https://aka.ms/devtunnels) (if you want to debug a bot configured in Azure to use other channels)
-- A copy of the inspection bot sample for [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/47.inspection), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/47.inspection), or [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/47.inspection)
+- A copy of the inspection bot sample for [C#](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/47.inspection), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/47.inspection), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/47.inspection), or [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/47.inspection)
 
 ## Update your Emulator to the latest version
 
@@ -76,6 +76,20 @@ Update the bot class in the **bot.js** file.
 
 [!code-javascript [inspection bot sample](../botbuilder-samples/samples/javascript_nodejs/47.inspection/bot.js?range=14-28)]
 
+### [Java](#tab/java)
+
+Set up the inspection state and add the inspection middleware to the adapter in the **Application.java** file. The inspection state is set by providing a new Spring @Bean to supply the BotFrameworkHttpAdapter that is set to be @Primary so it will override the default BotFrameworkHttpAdapter provided by the BotDependencyConfiguration base class. See the code update below or refer to the [Inspection middleware](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/47.inspection) sample on GitHub.
+
+**Application.java**  
+[!code-java [inspection bot sample](../botbuilder-samples/archive/samples/java_springboot/47.inspection/src/main/java/com/microsoft/bot/sample/inspection/Application.java?range=66-97)]
+
+AdapterWithInspection is implemented as part of the com.microsoft.bot.integration package and can be reviewed from the Java SDK source code.
+
+Update the bot class in the **EchoBot.java** file.
+
+**EchoBot.java**  
+[!code-java [inspection bot sample](../botbuilder-samples/archive/samples/java_springboot/47.inspection/src/main/java/com/microsoft/bot/sample/inspection/EchoBot.java?range=53-81)]
+
 ### [Python](#tab/python)
 
 Before updating your bot's code, install the necessary PyPI packages by running the following commands in a terminal:
@@ -115,6 +129,13 @@ After updating the code, you can run your bot locally and test the debugging fea
 
     ```console
     npm start
+    ```
+
+   ### [Java](#tab/java)
+
+    ```console
+    mvn package
+    java -jar .\target\bot-inspection-sample.jar 
     ```
 
    ### [Python](#tab/python)
