@@ -42,8 +42,8 @@ Impersonation refers to the action of an attacker who makes the bot think that t
     > [!TIP]
     > For a regional bot, set `dlUrl` according to the selected region.<br>
     If selected europe, set
-    "<https://europe.directline.botframework.com/v3/directline/tokens/generate>".<br>
-    If selected india, set "<https://india.directline.botframework.com/v3/directline/tokens/generate>".<br>
+    `<https://europe.directline.botframework.com/v3/directline/tokens/generate>`.<br>
+    If selected india, set `<https://india.directline.botframework.com/v3/directline/tokens/generate>`.<br>
     > For more information about regional bots, see [Regionalization in Azure AI Bot Service](bot-builder-concept-regionalization.md).
 
     ```csharp

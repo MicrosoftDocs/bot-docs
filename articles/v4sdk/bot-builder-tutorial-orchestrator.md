@@ -113,7 +113,7 @@ You need an existing knowledge base and your QnA Maker hostname and endpoint key
 
 The CLI interface for the Orchestrator tool creates the Orchestrator snapshot file for routing to the correct LUIS or QnA Maker app at run time.
 
-1. Install the latest supported version of the [Visual C++ Redistributable package](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)
+1. Install the latest supported version of the [Visual C++ Redistributable package](/cpp/windows/latest-supported-vc-redist?view=msvc-170)
 1. Open a command prompt or terminal window, and change directories to the sample directory
 1. Make sure you have the current version of npm and the Bot Framework CLI.
 

@@ -77,7 +77,7 @@ Below are links that can help with individual channels:
 
 - [Add bots to Microsoft Teams apps](/microsoftteams/platform/concepts/bots/bots-overview)
 - [Facebook: Introduction to the Messenger Platform](https://developers.facebook.com/docs/messenger-platform/introduction)
-- [Skype for Developers](https://dev.skype.com/bots)
+- [Teams for Developers](/microsoftteams/platform/mstdd-landing)
 - [Slack: Enabling interactions with bots](https://api.slack.com/bot-users)
 
 ### Channel outage
