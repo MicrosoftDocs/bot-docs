@@ -1,10 +1,10 @@
 ---
 title: Create a bot with the Bot Connector service - Bot Service
 description: Learn how to create a bot. See how to obtain an access token from the Bot Framework and use the Bot Connector service to exchange messages with users. 
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: quickstart
 ms.service: azure-ai-bot-service
 ms.custom:
@@ -15,6 +15,7 @@ ms.update-cycle: 1095-days
 # Create a bot with the Bot Connector service with the Bot Connector API
 
 > [!div class="op_single_selector"]
+>
 > - [Bot Service SDK](../bot-service-quickstart-create-bot.md)
 > - [Bot Service Azure resource](../bot-service-quickstart.md)
 > - [REST](../rest-api/bot-framework-rest-connector-quickstart.md)

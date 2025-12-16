@@ -2,10 +2,10 @@
 title: Adaptive expressions prebuilt functions in Bot Framework SDK
 description: Learn about the available prebuilt functions in adaptive expressions ordered by their general purpose.
 keywords: adaptive expressions, prebuilt functions, reference
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: reference
 monikerRange: 'azure-bot-service-4.0'
@@ -913,8 +913,8 @@ bool(0)
 
 And respectively returns these results:
 
-* `true`
-* `false`
+- `true`
+- `false`
 
 <a name="ceiling"></a>
 
@@ -2612,6 +2612,7 @@ And returns the result **6**.
 *Example 2*
 
 This example finds the starting index value of the substring **def** in the array **['abc', 'def', 'ghi']**:
+
 ```
 indexOf(createArray('abc', 'def', 'ghi'), 'def')
 ```
@@ -2672,6 +2673,7 @@ where(indicesAndValues(items), elt, elt.index >= 1)
 ```
 
 And returns a new list:
+
 ```
 [
   {
@@ -2704,6 +2706,7 @@ indicesAndValues(user)
 ```
 
 And returns a new object:
+
 ```
 [
   {
@@ -2865,6 +2868,7 @@ isDate('xxxx-12-21')
 ```
 
 And return the following results:
+
 - `false`
 - `true`
 
@@ -4152,7 +4156,6 @@ resolve('<timestamp')
 | ------------ | ---- | ----------- |
 | <*return*> | string| A string of the evaluated TimexProperty or Timex expression. |
 
-
 *Examples*
 
 These examples show if the given strings refer to valid time:
@@ -4201,7 +4204,6 @@ And return the following values respectively:
 -The string **olleh**.
 -The string **dlrowolleh**.
 
-
 <a name="round"></a>
 
 ### round
@@ -4240,7 +4242,6 @@ round(10.3313, 2)
 ```
 
 And returns the number **10.33**.
-
 
 <a name="select"></a>
 
@@ -4839,7 +4840,7 @@ And returns the following strings respectively:
 
 ### stringOrValue
 
-Wrap string interpolation to get the real value. For example, `stringOrValue('${1}')` returns the number 1, while` stringOrValue('${1} item')` returns the string "1 item".
+Wrap string interpolation to get the real value. For example, `stringOrValue('${1}')` returns the number 1, while`stringOrValue('${1} item')` returns the string "1 item".
 
 ```
 stringOrValue(<string>)
@@ -5629,7 +5630,6 @@ utcNow('<format>', '<locale>'?)
 ```
 
 Optionally, you can specify a different format with the <*format*> parameter.
-
 
 | Parameter | Required | Type | Description |
 | --------- | -------- | ---- | ----------- |

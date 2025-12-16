@@ -2,10 +2,10 @@
 title: Language understanding
 description: Learn how to add artificial intelligence to your bots with Azure AI services to make them more useful and engaging.
 keywords: Azure AI services, CLU, LUIS, QnA Maker, custom question answering
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: article
 ms.service: azure-ai-bot-service
 monikerRange: 'azure-bot-service-4.0'
@@ -105,7 +105,6 @@ Question answering provides cloud-based natural language processing (NLP) that a
 To use question answering in your bot, create and deploy a question answering project, then implement in your bot a _QnA Maker client_ that forwards requests to the question answering API.
 
 For more information, see:
-
 
 - [Use question answering to answer questions](../bot-builder-howto-answer-questions.md)
 - [What is question answering?](/azure/ai-services/language-service/question-answering/overview)

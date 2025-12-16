@@ -1,10 +1,10 @@
 ---
 title: Connect a bot to Azure Communication Services
 description: Learn how to configure Bot Framework bots to use Azure Communication Services to communicate with users.
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: jameslew
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: how-to
 ms.custom:
@@ -16,7 +16,6 @@ ms.update-cycle: 1095-days
 # Connect a bot to Azure Communication Services
 
 Azure Communication Services provides the APIs and SDKs to build multi-participant collaboration applications that can include a bot. This bot can greet users, perform intake tasks to determine the topic, and answer questions. Azure Communication Services allows you to hand off the conversation to a human agent. It also enables a supervisor or additional bot to monitor or participate in the conversation if necessary. Additionally, Azure Communication Services offers a [UI library](https://azure.github.io/communication-ui-library) to easily build conversational user experiences that can be embedded into your existing web pages.
-
 
 ## Prerequisites
 
@@ -37,7 +36,7 @@ Your bot is now registered with Azure Communication Services.
 
 ## Create a chat app and add your bot as a participant
 
-Now that your bot is registered with Azure Communication Services, you can create a chat thread with your bot as a participant. 
+Now that your bot is registered with Azure Communication Services, you can create a chat thread with your bot as a participant.
 For more information, see [Add a bot to your chat app](/azure/communication-services/quickstarts/chat/quickstart-botframework-integration) in the Azure Communication Services documentation.
 
 ## Additional information

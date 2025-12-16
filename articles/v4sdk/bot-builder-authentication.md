@@ -1,10 +1,10 @@
 ---
 title: Add authentication to a bot in Bot Framework SDK
 description: Learn how to add user's authentication to your bot using Azure authentication.
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: how-to
 ms.service: azure-ai-bot-service
 ms.custom:
@@ -220,10 +220,11 @@ You'll need your bot's app ID and password to complete this process.
     - Set `MicrosoftAppId` and `MicrosoftAppPassword` to your bot's app ID and app secret.
 
       Depending on the characters in your bot secret, you may need to XML escape the password. For example, any ampersands (&) will need to be encoded as `&amp;`.
-      
+
     [!code-json[appsettings](~/../botbuilder-samples/samples/csharp_dotnetcore/18.bot-authentication/appsettings.json)]
-    
+
     To use OAuth in bot with data-residency in public cloud, you must add the following configurations in your appsettings
+
     ```json
     "OAuthUrl": "<Regional-OAuth-Uri>",
     "ToChannelFromBotOAuthScope": "https://api.botframework.com",
@@ -234,9 +235,9 @@ You'll need your bot's app ID and password to complete this process.
     "ToBotFromChannelTokenIssuer": "https://api.botframework.com",
     "ToChannelFromBotLoginUrl": "https://login.microsoftonline.com/botframework.com",
     ```
-    
+
     Where _\<Regional-OAuth-Url>_ is one of the following URIs:
-    
+
     |URI|Description|
     |:-|:-|
     |`https://europe.api.botframework.com`|For public-cloud bots with data residency in Europe.|
@@ -281,7 +282,7 @@ You'll need your bot's app ID and password to complete this process.
     - Set `ConnectionName` to the name of the OAuth connection setting you added to your bot.
     - Set `MicrosoftAppId` and `MicrosoftAppPassword` to your bot's app ID and app secret.
 
-    [!code-ini[application.properties](~/../botbuilder-samples/samples/java_springboot/18.bot-authentication/src/main/resources/application.properties)]
+    [!code-ini[application.properties](~/../botbuilder-samples/archive/samples/java_springboot/18.bot-authentication/src/main/resources/application.properties)]
 
 ### [Python](#tab/python)
 
@@ -405,18 +406,18 @@ Within the following dialog step, check for the presence of a token in the resul
 
 Add an OAuth prompt to **MainDialog** in its constructor. Here, the value for the connection name was retrieved from the **application.properties** file.
 
-[!code-java[Add OAuthPrompt](~/../botbuilder-samples/samples/java_springboot/18.bot-authentication/src/main/java/com/microsoft/bot/sample/authentication/MainDialog.java?range=26-32)]
+[!code-java[Add OAuthPrompt](~/../botbuilder-samples/archive/samples/java_springboot/18.bot-authentication/src/main/java/com/microsoft/bot/sample/authentication/MainDialog.java?range=26-32)]
 
 Within a dialog step, use `beginDialog` to start the OAuth prompt, which asks the user to sign in.
 
 - If the user is already signed in, this will generate a token response event, without prompting the user.
 - Otherwise, this will prompt the user to sign in. The Azure AI Bot Service sends the token response event after the user attempts to sign in.
 
-[!code-java[Use the OAuthPrompt](~/../botbuilder-samples/samples/java_springboot/18.bot-authentication/src/main/java/com/microsoft/bot/sample/authentication/MainDialog.java?range=86)]
+[!code-java[Use the OAuthPrompt](~/../botbuilder-samples/archive/samples/java_springboot/18.bot-authentication/src/main/java/com/microsoft/bot/sample/authentication/MainDialog.java?range=86)]
 
 Within the following dialog step, check for the presence of a token in the result from the previous step. If it's not null, the user successfully signed in.
 
-[!code-java[Get the OAuthPrompt result](~/../botbuilder-samples/samples/java_springboot/18.bot-authentication/src/main/java/com/microsoft/bot/sample/authentication/MainDialog.java?range=54-56)]
+[!code-java[Get the OAuthPrompt result](~/../botbuilder-samples/archive/samples/java_springboot/18.bot-authentication/src/main/java/com/microsoft/bot/sample/authentication/MainDialog.java?range=54-56)]
 
 ### [Python](#tab/python)
 
@@ -467,7 +468,7 @@ When you start an OAuth prompt, it waits for a token response event, from which 
 
 **AuthBot** derives from `Dialog` and explicitly handles token response event activities. Here, we continue the active dialog, which allows the OAuth prompt to process the event and retrieve the token.
 
-[!code-java[OnTokenResponseEvent](~/../botbuilder-samples/samples/java_springboot/18.bot-authentication/src/main/java/com/microsoft/bot/sample/authentication/AuthBot.java?range=44-50)]
+[!code-java[OnTokenResponseEvent](~/../botbuilder-samples/archive/samples/java_springboot/18.bot-authentication/src/main/java/com/microsoft/bot/sample/authentication/AuthBot.java?range=44-50)]
 
 ### [Python](#tab/python)
 
@@ -499,7 +500,8 @@ It's best practice to let users explicitly sign out, instead of relying on the c
 
 **LogoutDialog.java**
 
-[!code-java[Allow sign out](~/../botbuilder-samples/samples/java_springboot/18.bot-authentication/src/main/java/com/microsoft/bot/sample/authentication/LogoutDialog.java?range=49-67&highlight=8-13)]
+[!code-java[Allow sign out](~/../botbuilder-samples/archive/samples/java_springboot/18.bot-authentication/src/main/java/com/microsoft/bot/sample/authentication/LogoutDialog.java?range=49-67&highlight=8-13)]
+
 ### [Python](#tab/python)
 
 **dialogs/logout_dialog.py**
@@ -511,7 +513,6 @@ It's best practice to let users explicitly sign out, instead of relying on the c
 ### Adding Teams Authentication
 
 OAuth is handled differently in Teams than in other channels. The Teams Authentication Bot sample (in [C#][cs-teams-auth-sample], [JavaScript][js-teams-auth-sample], [Java][java-teams-auth-sample], or [Python][python-teams-auth-sample]) demonstrates how to properly implement authentication for Teams.
-
 
 ### Further reading
 
@@ -530,17 +531,15 @@ OAuth is handled differently in Teams than in other channels. The Teams Authenti
 
 [cs-auth-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/18.bot-authentication
 [js-auth-sample]: https://github.com/Microsoft/BotBuilder-Samples/blob/main/samples/javascript_nodejs/18.bot-authentication
-[java-auth-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/18.bot-authentication
+[java-auth-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/18.bot-authentication
 [python-auth-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/18.bot-authentication
 
 [cs-msgraph-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/24.bot-authentication-msgraph
 [js-msgraph-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/24.bot-authentication-msgraph
-[java-msgraph-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/24.bot-authentication-msgraph
+[java-msgraph-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/24.bot-authentication-msgraph
 [python-msgraph-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/24.bot-authentication-msgraph
 
 [cs-teams-auth-sample]:https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-teams-authentication/csharp
 [js-teams-auth-sample]:https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-conversation-sso-quickstart/js
 [java-teams-auth-sample]:https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-teams-authentication/java
 [python-teams-auth-sample]:https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-teams-authentication/python
-
-[teams-activity-feed]:/microsoftteams/platform/concepts/activity-feed

@@ -2,10 +2,10 @@
 title: Update a skill to support both single-tenant and multitenant agents
 description: Learn how to multitenant skill to a single-tenant skill for Copilot Studio agents.
 keywords: skills
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: reference
 ms.service: azure-ai-bot-service
 monikerRange: 'azure-bot-service-4.0'

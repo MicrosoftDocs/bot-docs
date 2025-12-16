@@ -1,9 +1,9 @@
 ---
 description: Common alert about the Web App Bot and Bot Channels Registration deprecation.
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: include
 ms.custom:
   - evergreen

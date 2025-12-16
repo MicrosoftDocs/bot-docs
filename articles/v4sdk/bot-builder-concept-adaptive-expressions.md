@@ -2,10 +2,10 @@
 title: Adaptive expressions in Bot Framework SDK
 description: Describes how adaptive expressions work within the Bot Framework SDK.
 keywords: adaptive expressions
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: concept-article
 monikerRange: 'azure-bot-service-4.0'
@@ -180,5 +180,3 @@ For more information and examples see the [adaptive cards templating documentati
 [12]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#lessOrEquals
 [13]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#and
 [14]:../adaptive-expressions/adaptive-expressions-prebuilt-functions.md#or
-[15]:https://botbuilder.myget.org/feed/botbuilder-declarative/package/nuget/Microsoft.Bot.Builder.Expressions
-[20]:https://github.com/microsoft/BotBuilder-Samples/blob/master/experimental/language-generation/README.md

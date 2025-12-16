@@ -2,10 +2,10 @@
 title: Implement a skill for Copilot Studio
 description: Learn how to implement a skill that can be used in Microsoft Copilot Studio, using the Bot Framework SDK.
 keywords: skills
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: reference
 ms.service: azure-ai-bot-service
 monikerRange: 'azure-bot-service-4.0'

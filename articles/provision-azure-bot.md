@@ -1,10 +1,10 @@
 ---
 title: Use Azure CLI to create an Azure Bot resource
 description: Learn how to create an Azure Bot resource with the Azure CLI and an ARM template.
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: how-to
 ms.custom:

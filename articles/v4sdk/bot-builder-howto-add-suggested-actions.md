@@ -2,10 +2,10 @@
 title: Use button for input
 description: Learn how to send suggested actions within messages using the Bot Framework SDK for JavaScript.
 keywords: suggested actions, buttons, extra input
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: how-to
 ms.service: azure-ai-bot-service
 monikerRange: 'azure-bot-service-4.0'
@@ -24,7 +24,7 @@ Buttons enhance the conversational experience by letting the user answer a quest
 
 ## Suggest action using button
 
-*Suggested actions* enable your bot to present buttons. You can create a list of suggested actions (also known as _quick replies_) that will be shown to the user for a single turn of the conversation.
+*Suggested actions* enable your bot to present buttons. You can create a list of suggested actions (also known as *quick replies*) that will be shown to the user for a single turn of the conversation.
 
 # [C#](#tab/csharp)
 
@@ -40,9 +40,9 @@ Here's an example from the [Suggested actions](https://github.com/Microsoft/BotB
 
 # [Java](#tab/java)
 
-Here's an example from the [Suggested actions](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/08.suggested-actions) sample.
+Here's an example from the [Suggested actions](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/08.suggested-actions) sample.
 
-[!code-java[suggested actions](~/../botbuilder-samples/samples/java_springboot/08.suggested-actions/src/main/java/com/microsoft/bot/sample/suggestedactions/SuggestedActionsBot.java?range=102-136)]
+[!code-java[suggested actions](~/../botbuilder-samples/archive/samples/java_springboot/08.suggested-actions/src/main/java/com/microsoft/bot/sample/suggestedactions/SuggestedActionsBot.java?range=102-136)]
 
 # [Python](#tab/python)
 
@@ -54,7 +54,7 @@ Here's an example from the [Suggested actions](https://github.com/microsoft/BotB
 
 ## Additional resources
 
-You can access the complete source code for the **Suggested actions** sample in [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/08.suggested-actions), [JavaScript](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/08.suggested-actions), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/08.suggested-actions) and [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/08.suggested-actions).
+You can access the complete source code for the **Suggested actions** sample in [C#](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/08.suggested-actions), [JavaScript](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/08.suggested-actions), [Java](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/08.suggested-actions) and [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/08.suggested-actions).
 
 ## Next steps
 

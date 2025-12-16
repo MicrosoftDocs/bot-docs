@@ -1,10 +1,10 @@
 ---
 title: Create messages with the Bot Framework Connector service - Azure AI Bot Service
 description: Become familiar with the messages that bots use to communicate with users. Learn about properties used to format text, attach files, and specify other behavior.
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: article
 ms.service: azure-ai-bot-service
 ms.custom:
@@ -62,7 +62,6 @@ The `suggestedActions` property of the [Activity][] object can be used to presen
 - [Implement channel-specific functionality](bot-framework-rest-connector-channeldata.md)
 
 [ChannelInspector]: ../bot-service-channels-reference.md
-[textFormating]: ../bot-service-channel-inspector.md#text-formatting
 
 [Activity]: bot-framework-rest-connector-api-reference.md#activity-object
 [Mention]: bot-framework-rest-connector-api-reference.md#mention-object

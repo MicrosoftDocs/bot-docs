@@ -1,10 +1,10 @@
 ---
 title: Design knowledge bots
 description: Learn about different ways to design a knowledge bot that finds and returns information in response to the user's input or query.
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: how-to
 ms.service: azure-ai-bot-service
 ms.custom:

@@ -3,10 +3,10 @@ title: What is the Bot Framework SDK?
 description: The Bot Framework, along with the Azure AI Bot Service, provides tools to build, test, deploy, and manage intelligent bots, all in one place. The Bot Framework includes a modular and extensible SDK for building bots, as well as tools, templates, and related AI services. With this framework, developers can create bots that use speech, understand natural language, handle questions and answers, and more.
 keywords: overview, introduction, SDK, outline
 displayName: About the Bot Framework SDK, About the Azure AI Bot Service
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: overview
 ms.custom:
@@ -23,7 +23,7 @@ Microsoft Bot Framework and Azure AI Bot Service are a collection of libraries, 
 
 > [!IMPORTANT]
 > We are in the process of archiving the Bot Framework SDK repository on GitHub. This project is no longer updated or maintained. However, customers using this tool won't be disrupted. The tool is no longer supported through service tickets in the Azure portal and won't receive product updates.
-> 
+>
 > To build agents with your choice of AI services, orchestration, and knowledge, consider using the Microsoft 365 Agents SDK. The Agents SDK has support for C#, JavaScript, or Python. You can learn more about the Agents SDK at [aka.ms/agents](https://github.com/Microsoft/Agents). If you're looking for a SaaS-based agent platform, consider [Microsoft Copilot Studio](https://www.microsoft.com/microsoft-copilot/microsoft-copilot-studio?msockid=357f4ad089cb66b636e85f308872673e). If you have an existing bot built with the Bot Framework SDK, you can update your bot to the Agents SDK. You can review the core changes and updates at [Bot Framework SDK to Agents SDK migration guidance](https://aka.ms/bfmigrationguidance). Support tickets for the Bot Framework SDK are no longer serviced as of December 31, 2025.
 
 For historical release notes of each version, see the [C# releases](https://github.com/microsoft/Botbuilder-dotnet/releases), [JavaScript releases](https://github.com/microsoft/botbuilder-js/releases), [Python release](https://github.com/microsoft/botbuilder-python/releases), and [Java releases](https://github.com/microsoft/botbuilder-java/releases) pages.

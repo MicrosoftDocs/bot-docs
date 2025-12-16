@@ -2,10 +2,10 @@
 title: Entities and activity types in Azure AI Bot Service
 description: Learn how entities store information that bots and channels use when exchanging messages. See how to populate entity properties and how to consume entities.
 keywords: mention entities, activity types, consume entities
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: reference
 ms.custom:
@@ -61,6 +61,7 @@ entities.Add(entity);
 > When attempting to determine user intent, the  bot may want to ignore that portion
 > of the message where it's mentioned. Call the `GetMentions` method and evaluate
 > the `Mention` objects returned in the response.
+>
 ### [JavaScript](#tab/js)
 
 ```javascript

@@ -4,7 +4,7 @@ description: Explains how to create images in markdown according to guidelines s
 services: ''
 solutions: ''
 documentationcenter: ''
-author: kenhoff
+author: kunsinghms
 manager: ilanas
 editor: tysonn
 
@@ -14,11 +14,13 @@ ms.topic: article
 ms.tgt_pltfrm: ''
 ms.workload: ''
 ms.date: 06/25/2015
-ms.author: kenhoff
+ms.author: kunsingh
 
 ---
 # Create images in markdown
+
 ## Image folder creation and link syntax
+
 For a new article, you'll need to create a folder in the following location:
 
     /articles/<service-directory>/media/<article-name>/
@@ -32,11 +34,13 @@ After you create the folder and added images to it, use the following syntax to 
 ```
 ![Alt image text](./media/article-name/your-image-filename.png)
 ```
+
 Example:
 
 See [the markdown template](../markdown%20templates/markdown-template-for-new-articles.md) for an example.  The image reference links in this markdown template are designed to be at the bottom of the template.
 
 ## Image guidelines specific to Bot Framework technical content
+
 Screenshots are currently encouraged if it's not possible to include repro steps. Do write your content so that the content can stand without the screenshots if necessary.
 
 Use the following guidelines when creating and including art files:
@@ -69,7 +73,7 @@ Use the following guidelines when creating and including art files:
   
     ![This is an example of a browser window screenshot.](./media/create-images-markdown/helloworldlocal.png)
 * Use caution with what information is revealed in screenshots.  Do not reveal internal company information or personal information.
-* In conceptual art or diagrams, use the official icons in the Cloud and Enterprise symbol and icon set. A public set is available at https://aka.ms/CnESymbols.
+* In conceptual art or diagrams, use the official icons in the Cloud and Enterprise symbol and icon set. A public set is available at <https://aka.ms/CnESymbols>.
 * Replace personal or private information in screenshots so that real information is not used. This includes user names, subscription IDs, and other related info. Personal names can be replaced with an [approved fictitious name](https://aka.ms/ficticiousnames)(Employee-only link). IDs can either be obscured with a colored box or replaced with a fictional ID from an [Approved list of sensitive identifiers](https://review.learn.microsoft.com/en-us/help/platform/reference-sensitive-identifier?branch=main) Do not use the crayon or marker tip in Paint to obscure or blur personal or private information.
   
   The following image has been correctly updated to replace the actual **subscription ID** with fictional information:

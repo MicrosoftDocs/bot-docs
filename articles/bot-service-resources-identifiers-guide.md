@@ -2,10 +2,10 @@
 title: Guide to IDs in the Bot Framework - Bot Service
 description: This guide describes the characteristics of ID fields present in the Bot Framework v3 protocol.
 keywords: id, bots, protocol
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: reference
 ms.service: azure-ai-bot-service
 ms.custom:
@@ -101,7 +101,7 @@ in perpetuity, although it isn't uncommon for two people to share a Facebook acc
 
 In most channels, it's appropriate to think of a channel account as a kind of mailbox where messages can be
 delivered. It's typical for most channels to allow multiple address to map to a single mailbox. For example,
-"jdoe@contoso.com" and "john.doe@service.contoso.com" may resolve to the same inbox. Some channels go
+"<jdoe@contoso.com>" and "<john.doe@service.contoso.com>" may resolve to the same inbox. Some channels go
 a step further and alter the account's address based on which bot is accessing it. For example, Facebook alters user IDs so every bot has a different address for sending and receiving messages.
 
 While it's possible in some cases to establish equivalency between addresses, establishing equivalency

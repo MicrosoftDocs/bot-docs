@@ -2,10 +2,10 @@
 title: Expire a conversation
 description: Learn how to expire a user's conversation with a bot.
 keywords: expire, timeout
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: how-to
 ms.service: azure-ai-bot-service
 monikerRange: 'azure-bot-service-4.0'
@@ -748,7 +748,7 @@ For more information, see [Configure time to live in Azure Cosmos DB][cosmos-ttl
 
 [cs-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/05.multi-turn-prompt
 [js-sample]: https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/05.multi-turn-prompt
-[java-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/05.multi-turn-prompt
+[java-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/05.multi-turn-prompt
 [python-sample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/05.multi-turn-prompt
 
 [cosmos-ttl]: /azure/cosmos-db/how-to-time-to-live

@@ -1,10 +1,10 @@
 ---
 title: Deploy Bots to Azure Government and Office 365 GCC High
 description: Learn how to configure a bot to operate in the Microsoft Azure Government cloud and the Microsoft Office 365 Government Community Cloud (GCC) High environment.
-author: jameslew
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: jameslew
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: how-to
 ms.custom:

@@ -2,10 +2,10 @@
 title: Add trace activities to your bot in Bot Framework SDK
 description: Learn what the trace activity is and how to use it to view information about your bot while it runs locally.
 keywords: trace, activity, bot, Bot Framework SDK
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: pehecke
 ms.topic: how-to
 ms.service: azure-ai-bot-service
 monikerRange: 'azure-bot-service-4.0'
@@ -60,7 +60,7 @@ Here's a trace activity you might see if you ran the Core bot without first sett
 The adapter's _on turn error_ handler catches any otherwise uncaught exception thrown from the bot during a turn.
 The error handler is a good place for a trace activity, as you can send a user-friendly message to the user and send debugging information about the exception to the Emulator.
 
-This example code is from the **Core Bot** sample. See the complete sample in [**C#**](https://github.com/Microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/13.core-bot), [**JavaScript**](https://github.com/Microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/13.core-bot), [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/13.core-bot), or [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/13.core-bot).
+This example code is from the **Core Bot** sample. See the complete sample in [**C#**](https://github.com/Microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/13.core-bot), [**JavaScript**](https://github.com/Microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/13.core-bot), [**Python**](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/13.core-bot), or [**Java**](https://github.com/microsoft/BotBuilder-Samples/tree/main/archive/samples/java_springboot/13.core-bot).
 
 # [C#](#tab/csharp)
 
@@ -68,7 +68,7 @@ The adapter's **OnTurnError** handler creates the trace activity to include the 
 
 **AdapterWithErrorHandler.cs**
 
-[!code-csharp[OnTurnError](~/../BotBuilder-Samples/samples/csharp_dotnetcore/13.core-bot/AdapterWithErrorHandler.cs?range=20-54&highlight=33-34)]
+[!code-csharp[OnTurnError](~/../BotBuilder-Samples/archive/samples/csharp_dotnetcore/13.core-bot/AdapterWithErrorHandler.cs?range=20-54&highlight=33-34)]
 
 # [JavaScript](#tab/javascript)
 
@@ -76,7 +76,7 @@ The adapter's **onTurnError** handler creates the trace activity to include the 
 
 **index.js**
 
-[!code-javascript[onTurnError](~/../BotBuilder-Samples/samples/javascript_nodejs/13.core-bot/index.js?range=50-73&highlight=10-15)]
+[!code-javascript[onTurnError](~/../BotBuilder-Samples/archive/samples/javascript_nodejs/13.core-bot/index.js?range=50-73&highlight=10-15)]
 
 # [Java](#tab/Java)
 
@@ -118,7 +118,7 @@ The adapter's **on_error** handler creates the trace activity to include the exc
 
 **adapter_with_error_handler.py**
 
-[!code-python[on_error](~/../BotBuilder-Samples/samples/python/13.core-bot/adapter_with_error_handler.py?range=26-50&highlight=24-25)]
+[!code-python[on_error](~/../BotBuilder-Samples/archive/samples/python/13.core-bot/adapter_with_error_handler.py?range=26-50&highlight=24-25)]
 
 ---
 

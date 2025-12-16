@@ -2,10 +2,10 @@
 title: Connect a Bot Framework bot to Telegram
 description: Learn how to configure your bot to use the Telegram messaging app to communicate with people.
 keywords: configure bot, Telegram, bot channel, Telegram bot, access token
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: jameslew
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: how-to
 ms.custom:

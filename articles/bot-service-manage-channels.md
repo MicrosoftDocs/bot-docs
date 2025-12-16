@@ -2,10 +2,10 @@
 title: Configure an Azure AI Bot Service bot to run on one or more channels
 description: A channel connects a communication application to a bot. Learn how to configure a bot to run a channel using the Azure portal, Direct Line, or a custom adapter.
 keywords: bot, channel, Azure portal, Direct Line, custom adapter
-author: JonathanFingold
-ms.author: iawilt
+author: kunsinghms
+ms.author: kunsingh
 manager: shellyha
-ms.reviewer: jameslew
+ms.reviewer: pehecke
 ms.service: azure-ai-bot-service
 ms.topic: how-to
 ms.custom:

@@ -2,7 +2,7 @@
 title: Writer's help
 description: Processes, tools, links and support information for writers.
 topic: article
-author: mmiele
+author: kunsinghms
 service: bot-service
 date: 02/01/2021
 ---
@@ -36,9 +36,9 @@ If you are working **without MS credentials, you will not have access to RAS, My
 
 ### Basic tools
 
-1. **VS Code** from this location: http://code.visualstudio.com. Add the **Docs Authoring Pack** extension. For more information, see [Install Visual Studio Code extensions](https://review.learn.microsoft.com/help/contribute/contribute-get-started-setup-tools?branch=main#install-visual-studio-code-extensions).
+1. **VS Code** from this location: <http://code.visualstudio.com>. Add the **Docs Authoring Pack** extension. For more information, see [Install Visual Studio Code extensions](https://review.learn.microsoft.com/help/contribute/contribute-get-started-setup-tools?branch=main#install-visual-studio-code-extensions).
 
-1. **Microsoft Teams** from this location: http://teams.microsoft.com. (fix)
+1. **Microsoft Teams** from this location: <http://teams.microsoft.com>. (fix)
     1. The documentation team uses Microsoft Teams for miscellaneous artifacts.  The writers should contact their agency's tech support if they need help installing or accessing Teams. Once granted access, you'll be able to browse (and manage) content.
 
 1. Optionally, download and install VS 2019 or later version with these workloads. (This will take at least an hour.)
@@ -73,9 +73,9 @@ If you are working **without MS credentials, you will not have access to RAS, My
 
 #### Set GitHub
 
-1. If you don't have an account that you'd like to use for this, create a new GitHub account at http://github.com.
+1. If you don't have an account that you'd like to use for this, create a new GitHub account at <http://github.com>.
 1. Set up **2-factor authentication** on your GitHub account (**Settings/Account Security**).
-1. At https://repos.opensource.microsoft.com.
+1. At <https://repos.opensource.microsoft.com>.
     1. Join the **MicrosoftDocs** and **Microsoft** GitHub orgs.
     1. Join the **Microsoft/bot-framework-docs** and **MicrosoftDocs/bot-docs-team** GitHub teams. Kamran may need to do this bit for you.
 1. Add your full name, Microsoft as the company, and a picture of yourself to your GitHub profile (**Settings/Profile**).
@@ -85,8 +85,8 @@ For more information, see [Setup a GitHub account](https://review.learn.microsof
 
 #### Set local environment
 
-1. If you have not done it yet, download and install Visual Studio Code at http://code.visualstudio.com.
-1. Download and install Git here: https://desktop.github.com/
+1. If you have not done it yet, download and install Visual Studio Code at <http://code.visualstudio.com>.
+1. Download and install Git here: <https://desktop.github.com/>
     1. If you are a pro user of git, use whichever Git client you like.
 1. Verify that you have access to Bot Framework project board at [BFDocs board stories](https://fuselabs.visualstudio.com/BFDocs/_backlogs/board/Stories)
 
@@ -96,11 +96,11 @@ We have two main private content repos for the Bot Framework docs, and a number 
 
 #### Clone the documentation
 
-1. After you receive confirmation that you are in the MicrosoftDocs github organization, clone the repo from https://github.com/MicrosoftDocs/bot-docs-pr/.
-1. Review the contributor guide and keep it handy. https://github.com/MicrosoftDocs/bot-docs-pr/tree/master/contributor-guide
+1. After you receive confirmation that you are in the MicrosoftDocs github organization, clone the repo from <https://github.com/MicrosoftDocs/bot-docs-pr/>.
+1. Review the contributor guide and keep it handy. <https://github.com/MicrosoftDocs/bot-docs-pr/tree/master/contributor-guide>
 1. Review the style guide and the Markdown template for new articles in the bot-docs-pr repo:
-    1. style guide:  https://github.com/MicrosoftDocs/bot-docs-pr/tree/master/styleguide
-    1. Markdown template:  https://github.com/MicrosoftDocs/bot-docs-pr/blob/master/markdown-templates/markdown-template-for-new-articles.md.
+    1. style guide:  <https://github.com/MicrosoftDocs/bot-docs-pr/tree/master/styleguide>
+    1. Markdown template:  <https://github.com/MicrosoftDocs/bot-docs-pr/blob/master/markdown-templates/markdown-template-for-new-articles.md>.
 1. We write our documentation in **Markdown** using **VS Code**.  For information about markdown see:
     1. [Docs Markdown reference](https://learn.microsoft.com/contribute/markdown-reference) on Microsoft contributor guide.
     2. [Markdown Viewer / Browser Extension](https://github.com/simov/markdown-viewer) on GitHub.
@@ -109,11 +109,11 @@ We have two main private content repos for the Bot Framework docs, and a number 
 
 |Repository <img width="200px"/>|Description|
 |:---|:---|
-|https://github.com/MicrosoftDocs/bot-docs-pr|Private repo for SDK docs|
-|https://github.com/MicrosoftDocs/bot-docs|Public repo for issues against the SDK docs|
-|https://github.com/MicrosoftDocs/composer-docs-pr|Private repo for Composer docs|
-|https://github.com/MicrosoftDocs/composer-docs|Public repo for issues against the Composer docs|
-|https://github.com/Kaiqb/experiment/tree/master/BotDocs_Tools/GitTools|Kamran's experimental repo|
+|<https://github.com/MicrosoftDocs/bot-docs-pr>|Private repo for SDK docs|
+|<https://github.com/MicrosoftDocs/bot-docs>|Public repo for issues against the SDK docs|
+|<https://github.com/MicrosoftDocs/composer-docs-pr>|Private repo for Composer docs|
+|<https://github.com/MicrosoftDocs/composer-docs>|Public repo for issues against the Composer docs|
+|<https://github.com/Kaiqb/experiment/tree/master/BotDocs_Tools/GitTools>|Kamran's experimental repo|
 
 The **bot-docs-pr** repository has the following structure:
 
@@ -150,7 +150,7 @@ In the form enter the following:
 
 To search for the latest onboarding request:
 
-1. Navigate to https://ceapex.visualstudio.com/Onboarding/_workitems/recentlyupdated/.
+1. Navigate to <https://ceapex.visualstudio.com/Onboarding/_workitems/recentlyupdated/>.
 1. In the search box enter *Bot Framework SDK*.
 1. Select the onboarding request.
 
@@ -162,37 +162,37 @@ The following are intermediate reference documentation archives used by the publ
 
 | Repository <img width="200px"/>                                 | Description                   |
 |:----------------------------------------------------------------|:------------------------------|
-| https://github.com/MicrosoftDocs/botbuilder-docs-sdk-dotnet     | .NET/C#                       |
-| https://github.com/MicrosoftDocs/botbuilder-docs-sdk-java/      | Java                          |
-| https://github.com/MicrosoftDocs/botbuilder-docs-sdk-python     | Python                        |
-| https://github.com/MicrosoftDocs/botbuilder-docs-sdk-typescript | Node.js/TypeScript/JavaScript |
+| <https://github.com/MicrosoftDocs/botbuilder-docs-sdk-dotnet>     | .NET/C#                       |
+| <https://github.com/MicrosoftDocs/botbuilder-docs-sdk-java/>      | Java                          |
+| <https://github.com/MicrosoftDocs/botbuilder-docs-sdk-python>     | Python                        |
+| <https://github.com/MicrosoftDocs/botbuilder-docs-sdk-typescript> | Node.js/TypeScript/JavaScript |
 
 ## Related repositories
 
 | Repository <img width="200px"/>               | Description                                   |
 |:----------------------------------------------|:----------------------------------------------|
-| https://github.com/MicrosoftDocs/msteams-docs | Public repo for issues against the Teams docs |
+| <https://github.com/MicrosoftDocs/msteams-docs> | Public repo for issues against the Teams docs |
 
 ## Guides
 
 | Location <img width="200px"/>                                  | Description            |
 |:---------------------------------------------------------------|:-----------------------|
-| https://styleguides.azurewebsites.net                          | MS Style guides        |
-| https://review.learn.microsoft.com/help/contribute/?branch=main | Docs contributor guide |
-| https://review.learn.microsoft.com/help/onboard/?branch=main    | Reference Onboarding   |
+| <https://styleguides.azurewebsites.net>                          | MS Style guides        |
+| <https://review.learn.microsoft.com/help/contribute/?branch=main> | Docs contributor guide |
+| <https://review.learn.microsoft.com/help/onboard/?branch=main>    | Reference Onboarding   |
 
 ## Links
 
 | Location <img width="200px"/>                        | Description                                |
 |:-----------------------------------------------------|:-------------------------------------------|
-| https://learn.microsoft.com/azure/bot-service/        | Bot Framework documentation portal         |
-| https://dev.botframework.com/                        | Microsoft Bot Framework development portal |
-| https://github.com/MicrosoftDocs/bot-docs-archive-pr | Archived documentation articles            |
+| <https://learn.microsoft.com/azure/bot-service/>        | Bot Framework documentation portal         |
+| <https://dev.botframework.com/>                        | Microsoft Bot Framework development portal |
+| <https://github.com/MicrosoftDocs/bot-docs-archive-pr> | Archived documentation articles            |
 
 | Repository <img width="200px"/> | Description |
 |:-|:-|
-| https://github.com/Microsoft/BotBuilder | Bot Framework SDK for building conversation applications or bots. |
-| https://github.com/Microsoft/BotBuilder-Samples/ | Bot builder samples also used in the docs |
-| https://ops.microsoft.com/#/sites/Docs/docsets/bot-framework?tabName=builds | Docs build portal |
-| https://fuselabs.visualstudio.com/BFDocs/_backlogs/board/Stories | Bot Framework Docs board stories (tracks work items) |
-| https://mseng.visualstudio.com/_projects | This is the site to log bugs or work items that publishing/production team needs to do. Use it to get help on conflicts between branches etc. |
+| <https://github.com/Microsoft/BotBuilder> | Bot Framework SDK for building conversation applications or bots. |
+| <https://github.com/Microsoft/BotBuilder-Samples/> | Bot builder samples also used in the docs |
+| <https://ops.microsoft.com/#/sites/Docs/docsets/bot-framework?tabName=builds> | Docs build portal |
+| <https://fuselabs.visualstudio.com/BFDocs/_backlogs/board/Stories> | Bot Framework Docs board stories (tracks work items) |
+| <https://mseng.visualstudio.com/_projects> | This is the site to log bugs or work items that publishing/production team needs to do. Use it to get help on conflicts between branches etc. |
