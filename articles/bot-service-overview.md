@@ -21,10 +21,7 @@ ms.update-cycle: 1095-days
 
 Microsoft Bot Framework and Azure AI Bot Service are a collection of libraries, tools, and services that let you build, test, deploy, and manage intelligent bots. The Bot Framework includes a modular and extensible SDK for building bots and connecting to AI services. With this framework, developers can create bots that use speech, understand natural language, answer questions, and more.
 
-> [!IMPORTANT]
-> We are in the process of archiving the Bot Framework SDK repository on GitHub. This project is no longer updated or maintained. However, customers using this tool won't be disrupted. The tool is no longer supported through service tickets in the Azure portal and won't receive product updates.
->
-> To build agents with your choice of AI services, orchestration, and knowledge, consider using the Microsoft 365 Agents SDK. The Agents SDK has support for C#, JavaScript, or Python. You can learn more about the Agents SDK at [aka.ms/agents](https://github.com/Microsoft/Agents). If you're looking for a SaaS-based agent platform, consider [Microsoft Copilot Studio](https://www.microsoft.com/microsoft-copilot/microsoft-copilot-studio?msockid=357f4ad089cb66b636e85f308872673e). If you have an existing bot built with the Bot Framework SDK, you can update your bot to the Agents SDK. You can review the core changes and updates at [Bot Framework SDK to Agents SDK migration guidance](https://aka.ms/bfmigrationguidance). Support tickets for the Bot Framework SDK are no longer serviced as of December 31, 2025.
+[!INCLUDE [java-python-sunset-alert](includes/java-python-sunset-alert.md)]
 
 For historical release notes of each version, see the [C# releases](https://github.com/microsoft/Botbuilder-dotnet/releases), [JavaScript releases](https://github.com/microsoft/botbuilder-js/releases), [Python release](https://github.com/microsoft/botbuilder-python/releases), and [Java releases](https://github.com/microsoft/botbuilder-java/releases) pages.
 
