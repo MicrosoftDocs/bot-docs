@@ -12,6 +12,7 @@
         ">= skypebotsmedia-1.5.0.1177-alpha",
         ">= botconnector-3.11.1"
       ],
+      "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -100,9 +101,9 @@
   ],
   "sync_notification_subscribers": [],
   "branches_to_filter": [],
-  "skip_source_output_uploading": false,
+  "git_repository_url_open_to_public_contributors": "",
+  "git_repository_branch_open_to_public_contributors": "",
   "need_preview_pull_request": true,
-  "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
@@ -151,17 +152,17 @@
       "Pdf"
     ]
   },
-  "need_generate_pdf_url_template": true,
   "targets": {
     "pdf": {
       "template_folder": "_themes.pdf"
     }
   },
-  "docs_build_engine": {
-    "name": "docfx_v3"
-  },
+  "docs_build_engine": {},
+  "skip_source_output_uploading": false,
+  "contribution_branch_mappings": {},
   "need_generate_pdf": false,
   "need_generate_intellisense": false,
+  "need_generate_pdf_url_template": true,
   "dependent_packages": [
     {
       "path_to_root": "_dependentPackages/CommonPlugins",
